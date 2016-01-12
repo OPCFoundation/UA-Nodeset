@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+  <Aliases>
+    <Alias Alias="Boolean">i=1</Alias>
+    <Alias Alias="SByte">i=2</Alias>
+    <Alias Alias="Byte">i=3</Alias>
+    <Alias Alias="Int16">i=4</Alias>
+    <Alias Alias="UInt16">i=5</Alias>
+    <Alias Alias="Int32">i=6</Alias>
+    <Alias Alias="UInt32">i=7</Alias>
+    <Alias Alias="Int64">i=8</Alias>
+    <Alias Alias="UInt64">i=9</Alias>
+    <Alias Alias="Float">i=10</Alias>
+    <Alias Alias="Double">i=11</Alias>
+    <Alias Alias="DateTime">i=13</Alias>
+    <Alias Alias="String">i=12</Alias>
+    <Alias Alias="ByteString">i=15</Alias>
+    <Alias Alias="Guid">i=14</Alias>
+    <Alias Alias="XmlElement">i=16</Alias>
+    <Alias Alias="NodeId">i=17</Alias>
+    <Alias Alias="ExpandedNodeId">i=18</Alias>
+    <Alias Alias="QualifiedName">i=20</Alias>
+    <Alias Alias="LocalizedText">i=21</Alias>
+    <Alias Alias="StatusCode">i=19</Alias>
+    <Alias Alias="Structure">i=22</Alias>
+    <Alias Alias="Number">i=26</Alias>
+    <Alias Alias="Integer">i=27</Alias>
+    <Alias Alias="UInteger">i=28</Alias>
+    <Alias Alias="HasComponent">i=47</Alias>
+    <Alias Alias="HasProperty">i=46</Alias>
+    <Alias Alias="Organizes">i=35</Alias>
+    <Alias Alias="HasEventSource">i=36</Alias>
+    <Alias Alias="HasNotifier">i=48</Alias>
+    <Alias Alias="HasSubtype">i=45</Alias>
+    <Alias Alias="HasTypeDefinition">i=40</Alias>
+    <Alias Alias="HasModellingRule">i=37</Alias>
+    <Alias Alias="HasEncoding">i=38</Alias>
+    <Alias Alias="HasDescription">i=39</Alias>
+  </Aliases>
+  <UAVariableType NodeId="i=2365" BrowseName="DataItemType" ValueRank="-2">
+    <DisplayName>DataItemType</DisplayName>
+    <Description>A variable that contains live automation data.</Description>
+    <References>
+      <Reference ReferenceType="HasProperty">i=2366</Reference>
+      <Reference ReferenceType="HasProperty">i=2367</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">i=11922</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="i=2366" BrowseName="Definition" DataType="String">
+    <DisplayName>Definition</DisplayName>
+    <Description>A vendor-specific, human readable string that specifies how the value of this DataItem is calculated.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=2365</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=2367" BrowseName="ValuePrecision" DataType="Double">
+    <DisplayName>ValuePrecision</DisplayName>
+    <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=2365</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="i=2368" BrowseName="AnalogItemType" ValueRank="-2">
+    <DisplayName>AnalogItemType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=2370</Reference>
+      <Reference ReferenceType="HasProperty">i=2369</Reference>
+      <Reference ReferenceType="HasProperty">i=2371</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">i=11922</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=2365</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="i=2370" BrowseName="InstrumentRange" DataType="i=884">
+    <DisplayName>InstrumentRange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=2368</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=2369" BrowseName="EURange" DataType="i=884">
+    <DisplayName>EURange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=2368</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=2371" BrowseName="EngineeringUnits" DataType="i=887">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=2368</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="i=2372" BrowseName="DiscreteItemType" IsAbstract="true" ValueRank="-2">
+    <DisplayName>DiscreteItemType</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=11922</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=2365</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariableType NodeId="i=2373" BrowseName="TwoStateDiscreteType" DataType="Boolean" ValueRank="-2">
+    <DisplayName>TwoStateDiscreteType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=2374</Reference>
+      <Reference ReferenceType="HasProperty">i=2375</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">i=11922</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=2372</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="i=2374" BrowseName="FalseState" DataType="LocalizedText">
+    <DisplayName>FalseState</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=2373</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=2375" BrowseName="TrueState" DataType="LocalizedText">
+    <DisplayName>TrueState</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=2373</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="i=2376" BrowseName="MultiStateDiscreteType" DataType="UInteger" ValueRank="-2">
+    <DisplayName>MultiStateDiscreteType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=2377</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">i=11922</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=2372</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="i=2377" BrowseName="EnumStrings" DataType="LocalizedText" ValueRank="1">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=2376</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="i=11238" BrowseName="MultiStateValueDiscreteType" DataType="Number" ValueRank="-2">
+    <DisplayName>MultiStateValueDiscreteType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=11241</Reference>
+      <Reference ReferenceType="HasProperty">i=11461</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">i=11922</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=2372</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="i=11241" BrowseName="EnumValues" DataType="i=7594" ValueRank="1">
+    <DisplayName>EnumValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=11238</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=11461" BrowseName="ValueAsText" DataType="String">
+    <DisplayName>ValueAsText</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=11238</Reference>
+    </References>
+  </UAVariable>
+  <UADataType NodeId="i=884" BrowseName="Range">
+    <DisplayName>Range</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=11932</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="i=887" BrowseName="EUInformation">
+    <DisplayName>EUInformation</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=11932</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+  </UADataType>
+  <UAObject NodeId="i=885" BrowseName="Default XML">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=884</Reference>
+      <Reference ReferenceType="HasDescription">i=8873</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=888" BrowseName="Default XML">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=887</Reference>
+      <Reference ReferenceType="HasDescription">i=8876</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=886" BrowseName="Default Binary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=884</Reference>
+      <Reference ReferenceType="HasDescription">i=8238</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=889" BrowseName="Default Binary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=887</Reference>
+      <Reference ReferenceType="HasDescription">i=8241</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+</UANodeSet>

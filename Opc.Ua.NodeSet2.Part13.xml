@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+  <Aliases>
+    <Alias Alias="Boolean">i=1</Alias>
+    <Alias Alias="SByte">i=2</Alias>
+    <Alias Alias="Byte">i=3</Alias>
+    <Alias Alias="Int16">i=4</Alias>
+    <Alias Alias="UInt16">i=5</Alias>
+    <Alias Alias="Int32">i=6</Alias>
+    <Alias Alias="UInt32">i=7</Alias>
+    <Alias Alias="Int64">i=8</Alias>
+    <Alias Alias="UInt64">i=9</Alias>
+    <Alias Alias="Float">i=10</Alias>
+    <Alias Alias="Double">i=11</Alias>
+    <Alias Alias="DateTime">i=13</Alias>
+    <Alias Alias="String">i=12</Alias>
+    <Alias Alias="ByteString">i=15</Alias>
+    <Alias Alias="Guid">i=14</Alias>
+    <Alias Alias="XmlElement">i=16</Alias>
+    <Alias Alias="NodeId">i=17</Alias>
+    <Alias Alias="ExpandedNodeId">i=18</Alias>
+    <Alias Alias="QualifiedName">i=20</Alias>
+    <Alias Alias="LocalizedText">i=21</Alias>
+    <Alias Alias="StatusCode">i=19</Alias>
+    <Alias Alias="Structure">i=22</Alias>
+    <Alias Alias="Number">i=26</Alias>
+    <Alias Alias="Integer">i=27</Alias>
+    <Alias Alias="UInteger">i=28</Alias>
+    <Alias Alias="HasComponent">i=47</Alias>
+    <Alias Alias="HasProperty">i=46</Alias>
+    <Alias Alias="Organizes">i=35</Alias>
+    <Alias Alias="HasEventSource">i=36</Alias>
+    <Alias Alias="HasNotifier">i=48</Alias>
+    <Alias Alias="HasSubtype">i=45</Alias>
+    <Alias Alias="HasTypeDefinition">i=40</Alias>
+    <Alias Alias="HasModellingRule">i=37</Alias>
+    <Alias Alias="HasEncoding">i=38</Alias>
+    <Alias Alias="HasDescription">i=39</Alias>
+  </Aliases>
+  <UAObjectType NodeId="i=11187" BrowseName="AggregateConfigurationType">
+    <DisplayName>AggregateConfigurationType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=11188</Reference>
+      <Reference ReferenceType="HasProperty">i=11189</Reference>
+      <Reference ReferenceType="HasProperty">i=11190</Reference>
+      <Reference ReferenceType="HasProperty">i=11191</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">i=11929</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="i=11188" BrowseName="TreatUncertainAsBad" DataType="Boolean">
+    <DisplayName>TreatUncertainAsBad</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=11187</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=11189" BrowseName="PercentDataBad" DataType="Byte">
+    <DisplayName>PercentDataBad</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=11187</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=11190" BrowseName="PercentDataGood" DataType="Byte">
+    <DisplayName>PercentDataGood</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=11187</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=11191" BrowseName="UseSlopedExtrapolation" DataType="Boolean">
+    <DisplayName>UseSlopedExtrapolation</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=11187</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="i=2341" BrowseName="Interpolative">
+    <DisplayName>Interpolative</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=2342" BrowseName="Average">
+    <DisplayName>Average</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=2343" BrowseName="TimeAverage">
+    <DisplayName>TimeAverage</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=11285" BrowseName="TimeAverage2">
+    <DisplayName>TimeAverage2</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=2344" BrowseName="Total">
+    <DisplayName>Total</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=11304" BrowseName="Total2">
+    <DisplayName>Total2</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=2346" BrowseName="Minimum">
+    <DisplayName>Minimum</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=2347" BrowseName="Maximum">
+    <DisplayName>Maximum</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=2348" BrowseName="MinimumActualTime">
+    <DisplayName>MinimumActualTime</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=2349" BrowseName="MaximumActualTime">
+    <DisplayName>MaximumActualTime</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=2350" BrowseName="Range">
+    <DisplayName>Range</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=11286" BrowseName="Minimum2">
+    <DisplayName>Minimum2</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=11287" BrowseName="Maximum2">
+    <DisplayName>Maximum2</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=11305" BrowseName="MinimumActualTime2">
+    <DisplayName>MinimumActualTime2</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=11306" BrowseName="MaximumActualTime2">
+    <DisplayName>MaximumActualTime2</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=11288" BrowseName="Range2">
+    <DisplayName>Range2</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=2351" BrowseName="AnnotationCount">
+    <DisplayName>AnnotationCount</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=2352" BrowseName="Count">
+    <DisplayName>Count</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=11307" BrowseName="DurationInStateZero">
+    <DisplayName>DurationInStateZero</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=11308" BrowseName="DurationInStateNonZero">
+    <DisplayName>DurationInStateNonZero</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=2355" BrowseName="NumberOfTransitions">
+    <DisplayName>NumberOfTransitions</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=2357" BrowseName="Start">
+    <DisplayName>Start</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=2358" BrowseName="End">
+    <DisplayName>End</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=2359" BrowseName="Delta">
+    <DisplayName>Delta</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=11505" BrowseName="StartBound">
+    <DisplayName>StartBound</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=11506" BrowseName="EndBound">
+    <DisplayName>EndBound</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=11507" BrowseName="DeltaBounds">
+    <DisplayName>DeltaBounds</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=2360" BrowseName="DurationGood">
+    <DisplayName>DurationGood</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=2361" BrowseName="DurationBad">
+    <DisplayName>DurationBad</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=2362" BrowseName="PercentGood">
+    <DisplayName>PercentGood</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=2363" BrowseName="PercentBad">
+    <DisplayName>PercentBad</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=2364" BrowseName="WorstQuality">
+    <DisplayName>WorstQuality</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=11292" BrowseName="WorstQuality2">
+    <DisplayName>WorstQuality2</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=11426" BrowseName="StandardDeviationSample">
+    <DisplayName>StandardDeviationSample</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=11427" BrowseName="StandardDeviationPopulation">
+    <DisplayName>StandardDeviationPopulation</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=11428" BrowseName="VarianceSample">
+    <DisplayName>VarianceSample</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=11429" BrowseName="VariancePopulation">
+    <DisplayName>VariancePopulation</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2340</Reference>
+    </References>
+  </UAObject>
+</UANodeSet>
