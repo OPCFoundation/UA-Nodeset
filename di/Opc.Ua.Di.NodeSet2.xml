@@ -44,7 +44,6 @@
     <DisplayName>Uses</DisplayName>
     <Description>The semantic is to indicate that the target Node is used for the source Node of the Reference</Description>
     <References>
-      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=6030</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=35</Reference>
     </References>
     <InverseName>UsedBy</InverseName>
@@ -65,7 +64,6 @@
       <Reference ReferenceType="HasComponent">ns=1;i=5003</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6019</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6014</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=6031</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
@@ -79,7 +77,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1001</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6017" BrowseName="1:&lt;ParameterIdentifier&gt;">
+  <UAVariable NodeId="ns=1;i=6017" BrowseName="1:&lt;ParameterIdentifier&gt;" ParentNodeId="ns=1;i=5002">
     <DisplayName>&lt;ParameterIdentifier&gt;</DisplayName>
     <Description>A parameter which belongs to the topology element.</Description>
     <References>
@@ -98,7 +96,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1001</Reference>
     </References>
   </UAObject>
-  <UAMethod NodeId="ns=1;i=6018" BrowseName="1:&lt;MethodIdentifier&gt;">
+  <UAMethod NodeId="ns=1;i=6018" BrowseName="1:&lt;MethodIdentifier&gt;" ParentNodeId="ns=1;i=5003">
     <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
     <Description>A method which belongs to the topology element.</Description>
     <References>
@@ -137,11 +135,10 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6006</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6007</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6008</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=6031</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1001</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="ns=1;i=6001" BrowseName="1:SerialNumber" DataType="String">
+  <UAVariable NodeId="ns=1;i=6001" BrowseName="1:SerialNumber" ParentNodeId="ns=1;i=1002" DataType="String">
     <DisplayName>SerialNumber</DisplayName>
     <Description>Identifier that uniquely identifies, within a manufacturer, a device instance</Description>
     <References>
@@ -150,7 +147,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6002" BrowseName="1:RevisionCounter" DataType="Int32">
+  <UAVariable NodeId="ns=1;i=6002" BrowseName="1:RevisionCounter" ParentNodeId="ns=1;i=1002" DataType="Int32">
     <DisplayName>RevisionCounter</DisplayName>
     <Description>An incremental counter indicating the number of times the static data within the Device has been modified</Description>
     <References>
@@ -159,7 +156,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6003" BrowseName="1:Manufacturer" DataType="LocalizedText">
+  <UAVariable NodeId="ns=1;i=6003" BrowseName="1:Manufacturer" ParentNodeId="ns=1;i=1002" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description>Model name of the device</Description>
     <References>
@@ -168,7 +165,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6004" BrowseName="1:Model" DataType="LocalizedText">
+  <UAVariable NodeId="ns=1;i=6004" BrowseName="1:Model" ParentNodeId="ns=1;i=1002" DataType="LocalizedText">
     <DisplayName>Model</DisplayName>
     <Description>Name of the company that manufactured the device</Description>
     <References>
@@ -177,7 +174,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6005" BrowseName="1:DeviceManual" DataType="String">
+  <UAVariable NodeId="ns=1;i=6005" BrowseName="1:DeviceManual" ParentNodeId="ns=1;i=1002" DataType="String">
     <DisplayName>DeviceManual</DisplayName>
     <Description>Address (pathname in the file system or a URL | Web address) of user manual for the device</Description>
     <References>
@@ -186,7 +183,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6006" BrowseName="1:DeviceRevision" DataType="String">
+  <UAVariable NodeId="ns=1;i=6006" BrowseName="1:DeviceRevision" ParentNodeId="ns=1;i=1002" DataType="String">
     <DisplayName>DeviceRevision</DisplayName>
     <Description>Overall revision level of the device</Description>
     <References>
@@ -195,7 +192,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6007" BrowseName="1:SoftwareRevision" DataType="String">
+  <UAVariable NodeId="ns=1;i=6007" BrowseName="1:SoftwareRevision" ParentNodeId="ns=1;i=1002" DataType="String">
     <DisplayName>SoftwareRevision</DisplayName>
     <Description>Revision level of the software/firmware of the device</Description>
     <References>
@@ -204,7 +201,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6008" BrowseName="1:HardwareRevision" DataType="String">
+  <UAVariable NodeId="ns=1;i=6008" BrowseName="1:HardwareRevision" ParentNodeId="ns=1;i=1002" DataType="String">
     <DisplayName>HardwareRevision</DisplayName>
     <Description>Revision level of the hardware of the device</Description>
     <References>
@@ -222,11 +219,10 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6011</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6012</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6013</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=6031</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1001</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="ns=1;i=6009" BrowseName="1:RevisionCounter" DataType="UInt32">
+  <UAVariable NodeId="ns=1;i=6009" BrowseName="1:RevisionCounter" ParentNodeId="ns=1;i=1003" DataType="UInt32">
     <DisplayName>RevisionCounter</DisplayName>
     <Description>Incremental counter indicating the number of times the static data within the Block has been modified</Description>
     <References>
@@ -235,7 +231,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1003</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6010" BrowseName="1:ActualMode" DataType="LocalizedText">
+  <UAVariable NodeId="ns=1;i=6010" BrowseName="1:ActualMode" ParentNodeId="ns=1;i=1003" DataType="LocalizedText">
     <DisplayName>ActualMode</DisplayName>
     <Description>Current mode of operation the Block is able to achieve</Description>
     <References>
@@ -244,7 +240,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1003</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6011" BrowseName="1:PermittedMode" DataType="LocalizedText">
+  <UAVariable NodeId="ns=1;i=6011" BrowseName="1:PermittedMode" ParentNodeId="ns=1;i=1003" DataType="LocalizedText">
     <DisplayName>PermittedMode</DisplayName>
     <Description>Modes of operation that are allowed for the Block based on application requirements</Description>
     <References>
@@ -253,7 +249,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1003</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6012" BrowseName="1:NormalMode" DataType="LocalizedText">
+  <UAVariable NodeId="ns=1;i=6012" BrowseName="1:NormalMode" ParentNodeId="ns=1;i=1003" DataType="LocalizedText">
     <DisplayName>NormalMode</DisplayName>
     <Description>Mode the Block should be set to during normal operating conditions</Description>
     <References>
@@ -262,7 +258,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1003</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6013" BrowseName="1:TargetMode" DataType="LocalizedText">
+  <UAVariable NodeId="ns=1;i=6013" BrowseName="1:TargetMode" ParentNodeId="ns=1;i=1003" DataType="LocalizedText">
     <DisplayName>TargetMode</DisplayName>
     <Description>Mode of operation that is desired for the Block</Description>
     <References>
@@ -277,7 +273,6 @@
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5004</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6026</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=6031</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
@@ -306,7 +301,6 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6027</Reference>
       <Reference ReferenceType="Organizes">ns=1;i=6028</Reference>
       <Reference ReferenceType="Organizes">ns=1;i=6029</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=6031</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
     </References>
   </UAObjectType>
@@ -319,7 +313,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6028" BrowseName="1:&lt;ParameterIdentifier&gt;">
+  <UAVariable NodeId="ns=1;i=6028" BrowseName="1:&lt;ParameterIdentifier&gt;" ParentNodeId="ns=1;i=1005">
     <DisplayName>&lt;ParameterIdentifier&gt;</DisplayName>
     <Description>A parameter which belongs to the group.</Description>
     <References>
@@ -328,7 +322,7 @@
       <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=1005</Reference>
     </References>
   </UAVariable>
-  <UAMethod NodeId="ns=1;i=6029" BrowseName="1:&lt;MethodIdentifier&gt;">
+  <UAMethod NodeId="ns=1;i=6029" BrowseName="1:&lt;MethodIdentifier&gt;" ParentNodeId="ns=1;i=1005">
     <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
     <Description>A method which belongs to the group.</Description>
     <References>
@@ -341,22 +335,7 @@
     <DisplayName>ProtocolType</DisplayName>
     <Description>General structure of a Protocol ObjectType</Description>
     <References>
-      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=6031</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAObject NodeId="ns=1;i=6030" BrowseName="1:Opc.Ua.Di">
-    <DisplayName>Opc.Ua.Di</DisplayName>
-    <References>
-      <Reference ReferenceType="Organizes" IsForward="false">i=91</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="ns=1;i=6031" BrowseName="1:Opc.Ua.Di">
-    <DisplayName>Opc.Ua.Di</DisplayName>
-    <References>
-      <Reference ReferenceType="Organizes" IsForward="false">i=88</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
-    </References>
-  </UAObject>
 </UANodeSet>
