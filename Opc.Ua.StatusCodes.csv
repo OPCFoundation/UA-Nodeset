@@ -34,7 +34,7 @@ BadCertificateIssuerRevoked,0x801E0000,The Issuer Certificate has been revoked.
 BadUserAccessDenied,0x801F0000,User does not have permission to perform the requested operation.
 BadIdentityTokenInvalid,0x80200000,The user identity token is not valid.
 BadIdentityTokenRejected,0x80210000,The user identity token is valid but the server has rejected it.
-BadSecureChannelIdInvalid,0x80220000,The specified secure channel is not longer valid.
+BadSecureChannelIdInvalid,0x80220000,The specified secure channel is no longer valid.
 BadInvalidTimestamp,0x80230000,The timestamp is outside the range allowed by the server.
 BadNonceInvalid,0x80240000,The nonce does appear to be not a random value or it is not the correct length.
 BadSessionIdInvalid,0x80250000,The session id is not valid.
@@ -105,8 +105,8 @@ BadBrowseNameInvalid,0x80600000,The browse name is invalid.
 BadBrowseNameDuplicated,0x80610000,The browse name is not unique among nodes that share the same relationship with the parent.
 BadNodeAttributesInvalid,0x80620000,The node attributes are not valid for the node class.
 BadTypeDefinitionInvalid,0x80630000,The type definition node id does not reference an appropriate type node.
-BadSourceNodeIdInvalid,0x80640000,The source node id does reference a valid node.
-BadTargetNodeIdInvalid,0x80650000,The target node id does reference a valid node.
+BadSourceNodeIdInvalid,0x80640000,The source node id does not reference a valid node.
+BadTargetNodeIdInvalid,0x80650000,The target node id does not reference a valid node.
 BadDuplicateReferenceNotAllowed,0x80660000,The reference type between the nodes is already defined.
 BadInvalidSelfReference,0x80670000,The server does not allow this type of self reference on this node.
 BadReferenceLocalOnly,0x80680000,The reference type is not valid for a reference to a remote server.

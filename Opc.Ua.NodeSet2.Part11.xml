@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.02" LastModified="2012-07-17T18:17:02.7573365Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.02" LastModified="2013-02-21T02:17:00.3344323Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
     <Alias Alias="SByte">i=2</Alias>
@@ -45,6 +45,133 @@
     </References>
     <InverseName>HistoricalConfigurationOf</InverseName>
   </UAReferenceType>
+  <UAObject NodeId="i=11192" BrowseName="HistoryServerCapabilities">
+    <DisplayName>HistoryServerCapabilities</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=11193</Reference>
+      <Reference ReferenceType="HasProperty">i=11242</Reference>
+      <Reference ReferenceType="HasProperty">i=11273</Reference>
+      <Reference ReferenceType="HasProperty">i=11274</Reference>
+      <Reference ReferenceType="HasProperty">i=11196</Reference>
+      <Reference ReferenceType="HasProperty">i=11197</Reference>
+      <Reference ReferenceType="HasProperty">i=11198</Reference>
+      <Reference ReferenceType="HasProperty">i=11199</Reference>
+      <Reference ReferenceType="HasProperty">i=11200</Reference>
+      <Reference ReferenceType="HasProperty">i=11281</Reference>
+      <Reference ReferenceType="HasProperty">i=11282</Reference>
+      <Reference ReferenceType="HasProperty">i=11283</Reference>
+      <Reference ReferenceType="HasProperty">i=11502</Reference>
+      <Reference ReferenceType="HasProperty">i=11275</Reference>
+      <Reference ReferenceType="HasComponent">i=11201</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=2268</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2330</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=11193" BrowseName="AccessHistoryDataCapability" ParentNodeId="i=11192" DataType="Boolean">
+    <DisplayName>AccessHistoryDataCapability</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=11242" BrowseName="AccessHistoryEventsCapability" ParentNodeId="i=11192" DataType="Boolean">
+    <DisplayName>AccessHistoryEventsCapability</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=11273" BrowseName="MaxReturnDataValues" ParentNodeId="i=11192" DataType="UInt32">
+    <DisplayName>MaxReturnDataValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=11274" BrowseName="MaxReturnEventValues" ParentNodeId="i=11192" DataType="UInt32">
+    <DisplayName>MaxReturnEventValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=11196" BrowseName="InsertDataCapability" ParentNodeId="i=11192" DataType="Boolean">
+    <DisplayName>InsertDataCapability</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=11197" BrowseName="ReplaceDataCapability" ParentNodeId="i=11192" DataType="Boolean">
+    <DisplayName>ReplaceDataCapability</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=11198" BrowseName="UpdateDataCapability" ParentNodeId="i=11192" DataType="Boolean">
+    <DisplayName>UpdateDataCapability</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=11199" BrowseName="DeleteRawCapability" ParentNodeId="i=11192" DataType="Boolean">
+    <DisplayName>DeleteRawCapability</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=11200" BrowseName="DeleteAtTimeCapability" ParentNodeId="i=11192" DataType="Boolean">
+    <DisplayName>DeleteAtTimeCapability</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=11281" BrowseName="InsertEventCapability" ParentNodeId="i=11192" DataType="Boolean">
+    <DisplayName>InsertEventCapability</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=11282" BrowseName="ReplaceEventCapability" ParentNodeId="i=11192" DataType="Boolean">
+    <DisplayName>ReplaceEventCapability</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=11283" BrowseName="UpdateEventCapability" ParentNodeId="i=11192" DataType="Boolean">
+    <DisplayName>UpdateEventCapability</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=11502" BrowseName="DeleteEventCapability" ParentNodeId="i=11192" DataType="Boolean">
+    <DisplayName>DeleteEventCapability</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=11275" BrowseName="InsertAnnotationCapability" ParentNodeId="i=11192" DataType="Boolean">
+    <DisplayName>InsertAnnotationCapability</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="i=11201" BrowseName="AggregateFunctions" ParentNodeId="i=11192">
+    <DisplayName>AggregateFunctions</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=11192</Reference>
+    </References>
+  </UAObject>
   <UAVariable NodeId="i=11214" BrowseName="Annotations" DataType="i=891" ValueRank="-2">
     <DisplayName>Annotations</DisplayName>
     <References>
@@ -183,133 +310,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2318</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="i=11192" BrowseName="HistoryServerCapabilities">
-    <DisplayName>HistoryServerCapabilities</DisplayName>
-    <References>
-      <Reference ReferenceType="HasProperty">i=11193</Reference>
-      <Reference ReferenceType="HasProperty">i=11242</Reference>
-      <Reference ReferenceType="HasProperty">i=11273</Reference>
-      <Reference ReferenceType="HasProperty">i=11274</Reference>
-      <Reference ReferenceType="HasProperty">i=11196</Reference>
-      <Reference ReferenceType="HasProperty">i=11197</Reference>
-      <Reference ReferenceType="HasProperty">i=11198</Reference>
-      <Reference ReferenceType="HasProperty">i=11199</Reference>
-      <Reference ReferenceType="HasProperty">i=11200</Reference>
-      <Reference ReferenceType="HasProperty">i=11281</Reference>
-      <Reference ReferenceType="HasProperty">i=11282</Reference>
-      <Reference ReferenceType="HasProperty">i=11283</Reference>
-      <Reference ReferenceType="HasProperty">i=11502</Reference>
-      <Reference ReferenceType="HasProperty">i=11275</Reference>
-      <Reference ReferenceType="HasComponent">i=11201</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2330</Reference>
-    </References>
-  </UAObject>
-  <UAVariable NodeId="i=11193" BrowseName="AccessHistoryDataCapability" ParentNodeId="i=11192" DataType="Boolean">
-    <DisplayName>AccessHistoryDataCapability</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=11242" BrowseName="AccessHistoryEventsCapability" ParentNodeId="i=11192" DataType="Boolean">
-    <DisplayName>AccessHistoryEventsCapability</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=11273" BrowseName="MaxReturnDataValues" ParentNodeId="i=11192" DataType="UInt32">
-    <DisplayName>MaxReturnDataValues</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=11274" BrowseName="MaxReturnEventValues" ParentNodeId="i=11192" DataType="UInt32">
-    <DisplayName>MaxReturnEventValues</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=11196" BrowseName="InsertDataCapability" ParentNodeId="i=11192" DataType="Boolean">
-    <DisplayName>InsertDataCapability</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=11197" BrowseName="ReplaceDataCapability" ParentNodeId="i=11192" DataType="Boolean">
-    <DisplayName>ReplaceDataCapability</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=11198" BrowseName="UpdateDataCapability" ParentNodeId="i=11192" DataType="Boolean">
-    <DisplayName>UpdateDataCapability</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=11199" BrowseName="DeleteRawCapability" ParentNodeId="i=11192" DataType="Boolean">
-    <DisplayName>DeleteRawCapability</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=11200" BrowseName="DeleteAtTimeCapability" ParentNodeId="i=11192" DataType="Boolean">
-    <DisplayName>DeleteAtTimeCapability</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=11281" BrowseName="InsertEventCapability" ParentNodeId="i=11192" DataType="Boolean">
-    <DisplayName>InsertEventCapability</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=11282" BrowseName="ReplaceEventCapability" ParentNodeId="i=11192" DataType="Boolean">
-    <DisplayName>ReplaceEventCapability</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=11283" BrowseName="UpdateEventCapability" ParentNodeId="i=11192" DataType="Boolean">
-    <DisplayName>UpdateEventCapability</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=11502" BrowseName="DeleteEventCapability" ParentNodeId="i=11192" DataType="Boolean">
-    <DisplayName>DeleteEventCapability</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=11275" BrowseName="InsertAnnotationCapability" ParentNodeId="i=11192" DataType="Boolean">
-    <DisplayName>InsertAnnotationCapability</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
-    </References>
-  </UAVariable>
-  <UAObject NodeId="i=11201" BrowseName="AggregateFunctions" ParentNodeId="i=11192">
-    <DisplayName>AggregateFunctions</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">i=11192</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="i=11202" BrowseName="HA Configuration">
+  <UAObject NodeId="i=11202" BrowseName="HA Configuration" SymbolicName="HAConfiguration">
     <DisplayName>HA Configuration</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=11203</Reference>
@@ -770,7 +771,7 @@
       </ListOfLocalizedText>
     </Value>
   </UAVariable>
-  <UAObject NodeId="i=892" BrowseName="Default XML">
+  <UAObject NodeId="i=892" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=891</Reference>
@@ -778,7 +779,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="i=893" BrowseName="Default Binary">
+  <UAObject NodeId="i=893" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=891</Reference>

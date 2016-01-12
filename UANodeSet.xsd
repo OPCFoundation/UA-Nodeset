@@ -55,7 +55,7 @@
       <xs:element name="Alias" type="NodeIdAlias" minOccurs="0" maxOccurs="unbounded"></xs:element>
     </xs:sequence>
   </xs:complexType>
-  
+
   <xs:simpleType name="Locale">
     <xs:restriction base="xs:string"></xs:restriction>
   </xs:simpleType>
@@ -89,7 +89,7 @@
       </xs:simpleType>
     </xs:list>
   </xs:simpleType>
-  
+
   <xs:simpleType name="SymbolicName">
     <xs:list>
       <xs:simpleType>
@@ -109,7 +109,7 @@
       </xs:simpleType>
     </xs:list>
   </xs:simpleType>
-  
+
   <xs:simpleType name="Duration">
     <xs:restriction base="xs:double"></xs:restriction>
   </xs:simpleType>
@@ -204,6 +204,7 @@
       <xs:extension base="UAInstance">
         <xs:attribute name="Executable" type="xs:boolean" default="true"></xs:attribute>
         <xs:attribute name="UserExecutable" type="xs:boolean" default="true"></xs:attribute>
+        <xs:attribute name="MethodDeclarationId" type="NodeId" use="optional"></xs:attribute>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
@@ -214,14 +215,14 @@
       <xs:element name="Field" type="StructureTranslationType" minOccurs="0" maxOccurs="unbounded"></xs:element>
     </xs:choice>
   </xs:complexType>
-  
+
   <xs:complexType name="StructureTranslationType">
     <xs:sequence>
       <xs:element name="Text" type="LocalizedText" minOccurs="0" maxOccurs="unbounded"></xs:element>
     </xs:sequence>
     <xs:attribute name="Name" type="xs:string" use="required"></xs:attribute>
   </xs:complexType>
-  
+
   <xs:complexType name="UAView">
     <xs:complexContent>
       <xs:extension base="UAInstance">
@@ -292,9 +293,9 @@
     <xs:attribute name="SymbolicName" type="SymbolicName" use="optional"></xs:attribute>
     <xs:attribute name="DataType" type="NodeId" default="i=24"></xs:attribute>
     <xs:attribute name="ValueRank" type="ValueRank" default="-1"></xs:attribute>
-    <xs:attribute name="Value" type="xs:int" default="-1"></xs:attribute>    
+    <xs:attribute name="Value" type="xs:int" default="-1"></xs:attribute>
   </xs:complexType>
-  
+
   <xs:complexType name="UAReferenceType">
     <xs:complexContent>
       <xs:extension base="UAType">

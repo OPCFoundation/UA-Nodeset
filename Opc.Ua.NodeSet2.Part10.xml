@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.02" LastModified="2012-07-17T18:17:02.766337Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.02" LastModified="2013-02-21T02:17:00.3414327Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
     <Alias Alias="SByte">i=2</Alias>
@@ -310,7 +310,7 @@
     <DisplayName>StateNumber</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=2400</Reference>
     </References>
     <Value>
@@ -335,7 +335,7 @@
     <DisplayName>StateNumber</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=2402</Reference>
     </References>
     <Value>
@@ -359,7 +359,7 @@
     <DisplayName>StateNumber</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=2404</Reference>
     </References>
     <Value>
@@ -383,7 +383,7 @@
     <DisplayName>StateNumber</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=2406</Reference>
     </References>
     <Value>
@@ -406,7 +406,7 @@
     <DisplayName>TransitionNumber</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=2408</Reference>
     </References>
     <Value>
@@ -429,7 +429,7 @@
     <DisplayName>TransitionNumber</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=2410</Reference>
     </References>
     <Value>
@@ -452,7 +452,7 @@
     <DisplayName>TransitionNumber</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=2412</Reference>
     </References>
     <Value>
@@ -474,7 +474,7 @@
     <DisplayName>TransitionNumber</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=2414</Reference>
     </References>
     <Value>
@@ -497,7 +497,7 @@
     <DisplayName>TransitionNumber</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=2416</Reference>
     </References>
     <Value>
@@ -520,7 +520,7 @@
     <DisplayName>TransitionNumber</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=2418</Reference>
     </References>
     <Value>
@@ -543,7 +543,7 @@
     <DisplayName>TransitionNumber</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=2420</Reference>
     </References>
     <Value>
@@ -565,7 +565,7 @@
     <DisplayName>TransitionNumber</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=2422</Reference>
     </References>
     <Value>
@@ -588,7 +588,7 @@
     <DisplayName>TransitionNumber</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=2424</Reference>
     </References>
     <Value>
@@ -600,7 +600,6 @@
     <Description>Causes the Program to transition from the Ready state to the Running state.</Description>
     <References>
       <Reference ReferenceType="i=53" IsForward="false">i=2410</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2426</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -610,7 +609,6 @@
     <Description>Causes the Program to transition from the Running state to the Suspended state.</Description>
     <References>
       <Reference ReferenceType="i=53" IsForward="false">i=2416</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2427</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -620,7 +618,6 @@
     <Description>Causes the Program to transition from the Suspended state to the Running state.</Description>
     <References>
       <Reference ReferenceType="i=53" IsForward="false">i=2418</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2428</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -632,7 +629,6 @@
       <Reference ReferenceType="i=53" IsForward="false">i=2412</Reference>
       <Reference ReferenceType="i=53" IsForward="false">i=2420</Reference>
       <Reference ReferenceType="i=53" IsForward="false">i=2424</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2429</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -642,7 +638,6 @@
     <Description>Causes the Program to transition from the Halted state to the Ready state.</Description>
     <References>
       <Reference ReferenceType="i=53" IsForward="false">i=2408</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2430</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -680,7 +675,7 @@
   <UAObjectType NodeId="i=3806" BrowseName="ProgramTransitionAuditEventType">
     <DisplayName>ProgramTransitionAuditEventType</DisplayName>
     <References>
-      <Reference ReferenceType="HasProperty">i=3825</Reference>
+      <Reference ReferenceType="HasComponent">i=3825</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2315</Reference>
     </References>
   </UAObjectType>
@@ -690,7 +685,7 @@
       <Reference ReferenceType="HasProperty">i=3826</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2767</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=3806</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=3806</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="i=3826" BrowseName="Id" ParentNodeId="i=3825" DataType="NodeId">
@@ -815,7 +810,7 @@
       <Field Name="LastMethodReturnStatus" DataType="i=299" />
     </Definition>
   </UADataType>
-  <UAObject NodeId="i=895" BrowseName="Default XML">
+  <UAObject NodeId="i=895" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=894</Reference>
@@ -823,7 +818,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="i=896" BrowseName="Default Binary">
+  <UAObject NodeId="i=896" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=894</Reference>

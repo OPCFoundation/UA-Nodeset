@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions 
-  targetNamespace="http://opcfoundation.org/UA/2008/02/Services.wsdl" 
-  xmlns:tns="http://opcfoundation.org/UA/2008/02/Services.wsdl" 
-  xmlns:s0="http://opcfoundation.org/UA/2008/02/Types.xsd" 
-  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+<wsdl:definitions
+  targetNamespace="http://opcfoundation.org/UA/2008/02/Services.wsdl"
+  xmlns:tns="http://opcfoundation.org/UA/2008/02/Services.wsdl"
+  xmlns:s0="http://opcfoundation.org/UA/2008/02/Types.xsd"
+  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
   xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 >
-  <!-- This File was generated on 2012-07-17 and supports the specifications supported by the UA SDK v1.1.333.1. -->
-  
+  <!-- This File was generated on 2013-02-21 and supports the specifications supported by the UA SDK v1.1.334.2. -->
+
   <wsdl:types>
     <xsd:schema targetNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd/Imports">
       <xsd:import schemaLocation="http://opcfoundation.org/UA/2008/02/Types.xsd" namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
@@ -33,7 +33,7 @@
   </wsdl:message>
   <wsdl:message name="FindServers_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="GetEndpointsMessage">
     <wsdl:part name="parameters" element="s0:GetEndpointsRequest"/>
@@ -43,7 +43,7 @@
   </wsdl:message>
   <wsdl:message name="GetEndpoints_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="RegisterServerMessage">
     <wsdl:part name="parameters" element="s0:RegisterServerRequest"/>
@@ -53,7 +53,7 @@
   </wsdl:message>
   <wsdl:message name="RegisterServer_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="CreateSessionMessage">
     <wsdl:part name="parameters" element="s0:CreateSessionRequest"/>
@@ -63,7 +63,7 @@
   </wsdl:message>
   <wsdl:message name="CreateSession_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="ActivateSessionMessage">
     <wsdl:part name="parameters" element="s0:ActivateSessionRequest"/>
@@ -73,7 +73,7 @@
   </wsdl:message>
   <wsdl:message name="ActivateSession_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="CloseSessionMessage">
     <wsdl:part name="parameters" element="s0:CloseSessionRequest"/>
@@ -83,7 +83,7 @@
   </wsdl:message>
   <wsdl:message name="CloseSession_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="CancelMessage">
     <wsdl:part name="parameters" element="s0:CancelRequest"/>
@@ -93,7 +93,7 @@
   </wsdl:message>
   <wsdl:message name="Cancel_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="AddNodesMessage">
     <wsdl:part name="parameters" element="s0:AddNodesRequest"/>
@@ -103,7 +103,7 @@
   </wsdl:message>
   <wsdl:message name="AddNodes_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="AddReferencesMessage">
     <wsdl:part name="parameters" element="s0:AddReferencesRequest"/>
@@ -113,7 +113,7 @@
   </wsdl:message>
   <wsdl:message name="AddReferences_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="DeleteNodesMessage">
     <wsdl:part name="parameters" element="s0:DeleteNodesRequest"/>
@@ -123,7 +123,7 @@
   </wsdl:message>
   <wsdl:message name="DeleteNodes_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="DeleteReferencesMessage">
     <wsdl:part name="parameters" element="s0:DeleteReferencesRequest"/>
@@ -133,7 +133,7 @@
   </wsdl:message>
   <wsdl:message name="DeleteReferences_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="BrowseMessage">
     <wsdl:part name="parameters" element="s0:BrowseRequest"/>
@@ -143,7 +143,7 @@
   </wsdl:message>
   <wsdl:message name="Browse_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="BrowseNextMessage">
     <wsdl:part name="parameters" element="s0:BrowseNextRequest"/>
@@ -153,7 +153,7 @@
   </wsdl:message>
   <wsdl:message name="BrowseNext_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="TranslateBrowsePathsToNodeIdsMessage">
     <wsdl:part name="parameters" element="s0:TranslateBrowsePathsToNodeIdsRequest"/>
@@ -163,7 +163,7 @@
   </wsdl:message>
   <wsdl:message name="TranslateBrowsePathsToNodeIds_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="RegisterNodesMessage">
     <wsdl:part name="parameters" element="s0:RegisterNodesRequest"/>
@@ -173,7 +173,7 @@
   </wsdl:message>
   <wsdl:message name="RegisterNodes_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="UnregisterNodesMessage">
     <wsdl:part name="parameters" element="s0:UnregisterNodesRequest"/>
@@ -183,7 +183,7 @@
   </wsdl:message>
   <wsdl:message name="UnregisterNodes_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="QueryFirstMessage">
     <wsdl:part name="parameters" element="s0:QueryFirstRequest"/>
@@ -193,7 +193,7 @@
   </wsdl:message>
   <wsdl:message name="QueryFirst_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="QueryNextMessage">
     <wsdl:part name="parameters" element="s0:QueryNextRequest"/>
@@ -203,7 +203,7 @@
   </wsdl:message>
   <wsdl:message name="QueryNext_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="ReadMessage">
     <wsdl:part name="parameters" element="s0:ReadRequest"/>
@@ -213,7 +213,7 @@
   </wsdl:message>
   <wsdl:message name="Read_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="HistoryReadMessage">
     <wsdl:part name="parameters" element="s0:HistoryReadRequest"/>
@@ -223,7 +223,7 @@
   </wsdl:message>
   <wsdl:message name="HistoryRead_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="WriteMessage">
     <wsdl:part name="parameters" element="s0:WriteRequest"/>
@@ -233,7 +233,7 @@
   </wsdl:message>
   <wsdl:message name="Write_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="HistoryUpdateMessage">
     <wsdl:part name="parameters" element="s0:HistoryUpdateRequest"/>
@@ -243,7 +243,7 @@
   </wsdl:message>
   <wsdl:message name="HistoryUpdate_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="CallMessage">
     <wsdl:part name="parameters" element="s0:CallRequest"/>
@@ -253,7 +253,7 @@
   </wsdl:message>
   <wsdl:message name="Call_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="CreateMonitoredItemsMessage">
     <wsdl:part name="parameters" element="s0:CreateMonitoredItemsRequest"/>
@@ -263,7 +263,7 @@
   </wsdl:message>
   <wsdl:message name="CreateMonitoredItems_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="ModifyMonitoredItemsMessage">
     <wsdl:part name="parameters" element="s0:ModifyMonitoredItemsRequest"/>
@@ -273,7 +273,7 @@
   </wsdl:message>
   <wsdl:message name="ModifyMonitoredItems_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="SetMonitoringModeMessage">
     <wsdl:part name="parameters" element="s0:SetMonitoringModeRequest"/>
@@ -283,7 +283,7 @@
   </wsdl:message>
   <wsdl:message name="SetMonitoringMode_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="SetTriggeringMessage">
     <wsdl:part name="parameters" element="s0:SetTriggeringRequest"/>
@@ -293,7 +293,7 @@
   </wsdl:message>
   <wsdl:message name="SetTriggering_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="DeleteMonitoredItemsMessage">
     <wsdl:part name="parameters" element="s0:DeleteMonitoredItemsRequest"/>
@@ -303,7 +303,7 @@
   </wsdl:message>
   <wsdl:message name="DeleteMonitoredItems_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="CreateSubscriptionMessage">
     <wsdl:part name="parameters" element="s0:CreateSubscriptionRequest"/>
@@ -313,7 +313,7 @@
   </wsdl:message>
   <wsdl:message name="CreateSubscription_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="ModifySubscriptionMessage">
     <wsdl:part name="parameters" element="s0:ModifySubscriptionRequest"/>
@@ -323,7 +323,7 @@
   </wsdl:message>
   <wsdl:message name="ModifySubscription_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="SetPublishingModeMessage">
     <wsdl:part name="parameters" element="s0:SetPublishingModeRequest"/>
@@ -333,7 +333,7 @@
   </wsdl:message>
   <wsdl:message name="SetPublishingMode_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="PublishMessage">
     <wsdl:part name="parameters" element="s0:PublishRequest"/>
@@ -343,7 +343,7 @@
   </wsdl:message>
   <wsdl:message name="Publish_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="RepublishMessage">
     <wsdl:part name="parameters" element="s0:RepublishRequest"/>
@@ -353,7 +353,7 @@
   </wsdl:message>
   <wsdl:message name="Republish_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="TransferSubscriptionsMessage">
     <wsdl:part name="parameters" element="s0:TransferSubscriptionsRequest"/>
@@ -363,7 +363,7 @@
   </wsdl:message>
   <wsdl:message name="TransferSubscriptions_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="DeleteSubscriptionsMessage">
     <wsdl:part name="parameters" element="s0:DeleteSubscriptionsRequest"/>
@@ -373,7 +373,7 @@
   </wsdl:message>
   <wsdl:message name="DeleteSubscriptions_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="TestStackMessage">
     <wsdl:part name="parameters" element="s0:TestStackRequest"/>
@@ -383,7 +383,7 @@
   </wsdl:message>
   <wsdl:message name="TestStack_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
+  </wsdl:message>
 
   <wsdl:message name="TestStackExMessage">
     <wsdl:part name="parameters" element="s0:TestStackExRequest"/>
@@ -393,8 +393,8 @@
   </wsdl:message>
   <wsdl:message name="TestStackEx_FaultMessage">
     <wsdl:part name="detail" element="s0:ServiceFault" />
-  </wsdl:message> 
-  
+  </wsdl:message>
+
   <wsdl:portType name="ISessionEndpoint">
 
     <wsdl:operation name="InvokeService">
@@ -632,7 +632,7 @@
       <wsdl:output wsaw:Action="http://opcfoundation.org/UA/2008/02/Services.wsdl/RegisterServerResponse" name="RegisterServerResponseMessage" message="tns:RegisterServerResponseMessage"/>
       <wsdl:fault wsaw:Action="http://opcfoundation.org/UA/2008/02/Services.wsdl/RegisterServerFault" name="RegisterServerFaultMessage" message="tns:RegisterServer_FaultMessage" />
     </wsdl:operation>
-    
+
   </wsdl:portType>
 
 </wsdl:definitions>

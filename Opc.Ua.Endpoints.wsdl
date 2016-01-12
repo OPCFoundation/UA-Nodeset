@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions 
-  name="UAEndpoints" 
-  targetNamespace="http://opcfoundation.org/UA/2008/02/Endpoints.wsdl" 
-  xmlns:tns="http://opcfoundation.org/UA/2008/02/Endpoints.wsdl" 
-  xmlns:s0="http://opcfoundation.org/UA/2008/02/Services.wsdl" 
-  xmlns:s1="http://localhost.org/UA/SampleServer" 
+<wsdl:definitions
+  name="UAEndpoints"
+  targetNamespace="http://opcfoundation.org/UA/2008/02/Endpoints.wsdl"
+  xmlns:tns="http://opcfoundation.org/UA/2008/02/Endpoints.wsdl"
+  xmlns:s0="http://opcfoundation.org/UA/2008/02/Services.wsdl"
+  xmlns:s1="http://localhost.org/UA/SampleServer"
   xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
-  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"  
-  xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" 
+  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+  xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
   xmlns:wsa10="http://www.w3.org/2005/08/addressing"
 >
-  <!-- This File was generated on 2012-07-17 and supports the specifications supported by the UA SDK v1.1.333.1. -->
-  
+  <!-- This File was generated on 2013-02-21 and supports the specifications supported by the UA SDK v1.1.334.2. -->
+
   <wsdl:import namespace="http://opcfoundation.org/UA/2008/02/Services.wsdl" location="http://opcfoundation.org/UA/2008/02/Services.wsdl" />
   <wsdl:types />
-  
+
   <wsdl:binding name="UaSoapXmlBinding_ISessionEndpoint" type="s0:ISessionEndpoint">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
 
@@ -30,7 +30,7 @@
         <soap12:fault name="InvokeServiceFaultMessage" use="literal" />
       </wsdl:fault>
     </wsdl:operation>
-    
+
     <wsdl:operation name="CreateSession">
       <soap12:operation soapAction="http://opcfoundation.org/UA/2008/02/Services.wsdl/CreateSession" style="document"/>
       <wsdl:input name="CreateSessionMessage">
@@ -448,7 +448,7 @@
     </wsdl:operation>
 
   </wsdl:binding>
-  
+
   <wsdl:binding name="UaSoapXmlBinding_IDiscoveryEndpoint" type="s0:IDiscoveryEndpoint">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
 
@@ -541,5 +541,5 @@
       <soap12:address location="http://localhost:52601/UADiscovery/registration"/>
     </wsdl:port>
   </wsdl:service>
-  
+
 </wsdl:definitions>
