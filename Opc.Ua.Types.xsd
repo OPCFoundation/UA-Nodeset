@@ -506,42 +506,6 @@
   </xs:complexType>
   <xs:element name="ListOfOpenFileMode" type="tns:ListOfOpenFileMode" nillable="true"></xs:element>
 
-  <xs:complexType name="ApplicationRecordDataType">
-    <xs:sequence>
-      <xs:element name="ApplicationType" type="tns:ApplicationType" minOccurs="0" />
-      <xs:element name="ApplicationNames" type="ua:ListOfLocalizedText" minOccurs="0" nillable="true" />
-      <xs:element name="ProductUri" type="xs:string" minOccurs="0" nillable="true" />
-      <xs:element name="DiscoveryUrls" type="ua:ListOfString" minOccurs="0" nillable="true" />
-      <xs:element name="ServerCapabilitiesIdentifiers" type="ua:ListOfString" minOccurs="0" nillable="true" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ApplicationRecordDataType" type="tns:ApplicationRecordDataType" />
-
-  <xs:complexType name="ListOfApplicationRecordDataType">
-    <xs:sequence>
-      <xs:element name="ApplicationRecordDataType" type="tns:ApplicationRecordDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ListOfApplicationRecordDataType" type="tns:ListOfApplicationRecordDataType" nillable="true"></xs:element>
-
-  <xs:complexType name="TrustListDataType">
-    <xs:sequence>
-      <xs:element name="SpecifiedLists" type="xs:unsignedInt" minOccurs="0" />
-      <xs:element name="TrustedCertificates" type="ua:ListOfByteString" minOccurs="0" nillable="true" />
-      <xs:element name="TrustedCertificateRevocationLists" type="ua:ListOfByteString" minOccurs="0" nillable="true" />
-      <xs:element name="IssuerCertificates" type="ua:ListOfByteString" minOccurs="0" nillable="true" />
-      <xs:element name="IssuerCertificateRevocationLists" type="ua:ListOfByteString" minOccurs="0" nillable="true" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="TrustListDataType" type="tns:TrustListDataType" />
-
-  <xs:complexType name="ListOfTrustListDataType">
-    <xs:sequence>
-      <xs:element name="TrustListDataType" type="tns:TrustListDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ListOfTrustListDataType" type="tns:ListOfTrustListDataType" nillable="true"></xs:element>
-
   <xs:simpleType  name="IdType">
     <xs:annotation>
       <xs:documentation>The type of identifier used in a node id.</xs:documentation>
@@ -928,42 +892,6 @@
   </xs:complexType>
   <xs:element name="FindServersResponse" type="tns:FindServersResponse" />
 
-  <xs:complexType name="ServerOnNetwork">
-    <xs:sequence>
-      <xs:element name="RecordId" type="xs:unsignedInt" minOccurs="0" />
-      <xs:element name="ServerName" type="xs:string" minOccurs="0" nillable="true" />
-      <xs:element name="DiscoveryUrl" type="xs:string" minOccurs="0" nillable="true" />
-      <xs:element name="ServerCapabilities" type="ua:ListOfString" minOccurs="0" nillable="true" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ServerOnNetwork" type="tns:ServerOnNetwork" />
-
-  <xs:complexType name="ListOfServerOnNetwork">
-    <xs:sequence>
-      <xs:element name="ServerOnNetwork" type="tns:ServerOnNetwork" minOccurs="0" maxOccurs="unbounded" nillable="true" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ListOfServerOnNetwork" type="tns:ListOfServerOnNetwork" nillable="true"></xs:element>
-
-  <xs:complexType name="FindServersOnNetworkRequest">
-    <xs:sequence>
-      <xs:element name="RequestHeader" type="tns:RequestHeader" minOccurs="0" nillable="true" />
-      <xs:element name="StartingRecordId" type="xs:unsignedInt" minOccurs="0" />
-      <xs:element name="MaxRecordsToReturn" type="xs:unsignedInt" minOccurs="0" />
-      <xs:element name="ServerCapabilityFilter" type="ua:ListOfString" minOccurs="0" nillable="true" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="FindServersOnNetworkRequest" type="tns:FindServersOnNetworkRequest" />
-
-  <xs:complexType name="FindServersOnNetworkResponse">
-    <xs:sequence>
-      <xs:element name="ResponseHeader" type="tns:ResponseHeader" minOccurs="0" nillable="true" />
-      <xs:element name="LastCounterResetTime" type="xs:dateTime" minOccurs="0" />
-      <xs:element name="ServerOnNetwork" type="ua:ListOfString" minOccurs="0" nillable="true" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="FindServersOnNetworkResponse" type="tns:FindServersOnNetworkResponse" />
-
   <xs:element name="ApplicationInstanceCertificate" type="xs:base64Binary" />
 
   <xs:simpleType  name="MessageSecurityMode">
@@ -1105,40 +1033,6 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="RegisterServerResponse" type="tns:RegisterServerResponse" />
-
-  <xs:complexType name="RegisteredServer2">
-    <xs:complexContent mixed="false">
-      <xs:extension base="tns:RegisteredServer">
-        <xs:sequence>
-          <xs:element name="MdnsServerName" type="xs:string" minOccurs="0" nillable="true" />
-          <xs:element name="ServerCapabilities" type="ua:ListOfString" minOccurs="0" nillable="true" />
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="RegisteredServer2" type="tns:RegisteredServer2" />
-
-  <xs:complexType name="ListOfRegisteredServer2">
-    <xs:sequence>
-      <xs:element name="RegisteredServer2" type="tns:RegisteredServer2" minOccurs="0" maxOccurs="unbounded" nillable="true" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ListOfRegisteredServer2" type="tns:ListOfRegisteredServer2" nillable="true"></xs:element>
-
-  <xs:complexType name="RegisterServer2Request">
-    <xs:sequence>
-      <xs:element name="RequestHeader" type="tns:RequestHeader" minOccurs="0" nillable="true" />
-      <xs:element name="Server" type="tns:RegisteredServer2" minOccurs="0" nillable="true" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="RegisterServer2Request" type="tns:RegisterServer2Request" />
-
-  <xs:complexType name="RegisterServer2Response">
-    <xs:sequence>
-      <xs:element name="ResponseHeader" type="tns:ResponseHeader" minOccurs="0" nillable="true" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="RegisterServer2Response" type="tns:RegisterServer2Response" />
 
   <xs:simpleType  name="SecurityTokenRequestType">
     <xs:annotation>
@@ -2825,6 +2719,21 @@
   </xs:complexType>
   <xs:element name="ListOfHistoryUpdateResult" type="tns:ListOfHistoryUpdateResult" nillable="true"></xs:element>
 
+  <xs:complexType name="HistoryUpdateEventResult">
+    <xs:sequence>
+      <xs:element name="StatusCode" type="ua:StatusCode" minOccurs="0" />
+      <xs:element name="EventFilterResult" type="tns:EventFilterResult" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HistoryUpdateEventResult" type="tns:HistoryUpdateEventResult" />
+
+  <xs:complexType name="ListOfHistoryUpdateEventResult">
+    <xs:sequence>
+      <xs:element name="HistoryUpdateEventResult" type="tns:HistoryUpdateEventResult" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfHistoryUpdateEventResult" type="tns:ListOfHistoryUpdateEventResult" nillable="true"></xs:element>
+
   <xs:complexType name="HistoryUpdateRequest">
     <xs:sequence>
       <xs:element name="RequestHeader" type="tns:RequestHeader" minOccurs="0" nillable="true" />
@@ -4001,8 +3910,8 @@
   <xs:simpleType  name="ExceptionDeviationFormat">
     <xs:restriction base="xs:string">
       <xs:enumeration value="AbsoluteValue_0" />
-      <xs:enumeration value="PercentOfValue_1" />
-      <xs:enumeration value="PercentOfRange_2" />
+      <xs:enumeration value="PercentOfRange_1" />
+      <xs:enumeration value="PercentOfValue_2" />
       <xs:enumeration value="PercentOfEURange_3" />
       <xs:enumeration value="Unknown_4" />
     </xs:restriction>

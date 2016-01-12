@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.02" LastModified="2013-08-06T03:17:45.4149197Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.02" LastModified="2013-03-06T05:36:43.4892317Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
     <Alias Alias="SByte">i=2</Alias>
@@ -154,18 +154,6 @@
       <Field Name="DiscoveryUrls" DataType="i=12" ValueRank="1">
         <Description>The URLs for the server's discovery endpoints.</Description>
       </Field>
-    </Definition>
-  </UADataType>
-  <UADataType NodeId="i=12189" BrowseName="ServerOnNetwork">
-    <DisplayName>ServerOnNetwork</DisplayName>
-    <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
-    </References>
-    <Definition Name="ServerOnNetwork">
-      <Field Name="RecordId" DataType="i=7" />
-      <Field Name="ServerName" DataType="i=12" />
-      <Field Name="DiscoveryUrl" DataType="i=12" />
-      <Field Name="ServerCapabilities" DataType="i=12" ValueRank="1" />
     </Definition>
   </UADataType>
   <UADataType NodeId="i=311" BrowseName="ApplicationInstanceCertificate">
@@ -371,16 +359,6 @@
       <Field Name="IsOnline" DataType="i=1">
         <Description>If FALSE the server will save the registration information to a persistent datastore.</Description>
       </Field>
-    </Definition>
-  </UADataType>
-  <UADataType NodeId="i=12192" BrowseName="RegisteredServer2">
-    <DisplayName>RegisteredServer2</DisplayName>
-    <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=432</Reference>
-    </References>
-    <Definition Name="RegisteredServer2" BaseType="RegisteredServer2">
-      <Field Name="MdnsServerName" DataType="i=12" />
-      <Field Name="ServerCapabilities" DataType="i=12" ValueRank="1" />
     </Definition>
   </UADataType>
   <UADataType NodeId="i=315" BrowseName="SecurityTokenRequestType">
@@ -2471,14 +2449,6 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="i=12195" BrowseName="Default XML" SymbolicName="DefaultXml">
-    <DisplayName>Default XML</DisplayName>
-    <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=12189</Reference>
-      <Reference ReferenceType="HasDescription">i=12201</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
   <UAObject NodeId="i=305" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
@@ -2500,14 +2470,6 @@
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=432</Reference>
       <Reference ReferenceType="HasDescription">i=8417</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="i=12198" BrowseName="Default XML" SymbolicName="DefaultXml">
-    <DisplayName>Default XML</DisplayName>
-    <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=12192</Reference>
-      <Reference ReferenceType="HasDescription">i=12204</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
@@ -2719,14 +2681,6 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="i=12207" BrowseName="Default Binary" SymbolicName="DefaultBinary">
-    <DisplayName>Default Binary</DisplayName>
-    <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=12189</Reference>
-      <Reference ReferenceType="HasDescription">i=12213</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
   <UAObject NodeId="i=306" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
     <References>
@@ -2748,14 +2702,6 @@
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=432</Reference>
       <Reference ReferenceType="HasDescription">i=7782</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="i=12210" BrowseName="Default Binary" SymbolicName="DefaultBinary">
-    <DisplayName>Default Binary</DisplayName>
-    <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=12192</Reference>
-      <Reference ReferenceType="HasDescription">i=12216</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
