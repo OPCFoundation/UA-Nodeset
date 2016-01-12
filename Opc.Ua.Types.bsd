@@ -6,7 +6,7 @@
   DefaultByteOrder="LittleEndian"
   TargetNamespace="http://opcfoundation.org/UA/"
 >
-  <!-- This File was generated on 2013-02-21 and supports the specifications supported by version 1.1.334.2 of the OPC UA deliverables. -->
+  <!-- This File was generated on 2013-08-06 and supports the specifications supported by version 1.1.334.6 of the OPC UA deliverables. -->
 
   <opc:Import Namespace="http://opcfoundation.org/BinarySchema/" />
 
@@ -205,6 +205,29 @@
     <opc:EnumeratedValue Name="EraseExisiting" Value="4" />
     <opc:EnumeratedValue Name="Append" Value="8" />
   </opc:EnumeratedType>
+
+  <opc:StructuredType Name="ApplicationRecordDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="ApplicationType" TypeName="tns:ApplicationType" />
+    <opc:Field Name="NoOfApplicationNames" TypeName="opc:Int32" />
+    <opc:Field Name="ApplicationNames" TypeName="ua:LocalizedText" LengthField="NoOfApplicationNames" />
+    <opc:Field Name="ProductUri" TypeName="opc:String" />
+    <opc:Field Name="NoOfDiscoveryUrls" TypeName="opc:Int32" />
+    <opc:Field Name="DiscoveryUrls" TypeName="opc:String" LengthField="NoOfDiscoveryUrls" />
+    <opc:Field Name="NoOfServerCapabilitiesIdentifiers" TypeName="opc:Int32" />
+    <opc:Field Name="ServerCapabilitiesIdentifiers" TypeName="opc:String" LengthField="NoOfServerCapabilitiesIdentifiers" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="TrustListDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="SpecifiedLists" TypeName="opc:UInt32" />
+    <opc:Field Name="NoOfTrustedCertificates" TypeName="opc:Int32" />
+    <opc:Field Name="TrustedCertificates" TypeName="opc:ByteString" LengthField="NoOfTrustedCertificates" />
+    <opc:Field Name="NoOfTrustedCertificateRevocationLists" TypeName="opc:Int32" />
+    <opc:Field Name="TrustedCertificateRevocationLists" TypeName="opc:ByteString" LengthField="NoOfTrustedCertificateRevocationLists" />
+    <opc:Field Name="NoOfIssuerCertificates" TypeName="opc:Int32" />
+    <opc:Field Name="IssuerCertificates" TypeName="opc:ByteString" LengthField="NoOfIssuerCertificates" />
+    <opc:Field Name="NoOfIssuerCertificateRevocationLists" TypeName="opc:Int32" />
+    <opc:Field Name="IssuerCertificateRevocationLists" TypeName="opc:ByteString" LengthField="NoOfIssuerCertificateRevocationLists" />
+  </opc:StructuredType>
 
   <opc:EnumeratedType Name="IdType" LengthInBits="32">
     <opc:Documentation>The type of identifier used in a node id.</opc:Documentation>
@@ -500,6 +523,29 @@
     <opc:Field Name="Servers" TypeName="tns:ApplicationDescription" LengthField="NoOfServers" />
   </opc:StructuredType>
 
+  <opc:StructuredType Name="ServerOnNetwork" BaseType="ua:ExtensionObject">
+    <opc:Field Name="RecordId" TypeName="opc:UInt32" />
+    <opc:Field Name="ServerName" TypeName="opc:String" />
+    <opc:Field Name="DiscoveryUrl" TypeName="opc:String" />
+    <opc:Field Name="NoOfServerCapabilities" TypeName="opc:Int32" />
+    <opc:Field Name="ServerCapabilities" TypeName="opc:String" LengthField="NoOfServerCapabilities" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="FindServersOnNetworkRequest" BaseType="ua:ExtensionObject">
+    <opc:Field Name="RequestHeader" TypeName="tns:RequestHeader" />
+    <opc:Field Name="StartingRecordId" TypeName="opc:UInt32" />
+    <opc:Field Name="MaxRecordsToReturn" TypeName="opc:UInt32" />
+    <opc:Field Name="NoOfServerCapabilityFilter" TypeName="opc:Int32" />
+    <opc:Field Name="ServerCapabilityFilter" TypeName="opc:String" LengthField="NoOfServerCapabilityFilter" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="FindServersOnNetworkResponse" BaseType="ua:ExtensionObject">
+    <opc:Field Name="ResponseHeader" TypeName="tns:ResponseHeader" />
+    <opc:Field Name="LastCounterResetTime" TypeName="opc:DateTime" />
+    <opc:Field Name="NoOfServerOnNetwork" TypeName="opc:Int32" />
+    <opc:Field Name="ServerOnNetwork" TypeName="opc:String" LengthField="NoOfServerOnNetwork" />
+  </opc:StructuredType>
+
   <opc:OpaqueType Name="ApplicationInstanceCertificate">
     <opc:Documentation>A certificate for an instance of an application.</opc:Documentation>
   </opc:OpaqueType>
@@ -581,6 +627,31 @@
 
   <opc:StructuredType Name="RegisterServerResponse" BaseType="ua:ExtensionObject">
     <opc:Documentation>Registers a server with the discovery server.</opc:Documentation>
+    <opc:Field Name="ResponseHeader" TypeName="tns:ResponseHeader" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="RegisteredServer2" BaseType="tns:RegisteredServer">
+    <opc:Field Name="ServerUri" TypeName="opc:String" SourceType="tns:RegisteredServer" />
+    <opc:Field Name="ProductUri" TypeName="opc:String" SourceType="tns:RegisteredServer" />
+    <opc:Field Name="NoOfServerNames" TypeName="opc:Int32" />
+    <opc:Field Name="ServerNames" TypeName="ua:LocalizedText" LengthField="NoOfServerNames" />
+    <opc:Field Name="ServerType" TypeName="tns:ApplicationType" SourceType="tns:RegisteredServer" />
+    <opc:Field Name="GatewayServerUri" TypeName="opc:String" SourceType="tns:RegisteredServer" />
+    <opc:Field Name="NoOfDiscoveryUrls" TypeName="opc:Int32" />
+    <opc:Field Name="DiscoveryUrls" TypeName="opc:String" LengthField="NoOfDiscoveryUrls" />
+    <opc:Field Name="SemaphoreFilePath" TypeName="opc:String" SourceType="tns:RegisteredServer" />
+    <opc:Field Name="IsOnline" TypeName="opc:Boolean" SourceType="tns:RegisteredServer" />
+    <opc:Field Name="MdnsServerName" TypeName="opc:String" />
+    <opc:Field Name="NoOfServerCapabilities" TypeName="opc:Int32" />
+    <opc:Field Name="ServerCapabilities" TypeName="opc:String" LengthField="NoOfServerCapabilities" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="RegisterServer2Request" BaseType="ua:ExtensionObject">
+    <opc:Field Name="RequestHeader" TypeName="tns:RequestHeader" />
+    <opc:Field Name="Server" TypeName="tns:RegisteredServer2" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="RegisterServer2Response" BaseType="ua:ExtensionObject">
     <opc:Field Name="ResponseHeader" TypeName="tns:ResponseHeader" />
   </opc:StructuredType>
 
@@ -1570,7 +1641,8 @@
     <opc:Field Name="NodeId" TypeName="ua:NodeId" SourceType="tns:HistoryUpdateDetails" />
     <opc:Field Name="PerformInsertReplace" TypeName="tns:PerformUpdateType" />
     <opc:Field Name="Filter" TypeName="tns:EventFilter" />
-    <opc:Field Name="EventData" TypeName="tns:HistoryEventFieldList" />
+    <opc:Field Name="NoOfEventData" TypeName="opc:Int32" />
+    <opc:Field Name="EventData" TypeName="tns:HistoryEventFieldList" LengthField="NoOfEventData" />
   </opc:StructuredType>
 
   <opc:StructuredType Name="DeleteRawModifiedDetails" BaseType="tns:HistoryUpdateDetails">
@@ -1598,11 +1670,6 @@
     <opc:Field Name="OperationResults" TypeName="ua:StatusCode" LengthField="NoOfOperationResults" />
     <opc:Field Name="NoOfDiagnosticInfos" TypeName="opc:Int32" />
     <opc:Field Name="DiagnosticInfos" TypeName="ua:DiagnosticInfo" LengthField="NoOfDiagnosticInfos" />
-  </opc:StructuredType>
-
-  <opc:StructuredType Name="HistoryUpdateEventResult" BaseType="ua:ExtensionObject">
-    <opc:Field Name="StatusCode" TypeName="ua:StatusCode" />
-    <opc:Field Name="EventFilterResult" TypeName="tns:EventFilterResult" />
   </opc:StructuredType>
 
   <opc:StructuredType Name="HistoryUpdateRequest" BaseType="ua:ExtensionObject">
@@ -2381,8 +2448,8 @@
 
   <opc:EnumeratedType Name="ExceptionDeviationFormat" LengthInBits="32">
     <opc:EnumeratedValue Name="AbsoluteValue" Value="0" />
-    <opc:EnumeratedValue Name="PercentOfRange" Value="1" />
-    <opc:EnumeratedValue Name="PercentOfValue" Value="2" />
+    <opc:EnumeratedValue Name="PercentOfValue" Value="1" />
+    <opc:EnumeratedValue Name="PercentOfRange" Value="2" />
     <opc:EnumeratedValue Name="PercentOfEURange" Value="3" />
     <opc:EnumeratedValue Name="Unknown" Value="4" />
   </opc:EnumeratedType>
