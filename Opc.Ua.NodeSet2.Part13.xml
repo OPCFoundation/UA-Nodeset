@@ -44,11 +44,10 @@
       <Reference ReferenceType="HasProperty">i=11189</Reference>
       <Reference ReferenceType="HasProperty">i=11190</Reference>
       <Reference ReferenceType="HasProperty">i=11191</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">i=11929</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=11188" BrowseName="TreatUncertainAsBad" DataType="Boolean">
+  <UAVariable NodeId="i=11188" BrowseName="TreatUncertainAsBad" ParentNodeId="i=11187" DataType="Boolean">
     <DisplayName>TreatUncertainAsBad</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -56,7 +55,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=11187</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11189" BrowseName="PercentDataBad" DataType="Byte">
+  <UAVariable NodeId="i=11189" BrowseName="PercentDataBad" ParentNodeId="i=11187" DataType="Byte">
     <DisplayName>PercentDataBad</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -64,7 +63,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=11187</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11190" BrowseName="PercentDataGood" DataType="Byte">
+  <UAVariable NodeId="i=11190" BrowseName="PercentDataGood" ParentNodeId="i=11187" DataType="Byte">
     <DisplayName>PercentDataGood</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -72,7 +71,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=11187</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11191" BrowseName="UseSlopedExtrapolation" DataType="Boolean">
+  <UAVariable NodeId="i=11191" BrowseName="UseSlopedExtrapolation" ParentNodeId="i=11187" DataType="Boolean">
     <DisplayName>UseSlopedExtrapolation</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>

@@ -43,11 +43,10 @@
     <References>
       <Reference ReferenceType="HasProperty">i=2366</Reference>
       <Reference ReferenceType="HasProperty">i=2367</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">i=11922</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
     </References>
   </UAVariableType>
-  <UAVariable NodeId="i=2366" BrowseName="Definition" DataType="String">
+  <UAVariable NodeId="i=2366" BrowseName="Definition" ParentNodeId="i=2365" DataType="String">
     <DisplayName>Definition</DisplayName>
     <Description>A vendor-specific, human readable string that specifies how the value of this DataItem is calculated.</Description>
     <References>
@@ -56,7 +55,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2365</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2367" BrowseName="ValuePrecision" DataType="Double">
+  <UAVariable NodeId="i=2367" BrowseName="ValuePrecision" ParentNodeId="i=2365" DataType="Double">
     <DisplayName>ValuePrecision</DisplayName>
     <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
     <References>
@@ -71,11 +70,10 @@
       <Reference ReferenceType="HasProperty">i=2370</Reference>
       <Reference ReferenceType="HasProperty">i=2369</Reference>
       <Reference ReferenceType="HasProperty">i=2371</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">i=11922</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2365</Reference>
     </References>
   </UAVariableType>
-  <UAVariable NodeId="i=2370" BrowseName="InstrumentRange" DataType="i=884">
+  <UAVariable NodeId="i=2370" BrowseName="InstrumentRange" ParentNodeId="i=2368" DataType="i=884">
     <DisplayName>InstrumentRange</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -83,7 +81,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2368</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2369" BrowseName="EURange" DataType="i=884">
+  <UAVariable NodeId="i=2369" BrowseName="EURange" ParentNodeId="i=2368" DataType="i=884">
     <DisplayName>EURange</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -91,7 +89,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2368</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2371" BrowseName="EngineeringUnits" DataType="i=887">
+  <UAVariable NodeId="i=2371" BrowseName="EngineeringUnits" ParentNodeId="i=2368" DataType="i=887">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -102,7 +100,6 @@
   <UAVariableType NodeId="i=2372" BrowseName="DiscreteItemType" IsAbstract="true" ValueRank="-2">
     <DisplayName>DiscreteItemType</DisplayName>
     <References>
-      <Reference ReferenceType="Organizes" IsForward="false">i=11922</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2365</Reference>
     </References>
   </UAVariableType>
@@ -111,11 +108,10 @@
     <References>
       <Reference ReferenceType="HasProperty">i=2374</Reference>
       <Reference ReferenceType="HasProperty">i=2375</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">i=11922</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2372</Reference>
     </References>
   </UAVariableType>
-  <UAVariable NodeId="i=2374" BrowseName="FalseState" DataType="LocalizedText">
+  <UAVariable NodeId="i=2374" BrowseName="FalseState" ParentNodeId="i=2373" DataType="LocalizedText">
     <DisplayName>FalseState</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -123,7 +119,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2373</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2375" BrowseName="TrueState" DataType="LocalizedText">
+  <UAVariable NodeId="i=2375" BrowseName="TrueState" ParentNodeId="i=2373" DataType="LocalizedText">
     <DisplayName>TrueState</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -135,11 +131,10 @@
     <DisplayName>MultiStateDiscreteType</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=2377</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">i=11922</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2372</Reference>
     </References>
   </UAVariableType>
-  <UAVariable NodeId="i=2377" BrowseName="EnumStrings" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=2377" BrowseName="EnumStrings" ParentNodeId="i=2376" DataType="LocalizedText" ValueRank="1">
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -152,11 +147,10 @@
     <References>
       <Reference ReferenceType="HasProperty">i=11241</Reference>
       <Reference ReferenceType="HasProperty">i=11461</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">i=11922</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2372</Reference>
     </References>
   </UAVariableType>
-  <UAVariable NodeId="i=11241" BrowseName="EnumValues" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="i=11241" BrowseName="EnumValues" ParentNodeId="i=11238" DataType="i=7594" ValueRank="1">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -164,7 +158,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=11238</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11461" BrowseName="ValueAsText" DataType="String">
+  <UAVariable NodeId="i=11461" BrowseName="ValueAsText" ParentNodeId="i=11238" DataType="String">
     <DisplayName>ValueAsText</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -175,16 +169,24 @@
   <UADataType NodeId="i=884" BrowseName="Range">
     <DisplayName>Range</DisplayName>
     <References>
-      <Reference ReferenceType="Organizes" IsForward="false">i=11932</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="Range" BaseType="">
+      <Field Name="Low" DataType="i=11" />
+      <Field Name="High" DataType="i=11" />
+    </Definition>
   </UADataType>
   <UADataType NodeId="i=887" BrowseName="EUInformation">
     <DisplayName>EUInformation</DisplayName>
     <References>
-      <Reference ReferenceType="Organizes" IsForward="false">i=11932</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="EUInformation" BaseType="">
+      <Field Name="NamespaceUri" DataType="i=12" />
+      <Field Name="UnitId" DataType="i=6" />
+      <Field Name="DisplayName" DataType="i=21" />
+      <Field Name="Description" DataType="i=21" />
+    </Definition>
   </UADataType>
   <UAObject NodeId="i=885" BrowseName="Default XML">
     <DisplayName>Default XML</DisplayName>

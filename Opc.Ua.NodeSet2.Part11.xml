@@ -41,7 +41,6 @@
     <DisplayName>HasHistoricalConfiguration</DisplayName>
     <Description>The type for a reference to the historical configuration for a data variable.</Description>
     <References>
-      <Reference ReferenceType="Organizes" IsForward="false">i=11918</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=44</Reference>
     </References>
     <InverseName>HistoricalConfigurationOf</InverseName>
@@ -65,7 +64,6 @@
       <Reference ReferenceType="HasProperty">i=2328</Reference>
       <Reference ReferenceType="HasProperty">i=11499</Reference>
       <Reference ReferenceType="HasProperty">i=11500</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">i=11928</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
@@ -81,7 +79,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2318</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="i=11168" BrowseName="TreatUncertainAsBad" DataType="Boolean">
+  <UAVariable NodeId="i=11168" BrowseName="TreatUncertainAsBad" ParentNodeId="i=3059" DataType="Boolean">
     <DisplayName>TreatUncertainAsBad</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -89,7 +87,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=3059</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11169" BrowseName="PercentDataBad" DataType="Byte">
+  <UAVariable NodeId="i=11169" BrowseName="PercentDataBad" ParentNodeId="i=3059" DataType="Byte">
     <DisplayName>PercentDataBad</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -97,7 +95,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=3059</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11170" BrowseName="PercentDataGood" DataType="Byte">
+  <UAVariable NodeId="i=11170" BrowseName="PercentDataGood" ParentNodeId="i=3059" DataType="Byte">
     <DisplayName>PercentDataGood</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -105,7 +103,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=3059</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11171" BrowseName="UseSlopedExtrapolation" DataType="Boolean">
+  <UAVariable NodeId="i=11171" BrowseName="UseSlopedExtrapolation" ParentNodeId="i=3059" DataType="Boolean">
     <DisplayName>UseSlopedExtrapolation</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -121,7 +119,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2318</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="i=2323" BrowseName="Stepped" DataType="Boolean">
+  <UAVariable NodeId="i=2323" BrowseName="Stepped" ParentNodeId="i=2318" DataType="Boolean">
     <DisplayName>Stepped</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -129,7 +127,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2318</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2324" BrowseName="Definition" DataType="String">
+  <UAVariable NodeId="i=2324" BrowseName="Definition" ParentNodeId="i=2318" DataType="String">
     <DisplayName>Definition</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -137,7 +135,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2318</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2325" BrowseName="MaxTimeInterval" DataType="i=290">
+  <UAVariable NodeId="i=2325" BrowseName="MaxTimeInterval" ParentNodeId="i=2318" DataType="i=290">
     <DisplayName>MaxTimeInterval</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -145,7 +143,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2318</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2326" BrowseName="MinTimeInterval" DataType="i=290">
+  <UAVariable NodeId="i=2326" BrowseName="MinTimeInterval" ParentNodeId="i=2318" DataType="i=290">
     <DisplayName>MinTimeInterval</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -153,7 +151,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2318</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2327" BrowseName="ExceptionDeviation" DataType="Double">
+  <UAVariable NodeId="i=2327" BrowseName="ExceptionDeviation" ParentNodeId="i=2318" DataType="Double">
     <DisplayName>ExceptionDeviation</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -161,7 +159,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2318</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2328" BrowseName="ExceptionDeviationFormat" DataType="i=890">
+  <UAVariable NodeId="i=2328" BrowseName="ExceptionDeviationFormat" ParentNodeId="i=2318" DataType="i=890">
     <DisplayName>ExceptionDeviationFormat</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -169,7 +167,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2318</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11499" BrowseName="StartOfArchive" DataType="i=294">
+  <UAVariable NodeId="i=11499" BrowseName="StartOfArchive" ParentNodeId="i=2318" DataType="i=294">
     <DisplayName>StartOfArchive</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -177,7 +175,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2318</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11500" BrowseName="StartOfOnlineArchive" DataType="i=294">
+  <UAVariable NodeId="i=11500" BrowseName="StartOfOnlineArchive" ParentNodeId="i=2318" DataType="i=294">
     <DisplayName>StartOfOnlineArchive</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -206,98 +204,98 @@
       <Reference ReferenceType="HasTypeDefinition">i=2330</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="i=11193" BrowseName="AccessHistoryDataCapability" DataType="Boolean">
+  <UAVariable NodeId="i=11193" BrowseName="AccessHistoryDataCapability" ParentNodeId="i=11192" DataType="Boolean">
     <DisplayName>AccessHistoryDataCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11242" BrowseName="AccessHistoryEventsCapability" DataType="Boolean">
+  <UAVariable NodeId="i=11242" BrowseName="AccessHistoryEventsCapability" ParentNodeId="i=11192" DataType="Boolean">
     <DisplayName>AccessHistoryEventsCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11273" BrowseName="MaxReturnDataValues" DataType="UInt32">
+  <UAVariable NodeId="i=11273" BrowseName="MaxReturnDataValues" ParentNodeId="i=11192" DataType="UInt32">
     <DisplayName>MaxReturnDataValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11274" BrowseName="MaxReturnEventValues" DataType="UInt32">
+  <UAVariable NodeId="i=11274" BrowseName="MaxReturnEventValues" ParentNodeId="i=11192" DataType="UInt32">
     <DisplayName>MaxReturnEventValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11196" BrowseName="InsertDataCapability" DataType="Boolean">
+  <UAVariable NodeId="i=11196" BrowseName="InsertDataCapability" ParentNodeId="i=11192" DataType="Boolean">
     <DisplayName>InsertDataCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11197" BrowseName="ReplaceDataCapability" DataType="Boolean">
+  <UAVariable NodeId="i=11197" BrowseName="ReplaceDataCapability" ParentNodeId="i=11192" DataType="Boolean">
     <DisplayName>ReplaceDataCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11198" BrowseName="UpdateDataCapability" DataType="Boolean">
+  <UAVariable NodeId="i=11198" BrowseName="UpdateDataCapability" ParentNodeId="i=11192" DataType="Boolean">
     <DisplayName>UpdateDataCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11199" BrowseName="DeleteRawCapability" DataType="Boolean">
+  <UAVariable NodeId="i=11199" BrowseName="DeleteRawCapability" ParentNodeId="i=11192" DataType="Boolean">
     <DisplayName>DeleteRawCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11200" BrowseName="DeleteAtTimeCapability" DataType="Boolean">
+  <UAVariable NodeId="i=11200" BrowseName="DeleteAtTimeCapability" ParentNodeId="i=11192" DataType="Boolean">
     <DisplayName>DeleteAtTimeCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11281" BrowseName="InsertEventCapability" DataType="Boolean">
+  <UAVariable NodeId="i=11281" BrowseName="InsertEventCapability" ParentNodeId="i=11192" DataType="Boolean">
     <DisplayName>InsertEventCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11282" BrowseName="ReplaceEventCapability" DataType="Boolean">
+  <UAVariable NodeId="i=11282" BrowseName="ReplaceEventCapability" ParentNodeId="i=11192" DataType="Boolean">
     <DisplayName>ReplaceEventCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11283" BrowseName="UpdateEventCapability" DataType="Boolean">
+  <UAVariable NodeId="i=11283" BrowseName="UpdateEventCapability" ParentNodeId="i=11192" DataType="Boolean">
     <DisplayName>UpdateEventCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11502" BrowseName="DeleteEventCapability" DataType="Boolean">
+  <UAVariable NodeId="i=11502" BrowseName="DeleteEventCapability" ParentNodeId="i=11192" DataType="Boolean">
     <DisplayName>DeleteEventCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11192</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11275" BrowseName="InsertAnnotationCapability" DataType="Boolean">
+  <UAVariable NodeId="i=11275" BrowseName="InsertAnnotationCapability" ParentNodeId="i=11192" DataType="Boolean">
     <DisplayName>InsertAnnotationCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -330,35 +328,35 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11202</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="i=11204" BrowseName="TreatUncertainAsBad" DataType="Boolean">
+  <UAVariable NodeId="i=11204" BrowseName="TreatUncertainAsBad" ParentNodeId="i=11203" DataType="Boolean">
     <DisplayName>TreatUncertainAsBad</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11203</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11205" BrowseName="PercentDataBad" DataType="Byte">
+  <UAVariable NodeId="i=11205" BrowseName="PercentDataBad" ParentNodeId="i=11203" DataType="Byte">
     <DisplayName>PercentDataBad</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11203</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11206" BrowseName="PercentDataGood" DataType="Byte">
+  <UAVariable NodeId="i=11206" BrowseName="PercentDataGood" ParentNodeId="i=11203" DataType="Byte">
     <DisplayName>PercentDataGood</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11203</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11207" BrowseName="UseSlopedExtrapolation" DataType="Boolean">
+  <UAVariable NodeId="i=11207" BrowseName="UseSlopedExtrapolation" ParentNodeId="i=11203" DataType="Boolean">
     <DisplayName>UseSlopedExtrapolation</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11203</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11208" BrowseName="Stepped" DataType="Boolean">
+  <UAVariable NodeId="i=11208" BrowseName="Stepped" ParentNodeId="i=11202" DataType="Boolean">
     <DisplayName>Stepped</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -389,11 +387,10 @@
       <Reference ReferenceType="HasProperty">i=11501</Reference>
       <Reference ReferenceType="HasProperty">i=11270</Reference>
       <Reference ReferenceType="HasComponent">i=11172</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">i=11928</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=2331" BrowseName="AccessHistoryDataCapability" DataType="Boolean">
+  <UAVariable NodeId="i=2331" BrowseName="AccessHistoryDataCapability" ParentNodeId="i=2330" DataType="Boolean">
     <DisplayName>AccessHistoryDataCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -401,7 +398,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2330</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2332" BrowseName="AccessHistoryEventsCapability" DataType="Boolean">
+  <UAVariable NodeId="i=2332" BrowseName="AccessHistoryEventsCapability" ParentNodeId="i=2330" DataType="Boolean">
     <DisplayName>AccessHistoryEventsCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -409,7 +406,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2330</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11268" BrowseName="MaxReturnDataValues" DataType="UInt32">
+  <UAVariable NodeId="i=11268" BrowseName="MaxReturnDataValues" ParentNodeId="i=2330" DataType="UInt32">
     <DisplayName>MaxReturnDataValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -417,7 +414,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2330</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11269" BrowseName="MaxReturnEventValues" DataType="UInt32">
+  <UAVariable NodeId="i=11269" BrowseName="MaxReturnEventValues" ParentNodeId="i=2330" DataType="UInt32">
     <DisplayName>MaxReturnEventValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -425,7 +422,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2330</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2334" BrowseName="InsertDataCapability" DataType="Boolean">
+  <UAVariable NodeId="i=2334" BrowseName="InsertDataCapability" ParentNodeId="i=2330" DataType="Boolean">
     <DisplayName>InsertDataCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -433,7 +430,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2330</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2335" BrowseName="ReplaceDataCapability" DataType="Boolean">
+  <UAVariable NodeId="i=2335" BrowseName="ReplaceDataCapability" ParentNodeId="i=2330" DataType="Boolean">
     <DisplayName>ReplaceDataCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -441,7 +438,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2330</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2336" BrowseName="UpdateDataCapability" DataType="Boolean">
+  <UAVariable NodeId="i=2336" BrowseName="UpdateDataCapability" ParentNodeId="i=2330" DataType="Boolean">
     <DisplayName>UpdateDataCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -449,7 +446,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2330</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2337" BrowseName="DeleteRawCapability" DataType="Boolean">
+  <UAVariable NodeId="i=2337" BrowseName="DeleteRawCapability" ParentNodeId="i=2330" DataType="Boolean">
     <DisplayName>DeleteRawCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -457,7 +454,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2330</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2338" BrowseName="DeleteAtTimeCapability" DataType="Boolean">
+  <UAVariable NodeId="i=2338" BrowseName="DeleteAtTimeCapability" ParentNodeId="i=2330" DataType="Boolean">
     <DisplayName>DeleteAtTimeCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -465,7 +462,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2330</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11278" BrowseName="InsertEventCapability" DataType="Boolean">
+  <UAVariable NodeId="i=11278" BrowseName="InsertEventCapability" ParentNodeId="i=2330" DataType="Boolean">
     <DisplayName>InsertEventCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -473,7 +470,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2330</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11279" BrowseName="ReplaceEventCapability" DataType="Boolean">
+  <UAVariable NodeId="i=11279" BrowseName="ReplaceEventCapability" ParentNodeId="i=2330" DataType="Boolean">
     <DisplayName>ReplaceEventCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -481,7 +478,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2330</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11280" BrowseName="UpdateEventCapability" DataType="Boolean">
+  <UAVariable NodeId="i=11280" BrowseName="UpdateEventCapability" ParentNodeId="i=2330" DataType="Boolean">
     <DisplayName>UpdateEventCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -489,7 +486,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2330</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11501" BrowseName="DeleteEventCapability" DataType="Boolean">
+  <UAVariable NodeId="i=11501" BrowseName="DeleteEventCapability" ParentNodeId="i=2330" DataType="Boolean">
     <DisplayName>DeleteEventCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -497,7 +494,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2330</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11270" BrowseName="InsertAnnotationCapability" DataType="Boolean">
+  <UAVariable NodeId="i=11270" BrowseName="InsertAnnotationCapability" ParentNodeId="i=2330" DataType="Boolean">
     <DisplayName>InsertAnnotationCapability</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -521,11 +518,10 @@
       <Reference ReferenceType="HasProperty">i=3003</Reference>
       <Reference ReferenceType="HasProperty">i=3029</Reference>
       <Reference ReferenceType="HasProperty">i=3030</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">i=11938</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2104</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=3025" BrowseName="UpdatedNode" DataType="NodeId">
+  <UAVariable NodeId="i=3025" BrowseName="UpdatedNode" ParentNodeId="i=2999" DataType="NodeId">
     <DisplayName>UpdatedNode</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -533,7 +529,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2999</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3028" BrowseName="PerformInsertReplace" DataType="i=11293">
+  <UAVariable NodeId="i=3028" BrowseName="PerformInsertReplace" ParentNodeId="i=2999" DataType="i=11293">
     <DisplayName>PerformInsertReplace</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -541,7 +537,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2999</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3003" BrowseName="Filter" DataType="i=725">
+  <UAVariable NodeId="i=3003" BrowseName="Filter" ParentNodeId="i=2999" DataType="i=725">
     <DisplayName>Filter</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -549,7 +545,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2999</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3029" BrowseName="NewValues" DataType="i=920">
+  <UAVariable NodeId="i=3029" BrowseName="NewValues" ParentNodeId="i=2999" DataType="i=920">
     <DisplayName>NewValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -557,7 +553,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2999</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3030" BrowseName="OldValues" DataType="i=920">
+  <UAVariable NodeId="i=3030" BrowseName="OldValues" ParentNodeId="i=2999" DataType="i=920">
     <DisplayName>OldValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -572,11 +568,10 @@
       <Reference ReferenceType="HasProperty">i=3031</Reference>
       <Reference ReferenceType="HasProperty">i=3032</Reference>
       <Reference ReferenceType="HasProperty">i=3033</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">i=11938</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2104</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=3026" BrowseName="UpdatedNode" DataType="NodeId">
+  <UAVariable NodeId="i=3026" BrowseName="UpdatedNode" ParentNodeId="i=3006" DataType="NodeId">
     <DisplayName>UpdatedNode</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -584,7 +579,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=3006</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3031" BrowseName="PerformInsertReplace" DataType="i=11293">
+  <UAVariable NodeId="i=3031" BrowseName="PerformInsertReplace" ParentNodeId="i=3006" DataType="i=11293">
     <DisplayName>PerformInsertReplace</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -592,7 +587,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=3006</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3032" BrowseName="NewValues" DataType="i=23" ValueRank="1">
+  <UAVariable NodeId="i=3032" BrowseName="NewValues" ParentNodeId="i=3006" DataType="i=23" ValueRank="1">
     <DisplayName>NewValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -600,7 +595,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=3006</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3033" BrowseName="OldValues" DataType="i=23" ValueRank="1">
+  <UAVariable NodeId="i=3033" BrowseName="OldValues" ParentNodeId="i=3006" DataType="i=23" ValueRank="1">
     <DisplayName>OldValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -612,11 +607,10 @@
     <DisplayName>AuditHistoryDeleteEventType</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=3027</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">i=11938</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2104</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=3027" BrowseName="UpdatedNode" DataType="NodeId">
+  <UAVariable NodeId="i=3027" BrowseName="UpdatedNode" ParentNodeId="i=3012" DataType="NodeId">
     <DisplayName>UpdatedNode</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -631,11 +625,10 @@
       <Reference ReferenceType="HasProperty">i=3016</Reference>
       <Reference ReferenceType="HasProperty">i=3017</Reference>
       <Reference ReferenceType="HasProperty">i=3034</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">i=11938</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=3012</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=3015" BrowseName="IsDeleteModified" DataType="Boolean">
+  <UAVariable NodeId="i=3015" BrowseName="IsDeleteModified" ParentNodeId="i=3014" DataType="Boolean">
     <DisplayName>IsDeleteModified</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -643,7 +636,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=3014</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3016" BrowseName="StartTime" DataType="i=294">
+  <UAVariable NodeId="i=3016" BrowseName="StartTime" ParentNodeId="i=3014" DataType="i=294">
     <DisplayName>StartTime</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -651,7 +644,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=3014</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3017" BrowseName="EndTime" DataType="i=294">
+  <UAVariable NodeId="i=3017" BrowseName="EndTime" ParentNodeId="i=3014" DataType="i=294">
     <DisplayName>EndTime</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -659,7 +652,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=3014</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3034" BrowseName="OldValues" DataType="i=23" ValueRank="1">
+  <UAVariable NodeId="i=3034" BrowseName="OldValues" ParentNodeId="i=3014" DataType="i=23" ValueRank="1">
     <DisplayName>OldValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -672,11 +665,10 @@
     <References>
       <Reference ReferenceType="HasProperty">i=3020</Reference>
       <Reference ReferenceType="HasProperty">i=3021</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">i=11938</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=3012</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=3020" BrowseName="ReqTimes" DataType="i=294" ValueRank="1">
+  <UAVariable NodeId="i=3020" BrowseName="ReqTimes" ParentNodeId="i=3019" DataType="i=294" ValueRank="1">
     <DisplayName>ReqTimes</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -684,7 +676,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=3019</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3021" BrowseName="OldValues" DataType="i=23" ValueRank="1">
+  <UAVariable NodeId="i=3021" BrowseName="OldValues" ParentNodeId="i=3019" DataType="i=23" ValueRank="1">
     <DisplayName>OldValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -697,11 +689,10 @@
     <References>
       <Reference ReferenceType="HasProperty">i=3023</Reference>
       <Reference ReferenceType="HasProperty">i=3024</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">i=11938</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=3012</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=3023" BrowseName="EventIds" DataType="ByteString" ValueRank="1">
+  <UAVariable NodeId="i=3023" BrowseName="EventIds" ParentNodeId="i=3022" DataType="ByteString" ValueRank="1">
     <DisplayName>EventIds</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -709,7 +700,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=3022</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3024" BrowseName="OldValues" DataType="i=920">
+  <UAVariable NodeId="i=3024" BrowseName="OldValues" ParentNodeId="i=3022" DataType="i=920">
     <DisplayName>OldValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -720,19 +711,29 @@
   <UADataType NodeId="i=891" BrowseName="Annotation">
     <DisplayName>Annotation</DisplayName>
     <References>
-      <Reference ReferenceType="Organizes" IsForward="false">i=11934</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="Annotation" BaseType="">
+      <Field Name="Message" DataType="i=12" />
+      <Field Name="UserName" DataType="i=12" />
+      <Field Name="AnnotationTime" DataType="i=294" />
+    </Definition>
   </UADataType>
   <UADataType NodeId="i=890" BrowseName="ExceptionDeviationFormat">
     <DisplayName>ExceptionDeviationFormat</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=7614</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">i=11934</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
+    <Definition Name="ExceptionDeviationFormat" BaseType="">
+      <Field Name="AbsoluteValue" Value="0" />
+      <Field Name="PercentOfRange" Value="1" />
+      <Field Name="PercentOfValue" Value="2" />
+      <Field Name="PercentOfEURange" Value="3" />
+      <Field Name="Unknown" Value="4" />
+    </Definition>
   </UADataType>
-  <UAVariable NodeId="i=7614" BrowseName="EnumStrings" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=7614" BrowseName="EnumStrings" ParentNodeId="i=890" DataType="LocalizedText" ValueRank="1">
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>

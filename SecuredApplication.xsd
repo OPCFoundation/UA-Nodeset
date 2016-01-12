@@ -31,7 +31,7 @@
   
   <xs:complexType name="ListOfExtensions">
     <xs:sequence>
-      <xs:element name="Extensions" minOccurs="0" maxOccurs="unbounded" nillable="true">
+      <xs:element name="Extension" minOccurs="0" maxOccurs="unbounded" nillable="true">
         <xs:complexType>
           <xs:sequence>
             <xs:any minOccurs="0" processContents="lax"/>
