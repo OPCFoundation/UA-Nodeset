@@ -16,6 +16,7 @@ BadServerNotConnected,0x800D0000,The operation could not complete because the cl
 BadServerHalted,0x800E0000,The server has stopped and cannot process any requests.
 BadNothingToDo,0x800F0000,There was nothing to do because the client passed a list of operations with no elements.
 BadTooManyOperations,0x80100000,The request could not be processed because it specified too many operations.
+BadTooManyMonitoredItems,0x80DB0000,The request could not be processed because there are too many monitored items in the subscription.
 BadDataTypeIdUnknown,0x80110000,The extension object cannot be (de)serialized because the data type id is not recognized.
 BadCertificateInvalid,0x80120000,The certificate provided as a parameter is not valid.
 BadSecurityChecksFailed,0x80130000,An error occurred verifying security.

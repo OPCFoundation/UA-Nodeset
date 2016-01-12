@@ -2129,6 +2129,7 @@
     <opc:EnumeratedValue Name="Warm" Value="2" />
     <opc:EnumeratedValue Name="Hot" Value="3" />
     <opc:EnumeratedValue Name="Transparent" Value="4" />
+    <opc:EnumeratedValue Name="HotAndMirrored" Value="5" />
   </opc:EnumeratedType>
 
   <opc:EnumeratedType Name="ServerState" LengthInBits="32">
@@ -2146,6 +2147,17 @@
     <opc:Field Name="ServerId" TypeName="opc:String" />
     <opc:Field Name="ServiceLevel" TypeName="opc:Byte" />
     <opc:Field Name="ServerState" TypeName="tns:ServerState" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="EndpointUrlListDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="NoOfEndpointUrlList" TypeName="opc:Int32" />
+    <opc:Field Name="EndpointUrlList" TypeName="opc:String" LengthField="NoOfEndpointUrlList" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="NetworkGroupDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="ServerUri" TypeName="opc:String" />
+    <opc:Field Name="NoOfNetworkPaths" TypeName="opc:Int32" />
+    <opc:Field Name="NetworkPaths" TypeName="tns:EndpointUrlListDataType" LengthField="NoOfNetworkPaths" />
   </opc:StructuredType>
 
   <opc:StructuredType Name="SamplingIntervalDiagnosticsDataType" BaseType="ua:ExtensionObject">
@@ -2312,6 +2324,26 @@
     <opc:Field Name="UnitId" TypeName="opc:Int32" />
     <opc:Field Name="DisplayName" TypeName="ua:LocalizedText" />
     <opc:Field Name="Description" TypeName="ua:LocalizedText" />
+  </opc:StructuredType>
+
+  <opc:EnumeratedType Name="AxisScaleEnumeration" LengthInBits="32">
+    <opc:EnumeratedValue Name="Linear" Value="0" />
+    <opc:EnumeratedValue Name="Log" Value="1" />
+    <opc:EnumeratedValue Name="Ln" Value="2" />
+  </opc:EnumeratedType>
+
+  <opc:StructuredType Name="AxisInformation" BaseType="ua:ExtensionObject">
+    <opc:Field Name="EngineeringUnits" TypeName="tns:EUInformation" />
+    <opc:Field Name="EURange" TypeName="tns:Range" />
+    <opc:Field Name="Title" TypeName="ua:LocalizedText" />
+    <opc:Field Name="AxisScaleType" TypeName="tns:AxisScaleEnumeration" />
+    <opc:Field Name="NoOfAxisSteps" TypeName="opc:Int32" />
+    <opc:Field Name="AxisSteps" TypeName="opc:Double" LengthField="NoOfAxisSteps" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="XVType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="X" TypeName="opc:Double" />
+    <opc:Field Name="Value" TypeName="opc:Float" />
   </opc:StructuredType>
 
   <opc:StructuredType Name="ProgramDiagnosticDataType" BaseType="ua:ExtensionObject">

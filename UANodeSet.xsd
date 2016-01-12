@@ -23,6 +23,8 @@
           <xs:element name="UAReferenceType" type="UAReferenceType"></xs:element>
         </xs:choice>
       </xs:sequence>
+      <xs:attribute name="Version" type="xs:string" use="optional"></xs:attribute>
+      <xs:attribute name="LastModified" type="xs:dateTime" use="optional"></xs:attribute>
     </xs:complexType>
   </xs:element>
 

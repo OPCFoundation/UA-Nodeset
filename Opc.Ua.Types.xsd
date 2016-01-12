@@ -3522,6 +3522,7 @@
       <xs:enumeration value="Warm_2" />
       <xs:enumeration value="Hot_3" />
       <xs:enumeration value="Transparent_4" />
+      <xs:enumeration value="HotAndMirrored_5" />
     </xs:restriction>
   </xs:simpleType>
   <xs:element name="RedundancySupport" type="tns:RedundancySupport" />
@@ -3555,6 +3556,35 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ListOfRedundantServerDataType" type="tns:ListOfRedundantServerDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="EndpointUrlListDataType">
+  	<xs:sequence>
+      <xs:element name="EndpointUrlList" type="ua:ListOfString" minOccurs="0" nillable="true" />
+  	</xs:sequence>
+  </xs:complexType>
+  <xs:element name="EndpointUrlListDataType" type="tns:EndpointUrlListDataType" />
+
+  <xs:complexType name="ListOfEndpointUrlListDataType">
+    <xs:sequence>
+      <xs:element name="EndpointUrlListDataType" type="tns:EndpointUrlListDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfEndpointUrlListDataType" type="tns:ListOfEndpointUrlListDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="NetworkGroupDataType">
+  	<xs:sequence>
+      <xs:element name="ServerUri" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="NetworkPaths" type="tns:ListOfEndpointUrlListDataType" minOccurs="0" nillable="true" />
+  	</xs:sequence>
+  </xs:complexType>
+  <xs:element name="NetworkGroupDataType" type="tns:NetworkGroupDataType" />
+
+  <xs:complexType name="ListOfNetworkGroupDataType">
+    <xs:sequence>
+      <xs:element name="NetworkGroupDataType" type="tns:NetworkGroupDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfNetworkGroupDataType" type="tns:ListOfNetworkGroupDataType" nillable="true"></xs:element>
 
   <xs:complexType name="SamplingIntervalDiagnosticsDataType">
   	<xs:sequence>
@@ -3779,6 +3809,34 @@
   	</xs:sequence>
   </xs:complexType>
   <xs:element name="EUInformation" type="tns:EUInformation" />
+
+  <xs:simpleType  name="AxisScaleEnumeration">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Linear_0" />
+      <xs:enumeration value="Log_1" />
+      <xs:enumeration value="Ln_2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="AxisScaleEnumeration" type="tns:AxisScaleEnumeration" />
+
+  <xs:complexType name="AxisInformation">
+  	<xs:sequence>
+      <xs:element name="EngineeringUnits" type="tns:EUInformation" minOccurs="0" nillable="true" />
+      <xs:element name="EURange" type="tns:Range" minOccurs="0" nillable="true" />
+      <xs:element name="Title" type="ua:LocalizedText" minOccurs="0" nillable="true" />
+      <xs:element name="AxisScaleType" type="tns:AxisScaleEnumeration" minOccurs="0" />
+      <xs:element name="AxisSteps" type="ua:ListOfDouble" minOccurs="0" nillable="true" />
+  	</xs:sequence>
+  </xs:complexType>
+  <xs:element name="AxisInformation" type="tns:AxisInformation" />
+
+  <xs:complexType name="XVType">
+  	<xs:sequence>
+      <xs:element name="X" type="xs:double" minOccurs="0" />
+      <xs:element name="Value" type="xs:float" minOccurs="0" />
+  	</xs:sequence>
+  </xs:complexType>
+  <xs:element name="XVType" type="tns:XVType" />
 
   <xs:complexType name="ProgramDiagnosticDataType">
   	<xs:sequence>

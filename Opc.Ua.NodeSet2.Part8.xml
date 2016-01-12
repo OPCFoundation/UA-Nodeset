@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.02" LastModified="2012-07-17T18:17:02.7593366Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
     <Alias Alias="SByte">i=2</Alias>
@@ -166,12 +166,165 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=11238</Reference>
     </References>
   </UAVariable>
+  <UAVariableType NodeId="i=12021" BrowseName="ArrayItemType" IsAbstract="true" ValueRank="0">
+    <DisplayName>ArrayItemType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=12024</Reference>
+      <Reference ReferenceType="HasProperty">i=12025</Reference>
+      <Reference ReferenceType="HasProperty">i=12026</Reference>
+      <Reference ReferenceType="HasProperty">i=12027</Reference>
+      <Reference ReferenceType="HasProperty">i=12028</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=2365</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="i=12024" BrowseName="InstrumentRange" ParentNodeId="i=12021" DataType="i=884">
+    <DisplayName>InstrumentRange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=12021</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=12025" BrowseName="EURange" ParentNodeId="i=12021" DataType="i=884">
+    <DisplayName>EURange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=12021</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=12026" BrowseName="EngineeringUnits" ParentNodeId="i=12021" DataType="i=887">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=12021</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=12027" BrowseName="Title" ParentNodeId="i=12021" DataType="LocalizedText">
+    <DisplayName>Title</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=12021</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=12028" BrowseName="AxisScaleType" ParentNodeId="i=12021" DataType="i=12077">
+    <DisplayName>AxisScaleType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=12021</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="i=12029" BrowseName="YArrayItemType" ValueRank="1" ArrayDimensions="0">
+    <DisplayName>YArrayItemType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=12037</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=12021</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="i=12037" BrowseName="XAxisDefinition" ParentNodeId="i=12029" DataType="i=12079">
+    <DisplayName>XAxisDefinition</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=12029</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="i=12038" BrowseName="XYArrayItemType" DataType="i=12080" ValueRank="1" ArrayDimensions="0">
+    <DisplayName>XYArrayItemType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=12046</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=12021</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="i=12046" BrowseName="XAxisDefinition" ParentNodeId="i=12038" DataType="i=12079">
+    <DisplayName>XAxisDefinition</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=12038</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="i=12047" BrowseName="ImageItemType" ValueRank="2" ArrayDimensions="0,0">
+    <DisplayName>ImageItemType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=12055</Reference>
+      <Reference ReferenceType="HasProperty">i=12056</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=12021</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="i=12055" BrowseName="XAxisDefinition" ParentNodeId="i=12047" DataType="i=12079">
+    <DisplayName>XAxisDefinition</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=12047</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=12056" BrowseName="YAxisDefinition" ParentNodeId="i=12047" DataType="i=12079">
+    <DisplayName>YAxisDefinition</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=12047</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="i=12057" BrowseName="CubeItemType" ValueRank="3" ArrayDimensions="0,0,0">
+    <DisplayName>CubeItemType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=12065</Reference>
+      <Reference ReferenceType="HasProperty">i=12066</Reference>
+      <Reference ReferenceType="HasProperty">i=12067</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=12021</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="i=12065" BrowseName="XAxisDefinition" ParentNodeId="i=12057" DataType="i=12079">
+    <DisplayName>XAxisDefinition</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=12057</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=12066" BrowseName="YAxisDefinition" ParentNodeId="i=12057" DataType="i=12079">
+    <DisplayName>YAxisDefinition</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=12057</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=12067" BrowseName="ZAxisDefinition" ParentNodeId="i=12057" DataType="i=12079">
+    <DisplayName>ZAxisDefinition</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=12057</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="i=12068" BrowseName="NDimensionArrayItemType" ValueRank="0">
+    <DisplayName>NDimensionArrayItemType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=12076</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=12021</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="i=12076" BrowseName="AxisDefinition" ParentNodeId="i=12068" DataType="i=12079" ValueRank="1">
+    <DisplayName>AxisDefinition</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=12068</Reference>
+    </References>
+  </UAVariable>
   <UADataType NodeId="i=884" BrowseName="Range">
     <DisplayName>Range</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="Range" BaseType="">
+    <Definition Name="Range">
       <Field Name="Low" DataType="i=11" />
       <Field Name="High" DataType="i=11" />
     </Definition>
@@ -181,11 +334,73 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="EUInformation" BaseType="">
+    <Definition Name="EUInformation">
       <Field Name="NamespaceUri" DataType="i=12" />
       <Field Name="UnitId" DataType="i=6" />
       <Field Name="DisplayName" DataType="i=21" />
       <Field Name="Description" DataType="i=21" />
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="i=12077" BrowseName="AxisScaleEnumeration">
+    <DisplayName>AxisScaleEnumeration</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=12078</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+    </References>
+    <Definition Name="AxisScaleEnumeration">
+      <Field Name="Linear" Value="0" />
+      <Field Name="Log" Value="1" />
+      <Field Name="Ln" Value="2" />
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="i=12078" BrowseName="EnumStrings" ParentNodeId="i=12077" DataType="LocalizedText" ValueRank="1">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=12077</Reference>
+    </References>
+    <Value>
+      <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Linear</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Log</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Ln</Text>
+        </LocalizedText>
+      </ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="i=12079" BrowseName="AxisInformation">
+    <DisplayName>AxisInformation</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="AxisInformation">
+      <Field Name="EngineeringUnits" DataType="i=887" />
+      <Field Name="EURange" DataType="i=884" />
+      <Field Name="Title" DataType="i=21" />
+      <Field Name="AxisScaleType" DataType="i=12077" />
+      <Field Name="AxisSteps" DataType="i=11" ValueRank="1" />
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="i=12080" BrowseName="XVType">
+    <DisplayName>XVType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="XVType">
+      <Field Name="X" DataType="i=11" />
+      <Field Name="Value" DataType="i=10" />
     </Definition>
   </UADataType>
   <UAObject NodeId="i=885" BrowseName="Default XML">
@@ -204,6 +419,22 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
+  <UAObject NodeId="i=12081" BrowseName="Default XML">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=12079</Reference>
+      <Reference ReferenceType="HasDescription">i=12083</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=12082" BrowseName="Default XML">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=12080</Reference>
+      <Reference ReferenceType="HasDescription">i=12086</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
   <UAObject NodeId="i=886" BrowseName="Default Binary">
     <DisplayName>Default Binary</DisplayName>
     <References>
@@ -217,6 +448,22 @@
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=887</Reference>
       <Reference ReferenceType="HasDescription">i=8241</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=12089" BrowseName="Default Binary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=12079</Reference>
+      <Reference ReferenceType="HasDescription">i=12091</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=12090" BrowseName="Default Binary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=12080</Reference>
+      <Reference ReferenceType="HasDescription">i=12094</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>

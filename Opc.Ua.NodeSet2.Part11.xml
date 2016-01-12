@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.02" LastModified="2012-07-17T18:17:02.7573365Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
     <Alias Alias="SByte">i=2</Alias>
@@ -713,7 +713,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="Annotation" BaseType="">
+    <Definition Name="Annotation">
       <Field Name="Message" DataType="i=12" />
       <Field Name="UserName" DataType="i=12" />
       <Field Name="AnnotationTime" DataType="i=294" />
@@ -725,7 +725,7 @@
       <Reference ReferenceType="HasProperty">i=7614</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="ExceptionDeviationFormat" BaseType="">
+    <Definition Name="ExceptionDeviationFormat">
       <Field Name="AbsoluteValue" Value="0" />
       <Field Name="PercentOfRange" Value="1" />
       <Field Name="PercentOfValue" Value="2" />

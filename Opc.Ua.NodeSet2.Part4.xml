@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.02" LastModified="2012-07-17T18:17:02.712334Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
     <Alias Alias="SByte">i=2</Alias>
@@ -79,7 +79,7 @@
       <Reference ReferenceType="HasProperty">i=7597</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="ApplicationType" BaseType="">
+    <Definition Name="ApplicationType">
       <Field Name="Server" Value="0">
         <Description>The application is a server.</Description>
       </Field>
@@ -132,7 +132,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ApplicationDescription" BaseType="">
+    <Definition Name="ApplicationDescription">
       <Field Name="ApplicationUri" DataType="i=12">
         <Description>The globally unique identifier for the application.</Description>
       </Field>
@@ -170,7 +170,7 @@
       <Reference ReferenceType="HasProperty">i=7595</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="MessageSecurityMode" BaseType="">
+    <Definition Name="MessageSecurityMode">
       <Field Name="Invalid" Value="0">
         <Description>An invalid mode.</Description>
       </Field>
@@ -224,7 +224,7 @@
       <Reference ReferenceType="HasProperty">i=7596</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="UserTokenType" BaseType="">
+    <Definition Name="UserTokenType">
       <Field Name="Anonymous" Value="0">
         <Description>An anonymous user.</Description>
       </Field>
@@ -277,7 +277,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="UserTokenPolicy" BaseType="">
+    <Definition Name="UserTokenPolicy">
       <Field Name="PolicyId" DataType="i=12">
         <Description>A identifier for the policy assigned by the server.</Description>
       </Field>
@@ -301,7 +301,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="EndpointDescription" BaseType="">
+    <Definition Name="EndpointDescription">
       <Field Name="EndpointUrl" DataType="i=12">
         <Description>The network endpoint to use when connecting to the server.</Description>
       </Field>
@@ -334,7 +334,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="RegisteredServer" BaseType="">
+    <Definition Name="RegisteredServer">
       <Field Name="ServerUri" DataType="i=12">
         <Description>The globally unique identifier for the server.</Description>
       </Field>
@@ -368,7 +368,7 @@
       <Reference ReferenceType="HasProperty">i=7598</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="SecurityTokenRequestType" BaseType="">
+    <Definition Name="SecurityTokenRequestType">
       <Field Name="Issue" Value="0">
         <Description>The channel is being created.</Description>
       </Field>
@@ -405,7 +405,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="SignedSoftwareCertificate" BaseType="">
+    <Definition Name="SignedSoftwareCertificate">
       <Field Name="CertificateData" DataType="i=15">
         <Description>The data of the certificate.</Description>
       </Field>
@@ -427,7 +427,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="UserIdentityToken" BaseType="">
+    <Definition Name="UserIdentityToken">
       <Field Name="PolicyId" DataType="i=12">
         <Description>The policy id specified in a user token policy for the endpoint being used.</Description>
       </Field>
@@ -492,7 +492,7 @@
       <Reference ReferenceType="HasProperty">i=11881</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="NodeAttributesMask" BaseType="">
+    <Definition Name="NodeAttributesMask">
       <Field Name="None" Value="0">
         <Description>No attribuites provided.</Description>
       </Field>
@@ -1249,7 +1249,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="AddNodesItem" BaseType="">
+    <Definition Name="AddNodesItem">
       <Field Name="ParentNodeId" DataType="i=18">
         <Description>The node id for the parent node.</Description>
       </Field>
@@ -1279,7 +1279,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="AddReferencesItem" BaseType="">
+    <Definition Name="AddReferencesItem">
       <Field Name="SourceNodeId" DataType="i=17">
         <Description>The source of the reference.</Description>
       </Field>
@@ -1306,7 +1306,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DeleteNodesItem" BaseType="">
+    <Definition Name="DeleteNodesItem">
       <Field Name="NodeId" DataType="i=17">
         <Description>The id of the node to delete.</Description>
       </Field>
@@ -1321,7 +1321,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DeleteReferencesItem" BaseType="">
+    <Definition Name="DeleteReferencesItem">
       <Field Name="SourceNodeId" DataType="i=17">
         <Description>The source of the reference to delete.</Description>
       </Field>
@@ -1346,7 +1346,7 @@
       <Reference ReferenceType="HasProperty">i=11882</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="AttributeWriteMask" BaseType="">
+    <Definition Name="AttributeWriteMask">
       <Field Name="None" Value="0">
         <Description>No attributes are writeable.</Description>
       </Field>
@@ -1930,7 +1930,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="TimeZoneDataType" BaseType="">
+    <Definition Name="TimeZoneDataType">
       <Field Name="Offset" DataType="i=4" />
       <Field Name="DaylightSavingInOffset" DataType="i=1" />
     </Definition>
@@ -1940,7 +1940,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="EndpointConfiguration" BaseType="">
+    <Definition Name="EndpointConfiguration">
       <Field Name="OperationTimeout" DataType="i=6" />
       <Field Name="UseBinaryEncoding" DataType="i=1" />
       <Field Name="MaxStringLength" DataType="i=6" />
@@ -1958,7 +1958,7 @@
       <Reference ReferenceType="HasProperty">i=7599</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="ComplianceLevel" BaseType="">
+    <Definition Name="ComplianceLevel">
       <Field Name="Untested" Value="0" />
       <Field Name="Partial" Value="1" />
       <Field Name="SelfTested" Value="2" />
@@ -2002,7 +2002,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="SupportedProfile" BaseType="">
+    <Definition Name="SupportedProfile">
       <Field Name="OrganizationUri" DataType="i=12" />
       <Field Name="ProfileId" DataType="i=12" />
       <Field Name="ComplianceTool" DataType="i=12" />
@@ -2016,7 +2016,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="SoftwareCertificate" BaseType="">
+    <Definition Name="SoftwareCertificate">
       <Field Name="ProductName" DataType="i=12" />
       <Field Name="ProductUri" DataType="i=12" />
       <Field Name="VendorName" DataType="i=12" />
@@ -2035,7 +2035,7 @@
       <Reference ReferenceType="HasProperty">i=7605</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="FilterOperator" BaseType="">
+    <Definition Name="FilterOperator">
       <Field Name="Equals" Value="0" />
       <Field Name="IsNull" Value="1" />
       <Field Name="GreaterThan" Value="2" />
@@ -2163,7 +2163,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ContentFilterElement" BaseType="">
+    <Definition Name="ContentFilterElement">
       <Field Name="FilterOperator" DataType="i=576" />
       <Field Name="FilterOperands" DataType="i=22" ValueRank="1" />
     </Definition>
@@ -2173,7 +2173,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ContentFilter" BaseType="">
+    <Definition Name="ContentFilter">
       <Field Name="Elements" DataType="i=583" ValueRank="1" />
     </Definition>
   </UADataType>
@@ -2231,7 +2231,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="HistoryEvent" BaseType="">
+    <Definition Name="HistoryEvent">
       <Field Name="Events" DataType="i=920" ValueRank="1" />
     </Definition>
   </UADataType>
@@ -2241,7 +2241,7 @@
       <Reference ReferenceType="HasProperty">i=11884</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="HistoryUpdateType" BaseType="">
+    <Definition Name="HistoryUpdateType">
       <Field Name="Insert" Value="1" />
       <Field Name="Replace" Value="2" />
       <Field Name="Update" Value="3" />
@@ -2330,7 +2330,7 @@
       <Reference ReferenceType="HasProperty">i=11885</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="PerformUpdateType" BaseType="">
+    <Definition Name="PerformUpdateType">
       <Field Name="Insert" Value="1" />
       <Field Name="Replace" Value="2" />
       <Field Name="Update" Value="3" />
@@ -2434,7 +2434,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="AggregateConfiguration" BaseType="">
+    <Definition Name="AggregateConfiguration">
       <Field Name="UseServerCapabilitiesDefaults" DataType="i=1" />
       <Field Name="TreatUncertainAsBad" DataType="i=1" />
       <Field Name="PercentDataBad" DataType="i=3" />
@@ -2447,7 +2447,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="HistoryEventFieldList" BaseType="">
+    <Definition Name="HistoryEventFieldList">
       <Field Name="EventFields" ValueRank="1" />
     </Definition>
   </UADataType>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.02" LastModified="2012-07-17T18:17:02.5593252Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
     <Alias Alias="SByte">i=2</Alias>
@@ -380,7 +380,7 @@
       <Reference ReferenceType="HasProperty">i=3066</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="NamingRuleType" BaseType="">
+    <Definition Name="NamingRuleType">
       <Field Name="Mandatory" Value="0">
         <Description>The BrowseName must appear in all instances of the type.</Description>
       </Field>
@@ -538,7 +538,7 @@
       <Reference ReferenceType="HasProperty">i=7591</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="IdType" BaseType="">
+    <Definition Name="IdType">
       <Field Name="Numeric" Value="0">
         <Description>The identifier is a numeric value. 0 is a null value.</Description>
       </Field>
@@ -592,7 +592,7 @@
       <Reference ReferenceType="HasProperty">i=11878</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="NodeClass" BaseType="">
+    <Definition Name="NodeClass">
       <Field Name="Unspecified" Value="0">
         <Description>No classes are selected.</Description>
       </Field>
@@ -820,7 +820,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="Argument" BaseType="">
+    <Definition Name="Argument">
       <Field Name="Name" DataType="i=12">
         <Description>The name of the argument.</Description>
       </Field>
@@ -844,7 +844,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="EnumValueType" BaseType="">
+    <Definition Name="EnumValueType">
       <Field Name="Value" DataType="i=8">
         <Description>The value of the enumeration.</Description>
       </Field>
