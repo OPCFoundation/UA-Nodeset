@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.00" LastModified="2012-07-17T18:17:06.6915616Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
     <Uri>http://opcfoundation.org/UA/ADI/</Uri>
     <Uri>http://opcfoundation.org/UA/DI/</Uri>
@@ -14145,7 +14145,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=12487</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="ExecutionCycleEnumeration" BaseType="">
+    <Definition Name="ExecutionCycleEnumeration">
       <Field Name="IDLE" Value="0">
         <Description>Idle, no cleaning or acquisition cycle in progress</Description>
       </Field>
@@ -14419,7 +14419,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=7131</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="DiagnosticStatusEnumeration" BaseType="">
+    <Definition Name="DiagnosticStatusEnumeration">
       <Field Name="NORMAL" Value="0">
         <Description>This element is working correctly.</Description>
       </Field>
@@ -14464,7 +14464,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=7132</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="AcquisitionResultStatusEnumeration" BaseType="">
+    <Definition Name="AcquisitionResultStatusEnumeration">
       <Field Name="IN_PROGRESS" Value="0">
         <Description>The acquisition is in progress, nothing can be said about its quality.</Description>
       </Field>
@@ -14781,7 +14781,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="AxisInformation" BaseType="">
+    <Definition Name="AxisInformation">
       <Field Name="EngineeringUnits" DataType="i=887">
         <Description>Holds the information about the engineering units for a given axis.</Description>
       </Field>
@@ -14806,7 +14806,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=7194</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="AxisScaleEnumeration" BaseType="">
+    <Definition Name="AxisScaleEnumeration">
       <Field Name="LINEAR" Value="0">
         <Description>Linear scale</Description>
       </Field>
@@ -14851,7 +14851,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="XVType" BaseType="">
+    <Definition Name="XVType">
       <Field Name="x" DataType="i=11">
         <Description>Position on the X axis this value</Description>
       </Field>
@@ -14866,7 +14866,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ComplexType" BaseType="">
+    <Definition Name="ComplexType">
       <Field Name="Real" DataType="i=10">
         <Description>Value real part</Description>
       </Field>
@@ -14881,7 +14881,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DoubleComplexType" BaseType="">
+    <Definition Name="DoubleComplexType">
       <Field Name="Real" DataType="i=11">
         <Description>Value real part</Description>
       </Field>
