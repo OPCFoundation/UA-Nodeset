@@ -1,0 +1,56 @@
+<opc:TypeDictionary
+  xmlns:DI="http://opcfoundation.org/UA/DI/"
+  xmlns:opc="http://opcfoundation.org/BinarySchema/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:ua="http://opcfoundation.org/UA/"
+  xmlns:tns="http://fdi-cooperation.com/OPCUA/FDI5/"
+  DefaultByteOrder="LittleEndian"
+  TargetNamespace="http://fdi-cooperation.com/OPCUA/FDI5/"
+>
+  <!-- This File was generated on 2016-02-08 and supports the specifications supported by version 1.1.335.1 of the OPC UA deliverables. -->
+  <opc:Import Namespace="http://opcfoundation.org/UA/DI/" Location="Opc.Ua.Di.BinarySchema.bsd"/>
+  <opc:Import Namespace="http://opcfoundation.org/UA/" Location="Opc.Ua.BinarySchema.bsd"/>
+
+  <opc:EnumeratedType Name="WindowModeType" LengthInBits="32">
+    <opc:EnumeratedValue Name="ModalWindow" Value="1" />
+    <opc:EnumeratedValue Name="NonModalWindow" Value="2" />
+    <opc:EnumeratedValue Name="UIP" Value="3" />
+  </opc:EnumeratedType>
+
+  <opc:EnumeratedType Name="StyleType" LengthInBits="32">
+    <opc:EnumeratedValue Name="Window" Value="1" />
+    <opc:EnumeratedValue Name="Dialog" Value="2" />
+  </opc:EnumeratedType>
+
+  <opc:StructuredType Name="RegistrationParameters" BaseType="ua:ExtensionObject">
+    <opc:Field Name="Path" TypeName="ua:RelativePath" />
+    <opc:Field Name="SelectionFlags" TypeName="opc:UInt32" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="RegisteredNode" BaseType="ua:ExtensionObject">
+    <opc:Field Name="NodeStatus" TypeName="opc:Int32" />
+    <opc:Field Name="OnlineContextNodeId" TypeName="ua:NodeId" />
+    <opc:Field Name="OnlineDeviceNodeId" TypeName="ua:NodeId" />
+    <opc:Field Name="OfflineContextNodeId" TypeName="ua:NodeId" />
+    <opc:Field Name="OfflineDeviceNodeId" TypeName="ua:NodeId" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="RegisterNodesResult" BaseType="ua:ExtensionObject">
+    <opc:Field Name="Status" TypeName="opc:Int32" />
+    <opc:Field Name="NoOfRegisteredNodes" TypeName="opc:Int32" />
+    <opc:Field Name="RegisteredNodes" TypeName="tns:RegisteredNode" LengthField="NoOfRegisteredNodes" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="TransferIncident" BaseType="ua:ExtensionObject">
+    <opc:Field Name="ContextNodeId" TypeName="ua:NodeId" />
+    <opc:Field Name="StatusCode" TypeName="ua:StatusCode" />
+    <opc:Field Name="Diagnostics" TypeName="ua:DiagnosticInfo" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="ApplyResult" BaseType="ua:ExtensionObject">
+    <opc:Field Name="Status" TypeName="opc:Int32" />
+    <opc:Field Name="NoOfTransferIncidents" TypeName="opc:Int32" />
+    <opc:Field Name="TransferIncidents" TypeName="tns:TransferIncident" LengthField="NoOfTransferIncidents" />
+  </opc:StructuredType>
+
+</opc:TypeDictionary>
