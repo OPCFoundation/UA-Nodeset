@@ -1,10 +1,96 @@
-<xs:schema 
+<xs:schema
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" 
-  xmlns:tns="http://opcfoundation.org/UA/DI/Types.xsd" 
-  targetNamespace="http://opcfoundation.org/UA/DI/Types.xsd" 
+  xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd"
+  xmlns:tns="http://opcfoundation.org/UA/DI/Types.xsd"
+  targetNamespace="http://opcfoundation.org/UA/DI/Types.xsd"
   elementFormDefault="qualified"
 >
   <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-  
+
+  <xs:simpleType  name="DeviceHealthEnumeration">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NORMAL_0" />
+      <xs:enumeration value="FAILURE_1" />
+      <xs:enumeration value="CHECK_FUNCTION_2" />
+      <xs:enumeration value="OFF_SPEC_3" />
+      <xs:enumeration value="MAINTENANCE_REQUIRED_4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DeviceHealthEnumeration" type="tns:DeviceHealthEnumeration" />
+
+  <xs:complexType name="ListOfDeviceHealthEnumeration">
+    <xs:sequence>
+      <xs:element name="DeviceHealthEnumeration" type="tns:DeviceHealthEnumeration" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfDeviceHealthEnumeration" type="tns:ListOfDeviceHealthEnumeration" nillable="true"></xs:element>
+
+  <xs:complexType name="FetchResultDataType">
+    <xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FetchResultDataType" type="tns:FetchResultDataType" />
+
+  <xs:complexType name="ListOfFetchResultDataType">
+    <xs:sequence>
+      <xs:element name="FetchResultDataType" type="tns:FetchResultDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfFetchResultDataType" type="tns:ListOfFetchResultDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="FetchResultErrorDataType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:FetchResultDataType">
+        <xs:sequence>
+          <xs:element name="Status" type="xs:int" minOccurs="0" />
+          <xs:element name="Diagnostics" type="ua:DiagnosticInfo" minOccurs="0" nillable="true" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FetchResultErrorDataType" type="tns:FetchResultErrorDataType" />
+
+  <xs:complexType name="ListOfFetchResultErrorDataType">
+    <xs:sequence>
+      <xs:element name="FetchResultErrorDataType" type="tns:FetchResultErrorDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfFetchResultErrorDataType" type="tns:ListOfFetchResultErrorDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="FetchResultDataDataType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:FetchResultDataType">
+        <xs:sequence>
+          <xs:element name="SequenceNumber" type="xs:int" minOccurs="0" />
+          <xs:element name="EndOfResults" type="xs:boolean" minOccurs="0" />
+          <xs:element name="ParameterDefs" type="tns:ListOfParameterResultDataType" minOccurs="0" nillable="true" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FetchResultDataDataType" type="tns:FetchResultDataDataType" />
+
+  <xs:complexType name="ListOfFetchResultDataDataType">
+    <xs:sequence>
+      <xs:element name="FetchResultDataDataType" type="tns:FetchResultDataDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfFetchResultDataDataType" type="tns:ListOfFetchResultDataDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="ParameterResultDataType">
+    <xs:sequence>
+      <xs:element name="NodePath" type="ua:ListOfQualifiedName" minOccurs="0" nillable="true" />
+      <xs:element name="StatusCode" type="ua:StatusCode" minOccurs="0" />
+      <xs:element name="Diagnostics" type="ua:DiagnosticInfo" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParameterResultDataType" type="tns:ParameterResultDataType" />
+
+  <xs:complexType name="ListOfParameterResultDataType">
+    <xs:sequence>
+      <xs:element name="ParameterResultDataType" type="tns:ParameterResultDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfParameterResultDataType" type="tns:ListOfParameterResultDataType" nillable="true"></xs:element>
+
 </xs:schema>

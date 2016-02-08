@@ -1,11 +1,42 @@
 <opc:TypeDictionary
   xmlns:opc="http://opcfoundation.org/BinarySchema/"
-  xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.bsd"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:ua="http://opcfoundation.org/UA/"
   xmlns:tns="http://opcfoundation.org/UA/DI/"
   DefaultByteOrder="LittleEndian"
-  TargetNamespace="http://opcfoundation.org/UA/DI/"  
+  TargetNamespace="http://opcfoundation.org/UA/DI/"
 >
+  <!-- This File was generated on 2016-01-05 and supports the specifications supported by version 1.1.335.1 of the OPC UA deliverables. -->
   <opc:Import Namespace="http://opcfoundation.org/UA/" Location="Opc.Ua.BinarySchema.bsd"/>
-  
+
+  <opc:EnumeratedType Name="DeviceHealthEnumeration" LengthInBits="32">
+    <opc:EnumeratedValue Name="NORMAL" Value="0" />
+    <opc:EnumeratedValue Name="FAILURE" Value="1" />
+    <opc:EnumeratedValue Name="CHECK_FUNCTION" Value="2" />
+    <opc:EnumeratedValue Name="OFF_SPEC" Value="3" />
+    <opc:EnumeratedValue Name="MAINTENANCE_REQUIRED" Value="4" />
+  </opc:EnumeratedType>
+
+  <opc:StructuredType Name="FetchResultDataType" BaseType="ua:ExtensionObject">
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="FetchResultErrorDataType" BaseType="tns:FetchResultDataType">
+    <opc:Field Name="Status" TypeName="opc:Int32" />
+    <opc:Field Name="Diagnostics" TypeName="ua:DiagnosticInfo" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="FetchResultDataDataType" BaseType="tns:FetchResultDataType">
+    <opc:Field Name="SequenceNumber" TypeName="opc:Int32" />
+    <opc:Field Name="EndOfResults" TypeName="opc:Boolean" />
+    <opc:Field Name="NoOfParameterDefs" TypeName="opc:Int32" />
+    <opc:Field Name="ParameterDefs" TypeName="tns:ParameterResultDataType" LengthField="NoOfParameterDefs" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="ParameterResultDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="NoOfNodePath" TypeName="opc:Int32" />
+    <opc:Field Name="NodePath" TypeName="ua:QualifiedName" LengthField="NoOfNodePath" />
+    <opc:Field Name="StatusCode" TypeName="ua:StatusCode" />
+    <opc:Field Name="Diagnostics" TypeName="ua:DiagnosticInfo" />
+  </opc:StructuredType>
+
 </opc:TypeDictionary>
