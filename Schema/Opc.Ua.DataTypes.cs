@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2011 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2016 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  *
@@ -4135,7 +4135,7 @@ namespace Opc.Ua
             m_targetNodeId = null;
             m_attributeId = (uint)0;
             m_writeIndexRange = null;
-            m_overwriteValue = Variant.Null;
+            m_overrideValue = Variant.Null;
         }
         #endregion
 
@@ -4191,13 +4191,13 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the OverwriteValue field.
+        /// A description for the OverrideValue field.
         /// </summary>
-        [DataMember(Name = "OverwriteValue", IsRequired = false, Order = 6)]
-        public Variant OverwriteValue
+        [DataMember(Name = "OverrideValue", IsRequired = false, Order = 6)]
+        public Variant OverrideValue
         {
-            get { return m_overwriteValue;  }
-            set { m_overwriteValue = value; }
+            get { return m_overrideValue;  }
+            set { m_overrideValue = value; }
         }
         #endregion
 
@@ -4230,7 +4230,7 @@ namespace Opc.Ua
             encoder.WriteNodeId("TargetNodeId", TargetNodeId);
             encoder.WriteUInt32("AttributeId", AttributeId);
             encoder.WriteString("WriteIndexRange", WriteIndexRange);
-            encoder.WriteVariant("OverwriteValue", OverwriteValue);
+            encoder.WriteVariant("OverrideValue", OverrideValue);
 
             encoder.PopNamespace();
         }
@@ -4245,7 +4245,7 @@ namespace Opc.Ua
             TargetNodeId = decoder.ReadNodeId("TargetNodeId");
             AttributeId = decoder.ReadUInt32("AttributeId");
             WriteIndexRange = decoder.ReadString("WriteIndexRange");
-            OverwriteValue = decoder.ReadVariant("OverwriteValue");
+            OverrideValue = decoder.ReadVariant("OverrideValue");
 
             decoder.PopNamespace();
         }
@@ -4270,7 +4270,7 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_targetNodeId, value.m_targetNodeId)) return false;
             if (!Utils.IsEqual(m_attributeId, value.m_attributeId)) return false;
             if (!Utils.IsEqual(m_writeIndexRange, value.m_writeIndexRange)) return false;
-            if (!Utils.IsEqual(m_overwriteValue, value.m_overwriteValue)) return false;
+            if (!Utils.IsEqual(m_overrideValue, value.m_overrideValue)) return false;
 
             return true;
         }
@@ -4285,7 +4285,7 @@ namespace Opc.Ua
             clone.m_targetNodeId = (NodeId)Utils.Clone(this.m_targetNodeId);
             clone.m_attributeId = (uint)Utils.Clone(this.m_attributeId);
             clone.m_writeIndexRange = (string)Utils.Clone(this.m_writeIndexRange);
-            clone.m_overwriteValue = (Variant)Utils.Clone(this.m_overwriteValue);
+            clone.m_overrideValue = (Variant)Utils.Clone(this.m_overrideValue);
 
             return clone;
         }
@@ -4297,7 +4297,7 @@ namespace Opc.Ua
         private NodeId m_targetNodeId;
         private uint m_attributeId;
         private string m_writeIndexRange;
-        private Variant m_overwriteValue;
+        private Variant m_overrideValue;
         #endregion
     }
 

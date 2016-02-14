@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2011 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2016 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  *
@@ -2740,9 +2740,9 @@ namespace Opc.Ua
         public const uint ServerConfiguration_GetRejectedList = 12777;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_AddUdpConnection Method.
+        /// The identifier for the PublishSubscribeType_AddUadpConnection Method.
         /// </summary>
-        public const uint PublishSubscribeType_AddUdpConnection = 14426;
+        public const uint PublishSubscribeType_AddUadpConnection = 14901;
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_AddAmqpConnection Method.
@@ -2755,9 +2755,9 @@ namespace Opc.Ua
         public const uint PublishSubscribeType_RemoveConnection = 14432;
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_AddUdpConnection Method.
+        /// The identifier for the PublishSubscribe_AddUadpConnection Method.
         /// </summary>
-        public const uint PublishSubscribe_AddUdpConnection = 14453;
+        public const uint PublishSubscribe_AddUadpConnection = 14904;
 
         /// <summary>
         /// The identifier for the PublishSubscribe_AddAmqpConnection Method.
@@ -2798,6 +2798,26 @@ namespace Opc.Ua
         /// The identifier for the DataSetFolderType_RemovePublishedDataSet Method.
         /// </summary>
         public const uint DataSetFolderType_RemovePublishedDataSet = 14499;
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetType_AddStaticField Method.
+        /// </summary>
+        public const uint PublishedDataSetType_AddStaticField = 14915;
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetType_RemoveStaticField Method.
+        /// </summary>
+        public const uint PublishedDataSetType_RemoveStaticField = 14918;
+
+        /// <summary>
+        /// The identifier for the AddStaticFieldType Method.
+        /// </summary>
+        public const uint AddStaticFieldType = 14920;
+
+        /// <summary>
+        /// The identifier for the RemoveStaticFieldType Method.
+        /// </summary>
+        public const uint RemoveStaticFieldType = 14923;
 
         /// <summary>
         /// The identifier for the PublishedDataItemsType_Modify Method.
@@ -2845,49 +2865,49 @@ namespace Opc.Ua
         public const uint PubSubStatusType_Disable = 14646;
 
         /// <summary>
-        /// The identifier for the UdpConnectionType_Modify Method.
+        /// The identifier for the UadpConnectionType_Modify Method.
         /// </summary>
-        public const uint UdpConnectionType_Modify = 14661;
+        public const uint UadpConnectionType_Modify = 14957;
 
         /// <summary>
-        /// The identifier for the UdpConnectionType_AddGroup Method.
+        /// The identifier for the UadpConnectionType_AddGroup Method.
         /// </summary>
-        public const uint UdpConnectionType_AddGroup = 14307;
+        public const uint UadpConnectionType_AddGroup = 14959;
 
         /// <summary>
-        /// The identifier for the UdpGroupType_Modify Method.
+        /// The identifier for the UadpGroupType_Modify Method.
         /// </summary>
-        public const uint UdpGroupType_Modify = 14690;
+        public const uint UadpGroupType_Modify = 14989;
 
         /// <summary>
-        /// The identifier for the UdpGroupType_GetSecurityToken Method.
+        /// The identifier for the UadpGroupType_GetSecurityToken Method.
         /// </summary>
-        public const uint UdpGroupType_GetSecurityToken = 14693;
+        public const uint UadpGroupType_GetSecurityToken = 14992;
 
         /// <summary>
-        /// The identifier for the UdpGroupType_AddMessageWriter Method.
+        /// The identifier for the UadpGroupType_AddMessageWriter Method.
         /// </summary>
-        public const uint UdpGroupType_AddMessageWriter = 14695;
+        public const uint UadpGroupType_AddMessageWriter = 14994;
 
         /// <summary>
-        /// The identifier for the UdpGroupType_AddMessageReader Method.
+        /// The identifier for the UadpGroupType_AddMessageReader Method.
         /// </summary>
-        public const uint UdpGroupType_AddMessageReader = 14698;
+        public const uint UadpGroupType_AddMessageReader = 14997;
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_Modify Method.
+        /// The identifier for the UadpDataReaderType_Modify Method.
         /// </summary>
-        public const uint UdpDataReaderType_Modify = 14726;
+        public const uint UadpDataReaderType_Modify = 15025;
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_AddDataConnections Method.
+        /// The identifier for the UadpDataReaderType_AddDataConnections Method.
         /// </summary>
-        public const uint UdpDataReaderType_AddDataConnections = 14729;
+        public const uint UadpDataReaderType_AddDataConnections = 15028;
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_RemoveDataConnections Method.
+        /// The identifier for the UadpDataReaderType_RemoveDataConnections Method.
         /// </summary>
-        public const uint UdpDataReaderType_RemoveDataConnections = 14732;
+        public const uint UadpDataReaderType_RemoveDataConnections = 15031;
 
         /// <summary>
         /// The identifier for the AmqpConnectionType_Modify Method.
@@ -3695,6 +3715,11 @@ namespace Opc.Ua
         public const uint PublishedDataSetType_xMessageWriterNamex_Status = 14511;
 
         /// <summary>
+        /// The identifier for the PublishedDataSetType_StaticFields Object.
+        /// </summary>
+        public const uint PublishedDataSetType_StaticFields = 14522;
+
+        /// <summary>
         /// The identifier for the PublishedDataItemsType_xMessageWriterNamex_Status Object.
         /// </summary>
         public const uint PublishedDataItemsType_xMessageWriterNamex_Status = 14536;
@@ -3765,14 +3790,14 @@ namespace Opc.Ua
         public const uint Status = 14649;
 
         /// <summary>
-        /// The identifier for the UdpGroupType_xMessageWriterNamex_Status Object.
+        /// The identifier for the UadpGroupType_xMessageWriterNamex_Status Object.
         /// </summary>
-        public const uint UdpGroupType_xMessageWriterNamex_Status = 14670;
+        public const uint UadpGroupType_xMessageWriterNamex_Status = 14969;
 
         /// <summary>
-        /// The identifier for the UdpGroupType_xMessageReaderNamex_Status Object.
+        /// The identifier for the UadpGroupType_xMessageReaderNamex_Status Object.
         /// </summary>
-        public const uint UdpGroupType_xMessageReaderNamex_Status = 14680;
+        public const uint UadpGroupType_xMessageReaderNamex_Status = 14979;
 
         /// <summary>
         /// The identifier for the AmqpGroupType_xMessageWriterNamex_Status Object.
@@ -6815,6 +6840,16 @@ namespace Opc.Ua
         public const uint MessageWriterEncodingType = 14636;
 
         /// <summary>
+        /// The identifier for the BinaryWriterEncodingType ObjectType.
+        /// </summary>
+        public const uint BinaryWriterEncodingType = 14938;
+
+        /// <summary>
+        /// The identifier for the TaggedWriterEncodingType ObjectType.
+        /// </summary>
+        public const uint TaggedWriterEncodingType = 14939;
+
+        /// <summary>
         /// The identifier for the MessageWriterSecurityType ObjectType.
         /// </summary>
         public const uint MessageWriterSecurityType = 14637;
@@ -6835,24 +6870,24 @@ namespace Opc.Ua
         public const uint PubSubStatusType = 14643;
 
         /// <summary>
-        /// The identifier for the UdpConnectionType ObjectType.
+        /// The identifier for the UadpConnectionType ObjectType.
         /// </summary>
-        public const uint UdpConnectionType = 14294;
+        public const uint UadpConnectionType = 14943;
 
         /// <summary>
-        /// The identifier for the UdpGroupType ObjectType.
+        /// The identifier for the UadpGroupType ObjectType.
         /// </summary>
-        public const uint UdpGroupType = 14668;
+        public const uint UadpGroupType = 14967;
 
         /// <summary>
-        /// The identifier for the UdpWriterTransportType ObjectType.
+        /// The identifier for the UadpWriterTransportType ObjectType.
         /// </summary>
-        public const uint UdpWriterTransportType = 14712;
+        public const uint UadpWriterTransportType = 15011;
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType ObjectType.
+        /// The identifier for the UadpDataReaderType ObjectType.
         /// </summary>
-        public const uint UdpDataReaderType = 14716;
+        public const uint UadpDataReaderType = 15015;
 
         /// <summary>
         /// The identifier for the AmqpConnectionType ObjectType.
@@ -6865,9 +6900,9 @@ namespace Opc.Ua
         public const uint AmqpGroupType = 14761;
 
         /// <summary>
-        /// The identifier for the AmqpWriterEncodingType ObjectType.
+        /// The identifier for the AmqpWriterTransportType ObjectType.
         /// </summary>
-        public const uint AmqpWriterEncodingType = 14790;
+        public const uint AmqpWriterTransportType = 15043;
     }
     #endregion
 
@@ -7020,19 +7055,19 @@ namespace Opc.Ua
         public const uint HasPubSubConnection = 14476;
 
         /// <summary>
+        /// The identifier for the DataSetToWriter ReferenceType.
+        /// </summary>
+        public const uint DataSetToWriter = 14936;
+
+        /// <summary>
         /// The identifier for the HasMessageWriter ReferenceType.
         /// </summary>
         public const uint HasMessageWriter = 14594;
 
         /// <summary>
-        /// The identifier for the HasWriter ReferenceType.
+        /// The identifier for the HasMessageReader ReferenceType.
         /// </summary>
-        public const uint HasWriter = 14627;
-
-        /// <summary>
-        /// The identifier for the HasReader ReferenceType.
-        /// </summary>
-        public const uint HasReader = 14628;
+        public const uint HasMessageReader = 14937;
     }
     #endregion
 
@@ -14970,14 +15005,14 @@ namespace Opc.Ua
         public const uint PublishSubscribeType_xConnectionNamex_RemoveGroup_InputArguments = 14425;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_AddUdpConnection_InputArguments Variable.
+        /// The identifier for the PublishSubscribeType_AddUadpConnection_InputArguments Variable.
         /// </summary>
-        public const uint PublishSubscribeType_AddUdpConnection_InputArguments = 14427;
+        public const uint PublishSubscribeType_AddUadpConnection_InputArguments = 14902;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_AddUdpConnection_OutputArguments Variable.
+        /// The identifier for the PublishSubscribeType_AddUadpConnection_OutputArguments Variable.
         /// </summary>
-        public const uint PublishSubscribeType_AddUdpConnection_OutputArguments = 14428;
+        public const uint PublishSubscribeType_AddUadpConnection_OutputArguments = 14903;
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_AddAmqpConnection_InputArguments Variable.
@@ -15040,14 +15075,14 @@ namespace Opc.Ua
         public const uint PublishSubscribe_xConnectionNamex_RemoveGroup_InputArguments = 14452;
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_AddUdpConnection_InputArguments Variable.
+        /// The identifier for the PublishSubscribe_AddUadpConnection_InputArguments Variable.
         /// </summary>
-        public const uint PublishSubscribe_AddUdpConnection_InputArguments = 14454;
+        public const uint PublishSubscribe_AddUadpConnection_InputArguments = 14905;
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_AddUdpConnection_OutputArguments Variable.
+        /// The identifier for the PublishSubscribe_AddUadpConnection_OutputArguments Variable.
         /// </summary>
-        public const uint PublishSubscribe_AddUdpConnection_OutputArguments = 14455;
+        public const uint PublishSubscribe_AddUadpConnection_OutputArguments = 14906;
 
         /// <summary>
         /// The identifier for the PublishSubscribe_AddAmqpConnection_InputArguments Variable.
@@ -15125,14 +15160,24 @@ namespace Opc.Ua
         public const uint DataSetFolderType_xPublishedDataSetNamex_ConfigurationVersion = 14489;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_xPublishedDataSetNamex_ConfigurationGuid Variable.
-        /// </summary>
-        public const uint DataSetFolderType_xPublishedDataSetNamex_ConfigurationGuid = 14490;
-
-        /// <summary>
         /// The identifier for the DataSetFolderType_xPublishedDataSetNamex_MetaData Variable.
         /// </summary>
         public const uint DataSetFolderType_xPublishedDataSetNamex_MetaData = 14491;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_xPublishedDataSetNamex_AddStaticField_InputArguments Variable.
+        /// </summary>
+        public const uint DataSetFolderType_xPublishedDataSetNamex_AddStaticField_InputArguments = 14911;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_xPublishedDataSetNamex_AddStaticField_OutputArguments Variable.
+        /// </summary>
+        public const uint DataSetFolderType_xPublishedDataSetNamex_AddStaticField_OutputArguments = 14912;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_xPublishedDataSetNamex_RemoveStaticField_InputArguments Variable.
+        /// </summary>
+        public const uint DataSetFolderType_xPublishedDataSetNamex_RemoveStaticField_InputArguments = 14914;
 
         /// <summary>
         /// The identifier for the DataSetFolderType_AddPublishedDataItems_InputArguments Variable.
@@ -15175,19 +15220,39 @@ namespace Opc.Ua
         public const uint PublishedDataSetType_ConfigurationVersion = 14519;
 
         /// <summary>
-        /// The identifier for the PublishedDataSetType_ConfigurationGuid Variable.
-        /// </summary>
-        public const uint PublishedDataSetType_ConfigurationGuid = 14520;
-
-        /// <summary>
         /// The identifier for the PublishedDataSetType_MetaData Variable.
         /// </summary>
         public const uint PublishedDataSetType_MetaData = 14521;
 
         /// <summary>
-        /// The identifier for the PublishedDataSetType_StaticFields Variable.
+        /// The identifier for the PublishedDataSetType_AddStaticField_InputArguments Variable.
         /// </summary>
-        public const uint PublishedDataSetType_StaticFields = 14522;
+        public const uint PublishedDataSetType_AddStaticField_InputArguments = 14916;
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetType_AddStaticField_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishedDataSetType_AddStaticField_OutputArguments = 14917;
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetType_RemoveStaticField_InputArguments Variable.
+        /// </summary>
+        public const uint PublishedDataSetType_RemoveStaticField_InputArguments = 14919;
+
+        /// <summary>
+        /// The identifier for the AddStaticFieldType_InputArguments Variable.
+        /// </summary>
+        public const uint AddStaticFieldType_InputArguments = 14921;
+
+        /// <summary>
+        /// The identifier for the AddStaticFieldType_OutputArguments Variable.
+        /// </summary>
+        public const uint AddStaticFieldType_OutputArguments = 14922;
+
+        /// <summary>
+        /// The identifier for the RemoveStaticFieldType_InputArguments Variable.
+        /// </summary>
+        public const uint RemoveStaticFieldType_InputArguments = 14924;
 
         /// <summary>
         /// The identifier for the StructureType_EnumStrings Variable.
@@ -15198,6 +15263,21 @@ namespace Opc.Ua
         /// The identifier for the PublishedDataItemsType_xMessageWriterNamex_Status_State Variable.
         /// </summary>
         public const uint PublishedDataItemsType_xMessageWriterNamex_Status_State = 14537;
+
+        /// <summary>
+        /// The identifier for the PublishedDataItemsType_AddStaticField_InputArguments Variable.
+        /// </summary>
+        public const uint PublishedDataItemsType_AddStaticField_InputArguments = 14926;
+
+        /// <summary>
+        /// The identifier for the PublishedDataItemsType_AddStaticField_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishedDataItemsType_AddStaticField_OutputArguments = 14927;
+
+        /// <summary>
+        /// The identifier for the PublishedDataItemsType_RemoveStaticField_InputArguments Variable.
+        /// </summary>
+        public const uint PublishedDataItemsType_RemoveStaticField_InputArguments = 14929;
 
         /// <summary>
         /// The identifier for the PublishedDataItemsType_PublishedData Variable.
@@ -15260,6 +15340,21 @@ namespace Opc.Ua
         public const uint PublishedEventsType_xMessageWriterNamex_Status_State = 14575;
 
         /// <summary>
+        /// The identifier for the PublishedEventsType_AddStaticField_InputArguments Variable.
+        /// </summary>
+        public const uint PublishedEventsType_AddStaticField_InputArguments = 14931;
+
+        /// <summary>
+        /// The identifier for the PublishedEventsType_AddStaticField_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishedEventsType_AddStaticField_OutputArguments = 14932;
+
+        /// <summary>
+        /// The identifier for the PublishedEventsType_RemoveStaticField_InputArguments Variable.
+        /// </summary>
+        public const uint PublishedEventsType_RemoveStaticField_InputArguments = 14934;
+
+        /// <summary>
         /// The identifier for the PublishedEventsType_EventNotifier Variable.
         /// </summary>
         public const uint PublishedEventsType_EventNotifier = 14586;
@@ -15273,6 +15368,11 @@ namespace Opc.Ua
         /// The identifier for the PublishedEventsType_Filter Variable.
         /// </summary>
         public const uint PublishedEventsType_Filter = 14588;
+
+        /// <summary>
+        /// The identifier for the PublishedEventsType_KeepAliveTime Variable.
+        /// </summary>
+        public const uint PublishedEventsType_KeepAliveTime = 14935;
 
         /// <summary>
         /// The identifier for the PublishedEventsType_Modify_InputArguments Variable.
@@ -15335,6 +15435,21 @@ namespace Opc.Ua
         public const uint MessageWriterType_Status_State = 14630;
 
         /// <summary>
+        /// The identifier for the TaggedWriterEncodingType_EncodingMimeType Variable.
+        /// </summary>
+        public const uint TaggedWriterEncodingType_EncodingMimeType = 14940;
+
+        /// <summary>
+        /// The identifier for the TaggedWriterEncodingType_MessageFieldAliases Variable.
+        /// </summary>
+        public const uint TaggedWriterEncodingType_MessageFieldAliases = 14941;
+
+        /// <summary>
+        /// The identifier for the TaggedWriterEncodingType_PromotedFieldNames Variable.
+        /// </summary>
+        public const uint TaggedWriterEncodingType_PromotedFieldNames = 14942;
+
+        /// <summary>
         /// The identifier for the MessageReaderType_Status_State Variable.
         /// </summary>
         public const uint MessageReaderType_Status_State = 14640;
@@ -15355,194 +15470,194 @@ namespace Opc.Ua
         public const uint Status_State = 14650;
 
         /// <summary>
-        /// The identifier for the UdpConnectionType_PublisherId Variable.
+        /// The identifier for the UadpConnectionType_PublisherId Variable.
         /// </summary>
-        public const uint UdpConnectionType_PublisherId = 14312;
+        public const uint UadpConnectionType_PublisherId = 14944;
 
         /// <summary>
-        /// The identifier for the UdpConnectionType_xGroupNamex_RemoveMessageWriter_InputArguments Variable.
+        /// The identifier for the UadpConnectionType_xGroupNamex_RemoveMessageWriter_InputArguments Variable.
         /// </summary>
-        public const uint UdpConnectionType_xGroupNamex_RemoveMessageWriter_InputArguments = 14654;
+        public const uint UadpConnectionType_xGroupNamex_RemoveMessageWriter_InputArguments = 14947;
 
         /// <summary>
-        /// The identifier for the UdpConnectionType_xGroupNamex_RemoveMessageReader_InputArguments Variable.
+        /// The identifier for the UadpConnectionType_xGroupNamex_RemoveMessageReader_InputArguments Variable.
         /// </summary>
-        public const uint UdpConnectionType_xGroupNamex_RemoveMessageReader_InputArguments = 14656;
+        public const uint UadpConnectionType_xGroupNamex_RemoveMessageReader_InputArguments = 14949;
 
         /// <summary>
-        /// The identifier for the UdpConnectionType_Status_State Variable.
+        /// The identifier for the UadpConnectionType_Status_State Variable.
         /// </summary>
-        public const uint UdpConnectionType_Status_State = 14658;
+        public const uint UadpConnectionType_Status_State = 14951;
 
         /// <summary>
-        /// The identifier for the UdpConnectionType_RemoveGroup_InputArguments Variable.
+        /// The identifier for the UadpConnectionType_RemoveGroup_InputArguments Variable.
         /// </summary>
-        public const uint UdpConnectionType_RemoveGroup_InputArguments = 14311;
+        public const uint UadpConnectionType_RemoveGroup_InputArguments = 14956;
 
         /// <summary>
-        /// The identifier for the UdpConnectionType_Modify_InputArguments Variable.
+        /// The identifier for the UadpConnectionType_Modify_InputArguments Variable.
         /// </summary>
-        public const uint UdpConnectionType_Modify_InputArguments = 14662;
+        public const uint UadpConnectionType_Modify_InputArguments = 14958;
 
         /// <summary>
-        /// The identifier for the UdpConnectionType_AddGroup_InputArguments Variable.
+        /// The identifier for the UadpConnectionType_AddGroup_InputArguments Variable.
         /// </summary>
-        public const uint UdpConnectionType_AddGroup_InputArguments = 14308;
+        public const uint UadpConnectionType_AddGroup_InputArguments = 14960;
 
         /// <summary>
-        /// The identifier for the UdpConnectionType_AddGroup_OutputArguments Variable.
+        /// The identifier for the UadpConnectionType_AddGroup_OutputArguments Variable.
         /// </summary>
-        public const uint UdpConnectionType_AddGroup_OutputArguments = 14309;
+        public const uint UadpConnectionType_AddGroup_OutputArguments = 14961;
 
         /// <summary>
-        /// The identifier for the UdpGroupType_xMessageWriterNamex_Status_State Variable.
+        /// The identifier for the UadpGroupType_xMessageWriterNamex_Status_State Variable.
         /// </summary>
-        public const uint UdpGroupType_xMessageWriterNamex_Status_State = 14671;
+        public const uint UadpGroupType_xMessageWriterNamex_Status_State = 14970;
 
         /// <summary>
-        /// The identifier for the UdpGroupType_RemoveMessageWriter_InputArguments Variable.
+        /// The identifier for the UadpGroupType_RemoveMessageWriter_InputArguments Variable.
         /// </summary>
-        public const uint UdpGroupType_RemoveMessageWriter_InputArguments = 14678;
+        public const uint UadpGroupType_RemoveMessageWriter_InputArguments = 14977;
 
         /// <summary>
-        /// The identifier for the UdpGroupType_xMessageReaderNamex_Status_State Variable.
+        /// The identifier for the UadpGroupType_xMessageReaderNamex_Status_State Variable.
         /// </summary>
-        public const uint UdpGroupType_xMessageReaderNamex_Status_State = 14681;
+        public const uint UadpGroupType_xMessageReaderNamex_Status_State = 14980;
 
         /// <summary>
-        /// The identifier for the UdpGroupType_RemoveMessageReader_InputArguments Variable.
+        /// The identifier for the UadpGroupType_RemoveMessageReader_InputArguments Variable.
         /// </summary>
-        public const uint UdpGroupType_RemoveMessageReader_InputArguments = 14685;
+        public const uint UadpGroupType_RemoveMessageReader_InputArguments = 14984;
 
         /// <summary>
-        /// The identifier for the UdpGroupType_SecurityPolicy Variable.
+        /// The identifier for the UadpGroupType_SecurityPolicy Variable.
         /// </summary>
-        public const uint UdpGroupType_SecurityPolicy = 14686;
+        public const uint UadpGroupType_SecurityPolicy = 14985;
 
         /// <summary>
-        /// The identifier for the UdpGroupType_SecurityMode Variable.
+        /// The identifier for the UadpGroupType_SecurityMode Variable.
         /// </summary>
-        public const uint UdpGroupType_SecurityMode = 14687;
+        public const uint UadpGroupType_SecurityMode = 14986;
 
         /// <summary>
-        /// The identifier for the UdpGroupType_SecurityTokenLifetime Variable.
+        /// The identifier for the UadpGroupType_SecurityTokenLifetime Variable.
         /// </summary>
-        public const uint UdpGroupType_SecurityTokenLifetime = 14688;
+        public const uint UadpGroupType_SecurityTokenLifetime = 14987;
 
         /// <summary>
-        /// The identifier for the UdpGroupType_MaxPacketSize Variable.
+        /// The identifier for the UadpGroupType_MaxPacketSize Variable.
         /// </summary>
-        public const uint UdpGroupType_MaxPacketSize = 14689;
+        public const uint UadpGroupType_MaxPacketSize = 14988;
 
         /// <summary>
-        /// The identifier for the UdpGroupType_Modify_InputArguments Variable.
+        /// The identifier for the UadpGroupType_Modify_InputArguments Variable.
         /// </summary>
-        public const uint UdpGroupType_Modify_InputArguments = 14691;
+        public const uint UadpGroupType_Modify_InputArguments = 14990;
 
         /// <summary>
-        /// The identifier for the UdpGroupType_Modify_OutputArguments Variable.
+        /// The identifier for the UadpGroupType_Modify_OutputArguments Variable.
         /// </summary>
-        public const uint UdpGroupType_Modify_OutputArguments = 14692;
+        public const uint UadpGroupType_Modify_OutputArguments = 14991;
 
         /// <summary>
-        /// The identifier for the UdpGroupType_GetSecurityToken_OutputArguments Variable.
+        /// The identifier for the UadpGroupType_GetSecurityToken_OutputArguments Variable.
         /// </summary>
-        public const uint UdpGroupType_GetSecurityToken_OutputArguments = 14694;
+        public const uint UadpGroupType_GetSecurityToken_OutputArguments = 14993;
 
         /// <summary>
-        /// The identifier for the UdpGroupType_AddMessageWriter_InputArguments Variable.
+        /// The identifier for the UadpGroupType_AddMessageWriter_InputArguments Variable.
         /// </summary>
-        public const uint UdpGroupType_AddMessageWriter_InputArguments = 14696;
+        public const uint UadpGroupType_AddMessageWriter_InputArguments = 14995;
 
         /// <summary>
-        /// The identifier for the UdpGroupType_AddMessageWriter_OutputArguments Variable.
+        /// The identifier for the UadpGroupType_AddMessageWriter_OutputArguments Variable.
         /// </summary>
-        public const uint UdpGroupType_AddMessageWriter_OutputArguments = 14697;
+        public const uint UadpGroupType_AddMessageWriter_OutputArguments = 14996;
 
         /// <summary>
-        /// The identifier for the UdpGroupType_AddMessageReader_InputArguments Variable.
+        /// The identifier for the UadpGroupType_AddMessageReader_InputArguments Variable.
         /// </summary>
-        public const uint UdpGroupType_AddMessageReader_InputArguments = 14699;
+        public const uint UadpGroupType_AddMessageReader_InputArguments = 14998;
 
         /// <summary>
-        /// The identifier for the UdpGroupType_AddMessageReader_OutputArguments Variable.
+        /// The identifier for the UadpGroupType_AddMessageReader_OutputArguments Variable.
         /// </summary>
-        public const uint UdpGroupType_AddMessageReader_OutputArguments = 14700;
+        public const uint UadpGroupType_AddMessageReader_OutputArguments = 14999;
 
         /// <summary>
-        /// The identifier for the UdpWriterTransportType_DataSetWriterId Variable.
+        /// The identifier for the UadpWriterTransportType_DataSetWriterId Variable.
         /// </summary>
-        public const uint UdpWriterTransportType_DataSetWriterId = 14713;
+        public const uint UadpWriterTransportType_DataSetWriterId = 15012;
 
         /// <summary>
-        /// The identifier for the UdpWriterTransportType_MessageRepeatCount Variable.
+        /// The identifier for the UadpWriterTransportType_MessageRepeatCount Variable.
         /// </summary>
-        public const uint UdpWriterTransportType_MessageRepeatCount = 14714;
+        public const uint UadpWriterTransportType_MessageRepeatCount = 15013;
 
         /// <summary>
-        /// The identifier for the UdpWriterTransportType_MessageRepeatDelay Variable.
+        /// The identifier for the UadpWriterTransportType_MessageRepeatDelay Variable.
         /// </summary>
-        public const uint UdpWriterTransportType_MessageRepeatDelay = 14715;
+        public const uint UadpWriterTransportType_MessageRepeatDelay = 15014;
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_Status_State Variable.
+        /// The identifier for the UadpDataReaderType_Status_State Variable.
         /// </summary>
-        public const uint UdpDataReaderType_Status_State = 14718;
+        public const uint UadpDataReaderType_Status_State = 15017;
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_PublisherId Variable.
+        /// The identifier for the UadpDataReaderType_PublisherId Variable.
         /// </summary>
-        public const uint UdpDataReaderType_PublisherId = 14721;
+        public const uint UadpDataReaderType_PublisherId = 15020;
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_DataSetWriterId Variable.
+        /// The identifier for the UadpDataReaderType_DataSetWriterId Variable.
         /// </summary>
-        public const uint UdpDataReaderType_DataSetWriterId = 14722;
+        public const uint UadpDataReaderType_DataSetWriterId = 15021;
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_DataSetMetaData Variable.
+        /// The identifier for the UadpDataReaderType_DataSetMetaData Variable.
         /// </summary>
-        public const uint UdpDataReaderType_DataSetMetaData = 14723;
+        public const uint UadpDataReaderType_DataSetMetaData = 15022;
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_DataUpdateTimeout Variable.
+        /// The identifier for the UadpDataReaderType_DataUpdateTimeout Variable.
         /// </summary>
-        public const uint UdpDataReaderType_DataUpdateTimeout = 14724;
+        public const uint UadpDataReaderType_DataUpdateTimeout = 15023;
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_ConnectedVariables Variable.
+        /// The identifier for the UadpDataReaderType_ConnectedVariables Variable.
         /// </summary>
-        public const uint UdpDataReaderType_ConnectedVariables = 14725;
+        public const uint UadpDataReaderType_ConnectedVariables = 15024;
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_Modify_InputArguments Variable.
+        /// The identifier for the UadpDataReaderType_Modify_InputArguments Variable.
         /// </summary>
-        public const uint UdpDataReaderType_Modify_InputArguments = 14727;
+        public const uint UadpDataReaderType_Modify_InputArguments = 15026;
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_Modify_OutputArguments Variable.
+        /// The identifier for the UadpDataReaderType_Modify_OutputArguments Variable.
         /// </summary>
-        public const uint UdpDataReaderType_Modify_OutputArguments = 14728;
+        public const uint UadpDataReaderType_Modify_OutputArguments = 15027;
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_AddDataConnections_InputArguments Variable.
+        /// The identifier for the UadpDataReaderType_AddDataConnections_InputArguments Variable.
         /// </summary>
-        public const uint UdpDataReaderType_AddDataConnections_InputArguments = 14730;
+        public const uint UadpDataReaderType_AddDataConnections_InputArguments = 15029;
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_AddDataConnections_OutputArguments Variable.
+        /// The identifier for the UadpDataReaderType_AddDataConnections_OutputArguments Variable.
         /// </summary>
-        public const uint UdpDataReaderType_AddDataConnections_OutputArguments = 14731;
+        public const uint UadpDataReaderType_AddDataConnections_OutputArguments = 15030;
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_RemoveDataConnections_InputArguments Variable.
+        /// The identifier for the UadpDataReaderType_RemoveDataConnections_InputArguments Variable.
         /// </summary>
-        public const uint UdpDataReaderType_RemoveDataConnections_InputArguments = 14733;
+        public const uint UadpDataReaderType_RemoveDataConnections_InputArguments = 15032;
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_RemoveDataConnections_OutputArguments Variable.
+        /// The identifier for the UadpDataReaderType_RemoveDataConnections_OutputArguments Variable.
         /// </summary>
-        public const uint UdpDataReaderType_RemoveDataConnections_OutputArguments = 14734;
+        public const uint UadpDataReaderType_RemoveDataConnections_OutputArguments = 15033;
 
         /// <summary>
         /// The identifier for the AmqpConnectionType_PublisherId Variable.
@@ -15625,19 +15740,29 @@ namespace Opc.Ua
         public const uint AmqpGroupType_AddMessageWriter_OutputArguments = 14784;
 
         /// <summary>
-        /// The identifier for the AmqpWriterEncodingType_EncodingMimeType Variable.
+        /// The identifier for the AmqpWriterTransportType_AmqpLinkAddress Variable.
         /// </summary>
-        public const uint AmqpWriterEncodingType_EncodingMimeType = 14791;
+        public const uint AmqpWriterTransportType_AmqpLinkAddress = 15044;
 
         /// <summary>
-        /// The identifier for the AmqpWriterEncodingType_MessageFieldAliases Variable.
+        /// The identifier for the AmqpWriterTransportType_MetaDataLinkAddress Variable.
         /// </summary>
-        public const uint AmqpWriterEncodingType_MessageFieldAliases = 14792;
+        public const uint AmqpWriterTransportType_MetaDataLinkAddress = 15045;
 
         /// <summary>
-        /// The identifier for the AmqpWriterEncodingType_PromotedFieldNames Variable.
+        /// The identifier for the AmqpWriterTransportType_MetaDataUpdateTime Variable.
         /// </summary>
-        public const uint AmqpWriterEncodingType_PromotedFieldNames = 14793;
+        public const uint AmqpWriterTransportType_MetaDataUpdateTime = 15046;
+
+        /// <summary>
+        /// The identifier for the AmqpWriterTransportType_DataSetWriterId Variable.
+        /// </summary>
+        public const uint AmqpWriterTransportType_DataSetWriterId = 15047;
+
+        /// <summary>
+        /// The identifier for the AmqpWriterTransportType_MaxMessageSize Variable.
+        /// </summary>
+        public const uint AmqpWriterTransportType_MaxMessageSize = 15048;
 
         /// <summary>
         /// The identifier for the IdType_EnumStrings Variable.
@@ -19450,9 +19575,9 @@ namespace Opc.Ua
         public static readonly NodeId ServerConfiguration_GetRejectedList = new NodeId(Opc.Ua.Methods.ServerConfiguration_GetRejectedList);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_AddUdpConnection Method.
+        /// The identifier for the PublishSubscribeType_AddUadpConnection Method.
         /// </summary>
-        public static readonly NodeId PublishSubscribeType_AddUdpConnection = new NodeId(Opc.Ua.Methods.PublishSubscribeType_AddUdpConnection);
+        public static readonly NodeId PublishSubscribeType_AddUadpConnection = new NodeId(Opc.Ua.Methods.PublishSubscribeType_AddUadpConnection);
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_AddAmqpConnection Method.
@@ -19465,9 +19590,9 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribeType_RemoveConnection = new NodeId(Opc.Ua.Methods.PublishSubscribeType_RemoveConnection);
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_AddUdpConnection Method.
+        /// The identifier for the PublishSubscribe_AddUadpConnection Method.
         /// </summary>
-        public static readonly NodeId PublishSubscribe_AddUdpConnection = new NodeId(Opc.Ua.Methods.PublishSubscribe_AddUdpConnection);
+        public static readonly NodeId PublishSubscribe_AddUadpConnection = new NodeId(Opc.Ua.Methods.PublishSubscribe_AddUadpConnection);
 
         /// <summary>
         /// The identifier for the PublishSubscribe_AddAmqpConnection Method.
@@ -19508,6 +19633,26 @@ namespace Opc.Ua
         /// The identifier for the DataSetFolderType_RemovePublishedDataSet Method.
         /// </summary>
         public static readonly NodeId DataSetFolderType_RemovePublishedDataSet = new NodeId(Opc.Ua.Methods.DataSetFolderType_RemovePublishedDataSet);
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetType_AddStaticField Method.
+        /// </summary>
+        public static readonly NodeId PublishedDataSetType_AddStaticField = new NodeId(Opc.Ua.Methods.PublishedDataSetType_AddStaticField);
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetType_RemoveStaticField Method.
+        /// </summary>
+        public static readonly NodeId PublishedDataSetType_RemoveStaticField = new NodeId(Opc.Ua.Methods.PublishedDataSetType_RemoveStaticField);
+
+        /// <summary>
+        /// The identifier for the AddStaticFieldType Method.
+        /// </summary>
+        public static readonly NodeId AddStaticFieldType = new NodeId(Opc.Ua.Methods.AddStaticFieldType);
+
+        /// <summary>
+        /// The identifier for the RemoveStaticFieldType Method.
+        /// </summary>
+        public static readonly NodeId RemoveStaticFieldType = new NodeId(Opc.Ua.Methods.RemoveStaticFieldType);
 
         /// <summary>
         /// The identifier for the PublishedDataItemsType_Modify Method.
@@ -19555,49 +19700,49 @@ namespace Opc.Ua
         public static readonly NodeId PubSubStatusType_Disable = new NodeId(Opc.Ua.Methods.PubSubStatusType_Disable);
 
         /// <summary>
-        /// The identifier for the UdpConnectionType_Modify Method.
+        /// The identifier for the UadpConnectionType_Modify Method.
         /// </summary>
-        public static readonly NodeId UdpConnectionType_Modify = new NodeId(Opc.Ua.Methods.UdpConnectionType_Modify);
+        public static readonly NodeId UadpConnectionType_Modify = new NodeId(Opc.Ua.Methods.UadpConnectionType_Modify);
 
         /// <summary>
-        /// The identifier for the UdpConnectionType_AddGroup Method.
+        /// The identifier for the UadpConnectionType_AddGroup Method.
         /// </summary>
-        public static readonly NodeId UdpConnectionType_AddGroup = new NodeId(Opc.Ua.Methods.UdpConnectionType_AddGroup);
+        public static readonly NodeId UadpConnectionType_AddGroup = new NodeId(Opc.Ua.Methods.UadpConnectionType_AddGroup);
 
         /// <summary>
-        /// The identifier for the UdpGroupType_Modify Method.
+        /// The identifier for the UadpGroupType_Modify Method.
         /// </summary>
-        public static readonly NodeId UdpGroupType_Modify = new NodeId(Opc.Ua.Methods.UdpGroupType_Modify);
+        public static readonly NodeId UadpGroupType_Modify = new NodeId(Opc.Ua.Methods.UadpGroupType_Modify);
 
         /// <summary>
-        /// The identifier for the UdpGroupType_GetSecurityToken Method.
+        /// The identifier for the UadpGroupType_GetSecurityToken Method.
         /// </summary>
-        public static readonly NodeId UdpGroupType_GetSecurityToken = new NodeId(Opc.Ua.Methods.UdpGroupType_GetSecurityToken);
+        public static readonly NodeId UadpGroupType_GetSecurityToken = new NodeId(Opc.Ua.Methods.UadpGroupType_GetSecurityToken);
 
         /// <summary>
-        /// The identifier for the UdpGroupType_AddMessageWriter Method.
+        /// The identifier for the UadpGroupType_AddMessageWriter Method.
         /// </summary>
-        public static readonly NodeId UdpGroupType_AddMessageWriter = new NodeId(Opc.Ua.Methods.UdpGroupType_AddMessageWriter);
+        public static readonly NodeId UadpGroupType_AddMessageWriter = new NodeId(Opc.Ua.Methods.UadpGroupType_AddMessageWriter);
 
         /// <summary>
-        /// The identifier for the UdpGroupType_AddMessageReader Method.
+        /// The identifier for the UadpGroupType_AddMessageReader Method.
         /// </summary>
-        public static readonly NodeId UdpGroupType_AddMessageReader = new NodeId(Opc.Ua.Methods.UdpGroupType_AddMessageReader);
+        public static readonly NodeId UadpGroupType_AddMessageReader = new NodeId(Opc.Ua.Methods.UadpGroupType_AddMessageReader);
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_Modify Method.
+        /// The identifier for the UadpDataReaderType_Modify Method.
         /// </summary>
-        public static readonly NodeId UdpDataReaderType_Modify = new NodeId(Opc.Ua.Methods.UdpDataReaderType_Modify);
+        public static readonly NodeId UadpDataReaderType_Modify = new NodeId(Opc.Ua.Methods.UadpDataReaderType_Modify);
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_AddDataConnections Method.
+        /// The identifier for the UadpDataReaderType_AddDataConnections Method.
         /// </summary>
-        public static readonly NodeId UdpDataReaderType_AddDataConnections = new NodeId(Opc.Ua.Methods.UdpDataReaderType_AddDataConnections);
+        public static readonly NodeId UadpDataReaderType_AddDataConnections = new NodeId(Opc.Ua.Methods.UadpDataReaderType_AddDataConnections);
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_RemoveDataConnections Method.
+        /// The identifier for the UadpDataReaderType_RemoveDataConnections Method.
         /// </summary>
-        public static readonly NodeId UdpDataReaderType_RemoveDataConnections = new NodeId(Opc.Ua.Methods.UdpDataReaderType_RemoveDataConnections);
+        public static readonly NodeId UadpDataReaderType_RemoveDataConnections = new NodeId(Opc.Ua.Methods.UadpDataReaderType_RemoveDataConnections);
 
         /// <summary>
         /// The identifier for the AmqpConnectionType_Modify Method.
@@ -20405,6 +20550,11 @@ namespace Opc.Ua
         public static readonly NodeId PublishedDataSetType_xMessageWriterNamex_Status = new NodeId(Opc.Ua.Objects.PublishedDataSetType_xMessageWriterNamex_Status);
 
         /// <summary>
+        /// The identifier for the PublishedDataSetType_StaticFields Object.
+        /// </summary>
+        public static readonly NodeId PublishedDataSetType_StaticFields = new NodeId(Opc.Ua.Objects.PublishedDataSetType_StaticFields);
+
+        /// <summary>
         /// The identifier for the PublishedDataItemsType_xMessageWriterNamex_Status Object.
         /// </summary>
         public static readonly NodeId PublishedDataItemsType_xMessageWriterNamex_Status = new NodeId(Opc.Ua.Objects.PublishedDataItemsType_xMessageWriterNamex_Status);
@@ -20475,14 +20625,14 @@ namespace Opc.Ua
         public static readonly NodeId Status = new NodeId(Opc.Ua.Objects.Status);
 
         /// <summary>
-        /// The identifier for the UdpGroupType_xMessageWriterNamex_Status Object.
+        /// The identifier for the UadpGroupType_xMessageWriterNamex_Status Object.
         /// </summary>
-        public static readonly NodeId UdpGroupType_xMessageWriterNamex_Status = new NodeId(Opc.Ua.Objects.UdpGroupType_xMessageWriterNamex_Status);
+        public static readonly NodeId UadpGroupType_xMessageWriterNamex_Status = new NodeId(Opc.Ua.Objects.UadpGroupType_xMessageWriterNamex_Status);
 
         /// <summary>
-        /// The identifier for the UdpGroupType_xMessageReaderNamex_Status Object.
+        /// The identifier for the UadpGroupType_xMessageReaderNamex_Status Object.
         /// </summary>
-        public static readonly NodeId UdpGroupType_xMessageReaderNamex_Status = new NodeId(Opc.Ua.Objects.UdpGroupType_xMessageReaderNamex_Status);
+        public static readonly NodeId UadpGroupType_xMessageReaderNamex_Status = new NodeId(Opc.Ua.Objects.UadpGroupType_xMessageReaderNamex_Status);
 
         /// <summary>
         /// The identifier for the AmqpGroupType_xMessageWriterNamex_Status Object.
@@ -23525,6 +23675,16 @@ namespace Opc.Ua
         public static readonly NodeId MessageWriterEncodingType = new NodeId(Opc.Ua.ObjectTypes.MessageWriterEncodingType);
 
         /// <summary>
+        /// The identifier for the BinaryWriterEncodingType ObjectType.
+        /// </summary>
+        public static readonly NodeId BinaryWriterEncodingType = new NodeId(Opc.Ua.ObjectTypes.BinaryWriterEncodingType);
+
+        /// <summary>
+        /// The identifier for the TaggedWriterEncodingType ObjectType.
+        /// </summary>
+        public static readonly NodeId TaggedWriterEncodingType = new NodeId(Opc.Ua.ObjectTypes.TaggedWriterEncodingType);
+
+        /// <summary>
         /// The identifier for the MessageWriterSecurityType ObjectType.
         /// </summary>
         public static readonly NodeId MessageWriterSecurityType = new NodeId(Opc.Ua.ObjectTypes.MessageWriterSecurityType);
@@ -23545,24 +23705,24 @@ namespace Opc.Ua
         public static readonly NodeId PubSubStatusType = new NodeId(Opc.Ua.ObjectTypes.PubSubStatusType);
 
         /// <summary>
-        /// The identifier for the UdpConnectionType ObjectType.
+        /// The identifier for the UadpConnectionType ObjectType.
         /// </summary>
-        public static readonly NodeId UdpConnectionType = new NodeId(Opc.Ua.ObjectTypes.UdpConnectionType);
+        public static readonly NodeId UadpConnectionType = new NodeId(Opc.Ua.ObjectTypes.UadpConnectionType);
 
         /// <summary>
-        /// The identifier for the UdpGroupType ObjectType.
+        /// The identifier for the UadpGroupType ObjectType.
         /// </summary>
-        public static readonly NodeId UdpGroupType = new NodeId(Opc.Ua.ObjectTypes.UdpGroupType);
+        public static readonly NodeId UadpGroupType = new NodeId(Opc.Ua.ObjectTypes.UadpGroupType);
 
         /// <summary>
-        /// The identifier for the UdpWriterTransportType ObjectType.
+        /// The identifier for the UadpWriterTransportType ObjectType.
         /// </summary>
-        public static readonly NodeId UdpWriterTransportType = new NodeId(Opc.Ua.ObjectTypes.UdpWriterTransportType);
+        public static readonly NodeId UadpWriterTransportType = new NodeId(Opc.Ua.ObjectTypes.UadpWriterTransportType);
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType ObjectType.
+        /// The identifier for the UadpDataReaderType ObjectType.
         /// </summary>
-        public static readonly NodeId UdpDataReaderType = new NodeId(Opc.Ua.ObjectTypes.UdpDataReaderType);
+        public static readonly NodeId UadpDataReaderType = new NodeId(Opc.Ua.ObjectTypes.UadpDataReaderType);
 
         /// <summary>
         /// The identifier for the AmqpConnectionType ObjectType.
@@ -23575,9 +23735,9 @@ namespace Opc.Ua
         public static readonly NodeId AmqpGroupType = new NodeId(Opc.Ua.ObjectTypes.AmqpGroupType);
 
         /// <summary>
-        /// The identifier for the AmqpWriterEncodingType ObjectType.
+        /// The identifier for the AmqpWriterTransportType ObjectType.
         /// </summary>
-        public static readonly NodeId AmqpWriterEncodingType = new NodeId(Opc.Ua.ObjectTypes.AmqpWriterEncodingType);
+        public static readonly NodeId AmqpWriterTransportType = new NodeId(Opc.Ua.ObjectTypes.AmqpWriterTransportType);
     }
     #endregion
 
@@ -23730,19 +23890,19 @@ namespace Opc.Ua
         public static readonly NodeId HasPubSubConnection = new NodeId(Opc.Ua.ReferenceTypes.HasPubSubConnection);
 
         /// <summary>
+        /// The identifier for the DataSetToWriter ReferenceType.
+        /// </summary>
+        public static readonly NodeId DataSetToWriter = new NodeId(Opc.Ua.ReferenceTypes.DataSetToWriter);
+
+        /// <summary>
         /// The identifier for the HasMessageWriter ReferenceType.
         /// </summary>
         public static readonly NodeId HasMessageWriter = new NodeId(Opc.Ua.ReferenceTypes.HasMessageWriter);
 
         /// <summary>
-        /// The identifier for the HasWriter ReferenceType.
+        /// The identifier for the HasMessageReader ReferenceType.
         /// </summary>
-        public static readonly NodeId HasWriter = new NodeId(Opc.Ua.ReferenceTypes.HasWriter);
-
-        /// <summary>
-        /// The identifier for the HasReader ReferenceType.
-        /// </summary>
-        public static readonly NodeId HasReader = new NodeId(Opc.Ua.ReferenceTypes.HasReader);
+        public static readonly NodeId HasMessageReader = new NodeId(Opc.Ua.ReferenceTypes.HasMessageReader);
     }
     #endregion
 
@@ -31680,14 +31840,14 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribeType_xConnectionNamex_RemoveGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_xConnectionNamex_RemoveGroup_InputArguments);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_AddUdpConnection_InputArguments Variable.
+        /// The identifier for the PublishSubscribeType_AddUadpConnection_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId PublishSubscribeType_AddUdpConnection_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_AddUdpConnection_InputArguments);
+        public static readonly NodeId PublishSubscribeType_AddUadpConnection_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_AddUadpConnection_InputArguments);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_AddUdpConnection_OutputArguments Variable.
+        /// The identifier for the PublishSubscribeType_AddUadpConnection_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId PublishSubscribeType_AddUdpConnection_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_AddUdpConnection_OutputArguments);
+        public static readonly NodeId PublishSubscribeType_AddUadpConnection_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_AddUadpConnection_OutputArguments);
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_AddAmqpConnection_InputArguments Variable.
@@ -31750,14 +31910,14 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribe_xConnectionNamex_RemoveGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_xConnectionNamex_RemoveGroup_InputArguments);
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_AddUdpConnection_InputArguments Variable.
+        /// The identifier for the PublishSubscribe_AddUadpConnection_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId PublishSubscribe_AddUdpConnection_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_AddUdpConnection_InputArguments);
+        public static readonly NodeId PublishSubscribe_AddUadpConnection_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_AddUadpConnection_InputArguments);
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_AddUdpConnection_OutputArguments Variable.
+        /// The identifier for the PublishSubscribe_AddUadpConnection_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId PublishSubscribe_AddUdpConnection_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_AddUdpConnection_OutputArguments);
+        public static readonly NodeId PublishSubscribe_AddUadpConnection_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_AddUadpConnection_OutputArguments);
 
         /// <summary>
         /// The identifier for the PublishSubscribe_AddAmqpConnection_InputArguments Variable.
@@ -31835,14 +31995,24 @@ namespace Opc.Ua
         public static readonly NodeId DataSetFolderType_xPublishedDataSetNamex_ConfigurationVersion = new NodeId(Opc.Ua.Variables.DataSetFolderType_xPublishedDataSetNamex_ConfigurationVersion);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_xPublishedDataSetNamex_ConfigurationGuid Variable.
-        /// </summary>
-        public static readonly NodeId DataSetFolderType_xPublishedDataSetNamex_ConfigurationGuid = new NodeId(Opc.Ua.Variables.DataSetFolderType_xPublishedDataSetNamex_ConfigurationGuid);
-
-        /// <summary>
         /// The identifier for the DataSetFolderType_xPublishedDataSetNamex_MetaData Variable.
         /// </summary>
         public static readonly NodeId DataSetFolderType_xPublishedDataSetNamex_MetaData = new NodeId(Opc.Ua.Variables.DataSetFolderType_xPublishedDataSetNamex_MetaData);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_xPublishedDataSetNamex_AddStaticField_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_xPublishedDataSetNamex_AddStaticField_InputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_xPublishedDataSetNamex_AddStaticField_InputArguments);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_xPublishedDataSetNamex_AddStaticField_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_xPublishedDataSetNamex_AddStaticField_OutputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_xPublishedDataSetNamex_AddStaticField_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_xPublishedDataSetNamex_RemoveStaticField_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_xPublishedDataSetNamex_RemoveStaticField_InputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_xPublishedDataSetNamex_RemoveStaticField_InputArguments);
 
         /// <summary>
         /// The identifier for the DataSetFolderType_AddPublishedDataItems_InputArguments Variable.
@@ -31885,19 +32055,39 @@ namespace Opc.Ua
         public static readonly NodeId PublishedDataSetType_ConfigurationVersion = new NodeId(Opc.Ua.Variables.PublishedDataSetType_ConfigurationVersion);
 
         /// <summary>
-        /// The identifier for the PublishedDataSetType_ConfigurationGuid Variable.
-        /// </summary>
-        public static readonly NodeId PublishedDataSetType_ConfigurationGuid = new NodeId(Opc.Ua.Variables.PublishedDataSetType_ConfigurationGuid);
-
-        /// <summary>
         /// The identifier for the PublishedDataSetType_MetaData Variable.
         /// </summary>
         public static readonly NodeId PublishedDataSetType_MetaData = new NodeId(Opc.Ua.Variables.PublishedDataSetType_MetaData);
 
         /// <summary>
-        /// The identifier for the PublishedDataSetType_StaticFields Variable.
+        /// The identifier for the PublishedDataSetType_AddStaticField_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId PublishedDataSetType_StaticFields = new NodeId(Opc.Ua.Variables.PublishedDataSetType_StaticFields);
+        public static readonly NodeId PublishedDataSetType_AddStaticField_InputArguments = new NodeId(Opc.Ua.Variables.PublishedDataSetType_AddStaticField_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetType_AddStaticField_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishedDataSetType_AddStaticField_OutputArguments = new NodeId(Opc.Ua.Variables.PublishedDataSetType_AddStaticField_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetType_RemoveStaticField_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishedDataSetType_RemoveStaticField_InputArguments = new NodeId(Opc.Ua.Variables.PublishedDataSetType_RemoveStaticField_InputArguments);
+
+        /// <summary>
+        /// The identifier for the AddStaticFieldType_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId AddStaticFieldType_InputArguments = new NodeId(Opc.Ua.Variables.AddStaticFieldType_InputArguments);
+
+        /// <summary>
+        /// The identifier for the AddStaticFieldType_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId AddStaticFieldType_OutputArguments = new NodeId(Opc.Ua.Variables.AddStaticFieldType_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the RemoveStaticFieldType_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId RemoveStaticFieldType_InputArguments = new NodeId(Opc.Ua.Variables.RemoveStaticFieldType_InputArguments);
 
         /// <summary>
         /// The identifier for the StructureType_EnumStrings Variable.
@@ -31908,6 +32098,21 @@ namespace Opc.Ua
         /// The identifier for the PublishedDataItemsType_xMessageWriterNamex_Status_State Variable.
         /// </summary>
         public static readonly NodeId PublishedDataItemsType_xMessageWriterNamex_Status_State = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_xMessageWriterNamex_Status_State);
+
+        /// <summary>
+        /// The identifier for the PublishedDataItemsType_AddStaticField_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishedDataItemsType_AddStaticField_InputArguments = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_AddStaticField_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishedDataItemsType_AddStaticField_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishedDataItemsType_AddStaticField_OutputArguments = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_AddStaticField_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishedDataItemsType_RemoveStaticField_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishedDataItemsType_RemoveStaticField_InputArguments = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_RemoveStaticField_InputArguments);
 
         /// <summary>
         /// The identifier for the PublishedDataItemsType_PublishedData Variable.
@@ -31970,6 +32175,21 @@ namespace Opc.Ua
         public static readonly NodeId PublishedEventsType_xMessageWriterNamex_Status_State = new NodeId(Opc.Ua.Variables.PublishedEventsType_xMessageWriterNamex_Status_State);
 
         /// <summary>
+        /// The identifier for the PublishedEventsType_AddStaticField_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishedEventsType_AddStaticField_InputArguments = new NodeId(Opc.Ua.Variables.PublishedEventsType_AddStaticField_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishedEventsType_AddStaticField_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishedEventsType_AddStaticField_OutputArguments = new NodeId(Opc.Ua.Variables.PublishedEventsType_AddStaticField_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishedEventsType_RemoveStaticField_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishedEventsType_RemoveStaticField_InputArguments = new NodeId(Opc.Ua.Variables.PublishedEventsType_RemoveStaticField_InputArguments);
+
+        /// <summary>
         /// The identifier for the PublishedEventsType_EventNotifier Variable.
         /// </summary>
         public static readonly NodeId PublishedEventsType_EventNotifier = new NodeId(Opc.Ua.Variables.PublishedEventsType_EventNotifier);
@@ -31983,6 +32203,11 @@ namespace Opc.Ua
         /// The identifier for the PublishedEventsType_Filter Variable.
         /// </summary>
         public static readonly NodeId PublishedEventsType_Filter = new NodeId(Opc.Ua.Variables.PublishedEventsType_Filter);
+
+        /// <summary>
+        /// The identifier for the PublishedEventsType_KeepAliveTime Variable.
+        /// </summary>
+        public static readonly NodeId PublishedEventsType_KeepAliveTime = new NodeId(Opc.Ua.Variables.PublishedEventsType_KeepAliveTime);
 
         /// <summary>
         /// The identifier for the PublishedEventsType_Modify_InputArguments Variable.
@@ -32045,6 +32270,21 @@ namespace Opc.Ua
         public static readonly NodeId MessageWriterType_Status_State = new NodeId(Opc.Ua.Variables.MessageWriterType_Status_State);
 
         /// <summary>
+        /// The identifier for the TaggedWriterEncodingType_EncodingMimeType Variable.
+        /// </summary>
+        public static readonly NodeId TaggedWriterEncodingType_EncodingMimeType = new NodeId(Opc.Ua.Variables.TaggedWriterEncodingType_EncodingMimeType);
+
+        /// <summary>
+        /// The identifier for the TaggedWriterEncodingType_MessageFieldAliases Variable.
+        /// </summary>
+        public static readonly NodeId TaggedWriterEncodingType_MessageFieldAliases = new NodeId(Opc.Ua.Variables.TaggedWriterEncodingType_MessageFieldAliases);
+
+        /// <summary>
+        /// The identifier for the TaggedWriterEncodingType_PromotedFieldNames Variable.
+        /// </summary>
+        public static readonly NodeId TaggedWriterEncodingType_PromotedFieldNames = new NodeId(Opc.Ua.Variables.TaggedWriterEncodingType_PromotedFieldNames);
+
+        /// <summary>
         /// The identifier for the MessageReaderType_Status_State Variable.
         /// </summary>
         public static readonly NodeId MessageReaderType_Status_State = new NodeId(Opc.Ua.Variables.MessageReaderType_Status_State);
@@ -32065,194 +32305,194 @@ namespace Opc.Ua
         public static readonly NodeId Status_State = new NodeId(Opc.Ua.Variables.Status_State);
 
         /// <summary>
-        /// The identifier for the UdpConnectionType_PublisherId Variable.
+        /// The identifier for the UadpConnectionType_PublisherId Variable.
         /// </summary>
-        public static readonly NodeId UdpConnectionType_PublisherId = new NodeId(Opc.Ua.Variables.UdpConnectionType_PublisherId);
+        public static readonly NodeId UadpConnectionType_PublisherId = new NodeId(Opc.Ua.Variables.UadpConnectionType_PublisherId);
 
         /// <summary>
-        /// The identifier for the UdpConnectionType_xGroupNamex_RemoveMessageWriter_InputArguments Variable.
+        /// The identifier for the UadpConnectionType_xGroupNamex_RemoveMessageWriter_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId UdpConnectionType_xGroupNamex_RemoveMessageWriter_InputArguments = new NodeId(Opc.Ua.Variables.UdpConnectionType_xGroupNamex_RemoveMessageWriter_InputArguments);
+        public static readonly NodeId UadpConnectionType_xGroupNamex_RemoveMessageWriter_InputArguments = new NodeId(Opc.Ua.Variables.UadpConnectionType_xGroupNamex_RemoveMessageWriter_InputArguments);
 
         /// <summary>
-        /// The identifier for the UdpConnectionType_xGroupNamex_RemoveMessageReader_InputArguments Variable.
+        /// The identifier for the UadpConnectionType_xGroupNamex_RemoveMessageReader_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId UdpConnectionType_xGroupNamex_RemoveMessageReader_InputArguments = new NodeId(Opc.Ua.Variables.UdpConnectionType_xGroupNamex_RemoveMessageReader_InputArguments);
+        public static readonly NodeId UadpConnectionType_xGroupNamex_RemoveMessageReader_InputArguments = new NodeId(Opc.Ua.Variables.UadpConnectionType_xGroupNamex_RemoveMessageReader_InputArguments);
 
         /// <summary>
-        /// The identifier for the UdpConnectionType_Status_State Variable.
+        /// The identifier for the UadpConnectionType_Status_State Variable.
         /// </summary>
-        public static readonly NodeId UdpConnectionType_Status_State = new NodeId(Opc.Ua.Variables.UdpConnectionType_Status_State);
+        public static readonly NodeId UadpConnectionType_Status_State = new NodeId(Opc.Ua.Variables.UadpConnectionType_Status_State);
 
         /// <summary>
-        /// The identifier for the UdpConnectionType_RemoveGroup_InputArguments Variable.
+        /// The identifier for the UadpConnectionType_RemoveGroup_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId UdpConnectionType_RemoveGroup_InputArguments = new NodeId(Opc.Ua.Variables.UdpConnectionType_RemoveGroup_InputArguments);
+        public static readonly NodeId UadpConnectionType_RemoveGroup_InputArguments = new NodeId(Opc.Ua.Variables.UadpConnectionType_RemoveGroup_InputArguments);
 
         /// <summary>
-        /// The identifier for the UdpConnectionType_Modify_InputArguments Variable.
+        /// The identifier for the UadpConnectionType_Modify_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId UdpConnectionType_Modify_InputArguments = new NodeId(Opc.Ua.Variables.UdpConnectionType_Modify_InputArguments);
+        public static readonly NodeId UadpConnectionType_Modify_InputArguments = new NodeId(Opc.Ua.Variables.UadpConnectionType_Modify_InputArguments);
 
         /// <summary>
-        /// The identifier for the UdpConnectionType_AddGroup_InputArguments Variable.
+        /// The identifier for the UadpConnectionType_AddGroup_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId UdpConnectionType_AddGroup_InputArguments = new NodeId(Opc.Ua.Variables.UdpConnectionType_AddGroup_InputArguments);
+        public static readonly NodeId UadpConnectionType_AddGroup_InputArguments = new NodeId(Opc.Ua.Variables.UadpConnectionType_AddGroup_InputArguments);
 
         /// <summary>
-        /// The identifier for the UdpConnectionType_AddGroup_OutputArguments Variable.
+        /// The identifier for the UadpConnectionType_AddGroup_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId UdpConnectionType_AddGroup_OutputArguments = new NodeId(Opc.Ua.Variables.UdpConnectionType_AddGroup_OutputArguments);
+        public static readonly NodeId UadpConnectionType_AddGroup_OutputArguments = new NodeId(Opc.Ua.Variables.UadpConnectionType_AddGroup_OutputArguments);
 
         /// <summary>
-        /// The identifier for the UdpGroupType_xMessageWriterNamex_Status_State Variable.
+        /// The identifier for the UadpGroupType_xMessageWriterNamex_Status_State Variable.
         /// </summary>
-        public static readonly NodeId UdpGroupType_xMessageWriterNamex_Status_State = new NodeId(Opc.Ua.Variables.UdpGroupType_xMessageWriterNamex_Status_State);
+        public static readonly NodeId UadpGroupType_xMessageWriterNamex_Status_State = new NodeId(Opc.Ua.Variables.UadpGroupType_xMessageWriterNamex_Status_State);
 
         /// <summary>
-        /// The identifier for the UdpGroupType_RemoveMessageWriter_InputArguments Variable.
+        /// The identifier for the UadpGroupType_RemoveMessageWriter_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId UdpGroupType_RemoveMessageWriter_InputArguments = new NodeId(Opc.Ua.Variables.UdpGroupType_RemoveMessageWriter_InputArguments);
+        public static readonly NodeId UadpGroupType_RemoveMessageWriter_InputArguments = new NodeId(Opc.Ua.Variables.UadpGroupType_RemoveMessageWriter_InputArguments);
 
         /// <summary>
-        /// The identifier for the UdpGroupType_xMessageReaderNamex_Status_State Variable.
+        /// The identifier for the UadpGroupType_xMessageReaderNamex_Status_State Variable.
         /// </summary>
-        public static readonly NodeId UdpGroupType_xMessageReaderNamex_Status_State = new NodeId(Opc.Ua.Variables.UdpGroupType_xMessageReaderNamex_Status_State);
+        public static readonly NodeId UadpGroupType_xMessageReaderNamex_Status_State = new NodeId(Opc.Ua.Variables.UadpGroupType_xMessageReaderNamex_Status_State);
 
         /// <summary>
-        /// The identifier for the UdpGroupType_RemoveMessageReader_InputArguments Variable.
+        /// The identifier for the UadpGroupType_RemoveMessageReader_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId UdpGroupType_RemoveMessageReader_InputArguments = new NodeId(Opc.Ua.Variables.UdpGroupType_RemoveMessageReader_InputArguments);
+        public static readonly NodeId UadpGroupType_RemoveMessageReader_InputArguments = new NodeId(Opc.Ua.Variables.UadpGroupType_RemoveMessageReader_InputArguments);
 
         /// <summary>
-        /// The identifier for the UdpGroupType_SecurityPolicy Variable.
+        /// The identifier for the UadpGroupType_SecurityPolicy Variable.
         /// </summary>
-        public static readonly NodeId UdpGroupType_SecurityPolicy = new NodeId(Opc.Ua.Variables.UdpGroupType_SecurityPolicy);
+        public static readonly NodeId UadpGroupType_SecurityPolicy = new NodeId(Opc.Ua.Variables.UadpGroupType_SecurityPolicy);
 
         /// <summary>
-        /// The identifier for the UdpGroupType_SecurityMode Variable.
+        /// The identifier for the UadpGroupType_SecurityMode Variable.
         /// </summary>
-        public static readonly NodeId UdpGroupType_SecurityMode = new NodeId(Opc.Ua.Variables.UdpGroupType_SecurityMode);
+        public static readonly NodeId UadpGroupType_SecurityMode = new NodeId(Opc.Ua.Variables.UadpGroupType_SecurityMode);
 
         /// <summary>
-        /// The identifier for the UdpGroupType_SecurityTokenLifetime Variable.
+        /// The identifier for the UadpGroupType_SecurityTokenLifetime Variable.
         /// </summary>
-        public static readonly NodeId UdpGroupType_SecurityTokenLifetime = new NodeId(Opc.Ua.Variables.UdpGroupType_SecurityTokenLifetime);
+        public static readonly NodeId UadpGroupType_SecurityTokenLifetime = new NodeId(Opc.Ua.Variables.UadpGroupType_SecurityTokenLifetime);
 
         /// <summary>
-        /// The identifier for the UdpGroupType_MaxPacketSize Variable.
+        /// The identifier for the UadpGroupType_MaxPacketSize Variable.
         /// </summary>
-        public static readonly NodeId UdpGroupType_MaxPacketSize = new NodeId(Opc.Ua.Variables.UdpGroupType_MaxPacketSize);
+        public static readonly NodeId UadpGroupType_MaxPacketSize = new NodeId(Opc.Ua.Variables.UadpGroupType_MaxPacketSize);
 
         /// <summary>
-        /// The identifier for the UdpGroupType_Modify_InputArguments Variable.
+        /// The identifier for the UadpGroupType_Modify_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId UdpGroupType_Modify_InputArguments = new NodeId(Opc.Ua.Variables.UdpGroupType_Modify_InputArguments);
+        public static readonly NodeId UadpGroupType_Modify_InputArguments = new NodeId(Opc.Ua.Variables.UadpGroupType_Modify_InputArguments);
 
         /// <summary>
-        /// The identifier for the UdpGroupType_Modify_OutputArguments Variable.
+        /// The identifier for the UadpGroupType_Modify_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId UdpGroupType_Modify_OutputArguments = new NodeId(Opc.Ua.Variables.UdpGroupType_Modify_OutputArguments);
+        public static readonly NodeId UadpGroupType_Modify_OutputArguments = new NodeId(Opc.Ua.Variables.UadpGroupType_Modify_OutputArguments);
 
         /// <summary>
-        /// The identifier for the UdpGroupType_GetSecurityToken_OutputArguments Variable.
+        /// The identifier for the UadpGroupType_GetSecurityToken_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId UdpGroupType_GetSecurityToken_OutputArguments = new NodeId(Opc.Ua.Variables.UdpGroupType_GetSecurityToken_OutputArguments);
+        public static readonly NodeId UadpGroupType_GetSecurityToken_OutputArguments = new NodeId(Opc.Ua.Variables.UadpGroupType_GetSecurityToken_OutputArguments);
 
         /// <summary>
-        /// The identifier for the UdpGroupType_AddMessageWriter_InputArguments Variable.
+        /// The identifier for the UadpGroupType_AddMessageWriter_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId UdpGroupType_AddMessageWriter_InputArguments = new NodeId(Opc.Ua.Variables.UdpGroupType_AddMessageWriter_InputArguments);
+        public static readonly NodeId UadpGroupType_AddMessageWriter_InputArguments = new NodeId(Opc.Ua.Variables.UadpGroupType_AddMessageWriter_InputArguments);
 
         /// <summary>
-        /// The identifier for the UdpGroupType_AddMessageWriter_OutputArguments Variable.
+        /// The identifier for the UadpGroupType_AddMessageWriter_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId UdpGroupType_AddMessageWriter_OutputArguments = new NodeId(Opc.Ua.Variables.UdpGroupType_AddMessageWriter_OutputArguments);
+        public static readonly NodeId UadpGroupType_AddMessageWriter_OutputArguments = new NodeId(Opc.Ua.Variables.UadpGroupType_AddMessageWriter_OutputArguments);
 
         /// <summary>
-        /// The identifier for the UdpGroupType_AddMessageReader_InputArguments Variable.
+        /// The identifier for the UadpGroupType_AddMessageReader_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId UdpGroupType_AddMessageReader_InputArguments = new NodeId(Opc.Ua.Variables.UdpGroupType_AddMessageReader_InputArguments);
+        public static readonly NodeId UadpGroupType_AddMessageReader_InputArguments = new NodeId(Opc.Ua.Variables.UadpGroupType_AddMessageReader_InputArguments);
 
         /// <summary>
-        /// The identifier for the UdpGroupType_AddMessageReader_OutputArguments Variable.
+        /// The identifier for the UadpGroupType_AddMessageReader_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId UdpGroupType_AddMessageReader_OutputArguments = new NodeId(Opc.Ua.Variables.UdpGroupType_AddMessageReader_OutputArguments);
+        public static readonly NodeId UadpGroupType_AddMessageReader_OutputArguments = new NodeId(Opc.Ua.Variables.UadpGroupType_AddMessageReader_OutputArguments);
 
         /// <summary>
-        /// The identifier for the UdpWriterTransportType_DataSetWriterId Variable.
+        /// The identifier for the UadpWriterTransportType_DataSetWriterId Variable.
         /// </summary>
-        public static readonly NodeId UdpWriterTransportType_DataSetWriterId = new NodeId(Opc.Ua.Variables.UdpWriterTransportType_DataSetWriterId);
+        public static readonly NodeId UadpWriterTransportType_DataSetWriterId = new NodeId(Opc.Ua.Variables.UadpWriterTransportType_DataSetWriterId);
 
         /// <summary>
-        /// The identifier for the UdpWriterTransportType_MessageRepeatCount Variable.
+        /// The identifier for the UadpWriterTransportType_MessageRepeatCount Variable.
         /// </summary>
-        public static readonly NodeId UdpWriterTransportType_MessageRepeatCount = new NodeId(Opc.Ua.Variables.UdpWriterTransportType_MessageRepeatCount);
+        public static readonly NodeId UadpWriterTransportType_MessageRepeatCount = new NodeId(Opc.Ua.Variables.UadpWriterTransportType_MessageRepeatCount);
 
         /// <summary>
-        /// The identifier for the UdpWriterTransportType_MessageRepeatDelay Variable.
+        /// The identifier for the UadpWriterTransportType_MessageRepeatDelay Variable.
         /// </summary>
-        public static readonly NodeId UdpWriterTransportType_MessageRepeatDelay = new NodeId(Opc.Ua.Variables.UdpWriterTransportType_MessageRepeatDelay);
+        public static readonly NodeId UadpWriterTransportType_MessageRepeatDelay = new NodeId(Opc.Ua.Variables.UadpWriterTransportType_MessageRepeatDelay);
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_Status_State Variable.
+        /// The identifier for the UadpDataReaderType_Status_State Variable.
         /// </summary>
-        public static readonly NodeId UdpDataReaderType_Status_State = new NodeId(Opc.Ua.Variables.UdpDataReaderType_Status_State);
+        public static readonly NodeId UadpDataReaderType_Status_State = new NodeId(Opc.Ua.Variables.UadpDataReaderType_Status_State);
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_PublisherId Variable.
+        /// The identifier for the UadpDataReaderType_PublisherId Variable.
         /// </summary>
-        public static readonly NodeId UdpDataReaderType_PublisherId = new NodeId(Opc.Ua.Variables.UdpDataReaderType_PublisherId);
+        public static readonly NodeId UadpDataReaderType_PublisherId = new NodeId(Opc.Ua.Variables.UadpDataReaderType_PublisherId);
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_DataSetWriterId Variable.
+        /// The identifier for the UadpDataReaderType_DataSetWriterId Variable.
         /// </summary>
-        public static readonly NodeId UdpDataReaderType_DataSetWriterId = new NodeId(Opc.Ua.Variables.UdpDataReaderType_DataSetWriterId);
+        public static readonly NodeId UadpDataReaderType_DataSetWriterId = new NodeId(Opc.Ua.Variables.UadpDataReaderType_DataSetWriterId);
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_DataSetMetaData Variable.
+        /// The identifier for the UadpDataReaderType_DataSetMetaData Variable.
         /// </summary>
-        public static readonly NodeId UdpDataReaderType_DataSetMetaData = new NodeId(Opc.Ua.Variables.UdpDataReaderType_DataSetMetaData);
+        public static readonly NodeId UadpDataReaderType_DataSetMetaData = new NodeId(Opc.Ua.Variables.UadpDataReaderType_DataSetMetaData);
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_DataUpdateTimeout Variable.
+        /// The identifier for the UadpDataReaderType_DataUpdateTimeout Variable.
         /// </summary>
-        public static readonly NodeId UdpDataReaderType_DataUpdateTimeout = new NodeId(Opc.Ua.Variables.UdpDataReaderType_DataUpdateTimeout);
+        public static readonly NodeId UadpDataReaderType_DataUpdateTimeout = new NodeId(Opc.Ua.Variables.UadpDataReaderType_DataUpdateTimeout);
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_ConnectedVariables Variable.
+        /// The identifier for the UadpDataReaderType_ConnectedVariables Variable.
         /// </summary>
-        public static readonly NodeId UdpDataReaderType_ConnectedVariables = new NodeId(Opc.Ua.Variables.UdpDataReaderType_ConnectedVariables);
+        public static readonly NodeId UadpDataReaderType_ConnectedVariables = new NodeId(Opc.Ua.Variables.UadpDataReaderType_ConnectedVariables);
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_Modify_InputArguments Variable.
+        /// The identifier for the UadpDataReaderType_Modify_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId UdpDataReaderType_Modify_InputArguments = new NodeId(Opc.Ua.Variables.UdpDataReaderType_Modify_InputArguments);
+        public static readonly NodeId UadpDataReaderType_Modify_InputArguments = new NodeId(Opc.Ua.Variables.UadpDataReaderType_Modify_InputArguments);
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_Modify_OutputArguments Variable.
+        /// The identifier for the UadpDataReaderType_Modify_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId UdpDataReaderType_Modify_OutputArguments = new NodeId(Opc.Ua.Variables.UdpDataReaderType_Modify_OutputArguments);
+        public static readonly NodeId UadpDataReaderType_Modify_OutputArguments = new NodeId(Opc.Ua.Variables.UadpDataReaderType_Modify_OutputArguments);
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_AddDataConnections_InputArguments Variable.
+        /// The identifier for the UadpDataReaderType_AddDataConnections_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId UdpDataReaderType_AddDataConnections_InputArguments = new NodeId(Opc.Ua.Variables.UdpDataReaderType_AddDataConnections_InputArguments);
+        public static readonly NodeId UadpDataReaderType_AddDataConnections_InputArguments = new NodeId(Opc.Ua.Variables.UadpDataReaderType_AddDataConnections_InputArguments);
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_AddDataConnections_OutputArguments Variable.
+        /// The identifier for the UadpDataReaderType_AddDataConnections_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId UdpDataReaderType_AddDataConnections_OutputArguments = new NodeId(Opc.Ua.Variables.UdpDataReaderType_AddDataConnections_OutputArguments);
+        public static readonly NodeId UadpDataReaderType_AddDataConnections_OutputArguments = new NodeId(Opc.Ua.Variables.UadpDataReaderType_AddDataConnections_OutputArguments);
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_RemoveDataConnections_InputArguments Variable.
+        /// The identifier for the UadpDataReaderType_RemoveDataConnections_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId UdpDataReaderType_RemoveDataConnections_InputArguments = new NodeId(Opc.Ua.Variables.UdpDataReaderType_RemoveDataConnections_InputArguments);
+        public static readonly NodeId UadpDataReaderType_RemoveDataConnections_InputArguments = new NodeId(Opc.Ua.Variables.UadpDataReaderType_RemoveDataConnections_InputArguments);
 
         /// <summary>
-        /// The identifier for the UdpDataReaderType_RemoveDataConnections_OutputArguments Variable.
+        /// The identifier for the UadpDataReaderType_RemoveDataConnections_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId UdpDataReaderType_RemoveDataConnections_OutputArguments = new NodeId(Opc.Ua.Variables.UdpDataReaderType_RemoveDataConnections_OutputArguments);
+        public static readonly NodeId UadpDataReaderType_RemoveDataConnections_OutputArguments = new NodeId(Opc.Ua.Variables.UadpDataReaderType_RemoveDataConnections_OutputArguments);
 
         /// <summary>
         /// The identifier for the AmqpConnectionType_PublisherId Variable.
@@ -32335,19 +32575,29 @@ namespace Opc.Ua
         public static readonly NodeId AmqpGroupType_AddMessageWriter_OutputArguments = new NodeId(Opc.Ua.Variables.AmqpGroupType_AddMessageWriter_OutputArguments);
 
         /// <summary>
-        /// The identifier for the AmqpWriterEncodingType_EncodingMimeType Variable.
+        /// The identifier for the AmqpWriterTransportType_AmqpLinkAddress Variable.
         /// </summary>
-        public static readonly NodeId AmqpWriterEncodingType_EncodingMimeType = new NodeId(Opc.Ua.Variables.AmqpWriterEncodingType_EncodingMimeType);
+        public static readonly NodeId AmqpWriterTransportType_AmqpLinkAddress = new NodeId(Opc.Ua.Variables.AmqpWriterTransportType_AmqpLinkAddress);
 
         /// <summary>
-        /// The identifier for the AmqpWriterEncodingType_MessageFieldAliases Variable.
+        /// The identifier for the AmqpWriterTransportType_MetaDataLinkAddress Variable.
         /// </summary>
-        public static readonly NodeId AmqpWriterEncodingType_MessageFieldAliases = new NodeId(Opc.Ua.Variables.AmqpWriterEncodingType_MessageFieldAliases);
+        public static readonly NodeId AmqpWriterTransportType_MetaDataLinkAddress = new NodeId(Opc.Ua.Variables.AmqpWriterTransportType_MetaDataLinkAddress);
 
         /// <summary>
-        /// The identifier for the AmqpWriterEncodingType_PromotedFieldNames Variable.
+        /// The identifier for the AmqpWriterTransportType_MetaDataUpdateTime Variable.
         /// </summary>
-        public static readonly NodeId AmqpWriterEncodingType_PromotedFieldNames = new NodeId(Opc.Ua.Variables.AmqpWriterEncodingType_PromotedFieldNames);
+        public static readonly NodeId AmqpWriterTransportType_MetaDataUpdateTime = new NodeId(Opc.Ua.Variables.AmqpWriterTransportType_MetaDataUpdateTime);
+
+        /// <summary>
+        /// The identifier for the AmqpWriterTransportType_DataSetWriterId Variable.
+        /// </summary>
+        public static readonly NodeId AmqpWriterTransportType_DataSetWriterId = new NodeId(Opc.Ua.Variables.AmqpWriterTransportType_DataSetWriterId);
+
+        /// <summary>
+        /// The identifier for the AmqpWriterTransportType_MaxMessageSize Variable.
+        /// </summary>
+        public static readonly NodeId AmqpWriterTransportType_MaxMessageSize = new NodeId(Opc.Ua.Variables.AmqpWriterTransportType_MaxMessageSize);
 
         /// <summary>
         /// The identifier for the IdType_EnumStrings Variable.
@@ -33624,9 +33874,19 @@ namespace Opc.Ua
         public const string AddressSpaceFileType = "AddressSpaceFileType";
 
         /// <summary>
-        /// The BrowseName for the AddUdpConnection component.
+        /// The BrowseName for the AddStaticField component.
         /// </summary>
-        public const string AddUdpConnection = "AddUdpConnection";
+        public const string AddStaticField = "AddStaticField";
+
+        /// <summary>
+        /// The BrowseName for the AddStaticFieldType component.
+        /// </summary>
+        public const string AddStaticFieldType = "AddStaticFieldType";
+
+        /// <summary>
+        /// The BrowseName for the AddUadpConnection component.
+        /// </summary>
+        public const string AddUadpConnection = "AddUadpConnection";
 
         /// <summary>
         /// The BrowseName for the AddVariables component.
@@ -33884,9 +34144,9 @@ namespace Opc.Ua
         public const string AmqpLinkAddress = "AmqpLinkAddress";
 
         /// <summary>
-        /// The BrowseName for the AmqpWriterEncodingType component.
+        /// The BrowseName for the AmqpWriterTransportType component.
         /// </summary>
-        public const string AmqpWriterEncodingType = "AmqpWriterEncodingType";
+        public const string AmqpWriterTransportType = "AmqpWriterTransportType";
 
         /// <summary>
         /// The BrowseName for the AnalogItemType component.
@@ -34229,6 +34489,11 @@ namespace Opc.Ua
         public const string BaseVariableType = "BaseVariableType";
 
         /// <summary>
+        /// The BrowseName for the BinaryWriterEncodingType component.
+        /// </summary>
+        public const string BinaryWriterEncodingType = "BinaryWriterEncodingType";
+
+        /// <summary>
         /// The BrowseName for the BitFieldMaskDataType component.
         /// </summary>
         public const string BitFieldMaskDataType = "BitFieldMaskDataType";
@@ -34569,11 +34834,6 @@ namespace Opc.Ua
         public const string ConditionVariableType = "ConditionVariableType";
 
         /// <summary>
-        /// The BrowseName for the ConfigurationGuid component.
-        /// </summary>
-        public const string ConfigurationGuid = "ConfigurationGuid";
-
-        /// <summary>
         /// The BrowseName for the ConfigurationVersion component.
         /// </summary>
         public const string ConfigurationVersion = "ConfigurationVersion";
@@ -34812,6 +35072,11 @@ namespace Opc.Ua
         /// The BrowseName for the DataSetMetaDataType component.
         /// </summary>
         public const string DataSetMetaDataType = "DataSetMetaDataType";
+
+        /// <summary>
+        /// The BrowseName for the DataSetToWriter component.
+        /// </summary>
+        public const string DataSetToWriter = "DataSetToWriter";
 
         /// <summary>
         /// The BrowseName for the DataSetWriterId component.
@@ -35604,6 +35869,11 @@ namespace Opc.Ua
         public const string HasHistoricalConfiguration = "HasHistoricalConfiguration";
 
         /// <summary>
+        /// The BrowseName for the HasMessageReader component.
+        /// </summary>
+        public const string HasMessageReader = "HasMessageReader";
+
+        /// <summary>
         /// The BrowseName for the HasMessageWriter component.
         /// </summary>
         public const string HasMessageWriter = "HasMessageWriter";
@@ -35634,11 +35904,6 @@ namespace Opc.Ua
         public const string HasPubSubConnection = "HasPubSubConnection";
 
         /// <summary>
-        /// The BrowseName for the HasReader component.
-        /// </summary>
-        public const string HasReader = "HasReader";
-
-        /// <summary>
         /// The BrowseName for the HasSubStateMachine component.
         /// </summary>
         public const string HasSubStateMachine = "HasSubStateMachine";
@@ -35657,11 +35922,6 @@ namespace Opc.Ua
         /// The BrowseName for the HasTypeDefinition component.
         /// </summary>
         public const string HasTypeDefinition = "HasTypeDefinition";
-
-        /// <summary>
-        /// The BrowseName for the HasWriter component.
-        /// </summary>
-        public const string HasWriter = "HasWriter";
 
         /// <summary>
         /// The BrowseName for the HierarchicalReferences component.
@@ -35969,6 +36229,11 @@ namespace Opc.Ua
         public const string IssuedIdentityToken = "IssuedIdentityToken";
 
         /// <summary>
+        /// The BrowseName for the KeepAliveTime component.
+        /// </summary>
+        public const string KeepAliveTime = "KeepAliveTime";
+
+        /// <summary>
         /// The BrowseName for the KerberosIdentityToken component.
         /// </summary>
         public const string KerberosIdentityToken = "KerberosIdentityToken";
@@ -36174,6 +36439,11 @@ namespace Opc.Ua
         public const string MaxLifetimeCount = "MaxLifetimeCount";
 
         /// <summary>
+        /// The BrowseName for the MaxMessageSize component.
+        /// </summary>
+        public const string MaxMessageSize = "MaxMessageSize";
+
+        /// <summary>
         /// The BrowseName for the MaxMonitoredItemsPerCall component.
         /// </summary>
         public const string MaxMonitoredItemsPerCall = "MaxMonitoredItemsPerCall";
@@ -36352,6 +36622,16 @@ namespace Opc.Ua
         /// The BrowseName for the MetaData component.
         /// </summary>
         public const string MetaData = "MetaData";
+
+        /// <summary>
+        /// The BrowseName for the MetaDataLinkAddress component.
+        /// </summary>
+        public const string MetaDataLinkAddress = "MetaDataLinkAddress";
+
+        /// <summary>
+        /// The BrowseName for the MetaDataUpdateTime component.
+        /// </summary>
+        public const string MetaDataUpdateTime = "MetaDataUpdateTime";
 
         /// <summary>
         /// The BrowseName for the MethodAttributes component.
@@ -37414,6 +37694,16 @@ namespace Opc.Ua
         public const string RemovePublishedDataSet = "RemovePublishedDataSet";
 
         /// <summary>
+        /// The BrowseName for the RemoveStaticField component.
+        /// </summary>
+        public const string RemoveStaticField = "RemoveStaticField";
+
+        /// <summary>
+        /// The BrowseName for the RemoveStaticFieldType component.
+        /// </summary>
+        public const string RemoveStaticFieldType = "RemoveStaticFieldType";
+
+        /// <summary>
         /// The BrowseName for the RemoveVariables component.
         /// </summary>
         public const string RemoveVariables = "RemoveVariables";
@@ -38269,6 +38559,11 @@ namespace Opc.Ua
         public const string SystemStatusChangeEventType = "SystemStatusChangeEventType";
 
         /// <summary>
+        /// The BrowseName for the TaggedWriterEncodingType component.
+        /// </summary>
+        public const string TaggedWriterEncodingType = "TaggedWriterEncodingType";
+
+        /// <summary>
         /// The BrowseName for the Time component.
         /// </summary>
         public const string Time = "Time";
@@ -38479,24 +38774,24 @@ namespace Opc.Ua
         public const string TypesFolder = "Types";
 
         /// <summary>
-        /// The BrowseName for the UdpConnectionType component.
+        /// The BrowseName for the UadpConnectionType component.
         /// </summary>
-        public const string UdpConnectionType = "UdpConnectionType";
+        public const string UadpConnectionType = "UadpConnectionType";
 
         /// <summary>
-        /// The BrowseName for the UdpDataReaderType component.
+        /// The BrowseName for the UadpDataReaderType component.
         /// </summary>
-        public const string UdpDataReaderType = "UdpDataReaderType";
+        public const string UadpDataReaderType = "UadpDataReaderType";
 
         /// <summary>
-        /// The BrowseName for the UdpGroupType component.
+        /// The BrowseName for the UadpGroupType component.
         /// </summary>
-        public const string UdpGroupType = "UdpGroupType";
+        public const string UadpGroupType = "UadpGroupType";
 
         /// <summary>
-        /// The BrowseName for the UdpWriterTransportType component.
+        /// The BrowseName for the UadpWriterTransportType component.
         /// </summary>
-        public const string UdpWriterTransportType = "UdpWriterTransportType";
+        public const string UadpWriterTransportType = "UadpWriterTransportType";
 
         /// <summary>
         /// The BrowseName for the UInt16 component.

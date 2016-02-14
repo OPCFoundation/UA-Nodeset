@@ -811,7 +811,7 @@
       <xs:element name="TargetNodeId" type="ua:NodeId" minOccurs="0" nillable="true" />
       <xs:element name="AttributeId" type="xs:unsignedInt" minOccurs="0" />
       <xs:element name="WriteIndexRange" type="xs:string" minOccurs="0" nillable="true" />
-      <xs:element name="OverwriteValue" type="ua:Variant" minOccurs="0" />
+      <xs:element name="OverrideValue" type="ua:Variant" minOccurs="0" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="DataConnectionDataType" type="tns:DataConnectionDataType" />
