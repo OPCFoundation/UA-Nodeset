@@ -6010,7 +6010,7 @@ namespace Opc.Ua
            "ZSB0aGUgc2FtZSBpbiBldmVyeSBzZXJ2ZXIgdGhhdCBleHBvc2VzIHRoZW0uAC4ARGYtAAABACMBAQAA" +
            "AAEB/////wAAAAA1YIkKAgAAAAAAGQAAAFN0YXRpY1N0cmluZ05vZGVJZFBhdHRlcm4BAGctAwAAAABi" +
            "AAAAQSByZWd1bGFyIGV4cHJlc3Npb24gd2hpY2ggbWF0Y2hlcyBzdHJpbmcgbm9kZSBpZHMgYXJlIHRo" +
-           "ZSBzYW1lIGluIGV2ZXJ5IHNlcnZlciB0aGF0IGV4cG9zZXMgdGhlbS4ALgBEZy0AAAAMAQAAAAEB////" +
+           "ZSBzYW1lIGluIGV2ZXJ5IHNlcnZlciB0aGF0IGV4cG9zZXMgdGhlbS4ALgBEZy0AAAAM/////wEB////" +
            "/wAAAAAkYIAKAQAAAAAADQAAAE5hbWVzcGFjZUZpbGUBAGgtAwAAAAAtAAAAQSBmaWxlIGNvbnRhaW5p" +
            "bmcgdGhlIG5vZGVzIG9mIHRoZSBuYW1lc3BhY2UuAC8BAEstaC0AAP////8KAAAANWCJCgIAAAAAAAQA" +
            "AABTaXplAQBpLQMAAAAAHgAAAFRoZSBzaXplIG9mIHRoZSBmaWxlIGluIGJ5dGVzLgAuAERpLQAAAAn/" +
@@ -6174,7 +6174,7 @@ namespace Opc.Ua
         /// <summary>
         /// A regular expression which matches string node ids are the same in every server that exposes them.
         /// </summary>
-        public PropertyState<string[]> StaticStringNodeIdPattern
+        public PropertyState<string> StaticStringNodeIdPattern
         {
             get
             {
@@ -6419,11 +6419,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                StaticStringNodeIdPattern = new PropertyState<string[]>(this);
+                                StaticStringNodeIdPattern = new PropertyState<string>(this);
                             }
                             else
                             {
-                                StaticStringNodeIdPattern = (PropertyState<string[]>)replacement;
+                                StaticStringNodeIdPattern = (PropertyState<string>)replacement;
                             }
                         }
                     }
@@ -6470,7 +6470,7 @@ namespace Opc.Ua
         private PropertyState<bool> m_isNamespaceSubset;
         private PropertyState<IdType[]> m_staticNodeIdTypes;
         private PropertyState<string[]> m_staticNumericNodeIdRange;
-        private PropertyState<string[]> m_staticStringNodeIdPattern;
+        private PropertyState<string> m_staticStringNodeIdPattern;
         private AddressSpaceFileState m_namespaceFile;
         #endregion
     }

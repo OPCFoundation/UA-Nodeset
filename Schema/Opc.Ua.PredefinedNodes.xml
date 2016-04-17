@@ -107,7 +107,7 @@
       <uax:Text>Describes a value that can have any unsigned integer DataType.</uax:Text>
     </uax:Description>
     <uax:SuperTypeId>
-      <uax:Identifier>i=27</uax:Identifier>
+      <uax:Identifier>i=26</uax:Identifier>
     </uax:SuperTypeId>
     <uax:IsAbstract>true</uax:IsAbstract>
   </UInteger>
@@ -11901,7 +11901,7 @@
       <uax:DataType>
         <uax:Identifier>i=12</uax:Identifier>
       </uax:DataType>
-      <uax:ValueRank>1</uax:ValueRank>
+      <uax:ValueRank>-1</uax:ValueRank>
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </StaticStringNodeIdPattern>
@@ -12903,7 +12903,7 @@
         <uax:DataType>
           <uax:Identifier>i=12</uax:Identifier>
         </uax:DataType>
-        <uax:ValueRank>1</uax:ValueRank>
+        <uax:ValueRank>-1</uax:ValueRank>
         <uax:AccessLevel>1</uax:AccessLevel>
         <uax:UserAccessLevel>1</uax:UserAccessLevel>
       </StaticStringNodeIdPattern>
@@ -23133,6 +23133,232 @@
         <uax:Identifier>i=11645</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>11715</uax:NumericId>
+      <OPCUANamespaceUri>
+        <uax:NodeClass>Object_1</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>i=15182</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>0</uax:NamespaceIndex>
+          <uax:Name>http://opcfoundation.org/UA/</uax:Name>
+        </uax:BrowseName>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=47</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=11616</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:NumericId>15182</uax:NumericId>
+        <NamespaceUri>
+          <uax:NodeClass>Variable_2</uax:NodeClass>
+          <uax:NodeId>
+            <uax:Identifier>i=15183</uax:Identifier>
+          </uax:NodeId>
+          <uax:BrowseName>
+            <uax:NamespaceIndex>0</uax:NamespaceIndex>
+            <uax:Name>NamespaceUri</uax:Name>
+          </uax:BrowseName>
+          <uax:Description>
+            <uax:Locale></uax:Locale>
+            <uax:Text>The URI of the namespace.</uax:Text>
+          </uax:Description>
+          <uax:ReferenceTypeId>
+            <uax:Identifier>i=46</uax:Identifier>
+          </uax:ReferenceTypeId>
+          <uax:TypeDefinitionId>
+            <uax:Identifier>i=68</uax:Identifier>
+          </uax:TypeDefinitionId>
+          <uax:NumericId>15183</uax:NumericId>
+          <uax:Value>
+            <uax:Value>
+              <uax:String>http://opcfoundation.org/UA/</uax:String>
+            </uax:Value>
+          </uax:Value>
+          <uax:DataType>
+            <uax:Identifier>i=12</uax:Identifier>
+          </uax:DataType>
+          <uax:ValueRank>-1</uax:ValueRank>
+          <uax:AccessLevel>1</uax:AccessLevel>
+          <uax:UserAccessLevel>1</uax:UserAccessLevel>
+        </NamespaceUri>
+        <NamespaceVersion>
+          <uax:NodeClass>Variable_2</uax:NodeClass>
+          <uax:NodeId>
+            <uax:Identifier>i=15184</uax:Identifier>
+          </uax:NodeId>
+          <uax:BrowseName>
+            <uax:NamespaceIndex>0</uax:NamespaceIndex>
+            <uax:Name>NamespaceVersion</uax:Name>
+          </uax:BrowseName>
+          <uax:Description>
+            <uax:Locale></uax:Locale>
+            <uax:Text>The human readable string representing version of the namespace.</uax:Text>
+          </uax:Description>
+          <uax:ReferenceTypeId>
+            <uax:Identifier>i=46</uax:Identifier>
+          </uax:ReferenceTypeId>
+          <uax:TypeDefinitionId>
+            <uax:Identifier>i=68</uax:Identifier>
+          </uax:TypeDefinitionId>
+          <uax:NumericId>15184</uax:NumericId>
+          <uax:Value>
+            <uax:Value>
+              <uax:String>1.03</uax:String>
+            </uax:Value>
+          </uax:Value>
+          <uax:DataType>
+            <uax:Identifier>i=12</uax:Identifier>
+          </uax:DataType>
+          <uax:ValueRank>-1</uax:ValueRank>
+          <uax:AccessLevel>1</uax:AccessLevel>
+          <uax:UserAccessLevel>1</uax:UserAccessLevel>
+        </NamespaceVersion>
+        <NamespacePublicationDate>
+          <uax:NodeClass>Variable_2</uax:NodeClass>
+          <uax:NodeId>
+            <uax:Identifier>i=15185</uax:Identifier>
+          </uax:NodeId>
+          <uax:BrowseName>
+            <uax:NamespaceIndex>0</uax:NamespaceIndex>
+            <uax:Name>NamespacePublicationDate</uax:Name>
+          </uax:BrowseName>
+          <uax:Description>
+            <uax:Locale></uax:Locale>
+            <uax:Text>The publication date for the namespace.</uax:Text>
+          </uax:Description>
+          <uax:ReferenceTypeId>
+            <uax:Identifier>i=46</uax:Identifier>
+          </uax:ReferenceTypeId>
+          <uax:TypeDefinitionId>
+            <uax:Identifier>i=68</uax:Identifier>
+          </uax:TypeDefinitionId>
+          <uax:NumericId>15185</uax:NumericId>
+          <uax:Value>
+            <uax:Value>
+              <uax:String>2016-04-15</uax:String>
+            </uax:Value>
+          </uax:Value>
+          <uax:DataType>
+            <uax:Identifier>i=13</uax:Identifier>
+          </uax:DataType>
+          <uax:ValueRank>-1</uax:ValueRank>
+          <uax:AccessLevel>1</uax:AccessLevel>
+          <uax:UserAccessLevel>1</uax:UserAccessLevel>
+        </NamespacePublicationDate>
+        <IsNamespaceSubset>
+          <uax:NodeClass>Variable_2</uax:NodeClass>
+          <uax:NodeId>
+            <uax:Identifier>i=15186</uax:Identifier>
+          </uax:NodeId>
+          <uax:BrowseName>
+            <uax:NamespaceIndex>0</uax:NamespaceIndex>
+            <uax:Name>IsNamespaceSubset</uax:Name>
+          </uax:BrowseName>
+          <uax:Description>
+            <uax:Locale></uax:Locale>
+            <uax:Text>If TRUE then the server only supports a subset of the namespace.</uax:Text>
+          </uax:Description>
+          <uax:ReferenceTypeId>
+            <uax:Identifier>i=46</uax:Identifier>
+          </uax:ReferenceTypeId>
+          <uax:TypeDefinitionId>
+            <uax:Identifier>i=68</uax:Identifier>
+          </uax:TypeDefinitionId>
+          <uax:NumericId>15186</uax:NumericId>
+          <uax:Value>
+            <uax:Value>
+              <uax:Boolean>false</uax:Boolean>
+            </uax:Value>
+          </uax:Value>
+          <uax:DataType>
+            <uax:Identifier>i=1</uax:Identifier>
+          </uax:DataType>
+          <uax:ValueRank>-1</uax:ValueRank>
+          <uax:AccessLevel>1</uax:AccessLevel>
+          <uax:UserAccessLevel>1</uax:UserAccessLevel>
+        </IsNamespaceSubset>
+        <StaticNodeIdTypes>
+          <uax:NodeClass>Variable_2</uax:NodeClass>
+          <uax:NodeId>
+            <uax:Identifier>i=15187</uax:Identifier>
+          </uax:NodeId>
+          <uax:BrowseName>
+            <uax:NamespaceIndex>0</uax:NamespaceIndex>
+            <uax:Name>StaticNodeIdTypes</uax:Name>
+          </uax:BrowseName>
+          <uax:Description>
+            <uax:Locale></uax:Locale>
+            <uax:Text>A list of IdTypes for nodes which are the same in every server that exposes them.</uax:Text>
+          </uax:Description>
+          <uax:ReferenceTypeId>
+            <uax:Identifier>i=46</uax:Identifier>
+          </uax:ReferenceTypeId>
+          <uax:TypeDefinitionId>
+            <uax:Identifier>i=68</uax:Identifier>
+          </uax:TypeDefinitionId>
+          <uax:NumericId>15187</uax:NumericId>
+          <uax:DataType>
+            <uax:Identifier>i=256</uax:Identifier>
+          </uax:DataType>
+          <uax:ValueRank>1</uax:ValueRank>
+          <uax:AccessLevel>1</uax:AccessLevel>
+          <uax:UserAccessLevel>1</uax:UserAccessLevel>
+        </StaticNodeIdTypes>
+        <StaticNumericNodeIdRange>
+          <uax:NodeClass>Variable_2</uax:NodeClass>
+          <uax:NodeId>
+            <uax:Identifier>i=15188</uax:Identifier>
+          </uax:NodeId>
+          <uax:BrowseName>
+            <uax:NamespaceIndex>0</uax:NamespaceIndex>
+            <uax:Name>StaticNumericNodeIdRange</uax:Name>
+          </uax:BrowseName>
+          <uax:Description>
+            <uax:Locale></uax:Locale>
+            <uax:Text>A list of ranges for numeric node ids which are the same in every server that exposes them.</uax:Text>
+          </uax:Description>
+          <uax:ReferenceTypeId>
+            <uax:Identifier>i=46</uax:Identifier>
+          </uax:ReferenceTypeId>
+          <uax:TypeDefinitionId>
+            <uax:Identifier>i=68</uax:Identifier>
+          </uax:TypeDefinitionId>
+          <uax:NumericId>15188</uax:NumericId>
+          <uax:DataType>
+            <uax:Identifier>i=291</uax:Identifier>
+          </uax:DataType>
+          <uax:ValueRank>1</uax:ValueRank>
+          <uax:AccessLevel>1</uax:AccessLevel>
+          <uax:UserAccessLevel>1</uax:UserAccessLevel>
+        </StaticNumericNodeIdRange>
+        <StaticStringNodeIdPattern>
+          <uax:NodeClass>Variable_2</uax:NodeClass>
+          <uax:NodeId>
+            <uax:Identifier>i=15189</uax:Identifier>
+          </uax:NodeId>
+          <uax:BrowseName>
+            <uax:NamespaceIndex>0</uax:NamespaceIndex>
+            <uax:Name>StaticStringNodeIdPattern</uax:Name>
+          </uax:BrowseName>
+          <uax:Description>
+            <uax:Locale></uax:Locale>
+            <uax:Text>A regular expression which matches string node ids are the same in every server that exposes them.</uax:Text>
+          </uax:Description>
+          <uax:ReferenceTypeId>
+            <uax:Identifier>i=46</uax:Identifier>
+          </uax:ReferenceTypeId>
+          <uax:TypeDefinitionId>
+            <uax:Identifier>i=68</uax:Identifier>
+          </uax:TypeDefinitionId>
+          <uax:NumericId>15189</uax:NumericId>
+          <uax:DataType>
+            <uax:Identifier>i=12</uax:Identifier>
+          </uax:DataType>
+          <uax:ValueRank>-1</uax:ValueRank>
+          <uax:AccessLevel>1</uax:AccessLevel>
+          <uax:UserAccessLevel>1</uax:UserAccessLevel>
+        </StaticStringNodeIdPattern>
+      </OPCUANamespaceUri>
     </Namespaces>
     <GetMonitoredItems>
       <uax:NodeClass>Method_4</uax:NodeClass>

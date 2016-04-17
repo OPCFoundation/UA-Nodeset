@@ -1945,6 +1945,36 @@ namespace Opc.Ua
         public const uint Server_RequestServerStateChange = 12886;
 
         /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Open Method.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Open = 15196;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Close Method.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Close = 15199;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Read Method.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Read = 15201;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Write Method.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Write = 15204;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_GetPosition Method.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceFile_GetPosition = 15206;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_SetPosition Method.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceFile_SetPosition = 15209;
+
+        /// <summary>
         /// The identifier for the ConditionType_Disable Method.
         /// </summary>
         public const uint ConditionType_Disable = 9028;
@@ -3133,6 +3163,11 @@ namespace Opc.Ua
         /// The identifier for the Server_Namespaces Object.
         /// </summary>
         public const uint Server_Namespaces = 11715;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri Object.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri = 15182;
 
         /// <summary>
         /// The identifier for the HistoryServerCapabilities Object.
@@ -10533,6 +10568,106 @@ namespace Opc.Ua
         /// The identifier for the Server_ServerRedundancy_ServerNetworkGroups Variable.
         /// </summary>
         public const uint Server_ServerRedundancy_ServerNetworkGroups = 14415;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceUri Variable.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceUri = 15183;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceVersion Variable.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceVersion = 15184;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespacePublicationDate Variable.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespacePublicationDate = 15185;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_IsNamespaceSubset Variable.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_IsNamespaceSubset = 15186;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_StaticNodeIdTypes Variable.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_StaticNodeIdTypes = 15187;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_StaticNumericNodeIdRange Variable.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_StaticNumericNodeIdRange = 15188;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_StaticStringNodeIdPattern Variable.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_StaticStringNodeIdPattern = 15189;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Size Variable.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Size = 15191;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Writable Variable.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Writable = 15192;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_UserWritable Variable.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceFile_UserWritable = 15193;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_OpenCount Variable.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceFile_OpenCount = 15194;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Open_InputArguments Variable.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Open_InputArguments = 15197;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Open_OutputArguments Variable.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Open_OutputArguments = 15198;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Close_InputArguments Variable.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Close_InputArguments = 15200;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Read_InputArguments Variable.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Read_InputArguments = 15202;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Read_OutputArguments Variable.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Read_OutputArguments = 15203;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Write_InputArguments Variable.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Write_InputArguments = 15205;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_GetPosition_InputArguments Variable.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceFile_GetPosition_InputArguments = 15207;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_GetPosition_OutputArguments Variable.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceFile_GetPosition_OutputArguments = 15208;
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_SetPosition_InputArguments Variable.
+        /// </summary>
+        public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceFile_SetPosition_InputArguments = 15210;
 
         /// <summary>
         /// The identifier for the HistoryServerCapabilities_AccessHistoryDataCapability Variable.
@@ -19000,6 +19135,36 @@ namespace Opc.Ua
         public static readonly NodeId Server_RequestServerStateChange = new NodeId(Opc.Ua.Methods.Server_RequestServerStateChange);
 
         /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Open Method.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Open = new NodeId(Opc.Ua.Methods.Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Open);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Close Method.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Close = new NodeId(Opc.Ua.Methods.Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Close);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Read Method.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Read = new NodeId(Opc.Ua.Methods.Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Read);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Write Method.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Write = new NodeId(Opc.Ua.Methods.Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Write);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_GetPosition Method.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceFile_GetPosition = new NodeId(Opc.Ua.Methods.Server_Namespaces_OPCUANamespaceUri_NamespaceFile_GetPosition);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_SetPosition Method.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceFile_SetPosition = new NodeId(Opc.Ua.Methods.Server_Namespaces_OPCUANamespaceUri_NamespaceFile_SetPosition);
+
+        /// <summary>
         /// The identifier for the ConditionType_Disable Method.
         /// </summary>
         public static readonly NodeId ConditionType_Disable = new NodeId(Opc.Ua.Methods.ConditionType_Disable);
@@ -20188,6 +20353,11 @@ namespace Opc.Ua
         /// The identifier for the Server_Namespaces Object.
         /// </summary>
         public static readonly NodeId Server_Namespaces = new NodeId(Opc.Ua.Objects.Server_Namespaces);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri Object.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri = new NodeId(Opc.Ua.Objects.Server_Namespaces_OPCUANamespaceUri);
 
         /// <summary>
         /// The identifier for the HistoryServerCapabilities Object.
@@ -27588,6 +27758,106 @@ namespace Opc.Ua
         /// The identifier for the Server_ServerRedundancy_ServerNetworkGroups Variable.
         /// </summary>
         public static readonly NodeId Server_ServerRedundancy_ServerNetworkGroups = new NodeId(Opc.Ua.Variables.Server_ServerRedundancy_ServerNetworkGroups);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceUri Variable.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceUri = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_NamespaceUri);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceVersion Variable.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceVersion = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_NamespaceVersion);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespacePublicationDate Variable.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespacePublicationDate = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_NamespacePublicationDate);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_IsNamespaceSubset Variable.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_IsNamespaceSubset = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_IsNamespaceSubset);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_StaticNodeIdTypes Variable.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_StaticNodeIdTypes = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_StaticNodeIdTypes);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_StaticNumericNodeIdRange Variable.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_StaticNumericNodeIdRange = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_StaticNumericNodeIdRange);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_StaticStringNodeIdPattern Variable.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_StaticStringNodeIdPattern = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_StaticStringNodeIdPattern);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Size Variable.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Size = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Size);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Writable Variable.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Writable = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Writable);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_UserWritable Variable.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceFile_UserWritable = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_NamespaceFile_UserWritable);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_OpenCount Variable.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceFile_OpenCount = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_NamespaceFile_OpenCount);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Open_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Open_InputArguments = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Open_InputArguments);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Open_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Open_OutputArguments = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Open_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Close_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Close_InputArguments = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Close_InputArguments);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Read_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Read_InputArguments = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Read_InputArguments);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Read_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Read_OutputArguments = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Read_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Write_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Write_InputArguments = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_NamespaceFile_Write_InputArguments);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_GetPosition_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceFile_GetPosition_InputArguments = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_NamespaceFile_GetPosition_InputArguments);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_GetPosition_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceFile_GetPosition_OutputArguments = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_NamespaceFile_GetPosition_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_SetPosition_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceFile_SetPosition_InputArguments = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_NamespaceFile_SetPosition_InputArguments);
 
         /// <summary>
         /// The identifier for the HistoryServerCapabilities_AccessHistoryDataCapability Variable.
