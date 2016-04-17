@@ -732,9 +732,9 @@ namespace Opc.Ua
         {
             m_fields = new FieldMetaDataCollection();
             m_namespaces = new StringCollection();
-            m_structuredTypes = new StructureDataTypeDescriptionCollection();
-            m_enumeratedTypes = new EnumDataTypeDescriptionCollection();
-            m_configurationGuid = Uuid.Empty;
+            m_dataSetClassId = Uuid.Empty;
+            m_structureDataTypes = new StructureDataTypeDescriptionCollection();
+            m_enumDataTypes = new EnumDataTypeDescriptionCollection();
             m_configurationVersion = new ConfigurationVersionDataType();
         }
         #endregion
@@ -785,57 +785,57 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the StructuredTypes field.
+        /// A description for the DataSetClassId field.
         /// </summary>
-        [DataMember(Name = "StructuredTypes", IsRequired = false, Order = 3)]
-        public StructureDataTypeDescriptionCollection StructuredTypes
+        [DataMember(Name = "DataSetClassId", IsRequired = false, Order = 3)]
+        public Uuid DataSetClassId
+        {
+            get { return m_dataSetClassId;  }
+            set { m_dataSetClassId = value; }
+        }
+
+        /// <summary>
+        /// A description for the StructureDataTypes field.
+        /// </summary>
+        [DataMember(Name = "StructureDataTypes", IsRequired = false, Order = 4)]
+        public StructureDataTypeDescriptionCollection StructureDataTypes
         {
             get
             {
-                return m_structuredTypes;
+                return m_structureDataTypes;
             }
 
             set
             {
-                m_structuredTypes = value;
+                m_structureDataTypes = value;
 
                 if (value == null)
                 {
-                    m_structuredTypes = new StructureDataTypeDescriptionCollection();
+                    m_structureDataTypes = new StructureDataTypeDescriptionCollection();
                 }
             }
         }
 
         /// <summary>
-        /// A description for the EnumeratedTypes field.
+        /// A description for the EnumDataTypes field.
         /// </summary>
-        [DataMember(Name = "EnumeratedTypes", IsRequired = false, Order = 4)]
-        public EnumDataTypeDescriptionCollection EnumeratedTypes
+        [DataMember(Name = "EnumDataTypes", IsRequired = false, Order = 5)]
+        public EnumDataTypeDescriptionCollection EnumDataTypes
         {
             get
             {
-                return m_enumeratedTypes;
+                return m_enumDataTypes;
             }
 
             set
             {
-                m_enumeratedTypes = value;
+                m_enumDataTypes = value;
 
                 if (value == null)
                 {
-                    m_enumeratedTypes = new EnumDataTypeDescriptionCollection();
+                    m_enumDataTypes = new EnumDataTypeDescriptionCollection();
                 }
             }
-        }
-
-        /// <summary>
-        /// A description for the ConfigurationGuid field.
-        /// </summary>
-        [DataMember(Name = "ConfigurationGuid", IsRequired = false, Order = 5)]
-        public Uuid ConfigurationGuid
-        {
-            get { return m_configurationGuid;  }
-            set { m_configurationGuid = value; }
         }
 
         /// <summary>
@@ -887,9 +887,9 @@ namespace Opc.Ua
 
             encoder.WriteEncodeableArray("Fields", Fields.ToArray(), typeof(FieldMetaData));
             encoder.WriteStringArray("Namespaces", Namespaces);
-            encoder.WriteEncodeableArray("StructuredTypes", StructuredTypes.ToArray(), typeof(StructureDataTypeDescription));
-            encoder.WriteEncodeableArray("EnumeratedTypes", EnumeratedTypes.ToArray(), typeof(EnumDataTypeDescription));
-            encoder.WriteGuid("ConfigurationGuid", ConfigurationGuid);
+            encoder.WriteGuid("DataSetClassId", DataSetClassId);
+            encoder.WriteEncodeableArray("StructureDataTypes", StructureDataTypes.ToArray(), typeof(StructureDataTypeDescription));
+            encoder.WriteEncodeableArray("EnumDataTypes", EnumDataTypes.ToArray(), typeof(EnumDataTypeDescription));
             encoder.WriteEncodeable("ConfigurationVersion", ConfigurationVersion, typeof(ConfigurationVersionDataType));
 
             encoder.PopNamespace();
@@ -902,9 +902,9 @@ namespace Opc.Ua
 
             Fields = (FieldMetaDataCollection)decoder.ReadEncodeableArray("Fields", typeof(FieldMetaData));
             Namespaces = decoder.ReadStringArray("Namespaces");
-            StructuredTypes = (StructureDataTypeDescriptionCollection)decoder.ReadEncodeableArray("StructuredTypes", typeof(StructureDataTypeDescription));
-            EnumeratedTypes = (EnumDataTypeDescriptionCollection)decoder.ReadEncodeableArray("EnumeratedTypes", typeof(EnumDataTypeDescription));
-            ConfigurationGuid = decoder.ReadGuid("ConfigurationGuid");
+            DataSetClassId = decoder.ReadGuid("DataSetClassId");
+            StructureDataTypes = (StructureDataTypeDescriptionCollection)decoder.ReadEncodeableArray("StructureDataTypes", typeof(StructureDataTypeDescription));
+            EnumDataTypes = (EnumDataTypeDescriptionCollection)decoder.ReadEncodeableArray("EnumDataTypes", typeof(EnumDataTypeDescription));
             ConfigurationVersion = (ConfigurationVersionDataType)decoder.ReadEncodeable("ConfigurationVersion", typeof(ConfigurationVersionDataType));
 
             decoder.PopNamespace();
@@ -927,9 +927,9 @@ namespace Opc.Ua
 
             if (!Utils.IsEqual(m_fields, value.m_fields)) return false;
             if (!Utils.IsEqual(m_namespaces, value.m_namespaces)) return false;
-            if (!Utils.IsEqual(m_structuredTypes, value.m_structuredTypes)) return false;
-            if (!Utils.IsEqual(m_enumeratedTypes, value.m_enumeratedTypes)) return false;
-            if (!Utils.IsEqual(m_configurationGuid, value.m_configurationGuid)) return false;
+            if (!Utils.IsEqual(m_dataSetClassId, value.m_dataSetClassId)) return false;
+            if (!Utils.IsEqual(m_structureDataTypes, value.m_structureDataTypes)) return false;
+            if (!Utils.IsEqual(m_enumDataTypes, value.m_enumDataTypes)) return false;
             if (!Utils.IsEqual(m_configurationVersion, value.m_configurationVersion)) return false;
 
             return true;
@@ -942,9 +942,9 @@ namespace Opc.Ua
 
             clone.m_fields = (FieldMetaDataCollection)Utils.Clone(this.m_fields);
             clone.m_namespaces = (StringCollection)Utils.Clone(this.m_namespaces);
-            clone.m_structuredTypes = (StructureDataTypeDescriptionCollection)Utils.Clone(this.m_structuredTypes);
-            clone.m_enumeratedTypes = (EnumDataTypeDescriptionCollection)Utils.Clone(this.m_enumeratedTypes);
-            clone.m_configurationGuid = (Uuid)Utils.Clone(this.m_configurationGuid);
+            clone.m_dataSetClassId = (Uuid)Utils.Clone(this.m_dataSetClassId);
+            clone.m_structureDataTypes = (StructureDataTypeDescriptionCollection)Utils.Clone(this.m_structureDataTypes);
+            clone.m_enumDataTypes = (EnumDataTypeDescriptionCollection)Utils.Clone(this.m_enumDataTypes);
             clone.m_configurationVersion = (ConfigurationVersionDataType)Utils.Clone(this.m_configurationVersion);
 
             return clone;
@@ -954,9 +954,9 @@ namespace Opc.Ua
         #region Private Fields
         private FieldMetaDataCollection m_fields;
         private StringCollection m_namespaces;
-        private StructureDataTypeDescriptionCollection m_structuredTypes;
-        private EnumDataTypeDescriptionCollection m_enumeratedTypes;
-        private Uuid m_configurationGuid;
+        private Uuid m_dataSetClassId;
+        private StructureDataTypeDescriptionCollection m_structureDataTypes;
+        private EnumDataTypeDescriptionCollection m_enumDataTypes;
         private ConfigurationVersionDataType m_configurationVersion;
         #endregion
     }
@@ -1070,10 +1070,12 @@ namespace Opc.Ua
         private void Initialize()
         {
             m_name = null;
+            m_promotedField = true;
             m_dataType = null;
             m_valueRank = (int)0;
             m_arrayDimensions = new UInt32Collection();
             m_dataSetFieldId = Uuid.Empty;
+            m_properties = new KeyValuePairCollection();
         }
         #endregion
 
@@ -1089,9 +1091,19 @@ namespace Opc.Ua
         }
 
         /// <summary>
+        /// A description for the PromotedField field.
+        /// </summary>
+        [DataMember(Name = "PromotedField", IsRequired = false, Order = 2)]
+        public bool PromotedField
+        {
+            get { return m_promotedField;  }
+            set { m_promotedField = value; }
+        }
+
+        /// <summary>
         /// A description for the DataType field.
         /// </summary>
-        [DataMember(Name = "DataType", IsRequired = false, Order = 2)]
+        [DataMember(Name = "DataType", IsRequired = false, Order = 3)]
         public NodeId DataType
         {
             get { return m_dataType;  }
@@ -1101,7 +1113,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the ValueRank field.
         /// </summary>
-        [DataMember(Name = "ValueRank", IsRequired = false, Order = 3)]
+        [DataMember(Name = "ValueRank", IsRequired = false, Order = 4)]
         public int ValueRank
         {
             get { return m_valueRank;  }
@@ -1111,7 +1123,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the ArrayDimensions field.
         /// </summary>
-        [DataMember(Name = "ArrayDimensions", IsRequired = false, Order = 4)]
+        [DataMember(Name = "ArrayDimensions", IsRequired = false, Order = 5)]
         public UInt32Collection ArrayDimensions
         {
             get
@@ -1133,11 +1145,33 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the DataSetFieldId field.
         /// </summary>
-        [DataMember(Name = "DataSetFieldId", IsRequired = false, Order = 5)]
+        [DataMember(Name = "DataSetFieldId", IsRequired = false, Order = 6)]
         public Uuid DataSetFieldId
         {
             get { return m_dataSetFieldId;  }
             set { m_dataSetFieldId = value; }
+        }
+
+        /// <summary>
+        /// A description for the Properties field.
+        /// </summary>
+        [DataMember(Name = "Properties", IsRequired = false, Order = 7)]
+        public KeyValuePairCollection Properties
+        {
+            get
+            {
+                return m_properties;
+            }
+
+            set
+            {
+                m_properties = value;
+
+                if (value == null)
+                {
+                    m_properties = new KeyValuePairCollection();
+                }
+            }
         }
         #endregion
 
@@ -1166,10 +1200,12 @@ namespace Opc.Ua
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             encoder.WriteString("Name", Name);
+            encoder.WriteBoolean("PromotedField", PromotedField);
             encoder.WriteNodeId("DataType", DataType);
             encoder.WriteInt32("ValueRank", ValueRank);
             encoder.WriteUInt32Array("ArrayDimensions", ArrayDimensions);
             encoder.WriteGuid("DataSetFieldId", DataSetFieldId);
+            encoder.WriteEncodeableArray("Properties", Properties.ToArray(), typeof(KeyValuePair));
 
             encoder.PopNamespace();
         }
@@ -1180,10 +1216,12 @@ namespace Opc.Ua
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             Name = decoder.ReadString("Name");
+            PromotedField = decoder.ReadBoolean("PromotedField");
             DataType = decoder.ReadNodeId("DataType");
             ValueRank = decoder.ReadInt32("ValueRank");
             ArrayDimensions = decoder.ReadUInt32Array("ArrayDimensions");
             DataSetFieldId = decoder.ReadGuid("DataSetFieldId");
+            Properties = (KeyValuePairCollection)decoder.ReadEncodeableArray("Properties", typeof(KeyValuePair));
 
             decoder.PopNamespace();
         }
@@ -1204,10 +1242,12 @@ namespace Opc.Ua
             }
 
             if (!Utils.IsEqual(m_name, value.m_name)) return false;
+            if (!Utils.IsEqual(m_promotedField, value.m_promotedField)) return false;
             if (!Utils.IsEqual(m_dataType, value.m_dataType)) return false;
             if (!Utils.IsEqual(m_valueRank, value.m_valueRank)) return false;
             if (!Utils.IsEqual(m_arrayDimensions, value.m_arrayDimensions)) return false;
             if (!Utils.IsEqual(m_dataSetFieldId, value.m_dataSetFieldId)) return false;
+            if (!Utils.IsEqual(m_properties, value.m_properties)) return false;
 
             return true;
         }
@@ -1218,10 +1258,12 @@ namespace Opc.Ua
             FieldMetaData clone = (FieldMetaData)this.MemberwiseClone();
 
             clone.m_name = (string)Utils.Clone(this.m_name);
+            clone.m_promotedField = (bool)Utils.Clone(this.m_promotedField);
             clone.m_dataType = (NodeId)Utils.Clone(this.m_dataType);
             clone.m_valueRank = (int)Utils.Clone(this.m_valueRank);
             clone.m_arrayDimensions = (UInt32Collection)Utils.Clone(this.m_arrayDimensions);
             clone.m_dataSetFieldId = (Uuid)Utils.Clone(this.m_dataSetFieldId);
+            clone.m_properties = (KeyValuePairCollection)Utils.Clone(this.m_properties);
 
             return clone;
         }
@@ -1229,10 +1271,12 @@ namespace Opc.Ua
 
         #region Private Fields
         private string m_name;
+        private bool m_promotedField;
         private NodeId m_dataType;
         private int m_valueRank;
         private UInt32Collection m_arrayDimensions;
         private Uuid m_dataSetFieldId;
+        private KeyValuePairCollection m_properties;
         #endregion
     }
 
@@ -1345,6 +1389,7 @@ namespace Opc.Ua
         private void Initialize()
         {
             m_dataTypeId = null;
+            m_name = null;
         }
         #endregion
 
@@ -1357,6 +1402,16 @@ namespace Opc.Ua
         {
             get { return m_dataTypeId;  }
             set { m_dataTypeId = value; }
+        }
+
+        /// <summary>
+        /// A description for the Name field.
+        /// </summary>
+        [DataMember(Name = "Name", IsRequired = false, Order = 2)]
+        public QualifiedName Name
+        {
+            get { return m_name;  }
+            set { m_name = value; }
         }
         #endregion
 
@@ -1385,6 +1440,7 @@ namespace Opc.Ua
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             encoder.WriteNodeId("DataTypeId", DataTypeId);
+            encoder.WriteQualifiedName("Name", Name);
 
             encoder.PopNamespace();
         }
@@ -1395,6 +1451,7 @@ namespace Opc.Ua
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             DataTypeId = decoder.ReadNodeId("DataTypeId");
+            Name = decoder.ReadQualifiedName("Name");
 
             decoder.PopNamespace();
         }
@@ -1415,6 +1472,7 @@ namespace Opc.Ua
             }
 
             if (!Utils.IsEqual(m_dataTypeId, value.m_dataTypeId)) return false;
+            if (!Utils.IsEqual(m_name, value.m_name)) return false;
 
             return true;
         }
@@ -1425,6 +1483,7 @@ namespace Opc.Ua
             DataTypeDescription clone = (DataTypeDescription)this.MemberwiseClone();
 
             clone.m_dataTypeId = (NodeId)Utils.Clone(this.m_dataTypeId);
+            clone.m_name = (QualifiedName)Utils.Clone(this.m_name);
 
             return clone;
         }
@@ -1432,6 +1491,7 @@ namespace Opc.Ua
 
         #region Private Fields
         private NodeId m_dataTypeId;
+        private QualifiedName m_name;
         #endregion
     }
 
@@ -1543,29 +1603,29 @@ namespace Opc.Ua
         /// </summary>
         private void Initialize()
         {
-            m_dataTypeDefinition = new StructureDefinition();
+            m_structureDefinition = new StructureDefinition();
         }
         #endregion
 
         #region Public Properties
         /// <summary>
-        /// A description for the DataTypeDefinition field.
+        /// A description for the StructureDefinition field.
         /// </summary>
-        [DataMember(Name = "DataTypeDefinition", IsRequired = false, Order = 1)]
-        public StructureDefinition DataTypeDefinition
+        [DataMember(Name = "StructureDefinition", IsRequired = false, Order = 1)]
+        public StructureDefinition StructureDefinition
         {
             get
             {
-                return m_dataTypeDefinition;
+                return m_structureDefinition;
             }
 
             set
             {
-                m_dataTypeDefinition = value;
+                m_structureDefinition = value;
 
                 if (value == null)
                 {
-                    m_dataTypeDefinition = new StructureDefinition();
+                    m_structureDefinition = new StructureDefinition();
                 }
             }
         }
@@ -1597,7 +1657,7 @@ namespace Opc.Ua
 
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
-            encoder.WriteEncodeable("DataTypeDefinition", DataTypeDefinition, typeof(StructureDefinition));
+            encoder.WriteEncodeable("StructureDefinition", StructureDefinition, typeof(StructureDefinition));
 
             encoder.PopNamespace();
         }
@@ -1609,7 +1669,7 @@ namespace Opc.Ua
 
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
-            DataTypeDefinition = (StructureDefinition)decoder.ReadEncodeable("DataTypeDefinition", typeof(StructureDefinition));
+            StructureDefinition = (StructureDefinition)decoder.ReadEncodeable("StructureDefinition", typeof(StructureDefinition));
 
             decoder.PopNamespace();
         }
@@ -1630,7 +1690,7 @@ namespace Opc.Ua
             }
 
             if (!base.IsEqual(encodeable)) return false;
-            if (!Utils.IsEqual(m_dataTypeDefinition, value.m_dataTypeDefinition)) return false;
+            if (!Utils.IsEqual(m_structureDefinition, value.m_structureDefinition)) return false;
 
             return true;
         }
@@ -1640,14 +1700,14 @@ namespace Opc.Ua
         {
             StructureDataTypeDescription clone = (StructureDataTypeDescription)base.Clone();
 
-            clone.m_dataTypeDefinition = (StructureDefinition)Utils.Clone(this.m_dataTypeDefinition);
+            clone.m_structureDefinition = (StructureDefinition)Utils.Clone(this.m_structureDefinition);
 
             return clone;
         }
         #endregion
 
         #region Private Fields
-        private StructureDefinition m_dataTypeDefinition;
+        private StructureDefinition m_structureDefinition;
         #endregion
     }
 
@@ -1759,29 +1819,29 @@ namespace Opc.Ua
         /// </summary>
         private void Initialize()
         {
-            m_dataTypeDefinition = new EnumDefinition();
+            m_enumDefinition = new EnumDefinition();
         }
         #endregion
 
         #region Public Properties
         /// <summary>
-        /// A description for the DataTypeDefinition field.
+        /// A description for the EnumDefinition field.
         /// </summary>
-        [DataMember(Name = "DataTypeDefinition", IsRequired = false, Order = 1)]
-        public EnumDefinition DataTypeDefinition
+        [DataMember(Name = "EnumDefinition", IsRequired = false, Order = 1)]
+        public EnumDefinition EnumDefinition
         {
             get
             {
-                return m_dataTypeDefinition;
+                return m_enumDefinition;
             }
 
             set
             {
-                m_dataTypeDefinition = value;
+                m_enumDefinition = value;
 
                 if (value == null)
                 {
-                    m_dataTypeDefinition = new EnumDefinition();
+                    m_enumDefinition = new EnumDefinition();
                 }
             }
         }
@@ -1813,7 +1873,7 @@ namespace Opc.Ua
 
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
-            encoder.WriteEncodeable("DataTypeDefinition", DataTypeDefinition, typeof(EnumDefinition));
+            encoder.WriteEncodeable("EnumDefinition", EnumDefinition, typeof(EnumDefinition));
 
             encoder.PopNamespace();
         }
@@ -1825,7 +1885,7 @@ namespace Opc.Ua
 
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
-            DataTypeDefinition = (EnumDefinition)decoder.ReadEncodeable("DataTypeDefinition", typeof(EnumDefinition));
+            EnumDefinition = (EnumDefinition)decoder.ReadEncodeable("EnumDefinition", typeof(EnumDefinition));
 
             decoder.PopNamespace();
         }
@@ -1846,7 +1906,7 @@ namespace Opc.Ua
             }
 
             if (!base.IsEqual(encodeable)) return false;
-            if (!Utils.IsEqual(m_dataTypeDefinition, value.m_dataTypeDefinition)) return false;
+            if (!Utils.IsEqual(m_enumDefinition, value.m_enumDefinition)) return false;
 
             return true;
         }
@@ -1856,14 +1916,14 @@ namespace Opc.Ua
         {
             EnumDataTypeDescription clone = (EnumDataTypeDescription)base.Clone();
 
-            clone.m_dataTypeDefinition = (EnumDefinition)Utils.Clone(this.m_dataTypeDefinition);
+            clone.m_enumDefinition = (EnumDefinition)Utils.Clone(this.m_enumDefinition);
 
             return clone;
         }
         #endregion
 
         #region Private Fields
-        private EnumDefinition m_dataTypeDefinition;
+        private EnumDefinition m_enumDefinition;
         #endregion
     }
 
@@ -1975,20 +2035,10 @@ namespace Opc.Ua
         /// </summary>
         private void Initialize()
         {
-            m_name = null;
         }
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Name field.
-        /// </summary>
-        [DataMember(Name = "Name", IsRequired = false, Order = 1)]
-        public QualifiedName Name
-        {
-            get { return m_name;  }
-            set { m_name = value; }
-        }
         #endregion
 
         #region IEncodeable Members
@@ -2015,7 +2065,6 @@ namespace Opc.Ua
         {
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
-            encoder.WriteQualifiedName("Name", Name);
 
             encoder.PopNamespace();
         }
@@ -2025,7 +2074,6 @@ namespace Opc.Ua
         {
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
-            Name = decoder.ReadQualifiedName("Name");
 
             decoder.PopNamespace();
         }
@@ -2045,7 +2093,6 @@ namespace Opc.Ua
                 return false;
             }
 
-            if (!Utils.IsEqual(m_name, value.m_name)) return false;
 
             return true;
         }
@@ -2055,14 +2102,12 @@ namespace Opc.Ua
         {
             DataTypeDefinition clone = (DataTypeDefinition)this.MemberwiseClone();
 
-            clone.m_name = (QualifiedName)Utils.Clone(this.m_name);
 
             return clone;
         }
         #endregion
 
         #region Private Fields
-        private QualifiedName m_name;
         #endregion
     }
 
@@ -2205,7 +2250,7 @@ namespace Opc.Ua
         /// </summary>
         private void Initialize()
         {
-            m_uaBinaryEncodingId = null;
+            m_defaultEncodingId = null;
             m_baseDataType = null;
             m_structureType = StructureType.Structure;
             m_fields = new StructureFieldCollection();
@@ -2214,13 +2259,13 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the UaBinaryEncodingId field.
+        /// A description for the DefaultEncodingId field.
         /// </summary>
-        [DataMember(Name = "UaBinaryEncodingId", IsRequired = false, Order = 1)]
-        public NodeId UaBinaryEncodingId
+        [DataMember(Name = "DefaultEncodingId", IsRequired = false, Order = 1)]
+        public NodeId DefaultEncodingId
         {
-            get { return m_uaBinaryEncodingId;  }
-            set { m_uaBinaryEncodingId = value; }
+            get { return m_defaultEncodingId;  }
+            set { m_defaultEncodingId = value; }
         }
 
         /// <summary>
@@ -2292,7 +2337,7 @@ namespace Opc.Ua
 
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
-            encoder.WriteNodeId("UaBinaryEncodingId", UaBinaryEncodingId);
+            encoder.WriteNodeId("DefaultEncodingId", DefaultEncodingId);
             encoder.WriteNodeId("BaseDataType", BaseDataType);
             encoder.WriteEnumerated("StructureType", StructureType);
             encoder.WriteEncodeableArray("Fields", Fields.ToArray(), typeof(StructureField));
@@ -2307,7 +2352,7 @@ namespace Opc.Ua
 
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
-            UaBinaryEncodingId = decoder.ReadNodeId("UaBinaryEncodingId");
+            DefaultEncodingId = decoder.ReadNodeId("DefaultEncodingId");
             BaseDataType = decoder.ReadNodeId("BaseDataType");
             StructureType = (StructureType)decoder.ReadEnumerated("StructureType", typeof(StructureType));
             Fields = (StructureFieldCollection)decoder.ReadEncodeableArray("Fields", typeof(StructureField));
@@ -2331,7 +2376,7 @@ namespace Opc.Ua
             }
 
             if (!base.IsEqual(encodeable)) return false;
-            if (!Utils.IsEqual(m_uaBinaryEncodingId, value.m_uaBinaryEncodingId)) return false;
+            if (!Utils.IsEqual(m_defaultEncodingId, value.m_defaultEncodingId)) return false;
             if (!Utils.IsEqual(m_baseDataType, value.m_baseDataType)) return false;
             if (!Utils.IsEqual(m_structureType, value.m_structureType)) return false;
             if (!Utils.IsEqual(m_fields, value.m_fields)) return false;
@@ -2344,7 +2389,7 @@ namespace Opc.Ua
         {
             StructureDefinition clone = (StructureDefinition)base.Clone();
 
-            clone.m_uaBinaryEncodingId = (NodeId)Utils.Clone(this.m_uaBinaryEncodingId);
+            clone.m_defaultEncodingId = (NodeId)Utils.Clone(this.m_defaultEncodingId);
             clone.m_baseDataType = (NodeId)Utils.Clone(this.m_baseDataType);
             clone.m_structureType = (StructureType)Utils.Clone(this.m_structureType);
             clone.m_fields = (StructureFieldCollection)Utils.Clone(this.m_fields);
@@ -2354,7 +2399,7 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
-        private NodeId m_uaBinaryEncodingId;
+        private NodeId m_defaultEncodingId;
         private NodeId m_baseDataType;
         private StructureType m_structureType;
         private StructureFieldCollection m_fields;
@@ -2949,8 +2994,6 @@ namespace Opc.Ua
         private void Initialize()
         {
             m_name = null;
-            m_description = null;
-            m_value = (int)0;
         }
         #endregion
 
@@ -2963,26 +3006,6 @@ namespace Opc.Ua
         {
             get { return m_name;  }
             set { m_name = value; }
-        }
-
-        /// <summary>
-        /// A description for the Description field.
-        /// </summary>
-        [DataMember(Name = "Description", IsRequired = false, Order = 2)]
-        public LocalizedText Description
-        {
-            get { return m_description;  }
-            set { m_description = value; }
-        }
-
-        /// <summary>
-        /// A description for the Value field.
-        /// </summary>
-        [DataMember(Name = "Value", IsRequired = false, Order = 3)]
-        public int Value
-        {
-            get { return m_value;  }
-            set { m_value = value; }
         }
         #endregion
 
@@ -3011,8 +3034,6 @@ namespace Opc.Ua
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             encoder.WriteString("Name", Name);
-            encoder.WriteLocalizedText("Description", Description);
-            encoder.WriteInt32("Value", Value);
 
             encoder.PopNamespace();
         }
@@ -3023,8 +3044,6 @@ namespace Opc.Ua
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             Name = decoder.ReadString("Name");
-            Description = decoder.ReadLocalizedText("Description");
-            Value = decoder.ReadInt32("Value");
 
             decoder.PopNamespace();
         }
@@ -3045,8 +3064,6 @@ namespace Opc.Ua
             }
 
             if (!Utils.IsEqual(m_name, value.m_name)) return false;
-            if (!Utils.IsEqual(m_description, value.m_description)) return false;
-            if (!Utils.IsEqual(m_value, value.m_value)) return false;
 
             return true;
         }
@@ -3057,8 +3074,6 @@ namespace Opc.Ua
             EnumField clone = (EnumField)this.MemberwiseClone();
 
             clone.m_name = (string)Utils.Clone(this.m_name);
-            clone.m_description = (LocalizedText)Utils.Clone(this.m_description);
-            clone.m_value = (int)Utils.Clone(this.m_value);
 
             return clone;
         }
@@ -3066,8 +3081,6 @@ namespace Opc.Ua
 
         #region Private Fields
         private string m_name;
-        private LocalizedText m_description;
-        private int m_value;
         #endregion
     }
 
@@ -3805,6 +3818,7 @@ namespace Opc.Ua
         /// </summary>
         private void Initialize()
         {
+            m_uniqueId = Uuid.Empty;
             m_majorVersion = (byte)0;
             m_minorVersion = (byte)0;
         }
@@ -3812,9 +3826,19 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
+        /// A description for the UniqueId field.
+        /// </summary>
+        [DataMember(Name = "UniqueId", IsRequired = false, Order = 1)]
+        public Uuid UniqueId
+        {
+            get { return m_uniqueId;  }
+            set { m_uniqueId = value; }
+        }
+
+        /// <summary>
         /// A description for the MajorVersion field.
         /// </summary>
-        [DataMember(Name = "MajorVersion", IsRequired = false, Order = 1)]
+        [DataMember(Name = "MajorVersion", IsRequired = false, Order = 2)]
         public byte MajorVersion
         {
             get { return m_majorVersion;  }
@@ -3824,7 +3848,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the MinorVersion field.
         /// </summary>
-        [DataMember(Name = "MinorVersion", IsRequired = false, Order = 2)]
+        [DataMember(Name = "MinorVersion", IsRequired = false, Order = 3)]
         public byte MinorVersion
         {
             get { return m_minorVersion;  }
@@ -3856,6 +3880,7 @@ namespace Opc.Ua
         {
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
+            encoder.WriteGuid("UniqueId", UniqueId);
             encoder.WriteByte("MajorVersion", MajorVersion);
             encoder.WriteByte("MinorVersion", MinorVersion);
 
@@ -3867,6 +3892,7 @@ namespace Opc.Ua
         {
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
+            UniqueId = decoder.ReadGuid("UniqueId");
             MajorVersion = decoder.ReadByte("MajorVersion");
             MinorVersion = decoder.ReadByte("MinorVersion");
 
@@ -3888,6 +3914,7 @@ namespace Opc.Ua
                 return false;
             }
 
+            if (!Utils.IsEqual(m_uniqueId, value.m_uniqueId)) return false;
             if (!Utils.IsEqual(m_majorVersion, value.m_majorVersion)) return false;
             if (!Utils.IsEqual(m_minorVersion, value.m_minorVersion)) return false;
 
@@ -3899,6 +3926,7 @@ namespace Opc.Ua
         {
             ConfigurationVersionDataType clone = (ConfigurationVersionDataType)this.MemberwiseClone();
 
+            clone.m_uniqueId = (Uuid)Utils.Clone(this.m_uniqueId);
             clone.m_majorVersion = (byte)Utils.Clone(this.m_majorVersion);
             clone.m_minorVersion = (byte)Utils.Clone(this.m_minorVersion);
 
@@ -3907,6 +3935,7 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
+        private Uuid m_uniqueId;
         private byte m_majorVersion;
         private byte m_minorVersion;
         #endregion
@@ -3977,116 +4006,6 @@ namespace Opc.Ua
             for (int ii = 0; ii < this.Count; ii++)
             {
                 clone.Add((ConfigurationVersionDataType)Utils.Clone(this[ii]));
-            }
-
-            return clone;
-        }
-        #endregion
-    }
-    #endregion
-    #endif
-    #endregion
-
-    #region PubSubState Enumeration
-    #if (!OPCUA_EXCLUDE_PubSubState)
-    /// <summary>
-    /// A description for the PubSubState DataType.
-    /// </summary>
-    /// <exclude />
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
-    public enum PubSubState
-    {
-        /// <summary>
-        /// A description for the NoConfiguration field.
-        /// </summary>
-        [EnumMember(Value = "NoConfiguration_0")]
-        NoConfiguration = 0,
-
-        /// <summary>
-        /// A description for the Disabled field.
-        /// </summary>
-        [EnumMember(Value = "Disabled_1")]
-        Disabled = 1,
-
-        /// <summary>
-        /// A description for the Operational field.
-        /// </summary>
-        [EnumMember(Value = "Operational_2")]
-        Operational = 2,
-
-        /// <summary>
-        /// A description for the Error field.
-        /// </summary>
-        [EnumMember(Value = "Error_3")]
-        Error = 3,
-    }
-
-    #region PubSubStateCollection Class
-    /// <summary>
-    /// A collection of PubSubState objects.
-    /// </summary>
-    /// <exclude />
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    [CollectionDataContract(Name = "ListOfPubSubState", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "PubSubState")]
-    public partial class PubSubStateCollection : List<PubSubState>, ICloneable
-    {
-        #region Constructors
-        /// <summary>
-        /// Initializes the collection with default values.
-        /// </summary>
-        public PubSubStateCollection() {}
-
-        /// <summary>
-        /// Initializes the collection with an initial capacity.
-        /// </summary>
-        public PubSubStateCollection(int capacity) : base(capacity) {}
-
-        /// <summary>
-        /// Initializes the collection with another collection.
-        /// </summary>
-        public PubSubStateCollection(IEnumerable<PubSubState> collection) : base(collection) {}
-        #endregion
-
-        #region Static Operators
-        /// <summary>
-        /// Converts an array to a collection.
-        /// </summary>
-        public static implicit operator PubSubStateCollection(PubSubState[] values)
-        {
-            if (values != null)
-            {
-                return new PubSubStateCollection(values);
-            }
-
-            return new PubSubStateCollection();
-        }
-
-        /// <summary>
-        /// Converts a collection to an array.
-        /// </summary>
-        public static explicit operator PubSubState[](PubSubStateCollection values)
-        {
-            if (values != null)
-            {
-                return values.ToArray();
-            }
-
-            return null;
-        }
-        #endregion
-
-        #region ICloneable Methods
-        /// <summary>
-        /// Creates a deep copy of the collection.
-        /// </summary>
-        public object Clone()
-        {
-            PubSubStateCollection clone = new PubSubStateCollection(this.Count);
-
-            for (int ii = 0; ii < this.Count; ii++)
-            {
-                clone.Add((PubSubState)Utils.Clone(this[ii]));
             }
 
             return clone;
@@ -4366,6 +4285,116 @@ namespace Opc.Ua
             for (int ii = 0; ii < this.Count; ii++)
             {
                 clone.Add((DataConnectionDataType)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+        #endregion
+    }
+    #endregion
+    #endif
+    #endregion
+
+    #region PubSubState Enumeration
+    #if (!OPCUA_EXCLUDE_PubSubState)
+    /// <summary>
+    /// A description for the PubSubState DataType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public enum PubSubState
+    {
+        /// <summary>
+        /// A description for the NoConfiguration field.
+        /// </summary>
+        [EnumMember(Value = "NoConfiguration_0")]
+        NoConfiguration = 0,
+
+        /// <summary>
+        /// A description for the Disabled field.
+        /// </summary>
+        [EnumMember(Value = "Disabled_1")]
+        Disabled = 1,
+
+        /// <summary>
+        /// A description for the Operational field.
+        /// </summary>
+        [EnumMember(Value = "Operational_2")]
+        Operational = 2,
+
+        /// <summary>
+        /// A description for the Error field.
+        /// </summary>
+        [EnumMember(Value = "Error_3")]
+        Error = 3,
+    }
+
+    #region PubSubStateCollection Class
+    /// <summary>
+    /// A collection of PubSubState objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfPubSubState", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "PubSubState")]
+    public partial class PubSubStateCollection : List<PubSubState>, ICloneable
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public PubSubStateCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public PubSubStateCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public PubSubStateCollection(IEnumerable<PubSubState> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator PubSubStateCollection(PubSubState[] values)
+        {
+            if (values != null)
+            {
+                return new PubSubStateCollection(values);
+            }
+
+            return new PubSubStateCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator PubSubState[](PubSubStateCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            PubSubStateCollection clone = new PubSubStateCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((PubSubState)Utils.Clone(this[ii]));
             }
 
             return clone;

@@ -49799,24 +49799,23 @@ namespace Opc.Ua
         private const string AddPublishedDataItems_InitializationString =
            "//////////8EYYIKBAAAAAAAFQAAAEFkZFB1Ymxpc2hlZERhdGFJdGVtcwEAnTgALwEAnTidOAAAAQH/" +
            "////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAJ44AC4ARJ44AACWBgAAAAEAKgEBEwAA" +
-           "AAQAAABOYW1lAAz/////AAAAAAABACoBAR4AAAANAAAATWF4QnVmZmVyVGltZQEAIgH/////AAAAAAAB" +
-           "ACoBASMAAAASAAAAUHVibGlzaGluZ0ludGVydmFsAQAiAf////8AAAAAAAEAKgEBIQAAABAAAABGcmFt" +
-           "ZUNvbnRlbnRNYXNrAQDqOP////8AAAAAAAEAKgEBHAAAAA0AAABLZXlGcmFtZUNvdW50AAf/////AAAA" +
-           "AAABACoBAR8AAAAOAAAAVmFyaWFibGVzVG9BZGQBAME3AQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAA" +
-           "FWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAJ84AC4ARJ84AACWBAAAAAEAKgEBGAAAAAkAAABE" +
-           "YXRhU2V0SWQAEf////8AAAAAAAEAKgEBKgAAABkAAABSZXZpc2VkUHVibGlzaGluZ0ludGVydmFsAQAi" +
-           "Af////8AAAAAAAEAKgEBIwAAABQAAABSZXZpc2VkS2V5RnJhbWVDb3VudAAH/////wAAAAAAAQAqAQEZ" +
-           "AAAACgAAAEFkZFJlc3VsdHMAEwEAAAAAAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
+           "AAQAAABOYW1lAAz/////AAAAAAABACoBASEAAAAQAAAARnJhbWVDb250ZW50TWFzawEA6jj/////AAAA" +
+           "AAABACoBARwAAAANAAAAS2V5RnJhbWVDb3VudAAH/////wAAAAAAAQAqAQEfAAAAEAAAAEZpZWxkTmFt" +
+           "ZUFsaWFzZXMADAEAAAAAAAAAAAEAKgEBHQAAAA4AAABQcm9tb3RlZEZpZWxkcwABAQAAAAAAAAAAAQAq" +
+           "AQEfAAAADgAAAFZhcmlhYmxlc1RvQWRkAQDBNwEAAAAAAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoC" +
+           "AAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQCfOAAuAESfOAAAlgMAAAABACoBARgAAAAJAAAARGF0YVNl" +
+           "dElkABH/////AAAAAAABACoBASMAAAAUAAAAUmV2aXNlZEtleUZyYW1lQ291bnQAB/////8AAAAAAAEA" +
+           "KgEBGQAAAAoAAABBZGRSZXN1bHRzABMBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAA=";
 
         private const string AddPublishedEvents_InitializationString =
            "//////////8EYYIKBAAAAAAAEgAAAEFkZFB1Ymxpc2hlZEV2ZW50cwEAoDgALwEAoDigOAAAAQH/////" +
-           "AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAKE4AC4ARKE4AACWBQAAAAEAKgEBEwAAAAQA" +
+           "AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAKE4AC4ARKE4AACWBgAAAAEAKgEBEwAAAAQA" +
            "AABOYW1lAAz/////AAAAAAABACoBARwAAAANAAAARXZlbnROb3RpZmllcgAR/////wAAAAAAAQAqAQEf" +
-           "AAAADgAAAFNlbGVjdGVkRmllbGRzAQBZAgEAAAAAAAAAAAEAKgEBFwAAAAYAAABGaWx0ZXIBAEoC////" +
-           "/wAAAAAAAQAqAQEeAAAADQAAAEtlZXBBbGl2ZVRpbWUBACIB/////wAAAAAAAQAoAQEAAAABAf////8A" +
-           "AAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAKI4AC4ARKI4AACWAgAAAAEAKgEBGAAAAAkA" +
-           "AABEYXRhU2V0SWQAEf////8AAAAAAAEAKgEBJQAAABQAAABSZXZpc2VkS2VlcEFsaXZlVGltZQEAIgH/" +
-           "////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
+           "AAAAEAAAAEZpZWxkTmFtZUFsaWFzZXMADAEAAAAAAAAAAAEAKgEBHQAAAA4AAABQcm9tb3RlZEZpZWxk" +
+           "cwABAQAAAAAAAAAAAQAqAQEfAAAADgAAAFNlbGVjdGVkRmllbGRzAQBZAgEAAAAAAAAAAAEAKgEBFwAA" +
+           "AAYAAABGaWx0ZXIBAEoC/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRw" +
+           "dXRBcmd1bWVudHMBAKI4AC4ARKI4AACWAQAAAAEAKgEBGAAAAAkAAABEYXRhU2V0SWQAEf////8AAAAA" +
+           "AAEAKAEBAAAAAQH/////AAAAAA==";
 
         private const string RemovePublishedDataSet_InitializationString =
            "//////////8EYYIKBAAAAAAAFgAAAFJlbW92ZVB1Ymxpc2hlZERhdGFTZXQBAKM4AC8BAKM4ozgAAAEB" +
@@ -49827,24 +49826,23 @@ namespace Opc.Ua
            "//////////8EYIAAAQAAAAAAGQAAAERhdGFTZXRGb2xkZXJUeXBlSW5zdGFuY2UBAI04AQCNOP////8D" +
            "AAAABGGCCgQAAAAAABUAAABBZGRQdWJsaXNoZWREYXRhSXRlbXMBAJ04AC8BAJ04nTgAAAEB/////wIA" +
            "AAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQCeOAAuAESeOAAAlgYAAAABACoBARMAAAAEAAAA" +
-           "TmFtZQAM/////wAAAAAAAQAqAQEeAAAADQAAAE1heEJ1ZmZlclRpbWUBACIB/////wAAAAAAAQAqAQEj" +
-           "AAAAEgAAAFB1Ymxpc2hpbmdJbnRlcnZhbAEAIgH/////AAAAAAABACoBASEAAAAQAAAARnJhbWVDb250" +
-           "ZW50TWFzawEA6jj/////AAAAAAABACoBARwAAAANAAAAS2V5RnJhbWVDb3VudAAH/////wAAAAAAAQAq" +
-           "AQEfAAAADgAAAFZhcmlhYmxlc1RvQWRkAQDBNwEAAAAAAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoC" +
-           "AAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQCfOAAuAESfOAAAlgQAAAABACoBARgAAAAJAAAARGF0YVNl" +
-           "dElkABH/////AAAAAAABACoBASoAAAAZAAAAUmV2aXNlZFB1Ymxpc2hpbmdJbnRlcnZhbAEAIgH/////" +
-           "AAAAAAABACoBASMAAAAUAAAAUmV2aXNlZEtleUZyYW1lQ291bnQAB/////8AAAAAAAEAKgEBGQAAAAoA" +
-           "AABBZGRSZXN1bHRzABMBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAAAEgAAAEFkZFB1" +
-           "Ymxpc2hlZEV2ZW50cwEAoDgALwEAoDigOAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1" +
-           "bWVudHMBAKE4AC4ARKE4AACWBQAAAAEAKgEBEwAAAAQAAABOYW1lAAz/////AAAAAAABACoBARwAAAAN" +
-           "AAAARXZlbnROb3RpZmllcgAR/////wAAAAAAAQAqAQEfAAAADgAAAFNlbGVjdGVkRmllbGRzAQBZAgEA" +
-           "AAAAAAAAAAEAKgEBFwAAAAYAAABGaWx0ZXIBAEoC/////wAAAAAAAQAqAQEeAAAADQAAAEtlZXBBbGl2" +
-           "ZVRpbWUBACIB/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1" +
-           "bWVudHMBAKI4AC4ARKI4AACWAgAAAAEAKgEBGAAAAAkAAABEYXRhU2V0SWQAEf////8AAAAAAAEAKgEB" +
-           "JQAAABQAAABSZXZpc2VkS2VlcEFsaXZlVGltZQEAIgH/////AAAAAAABACgBAQAAAAEB/////wAAAAAE" +
-           "YYIKBAAAAAAAFgAAAFJlbW92ZVB1Ymxpc2hlZERhdGFTZXQBAKM4AC8BAKM4ozgAAAEB/////wEAAAAV" +
-           "YKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQCkOAAuAESkOAAAlgEAAAABACoBARgAAAAJAAAARGF0" +
-           "YVNldElkABH/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
+           "TmFtZQAM/////wAAAAAAAQAqAQEhAAAAEAAAAEZyYW1lQ29udGVudE1hc2sBAOo4/////wAAAAAAAQAq" +
+           "AQEcAAAADQAAAEtleUZyYW1lQ291bnQAB/////8AAAAAAAEAKgEBHwAAABAAAABGaWVsZE5hbWVBbGlh" +
+           "c2VzAAwBAAAAAAAAAAABACoBAR0AAAAOAAAAUHJvbW90ZWRGaWVsZHMAAQEAAAAAAAAAAAEAKgEBHwAA" +
+           "AA4AAABWYXJpYWJsZXNUb0FkZAEAwTcBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAA" +
+           "DwAAAE91dHB1dEFyZ3VtZW50cwEAnzgALgBEnzgAAJYDAAAAAQAqAQEYAAAACQAAAERhdGFTZXRJZAAR" +
+           "/////wAAAAAAAQAqAQEjAAAAFAAAAFJldmlzZWRLZXlGcmFtZUNvdW50AAf/////AAAAAAABACoBARkA" +
+           "AAAKAAAAQWRkUmVzdWx0cwATAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAAAABIAAABB" +
+           "ZGRQdWJsaXNoZWRFdmVudHMBAKA4AC8BAKA4oDgAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0" +
+           "QXJndW1lbnRzAQChOAAuAEShOAAAlgYAAAABACoBARMAAAAEAAAATmFtZQAM/////wAAAAAAAQAqAQEc" +
+           "AAAADQAAAEV2ZW50Tm90aWZpZXIAEf////8AAAAAAAEAKgEBHwAAABAAAABGaWVsZE5hbWVBbGlhc2Vz" +
+           "AAwBAAAAAAAAAAABACoBAR0AAAAOAAAAUHJvbW90ZWRGaWVsZHMAAQEAAAAAAAAAAAEAKgEBHwAAAA4A" +
+           "AABTZWxlY3RlZEZpZWxkcwEAWQIBAAAAAAAAAAABACoBARcAAAAGAAAARmlsdGVyAQBKAv////8AAAAA" +
+           "AAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQCiOAAuAESiOAAA" +
+           "lgEAAAABACoBARgAAAAJAAAARGF0YVNldElkABH/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIK" +
+           "BAAAAAAAFgAAAFJlbW92ZVB1Ymxpc2hlZERhdGFTZXQBAKM4AC8BAKM4ozgAAAEB/////wEAAAAVYKkK" +
+           "AgAAAAAADgAAAElucHV0QXJndW1lbnRzAQCkOAAuAESkOAAAlgEAAAABACoBARgAAAAJAAAARGF0YVNl" +
+           "dElkABH/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -50091,14 +50089,13 @@ namespace Opc.Ua
         private const string InitializationString =
            "//////////8EYYIKBAAAAAAAHwAAAEFkZFB1Ymxpc2hlZERhdGFJdGVtc01ldGhvZFR5cGUBAKU4AC8B" +
            "AKU4pTgAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQCmOAAuAESmOAAAlgYA" +
-           "AAABACoBARMAAAAEAAAATmFtZQAM/////wAAAAAAAQAqAQEeAAAADQAAAE1heEJ1ZmZlclRpbWUBACIB" +
-           "/////wAAAAAAAQAqAQEjAAAAEgAAAFB1Ymxpc2hpbmdJbnRlcnZhbAEAIgH/////AAAAAAABACoBASEA" +
-           "AAAQAAAARnJhbWVDb250ZW50TWFzawEA6jj/////AAAAAAABACoBARwAAAANAAAAS2V5RnJhbWVDb3Vu" +
-           "dAAH/////wAAAAAAAQAqAQEfAAAADgAAAFZhcmlhYmxlc1RvQWRkAQDBNwEAAAAAAAAAAAEAKAEBAAAA" +
-           "AQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQCnOAAuAESnOAAAlgQAAAABACoB" +
-           "ARgAAAAJAAAARGF0YVNldElkABH/////AAAAAAABACoBASoAAAAZAAAAUmV2aXNlZFB1Ymxpc2hpbmdJ" +
-           "bnRlcnZhbAEAIgH/////AAAAAAABACoBASMAAAAUAAAAUmV2aXNlZEtleUZyYW1lQ291bnQAB/////8A" +
-           "AAAAAAEAKgEBGQAAAAoAAABBZGRSZXN1bHRzABMBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAA=";
+           "AAABACoBARMAAAAEAAAATmFtZQAM/////wAAAAAAAQAqAQEhAAAAEAAAAEZyYW1lQ29udGVudE1hc2sB" +
+           "AOo4/////wAAAAAAAQAqAQEcAAAADQAAAEtleUZyYW1lQ291bnQAB/////8AAAAAAAEAKgEBHwAAABAA" +
+           "AABGaWVsZE5hbWVBbGlhc2VzAAwBAAAAAAAAAAABACoBAR0AAAAOAAAAUHJvbW90ZWRGaWVsZHMAAQEA" +
+           "AAAAAAAAAAEAKgEBHwAAAA4AAABWYXJpYWJsZXNUb0FkZAEAwTcBAAAAAAAAAAABACgBAQAAAAEB////" +
+           "/wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEApzgALgBEpzgAAJYDAAAAAQAqAQEYAAAA" +
+           "CQAAAERhdGFTZXRJZAAR/////wAAAAAAAQAqAQEjAAAAFAAAAFJldmlzZWRLZXlGcmFtZUNvdW50AAf/" +
+           "////AAAAAAABACoBARkAAAAKAAAAQWRkUmVzdWx0cwATAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -50136,16 +50133,15 @@ namespace Opc.Ua
             ServiceResult result = null;
 
             string name = (string)inputArguments[0];
-            double maxBufferTime = (double)inputArguments[1];
-            double publishingInterval = (double)inputArguments[2];
-            DataValueContentMask frameContentMask = (DataValueContentMask)inputArguments[3];
-            uint keyFrameCount = (uint)inputArguments[4];
+            DataValueContentMask frameContentMask = (DataValueContentMask)inputArguments[1];
+            uint keyFrameCount = (uint)inputArguments[2];
+            string[] fieldNameAliases = (string[])inputArguments[3];
+            bool[] promotedFields = (bool[])inputArguments[4];
             PublishedVariableDataType[] variablesToAdd = (PublishedVariableDataType[])ExtensionObject.ToArray(inputArguments[5], typeof(PublishedVariableDataType));
 
             NodeId dataSetId = (NodeId)outputArguments[0];
-            double revisedPublishingInterval = (double)outputArguments[1];
-            uint revisedKeyFrameCount = (uint)outputArguments[2];
-            StatusCode[] addResults = (StatusCode[])outputArguments[3];
+            uint revisedKeyFrameCount = (uint)outputArguments[1];
+            StatusCode[] addResults = (StatusCode[])outputArguments[2];
 
             if (OnCall != null)
             {
@@ -50154,21 +50150,19 @@ namespace Opc.Ua
                     this,
                     objectId,
                     name,
-                    maxBufferTime,
-                    publishingInterval,
                     frameContentMask,
                     keyFrameCount,
+                    fieldNameAliases,
+                    promotedFields,
                     variablesToAdd,
                     ref dataSetId,
-                    ref revisedPublishingInterval,
                     ref revisedKeyFrameCount,
                     ref addResults);
             }
 
             outputArguments[0] = dataSetId;
-            outputArguments[1] = revisedPublishingInterval;
-            outputArguments[2] = revisedKeyFrameCount;
-            outputArguments[3] = addResults;
+            outputArguments[1] = revisedKeyFrameCount;
+            outputArguments[2] = addResults;
 
             return result;
         }
@@ -50187,13 +50181,12 @@ namespace Opc.Ua
         MethodState method,
         NodeId objectId,
         string name,
-        double maxBufferTime,
-        double publishingInterval,
         DataValueContentMask frameContentMask,
         uint keyFrameCount,
+        string[] fieldNameAliases,
+        bool[] promotedFields,
         PublishedVariableDataType[] variablesToAdd,
         ref NodeId dataSetId,
-        ref double revisedPublishingInterval,
         ref uint revisedKeyFrameCount,
         ref StatusCode[] addResults);
     #endif
@@ -50247,13 +50240,13 @@ namespace Opc.Ua
         #region Initialization String
         private const string InitializationString =
            "//////////8EYYIKBAAAAAAAHAAAAEFkZFB1Ymxpc2hlZEV2ZW50c01ldGhvZFR5cGUBAKg4AC8BAKg4" +
-           "qDgAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQCpOAAuAESpOAAAlgUAAAAB" +
+           "qDgAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQCpOAAuAESpOAAAlgYAAAAB" +
            "ACoBARMAAAAEAAAATmFtZQAM/////wAAAAAAAQAqAQEcAAAADQAAAEV2ZW50Tm90aWZpZXIAEf////8A" +
-           "AAAAAAEAKgEBHwAAAA4AAABTZWxlY3RlZEZpZWxkcwEAWQIBAAAAAAAAAAABACoBARcAAAAGAAAARmls" +
-           "dGVyAQBKAv////8AAAAAAAEAKgEBHgAAAA0AAABLZWVwQWxpdmVUaW1lAQAiAf////8AAAAAAAEAKAEB" +
-           "AAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQCqOAAuAESqOAAAlgIAAAAB" +
-           "ACoBARgAAAAJAAAARGF0YVNldElkABH/////AAAAAAABACoBASUAAAAUAAAAUmV2aXNlZEtlZXBBbGl2" +
-           "ZVRpbWUBACIB/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
+           "AAAAAAEAKgEBHwAAABAAAABGaWVsZE5hbWVBbGlhc2VzAAwBAAAAAAAAAAABACoBAR0AAAAOAAAAUHJv" +
+           "bW90ZWRGaWVsZHMAAQEAAAAAAAAAAAEAKgEBHwAAAA4AAABTZWxlY3RlZEZpZWxkcwEAWQIBAAAAAAAA" +
+           "AAABACoBARcAAAAGAAAARmlsdGVyAQBKAv////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAA" +
+           "AAAPAAAAT3V0cHV0QXJndW1lbnRzAQCqOAAuAESqOAAAlgEAAAABACoBARgAAAAJAAAARGF0YVNldElk" +
+           "ABH/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -50292,12 +50285,12 @@ namespace Opc.Ua
 
             string name = (string)inputArguments[0];
             NodeId eventNotifier = (NodeId)inputArguments[1];
-            SimpleAttributeOperand[] selectedFields = (SimpleAttributeOperand[])ExtensionObject.ToArray(inputArguments[2], typeof(SimpleAttributeOperand));
-            ContentFilter filter = (ContentFilter)ExtensionObject.ToEncodeable((ExtensionObject)inputArguments[3]);
-            double keepAliveTime = (double)inputArguments[4];
+            string[] fieldNameAliases = (string[])inputArguments[2];
+            bool[] promotedFields = (bool[])inputArguments[3];
+            SimpleAttributeOperand[] selectedFields = (SimpleAttributeOperand[])ExtensionObject.ToArray(inputArguments[4], typeof(SimpleAttributeOperand));
+            ContentFilter filter = (ContentFilter)ExtensionObject.ToEncodeable((ExtensionObject)inputArguments[5]);
 
             NodeId dataSetId = (NodeId)outputArguments[0];
-            double revisedKeepAliveTime = (double)outputArguments[1];
 
             if (OnCall != null)
             {
@@ -50307,15 +50300,14 @@ namespace Opc.Ua
                     objectId,
                     name,
                     eventNotifier,
+                    fieldNameAliases,
+                    promotedFields,
                     selectedFields,
                     filter,
-                    keepAliveTime,
-                    ref dataSetId,
-                    ref revisedKeepAliveTime);
+                    ref dataSetId);
             }
 
             outputArguments[0] = dataSetId;
-            outputArguments[1] = revisedKeepAliveTime;
 
             return result;
         }
@@ -50335,11 +50327,11 @@ namespace Opc.Ua
         NodeId objectId,
         string name,
         NodeId eventNotifier,
+        string[] fieldNameAliases,
+        bool[] promotedFields,
         SimpleAttributeOperand[] selectedFields,
         ContentFilter filter,
-        double keepAliveTime,
-        ref NodeId dataSetId,
-        ref double revisedKeepAliveTime);
+        ref NodeId dataSetId);
     #endif
     #endregion
 
@@ -50536,43 +50528,21 @@ namespace Opc.Ua
 
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAAHAAAAFB1Ymxpc2hlZERhdGFTZXRUeXBlSW5zdGFuY2UBAK04AQCtOP//" +
-           "//8GAAAAFWCJCgIAAAAAAA0AAABNYXhCdWZmZXJUaW1lAQC2OAAuAES2OAAAAQAiAf////8BAf////8A" +
-           "AAAAFWCJCgIAAAAAABQAAABDb25maWd1cmF0aW9uVmVyc2lvbgEAtzgALgBEtzgAAAEAATn/////AQH/" +
-           "////AAAAABVgiQoCAAAAAAAIAAAATWV0YURhdGEBALk4AC4ARLk4AAABALs4/////wEB/////wAAAAAE" +
-           "YIAKAQAAAAAADAAAAFN0YXRpY0ZpZWxkcwEAujgALwA6ujgAAP////8AAAAABGGCCgQAAAAAAA4AAABB" +
-           "ZGRTdGF0aWNGaWVsZAEAQzoALwEAQzpDOgAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1" +
-           "bWVudHMBAEQ6AC4AREQ6AACWAgAAAAEAKgEBGAAAAAkAAABGaWVsZE5hbWUAFP////8AAAAAAAEAKgEB" +
-           "GQAAAAoAAABGaWVsZFZhbHVlABT/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAA" +
-           "AE91dHB1dEFyZ3VtZW50cwEARToALgBERToAAJYBAAAAAQAqAQEWAAAABwAAAEZpZWxkSWQAEf////8A" +
-           "AAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAAARAAAAUmVtb3ZlU3RhdGljRmllbGQBAEY6AC8B" +
-           "AEY6RjoAAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQBHOgAuAERHOgAAlgEA" +
-           "AAABACoBARYAAAAHAAAARmllbGRJZAAR/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
+           "//8FAAAAFWCJCgIAAAAAABQAAABDb25maWd1cmF0aW9uVmVyc2lvbgEAtzgALgBEtzgAAAEAATn/////" +
+           "AQH/////AAAAABVgiQoCAAAAAAAIAAAATWV0YURhdGEBALk4AC4ARLk4AAABALs4/////wEB/////wAA" +
+           "AAAEYIAKAQAAAAAADAAAAFN0YXRpY0ZpZWxkcwEAujgALwA6ujgAAP////8AAAAABGGCCgQAAAAAAA4A" +
+           "AABBZGRTdGF0aWNGaWVsZAEAQzoALwEAQzpDOgAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRB" +
+           "cmd1bWVudHMBAEQ6AC4AREQ6AACWAgAAAAEAKgEBGAAAAAkAAABGaWVsZE5hbWUAFP////8AAAAAAAEA" +
+           "KgEBGQAAAAoAAABGaWVsZFZhbHVlABT/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAA" +
+           "DwAAAE91dHB1dEFyZ3VtZW50cwEARToALgBERToAAJYBAAAAAQAqAQEWAAAABwAAAEZpZWxkSWQAEf//" +
+           "//8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAAARAAAAUmVtb3ZlU3RhdGljRmllbGQBAEY6" +
+           "AC8BAEY6RjoAAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQBHOgAuAERHOgAA" +
+           "lgEAAAABACoBARYAAAAHAAAARmllbGRJZAAR/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the MaxBufferTime Property.
-        /// </summary>
-        public PropertyState<double> MaxBufferTime
-        {
-            get
-            {
-                return m_maxBufferTime;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_maxBufferTime, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_maxBufferTime = value;
-            }
-        }
-
         /// <summary>
         /// A description for the ConfigurationVersion Property.
         /// </summary>
@@ -50689,11 +50659,6 @@ namespace Opc.Ua
             ISystemContext context,
             IList<BaseInstanceState> children)
         {
-            if (m_maxBufferTime != null)
-            {
-                children.Add(m_maxBufferTime);
-            }
-
             if (m_configurationVersion != null)
             {
                 children.Add(m_configurationVersion);
@@ -50740,27 +50705,6 @@ namespace Opc.Ua
 
             switch (browseName.Name)
             {
-                case Opc.Ua.BrowseNames.MaxBufferTime:
-                {
-                    if (createOrReplace)
-                    {
-                        if (MaxBufferTime == null)
-                        {
-                            if (replacement == null)
-                            {
-                                MaxBufferTime = new PropertyState<double>(this);
-                            }
-                            else
-                            {
-                                MaxBufferTime = (PropertyState<double>)replacement;
-                            }
-                        }
-                    }
-
-                    instance = MaxBufferTime;
-                    break;
-                }
-
                 case Opc.Ua.BrowseNames.ConfigurationVersion:
                 {
                     if (createOrReplace)
@@ -50877,7 +50821,6 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
-        private PropertyState<double> m_maxBufferTime;
         private PropertyState<ConfigurationVersionDataType> m_configurationVersion;
         private PropertyState<DataSetMetaDataType> m_metaData;
         private BaseObjectState m_staticFields;
@@ -51175,11 +51118,6 @@ namespace Opc.Ua
         {
             base.InitializeOptionalChildren(context);
 
-            if (Modify != null)
-            {
-                Modify.Initialize(context, Modify_InitializationString);
-            }
-
             if (AddVariables != null)
             {
                 AddVariables.Initialize(context, AddVariables_InitializationString);
@@ -51192,22 +51130,14 @@ namespace Opc.Ua
         }
 
         #region Initialization String
-        private const string Modify_InitializationString =
-           "//////////8EYYIKBAAAAAAABgAAAE1vZGlmeQEA2DgALwEA2DjYOAAAAQH/////AgAAABVgqQoCAAAA" +
-           "AAAOAAAASW5wdXRBcmd1bWVudHMBANk4AC4ARNk4AACWBAAAAAEAKgEBHgAAAA0AAABNYXhCdWZmZXJU" +
-           "aW1lAQAiAf////8AAAAAAAEAKgEBIwAAABIAAABQdWJsaXNoaW5nSW50ZXJ2YWwBACIB/////wAAAAAA" +
-           "AQAqAQEhAAAAEAAAAEZyYW1lQ29udGVudE1hc2sBAOo4/////wAAAAAAAQAqAQEcAAAADQAAAEtleUZy" +
-           "YW1lQ291bnQAB/////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJn" +
-           "dW1lbnRzAQDaOAAuAETaOAAAlgIAAAABACoBASoAAAAZAAAAUmV2aXNlZFB1Ymxpc2hpbmdJbnRlcnZh" +
-           "bAEAIgH/////AAAAAAABACoBASMAAAAUAAAAUmV2aXNlZEtleUZyYW1lQ291bnQAB/////8AAAAAAAEA" +
-           "KAEBAAAAAQH/////AAAAAA==";
-
         private const string AddVariables_InitializationString =
            "//////////8EYYIKBAAAAAAADAAAAEFkZFZhcmlhYmxlcwEA2zgALwEA2zjbOAAAAQH/////AgAAABVg" +
-           "qQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBANw4AC4ARNw4AACWAQAAAAEAKgEBHwAAAA4AAABWYXJp" +
-           "YWJsZXNUb0FkZAEAwTcBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1" +
-           "dEFyZ3VtZW50cwEA3TgALgBE3TgAAJYBAAAAAQAqAQEZAAAACgAAAEFkZFJlc3VsdHMAEwEAAAAAAAAA" +
-           "AAEAKAEBAAAAAQH/////AAAAAA==";
+           "qQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBANw4AC4ARNw4AACWBAAAAAEAKgEBJQAAABQAAABDb25m" +
+           "aWd1cmF0aW9uVmVyc2lvbgEAATn/////AAAAAAABACoBAR8AAAAQAAAARmllbGROYW1lQWxpYXNlcwAM" +
+           "AQAAAAAAAAAAAQAqAQEdAAAADgAAAFByb21vdGVkRmllbGRzAAEBAAAAAAAAAAABACoBAR8AAAAOAAAA" +
+           "VmFyaWFibGVzVG9BZGQBAME3AQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABP" +
+           "dXRwdXRBcmd1bWVudHMBAN04AC4ARN04AACWAQAAAAEAKgEBGQAAAAoAAABBZGRSZXN1bHRzABMBAAAA" +
+           "AAAAAAABACgBAQAAAAEB/////wAAAAA=";
 
         private const string RemoveVariables_InitializationString =
            "//////////8EYYIKBAAAAAAADwAAAFJlbW92ZVZhcmlhYmxlcwEA3jgALwEA3jjeOAAAAQH/////AgAA" +
@@ -51219,30 +51149,23 @@ namespace Opc.Ua
 
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAAHgAAAFB1Ymxpc2hlZERhdGFJdGVtc1R5cGVJbnN0YW5jZQEAxjgBAMY4" +
-           "/////woAAAAVYIkKAgAAAAAADQAAAE1heEJ1ZmZlclRpbWUBAM84AC4ARM84AAABACIB/////wEB////" +
-           "/wAAAAAVYIkKAgAAAAAAFAAAAENvbmZpZ3VyYXRpb25WZXJzaW9uAQDQOAAuAETQOAAAAQABOf////8B" +
-           "Af////8AAAAAFWCJCgIAAAAAAAgAAABNZXRhRGF0YQEA0jgALgBE0jgAAAEAuzj/////AQH/////AAAA" +
-           "ABVgiQoCAAAAAAANAAAAUHVibGlzaGVkRGF0YQEA1DgALgBE1DgAAAEAwTcBAAAAAQH/////AAAAABVg" +
-           "iQoCAAAAAAASAAAAUHVibGlzaGluZ0ludGVydmFsAQDVOAAuAETVOAAAAQAiAf////8BAf////8AAAAA" +
-           "FWCJCgIAAAAAABAAAABGcmFtZUNvbnRlbnRNYXNrAQDWOAAuAETWOAAAAQDqOP////8BAf////8AAAAA" +
-           "FWCJCgIAAAAAAA0AAABLZXlGcmFtZUNvdW50AQDXOAAuAETXOAAAAAf/////AQH/////AAAAAARhggoE" +
-           "AAAAAAAGAAAATW9kaWZ5AQDYOAAvAQDYONg4AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFy" +
-           "Z3VtZW50cwEA2TgALgBE2TgAAJYEAAAAAQAqAQEeAAAADQAAAE1heEJ1ZmZlclRpbWUBACIB/////wAA" +
-           "AAAAAQAqAQEjAAAAEgAAAFB1Ymxpc2hpbmdJbnRlcnZhbAEAIgH/////AAAAAAABACoBASEAAAAQAAAA" +
-           "RnJhbWVDb250ZW50TWFzawEA6jj/////AAAAAAABACoBARwAAAANAAAAS2V5RnJhbWVDb3VudAAH////" +
-           "/wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBANo4AC4A" +
-           "RNo4AACWAgAAAAEAKgEBKgAAABkAAABSZXZpc2VkUHVibGlzaGluZ0ludGVydmFsAQAiAf////8AAAAA" +
-           "AAEAKgEBIwAAABQAAABSZXZpc2VkS2V5RnJhbWVDb3VudAAH/////wAAAAAAAQAoAQEAAAABAf////8A" +
-           "AAAABGGCCgQAAAAAAAwAAABBZGRWYXJpYWJsZXMBANs4AC8BANs42zgAAAEB/////wIAAAAVYKkKAgAA" +
-           "AAAADgAAAElucHV0QXJndW1lbnRzAQDcOAAuAETcOAAAlgEAAAABACoBAR8AAAAOAAAAVmFyaWFibGVz" +
-           "VG9BZGQBAME3AQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1" +
-           "bWVudHMBAN04AC4ARN04AACWAQAAAAEAKgEBGQAAAAoAAABBZGRSZXN1bHRzABMBAAAAAAAAAAABACgB" +
-           "AQAAAAEB/////wAAAAAEYYIKBAAAAAAADwAAAFJlbW92ZVZhcmlhYmxlcwEA3jgALwEA3jjeOAAAAQH/" +
-           "////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAN84AC4ARN84AACWAgAAAAEAKgEBJQAA" +
-           "ABQAAABDb25maWd1cmF0aW9uVmVyc2lvbgEAATn/////AAAAAAABACoBASAAAAARAAAAVmFyaWFibGVz" +
-           "VG9SZW1vdmUABwEAAAAAAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJn" +
-           "dW1lbnRzAQDgOAAuAETgOAAAlgEAAAABACoBARwAAAANAAAAUmVtb3ZlUmVzdWx0cwATAQAAAAAAAAAA" +
-           "AQAoAQEAAAABAf////8AAAAA";
+           "/////wcAAAAVYIkKAgAAAAAAFAAAAENvbmZpZ3VyYXRpb25WZXJzaW9uAQDQOAAuAETQOAAAAQABOf//" +
+           "//8BAf////8AAAAAFWCJCgIAAAAAAAgAAABNZXRhRGF0YQEA0jgALgBE0jgAAAEAuzj/////AQH/////" +
+           "AAAAABVgiQoCAAAAAAANAAAAUHVibGlzaGVkRGF0YQEA1DgALgBE1DgAAAEAwTcBAAAAAQH/////AAAA" +
+           "ABVgiQoCAAAAAAAQAAAARnJhbWVDb250ZW50TWFzawEA1jgALgBE1jgAAAEA6jj/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAANAAAAS2V5RnJhbWVDb3VudAEA1zgALgBE1zgAAAAH/////wEB/////wAAAAAEYYIK" +
+           "BAAAAAAADAAAAEFkZFZhcmlhYmxlcwEA2zgALwEA2zjbOAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAA" +
+           "SW5wdXRBcmd1bWVudHMBANw4AC4ARNw4AACWBAAAAAEAKgEBJQAAABQAAABDb25maWd1cmF0aW9uVmVy" +
+           "c2lvbgEAATn/////AAAAAAABACoBAR8AAAAQAAAARmllbGROYW1lQWxpYXNlcwAMAQAAAAAAAAAAAQAq" +
+           "AQEdAAAADgAAAFByb21vdGVkRmllbGRzAAEBAAAAAAAAAAABACoBAR8AAAAOAAAAVmFyaWFibGVzVG9B" +
+           "ZGQBAME3AQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVu" +
+           "dHMBAN04AC4ARN04AACWAQAAAAEAKgEBGQAAAAoAAABBZGRSZXN1bHRzABMBAAAAAAAAAAABACgBAQAA" +
+           "AAEB/////wAAAAAEYYIKBAAAAAAADwAAAFJlbW92ZVZhcmlhYmxlcwEA3jgALwEA3jjeOAAAAQH/////" +
+           "AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAN84AC4ARN84AACWAgAAAAEAKgEBJQAAABQA" +
+           "AABDb25maWd1cmF0aW9uVmVyc2lvbgEAATn/////AAAAAAABACoBASAAAAARAAAAVmFyaWFibGVzVG9S" +
+           "ZW1vdmUABwEAAAAAAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1l" +
+           "bnRzAQDgOAAuAETgOAAAlgEAAAABACoBARwAAAANAAAAUmVtb3ZlUmVzdWx0cwATAQAAAAAAAAAAAQAo" +
+           "AQEAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -51266,27 +51189,6 @@ namespace Opc.Ua
                 }
 
                 m_publishedData = value;
-            }
-        }
-
-        /// <summary>
-        /// A description for the PublishingInterval Property.
-        /// </summary>
-        public PropertyState<double> PublishingInterval
-        {
-            get
-            {
-                return m_publishingInterval;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_publishingInterval, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_publishingInterval = value;
             }
         }
 
@@ -51329,27 +51231,6 @@ namespace Opc.Ua
                 }
 
                 m_keyFrameCount = value;
-            }
-        }
-
-        /// <summary>
-        /// A description for the PublishedDataItemsModifyMethodType Method.
-        /// </summary>
-        public PublishedDataItemsModifyMethodState Modify
-        {
-            get
-            {
-                return m_modifyMethod;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_modifyMethod, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_modifyMethod = value;
             }
         }
 
@@ -51411,11 +51292,6 @@ namespace Opc.Ua
                 children.Add(m_publishedData);
             }
 
-            if (m_publishingInterval != null)
-            {
-                children.Add(m_publishingInterval);
-            }
-
             if (m_frameContentMask != null)
             {
                 children.Add(m_frameContentMask);
@@ -51424,11 +51300,6 @@ namespace Opc.Ua
             if (m_keyFrameCount != null)
             {
                 children.Add(m_keyFrameCount);
-            }
-
-            if (m_modifyMethod != null)
-            {
-                children.Add(m_modifyMethod);
             }
 
             if (m_addVariablesMethod != null)
@@ -51483,27 +51354,6 @@ namespace Opc.Ua
                     break;
                 }
 
-                case Opc.Ua.BrowseNames.PublishingInterval:
-                {
-                    if (createOrReplace)
-                    {
-                        if (PublishingInterval == null)
-                        {
-                            if (replacement == null)
-                            {
-                                PublishingInterval = new PropertyState<double>(this);
-                            }
-                            else
-                            {
-                                PublishingInterval = (PropertyState<double>)replacement;
-                            }
-                        }
-                    }
-
-                    instance = PublishingInterval;
-                    break;
-                }
-
                 case Opc.Ua.BrowseNames.FrameContentMask:
                 {
                     if (createOrReplace)
@@ -51543,27 +51393,6 @@ namespace Opc.Ua
                     }
 
                     instance = KeyFrameCount;
-                    break;
-                }
-
-                case Opc.Ua.BrowseNames.Modify:
-                {
-                    if (createOrReplace)
-                    {
-                        if (Modify == null)
-                        {
-                            if (replacement == null)
-                            {
-                                Modify = new PublishedDataItemsModifyMethodState(this);
-                            }
-                            else
-                            {
-                                Modify = (PublishedDataItemsModifyMethodState)replacement;
-                            }
-                        }
-                    }
-
-                    instance = Modify;
                     break;
                 }
 
@@ -51621,155 +51450,12 @@ namespace Opc.Ua
 
         #region Private Fields
         private PropertyState<PublishedVariableDataType[]> m_publishedData;
-        private PropertyState<double> m_publishingInterval;
         private PropertyState<DataValueContentMask> m_frameContentMask;
         private PropertyState<uint> m_keyFrameCount;
-        private PublishedDataItemsModifyMethodState m_modifyMethod;
         private PublishedDataItemsAddVariablesMethodState m_addVariablesMethod;
         private PublishedDataItemsRemoveVariablesMethodState m_removeVariablesMethod;
         #endregion
     }
-    #endif
-    #endregion
-
-    #region PublishedDataItemsModifyMethodState Class
-    #if (!OPCUA_EXCLUDE_PublishedDataItemsModifyMethodState)
-    /// <summary>
-    /// Stores an instance of the PublishedDataItemsModifyMethodType Method.
-    /// </summary>
-    /// <exclude />
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public partial class PublishedDataItemsModifyMethodState : MethodState
-    {
-        #region Constructors
-        /// <summary>
-        /// Initializes the type with its default attribute values.
-        /// </summary>
-        public PublishedDataItemsModifyMethodState(NodeState parent) : base(parent)
-        {
-        }
-
-        /// <summary>
-        /// Constructs an instance of a node.
-        /// </summary>
-        /// <param name="parent">The parent.</param>
-        /// <returns>The new node.</returns>
-        public new static NodeState Construct(NodeState parent)
-        {
-            return new PublishedDataItemsModifyMethodState(parent);
-        }
-
-        #if (!OPCUA_EXCLUDE_InitializationStrings)
-        /// <summary>
-        /// Initializes the instance.
-        /// </summary>
-        protected override void Initialize(ISystemContext context)
-        {
-            Initialize(context, InitializationString);
-            InitializeOptionalChildren(context);
-        }
-
-        /// <summary>
-        /// Initializes the any option children defined for the instance.
-        /// </summary>
-        protected override void InitializeOptionalChildren(ISystemContext context)
-        {
-            base.InitializeOptionalChildren(context);
-        }
-
-        #region Initialization String
-        private const string InitializationString =
-           "//////////8EYYIKBAAAAAAAIgAAAFB1Ymxpc2hlZERhdGFJdGVtc01vZGlmeU1ldGhvZFR5cGUBAOE4" +
-           "AC8BAOE44TgAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQDiOAAuAETiOAAA" +
-           "lgQAAAABACoBAR4AAAANAAAATWF4QnVmZmVyVGltZQEAIgH/////AAAAAAABACoBASMAAAASAAAAUHVi" +
-           "bGlzaGluZ0ludGVydmFsAQAiAf////8AAAAAAAEAKgEBIQAAABAAAABGcmFtZUNvbnRlbnRNYXNrAQDq" +
-           "OP////8AAAAAAAEAKgEBHAAAAA0AAABLZXlGcmFtZUNvdW50AAf/////AAAAAAABACgBAQAAAAEB////" +
-           "/wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEA4zgALgBE4zgAAJYCAAAAAQAqAQEqAAAA" +
-           "GQAAAFJldmlzZWRQdWJsaXNoaW5nSW50ZXJ2YWwBACIB/////wAAAAAAAQAqAQEjAAAAFAAAAFJldmlz" +
-           "ZWRLZXlGcmFtZUNvdW50AAf/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
-        #endregion
-        #endif
-        #endregion
-
-        #region Event Callbacks
-        /// <summary>
-        /// Raised when the the method is called.
-        /// </summary>
-        public PublishedDataItemsModifyMethodStateMethodCallHandler OnCall;
-        #endregion
-
-        #region Public Properties
-        #endregion
-
-        #region Overridden Methods
-        /// <summary>
-        /// Invokes the method, returns the result and output argument.
-        /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
-        protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
-        {
-            if (OnCall == null)
-            {
-                return base.Call(context, objectId, inputArguments, outputArguments);
-            }
-
-            ServiceResult result = null;
-
-            double maxBufferTime = (double)inputArguments[0];
-            double publishingInterval = (double)inputArguments[1];
-            DataValueContentMask frameContentMask = (DataValueContentMask)inputArguments[2];
-            uint keyFrameCount = (uint)inputArguments[3];
-
-            double revisedPublishingInterval = (double)outputArguments[0];
-            uint revisedKeyFrameCount = (uint)outputArguments[1];
-
-            if (OnCall != null)
-            {
-                result = OnCall(
-                    context,
-                    this,
-                    objectId,
-                    maxBufferTime,
-                    publishingInterval,
-                    frameContentMask,
-                    keyFrameCount,
-                    ref revisedPublishingInterval,
-                    ref revisedKeyFrameCount);
-            }
-
-            outputArguments[0] = revisedPublishingInterval;
-            outputArguments[1] = revisedKeyFrameCount;
-
-            return result;
-        }
-        #endregion
-
-        #region Private Fields
-        #endregion
-    }
-
-    /// <summary>
-    /// Used to receive notifications when the method is called.
-    /// </summary>
-    /// <exclude />
-    public delegate ServiceResult PublishedDataItemsModifyMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
-        double maxBufferTime,
-        double publishingInterval,
-        DataValueContentMask frameContentMask,
-        uint keyFrameCount,
-        ref double revisedPublishingInterval,
-        ref uint revisedKeyFrameCount);
     #endif
     #endregion
 
@@ -51822,9 +51508,11 @@ namespace Opc.Ua
         private const string InitializationString =
            "//////////8EYYIKBAAAAAAAKAAAAFB1Ymxpc2hlZERhdGFJdGVtc0FkZFZhcmlhYmxlc01ldGhvZFR5" +
            "cGUBAOQ4AC8BAOQ45DgAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQDlOAAu" +
-           "AETlOAAAlgEAAAABACoBAR8AAAAOAAAAVmFyaWFibGVzVG9BZGQBAME3AQAAAAAAAAAAAQAoAQEAAAAB" +
-           "Af////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAOY4AC4AROY4AACWAQAAAAEAKgEB" +
-           "GQAAAAoAAABBZGRSZXN1bHRzABMBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAA=";
+           "AETlOAAAlgQAAAABACoBASUAAAAUAAAAQ29uZmlndXJhdGlvblZlcnNpb24BAAE5/////wAAAAAAAQAq" +
+           "AQEfAAAAEAAAAEZpZWxkTmFtZUFsaWFzZXMADAEAAAAAAAAAAAEAKgEBHQAAAA4AAABQcm9tb3RlZEZp" +
+           "ZWxkcwABAQAAAAAAAAAAAQAqAQEfAAAADgAAAFZhcmlhYmxlc1RvQWRkAQDBNwEAAAAAAAAAAAEAKAEB" +
+           "AAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQDmOAAuAETmOAAAlgEAAAAB" +
+           "ACoBARkAAAAKAAAAQWRkUmVzdWx0cwATAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -51861,7 +51549,10 @@ namespace Opc.Ua
 
             ServiceResult result = null;
 
-            PublishedVariableDataType[] variablesToAdd = (PublishedVariableDataType[])ExtensionObject.ToArray(inputArguments[0], typeof(PublishedVariableDataType));
+            ConfigurationVersionDataType configurationVersion = (ConfigurationVersionDataType)ExtensionObject.ToEncodeable((ExtensionObject)inputArguments[0]);
+            string[] fieldNameAliases = (string[])inputArguments[1];
+            bool[] promotedFields = (bool[])inputArguments[2];
+            PublishedVariableDataType[] variablesToAdd = (PublishedVariableDataType[])ExtensionObject.ToArray(inputArguments[3], typeof(PublishedVariableDataType));
 
             StatusCode[] addResults = (StatusCode[])outputArguments[0];
 
@@ -51871,6 +51562,9 @@ namespace Opc.Ua
                     context,
                     this,
                     objectId,
+                    configurationVersion,
+                    fieldNameAliases,
+                    promotedFields,
                     variablesToAdd,
                     ref addResults);
             }
@@ -51893,6 +51587,9 @@ namespace Opc.Ua
         ISystemContext context,
         MethodState method,
         NodeId objectId,
+        ConfigurationVersionDataType configurationVersion,
+        string[] fieldNameAliases,
+        bool[] promotedFields,
         PublishedVariableDataType[] variablesToAdd,
         ref StatusCode[] addResults);
     #endif
@@ -52069,32 +51766,31 @@ namespace Opc.Ua
         {
             base.InitializeOptionalChildren(context);
 
-            if (Modify != null)
+            if (ModifyFieldSelection != null)
             {
-                Modify.Initialize(context, Modify_InitializationString);
+                ModifyFieldSelection.Initialize(context, ModifyFieldSelection_InitializationString);
             }
         }
 
         #region Initialization String
-        private const string Modify_InitializationString =
-           "//////////8EYYIKBAAAAAAABgAAAE1vZGlmeQEA/TgALwEA/Tj9OAAAAQH/////AQAAABVgqQoCAAAA" +
-           "AAAOAAAASW5wdXRBcmd1bWVudHMBAP44AC4ARP44AACWAwAAAAEAKgEBHAAAAA0AAABFdmVudE5vdGlm" +
-           "aWVyABH/////AAAAAAABACoBAR8AAAAOAAAAU2VsZWN0ZWRGaWVsZHMBAFkCAQAAAAAAAAAAAQAqAQEX" +
-           "AAAABgAAAEZpbHRlcgEASgL/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
+        private const string ModifyFieldSelection_InitializationString =
+           "//////////8EYYIKBAAAAAAAFAAAAE1vZGlmeUZpZWxkU2VsZWN0aW9uAQDMOgAvAQDMOsw6AAABAf//" +
+           "//8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAzToALgBEzToAAJYDAAAAAQAqAQEfAAAA" +
+           "EAAAAEZpZWxkTmFtZUFsaWFzZXMADAEAAAAAAAAAAAEAKgEBHQAAAA4AAABQcm9tb3RlZEZpZWxkcwAB" +
+           "AQAAAAAAAAAAAQAqAQEfAAAADgAAAFNlbGVjdGVkRmllbGRzAQBZAgEAAAAAAAAAAAEAKAEBAAAAAQH/" +
+           "////AAAAAA==";
 
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAAGwAAAFB1Ymxpc2hlZEV2ZW50c1R5cGVJbnN0YW5jZQEA7DgBAOw4////" +
-           "/wgAAAAVYIkKAgAAAAAADQAAAE1heEJ1ZmZlclRpbWUBAPU4AC4ARPU4AAABACIB/////wEB/////wAA" +
-           "AAAVYIkKAgAAAAAAFAAAAENvbmZpZ3VyYXRpb25WZXJzaW9uAQD2OAAuAET2OAAAAQABOf////8BAf//" +
-           "//8AAAAAFWCJCgIAAAAAAAgAAABNZXRhRGF0YQEA+DgALgBE+DgAAAEAuzj/////AQH/////AAAAABVg" +
-           "iQoCAAAAAAANAAAARXZlbnROb3RpZmllcgEA+jgALgBE+jgAAAAR/////wEB/////wAAAAAVYIkKAgAA" +
-           "AAAADgAAAFNlbGVjdGVkRmllbGRzAQD7OAAuAET7OAAAAQBZAgEAAAABAf////8AAAAAFWCJCgIAAAAA" +
-           "AAYAAABGaWx0ZXIBAPw4AC4ARPw4AAABAEoC/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAEtlZXBB" +
-           "bGl2ZVRpbWUBAFc6AC4ARFc6AAABACIB/////wEB/////wAAAAAEYYIKBAAAAAAABgAAAE1vZGlmeQEA" +
-           "/TgALwEA/Tj9OAAAAQH/////AQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAP44AC4ARP44" +
-           "AACWAwAAAAEAKgEBHAAAAA0AAABFdmVudE5vdGlmaWVyABH/////AAAAAAABACoBAR8AAAAOAAAAU2Vs" +
-           "ZWN0ZWRGaWVsZHMBAFkCAQAAAAAAAAAAAQAqAQEXAAAABgAAAEZpbHRlcgEASgL/////AAAAAAABACgB" +
-           "AQAAAAEB/////wAAAAA=";
+           "/wYAAAAVYIkKAgAAAAAAFAAAAENvbmZpZ3VyYXRpb25WZXJzaW9uAQD2OAAuAET2OAAAAQABOf////8B" +
+           "Af////8AAAAAFWCJCgIAAAAAAAgAAABNZXRhRGF0YQEA+DgALgBE+DgAAAEAuzj/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAANAAAARXZlbnROb3RpZmllcgEA+jgALgBE+jgAAAAR/////wEB/////wAAAAAVYIkK" +
+           "AgAAAAAADgAAAFNlbGVjdGVkRmllbGRzAQD7OAAuAET7OAAAAQBZAgEAAAABAf////8AAAAAFWCJCgIA" +
+           "AAAAAAYAAABGaWx0ZXIBAPw4AC4ARPw4AAABAEoC/////wEB/////wAAAAAEYYIKBAAAAAAAFAAAAE1v" +
+           "ZGlmeUZpZWxkU2VsZWN0aW9uAQDMOgAvAQDMOsw6AAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1" +
+           "dEFyZ3VtZW50cwEAzToALgBEzToAAJYDAAAAAQAqAQEfAAAAEAAAAEZpZWxkTmFtZUFsaWFzZXMADAEA" +
+           "AAAAAAAAAAEAKgEBHQAAAA4AAABQcm9tb3RlZEZpZWxkcwABAQAAAAAAAAAAAQAqAQEfAAAADgAAAFNl" +
+           "bGVjdGVkRmllbGRzAQBZAgEAAAAAAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -52164,44 +51860,23 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the KeepAliveTime Property.
+        /// A description for the PublishedEventsTypeModifyFieldSelectionMethodType Method.
         /// </summary>
-        public PropertyState<double> KeepAliveTime
+        public PublishedEventsTypeModifyFieldSelectionMethodState ModifyFieldSelection
         {
             get
             {
-                return m_keepAliveTime;
+                return m_modifyFieldSelectionMethod;
             }
 
             set
             {
-                if (!Object.ReferenceEquals(m_keepAliveTime, value))
+                if (!Object.ReferenceEquals(m_modifyFieldSelectionMethod, value))
                 {
                     ChangeMasks |= NodeStateChangeMasks.Children;
                 }
 
-                m_keepAliveTime = value;
-            }
-        }
-
-        /// <summary>
-        /// A description for the PublishedEventsTypeModifyMethodType Method.
-        /// </summary>
-        public PublishedEventsTypeModifyMethodState Modify
-        {
-            get
-            {
-                return m_modifyMethod;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_modifyMethod, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_modifyMethod = value;
+                m_modifyFieldSelectionMethod = value;
             }
         }
         #endregion
@@ -52231,14 +51906,9 @@ namespace Opc.Ua
                 children.Add(m_filter);
             }
 
-            if (m_keepAliveTime != null)
+            if (m_modifyFieldSelectionMethod != null)
             {
-                children.Add(m_keepAliveTime);
-            }
-
-            if (m_modifyMethod != null)
-            {
-                children.Add(m_modifyMethod);
+                children.Add(m_modifyFieldSelectionMethod);
             }
 
             base.GetChildren(context, children);
@@ -52325,45 +51995,24 @@ namespace Opc.Ua
                     break;
                 }
 
-                case Opc.Ua.BrowseNames.KeepAliveTime:
+                case Opc.Ua.BrowseNames.ModifyFieldSelection:
                 {
                     if (createOrReplace)
                     {
-                        if (KeepAliveTime == null)
+                        if (ModifyFieldSelection == null)
                         {
                             if (replacement == null)
                             {
-                                KeepAliveTime = new PropertyState<double>(this);
+                                ModifyFieldSelection = new PublishedEventsTypeModifyFieldSelectionMethodState(this);
                             }
                             else
                             {
-                                KeepAliveTime = (PropertyState<double>)replacement;
+                                ModifyFieldSelection = (PublishedEventsTypeModifyFieldSelectionMethodState)replacement;
                             }
                         }
                     }
 
-                    instance = KeepAliveTime;
-                    break;
-                }
-
-                case Opc.Ua.BrowseNames.Modify:
-                {
-                    if (createOrReplace)
-                    {
-                        if (Modify == null)
-                        {
-                            if (replacement == null)
-                            {
-                                Modify = new PublishedEventsTypeModifyMethodState(this);
-                            }
-                            else
-                            {
-                                Modify = (PublishedEventsTypeModifyMethodState)replacement;
-                            }
-                        }
-                    }
-
-                    instance = Modify;
+                    instance = ModifyFieldSelection;
                     break;
                 }
             }
@@ -52381,27 +52030,26 @@ namespace Opc.Ua
         private PropertyState<NodeId> m_eventNotifier;
         private PropertyState<SimpleAttributeOperand[]> m_selectedFields;
         private PropertyState<ContentFilter> m_filter;
-        private PropertyState<double> m_keepAliveTime;
-        private PublishedEventsTypeModifyMethodState m_modifyMethod;
+        private PublishedEventsTypeModifyFieldSelectionMethodState m_modifyFieldSelectionMethod;
         #endregion
     }
     #endif
     #endregion
 
-    #region PublishedEventsTypeModifyMethodState Class
-    #if (!OPCUA_EXCLUDE_PublishedEventsTypeModifyMethodState)
+    #region PublishedEventsTypeModifyFieldSelectionMethodState Class
+    #if (!OPCUA_EXCLUDE_PublishedEventsTypeModifyFieldSelectionMethodState)
     /// <summary>
-    /// Stores an instance of the PublishedEventsTypeModifyMethodType Method.
+    /// Stores an instance of the PublishedEventsTypeModifyFieldSelectionMethodType Method.
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public partial class PublishedEventsTypeModifyMethodState : MethodState
+    public partial class PublishedEventsTypeModifyFieldSelectionMethodState : MethodState
     {
         #region Constructors
         /// <summary>
         /// Initializes the type with its default attribute values.
         /// </summary>
-        public PublishedEventsTypeModifyMethodState(NodeState parent) : base(parent)
+        public PublishedEventsTypeModifyFieldSelectionMethodState(NodeState parent) : base(parent)
         {
         }
 
@@ -52412,7 +52060,7 @@ namespace Opc.Ua
         /// <returns>The new node.</returns>
         public new static NodeState Construct(NodeState parent)
         {
-            return new PublishedEventsTypeModifyMethodState(parent);
+            return new PublishedEventsTypeModifyFieldSelectionMethodState(parent);
         }
 
         #if (!OPCUA_EXCLUDE_InitializationStrings)
@@ -52435,11 +52083,11 @@ namespace Opc.Ua
 
         #region Initialization String
         private const string InitializationString =
-           "//////////8EYYIKBAAAAAAAIwAAAFB1Ymxpc2hlZEV2ZW50c1R5cGVNb2RpZnlNZXRob2RUeXBlAQD/" +
-           "OAAvAQD/OP84AAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAADkALgBEADkA" +
-           "AJYDAAAAAQAqAQEcAAAADQAAAEV2ZW50Tm90aWZpZXIAEf////8AAAAAAAEAKgEBHwAAAA4AAABTZWxl" +
-           "Y3RlZEZpZWxkcwEAWQIBAAAAAAAAAAABACoBARcAAAAGAAAARmlsdGVyAQBKAv////8AAAAAAAEAKAEB" +
-           "AAAAAQH/////AAAAAA==";
+           "//////////8EYYIKBAAAAAAAMQAAAFB1Ymxpc2hlZEV2ZW50c1R5cGVNb2RpZnlGaWVsZFNlbGVjdGlv" +
+           "bk1ldGhvZFR5cGUBAM46AC8BAM46zjoAAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1l" +
+           "bnRzAQDPOgAuAETPOgAAlgMAAAABACoBAR8AAAAQAAAARmllbGROYW1lQWxpYXNlcwAMAQAAAAAAAAAA" +
+           "AQAqAQEdAAAADgAAAFByb21vdGVkRmllbGRzAAEBAAAAAAAAAAABACoBAR8AAAAOAAAAU2VsZWN0ZWRG" +
+           "aWVsZHMBAFkCAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -52448,7 +52096,7 @@ namespace Opc.Ua
         /// <summary>
         /// Raised when the the method is called.
         /// </summary>
-        public PublishedEventsTypeModifyMethodStateMethodCallHandler OnCall;
+        public PublishedEventsTypeModifyFieldSelectionMethodStateMethodCallHandler OnCall;
         #endregion
 
         #region Public Properties
@@ -52476,9 +52124,9 @@ namespace Opc.Ua
 
             ServiceResult result = null;
 
-            NodeId eventNotifier = (NodeId)inputArguments[0];
-            SimpleAttributeOperand[] selectedFields = (SimpleAttributeOperand[])ExtensionObject.ToArray(inputArguments[1], typeof(SimpleAttributeOperand));
-            ContentFilter filter = (ContentFilter)ExtensionObject.ToEncodeable((ExtensionObject)inputArguments[2]);
+            string[] fieldNameAliases = (string[])inputArguments[0];
+            bool[] promotedFields = (bool[])inputArguments[1];
+            SimpleAttributeOperand[] selectedFields = (SimpleAttributeOperand[])ExtensionObject.ToArray(inputArguments[2], typeof(SimpleAttributeOperand));
 
             if (OnCall != null)
             {
@@ -52486,9 +52134,9 @@ namespace Opc.Ua
                     context,
                     this,
                     objectId,
-                    eventNotifier,
-                    selectedFields,
-                    filter);
+                    fieldNameAliases,
+                    promotedFields,
+                    selectedFields);
             }
 
             return result;
@@ -52503,13 +52151,163 @@ namespace Opc.Ua
     /// Used to receive notifications when the method is called.
     /// </summary>
     /// <exclude />
-    public delegate ServiceResult PublishedEventsTypeModifyMethodStateMethodCallHandler(
+    public delegate ServiceResult PublishedEventsTypeModifyFieldSelectionMethodStateMethodCallHandler(
         ISystemContext context,
         MethodState method,
         NodeId objectId,
-        NodeId eventNotifier,
-        SimpleAttributeOperand[] selectedFields,
-        ContentFilter filter);
+        string[] fieldNameAliases,
+        bool[] promotedFields,
+        SimpleAttributeOperand[] selectedFields);
+    #endif
+    #endregion
+
+    #region DataSetClassState Class
+    #if (!OPCUA_EXCLUDE_DataSetClassState)
+    /// <summary>
+    /// Stores an instance of the DataSetClassType ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class DataSetClassState : PublishedDataSetState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public DataSetClassState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.DataSetClassType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "//////////8EYIAAAQAAAAAAGAAAAERhdGFTZXRDbGFzc1R5cGVJbnN0YW5jZQEA0DoBANA6/////wMA" +
+           "AAAVYIkKAgAAAAAAFAAAAENvbmZpZ3VyYXRpb25WZXJzaW9uAQDYOgAuAETYOgAAAQABOf////8BAf//" +
+           "//8AAAAAFWCJCgIAAAAAAAgAAABNZXRhRGF0YQEA2ToALgBE2ToAAAEAuzj/////AQH/////AAAAABVg" +
+           "iQoCAAAAAAAOAAAARGF0YVNldENsYXNzSWQBAOA6AC4AROA6AAAADv////8BAf////8AAAAA";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the DataSetClassId Property.
+        /// </summary>
+        public PropertyState<Guid> DataSetClassId
+        {
+            get
+            {
+                return m_dataSetClassId;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_dataSetClassId, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_dataSetClassId = value;
+            }
+        }
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Populates a list with the children that belong to the node.
+        /// </summary>
+        /// <param name="context">The context for the system being accessed.</param>
+        /// <param name="children">The list of children to populate.</param>
+        public override void GetChildren(
+            ISystemContext context,
+            IList<BaseInstanceState> children)
+        {
+            if (m_dataSetClassId != null)
+            {
+                children.Add(m_dataSetClassId);
+            }
+
+            base.GetChildren(context, children);
+        }
+
+        /// <summary>
+        /// Finds the child with the specified browse name.
+        /// </summary>
+        protected override BaseInstanceState FindChild(
+            ISystemContext context,
+            QualifiedName browseName,
+            bool createOrReplace,
+            BaseInstanceState replacement)
+        {
+            if (QualifiedName.IsNull(browseName))
+            {
+                return null;
+            }
+
+            BaseInstanceState instance = null;
+
+            switch (browseName.Name)
+            {
+                case Opc.Ua.BrowseNames.DataSetClassId:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DataSetClassId == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DataSetClassId = new PropertyState<Guid>(this);
+                            }
+                            else
+                            {
+                                DataSetClassId = (PropertyState<Guid>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DataSetClassId;
+                    break;
+                }
+            }
+
+            if (instance != null)
+            {
+                return instance;
+            }
+
+            return base.FindChild(context, browseName, createOrReplace, replacement);
+        }
+        #endregion
+
+        #region Private Fields
+        private PropertyState<Guid> m_dataSetClassId;
+        #endregion
+    }
     #endif
     #endregion
 
@@ -52980,6 +52778,11 @@ namespace Opc.Ua
         {
             base.InitializeOptionalChildren(context);
 
+            if (MessageSecurity != null)
+            {
+                MessageSecurity.Initialize(context, MessageSecurity_InitializationString);
+            }
+
             if (RemoveMessageWriter != null)
             {
                 RemoveMessageWriter.Initialize(context, RemoveMessageWriter_InitializationString);
@@ -52992,6 +52795,12 @@ namespace Opc.Ua
         }
 
         #region Initialization String
+        private const string MessageSecurity_InitializationString =
+           "//////////8EYIAKAQAAAAAADwAAAE1lc3NhZ2VTZWN1cml0eQEA6ToALwEA9jrpOgAA/////wMAAAAV" +
+           "YIkKAgAAAAAADwAAAFNlY3VyaXR5R3JvdXBJZAEA6joALgBE6joAAAAM/////wEB/////wAAAAAVYIkK" +
+           "AgAAAAAADQAAAEtleVNlcnZlclVybHMBAOs6AC4AROs6AAAADAEAAAABAf////8AAAAAFWCJCgIAAAAA" +
+           "AAwAAABTZWN1cml0eU1vZGUBAOw6AC4AROw6AAABAC4B/////wEB/////wAAAAA=";
+
         private const string RemoveMessageWriter_InitializationString =
            "//////////8EYYIKBAAAAAAAEwAAAFJlbW92ZU1lc3NhZ2VXcml0ZXIBABY5AC8BABY5FjkAAAEB////" +
            "/wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQAXOQAuAEQXOQAAlgEAAAABACoBAR4AAAAP" +
@@ -53003,18 +52812,86 @@ namespace Opc.Ua
            "AAAATWVzc2FnZVJlYWRlcklkABH/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
 
         private const string InitializationString =
-           "//////////8EYIAAAQAAAAAAFwAAAFB1YlN1Ykdyb3VwVHlwZUluc3RhbmNlAQCYNwEAmDf/////AgAA" +
-           "AARhggoEAAAAAAATAAAAUmVtb3ZlTWVzc2FnZVdyaXRlcgEAFjkALwEAFjkWOQAAAQH/////AQAAABVg" +
-           "qQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBABc5AC4ARBc5AACWAQAAAAEAKgEBHgAAAA8AAABNZXNz" +
-           "YWdlV3JpdGVySWQAEf////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAAATAAAAUmVtb3Zl" +
-           "TWVzc2FnZVJlYWRlcgEAHTkALwEAHTkdOQAAAQH/////AQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1" +
-           "bWVudHMBAB45AC4ARB45AACWAQAAAAEAKgEBHgAAAA8AAABNZXNzYWdlUmVhZGVySWQAEf////8AAAAA" +
-           "AAEAKAEBAAAAAQH/////AAAAAA==";
+           "//////////8EYIAAAQAAAAAAFwAAAFB1YlN1Ykdyb3VwVHlwZUluc3RhbmNlAQCYNwEAmDf/////BQAA" +
+           "ABVgiQoCAAAAAAASAAAAUHVibGlzaGluZ0ludGVydmFsAQDnOgAuAETnOgAAAQAiAf////8BAf////8A" +
+           "AAAAFWCJCgIAAAAAAA0AAABLZWVwQWxpdmVUaW1lAQDoOgAuAEToOgAAAQAiAf////8BAf////8AAAAA" +
+           "BGCACgEAAAAAAA8AAABNZXNzYWdlU2VjdXJpdHkBAOk6AC8BAPY66ToAAP////8DAAAAFWCJCgIAAAAA" +
+           "AA8AAABTZWN1cml0eUdyb3VwSWQBAOo6AC4AROo6AAAADP////8BAf////8AAAAAFWCJCgIAAAAAAA0A" +
+           "AABLZXlTZXJ2ZXJVcmxzAQDrOgAuAETrOgAAAAwBAAAAAQH/////AAAAABVgiQoCAAAAAAAMAAAAU2Vj" +
+           "dXJpdHlNb2RlAQDsOgAuAETsOgAAAQAuAf////8BAf////8AAAAABGGCCgQAAAAAABMAAABSZW1vdmVN" +
+           "ZXNzYWdlV3JpdGVyAQAWOQAvAQAWORY5AAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3Vt" +
+           "ZW50cwEAFzkALgBEFzkAAJYBAAAAAQAqAQEeAAAADwAAAE1lc3NhZ2VXcml0ZXJJZAAR/////wAAAAAA" +
+           "AQAoAQEAAAABAf////8AAAAABGGCCgQAAAAAABMAAABSZW1vdmVNZXNzYWdlUmVhZGVyAQAdOQAvAQAd" +
+           "OR05AAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAHjkALgBEHjkAAJYBAAAA" +
+           "AQAqAQEeAAAADwAAAE1lc3NhZ2VSZWFkZXJJZAAR/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
+        /// <summary>
+        /// A description for the PublishingInterval Property.
+        /// </summary>
+        public PropertyState<double> PublishingInterval
+        {
+            get
+            {
+                return m_publishingInterval;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_publishingInterval, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_publishingInterval = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the KeepAliveTime Property.
+        /// </summary>
+        public PropertyState<double> KeepAliveTime
+        {
+            get
+            {
+                return m_keepAliveTime;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_keepAliveTime, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_keepAliveTime = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the MessageSecurity Object.
+        /// </summary>
+        public PubSubMessageSecurityState MessageSecurity
+        {
+            get
+            {
+                return m_messageSecurity;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_messageSecurity, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_messageSecurity = value;
+            }
+        }
+
         /// <summary>
         /// A description for the PubSubGroupTypeRemoveWriterMethodType Method.
         /// </summary>
@@ -53068,6 +52945,21 @@ namespace Opc.Ua
             ISystemContext context,
             IList<BaseInstanceState> children)
         {
+            if (m_publishingInterval != null)
+            {
+                children.Add(m_publishingInterval);
+            }
+
+            if (m_keepAliveTime != null)
+            {
+                children.Add(m_keepAliveTime);
+            }
+
+            if (m_messageSecurity != null)
+            {
+                children.Add(m_messageSecurity);
+            }
+
             if (m_removeMessageWriterMethod != null)
             {
                 children.Add(m_removeMessageWriterMethod);
@@ -53099,6 +52991,69 @@ namespace Opc.Ua
 
             switch (browseName.Name)
             {
+                case Opc.Ua.BrowseNames.PublishingInterval:
+                {
+                    if (createOrReplace)
+                    {
+                        if (PublishingInterval == null)
+                        {
+                            if (replacement == null)
+                            {
+                                PublishingInterval = new PropertyState<double>(this);
+                            }
+                            else
+                            {
+                                PublishingInterval = (PropertyState<double>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = PublishingInterval;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.KeepAliveTime:
+                {
+                    if (createOrReplace)
+                    {
+                        if (KeepAliveTime == null)
+                        {
+                            if (replacement == null)
+                            {
+                                KeepAliveTime = new PropertyState<double>(this);
+                            }
+                            else
+                            {
+                                KeepAliveTime = (PropertyState<double>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = KeepAliveTime;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.MessageSecurity:
+                {
+                    if (createOrReplace)
+                    {
+                        if (MessageSecurity == null)
+                        {
+                            if (replacement == null)
+                            {
+                                MessageSecurity = new PubSubMessageSecurityState(this);
+                            }
+                            else
+                            {
+                                MessageSecurity = (PubSubMessageSecurityState)replacement;
+                            }
+                        }
+                    }
+
+                    instance = MessageSecurity;
+                    break;
+                }
+
                 case Opc.Ua.BrowseNames.RemoveMessageWriter:
                 {
                     if (createOrReplace)
@@ -53152,8 +53107,257 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
+        private PropertyState<double> m_publishingInterval;
+        private PropertyState<double> m_keepAliveTime;
+        private PubSubMessageSecurityState m_messageSecurity;
         private PubSubGroupTypeRemoveWriterMethodState m_removeMessageWriterMethod;
         private PubSubGroupTypeRemoveReaderMethodState m_removeMessageReaderMethod;
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region PubSubMessageSecurityState Class
+    #if (!OPCUA_EXCLUDE_PubSubMessageSecurityState)
+    /// <summary>
+    /// Stores an instance of the PubSubMessageSecurityType ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class PubSubMessageSecurityState : BaseObjectState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public PubSubMessageSecurityState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.PubSubMessageSecurityType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "//////////8EYIAAAQAAAAAAIQAAAFB1YlN1Yk1lc3NhZ2VTZWN1cml0eVR5cGVJbnN0YW5jZQEA9joB" +
+           "APY6/////wMAAAAVYIkKAgAAAAAADwAAAFNlY3VyaXR5R3JvdXBJZAEA9zoALgBE9zoAAAAM/////wEB" +
+           "/////wAAAAAVYIkKAgAAAAAADQAAAEtleVNlcnZlclVybHMBAPg6AC4ARPg6AAAADAEAAAABAf////8A" +
+           "AAAAFWCJCgIAAAAAAAwAAABTZWN1cml0eU1vZGUBAPk6AC4ARPk6AAABAC4B/////wEB/////wAAAAA=";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the SecurityGroupId Property.
+        /// </summary>
+        public PropertyState<string> SecurityGroupId
+        {
+            get
+            {
+                return m_securityGroupId;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_securityGroupId, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_securityGroupId = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the KeyServerUrls Property.
+        /// </summary>
+        public PropertyState<string[]> KeyServerUrls
+        {
+            get
+            {
+                return m_keyServerUrls;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_keyServerUrls, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_keyServerUrls = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the SecurityMode Property.
+        /// </summary>
+        public PropertyState<MessageSecurityMode> SecurityMode
+        {
+            get
+            {
+                return m_securityMode;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_securityMode, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_securityMode = value;
+            }
+        }
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Populates a list with the children that belong to the node.
+        /// </summary>
+        /// <param name="context">The context for the system being accessed.</param>
+        /// <param name="children">The list of children to populate.</param>
+        public override void GetChildren(
+            ISystemContext context,
+            IList<BaseInstanceState> children)
+        {
+            if (m_securityGroupId != null)
+            {
+                children.Add(m_securityGroupId);
+            }
+
+            if (m_keyServerUrls != null)
+            {
+                children.Add(m_keyServerUrls);
+            }
+
+            if (m_securityMode != null)
+            {
+                children.Add(m_securityMode);
+            }
+
+            base.GetChildren(context, children);
+        }
+
+        /// <summary>
+        /// Finds the child with the specified browse name.
+        /// </summary>
+        protected override BaseInstanceState FindChild(
+            ISystemContext context,
+            QualifiedName browseName,
+            bool createOrReplace,
+            BaseInstanceState replacement)
+        {
+            if (QualifiedName.IsNull(browseName))
+            {
+                return null;
+            }
+
+            BaseInstanceState instance = null;
+
+            switch (browseName.Name)
+            {
+                case Opc.Ua.BrowseNames.SecurityGroupId:
+                {
+                    if (createOrReplace)
+                    {
+                        if (SecurityGroupId == null)
+                        {
+                            if (replacement == null)
+                            {
+                                SecurityGroupId = new PropertyState<string>(this);
+                            }
+                            else
+                            {
+                                SecurityGroupId = (PropertyState<string>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = SecurityGroupId;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.KeyServerUrls:
+                {
+                    if (createOrReplace)
+                    {
+                        if (KeyServerUrls == null)
+                        {
+                            if (replacement == null)
+                            {
+                                KeyServerUrls = new PropertyState<string[]>(this);
+                            }
+                            else
+                            {
+                                KeyServerUrls = (PropertyState<string[]>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = KeyServerUrls;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.SecurityMode:
+                {
+                    if (createOrReplace)
+                    {
+                        if (SecurityMode == null)
+                        {
+                            if (replacement == null)
+                            {
+                                SecurityMode = new PropertyState<MessageSecurityMode>(this);
+                            }
+                            else
+                            {
+                                SecurityMode = (PropertyState<MessageSecurityMode>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = SecurityMode;
+                    break;
+                }
+            }
+
+            if (instance != null)
+            {
+                return instance;
+            }
+
+            return base.FindChild(context, browseName, createOrReplace, replacement);
+        }
+        #endregion
+
+        #region Private Fields
+        private PropertyState<string> m_securityGroupId;
+        private PropertyState<string[]> m_keyServerUrls;
+        private PropertyState<MessageSecurityMode> m_securityMode;
         #endregion
     }
     #endif
@@ -53437,16 +53641,6 @@ namespace Opc.Ua
         {
             base.InitializeOptionalChildren(context);
 
-            if (EncodingSettings != null)
-            {
-                EncodingSettings.Initialize(context, EncodingSettings_InitializationString);
-            }
-
-            if (SecuritySettings != null)
-            {
-                SecuritySettings.Initialize(context, SecuritySettings_InitializationString);
-            }
-
             if (TransportSettings != null)
             {
                 TransportSettings.Initialize(context, TransportSettings_InitializationString);
@@ -53454,23 +53648,16 @@ namespace Opc.Ua
         }
 
         #region Initialization String
-        private const string EncodingSettings_InitializationString =
-           "//////////8EYIAKAQAAAAAAEAAAAEVuY29kaW5nU2V0dGluZ3MBACk5AC8BACw5KTkAAP////8AAAAA";
-
-        private const string SecuritySettings_InitializationString =
-           "//////////8EYIAKAQAAAAAAEAAAAFNlY3VyaXR5U2V0dGluZ3MBACo5AC8BAC05KjkAAP////8AAAAA";
-
         private const string TransportSettings_InitializationString =
            "//////////8EYIAKAQAAAAAAEQAAAFRyYW5zcG9ydFNldHRpbmdzAQArOQAvAQAuOSs5AAD/////AAAA" +
            "AA==";
 
         private const string InitializationString =
-           "//////////8EYIAAAQAAAAAAGQAAAE1lc3NhZ2VXcml0ZXJUeXBlSW5zdGFuY2UBAK43AQCuN/////8E" +
+           "//////////8EYIAAAQAAAAAAGQAAAE1lc3NhZ2VXcml0ZXJUeXBlSW5zdGFuY2UBAK43AQCuN/////8D" +
            "AAAABGCACgEAAAAAAAYAAABTdGF0dXMBACU5AC8BADM5JTkAAP////8BAAAAFWCJCgIAAAAAAAUAAABT" +
-           "dGF0ZQEAJjkALgBEJjkAAAEANzn/////AQH/////AAAAAARggAoBAAAAAAAQAAAARW5jb2RpbmdTZXR0" +
-           "aW5ncwEAKTkALwEALDkpOQAA/////wAAAAAEYIAKAQAAAAAAEAAAAFNlY3VyaXR5U2V0dGluZ3MBACo5" +
-           "AC8BAC05KjkAAP////8AAAAABGCACgEAAAAAABEAAABUcmFuc3BvcnRTZXR0aW5ncwEAKzkALwEALjkr" +
-           "OQAA/////wAAAAA=";
+           "dGF0ZQEAJjkALgBEJjkAAAEANzn/////AQH/////AAAAAARggAoBAAAAAAARAAAAVHJhbnNwb3J0U2V0" +
+           "dGluZ3MBACs5AC8BAC45KzkAAP////8AAAAAFWCJCgIAAAAAABAAAABFbmNvZGluZ01pbWVUeXBlAQD6" +
+           "OgAuAET6OgAAAAz/////AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -53498,48 +53685,6 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the EncodingSettings Object.
-        /// </summary>
-        public MessageWriterEncodingState EncodingSettings
-        {
-            get
-            {
-                return m_encodingSettings;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_encodingSettings, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_encodingSettings = value;
-            }
-        }
-
-        /// <summary>
-        /// A description for the SecuritySettings Object.
-        /// </summary>
-        public MessageWriterSecurityState SecuritySettings
-        {
-            get
-            {
-                return m_securitySettings;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_securitySettings, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_securitySettings = value;
-            }
-        }
-
-        /// <summary>
         /// A description for the TransportSettings Object.
         /// </summary>
         public MessageWriterTransportState TransportSettings
@@ -53559,6 +53704,27 @@ namespace Opc.Ua
                 m_transportSettings = value;
             }
         }
+
+        /// <summary>
+        /// A description for the EncodingMimeType Property.
+        /// </summary>
+        public PropertyState<string> EncodingMimeType
+        {
+            get
+            {
+                return m_encodingMimeType;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_encodingMimeType, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_encodingMimeType = value;
+            }
+        }
         #endregion
 
         #region Overridden Methods
@@ -53576,19 +53742,14 @@ namespace Opc.Ua
                 children.Add(m_status);
             }
 
-            if (m_encodingSettings != null)
-            {
-                children.Add(m_encodingSettings);
-            }
-
-            if (m_securitySettings != null)
-            {
-                children.Add(m_securitySettings);
-            }
-
             if (m_transportSettings != null)
             {
                 children.Add(m_transportSettings);
+            }
+
+            if (m_encodingMimeType != null)
+            {
+                children.Add(m_encodingMimeType);
             }
 
             base.GetChildren(context, children);
@@ -53633,48 +53794,6 @@ namespace Opc.Ua
                     break;
                 }
 
-                case Opc.Ua.BrowseNames.EncodingSettings:
-                {
-                    if (createOrReplace)
-                    {
-                        if (EncodingSettings == null)
-                        {
-                            if (replacement == null)
-                            {
-                                EncodingSettings = new MessageWriterEncodingState(this);
-                            }
-                            else
-                            {
-                                EncodingSettings = (MessageWriterEncodingState)replacement;
-                            }
-                        }
-                    }
-
-                    instance = EncodingSettings;
-                    break;
-                }
-
-                case Opc.Ua.BrowseNames.SecuritySettings:
-                {
-                    if (createOrReplace)
-                    {
-                        if (SecuritySettings == null)
-                        {
-                            if (replacement == null)
-                            {
-                                SecuritySettings = new MessageWriterSecurityState(this);
-                            }
-                            else
-                            {
-                                SecuritySettings = (MessageWriterSecurityState)replacement;
-                            }
-                        }
-                    }
-
-                    instance = SecuritySettings;
-                    break;
-                }
-
                 case Opc.Ua.BrowseNames.TransportSettings:
                 {
                     if (createOrReplace)
@@ -53695,318 +53814,7 @@ namespace Opc.Ua
                     instance = TransportSettings;
                     break;
                 }
-            }
 
-            if (instance != null)
-            {
-                return instance;
-            }
-
-            return base.FindChild(context, browseName, createOrReplace, replacement);
-        }
-        #endregion
-
-        #region Private Fields
-        private PubSubStatusState m_status;
-        private MessageWriterEncodingState m_encodingSettings;
-        private MessageWriterSecurityState m_securitySettings;
-        private MessageWriterTransportState m_transportSettings;
-        #endregion
-    }
-    #endif
-    #endregion
-
-    #region MessageWriterEncodingState Class
-    #if (!OPCUA_EXCLUDE_MessageWriterEncodingState)
-    /// <summary>
-    /// Stores an instance of the MessageWriterEncodingType ObjectType.
-    /// </summary>
-    /// <exclude />
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public partial class MessageWriterEncodingState : BaseObjectState
-    {
-        #region Constructors
-        /// <summary>
-        /// Initializes the type with its default attribute values.
-        /// </summary>
-        public MessageWriterEncodingState(NodeState parent) : base(parent)
-        {
-        }
-
-        /// <summary>
-        /// Returns the id of the default type definition node for the instance.
-        /// </summary>
-        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
-        {
-            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.MessageWriterEncodingType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
-        }
-
-        #if (!OPCUA_EXCLUDE_InitializationStrings)
-        /// <summary>
-        /// Initializes the instance.
-        /// </summary>
-        protected override void Initialize(ISystemContext context)
-        {
-            Initialize(context, InitializationString);
-            InitializeOptionalChildren(context);
-        }
-
-        /// <summary>
-        /// Initializes the any option children defined for the instance.
-        /// </summary>
-        protected override void InitializeOptionalChildren(ISystemContext context)
-        {
-            base.InitializeOptionalChildren(context);
-        }
-
-        #region Initialization String
-        private const string InitializationString =
-           "//////////8EYIAAAQAAAAAAIQAAAE1lc3NhZ2VXcml0ZXJFbmNvZGluZ1R5cGVJbnN0YW5jZQEALDkB" +
-           "ACw5/////wAAAAA=";
-        #endregion
-        #endif
-        #endregion
-
-        #region Public Properties
-        #endregion
-
-        #region Overridden Methods
-        #endregion
-
-        #region Private Fields
-        #endregion
-    }
-    #endif
-    #endregion
-
-    #region BinaryWriterEncodingState Class
-    #if (!OPCUA_EXCLUDE_BinaryWriterEncodingState)
-    /// <summary>
-    /// Stores an instance of the BinaryWriterEncodingType ObjectType.
-    /// </summary>
-    /// <exclude />
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public partial class BinaryWriterEncodingState : MessageWriterEncodingState
-    {
-        #region Constructors
-        /// <summary>
-        /// Initializes the type with its default attribute values.
-        /// </summary>
-        public BinaryWriterEncodingState(NodeState parent) : base(parent)
-        {
-        }
-
-        /// <summary>
-        /// Returns the id of the default type definition node for the instance.
-        /// </summary>
-        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
-        {
-            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.BinaryWriterEncodingType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
-        }
-
-        #if (!OPCUA_EXCLUDE_InitializationStrings)
-        /// <summary>
-        /// Initializes the instance.
-        /// </summary>
-        protected override void Initialize(ISystemContext context)
-        {
-            Initialize(context, InitializationString);
-            InitializeOptionalChildren(context);
-        }
-
-        /// <summary>
-        /// Initializes the any option children defined for the instance.
-        /// </summary>
-        protected override void InitializeOptionalChildren(ISystemContext context)
-        {
-            base.InitializeOptionalChildren(context);
-        }
-
-        #region Initialization String
-        private const string InitializationString =
-           "//////////8EYIAAAQAAAAAAIAAAAEJpbmFyeVdyaXRlckVuY29kaW5nVHlwZUluc3RhbmNlAQBaOgEA" +
-           "Wjr/////AAAAAA==";
-        #endregion
-        #endif
-        #endregion
-
-        #region Public Properties
-        #endregion
-
-        #region Overridden Methods
-        #endregion
-
-        #region Private Fields
-        #endregion
-    }
-    #endif
-    #endregion
-
-    #region TaggedWriterEncodingState Class
-    #if (!OPCUA_EXCLUDE_TaggedWriterEncodingState)
-    /// <summary>
-    /// Stores an instance of the TaggedWriterEncodingType ObjectType.
-    /// </summary>
-    /// <exclude />
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public partial class TaggedWriterEncodingState : MessageWriterEncodingState
-    {
-        #region Constructors
-        /// <summary>
-        /// Initializes the type with its default attribute values.
-        /// </summary>
-        public TaggedWriterEncodingState(NodeState parent) : base(parent)
-        {
-        }
-
-        /// <summary>
-        /// Returns the id of the default type definition node for the instance.
-        /// </summary>
-        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
-        {
-            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.TaggedWriterEncodingType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
-        }
-
-        #if (!OPCUA_EXCLUDE_InitializationStrings)
-        /// <summary>
-        /// Initializes the instance.
-        /// </summary>
-        protected override void Initialize(ISystemContext context)
-        {
-            Initialize(context, InitializationString);
-            InitializeOptionalChildren(context);
-        }
-
-        /// <summary>
-        /// Initializes the any option children defined for the instance.
-        /// </summary>
-        protected override void InitializeOptionalChildren(ISystemContext context)
-        {
-            base.InitializeOptionalChildren(context);
-        }
-
-        #region Initialization String
-        private const string InitializationString =
-           "//////////8EYIAAAQAAAAAAIAAAAFRhZ2dlZFdyaXRlckVuY29kaW5nVHlwZUluc3RhbmNlAQBbOgEA" +
-           "Wzr/////AwAAABVgiQoCAAAAAAAQAAAARW5jb2RpbmdNaW1lVHlwZQEAXDoALgBEXDoAAAAM/////wEB" +
-           "/////wAAAAAVYIkKAgAAAAAAEwAAAE1lc3NhZ2VGaWVsZEFsaWFzZXMBAF06AC4ARF06AAAADAEAAAAB" +
-           "Af////8AAAAAFWCJCgIAAAAAABIAAABQcm9tb3RlZEZpZWxkTmFtZXMBAF46AC4ARF46AAAADAEAAAAB" +
-           "Af////8AAAAA";
-        #endregion
-        #endif
-        #endregion
-
-        #region Public Properties
-        /// <summary>
-        /// A description for the EncodingMimeType Property.
-        /// </summary>
-        public PropertyState<string> EncodingMimeType
-        {
-            get
-            {
-                return m_encodingMimeType;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_encodingMimeType, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_encodingMimeType = value;
-            }
-        }
-
-        /// <summary>
-        /// A description for the MessageFieldAliases Property.
-        /// </summary>
-        public PropertyState<string[]> MessageFieldAliases
-        {
-            get
-            {
-                return m_messageFieldAliases;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_messageFieldAliases, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_messageFieldAliases = value;
-            }
-        }
-
-        /// <summary>
-        /// A description for the PromotedFieldNames Property.
-        /// </summary>
-        public PropertyState<string[]> PromotedFieldNames
-        {
-            get
-            {
-                return m_promotedFieldNames;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_promotedFieldNames, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_promotedFieldNames = value;
-            }
-        }
-        #endregion
-
-        #region Overridden Methods
-        /// <summary>
-        /// Populates a list with the children that belong to the node.
-        /// </summary>
-        /// <param name="context">The context for the system being accessed.</param>
-        /// <param name="children">The list of children to populate.</param>
-        public override void GetChildren(
-            ISystemContext context,
-            IList<BaseInstanceState> children)
-        {
-            if (m_encodingMimeType != null)
-            {
-                children.Add(m_encodingMimeType);
-            }
-
-            if (m_messageFieldAliases != null)
-            {
-                children.Add(m_messageFieldAliases);
-            }
-
-            if (m_promotedFieldNames != null)
-            {
-                children.Add(m_promotedFieldNames);
-            }
-
-            base.GetChildren(context, children);
-        }
-
-        /// <summary>
-        /// Finds the child with the specified browse name.
-        /// </summary>
-        protected override BaseInstanceState FindChild(
-            ISystemContext context,
-            QualifiedName browseName,
-            bool createOrReplace,
-            BaseInstanceState replacement)
-        {
-            if (QualifiedName.IsNull(browseName))
-            {
-                return null;
-            }
-
-            BaseInstanceState instance = null;
-
-            switch (browseName.Name)
-            {
                 case Opc.Ua.BrowseNames.EncodingMimeType:
                 {
                     if (createOrReplace)
@@ -54027,48 +53835,6 @@ namespace Opc.Ua
                     instance = EncodingMimeType;
                     break;
                 }
-
-                case Opc.Ua.BrowseNames.MessageFieldAliases:
-                {
-                    if (createOrReplace)
-                    {
-                        if (MessageFieldAliases == null)
-                        {
-                            if (replacement == null)
-                            {
-                                MessageFieldAliases = new PropertyState<string[]>(this);
-                            }
-                            else
-                            {
-                                MessageFieldAliases = (PropertyState<string[]>)replacement;
-                            }
-                        }
-                    }
-
-                    instance = MessageFieldAliases;
-                    break;
-                }
-
-                case Opc.Ua.BrowseNames.PromotedFieldNames:
-                {
-                    if (createOrReplace)
-                    {
-                        if (PromotedFieldNames == null)
-                        {
-                            if (replacement == null)
-                            {
-                                PromotedFieldNames = new PropertyState<string[]>(this);
-                            }
-                            else
-                            {
-                                PromotedFieldNames = (PropertyState<string[]>)replacement;
-                            }
-                        }
-                    }
-
-                    instance = PromotedFieldNames;
-                    break;
-                }
             }
 
             if (instance != null)
@@ -54081,72 +53847,9 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
+        private PubSubStatusState m_status;
+        private MessageWriterTransportState m_transportSettings;
         private PropertyState<string> m_encodingMimeType;
-        private PropertyState<string[]> m_messageFieldAliases;
-        private PropertyState<string[]> m_promotedFieldNames;
-        #endregion
-    }
-    #endif
-    #endregion
-
-    #region MessageWriterSecurityState Class
-    #if (!OPCUA_EXCLUDE_MessageWriterSecurityState)
-    /// <summary>
-    /// Stores an instance of the MessageWriterSecurityType ObjectType.
-    /// </summary>
-    /// <exclude />
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public partial class MessageWriterSecurityState : BaseObjectState
-    {
-        #region Constructors
-        /// <summary>
-        /// Initializes the type with its default attribute values.
-        /// </summary>
-        public MessageWriterSecurityState(NodeState parent) : base(parent)
-        {
-        }
-
-        /// <summary>
-        /// Returns the id of the default type definition node for the instance.
-        /// </summary>
-        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
-        {
-            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.MessageWriterSecurityType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
-        }
-
-        #if (!OPCUA_EXCLUDE_InitializationStrings)
-        /// <summary>
-        /// Initializes the instance.
-        /// </summary>
-        protected override void Initialize(ISystemContext context)
-        {
-            Initialize(context, InitializationString);
-            InitializeOptionalChildren(context);
-        }
-
-        /// <summary>
-        /// Initializes the any option children defined for the instance.
-        /// </summary>
-        protected override void InitializeOptionalChildren(ISystemContext context)
-        {
-            base.InitializeOptionalChildren(context);
-        }
-
-        #region Initialization String
-        private const string InitializationString =
-           "//////////8EYIAAAQAAAAAAIQAAAE1lc3NhZ2VXcml0ZXJTZWN1cml0eVR5cGVJbnN0YW5jZQEALTkB" +
-           "AC05/////wAAAAA=";
-        #endregion
-        #endif
-        #endregion
-
-        #region Public Properties
-        #endregion
-
-        #region Overridden Methods
-        #endregion
-
-        #region Private Fields
         #endregion
     }
     #endif
@@ -54256,13 +53959,52 @@ namespace Opc.Ua
         protected override void InitializeOptionalChildren(ISystemContext context)
         {
             base.InitializeOptionalChildren(context);
+
+            if (TransportSettings != null)
+            {
+                TransportSettings.Initialize(context, TransportSettings_InitializationString);
+            }
+
+            if (MessageSecurity != null)
+            {
+                MessageSecurity.Initialize(context, MessageSecurity_InitializationString);
+            }
+
+            if (SubscribedDataSet != null)
+            {
+                SubscribedDataSet.Initialize(context, SubscribedDataSet_InitializationString);
+            }
         }
 
         #region Initialization String
+        private const string TransportSettings_InitializationString =
+           "//////////8EYIAKAQAAAAAAEQAAAFRyYW5zcG9ydFNldHRpbmdzAQD7OgAvAQADO/s6AAD/////AAAA" +
+           "AA==";
+
+        private const string MessageSecurity_InitializationString =
+           "//////////8EYIAKAQAAAAAADwAAAE1lc3NhZ2VTZWN1cml0eQEA/DoALwEA9jr8OgAA/////wMAAAAV" +
+           "YIkKAgAAAAAADwAAAFNlY3VyaXR5R3JvdXBJZAEA/ToALgBE/ToAAAAM/////wEB/////wAAAAAVYIkK" +
+           "AgAAAAAADQAAAEtleVNlcnZlclVybHMBAP46AC4ARP46AAAADAEAAAABAf////8AAAAAFWCJCgIAAAAA" +
+           "AAwAAABTZWN1cml0eU1vZGUBAP86AC4ARP86AAABAC4B/////wEB/////wAAAAA=";
+
+        private const string SubscribedDataSet_InitializationString =
+           "//////////8EYIAKAQAAAAAAEQAAAFN1YnNjcmliZWREYXRhU2V0AQAAOwAvAQAEOwA7AAD/////AgAA" +
+           "ABVgiQoCAAAAAAAPAAAARGF0YVNldE1ldGFEYXRhAQABOwAuAEQBOwAAAQC7OP////8BAf////8AAAAA" +
+           "FWCJCgIAAAAAABUAAABNZXNzYWdlUmVjZWl2ZVRpbWVvdXQBAAI7AC4ARAI7AAABACIB/////wEB////" +
+           "/wAAAAA=";
+
         private const string InitializationString =
-           "//////////8EYIAAAQAAAAAAGQAAAE1lc3NhZ2VSZWFkZXJUeXBlSW5zdGFuY2UBAMw3AQDMN/////8B" +
+           "//////////8EYIAAAQAAAAAAGQAAAE1lc3NhZ2VSZWFkZXJUeXBlSW5zdGFuY2UBAMw3AQDMN/////8E" +
            "AAAABGCACgEAAAAAAAYAAABTdGF0dXMBAC85AC8BADM5LzkAAP////8BAAAAFWCJCgIAAAAAAAUAAABT" +
-           "dGF0ZQEAMDkALgBEMDkAAAEANzn/////AQH/////AAAAAA==";
+           "dGF0ZQEAMDkALgBEMDkAAAEANzn/////AQH/////AAAAAARggAoBAAAAAAARAAAAVHJhbnNwb3J0U2V0" +
+           "dGluZ3MBAPs6AC8BAAM7+zoAAP////8AAAAABGCACgEAAAAAAA8AAABNZXNzYWdlU2VjdXJpdHkBAPw6" +
+           "AC8BAPY6/DoAAP////8DAAAAFWCJCgIAAAAAAA8AAABTZWN1cml0eUdyb3VwSWQBAP06AC4ARP06AAAA" +
+           "DP////8BAf////8AAAAAFWCJCgIAAAAAAA0AAABLZXlTZXJ2ZXJVcmxzAQD+OgAuAET+OgAAAAwBAAAA" +
+           "AQH/////AAAAABVgiQoCAAAAAAAMAAAAU2VjdXJpdHlNb2RlAQD/OgAuAET/OgAAAQAuAf////8BAf//" +
+           "//8AAAAABGCACgEAAAAAABEAAABTdWJzY3JpYmVkRGF0YVNldAEAADsALwEABDsAOwAA/////wIAAAAV" +
+           "YIkKAgAAAAAADwAAAERhdGFTZXRNZXRhRGF0YQEAATsALgBEATsAAAEAuzj/////AQH/////AAAAABVg" +
+           "iQoCAAAAAAAVAAAATWVzc2FnZVJlY2VpdmVUaW1lb3V0AQACOwAuAEQCOwAAAQAiAf////8BAf////8A" +
+           "AAAA";
         #endregion
         #endif
         #endregion
@@ -54288,6 +54030,69 @@ namespace Opc.Ua
                 m_status = value;
             }
         }
+
+        /// <summary>
+        /// A description for the TransportSettings Object.
+        /// </summary>
+        public MessageReaderTransportState TransportSettings
+        {
+            get
+            {
+                return m_transportSettings;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_transportSettings, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_transportSettings = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the MessageSecurity Object.
+        /// </summary>
+        public PubSubMessageSecurityState MessageSecurity
+        {
+            get
+            {
+                return m_messageSecurity;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_messageSecurity, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_messageSecurity = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the SubscribedDataSet Object.
+        /// </summary>
+        public SubscribedDataSetState SubscribedDataSet
+        {
+            get
+            {
+                return m_subscribedDataSet;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_subscribedDataSet, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_subscribedDataSet = value;
+            }
+        }
         #endregion
 
         #region Overridden Methods
@@ -54303,6 +54108,21 @@ namespace Opc.Ua
             if (m_status != null)
             {
                 children.Add(m_status);
+            }
+
+            if (m_transportSettings != null)
+            {
+                children.Add(m_transportSettings);
+            }
+
+            if (m_messageSecurity != null)
+            {
+                children.Add(m_messageSecurity);
+            }
+
+            if (m_subscribedDataSet != null)
+            {
+                children.Add(m_subscribedDataSet);
             }
 
             base.GetChildren(context, children);
@@ -54346,6 +54166,69 @@ namespace Opc.Ua
                     instance = Status;
                     break;
                 }
+
+                case Opc.Ua.BrowseNames.TransportSettings:
+                {
+                    if (createOrReplace)
+                    {
+                        if (TransportSettings == null)
+                        {
+                            if (replacement == null)
+                            {
+                                TransportSettings = new MessageReaderTransportState(this);
+                            }
+                            else
+                            {
+                                TransportSettings = (MessageReaderTransportState)replacement;
+                            }
+                        }
+                    }
+
+                    instance = TransportSettings;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.MessageSecurity:
+                {
+                    if (createOrReplace)
+                    {
+                        if (MessageSecurity == null)
+                        {
+                            if (replacement == null)
+                            {
+                                MessageSecurity = new PubSubMessageSecurityState(this);
+                            }
+                            else
+                            {
+                                MessageSecurity = (PubSubMessageSecurityState)replacement;
+                            }
+                        }
+                    }
+
+                    instance = MessageSecurity;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.SubscribedDataSet:
+                {
+                    if (createOrReplace)
+                    {
+                        if (SubscribedDataSet == null)
+                        {
+                            if (replacement == null)
+                            {
+                                SubscribedDataSet = new SubscribedDataSetState(this);
+                            }
+                            else
+                            {
+                                SubscribedDataSet = (SubscribedDataSetState)replacement;
+                            }
+                        }
+                    }
+
+                    instance = SubscribedDataSet;
+                    break;
+                }
             }
 
             if (instance != null)
@@ -54359,6 +54242,876 @@ namespace Opc.Ua
 
         #region Private Fields
         private PubSubStatusState m_status;
+        private MessageReaderTransportState m_transportSettings;
+        private PubSubMessageSecurityState m_messageSecurity;
+        private SubscribedDataSetState m_subscribedDataSet;
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region MessageReaderTransportState Class
+    #if (!OPCUA_EXCLUDE_MessageReaderTransportState)
+    /// <summary>
+    /// Stores an instance of the MessageReaderTransportType ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class MessageReaderTransportState : BaseObjectState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public MessageReaderTransportState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.MessageReaderTransportType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "//////////8EYIAAAQAAAAAAIgAAAE1lc3NhZ2VSZWFkZXJUcmFuc3BvcnRUeXBlSW5zdGFuY2UBAAM7" +
+           "AQADO/////8AAAAA";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region SubscribedDataSetState Class
+    #if (!OPCUA_EXCLUDE_SubscribedDataSetState)
+    /// <summary>
+    /// Stores an instance of the SubscribedDataSetType ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class SubscribedDataSetState : BaseObjectState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public SubscribedDataSetState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.SubscribedDataSetType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "//////////8EYIAAAQAAAAAAHQAAAFN1YnNjcmliZWREYXRhU2V0VHlwZUluc3RhbmNlAQAEOwEABDv/" +
+           "////AgAAABVgiQoCAAAAAAAPAAAARGF0YVNldE1ldGFEYXRhAQAFOwAuAEQFOwAAAQC7OP////8BAf//" +
+           "//8AAAAAFWCJCgIAAAAAABUAAABNZXNzYWdlUmVjZWl2ZVRpbWVvdXQBAAY7AC4ARAY7AAABACIB////" +
+           "/wEB/////wAAAAA=";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the DataSetMetaData Property.
+        /// </summary>
+        public PropertyState<DataSetMetaDataType> DataSetMetaData
+        {
+            get
+            {
+                return m_dataSetMetaData;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_dataSetMetaData, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_dataSetMetaData = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the MessageReceiveTimeout Property.
+        /// </summary>
+        public PropertyState<double> MessageReceiveTimeout
+        {
+            get
+            {
+                return m_messageReceiveTimeout;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_messageReceiveTimeout, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_messageReceiveTimeout = value;
+            }
+        }
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Populates a list with the children that belong to the node.
+        /// </summary>
+        /// <param name="context">The context for the system being accessed.</param>
+        /// <param name="children">The list of children to populate.</param>
+        public override void GetChildren(
+            ISystemContext context,
+            IList<BaseInstanceState> children)
+        {
+            if (m_dataSetMetaData != null)
+            {
+                children.Add(m_dataSetMetaData);
+            }
+
+            if (m_messageReceiveTimeout != null)
+            {
+                children.Add(m_messageReceiveTimeout);
+            }
+
+            base.GetChildren(context, children);
+        }
+
+        /// <summary>
+        /// Finds the child with the specified browse name.
+        /// </summary>
+        protected override BaseInstanceState FindChild(
+            ISystemContext context,
+            QualifiedName browseName,
+            bool createOrReplace,
+            BaseInstanceState replacement)
+        {
+            if (QualifiedName.IsNull(browseName))
+            {
+                return null;
+            }
+
+            BaseInstanceState instance = null;
+
+            switch (browseName.Name)
+            {
+                case Opc.Ua.BrowseNames.DataSetMetaData:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DataSetMetaData == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DataSetMetaData = new PropertyState<DataSetMetaDataType>(this);
+                            }
+                            else
+                            {
+                                DataSetMetaData = (PropertyState<DataSetMetaDataType>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DataSetMetaData;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.MessageReceiveTimeout:
+                {
+                    if (createOrReplace)
+                    {
+                        if (MessageReceiveTimeout == null)
+                        {
+                            if (replacement == null)
+                            {
+                                MessageReceiveTimeout = new PropertyState<double>(this);
+                            }
+                            else
+                            {
+                                MessageReceiveTimeout = (PropertyState<double>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = MessageReceiveTimeout;
+                    break;
+                }
+            }
+
+            if (instance != null)
+            {
+                return instance;
+            }
+
+            return base.FindChild(context, browseName, createOrReplace, replacement);
+        }
+        #endregion
+
+        #region Private Fields
+        private PropertyState<DataSetMetaDataType> m_dataSetMetaData;
+        private PropertyState<double> m_messageReceiveTimeout;
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region ConnectedVariablesState Class
+    #if (!OPCUA_EXCLUDE_ConnectedVariablesState)
+    /// <summary>
+    /// Stores an instance of the ConnectedVariablesType ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class ConnectedVariablesState : SubscribedDataSetState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public ConnectedVariablesState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.ConnectedVariablesType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+
+            if (AddDataConnections != null)
+            {
+                AddDataConnections.Initialize(context, AddDataConnections_InitializationString);
+            }
+
+            if (RemoveDataConnections != null)
+            {
+                RemoveDataConnections.Initialize(context, RemoveDataConnections_InitializationString);
+            }
+        }
+
+        #region Initialization String
+        private const string AddDataConnections_InitializationString =
+           "//////////8EYYIKBAAAAAAAEgAAAEFkZERhdGFDb25uZWN0aW9ucwEACzsALwEACzsLOwAAAQH/////" +
+           "AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAAw7AC4ARAw7AACWAgAAAAEAKgEBJQAAABQA" +
+           "AABDb25maWd1cmF0aW9uVmVyc2lvbgEAATn/////AAAAAAABACoBASEAAAAQAAAAQ29ubmVjdGlvbnNU" +
+           "b0FkZAEAmDkBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3Vt" +
+           "ZW50cwEADTsALgBEDTsAAJYBAAAAAQAqAQEZAAAACgAAAEFkZFJlc3VsdHMAEwEAAAAAAAAAAAEAKAEB" +
+           "AAAAAQH/////AAAAAA==";
+
+        private const string RemoveDataConnections_InitializationString =
+           "//////////8EYYIKBAAAAAAAFQAAAFJlbW92ZURhdGFDb25uZWN0aW9ucwEADjsALwEADjsOOwAAAQH/" +
+           "////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAA87AC4ARA87AACWAgAAAAEAKgEBJQAA" +
+           "ABQAAABDb25maWd1cmF0aW9uVmVyc2lvbgEAATn/////AAAAAAABACoBASIAAAATAAAAQ29ubmVjdGlv" +
+           "bnNUb1JlbW92ZQAHAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRB" +
+           "cmd1bWVudHMBABA7AC4ARBA7AACWAQAAAAEAKgEBHAAAAA0AAABSZW1vdmVSZXN1bHRzABMBAAAAAAAA" +
+           "AAABACgBAQAAAAEB/////wAAAAA=";
+
+        private const string InitializationString =
+           "//////////8EYIAAAQAAAAAAHgAAAENvbm5lY3RlZFZhcmlhYmxlc1R5cGVJbnN0YW5jZQEABzsBAAc7" +
+           "/////wUAAAAVYIkKAgAAAAAADwAAAERhdGFTZXRNZXRhRGF0YQEACDsALgBECDsAAAEAuzj/////AQH/" +
+           "////AAAAABVgiQoCAAAAAAAVAAAATWVzc2FnZVJlY2VpdmVUaW1lb3V0AQAJOwAuAEQJOwAAAQAiAf//" +
+           "//8BAf////8AAAAAFWCJCgIAAAAAABIAAABDb25uZWN0ZWRWYXJpYWJsZXMBAAo7AC4ARAo7AAABAJg5" +
+           "AQAAAAEB/////wAAAAAEYYIKBAAAAAAAEgAAAEFkZERhdGFDb25uZWN0aW9ucwEACzsALwEACzsLOwAA" +
+           "AQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAAw7AC4ARAw7AACWAgAAAAEAKgEB" +
+           "JQAAABQAAABDb25maWd1cmF0aW9uVmVyc2lvbgEAATn/////AAAAAAABACoBASEAAAAQAAAAQ29ubmVj" +
+           "dGlvbnNUb0FkZAEAmDkBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1" +
+           "dEFyZ3VtZW50cwEADTsALgBEDTsAAJYBAAAAAQAqAQEZAAAACgAAAEFkZFJlc3VsdHMAEwEAAAAAAAAA" +
+           "AAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAAAVAAAAUmVtb3ZlRGF0YUNvbm5lY3Rpb25zAQAOOwAv" +
+           "AQAOOw47AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEADzsALgBEDzsAAJYC" +
+           "AAAAAQAqAQElAAAAFAAAAENvbmZpZ3VyYXRpb25WZXJzaW9uAQABOf////8AAAAAAAEAKgEBIgAAABMA" +
+           "AABDb25uZWN0aW9uc1RvUmVtb3ZlAAcBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAA" +
+           "DwAAAE91dHB1dEFyZ3VtZW50cwEAEDsALgBEEDsAAJYBAAAAAQAqAQEcAAAADQAAAFJlbW92ZVJlc3Vs" +
+           "dHMAEwEAAAAAAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the ConnectedVariables Property.
+        /// </summary>
+        public PropertyState<DataConnectionDataType[]> ConnectedVariables
+        {
+            get
+            {
+                return m_connectedVariables;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_connectedVariables, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_connectedVariables = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the ConnectedVariablesTypeAddDataConnectionsMethodType Method.
+        /// </summary>
+        public ConnectedVariablesTypeAddDataConnectionsMethodState AddDataConnections
+        {
+            get
+            {
+                return m_addDataConnectionsMethod;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_addDataConnectionsMethod, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_addDataConnectionsMethod = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the ConnectedVariablesTypeRemoveDataConnectionsMethodType Method.
+        /// </summary>
+        public ConnectedVariablesTypeRemoveDataConnectionsMethodState RemoveDataConnections
+        {
+            get
+            {
+                return m_removeDataConnectionsMethod;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_removeDataConnectionsMethod, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_removeDataConnectionsMethod = value;
+            }
+        }
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Populates a list with the children that belong to the node.
+        /// </summary>
+        /// <param name="context">The context for the system being accessed.</param>
+        /// <param name="children">The list of children to populate.</param>
+        public override void GetChildren(
+            ISystemContext context,
+            IList<BaseInstanceState> children)
+        {
+            if (m_connectedVariables != null)
+            {
+                children.Add(m_connectedVariables);
+            }
+
+            if (m_addDataConnectionsMethod != null)
+            {
+                children.Add(m_addDataConnectionsMethod);
+            }
+
+            if (m_removeDataConnectionsMethod != null)
+            {
+                children.Add(m_removeDataConnectionsMethod);
+            }
+
+            base.GetChildren(context, children);
+        }
+
+        /// <summary>
+        /// Finds the child with the specified browse name.
+        /// </summary>
+        protected override BaseInstanceState FindChild(
+            ISystemContext context,
+            QualifiedName browseName,
+            bool createOrReplace,
+            BaseInstanceState replacement)
+        {
+            if (QualifiedName.IsNull(browseName))
+            {
+                return null;
+            }
+
+            BaseInstanceState instance = null;
+
+            switch (browseName.Name)
+            {
+                case Opc.Ua.BrowseNames.ConnectedVariables:
+                {
+                    if (createOrReplace)
+                    {
+                        if (ConnectedVariables == null)
+                        {
+                            if (replacement == null)
+                            {
+                                ConnectedVariables = new PropertyState<DataConnectionDataType[]>(this);
+                            }
+                            else
+                            {
+                                ConnectedVariables = (PropertyState<DataConnectionDataType[]>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = ConnectedVariables;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.AddDataConnections:
+                {
+                    if (createOrReplace)
+                    {
+                        if (AddDataConnections == null)
+                        {
+                            if (replacement == null)
+                            {
+                                AddDataConnections = new ConnectedVariablesTypeAddDataConnectionsMethodState(this);
+                            }
+                            else
+                            {
+                                AddDataConnections = (ConnectedVariablesTypeAddDataConnectionsMethodState)replacement;
+                            }
+                        }
+                    }
+
+                    instance = AddDataConnections;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.RemoveDataConnections:
+                {
+                    if (createOrReplace)
+                    {
+                        if (RemoveDataConnections == null)
+                        {
+                            if (replacement == null)
+                            {
+                                RemoveDataConnections = new ConnectedVariablesTypeRemoveDataConnectionsMethodState(this);
+                            }
+                            else
+                            {
+                                RemoveDataConnections = (ConnectedVariablesTypeRemoveDataConnectionsMethodState)replacement;
+                            }
+                        }
+                    }
+
+                    instance = RemoveDataConnections;
+                    break;
+                }
+            }
+
+            if (instance != null)
+            {
+                return instance;
+            }
+
+            return base.FindChild(context, browseName, createOrReplace, replacement);
+        }
+        #endregion
+
+        #region Private Fields
+        private PropertyState<DataConnectionDataType[]> m_connectedVariables;
+        private ConnectedVariablesTypeAddDataConnectionsMethodState m_addDataConnectionsMethod;
+        private ConnectedVariablesTypeRemoveDataConnectionsMethodState m_removeDataConnectionsMethod;
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region ConnectedVariablesTypeAddDataConnectionsMethodState Class
+    #if (!OPCUA_EXCLUDE_ConnectedVariablesTypeAddDataConnectionsMethodState)
+    /// <summary>
+    /// Stores an instance of the ConnectedVariablesTypeAddDataConnectionsMethodType Method.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class ConnectedVariablesTypeAddDataConnectionsMethodState : MethodState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public ConnectedVariablesTypeAddDataConnectionsMethodState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Constructs an instance of a node.
+        /// </summary>
+        /// <param name="parent">The parent.</param>
+        /// <returns>The new node.</returns>
+        public new static NodeState Construct(NodeState parent)
+        {
+            return new ConnectedVariablesTypeAddDataConnectionsMethodState(parent);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "//////////8EYYIKBAAAAAAAMgAAAENvbm5lY3RlZFZhcmlhYmxlc1R5cGVBZGREYXRhQ29ubmVjdGlv" +
+           "bnNNZXRob2RUeXBlAQAROwAvAQAROxE7AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3Vt" +
+           "ZW50cwEAEjsALgBEEjsAAJYCAAAAAQAqAQElAAAAFAAAAENvbmZpZ3VyYXRpb25WZXJzaW9uAQABOf//" +
+           "//8AAAAAAAEAKgEBIQAAABAAAABDb25uZWN0aW9uc1RvQWRkAQCYOQEAAAAAAAAAAAEAKAEBAAAAAQH/" +
+           "////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQATOwAuAEQTOwAAlgEAAAABACoBARkA" +
+           "AAAKAAAAQWRkUmVzdWx0cwATAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAA";
+        #endregion
+        #endif
+        #endregion
+
+        #region Event Callbacks
+        /// <summary>
+        /// Raised when the the method is called.
+        /// </summary>
+        public ConnectedVariablesTypeAddDataConnectionsMethodStateMethodCallHandler OnCall;
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Invokes the method, returns the result and output argument.
+        /// </summary>
+        /// <param name="context">The current context.</param>
+        /// <param name="objectId">The id of the object.</param>
+        /// <param name="inputArguments">The input arguments which have been already validated.</param>
+        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
+        /// <returns></returns>
+        protected override ServiceResult Call(
+            ISystemContext context,
+            NodeId objectId,
+            IList<object> inputArguments,
+            IList<object> outputArguments)
+        {
+            if (OnCall == null)
+            {
+                return base.Call(context, objectId, inputArguments, outputArguments);
+            }
+
+            ServiceResult result = null;
+
+            ConfigurationVersionDataType configurationVersion = (ConfigurationVersionDataType)ExtensionObject.ToEncodeable((ExtensionObject)inputArguments[0]);
+            DataConnectionDataType[] connectionsToAdd = (DataConnectionDataType[])ExtensionObject.ToArray(inputArguments[1], typeof(DataConnectionDataType));
+
+            StatusCode[] addResults = (StatusCode[])outputArguments[0];
+
+            if (OnCall != null)
+            {
+                result = OnCall(
+                    context,
+                    this,
+                    objectId,
+                    configurationVersion,
+                    connectionsToAdd,
+                    ref addResults);
+            }
+
+            outputArguments[0] = addResults;
+
+            return result;
+        }
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+
+    /// <summary>
+    /// Used to receive notifications when the method is called.
+    /// </summary>
+    /// <exclude />
+    public delegate ServiceResult ConnectedVariablesTypeAddDataConnectionsMethodStateMethodCallHandler(
+        ISystemContext context,
+        MethodState method,
+        NodeId objectId,
+        ConfigurationVersionDataType configurationVersion,
+        DataConnectionDataType[] connectionsToAdd,
+        ref StatusCode[] addResults);
+    #endif
+    #endregion
+
+    #region ConnectedVariablesTypeRemoveDataConnectionsMethodState Class
+    #if (!OPCUA_EXCLUDE_ConnectedVariablesTypeRemoveDataConnectionsMethodState)
+    /// <summary>
+    /// Stores an instance of the ConnectedVariablesTypeRemoveDataConnectionsMethodType Method.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class ConnectedVariablesTypeRemoveDataConnectionsMethodState : MethodState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public ConnectedVariablesTypeRemoveDataConnectionsMethodState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Constructs an instance of a node.
+        /// </summary>
+        /// <param name="parent">The parent.</param>
+        /// <returns>The new node.</returns>
+        public new static NodeState Construct(NodeState parent)
+        {
+            return new ConnectedVariablesTypeRemoveDataConnectionsMethodState(parent);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "//////////8EYYIKBAAAAAAANQAAAENvbm5lY3RlZFZhcmlhYmxlc1R5cGVSZW1vdmVEYXRhQ29ubmVj" +
+           "dGlvbnNNZXRob2RUeXBlAQAUOwAvAQAUOxQ7AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFy" +
+           "Z3VtZW50cwEAFTsALgBEFTsAAJYCAAAAAQAqAQElAAAAFAAAAENvbmZpZ3VyYXRpb25WZXJzaW9uAQAB" +
+           "Of////8AAAAAAAEAKgEBIgAAABMAAABDb25uZWN0aW9uc1RvUmVtb3ZlAAcBAAAAAAAAAAABACgBAQAA" +
+           "AAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEAFjsALgBEFjsAAJYBAAAAAQAq" +
+           "AQEcAAAADQAAAFJlbW92ZVJlc3VsdHMAEwEAAAAAAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
+        #endregion
+        #endif
+        #endregion
+
+        #region Event Callbacks
+        /// <summary>
+        /// Raised when the the method is called.
+        /// </summary>
+        public ConnectedVariablesTypeRemoveDataConnectionsMethodStateMethodCallHandler OnCall;
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Invokes the method, returns the result and output argument.
+        /// </summary>
+        /// <param name="context">The current context.</param>
+        /// <param name="objectId">The id of the object.</param>
+        /// <param name="inputArguments">The input arguments which have been already validated.</param>
+        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
+        /// <returns></returns>
+        protected override ServiceResult Call(
+            ISystemContext context,
+            NodeId objectId,
+            IList<object> inputArguments,
+            IList<object> outputArguments)
+        {
+            if (OnCall == null)
+            {
+                return base.Call(context, objectId, inputArguments, outputArguments);
+            }
+
+            ServiceResult result = null;
+
+            ConfigurationVersionDataType configurationVersion = (ConfigurationVersionDataType)ExtensionObject.ToEncodeable((ExtensionObject)inputArguments[0]);
+            uint[] connectionsToRemove = (uint[])inputArguments[1];
+
+            StatusCode[] removeResults = (StatusCode[])outputArguments[0];
+
+            if (OnCall != null)
+            {
+                result = OnCall(
+                    context,
+                    this,
+                    objectId,
+                    configurationVersion,
+                    connectionsToRemove,
+                    ref removeResults);
+            }
+
+            outputArguments[0] = removeResults;
+
+            return result;
+        }
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+
+    /// <summary>
+    /// Used to receive notifications when the method is called.
+    /// </summary>
+    /// <exclude />
+    public delegate ServiceResult ConnectedVariablesTypeRemoveDataConnectionsMethodStateMethodCallHandler(
+        ISystemContext context,
+        MethodState method,
+        NodeId objectId,
+        ConfigurationVersionDataType configurationVersion,
+        uint[] connectionsToRemove,
+        ref StatusCode[] removeResults);
+    #endif
+    #endregion
+
+    #region SubscribedDataSetMirrorState Class
+    #if (!OPCUA_EXCLUDE_SubscribedDataSetMirrorState)
+    /// <summary>
+    /// Stores an instance of the SubscribedDataSetMirrorType ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class SubscribedDataSetMirrorState : SubscribedDataSetState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public SubscribedDataSetMirrorState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.SubscribedDataSetMirrorType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "//////////8EYIAAAQAAAAAAIwAAAFN1YnNjcmliZWREYXRhU2V0TWlycm9yVHlwZUluc3RhbmNlAQAX" +
+           "OwEAFzv/////AgAAABVgiQoCAAAAAAAPAAAARGF0YVNldE1ldGFEYXRhAQAYOwAuAEQYOwAAAQC7OP//" +
+           "//8BAf////8AAAAAFWCJCgIAAAAAABUAAABNZXNzYWdlUmVjZWl2ZVRpbWVvdXQBABk7AC4ARBk7AAAB" +
+           "ACIB/////wEB/////wAAAAA=";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        #endregion
+
+        #region Private Fields
         #endregion
     }
     #endif
@@ -54668,11 +55421,6 @@ namespace Opc.Ua
         {
             base.InitializeOptionalChildren(context);
 
-            if (Modify != null)
-            {
-                Modify.Initialize(context, Modify_InitializationString);
-            }
-
             if (AddGroup != null)
             {
                 AddGroup.Initialize(context, AddGroup_InitializationString);
@@ -54680,36 +55428,31 @@ namespace Opc.Ua
         }
 
         #region Initialization String
-        private const string Modify_InitializationString =
-           "//////////8EYYIKBAAAAAAABgAAAE1vZGlmeQEAbToALwEAbTptOgAAAQH/////AQAAABVgqQoCAAAA" +
-           "AAAOAAAASW5wdXRBcmd1bWVudHMBAG46AC4ARG46AACWAQAAAAEAKgEBFgAAAAcAAABBZGRyZXNzAAz/" +
-           "////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
-
         private const string AddGroup_InitializationString =
            "//////////8EYYIKBAAAAAAACAAAAEFkZEdyb3VwAQBvOgAvAQBvOm86AAABAf////8CAAAAFWCpCgIA" +
-           "AAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAcDoALgBEcDoAAJYFAAAAAQAqAQEYAAAACQAAAEdyb3VwTmFt" +
-           "ZQAM/////wAAAAAAAQAqAQEdAAAADgAAAFNlY3VyaXR5UG9saWN5AAz/////AAAAAAABACoBAR0AAAAM" +
-           "AAAAU2VjdXJpdHlNb2RlAQAuAf////8AAAAAAAEAKgEBJgAAABUAAABTZWN1cml0eVRva2VuTGlmZXRp" +
-           "bWUBACIB/////wAAAAAAAQAqAQEUAAAABQAAAE5vbmNlAA//////AAAAAAABACgBAQAAAAEB/////wAA" +
-           "AAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEAcToALgBEcToAAJYCAAAAAQAqAQEWAAAABwAA" +
-           "AEdyb3VwSWQAEf////8AAAAAAAEAKgEBJQAAABQAAABSZXZpc2VkVG9rZW5MaWZldGltZQEAIgH/////" +
-           "AAAAAAABACgBAQAAAAEB/////wAAAAA=";
+           "AAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAcDoALgBEcDoAAJYIAAAAAQAqAQEYAAAACQAAAEdyb3VwTmFt" +
+           "ZQAM/////wAAAAAAAQAqAQEdAAAADAAAAFNlY3VyaXR5TW9kZQEALgH/////AAAAAAABACoBAR4AAAAP" +
+           "AAAAU2VjdXJpdHlHcm91cElkAAz/////AAAAAAABACoBARwAAAANAAAAS2V5U2VydmVyVXJscwAMAQAA" +
+           "AAAAAAAAAQAqAQEcAAAADQAAAE1heFBhY2tldFNpemUABf////8AAAAAAAEAKgEBIQAAABAAAABQdWJs" +
+           "aXNoaW5nT2Zmc2V0AQAiAf////8AAAAAAAEAKgEBIQAAABIAAABNZXNzYWdlUmVwZWF0Q291bnQAA///" +
+           "//8AAAAAAAEAKgEBIwAAABIAAABNZXNzYWdlUmVwZWF0RGVsYXkBACIB/////wAAAAAAAQAoAQEAAAAB" +
+           "Af////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAHE6AC4ARHE6AACWAQAAAAEAKgEB" +
+           "FgAAAAcAAABHcm91cElkABH/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
 
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAAGgAAAFVhZHBDb25uZWN0aW9uVHlwZUluc3RhbmNlAQBfOgEAXzr/////" +
-           "BQAAABVgiQoCAAAAAAALAAAAUHVibGlzaGVySWQBAGA6AC4ARGA6AAAADv////8BAf////8AAAAABGCA" +
+           "BAAAABVgiQoCAAAAAAALAAAAUHVibGlzaGVySWQBAGA6AC4ARGA6AAAADv////8BAf////8AAAAABGCA" +
            "CgEAAAAAAAYAAABTdGF0dXMBAGY6AC8BADM5ZjoAAP////8BAAAAFWCJCgIAAAAAAAUAAABTdGF0ZQEA" +
            "ZzoALgBEZzoAAAEANzn/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQWRkcmVzcwEAajoALgBEajoA" +
-           "AAAM/////wEB/////wAAAAAEYYIKBAAAAAAABgAAAE1vZGlmeQEAbToALwEAbTptOgAAAQH/////AQAA" +
-           "ABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAG46AC4ARG46AACWAQAAAAEAKgEBFgAAAAcAAABB" +
-           "ZGRyZXNzAAz/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAAACAAAAEFkZEdyb3VwAQBv" +
-           "OgAvAQBvOm86AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAcDoALgBEcDoA" +
-           "AJYFAAAAAQAqAQEYAAAACQAAAEdyb3VwTmFtZQAM/////wAAAAAAAQAqAQEdAAAADgAAAFNlY3VyaXR5" +
-           "UG9saWN5AAz/////AAAAAAABACoBAR0AAAAMAAAAU2VjdXJpdHlNb2RlAQAuAf////8AAAAAAAEAKgEB" +
-           "JgAAABUAAABTZWN1cml0eVRva2VuTGlmZXRpbWUBACIB/////wAAAAAAAQAqAQEUAAAABQAAAE5vbmNl" +
-           "AA//////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEA" +
-           "cToALgBEcToAAJYCAAAAAQAqAQEWAAAABwAAAEdyb3VwSWQAEf////8AAAAAAAEAKgEBJQAAABQAAABS" +
-           "ZXZpc2VkVG9rZW5MaWZldGltZQEAIgH/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
+           "AAAM/////wEB/////wAAAAAEYYIKBAAAAAAACAAAAEFkZEdyb3VwAQBvOgAvAQBvOm86AAABAf////8C" +
+           "AAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAcDoALgBEcDoAAJYIAAAAAQAqAQEYAAAACQAA" +
+           "AEdyb3VwTmFtZQAM/////wAAAAAAAQAqAQEdAAAADAAAAFNlY3VyaXR5TW9kZQEALgH/////AAAAAAAB" +
+           "ACoBAR4AAAAPAAAAU2VjdXJpdHlHcm91cElkAAz/////AAAAAAABACoBARwAAAANAAAAS2V5U2VydmVy" +
+           "VXJscwAMAQAAAAAAAAAAAQAqAQEcAAAADQAAAE1heFBhY2tldFNpemUABf////8AAAAAAAEAKgEBIQAA" +
+           "ABAAAABQdWJsaXNoaW5nT2Zmc2V0AQAiAf////8AAAAAAAEAKgEBIQAAABIAAABNZXNzYWdlUmVwZWF0" +
+           "Q291bnQAA/////8AAAAAAAEAKgEBIwAAABIAAABNZXNzYWdlUmVwZWF0RGVsYXkBACIB/////wAAAAAA" +
+           "AQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAHE6AC4ARHE6AACW" +
+           "AQAAAAEAKgEBFgAAAAcAAABHcm91cElkABH/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -54722,27 +55465,6 @@ namespace Opc.Ua
         {
             get { return (PropertyState<Guid>)base.PublisherId; }
             set { base.PublisherId = value; }
-        }
-
-        /// <summary>
-        /// A description for the UadpConnectionTypeModifyMethodType Method.
-        /// </summary>
-        public UadpConnectionTypeModifyMethodState Modify
-        {
-            get
-            {
-                return m_modifyMethod;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_modifyMethod, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_modifyMethod = value;
-            }
         }
 
         /// <summary>
@@ -54777,11 +55499,6 @@ namespace Opc.Ua
             ISystemContext context,
             IList<BaseInstanceState> children)
         {
-            if (m_modifyMethod != null)
-            {
-                children.Add(m_modifyMethod);
-            }
-
             if (m_addGroupMethod != null)
             {
                 children.Add(m_addGroupMethod);
@@ -54829,27 +55546,6 @@ namespace Opc.Ua
                     break;
                 }
 
-                case Opc.Ua.BrowseNames.Modify:
-                {
-                    if (createOrReplace)
-                    {
-                        if (Modify == null)
-                        {
-                            if (replacement == null)
-                            {
-                                Modify = new UadpConnectionTypeModifyMethodState(this);
-                            }
-                            else
-                            {
-                                Modify = (UadpConnectionTypeModifyMethodState)replacement;
-                            }
-                        }
-                    }
-
-                    instance = Modify;
-                    break;
-                }
-
                 case Opc.Ua.BrowseNames.AddGroup:
                 {
                     if (createOrReplace)
@@ -54882,127 +55578,9 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
-        private UadpConnectionTypeModifyMethodState m_modifyMethod;
         private UadpConnectionTypeAddGroupMethodState m_addGroupMethod;
         #endregion
     }
-    #endif
-    #endregion
-
-    #region UadpConnectionTypeModifyMethodState Class
-    #if (!OPCUA_EXCLUDE_UadpConnectionTypeModifyMethodState)
-    /// <summary>
-    /// Stores an instance of the UadpConnectionTypeModifyMethodType Method.
-    /// </summary>
-    /// <exclude />
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public partial class UadpConnectionTypeModifyMethodState : MethodState
-    {
-        #region Constructors
-        /// <summary>
-        /// Initializes the type with its default attribute values.
-        /// </summary>
-        public UadpConnectionTypeModifyMethodState(NodeState parent) : base(parent)
-        {
-        }
-
-        /// <summary>
-        /// Constructs an instance of a node.
-        /// </summary>
-        /// <param name="parent">The parent.</param>
-        /// <returns>The new node.</returns>
-        public new static NodeState Construct(NodeState parent)
-        {
-            return new UadpConnectionTypeModifyMethodState(parent);
-        }
-
-        #if (!OPCUA_EXCLUDE_InitializationStrings)
-        /// <summary>
-        /// Initializes the instance.
-        /// </summary>
-        protected override void Initialize(ISystemContext context)
-        {
-            Initialize(context, InitializationString);
-            InitializeOptionalChildren(context);
-        }
-
-        /// <summary>
-        /// Initializes the any option children defined for the instance.
-        /// </summary>
-        protected override void InitializeOptionalChildren(ISystemContext context)
-        {
-            base.InitializeOptionalChildren(context);
-        }
-
-        #region Initialization String
-        private const string InitializationString =
-           "//////////8EYYIKBAAAAAAAIgAAAFVhZHBDb25uZWN0aW9uVHlwZU1vZGlmeU1ldGhvZFR5cGUBAHI6" +
-           "AC8BAHI6cjoAAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQBzOgAuAERzOgAA" +
-           "lgEAAAABACoBARYAAAAHAAAAQWRkcmVzcwAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
-        #endregion
-        #endif
-        #endregion
-
-        #region Event Callbacks
-        /// <summary>
-        /// Raised when the the method is called.
-        /// </summary>
-        public UadpConnectionTypeModifyMethodStateMethodCallHandler OnCall;
-        #endregion
-
-        #region Public Properties
-        #endregion
-
-        #region Overridden Methods
-        /// <summary>
-        /// Invokes the method, returns the result and output argument.
-        /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
-        protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
-        {
-            if (OnCall == null)
-            {
-                return base.Call(context, objectId, inputArguments, outputArguments);
-            }
-
-            ServiceResult result = null;
-
-            string address = (string)inputArguments[0];
-
-            if (OnCall != null)
-            {
-                result = OnCall(
-                    context,
-                    this,
-                    objectId,
-                    address);
-            }
-
-            return result;
-        }
-        #endregion
-
-        #region Private Fields
-        #endregion
-    }
-
-    /// <summary>
-    /// Used to receive notifications when the method is called.
-    /// </summary>
-    /// <exclude />
-    public delegate ServiceResult UadpConnectionTypeModifyMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
-        string address);
     #endif
     #endregion
 
@@ -55055,12 +55633,14 @@ namespace Opc.Ua
         private const string InitializationString =
            "//////////8EYYIKBAAAAAAAJAAAAFVhZHBDb25uZWN0aW9uVHlwZUFkZEdyb3VwTWV0aG9kVHlwZQEA" +
            "dDoALwEAdDp0OgAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAHU6AC4ARHU6" +
-           "AACWBQAAAAEAKgEBGAAAAAkAAABHcm91cE5hbWUADP////8AAAAAAAEAKgEBHQAAAA4AAABTZWN1cml0" +
-           "eVBvbGljeQAM/////wAAAAAAAQAqAQEdAAAADAAAAFNlY3VyaXR5TW9kZQEALgH/////AAAAAAABACoB" +
-           "ASYAAAAVAAAAU2VjdXJpdHlUb2tlbkxpZmV0aW1lAQAiAf////8AAAAAAAEAKgEBFAAAAAUAAABOb25j" +
-           "ZQAP/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMB" +
-           "AHY6AC4ARHY6AACWAgAAAAEAKgEBFgAAAAcAAABHcm91cElkABH/////AAAAAAABACoBASUAAAAUAAAA" +
-           "UmV2aXNlZFRva2VuTGlmZXRpbWUBACIB/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
+           "AACWCAAAAAEAKgEBGAAAAAkAAABHcm91cE5hbWUADP////8AAAAAAAEAKgEBHQAAAAwAAABTZWN1cml0" +
+           "eU1vZGUBAC4B/////wAAAAAAAQAqAQEeAAAADwAAAFNlY3VyaXR5R3JvdXBJZAAM/////wAAAAAAAQAq" +
+           "AQEcAAAADQAAAEtleVNlcnZlclVybHMADAEAAAAAAAAAAAEAKgEBHAAAAA0AAABNYXhQYWNrZXRTaXpl" +
+           "AAX/////AAAAAAABACoBASEAAAAQAAAAUHVibGlzaGluZ09mZnNldAEAIgH/////AAAAAAABACoBASEA" +
+           "AAASAAAATWVzc2FnZVJlcGVhdENvdW50AAP/////AAAAAAABACoBASMAAAASAAAATWVzc2FnZVJlcGVh" +
+           "dERlbGF5AQAiAf////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJn" +
+           "dW1lbnRzAQB2OgAuAER2OgAAlgEAAAABACoBARYAAAAHAAAAR3JvdXBJZAAR/////wAAAAAAAQAoAQEA" +
+           "AAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -55098,13 +55678,15 @@ namespace Opc.Ua
             ServiceResult result = null;
 
             string groupName = (string)inputArguments[0];
-            string securityPolicy = (string)inputArguments[1];
-            MessageSecurityMode securityMode = (MessageSecurityMode)inputArguments[2];
-            double securityTokenLifetime = (double)inputArguments[3];
-            byte[] nonce = (byte[])inputArguments[4];
+            MessageSecurityMode securityMode = (MessageSecurityMode)inputArguments[1];
+            string securityGroupId = (string)inputArguments[2];
+            string[] keyServerUrls = (string[])inputArguments[3];
+            ushort maxPacketSize = (ushort)inputArguments[4];
+            double publishingOffset = (double)inputArguments[5];
+            byte messageRepeatCount = (byte)inputArguments[6];
+            double messageRepeatDelay = (double)inputArguments[7];
 
             NodeId groupId = (NodeId)outputArguments[0];
-            double revisedTokenLifetime = (double)outputArguments[1];
 
             if (OnCall != null)
             {
@@ -55113,16 +55695,17 @@ namespace Opc.Ua
                     this,
                     objectId,
                     groupName,
-                    securityPolicy,
                     securityMode,
-                    securityTokenLifetime,
-                    nonce,
-                    ref groupId,
-                    ref revisedTokenLifetime);
+                    securityGroupId,
+                    keyServerUrls,
+                    maxPacketSize,
+                    publishingOffset,
+                    messageRepeatCount,
+                    messageRepeatDelay,
+                    ref groupId);
             }
 
             outputArguments[0] = groupId;
-            outputArguments[1] = revisedTokenLifetime;
 
             return result;
         }
@@ -55141,12 +55724,14 @@ namespace Opc.Ua
         MethodState method,
         NodeId objectId,
         string groupName,
-        string securityPolicy,
         MessageSecurityMode securityMode,
-        double securityTokenLifetime,
-        byte[] nonce,
-        ref NodeId groupId,
-        ref double revisedTokenLifetime);
+        string securityGroupId,
+        string[] keyServerUrls,
+        ushort maxPacketSize,
+        double publishingOffset,
+        byte messageRepeatCount,
+        double messageRepeatDelay,
+        ref NodeId groupId);
     #endif
     #endregion
 
@@ -55192,11 +55777,6 @@ namespace Opc.Ua
         {
             base.InitializeOptionalChildren(context);
 
-            if (Modify != null)
-            {
-                Modify.Initialize(context, Modify_InitializationString);
-            }
-
             if (AddMessageWriter != null)
             {
                 AddMessageWriter.Initialize(context, AddMessageWriter_InitializationString);
@@ -55209,138 +55789,51 @@ namespace Opc.Ua
         }
 
         #region Initialization String
-        private const string Modify_InitializationString =
-           "//////////8EYYIKBAAAAAAABgAAAE1vZGlmeQEAjToALwEAjTqNOgAAAQH/////AgAAABVgqQoCAAAA" +
-           "AAAOAAAASW5wdXRBcmd1bWVudHMBAI46AC4ARI46AACWBAAAAAEAKgEBHQAAAA4AAABTZWN1cml0eVBv" +
-           "bGljeQAM/////wAAAAAAAQAqAQEdAAAADAAAAFNlY3VyaXR5TW9kZQEALgH/////AAAAAAABACoBASYA" +
-           "AAAVAAAAU2VjdXJpdHlUb2tlbkxpZmV0aW1lAQAiAf////8AAAAAAAEAKgEBFAAAAAUAAABOb25jZQAP" +
-           "/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAI86" +
-           "AC4ARI86AACWAQAAAAEAKgEBJQAAABQAAABSZXZpc2VkVG9rZW5MaWZldGltZQEAIgH/////AAAAAAAB" +
-           "ACgBAQAAAAEB/////wAAAAA=";
-
         private const string AddMessageWriter_InitializationString =
            "//////////8EYYIKBAAAAAAAEAAAAEFkZE1lc3NhZ2VXcml0ZXIBAJI6AC8BAJI6kjoAAAEB/////wIA" +
-           "AAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQCTOgAuAESTOgAAlgQAAAABACoBASAAAAARAAAA" +
+           "AAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQCTOgAuAESTOgAAlgIAAAABACoBASAAAAARAAAA" +
            "TWVzc2FnZVdyaXRlck5hbWUADP////8AAAAAAAEAKgEBIQAAABIAAABQdWJsaXNoZWREYXRhU2V0SWQA" +
-           "Ef////8AAAAAAAEAKgEBIQAAABIAAABNZXNzYWdlUmVwZWF0Q291bnQAA/////8AAAAAAAEAKgEBIwAA" +
-           "ABIAAABNZXNzYWdlUmVwZWF0RGVsYXkBACIB/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIA" +
-           "AAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAJQ6AC4ARJQ6AACWAQAAAAEAKgEBHgAAAA8AAABNZXNzYWdl" +
-           "V3JpdGVySWQAEf////8AAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
+           "Ef////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQCU" +
+           "OgAuAESUOgAAlgEAAAABACoBAR4AAAAPAAAATWVzc2FnZVdyaXRlcklkABH/////AAAAAAABACgBAQAA" +
+           "AAEB/////wAAAAA=";
 
         private const string AddMessageReader_InitializationString =
            "//////////8EYYIKBAAAAAAAEAAAAEFkZE1lc3NhZ2VSZWFkZXIBAJU6AC8BAJU6lToAAAEB/////wIA" +
-           "AAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQCWOgAuAESWOgAAlgYAAAABACoBASAAAAARAAAA" +
+           "AAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQCWOgAuAESWOgAAlgUAAAABACoBASAAAAARAAAA" +
            "TWVzc2FnZVJlYWRlck5hbWUADP////8AAAAAAAEAKgEBGgAAAAsAAABQdWJsaXNoZXJJZAAO/////wAA" +
            "AAAAAQAqAQEeAAAADwAAAERhdGFTZXRXcml0ZXJJZAAF/////wAAAAAAAQAqAQEgAAAADwAAAERhdGFT" +
-           "ZXRNZXRhRGF0YQEAuzj/////AAAAAAABACoBASIAAAARAAAARGF0YVVwZGF0ZVRpbWVvdXQBACIB////" +
-           "/wAAAAAAAQAqAQEhAAAAEAAAAENvbm5lY3Rpb25zVG9BZGQBAJg5AQAAAAAAAAAAAQAoAQEAAAABAf//" +
-           "//8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAJc6AC4ARJc6AACWAwAAAAEAKgEBKQAA" +
-           "ABgAAABSZXZpc2VkRGF0YVVwZGF0ZVRpbWVvdXQBACIB/////wAAAAAAAQAqAQEZAAAACgAAAEFkZFJl" +
-           "c3VsdHMAEwEAAAAAAAAAAAEAKgEBHgAAAA8AAABNZXNzYWdlUmVhZGVySWQAEf////8AAAAAAAEAKAEB" +
-           "AAAAAQH/////AAAAAA==";
+           "ZXRNZXRhRGF0YQEAuzj/////AAAAAAABACoBASYAAAAVAAAATWVzc2FnZVJlY2VpdmVUaW1lb3V0AQAi" +
+           "Af////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQCX" +
+           "OgAuAESXOgAAlgIAAAABACoBAR4AAAAPAAAATWVzc2FnZVJlYWRlcklkABH/////AAAAAAABACoBAS0A" +
+           "AAAcAAAAUmV2aXNlZE1lc3NhZ2VSZWNlaXZlVGltZW91dAEAIgH/////AAAAAAABACgBAQAAAAEB////" +
+           "/wAAAAA=";
 
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAAFQAAAFVhZHBHcm91cFR5cGVJbnN0YW5jZQEAdzoBAHc6/////wgAAAAV" +
-           "YIkKAgAAAAAADgAAAFNlY3VyaXR5UG9saWN5AQCJOgAuAESJOgAAAAz/////AQH/////AAAAABVgiQoC" +
-           "AAAAAAAMAAAAU2VjdXJpdHlNb2RlAQCKOgAuAESKOgAAAQAuAf////8BAf////8AAAAAFWCJCgIAAAAA" +
-           "ABUAAABTZWN1cml0eVRva2VuTGlmZXRpbWUBAIs6AC4ARIs6AAABACIB/////wEB/////wAAAAAVYIkK" +
-           "AgAAAAAADQAAAE1heFBhY2tldFNpemUBAIw6AC4ARIw6AAAABf////8BAf////8AAAAABGGCCgQAAAAA" +
-           "AAYAAABNb2RpZnkBAI06AC8BAI06jToAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1l" +
-           "bnRzAQCOOgAuAESOOgAAlgQAAAABACoBAR0AAAAOAAAAU2VjdXJpdHlQb2xpY3kADP////8AAAAAAAEA" +
-           "KgEBHQAAAAwAAABTZWN1cml0eU1vZGUBAC4B/////wAAAAAAAQAqAQEmAAAAFQAAAFNlY3VyaXR5VG9r" +
-           "ZW5MaWZldGltZQEAIgH/////AAAAAAABACoBARQAAAAFAAAATm9uY2UAD/////8AAAAAAAEAKAEBAAAA" +
-           "AQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQCPOgAuAESPOgAAlgEAAAABACoB" +
-           "ASUAAAAUAAAAUmV2aXNlZFRva2VuTGlmZXRpbWUBACIB/////wAAAAAAAQAoAQEAAAABAf////8AAAAA" +
-           "BGGCCgQAAAAAABAAAABHZXRTZWN1cml0eVRva2VuAQCQOgAvAQCQOpA6AAABAf////8BAAAAFWCpCgIA" +
-           "AAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAJE6AC4ARJE6AACWBgAAAAEAKgEBHQAAAA4AAABTZWN1cml0" +
-           "eVBvbGljeQAM/////wAAAAAAAQAqAQEdAAAADAAAAFNlY3VyaXR5TW9kZQEALgH/////AAAAAAABACoB" +
-           "AR8AAAAQAAAAQ3VycmVudFNlbmRlcktleQAP/////wAAAAAAAQAqAQEdAAAADgAAAEN1cnJlbnRUb2tl" +
-           "bklkAAP/////AAAAAAABACoBAR4AAAANAAAAVGltZVRvTmV4dEtleQEAIgH/////AAAAAAABACoBARwA" +
-           "AAANAAAATmV4dFNlbmRlcktleQAP/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAAAABAA" +
-           "AABBZGRNZXNzYWdlV3JpdGVyAQCSOgAvAQCSOpI6AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1" +
-           "dEFyZ3VtZW50cwEAkzoALgBEkzoAAJYEAAAAAQAqAQEgAAAAEQAAAE1lc3NhZ2VXcml0ZXJOYW1lAAz/" +
-           "////AAAAAAABACoBASEAAAASAAAAUHVibGlzaGVkRGF0YVNldElkABH/////AAAAAAABACoBASEAAAAS" +
-           "AAAATWVzc2FnZVJlcGVhdENvdW50AAP/////AAAAAAABACoBASMAAAASAAAATWVzc2FnZVJlcGVhdERl" +
-           "bGF5AQAiAf////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1l" +
-           "bnRzAQCUOgAuAESUOgAAlgEAAAABACoBAR4AAAAPAAAATWVzc2FnZVdyaXRlcklkABH/////AAAAAAAB" +
-           "ACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAAAEAAAAEFkZE1lc3NhZ2VSZWFkZXIBAJU6AC8BAJU6lToA" +
-           "AAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQCWOgAuAESWOgAAlgYAAAABACoB" +
-           "ASAAAAARAAAATWVzc2FnZVJlYWRlck5hbWUADP////8AAAAAAAEAKgEBGgAAAAsAAABQdWJsaXNoZXJJ" +
-           "ZAAO/////wAAAAAAAQAqAQEeAAAADwAAAERhdGFTZXRXcml0ZXJJZAAF/////wAAAAAAAQAqAQEgAAAA" +
-           "DwAAAERhdGFTZXRNZXRhRGF0YQEAuzj/////AAAAAAABACoBASIAAAARAAAARGF0YVVwZGF0ZVRpbWVv" +
-           "dXQBACIB/////wAAAAAAAQAqAQEhAAAAEAAAAENvbm5lY3Rpb25zVG9BZGQBAJg5AQAAAAAAAAAAAQAo" +
-           "AQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAJc6AC4ARJc6AACWAwAA" +
-           "AAEAKgEBKQAAABgAAABSZXZpc2VkRGF0YVVwZGF0ZVRpbWVvdXQBACIB/////wAAAAAAAQAqAQEZAAAA" +
-           "CgAAAEFkZFJlc3VsdHMAEwEAAAAAAAAAAAEAKgEBHgAAAA8AAABNZXNzYWdlUmVhZGVySWQAEf////8A" +
-           "AAAAAAEAKAEBAAAAAQH/////AAAAAA==";
+           "YIkKAgAAAAAAEgAAAFB1Ymxpc2hpbmdJbnRlcnZhbAEAIDsALgBEIDsAAAEAIgH/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAANAAAAS2VlcEFsaXZlVGltZQEAITsALgBEITsAAAEAIgH/////AQH/////AAAAABVg" +
+           "iQoCAAAAAAANAAAATWF4UGFja2V0U2l6ZQEAjDoALgBEjDoAAAAF/////wEB/////wAAAAAVYIkKAgAA" +
+           "AAAAEAAAAFB1Ymxpc2hpbmdPZmZzZXQBAC87AC4ARC87AAABACIB/////wEB/////wAAAAAVYIkKAgAA" +
+           "AAAAEgAAAE1lc3NhZ2VSZXBlYXRDb3VudAEAMDsALgBEMDsAAAAD/////wEB/////wAAAAAVYIkKAgAA" +
+           "AAAAEgAAAE1lc3NhZ2VSZXBlYXREZWxheQEAMTsALgBEMTsAAAEAIgH/////AQH/////AAAAAARhggoE" +
+           "AAAAAAAQAAAAQWRkTWVzc2FnZVdyaXRlcgEAkjoALwEAkjqSOgAAAQH/////AgAAABVgqQoCAAAAAAAO" +
+           "AAAASW5wdXRBcmd1bWVudHMBAJM6AC4ARJM6AACWAgAAAAEAKgEBIAAAABEAAABNZXNzYWdlV3JpdGVy" +
+           "TmFtZQAM/////wAAAAAAAQAqAQEhAAAAEgAAAFB1Ymxpc2hlZERhdGFTZXRJZAAR/////wAAAAAAAQAo" +
+           "AQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAJQ6AC4ARJQ6AACWAQAA" +
+           "AAEAKgEBHgAAAA8AAABNZXNzYWdlV3JpdGVySWQAEf////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARh" +
+           "ggoEAAAAAAAQAAAAQWRkTWVzc2FnZVJlYWRlcgEAlToALwEAlTqVOgAAAQH/////AgAAABVgqQoCAAAA" +
+           "AAAOAAAASW5wdXRBcmd1bWVudHMBAJY6AC4ARJY6AACWBQAAAAEAKgEBIAAAABEAAABNZXNzYWdlUmVh" +
+           "ZGVyTmFtZQAM/////wAAAAAAAQAqAQEaAAAACwAAAFB1Ymxpc2hlcklkAA7/////AAAAAAABACoBAR4A" +
+           "AAAPAAAARGF0YVNldFdyaXRlcklkAAX/////AAAAAAABACoBASAAAAAPAAAARGF0YVNldE1ldGFEYXRh" +
+           "AQC7OP////8AAAAAAAEAKgEBJgAAABUAAABNZXNzYWdlUmVjZWl2ZVRpbWVvdXQBACIB/////wAAAAAA" +
+           "AQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAJc6AC4ARJc6AACW" +
+           "AgAAAAEAKgEBHgAAAA8AAABNZXNzYWdlUmVhZGVySWQAEf////8AAAAAAAEAKgEBLQAAABwAAABSZXZp" +
+           "c2VkTWVzc2FnZVJlY2VpdmVUaW1lb3V0AQAiAf////8AAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the SecurityPolicy Property.
-        /// </summary>
-        public PropertyState<string> SecurityPolicy
-        {
-            get
-            {
-                return m_securityPolicy;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_securityPolicy, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_securityPolicy = value;
-            }
-        }
-
-        /// <summary>
-        /// A description for the SecurityMode Property.
-        /// </summary>
-        public PropertyState<MessageSecurityMode> SecurityMode
-        {
-            get
-            {
-                return m_securityMode;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_securityMode, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_securityMode = value;
-            }
-        }
-
-        /// <summary>
-        /// A description for the SecurityTokenLifetime Property.
-        /// </summary>
-        public PropertyState<double> SecurityTokenLifetime
-        {
-            get
-            {
-                return m_securityTokenLifetime;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_securityTokenLifetime, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_securityTokenLifetime = value;
-            }
-        }
-
         /// <summary>
         /// A description for the MaxPacketSize Property.
         /// </summary>
@@ -55363,44 +55856,65 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the UadpGroupTypeModifyMethodType Method.
+        /// A description for the PublishingOffset Property.
         /// </summary>
-        public UadpGroupTypeModifyMethodState Modify
+        public PropertyState<double> PublishingOffset
         {
             get
             {
-                return m_modifyMethod;
+                return m_publishingOffset;
             }
 
             set
             {
-                if (!Object.ReferenceEquals(m_modifyMethod, value))
+                if (!Object.ReferenceEquals(m_publishingOffset, value))
                 {
                     ChangeMasks |= NodeStateChangeMasks.Children;
                 }
 
-                m_modifyMethod = value;
+                m_publishingOffset = value;
             }
         }
 
         /// <summary>
-        /// A description for the UadpGroupTypeGetSecurityTokenMethodType Method.
+        /// A description for the MessageRepeatCount Property.
         /// </summary>
-        public UadpGroupTypeGetSecurityTokenMethodState GetSecurityToken
+        public PropertyState<byte> MessageRepeatCount
         {
             get
             {
-                return m_getSecurityTokenMethod;
+                return m_messageRepeatCount;
             }
 
             set
             {
-                if (!Object.ReferenceEquals(m_getSecurityTokenMethod, value))
+                if (!Object.ReferenceEquals(m_messageRepeatCount, value))
                 {
                     ChangeMasks |= NodeStateChangeMasks.Children;
                 }
 
-                m_getSecurityTokenMethod = value;
+                m_messageRepeatCount = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the MessageRepeatDelay Property.
+        /// </summary>
+        public PropertyState<double> MessageRepeatDelay
+        {
+            get
+            {
+                return m_messageRepeatDelay;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_messageRepeatDelay, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_messageRepeatDelay = value;
             }
         }
 
@@ -55457,34 +55971,24 @@ namespace Opc.Ua
             ISystemContext context,
             IList<BaseInstanceState> children)
         {
-            if (m_securityPolicy != null)
-            {
-                children.Add(m_securityPolicy);
-            }
-
-            if (m_securityMode != null)
-            {
-                children.Add(m_securityMode);
-            }
-
-            if (m_securityTokenLifetime != null)
-            {
-                children.Add(m_securityTokenLifetime);
-            }
-
             if (m_maxPacketSize != null)
             {
                 children.Add(m_maxPacketSize);
             }
 
-            if (m_modifyMethod != null)
+            if (m_publishingOffset != null)
             {
-                children.Add(m_modifyMethod);
+                children.Add(m_publishingOffset);
             }
 
-            if (m_getSecurityTokenMethod != null)
+            if (m_messageRepeatCount != null)
             {
-                children.Add(m_getSecurityTokenMethod);
+                children.Add(m_messageRepeatCount);
+            }
+
+            if (m_messageRepeatDelay != null)
+            {
+                children.Add(m_messageRepeatDelay);
             }
 
             if (m_addMessageWriterMethod != null)
@@ -55518,69 +56022,6 @@ namespace Opc.Ua
 
             switch (browseName.Name)
             {
-                case Opc.Ua.BrowseNames.SecurityPolicy:
-                {
-                    if (createOrReplace)
-                    {
-                        if (SecurityPolicy == null)
-                        {
-                            if (replacement == null)
-                            {
-                                SecurityPolicy = new PropertyState<string>(this);
-                            }
-                            else
-                            {
-                                SecurityPolicy = (PropertyState<string>)replacement;
-                            }
-                        }
-                    }
-
-                    instance = SecurityPolicy;
-                    break;
-                }
-
-                case Opc.Ua.BrowseNames.SecurityMode:
-                {
-                    if (createOrReplace)
-                    {
-                        if (SecurityMode == null)
-                        {
-                            if (replacement == null)
-                            {
-                                SecurityMode = new PropertyState<MessageSecurityMode>(this);
-                            }
-                            else
-                            {
-                                SecurityMode = (PropertyState<MessageSecurityMode>)replacement;
-                            }
-                        }
-                    }
-
-                    instance = SecurityMode;
-                    break;
-                }
-
-                case Opc.Ua.BrowseNames.SecurityTokenLifetime:
-                {
-                    if (createOrReplace)
-                    {
-                        if (SecurityTokenLifetime == null)
-                        {
-                            if (replacement == null)
-                            {
-                                SecurityTokenLifetime = new PropertyState<double>(this);
-                            }
-                            else
-                            {
-                                SecurityTokenLifetime = (PropertyState<double>)replacement;
-                            }
-                        }
-                    }
-
-                    instance = SecurityTokenLifetime;
-                    break;
-                }
-
                 case Opc.Ua.BrowseNames.MaxPacketSize:
                 {
                     if (createOrReplace)
@@ -55602,45 +56043,66 @@ namespace Opc.Ua
                     break;
                 }
 
-                case Opc.Ua.BrowseNames.Modify:
+                case Opc.Ua.BrowseNames.PublishingOffset:
                 {
                     if (createOrReplace)
                     {
-                        if (Modify == null)
+                        if (PublishingOffset == null)
                         {
                             if (replacement == null)
                             {
-                                Modify = new UadpGroupTypeModifyMethodState(this);
+                                PublishingOffset = new PropertyState<double>(this);
                             }
                             else
                             {
-                                Modify = (UadpGroupTypeModifyMethodState)replacement;
+                                PublishingOffset = (PropertyState<double>)replacement;
                             }
                         }
                     }
 
-                    instance = Modify;
+                    instance = PublishingOffset;
                     break;
                 }
 
-                case Opc.Ua.BrowseNames.GetSecurityToken:
+                case Opc.Ua.BrowseNames.MessageRepeatCount:
                 {
                     if (createOrReplace)
                     {
-                        if (GetSecurityToken == null)
+                        if (MessageRepeatCount == null)
                         {
                             if (replacement == null)
                             {
-                                GetSecurityToken = new UadpGroupTypeGetSecurityTokenMethodState(this);
+                                MessageRepeatCount = new PropertyState<byte>(this);
                             }
                             else
                             {
-                                GetSecurityToken = (UadpGroupTypeGetSecurityTokenMethodState)replacement;
+                                MessageRepeatCount = (PropertyState<byte>)replacement;
                             }
                         }
                     }
 
-                    instance = GetSecurityToken;
+                    instance = MessageRepeatCount;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.MessageRepeatDelay:
+                {
+                    if (createOrReplace)
+                    {
+                        if (MessageRepeatDelay == null)
+                        {
+                            if (replacement == null)
+                            {
+                                MessageRepeatDelay = new PropertyState<double>(this);
+                            }
+                            else
+                            {
+                                MessageRepeatDelay = (PropertyState<double>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = MessageRepeatDelay;
                     break;
                 }
 
@@ -55697,295 +56159,14 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
-        private PropertyState<string> m_securityPolicy;
-        private PropertyState<MessageSecurityMode> m_securityMode;
-        private PropertyState<double> m_securityTokenLifetime;
         private PropertyState<ushort> m_maxPacketSize;
-        private UadpGroupTypeModifyMethodState m_modifyMethod;
-        private UadpGroupTypeGetSecurityTokenMethodState m_getSecurityTokenMethod;
+        private PropertyState<double> m_publishingOffset;
+        private PropertyState<byte> m_messageRepeatCount;
+        private PropertyState<double> m_messageRepeatDelay;
         private UadpGroupTypeAddWriterMethodState m_addMessageWriterMethod;
         private UadpGroupTypeAddReaderMethodState m_addMessageReaderMethod;
         #endregion
     }
-    #endif
-    #endregion
-
-    #region UadpGroupTypeModifyMethodState Class
-    #if (!OPCUA_EXCLUDE_UadpGroupTypeModifyMethodState)
-    /// <summary>
-    /// Stores an instance of the UadpGroupTypeModifyMethodType Method.
-    /// </summary>
-    /// <exclude />
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public partial class UadpGroupTypeModifyMethodState : MethodState
-    {
-        #region Constructors
-        /// <summary>
-        /// Initializes the type with its default attribute values.
-        /// </summary>
-        public UadpGroupTypeModifyMethodState(NodeState parent) : base(parent)
-        {
-        }
-
-        /// <summary>
-        /// Constructs an instance of a node.
-        /// </summary>
-        /// <param name="parent">The parent.</param>
-        /// <returns>The new node.</returns>
-        public new static NodeState Construct(NodeState parent)
-        {
-            return new UadpGroupTypeModifyMethodState(parent);
-        }
-
-        #if (!OPCUA_EXCLUDE_InitializationStrings)
-        /// <summary>
-        /// Initializes the instance.
-        /// </summary>
-        protected override void Initialize(ISystemContext context)
-        {
-            Initialize(context, InitializationString);
-            InitializeOptionalChildren(context);
-        }
-
-        /// <summary>
-        /// Initializes the any option children defined for the instance.
-        /// </summary>
-        protected override void InitializeOptionalChildren(ISystemContext context)
-        {
-            base.InitializeOptionalChildren(context);
-        }
-
-        #region Initialization String
-        private const string InitializationString =
-           "//////////8EYYIKBAAAAAAAHQAAAFVhZHBHcm91cFR5cGVNb2RpZnlNZXRob2RUeXBlAQCYOgAvAQCY" +
-           "Opg6AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAmToALgBEmToAAJYEAAAA" +
-           "AQAqAQEdAAAADgAAAFNlY3VyaXR5UG9saWN5AAz/////AAAAAAABACoBAR0AAAAMAAAAU2VjdXJpdHlN" +
-           "b2RlAQAuAf////8AAAAAAAEAKgEBJgAAABUAAABTZWN1cml0eVRva2VuTGlmZXRpbWUBACIB/////wAA" +
-           "AAAAAQAqAQEUAAAABQAAAE5vbmNlAA//////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAA" +
-           "DwAAAE91dHB1dEFyZ3VtZW50cwEAmjoALgBEmjoAAJYBAAAAAQAqAQElAAAAFAAAAFJldmlzZWRUb2tl" +
-           "bkxpZmV0aW1lAQAiAf////8AAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
-        #endregion
-        #endif
-        #endregion
-
-        #region Event Callbacks
-        /// <summary>
-        /// Raised when the the method is called.
-        /// </summary>
-        public UadpGroupTypeModifyMethodStateMethodCallHandler OnCall;
-        #endregion
-
-        #region Public Properties
-        #endregion
-
-        #region Overridden Methods
-        /// <summary>
-        /// Invokes the method, returns the result and output argument.
-        /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
-        protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
-        {
-            if (OnCall == null)
-            {
-                return base.Call(context, objectId, inputArguments, outputArguments);
-            }
-
-            ServiceResult result = null;
-
-            string securityPolicy = (string)inputArguments[0];
-            MessageSecurityMode securityMode = (MessageSecurityMode)inputArguments[1];
-            double securityTokenLifetime = (double)inputArguments[2];
-            byte[] nonce = (byte[])inputArguments[3];
-
-            double revisedTokenLifetime = (double)outputArguments[0];
-
-            if (OnCall != null)
-            {
-                result = OnCall(
-                    context,
-                    this,
-                    objectId,
-                    securityPolicy,
-                    securityMode,
-                    securityTokenLifetime,
-                    nonce,
-                    ref revisedTokenLifetime);
-            }
-
-            outputArguments[0] = revisedTokenLifetime;
-
-            return result;
-        }
-        #endregion
-
-        #region Private Fields
-        #endregion
-    }
-
-    /// <summary>
-    /// Used to receive notifications when the method is called.
-    /// </summary>
-    /// <exclude />
-    public delegate ServiceResult UadpGroupTypeModifyMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
-        string securityPolicy,
-        MessageSecurityMode securityMode,
-        double securityTokenLifetime,
-        byte[] nonce,
-        ref double revisedTokenLifetime);
-    #endif
-    #endregion
-
-    #region UadpGroupTypeGetSecurityTokenMethodState Class
-    #if (!OPCUA_EXCLUDE_UadpGroupTypeGetSecurityTokenMethodState)
-    /// <summary>
-    /// Stores an instance of the UadpGroupTypeGetSecurityTokenMethodType Method.
-    /// </summary>
-    /// <exclude />
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public partial class UadpGroupTypeGetSecurityTokenMethodState : MethodState
-    {
-        #region Constructors
-        /// <summary>
-        /// Initializes the type with its default attribute values.
-        /// </summary>
-        public UadpGroupTypeGetSecurityTokenMethodState(NodeState parent) : base(parent)
-        {
-        }
-
-        /// <summary>
-        /// Constructs an instance of a node.
-        /// </summary>
-        /// <param name="parent">The parent.</param>
-        /// <returns>The new node.</returns>
-        public new static NodeState Construct(NodeState parent)
-        {
-            return new UadpGroupTypeGetSecurityTokenMethodState(parent);
-        }
-
-        #if (!OPCUA_EXCLUDE_InitializationStrings)
-        /// <summary>
-        /// Initializes the instance.
-        /// </summary>
-        protected override void Initialize(ISystemContext context)
-        {
-            Initialize(context, InitializationString);
-            InitializeOptionalChildren(context);
-        }
-
-        /// <summary>
-        /// Initializes the any option children defined for the instance.
-        /// </summary>
-        protected override void InitializeOptionalChildren(ISystemContext context)
-        {
-            base.InitializeOptionalChildren(context);
-        }
-
-        #region Initialization String
-        private const string InitializationString =
-           "//////////8EYYIKBAAAAAAAJwAAAFVhZHBHcm91cFR5cGVHZXRTZWN1cml0eVRva2VuTWV0aG9kVHlw" +
-           "ZQEAmzoALwEAmzqbOgAAAQH/////AQAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQCcOgAu" +
-           "AEScOgAAlgYAAAABACoBAR0AAAAOAAAAU2VjdXJpdHlQb2xpY3kADP////8AAAAAAAEAKgEBHQAAAAwA" +
-           "AABTZWN1cml0eU1vZGUBAC4B/////wAAAAAAAQAqAQEfAAAAEAAAAEN1cnJlbnRTZW5kZXJLZXkAD///" +
-           "//8AAAAAAAEAKgEBHQAAAA4AAABDdXJyZW50VG9rZW5JZAAD/////wAAAAAAAQAqAQEeAAAADQAAAFRp" +
-           "bWVUb05leHRLZXkBACIB/////wAAAAAAAQAqAQEcAAAADQAAAE5leHRTZW5kZXJLZXkAD/////8AAAAA" +
-           "AAEAKAEBAAAAAQH/////AAAAAA==";
-        #endregion
-        #endif
-        #endregion
-
-        #region Event Callbacks
-        /// <summary>
-        /// Raised when the the method is called.
-        /// </summary>
-        public UadpGroupTypeGetSecurityTokenMethodStateMethodCallHandler OnCall;
-        #endregion
-
-        #region Public Properties
-        #endregion
-
-        #region Overridden Methods
-        /// <summary>
-        /// Invokes the method, returns the result and output argument.
-        /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
-        protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
-        {
-            if (OnCall == null)
-            {
-                return base.Call(context, objectId, inputArguments, outputArguments);
-            }
-
-            ServiceResult result = null;
-
-            string securityPolicy = (string)outputArguments[0];
-            MessageSecurityMode securityMode = (MessageSecurityMode)outputArguments[1];
-            byte[] currentSenderKey = (byte[])outputArguments[2];
-            byte currentTokenId = (byte)outputArguments[3];
-            double timeToNextKey = (double)outputArguments[4];
-            byte[] nextSenderKey = (byte[])outputArguments[5];
-
-            if (OnCall != null)
-            {
-                result = OnCall(
-                    context,
-                    this,
-                    objectId,
-                    ref securityPolicy,
-                    ref securityMode,
-                    ref currentSenderKey,
-                    ref currentTokenId,
-                    ref timeToNextKey,
-                    ref nextSenderKey);
-            }
-
-            outputArguments[0] = securityPolicy;
-            outputArguments[1] = securityMode;
-            outputArguments[2] = currentSenderKey;
-            outputArguments[3] = currentTokenId;
-            outputArguments[4] = timeToNextKey;
-            outputArguments[5] = nextSenderKey;
-
-            return result;
-        }
-        #endregion
-
-        #region Private Fields
-        #endregion
-    }
-
-    /// <summary>
-    /// Used to receive notifications when the method is called.
-    /// </summary>
-    /// <exclude />
-    public delegate ServiceResult UadpGroupTypeGetSecurityTokenMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
-        ref string securityPolicy,
-        ref MessageSecurityMode securityMode,
-        ref byte[] currentSenderKey,
-        ref byte currentTokenId,
-        ref double timeToNextKey,
-        ref byte[] nextSenderKey);
     #endif
     #endregion
 
@@ -56037,12 +56218,11 @@ namespace Opc.Ua
         #region Initialization String
         private const string InitializationString =
            "//////////8EYYIKBAAAAAAAIAAAAFVhZHBHcm91cFR5cGVBZGRXcml0ZXJNZXRob2RUeXBlAQCdOgAv" +
-           "AQCdOp06AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAnjoALgBEnjoAAJYE" +
+           "AQCdOp06AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAnjoALgBEnjoAAJYC" +
            "AAAAAQAqAQEgAAAAEQAAAE1lc3NhZ2VXcml0ZXJOYW1lAAz/////AAAAAAABACoBASEAAAASAAAAUHVi" +
-           "bGlzaGVkRGF0YVNldElkABH/////AAAAAAABACoBASEAAAASAAAATWVzc2FnZVJlcGVhdENvdW50AAP/" +
-           "////AAAAAAABACoBASMAAAASAAAATWVzc2FnZVJlcGVhdERlbGF5AQAiAf////8AAAAAAAEAKAEBAAAA" +
-           "AQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQCfOgAuAESfOgAAlgEAAAABACoB" +
-           "AR4AAAAPAAAATWVzc2FnZVdyaXRlcklkABH/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
+           "bGlzaGVkRGF0YVNldElkABH/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91" +
+           "dHB1dEFyZ3VtZW50cwEAnzoALgBEnzoAAJYBAAAAAQAqAQEeAAAADwAAAE1lc3NhZ2VXcml0ZXJJZAAR" +
+           "/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -56081,8 +56261,6 @@ namespace Opc.Ua
 
             string messageWriterName = (string)inputArguments[0];
             NodeId publishedDataSetId = (NodeId)inputArguments[1];
-            byte messageRepeatCount = (byte)inputArguments[2];
-            double messageRepeatDelay = (double)inputArguments[3];
 
             NodeId messageWriterId = (NodeId)outputArguments[0];
 
@@ -56094,8 +56272,6 @@ namespace Opc.Ua
                     objectId,
                     messageWriterName,
                     publishedDataSetId,
-                    messageRepeatCount,
-                    messageRepeatDelay,
                     ref messageWriterId);
             }
 
@@ -56119,8 +56295,6 @@ namespace Opc.Ua
         NodeId objectId,
         string messageWriterName,
         NodeId publishedDataSetId,
-        byte messageRepeatCount,
-        double messageRepeatDelay,
         ref NodeId messageWriterId);
     #endif
     #endregion
@@ -56173,15 +56347,14 @@ namespace Opc.Ua
         #region Initialization String
         private const string InitializationString =
            "//////////8EYYIKBAAAAAAAIAAAAFVhZHBHcm91cFR5cGVBZGRSZWFkZXJNZXRob2RUeXBlAQCgOgAv" +
-           "AQCgOqA6AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAoToALgBEoToAAJYG" +
+           "AQCgOqA6AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAoToALgBEoToAAJYF" +
            "AAAAAQAqAQEgAAAAEQAAAE1lc3NhZ2VSZWFkZXJOYW1lAAz/////AAAAAAABACoBARoAAAALAAAAUHVi" +
            "bGlzaGVySWQADv////8AAAAAAAEAKgEBHgAAAA8AAABEYXRhU2V0V3JpdGVySWQABf////8AAAAAAAEA" +
-           "KgEBIAAAAA8AAABEYXRhU2V0TWV0YURhdGEBALs4/////wAAAAAAAQAqAQEiAAAAEQAAAERhdGFVcGRh" +
-           "dGVUaW1lb3V0AQAiAf////8AAAAAAAEAKgEBIQAAABAAAABDb25uZWN0aW9uc1RvQWRkAQCYOQEAAAAA" +
-           "AAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQCiOgAuAESi" +
-           "OgAAlgMAAAABACoBASkAAAAYAAAAUmV2aXNlZERhdGFVcGRhdGVUaW1lb3V0AQAiAf////8AAAAAAAEA" +
-           "KgEBGQAAAAoAAABBZGRSZXN1bHRzABMBAAAAAAAAAAABACoBAR4AAAAPAAAATWVzc2FnZVJlYWRlcklk" +
-           "ABH/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
+           "KgEBIAAAAA8AAABEYXRhU2V0TWV0YURhdGEBALs4/////wAAAAAAAQAqAQEmAAAAFQAAAE1lc3NhZ2VS" +
+           "ZWNlaXZlVGltZW91dAEAIgH/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91" +
+           "dHB1dEFyZ3VtZW50cwEAojoALgBEojoAAJYCAAAAAQAqAQEeAAAADwAAAE1lc3NhZ2VSZWFkZXJJZAAR" +
+           "/////wAAAAAAAQAqAQEtAAAAHAAAAFJldmlzZWRNZXNzYWdlUmVjZWl2ZVRpbWVvdXQBACIB/////wAA" +
+           "AAAAAQAoAQEAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -56222,12 +56395,10 @@ namespace Opc.Ua
             Uuid publisherId = (Uuid)inputArguments[1];
             ushort dataSetWriterId = (ushort)inputArguments[2];
             DataSetMetaDataType dataSetMetaData = (DataSetMetaDataType)ExtensionObject.ToEncodeable((ExtensionObject)inputArguments[3]);
-            double dataUpdateTimeout = (double)inputArguments[4];
-            DataConnectionDataType[] connectionsToAdd = (DataConnectionDataType[])ExtensionObject.ToArray(inputArguments[5], typeof(DataConnectionDataType));
+            double messageReceiveTimeout = (double)inputArguments[4];
 
-            double revisedDataUpdateTimeout = (double)outputArguments[0];
-            StatusCode[] addResults = (StatusCode[])outputArguments[1];
-            NodeId messageReaderId = (NodeId)outputArguments[2];
+            NodeId messageReaderId = (NodeId)outputArguments[0];
+            double revisedMessageReceiveTimeout = (double)outputArguments[1];
 
             if (OnCall != null)
             {
@@ -56239,16 +56410,13 @@ namespace Opc.Ua
                     publisherId,
                     dataSetWriterId,
                     dataSetMetaData,
-                    dataUpdateTimeout,
-                    connectionsToAdd,
-                    ref revisedDataUpdateTimeout,
-                    ref addResults,
-                    ref messageReaderId);
+                    messageReceiveTimeout,
+                    ref messageReaderId,
+                    ref revisedMessageReceiveTimeout);
             }
 
-            outputArguments[0] = revisedDataUpdateTimeout;
-            outputArguments[1] = addResults;
-            outputArguments[2] = messageReaderId;
+            outputArguments[0] = messageReaderId;
+            outputArguments[1] = revisedMessageReceiveTimeout;
 
             return result;
         }
@@ -56270,11 +56438,9 @@ namespace Opc.Ua
         Uuid publisherId,
         ushort dataSetWriterId,
         DataSetMetaDataType dataSetMetaData,
-        double dataUpdateTimeout,
-        DataConnectionDataType[] connectionsToAdd,
-        ref double revisedDataUpdateTimeout,
-        ref StatusCode[] addResults,
-        ref NodeId messageReaderId);
+        double messageReceiveTimeout,
+        ref NodeId messageReaderId,
+        ref double revisedMessageReceiveTimeout);
     #endif
     #endregion
 
@@ -56324,10 +56490,8 @@ namespace Opc.Ua
         #region Initialization String
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAAHwAAAFVhZHBXcml0ZXJUcmFuc3BvcnRUeXBlSW5zdGFuY2UBAKM6AQCj" +
-           "Ov////8DAAAAFWCJCgIAAAAAAA8AAABEYXRhU2V0V3JpdGVySWQBAKQ6AC4ARKQ6AAAABf////8BAf//" +
-           "//8AAAAAFWCJCgIAAAAAABIAAABNZXNzYWdlUmVwZWF0Q291bnQBAKU6AC4ARKU6AAAAA/////8BAf//" +
-           "//8AAAAAFWCJCgIAAAAAABIAAABNZXNzYWdlUmVwZWF0RGVsYXkBAKY6AC4ARKY6AAABACIB/////wEB" +
-           "/////wAAAAA=";
+           "Ov////8BAAAAFWCJCgIAAAAAAA8AAABEYXRhU2V0V3JpdGVySWQBAKQ6AC4ARKQ6AAAABf////8BAf//" +
+           "//8AAAAA";
         #endregion
         #endif
         #endregion
@@ -56353,48 +56517,6 @@ namespace Opc.Ua
                 m_dataSetWriterId = value;
             }
         }
-
-        /// <summary>
-        /// A description for the MessageRepeatCount Property.
-        /// </summary>
-        public PropertyState<byte> MessageRepeatCount
-        {
-            get
-            {
-                return m_messageRepeatCount;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_messageRepeatCount, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_messageRepeatCount = value;
-            }
-        }
-
-        /// <summary>
-        /// A description for the MessageRepeatDelay Property.
-        /// </summary>
-        public PropertyState<double> MessageRepeatDelay
-        {
-            get
-            {
-                return m_messageRepeatDelay;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_messageRepeatDelay, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_messageRepeatDelay = value;
-            }
-        }
         #endregion
 
         #region Overridden Methods
@@ -56410,16 +56532,6 @@ namespace Opc.Ua
             if (m_dataSetWriterId != null)
             {
                 children.Add(m_dataSetWriterId);
-            }
-
-            if (m_messageRepeatCount != null)
-            {
-                children.Add(m_messageRepeatCount);
-            }
-
-            if (m_messageRepeatDelay != null)
-            {
-                children.Add(m_messageRepeatDelay);
             }
 
             base.GetChildren(context, children);
@@ -56463,48 +56575,6 @@ namespace Opc.Ua
                     instance = DataSetWriterId;
                     break;
                 }
-
-                case Opc.Ua.BrowseNames.MessageRepeatCount:
-                {
-                    if (createOrReplace)
-                    {
-                        if (MessageRepeatCount == null)
-                        {
-                            if (replacement == null)
-                            {
-                                MessageRepeatCount = new PropertyState<byte>(this);
-                            }
-                            else
-                            {
-                                MessageRepeatCount = (PropertyState<byte>)replacement;
-                            }
-                        }
-                    }
-
-                    instance = MessageRepeatCount;
-                    break;
-                }
-
-                case Opc.Ua.BrowseNames.MessageRepeatDelay:
-                {
-                    if (createOrReplace)
-                    {
-                        if (MessageRepeatDelay == null)
-                        {
-                            if (replacement == null)
-                            {
-                                MessageRepeatDelay = new PropertyState<double>(this);
-                            }
-                            else
-                            {
-                                MessageRepeatDelay = (PropertyState<double>)replacement;
-                            }
-                        }
-                    }
-
-                    instance = MessageRepeatDelay;
-                    break;
-                }
             }
 
             if (instance != null)
@@ -56518,27 +56588,25 @@ namespace Opc.Ua
 
         #region Private Fields
         private PropertyState<ushort> m_dataSetWriterId;
-        private PropertyState<byte> m_messageRepeatCount;
-        private PropertyState<double> m_messageRepeatDelay;
         #endregion
     }
     #endif
     #endregion
 
-    #region UadpDataReaderState Class
-    #if (!OPCUA_EXCLUDE_UadpDataReaderState)
+    #region UadpReaderTransportState Class
+    #if (!OPCUA_EXCLUDE_UadpReaderTransportState)
     /// <summary>
-    /// Stores an instance of the UadpDataReaderType ObjectType.
+    /// Stores an instance of the UadpReaderTransportType ObjectType.
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public partial class UadpDataReaderState : MessageReaderState
+    public partial class UadpReaderTransportState : MessageReaderTransportState
     {
         #region Constructors
         /// <summary>
         /// Initializes the type with its default attribute values.
         /// </summary>
-        public UadpDataReaderState(NodeState parent) : base(parent)
+        public UadpReaderTransportState(NodeState parent) : base(parent)
         {
         }
 
@@ -56547,7 +56615,7 @@ namespace Opc.Ua
         /// </summary>
         protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
         {
-            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.UadpDataReaderType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.UadpReaderTransportType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
         }
 
         #if (!OPCUA_EXCLUDE_InitializationStrings)
@@ -56566,73 +56634,13 @@ namespace Opc.Ua
         protected override void InitializeOptionalChildren(ISystemContext context)
         {
             base.InitializeOptionalChildren(context);
-
-            if (Modify != null)
-            {
-                Modify.Initialize(context, Modify_InitializationString);
-            }
-
-            if (AddDataConnections != null)
-            {
-                AddDataConnections.Initialize(context, AddDataConnections_InitializationString);
-            }
-
-            if (RemoveDataConnections != null)
-            {
-                RemoveDataConnections.Initialize(context, RemoveDataConnections_InitializationString);
-            }
         }
 
         #region Initialization String
-        private const string Modify_InitializationString =
-           "//////////8EYYIKBAAAAAAABgAAAE1vZGlmeQEAsToALwEAsTqxOgAAAQH/////AgAAABVgqQoCAAAA" +
-           "AAAOAAAASW5wdXRBcmd1bWVudHMBALI6AC4ARLI6AACWBAAAAAEAKgEBGgAAAAsAAABQdWJsaXNoZXJJ" +
-           "ZAAO/////wAAAAAAAQAqAQEeAAAADwAAAERhdGFTZXRXcml0ZXJJZAAF/////wAAAAAAAQAqAQEgAAAA" +
-           "DwAAAERhdGFTZXRNZXRhRGF0YQEAuzj/////AAAAAAABACoBASIAAAARAAAARGF0YVVwZGF0ZVRpbWVv" +
-           "dXQBACIB/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVu" +
-           "dHMBALM6AC4ARLM6AACWAQAAAAEAKgEBKQAAABgAAABSZXZpc2VkRGF0YVVwZGF0ZVRpbWVvdXQBACIB" +
-           "/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
-
-        private const string AddDataConnections_InitializationString =
-           "//////////8EYYIKBAAAAAAAEgAAAEFkZERhdGFDb25uZWN0aW9ucwEAtDoALwEAtDq0OgAAAQH/////" +
-           "AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBALU6AC4ARLU6AACWAgAAAAEAKgEBJQAAABQA" +
-           "AABDb25maWd1cmF0aW9uVmVyc2lvbgEAATn/////AAAAAAABACoBASEAAAAQAAAAQ29ubmVjdGlvbnNU" +
-           "b0FkZAEAmDkBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3Vt" +
-           "ZW50cwEAtjoALgBEtjoAAJYBAAAAAQAqAQEZAAAACgAAAEFkZFJlc3VsdHMAEwEAAAAAAAAAAAEAKAEB" +
-           "AAAAAQH/////AAAAAA==";
-
-        private const string RemoveDataConnections_InitializationString =
-           "//////////8EYYIKBAAAAAAAFQAAAFJlbW92ZURhdGFDb25uZWN0aW9ucwEAtzoALwEAtzq3OgAAAQH/" +
-           "////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBALg6AC4ARLg6AACWAQAAAAEAKgEBIgAA" +
-           "ABMAAABDb25uZWN0aW9uc1RvUmVtb3ZlAAcBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAA" +
-           "AAAADwAAAE91dHB1dEFyZ3VtZW50cwEAuToALgBEuToAAJYBAAAAAQAqAQEcAAAADQAAAFJlbW92ZVJl" +
-           "c3VsdHMAEwEAAAAAAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
-
         private const string InitializationString =
-           "//////////8EYIAAAQAAAAAAGgAAAFVhZHBEYXRhUmVhZGVyVHlwZUluc3RhbmNlAQCnOgEApzr/////" +
-           "CQAAAARggAoBAAAAAAAGAAAAU3RhdHVzAQCoOgAvAQAzOag6AAD/////AQAAABVgiQoCAAAAAAAFAAAA" +
-           "U3RhdGUBAKk6AC4ARKk6AAABADc5/////wEB/////wAAAAAVYIkKAgAAAAAACwAAAFB1Ymxpc2hlcklk" +
-           "AQCsOgAuAESsOgAAAA7/////AQH/////AAAAABVgiQoCAAAAAAAPAAAARGF0YVNldFdyaXRlcklkAQCt" +
-           "OgAuAEStOgAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAPAAAARGF0YVNldE1ldGFEYXRhAQCuOgAu" +
-           "AESuOgAAAQC7OP////8BAf////8AAAAAFWCJCgIAAAAAABEAAABEYXRhVXBkYXRlVGltZW91dAEArzoA" +
-           "LgBErzoAAAEAIgH/////AQH/////AAAAABVgiQoCAAAAAAASAAAAQ29ubmVjdGVkVmFyaWFibGVzAQCw" +
-           "OgAuAESwOgAAAQCYOQEAAAABAf////8AAAAABGGCCgQAAAAAAAYAAABNb2RpZnkBALE6AC8BALE6sToA" +
-           "AAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQCyOgAuAESyOgAAlgQAAAABACoB" +
-           "ARoAAAALAAAAUHVibGlzaGVySWQADv////8AAAAAAAEAKgEBHgAAAA8AAABEYXRhU2V0V3JpdGVySWQA" +
-           "Bf////8AAAAAAAEAKgEBIAAAAA8AAABEYXRhU2V0TWV0YURhdGEBALs4/////wAAAAAAAQAqAQEiAAAA" +
-           "EQAAAERhdGFVcGRhdGVUaW1lb3V0AQAiAf////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAA" +
-           "AAAPAAAAT3V0cHV0QXJndW1lbnRzAQCzOgAuAESzOgAAlgEAAAABACoBASkAAAAYAAAAUmV2aXNlZERh" +
-           "dGFVcGRhdGVUaW1lb3V0AQAiAf////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAAASAAAA" +
-           "QWRkRGF0YUNvbm5lY3Rpb25zAQC0OgAvAQC0OrQ6AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1" +
-           "dEFyZ3VtZW50cwEAtToALgBEtToAAJYCAAAAAQAqAQElAAAAFAAAAENvbmZpZ3VyYXRpb25WZXJzaW9u" +
-           "AQABOf////8AAAAAAAEAKgEBIQAAABAAAABDb25uZWN0aW9uc1RvQWRkAQCYOQEAAAAAAAAAAAEAKAEB" +
-           "AAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQC2OgAuAES2OgAAlgEAAAAB" +
-           "ACoBARkAAAAKAAAAQWRkUmVzdWx0cwATAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAAA" +
-           "ABUAAABSZW1vdmVEYXRhQ29ubmVjdGlvbnMBALc6AC8BALc6tzoAAAEB/////wIAAAAVYKkKAgAAAAAA" +
-           "DgAAAElucHV0QXJndW1lbnRzAQC4OgAuAES4OgAAlgEAAAABACoBASIAAAATAAAAQ29ubmVjdGlvbnNU" +
-           "b1JlbW92ZQAHAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1" +
-           "bWVudHMBALk6AC4ARLk6AACWAQAAAAEAKgEBHAAAAA0AAABSZW1vdmVSZXN1bHRzABMBAAAAAAAAAAAB" +
-           "ACgBAQAAAAEB/////wAAAAA=";
+           "//////////8EYIAAAQAAAAAAHwAAAFVhZHBSZWFkZXJUcmFuc3BvcnRUeXBlSW5zdGFuY2UBADI7AQAy" +
+           "O/////8CAAAAFWCJCgIAAAAAAAsAAABQdWJsaXNoZXJJZAEAMzsALgBEMzsAAAAO/////wEB/////wAA" +
+           "AAAVYIkKAgAAAAAADwAAAERhdGFTZXRXcml0ZXJJZAEANDsALgBENDsAAAAF/////wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -56679,132 +56687,6 @@ namespace Opc.Ua
                 m_dataSetWriterId = value;
             }
         }
-
-        /// <summary>
-        /// A description for the DataSetMetaData Property.
-        /// </summary>
-        public PropertyState<DataSetMetaDataType> DataSetMetaData
-        {
-            get
-            {
-                return m_dataSetMetaData;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_dataSetMetaData, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_dataSetMetaData = value;
-            }
-        }
-
-        /// <summary>
-        /// A description for the DataUpdateTimeout Property.
-        /// </summary>
-        public PropertyState<double> DataUpdateTimeout
-        {
-            get
-            {
-                return m_dataUpdateTimeout;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_dataUpdateTimeout, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_dataUpdateTimeout = value;
-            }
-        }
-
-        /// <summary>
-        /// A description for the ConnectedVariables Property.
-        /// </summary>
-        public PropertyState<DataConnectionDataType[]> ConnectedVariables
-        {
-            get
-            {
-                return m_connectedVariables;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_connectedVariables, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_connectedVariables = value;
-            }
-        }
-
-        /// <summary>
-        /// A description for the UadpDataReaderTypeModifyMethodType Method.
-        /// </summary>
-        public UadpDataReaderTypeModifyMethodState Modify
-        {
-            get
-            {
-                return m_modifyMethod;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_modifyMethod, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_modifyMethod = value;
-            }
-        }
-
-        /// <summary>
-        /// A description for the UadpDataReaderTypeAddDataConnectionsMethodType Method.
-        /// </summary>
-        public UadpDataReaderTypeAddDataConnectionsMethodState AddDataConnections
-        {
-            get
-            {
-                return m_addDataConnectionsMethod;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_addDataConnectionsMethod, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_addDataConnectionsMethod = value;
-            }
-        }
-
-        /// <summary>
-        /// A description for the UadpDataReaderTypeRemoveDataConnectionsMethodType Method.
-        /// </summary>
-        public UadpDataReaderTypeRemoveDataConnectionsMethodState RemoveDataConnections
-        {
-            get
-            {
-                return m_removeDataConnectionsMethod;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_removeDataConnectionsMethod, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_removeDataConnectionsMethod = value;
-            }
-        }
         #endregion
 
         #region Overridden Methods
@@ -56825,36 +56707,6 @@ namespace Opc.Ua
             if (m_dataSetWriterId != null)
             {
                 children.Add(m_dataSetWriterId);
-            }
-
-            if (m_dataSetMetaData != null)
-            {
-                children.Add(m_dataSetMetaData);
-            }
-
-            if (m_dataUpdateTimeout != null)
-            {
-                children.Add(m_dataUpdateTimeout);
-            }
-
-            if (m_connectedVariables != null)
-            {
-                children.Add(m_connectedVariables);
-            }
-
-            if (m_modifyMethod != null)
-            {
-                children.Add(m_modifyMethod);
-            }
-
-            if (m_addDataConnectionsMethod != null)
-            {
-                children.Add(m_addDataConnectionsMethod);
-            }
-
-            if (m_removeDataConnectionsMethod != null)
-            {
-                children.Add(m_removeDataConnectionsMethod);
             }
 
             base.GetChildren(context, children);
@@ -56919,132 +56771,6 @@ namespace Opc.Ua
                     instance = DataSetWriterId;
                     break;
                 }
-
-                case Opc.Ua.BrowseNames.DataSetMetaData:
-                {
-                    if (createOrReplace)
-                    {
-                        if (DataSetMetaData == null)
-                        {
-                            if (replacement == null)
-                            {
-                                DataSetMetaData = new PropertyState<DataSetMetaDataType>(this);
-                            }
-                            else
-                            {
-                                DataSetMetaData = (PropertyState<DataSetMetaDataType>)replacement;
-                            }
-                        }
-                    }
-
-                    instance = DataSetMetaData;
-                    break;
-                }
-
-                case Opc.Ua.BrowseNames.DataUpdateTimeout:
-                {
-                    if (createOrReplace)
-                    {
-                        if (DataUpdateTimeout == null)
-                        {
-                            if (replacement == null)
-                            {
-                                DataUpdateTimeout = new PropertyState<double>(this);
-                            }
-                            else
-                            {
-                                DataUpdateTimeout = (PropertyState<double>)replacement;
-                            }
-                        }
-                    }
-
-                    instance = DataUpdateTimeout;
-                    break;
-                }
-
-                case Opc.Ua.BrowseNames.ConnectedVariables:
-                {
-                    if (createOrReplace)
-                    {
-                        if (ConnectedVariables == null)
-                        {
-                            if (replacement == null)
-                            {
-                                ConnectedVariables = new PropertyState<DataConnectionDataType[]>(this);
-                            }
-                            else
-                            {
-                                ConnectedVariables = (PropertyState<DataConnectionDataType[]>)replacement;
-                            }
-                        }
-                    }
-
-                    instance = ConnectedVariables;
-                    break;
-                }
-
-                case Opc.Ua.BrowseNames.Modify:
-                {
-                    if (createOrReplace)
-                    {
-                        if (Modify == null)
-                        {
-                            if (replacement == null)
-                            {
-                                Modify = new UadpDataReaderTypeModifyMethodState(this);
-                            }
-                            else
-                            {
-                                Modify = (UadpDataReaderTypeModifyMethodState)replacement;
-                            }
-                        }
-                    }
-
-                    instance = Modify;
-                    break;
-                }
-
-                case Opc.Ua.BrowseNames.AddDataConnections:
-                {
-                    if (createOrReplace)
-                    {
-                        if (AddDataConnections == null)
-                        {
-                            if (replacement == null)
-                            {
-                                AddDataConnections = new UadpDataReaderTypeAddDataConnectionsMethodState(this);
-                            }
-                            else
-                            {
-                                AddDataConnections = (UadpDataReaderTypeAddDataConnectionsMethodState)replacement;
-                            }
-                        }
-                    }
-
-                    instance = AddDataConnections;
-                    break;
-                }
-
-                case Opc.Ua.BrowseNames.RemoveDataConnections:
-                {
-                    if (createOrReplace)
-                    {
-                        if (RemoveDataConnections == null)
-                        {
-                            if (replacement == null)
-                            {
-                                RemoveDataConnections = new UadpDataReaderTypeRemoveDataConnectionsMethodState(this);
-                            }
-                            else
-                            {
-                                RemoveDataConnections = (UadpDataReaderTypeRemoveDataConnectionsMethodState)replacement;
-                            }
-                        }
-                    }
-
-                    instance = RemoveDataConnections;
-                    break;
-                }
             }
 
             if (instance != null)
@@ -57059,405 +56785,8 @@ namespace Opc.Ua
         #region Private Fields
         private PropertyState<Guid> m_publisherId;
         private PropertyState<ushort> m_dataSetWriterId;
-        private PropertyState<DataSetMetaDataType> m_dataSetMetaData;
-        private PropertyState<double> m_dataUpdateTimeout;
-        private PropertyState<DataConnectionDataType[]> m_connectedVariables;
-        private UadpDataReaderTypeModifyMethodState m_modifyMethod;
-        private UadpDataReaderTypeAddDataConnectionsMethodState m_addDataConnectionsMethod;
-        private UadpDataReaderTypeRemoveDataConnectionsMethodState m_removeDataConnectionsMethod;
         #endregion
     }
-    #endif
-    #endregion
-
-    #region UadpDataReaderTypeModifyMethodState Class
-    #if (!OPCUA_EXCLUDE_UadpDataReaderTypeModifyMethodState)
-    /// <summary>
-    /// Stores an instance of the UadpDataReaderTypeModifyMethodType Method.
-    /// </summary>
-    /// <exclude />
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public partial class UadpDataReaderTypeModifyMethodState : MethodState
-    {
-        #region Constructors
-        /// <summary>
-        /// Initializes the type with its default attribute values.
-        /// </summary>
-        public UadpDataReaderTypeModifyMethodState(NodeState parent) : base(parent)
-        {
-        }
-
-        /// <summary>
-        /// Constructs an instance of a node.
-        /// </summary>
-        /// <param name="parent">The parent.</param>
-        /// <returns>The new node.</returns>
-        public new static NodeState Construct(NodeState parent)
-        {
-            return new UadpDataReaderTypeModifyMethodState(parent);
-        }
-
-        #if (!OPCUA_EXCLUDE_InitializationStrings)
-        /// <summary>
-        /// Initializes the instance.
-        /// </summary>
-        protected override void Initialize(ISystemContext context)
-        {
-            Initialize(context, InitializationString);
-            InitializeOptionalChildren(context);
-        }
-
-        /// <summary>
-        /// Initializes the any option children defined for the instance.
-        /// </summary>
-        protected override void InitializeOptionalChildren(ISystemContext context)
-        {
-            base.InitializeOptionalChildren(context);
-        }
-
-        #region Initialization String
-        private const string InitializationString =
-           "//////////8EYYIKBAAAAAAAIgAAAFVhZHBEYXRhUmVhZGVyVHlwZU1vZGlmeU1ldGhvZFR5cGUBALo6" +
-           "AC8BALo6ujoAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQC7OgAuAES7OgAA" +
-           "lgQAAAABACoBARoAAAALAAAAUHVibGlzaGVySWQADv////8AAAAAAAEAKgEBHgAAAA8AAABEYXRhU2V0" +
-           "V3JpdGVySWQABf////8AAAAAAAEAKgEBIAAAAA8AAABEYXRhU2V0TWV0YURhdGEBALs4/////wAAAAAA" +
-           "AQAqAQEiAAAAEQAAAERhdGFVcGRhdGVUaW1lb3V0AQAiAf////8AAAAAAAEAKAEBAAAAAQH/////AAAA" +
-           "ABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQC8OgAuAES8OgAAlgEAAAABACoBASkAAAAYAAAA" +
-           "UmV2aXNlZERhdGFVcGRhdGVUaW1lb3V0AQAiAf////8AAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
-        #endregion
-        #endif
-        #endregion
-
-        #region Event Callbacks
-        /// <summary>
-        /// Raised when the the method is called.
-        /// </summary>
-        public UadpDataReaderTypeModifyMethodStateMethodCallHandler OnCall;
-        #endregion
-
-        #region Public Properties
-        #endregion
-
-        #region Overridden Methods
-        /// <summary>
-        /// Invokes the method, returns the result and output argument.
-        /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
-        protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
-        {
-            if (OnCall == null)
-            {
-                return base.Call(context, objectId, inputArguments, outputArguments);
-            }
-
-            ServiceResult result = null;
-
-            Uuid publisherId = (Uuid)inputArguments[0];
-            ushort dataSetWriterId = (ushort)inputArguments[1];
-            DataSetMetaDataType dataSetMetaData = (DataSetMetaDataType)ExtensionObject.ToEncodeable((ExtensionObject)inputArguments[2]);
-            double dataUpdateTimeout = (double)inputArguments[3];
-
-            double revisedDataUpdateTimeout = (double)outputArguments[0];
-
-            if (OnCall != null)
-            {
-                result = OnCall(
-                    context,
-                    this,
-                    objectId,
-                    publisherId,
-                    dataSetWriterId,
-                    dataSetMetaData,
-                    dataUpdateTimeout,
-                    ref revisedDataUpdateTimeout);
-            }
-
-            outputArguments[0] = revisedDataUpdateTimeout;
-
-            return result;
-        }
-        #endregion
-
-        #region Private Fields
-        #endregion
-    }
-
-    /// <summary>
-    /// Used to receive notifications when the method is called.
-    /// </summary>
-    /// <exclude />
-    public delegate ServiceResult UadpDataReaderTypeModifyMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
-        Uuid publisherId,
-        ushort dataSetWriterId,
-        DataSetMetaDataType dataSetMetaData,
-        double dataUpdateTimeout,
-        ref double revisedDataUpdateTimeout);
-    #endif
-    #endregion
-
-    #region UadpDataReaderTypeAddDataConnectionsMethodState Class
-    #if (!OPCUA_EXCLUDE_UadpDataReaderTypeAddDataConnectionsMethodState)
-    /// <summary>
-    /// Stores an instance of the UadpDataReaderTypeAddDataConnectionsMethodType Method.
-    /// </summary>
-    /// <exclude />
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public partial class UadpDataReaderTypeAddDataConnectionsMethodState : MethodState
-    {
-        #region Constructors
-        /// <summary>
-        /// Initializes the type with its default attribute values.
-        /// </summary>
-        public UadpDataReaderTypeAddDataConnectionsMethodState(NodeState parent) : base(parent)
-        {
-        }
-
-        /// <summary>
-        /// Constructs an instance of a node.
-        /// </summary>
-        /// <param name="parent">The parent.</param>
-        /// <returns>The new node.</returns>
-        public new static NodeState Construct(NodeState parent)
-        {
-            return new UadpDataReaderTypeAddDataConnectionsMethodState(parent);
-        }
-
-        #if (!OPCUA_EXCLUDE_InitializationStrings)
-        /// <summary>
-        /// Initializes the instance.
-        /// </summary>
-        protected override void Initialize(ISystemContext context)
-        {
-            Initialize(context, InitializationString);
-            InitializeOptionalChildren(context);
-        }
-
-        /// <summary>
-        /// Initializes the any option children defined for the instance.
-        /// </summary>
-        protected override void InitializeOptionalChildren(ISystemContext context)
-        {
-            base.InitializeOptionalChildren(context);
-        }
-
-        #region Initialization String
-        private const string InitializationString =
-           "//////////8EYYIKBAAAAAAALgAAAFVhZHBEYXRhUmVhZGVyVHlwZUFkZERhdGFDb25uZWN0aW9uc01l" +
-           "dGhvZFR5cGUBAL06AC8BAL06vToAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRz" +
-           "AQC+OgAuAES+OgAAlgIAAAABACoBASUAAAAUAAAAQ29uZmlndXJhdGlvblZlcnNpb24BAAE5/////wAA" +
-           "AAAAAQAqAQEhAAAAEAAAAENvbm5lY3Rpb25zVG9BZGQBAJg5AQAAAAAAAAAAAQAoAQEAAAABAf////8A" +
-           "AAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAL86AC4ARL86AACWAQAAAAEAKgEBGQAAAAoA" +
-           "AABBZGRSZXN1bHRzABMBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAA=";
-        #endregion
-        #endif
-        #endregion
-
-        #region Event Callbacks
-        /// <summary>
-        /// Raised when the the method is called.
-        /// </summary>
-        public UadpDataReaderTypeAddDataConnectionsMethodStateMethodCallHandler OnCall;
-        #endregion
-
-        #region Public Properties
-        #endregion
-
-        #region Overridden Methods
-        /// <summary>
-        /// Invokes the method, returns the result and output argument.
-        /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
-        protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
-        {
-            if (OnCall == null)
-            {
-                return base.Call(context, objectId, inputArguments, outputArguments);
-            }
-
-            ServiceResult result = null;
-
-            ConfigurationVersionDataType configurationVersion = (ConfigurationVersionDataType)ExtensionObject.ToEncodeable((ExtensionObject)inputArguments[0]);
-            DataConnectionDataType[] connectionsToAdd = (DataConnectionDataType[])ExtensionObject.ToArray(inputArguments[1], typeof(DataConnectionDataType));
-
-            StatusCode[] addResults = (StatusCode[])outputArguments[0];
-
-            if (OnCall != null)
-            {
-                result = OnCall(
-                    context,
-                    this,
-                    objectId,
-                    configurationVersion,
-                    connectionsToAdd,
-                    ref addResults);
-            }
-
-            outputArguments[0] = addResults;
-
-            return result;
-        }
-        #endregion
-
-        #region Private Fields
-        #endregion
-    }
-
-    /// <summary>
-    /// Used to receive notifications when the method is called.
-    /// </summary>
-    /// <exclude />
-    public delegate ServiceResult UadpDataReaderTypeAddDataConnectionsMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
-        ConfigurationVersionDataType configurationVersion,
-        DataConnectionDataType[] connectionsToAdd,
-        ref StatusCode[] addResults);
-    #endif
-    #endregion
-
-    #region UadpDataReaderTypeRemoveDataConnectionsMethodState Class
-    #if (!OPCUA_EXCLUDE_UadpDataReaderTypeRemoveDataConnectionsMethodState)
-    /// <summary>
-    /// Stores an instance of the UadpDataReaderTypeRemoveDataConnectionsMethodType Method.
-    /// </summary>
-    /// <exclude />
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public partial class UadpDataReaderTypeRemoveDataConnectionsMethodState : MethodState
-    {
-        #region Constructors
-        /// <summary>
-        /// Initializes the type with its default attribute values.
-        /// </summary>
-        public UadpDataReaderTypeRemoveDataConnectionsMethodState(NodeState parent) : base(parent)
-        {
-        }
-
-        /// <summary>
-        /// Constructs an instance of a node.
-        /// </summary>
-        /// <param name="parent">The parent.</param>
-        /// <returns>The new node.</returns>
-        public new static NodeState Construct(NodeState parent)
-        {
-            return new UadpDataReaderTypeRemoveDataConnectionsMethodState(parent);
-        }
-
-        #if (!OPCUA_EXCLUDE_InitializationStrings)
-        /// <summary>
-        /// Initializes the instance.
-        /// </summary>
-        protected override void Initialize(ISystemContext context)
-        {
-            Initialize(context, InitializationString);
-            InitializeOptionalChildren(context);
-        }
-
-        /// <summary>
-        /// Initializes the any option children defined for the instance.
-        /// </summary>
-        protected override void InitializeOptionalChildren(ISystemContext context)
-        {
-            base.InitializeOptionalChildren(context);
-        }
-
-        #region Initialization String
-        private const string InitializationString =
-           "//////////8EYYIKBAAAAAAAMQAAAFVhZHBEYXRhUmVhZGVyVHlwZVJlbW92ZURhdGFDb25uZWN0aW9u" +
-           "c01ldGhvZFR5cGUBAMA6AC8BAMA6wDoAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1l" +
-           "bnRzAQDBOgAuAETBOgAAlgEAAAABACoBASIAAAATAAAAQ29ubmVjdGlvbnNUb1JlbW92ZQAHAQAAAAAA" +
-           "AAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAMI6AC4ARMI6" +
-           "AACWAQAAAAEAKgEBHAAAAA0AAABSZW1vdmVSZXN1bHRzABMBAAAAAAAAAAABACgBAQAAAAEB/////wAA" +
-           "AAA=";
-        #endregion
-        #endif
-        #endregion
-
-        #region Event Callbacks
-        /// <summary>
-        /// Raised when the the method is called.
-        /// </summary>
-        public UadpDataReaderTypeRemoveDataConnectionsMethodStateMethodCallHandler OnCall;
-        #endregion
-
-        #region Public Properties
-        #endregion
-
-        #region Overridden Methods
-        /// <summary>
-        /// Invokes the method, returns the result and output argument.
-        /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
-        protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
-        {
-            if (OnCall == null)
-            {
-                return base.Call(context, objectId, inputArguments, outputArguments);
-            }
-
-            ServiceResult result = null;
-
-            uint[] connectionsToRemove = (uint[])inputArguments[0];
-
-            StatusCode[] removeResults = (StatusCode[])outputArguments[0];
-
-            if (OnCall != null)
-            {
-                result = OnCall(
-                    context,
-                    this,
-                    objectId,
-                    connectionsToRemove,
-                    ref removeResults);
-            }
-
-            outputArguments[0] = removeResults;
-
-            return result;
-        }
-        #endregion
-
-        #region Private Fields
-        #endregion
-    }
-
-    /// <summary>
-    /// Used to receive notifications when the method is called.
-    /// </summary>
-    /// <exclude />
-    public delegate ServiceResult UadpDataReaderTypeRemoveDataConnectionsMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
-        uint[] connectionsToRemove,
-        ref StatusCode[] removeResults);
     #endif
     #endregion
 
@@ -57503,11 +56832,6 @@ namespace Opc.Ua
         {
             base.InitializeOptionalChildren(context);
 
-            if (Modify != null)
-            {
-                Modify.Initialize(context, Modify_InitializationString);
-            }
-
             if (AddGroup != null)
             {
                 AddGroup.Initialize(context, AddGroup_InitializationString);
@@ -57515,12 +56839,6 @@ namespace Opc.Ua
         }
 
         #region Initialization String
-        private const string Modify_InitializationString =
-           "//////////8EYYIKBAAAAAAABgAAAE1vZGlmeQEAojkALwEAojmiOQAAAQH/////AQAAABVgqQoCAAAA" +
-           "AAAOAAAASW5wdXRBcmd1bWVudHMBAKM5AC4ARKM5AACWAgAAAAEAKgEBFgAAAAcAAABBZGRyZXNzAAz/" +
-           "////AAAAAAABACoBARoAAAALAAAAUHVibGlzaGVySWQADP////8AAAAAAAEAKAEBAAAAAQH/////AAAA" +
-           "AA==";
-
         private const string AddGroup_InitializationString =
            "//////////8EYYIKBAAAAAAACAAAAEFkZEdyb3VwAQAfOAAvAQAfOB84AAABAf////8CAAAAFWCpCgIA" +
            "AAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAIDgALgBEIDgAAJYEAAAAAQAqAQEYAAAACQAAAEdyb3VwTmFt" +
@@ -57531,19 +56849,16 @@ namespace Opc.Ua
 
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAAGgAAAEFtcXBDb25uZWN0aW9uVHlwZUluc3RhbmNlAQASOAEAEjj/////" +
-           "BQAAABVgiQoCAAAAAAALAAAAUHVibGlzaGVySWQBAJk5AC4ARJk5AAAADP////8BAf////8AAAAABGCA" +
+           "BAAAABVgiQoCAAAAAAALAAAAUHVibGlzaGVySWQBAJk5AC4ARJk5AAAADP////8BAf////8AAAAABGCA" +
            "CgEAAAAAAAYAAABTdGF0dXMBAJ45AC8BADM5njkAAP////8BAAAAFWCJCgIAAAAAAAUAAABTdGF0ZQEA" +
            "nzkALgBEnzkAAAEANzn/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQWRkcmVzcwEAHjgALgBEHjgA" +
-           "AAAM/////wEB/////wAAAAAEYYIKBAAAAAAABgAAAE1vZGlmeQEAojkALwEAojmiOQAAAQH/////AQAA" +
-           "ABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAKM5AC4ARKM5AACWAgAAAAEAKgEBFgAAAAcAAABB" +
-           "ZGRyZXNzAAz/////AAAAAAABACoBARoAAAALAAAAUHVibGlzaGVySWQADP////8AAAAAAAEAKAEBAAAA" +
-           "AQH/////AAAAAARhggoEAAAAAAAIAAAAQWRkR3JvdXABAB84AC8BAB84HzgAAAEB/////wIAAAAVYKkK" +
-           "AgAAAAAADgAAAElucHV0QXJndW1lbnRzAQAgOAAuAEQgOAAAlgQAAAABACoBARgAAAAJAAAAR3JvdXBO" +
-           "YW1lAAz/////AAAAAAABACoBAR4AAAAPAAAAQW1xcExpbmtBZGRyZXNzAAz/////AAAAAAABACoBAR8A" +
-           "AAAQAAAAQnJva2VyQ3JlZGVudGlhbAAM/////wAAAAAAAQAqAQEbAAAADAAAAEJyb2tlclNlY3JldAAM" +
-           "/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBACE4" +
-           "AC4ARCE4AACWAQAAAAEAKgEBFgAAAAcAAABHcm91cElkABH/////AAAAAAABACgBAQAAAAEB/////wAA" +
-           "AAA=";
+           "AAAM/////wEB/////wAAAAAEYYIKBAAAAAAACAAAAEFkZEdyb3VwAQAfOAAvAQAfOB84AAABAf////8C" +
+           "AAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAIDgALgBEIDgAAJYEAAAAAQAqAQEYAAAACQAA" +
+           "AEdyb3VwTmFtZQAM/////wAAAAAAAQAqAQEeAAAADwAAAEFtcXBMaW5rQWRkcmVzcwAM/////wAAAAAA" +
+           "AQAqAQEfAAAAEAAAAEJyb2tlckNyZWRlbnRpYWwADP////8AAAAAAAEAKgEBGwAAAAwAAABCcm9rZXJT" +
+           "ZWNyZXQADP////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1l" +
+           "bnRzAQAhOAAuAEQhOAAAlgEAAAABACoBARYAAAAHAAAAR3JvdXBJZAAR/////wAAAAAAAQAoAQEAAAAB" +
+           "Af////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -57556,27 +56871,6 @@ namespace Opc.Ua
         {
             get { return (PropertyState<string>)base.PublisherId; }
             set { base.PublisherId = value; }
-        }
-
-        /// <summary>
-        /// A description for the AmqpConnectionTypeModifyMethodType Method.
-        /// </summary>
-        public AmqpConnectionTypeModifyMethodState Modify
-        {
-            get
-            {
-                return m_modifyMethod;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_modifyMethod, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_modifyMethod = value;
-            }
         }
 
         /// <summary>
@@ -57611,11 +56905,6 @@ namespace Opc.Ua
             ISystemContext context,
             IList<BaseInstanceState> children)
         {
-            if (m_modifyMethod != null)
-            {
-                children.Add(m_modifyMethod);
-            }
-
             if (m_addGroupMethod != null)
             {
                 children.Add(m_addGroupMethod);
@@ -57663,27 +56952,6 @@ namespace Opc.Ua
                     break;
                 }
 
-                case Opc.Ua.BrowseNames.Modify:
-                {
-                    if (createOrReplace)
-                    {
-                        if (Modify == null)
-                        {
-                            if (replacement == null)
-                            {
-                                Modify = new AmqpConnectionTypeModifyMethodState(this);
-                            }
-                            else
-                            {
-                                Modify = (AmqpConnectionTypeModifyMethodState)replacement;
-                            }
-                        }
-                    }
-
-                    instance = Modify;
-                    break;
-                }
-
                 case Opc.Ua.BrowseNames.AddGroup:
                 {
                     if (createOrReplace)
@@ -57716,131 +56984,9 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
-        private AmqpConnectionTypeModifyMethodState m_modifyMethod;
         private AmqpConnectionTypeAddGroupMethodState m_addGroupMethod;
         #endregion
     }
-    #endif
-    #endregion
-
-    #region AmqpConnectionTypeModifyMethodState Class
-    #if (!OPCUA_EXCLUDE_AmqpConnectionTypeModifyMethodState)
-    /// <summary>
-    /// Stores an instance of the AmqpConnectionTypeModifyMethodType Method.
-    /// </summary>
-    /// <exclude />
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public partial class AmqpConnectionTypeModifyMethodState : MethodState
-    {
-        #region Constructors
-        /// <summary>
-        /// Initializes the type with its default attribute values.
-        /// </summary>
-        public AmqpConnectionTypeModifyMethodState(NodeState parent) : base(parent)
-        {
-        }
-
-        /// <summary>
-        /// Constructs an instance of a node.
-        /// </summary>
-        /// <param name="parent">The parent.</param>
-        /// <returns>The new node.</returns>
-        public new static NodeState Construct(NodeState parent)
-        {
-            return new AmqpConnectionTypeModifyMethodState(parent);
-        }
-
-        #if (!OPCUA_EXCLUDE_InitializationStrings)
-        /// <summary>
-        /// Initializes the instance.
-        /// </summary>
-        protected override void Initialize(ISystemContext context)
-        {
-            Initialize(context, InitializationString);
-            InitializeOptionalChildren(context);
-        }
-
-        /// <summary>
-        /// Initializes the any option children defined for the instance.
-        /// </summary>
-        protected override void InitializeOptionalChildren(ISystemContext context)
-        {
-            base.InitializeOptionalChildren(context);
-        }
-
-        #region Initialization String
-        private const string InitializationString =
-           "//////////8EYYIKBAAAAAAAIgAAAEFtcXBDb25uZWN0aW9uVHlwZU1vZGlmeU1ldGhvZFR5cGUBAKQ5" +
-           "AC8BAKQ5pDkAAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQClOQAuAESlOQAA" +
-           "lgIAAAABACoBARYAAAAHAAAAQWRkcmVzcwAM/////wAAAAAAAQAqAQEaAAAACwAAAFB1Ymxpc2hlcklk" +
-           "AAz/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
-        #endregion
-        #endif
-        #endregion
-
-        #region Event Callbacks
-        /// <summary>
-        /// Raised when the the method is called.
-        /// </summary>
-        public AmqpConnectionTypeModifyMethodStateMethodCallHandler OnCall;
-        #endregion
-
-        #region Public Properties
-        #endregion
-
-        #region Overridden Methods
-        /// <summary>
-        /// Invokes the method, returns the result and output argument.
-        /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
-        protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
-        {
-            if (OnCall == null)
-            {
-                return base.Call(context, objectId, inputArguments, outputArguments);
-            }
-
-            ServiceResult result = null;
-
-            string address = (string)inputArguments[0];
-            string publisherId = (string)inputArguments[1];
-
-            if (OnCall != null)
-            {
-                result = OnCall(
-                    context,
-                    this,
-                    objectId,
-                    address,
-                    publisherId);
-            }
-
-            return result;
-        }
-        #endregion
-
-        #region Private Fields
-        #endregion
-    }
-
-    /// <summary>
-    /// Used to receive notifications when the method is called.
-    /// </summary>
-    /// <exclude />
-    public delegate ServiceResult AmqpConnectionTypeModifyMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
-        string address,
-        string publisherId);
     #endif
     #endregion
 
@@ -58022,11 +57168,6 @@ namespace Opc.Ua
         {
             base.InitializeOptionalChildren(context);
 
-            if (Modify != null)
-            {
-                Modify.Initialize(context, Modify_InitializationString);
-            }
-
             if (AddMessageWriter != null)
             {
                 AddMessageWriter.Initialize(context, AddMessageWriter_InitializationString);
@@ -58034,36 +57175,33 @@ namespace Opc.Ua
         }
 
         #region Initialization String
-        private const string Modify_InitializationString =
-           "//////////8EYYIKBAAAAAAABgAAAE1vZGlmeQEAvDkALwEAvDm8OQAAAQH/////AQAAABVgqQoCAAAA" +
-           "AAAOAAAASW5wdXRBcmd1bWVudHMBAL05AC4ARL05AACWAwAAAAEAKgEBHgAAAA8AAABBbXFwTGlua0Fk" +
-           "ZHJlc3MADP////8AAAAAAAEAKgEBHwAAABAAAABCcm9rZXJDcmVkZW50aWFsAAz/////AAAAAAABACoB" +
-           "ARsAAAAMAAAAQnJva2VyU2VjcmV0AAz/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
-
         private const string AddMessageWriter_InitializationString =
            "//////////8EYYIKBAAAAAAAEAAAAEFkZE1lc3NhZ2VXcml0ZXIBAL45AC8BAL45vjkAAAEB/////wIA" +
-           "AAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQC/OQAuAES/OQAAlgUAAAABACoBASAAAAARAAAA" +
+           "AAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQC/OQAuAES/OQAAlgcAAAABACoBASAAAAARAAAA" +
            "TWVzc2FnZVdyaXRlck5hbWUADP////8AAAAAAAEAKgEBIQAAABIAAABQdWJsaXNoZWREYXRhU2V0SWQA" +
-           "Ef////8AAAAAAAEAKgEBHwAAABAAAABFbmNvZGluZ01pbWVUeXBlAAz/////AAAAAAABACoBASIAAAAT" +
-           "AAAATWVzc2FnZUZpZWxkQWxpYXNlcwAMAQAAAAAAAAAAAQAqAQEhAAAAEgAAAFByb21vdGVkRmllbGRO" +
-           "YW1lcwAMAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVu" +
-           "dHMBAMA5AC4ARMA5AACWAQAAAAEAKgEBHgAAAA8AAABNZXNzYWdlV3JpdGVySWQAEf////8AAAAAAAEA" +
-           "KAEBAAAAAQH/////AAAAAA==";
+           "Ef////8AAAAAAAEAKgEBHwAAABAAAABFbmNvZGluZ01pbWVUeXBlAAz/////AAAAAAABACoBAR4AAAAP" +
+           "AAAAQW1xcExpbmtBZGRyZXNzAAz/////AAAAAAABACoBASIAAAATAAAATWV0YURhdGFMaW5rQWRkcmVz" +
+           "cwAM/////wAAAAAAAQAqAQEjAAAAEgAAAE1ldGFEYXRhVXBkYXRlVGltZQEAIgH/////AAAAAAABACoB" +
+           "AR0AAAAOAAAATWF4TWVzc2FnZVNpemUAB/////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAA" +
+           "AAAPAAAAT3V0cHV0QXJndW1lbnRzAQDAOQAuAETAOQAAlgIAAAABACoBAR4AAAAPAAAATWVzc2FnZVdy" +
+           "aXRlcklkABH/////AAAAAAABACoBASQAAAAVAAAAUmV2aXNlZE1heE1lc3NhZ2VTaXplAAf/////AAAA" +
+           "AAABACgBAQAAAAEB/////wAAAAA=";
 
         private const string InitializationString =
-           "//////////8EYIAAAQAAAAAAFQAAAEFtcXBHcm91cFR5cGVJbnN0YW5jZQEAqTkBAKk5/////wMAAAAV" +
-           "YIkKAgAAAAAADwAAAEFtcXBMaW5rQWRkcmVzcwEAuzkALgBEuzkAAAAM/////wEB/////wAAAAAEYYIK" +
-           "BAAAAAAABgAAAE1vZGlmeQEAvDkALwEAvDm8OQAAAQH/////AQAAABVgqQoCAAAAAAAOAAAASW5wdXRB" +
-           "cmd1bWVudHMBAL05AC4ARL05AACWAwAAAAEAKgEBHgAAAA8AAABBbXFwTGlua0FkZHJlc3MADP////8A" +
-           "AAAAAAEAKgEBHwAAABAAAABCcm9rZXJDcmVkZW50aWFsAAz/////AAAAAAABACoBARsAAAAMAAAAQnJv" +
-           "a2VyU2VjcmV0AAz/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAAAEAAAAEFkZE1lc3Nh" +
-           "Z2VXcml0ZXIBAL45AC8BAL45vjkAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRz" +
-           "AQC/OQAuAES/OQAAlgUAAAABACoBASAAAAARAAAATWVzc2FnZVdyaXRlck5hbWUADP////8AAAAAAAEA" +
-           "KgEBIQAAABIAAABQdWJsaXNoZWREYXRhU2V0SWQAEf////8AAAAAAAEAKgEBHwAAABAAAABFbmNvZGlu" +
-           "Z01pbWVUeXBlAAz/////AAAAAAABACoBASIAAAATAAAATWVzc2FnZUZpZWxkQWxpYXNlcwAMAQAAAAAA" +
-           "AAAAAQAqAQEhAAAAEgAAAFByb21vdGVkRmllbGROYW1lcwAMAQAAAAAAAAAAAQAoAQEAAAABAf////8A" +
-           "AAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAMA5AC4ARMA5AACWAQAAAAEAKgEBHgAAAA8A" +
-           "AABNZXNzYWdlV3JpdGVySWQAEf////8AAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
+           "//////////8EYIAAAQAAAAAAFQAAAEFtcXBHcm91cFR5cGVJbnN0YW5jZQEAqTkBAKk5/////wQAAAAV" +
+           "YIkKAgAAAAAAEgAAAFB1Ymxpc2hpbmdJbnRlcnZhbAEAOzsALgBEOzsAAAEAIgH/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAANAAAAS2VlcEFsaXZlVGltZQEAPDsALgBEPDsAAAEAIgH/////AQH/////AAAAABVg" +
+           "iQoCAAAAAAAPAAAAQW1xcExpbmtBZGRyZXNzAQC7OQAuAES7OQAAAAz/////AQH/////AAAAAARhggoE" +
+           "AAAAAAAQAAAAQWRkTWVzc2FnZVdyaXRlcgEAvjkALwEAvjm+OQAAAQH/////AgAAABVgqQoCAAAAAAAO" +
+           "AAAASW5wdXRBcmd1bWVudHMBAL85AC4ARL85AACWBwAAAAEAKgEBIAAAABEAAABNZXNzYWdlV3JpdGVy" +
+           "TmFtZQAM/////wAAAAAAAQAqAQEhAAAAEgAAAFB1Ymxpc2hlZERhdGFTZXRJZAAR/////wAAAAAAAQAq" +
+           "AQEfAAAAEAAAAEVuY29kaW5nTWltZVR5cGUADP////8AAAAAAAEAKgEBHgAAAA8AAABBbXFwTGlua0Fk" +
+           "ZHJlc3MADP////8AAAAAAAEAKgEBIgAAABMAAABNZXRhRGF0YUxpbmtBZGRyZXNzAAz/////AAAAAAAB" +
+           "ACoBASMAAAASAAAATWV0YURhdGFVcGRhdGVUaW1lAQAiAf////8AAAAAAAEAKgEBHQAAAA4AAABNYXhN" +
+           "ZXNzYWdlU2l6ZQAH/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRB" +
+           "cmd1bWVudHMBAMA5AC4ARMA5AACWAgAAAAEAKgEBHgAAAA8AAABNZXNzYWdlV3JpdGVySWQAEf////8A" +
+           "AAAAAAEAKgEBJAAAABUAAABSZXZpc2VkTWF4TWVzc2FnZVNpemUAB/////8AAAAAAAEAKAEBAAAAAQH/" +
+           "////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -58087,27 +57225,6 @@ namespace Opc.Ua
                 }
 
                 m_amqpLinkAddress = value;
-            }
-        }
-
-        /// <summary>
-        /// A description for the AmqpGroupTypeModifyMethodType Method.
-        /// </summary>
-        public AmqpGroupTypeModifyMethodState Modify
-        {
-            get
-            {
-                return m_modifyMethod;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_modifyMethod, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_modifyMethod = value;
             }
         }
 
@@ -58146,11 +57263,6 @@ namespace Opc.Ua
             if (m_amqpLinkAddress != null)
             {
                 children.Add(m_amqpLinkAddress);
-            }
-
-            if (m_modifyMethod != null)
-            {
-                children.Add(m_modifyMethod);
             }
 
             if (m_addMessageWriterMethod != null)
@@ -58200,27 +57312,6 @@ namespace Opc.Ua
                     break;
                 }
 
-                case Opc.Ua.BrowseNames.Modify:
-                {
-                    if (createOrReplace)
-                    {
-                        if (Modify == null)
-                        {
-                            if (replacement == null)
-                            {
-                                Modify = new AmqpGroupTypeModifyMethodState(this);
-                            }
-                            else
-                            {
-                                Modify = (AmqpGroupTypeModifyMethodState)replacement;
-                            }
-                        }
-                    }
-
-                    instance = Modify;
-                    break;
-                }
-
                 case Opc.Ua.BrowseNames.AddMessageWriter:
                 {
                     if (createOrReplace)
@@ -58254,135 +57345,9 @@ namespace Opc.Ua
 
         #region Private Fields
         private PropertyState<string> m_amqpLinkAddress;
-        private AmqpGroupTypeModifyMethodState m_modifyMethod;
         private AmqpGroupTypeAddWriterMethodState m_addMessageWriterMethod;
         #endregion
     }
-    #endif
-    #endregion
-
-    #region AmqpGroupTypeModifyMethodState Class
-    #if (!OPCUA_EXCLUDE_AmqpGroupTypeModifyMethodState)
-    /// <summary>
-    /// Stores an instance of the AmqpGroupTypeModifyMethodType Method.
-    /// </summary>
-    /// <exclude />
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public partial class AmqpGroupTypeModifyMethodState : MethodState
-    {
-        #region Constructors
-        /// <summary>
-        /// Initializes the type with its default attribute values.
-        /// </summary>
-        public AmqpGroupTypeModifyMethodState(NodeState parent) : base(parent)
-        {
-        }
-
-        /// <summary>
-        /// Constructs an instance of a node.
-        /// </summary>
-        /// <param name="parent">The parent.</param>
-        /// <returns>The new node.</returns>
-        public new static NodeState Construct(NodeState parent)
-        {
-            return new AmqpGroupTypeModifyMethodState(parent);
-        }
-
-        #if (!OPCUA_EXCLUDE_InitializationStrings)
-        /// <summary>
-        /// Initializes the instance.
-        /// </summary>
-        protected override void Initialize(ISystemContext context)
-        {
-            Initialize(context, InitializationString);
-            InitializeOptionalChildren(context);
-        }
-
-        /// <summary>
-        /// Initializes the any option children defined for the instance.
-        /// </summary>
-        protected override void InitializeOptionalChildren(ISystemContext context)
-        {
-            base.InitializeOptionalChildren(context);
-        }
-
-        #region Initialization String
-        private const string InitializationString =
-           "//////////8EYYIKBAAAAAAAHQAAAEFtcXBHcm91cFR5cGVNb2RpZnlNZXRob2RUeXBlAQDBOQAvAQDB" +
-           "OcE5AAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAwjkALgBEwjkAAJYDAAAA" +
-           "AQAqAQEeAAAADwAAAEFtcXBMaW5rQWRkcmVzcwAM/////wAAAAAAAQAqAQEfAAAAEAAAAEJyb2tlckNy" +
-           "ZWRlbnRpYWwADP////8AAAAAAAEAKgEBGwAAAAwAAABCcm9rZXJTZWNyZXQADP////8AAAAAAAEAKAEB" +
-           "AAAAAQH/////AAAAAA==";
-        #endregion
-        #endif
-        #endregion
-
-        #region Event Callbacks
-        /// <summary>
-        /// Raised when the the method is called.
-        /// </summary>
-        public AmqpGroupTypeModifyMethodStateMethodCallHandler OnCall;
-        #endregion
-
-        #region Public Properties
-        #endregion
-
-        #region Overridden Methods
-        /// <summary>
-        /// Invokes the method, returns the result and output argument.
-        /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
-        protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
-        {
-            if (OnCall == null)
-            {
-                return base.Call(context, objectId, inputArguments, outputArguments);
-            }
-
-            ServiceResult result = null;
-
-            string amqpLinkAddress = (string)inputArguments[0];
-            string brokerCredential = (string)inputArguments[1];
-            string brokerSecret = (string)inputArguments[2];
-
-            if (OnCall != null)
-            {
-                result = OnCall(
-                    context,
-                    this,
-                    objectId,
-                    amqpLinkAddress,
-                    brokerCredential,
-                    brokerSecret);
-            }
-
-            return result;
-        }
-        #endregion
-
-        #region Private Fields
-        #endregion
-    }
-
-    /// <summary>
-    /// Used to receive notifications when the method is called.
-    /// </summary>
-    /// <exclude />
-    public delegate ServiceResult AmqpGroupTypeModifyMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
-        string amqpLinkAddress,
-        string brokerCredential,
-        string brokerSecret);
     #endif
     #endregion
 
@@ -58434,13 +57399,15 @@ namespace Opc.Ua
         #region Initialization String
         private const string InitializationString =
            "//////////8EYYIKBAAAAAAAIAAAAEFtcXBHcm91cFR5cGVBZGRXcml0ZXJNZXRob2RUeXBlAQDDOQAv" +
-           "AQDDOcM5AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAxDkALgBExDkAAJYF" +
+           "AQDDOcM5AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAxDkALgBExDkAAJYH" +
            "AAAAAQAqAQEgAAAAEQAAAE1lc3NhZ2VXcml0ZXJOYW1lAAz/////AAAAAAABACoBASEAAAASAAAAUHVi" +
            "bGlzaGVkRGF0YVNldElkABH/////AAAAAAABACoBAR8AAAAQAAAARW5jb2RpbmdNaW1lVHlwZQAM////" +
-           "/wAAAAAAAQAqAQEiAAAAEwAAAE1lc3NhZ2VGaWVsZEFsaWFzZXMADAEAAAAAAAAAAAEAKgEBIQAAABIA" +
-           "AABQcm9tb3RlZEZpZWxkTmFtZXMADAEAAAAAAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAP" +
-           "AAAAT3V0cHV0QXJndW1lbnRzAQDFOQAuAETFOQAAlgEAAAABACoBAR4AAAAPAAAATWVzc2FnZVdyaXRl" +
-           "cklkABH/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
+           "/wAAAAAAAQAqAQEeAAAADwAAAEFtcXBMaW5rQWRkcmVzcwAM/////wAAAAAAAQAqAQEiAAAAEwAAAE1l" +
+           "dGFEYXRhTGlua0FkZHJlc3MADP////8AAAAAAAEAKgEBIwAAABIAAABNZXRhRGF0YVVwZGF0ZVRpbWUB" +
+           "ACIB/////wAAAAAAAQAqAQEdAAAADgAAAE1heE1lc3NhZ2VTaXplAAf/////AAAAAAABACgBAQAAAAEB" +
+           "/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEAxTkALgBExTkAAJYCAAAAAQAqAQEe" +
+           "AAAADwAAAE1lc3NhZ2VXcml0ZXJJZAAR/////wAAAAAAAQAqAQEkAAAAFQAAAFJldmlzZWRNYXhNZXNz" +
+           "YWdlU2l6ZQAH/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -58480,10 +57447,13 @@ namespace Opc.Ua
             string messageWriterName = (string)inputArguments[0];
             NodeId publishedDataSetId = (NodeId)inputArguments[1];
             string encodingMimeType = (string)inputArguments[2];
-            string[] messageFieldAliases = (string[])inputArguments[3];
-            string[] promotedFieldNames = (string[])inputArguments[4];
+            string amqpLinkAddress = (string)inputArguments[3];
+            string metaDataLinkAddress = (string)inputArguments[4];
+            double metaDataUpdateTime = (double)inputArguments[5];
+            uint maxMessageSize = (uint)inputArguments[6];
 
             NodeId messageWriterId = (NodeId)outputArguments[0];
+            uint revisedMaxMessageSize = (uint)outputArguments[1];
 
             if (OnCall != null)
             {
@@ -58494,12 +57464,16 @@ namespace Opc.Ua
                     messageWriterName,
                     publishedDataSetId,
                     encodingMimeType,
-                    messageFieldAliases,
-                    promotedFieldNames,
-                    ref messageWriterId);
+                    amqpLinkAddress,
+                    metaDataLinkAddress,
+                    metaDataUpdateTime,
+                    maxMessageSize,
+                    ref messageWriterId,
+                    ref revisedMaxMessageSize);
             }
 
             outputArguments[0] = messageWriterId;
+            outputArguments[1] = revisedMaxMessageSize;
 
             return result;
         }
@@ -58520,9 +57494,12 @@ namespace Opc.Ua
         string messageWriterName,
         NodeId publishedDataSetId,
         string encodingMimeType,
-        string[] messageFieldAliases,
-        string[] promotedFieldNames,
-        ref NodeId messageWriterId);
+        string amqpLinkAddress,
+        string metaDataLinkAddress,
+        double metaDataUpdateTime,
+        uint maxMessageSize,
+        ref NodeId messageWriterId,
+        ref uint revisedMaxMessageSize);
     #endif
     #endregion
 
@@ -58567,36 +57544,9 @@ namespace Opc.Ua
         protected override void InitializeOptionalChildren(ISystemContext context)
         {
             base.InitializeOptionalChildren(context);
-
-            if (MetaDataLinkAddress != null)
-            {
-                MetaDataLinkAddress.Initialize(context, MetaDataLinkAddress_InitializationString);
-            }
-
-            if (MetaDataUpdateTime != null)
-            {
-                MetaDataUpdateTime.Initialize(context, MetaDataUpdateTime_InitializationString);
-            }
-
-            if (DataSetWriterId != null)
-            {
-                DataSetWriterId.Initialize(context, DataSetWriterId_InitializationString);
-            }
         }
 
         #region Initialization String
-        private const string MetaDataLinkAddress_InitializationString =
-           "//////////8VYIkKAgAAAAAAEwAAAE1ldGFEYXRhTGlua0FkZHJlc3MBAMU6AC4ARMU6AAAADP////8B" +
-           "Af////8AAAAA";
-
-        private const string MetaDataUpdateTime_InitializationString =
-           "//////////8VYIkKAgAAAAAAEgAAAE1ldGFEYXRhVXBkYXRlVGltZQEAxjoALgBExjoAAAEAIgH/////" +
-           "AQH/////AAAAAA==";
-
-        private const string DataSetWriterId_InitializationString =
-           "//////////8VYIkKAgAAAAAADwAAAERhdGFTZXRXcml0ZXJJZAEAxzoALgBExzoAAAAF/////wEB////" +
-           "/wAAAAA=";
-
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAAHwAAAEFtcXBXcml0ZXJUcmFuc3BvcnRUeXBlSW5zdGFuY2UBAMM6AQDD" +
            "Ov////8FAAAAFWCJCgIAAAAAAA8AAABBbXFwTGlua0FkZHJlc3MBAMQ6AC4ARMQ6AAAADP////8BAf//" +
@@ -58893,6 +57843,253 @@ namespace Opc.Ua
         private PropertyState<double> m_metaDataUpdateTime;
         private PropertyState<ushort> m_dataSetWriterId;
         private PropertyState<uint> m_maxMessageSize;
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region AmqpReaderTransportState Class
+    #if (!OPCUA_EXCLUDE_AmqpReaderTransportState)
+    /// <summary>
+    /// Stores an instance of the AmqpReaderTransportType ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class AmqpReaderTransportState : MessageReaderTransportState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public AmqpReaderTransportState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.AmqpReaderTransportType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "//////////8EYIAAAQAAAAAAHwAAAEFtcXBSZWFkZXJUcmFuc3BvcnRUeXBlSW5zdGFuY2UBAEo7AQBK" +
+           "O/////8DAAAAFWCJCgIAAAAAAA8AAABBbXFwTGlua0FkZHJlc3MBAEs7AC4AREs7AAAADP////8BAf//" +
+           "//8AAAAAFWCJCgIAAAAAABMAAABNZXRhRGF0YUxpbmtBZGRyZXNzAQBMOwAuAERMOwAAAAz/////AQH/" +
+           "////AAAAABVgiQoCAAAAAAAPAAAARGF0YVNldFdyaXRlcklkAQBNOwAuAERNOwAAAAX/////AQH/////" +
+           "AAAAAA==";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the AmqpLinkAddress Property.
+        /// </summary>
+        public PropertyState<string> AmqpLinkAddress
+        {
+            get
+            {
+                return m_amqpLinkAddress;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_amqpLinkAddress, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_amqpLinkAddress = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the MetaDataLinkAddress Property.
+        /// </summary>
+        public PropertyState<string> MetaDataLinkAddress
+        {
+            get
+            {
+                return m_metaDataLinkAddress;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_metaDataLinkAddress, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_metaDataLinkAddress = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DataSetWriterId Property.
+        /// </summary>
+        public PropertyState<ushort> DataSetWriterId
+        {
+            get
+            {
+                return m_dataSetWriterId;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_dataSetWriterId, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_dataSetWriterId = value;
+            }
+        }
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Populates a list with the children that belong to the node.
+        /// </summary>
+        /// <param name="context">The context for the system being accessed.</param>
+        /// <param name="children">The list of children to populate.</param>
+        public override void GetChildren(
+            ISystemContext context,
+            IList<BaseInstanceState> children)
+        {
+            if (m_amqpLinkAddress != null)
+            {
+                children.Add(m_amqpLinkAddress);
+            }
+
+            if (m_metaDataLinkAddress != null)
+            {
+                children.Add(m_metaDataLinkAddress);
+            }
+
+            if (m_dataSetWriterId != null)
+            {
+                children.Add(m_dataSetWriterId);
+            }
+
+            base.GetChildren(context, children);
+        }
+
+        /// <summary>
+        /// Finds the child with the specified browse name.
+        /// </summary>
+        protected override BaseInstanceState FindChild(
+            ISystemContext context,
+            QualifiedName browseName,
+            bool createOrReplace,
+            BaseInstanceState replacement)
+        {
+            if (QualifiedName.IsNull(browseName))
+            {
+                return null;
+            }
+
+            BaseInstanceState instance = null;
+
+            switch (browseName.Name)
+            {
+                case Opc.Ua.BrowseNames.AmqpLinkAddress:
+                {
+                    if (createOrReplace)
+                    {
+                        if (AmqpLinkAddress == null)
+                        {
+                            if (replacement == null)
+                            {
+                                AmqpLinkAddress = new PropertyState<string>(this);
+                            }
+                            else
+                            {
+                                AmqpLinkAddress = (PropertyState<string>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = AmqpLinkAddress;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.MetaDataLinkAddress:
+                {
+                    if (createOrReplace)
+                    {
+                        if (MetaDataLinkAddress == null)
+                        {
+                            if (replacement == null)
+                            {
+                                MetaDataLinkAddress = new PropertyState<string>(this);
+                            }
+                            else
+                            {
+                                MetaDataLinkAddress = (PropertyState<string>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = MetaDataLinkAddress;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.DataSetWriterId:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DataSetWriterId == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DataSetWriterId = new PropertyState<ushort>(this);
+                            }
+                            else
+                            {
+                                DataSetWriterId = (PropertyState<ushort>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DataSetWriterId;
+                    break;
+                }
+            }
+
+            if (instance != null)
+            {
+                return instance;
+            }
+
+            return base.FindChild(context, browseName, createOrReplace, replacement);
+        }
+        #endregion
+
+        #region Private Fields
+        private PropertyState<string> m_amqpLinkAddress;
+        private PropertyState<string> m_metaDataLinkAddress;
+        private PropertyState<ushort> m_dataSetWriterId;
         #endregion
     }
     #endif

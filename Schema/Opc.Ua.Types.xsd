@@ -540,9 +540,9 @@
     <xs:sequence>
       <xs:element name="Fields" type="tns:ListOfFieldMetaData" minOccurs="0" nillable="true" />
       <xs:element name="Namespaces" type="ua:ListOfString" minOccurs="0" nillable="true" />
-      <xs:element name="StructuredTypes" type="tns:ListOfStructureDataTypeDescription" minOccurs="0" nillable="true" />
-      <xs:element name="EnumeratedTypes" type="tns:ListOfEnumDataTypeDescription" minOccurs="0" nillable="true" />
-      <xs:element name="ConfigurationGuid" type="ua:Guid" minOccurs="0" />
+      <xs:element name="DataSetClassId" type="ua:Guid" minOccurs="0" />
+      <xs:element name="StructureDataTypes" type="tns:ListOfStructureDataTypeDescription" minOccurs="0" nillable="true" />
+      <xs:element name="EnumDataTypes" type="tns:ListOfEnumDataTypeDescription" minOccurs="0" nillable="true" />
       <xs:element name="ConfigurationVersion" type="tns:ConfigurationVersionDataType" minOccurs="0" nillable="true" />
     </xs:sequence>
   </xs:complexType>
@@ -558,10 +558,12 @@
   <xs:complexType name="FieldMetaData">
     <xs:sequence>
       <xs:element name="Name" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="PromotedField" type="xs:boolean" minOccurs="0" />
       <xs:element name="DataType" type="ua:NodeId" minOccurs="0" nillable="true" />
       <xs:element name="ValueRank" type="xs:int" minOccurs="0" />
       <xs:element name="ArrayDimensions" type="ua:ListOfUInt32" minOccurs="0" nillable="true" />
       <xs:element name="DataSetFieldId" type="ua:Guid" minOccurs="0" />
+      <xs:element name="Properties" type="tns:ListOfKeyValuePair" minOccurs="0" nillable="true" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="FieldMetaData" type="tns:FieldMetaData" />
@@ -576,6 +578,7 @@
   <xs:complexType name="DataTypeDescription">
     <xs:sequence>
       <xs:element name="DataTypeId" type="ua:NodeId" minOccurs="0" nillable="true" />
+      <xs:element name="Name" type="ua:QualifiedName" minOccurs="0" nillable="true" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="DataTypeDescription" type="tns:DataTypeDescription" />
@@ -591,7 +594,7 @@
     <xs:complexContent mixed="false">
       <xs:extension base="tns:DataTypeDescription">
         <xs:sequence>
-          <xs:element name="DataTypeDefinition" type="tns:StructureDefinition" minOccurs="0" nillable="true" />
+          <xs:element name="StructureDefinition" type="tns:StructureDefinition" minOccurs="0" nillable="true" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -609,7 +612,7 @@
     <xs:complexContent mixed="false">
       <xs:extension base="tns:DataTypeDescription">
         <xs:sequence>
-          <xs:element name="DataTypeDefinition" type="tns:EnumDefinition" minOccurs="0" nillable="true" />
+          <xs:element name="EnumDefinition" type="tns:EnumDefinition" minOccurs="0" nillable="true" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -625,7 +628,6 @@
 
   <xs:complexType name="DataTypeDefinition">
     <xs:sequence>
-      <xs:element name="Name" type="ua:QualifiedName" minOccurs="0" nillable="true" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="DataTypeDefinition" type="tns:DataTypeDefinition" />
@@ -650,7 +652,7 @@
     <xs:complexContent mixed="false">
       <xs:extension base="tns:DataTypeDefinition">
         <xs:sequence>
-          <xs:element name="UaBinaryEncodingId" type="ua:NodeId" minOccurs="0" nillable="true" />
+          <xs:element name="DefaultEncodingId" type="ua:NodeId" minOccurs="0" nillable="true" />
           <xs:element name="BaseDataType" type="ua:NodeId" minOccurs="0" nillable="true" />
           <xs:element name="StructureType" type="tns:StructureType" minOccurs="0" />
           <xs:element name="Fields" type="tns:ListOfStructureField" minOccurs="0" nillable="true" />
@@ -706,8 +708,6 @@
   <xs:complexType name="EnumField">
     <xs:sequence>
       <xs:element name="Name" type="xs:string" minOccurs="0" nillable="true" />
-      <xs:element name="Description" type="ua:LocalizedText" minOccurs="0" nillable="true" />
-      <xs:element name="Value" type="xs:int" minOccurs="0" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="EnumField" type="tns:EnumField" />
@@ -774,6 +774,7 @@
 
   <xs:complexType name="ConfigurationVersionDataType">
     <xs:sequence>
+      <xs:element name="UniqueId" type="ua:Guid" minOccurs="0" />
       <xs:element name="MajorVersion" type="xs:unsignedByte" minOccurs="0" />
       <xs:element name="MinorVersion" type="xs:unsignedByte" minOccurs="0" />
     </xs:sequence>
@@ -786,23 +787,6 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ListOfConfigurationVersionDataType" type="tns:ListOfConfigurationVersionDataType" nillable="true"></xs:element>
-
-  <xs:simpleType  name="PubSubState">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="NoConfiguration_0" />
-      <xs:enumeration value="Disabled_1" />
-      <xs:enumeration value="Operational_2" />
-      <xs:enumeration value="Error_3" />
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:element name="PubSubState" type="tns:PubSubState" />
-
-  <xs:complexType name="ListOfPubSubState">
-    <xs:sequence>
-      <xs:element name="PubSubState" type="tns:PubSubState" minOccurs="0" maxOccurs="unbounded" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ListOfPubSubState" type="tns:ListOfPubSubState" nillable="true"></xs:element>
 
   <xs:complexType name="DataConnectionDataType">
     <xs:sequence>
@@ -822,6 +806,23 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ListOfDataConnectionDataType" type="tns:ListOfDataConnectionDataType" nillable="true"></xs:element>
+
+  <xs:simpleType  name="PubSubState">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NoConfiguration_0" />
+      <xs:enumeration value="Disabled_1" />
+      <xs:enumeration value="Operational_2" />
+      <xs:enumeration value="Error_3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PubSubState" type="tns:PubSubState" />
+
+  <xs:complexType name="ListOfPubSubState">
+    <xs:sequence>
+      <xs:element name="PubSubState" type="tns:PubSubState" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfPubSubState" type="tns:ListOfPubSubState" nillable="true"></xs:element>
 
   <xs:simpleType  name="IdType">
     <xs:annotation>
