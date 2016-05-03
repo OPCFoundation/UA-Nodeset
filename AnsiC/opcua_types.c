@@ -2186,6 +2186,132 @@ struct _OpcUa_EncodeableType OpcUa_EnumValueType_EncodeableType =
 };
 #endif
 
+#ifndef OPCUA_EXCLUDE_EnumField
+/*============================================================================
+ * OpcUa_EnumField_Initialize
+ *===========================================================================*/
+OpcUa_Void OpcUa_EnumField_Initialize(OpcUa_EnumField* a_pValue)
+{
+    if (a_pValue != OpcUa_Null)
+    {
+        OpcUa_Field_Initialize(Int64, Value);
+        OpcUa_Field_Initialize(LocalizedText, DisplayName);
+        OpcUa_Field_Initialize(LocalizedText, Description);
+        OpcUa_Field_Initialize(String, Name);
+    }
+}
+
+/*============================================================================
+ * OpcUa_EnumField_Clear
+ *===========================================================================*/
+OpcUa_Void OpcUa_EnumField_Clear(OpcUa_EnumField* a_pValue)
+{
+    if (a_pValue != OpcUa_Null)
+    {
+        OpcUa_Field_Clear(Int64, Value);
+        OpcUa_Field_Clear(LocalizedText, DisplayName);
+        OpcUa_Field_Clear(LocalizedText, Description);
+        OpcUa_Field_Clear(String, Name);
+    }
+}
+
+/*============================================================================
+ * OpcUa_EnumField_GetSize
+ *===========================================================================*/
+OpcUa_StatusCode OpcUa_EnumField_GetSize(OpcUa_EnumField* a_pValue, OpcUa_Encoder* a_pEncoder, OpcUa_Int32* a_pSize)
+{
+    OpcUa_Int32 iSize = 0;
+
+    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "EnumField_GetSize");
+
+    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
+    OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
+    OpcUa_ReturnErrorIfArgumentNull(a_pSize);
+
+    *a_pSize = -1;
+
+    OpcUa_Field_GetSize(Int64, Value);
+    OpcUa_Field_GetSize(LocalizedText, DisplayName);
+    OpcUa_Field_GetSize(LocalizedText, Description);
+    OpcUa_Field_GetSize(String, Name);
+
+    *a_pSize = iSize;
+
+    OpcUa_ReturnStatusCode;
+    OpcUa_BeginErrorHandling;
+
+    *a_pSize = -1;
+
+    OpcUa_FinishErrorHandling;
+}
+
+/*============================================================================
+ * OpcUa_EnumField_Encode
+ *===========================================================================*/
+OpcUa_StatusCode OpcUa_EnumField_Encode(OpcUa_EnumField* a_pValue, OpcUa_Encoder* a_pEncoder)
+{
+    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "EnumField_Encode");
+
+    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
+    OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
+
+    OpcUa_Field_Write(Int64, Value);
+    OpcUa_Field_Write(LocalizedText, DisplayName);
+    OpcUa_Field_Write(LocalizedText, Description);
+    OpcUa_Field_Write(String, Name);
+
+    OpcUa_ReturnStatusCode;
+    OpcUa_BeginErrorHandling;
+
+    /* nothing to do */
+
+    OpcUa_FinishErrorHandling;
+}
+
+/*============================================================================
+ * OpcUa_EnumField_Decode
+ *===========================================================================*/
+OpcUa_StatusCode OpcUa_EnumField_Decode(OpcUa_EnumField* a_pValue, OpcUa_Decoder* a_pDecoder)
+{
+    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "EnumField_Decode");
+
+    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
+    OpcUa_ReturnErrorIfArgumentNull(a_pDecoder);
+
+    OpcUa_EnumField_Initialize(a_pValue);
+
+    OpcUa_Field_Read(Int64, Value);
+    OpcUa_Field_Read(LocalizedText, DisplayName);
+    OpcUa_Field_Read(LocalizedText, Description);
+    OpcUa_Field_Read(String, Name);
+
+    OpcUa_ReturnStatusCode;
+    OpcUa_BeginErrorHandling;
+
+    OpcUa_EnumField_Clear(a_pValue);
+
+    OpcUa_FinishErrorHandling;
+}
+
+/*============================================================================
+ * OpcUa_EnumField_EncodeableType
+ *===========================================================================*/
+struct _OpcUa_EncodeableType OpcUa_EnumField_EncodeableType =
+{
+    "EnumField",
+    OpcUaId_EnumField,
+    OpcUaId_EnumField_Encoding_DefaultBinary,
+    OpcUaId_EnumField_Encoding_DefaultXml,
+    OpcUa_Null,
+    sizeof(OpcUa_EnumField),
+    (OpcUa_EncodeableObject_PfnInitialize*)OpcUa_EnumField_Initialize,
+    (OpcUa_EncodeableObject_PfnClear*)OpcUa_EnumField_Clear,
+    (OpcUa_EncodeableObject_PfnGetSize*)OpcUa_EnumField_GetSize,
+    (OpcUa_EncodeableObject_PfnEncode*)OpcUa_EnumField_Encode,
+    (OpcUa_EncodeableObject_PfnDecode*)OpcUa_EnumField_Decode
+};
+#endif
+
 #ifndef OPCUA_EXCLUDE_OptionSet
 /*============================================================================
  * OpcUa_OptionSet_Initialize
@@ -28084,6 +28210,9 @@ static OpcUa_EncodeableType* g_OpcUa_KnownEncodeableTypes[] =
     #endif
     #ifndef OPCUA_EXCLUDE_EnumValueType
     &OpcUa_EnumValueType_EncodeableType,
+    #endif
+    #ifndef OPCUA_EXCLUDE_EnumField
+    &OpcUa_EnumField_EncodeableType,
     #endif
     #ifndef OPCUA_EXCLUDE_OptionSet
     &OpcUa_OptionSet_EncodeableType,
