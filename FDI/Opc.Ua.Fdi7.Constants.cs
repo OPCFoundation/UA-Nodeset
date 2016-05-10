@@ -38,6 +38,26 @@ using Opc.Ua;
 
 namespace Opc.Ua.Fdi7
 {
+    #region DataType Identifiers
+    /// <summary>
+    /// A class that declares constants for all DataTypes in the Model Design.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public static partial class DataTypes
+    {
+        /// <summary>
+        /// The identifier for the EddDataTypeEnum DataType.
+        /// </summary>
+        public const uint EddDataTypeEnum = 2048;
+
+        /// <summary>
+        /// The identifier for the EddDataTypeInfo DataType.
+        /// </summary>
+        public const uint EddDataTypeInfo = 2050;
+    }
+    #endregion
+
     #region Method Identifiers
     /// <summary>
     /// A class that declares constants for all Methods in the Model Design.
@@ -46,6 +66,366 @@ namespace Opc.Ua.Fdi7
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class Methods
     {
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_InitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_Lock_InitLock = 1394;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_Lock_RenewLock = 1397;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_Lock_ExitLock = 1399;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_Lock_BreakLock = 1401;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_InitLock = 1412;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_RenewLock = 1415;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_ExitLock = 1417;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_BreakLock = 1419;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_InitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_Lock_InitLock = 1438;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_Lock_RenewLock = 1441;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_Lock_ExitLock = 1443;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_Lock_BreakLock = 1445;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_InitLock = 1456;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_RenewLock = 1459;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_ExitLock = 1461;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_BreakLock = 1463;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_InitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_Lock_InitLock = 1481;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_Lock_RenewLock = 1484;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_Lock_ExitLock = 1486;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_Lock_BreakLock = 1488;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_InitLock = 1499;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_RenewLock = 1502;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_ExitLock = 1504;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_BreakLock = 1506;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_InitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_Lock_InitLock = 1523;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_Lock_RenewLock = 1526;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_Lock_ExitLock = 1528;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_Lock_BreakLock = 1530;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_InitLock = 1541;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_RenewLock = 1544;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_ExitLock = 1546;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_BreakLock = 1548;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_InitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_Lock_InitLock = 1568;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_Lock_RenewLock = 1571;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_Lock_ExitLock = 1573;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_Lock_BreakLock = 1575;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_InitLock = 1586;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_RenewLock = 1589;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_ExitLock = 1591;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_BreakLock = 1593;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_InitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_Lock_InitLock = 1615;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_Lock_RenewLock = 1618;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_Lock_ExitLock = 1620;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_Lock_BreakLock = 1622;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_InitLock = 1633;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_RenewLock = 1636;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_ExitLock = 1638;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_BreakLock = 1640;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_InitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_Lock_InitLock = 1662;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_Lock_RenewLock = 1665;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_Lock_ExitLock = 1667;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_Lock_BreakLock = 1669;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_InitLock = 1680;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_RenewLock = 1683;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_ExitLock = 1685;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_BreakLock = 1687;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_InitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_Lock_InitLock = 1709;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_Lock_RenewLock = 1712;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_Lock_ExitLock = 1714;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_Lock_BreakLock = 1716;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_InitLock = 1727;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_RenewLock = 1730;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_ExitLock = 1732;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_BreakLock = 1734;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_InitLock Method.
+        /// </summary>
+        public const uint GenericConnectionPoint_Lock_InitLock = 1756;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_RenewLock Method.
+        /// </summary>
+        public const uint GenericConnectionPoint_Lock_RenewLock = 1759;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_ExitLock Method.
+        /// </summary>
+        public const uint GenericConnectionPoint_Lock_ExitLock = 1761;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_BreakLock Method.
+        /// </summary>
+        public const uint GenericConnectionPoint_Lock_BreakLock = 1763;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public const uint GenericConnectionPoint_NetworkIdentifier_Lock_InitLock = 1774;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public const uint GenericConnectionPoint_NetworkIdentifier_Lock_RenewLock = 1777;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public const uint GenericConnectionPoint_NetworkIdentifier_Lock_ExitLock = 1779;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public const uint GenericConnectionPoint_NetworkIdentifier_Lock_BreakLock = 1781;
+
         /// <summary>
         /// The identifier for the CommunicationServerType_Lock_InitLock Method.
         /// </summary>
@@ -130,6 +510,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the SetAddressMethodHARTType Method.
         /// </summary>
         public const uint SetAddressMethodHARTType = 321;
+
+        /// <summary>
+        /// The identifier for the SetAddressMethodGENERICType Method.
+        /// </summary>
+        public const uint SetAddressMethodGENERICType = 1785;
 
         /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_Lock_InitLock Method.
@@ -257,6 +642,16 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_BreakLock = 420;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Disconnect Method.
+        /// </summary>
+        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Disconnect = 440;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Connect Method.
+        /// </summary>
+        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Connect = 443;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Transfer Method.
         /// </summary>
         public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Transfer = 446;
@@ -325,6 +720,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_BreakLock Method.
         /// </summary>
         public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_BreakLock = 548;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_Disconnect Method.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_Disconnect = 568;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_Connect Method.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_Connect = 571;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_Transfer Method.
@@ -397,6 +802,16 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_BreakLock = 676;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Disconnect Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Disconnect = 696;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Connect Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Connect = 699;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Transfer Method.
         /// </summary>
         public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Transfer = 702;
@@ -465,6 +880,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_BreakLock Method.
         /// </summary>
         public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_BreakLock = 801;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Disconnect Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Disconnect = 821;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Connect Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Connect = 824;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Transfer Method.
@@ -537,9 +962,174 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationHARType_ServiceProvider_Lock_BreakLock = 926;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_MethodSet_Disconnect Method.
+        /// </summary>
+        public const uint ServerCommunicationHARType_ServiceProvider_MethodSet_Disconnect = 946;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_MethodSet_Connect Method.
+        /// </summary>
+        public const uint ServerCommunicationHARType_ServiceProvider_MethodSet_Connect = 949;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_MethodSet_Transfer Method.
         /// </summary>
         public const uint ServerCommunicationHARType_ServiceProvider_MethodSet_Transfer = 952;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_InitLock Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_Lock_InitLock = 1802;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_Lock_RenewLock = 1805;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_Lock_ExitLock = 1807;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_Lock_BreakLock = 1809;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_InitLock = 1841;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_RenewLock = 1844;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_ExitLock = 1846;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_BreakLock = 1848;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_InitLock Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_InitLock = 1874;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_RenewLock = 1877;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_ExitLock = 1879;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_BreakLock = 1881;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Disconnect Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Disconnect = 1901;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Connect Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Connect = 1904;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Transfer Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Transfer = 1907;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_InitLock Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_Lock_InitLock = 1927;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_Lock_RenewLock = 1930;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_Lock_ExitLock = 1932;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_Lock_BreakLock = 1934;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_InitLock = 1966;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_RenewLock = 1969;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_ExitLock = 1971;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_BreakLock = 1973;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_SetAddress Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_MethodSet_SetAddress = 1988;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_InitLock Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_InitLock = 2003;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_RenewLock = 2006;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_ExitLock = 2008;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_BreakLock = 2010;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Disconnect Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Disconnect = 2030;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Connect Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Connect = 2033;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Transfer Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Transfer = 2036;
 
         /// <summary>
         /// The identifier for the ConnectMethodFFH1Type Method.
@@ -567,6 +1157,16 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectMethodHARTType = 970;
 
         /// <summary>
+        /// The identifier for the ConnectMethodISA100_WirelessType Method.
+        /// </summary>
+        public const uint ConnectMethodISA100_WirelessType = 2039;
+
+        /// <summary>
+        /// The identifier for the ConnectMethodGENERICType Method.
+        /// </summary>
+        public const uint ConnectMethodGENERICType = 2042;
+
+        /// <summary>
         /// The identifier for the TransferMethodFFH1Type Method.
         /// </summary>
         public const uint TransferMethodFFH1Type = 973;
@@ -592,6 +1192,16 @@ namespace Opc.Ua.Fdi7
         public const uint TransferMethodHARTType = 985;
 
         /// <summary>
+        /// The identifier for the TransferMethodISA100_WirelessType Method.
+        /// </summary>
+        public const uint TransferMethodISA100_WirelessType = 2045;
+
+        /// <summary>
+        /// The identifier for the TransferMethodGENERICType Method.
+        /// </summary>
+        public const uint TransferMethodGENERICType = 2051;
+
+        /// <summary>
         /// The identifier for the GetPublishedDataMethodFFH1Type Method.
         /// </summary>
         public const uint GetPublishedDataMethodFFH1Type = 988;
@@ -605,6 +1215,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the GetPublishedDataMethodHARTType Method.
         /// </summary>
         public const uint GetPublishedDataMethodHARTType = 994;
+
+        /// <summary>
+        /// The identifier for the GetPublishedDataMethodISA100_WirelessType Method.
+        /// </summary>
+        public const uint GetPublishedDataMethodISA100_WirelessType = 2054;
 
         /// <summary>
         /// The identifier for the ServerCommunicationServiceType_Lock_InitLock Method.
@@ -692,6 +1307,11 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_BreakLock = 1057;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFH1ServiceType_MethodSet_Disconnect Method.
+        /// </summary>
+        public const uint ServerCommunicationFFH1ServiceType_MethodSet_Disconnect = 1061;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFH1ServiceType_MethodSet_Connect Method.
         /// </summary>
         public const uint ServerCommunicationFFH1ServiceType_MethodSet_Connect = 1064;
@@ -745,6 +1365,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public const uint ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_BreakLock = 1133;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEServiceType_MethodSet_Disconnect Method.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEServiceType_MethodSet_Disconnect = 1137;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEServiceType_MethodSet_Connect Method.
@@ -802,6 +1427,11 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_BreakLock = 1209;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSServiceType_MethodSet_Disconnect Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSServiceType_MethodSet_Disconnect = 1213;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSServiceType_MethodSet_Connect Method.
         /// </summary>
         public const uint ServerCommunicationPROFIBUSServiceType_MethodSet_Connect = 1216;
@@ -850,6 +1480,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public const uint ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_BreakLock = 1282;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETServiceType_MethodSet_Disconnect Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETServiceType_MethodSet_Disconnect = 1286;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETServiceType_MethodSet_Connect Method.
@@ -902,6 +1537,11 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationHARTServiceType_CPIdentifier_Lock_BreakLock = 1355;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationHARTServiceType_MethodSet_Disconnect Method.
+        /// </summary>
+        public const uint ServerCommunicationHARTServiceType_MethodSet_Disconnect = 1359;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationHARTServiceType_MethodSet_Connect Method.
         /// </summary>
         public const uint ServerCommunicationHARTServiceType_MethodSet_Connect = 1362;
@@ -915,6 +1555,121 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationHARTServiceType_MethodSet_GetPublishedData Method.
         /// </summary>
         public const uint ServerCommunicationHARTServiceType_MethodSet_GetPublishedData = 1368;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_InitLock Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_Lock_InitLock = 2071;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_Lock_RenewLock = 2074;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_Lock_ExitLock = 2076;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_Lock_BreakLock = 2078;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_InitLock = 2110;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_RenewLock = 2113;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_ExitLock = 2115;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_BreakLock = 2117;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_Disconnect Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_MethodSet_Disconnect = 2121;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_Connect Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_MethodSet_Connect = 2124;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_Transfer Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_MethodSet_Transfer = 2127;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData = 2130;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_InitLock Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_Lock_InitLock = 2147;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_Lock_RenewLock = 2150;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_Lock_ExitLock = 2152;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_Lock_BreakLock = 2154;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_Lock_InitLock = 2186;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_Lock_RenewLock = 2189;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_Lock_ExitLock = 2191;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_Lock_BreakLock = 2193;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_Disconnect Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_MethodSet_Disconnect = 2197;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_Connect Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_MethodSet_Connect = 2200;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_Transfer Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_MethodSet_Transfer = 2203;
     }
     #endregion
 
@@ -1057,6 +1812,41 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationHARType_ServiceProvider_MethodSet = 910;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_NetworkAddress Object.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_NetworkAddress = 1850;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider Object.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider = 1862;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet Object.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet = 1865;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet Object.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_MethodSet = 1916;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_NetworkAddress Object.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_NetworkAddress = 1975;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider Object.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider = 1991;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet Object.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet = 1994;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationServiceType_MethodSet Object.
         /// </summary>
         public const uint ServerCommunicationServiceType_MethodSet = 236;
@@ -1115,6 +1905,36 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationHARTServiceType_CPIdentifier_NetworkAddress Object.
         /// </summary>
         public const uint ServerCommunicationHARTServiceType_CPIdentifier_NetworkAddress = 1357;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet Object.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_MethodSet = 2060;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_NetworkAddress Object.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_NetworkAddress = 2119;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet Object.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_MethodSet = 2136;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_NetworkAddress Object.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_NetworkAddress = 2195;
+
+        /// <summary>
+        /// The identifier for the EddDataTypeInfo_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint EddDataTypeInfo_Encoding_DefaultXml = 2206;
+
+        /// <summary>
+        /// The identifier for the EddDataTypeInfo_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint EddDataTypeInfo_Encoding_DefaultBinary = 2213;
     }
     #endregion
 
@@ -1126,6 +1946,91 @@ namespace Opc.Ua.Fdi7
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class ObjectTypes
     {
+        /// <summary>
+        /// The identifier for the Foundation_H1 ObjectType.
+        /// </summary>
+        public const uint Foundation_H1 = 1371;
+
+        /// <summary>
+        /// The identifier for the Foundation_HSE ObjectType.
+        /// </summary>
+        public const uint Foundation_HSE = 1372;
+
+        /// <summary>
+        /// The identifier for the Profibus_DP ObjectType.
+        /// </summary>
+        public const uint Profibus_DP = 1373;
+
+        /// <summary>
+        /// The identifier for the Profibus_PA ObjectType.
+        /// </summary>
+        public const uint Profibus_PA = 1374;
+
+        /// <summary>
+        /// The identifier for the Profinet_IO ObjectType.
+        /// </summary>
+        public const uint Profinet_IO = 1375;
+
+        /// <summary>
+        /// The identifier for the HART ObjectType.
+        /// </summary>
+        public const uint HART = 1376;
+
+        /// <summary>
+        /// The identifier for the ISA100_Wireless ObjectType.
+        /// </summary>
+        public const uint ISA100_Wireless = 1377;
+
+        /// <summary>
+        /// The identifier for the GenericProtocol ObjectType.
+        /// </summary>
+        public const uint GenericProtocol = 1378;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1 ObjectType.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1 = 1380;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE ObjectType.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE = 1424;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP ObjectType.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP = 1467;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO ObjectType.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO = 1509;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5 ObjectType.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5 = 1554;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6 ObjectType.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6 = 1601;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7 ObjectType.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7 = 1648;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless ObjectType.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless = 1695;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint ObjectType.
+        /// </summary>
+        public const uint GenericConnectionPoint = 1742;
+
         /// <summary>
         /// The identifier for the CommunicationServerType ObjectType.
         /// </summary>
@@ -1162,6 +2067,16 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationHARType = 830;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType ObjectType.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType = 1788;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType ObjectType.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType = 1913;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationServiceType ObjectType.
         /// </summary>
         public const uint ServerCommunicationServiceType = 233;
@@ -1190,6 +2105,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationHARTServiceType ObjectType.
         /// </summary>
         public const uint ServerCommunicationHARTServiceType = 1295;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType ObjectType.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType = 2057;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType ObjectType.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType = 2133;
     }
     #endregion
 
@@ -1201,6 +2126,1001 @@ namespace Opc.Ua.Fdi7
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class Variables
     {
+        /// <summary>
+        /// The identifier for the GenericProtocol_ProtocolIdentifier Variable.
+        /// </summary>
+        public const uint GenericProtocol_ProtocolIdentifier = 1379;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_Locked Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_Lock_Locked = 1390;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_Lock_LockingClient = 1391;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_Lock_LockingUser = 1392;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_Lock_RemainingLockTime = 1393;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_Lock_InitLock_InputArguments = 1395;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_Lock_InitLock_OutputArguments = 1396;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_Lock_RenewLock_OutputArguments = 1398;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_Lock_ExitLock_OutputArguments = 1400;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_Lock_BreakLock_OutputArguments = 1402;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_Locked = 1408;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_LockingClient = 1409;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_LockingUser = 1410;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_RemainingLockTime = 1411;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_InitLock_InputArguments = 1413;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_InitLock_OutputArguments = 1414;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_RenewLock_OutputArguments = 1416;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_ExitLock_OutputArguments = 1418;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_BreakLock_OutputArguments = 1420;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Address Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_Address = 1421;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_OrdinalNumber Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_OrdinalNumber = 1422;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_SIFConnection Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_SIFConnection = 1423;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_Locked Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_Lock_Locked = 1434;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_Lock_LockingClient = 1435;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_Lock_LockingUser = 1436;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_Lock_RemainingLockTime = 1437;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_Lock_InitLock_InputArguments = 1439;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_Lock_InitLock_OutputArguments = 1440;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_Lock_RenewLock_OutputArguments = 1442;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_Lock_ExitLock_OutputArguments = 1444;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_Lock_BreakLock_OutputArguments = 1446;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_Locked = 1452;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_LockingClient = 1453;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_LockingUser = 1454;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_RemainingLockTime = 1455;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_InitLock_InputArguments = 1457;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_InitLock_OutputArguments = 1458;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_RenewLock_OutputArguments = 1460;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_ExitLock_OutputArguments = 1462;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_BreakLock_OutputArguments = 1464;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Address Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_Address = 1465;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_OrdinalNumber Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_OrdinalNumber = 1466;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_Locked Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_Lock_Locked = 1477;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_Lock_LockingClient = 1478;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_Lock_LockingUser = 1479;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_Lock_RemainingLockTime = 1480;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_Lock_InitLock_InputArguments = 1482;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_Lock_InitLock_OutputArguments = 1483;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_Lock_RenewLock_OutputArguments = 1485;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_Lock_ExitLock_OutputArguments = 1487;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_Lock_BreakLock_OutputArguments = 1489;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_Locked = 1495;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_LockingClient = 1496;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_LockingUser = 1497;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_RemainingLockTime = 1498;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_InitLock_InputArguments = 1500;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_InitLock_OutputArguments = 1501;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_RenewLock_OutputArguments = 1503;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_ExitLock_OutputArguments = 1505;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_BreakLock_OutputArguments = 1507;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Address Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_Address = 1508;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_Locked Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_Lock_Locked = 1519;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_Lock_LockingClient = 1520;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_Lock_LockingUser = 1521;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_Lock_RemainingLockTime = 1522;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_Lock_InitLock_InputArguments = 1524;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_Lock_InitLock_OutputArguments = 1525;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_Lock_RenewLock_OutputArguments = 1527;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_Lock_ExitLock_OutputArguments = 1529;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_Lock_BreakLock_OutputArguments = 1531;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_Locked = 1537;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_LockingClient = 1538;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_LockingUser = 1539;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_RemainingLockTime = 1540;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_InitLock_InputArguments = 1542;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_InitLock_OutputArguments = 1543;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_RenewLock_OutputArguments = 1545;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_ExitLock_OutputArguments = 1547;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_BreakLock_OutputArguments = 1549;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_MAC Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_MAC = 1550;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_IPv4 Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_IPv4 = 1551;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_DNSNAME Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_DNSNAME = 1552;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_VALID Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_VALID = 1553;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_Locked Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_Lock_Locked = 1564;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_Lock_LockingClient = 1565;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_Lock_LockingUser = 1566;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_Lock_RemainingLockTime = 1567;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_Lock_InitLock_InputArguments = 1569;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_Lock_InitLock_OutputArguments = 1570;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_Lock_RenewLock_OutputArguments = 1572;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_Lock_ExitLock_OutputArguments = 1574;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_Lock_BreakLock_OutputArguments = 1576;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_Locked = 1582;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_LockingClient = 1583;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_LockingUser = 1584;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_RemainingLockTime = 1585;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_InitLock_InputArguments = 1587;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_InitLock_OutputArguments = 1588;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_RenewLock_OutputArguments = 1590;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_ExitLock_OutputArguments = 1592;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_BreakLock_OutputArguments = 1594;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_DevAddr Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_DevAddr = 1595;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_DevMfg Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_DevMfg = 1596;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_DevType Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_DevType = 1597;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_DevRev Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_DevRev = 1598;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_DevTag Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_DevTag = 1599;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_DevPollAddr Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_DevPollAddr = 1600;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_Locked Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_Lock_Locked = 1611;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_Lock_LockingClient = 1612;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_Lock_LockingUser = 1613;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_Lock_RemainingLockTime = 1614;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_Lock_InitLock_InputArguments = 1616;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_Lock_InitLock_OutputArguments = 1617;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_Lock_RenewLock_OutputArguments = 1619;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_Lock_ExitLock_OutputArguments = 1621;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_Lock_BreakLock_OutputArguments = 1623;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_Locked = 1629;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_LockingClient = 1630;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_LockingUser = 1631;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_RemainingLockTime = 1632;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_InitLock_InputArguments = 1634;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_InitLock_OutputArguments = 1635;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_RenewLock_OutputArguments = 1637;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_ExitLock_OutputArguments = 1639;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_BreakLock_OutputArguments = 1641;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_DevAddr Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_DevAddr = 1642;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_DevMfg Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_DevMfg = 1643;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_DevType Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_DevType = 1644;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_DevRev Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_DevRev = 1645;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_DevTag Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_DevTag = 1646;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_DevPollAddr Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_DevPollAddr = 1647;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_Locked Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_Lock_Locked = 1658;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_Lock_LockingClient = 1659;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_Lock_LockingUser = 1660;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_Lock_RemainingLockTime = 1661;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_Lock_InitLock_InputArguments = 1663;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_Lock_InitLock_OutputArguments = 1664;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_Lock_RenewLock_OutputArguments = 1666;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_Lock_ExitLock_OutputArguments = 1668;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_Lock_BreakLock_OutputArguments = 1670;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_Locked = 1676;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_LockingClient = 1677;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_LockingUser = 1678;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_RemainingLockTime = 1679;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_InitLock_InputArguments = 1681;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_InitLock_OutputArguments = 1682;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_RenewLock_OutputArguments = 1684;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_ExitLock_OutputArguments = 1686;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_BreakLock_OutputArguments = 1688;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_DevAddr Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_DevAddr = 1689;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_DevMfg Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_DevMfg = 1690;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_DevType Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_DevType = 1691;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_DevRev Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_DevRev = 1692;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_DevTag Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_DevTag = 1693;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_DevPollAddr Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_DevPollAddr = 1694;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_Locked Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_Lock_Locked = 1705;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_Lock_LockingClient = 1706;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_Lock_LockingUser = 1707;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_Lock_RemainingLockTime = 1708;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_Lock_InitLock_InputArguments = 1710;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_Lock_InitLock_OutputArguments = 1711;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_Lock_RenewLock_OutputArguments = 1713;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_Lock_ExitLock_OutputArguments = 1715;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_Lock_BreakLock_OutputArguments = 1717;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_Locked = 1723;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_LockingClient = 1724;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_LockingUser = 1725;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_RemainingLockTime = 1726;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_InitLock_InputArguments = 1728;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_InitLock_OutputArguments = 1729;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_RenewLock_OutputArguments = 1731;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_ExitLock_OutputArguments = 1733;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_BreakLock_OutputArguments = 1735;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_IPAddress Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_IPAddress = 1736;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_DevMfg Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_DevMfg = 1737;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_DevType Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_DevType = 1738;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_DevRev Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_DevRev = 1739;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_DevTag Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_DevTag = 1740;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_DevPollAddr Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_DevPollAddr = 1741;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_Locked Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_Lock_Locked = 1752;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_Lock_LockingClient = 1753;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_Lock_LockingUser = 1754;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_Lock_RemainingLockTime = 1755;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_Lock_InitLock_InputArguments = 1757;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_Lock_InitLock_OutputArguments = 1758;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_Lock_RenewLock_OutputArguments = 1760;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_Lock_ExitLock_OutputArguments = 1762;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_Lock_BreakLock_OutputArguments = 1764;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_NetworkIdentifier_Lock_Locked = 1770;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_NetworkIdentifier_Lock_LockingClient = 1771;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_NetworkIdentifier_Lock_LockingUser = 1772;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_NetworkIdentifier_Lock_RemainingLockTime = 1773;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_NetworkIdentifier_Lock_InitLock_InputArguments = 1775;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_NetworkIdentifier_Lock_InitLock_OutputArguments = 1776;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_NetworkIdentifier_Lock_RenewLock_OutputArguments = 1778;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_NetworkIdentifier_Lock_ExitLock_OutputArguments = 1780;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_NetworkIdentifier_Lock_BreakLock_OutputArguments = 1782;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Address Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_Address = 1783;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_ProtocolIdentifier Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_ProtocolIdentifier = 1784;
+
         /// <summary>
         /// The identifier for the CommunicationServerType_Lock_Locked Variable.
         /// </summary>
@@ -1370,6 +3290,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the SetAddressMethodHARTType_OutputArguments Variable.
         /// </summary>
         public const uint SetAddressMethodHARTType_OutputArguments = 323;
+
+        /// <summary>
+        /// The identifier for the SetAddressMethodGENERICType_InputArguments Variable.
+        /// </summary>
+        public const uint SetAddressMethodGENERICType_InputArguments = 1786;
+
+        /// <summary>
+        /// The identifier for the SetAddressMethodGENERICType_OutputArguments Variable.
+        /// </summary>
+        public const uint SetAddressMethodGENERICType_OutputArguments = 1787;
 
         /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_Lock_Locked Variable.
@@ -2747,6 +4677,501 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationHARType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments = 957;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_Locked Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_Lock_Locked = 1798;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_Lock_LockingClient = 1799;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_Lock_LockingUser = 1800;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_Lock_RemainingLockTime = 1801;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_Lock_InitLock_InputArguments = 1803;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_Lock_InitLock_OutputArguments = 1804;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_Lock_RenewLock_OutputArguments = 1806;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_Lock_ExitLock_OutputArguments = 1808;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_Lock_BreakLock_OutputArguments = 1810;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_Locked = 1837;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_LockingClient = 1838;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_LockingUser = 1839;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_RemainingLockTime = 1840;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_InitLock_InputArguments = 1842;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_InitLock_OutputArguments = 1843;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_RenewLock_OutputArguments = 1845;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_ExitLock_OutputArguments = 1847;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments = 1849;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_MethodSet_Scan_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_MethodSet_Scan_OutputArguments = 1853;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_MethodSet_ResetScan_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_MethodSet_ResetScan_OutputArguments = 1855;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_MethodSet_AddComponent_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_MethodSet_AddComponent_InputArguments = 1857;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_MethodSet_AddComponent_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_MethodSet_AddComponent_OutputArguments = 1858;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_MethodSet_RemoveComponent_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_MethodSet_RemoveComponent_InputArguments = 1860;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_MethodSet_RemoveComponent_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_MethodSet_RemoveComponent_OutputArguments = 1861;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_Locked Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_Locked = 1870;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_LockingClient = 1871;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_LockingUser = 1872;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_RemainingLockTime = 1873;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_InitLock_InputArguments = 1875;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_InitLock_OutputArguments = 1876;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_RenewLock_OutputArguments = 1878;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_ExitLock_OutputArguments = 1880;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = 1882;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber = 1883;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter = 1884;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Manufacturer Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Manufacturer = 1885;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Model Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Model = 1886;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual = 1887;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision = 1888;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SoftwareRevision Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SoftwareRevision = 1889;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision = 1890;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments = 1902;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Disconnect_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Disconnect_OutputArguments = 1903;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Connect_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Connect_InputArguments = 1905;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Connect_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Connect_OutputArguments = 1906;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Transfer_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Transfer_InputArguments = 1908;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Transfer_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Transfer_OutputArguments = 1909;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_GetPublishedData_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_GetPublishedData_InputArguments = 1911;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments = 1912;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_Locked Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_Lock_Locked = 1923;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_Lock_LockingClient = 1924;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_Lock_LockingUser = 1925;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_Lock_RemainingLockTime = 1926;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_Lock_InitLock_InputArguments = 1928;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_Lock_InitLock_OutputArguments = 1929;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_Lock_RenewLock_OutputArguments = 1931;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_Lock_ExitLock_OutputArguments = 1933;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_Lock_BreakLock_OutputArguments = 1935;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_Locked = 1962;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_LockingClient = 1963;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_LockingUser = 1964;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_RemainingLockTime = 1965;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_InitLock_InputArguments = 1967;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_InitLock_OutputArguments = 1968;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_RenewLock_OutputArguments = 1970;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_ExitLock_OutputArguments = 1972;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments = 1974;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_Scan_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_MethodSet_Scan_OutputArguments = 1978;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_ResetScan_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_MethodSet_ResetScan_OutputArguments = 1980;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_AddComponent_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_MethodSet_AddComponent_InputArguments = 1982;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_AddComponent_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_MethodSet_AddComponent_OutputArguments = 1983;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_RemoveComponent_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_MethodSet_RemoveComponent_InputArguments = 1985;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_RemoveComponent_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_MethodSet_RemoveComponent_OutputArguments = 1986;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ProtocolIdentifier Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ProtocolIdentifier = 1987;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_SetAddress_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_MethodSet_SetAddress_InputArguments = 1989;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_SetAddress_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_MethodSet_SetAddress_OutputArguments = 1990;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_Locked Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_Locked = 1999;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_LockingClient = 2000;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_LockingUser = 2001;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_RemainingLockTime = 2002;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_InitLock_InputArguments = 2004;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_InitLock_OutputArguments = 2005;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_RenewLock_OutputArguments = 2007;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_ExitLock_OutputArguments = 2009;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = 2011;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber = 2012;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter = 2013;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Manufacturer Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Manufacturer = 2014;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Model Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Model = 2015;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual = 2016;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision = 2017;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_SoftwareRevision Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_SoftwareRevision = 2018;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision = 2019;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments = 2031;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Disconnect_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Disconnect_OutputArguments = 2032;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Connect_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Connect_InputArguments = 2034;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Connect_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Connect_OutputArguments = 2035;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Transfer_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Transfer_InputArguments = 2037;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Transfer_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Transfer_OutputArguments = 2038;
+
+        /// <summary>
         /// The identifier for the ConnectMethodFFH1Type_InputArguments Variable.
         /// </summary>
         public const uint ConnectMethodFFH1Type_InputArguments = 959;
@@ -2795,6 +5220,26 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectMethodHARTType_OutputArguments Variable.
         /// </summary>
         public const uint ConnectMethodHARTType_OutputArguments = 972;
+
+        /// <summary>
+        /// The identifier for the ConnectMethodISA100_WirelessType_InputArguments Variable.
+        /// </summary>
+        public const uint ConnectMethodISA100_WirelessType_InputArguments = 2040;
+
+        /// <summary>
+        /// The identifier for the ConnectMethodISA100_WirelessType_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectMethodISA100_WirelessType_OutputArguments = 2041;
+
+        /// <summary>
+        /// The identifier for the ConnectMethodGENERICType_InputArguments Variable.
+        /// </summary>
+        public const uint ConnectMethodGENERICType_InputArguments = 2043;
+
+        /// <summary>
+        /// The identifier for the ConnectMethodGENERICType_OutputArguments Variable.
+        /// </summary>
+        public const uint ConnectMethodGENERICType_OutputArguments = 2044;
 
         /// <summary>
         /// The identifier for the TransferMethodFFH1Type_InputArguments Variable.
@@ -2847,6 +5292,31 @@ namespace Opc.Ua.Fdi7
         public const uint TransferMethodHARTType_OutputArguments = 987;
 
         /// <summary>
+        /// The identifier for the TransferMethodISA100_WirelessType_InputArguments Variable.
+        /// </summary>
+        public const uint TransferMethodISA100_WirelessType_InputArguments = 2046;
+
+        /// <summary>
+        /// The identifier for the TransferMethodISA100_WirelessType_OutputArguments Variable.
+        /// </summary>
+        public const uint TransferMethodISA100_WirelessType_OutputArguments = 2047;
+
+        /// <summary>
+        /// The identifier for the EddDataTypeEnum_EnumValues Variable.
+        /// </summary>
+        public const uint EddDataTypeEnum_EnumValues = 2049;
+
+        /// <summary>
+        /// The identifier for the TransferMethodGENERICType_InputArguments Variable.
+        /// </summary>
+        public const uint TransferMethodGENERICType_InputArguments = 2052;
+
+        /// <summary>
+        /// The identifier for the TransferMethodGENERICType_OutputArguments Variable.
+        /// </summary>
+        public const uint TransferMethodGENERICType_OutputArguments = 2053;
+
+        /// <summary>
         /// The identifier for the GetPublishedDataMethodFFH1Type_InputArguments Variable.
         /// </summary>
         public const uint GetPublishedDataMethodFFH1Type_InputArguments = 989;
@@ -2875,6 +5345,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the GetPublishedDataMethodHARTType_OutputArguments Variable.
         /// </summary>
         public const uint GetPublishedDataMethodHARTType_OutputArguments = 996;
+
+        /// <summary>
+        /// The identifier for the GetPublishedDataMethodISA100_WirelessType_InputArguments Variable.
+        /// </summary>
+        public const uint GetPublishedDataMethodISA100_WirelessType_InputArguments = 2055;
+
+        /// <summary>
+        /// The identifier for the GetPublishedDataMethodISA100_WirelessType_OutputArguments Variable.
+        /// </summary>
+        public const uint GetPublishedDataMethodISA100_WirelessType_OutputArguments = 2056;
 
         /// <summary>
         /// The identifier for the ServerCommunicationServiceType_Lock_Locked Variable.
@@ -3605,6 +6085,306 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationHARTServiceType_MethodSet_GetPublishedData_OutputArguments Variable.
         /// </summary>
         public const uint ServerCommunicationHARTServiceType_MethodSet_GetPublishedData_OutputArguments = 1370;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_Locked Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_Lock_Locked = 2067;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_Lock_LockingClient = 2068;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_Lock_LockingUser = 2069;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_Lock_RemainingLockTime = 2070;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_Lock_InitLock_InputArguments = 2072;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_Lock_InitLock_OutputArguments = 2073;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_Lock_RenewLock_OutputArguments = 2075;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_Lock_ExitLock_OutputArguments = 2077;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_Lock_BreakLock_OutputArguments = 2079;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_Locked = 2106;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_LockingClient = 2107;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_LockingUser = 2108;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_RemainingLockTime = 2109;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_InitLock_InputArguments = 2111;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_InitLock_OutputArguments = 2112;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_RenewLock_OutputArguments = 2114;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_ExitLock_OutputArguments = 2116;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_BreakLock_OutputArguments = 2118;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_Disconnect_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_MethodSet_Disconnect_InputArguments = 2122;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_Disconnect_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_MethodSet_Disconnect_OutputArguments = 2123;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_Connect_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_MethodSet_Connect_InputArguments = 2125;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_Connect_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_MethodSet_Connect_OutputArguments = 2126;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_Transfer_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_MethodSet_Transfer_InputArguments = 2128;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_Transfer_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_MethodSet_Transfer_OutputArguments = 2129;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData_InputArguments = 2131;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData_OutputArguments = 2132;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_Locked Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_Lock_Locked = 2143;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_Lock_LockingClient = 2144;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_Lock_LockingUser = 2145;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_Lock_RemainingLockTime = 2146;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_Lock_InitLock_InputArguments = 2148;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_Lock_InitLock_OutputArguments = 2149;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_Lock_RenewLock_OutputArguments = 2151;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_Lock_ExitLock_OutputArguments = 2153;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_Lock_BreakLock_OutputArguments = 2155;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_Lock_Locked = 2182;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_Lock_LockingClient = 2183;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_Lock_LockingUser = 2184;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_Lock_RemainingLockTime = 2185;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_Lock_InitLock_InputArguments = 2187;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_Lock_InitLock_OutputArguments = 2188;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_Lock_RenewLock_OutputArguments = 2190;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_Lock_ExitLock_OutputArguments = 2192;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_Lock_BreakLock_OutputArguments = 2194;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_Disconnect_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_MethodSet_Disconnect_InputArguments = 2198;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_Disconnect_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_MethodSet_Disconnect_OutputArguments = 2199;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_Connect_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_MethodSet_Connect_InputArguments = 2201;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_Connect_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_MethodSet_Connect_OutputArguments = 2202;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_Transfer_InputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_MethodSet_Transfer_InputArguments = 2204;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_Transfer_OutputArguments Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_MethodSet_Transfer_OutputArguments = 2205;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi7_XmlSchema Variable.
+        /// </summary>
+        public const uint OpcUaFdi7_XmlSchema = 2207;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi7_XmlSchema_NamespaceUri Variable.
+        /// </summary>
+        public const uint OpcUaFdi7_XmlSchema_NamespaceUri = 2209;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi7_XmlSchema_EddDataTypeInfo Variable.
+        /// </summary>
+        public const uint OpcUaFdi7_XmlSchema_EddDataTypeInfo = 2210;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi7_BinarySchema Variable.
+        /// </summary>
+        public const uint OpcUaFdi7_BinarySchema = 2214;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi7_BinarySchema_NamespaceUri Variable.
+        /// </summary>
+        public const uint OpcUaFdi7_BinarySchema_NamespaceUri = 2216;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi7_BinarySchema_EddDataTypeInfo Variable.
+        /// </summary>
+        public const uint OpcUaFdi7_BinarySchema_EddDataTypeInfo = 2217;
+    }
+    #endregion
+
+    #region DataType Node Identifiers
+    /// <summary>
+    /// A class that declares constants for all DataTypes in the Model Design.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public static partial class DataTypeIds
+    {
+        /// <summary>
+        /// The identifier for the EddDataTypeEnum DataType.
+        /// </summary>
+        public static readonly ExpandedNodeId EddDataTypeEnum = new ExpandedNodeId(Opc.Ua.Fdi7.DataTypes.EddDataTypeEnum, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the EddDataTypeInfo DataType.
+        /// </summary>
+        public static readonly ExpandedNodeId EddDataTypeInfo = new ExpandedNodeId(Opc.Ua.Fdi7.DataTypes.EddDataTypeInfo, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
     }
     #endregion
 
@@ -3616,6 +6396,366 @@ namespace Opc.Ua.Fdi7
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class MethodIds
     {
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_H1_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_H1_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_H1_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_H1_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_HSE_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_HSE_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_HSE_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_HSE_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profibus_DP_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profibus_DP_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profibus_DP_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profibus_DP_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profinet_IO_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profinet_IO_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profinet_IO_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profinet_IO_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP5_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP5_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP5_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP5_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP6_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP6_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP6_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP6_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP7_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP7_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP7_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP7_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_ISA100_Wireless_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_ISA100_Wireless_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_ISA100_Wireless_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_ISA100_Wireless_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.GenericConnectionPoint_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.GenericConnectionPoint_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.GenericConnectionPoint_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.GenericConnectionPoint_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_NetworkIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.GenericConnectionPoint_NetworkIdentifier_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_NetworkIdentifier_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.GenericConnectionPoint_NetworkIdentifier_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_NetworkIdentifier_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.GenericConnectionPoint_NetworkIdentifier_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_NetworkIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.GenericConnectionPoint_NetworkIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
         /// <summary>
         /// The identifier for the CommunicationServerType_Lock_InitLock Method.
         /// </summary>
@@ -3700,6 +6840,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the SetAddressMethodHARTType Method.
         /// </summary>
         public static readonly ExpandedNodeId SetAddressMethodHARTType = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.SetAddressMethodHARTType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the SetAddressMethodGENERICType Method.
+        /// </summary>
+        public static readonly ExpandedNodeId SetAddressMethodGENERICType = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.SetAddressMethodGENERICType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_Lock_InitLock Method.
@@ -3827,6 +6972,16 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Disconnect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Disconnect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Disconnect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Connect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Connect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Connect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Transfer Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Transfer = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Transfer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -3895,6 +7050,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_Disconnect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_Disconnect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_Disconnect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_Connect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_Connect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_Connect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_Transfer Method.
@@ -3967,6 +7132,16 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Disconnect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Disconnect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Disconnect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Connect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Connect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Connect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Transfer Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Transfer = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Transfer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -4035,6 +7210,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Disconnect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Disconnect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Disconnect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Connect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Connect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Connect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Transfer Method.
@@ -4107,9 +7292,174 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARType_ServiceProvider_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_MethodSet_Disconnect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_MethodSet_Disconnect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARType_ServiceProvider_MethodSet_Disconnect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_MethodSet_Connect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_MethodSet_Connect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARType_ServiceProvider_MethodSet_Connect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_MethodSet_Transfer Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_MethodSet_Transfer = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARType_ServiceProvider_MethodSet_Transfer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Disconnect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Disconnect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Disconnect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Connect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Connect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Connect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Transfer Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Transfer = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Transfer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_SetAddress Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_MethodSet_SetAddress = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_MethodSet_SetAddress, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Disconnect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Disconnect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Disconnect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Connect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Connect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Connect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Transfer Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Transfer = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Transfer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ConnectMethodFFH1Type Method.
@@ -4137,6 +7487,16 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ConnectMethodHARTType = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectMethodHARTType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ConnectMethodISA100_WirelessType Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectMethodISA100_WirelessType = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectMethodISA100_WirelessType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectMethodGENERICType Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectMethodGENERICType = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectMethodGENERICType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the TransferMethodFFH1Type Method.
         /// </summary>
         public static readonly ExpandedNodeId TransferMethodFFH1Type = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.TransferMethodFFH1Type, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -4162,6 +7522,16 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId TransferMethodHARTType = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.TransferMethodHARTType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the TransferMethodISA100_WirelessType Method.
+        /// </summary>
+        public static readonly ExpandedNodeId TransferMethodISA100_WirelessType = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.TransferMethodISA100_WirelessType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the TransferMethodGENERICType Method.
+        /// </summary>
+        public static readonly ExpandedNodeId TransferMethodGENERICType = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.TransferMethodGENERICType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the GetPublishedDataMethodFFH1Type Method.
         /// </summary>
         public static readonly ExpandedNodeId GetPublishedDataMethodFFH1Type = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.GetPublishedDataMethodFFH1Type, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -4175,6 +7545,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the GetPublishedDataMethodHARTType Method.
         /// </summary>
         public static readonly ExpandedNodeId GetPublishedDataMethodHARTType = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.GetPublishedDataMethodHARTType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GetPublishedDataMethodISA100_WirelessType Method.
+        /// </summary>
+        public static readonly ExpandedNodeId GetPublishedDataMethodISA100_WirelessType = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.GetPublishedDataMethodISA100_WirelessType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationServiceType_Lock_InitLock Method.
@@ -4262,6 +7637,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFH1ServiceType_MethodSet_Disconnect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1ServiceType_MethodSet_Disconnect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1ServiceType_MethodSet_Disconnect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFH1ServiceType_MethodSet_Connect Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFH1ServiceType_MethodSet_Connect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1ServiceType_MethodSet_Connect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -4315,6 +7695,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEServiceType_MethodSet_Disconnect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEServiceType_MethodSet_Disconnect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEServiceType_MethodSet_Disconnect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEServiceType_MethodSet_Connect Method.
@@ -4372,6 +7757,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSServiceType_MethodSet_Disconnect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSServiceType_MethodSet_Disconnect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSServiceType_MethodSet_Disconnect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSServiceType_MethodSet_Connect Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSServiceType_MethodSet_Connect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSServiceType_MethodSet_Connect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -4420,6 +7810,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETServiceType_MethodSet_Disconnect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETServiceType_MethodSet_Disconnect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETServiceType_MethodSet_Disconnect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETServiceType_MethodSet_Connect Method.
@@ -4472,6 +7867,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationHARTServiceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARTServiceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationHARTServiceType_MethodSet_Disconnect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARTServiceType_MethodSet_Disconnect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARTServiceType_MethodSet_Disconnect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationHARTServiceType_MethodSet_Connect Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationHARTServiceType_MethodSet_Connect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARTServiceType_MethodSet_Connect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -4485,6 +7885,121 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationHARTServiceType_MethodSet_GetPublishedData Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationHARTServiceType_MethodSet_GetPublishedData = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARTServiceType_MethodSet_GetPublishedData, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_Disconnect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_MethodSet_Disconnect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_MethodSet_Disconnect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_Connect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_MethodSet_Connect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_MethodSet_Connect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_Transfer Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_MethodSet_Transfer = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_MethodSet_Transfer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICServiceType_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICServiceType_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICServiceType_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICServiceType_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_InitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICServiceType_CPIdentifier_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_RenewLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_CPIdentifier_Lock_RenewLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICServiceType_CPIdentifier_Lock_RenewLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_ExitLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_CPIdentifier_Lock_ExitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICServiceType_CPIdentifier_Lock_ExitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_BreakLock Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICServiceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_Disconnect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_MethodSet_Disconnect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICServiceType_MethodSet_Disconnect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_Connect Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_MethodSet_Connect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICServiceType_MethodSet_Connect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_Transfer Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_MethodSet_Transfer = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICServiceType_MethodSet_Transfer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
     }
     #endregion
 
@@ -4627,6 +8142,41 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_MethodSet = new ExpandedNodeId(Opc.Ua.Fdi7.Objects.ServerCommunicationHARType_ServiceProvider_MethodSet, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_NetworkAddress Object.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_NetworkAddress = new ExpandedNodeId(Opc.Ua.Fdi7.Objects.ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_NetworkAddress, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider Object.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider = new ExpandedNodeId(Opc.Ua.Fdi7.Objects.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet Object.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet = new ExpandedNodeId(Opc.Ua.Fdi7.Objects.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet Object.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_MethodSet = new ExpandedNodeId(Opc.Ua.Fdi7.Objects.ServerCommunicationGENERICDeviceType_MethodSet, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_NetworkAddress Object.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_CPIdentifier_NetworkAddress = new ExpandedNodeId(Opc.Ua.Fdi7.Objects.ServerCommunicationGENERICDeviceType_CPIdentifier_NetworkAddress, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider Object.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider = new ExpandedNodeId(Opc.Ua.Fdi7.Objects.ServerCommunicationGENERICDeviceType_ServiceProvider, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet Object.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet = new ExpandedNodeId(Opc.Ua.Fdi7.Objects.ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationServiceType_MethodSet Object.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationServiceType_MethodSet = new ExpandedNodeId(Opc.Ua.Fdi7.Objects.ServerCommunicationServiceType_MethodSet, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -4685,6 +8235,36 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationHARTServiceType_CPIdentifier_NetworkAddress Object.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationHARTServiceType_CPIdentifier_NetworkAddress = new ExpandedNodeId(Opc.Ua.Fdi7.Objects.ServerCommunicationHARTServiceType_CPIdentifier_NetworkAddress, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet Object.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_MethodSet = new ExpandedNodeId(Opc.Ua.Fdi7.Objects.ServerCommunicationISA100_WirelessServiceType_MethodSet, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_NetworkAddress Object.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_CPIdentifier_NetworkAddress = new ExpandedNodeId(Opc.Ua.Fdi7.Objects.ServerCommunicationISA100_WirelessServiceType_CPIdentifier_NetworkAddress, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet Object.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_MethodSet = new ExpandedNodeId(Opc.Ua.Fdi7.Objects.ServerCommunicationGENERICServiceType_MethodSet, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_NetworkAddress Object.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_CPIdentifier_NetworkAddress = new ExpandedNodeId(Opc.Ua.Fdi7.Objects.ServerCommunicationGENERICServiceType_CPIdentifier_NetworkAddress, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the EddDataTypeInfo_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly ExpandedNodeId EddDataTypeInfo_Encoding_DefaultXml = new ExpandedNodeId(Opc.Ua.Fdi7.Objects.EddDataTypeInfo_Encoding_DefaultXml, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the EddDataTypeInfo_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly ExpandedNodeId EddDataTypeInfo_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Fdi7.Objects.EddDataTypeInfo_Encoding_DefaultBinary, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
     }
     #endregion
 
@@ -4696,6 +8276,91 @@ namespace Opc.Ua.Fdi7
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class ObjectTypeIds
     {
+        /// <summary>
+        /// The identifier for the Foundation_H1 ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId Foundation_H1 = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.Foundation_H1, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the Foundation_HSE ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId Foundation_HSE = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.Foundation_HSE, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the Profibus_DP ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId Profibus_DP = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.Profibus_DP, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the Profibus_PA ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId Profibus_PA = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.Profibus_PA, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the Profinet_IO ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId Profinet_IO = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.Profinet_IO, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the HART ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId HART = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.HART, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ISA100_Wireless ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId ISA100_Wireless = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.ISA100_Wireless, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericProtocol ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericProtocol = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.GenericProtocol, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1 ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1 = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.ConnectionPoint_Foundation_H1, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.ConnectionPoint_Foundation_HSE, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.ConnectionPoint_Profibus_DP, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.ConnectionPoint_Profinet_IO, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5 ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5 = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.ConnectionPoint_HART_TP5, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6 ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6 = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.ConnectionPoint_HART_TP6, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7 ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7 = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.ConnectionPoint_HART_TP7, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.ConnectionPoint_ISA100_Wireless, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.GenericConnectionPoint, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
         /// <summary>
         /// The identifier for the CommunicationServerType ObjectType.
         /// </summary>
@@ -4732,6 +8397,16 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationHARType = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.ServerCommunicationHARType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.ServerCommunicationISA100_WirelessDeviceType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.ServerCommunicationGENERICDeviceType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationServiceType ObjectType.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationServiceType = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.ServerCommunicationServiceType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -4760,6 +8435,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationHARTServiceType ObjectType.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationHARTServiceType = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.ServerCommunicationHARTServiceType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.ServerCommunicationISA100_WirelessServiceType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType = new ExpandedNodeId(Opc.Ua.Fdi7.ObjectTypes.ServerCommunicationGENERICServiceType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
     }
     #endregion
 
@@ -4771,6 +8456,1001 @@ namespace Opc.Ua.Fdi7
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class VariableIds
     {
+        /// <summary>
+        /// The identifier for the GenericProtocol_ProtocolIdentifier Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericProtocol_ProtocolIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericProtocol_ProtocolIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Address Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_Address = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_Address, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_OrdinalNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_OrdinalNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_OrdinalNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_SIFConnection Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_SIFConnection = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_SIFConnection, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Address Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_Address = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_Address, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_OrdinalNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_OrdinalNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_OrdinalNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Address Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_Address = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_Address, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_MAC Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_MAC = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_MAC, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_IPv4 Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_IPv4 = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_IPv4, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_DNSNAME Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_DNSNAME = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_DNSNAME, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_VALID Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_VALID = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_VALID, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_DevAddr Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_DevAddr = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_DevAddr, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_DevMfg Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_DevMfg = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_DevMfg, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_DevType Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_DevType = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_DevType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_DevRev Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_DevRev = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_DevRev, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_DevTag Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_DevTag = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_DevTag, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_DevPollAddr Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_DevPollAddr = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_DevPollAddr, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_DevAddr Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_DevAddr = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_DevAddr, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_DevMfg Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_DevMfg = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_DevMfg, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_DevType Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_DevType = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_DevType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_DevRev Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_DevRev = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_DevRev, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_DevTag Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_DevTag = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_DevTag, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_DevPollAddr Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_DevPollAddr = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_DevPollAddr, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_DevAddr Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_DevAddr = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_DevAddr, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_DevMfg Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_DevMfg = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_DevMfg, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_DevType Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_DevType = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_DevType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_DevRev Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_DevRev = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_DevRev, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_DevTag Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_DevTag = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_DevTag, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_DevPollAddr Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_DevPollAddr = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_DevPollAddr, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_IPAddress Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_IPAddress = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_IPAddress, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_DevMfg Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_DevMfg = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_DevMfg, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_DevType Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_DevType = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_DevType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_DevRev Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_DevRev = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_DevRev, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_DevTag Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_DevTag = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_DevTag, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_DevPollAddr Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_DevPollAddr = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_DevPollAddr, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_NetworkIdentifier_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_NetworkIdentifier_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_NetworkIdentifier_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_NetworkIdentifier_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_NetworkIdentifier_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_NetworkIdentifier_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_NetworkIdentifier_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_NetworkIdentifier_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_NetworkIdentifier_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_NetworkIdentifier_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_NetworkIdentifier_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_NetworkIdentifier_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_NetworkIdentifier_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_NetworkIdentifier_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_NetworkIdentifier_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_NetworkIdentifier_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_NetworkIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_NetworkIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Address Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_Address = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_Address, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_ProtocolIdentifier Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_ProtocolIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_ProtocolIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
         /// <summary>
         /// The identifier for the CommunicationServerType_Lock_Locked Variable.
         /// </summary>
@@ -4940,6 +9620,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the SetAddressMethodHARTType_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId SetAddressMethodHARTType_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.SetAddressMethodHARTType_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the SetAddressMethodGENERICType_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SetAddressMethodGENERICType_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.SetAddressMethodGENERICType_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the SetAddressMethodGENERICType_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SetAddressMethodGENERICType_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.SetAddressMethodGENERICType_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_Lock_Locked Variable.
@@ -6317,6 +11007,501 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_MethodSet_Scan_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_MethodSet_Scan_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_MethodSet_Scan_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_MethodSet_ResetScan_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_MethodSet_ResetScan_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_MethodSet_ResetScan_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_MethodSet_AddComponent_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_MethodSet_AddComponent_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_MethodSet_AddComponent_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_MethodSet_AddComponent_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_MethodSet_AddComponent_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_MethodSet_AddComponent_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_MethodSet_RemoveComponent_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_MethodSet_RemoveComponent_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_MethodSet_RemoveComponent_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_MethodSet_RemoveComponent_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_MethodSet_RemoveComponent_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_MethodSet_RemoveComponent_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Manufacturer Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Manufacturer = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Manufacturer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Model Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Model = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Model, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SoftwareRevision Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SoftwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Disconnect_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Disconnect_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Disconnect_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Connect_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Connect_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Connect_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Connect_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Connect_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Connect_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Transfer_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Transfer_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Transfer_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Transfer_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Transfer_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Transfer_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_GetPublishedData_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_GetPublishedData_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_GetPublishedData_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_Scan_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_MethodSet_Scan_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_MethodSet_Scan_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_ResetScan_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_MethodSet_ResetScan_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_MethodSet_ResetScan_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_AddComponent_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_MethodSet_AddComponent_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_MethodSet_AddComponent_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_AddComponent_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_MethodSet_AddComponent_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_MethodSet_AddComponent_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_RemoveComponent_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_MethodSet_RemoveComponent_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_MethodSet_RemoveComponent_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_RemoveComponent_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_MethodSet_RemoveComponent_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_MethodSet_RemoveComponent_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ProtocolIdentifier Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ProtocolIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ProtocolIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_SetAddress_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_MethodSet_SetAddress_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_MethodSet_SetAddress_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_SetAddress_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_MethodSet_SetAddress_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_MethodSet_SetAddress_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Manufacturer Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Manufacturer = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_Manufacturer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Model Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Model = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_Model, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_SoftwareRevision Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_SoftwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Disconnect_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Disconnect_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Disconnect_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Connect_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Connect_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Connect_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Connect_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Connect_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Connect_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Transfer_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Transfer_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Transfer_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Transfer_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Transfer_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Transfer_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ConnectMethodFFH1Type_InputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ConnectMethodFFH1Type_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectMethodFFH1Type_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -6365,6 +11550,26 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectMethodHARTType_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ConnectMethodHARTType_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectMethodHARTType_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectMethodISA100_WirelessType_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectMethodISA100_WirelessType_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectMethodISA100_WirelessType_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectMethodISA100_WirelessType_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectMethodISA100_WirelessType_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectMethodISA100_WirelessType_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectMethodGENERICType_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectMethodGENERICType_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectMethodGENERICType_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectMethodGENERICType_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectMethodGENERICType_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectMethodGENERICType_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the TransferMethodFFH1Type_InputArguments Variable.
@@ -6417,6 +11622,31 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId TransferMethodHARTType_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.TransferMethodHARTType_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the TransferMethodISA100_WirelessType_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId TransferMethodISA100_WirelessType_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.TransferMethodISA100_WirelessType_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the TransferMethodISA100_WirelessType_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId TransferMethodISA100_WirelessType_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.TransferMethodISA100_WirelessType_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the EddDataTypeEnum_EnumValues Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId EddDataTypeEnum_EnumValues = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.EddDataTypeEnum_EnumValues, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the TransferMethodGENERICType_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId TransferMethodGENERICType_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.TransferMethodGENERICType_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the TransferMethodGENERICType_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId TransferMethodGENERICType_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.TransferMethodGENERICType_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the GetPublishedDataMethodFFH1Type_InputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId GetPublishedDataMethodFFH1Type_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GetPublishedDataMethodFFH1Type_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -6445,6 +11675,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the GetPublishedDataMethodHARTType_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId GetPublishedDataMethodHARTType_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GetPublishedDataMethodHARTType_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GetPublishedDataMethodISA100_WirelessType_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GetPublishedDataMethodISA100_WirelessType_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GetPublishedDataMethodISA100_WirelessType_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GetPublishedDataMethodISA100_WirelessType_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GetPublishedDataMethodISA100_WirelessType_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GetPublishedDataMethodISA100_WirelessType_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationServiceType_Lock_Locked Variable.
@@ -7175,6 +12415,286 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationHARTServiceType_MethodSet_GetPublishedData_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationHARTServiceType_MethodSet_GetPublishedData_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARTServiceType_MethodSet_GetPublishedData_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_Disconnect_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_MethodSet_Disconnect_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_MethodSet_Disconnect_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_Disconnect_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_MethodSet_Disconnect_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_MethodSet_Disconnect_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_Connect_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_MethodSet_Connect_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_MethodSet_Connect_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_Connect_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_MethodSet_Connect_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_MethodSet_Connect_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_Transfer_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_MethodSet_Transfer_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_MethodSet_Transfer_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_Transfer_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_MethodSet_Transfer_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_MethodSet_Transfer_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_CPIdentifier_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_CPIdentifier_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_LockingClient Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_CPIdentifier_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_CPIdentifier_Lock_LockingClient, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_LockingUser Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_CPIdentifier_Lock_LockingUser = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_CPIdentifier_Lock_LockingUser, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_RemainingLockTime Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_CPIdentifier_Lock_RemainingLockTime = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_CPIdentifier_Lock_RemainingLockTime, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_InitLock_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_CPIdentifier_Lock_InitLock_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_CPIdentifier_Lock_InitLock_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_InitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_CPIdentifier_Lock_InitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_CPIdentifier_Lock_InitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_RenewLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_CPIdentifier_Lock_RenewLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_CPIdentifier_Lock_RenewLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_ExitLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_CPIdentifier_Lock_ExitLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_CPIdentifier_Lock_ExitLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_BreakLock_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_CPIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_CPIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_Disconnect_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_MethodSet_Disconnect_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_MethodSet_Disconnect_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_Disconnect_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_MethodSet_Disconnect_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_MethodSet_Disconnect_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_Connect_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_MethodSet_Connect_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_MethodSet_Connect_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_Connect_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_MethodSet_Connect_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_MethodSet_Connect_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_Transfer_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_MethodSet_Transfer_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_MethodSet_Transfer_InputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_Transfer_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_MethodSet_Transfer_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_MethodSet_Transfer_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi7_XmlSchema Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi7_XmlSchema = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.OpcUaFdi7_XmlSchema, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi7_XmlSchema_NamespaceUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi7_XmlSchema_NamespaceUri = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.OpcUaFdi7_XmlSchema_NamespaceUri, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi7_XmlSchema_EddDataTypeInfo Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi7_XmlSchema_EddDataTypeInfo = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.OpcUaFdi7_XmlSchema_EddDataTypeInfo, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi7_BinarySchema Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi7_BinarySchema = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.OpcUaFdi7_BinarySchema, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi7_BinarySchema_NamespaceUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi7_BinarySchema_NamespaceUri = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.OpcUaFdi7_BinarySchema_NamespaceUri, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi7_BinarySchema_EddDataTypeInfo Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi7_BinarySchema_EddDataTypeInfo = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.OpcUaFdi7_BinarySchema_EddDataTypeInfo, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
     }
     #endregion
 
@@ -7186,9 +12706,54 @@ namespace Opc.Ua.Fdi7
     public static partial class BrowseNames
     {
         /// <summary>
+        /// The BrowseName for the Address component.
+        /// </summary>
+        public const string Address = "Address";
+
+        /// <summary>
         /// The BrowseName for the CommunicationServerType component.
         /// </summary>
         public const string CommunicationServerType = "CommunicationServerType";
+
+        /// <summary>
+        /// The BrowseName for the ConnectionPoint_Foundation_H1 component.
+        /// </summary>
+        public const string ConnectionPoint_Foundation_H1 = "ConnectionPoint_Foundation_H1";
+
+        /// <summary>
+        /// The BrowseName for the ConnectionPoint_Foundation_HSE component.
+        /// </summary>
+        public const string ConnectionPoint_Foundation_HSE = "ConnectionPoint_Foundation_HSE";
+
+        /// <summary>
+        /// The BrowseName for the ConnectionPoint_HART_TP5 component.
+        /// </summary>
+        public const string ConnectionPoint_HART_TP5 = "ConnectionPoint_HART_TP5";
+
+        /// <summary>
+        /// The BrowseName for the ConnectionPoint_HART_TP6 component.
+        /// </summary>
+        public const string ConnectionPoint_HART_TP6 = "ConnectionPoint_HART_TP6";
+
+        /// <summary>
+        /// The BrowseName for the ConnectionPoint_HART_TP7 component.
+        /// </summary>
+        public const string ConnectionPoint_HART_TP7 = "ConnectionPoint_HART_TP7";
+
+        /// <summary>
+        /// The BrowseName for the ConnectionPoint_ISA100_Wireless component.
+        /// </summary>
+        public const string ConnectionPoint_ISA100_Wireless = "ConnectionPoint_ISA100_Wireless";
+
+        /// <summary>
+        /// The BrowseName for the ConnectionPoint_Profibus_DP component.
+        /// </summary>
+        public const string ConnectionPoint_Profibus_DP = "ConnectionPoint_Profibus_DP";
+
+        /// <summary>
+        /// The BrowseName for the ConnectionPoint_Profinet_IO component.
+        /// </summary>
+        public const string ConnectionPoint_Profinet_IO = "ConnectionPoint_Profinet_IO";
 
         /// <summary>
         /// The BrowseName for the ConnectMethodFFH1Type component.
@@ -7201,9 +12766,19 @@ namespace Opc.Ua.Fdi7
         public const string ConnectMethodFFHSEType = "ConnectMethodFFHSEType";
 
         /// <summary>
+        /// The BrowseName for the ConnectMethodGENERICType component.
+        /// </summary>
+        public const string ConnectMethodGENERICType = "ConnectMethodGENERICType";
+
+        /// <summary>
         /// The BrowseName for the ConnectMethodHARTType component.
         /// </summary>
         public const string ConnectMethodHARTType = "ConnectMethodHARTType";
+
+        /// <summary>
+        /// The BrowseName for the ConnectMethodISA100_WirelessType component.
+        /// </summary>
+        public const string ConnectMethodISA100_WirelessType = "ConnectMethodISA100_WirelessType";
 
         /// <summary>
         /// The BrowseName for the ConnectMethodPROFIBUSType component.
@@ -7214,6 +12789,71 @@ namespace Opc.Ua.Fdi7
         /// The BrowseName for the ConnectMethodPROFINETType component.
         /// </summary>
         public const string ConnectMethodPROFINETType = "ConnectMethodPROFINETType";
+
+        /// <summary>
+        /// The BrowseName for the DevAddr component.
+        /// </summary>
+        public const string DevAddr = "DevAddr";
+
+        /// <summary>
+        /// The BrowseName for the DevMfg component.
+        /// </summary>
+        public const string DevMfg = "DevMfg";
+
+        /// <summary>
+        /// The BrowseName for the DevPollAddr component.
+        /// </summary>
+        public const string DevPollAddr = "DevPollAddr";
+
+        /// <summary>
+        /// The BrowseName for the DevRev component.
+        /// </summary>
+        public const string DevRev = "DevRev";
+
+        /// <summary>
+        /// The BrowseName for the DevTag component.
+        /// </summary>
+        public const string DevTag = "DevTag";
+
+        /// <summary>
+        /// The BrowseName for the DevType component.
+        /// </summary>
+        public const string DevType = "DevType";
+
+        /// <summary>
+        /// The BrowseName for the DNSNAME component.
+        /// </summary>
+        public const string DNSNAME = "DNSNAME";
+
+        /// <summary>
+        /// The BrowseName for the EddDataTypeEnum component.
+        /// </summary>
+        public const string EddDataTypeEnum = "EddDataTypeEnum";
+
+        /// <summary>
+        /// The BrowseName for the EddDataTypeInfo component.
+        /// </summary>
+        public const string EddDataTypeInfo = "EddDataTypeInfo";
+
+        /// <summary>
+        /// The BrowseName for the Foundation_H1 component.
+        /// </summary>
+        public const string Foundation_H1 = "Foundation_H1";
+
+        /// <summary>
+        /// The BrowseName for the Foundation_HSE component.
+        /// </summary>
+        public const string Foundation_HSE = "Foundation_HSE";
+
+        /// <summary>
+        /// The BrowseName for the GenericConnectionPoint component.
+        /// </summary>
+        public const string GenericConnectionPoint = "GenericConnectionPoint";
+
+        /// <summary>
+        /// The BrowseName for the GenericProtocol component.
+        /// </summary>
+        public const string GenericProtocol = "GenericProtocol";
 
         /// <summary>
         /// The BrowseName for the GetPublishedDataMethodFFH1Type component.
@@ -7229,6 +12869,71 @@ namespace Opc.Ua.Fdi7
         /// The BrowseName for the GetPublishedDataMethodHARTType component.
         /// </summary>
         public const string GetPublishedDataMethodHARTType = "GetPublishedDataMethodHARTType";
+
+        /// <summary>
+        /// The BrowseName for the GetPublishedDataMethodISA100_WirelessType component.
+        /// </summary>
+        public const string GetPublishedDataMethodISA100_WirelessType = "GetPublishedDataMethodISA100_WirelessType";
+
+        /// <summary>
+        /// The BrowseName for the HART component.
+        /// </summary>
+        public const string HART = "HART";
+
+        /// <summary>
+        /// The BrowseName for the IPAddress component.
+        /// </summary>
+        public const string IPAddress = "IPAddress";
+
+        /// <summary>
+        /// The BrowseName for the IPv4 component.
+        /// </summary>
+        public const string IPv4 = "IPv4";
+
+        /// <summary>
+        /// The BrowseName for the ISA100_Wireless component.
+        /// </summary>
+        public const string ISA100_Wireless = "ISA100_Wireless";
+
+        /// <summary>
+        /// The BrowseName for the MAC component.
+        /// </summary>
+        public const string MAC = "MAC";
+
+        /// <summary>
+        /// The BrowseName for the OpcUaFdi7_BinarySchema component.
+        /// </summary>
+        public const string OpcUaFdi7_BinarySchema = "Opc.Ua.Fdi7";
+
+        /// <summary>
+        /// The BrowseName for the OpcUaFdi7_XmlSchema component.
+        /// </summary>
+        public const string OpcUaFdi7_XmlSchema = "Opc.Ua.Fdi7";
+
+        /// <summary>
+        /// The BrowseName for the OrdinalNumber component.
+        /// </summary>
+        public const string OrdinalNumber = "OrdinalNumber";
+
+        /// <summary>
+        /// The BrowseName for the Profibus_DP component.
+        /// </summary>
+        public const string Profibus_DP = "Profibus_DP";
+
+        /// <summary>
+        /// The BrowseName for the Profibus_PA component.
+        /// </summary>
+        public const string Profibus_PA = "Profibus_PA";
+
+        /// <summary>
+        /// The BrowseName for the Profinet_IO component.
+        /// </summary>
+        public const string Profinet_IO = "Profinet_IO";
+
+        /// <summary>
+        /// The BrowseName for the ProtocolIdentifier component.
+        /// </summary>
+        public const string ProtocolIdentifier = "ProtocolIdentifier";
 
         /// <summary>
         /// The BrowseName for the ServerCommunicationDeviceType component.
@@ -7256,6 +12961,16 @@ namespace Opc.Ua.Fdi7
         public const string ServerCommunicationFFHSEServiceType = "ServerCommunicationFFHSEServiceType";
 
         /// <summary>
+        /// The BrowseName for the ServerCommunicationGENERICDeviceType component.
+        /// </summary>
+        public const string ServerCommunicationGENERICDeviceType = "ServerCommunicationGENERICDeviceType";
+
+        /// <summary>
+        /// The BrowseName for the ServerCommunicationGENERICServiceType component.
+        /// </summary>
+        public const string ServerCommunicationGENERICServiceType = "ServerCommunicationGENERICServiceType";
+
+        /// <summary>
         /// The BrowseName for the ServerCommunicationHARTServiceType component.
         /// </summary>
         public const string ServerCommunicationHARTServiceType = "ServerCommunicationHARTServiceType";
@@ -7264,6 +12979,16 @@ namespace Opc.Ua.Fdi7
         /// The BrowseName for the ServerCommunicationHARType component.
         /// </summary>
         public const string ServerCommunicationHARType = "ServerCommunicationHARType";
+
+        /// <summary>
+        /// The BrowseName for the ServerCommunicationISA100_WirelessDeviceType component.
+        /// </summary>
+        public const string ServerCommunicationISA100_WirelessDeviceType = "ServerCommunicationISA100_WirelessDeviceType";
+
+        /// <summary>
+        /// The BrowseName for the ServerCommunicationISA100_WirelessServiceType component.
+        /// </summary>
+        public const string ServerCommunicationISA100_WirelessServiceType = "ServerCommunicationISA100_WirelessServiceType";
 
         /// <summary>
         /// The BrowseName for the ServerCommunicationPROFIBUSDeviceType component.
@@ -7306,6 +13031,11 @@ namespace Opc.Ua.Fdi7
         public const string SetAddressMethodFFHSEType = "SetAddressMethodFFHSEType";
 
         /// <summary>
+        /// The BrowseName for the SetAddressMethodGENERICType component.
+        /// </summary>
+        public const string SetAddressMethodGENERICType = "SetAddressMethodGENERICType";
+
+        /// <summary>
         /// The BrowseName for the SetAddressMethodHARTType component.
         /// </summary>
         public const string SetAddressMethodHARTType = "SetAddressMethodHARTType";
@@ -7319,6 +13049,11 @@ namespace Opc.Ua.Fdi7
         /// The BrowseName for the SetAddressMethodPROFINETType component.
         /// </summary>
         public const string SetAddressMethodPROFINETType = "SetAddressMethodPROFINETType";
+
+        /// <summary>
+        /// The BrowseName for the SIFConnection component.
+        /// </summary>
+        public const string SIFConnection = "SIFConnection";
 
         /// <summary>
         /// The BrowseName for the SubDevices component.
@@ -7336,9 +13071,19 @@ namespace Opc.Ua.Fdi7
         public const string TransferMethodFFHSEType = "TransferMethodFFHSEType";
 
         /// <summary>
+        /// The BrowseName for the TransferMethodGENERICType component.
+        /// </summary>
+        public const string TransferMethodGENERICType = "TransferMethodGENERICType";
+
+        /// <summary>
         /// The BrowseName for the TransferMethodHARTType component.
         /// </summary>
         public const string TransferMethodHARTType = "TransferMethodHARTType";
+
+        /// <summary>
+        /// The BrowseName for the TransferMethodISA100_WirelessType component.
+        /// </summary>
+        public const string TransferMethodISA100_WirelessType = "TransferMethodISA100_WirelessType";
 
         /// <summary>
         /// The BrowseName for the TransferMethodPROFIBUSType component.
@@ -7349,6 +13094,11 @@ namespace Opc.Ua.Fdi7
         /// The BrowseName for the TransferMethodPROFINETType component.
         /// </summary>
         public const string TransferMethodPROFINETType = "TransferMethodPROFINETType";
+
+        /// <summary>
+        /// The BrowseName for the VALID component.
+        /// </summary>
+        public const string VALID = "VALID";
     }
     #endregion
 

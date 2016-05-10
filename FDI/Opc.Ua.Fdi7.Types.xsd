@@ -9,4 +9,51 @@
   <xs:import namespace="http://opcfoundation.org/UA/DI/Types.xsd" />
   <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd" />
 
+  <xs:simpleType  name="EddDataTypeEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BOOLEAN_1" />
+      <xs:enumeration value="DOUBLE_2" />
+      <xs:enumeration value="FLOAT_3" />
+      <xs:enumeration value="INTEGER_4" />
+      <xs:enumeration value="UNSIGNED_INTEGER_5" />
+      <xs:enumeration value="DATE_6" />
+      <xs:enumeration value="DATE_AND_TIME_7" />
+      <xs:enumeration value="DURATION_8" />
+      <xs:enumeration value="TIME_9" />
+      <xs:enumeration value="TIME_VALUE_10" />
+      <xs:enumeration value="BIT_ENUMERATED_11" />
+      <xs:enumeration value="ENUMERATED_12" />
+      <xs:enumeration value="ASCII_13" />
+      <xs:enumeration value="BITSTRING_14" />
+      <xs:enumeration value="EUC_15" />
+      <xs:enumeration value="OCTET_16" />
+      <xs:enumeration value="PACKED_ASCII_17" />
+      <xs:enumeration value="PASSWORD_18" />
+      <xs:enumeration value="VISIBLE_19" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="EddDataTypeEnum" type="tns:EddDataTypeEnum" />
+
+  <xs:complexType name="ListOfEddDataTypeEnum">
+    <xs:sequence>
+      <xs:element name="EddDataTypeEnum" type="tns:EddDataTypeEnum" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfEddDataTypeEnum" type="tns:ListOfEddDataTypeEnum" nillable="true"></xs:element>
+
+  <xs:complexType name="EddDataTypeInfo">
+    <xs:sequence>
+      <xs:element name="EddDataType" type="tns:EddDataTypeEnum" minOccurs="0" />
+      <xs:element name="Size" type="xs:unsignedInt" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EddDataTypeInfo" type="tns:EddDataTypeInfo" />
+
+  <xs:complexType name="ListOfEddDataTypeInfo">
+    <xs:sequence>
+      <xs:element name="EddDataTypeInfo" type="tns:EddDataTypeInfo" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfEddDataTypeInfo" type="tns:ListOfEddDataTypeInfo" nillable="true"></xs:element>
+
 </xs:schema>

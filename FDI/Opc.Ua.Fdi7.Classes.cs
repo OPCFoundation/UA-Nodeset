@@ -38,6 +38,3517 @@ using Opc.Ua;
 
 namespace Opc.Ua.Fdi7
 {
+    #region Foundation_H1State Class
+    #if (!OPCUA_EXCLUDE_Foundation_H1State)
+    /// <summary>
+    /// Stores an instance of the Foundation_H1 ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class Foundation_H1State : ProtocolState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public Foundation_H1State(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.Fdi7.ObjectTypes.Foundation_H1, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAVAAAARm91bmRhdGlvbl9IMUluc3RhbmNl" +
+           "AQFbBQEBWwX/////AAAAAA==";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region Foundation_HSEState Class
+    #if (!OPCUA_EXCLUDE_Foundation_HSEState)
+    /// <summary>
+    /// Stores an instance of the Foundation_HSE ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class Foundation_HSEState : ProtocolState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public Foundation_HSEState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.Fdi7.ObjectTypes.Foundation_HSE, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAWAAAARm91bmRhdGlvbl9IU0VJbnN0YW5j" +
+           "ZQEBXAUBAVwF/////wAAAAA=";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region Profibus_DPState Class
+    #if (!OPCUA_EXCLUDE_Profibus_DPState)
+    /// <summary>
+    /// Stores an instance of the Profibus_DP ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class Profibus_DPState : ProtocolState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public Profibus_DPState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.Fdi7.ObjectTypes.Profibus_DP, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQATAAAAUHJvZmlidXNfRFBJbnN0YW5jZQEB" +
+           "XQUBAV0F/////wAAAAA=";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region Profibus_PAState Class
+    #if (!OPCUA_EXCLUDE_Profibus_PAState)
+    /// <summary>
+    /// Stores an instance of the Profibus_PA ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class Profibus_PAState : ProtocolState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public Profibus_PAState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.Fdi7.ObjectTypes.Profibus_PA, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQATAAAAUHJvZmlidXNfUEFJbnN0YW5jZQEB" +
+           "XgUBAV4F/////wAAAAA=";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region Profinet_IOState Class
+    #if (!OPCUA_EXCLUDE_Profinet_IOState)
+    /// <summary>
+    /// Stores an instance of the Profinet_IO ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class Profinet_IOState : ProtocolState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public Profinet_IOState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.Fdi7.ObjectTypes.Profinet_IO, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQATAAAAUHJvZmluZXRfSU9JbnN0YW5jZQEB" +
+           "XwUBAV8F/////wAAAAA=";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region HARTState Class
+    #if (!OPCUA_EXCLUDE_HARTState)
+    /// <summary>
+    /// Stores an instance of the HART ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class HARTState : ProtocolState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public HARTState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.Fdi7.ObjectTypes.HART, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAMAAAASEFSVEluc3RhbmNlAQFgBQEBYAX/" +
+           "////AAAAAA==";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region ISA100_WirelessState Class
+    #if (!OPCUA_EXCLUDE_ISA100_WirelessState)
+    /// <summary>
+    /// Stores an instance of the ISA100_Wireless ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class ISA100_WirelessState : ProtocolState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public ISA100_WirelessState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.Fdi7.ObjectTypes.ISA100_Wireless, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAXAAAASVNBMTAwX1dpcmVsZXNzSW5zdGFu" +
+           "Y2UBAWEFAQFhBf////8AAAAA";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region GenericProtocolState Class
+    #if (!OPCUA_EXCLUDE_GenericProtocolState)
+    /// <summary>
+    /// Stores an instance of the GenericProtocol ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class GenericProtocolState : ProtocolState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public GenericProtocolState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.Fdi7.ObjectTypes.GenericProtocol, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAXAAAAR2VuZXJpY1Byb3RvY29sSW5zdGFu" +
+           "Y2UBAWIFAQFiBf////8BAAAAFWCJCgIAAAABABIAAABQcm90b2NvbElkZW50aWZpZXIBAWMFAC4ARGMF" +
+           "AAAADP////8BAf////8AAAAA";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the ProtocolIdentifier Property.
+        /// </summary>
+        public PropertyState<string> ProtocolIdentifier
+        {
+            get
+            {
+                return m_protocolIdentifier;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_protocolIdentifier, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_protocolIdentifier = value;
+            }
+        }
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Populates a list with the children that belong to the node.
+        /// </summary>
+        /// <param name="context">The context for the system being accessed.</param>
+        /// <param name="children">The list of children to populate.</param>
+        public override void GetChildren(
+            ISystemContext context,
+            IList<BaseInstanceState> children)
+        {
+            if (m_protocolIdentifier != null)
+            {
+                children.Add(m_protocolIdentifier);
+            }
+
+            base.GetChildren(context, children);
+        }
+
+        /// <summary>
+        /// Finds the child with the specified browse name.
+        /// </summary>
+        protected override BaseInstanceState FindChild(
+            ISystemContext context,
+            QualifiedName browseName,
+            bool createOrReplace,
+            BaseInstanceState replacement)
+        {
+            if (QualifiedName.IsNull(browseName))
+            {
+                return null;
+            }
+
+            BaseInstanceState instance = null;
+
+            switch (browseName.Name)
+            {
+                case Opc.Ua.Fdi7.BrowseNames.ProtocolIdentifier:
+                {
+                    if (createOrReplace)
+                    {
+                        if (ProtocolIdentifier == null)
+                        {
+                            if (replacement == null)
+                            {
+                                ProtocolIdentifier = new PropertyState<string>(this);
+                            }
+                            else
+                            {
+                                ProtocolIdentifier = (PropertyState<string>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = ProtocolIdentifier;
+                    break;
+                }
+            }
+
+            if (instance != null)
+            {
+                return instance;
+            }
+
+            return base.FindChild(context, browseName, createOrReplace, replacement);
+        }
+        #endregion
+
+        #region Private Fields
+        private PropertyState<string> m_protocolIdentifier;
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region ConnectionPoint_Foundation_H1State Class
+    #if (!OPCUA_EXCLUDE_ConnectionPoint_Foundation_H1State)
+    /// <summary>
+    /// Stores an instance of the ConnectionPoint_Foundation_H1 ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class ConnectionPoint_Foundation_H1State : ConnectionPointState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public ConnectionPoint_Foundation_H1State(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.Fdi7.ObjectTypes.ConnectionPoint_Foundation_H1, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+
+            if (OrdinalNumber != null)
+            {
+                OrdinalNumber.Initialize(context, OrdinalNumber_InitializationString);
+            }
+
+            if (SIFConnection != null)
+            {
+                SIFConnection.Initialize(context, SIFConnection_InitializationString);
+            }
+        }
+
+        #region Initialization String
+        private const string OrdinalNumber_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQANAAAAT3JkaW5hbE51bWJlcgEBjgUALgBE" +
+           "jgUAAAAG/////wEB/////wAAAAA=";
+
+        private const string SIFConnection_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQANAAAAU0lGQ29ubmVjdGlvbgEBjwUALgBE" +
+           "jwUAAAAB/////wEB/////wAAAAA=";
+
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAlAAAAQ29ubmVjdGlvblBvaW50X0ZvdW5k" +
+           "YXRpb25fSDFJbnN0YW5jZQEBZAUBAWQF/////wQAAAAkYIAKAQAAAAIADgAAAE5ldHdvcmtBZGRyZXNz" +
+           "AQF7BQMAAAAAKgAAAFRoZSBhZGRyZXNzIG9mIHRoZSBkZXZpY2Ugb24gdGhpcyBuZXR3b3JrLgAvAQLt" +
+           "A3sFAAD/////AAAAABVgiQoCAAAAAQAHAAAAQWRkcmVzcwEBjQUALgBEjQUAAAAD/////wEB/////wAA" +
+           "AAAVYIkKAgAAAAEADQAAAE9yZGluYWxOdW1iZXIBAY4FAC4ARI4FAAAABv////8BAf////8AAAAAFWCJ" +
+           "CgIAAAABAA0AAABTSUZDb25uZWN0aW9uAQGPBQAuAESPBQAAAAH/////AQH/////AAAAAA==";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the Address Property.
+        /// </summary>
+        public PropertyState<byte> Address
+        {
+            get
+            {
+                return m_address;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_address, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_address = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the OrdinalNumber Property.
+        /// </summary>
+        public PropertyState<int> OrdinalNumber
+        {
+            get
+            {
+                return m_ordinalNumber;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_ordinalNumber, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_ordinalNumber = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the SIFConnection Property.
+        /// </summary>
+        public PropertyState<bool> SIFConnection
+        {
+            get
+            {
+                return m_sIFConnection;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_sIFConnection, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_sIFConnection = value;
+            }
+        }
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Populates a list with the children that belong to the node.
+        /// </summary>
+        /// <param name="context">The context for the system being accessed.</param>
+        /// <param name="children">The list of children to populate.</param>
+        public override void GetChildren(
+            ISystemContext context,
+            IList<BaseInstanceState> children)
+        {
+            if (m_address != null)
+            {
+                children.Add(m_address);
+            }
+
+            if (m_ordinalNumber != null)
+            {
+                children.Add(m_ordinalNumber);
+            }
+
+            if (m_sIFConnection != null)
+            {
+                children.Add(m_sIFConnection);
+            }
+
+            base.GetChildren(context, children);
+        }
+
+        /// <summary>
+        /// Finds the child with the specified browse name.
+        /// </summary>
+        protected override BaseInstanceState FindChild(
+            ISystemContext context,
+            QualifiedName browseName,
+            bool createOrReplace,
+            BaseInstanceState replacement)
+        {
+            if (QualifiedName.IsNull(browseName))
+            {
+                return null;
+            }
+
+            BaseInstanceState instance = null;
+
+            switch (browseName.Name)
+            {
+                case Opc.Ua.Fdi7.BrowseNames.Address:
+                {
+                    if (createOrReplace)
+                    {
+                        if (Address == null)
+                        {
+                            if (replacement == null)
+                            {
+                                Address = new PropertyState<byte>(this);
+                            }
+                            else
+                            {
+                                Address = (PropertyState<byte>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = Address;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.OrdinalNumber:
+                {
+                    if (createOrReplace)
+                    {
+                        if (OrdinalNumber == null)
+                        {
+                            if (replacement == null)
+                            {
+                                OrdinalNumber = new PropertyState<int>(this);
+                            }
+                            else
+                            {
+                                OrdinalNumber = (PropertyState<int>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = OrdinalNumber;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.SIFConnection:
+                {
+                    if (createOrReplace)
+                    {
+                        if (SIFConnection == null)
+                        {
+                            if (replacement == null)
+                            {
+                                SIFConnection = new PropertyState<bool>(this);
+                            }
+                            else
+                            {
+                                SIFConnection = (PropertyState<bool>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = SIFConnection;
+                    break;
+                }
+            }
+
+            if (instance != null)
+            {
+                return instance;
+            }
+
+            return base.FindChild(context, browseName, createOrReplace, replacement);
+        }
+        #endregion
+
+        #region Private Fields
+        private PropertyState<byte> m_address;
+        private PropertyState<int> m_ordinalNumber;
+        private PropertyState<bool> m_sIFConnection;
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region ConnectionPoint_Foundation_HSEState Class
+    #if (!OPCUA_EXCLUDE_ConnectionPoint_Foundation_HSEState)
+    /// <summary>
+    /// Stores an instance of the ConnectionPoint_Foundation_HSE ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class ConnectionPoint_Foundation_HSEState : ConnectionPointState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public ConnectionPoint_Foundation_HSEState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.Fdi7.ObjectTypes.ConnectionPoint_Foundation_HSE, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+
+            if (OrdinalNumber != null)
+            {
+                OrdinalNumber.Initialize(context, OrdinalNumber_InitializationString);
+            }
+        }
+
+        #region Initialization String
+        private const string OrdinalNumber_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQANAAAAT3JkaW5hbE51bWJlcgEBugUALgBE" +
+           "ugUAAAAG/////wEB/////wAAAAA=";
+
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAmAAAAQ29ubmVjdGlvblBvaW50X0ZvdW5k" +
+           "YXRpb25fSFNFSW5zdGFuY2UBAZAFAQGQBf////8DAAAAJGCACgEAAAACAA4AAABOZXR3b3JrQWRkcmVz" +
+           "cwEBpwUDAAAAACoAAABUaGUgYWRkcmVzcyBvZiB0aGUgZGV2aWNlIG9uIHRoaXMgbmV0d29yay4ALwEC" +
+           "7QOnBQAA/////wAAAAAXYIkKAgAAAAEABwAAAEFkZHJlc3MBAbkFAC4ARLkFAAAAAwEAAAABAAAAEAAA" +
+           "AAEB/////wAAAAAVYIkKAgAAAAEADQAAAE9yZGluYWxOdW1iZXIBAboFAC4ARLoFAAAABv////8BAf//" +
+           "//8AAAAA";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the Address Property.
+        /// </summary>
+        public PropertyState<byte[]> Address
+        {
+            get
+            {
+                return m_address;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_address, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_address = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the OrdinalNumber Property.
+        /// </summary>
+        public PropertyState<int> OrdinalNumber
+        {
+            get
+            {
+                return m_ordinalNumber;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_ordinalNumber, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_ordinalNumber = value;
+            }
+        }
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Populates a list with the children that belong to the node.
+        /// </summary>
+        /// <param name="context">The context for the system being accessed.</param>
+        /// <param name="children">The list of children to populate.</param>
+        public override void GetChildren(
+            ISystemContext context,
+            IList<BaseInstanceState> children)
+        {
+            if (m_address != null)
+            {
+                children.Add(m_address);
+            }
+
+            if (m_ordinalNumber != null)
+            {
+                children.Add(m_ordinalNumber);
+            }
+
+            base.GetChildren(context, children);
+        }
+
+        /// <summary>
+        /// Finds the child with the specified browse name.
+        /// </summary>
+        protected override BaseInstanceState FindChild(
+            ISystemContext context,
+            QualifiedName browseName,
+            bool createOrReplace,
+            BaseInstanceState replacement)
+        {
+            if (QualifiedName.IsNull(browseName))
+            {
+                return null;
+            }
+
+            BaseInstanceState instance = null;
+
+            switch (browseName.Name)
+            {
+                case Opc.Ua.Fdi7.BrowseNames.Address:
+                {
+                    if (createOrReplace)
+                    {
+                        if (Address == null)
+                        {
+                            if (replacement == null)
+                            {
+                                Address = new PropertyState<byte[]>(this);
+                            }
+                            else
+                            {
+                                Address = (PropertyState<byte[]>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = Address;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.OrdinalNumber:
+                {
+                    if (createOrReplace)
+                    {
+                        if (OrdinalNumber == null)
+                        {
+                            if (replacement == null)
+                            {
+                                OrdinalNumber = new PropertyState<int>(this);
+                            }
+                            else
+                            {
+                                OrdinalNumber = (PropertyState<int>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = OrdinalNumber;
+                    break;
+                }
+            }
+
+            if (instance != null)
+            {
+                return instance;
+            }
+
+            return base.FindChild(context, browseName, createOrReplace, replacement);
+        }
+        #endregion
+
+        #region Private Fields
+        private PropertyState<byte[]> m_address;
+        private PropertyState<int> m_ordinalNumber;
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region ConnectionPoint_Profibus_DPState Class
+    #if (!OPCUA_EXCLUDE_ConnectionPoint_Profibus_DPState)
+    /// <summary>
+    /// Stores an instance of the ConnectionPoint_Profibus_DP ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class ConnectionPoint_Profibus_DPState : ConnectionPointState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public ConnectionPoint_Profibus_DPState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.Fdi7.ObjectTypes.ConnectionPoint_Profibus_DP, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAjAAAAQ29ubmVjdGlvblBvaW50X1Byb2Zp" +
+           "YnVzX0RQSW5zdGFuY2UBAbsFAQG7Bf////8CAAAAJGCACgEAAAACAA4AAABOZXR3b3JrQWRkcmVzcwEB" +
+           "0gUDAAAAACoAAABUaGUgYWRkcmVzcyBvZiB0aGUgZGV2aWNlIG9uIHRoaXMgbmV0d29yay4ALwEC7QPS" +
+           "BQAA/////wAAAAAVYIkKAgAAAAEABwAAAEFkZHJlc3MBAeQFAC4AROQFAAAAA/////8BAf////8AAAAA";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the Address Property.
+        /// </summary>
+        public PropertyState<byte> Address
+        {
+            get
+            {
+                return m_address;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_address, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_address = value;
+            }
+        }
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Populates a list with the children that belong to the node.
+        /// </summary>
+        /// <param name="context">The context for the system being accessed.</param>
+        /// <param name="children">The list of children to populate.</param>
+        public override void GetChildren(
+            ISystemContext context,
+            IList<BaseInstanceState> children)
+        {
+            if (m_address != null)
+            {
+                children.Add(m_address);
+            }
+
+            base.GetChildren(context, children);
+        }
+
+        /// <summary>
+        /// Finds the child with the specified browse name.
+        /// </summary>
+        protected override BaseInstanceState FindChild(
+            ISystemContext context,
+            QualifiedName browseName,
+            bool createOrReplace,
+            BaseInstanceState replacement)
+        {
+            if (QualifiedName.IsNull(browseName))
+            {
+                return null;
+            }
+
+            BaseInstanceState instance = null;
+
+            switch (browseName.Name)
+            {
+                case Opc.Ua.Fdi7.BrowseNames.Address:
+                {
+                    if (createOrReplace)
+                    {
+                        if (Address == null)
+                        {
+                            if (replacement == null)
+                            {
+                                Address = new PropertyState<byte>(this);
+                            }
+                            else
+                            {
+                                Address = (PropertyState<byte>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = Address;
+                    break;
+                }
+            }
+
+            if (instance != null)
+            {
+                return instance;
+            }
+
+            return base.FindChild(context, browseName, createOrReplace, replacement);
+        }
+        #endregion
+
+        #region Private Fields
+        private PropertyState<byte> m_address;
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region ConnectionPoint_Profinet_IOState Class
+    #if (!OPCUA_EXCLUDE_ConnectionPoint_Profinet_IOState)
+    /// <summary>
+    /// Stores an instance of the ConnectionPoint_Profinet_IO ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class ConnectionPoint_Profinet_IOState : ConnectionPointState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public ConnectionPoint_Profinet_IOState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.Fdi7.ObjectTypes.ConnectionPoint_Profinet_IO, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAjAAAAQ29ubmVjdGlvblBvaW50X1Byb2Zp" +
+           "bmV0X0lPSW5zdGFuY2UBAeUFAQHlBf////8FAAAAJGCACgEAAAACAA4AAABOZXR3b3JrQWRkcmVzcwEB" +
+           "/AUDAAAAACoAAABUaGUgYWRkcmVzcyBvZiB0aGUgZGV2aWNlIG9uIHRoaXMgbmV0d29yay4ALwEC7QP8" +
+           "BQAA/////wAAAAAXYIkKAgAAAAEAAwAAAE1BQwEBDgYALgBEDgYAAAADAQAAAAEAAAAQAAAAAQH/////" +
+           "AAAAABdgiQoCAAAAAQAEAAAASVB2NAEBDwYALgBEDwYAAAADAQAAAAEAAAAEAAAAAQH/////AAAAABVg" +
+           "iQoCAAAAAQAHAAAARE5TTkFNRQEBEAYALgBEEAYAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEABQAA" +
+           "AFZBTElEAQERBgAuAEQRBgAAAAH/////AQH/////AAAAAA==";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the MAC Property.
+        /// </summary>
+        public PropertyState<byte[]> MAC
+        {
+            get
+            {
+                return m_mAC;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_mAC, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_mAC = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the IPv4 Property.
+        /// </summary>
+        public PropertyState<byte[]> IPv4
+        {
+            get
+            {
+                return m_iPv4;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_iPv4, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_iPv4 = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DNSNAME Property.
+        /// </summary>
+        public PropertyState<string> DNSNAME
+        {
+            get
+            {
+                return m_dNSNAME;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_dNSNAME, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_dNSNAME = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the VALID Property.
+        /// </summary>
+        public PropertyState<bool> VALID
+        {
+            get
+            {
+                return m_vALID;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_vALID, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_vALID = value;
+            }
+        }
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Populates a list with the children that belong to the node.
+        /// </summary>
+        /// <param name="context">The context for the system being accessed.</param>
+        /// <param name="children">The list of children to populate.</param>
+        public override void GetChildren(
+            ISystemContext context,
+            IList<BaseInstanceState> children)
+        {
+            if (m_mAC != null)
+            {
+                children.Add(m_mAC);
+            }
+
+            if (m_iPv4 != null)
+            {
+                children.Add(m_iPv4);
+            }
+
+            if (m_dNSNAME != null)
+            {
+                children.Add(m_dNSNAME);
+            }
+
+            if (m_vALID != null)
+            {
+                children.Add(m_vALID);
+            }
+
+            base.GetChildren(context, children);
+        }
+
+        /// <summary>
+        /// Finds the child with the specified browse name.
+        /// </summary>
+        protected override BaseInstanceState FindChild(
+            ISystemContext context,
+            QualifiedName browseName,
+            bool createOrReplace,
+            BaseInstanceState replacement)
+        {
+            if (QualifiedName.IsNull(browseName))
+            {
+                return null;
+            }
+
+            BaseInstanceState instance = null;
+
+            switch (browseName.Name)
+            {
+                case Opc.Ua.Fdi7.BrowseNames.MAC:
+                {
+                    if (createOrReplace)
+                    {
+                        if (MAC == null)
+                        {
+                            if (replacement == null)
+                            {
+                                MAC = new PropertyState<byte[]>(this);
+                            }
+                            else
+                            {
+                                MAC = (PropertyState<byte[]>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = MAC;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.IPv4:
+                {
+                    if (createOrReplace)
+                    {
+                        if (IPv4 == null)
+                        {
+                            if (replacement == null)
+                            {
+                                IPv4 = new PropertyState<byte[]>(this);
+                            }
+                            else
+                            {
+                                IPv4 = (PropertyState<byte[]>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = IPv4;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.DNSNAME:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DNSNAME == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DNSNAME = new PropertyState<string>(this);
+                            }
+                            else
+                            {
+                                DNSNAME = (PropertyState<string>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DNSNAME;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.VALID:
+                {
+                    if (createOrReplace)
+                    {
+                        if (VALID == null)
+                        {
+                            if (replacement == null)
+                            {
+                                VALID = new PropertyState<bool>(this);
+                            }
+                            else
+                            {
+                                VALID = (PropertyState<bool>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = VALID;
+                    break;
+                }
+            }
+
+            if (instance != null)
+            {
+                return instance;
+            }
+
+            return base.FindChild(context, browseName, createOrReplace, replacement);
+        }
+        #endregion
+
+        #region Private Fields
+        private PropertyState<byte[]> m_mAC;
+        private PropertyState<byte[]> m_iPv4;
+        private PropertyState<string> m_dNSNAME;
+        private PropertyState<bool> m_vALID;
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region ConnectionPoint_HART_TP5State Class
+    #if (!OPCUA_EXCLUDE_ConnectionPoint_HART_TP5State)
+    /// <summary>
+    /// Stores an instance of the ConnectionPoint_HART_TP5 ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class ConnectionPoint_HART_TP5State : ConnectionPointState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public ConnectionPoint_HART_TP5State(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.Fdi7.ObjectTypes.ConnectionPoint_HART_TP5, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+
+            if (DevMfg != null)
+            {
+                DevMfg.Initialize(context, DevMfg_InitializationString);
+            }
+
+            if (DevType != null)
+            {
+                DevType.Initialize(context, DevType_InitializationString);
+            }
+
+            if (DevRev != null)
+            {
+                DevRev.Initialize(context, DevRev_InitializationString);
+            }
+
+            if (DevTag != null)
+            {
+                DevTag.Initialize(context, DevTag_InitializationString);
+            }
+
+            if (DevPollAddr != null)
+            {
+                DevPollAddr.Initialize(context, DevPollAddr_InitializationString);
+            }
+        }
+
+        #region Initialization String
+        private const string DevMfg_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAGAAAARGV2TWZnAQE8BgAuAEQ8BgAAAAX/" +
+           "////AQH/////AAAAAA==";
+
+        private const string DevType_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAHAAAARGV2VHlwZQEBPQYALgBEPQYAAAAF" +
+           "/////wEB/////wAAAAA=";
+
+        private const string DevRev_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAGAAAARGV2UmV2AQE+BgAuAEQ+BgAAAAX/" +
+           "////AQH/////AAAAAA==";
+
+        private const string DevTag_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAGAAAARGV2VGFnAQE/BgAuAEQ/BgAAAAz/" +
+           "////AQH/////AAAAAA==";
+
+        private const string DevPollAddr_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQALAAAARGV2UG9sbEFkZHIBAUAGAC4AREAG" +
+           "AAAAA/////8BAf////8AAAAA";
+
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAgAAAAQ29ubmVjdGlvblBvaW50X0hBUlRf" +
+           "VFA1SW5zdGFuY2UBARIGAQESBv////8HAAAAJGCACgEAAAACAA4AAABOZXR3b3JrQWRkcmVzcwEBKQYD" +
+           "AAAAACoAAABUaGUgYWRkcmVzcyBvZiB0aGUgZGV2aWNlIG9uIHRoaXMgbmV0d29yay4ALwEC7QMpBgAA" +
+           "/////wAAAAAXYIkKAgAAAAEABwAAAERldkFkZHIBATsGAC4ARDsGAAAAAwEAAAABAAAABQAAAAEB////" +
+           "/wAAAAAVYIkKAgAAAAEABgAAAERldk1mZwEBPAYALgBEPAYAAAAF/////wEB/////wAAAAAVYIkKAgAA" +
+           "AAEABwAAAERldlR5cGUBAT0GAC4ARD0GAAAABf////8BAf////8AAAAAFWCJCgIAAAABAAYAAABEZXZS" +
+           "ZXYBAT4GAC4ARD4GAAAABf////8BAf////8AAAAAFWCJCgIAAAABAAYAAABEZXZUYWcBAT8GAC4ARD8G" +
+           "AAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABEZXZQb2xsQWRkcgEBQAYALgBEQAYAAAAD////" +
+           "/wEB/////wAAAAA=";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the DevAddr Property.
+        /// </summary>
+        public PropertyState<byte[]> DevAddr
+        {
+            get
+            {
+                return m_devAddr;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devAddr, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devAddr = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DevMfg Property.
+        /// </summary>
+        public PropertyState<ushort> DevMfg
+        {
+            get
+            {
+                return m_devMfg;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devMfg, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devMfg = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DevType Property.
+        /// </summary>
+        public PropertyState<ushort> DevType
+        {
+            get
+            {
+                return m_devType;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devType, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devType = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DevRev Property.
+        /// </summary>
+        public PropertyState<ushort> DevRev
+        {
+            get
+            {
+                return m_devRev;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devRev, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devRev = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DevTag Property.
+        /// </summary>
+        public PropertyState<string> DevTag
+        {
+            get
+            {
+                return m_devTag;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devTag, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devTag = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DevPollAddr Property.
+        /// </summary>
+        public PropertyState<byte> DevPollAddr
+        {
+            get
+            {
+                return m_devPollAddr;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devPollAddr, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devPollAddr = value;
+            }
+        }
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Populates a list with the children that belong to the node.
+        /// </summary>
+        /// <param name="context">The context for the system being accessed.</param>
+        /// <param name="children">The list of children to populate.</param>
+        public override void GetChildren(
+            ISystemContext context,
+            IList<BaseInstanceState> children)
+        {
+            if (m_devAddr != null)
+            {
+                children.Add(m_devAddr);
+            }
+
+            if (m_devMfg != null)
+            {
+                children.Add(m_devMfg);
+            }
+
+            if (m_devType != null)
+            {
+                children.Add(m_devType);
+            }
+
+            if (m_devRev != null)
+            {
+                children.Add(m_devRev);
+            }
+
+            if (m_devTag != null)
+            {
+                children.Add(m_devTag);
+            }
+
+            if (m_devPollAddr != null)
+            {
+                children.Add(m_devPollAddr);
+            }
+
+            base.GetChildren(context, children);
+        }
+
+        /// <summary>
+        /// Finds the child with the specified browse name.
+        /// </summary>
+        protected override BaseInstanceState FindChild(
+            ISystemContext context,
+            QualifiedName browseName,
+            bool createOrReplace,
+            BaseInstanceState replacement)
+        {
+            if (QualifiedName.IsNull(browseName))
+            {
+                return null;
+            }
+
+            BaseInstanceState instance = null;
+
+            switch (browseName.Name)
+            {
+                case Opc.Ua.Fdi7.BrowseNames.DevAddr:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevAddr == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevAddr = new PropertyState<byte[]>(this);
+                            }
+                            else
+                            {
+                                DevAddr = (PropertyState<byte[]>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevAddr;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.DevMfg:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevMfg == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevMfg = new PropertyState<ushort>(this);
+                            }
+                            else
+                            {
+                                DevMfg = (PropertyState<ushort>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevMfg;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.DevType:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevType == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevType = new PropertyState<ushort>(this);
+                            }
+                            else
+                            {
+                                DevType = (PropertyState<ushort>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevType;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.DevRev:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevRev == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevRev = new PropertyState<ushort>(this);
+                            }
+                            else
+                            {
+                                DevRev = (PropertyState<ushort>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevRev;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.DevTag:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevTag == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevTag = new PropertyState<string>(this);
+                            }
+                            else
+                            {
+                                DevTag = (PropertyState<string>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevTag;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.DevPollAddr:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevPollAddr == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevPollAddr = new PropertyState<byte>(this);
+                            }
+                            else
+                            {
+                                DevPollAddr = (PropertyState<byte>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevPollAddr;
+                    break;
+                }
+            }
+
+            if (instance != null)
+            {
+                return instance;
+            }
+
+            return base.FindChild(context, browseName, createOrReplace, replacement);
+        }
+        #endregion
+
+        #region Private Fields
+        private PropertyState<byte[]> m_devAddr;
+        private PropertyState<ushort> m_devMfg;
+        private PropertyState<ushort> m_devType;
+        private PropertyState<ushort> m_devRev;
+        private PropertyState<string> m_devTag;
+        private PropertyState<byte> m_devPollAddr;
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region ConnectionPoint_HART_TP6State Class
+    #if (!OPCUA_EXCLUDE_ConnectionPoint_HART_TP6State)
+    /// <summary>
+    /// Stores an instance of the ConnectionPoint_HART_TP6 ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class ConnectionPoint_HART_TP6State : ConnectionPointState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public ConnectionPoint_HART_TP6State(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.Fdi7.ObjectTypes.ConnectionPoint_HART_TP6, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+
+            if (DevMfg != null)
+            {
+                DevMfg.Initialize(context, DevMfg_InitializationString);
+            }
+
+            if (DevType != null)
+            {
+                DevType.Initialize(context, DevType_InitializationString);
+            }
+
+            if (DevRev != null)
+            {
+                DevRev.Initialize(context, DevRev_InitializationString);
+            }
+
+            if (DevTag != null)
+            {
+                DevTag.Initialize(context, DevTag_InitializationString);
+            }
+
+            if (DevPollAddr != null)
+            {
+                DevPollAddr.Initialize(context, DevPollAddr_InitializationString);
+            }
+        }
+
+        #region Initialization String
+        private const string DevMfg_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAGAAAARGV2TWZnAQFrBgAuAERrBgAAAAX/" +
+           "////AQH/////AAAAAA==";
+
+        private const string DevType_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAHAAAARGV2VHlwZQEBbAYALgBEbAYAAAAF" +
+           "/////wEB/////wAAAAA=";
+
+        private const string DevRev_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAGAAAARGV2UmV2AQFtBgAuAERtBgAAAAX/" +
+           "////AQH/////AAAAAA==";
+
+        private const string DevTag_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAGAAAARGV2VGFnAQFuBgAuAERuBgAAAAz/" +
+           "////AQH/////AAAAAA==";
+
+        private const string DevPollAddr_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQALAAAARGV2UG9sbEFkZHIBAW8GAC4ARG8G" +
+           "AAAAA/////8BAf////8AAAAA";
+
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAgAAAAQ29ubmVjdGlvblBvaW50X0hBUlRf" +
+           "VFA2SW5zdGFuY2UBAUEGAQFBBv////8HAAAAJGCACgEAAAACAA4AAABOZXR3b3JrQWRkcmVzcwEBWAYD" +
+           "AAAAACoAAABUaGUgYWRkcmVzcyBvZiB0aGUgZGV2aWNlIG9uIHRoaXMgbmV0d29yay4ALwEC7QNYBgAA" +
+           "/////wAAAAAXYIkKAgAAAAEABwAAAERldkFkZHIBAWoGAC4ARGoGAAAAAwEAAAABAAAABQAAAAEB////" +
+           "/wAAAAAVYIkKAgAAAAEABgAAAERldk1mZwEBawYALgBEawYAAAAF/////wEB/////wAAAAAVYIkKAgAA" +
+           "AAEABwAAAERldlR5cGUBAWwGAC4ARGwGAAAABf////8BAf////8AAAAAFWCJCgIAAAABAAYAAABEZXZS" +
+           "ZXYBAW0GAC4ARG0GAAAABf////8BAf////8AAAAAFWCJCgIAAAABAAYAAABEZXZUYWcBAW4GAC4ARG4G" +
+           "AAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABEZXZQb2xsQWRkcgEBbwYALgBEbwYAAAAD////" +
+           "/wEB/////wAAAAA=";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the DevAddr Property.
+        /// </summary>
+        public PropertyState<byte[]> DevAddr
+        {
+            get
+            {
+                return m_devAddr;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devAddr, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devAddr = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DevMfg Property.
+        /// </summary>
+        public PropertyState<ushort> DevMfg
+        {
+            get
+            {
+                return m_devMfg;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devMfg, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devMfg = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DevType Property.
+        /// </summary>
+        public PropertyState<ushort> DevType
+        {
+            get
+            {
+                return m_devType;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devType, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devType = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DevRev Property.
+        /// </summary>
+        public PropertyState<ushort> DevRev
+        {
+            get
+            {
+                return m_devRev;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devRev, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devRev = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DevTag Property.
+        /// </summary>
+        public PropertyState<string> DevTag
+        {
+            get
+            {
+                return m_devTag;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devTag, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devTag = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DevPollAddr Property.
+        /// </summary>
+        public PropertyState<byte> DevPollAddr
+        {
+            get
+            {
+                return m_devPollAddr;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devPollAddr, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devPollAddr = value;
+            }
+        }
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Populates a list with the children that belong to the node.
+        /// </summary>
+        /// <param name="context">The context for the system being accessed.</param>
+        /// <param name="children">The list of children to populate.</param>
+        public override void GetChildren(
+            ISystemContext context,
+            IList<BaseInstanceState> children)
+        {
+            if (m_devAddr != null)
+            {
+                children.Add(m_devAddr);
+            }
+
+            if (m_devMfg != null)
+            {
+                children.Add(m_devMfg);
+            }
+
+            if (m_devType != null)
+            {
+                children.Add(m_devType);
+            }
+
+            if (m_devRev != null)
+            {
+                children.Add(m_devRev);
+            }
+
+            if (m_devTag != null)
+            {
+                children.Add(m_devTag);
+            }
+
+            if (m_devPollAddr != null)
+            {
+                children.Add(m_devPollAddr);
+            }
+
+            base.GetChildren(context, children);
+        }
+
+        /// <summary>
+        /// Finds the child with the specified browse name.
+        /// </summary>
+        protected override BaseInstanceState FindChild(
+            ISystemContext context,
+            QualifiedName browseName,
+            bool createOrReplace,
+            BaseInstanceState replacement)
+        {
+            if (QualifiedName.IsNull(browseName))
+            {
+                return null;
+            }
+
+            BaseInstanceState instance = null;
+
+            switch (browseName.Name)
+            {
+                case Opc.Ua.Fdi7.BrowseNames.DevAddr:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevAddr == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevAddr = new PropertyState<byte[]>(this);
+                            }
+                            else
+                            {
+                                DevAddr = (PropertyState<byte[]>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevAddr;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.DevMfg:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevMfg == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevMfg = new PropertyState<ushort>(this);
+                            }
+                            else
+                            {
+                                DevMfg = (PropertyState<ushort>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevMfg;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.DevType:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevType == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevType = new PropertyState<ushort>(this);
+                            }
+                            else
+                            {
+                                DevType = (PropertyState<ushort>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevType;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.DevRev:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevRev == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevRev = new PropertyState<ushort>(this);
+                            }
+                            else
+                            {
+                                DevRev = (PropertyState<ushort>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevRev;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.DevTag:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevTag == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevTag = new PropertyState<string>(this);
+                            }
+                            else
+                            {
+                                DevTag = (PropertyState<string>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevTag;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.DevPollAddr:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevPollAddr == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevPollAddr = new PropertyState<byte>(this);
+                            }
+                            else
+                            {
+                                DevPollAddr = (PropertyState<byte>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevPollAddr;
+                    break;
+                }
+            }
+
+            if (instance != null)
+            {
+                return instance;
+            }
+
+            return base.FindChild(context, browseName, createOrReplace, replacement);
+        }
+        #endregion
+
+        #region Private Fields
+        private PropertyState<byte[]> m_devAddr;
+        private PropertyState<ushort> m_devMfg;
+        private PropertyState<ushort> m_devType;
+        private PropertyState<ushort> m_devRev;
+        private PropertyState<string> m_devTag;
+        private PropertyState<byte> m_devPollAddr;
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region ConnectionPoint_HART_TP7State Class
+    #if (!OPCUA_EXCLUDE_ConnectionPoint_HART_TP7State)
+    /// <summary>
+    /// Stores an instance of the ConnectionPoint_HART_TP7 ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class ConnectionPoint_HART_TP7State : ConnectionPointState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public ConnectionPoint_HART_TP7State(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.Fdi7.ObjectTypes.ConnectionPoint_HART_TP7, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+
+            if (DevMfg != null)
+            {
+                DevMfg.Initialize(context, DevMfg_InitializationString);
+            }
+
+            if (DevType != null)
+            {
+                DevType.Initialize(context, DevType_InitializationString);
+            }
+
+            if (DevRev != null)
+            {
+                DevRev.Initialize(context, DevRev_InitializationString);
+            }
+
+            if (DevTag != null)
+            {
+                DevTag.Initialize(context, DevTag_InitializationString);
+            }
+
+            if (DevPollAddr != null)
+            {
+                DevPollAddr.Initialize(context, DevPollAddr_InitializationString);
+            }
+        }
+
+        #region Initialization String
+        private const string DevMfg_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAGAAAARGV2TWZnAQGaBgAuAESaBgAAAAX/" +
+           "////AQH/////AAAAAA==";
+
+        private const string DevType_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAHAAAARGV2VHlwZQEBmwYALgBEmwYAAAAF" +
+           "/////wEB/////wAAAAA=";
+
+        private const string DevRev_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAGAAAARGV2UmV2AQGcBgAuAEScBgAAAAX/" +
+           "////AQH/////AAAAAA==";
+
+        private const string DevTag_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAGAAAARGV2VGFnAQGdBgAuAESdBgAAAAz/" +
+           "////AQH/////AAAAAA==";
+
+        private const string DevPollAddr_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQALAAAARGV2UG9sbEFkZHIBAZ4GAC4ARJ4G" +
+           "AAAAA/////8BAf////8AAAAA";
+
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAgAAAAQ29ubmVjdGlvblBvaW50X0hBUlRf" +
+           "VFA3SW5zdGFuY2UBAXAGAQFwBv////8HAAAAJGCACgEAAAACAA4AAABOZXR3b3JrQWRkcmVzcwEBhwYD" +
+           "AAAAACoAAABUaGUgYWRkcmVzcyBvZiB0aGUgZGV2aWNlIG9uIHRoaXMgbmV0d29yay4ALwEC7QOHBgAA" +
+           "/////wAAAAAXYIkKAgAAAAEABwAAAERldkFkZHIBAZkGAC4ARJkGAAAAAwEAAAABAAAABQAAAAEB////" +
+           "/wAAAAAVYIkKAgAAAAEABgAAAERldk1mZwEBmgYALgBEmgYAAAAF/////wEB/////wAAAAAVYIkKAgAA" +
+           "AAEABwAAAERldlR5cGUBAZsGAC4ARJsGAAAABf////8BAf////8AAAAAFWCJCgIAAAABAAYAAABEZXZS" +
+           "ZXYBAZwGAC4ARJwGAAAABf////8BAf////8AAAAAFWCJCgIAAAABAAYAAABEZXZUYWcBAZ0GAC4ARJ0G" +
+           "AAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABEZXZQb2xsQWRkcgEBngYALgBEngYAAAAD////" +
+           "/wEB/////wAAAAA=";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the DevAddr Property.
+        /// </summary>
+        public PropertyState<byte[]> DevAddr
+        {
+            get
+            {
+                return m_devAddr;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devAddr, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devAddr = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DevMfg Property.
+        /// </summary>
+        public PropertyState<ushort> DevMfg
+        {
+            get
+            {
+                return m_devMfg;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devMfg, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devMfg = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DevType Property.
+        /// </summary>
+        public PropertyState<ushort> DevType
+        {
+            get
+            {
+                return m_devType;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devType, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devType = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DevRev Property.
+        /// </summary>
+        public PropertyState<ushort> DevRev
+        {
+            get
+            {
+                return m_devRev;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devRev, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devRev = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DevTag Property.
+        /// </summary>
+        public PropertyState<string> DevTag
+        {
+            get
+            {
+                return m_devTag;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devTag, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devTag = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DevPollAddr Property.
+        /// </summary>
+        public PropertyState<byte> DevPollAddr
+        {
+            get
+            {
+                return m_devPollAddr;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devPollAddr, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devPollAddr = value;
+            }
+        }
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Populates a list with the children that belong to the node.
+        /// </summary>
+        /// <param name="context">The context for the system being accessed.</param>
+        /// <param name="children">The list of children to populate.</param>
+        public override void GetChildren(
+            ISystemContext context,
+            IList<BaseInstanceState> children)
+        {
+            if (m_devAddr != null)
+            {
+                children.Add(m_devAddr);
+            }
+
+            if (m_devMfg != null)
+            {
+                children.Add(m_devMfg);
+            }
+
+            if (m_devType != null)
+            {
+                children.Add(m_devType);
+            }
+
+            if (m_devRev != null)
+            {
+                children.Add(m_devRev);
+            }
+
+            if (m_devTag != null)
+            {
+                children.Add(m_devTag);
+            }
+
+            if (m_devPollAddr != null)
+            {
+                children.Add(m_devPollAddr);
+            }
+
+            base.GetChildren(context, children);
+        }
+
+        /// <summary>
+        /// Finds the child with the specified browse name.
+        /// </summary>
+        protected override BaseInstanceState FindChild(
+            ISystemContext context,
+            QualifiedName browseName,
+            bool createOrReplace,
+            BaseInstanceState replacement)
+        {
+            if (QualifiedName.IsNull(browseName))
+            {
+                return null;
+            }
+
+            BaseInstanceState instance = null;
+
+            switch (browseName.Name)
+            {
+                case Opc.Ua.Fdi7.BrowseNames.DevAddr:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevAddr == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevAddr = new PropertyState<byte[]>(this);
+                            }
+                            else
+                            {
+                                DevAddr = (PropertyState<byte[]>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevAddr;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.DevMfg:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevMfg == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevMfg = new PropertyState<ushort>(this);
+                            }
+                            else
+                            {
+                                DevMfg = (PropertyState<ushort>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevMfg;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.DevType:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevType == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevType = new PropertyState<ushort>(this);
+                            }
+                            else
+                            {
+                                DevType = (PropertyState<ushort>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevType;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.DevRev:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevRev == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevRev = new PropertyState<ushort>(this);
+                            }
+                            else
+                            {
+                                DevRev = (PropertyState<ushort>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevRev;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.DevTag:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevTag == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevTag = new PropertyState<string>(this);
+                            }
+                            else
+                            {
+                                DevTag = (PropertyState<string>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevTag;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.DevPollAddr:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevPollAddr == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevPollAddr = new PropertyState<byte>(this);
+                            }
+                            else
+                            {
+                                DevPollAddr = (PropertyState<byte>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevPollAddr;
+                    break;
+                }
+            }
+
+            if (instance != null)
+            {
+                return instance;
+            }
+
+            return base.FindChild(context, browseName, createOrReplace, replacement);
+        }
+        #endregion
+
+        #region Private Fields
+        private PropertyState<byte[]> m_devAddr;
+        private PropertyState<ushort> m_devMfg;
+        private PropertyState<ushort> m_devType;
+        private PropertyState<ushort> m_devRev;
+        private PropertyState<string> m_devTag;
+        private PropertyState<byte> m_devPollAddr;
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region ConnectionPoint_ISA100_WirelessState Class
+    #if (!OPCUA_EXCLUDE_ConnectionPoint_ISA100_WirelessState)
+    /// <summary>
+    /// Stores an instance of the ConnectionPoint_ISA100_Wireless ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class ConnectionPoint_ISA100_WirelessState : ConnectionPointState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public ConnectionPoint_ISA100_WirelessState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.Fdi7.ObjectTypes.ConnectionPoint_ISA100_Wireless, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+
+            if (DevMfg != null)
+            {
+                DevMfg.Initialize(context, DevMfg_InitializationString);
+            }
+
+            if (DevType != null)
+            {
+                DevType.Initialize(context, DevType_InitializationString);
+            }
+
+            if (DevRev != null)
+            {
+                DevRev.Initialize(context, DevRev_InitializationString);
+            }
+
+            if (DevTag != null)
+            {
+                DevTag.Initialize(context, DevTag_InitializationString);
+            }
+
+            if (DevPollAddr != null)
+            {
+                DevPollAddr.Initialize(context, DevPollAddr_InitializationString);
+            }
+        }
+
+        #region Initialization String
+        private const string DevMfg_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAGAAAARGV2TWZnAQHJBgAuAETJBgAAAAf/" +
+           "////AQH/////AAAAAA==";
+
+        private const string DevType_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAHAAAARGV2VHlwZQEBygYALgBEygYAAAAF" +
+           "/////wEB/////wAAAAA=";
+
+        private const string DevRev_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAGAAAARGV2UmV2AQHLBgAuAETLBgAAAAX/" +
+           "////AQH/////AAAAAA==";
+
+        private const string DevTag_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAGAAAARGV2VGFnAQHMBgAuAETMBgAAAAz/" +
+           "////AQH/////AAAAAA==";
+
+        private const string DevPollAddr_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQALAAAARGV2UG9sbEFkZHIBAc0GAC4ARM0G" +
+           "AAAAA/////8BAf////8AAAAA";
+
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAnAAAAQ29ubmVjdGlvblBvaW50X0lTQTEw" +
+           "MF9XaXJlbGVzc0luc3RhbmNlAQGfBgEBnwb/////BwAAACRggAoBAAAAAgAOAAAATmV0d29ya0FkZHJl" +
+           "c3MBAbYGAwAAAAAqAAAAVGhlIGFkZHJlc3Mgb2YgdGhlIGRldmljZSBvbiB0aGlzIG5ldHdvcmsuAC8B" +
+           "Au0DtgYAAP////8AAAAAFWCJCgIAAAABAAkAAABJUEFkZHJlc3MBAcgGAC4ARMgGAAAAD/////8BAf//" +
+           "//8AAAAAFWCJCgIAAAABAAYAAABEZXZNZmcBAckGAC4ARMkGAAAAB/////8BAf////8AAAAAFWCJCgIA" +
+           "AAABAAcAAABEZXZUeXBlAQHKBgAuAETKBgAAAAX/////AQH/////AAAAABVgiQoCAAAAAQAGAAAARGV2" +
+           "UmV2AQHLBgAuAETLBgAAAAX/////AQH/////AAAAABVgiQoCAAAAAQAGAAAARGV2VGFnAQHMBgAuAETM" +
+           "BgAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAARGV2UG9sbEFkZHIBAc0GAC4ARM0GAAAAA///" +
+           "//8BAf////8AAAAA";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the IPAddress Property.
+        /// </summary>
+        public PropertyState<byte[]> IPAddress
+        {
+            get
+            {
+                return m_iPAddress;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_iPAddress, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_iPAddress = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DevMfg Property.
+        /// </summary>
+        public PropertyState<uint> DevMfg
+        {
+            get
+            {
+                return m_devMfg;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devMfg, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devMfg = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DevType Property.
+        /// </summary>
+        public PropertyState<ushort> DevType
+        {
+            get
+            {
+                return m_devType;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devType, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devType = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DevRev Property.
+        /// </summary>
+        public PropertyState<ushort> DevRev
+        {
+            get
+            {
+                return m_devRev;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devRev, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devRev = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DevTag Property.
+        /// </summary>
+        public PropertyState<string> DevTag
+        {
+            get
+            {
+                return m_devTag;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devTag, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devTag = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DevPollAddr Property.
+        /// </summary>
+        public PropertyState<byte> DevPollAddr
+        {
+            get
+            {
+                return m_devPollAddr;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_devPollAddr, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_devPollAddr = value;
+            }
+        }
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Populates a list with the children that belong to the node.
+        /// </summary>
+        /// <param name="context">The context for the system being accessed.</param>
+        /// <param name="children">The list of children to populate.</param>
+        public override void GetChildren(
+            ISystemContext context,
+            IList<BaseInstanceState> children)
+        {
+            if (m_iPAddress != null)
+            {
+                children.Add(m_iPAddress);
+            }
+
+            if (m_devMfg != null)
+            {
+                children.Add(m_devMfg);
+            }
+
+            if (m_devType != null)
+            {
+                children.Add(m_devType);
+            }
+
+            if (m_devRev != null)
+            {
+                children.Add(m_devRev);
+            }
+
+            if (m_devTag != null)
+            {
+                children.Add(m_devTag);
+            }
+
+            if (m_devPollAddr != null)
+            {
+                children.Add(m_devPollAddr);
+            }
+
+            base.GetChildren(context, children);
+        }
+
+        /// <summary>
+        /// Finds the child with the specified browse name.
+        /// </summary>
+        protected override BaseInstanceState FindChild(
+            ISystemContext context,
+            QualifiedName browseName,
+            bool createOrReplace,
+            BaseInstanceState replacement)
+        {
+            if (QualifiedName.IsNull(browseName))
+            {
+                return null;
+            }
+
+            BaseInstanceState instance = null;
+
+            switch (browseName.Name)
+            {
+                case Opc.Ua.Fdi7.BrowseNames.IPAddress:
+                {
+                    if (createOrReplace)
+                    {
+                        if (IPAddress == null)
+                        {
+                            if (replacement == null)
+                            {
+                                IPAddress = new PropertyState<byte[]>(this);
+                            }
+                            else
+                            {
+                                IPAddress = (PropertyState<byte[]>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = IPAddress;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.DevMfg:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevMfg == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevMfg = new PropertyState<uint>(this);
+                            }
+                            else
+                            {
+                                DevMfg = (PropertyState<uint>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevMfg;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.DevType:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevType == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevType = new PropertyState<ushort>(this);
+                            }
+                            else
+                            {
+                                DevType = (PropertyState<ushort>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevType;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.DevRev:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevRev == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevRev = new PropertyState<ushort>(this);
+                            }
+                            else
+                            {
+                                DevRev = (PropertyState<ushort>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevRev;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.DevTag:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevTag == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevTag = new PropertyState<string>(this);
+                            }
+                            else
+                            {
+                                DevTag = (PropertyState<string>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevTag;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.DevPollAddr:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DevPollAddr == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DevPollAddr = new PropertyState<byte>(this);
+                            }
+                            else
+                            {
+                                DevPollAddr = (PropertyState<byte>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DevPollAddr;
+                    break;
+                }
+            }
+
+            if (instance != null)
+            {
+                return instance;
+            }
+
+            return base.FindChild(context, browseName, createOrReplace, replacement);
+        }
+        #endregion
+
+        #region Private Fields
+        private PropertyState<byte[]> m_iPAddress;
+        private PropertyState<uint> m_devMfg;
+        private PropertyState<ushort> m_devType;
+        private PropertyState<ushort> m_devRev;
+        private PropertyState<string> m_devTag;
+        private PropertyState<byte> m_devPollAddr;
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region GenericConnectionPointState Class
+    #if (!OPCUA_EXCLUDE_GenericConnectionPointState)
+    /// <summary>
+    /// Stores an instance of the GenericConnectionPoint ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class GenericConnectionPointState : ConnectionPointState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public GenericConnectionPointState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.Fdi7.ObjectTypes.GenericConnectionPoint, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAeAAAAR2VuZXJpY0Nvbm5lY3Rpb25Qb2lu" +
+           "dEluc3RhbmNlAQHOBgEBzgb/////AwAAACRggAoBAAAAAgAOAAAATmV0d29ya0FkZHJlc3MBAeUGAwAA" +
+           "AAAqAAAAVGhlIGFkZHJlc3Mgb2YgdGhlIGRldmljZSBvbiB0aGlzIG5ldHdvcmsuAC8BAu0D5QYAAP//" +
+           "//8AAAAAFWCJCgIAAAABAAcAAABBZGRyZXNzAQH3BgAuAET3BgAAAA//////AQH/////AAAAABVgiQoC" +
+           "AAAAAQASAAAAUHJvdG9jb2xJZGVudGlmaWVyAQH4BgAuAET4BgAAAAz/////AQH/////AAAAAA==";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the Address Property.
+        /// </summary>
+        public PropertyState<byte[]> Address
+        {
+            get
+            {
+                return m_address;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_address, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_address = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the ProtocolIdentifier Property.
+        /// </summary>
+        public PropertyState<string> ProtocolIdentifier
+        {
+            get
+            {
+                return m_protocolIdentifier;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_protocolIdentifier, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_protocolIdentifier = value;
+            }
+        }
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Populates a list with the children that belong to the node.
+        /// </summary>
+        /// <param name="context">The context for the system being accessed.</param>
+        /// <param name="children">The list of children to populate.</param>
+        public override void GetChildren(
+            ISystemContext context,
+            IList<BaseInstanceState> children)
+        {
+            if (m_address != null)
+            {
+                children.Add(m_address);
+            }
+
+            if (m_protocolIdentifier != null)
+            {
+                children.Add(m_protocolIdentifier);
+            }
+
+            base.GetChildren(context, children);
+        }
+
+        /// <summary>
+        /// Finds the child with the specified browse name.
+        /// </summary>
+        protected override BaseInstanceState FindChild(
+            ISystemContext context,
+            QualifiedName browseName,
+            bool createOrReplace,
+            BaseInstanceState replacement)
+        {
+            if (QualifiedName.IsNull(browseName))
+            {
+                return null;
+            }
+
+            BaseInstanceState instance = null;
+
+            switch (browseName.Name)
+            {
+                case Opc.Ua.Fdi7.BrowseNames.Address:
+                {
+                    if (createOrReplace)
+                    {
+                        if (Address == null)
+                        {
+                            if (replacement == null)
+                            {
+                                Address = new PropertyState<byte[]>(this);
+                            }
+                            else
+                            {
+                                Address = (PropertyState<byte[]>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = Address;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.ProtocolIdentifier:
+                {
+                    if (createOrReplace)
+                    {
+                        if (ProtocolIdentifier == null)
+                        {
+                            if (replacement == null)
+                            {
+                                ProtocolIdentifier = new PropertyState<string>(this);
+                            }
+                            else
+                            {
+                                ProtocolIdentifier = (PropertyState<string>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = ProtocolIdentifier;
+                    break;
+                }
+            }
+
+            if (instance != null)
+            {
+                return instance;
+            }
+
+            return base.FindChild(context, browseName, createOrReplace, replacement);
+        }
+        #endregion
+
+        #region Private Fields
+        private PropertyState<byte[]> m_address;
+        private PropertyState<string> m_protocolIdentifier;
+        #endregion
+    }
+    #endif
+    #endregion
+
     #region CommunicationServerTypeInitializeMethodState Class
     #if (!OPCUA_EXCLUDE_CommunicationServerTypeInitializeMethodState)
     /// <summary>
@@ -1671,6 +5182,136 @@ namespace Opc.Ua.Fdi7
     #endif
     #endregion
 
+    #region SetAddressMethodGENERICMethodState Class
+    #if (!OPCUA_EXCLUDE_SetAddressMethodGENERICMethodState)
+    /// <summary>
+    /// Stores an instance of the SetAddressMethodGENERICType Method.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class SetAddressMethodGENERICMethodState : MethodState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public SetAddressMethodGENERICMethodState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Constructs an instance of a node.
+        /// </summary>
+        /// <param name="parent">The parent.</param>
+        /// <returns>The new node.</returns>
+        public new static NodeState Construct(NodeState parent)
+        {
+            return new SetAddressMethodGENERICMethodState(parent);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRhggoEAAAAAQAbAAAAU2V0QWRkcmVzc01ldGhvZEdFTkVS" +
+           "SUNUeXBlAQH5BgAvAQH5BvkGAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEB" +
+           "+gYALgBE+gYAAJYCAAAAAQAqAQEZAAAACgAAAE9sZEFkZHJlc3MAD/////8AAAAAAAEAKgEBGQAAAAoA" +
+           "AABOZXdBZGRyZXNzAA//////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1" +
+           "dEFyZ3VtZW50cwEB+wYALgBE+wYAAJYBAAAAAQAqAQEbAAAADAAAAFNlcnZpY2VFcnJvcgAb/////wAA" +
+           "AAAAAQAoAQEAAAABAf////8AAAAA";
+        #endregion
+        #endif
+        #endregion
+
+        #region Event Callbacks
+        /// <summary>
+        /// Raised when the the method is called.
+        /// </summary>
+        public SetAddressMethodGENERICMethodStateMethodCallHandler OnCall;
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Invokes the method, returns the result and output argument.
+        /// </summary>
+        /// <param name="context">The current context.</param>
+        /// <param name="objectId">The id of the object.</param>
+        /// <param name="inputArguments">The input arguments which have been already validated.</param>
+        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
+        /// <returns></returns>
+        protected override ServiceResult Call(
+            ISystemContext context,
+            NodeId objectId,
+            IList<object> inputArguments,
+            IList<object> outputArguments)
+        {
+            if (OnCall == null)
+            {
+                return base.Call(context, objectId, inputArguments, outputArguments);
+            }
+
+            ServiceResult result = null;
+
+            byte[] oldAddress = (byte[])inputArguments[0];
+            byte[] newAddress = (byte[])inputArguments[1];
+
+            object serviceError = (object)outputArguments[0];
+
+            if (OnCall != null)
+            {
+                result = OnCall(
+                    context,
+                    this,
+                    objectId,
+                    oldAddress,
+                    newAddress,
+                    ref serviceError);
+            }
+
+            outputArguments[0] = serviceError;
+
+            return result;
+        }
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+
+    /// <summary>
+    /// Used to receive notifications when the method is called.
+    /// </summary>
+    /// <exclude />
+    public delegate ServiceResult SetAddressMethodGENERICMethodStateMethodCallHandler(
+        ISystemContext context,
+        MethodState method,
+        NodeId objectId,
+        byte[] oldAddress,
+        byte[] newAddress,
+        ref object serviceError);
+    #endif
+    #endregion
+
     #region ServerCommunicationDeviceState Class
     #if (!OPCUA_EXCLUDE_ServerCommunicationDeviceState)
     /// <summary>
@@ -1886,32 +5527,44 @@ namespace Opc.Ua.Fdi7
            "ABAAAABIYXJkd2FyZVJldmlzaW9uAQFiAQMAAAAALAAAAFJldmlzaW9uIGxldmVsIG9mIHRoZSBoYXJk" +
            "d2FyZSBvZiB0aGUgZGV2aWNlAC4ARGIBAAAADP////8BAf////8AAAAABGCACgEAAAABAA8AAABTZXJ2" +
            "aWNlUHJvdmlkZXIBAZEBAC8BAeUDkQEAAP////8JAAAAJGCACgEAAAACAAkAAABNZXRob2RTZXQBAZQB" +
-           "AwAAAAAUAAAARmxhdCBsaXN0IG9mIE1ldGhvZHMALwA6lAEAAP////8BAAAABGGCCgQAAAABAAgAAABU" +
-           "cmFuc2ZlcgEBvgEALwEBKwS+AQAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMB" +
-           "Ab8BAC4ARL8BAACWBwAAAAEAKgEBJgAAABcAAABDb21tdW5pY2F0aW9uUmVsYXRpb25JZAAP/////wAA" +
-           "AAAAAQAqAQEYAAAACQAAAE9QRVJBVElPTgAM/////wAAAAAAAQAqAQEXAAAACAAAAEJsb2NrVGFnAAz/" +
-           "////AAAAAAABACoBARQAAAAFAAAASU5ERVgAB/////8AAAAAAAEAKgEBGAAAAAkAAABTVUJfSU5ERVgA" +
-           "B/////8AAAAAAAEAKgEBGAAAAAkAAABXcml0ZURhdGEAAwEAAAAAAAAAAAEAKgEBGAAAAAkAAABTZXJ2" +
-           "aWNlSWQAB/////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1l" +
-           "bnRzAQHAAQAuAETAAQAAlgMAAAABACoBARcAAAAIAAAAUmVhZERhdGEAAwEAAAAAAAAAAAEAKgEBHwAA" +
-           "ABAAAABEZWxheUZvck5leHRDYWxsAAf/////AAAAAAABACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/" +
-           "////AAAAAAABACgBAQAAAAEB/////wAAAAA1YIkKAgAAAAIADAAAAFNlcmlhbE51bWJlcgEBpgEDAAAA" +
-           "AE0AAABJZGVudGlmaWVyIHRoYXQgdW5pcXVlbHkgaWRlbnRpZmllcywgd2l0aGluIGEgbWFudWZhY3R1" +
-           "cmVyLCBhIGRldmljZSBpbnN0YW5jZQAuAESmAQAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAPAAAA" +
-           "UmV2aXNpb25Db3VudGVyAQGnAQMAAAAAaQAAAEFuIGluY3JlbWVudGFsIGNvdW50ZXIgaW5kaWNhdGlu" +
-           "ZyB0aGUgbnVtYmVyIG9mIHRpbWVzIHRoZSBzdGF0aWMgZGF0YSB3aXRoaW4gdGhlIERldmljZSBoYXMg" +
-           "YmVlbiBtb2RpZmllZAAuAESnAQAAAAb/////AQH/////AAAAADVgiQoCAAAAAgAMAAAATWFudWZhY3R1" +
-           "cmVyAQGoAQMAAAAAGAAAAE1vZGVsIG5hbWUgb2YgdGhlIGRldmljZQAuAESoAQAAABX/////AQH/////" +
-           "AAAAADVgiQoCAAAAAgAFAAAATW9kZWwBAakBAwAAAAAwAAAATmFtZSBvZiB0aGUgY29tcGFueSB0aGF0" +
-           "IG1hbnVmYWN0dXJlZCB0aGUgZGV2aWNlAC4ARKkBAAAAFf////8BAf////8AAAAANWCJCgIAAAACAAwA" +
-           "AABEZXZpY2VNYW51YWwBAaoBAwAAAABaAAAAQWRkcmVzcyAocGF0aG5hbWUgaW4gdGhlIGZpbGUgc3lz" +
-           "dGVtIG9yIGEgVVJMIHwgV2ViIGFkZHJlc3MpIG9mIHVzZXIgbWFudWFsIGZvciB0aGUgZGV2aWNlAC4A" +
-           "RKoBAAAADP////8BAf////8AAAAANWCJCgIAAAACAA4AAABEZXZpY2VSZXZpc2lvbgEBqwEDAAAAACQA" +
-           "AABPdmVyYWxsIHJldmlzaW9uIGxldmVsIG9mIHRoZSBkZXZpY2UALgBEqwEAAAAM/////wEB/////wAA" +
-           "AAA1YIkKAgAAAAIAEAAAAFNvZnR3YXJlUmV2aXNpb24BAawBAwAAAAA1AAAAUmV2aXNpb24gbGV2ZWwg" +
-           "b2YgdGhlIHNvZnR3YXJlL2Zpcm13YXJlIG9mIHRoZSBkZXZpY2UALgBErAEAAAAM/////wEB/////wAA" +
-           "AAA1YIkKAgAAAAIAEAAAAEhhcmR3YXJlUmV2aXNpb24BAa0BAwAAAAAsAAAAUmV2aXNpb24gbGV2ZWwg" +
-           "b2YgdGhlIGhhcmR3YXJlIG9mIHRoZSBkZXZpY2UALgBErQEAAAAM/////wEB/////wAAAAA=";
+           "AwAAAAAUAAAARmxhdCBsaXN0IG9mIE1ldGhvZHMALwA6lAEAAP////8DAAAABGGCCgQAAAABAAoAAABE" +
+           "aXNjb25uZWN0AQG4AQAvAQEsAbgBAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50" +
+           "cwEBuQEALgBEuQEAAJYBAAAAAQAqAQEmAAAAFwAAAENvbW11bmljYXRpb25SZWxhdGlvbklkAA//////" +
+           "AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBugEALgBE" +
+           "ugEAAJYBAAAAAQAqAQEbAAAADAAAAFNlcnZpY2VFcnJvcgAb/////wAAAAAAAQAoAQEAAAABAf////8A" +
+           "AAAABGGCCgQAAAABAAcAAABDb25uZWN0AQG7AQAvAQEoBLsBAAABAf////8CAAAAFWCpCgIAAAAAAA4A" +
+           "AABJbnB1dEFyZ3VtZW50cwEBvAEALgBEvAEAAJYGAAAAAQAqAQEmAAAAFwAAAENvbW11bmljYXRpb25S" +
+           "ZWxhdGlvbklkAA//////AAAAAAABACoBARUAAAAGAAAATGlua0lkAAX/////AAAAAAABACoBARYAAAAH" +
+           "AAAAQWRkcmVzcwAD/////wAAAAAAAQAqAQEcAAAADQAAAE9yZGluYWxOdW1iZXIABv////8AAAAAAAEA" +
+           "KgEBHAAAAA0AAABTSUZDb25uZWN0aW9uAAH/////AAAAAAABACoBARgAAAAJAAAAU2VydmljZUlkAAf/" +
+           "////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBvQEA" +
+           "LgBEvQEAAJYCAAAAAQAqAQEfAAAAEAAAAERlbGF5Rm9yTmV4dENhbGwAB/////8AAAAAAAEAKgEBGwAA" +
+           "AAwAAABTZXJ2aWNlRXJyb3IAG/////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQAIAAAA" +
+           "VHJhbnNmZXIBAb4BAC8BASsEvgEAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRz" +
+           "AQG/AQAuAES/AQAAlgcAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlvblJlbGF0aW9uSWQAD/////8A" +
+           "AAAAAAEAKgEBGAAAAAkAAABPUEVSQVRJT04ADP////8AAAAAAAEAKgEBFwAAAAgAAABCbG9ja1RhZwAM" +
+           "/////wAAAAAAAQAqAQEUAAAABQAAAElOREVYAAf/////AAAAAAABACoBARgAAAAJAAAAU1VCX0lOREVY" +
+           "AAf/////AAAAAAABACoBARgAAAAJAAAAV3JpdGVEYXRhAAMBAAAAAAAAAAABACoBARgAAAAJAAAAU2Vy" +
+           "dmljZUlkAAf/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3Vt" +
+           "ZW50cwEBwAEALgBEwAEAAJYDAAAAAQAqAQEXAAAACAAAAFJlYWREYXRhAAMBAAAAAAAAAAABACoBAR8A" +
+           "AAAQAAAARGVsYXlGb3JOZXh0Q2FsbAAH/////wAAAAAAAQAqAQEbAAAADAAAAFNlcnZpY2VFcnJvcgAb" +
+           "/////wAAAAAAAQAoAQEAAAABAf////8AAAAANWCJCgIAAAACAAwAAABTZXJpYWxOdW1iZXIBAaYBAwAA" +
+           "AABNAAAASWRlbnRpZmllciB0aGF0IHVuaXF1ZWx5IGlkZW50aWZpZXMsIHdpdGhpbiBhIG1hbnVmYWN0" +
+           "dXJlciwgYSBkZXZpY2UgaW5zdGFuY2UALgBEpgEAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIADwAA" +
+           "AFJldmlzaW9uQ291bnRlcgEBpwEDAAAAAGkAAABBbiBpbmNyZW1lbnRhbCBjb3VudGVyIGluZGljYXRp" +
+           "bmcgdGhlIG51bWJlciBvZiB0aW1lcyB0aGUgc3RhdGljIGRhdGEgd2l0aGluIHRoZSBEZXZpY2UgaGFz" +
+           "IGJlZW4gbW9kaWZpZWQALgBEpwEAAAAG/////wEB/////wAAAAA1YIkKAgAAAAIADAAAAE1hbnVmYWN0" +
+           "dXJlcgEBqAEDAAAAABgAAABNb2RlbCBuYW1lIG9mIHRoZSBkZXZpY2UALgBEqAEAAAAV/////wEB////" +
+           "/wAAAAA1YIkKAgAAAAIABQAAAE1vZGVsAQGpAQMAAAAAMAAAAE5hbWUgb2YgdGhlIGNvbXBhbnkgdGhh" +
+           "dCBtYW51ZmFjdHVyZWQgdGhlIGRldmljZQAuAESpAQAAABX/////AQH/////AAAAADVgiQoCAAAAAgAM" +
+           "AAAARGV2aWNlTWFudWFsAQGqAQMAAAAAWgAAAEFkZHJlc3MgKHBhdGhuYW1lIGluIHRoZSBmaWxlIHN5" +
+           "c3RlbSBvciBhIFVSTCB8IFdlYiBhZGRyZXNzKSBvZiB1c2VyIG1hbnVhbCBmb3IgdGhlIGRldmljZQAu" +
+           "AESqAQAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAOAAAARGV2aWNlUmV2aXNpb24BAasBAwAAAAAk" +
+           "AAAAT3ZlcmFsbCByZXZpc2lvbiBsZXZlbCBvZiB0aGUgZGV2aWNlAC4ARKsBAAAADP////8BAf////8A" +
+           "AAAANWCJCgIAAAACABAAAABTb2Z0d2FyZVJldmlzaW9uAQGsAQMAAAAANQAAAFJldmlzaW9uIGxldmVs" +
+           "IG9mIHRoZSBzb2Z0d2FyZS9maXJtd2FyZSBvZiB0aGUgZGV2aWNlAC4ARKwBAAAADP////8BAf////8A" +
+           "AAAANWCJCgIAAAACABAAAABIYXJkd2FyZVJldmlzaW9uAQGtAQMAAAAALAAAAFJldmlzaW9uIGxldmVs" +
+           "IG9mIHRoZSBoYXJkd2FyZSBvZiB0aGUgZGV2aWNlAC4ARK0BAAAADP////8BAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -2102,32 +5755,43 @@ namespace Opc.Ua.Fdi7
            "aXNpb24gbGV2ZWwgb2YgdGhlIGhhcmR3YXJlIG9mIHRoZSBkZXZpY2UALgBE4gEAAAAM/////wEB////" +
            "/wAAAAAEYIAKAQAAAAEADwAAAFNlcnZpY2VQcm92aWRlcgEBEQIALwEBMQQRAgAA/////wkAAAAkYIAK" +
            "AQAAAAIACQAAAE1ldGhvZFNldAEBFAIDAAAAABQAAABGbGF0IGxpc3Qgb2YgTWV0aG9kcwAvADoUAgAA" +
-           "/////wEAAAAEYYIKBAAAAAEACAAAAFRyYW5zZmVyAQE+AgAvAQF3BD4CAAABAf////8CAAAAFWCpCgIA" +
-           "AAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBPwIALgBEPwIAAJYHAAAAAQAqAQEmAAAAFwAAAENvbW11bmlj" +
-           "YXRpb25SZWxhdGlvbklkAA//////AAAAAAABACoBARgAAAAJAAAAT1BFUkFUSU9OAAz/////AAAAAAAB" +
-           "ACoBARcAAAAIAAAAQmxvY2tUYWcADP////8AAAAAAAEAKgEBFAAAAAUAAABJTkRFWAAH/////wAAAAAA" +
-           "AQAqAQEYAAAACQAAAFNVQl9JTkRFWAAH/////wAAAAAAAQAqAQEYAAAACQAAAFdyaXRlRGF0YQADAQAA" +
-           "AAAAAAAAAQAqAQEYAAAACQAAAFNlcnZpY2VJZAAH/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCp" +
-           "CgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAUACAC4AREACAACWAwAAAAEAKgEBFwAAAAgAAABSZWFk" +
-           "RGF0YQADAQAAAAAAAAAAAQAqAQEfAAAAEAAAAERlbGF5Rm9yTmV4dENhbGwAB/////8AAAAAAAEAKgEB" +
-           "GwAAAAwAAABTZXJ2aWNlRXJyb3IAG/////8AAAAAAAEAKAEBAAAAAQH/////AAAAADVgiQoCAAAAAgAM" +
-           "AAAAU2VyaWFsTnVtYmVyAQEmAgMAAAAATQAAAElkZW50aWZpZXIgdGhhdCB1bmlxdWVseSBpZGVudGlm" +
-           "aWVzLCB3aXRoaW4gYSBtYW51ZmFjdHVyZXIsIGEgZGV2aWNlIGluc3RhbmNlAC4ARCYCAAAADP////8B" +
-           "Af////8AAAAANWCJCgIAAAACAA8AAABSZXZpc2lvbkNvdW50ZXIBAScCAwAAAABpAAAAQW4gaW5jcmVt" +
-           "ZW50YWwgY291bnRlciBpbmRpY2F0aW5nIHRoZSBudW1iZXIgb2YgdGltZXMgdGhlIHN0YXRpYyBkYXRh" +
-           "IHdpdGhpbiB0aGUgRGV2aWNlIGhhcyBiZWVuIG1vZGlmaWVkAC4ARCcCAAAABv////8BAf////8AAAAA" +
-           "NWCJCgIAAAACAAwAAABNYW51ZmFjdHVyZXIBASgCAwAAAAAYAAAATW9kZWwgbmFtZSBvZiB0aGUgZGV2" +
-           "aWNlAC4ARCgCAAAAFf////8BAf////8AAAAANWCJCgIAAAACAAUAAABNb2RlbAEBKQIDAAAAADAAAABO" +
-           "YW1lIG9mIHRoZSBjb21wYW55IHRoYXQgbWFudWZhY3R1cmVkIHRoZSBkZXZpY2UALgBEKQIAAAAV////" +
-           "/wEB/////wAAAAA1YIkKAgAAAAIADAAAAERldmljZU1hbnVhbAEBKgIDAAAAAFoAAABBZGRyZXNzIChw" +
-           "YXRobmFtZSBpbiB0aGUgZmlsZSBzeXN0ZW0gb3IgYSBVUkwgfCBXZWIgYWRkcmVzcykgb2YgdXNlciBt" +
-           "YW51YWwgZm9yIHRoZSBkZXZpY2UALgBEKgIAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIADgAAAERl" +
-           "dmljZVJldmlzaW9uAQErAgMAAAAAJAAAAE92ZXJhbGwgcmV2aXNpb24gbGV2ZWwgb2YgdGhlIGRldmlj" +
-           "ZQAuAEQrAgAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAQAAAAU29mdHdhcmVSZXZpc2lvbgEBLAID" +
-           "AAAAADUAAABSZXZpc2lvbiBsZXZlbCBvZiB0aGUgc29mdHdhcmUvZmlybXdhcmUgb2YgdGhlIGRldmlj" +
-           "ZQAuAEQsAgAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAQAAAASGFyZHdhcmVSZXZpc2lvbgEBLQID" +
-           "AAAAACwAAABSZXZpc2lvbiBsZXZlbCBvZiB0aGUgaGFyZHdhcmUgb2YgdGhlIGRldmljZQAuAEQtAgAA" +
-           "AAz/////AQH/////AAAAAA==";
+           "/////wMAAAAEYYIKBAAAAAEACgAAAERpc2Nvbm5lY3QBATgCAC8BASwBOAIAAAEB/////wIAAAAVYKkK" +
+           "AgAAAAAADgAAAElucHV0QXJndW1lbnRzAQE5AgAuAEQ5AgAAlgEAAAABACoBASYAAAAXAAAAQ29tbXVu" +
+           "aWNhdGlvblJlbGF0aW9uSWQAD/////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAA" +
+           "T3V0cHV0QXJndW1lbnRzAQE6AgAuAEQ6AgAAlgEAAAABACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/" +
+           "////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEABwAAAENvbm5lY3QBATsCAC8BAXQEOwIA" +
+           "AAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQE8AgAuAEQ8AgAAlgQAAAABACoB" +
+           "ASYAAAAXAAAAQ29tbXVuaWNhdGlvblJlbGF0aW9uSWQAD/////8AAAAAAAEAKgEBFgAAAAcAAABBZGRy" +
+           "ZXNzAA//////AAAAAAABACoBARwAAAANAAAAT3JkaW5hbE51bWJlcgAG/////wAAAAAAAQAqAQEYAAAA" +
+           "CQAAAFNlcnZpY2VJZAAH/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRw" +
+           "dXRBcmd1bWVudHMBAT0CAC4ARD0CAACWAgAAAAEAKgEBHwAAABAAAABEZWxheUZvck5leHRDYWxsAAf/" +
+           "////AAAAAAABACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/////AAAAAAABACgBAQAAAAEB/////wAA" +
+           "AAAEYYIKBAAAAAEACAAAAFRyYW5zZmVyAQE+AgAvAQF3BD4CAAABAf////8CAAAAFWCpCgIAAAAAAA4A" +
+           "AABJbnB1dEFyZ3VtZW50cwEBPwIALgBEPwIAAJYHAAAAAQAqAQEmAAAAFwAAAENvbW11bmljYXRpb25S" +
+           "ZWxhdGlvbklkAA//////AAAAAAABACoBARgAAAAJAAAAT1BFUkFUSU9OAAz/////AAAAAAABACoBARcA" +
+           "AAAIAAAAQmxvY2tUYWcADP////8AAAAAAAEAKgEBFAAAAAUAAABJTkRFWAAH/////wAAAAAAAQAqAQEY" +
+           "AAAACQAAAFNVQl9JTkRFWAAH/////wAAAAAAAQAqAQEYAAAACQAAAFdyaXRlRGF0YQADAQAAAAAAAAAA" +
+           "AQAqAQEYAAAACQAAAFNlcnZpY2VJZAAH/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAA" +
+           "AA8AAABPdXRwdXRBcmd1bWVudHMBAUACAC4AREACAACWAwAAAAEAKgEBFwAAAAgAAABSZWFkRGF0YQAD" +
+           "AQAAAAAAAAAAAQAqAQEfAAAAEAAAAERlbGF5Rm9yTmV4dENhbGwAB/////8AAAAAAAEAKgEBGwAAAAwA" +
+           "AABTZXJ2aWNlRXJyb3IAG/////8AAAAAAAEAKAEBAAAAAQH/////AAAAADVgiQoCAAAAAgAMAAAAU2Vy" +
+           "aWFsTnVtYmVyAQEmAgMAAAAATQAAAElkZW50aWZpZXIgdGhhdCB1bmlxdWVseSBpZGVudGlmaWVzLCB3" +
+           "aXRoaW4gYSBtYW51ZmFjdHVyZXIsIGEgZGV2aWNlIGluc3RhbmNlAC4ARCYCAAAADP////8BAf////8A" +
+           "AAAANWCJCgIAAAACAA8AAABSZXZpc2lvbkNvdW50ZXIBAScCAwAAAABpAAAAQW4gaW5jcmVtZW50YWwg" +
+           "Y291bnRlciBpbmRpY2F0aW5nIHRoZSBudW1iZXIgb2YgdGltZXMgdGhlIHN0YXRpYyBkYXRhIHdpdGhp" +
+           "biB0aGUgRGV2aWNlIGhhcyBiZWVuIG1vZGlmaWVkAC4ARCcCAAAABv////8BAf////8AAAAANWCJCgIA" +
+           "AAACAAwAAABNYW51ZmFjdHVyZXIBASgCAwAAAAAYAAAATW9kZWwgbmFtZSBvZiB0aGUgZGV2aWNlAC4A" +
+           "RCgCAAAAFf////8BAf////8AAAAANWCJCgIAAAACAAUAAABNb2RlbAEBKQIDAAAAADAAAABOYW1lIG9m" +
+           "IHRoZSBjb21wYW55IHRoYXQgbWFudWZhY3R1cmVkIHRoZSBkZXZpY2UALgBEKQIAAAAV/////wEB////" +
+           "/wAAAAA1YIkKAgAAAAIADAAAAERldmljZU1hbnVhbAEBKgIDAAAAAFoAAABBZGRyZXNzIChwYXRobmFt" +
+           "ZSBpbiB0aGUgZmlsZSBzeXN0ZW0gb3IgYSBVUkwgfCBXZWIgYWRkcmVzcykgb2YgdXNlciBtYW51YWwg" +
+           "Zm9yIHRoZSBkZXZpY2UALgBEKgIAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIADgAAAERldmljZVJl" +
+           "dmlzaW9uAQErAgMAAAAAJAAAAE92ZXJhbGwgcmV2aXNpb24gbGV2ZWwgb2YgdGhlIGRldmljZQAuAEQr" +
+           "AgAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAQAAAAU29mdHdhcmVSZXZpc2lvbgEBLAIDAAAAADUA" +
+           "AABSZXZpc2lvbiBsZXZlbCBvZiB0aGUgc29mdHdhcmUvZmlybXdhcmUgb2YgdGhlIGRldmljZQAuAEQs" +
+           "AgAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAQAAAASGFyZHdhcmVSZXZpc2lvbgEBLQIDAAAAACwA" +
+           "AABSZXZpc2lvbiBsZXZlbCBvZiB0aGUgaGFyZHdhcmUgb2YgdGhlIGRldmljZQAuAEQtAgAAAAz/////" +
+           "AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -2315,31 +5979,41 @@ namespace Opc.Ua.Fdi7
            "////AAAAADVgiQoCAAAAAgAQAAAASGFyZHdhcmVSZXZpc2lvbgEBYgIDAAAAACwAAABSZXZpc2lvbiBs" +
            "ZXZlbCBvZiB0aGUgaGFyZHdhcmUgb2YgdGhlIGRldmljZQAuAERiAgAAAAz/////AQH/////AAAAAARg" +
            "gAoBAAAAAQAPAAAAU2VydmljZVByb3ZpZGVyAQGRAgAvAQF9BJECAAD/////CQAAACRggAoBAAAAAgAJ" +
-           "AAAATWV0aG9kU2V0AQGUAgMAAAAAFAAAAEZsYXQgbGlzdCBvZiBNZXRob2RzAC8AOpQCAAD/////AQAA" +
-           "AARhggoEAAAAAQAIAAAAVHJhbnNmZXIBAb4CAC8BAcMEvgIAAAEB/////wIAAAAVYKkKAgAAAAAADgAA" +
-           "AElucHV0QXJndW1lbnRzAQG/AgAuAES/AgAAlgUAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlvblJl" +
-           "bGF0aW9uSWQAD/////8AAAAAAAEAKgEBGAAAAAkAAABPUEVSQVRJT04ADP////8AAAAAAAEAKgEBEwAA" +
-           "AAQAAABTTE9UAAP/////AAAAAAABACoBARQAAAAFAAAASU5ERVgAA/////8AAAAAAAEAKgEBFgAAAAcA" +
-           "AABSRVFVRVNUAA//////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFy" +
-           "Z3VtZW50cwEBwAIALgBEwAIAAJYDAAAAAQAqAQEUAAAABQAAAFJFUExZAA//////AAAAAAABACoBAR0A" +
-           "AAAOAAAAUkVTUE9OU0VfQ09ERVMAD/////8AAAAAAAEAKgEBGwAAAAwAAABTZXJ2aWNlRXJyb3IAG///" +
-           "//8AAAAAAAEAKAEBAAAAAQH/////AAAAADVgiQoCAAAAAgAMAAAAU2VyaWFsTnVtYmVyAQGmAgMAAAAA" +
-           "TQAAAElkZW50aWZpZXIgdGhhdCB1bmlxdWVseSBpZGVudGlmaWVzLCB3aXRoaW4gYSBtYW51ZmFjdHVy" +
-           "ZXIsIGEgZGV2aWNlIGluc3RhbmNlAC4ARKYCAAAADP////8BAf////8AAAAANWCJCgIAAAACAA8AAABS" +
-           "ZXZpc2lvbkNvdW50ZXIBAacCAwAAAABpAAAAQW4gaW5jcmVtZW50YWwgY291bnRlciBpbmRpY2F0aW5n" +
-           "IHRoZSBudW1iZXIgb2YgdGltZXMgdGhlIHN0YXRpYyBkYXRhIHdpdGhpbiB0aGUgRGV2aWNlIGhhcyBi" +
-           "ZWVuIG1vZGlmaWVkAC4ARKcCAAAABv////8BAf////8AAAAANWCJCgIAAAACAAwAAABNYW51ZmFjdHVy" +
-           "ZXIBAagCAwAAAAAYAAAATW9kZWwgbmFtZSBvZiB0aGUgZGV2aWNlAC4ARKgCAAAAFf////8BAf////8A" +
-           "AAAANWCJCgIAAAACAAUAAABNb2RlbAEBqQIDAAAAADAAAABOYW1lIG9mIHRoZSBjb21wYW55IHRoYXQg" +
-           "bWFudWZhY3R1cmVkIHRoZSBkZXZpY2UALgBEqQIAAAAV/////wEB/////wAAAAA1YIkKAgAAAAIADAAA" +
-           "AERldmljZU1hbnVhbAEBqgIDAAAAAFoAAABBZGRyZXNzIChwYXRobmFtZSBpbiB0aGUgZmlsZSBzeXN0" +
-           "ZW0gb3IgYSBVUkwgfCBXZWIgYWRkcmVzcykgb2YgdXNlciBtYW51YWwgZm9yIHRoZSBkZXZpY2UALgBE" +
-           "qgIAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIADgAAAERldmljZVJldmlzaW9uAQGrAgMAAAAAJAAA" +
-           "AE92ZXJhbGwgcmV2aXNpb24gbGV2ZWwgb2YgdGhlIGRldmljZQAuAESrAgAAAAz/////AQH/////AAAA" +
-           "ADVgiQoCAAAAAgAQAAAAU29mdHdhcmVSZXZpc2lvbgEBrAIDAAAAADUAAABSZXZpc2lvbiBsZXZlbCBv" +
-           "ZiB0aGUgc29mdHdhcmUvZmlybXdhcmUgb2YgdGhlIGRldmljZQAuAESsAgAAAAz/////AQH/////AAAA" +
-           "ADVgiQoCAAAAAgAQAAAASGFyZHdhcmVSZXZpc2lvbgEBrQIDAAAAACwAAABSZXZpc2lvbiBsZXZlbCBv" +
-           "ZiB0aGUgaGFyZHdhcmUgb2YgdGhlIGRldmljZQAuAEStAgAAAAz/////AQH/////AAAAAA==";
+           "AAAATWV0aG9kU2V0AQGUAgMAAAAAFAAAAEZsYXQgbGlzdCBvZiBNZXRob2RzAC8AOpQCAAD/////AwAA" +
+           "AARhggoEAAAAAQAKAAAARGlzY29ubmVjdAEBuAIALwEBLAG4AgAAAQH/////AgAAABVgqQoCAAAAAAAO" +
+           "AAAASW5wdXRBcmd1bWVudHMBAbkCAC4ARLkCAACWAQAAAAEAKgEBJgAAABcAAABDb21tdW5pY2F0aW9u" +
+           "UmVsYXRpb25JZAAP/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRB" +
+           "cmd1bWVudHMBAboCAC4ARLoCAACWAQAAAAEAKgEBGwAAAAwAAABTZXJ2aWNlRXJyb3IAG/////8AAAAA" +
+           "AAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQAHAAAAQ29ubmVjdAEBuwIALwEBwAS7AgAAAQH/////" +
+           "AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAbwCAC4ARLwCAACWAwAAAAEAKgEBJgAAABcA" +
+           "AABDb21tdW5pY2F0aW9uUmVsYXRpb25JZAAP/////wAAAAAAAQAqAQEWAAAABwAAAEFkZHJlc3MAA///" +
+           "//8AAAAAAAEAKgEBHQAAAA4AAABNYW51ZmFjdHVyZXJJZAAF/////wAAAAAAAQAoAQEAAAABAf////8A" +
+           "AAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAb0CAC4ARL0CAACWAQAAAAEAKgEBGwAAAAwA" +
+           "AABTZXJ2aWNlRXJyb3IAG/////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQAIAAAAVHJh" +
+           "bnNmZXIBAb4CAC8BAcMEvgIAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQG/" +
+           "AgAuAES/AgAAlgUAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlvblJlbGF0aW9uSWQAD/////8AAAAA" +
+           "AAEAKgEBGAAAAAkAAABPUEVSQVRJT04ADP////8AAAAAAAEAKgEBEwAAAAQAAABTTE9UAAP/////AAAA" +
+           "AAABACoBARQAAAAFAAAASU5ERVgAA/////8AAAAAAAEAKgEBFgAAAAcAAABSRVFVRVNUAA//////AAAA" +
+           "AAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBwAIALgBEwAIA" +
+           "AJYDAAAAAQAqAQEUAAAABQAAAFJFUExZAA//////AAAAAAABACoBAR0AAAAOAAAAUkVTUE9OU0VfQ09E" +
+           "RVMAD/////8AAAAAAAEAKgEBGwAAAAwAAABTZXJ2aWNlRXJyb3IAG/////8AAAAAAAEAKAEBAAAAAQH/" +
+           "////AAAAADVgiQoCAAAAAgAMAAAAU2VyaWFsTnVtYmVyAQGmAgMAAAAATQAAAElkZW50aWZpZXIgdGhh" +
+           "dCB1bmlxdWVseSBpZGVudGlmaWVzLCB3aXRoaW4gYSBtYW51ZmFjdHVyZXIsIGEgZGV2aWNlIGluc3Rh" +
+           "bmNlAC4ARKYCAAAADP////8BAf////8AAAAANWCJCgIAAAACAA8AAABSZXZpc2lvbkNvdW50ZXIBAacC" +
+           "AwAAAABpAAAAQW4gaW5jcmVtZW50YWwgY291bnRlciBpbmRpY2F0aW5nIHRoZSBudW1iZXIgb2YgdGlt" +
+           "ZXMgdGhlIHN0YXRpYyBkYXRhIHdpdGhpbiB0aGUgRGV2aWNlIGhhcyBiZWVuIG1vZGlmaWVkAC4ARKcC" +
+           "AAAABv////8BAf////8AAAAANWCJCgIAAAACAAwAAABNYW51ZmFjdHVyZXIBAagCAwAAAAAYAAAATW9k" +
+           "ZWwgbmFtZSBvZiB0aGUgZGV2aWNlAC4ARKgCAAAAFf////8BAf////8AAAAANWCJCgIAAAACAAUAAABN" +
+           "b2RlbAEBqQIDAAAAADAAAABOYW1lIG9mIHRoZSBjb21wYW55IHRoYXQgbWFudWZhY3R1cmVkIHRoZSBk" +
+           "ZXZpY2UALgBEqQIAAAAV/////wEB/////wAAAAA1YIkKAgAAAAIADAAAAERldmljZU1hbnVhbAEBqgID" +
+           "AAAAAFoAAABBZGRyZXNzIChwYXRobmFtZSBpbiB0aGUgZmlsZSBzeXN0ZW0gb3IgYSBVUkwgfCBXZWIg" +
+           "YWRkcmVzcykgb2YgdXNlciBtYW51YWwgZm9yIHRoZSBkZXZpY2UALgBEqgIAAAAM/////wEB/////wAA" +
+           "AAA1YIkKAgAAAAIADgAAAERldmljZVJldmlzaW9uAQGrAgMAAAAAJAAAAE92ZXJhbGwgcmV2aXNpb24g" +
+           "bGV2ZWwgb2YgdGhlIGRldmljZQAuAESrAgAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAQAAAAU29m" +
+           "dHdhcmVSZXZpc2lvbgEBrAIDAAAAADUAAABSZXZpc2lvbiBsZXZlbCBvZiB0aGUgc29mdHdhcmUvZmly" +
+           "bXdhcmUgb2YgdGhlIGRldmljZQAuAESsAgAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAQAAAASGFy" +
+           "ZHdhcmVSZXZpc2lvbgEBrQIDAAAAACwAAABSZXZpc2lvbiBsZXZlbCBvZiB0aGUgaGFyZHdhcmUgb2Yg" +
+           "dGhlIGRldmljZQAuAEStAgAAAAz/////AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -2530,32 +6204,42 @@ namespace Opc.Ua.Fdi7
            "cmR3YXJlUmV2aXNpb24BAd8CAwAAAAAsAAAAUmV2aXNpb24gbGV2ZWwgb2YgdGhlIGhhcmR3YXJlIG9m" +
            "IHRoZSBkZXZpY2UALgBE3wIAAAAM/////wEB/////wAAAAAEYIAKAQAAAAEADwAAAFNlcnZpY2VQcm92" +
            "aWRlcgEBDgMALwEBxgQOAwAA/////wkAAAAkYIAKAQAAAAIACQAAAE1ldGhvZFNldAEBEQMDAAAAABQA" +
-           "AABGbGF0IGxpc3Qgb2YgTWV0aG9kcwAvADoRAwAA/////wEAAAAEYYIKBAAAAAEACAAAAFRyYW5zZmVy" +
-           "AQE7AwAvAQEMBTsDAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBPAMALgBE" +
-           "PAMAAJYHAAAAAQAqAQEmAAAAFwAAAENvbW11bmljYXRpb25SZWxhdGlvbklkAA//////AAAAAAABACoB" +
-           "ARgAAAAJAAAAT1BFUkFUSU9OAAz/////AAAAAAABACoBARMAAAAEAAAAU0xPVAAF/////wAAAAAAAQAq" +
-           "AQEWAAAABwAAAFNVQlNMT1QABf////8AAAAAAAEAKgEBFAAAAAUAAABJTkRFWAAF/////wAAAAAAAQAq" +
-           "AQESAAAAAwAAAEFQSQAH/////wAAAAAAAQAqAQEWAAAABwAAAFJFUVVFU1QAD/////8AAAAAAAEAKAEB" +
-           "AAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQE9AwAuAEQ9AwAAlgMAAAAB" +
-           "ACoBARQAAAAFAAAAUkVQTFkAD/////8AAAAAAAEAKgEBHQAAAA4AAABSRVNQT05TRV9DT0RFUwAP////" +
-           "/wAAAAAAAQAqAQEbAAAADAAAAFNlcnZpY2VFcnJvcgAb/////wAAAAAAAQAoAQEAAAABAf////8AAAAA" +
-           "NWCJCgIAAAACAAwAAABTZXJpYWxOdW1iZXIBASMDAwAAAABNAAAASWRlbnRpZmllciB0aGF0IHVuaXF1" +
-           "ZWx5IGlkZW50aWZpZXMsIHdpdGhpbiBhIG1hbnVmYWN0dXJlciwgYSBkZXZpY2UgaW5zdGFuY2UALgBE" +
-           "IwMAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIADwAAAFJldmlzaW9uQ291bnRlcgEBJAMDAAAAAGkA" +
-           "AABBbiBpbmNyZW1lbnRhbCBjb3VudGVyIGluZGljYXRpbmcgdGhlIG51bWJlciBvZiB0aW1lcyB0aGUg" +
-           "c3RhdGljIGRhdGEgd2l0aGluIHRoZSBEZXZpY2UgaGFzIGJlZW4gbW9kaWZpZWQALgBEJAMAAAAG////" +
-           "/wEB/////wAAAAA1YIkKAgAAAAIADAAAAE1hbnVmYWN0dXJlcgEBJQMDAAAAABgAAABNb2RlbCBuYW1l" +
-           "IG9mIHRoZSBkZXZpY2UALgBEJQMAAAAV/////wEB/////wAAAAA1YIkKAgAAAAIABQAAAE1vZGVsAQEm" +
-           "AwMAAAAAMAAAAE5hbWUgb2YgdGhlIGNvbXBhbnkgdGhhdCBtYW51ZmFjdHVyZWQgdGhlIGRldmljZQAu" +
-           "AEQmAwAAABX/////AQH/////AAAAADVgiQoCAAAAAgAMAAAARGV2aWNlTWFudWFsAQEnAwMAAAAAWgAA" +
-           "AEFkZHJlc3MgKHBhdGhuYW1lIGluIHRoZSBmaWxlIHN5c3RlbSBvciBhIFVSTCB8IFdlYiBhZGRyZXNz" +
-           "KSBvZiB1c2VyIG1hbnVhbCBmb3IgdGhlIGRldmljZQAuAEQnAwAAAAz/////AQH/////AAAAADVgiQoC" +
-           "AAAAAgAOAAAARGV2aWNlUmV2aXNpb24BASgDAwAAAAAkAAAAT3ZlcmFsbCByZXZpc2lvbiBsZXZlbCBv" +
-           "ZiB0aGUgZGV2aWNlAC4ARCgDAAAADP////8BAf////8AAAAANWCJCgIAAAACABAAAABTb2Z0d2FyZVJl" +
-           "dmlzaW9uAQEpAwMAAAAANQAAAFJldmlzaW9uIGxldmVsIG9mIHRoZSBzb2Z0d2FyZS9maXJtd2FyZSBv" +
-           "ZiB0aGUgZGV2aWNlAC4ARCkDAAAADP////8BAf////8AAAAANWCJCgIAAAACABAAAABIYXJkd2FyZVJl" +
-           "dmlzaW9uAQEqAwMAAAAALAAAAFJldmlzaW9uIGxldmVsIG9mIHRoZSBoYXJkd2FyZSBvZiB0aGUgZGV2" +
-           "aWNlAC4ARCoDAAAADP////8BAf////8AAAAA";
+           "AABGbGF0IGxpc3Qgb2YgTWV0aG9kcwAvADoRAwAA/////wMAAAAEYYIKBAAAAAEACgAAAERpc2Nvbm5l" +
+           "Y3QBATUDAC8BASwBNQMAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQE2AwAu" +
+           "AEQ2AwAAlgEAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlvblJlbGF0aW9uSWQAD/////8AAAAAAAEA" +
+           "KAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQE3AwAuAEQ3AwAAlgEA" +
+           "AAABACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIK" +
+           "BAAAAAEABwAAAENvbm5lY3QBATgDAC8BAQkFOAMAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0" +
+           "QXJndW1lbnRzAQE5AwAuAEQ5AwAAlgQAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlvblJlbGF0aW9u" +
+           "SWQAD/////8AAAAAAAEAKgEBFgAAAAcAAABETlNOQU1FAAz/////AAAAAAABACoBARcAAAAIAAAARGV2" +
+           "aWNlSUQABf////8AAAAAAAEAKgEBFwAAAAgAAABWZW5kb3JJRAAF/////wAAAAAAAQAoAQEAAAABAf//" +
+           "//8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAToDAC4ARDoDAACWAQAAAAEAKgEBGwAA" +
+           "AAwAAABTZXJ2aWNlRXJyb3IAG/////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQAIAAAA" +
+           "VHJhbnNmZXIBATsDAC8BAQwFOwMAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRz" +
+           "AQE8AwAuAEQ8AwAAlgcAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlvblJlbGF0aW9uSWQAD/////8A" +
+           "AAAAAAEAKgEBGAAAAAkAAABPUEVSQVRJT04ADP////8AAAAAAAEAKgEBEwAAAAQAAABTTE9UAAX/////" +
+           "AAAAAAABACoBARYAAAAHAAAAU1VCU0xPVAAF/////wAAAAAAAQAqAQEUAAAABQAAAElOREVYAAX/////" +
+           "AAAAAAABACoBARIAAAADAAAAQVBJAAf/////AAAAAAABACoBARYAAAAHAAAAUkVRVUVTVAAP/////wAA" +
+           "AAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAT0DAC4ARD0D" +
+           "AACWAwAAAAEAKgEBFAAAAAUAAABSRVBMWQAP/////wAAAAAAAQAqAQEdAAAADgAAAFJFU1BPTlNFX0NP" +
+           "REVTAA//////AAAAAAABACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/////AAAAAAABACgBAQAAAAEB" +
+           "/////wAAAAA1YIkKAgAAAAIADAAAAFNlcmlhbE51bWJlcgEBIwMDAAAAAE0AAABJZGVudGlmaWVyIHRo" +
+           "YXQgdW5pcXVlbHkgaWRlbnRpZmllcywgd2l0aGluIGEgbWFudWZhY3R1cmVyLCBhIGRldmljZSBpbnN0" +
+           "YW5jZQAuAEQjAwAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAPAAAAUmV2aXNpb25Db3VudGVyAQEk" +
+           "AwMAAAAAaQAAAEFuIGluY3JlbWVudGFsIGNvdW50ZXIgaW5kaWNhdGluZyB0aGUgbnVtYmVyIG9mIHRp" +
+           "bWVzIHRoZSBzdGF0aWMgZGF0YSB3aXRoaW4gdGhlIERldmljZSBoYXMgYmVlbiBtb2RpZmllZAAuAEQk" +
+           "AwAAAAb/////AQH/////AAAAADVgiQoCAAAAAgAMAAAATWFudWZhY3R1cmVyAQElAwMAAAAAGAAAAE1v" +
+           "ZGVsIG5hbWUgb2YgdGhlIGRldmljZQAuAEQlAwAAABX/////AQH/////AAAAADVgiQoCAAAAAgAFAAAA" +
+           "TW9kZWwBASYDAwAAAAAwAAAATmFtZSBvZiB0aGUgY29tcGFueSB0aGF0IG1hbnVmYWN0dXJlZCB0aGUg" +
+           "ZGV2aWNlAC4ARCYDAAAAFf////8BAf////8AAAAANWCJCgIAAAACAAwAAABEZXZpY2VNYW51YWwBAScD" +
+           "AwAAAABaAAAAQWRkcmVzcyAocGF0aG5hbWUgaW4gdGhlIGZpbGUgc3lzdGVtIG9yIGEgVVJMIHwgV2Vi" +
+           "IGFkZHJlc3MpIG9mIHVzZXIgbWFudWFsIGZvciB0aGUgZGV2aWNlAC4ARCcDAAAADP////8BAf////8A" +
+           "AAAANWCJCgIAAAACAA4AAABEZXZpY2VSZXZpc2lvbgEBKAMDAAAAACQAAABPdmVyYWxsIHJldmlzaW9u" +
+           "IGxldmVsIG9mIHRoZSBkZXZpY2UALgBEKAMAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAAAFNv" +
+           "ZnR3YXJlUmV2aXNpb24BASkDAwAAAAA1AAAAUmV2aXNpb24gbGV2ZWwgb2YgdGhlIHNvZnR3YXJlL2Zp" +
+           "cm13YXJlIG9mIHRoZSBkZXZpY2UALgBEKQMAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAAAEhh" +
+           "cmR3YXJlUmV2aXNpb24BASoDAwAAAAAsAAAAUmV2aXNpb24gbGV2ZWwgb2YgdGhlIGhhcmR3YXJlIG9m" +
+           "IHRoZSBkZXZpY2UALgBEKgMAAAAM/////wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -2743,30 +6427,39 @@ namespace Opc.Ua.Fdi7
            "AAAAADVgiQoCAAAAAgAQAAAASGFyZHdhcmVSZXZpc2lvbgEBXAMDAAAAACwAAABSZXZpc2lvbiBsZXZl" +
            "bCBvZiB0aGUgaGFyZHdhcmUgb2YgdGhlIGRldmljZQAuAERcAwAAAAz/////AQH/////AAAAAARggAoB" +
            "AAAAAQAPAAAAU2VydmljZVByb3ZpZGVyAQGLAwAvAQEPBYsDAAD/////CQAAACRggAoBAAAAAgAJAAAA" +
-           "TWV0aG9kU2V0AQGOAwMAAAAAFAAAAEZsYXQgbGlzdCBvZiBNZXRob2RzAC8AOo4DAAD/////AQAAAARh" +
-           "ggoEAAAAAQAIAAAAVHJhbnNmZXIBAbgDAC8BAVUFuAMAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElu" +
-           "cHV0QXJndW1lbnRzAQG5AwAuAES5AwAAlgMAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlvblJlbGF0" +
-           "aW9uSWQAD/////8AAAAAAAEAKgEBFgAAAAcAAABDb21tYW5kAAX/////AAAAAAABACoBARYAAAAHAAAA" +
-           "UmVxdWVzdAAP/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1" +
-           "bWVudHMBAboDAC4ARLoDAACWAgAAAAEAKgEBFAAAAAUAAABSZXBseQAP/////wAAAAAAAQAqAQEbAAAA" +
-           "DAAAAFNlcnZpY2VFcnJvcgAb/////wAAAAAAAQAoAQEAAAABAf////8AAAAANWCJCgIAAAACAAwAAABT" +
-           "ZXJpYWxOdW1iZXIBAaADAwAAAABNAAAASWRlbnRpZmllciB0aGF0IHVuaXF1ZWx5IGlkZW50aWZpZXMs" +
-           "IHdpdGhpbiBhIG1hbnVmYWN0dXJlciwgYSBkZXZpY2UgaW5zdGFuY2UALgBEoAMAAAAM/////wEB////" +
-           "/wAAAAA1YIkKAgAAAAIADwAAAFJldmlzaW9uQ291bnRlcgEBoQMDAAAAAGkAAABBbiBpbmNyZW1lbnRh" +
-           "bCBjb3VudGVyIGluZGljYXRpbmcgdGhlIG51bWJlciBvZiB0aW1lcyB0aGUgc3RhdGljIGRhdGEgd2l0" +
-           "aGluIHRoZSBEZXZpY2UgaGFzIGJlZW4gbW9kaWZpZWQALgBEoQMAAAAG/////wEB/////wAAAAA1YIkK" +
-           "AgAAAAIADAAAAE1hbnVmYWN0dXJlcgEBogMDAAAAABgAAABNb2RlbCBuYW1lIG9mIHRoZSBkZXZpY2UA" +
-           "LgBEogMAAAAV/////wEB/////wAAAAA1YIkKAgAAAAIABQAAAE1vZGVsAQGjAwMAAAAAMAAAAE5hbWUg" +
-           "b2YgdGhlIGNvbXBhbnkgdGhhdCBtYW51ZmFjdHVyZWQgdGhlIGRldmljZQAuAESjAwAAABX/////AQH/" +
-           "////AAAAADVgiQoCAAAAAgAMAAAARGV2aWNlTWFudWFsAQGkAwMAAAAAWgAAAEFkZHJlc3MgKHBhdGhu" +
-           "YW1lIGluIHRoZSBmaWxlIHN5c3RlbSBvciBhIFVSTCB8IFdlYiBhZGRyZXNzKSBvZiB1c2VyIG1hbnVh" +
-           "bCBmb3IgdGhlIGRldmljZQAuAESkAwAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAOAAAARGV2aWNl" +
-           "UmV2aXNpb24BAaUDAwAAAAAkAAAAT3ZlcmFsbCByZXZpc2lvbiBsZXZlbCBvZiB0aGUgZGV2aWNlAC4A" +
-           "RKUDAAAADP////8BAf////8AAAAANWCJCgIAAAACABAAAABTb2Z0d2FyZVJldmlzaW9uAQGmAwMAAAAA" +
-           "NQAAAFJldmlzaW9uIGxldmVsIG9mIHRoZSBzb2Z0d2FyZS9maXJtd2FyZSBvZiB0aGUgZGV2aWNlAC4A" +
-           "RKYDAAAADP////8BAf////8AAAAANWCJCgIAAAACABAAAABIYXJkd2FyZVJldmlzaW9uAQGnAwMAAAAA" +
-           "LAAAAFJldmlzaW9uIGxldmVsIG9mIHRoZSBoYXJkd2FyZSBvZiB0aGUgZGV2aWNlAC4ARKcDAAAADP//" +
-           "//8BAf////8AAAAA";
+           "TWV0aG9kU2V0AQGOAwMAAAAAFAAAAEZsYXQgbGlzdCBvZiBNZXRob2RzAC8AOo4DAAD/////AwAAAARh" +
+           "ggoEAAAAAQAKAAAARGlzY29ubmVjdAEBsgMALwEBLAGyAwAAAQH/////AgAAABVgqQoCAAAAAAAOAAAA" +
+           "SW5wdXRBcmd1bWVudHMBAbMDAC4ARLMDAACWAQAAAAEAKgEBJgAAABcAAABDb21tdW5pY2F0aW9uUmVs" +
+           "YXRpb25JZAAP/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1" +
+           "bWVudHMBAbQDAC4ARLQDAACWAQAAAAEAKgEBGwAAAAwAAABTZXJ2aWNlRXJyb3IAG/////8AAAAAAAEA" +
+           "KAEBAAAAAQH/////AAAAAARhggoEAAAAAQAHAAAAQ29ubmVjdAEBtQMALwEBUgW1AwAAAQH/////AgAA" +
+           "ABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAbYDAC4ARLYDAACWAgAAAAEAKgEBJgAAABcAAABD" +
+           "b21tdW5pY2F0aW9uUmVsYXRpb25JZAAP/////wAAAAAAAQAqAQEaAAAACwAAAExvbmdBZGRyZXNzAA//" +
+           "////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBtwMA" +
+           "LgBEtwMAAJYBAAAAAQAqAQEbAAAADAAAAFNlcnZpY2VFcnJvcgAb/////wAAAAAAAQAoAQEAAAABAf//" +
+           "//8AAAAABGGCCgQAAAABAAgAAABUcmFuc2ZlcgEBuAMALwEBVQW4AwAAAQH/////AgAAABVgqQoCAAAA" +
+           "AAAOAAAASW5wdXRBcmd1bWVudHMBAbkDAC4ARLkDAACWAwAAAAEAKgEBJgAAABcAAABDb21tdW5pY2F0" +
+           "aW9uUmVsYXRpb25JZAAP/////wAAAAAAAQAqAQEWAAAABwAAAENvbW1hbmQABf////8AAAAAAAEAKgEB" +
+           "FgAAAAcAAABSZXF1ZXN0AA//////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91" +
+           "dHB1dEFyZ3VtZW50cwEBugMALgBEugMAAJYCAAAAAQAqAQEUAAAABQAAAFJlcGx5AA//////AAAAAAAB" +
+           "ACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/////AAAAAAABACgBAQAAAAEB/////wAAAAA1YIkKAgAA" +
+           "AAIADAAAAFNlcmlhbE51bWJlcgEBoAMDAAAAAE0AAABJZGVudGlmaWVyIHRoYXQgdW5pcXVlbHkgaWRl" +
+           "bnRpZmllcywgd2l0aGluIGEgbWFudWZhY3R1cmVyLCBhIGRldmljZSBpbnN0YW5jZQAuAESgAwAAAAz/" +
+           "////AQH/////AAAAADVgiQoCAAAAAgAPAAAAUmV2aXNpb25Db3VudGVyAQGhAwMAAAAAaQAAAEFuIGlu" +
+           "Y3JlbWVudGFsIGNvdW50ZXIgaW5kaWNhdGluZyB0aGUgbnVtYmVyIG9mIHRpbWVzIHRoZSBzdGF0aWMg" +
+           "ZGF0YSB3aXRoaW4gdGhlIERldmljZSBoYXMgYmVlbiBtb2RpZmllZAAuAEShAwAAAAb/////AQH/////" +
+           "AAAAADVgiQoCAAAAAgAMAAAATWFudWZhY3R1cmVyAQGiAwMAAAAAGAAAAE1vZGVsIG5hbWUgb2YgdGhl" +
+           "IGRldmljZQAuAESiAwAAABX/////AQH/////AAAAADVgiQoCAAAAAgAFAAAATW9kZWwBAaMDAwAAAAAw" +
+           "AAAATmFtZSBvZiB0aGUgY29tcGFueSB0aGF0IG1hbnVmYWN0dXJlZCB0aGUgZGV2aWNlAC4ARKMDAAAA" +
+           "Ff////8BAf////8AAAAANWCJCgIAAAACAAwAAABEZXZpY2VNYW51YWwBAaQDAwAAAABaAAAAQWRkcmVz" +
+           "cyAocGF0aG5hbWUgaW4gdGhlIGZpbGUgc3lzdGVtIG9yIGEgVVJMIHwgV2ViIGFkZHJlc3MpIG9mIHVz" +
+           "ZXIgbWFudWFsIGZvciB0aGUgZGV2aWNlAC4ARKQDAAAADP////8BAf////8AAAAANWCJCgIAAAACAA4A" +
+           "AABEZXZpY2VSZXZpc2lvbgEBpQMDAAAAACQAAABPdmVyYWxsIHJldmlzaW9uIGxldmVsIG9mIHRoZSBk" +
+           "ZXZpY2UALgBEpQMAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAAAFNvZnR3YXJlUmV2aXNpb24B" +
+           "AaYDAwAAAAA1AAAAUmV2aXNpb24gbGV2ZWwgb2YgdGhlIHNvZnR3YXJlL2Zpcm13YXJlIG9mIHRoZSBk" +
+           "ZXZpY2UALgBEpgMAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAAAEhhcmR3YXJlUmV2aXNpb24B" +
+           "AacDAwAAAAAsAAAAUmV2aXNpb24gbGV2ZWwgb2YgdGhlIGhhcmR3YXJlIG9mIHRoZSBkZXZpY2UALgBE" +
+           "pwMAAAAM/////wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -2863,6 +6556,480 @@ namespace Opc.Ua.Fdi7
 
         #region Private Fields
         private ServerCommunicationHARTServiceState m_serviceProvider;
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region ServerCommunicationISA100_WirelessDeviceState Class
+    #if (!OPCUA_EXCLUDE_ServerCommunicationISA100_WirelessDeviceState)
+    /// <summary>
+    /// Stores an instance of the ServerCommunicationISA100_WirelessDeviceType ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class ServerCommunicationISA100_WirelessDeviceState : ServerCommunicationDeviceState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public ServerCommunicationISA100_WirelessDeviceState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.Fdi7.ObjectTypes.ServerCommunicationISA100_WirelessDeviceType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQA0AAAAU2VydmVyQ29tbXVuaWNhdGlvbklT" +
+           "QTEwMF9XaXJlbGVzc0RldmljZVR5cGVJbnN0YW5jZQEB/AYBAfwG/////wkAAAA1YIkKAgAAAAIADAAA" +
+           "AFNlcmlhbE51bWJlcgEBEwcDAAAAAE0AAABJZGVudGlmaWVyIHRoYXQgdW5pcXVlbHkgaWRlbnRpZmll" +
+           "cywgd2l0aGluIGEgbWFudWZhY3R1cmVyLCBhIGRldmljZSBpbnN0YW5jZQAuAEQTBwAAAAz/////AQH/" +
+           "////AAAAADVgiQoCAAAAAgAPAAAAUmV2aXNpb25Db3VudGVyAQEUBwMAAAAAaQAAAEFuIGluY3JlbWVu" +
+           "dGFsIGNvdW50ZXIgaW5kaWNhdGluZyB0aGUgbnVtYmVyIG9mIHRpbWVzIHRoZSBzdGF0aWMgZGF0YSB3" +
+           "aXRoaW4gdGhlIERldmljZSBoYXMgYmVlbiBtb2RpZmllZAAuAEQUBwAAAAb/////AQH/////AAAAADVg" +
+           "iQoCAAAAAgAMAAAATWFudWZhY3R1cmVyAQEVBwMAAAAAGAAAAE1vZGVsIG5hbWUgb2YgdGhlIGRldmlj" +
+           "ZQAuAEQVBwAAABX/////AQH/////AAAAADVgiQoCAAAAAgAFAAAATW9kZWwBARYHAwAAAAAwAAAATmFt" +
+           "ZSBvZiB0aGUgY29tcGFueSB0aGF0IG1hbnVmYWN0dXJlZCB0aGUgZGV2aWNlAC4ARBYHAAAAFf////8B" +
+           "Af////8AAAAANWCJCgIAAAACAAwAAABEZXZpY2VNYW51YWwBARcHAwAAAABaAAAAQWRkcmVzcyAocGF0" +
+           "aG5hbWUgaW4gdGhlIGZpbGUgc3lzdGVtIG9yIGEgVVJMIHwgV2ViIGFkZHJlc3MpIG9mIHVzZXIgbWFu" +
+           "dWFsIGZvciB0aGUgZGV2aWNlAC4ARBcHAAAADP////8BAf////8AAAAANWCJCgIAAAACAA4AAABEZXZp" +
+           "Y2VSZXZpc2lvbgEBGAcDAAAAACQAAABPdmVyYWxsIHJldmlzaW9uIGxldmVsIG9mIHRoZSBkZXZpY2UA" +
+           "LgBEGAcAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAAAFNvZnR3YXJlUmV2aXNpb24BARkHAwAA" +
+           "AAA1AAAAUmV2aXNpb24gbGV2ZWwgb2YgdGhlIHNvZnR3YXJlL2Zpcm13YXJlIG9mIHRoZSBkZXZpY2UA" +
+           "LgBEGQcAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAAAEhhcmR3YXJlUmV2aXNpb24BARoHAwAA" +
+           "AAAsAAAAUmV2aXNpb24gbGV2ZWwgb2YgdGhlIGhhcmR3YXJlIG9mIHRoZSBkZXZpY2UALgBEGgcAAAAM" +
+           "/////wEB/////wAAAAAEYIAKAQAAAAEADwAAAFNlcnZpY2VQcm92aWRlcgEBRgcALwEBCQhGBwAA////" +
+           "/wkAAAAkYIAKAQAAAAIACQAAAE1ldGhvZFNldAEBSQcDAAAAABQAAABGbGF0IGxpc3Qgb2YgTWV0aG9k" +
+           "cwAvADpJBwAA/////wMAAAAEYYIKBAAAAAEACgAAAERpc2Nvbm5lY3QBAW0HAC8BASwBbQcAAAEB////" +
+           "/wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFuBwAuAERuBwAAlgEAAAABACoBASYAAAAX" +
+           "AAAAQ29tbXVuaWNhdGlvblJlbGF0aW9uSWQAD/////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoC" +
+           "AAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQFvBwAuAERvBwAAlgEAAAABACoBARsAAAAMAAAAU2Vydmlj" +
+           "ZUVycm9yABv/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEABwAAAENvbm5lY3QBAXAH" +
+           "AC8BAUwIcAcAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFxBwAuAERxBwAA" +
+           "lgMAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlvblJlbGF0aW9uSWQAD/////8AAAAAAAEAKgEBGAAA" +
+           "AAkAAABJUEFkZHJlc3MAD/////8AAAAAAAEAKgEBGAAAAAkAAABTZXJ2aWNlSWQAB/////8AAAAAAAEA" +
+           "KAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQFyBwAuAERyBwAAlgIA" +
+           "AAABACoBAR8AAAAQAAAARGVsYXlGb3JOZXh0Q2FsbAAH/////wAAAAAAAQAqAQEbAAAADAAAAFNlcnZp" +
+           "Y2VFcnJvcgAb/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAABAAgAAABUcmFuc2ZlcgEB" +
+           "cwcALwEBTwhzBwAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAXQHAC4ARHQH" +
+           "AACWCAAAAAEAKgEBJgAAABcAAABDb21tdW5pY2F0aW9uUmVsYXRpb25JZAAP/////wAAAAAAAQAqAQEY" +
+           "AAAACQAAAE9QRVJBVElPTgAM/////wAAAAAAAQAqAQEUAAAABQAAAEFwcElEAAX/////AAAAAAABACoB" +
+           "ARcAAAAIAAAAT2JqZWN0SUQABf////8AAAAAAAEAKgEBGwAAAAwAAABBdHRyT3JNZXRoSUQABf////8A" +
+           "AAAAAAEAKgEBGAAAAAkAAABTVUJfSU5ERVgAB/////8AAAAAAAEAKgEBGAAAAAkAAABXcml0ZURhdGEA" +
+           "AwEAAAAAAAAAAAEAKgEBGAAAAAkAAABSZXF1ZXN0SWQAB/////8AAAAAAAEAKAEBAAAAAQH/////AAAA" +
+           "ABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQF1BwAuAER1BwAAlgIAAAABACoBARcAAAAIAAAA" +
+           "UmVhZERhdGEAAwEAAAAAAAAAAAEAKgEBGwAAAAwAAABTZXJ2aWNlRXJyb3IAG/////8AAAAAAAEAKAEB" +
+           "AAAAAQH/////AAAAADVgiQoCAAAAAgAMAAAAU2VyaWFsTnVtYmVyAQFbBwMAAAAATQAAAElkZW50aWZp" +
+           "ZXIgdGhhdCB1bmlxdWVseSBpZGVudGlmaWVzLCB3aXRoaW4gYSBtYW51ZmFjdHVyZXIsIGEgZGV2aWNl" +
+           "IGluc3RhbmNlAC4ARFsHAAAADP////8BAf////8AAAAANWCJCgIAAAACAA8AAABSZXZpc2lvbkNvdW50" +
+           "ZXIBAVwHAwAAAABpAAAAQW4gaW5jcmVtZW50YWwgY291bnRlciBpbmRpY2F0aW5nIHRoZSBudW1iZXIg" +
+           "b2YgdGltZXMgdGhlIHN0YXRpYyBkYXRhIHdpdGhpbiB0aGUgRGV2aWNlIGhhcyBiZWVuIG1vZGlmaWVk" +
+           "AC4ARFwHAAAABv////8BAf////8AAAAANWCJCgIAAAACAAwAAABNYW51ZmFjdHVyZXIBAV0HAwAAAAAY" +
+           "AAAATW9kZWwgbmFtZSBvZiB0aGUgZGV2aWNlAC4ARF0HAAAAFf////8BAf////8AAAAANWCJCgIAAAAC" +
+           "AAUAAABNb2RlbAEBXgcDAAAAADAAAABOYW1lIG9mIHRoZSBjb21wYW55IHRoYXQgbWFudWZhY3R1cmVk" +
+           "IHRoZSBkZXZpY2UALgBEXgcAAAAV/////wEB/////wAAAAA1YIkKAgAAAAIADAAAAERldmljZU1hbnVh" +
+           "bAEBXwcDAAAAAFoAAABBZGRyZXNzIChwYXRobmFtZSBpbiB0aGUgZmlsZSBzeXN0ZW0gb3IgYSBVUkwg" +
+           "fCBXZWIgYWRkcmVzcykgb2YgdXNlciBtYW51YWwgZm9yIHRoZSBkZXZpY2UALgBEXwcAAAAM/////wEB" +
+           "/////wAAAAA1YIkKAgAAAAIADgAAAERldmljZVJldmlzaW9uAQFgBwMAAAAAJAAAAE92ZXJhbGwgcmV2" +
+           "aXNpb24gbGV2ZWwgb2YgdGhlIGRldmljZQAuAERgBwAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAQ" +
+           "AAAAU29mdHdhcmVSZXZpc2lvbgEBYQcDAAAAADUAAABSZXZpc2lvbiBsZXZlbCBvZiB0aGUgc29mdHdh" +
+           "cmUvZmlybXdhcmUgb2YgdGhlIGRldmljZQAuAERhBwAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAQ" +
+           "AAAASGFyZHdhcmVSZXZpc2lvbgEBYgcDAAAAACwAAABSZXZpc2lvbiBsZXZlbCBvZiB0aGUgaGFyZHdh" +
+           "cmUgb2YgdGhlIGRldmljZQAuAERiBwAAAAz/////AQH/////AAAAAA==";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the ServiceProvider Object.
+        /// </summary>
+        public ServerCommunicationISA100_WirelessServiceState ServiceProvider
+        {
+            get
+            {
+                return m_serviceProvider;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_serviceProvider, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_serviceProvider = value;
+            }
+        }
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Populates a list with the children that belong to the node.
+        /// </summary>
+        /// <param name="context">The context for the system being accessed.</param>
+        /// <param name="children">The list of children to populate.</param>
+        public override void GetChildren(
+            ISystemContext context,
+            IList<BaseInstanceState> children)
+        {
+            if (m_serviceProvider != null)
+            {
+                children.Add(m_serviceProvider);
+            }
+
+            base.GetChildren(context, children);
+        }
+
+        /// <summary>
+        /// Finds the child with the specified browse name.
+        /// </summary>
+        protected override BaseInstanceState FindChild(
+            ISystemContext context,
+            QualifiedName browseName,
+            bool createOrReplace,
+            BaseInstanceState replacement)
+        {
+            if (QualifiedName.IsNull(browseName))
+            {
+                return null;
+            }
+
+            BaseInstanceState instance = null;
+
+            switch (browseName.Name)
+            {
+                case Opc.Ua.Fdi7.BrowseNames.ServiceProvider:
+                {
+                    if (createOrReplace)
+                    {
+                        if (ServiceProvider == null)
+                        {
+                            if (replacement == null)
+                            {
+                                ServiceProvider = new ServerCommunicationISA100_WirelessServiceState(this);
+                            }
+                            else
+                            {
+                                ServiceProvider = (ServerCommunicationISA100_WirelessServiceState)replacement;
+                            }
+                        }
+                    }
+
+                    instance = ServiceProvider;
+                    break;
+                }
+            }
+
+            if (instance != null)
+            {
+                return instance;
+            }
+
+            return base.FindChild(context, browseName, createOrReplace, replacement);
+        }
+        #endregion
+
+        #region Private Fields
+        private ServerCommunicationISA100_WirelessServiceState m_serviceProvider;
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region ServerCommunicationGENERICDeviceState Class
+    #if (!OPCUA_EXCLUDE_ServerCommunicationGENERICDeviceState)
+    /// <summary>
+    /// Stores an instance of the ServerCommunicationGENERICDeviceType ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class ServerCommunicationGENERICDeviceState : ServerCommunicationDeviceState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public ServerCommunicationGENERICDeviceState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.Fdi7.ObjectTypes.ServerCommunicationGENERICDeviceType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+
+            if (MethodSet != null)
+            {
+                MethodSet.Initialize(context, MethodSet_InitializationString);
+            }
+        }
+
+        #region Initialization String
+        private const string MethodSet_InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////yRggAoBAAAAAgAJAAAATWV0aG9kU2V0AQF8BwMAAAAAFAAA" +
+           "AEZsYXQgbGlzdCBvZiBNZXRob2RzAC8AOnwHAAD/////AQAAAARhggoEAAAAAQAKAAAAU2V0QWRkcmVz" +
+           "cwEBxAcALwEBxAfEBwAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAcUHAC4A" +
+           "RMUHAACWAgAAAAEAKgEBGQAAAAoAAABPbGRBZGRyZXNzAA//////AAAAAAABACoBARkAAAAKAAAATmV3" +
+           "QWRkcmVzcwAP/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1" +
+           "bWVudHMBAcYHAC4ARMYHAACWAQAAAAEAKgEBGwAAAAwAAABTZXJ2aWNlRXJyb3IAG/////8AAAAAAAEA" +
+           "KAEBAAAAAQH/////AAAAAA==";
+
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAsAAAAU2VydmVyQ29tbXVuaWNhdGlvbkdF" +
+           "TkVSSUNEZXZpY2VUeXBlSW5zdGFuY2UBAXkHAQF5B/////8LAAAAJGCACgEAAAACAAkAAABNZXRob2RT" +
+           "ZXQBAXwHAwAAAAAUAAAARmxhdCBsaXN0IG9mIE1ldGhvZHMALwA6fAcAAP////8BAAAABGGCCgQAAAAB" +
+           "AAoAAABTZXRBZGRyZXNzAQHEBwAvAQHEB8QHAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFy" +
+           "Z3VtZW50cwEBxQcALgBExQcAAJYCAAAAAQAqAQEZAAAACgAAAE9sZEFkZHJlc3MAD/////8AAAAAAAEA" +
+           "KgEBGQAAAAoAAABOZXdBZGRyZXNzAA//////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAA" +
+           "DwAAAE91dHB1dEFyZ3VtZW50cwEBxgcALgBExgcAAJYBAAAAAQAqAQEbAAAADAAAAFNlcnZpY2VFcnJv" +
+           "cgAb/////wAAAAAAAQAoAQEAAAABAf////8AAAAANWCJCgIAAAACAAwAAABTZXJpYWxOdW1iZXIBAZAH" +
+           "AwAAAABNAAAASWRlbnRpZmllciB0aGF0IHVuaXF1ZWx5IGlkZW50aWZpZXMsIHdpdGhpbiBhIG1hbnVm" +
+           "YWN0dXJlciwgYSBkZXZpY2UgaW5zdGFuY2UALgBEkAcAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIA" +
+           "DwAAAFJldmlzaW9uQ291bnRlcgEBkQcDAAAAAGkAAABBbiBpbmNyZW1lbnRhbCBjb3VudGVyIGluZGlj" +
+           "YXRpbmcgdGhlIG51bWJlciBvZiB0aW1lcyB0aGUgc3RhdGljIGRhdGEgd2l0aGluIHRoZSBEZXZpY2Ug" +
+           "aGFzIGJlZW4gbW9kaWZpZWQALgBEkQcAAAAG/////wEB/////wAAAAA1YIkKAgAAAAIADAAAAE1hbnVm" +
+           "YWN0dXJlcgEBkgcDAAAAABgAAABNb2RlbCBuYW1lIG9mIHRoZSBkZXZpY2UALgBEkgcAAAAV/////wEB" +
+           "/////wAAAAA1YIkKAgAAAAIABQAAAE1vZGVsAQGTBwMAAAAAMAAAAE5hbWUgb2YgdGhlIGNvbXBhbnkg" +
+           "dGhhdCBtYW51ZmFjdHVyZWQgdGhlIGRldmljZQAuAESTBwAAABX/////AQH/////AAAAADVgiQoCAAAA" +
+           "AgAMAAAARGV2aWNlTWFudWFsAQGUBwMAAAAAWgAAAEFkZHJlc3MgKHBhdGhuYW1lIGluIHRoZSBmaWxl" +
+           "IHN5c3RlbSBvciBhIFVSTCB8IFdlYiBhZGRyZXNzKSBvZiB1c2VyIG1hbnVhbCBmb3IgdGhlIGRldmlj" +
+           "ZQAuAESUBwAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAOAAAARGV2aWNlUmV2aXNpb24BAZUHAwAA" +
+           "AAAkAAAAT3ZlcmFsbCByZXZpc2lvbiBsZXZlbCBvZiB0aGUgZGV2aWNlAC4ARJUHAAAADP////8BAf//" +
+           "//8AAAAANWCJCgIAAAACABAAAABTb2Z0d2FyZVJldmlzaW9uAQGWBwMAAAAANQAAAFJldmlzaW9uIGxl" +
+           "dmVsIG9mIHRoZSBzb2Z0d2FyZS9maXJtd2FyZSBvZiB0aGUgZGV2aWNlAC4ARJYHAAAADP////8BAf//" +
+           "//8AAAAANWCJCgIAAAACABAAAABIYXJkd2FyZVJldmlzaW9uAQGXBwMAAAAALAAAAFJldmlzaW9uIGxl" +
+           "dmVsIG9mIHRoZSBoYXJkd2FyZSBvZiB0aGUgZGV2aWNlAC4ARJcHAAAADP////8BAf////8AAAAAFWCJ" +
+           "CgIAAAABABIAAABQcm90b2NvbElkZW50aWZpZXIBAcMHAC4ARMMHAAAADP////8BAf////8AAAAABGCA" +
+           "CgEAAAABAA8AAABTZXJ2aWNlUHJvdmlkZXIBAccHAC8BAVUIxwcAAP////8JAAAAJGCACgEAAAACAAkA" +
+           "AABNZXRob2RTZXQBAcoHAwAAAAAUAAAARmxhdCBsaXN0IG9mIE1ldGhvZHMALwA6ygcAAP////8DAAAA" +
+           "BGGCCgQAAAABAAoAAABEaXNjb25uZWN0AQHuBwAvAQEsAe4HAAABAf////8CAAAAFWCpCgIAAAAAAA4A" +
+           "AABJbnB1dEFyZ3VtZW50cwEB7wcALgBE7wcAAJYBAAAAAQAqAQEmAAAAFwAAAENvbW11bmljYXRpb25S" +
+           "ZWxhdGlvbklkAA//////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFy" +
+           "Z3VtZW50cwEB8AcALgBE8AcAAJYBAAAAAQAqAQEbAAAADAAAAFNlcnZpY2VFcnJvcgAb/////wAAAAAA" +
+           "AQAoAQEAAAABAf////8AAAAABGGCCgQAAAABAAcAAABDb25uZWN0AQHxBwAvAQGYCPEHAAABAf////8C" +
+           "AAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEB8gcALgBE8gcAAJYCAAAAAQAqAQEmAAAAFwAA" +
+           "AENvbW11bmljYXRpb25SZWxhdGlvbklkAA//////AAAAAAABACoBARYAAAAHAAAAQWRkcmVzcwAP////" +
+           "/wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAfMHAC4A" +
+           "RPMHAACWAQAAAAEAKgEBGwAAAAwAAABTZXJ2aWNlRXJyb3IAG/////8AAAAAAAEAKAEBAAAAAQH/////" +
+           "AAAAAARhggoEAAAAAQAIAAAAVHJhbnNmZXIBAfQHAC8BAZsI9AcAAAEB/////wIAAAAVYKkKAgAAAAAA" +
+           "DgAAAElucHV0QXJndW1lbnRzAQH1BwAuAET1BwAAlgUAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlv" +
+           "blJlbGF0aW9uSWQAD/////8AAAAAAAEAKgEBFQAAAAYAAABIZWFkZXIADP////8AAAAAAAEAKgEBGgAA" +
+           "AAsAAABSZXF1ZXN0RGF0YQAP/////wAAAAAAAQAqAQEhAAAAEAAAAFJlcXVlc3REYXRhVHlwZXMBAQII" +
+           "AQAAAAAAAAAAAQAqAQEiAAAAEQAAAFJlc3BvbnNlRGF0YVR5cGVzAQECCAEAAAAAAAAAAAEAKAEBAAAA" +
+           "AQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQH2BwAuAET2BwAAlgMAAAABACoB" +
+           "ARsAAAAMAAAAUmVzcG9uc2VEYXRhAA//////AAAAAAABACoBAR0AAAAOAAAAUkVTUE9OU0VfQ09ERVMA" +
+           "D/////8AAAAAAAEAKgEBGwAAAAwAAABTZXJ2aWNlRXJyb3IAG/////8AAAAAAAEAKAEBAAAAAQH/////" +
+           "AAAAADVgiQoCAAAAAgAMAAAAU2VyaWFsTnVtYmVyAQHcBwMAAAAATQAAAElkZW50aWZpZXIgdGhhdCB1" +
+           "bmlxdWVseSBpZGVudGlmaWVzLCB3aXRoaW4gYSBtYW51ZmFjdHVyZXIsIGEgZGV2aWNlIGluc3RhbmNl" +
+           "AC4ARNwHAAAADP////8BAf////8AAAAANWCJCgIAAAACAA8AAABSZXZpc2lvbkNvdW50ZXIBAd0HAwAA" +
+           "AABpAAAAQW4gaW5jcmVtZW50YWwgY291bnRlciBpbmRpY2F0aW5nIHRoZSBudW1iZXIgb2YgdGltZXMg" +
+           "dGhlIHN0YXRpYyBkYXRhIHdpdGhpbiB0aGUgRGV2aWNlIGhhcyBiZWVuIG1vZGlmaWVkAC4ARN0HAAAA" +
+           "Bv////8BAf////8AAAAANWCJCgIAAAACAAwAAABNYW51ZmFjdHVyZXIBAd4HAwAAAAAYAAAATW9kZWwg" +
+           "bmFtZSBvZiB0aGUgZGV2aWNlAC4ARN4HAAAAFf////8BAf////8AAAAANWCJCgIAAAACAAUAAABNb2Rl" +
+           "bAEB3wcDAAAAADAAAABOYW1lIG9mIHRoZSBjb21wYW55IHRoYXQgbWFudWZhY3R1cmVkIHRoZSBkZXZp" +
+           "Y2UALgBE3wcAAAAV/////wEB/////wAAAAA1YIkKAgAAAAIADAAAAERldmljZU1hbnVhbAEB4AcDAAAA" +
+           "AFoAAABBZGRyZXNzIChwYXRobmFtZSBpbiB0aGUgZmlsZSBzeXN0ZW0gb3IgYSBVUkwgfCBXZWIgYWRk" +
+           "cmVzcykgb2YgdXNlciBtYW51YWwgZm9yIHRoZSBkZXZpY2UALgBE4AcAAAAM/////wEB/////wAAAAA1" +
+           "YIkKAgAAAAIADgAAAERldmljZVJldmlzaW9uAQHhBwMAAAAAJAAAAE92ZXJhbGwgcmV2aXNpb24gbGV2" +
+           "ZWwgb2YgdGhlIGRldmljZQAuAEThBwAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAQAAAAU29mdHdh" +
+           "cmVSZXZpc2lvbgEB4gcDAAAAADUAAABSZXZpc2lvbiBsZXZlbCBvZiB0aGUgc29mdHdhcmUvZmlybXdh" +
+           "cmUgb2YgdGhlIGRldmljZQAuAETiBwAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAQAAAASGFyZHdh" +
+           "cmVSZXZpc2lvbgEB4wcDAAAAACwAAABSZXZpc2lvbiBsZXZlbCBvZiB0aGUgaGFyZHdhcmUgb2YgdGhl" +
+           "IGRldmljZQAuAETjBwAAAAz/////AQH/////AAAAAA==";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the ProtocolIdentifier Property.
+        /// </summary>
+        public PropertyState<string> ProtocolIdentifier
+        {
+            get
+            {
+                return m_protocolIdentifier;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_protocolIdentifier, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_protocolIdentifier = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the ServiceProvider Object.
+        /// </summary>
+        public ServerCommunicationGENERICServiceState ServiceProvider
+        {
+            get
+            {
+                return m_serviceProvider;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_serviceProvider, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_serviceProvider = value;
+            }
+        }
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Populates a list with the children that belong to the node.
+        /// </summary>
+        /// <param name="context">The context for the system being accessed.</param>
+        /// <param name="children">The list of children to populate.</param>
+        public override void GetChildren(
+            ISystemContext context,
+            IList<BaseInstanceState> children)
+        {
+            if (m_protocolIdentifier != null)
+            {
+                children.Add(m_protocolIdentifier);
+            }
+
+            if (m_serviceProvider != null)
+            {
+                children.Add(m_serviceProvider);
+            }
+
+            base.GetChildren(context, children);
+        }
+
+        /// <summary>
+        /// Finds the child with the specified browse name.
+        /// </summary>
+        protected override BaseInstanceState FindChild(
+            ISystemContext context,
+            QualifiedName browseName,
+            bool createOrReplace,
+            BaseInstanceState replacement)
+        {
+            if (QualifiedName.IsNull(browseName))
+            {
+                return null;
+            }
+
+            BaseInstanceState instance = null;
+
+            switch (browseName.Name)
+            {
+                case Opc.Ua.Fdi7.BrowseNames.ProtocolIdentifier:
+                {
+                    if (createOrReplace)
+                    {
+                        if (ProtocolIdentifier == null)
+                        {
+                            if (replacement == null)
+                            {
+                                ProtocolIdentifier = new PropertyState<string>(this);
+                            }
+                            else
+                            {
+                                ProtocolIdentifier = (PropertyState<string>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = ProtocolIdentifier;
+                    break;
+                }
+
+                case Opc.Ua.Fdi7.BrowseNames.ServiceProvider:
+                {
+                    if (createOrReplace)
+                    {
+                        if (ServiceProvider == null)
+                        {
+                            if (replacement == null)
+                            {
+                                ServiceProvider = new ServerCommunicationGENERICServiceState(this);
+                            }
+                            else
+                            {
+                                ServiceProvider = (ServerCommunicationGENERICServiceState)replacement;
+                            }
+                        }
+                    }
+
+                    instance = ServiceProvider;
+                    break;
+                }
+            }
+
+            if (instance != null)
+            {
+                return instance;
+            }
+
+            return base.FindChild(context, browseName, createOrReplace, replacement);
+        }
+        #endregion
+
+        #region Private Fields
+        private PropertyState<string> m_protocolIdentifier;
+        private ServerCommunicationGENERICServiceState m_serviceProvider;
         #endregion
     }
     #endif
@@ -3556,6 +7723,274 @@ namespace Opc.Ua.Fdi7
         NodeId objectId,
         byte[] communicationRelationId,
         byte[] longAddress,
+        ref object serviceError);
+    #endif
+    #endregion
+
+    #region ConnectMethodISA100_WirelessMethodState Class
+    #if (!OPCUA_EXCLUDE_ConnectMethodISA100_WirelessMethodState)
+    /// <summary>
+    /// Stores an instance of the ConnectMethodISA100_WirelessType Method.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class ConnectMethodISA100_WirelessMethodState : MethodState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public ConnectMethodISA100_WirelessMethodState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Constructs an instance of a node.
+        /// </summary>
+        /// <param name="parent">The parent.</param>
+        /// <returns>The new node.</returns>
+        public new static NodeState Construct(NodeState parent)
+        {
+            return new ConnectMethodISA100_WirelessMethodState(parent);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRhggoEAAAAAQAgAAAAQ29ubmVjdE1ldGhvZElTQTEwMF9X" +
+           "aXJlbGVzc1R5cGUBAfcHAC8BAfcH9wcAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1l" +
+           "bnRzAQH4BwAuAET4BwAAlgMAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlvblJlbGF0aW9uSWQAD///" +
+           "//8AAAAAAAEAKgEBGAAAAAkAAABJUEFkZHJlc3MAD/////8AAAAAAAEAKgEBGAAAAAkAAABTZXJ2aWNl" +
+           "SWQAB/////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRz" +
+           "AQH5BwAuAET5BwAAlgIAAAABACoBAR8AAAAQAAAARGVsYXlGb3JOZXh0Q2FsbAAH/////wAAAAAAAQAq" +
+           "AQEbAAAADAAAAFNlcnZpY2VFcnJvcgAb/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
+        #endregion
+        #endif
+        #endregion
+
+        #region Event Callbacks
+        /// <summary>
+        /// Raised when the the method is called.
+        /// </summary>
+        public ConnectMethodISA100_WirelessMethodStateMethodCallHandler OnCall;
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Invokes the method, returns the result and output argument.
+        /// </summary>
+        /// <param name="context">The current context.</param>
+        /// <param name="objectId">The id of the object.</param>
+        /// <param name="inputArguments">The input arguments which have been already validated.</param>
+        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
+        /// <returns></returns>
+        protected override ServiceResult Call(
+            ISystemContext context,
+            NodeId objectId,
+            IList<object> inputArguments,
+            IList<object> outputArguments)
+        {
+            if (OnCall == null)
+            {
+                return base.Call(context, objectId, inputArguments, outputArguments);
+            }
+
+            ServiceResult result = null;
+
+            byte[] communicationRelationId = (byte[])inputArguments[0];
+            byte[] iPAddress = (byte[])inputArguments[1];
+            uint serviceId = (uint)inputArguments[2];
+
+            uint delayForNextCall = (uint)outputArguments[0];
+            object serviceError = (object)outputArguments[1];
+
+            if (OnCall != null)
+            {
+                result = OnCall(
+                    context,
+                    this,
+                    objectId,
+                    communicationRelationId,
+                    iPAddress,
+                    serviceId,
+                    ref delayForNextCall,
+                    ref serviceError);
+            }
+
+            outputArguments[0] = delayForNextCall;
+            outputArguments[1] = serviceError;
+
+            return result;
+        }
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+
+    /// <summary>
+    /// Used to receive notifications when the method is called.
+    /// </summary>
+    /// <exclude />
+    public delegate ServiceResult ConnectMethodISA100_WirelessMethodStateMethodCallHandler(
+        ISystemContext context,
+        MethodState method,
+        NodeId objectId,
+        byte[] communicationRelationId,
+        byte[] iPAddress,
+        uint serviceId,
+        ref uint delayForNextCall,
+        ref object serviceError);
+    #endif
+    #endregion
+
+    #region ConnectMethodGENERICMethodState Class
+    #if (!OPCUA_EXCLUDE_ConnectMethodGENERICMethodState)
+    /// <summary>
+    /// Stores an instance of the ConnectMethodGENERICType Method.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class ConnectMethodGENERICMethodState : MethodState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public ConnectMethodGENERICMethodState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Constructs an instance of a node.
+        /// </summary>
+        /// <param name="parent">The parent.</param>
+        /// <returns>The new node.</returns>
+        public new static NodeState Construct(NodeState parent)
+        {
+            return new ConnectMethodGENERICMethodState(parent);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRhggoEAAAAAQAYAAAAQ29ubmVjdE1ldGhvZEdFTkVSSUNU" +
+           "eXBlAQH6BwAvAQH6B/oHAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEB+wcA" +
+           "LgBE+wcAAJYCAAAAAQAqAQEmAAAAFwAAAENvbW11bmljYXRpb25SZWxhdGlvbklkAA//////AAAAAAAB" +
+           "ACoBARYAAAAHAAAAQWRkcmVzcwAP/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8A" +
+           "AABPdXRwdXRBcmd1bWVudHMBAfwHAC4ARPwHAACWAQAAAAEAKgEBGwAAAAwAAABTZXJ2aWNlRXJyb3IA" +
+           "G/////8AAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
+        #endregion
+        #endif
+        #endregion
+
+        #region Event Callbacks
+        /// <summary>
+        /// Raised when the the method is called.
+        /// </summary>
+        public ConnectMethodGENERICMethodStateMethodCallHandler OnCall;
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Invokes the method, returns the result and output argument.
+        /// </summary>
+        /// <param name="context">The current context.</param>
+        /// <param name="objectId">The id of the object.</param>
+        /// <param name="inputArguments">The input arguments which have been already validated.</param>
+        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
+        /// <returns></returns>
+        protected override ServiceResult Call(
+            ISystemContext context,
+            NodeId objectId,
+            IList<object> inputArguments,
+            IList<object> outputArguments)
+        {
+            if (OnCall == null)
+            {
+                return base.Call(context, objectId, inputArguments, outputArguments);
+            }
+
+            ServiceResult result = null;
+
+            byte[] communicationRelationId = (byte[])inputArguments[0];
+            byte[] address = (byte[])inputArguments[1];
+
+            object serviceError = (object)outputArguments[0];
+
+            if (OnCall != null)
+            {
+                result = OnCall(
+                    context,
+                    this,
+                    objectId,
+                    communicationRelationId,
+                    address,
+                    ref serviceError);
+            }
+
+            outputArguments[0] = serviceError;
+
+            return result;
+        }
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+
+    /// <summary>
+    /// Used to receive notifications when the method is called.
+    /// </summary>
+    /// <exclude />
+    public delegate ServiceResult ConnectMethodGENERICMethodStateMethodCallHandler(
+        ISystemContext context,
+        MethodState method,
+        NodeId objectId,
+        byte[] communicationRelationId,
+        byte[] address,
         ref object serviceError);
     #endif
     #endregion
@@ -4445,6 +8880,312 @@ namespace Opc.Ua.Fdi7
     #endif
     #endregion
 
+    #region TransferMethodISA100_WirelessMethodState Class
+    #if (!OPCUA_EXCLUDE_TransferMethodISA100_WirelessMethodState)
+    /// <summary>
+    /// Stores an instance of the TransferMethodISA100_WirelessType Method.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class TransferMethodISA100_WirelessMethodState : MethodState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public TransferMethodISA100_WirelessMethodState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Constructs an instance of a node.
+        /// </summary>
+        /// <param name="parent">The parent.</param>
+        /// <returns>The new node.</returns>
+        public new static NodeState Construct(NodeState parent)
+        {
+            return new TransferMethodISA100_WirelessMethodState(parent);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRhggoEAAAAAQAhAAAAVHJhbnNmZXJNZXRob2RJU0ExMDBf" +
+           "V2lyZWxlc3NUeXBlAQH9BwAvAQH9B/0HAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3Vt" +
+           "ZW50cwEB/gcALgBE/gcAAJYIAAAAAQAqAQEmAAAAFwAAAENvbW11bmljYXRpb25SZWxhdGlvbklkAA//" +
+           "////AAAAAAABACoBARgAAAAJAAAAT1BFUkFUSU9OAAz/////AAAAAAABACoBARQAAAAFAAAAQXBwSUQA" +
+           "Bf////8AAAAAAAEAKgEBFwAAAAgAAABPYmplY3RJRAAF/////wAAAAAAAQAqAQEbAAAADAAAAEF0dHJP" +
+           "ck1ldGhJRAAF/////wAAAAAAAQAqAQEYAAAACQAAAFNVQl9JTkRFWAAH/////wAAAAAAAQAqAQEYAAAA" +
+           "CQAAAFdyaXRlRGF0YQADAQAAAAAAAAAAAQAqAQEYAAAACQAAAFJlcXVlc3RJZAAH/////wAAAAAAAQAo" +
+           "AQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAf8HAC4ARP8HAACWAgAA" +
+           "AAEAKgEBFwAAAAgAAABSZWFkRGF0YQADAQAAAAAAAAAAAQAqAQEbAAAADAAAAFNlcnZpY2VFcnJvcgAb" +
+           "/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
+        #endregion
+        #endif
+        #endregion
+
+        #region Event Callbacks
+        /// <summary>
+        /// Raised when the the method is called.
+        /// </summary>
+        public TransferMethodISA100_WirelessMethodStateMethodCallHandler OnCall;
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Invokes the method, returns the result and output argument.
+        /// </summary>
+        /// <param name="context">The current context.</param>
+        /// <param name="objectId">The id of the object.</param>
+        /// <param name="inputArguments">The input arguments which have been already validated.</param>
+        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
+        /// <returns></returns>
+        protected override ServiceResult Call(
+            ISystemContext context,
+            NodeId objectId,
+            IList<object> inputArguments,
+            IList<object> outputArguments)
+        {
+            if (OnCall == null)
+            {
+                return base.Call(context, objectId, inputArguments, outputArguments);
+            }
+
+            ServiceResult result = null;
+
+            byte[] communicationRelationId = (byte[])inputArguments[0];
+            string oPERATION = (string)inputArguments[1];
+            ushort appID = (ushort)inputArguments[2];
+            ushort objectID = (ushort)inputArguments[3];
+            ushort attrOrMethID = (ushort)inputArguments[4];
+            uint sUB_INDEX = (uint)inputArguments[5];
+            byte[] writeData = (byte[])inputArguments[6];
+            uint requestId = (uint)inputArguments[7];
+
+            byte[] readData = (byte[])outputArguments[0];
+            object serviceError = (object)outputArguments[1];
+
+            if (OnCall != null)
+            {
+                result = OnCall(
+                    context,
+                    this,
+                    objectId,
+                    communicationRelationId,
+                    oPERATION,
+                    appID,
+                    objectID,
+                    attrOrMethID,
+                    sUB_INDEX,
+                    writeData,
+                    requestId,
+                    ref readData,
+                    ref serviceError);
+            }
+
+            outputArguments[0] = readData;
+            outputArguments[1] = serviceError;
+
+            return result;
+        }
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+
+    /// <summary>
+    /// Used to receive notifications when the method is called.
+    /// </summary>
+    /// <exclude />
+    public delegate ServiceResult TransferMethodISA100_WirelessMethodStateMethodCallHandler(
+        ISystemContext context,
+        MethodState method,
+        NodeId objectId,
+        byte[] communicationRelationId,
+        string oPERATION,
+        ushort appID,
+        ushort objectID,
+        ushort attrOrMethID,
+        uint sUB_INDEX,
+        byte[] writeData,
+        uint requestId,
+        ref byte[] readData,
+        ref object serviceError);
+    #endif
+    #endregion
+
+    #region TransferMethodGENERICMethodState Class
+    #if (!OPCUA_EXCLUDE_TransferMethodGENERICMethodState)
+    /// <summary>
+    /// Stores an instance of the TransferMethodGENERICType Method.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class TransferMethodGENERICMethodState : MethodState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public TransferMethodGENERICMethodState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Constructs an instance of a node.
+        /// </summary>
+        /// <param name="parent">The parent.</param>
+        /// <returns>The new node.</returns>
+        public new static NodeState Construct(NodeState parent)
+        {
+            return new TransferMethodGENERICMethodState(parent);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRhggoEAAAAAQAZAAAAVHJhbnNmZXJNZXRob2RHRU5FUklD" +
+           "VHlwZQEBAwgALwEBAwgDCAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAQQI" +
+           "AC4ARAQIAACWBQAAAAEAKgEBJgAAABcAAABDb21tdW5pY2F0aW9uUmVsYXRpb25JZAAP/////wAAAAAA" +
+           "AQAqAQEVAAAABgAAAEhlYWRlcgAM/////wAAAAAAAQAqAQEaAAAACwAAAFJlcXVlc3REYXRhAA//////" +
+           "AAAAAAABACoBASEAAAAQAAAAUmVxdWVzdERhdGFUeXBlcwEBAggBAAAAAAAAAAABACoBASIAAAARAAAA" +
+           "UmVzcG9uc2VEYXRhVHlwZXMBAQIIAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8A" +
+           "AABPdXRwdXRBcmd1bWVudHMBAQUIAC4ARAUIAACWAwAAAAEAKgEBGwAAAAwAAABSZXNwb25zZURhdGEA" +
+           "D/////8AAAAAAAEAKgEBHQAAAA4AAABSRVNQT05TRV9DT0RFUwAP/////wAAAAAAAQAqAQEbAAAADAAA" +
+           "AFNlcnZpY2VFcnJvcgAb/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
+        #endregion
+        #endif
+        #endregion
+
+        #region Event Callbacks
+        /// <summary>
+        /// Raised when the the method is called.
+        /// </summary>
+        public TransferMethodGENERICMethodStateMethodCallHandler OnCall;
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Invokes the method, returns the result and output argument.
+        /// </summary>
+        /// <param name="context">The current context.</param>
+        /// <param name="objectId">The id of the object.</param>
+        /// <param name="inputArguments">The input arguments which have been already validated.</param>
+        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
+        /// <returns></returns>
+        protected override ServiceResult Call(
+            ISystemContext context,
+            NodeId objectId,
+            IList<object> inputArguments,
+            IList<object> outputArguments)
+        {
+            if (OnCall == null)
+            {
+                return base.Call(context, objectId, inputArguments, outputArguments);
+            }
+
+            ServiceResult result = null;
+
+            byte[] communicationRelationId = (byte[])inputArguments[0];
+            string header = (string)inputArguments[1];
+            byte[] requestData = (byte[])inputArguments[2];
+            EddDataTypeInfo[] requestDataTypes = (EddDataTypeInfo[])ExtensionObject.ToArray(inputArguments[3], typeof(EddDataTypeInfo));
+            EddDataTypeInfo[] responseDataTypes = (EddDataTypeInfo[])ExtensionObject.ToArray(inputArguments[4], typeof(EddDataTypeInfo));
+
+            byte[] responseData = (byte[])outputArguments[0];
+            byte[] rESPONSE_CODES = (byte[])outputArguments[1];
+            object serviceError = (object)outputArguments[2];
+
+            if (OnCall != null)
+            {
+                result = OnCall(
+                    context,
+                    this,
+                    objectId,
+                    communicationRelationId,
+                    header,
+                    requestData,
+                    requestDataTypes,
+                    responseDataTypes,
+                    ref responseData,
+                    ref rESPONSE_CODES,
+                    ref serviceError);
+            }
+
+            outputArguments[0] = responseData;
+            outputArguments[1] = rESPONSE_CODES;
+            outputArguments[2] = serviceError;
+
+            return result;
+        }
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+
+    /// <summary>
+    /// Used to receive notifications when the method is called.
+    /// </summary>
+    /// <exclude />
+    public delegate ServiceResult TransferMethodGENERICMethodStateMethodCallHandler(
+        ISystemContext context,
+        MethodState method,
+        NodeId objectId,
+        byte[] communicationRelationId,
+        string header,
+        byte[] requestData,
+        EddDataTypeInfo[] requestDataTypes,
+        EddDataTypeInfo[] responseDataTypes,
+        ref byte[] responseData,
+        ref byte[] rESPONSE_CODES,
+        ref object serviceError);
+    #endif
+    #endregion
+
     #region GetPublishedDataMethodFFH1MethodState Class
     #if (!OPCUA_EXCLUDE_GetPublishedDataMethodFFH1MethodState)
     /// <summary>
@@ -4891,6 +9632,159 @@ namespace Opc.Ua.Fdi7
     #endif
     #endregion
 
+    #region GetPublishedDataMethodISA100_WirelessMethodState Class
+    #if (!OPCUA_EXCLUDE_GetPublishedDataMethodISA100_WirelessMethodState)
+    /// <summary>
+    /// Stores an instance of the GetPublishedDataMethodISA100_WirelessType Method.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class GetPublishedDataMethodISA100_WirelessMethodState : MethodState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public GetPublishedDataMethodISA100_WirelessMethodState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Constructs an instance of a node.
+        /// </summary>
+        /// <param name="parent">The parent.</param>
+        /// <returns>The new node.</returns>
+        public new static NodeState Construct(NodeState parent)
+        {
+            return new GetPublishedDataMethodISA100_WirelessMethodState(parent);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRhggoEAAAAAQApAAAAR2V0UHVibGlzaGVkRGF0YU1ldGhv" +
+           "ZElTQTEwMF9XaXJlbGVzc1R5cGUBAQYIAC8BAQYIBggAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElu" +
+           "cHV0QXJndW1lbnRzAQEHCAAuAEQHCAAAlgIAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlvblJlbGF0" +
+           "aW9uSWQAD/////8AAAAAAAEAKgEBGAAAAAkAAABSZXF1ZXN0SWQAB/////8AAAAAAAEAKAEBAAAAAQH/" +
+           "////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQEICAAuAEQICAAAlgYAAAABACoBARQA" +
+           "AAAFAAAAQXBwSUQABf////8AAAAAAAEAKgEBFwAAAAgAAABPYmplY3RJRAAF/////wAAAAAAAQAqAQEd" +
+           "AAAADgAAAEFsYXJtRXZlbnREYXRhAAMBAAAAAAAAAAABACoBAR0AAAAOAAAAQWxhcm1FdmVudFR5cGUA" +
+           "Bf////8AAAAAAAEAKgEBGAAAAAkAAABUaW1lU3RhbXAADf////8AAAAAAAEAKgEBGwAAAAwAAABTZXJ2" +
+           "aWNlRXJyb3IAG/////8AAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
+        #endregion
+        #endif
+        #endregion
+
+        #region Event Callbacks
+        /// <summary>
+        /// Raised when the the method is called.
+        /// </summary>
+        public GetPublishedDataMethodISA100_WirelessMethodStateMethodCallHandler OnCall;
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Invokes the method, returns the result and output argument.
+        /// </summary>
+        /// <param name="context">The current context.</param>
+        /// <param name="objectId">The id of the object.</param>
+        /// <param name="inputArguments">The input arguments which have been already validated.</param>
+        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
+        /// <returns></returns>
+        protected override ServiceResult Call(
+            ISystemContext context,
+            NodeId objectId,
+            IList<object> inputArguments,
+            IList<object> outputArguments)
+        {
+            if (OnCall == null)
+            {
+                return base.Call(context, objectId, inputArguments, outputArguments);
+            }
+
+            ServiceResult result = null;
+
+            byte[] communicationRelationId = (byte[])inputArguments[0];
+            uint requestId = (uint)inputArguments[1];
+
+            ushort appID = (ushort)outputArguments[0];
+            ushort objectID = (ushort)outputArguments[1];
+            byte[] alarmEventData = (byte[])outputArguments[2];
+            ushort alarmEventType = (ushort)outputArguments[3];
+            DateTime timeStamp = (DateTime)outputArguments[4];
+            object serviceError = (object)outputArguments[5];
+
+            if (OnCall != null)
+            {
+                result = OnCall(
+                    context,
+                    this,
+                    objectId,
+                    communicationRelationId,
+                    requestId,
+                    ref appID,
+                    ref objectID,
+                    ref alarmEventData,
+                    ref alarmEventType,
+                    ref timeStamp,
+                    ref serviceError);
+            }
+
+            outputArguments[0] = appID;
+            outputArguments[1] = objectID;
+            outputArguments[2] = alarmEventData;
+            outputArguments[3] = alarmEventType;
+            outputArguments[4] = timeStamp;
+            outputArguments[5] = serviceError;
+
+            return result;
+        }
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+
+    /// <summary>
+    /// Used to receive notifications when the method is called.
+    /// </summary>
+    /// <exclude />
+    public delegate ServiceResult GetPublishedDataMethodISA100_WirelessMethodStateMethodCallHandler(
+        ISystemContext context,
+        MethodState method,
+        NodeId objectId,
+        byte[] communicationRelationId,
+        uint requestId,
+        ref ushort appID,
+        ref ushort objectID,
+        ref byte[] alarmEventData,
+        ref ushort alarmEventType,
+        ref DateTime timeStamp,
+        ref object serviceError);
+    #endif
+    #endregion
+
     #region ServerCommunicationServiceState Class
     #if (!OPCUA_EXCLUDE_ServerCommunicationServiceState)
     /// <summary>
@@ -5025,48 +9919,52 @@ namespace Opc.Ua.Fdi7
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
            "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAqAAAAU2VydmVyQ29tbXVuaWNhdGlvbkZG" +
            "SDFTZXJ2aWNlVHlwZUluc3RhbmNlAQHlAwEB5QP/////CQAAACRggAoBAAAAAgAJAAAATWV0aG9kU2V0" +
-           "AQHoAwMAAAAAFAAAAEZsYXQgbGlzdCBvZiBNZXRob2RzAC8AOugDAAD/////AwAAAARhggoEAAAAAQAH" +
-           "AAAAQ29ubmVjdAEBKAQALwEBKAQoBAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVu" +
-           "dHMBASkEAC4ARCkEAACWBgAAAAEAKgEBJgAAABcAAABDb21tdW5pY2F0aW9uUmVsYXRpb25JZAAP////" +
-           "/wAAAAAAAQAqAQEVAAAABgAAAExpbmtJZAAF/////wAAAAAAAQAqAQEWAAAABwAAAEFkZHJlc3MAA///" +
-           "//8AAAAAAAEAKgEBHAAAAA0AAABPcmRpbmFsTnVtYmVyAAb/////AAAAAAABACoBARwAAAANAAAAU0lG" +
-           "Q29ubmVjdGlvbgAB/////wAAAAAAAQAqAQEYAAAACQAAAFNlcnZpY2VJZAAH/////wAAAAAAAQAoAQEA" +
-           "AAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBASoEAC4ARCoEAACWAgAAAAEA" +
-           "KgEBHwAAABAAAABEZWxheUZvck5leHRDYWxsAAf/////AAAAAAABACoBARsAAAAMAAAAU2VydmljZUVy" +
-           "cm9yABv/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEACAAAAFRyYW5zZmVyAQErBAAv" +
-           "AQErBCsEAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBLAQALgBELAQAAJYH" +
-           "AAAAAQAqAQEmAAAAFwAAAENvbW11bmljYXRpb25SZWxhdGlvbklkAA//////AAAAAAABACoBARgAAAAJ" +
-           "AAAAT1BFUkFUSU9OAAz/////AAAAAAABACoBARcAAAAIAAAAQmxvY2tUYWcADP////8AAAAAAAEAKgEB" +
-           "FAAAAAUAAABJTkRFWAAH/////wAAAAAAAQAqAQEYAAAACQAAAFNVQl9JTkRFWAAH/////wAAAAAAAQAq" +
-           "AQEYAAAACQAAAFdyaXRlRGF0YQADAQAAAAAAAAAAAQAqAQEYAAAACQAAAFNlcnZpY2VJZAAH/////wAA" +
-           "AAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAS0EAC4ARC0E" +
-           "AACWAwAAAAEAKgEBFwAAAAgAAABSZWFkRGF0YQADAQAAAAAAAAAAAQAqAQEfAAAAEAAAAERlbGF5Rm9y" +
-           "TmV4dENhbGwAB/////8AAAAAAAEAKgEBGwAAAAwAAABTZXJ2aWNlRXJyb3IAG/////8AAAAAAAEAKAEB" +
-           "AAAAAQH/////AAAAAARhggoEAAAAAQAQAAAAR2V0UHVibGlzaGVkRGF0YQEBLgQALwEBLgQuBAAAAQH/" +
-           "////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAS8EAC4ARC8EAACWAgAAAAEAKgEBJgAA" +
-           "ABcAAABDb21tdW5pY2F0aW9uUmVsYXRpb25JZAAP/////wAAAAAAAQAqAQEYAAAACQAAAFNlcnZpY2VJ" +
+           "AQHoAwMAAAAAFAAAAEZsYXQgbGlzdCBvZiBNZXRob2RzAC8AOugDAAD/////BAAAAARhggoEAAAAAQAK" +
+           "AAAARGlzY29ubmVjdAEBJQQALwEBLAElBAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1" +
+           "bWVudHMBASYEAC4ARCYEAACWAQAAAAEAKgEBJgAAABcAAABDb21tdW5pY2F0aW9uUmVsYXRpb25JZAAP" +
+           "/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAScE" +
+           "AC4ARCcEAACWAQAAAAEAKgEBGwAAAAwAAABTZXJ2aWNlRXJyb3IAG/////8AAAAAAAEAKAEBAAAAAQH/" +
+           "////AAAAAARhggoEAAAAAQAHAAAAQ29ubmVjdAEBKAQALwEBKAQoBAAAAQH/////AgAAABVgqQoCAAAA" +
+           "AAAOAAAASW5wdXRBcmd1bWVudHMBASkEAC4ARCkEAACWBgAAAAEAKgEBJgAAABcAAABDb21tdW5pY2F0" +
+           "aW9uUmVsYXRpb25JZAAP/////wAAAAAAAQAqAQEVAAAABgAAAExpbmtJZAAF/////wAAAAAAAQAqAQEW" +
+           "AAAABwAAAEFkZHJlc3MAA/////8AAAAAAAEAKgEBHAAAAA0AAABPcmRpbmFsTnVtYmVyAAb/////AAAA" +
+           "AAABACoBARwAAAANAAAAU0lGQ29ubmVjdGlvbgAB/////wAAAAAAAQAqAQEYAAAACQAAAFNlcnZpY2VJ" +
            "ZAAH/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMB" +
-           "ATAEAC4ARDAEAACWBgAAAAEAKgEBFwAAAAgAAABCbG9ja1RhZwAM/////wAAAAAAAQAqAQEdAAAADgAA" +
-           "AEFsYXJtRXZlbnREYXRhAAMBAAAAAAAAAAABACoBAR0AAAAOAAAAQWxhcm1FdmVudFR5cGUAEf////8A" +
-           "AAAAAAEAKgEBGAAAAAkAAABUaW1lU3RhbXAADf////8AAAAAAAEAKgEBHwAAABAAAABEZWxheUZvck5l" +
-           "eHRDYWxsAAf/////AAAAAAABACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/////AAAAAAABACgBAQAA" +
-           "AAEB/////wAAAAA1YIkKAgAAAAIADAAAAFNlcmlhbE51bWJlcgEB/AMDAAAAAE0AAABJZGVudGlmaWVy" +
-           "IHRoYXQgdW5pcXVlbHkgaWRlbnRpZmllcywgd2l0aGluIGEgbWFudWZhY3R1cmVyLCBhIGRldmljZSBp" +
-           "bnN0YW5jZQAuAET8AwAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAPAAAAUmV2aXNpb25Db3VudGVy" +
-           "AQH9AwMAAAAAaQAAAEFuIGluY3JlbWVudGFsIGNvdW50ZXIgaW5kaWNhdGluZyB0aGUgbnVtYmVyIG9m" +
-           "IHRpbWVzIHRoZSBzdGF0aWMgZGF0YSB3aXRoaW4gdGhlIERldmljZSBoYXMgYmVlbiBtb2RpZmllZAAu" +
-           "AET9AwAAAAb/////AQH/////AAAAADVgiQoCAAAAAgAMAAAATWFudWZhY3R1cmVyAQH+AwMAAAAAGAAA" +
-           "AE1vZGVsIG5hbWUgb2YgdGhlIGRldmljZQAuAET+AwAAABX/////AQH/////AAAAADVgiQoCAAAAAgAF" +
-           "AAAATW9kZWwBAf8DAwAAAAAwAAAATmFtZSBvZiB0aGUgY29tcGFueSB0aGF0IG1hbnVmYWN0dXJlZCB0" +
-           "aGUgZGV2aWNlAC4ARP8DAAAAFf////8BAf////8AAAAANWCJCgIAAAACAAwAAABEZXZpY2VNYW51YWwB" +
-           "AQAEAwAAAABaAAAAQWRkcmVzcyAocGF0aG5hbWUgaW4gdGhlIGZpbGUgc3lzdGVtIG9yIGEgVVJMIHwg" +
-           "V2ViIGFkZHJlc3MpIG9mIHVzZXIgbWFudWFsIGZvciB0aGUgZGV2aWNlAC4ARAAEAAAADP////8BAf//" +
-           "//8AAAAANWCJCgIAAAACAA4AAABEZXZpY2VSZXZpc2lvbgEBAQQDAAAAACQAAABPdmVyYWxsIHJldmlz" +
-           "aW9uIGxldmVsIG9mIHRoZSBkZXZpY2UALgBEAQQAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAA" +
-           "AFNvZnR3YXJlUmV2aXNpb24BAQIEAwAAAAA1AAAAUmV2aXNpb24gbGV2ZWwgb2YgdGhlIHNvZnR3YXJl" +
-           "L2Zpcm13YXJlIG9mIHRoZSBkZXZpY2UALgBEAgQAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAA" +
-           "AEhhcmR3YXJlUmV2aXNpb24BAQMEAwAAAAAsAAAAUmV2aXNpb24gbGV2ZWwgb2YgdGhlIGhhcmR3YXJl" +
-           "IG9mIHRoZSBkZXZpY2UALgBEAwQAAAAM/////wEB/////wAAAAA=";
+           "ASoEAC4ARCoEAACWAgAAAAEAKgEBHwAAABAAAABEZWxheUZvck5leHRDYWxsAAf/////AAAAAAABACoB" +
+           "ARsAAAAMAAAAU2VydmljZUVycm9yABv/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEA" +
+           "CAAAAFRyYW5zZmVyAQErBAAvAQErBCsEAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3Vt" +
+           "ZW50cwEBLAQALgBELAQAAJYHAAAAAQAqAQEmAAAAFwAAAENvbW11bmljYXRpb25SZWxhdGlvbklkAA//" +
+           "////AAAAAAABACoBARgAAAAJAAAAT1BFUkFUSU9OAAz/////AAAAAAABACoBARcAAAAIAAAAQmxvY2tU" +
+           "YWcADP////8AAAAAAAEAKgEBFAAAAAUAAABJTkRFWAAH/////wAAAAAAAQAqAQEYAAAACQAAAFNVQl9J" +
+           "TkRFWAAH/////wAAAAAAAQAqAQEYAAAACQAAAFdyaXRlRGF0YQADAQAAAAAAAAAAAQAqAQEYAAAACQAA" +
+           "AFNlcnZpY2VJZAAH/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRB" +
+           "cmd1bWVudHMBAS0EAC4ARC0EAACWAwAAAAEAKgEBFwAAAAgAAABSZWFkRGF0YQADAQAAAAAAAAAAAQAq" +
+           "AQEfAAAAEAAAAERlbGF5Rm9yTmV4dENhbGwAB/////8AAAAAAAEAKgEBGwAAAAwAAABTZXJ2aWNlRXJy" +
+           "b3IAG/////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQAQAAAAR2V0UHVibGlzaGVkRGF0" +
+           "YQEBLgQALwEBLgQuBAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAS8EAC4A" +
+           "RC8EAACWAgAAAAEAKgEBJgAAABcAAABDb21tdW5pY2F0aW9uUmVsYXRpb25JZAAP/////wAAAAAAAQAq" +
+           "AQEYAAAACQAAAFNlcnZpY2VJZAAH/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8A" +
+           "AABPdXRwdXRBcmd1bWVudHMBATAEAC4ARDAEAACWBgAAAAEAKgEBFwAAAAgAAABCbG9ja1RhZwAM////" +
+           "/wAAAAAAAQAqAQEdAAAADgAAAEFsYXJtRXZlbnREYXRhAAMBAAAAAAAAAAABACoBAR0AAAAOAAAAQWxh" +
+           "cm1FdmVudFR5cGUAEf////8AAAAAAAEAKgEBGAAAAAkAAABUaW1lU3RhbXAADf////8AAAAAAAEAKgEB" +
+           "HwAAABAAAABEZWxheUZvck5leHRDYWxsAAf/////AAAAAAABACoBARsAAAAMAAAAU2VydmljZUVycm9y" +
+           "ABv/////AAAAAAABACgBAQAAAAEB/////wAAAAA1YIkKAgAAAAIADAAAAFNlcmlhbE51bWJlcgEB/AMD" +
+           "AAAAAE0AAABJZGVudGlmaWVyIHRoYXQgdW5pcXVlbHkgaWRlbnRpZmllcywgd2l0aGluIGEgbWFudWZh" +
+           "Y3R1cmVyLCBhIGRldmljZSBpbnN0YW5jZQAuAET8AwAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAP" +
+           "AAAAUmV2aXNpb25Db3VudGVyAQH9AwMAAAAAaQAAAEFuIGluY3JlbWVudGFsIGNvdW50ZXIgaW5kaWNh" +
+           "dGluZyB0aGUgbnVtYmVyIG9mIHRpbWVzIHRoZSBzdGF0aWMgZGF0YSB3aXRoaW4gdGhlIERldmljZSBo" +
+           "YXMgYmVlbiBtb2RpZmllZAAuAET9AwAAAAb/////AQH/////AAAAADVgiQoCAAAAAgAMAAAATWFudWZh" +
+           "Y3R1cmVyAQH+AwMAAAAAGAAAAE1vZGVsIG5hbWUgb2YgdGhlIGRldmljZQAuAET+AwAAABX/////AQH/" +
+           "////AAAAADVgiQoCAAAAAgAFAAAATW9kZWwBAf8DAwAAAAAwAAAATmFtZSBvZiB0aGUgY29tcGFueSB0" +
+           "aGF0IG1hbnVmYWN0dXJlZCB0aGUgZGV2aWNlAC4ARP8DAAAAFf////8BAf////8AAAAANWCJCgIAAAAC" +
+           "AAwAAABEZXZpY2VNYW51YWwBAQAEAwAAAABaAAAAQWRkcmVzcyAocGF0aG5hbWUgaW4gdGhlIGZpbGUg" +
+           "c3lzdGVtIG9yIGEgVVJMIHwgV2ViIGFkZHJlc3MpIG9mIHVzZXIgbWFudWFsIGZvciB0aGUgZGV2aWNl" +
+           "AC4ARAAEAAAADP////8BAf////8AAAAANWCJCgIAAAACAA4AAABEZXZpY2VSZXZpc2lvbgEBAQQDAAAA" +
+           "ACQAAABPdmVyYWxsIHJldmlzaW9uIGxldmVsIG9mIHRoZSBkZXZpY2UALgBEAQQAAAAM/////wEB////" +
+           "/wAAAAA1YIkKAgAAAAIAEAAAAFNvZnR3YXJlUmV2aXNpb24BAQIEAwAAAAA1AAAAUmV2aXNpb24gbGV2" +
+           "ZWwgb2YgdGhlIHNvZnR3YXJlL2Zpcm13YXJlIG9mIHRoZSBkZXZpY2UALgBEAgQAAAAM/////wEB////" +
+           "/wAAAAA1YIkKAgAAAAIAEAAAAEhhcmR3YXJlUmV2aXNpb24BAQMEAwAAAAAsAAAAUmV2aXNpb24gbGV2" +
+           "ZWwgb2YgdGhlIGhhcmR3YXJlIG9mIHRoZSBkZXZpY2UALgBEAwQAAAAM/////wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -5131,47 +10029,51 @@ namespace Opc.Ua.Fdi7
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
            "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQArAAAAU2VydmVyQ29tbXVuaWNhdGlvbkZG" +
            "SFNFU2VydmljZVR5cGVJbnN0YW5jZQEBMQQBATEE/////wkAAAAkYIAKAQAAAAIACQAAAE1ldGhvZFNl" +
-           "dAEBNAQDAAAAABQAAABGbGF0IGxpc3Qgb2YgTWV0aG9kcwAvADo0BAAA/////wMAAAAEYYIKBAAAAAEA" +
-           "BwAAAENvbm5lY3QBAXQEAC8BAXQEdAQAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1l" +
-           "bnRzAQF1BAAuAER1BAAAlgQAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlvblJlbGF0aW9uSWQAD///" +
-           "//8AAAAAAAEAKgEBFgAAAAcAAABBZGRyZXNzAA//////AAAAAAABACoBARwAAAANAAAAT3JkaW5hbE51" +
-           "bWJlcgAG/////wAAAAAAAQAqAQEYAAAACQAAAFNlcnZpY2VJZAAH/////wAAAAAAAQAoAQEAAAABAf//" +
-           "//8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAXYEAC4ARHYEAACWAgAAAAEAKgEBHwAA" +
-           "ABAAAABEZWxheUZvck5leHRDYWxsAAf/////AAAAAAABACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/" +
-           "////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEACAAAAFRyYW5zZmVyAQF3BAAvAQF3BHcE" +
-           "AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBeAQALgBEeAQAAJYHAAAAAQAq" +
-           "AQEmAAAAFwAAAENvbW11bmljYXRpb25SZWxhdGlvbklkAA//////AAAAAAABACoBARgAAAAJAAAAT1BF" +
-           "UkFUSU9OAAz/////AAAAAAABACoBARcAAAAIAAAAQmxvY2tUYWcADP////8AAAAAAAEAKgEBFAAAAAUA" +
-           "AABJTkRFWAAH/////wAAAAAAAQAqAQEYAAAACQAAAFNVQl9JTkRFWAAH/////wAAAAAAAQAqAQEYAAAA" +
-           "CQAAAFdyaXRlRGF0YQADAQAAAAAAAAAAAQAqAQEYAAAACQAAAFNlcnZpY2VJZAAH/////wAAAAAAAQAo" +
-           "AQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAXkEAC4ARHkEAACWAwAA" +
-           "AAEAKgEBFwAAAAgAAABSZWFkRGF0YQADAQAAAAAAAAAAAQAqAQEfAAAAEAAAAERlbGF5Rm9yTmV4dENh" +
-           "bGwAB/////8AAAAAAAEAKgEBGwAAAAwAAABTZXJ2aWNlRXJyb3IAG/////8AAAAAAAEAKAEBAAAAAQH/" +
-           "////AAAAAARhggoEAAAAAQAQAAAAR2V0UHVibGlzaGVkRGF0YQEBegQALwEBegR6BAAAAQH/////AgAA" +
-           "ABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAXsEAC4ARHsEAACWAgAAAAEAKgEBJgAAABcAAABD" +
-           "b21tdW5pY2F0aW9uUmVsYXRpb25JZAAP/////wAAAAAAAQAqAQEYAAAACQAAAFNlcnZpY2VJZAAH////" +
-           "/wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAXwEAC4A" +
-           "RHwEAACWBgAAAAEAKgEBFwAAAAgAAABCbG9ja1RhZwAM/////wAAAAAAAQAqAQEdAAAADgAAAEFsYXJt" +
-           "RXZlbnREYXRhAAMBAAAAAAAAAAABACoBAR0AAAAOAAAAQWxhcm1FdmVudFR5cGUAEf////8AAAAAAAEA" +
-           "KgEBGAAAAAkAAABUaW1lU3RhbXAADf////8AAAAAAAEAKgEBHwAAABAAAABEZWxheUZvck5leHRDYWxs" +
-           "AAf/////AAAAAAABACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/////AAAAAAABACgBAQAAAAEB////" +
-           "/wAAAAA1YIkKAgAAAAIADAAAAFNlcmlhbE51bWJlcgEBSAQDAAAAAE0AAABJZGVudGlmaWVyIHRoYXQg" +
-           "dW5pcXVlbHkgaWRlbnRpZmllcywgd2l0aGluIGEgbWFudWZhY3R1cmVyLCBhIGRldmljZSBpbnN0YW5j" +
-           "ZQAuAERIBAAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAPAAAAUmV2aXNpb25Db3VudGVyAQFJBAMA" +
-           "AAAAaQAAAEFuIGluY3JlbWVudGFsIGNvdW50ZXIgaW5kaWNhdGluZyB0aGUgbnVtYmVyIG9mIHRpbWVz" +
-           "IHRoZSBzdGF0aWMgZGF0YSB3aXRoaW4gdGhlIERldmljZSBoYXMgYmVlbiBtb2RpZmllZAAuAERJBAAA" +
-           "AAb/////AQH/////AAAAADVgiQoCAAAAAgAMAAAATWFudWZhY3R1cmVyAQFKBAMAAAAAGAAAAE1vZGVs" +
-           "IG5hbWUgb2YgdGhlIGRldmljZQAuAERKBAAAABX/////AQH/////AAAAADVgiQoCAAAAAgAFAAAATW9k" +
-           "ZWwBAUsEAwAAAAAwAAAATmFtZSBvZiB0aGUgY29tcGFueSB0aGF0IG1hbnVmYWN0dXJlZCB0aGUgZGV2" +
-           "aWNlAC4AREsEAAAAFf////8BAf////8AAAAANWCJCgIAAAACAAwAAABEZXZpY2VNYW51YWwBAUwEAwAA" +
-           "AABaAAAAQWRkcmVzcyAocGF0aG5hbWUgaW4gdGhlIGZpbGUgc3lzdGVtIG9yIGEgVVJMIHwgV2ViIGFk" +
-           "ZHJlc3MpIG9mIHVzZXIgbWFudWFsIGZvciB0aGUgZGV2aWNlAC4AREwEAAAADP////8BAf////8AAAAA" +
-           "NWCJCgIAAAACAA4AAABEZXZpY2VSZXZpc2lvbgEBTQQDAAAAACQAAABPdmVyYWxsIHJldmlzaW9uIGxl" +
-           "dmVsIG9mIHRoZSBkZXZpY2UALgBETQQAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAAAFNvZnR3" +
-           "YXJlUmV2aXNpb24BAU4EAwAAAAA1AAAAUmV2aXNpb24gbGV2ZWwgb2YgdGhlIHNvZnR3YXJlL2Zpcm13" +
-           "YXJlIG9mIHRoZSBkZXZpY2UALgBETgQAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAAAEhhcmR3" +
-           "YXJlUmV2aXNpb24BAU8EAwAAAAAsAAAAUmV2aXNpb24gbGV2ZWwgb2YgdGhlIGhhcmR3YXJlIG9mIHRo" +
-           "ZSBkZXZpY2UALgBETwQAAAAM/////wEB/////wAAAAA=";
+           "dAEBNAQDAAAAABQAAABGbGF0IGxpc3Qgb2YgTWV0aG9kcwAvADo0BAAA/////wQAAAAEYYIKBAAAAAEA" +
+           "CgAAAERpc2Nvbm5lY3QBAXEEAC8BASwBcQQAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJn" +
+           "dW1lbnRzAQFyBAAuAERyBAAAlgEAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlvblJlbGF0aW9uSWQA" +
+           "D/////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQFz" +
+           "BAAuAERzBAAAlgEAAAABACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/////AAAAAAABACgBAQAAAAEB" +
+           "/////wAAAAAEYYIKBAAAAAEABwAAAENvbm5lY3QBAXQEAC8BAXQEdAQAAAEB/////wIAAAAVYKkKAgAA" +
+           "AAAADgAAAElucHV0QXJndW1lbnRzAQF1BAAuAER1BAAAlgQAAAABACoBASYAAAAXAAAAQ29tbXVuaWNh" +
+           "dGlvblJlbGF0aW9uSWQAD/////8AAAAAAAEAKgEBFgAAAAcAAABBZGRyZXNzAA//////AAAAAAABACoB" +
+           "ARwAAAANAAAAT3JkaW5hbE51bWJlcgAG/////wAAAAAAAQAqAQEYAAAACQAAAFNlcnZpY2VJZAAH////" +
+           "/wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAXYEAC4A" +
+           "RHYEAACWAgAAAAEAKgEBHwAAABAAAABEZWxheUZvck5leHRDYWxsAAf/////AAAAAAABACoBARsAAAAM" +
+           "AAAAU2VydmljZUVycm9yABv/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEACAAAAFRy" +
+           "YW5zZmVyAQF3BAAvAQF3BHcEAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEB" +
+           "eAQALgBEeAQAAJYHAAAAAQAqAQEmAAAAFwAAAENvbW11bmljYXRpb25SZWxhdGlvbklkAA//////AAAA" +
+           "AAABACoBARgAAAAJAAAAT1BFUkFUSU9OAAz/////AAAAAAABACoBARcAAAAIAAAAQmxvY2tUYWcADP//" +
+           "//8AAAAAAAEAKgEBFAAAAAUAAABJTkRFWAAH/////wAAAAAAAQAqAQEYAAAACQAAAFNVQl9JTkRFWAAH" +
+           "/////wAAAAAAAQAqAQEYAAAACQAAAFdyaXRlRGF0YQADAQAAAAAAAAAAAQAqAQEYAAAACQAAAFNlcnZp" +
+           "Y2VJZAAH/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVu" +
+           "dHMBAXkEAC4ARHkEAACWAwAAAAEAKgEBFwAAAAgAAABSZWFkRGF0YQADAQAAAAAAAAAAAQAqAQEfAAAA" +
+           "EAAAAERlbGF5Rm9yTmV4dENhbGwAB/////8AAAAAAAEAKgEBGwAAAAwAAABTZXJ2aWNlRXJyb3IAG///" +
+           "//8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQAQAAAAR2V0UHVibGlzaGVkRGF0YQEBegQA" +
+           "LwEBegR6BAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAXsEAC4ARHsEAACW" +
+           "AgAAAAEAKgEBJgAAABcAAABDb21tdW5pY2F0aW9uUmVsYXRpb25JZAAP/////wAAAAAAAQAqAQEYAAAA" +
+           "CQAAAFNlcnZpY2VJZAAH/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRw" +
+           "dXRBcmd1bWVudHMBAXwEAC4ARHwEAACWBgAAAAEAKgEBFwAAAAgAAABCbG9ja1RhZwAM/////wAAAAAA" +
+           "AQAqAQEdAAAADgAAAEFsYXJtRXZlbnREYXRhAAMBAAAAAAAAAAABACoBAR0AAAAOAAAAQWxhcm1FdmVu" +
+           "dFR5cGUAEf////8AAAAAAAEAKgEBGAAAAAkAAABUaW1lU3RhbXAADf////8AAAAAAAEAKgEBHwAAABAA" +
+           "AABEZWxheUZvck5leHRDYWxsAAf/////AAAAAAABACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/////" +
+           "AAAAAAABACgBAQAAAAEB/////wAAAAA1YIkKAgAAAAIADAAAAFNlcmlhbE51bWJlcgEBSAQDAAAAAE0A" +
+           "AABJZGVudGlmaWVyIHRoYXQgdW5pcXVlbHkgaWRlbnRpZmllcywgd2l0aGluIGEgbWFudWZhY3R1cmVy" +
+           "LCBhIGRldmljZSBpbnN0YW5jZQAuAERIBAAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAPAAAAUmV2" +
+           "aXNpb25Db3VudGVyAQFJBAMAAAAAaQAAAEFuIGluY3JlbWVudGFsIGNvdW50ZXIgaW5kaWNhdGluZyB0" +
+           "aGUgbnVtYmVyIG9mIHRpbWVzIHRoZSBzdGF0aWMgZGF0YSB3aXRoaW4gdGhlIERldmljZSBoYXMgYmVl" +
+           "biBtb2RpZmllZAAuAERJBAAAAAb/////AQH/////AAAAADVgiQoCAAAAAgAMAAAATWFudWZhY3R1cmVy" +
+           "AQFKBAMAAAAAGAAAAE1vZGVsIG5hbWUgb2YgdGhlIGRldmljZQAuAERKBAAAABX/////AQH/////AAAA" +
+           "ADVgiQoCAAAAAgAFAAAATW9kZWwBAUsEAwAAAAAwAAAATmFtZSBvZiB0aGUgY29tcGFueSB0aGF0IG1h" +
+           "bnVmYWN0dXJlZCB0aGUgZGV2aWNlAC4AREsEAAAAFf////8BAf////8AAAAANWCJCgIAAAACAAwAAABE" +
+           "ZXZpY2VNYW51YWwBAUwEAwAAAABaAAAAQWRkcmVzcyAocGF0aG5hbWUgaW4gdGhlIGZpbGUgc3lzdGVt" +
+           "IG9yIGEgVVJMIHwgV2ViIGFkZHJlc3MpIG9mIHVzZXIgbWFudWFsIGZvciB0aGUgZGV2aWNlAC4AREwE" +
+           "AAAADP////8BAf////8AAAAANWCJCgIAAAACAA4AAABEZXZpY2VSZXZpc2lvbgEBTQQDAAAAACQAAABP" +
+           "dmVyYWxsIHJldmlzaW9uIGxldmVsIG9mIHRoZSBkZXZpY2UALgBETQQAAAAM/////wEB/////wAAAAA1" +
+           "YIkKAgAAAAIAEAAAAFNvZnR3YXJlUmV2aXNpb24BAU4EAwAAAAA1AAAAUmV2aXNpb24gbGV2ZWwgb2Yg" +
+           "dGhlIHNvZnR3YXJlL2Zpcm13YXJlIG9mIHRoZSBkZXZpY2UALgBETgQAAAAM/////wEB/////wAAAAA1" +
+           "YIkKAgAAAAIAEAAAAEhhcmR3YXJlUmV2aXNpb24BAU8EAwAAAAAsAAAAUmV2aXNpb24gbGV2ZWwgb2Yg" +
+           "dGhlIGhhcmR3YXJlIG9mIHRoZSBkZXZpY2UALgBETwQAAAAM/////wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -5236,37 +10138,41 @@ namespace Opc.Ua.Fdi7
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
            "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAuAAAAU2VydmVyQ29tbXVuaWNhdGlvblBS" +
            "T0ZJQlVTU2VydmljZVR5cGVJbnN0YW5jZQEBfQQBAX0E/////wkAAAAkYIAKAQAAAAIACQAAAE1ldGhv" +
-           "ZFNldAEBgAQDAAAAABQAAABGbGF0IGxpc3Qgb2YgTWV0aG9kcwAvADqABAAA/////wIAAAAEYYIKBAAA" +
-           "AAEABwAAAENvbm5lY3QBAcAEAC8BAcAEwAQAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJn" +
-           "dW1lbnRzAQHBBAAuAETBBAAAlgMAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlvblJlbGF0aW9uSWQA" +
-           "D/////8AAAAAAAEAKgEBFgAAAAcAAABBZGRyZXNzAAP/////AAAAAAABACoBAR0AAAAOAAAATWFudWZh" +
-           "Y3R1cmVySWQABf////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJn" +
-           "dW1lbnRzAQHCBAAuAETCBAAAlgEAAAABACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/////AAAAAAAB" +
-           "ACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEACAAAAFRyYW5zZmVyAQHDBAAvAQHDBMMEAAABAf////8C" +
-           "AAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBxAQALgBExAQAAJYFAAAAAQAqAQEmAAAAFwAA" +
-           "AENvbW11bmljYXRpb25SZWxhdGlvbklkAA//////AAAAAAABACoBARgAAAAJAAAAT1BFUkFUSU9OAAz/" +
-           "////AAAAAAABACoBARMAAAAEAAAAU0xPVAAD/////wAAAAAAAQAqAQEUAAAABQAAAElOREVYAAP/////" +
-           "AAAAAAABACoBARYAAAAHAAAAUkVRVUVTVAAP/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIA" +
-           "AAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAcUEAC4ARMUEAACWAwAAAAEAKgEBFAAAAAUAAABSRVBMWQAP" +
-           "/////wAAAAAAAQAqAQEdAAAADgAAAFJFU1BPTlNFX0NPREVTAA//////AAAAAAABACoBARsAAAAMAAAA" +
-           "U2VydmljZUVycm9yABv/////AAAAAAABACgBAQAAAAEB/////wAAAAA1YIkKAgAAAAIADAAAAFNlcmlh" +
-           "bE51bWJlcgEBlAQDAAAAAE0AAABJZGVudGlmaWVyIHRoYXQgdW5pcXVlbHkgaWRlbnRpZmllcywgd2l0" +
-           "aGluIGEgbWFudWZhY3R1cmVyLCBhIGRldmljZSBpbnN0YW5jZQAuAESUBAAAAAz/////AQH/////AAAA" +
-           "ADVgiQoCAAAAAgAPAAAAUmV2aXNpb25Db3VudGVyAQGVBAMAAAAAaQAAAEFuIGluY3JlbWVudGFsIGNv" +
-           "dW50ZXIgaW5kaWNhdGluZyB0aGUgbnVtYmVyIG9mIHRpbWVzIHRoZSBzdGF0aWMgZGF0YSB3aXRoaW4g" +
-           "dGhlIERldmljZSBoYXMgYmVlbiBtb2RpZmllZAAuAESVBAAAAAb/////AQH/////AAAAADVgiQoCAAAA" +
-           "AgAMAAAATWFudWZhY3R1cmVyAQGWBAMAAAAAGAAAAE1vZGVsIG5hbWUgb2YgdGhlIGRldmljZQAuAESW" +
-           "BAAAABX/////AQH/////AAAAADVgiQoCAAAAAgAFAAAATW9kZWwBAZcEAwAAAAAwAAAATmFtZSBvZiB0" +
-           "aGUgY29tcGFueSB0aGF0IG1hbnVmYWN0dXJlZCB0aGUgZGV2aWNlAC4ARJcEAAAAFf////8BAf////8A" +
-           "AAAANWCJCgIAAAACAAwAAABEZXZpY2VNYW51YWwBAZgEAwAAAABaAAAAQWRkcmVzcyAocGF0aG5hbWUg" +
-           "aW4gdGhlIGZpbGUgc3lzdGVtIG9yIGEgVVJMIHwgV2ViIGFkZHJlc3MpIG9mIHVzZXIgbWFudWFsIGZv" +
-           "ciB0aGUgZGV2aWNlAC4ARJgEAAAADP////8BAf////8AAAAANWCJCgIAAAACAA4AAABEZXZpY2VSZXZp" +
-           "c2lvbgEBmQQDAAAAACQAAABPdmVyYWxsIHJldmlzaW9uIGxldmVsIG9mIHRoZSBkZXZpY2UALgBEmQQA" +
-           "AAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAAAFNvZnR3YXJlUmV2aXNpb24BAZoEAwAAAAA1AAAA" +
-           "UmV2aXNpb24gbGV2ZWwgb2YgdGhlIHNvZnR3YXJlL2Zpcm13YXJlIG9mIHRoZSBkZXZpY2UALgBEmgQA" +
-           "AAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAAAEhhcmR3YXJlUmV2aXNpb24BAZsEAwAAAAAsAAAA" +
-           "UmV2aXNpb24gbGV2ZWwgb2YgdGhlIGhhcmR3YXJlIG9mIHRoZSBkZXZpY2UALgBEmwQAAAAM/////wEB" +
-           "/////wAAAAA=";
+           "ZFNldAEBgAQDAAAAABQAAABGbGF0IGxpc3Qgb2YgTWV0aG9kcwAvADqABAAA/////wMAAAAEYYIKBAAA" +
+           "AAEACgAAAERpc2Nvbm5lY3QBAb0EAC8BASwBvQQAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0" +
+           "QXJndW1lbnRzAQG+BAAuAES+BAAAlgEAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlvblJlbGF0aW9u" +
+           "SWQAD/////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRz" +
+           "AQG/BAAuAES/BAAAlgEAAAABACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/////AAAAAAABACgBAQAA" +
+           "AAEB/////wAAAAAEYYIKBAAAAAEABwAAAENvbm5lY3QBAcAEAC8BAcAEwAQAAAEB/////wIAAAAVYKkK" +
+           "AgAAAAAADgAAAElucHV0QXJndW1lbnRzAQHBBAAuAETBBAAAlgMAAAABACoBASYAAAAXAAAAQ29tbXVu" +
+           "aWNhdGlvblJlbGF0aW9uSWQAD/////8AAAAAAAEAKgEBFgAAAAcAAABBZGRyZXNzAAP/////AAAAAAAB" +
+           "ACoBAR0AAAAOAAAATWFudWZhY3R1cmVySWQABf////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoC" +
+           "AAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQHCBAAuAETCBAAAlgEAAAABACoBARsAAAAMAAAAU2Vydmlj" +
+           "ZUVycm9yABv/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEACAAAAFRyYW5zZmVyAQHD" +
+           "BAAvAQHDBMMEAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBxAQALgBExAQA" +
+           "AJYFAAAAAQAqAQEmAAAAFwAAAENvbW11bmljYXRpb25SZWxhdGlvbklkAA//////AAAAAAABACoBARgA" +
+           "AAAJAAAAT1BFUkFUSU9OAAz/////AAAAAAABACoBARMAAAAEAAAAU0xPVAAD/////wAAAAAAAQAqAQEU" +
+           "AAAABQAAAElOREVYAAP/////AAAAAAABACoBARYAAAAHAAAAUkVRVUVTVAAP/////wAAAAAAAQAoAQEA" +
+           "AAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAcUEAC4ARMUEAACWAwAAAAEA" +
+           "KgEBFAAAAAUAAABSRVBMWQAP/////wAAAAAAAQAqAQEdAAAADgAAAFJFU1BPTlNFX0NPREVTAA//////" +
+           "AAAAAAABACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/////AAAAAAABACgBAQAAAAEB/////wAAAAA1" +
+           "YIkKAgAAAAIADAAAAFNlcmlhbE51bWJlcgEBlAQDAAAAAE0AAABJZGVudGlmaWVyIHRoYXQgdW5pcXVl" +
+           "bHkgaWRlbnRpZmllcywgd2l0aGluIGEgbWFudWZhY3R1cmVyLCBhIGRldmljZSBpbnN0YW5jZQAuAESU" +
+           "BAAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAPAAAAUmV2aXNpb25Db3VudGVyAQGVBAMAAAAAaQAA" +
+           "AEFuIGluY3JlbWVudGFsIGNvdW50ZXIgaW5kaWNhdGluZyB0aGUgbnVtYmVyIG9mIHRpbWVzIHRoZSBz" +
+           "dGF0aWMgZGF0YSB3aXRoaW4gdGhlIERldmljZSBoYXMgYmVlbiBtb2RpZmllZAAuAESVBAAAAAb/////" +
+           "AQH/////AAAAADVgiQoCAAAAAgAMAAAATWFudWZhY3R1cmVyAQGWBAMAAAAAGAAAAE1vZGVsIG5hbWUg" +
+           "b2YgdGhlIGRldmljZQAuAESWBAAAABX/////AQH/////AAAAADVgiQoCAAAAAgAFAAAATW9kZWwBAZcE" +
+           "AwAAAAAwAAAATmFtZSBvZiB0aGUgY29tcGFueSB0aGF0IG1hbnVmYWN0dXJlZCB0aGUgZGV2aWNlAC4A" +
+           "RJcEAAAAFf////8BAf////8AAAAANWCJCgIAAAACAAwAAABEZXZpY2VNYW51YWwBAZgEAwAAAABaAAAA" +
+           "QWRkcmVzcyAocGF0aG5hbWUgaW4gdGhlIGZpbGUgc3lzdGVtIG9yIGEgVVJMIHwgV2ViIGFkZHJlc3Mp" +
+           "IG9mIHVzZXIgbWFudWFsIGZvciB0aGUgZGV2aWNlAC4ARJgEAAAADP////8BAf////8AAAAANWCJCgIA" +
+           "AAACAA4AAABEZXZpY2VSZXZpc2lvbgEBmQQDAAAAACQAAABPdmVyYWxsIHJldmlzaW9uIGxldmVsIG9m" +
+           "IHRoZSBkZXZpY2UALgBEmQQAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAAAFNvZnR3YXJlUmV2" +
+           "aXNpb24BAZoEAwAAAAA1AAAAUmV2aXNpb24gbGV2ZWwgb2YgdGhlIHNvZnR3YXJlL2Zpcm13YXJlIG9m" +
+           "IHRoZSBkZXZpY2UALgBEmgQAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAAAEhhcmR3YXJlUmV2" +
+           "aXNpb24BAZsEAwAAAAAsAAAAUmV2aXNpb24gbGV2ZWwgb2YgdGhlIGhhcmR3YXJlIG9mIHRoZSBkZXZp" +
+           "Y2UALgBEmwQAAAAM/////wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -5331,38 +10237,42 @@ namespace Opc.Ua.Fdi7
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
            "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAuAAAAU2VydmVyQ29tbXVuaWNhdGlvblBS" +
            "T0ZJTkVUU2VydmljZVR5cGVJbnN0YW5jZQEBxgQBAcYE/////wkAAAAkYIAKAQAAAAIACQAAAE1ldGhv" +
-           "ZFNldAEByQQDAAAAABQAAABGbGF0IGxpc3Qgb2YgTWV0aG9kcwAvADrJBAAA/////wIAAAAEYYIKBAAA" +
-           "AAEABwAAAENvbm5lY3QBAQkFAC8BAQkFCQUAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJn" +
-           "dW1lbnRzAQEKBQAuAEQKBQAAlgQAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlvblJlbGF0aW9uSWQA" +
-           "D/////8AAAAAAAEAKgEBFgAAAAcAAABETlNOQU1FAAz/////AAAAAAABACoBARcAAAAIAAAARGV2aWNl" +
-           "SUQABf////8AAAAAAAEAKgEBFwAAAAgAAABWZW5kb3JJRAAF/////wAAAAAAAQAoAQEAAAABAf////8A" +
-           "AAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAQsFAC4ARAsFAACWAQAAAAEAKgEBGwAAAAwA" +
-           "AABTZXJ2aWNlRXJyb3IAG/////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQAIAAAAVHJh" +
-           "bnNmZXIBAQwFAC8BAQwFDAUAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQEN" +
-           "BQAuAEQNBQAAlgcAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlvblJlbGF0aW9uSWQAD/////8AAAAA" +
-           "AAEAKgEBGAAAAAkAAABPUEVSQVRJT04ADP////8AAAAAAAEAKgEBEwAAAAQAAABTTE9UAAX/////AAAA" +
-           "AAABACoBARYAAAAHAAAAU1VCU0xPVAAF/////wAAAAAAAQAqAQEUAAAABQAAAElOREVYAAX/////AAAA" +
-           "AAABACoBARIAAAADAAAAQVBJAAf/////AAAAAAABACoBARYAAAAHAAAAUkVRVUVTVAAP/////wAAAAAA" +
-           "AQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAQ4FAC4ARA4FAACW" +
-           "AwAAAAEAKgEBFAAAAAUAAABSRVBMWQAP/////wAAAAAAAQAqAQEdAAAADgAAAFJFU1BPTlNFX0NPREVT" +
-           "AA//////AAAAAAABACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/////AAAAAAABACgBAQAAAAEB////" +
-           "/wAAAAA1YIkKAgAAAAIADAAAAFNlcmlhbE51bWJlcgEB3QQDAAAAAE0AAABJZGVudGlmaWVyIHRoYXQg" +
-           "dW5pcXVlbHkgaWRlbnRpZmllcywgd2l0aGluIGEgbWFudWZhY3R1cmVyLCBhIGRldmljZSBpbnN0YW5j" +
-           "ZQAuAETdBAAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAPAAAAUmV2aXNpb25Db3VudGVyAQHeBAMA" +
-           "AAAAaQAAAEFuIGluY3JlbWVudGFsIGNvdW50ZXIgaW5kaWNhdGluZyB0aGUgbnVtYmVyIG9mIHRpbWVz" +
-           "IHRoZSBzdGF0aWMgZGF0YSB3aXRoaW4gdGhlIERldmljZSBoYXMgYmVlbiBtb2RpZmllZAAuAETeBAAA" +
-           "AAb/////AQH/////AAAAADVgiQoCAAAAAgAMAAAATWFudWZhY3R1cmVyAQHfBAMAAAAAGAAAAE1vZGVs" +
-           "IG5hbWUgb2YgdGhlIGRldmljZQAuAETfBAAAABX/////AQH/////AAAAADVgiQoCAAAAAgAFAAAATW9k" +
-           "ZWwBAeAEAwAAAAAwAAAATmFtZSBvZiB0aGUgY29tcGFueSB0aGF0IG1hbnVmYWN0dXJlZCB0aGUgZGV2" +
-           "aWNlAC4AROAEAAAAFf////8BAf////8AAAAANWCJCgIAAAACAAwAAABEZXZpY2VNYW51YWwBAeEEAwAA" +
-           "AABaAAAAQWRkcmVzcyAocGF0aG5hbWUgaW4gdGhlIGZpbGUgc3lzdGVtIG9yIGEgVVJMIHwgV2ViIGFk" +
-           "ZHJlc3MpIG9mIHVzZXIgbWFudWFsIGZvciB0aGUgZGV2aWNlAC4AROEEAAAADP////8BAf////8AAAAA" +
-           "NWCJCgIAAAACAA4AAABEZXZpY2VSZXZpc2lvbgEB4gQDAAAAACQAAABPdmVyYWxsIHJldmlzaW9uIGxl" +
-           "dmVsIG9mIHRoZSBkZXZpY2UALgBE4gQAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAAAFNvZnR3" +
-           "YXJlUmV2aXNpb24BAeMEAwAAAAA1AAAAUmV2aXNpb24gbGV2ZWwgb2YgdGhlIHNvZnR3YXJlL2Zpcm13" +
-           "YXJlIG9mIHRoZSBkZXZpY2UALgBE4wQAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAAAEhhcmR3" +
-           "YXJlUmV2aXNpb24BAeQEAwAAAAAsAAAAUmV2aXNpb24gbGV2ZWwgb2YgdGhlIGhhcmR3YXJlIG9mIHRo" +
-           "ZSBkZXZpY2UALgBE5AQAAAAM/////wEB/////wAAAAA=";
+           "ZFNldAEByQQDAAAAABQAAABGbGF0IGxpc3Qgb2YgTWV0aG9kcwAvADrJBAAA/////wMAAAAEYYIKBAAA" +
+           "AAEACgAAAERpc2Nvbm5lY3QBAQYFAC8BASwBBgUAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0" +
+           "QXJndW1lbnRzAQEHBQAuAEQHBQAAlgEAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlvblJlbGF0aW9u" +
+           "SWQAD/////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRz" +
+           "AQEIBQAuAEQIBQAAlgEAAAABACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/////AAAAAAABACgBAQAA" +
+           "AAEB/////wAAAAAEYYIKBAAAAAEABwAAAENvbm5lY3QBAQkFAC8BAQkFCQUAAAEB/////wIAAAAVYKkK" +
+           "AgAAAAAADgAAAElucHV0QXJndW1lbnRzAQEKBQAuAEQKBQAAlgQAAAABACoBASYAAAAXAAAAQ29tbXVu" +
+           "aWNhdGlvblJlbGF0aW9uSWQAD/////8AAAAAAAEAKgEBFgAAAAcAAABETlNOQU1FAAz/////AAAAAAAB" +
+           "ACoBARcAAAAIAAAARGV2aWNlSUQABf////8AAAAAAAEAKgEBFwAAAAgAAABWZW5kb3JJRAAF/////wAA" +
+           "AAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAQsFAC4ARAsF" +
+           "AACWAQAAAAEAKgEBGwAAAAwAAABTZXJ2aWNlRXJyb3IAG/////8AAAAAAAEAKAEBAAAAAQH/////AAAA" +
+           "AARhggoEAAAAAQAIAAAAVHJhbnNmZXIBAQwFAC8BAQwFDAUAAAEB/////wIAAAAVYKkKAgAAAAAADgAA" +
+           "AElucHV0QXJndW1lbnRzAQENBQAuAEQNBQAAlgcAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlvblJl" +
+           "bGF0aW9uSWQAD/////8AAAAAAAEAKgEBGAAAAAkAAABPUEVSQVRJT04ADP////8AAAAAAAEAKgEBEwAA" +
+           "AAQAAABTTE9UAAX/////AAAAAAABACoBARYAAAAHAAAAU1VCU0xPVAAF/////wAAAAAAAQAqAQEUAAAA" +
+           "BQAAAElOREVYAAX/////AAAAAAABACoBARIAAAADAAAAQVBJAAf/////AAAAAAABACoBARYAAAAHAAAA" +
+           "UkVRVUVTVAAP/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1" +
+           "bWVudHMBAQ4FAC4ARA4FAACWAwAAAAEAKgEBFAAAAAUAAABSRVBMWQAP/////wAAAAAAAQAqAQEdAAAA" +
+           "DgAAAFJFU1BPTlNFX0NPREVTAA//////AAAAAAABACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/////" +
+           "AAAAAAABACgBAQAAAAEB/////wAAAAA1YIkKAgAAAAIADAAAAFNlcmlhbE51bWJlcgEB3QQDAAAAAE0A" +
+           "AABJZGVudGlmaWVyIHRoYXQgdW5pcXVlbHkgaWRlbnRpZmllcywgd2l0aGluIGEgbWFudWZhY3R1cmVy" +
+           "LCBhIGRldmljZSBpbnN0YW5jZQAuAETdBAAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAPAAAAUmV2" +
+           "aXNpb25Db3VudGVyAQHeBAMAAAAAaQAAAEFuIGluY3JlbWVudGFsIGNvdW50ZXIgaW5kaWNhdGluZyB0" +
+           "aGUgbnVtYmVyIG9mIHRpbWVzIHRoZSBzdGF0aWMgZGF0YSB3aXRoaW4gdGhlIERldmljZSBoYXMgYmVl" +
+           "biBtb2RpZmllZAAuAETeBAAAAAb/////AQH/////AAAAADVgiQoCAAAAAgAMAAAATWFudWZhY3R1cmVy" +
+           "AQHfBAMAAAAAGAAAAE1vZGVsIG5hbWUgb2YgdGhlIGRldmljZQAuAETfBAAAABX/////AQH/////AAAA" +
+           "ADVgiQoCAAAAAgAFAAAATW9kZWwBAeAEAwAAAAAwAAAATmFtZSBvZiB0aGUgY29tcGFueSB0aGF0IG1h" +
+           "bnVmYWN0dXJlZCB0aGUgZGV2aWNlAC4AROAEAAAAFf////8BAf////8AAAAANWCJCgIAAAACAAwAAABE" +
+           "ZXZpY2VNYW51YWwBAeEEAwAAAABaAAAAQWRkcmVzcyAocGF0aG5hbWUgaW4gdGhlIGZpbGUgc3lzdGVt" +
+           "IG9yIGEgVVJMIHwgV2ViIGFkZHJlc3MpIG9mIHVzZXIgbWFudWFsIGZvciB0aGUgZGV2aWNlAC4AROEE" +
+           "AAAADP////8BAf////8AAAAANWCJCgIAAAACAA4AAABEZXZpY2VSZXZpc2lvbgEB4gQDAAAAACQAAABP" +
+           "dmVyYWxsIHJldmlzaW9uIGxldmVsIG9mIHRoZSBkZXZpY2UALgBE4gQAAAAM/////wEB/////wAAAAA1" +
+           "YIkKAgAAAAIAEAAAAFNvZnR3YXJlUmV2aXNpb24BAeMEAwAAAAA1AAAAUmV2aXNpb24gbGV2ZWwgb2Yg" +
+           "dGhlIHNvZnR3YXJlL2Zpcm13YXJlIG9mIHRoZSBkZXZpY2UALgBE4wQAAAAM/////wEB/////wAAAAA1" +
+           "YIkKAgAAAAIAEAAAAEhhcmR3YXJlUmV2aXNpb24BAeQEAwAAAAAsAAAAUmV2aXNpb24gbGV2ZWwgb2Yg" +
+           "dGhlIGhhcmR3YXJlIG9mIHRoZSBkZXZpY2UALgBE5AQAAAAM/////wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -5427,40 +10337,253 @@ namespace Opc.Ua.Fdi7
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
            "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAqAAAAU2VydmVyQ29tbXVuaWNhdGlvbkhB" +
            "UlRTZXJ2aWNlVHlwZUluc3RhbmNlAQEPBQEBDwX/////CQAAACRggAoBAAAAAgAJAAAATWV0aG9kU2V0" +
-           "AQESBQMAAAAAFAAAAEZsYXQgbGlzdCBvZiBNZXRob2RzAC8AOhIFAAD/////AwAAAARhggoEAAAAAQAH" +
-           "AAAAQ29ubmVjdAEBUgUALwEBUgVSBQAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVu" +
-           "dHMBAVMFAC4ARFMFAACWAgAAAAEAKgEBJgAAABcAAABDb21tdW5pY2F0aW9uUmVsYXRpb25JZAAP////" +
-           "/wAAAAAAAQAqAQEaAAAACwAAAExvbmdBZGRyZXNzAA//////AAAAAAABACgBAQAAAAEB/////wAAAAAV" +
-           "YKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBVAUALgBEVAUAAJYBAAAAAQAqAQEbAAAADAAAAFNl" +
-           "cnZpY2VFcnJvcgAb/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAABAAgAAABUcmFuc2Zl" +
-           "cgEBVQUALwEBVQVVBQAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAVYFAC4A" +
-           "RFYFAACWAwAAAAEAKgEBJgAAABcAAABDb21tdW5pY2F0aW9uUmVsYXRpb25JZAAP/////wAAAAAAAQAq" +
-           "AQEWAAAABwAAAENvbW1hbmQABf////8AAAAAAAEAKgEBFgAAAAcAAABSZXF1ZXN0AA//////AAAAAAAB" +
-           "ACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBVwUALgBEVwUAAJYC" +
-           "AAAAAQAqAQEUAAAABQAAAFJlcGx5AA//////AAAAAAABACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/" +
-           "////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEAEAAAAEdldFB1Ymxpc2hlZERhdGEBAVgF" +
-           "AC8BAVgFWAUAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFZBQAuAERZBQAA" +
-           "lgEAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlvblJlbGF0aW9uSWQAD/////8AAAAAAAEAKAEBAAAA" +
-           "AQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQFaBQAuAERaBQAAlgQAAAABACoB" +
-           "ARYAAAAHAAAAQ29tbWFuZAAF/////wAAAAAAAQAqAQEUAAAABQAAAFJlcGx5AA//////AAAAAAABACoB" +
-           "ARgAAAAJAAAAVGltZVN0YW1wAA3/////AAAAAAABACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/////" +
-           "AAAAAAABACgBAQAAAAEB/////wAAAAA1YIkKAgAAAAIADAAAAFNlcmlhbE51bWJlcgEBJgUDAAAAAE0A" +
-           "AABJZGVudGlmaWVyIHRoYXQgdW5pcXVlbHkgaWRlbnRpZmllcywgd2l0aGluIGEgbWFudWZhY3R1cmVy" +
-           "LCBhIGRldmljZSBpbnN0YW5jZQAuAEQmBQAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAPAAAAUmV2" +
-           "aXNpb25Db3VudGVyAQEnBQMAAAAAaQAAAEFuIGluY3JlbWVudGFsIGNvdW50ZXIgaW5kaWNhdGluZyB0" +
-           "aGUgbnVtYmVyIG9mIHRpbWVzIHRoZSBzdGF0aWMgZGF0YSB3aXRoaW4gdGhlIERldmljZSBoYXMgYmVl" +
-           "biBtb2RpZmllZAAuAEQnBQAAAAb/////AQH/////AAAAADVgiQoCAAAAAgAMAAAATWFudWZhY3R1cmVy" +
-           "AQEoBQMAAAAAGAAAAE1vZGVsIG5hbWUgb2YgdGhlIGRldmljZQAuAEQoBQAAABX/////AQH/////AAAA" +
-           "ADVgiQoCAAAAAgAFAAAATW9kZWwBASkFAwAAAAAwAAAATmFtZSBvZiB0aGUgY29tcGFueSB0aGF0IG1h" +
-           "bnVmYWN0dXJlZCB0aGUgZGV2aWNlAC4ARCkFAAAAFf////8BAf////8AAAAANWCJCgIAAAACAAwAAABE" +
-           "ZXZpY2VNYW51YWwBASoFAwAAAABaAAAAQWRkcmVzcyAocGF0aG5hbWUgaW4gdGhlIGZpbGUgc3lzdGVt" +
-           "IG9yIGEgVVJMIHwgV2ViIGFkZHJlc3MpIG9mIHVzZXIgbWFudWFsIGZvciB0aGUgZGV2aWNlAC4ARCoF" +
-           "AAAADP////8BAf////8AAAAANWCJCgIAAAACAA4AAABEZXZpY2VSZXZpc2lvbgEBKwUDAAAAACQAAABP" +
-           "dmVyYWxsIHJldmlzaW9uIGxldmVsIG9mIHRoZSBkZXZpY2UALgBEKwUAAAAM/////wEB/////wAAAAA1" +
-           "YIkKAgAAAAIAEAAAAFNvZnR3YXJlUmV2aXNpb24BASwFAwAAAAA1AAAAUmV2aXNpb24gbGV2ZWwgb2Yg" +
-           "dGhlIHNvZnR3YXJlL2Zpcm13YXJlIG9mIHRoZSBkZXZpY2UALgBELAUAAAAM/////wEB/////wAAAAA1" +
-           "YIkKAgAAAAIAEAAAAEhhcmR3YXJlUmV2aXNpb24BAS0FAwAAAAAsAAAAUmV2aXNpb24gbGV2ZWwgb2Yg" +
-           "dGhlIGhhcmR3YXJlIG9mIHRoZSBkZXZpY2UALgBELQUAAAAM/////wEB/////wAAAAA=";
+           "AQESBQMAAAAAFAAAAEZsYXQgbGlzdCBvZiBNZXRob2RzAC8AOhIFAAD/////BAAAAARhggoEAAAAAQAK" +
+           "AAAARGlzY29ubmVjdAEBTwUALwEBLAFPBQAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1" +
+           "bWVudHMBAVAFAC4ARFAFAACWAQAAAAEAKgEBJgAAABcAAABDb21tdW5pY2F0aW9uUmVsYXRpb25JZAAP" +
+           "/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAVEF" +
+           "AC4ARFEFAACWAQAAAAEAKgEBGwAAAAwAAABTZXJ2aWNlRXJyb3IAG/////8AAAAAAAEAKAEBAAAAAQH/" +
+           "////AAAAAARhggoEAAAAAQAHAAAAQ29ubmVjdAEBUgUALwEBUgVSBQAAAQH/////AgAAABVgqQoCAAAA" +
+           "AAAOAAAASW5wdXRBcmd1bWVudHMBAVMFAC4ARFMFAACWAgAAAAEAKgEBJgAAABcAAABDb21tdW5pY2F0" +
+           "aW9uUmVsYXRpb25JZAAP/////wAAAAAAAQAqAQEaAAAACwAAAExvbmdBZGRyZXNzAA//////AAAAAAAB" +
+           "ACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBVAUALgBEVAUAAJYB" +
+           "AAAAAQAqAQEbAAAADAAAAFNlcnZpY2VFcnJvcgAb/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGC" +
+           "CgQAAAABAAgAAABUcmFuc2ZlcgEBVQUALwEBVQVVBQAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5w" +
+           "dXRBcmd1bWVudHMBAVYFAC4ARFYFAACWAwAAAAEAKgEBJgAAABcAAABDb21tdW5pY2F0aW9uUmVsYXRp" +
+           "b25JZAAP/////wAAAAAAAQAqAQEWAAAABwAAAENvbW1hbmQABf////8AAAAAAAEAKgEBFgAAAAcAAABS" +
+           "ZXF1ZXN0AA//////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3Vt" +
+           "ZW50cwEBVwUALgBEVwUAAJYCAAAAAQAqAQEUAAAABQAAAFJlcGx5AA//////AAAAAAABACoBARsAAAAM" +
+           "AAAAU2VydmljZUVycm9yABv/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEAEAAAAEdl" +
+           "dFB1Ymxpc2hlZERhdGEBAVgFAC8BAVgFWAUAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJn" +
+           "dW1lbnRzAQFZBQAuAERZBQAAlgEAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlvblJlbGF0aW9uSWQA" +
+           "D/////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQFa" +
+           "BQAuAERaBQAAlgQAAAABACoBARYAAAAHAAAAQ29tbWFuZAAF/////wAAAAAAAQAqAQEUAAAABQAAAFJl" +
+           "cGx5AA//////AAAAAAABACoBARgAAAAJAAAAVGltZVN0YW1wAA3/////AAAAAAABACoBARsAAAAMAAAA" +
+           "U2VydmljZUVycm9yABv/////AAAAAAABACgBAQAAAAEB/////wAAAAA1YIkKAgAAAAIADAAAAFNlcmlh" +
+           "bE51bWJlcgEBJgUDAAAAAE0AAABJZGVudGlmaWVyIHRoYXQgdW5pcXVlbHkgaWRlbnRpZmllcywgd2l0" +
+           "aGluIGEgbWFudWZhY3R1cmVyLCBhIGRldmljZSBpbnN0YW5jZQAuAEQmBQAAAAz/////AQH/////AAAA" +
+           "ADVgiQoCAAAAAgAPAAAAUmV2aXNpb25Db3VudGVyAQEnBQMAAAAAaQAAAEFuIGluY3JlbWVudGFsIGNv" +
+           "dW50ZXIgaW5kaWNhdGluZyB0aGUgbnVtYmVyIG9mIHRpbWVzIHRoZSBzdGF0aWMgZGF0YSB3aXRoaW4g" +
+           "dGhlIERldmljZSBoYXMgYmVlbiBtb2RpZmllZAAuAEQnBQAAAAb/////AQH/////AAAAADVgiQoCAAAA" +
+           "AgAMAAAATWFudWZhY3R1cmVyAQEoBQMAAAAAGAAAAE1vZGVsIG5hbWUgb2YgdGhlIGRldmljZQAuAEQo" +
+           "BQAAABX/////AQH/////AAAAADVgiQoCAAAAAgAFAAAATW9kZWwBASkFAwAAAAAwAAAATmFtZSBvZiB0" +
+           "aGUgY29tcGFueSB0aGF0IG1hbnVmYWN0dXJlZCB0aGUgZGV2aWNlAC4ARCkFAAAAFf////8BAf////8A" +
+           "AAAANWCJCgIAAAACAAwAAABEZXZpY2VNYW51YWwBASoFAwAAAABaAAAAQWRkcmVzcyAocGF0aG5hbWUg" +
+           "aW4gdGhlIGZpbGUgc3lzdGVtIG9yIGEgVVJMIHwgV2ViIGFkZHJlc3MpIG9mIHVzZXIgbWFudWFsIGZv" +
+           "ciB0aGUgZGV2aWNlAC4ARCoFAAAADP////8BAf////8AAAAANWCJCgIAAAACAA4AAABEZXZpY2VSZXZp" +
+           "c2lvbgEBKwUDAAAAACQAAABPdmVyYWxsIHJldmlzaW9uIGxldmVsIG9mIHRoZSBkZXZpY2UALgBEKwUA" +
+           "AAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAAAFNvZnR3YXJlUmV2aXNpb24BASwFAwAAAAA1AAAA" +
+           "UmV2aXNpb24gbGV2ZWwgb2YgdGhlIHNvZnR3YXJlL2Zpcm13YXJlIG9mIHRoZSBkZXZpY2UALgBELAUA" +
+           "AAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAAAEhhcmR3YXJlUmV2aXNpb24BAS0FAwAAAAAsAAAA" +
+           "UmV2aXNpb24gbGV2ZWwgb2YgdGhlIGhhcmR3YXJlIG9mIHRoZSBkZXZpY2UALgBELQUAAAAM/////wEB" +
+           "/////wAAAAA=";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region ServerCommunicationISA100_WirelessServiceState Class
+    #if (!OPCUA_EXCLUDE_ServerCommunicationISA100_WirelessServiceState)
+    /// <summary>
+    /// Stores an instance of the ServerCommunicationISA100_WirelessServiceType ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class ServerCommunicationISA100_WirelessServiceState : ServerCommunicationServiceState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public ServerCommunicationISA100_WirelessServiceState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.Fdi7.ObjectTypes.ServerCommunicationISA100_WirelessServiceType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQA1AAAAU2VydmVyQ29tbXVuaWNhdGlvbklT" +
+           "QTEwMF9XaXJlbGVzc1NlcnZpY2VUeXBlSW5zdGFuY2UBAQkIAQEJCP////8JAAAAJGCACgEAAAACAAkA" +
+           "AABNZXRob2RTZXQBAQwIAwAAAAAUAAAARmxhdCBsaXN0IG9mIE1ldGhvZHMALwA6DAgAAP////8EAAAA" +
+           "BGGCCgQAAAABAAoAAABEaXNjb25uZWN0AQFJCAAvAQEsAUkIAAABAf////8CAAAAFWCpCgIAAAAAAA4A" +
+           "AABJbnB1dEFyZ3VtZW50cwEBSggALgBESggAAJYBAAAAAQAqAQEmAAAAFwAAAENvbW11bmljYXRpb25S" +
+           "ZWxhdGlvbklkAA//////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFy" +
+           "Z3VtZW50cwEBSwgALgBESwgAAJYBAAAAAQAqAQEbAAAADAAAAFNlcnZpY2VFcnJvcgAb/////wAAAAAA" +
+           "AQAoAQEAAAABAf////8AAAAABGGCCgQAAAABAAcAAABDb25uZWN0AQFMCAAvAQFMCEwIAAABAf////8C" +
+           "AAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBTQgALgBETQgAAJYDAAAAAQAqAQEmAAAAFwAA" +
+           "AENvbW11bmljYXRpb25SZWxhdGlvbklkAA//////AAAAAAABACoBARgAAAAJAAAASVBBZGRyZXNzAA//" +
+           "////AAAAAAABACoBARgAAAAJAAAAU2VydmljZUlkAAf/////AAAAAAABACgBAQAAAAEB/////wAAAAAV" +
+           "YKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBTggALgBETggAAJYCAAAAAQAqAQEfAAAAEAAAAERl" +
+           "bGF5Rm9yTmV4dENhbGwAB/////8AAAAAAAEAKgEBGwAAAAwAAABTZXJ2aWNlRXJyb3IAG/////8AAAAA" +
+           "AAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQAIAAAAVHJhbnNmZXIBAU8IAC8BAU8ITwgAAAEB////" +
+           "/wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFQCAAuAERQCAAAlggAAAABACoBASYAAAAX" +
+           "AAAAQ29tbXVuaWNhdGlvblJlbGF0aW9uSWQAD/////8AAAAAAAEAKgEBGAAAAAkAAABPUEVSQVRJT04A" +
+           "DP////8AAAAAAAEAKgEBFAAAAAUAAABBcHBJRAAF/////wAAAAAAAQAqAQEXAAAACAAAAE9iamVjdElE" +
+           "AAX/////AAAAAAABACoBARsAAAAMAAAAQXR0ck9yTWV0aElEAAX/////AAAAAAABACoBARgAAAAJAAAA" +
+           "U1VCX0lOREVYAAf/////AAAAAAABACoBARgAAAAJAAAAV3JpdGVEYXRhAAMBAAAAAAAAAAABACoBARgA" +
+           "AAAJAAAAUmVxdWVzdElkAAf/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91" +
+           "dHB1dEFyZ3VtZW50cwEBUQgALgBEUQgAAJYCAAAAAQAqAQEXAAAACAAAAFJlYWREYXRhAAMBAAAAAAAA" +
+           "AAABACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIK" +
+           "BAAAAAEAEAAAAEdldFB1Ymxpc2hlZERhdGEBAVIIAC8BAVIIUggAAAEB/////wIAAAAVYKkKAgAAAAAA" +
+           "DgAAAElucHV0QXJndW1lbnRzAQFTCAAuAERTCAAAlgIAAAABACoBASYAAAAXAAAAQ29tbXVuaWNhdGlv" +
+           "blJlbGF0aW9uSWQAD/////8AAAAAAAEAKgEBGAAAAAkAAABSZXF1ZXN0SWQAB/////8AAAAAAAEAKAEB" +
+           "AAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQFUCAAuAERUCAAAlgYAAAAB" +
+           "ACoBARQAAAAFAAAAQXBwSUQABf////8AAAAAAAEAKgEBFwAAAAgAAABPYmplY3RJRAAF/////wAAAAAA" +
+           "AQAqAQEdAAAADgAAAEFsYXJtRXZlbnREYXRhAAMBAAAAAAAAAAABACoBAR0AAAAOAAAAQWxhcm1FdmVu" +
+           "dFR5cGUABf////8AAAAAAAEAKgEBGAAAAAkAAABUaW1lU3RhbXAADf////8AAAAAAAEAKgEBGwAAAAwA" +
+           "AABTZXJ2aWNlRXJyb3IAG/////8AAAAAAAEAKAEBAAAAAQH/////AAAAADVgiQoCAAAAAgAMAAAAU2Vy" +
+           "aWFsTnVtYmVyAQEgCAMAAAAATQAAAElkZW50aWZpZXIgdGhhdCB1bmlxdWVseSBpZGVudGlmaWVzLCB3" +
+           "aXRoaW4gYSBtYW51ZmFjdHVyZXIsIGEgZGV2aWNlIGluc3RhbmNlAC4ARCAIAAAADP////8BAf////8A" +
+           "AAAANWCJCgIAAAACAA8AAABSZXZpc2lvbkNvdW50ZXIBASEIAwAAAABpAAAAQW4gaW5jcmVtZW50YWwg" +
+           "Y291bnRlciBpbmRpY2F0aW5nIHRoZSBudW1iZXIgb2YgdGltZXMgdGhlIHN0YXRpYyBkYXRhIHdpdGhp" +
+           "biB0aGUgRGV2aWNlIGhhcyBiZWVuIG1vZGlmaWVkAC4ARCEIAAAABv////8BAf////8AAAAANWCJCgIA" +
+           "AAACAAwAAABNYW51ZmFjdHVyZXIBASIIAwAAAAAYAAAATW9kZWwgbmFtZSBvZiB0aGUgZGV2aWNlAC4A" +
+           "RCIIAAAAFf////8BAf////8AAAAANWCJCgIAAAACAAUAAABNb2RlbAEBIwgDAAAAADAAAABOYW1lIG9m" +
+           "IHRoZSBjb21wYW55IHRoYXQgbWFudWZhY3R1cmVkIHRoZSBkZXZpY2UALgBEIwgAAAAV/////wEB////" +
+           "/wAAAAA1YIkKAgAAAAIADAAAAERldmljZU1hbnVhbAEBJAgDAAAAAFoAAABBZGRyZXNzIChwYXRobmFt" +
+           "ZSBpbiB0aGUgZmlsZSBzeXN0ZW0gb3IgYSBVUkwgfCBXZWIgYWRkcmVzcykgb2YgdXNlciBtYW51YWwg" +
+           "Zm9yIHRoZSBkZXZpY2UALgBEJAgAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIADgAAAERldmljZVJl" +
+           "dmlzaW9uAQElCAMAAAAAJAAAAE92ZXJhbGwgcmV2aXNpb24gbGV2ZWwgb2YgdGhlIGRldmljZQAuAEQl" +
+           "CAAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAQAAAAU29mdHdhcmVSZXZpc2lvbgEBJggDAAAAADUA" +
+           "AABSZXZpc2lvbiBsZXZlbCBvZiB0aGUgc29mdHdhcmUvZmlybXdhcmUgb2YgdGhlIGRldmljZQAuAEQm" +
+           "CAAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAQAAAASGFyZHdhcmVSZXZpc2lvbgEBJwgDAAAAACwA" +
+           "AABSZXZpc2lvbiBsZXZlbCBvZiB0aGUgaGFyZHdhcmUgb2YgdGhlIGRldmljZQAuAEQnCAAAAAz/////" +
+           "AQH/////AAAAAA==";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region ServerCommunicationGENERICServiceState Class
+    #if (!OPCUA_EXCLUDE_ServerCommunicationGENERICServiceState)
+    /// <summary>
+    /// Stores an instance of the ServerCommunicationGENERICServiceType ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class ServerCommunicationGENERICServiceState : ServerCommunicationServiceState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public ServerCommunicationGENERICServiceState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.Fdi7.ObjectTypes.ServerCommunicationGENERICServiceType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk3Lx8AAABodHRwOi8vb3Bj" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAtAAAAU2VydmVyQ29tbXVuaWNhdGlvbkdF" +
+           "TkVSSUNTZXJ2aWNlVHlwZUluc3RhbmNlAQFVCAEBVQj/////CQAAACRggAoBAAAAAgAJAAAATWV0aG9k" +
+           "U2V0AQFYCAMAAAAAFAAAAEZsYXQgbGlzdCBvZiBNZXRob2RzAC8AOlgIAAD/////AwAAAARhggoEAAAA" +
+           "AQAKAAAARGlzY29ubmVjdAEBlQgALwEBLAGVCAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRB" +
+           "cmd1bWVudHMBAZYIAC4ARJYIAACWAQAAAAEAKgEBJgAAABcAAABDb21tdW5pY2F0aW9uUmVsYXRpb25J" +
+           "ZAAP/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMB" +
+           "AZcIAC4ARJcIAACWAQAAAAEAKgEBGwAAAAwAAABTZXJ2aWNlRXJyb3IAG/////8AAAAAAAEAKAEBAAAA" +
+           "AQH/////AAAAAARhggoEAAAAAQAHAAAAQ29ubmVjdAEBmAgALwEBmAiYCAAAAQH/////AgAAABVgqQoC" +
+           "AAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAZkIAC4ARJkIAACWAgAAAAEAKgEBJgAAABcAAABDb21tdW5p" +
+           "Y2F0aW9uUmVsYXRpb25JZAAP/////wAAAAAAAQAqAQEWAAAABwAAAEFkZHJlc3MAD/////8AAAAAAAEA" +
+           "KAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQGaCAAuAESaCAAAlgEA" +
+           "AAABACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIK" +
+           "BAAAAAEACAAAAFRyYW5zZmVyAQGbCAAvAQGbCJsIAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1" +
+           "dEFyZ3VtZW50cwEBnAgALgBEnAgAAJYFAAAAAQAqAQEmAAAAFwAAAENvbW11bmljYXRpb25SZWxhdGlv" +
+           "bklkAA//////AAAAAAABACoBARUAAAAGAAAASGVhZGVyAAz/////AAAAAAABACoBARoAAAALAAAAUmVx" +
+           "dWVzdERhdGEAD/////8AAAAAAAEAKgEBIQAAABAAAABSZXF1ZXN0RGF0YVR5cGVzAQECCAEAAAAAAAAA" +
+           "AAEAKgEBIgAAABEAAABSZXNwb25zZURhdGFUeXBlcwEBAggBAAAAAAAAAAABACgBAQAAAAEB/////wAA" +
+           "AAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBnQgALgBEnQgAAJYDAAAAAQAqAQEbAAAADAAA" +
+           "AFJlc3BvbnNlRGF0YQAP/////wAAAAAAAQAqAQEdAAAADgAAAFJFU1BPTlNFX0NPREVTAA//////AAAA" +
+           "AAABACoBARsAAAAMAAAAU2VydmljZUVycm9yABv/////AAAAAAABACgBAQAAAAEB/////wAAAAA1YIkK" +
+           "AgAAAAIADAAAAFNlcmlhbE51bWJlcgEBbAgDAAAAAE0AAABJZGVudGlmaWVyIHRoYXQgdW5pcXVlbHkg" +
+           "aWRlbnRpZmllcywgd2l0aGluIGEgbWFudWZhY3R1cmVyLCBhIGRldmljZSBpbnN0YW5jZQAuAERsCAAA" +
+           "AAz/////AQH/////AAAAADVgiQoCAAAAAgAPAAAAUmV2aXNpb25Db3VudGVyAQFtCAMAAAAAaQAAAEFu" +
+           "IGluY3JlbWVudGFsIGNvdW50ZXIgaW5kaWNhdGluZyB0aGUgbnVtYmVyIG9mIHRpbWVzIHRoZSBzdGF0" +
+           "aWMgZGF0YSB3aXRoaW4gdGhlIERldmljZSBoYXMgYmVlbiBtb2RpZmllZAAuAERtCAAAAAb/////AQH/" +
+           "////AAAAADVgiQoCAAAAAgAMAAAATWFudWZhY3R1cmVyAQFuCAMAAAAAGAAAAE1vZGVsIG5hbWUgb2Yg" +
+           "dGhlIGRldmljZQAuAERuCAAAABX/////AQH/////AAAAADVgiQoCAAAAAgAFAAAATW9kZWwBAW8IAwAA" +
+           "AAAwAAAATmFtZSBvZiB0aGUgY29tcGFueSB0aGF0IG1hbnVmYWN0dXJlZCB0aGUgZGV2aWNlAC4ARG8I" +
+           "AAAAFf////8BAf////8AAAAANWCJCgIAAAACAAwAAABEZXZpY2VNYW51YWwBAXAIAwAAAABaAAAAQWRk" +
+           "cmVzcyAocGF0aG5hbWUgaW4gdGhlIGZpbGUgc3lzdGVtIG9yIGEgVVJMIHwgV2ViIGFkZHJlc3MpIG9m" +
+           "IHVzZXIgbWFudWFsIGZvciB0aGUgZGV2aWNlAC4ARHAIAAAADP////8BAf////8AAAAANWCJCgIAAAAC" +
+           "AA4AAABEZXZpY2VSZXZpc2lvbgEBcQgDAAAAACQAAABPdmVyYWxsIHJldmlzaW9uIGxldmVsIG9mIHRo" +
+           "ZSBkZXZpY2UALgBEcQgAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAAAFNvZnR3YXJlUmV2aXNp" +
+           "b24BAXIIAwAAAAA1AAAAUmV2aXNpb24gbGV2ZWwgb2YgdGhlIHNvZnR3YXJlL2Zpcm13YXJlIG9mIHRo" +
+           "ZSBkZXZpY2UALgBEcggAAAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAAAEhhcmR3YXJlUmV2aXNp" +
+           "b24BAXMIAwAAAAAsAAAAUmV2aXNpb24gbGV2ZWwgb2YgdGhlIGhhcmR3YXJlIG9mIHRoZSBkZXZpY2UA" +
+           "LgBEcwgAAAAM/////wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion

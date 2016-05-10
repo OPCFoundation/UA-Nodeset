@@ -38,4 +38,418 @@ using Opc.Ua;
 
 namespace Opc.Ua.Fdi7
 {
+    #region EddDataTypeEnum Enumeration
+    #if (!OPCUA_EXCLUDE_EddDataTypeEnum)
+    /// <summary>
+    /// A description for the EddDataTypeEnum DataType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Fdi7.Namespaces.OpcUaFdi7Xsd)]
+    public enum EddDataTypeEnum
+    {
+        /// <summary>
+        /// A description for the BOOLEAN field.
+        /// </summary>
+        [EnumMember(Value = "BOOLEAN_1")]
+        BOOLEAN = 1,
+
+        /// <summary>
+        /// A description for the DOUBLE field.
+        /// </summary>
+        [EnumMember(Value = "DOUBLE_2")]
+        DOUBLE = 2,
+
+        /// <summary>
+        /// A description for the FLOAT field.
+        /// </summary>
+        [EnumMember(Value = "FLOAT_3")]
+        FLOAT = 3,
+
+        /// <summary>
+        /// A description for the INTEGER field.
+        /// </summary>
+        [EnumMember(Value = "INTEGER_4")]
+        INTEGER = 4,
+
+        /// <summary>
+        /// A description for the UNSIGNED_INTEGER field.
+        /// </summary>
+        [EnumMember(Value = "UNSIGNED_INTEGER_5")]
+        UNSIGNED_INTEGER = 5,
+
+        /// <summary>
+        /// A description for the DATE field.
+        /// </summary>
+        [EnumMember(Value = "DATE_6")]
+        DATE = 6,
+
+        /// <summary>
+        /// A description for the DATE_AND_TIME field.
+        /// </summary>
+        [EnumMember(Value = "DATE_AND_TIME_7")]
+        DATE_AND_TIME = 7,
+
+        /// <summary>
+        /// A description for the DURATION field.
+        /// </summary>
+        [EnumMember(Value = "DURATION_8")]
+        DURATION = 8,
+
+        /// <summary>
+        /// A description for the TIME field.
+        /// </summary>
+        [EnumMember(Value = "TIME_9")]
+        TIME = 9,
+
+        /// <summary>
+        /// A description for the TIME_VALUE field.
+        /// </summary>
+        [EnumMember(Value = "TIME_VALUE_10")]
+        TIME_VALUE = 10,
+
+        /// <summary>
+        /// A description for the BIT_ENUMERATED field.
+        /// </summary>
+        [EnumMember(Value = "BIT_ENUMERATED_11")]
+        BIT_ENUMERATED = 11,
+
+        /// <summary>
+        /// A description for the ENUMERATED field.
+        /// </summary>
+        [EnumMember(Value = "ENUMERATED_12")]
+        ENUMERATED = 12,
+
+        /// <summary>
+        /// A description for the ASCII field.
+        /// </summary>
+        [EnumMember(Value = "ASCII_13")]
+        ASCII = 13,
+
+        /// <summary>
+        /// A description for the BITSTRING field.
+        /// </summary>
+        [EnumMember(Value = "BITSTRING_14")]
+        BITSTRING = 14,
+
+        /// <summary>
+        /// A description for the EUC field.
+        /// </summary>
+        [EnumMember(Value = "EUC_15")]
+        EUC = 15,
+
+        /// <summary>
+        /// A description for the OCTET field.
+        /// </summary>
+        [EnumMember(Value = "OCTET_16")]
+        OCTET = 16,
+
+        /// <summary>
+        /// A description for the PACKED_ASCII field.
+        /// </summary>
+        [EnumMember(Value = "PACKED_ASCII_17")]
+        PACKED_ASCII = 17,
+
+        /// <summary>
+        /// A description for the PASSWORD field.
+        /// </summary>
+        [EnumMember(Value = "PASSWORD_18")]
+        PASSWORD = 18,
+
+        /// <summary>
+        /// A description for the VISIBLE field.
+        /// </summary>
+        [EnumMember(Value = "VISIBLE_19")]
+        VISIBLE = 19,
+    }
+
+    #region EddDataTypeEnumCollection Class
+    /// <summary>
+    /// A collection of EddDataTypeEnum objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfEddDataTypeEnum", Namespace = Opc.Ua.Fdi7.Namespaces.OpcUaFdi7Xsd, ItemName = "EddDataTypeEnum")]
+    public partial class EddDataTypeEnumCollection : List<EddDataTypeEnum>, ICloneable
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public EddDataTypeEnumCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public EddDataTypeEnumCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public EddDataTypeEnumCollection(IEnumerable<EddDataTypeEnum> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator EddDataTypeEnumCollection(EddDataTypeEnum[] values)
+        {
+            if (values != null)
+            {
+                return new EddDataTypeEnumCollection(values);
+            }
+
+            return new EddDataTypeEnumCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator EddDataTypeEnum[](EddDataTypeEnumCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            EddDataTypeEnumCollection clone = new EddDataTypeEnumCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((EddDataTypeEnum)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+        #endregion
+    }
+    #endregion
+    #endif
+    #endregion
+
+    #region EddDataTypeInfo Class
+    #if (!OPCUA_EXCLUDE_EddDataTypeInfo)
+    /// <summary>
+    /// A description for the EddDataTypeInfo DataType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Fdi7.Namespaces.OpcUaFdi7Xsd)]
+    public partial class EddDataTypeInfo : IEncodeable
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public EddDataTypeInfo()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+            m_eddDataType = EddDataTypeEnum.BOOLEAN;
+            m_size = (uint)0;
+        }
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the EddDataType field.
+        /// </summary>
+        [DataMember(Name = "EddDataType", IsRequired = false, Order = 1)]
+        public EddDataTypeEnum EddDataType
+        {
+            get { return m_eddDataType;  }
+            set { m_eddDataType = value; }
+        }
+
+        /// <summary>
+        /// A description for the Size field.
+        /// </summary>
+        [DataMember(Name = "Size", IsRequired = false, Order = 2)]
+        public uint Size
+        {
+            get { return m_size;  }
+            set { m_size = value; }
+        }
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public virtual ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.EddDataTypeInfo; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public virtual ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.EddDataTypeInfo_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public virtual ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.EddDataTypeInfo_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public virtual void Encode(IEncoder encoder)
+        {
+            encoder.PushNamespace(Opc.Ua.Fdi7.Namespaces.OpcUaFdi7Xsd);
+
+            encoder.WriteEnumerated("EddDataType", EddDataType);
+            encoder.WriteUInt32("Size", Size);
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public virtual void Decode(IDecoder decoder)
+        {
+            decoder.PushNamespace(Opc.Ua.Fdi7.Namespaces.OpcUaFdi7Xsd);
+
+            EddDataType = (EddDataTypeEnum)decoder.ReadEnumerated("EddDataType", typeof(EddDataTypeEnum));
+            Size = decoder.ReadUInt32("Size");
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public virtual bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            EddDataTypeInfo value = encodeable as EddDataTypeInfo;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+            if (!Utils.IsEqual(m_eddDataType, value.m_eddDataType)) return false;
+            if (!Utils.IsEqual(m_size, value.m_size)) return false;
+
+            return true;
+        }
+
+        /// <summary cref="ICloneable.Clone" />
+        public virtual object Clone()
+        {
+            EddDataTypeInfo clone = (EddDataTypeInfo)this.MemberwiseClone();
+
+            clone.m_eddDataType = (EddDataTypeEnum)Utils.Clone(this.m_eddDataType);
+            clone.m_size = (uint)Utils.Clone(this.m_size);
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        private EddDataTypeEnum m_eddDataType;
+        private uint m_size;
+        #endregion
+    }
+
+    #region EddDataTypeInfoCollection Class
+    /// <summary>
+    /// A collection of EddDataTypeInfo objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfEddDataTypeInfo", Namespace = Opc.Ua.Fdi7.Namespaces.OpcUaFdi7Xsd, ItemName = "EddDataTypeInfo")]
+    public partial class EddDataTypeInfoCollection : List<EddDataTypeInfo>, ICloneable
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public EddDataTypeInfoCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public EddDataTypeInfoCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public EddDataTypeInfoCollection(IEnumerable<EddDataTypeInfo> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator EddDataTypeInfoCollection(EddDataTypeInfo[] values)
+        {
+            if (values != null)
+            {
+                return new EddDataTypeInfoCollection(values);
+            }
+
+            return new EddDataTypeInfoCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator EddDataTypeInfo[](EddDataTypeInfoCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            EddDataTypeInfoCollection clone = new EddDataTypeInfoCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((EddDataTypeInfo)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+        #endregion
+    }
+    #endregion
+    #endif
+    #endregion
 }

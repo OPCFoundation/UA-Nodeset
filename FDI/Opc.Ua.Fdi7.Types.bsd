@@ -10,4 +10,31 @@
   <opc:Import Namespace="http://opcfoundation.org/UA/DI/" Location="Opc.Ua.Di.BinarySchema.bsd"/>
   <opc:Import Namespace="http://opcfoundation.org/UA/" Location="Opc.Ua.BinarySchema.bsd"/>
 
+  <opc:EnumeratedType Name="EddDataTypeEnum" LengthInBits="32">
+    <opc:EnumeratedValue Name="BOOLEAN" Value="1" />
+    <opc:EnumeratedValue Name="DOUBLE" Value="2" />
+    <opc:EnumeratedValue Name="FLOAT" Value="3" />
+    <opc:EnumeratedValue Name="INTEGER" Value="4" />
+    <opc:EnumeratedValue Name="UNSIGNED_INTEGER" Value="5" />
+    <opc:EnumeratedValue Name="DATE" Value="6" />
+    <opc:EnumeratedValue Name="DATE_AND_TIME" Value="7" />
+    <opc:EnumeratedValue Name="DURATION" Value="8" />
+    <opc:EnumeratedValue Name="TIME" Value="9" />
+    <opc:EnumeratedValue Name="TIME_VALUE" Value="10" />
+    <opc:EnumeratedValue Name="BIT_ENUMERATED" Value="11" />
+    <opc:EnumeratedValue Name="ENUMERATED" Value="12" />
+    <opc:EnumeratedValue Name="ASCII" Value="13" />
+    <opc:EnumeratedValue Name="BITSTRING" Value="14" />
+    <opc:EnumeratedValue Name="EUC" Value="15" />
+    <opc:EnumeratedValue Name="OCTET" Value="16" />
+    <opc:EnumeratedValue Name="PACKED_ASCII" Value="17" />
+    <opc:EnumeratedValue Name="PASSWORD" Value="18" />
+    <opc:EnumeratedValue Name="VISIBLE" Value="19" />
+  </opc:EnumeratedType>
+
+  <opc:StructuredType Name="EddDataTypeInfo" BaseType="ua:ExtensionObject">
+    <opc:Field Name="EddDataType" TypeName="tns:EddDataTypeEnum" />
+    <opc:Field Name="Size" TypeName="opc:UInt32" />
+  </opc:StructuredType>
+
 </opc:TypeDictionary>
