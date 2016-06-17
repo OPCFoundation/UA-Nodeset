@@ -538,32 +538,6 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_EnumValueType_Decode(OpcUa_EnumValueType* pV
 OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_EnumValueType_EncodeableType;
 #endif
 
-#ifndef OPCUA_EXCLUDE_EnumField
-/*============================================================================
- * The EnumField structure.
- *===========================================================================*/
-typedef struct _OpcUa_EnumField
-{
-    OpcUa_Int64         Value;
-    OpcUa_LocalizedText DisplayName;
-    OpcUa_LocalizedText Description;
-    OpcUa_String        Name;
-}
-OpcUa_EnumField;
-
-OPCUA_EXPORT OpcUa_Void OpcUa_EnumField_Initialize(OpcUa_EnumField* pValue);
-
-OPCUA_EXPORT OpcUa_Void OpcUa_EnumField_Clear(OpcUa_EnumField* pValue);
-
-OPCUA_EXPORT OpcUa_StatusCode OpcUa_EnumField_GetSize(OpcUa_EnumField* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
-
-OPCUA_EXPORT OpcUa_StatusCode OpcUa_EnumField_Encode(OpcUa_EnumField* pValue, struct _OpcUa_Encoder* pEncoder);
-
-OPCUA_EXPORT OpcUa_StatusCode OpcUa_EnumField_Decode(OpcUa_EnumField* pValue, struct _OpcUa_Decoder* pDecoder);
-
-OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_EnumField_EncodeableType;
-#endif
-
 #ifndef OPCUA_EXCLUDE_OptionSet
 /*============================================================================
  * The OptionSet structure.
