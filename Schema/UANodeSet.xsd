@@ -304,9 +304,19 @@
     </xs:complexContent>
   </xs:complexType>
 
+  <xs:complexType name="UAMethodArgument">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string" minOccurs="0" maxOccurs="1"></xs:element>
+      <xs:element name="Description" type="LocalizedText" minOccurs="0" maxOccurs="unbounded"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  
   <xs:complexType name="UAMethod">
     <xs:complexContent>
       <xs:extension base="UAInstance">
+        <xs:sequence>
+          <xs:element name="ArgumentDescription" type="UAMethodArgument" minOccurs="0" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
         <xs:attribute name="Executable" type="xs:boolean" default="true"></xs:attribute>
         <xs:attribute name="UserExecutable" type="xs:boolean" default="true"></xs:attribute>
         <xs:attribute name="MethodDeclarationId" type="NodeId" use="optional"></xs:attribute>
