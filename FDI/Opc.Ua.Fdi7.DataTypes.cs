@@ -170,7 +170,11 @@ namespace Opc.Ua.Fdi7
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfEddDataTypeEnum", Namespace = Opc.Ua.Fdi7.Namespaces.OpcUaFdi7Xsd, ItemName = "EddDataTypeEnum")]
+    #if !NET_STANDARD
     public partial class EddDataTypeEnumCollection : List<EddDataTypeEnum>, ICloneable
+    #else
+    public partial class EddDataTypeEnumCollection : List<EddDataTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -217,11 +221,20 @@ namespace Opc.Ua.Fdi7
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (EddDataTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             EddDataTypeEnumCollection clone = new EddDataTypeEnumCollection(this.Count);
 
@@ -232,7 +245,6 @@ namespace Opc.Ua.Fdi7
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -360,10 +372,18 @@ namespace Opc.Ua.Fdi7
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            EddDataTypeInfo clone = (EddDataTypeInfo)this.MemberwiseClone();
+            return (EddDataTypeInfo)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            EddDataTypeInfo clone = (EddDataTypeInfo)base.MemberwiseClone();
 
             clone.m_eddDataType = (EddDataTypeEnum)Utils.Clone(this.m_eddDataType);
             clone.m_size = (uint)Utils.Clone(this.m_size);
@@ -385,7 +405,11 @@ namespace Opc.Ua.Fdi7
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfEddDataTypeInfo", Namespace = Opc.Ua.Fdi7.Namespaces.OpcUaFdi7Xsd, ItemName = "EddDataTypeInfo")]
+    #if !NET_STANDARD
     public partial class EddDataTypeInfoCollection : List<EddDataTypeInfo>, ICloneable
+    #else
+    public partial class EddDataTypeInfoCollection : List<EddDataTypeInfo>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -432,11 +456,20 @@ namespace Opc.Ua.Fdi7
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (EddDataTypeInfo)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             EddDataTypeInfoCollection clone = new EddDataTypeInfoCollection(this.Count);
 
@@ -447,7 +480,6 @@ namespace Opc.Ua.Fdi7
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif

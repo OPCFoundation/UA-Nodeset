@@ -74,7 +74,11 @@ namespace Opc.Ua.Fdi5
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfWindowModeType", Namespace = Opc.Ua.Fdi5.Namespaces.OpcUaFdi5Xsd, ItemName = "WindowModeType")]
+    #if !NET_STANDARD
     public partial class WindowModeTypeCollection : List<WindowModeType>, ICloneable
+    #else
+    public partial class WindowModeTypeCollection : List<WindowModeType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -121,11 +125,20 @@ namespace Opc.Ua.Fdi5
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (WindowModeType)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             WindowModeTypeCollection clone = new WindowModeTypeCollection(this.Count);
 
@@ -136,7 +149,6 @@ namespace Opc.Ua.Fdi5
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -172,7 +184,11 @@ namespace Opc.Ua.Fdi5
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfStyleType", Namespace = Opc.Ua.Fdi5.Namespaces.OpcUaFdi5Xsd, ItemName = "StyleType")]
+    #if !NET_STANDARD
     public partial class StyleTypeCollection : List<StyleType>, ICloneable
+    #else
+    public partial class StyleTypeCollection : List<StyleType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -219,11 +235,20 @@ namespace Opc.Ua.Fdi5
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (StyleType)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             StyleTypeCollection clone = new StyleTypeCollection(this.Count);
 
@@ -234,7 +259,6 @@ namespace Opc.Ua.Fdi5
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -374,10 +398,18 @@ namespace Opc.Ua.Fdi5
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            RegistrationParameters clone = (RegistrationParameters)this.MemberwiseClone();
+            return (RegistrationParameters)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            RegistrationParameters clone = (RegistrationParameters)base.MemberwiseClone();
 
             clone.m_path = (RelativePath)Utils.Clone(this.m_path);
             clone.m_selectionFlags = (uint)Utils.Clone(this.m_selectionFlags);
@@ -399,7 +431,11 @@ namespace Opc.Ua.Fdi5
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfRegistrationParameters", Namespace = Opc.Ua.Fdi5.Namespaces.OpcUaFdi5Xsd, ItemName = "RegistrationParameters")]
+    #if !NET_STANDARD
     public partial class RegistrationParametersCollection : List<RegistrationParameters>, ICloneable
+    #else
+    public partial class RegistrationParametersCollection : List<RegistrationParameters>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -446,11 +482,20 @@ namespace Opc.Ua.Fdi5
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (RegistrationParameters)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             RegistrationParametersCollection clone = new RegistrationParametersCollection(this.Count);
 
@@ -461,7 +506,6 @@ namespace Opc.Ua.Fdi5
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -631,10 +675,18 @@ namespace Opc.Ua.Fdi5
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            RegisteredNode clone = (RegisteredNode)this.MemberwiseClone();
+            return (RegisteredNode)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            RegisteredNode clone = (RegisteredNode)base.MemberwiseClone();
 
             clone.m_nodeStatus = (int)Utils.Clone(this.m_nodeStatus);
             clone.m_onlineContextNodeId = (NodeId)Utils.Clone(this.m_onlineContextNodeId);
@@ -662,7 +714,11 @@ namespace Opc.Ua.Fdi5
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfRegisteredNode", Namespace = Opc.Ua.Fdi5.Namespaces.OpcUaFdi5Xsd, ItemName = "RegisteredNode")]
+    #if !NET_STANDARD
     public partial class RegisteredNodeCollection : List<RegisteredNode>, ICloneable
+    #else
+    public partial class RegisteredNodeCollection : List<RegisteredNode>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -709,11 +765,20 @@ namespace Opc.Ua.Fdi5
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (RegisteredNode)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             RegisteredNodeCollection clone = new RegisteredNodeCollection(this.Count);
 
@@ -724,7 +789,6 @@ namespace Opc.Ua.Fdi5
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -864,10 +928,18 @@ namespace Opc.Ua.Fdi5
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            RegisterNodesResult clone = (RegisterNodesResult)this.MemberwiseClone();
+            return (RegisterNodesResult)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            RegisterNodesResult clone = (RegisterNodesResult)base.MemberwiseClone();
 
             clone.m_status = (int)Utils.Clone(this.m_status);
             clone.m_registeredNodes = (RegisteredNodeCollection)Utils.Clone(this.m_registeredNodes);
@@ -889,7 +961,11 @@ namespace Opc.Ua.Fdi5
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfRegisterNodesResult", Namespace = Opc.Ua.Fdi5.Namespaces.OpcUaFdi5Xsd, ItemName = "RegisterNodesResult")]
+    #if !NET_STANDARD
     public partial class RegisterNodesResultCollection : List<RegisterNodesResult>, ICloneable
+    #else
+    public partial class RegisterNodesResultCollection : List<RegisterNodesResult>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -936,11 +1012,20 @@ namespace Opc.Ua.Fdi5
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (RegisterNodesResult)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             RegisterNodesResultCollection clone = new RegisterNodesResultCollection(this.Count);
 
@@ -951,7 +1036,6 @@ namespace Opc.Ua.Fdi5
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -1093,10 +1177,18 @@ namespace Opc.Ua.Fdi5
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            TransferIncident clone = (TransferIncident)this.MemberwiseClone();
+            return (TransferIncident)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            TransferIncident clone = (TransferIncident)base.MemberwiseClone();
 
             clone.m_contextNodeId = (NodeId)Utils.Clone(this.m_contextNodeId);
             clone.m_statusCode = (StatusCode)Utils.Clone(this.m_statusCode);
@@ -1120,7 +1212,11 @@ namespace Opc.Ua.Fdi5
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfTransferIncident", Namespace = Opc.Ua.Fdi5.Namespaces.OpcUaFdi5Xsd, ItemName = "TransferIncident")]
+    #if !NET_STANDARD
     public partial class TransferIncidentCollection : List<TransferIncident>, ICloneable
+    #else
+    public partial class TransferIncidentCollection : List<TransferIncident>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -1167,11 +1263,20 @@ namespace Opc.Ua.Fdi5
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (TransferIncident)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             TransferIncidentCollection clone = new TransferIncidentCollection(this.Count);
 
@@ -1182,7 +1287,6 @@ namespace Opc.Ua.Fdi5
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -1322,10 +1426,18 @@ namespace Opc.Ua.Fdi5
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ApplyResult clone = (ApplyResult)this.MemberwiseClone();
+            return (ApplyResult)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ApplyResult clone = (ApplyResult)base.MemberwiseClone();
 
             clone.m_status = (int)Utils.Clone(this.m_status);
             clone.m_transferIncidents = (TransferIncidentCollection)Utils.Clone(this.m_transferIncidents);
@@ -1347,7 +1459,11 @@ namespace Opc.Ua.Fdi5
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfApplyResult", Namespace = Opc.Ua.Fdi5.Namespaces.OpcUaFdi5Xsd, ItemName = "ApplyResult")]
+    #if !NET_STANDARD
     public partial class ApplyResultCollection : List<ApplyResult>, ICloneable
+    #else
+    public partial class ApplyResultCollection : List<ApplyResult>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -1394,11 +1510,20 @@ namespace Opc.Ua.Fdi5
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ApplyResult)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ApplyResultCollection clone = new ApplyResultCollection(this.Count);
 
@@ -1409,7 +1534,6 @@ namespace Opc.Ua.Fdi5
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif

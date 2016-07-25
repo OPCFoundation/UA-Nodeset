@@ -265,10 +265,18 @@ namespace Opc.Ua.Gds
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ApplicationRecordDataType clone = (ApplicationRecordDataType)this.MemberwiseClone();
+            return (ApplicationRecordDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ApplicationRecordDataType clone = (ApplicationRecordDataType)base.MemberwiseClone();
 
             clone.m_applicationId = (NodeId)Utils.Clone(this.m_applicationId);
             clone.m_applicationUri = (string)Utils.Clone(this.m_applicationUri);
@@ -300,7 +308,11 @@ namespace Opc.Ua.Gds
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfApplicationRecordDataType", Namespace = Opc.Ua.Gds.Namespaces.OpcUaGdsXsd, ItemName = "ApplicationRecordDataType")]
+    #if !NET_STANDARD
     public partial class ApplicationRecordDataTypeCollection : List<ApplicationRecordDataType>, ICloneable
+    #else
+    public partial class ApplicationRecordDataTypeCollection : List<ApplicationRecordDataType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -347,11 +359,20 @@ namespace Opc.Ua.Gds
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ApplicationRecordDataType)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ApplicationRecordDataTypeCollection clone = new ApplicationRecordDataTypeCollection(this.Count);
 
@@ -362,7 +383,6 @@ namespace Opc.Ua.Gds
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif

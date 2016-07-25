@@ -122,7 +122,11 @@ namespace Opc.Ua.Adi
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfExecutionCycleEnumeration", Namespace = Opc.Ua.Adi.Namespaces.OpcUaAdiXsd, ItemName = "ExecutionCycleEnumeration")]
+    #if !NET_STANDARD
     public partial class ExecutionCycleEnumerationCollection : List<ExecutionCycleEnumeration>, ICloneable
+    #else
+    public partial class ExecutionCycleEnumerationCollection : List<ExecutionCycleEnumeration>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -169,11 +173,20 @@ namespace Opc.Ua.Adi
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ExecutionCycleEnumeration)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ExecutionCycleEnumerationCollection clone = new ExecutionCycleEnumerationCollection(this.Count);
 
@@ -184,7 +197,6 @@ namespace Opc.Ua.Adi
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -238,7 +250,11 @@ namespace Opc.Ua.Adi
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfAcquisitionResultStatusEnumeration", Namespace = Opc.Ua.Adi.Namespaces.OpcUaAdiXsd, ItemName = "AcquisitionResultStatusEnumeration")]
+    #if !NET_STANDARD
     public partial class AcquisitionResultStatusEnumerationCollection : List<AcquisitionResultStatusEnumeration>, ICloneable
+    #else
+    public partial class AcquisitionResultStatusEnumerationCollection : List<AcquisitionResultStatusEnumeration>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -285,11 +301,20 @@ namespace Opc.Ua.Adi
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (AcquisitionResultStatusEnumeration)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             AcquisitionResultStatusEnumerationCollection clone = new AcquisitionResultStatusEnumerationCollection(this.Count);
 
@@ -300,7 +325,6 @@ namespace Opc.Ua.Adi
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -366,7 +390,11 @@ namespace Opc.Ua.Adi
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfAlarmStateEnumeration", Namespace = Opc.Ua.Adi.Namespaces.OpcUaAdiXsd, ItemName = "AlarmStateEnumeration")]
+    #if !NET_STANDARD
     public partial class AlarmStateEnumerationCollection : List<AlarmStateEnumeration>, ICloneable
+    #else
+    public partial class AlarmStateEnumerationCollection : List<AlarmStateEnumeration>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -413,11 +441,20 @@ namespace Opc.Ua.Adi
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (AlarmStateEnumeration)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             AlarmStateEnumerationCollection clone = new AlarmStateEnumerationCollection(this.Count);
 
@@ -428,7 +465,6 @@ namespace Opc.Ua.Adi
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif

@@ -67,7 +67,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfActuatorStateTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "ActuatorStateTypeEnum")]
+    #if !NET_STANDARD
     public partial class ActuatorStateTypeEnumCollection : List<ActuatorStateTypeEnum>, ICloneable
+    #else
+    public partial class ActuatorStateTypeEnumCollection : List<ActuatorStateTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -114,11 +118,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ActuatorStateTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ActuatorStateTypeEnumCollection clone = new ActuatorStateTypeEnumCollection(this.Count);
 
@@ -129,7 +142,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -165,7 +177,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfAlarmStateTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "AlarmStateTypeEnum")]
+    #if !NET_STANDARD
     public partial class AlarmStateTypeEnumCollection : List<AlarmStateTypeEnum>, ICloneable
+    #else
+    public partial class AlarmStateTypeEnumCollection : List<AlarmStateTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -212,11 +228,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (AlarmStateTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             AlarmStateTypeEnumCollection clone = new AlarmStateTypeEnumCollection(this.Count);
 
@@ -227,7 +252,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -263,7 +287,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfAvailabilityTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "AvailabilityTypeEnum")]
+    #if !NET_STANDARD
     public partial class AvailabilityTypeEnumCollection : List<AvailabilityTypeEnum>, ICloneable
+    #else
+    public partial class AvailabilityTypeEnumCollection : List<AvailabilityTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -310,11 +338,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (AvailabilityTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             AvailabilityTypeEnumCollection clone = new AvailabilityTypeEnumCollection(this.Count);
 
@@ -325,7 +362,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -379,7 +415,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfAxesCouplingTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "AxesCouplingTypeEnum")]
+    #if !NET_STANDARD
     public partial class AxesCouplingTypeEnumCollection : List<AxesCouplingTypeEnum>, ICloneable
+    #else
+    public partial class AxesCouplingTypeEnumCollection : List<AxesCouplingTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -426,11 +466,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (AxesCouplingTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             AxesCouplingTypeEnumCollection clone = new AxesCouplingTypeEnumCollection(this.Count);
 
@@ -441,7 +490,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -483,7 +531,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfCategoryTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "CategoryTypeEnum")]
+    #if !NET_STANDARD
     public partial class CategoryTypeEnumCollection : List<CategoryTypeEnum>, ICloneable
+    #else
+    public partial class CategoryTypeEnumCollection : List<CategoryTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -530,11 +582,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (CategoryTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             CategoryTypeEnumCollection clone = new CategoryTypeEnumCollection(this.Count);
 
@@ -545,7 +606,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -593,7 +653,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfClampStateTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "ClampStateTypeEnum")]
+    #if !NET_STANDARD
     public partial class ClampStateTypeEnumCollection : List<ClampStateTypeEnum>, ICloneable
+    #else
+    public partial class ClampStateTypeEnumCollection : List<ClampStateTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -640,11 +704,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ClampStateTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ClampStateTypeEnumCollection clone = new ClampStateTypeEnumCollection(this.Count);
 
@@ -655,7 +728,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -709,7 +781,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfControllerModeTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "ControllerModeTypeEnum")]
+    #if !NET_STANDARD
     public partial class ControllerModeTypeEnumCollection : List<ControllerModeTypeEnum>, ICloneable
+    #else
+    public partial class ControllerModeTypeEnumCollection : List<ControllerModeTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -756,11 +832,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ControllerModeTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ControllerModeTypeEnumCollection clone = new ControllerModeTypeEnumCollection(this.Count);
 
@@ -771,7 +856,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -807,7 +891,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfCoordinateSystemTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "CoordinateSystemTypeEnum")]
+    #if !NET_STANDARD
     public partial class CoordinateSystemTypeEnumCollection : List<CoordinateSystemTypeEnum>, ICloneable
+    #else
+    public partial class CoordinateSystemTypeEnumCollection : List<CoordinateSystemTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -854,11 +942,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (CoordinateSystemTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             CoordinateSystemTypeEnumCollection clone = new CoordinateSystemTypeEnumCollection(this.Count);
 
@@ -869,7 +966,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -971,7 +1067,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfCutterStatusValueTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "CutterStatusValueTypeEnum")]
+    #if !NET_STANDARD
     public partial class CutterStatusValueTypeEnumCollection : List<CutterStatusValueTypeEnum>, ICloneable
+    #else
+    public partial class CutterStatusValueTypeEnumCollection : List<CutterStatusValueTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -1018,11 +1118,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (CutterStatusValueTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             CutterStatusValueTypeEnumCollection clone = new CutterStatusValueTypeEnumCollection(this.Count);
 
@@ -1033,7 +1142,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -1161,10 +1269,18 @@ namespace Opc.Ua.MTConnect
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            DataItemEnumDataType clone = (DataItemEnumDataType)this.MemberwiseClone();
+            return (DataItemEnumDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            DataItemEnumDataType clone = (DataItemEnumDataType)base.MemberwiseClone();
 
             clone.m_dataItemEnum = (DataItemEnumTypeEnum)Utils.Clone(this.m_dataItemEnum);
             clone.m_dataItemEnumString = (string)Utils.Clone(this.m_dataItemEnumString);
@@ -1186,7 +1302,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfDataItemEnumDataType", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "DataItemEnumDataType")]
+    #if !NET_STANDARD
     public partial class DataItemEnumDataTypeCollection : List<DataItemEnumDataType>, ICloneable
+    #else
+    public partial class DataItemEnumDataTypeCollection : List<DataItemEnumDataType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -1233,11 +1353,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (DataItemEnumDataType)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             DataItemEnumDataTypeCollection clone = new DataItemEnumDataTypeCollection(this.Count);
 
@@ -1248,7 +1377,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -1518,7 +1646,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfDataItemEnumTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "DataItemEnumTypeEnum")]
+    #if !NET_STANDARD
     public partial class DataItemEnumTypeEnumCollection : List<DataItemEnumTypeEnum>, ICloneable
+    #else
+    public partial class DataItemEnumTypeEnumCollection : List<DataItemEnumTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -1565,11 +1697,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (DataItemEnumTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             DataItemEnumTypeEnumCollection clone = new DataItemEnumTypeEnumCollection(this.Count);
 
@@ -1580,7 +1721,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -1708,10 +1848,18 @@ namespace Opc.Ua.MTConnect
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            DataItemStatisticsDataType clone = (DataItemStatisticsDataType)this.MemberwiseClone();
+            return (DataItemStatisticsDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            DataItemStatisticsDataType clone = (DataItemStatisticsDataType)base.MemberwiseClone();
 
             clone.m_dataItemStatisticsEnum = (DataItemStatisticsTypeEnum)Utils.Clone(this.m_dataItemStatisticsEnum);
             clone.m_dataItemStatisticsString = (string)Utils.Clone(this.m_dataItemStatisticsString);
@@ -1733,7 +1881,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfDataItemStatisticsDataType", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "DataItemStatisticsDataType")]
+    #if !NET_STANDARD
     public partial class DataItemStatisticsDataTypeCollection : List<DataItemStatisticsDataType>, ICloneable
+    #else
+    public partial class DataItemStatisticsDataTypeCollection : List<DataItemStatisticsDataType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -1780,11 +1932,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (DataItemStatisticsDataType)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             DataItemStatisticsDataTypeCollection clone = new DataItemStatisticsDataTypeCollection(this.Count);
 
@@ -1795,7 +1956,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -1873,7 +2033,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfDataItemStatisticsTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "DataItemStatisticsTypeEnum")]
+    #if !NET_STANDARD
     public partial class DataItemStatisticsTypeEnumCollection : List<DataItemStatisticsTypeEnum>, ICloneable
+    #else
+    public partial class DataItemStatisticsTypeEnumCollection : List<DataItemStatisticsTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -1920,11 +2084,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (DataItemStatisticsTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             DataItemStatisticsTypeEnumCollection clone = new DataItemStatisticsTypeEnumCollection(this.Count);
 
@@ -1935,7 +2108,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -2109,7 +2281,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfDataItemSubEnumTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "DataItemSubEnumTypeEnum")]
+    #if !NET_STANDARD
     public partial class DataItemSubEnumTypeEnumCollection : List<DataItemSubEnumTypeEnum>, ICloneable
+    #else
+    public partial class DataItemSubEnumTypeEnumCollection : List<DataItemSubEnumTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -2156,11 +2332,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (DataItemSubEnumTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             DataItemSubEnumTypeEnumCollection clone = new DataItemSubEnumTypeEnumCollection(this.Count);
 
@@ -2171,7 +2356,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -2219,7 +2403,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfDefinitionFormatTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "DefinitionFormatTypeEnum")]
+    #if !NET_STANDARD
     public partial class DefinitionFormatTypeEnumCollection : List<DefinitionFormatTypeEnum>, ICloneable
+    #else
+    public partial class DefinitionFormatTypeEnumCollection : List<DefinitionFormatTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -2266,11 +2454,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (DefinitionFormatTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             DefinitionFormatTypeEnumCollection clone = new DefinitionFormatTypeEnumCollection(this.Count);
 
@@ -2281,7 +2478,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -2335,7 +2531,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfDirectionTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "DirectionTypeEnum")]
+    #if !NET_STANDARD
     public partial class DirectionTypeEnumCollection : List<DirectionTypeEnum>, ICloneable
+    #else
+    public partial class DirectionTypeEnumCollection : List<DirectionTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -2382,11 +2582,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (DirectionTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             DirectionTypeEnumCollection clone = new DirectionTypeEnumCollection(this.Count);
 
@@ -2397,7 +2606,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -2445,7 +2653,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfDoorStateTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "DoorStateTypeEnum")]
+    #if !NET_STANDARD
     public partial class DoorStateTypeEnumCollection : List<DoorStateTypeEnum>, ICloneable
+    #else
+    public partial class DoorStateTypeEnumCollection : List<DoorStateTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -2492,11 +2704,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (DoorStateTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             DoorStateTypeEnumCollection clone = new DoorStateTypeEnumCollection(this.Count);
 
@@ -2507,7 +2728,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -2549,7 +2769,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfEmergencyStopTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "EmergencyStopTypeEnum")]
+    #if !NET_STANDARD
     public partial class EmergencyStopTypeEnumCollection : List<EmergencyStopTypeEnum>, ICloneable
+    #else
+    public partial class EmergencyStopTypeEnumCollection : List<EmergencyStopTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -2596,11 +2820,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (EmergencyStopTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             EmergencyStopTypeEnumCollection clone = new EmergencyStopTypeEnumCollection(this.Count);
 
@@ -2611,7 +2844,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -2665,7 +2897,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfExecutionTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "ExecutionTypeEnum")]
+    #if !NET_STANDARD
     public partial class ExecutionTypeEnumCollection : List<ExecutionTypeEnum>, ICloneable
+    #else
+    public partial class ExecutionTypeEnumCollection : List<ExecutionTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -2712,11 +2948,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ExecutionTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ExecutionTypeEnumCollection clone = new ExecutionTypeEnumCollection(this.Count);
 
@@ -2727,7 +2972,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -2775,7 +3019,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfInterfaceStateTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "InterfaceStateTypeEnum")]
+    #if !NET_STANDARD
     public partial class InterfaceStateTypeEnumCollection : List<InterfaceStateTypeEnum>, ICloneable
+    #else
+    public partial class InterfaceStateTypeEnumCollection : List<InterfaceStateTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -2822,11 +3070,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (InterfaceStateTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             InterfaceStateTypeEnumCollection clone = new InterfaceStateTypeEnumCollection(this.Count);
 
@@ -2837,7 +3094,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -2885,7 +3141,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfLocationsTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "LocationsTypeEnum")]
+    #if !NET_STANDARD
     public partial class LocationsTypeEnumCollection : List<LocationsTypeEnum>, ICloneable
+    #else
+    public partial class LocationsTypeEnumCollection : List<LocationsTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -2932,11 +3192,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (LocationsTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             LocationsTypeEnumCollection clone = new LocationsTypeEnumCollection(this.Count);
 
@@ -2947,7 +3216,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -3025,7 +3293,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfNotificationCodeTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "NotificationCodeTypeEnum")]
+    #if !NET_STANDARD
     public partial class NotificationCodeTypeEnumCollection : List<NotificationCodeTypeEnum>, ICloneable
+    #else
+    public partial class NotificationCodeTypeEnumCollection : List<NotificationCodeTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -3072,11 +3344,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (NotificationCodeTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             NotificationCodeTypeEnumCollection clone = new NotificationCodeTypeEnumCollection(this.Count);
 
@@ -3087,7 +3368,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -3129,7 +3409,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfPathModeTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "PathModeTypeEnum")]
+    #if !NET_STANDARD
     public partial class PathModeTypeEnumCollection : List<PathModeTypeEnum>, ICloneable
+    #else
+    public partial class PathModeTypeEnumCollection : List<PathModeTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -3176,11 +3460,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (PathModeTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             PathModeTypeEnumCollection clone = new PathModeTypeEnumCollection(this.Count);
 
@@ -3191,7 +3484,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -3233,7 +3525,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfPowerStateTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "PowerStateTypeEnum")]
+    #if !NET_STANDARD
     public partial class PowerStateTypeEnumCollection : List<PowerStateTypeEnum>, ICloneable
+    #else
+    public partial class PowerStateTypeEnumCollection : List<PowerStateTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -3280,11 +3576,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (PowerStateTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             PowerStateTypeEnumCollection clone = new PowerStateTypeEnumCollection(this.Count);
 
@@ -3295,7 +3600,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -3331,7 +3635,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfQualifierTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "QualifierTypeEnum")]
+    #if !NET_STANDARD
     public partial class QualifierTypeEnumCollection : List<QualifierTypeEnum>, ICloneable
+    #else
+    public partial class QualifierTypeEnumCollection : List<QualifierTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -3378,11 +3686,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (QualifierTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             QualifierTypeEnumCollection clone = new QualifierTypeEnumCollection(this.Count);
 
@@ -3393,7 +3710,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -3441,7 +3757,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfRotaryModeTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "RotaryModeTypeEnum")]
+    #if !NET_STANDARD
     public partial class RotaryModeTypeEnumCollection : List<RotaryModeTypeEnum>, ICloneable
+    #else
+    public partial class RotaryModeTypeEnumCollection : List<RotaryModeTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -3488,11 +3808,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (RotaryModeTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             RotaryModeTypeEnumCollection clone = new RotaryModeTypeEnumCollection(this.Count);
 
@@ -3503,7 +3832,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -3551,7 +3879,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfSeverityTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "SeverityTypeEnum")]
+    #if !NET_STANDARD
     public partial class SeverityTypeEnumCollection : List<SeverityTypeEnum>, ICloneable
+    #else
+    public partial class SeverityTypeEnumCollection : List<SeverityTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -3598,11 +3930,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (SeverityTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             SeverityTypeEnumCollection clone = new SeverityTypeEnumCollection(this.Count);
 
@@ -3613,7 +3954,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -3649,7 +3989,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfToolLifeDirectionTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "ToolLifeDirectionTypeEnum")]
+    #if !NET_STANDARD
     public partial class ToolLifeDirectionTypeEnumCollection : List<ToolLifeDirectionTypeEnum>, ICloneable
+    #else
+    public partial class ToolLifeDirectionTypeEnumCollection : List<ToolLifeDirectionTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -3696,11 +4040,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ToolLifeDirectionTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ToolLifeDirectionTypeEnumCollection clone = new ToolLifeDirectionTypeEnumCollection(this.Count);
 
@@ -3711,7 +4064,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -3753,7 +4105,11 @@ namespace Opc.Ua.MTConnect
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfToolLifeTypeEnum", Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd, ItemName = "ToolLifeTypeEnum")]
+    #if !NET_STANDARD
     public partial class ToolLifeTypeEnumCollection : List<ToolLifeTypeEnum>, ICloneable
+    #else
+    public partial class ToolLifeTypeEnumCollection : List<ToolLifeTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -3800,11 +4156,20 @@ namespace Opc.Ua.MTConnect
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ToolLifeTypeEnum)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ToolLifeTypeEnumCollection clone = new ToolLifeTypeEnumCollection(this.Count);
 
@@ -3815,7 +4180,6 @@ namespace Opc.Ua.MTConnect
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif

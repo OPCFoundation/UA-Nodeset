@@ -43,8 +43,10 @@ namespace Opc.Ua
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.CodeGenerator", "1.0.0.0")]
+    #if !NET_STANDARD
     [ServiceMessageContextBehavior()]
     [ServiceBehavior(Namespace = Namespaces.OpcUaWsdl, InstanceContextMode=InstanceContextMode.PerSession, ConcurrencyMode=ConcurrencyMode.Multiple)]
+    #endif
     public partial class SessionEndpoint : EndpointBase, ISessionEndpoint, IDiscoveryEndpoint
     {
         #region Constructors
@@ -4187,8 +4189,10 @@ namespace Opc.Ua
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.CodeGenerator", "1.0.0.0")]
+    #if !NET_STANDARD
     [ServiceMessageContextBehavior()]
     [ServiceBehavior(Namespace = Namespaces.OpcUaWsdl, InstanceContextMode=InstanceContextMode.PerSession, ConcurrencyMode=ConcurrencyMode.Multiple)]
+    #endif
     public partial class DiscoveryEndpoint : EndpointBase, IDiscoveryEndpoint, IRegistrationEndpoint
     {
         #region Constructors
