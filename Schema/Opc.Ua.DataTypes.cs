@@ -2428,28 +2428,17 @@ namespace Opc.Ua
         /// </summary>
         private void Initialize()
         {
-            m_uniqueId = Uuid.Empty;
-            m_majorVersion = (byte)0;
-            m_minorVersion = (byte)0;
+            m_majorVersion = (uint)0;
+            m_minorVersion = (uint)0;
         }
         #endregion
 
         #region Public Properties
         /// <summary>
-        /// A description for the UniqueId field.
-        /// </summary>
-        [DataMember(Name = "UniqueId", IsRequired = false, Order = 1)]
-        public Uuid UniqueId
-        {
-            get { return m_uniqueId;  }
-            set { m_uniqueId = value; }
-        }
-
-        /// <summary>
         /// A description for the MajorVersion field.
         /// </summary>
-        [DataMember(Name = "MajorVersion", IsRequired = false, Order = 2)]
-        public byte MajorVersion
+        [DataMember(Name = "MajorVersion", IsRequired = false, Order = 1)]
+        public uint MajorVersion
         {
             get { return m_majorVersion;  }
             set { m_majorVersion = value; }
@@ -2458,8 +2447,8 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the MinorVersion field.
         /// </summary>
-        [DataMember(Name = "MinorVersion", IsRequired = false, Order = 3)]
-        public byte MinorVersion
+        [DataMember(Name = "MinorVersion", IsRequired = false, Order = 2)]
+        public uint MinorVersion
         {
             get { return m_minorVersion;  }
             set { m_minorVersion = value; }
@@ -2490,9 +2479,8 @@ namespace Opc.Ua
         {
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
-            encoder.WriteGuid("UniqueId", UniqueId);
-            encoder.WriteByte("MajorVersion", MajorVersion);
-            encoder.WriteByte("MinorVersion", MinorVersion);
+            encoder.WriteUInt32("MajorVersion", MajorVersion);
+            encoder.WriteUInt32("MinorVersion", MinorVersion);
 
             encoder.PopNamespace();
         }
@@ -2502,9 +2490,8 @@ namespace Opc.Ua
         {
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
-            UniqueId = decoder.ReadGuid("UniqueId");
-            MajorVersion = decoder.ReadByte("MajorVersion");
-            MinorVersion = decoder.ReadByte("MinorVersion");
+            MajorVersion = decoder.ReadUInt32("MajorVersion");
+            MinorVersion = decoder.ReadUInt32("MinorVersion");
 
             decoder.PopNamespace();
         }
@@ -2524,7 +2511,6 @@ namespace Opc.Ua
                 return false;
             }
 
-            if (!Utils.IsEqual(m_uniqueId, value.m_uniqueId)) return false;
             if (!Utils.IsEqual(m_majorVersion, value.m_majorVersion)) return false;
             if (!Utils.IsEqual(m_minorVersion, value.m_minorVersion)) return false;
 
@@ -2544,18 +2530,16 @@ namespace Opc.Ua
         {
             ConfigurationVersionDataType clone = (ConfigurationVersionDataType)base.MemberwiseClone();
 
-            clone.m_uniqueId = (Uuid)Utils.Clone(this.m_uniqueId);
-            clone.m_majorVersion = (byte)Utils.Clone(this.m_majorVersion);
-            clone.m_minorVersion = (byte)Utils.Clone(this.m_minorVersion);
+            clone.m_majorVersion = (uint)Utils.Clone(this.m_majorVersion);
+            clone.m_minorVersion = (uint)Utils.Clone(this.m_minorVersion);
 
             return clone;
         }
         #endregion
 
         #region Private Fields
-        private Uuid m_uniqueId;
-        private byte m_majorVersion;
-        private byte m_minorVersion;
+        private uint m_majorVersion;
+        private uint m_minorVersion;
         #endregion
     }
 
@@ -4342,6 +4326,7 @@ namespace Opc.Ua
             m_deadbandValue = (double)0;
             m_indexRange = null;
             m_substituteValue = Variant.Null;
+            m_metaDataProperties = new QualifiedNameCollection();
         }
         #endregion
 
@@ -4415,6 +4400,28 @@ namespace Opc.Ua
             get { return m_substituteValue;  }
             set { m_substituteValue = value; }
         }
+
+        /// <summary>
+        /// A description for the MetaDataProperties field.
+        /// </summary>
+        [DataMember(Name = "MetaDataProperties", IsRequired = false, Order = 8)]
+        public QualifiedNameCollection MetaDataProperties
+        {
+            get
+            {
+                return m_metaDataProperties;
+            }
+
+            set
+            {
+                m_metaDataProperties = value;
+
+                if (value == null)
+                {
+                    m_metaDataProperties = new QualifiedNameCollection();
+                }
+            }
+        }
         #endregion
 
         #region IEncodeable Members
@@ -4448,6 +4455,7 @@ namespace Opc.Ua
             encoder.WriteDouble("DeadbandValue", DeadbandValue);
             encoder.WriteString("IndexRange", IndexRange);
             encoder.WriteVariant("SubstituteValue", SubstituteValue);
+            encoder.WriteQualifiedNameArray("MetaDataProperties", MetaDataProperties);
 
             encoder.PopNamespace();
         }
@@ -4464,6 +4472,7 @@ namespace Opc.Ua
             DeadbandValue = decoder.ReadDouble("DeadbandValue");
             IndexRange = decoder.ReadString("IndexRange");
             SubstituteValue = decoder.ReadVariant("SubstituteValue");
+            MetaDataProperties = decoder.ReadQualifiedNameArray("MetaDataProperties");
 
             decoder.PopNamespace();
         }
@@ -4490,6 +4499,7 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_deadbandValue, value.m_deadbandValue)) return false;
             if (!Utils.IsEqual(m_indexRange, value.m_indexRange)) return false;
             if (!Utils.IsEqual(m_substituteValue, value.m_substituteValue)) return false;
+            if (!Utils.IsEqual(m_metaDataProperties, value.m_metaDataProperties)) return false;
 
             return true;
         }
@@ -4514,6 +4524,7 @@ namespace Opc.Ua
             clone.m_deadbandValue = (double)Utils.Clone(this.m_deadbandValue);
             clone.m_indexRange = (string)Utils.Clone(this.m_indexRange);
             clone.m_substituteValue = (Variant)Utils.Clone(this.m_substituteValue);
+            clone.m_metaDataProperties = (QualifiedNameCollection)Utils.Clone(this.m_metaDataProperties);
 
             return clone;
         }
@@ -4527,6 +4538,7 @@ namespace Opc.Ua
         private double m_deadbandValue;
         private string m_indexRange;
         private Variant m_substituteValue;
+        private QualifiedNameCollection m_metaDataProperties;
         #endregion
     }
 
@@ -4919,34 +4931,70 @@ namespace Opc.Ua
     public enum DataSetContentMask
     {
         /// <summary>
-        /// A description for the StatusCode field.
+        /// A description for the FieldStatusCode field.
         /// </summary>
-        [EnumMember(Value = "StatusCode_1")]
-        StatusCode = 1,
+        [EnumMember(Value = "FieldStatusCode_1")]
+        FieldStatusCode = 1,
 
         /// <summary>
-        /// A description for the SourceTimestamp field.
+        /// A description for the FieldSourceTimestamp field.
         /// </summary>
-        [EnumMember(Value = "SourceTimestamp_2")]
-        SourceTimestamp = 2,
+        [EnumMember(Value = "FieldSourceTimestamp_2")]
+        FieldSourceTimestamp = 2,
 
         /// <summary>
-        /// A description for the ServerTimestamp field.
+        /// A description for the FieldServerTimestamp field.
         /// </summary>
-        [EnumMember(Value = "ServerTimestamp_4")]
-        ServerTimestamp = 4,
+        [EnumMember(Value = "FieldServerTimestamp_4")]
+        FieldServerTimestamp = 4,
 
         /// <summary>
-        /// A description for the SourcePicoSeconds field.
+        /// A description for the FieldSourcePicoSeconds field.
         /// </summary>
-        [EnumMember(Value = "SourcePicoSeconds_8")]
-        SourcePicoSeconds = 8,
+        [EnumMember(Value = "FieldSourcePicoSeconds_8")]
+        FieldSourcePicoSeconds = 8,
 
         /// <summary>
-        /// A description for the ServerPicoSeconds field.
+        /// A description for the FieldServerPicoSeconds field.
         /// </summary>
-        [EnumMember(Value = "ServerPicoSeconds_16")]
-        ServerPicoSeconds = 16,
+        [EnumMember(Value = "FieldServerPicoSeconds_16")]
+        FieldServerPicoSeconds = 16,
+
+        /// <summary>
+        /// A description for the FieldRawDataEncoding field.
+        /// </summary>
+        [EnumMember(Value = "FieldRawDataEncoding_32")]
+        FieldRawDataEncoding = 32,
+
+        /// <summary>
+        /// A description for the HeaderTimestamp field.
+        /// </summary>
+        [EnumMember(Value = "HeaderTimestamp_64")]
+        HeaderTimestamp = 64,
+
+        /// <summary>
+        /// A description for the HeaderPicoSeconds field.
+        /// </summary>
+        [EnumMember(Value = "HeaderPicoSeconds_128")]
+        HeaderPicoSeconds = 128,
+
+        /// <summary>
+        /// A description for the HeaderStatusCode field.
+        /// </summary>
+        [EnumMember(Value = "HeaderStatusCode_256")]
+        HeaderStatusCode = 256,
+
+        /// <summary>
+        /// A description for the HeaderMajorVersion field.
+        /// </summary>
+        [EnumMember(Value = "HeaderMajorVersion_512")]
+        HeaderMajorVersion = 512,
+
+        /// <summary>
+        /// A description for the HeaderMinorVersion field.
+        /// </summary>
+        [EnumMember(Value = "HeaderMinorVersion_1024")]
+        HeaderMinorVersion = 1024,
     }
 
     #region DataSetContentMaskCollection Class
@@ -5074,6 +5122,7 @@ namespace Opc.Ua
             m_targetNodeId = null;
             m_attributeId = (uint)0;
             m_writeIndexRange = null;
+            m_overrideValueHandling = OverrideValueHandling.Disabled;
             m_overrideValue = Variant.Null;
         }
         #endregion
@@ -5130,9 +5179,19 @@ namespace Opc.Ua
         }
 
         /// <summary>
+        /// A description for the OverrideValueHandling field.
+        /// </summary>
+        [DataMember(Name = "OverrideValueHandling", IsRequired = false, Order = 6)]
+        public OverrideValueHandling OverrideValueHandling
+        {
+            get { return m_overrideValueHandling;  }
+            set { m_overrideValueHandling = value; }
+        }
+
+        /// <summary>
         /// A description for the OverrideValue field.
         /// </summary>
-        [DataMember(Name = "OverrideValue", IsRequired = false, Order = 6)]
+        [DataMember(Name = "OverrideValue", IsRequired = false, Order = 7)]
         public Variant OverrideValue
         {
             get { return m_overrideValue;  }
@@ -5169,6 +5228,7 @@ namespace Opc.Ua
             encoder.WriteNodeId("TargetNodeId", TargetNodeId);
             encoder.WriteUInt32("AttributeId", AttributeId);
             encoder.WriteString("WriteIndexRange", WriteIndexRange);
+            encoder.WriteEnumerated("OverrideValueHandling", OverrideValueHandling);
             encoder.WriteVariant("OverrideValue", OverrideValue);
 
             encoder.PopNamespace();
@@ -5184,6 +5244,7 @@ namespace Opc.Ua
             TargetNodeId = decoder.ReadNodeId("TargetNodeId");
             AttributeId = decoder.ReadUInt32("AttributeId");
             WriteIndexRange = decoder.ReadString("WriteIndexRange");
+            OverrideValueHandling = (OverrideValueHandling)decoder.ReadEnumerated("OverrideValueHandling", typeof(OverrideValueHandling));
             OverrideValue = decoder.ReadVariant("OverrideValue");
 
             decoder.PopNamespace();
@@ -5209,6 +5270,7 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_targetNodeId, value.m_targetNodeId)) return false;
             if (!Utils.IsEqual(m_attributeId, value.m_attributeId)) return false;
             if (!Utils.IsEqual(m_writeIndexRange, value.m_writeIndexRange)) return false;
+            if (!Utils.IsEqual(m_overrideValueHandling, value.m_overrideValueHandling)) return false;
             if (!Utils.IsEqual(m_overrideValue, value.m_overrideValue)) return false;
 
             return true;
@@ -5232,6 +5294,7 @@ namespace Opc.Ua
             clone.m_targetNodeId = (NodeId)Utils.Clone(this.m_targetNodeId);
             clone.m_attributeId = (uint)Utils.Clone(this.m_attributeId);
             clone.m_writeIndexRange = (string)Utils.Clone(this.m_writeIndexRange);
+            clone.m_overrideValueHandling = (OverrideValueHandling)Utils.Clone(this.m_overrideValueHandling);
             clone.m_overrideValue = (Variant)Utils.Clone(this.m_overrideValue);
 
             return clone;
@@ -5244,6 +5307,7 @@ namespace Opc.Ua
         private NodeId m_targetNodeId;
         private uint m_attributeId;
         private string m_writeIndexRange;
+        private OverrideValueHandling m_overrideValueHandling;
         private Variant m_overrideValue;
         #endregion
     }
@@ -5326,6 +5390,122 @@ namespace Opc.Ua
             for (int ii = 0; ii < this.Count; ii++)
             {
                 clone.Add((DataConnectionDataType)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
+    #endif
+    #endregion
+
+    #region OverrideValueHandling Enumeration
+    #if (!OPCUA_EXCLUDE_OverrideValueHandling)
+    /// <summary>
+    /// A description for the OverrideValueHandling DataType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public enum OverrideValueHandling
+    {
+        /// <summary>
+        /// A description for the Disabled field.
+        /// </summary>
+        [EnumMember(Value = "Disabled_0")]
+        Disabled = 0,
+
+        /// <summary>
+        /// A description for the LastUseableValue field.
+        /// </summary>
+        [EnumMember(Value = "LastUseableValue_1")]
+        LastUseableValue = 1,
+
+        /// <summary>
+        /// A description for the OverrideValue field.
+        /// </summary>
+        [EnumMember(Value = "OverrideValue_2")]
+        OverrideValue = 2,
+    }
+
+    #region OverrideValueHandlingCollection Class
+    /// <summary>
+    /// A collection of OverrideValueHandling objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfOverrideValueHandling", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "OverrideValueHandling")]
+    #if !NET_STANDARD
+    public partial class OverrideValueHandlingCollection : List<OverrideValueHandling>, ICloneable
+    #else
+    public partial class OverrideValueHandlingCollection : List<OverrideValueHandling>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public OverrideValueHandlingCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public OverrideValueHandlingCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public OverrideValueHandlingCollection(IEnumerable<OverrideValueHandling> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator OverrideValueHandlingCollection(OverrideValueHandling[] values)
+        {
+            if (values != null)
+            {
+                return new OverrideValueHandlingCollection(values);
+            }
+
+            return new OverrideValueHandlingCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator OverrideValueHandling[](OverrideValueHandlingCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (OverrideValueHandling)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            OverrideValueHandlingCollection clone = new OverrideValueHandlingCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((OverrideValueHandling)Utils.Clone(this[ii]));
             }
 
             return clone;

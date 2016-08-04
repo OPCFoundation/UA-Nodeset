@@ -287,9 +287,8 @@
   </opc:StructuredType>
 
   <opc:StructuredType Name="ConfigurationVersionDataType" BaseType="ua:ExtensionObject">
-    <opc:Field Name="UniqueId" TypeName="opc:Guid" />
-    <opc:Field Name="MajorVersion" TypeName="opc:Byte" />
-    <opc:Field Name="MinorVersion" TypeName="opc:Byte" />
+    <opc:Field Name="MajorVersion" TypeName="opc:UInt32" />
+    <opc:Field Name="MinorVersion" TypeName="opc:UInt32" />
   </opc:StructuredType>
 
   <opc:StructuredType Name="DataSetMetaDataType" BaseType="ua:ExtensionObject">
@@ -348,6 +347,8 @@
     <opc:Field Name="DeadbandValue" TypeName="opc:Double" />
     <opc:Field Name="IndexRange" TypeName="opc:String" />
     <opc:Field Name="SubstituteValue" TypeName="ua:Variant" />
+    <opc:Field Name="NoOfMetaDataProperties" TypeName="opc:Int32" />
+    <opc:Field Name="MetaDataProperties" TypeName="ua:QualifiedName" LengthField="NoOfMetaDataProperties" />
   </opc:StructuredType>
 
   <opc:StructuredType Name="SecurityKeyServiceDataType" BaseType="ua:ExtensionObject">
@@ -360,11 +361,17 @@
   </opc:StructuredType>
 
   <opc:EnumeratedType Name="DataSetContentMask" LengthInBits="32">
-    <opc:EnumeratedValue Name="StatusCode" Value="1" />
-    <opc:EnumeratedValue Name="SourceTimestamp" Value="2" />
-    <opc:EnumeratedValue Name="ServerTimestamp" Value="4" />
-    <opc:EnumeratedValue Name="SourcePicoSeconds" Value="8" />
-    <opc:EnumeratedValue Name="ServerPicoSeconds" Value="16" />
+    <opc:EnumeratedValue Name="FieldStatusCode" Value="1" />
+    <opc:EnumeratedValue Name="FieldSourceTimestamp" Value="2" />
+    <opc:EnumeratedValue Name="FieldServerTimestamp" Value="4" />
+    <opc:EnumeratedValue Name="FieldSourcePicoSeconds" Value="8" />
+    <opc:EnumeratedValue Name="FieldServerPicoSeconds" Value="16" />
+    <opc:EnumeratedValue Name="FieldRawDataEncoding" Value="32" />
+    <opc:EnumeratedValue Name="HeaderTimestamp" Value="64" />
+    <opc:EnumeratedValue Name="HeaderPicoSeconds" Value="128" />
+    <opc:EnumeratedValue Name="HeaderStatusCode" Value="256" />
+    <opc:EnumeratedValue Name="HeaderMajorVersion" Value="512" />
+    <opc:EnumeratedValue Name="HeaderMinorVersion" Value="1024" />
   </opc:EnumeratedType>
 
   <opc:StructuredType Name="DataConnectionDataType" BaseType="ua:ExtensionObject">
@@ -373,8 +380,15 @@
     <opc:Field Name="TargetNodeId" TypeName="ua:NodeId" />
     <opc:Field Name="AttributeId" TypeName="opc:UInt32" />
     <opc:Field Name="WriteIndexRange" TypeName="opc:String" />
+    <opc:Field Name="OverrideValueHandling" TypeName="tns:OverrideValueHandling" />
     <opc:Field Name="OverrideValue" TypeName="ua:Variant" />
   </opc:StructuredType>
+
+  <opc:EnumeratedType Name="OverrideValueHandling" LengthInBits="32">
+    <opc:EnumeratedValue Name="Disabled" Value="0" />
+    <opc:EnumeratedValue Name="LastUseableValue" Value="1" />
+    <opc:EnumeratedValue Name="OverrideValue" Value="2" />
+  </opc:EnumeratedType>
 
   <opc:EnumeratedType Name="PubSubState" LengthInBits="32">
     <opc:EnumeratedValue Name="Disabled" Value="0" />

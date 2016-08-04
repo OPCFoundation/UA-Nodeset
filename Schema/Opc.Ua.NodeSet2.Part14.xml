@@ -49,12 +49,13 @@
       <Reference ReferenceType="HasComponent">i=14432</Reference>
       <Reference ReferenceType="HasComponent">i=15212</Reference>
       <Reference ReferenceType="HasComponent">i=15431</Reference>
-      <Reference ReferenceType="HasComponent">i=14434</Reference>
       <Reference ReferenceType="HasComponent">i=15434</Reference>
+      <Reference ReferenceType="HasComponent">i=14434</Reference>
+      <Reference ReferenceType="HasComponent">i=15844</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAObject NodeId="i=14417" BrowseName="&lt;ConnectionName&gt;" SymbolicName="xConnectionNamex" ParentNodeId="i=14416">
+  <UAObject NodeId="i=14417" BrowseName="&lt;ConnectionName&gt;" SymbolicName="Placeholder_ConnectionName" ParentNodeId="i=14416">
     <DisplayName>&lt;ConnectionName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=14418</Reference>
@@ -398,7 +399,7 @@
             <Argument>
               <Name>CurrentTokenId</Name>
               <DataType>
-                <Identifier>i=7</Identifier>
+                <Identifier>i=288</Identifier>
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
@@ -446,7 +447,7 @@
             <Argument>
               <Name>TimeToNextKey</Name>
               <DataType>
-                <Identifier>i=7</Identifier>
+                <Identifier>i=290</Identifier>
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
@@ -462,7 +463,7 @@
             <Argument>
               <Name>KeyLifetime</Name>
               <DataType>
-                <Identifier>i=7</Identifier>
+                <Identifier>i=290</Identifier>
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
@@ -538,6 +539,117 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
+  <UAObject NodeId="i=15434" BrowseName="SecurityGroups" ParentNodeId="i=14416">
+    <DisplayName>SecurityGroups</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">i=15435</Reference>
+      <Reference ReferenceType="HasComponent">i=15438</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=15452</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=14416</Reference>
+    </References>
+  </UAObject>
+  <UAMethod NodeId="i=15435" BrowseName="AddSecurityGroup" ParentNodeId="i=15434" MethodDeclarationId="i=15461">
+    <DisplayName>AddSecurityGroup</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=15436</Reference>
+      <Reference ReferenceType="HasProperty">i=15437</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=15434</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="i=15436" BrowseName="InputArguments" ParentNodeId="i=15435" DataType="i=296" ValueRank="1">
+    <DisplayName>InputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15435</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>SecurityGroupName</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="i=15437" BrowseName="OutputArguments" ParentNodeId="i=15435" DataType="i=296" ValueRank="1">
+    <DisplayName>OutputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15435</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>SecurityGroupNodeId</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAMethod NodeId="i=15438" BrowseName="RemoveSecurityGroup" ParentNodeId="i=15434" MethodDeclarationId="i=15464">
+    <DisplayName>RemoveSecurityGroup</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=15439</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=15434</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="i=15439" BrowseName="InputArguments" ParentNodeId="i=15438" DataType="i=296" ValueRank="1">
+    <DisplayName>InputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15438</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>SecurityGroupNodeId</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+    </Value>
+  </UAVariable>
   <UAObject NodeId="i=14434" BrowseName="PublishedDataSets" ParentNodeId="i=14416">
     <DisplayName>PublishedDataSets</DisplayName>
     <References>
@@ -546,14 +658,23 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=14416</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="i=15434" BrowseName="SecurityGroups" ParentNodeId="i=14416">
-    <DisplayName>SecurityGroups</DisplayName>
+  <UAObject NodeId="i=15844" BrowseName="Status" ParentNodeId="i=14416">
+    <DisplayName>Status</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=15452</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">i=15845</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=14643</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=14416</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="i=15845" BrowseName="State" ParentNodeId="i=15844" DataType="i=14647">
+    <DisplayName>State</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15844</Reference>
+    </References>
+  </UAVariable>
   <UAObject NodeId="i=14443" BrowseName="PublishSubscribe">
     <DisplayName>PublishSubscribe</DisplayName>
     <References>
@@ -562,8 +683,9 @@
       <Reference ReferenceType="HasComponent">i=14459</Reference>
       <Reference ReferenceType="HasComponent">i=15215</Reference>
       <Reference ReferenceType="HasComponent">i=15440</Reference>
-      <Reference ReferenceType="HasComponent">i=14461</Reference>
       <Reference ReferenceType="HasComponent">i=15443</Reference>
+      <Reference ReferenceType="HasComponent">i=14461</Reference>
+      <Reference ReferenceType="HasComponent">i=15848</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2253</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=14416</Reference>
     </References>
@@ -857,7 +979,7 @@
             <Argument>
               <Name>CurrentTokenId</Name>
               <DataType>
-                <Identifier>i=7</Identifier>
+                <Identifier>i=288</Identifier>
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
@@ -905,7 +1027,7 @@
             <Argument>
               <Name>TimeToNextKey</Name>
               <DataType>
-                <Identifier>i=7</Identifier>
+                <Identifier>i=290</Identifier>
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
@@ -921,7 +1043,7 @@
             <Argument>
               <Name>KeyLifetime</Name>
               <DataType>
-                <Identifier>i=7</Identifier>
+                <Identifier>i=290</Identifier>
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
@@ -994,6 +1116,111 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
+  <UAObject NodeId="i=15443" BrowseName="SecurityGroups" ParentNodeId="i=14443">
+    <DisplayName>SecurityGroups</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">i=15444</Reference>
+      <Reference ReferenceType="HasComponent">i=15447</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=15452</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=14443</Reference>
+    </References>
+  </UAObject>
+  <UAMethod NodeId="i=15444" BrowseName="AddSecurityGroup" ParentNodeId="i=15443" MethodDeclarationId="i=15461">
+    <DisplayName>AddSecurityGroup</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=15445</Reference>
+      <Reference ReferenceType="HasProperty">i=15446</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=15443</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="i=15445" BrowseName="InputArguments" ParentNodeId="i=15444" DataType="i=296" ValueRank="1">
+    <DisplayName>InputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15444</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>SecurityGroupName</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="i=15446" BrowseName="OutputArguments" ParentNodeId="i=15444" DataType="i=296" ValueRank="1">
+    <DisplayName>OutputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15444</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>SecurityGroupNodeId</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAMethod NodeId="i=15447" BrowseName="RemoveSecurityGroup" ParentNodeId="i=15443" MethodDeclarationId="i=15464">
+    <DisplayName>RemoveSecurityGroup</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=15448</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=15443</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="i=15448" BrowseName="InputArguments" ParentNodeId="i=15447" DataType="i=296" ValueRank="1">
+    <DisplayName>InputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15447</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>SecurityGroupNodeId</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+    </Value>
+  </UAVariable>
   <UAObject NodeId="i=14461" BrowseName="PublishedDataSets" ParentNodeId="i=14443">
     <DisplayName>PublishedDataSets</DisplayName>
     <References>
@@ -1001,13 +1228,21 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=14443</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="i=15443" BrowseName="SecurityGroups" ParentNodeId="i=14443">
-    <DisplayName>SecurityGroups</DisplayName>
+  <UAObject NodeId="i=15848" BrowseName="Status" ParentNodeId="i=14443">
+    <DisplayName>Status</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=15452</Reference>
+      <Reference ReferenceType="HasProperty">i=15849</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=14643</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=14443</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="i=15849" BrowseName="State" ParentNodeId="i=15848" DataType="i=14647">
+    <DisplayName>State</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15848</Reference>
+    </References>
+  </UAVariable>
   <UAObjectType NodeId="i=15452" BrowseName="SecurityGroupFolderType">
     <DisplayName>SecurityGroupFolderType</DisplayName>
     <References>
@@ -1018,7 +1253,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
     </References>
   </UAObjectType>
-  <UAObject NodeId="i=15453" BrowseName="&lt;SecurityGroupFolderName&gt;" SymbolicName="xSecurityGroupFolderNamex" ParentNodeId="i=15452">
+  <UAObject NodeId="i=15453" BrowseName="&lt;SecurityGroupFolderName&gt;" SymbolicName="Placeholder_SecurityGroupFolderName" ParentNodeId="i=15452">
     <DisplayName>&lt;SecurityGroupFolderName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=15454</Reference>
@@ -1033,7 +1268,7 @@
     <References>
       <Reference ReferenceType="HasProperty">i=15455</Reference>
       <Reference ReferenceType="HasProperty">i=15456</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=15453</Reference>
     </References>
   </UAMethod>
@@ -1097,7 +1332,7 @@
     <DisplayName>RemoveSecurityGroup</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=15458</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=15453</Reference>
     </References>
   </UAMethod>
@@ -1129,7 +1364,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAObject NodeId="i=15459" BrowseName="&lt;SecurityGroupName&gt;" SymbolicName="xSecurityGroupNamex" ParentNodeId="i=15452">
+  <UAObject NodeId="i=15459" BrowseName="&lt;SecurityGroupName&gt;" SymbolicName="Placeholder_SecurityGroupName" ParentNodeId="i=15452">
     <DisplayName>&lt;SecurityGroupName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=15460</Reference>
@@ -1151,7 +1386,7 @@
     <References>
       <Reference ReferenceType="HasProperty">i=15462</Reference>
       <Reference ReferenceType="HasProperty">i=15463</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=15452</Reference>
     </References>
   </UAMethod>
@@ -1215,7 +1450,7 @@
     <DisplayName>RemoveSecurityGroup</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=15465</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=15452</Reference>
     </References>
   </UAMethod>
@@ -1280,7 +1515,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
     </References>
   </UAObjectType>
-  <UAObject NodeId="i=14478" BrowseName="&lt;DataSetFolderName&gt;" SymbolicName="xDataSetFolderNamex" ParentNodeId="i=14477">
+  <UAObject NodeId="i=14478" BrowseName="&lt;DataSetFolderName&gt;" SymbolicName="Placeholder_DataSetFolderName" ParentNodeId="i=14477">
     <DisplayName>&lt;DataSetFolderName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=14479</Reference>
@@ -1391,7 +1626,7 @@
           </TypeId>
           <Body>
             <Argument>
-              <Name>DataSetId</Name>
+              <Name>DataSetNodeId</Name>
               <DataType>
                 <Identifier>i=17</Identifier>
               </DataType>
@@ -1584,7 +1819,7 @@
           </TypeId>
           <Body>
             <Argument>
-              <Name>DataSetId</Name>
+              <Name>DataSetNodeId</Name>
               <DataType>
                 <Identifier>i=17</Identifier>
               </DataType>
@@ -1633,7 +1868,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAObject NodeId="i=14487" BrowseName="&lt;PublishedDataSetName&gt;" SymbolicName="xPublishedDataSetNamex" ParentNodeId="i=14477">
+  <UAObject NodeId="i=14487" BrowseName="&lt;PublishedDataSetName&gt;" SymbolicName="Placeholder_PublishedDataSetName" ParentNodeId="i=14477">
     <DisplayName>&lt;PublishedDataSetName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=14489</Reference>
@@ -1759,7 +1994,7 @@
           </TypeId>
           <Body>
             <Argument>
-              <Name>DataSetId</Name>
+              <Name>DataSetNodeId</Name>
               <DataType>
                 <Identifier>i=17</Identifier>
               </DataType>
@@ -1952,7 +2187,7 @@
           </TypeId>
           <Body>
             <Argument>
-              <Name>DataSetId</Name>
+              <Name>DataSetNodeId</Name>
               <DataType>
                 <Identifier>i=17</Identifier>
               </DataType>
@@ -2011,11 +2246,12 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAObject NodeId="i=15222" BrowseName="&lt;DataSetWriterName&gt;" SymbolicName="xDataSetWriterNamex" ParentNodeId="i=14509">
+  <UAObject NodeId="i=15222" BrowseName="&lt;DataSetWriterName&gt;" SymbolicName="Placeholder_DataSetWriterName" ParentNodeId="i=14509">
     <DisplayName>&lt;DataSetWriterName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=15223</Reference>
       <Reference ReferenceType="HasComponent">i=15227</Reference>
+      <Reference ReferenceType="HasProperty">i=15480</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=15298</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
       <Reference ReferenceType="i=14936" IsForward="false">i=14509</Reference>
@@ -2046,6 +2282,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=15222</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="i=15480" BrowseName="DataSetContentMask" ParentNodeId="i=15222" DataType="i=15532">
+    <DisplayName>DataSetContentMask</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15222</Reference>
+    </References>
+  </UAVariable>
   <UAVariable NodeId="i=14519" BrowseName="ConfigurationVersion" ParentNodeId="i=14509" DataType="i=14593">
     <DisplayName>ConfigurationVersion</DisplayName>
     <References>
@@ -2065,20 +2309,138 @@
   <UAObject NodeId="i=15481" BrowseName="ExtensionFields" ParentNodeId="i=14509">
     <DisplayName>ExtensionFields</DisplayName>
     <References>
+      <Reference ReferenceType="HasComponent">i=15482</Reference>
+      <Reference ReferenceType="HasComponent">i=15485</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=15489</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=14509</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="i=15482" BrowseName="AddExtensionField" ParentNodeId="i=15481" MethodDeclarationId="i=15491">
+    <DisplayName>AddExtensionField</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=15483</Reference>
+      <Reference ReferenceType="HasProperty">i=15484</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=15481</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="i=15483" BrowseName="InputArguments" ParentNodeId="i=15482" DataType="i=296" ValueRank="1">
+    <DisplayName>InputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15482</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>FieldName</Name>
+              <DataType>
+                <Identifier>i=20</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>FieldValue</Name>
+              <DataType>
+                <Identifier>i=24</Identifier>
+              </DataType>
+              <ValueRank>-2</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="i=15484" BrowseName="OutputArguments" ParentNodeId="i=15482" DataType="i=296" ValueRank="1">
+    <DisplayName>OutputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15482</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>FieldId</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAMethod NodeId="i=15485" BrowseName="RemoveExtensionField" ParentNodeId="i=15481" MethodDeclarationId="i=15494">
+    <DisplayName>RemoveExtensionField</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=15486</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=15481</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="i=15486" BrowseName="InputArguments" ParentNodeId="i=15485" DataType="i=296" ValueRank="1">
+    <DisplayName>InputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15485</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>FieldId</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+    </Value>
+  </UAVariable>
   <UADataType NodeId="i=14593" BrowseName="ConfigurationVersionDataType">
     <DisplayName>ConfigurationVersionDataType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="ConfigurationVersionDataType">
-      <Field Name="UniqueId" DataType="i=14" />
-      <Field Name="MajorVersion" DataType="i=3" />
-      <Field Name="MinorVersion" DataType="i=3" />
+      <Field Name="MajorVersion" DataType="i=7" />
+      <Field Name="MinorVersion" DataType="i=7" />
     </Definition>
   </UADataType>
   <UADataType NodeId="i=14523" BrowseName="DataSetMetaDataType">
@@ -2158,7 +2520,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=15490" BrowseName="&lt;ExtensionFieldName&gt;" SymbolicName="xExtensionFieldNamex" ParentNodeId="i=15489">
+  <UAVariable NodeId="i=15490" BrowseName="&lt;ExtensionFieldName&gt;" SymbolicName="Placeholder_ExtensionFieldName" ParentNodeId="i=15489">
     <DisplayName>&lt;ExtensionFieldName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2171,7 +2533,7 @@
     <References>
       <Reference ReferenceType="HasProperty">i=15492</Reference>
       <Reference ReferenceType="HasProperty">i=15493</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=15489</Reference>
     </References>
   </UAMethod>
@@ -2238,7 +2600,7 @@
               <DataType>
                 <Identifier>i=17</Identifier>
               </DataType>
-              <ValueRank>1</ValueRank>
+              <ValueRank>-1</ValueRank>
               <ArrayDimensions />
               <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
@@ -2251,7 +2613,7 @@
     <DisplayName>RemoveExtensionField</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=15495</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=15489</Reference>
     </References>
   </UAMethod>
@@ -2274,7 +2636,7 @@
               <DataType>
                 <Identifier>i=17</Identifier>
               </DataType>
-              <ValueRank>1</ValueRank>
+              <ValueRank>-1</ValueRank>
               <ArrayDimensions />
               <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
@@ -2546,6 +2908,7 @@
       <Field Name="DeadbandValue" DataType="i=11" />
       <Field Name="IndexRange" DataType="i=291" />
       <Field Name="SubstituteValue" />
+      <Field Name="MetaDataProperties" DataType="i=20" ValueRank="1" />
     </Definition>
   </UADataType>
   <UAObjectType NodeId="i=14572" BrowseName="PublishedEventsType">
@@ -2729,12 +3092,13 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=14209</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="i=14210" BrowseName="&lt;GroupName&gt;" SymbolicName="xGroupNamex" ParentNodeId="i=14209">
+  <UAObject NodeId="i=14210" BrowseName="&lt;GroupName&gt;" SymbolicName="Placeholder_GroupName" ParentNodeId="i=14209">
     <DisplayName>&lt;GroupName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=15073</Reference>
       <Reference ReferenceType="HasProperty">i=15074</Reference>
       <Reference ReferenceType="HasProperty">i=15254</Reference>
+      <Reference ReferenceType="HasProperty">i=15852</Reference>
       <Reference ReferenceType="HasComponent">i=15255</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=14232</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
@@ -2759,6 +3123,14 @@
   </UAVariable>
   <UAVariable NodeId="i=15254" BrowseName="EncodingMimeType" ParentNodeId="i=14210" DataType="String">
     <DisplayName>EncodingMimeType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=14210</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=15852" BrowseName="Priority" ParentNodeId="i=14210" DataType="Byte">
+    <DisplayName>Priority</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2849,6 +3221,7 @@
       <Reference ReferenceType="HasProperty">i=15079</Reference>
       <Reference ReferenceType="HasProperty">i=15080</Reference>
       <Reference ReferenceType="HasProperty">i=15264</Reference>
+      <Reference ReferenceType="HasProperty">i=15854</Reference>
       <Reference ReferenceType="HasComponent">i=15265</Reference>
       <Reference ReferenceType="HasComponent">i=15081</Reference>
       <Reference ReferenceType="i=15296">i=15270</Reference>
@@ -2882,6 +3255,14 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=14232</Reference>
     </References>
   </UAVariable>
+  <UAVariable NodeId="i=15854" BrowseName="Priority" ParentNodeId="i=14232" DataType="Byte">
+    <DisplayName>Priority</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=14232</Reference>
+    </References>
+  </UAVariable>
   <UAObject NodeId="i=15265" BrowseName="Status" ParentNodeId="i=14232">
     <DisplayName>Status</DisplayName>
     <References>
@@ -2904,7 +3285,6 @@
     <References>
       <Reference ReferenceType="HasProperty">i=15082</Reference>
       <Reference ReferenceType="HasProperty">i=15084</Reference>
-      <Reference ReferenceType="HasProperty">i=15269</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=15094</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=14232</Reference>
@@ -2926,19 +3306,12 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=15081</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=15269" BrowseName="KeyServers" ParentNodeId="i=15081" DataType="i=15294" ValueRank="1">
-    <DisplayName>KeyServers</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=15081</Reference>
-    </References>
-  </UAVariable>
-  <UAObject NodeId="i=15270" BrowseName="&lt;DataSetWriterName&gt;" SymbolicName="xDataSetWriterNamex" ParentNodeId="i=14232">
+  <UAObject NodeId="i=15270" BrowseName="&lt;DataSetWriterName&gt;" SymbolicName="Placeholder_DataSetWriterName" ParentNodeId="i=14232">
     <DisplayName>&lt;DataSetWriterName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=15271</Reference>
       <Reference ReferenceType="HasComponent">i=15275</Reference>
+      <Reference ReferenceType="HasProperty">i=15528</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=15298</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
       <Reference ReferenceType="i=15296" IsForward="false">i=14232</Reference>
@@ -2969,6 +3342,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=15270</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="i=15528" BrowseName="DataSetContentMask" ParentNodeId="i=15270" DataType="i=15532">
+    <DisplayName>DataSetContentMask</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15270</Reference>
+    </References>
+  </UAVariable>
   <UAMethod NodeId="i=15277" BrowseName="RemoveDataSetWriter" ParentNodeId="i=14232">
     <DisplayName>RemoveDataSetWriter</DisplayName>
     <References>
@@ -3005,7 +3386,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAObject NodeId="i=15279" BrowseName="&lt;DataSetReaderName&gt;" SymbolicName="xDataSetReaderNamex" ParentNodeId="i=14232">
+  <UAObject NodeId="i=15279" BrowseName="&lt;DataSetReaderName&gt;" SymbolicName="Placeholder_DataSetReaderName" ParentNodeId="i=14232">
     <DisplayName>&lt;DataSetReaderName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=15280</Reference>
@@ -3108,7 +3489,7 @@
     <References>
       <Reference ReferenceType="HasProperty">i=15095</Reference>
       <Reference ReferenceType="HasProperty">i=15097</Reference>
-      <Reference ReferenceType="HasProperty">i=15295</Reference>
+      <Reference ReferenceType="HasProperty">i=15862</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
@@ -3128,11 +3509,11 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=15094</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=15295" BrowseName="KeyServers" ParentNodeId="i=15094" DataType="i=15294" ValueRank="1">
-    <DisplayName>KeyServers</DisplayName>
+  <UAVariable NodeId="i=15862" BrowseName="SecurityKeyServices" ParentNodeId="i=15094" DataType="i=312" ValueRank="1">
+    <DisplayName>SecurityKeyServices</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=15094</Reference>
     </References>
   </UAVariable>
@@ -3200,7 +3581,7 @@
     <DisplayName>DataSetContentMask</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=15298</Reference>
     </References>
   </UAVariable>
@@ -3226,11 +3607,17 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
     <Definition Name="DataSetContentMask">
-      <Field Name="StatusCode" Value="1" />
-      <Field Name="SourceTimestamp" Value="2" />
-      <Field Name="ServerTimestamp" Value="4" />
-      <Field Name="SourcePicoSeconds" Value="8" />
-      <Field Name="ServerPicoSeconds" Value="16" />
+      <Field Name="FieldStatusCode" Value="1" />
+      <Field Name="FieldSourceTimestamp" Value="2" />
+      <Field Name="FieldServerTimestamp" Value="4" />
+      <Field Name="FieldSourcePicoSeconds" Value="8" />
+      <Field Name="FieldServerPicoSeconds" Value="16" />
+      <Field Name="FieldRawDataEncoding" Value="32" />
+      <Field Name="HeaderTimestamp" Value="64" />
+      <Field Name="HeaderPicoSeconds" Value="128" />
+      <Field Name="HeaderStatusCode" Value="256" />
+      <Field Name="HeaderMajorVersion" Value="512" />
+      <Field Name="HeaderMinorVersion" Value="1024" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15533" BrowseName="EnumValues" ParentNodeId="i=15532" DataType="i=7594" ValueRank="1">
@@ -3252,7 +3639,7 @@
               <DisplayName>
                 <Locale>
                 </Locale>
-                <Text>StatusCode</Text>
+                <Text>FieldStatusCode</Text>
               </DisplayName>
               <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
@@ -3268,7 +3655,7 @@
               <DisplayName>
                 <Locale>
                 </Locale>
-                <Text>SourceTimestamp</Text>
+                <Text>FieldSourceTimestamp</Text>
               </DisplayName>
               <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
@@ -3284,7 +3671,7 @@
               <DisplayName>
                 <Locale>
                 </Locale>
-                <Text>ServerTimestamp</Text>
+                <Text>FieldServerTimestamp</Text>
               </DisplayName>
               <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
@@ -3300,7 +3687,7 @@
               <DisplayName>
                 <Locale>
                 </Locale>
-                <Text>SourcePicoSeconds</Text>
+                <Text>FieldSourcePicoSeconds</Text>
               </DisplayName>
               <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
@@ -3316,7 +3703,103 @@
               <DisplayName>
                 <Locale>
                 </Locale>
-                <Text>ServerPicoSeconds</Text>
+                <Text>FieldServerPicoSeconds</Text>
+              </DisplayName>
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>32</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>FieldRawDataEncoding</Text>
+              </DisplayName>
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>64</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>HeaderTimestamp</Text>
+              </DisplayName>
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>128</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>HeaderPicoSeconds</Text>
+              </DisplayName>
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>256</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>HeaderStatusCode</Text>
+              </DisplayName>
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>512</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>HeaderMajorVersion</Text>
+              </DisplayName>
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1024</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>HeaderMinorVersion</Text>
               </DisplayName>
               <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
@@ -3332,6 +3815,8 @@
       <Reference ReferenceType="HasComponent">i=15311</Reference>
       <Reference ReferenceType="HasComponent">i=15312</Reference>
       <Reference ReferenceType="HasComponent">i=15316</Reference>
+      <Reference ReferenceType="HasComponent">i=15864</Reference>
+      <Reference ReferenceType="HasComponent">i=15867</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
@@ -3365,7 +3850,6 @@
     <References>
       <Reference ReferenceType="HasProperty">i=15313</Reference>
       <Reference ReferenceType="HasProperty">i=15314</Reference>
-      <Reference ReferenceType="HasProperty">i=15315</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=15094</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=15306</Reference>
@@ -3381,14 +3865,6 @@
   </UAVariable>
   <UAVariable NodeId="i=15314" BrowseName="SecurityMode" ParentNodeId="i=15312" DataType="i=302">
     <DisplayName>SecurityMode</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=15312</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=15315" BrowseName="KeyServers" ParentNodeId="i=15312" DataType="i=15294" ValueRank="1">
-    <DisplayName>KeyServers</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3420,6 +3896,123 @@
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=15316</Reference>
     </References>
+  </UAVariable>
+  <UAMethod NodeId="i=15864" BrowseName="SetConnectVariables" ParentNodeId="i=15306">
+    <DisplayName>SetConnectVariables</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=15865</Reference>
+      <Reference ReferenceType="HasProperty">i=15866</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=15306</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="i=15865" BrowseName="InputArguments" ParentNodeId="i=15864" DataType="i=296" ValueRank="1">
+    <DisplayName>InputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15864</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ConfigurationVersion</Name>
+              <DataType>
+                <Identifier>i=14593</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>DataConnectionsToAdd</Name>
+              <DataType>
+                <Identifier>i=14744</Identifier>
+              </DataType>
+              <ValueRank>1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="i=15866" BrowseName="OutputArguments" ParentNodeId="i=15864" DataType="i=296" ValueRank="1">
+    <DisplayName>OutputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15864</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>AddResults</Name>
+              <DataType>
+                <Identifier>i=19</Identifier>
+              </DataType>
+              <ValueRank>1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAMethod NodeId="i=15867" BrowseName="SetDataSetMirror" ParentNodeId="i=15306">
+    <DisplayName>SetDataSetMirror</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=15868</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=15306</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="i=15868" BrowseName="InputArguments" ParentNodeId="i=15867" DataType="i=296" ValueRank="1">
+    <DisplayName>InputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15867</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ParentNode</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+    </Value>
   </UAVariable>
   <UAObjectType NodeId="i=15319" BrowseName="DataSetReaderTransportType" IsAbstract="true">
     <DisplayName>DataSetReaderTransportType</DisplayName>
@@ -3630,6 +4223,45 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
+  <UADataType NodeId="i=15874" BrowseName="OverrideValueHandling">
+    <DisplayName>OverrideValueHandling</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=15875</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+    </References>
+    <Definition Name="OverrideValueHandling">
+      <Field Name="Disabled" Value="0" />
+      <Field Name="LastUseableValue" Value="1" />
+      <Field Name="OverrideValue" Value="2" />
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="i=15875" BrowseName="EnumStrings" ParentNodeId="i=15874" DataType="LocalizedText" ValueRank="1">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15874</Reference>
+    </References>
+    <Value>
+      <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Disabled</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>LastUseableValue</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>OverrideValue</Text>
+        </LocalizedText>
+      </ListOfLocalizedText>
+    </Value>
+  </UAVariable>
   <UAObjectType NodeId="i=15127" BrowseName="SubscribedDataSetMirrorType">
     <DisplayName>SubscribedDataSetMirrorType</DisplayName>
     <References>
@@ -3751,21 +4383,12 @@
   <UAObjectType NodeId="i=14943" BrowseName="UadpConnectionType">
     <DisplayName>UadpConnectionType</DisplayName>
     <References>
-      <Reference ReferenceType="HasProperty">i=14944</Reference>
       <Reference ReferenceType="HasComponent">i=15330</Reference>
       <Reference ReferenceType="HasProperty">i=15334</Reference>
       <Reference ReferenceType="HasComponent">i=14959</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=14209</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=14944" BrowseName="PublisherId" ParentNodeId="i=14943" DataType="Guid">
-    <DisplayName>PublisherId</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=14943</Reference>
-    </References>
-  </UAVariable>
   <UAVariable NodeId="i=15330" BrowseName="NetworkInterface" ParentNodeId="i=14943" DataType="UInt32" ValueRank="1">
     <DisplayName>NetworkInterface</DisplayName>
     <References>
@@ -3831,6 +4454,70 @@
           </TypeId>
           <Body>
             <Argument>
+              <Name>PublishingInterval</Name>
+              <DataType>
+                <Identifier>i=290</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>PublishingOffset</Name>
+              <DataType>
+                <Identifier>i=290</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>KeepAliveTime</Name>
+              <DataType>
+                <Identifier>i=290</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Priority</Name>
+              <DataType>
+                <Identifier>i=3</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
               <Name>SecurityMode</Name>
               <DataType>
                 <Identifier>i=302</Identifier>
@@ -3866,38 +4553,6 @@
               <Name>MaxNetworkMessageSize</Name>
               <DataType>
                 <Identifier>i=5</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>PublishingOffset</Name>
-              <DataType>
-                <Identifier>i=290</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>Priority</Name>
-              <DataType>
-                <Identifier>i=3</Identifier>
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
@@ -3942,7 +4597,6 @@
       <Reference ReferenceType="HasProperty">i=15365</Reference>
       <Reference ReferenceType="HasProperty">i=15366</Reference>
       <Reference ReferenceType="HasProperty">i=15151</Reference>
-      <Reference ReferenceType="HasProperty">i=15367</Reference>
       <Reference ReferenceType="HasProperty">i=15152</Reference>
       <Reference ReferenceType="HasProperty">i=15153</Reference>
       <Reference ReferenceType="HasProperty">i=15368</Reference>
@@ -3969,14 +4623,6 @@
   </UAVariable>
   <UAVariable NodeId="i=15151" BrowseName="PublishingOffset" ParentNodeId="i=14967" DataType="i=290">
     <DisplayName>PublishingOffset</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=14967</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=15367" BrowseName="Priority" ParentNodeId="i=14967" DataType="Byte">
-    <DisplayName>Priority</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -4323,19 +4969,10 @@
   <UAObjectType NodeId="i=14354" BrowseName="AmqpConnectionType">
     <DisplayName>AmqpConnectionType</DisplayName>
     <References>
-      <Reference ReferenceType="HasProperty">i=14745</Reference>
       <Reference ReferenceType="HasComponent">i=14367</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=14209</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=14745" BrowseName="PublisherId" ParentNodeId="i=14354" DataType="String">
-    <DisplayName>PublisherId</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=14354</Reference>
-    </References>
-  </UAVariable>
   <UAMethod NodeId="i=14367" BrowseName="AddGroup" ParentNodeId="i=14354">
     <DisplayName>AddGroup</DisplayName>
     <References>
@@ -4376,9 +5013,41 @@
           </TypeId>
           <Body>
             <Argument>
-              <Name>AmqpNodeName</Name>
+              <Name>PublishingInterval</Name>
               <DataType>
-                <Identifier>i=12</Identifier>
+                <Identifier>i=290</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>KeepAliveTime</Name>
+              <DataType>
+                <Identifier>i=290</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Priority</Name>
+              <DataType>
+                <Identifier>i=3</Identifier>
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
@@ -4425,6 +5094,22 @@
           <Body>
             <Argument>
               <Name>SecurityGroupId</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>AmqpNodeName</Name>
               <DataType>
                 <Identifier>i=12</Identifier>
               </DataType>

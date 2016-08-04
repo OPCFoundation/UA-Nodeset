@@ -693,8 +693,8 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
     </References>
   </UAObjectType>
-  <UAObject NodeId="i=15608" BrowseName="&lt;Role&gt;" SymbolicName="xRolex" ParentNodeId="i=15607">
-    <DisplayName>&lt;Role&gt;</DisplayName>
+  <UAObject NodeId="i=15608" BrowseName="&lt;RoleName&gt;" SymbolicName="Placeholder_RoleName" ParentNodeId="i=15607">
+    <DisplayName>&lt;RoleName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=15609</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=15620</Reference>
