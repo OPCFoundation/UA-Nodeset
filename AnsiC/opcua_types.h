@@ -30,10 +30,6 @@
 #ifndef _OpcUa_Types_H_
 #define _OpcUa_Types_H_ 1
 
-#ifndef OPCUA_FORCE_INT32_ENUMS
-# error OPCUA_FORCE_INT32_ENUMS must be defined!
-#endif /* OPCUA_FORCE_INT32_ENUMS */
-
 #include <opcua_builtintypes.h>
 
 OPCUA_BEGIN_EXTERN_C
@@ -59,9 +55,9 @@ typedef enum _OpcUa_IdType
 }
 OpcUa_IdType;
 
-#define OpcUa_IdType_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_IdType_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_IdType_Numeric)
 
-#define OpcUa_IdType_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_IdType_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_IdType_Numeric)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_IdType_EnumeratedType;
 #endif
@@ -87,9 +83,9 @@ typedef enum _OpcUa_NodeClass
 }
 OpcUa_NodeClass;
 
-#define OpcUa_NodeClass_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_NodeClass_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_NodeClass_Unspecified)
 
-#define OpcUa_NodeClass_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_NodeClass_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_NodeClass_Unspecified)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_NodeClass_EnumeratedType;
 #endif
@@ -628,9 +624,9 @@ typedef enum _OpcUa_ApplicationType
 }
 OpcUa_ApplicationType;
 
-#define OpcUa_ApplicationType_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_ApplicationType_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_ApplicationType_Server)
 
-#define OpcUa_ApplicationType_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_ApplicationType_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_ApplicationType_Server)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_ApplicationType_EnumeratedType;
 #endif
@@ -744,6 +740,33 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ServiceFault_Encode(OpcUa_ServiceFault* pVal
 OPCUA_EXPORT OpcUa_StatusCode OpcUa_ServiceFault_Decode(OpcUa_ServiceFault* pValue, struct _OpcUa_Decoder* pDecoder);
 
 OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_ServiceFault_EncodeableType;
+#endif
+
+#ifndef OPCUA_EXCLUDE_SessionLessServiceMessageType
+/*============================================================================
+ * The SessionLessServiceMessageType structure.
+ *===========================================================================*/
+typedef struct _OpcUa_SessionLessServiceMessageType
+{
+    OpcUa_Int32   NoOfNamespaceUris;
+    OpcUa_String* NamespaceUris;
+    OpcUa_Int32   NoOfServerUris;
+    OpcUa_String* ServerUris;
+    OpcUa_UInt32  ServiceId;
+}
+OpcUa_SessionLessServiceMessageType;
+
+OPCUA_EXPORT OpcUa_Void OpcUa_SessionLessServiceMessageType_Initialize(OpcUa_SessionLessServiceMessageType* pValue);
+
+OPCUA_EXPORT OpcUa_Void OpcUa_SessionLessServiceMessageType_Clear(OpcUa_SessionLessServiceMessageType* pValue);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_SessionLessServiceMessageType_GetSize(OpcUa_SessionLessServiceMessageType* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_SessionLessServiceMessageType_Encode(OpcUa_SessionLessServiceMessageType* pValue, struct _OpcUa_Encoder* pEncoder);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_SessionLessServiceMessageType_Decode(OpcUa_SessionLessServiceMessageType* pValue, struct _OpcUa_Decoder* pDecoder);
+
+OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_SessionLessServiceMessageType_EncodeableType;
 #endif
 
 #ifndef OPCUA_EXCLUDE_FindServers
@@ -899,9 +922,9 @@ typedef enum _OpcUa_MessageSecurityMode
 }
 OpcUa_MessageSecurityMode;
 
-#define OpcUa_MessageSecurityMode_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_MessageSecurityMode_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_MessageSecurityMode_Invalid)
 
-#define OpcUa_MessageSecurityMode_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_MessageSecurityMode_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_MessageSecurityMode_Invalid)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_MessageSecurityMode_EnumeratedType;
 #endif
@@ -915,17 +938,16 @@ typedef enum _OpcUa_UserTokenType
     OpcUa_UserTokenType_Anonymous   = 0,
     OpcUa_UserTokenType_UserName    = 1,
     OpcUa_UserTokenType_Certificate = 2,
-    OpcUa_UserTokenType_IssuedToken = 3,
-    OpcUa_UserTokenType_Kerberos    = 4
+    OpcUa_UserTokenType_IssuedToken = 3
 #if OPCUA_FORCE_INT32_ENUMS
     ,_OpcUa_UserTokenType_MaxEnumerationValue = OpcUa_Int32_Max
 #endif
 }
 OpcUa_UserTokenType;
 
-#define OpcUa_UserTokenType_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_UserTokenType_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_UserTokenType_Anonymous)
 
-#define OpcUa_UserTokenType_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_UserTokenType_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_UserTokenType_Anonymous)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_UserTokenType_EnumeratedType;
 #endif
@@ -1218,9 +1240,9 @@ typedef enum _OpcUa_SecurityTokenRequestType
 }
 OpcUa_SecurityTokenRequestType;
 
-#define OpcUa_SecurityTokenRequestType_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_SecurityTokenRequestType_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_SecurityTokenRequestType_Issue)
 
-#define OpcUa_SecurityTokenRequestType_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_SecurityTokenRequestType_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_SecurityTokenRequestType_Issue)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_SecurityTokenRequestType_EnumeratedType;
 #endif
@@ -1566,30 +1588,6 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_X509IdentityToken_Decode(OpcUa_X509IdentityT
 OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_X509IdentityToken_EncodeableType;
 #endif
 
-#ifndef OPCUA_EXCLUDE_KerberosIdentityToken
-/*============================================================================
- * The KerberosIdentityToken structure.
- *===========================================================================*/
-typedef struct _OpcUa_KerberosIdentityToken
-{
-    OpcUa_String     PolicyId;
-    OpcUa_ByteString TicketData;
-}
-OpcUa_KerberosIdentityToken;
-
-OPCUA_EXPORT OpcUa_Void OpcUa_KerberosIdentityToken_Initialize(OpcUa_KerberosIdentityToken* pValue);
-
-OPCUA_EXPORT OpcUa_Void OpcUa_KerberosIdentityToken_Clear(OpcUa_KerberosIdentityToken* pValue);
-
-OPCUA_EXPORT OpcUa_StatusCode OpcUa_KerberosIdentityToken_GetSize(OpcUa_KerberosIdentityToken* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
-
-OPCUA_EXPORT OpcUa_StatusCode OpcUa_KerberosIdentityToken_Encode(OpcUa_KerberosIdentityToken* pValue, struct _OpcUa_Encoder* pEncoder);
-
-OPCUA_EXPORT OpcUa_StatusCode OpcUa_KerberosIdentityToken_Decode(OpcUa_KerberosIdentityToken* pValue, struct _OpcUa_Decoder* pDecoder);
-
-OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_KerberosIdentityToken_EncodeableType;
-#endif
-
 #ifndef OPCUA_EXCLUDE_IssuedIdentityToken
 /*============================================================================
  * The IssuedIdentityToken structure.
@@ -1818,9 +1816,9 @@ typedef enum _OpcUa_NodeAttributesMask
 }
 OpcUa_NodeAttributesMask;
 
-#define OpcUa_NodeAttributesMask_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_NodeAttributesMask_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_NodeAttributesMask_None)
 
-#define OpcUa_NodeAttributesMask_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_NodeAttributesMask_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_NodeAttributesMask_None)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_NodeAttributesMask_EnumeratedType;
 #endif
@@ -2476,9 +2474,9 @@ typedef enum _OpcUa_AttributeWriteMask
 }
 OpcUa_AttributeWriteMask;
 
-#define OpcUa_AttributeWriteMask_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_AttributeWriteMask_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_AttributeWriteMask_None)
 
-#define OpcUa_AttributeWriteMask_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_AttributeWriteMask_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_AttributeWriteMask_None)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_AttributeWriteMask_EnumeratedType;
 #endif
@@ -2491,16 +2489,17 @@ typedef enum _OpcUa_BrowseDirection
 {
     OpcUa_BrowseDirection_Forward = 0,
     OpcUa_BrowseDirection_Inverse = 1,
-    OpcUa_BrowseDirection_Both    = 2
+    OpcUa_BrowseDirection_Both    = 2,
+    OpcUa_BrowseDirection_Invalid = 3
 #if OPCUA_FORCE_INT32_ENUMS
     ,_OpcUa_BrowseDirection_MaxEnumerationValue = OpcUa_Int32_Max
 #endif
 }
 OpcUa_BrowseDirection;
 
-#define OpcUa_BrowseDirection_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_BrowseDirection_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_BrowseDirection_Forward)
 
-#define OpcUa_BrowseDirection_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_BrowseDirection_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_BrowseDirection_Forward)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_BrowseDirection_EnumeratedType;
 #endif
@@ -2580,9 +2579,9 @@ typedef enum _OpcUa_BrowseResultMask
 }
 OpcUa_BrowseResultMask;
 
-#define OpcUa_BrowseResultMask_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_BrowseResultMask_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_BrowseResultMask_None)
 
-#define OpcUa_BrowseResultMask_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_BrowseResultMask_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_BrowseResultMask_None)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_BrowseResultMask_EnumeratedType;
 #endif
@@ -3063,91 +3062,6 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_EndpointConfiguration_Decode(OpcUa_EndpointC
 OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_EndpointConfiguration_EncodeableType;
 #endif
 
-#ifndef OPCUA_EXCLUDE_ComplianceLevel
-/*============================================================================
- * The ComplianceLevel enumeration.
- *===========================================================================*/
-typedef enum _OpcUa_ComplianceLevel
-{
-    OpcUa_ComplianceLevel_Untested   = 0,
-    OpcUa_ComplianceLevel_Partial    = 1,
-    OpcUa_ComplianceLevel_SelfTested = 2,
-    OpcUa_ComplianceLevel_Certified  = 3
-#if OPCUA_FORCE_INT32_ENUMS
-    ,_OpcUa_ComplianceLevel_MaxEnumerationValue = OpcUa_Int32_Max
-#endif
-}
-OpcUa_ComplianceLevel;
-
-#define OpcUa_ComplianceLevel_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
-
-#define OpcUa_ComplianceLevel_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
-
-OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_ComplianceLevel_EnumeratedType;
-#endif
-
-#ifndef OPCUA_EXCLUDE_SupportedProfile
-/*============================================================================
- * The SupportedProfile structure.
- *===========================================================================*/
-typedef struct _OpcUa_SupportedProfile
-{
-    OpcUa_String          OrganizationUri;
-    OpcUa_String          ProfileId;
-    OpcUa_String          ComplianceTool;
-    OpcUa_DateTime        ComplianceDate;
-    OpcUa_ComplianceLevel ComplianceLevel;
-    OpcUa_Int32           NoOfUnsupportedUnitIds;
-    OpcUa_String*         UnsupportedUnitIds;
-}
-OpcUa_SupportedProfile;
-
-OPCUA_EXPORT OpcUa_Void OpcUa_SupportedProfile_Initialize(OpcUa_SupportedProfile* pValue);
-
-OPCUA_EXPORT OpcUa_Void OpcUa_SupportedProfile_Clear(OpcUa_SupportedProfile* pValue);
-
-OPCUA_EXPORT OpcUa_StatusCode OpcUa_SupportedProfile_GetSize(OpcUa_SupportedProfile* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
-
-OPCUA_EXPORT OpcUa_StatusCode OpcUa_SupportedProfile_Encode(OpcUa_SupportedProfile* pValue, struct _OpcUa_Encoder* pEncoder);
-
-OPCUA_EXPORT OpcUa_StatusCode OpcUa_SupportedProfile_Decode(OpcUa_SupportedProfile* pValue, struct _OpcUa_Decoder* pDecoder);
-
-OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_SupportedProfile_EncodeableType;
-#endif
-
-#ifndef OPCUA_EXCLUDE_SoftwareCertificate
-/*============================================================================
- * The SoftwareCertificate structure.
- *===========================================================================*/
-typedef struct _OpcUa_SoftwareCertificate
-{
-    OpcUa_String            ProductName;
-    OpcUa_String            ProductUri;
-    OpcUa_String            VendorName;
-    OpcUa_ByteString        VendorProductCertificate;
-    OpcUa_String            SoftwareVersion;
-    OpcUa_String            BuildNumber;
-    OpcUa_DateTime          BuildDate;
-    OpcUa_String            IssuedBy;
-    OpcUa_DateTime          IssueDate;
-    OpcUa_Int32             NoOfSupportedProfiles;
-    OpcUa_SupportedProfile* SupportedProfiles;
-}
-OpcUa_SoftwareCertificate;
-
-OPCUA_EXPORT OpcUa_Void OpcUa_SoftwareCertificate_Initialize(OpcUa_SoftwareCertificate* pValue);
-
-OPCUA_EXPORT OpcUa_Void OpcUa_SoftwareCertificate_Clear(OpcUa_SoftwareCertificate* pValue);
-
-OPCUA_EXPORT OpcUa_StatusCode OpcUa_SoftwareCertificate_GetSize(OpcUa_SoftwareCertificate* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
-
-OPCUA_EXPORT OpcUa_StatusCode OpcUa_SoftwareCertificate_Encode(OpcUa_SoftwareCertificate* pValue, struct _OpcUa_Encoder* pEncoder);
-
-OPCUA_EXPORT OpcUa_StatusCode OpcUa_SoftwareCertificate_Decode(OpcUa_SoftwareCertificate* pValue, struct _OpcUa_Decoder* pDecoder);
-
-OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_SoftwareCertificate_EncodeableType;
-#endif
-
 #ifndef OPCUA_EXCLUDE_QueryDataDescription
 /*============================================================================
  * The QueryDataDescription structure.
@@ -3229,9 +3143,9 @@ typedef enum _OpcUa_FilterOperator
 }
 OpcUa_FilterOperator;
 
-#define OpcUa_FilterOperator_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_FilterOperator_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_FilterOperator_Equals)
 
-#define OpcUa_FilterOperator_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_FilterOperator_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_FilterOperator_Equals)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_FilterOperator_EnumeratedType;
 #endif
@@ -3642,16 +3556,17 @@ typedef enum _OpcUa_TimestampsToReturn
     OpcUa_TimestampsToReturn_Source  = 0,
     OpcUa_TimestampsToReturn_Server  = 1,
     OpcUa_TimestampsToReturn_Both    = 2,
-    OpcUa_TimestampsToReturn_Neither = 3
+    OpcUa_TimestampsToReturn_Neither = 3,
+    OpcUa_TimestampsToReturn_Invalid = 4
 #if OPCUA_FORCE_INT32_ENUMS
     ,_OpcUa_TimestampsToReturn_MaxEnumerationValue = OpcUa_Int32_Max
 #endif
 }
 OpcUa_TimestampsToReturn;
 
-#define OpcUa_TimestampsToReturn_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_TimestampsToReturn_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_TimestampsToReturn_Source)
 
-#define OpcUa_TimestampsToReturn_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_TimestampsToReturn_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_TimestampsToReturn_Source)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_TimestampsToReturn_EnumeratedType;
 #endif
@@ -3987,9 +3902,9 @@ typedef enum _OpcUa_HistoryUpdateType
 }
 OpcUa_HistoryUpdateType;
 
-#define OpcUa_HistoryUpdateType_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_HistoryUpdateType_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_HistoryUpdateType_Insert)
 
-#define OpcUa_HistoryUpdateType_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_HistoryUpdateType_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_HistoryUpdateType_Insert)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_HistoryUpdateType_EnumeratedType;
 #endif
@@ -4269,9 +4184,9 @@ typedef enum _OpcUa_PerformUpdateType
 }
 OpcUa_PerformUpdateType;
 
-#define OpcUa_PerformUpdateType_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_PerformUpdateType_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_PerformUpdateType_Insert)
 
-#define OpcUa_PerformUpdateType_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_PerformUpdateType_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_PerformUpdateType_Insert)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_PerformUpdateType_EnumeratedType;
 #endif
@@ -4636,9 +4551,9 @@ typedef enum _OpcUa_MonitoringMode
 }
 OpcUa_MonitoringMode;
 
-#define OpcUa_MonitoringMode_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_MonitoringMode_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_MonitoringMode_Disabled)
 
-#define OpcUa_MonitoringMode_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_MonitoringMode_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_MonitoringMode_Disabled)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_MonitoringMode_EnumeratedType;
 #endif
@@ -4658,9 +4573,9 @@ typedef enum _OpcUa_DataChangeTrigger
 }
 OpcUa_DataChangeTrigger;
 
-#define OpcUa_DataChangeTrigger_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_DataChangeTrigger_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_DataChangeTrigger_Status)
 
-#define OpcUa_DataChangeTrigger_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_DataChangeTrigger_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_DataChangeTrigger_Status)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_DataChangeTrigger_EnumeratedType;
 #endif
@@ -4680,9 +4595,9 @@ typedef enum _OpcUa_DeadbandType
 }
 OpcUa_DeadbandType;
 
-#define OpcUa_DeadbandType_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_DeadbandType_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_DeadbandType_None)
 
-#define OpcUa_DeadbandType_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_DeadbandType_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_DeadbandType_None)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_DeadbandType_EnumeratedType;
 #endif
@@ -5791,28 +5706,6 @@ OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_DeleteSubscriptionsResp
 #endif
 #endif
 
-#ifndef OPCUA_EXCLUDE_EnumeratedTestType
-/*============================================================================
- * The EnumeratedTestType enumeration.
- *===========================================================================*/
-typedef enum _OpcUa_EnumeratedTestType
-{
-    OpcUa_EnumeratedTestType_Red    = 1,
-    OpcUa_EnumeratedTestType_Yellow = 4,
-    OpcUa_EnumeratedTestType_Green  = 5
-#if OPCUA_FORCE_INT32_ENUMS
-    ,_OpcUa_EnumeratedTestType_MaxEnumerationValue = OpcUa_Int32_Max
-#endif
-}
-OpcUa_EnumeratedTestType;
-
-#define OpcUa_EnumeratedTestType_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
-
-#define OpcUa_EnumeratedTestType_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
-
-OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_EnumeratedTestType_EnumeratedType;
-#endif
-
 #ifndef OPCUA_EXCLUDE_BuildInfo
 /*============================================================================
  * The BuildInfo structure.
@@ -5859,9 +5752,9 @@ typedef enum _OpcUa_RedundancySupport
 }
 OpcUa_RedundancySupport;
 
-#define OpcUa_RedundancySupport_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_RedundancySupport_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_RedundancySupport_None)
 
-#define OpcUa_RedundancySupport_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_RedundancySupport_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_RedundancySupport_None)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_RedundancySupport_EnumeratedType;
 #endif
@@ -5886,9 +5779,9 @@ typedef enum _OpcUa_ServerState
 }
 OpcUa_ServerState;
 
-#define OpcUa_ServerState_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_ServerState_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_ServerState_Running)
 
-#define OpcUa_ServerState_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_ServerState_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_ServerState_Running)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_ServerState_EnumeratedType;
 #endif
@@ -6271,9 +6164,9 @@ typedef enum _OpcUa_ModelChangeStructureVerbMask
 }
 OpcUa_ModelChangeStructureVerbMask;
 
-#define OpcUa_ModelChangeStructureVerbMask_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_ModelChangeStructureVerbMask_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_ModelChangeStructureVerbMask_NodeAdded)
 
-#define OpcUa_ModelChangeStructureVerbMask_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_ModelChangeStructureVerbMask_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_ModelChangeStructureVerbMask_NodeAdded)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_ModelChangeStructureVerbMask_EnumeratedType;
 #endif
@@ -6392,9 +6285,9 @@ typedef enum _OpcUa_AxisScaleEnumeration
 }
 OpcUa_AxisScaleEnumeration;
 
-#define OpcUa_AxisScaleEnumeration_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_AxisScaleEnumeration_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_AxisScaleEnumeration_Linear)
 
-#define OpcUa_AxisScaleEnumeration_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_AxisScaleEnumeration_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_AxisScaleEnumeration_Linear)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_AxisScaleEnumeration_EnumeratedType;
 #endif
@@ -6575,9 +6468,9 @@ typedef enum _OpcUa_ExceptionDeviationFormat
 }
 OpcUa_ExceptionDeviationFormat;
 
-#define OpcUa_ExceptionDeviationFormat_Clear(xValue) OpcUa_Int32_Clear((OpcUa_Int32*)xValue)
+#define OpcUa_ExceptionDeviationFormat_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_ExceptionDeviationFormat_AbsoluteValue)
 
-#define OpcUa_ExceptionDeviationFormat_Initialize(xValue) OpcUa_Int32_Initialize((OpcUa_Int32*)xValue)
+#define OpcUa_ExceptionDeviationFormat_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_ExceptionDeviationFormat_AbsoluteValue)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_ExceptionDeviationFormat_EnumeratedType;
 #endif

@@ -330,7 +330,7 @@
     <DisplayName>AlwaysGeneratesEvent</DisplayName>
     <Description>The type for references from a node to an event type that is always raised by node.</Description>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=41</Reference>
     </References>
     <InverseName>AlwaysGeneratesEvent</InverseName>
   </UAReferenceType>
@@ -693,7 +693,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
     </References>
   </UAObjectType>
-  <UAObject NodeId="i=15608" BrowseName="&lt;RoleName&gt;" SymbolicName="Placeholder_RoleName" ParentNodeId="i=15607">
+  <UAObject NodeId="i=15608" BrowseName="&lt;RoleName&gt;" SymbolicName="RoleName_Placeholder" ParentNodeId="i=15607">
     <DisplayName>&lt;RoleName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=15609</Reference>

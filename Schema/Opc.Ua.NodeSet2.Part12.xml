@@ -2429,7 +2429,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=13882</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="i=13916" BrowseName="&lt;AdditionalGroup&gt;" SymbolicName="Placeholder_AdditionalGroup" ParentNodeId="i=13813">
+  <UAObject NodeId="i=13916" BrowseName="&lt;AdditionalGroup&gt;" SymbolicName="AdditionalGroup_Placeholder" ParentNodeId="i=13813">
     <DisplayName>&lt;AdditionalGroup&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=13917</Reference>

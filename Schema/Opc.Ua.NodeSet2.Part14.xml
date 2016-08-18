@@ -55,7 +55,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAObject NodeId="i=14417" BrowseName="&lt;ConnectionName&gt;" SymbolicName="Placeholder_ConnectionName" ParentNodeId="i=14416">
+  <UAObject NodeId="i=14417" BrowseName="&lt;ConnectionName&gt;" SymbolicName="ConnectionName_Placeholder" ParentNodeId="i=14416">
     <DisplayName>&lt;ConnectionName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=14418</Reference>
@@ -1253,7 +1253,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
     </References>
   </UAObjectType>
-  <UAObject NodeId="i=15453" BrowseName="&lt;SecurityGroupFolderName&gt;" SymbolicName="Placeholder_SecurityGroupFolderName" ParentNodeId="i=15452">
+  <UAObject NodeId="i=15453" BrowseName="&lt;SecurityGroupFolderName&gt;" SymbolicName="SecurityGroupFolderName_Placeholder" ParentNodeId="i=15452">
     <DisplayName>&lt;SecurityGroupFolderName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=15454</Reference>
@@ -1364,7 +1364,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAObject NodeId="i=15459" BrowseName="&lt;SecurityGroupName&gt;" SymbolicName="Placeholder_SecurityGroupName" ParentNodeId="i=15452">
+  <UAObject NodeId="i=15459" BrowseName="&lt;SecurityGroupName&gt;" SymbolicName="SecurityGroupName_Placeholder" ParentNodeId="i=15452">
     <DisplayName>&lt;SecurityGroupName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=15460</Reference>
@@ -1515,7 +1515,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
     </References>
   </UAObjectType>
-  <UAObject NodeId="i=14478" BrowseName="&lt;DataSetFolderName&gt;" SymbolicName="Placeholder_DataSetFolderName" ParentNodeId="i=14477">
+  <UAObject NodeId="i=14478" BrowseName="&lt;DataSetFolderName&gt;" SymbolicName="DataSetFolderName_Placeholder" ParentNodeId="i=14477">
     <DisplayName>&lt;DataSetFolderName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=14479</Reference>
@@ -1868,7 +1868,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAObject NodeId="i=14487" BrowseName="&lt;PublishedDataSetName&gt;" SymbolicName="Placeholder_PublishedDataSetName" ParentNodeId="i=14477">
+  <UAObject NodeId="i=14487" BrowseName="&lt;PublishedDataSetName&gt;" SymbolicName="PublishedDataSetName_Placeholder" ParentNodeId="i=14477">
     <DisplayName>&lt;PublishedDataSetName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=14489</Reference>
@@ -2246,7 +2246,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAObject NodeId="i=15222" BrowseName="&lt;DataSetWriterName&gt;" SymbolicName="Placeholder_DataSetWriterName" ParentNodeId="i=14509">
+  <UAObject NodeId="i=15222" BrowseName="&lt;DataSetWriterName&gt;" SymbolicName="DataSetWriterName_Placeholder" ParentNodeId="i=14509">
     <DisplayName>&lt;DataSetWriterName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=15223</Reference>
@@ -2520,7 +2520,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=15490" BrowseName="&lt;ExtensionFieldName&gt;" SymbolicName="Placeholder_ExtensionFieldName" ParentNodeId="i=15489">
+  <UAVariable NodeId="i=15490" BrowseName="&lt;ExtensionFieldName&gt;" SymbolicName="ExtensionFieldName_Placeholder" ParentNodeId="i=15489">
     <DisplayName>&lt;ExtensionFieldName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3092,7 +3092,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=14209</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="i=14210" BrowseName="&lt;GroupName&gt;" SymbolicName="Placeholder_GroupName" ParentNodeId="i=14209">
+  <UAObject NodeId="i=14210" BrowseName="&lt;GroupName&gt;" SymbolicName="GroupName_Placeholder" ParentNodeId="i=14209">
     <DisplayName>&lt;GroupName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=15073</Reference>
@@ -3306,7 +3306,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=15081</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="i=15270" BrowseName="&lt;DataSetWriterName&gt;" SymbolicName="Placeholder_DataSetWriterName" ParentNodeId="i=14232">
+  <UAObject NodeId="i=15270" BrowseName="&lt;DataSetWriterName&gt;" SymbolicName="DataSetWriterName_Placeholder" ParentNodeId="i=14232">
     <DisplayName>&lt;DataSetWriterName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=15271</Reference>
@@ -3386,7 +3386,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAObject NodeId="i=15279" BrowseName="&lt;DataSetReaderName&gt;" SymbolicName="Placeholder_DataSetReaderName" ParentNodeId="i=14232">
+  <UAObject NodeId="i=15279" BrowseName="&lt;DataSetReaderName&gt;" SymbolicName="DataSetReaderName_Placeholder" ParentNodeId="i=14232">
     <DisplayName>&lt;DataSetReaderName&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=15280</Reference>

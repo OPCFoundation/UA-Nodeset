@@ -143,47 +143,47 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadSecurityChecksFailed 0x80130000
 
 /*============================================================================
- * The Certificate has expired or is not yet valid.
+ * The certificate has expired or is not yet valid.
  *===========================================================================*/
 #define OpcUa_BadCertificateTimeInvalid 0x80140000
 
 /*============================================================================
- * An Issuer Certificate has expired or is not yet valid.
+ * An issuer certificate has expired or is not yet valid.
  *===========================================================================*/
 #define OpcUa_BadCertificateIssuerTimeInvalid 0x80150000
 
 /*============================================================================
- * The HostName used to connect to a Server does not match a HostName in the Certificate.
+ * The HostName used to connect to a Server does not match a HostName in the certificate.
  *===========================================================================*/
 #define OpcUa_BadCertificateHostNameInvalid 0x80160000
 
 /*============================================================================
- * The URI specified in the ApplicationDescription does not match the URI in the Certificate.
+ * The URI specified in the ApplicationDescription does not match the URI in the certificate.
  *===========================================================================*/
 #define OpcUa_BadCertificateUriInvalid 0x80170000
 
 /*============================================================================
- * The Certificate may not be used for the requested operation.
+ * The certificate may not be used for the requested operation.
  *===========================================================================*/
 #define OpcUa_BadCertificateUseNotAllowed 0x80180000
 
 /*============================================================================
- * The Issuer Certificate may not be used for the requested operation.
+ * The issuer certificate may not be used for the requested operation.
  *===========================================================================*/
 #define OpcUa_BadCertificateIssuerUseNotAllowed 0x80190000
 
 /*============================================================================
- * The Certificate is not trusted.
+ * The certificate is not trusted.
  *===========================================================================*/
 #define OpcUa_BadCertificateUntrusted 0x801A0000
 
 /*============================================================================
- * It was not possible to determine if the Certificate has been revoked.
+ * It was not possible to determine if the certificate has been revoked.
  *===========================================================================*/
 #define OpcUa_BadCertificateRevocationUnknown 0x801B0000
 
 /*============================================================================
- * It was not possible to determine if the Issuer Certificate has been revoked.
+ * It was not possible to determine if the issuer certificate has been revoked.
  *===========================================================================*/
 #define OpcUa_BadCertificateIssuerRevocationUnknown 0x801C0000
 

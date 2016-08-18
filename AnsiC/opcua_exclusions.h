@@ -118,6 +118,7 @@ OPCUA_BEGIN_EXTERN_C
 /* #define OPCUA_EXCLUDE_RequestHeader */
 /* #define OPCUA_EXCLUDE_ResponseHeader */
 /* #define OPCUA_EXCLUDE_ServiceFault */
+/* #define OPCUA_EXCLUDE_SessionLessServiceMessageType */
 /* #define OPCUA_EXCLUDE_ServerOnNetwork */
 /* #define OPCUA_EXCLUDE_UserTokenPolicy */
 /* #define OPCUA_EXCLUDE_EndpointDescription */
@@ -131,7 +132,6 @@ OPCUA_BEGIN_EXTERN_C
 /* #define OPCUA_EXCLUDE_AnonymousIdentityToken */
 /* #define OPCUA_EXCLUDE_UserNameIdentityToken */
 /* #define OPCUA_EXCLUDE_X509IdentityToken */
-/* #define OPCUA_EXCLUDE_KerberosIdentityToken */
 /* #define OPCUA_EXCLUDE_IssuedIdentityToken */
 /* #define OPCUA_EXCLUDE_NodeAttributes */
 /* #define OPCUA_EXCLUDE_ObjectAttributes */
@@ -157,8 +157,6 @@ OPCUA_BEGIN_EXTERN_C
 /* #define OPCUA_EXCLUDE_BrowsePathTarget */
 /* #define OPCUA_EXCLUDE_BrowsePathResult */
 /* #define OPCUA_EXCLUDE_EndpointConfiguration */
-/* #define OPCUA_EXCLUDE_SupportedProfile */
-/* #define OPCUA_EXCLUDE_SoftwareCertificate */
 /* #define OPCUA_EXCLUDE_QueryDataDescription */
 /* #define OPCUA_EXCLUDE_NodeTypeDescription */
 /* #define OPCUA_EXCLUDE_QueryDataSet */
