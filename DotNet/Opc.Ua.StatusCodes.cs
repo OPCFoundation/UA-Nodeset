@@ -720,7 +720,7 @@ namespace Opc.Ua
         public const uint BadInvalidTimestampArgument = 0x80BD0000;
 
         /// <summary>
-        /// The server not does support writing the combination of value, status and timestamps provided.
+        /// The server does not support writing the combination of value, status and timestamps provided.
         /// </summary>
         public const uint BadWriteNotSupported = 0x80730000;
 

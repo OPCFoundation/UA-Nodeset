@@ -713,7 +713,7 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadInvalidTimestampArgument 0x80BD0000
 
 /*============================================================================
- * The server not does support writing the combination of value, status and timestamps provided.
+ * The server does not support writing the combination of value, status and timestamps provided.
  *===========================================================================*/
 #define OpcUa_BadWriteNotSupported 0x80730000
 

@@ -134,7 +134,7 @@ BadSecurityModeInsufficient,0x80E60000,The operation is not permitted over the c
 BadHistoryOperationInvalid,0x80710000,The history details parameter is not valid.
 BadHistoryOperationUnsupported,0x80720000,The server does not support the requested operation.
 BadInvalidTimestampArgument,0x80BD0000,The defined timestamp to return was invalid.
-BadWriteNotSupported,0x80730000,The server not does support writing the combination of value, status and timestamps provided.
+BadWriteNotSupported,0x80730000,The server does not support writing the combination of value, status and timestamps provided.
 BadTypeMismatch,0x80740000,The value supplied for the attribute is not of the same type as the attribute's value.
 BadMethodInvalid,0x80750000,The method id does not refer to a method for the specified object.
 BadArgumentsMissing,0x80760000,The client did not specify all of the input arguments for the method.
