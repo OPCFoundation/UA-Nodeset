@@ -3616,7 +3616,6 @@ static struct _OpcUa_EnumeratedValue g_OpcUa_UserTokenType_EnumeratedValues[] =
     { "UserName", 1 },
     { "Certificate", 2 },
     { "IssuedToken", 3 },
-    { "Kerberos", 4 },
     { OpcUa_Null, 0 }
 };
 
@@ -6517,122 +6516,6 @@ struct _OpcUa_EncodeableType OpcUa_X509IdentityToken_EncodeableType =
     (OpcUa_EncodeableObject_PfnGetSize*)OpcUa_X509IdentityToken_GetSize,
     (OpcUa_EncodeableObject_PfnEncode*)OpcUa_X509IdentityToken_Encode,
     (OpcUa_EncodeableObject_PfnDecode*)OpcUa_X509IdentityToken_Decode
-};
-#endif
-
-#ifndef OPCUA_EXCLUDE_KerberosIdentityToken
-/*============================================================================
- * OpcUa_KerberosIdentityToken_Initialize
- *===========================================================================*/
-OpcUa_Void OpcUa_KerberosIdentityToken_Initialize(OpcUa_KerberosIdentityToken* a_pValue)
-{
-    if (a_pValue != OpcUa_Null)
-    {
-        OpcUa_Field_Initialize(String, PolicyId);
-        OpcUa_Field_Initialize(ByteString, TicketData);
-    }
-}
-
-/*============================================================================
- * OpcUa_KerberosIdentityToken_Clear
- *===========================================================================*/
-OpcUa_Void OpcUa_KerberosIdentityToken_Clear(OpcUa_KerberosIdentityToken* a_pValue)
-{
-    if (a_pValue != OpcUa_Null)
-    {
-        OpcUa_Field_Clear(String, PolicyId);
-        OpcUa_Field_Clear(ByteString, TicketData);
-    }
-}
-
-/*============================================================================
- * OpcUa_KerberosIdentityToken_GetSize
- *===========================================================================*/
-OpcUa_StatusCode OpcUa_KerberosIdentityToken_GetSize(OpcUa_KerberosIdentityToken* a_pValue, OpcUa_Encoder* a_pEncoder, OpcUa_Int32* a_pSize)
-{
-    OpcUa_Int32 iSize = 0;
-
-    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "KerberosIdentityToken_GetSize");
-
-    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
-    OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
-    OpcUa_ReturnErrorIfArgumentNull(a_pSize);
-
-    *a_pSize = -1;
-
-    OpcUa_Field_GetSize(String, PolicyId);
-    OpcUa_Field_GetSize(ByteString, TicketData);
-
-    *a_pSize = iSize;
-
-    OpcUa_ReturnStatusCode;
-    OpcUa_BeginErrorHandling;
-
-    *a_pSize = -1;
-
-    OpcUa_FinishErrorHandling;
-}
-
-/*============================================================================
- * OpcUa_KerberosIdentityToken_Encode
- *===========================================================================*/
-OpcUa_StatusCode OpcUa_KerberosIdentityToken_Encode(OpcUa_KerberosIdentityToken* a_pValue, OpcUa_Encoder* a_pEncoder)
-{
-    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "KerberosIdentityToken_Encode");
-
-    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
-    OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
-
-    OpcUa_Field_Write(String, PolicyId);
-    OpcUa_Field_Write(ByteString, TicketData);
-
-    OpcUa_ReturnStatusCode;
-    OpcUa_BeginErrorHandling;
-
-    /* nothing to do */
-
-    OpcUa_FinishErrorHandling;
-}
-
-/*============================================================================
- * OpcUa_KerberosIdentityToken_Decode
- *===========================================================================*/
-OpcUa_StatusCode OpcUa_KerberosIdentityToken_Decode(OpcUa_KerberosIdentityToken* a_pValue, OpcUa_Decoder* a_pDecoder)
-{
-    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "KerberosIdentityToken_Decode");
-
-    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
-    OpcUa_ReturnErrorIfArgumentNull(a_pDecoder);
-
-    OpcUa_KerberosIdentityToken_Initialize(a_pValue);
-
-    OpcUa_Field_Read(String, PolicyId);
-    OpcUa_Field_Read(ByteString, TicketData);
-
-    OpcUa_ReturnStatusCode;
-    OpcUa_BeginErrorHandling;
-
-    OpcUa_KerberosIdentityToken_Clear(a_pValue);
-
-    OpcUa_FinishErrorHandling;
-}
-
-/*============================================================================
- * OpcUa_KerberosIdentityToken_EncodeableType
- *===========================================================================*/
-struct _OpcUa_EncodeableType OpcUa_KerberosIdentityToken_EncodeableType =
-{
-    "KerberosIdentityToken",
-    OpcUaId_KerberosIdentityToken,
-    OpcUaId_KerberosIdentityToken_Encoding_DefaultBinary,
-    OpcUaId_KerberosIdentityToken_Encoding_DefaultXml,
-    OpcUa_Null,
-    sizeof(OpcUa_KerberosIdentityToken),
-    (OpcUa_EncodeableObject_PfnInitialize*)OpcUa_KerberosIdentityToken_Initialize,
-    (OpcUa_EncodeableObject_PfnClear*)OpcUa_KerberosIdentityToken_Clear,
-    (OpcUa_EncodeableObject_PfnGetSize*)OpcUa_KerberosIdentityToken_GetSize,
-    (OpcUa_EncodeableObject_PfnEncode*)OpcUa_KerberosIdentityToken_Encode,
-    (OpcUa_EncodeableObject_PfnDecode*)OpcUa_KerberosIdentityToken_Decode
 };
 #endif
 
@@ -10470,6 +10353,7 @@ static struct _OpcUa_EnumeratedValue g_OpcUa_BrowseDirection_EnumeratedValues[] 
     { "Forward", 0 },
     { "Inverse", 1 },
     { "Both", 2 },
+    { "Invalid", 3 },
     { OpcUa_Null, 0 }
 };
 
@@ -12956,318 +12840,6 @@ struct _OpcUa_EncodeableType OpcUa_EndpointConfiguration_EncodeableType =
 };
 #endif
 
-#ifndef OPCUA_EXCLUDE_ComplianceLevel
-/*============================================================================
- * OpcUa_ComplianceLevel_EnumeratedType
- *===========================================================================*/
-static struct _OpcUa_EnumeratedValue g_OpcUa_ComplianceLevel_EnumeratedValues[] =
-{
-    { "Untested", 0 },
-    { "Partial", 1 },
-    { "SelfTested", 2 },
-    { "Certified", 3 },
-    { OpcUa_Null, 0 }
-};
-
-struct _OpcUa_EnumeratedType OpcUa_ComplianceLevel_EnumeratedType =
-{
-    "ComplianceLevel",
-    g_OpcUa_ComplianceLevel_EnumeratedValues
-};
-#endif
-
-#ifndef OPCUA_EXCLUDE_SupportedProfile
-/*============================================================================
- * OpcUa_SupportedProfile_Initialize
- *===========================================================================*/
-OpcUa_Void OpcUa_SupportedProfile_Initialize(OpcUa_SupportedProfile* a_pValue)
-{
-    if (a_pValue != OpcUa_Null)
-    {
-        OpcUa_Field_Initialize(String, OrganizationUri);
-        OpcUa_Field_Initialize(String, ProfileId);
-        OpcUa_Field_Initialize(String, ComplianceTool);
-        OpcUa_Field_Initialize(DateTime, ComplianceDate);
-        OpcUa_Field_InitializeEnumerated(OpcUa_ComplianceLevel, ComplianceLevel);
-        OpcUa_Field_InitializeArray(String, UnsupportedUnitIds);
-    }
-}
-
-/*============================================================================
- * OpcUa_SupportedProfile_Clear
- *===========================================================================*/
-OpcUa_Void OpcUa_SupportedProfile_Clear(OpcUa_SupportedProfile* a_pValue)
-{
-    if (a_pValue != OpcUa_Null)
-    {
-        OpcUa_Field_Clear(String, OrganizationUri);
-        OpcUa_Field_Clear(String, ProfileId);
-        OpcUa_Field_Clear(String, ComplianceTool);
-        OpcUa_Field_Clear(DateTime, ComplianceDate);
-        OpcUa_Field_ClearEnumerated(OpcUa_ComplianceLevel, ComplianceLevel);
-        OpcUa_Field_ClearArray(String, UnsupportedUnitIds);
-    }
-}
-
-/*============================================================================
- * OpcUa_SupportedProfile_GetSize
- *===========================================================================*/
-OpcUa_StatusCode OpcUa_SupportedProfile_GetSize(OpcUa_SupportedProfile* a_pValue, OpcUa_Encoder* a_pEncoder, OpcUa_Int32* a_pSize)
-{
-    OpcUa_Int32 iSize = 0;
-
-    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "SupportedProfile_GetSize");
-
-    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
-    OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
-    OpcUa_ReturnErrorIfArgumentNull(a_pSize);
-
-    *a_pSize = -1;
-
-    OpcUa_Field_GetSize(String, OrganizationUri);
-    OpcUa_Field_GetSize(String, ProfileId);
-    OpcUa_Field_GetSize(String, ComplianceTool);
-    OpcUa_Field_GetSize(DateTime, ComplianceDate);
-    OpcUa_Field_GetSizeEnumerated(OpcUa_ComplianceLevel, ComplianceLevel);
-    OpcUa_Field_GetSizeArray(String, UnsupportedUnitIds);
-
-    *a_pSize = iSize;
-
-    OpcUa_ReturnStatusCode;
-    OpcUa_BeginErrorHandling;
-
-    *a_pSize = -1;
-
-    OpcUa_FinishErrorHandling;
-}
-
-/*============================================================================
- * OpcUa_SupportedProfile_Encode
- *===========================================================================*/
-OpcUa_StatusCode OpcUa_SupportedProfile_Encode(OpcUa_SupportedProfile* a_pValue, OpcUa_Encoder* a_pEncoder)
-{
-    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "SupportedProfile_Encode");
-
-    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
-    OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
-
-    OpcUa_Field_Write(String, OrganizationUri);
-    OpcUa_Field_Write(String, ProfileId);
-    OpcUa_Field_Write(String, ComplianceTool);
-    OpcUa_Field_Write(DateTime, ComplianceDate);
-    OpcUa_Field_WriteEnumerated(OpcUa_ComplianceLevel, ComplianceLevel);
-    OpcUa_Field_WriteArray(String, UnsupportedUnitIds);
-
-    OpcUa_ReturnStatusCode;
-    OpcUa_BeginErrorHandling;
-
-    /* nothing to do */
-
-    OpcUa_FinishErrorHandling;
-}
-
-/*============================================================================
- * OpcUa_SupportedProfile_Decode
- *===========================================================================*/
-OpcUa_StatusCode OpcUa_SupportedProfile_Decode(OpcUa_SupportedProfile* a_pValue, OpcUa_Decoder* a_pDecoder)
-{
-    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "SupportedProfile_Decode");
-
-    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
-    OpcUa_ReturnErrorIfArgumentNull(a_pDecoder);
-
-    OpcUa_SupportedProfile_Initialize(a_pValue);
-
-    OpcUa_Field_Read(String, OrganizationUri);
-    OpcUa_Field_Read(String, ProfileId);
-    OpcUa_Field_Read(String, ComplianceTool);
-    OpcUa_Field_Read(DateTime, ComplianceDate);
-    OpcUa_Field_ReadEnumerated(OpcUa_ComplianceLevel, ComplianceLevel);
-    OpcUa_Field_ReadArray(String, UnsupportedUnitIds);
-
-    OpcUa_ReturnStatusCode;
-    OpcUa_BeginErrorHandling;
-
-    OpcUa_SupportedProfile_Clear(a_pValue);
-
-    OpcUa_FinishErrorHandling;
-}
-
-/*============================================================================
- * OpcUa_SupportedProfile_EncodeableType
- *===========================================================================*/
-struct _OpcUa_EncodeableType OpcUa_SupportedProfile_EncodeableType =
-{
-    "SupportedProfile",
-    OpcUaId_SupportedProfile,
-    OpcUaId_SupportedProfile_Encoding_DefaultBinary,
-    OpcUaId_SupportedProfile_Encoding_DefaultXml,
-    OpcUa_Null,
-    sizeof(OpcUa_SupportedProfile),
-    (OpcUa_EncodeableObject_PfnInitialize*)OpcUa_SupportedProfile_Initialize,
-    (OpcUa_EncodeableObject_PfnClear*)OpcUa_SupportedProfile_Clear,
-    (OpcUa_EncodeableObject_PfnGetSize*)OpcUa_SupportedProfile_GetSize,
-    (OpcUa_EncodeableObject_PfnEncode*)OpcUa_SupportedProfile_Encode,
-    (OpcUa_EncodeableObject_PfnDecode*)OpcUa_SupportedProfile_Decode
-};
-#endif
-
-#ifndef OPCUA_EXCLUDE_SoftwareCertificate
-/*============================================================================
- * OpcUa_SoftwareCertificate_Initialize
- *===========================================================================*/
-OpcUa_Void OpcUa_SoftwareCertificate_Initialize(OpcUa_SoftwareCertificate* a_pValue)
-{
-    if (a_pValue != OpcUa_Null)
-    {
-        OpcUa_Field_Initialize(String, ProductName);
-        OpcUa_Field_Initialize(String, ProductUri);
-        OpcUa_Field_Initialize(String, VendorName);
-        OpcUa_Field_Initialize(ByteString, VendorProductCertificate);
-        OpcUa_Field_Initialize(String, SoftwareVersion);
-        OpcUa_Field_Initialize(String, BuildNumber);
-        OpcUa_Field_Initialize(DateTime, BuildDate);
-        OpcUa_Field_Initialize(String, IssuedBy);
-        OpcUa_Field_Initialize(DateTime, IssueDate);
-        OpcUa_Field_InitializeEncodeableArray(OpcUa_SupportedProfile, SupportedProfiles);
-    }
-}
-
-/*============================================================================
- * OpcUa_SoftwareCertificate_Clear
- *===========================================================================*/
-OpcUa_Void OpcUa_SoftwareCertificate_Clear(OpcUa_SoftwareCertificate* a_pValue)
-{
-    if (a_pValue != OpcUa_Null)
-    {
-        OpcUa_Field_Clear(String, ProductName);
-        OpcUa_Field_Clear(String, ProductUri);
-        OpcUa_Field_Clear(String, VendorName);
-        OpcUa_Field_Clear(ByteString, VendorProductCertificate);
-        OpcUa_Field_Clear(String, SoftwareVersion);
-        OpcUa_Field_Clear(String, BuildNumber);
-        OpcUa_Field_Clear(DateTime, BuildDate);
-        OpcUa_Field_Clear(String, IssuedBy);
-        OpcUa_Field_Clear(DateTime, IssueDate);
-        OpcUa_Field_ClearEncodeableArray(OpcUa_SupportedProfile, SupportedProfiles);
-    }
-}
-
-/*============================================================================
- * OpcUa_SoftwareCertificate_GetSize
- *===========================================================================*/
-OpcUa_StatusCode OpcUa_SoftwareCertificate_GetSize(OpcUa_SoftwareCertificate* a_pValue, OpcUa_Encoder* a_pEncoder, OpcUa_Int32* a_pSize)
-{
-    OpcUa_Int32 iSize = 0;
-
-    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "SoftwareCertificate_GetSize");
-
-    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
-    OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
-    OpcUa_ReturnErrorIfArgumentNull(a_pSize);
-
-    *a_pSize = -1;
-
-    OpcUa_Field_GetSize(String, ProductName);
-    OpcUa_Field_GetSize(String, ProductUri);
-    OpcUa_Field_GetSize(String, VendorName);
-    OpcUa_Field_GetSize(ByteString, VendorProductCertificate);
-    OpcUa_Field_GetSize(String, SoftwareVersion);
-    OpcUa_Field_GetSize(String, BuildNumber);
-    OpcUa_Field_GetSize(DateTime, BuildDate);
-    OpcUa_Field_GetSize(String, IssuedBy);
-    OpcUa_Field_GetSize(DateTime, IssueDate);
-    OpcUa_Field_GetSizeEncodeableArray(OpcUa_SupportedProfile, SupportedProfiles);
-
-    *a_pSize = iSize;
-
-    OpcUa_ReturnStatusCode;
-    OpcUa_BeginErrorHandling;
-
-    *a_pSize = -1;
-
-    OpcUa_FinishErrorHandling;
-}
-
-/*============================================================================
- * OpcUa_SoftwareCertificate_Encode
- *===========================================================================*/
-OpcUa_StatusCode OpcUa_SoftwareCertificate_Encode(OpcUa_SoftwareCertificate* a_pValue, OpcUa_Encoder* a_pEncoder)
-{
-    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "SoftwareCertificate_Encode");
-
-    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
-    OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
-
-    OpcUa_Field_Write(String, ProductName);
-    OpcUa_Field_Write(String, ProductUri);
-    OpcUa_Field_Write(String, VendorName);
-    OpcUa_Field_Write(ByteString, VendorProductCertificate);
-    OpcUa_Field_Write(String, SoftwareVersion);
-    OpcUa_Field_Write(String, BuildNumber);
-    OpcUa_Field_Write(DateTime, BuildDate);
-    OpcUa_Field_Write(String, IssuedBy);
-    OpcUa_Field_Write(DateTime, IssueDate);
-    OpcUa_Field_WriteEncodeableArray(OpcUa_SupportedProfile, SupportedProfiles);
-
-    OpcUa_ReturnStatusCode;
-    OpcUa_BeginErrorHandling;
-
-    /* nothing to do */
-
-    OpcUa_FinishErrorHandling;
-}
-
-/*============================================================================
- * OpcUa_SoftwareCertificate_Decode
- *===========================================================================*/
-OpcUa_StatusCode OpcUa_SoftwareCertificate_Decode(OpcUa_SoftwareCertificate* a_pValue, OpcUa_Decoder* a_pDecoder)
-{
-    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "SoftwareCertificate_Decode");
-
-    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
-    OpcUa_ReturnErrorIfArgumentNull(a_pDecoder);
-
-    OpcUa_SoftwareCertificate_Initialize(a_pValue);
-
-    OpcUa_Field_Read(String, ProductName);
-    OpcUa_Field_Read(String, ProductUri);
-    OpcUa_Field_Read(String, VendorName);
-    OpcUa_Field_Read(ByteString, VendorProductCertificate);
-    OpcUa_Field_Read(String, SoftwareVersion);
-    OpcUa_Field_Read(String, BuildNumber);
-    OpcUa_Field_Read(DateTime, BuildDate);
-    OpcUa_Field_Read(String, IssuedBy);
-    OpcUa_Field_Read(DateTime, IssueDate);
-    OpcUa_Field_ReadEncodeableArray(OpcUa_SupportedProfile, SupportedProfiles);
-
-    OpcUa_ReturnStatusCode;
-    OpcUa_BeginErrorHandling;
-
-    OpcUa_SoftwareCertificate_Clear(a_pValue);
-
-    OpcUa_FinishErrorHandling;
-}
-
-/*============================================================================
- * OpcUa_SoftwareCertificate_EncodeableType
- *===========================================================================*/
-struct _OpcUa_EncodeableType OpcUa_SoftwareCertificate_EncodeableType =
-{
-    "SoftwareCertificate",
-    OpcUaId_SoftwareCertificate,
-    OpcUaId_SoftwareCertificate_Encoding_DefaultBinary,
-    OpcUaId_SoftwareCertificate_Encoding_DefaultXml,
-    OpcUa_Null,
-    sizeof(OpcUa_SoftwareCertificate),
-    (OpcUa_EncodeableObject_PfnInitialize*)OpcUa_SoftwareCertificate_Initialize,
-    (OpcUa_EncodeableObject_PfnClear*)OpcUa_SoftwareCertificate_Clear,
-    (OpcUa_EncodeableObject_PfnGetSize*)OpcUa_SoftwareCertificate_GetSize,
-    (OpcUa_EncodeableObject_PfnEncode*)OpcUa_SoftwareCertificate_Encode,
-    (OpcUa_EncodeableObject_PfnDecode*)OpcUa_SoftwareCertificate_Decode
-};
-#endif
-
 #ifndef OPCUA_EXCLUDE_QueryDataDescription
 /*============================================================================
  * OpcUa_QueryDataDescription_Initialize
@@ -15383,6 +14955,7 @@ static struct _OpcUa_EnumeratedValue g_OpcUa_TimestampsToReturn_EnumeratedValues
     { "Server", 1 },
     { "Both", 2 },
     { "Neither", 3 },
+    { "Invalid", 4 },
     { OpcUa_Null, 0 }
 };
 
@@ -24800,25 +24373,6 @@ struct _OpcUa_EncodeableType OpcUa_DeleteSubscriptionsResponse_EncodeableType =
 #endif
 #endif
 
-#ifndef OPCUA_EXCLUDE_EnumeratedTestType
-/*============================================================================
- * OpcUa_EnumeratedTestType_EnumeratedType
- *===========================================================================*/
-static struct _OpcUa_EnumeratedValue g_OpcUa_EnumeratedTestType_EnumeratedValues[] =
-{
-    { "Red", 1 },
-    { "Yellow", 4 },
-    { "Green", 5 },
-    { OpcUa_Null, 0 }
-};
-
-struct _OpcUa_EnumeratedType OpcUa_EnumeratedTestType_EnumeratedType =
-{
-    "EnumeratedTestType",
-    g_OpcUa_EnumeratedTestType_EnumeratedValues
-};
-#endif
-
 #ifndef OPCUA_EXCLUDE_BuildInfo
 /*============================================================================
  * OpcUa_BuildInfo_Initialize
@@ -28171,9 +27725,6 @@ static OpcUa_EncodeableType* g_OpcUa_KnownEncodeableTypes[] =
     #ifndef OPCUA_EXCLUDE_X509IdentityToken
     &OpcUa_X509IdentityToken_EncodeableType,
     #endif
-    #ifndef OPCUA_EXCLUDE_KerberosIdentityToken
-    &OpcUa_KerberosIdentityToken_EncodeableType,
-    #endif
     #ifndef OPCUA_EXCLUDE_IssuedIdentityToken
     &OpcUa_IssuedIdentityToken_EncodeableType,
     #endif
@@ -28296,12 +27847,6 @@ static OpcUa_EncodeableType* g_OpcUa_KnownEncodeableTypes[] =
     #endif
     #ifndef OPCUA_EXCLUDE_EndpointConfiguration
     &OpcUa_EndpointConfiguration_EncodeableType,
-    #endif
-    #ifndef OPCUA_EXCLUDE_SupportedProfile
-    &OpcUa_SupportedProfile_EncodeableType,
-    #endif
-    #ifndef OPCUA_EXCLUDE_SoftwareCertificate
-    &OpcUa_SoftwareCertificate_EncodeableType,
     #endif
     #ifndef OPCUA_EXCLUDE_QueryDataDescription
     &OpcUa_QueryDataDescription_EncodeableType,

@@ -78,7 +78,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_FindServers(
 
     /* copy parameters into request object. */
     cRequest.RequestHeader  = *a_pRequestHeader;
-    OpcUa_String_SafeAttachReadOnly(&cRequest.EndpointUrl, a_pEndpointUrl);
+    cRequest.EndpointUrl    = *a_pEndpointUrl;
     cRequest.NoOfLocaleIds  = a_nNoOfLocaleIds;
     cRequest.LocaleIds      = (OpcUa_String*)a_pLocaleIds;
     cRequest.NoOfServerUris = a_nNoOfServerUris;
@@ -104,7 +104,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_FindServers(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_FindServersResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_FindServersResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -157,7 +157,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_BeginFindServers(
 
     /* copy parameters into request object. */
     cRequest.RequestHeader  = *a_pRequestHeader;
-    OpcUa_String_SafeAttachReadOnly(&cRequest.EndpointUrl, a_pEndpointUrl);
+    cRequest.EndpointUrl    = *a_pEndpointUrl;
     cRequest.NoOfLocaleIds  = a_nNoOfLocaleIds;
     cRequest.LocaleIds      = (OpcUa_String*)a_pLocaleIds;
     cRequest.NoOfServerUris = a_nNoOfServerUris;
@@ -244,7 +244,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_FindServersOnNetwork(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_FindServersOnNetworkResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_FindServersOnNetworkResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -357,7 +357,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_GetEndpoints(
 
     /* copy parameters into request object. */
     cRequest.RequestHeader   = *a_pRequestHeader;
-    OpcUa_String_SafeAttachReadOnly(&cRequest.EndpointUrl, a_pEndpointUrl);
+    cRequest.EndpointUrl     = *a_pEndpointUrl;
     cRequest.NoOfLocaleIds   = a_nNoOfLocaleIds;
     cRequest.LocaleIds       = (OpcUa_String*)a_pLocaleIds;
     cRequest.NoOfProfileUris = a_nNoOfProfileUris;
@@ -383,7 +383,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_GetEndpoints(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_GetEndpointsResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_GetEndpointsResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -436,7 +436,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_BeginGetEndpoints(
 
     /* copy parameters into request object. */
     cRequest.RequestHeader   = *a_pRequestHeader;
-    OpcUa_String_SafeAttachReadOnly(&cRequest.EndpointUrl, a_pEndpointUrl);
+    cRequest.EndpointUrl     = *a_pEndpointUrl;
     cRequest.NoOfLocaleIds   = a_nNoOfLocaleIds;
     cRequest.LocaleIds       = (OpcUa_String*)a_pLocaleIds;
     cRequest.NoOfProfileUris = a_nNoOfProfileUris;
@@ -509,7 +509,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_RegisterServer(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_RegisterServerResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_RegisterServerResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -636,7 +636,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_RegisterServer2(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_RegisterServer2Response_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_RegisterServer2Response)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -774,9 +774,9 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_CreateSession(
     /* copy parameters into request object. */
     cRequest.RequestHeader           = *a_pRequestHeader;
     cRequest.ClientDescription       = *a_pClientDescription;
-    OpcUa_String_SafeAttachReadOnly(&cRequest.ServerUri, a_pServerUri);
-    OpcUa_String_SafeAttachReadOnly(&cRequest.EndpointUrl, a_pEndpointUrl);
-    OpcUa_String_SafeAttachReadOnly(&cRequest.SessionName, a_pSessionName);
+    cRequest.ServerUri               = *a_pServerUri;
+    cRequest.EndpointUrl             = *a_pEndpointUrl;
+    cRequest.SessionName             = *a_pSessionName;
     cRequest.ClientNonce             = *a_pClientNonce;
     cRequest.ClientCertificate       = *a_pClientCertificate;
     cRequest.RequestedSessionTimeout = a_nRequestedSessionTimeout;
@@ -802,7 +802,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_CreateSession(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_CreateSessionResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_CreateSessionResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -873,9 +873,9 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_BeginCreateSession(
     /* copy parameters into request object. */
     cRequest.RequestHeader           = *a_pRequestHeader;
     cRequest.ClientDescription       = *a_pClientDescription;
-    OpcUa_String_SafeAttachReadOnly(&cRequest.ServerUri, a_pServerUri);
-    OpcUa_String_SafeAttachReadOnly(&cRequest.EndpointUrl, a_pEndpointUrl);
-    OpcUa_String_SafeAttachReadOnly(&cRequest.SessionName, a_pSessionName);
+    cRequest.ServerUri               = *a_pServerUri;
+    cRequest.EndpointUrl             = *a_pEndpointUrl;
+    cRequest.SessionName             = *a_pSessionName;
     cRequest.ClientNonce             = *a_pClientNonce;
     cRequest.ClientCertificate       = *a_pClientCertificate;
     cRequest.RequestedSessionTimeout = a_nRequestedSessionTimeout;
@@ -974,7 +974,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_ActivateSession(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_ActivateSessionResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_ActivateSessionResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -1109,7 +1109,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_CloseSession(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_CloseSessionResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_CloseSessionResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -1225,7 +1225,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_Cancel(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_CancelResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_CancelResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -1350,7 +1350,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_AddNodes(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_AddNodesResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_AddNodesResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -1480,7 +1480,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_AddReferences(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_AddReferencesResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_AddReferencesResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -1610,7 +1610,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_DeleteNodes(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_DeleteNodesResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_DeleteNodesResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -1740,7 +1740,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_DeleteReferences(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_DeleteReferencesResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_DeleteReferencesResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -1876,7 +1876,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_Browse(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_BrowseResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_BrowseResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -2015,7 +2015,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_BrowseNext(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_BrowseNextResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_BrowseNextResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -2148,7 +2148,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_TranslateBrowsePathsToNodeIds(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_TranslateBrowsePathsToNodeIdsResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_TranslateBrowsePathsToNodeIdsResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -2274,7 +2274,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_RegisterNodes(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_RegisterNodesResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_RegisterNodesResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -2394,7 +2394,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_UnregisterNodes(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_UnregisterNodesResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_UnregisterNodesResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -2540,7 +2540,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_QueryFirst(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_QueryFirstResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_QueryFirstResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -2685,7 +2685,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_QueryNext(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_QueryNextResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_QueryNextResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -2821,7 +2821,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_Read(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_ReadResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_ReadResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -2966,7 +2966,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_HistoryRead(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_HistoryReadResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_HistoryReadResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -3105,7 +3105,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_Write(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_WriteResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_WriteResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -3235,7 +3235,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_HistoryUpdate(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_HistoryUpdateResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_HistoryUpdateResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -3365,7 +3365,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_Call(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_CallResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_CallResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -3501,7 +3501,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_CreateMonitoredItems(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_CreateMonitoredItemsResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_CreateMonitoredItemsResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -3643,7 +3643,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_ModifyMonitoredItems(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_ModifyMonitoredItemsResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_ModifyMonitoredItemsResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -3785,7 +3785,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_SetMonitoringMode(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_SetMonitoringModeResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_SetMonitoringModeResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -3940,7 +3940,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_SetTriggering(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_SetTriggeringResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_SetTriggeringResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -4088,7 +4088,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_DeleteMonitoredItems(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_DeleteMonitoredItemsResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_DeleteMonitoredItemsResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -4234,7 +4234,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_CreateSubscription(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_CreateSubscriptionResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_CreateSubscriptionResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -4388,7 +4388,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_ModifySubscription(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_ModifySubscriptionResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_ModifySubscriptionResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -4533,7 +4533,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_SetPublishingMode(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_SetPublishingModeResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_SetPublishingModeResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -4676,7 +4676,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_Publish(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_PublishResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_PublishResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -4806,7 +4806,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_Republish(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_RepublishResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_RepublishResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -4937,7 +4937,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_TransferSubscriptions(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_TransferSubscriptionsResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_TransferSubscriptionsResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);
@@ -5070,7 +5070,7 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_DeleteSubscriptions(
     }
 
     /* check response type */
-    else if (OpcUa_EncodeableType_Compare(&OpcUa_DeleteSubscriptionsResponse_EncodeableType, pResponseType))
+    else if (pResponseType->TypeId != OpcUaId_DeleteSubscriptionsResponse)
     {
         pResponseType->Clear(pResponse);
         OpcUa_GotoErrorWithStatus(OpcUa_BadUnknownResponse);

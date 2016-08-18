@@ -330,7 +330,7 @@
     <DisplayName>AlwaysGeneratesEvent</DisplayName>
     <Description>The type for references from a node to an event type that is always raised by node.</Description>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=41</Reference>
     </References>
     <InverseName>AlwaysGeneratesEvent</InverseName>
   </UAReferenceType>
