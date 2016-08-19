@@ -160,7 +160,7 @@ namespace Opc.Ua
         public const uint BadCertificateIssuerTimeInvalid = 0x80150000;
 
         /// <summary>
-        /// The HostName used to connect to a Server does not match a HostName in the certificate.
+        /// The HostName used to connect to a server does not match a HostName in the certificate.
         /// </summary>
         public const uint BadCertificateHostNameInvalid = 0x80160000;
 
@@ -280,17 +280,17 @@ namespace Opc.Ua
         public const uint BadTooManyArguments = 0x80E50000;
 
         /// <summary>
-        /// The UA Server requires a license to operate in general or to perform a service or operation, but existing license is expired.
+        /// The server requires a license to operate in general or to perform a service or operation, but existing license is expired.
         /// </summary>
         public const uint BadLicenseExpired = 0x810E0000;
 
         /// <summary>
-        /// The UA Server has limits on number of allowed operations / objects, based on installed licenses, and these limits where exceeded.
+        /// The server has limits on number of allowed operations / objects, based on installed licenses, and these limits where exceeded.
         /// </summary>
         public const uint BadLicenseLimitsExceeded = 0x810F0000;
 
         /// <summary>
-        /// The UA Server does not have a license which is required to operate in general or to perform a service or operation.
+        /// The server does not have a license which is required to operate in general or to perform a service or operation.
         /// </summary>
         public const uint BadLicenseNotAvailable = 0x81100000;
 
@@ -515,12 +515,12 @@ namespace Opc.Ua
         public const uint BadRequestTypeInvalid = 0x80530000;
 
         /// <summary>
-        /// The security mode does not meet the requirements set by the Server.
+        /// The security mode does not meet the requirements set by the server.
         /// </summary>
         public const uint BadSecurityModeRejected = 0x80540000;
 
         /// <summary>
-        /// The security policy does not meet the requirements set by the Server.
+        /// The security policy does not meet the requirements set by the server.
         /// </summary>
         public const uint BadSecurityPolicyRejected = 0x80550000;
 
@@ -545,7 +545,7 @@ namespace Opc.Ua
         public const uint BadNoValidCertificates = 0x80590000;
 
         /// <summary>
-        /// The Server does not support changing the user identity assigned to the session.
+        /// The server does not support changing the user identity assigned to the session.
         /// </summary>
         public const uint BadIdentityChangeNotSupported = 0x80C60000;
 
@@ -765,7 +765,7 @@ namespace Opc.Ua
         public const uint BadMessageNotAvailable = 0x807B0000;
 
         /// <summary>
-        /// The Client of the current Session does not support one or more Profiles that are necessary for the Subscription.
+        /// The client of the current session does not support one or more Profiles that are necessary for the subscription.
         /// </summary>
         public const uint BadInsufficientClientProfile = 0x807C0000;
 
@@ -805,7 +805,7 @@ namespace Opc.Ua
         public const uint BadTcpInternalError = 0x80820000;
 
         /// <summary>
-        /// The Server does not recognize the QueryString specified.
+        /// The server does not recognize the QueryString specified.
         /// </summary>
         public const uint BadTcpEndpointUrlInvalid = 0x80830000;
 

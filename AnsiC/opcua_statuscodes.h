@@ -153,7 +153,7 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadCertificateIssuerTimeInvalid 0x80150000
 
 /*============================================================================
- * The HostName used to connect to a Server does not match a HostName in the certificate.
+ * The HostName used to connect to a server does not match a HostName in the certificate.
  *===========================================================================*/
 #define OpcUa_BadCertificateHostNameInvalid 0x80160000
 
@@ -273,17 +273,17 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadTooManyArguments 0x80E50000
 
 /*============================================================================
- * The UA Server requires a license to operate in general or to perform a service or operation, but existing license is expired.
+ * The server requires a license to operate in general or to perform a service or operation, but existing license is expired.
  *===========================================================================*/
 #define OpcUa_BadLicenseExpired 0x810E0000
 
 /*============================================================================
- * The UA Server has limits on number of allowed operations / objects, based on installed licenses, and these limits where exceeded.
+ * The server has limits on number of allowed operations / objects, based on installed licenses, and these limits where exceeded.
  *===========================================================================*/
 #define OpcUa_BadLicenseLimitsExceeded 0x810F0000
 
 /*============================================================================
- * The UA Server does not have a license which is required to operate in general or to perform a service or operation.
+ * The server does not have a license which is required to operate in general or to perform a service or operation.
  *===========================================================================*/
 #define OpcUa_BadLicenseNotAvailable 0x81100000
 
@@ -508,12 +508,12 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadRequestTypeInvalid 0x80530000
 
 /*============================================================================
- * The security mode does not meet the requirements set by the Server.
+ * The security mode does not meet the requirements set by the server.
  *===========================================================================*/
 #define OpcUa_BadSecurityModeRejected 0x80540000
 
 /*============================================================================
- * The security policy does not meet the requirements set by the Server.
+ * The security policy does not meet the requirements set by the server.
  *===========================================================================*/
 #define OpcUa_BadSecurityPolicyRejected 0x80550000
 
@@ -538,7 +538,7 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadNoValidCertificates 0x80590000
 
 /*============================================================================
- * The Server does not support changing the user identity assigned to the session.
+ * The server does not support changing the user identity assigned to the session.
  *===========================================================================*/
 #define OpcUa_BadIdentityChangeNotSupported 0x80C60000
 
@@ -758,7 +758,7 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadMessageNotAvailable 0x807B0000
 
 /*============================================================================
- * The Client of the current Session does not support one or more Profiles that are necessary for the Subscription.
+ * The client of the current session does not support one or more Profiles that are necessary for the subscription.
  *===========================================================================*/
 #define OpcUa_BadInsufficientClientProfile 0x807C0000
 
@@ -798,7 +798,7 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadTcpInternalError 0x80820000
 
 /*============================================================================
- * The Server does not recognize the QueryString specified.
+ * The server does not recognize the QueryString specified.
  *===========================================================================*/
 #define OpcUa_BadTcpEndpointUrlInvalid 0x80830000
 

@@ -28,7 +28,7 @@
  * ======================================================================*/
 
 #ifndef _OpcUa_Exclusions_H_
-#define _OpcUa_Exclusions_H_ 1
+/* #define OpcUa_Exclusions_H_ 1 */
 
 OPCUA_BEGIN_EXTERN_C
 
