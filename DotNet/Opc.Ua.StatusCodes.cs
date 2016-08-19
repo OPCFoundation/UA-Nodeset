@@ -765,7 +765,7 @@ namespace Opc.Ua
         public const uint BadMessageNotAvailable = 0x807B0000;
 
         /// <summary>
-        /// The client of the current Session does not support one or more Profiles that are necessary for the Subscription.
+        /// The client of the current session does not support one or more Profiles that are necessary for the subscription.
         /// </summary>
         public const uint BadInsufficientClientProfile = 0x807C0000;
 

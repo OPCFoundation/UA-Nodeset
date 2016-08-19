@@ -758,7 +758,7 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadMessageNotAvailable 0x807B0000
 
 /*============================================================================
- * The client of the current Session does not support one or more Profiles that are necessary for the Subscription.
+ * The client of the current session does not support one or more Profiles that are necessary for the subscription.
  *===========================================================================*/
 #define OpcUa_BadInsufficientClientProfile 0x807C0000
 
