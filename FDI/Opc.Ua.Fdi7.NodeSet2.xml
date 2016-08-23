@@ -2334,7 +2334,7 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=424" BrowseName="2:Manufacturer" ParentNodeId="ns=1;i=401" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
-    <Description>Model name of the device</Description>
+    <Description>Name of the company that manufactured the device</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2343,7 +2343,7 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=425" BrowseName="2:Model" ParentNodeId="ns=1;i=401" DataType="LocalizedText">
     <DisplayName>Model</DisplayName>
-    <Description>Name of the company that manufactured the device</Description>
+    <Description>Model name of the device</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2953,7 +2953,7 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=552" BrowseName="2:Manufacturer" ParentNodeId="ns=1;i=529" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
-    <Description>Model name of the device</Description>
+    <Description>Name of the company that manufactured the device</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2962,7 +2962,7 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=553" BrowseName="2:Model" ParentNodeId="ns=1;i=529" DataType="LocalizedText">
     <DisplayName>Model</DisplayName>
-    <Description>Name of the company that manufactured the device</Description>
+    <Description>Model name of the device</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3476,7 +3476,7 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=680" BrowseName="2:Manufacturer" ParentNodeId="ns=1;i=657" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
-    <Description>Model name of the device</Description>
+    <Description>Name of the company that manufactured the device</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3485,7 +3485,7 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=681" BrowseName="2:Model" ParentNodeId="ns=1;i=657" DataType="LocalizedText">
     <DisplayName>Model</DisplayName>
-    <Description>Name of the company that manufactured the device</Description>
+    <Description>Model name of the device</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -4103,7 +4103,7 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=805" BrowseName="2:Manufacturer" ParentNodeId="ns=1;i=782" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
-    <Description>Model name of the device</Description>
+    <Description>Name of the company that manufactured the device</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -4112,7 +4112,7 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=806" BrowseName="2:Model" ParentNodeId="ns=1;i=782" DataType="LocalizedText">
     <DisplayName>Model</DisplayName>
-    <Description>Name of the company that manufactured the device</Description>
+    <Description>Model name of the device</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -4562,7 +4562,7 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=930" BrowseName="2:Manufacturer" ParentNodeId="ns=1;i=907" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
-    <Description>Model name of the device</Description>
+    <Description>Name of the company that manufactured the device</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -4571,7 +4571,7 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=931" BrowseName="2:Model" ParentNodeId="ns=1;i=907" DataType="LocalizedText">
     <DisplayName>Model</DisplayName>
-    <Description>Name of the company that manufactured the device</Description>
+    <Description>Model name of the device</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -5041,7 +5041,7 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=1885" BrowseName="2:Manufacturer" ParentNodeId="ns=1;i=1862" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
-    <Description>Model name of the device</Description>
+    <Description>Name of the company that manufactured the device</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -5050,7 +5050,7 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=1886" BrowseName="2:Model" ParentNodeId="ns=1;i=1862" DataType="LocalizedText">
     <DisplayName>Model</DisplayName>
-    <Description>Name of the company that manufactured the device</Description>
+    <Description>Model name of the device</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -5557,7 +5557,7 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=2014" BrowseName="2:Manufacturer" ParentNodeId="ns=1;i=1991" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
-    <Description>Model name of the device</Description>
+    <Description>Name of the company that manufactured the device</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -5566,7 +5566,7 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=2015" BrowseName="2:Model" ParentNodeId="ns=1;i=1991" DataType="LocalizedText">
     <DisplayName>Model</DisplayName>
-    <Description>Name of the company that manufactured the device</Description>
+    <Description>Model name of the device</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
