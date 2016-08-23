@@ -132,7 +132,7 @@ namespace Opc.Ua.Fdi5
         /// </summary>
         public object Clone()
         {
-            return (WindowModeType)this.MemberwiseClone();
+            return (WindowModeTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -242,7 +242,7 @@ namespace Opc.Ua.Fdi5
         /// </summary>
         public object Clone()
         {
-            return (StyleType)this.MemberwiseClone();
+            return (StyleTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -489,7 +489,7 @@ namespace Opc.Ua.Fdi5
         /// </summary>
         public object Clone()
         {
-            return (RegistrationParameters)this.MemberwiseClone();
+            return (RegistrationParametersCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -772,7 +772,7 @@ namespace Opc.Ua.Fdi5
         /// </summary>
         public object Clone()
         {
-            return (RegisteredNode)this.MemberwiseClone();
+            return (RegisteredNodeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -1019,7 +1019,7 @@ namespace Opc.Ua.Fdi5
         /// </summary>
         public object Clone()
         {
-            return (RegisterNodesResult)this.MemberwiseClone();
+            return (RegisterNodesResultCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -1270,7 +1270,7 @@ namespace Opc.Ua.Fdi5
         /// </summary>
         public object Clone()
         {
-            return (TransferIncident)this.MemberwiseClone();
+            return (TransferIncidentCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -1517,7 +1517,7 @@ namespace Opc.Ua.Fdi5
         /// </summary>
         public object Clone()
         {
-            return (ApplyResult)this.MemberwiseClone();
+            return (ApplyResultCollection)this.MemberwiseClone();
         }
         #endregion
         #endif

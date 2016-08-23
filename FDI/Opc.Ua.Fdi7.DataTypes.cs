@@ -228,7 +228,7 @@ namespace Opc.Ua.Fdi7
         /// </summary>
         public object Clone()
         {
-            return (EddDataTypeEnum)this.MemberwiseClone();
+            return (EddDataTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -463,7 +463,7 @@ namespace Opc.Ua.Fdi7
         /// </summary>
         public object Clone()
         {
-            return (EddDataTypeInfo)this.MemberwiseClone();
+            return (EddDataTypeInfoCollection)this.MemberwiseClone();
         }
         #endregion
         #endif

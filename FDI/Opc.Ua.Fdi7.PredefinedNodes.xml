@@ -4036,7 +4036,7 @@
         </uax:BrowseName>
         <uax:Description>
           <uax:Locale></uax:Locale>
-          <uax:Text>Model name of the device</uax:Text>
+          <uax:Text>Name of the company that manufactured the device</uax:Text>
         </uax:Description>
         <uax:ReferenceTypeId>
           <uax:Identifier>i=46</uax:Identifier>
@@ -4066,7 +4066,7 @@
         </uax:BrowseName>
         <uax:Description>
           <uax:Locale></uax:Locale>
-          <uax:Text>Name of the company that manufactured the device</uax:Text>
+          <uax:Text>Model name of the device</uax:Text>
         </uax:Description>
         <uax:ReferenceTypeId>
           <uax:Identifier>i=46</uax:Identifier>
@@ -5069,7 +5069,7 @@
         </uax:BrowseName>
         <uax:Description>
           <uax:Locale></uax:Locale>
-          <uax:Text>Model name of the device</uax:Text>
+          <uax:Text>Name of the company that manufactured the device</uax:Text>
         </uax:Description>
         <uax:ReferenceTypeId>
           <uax:Identifier>i=46</uax:Identifier>
@@ -5099,7 +5099,7 @@
         </uax:BrowseName>
         <uax:Description>
           <uax:Locale></uax:Locale>
-          <uax:Text>Name of the company that manufactured the device</uax:Text>
+          <uax:Text>Model name of the device</uax:Text>
         </uax:Description>
         <uax:ReferenceTypeId>
           <uax:Identifier>i=46</uax:Identifier>
@@ -6006,7 +6006,7 @@
         </uax:BrowseName>
         <uax:Description>
           <uax:Locale></uax:Locale>
-          <uax:Text>Model name of the device</uax:Text>
+          <uax:Text>Name of the company that manufactured the device</uax:Text>
         </uax:Description>
         <uax:ReferenceTypeId>
           <uax:Identifier>i=46</uax:Identifier>
@@ -6036,7 +6036,7 @@
         </uax:BrowseName>
         <uax:Description>
           <uax:Locale></uax:Locale>
-          <uax:Text>Name of the company that manufactured the device</uax:Text>
+          <uax:Text>Model name of the device</uax:Text>
         </uax:Description>
         <uax:ReferenceTypeId>
           <uax:Identifier>i=46</uax:Identifier>
@@ -7047,7 +7047,7 @@
         </uax:BrowseName>
         <uax:Description>
           <uax:Locale></uax:Locale>
-          <uax:Text>Model name of the device</uax:Text>
+          <uax:Text>Name of the company that manufactured the device</uax:Text>
         </uax:Description>
         <uax:ReferenceTypeId>
           <uax:Identifier>i=46</uax:Identifier>
@@ -7077,7 +7077,7 @@
         </uax:BrowseName>
         <uax:Description>
           <uax:Locale></uax:Locale>
-          <uax:Text>Name of the company that manufactured the device</uax:Text>
+          <uax:Text>Model name of the device</uax:Text>
         </uax:Description>
         <uax:ReferenceTypeId>
           <uax:Identifier>i=46</uax:Identifier>
@@ -7920,7 +7920,7 @@
         </uax:BrowseName>
         <uax:Description>
           <uax:Locale></uax:Locale>
-          <uax:Text>Model name of the device</uax:Text>
+          <uax:Text>Name of the company that manufactured the device</uax:Text>
         </uax:Description>
         <uax:ReferenceTypeId>
           <uax:Identifier>i=46</uax:Identifier>
@@ -7950,7 +7950,7 @@
         </uax:BrowseName>
         <uax:Description>
           <uax:Locale></uax:Locale>
-          <uax:Text>Name of the company that manufactured the device</uax:Text>
+          <uax:Text>Model name of the device</uax:Text>
         </uax:Description>
         <uax:ReferenceTypeId>
           <uax:Identifier>i=46</uax:Identifier>
@@ -8747,7 +8747,7 @@
         </uax:BrowseName>
         <uax:Description>
           <uax:Locale></uax:Locale>
-          <uax:Text>Model name of the device</uax:Text>
+          <uax:Text>Name of the company that manufactured the device</uax:Text>
         </uax:Description>
         <uax:ReferenceTypeId>
           <uax:Identifier>i=46</uax:Identifier>
@@ -8777,7 +8777,7 @@
         </uax:BrowseName>
         <uax:Description>
           <uax:Locale></uax:Locale>
-          <uax:Text>Name of the company that manufactured the device</uax:Text>
+          <uax:Text>Model name of the device</uax:Text>
         </uax:Description>
         <uax:ReferenceTypeId>
           <uax:Identifier>i=46</uax:Identifier>
@@ -9694,7 +9694,7 @@
         </uax:BrowseName>
         <uax:Description>
           <uax:Locale></uax:Locale>
-          <uax:Text>Model name of the device</uax:Text>
+          <uax:Text>Name of the company that manufactured the device</uax:Text>
         </uax:Description>
         <uax:ReferenceTypeId>
           <uax:Identifier>i=46</uax:Identifier>
@@ -9724,7 +9724,7 @@
         </uax:BrowseName>
         <uax:Description>
           <uax:Locale></uax:Locale>
-          <uax:Text>Name of the company that manufactured the device</uax:Text>
+          <uax:Text>Model name of the device</uax:Text>
         </uax:Description>
         <uax:ReferenceTypeId>
           <uax:Identifier>i=46</uax:Identifier>

@@ -143,7 +143,7 @@ namespace Opc.Ua.Di
         /// </summary>
         public object Clone()
         {
-            return (DeviceHealthEnumeration)this.MemberwiseClone();
+            return (DeviceHealthEnumerationCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -347,7 +347,7 @@ namespace Opc.Ua.Di
         /// </summary>
         public object Clone()
         {
-            return (FetchResultDataType)this.MemberwiseClone();
+            return (FetchResultDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -587,7 +587,7 @@ namespace Opc.Ua.Di
         /// </summary>
         public object Clone()
         {
-            return (FetchResultErrorDataType)this.MemberwiseClone();
+            return (FetchResultErrorDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -855,7 +855,7 @@ namespace Opc.Ua.Di
         /// </summary>
         public object Clone()
         {
-            return (FetchResultDataDataType)this.MemberwiseClone();
+            return (FetchResultDataDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -1118,7 +1118,7 @@ namespace Opc.Ua.Di
         /// </summary>
         public object Clone()
         {
-            return (ParameterResultDataType)this.MemberwiseClone();
+            return (ParameterResultDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif

@@ -4277,7 +4277,7 @@
       </DisplayName>
       <Description>
         <Locale></Locale>
-        <Text>Model name of the device</Text>
+        <Text>Name of the company that manufactured the device</Text>
       </Description>
       <WriteMask>0</WriteMask>
       <UserWriteMask>0</UserWriteMask>
@@ -4343,7 +4343,7 @@
       </DisplayName>
       <Description>
         <Locale></Locale>
-        <Text>Name of the company that manufactured the device</Text>
+        <Text>Model name of the device</Text>
       </Description>
       <WriteMask>0</WriteMask>
       <UserWriteMask>0</UserWriteMask>
@@ -6250,7 +6250,7 @@
       </DisplayName>
       <Description>
         <Locale></Locale>
-        <Text>Model name of the device</Text>
+        <Text>Name of the company that manufactured the device</Text>
       </Description>
       <WriteMask>0</WriteMask>
       <UserWriteMask>0</UserWriteMask>
@@ -6316,7 +6316,7 @@
       </DisplayName>
       <Description>
         <Locale></Locale>
-        <Text>Name of the company that manufactured the device</Text>
+        <Text>Model name of the device</Text>
       </Description>
       <WriteMask>0</WriteMask>
       <UserWriteMask>0</UserWriteMask>
@@ -8159,7 +8159,7 @@
       </DisplayName>
       <Description>
         <Locale></Locale>
-        <Text>Model name of the device</Text>
+        <Text>Name of the company that manufactured the device</Text>
       </Description>
       <WriteMask>0</WriteMask>
       <UserWriteMask>0</UserWriteMask>
@@ -8225,7 +8225,7 @@
       </DisplayName>
       <Description>
         <Locale></Locale>
-        <Text>Name of the company that manufactured the device</Text>
+        <Text>Model name of the device</Text>
       </Description>
       <WriteMask>0</WriteMask>
       <UserWriteMask>0</UserWriteMask>
@@ -10060,7 +10060,7 @@
       </DisplayName>
       <Description>
         <Locale></Locale>
-        <Text>Model name of the device</Text>
+        <Text>Name of the company that manufactured the device</Text>
       </Description>
       <WriteMask>0</WriteMask>
       <UserWriteMask>0</UserWriteMask>
@@ -10126,7 +10126,7 @@
       </DisplayName>
       <Description>
         <Locale></Locale>
-        <Text>Name of the company that manufactured the device</Text>
+        <Text>Model name of the device</Text>
       </Description>
       <WriteMask>0</WriteMask>
       <UserWriteMask>0</UserWriteMask>
@@ -11953,7 +11953,7 @@
       </DisplayName>
       <Description>
         <Locale></Locale>
-        <Text>Model name of the device</Text>
+        <Text>Name of the company that manufactured the device</Text>
       </Description>
       <WriteMask>0</WriteMask>
       <UserWriteMask>0</UserWriteMask>
@@ -12019,7 +12019,7 @@
       </DisplayName>
       <Description>
         <Locale></Locale>
-        <Text>Name of the company that manufactured the device</Text>
+        <Text>Model name of the device</Text>
       </Description>
       <WriteMask>0</WriteMask>
       <UserWriteMask>0</UserWriteMask>
@@ -25690,7 +25690,7 @@
       </DisplayName>
       <Description>
         <Locale></Locale>
-        <Text>Model name of the device</Text>
+        <Text>Name of the company that manufactured the device</Text>
       </Description>
       <WriteMask>0</WriteMask>
       <UserWriteMask>0</UserWriteMask>
@@ -25756,7 +25756,7 @@
       </DisplayName>
       <Description>
         <Locale></Locale>
-        <Text>Name of the company that manufactured the device</Text>
+        <Text>Model name of the device</Text>
       </Description>
       <WriteMask>0</WriteMask>
       <UserWriteMask>0</UserWriteMask>
@@ -27652,7 +27652,7 @@
       </DisplayName>
       <Description>
         <Locale></Locale>
-        <Text>Model name of the device</Text>
+        <Text>Name of the company that manufactured the device</Text>
       </Description>
       <WriteMask>0</WriteMask>
       <UserWriteMask>0</UserWriteMask>
@@ -27718,7 +27718,7 @@
       </DisplayName>
       <Description>
         <Locale></Locale>
-        <Text>Name of the company that manufactured the device</Text>
+        <Text>Model name of the device</Text>
       </Description>
       <WriteMask>0</WriteMask>
       <UserWriteMask>0</UserWriteMask>

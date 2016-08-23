@@ -125,7 +125,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (ActuatorStateTypeEnum)this.MemberwiseClone();
+            return (ActuatorStateTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -235,7 +235,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (AlarmStateTypeEnum)this.MemberwiseClone();
+            return (AlarmStateTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -345,7 +345,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (AvailabilityTypeEnum)this.MemberwiseClone();
+            return (AvailabilityTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -473,7 +473,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (AxesCouplingTypeEnum)this.MemberwiseClone();
+            return (AxesCouplingTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -589,7 +589,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (CategoryTypeEnum)this.MemberwiseClone();
+            return (CategoryTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -711,7 +711,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (ClampStateTypeEnum)this.MemberwiseClone();
+            return (ClampStateTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -839,7 +839,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (ControllerModeTypeEnum)this.MemberwiseClone();
+            return (ControllerModeTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -949,7 +949,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (CoordinateSystemTypeEnum)this.MemberwiseClone();
+            return (CoordinateSystemTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -1125,7 +1125,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (CutterStatusValueTypeEnum)this.MemberwiseClone();
+            return (CutterStatusValueTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -1360,7 +1360,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (DataItemEnumDataType)this.MemberwiseClone();
+            return (DataItemEnumDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -1704,7 +1704,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (DataItemEnumTypeEnum)this.MemberwiseClone();
+            return (DataItemEnumTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -1939,7 +1939,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (DataItemStatisticsDataType)this.MemberwiseClone();
+            return (DataItemStatisticsDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -2091,7 +2091,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (DataItemStatisticsTypeEnum)this.MemberwiseClone();
+            return (DataItemStatisticsTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -2339,7 +2339,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (DataItemSubEnumTypeEnum)this.MemberwiseClone();
+            return (DataItemSubEnumTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -2461,7 +2461,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (DefinitionFormatTypeEnum)this.MemberwiseClone();
+            return (DefinitionFormatTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -2589,7 +2589,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (DirectionTypeEnum)this.MemberwiseClone();
+            return (DirectionTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -2711,7 +2711,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (DoorStateTypeEnum)this.MemberwiseClone();
+            return (DoorStateTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -2827,7 +2827,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (EmergencyStopTypeEnum)this.MemberwiseClone();
+            return (EmergencyStopTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -2955,7 +2955,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (ExecutionTypeEnum)this.MemberwiseClone();
+            return (ExecutionTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -3077,7 +3077,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (InterfaceStateTypeEnum)this.MemberwiseClone();
+            return (InterfaceStateTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -3199,7 +3199,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (LocationsTypeEnum)this.MemberwiseClone();
+            return (LocationsTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -3351,7 +3351,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (NotificationCodeTypeEnum)this.MemberwiseClone();
+            return (NotificationCodeTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -3467,7 +3467,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (PathModeTypeEnum)this.MemberwiseClone();
+            return (PathModeTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -3583,7 +3583,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (PowerStateTypeEnum)this.MemberwiseClone();
+            return (PowerStateTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -3693,7 +3693,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (QualifierTypeEnum)this.MemberwiseClone();
+            return (QualifierTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -3815,7 +3815,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (RotaryModeTypeEnum)this.MemberwiseClone();
+            return (RotaryModeTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -3937,7 +3937,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (SeverityTypeEnum)this.MemberwiseClone();
+            return (SeverityTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -4047,7 +4047,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (ToolLifeDirectionTypeEnum)this.MemberwiseClone();
+            return (ToolLifeDirectionTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -4163,7 +4163,7 @@ namespace Opc.Ua.MTConnect
         /// </summary>
         public object Clone()
         {
-            return (ToolLifeTypeEnum)this.MemberwiseClone();
+            return (ToolLifeTypeEnumCollection)this.MemberwiseClone();
         }
         #endregion
         #endif

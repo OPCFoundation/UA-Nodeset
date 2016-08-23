@@ -516,9 +516,9 @@ namespace Opc.Ua.Di
            "AA8AAABSZXZpc2lvbkNvdW50ZXIBAXIXAwAAAABpAAAAQW4gaW5jcmVtZW50YWwgY291bnRlciBpbmRp" +
            "Y2F0aW5nIHRoZSBudW1iZXIgb2YgdGltZXMgdGhlIHN0YXRpYyBkYXRhIHdpdGhpbiB0aGUgRGV2aWNl" +
            "IGhhcyBiZWVuIG1vZGlmaWVkAC4ARHIXAAAABv////8BAf////8AAAAANWCJCgIAAAABAAwAAABNYW51" +
-           "ZmFjdHVyZXIBAXMXAwAAAAAYAAAATW9kZWwgbmFtZSBvZiB0aGUgZGV2aWNlAC4ARHMXAAAAFf////8B" +
-           "Af////8AAAAANWCJCgIAAAABAAUAAABNb2RlbAEBdBcDAAAAADAAAABOYW1lIG9mIHRoZSBjb21wYW55" +
-           "IHRoYXQgbWFudWZhY3R1cmVkIHRoZSBkZXZpY2UALgBEdBcAAAAV/////wEB/////wAAAAA1YIkKAgAA" +
+           "ZmFjdHVyZXIBAXMXAwAAAAAwAAAATmFtZSBvZiB0aGUgY29tcGFueSB0aGF0IG1hbnVmYWN0dXJlZCB0" +
+           "aGUgZGV2aWNlAC4ARHMXAAAAFf////8BAf////8AAAAANWCJCgIAAAABAAUAAABNb2RlbAEBdBcDAAAA" +
+           "ABgAAABNb2RlbCBuYW1lIG9mIHRoZSBkZXZpY2UALgBEdBcAAAAV/////wEB/////wAAAAA1YIkKAgAA" +
            "AAEADAAAAERldmljZU1hbnVhbAEBdRcDAAAAAFoAAABBZGRyZXNzIChwYXRobmFtZSBpbiB0aGUgZmls" +
            "ZSBzeXN0ZW0gb3IgYSBVUkwgfCBXZWIgYWRkcmVzcykgb2YgdXNlciBtYW51YWwgZm9yIHRoZSBkZXZp" +
            "Y2UALgBEdRcAAAAM/////wEB/////wAAAAA1YIkKAgAAAAEADgAAAERldmljZVJldmlzaW9uAQF2FwMA" +
@@ -586,7 +586,7 @@ namespace Opc.Ua.Di
         }
 
         /// <summary>
-        /// Model name of the device
+        /// Name of the company that manufactured the device
         /// </summary>
         public PropertyState<LocalizedText> Manufacturer
         {
@@ -607,7 +607,7 @@ namespace Opc.Ua.Di
         }
 
         /// <summary>
-        /// Name of the company that manufactured the device
+        /// Model name of the device
         /// </summary>
         public PropertyState<LocalizedText> Model
         {

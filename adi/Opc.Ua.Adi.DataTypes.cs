@@ -180,7 +180,7 @@ namespace Opc.Ua.Adi
         /// </summary>
         public object Clone()
         {
-            return (ExecutionCycleEnumeration)this.MemberwiseClone();
+            return (ExecutionCycleEnumerationCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -308,7 +308,7 @@ namespace Opc.Ua.Adi
         /// </summary>
         public object Clone()
         {
-            return (AcquisitionResultStatusEnumeration)this.MemberwiseClone();
+            return (AcquisitionResultStatusEnumerationCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -448,7 +448,7 @@ namespace Opc.Ua.Adi
         /// </summary>
         public object Clone()
         {
-            return (AlarmStateEnumeration)this.MemberwiseClone();
+            return (AlarmStateEnumerationCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
