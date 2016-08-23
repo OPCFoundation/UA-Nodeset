@@ -366,7 +366,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         public object Clone()
         {
-            return (ApplicationRecordDataType)this.MemberwiseClone();
+            return (ApplicationRecordDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif

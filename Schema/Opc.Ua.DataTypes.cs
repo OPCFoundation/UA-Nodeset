@@ -113,7 +113,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (Enumeration)this.MemberwiseClone();
+            return (EnumerationCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -229,7 +229,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (NamingRuleType)this.MemberwiseClone();
+            return (NamingRuleTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -351,7 +351,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (OpenFileMode)this.MemberwiseClone();
+            return (OpenFileModeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -731,7 +731,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (TrustListDataType)this.MemberwiseClone();
+            return (TrustListDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -935,7 +935,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (DataTypeDefinition)this.MemberwiseClone();
+            return (DataTypeDefinitionCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -1250,7 +1250,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (StructureDefinition)this.MemberwiseClone();
+            return (StructureDefinitionCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -1486,7 +1486,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (EnumDefinition)this.MemberwiseClone();
+            return (EnumDefinitionCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -1769,7 +1769,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (StructureField)this.MemberwiseClone();
+            return (StructureFieldCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -1903,7 +1903,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (IdentityCriteriaType)this.MemberwiseClone();
+            return (IdentityCriteriaTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -2138,7 +2138,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (IdentityMappingRuleType)this.MemberwiseClone();
+            return (IdentityMappingRuleTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -2373,7 +2373,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (ApplicationPermissionRuleType)this.MemberwiseClone();
+            return (ApplicationPermissionRuleTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -2608,7 +2608,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (ConfigurationVersionDataType)this.MemberwiseClone();
+            return (ConfigurationVersionDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -2983,7 +2983,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (DataSetMetaDataType)this.MemberwiseClone();
+            return (DataSetMetaDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -3322,7 +3322,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (FieldMetaData)this.MemberwiseClone();
+            return (FieldMetaDataCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -3557,7 +3557,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (DataTypeDescription)this.MemberwiseClone();
+            return (DataTypeDescriptionCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -3793,7 +3793,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (StructureDescription)this.MemberwiseClone();
+            return (StructureDescriptionCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -4029,7 +4029,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (EnumDescription)this.MemberwiseClone();
+            return (EnumDescriptionCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -4264,7 +4264,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (KeyValuePair)this.MemberwiseClone();
+            return (KeyValuePairCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -4607,7 +4607,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (PublishedVariableDataType)this.MemberwiseClone();
+            return (PublishedVariableDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -4898,7 +4898,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (SecurityKeyServiceDataType)this.MemberwiseClone();
+            return (SecurityKeyServiceDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -5062,7 +5062,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (DataSetContentMask)this.MemberwiseClone();
+            return (DataSetContentMaskCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -5377,7 +5377,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (DataConnectionDataType)this.MemberwiseClone();
+            return (DataConnectionDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -5493,7 +5493,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (OverrideValueHandling)this.MemberwiseClone();
+            return (OverrideValueHandlingCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -5615,7 +5615,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (PubSubState)this.MemberwiseClone();
+            return (PubSubStateCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -5737,7 +5737,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (IdType)this.MemberwiseClone();
+            return (IdTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -6147,7 +6147,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (Node)this.MemberwiseClone();
+            return (NodeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -8020,7 +8020,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (ReferenceNode)this.MemberwiseClone();
+            return (ReferenceNodeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -8315,7 +8315,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (Argument)this.MemberwiseClone();
+            return (ArgumentCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -8566,7 +8566,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (EnumValueType)this.MemberwiseClone();
+            return (EnumValueTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -8790,7 +8790,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (EnumField)this.MemberwiseClone();
+            return (EnumFieldCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -9025,7 +9025,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (OptionSet)this.MemberwiseClone();
+            return (OptionSetCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -9229,7 +9229,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (Union)this.MemberwiseClone();
+            return (UnionCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -9464,7 +9464,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (TimeZoneDataType)this.MemberwiseClone();
+            return (TimeZoneDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -9828,7 +9828,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (ApplicationDescription)this.MemberwiseClone();
+            return (ApplicationDescriptionCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -11291,7 +11291,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (ServerOnNetwork)this.MemberwiseClone();
+            return (ServerOnNetworkCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -12044,7 +12044,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (UserTokenPolicy)this.MemberwiseClone();
+            return (UserTokenPolicyCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -12399,7 +12399,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (EndpointDescription)this.MemberwiseClone();
+            return (EndpointDescriptionCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -13146,7 +13146,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (RegisteredServer)this.MemberwiseClone();
+            return (RegisteredServerCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -15322,7 +15322,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (SignedSoftwareCertificate)this.MemberwiseClone();
+            return (SignedSoftwareCertificateCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -20024,7 +20024,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (AddNodesItem)this.MemberwiseClone();
+            return (AddNodesItemCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -20259,7 +20259,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (AddNodesResult)this.MemberwiseClone();
+            return (AddNodesResultCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -20934,7 +20934,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (AddReferencesItem)this.MemberwiseClone();
+            return (AddReferencesItemCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -21545,7 +21545,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (DeleteNodesItem)this.MemberwiseClone();
+            return (DeleteNodesItemCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -22204,7 +22204,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (DeleteReferencesItem)this.MemberwiseClone();
+            return (DeleteReferencesItemCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -23233,7 +23233,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (BrowseDescription)this.MemberwiseClone();
+            return (BrowseDescriptionCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -23621,7 +23621,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (ReferenceDescription)this.MemberwiseClone();
+            return (ReferenceDescriptionCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -23884,7 +23884,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (BrowseResult)this.MemberwiseClone();
+            return (BrowseResultCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -24963,7 +24963,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (RelativePathElement)this.MemberwiseClone();
+            return (RelativePathElementCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -25356,7 +25356,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (BrowsePath)this.MemberwiseClone();
+            return (BrowsePathCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -25591,7 +25591,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (BrowsePathTarget)this.MemberwiseClone();
+            return (BrowsePathTargetCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -25838,7 +25838,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (BrowsePathResult)this.MemberwiseClone();
+            return (BrowsePathResultCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -27229,7 +27229,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (EndpointConfiguration)this.MemberwiseClone();
+            return (EndpointConfigurationCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -27492,7 +27492,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (QueryDataDescription)this.MemberwiseClone();
+            return (QueryDataDescriptionCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -27755,7 +27755,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (NodeTypeDescription)this.MemberwiseClone();
+            return (NodeTypeDescriptionCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -28139,7 +28139,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (QueryDataSet)this.MemberwiseClone();
+            return (QueryDataSetCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -28418,7 +28418,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (NodeReference)this.MemberwiseClone();
+            return (NodeReferenceCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -28665,7 +28665,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (ContentFilterElement)this.MemberwiseClone();
+            return (ContentFilterElementCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -28896,7 +28896,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (ContentFilter)this.MemberwiseClone();
+            return (ContentFilterCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -29792,7 +29792,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (SimpleAttributeOperand)this.MemberwiseClone();
+            return (SimpleAttributeOperandCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -30067,7 +30067,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (ContentFilterElementResult)this.MemberwiseClone();
+            return (ContentFilterElementResultCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -30516,7 +30516,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (ParsingResult)this.MemberwiseClone();
+            return (ParsingResultCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -31730,7 +31730,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (ReadValueId)this.MemberwiseClone();
+            return (ReadValueIdCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -32405,7 +32405,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (HistoryReadValueId)this.MemberwiseClone();
+            return (HistoryReadValueIdCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -32656,7 +32656,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (HistoryReadResult)this.MemberwiseClone();
+            return (HistoryReadResultCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -33968,7 +33968,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (ModificationInfo)this.MemberwiseClone();
+            return (ModificationInfoCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -34956,7 +34956,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (WriteValue)this.MemberwiseClone();
+            return (WriteValueCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -36817,7 +36817,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (HistoryUpdateResult)this.MemberwiseClone();
+            return (HistoryUpdateResultCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -37456,7 +37456,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (CallMethodRequest)this.MemberwiseClone();
+            return (CallMethodRequestCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -37759,7 +37759,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (CallMethodResult)this.MemberwiseClone();
+            return (CallMethodResultCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -40076,7 +40076,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (MonitoredItemCreateRequest)this.MemberwiseClone();
+            return (MonitoredItemCreateRequestCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -40359,7 +40359,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (MonitoredItemCreateResult)this.MemberwiseClone();
+            return (MonitoredItemCreateResultCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -41014,7 +41014,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (MonitoredItemModifyRequest)this.MemberwiseClone();
+            return (MonitoredItemModifyRequestCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -41281,7 +41281,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (MonitoredItemModifyResult)this.MemberwiseClone();
+            return (MonitoredItemModifyResultCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -44972,7 +44972,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (MonitoredItemNotification)this.MemberwiseClone();
+            return (MonitoredItemNotificationCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -45370,7 +45370,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (EventFieldList)this.MemberwiseClone();
+            return (EventFieldListCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -45601,7 +45601,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (HistoryEventFieldList)this.MemberwiseClone();
+            return (HistoryEventFieldListCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -45991,7 +45991,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (SubscriptionAcknowledgement)this.MemberwiseClone();
+            return (SubscriptionAcknowledgementCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -47054,7 +47054,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (TransferResult)this.MemberwiseClone();
+            return (TransferResultCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -48397,7 +48397,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (RedundantServerDataType)this.MemberwiseClone();
+            return (RedundantServerDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -48628,7 +48628,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (EndpointUrlListDataType)this.MemberwiseClone();
+            return (EndpointUrlListDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -48875,7 +48875,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (NetworkGroupDataType)this.MemberwiseClone();
+            return (NetworkGroupDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -49142,7 +49142,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (SamplingIntervalDiagnosticsDataType)this.MemberwiseClone();
+            return (SamplingIntervalDiagnosticsDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -50941,7 +50941,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (SessionDiagnosticsDataType)this.MemberwiseClone();
+            return (SessionDiagnosticsDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -51300,7 +51300,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (SessionSecurityDiagnosticsDataType)this.MemberwiseClone();
+            return (SessionSecurityDiagnosticsDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -51685,7 +51685,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (StatusResult)this.MemberwiseClone();
+            return (StatusResultCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -52384,7 +52384,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (SubscriptionDiagnosticsDataType)this.MemberwiseClone();
+            return (SubscriptionDiagnosticsDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -52678,7 +52678,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (ModelChangeStructureDataType)this.MemberwiseClone();
+            return (ModelChangeStructureDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -52913,7 +52913,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (SemanticChangeStructureDataType)this.MemberwiseClone();
+            return (SemanticChangeStructureDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
