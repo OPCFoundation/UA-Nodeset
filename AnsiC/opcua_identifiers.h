@@ -602,6 +602,7 @@
 #define OpcUaId_EventTypesFolder 3048
 #define OpcUaId_Server 2253
 #define OpcUaId_Server_ServerCapabilities 2268
+#define OpcUaId_Server_ServerCapabilities_OperationLimits 11704
 #define OpcUaId_Server_ServerCapabilities_ModellingRules 2996
 #define OpcUaId_Server_ServerCapabilities_AggregateFunctions 2997
 #define OpcUaId_Server_ServerDiagnostics 2274
