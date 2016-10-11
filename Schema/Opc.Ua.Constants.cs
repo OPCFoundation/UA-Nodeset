@@ -295,6 +295,11 @@ namespace Opc.Ua
         public const uint DataSetMetaDataType = 14523;
 
         /// <summary>
+        /// The identifier for the DataSetFieldFlags DataType.
+        /// </summary>
+        public const uint DataSetFieldFlags = 15904;
+
+        /// <summary>
         /// The identifier for the FieldMetaData DataType.
         /// </summary>
         public const uint FieldMetaData = 14524;
@@ -320,19 +325,14 @@ namespace Opc.Ua
         public const uint KeyValuePair = 14533;
 
         /// <summary>
-        /// The identifier for the PublishedVariableDataType DataType.
-        /// </summary>
-        public const uint PublishedVariableDataType = 14273;
-
-        /// <summary>
-        /// The identifier for the SecurityKeyServiceDataType DataType.
-        /// </summary>
-        public const uint SecurityKeyServiceDataType = 15294;
-
-        /// <summary>
         /// The identifier for the DataSetContentMask DataType.
         /// </summary>
         public const uint DataSetContentMask = 15532;
+
+        /// <summary>
+        /// The identifier for the PublishedVariableDataType DataType.
+        /// </summary>
+        public const uint PublishedVariableDataType = 14273;
 
         /// <summary>
         /// The identifier for the DataConnectionDataType DataType.
@@ -2820,74 +2820,24 @@ namespace Opc.Ua
         public const uint RoleType_RemoveApplication = 15630;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_AddUadpConnection Method.
+        /// The identifier for the PubSubKeyServiceType_GetSecurityKeys Method.
         /// </summary>
-        public const uint PublishSubscribeType_AddUadpConnection = 14901;
+        public const uint PubSubKeyServiceType_GetSecurityKeys = 15907;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_AddAmqpConnection Method.
+        /// The identifier for the PubSubKeyServiceType_GetSecurityGroup Method.
         /// </summary>
-        public const uint PublishSubscribeType_AddAmqpConnection = 14429;
+        public const uint PubSubKeyServiceType_GetSecurityGroup = 15910;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_RemoveConnection Method.
+        /// The identifier for the PubSubKeyServiceType_SecurityGroups_AddSecurityGroup Method.
         /// </summary>
-        public const uint PublishSubscribeType_RemoveConnection = 14432;
+        public const uint PubSubKeyServiceType_SecurityGroups_AddSecurityGroup = 15914;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_GetSecurityKeys Method.
+        /// The identifier for the PubSubKeyServiceType_SecurityGroups_RemoveSecurityGroup Method.
         /// </summary>
-        public const uint PublishSubscribeType_GetSecurityKeys = 15212;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_GetSecurityGroup Method.
-        /// </summary>
-        public const uint PublishSubscribeType_GetSecurityGroup = 15431;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_SecurityGroups_AddSecurityGroup Method.
-        /// </summary>
-        public const uint PublishSubscribeType_SecurityGroups_AddSecurityGroup = 15435;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_SecurityGroups_RemoveSecurityGroup Method.
-        /// </summary>
-        public const uint PublishSubscribeType_SecurityGroups_RemoveSecurityGroup = 15438;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_AddUadpConnection Method.
-        /// </summary>
-        public const uint PublishSubscribe_AddUadpConnection = 14904;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_AddAmqpConnection Method.
-        /// </summary>
-        public const uint PublishSubscribe_AddAmqpConnection = 14456;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_RemoveConnection Method.
-        /// </summary>
-        public const uint PublishSubscribe_RemoveConnection = 14459;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityKeys Method.
-        /// </summary>
-        public const uint PublishSubscribe_GetSecurityKeys = 15215;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityGroup Method.
-        /// </summary>
-        public const uint PublishSubscribe_GetSecurityGroup = 15440;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup Method.
-        /// </summary>
-        public const uint PublishSubscribe_SecurityGroups_AddSecurityGroup = 15444;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups_RemoveSecurityGroup Method.
-        /// </summary>
-        public const uint PublishSubscribe_SecurityGroups_RemoveSecurityGroup = 15447;
+        public const uint PubSubKeyServiceType_SecurityGroups_RemoveSecurityGroup = 15917;
 
         /// <summary>
         /// The identifier for the SecurityGroupFolderType_SecurityGroupFolderName_Placeholder_AddSecurityGroup Method.
@@ -2910,44 +2860,64 @@ namespace Opc.Ua
         public const uint SecurityGroupFolderType_RemoveSecurityGroup = 15464;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems Method.
+        /// The identifier for the PublishSubscribeType_SecurityGroups_AddSecurityGroup Method.
         /// </summary>
-        public const uint DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems = 14479;
+        public const uint PublishSubscribeType_SecurityGroups_AddSecurityGroup = 15435;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents Method.
+        /// The identifier for the PublishSubscribeType_SecurityGroups_RemoveSecurityGroup Method.
         /// </summary>
-        public const uint DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents = 14482;
+        public const uint PublishSubscribeType_SecurityGroups_RemoveSecurityGroup = 15438;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_RemovePublishedDataSet Method.
+        /// The identifier for the PublishSubscribeType_AddUadpConnection Method.
         /// </summary>
-        public const uint DataSetFolderType_DataSetFolderName_Placeholder_RemovePublishedDataSet = 14485;
+        public const uint PublishSubscribeType_AddUadpConnection = 14901;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField Method.
+        /// The identifier for the PublishSubscribeType_AddBrokerConnection Method.
         /// </summary>
-        public const uint DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField = 15474;
+        public const uint PublishSubscribeType_AddBrokerConnection = 14429;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_RemoveExtensionField Method.
+        /// The identifier for the PublishSubscribeType_RemoveConnection Method.
         /// </summary>
-        public const uint DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_RemoveExtensionField = 15477;
+        public const uint PublishSubscribeType_RemoveConnection = 14432;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_AddPublishedDataItems Method.
+        /// The identifier for the PublishSubscribe_GetSecurityKeys Method.
         /// </summary>
-        public const uint DataSetFolderType_AddPublishedDataItems = 14493;
+        public const uint PublishSubscribe_GetSecurityKeys = 15215;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_AddPublishedEvents Method.
+        /// The identifier for the PublishSubscribe_GetSecurityGroup Method.
         /// </summary>
-        public const uint DataSetFolderType_AddPublishedEvents = 14496;
+        public const uint PublishSubscribe_GetSecurityGroup = 15440;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_RemovePublishedDataSet Method.
+        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup Method.
         /// </summary>
-        public const uint DataSetFolderType_RemovePublishedDataSet = 14499;
+        public const uint PublishSubscribe_SecurityGroups_AddSecurityGroup = 15444;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SecurityGroups_RemoveSecurityGroup Method.
+        /// </summary>
+        public const uint PublishSubscribe_SecurityGroups_RemoveSecurityGroup = 15447;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_AddUadpConnection Method.
+        /// </summary>
+        public const uint PublishSubscribe_AddUadpConnection = 14904;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_AddBrokerConnection Method.
+        /// </summary>
+        public const uint PublishSubscribe_AddBrokerConnection = 14456;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_RemoveConnection Method.
+        /// </summary>
+        public const uint PublishSubscribe_RemoveConnection = 14459;
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_ExtensionFields_AddExtensionField Method.
@@ -3015,6 +2985,46 @@ namespace Opc.Ua
         public const uint DataSetClassType_ExtensionFields_RemoveExtensionField = 15525;
 
         /// <summary>
+        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems Method.
+        /// </summary>
+        public const uint DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems = 14479;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents Method.
+        /// </summary>
+        public const uint DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents = 14482;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_RemovePublishedDataSet Method.
+        /// </summary>
+        public const uint DataSetFolderType_DataSetFolderName_Placeholder_RemovePublishedDataSet = 14485;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField Method.
+        /// </summary>
+        public const uint DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField = 15474;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_RemoveExtensionField Method.
+        /// </summary>
+        public const uint DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_RemoveExtensionField = 15477;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_AddPublishedDataItems Method.
+        /// </summary>
+        public const uint DataSetFolderType_AddPublishedDataItems = 14493;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_AddPublishedEvents Method.
+        /// </summary>
+        public const uint DataSetFolderType_AddPublishedEvents = 14496;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_RemovePublishedDataSet Method.
+        /// </summary>
+        public const uint DataSetFolderType_RemovePublishedDataSet = 14499;
+
+        /// <summary>
         /// The identifier for the PubSubConnectionType_RemoveGroup Method.
         /// </summary>
         public const uint PubSubConnectionType_RemoveGroup = 14225;
@@ -3075,24 +3085,24 @@ namespace Opc.Ua
         public const uint UadpGroupType_AddDataSetReader = 15372;
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_AddGroup Method.
+        /// The identifier for the BrokerConnectionType_AddGroup Method.
         /// </summary>
-        public const uint AmqpConnectionType_AddGroup = 14367;
+        public const uint BrokerConnectionType_AddGroup = 14367;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_AddDataSetWriter Method.
+        /// The identifier for the BrokerGroupType_AddDataSetWriter Method.
         /// </summary>
-        public const uint AmqpGroupType_AddDataSetWriter = 15416;
+        public const uint BrokerGroupType_AddDataSetWriter = 15416;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_AddDataSetReader Method.
+        /// The identifier for the BrokerGroupType_AddDataSetReader Method.
         /// </summary>
-        public const uint AmqpGroupType_AddDataSetReader = 15582;
+        public const uint BrokerGroupType_AddDataSetReader = 15582;
 
         /// <summary>
-        /// The identifier for the AmqpGroupTypeAddReaderType Method.
+        /// The identifier for the BrokerGroupTypeAddReaderType Method.
         /// </summary>
-        public const uint AmqpGroupTypeAddReaderType = 15585;
+        public const uint BrokerGroupTypeAddReaderType = 15585;
     }
     #endregion
 
@@ -4035,6 +4045,21 @@ namespace Opc.Ua
         public const uint ConfigureAdmin = 15716;
 
         /// <summary>
+        /// The identifier for the PubSubKeyServiceType_SecurityGroups Object.
+        /// </summary>
+        public const uint PubSubKeyServiceType_SecurityGroups = 15913;
+
+        /// <summary>
+        /// The identifier for the SecurityGroupFolderType_SecurityGroupFolderName_Placeholder Object.
+        /// </summary>
+        public const uint SecurityGroupFolderType_SecurityGroupFolderName_Placeholder = 15453;
+
+        /// <summary>
+        /// The identifier for the SecurityGroupFolderType_SecurityGroupName_Placeholder Object.
+        /// </summary>
+        public const uint SecurityGroupFolderType_SecurityGroupName_Placeholder = 15459;
+
+        /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder Object.
         /// </summary>
         public const uint PublishSubscribeType_ConnectionName_Placeholder = 14417;
@@ -4043,11 +4068,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Status Object.
         /// </summary>
         public const uint PublishSubscribeType_ConnectionName_Placeholder_Status = 14419;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_SecurityGroups Object.
-        /// </summary>
-        public const uint PublishSubscribeType_SecurityGroups = 15434;
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_PublishedDataSets Object.
@@ -4065,14 +4085,14 @@ namespace Opc.Ua
         public const uint PublishSubscribe = 14443;
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Status Object.
-        /// </summary>
-        public const uint PublishSubscribe_ConnectionName_Placeholder_Status = 14446;
-
-        /// <summary>
         /// The identifier for the PublishSubscribe_SecurityGroups Object.
         /// </summary>
         public const uint PublishSubscribe_SecurityGroups = 15443;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Status Object.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Status = 14446;
 
         /// <summary>
         /// The identifier for the PublishSubscribe_PublishedDataSets Object.
@@ -4083,26 +4103,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_Status Object.
         /// </summary>
         public const uint PublishSubscribe_Status = 15848;
-
-        /// <summary>
-        /// The identifier for the SecurityGroupFolderType_SecurityGroupFolderName_Placeholder Object.
-        /// </summary>
-        public const uint SecurityGroupFolderType_SecurityGroupFolderName_Placeholder = 15453;
-
-        /// <summary>
-        /// The identifier for the SecurityGroupFolderType_SecurityGroupName_Placeholder Object.
-        /// </summary>
-        public const uint SecurityGroupFolderType_SecurityGroupName_Placeholder = 15459;
-
-        /// <summary>
-        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder Object.
-        /// </summary>
-        public const uint DataSetFolderType_DataSetFolderName_Placeholder = 14478;
-
-        /// <summary>
-        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder Object.
-        /// </summary>
-        public const uint DataSetFolderType_PublishedDataSetName_Placeholder = 14487;
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder Object.
@@ -4155,6 +4155,16 @@ namespace Opc.Ua
         public const uint DataSetClassType_DataSetWriterName_Placeholder_TransportSettings = 15251;
 
         /// <summary>
+        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder Object.
+        /// </summary>
+        public const uint DataSetFolderType_DataSetFolderName_Placeholder = 14478;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder Object.
+        /// </summary>
+        public const uint DataSetFolderType_PublishedDataSetName_Placeholder = 14487;
+
+        /// <summary>
         /// The identifier for the PubSubConnectionType_GroupName_Placeholder Object.
         /// </summary>
         public const uint PubSubConnectionType_GroupName_Placeholder = 14210;
@@ -4173,11 +4183,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubGroupType_Status Object.
         /// </summary>
         public const uint PubSubGroupType_Status = 15265;
-
-        /// <summary>
-        /// The identifier for the PubSubGroupType_MessageSecurity Object.
-        /// </summary>
-        public const uint PubSubGroupType_MessageSecurity = 15081;
 
         /// <summary>
         /// The identifier for the PubSubGroupType_DataSetWriterName_Placeholder Object.
@@ -4235,11 +4240,6 @@ namespace Opc.Ua
         public const uint DataSetReaderType_TransportSettings = 15311;
 
         /// <summary>
-        /// The identifier for the DataSetReaderType_MessageSecurity Object.
-        /// </summary>
-        public const uint DataSetReaderType_MessageSecurity = 15312;
-
-        /// <summary>
         /// The identifier for the DataSetReaderType_SubscribedDataSet Object.
         /// </summary>
         public const uint DataSetReaderType_SubscribedDataSet = 15316;
@@ -4275,34 +4275,34 @@ namespace Opc.Ua
         public const uint UadpGroupType_DataSetReaderName_Placeholder_SubscribedDataSet = 15360;
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_GroupName_Placeholder_Status Object.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_Status Object.
         /// </summary>
-        public const uint AmqpConnectionType_GroupName_Placeholder_Status = 15376;
+        public const uint BrokerConnectionType_GroupName_Placeholder_Status = 15376;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetWriterName_Placeholder_Status Object.
+        /// The identifier for the BrokerGroupType_DataSetWriterName_Placeholder_Status Object.
         /// </summary>
-        public const uint AmqpGroupType_DataSetWriterName_Placeholder_Status = 15392;
+        public const uint BrokerGroupType_DataSetWriterName_Placeholder_Status = 15392;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetWriterName_Placeholder_TransportSettings Object.
+        /// The identifier for the BrokerGroupType_DataSetWriterName_Placeholder_TransportSettings Object.
         /// </summary>
-        public const uint AmqpGroupType_DataSetWriterName_Placeholder_TransportSettings = 15396;
+        public const uint BrokerGroupType_DataSetWriterName_Placeholder_TransportSettings = 15396;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_Status Object.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_Status Object.
         /// </summary>
-        public const uint AmqpGroupType_DataSetReaderName_Placeholder_Status = 15401;
+        public const uint BrokerGroupType_DataSetReaderName_Placeholder_Status = 15401;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_TransportSettings Object.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_TransportSettings Object.
         /// </summary>
-        public const uint AmqpGroupType_DataSetReaderName_Placeholder_TransportSettings = 15405;
+        public const uint BrokerGroupType_DataSetReaderName_Placeholder_TransportSettings = 15405;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_SubscribedDataSet Object.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_SubscribedDataSet Object.
         /// </summary>
-        public const uint AmqpGroupType_DataSetReaderName_Placeholder_SubscribedDataSet = 15410;
+        public const uint BrokerGroupType_DataSetReaderName_Placeholder_SubscribedDataSet = 15410;
 
         /// <summary>
         /// The identifier for the TrustListDataType_Encoding_DefaultXml Object.
@@ -4378,11 +4378,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedVariableDataType_Encoding_DefaultXml Object.
         /// </summary>
         public const uint PublishedVariableDataType_Encoding_DefaultXml = 14319;
-
-        /// <summary>
-        /// The identifier for the SecurityKeyServiceDataType_Encoding_DefaultXml Object.
-        /// </summary>
-        public const uint SecurityKeyServiceDataType_Encoding_DefaultXml = 15423;
 
         /// <summary>
         /// The identifier for the DataConnectionDataType_Encoding_DefaultXml Object.
@@ -5568,11 +5563,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedVariableDataType_Encoding_DefaultBinary Object.
         /// </summary>
         public const uint PublishedVariableDataType_Encoding_DefaultBinary = 14323;
-
-        /// <summary>
-        /// The identifier for the SecurityKeyServiceDataType_Encoding_DefaultBinary Object.
-        /// </summary>
-        public const uint SecurityKeyServiceDataType_Encoding_DefaultBinary = 15427;
 
         /// <summary>
         /// The identifier for the DataConnectionDataType_Encoding_DefaultBinary Object.
@@ -7320,9 +7310,9 @@ namespace Opc.Ua
         public const uint RoleType = 15620;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType ObjectType.
+        /// The identifier for the PubSubKeyServiceType ObjectType.
         /// </summary>
-        public const uint PublishSubscribeType = 14416;
+        public const uint PubSubKeyServiceType = 15906;
 
         /// <summary>
         /// The identifier for the SecurityGroupFolderType ObjectType.
@@ -7335,9 +7325,9 @@ namespace Opc.Ua
         public const uint SecurityGroupType = 15471;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType ObjectType.
+        /// The identifier for the PublishSubscribeType ObjectType.
         /// </summary>
-        public const uint DataSetFolderType = 14477;
+        public const uint PublishSubscribeType = 14416;
 
         /// <summary>
         /// The identifier for the PublishedDataSetType ObjectType.
@@ -7365,6 +7355,11 @@ namespace Opc.Ua
         public const uint DataSetClassType = 15056;
 
         /// <summary>
+        /// The identifier for the DataSetFolderType ObjectType.
+        /// </summary>
+        public const uint DataSetFolderType = 14477;
+
+        /// <summary>
         /// The identifier for the PubSubConnectionType ObjectType.
         /// </summary>
         public const uint PubSubConnectionType = 14209;
@@ -7373,11 +7368,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubGroupType ObjectType.
         /// </summary>
         public const uint PubSubGroupType = 14232;
-
-        /// <summary>
-        /// The identifier for the PubSubMessageSecurityType ObjectType.
-        /// </summary>
-        public const uint PubSubMessageSecurityType = 15094;
 
         /// <summary>
         /// The identifier for the DataSetWriterType ObjectType.
@@ -7455,24 +7445,24 @@ namespace Opc.Ua
         public const uint UadpReaderTransportType = 15154;
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType ObjectType.
+        /// The identifier for the BrokerConnectionType ObjectType.
         /// </summary>
-        public const uint AmqpConnectionType = 14354;
+        public const uint BrokerConnectionType = 14354;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType ObjectType.
+        /// The identifier for the BrokerGroupType ObjectType.
         /// </summary>
-        public const uint AmqpGroupType = 14761;
+        public const uint BrokerGroupType = 14761;
 
         /// <summary>
-        /// The identifier for the AmqpWriterTransportType ObjectType.
+        /// The identifier for the BrokerWriterTransportType ObjectType.
         /// </summary>
-        public const uint AmqpWriterTransportType = 15043;
+        public const uint BrokerWriterTransportType = 15043;
 
         /// <summary>
-        /// The identifier for the AmqpReaderTransportType ObjectType.
+        /// The identifier for the BrokerReaderTransportType ObjectType.
         /// </summary>
-        public const uint AmqpReaderTransportType = 15178;
+        public const uint BrokerReaderTransportType = 15178;
     }
     #endregion
 
@@ -16095,224 +16085,49 @@ namespace Opc.Ua
         public const uint ConfigureAdmin_RemoveApplication_InputArguments = 15727;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_PublisherId Variable.
+        /// The identifier for the DataSetFieldFlags_EnumValues Variable.
         /// </summary>
-        public const uint PublishSubscribeType_ConnectionName_Placeholder_PublisherId = 14418;
+        public const uint DataSetFieldFlags_EnumValues = 15905;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Status_State Variable.
+        /// The identifier for the DataSetContentMask_EnumValues Variable.
         /// </summary>
-        public const uint PublishSubscribeType_ConnectionName_Placeholder_Status_State = 14420;
+        public const uint DataSetContentMask_EnumValues = 15533;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Address Variable.
+        /// The identifier for the PubSubKeyServiceType_GetSecurityKeys_InputArguments Variable.
         /// </summary>
-        public const uint PublishSubscribeType_ConnectionName_Placeholder_Address = 14423;
+        public const uint PubSubKeyServiceType_GetSecurityKeys_InputArguments = 15908;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_RemoveGroup_InputArguments Variable.
+        /// The identifier for the PubSubKeyServiceType_GetSecurityKeys_OutputArguments Variable.
         /// </summary>
-        public const uint PublishSubscribeType_ConnectionName_Placeholder_RemoveGroup_InputArguments = 14425;
+        public const uint PubSubKeyServiceType_GetSecurityKeys_OutputArguments = 15909;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_AddUadpConnection_InputArguments Variable.
+        /// The identifier for the PubSubKeyServiceType_GetSecurityGroup_InputArguments Variable.
         /// </summary>
-        public const uint PublishSubscribeType_AddUadpConnection_InputArguments = 14902;
+        public const uint PubSubKeyServiceType_GetSecurityGroup_InputArguments = 15911;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_AddUadpConnection_OutputArguments Variable.
+        /// The identifier for the PubSubKeyServiceType_GetSecurityGroup_OutputArguments Variable.
         /// </summary>
-        public const uint PublishSubscribeType_AddUadpConnection_OutputArguments = 14903;
+        public const uint PubSubKeyServiceType_GetSecurityGroup_OutputArguments = 15912;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_AddAmqpConnection_InputArguments Variable.
+        /// The identifier for the PubSubKeyServiceType_SecurityGroups_AddSecurityGroup_InputArguments Variable.
         /// </summary>
-        public const uint PublishSubscribeType_AddAmqpConnection_InputArguments = 14430;
+        public const uint PubSubKeyServiceType_SecurityGroups_AddSecurityGroup_InputArguments = 15915;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_AddAmqpConnection_OutputArguments Variable.
+        /// The identifier for the PubSubKeyServiceType_SecurityGroups_AddSecurityGroup_OutputArguments Variable.
         /// </summary>
-        public const uint PublishSubscribeType_AddAmqpConnection_OutputArguments = 14431;
+        public const uint PubSubKeyServiceType_SecurityGroups_AddSecurityGroup_OutputArguments = 15916;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_RemoveConnection_InputArguments Variable.
+        /// The identifier for the PubSubKeyServiceType_SecurityGroups_RemoveSecurityGroup_InputArguments Variable.
         /// </summary>
-        public const uint PublishSubscribeType_RemoveConnection_InputArguments = 14433;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_GetSecurityKeys_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_GetSecurityKeys_InputArguments = 15213;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_GetSecurityKeys_OutputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_GetSecurityKeys_OutputArguments = 15214;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_GetSecurityGroup_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_GetSecurityGroup_InputArguments = 15432;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_GetSecurityGroup_OutputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_GetSecurityGroup_OutputArguments = 15433;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_SecurityGroups_AddSecurityGroup_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_SecurityGroups_AddSecurityGroup_InputArguments = 15436;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_SecurityGroups_AddSecurityGroup_OutputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_SecurityGroups_AddSecurityGroup_OutputArguments = 15437;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_SecurityGroups_RemoveSecurityGroup_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_SecurityGroups_RemoveSecurityGroup_InputArguments = 15439;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_PublishedDataSets_AddPublishedDataItems_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_PublishedDataSets_AddPublishedDataItems_InputArguments = 14436;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_PublishedDataSets_AddPublishedDataItems_OutputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_PublishedDataSets_AddPublishedDataItems_OutputArguments = 14437;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_PublishedDataSets_AddPublishedEvents_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_PublishedDataSets_AddPublishedEvents_InputArguments = 14439;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_PublishedDataSets_AddPublishedEvents_OutputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_PublishedDataSets_AddPublishedEvents_OutputArguments = 14440;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_PublishedDataSets_RemovePublishedDataSet_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_PublishedDataSets_RemovePublishedDataSet_InputArguments = 14442;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_Status_State Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_Status_State = 15845;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_PublisherId Variable.
-        /// </summary>
-        public const uint PublishSubscribe_ConnectionName_Placeholder_PublisherId = 14445;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Status_State Variable.
-        /// </summary>
-        public const uint PublishSubscribe_ConnectionName_Placeholder_Status_State = 14447;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Address Variable.
-        /// </summary>
-        public const uint PublishSubscribe_ConnectionName_Placeholder_Address = 14450;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_RemoveGroup_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_ConnectionName_Placeholder_RemoveGroup_InputArguments = 14452;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_AddUadpConnection_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_AddUadpConnection_InputArguments = 14905;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_AddUadpConnection_OutputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_AddUadpConnection_OutputArguments = 14906;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_AddAmqpConnection_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_AddAmqpConnection_InputArguments = 14457;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_AddAmqpConnection_OutputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_AddAmqpConnection_OutputArguments = 14458;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_RemoveConnection_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_RemoveConnection_InputArguments = 14460;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityKeys_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_GetSecurityKeys_InputArguments = 15216;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityKeys_OutputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_GetSecurityKeys_OutputArguments = 15217;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityGroup_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_GetSecurityGroup_InputArguments = 15441;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityGroup_OutputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_GetSecurityGroup_OutputArguments = 15442;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_SecurityGroups_AddSecurityGroup_InputArguments = 15445;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup_OutputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_SecurityGroups_AddSecurityGroup_OutputArguments = 15446;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups_RemoveSecurityGroup_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_SecurityGroups_RemoveSecurityGroup_InputArguments = 15448;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedDataItems_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_PublishedDataSets_AddPublishedDataItems_InputArguments = 14463;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedDataItems_OutputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_PublishedDataSets_AddPublishedDataItems_OutputArguments = 14464;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedEvents_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_PublishedDataSets_AddPublishedEvents_InputArguments = 14466;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedEvents_OutputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_PublishedDataSets_AddPublishedEvents_OutputArguments = 14467;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_PublishedDataSets_RemovePublishedDataSet_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_PublishedDataSets_RemovePublishedDataSet_InputArguments = 14469;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_Status_State Variable.
-        /// </summary>
-        public const uint PublishSubscribe_Status_State = 15849;
+        public const uint PubSubKeyServiceType_SecurityGroups_RemoveSecurityGroup_InputArguments = 15918;
 
         /// <summary>
         /// The identifier for the SecurityGroupFolderType_SecurityGroupFolderName_Placeholder_AddSecurityGroup_InputArguments Variable.
@@ -16355,79 +16170,234 @@ namespace Opc.Ua
         public const uint SecurityGroupType_SecurityGroupId = 15472;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems_InputArguments Variable.
+        /// The identifier for the PublishSubscribeType_GetSecurityKeys_InputArguments Variable.
         /// </summary>
-        public const uint DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems_InputArguments = 14480;
+        public const uint PublishSubscribeType_GetSecurityKeys_InputArguments = 15213;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems_OutputArguments Variable.
+        /// The identifier for the PublishSubscribeType_GetSecurityKeys_OutputArguments Variable.
         /// </summary>
-        public const uint DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems_OutputArguments = 14481;
+        public const uint PublishSubscribeType_GetSecurityKeys_OutputArguments = 15214;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents_InputArguments Variable.
+        /// The identifier for the PublishSubscribeType_GetSecurityGroup_InputArguments Variable.
         /// </summary>
-        public const uint DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents_InputArguments = 14483;
+        public const uint PublishSubscribeType_GetSecurityGroup_InputArguments = 15432;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents_OutputArguments Variable.
+        /// The identifier for the PublishSubscribeType_GetSecurityGroup_OutputArguments Variable.
         /// </summary>
-        public const uint DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents_OutputArguments = 14484;
+        public const uint PublishSubscribeType_GetSecurityGroup_OutputArguments = 15433;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_RemovePublishedDataSet_InputArguments Variable.
+        /// The identifier for the PublishSubscribeType_SecurityGroups_AddSecurityGroup_InputArguments Variable.
         /// </summary>
-        public const uint DataSetFolderType_DataSetFolderName_Placeholder_RemovePublishedDataSet_InputArguments = 14486;
+        public const uint PublishSubscribeType_SecurityGroups_AddSecurityGroup_InputArguments = 15436;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ConfigurationVersion Variable.
+        /// The identifier for the PublishSubscribeType_SecurityGroups_AddSecurityGroup_OutputArguments Variable.
         /// </summary>
-        public const uint DataSetFolderType_PublishedDataSetName_Placeholder_ConfigurationVersion = 14489;
+        public const uint PublishSubscribeType_SecurityGroups_AddSecurityGroup_OutputArguments = 15437;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_DataSetMetaData Variable.
+        /// The identifier for the PublishSubscribeType_SecurityGroups_RemoveSecurityGroup_InputArguments Variable.
         /// </summary>
-        public const uint DataSetFolderType_PublishedDataSetName_Placeholder_DataSetMetaData = 15221;
+        public const uint PublishSubscribeType_SecurityGroups_RemoveSecurityGroup_InputArguments = 15439;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField_InputArguments Variable.
+        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_PublisherId Variable.
         /// </summary>
-        public const uint DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField_InputArguments = 15475;
+        public const uint PublishSubscribeType_ConnectionName_Placeholder_PublisherId = 14418;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField_OutputArguments Variable.
+        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Address Variable.
         /// </summary>
-        public const uint DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField_OutputArguments = 15476;
+        public const uint PublishSubscribeType_ConnectionName_Placeholder_Address = 14423;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_RemoveExtensionField_InputArguments Variable.
+        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Status_State Variable.
         /// </summary>
-        public const uint DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_RemoveExtensionField_InputArguments = 15478;
+        public const uint PublishSubscribeType_ConnectionName_Placeholder_Status_State = 14420;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_AddPublishedDataItems_InputArguments Variable.
+        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_RemoveGroup_InputArguments Variable.
         /// </summary>
-        public const uint DataSetFolderType_AddPublishedDataItems_InputArguments = 14494;
+        public const uint PublishSubscribeType_ConnectionName_Placeholder_RemoveGroup_InputArguments = 14425;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_AddPublishedDataItems_OutputArguments Variable.
+        /// The identifier for the PublishSubscribeType_AddUadpConnection_InputArguments Variable.
         /// </summary>
-        public const uint DataSetFolderType_AddPublishedDataItems_OutputArguments = 14495;
+        public const uint PublishSubscribeType_AddUadpConnection_InputArguments = 14902;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_AddPublishedEvents_InputArguments Variable.
+        /// The identifier for the PublishSubscribeType_AddUadpConnection_OutputArguments Variable.
         /// </summary>
-        public const uint DataSetFolderType_AddPublishedEvents_InputArguments = 14497;
+        public const uint PublishSubscribeType_AddUadpConnection_OutputArguments = 14903;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_AddPublishedEvents_OutputArguments Variable.
+        /// The identifier for the PublishSubscribeType_AddBrokerConnection_InputArguments Variable.
         /// </summary>
-        public const uint DataSetFolderType_AddPublishedEvents_OutputArguments = 14498;
+        public const uint PublishSubscribeType_AddBrokerConnection_InputArguments = 14430;
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_RemovePublishedDataSet_InputArguments Variable.
+        /// The identifier for the PublishSubscribeType_AddBrokerConnection_OutputArguments Variable.
         /// </summary>
-        public const uint DataSetFolderType_RemovePublishedDataSet_InputArguments = 14500;
+        public const uint PublishSubscribeType_AddBrokerConnection_OutputArguments = 14431;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeType_RemoveConnection_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribeType_RemoveConnection_InputArguments = 14433;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeType_PublishedDataSets_AddPublishedDataItems_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribeType_PublishedDataSets_AddPublishedDataItems_InputArguments = 14436;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeType_PublishedDataSets_AddPublishedDataItems_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribeType_PublishedDataSets_AddPublishedDataItems_OutputArguments = 14437;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeType_PublishedDataSets_AddPublishedEvents_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribeType_PublishedDataSets_AddPublishedEvents_InputArguments = 14439;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeType_PublishedDataSets_AddPublishedEvents_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribeType_PublishedDataSets_AddPublishedEvents_OutputArguments = 14440;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeType_PublishedDataSets_RemovePublishedDataSet_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribeType_PublishedDataSets_RemovePublishedDataSet_InputArguments = 14442;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeType_Status_State Variable.
+        /// </summary>
+        public const uint PublishSubscribeType_Status_State = 15845;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeType_DefaultPublisherId Variable.
+        /// </summary>
+        public const uint PublishSubscribeType_DefaultPublisherId = 15919;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_GetSecurityKeys_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_GetSecurityKeys_InputArguments = 15216;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_GetSecurityKeys_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_GetSecurityKeys_OutputArguments = 15217;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_GetSecurityGroup_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_GetSecurityGroup_InputArguments = 15441;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_GetSecurityGroup_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_GetSecurityGroup_OutputArguments = 15442;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_SecurityGroups_AddSecurityGroup_InputArguments = 15445;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_SecurityGroups_AddSecurityGroup_OutputArguments = 15446;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SecurityGroups_RemoveSecurityGroup_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_SecurityGroups_RemoveSecurityGroup_InputArguments = 15448;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_PublisherId Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_PublisherId = 14445;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Address Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Address = 14450;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Status_State Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Status_State = 14447;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_RemoveGroup_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_RemoveGroup_InputArguments = 14452;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_AddUadpConnection_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_AddUadpConnection_InputArguments = 14905;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_AddUadpConnection_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_AddUadpConnection_OutputArguments = 14906;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_AddBrokerConnection_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_AddBrokerConnection_InputArguments = 14457;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_AddBrokerConnection_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_AddBrokerConnection_OutputArguments = 14458;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_RemoveConnection_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_RemoveConnection_InputArguments = 14460;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedDataItems_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_PublishedDataSets_AddPublishedDataItems_InputArguments = 14463;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedDataItems_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_PublishedDataSets_AddPublishedDataItems_OutputArguments = 14464;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedEvents_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_PublishedDataSets_AddPublishedEvents_InputArguments = 14466;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedEvents_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_PublishedDataSets_AddPublishedEvents_OutputArguments = 14467;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_RemovePublishedDataSet_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_PublishedDataSets_RemovePublishedDataSet_InputArguments = 14469;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Status_State Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Status_State = 15849;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_DefaultPublisherId Variable.
+        /// </summary>
+        public const uint PublishSubscribe_DefaultPublisherId = 15920;
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Status_State Variable.
@@ -16615,9 +16585,89 @@ namespace Opc.Ua
         public const uint DataSetClassType_DataSetClassId = 15072;
 
         /// <summary>
+        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems_InputArguments Variable.
+        /// </summary>
+        public const uint DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems_InputArguments = 14480;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems_OutputArguments Variable.
+        /// </summary>
+        public const uint DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems_OutputArguments = 14481;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents_InputArguments Variable.
+        /// </summary>
+        public const uint DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents_InputArguments = 14483;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents_OutputArguments Variable.
+        /// </summary>
+        public const uint DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents_OutputArguments = 14484;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_RemovePublishedDataSet_InputArguments Variable.
+        /// </summary>
+        public const uint DataSetFolderType_DataSetFolderName_Placeholder_RemovePublishedDataSet_InputArguments = 14486;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ConfigurationVersion Variable.
+        /// </summary>
+        public const uint DataSetFolderType_PublishedDataSetName_Placeholder_ConfigurationVersion = 14489;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_DataSetMetaData Variable.
+        /// </summary>
+        public const uint DataSetFolderType_PublishedDataSetName_Placeholder_DataSetMetaData = 15221;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField_InputArguments Variable.
+        /// </summary>
+        public const uint DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField_InputArguments = 15475;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField_OutputArguments Variable.
+        /// </summary>
+        public const uint DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField_OutputArguments = 15476;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_RemoveExtensionField_InputArguments Variable.
+        /// </summary>
+        public const uint DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_RemoveExtensionField_InputArguments = 15478;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_AddPublishedDataItems_InputArguments Variable.
+        /// </summary>
+        public const uint DataSetFolderType_AddPublishedDataItems_InputArguments = 14494;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_AddPublishedDataItems_OutputArguments Variable.
+        /// </summary>
+        public const uint DataSetFolderType_AddPublishedDataItems_OutputArguments = 14495;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_AddPublishedEvents_InputArguments Variable.
+        /// </summary>
+        public const uint DataSetFolderType_AddPublishedEvents_InputArguments = 14497;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_AddPublishedEvents_OutputArguments Variable.
+        /// </summary>
+        public const uint DataSetFolderType_AddPublishedEvents_OutputArguments = 14498;
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_RemovePublishedDataSet_InputArguments Variable.
+        /// </summary>
+        public const uint DataSetFolderType_RemovePublishedDataSet_InputArguments = 14500;
+
+        /// <summary>
         /// The identifier for the PubSubConnectionType_PublisherId Variable.
         /// </summary>
         public const uint PubSubConnectionType_PublisherId = 14595;
+
+        /// <summary>
+        /// The identifier for the PubSubConnectionType_Address Variable.
+        /// </summary>
+        public const uint PubSubConnectionType_Address = 14221;
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_GroupName_Placeholder_PublishingInterval Variable.
@@ -16640,19 +16690,24 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_GroupName_Placeholder_Priority = 15852;
 
         /// <summary>
+        /// The identifier for the PubSubConnectionType_GroupName_Placeholder_LocaleIds Variable.
+        /// </summary>
+        public const uint PubSubConnectionType_GroupName_Placeholder_LocaleIds = 15921;
+
+        /// <summary>
+        /// The identifier for the PubSubConnectionType_GroupName_Placeholder_SecurityMode Variable.
+        /// </summary>
+        public const uint PubSubConnectionType_GroupName_Placeholder_SecurityMode = 15922;
+
+        /// <summary>
+        /// The identifier for the PubSubConnectionType_GroupName_Placeholder_SecurityGroupId Variable.
+        /// </summary>
+        public const uint PubSubConnectionType_GroupName_Placeholder_SecurityGroupId = 15923;
+
+        /// <summary>
         /// The identifier for the PubSubConnectionType_GroupName_Placeholder_Status_State Variable.
         /// </summary>
         public const uint PubSubConnectionType_GroupName_Placeholder_Status_State = 15256;
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_GroupName_Placeholder_MessageSecurity_SecurityGroupId Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_GroupName_Placeholder_MessageSecurity_SecurityGroupId = 15076;
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_GroupName_Placeholder_MessageSecurity_SecurityMode Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_GroupName_Placeholder_MessageSecurity_SecurityMode = 15078;
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_GroupName_Placeholder_RemoveDataSetWriter_InputArguments Variable.
@@ -16668,11 +16723,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_Status_State Variable.
         /// </summary>
         public const uint PubSubConnectionType_Status_State = 14601;
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_Address Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_Address = 14221;
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_RemoveGroup_InputArguments Variable.
@@ -16700,19 +16750,29 @@ namespace Opc.Ua
         public const uint PubSubGroupType_Priority = 15854;
 
         /// <summary>
+        /// The identifier for the PubSubGroupType_LocaleIds Variable.
+        /// </summary>
+        public const uint PubSubGroupType_LocaleIds = 15925;
+
+        /// <summary>
+        /// The identifier for the PubSubGroupType_SecurityMode Variable.
+        /// </summary>
+        public const uint PubSubGroupType_SecurityMode = 15926;
+
+        /// <summary>
+        /// The identifier for the PubSubGroupType_SecurityGroupId Variable.
+        /// </summary>
+        public const uint PubSubGroupType_SecurityGroupId = 15927;
+
+        /// <summary>
+        /// The identifier for the PubSubGroupType_SecurityKeyServices Variable.
+        /// </summary>
+        public const uint PubSubGroupType_SecurityKeyServices = 15928;
+
+        /// <summary>
         /// The identifier for the PubSubGroupType_Status_State Variable.
         /// </summary>
         public const uint PubSubGroupType_Status_State = 15266;
-
-        /// <summary>
-        /// The identifier for the PubSubGroupType_MessageSecurity_SecurityGroupId Variable.
-        /// </summary>
-        public const uint PubSubGroupType_MessageSecurity_SecurityGroupId = 15082;
-
-        /// <summary>
-        /// The identifier for the PubSubGroupType_MessageSecurity_SecurityMode Variable.
-        /// </summary>
-        public const uint PubSubGroupType_MessageSecurity_SecurityMode = 15084;
 
         /// <summary>
         /// The identifier for the PubSubGroupType_DataSetWriterName_Placeholder_Status_State Variable.
@@ -16735,14 +16795,14 @@ namespace Opc.Ua
         public const uint PubSubGroupType_DataSetReaderName_Placeholder_Status_State = 15281;
 
         /// <summary>
-        /// The identifier for the PubSubGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityGroupId Variable.
+        /// The identifier for the PubSubGroupType_DataSetReaderName_Placeholder_SecurityMode Variable.
         /// </summary>
-        public const uint PubSubGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityGroupId = 15286;
+        public const uint PubSubGroupType_DataSetReaderName_Placeholder_SecurityMode = 15929;
 
         /// <summary>
-        /// The identifier for the PubSubGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityMode Variable.
+        /// The identifier for the PubSubGroupType_DataSetReaderName_Placeholder_SecurityGroupId Variable.
         /// </summary>
-        public const uint PubSubGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityMode = 15287;
+        public const uint PubSubGroupType_DataSetReaderName_Placeholder_SecurityGroupId = 15930;
 
         /// <summary>
         /// The identifier for the PubSubGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_DataSetMetaData Variable.
@@ -16775,21 +16835,6 @@ namespace Opc.Ua
         public const uint PubSubGroupType_RemoveDataSetReader_InputArguments = 15293;
 
         /// <summary>
-        /// The identifier for the PubSubMessageSecurityType_SecurityGroupId Variable.
-        /// </summary>
-        public const uint PubSubMessageSecurityType_SecurityGroupId = 15095;
-
-        /// <summary>
-        /// The identifier for the PubSubMessageSecurityType_SecurityMode Variable.
-        /// </summary>
-        public const uint PubSubMessageSecurityType_SecurityMode = 15097;
-
-        /// <summary>
-        /// The identifier for the PubSubMessageSecurityType_SecurityKeyServices Variable.
-        /// </summary>
-        public const uint PubSubMessageSecurityType_SecurityKeyServices = 15862;
-
-        /// <summary>
         /// The identifier for the DataSetWriterType_Status_State Variable.
         /// </summary>
         public const uint DataSetWriterType_Status_State = 15300;
@@ -16805,24 +16850,24 @@ namespace Opc.Ua
         public const uint DataSetWriterTransportType_KeyFrameCount = 15531;
 
         /// <summary>
-        /// The identifier for the DataSetContentMask_EnumValues Variable.
-        /// </summary>
-        public const uint DataSetContentMask_EnumValues = 15533;
-
-        /// <summary>
         /// The identifier for the DataSetReaderType_Status_State Variable.
         /// </summary>
         public const uint DataSetReaderType_Status_State = 15308;
 
         /// <summary>
-        /// The identifier for the DataSetReaderType_MessageSecurity_SecurityGroupId Variable.
+        /// The identifier for the DataSetReaderType_SecurityMode Variable.
         /// </summary>
-        public const uint DataSetReaderType_MessageSecurity_SecurityGroupId = 15313;
+        public const uint DataSetReaderType_SecurityMode = 15932;
 
         /// <summary>
-        /// The identifier for the DataSetReaderType_MessageSecurity_SecurityMode Variable.
+        /// The identifier for the DataSetReaderType_SecurityGroupId Variable.
         /// </summary>
-        public const uint DataSetReaderType_MessageSecurity_SecurityMode = 15314;
+        public const uint DataSetReaderType_SecurityGroupId = 15933;
+
+        /// <summary>
+        /// The identifier for the DataSetReaderType_SecurityKeyServices Variable.
+        /// </summary>
+        public const uint DataSetReaderType_SecurityKeyServices = 15934;
 
         /// <summary>
         /// The identifier for the DataSetReaderType_SubscribedDataSet_DataSetMetaData Variable.
@@ -16955,19 +17000,24 @@ namespace Opc.Ua
         public const uint UadpConnectionType_GroupName_Placeholder_Priority = 15876;
 
         /// <summary>
+        /// The identifier for the UadpConnectionType_GroupName_Placeholder_LocaleIds Variable.
+        /// </summary>
+        public const uint UadpConnectionType_GroupName_Placeholder_LocaleIds = 15935;
+
+        /// <summary>
+        /// The identifier for the UadpConnectionType_GroupName_Placeholder_SecurityMode Variable.
+        /// </summary>
+        public const uint UadpConnectionType_GroupName_Placeholder_SecurityMode = 15936;
+
+        /// <summary>
+        /// The identifier for the UadpConnectionType_GroupName_Placeholder_SecurityGroupId Variable.
+        /// </summary>
+        public const uint UadpConnectionType_GroupName_Placeholder_SecurityGroupId = 15937;
+
+        /// <summary>
         /// The identifier for the UadpConnectionType_GroupName_Placeholder_Status_State Variable.
         /// </summary>
         public const uint UadpConnectionType_GroupName_Placeholder_Status_State = 15322;
-
-        /// <summary>
-        /// The identifier for the UadpConnectionType_GroupName_Placeholder_MessageSecurity_SecurityGroupId Variable.
-        /// </summary>
-        public const uint UadpConnectionType_GroupName_Placeholder_MessageSecurity_SecurityGroupId = 15133;
-
-        /// <summary>
-        /// The identifier for the UadpConnectionType_GroupName_Placeholder_MessageSecurity_SecurityMode Variable.
-        /// </summary>
-        public const uint UadpConnectionType_GroupName_Placeholder_MessageSecurity_SecurityMode = 15135;
 
         /// <summary>
         /// The identifier for the UadpConnectionType_GroupName_Placeholder_RemoveDataSetWriter_InputArguments Variable.
@@ -17020,16 +17070,6 @@ namespace Opc.Ua
         public const uint UadpGroupType_Status_State = 15337;
 
         /// <summary>
-        /// The identifier for the UadpGroupType_MessageSecurity_SecurityGroupId Variable.
-        /// </summary>
-        public const uint UadpGroupType_MessageSecurity_SecurityGroupId = 15139;
-
-        /// <summary>
-        /// The identifier for the UadpGroupType_MessageSecurity_SecurityMode Variable.
-        /// </summary>
-        public const uint UadpGroupType_MessageSecurity_SecurityMode = 15141;
-
-        /// <summary>
         /// The identifier for the UadpGroupType_DataSetWriterName_Placeholder_Status_State Variable.
         /// </summary>
         public const uint UadpGroupType_DataSetWriterName_Placeholder_Status_State = 15343;
@@ -17050,14 +17090,14 @@ namespace Opc.Ua
         public const uint UadpGroupType_DataSetReaderName_Placeholder_Status_State = 15352;
 
         /// <summary>
-        /// The identifier for the UadpGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityGroupId Variable.
+        /// The identifier for the UadpGroupType_DataSetReaderName_Placeholder_SecurityMode Variable.
         /// </summary>
-        public const uint UadpGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityGroupId = 15357;
+        public const uint UadpGroupType_DataSetReaderName_Placeholder_SecurityMode = 15943;
 
         /// <summary>
-        /// The identifier for the UadpGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityMode Variable.
+        /// The identifier for the UadpGroupType_DataSetReaderName_Placeholder_SecurityGroupId Variable.
         /// </summary>
-        public const uint UadpGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityMode = 15358;
+        public const uint UadpGroupType_DataSetReaderName_Placeholder_SecurityGroupId = 15944;
 
         /// <summary>
         /// The identifier for the UadpGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_DataSetMetaData Variable.
@@ -17155,219 +17195,214 @@ namespace Opc.Ua
         public const uint UadpReaderTransportType_DataSetWriterId = 15156;
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_GroupName_Placeholder_PublishingInterval Variable.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_PublishingInterval Variable.
         /// </summary>
-        public const uint AmqpConnectionType_GroupName_Placeholder_PublishingInterval = 15157;
+        public const uint BrokerConnectionType_GroupName_Placeholder_PublishingInterval = 15157;
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_GroupName_Placeholder_KeepAliveTime Variable.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_KeepAliveTime Variable.
         /// </summary>
-        public const uint AmqpConnectionType_GroupName_Placeholder_KeepAliveTime = 15158;
+        public const uint BrokerConnectionType_GroupName_Placeholder_KeepAliveTime = 15158;
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_GroupName_Placeholder_EncodingMimeType Variable.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_EncodingMimeType Variable.
         /// </summary>
-        public const uint AmqpConnectionType_GroupName_Placeholder_EncodingMimeType = 15375;
+        public const uint BrokerConnectionType_GroupName_Placeholder_EncodingMimeType = 15375;
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_GroupName_Placeholder_Priority Variable.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_Priority Variable.
         /// </summary>
-        public const uint AmqpConnectionType_GroupName_Placeholder_Priority = 15885;
+        public const uint BrokerConnectionType_GroupName_Placeholder_Priority = 15885;
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_GroupName_Placeholder_Status_State Variable.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_LocaleIds Variable.
         /// </summary>
-        public const uint AmqpConnectionType_GroupName_Placeholder_Status_State = 15377;
+        public const uint BrokerConnectionType_GroupName_Placeholder_LocaleIds = 15946;
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_GroupName_Placeholder_MessageSecurity_SecurityGroupId Variable.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_SecurityMode Variable.
         /// </summary>
-        public const uint AmqpConnectionType_GroupName_Placeholder_MessageSecurity_SecurityGroupId = 15160;
+        public const uint BrokerConnectionType_GroupName_Placeholder_SecurityMode = 15947;
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_GroupName_Placeholder_MessageSecurity_SecurityMode Variable.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_SecurityGroupId Variable.
         /// </summary>
-        public const uint AmqpConnectionType_GroupName_Placeholder_MessageSecurity_SecurityMode = 15162;
+        public const uint BrokerConnectionType_GroupName_Placeholder_SecurityGroupId = 15948;
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_GroupName_Placeholder_RemoveDataSetWriter_InputArguments Variable.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_Status_State Variable.
         /// </summary>
-        public const uint AmqpConnectionType_GroupName_Placeholder_RemoveDataSetWriter_InputArguments = 15382;
+        public const uint BrokerConnectionType_GroupName_Placeholder_Status_State = 15377;
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_GroupName_Placeholder_RemoveDataSetReader_InputArguments Variable.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_RemoveDataSetWriter_InputArguments Variable.
         /// </summary>
-        public const uint AmqpConnectionType_GroupName_Placeholder_RemoveDataSetReader_InputArguments = 15384;
+        public const uint BrokerConnectionType_GroupName_Placeholder_RemoveDataSetWriter_InputArguments = 15382;
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_Status_State Variable.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_RemoveDataSetReader_InputArguments Variable.
         /// </summary>
-        public const uint AmqpConnectionType_Status_State = 14751;
+        public const uint BrokerConnectionType_GroupName_Placeholder_RemoveDataSetReader_InputArguments = 15384;
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_RemoveGroup_InputArguments Variable.
+        /// The identifier for the BrokerConnectionType_Status_State Variable.
         /// </summary>
-        public const uint AmqpConnectionType_RemoveGroup_InputArguments = 14371;
+        public const uint BrokerConnectionType_Status_State = 14751;
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_AddGroup_InputArguments Variable.
+        /// The identifier for the BrokerConnectionType_RemoveGroup_InputArguments Variable.
         /// </summary>
-        public const uint AmqpConnectionType_AddGroup_InputArguments = 14368;
+        public const uint BrokerConnectionType_RemoveGroup_InputArguments = 14371;
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_AddGroup_OutputArguments Variable.
+        /// The identifier for the BrokerConnectionType_AddGroup_InputArguments Variable.
         /// </summary>
-        public const uint AmqpConnectionType_AddGroup_OutputArguments = 14369;
+        public const uint BrokerConnectionType_AddGroup_InputArguments = 14368;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_Status_State Variable.
+        /// The identifier for the BrokerConnectionType_AddGroup_OutputArguments Variable.
         /// </summary>
-        public const uint AmqpGroupType_Status_State = 15387;
+        public const uint BrokerConnectionType_AddGroup_OutputArguments = 14369;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_MessageSecurity_SecurityGroupId Variable.
+        /// The identifier for the BrokerGroupType_Status_State Variable.
         /// </summary>
-        public const uint AmqpGroupType_MessageSecurity_SecurityGroupId = 15166;
+        public const uint BrokerGroupType_Status_State = 15387;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_MessageSecurity_SecurityMode Variable.
+        /// The identifier for the BrokerGroupType_DataSetWriterName_Placeholder_Status_State Variable.
         /// </summary>
-        public const uint AmqpGroupType_MessageSecurity_SecurityMode = 15168;
+        public const uint BrokerGroupType_DataSetWriterName_Placeholder_Status_State = 15393;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetWriterName_Placeholder_Status_State Variable.
+        /// The identifier for the BrokerGroupType_DataSetWriterName_Placeholder_DataSetContentMask Variable.
         /// </summary>
-        public const uint AmqpGroupType_DataSetWriterName_Placeholder_Status_State = 15393;
+        public const uint BrokerGroupType_DataSetWriterName_Placeholder_DataSetContentMask = 15581;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetWriterName_Placeholder_DataSetContentMask Variable.
+        /// The identifier for the BrokerGroupType_RemoveDataSetWriter_InputArguments Variable.
         /// </summary>
-        public const uint AmqpGroupType_DataSetWriterName_Placeholder_DataSetContentMask = 15581;
+        public const uint BrokerGroupType_RemoveDataSetWriter_InputArguments = 15399;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_RemoveDataSetWriter_InputArguments Variable.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_Status_State Variable.
         /// </summary>
-        public const uint AmqpGroupType_RemoveDataSetWriter_InputArguments = 15399;
+        public const uint BrokerGroupType_DataSetReaderName_Placeholder_Status_State = 15402;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_Status_State Variable.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_SecurityMode Variable.
         /// </summary>
-        public const uint AmqpGroupType_DataSetReaderName_Placeholder_Status_State = 15402;
+        public const uint BrokerGroupType_DataSetReaderName_Placeholder_SecurityMode = 15954;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityGroupId Variable.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_SecurityGroupId Variable.
         /// </summary>
-        public const uint AmqpGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityGroupId = 15407;
+        public const uint BrokerGroupType_DataSetReaderName_Placeholder_SecurityGroupId = 15955;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityMode Variable.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_DataSetMetaData Variable.
         /// </summary>
-        public const uint AmqpGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityMode = 15408;
+        public const uint BrokerGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_DataSetMetaData = 15411;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_DataSetMetaData Variable.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_MessageReceiveTimeout Variable.
         /// </summary>
-        public const uint AmqpGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_DataSetMetaData = 15411;
+        public const uint BrokerGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_MessageReceiveTimeout = 15412;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_MessageReceiveTimeout Variable.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_SetConnectVariables_InputArguments Variable.
         /// </summary>
-        public const uint AmqpGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_MessageReceiveTimeout = 15412;
+        public const uint BrokerGroupType_DataSetReaderName_Placeholder_SetConnectVariables_InputArguments = 15897;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_SetConnectVariables_InputArguments Variable.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_SetConnectVariables_OutputArguments Variable.
         /// </summary>
-        public const uint AmqpGroupType_DataSetReaderName_Placeholder_SetConnectVariables_InputArguments = 15897;
+        public const uint BrokerGroupType_DataSetReaderName_Placeholder_SetConnectVariables_OutputArguments = 15898;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_SetConnectVariables_OutputArguments Variable.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_SetDataSetMirror_InputArguments Variable.
         /// </summary>
-        public const uint AmqpGroupType_DataSetReaderName_Placeholder_SetConnectVariables_OutputArguments = 15898;
+        public const uint BrokerGroupType_DataSetReaderName_Placeholder_SetDataSetMirror_InputArguments = 15900;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_SetDataSetMirror_InputArguments Variable.
+        /// The identifier for the BrokerGroupType_RemoveDataSetReader_InputArguments Variable.
         /// </summary>
-        public const uint AmqpGroupType_DataSetReaderName_Placeholder_SetDataSetMirror_InputArguments = 15900;
+        public const uint BrokerGroupType_RemoveDataSetReader_InputArguments = 15414;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_RemoveDataSetReader_InputArguments Variable.
+        /// The identifier for the BrokerGroupType_QueueName Variable.
         /// </summary>
-        public const uint AmqpGroupType_RemoveDataSetReader_InputArguments = 15414;
+        public const uint BrokerGroupType_QueueName = 15415;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_AmqpNodeName Variable.
+        /// The identifier for the BrokerGroupType_AddDataSetWriter_InputArguments Variable.
         /// </summary>
-        public const uint AmqpGroupType_AmqpNodeName = 15415;
+        public const uint BrokerGroupType_AddDataSetWriter_InputArguments = 15417;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_AddDataSetWriter_InputArguments Variable.
+        /// The identifier for the BrokerGroupType_AddDataSetWriter_OutputArguments Variable.
         /// </summary>
-        public const uint AmqpGroupType_AddDataSetWriter_InputArguments = 15417;
+        public const uint BrokerGroupType_AddDataSetWriter_OutputArguments = 15418;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_AddDataSetWriter_OutputArguments Variable.
+        /// The identifier for the BrokerGroupType_AddDataSetReader_InputArguments Variable.
         /// </summary>
-        public const uint AmqpGroupType_AddDataSetWriter_OutputArguments = 15418;
+        public const uint BrokerGroupType_AddDataSetReader_InputArguments = 15583;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_AddDataSetReader_InputArguments Variable.
+        /// The identifier for the BrokerGroupType_AddDataSetReader_OutputArguments Variable.
         /// </summary>
-        public const uint AmqpGroupType_AddDataSetReader_InputArguments = 15583;
+        public const uint BrokerGroupType_AddDataSetReader_OutputArguments = 15584;
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_AddDataSetReader_OutputArguments Variable.
+        /// The identifier for the BrokerGroupTypeAddReaderType_InputArguments Variable.
         /// </summary>
-        public const uint AmqpGroupType_AddDataSetReader_OutputArguments = 15584;
+        public const uint BrokerGroupTypeAddReaderType_InputArguments = 15586;
 
         /// <summary>
-        /// The identifier for the AmqpGroupTypeAddReaderType_InputArguments Variable.
+        /// The identifier for the BrokerGroupTypeAddReaderType_OutputArguments Variable.
         /// </summary>
-        public const uint AmqpGroupTypeAddReaderType_InputArguments = 15586;
+        public const uint BrokerGroupTypeAddReaderType_OutputArguments = 15587;
 
         /// <summary>
-        /// The identifier for the AmqpGroupTypeAddReaderType_OutputArguments Variable.
+        /// The identifier for the BrokerWriterTransportType_QueueName Variable.
         /// </summary>
-        public const uint AmqpGroupTypeAddReaderType_OutputArguments = 15587;
+        public const uint BrokerWriterTransportType_QueueName = 15419;
 
         /// <summary>
-        /// The identifier for the AmqpWriterTransportType_AmqpNodeName Variable.
+        /// The identifier for the BrokerWriterTransportType_MetaDataQueueName Variable.
         /// </summary>
-        public const uint AmqpWriterTransportType_AmqpNodeName = 15419;
+        public const uint BrokerWriterTransportType_MetaDataQueueName = 15420;
 
         /// <summary>
-        /// The identifier for the AmqpWriterTransportType_MetaDataAmqpNodeName Variable.
+        /// The identifier for the BrokerWriterTransportType_MetaDataUpdateTime Variable.
         /// </summary>
-        public const uint AmqpWriterTransportType_MetaDataAmqpNodeName = 15420;
+        public const uint BrokerWriterTransportType_MetaDataUpdateTime = 15046;
 
         /// <summary>
-        /// The identifier for the AmqpWriterTransportType_MetaDataUpdateTime Variable.
+        /// The identifier for the BrokerWriterTransportType_DataSetWriterId Variable.
         /// </summary>
-        public const uint AmqpWriterTransportType_MetaDataUpdateTime = 15046;
+        public const uint BrokerWriterTransportType_DataSetWriterId = 15047;
 
         /// <summary>
-        /// The identifier for the AmqpWriterTransportType_DataSetWriterId Variable.
+        /// The identifier for the BrokerWriterTransportType_MaxMessageSize Variable.
         /// </summary>
-        public const uint AmqpWriterTransportType_DataSetWriterId = 15047;
+        public const uint BrokerWriterTransportType_MaxMessageSize = 15048;
 
         /// <summary>
-        /// The identifier for the AmqpWriterTransportType_MaxMessageSize Variable.
+        /// The identifier for the BrokerReaderTransportType_QueueName Variable.
         /// </summary>
-        public const uint AmqpWriterTransportType_MaxMessageSize = 15048;
+        public const uint BrokerReaderTransportType_QueueName = 15421;
 
         /// <summary>
-        /// The identifier for the AmqpReaderTransportType_AmqpNodeName Variable.
+        /// The identifier for the BrokerReaderTransportType_MetaDataQueueName Variable.
         /// </summary>
-        public const uint AmqpReaderTransportType_AmqpNodeName = 15421;
+        public const uint BrokerReaderTransportType_MetaDataQueueName = 15422;
 
         /// <summary>
-        /// The identifier for the AmqpReaderTransportType_MetaDataAmqpNodeName Variable.
+        /// The identifier for the BrokerReaderTransportType_DataSetWriterId Variable.
         /// </summary>
-        public const uint AmqpReaderTransportType_MetaDataAmqpNodeName = 15422;
-
-        /// <summary>
-        /// The identifier for the AmqpReaderTransportType_DataSetWriterId Variable.
-        /// </summary>
-        public const uint AmqpReaderTransportType_DataSetWriterId = 15181;
+        public const uint BrokerReaderTransportType_DataSetWriterId = 15181;
 
         /// <summary>
         /// The identifier for the IdType_EnumStrings Variable.
@@ -17563,11 +17598,6 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_XmlSchema_PublishedVariableDataType Variable.
         /// </summary>
         public const uint OpcUa_XmlSchema_PublishedVariableDataType = 14320;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_SecurityKeyServiceDataType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_SecurityKeyServiceDataType = 15424;
 
         /// <summary>
         /// The identifier for the OpcUa_XmlSchema_DataConnectionDataType Variable.
@@ -17958,11 +17988,6 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_BinarySchema_PublishedVariableDataType Variable.
         /// </summary>
         public const uint OpcUa_BinarySchema_PublishedVariableDataType = 14324;
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_SecurityKeyServiceDataType Variable.
-        /// </summary>
-        public const uint OpcUa_BinarySchema_SecurityKeyServiceDataType = 15428;
 
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_DataConnectionDataType Variable.
@@ -18725,6 +18750,11 @@ namespace Opc.Ua
         public static readonly NodeId DataSetMetaDataType = new NodeId(Opc.Ua.DataTypes.DataSetMetaDataType);
 
         /// <summary>
+        /// The identifier for the DataSetFieldFlags DataType.
+        /// </summary>
+        public static readonly NodeId DataSetFieldFlags = new NodeId(Opc.Ua.DataTypes.DataSetFieldFlags);
+
+        /// <summary>
         /// The identifier for the FieldMetaData DataType.
         /// </summary>
         public static readonly NodeId FieldMetaData = new NodeId(Opc.Ua.DataTypes.FieldMetaData);
@@ -18750,19 +18780,14 @@ namespace Opc.Ua
         public static readonly NodeId KeyValuePair = new NodeId(Opc.Ua.DataTypes.KeyValuePair);
 
         /// <summary>
-        /// The identifier for the PublishedVariableDataType DataType.
-        /// </summary>
-        public static readonly NodeId PublishedVariableDataType = new NodeId(Opc.Ua.DataTypes.PublishedVariableDataType);
-
-        /// <summary>
-        /// The identifier for the SecurityKeyServiceDataType DataType.
-        /// </summary>
-        public static readonly NodeId SecurityKeyServiceDataType = new NodeId(Opc.Ua.DataTypes.SecurityKeyServiceDataType);
-
-        /// <summary>
         /// The identifier for the DataSetContentMask DataType.
         /// </summary>
         public static readonly NodeId DataSetContentMask = new NodeId(Opc.Ua.DataTypes.DataSetContentMask);
+
+        /// <summary>
+        /// The identifier for the PublishedVariableDataType DataType.
+        /// </summary>
+        public static readonly NodeId PublishedVariableDataType = new NodeId(Opc.Ua.DataTypes.PublishedVariableDataType);
 
         /// <summary>
         /// The identifier for the DataConnectionDataType DataType.
@@ -21250,74 +21275,24 @@ namespace Opc.Ua
         public static readonly NodeId RoleType_RemoveApplication = new NodeId(Opc.Ua.Methods.RoleType_RemoveApplication);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_AddUadpConnection Method.
+        /// The identifier for the PubSubKeyServiceType_GetSecurityKeys Method.
         /// </summary>
-        public static readonly NodeId PublishSubscribeType_AddUadpConnection = new NodeId(Opc.Ua.Methods.PublishSubscribeType_AddUadpConnection);
+        public static readonly NodeId PubSubKeyServiceType_GetSecurityKeys = new NodeId(Opc.Ua.Methods.PubSubKeyServiceType_GetSecurityKeys);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_AddAmqpConnection Method.
+        /// The identifier for the PubSubKeyServiceType_GetSecurityGroup Method.
         /// </summary>
-        public static readonly NodeId PublishSubscribeType_AddAmqpConnection = new NodeId(Opc.Ua.Methods.PublishSubscribeType_AddAmqpConnection);
+        public static readonly NodeId PubSubKeyServiceType_GetSecurityGroup = new NodeId(Opc.Ua.Methods.PubSubKeyServiceType_GetSecurityGroup);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_RemoveConnection Method.
+        /// The identifier for the PubSubKeyServiceType_SecurityGroups_AddSecurityGroup Method.
         /// </summary>
-        public static readonly NodeId PublishSubscribeType_RemoveConnection = new NodeId(Opc.Ua.Methods.PublishSubscribeType_RemoveConnection);
+        public static readonly NodeId PubSubKeyServiceType_SecurityGroups_AddSecurityGroup = new NodeId(Opc.Ua.Methods.PubSubKeyServiceType_SecurityGroups_AddSecurityGroup);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_GetSecurityKeys Method.
+        /// The identifier for the PubSubKeyServiceType_SecurityGroups_RemoveSecurityGroup Method.
         /// </summary>
-        public static readonly NodeId PublishSubscribeType_GetSecurityKeys = new NodeId(Opc.Ua.Methods.PublishSubscribeType_GetSecurityKeys);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_GetSecurityGroup Method.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_GetSecurityGroup = new NodeId(Opc.Ua.Methods.PublishSubscribeType_GetSecurityGroup);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_SecurityGroups_AddSecurityGroup Method.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_SecurityGroups_AddSecurityGroup = new NodeId(Opc.Ua.Methods.PublishSubscribeType_SecurityGroups_AddSecurityGroup);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_SecurityGroups_RemoveSecurityGroup Method.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_SecurityGroups_RemoveSecurityGroup = new NodeId(Opc.Ua.Methods.PublishSubscribeType_SecurityGroups_RemoveSecurityGroup);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_AddUadpConnection Method.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_AddUadpConnection = new NodeId(Opc.Ua.Methods.PublishSubscribe_AddUadpConnection);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_AddAmqpConnection Method.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_AddAmqpConnection = new NodeId(Opc.Ua.Methods.PublishSubscribe_AddAmqpConnection);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_RemoveConnection Method.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_RemoveConnection = new NodeId(Opc.Ua.Methods.PublishSubscribe_RemoveConnection);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityKeys Method.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_GetSecurityKeys = new NodeId(Opc.Ua.Methods.PublishSubscribe_GetSecurityKeys);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityGroup Method.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_GetSecurityGroup = new NodeId(Opc.Ua.Methods.PublishSubscribe_GetSecurityGroup);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup Method.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_SecurityGroups_AddSecurityGroup = new NodeId(Opc.Ua.Methods.PublishSubscribe_SecurityGroups_AddSecurityGroup);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups_RemoveSecurityGroup Method.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_SecurityGroups_RemoveSecurityGroup = new NodeId(Opc.Ua.Methods.PublishSubscribe_SecurityGroups_RemoveSecurityGroup);
+        public static readonly NodeId PubSubKeyServiceType_SecurityGroups_RemoveSecurityGroup = new NodeId(Opc.Ua.Methods.PubSubKeyServiceType_SecurityGroups_RemoveSecurityGroup);
 
         /// <summary>
         /// The identifier for the SecurityGroupFolderType_SecurityGroupFolderName_Placeholder_AddSecurityGroup Method.
@@ -21340,44 +21315,64 @@ namespace Opc.Ua
         public static readonly NodeId SecurityGroupFolderType_RemoveSecurityGroup = new NodeId(Opc.Ua.Methods.SecurityGroupFolderType_RemoveSecurityGroup);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems Method.
+        /// The identifier for the PublishSubscribeType_SecurityGroups_AddSecurityGroup Method.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems = new NodeId(Opc.Ua.Methods.DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems);
+        public static readonly NodeId PublishSubscribeType_SecurityGroups_AddSecurityGroup = new NodeId(Opc.Ua.Methods.PublishSubscribeType_SecurityGroups_AddSecurityGroup);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents Method.
+        /// The identifier for the PublishSubscribeType_SecurityGroups_RemoveSecurityGroup Method.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents = new NodeId(Opc.Ua.Methods.DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents);
+        public static readonly NodeId PublishSubscribeType_SecurityGroups_RemoveSecurityGroup = new NodeId(Opc.Ua.Methods.PublishSubscribeType_SecurityGroups_RemoveSecurityGroup);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_RemovePublishedDataSet Method.
+        /// The identifier for the PublishSubscribeType_AddUadpConnection Method.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_DataSetFolderName_Placeholder_RemovePublishedDataSet = new NodeId(Opc.Ua.Methods.DataSetFolderType_DataSetFolderName_Placeholder_RemovePublishedDataSet);
+        public static readonly NodeId PublishSubscribeType_AddUadpConnection = new NodeId(Opc.Ua.Methods.PublishSubscribeType_AddUadpConnection);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField Method.
+        /// The identifier for the PublishSubscribeType_AddBrokerConnection Method.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField = new NodeId(Opc.Ua.Methods.DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField);
+        public static readonly NodeId PublishSubscribeType_AddBrokerConnection = new NodeId(Opc.Ua.Methods.PublishSubscribeType_AddBrokerConnection);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_RemoveExtensionField Method.
+        /// The identifier for the PublishSubscribeType_RemoveConnection Method.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_RemoveExtensionField = new NodeId(Opc.Ua.Methods.DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_RemoveExtensionField);
+        public static readonly NodeId PublishSubscribeType_RemoveConnection = new NodeId(Opc.Ua.Methods.PublishSubscribeType_RemoveConnection);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_AddPublishedDataItems Method.
+        /// The identifier for the PublishSubscribe_GetSecurityKeys Method.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_AddPublishedDataItems = new NodeId(Opc.Ua.Methods.DataSetFolderType_AddPublishedDataItems);
+        public static readonly NodeId PublishSubscribe_GetSecurityKeys = new NodeId(Opc.Ua.Methods.PublishSubscribe_GetSecurityKeys);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_AddPublishedEvents Method.
+        /// The identifier for the PublishSubscribe_GetSecurityGroup Method.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_AddPublishedEvents = new NodeId(Opc.Ua.Methods.DataSetFolderType_AddPublishedEvents);
+        public static readonly NodeId PublishSubscribe_GetSecurityGroup = new NodeId(Opc.Ua.Methods.PublishSubscribe_GetSecurityGroup);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_RemovePublishedDataSet Method.
+        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup Method.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_RemovePublishedDataSet = new NodeId(Opc.Ua.Methods.DataSetFolderType_RemovePublishedDataSet);
+        public static readonly NodeId PublishSubscribe_SecurityGroups_AddSecurityGroup = new NodeId(Opc.Ua.Methods.PublishSubscribe_SecurityGroups_AddSecurityGroup);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SecurityGroups_RemoveSecurityGroup Method.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_SecurityGroups_RemoveSecurityGroup = new NodeId(Opc.Ua.Methods.PublishSubscribe_SecurityGroups_RemoveSecurityGroup);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_AddUadpConnection Method.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_AddUadpConnection = new NodeId(Opc.Ua.Methods.PublishSubscribe_AddUadpConnection);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_AddBrokerConnection Method.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_AddBrokerConnection = new NodeId(Opc.Ua.Methods.PublishSubscribe_AddBrokerConnection);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_RemoveConnection Method.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_RemoveConnection = new NodeId(Opc.Ua.Methods.PublishSubscribe_RemoveConnection);
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_ExtensionFields_AddExtensionField Method.
@@ -21445,6 +21440,46 @@ namespace Opc.Ua
         public static readonly NodeId DataSetClassType_ExtensionFields_RemoveExtensionField = new NodeId(Opc.Ua.Methods.DataSetClassType_ExtensionFields_RemoveExtensionField);
 
         /// <summary>
+        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems Method.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems = new NodeId(Opc.Ua.Methods.DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents Method.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents = new NodeId(Opc.Ua.Methods.DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_RemovePublishedDataSet Method.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_DataSetFolderName_Placeholder_RemovePublishedDataSet = new NodeId(Opc.Ua.Methods.DataSetFolderType_DataSetFolderName_Placeholder_RemovePublishedDataSet);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField Method.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField = new NodeId(Opc.Ua.Methods.DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_RemoveExtensionField Method.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_RemoveExtensionField = new NodeId(Opc.Ua.Methods.DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_RemoveExtensionField);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_AddPublishedDataItems Method.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_AddPublishedDataItems = new NodeId(Opc.Ua.Methods.DataSetFolderType_AddPublishedDataItems);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_AddPublishedEvents Method.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_AddPublishedEvents = new NodeId(Opc.Ua.Methods.DataSetFolderType_AddPublishedEvents);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_RemovePublishedDataSet Method.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_RemovePublishedDataSet = new NodeId(Opc.Ua.Methods.DataSetFolderType_RemovePublishedDataSet);
+
+        /// <summary>
         /// The identifier for the PubSubConnectionType_RemoveGroup Method.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_RemoveGroup = new NodeId(Opc.Ua.Methods.PubSubConnectionType_RemoveGroup);
@@ -21505,24 +21540,24 @@ namespace Opc.Ua
         public static readonly NodeId UadpGroupType_AddDataSetReader = new NodeId(Opc.Ua.Methods.UadpGroupType_AddDataSetReader);
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_AddGroup Method.
+        /// The identifier for the BrokerConnectionType_AddGroup Method.
         /// </summary>
-        public static readonly NodeId AmqpConnectionType_AddGroup = new NodeId(Opc.Ua.Methods.AmqpConnectionType_AddGroup);
+        public static readonly NodeId BrokerConnectionType_AddGroup = new NodeId(Opc.Ua.Methods.BrokerConnectionType_AddGroup);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_AddDataSetWriter Method.
+        /// The identifier for the BrokerGroupType_AddDataSetWriter Method.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_AddDataSetWriter = new NodeId(Opc.Ua.Methods.AmqpGroupType_AddDataSetWriter);
+        public static readonly NodeId BrokerGroupType_AddDataSetWriter = new NodeId(Opc.Ua.Methods.BrokerGroupType_AddDataSetWriter);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_AddDataSetReader Method.
+        /// The identifier for the BrokerGroupType_AddDataSetReader Method.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_AddDataSetReader = new NodeId(Opc.Ua.Methods.AmqpGroupType_AddDataSetReader);
+        public static readonly NodeId BrokerGroupType_AddDataSetReader = new NodeId(Opc.Ua.Methods.BrokerGroupType_AddDataSetReader);
 
         /// <summary>
-        /// The identifier for the AmqpGroupTypeAddReaderType Method.
+        /// The identifier for the BrokerGroupTypeAddReaderType Method.
         /// </summary>
-        public static readonly NodeId AmqpGroupTypeAddReaderType = new NodeId(Opc.Ua.Methods.AmqpGroupTypeAddReaderType);
+        public static readonly NodeId BrokerGroupTypeAddReaderType = new NodeId(Opc.Ua.Methods.BrokerGroupTypeAddReaderType);
     }
     #endregion
 
@@ -22465,6 +22500,21 @@ namespace Opc.Ua
         public static readonly NodeId ConfigureAdmin = new NodeId(Opc.Ua.Objects.ConfigureAdmin);
 
         /// <summary>
+        /// The identifier for the PubSubKeyServiceType_SecurityGroups Object.
+        /// </summary>
+        public static readonly NodeId PubSubKeyServiceType_SecurityGroups = new NodeId(Opc.Ua.Objects.PubSubKeyServiceType_SecurityGroups);
+
+        /// <summary>
+        /// The identifier for the SecurityGroupFolderType_SecurityGroupFolderName_Placeholder Object.
+        /// </summary>
+        public static readonly NodeId SecurityGroupFolderType_SecurityGroupFolderName_Placeholder = new NodeId(Opc.Ua.Objects.SecurityGroupFolderType_SecurityGroupFolderName_Placeholder);
+
+        /// <summary>
+        /// The identifier for the SecurityGroupFolderType_SecurityGroupName_Placeholder Object.
+        /// </summary>
+        public static readonly NodeId SecurityGroupFolderType_SecurityGroupName_Placeholder = new NodeId(Opc.Ua.Objects.SecurityGroupFolderType_SecurityGroupName_Placeholder);
+
+        /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder Object.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder = new NodeId(Opc.Ua.Objects.PublishSubscribeType_ConnectionName_Placeholder);
@@ -22473,11 +22523,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Status Object.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Status = new NodeId(Opc.Ua.Objects.PublishSubscribeType_ConnectionName_Placeholder_Status);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_SecurityGroups Object.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_SecurityGroups = new NodeId(Opc.Ua.Objects.PublishSubscribeType_SecurityGroups);
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_PublishedDataSets Object.
@@ -22495,14 +22540,14 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribe = new NodeId(Opc.Ua.Objects.PublishSubscribe);
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Status Object.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Status = new NodeId(Opc.Ua.Objects.PublishSubscribe_ConnectionName_Placeholder_Status);
-
-        /// <summary>
         /// The identifier for the PublishSubscribe_SecurityGroups Object.
         /// </summary>
         public static readonly NodeId PublishSubscribe_SecurityGroups = new NodeId(Opc.Ua.Objects.PublishSubscribe_SecurityGroups);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Status Object.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Status = new NodeId(Opc.Ua.Objects.PublishSubscribe_ConnectionName_Placeholder_Status);
 
         /// <summary>
         /// The identifier for the PublishSubscribe_PublishedDataSets Object.
@@ -22513,26 +22558,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_Status Object.
         /// </summary>
         public static readonly NodeId PublishSubscribe_Status = new NodeId(Opc.Ua.Objects.PublishSubscribe_Status);
-
-        /// <summary>
-        /// The identifier for the SecurityGroupFolderType_SecurityGroupFolderName_Placeholder Object.
-        /// </summary>
-        public static readonly NodeId SecurityGroupFolderType_SecurityGroupFolderName_Placeholder = new NodeId(Opc.Ua.Objects.SecurityGroupFolderType_SecurityGroupFolderName_Placeholder);
-
-        /// <summary>
-        /// The identifier for the SecurityGroupFolderType_SecurityGroupName_Placeholder Object.
-        /// </summary>
-        public static readonly NodeId SecurityGroupFolderType_SecurityGroupName_Placeholder = new NodeId(Opc.Ua.Objects.SecurityGroupFolderType_SecurityGroupName_Placeholder);
-
-        /// <summary>
-        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder Object.
-        /// </summary>
-        public static readonly NodeId DataSetFolderType_DataSetFolderName_Placeholder = new NodeId(Opc.Ua.Objects.DataSetFolderType_DataSetFolderName_Placeholder);
-
-        /// <summary>
-        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder Object.
-        /// </summary>
-        public static readonly NodeId DataSetFolderType_PublishedDataSetName_Placeholder = new NodeId(Opc.Ua.Objects.DataSetFolderType_PublishedDataSetName_Placeholder);
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder Object.
@@ -22585,6 +22610,16 @@ namespace Opc.Ua
         public static readonly NodeId DataSetClassType_DataSetWriterName_Placeholder_TransportSettings = new NodeId(Opc.Ua.Objects.DataSetClassType_DataSetWriterName_Placeholder_TransportSettings);
 
         /// <summary>
+        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder Object.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_DataSetFolderName_Placeholder = new NodeId(Opc.Ua.Objects.DataSetFolderType_DataSetFolderName_Placeholder);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder Object.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_PublishedDataSetName_Placeholder = new NodeId(Opc.Ua.Objects.DataSetFolderType_PublishedDataSetName_Placeholder);
+
+        /// <summary>
         /// The identifier for the PubSubConnectionType_GroupName_Placeholder Object.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_GroupName_Placeholder = new NodeId(Opc.Ua.Objects.PubSubConnectionType_GroupName_Placeholder);
@@ -22603,11 +22638,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubGroupType_Status Object.
         /// </summary>
         public static readonly NodeId PubSubGroupType_Status = new NodeId(Opc.Ua.Objects.PubSubGroupType_Status);
-
-        /// <summary>
-        /// The identifier for the PubSubGroupType_MessageSecurity Object.
-        /// </summary>
-        public static readonly NodeId PubSubGroupType_MessageSecurity = new NodeId(Opc.Ua.Objects.PubSubGroupType_MessageSecurity);
 
         /// <summary>
         /// The identifier for the PubSubGroupType_DataSetWriterName_Placeholder Object.
@@ -22665,11 +22695,6 @@ namespace Opc.Ua
         public static readonly NodeId DataSetReaderType_TransportSettings = new NodeId(Opc.Ua.Objects.DataSetReaderType_TransportSettings);
 
         /// <summary>
-        /// The identifier for the DataSetReaderType_MessageSecurity Object.
-        /// </summary>
-        public static readonly NodeId DataSetReaderType_MessageSecurity = new NodeId(Opc.Ua.Objects.DataSetReaderType_MessageSecurity);
-
-        /// <summary>
         /// The identifier for the DataSetReaderType_SubscribedDataSet Object.
         /// </summary>
         public static readonly NodeId DataSetReaderType_SubscribedDataSet = new NodeId(Opc.Ua.Objects.DataSetReaderType_SubscribedDataSet);
@@ -22705,34 +22730,34 @@ namespace Opc.Ua
         public static readonly NodeId UadpGroupType_DataSetReaderName_Placeholder_SubscribedDataSet = new NodeId(Opc.Ua.Objects.UadpGroupType_DataSetReaderName_Placeholder_SubscribedDataSet);
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_GroupName_Placeholder_Status Object.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_Status Object.
         /// </summary>
-        public static readonly NodeId AmqpConnectionType_GroupName_Placeholder_Status = new NodeId(Opc.Ua.Objects.AmqpConnectionType_GroupName_Placeholder_Status);
+        public static readonly NodeId BrokerConnectionType_GroupName_Placeholder_Status = new NodeId(Opc.Ua.Objects.BrokerConnectionType_GroupName_Placeholder_Status);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetWriterName_Placeholder_Status Object.
+        /// The identifier for the BrokerGroupType_DataSetWriterName_Placeholder_Status Object.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_DataSetWriterName_Placeholder_Status = new NodeId(Opc.Ua.Objects.AmqpGroupType_DataSetWriterName_Placeholder_Status);
+        public static readonly NodeId BrokerGroupType_DataSetWriterName_Placeholder_Status = new NodeId(Opc.Ua.Objects.BrokerGroupType_DataSetWriterName_Placeholder_Status);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetWriterName_Placeholder_TransportSettings Object.
+        /// The identifier for the BrokerGroupType_DataSetWriterName_Placeholder_TransportSettings Object.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_DataSetWriterName_Placeholder_TransportSettings = new NodeId(Opc.Ua.Objects.AmqpGroupType_DataSetWriterName_Placeholder_TransportSettings);
+        public static readonly NodeId BrokerGroupType_DataSetWriterName_Placeholder_TransportSettings = new NodeId(Opc.Ua.Objects.BrokerGroupType_DataSetWriterName_Placeholder_TransportSettings);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_Status Object.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_Status Object.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_DataSetReaderName_Placeholder_Status = new NodeId(Opc.Ua.Objects.AmqpGroupType_DataSetReaderName_Placeholder_Status);
+        public static readonly NodeId BrokerGroupType_DataSetReaderName_Placeholder_Status = new NodeId(Opc.Ua.Objects.BrokerGroupType_DataSetReaderName_Placeholder_Status);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_TransportSettings Object.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_TransportSettings Object.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_DataSetReaderName_Placeholder_TransportSettings = new NodeId(Opc.Ua.Objects.AmqpGroupType_DataSetReaderName_Placeholder_TransportSettings);
+        public static readonly NodeId BrokerGroupType_DataSetReaderName_Placeholder_TransportSettings = new NodeId(Opc.Ua.Objects.BrokerGroupType_DataSetReaderName_Placeholder_TransportSettings);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_SubscribedDataSet Object.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_SubscribedDataSet Object.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_DataSetReaderName_Placeholder_SubscribedDataSet = new NodeId(Opc.Ua.Objects.AmqpGroupType_DataSetReaderName_Placeholder_SubscribedDataSet);
+        public static readonly NodeId BrokerGroupType_DataSetReaderName_Placeholder_SubscribedDataSet = new NodeId(Opc.Ua.Objects.BrokerGroupType_DataSetReaderName_Placeholder_SubscribedDataSet);
 
         /// <summary>
         /// The identifier for the TrustListDataType_Encoding_DefaultXml Object.
@@ -22808,11 +22833,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedVariableDataType_Encoding_DefaultXml Object.
         /// </summary>
         public static readonly NodeId PublishedVariableDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.PublishedVariableDataType_Encoding_DefaultXml);
-
-        /// <summary>
-        /// The identifier for the SecurityKeyServiceDataType_Encoding_DefaultXml Object.
-        /// </summary>
-        public static readonly NodeId SecurityKeyServiceDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.SecurityKeyServiceDataType_Encoding_DefaultXml);
 
         /// <summary>
         /// The identifier for the DataConnectionDataType_Encoding_DefaultXml Object.
@@ -23998,11 +24018,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedVariableDataType_Encoding_DefaultBinary Object.
         /// </summary>
         public static readonly NodeId PublishedVariableDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.PublishedVariableDataType_Encoding_DefaultBinary);
-
-        /// <summary>
-        /// The identifier for the SecurityKeyServiceDataType_Encoding_DefaultBinary Object.
-        /// </summary>
-        public static readonly NodeId SecurityKeyServiceDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SecurityKeyServiceDataType_Encoding_DefaultBinary);
 
         /// <summary>
         /// The identifier for the DataConnectionDataType_Encoding_DefaultBinary Object.
@@ -25750,9 +25765,9 @@ namespace Opc.Ua
         public static readonly NodeId RoleType = new NodeId(Opc.Ua.ObjectTypes.RoleType);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType ObjectType.
+        /// The identifier for the PubSubKeyServiceType ObjectType.
         /// </summary>
-        public static readonly NodeId PublishSubscribeType = new NodeId(Opc.Ua.ObjectTypes.PublishSubscribeType);
+        public static readonly NodeId PubSubKeyServiceType = new NodeId(Opc.Ua.ObjectTypes.PubSubKeyServiceType);
 
         /// <summary>
         /// The identifier for the SecurityGroupFolderType ObjectType.
@@ -25765,9 +25780,9 @@ namespace Opc.Ua
         public static readonly NodeId SecurityGroupType = new NodeId(Opc.Ua.ObjectTypes.SecurityGroupType);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType ObjectType.
+        /// The identifier for the PublishSubscribeType ObjectType.
         /// </summary>
-        public static readonly NodeId DataSetFolderType = new NodeId(Opc.Ua.ObjectTypes.DataSetFolderType);
+        public static readonly NodeId PublishSubscribeType = new NodeId(Opc.Ua.ObjectTypes.PublishSubscribeType);
 
         /// <summary>
         /// The identifier for the PublishedDataSetType ObjectType.
@@ -25795,6 +25810,11 @@ namespace Opc.Ua
         public static readonly NodeId DataSetClassType = new NodeId(Opc.Ua.ObjectTypes.DataSetClassType);
 
         /// <summary>
+        /// The identifier for the DataSetFolderType ObjectType.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType = new NodeId(Opc.Ua.ObjectTypes.DataSetFolderType);
+
+        /// <summary>
         /// The identifier for the PubSubConnectionType ObjectType.
         /// </summary>
         public static readonly NodeId PubSubConnectionType = new NodeId(Opc.Ua.ObjectTypes.PubSubConnectionType);
@@ -25803,11 +25823,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubGroupType ObjectType.
         /// </summary>
         public static readonly NodeId PubSubGroupType = new NodeId(Opc.Ua.ObjectTypes.PubSubGroupType);
-
-        /// <summary>
-        /// The identifier for the PubSubMessageSecurityType ObjectType.
-        /// </summary>
-        public static readonly NodeId PubSubMessageSecurityType = new NodeId(Opc.Ua.ObjectTypes.PubSubMessageSecurityType);
 
         /// <summary>
         /// The identifier for the DataSetWriterType ObjectType.
@@ -25885,24 +25900,24 @@ namespace Opc.Ua
         public static readonly NodeId UadpReaderTransportType = new NodeId(Opc.Ua.ObjectTypes.UadpReaderTransportType);
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType ObjectType.
+        /// The identifier for the BrokerConnectionType ObjectType.
         /// </summary>
-        public static readonly NodeId AmqpConnectionType = new NodeId(Opc.Ua.ObjectTypes.AmqpConnectionType);
+        public static readonly NodeId BrokerConnectionType = new NodeId(Opc.Ua.ObjectTypes.BrokerConnectionType);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType ObjectType.
+        /// The identifier for the BrokerGroupType ObjectType.
         /// </summary>
-        public static readonly NodeId AmqpGroupType = new NodeId(Opc.Ua.ObjectTypes.AmqpGroupType);
+        public static readonly NodeId BrokerGroupType = new NodeId(Opc.Ua.ObjectTypes.BrokerGroupType);
 
         /// <summary>
-        /// The identifier for the AmqpWriterTransportType ObjectType.
+        /// The identifier for the BrokerWriterTransportType ObjectType.
         /// </summary>
-        public static readonly NodeId AmqpWriterTransportType = new NodeId(Opc.Ua.ObjectTypes.AmqpWriterTransportType);
+        public static readonly NodeId BrokerWriterTransportType = new NodeId(Opc.Ua.ObjectTypes.BrokerWriterTransportType);
 
         /// <summary>
-        /// The identifier for the AmqpReaderTransportType ObjectType.
+        /// The identifier for the BrokerReaderTransportType ObjectType.
         /// </summary>
-        public static readonly NodeId AmqpReaderTransportType = new NodeId(Opc.Ua.ObjectTypes.AmqpReaderTransportType);
+        public static readonly NodeId BrokerReaderTransportType = new NodeId(Opc.Ua.ObjectTypes.BrokerReaderTransportType);
     }
     #endregion
 
@@ -34525,224 +34540,49 @@ namespace Opc.Ua
         public static readonly NodeId ConfigureAdmin_RemoveApplication_InputArguments = new NodeId(Opc.Ua.Variables.ConfigureAdmin_RemoveApplication_InputArguments);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_PublisherId Variable.
+        /// The identifier for the DataSetFieldFlags_EnumValues Variable.
         /// </summary>
-        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_PublisherId = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_PublisherId);
+        public static readonly NodeId DataSetFieldFlags_EnumValues = new NodeId(Opc.Ua.Variables.DataSetFieldFlags_EnumValues);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Status_State Variable.
+        /// The identifier for the DataSetContentMask_EnumValues Variable.
         /// </summary>
-        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Status_State = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Status_State);
+        public static readonly NodeId DataSetContentMask_EnumValues = new NodeId(Opc.Ua.Variables.DataSetContentMask_EnumValues);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Address Variable.
+        /// The identifier for the PubSubKeyServiceType_GetSecurityKeys_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Address = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Address);
+        public static readonly NodeId PubSubKeyServiceType_GetSecurityKeys_InputArguments = new NodeId(Opc.Ua.Variables.PubSubKeyServiceType_GetSecurityKeys_InputArguments);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_RemoveGroup_InputArguments Variable.
+        /// The identifier for the PubSubKeyServiceType_GetSecurityKeys_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_RemoveGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_RemoveGroup_InputArguments);
+        public static readonly NodeId PubSubKeyServiceType_GetSecurityKeys_OutputArguments = new NodeId(Opc.Ua.Variables.PubSubKeyServiceType_GetSecurityKeys_OutputArguments);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_AddUadpConnection_InputArguments Variable.
+        /// The identifier for the PubSubKeyServiceType_GetSecurityGroup_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId PublishSubscribeType_AddUadpConnection_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_AddUadpConnection_InputArguments);
+        public static readonly NodeId PubSubKeyServiceType_GetSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.PubSubKeyServiceType_GetSecurityGroup_InputArguments);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_AddUadpConnection_OutputArguments Variable.
+        /// The identifier for the PubSubKeyServiceType_GetSecurityGroup_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId PublishSubscribeType_AddUadpConnection_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_AddUadpConnection_OutputArguments);
+        public static readonly NodeId PubSubKeyServiceType_GetSecurityGroup_OutputArguments = new NodeId(Opc.Ua.Variables.PubSubKeyServiceType_GetSecurityGroup_OutputArguments);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_AddAmqpConnection_InputArguments Variable.
+        /// The identifier for the PubSubKeyServiceType_SecurityGroups_AddSecurityGroup_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId PublishSubscribeType_AddAmqpConnection_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_AddAmqpConnection_InputArguments);
+        public static readonly NodeId PubSubKeyServiceType_SecurityGroups_AddSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.PubSubKeyServiceType_SecurityGroups_AddSecurityGroup_InputArguments);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_AddAmqpConnection_OutputArguments Variable.
+        /// The identifier for the PubSubKeyServiceType_SecurityGroups_AddSecurityGroup_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId PublishSubscribeType_AddAmqpConnection_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_AddAmqpConnection_OutputArguments);
+        public static readonly NodeId PubSubKeyServiceType_SecurityGroups_AddSecurityGroup_OutputArguments = new NodeId(Opc.Ua.Variables.PubSubKeyServiceType_SecurityGroups_AddSecurityGroup_OutputArguments);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_RemoveConnection_InputArguments Variable.
+        /// The identifier for the PubSubKeyServiceType_SecurityGroups_RemoveSecurityGroup_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId PublishSubscribeType_RemoveConnection_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_RemoveConnection_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_GetSecurityKeys_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_GetSecurityKeys_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_GetSecurityKeys_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_GetSecurityKeys_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_GetSecurityKeys_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_GetSecurityKeys_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_GetSecurityGroup_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_GetSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_GetSecurityGroup_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_GetSecurityGroup_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_GetSecurityGroup_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_GetSecurityGroup_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_SecurityGroups_AddSecurityGroup_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_SecurityGroups_AddSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_SecurityGroups_AddSecurityGroup_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_SecurityGroups_AddSecurityGroup_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_SecurityGroups_AddSecurityGroup_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_SecurityGroups_AddSecurityGroup_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_SecurityGroups_RemoveSecurityGroup_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_SecurityGroups_RemoveSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_SecurityGroups_RemoveSecurityGroup_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_PublishedDataSets_AddPublishedDataItems_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_PublishedDataSets_AddPublishedDataItems_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_PublishedDataSets_AddPublishedDataItems_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_PublishedDataSets_AddPublishedDataItems_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_PublishedDataSets_AddPublishedDataItems_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_PublishedDataSets_AddPublishedDataItems_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_PublishedDataSets_AddPublishedEvents_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_PublishedDataSets_AddPublishedEvents_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_PublishedDataSets_AddPublishedEvents_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_PublishedDataSets_AddPublishedEvents_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_PublishedDataSets_AddPublishedEvents_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_PublishedDataSets_AddPublishedEvents_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_PublishedDataSets_RemovePublishedDataSet_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_PublishedDataSets_RemovePublishedDataSet_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_PublishedDataSets_RemovePublishedDataSet_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_Status_State Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_Status_State = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Status_State);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_PublisherId Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_PublisherId = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_PublisherId);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Status_State Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Status_State = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Status_State);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Address Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Address = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Address);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_RemoveGroup_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_RemoveGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_RemoveGroup_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_AddUadpConnection_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_AddUadpConnection_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_AddUadpConnection_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_AddUadpConnection_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_AddUadpConnection_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_AddUadpConnection_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_AddAmqpConnection_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_AddAmqpConnection_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_AddAmqpConnection_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_AddAmqpConnection_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_AddAmqpConnection_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_AddAmqpConnection_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_RemoveConnection_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_RemoveConnection_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_RemoveConnection_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityKeys_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_GetSecurityKeys_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_GetSecurityKeys_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityKeys_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_GetSecurityKeys_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_GetSecurityKeys_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityGroup_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_GetSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_GetSecurityGroup_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityGroup_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_GetSecurityGroup_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_GetSecurityGroup_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_SecurityGroups_AddSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_SecurityGroups_AddSecurityGroup_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_SecurityGroups_AddSecurityGroup_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_SecurityGroups_AddSecurityGroup_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups_RemoveSecurityGroup_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_SecurityGroups_RemoveSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_SecurityGroups_RemoveSecurityGroup_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedDataItems_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_PublishedDataSets_AddPublishedDataItems_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_AddPublishedDataItems_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedDataItems_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_PublishedDataSets_AddPublishedDataItems_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_AddPublishedDataItems_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedEvents_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_PublishedDataSets_AddPublishedEvents_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_AddPublishedEvents_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedEvents_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_PublishedDataSets_AddPublishedEvents_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_AddPublishedEvents_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_PublishedDataSets_RemovePublishedDataSet_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_PublishedDataSets_RemovePublishedDataSet_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_RemovePublishedDataSet_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_Status_State Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_Status_State = new NodeId(Opc.Ua.Variables.PublishSubscribe_Status_State);
+        public static readonly NodeId PubSubKeyServiceType_SecurityGroups_RemoveSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.PubSubKeyServiceType_SecurityGroups_RemoveSecurityGroup_InputArguments);
 
         /// <summary>
         /// The identifier for the SecurityGroupFolderType_SecurityGroupFolderName_Placeholder_AddSecurityGroup_InputArguments Variable.
@@ -34785,79 +34625,234 @@ namespace Opc.Ua
         public static readonly NodeId SecurityGroupType_SecurityGroupId = new NodeId(Opc.Ua.Variables.SecurityGroupType_SecurityGroupId);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems_InputArguments Variable.
+        /// The identifier for the PublishSubscribeType_GetSecurityKeys_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems_InputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems_InputArguments);
+        public static readonly NodeId PublishSubscribeType_GetSecurityKeys_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_GetSecurityKeys_InputArguments);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems_OutputArguments Variable.
+        /// The identifier for the PublishSubscribeType_GetSecurityKeys_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems_OutputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems_OutputArguments);
+        public static readonly NodeId PublishSubscribeType_GetSecurityKeys_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_GetSecurityKeys_OutputArguments);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents_InputArguments Variable.
+        /// The identifier for the PublishSubscribeType_GetSecurityGroup_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents_InputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents_InputArguments);
+        public static readonly NodeId PublishSubscribeType_GetSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_GetSecurityGroup_InputArguments);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents_OutputArguments Variable.
+        /// The identifier for the PublishSubscribeType_GetSecurityGroup_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents_OutputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents_OutputArguments);
+        public static readonly NodeId PublishSubscribeType_GetSecurityGroup_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_GetSecurityGroup_OutputArguments);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_RemovePublishedDataSet_InputArguments Variable.
+        /// The identifier for the PublishSubscribeType_SecurityGroups_AddSecurityGroup_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_DataSetFolderName_Placeholder_RemovePublishedDataSet_InputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_DataSetFolderName_Placeholder_RemovePublishedDataSet_InputArguments);
+        public static readonly NodeId PublishSubscribeType_SecurityGroups_AddSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_SecurityGroups_AddSecurityGroup_InputArguments);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ConfigurationVersion Variable.
+        /// The identifier for the PublishSubscribeType_SecurityGroups_AddSecurityGroup_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_PublishedDataSetName_Placeholder_ConfigurationVersion = new NodeId(Opc.Ua.Variables.DataSetFolderType_PublishedDataSetName_Placeholder_ConfigurationVersion);
+        public static readonly NodeId PublishSubscribeType_SecurityGroups_AddSecurityGroup_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_SecurityGroups_AddSecurityGroup_OutputArguments);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_DataSetMetaData Variable.
+        /// The identifier for the PublishSubscribeType_SecurityGroups_RemoveSecurityGroup_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_PublishedDataSetName_Placeholder_DataSetMetaData = new NodeId(Opc.Ua.Variables.DataSetFolderType_PublishedDataSetName_Placeholder_DataSetMetaData);
+        public static readonly NodeId PublishSubscribeType_SecurityGroups_RemoveSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_SecurityGroups_RemoveSecurityGroup_InputArguments);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField_InputArguments Variable.
+        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_PublisherId Variable.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField_InputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField_InputArguments);
+        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_PublisherId = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_PublisherId);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField_OutputArguments Variable.
+        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Address Variable.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField_OutputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField_OutputArguments);
+        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Address = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Address);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_RemoveExtensionField_InputArguments Variable.
+        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Status_State Variable.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_RemoveExtensionField_InputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_RemoveExtensionField_InputArguments);
+        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Status_State = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Status_State);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_AddPublishedDataItems_InputArguments Variable.
+        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_RemoveGroup_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_AddPublishedDataItems_InputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_AddPublishedDataItems_InputArguments);
+        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_RemoveGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_RemoveGroup_InputArguments);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_AddPublishedDataItems_OutputArguments Variable.
+        /// The identifier for the PublishSubscribeType_AddUadpConnection_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_AddPublishedDataItems_OutputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_AddPublishedDataItems_OutputArguments);
+        public static readonly NodeId PublishSubscribeType_AddUadpConnection_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_AddUadpConnection_InputArguments);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_AddPublishedEvents_InputArguments Variable.
+        /// The identifier for the PublishSubscribeType_AddUadpConnection_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_AddPublishedEvents_InputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_AddPublishedEvents_InputArguments);
+        public static readonly NodeId PublishSubscribeType_AddUadpConnection_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_AddUadpConnection_OutputArguments);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_AddPublishedEvents_OutputArguments Variable.
+        /// The identifier for the PublishSubscribeType_AddBrokerConnection_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_AddPublishedEvents_OutputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_AddPublishedEvents_OutputArguments);
+        public static readonly NodeId PublishSubscribeType_AddBrokerConnection_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_AddBrokerConnection_InputArguments);
 
         /// <summary>
-        /// The identifier for the DataSetFolderType_RemovePublishedDataSet_InputArguments Variable.
+        /// The identifier for the PublishSubscribeType_AddBrokerConnection_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId DataSetFolderType_RemovePublishedDataSet_InputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_RemovePublishedDataSet_InputArguments);
+        public static readonly NodeId PublishSubscribeType_AddBrokerConnection_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_AddBrokerConnection_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeType_RemoveConnection_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribeType_RemoveConnection_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_RemoveConnection_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeType_PublishedDataSets_AddPublishedDataItems_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribeType_PublishedDataSets_AddPublishedDataItems_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_PublishedDataSets_AddPublishedDataItems_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeType_PublishedDataSets_AddPublishedDataItems_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribeType_PublishedDataSets_AddPublishedDataItems_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_PublishedDataSets_AddPublishedDataItems_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeType_PublishedDataSets_AddPublishedEvents_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribeType_PublishedDataSets_AddPublishedEvents_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_PublishedDataSets_AddPublishedEvents_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeType_PublishedDataSets_AddPublishedEvents_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribeType_PublishedDataSets_AddPublishedEvents_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_PublishedDataSets_AddPublishedEvents_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeType_PublishedDataSets_RemovePublishedDataSet_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribeType_PublishedDataSets_RemovePublishedDataSet_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_PublishedDataSets_RemovePublishedDataSet_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeType_Status_State Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribeType_Status_State = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Status_State);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeType_DefaultPublisherId Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribeType_DefaultPublisherId = new NodeId(Opc.Ua.Variables.PublishSubscribeType_DefaultPublisherId);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_GetSecurityKeys_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_GetSecurityKeys_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_GetSecurityKeys_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_GetSecurityKeys_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_GetSecurityKeys_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_GetSecurityKeys_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_GetSecurityGroup_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_GetSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_GetSecurityGroup_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_GetSecurityGroup_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_GetSecurityGroup_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_GetSecurityGroup_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_SecurityGroups_AddSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_SecurityGroups_AddSecurityGroup_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_SecurityGroups_AddSecurityGroup_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_SecurityGroups_AddSecurityGroup_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SecurityGroups_RemoveSecurityGroup_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_SecurityGroups_RemoveSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_SecurityGroups_RemoveSecurityGroup_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_PublisherId Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_PublisherId = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_PublisherId);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Address Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Address = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Address);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Status_State Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Status_State = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Status_State);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_RemoveGroup_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_RemoveGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_RemoveGroup_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_AddUadpConnection_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_AddUadpConnection_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_AddUadpConnection_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_AddUadpConnection_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_AddUadpConnection_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_AddUadpConnection_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_AddBrokerConnection_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_AddBrokerConnection_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_AddBrokerConnection_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_AddBrokerConnection_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_AddBrokerConnection_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_AddBrokerConnection_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_RemoveConnection_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_RemoveConnection_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_RemoveConnection_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedDataItems_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_PublishedDataSets_AddPublishedDataItems_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_AddPublishedDataItems_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedDataItems_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_PublishedDataSets_AddPublishedDataItems_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_AddPublishedDataItems_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedEvents_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_PublishedDataSets_AddPublishedEvents_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_AddPublishedEvents_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedEvents_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_PublishedDataSets_AddPublishedEvents_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_AddPublishedEvents_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_RemovePublishedDataSet_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_PublishedDataSets_RemovePublishedDataSet_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_RemovePublishedDataSet_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Status_State Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Status_State = new NodeId(Opc.Ua.Variables.PublishSubscribe_Status_State);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_DefaultPublisherId Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_DefaultPublisherId = new NodeId(Opc.Ua.Variables.PublishSubscribe_DefaultPublisherId);
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Status_State Variable.
@@ -35045,9 +35040,89 @@ namespace Opc.Ua
         public static readonly NodeId DataSetClassType_DataSetClassId = new NodeId(Opc.Ua.Variables.DataSetClassType_DataSetClassId);
 
         /// <summary>
+        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems_InputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems_InputArguments);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems_OutputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedDataItems_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents_InputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents_InputArguments);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents_OutputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_DataSetFolderName_Placeholder_AddPublishedEvents_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_DataSetFolderName_Placeholder_RemovePublishedDataSet_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_DataSetFolderName_Placeholder_RemovePublishedDataSet_InputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_DataSetFolderName_Placeholder_RemovePublishedDataSet_InputArguments);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ConfigurationVersion Variable.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_PublishedDataSetName_Placeholder_ConfigurationVersion = new NodeId(Opc.Ua.Variables.DataSetFolderType_PublishedDataSetName_Placeholder_ConfigurationVersion);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_DataSetMetaData Variable.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_PublishedDataSetName_Placeholder_DataSetMetaData = new NodeId(Opc.Ua.Variables.DataSetFolderType_PublishedDataSetName_Placeholder_DataSetMetaData);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField_InputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField_InputArguments);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField_OutputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_AddExtensionField_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_RemoveExtensionField_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_RemoveExtensionField_InputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_PublishedDataSetName_Placeholder_ExtensionFields_RemoveExtensionField_InputArguments);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_AddPublishedDataItems_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_AddPublishedDataItems_InputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_AddPublishedDataItems_InputArguments);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_AddPublishedDataItems_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_AddPublishedDataItems_OutputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_AddPublishedDataItems_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_AddPublishedEvents_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_AddPublishedEvents_InputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_AddPublishedEvents_InputArguments);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_AddPublishedEvents_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_AddPublishedEvents_OutputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_AddPublishedEvents_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the DataSetFolderType_RemovePublishedDataSet_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId DataSetFolderType_RemovePublishedDataSet_InputArguments = new NodeId(Opc.Ua.Variables.DataSetFolderType_RemovePublishedDataSet_InputArguments);
+
+        /// <summary>
         /// The identifier for the PubSubConnectionType_PublisherId Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_PublisherId = new NodeId(Opc.Ua.Variables.PubSubConnectionType_PublisherId);
+
+        /// <summary>
+        /// The identifier for the PubSubConnectionType_Address Variable.
+        /// </summary>
+        public static readonly NodeId PubSubConnectionType_Address = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Address);
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_GroupName_Placeholder_PublishingInterval Variable.
@@ -35070,19 +35145,24 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_GroupName_Placeholder_Priority = new NodeId(Opc.Ua.Variables.PubSubConnectionType_GroupName_Placeholder_Priority);
 
         /// <summary>
+        /// The identifier for the PubSubConnectionType_GroupName_Placeholder_LocaleIds Variable.
+        /// </summary>
+        public static readonly NodeId PubSubConnectionType_GroupName_Placeholder_LocaleIds = new NodeId(Opc.Ua.Variables.PubSubConnectionType_GroupName_Placeholder_LocaleIds);
+
+        /// <summary>
+        /// The identifier for the PubSubConnectionType_GroupName_Placeholder_SecurityMode Variable.
+        /// </summary>
+        public static readonly NodeId PubSubConnectionType_GroupName_Placeholder_SecurityMode = new NodeId(Opc.Ua.Variables.PubSubConnectionType_GroupName_Placeholder_SecurityMode);
+
+        /// <summary>
+        /// The identifier for the PubSubConnectionType_GroupName_Placeholder_SecurityGroupId Variable.
+        /// </summary>
+        public static readonly NodeId PubSubConnectionType_GroupName_Placeholder_SecurityGroupId = new NodeId(Opc.Ua.Variables.PubSubConnectionType_GroupName_Placeholder_SecurityGroupId);
+
+        /// <summary>
         /// The identifier for the PubSubConnectionType_GroupName_Placeholder_Status_State Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_GroupName_Placeholder_Status_State = new NodeId(Opc.Ua.Variables.PubSubConnectionType_GroupName_Placeholder_Status_State);
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_GroupName_Placeholder_MessageSecurity_SecurityGroupId Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_GroupName_Placeholder_MessageSecurity_SecurityGroupId = new NodeId(Opc.Ua.Variables.PubSubConnectionType_GroupName_Placeholder_MessageSecurity_SecurityGroupId);
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_GroupName_Placeholder_MessageSecurity_SecurityMode Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_GroupName_Placeholder_MessageSecurity_SecurityMode = new NodeId(Opc.Ua.Variables.PubSubConnectionType_GroupName_Placeholder_MessageSecurity_SecurityMode);
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_GroupName_Placeholder_RemoveDataSetWriter_InputArguments Variable.
@@ -35098,11 +35178,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_Status_State Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_Status_State = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Status_State);
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_Address Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_Address = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Address);
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_RemoveGroup_InputArguments Variable.
@@ -35130,19 +35205,29 @@ namespace Opc.Ua
         public static readonly NodeId PubSubGroupType_Priority = new NodeId(Opc.Ua.Variables.PubSubGroupType_Priority);
 
         /// <summary>
+        /// The identifier for the PubSubGroupType_LocaleIds Variable.
+        /// </summary>
+        public static readonly NodeId PubSubGroupType_LocaleIds = new NodeId(Opc.Ua.Variables.PubSubGroupType_LocaleIds);
+
+        /// <summary>
+        /// The identifier for the PubSubGroupType_SecurityMode Variable.
+        /// </summary>
+        public static readonly NodeId PubSubGroupType_SecurityMode = new NodeId(Opc.Ua.Variables.PubSubGroupType_SecurityMode);
+
+        /// <summary>
+        /// The identifier for the PubSubGroupType_SecurityGroupId Variable.
+        /// </summary>
+        public static readonly NodeId PubSubGroupType_SecurityGroupId = new NodeId(Opc.Ua.Variables.PubSubGroupType_SecurityGroupId);
+
+        /// <summary>
+        /// The identifier for the PubSubGroupType_SecurityKeyServices Variable.
+        /// </summary>
+        public static readonly NodeId PubSubGroupType_SecurityKeyServices = new NodeId(Opc.Ua.Variables.PubSubGroupType_SecurityKeyServices);
+
+        /// <summary>
         /// The identifier for the PubSubGroupType_Status_State Variable.
         /// </summary>
         public static readonly NodeId PubSubGroupType_Status_State = new NodeId(Opc.Ua.Variables.PubSubGroupType_Status_State);
-
-        /// <summary>
-        /// The identifier for the PubSubGroupType_MessageSecurity_SecurityGroupId Variable.
-        /// </summary>
-        public static readonly NodeId PubSubGroupType_MessageSecurity_SecurityGroupId = new NodeId(Opc.Ua.Variables.PubSubGroupType_MessageSecurity_SecurityGroupId);
-
-        /// <summary>
-        /// The identifier for the PubSubGroupType_MessageSecurity_SecurityMode Variable.
-        /// </summary>
-        public static readonly NodeId PubSubGroupType_MessageSecurity_SecurityMode = new NodeId(Opc.Ua.Variables.PubSubGroupType_MessageSecurity_SecurityMode);
 
         /// <summary>
         /// The identifier for the PubSubGroupType_DataSetWriterName_Placeholder_Status_State Variable.
@@ -35165,14 +35250,14 @@ namespace Opc.Ua
         public static readonly NodeId PubSubGroupType_DataSetReaderName_Placeholder_Status_State = new NodeId(Opc.Ua.Variables.PubSubGroupType_DataSetReaderName_Placeholder_Status_State);
 
         /// <summary>
-        /// The identifier for the PubSubGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityGroupId Variable.
+        /// The identifier for the PubSubGroupType_DataSetReaderName_Placeholder_SecurityMode Variable.
         /// </summary>
-        public static readonly NodeId PubSubGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityGroupId = new NodeId(Opc.Ua.Variables.PubSubGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityGroupId);
+        public static readonly NodeId PubSubGroupType_DataSetReaderName_Placeholder_SecurityMode = new NodeId(Opc.Ua.Variables.PubSubGroupType_DataSetReaderName_Placeholder_SecurityMode);
 
         /// <summary>
-        /// The identifier for the PubSubGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityMode Variable.
+        /// The identifier for the PubSubGroupType_DataSetReaderName_Placeholder_SecurityGroupId Variable.
         /// </summary>
-        public static readonly NodeId PubSubGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityMode = new NodeId(Opc.Ua.Variables.PubSubGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityMode);
+        public static readonly NodeId PubSubGroupType_DataSetReaderName_Placeholder_SecurityGroupId = new NodeId(Opc.Ua.Variables.PubSubGroupType_DataSetReaderName_Placeholder_SecurityGroupId);
 
         /// <summary>
         /// The identifier for the PubSubGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_DataSetMetaData Variable.
@@ -35205,21 +35290,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubGroupType_RemoveDataSetReader_InputArguments = new NodeId(Opc.Ua.Variables.PubSubGroupType_RemoveDataSetReader_InputArguments);
 
         /// <summary>
-        /// The identifier for the PubSubMessageSecurityType_SecurityGroupId Variable.
-        /// </summary>
-        public static readonly NodeId PubSubMessageSecurityType_SecurityGroupId = new NodeId(Opc.Ua.Variables.PubSubMessageSecurityType_SecurityGroupId);
-
-        /// <summary>
-        /// The identifier for the PubSubMessageSecurityType_SecurityMode Variable.
-        /// </summary>
-        public static readonly NodeId PubSubMessageSecurityType_SecurityMode = new NodeId(Opc.Ua.Variables.PubSubMessageSecurityType_SecurityMode);
-
-        /// <summary>
-        /// The identifier for the PubSubMessageSecurityType_SecurityKeyServices Variable.
-        /// </summary>
-        public static readonly NodeId PubSubMessageSecurityType_SecurityKeyServices = new NodeId(Opc.Ua.Variables.PubSubMessageSecurityType_SecurityKeyServices);
-
-        /// <summary>
         /// The identifier for the DataSetWriterType_Status_State Variable.
         /// </summary>
         public static readonly NodeId DataSetWriterType_Status_State = new NodeId(Opc.Ua.Variables.DataSetWriterType_Status_State);
@@ -35235,24 +35305,24 @@ namespace Opc.Ua
         public static readonly NodeId DataSetWriterTransportType_KeyFrameCount = new NodeId(Opc.Ua.Variables.DataSetWriterTransportType_KeyFrameCount);
 
         /// <summary>
-        /// The identifier for the DataSetContentMask_EnumValues Variable.
-        /// </summary>
-        public static readonly NodeId DataSetContentMask_EnumValues = new NodeId(Opc.Ua.Variables.DataSetContentMask_EnumValues);
-
-        /// <summary>
         /// The identifier for the DataSetReaderType_Status_State Variable.
         /// </summary>
         public static readonly NodeId DataSetReaderType_Status_State = new NodeId(Opc.Ua.Variables.DataSetReaderType_Status_State);
 
         /// <summary>
-        /// The identifier for the DataSetReaderType_MessageSecurity_SecurityGroupId Variable.
+        /// The identifier for the DataSetReaderType_SecurityMode Variable.
         /// </summary>
-        public static readonly NodeId DataSetReaderType_MessageSecurity_SecurityGroupId = new NodeId(Opc.Ua.Variables.DataSetReaderType_MessageSecurity_SecurityGroupId);
+        public static readonly NodeId DataSetReaderType_SecurityMode = new NodeId(Opc.Ua.Variables.DataSetReaderType_SecurityMode);
 
         /// <summary>
-        /// The identifier for the DataSetReaderType_MessageSecurity_SecurityMode Variable.
+        /// The identifier for the DataSetReaderType_SecurityGroupId Variable.
         /// </summary>
-        public static readonly NodeId DataSetReaderType_MessageSecurity_SecurityMode = new NodeId(Opc.Ua.Variables.DataSetReaderType_MessageSecurity_SecurityMode);
+        public static readonly NodeId DataSetReaderType_SecurityGroupId = new NodeId(Opc.Ua.Variables.DataSetReaderType_SecurityGroupId);
+
+        /// <summary>
+        /// The identifier for the DataSetReaderType_SecurityKeyServices Variable.
+        /// </summary>
+        public static readonly NodeId DataSetReaderType_SecurityKeyServices = new NodeId(Opc.Ua.Variables.DataSetReaderType_SecurityKeyServices);
 
         /// <summary>
         /// The identifier for the DataSetReaderType_SubscribedDataSet_DataSetMetaData Variable.
@@ -35385,19 +35455,24 @@ namespace Opc.Ua
         public static readonly NodeId UadpConnectionType_GroupName_Placeholder_Priority = new NodeId(Opc.Ua.Variables.UadpConnectionType_GroupName_Placeholder_Priority);
 
         /// <summary>
+        /// The identifier for the UadpConnectionType_GroupName_Placeholder_LocaleIds Variable.
+        /// </summary>
+        public static readonly NodeId UadpConnectionType_GroupName_Placeholder_LocaleIds = new NodeId(Opc.Ua.Variables.UadpConnectionType_GroupName_Placeholder_LocaleIds);
+
+        /// <summary>
+        /// The identifier for the UadpConnectionType_GroupName_Placeholder_SecurityMode Variable.
+        /// </summary>
+        public static readonly NodeId UadpConnectionType_GroupName_Placeholder_SecurityMode = new NodeId(Opc.Ua.Variables.UadpConnectionType_GroupName_Placeholder_SecurityMode);
+
+        /// <summary>
+        /// The identifier for the UadpConnectionType_GroupName_Placeholder_SecurityGroupId Variable.
+        /// </summary>
+        public static readonly NodeId UadpConnectionType_GroupName_Placeholder_SecurityGroupId = new NodeId(Opc.Ua.Variables.UadpConnectionType_GroupName_Placeholder_SecurityGroupId);
+
+        /// <summary>
         /// The identifier for the UadpConnectionType_GroupName_Placeholder_Status_State Variable.
         /// </summary>
         public static readonly NodeId UadpConnectionType_GroupName_Placeholder_Status_State = new NodeId(Opc.Ua.Variables.UadpConnectionType_GroupName_Placeholder_Status_State);
-
-        /// <summary>
-        /// The identifier for the UadpConnectionType_GroupName_Placeholder_MessageSecurity_SecurityGroupId Variable.
-        /// </summary>
-        public static readonly NodeId UadpConnectionType_GroupName_Placeholder_MessageSecurity_SecurityGroupId = new NodeId(Opc.Ua.Variables.UadpConnectionType_GroupName_Placeholder_MessageSecurity_SecurityGroupId);
-
-        /// <summary>
-        /// The identifier for the UadpConnectionType_GroupName_Placeholder_MessageSecurity_SecurityMode Variable.
-        /// </summary>
-        public static readonly NodeId UadpConnectionType_GroupName_Placeholder_MessageSecurity_SecurityMode = new NodeId(Opc.Ua.Variables.UadpConnectionType_GroupName_Placeholder_MessageSecurity_SecurityMode);
 
         /// <summary>
         /// The identifier for the UadpConnectionType_GroupName_Placeholder_RemoveDataSetWriter_InputArguments Variable.
@@ -35450,16 +35525,6 @@ namespace Opc.Ua
         public static readonly NodeId UadpGroupType_Status_State = new NodeId(Opc.Ua.Variables.UadpGroupType_Status_State);
 
         /// <summary>
-        /// The identifier for the UadpGroupType_MessageSecurity_SecurityGroupId Variable.
-        /// </summary>
-        public static readonly NodeId UadpGroupType_MessageSecurity_SecurityGroupId = new NodeId(Opc.Ua.Variables.UadpGroupType_MessageSecurity_SecurityGroupId);
-
-        /// <summary>
-        /// The identifier for the UadpGroupType_MessageSecurity_SecurityMode Variable.
-        /// </summary>
-        public static readonly NodeId UadpGroupType_MessageSecurity_SecurityMode = new NodeId(Opc.Ua.Variables.UadpGroupType_MessageSecurity_SecurityMode);
-
-        /// <summary>
         /// The identifier for the UadpGroupType_DataSetWriterName_Placeholder_Status_State Variable.
         /// </summary>
         public static readonly NodeId UadpGroupType_DataSetWriterName_Placeholder_Status_State = new NodeId(Opc.Ua.Variables.UadpGroupType_DataSetWriterName_Placeholder_Status_State);
@@ -35480,14 +35545,14 @@ namespace Opc.Ua
         public static readonly NodeId UadpGroupType_DataSetReaderName_Placeholder_Status_State = new NodeId(Opc.Ua.Variables.UadpGroupType_DataSetReaderName_Placeholder_Status_State);
 
         /// <summary>
-        /// The identifier for the UadpGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityGroupId Variable.
+        /// The identifier for the UadpGroupType_DataSetReaderName_Placeholder_SecurityMode Variable.
         /// </summary>
-        public static readonly NodeId UadpGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityGroupId = new NodeId(Opc.Ua.Variables.UadpGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityGroupId);
+        public static readonly NodeId UadpGroupType_DataSetReaderName_Placeholder_SecurityMode = new NodeId(Opc.Ua.Variables.UadpGroupType_DataSetReaderName_Placeholder_SecurityMode);
 
         /// <summary>
-        /// The identifier for the UadpGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityMode Variable.
+        /// The identifier for the UadpGroupType_DataSetReaderName_Placeholder_SecurityGroupId Variable.
         /// </summary>
-        public static readonly NodeId UadpGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityMode = new NodeId(Opc.Ua.Variables.UadpGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityMode);
+        public static readonly NodeId UadpGroupType_DataSetReaderName_Placeholder_SecurityGroupId = new NodeId(Opc.Ua.Variables.UadpGroupType_DataSetReaderName_Placeholder_SecurityGroupId);
 
         /// <summary>
         /// The identifier for the UadpGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_DataSetMetaData Variable.
@@ -35585,219 +35650,214 @@ namespace Opc.Ua
         public static readonly NodeId UadpReaderTransportType_DataSetWriterId = new NodeId(Opc.Ua.Variables.UadpReaderTransportType_DataSetWriterId);
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_GroupName_Placeholder_PublishingInterval Variable.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_PublishingInterval Variable.
         /// </summary>
-        public static readonly NodeId AmqpConnectionType_GroupName_Placeholder_PublishingInterval = new NodeId(Opc.Ua.Variables.AmqpConnectionType_GroupName_Placeholder_PublishingInterval);
+        public static readonly NodeId BrokerConnectionType_GroupName_Placeholder_PublishingInterval = new NodeId(Opc.Ua.Variables.BrokerConnectionType_GroupName_Placeholder_PublishingInterval);
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_GroupName_Placeholder_KeepAliveTime Variable.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_KeepAliveTime Variable.
         /// </summary>
-        public static readonly NodeId AmqpConnectionType_GroupName_Placeholder_KeepAliveTime = new NodeId(Opc.Ua.Variables.AmqpConnectionType_GroupName_Placeholder_KeepAliveTime);
+        public static readonly NodeId BrokerConnectionType_GroupName_Placeholder_KeepAliveTime = new NodeId(Opc.Ua.Variables.BrokerConnectionType_GroupName_Placeholder_KeepAliveTime);
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_GroupName_Placeholder_EncodingMimeType Variable.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_EncodingMimeType Variable.
         /// </summary>
-        public static readonly NodeId AmqpConnectionType_GroupName_Placeholder_EncodingMimeType = new NodeId(Opc.Ua.Variables.AmqpConnectionType_GroupName_Placeholder_EncodingMimeType);
+        public static readonly NodeId BrokerConnectionType_GroupName_Placeholder_EncodingMimeType = new NodeId(Opc.Ua.Variables.BrokerConnectionType_GroupName_Placeholder_EncodingMimeType);
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_GroupName_Placeholder_Priority Variable.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_Priority Variable.
         /// </summary>
-        public static readonly NodeId AmqpConnectionType_GroupName_Placeholder_Priority = new NodeId(Opc.Ua.Variables.AmqpConnectionType_GroupName_Placeholder_Priority);
+        public static readonly NodeId BrokerConnectionType_GroupName_Placeholder_Priority = new NodeId(Opc.Ua.Variables.BrokerConnectionType_GroupName_Placeholder_Priority);
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_GroupName_Placeholder_Status_State Variable.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_LocaleIds Variable.
         /// </summary>
-        public static readonly NodeId AmqpConnectionType_GroupName_Placeholder_Status_State = new NodeId(Opc.Ua.Variables.AmqpConnectionType_GroupName_Placeholder_Status_State);
+        public static readonly NodeId BrokerConnectionType_GroupName_Placeholder_LocaleIds = new NodeId(Opc.Ua.Variables.BrokerConnectionType_GroupName_Placeholder_LocaleIds);
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_GroupName_Placeholder_MessageSecurity_SecurityGroupId Variable.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_SecurityMode Variable.
         /// </summary>
-        public static readonly NodeId AmqpConnectionType_GroupName_Placeholder_MessageSecurity_SecurityGroupId = new NodeId(Opc.Ua.Variables.AmqpConnectionType_GroupName_Placeholder_MessageSecurity_SecurityGroupId);
+        public static readonly NodeId BrokerConnectionType_GroupName_Placeholder_SecurityMode = new NodeId(Opc.Ua.Variables.BrokerConnectionType_GroupName_Placeholder_SecurityMode);
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_GroupName_Placeholder_MessageSecurity_SecurityMode Variable.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_SecurityGroupId Variable.
         /// </summary>
-        public static readonly NodeId AmqpConnectionType_GroupName_Placeholder_MessageSecurity_SecurityMode = new NodeId(Opc.Ua.Variables.AmqpConnectionType_GroupName_Placeholder_MessageSecurity_SecurityMode);
+        public static readonly NodeId BrokerConnectionType_GroupName_Placeholder_SecurityGroupId = new NodeId(Opc.Ua.Variables.BrokerConnectionType_GroupName_Placeholder_SecurityGroupId);
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_GroupName_Placeholder_RemoveDataSetWriter_InputArguments Variable.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_Status_State Variable.
         /// </summary>
-        public static readonly NodeId AmqpConnectionType_GroupName_Placeholder_RemoveDataSetWriter_InputArguments = new NodeId(Opc.Ua.Variables.AmqpConnectionType_GroupName_Placeholder_RemoveDataSetWriter_InputArguments);
+        public static readonly NodeId BrokerConnectionType_GroupName_Placeholder_Status_State = new NodeId(Opc.Ua.Variables.BrokerConnectionType_GroupName_Placeholder_Status_State);
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_GroupName_Placeholder_RemoveDataSetReader_InputArguments Variable.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_RemoveDataSetWriter_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId AmqpConnectionType_GroupName_Placeholder_RemoveDataSetReader_InputArguments = new NodeId(Opc.Ua.Variables.AmqpConnectionType_GroupName_Placeholder_RemoveDataSetReader_InputArguments);
+        public static readonly NodeId BrokerConnectionType_GroupName_Placeholder_RemoveDataSetWriter_InputArguments = new NodeId(Opc.Ua.Variables.BrokerConnectionType_GroupName_Placeholder_RemoveDataSetWriter_InputArguments);
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_Status_State Variable.
+        /// The identifier for the BrokerConnectionType_GroupName_Placeholder_RemoveDataSetReader_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId AmqpConnectionType_Status_State = new NodeId(Opc.Ua.Variables.AmqpConnectionType_Status_State);
+        public static readonly NodeId BrokerConnectionType_GroupName_Placeholder_RemoveDataSetReader_InputArguments = new NodeId(Opc.Ua.Variables.BrokerConnectionType_GroupName_Placeholder_RemoveDataSetReader_InputArguments);
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_RemoveGroup_InputArguments Variable.
+        /// The identifier for the BrokerConnectionType_Status_State Variable.
         /// </summary>
-        public static readonly NodeId AmqpConnectionType_RemoveGroup_InputArguments = new NodeId(Opc.Ua.Variables.AmqpConnectionType_RemoveGroup_InputArguments);
+        public static readonly NodeId BrokerConnectionType_Status_State = new NodeId(Opc.Ua.Variables.BrokerConnectionType_Status_State);
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_AddGroup_InputArguments Variable.
+        /// The identifier for the BrokerConnectionType_RemoveGroup_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId AmqpConnectionType_AddGroup_InputArguments = new NodeId(Opc.Ua.Variables.AmqpConnectionType_AddGroup_InputArguments);
+        public static readonly NodeId BrokerConnectionType_RemoveGroup_InputArguments = new NodeId(Opc.Ua.Variables.BrokerConnectionType_RemoveGroup_InputArguments);
 
         /// <summary>
-        /// The identifier for the AmqpConnectionType_AddGroup_OutputArguments Variable.
+        /// The identifier for the BrokerConnectionType_AddGroup_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId AmqpConnectionType_AddGroup_OutputArguments = new NodeId(Opc.Ua.Variables.AmqpConnectionType_AddGroup_OutputArguments);
+        public static readonly NodeId BrokerConnectionType_AddGroup_InputArguments = new NodeId(Opc.Ua.Variables.BrokerConnectionType_AddGroup_InputArguments);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_Status_State Variable.
+        /// The identifier for the BrokerConnectionType_AddGroup_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_Status_State = new NodeId(Opc.Ua.Variables.AmqpGroupType_Status_State);
+        public static readonly NodeId BrokerConnectionType_AddGroup_OutputArguments = new NodeId(Opc.Ua.Variables.BrokerConnectionType_AddGroup_OutputArguments);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_MessageSecurity_SecurityGroupId Variable.
+        /// The identifier for the BrokerGroupType_Status_State Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_MessageSecurity_SecurityGroupId = new NodeId(Opc.Ua.Variables.AmqpGroupType_MessageSecurity_SecurityGroupId);
+        public static readonly NodeId BrokerGroupType_Status_State = new NodeId(Opc.Ua.Variables.BrokerGroupType_Status_State);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_MessageSecurity_SecurityMode Variable.
+        /// The identifier for the BrokerGroupType_DataSetWriterName_Placeholder_Status_State Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_MessageSecurity_SecurityMode = new NodeId(Opc.Ua.Variables.AmqpGroupType_MessageSecurity_SecurityMode);
+        public static readonly NodeId BrokerGroupType_DataSetWriterName_Placeholder_Status_State = new NodeId(Opc.Ua.Variables.BrokerGroupType_DataSetWriterName_Placeholder_Status_State);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetWriterName_Placeholder_Status_State Variable.
+        /// The identifier for the BrokerGroupType_DataSetWriterName_Placeholder_DataSetContentMask Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_DataSetWriterName_Placeholder_Status_State = new NodeId(Opc.Ua.Variables.AmqpGroupType_DataSetWriterName_Placeholder_Status_State);
+        public static readonly NodeId BrokerGroupType_DataSetWriterName_Placeholder_DataSetContentMask = new NodeId(Opc.Ua.Variables.BrokerGroupType_DataSetWriterName_Placeholder_DataSetContentMask);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetWriterName_Placeholder_DataSetContentMask Variable.
+        /// The identifier for the BrokerGroupType_RemoveDataSetWriter_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_DataSetWriterName_Placeholder_DataSetContentMask = new NodeId(Opc.Ua.Variables.AmqpGroupType_DataSetWriterName_Placeholder_DataSetContentMask);
+        public static readonly NodeId BrokerGroupType_RemoveDataSetWriter_InputArguments = new NodeId(Opc.Ua.Variables.BrokerGroupType_RemoveDataSetWriter_InputArguments);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_RemoveDataSetWriter_InputArguments Variable.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_Status_State Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_RemoveDataSetWriter_InputArguments = new NodeId(Opc.Ua.Variables.AmqpGroupType_RemoveDataSetWriter_InputArguments);
+        public static readonly NodeId BrokerGroupType_DataSetReaderName_Placeholder_Status_State = new NodeId(Opc.Ua.Variables.BrokerGroupType_DataSetReaderName_Placeholder_Status_State);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_Status_State Variable.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_SecurityMode Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_DataSetReaderName_Placeholder_Status_State = new NodeId(Opc.Ua.Variables.AmqpGroupType_DataSetReaderName_Placeholder_Status_State);
+        public static readonly NodeId BrokerGroupType_DataSetReaderName_Placeholder_SecurityMode = new NodeId(Opc.Ua.Variables.BrokerGroupType_DataSetReaderName_Placeholder_SecurityMode);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityGroupId Variable.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_SecurityGroupId Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityGroupId = new NodeId(Opc.Ua.Variables.AmqpGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityGroupId);
+        public static readonly NodeId BrokerGroupType_DataSetReaderName_Placeholder_SecurityGroupId = new NodeId(Opc.Ua.Variables.BrokerGroupType_DataSetReaderName_Placeholder_SecurityGroupId);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityMode Variable.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_DataSetMetaData Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityMode = new NodeId(Opc.Ua.Variables.AmqpGroupType_DataSetReaderName_Placeholder_MessageSecurity_SecurityMode);
+        public static readonly NodeId BrokerGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_DataSetMetaData = new NodeId(Opc.Ua.Variables.BrokerGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_DataSetMetaData);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_DataSetMetaData Variable.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_MessageReceiveTimeout Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_DataSetMetaData = new NodeId(Opc.Ua.Variables.AmqpGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_DataSetMetaData);
+        public static readonly NodeId BrokerGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_MessageReceiveTimeout = new NodeId(Opc.Ua.Variables.BrokerGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_MessageReceiveTimeout);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_MessageReceiveTimeout Variable.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_SetConnectVariables_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_MessageReceiveTimeout = new NodeId(Opc.Ua.Variables.AmqpGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_MessageReceiveTimeout);
+        public static readonly NodeId BrokerGroupType_DataSetReaderName_Placeholder_SetConnectVariables_InputArguments = new NodeId(Opc.Ua.Variables.BrokerGroupType_DataSetReaderName_Placeholder_SetConnectVariables_InputArguments);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_SetConnectVariables_InputArguments Variable.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_SetConnectVariables_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_DataSetReaderName_Placeholder_SetConnectVariables_InputArguments = new NodeId(Opc.Ua.Variables.AmqpGroupType_DataSetReaderName_Placeholder_SetConnectVariables_InputArguments);
+        public static readonly NodeId BrokerGroupType_DataSetReaderName_Placeholder_SetConnectVariables_OutputArguments = new NodeId(Opc.Ua.Variables.BrokerGroupType_DataSetReaderName_Placeholder_SetConnectVariables_OutputArguments);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_SetConnectVariables_OutputArguments Variable.
+        /// The identifier for the BrokerGroupType_DataSetReaderName_Placeholder_SetDataSetMirror_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_DataSetReaderName_Placeholder_SetConnectVariables_OutputArguments = new NodeId(Opc.Ua.Variables.AmqpGroupType_DataSetReaderName_Placeholder_SetConnectVariables_OutputArguments);
+        public static readonly NodeId BrokerGroupType_DataSetReaderName_Placeholder_SetDataSetMirror_InputArguments = new NodeId(Opc.Ua.Variables.BrokerGroupType_DataSetReaderName_Placeholder_SetDataSetMirror_InputArguments);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_DataSetReaderName_Placeholder_SetDataSetMirror_InputArguments Variable.
+        /// The identifier for the BrokerGroupType_RemoveDataSetReader_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_DataSetReaderName_Placeholder_SetDataSetMirror_InputArguments = new NodeId(Opc.Ua.Variables.AmqpGroupType_DataSetReaderName_Placeholder_SetDataSetMirror_InputArguments);
+        public static readonly NodeId BrokerGroupType_RemoveDataSetReader_InputArguments = new NodeId(Opc.Ua.Variables.BrokerGroupType_RemoveDataSetReader_InputArguments);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_RemoveDataSetReader_InputArguments Variable.
+        /// The identifier for the BrokerGroupType_QueueName Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_RemoveDataSetReader_InputArguments = new NodeId(Opc.Ua.Variables.AmqpGroupType_RemoveDataSetReader_InputArguments);
+        public static readonly NodeId BrokerGroupType_QueueName = new NodeId(Opc.Ua.Variables.BrokerGroupType_QueueName);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_AmqpNodeName Variable.
+        /// The identifier for the BrokerGroupType_AddDataSetWriter_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_AmqpNodeName = new NodeId(Opc.Ua.Variables.AmqpGroupType_AmqpNodeName);
+        public static readonly NodeId BrokerGroupType_AddDataSetWriter_InputArguments = new NodeId(Opc.Ua.Variables.BrokerGroupType_AddDataSetWriter_InputArguments);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_AddDataSetWriter_InputArguments Variable.
+        /// The identifier for the BrokerGroupType_AddDataSetWriter_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_AddDataSetWriter_InputArguments = new NodeId(Opc.Ua.Variables.AmqpGroupType_AddDataSetWriter_InputArguments);
+        public static readonly NodeId BrokerGroupType_AddDataSetWriter_OutputArguments = new NodeId(Opc.Ua.Variables.BrokerGroupType_AddDataSetWriter_OutputArguments);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_AddDataSetWriter_OutputArguments Variable.
+        /// The identifier for the BrokerGroupType_AddDataSetReader_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_AddDataSetWriter_OutputArguments = new NodeId(Opc.Ua.Variables.AmqpGroupType_AddDataSetWriter_OutputArguments);
+        public static readonly NodeId BrokerGroupType_AddDataSetReader_InputArguments = new NodeId(Opc.Ua.Variables.BrokerGroupType_AddDataSetReader_InputArguments);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_AddDataSetReader_InputArguments Variable.
+        /// The identifier for the BrokerGroupType_AddDataSetReader_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_AddDataSetReader_InputArguments = new NodeId(Opc.Ua.Variables.AmqpGroupType_AddDataSetReader_InputArguments);
+        public static readonly NodeId BrokerGroupType_AddDataSetReader_OutputArguments = new NodeId(Opc.Ua.Variables.BrokerGroupType_AddDataSetReader_OutputArguments);
 
         /// <summary>
-        /// The identifier for the AmqpGroupType_AddDataSetReader_OutputArguments Variable.
+        /// The identifier for the BrokerGroupTypeAddReaderType_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupType_AddDataSetReader_OutputArguments = new NodeId(Opc.Ua.Variables.AmqpGroupType_AddDataSetReader_OutputArguments);
+        public static readonly NodeId BrokerGroupTypeAddReaderType_InputArguments = new NodeId(Opc.Ua.Variables.BrokerGroupTypeAddReaderType_InputArguments);
 
         /// <summary>
-        /// The identifier for the AmqpGroupTypeAddReaderType_InputArguments Variable.
+        /// The identifier for the BrokerGroupTypeAddReaderType_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupTypeAddReaderType_InputArguments = new NodeId(Opc.Ua.Variables.AmqpGroupTypeAddReaderType_InputArguments);
+        public static readonly NodeId BrokerGroupTypeAddReaderType_OutputArguments = new NodeId(Opc.Ua.Variables.BrokerGroupTypeAddReaderType_OutputArguments);
 
         /// <summary>
-        /// The identifier for the AmqpGroupTypeAddReaderType_OutputArguments Variable.
+        /// The identifier for the BrokerWriterTransportType_QueueName Variable.
         /// </summary>
-        public static readonly NodeId AmqpGroupTypeAddReaderType_OutputArguments = new NodeId(Opc.Ua.Variables.AmqpGroupTypeAddReaderType_OutputArguments);
+        public static readonly NodeId BrokerWriterTransportType_QueueName = new NodeId(Opc.Ua.Variables.BrokerWriterTransportType_QueueName);
 
         /// <summary>
-        /// The identifier for the AmqpWriterTransportType_AmqpNodeName Variable.
+        /// The identifier for the BrokerWriterTransportType_MetaDataQueueName Variable.
         /// </summary>
-        public static readonly NodeId AmqpWriterTransportType_AmqpNodeName = new NodeId(Opc.Ua.Variables.AmqpWriterTransportType_AmqpNodeName);
+        public static readonly NodeId BrokerWriterTransportType_MetaDataQueueName = new NodeId(Opc.Ua.Variables.BrokerWriterTransportType_MetaDataQueueName);
 
         /// <summary>
-        /// The identifier for the AmqpWriterTransportType_MetaDataAmqpNodeName Variable.
+        /// The identifier for the BrokerWriterTransportType_MetaDataUpdateTime Variable.
         /// </summary>
-        public static readonly NodeId AmqpWriterTransportType_MetaDataAmqpNodeName = new NodeId(Opc.Ua.Variables.AmqpWriterTransportType_MetaDataAmqpNodeName);
+        public static readonly NodeId BrokerWriterTransportType_MetaDataUpdateTime = new NodeId(Opc.Ua.Variables.BrokerWriterTransportType_MetaDataUpdateTime);
 
         /// <summary>
-        /// The identifier for the AmqpWriterTransportType_MetaDataUpdateTime Variable.
+        /// The identifier for the BrokerWriterTransportType_DataSetWriterId Variable.
         /// </summary>
-        public static readonly NodeId AmqpWriterTransportType_MetaDataUpdateTime = new NodeId(Opc.Ua.Variables.AmqpWriterTransportType_MetaDataUpdateTime);
+        public static readonly NodeId BrokerWriterTransportType_DataSetWriterId = new NodeId(Opc.Ua.Variables.BrokerWriterTransportType_DataSetWriterId);
 
         /// <summary>
-        /// The identifier for the AmqpWriterTransportType_DataSetWriterId Variable.
+        /// The identifier for the BrokerWriterTransportType_MaxMessageSize Variable.
         /// </summary>
-        public static readonly NodeId AmqpWriterTransportType_DataSetWriterId = new NodeId(Opc.Ua.Variables.AmqpWriterTransportType_DataSetWriterId);
+        public static readonly NodeId BrokerWriterTransportType_MaxMessageSize = new NodeId(Opc.Ua.Variables.BrokerWriterTransportType_MaxMessageSize);
 
         /// <summary>
-        /// The identifier for the AmqpWriterTransportType_MaxMessageSize Variable.
+        /// The identifier for the BrokerReaderTransportType_QueueName Variable.
         /// </summary>
-        public static readonly NodeId AmqpWriterTransportType_MaxMessageSize = new NodeId(Opc.Ua.Variables.AmqpWriterTransportType_MaxMessageSize);
+        public static readonly NodeId BrokerReaderTransportType_QueueName = new NodeId(Opc.Ua.Variables.BrokerReaderTransportType_QueueName);
 
         /// <summary>
-        /// The identifier for the AmqpReaderTransportType_AmqpNodeName Variable.
+        /// The identifier for the BrokerReaderTransportType_MetaDataQueueName Variable.
         /// </summary>
-        public static readonly NodeId AmqpReaderTransportType_AmqpNodeName = new NodeId(Opc.Ua.Variables.AmqpReaderTransportType_AmqpNodeName);
+        public static readonly NodeId BrokerReaderTransportType_MetaDataQueueName = new NodeId(Opc.Ua.Variables.BrokerReaderTransportType_MetaDataQueueName);
 
         /// <summary>
-        /// The identifier for the AmqpReaderTransportType_MetaDataAmqpNodeName Variable.
+        /// The identifier for the BrokerReaderTransportType_DataSetWriterId Variable.
         /// </summary>
-        public static readonly NodeId AmqpReaderTransportType_MetaDataAmqpNodeName = new NodeId(Opc.Ua.Variables.AmqpReaderTransportType_MetaDataAmqpNodeName);
-
-        /// <summary>
-        /// The identifier for the AmqpReaderTransportType_DataSetWriterId Variable.
-        /// </summary>
-        public static readonly NodeId AmqpReaderTransportType_DataSetWriterId = new NodeId(Opc.Ua.Variables.AmqpReaderTransportType_DataSetWriterId);
+        public static readonly NodeId BrokerReaderTransportType_DataSetWriterId = new NodeId(Opc.Ua.Variables.BrokerReaderTransportType_DataSetWriterId);
 
         /// <summary>
         /// The identifier for the IdType_EnumStrings Variable.
@@ -35993,11 +36053,6 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_XmlSchema_PublishedVariableDataType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_XmlSchema_PublishedVariableDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_PublishedVariableDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_SecurityKeyServiceDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_SecurityKeyServiceDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_SecurityKeyServiceDataType);
 
         /// <summary>
         /// The identifier for the OpcUa_XmlSchema_DataConnectionDataType Variable.
@@ -36388,11 +36443,6 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_BinarySchema_PublishedVariableDataType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_BinarySchema_PublishedVariableDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_PublishedVariableDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_SecurityKeyServiceDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_BinarySchema_SecurityKeyServiceDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_SecurityKeyServiceDataType);
 
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_DataConnectionDataType Variable.
@@ -36959,14 +37009,14 @@ namespace Opc.Ua
         public const string ActualSessionTimeout = "ActualSessionTimeout";
 
         /// <summary>
-        /// The BrowseName for the AddAmqpConnection component.
-        /// </summary>
-        public const string AddAmqpConnection = "AddAmqpConnection";
-
-        /// <summary>
         /// The BrowseName for the AddApplication component.
         /// </summary>
         public const string AddApplication = "AddApplication";
+
+        /// <summary>
+        /// The BrowseName for the AddBrokerConnection component.
+        /// </summary>
+        public const string AddBrokerConnection = "AddBrokerConnection";
 
         /// <summary>
         /// The BrowseName for the AddCertificate component.
@@ -37332,36 +37382,6 @@ namespace Opc.Ua
         /// The BrowseName for the AlwaysGeneratesEvent component.
         /// </summary>
         public const string AlwaysGeneratesEvent = "AlwaysGeneratesEvent";
-
-        /// <summary>
-        /// The BrowseName for the AmqpConnectionType component.
-        /// </summary>
-        public const string AmqpConnectionType = "AmqpConnectionType";
-
-        /// <summary>
-        /// The BrowseName for the AmqpGroupType component.
-        /// </summary>
-        public const string AmqpGroupType = "AmqpGroupType";
-
-        /// <summary>
-        /// The BrowseName for the AmqpGroupTypeAddReaderType component.
-        /// </summary>
-        public const string AmqpGroupTypeAddReaderType = "AmqpGroupTypeAddReaderType";
-
-        /// <summary>
-        /// The BrowseName for the AmqpNodeName component.
-        /// </summary>
-        public const string AmqpNodeName = "AmqpNodeName";
-
-        /// <summary>
-        /// The BrowseName for the AmqpReaderTransportType component.
-        /// </summary>
-        public const string AmqpReaderTransportType = "AmqpReaderTransportType";
-
-        /// <summary>
-        /// The BrowseName for the AmqpWriterTransportType component.
-        /// </summary>
-        public const string AmqpWriterTransportType = "AmqpWriterTransportType";
 
         /// <summary>
         /// The BrowseName for the AnalogItemType component.
@@ -37757,6 +37777,31 @@ namespace Opc.Ua
         /// The BrowseName for the BranchId component.
         /// </summary>
         public const string BranchId = "BranchId";
+
+        /// <summary>
+        /// The BrowseName for the BrokerConnectionType component.
+        /// </summary>
+        public const string BrokerConnectionType = "BrokerConnectionType";
+
+        /// <summary>
+        /// The BrowseName for the BrokerGroupType component.
+        /// </summary>
+        public const string BrokerGroupType = "BrokerGroupType";
+
+        /// <summary>
+        /// The BrowseName for the BrokerGroupTypeAddReaderType component.
+        /// </summary>
+        public const string BrokerGroupTypeAddReaderType = "BrokerGroupTypeAddReaderType";
+
+        /// <summary>
+        /// The BrowseName for the BrokerReaderTransportType component.
+        /// </summary>
+        public const string BrokerReaderTransportType = "BrokerReaderTransportType";
+
+        /// <summary>
+        /// The BrowseName for the BrokerWriterTransportType component.
+        /// </summary>
+        public const string BrokerWriterTransportType = "BrokerWriterTransportType";
 
         /// <summary>
         /// The BrowseName for the BrowseCount component.
@@ -38344,6 +38389,11 @@ namespace Opc.Ua
         public const string DataSetContentMask = "DataSetContentMask";
 
         /// <summary>
+        /// The BrowseName for the DataSetFieldFlags component.
+        /// </summary>
+        public const string DataSetFieldFlags = "DataSetFieldFlags";
+
+        /// <summary>
         /// The BrowseName for the DataSetFolderName_Placeholder component.
         /// </summary>
         public const string DataSetFolderName_Placeholder = "<DataSetFolderName>";
@@ -38502,6 +38552,11 @@ namespace Opc.Ua
         /// The BrowseName for the DefaultHttpsGroup component.
         /// </summary>
         public const string DefaultHttpsGroup = "DefaultHttpsGroup";
+
+        /// <summary>
+        /// The BrowseName for the DefaultPublisherId component.
+        /// </summary>
+        public const string DefaultPublisherId = "DefaultPublisherId";
 
         /// <summary>
         /// The BrowseName for the DefaultResponse component.
@@ -39979,19 +40034,14 @@ namespace Opc.Ua
         public const string MessageRepeatDelay = "MessageRepeatDelay";
 
         /// <summary>
-        /// The BrowseName for the MessageSecurity component.
-        /// </summary>
-        public const string MessageSecurity = "MessageSecurity";
-
-        /// <summary>
         /// The BrowseName for the MessageSecurityMode component.
         /// </summary>
         public const string MessageSecurityMode = "MessageSecurityMode";
 
         /// <summary>
-        /// The BrowseName for the MetaDataAmqpNodeName component.
+        /// The BrowseName for the MetaDataQueueName component.
         /// </summary>
-        public const string MetaDataAmqpNodeName = "MetaDataAmqpNodeName";
+        public const string MetaDataQueueName = "MetaDataQueueName";
 
         /// <summary>
         /// The BrowseName for the MetaDataUpdateTime component.
@@ -40794,9 +40844,9 @@ namespace Opc.Ua
         public const string PubSubGroupType = "PubSubGroupType";
 
         /// <summary>
-        /// The BrowseName for the PubSubMessageSecurityType component.
+        /// The BrowseName for the PubSubKeyServiceType component.
         /// </summary>
-        public const string PubSubMessageSecurityType = "PubSubMessageSecurityType";
+        public const string PubSubKeyServiceType = "PubSubKeyServiceType";
 
         /// <summary>
         /// The BrowseName for the PubSubState component.
@@ -40867,6 +40917,11 @@ namespace Opc.Ua
         /// The BrowseName for the QueryNextResponse component.
         /// </summary>
         public const string QueryNextResponse = "QueryNextResponse";
+
+        /// <summary>
+        /// The BrowseName for the QueueName component.
+        /// </summary>
+        public const string QueueName = "QueueName";
 
         /// <summary>
         /// The BrowseName for the Range component.
@@ -41417,11 +41472,6 @@ namespace Opc.Ua
         /// The BrowseName for the SecurityGroupType component.
         /// </summary>
         public const string SecurityGroupType = "SecurityGroupType";
-
-        /// <summary>
-        /// The BrowseName for the SecurityKeyServiceDataType component.
-        /// </summary>
-        public const string SecurityKeyServiceDataType = "SecurityKeyServiceDataType";
 
         /// <summary>
         /// The BrowseName for the SecurityKeyServices component.

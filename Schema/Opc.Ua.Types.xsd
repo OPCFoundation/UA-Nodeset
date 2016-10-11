@@ -682,6 +682,7 @@
   <xs:complexType name="DataSetMetaDataType">
     <xs:sequence>
       <xs:element name="Name" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="Description" type="ua:LocalizedText" minOccurs="0" nillable="true" />
       <xs:element name="Fields" type="tns:ListOfFieldMetaData" minOccurs="0" nillable="true" />
       <xs:element name="DataSetClassId" type="ua:Guid" minOccurs="0" />
       <xs:element name="Namespaces" type="ua:ListOfString" minOccurs="0" nillable="true" />
@@ -699,10 +700,19 @@
   </xs:complexType>
   <xs:element name="ListOfDataSetMetaDataType" type="tns:ListOfDataSetMetaDataType" nillable="true"></xs:element>
 
+  <xs:simpleType  name="DataSetFieldFlags">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PromotedField_1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DataSetFieldFlags" type="tns:DataSetFieldFlags" />
+
   <xs:complexType name="FieldMetaData">
     <xs:sequence>
       <xs:element name="Name" type="xs:string" minOccurs="0" nillable="true" />
-      <xs:element name="PromotedField" type="xs:boolean" minOccurs="0" />
+      <xs:element name="Description" type="ua:LocalizedText" minOccurs="0" nillable="true" />
+      <xs:element name="FieldFlags" type="tns:DataSetFieldFlags" minOccurs="0" />
+      <xs:element name="BuiltInType" type="xs:unsignedByte" minOccurs="0" />
       <xs:element name="DataType" type="ua:NodeId" minOccurs="0" nillable="true" />
       <xs:element name="ValueRank" type="xs:int" minOccurs="0" />
       <xs:element name="ArrayDimensions" type="ua:ListOfUInt32" minOccurs="0" nillable="true" />
@@ -785,44 +795,6 @@
   </xs:complexType>
   <xs:element name="ListOfKeyValuePair" type="tns:ListOfKeyValuePair" nillable="true"></xs:element>
 
-  <xs:complexType name="PublishedVariableDataType">
-    <xs:sequence>
-      <xs:element name="PublishedVariable" type="ua:NodeId" minOccurs="0" nillable="true" />
-      <xs:element name="AttributeId" type="xs:unsignedInt" minOccurs="0" />
-      <xs:element name="SamplingIntervalHint" type="xs:double" minOccurs="0" />
-      <xs:element name="DeadbandType" type="xs:unsignedInt" minOccurs="0" />
-      <xs:element name="DeadbandValue" type="xs:double" minOccurs="0" />
-      <xs:element name="IndexRange" type="xs:string" minOccurs="0" nillable="true" />
-      <xs:element name="SubstituteValue" type="ua:Variant" minOccurs="0" />
-      <xs:element name="MetaDataProperties" type="ua:ListOfQualifiedName" minOccurs="0" nillable="true" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="PublishedVariableDataType" type="tns:PublishedVariableDataType" />
-
-  <xs:complexType name="ListOfPublishedVariableDataType">
-    <xs:sequence>
-      <xs:element name="PublishedVariableDataType" type="tns:PublishedVariableDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ListOfPublishedVariableDataType" type="tns:ListOfPublishedVariableDataType" nillable="true"></xs:element>
-
-  <xs:complexType name="SecurityKeyServiceDataType">
-    <xs:sequence>
-      <xs:element name="ApplicationUri" type="xs:string" minOccurs="0" nillable="true" />
-      <xs:element name="EndpointUrls" type="ua:ListOfString" minOccurs="0" nillable="true" />
-      <xs:element name="AuthorizationUrls" type="ua:ListOfString" minOccurs="0" nillable="true" />
-      <xs:element name="TransportProfileUri" type="xs:string" minOccurs="0" nillable="true" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="SecurityKeyServiceDataType" type="tns:SecurityKeyServiceDataType" />
-
-  <xs:complexType name="ListOfSecurityKeyServiceDataType">
-    <xs:sequence>
-      <xs:element name="SecurityKeyServiceDataType" type="tns:SecurityKeyServiceDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ListOfSecurityKeyServiceDataType" type="tns:ListOfSecurityKeyServiceDataType" nillable="true"></xs:element>
-
   <xs:simpleType  name="DataSetContentMask">
     <xs:restriction base="xs:string">
       <xs:enumeration value="FieldStatusCode_1" />
@@ -846,6 +818,27 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ListOfDataSetContentMask" type="tns:ListOfDataSetContentMask" nillable="true"></xs:element>
+
+  <xs:complexType name="PublishedVariableDataType">
+    <xs:sequence>
+      <xs:element name="PublishedVariable" type="ua:NodeId" minOccurs="0" nillable="true" />
+      <xs:element name="AttributeId" type="xs:unsignedInt" minOccurs="0" />
+      <xs:element name="SamplingIntervalHint" type="xs:double" minOccurs="0" />
+      <xs:element name="DeadbandType" type="xs:unsignedInt" minOccurs="0" />
+      <xs:element name="DeadbandValue" type="xs:double" minOccurs="0" />
+      <xs:element name="IndexRange" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="SubstituteValue" type="ua:Variant" minOccurs="0" />
+      <xs:element name="MetaDataProperties" type="ua:ListOfQualifiedName" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PublishedVariableDataType" type="tns:PublishedVariableDataType" />
+
+  <xs:complexType name="ListOfPublishedVariableDataType">
+    <xs:sequence>
+      <xs:element name="PublishedVariableDataType" type="tns:PublishedVariableDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfPublishedVariableDataType" type="tns:ListOfPublishedVariableDataType" nillable="true"></xs:element>
 
   <xs:complexType name="DataConnectionDataType">
     <xs:sequence>

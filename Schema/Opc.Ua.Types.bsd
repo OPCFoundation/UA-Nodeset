@@ -293,6 +293,7 @@
 
   <opc:StructuredType Name="DataSetMetaDataType" BaseType="ua:ExtensionObject">
     <opc:Field Name="Name" TypeName="opc:String" />
+    <opc:Field Name="Description" TypeName="ua:LocalizedText" />
     <opc:Field Name="NoOfFields" TypeName="opc:Int32" />
     <opc:Field Name="Fields" TypeName="tns:FieldMetaData" LengthField="NoOfFields" />
     <opc:Field Name="DataSetClassId" TypeName="opc:Guid" />
@@ -305,9 +306,15 @@
     <opc:Field Name="ConfigurationVersion" TypeName="tns:ConfigurationVersionDataType" />
   </opc:StructuredType>
 
+  <opc:EnumeratedType Name="DataSetFieldFlags" LengthInBits="32">
+    <opc:EnumeratedValue Name="PromotedField" Value="1" />
+  </opc:EnumeratedType>
+
   <opc:StructuredType Name="FieldMetaData" BaseType="ua:ExtensionObject">
     <opc:Field Name="Name" TypeName="opc:String" />
-    <opc:Field Name="PromotedField" TypeName="opc:Boolean" />
+    <opc:Field Name="Description" TypeName="ua:LocalizedText" />
+    <opc:Field Name="FieldFlags" TypeName="tns:DataSetFieldFlags" />
+    <opc:Field Name="BuiltInType" TypeName="opc:Byte" />
     <opc:Field Name="DataType" TypeName="ua:NodeId" />
     <opc:Field Name="ValueRank" TypeName="opc:Int32" />
     <opc:Field Name="NoOfArrayDimensions" TypeName="opc:Int32" />
@@ -339,27 +346,6 @@
     <opc:Field Name="Value" TypeName="ua:Variant" />
   </opc:StructuredType>
 
-  <opc:StructuredType Name="PublishedVariableDataType" BaseType="ua:ExtensionObject">
-    <opc:Field Name="PublishedVariable" TypeName="ua:NodeId" />
-    <opc:Field Name="AttributeId" TypeName="opc:UInt32" />
-    <opc:Field Name="SamplingIntervalHint" TypeName="opc:Double" />
-    <opc:Field Name="DeadbandType" TypeName="opc:UInt32" />
-    <opc:Field Name="DeadbandValue" TypeName="opc:Double" />
-    <opc:Field Name="IndexRange" TypeName="opc:String" />
-    <opc:Field Name="SubstituteValue" TypeName="ua:Variant" />
-    <opc:Field Name="NoOfMetaDataProperties" TypeName="opc:Int32" />
-    <opc:Field Name="MetaDataProperties" TypeName="ua:QualifiedName" LengthField="NoOfMetaDataProperties" />
-  </opc:StructuredType>
-
-  <opc:StructuredType Name="SecurityKeyServiceDataType" BaseType="ua:ExtensionObject">
-    <opc:Field Name="ApplicationUri" TypeName="opc:String" />
-    <opc:Field Name="NoOfEndpointUrls" TypeName="opc:Int32" />
-    <opc:Field Name="EndpointUrls" TypeName="opc:String" LengthField="NoOfEndpointUrls" />
-    <opc:Field Name="NoOfAuthorizationUrls" TypeName="opc:Int32" />
-    <opc:Field Name="AuthorizationUrls" TypeName="opc:String" LengthField="NoOfAuthorizationUrls" />
-    <opc:Field Name="TransportProfileUri" TypeName="opc:String" />
-  </opc:StructuredType>
-
   <opc:EnumeratedType Name="DataSetContentMask" LengthInBits="32">
     <opc:EnumeratedValue Name="FieldStatusCode" Value="1" />
     <opc:EnumeratedValue Name="FieldSourceTimestamp" Value="2" />
@@ -373,6 +359,18 @@
     <opc:EnumeratedValue Name="HeaderMajorVersion" Value="512" />
     <opc:EnumeratedValue Name="HeaderMinorVersion" Value="1024" />
   </opc:EnumeratedType>
+
+  <opc:StructuredType Name="PublishedVariableDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="PublishedVariable" TypeName="ua:NodeId" />
+    <opc:Field Name="AttributeId" TypeName="opc:UInt32" />
+    <opc:Field Name="SamplingIntervalHint" TypeName="opc:Double" />
+    <opc:Field Name="DeadbandType" TypeName="opc:UInt32" />
+    <opc:Field Name="DeadbandValue" TypeName="opc:Double" />
+    <opc:Field Name="IndexRange" TypeName="opc:String" />
+    <opc:Field Name="SubstituteValue" TypeName="ua:Variant" />
+    <opc:Field Name="NoOfMetaDataProperties" TypeName="opc:Int32" />
+    <opc:Field Name="MetaDataProperties" TypeName="ua:QualifiedName" LengthField="NoOfMetaDataProperties" />
+  </opc:StructuredType>
 
   <opc:StructuredType Name="DataConnectionDataType" BaseType="ua:ExtensionObject">
     <opc:Field Name="DataSetFieldId" TypeName="opc:Guid" />

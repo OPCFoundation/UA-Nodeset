@@ -92,7 +92,6 @@
 /* #define OPCUA_EXCLUDE_EnumDescription */
 /* #define OPCUA_EXCLUDE_KeyValuePair */
 /* #define OPCUA_EXCLUDE_PublishedVariableDataType */
-/* #define OPCUA_EXCLUDE_SecurityKeyServiceDataType */
 /* #define OPCUA_EXCLUDE_DataConnectionDataType */
 /* #define OPCUA_EXCLUDE_Node */
 /* #define OPCUA_EXCLUDE_InstanceNode */
