@@ -26431,7 +26431,7 @@
               </TypeId>
               <Body>
                 <Argument>
-                  <Name>ServiceId</Name>
+                  <Name>ConnectType</Name>
                   <DataType>
                     <Identifier>i=7</Identifier>
                   </DataType>
@@ -26502,22 +26502,6 @@
       <Value>
         <Value>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <ExtensionObject>
-              <TypeId>
-                <Identifier>i=297</Identifier>
-              </TypeId>
-              <Body>
-                <Argument>
-                  <Name>DelayForNextCall</Name>
-                  <DataType>
-                    <Identifier>i=7</Identifier>
-                  </DataType>
-                  <ValueRank>-1</ValueRank>
-                  <ArrayDimensions />
-                  <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
-                </Argument>
-              </Body>
-            </ExtensionObject>
             <ExtensionObject>
               <TypeId>
                 <Identifier>i=297</Identifier>
@@ -28918,7 +28902,7 @@
               </TypeId>
               <Body>
                 <Argument>
-                  <Name>ServiceId</Name>
+                  <Name>ConnectType</Name>
                   <DataType>
                     <Identifier>i=7</Identifier>
                   </DataType>
@@ -28980,22 +28964,6 @@
       <Value>
         <Value>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <ExtensionObject>
-              <TypeId>
-                <Identifier>i=297</Identifier>
-              </TypeId>
-              <Body>
-                <Argument>
-                  <Name>DelayForNextCall</Name>
-                  <DataType>
-                    <Identifier>i=7</Identifier>
-                  </DataType>
-                  <ValueRank>-1</ValueRank>
-                  <ArrayDimensions />
-                  <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
-                </Argument>
-              </Body>
-            </ExtensionObject>
             <ExtensionObject>
               <TypeId>
                 <Identifier>i=297</Identifier>
@@ -30351,22 +30319,6 @@
                 </Argument>
               </Body>
             </ExtensionObject>
-            <ExtensionObject>
-              <TypeId>
-                <Identifier>i=297</Identifier>
-              </TypeId>
-              <Body>
-                <Argument>
-                  <Name>RequestId</Name>
-                  <DataType>
-                    <Identifier>i=7</Identifier>
-                  </DataType>
-                  <ValueRank>-1</ValueRank>
-                  <ArrayDimensions />
-                  <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
-                </Argument>
-              </Body>
-            </ExtensionObject>
           </ListOfExtensionObject>
         </Value>
       </Value>
@@ -31024,7 +30976,7 @@
               </TypeId>
               <Body>
                 <Argument>
-                  <Name>ServiceId</Name>
+                  <Name>ConnectType</Name>
                   <DataType>
                     <Identifier>i=7</Identifier>
                   </DataType>
@@ -31095,22 +31047,6 @@
       <Value>
         <Value>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <ExtensionObject>
-              <TypeId>
-                <Identifier>i=297</Identifier>
-              </TypeId>
-              <Body>
-                <Argument>
-                  <Name>DelayForNextCall</Name>
-                  <DataType>
-                    <Identifier>i=7</Identifier>
-                  </DataType>
-                  <ValueRank>-1</ValueRank>
-                  <ArrayDimensions />
-                  <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
-                </Argument>
-              </Body>
-            </ExtensionObject>
             <ExtensionObject>
               <TypeId>
                 <Identifier>i=297</Identifier>
@@ -31611,22 +31547,6 @@
                   <Name>CommunicationRelationId</Name>
                   <DataType>
                     <Identifier>i=15</Identifier>
-                  </DataType>
-                  <ValueRank>-1</ValueRank>
-                  <ArrayDimensions />
-                  <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
-                </Argument>
-              </Body>
-            </ExtensionObject>
-            <ExtensionObject>
-              <TypeId>
-                <Identifier>i=297</Identifier>
-              </TypeId>
-              <Body>
-                <Argument>
-                  <Name>RequestId</Name>
-                  <DataType>
-                    <Identifier>i=7</Identifier>
                   </DataType>
                   <ValueRank>-1</ValueRank>
                   <ArrayDimensions />
