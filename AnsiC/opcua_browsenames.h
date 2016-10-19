@@ -64,7 +64,6 @@
 #define OpcUa_BrowseName_AddReferencesRequest "AddReferencesRequest"
 #define OpcUa_BrowseName_AddReferencesResponse "AddReferencesResponse"
 #define OpcUa_BrowseName_Address "Address"
-#define OpcUa_BrowseName_AddressSpaceFile "AddressSpaceFile"
 #define OpcUa_BrowseName_AddressSpaceFileType "AddressSpaceFileType"
 #define OpcUa_BrowseName_AddSecurityGroup "AddSecurityGroup"
 #define OpcUa_BrowseName_AddUadpConnection "AddUadpConnection"

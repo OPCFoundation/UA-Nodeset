@@ -7265,172 +7265,22 @@ namespace Opc.Ua
         protected override void InitializeOptionalChildren(ISystemContext context)
         {
             base.InitializeOptionalChildren(context);
-
-            if (AddressSpaceFile != null)
-            {
-                AddressSpaceFile.Initialize(context, AddressSpaceFile_InitializationString);
-            }
         }
 
         #region Initialization String
-        private const string AddressSpaceFile_InitializationString =
-           "//////////8kYIAKAQAAAAAAEAAAAEFkZHJlc3NTcGFjZUZpbGUBAJstAwAAAAAtAAAAQSBmaWxlIGNv" +
-           "bnRhaW5pbmcgdGhlIG5vZGVzIG9mIHRoZSBuYW1lc3BhY2UuAC8BAEstmy0AAP////8KAAAANWCJCgIA" +
-           "AAAAAAQAAABTaXplAQCcLQMAAAAAHgAAAFRoZSBzaXplIG9mIHRoZSBmaWxlIGluIGJ5dGVzLgAuAESc" +
-           "LQAAAAn/////AQH/////AAAAADVgiQoCAAAAAAAIAAAAV3JpdGFibGUBAJYxAwAAAAAdAAAAV2hldGhl" +
-           "ciB0aGUgZmlsZSBpcyB3cml0YWJsZS4ALgBEljEAAAAB/////wEB/////wAAAAA1YIkKAgAAAAAADAAA" +
-           "AFVzZXJXcml0YWJsZQEAlzEDAAAAADEAAABXaGV0aGVyIHRoZSBmaWxlIGlzIHdyaXRhYmxlIGJ5IHRo" +
-           "ZSBjdXJyZW50IHVzZXIuAC4ARJcxAAAAAf////8BAf////8AAAAANWCJCgIAAAAAAAkAAABPcGVuQ291" +
-           "bnQBAJ8tAwAAAAAoAAAAVGhlIGN1cnJlbnQgbnVtYmVyIG9mIG9wZW4gZmlsZSBoYW5kbGVzLgAuAESf" +
-           "LQAAAAX/////AQH/////AAAAAARhggoEAAAAAAAEAAAAT3BlbgEAoC0ALwEAPC2gLQAAAQH/////AgAA" +
-           "ABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAKEtAC4ARKEtAACWAQAAAAEAKgEBEwAAAAQAAABN" +
-           "b2RlAAP/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50" +
-           "cwEAoi0ALgBEoi0AAJYBAAAAAQAqAQEZAAAACgAAAEZpbGVIYW5kbGUAB/////8AAAAAAAEAKAEBAAAA" +
-           "AQH/////AAAAAARhggoEAAAAAAAFAAAAQ2xvc2UBAKMtAC8BAD8toy0AAAEB/////wEAAAAVYKkKAgAA" +
-           "AAAADgAAAElucHV0QXJndW1lbnRzAQCkLQAuAESkLQAAlgEAAAABACoBARkAAAAKAAAARmlsZUhhbmRs" +
-           "ZQAH/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAAAAAQAAABSZWFkAQClLQAvAQBBLaUt" +
-           "AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEApi0ALgBEpi0AAJYCAAAAAQAq" +
-           "AQEZAAAACgAAAEZpbGVIYW5kbGUAB/////8AAAAAAAEAKgEBFQAAAAYAAABMZW5ndGgABv////8AAAAA" +
-           "AAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQCnLQAuAESnLQAA" +
-           "lgEAAAABACoBARMAAAAEAAAARGF0YQAP/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAAA" +
-           "AAUAAABXcml0ZQEAqC0ALwEARC2oLQAAAQH/////AQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVu" +
-           "dHMBAKktAC4ARKktAACWAgAAAAEAKgEBGQAAAAoAAABGaWxlSGFuZGxlAAf/////AAAAAAABACoBARMA" +
-           "AAAEAAAARGF0YQAP/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAAAAAsAAABHZXRQb3Np" +
-           "dGlvbgEAqi0ALwEARi2qLQAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAKst" +
-           "AC4ARKstAACWAQAAAAEAKgEBGQAAAAoAAABGaWxlSGFuZGxlAAf/////AAAAAAABACgBAQAAAAEB////" +
-           "/wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEArC0ALgBErC0AAJYBAAAAAQAqAQEXAAAA" +
-           "CAAAAFBvc2l0aW9uAAn/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAAACwAAAFNldFBv" +
-           "c2l0aW9uAQCtLQAvAQBJLa0tAAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEA" +
-           "ri0ALgBEri0AAJYCAAAAAQAqAQEZAAAACgAAAEZpbGVIYW5kbGUAB/////8AAAAAAAEAKgEBFwAAAAgA" +
-           "AABQb3NpdGlvbgAJ/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
-
         private const string InitializationString =
-           "//////////8EYIAAAQAAAAAAFgAAAE5hbWVzcGFjZXNUeXBlSW5zdGFuY2UBAH0tAQB9Lf////8BAAAA" +
-           "JGCACgEAAAAAABAAAABBZGRyZXNzU3BhY2VGaWxlAQCbLQMAAAAALQAAAEEgZmlsZSBjb250YWluaW5n" +
-           "IHRoZSBub2RlcyBvZiB0aGUgbmFtZXNwYWNlLgAvAQBLLZstAAD/////CgAAADVgiQoCAAAAAAAEAAAA" +
-           "U2l6ZQEAnC0DAAAAAB4AAABUaGUgc2l6ZSBvZiB0aGUgZmlsZSBpbiBieXRlcy4ALgBEnC0AAAAJ////" +
-           "/wEB/////wAAAAA1YIkKAgAAAAAACAAAAFdyaXRhYmxlAQCWMQMAAAAAHQAAAFdoZXRoZXIgdGhlIGZp" +
-           "bGUgaXMgd3JpdGFibGUuAC4ARJYxAAAAAf////8BAf////8AAAAANWCJCgIAAAAAAAwAAABVc2VyV3Jp" +
-           "dGFibGUBAJcxAwAAAAAxAAAAV2hldGhlciB0aGUgZmlsZSBpcyB3cml0YWJsZSBieSB0aGUgY3VycmVu" +
-           "dCB1c2VyLgAuAESXMQAAAAH/////AQH/////AAAAADVgiQoCAAAAAAAJAAAAT3BlbkNvdW50AQCfLQMA" +
-           "AAAAKAAAAFRoZSBjdXJyZW50IG51bWJlciBvZiBvcGVuIGZpbGUgaGFuZGxlcy4ALgBEny0AAAAF////" +
-           "/wEB/////wAAAAAEYYIKBAAAAAAABAAAAE9wZW4BAKAtAC8BADwtoC0AAAEB/////wIAAAAVYKkKAgAA" +
-           "AAAADgAAAElucHV0QXJndW1lbnRzAQChLQAuAEShLQAAlgEAAAABACoBARMAAAAEAAAATW9kZQAD////" +
-           "/wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAKItAC4A" +
-           "RKItAACWAQAAAAEAKgEBGQAAAAoAAABGaWxlSGFuZGxlAAf/////AAAAAAABACgBAQAAAAEB/////wAA" +
-           "AAAEYYIKBAAAAAAABQAAAENsb3NlAQCjLQAvAQA/LaMtAAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJ" +
-           "bnB1dEFyZ3VtZW50cwEApC0ALgBEpC0AAJYBAAAAAQAqAQEZAAAACgAAAEZpbGVIYW5kbGUAB/////8A" +
-           "AAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAAAEAAAAUmVhZAEApS0ALwEAQS2lLQAAAQH/////" +
-           "AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAKYtAC4ARKYtAACWAgAAAAEAKgEBGQAAAAoA" +
-           "AABGaWxlSGFuZGxlAAf/////AAAAAAABACoBARUAAAAGAAAATGVuZ3RoAAb/////AAAAAAABACgBAQAA" +
-           "AAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEApy0ALgBEpy0AAJYBAAAAAQAq" +
-           "AQETAAAABAAAAERhdGEAD/////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAAAFAAAAV3Jp" +
-           "dGUBAKgtAC8BAEQtqC0AAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQCpLQAu" +
-           "AESpLQAAlgIAAAABACoBARkAAAAKAAAARmlsZUhhbmRsZQAH/////wAAAAAAAQAqAQETAAAABAAAAERh" +
-           "dGEAD/////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAAALAAAAR2V0UG9zaXRpb24BAKot" +
-           "AC8BAEYtqi0AAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQCrLQAuAESrLQAA" +
-           "lgEAAAABACoBARkAAAAKAAAARmlsZUhhbmRsZQAH/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCp" +
-           "CgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAKwtAC4ARKwtAACWAQAAAAEAKgEBFwAAAAgAAABQb3Np" +
-           "dGlvbgAJ/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAAAAAsAAABTZXRQb3NpdGlvbgEA" +
-           "rS0ALwEASS2tLQAAAQH/////AQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAK4tAC4ARK4t" +
-           "AACWAgAAAAEAKgEBGQAAAAoAAABGaWxlSGFuZGxlAAf/////AAAAAAABACoBARcAAAAIAAAAUG9zaXRp" +
-           "b24ACf////8AAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
+           "//////////8EYIAAAQAAAAAAFgAAAE5hbWVzcGFjZXNUeXBlSW5zdGFuY2UBAH0tAQB9Lf////8AAAAA";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A file containing the nodes of the namespace.
-        /// </summary>
-        public AddressSpaceFileState AddressSpaceFile
-        {
-            get
-            {
-                return m_addressSpaceFile;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_addressSpaceFile, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_addressSpaceFile = value;
-            }
-        }
         #endregion
 
         #region Overridden Methods
-        /// <summary>
-        /// Populates a list with the children that belong to the node.
-        /// </summary>
-        /// <param name="context">The context for the system being accessed.</param>
-        /// <param name="children">The list of children to populate.</param>
-        public override void GetChildren(
-            ISystemContext context,
-            IList<BaseInstanceState> children)
-        {
-            if (m_addressSpaceFile != null)
-            {
-                children.Add(m_addressSpaceFile);
-            }
-
-            base.GetChildren(context, children);
-        }
-
-        /// <summary>
-        /// Finds the child with the specified browse name.
-        /// </summary>
-        protected override BaseInstanceState FindChild(
-            ISystemContext context,
-            QualifiedName browseName,
-            bool createOrReplace,
-            BaseInstanceState replacement)
-        {
-            if (QualifiedName.IsNull(browseName))
-            {
-                return null;
-            }
-
-            BaseInstanceState instance = null;
-
-            switch (browseName.Name)
-            {
-                case Opc.Ua.BrowseNames.AddressSpaceFile:
-                {
-                    if (createOrReplace)
-                    {
-                        if (AddressSpaceFile == null)
-                        {
-                            if (replacement == null)
-                            {
-                                AddressSpaceFile = new AddressSpaceFileState(this);
-                            }
-                            else
-                            {
-                                AddressSpaceFile = (AddressSpaceFileState)replacement;
-                            }
-                        }
-                    }
-
-                    instance = AddressSpaceFile;
-                    break;
-                }
-            }
-
-            if (instance != null)
-            {
-                return instance;
-            }
-
-            return base.FindChild(context, browseName, createOrReplace, replacement);
-        }
         #endregion
 
         #region Private Fields
-        private AddressSpaceFileState m_addressSpaceFile;
         #endregion
     }
     #endif

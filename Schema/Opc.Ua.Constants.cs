@@ -1655,36 +1655,6 @@ namespace Opc.Ua
     public static partial class Methods
     {
         /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Open Method.
-        /// </summary>
-        public const uint ServerType_Namespaces_AddressSpaceFile_Open = 11533;
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Close Method.
-        /// </summary>
-        public const uint ServerType_Namespaces_AddressSpaceFile_Close = 11536;
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Read Method.
-        /// </summary>
-        public const uint ServerType_Namespaces_AddressSpaceFile_Read = 11538;
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Write Method.
-        /// </summary>
-        public const uint ServerType_Namespaces_AddressSpaceFile_Write = 11541;
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_GetPosition Method.
-        /// </summary>
-        public const uint ServerType_Namespaces_AddressSpaceFile_GetPosition = 11543;
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_SetPosition Method.
-        /// </summary>
-        public const uint ServerType_Namespaces_AddressSpaceFile_SetPosition = 11546;
-
-        /// <summary>
         /// The identifier for the ServerType_GetMonitoredItems Method.
         /// </summary>
         public const uint ServerType_GetMonitoredItems = 11489;
@@ -1888,66 +1858,6 @@ namespace Opc.Ua
         /// The identifier for the NamespacesType_NamespaceIdentifier_Placeholder_NamespaceFile_SetPosition Method.
         /// </summary>
         public const uint NamespacesType_NamespaceIdentifier_Placeholder_NamespaceFile_SetPosition = 11672;
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Open Method.
-        /// </summary>
-        public const uint NamespacesType_AddressSpaceFile_Open = 11680;
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Close Method.
-        /// </summary>
-        public const uint NamespacesType_AddressSpaceFile_Close = 11683;
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Read Method.
-        /// </summary>
-        public const uint NamespacesType_AddressSpaceFile_Read = 11685;
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Write Method.
-        /// </summary>
-        public const uint NamespacesType_AddressSpaceFile_Write = 11688;
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_GetPosition Method.
-        /// </summary>
-        public const uint NamespacesType_AddressSpaceFile_GetPosition = 11690;
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_SetPosition Method.
-        /// </summary>
-        public const uint NamespacesType_AddressSpaceFile_SetPosition = 11693;
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Open Method.
-        /// </summary>
-        public const uint Server_Namespaces_AddressSpaceFile_Open = 11721;
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Close Method.
-        /// </summary>
-        public const uint Server_Namespaces_AddressSpaceFile_Close = 11724;
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Read Method.
-        /// </summary>
-        public const uint Server_Namespaces_AddressSpaceFile_Read = 11726;
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Write Method.
-        /// </summary>
-        public const uint Server_Namespaces_AddressSpaceFile_Write = 11729;
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_GetPosition Method.
-        /// </summary>
-        public const uint Server_Namespaces_AddressSpaceFile_GetPosition = 11731;
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_SetPosition Method.
-        /// </summary>
-        public const uint Server_Namespaces_AddressSpaceFile_SetPosition = 11734;
 
         /// <summary>
         /// The identifier for the Server_GetMonitoredItems Method.
@@ -3368,11 +3278,6 @@ namespace Opc.Ua
         /// The identifier for the NamespacesType_NamespaceIdentifier_Placeholder Object.
         /// </summary>
         public const uint NamespacesType_NamespaceIdentifier_Placeholder = 11646;
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile Object.
-        /// </summary>
-        public const uint NamespacesType_AddressSpaceFile = 11675;
 
         /// <summary>
         /// The identifier for the EventTypesFolder Object.
@@ -7990,71 +7895,6 @@ namespace Opc.Ua
         public const uint ServerType_ServerRedundancy_RedundancySupport = 3115;
 
         /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Size Variable.
-        /// </summary>
-        public const uint ServerType_Namespaces_AddressSpaceFile_Size = 11529;
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Writable Variable.
-        /// </summary>
-        public const uint ServerType_Namespaces_AddressSpaceFile_Writable = 12684;
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_UserWritable Variable.
-        /// </summary>
-        public const uint ServerType_Namespaces_AddressSpaceFile_UserWritable = 12685;
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_OpenCount Variable.
-        /// </summary>
-        public const uint ServerType_Namespaces_AddressSpaceFile_OpenCount = 11532;
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Open_InputArguments Variable.
-        /// </summary>
-        public const uint ServerType_Namespaces_AddressSpaceFile_Open_InputArguments = 11534;
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Open_OutputArguments Variable.
-        /// </summary>
-        public const uint ServerType_Namespaces_AddressSpaceFile_Open_OutputArguments = 11535;
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Close_InputArguments Variable.
-        /// </summary>
-        public const uint ServerType_Namespaces_AddressSpaceFile_Close_InputArguments = 11537;
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Read_InputArguments Variable.
-        /// </summary>
-        public const uint ServerType_Namespaces_AddressSpaceFile_Read_InputArguments = 11539;
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Read_OutputArguments Variable.
-        /// </summary>
-        public const uint ServerType_Namespaces_AddressSpaceFile_Read_OutputArguments = 11540;
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Write_InputArguments Variable.
-        /// </summary>
-        public const uint ServerType_Namespaces_AddressSpaceFile_Write_InputArguments = 11542;
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_GetPosition_InputArguments Variable.
-        /// </summary>
-        public const uint ServerType_Namespaces_AddressSpaceFile_GetPosition_InputArguments = 11544;
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_GetPosition_OutputArguments Variable.
-        /// </summary>
-        public const uint ServerType_Namespaces_AddressSpaceFile_GetPosition_OutputArguments = 11545;
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_SetPosition_InputArguments Variable.
-        /// </summary>
-        public const uint ServerType_Namespaces_AddressSpaceFile_SetPosition_InputArguments = 11547;
-
-        /// <summary>
         /// The identifier for the ServerType_GetMonitoredItems_InputArguments Variable.
         /// </summary>
         public const uint ServerType_GetMonitoredItems_InputArguments = 11490;
@@ -9438,71 +9278,6 @@ namespace Opc.Ua
         /// The identifier for the NamespacesType_NamespaceIdentifier_Placeholder_NamespaceFile_SetPosition_InputArguments Variable.
         /// </summary>
         public const uint NamespacesType_NamespaceIdentifier_Placeholder_NamespaceFile_SetPosition_InputArguments = 11673;
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Size Variable.
-        /// </summary>
-        public const uint NamespacesType_AddressSpaceFile_Size = 11676;
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Writable Variable.
-        /// </summary>
-        public const uint NamespacesType_AddressSpaceFile_Writable = 12694;
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_UserWritable Variable.
-        /// </summary>
-        public const uint NamespacesType_AddressSpaceFile_UserWritable = 12695;
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_OpenCount Variable.
-        /// </summary>
-        public const uint NamespacesType_AddressSpaceFile_OpenCount = 11679;
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Open_InputArguments Variable.
-        /// </summary>
-        public const uint NamespacesType_AddressSpaceFile_Open_InputArguments = 11681;
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Open_OutputArguments Variable.
-        /// </summary>
-        public const uint NamespacesType_AddressSpaceFile_Open_OutputArguments = 11682;
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Close_InputArguments Variable.
-        /// </summary>
-        public const uint NamespacesType_AddressSpaceFile_Close_InputArguments = 11684;
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Read_InputArguments Variable.
-        /// </summary>
-        public const uint NamespacesType_AddressSpaceFile_Read_InputArguments = 11686;
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Read_OutputArguments Variable.
-        /// </summary>
-        public const uint NamespacesType_AddressSpaceFile_Read_OutputArguments = 11687;
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Write_InputArguments Variable.
-        /// </summary>
-        public const uint NamespacesType_AddressSpaceFile_Write_InputArguments = 11689;
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_GetPosition_InputArguments Variable.
-        /// </summary>
-        public const uint NamespacesType_AddressSpaceFile_GetPosition_InputArguments = 11691;
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_GetPosition_OutputArguments Variable.
-        /// </summary>
-        public const uint NamespacesType_AddressSpaceFile_GetPosition_OutputArguments = 11692;
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_SetPosition_InputArguments Variable.
-        /// </summary>
-        public const uint NamespacesType_AddressSpaceFile_SetPosition_InputArguments = 11694;
 
         /// <summary>
         /// The identifier for the BaseEventType_EventId Variable.
@@ -11098,71 +10873,6 @@ namespace Opc.Ua
         /// The identifier for the Server_ServerRedundancy_RedundancySupport Variable.
         /// </summary>
         public const uint Server_ServerRedundancy_RedundancySupport = 3709;
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Size Variable.
-        /// </summary>
-        public const uint Server_Namespaces_AddressSpaceFile_Size = 11717;
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Writable Variable.
-        /// </summary>
-        public const uint Server_Namespaces_AddressSpaceFile_Writable = 12696;
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_UserWritable Variable.
-        /// </summary>
-        public const uint Server_Namespaces_AddressSpaceFile_UserWritable = 12697;
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_OpenCount Variable.
-        /// </summary>
-        public const uint Server_Namespaces_AddressSpaceFile_OpenCount = 11720;
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Open_InputArguments Variable.
-        /// </summary>
-        public const uint Server_Namespaces_AddressSpaceFile_Open_InputArguments = 11722;
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Open_OutputArguments Variable.
-        /// </summary>
-        public const uint Server_Namespaces_AddressSpaceFile_Open_OutputArguments = 11723;
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Close_InputArguments Variable.
-        /// </summary>
-        public const uint Server_Namespaces_AddressSpaceFile_Close_InputArguments = 11725;
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Read_InputArguments Variable.
-        /// </summary>
-        public const uint Server_Namespaces_AddressSpaceFile_Read_InputArguments = 11727;
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Read_OutputArguments Variable.
-        /// </summary>
-        public const uint Server_Namespaces_AddressSpaceFile_Read_OutputArguments = 11728;
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Write_InputArguments Variable.
-        /// </summary>
-        public const uint Server_Namespaces_AddressSpaceFile_Write_InputArguments = 11730;
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_GetPosition_InputArguments Variable.
-        /// </summary>
-        public const uint Server_Namespaces_AddressSpaceFile_GetPosition_InputArguments = 11732;
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_GetPosition_OutputArguments Variable.
-        /// </summary>
-        public const uint Server_Namespaces_AddressSpaceFile_GetPosition_OutputArguments = 11733;
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_SetPosition_InputArguments Variable.
-        /// </summary>
-        public const uint Server_Namespaces_AddressSpaceFile_SetPosition_InputArguments = 11735;
 
         /// <summary>
         /// The identifier for the Server_GetMonitoredItems_InputArguments Variable.
@@ -20110,36 +19820,6 @@ namespace Opc.Ua
     public static partial class MethodIds
     {
         /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Open Method.
-        /// </summary>
-        public static readonly NodeId ServerType_Namespaces_AddressSpaceFile_Open = new NodeId(Opc.Ua.Methods.ServerType_Namespaces_AddressSpaceFile_Open);
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Close Method.
-        /// </summary>
-        public static readonly NodeId ServerType_Namespaces_AddressSpaceFile_Close = new NodeId(Opc.Ua.Methods.ServerType_Namespaces_AddressSpaceFile_Close);
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Read Method.
-        /// </summary>
-        public static readonly NodeId ServerType_Namespaces_AddressSpaceFile_Read = new NodeId(Opc.Ua.Methods.ServerType_Namespaces_AddressSpaceFile_Read);
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Write Method.
-        /// </summary>
-        public static readonly NodeId ServerType_Namespaces_AddressSpaceFile_Write = new NodeId(Opc.Ua.Methods.ServerType_Namespaces_AddressSpaceFile_Write);
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_GetPosition Method.
-        /// </summary>
-        public static readonly NodeId ServerType_Namespaces_AddressSpaceFile_GetPosition = new NodeId(Opc.Ua.Methods.ServerType_Namespaces_AddressSpaceFile_GetPosition);
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_SetPosition Method.
-        /// </summary>
-        public static readonly NodeId ServerType_Namespaces_AddressSpaceFile_SetPosition = new NodeId(Opc.Ua.Methods.ServerType_Namespaces_AddressSpaceFile_SetPosition);
-
-        /// <summary>
         /// The identifier for the ServerType_GetMonitoredItems Method.
         /// </summary>
         public static readonly NodeId ServerType_GetMonitoredItems = new NodeId(Opc.Ua.Methods.ServerType_GetMonitoredItems);
@@ -20343,66 +20023,6 @@ namespace Opc.Ua
         /// The identifier for the NamespacesType_NamespaceIdentifier_Placeholder_NamespaceFile_SetPosition Method.
         /// </summary>
         public static readonly NodeId NamespacesType_NamespaceIdentifier_Placeholder_NamespaceFile_SetPosition = new NodeId(Opc.Ua.Methods.NamespacesType_NamespaceIdentifier_Placeholder_NamespaceFile_SetPosition);
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Open Method.
-        /// </summary>
-        public static readonly NodeId NamespacesType_AddressSpaceFile_Open = new NodeId(Opc.Ua.Methods.NamespacesType_AddressSpaceFile_Open);
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Close Method.
-        /// </summary>
-        public static readonly NodeId NamespacesType_AddressSpaceFile_Close = new NodeId(Opc.Ua.Methods.NamespacesType_AddressSpaceFile_Close);
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Read Method.
-        /// </summary>
-        public static readonly NodeId NamespacesType_AddressSpaceFile_Read = new NodeId(Opc.Ua.Methods.NamespacesType_AddressSpaceFile_Read);
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Write Method.
-        /// </summary>
-        public static readonly NodeId NamespacesType_AddressSpaceFile_Write = new NodeId(Opc.Ua.Methods.NamespacesType_AddressSpaceFile_Write);
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_GetPosition Method.
-        /// </summary>
-        public static readonly NodeId NamespacesType_AddressSpaceFile_GetPosition = new NodeId(Opc.Ua.Methods.NamespacesType_AddressSpaceFile_GetPosition);
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_SetPosition Method.
-        /// </summary>
-        public static readonly NodeId NamespacesType_AddressSpaceFile_SetPosition = new NodeId(Opc.Ua.Methods.NamespacesType_AddressSpaceFile_SetPosition);
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Open Method.
-        /// </summary>
-        public static readonly NodeId Server_Namespaces_AddressSpaceFile_Open = new NodeId(Opc.Ua.Methods.Server_Namespaces_AddressSpaceFile_Open);
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Close Method.
-        /// </summary>
-        public static readonly NodeId Server_Namespaces_AddressSpaceFile_Close = new NodeId(Opc.Ua.Methods.Server_Namespaces_AddressSpaceFile_Close);
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Read Method.
-        /// </summary>
-        public static readonly NodeId Server_Namespaces_AddressSpaceFile_Read = new NodeId(Opc.Ua.Methods.Server_Namespaces_AddressSpaceFile_Read);
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Write Method.
-        /// </summary>
-        public static readonly NodeId Server_Namespaces_AddressSpaceFile_Write = new NodeId(Opc.Ua.Methods.Server_Namespaces_AddressSpaceFile_Write);
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_GetPosition Method.
-        /// </summary>
-        public static readonly NodeId Server_Namespaces_AddressSpaceFile_GetPosition = new NodeId(Opc.Ua.Methods.Server_Namespaces_AddressSpaceFile_GetPosition);
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_SetPosition Method.
-        /// </summary>
-        public static readonly NodeId Server_Namespaces_AddressSpaceFile_SetPosition = new NodeId(Opc.Ua.Methods.Server_Namespaces_AddressSpaceFile_SetPosition);
 
         /// <summary>
         /// The identifier for the Server_GetMonitoredItems Method.
@@ -21823,11 +21443,6 @@ namespace Opc.Ua
         /// The identifier for the NamespacesType_NamespaceIdentifier_Placeholder Object.
         /// </summary>
         public static readonly NodeId NamespacesType_NamespaceIdentifier_Placeholder = new NodeId(Opc.Ua.Objects.NamespacesType_NamespaceIdentifier_Placeholder);
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile Object.
-        /// </summary>
-        public static readonly NodeId NamespacesType_AddressSpaceFile = new NodeId(Opc.Ua.Objects.NamespacesType_AddressSpaceFile);
 
         /// <summary>
         /// The identifier for the EventTypesFolder Object.
@@ -26445,71 +26060,6 @@ namespace Opc.Ua
         public static readonly NodeId ServerType_ServerRedundancy_RedundancySupport = new NodeId(Opc.Ua.Variables.ServerType_ServerRedundancy_RedundancySupport);
 
         /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Size Variable.
-        /// </summary>
-        public static readonly NodeId ServerType_Namespaces_AddressSpaceFile_Size = new NodeId(Opc.Ua.Variables.ServerType_Namespaces_AddressSpaceFile_Size);
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Writable Variable.
-        /// </summary>
-        public static readonly NodeId ServerType_Namespaces_AddressSpaceFile_Writable = new NodeId(Opc.Ua.Variables.ServerType_Namespaces_AddressSpaceFile_Writable);
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_UserWritable Variable.
-        /// </summary>
-        public static readonly NodeId ServerType_Namespaces_AddressSpaceFile_UserWritable = new NodeId(Opc.Ua.Variables.ServerType_Namespaces_AddressSpaceFile_UserWritable);
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_OpenCount Variable.
-        /// </summary>
-        public static readonly NodeId ServerType_Namespaces_AddressSpaceFile_OpenCount = new NodeId(Opc.Ua.Variables.ServerType_Namespaces_AddressSpaceFile_OpenCount);
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Open_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId ServerType_Namespaces_AddressSpaceFile_Open_InputArguments = new NodeId(Opc.Ua.Variables.ServerType_Namespaces_AddressSpaceFile_Open_InputArguments);
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Open_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId ServerType_Namespaces_AddressSpaceFile_Open_OutputArguments = new NodeId(Opc.Ua.Variables.ServerType_Namespaces_AddressSpaceFile_Open_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Close_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId ServerType_Namespaces_AddressSpaceFile_Close_InputArguments = new NodeId(Opc.Ua.Variables.ServerType_Namespaces_AddressSpaceFile_Close_InputArguments);
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Read_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId ServerType_Namespaces_AddressSpaceFile_Read_InputArguments = new NodeId(Opc.Ua.Variables.ServerType_Namespaces_AddressSpaceFile_Read_InputArguments);
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Read_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId ServerType_Namespaces_AddressSpaceFile_Read_OutputArguments = new NodeId(Opc.Ua.Variables.ServerType_Namespaces_AddressSpaceFile_Read_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_Write_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId ServerType_Namespaces_AddressSpaceFile_Write_InputArguments = new NodeId(Opc.Ua.Variables.ServerType_Namespaces_AddressSpaceFile_Write_InputArguments);
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_GetPosition_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId ServerType_Namespaces_AddressSpaceFile_GetPosition_InputArguments = new NodeId(Opc.Ua.Variables.ServerType_Namespaces_AddressSpaceFile_GetPosition_InputArguments);
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_GetPosition_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId ServerType_Namespaces_AddressSpaceFile_GetPosition_OutputArguments = new NodeId(Opc.Ua.Variables.ServerType_Namespaces_AddressSpaceFile_GetPosition_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the ServerType_Namespaces_AddressSpaceFile_SetPosition_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId ServerType_Namespaces_AddressSpaceFile_SetPosition_InputArguments = new NodeId(Opc.Ua.Variables.ServerType_Namespaces_AddressSpaceFile_SetPosition_InputArguments);
-
-        /// <summary>
         /// The identifier for the ServerType_GetMonitoredItems_InputArguments Variable.
         /// </summary>
         public static readonly NodeId ServerType_GetMonitoredItems_InputArguments = new NodeId(Opc.Ua.Variables.ServerType_GetMonitoredItems_InputArguments);
@@ -27893,71 +27443,6 @@ namespace Opc.Ua
         /// The identifier for the NamespacesType_NamespaceIdentifier_Placeholder_NamespaceFile_SetPosition_InputArguments Variable.
         /// </summary>
         public static readonly NodeId NamespacesType_NamespaceIdentifier_Placeholder_NamespaceFile_SetPosition_InputArguments = new NodeId(Opc.Ua.Variables.NamespacesType_NamespaceIdentifier_Placeholder_NamespaceFile_SetPosition_InputArguments);
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Size Variable.
-        /// </summary>
-        public static readonly NodeId NamespacesType_AddressSpaceFile_Size = new NodeId(Opc.Ua.Variables.NamespacesType_AddressSpaceFile_Size);
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Writable Variable.
-        /// </summary>
-        public static readonly NodeId NamespacesType_AddressSpaceFile_Writable = new NodeId(Opc.Ua.Variables.NamespacesType_AddressSpaceFile_Writable);
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_UserWritable Variable.
-        /// </summary>
-        public static readonly NodeId NamespacesType_AddressSpaceFile_UserWritable = new NodeId(Opc.Ua.Variables.NamespacesType_AddressSpaceFile_UserWritable);
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_OpenCount Variable.
-        /// </summary>
-        public static readonly NodeId NamespacesType_AddressSpaceFile_OpenCount = new NodeId(Opc.Ua.Variables.NamespacesType_AddressSpaceFile_OpenCount);
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Open_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId NamespacesType_AddressSpaceFile_Open_InputArguments = new NodeId(Opc.Ua.Variables.NamespacesType_AddressSpaceFile_Open_InputArguments);
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Open_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId NamespacesType_AddressSpaceFile_Open_OutputArguments = new NodeId(Opc.Ua.Variables.NamespacesType_AddressSpaceFile_Open_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Close_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId NamespacesType_AddressSpaceFile_Close_InputArguments = new NodeId(Opc.Ua.Variables.NamespacesType_AddressSpaceFile_Close_InputArguments);
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Read_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId NamespacesType_AddressSpaceFile_Read_InputArguments = new NodeId(Opc.Ua.Variables.NamespacesType_AddressSpaceFile_Read_InputArguments);
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Read_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId NamespacesType_AddressSpaceFile_Read_OutputArguments = new NodeId(Opc.Ua.Variables.NamespacesType_AddressSpaceFile_Read_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_Write_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId NamespacesType_AddressSpaceFile_Write_InputArguments = new NodeId(Opc.Ua.Variables.NamespacesType_AddressSpaceFile_Write_InputArguments);
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_GetPosition_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId NamespacesType_AddressSpaceFile_GetPosition_InputArguments = new NodeId(Opc.Ua.Variables.NamespacesType_AddressSpaceFile_GetPosition_InputArguments);
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_GetPosition_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId NamespacesType_AddressSpaceFile_GetPosition_OutputArguments = new NodeId(Opc.Ua.Variables.NamespacesType_AddressSpaceFile_GetPosition_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the NamespacesType_AddressSpaceFile_SetPosition_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId NamespacesType_AddressSpaceFile_SetPosition_InputArguments = new NodeId(Opc.Ua.Variables.NamespacesType_AddressSpaceFile_SetPosition_InputArguments);
 
         /// <summary>
         /// The identifier for the BaseEventType_EventId Variable.
@@ -29553,71 +29038,6 @@ namespace Opc.Ua
         /// The identifier for the Server_ServerRedundancy_RedundancySupport Variable.
         /// </summary>
         public static readonly NodeId Server_ServerRedundancy_RedundancySupport = new NodeId(Opc.Ua.Variables.Server_ServerRedundancy_RedundancySupport);
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Size Variable.
-        /// </summary>
-        public static readonly NodeId Server_Namespaces_AddressSpaceFile_Size = new NodeId(Opc.Ua.Variables.Server_Namespaces_AddressSpaceFile_Size);
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Writable Variable.
-        /// </summary>
-        public static readonly NodeId Server_Namespaces_AddressSpaceFile_Writable = new NodeId(Opc.Ua.Variables.Server_Namespaces_AddressSpaceFile_Writable);
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_UserWritable Variable.
-        /// </summary>
-        public static readonly NodeId Server_Namespaces_AddressSpaceFile_UserWritable = new NodeId(Opc.Ua.Variables.Server_Namespaces_AddressSpaceFile_UserWritable);
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_OpenCount Variable.
-        /// </summary>
-        public static readonly NodeId Server_Namespaces_AddressSpaceFile_OpenCount = new NodeId(Opc.Ua.Variables.Server_Namespaces_AddressSpaceFile_OpenCount);
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Open_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId Server_Namespaces_AddressSpaceFile_Open_InputArguments = new NodeId(Opc.Ua.Variables.Server_Namespaces_AddressSpaceFile_Open_InputArguments);
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Open_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId Server_Namespaces_AddressSpaceFile_Open_OutputArguments = new NodeId(Opc.Ua.Variables.Server_Namespaces_AddressSpaceFile_Open_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Close_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId Server_Namespaces_AddressSpaceFile_Close_InputArguments = new NodeId(Opc.Ua.Variables.Server_Namespaces_AddressSpaceFile_Close_InputArguments);
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Read_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId Server_Namespaces_AddressSpaceFile_Read_InputArguments = new NodeId(Opc.Ua.Variables.Server_Namespaces_AddressSpaceFile_Read_InputArguments);
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Read_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId Server_Namespaces_AddressSpaceFile_Read_OutputArguments = new NodeId(Opc.Ua.Variables.Server_Namespaces_AddressSpaceFile_Read_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_Write_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId Server_Namespaces_AddressSpaceFile_Write_InputArguments = new NodeId(Opc.Ua.Variables.Server_Namespaces_AddressSpaceFile_Write_InputArguments);
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_GetPosition_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId Server_Namespaces_AddressSpaceFile_GetPosition_InputArguments = new NodeId(Opc.Ua.Variables.Server_Namespaces_AddressSpaceFile_GetPosition_InputArguments);
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_GetPosition_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId Server_Namespaces_AddressSpaceFile_GetPosition_OutputArguments = new NodeId(Opc.Ua.Variables.Server_Namespaces_AddressSpaceFile_GetPosition_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the Server_Namespaces_AddressSpaceFile_SetPosition_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId Server_Namespaces_AddressSpaceFile_SetPosition_InputArguments = new NodeId(Opc.Ua.Variables.Server_Namespaces_AddressSpaceFile_SetPosition_InputArguments);
 
         /// <summary>
         /// The identifier for the Server_GetMonitoredItems_InputArguments Variable.
@@ -37122,11 +36542,6 @@ namespace Opc.Ua
         /// The BrowseName for the Address component.
         /// </summary>
         public const string Address = "Address";
-
-        /// <summary>
-        /// The BrowseName for the AddressSpaceFile component.
-        /// </summary>
-        public const string AddressSpaceFile = "AddressSpaceFile";
 
         /// <summary>
         /// The BrowseName for the AddressSpaceFileType component.
