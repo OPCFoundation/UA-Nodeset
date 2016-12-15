@@ -148,19 +148,19 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_Attributes_DataTypeDefinition 23
 
 /*============================================================================
- * The permissions available for the node.
+ * The permissions for the node granted to roles.
  *===========================================================================*/
-#define OpcUa_Attributes_Permissions 24
+#define OpcUa_Attributes_RolePermissions 24
 
 /*============================================================================
- * The subset of permissions available for the current user.
+ * The subset of permissions available for the roles available to the current session.
  *===========================================================================*/
-#define OpcUa_Attributes_UserPermissions 25
+#define OpcUa_Attributes_UserRolePermissions 25
 
 /*============================================================================
- * The permissions granted to roles.
+ * The access restrictions assigned to the node.
  *===========================================================================*/
-#define OpcUa_Attributes_RolePermissions 26
+#define OpcUa_Attributes_AccessRestrictions 26
 
 OPCUA_END_EXTERN_C
 

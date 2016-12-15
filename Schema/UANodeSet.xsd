@@ -27,7 +27,7 @@
       <xs:attribute name="LastModified" type="xs:dateTime" use="optional"></xs:attribute>
     </xs:complexType>
   </xs:element>
-  
+
   <xs:element name="UANodeSetChanges">
     <xs:complexType>
       <xs:sequence>
@@ -58,7 +58,7 @@
       <xs:attribute name="TransactionId" type="xs:string" use="required"></xs:attribute>
     </xs:complexType>
   </xs:element>
-  
+
   <xs:complexType name="NodesToAdd">
     <xs:choice minOccurs="0" maxOccurs="unbounded">
       <xs:element name="UAObject" type="UAObject"></xs:element>
@@ -77,7 +77,7 @@
       <xs:element name="Node" type="NodeToDelete" minOccurs="0" maxOccurs="unbounded"></xs:element>
     </xs:sequence>
   </xs:complexType>
-  
+
   <xs:complexType name="NodeToDelete">
     <xs:simpleContent>
       <xs:extension base="NodeId">
@@ -91,7 +91,7 @@
       <xs:element name="Reference" type="ReferenceChange" minOccurs="0" maxOccurs="unbounded"></xs:element>
     </xs:sequence>
   </xs:complexType>
-  
+
   <xs:complexType name="ReferenceChange">
     <xs:simpleContent>
       <xs:extension base="NodeId">
@@ -115,7 +115,7 @@
       <xs:element name="Status" type="NodeSetStatus" minOccurs="0" maxOccurs="unbounded"></xs:element>
     </xs:sequence>
   </xs:complexType>
-  
+
   <xs:complexType name="UriTable">
     <xs:sequence>
       <xs:element name="Uri" type="xs:string" minOccurs="0" maxOccurs="unbounded"></xs:element>
@@ -183,6 +183,10 @@
     <xs:restriction base="xs:int"></xs:restriction>
   </xs:simpleType>
 
+  <xs:simpleType name="AccessRestriction">
+    <xs:restriction base="xs:unsignedByte"></xs:restriction>
+  </xs:simpleType>
+
   <xs:simpleType name="ArrayDimensions">
     <xs:list>
       <xs:simpleType>
@@ -221,6 +225,10 @@
     <xs:restriction base="xs:unsignedByte"></xs:restriction>
   </xs:simpleType>
 
+  <xs:simpleType name="AccessLevelEx">
+    <xs:restriction base="xs:unsignedInt"></xs:restriction>
+  </xs:simpleType>
+
   <xs:complexType name="Reference">
     <xs:simpleContent>
       <xs:extension base="NodeId">
@@ -233,6 +241,20 @@
   <xs:complexType name="ListOfReferences">
     <xs:sequence>
       <xs:element name="Reference" type="Reference" minOccurs="0" maxOccurs="unbounded"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RolePermission">
+    <xs:simpleContent>
+      <xs:extension base="NodeId">
+        <xs:attribute name="Permissions" type="xs:unsignedInt" default="0"></xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="ListOfRolePermissions">
+    <xs:sequence>
+      <xs:element name="RolePermission" type="RolePermission" minOccurs="0" maxOccurs="unbounded"></xs:element>
     </xs:sequence>
   </xs:complexType>
 
@@ -255,12 +277,14 @@
       <xs:element name="Category" type="xs:string" minOccurs="0" maxOccurs="unbounded"></xs:element>
       <xs:element name="Documentation" type="xs:string" minOccurs="0" maxOccurs="1"></xs:element>
       <xs:element name="References" type="ListOfReferences" minOccurs="0"></xs:element>
+      <xs:element name="RolePermissions" type="ListOfRolePermissions" minOccurs="0"></xs:element>
       <xs:element name="Extensions" type="ListOfExtensions" minOccurs="0"></xs:element>
     </xs:sequence>
     <xs:attribute name="NodeId" type="NodeId" use="required"></xs:attribute>
     <xs:attribute name="BrowseName" type="QualifiedName" use="required"></xs:attribute>
     <xs:attribute name="WriteMask" type="WriteMask" default="0"></xs:attribute>
     <xs:attribute name="UserWriteMask" type="WriteMask" default="0"></xs:attribute>
+    <xs:attribute name="AccessRestrictions" type="AccessRestriction" default="0"></xs:attribute>
     <xs:attribute name="SymbolicName" type="SymbolicName" use="optional"></xs:attribute>
   </xs:complexType>
 
@@ -300,6 +324,7 @@
         <xs:attribute name="UserAccessLevel" type="AccessLevel" default="1"></xs:attribute>
         <xs:attribute name="MinimumSamplingInterval" type="Duration" default="0"></xs:attribute>
         <xs:attribute name="Historizing" type="xs:boolean" default="false"></xs:attribute>
+        <xs:attribute name="AccessLevelEx" type="AccessLevelEx" default="1"></xs:attribute>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
@@ -310,7 +335,7 @@
       <xs:element name="Description" type="LocalizedText" minOccurs="0" maxOccurs="unbounded"></xs:element>
     </xs:sequence>
   </xs:complexType>
-  
+
   <xs:complexType name="UAMethod">
     <xs:complexContent>
       <xs:extension base="UAInstance">

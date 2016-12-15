@@ -72,6 +72,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -344,6 +350,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -864,6 +876,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -1082,6 +1100,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -1536,6 +1560,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -1601,6 +1631,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -1763,6 +1799,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -1941,6 +1983,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -2267,6 +2315,12 @@ namespace Opc.Ua.MTConnect
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
         }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
         #endregion
 
         #region Public Members
@@ -2342,6 +2396,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -2396,6 +2456,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -2472,6 +2538,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -2526,6 +2598,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -2602,6 +2680,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -2656,6 +2740,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -2732,6 +2822,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -2786,6 +2882,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -2862,6 +2964,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -2916,6 +3024,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -2992,6 +3106,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -3046,6 +3166,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -3122,6 +3248,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -3176,6 +3308,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -3252,6 +3390,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -3306,6 +3450,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -3382,6 +3532,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -3436,6 +3592,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -3512,6 +3674,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -3566,6 +3734,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -3642,6 +3816,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -3696,6 +3876,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -3772,6 +3958,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -3826,6 +4018,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -3902,6 +4100,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -3956,6 +4160,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -4032,6 +4242,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -4086,6 +4302,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -4162,6 +4384,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -4216,6 +4444,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -4292,6 +4526,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -4346,6 +4586,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -4422,6 +4668,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -4476,6 +4728,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -4552,6 +4810,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -4606,6 +4870,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -4682,6 +4952,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -4736,6 +5012,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -4812,6 +5094,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -4866,6 +5154,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -4942,6 +5236,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -4996,6 +5296,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -5072,6 +5378,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -5126,6 +5438,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -5202,6 +5520,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -5256,6 +5580,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -5332,6 +5662,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -5386,6 +5722,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -5462,6 +5804,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -5516,6 +5864,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -5592,6 +5946,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -5646,6 +6006,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -5722,6 +6088,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -5776,6 +6148,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -5852,6 +6230,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -5906,6 +6290,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -5982,6 +6372,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -6036,6 +6432,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -6112,6 +6514,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -6166,6 +6574,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -6242,6 +6656,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -6296,6 +6716,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -6372,6 +6798,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -6426,6 +6858,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -6502,6 +6940,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -6556,6 +7000,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -6632,6 +7082,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -6686,6 +7142,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -6762,6 +7224,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -6816,6 +7284,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -6892,6 +7366,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -6946,6 +7426,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -7020,6 +7506,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -7229,6 +7721,12 @@ namespace Opc.Ua.MTConnect
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
         }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
         #endregion
 
         #region Public Members
@@ -7302,6 +7800,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -7383,6 +7887,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -7460,6 +7970,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -7541,6 +8057,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -7618,6 +8140,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -7699,6 +8227,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -7776,6 +8310,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -7857,6 +8397,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -7934,6 +8480,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -8015,6 +8567,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -8092,6 +8650,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -8173,6 +8737,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -8250,6 +8820,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -8331,6 +8907,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -8408,6 +8990,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -8489,6 +9077,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -8566,6 +9160,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -8647,6 +9247,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -8724,6 +9330,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -8805,6 +9417,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -8882,6 +9500,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -8963,6 +9587,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -9040,6 +9670,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -9121,6 +9757,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -9182,6 +9824,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -9594,6 +10242,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -9692,6 +10346,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -9794,6 +10454,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -9892,6 +10558,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -9994,6 +10666,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -10092,6 +10770,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -10194,6 +10878,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -10292,6 +10982,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -10394,6 +11090,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -10492,6 +11194,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -10594,6 +11302,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -10692,6 +11406,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -10794,6 +11514,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -10892,6 +11618,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -10994,6 +11726,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -11092,6 +11830,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -11194,6 +11938,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -11292,6 +12042,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -11394,6 +12150,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -11492,6 +12254,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -11594,6 +12362,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -11692,6 +12466,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -11794,6 +12574,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -11892,6 +12678,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -11994,6 +12786,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -12092,6 +12890,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -12194,6 +12998,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -12292,6 +13102,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -12394,6 +13210,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -12492,6 +13314,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -12594,6 +13422,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -12692,6 +13526,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -12794,6 +13634,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -12892,6 +13738,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -12994,6 +13846,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -13092,6 +13950,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -13194,6 +14058,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -13292,6 +14162,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -13394,6 +14270,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -13492,6 +14374,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -13594,6 +14482,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -13692,6 +14586,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -13808,6 +14708,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -14084,6 +14990,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -14149,6 +15061,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -14314,6 +15232,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -14379,6 +15303,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -14541,6 +15471,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -14871,6 +15807,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -15428,6 +16370,12 @@ namespace Opc.Ua.MTConnect
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
         }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
         #endregion
 
         #region Public Members
@@ -15485,6 +16433,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -15692,6 +16646,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -16291,6 +17251,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -16431,6 +17397,12 @@ namespace Opc.Ua.MTConnect
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
         }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
         #endregion
 
         #region Public Members
@@ -16504,6 +17476,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -16655,6 +17633,12 @@ namespace Opc.Ua.MTConnect
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
         }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
         #endregion
 
         #region Public Members
@@ -16728,6 +17712,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -17026,6 +18016,12 @@ namespace Opc.Ua.MTConnect
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
         }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
         #endregion
 
         #region Public Members
@@ -17099,6 +18095,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -17339,6 +18341,12 @@ namespace Opc.Ua.MTConnect
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
         }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
         #endregion
 
         #region Public Members
@@ -17412,6 +18420,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -17652,6 +18666,12 @@ namespace Opc.Ua.MTConnect
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
         }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
         #endregion
 
         #region Public Members
@@ -17725,6 +18745,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -17965,6 +18991,12 @@ namespace Opc.Ua.MTConnect
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
         }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
         #endregion
 
         #region Public Members
@@ -18038,6 +19070,12 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -18585,6 +19623,12 @@ namespace Opc.Ua.MTConnect
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
         }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
         #endregion
 
         #region Public Members
@@ -18660,6 +19704,12 @@ namespace Opc.Ua.MTConnect
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -18714,6 +19764,12 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 

@@ -73,6 +73,12 @@ namespace Opc.Ua.Fdi7
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -135,6 +141,12 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -201,6 +213,12 @@ namespace Opc.Ua.Fdi7
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -263,6 +281,12 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -329,6 +353,12 @@ namespace Opc.Ua.Fdi7
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -391,6 +421,12 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -457,6 +493,12 @@ namespace Opc.Ua.Fdi7
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -519,6 +561,12 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -669,6 +717,12 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -940,6 +994,12 @@ namespace Opc.Ua.Fdi7
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -1151,6 +1211,12 @@ namespace Opc.Ua.Fdi7
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -1300,6 +1366,12 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -1598,6 +1670,12 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -2046,6 +2124,12 @@ namespace Opc.Ua.Fdi7
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -2490,6 +2574,12 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -2938,6 +3028,12 @@ namespace Opc.Ua.Fdi7
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -3382,6 +3478,12 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -4088,6 +4190,12 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -5347,6 +5455,12 @@ namespace Opc.Ua.Fdi7
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -5468,6 +5582,12 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -5701,6 +5821,12 @@ namespace Opc.Ua.Fdi7
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -5928,6 +6054,12 @@ namespace Opc.Ua.Fdi7
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -6148,6 +6280,12 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -6376,6 +6514,12 @@ namespace Opc.Ua.Fdi7
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -6596,6 +6740,12 @@ namespace Opc.Ua.Fdi7
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -6797,6 +6947,12 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -9813,6 +9969,12 @@ namespace Opc.Ua.Fdi7
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -9897,6 +10059,12 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -10009,6 +10177,12 @@ namespace Opc.Ua.Fdi7
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -10118,6 +10292,12 @@ namespace Opc.Ua.Fdi7
             InitializeOptionalChildren(context);
         }
 
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
         /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
@@ -10215,6 +10395,12 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -10315,6 +10501,12 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -10418,6 +10610,12 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -10525,6 +10723,12 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>

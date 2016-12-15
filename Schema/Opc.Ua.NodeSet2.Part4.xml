@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2013-12-02T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2016-12-31T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.02" PublicationDate="2013-12-02T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.02" PublicationDate="2016-12-31T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -599,31 +599,40 @@
       <Field Name="Value" Value="2097152">
         <Description>The value attribute is specified.</Description>
       </Field>
-      <Field Name="All" Value="4194303">
+      <Field Name="DataTypeDefinition" Value="4194304">
+        <Description>The write mask attribute is specified.</Description>
+      </Field>
+      <Field Name="RolePermissions" Value="8388608">
+        <Description>The write mask attribute is specified.</Description>
+      </Field>
+      <Field Name="AccessRestrictions" Value="16777216">
+        <Description>The write mask attribute is specified.</Description>
+      </Field>
+      <Field Name="All" Value="33554431">
         <Description>All attributes are specified.</Description>
       </Field>
-      <Field Name="BaseNode" Value="1335396">
+      <Field Name="BaseNode" Value="26501220">
         <Description>All base attributes are specified.</Description>
       </Field>
-      <Field Name="Object" Value="1335524">
+      <Field Name="Object" Value="26501348">
         <Description>All object attributes are specified.</Description>
       </Field>
-      <Field Name="ObjectTypeOrDataType" Value="1337444">
-        <Description>All object type or data type attributes are specified.</Description>
+      <Field Name="ObjectType" Value="26503268">
+        <Description>All object type attributes are specified.</Description>
       </Field>
-      <Field Name="Variable" Value="4026999">
+      <Field Name="Variable" Value="26571383">
         <Description>All variable attributes are specified.</Description>
       </Field>
-      <Field Name="VariableType" Value="3958902">
+      <Field Name="VariableType" Value="28600438">
         <Description>All variable type attributes are specified.</Description>
       </Field>
-      <Field Name="Method" Value="1466724">
+      <Field Name="Method" Value="26632548">
         <Description>All method attributes are specified.</Description>
       </Field>
-      <Field Name="ReferenceType" Value="1371236">
+      <Field Name="ReferenceType" Value="26537060">
         <Description>All reference type attributes are specified.</Description>
       </Field>
-      <Field Name="View" Value="1335532">
+      <Field Name="View" Value="26501356">
         <Description>All view attributes are specified.</Description>
       </Field>
     </Definition>
@@ -1103,7 +1112,67 @@
           </TypeId>
           <Body>
             <EnumValueType>
-              <Value>4194303</Value>
+              <Value>4194304</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>DataTypeDefinition</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>The write mask attribute is specified.</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>8388608</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>RolePermissions</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>The write mask attribute is specified.</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>16777216</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>AccessRestrictions</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>The write mask attribute is specified.</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>33554431</Value>
               <DisplayName>
                 <Locale>
                 </Locale>
@@ -1123,7 +1192,7 @@
           </TypeId>
           <Body>
             <EnumValueType>
-              <Value>1335396</Value>
+              <Value>26501220</Value>
               <DisplayName>
                 <Locale>
                 </Locale>
@@ -1143,7 +1212,7 @@
           </TypeId>
           <Body>
             <EnumValueType>
-              <Value>1335524</Value>
+              <Value>26501348</Value>
               <DisplayName>
                 <Locale>
                 </Locale>
@@ -1163,16 +1232,16 @@
           </TypeId>
           <Body>
             <EnumValueType>
-              <Value>1337444</Value>
+              <Value>26503268</Value>
               <DisplayName>
                 <Locale>
                 </Locale>
-                <Text>ObjectTypeOrDataType</Text>
+                <Text>ObjectType</Text>
               </DisplayName>
               <Description>
                 <Locale>
                 </Locale>
-                <Text>All object type or data type attributes are specified.</Text>
+                <Text>All object type attributes are specified.</Text>
               </Description>
             </EnumValueType>
           </Body>
@@ -1183,7 +1252,7 @@
           </TypeId>
           <Body>
             <EnumValueType>
-              <Value>4026999</Value>
+              <Value>26571383</Value>
               <DisplayName>
                 <Locale>
                 </Locale>
@@ -1203,7 +1272,7 @@
           </TypeId>
           <Body>
             <EnumValueType>
-              <Value>3958902</Value>
+              <Value>28600438</Value>
               <DisplayName>
                 <Locale>
                 </Locale>
@@ -1223,7 +1292,7 @@
           </TypeId>
           <Body>
             <EnumValueType>
-              <Value>1466724</Value>
+              <Value>26632548</Value>
               <DisplayName>
                 <Locale>
                 </Locale>
@@ -1243,7 +1312,7 @@
           </TypeId>
           <Body>
             <EnumValueType>
-              <Value>1371236</Value>
+              <Value>26537060</Value>
               <DisplayName>
                 <Locale>
                 </Locale>
@@ -1263,7 +1332,7 @@
           </TypeId>
           <Body>
             <EnumValueType>
-              <Value>1335532</Value>
+              <Value>26501356</Value>
               <DisplayName>
                 <Locale>
                 </Locale>
@@ -1452,6 +1521,15 @@
       </Field>
       <Field Name="ValueForVariableType" Value="2097152">
         <Description>The value attribute is writable.</Description>
+      </Field>
+      <Field Name="DataTypeDefinition" Value="4194304">
+        <Description>The DataTypeDefinition attribute is writable.</Description>
+      </Field>
+      <Field Name="RolePermissions" Value="8388608">
+        <Description>The RolePermissions attribute is writable.</Description>
+      </Field>
+      <Field Name="AccessRestrictions" Value="16777216">
+        <Description>The AccessRestrictions attribute is writable.</Description>
       </Field>
     </Definition>
   </UADataType>
@@ -1920,6 +1998,66 @@
                 <Locale>
                 </Locale>
                 <Text>The value attribute is writable.</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>4194304</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>DataTypeDefinition</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>The DataTypeDefinition attribute is writable.</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>8388608</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>RolePermissions</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>The RolePermissions attribute is writable.</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>16777216</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>AccessRestrictions</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>The AccessRestrictions attribute is writable.</Text>
               </Description>
             </EnumValueType>
           </Body>

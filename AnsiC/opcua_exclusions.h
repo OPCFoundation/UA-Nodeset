@@ -77,22 +77,23 @@
 /*============================================================================
 * DataType Exclusions
  *===========================================================================*/
-/* #define OPCUA_EXCLUDE_TrustListDataType */
-/* #define OPCUA_EXCLUDE_DataTypeDefinition */
-/* #define OPCUA_EXCLUDE_StructureDefinition */
-/* #define OPCUA_EXCLUDE_EnumDefinition */
-/* #define OPCUA_EXCLUDE_StructureField */
 /* #define OPCUA_EXCLUDE_IdentityMappingRuleType */
-/* #define OPCUA_EXCLUDE_ApplicationPermissionRuleType */
+/* #define OPCUA_EXCLUDE_TrustListDataType */
 /* #define OPCUA_EXCLUDE_ConfigurationVersionDataType */
 /* #define OPCUA_EXCLUDE_DataSetMetaDataType */
 /* #define OPCUA_EXCLUDE_FieldMetaData */
-/* #define OPCUA_EXCLUDE_DataTypeDescription */
-/* #define OPCUA_EXCLUDE_StructureDescription */
-/* #define OPCUA_EXCLUDE_EnumDescription */
 /* #define OPCUA_EXCLUDE_KeyValuePair */
 /* #define OPCUA_EXCLUDE_PublishedVariableDataType */
 /* #define OPCUA_EXCLUDE_DataConnectionDataType */
+/* #define OPCUA_EXCLUDE_RolePermissionType */
+/* #define OPCUA_EXCLUDE_DataTypeDefinition */
+/* #define OPCUA_EXCLUDE_StructureField */
+/* #define OPCUA_EXCLUDE_StructureDefinition */
+/* #define OPCUA_EXCLUDE_EnumDefinition */
+/* #define OPCUA_EXCLUDE_DataTypeDescription */
+/* #define OPCUA_EXCLUDE_StructureDescription */
+/* #define OPCUA_EXCLUDE_EnumDescription */
+/* #define OPCUA_EXCLUDE_NestedStructureDefinition */
 /* #define OPCUA_EXCLUDE_Node */
 /* #define OPCUA_EXCLUDE_InstanceNode */
 /* #define OPCUA_EXCLUDE_TypeNode */
