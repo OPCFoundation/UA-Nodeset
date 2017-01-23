@@ -187,7 +187,34 @@
     <opc:EnumeratedValue Name="Optional" Value="2" />
     <opc:EnumeratedValue Name="Constraint" Value="3" />
   </opc:EnumeratedType>
-    
+
+  <opc:StructuredType Name="RolePermissionType">
+    <opc:Field Name="RoleId" TypeName="ua:NodeId" />
+    <opc:Field Name="Permissions" TypeName="opc:UInt32" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="DataTypeDescription">
+    <opc:Field Name="DataTypeId" TypeName="ua:NodeId" />
+    <opc:Field Name="Name" TypeName="opc:QualifiedName" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="StructureDescription">
+    <opc:Field Name="DataTypeId" TypeName="ua:NodeId" />
+    <opc:Field Name="Name" TypeName="opc:QualifiedName" />
+    <opc:Field Name="StructureDefinition"  DataType="ua:StructureDefinition"></opc:Field>
+  </opc:StructuredType>
+
+    <opc:DataType SymbolicName="StructureDescription" BaseType="DataTypeDescription" PartNo="3">
+      <opc:Fields>
+        <opc:Field Name="StructureDefinition"  DataType="ua:StructureDefinition"></opc:Field>
+      </opc:Fields>
+    </opc:DataType>
+
+    <opc:DataType SymbolicName="EnumDescription" BaseType="DataTypeDescription" PartNo="3">
+      <opc:Fields>
+        <opc:Field Name="EnumDefinition"  DataType="ua:EnumDefinition"></opc:Field>
+      </opc:Fields>
+    </opc:DataType>
 
   <opc:OpaqueType Name="ImageBMP">
     <opc:Documentation>An image encoded in BMP format.</opc:Documentation>
