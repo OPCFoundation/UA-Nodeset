@@ -162,6 +162,11 @@ OPCUA_BEGIN_EXTERN_C
  *===========================================================================*/
 #define OpcUa_Attributes_AccessRestrictions 26
 
+/*============================================================================
+ * How a variable may be accessed.
+ *===========================================================================*/
+#define OpcUa_Attributes_AccessLevelEx 27
+
 OPCUA_END_EXTERN_C
 
 #endif /* _OpcUa_Attributes_H_ */

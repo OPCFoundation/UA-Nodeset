@@ -389,7 +389,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12890</Reference>
     </References>
-    <Definition Name="MdnsDiscoveryConfiguration" BaseType="MdnsDiscoveryConfiguration">
+    <Definition Name="MdnsDiscoveryConfiguration">
       <Field Name="MdnsServerName" DataType="i=12">
         <Description>The name for server that is broadcast via mDNS.</Description>
       </Field>
@@ -483,7 +483,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=316</Reference>
     </References>
-    <Definition Name="UserNameIdentityToken" BaseType="UserNameIdentityToken">
+    <Definition Name="UserNameIdentityToken">
       <Field Name="UserName" DataType="i=12">
         <Description>The user name.</Description>
       </Field>
@@ -501,7 +501,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=316</Reference>
     </References>
-    <Definition Name="X509IdentityToken" BaseType="X509IdentityToken">
+    <Definition Name="X509IdentityToken">
       <Field Name="CertificateData" DataType="i=15">
         <Description>The certificate.</Description>
       </Field>
@@ -513,7 +513,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=316</Reference>
     </References>
-    <Definition Name="IssuedIdentityToken" BaseType="IssuedIdentityToken">
+    <Definition Name="IssuedIdentityToken">
       <Field Name="TokenData" DataType="i=15">
         <Description>The XML token encrypted with the server certificate.</Description>
       </Field>
@@ -1531,6 +1531,9 @@
       <Field Name="AccessRestrictions" Value="16777216">
         <Description>The AccessRestrictions attribute is writable.</Description>
       </Field>
+      <Field Name="AccessLevelEx" Value="33554432">
+        <Description>The AccessLevelEx attribute is writable.</Description>
+      </Field>
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=11882" BrowseName="EnumValues" ParentNodeId="i=347" DataType="i=7594" ValueRank="1">
@@ -2062,6 +2065,26 @@
             </EnumValueType>
           </Body>
         </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>33554432</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>AccessLevelEx</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>The AccessLevelEx attribute is writable.</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
@@ -2309,7 +2332,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=589</Reference>
     </References>
-    <Definition Name="ElementOperand" BaseType="ElementOperand">
+    <Definition Name="ElementOperand">
       <Field Name="Index" DataType="i=7" />
     </Definition>
   </UADataType>
@@ -2318,7 +2341,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=589</Reference>
     </References>
-    <Definition Name="LiteralOperand" BaseType="LiteralOperand">
+    <Definition Name="LiteralOperand">
       <Field Name="Value" />
     </Definition>
   </UADataType>
@@ -2327,7 +2350,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=589</Reference>
     </References>
-    <Definition Name="AttributeOperand" BaseType="AttributeOperand">
+    <Definition Name="AttributeOperand">
       <Field Name="NodeId" DataType="i=17" />
       <Field Name="Alias" DataType="i=12" />
       <Field Name="BrowsePath" DataType="i=540" />
@@ -2340,7 +2363,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=589</Reference>
     </References>
-    <Definition Name="SimpleAttributeOperand" BaseType="SimpleAttributeOperand">
+    <Definition Name="SimpleAttributeOperand">
       <Field Name="TypeDefinitionId" DataType="i=17" />
       <Field Name="BrowsePath" DataType="i=20" ValueRank="1" />
       <Field Name="AttributeId" DataType="i=288" />
@@ -2545,7 +2568,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=719</Reference>
     </References>
-    <Definition Name="EventFilter" BaseType="EventFilter">
+    <Definition Name="EventFilter">
       <Field Name="SelectClauses" DataType="i=601" ValueRank="1" />
       <Field Name="WhereClause" DataType="i=586" />
     </Definition>

@@ -1114,7 +1114,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=6522</Reference>
     </References>
-    <Definition Name="FetchResultErrorDataType" BaseType="0:1:FetchResultErrorDataType">
+    <Definition Name="FetchResultErrorDataType">
       <Field Name="Status" DataType="i=6" />
       <Field Name="Diagnostics" DataType="i=25" />
     </Definition>
@@ -1124,7 +1124,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=6522</Reference>
     </References>
-    <Definition Name="FetchResultDataDataType" BaseType="0:1:FetchResultDataDataType">
+    <Definition Name="FetchResultDataDataType">
       <Field Name="SequenceNumber" DataType="i=6" />
       <Field Name="EndOfResults" DataType="i=1" />
       <Field Name="ParameterDefs" DataType="ns=1;i=6525" ValueRank="1" />

@@ -138,6 +138,7 @@ BadWriteNotSupported,0x80730000,The server does not support writing the combinat
 BadTypeMismatch,0x80740000,The value supplied for the attribute is not of the same type as the attribute's value.
 BadMethodInvalid,0x80750000,The method id does not refer to a method for the specified object.
 BadArgumentsMissing,0x80760000,The client did not specify all of the input arguments for the method.
+BadNotExecutable,0x81110000,The executable attribute does not allow the execution of the method.
 BadTooManySubscriptions,0x80770000,The server has reached its  maximum number of subscriptions.
 BadTooManyPublishRequests,0x80780000,The server has reached the maximum number of queued publish requests.
 BadNoSubscription,0x80790000,There is no subscription available for this session.

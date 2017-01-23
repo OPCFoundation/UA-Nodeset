@@ -578,6 +578,13 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
   </UAVariable>
+  <UAVariable NodeId="i=16306" BrowseName="DefaultInputValues" ValueRank="1">
+    <DisplayName>DefaultInputValues</DisplayName>
+    <Description>Specifies the default values for optional input arguments.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
   <UADataType NodeId="i=2000" BrowseName="ImageBMP">
     <DisplayName>ImageBMP</DisplayName>
     <Description>An image encoded in BMP format.</Description>
@@ -605,6 +612,41 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=30</Reference>
     </References>
+  </UADataType>
+  <UADataType NodeId="i=16307" BrowseName="AudioData">
+    <DisplayName>AudioData</DisplayName>
+    <Description>An image encoded in PNG format.</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=15</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="i=14525" BrowseName="DataTypeDescription">
+    <DisplayName>DataTypeDescription</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="DataTypeDescription">
+      <Field Name="DataTypeId" DataType="i=17" />
+      <Field Name="Name" DataType="i=20" />
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="i=15487" BrowseName="StructureDescription">
+    <DisplayName>StructureDescription</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=14525</Reference>
+    </References>
+    <Definition Name="StructureDescription">
+      <Field Name="StructureDefinition" DataType="i=99" />
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="i=15488" BrowseName="EnumDescription">
+    <DisplayName>EnumDescription</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=14525</Reference>
+    </References>
+    <Definition Name="EnumDescription">
+      <Field Name="EnumDefinition" DataType="i=100" />
+    </Definition>
   </UADataType>
   <UADataType NodeId="i=256" BrowseName="IdType">
     <DisplayName>IdType</DisplayName>
@@ -1241,8 +1283,9 @@
     </References>
     <Definition Name="AccessRestrictionType">
       <Field Name="None" Value="0" />
-      <Field Name="SigningRequired" Value="128" />
-      <Field Name="EncryptionRequired" Value="256" />
+      <Field Name="SigningRequired" Value="1" />
+      <Field Name="EncryptionRequired" Value="2" />
+      <Field Name="SessionRequired " Value="4" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=16124" BrowseName="EnumValues" ParentNodeId="i=95" DataType="i=7594" ValueRank="1">
@@ -1276,7 +1319,7 @@
           </TypeId>
           <Body>
             <EnumValueType>
-              <Value>128</Value>
+              <Value>1</Value>
               <DisplayName>
                 <Locale>
                 </Locale>
@@ -1292,11 +1335,27 @@
           </TypeId>
           <Body>
             <EnumValueType>
-              <Value>256</Value>
+              <Value>2</Value>
               <DisplayName>
                 <Locale>
                 </Locale>
                 <Text>EncryptionRequired</Text>
+              </DisplayName>
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>4</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>SessionRequired </Text>
               </DisplayName>
               <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
@@ -1378,7 +1437,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=97</Reference>
     </References>
-    <Definition Name="StructureDefinition" BaseType="StructureDefinition">
+    <Definition Name="StructureDefinition">
       <Field Name="DefaultEncodingId" DataType="i=17" ValueRank="1" />
       <Field Name="BaseDataType" DataType="i=17" />
       <Field Name="StructureType" DataType="i=98" />
@@ -1390,48 +1449,8 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=97</Reference>
     </References>
-    <Definition Name="EnumDefinition" BaseType="EnumDefinition">
+    <Definition Name="EnumDefinition">
       <Field Name="Fields" DataType="i=102" ValueRank="1" />
-    </Definition>
-  </UADataType>
-  <UADataType NodeId="i=14525" BrowseName="DataTypeDescription">
-    <DisplayName>DataTypeDescription</DisplayName>
-    <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
-    </References>
-    <Definition Name="DataTypeDescription">
-      <Field Name="DataTypeId" DataType="i=17" />
-      <Field Name="Name" DataType="i=20" />
-    </Definition>
-  </UADataType>
-  <UADataType NodeId="i=15487" BrowseName="StructureDescription">
-    <DisplayName>StructureDescription</DisplayName>
-    <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=14525</Reference>
-    </References>
-    <Definition Name="StructureDescription" BaseType="StructureDescription">
-      <Field Name="StructureDefinition" DataType="i=99" />
-    </Definition>
-  </UADataType>
-  <UADataType NodeId="i=15488" BrowseName="EnumDescription">
-    <DisplayName>EnumDescription</DisplayName>
-    <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=14525</Reference>
-    </References>
-    <Definition Name="EnumDescription" BaseType="EnumDescription">
-      <Field Name="EnumDefinition" DataType="i=100" />
-    </Definition>
-  </UADataType>
-  <UADataType NodeId="i=16280" BrowseName="NestedStructureDefinition">
-    <DisplayName>NestedStructureDefinition</DisplayName>
-    <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=99</Reference>
-    </References>
-    <Definition Name="NestedStructureDefinition" BaseType="NestedStructureDefinition">
-      <Field Name="Name" DataType="i=12" />
-      <Field Name="Description" DataType="i=21" />
-      <Field Name="StructureDataTypes" DataType="i=15487" ValueRank="1" />
-      <Field Name="EnumDataTypes" DataType="i=15488" ValueRank="1" />
     </Definition>
   </UADataType>
   <UADataType NodeId="i=296" BrowseName="Argument">
@@ -1564,6 +1583,30 @@
       <Field Name="DaylightSavingInOffset" DataType="i=1" />
     </Definition>
   </UADataType>
+  <UAObject NodeId="i=14796" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=14525</Reference>
+      <Reference ReferenceType="HasDescription">i=14811</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=15589" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=15487</Reference>
+      <Reference ReferenceType="HasDescription">i=15591</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=15590" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=15488</Reference>
+      <Reference ReferenceType="HasDescription">i=15594</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
   <UAObject NodeId="i=16126" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
@@ -1601,38 +1644,6 @@
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=100</Reference>
       <Reference ReferenceType="HasDescription">i=14820</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="i=14796" BrowseName="Default XML" SymbolicName="DefaultXml">
-    <DisplayName>Default XML</DisplayName>
-    <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=14525</Reference>
-      <Reference ReferenceType="HasDescription">i=14811</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="i=15589" BrowseName="Default XML" SymbolicName="DefaultXml">
-    <DisplayName>Default XML</DisplayName>
-    <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=15487</Reference>
-      <Reference ReferenceType="HasDescription">i=15591</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="i=15590" BrowseName="Default XML" SymbolicName="DefaultXml">
-    <DisplayName>Default XML</DisplayName>
-    <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=15488</Reference>
-      <Reference ReferenceType="HasDescription">i=15594</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="i=16281" BrowseName="Default XML" SymbolicName="DefaultXml">
-    <DisplayName>Default XML</DisplayName>
-    <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=16280</Reference>
-      <Reference ReferenceType="HasDescription">i=16282</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
@@ -1676,7 +1687,31 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="i=16130" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+  <UAObject NodeId="i=125" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=14525</Reference>
+      <Reference ReferenceType="HasDescription">i=14855</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=126" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=15487</Reference>
+      <Reference ReferenceType="HasDescription">i=15599</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=127" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=15488</Reference>
+      <Reference ReferenceType="HasDescription">i=15602</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=128" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=96</Reference>
@@ -1684,7 +1719,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="i=14841" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+  <UAObject NodeId="i=121" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=97</Reference>
@@ -1700,7 +1735,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="i=14842" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+  <UAObject NodeId="i=122" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=99</Reference>
@@ -1708,43 +1743,11 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="i=14843" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+  <UAObject NodeId="i=123" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=100</Reference>
       <Reference ReferenceType="HasDescription">i=14864</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="i=14840" BrowseName="Default Binary" SymbolicName="DefaultBinary">
-    <DisplayName>Default Binary</DisplayName>
-    <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=14525</Reference>
-      <Reference ReferenceType="HasDescription">i=14855</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="i=15597" BrowseName="Default Binary" SymbolicName="DefaultBinary">
-    <DisplayName>Default Binary</DisplayName>
-    <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=15487</Reference>
-      <Reference ReferenceType="HasDescription">i=15599</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="i=15598" BrowseName="Default Binary" SymbolicName="DefaultBinary">
-    <DisplayName>Default Binary</DisplayName>
-    <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=15488</Reference>
-      <Reference ReferenceType="HasDescription">i=15602</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="i=16285" BrowseName="Default Binary" SymbolicName="DefaultBinary">
-    <DisplayName>Default Binary</DisplayName>
-    <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=16280</Reference>
-      <Reference ReferenceType="HasDescription">i=16286</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>

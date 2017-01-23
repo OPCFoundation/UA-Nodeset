@@ -156,7 +156,7 @@
     <DisplayName>AutoDelete</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=79</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=2391</Reference>
     </References>
   </UAVariable>
@@ -255,7 +255,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2399</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3846" BrowseName="LastMethodInputArguments" ParentNodeId="i=2399" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=3846" BrowseName="LastMethodInputArguments" ParentNodeId="i=2399" ValueRank="1">
     <DisplayName>LastMethodInputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -263,7 +263,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2399</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3847" BrowseName="LastMethodOutputArguments" ParentNodeId="i=2399" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=3847" BrowseName="LastMethodOutputArguments" ParentNodeId="i=2399" ValueRank="1">
     <DisplayName>LastMethodOutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -279,7 +279,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2399</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3849" BrowseName="LastMethodReturnStatus" ParentNodeId="i=2399" DataType="i=299">
+  <UAVariable NodeId="i=3849" BrowseName="LastMethodReturnStatus" ParentNodeId="i=2399" DataType="StatusCode">
     <DisplayName>LastMethodReturnStatus</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -763,7 +763,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2380</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2387" BrowseName="LastMethodInputArguments" ParentNodeId="i=2380" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=2387" BrowseName="LastMethodInputArguments" ParentNodeId="i=2380" ValueRank="1">
     <DisplayName>LastMethodInputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -771,7 +771,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2380</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2388" BrowseName="LastMethodOutputArguments" ParentNodeId="i=2380" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=2388" BrowseName="LastMethodOutputArguments" ParentNodeId="i=2380" ValueRank="1">
     <DisplayName>LastMethodOutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -787,7 +787,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2380</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2390" BrowseName="LastMethodReturnStatus" ParentNodeId="i=2380" DataType="i=299">
+  <UAVariable NodeId="i=2390" BrowseName="LastMethodReturnStatus" ParentNodeId="i=2380" DataType="StatusCode">
     <DisplayName>LastMethodReturnStatus</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>

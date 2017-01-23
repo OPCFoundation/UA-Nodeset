@@ -5803,7 +5803,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10397" BrowseName="1:CampaignId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10397" BrowseName="1:CampaignId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>CampaignId</DisplayName>
     <Description>Defines the current campaign</Description>
     <References>
@@ -5813,7 +5813,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10400" BrowseName="1:BatchId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10400" BrowseName="1:BatchId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>BatchId</DisplayName>
     <Description>Defines the current batch</Description>
     <References>
@@ -5823,7 +5823,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10403" BrowseName="1:SubBatchId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10403" BrowseName="1:SubBatchId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>SubBatchId</DisplayName>
     <Description>Defines the current sub-batch</Description>
     <References>
@@ -5833,7 +5833,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10406" BrowseName="1:LotId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10406" BrowseName="1:LotId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>LotId</DisplayName>
     <Description>Defines the current lot</Description>
     <References>
@@ -5843,7 +5843,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10409" BrowseName="1:MaterialId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10409" BrowseName="1:MaterialId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>MaterialId</DisplayName>
     <Description>Defines the current material</Description>
     <References>
@@ -5853,7 +5853,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10412" BrowseName="1:Process" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10412" BrowseName="1:Process" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>Process</DisplayName>
     <Description>Current Process name</Description>
     <References>
@@ -5863,7 +5863,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10415" BrowseName="1:Unit" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10415" BrowseName="1:Unit" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>Unit</DisplayName>
     <Description>Current Unit name</Description>
     <References>
@@ -5873,7 +5873,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10418" BrowseName="1:Operation" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10418" BrowseName="1:Operation" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>Operation</DisplayName>
     <Description>Current Operation name</Description>
     <References>
@@ -5883,7 +5883,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10421" BrowseName="1:Phase" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10421" BrowseName="1:Phase" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>Phase</DisplayName>
     <Description>Current Phase name</Description>
     <References>
@@ -5893,7 +5893,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10424" BrowseName="1:UserId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10424" BrowseName="1:UserId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>UserId</DisplayName>
     <Description>Login name of the user who is logged on at the device console</Description>
     <References>
@@ -5903,7 +5903,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10427" BrowseName="1:SampleId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10427" BrowseName="1:SampleId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>SampleId</DisplayName>
     <Description>Identifier for the sample</Description>
     <References>

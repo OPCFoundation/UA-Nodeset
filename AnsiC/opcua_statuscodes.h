@@ -733,6 +733,11 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadArgumentsMissing 0x80760000
 
 /*============================================================================
+ * The executable attribute does not allow the execution of the method.
+ *===========================================================================*/
+#define OpcUa_BadNotExecutable 0x81110000
+
+/*============================================================================
  * The server has reached its  maximum number of subscriptions.
  *===========================================================================*/
 #define OpcUa_BadTooManySubscriptions 0x80770000
