@@ -3822,10 +3822,6 @@
 #define OpcUaId_OpcUa_XmlSchema_PublishedVariableDataType 14320
 #define OpcUaId_OpcUa_XmlSchema_DataConnectionDataType 14835
 #define OpcUaId_OpcUa_XmlSchema_RolePermissionType 16127
-#define OpcUaId_OpcUa_XmlSchema_DataTypeDefinition 14814
-#define OpcUaId_OpcUa_XmlSchema_StructureField 14823
-#define OpcUaId_OpcUa_XmlSchema_StructureDefinition 14817
-#define OpcUaId_OpcUa_XmlSchema_EnumDefinition 14820
 #define OpcUaId_OpcUa_XmlSchema_Argument 8285
 #define OpcUaId_OpcUa_XmlSchema_EnumValueType 8291
 #define OpcUaId_OpcUa_XmlSchema_EnumField 14826
@@ -3900,10 +3896,6 @@
 #define OpcUaId_OpcUa_BinarySchema_PublishedVariableDataType 14324
 #define OpcUaId_OpcUa_BinarySchema_DataConnectionDataType 14879
 #define OpcUaId_OpcUa_BinarySchema_RolePermissionType 16131
-#define OpcUaId_OpcUa_BinarySchema_DataTypeDefinition 14858
-#define OpcUaId_OpcUa_BinarySchema_StructureField 14867
-#define OpcUaId_OpcUa_BinarySchema_StructureDefinition 14861
-#define OpcUaId_OpcUa_BinarySchema_EnumDefinition 14864
 #define OpcUaId_OpcUa_BinarySchema_Argument 7650
 #define OpcUaId_OpcUa_BinarySchema_EnumValueType 7656
 #define OpcUaId_OpcUa_BinarySchema_EnumField 14870

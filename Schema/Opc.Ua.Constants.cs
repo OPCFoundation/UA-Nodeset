@@ -18935,26 +18935,6 @@ namespace Opc.Ua
         public const uint OpcUa_XmlSchema_RolePermissionType = 16127;
 
         /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_DataTypeDefinition Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_DataTypeDefinition = 14814;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_StructureField Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_StructureField = 14823;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_StructureDefinition Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_StructureDefinition = 14817;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EnumDefinition Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_EnumDefinition = 14820;
-
-        /// <summary>
         /// The identifier for the OpcUa_XmlSchema_Argument Variable.
         /// </summary>
         public const uint OpcUa_XmlSchema_Argument = 8285;
@@ -19323,26 +19303,6 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_BinarySchema_RolePermissionType Variable.
         /// </summary>
         public const uint OpcUa_BinarySchema_RolePermissionType = 16131;
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_DataTypeDefinition Variable.
-        /// </summary>
-        public const uint OpcUa_BinarySchema_DataTypeDefinition = 14858;
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_StructureField Variable.
-        /// </summary>
-        public const uint OpcUa_BinarySchema_StructureField = 14867;
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_StructureDefinition Variable.
-        /// </summary>
-        public const uint OpcUa_BinarySchema_StructureDefinition = 14861;
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_EnumDefinition Variable.
-        /// </summary>
-        public const uint OpcUa_BinarySchema_EnumDefinition = 14864;
 
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_Argument Variable.
@@ -38750,26 +38710,6 @@ namespace Opc.Ua
         public static readonly NodeId OpcUa_XmlSchema_RolePermissionType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_RolePermissionType);
 
         /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_DataTypeDefinition Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_DataTypeDefinition = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DataTypeDefinition);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_StructureField Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_StructureField = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_StructureField);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_StructureDefinition Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_StructureDefinition = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_StructureDefinition);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EnumDefinition Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_EnumDefinition = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EnumDefinition);
-
-        /// <summary>
         /// The identifier for the OpcUa_XmlSchema_Argument Variable.
         /// </summary>
         public static readonly NodeId OpcUa_XmlSchema_Argument = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_Argument);
@@ -39138,26 +39078,6 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_BinarySchema_RolePermissionType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_BinarySchema_RolePermissionType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_RolePermissionType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_DataTypeDefinition Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_BinarySchema_DataTypeDefinition = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_DataTypeDefinition);
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_StructureField Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_BinarySchema_StructureField = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_StructureField);
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_StructureDefinition Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_BinarySchema_StructureDefinition = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_StructureDefinition);
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_EnumDefinition Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_BinarySchema_EnumDefinition = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_EnumDefinition);
 
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_Argument Variable.

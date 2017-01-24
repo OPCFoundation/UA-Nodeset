@@ -858,6 +858,73 @@
   </xs:simpleType>
   <xs:element name="NodeClass" type="tns:NodeClass" />
 
+  <xs:complexType name="RolePermissionType">
+    <xs:sequence>
+      <xs:element name="RoleId" type="ua:NodeId" minOccurs="0" nillable="true" />
+      <xs:element name="Permissions" type="xs:unsignedInt" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RolePermissionType" type="tns:RolePermissionType" />
+
+  <xs:complexType name="ListOfRolePermissionType">
+    <xs:sequence>
+      <xs:element name="RolePermissionType" type="tns:RolePermissionType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfRolePermissionType" type="tns:ListOfRolePermissionType" nillable="true"></xs:element>
+
+  <xs:simpleType  name="StructureType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Structure_0" />
+      <xs:enumeration value="StructureWithOptionalFields_1" />
+      <xs:enumeration value="Union_2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="StructureType" type="tns:StructureType" />
+
+  <xs:complexType name="StructureField">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="Description" type="ua:LocalizedText" minOccurs="0" nillable="true" />
+      <xs:element name="DataType" type="ua:NodeId" minOccurs="0" nillable="true" />
+      <xs:element name="ValueRank" type="xs:int" minOccurs="0" />
+      <xs:element name="IsOptional" type="xs:boolean" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StructureField" type="tns:StructureField" />
+
+  <xs:complexType name="ListOfStructureField">
+    <xs:sequence>
+      <xs:element name="StructureField" type="tns:StructureField" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfStructureField" type="tns:ListOfStructureField" nillable="true"></xs:element>
+
+  <xs:complexType name="StructureDefinition">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DataTypeDefinition">
+        <xs:sequence>
+          <xs:element name="DefaultEncodingId" type="ua:ListOfNodeId" minOccurs="0" nillable="true" />
+          <xs:element name="BaseDataType" type="ua:NodeId" minOccurs="0" nillable="true" />
+          <xs:element name="StructureType" type="tns:StructureType" minOccurs="0" />
+          <xs:element name="Fields" type="tns:ListOfStructureField" minOccurs="0" nillable="true" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StructureDefinition" type="tns:StructureDefinition" />
+
+  <xs:complexType name="EnumDefinition">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DataTypeDefinition">
+        <xs:sequence>
+          <xs:element name="Fields" type="tns:ListOfEnumField" minOccurs="0" nillable="true" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EnumDefinition" type="tns:EnumDefinition" />
+
   <xs:complexType name="Node">
     <xs:annotation>
       <xs:documentation>Specifies the attributes which belong to all nodes.</xs:documentation>
@@ -1086,6 +1153,24 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ListOfEnumValueType" type="tns:ListOfEnumValueType" nillable="true"></xs:element>
+
+  <xs:complexType name="EnumField">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EnumValueType">
+        <xs:sequence>
+          <xs:element name="Name" type="xs:string" minOccurs="0" nillable="true" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EnumField" type="tns:EnumField" />
+
+  <xs:complexType name="ListOfEnumField">
+    <xs:sequence>
+      <xs:element name="EnumField" type="tns:EnumField" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfEnumField" type="tns:ListOfEnumField" nillable="true"></xs:element>
 
   <xs:complexType name="OptionSet">
     <xs:annotation>
