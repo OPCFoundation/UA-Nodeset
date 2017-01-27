@@ -421,7 +421,7 @@ OpcUa_Void OpcUa_StructureDefinition_Initialize(OpcUa_StructureDefinition* a_pVa
 {
     if (a_pValue != OpcUa_Null)
     {
-        OpcUa_Field_InitializeArray(NodeId, DefaultEncodingId);
+        OpcUa_Field_Initialize(NodeId, DefaultEncodingId);
         OpcUa_Field_Initialize(NodeId, BaseDataType);
         OpcUa_Field_InitializeEnumerated(OpcUa_StructureType, StructureType);
         OpcUa_Field_InitializeEncodeableArray(OpcUa_StructureField, Fields);
@@ -435,7 +435,7 @@ OpcUa_Void OpcUa_StructureDefinition_Clear(OpcUa_StructureDefinition* a_pValue)
 {
     if (a_pValue != OpcUa_Null)
     {
-        OpcUa_Field_ClearArray(NodeId, DefaultEncodingId);
+        OpcUa_Field_Clear(NodeId, DefaultEncodingId);
         OpcUa_Field_Clear(NodeId, BaseDataType);
         OpcUa_Field_ClearEnumerated(OpcUa_StructureType, StructureType);
         OpcUa_Field_ClearEncodeableArray(OpcUa_StructureField, Fields);
@@ -457,7 +457,7 @@ OpcUa_StatusCode OpcUa_StructureDefinition_GetSize(OpcUa_StructureDefinition* a_
 
     *a_pSize = -1;
 
-    OpcUa_Field_GetSizeArray(NodeId, DefaultEncodingId);
+    OpcUa_Field_GetSize(NodeId, DefaultEncodingId);
     OpcUa_Field_GetSize(NodeId, BaseDataType);
     OpcUa_Field_GetSizeEnumerated(OpcUa_StructureType, StructureType);
     OpcUa_Field_GetSizeEncodeableArray(OpcUa_StructureField, Fields);
@@ -482,7 +482,7 @@ OpcUa_StatusCode OpcUa_StructureDefinition_Encode(OpcUa_StructureDefinition* a_p
     OpcUa_ReturnErrorIfArgumentNull(a_pValue);
     OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
 
-    OpcUa_Field_WriteArray(NodeId, DefaultEncodingId);
+    OpcUa_Field_Write(NodeId, DefaultEncodingId);
     OpcUa_Field_Write(NodeId, BaseDataType);
     OpcUa_Field_WriteEnumerated(OpcUa_StructureType, StructureType);
     OpcUa_Field_WriteEncodeableArray(OpcUa_StructureField, Fields);
@@ -507,7 +507,7 @@ OpcUa_StatusCode OpcUa_StructureDefinition_Decode(OpcUa_StructureDefinition* a_p
 
     OpcUa_StructureDefinition_Initialize(a_pValue);
 
-    OpcUa_Field_ReadArray(NodeId, DefaultEncodingId);
+    OpcUa_Field_Read(NodeId, DefaultEncodingId);
     OpcUa_Field_Read(NodeId, BaseDataType);
     OpcUa_Field_ReadEnumerated(OpcUa_StructureType, StructureType);
     OpcUa_Field_ReadEncodeableArray(OpcUa_StructureField, Fields);

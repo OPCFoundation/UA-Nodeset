@@ -121,16 +121,6 @@
       <Field Name="Properties" DataType="i=14533" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=14533" BrowseName="KeyValuePair">
-    <DisplayName>KeyValuePair</DisplayName>
-    <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
-    </References>
-    <Definition Name="KeyValuePair">
-      <Field Name="Key" DataType="i=20" />
-      <Field Name="Value" />
-    </Definition>
-  </UADataType>
   <UADataType NodeId="i=15532" BrowseName="DataSetContentMask">
     <DisplayName>DataSetContentMask</DisplayName>
     <References>
@@ -1154,24 +1144,24 @@
   <UAVariable NodeId="i=17292" BrowseName="TransportProfileUri" ParentNodeId="i=14417" DataType="String">
     <DisplayName>TransportProfileUri</DisplayName>
     <References>
-      <Reference ReferenceType="HasComponent">i=17293</Reference>
-      <Reference ReferenceType="HasComponent">i=17294</Reference>
+      <Reference ReferenceType="HasComponent">i=17706</Reference>
+      <Reference ReferenceType="HasComponent">i=17707</Reference>
       <Reference ReferenceType="HasComponent">i=17295</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=16309</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=14417</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=17293" BrowseName="SelectionValues" ParentNodeId="i=17292" ValueRank="1">
-    <DisplayName>SelectionValues</DisplayName>
+  <UAVariable NodeId="i=17706" BrowseName="Selections" ParentNodeId="i=17292" ValueRank="1">
+    <DisplayName>Selections</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=17292</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=17294" BrowseName="SelectionValueDescriptions" ParentNodeId="i=17292" DataType="LocalizedText" ValueRank="1">
-    <DisplayName>SelectionValueDescriptions</DisplayName>
+  <UAVariable NodeId="i=17707" BrowseName="SelectionDescriptions" ParentNodeId="i=17292" DataType="LocalizedText" ValueRank="1">
+    <DisplayName>SelectionDescriptions</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3851,24 +3841,24 @@
   <UAVariable NodeId="i=17306" BrowseName="TransportProfileUri" ParentNodeId="i=14209" DataType="String">
     <DisplayName>TransportProfileUri</DisplayName>
     <References>
-      <Reference ReferenceType="HasComponent">i=17307</Reference>
-      <Reference ReferenceType="HasComponent">i=17308</Reference>
+      <Reference ReferenceType="HasComponent">i=17710</Reference>
+      <Reference ReferenceType="HasComponent">i=17711</Reference>
       <Reference ReferenceType="HasComponent">i=17309</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=16309</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=14209</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=17307" BrowseName="SelectionValues" ParentNodeId="i=17306" ValueRank="1">
-    <DisplayName>SelectionValues</DisplayName>
+  <UAVariable NodeId="i=17710" BrowseName="Selections" ParentNodeId="i=17306" ValueRank="1">
+    <DisplayName>Selections</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=17306</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=17308" BrowseName="SelectionValueDescriptions" ParentNodeId="i=17306" DataType="LocalizedText" ValueRank="1">
-    <DisplayName>SelectionValueDescriptions</DisplayName>
+  <UAVariable NodeId="i=17711" BrowseName="SelectionDescriptions" ParentNodeId="i=17306" DataType="LocalizedText" ValueRank="1">
+    <DisplayName>SelectionDescriptions</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -5051,24 +5041,24 @@
   <UAVariable NodeId="i=15330" BrowseName="NetworkInterface" ParentNodeId="i=14943" DataType="String" ValueRank="1">
     <DisplayName>NetworkInterface</DisplayName>
     <References>
-      <Reference ReferenceType="HasComponent">i=17427</Reference>
-      <Reference ReferenceType="HasComponent">i=17428</Reference>
+      <Reference ReferenceType="HasComponent">i=17714</Reference>
+      <Reference ReferenceType="HasComponent">i=17715</Reference>
       <Reference ReferenceType="HasComponent">i=17429</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=16309</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=14943</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=17427" BrowseName="SelectionValues" ParentNodeId="i=15330" ValueRank="1">
-    <DisplayName>SelectionValues</DisplayName>
+  <UAVariable NodeId="i=17714" BrowseName="Selections" ParentNodeId="i=15330" ValueRank="1">
+    <DisplayName>Selections</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=15330</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=17428" BrowseName="SelectionValueDescriptions" ParentNodeId="i=15330" DataType="LocalizedText" ValueRank="1">
-    <DisplayName>SelectionValueDescriptions</DisplayName>
+  <UAVariable NodeId="i=17715" BrowseName="SelectionDescriptions" ParentNodeId="i=15330" DataType="LocalizedText" ValueRank="1">
+    <DisplayName>SelectionDescriptions</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -6697,14 +6687,6 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="i=14802" BrowseName="Default XML" SymbolicName="DefaultXml">
-    <DisplayName>Default XML</DisplayName>
-    <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=14533</Reference>
-      <Reference ReferenceType="HasDescription">i=14829</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
   <UAObject NodeId="i=14319" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
@@ -6742,14 +6724,6 @@
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=14524</Reference>
       <Reference ReferenceType="HasDescription">i=14852</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="i=14846" BrowseName="Default Binary" SymbolicName="DefaultBinary">
-    <DisplayName>Default Binary</DisplayName>
-    <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=14533</Reference>
-      <Reference ReferenceType="HasDescription">i=14873</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>

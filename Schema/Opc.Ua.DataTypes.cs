@@ -250,6 +250,241 @@ namespace Opc.Ua
     #endif
     #endregion
 
+    #region KeyValuePair Class
+    #if (!OPCUA_EXCLUDE_KeyValuePair)
+    /// <summary>
+    /// A description for the KeyValuePair DataType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class KeyValuePair : IEncodeable
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public KeyValuePair()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+            m_key = null;
+            m_value = Variant.Null;
+        }
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the Key field.
+        /// </summary>
+        [DataMember(Name = "Key", IsRequired = false, Order = 1)]
+        public QualifiedName Key
+        {
+            get { return m_key;  }
+            set { m_key = value; }
+        }
+
+        /// <summary>
+        /// A description for the Value field.
+        /// </summary>
+        [DataMember(Name = "Value", IsRequired = false, Order = 2)]
+        public Variant Value
+        {
+            get { return m_value;  }
+            set { m_value = value; }
+        }
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public virtual ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.KeyValuePair; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public virtual ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.KeyValuePair_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public virtual ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.KeyValuePair_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public virtual void Encode(IEncoder encoder)
+        {
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            encoder.WriteQualifiedName("Key", Key);
+            encoder.WriteVariant("Value", Value);
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public virtual void Decode(IDecoder decoder)
+        {
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            Key = decoder.ReadQualifiedName("Key");
+            Value = decoder.ReadVariant("Value");
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public virtual bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            KeyValuePair value = encodeable as KeyValuePair;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+            if (!Utils.IsEqual(m_key, value.m_key)) return false;
+            if (!Utils.IsEqual(m_value, value.m_value)) return false;
+
+            return true;
+        }
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public virtual object Clone()
+        {
+            return (KeyValuePair)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            KeyValuePair clone = (KeyValuePair)base.MemberwiseClone();
+
+            clone.m_key = (QualifiedName)Utils.Clone(this.m_key);
+            clone.m_value = (Variant)Utils.Clone(this.m_value);
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        private QualifiedName m_key;
+        private Variant m_value;
+        #endregion
+    }
+
+    #region KeyValuePairCollection Class
+    /// <summary>
+    /// A collection of KeyValuePair objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfKeyValuePair", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "KeyValuePair")]
+    #if !NET_STANDARD
+    public partial class KeyValuePairCollection : List<KeyValuePair>, ICloneable
+    #else
+    public partial class KeyValuePairCollection : List<KeyValuePair>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public KeyValuePairCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public KeyValuePairCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public KeyValuePairCollection(IEnumerable<KeyValuePair> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator KeyValuePairCollection(KeyValuePair[] values)
+        {
+            if (values != null)
+            {
+                return new KeyValuePairCollection(values);
+            }
+
+            return new KeyValuePairCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator KeyValuePair[](KeyValuePairCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (KeyValuePairCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            KeyValuePairCollection clone = new KeyValuePairCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((KeyValuePair)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
+    #endif
+    #endregion
+
     #region OpenFileMode Enumeration
     #if (!OPCUA_EXCLUDE_OpenFileMode)
     /// <summary>
@@ -2844,241 +3079,6 @@ namespace Opc.Ua
     #endif
     #endregion
 
-    #region KeyValuePair Class
-    #if (!OPCUA_EXCLUDE_KeyValuePair)
-    /// <summary>
-    /// A description for the KeyValuePair DataType.
-    /// </summary>
-    /// <exclude />
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
-    public partial class KeyValuePair : IEncodeable
-    {
-        #region Constructors
-        /// <summary>
-        /// The default constructor.
-        /// </summary>
-        public KeyValuePair()
-        {
-            Initialize();
-        }
-
-        /// <summary>
-        /// Called by the .NET framework during deserialization.
-        /// </summary>
-        [OnDeserializing]
-        private void Initialize(StreamingContext context)
-        {
-            Initialize();
-        }
-
-        /// <summary>
-        /// Sets private members to default values.
-        /// </summary>
-        private void Initialize()
-        {
-            m_key = null;
-            m_value = Variant.Null;
-        }
-        #endregion
-
-        #region Public Properties
-        /// <summary>
-        /// A description for the Key field.
-        /// </summary>
-        [DataMember(Name = "Key", IsRequired = false, Order = 1)]
-        public QualifiedName Key
-        {
-            get { return m_key;  }
-            set { m_key = value; }
-        }
-
-        /// <summary>
-        /// A description for the Value field.
-        /// </summary>
-        [DataMember(Name = "Value", IsRequired = false, Order = 2)]
-        public Variant Value
-        {
-            get { return m_value;  }
-            set { m_value = value; }
-        }
-        #endregion
-
-        #region IEncodeable Members
-        /// <summary cref="IEncodeable.TypeId" />
-        public virtual ExpandedNodeId TypeId
-        {
-            get { return DataTypeIds.KeyValuePair; }
-        }
-
-        /// <summary cref="IEncodeable.BinaryEncodingId" />
-        public virtual ExpandedNodeId BinaryEncodingId
-        {
-            get { return ObjectIds.KeyValuePair_Encoding_DefaultBinary; }
-        }
-
-        /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId
-        {
-            get { return ObjectIds.KeyValuePair_Encoding_DefaultXml; }
-        }
-
-        /// <summary cref="IEncodeable.Encode(IEncoder)" />
-        public virtual void Encode(IEncoder encoder)
-        {
-            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
-
-            encoder.WriteQualifiedName("Key", Key);
-            encoder.WriteVariant("Value", Value);
-
-            encoder.PopNamespace();
-        }
-
-        /// <summary cref="IEncodeable.Decode(IDecoder)" />
-        public virtual void Decode(IDecoder decoder)
-        {
-            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
-
-            Key = decoder.ReadQualifiedName("Key");
-            Value = decoder.ReadVariant("Value");
-
-            decoder.PopNamespace();
-        }
-
-        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
-        public virtual bool IsEqual(IEncodeable encodeable)
-        {
-            if (Object.ReferenceEquals(this, encodeable))
-            {
-                return true;
-            }
-
-            KeyValuePair value = encodeable as KeyValuePair;
-
-            if (value == null)
-            {
-                return false;
-            }
-
-            if (!Utils.IsEqual(m_key, value.m_key)) return false;
-            if (!Utils.IsEqual(m_value, value.m_value)) return false;
-
-            return true;
-        }
-
-        #if !NET_STANDARD
-        /// <summary cref="ICloneable.Clone" />
-        public virtual object Clone()
-        {
-            return (KeyValuePair)this.MemberwiseClone();
-        }
-        #endif
-
-        /// <summary cref="Object.MemberwiseClone" />
-        public new object MemberwiseClone()
-        {
-            KeyValuePair clone = (KeyValuePair)base.MemberwiseClone();
-
-            clone.m_key = (QualifiedName)Utils.Clone(this.m_key);
-            clone.m_value = (Variant)Utils.Clone(this.m_value);
-
-            return clone;
-        }
-        #endregion
-
-        #region Private Fields
-        private QualifiedName m_key;
-        private Variant m_value;
-        #endregion
-    }
-
-    #region KeyValuePairCollection Class
-    /// <summary>
-    /// A collection of KeyValuePair objects.
-    /// </summary>
-    /// <exclude />
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    [CollectionDataContract(Name = "ListOfKeyValuePair", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "KeyValuePair")]
-    #if !NET_STANDARD
-    public partial class KeyValuePairCollection : List<KeyValuePair>, ICloneable
-    #else
-    public partial class KeyValuePairCollection : List<KeyValuePair>
-    #endif
-    {
-        #region Constructors
-        /// <summary>
-        /// Initializes the collection with default values.
-        /// </summary>
-        public KeyValuePairCollection() {}
-
-        /// <summary>
-        /// Initializes the collection with an initial capacity.
-        /// </summary>
-        public KeyValuePairCollection(int capacity) : base(capacity) {}
-
-        /// <summary>
-        /// Initializes the collection with another collection.
-        /// </summary>
-        public KeyValuePairCollection(IEnumerable<KeyValuePair> collection) : base(collection) {}
-        #endregion
-
-        #region Static Operators
-        /// <summary>
-        /// Converts an array to a collection.
-        /// </summary>
-        public static implicit operator KeyValuePairCollection(KeyValuePair[] values)
-        {
-            if (values != null)
-            {
-                return new KeyValuePairCollection(values);
-            }
-
-            return new KeyValuePairCollection();
-        }
-
-        /// <summary>
-        /// Converts a collection to an array.
-        /// </summary>
-        public static explicit operator KeyValuePair[](KeyValuePairCollection values)
-        {
-            if (values != null)
-            {
-                return values.ToArray();
-            }
-
-            return null;
-        }
-        #endregion
-
-        #if !NET_STANDARD
-        #region ICloneable Methods
-        /// <summary>
-        /// Creates a deep copy of the collection.
-        /// </summary>
-        public object Clone()
-        {
-            return (KeyValuePairCollection)this.MemberwiseClone();
-        }
-        #endregion
-        #endif
-
-        /// <summary cref="Object.MemberwiseClone" />
-        public new object MemberwiseClone()
-        {
-            KeyValuePairCollection clone = new KeyValuePairCollection(this.Count);
-
-            for (int ii = 0; ii < this.Count; ii++)
-            {
-                clone.Add((KeyValuePair)Utils.Clone(this[ii]));
-            }
-
-            return clone;
-        }
-    }
-    #endregion
-    #endif
-    #endregion
-
     #region DataSetContentMask Enumeration
     #if (!OPCUA_EXCLUDE_DataSetContentMask)
     /// <summary>
@@ -5412,7 +5412,7 @@ namespace Opc.Ua
         /// </summary>
         private void Initialize()
         {
-            m_defaultEncodingId = new NodeIdCollection();
+            m_defaultEncodingId = null;
             m_baseDataType = null;
             m_structureType = StructureType.Structure;
             m_fields = new StructureFieldCollection();
@@ -5424,22 +5424,10 @@ namespace Opc.Ua
         /// A description for the DefaultEncodingId field.
         /// </summary>
         [DataMember(Name = "DefaultEncodingId", IsRequired = false, Order = 1)]
-        public NodeIdCollection DefaultEncodingId
+        public NodeId DefaultEncodingId
         {
-            get
-            {
-                return m_defaultEncodingId;
-            }
-
-            set
-            {
-                m_defaultEncodingId = value;
-
-                if (value == null)
-                {
-                    m_defaultEncodingId = new NodeIdCollection();
-                }
-            }
+            get { return m_defaultEncodingId;  }
+            set { m_defaultEncodingId = value; }
         }
 
         /// <summary>
@@ -5511,7 +5499,7 @@ namespace Opc.Ua
 
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
-            encoder.WriteNodeIdArray("DefaultEncodingId", DefaultEncodingId);
+            encoder.WriteNodeId("DefaultEncodingId", DefaultEncodingId);
             encoder.WriteNodeId("BaseDataType", BaseDataType);
             encoder.WriteEnumerated("StructureType", StructureType);
             encoder.WriteEncodeableArray("Fields", Fields.ToArray(), typeof(StructureField));
@@ -5526,7 +5514,7 @@ namespace Opc.Ua
 
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
-            DefaultEncodingId = decoder.ReadNodeIdArray("DefaultEncodingId");
+            DefaultEncodingId = decoder.ReadNodeId("DefaultEncodingId");
             BaseDataType = decoder.ReadNodeId("BaseDataType");
             StructureType = (StructureType)decoder.ReadEnumerated("StructureType", typeof(StructureType));
             Fields = (StructureFieldCollection)decoder.ReadEncodeableArray("Fields", typeof(StructureField));
@@ -5571,7 +5559,7 @@ namespace Opc.Ua
         {
             StructureDefinition clone = (StructureDefinition)base.MemberwiseClone();
 
-            clone.m_defaultEncodingId = (NodeIdCollection)Utils.Clone(this.m_defaultEncodingId);
+            clone.m_defaultEncodingId = (NodeId)Utils.Clone(this.m_defaultEncodingId);
             clone.m_baseDataType = (NodeId)Utils.Clone(this.m_baseDataType);
             clone.m_structureType = (StructureType)Utils.Clone(this.m_structureType);
             clone.m_fields = (StructureFieldCollection)Utils.Clone(this.m_fields);
@@ -5581,7 +5569,7 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
-        private NodeIdCollection m_defaultEncodingId;
+        private NodeId m_defaultEncodingId;
         private NodeId m_baseDataType;
         private StructureType m_structureType;
         private StructureFieldCollection m_fields;

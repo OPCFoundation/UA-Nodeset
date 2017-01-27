@@ -77,6 +77,7 @@
 /*============================================================================
 * DataType Exclusions
  *===========================================================================*/
+/* #define OPCUA_EXCLUDE_KeyValuePair */
 /* #define OPCUA_EXCLUDE_IdentityMappingRuleType */
 /* #define OPCUA_EXCLUDE_TrustListDataType */
 /* #define OPCUA_EXCLUDE_ConfigurationVersionDataType */
@@ -85,7 +86,6 @@
 /* #define OPCUA_EXCLUDE_DataTypeDescription */
 /* #define OPCUA_EXCLUDE_StructureDescription */
 /* #define OPCUA_EXCLUDE_EnumDescription */
-/* #define OPCUA_EXCLUDE_KeyValuePair */
 /* #define OPCUA_EXCLUDE_PublishedVariableDataType */
 /* #define OPCUA_EXCLUDE_DataConnectionDataType */
 /* #define OPCUA_EXCLUDE_RolePermissionType */

@@ -230,8 +230,7 @@ OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_StructureField_Encodeab
  *===========================================================================*/
 typedef struct _OpcUa_StructureDefinition
 {
-    OpcUa_Int32           NoOfDefaultEncodingId;
-    OpcUa_NodeId*         DefaultEncodingId;
+    OpcUa_NodeId          DefaultEncodingId;
     OpcUa_NodeId          BaseDataType;
     OpcUa_StructureType   StructureType;
     OpcUa_Int32           NoOfFields;

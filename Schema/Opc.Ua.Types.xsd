@@ -491,6 +491,21 @@
 
   <xs:element name="BitFieldMaskDataType" type="xs:unsignedLong" />
 
+  <xs:complexType name="KeyValuePair">
+    <xs:sequence>
+      <xs:element name="Key" type="ua:QualifiedName" minOccurs="0" nillable="true" />
+      <xs:element name="Value" type="ua:Variant" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="KeyValuePair" type="tns:KeyValuePair" />
+
+  <xs:complexType name="ListOfKeyValuePair">
+    <xs:sequence>
+      <xs:element name="KeyValuePair" type="tns:KeyValuePair" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfKeyValuePair" type="tns:ListOfKeyValuePair" nillable="true"></xs:element>
+
   <xs:simpleType  name="OpenFileMode">
     <xs:restriction base="xs:string">
       <xs:enumeration value="Read_1" />
@@ -687,21 +702,6 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ListOfEnumDescription" type="tns:ListOfEnumDescription" nillable="true"></xs:element>
-
-  <xs:complexType name="KeyValuePair">
-    <xs:sequence>
-      <xs:element name="Key" type="ua:QualifiedName" minOccurs="0" nillable="true" />
-      <xs:element name="Value" type="ua:Variant" minOccurs="0" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="KeyValuePair" type="tns:KeyValuePair" />
-
-  <xs:complexType name="ListOfKeyValuePair">
-    <xs:sequence>
-      <xs:element name="KeyValuePair" type="tns:KeyValuePair" minOccurs="0" maxOccurs="unbounded" nillable="true" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ListOfKeyValuePair" type="tns:ListOfKeyValuePair" nillable="true"></xs:element>
 
   <xs:simpleType  name="DataSetContentMask">
     <xs:restriction base="xs:string">
@@ -904,7 +904,7 @@
     <xs:complexContent mixed="false">
       <xs:extension base="tns:DataTypeDefinition">
         <xs:sequence>
-          <xs:element name="DefaultEncodingId" type="ua:ListOfNodeId" minOccurs="0" nillable="true" />
+          <xs:element name="DefaultEncodingId" type="ua:NodeId" minOccurs="0" nillable="true" />
           <xs:element name="BaseDataType" type="ua:NodeId" minOccurs="0" nillable="true" />
           <xs:element name="StructureType" type="tns:StructureType" minOccurs="0" />
           <xs:element name="Fields" type="tns:ListOfStructureField" minOccurs="0" nillable="true" />

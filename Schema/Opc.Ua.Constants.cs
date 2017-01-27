@@ -235,6 +235,11 @@ namespace Opc.Ua
         public const uint BitFieldMaskDataType = 11737;
 
         /// <summary>
+        /// The identifier for the KeyValuePair DataType.
+        /// </summary>
+        public const uint KeyValuePair = 14533;
+
+        /// <summary>
         /// The identifier for the OpenFileMode DataType.
         /// </summary>
         public const uint OpenFileMode = 11939;
@@ -293,11 +298,6 @@ namespace Opc.Ua
         /// The identifier for the EnumDescription DataType.
         /// </summary>
         public const uint EnumDescription = 15488;
-
-        /// <summary>
-        /// The identifier for the KeyValuePair DataType.
-        /// </summary>
-        public const uint KeyValuePair = 14533;
 
         /// <summary>
         /// The identifier for the DataSetContentMask DataType.
@@ -4445,6 +4445,11 @@ namespace Opc.Ua
         public const uint BrokerReaderGroupType_DataSetReaderName_Placeholder_SubscribedDataSet = 17588;
 
         /// <summary>
+        /// The identifier for the KeyValuePair_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint KeyValuePair_Encoding_DefaultXml = 14802;
+
+        /// <summary>
         /// The identifier for the IdentityMappingRuleType_Encoding_DefaultXml Object.
         /// </summary>
         public const uint IdentityMappingRuleType_Encoding_DefaultXml = 15728;
@@ -4483,11 +4488,6 @@ namespace Opc.Ua
         /// The identifier for the EnumDescription_Encoding_DefaultXml Object.
         /// </summary>
         public const uint EnumDescription_Encoding_DefaultXml = 15590;
-
-        /// <summary>
-        /// The identifier for the KeyValuePair_Encoding_DefaultXml Object.
-        /// </summary>
-        public const uint KeyValuePair_Encoding_DefaultXml = 14802;
 
         /// <summary>
         /// The identifier for the PublishedVariableDataType_Encoding_DefaultXml Object.
@@ -5640,6 +5640,11 @@ namespace Opc.Ua
         public const uint Annotation_Encoding_DefaultXml = 892;
 
         /// <summary>
+        /// The identifier for the KeyValuePair_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint KeyValuePair_Encoding_DefaultBinary = 14846;
+
+        /// <summary>
         /// The identifier for the IdentityMappingRuleType_Encoding_DefaultBinary Object.
         /// </summary>
         public const uint IdentityMappingRuleType_Encoding_DefaultBinary = 15736;
@@ -5678,11 +5683,6 @@ namespace Opc.Ua
         /// The identifier for the EnumDescription_Encoding_DefaultBinary Object.
         /// </summary>
         public const uint EnumDescription_Encoding_DefaultBinary = 127;
-
-        /// <summary>
-        /// The identifier for the KeyValuePair_Encoding_DefaultBinary Object.
-        /// </summary>
-        public const uint KeyValuePair_Encoding_DefaultBinary = 14846;
 
         /// <summary>
         /// The identifier for the PublishedVariableDataType_Encoding_DefaultBinary Object.
@@ -7180,6 +7180,11 @@ namespace Opc.Ua
         public const uint RoleType = 15620;
 
         /// <summary>
+        /// The identifier for the RoleMappingRuleChangedAuditEventType ObjectType.
+        /// </summary>
+        public const uint RoleMappingRuleChangedAuditEventType = 17641;
+
+        /// <summary>
         /// The identifier for the ConditionType ObjectType.
         /// </summary>
         public const uint ConditionType = 2782;
@@ -8245,9 +8250,9 @@ namespace Opc.Ua
         public const uint ServerType_EstimatedReturnTime = 12882;
 
         /// <summary>
-        /// The identifier for the ServerType_CurrentTimeZone Variable.
+        /// The identifier for the ServerType_LocalTime Variable.
         /// </summary>
-        public const uint ServerType_CurrentTimeZone = 16308;
+        public const uint ServerType_LocalTime = 17612;
 
         /// <summary>
         /// The identifier for the ServerType_ServerCapabilities_ServerProfileArray Variable.
@@ -9625,6 +9630,11 @@ namespace Opc.Ua
         public const uint AuditEventType_ClientUserId = 2057;
 
         /// <summary>
+        /// The identifier for the AuditSecurityEventType_StatusCodeId Variable.
+        /// </summary>
+        public const uint AuditSecurityEventType_StatusCodeId = 17615;
+
+        /// <summary>
         /// The identifier for the AuditChannelEventType_SecureChannelId Variable.
         /// </summary>
         public const uint AuditChannelEventType_SecureChannelId = 2745;
@@ -9803,21 +9813,6 @@ namespace Opc.Ua
         /// The identifier for the ProgressEventType_Progress Variable.
         /// </summary>
         public const uint ProgressEventType_Progress = 12503;
-
-        /// <summary>
-        /// The identifier for the SelectionListType_SelectionValues Variable.
-        /// </summary>
-        public const uint SelectionListType_SelectionValues = 16310;
-
-        /// <summary>
-        /// The identifier for the SelectionListType_SelectionValueDescriptions Variable.
-        /// </summary>
-        public const uint SelectionListType_SelectionValueDescriptions = 16311;
-
-        /// <summary>
-        /// The identifier for the SelectionListType_RestrictToList Variable.
-        /// </summary>
-        public const uint SelectionListType_RestrictToList = 16312;
 
         /// <summary>
         /// The identifier for the ServerStatusType_StartTime Variable.
@@ -10870,6 +10865,21 @@ namespace Opc.Ua
         public const uint OptionSetType_BitMask = 11701;
 
         /// <summary>
+        /// The identifier for the SelectionListType_Selections Variable.
+        /// </summary>
+        public const uint SelectionListType_Selections = 17632;
+
+        /// <summary>
+        /// The identifier for the SelectionListType_SelectionDescriptions Variable.
+        /// </summary>
+        public const uint SelectionListType_SelectionDescriptions = 17633;
+
+        /// <summary>
+        /// The identifier for the SelectionListType_RestrictToList Variable.
+        /// </summary>
+        public const uint SelectionListType_RestrictToList = 16312;
+
+        /// <summary>
         /// The identifier for the Server_ServerArray Variable.
         /// </summary>
         public const uint Server_ServerArray = 2254;
@@ -10958,11 +10968,6 @@ namespace Opc.Ua
         /// The identifier for the Server_EstimatedReturnTime Variable.
         /// </summary>
         public const uint Server_EstimatedReturnTime = 12885;
-
-        /// <summary>
-        /// The identifier for the Server_CurrentTimeZone Variable.
-        /// </summary>
-        public const uint Server_CurrentTimeZone = 16313;
 
         /// <summary>
         /// The identifier for the Server_ServerCapabilities_ServerProfileArray Variable.
@@ -11215,6 +11220,11 @@ namespace Opc.Ua
         public const uint Server_RequestServerStateChange_InputArguments = 12887;
 
         /// <summary>
+        /// The identifier for the Server_CurrentTimeZone Variable.
+        /// </summary>
+        public const uint Server_CurrentTimeZone = 16313;
+
+        /// <summary>
         /// The identifier for the Server_ServerRedundancy_CurrentServerId Variable.
         /// </summary>
         public const uint Server_ServerRedundancy_CurrentServerId = 11312;
@@ -11388,6 +11398,16 @@ namespace Opc.Ua
         /// The identifier for the FiniteStateMachineType_LastTransition_Id Variable.
         /// </summary>
         public const uint FiniteStateMachineType_LastTransition_Id = 3732;
+
+        /// <summary>
+        /// The identifier for the FiniteStateMachineType_AvailableStates Variable.
+        /// </summary>
+        public const uint FiniteStateMachineType_AvailableStates = 17635;
+
+        /// <summary>
+        /// The identifier for the FiniteStateMachineType_PossibleTransitions Variable.
+        /// </summary>
+        public const uint FiniteStateMachineType_PossibleTransitions = 17636;
 
         /// <summary>
         /// The identifier for the FiniteStateVariableType_Id Variable.
@@ -17375,14 +17395,14 @@ namespace Opc.Ua
         public const uint PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri = 17292;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_SelectionValues Variable.
+        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_Selections Variable.
         /// </summary>
-        public const uint PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_SelectionValues = 17293;
+        public const uint PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_Selections = 17706;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_SelectionValueDescriptions Variable.
+        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_SelectionDescriptions Variable.
         /// </summary>
-        public const uint PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_SelectionValueDescriptions = 17294;
+        public const uint PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_SelectionDescriptions = 17707;
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_RestrictToList Variable.
@@ -17510,14 +17530,14 @@ namespace Opc.Ua
         public const uint PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri = 17300;
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_SelectionValues Variable.
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_Selections Variable.
         /// </summary>
-        public const uint PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_SelectionValues = 17301;
+        public const uint PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_Selections = 17708;
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_SelectionValueDescriptions Variable.
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_SelectionDescriptions Variable.
         /// </summary>
-        public const uint PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_SelectionValueDescriptions = 17302;
+        public const uint PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_SelectionDescriptions = 17709;
 
         /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_RestrictToList Variable.
@@ -17870,14 +17890,14 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_TransportProfileUri = 17306;
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_TransportProfileUri_SelectionValues Variable.
+        /// The identifier for the PubSubConnectionType_TransportProfileUri_Selections Variable.
         /// </summary>
-        public const uint PubSubConnectionType_TransportProfileUri_SelectionValues = 17307;
+        public const uint PubSubConnectionType_TransportProfileUri_Selections = 17710;
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_TransportProfileUri_SelectionValueDescriptions Variable.
+        /// The identifier for the PubSubConnectionType_TransportProfileUri_SelectionDescriptions Variable.
         /// </summary>
-        public const uint PubSubConnectionType_TransportProfileUri_SelectionValueDescriptions = 17308;
+        public const uint PubSubConnectionType_TransportProfileUri_SelectionDescriptions = 17711;
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_TransportProfileUri_RestrictToList Variable.
@@ -18215,14 +18235,14 @@ namespace Opc.Ua
         public const uint PubSubCommunicationFailureEventType_Error = 15576;
 
         /// <summary>
-        /// The identifier for the UadpConnectionType_TransportProfileUri_SelectionValues Variable.
+        /// The identifier for the UadpConnectionType_TransportProfileUri_Selections Variable.
         /// </summary>
-        public const uint UadpConnectionType_TransportProfileUri_SelectionValues = 17399;
+        public const uint UadpConnectionType_TransportProfileUri_Selections = 17712;
 
         /// <summary>
-        /// The identifier for the UadpConnectionType_TransportProfileUri_SelectionValueDescriptions Variable.
+        /// The identifier for the UadpConnectionType_TransportProfileUri_SelectionDescriptions Variable.
         /// </summary>
-        public const uint UadpConnectionType_TransportProfileUri_SelectionValueDescriptions = 17400;
+        public const uint UadpConnectionType_TransportProfileUri_SelectionDescriptions = 17713;
 
         /// <summary>
         /// The identifier for the UadpConnectionType_TransportProfileUri_RestrictToList Variable.
@@ -18300,14 +18320,14 @@ namespace Opc.Ua
         public const uint UadpConnectionType_NetworkInterface = 15330;
 
         /// <summary>
-        /// The identifier for the UadpConnectionType_NetworkInterface_SelectionValues Variable.
+        /// The identifier for the UadpConnectionType_NetworkInterface_Selections Variable.
         /// </summary>
-        public const uint UadpConnectionType_NetworkInterface_SelectionValues = 17427;
+        public const uint UadpConnectionType_NetworkInterface_Selections = 17714;
 
         /// <summary>
-        /// The identifier for the UadpConnectionType_NetworkInterface_SelectionValueDescriptions Variable.
+        /// The identifier for the UadpConnectionType_NetworkInterface_SelectionDescriptions Variable.
         /// </summary>
-        public const uint UadpConnectionType_NetworkInterface_SelectionValueDescriptions = 17428;
+        public const uint UadpConnectionType_NetworkInterface_SelectionDescriptions = 17715;
 
         /// <summary>
         /// The identifier for the UadpConnectionType_NetworkInterface_RestrictToList Variable.
@@ -18485,14 +18505,14 @@ namespace Opc.Ua
         public const uint UadpReaderTransportType_DataSetWriterId = 15156;
 
         /// <summary>
-        /// The identifier for the BrokerConnectionType_TransportProfileUri_SelectionValues Variable.
+        /// The identifier for the BrokerConnectionType_TransportProfileUri_Selections Variable.
         /// </summary>
-        public const uint BrokerConnectionType_TransportProfileUri_SelectionValues = 17507;
+        public const uint BrokerConnectionType_TransportProfileUri_Selections = 17716;
 
         /// <summary>
-        /// The identifier for the BrokerConnectionType_TransportProfileUri_SelectionValueDescriptions Variable.
+        /// The identifier for the BrokerConnectionType_TransportProfileUri_SelectionDescriptions Variable.
         /// </summary>
-        public const uint BrokerConnectionType_TransportProfileUri_SelectionValueDescriptions = 17508;
+        public const uint BrokerConnectionType_TransportProfileUri_SelectionDescriptions = 17717;
 
         /// <summary>
         /// The identifier for the BrokerConnectionType_TransportProfileUri_RestrictToList Variable.
@@ -18875,6 +18895,11 @@ namespace Opc.Ua
         public const uint OpcUa_XmlSchema_NamespaceUri = 8254;
 
         /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_KeyValuePair Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_KeyValuePair = 14829;
+
+        /// <summary>
         /// The identifier for the OpcUa_XmlSchema_IdentityMappingRuleType Variable.
         /// </summary>
         public const uint OpcUa_XmlSchema_IdentityMappingRuleType = 15730;
@@ -18913,11 +18938,6 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_XmlSchema_EnumDescription Variable.
         /// </summary>
         public const uint OpcUa_XmlSchema_EnumDescription = 15594;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_KeyValuePair Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_KeyValuePair = 14829;
 
         /// <summary>
         /// The identifier for the OpcUa_XmlSchema_PublishedVariableDataType Variable.
@@ -19245,6 +19265,11 @@ namespace Opc.Ua
         public const uint OpcUa_BinarySchema_NamespaceUri = 7619;
 
         /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_KeyValuePair Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_KeyValuePair = 14873;
+
+        /// <summary>
         /// The identifier for the OpcUa_BinarySchema_IdentityMappingRuleType Variable.
         /// </summary>
         public const uint OpcUa_BinarySchema_IdentityMappingRuleType = 15738;
@@ -19283,11 +19308,6 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_BinarySchema_EnumDescription Variable.
         /// </summary>
         public const uint OpcUa_BinarySchema_EnumDescription = 15602;
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_KeyValuePair Variable.
-        /// </summary>
-        public const uint OpcUa_BinarySchema_KeyValuePair = 14873;
 
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_PublishedVariableDataType Variable.
@@ -19645,11 +19665,6 @@ namespace Opc.Ua
         public const uint ServerVendorCapabilityType = 2137;
 
         /// <summary>
-        /// The identifier for the SelectionListType VariableType.
-        /// </summary>
-        public const uint SelectionListType = 16309;
-
-        /// <summary>
         /// The identifier for the ServerStatusType VariableType.
         /// </summary>
         public const uint ServerStatusType = 2138;
@@ -19708,6 +19723,11 @@ namespace Opc.Ua
         /// The identifier for the OptionSetType VariableType.
         /// </summary>
         public const uint OptionSetType = 11487;
+
+        /// <summary>
+        /// The identifier for the SelectionListType VariableType.
+        /// </summary>
+        public const uint SelectionListType = 16309;
 
         /// <summary>
         /// The identifier for the StateVariableType VariableType.
@@ -20010,6 +20030,11 @@ namespace Opc.Ua
         public static readonly NodeId BitFieldMaskDataType = new NodeId(Opc.Ua.DataTypes.BitFieldMaskDataType);
 
         /// <summary>
+        /// The identifier for the KeyValuePair DataType.
+        /// </summary>
+        public static readonly NodeId KeyValuePair = new NodeId(Opc.Ua.DataTypes.KeyValuePair);
+
+        /// <summary>
         /// The identifier for the OpenFileMode DataType.
         /// </summary>
         public static readonly NodeId OpenFileMode = new NodeId(Opc.Ua.DataTypes.OpenFileMode);
@@ -20068,11 +20093,6 @@ namespace Opc.Ua
         /// The identifier for the EnumDescription DataType.
         /// </summary>
         public static readonly NodeId EnumDescription = new NodeId(Opc.Ua.DataTypes.EnumDescription);
-
-        /// <summary>
-        /// The identifier for the KeyValuePair DataType.
-        /// </summary>
-        public static readonly NodeId KeyValuePair = new NodeId(Opc.Ua.DataTypes.KeyValuePair);
 
         /// <summary>
         /// The identifier for the DataSetContentMask DataType.
@@ -24220,6 +24240,11 @@ namespace Opc.Ua
         public static readonly NodeId BrokerReaderGroupType_DataSetReaderName_Placeholder_SubscribedDataSet = new NodeId(Opc.Ua.Objects.BrokerReaderGroupType_DataSetReaderName_Placeholder_SubscribedDataSet);
 
         /// <summary>
+        /// The identifier for the KeyValuePair_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId KeyValuePair_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.KeyValuePair_Encoding_DefaultXml);
+
+        /// <summary>
         /// The identifier for the IdentityMappingRuleType_Encoding_DefaultXml Object.
         /// </summary>
         public static readonly NodeId IdentityMappingRuleType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.IdentityMappingRuleType_Encoding_DefaultXml);
@@ -24258,11 +24283,6 @@ namespace Opc.Ua
         /// The identifier for the EnumDescription_Encoding_DefaultXml Object.
         /// </summary>
         public static readonly NodeId EnumDescription_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.EnumDescription_Encoding_DefaultXml);
-
-        /// <summary>
-        /// The identifier for the KeyValuePair_Encoding_DefaultXml Object.
-        /// </summary>
-        public static readonly NodeId KeyValuePair_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.KeyValuePair_Encoding_DefaultXml);
 
         /// <summary>
         /// The identifier for the PublishedVariableDataType_Encoding_DefaultXml Object.
@@ -25415,6 +25435,11 @@ namespace Opc.Ua
         public static readonly NodeId Annotation_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.Annotation_Encoding_DefaultXml);
 
         /// <summary>
+        /// The identifier for the KeyValuePair_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId KeyValuePair_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.KeyValuePair_Encoding_DefaultBinary);
+
+        /// <summary>
         /// The identifier for the IdentityMappingRuleType_Encoding_DefaultBinary Object.
         /// </summary>
         public static readonly NodeId IdentityMappingRuleType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.IdentityMappingRuleType_Encoding_DefaultBinary);
@@ -25453,11 +25478,6 @@ namespace Opc.Ua
         /// The identifier for the EnumDescription_Encoding_DefaultBinary Object.
         /// </summary>
         public static readonly NodeId EnumDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EnumDescription_Encoding_DefaultBinary);
-
-        /// <summary>
-        /// The identifier for the KeyValuePair_Encoding_DefaultBinary Object.
-        /// </summary>
-        public static readonly NodeId KeyValuePair_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.KeyValuePair_Encoding_DefaultBinary);
 
         /// <summary>
         /// The identifier for the PublishedVariableDataType_Encoding_DefaultBinary Object.
@@ -26955,6 +26975,11 @@ namespace Opc.Ua
         public static readonly NodeId RoleType = new NodeId(Opc.Ua.ObjectTypes.RoleType);
 
         /// <summary>
+        /// The identifier for the RoleMappingRuleChangedAuditEventType ObjectType.
+        /// </summary>
+        public static readonly NodeId RoleMappingRuleChangedAuditEventType = new NodeId(Opc.Ua.ObjectTypes.RoleMappingRuleChangedAuditEventType);
+
+        /// <summary>
         /// The identifier for the ConditionType ObjectType.
         /// </summary>
         public static readonly NodeId ConditionType = new NodeId(Opc.Ua.ObjectTypes.ConditionType);
@@ -28020,9 +28045,9 @@ namespace Opc.Ua
         public static readonly NodeId ServerType_EstimatedReturnTime = new NodeId(Opc.Ua.Variables.ServerType_EstimatedReturnTime);
 
         /// <summary>
-        /// The identifier for the ServerType_CurrentTimeZone Variable.
+        /// The identifier for the ServerType_LocalTime Variable.
         /// </summary>
-        public static readonly NodeId ServerType_CurrentTimeZone = new NodeId(Opc.Ua.Variables.ServerType_CurrentTimeZone);
+        public static readonly NodeId ServerType_LocalTime = new NodeId(Opc.Ua.Variables.ServerType_LocalTime);
 
         /// <summary>
         /// The identifier for the ServerType_ServerCapabilities_ServerProfileArray Variable.
@@ -29400,6 +29425,11 @@ namespace Opc.Ua
         public static readonly NodeId AuditEventType_ClientUserId = new NodeId(Opc.Ua.Variables.AuditEventType_ClientUserId);
 
         /// <summary>
+        /// The identifier for the AuditSecurityEventType_StatusCodeId Variable.
+        /// </summary>
+        public static readonly NodeId AuditSecurityEventType_StatusCodeId = new NodeId(Opc.Ua.Variables.AuditSecurityEventType_StatusCodeId);
+
+        /// <summary>
         /// The identifier for the AuditChannelEventType_SecureChannelId Variable.
         /// </summary>
         public static readonly NodeId AuditChannelEventType_SecureChannelId = new NodeId(Opc.Ua.Variables.AuditChannelEventType_SecureChannelId);
@@ -29578,21 +29608,6 @@ namespace Opc.Ua
         /// The identifier for the ProgressEventType_Progress Variable.
         /// </summary>
         public static readonly NodeId ProgressEventType_Progress = new NodeId(Opc.Ua.Variables.ProgressEventType_Progress);
-
-        /// <summary>
-        /// The identifier for the SelectionListType_SelectionValues Variable.
-        /// </summary>
-        public static readonly NodeId SelectionListType_SelectionValues = new NodeId(Opc.Ua.Variables.SelectionListType_SelectionValues);
-
-        /// <summary>
-        /// The identifier for the SelectionListType_SelectionValueDescriptions Variable.
-        /// </summary>
-        public static readonly NodeId SelectionListType_SelectionValueDescriptions = new NodeId(Opc.Ua.Variables.SelectionListType_SelectionValueDescriptions);
-
-        /// <summary>
-        /// The identifier for the SelectionListType_RestrictToList Variable.
-        /// </summary>
-        public static readonly NodeId SelectionListType_RestrictToList = new NodeId(Opc.Ua.Variables.SelectionListType_RestrictToList);
 
         /// <summary>
         /// The identifier for the ServerStatusType_StartTime Variable.
@@ -30645,6 +30660,21 @@ namespace Opc.Ua
         public static readonly NodeId OptionSetType_BitMask = new NodeId(Opc.Ua.Variables.OptionSetType_BitMask);
 
         /// <summary>
+        /// The identifier for the SelectionListType_Selections Variable.
+        /// </summary>
+        public static readonly NodeId SelectionListType_Selections = new NodeId(Opc.Ua.Variables.SelectionListType_Selections);
+
+        /// <summary>
+        /// The identifier for the SelectionListType_SelectionDescriptions Variable.
+        /// </summary>
+        public static readonly NodeId SelectionListType_SelectionDescriptions = new NodeId(Opc.Ua.Variables.SelectionListType_SelectionDescriptions);
+
+        /// <summary>
+        /// The identifier for the SelectionListType_RestrictToList Variable.
+        /// </summary>
+        public static readonly NodeId SelectionListType_RestrictToList = new NodeId(Opc.Ua.Variables.SelectionListType_RestrictToList);
+
+        /// <summary>
         /// The identifier for the Server_ServerArray Variable.
         /// </summary>
         public static readonly NodeId Server_ServerArray = new NodeId(Opc.Ua.Variables.Server_ServerArray);
@@ -30733,11 +30763,6 @@ namespace Opc.Ua
         /// The identifier for the Server_EstimatedReturnTime Variable.
         /// </summary>
         public static readonly NodeId Server_EstimatedReturnTime = new NodeId(Opc.Ua.Variables.Server_EstimatedReturnTime);
-
-        /// <summary>
-        /// The identifier for the Server_CurrentTimeZone Variable.
-        /// </summary>
-        public static readonly NodeId Server_CurrentTimeZone = new NodeId(Opc.Ua.Variables.Server_CurrentTimeZone);
 
         /// <summary>
         /// The identifier for the Server_ServerCapabilities_ServerProfileArray Variable.
@@ -30990,6 +31015,11 @@ namespace Opc.Ua
         public static readonly NodeId Server_RequestServerStateChange_InputArguments = new NodeId(Opc.Ua.Variables.Server_RequestServerStateChange_InputArguments);
 
         /// <summary>
+        /// The identifier for the Server_CurrentTimeZone Variable.
+        /// </summary>
+        public static readonly NodeId Server_CurrentTimeZone = new NodeId(Opc.Ua.Variables.Server_CurrentTimeZone);
+
+        /// <summary>
         /// The identifier for the Server_ServerRedundancy_CurrentServerId Variable.
         /// </summary>
         public static readonly NodeId Server_ServerRedundancy_CurrentServerId = new NodeId(Opc.Ua.Variables.Server_ServerRedundancy_CurrentServerId);
@@ -31163,6 +31193,16 @@ namespace Opc.Ua
         /// The identifier for the FiniteStateMachineType_LastTransition_Id Variable.
         /// </summary>
         public static readonly NodeId FiniteStateMachineType_LastTransition_Id = new NodeId(Opc.Ua.Variables.FiniteStateMachineType_LastTransition_Id);
+
+        /// <summary>
+        /// The identifier for the FiniteStateMachineType_AvailableStates Variable.
+        /// </summary>
+        public static readonly NodeId FiniteStateMachineType_AvailableStates = new NodeId(Opc.Ua.Variables.FiniteStateMachineType_AvailableStates);
+
+        /// <summary>
+        /// The identifier for the FiniteStateMachineType_PossibleTransitions Variable.
+        /// </summary>
+        public static readonly NodeId FiniteStateMachineType_PossibleTransitions = new NodeId(Opc.Ua.Variables.FiniteStateMachineType_PossibleTransitions);
 
         /// <summary>
         /// The identifier for the FiniteStateVariableType_Id Variable.
@@ -37150,14 +37190,14 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_SelectionValues Variable.
+        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_Selections Variable.
         /// </summary>
-        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_SelectionValues = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_SelectionValues);
+        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_Selections = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_Selections);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_SelectionValueDescriptions Variable.
+        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_SelectionDescriptions Variable.
         /// </summary>
-        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_SelectionValueDescriptions = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_SelectionValueDescriptions);
+        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_SelectionDescriptions = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_SelectionDescriptions);
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_RestrictToList Variable.
@@ -37285,14 +37325,14 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri);
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_SelectionValues Variable.
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_Selections Variable.
         /// </summary>
-        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_SelectionValues = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_SelectionValues);
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_Selections = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_Selections);
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_SelectionValueDescriptions Variable.
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_SelectionDescriptions Variable.
         /// </summary>
-        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_SelectionValueDescriptions = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_SelectionValueDescriptions);
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_SelectionDescriptions = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_SelectionDescriptions);
 
         /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_RestrictToList Variable.
@@ -37645,14 +37685,14 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_TransportProfileUri = new NodeId(Opc.Ua.Variables.PubSubConnectionType_TransportProfileUri);
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_TransportProfileUri_SelectionValues Variable.
+        /// The identifier for the PubSubConnectionType_TransportProfileUri_Selections Variable.
         /// </summary>
-        public static readonly NodeId PubSubConnectionType_TransportProfileUri_SelectionValues = new NodeId(Opc.Ua.Variables.PubSubConnectionType_TransportProfileUri_SelectionValues);
+        public static readonly NodeId PubSubConnectionType_TransportProfileUri_Selections = new NodeId(Opc.Ua.Variables.PubSubConnectionType_TransportProfileUri_Selections);
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_TransportProfileUri_SelectionValueDescriptions Variable.
+        /// The identifier for the PubSubConnectionType_TransportProfileUri_SelectionDescriptions Variable.
         /// </summary>
-        public static readonly NodeId PubSubConnectionType_TransportProfileUri_SelectionValueDescriptions = new NodeId(Opc.Ua.Variables.PubSubConnectionType_TransportProfileUri_SelectionValueDescriptions);
+        public static readonly NodeId PubSubConnectionType_TransportProfileUri_SelectionDescriptions = new NodeId(Opc.Ua.Variables.PubSubConnectionType_TransportProfileUri_SelectionDescriptions);
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_TransportProfileUri_RestrictToList Variable.
@@ -37990,14 +38030,14 @@ namespace Opc.Ua
         public static readonly NodeId PubSubCommunicationFailureEventType_Error = new NodeId(Opc.Ua.Variables.PubSubCommunicationFailureEventType_Error);
 
         /// <summary>
-        /// The identifier for the UadpConnectionType_TransportProfileUri_SelectionValues Variable.
+        /// The identifier for the UadpConnectionType_TransportProfileUri_Selections Variable.
         /// </summary>
-        public static readonly NodeId UadpConnectionType_TransportProfileUri_SelectionValues = new NodeId(Opc.Ua.Variables.UadpConnectionType_TransportProfileUri_SelectionValues);
+        public static readonly NodeId UadpConnectionType_TransportProfileUri_Selections = new NodeId(Opc.Ua.Variables.UadpConnectionType_TransportProfileUri_Selections);
 
         /// <summary>
-        /// The identifier for the UadpConnectionType_TransportProfileUri_SelectionValueDescriptions Variable.
+        /// The identifier for the UadpConnectionType_TransportProfileUri_SelectionDescriptions Variable.
         /// </summary>
-        public static readonly NodeId UadpConnectionType_TransportProfileUri_SelectionValueDescriptions = new NodeId(Opc.Ua.Variables.UadpConnectionType_TransportProfileUri_SelectionValueDescriptions);
+        public static readonly NodeId UadpConnectionType_TransportProfileUri_SelectionDescriptions = new NodeId(Opc.Ua.Variables.UadpConnectionType_TransportProfileUri_SelectionDescriptions);
 
         /// <summary>
         /// The identifier for the UadpConnectionType_TransportProfileUri_RestrictToList Variable.
@@ -38075,14 +38115,14 @@ namespace Opc.Ua
         public static readonly NodeId UadpConnectionType_NetworkInterface = new NodeId(Opc.Ua.Variables.UadpConnectionType_NetworkInterface);
 
         /// <summary>
-        /// The identifier for the UadpConnectionType_NetworkInterface_SelectionValues Variable.
+        /// The identifier for the UadpConnectionType_NetworkInterface_Selections Variable.
         /// </summary>
-        public static readonly NodeId UadpConnectionType_NetworkInterface_SelectionValues = new NodeId(Opc.Ua.Variables.UadpConnectionType_NetworkInterface_SelectionValues);
+        public static readonly NodeId UadpConnectionType_NetworkInterface_Selections = new NodeId(Opc.Ua.Variables.UadpConnectionType_NetworkInterface_Selections);
 
         /// <summary>
-        /// The identifier for the UadpConnectionType_NetworkInterface_SelectionValueDescriptions Variable.
+        /// The identifier for the UadpConnectionType_NetworkInterface_SelectionDescriptions Variable.
         /// </summary>
-        public static readonly NodeId UadpConnectionType_NetworkInterface_SelectionValueDescriptions = new NodeId(Opc.Ua.Variables.UadpConnectionType_NetworkInterface_SelectionValueDescriptions);
+        public static readonly NodeId UadpConnectionType_NetworkInterface_SelectionDescriptions = new NodeId(Opc.Ua.Variables.UadpConnectionType_NetworkInterface_SelectionDescriptions);
 
         /// <summary>
         /// The identifier for the UadpConnectionType_NetworkInterface_RestrictToList Variable.
@@ -38260,14 +38300,14 @@ namespace Opc.Ua
         public static readonly NodeId UadpReaderTransportType_DataSetWriterId = new NodeId(Opc.Ua.Variables.UadpReaderTransportType_DataSetWriterId);
 
         /// <summary>
-        /// The identifier for the BrokerConnectionType_TransportProfileUri_SelectionValues Variable.
+        /// The identifier for the BrokerConnectionType_TransportProfileUri_Selections Variable.
         /// </summary>
-        public static readonly NodeId BrokerConnectionType_TransportProfileUri_SelectionValues = new NodeId(Opc.Ua.Variables.BrokerConnectionType_TransportProfileUri_SelectionValues);
+        public static readonly NodeId BrokerConnectionType_TransportProfileUri_Selections = new NodeId(Opc.Ua.Variables.BrokerConnectionType_TransportProfileUri_Selections);
 
         /// <summary>
-        /// The identifier for the BrokerConnectionType_TransportProfileUri_SelectionValueDescriptions Variable.
+        /// The identifier for the BrokerConnectionType_TransportProfileUri_SelectionDescriptions Variable.
         /// </summary>
-        public static readonly NodeId BrokerConnectionType_TransportProfileUri_SelectionValueDescriptions = new NodeId(Opc.Ua.Variables.BrokerConnectionType_TransportProfileUri_SelectionValueDescriptions);
+        public static readonly NodeId BrokerConnectionType_TransportProfileUri_SelectionDescriptions = new NodeId(Opc.Ua.Variables.BrokerConnectionType_TransportProfileUri_SelectionDescriptions);
 
         /// <summary>
         /// The identifier for the BrokerConnectionType_TransportProfileUri_RestrictToList Variable.
@@ -38650,6 +38690,11 @@ namespace Opc.Ua
         public static readonly NodeId OpcUa_XmlSchema_NamespaceUri = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_NamespaceUri);
 
         /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_KeyValuePair Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_KeyValuePair = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_KeyValuePair);
+
+        /// <summary>
         /// The identifier for the OpcUa_XmlSchema_IdentityMappingRuleType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_XmlSchema_IdentityMappingRuleType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_IdentityMappingRuleType);
@@ -38688,11 +38733,6 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_XmlSchema_EnumDescription Variable.
         /// </summary>
         public static readonly NodeId OpcUa_XmlSchema_EnumDescription = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EnumDescription);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_KeyValuePair Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_KeyValuePair = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_KeyValuePair);
 
         /// <summary>
         /// The identifier for the OpcUa_XmlSchema_PublishedVariableDataType Variable.
@@ -39020,6 +39060,11 @@ namespace Opc.Ua
         public static readonly NodeId OpcUa_BinarySchema_NamespaceUri = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_NamespaceUri);
 
         /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_KeyValuePair Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_KeyValuePair = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_KeyValuePair);
+
+        /// <summary>
         /// The identifier for the OpcUa_BinarySchema_IdentityMappingRuleType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_BinarySchema_IdentityMappingRuleType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_IdentityMappingRuleType);
@@ -39058,11 +39103,6 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_BinarySchema_EnumDescription Variable.
         /// </summary>
         public static readonly NodeId OpcUa_BinarySchema_EnumDescription = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_EnumDescription);
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_KeyValuePair Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_BinarySchema_KeyValuePair = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_KeyValuePair);
 
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_PublishedVariableDataType Variable.
@@ -39420,11 +39460,6 @@ namespace Opc.Ua
         public static readonly NodeId ServerVendorCapabilityType = new NodeId(Opc.Ua.VariableTypes.ServerVendorCapabilityType);
 
         /// <summary>
-        /// The identifier for the SelectionListType VariableType.
-        /// </summary>
-        public static readonly NodeId SelectionListType = new NodeId(Opc.Ua.VariableTypes.SelectionListType);
-
-        /// <summary>
         /// The identifier for the ServerStatusType VariableType.
         /// </summary>
         public static readonly NodeId ServerStatusType = new NodeId(Opc.Ua.VariableTypes.ServerStatusType);
@@ -39483,6 +39518,11 @@ namespace Opc.Ua
         /// The identifier for the OptionSetType VariableType.
         /// </summary>
         public static readonly NodeId OptionSetType = new NodeId(Opc.Ua.VariableTypes.OptionSetType);
+
+        /// <summary>
+        /// The identifier for the SelectionListType VariableType.
+        /// </summary>
+        public static readonly NodeId SelectionListType = new NodeId(Opc.Ua.VariableTypes.SelectionListType);
 
         /// <summary>
         /// The identifier for the StateVariableType VariableType.
@@ -40427,6 +40467,11 @@ namespace Opc.Ua
         /// The BrowseName for the AutoDelete component.
         /// </summary>
         public const string AutoDelete = "AutoDelete";
+
+        /// <summary>
+        /// The BrowseName for the AvailableStates component.
+        /// </summary>
+        public const string AvailableStates = "AvailableStates";
 
         /// <summary>
         /// The BrowseName for the AverageAlarmRate component.
@@ -43584,6 +43629,11 @@ namespace Opc.Ua
         public const string PermissionType = "PermissionType";
 
         /// <summary>
+        /// The BrowseName for the PossibleTransitions component.
+        /// </summary>
+        public const string PossibleTransitions = "PossibleTransitions";
+
+        /// <summary>
         /// The BrowseName for the Priority component.
         /// </summary>
         public const string Priority = "Priority";
@@ -44294,6 +44344,11 @@ namespace Opc.Ua
         public const string RevisedSessionTimeout = "RevisedSessionTimeout";
 
         /// <summary>
+        /// The BrowseName for the RoleMappingRuleChangedAuditEventType component.
+        /// </summary>
+        public const string RoleMappingRuleChangedAuditEventType = "RoleMappingRuleChangedAuditEventType";
+
+        /// <summary>
         /// The BrowseName for the RoleName_Placeholder component.
         /// </summary>
         public const string RoleName_Placeholder = "<RoleName>";
@@ -44484,19 +44539,19 @@ namespace Opc.Ua
         public const string SelectedResponse = "SelectedResponse";
 
         /// <summary>
+        /// The BrowseName for the SelectionDescriptions component.
+        /// </summary>
+        public const string SelectionDescriptions = "SelectionDescriptions";
+
+        /// <summary>
         /// The BrowseName for the SelectionListType component.
         /// </summary>
         public const string SelectionListType = "SelectionListType";
 
         /// <summary>
-        /// The BrowseName for the SelectionValueDescriptions component.
+        /// The BrowseName for the Selections component.
         /// </summary>
-        public const string SelectionValueDescriptions = "SelectionValueDescriptions";
-
-        /// <summary>
-        /// The BrowseName for the SelectionValues component.
-        /// </summary>
-        public const string SelectionValues = "SelectionValues";
+        public const string Selections = "Selections";
 
         /// <summary>
         /// The BrowseName for the SemanticChangeEventType component.
@@ -44982,6 +45037,11 @@ namespace Opc.Ua
         /// The BrowseName for the StatusCode component.
         /// </summary>
         public const string StatusCode = "StatusCode";
+
+        /// <summary>
+        /// The BrowseName for the StatusCodeId component.
+        /// </summary>
+        public const string StatusCodeId = "StatusCodeId";
 
         /// <summary>
         /// The BrowseName for the StatusResult component.
