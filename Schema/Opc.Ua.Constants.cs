@@ -1890,9 +1890,9 @@ namespace Opc.Ua
         public const uint FileDirectoryType_FileDirectoryName_Placeholder_CreateFile = 13358;
 
         /// <summary>
-        /// The identifier for the FileDirectoryType_FileDirectoryName_Placeholder_DeleteFile Method.
+        /// The identifier for the FileDirectoryType_FileDirectoryName_Placeholder_DeleteFileSystemObject Method.
         /// </summary>
-        public const uint FileDirectoryType_FileDirectoryName_Placeholder_DeleteFile = 13361;
+        public const uint FileDirectoryType_FileDirectoryName_Placeholder_DeleteFileSystemObject = 17718;
 
         /// <summary>
         /// The identifier for the FileDirectoryType_FileDirectoryName_Placeholder_MoveOrCopy Method.
@@ -1940,9 +1940,9 @@ namespace Opc.Ua
         public const uint FileDirectoryType_CreateFile = 13390;
 
         /// <summary>
-        /// The identifier for the FileDirectoryType_DeleteFile Method.
+        /// The identifier for the FileDirectoryType_DeleteFileSystemObject Method.
         /// </summary>
-        public const uint FileDirectoryType_DeleteFile = 13393;
+        public const uint FileDirectoryType_DeleteFileSystemObject = 13393;
 
         /// <summary>
         /// The identifier for the FileDirectoryType_MoveOrCopy Method.
@@ -1960,9 +1960,9 @@ namespace Opc.Ua
         public const uint FileSystem_FileDirectoryName_Placeholder_CreateFile = 16319;
 
         /// <summary>
-        /// The identifier for the FileSystem_FileDirectoryName_Placeholder_DeleteFile Method.
+        /// The identifier for the FileSystem_FileDirectoryName_Placeholder_DeleteFileSystemObject Method.
         /// </summary>
-        public const uint FileSystem_FileDirectoryName_Placeholder_DeleteFile = 16322;
+        public const uint FileSystem_FileDirectoryName_Placeholder_DeleteFileSystemObject = 17722;
 
         /// <summary>
         /// The identifier for the FileSystem_FileDirectoryName_Placeholder_MoveOrCopy Method.
@@ -2010,9 +2010,9 @@ namespace Opc.Ua
         public const uint FileSystem_CreateFile = 16351;
 
         /// <summary>
-        /// The identifier for the FileSystem_DeleteFile Method.
+        /// The identifier for the FileSystem_DeleteFileSystemObject Method.
         /// </summary>
-        public const uint FileSystem_DeleteFile = 16354;
+        public const uint FileSystem_DeleteFileSystemObject = 16354;
 
         /// <summary>
         /// The identifier for the FileSystem_MoveOrCopy Method.
@@ -11405,9 +11405,9 @@ namespace Opc.Ua
         public const uint FiniteStateMachineType_AvailableStates = 17635;
 
         /// <summary>
-        /// The identifier for the FiniteStateMachineType_PossibleTransitions Variable.
+        /// The identifier for the FiniteStateMachineType_AvailableTransitions Variable.
         /// </summary>
-        public const uint FiniteStateMachineType_PossibleTransitions = 17636;
+        public const uint FiniteStateMachineType_AvailableTransitions = 17636;
 
         /// <summary>
         /// The identifier for the FiniteStateVariableType_Id Variable.
@@ -11495,9 +11495,9 @@ namespace Opc.Ua
         public const uint FileDirectoryType_FileDirectoryName_Placeholder_CreateFile_OutputArguments = 13360;
 
         /// <summary>
-        /// The identifier for the FileDirectoryType_FileDirectoryName_Placeholder_DeleteFile_InputArguments Variable.
+        /// The identifier for the FileDirectoryType_FileDirectoryName_Placeholder_DeleteFileSystemObject_InputArguments Variable.
         /// </summary>
-        public const uint FileDirectoryType_FileDirectoryName_Placeholder_DeleteFile_InputArguments = 13362;
+        public const uint FileDirectoryType_FileDirectoryName_Placeholder_DeleteFileSystemObject_InputArguments = 17719;
 
         /// <summary>
         /// The identifier for the FileDirectoryType_FileDirectoryName_Placeholder_MoveOrCopy_InputArguments Variable.
@@ -11595,9 +11595,9 @@ namespace Opc.Ua
         public const uint FileDirectoryType_CreateFile_OutputArguments = 13392;
 
         /// <summary>
-        /// The identifier for the FileDirectoryType_DeleteFile_InputArguments Variable.
+        /// The identifier for the FileDirectoryType_DeleteFileSystemObject_InputArguments Variable.
         /// </summary>
-        public const uint FileDirectoryType_DeleteFile_InputArguments = 13394;
+        public const uint FileDirectoryType_DeleteFileSystemObject_InputArguments = 13394;
 
         /// <summary>
         /// The identifier for the FileDirectoryType_MoveOrCopy_InputArguments Variable.
@@ -11630,9 +11630,9 @@ namespace Opc.Ua
         public const uint FileSystem_FileDirectoryName_Placeholder_CreateFile_OutputArguments = 16321;
 
         /// <summary>
-        /// The identifier for the FileSystem_FileDirectoryName_Placeholder_DeleteFile_InputArguments Variable.
+        /// The identifier for the FileSystem_FileDirectoryName_Placeholder_DeleteFileSystemObject_InputArguments Variable.
         /// </summary>
-        public const uint FileSystem_FileDirectoryName_Placeholder_DeleteFile_InputArguments = 16323;
+        public const uint FileSystem_FileDirectoryName_Placeholder_DeleteFileSystemObject_InputArguments = 17723;
 
         /// <summary>
         /// The identifier for the FileSystem_FileDirectoryName_Placeholder_MoveOrCopy_InputArguments Variable.
@@ -11730,9 +11730,9 @@ namespace Opc.Ua
         public const uint FileSystem_CreateFile_OutputArguments = 16353;
 
         /// <summary>
-        /// The identifier for the FileSystem_DeleteFile_InputArguments Variable.
+        /// The identifier for the FileSystem_DeleteFileSystemObject_InputArguments Variable.
         /// </summary>
-        public const uint FileSystem_DeleteFile_InputArguments = 16355;
+        public const uint FileSystem_DeleteFileSystemObject_InputArguments = 16355;
 
         /// <summary>
         /// The identifier for the FileSystem_MoveOrCopy_InputArguments Variable.
@@ -21685,9 +21685,9 @@ namespace Opc.Ua
         public static readonly NodeId FileDirectoryType_FileDirectoryName_Placeholder_CreateFile = new NodeId(Opc.Ua.Methods.FileDirectoryType_FileDirectoryName_Placeholder_CreateFile);
 
         /// <summary>
-        /// The identifier for the FileDirectoryType_FileDirectoryName_Placeholder_DeleteFile Method.
+        /// The identifier for the FileDirectoryType_FileDirectoryName_Placeholder_DeleteFileSystemObject Method.
         /// </summary>
-        public static readonly NodeId FileDirectoryType_FileDirectoryName_Placeholder_DeleteFile = new NodeId(Opc.Ua.Methods.FileDirectoryType_FileDirectoryName_Placeholder_DeleteFile);
+        public static readonly NodeId FileDirectoryType_FileDirectoryName_Placeholder_DeleteFileSystemObject = new NodeId(Opc.Ua.Methods.FileDirectoryType_FileDirectoryName_Placeholder_DeleteFileSystemObject);
 
         /// <summary>
         /// The identifier for the FileDirectoryType_FileDirectoryName_Placeholder_MoveOrCopy Method.
@@ -21735,9 +21735,9 @@ namespace Opc.Ua
         public static readonly NodeId FileDirectoryType_CreateFile = new NodeId(Opc.Ua.Methods.FileDirectoryType_CreateFile);
 
         /// <summary>
-        /// The identifier for the FileDirectoryType_DeleteFile Method.
+        /// The identifier for the FileDirectoryType_DeleteFileSystemObject Method.
         /// </summary>
-        public static readonly NodeId FileDirectoryType_DeleteFile = new NodeId(Opc.Ua.Methods.FileDirectoryType_DeleteFile);
+        public static readonly NodeId FileDirectoryType_DeleteFileSystemObject = new NodeId(Opc.Ua.Methods.FileDirectoryType_DeleteFileSystemObject);
 
         /// <summary>
         /// The identifier for the FileDirectoryType_MoveOrCopy Method.
@@ -21755,9 +21755,9 @@ namespace Opc.Ua
         public static readonly NodeId FileSystem_FileDirectoryName_Placeholder_CreateFile = new NodeId(Opc.Ua.Methods.FileSystem_FileDirectoryName_Placeholder_CreateFile);
 
         /// <summary>
-        /// The identifier for the FileSystem_FileDirectoryName_Placeholder_DeleteFile Method.
+        /// The identifier for the FileSystem_FileDirectoryName_Placeholder_DeleteFileSystemObject Method.
         /// </summary>
-        public static readonly NodeId FileSystem_FileDirectoryName_Placeholder_DeleteFile = new NodeId(Opc.Ua.Methods.FileSystem_FileDirectoryName_Placeholder_DeleteFile);
+        public static readonly NodeId FileSystem_FileDirectoryName_Placeholder_DeleteFileSystemObject = new NodeId(Opc.Ua.Methods.FileSystem_FileDirectoryName_Placeholder_DeleteFileSystemObject);
 
         /// <summary>
         /// The identifier for the FileSystem_FileDirectoryName_Placeholder_MoveOrCopy Method.
@@ -21805,9 +21805,9 @@ namespace Opc.Ua
         public static readonly NodeId FileSystem_CreateFile = new NodeId(Opc.Ua.Methods.FileSystem_CreateFile);
 
         /// <summary>
-        /// The identifier for the FileSystem_DeleteFile Method.
+        /// The identifier for the FileSystem_DeleteFileSystemObject Method.
         /// </summary>
-        public static readonly NodeId FileSystem_DeleteFile = new NodeId(Opc.Ua.Methods.FileSystem_DeleteFile);
+        public static readonly NodeId FileSystem_DeleteFileSystemObject = new NodeId(Opc.Ua.Methods.FileSystem_DeleteFileSystemObject);
 
         /// <summary>
         /// The identifier for the FileSystem_MoveOrCopy Method.
@@ -31200,9 +31200,9 @@ namespace Opc.Ua
         public static readonly NodeId FiniteStateMachineType_AvailableStates = new NodeId(Opc.Ua.Variables.FiniteStateMachineType_AvailableStates);
 
         /// <summary>
-        /// The identifier for the FiniteStateMachineType_PossibleTransitions Variable.
+        /// The identifier for the FiniteStateMachineType_AvailableTransitions Variable.
         /// </summary>
-        public static readonly NodeId FiniteStateMachineType_PossibleTransitions = new NodeId(Opc.Ua.Variables.FiniteStateMachineType_PossibleTransitions);
+        public static readonly NodeId FiniteStateMachineType_AvailableTransitions = new NodeId(Opc.Ua.Variables.FiniteStateMachineType_AvailableTransitions);
 
         /// <summary>
         /// The identifier for the FiniteStateVariableType_Id Variable.
@@ -31290,9 +31290,9 @@ namespace Opc.Ua
         public static readonly NodeId FileDirectoryType_FileDirectoryName_Placeholder_CreateFile_OutputArguments = new NodeId(Opc.Ua.Variables.FileDirectoryType_FileDirectoryName_Placeholder_CreateFile_OutputArguments);
 
         /// <summary>
-        /// The identifier for the FileDirectoryType_FileDirectoryName_Placeholder_DeleteFile_InputArguments Variable.
+        /// The identifier for the FileDirectoryType_FileDirectoryName_Placeholder_DeleteFileSystemObject_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId FileDirectoryType_FileDirectoryName_Placeholder_DeleteFile_InputArguments = new NodeId(Opc.Ua.Variables.FileDirectoryType_FileDirectoryName_Placeholder_DeleteFile_InputArguments);
+        public static readonly NodeId FileDirectoryType_FileDirectoryName_Placeholder_DeleteFileSystemObject_InputArguments = new NodeId(Opc.Ua.Variables.FileDirectoryType_FileDirectoryName_Placeholder_DeleteFileSystemObject_InputArguments);
 
         /// <summary>
         /// The identifier for the FileDirectoryType_FileDirectoryName_Placeholder_MoveOrCopy_InputArguments Variable.
@@ -31390,9 +31390,9 @@ namespace Opc.Ua
         public static readonly NodeId FileDirectoryType_CreateFile_OutputArguments = new NodeId(Opc.Ua.Variables.FileDirectoryType_CreateFile_OutputArguments);
 
         /// <summary>
-        /// The identifier for the FileDirectoryType_DeleteFile_InputArguments Variable.
+        /// The identifier for the FileDirectoryType_DeleteFileSystemObject_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId FileDirectoryType_DeleteFile_InputArguments = new NodeId(Opc.Ua.Variables.FileDirectoryType_DeleteFile_InputArguments);
+        public static readonly NodeId FileDirectoryType_DeleteFileSystemObject_InputArguments = new NodeId(Opc.Ua.Variables.FileDirectoryType_DeleteFileSystemObject_InputArguments);
 
         /// <summary>
         /// The identifier for the FileDirectoryType_MoveOrCopy_InputArguments Variable.
@@ -31425,9 +31425,9 @@ namespace Opc.Ua
         public static readonly NodeId FileSystem_FileDirectoryName_Placeholder_CreateFile_OutputArguments = new NodeId(Opc.Ua.Variables.FileSystem_FileDirectoryName_Placeholder_CreateFile_OutputArguments);
 
         /// <summary>
-        /// The identifier for the FileSystem_FileDirectoryName_Placeholder_DeleteFile_InputArguments Variable.
+        /// The identifier for the FileSystem_FileDirectoryName_Placeholder_DeleteFileSystemObject_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId FileSystem_FileDirectoryName_Placeholder_DeleteFile_InputArguments = new NodeId(Opc.Ua.Variables.FileSystem_FileDirectoryName_Placeholder_DeleteFile_InputArguments);
+        public static readonly NodeId FileSystem_FileDirectoryName_Placeholder_DeleteFileSystemObject_InputArguments = new NodeId(Opc.Ua.Variables.FileSystem_FileDirectoryName_Placeholder_DeleteFileSystemObject_InputArguments);
 
         /// <summary>
         /// The identifier for the FileSystem_FileDirectoryName_Placeholder_MoveOrCopy_InputArguments Variable.
@@ -31525,9 +31525,9 @@ namespace Opc.Ua
         public static readonly NodeId FileSystem_CreateFile_OutputArguments = new NodeId(Opc.Ua.Variables.FileSystem_CreateFile_OutputArguments);
 
         /// <summary>
-        /// The identifier for the FileSystem_DeleteFile_InputArguments Variable.
+        /// The identifier for the FileSystem_DeleteFileSystemObject_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId FileSystem_DeleteFile_InputArguments = new NodeId(Opc.Ua.Variables.FileSystem_DeleteFile_InputArguments);
+        public static readonly NodeId FileSystem_DeleteFileSystemObject_InputArguments = new NodeId(Opc.Ua.Variables.FileSystem_DeleteFileSystemObject_InputArguments);
 
         /// <summary>
         /// The identifier for the FileSystem_MoveOrCopy_InputArguments Variable.
@@ -40474,6 +40474,11 @@ namespace Opc.Ua
         public const string AvailableStates = "AvailableStates";
 
         /// <summary>
+        /// The BrowseName for the AvailableTransitions component.
+        /// </summary>
+        public const string AvailableTransitions = "AvailableTransitions";
+
+        /// <summary>
         /// The BrowseName for the AverageAlarmRate component.
         /// </summary>
         public const string AverageAlarmRate = "AverageAlarmRate";
@@ -41469,9 +41474,9 @@ namespace Opc.Ua
         public const string DeleteEventDetails = "DeleteEventDetails";
 
         /// <summary>
-        /// The BrowseName for the DeleteFile component.
+        /// The BrowseName for the DeleteFileSystemObject component.
         /// </summary>
-        public const string DeleteFile = "Delete";
+        public const string DeleteFileSystemObject = "Delete";
 
         /// <summary>
         /// The BrowseName for the DeleteMonitoredItemsCount component.
@@ -43627,11 +43632,6 @@ namespace Opc.Ua
         /// The BrowseName for the PermissionType component.
         /// </summary>
         public const string PermissionType = "PermissionType";
-
-        /// <summary>
-        /// The BrowseName for the PossibleTransitions component.
-        /// </summary>
-        public const string PossibleTransitions = "PossibleTransitions";
 
         /// <summary>
         /// The BrowseName for the Priority component.

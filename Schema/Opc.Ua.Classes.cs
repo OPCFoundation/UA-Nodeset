@@ -27347,9 +27347,9 @@ namespace Opc.Ua
                 AvailableStates.Initialize(context, AvailableStates_InitializationString);
             }
 
-            if (PossibleTransitions != null)
+            if (AvailableTransitions != null)
             {
-                PossibleTransitions.Initialize(context, PossibleTransitions_InitializationString);
+                AvailableTransitions.Initialize(context, AvailableTransitions_InitializationString);
             }
         }
 
@@ -27362,9 +27362,9 @@ namespace Opc.Ua
            "//////////8VYIkKAgAAAAAADwAAAEF2YWlsYWJsZVN0YXRlcwEA40QALwA/40QAAAARAQAAAAEB////" +
            "/wAAAAA=";
 
-        private const string PossibleTransitions_InitializationString =
-           "//////////8VYIkKAgAAAAAAEwAAAFBvc3NpYmxlVHJhbnNpdGlvbnMBAOREAC8AP+REAAAAEQEAAAAB" +
-           "Af////8AAAAA";
+        private const string AvailableTransitions_InitializationString =
+           "//////////8VYIkKAgAAAAAAFAAAAEF2YWlsYWJsZVRyYW5zaXRpb25zAQDkRAAvAD/kRAAAABEBAAAA" +
+           "AQH/////AAAAAA==";
 
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAAHgAAAEZpbml0ZVN0YXRlTWFjaGluZVR5cGVJbnN0YW5jZQEA0woBANMK" +
@@ -27372,8 +27372,8 @@ namespace Opc.Ua
            "AQAAABVgiQoCAAAAAAACAAAASWQBAJAOAC4ARJAOAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAA4A" +
            "AABMYXN0VHJhbnNpdGlvbgEA1QoALwEAzwrVCgAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAA" +
            "SWQBAJQOAC4ARJQOAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAA8AAABBdmFpbGFibGVTdGF0ZXMB" +
-           "AONEAC8AP+NEAAAAEQEAAAABAf////8AAAAAFWCJCgIAAAAAABMAAABQb3NzaWJsZVRyYW5zaXRpb25z" +
-           "AQDkRAAvAD/kRAAAABEBAAAAAQH/////AAAAAA==";
+           "AONEAC8AP+NEAAAAEQEAAAABAf////8AAAAAFWCJCgIAAAAAABQAAABBdmFpbGFibGVUcmFuc2l0aW9u" +
+           "cwEA5EQALwA/5EQAAAARAQAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -27419,23 +27419,23 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the PossibleTransitions Variable.
+        /// A description for the AvailableTransitions Variable.
         /// </summary>
-        public BaseDataVariableState<NodeId[]> PossibleTransitions
+        public BaseDataVariableState<NodeId[]> AvailableTransitions
         {
             get
             {
-                return m_possibleTransitions;
+                return m_availableTransitions;
             }
 
             set
             {
-                if (!Object.ReferenceEquals(m_possibleTransitions, value))
+                if (!Object.ReferenceEquals(m_availableTransitions, value))
                 {
                     ChangeMasks |= NodeStateChangeMasks.Children;
                 }
 
-                m_possibleTransitions = value;
+                m_availableTransitions = value;
             }
         }
         #endregion
@@ -27455,9 +27455,9 @@ namespace Opc.Ua
                 children.Add(m_availableStates);
             }
 
-            if (m_possibleTransitions != null)
+            if (m_availableTransitions != null)
             {
-                children.Add(m_possibleTransitions);
+                children.Add(m_availableTransitions);
             }
 
             base.GetChildren(context, children);
@@ -27544,24 +27544,24 @@ namespace Opc.Ua
                     break;
                 }
 
-                case Opc.Ua.BrowseNames.PossibleTransitions:
+                case Opc.Ua.BrowseNames.AvailableTransitions:
                 {
                     if (createOrReplace)
                     {
-                        if (PossibleTransitions == null)
+                        if (AvailableTransitions == null)
                         {
                             if (replacement == null)
                             {
-                                PossibleTransitions = new BaseDataVariableState<NodeId[]>(this);
+                                AvailableTransitions = new BaseDataVariableState<NodeId[]>(this);
                             }
                             else
                             {
-                                PossibleTransitions = (BaseDataVariableState<NodeId[]>)replacement;
+                                AvailableTransitions = (BaseDataVariableState<NodeId[]>)replacement;
                             }
                         }
                     }
 
-                    instance = PossibleTransitions;
+                    instance = AvailableTransitions;
                     break;
                 }
             }
@@ -27577,7 +27577,7 @@ namespace Opc.Ua
 
         #region Private Fields
         private BaseDataVariableState<NodeId[]> m_availableStates;
-        private BaseDataVariableState<NodeId[]> m_possibleTransitions;
+        private BaseDataVariableState<NodeId[]> m_availableTransitions;
         #endregion
     }
     #endif
@@ -29566,16 +29566,16 @@ namespace Opc.Ua
            "AAgAAABGaWxlTmFtZQAM/////wAAAAAAAQAqAQEeAAAADwAAAFJlcXVlc3RGaWxlT3BlbgAB/////wAA" +
            "AAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAFA0AC4ARFA0" +
            "AACWAgAAAAEAKgEBGQAAAAoAAABGaWxlTm9kZUlkABH/////AAAAAAABACoBARkAAAAKAAAARmlsZUhh" +
-           "bmRsZQAH/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGHCCgQAAAAKAAAARGVsZXRlRmlsZQAABgAA" +
-           "AERlbGV0ZQEAUTQALwEAUTRRNAAAAQH/////AQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMB" +
-           "AFI0AC4ARFI0AACWAQAAAAEAKgEBHQAAAA4AAABPYmplY3RUb0RlbGV0ZQAR/////wAAAAAAAQAoAQEA" +
-           "AAABAf////8AAAAABGGCCgQAAAAAAAoAAABNb3ZlT3JDb3B5AQBTNAAvAQBTNFM0AAABAf////8CAAAA" +
-           "FWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAVDQALgBEVDQAAJYEAAAAAQAqAQEhAAAAEgAAAE9i" +
-           "amVjdFRvTW92ZU9yQ29weQAR/////wAAAAAAAQAqAQEeAAAADwAAAFRhcmdldERpcmVjdG9yeQAR////" +
-           "/wAAAAAAAQAqAQEZAAAACgAAAENyZWF0ZUNvcHkAAf////8AAAAAAAEAKgEBFgAAAAcAAABOZXdOYW1l" +
-           "AAz/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEA" +
-           "VTQALgBEVTQAAJYBAAAAAQAqAQEYAAAACQAAAE5ld05vZGVJZAAR/////wAAAAAAAQAoAQEAAAABAf//" +
-           "//8AAAAA";
+           "bmRsZQAH/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGHCCgQAAAAWAAAARGVsZXRlRmlsZVN5c3Rl" +
+           "bU9iamVjdAAABgAAAERlbGV0ZQEAUTQALwEAUTRRNAAAAQH/////AQAAABVgqQoCAAAAAAAOAAAASW5w" +
+           "dXRBcmd1bWVudHMBAFI0AC4ARFI0AACWAQAAAAEAKgEBHQAAAA4AAABPYmplY3RUb0RlbGV0ZQAR////" +
+           "/wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAAAAAoAAABNb3ZlT3JDb3B5AQBTNAAvAQBTNFM0" +
+           "AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAVDQALgBEVDQAAJYEAAAAAQAq" +
+           "AQEhAAAAEgAAAE9iamVjdFRvTW92ZU9yQ29weQAR/////wAAAAAAAQAqAQEeAAAADwAAAFRhcmdldERp" +
+           "cmVjdG9yeQAR/////wAAAAAAAQAqAQEZAAAACgAAAENyZWF0ZUNvcHkAAf////8AAAAAAAEAKgEBFgAA" +
+           "AAcAAABOZXdOYW1lAAz/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1" +
+           "dEFyZ3VtZW50cwEAVTQALgBEVTQAAJYBAAAAAQAqAQEYAAAACQAAAE5ld05vZGVJZAAR/////wAAAAAA" +
+           "AQAoAQEAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -29626,21 +29626,21 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the DeleteFileMethodType Method.
         /// </summary>
-        public DeleteFileMethodState DeleteFile
+        public DeleteFileMethodState DeleteFileSystemObject
         {
             get
             {
-                return m_deleteFileMethod;
+                return m_deleteFileSystemObjectMethod;
             }
 
             set
             {
-                if (!Object.ReferenceEquals(m_deleteFileMethod, value))
+                if (!Object.ReferenceEquals(m_deleteFileSystemObjectMethod, value))
                 {
                     ChangeMasks |= NodeStateChangeMasks.Children;
                 }
 
-                m_deleteFileMethod = value;
+                m_deleteFileSystemObjectMethod = value;
             }
         }
 
@@ -29686,9 +29686,9 @@ namespace Opc.Ua
                 children.Add(m_createFileMethod);
             }
 
-            if (m_deleteFileMethod != null)
+            if (m_deleteFileSystemObjectMethod != null)
             {
-                children.Add(m_deleteFileMethod);
+                children.Add(m_deleteFileSystemObjectMethod);
             }
 
             if (m_moveOrCopyMethod != null)
@@ -29759,24 +29759,24 @@ namespace Opc.Ua
                     break;
                 }
 
-                case Opc.Ua.BrowseNames.DeleteFile:
+                case Opc.Ua.BrowseNames.DeleteFileSystemObject:
                 {
                     if (createOrReplace)
                     {
-                        if (DeleteFile == null)
+                        if (DeleteFileSystemObject == null)
                         {
                             if (replacement == null)
                             {
-                                DeleteFile = new DeleteFileMethodState(this);
+                                DeleteFileSystemObject = new DeleteFileMethodState(this);
                             }
                             else
                             {
-                                DeleteFile = (DeleteFileMethodState)replacement;
+                                DeleteFileSystemObject = (DeleteFileMethodState)replacement;
                             }
                         }
                     }
 
-                    instance = DeleteFile;
+                    instance = DeleteFileSystemObject;
                     break;
                 }
 
@@ -29814,7 +29814,7 @@ namespace Opc.Ua
         #region Private Fields
         private CreateDirectoryMethodState m_createDirectoryMethod;
         private CreateFileMethodState m_createFileMethod;
-        private DeleteFileMethodState m_deleteFileMethod;
+        private DeleteFileMethodState m_deleteFileSystemObjectMethod;
         private MoveOrCopyMethodState m_moveOrCopyMethod;
         #endregion
     }

@@ -8020,8 +8020,8 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2771</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=17636" BrowseName="PossibleTransitions" ParentNodeId="i=2771" DataType="NodeId" ValueRank="1">
-    <DisplayName>PossibleTransitions</DisplayName>
+  <UAVariable NodeId="i=17636" BrowseName="AvailableTransitions" ParentNodeId="i=2771" DataType="NodeId" ValueRank="1">
+    <DisplayName>AvailableTransitions</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -8195,7 +8195,7 @@
     <References>
       <Reference ReferenceType="HasComponent">i=13355</Reference>
       <Reference ReferenceType="HasComponent">i=13358</Reference>
-      <Reference ReferenceType="HasComponent">i=13361</Reference>
+      <Reference ReferenceType="HasComponent">i=17718</Reference>
       <Reference ReferenceType="HasComponent">i=13363</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=13353</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
@@ -8364,20 +8364,20 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAMethod NodeId="i=13361" BrowseName="Delete" SymbolicName="DeleteFile" ParentNodeId="i=13354" MethodDeclarationId="i=13393">
+  <UAMethod NodeId="i=17718" BrowseName="Delete" SymbolicName="DeleteFileSystemObject" ParentNodeId="i=13354" MethodDeclarationId="i=13393">
     <DisplayName>Delete</DisplayName>
     <References>
-      <Reference ReferenceType="HasProperty">i=13362</Reference>
+      <Reference ReferenceType="HasProperty">i=17719</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=13354</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=13362" BrowseName="InputArguments" ParentNodeId="i=13361" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=17719" BrowseName="InputArguments" ParentNodeId="i=17718" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=13361</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=17718</Reference>
     </References>
     <Value>
       <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
@@ -9080,7 +9080,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAMethod NodeId="i=13393" BrowseName="Delete" SymbolicName="DeleteFile" ParentNodeId="i=13353">
+  <UAMethod NodeId="i=13393" BrowseName="Delete" SymbolicName="DeleteFileSystemObject" ParentNodeId="i=13353">
     <DisplayName>Delete</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=13394</Reference>
@@ -9395,7 +9395,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAMethod NodeId="i=16354" BrowseName="Delete" SymbolicName="DeleteFile" ParentNodeId="i=16314" MethodDeclarationId="i=13393">
+  <UAMethod NodeId="i=16354" BrowseName="Delete" SymbolicName="DeleteFileSystemObject" ParentNodeId="i=16314" MethodDeclarationId="i=13393">
     <DisplayName>Delete</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=16355</Reference>
