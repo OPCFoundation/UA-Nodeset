@@ -80,6 +80,7 @@
 /* #define OPCUA_EXCLUDE_KeyValuePair */
 /* #define OPCUA_EXCLUDE_IdentityMappingRuleType */
 /* #define OPCUA_EXCLUDE_TrustListDataType */
+/* #define OPCUA_EXCLUDE_DecimalDataType */
 /* #define OPCUA_EXCLUDE_ConfigurationVersionDataType */
 /* #define OPCUA_EXCLUDE_DataSetMetaDataType */
 /* #define OPCUA_EXCLUDE_FieldMetaData */

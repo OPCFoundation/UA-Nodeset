@@ -483,6 +483,11 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadNodeNotInView 0x804E0000
 
 /*============================================================================
+ * The number was not accepted because of a numeric overflow.
+ *===========================================================================*/
+#define OpcUa_BadNumericOverflow 0x81120000
+
+/*============================================================================
  * The ServerUri is not a valid URI.
  *===========================================================================*/
 #define OpcUa_BadServerUriInvalid 0x804F0000
