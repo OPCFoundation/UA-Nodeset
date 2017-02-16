@@ -1412,6 +1412,7 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=2220</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=157</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=159</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=164</Reference>
@@ -1421,6 +1422,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=93</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="ns=1;i=2220" BrowseName="1:ListOfCommunicationProfiles" ParentNodeId="ns=1;i=96" DataType="String" ValueRank="1">
+    <DisplayName>ListOfCommunicationProfiles</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=96</Reference>
+    </References>
+  </UAVariable>
   <UAMethod NodeId="ns=1;i=157" BrowseName="1:Scan" ParentNodeId="ns=1;i=96">
     <DisplayName>Scan</DisplayName>
     <References>
@@ -1699,12 +1708,21 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=2221</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=398</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=324</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="ns=1;i=2221" BrowseName="1:ListOfCommunicationProfiles" ParentNodeId="ns=1;i=327" DataType="String" ValueRank="1">
+    <DisplayName>ListOfCommunicationProfiles</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=327</Reference>
+    </References>
+  </UAVariable>
   <UAMethod NodeId="ns=1;i=398" BrowseName="1:SetAddress" ParentNodeId="ns=1;i=327">
     <DisplayName>SetAddress</DisplayName>
     <References>
@@ -2398,12 +2416,21 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=2222</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=526</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=452</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="ns=1;i=2222" BrowseName="1:ListOfCommunicationProfiles" ParentNodeId="ns=1;i=455" DataType="String" ValueRank="1">
+    <DisplayName>ListOfCommunicationProfiles</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=455</Reference>
+    </References>
+  </UAVariable>
   <UAMethod NodeId="ns=1;i=526" BrowseName="1:SetAddress" ParentNodeId="ns=1;i=455">
     <DisplayName>SetAddress</DisplayName>
     <References>
@@ -3017,12 +3044,21 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=2223</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=654</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=580</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="ns=1;i=2223" BrowseName="1:ListOfCommunicationProfiles" ParentNodeId="ns=1;i=583" DataType="String" ValueRank="1">
+    <DisplayName>ListOfCommunicationProfiles</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=583</Reference>
+    </References>
+  </UAVariable>
   <UAMethod NodeId="ns=1;i=654" BrowseName="1:SetAddress" ParentNodeId="ns=1;i=583">
     <DisplayName>SetAddress</DisplayName>
     <References>
@@ -3540,12 +3576,21 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=2224</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=779</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=705</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="ns=1;i=2224" BrowseName="1:ListOfCommunicationProfiles" ParentNodeId="ns=1;i=708" DataType="String" ValueRank="1">
+    <DisplayName>ListOfCommunicationProfiles</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=708</Reference>
+    </References>
+  </UAVariable>
   <UAMethod NodeId="ns=1;i=779" BrowseName="1:SetAddress" ParentNodeId="ns=1;i=708">
     <DisplayName>SetAddress</DisplayName>
     <References>
@@ -4167,12 +4212,21 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=2225</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=904</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=830</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="ns=1;i=2225" BrowseName="1:ListOfCommunicationProfiles" ParentNodeId="ns=1;i=833" DataType="String" ValueRank="1">
+    <DisplayName>ListOfCommunicationProfiles</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=833</Reference>
+    </References>
+  </UAVariable>
   <UAMethod NodeId="ns=1;i=904" BrowseName="1:SetAddress" ParentNodeId="ns=1;i=833">
     <DisplayName>SetAddress</DisplayName>
     <References>
@@ -5090,12 +5144,21 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=2227</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1988</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1913</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="ns=1;i=2227" BrowseName="1:ListOfCommunicationProfiles" ParentNodeId="ns=1;i=1916" DataType="String" ValueRank="1">
+    <DisplayName>ListOfCommunicationProfiles</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1916</Reference>
+    </References>
+  </UAVariable>
   <UAMethod NodeId="ns=1;i=1988" BrowseName="1:SetAddress" ParentNodeId="ns=1;i=1916">
     <DisplayName>SetAddress</DisplayName>
     <References>
