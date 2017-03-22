@@ -1,0 +1,12 @@
+<xs:schema
+  xmlns:DI="http://opcfoundation.org/UA/DI/Types.xsd"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd"
+  xmlns:tns="http://sercos.org/UA/Types.xsd"
+  targetNamespace="http://sercos.org/UA/Types.xsd"
+  elementFormDefault="qualified"
+>
+  <xs:import namespace="http://opcfoundation.org/UA/DI/Types.xsd" />
+  <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+
+</xs:schema>
