@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelDesign 
+  xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:ua="http://opcfoundation.org/UA/"
+  xmlns:DI="http://opcfoundation.org/UA/DI/"
+  xmlns:tns="http://sercos.org/UA/"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  TargetNamespace="http://sercos.org/UA/"
+  TargetXmlNamespace="http://sercos.org/UA/"
+  TargetVersion="1.00"
+  TargetPublicationDate="2017-03-13T00:00:00Z"
+  xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+
+  <Namespaces>
+    <Namespace Name="Sercos" Prefix="Sercos" XmlNamespace="http://sercos.org/UA/Types.xsd" XmlPrefix="Sercos">http://sercos.org/UA/</Namespace>
+    <Namespace Name="OpcUSercos" Prefix="Opc.Ua.Di" XmlNamespace="http://opcfoundation.org/UA/DI/Types.xsd" XmlPrefix="DI" FilePath="OpcUaDiModel">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="OpcUa" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</Namespace>
+  </Namespaces>
+
+  <!-- SercosNamespaceMetadata -->
+  <Object SymbolicName="SercosNamespaceMetadata" TypeDefinition="ua:NamespaceMetadataType" PartNo="12">
+    <BrowseName>http://sercos.org/UA/</BrowseName>
+    <Children>
+      <Property SymbolicName="NamespaceUri" DataType="ua:String">
+        <DefaultValue>
+          <uax:String>http://sercos.org/UA/</uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="NamespaceVersion" DataType="ua:String">
+        <DefaultValue>
+          <uax:String>1.00</uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="NamespacePublicationDate" DataType="ua:DateTime">
+        <DefaultValue>
+          <uax:String>2017-03-13</uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="IsNamespaceSubset" DataType="ua:Boolean">
+        <DefaultValue>
+          <uax:Boolean>false</uax:Boolean>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="StaticNodeIdTypes" DataType="ua:IdType" ValueRank="Array">
+        <DefaultValue>
+          <uax:ListOfInt32>
+            <uax:Int32>0</uax:Int32>
+          </uax:ListOfInt32>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="StaticNumericNodeIdRange" DataType="ua:NumericRange" ValueRank="Array">
+        <DefaultValue>
+          <uax:ListOfString>
+            <uax:String>1:65535</uax:String>
+          </uax:ListOfString>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="StaticStringNodeIdPattern" DataType="ua:String">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="DefaultRolePermissions" ModellingRule="Mandatory" />
+      <Property SymbolicName="DefaultUserRolePermissions" ModellingRule="Mandatory" />
+      <Property SymbolicName="DefaultAccessRestrictions" ModellingRule="Mandatory" />
+    </Children>
+    <References>
+      <Reference IsInverse="true">
+        <ReferenceType>ua:Organizes</ReferenceType>
+        <TargetId>ua:Server_Namespaces</TargetId>
+      </Reference>
+    </References>
+  </Object>
+  
+  <!-- FunctionalGroupType -->
+  <ObjectType SymbolicName="tns:FunctionalGroupType" BaseType="ua:FolderType" IsAbstract="false" SupportsEvents="false">
+  </ObjectType>
+  
+  <!-- SercosProfileType -->
+  <ObjectType SymbolicName="tns:SercosProfileType" BaseType="tns:FunctionalGroupType" IsAbstract="false" SupportsEvents="false">
+  </ObjectType>
+
+  <!-- SercosClassType -->
+  <ObjectType SymbolicName="tns:SercosClassType" BaseType="tns:FunctionalGroupType" IsAbstract="false" SupportsEvents="false">
+  </ObjectType>
+
+  <!-- SercosFunctionGroupType -->
+  <ObjectType SymbolicName="tns:SercosFunctionGroupType" BaseType="tns:FunctionalGroupType" IsAbstract="false" SupportsEvents="false">
+  </ObjectType>
+
+  <!-- SercosDeviceType -->
+  <ObjectType SymbolicName="tns:SercosDeviceType" BaseType="DI:DeviceType" IsAbstract="false" SupportsEvents="false">
+    <Children>
+      <Object SymbolicName="tns:ParameterSet" TypeDefinition="tns:FunctionalGroupType" ModellingRule="Mandatory" />
+      <Object SymbolicName="tns:ProfileSet" TypeDefinition="tns:FunctionalGroupType" ModellingRule="Mandatory" />
+      <Object SymbolicName="tns:ClassSet" TypeDefinition="tns:FunctionalGroupType" ModellingRule="Mandatory" />
+      <Object SymbolicName="tns:FunctionGroupSet" TypeDefinition="tns:FunctionalGroupType" ModellingRule="Mandatory" />
+    </Children>
+  </ObjectType>
+
+  <!-- ProfileSet -->
+  <ObjectType SymbolicName="tns:ProfileSet" BaseType="tns:FunctionalGroupType" IsAbstract="false" SupportsEvents="false">
+    <Children>
+      <Object SymbolicName="tns:SercosProfileIdentifier_Placeholder" TypeDefinition="tns:SercosProfileType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;SercosProfileIdentifier&gt;</BrowseName>
+      </Object>
+    </Children>
+  </ObjectType>
+  
+  <!-- ClassSet -->
+  <ObjectType SymbolicName="tns:ClassSet" BaseType="tns:FunctionalGroupType" IsAbstract="false" SupportsEvents="false">
+    <Children>
+      <Object SymbolicName="tns:SercosClassIdentifier_Placeholder" TypeDefinition="tns:SercosClassType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;SercosClassIdentifier&gt;</BrowseName>
+      </Object>
+    </Children>
+  </ObjectType>
+
+  <!-- FunctionGroupSet -->
+  <ObjectType SymbolicName="tns:FunctionGroupSet" BaseType="tns:FunctionalGroupType" IsAbstract="false" SupportsEvents="false">
+    <Children>
+      <Object SymbolicName="tns:FunctionGroupIdentifier_Placeholder" TypeDefinition="tns:SercosFunctionGroupType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;FunctionGroupIdentifier&gt;</BrowseName>
+      </Object>
+    </Children>
+  </ObjectType>
+
+  <!-- SercosParameterType -->
+  <VariableType SymbolicName="tns:SercosParameterType" BaseType="Opcua:BaseDataVariableType" DataType="Opcua:BaseDataType" ValueRank="ScalarOrArray">
+    <Children>
+      <Property SymbolicName="tns:Attribute" DataType="Opcua:UInt32" ValueRank="Scalar" ModellingRule="Mandatory" />
+      <Property SymbolicName="tns:DisplayValue" DataType="Opcua:String" ValueRank="Scalar" ModellingRule="Mandatory" />
+      <Property SymbolicName="tns:DisplayMaxValue" DataType="Opcua:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="tns:DisplayMinValue" DataType="Opcua:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="tns:Exponent" DataType="Opcua:SByte" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="tns:MaxValue" DataType="Opcua:BaseDataType" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="tns:MinValue" DataType="Opcua:BaseDataType" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="tns:ProcedureCommand" DataType="Opcua:Boolean" ValueRank="Scalar" ModellingRule="Optional" />
+    </Children>
+  </VariableType>
+
+</ModelDesign>

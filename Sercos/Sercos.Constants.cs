@@ -47,6 +47,36 @@ namespace Sercos
     public static partial class Methods
     {
         /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Open Method.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespaceFile_Open = 6095;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Close Method.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespaceFile_Close = 6098;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Read Method.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespaceFile_Read = 6100;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Write Method.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespaceFile_Write = 6103;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_GetPosition Method.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespaceFile_GetPosition = 6105;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_SetPosition Method.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespaceFile_SetPosition = 6108;
+
+        /// <summary>
         /// The identifier for the SercosDeviceType_Lock_InitLock Method.
         /// </summary>
         public const uint SercosDeviceType_Lock_InitLock = 6025;
@@ -96,6 +126,11 @@ namespace Sercos
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class Objects
     {
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata Object.
+        /// </summary>
+        public const uint SercosNamespaceMetadata = 6081;
+
         /// <summary>
         /// The identifier for the SercosDeviceType_ParameterSet Object.
         /// </summary>
@@ -196,6 +231,121 @@ namespace Sercos
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class Variables
     {
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceUri Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespaceUri = 6082;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceVersion Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespaceVersion = 6083;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespacePublicationDate Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespacePublicationDate = 6084;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_IsNamespaceSubset Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_IsNamespaceSubset = 6085;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_StaticNodeIdTypes Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_StaticNodeIdTypes = 6086;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_StaticNumericNodeIdRange Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_StaticNumericNodeIdRange = 6087;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_StaticStringNodeIdPattern Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_StaticStringNodeIdPattern = 6088;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Size Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespaceFile_Size = 6090;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Writable Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespaceFile_Writable = 6091;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_UserWritable Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespaceFile_UserWritable = 6092;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_OpenCount Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespaceFile_OpenCount = 6093;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Open_InputArguments Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespaceFile_Open_InputArguments = 6096;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Open_OutputArguments Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespaceFile_Open_OutputArguments = 6097;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Close_InputArguments Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespaceFile_Close_InputArguments = 6099;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Read_InputArguments Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespaceFile_Read_InputArguments = 6101;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Read_OutputArguments Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespaceFile_Read_OutputArguments = 6102;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Write_InputArguments Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespaceFile_Write_InputArguments = 6104;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_GetPosition_InputArguments Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespaceFile_GetPosition_InputArguments = 6106;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_GetPosition_OutputArguments Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespaceFile_GetPosition_OutputArguments = 6107;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_SetPosition_InputArguments Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_NamespaceFile_SetPosition_InputArguments = 6109;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_DefaultRolePermissions Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_DefaultRolePermissions = 6111;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_DefaultUserRolePermissions Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_DefaultUserRolePermissions = 6112;
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_DefaultAccessRestrictions Variable.
+        /// </summary>
+        public const uint SercosNamespaceMetadata_DefaultAccessRestrictions = 6113;
+
         /// <summary>
         /// The identifier for the SercosDeviceType_Lock_Locked Variable.
         /// </summary>
@@ -352,6 +502,36 @@ namespace Sercos
     public static partial class MethodIds
     {
         /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Open Method.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceFile_Open = new ExpandedNodeId(Sercos.Methods.SercosNamespaceMetadata_NamespaceFile_Open, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Close Method.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceFile_Close = new ExpandedNodeId(Sercos.Methods.SercosNamespaceMetadata_NamespaceFile_Close, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Read Method.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceFile_Read = new ExpandedNodeId(Sercos.Methods.SercosNamespaceMetadata_NamespaceFile_Read, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Write Method.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceFile_Write = new ExpandedNodeId(Sercos.Methods.SercosNamespaceMetadata_NamespaceFile_Write, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_GetPosition Method.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceFile_GetPosition = new ExpandedNodeId(Sercos.Methods.SercosNamespaceMetadata_NamespaceFile_GetPosition, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_SetPosition Method.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceFile_SetPosition = new ExpandedNodeId(Sercos.Methods.SercosNamespaceMetadata_NamespaceFile_SetPosition, Sercos.Namespaces.Sercos);
+
+        /// <summary>
         /// The identifier for the SercosDeviceType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId SercosDeviceType_Lock_InitLock = new ExpandedNodeId(Sercos.Methods.SercosDeviceType_Lock_InitLock, Sercos.Namespaces.Sercos);
@@ -401,6 +581,11 @@ namespace Sercos
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class ObjectIds
     {
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata Object.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata = new ExpandedNodeId(Sercos.Objects.SercosNamespaceMetadata, Sercos.Namespaces.Sercos);
+
         /// <summary>
         /// The identifier for the SercosDeviceType_ParameterSet Object.
         /// </summary>
@@ -501,6 +686,121 @@ namespace Sercos
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class VariableIds
     {
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceUri = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_NamespaceUri, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceVersion Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceVersion = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_NamespaceVersion, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespacePublicationDate Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespacePublicationDate = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_NamespacePublicationDate, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_IsNamespaceSubset Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_IsNamespaceSubset = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_IsNamespaceSubset, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_StaticNodeIdTypes Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_StaticNodeIdTypes = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_StaticNodeIdTypes, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_StaticNumericNodeIdRange Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_StaticNumericNodeIdRange = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_StaticNumericNodeIdRange, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_StaticStringNodeIdPattern Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_StaticStringNodeIdPattern = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_StaticStringNodeIdPattern, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Size Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceFile_Size = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_NamespaceFile_Size, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Writable Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceFile_Writable = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_NamespaceFile_Writable, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_UserWritable Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceFile_UserWritable = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_NamespaceFile_UserWritable, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_OpenCount Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceFile_OpenCount = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_NamespaceFile_OpenCount, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Open_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceFile_Open_InputArguments = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_NamespaceFile_Open_InputArguments, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Open_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceFile_Open_OutputArguments = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_NamespaceFile_Open_OutputArguments, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Close_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceFile_Close_InputArguments = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_NamespaceFile_Close_InputArguments, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Read_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceFile_Read_InputArguments = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_NamespaceFile_Read_InputArguments, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Read_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceFile_Read_OutputArguments = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_NamespaceFile_Read_OutputArguments, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_Write_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceFile_Write_InputArguments = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_NamespaceFile_Write_InputArguments, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_GetPosition_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceFile_GetPosition_InputArguments = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_NamespaceFile_GetPosition_InputArguments, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_GetPosition_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceFile_GetPosition_OutputArguments = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_NamespaceFile_GetPosition_OutputArguments, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_NamespaceFile_SetPosition_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceFile_SetPosition_InputArguments = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_NamespaceFile_SetPosition_InputArguments, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_DefaultRolePermissions Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_DefaultRolePermissions = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_DefaultRolePermissions, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_DefaultUserRolePermissions Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_DefaultUserRolePermissions = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_DefaultUserRolePermissions, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosNamespaceMetadata_DefaultAccessRestrictions Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosNamespaceMetadata_DefaultAccessRestrictions = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_DefaultAccessRestrictions, Sercos.Namespaces.Sercos);
+
         /// <summary>
         /// The identifier for the SercosDeviceType_Lock_Locked Variable.
         /// </summary>
@@ -746,6 +1046,11 @@ namespace Sercos
         public const string SercosFunctionGroupType = "SercosFunctionGroupType";
 
         /// <summary>
+        /// The BrowseName for the SercosNamespaceMetadata component.
+        /// </summary>
+        public const string SercosNamespaceMetadata = "http://sercos.org/UA/";
+
+        /// <summary>
         /// The BrowseName for the SercosParameterType component.
         /// </summary>
         public const string SercosParameterType = "SercosParameterType";
@@ -780,14 +1085,14 @@ namespace Sercos
         public const string SercosXsd = "http://sercos.org/UA/Types.xsd";
 
         /// <summary>
-        /// The URI for the OpcUSercos namespace (.NET code namespace is 'Opc.Ua.Di').
+        /// The URI for the DI namespace (.NET code namespace is 'Opc.Ua.Di').
         /// </summary>
-        public const string OpcUSercos = "http://opcfoundation.org/UA/DI/";
+        public const string DI = "http://opcfoundation.org/UA/DI/";
 
         /// <summary>
-        /// The URI for the OpcUSercosXsd namespace (.NET code namespace is 'Opc.Ua.Di').
+        /// The URI for the DIXsd namespace (.NET code namespace is 'Opc.Ua.Di').
         /// </summary>
-        public const string OpcUSercosXsd = "http://opcfoundation.org/UA/DI/Types.xsd";
+        public const string DIXsd = "http://opcfoundation.org/UA/DI/Types.xsd";
 
         /// <summary>
         /// The URI for the OpcUa namespace (.NET code namespace is 'Opc.Ua').
