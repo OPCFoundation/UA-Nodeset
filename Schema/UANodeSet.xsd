@@ -320,6 +320,7 @@
         <xs:attribute name="ValueRank" type="ValueRank" default="-1"></xs:attribute>
         <xs:attribute name="ArrayDimensions" type="ArrayDimensions" default=""></xs:attribute>
         <xs:attribute name="AccessLevel" type="AccessLevel" default="1"></xs:attribute>
+        <xs:attribute name="UserAccessLevel" type="AccessLevel" default="1"></xs:attribute>
         <xs:attribute name="MinimumSamplingInterval" type="Duration" default="0"></xs:attribute>
         <xs:attribute name="Historizing" type="xs:boolean" default="false"></xs:attribute>
       </xs:extension>
@@ -340,6 +341,7 @@
           <xs:element name="ArgumentDescription" type="UAMethodArgument" minOccurs="0" maxOccurs="unbounded"></xs:element>
         </xs:sequence>
         <xs:attribute name="Executable" type="xs:boolean" default="true"></xs:attribute>
+        <xs:attribute name="UserExecutable" type="xs:boolean" default="true"></xs:attribute>
         <xs:attribute name="MethodDeclarationId" type="NodeId" use="optional"></xs:attribute>
       </xs:extension>
     </xs:complexContent>
