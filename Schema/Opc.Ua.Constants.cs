@@ -2130,6 +2130,11 @@ namespace Opc.Ua
         public const uint AcknowledgeableConditionType_Confirm = 9113;
 
         /// <summary>
+        /// The identifier for the AlarmConditionType_ShelvingState_TimedShelve Method.
+        /// </summary>
+        public const uint AlarmConditionType_ShelvingState_TimedShelve = 9213;
+
+        /// <summary>
         /// The identifier for the AlarmConditionType_ShelvingState_Unshelve Method.
         /// </summary>
         public const uint AlarmConditionType_ShelvingState_Unshelve = 9211;
@@ -2138,11 +2143,6 @@ namespace Opc.Ua
         /// The identifier for the AlarmConditionType_ShelvingState_OneShotShelve Method.
         /// </summary>
         public const uint AlarmConditionType_ShelvingState_OneShotShelve = 9212;
-
-        /// <summary>
-        /// The identifier for the AlarmConditionType_ShelvingState_TimedShelve Method.
-        /// </summary>
-        public const uint AlarmConditionType_ShelvingState_TimedShelve = 9213;
 
         /// <summary>
         /// The identifier for the AlarmConditionType_Silence Method.
@@ -2155,9 +2155,19 @@ namespace Opc.Ua
         public const uint AlarmConditionType_Suppress = 16403;
 
         /// <summary>
-        /// The identifier for the AlarmConditionType_OutOfService Method.
+        /// The identifier for the AlarmConditionType_UnSuppress Method.
         /// </summary>
-        public const uint AlarmConditionType_OutOfService = 16404;
+        public const uint AlarmConditionType_UnSuppress = 17868;
+
+        /// <summary>
+        /// The identifier for the AlarmConditionType_RemoveFromService Method.
+        /// </summary>
+        public const uint AlarmConditionType_RemoveFromService = 17869;
+
+        /// <summary>
+        /// The identifier for the AlarmConditionType_PlaceInService Method.
+        /// </summary>
+        public const uint AlarmConditionType_PlaceInService = 17870;
 
         /// <summary>
         /// The identifier for the AlarmGroupType_AlarmConditionInstance_Placeholder_Disable Method.
@@ -2180,6 +2190,11 @@ namespace Opc.Ua
         public const uint AlarmGroupType_AlarmConditionInstance_Placeholder_Acknowledge = 16461;
 
         /// <summary>
+        /// The identifier for the AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_TimedShelve Method.
+        /// </summary>
+        public const uint AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_TimedShelve = 16517;
+
+        /// <summary>
         /// The identifier for the AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_Unshelve Method.
         /// </summary>
         public const uint AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_Unshelve = 16515;
@@ -2190,9 +2205,9 @@ namespace Opc.Ua
         public const uint AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_OneShotShelve = 16516;
 
         /// <summary>
-        /// The identifier for the AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_TimedShelve Method.
+        /// The identifier for the ShelvedStateMachineType_TimedShelve Method.
         /// </summary>
-        public const uint AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_TimedShelve = 16517;
+        public const uint ShelvedStateMachineType_TimedShelve = 2949;
 
         /// <summary>
         /// The identifier for the ShelvedStateMachineType_Unshelve Method.
@@ -2205,9 +2220,9 @@ namespace Opc.Ua
         public const uint ShelvedStateMachineType_OneShotShelve = 2948;
 
         /// <summary>
-        /// The identifier for the ShelvedStateMachineType_TimedShelve Method.
+        /// The identifier for the LimitAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public const uint ShelvedStateMachineType_TimedShelve = 2949;
+        public const uint LimitAlarmType_ShelvingState_TimedShelve = 9314;
 
         /// <summary>
         /// The identifier for the LimitAlarmType_ShelvingState_Unshelve Method.
@@ -2220,9 +2235,9 @@ namespace Opc.Ua
         public const uint LimitAlarmType_ShelvingState_OneShotShelve = 9313;
 
         /// <summary>
-        /// The identifier for the LimitAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the ExclusiveLimitAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public const uint LimitAlarmType_ShelvingState_TimedShelve = 9314;
+        public const uint ExclusiveLimitAlarmType_ShelvingState_TimedShelve = 9451;
 
         /// <summary>
         /// The identifier for the ExclusiveLimitAlarmType_ShelvingState_Unshelve Method.
@@ -2235,9 +2250,9 @@ namespace Opc.Ua
         public const uint ExclusiveLimitAlarmType_ShelvingState_OneShotShelve = 9450;
 
         /// <summary>
-        /// The identifier for the ExclusiveLimitAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the NonExclusiveLimitAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public const uint ExclusiveLimitAlarmType_ShelvingState_TimedShelve = 9451;
+        public const uint NonExclusiveLimitAlarmType_ShelvingState_TimedShelve = 10016;
 
         /// <summary>
         /// The identifier for the NonExclusiveLimitAlarmType_ShelvingState_Unshelve Method.
@@ -2250,9 +2265,9 @@ namespace Opc.Ua
         public const uint NonExclusiveLimitAlarmType_ShelvingState_OneShotShelve = 10015;
 
         /// <summary>
-        /// The identifier for the NonExclusiveLimitAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the NonExclusiveLevelAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public const uint NonExclusiveLimitAlarmType_ShelvingState_TimedShelve = 10016;
+        public const uint NonExclusiveLevelAlarmType_ShelvingState_TimedShelve = 10170;
 
         /// <summary>
         /// The identifier for the NonExclusiveLevelAlarmType_ShelvingState_Unshelve Method.
@@ -2265,9 +2280,9 @@ namespace Opc.Ua
         public const uint NonExclusiveLevelAlarmType_ShelvingState_OneShotShelve = 10169;
 
         /// <summary>
-        /// The identifier for the NonExclusiveLevelAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the ExclusiveLevelAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public const uint NonExclusiveLevelAlarmType_ShelvingState_TimedShelve = 10170;
+        public const uint ExclusiveLevelAlarmType_ShelvingState_TimedShelve = 9592;
 
         /// <summary>
         /// The identifier for the ExclusiveLevelAlarmType_ShelvingState_Unshelve Method.
@@ -2280,9 +2295,9 @@ namespace Opc.Ua
         public const uint ExclusiveLevelAlarmType_ShelvingState_OneShotShelve = 9591;
 
         /// <summary>
-        /// The identifier for the ExclusiveLevelAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the NonExclusiveDeviationAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public const uint ExclusiveLevelAlarmType_ShelvingState_TimedShelve = 9592;
+        public const uint NonExclusiveDeviationAlarmType_ShelvingState_TimedShelve = 10478;
 
         /// <summary>
         /// The identifier for the NonExclusiveDeviationAlarmType_ShelvingState_Unshelve Method.
@@ -2295,24 +2310,9 @@ namespace Opc.Ua
         public const uint NonExclusiveDeviationAlarmType_ShelvingState_OneShotShelve = 10477;
 
         /// <summary>
-        /// The identifier for the NonExclusiveDeviationAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the NonExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public const uint NonExclusiveDeviationAlarmType_ShelvingState_TimedShelve = 10478;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_Unshelve Method.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_ShelvingState_Unshelve = 9872;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_OneShotShelve Method.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_ShelvingState_OneShotShelve = 9873;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_TimedShelve Method.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_ShelvingState_TimedShelve = 9874;
+        public const uint NonExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve = 10324;
 
         /// <summary>
         /// The identifier for the NonExclusiveRateOfChangeAlarmType_ShelvingState_Unshelve Method.
@@ -2325,9 +2325,24 @@ namespace Opc.Ua
         public const uint NonExclusiveRateOfChangeAlarmType_ShelvingState_OneShotShelve = 10323;
 
         /// <summary>
-        /// The identifier for the NonExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public const uint NonExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve = 10324;
+        public const uint ExclusiveDeviationAlarmType_ShelvingState_TimedShelve = 9874;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_Unshelve Method.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_ShelvingState_Unshelve = 9872;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_OneShotShelve Method.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_ShelvingState_OneShotShelve = 9873;
+
+        /// <summary>
+        /// The identifier for the ExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve Method.
+        /// </summary>
+        public const uint ExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve = 9733;
 
         /// <summary>
         /// The identifier for the ExclusiveRateOfChangeAlarmType_ShelvingState_Unshelve Method.
@@ -2340,9 +2355,9 @@ namespace Opc.Ua
         public const uint ExclusiveRateOfChangeAlarmType_ShelvingState_OneShotShelve = 9732;
 
         /// <summary>
-        /// The identifier for the ExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the DiscreteAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public const uint ExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve = 9733;
+        public const uint DiscreteAlarmType_ShelvingState_TimedShelve = 10633;
 
         /// <summary>
         /// The identifier for the DiscreteAlarmType_ShelvingState_Unshelve Method.
@@ -2355,9 +2370,9 @@ namespace Opc.Ua
         public const uint DiscreteAlarmType_ShelvingState_OneShotShelve = 10632;
 
         /// <summary>
-        /// The identifier for the DiscreteAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the OffNormalAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public const uint DiscreteAlarmType_ShelvingState_TimedShelve = 10633;
+        public const uint OffNormalAlarmType_ShelvingState_TimedShelve = 10747;
 
         /// <summary>
         /// The identifier for the OffNormalAlarmType_ShelvingState_Unshelve Method.
@@ -2370,9 +2385,9 @@ namespace Opc.Ua
         public const uint OffNormalAlarmType_ShelvingState_OneShotShelve = 10746;
 
         /// <summary>
-        /// The identifier for the OffNormalAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the SystemOffNormalAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public const uint OffNormalAlarmType_ShelvingState_TimedShelve = 10747;
+        public const uint SystemOffNormalAlarmType_ShelvingState_TimedShelve = 11846;
 
         /// <summary>
         /// The identifier for the SystemOffNormalAlarmType_ShelvingState_Unshelve Method.
@@ -2385,9 +2400,9 @@ namespace Opc.Ua
         public const uint SystemOffNormalAlarmType_ShelvingState_OneShotShelve = 11845;
 
         /// <summary>
-        /// The identifier for the SystemOffNormalAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the TripAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public const uint SystemOffNormalAlarmType_ShelvingState_TimedShelve = 11846;
+        public const uint TripAlarmType_ShelvingState_TimedShelve = 10861;
 
         /// <summary>
         /// The identifier for the TripAlarmType_ShelvingState_Unshelve Method.
@@ -2400,9 +2415,9 @@ namespace Opc.Ua
         public const uint TripAlarmType_ShelvingState_OneShotShelve = 10860;
 
         /// <summary>
-        /// The identifier for the TripAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the CertificateExpirationAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public const uint TripAlarmType_ShelvingState_TimedShelve = 10861;
+        public const uint CertificateExpirationAlarmType_ShelvingState_TimedShelve = 13320;
 
         /// <summary>
         /// The identifier for the CertificateExpirationAlarmType_ShelvingState_Unshelve Method.
@@ -2415,9 +2430,9 @@ namespace Opc.Ua
         public const uint CertificateExpirationAlarmType_ShelvingState_OneShotShelve = 13319;
 
         /// <summary>
-        /// The identifier for the CertificateExpirationAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the DiscrepancyAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public const uint CertificateExpirationAlarmType_ShelvingState_TimedShelve = 13320;
+        public const uint DiscrepancyAlarmType_ShelvingState_TimedShelve = 17195;
 
         /// <summary>
         /// The identifier for the DiscrepancyAlarmType_ShelvingState_Unshelve Method.
@@ -2428,11 +2443,6 @@ namespace Opc.Ua
         /// The identifier for the DiscrepancyAlarmType_ShelvingState_OneShotShelve Method.
         /// </summary>
         public const uint DiscrepancyAlarmType_ShelvingState_OneShotShelve = 17194;
-
-        /// <summary>
-        /// The identifier for the DiscrepancyAlarmType_ShelvingState_TimedShelve Method.
-        /// </summary>
-        public const uint DiscrepancyAlarmType_ShelvingState_TimedShelve = 17195;
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType_Start Method.
@@ -2950,69 +2960,14 @@ namespace Opc.Ua
         public const uint ServerConfiguration_GetRejectedList = 12777;
 
         /// <summary>
-        /// The identifier for the NetworkServiceFolderType_ServiceName_Placeholder_StartCredentialRequest Method.
+        /// The identifier for the KeyCredentialConfigurationType_UpdateCredential Method.
         /// </summary>
-        public const uint NetworkServiceFolderType_ServiceName_Placeholder_StartCredentialRequest = 17724;
+        public const uint KeyCredentialConfigurationType_UpdateCredential = 18006;
 
         /// <summary>
-        /// The identifier for the NetworkServiceFolderType_ServiceName_Placeholder_FinishCredentialRequest Method.
+        /// The identifier for the KeyCredentialConfigurationType_DeleteCredential Method.
         /// </summary>
-        public const uint NetworkServiceFolderType_ServiceName_Placeholder_FinishCredentialRequest = 17727;
-
-        /// <summary>
-        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_StartCredentialRequest Method.
-        /// </summary>
-        public const uint AuthorizationServices_ServiceName_Placeholder_StartCredentialRequest = 17734;
-
-        /// <summary>
-        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_FinishCredentialRequest Method.
-        /// </summary>
-        public const uint AuthorizationServices_ServiceName_Placeholder_FinishCredentialRequest = 17737;
-
-        /// <summary>
-        /// The identifier for the CredentialManagementType_StartCredentialRequest Method.
-        /// </summary>
-        public const uint CredentialManagementType_StartCredentialRequest = 17743;
-
-        /// <summary>
-        /// The identifier for the CredentialManagementType_FinishCredentialRequest Method.
-        /// </summary>
-        public const uint CredentialManagementType_FinishCredentialRequest = 17746;
-
-        /// <summary>
-        /// The identifier for the CredentialManagementType_RevokeCredential Method.
-        /// </summary>
-        public const uint CredentialManagementType_RevokeCredential = 17749;
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_CredentialManagement_StartCredentialRequest Method.
-        /// </summary>
-        public const uint NetworkServiceType_CredentialManagement_StartCredentialRequest = 17762;
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_CredentialManagement_FinishCredentialRequest Method.
-        /// </summary>
-        public const uint NetworkServiceType_CredentialManagement_FinishCredentialRequest = 17765;
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_CredentialManagement_StartCredentialRequest Method.
-        /// </summary>
-        public const uint AuthorizationServiceType_CredentialManagement_StartCredentialRequest = 17775;
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_CredentialManagement_FinishCredentialRequest Method.
-        /// </summary>
-        public const uint AuthorizationServiceType_CredentialManagement_FinishCredentialRequest = 17778;
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_RequestAccessToken Method.
-        /// </summary>
-        public const uint AuthorizationServiceType_RequestAccessToken = 17784;
-
-        /// <summary>
-        /// The identifier for the NetworkServiceConfigurationType_UpdateCredential Method.
-        /// </summary>
-        public const uint NetworkServiceConfigurationType_UpdateCredential = 17850;
+        public const uint KeyCredentialConfigurationType_DeleteCredential = 18008;
 
         /// <summary>
         /// The identifier for the PubSubKeyServiceType_GetSecurityKeys Method.
@@ -4025,24 +3980,14 @@ namespace Opc.Ua
         public const uint ServerConfiguration_CertificateGroups_DefaultUserTokenGroup_TrustList = 14123;
 
         /// <summary>
-        /// The identifier for the NetworkServiceFolderType_ServiceName_Placeholder Object.
+        /// The identifier for the KeyCredentialManagement Object.
         /// </summary>
-        public const uint NetworkServiceFolderType_ServiceName_Placeholder = 16074;
+        public const uint KeyCredentialManagement = 17992;
 
         /// <summary>
         /// The identifier for the AuthorizationServices Object.
         /// </summary>
         public const uint AuthorizationServices = 17732;
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_CredentialManagement Object.
-        /// </summary>
-        public const uint NetworkServiceType_CredentialManagement = 17761;
-
-        /// <summary>
-        /// The identifier for the NetworkServices Object.
-        /// </summary>
-        public const uint NetworkServices = 16083;
 
         /// <summary>
         /// The identifier for the AggregateFunction_Interpolative Object.
@@ -7325,14 +7270,14 @@ namespace Opc.Ua
         public const uint NonExclusiveDeviationAlarmType = 10368;
 
         /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType ObjectType.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType = 9764;
-
-        /// <summary>
         /// The identifier for the NonExclusiveRateOfChangeAlarmType ObjectType.
         /// </summary>
         public const uint NonExclusiveRateOfChangeAlarmType = 10214;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType ObjectType.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType = 9764;
 
         /// <summary>
         /// The identifier for the ExclusiveRateOfChangeAlarmType ObjectType.
@@ -7395,19 +7340,19 @@ namespace Opc.Ua
         public const uint SafetyConditionClassType = 17218;
 
         /// <summary>
-        /// The identifier for the BaseConditionClassModifierType ObjectType.
+        /// The identifier for the HighlyManagedAlarmConditionClassType ObjectType.
         /// </summary>
-        public const uint BaseConditionClassModifierType = 17219;
+        public const uint HighlyManagedAlarmConditionClassType = 17219;
 
         /// <summary>
-        /// The identifier for the TrainingConditionClassModifierType ObjectType.
+        /// The identifier for the TrainingConditionClassType ObjectType.
         /// </summary>
-        public const uint TrainingConditionClassModifierType = 17220;
+        public const uint TrainingConditionClassType = 17220;
 
         /// <summary>
-        /// The identifier for the TestingConditionClassModifierType ObjectType.
+        /// The identifier for the TestingConditionClassType ObjectType.
         /// </summary>
-        public const uint TestingConditionClassModifierType = 17221;
+        public const uint TestingConditionClassType = 17221;
 
         /// <summary>
         /// The identifier for the AuditConditionEventType ObjectType.
@@ -7445,9 +7390,9 @@ namespace Opc.Ua
         public const uint AuditConditionShelvingEventType = 11093;
 
         /// <summary>
-        /// The identifier for the AuditConditionSuppressionEventType ObjectType.
+        /// The identifier for the AuditConditionSuppressEventType ObjectType.
         /// </summary>
-        public const uint AuditConditionSuppressionEventType = 17225;
+        public const uint AuditConditionSuppressEventType = 17225;
 
         /// <summary>
         /// The identifier for the AuditConditionSilenceEventType ObjectType.
@@ -7475,9 +7420,9 @@ namespace Opc.Ua
         public const uint RefreshRequiredEventType = 2789;
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType ObjectType.
+        /// The identifier for the AlarmMetricsType ObjectType.
         /// </summary>
-        public const uint AlarmDiagnosticsSummaryType = 17279;
+        public const uint AlarmMetricsType = 17279;
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType ObjectType.
@@ -7595,44 +7540,24 @@ namespace Opc.Ua
         public const uint CertificateUpdatedAuditEventType = 12620;
 
         /// <summary>
-        /// The identifier for the NetworkServiceFolderType ObjectType.
+        /// The identifier for the KeyCredentialConfigurationType ObjectType.
         /// </summary>
-        public const uint NetworkServiceFolderType = 16073;
+        public const uint KeyCredentialConfigurationType = 18001;
 
         /// <summary>
-        /// The identifier for the CredentialManagementType ObjectType.
+        /// The identifier for the KeyCredentialAuditEventType ObjectType.
         /// </summary>
-        public const uint CredentialManagementType = 17742;
+        public const uint KeyCredentialAuditEventType = 18011;
 
         /// <summary>
-        /// The identifier for the NetworkServiceType ObjectType.
+        /// The identifier for the KeyCredentialUpdatedAuditEventType ObjectType.
         /// </summary>
-        public const uint NetworkServiceType = 16093;
+        public const uint KeyCredentialUpdatedAuditEventType = 18029;
 
         /// <summary>
-        /// The identifier for the AuthorizationServiceType ObjectType.
+        /// The identifier for the KeyCredentialDeletedAuditEventType ObjectType.
         /// </summary>
-        public const uint AuthorizationServiceType = 17770;
-
-        /// <summary>
-        /// The identifier for the CredentialRequestedAuditEventType ObjectType.
-        /// </summary>
-        public const uint CredentialRequestedAuditEventType = 17790;
-
-        /// <summary>
-        /// The identifier for the CredentialDeliveredAuditEventType ObjectType.
-        /// </summary>
-        public const uint CredentialDeliveredAuditEventType = 17808;
-
-        /// <summary>
-        /// The identifier for the CredentialRevokedAuditEventType ObjectType.
-        /// </summary>
-        public const uint CredentialRevokedAuditEventType = 17826;
-
-        /// <summary>
-        /// The identifier for the NetworkServiceConfigurationType ObjectType.
-        /// </summary>
-        public const uint NetworkServiceConfigurationType = 17844;
+        public const uint KeyCredentialDeletedAuditEventType = 18047;
 
         /// <summary>
         /// The identifier for the AuthorizationServiceConfigurationType ObjectType.
@@ -7978,6 +7903,21 @@ namespace Opc.Ua
         /// The identifier for the HasEffectDisable ReferenceType.
         /// </summary>
         public const uint HasEffectDisable = 17276;
+
+        /// <summary>
+        /// The identifier for the HasEffectEnable ReferenceType.
+        /// </summary>
+        public const uint HasEffectEnable = 17983;
+
+        /// <summary>
+        /// The identifier for the HasEffectSuppressed ReferenceType.
+        /// </summary>
+        public const uint HasEffectSuppressed = 17984;
+
+        /// <summary>
+        /// The identifier for the HasEffectUnSuppressed ReferenceType.
+        /// </summary>
+        public const uint HasEffectUnSuppressed = 17985;
 
         /// <summary>
         /// The identifier for the HasPubSubConnection ReferenceType.
@@ -12515,14 +12455,14 @@ namespace Opc.Ua
         public const uint ConditionType_ConditionClassName = 11113;
 
         /// <summary>
-        /// The identifier for the ConditionType_ConditionClassModifier Variable.
+        /// The identifier for the ConditionType_ConditionSubClass Variable.
         /// </summary>
-        public const uint ConditionType_ConditionClassModifier = 16363;
+        public const uint ConditionType_ConditionSubClass = 16363;
 
         /// <summary>
-        /// The identifier for the ConditionType_ConditionClassModifierName Variable.
+        /// The identifier for the ConditionType_ConditionSubClassName Variable.
         /// </summary>
-        public const uint ConditionType_ConditionClassModifierName = 16364;
+        public const uint ConditionType_ConditionSubClassName = 16364;
 
         /// <summary>
         /// The identifier for the ConditionType_ConditionName Variable.
@@ -12975,31 +12915,6 @@ namespace Opc.Ua
         public const uint AlarmConditionType_OutOfServiceState_FalseState = 16379;
 
         /// <summary>
-        /// The identifier for the AlarmConditionType_SilenceState Variable.
-        /// </summary>
-        public const uint AlarmConditionType_SilenceState = 16380;
-
-        /// <summary>
-        /// The identifier for the AlarmConditionType_SilenceState_Id Variable.
-        /// </summary>
-        public const uint AlarmConditionType_SilenceState_Id = 16381;
-
-        /// <summary>
-        /// The identifier for the AlarmConditionType_SilenceState_TransitionTime Variable.
-        /// </summary>
-        public const uint AlarmConditionType_SilenceState_TransitionTime = 16385;
-
-        /// <summary>
-        /// The identifier for the AlarmConditionType_SilenceState_TrueState Variable.
-        /// </summary>
-        public const uint AlarmConditionType_SilenceState_TrueState = 16387;
-
-        /// <summary>
-        /// The identifier for the AlarmConditionType_SilenceState_FalseState Variable.
-        /// </summary>
-        public const uint AlarmConditionType_SilenceState_FalseState = 16388;
-
-        /// <summary>
         /// The identifier for the AlarmConditionType_ShelvingState_CurrentState Variable.
         /// </summary>
         public const uint AlarmConditionType_ShelvingState_CurrentState = 9179;
@@ -13055,24 +12970,29 @@ namespace Opc.Ua
         public const uint AlarmConditionType_AudibleSound = 16390;
 
         /// <summary>
-        /// The identifier for the AlarmConditionType_AudibleSoundMIMEType Variable.
+        /// The identifier for the AlarmConditionType_SilenceState Variable.
         /// </summary>
-        public const uint AlarmConditionType_AudibleSoundMIMEType = 16391;
+        public const uint AlarmConditionType_SilenceState = 16380;
 
         /// <summary>
-        /// The identifier for the AlarmConditionType_AudibleSoundMIMEListId Variable.
+        /// The identifier for the AlarmConditionType_SilenceState_Id Variable.
         /// </summary>
-        public const uint AlarmConditionType_AudibleSoundMIMEListId = 16392;
+        public const uint AlarmConditionType_SilenceState_Id = 16381;
 
         /// <summary>
-        /// The identifier for the AlarmConditionType_AudibleSoundMIMEListAgencyId Variable.
+        /// The identifier for the AlarmConditionType_SilenceState_TransitionTime Variable.
         /// </summary>
-        public const uint AlarmConditionType_AudibleSoundMIMEListAgencyId = 16393;
+        public const uint AlarmConditionType_SilenceState_TransitionTime = 16385;
 
         /// <summary>
-        /// The identifier for the AlarmConditionType_AudibleSoundMIMEListVersionId Variable.
+        /// The identifier for the AlarmConditionType_SilenceState_TrueState Variable.
         /// </summary>
-        public const uint AlarmConditionType_AudibleSoundMIMEListVersionId = 16394;
+        public const uint AlarmConditionType_SilenceState_TrueState = 16387;
+
+        /// <summary>
+        /// The identifier for the AlarmConditionType_SilenceState_FalseState Variable.
+        /// </summary>
+        public const uint AlarmConditionType_SilenceState_FalseState = 16388;
 
         /// <summary>
         /// The identifier for the AlarmConditionType_OnDelay Variable.
@@ -13270,11 +13190,6 @@ namespace Opc.Ua
         public const uint AlarmGroupType_AlarmConditionInstance_Placeholder_OutOfServiceState_Id = 16485;
 
         /// <summary>
-        /// The identifier for the AlarmGroupType_AlarmConditionInstance_Placeholder_SilenceState_Id Variable.
-        /// </summary>
-        public const uint AlarmGroupType_AlarmConditionInstance_Placeholder_SilenceState_Id = 16494;
-
-        /// <summary>
         /// The identifier for the AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_CurrentState Variable.
         /// </summary>
         public const uint AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_CurrentState = 16503;
@@ -13303,6 +13218,11 @@ namespace Opc.Ua
         /// The identifier for the AlarmGroupType_AlarmConditionInstance_Placeholder_SuppressedOrShelved Variable.
         /// </summary>
         public const uint AlarmGroupType_AlarmConditionInstance_Placeholder_SuppressedOrShelved = 16519;
+
+        /// <summary>
+        /// The identifier for the AlarmGroupType_AlarmConditionInstance_Placeholder_SilenceState_Id Variable.
+        /// </summary>
+        public const uint AlarmGroupType_AlarmConditionInstance_Placeholder_SilenceState_Id = 16494;
 
         /// <summary>
         /// The identifier for the ShelvedStateMachineType_CurrentState_Id Variable.
@@ -13440,11 +13360,6 @@ namespace Opc.Ua
         public const uint LimitAlarmType_OutOfServiceState_Id = 16539;
 
         /// <summary>
-        /// The identifier for the LimitAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public const uint LimitAlarmType_SilenceState_Id = 16548;
-
-        /// <summary>
         /// The identifier for the LimitAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public const uint LimitAlarmType_ShelvingState_CurrentState = 9280;
@@ -13468,6 +13383,11 @@ namespace Opc.Ua
         /// The identifier for the LimitAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public const uint LimitAlarmType_ShelvingState_TimedShelve_InputArguments = 9315;
+
+        /// <summary>
+        /// The identifier for the LimitAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public const uint LimitAlarmType_SilenceState_Id = 16548;
 
         /// <summary>
         /// The identifier for the LimitAlarmType_HighHighLimit Variable.
@@ -13635,11 +13555,6 @@ namespace Opc.Ua
         public const uint ExclusiveLimitAlarmType_OutOfServiceState_Id = 16579;
 
         /// <summary>
-        /// The identifier for the ExclusiveLimitAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public const uint ExclusiveLimitAlarmType_SilenceState_Id = 16588;
-
-        /// <summary>
         /// The identifier for the ExclusiveLimitAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public const uint ExclusiveLimitAlarmType_ShelvingState_CurrentState = 9417;
@@ -13663,6 +13578,11 @@ namespace Opc.Ua
         /// The identifier for the ExclusiveLimitAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public const uint ExclusiveLimitAlarmType_ShelvingState_TimedShelve_InputArguments = 9452;
+
+        /// <summary>
+        /// The identifier for the ExclusiveLimitAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public const uint ExclusiveLimitAlarmType_SilenceState_Id = 16588;
 
         /// <summary>
         /// The identifier for the ExclusiveLimitAlarmType_LimitState_CurrentState Variable.
@@ -13765,11 +13685,6 @@ namespace Opc.Ua
         public const uint NonExclusiveLimitAlarmType_OutOfServiceState_Id = 16619;
 
         /// <summary>
-        /// The identifier for the NonExclusiveLimitAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public const uint NonExclusiveLimitAlarmType_SilenceState_Id = 16628;
-
-        /// <summary>
         /// The identifier for the NonExclusiveLimitAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public const uint NonExclusiveLimitAlarmType_ShelvingState_CurrentState = 9982;
@@ -13793,6 +13708,11 @@ namespace Opc.Ua
         /// The identifier for the NonExclusiveLimitAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public const uint NonExclusiveLimitAlarmType_ShelvingState_TimedShelve_InputArguments = 10017;
+
+        /// <summary>
+        /// The identifier for the NonExclusiveLimitAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public const uint NonExclusiveLimitAlarmType_SilenceState_Id = 16628;
 
         /// <summary>
         /// The identifier for the NonExclusiveLimitAlarmType_HighHighState Variable.
@@ -13965,11 +13885,6 @@ namespace Opc.Ua
         public const uint NonExclusiveLevelAlarmType_OutOfServiceState_Id = 16659;
 
         /// <summary>
-        /// The identifier for the NonExclusiveLevelAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public const uint NonExclusiveLevelAlarmType_SilenceState_Id = 16668;
-
-        /// <summary>
         /// The identifier for the NonExclusiveLevelAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public const uint NonExclusiveLevelAlarmType_ShelvingState_CurrentState = 10136;
@@ -13993,6 +13908,11 @@ namespace Opc.Ua
         /// The identifier for the NonExclusiveLevelAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public const uint NonExclusiveLevelAlarmType_ShelvingState_TimedShelve_InputArguments = 10171;
+
+        /// <summary>
+        /// The identifier for the NonExclusiveLevelAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public const uint NonExclusiveLevelAlarmType_SilenceState_Id = 16668;
 
         /// <summary>
         /// The identifier for the NonExclusiveLevelAlarmType_HighHighState_Id Variable.
@@ -14085,11 +14005,6 @@ namespace Opc.Ua
         public const uint ExclusiveLevelAlarmType_OutOfServiceState_Id = 16699;
 
         /// <summary>
-        /// The identifier for the ExclusiveLevelAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public const uint ExclusiveLevelAlarmType_SilenceState_Id = 16708;
-
-        /// <summary>
         /// The identifier for the ExclusiveLevelAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public const uint ExclusiveLevelAlarmType_ShelvingState_CurrentState = 9558;
@@ -14113,6 +14028,11 @@ namespace Opc.Ua
         /// The identifier for the ExclusiveLevelAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public const uint ExclusiveLevelAlarmType_ShelvingState_TimedShelve_InputArguments = 9593;
+
+        /// <summary>
+        /// The identifier for the ExclusiveLevelAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public const uint ExclusiveLevelAlarmType_SilenceState_Id = 16708;
 
         /// <summary>
         /// The identifier for the ExclusiveLevelAlarmType_LimitState_CurrentState Variable.
@@ -14200,11 +14120,6 @@ namespace Opc.Ua
         public const uint NonExclusiveDeviationAlarmType_OutOfServiceState_Id = 16739;
 
         /// <summary>
-        /// The identifier for the NonExclusiveDeviationAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public const uint NonExclusiveDeviationAlarmType_SilenceState_Id = 16748;
-
-        /// <summary>
         /// The identifier for the NonExclusiveDeviationAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public const uint NonExclusiveDeviationAlarmType_ShelvingState_CurrentState = 10444;
@@ -14228,6 +14143,11 @@ namespace Opc.Ua
         /// The identifier for the NonExclusiveDeviationAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public const uint NonExclusiveDeviationAlarmType_ShelvingState_TimedShelve_InputArguments = 10479;
+
+        /// <summary>
+        /// The identifier for the NonExclusiveDeviationAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public const uint NonExclusiveDeviationAlarmType_SilenceState_Id = 16748;
 
         /// <summary>
         /// The identifier for the NonExclusiveDeviationAlarmType_HighHighState_Id Variable.
@@ -14258,131 +14178,6 @@ namespace Opc.Ua
         /// The identifier for the NonExclusiveDeviationAlarmType_BaseSetpointNode Variable.
         /// </summary>
         public const uint NonExclusiveDeviationAlarmType_BaseSetpointNode = 16776;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_EnabledState_Id Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_EnabledState_Id = 9778;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_Quality_SourceTimestamp Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_Quality_SourceTimestamp = 9787;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_LastSeverity_SourceTimestamp Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_LastSeverity_SourceTimestamp = 9789;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_Comment_SourceTimestamp Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_Comment_SourceTimestamp = 9791;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_AddComment_InputArguments Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_AddComment_InputArguments = 9796;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ConditionRefresh_InputArguments Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_ConditionRefresh_InputArguments = 9798;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ConditionRefresh2_InputArguments Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_ConditionRefresh2_InputArguments = 12999;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_AckedState_Id Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_AckedState_Id = 9800;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ConfirmedState_Id Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_ConfirmedState_Id = 9809;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_Acknowledge_InputArguments Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_Acknowledge_InputArguments = 9818;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_Confirm_InputArguments Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_Confirm_InputArguments = 9820;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ActiveState_Id Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_ActiveState_Id = 9822;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_SuppressedState_Id Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_SuppressedState_Id = 9831;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_OutOfServiceState_Id Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_OutOfServiceState_Id = 16780;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_SilenceState_Id = 16789;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_CurrentState Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_ShelvingState_CurrentState = 9840;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_CurrentState_Id Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_ShelvingState_CurrentState_Id = 9841;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_LastTransition_Id Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_ShelvingState_LastTransition_Id = 9846;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_UnshelveTime Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_ShelvingState_UnshelveTime = 9850;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_ShelvingState_TimedShelve_InputArguments = 9875;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_LimitState_CurrentState Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_LimitState_CurrentState = 9879;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_LimitState_CurrentState_Id Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_LimitState_CurrentState_Id = 9880;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_LimitState_LastTransition_Id Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_LimitState_LastTransition_Id = 9885;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_SetpointNode Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_SetpointNode = 9905;
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_BaseSetpointNode Variable.
-        /// </summary>
-        public const uint ExclusiveDeviationAlarmType_BaseSetpointNode = 16817;
 
         /// <summary>
         /// The identifier for the NonExclusiveRateOfChangeAlarmType_EnabledState_Id Variable.
@@ -14455,11 +14250,6 @@ namespace Opc.Ua
         public const uint NonExclusiveRateOfChangeAlarmType_OutOfServiceState_Id = 16821;
 
         /// <summary>
-        /// The identifier for the NonExclusiveRateOfChangeAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public const uint NonExclusiveRateOfChangeAlarmType_SilenceState_Id = 16830;
-
-        /// <summary>
         /// The identifier for the NonExclusiveRateOfChangeAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public const uint NonExclusiveRateOfChangeAlarmType_ShelvingState_CurrentState = 10290;
@@ -14485,6 +14275,11 @@ namespace Opc.Ua
         public const uint NonExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve_InputArguments = 10325;
 
         /// <summary>
+        /// The identifier for the NonExclusiveRateOfChangeAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public const uint NonExclusiveRateOfChangeAlarmType_SilenceState_Id = 16830;
+
+        /// <summary>
         /// The identifier for the NonExclusiveRateOfChangeAlarmType_HighHighState_Id Variable.
         /// </summary>
         public const uint NonExclusiveRateOfChangeAlarmType_HighHighState_Id = 10329;
@@ -14508,6 +14303,131 @@ namespace Opc.Ua
         /// The identifier for the NonExclusiveRateOfChangeAlarmType_EngineeringUnits Variable.
         /// </summary>
         public const uint NonExclusiveRateOfChangeAlarmType_EngineeringUnits = 16858;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_EnabledState_Id Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_EnabledState_Id = 9778;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_Quality_SourceTimestamp Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_Quality_SourceTimestamp = 9787;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_LastSeverity_SourceTimestamp Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_LastSeverity_SourceTimestamp = 9789;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_Comment_SourceTimestamp Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_Comment_SourceTimestamp = 9791;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_AddComment_InputArguments Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_AddComment_InputArguments = 9796;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ConditionRefresh_InputArguments Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_ConditionRefresh_InputArguments = 9798;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ConditionRefresh2_InputArguments Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_ConditionRefresh2_InputArguments = 12999;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_AckedState_Id Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_AckedState_Id = 9800;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ConfirmedState_Id Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_ConfirmedState_Id = 9809;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_Acknowledge_InputArguments Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_Acknowledge_InputArguments = 9818;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_Confirm_InputArguments Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_Confirm_InputArguments = 9820;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ActiveState_Id Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_ActiveState_Id = 9822;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_SuppressedState_Id Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_SuppressedState_Id = 9831;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_OutOfServiceState_Id Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_OutOfServiceState_Id = 16780;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_CurrentState Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_ShelvingState_CurrentState = 9840;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_CurrentState_Id Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_ShelvingState_CurrentState_Id = 9841;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_LastTransition_Id Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_ShelvingState_LastTransition_Id = 9846;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_UnshelveTime Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_ShelvingState_UnshelveTime = 9850;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_ShelvingState_TimedShelve_InputArguments = 9875;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_SilenceState_Id = 16789;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_LimitState_CurrentState Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_LimitState_CurrentState = 9879;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_LimitState_CurrentState_Id Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_LimitState_CurrentState_Id = 9880;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_LimitState_LastTransition_Id Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_LimitState_LastTransition_Id = 9885;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_SetpointNode Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_SetpointNode = 9905;
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_BaseSetpointNode Variable.
+        /// </summary>
+        public const uint ExclusiveDeviationAlarmType_BaseSetpointNode = 16817;
 
         /// <summary>
         /// The identifier for the ExclusiveRateOfChangeAlarmType_EnabledState_Id Variable.
@@ -14580,11 +14500,6 @@ namespace Opc.Ua
         public const uint ExclusiveRateOfChangeAlarmType_OutOfServiceState_Id = 16862;
 
         /// <summary>
-        /// The identifier for the ExclusiveRateOfChangeAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public const uint ExclusiveRateOfChangeAlarmType_SilenceState_Id = 16871;
-
-        /// <summary>
         /// The identifier for the ExclusiveRateOfChangeAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public const uint ExclusiveRateOfChangeAlarmType_ShelvingState_CurrentState = 9699;
@@ -14608,6 +14523,11 @@ namespace Opc.Ua
         /// The identifier for the ExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public const uint ExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve_InputArguments = 9734;
+
+        /// <summary>
+        /// The identifier for the ExclusiveRateOfChangeAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public const uint ExclusiveRateOfChangeAlarmType_SilenceState_Id = 16871;
 
         /// <summary>
         /// The identifier for the ExclusiveRateOfChangeAlarmType_LimitState_CurrentState Variable.
@@ -14700,11 +14620,6 @@ namespace Opc.Ua
         public const uint DiscreteAlarmType_OutOfServiceState_Id = 16903;
 
         /// <summary>
-        /// The identifier for the DiscreteAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public const uint DiscreteAlarmType_SilenceState_Id = 16912;
-
-        /// <summary>
         /// The identifier for the DiscreteAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public const uint DiscreteAlarmType_ShelvingState_CurrentState = 10599;
@@ -14728,6 +14643,11 @@ namespace Opc.Ua
         /// The identifier for the DiscreteAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public const uint DiscreteAlarmType_ShelvingState_TimedShelve_InputArguments = 10634;
+
+        /// <summary>
+        /// The identifier for the DiscreteAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public const uint DiscreteAlarmType_SilenceState_Id = 16912;
 
         /// <summary>
         /// The identifier for the OffNormalAlarmType_EnabledState_Id Variable.
@@ -14800,11 +14720,6 @@ namespace Opc.Ua
         public const uint OffNormalAlarmType_OutOfServiceState_Id = 16939;
 
         /// <summary>
-        /// The identifier for the OffNormalAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public const uint OffNormalAlarmType_SilenceState_Id = 16948;
-
-        /// <summary>
         /// The identifier for the OffNormalAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public const uint OffNormalAlarmType_ShelvingState_CurrentState = 10713;
@@ -14828,6 +14743,11 @@ namespace Opc.Ua
         /// The identifier for the OffNormalAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public const uint OffNormalAlarmType_ShelvingState_TimedShelve_InputArguments = 10748;
+
+        /// <summary>
+        /// The identifier for the OffNormalAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public const uint OffNormalAlarmType_SilenceState_Id = 16948;
 
         /// <summary>
         /// The identifier for the OffNormalAlarmType_NormalState Variable.
@@ -14905,11 +14825,6 @@ namespace Opc.Ua
         public const uint SystemOffNormalAlarmType_OutOfServiceState_Id = 16975;
 
         /// <summary>
-        /// The identifier for the SystemOffNormalAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public const uint SystemOffNormalAlarmType_SilenceState_Id = 16984;
-
-        /// <summary>
         /// The identifier for the SystemOffNormalAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public const uint SystemOffNormalAlarmType_ShelvingState_CurrentState = 11832;
@@ -14933,6 +14848,11 @@ namespace Opc.Ua
         /// The identifier for the SystemOffNormalAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public const uint SystemOffNormalAlarmType_ShelvingState_TimedShelve_InputArguments = 11847;
+
+        /// <summary>
+        /// The identifier for the SystemOffNormalAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public const uint SystemOffNormalAlarmType_SilenceState_Id = 16984;
 
         /// <summary>
         /// The identifier for the TripAlarmType_EnabledState_Id Variable.
@@ -15005,11 +14925,6 @@ namespace Opc.Ua
         public const uint TripAlarmType_OutOfServiceState_Id = 17011;
 
         /// <summary>
-        /// The identifier for the TripAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public const uint TripAlarmType_SilenceState_Id = 17020;
-
-        /// <summary>
         /// The identifier for the TripAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public const uint TripAlarmType_ShelvingState_CurrentState = 10827;
@@ -15033,6 +14948,11 @@ namespace Opc.Ua
         /// The identifier for the TripAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public const uint TripAlarmType_ShelvingState_TimedShelve_InputArguments = 10862;
+
+        /// <summary>
+        /// The identifier for the TripAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public const uint TripAlarmType_SilenceState_Id = 17020;
 
         /// <summary>
         /// The identifier for the CertificateExpirationAlarmType_EnabledState_Id Variable.
@@ -15105,11 +15025,6 @@ namespace Opc.Ua
         public const uint CertificateExpirationAlarmType_OutOfServiceState_Id = 17047;
 
         /// <summary>
-        /// The identifier for the CertificateExpirationAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public const uint CertificateExpirationAlarmType_SilenceState_Id = 17056;
-
-        /// <summary>
         /// The identifier for the CertificateExpirationAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public const uint CertificateExpirationAlarmType_ShelvingState_CurrentState = 13306;
@@ -15133,6 +15048,11 @@ namespace Opc.Ua
         /// The identifier for the CertificateExpirationAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public const uint CertificateExpirationAlarmType_ShelvingState_TimedShelve_InputArguments = 13321;
+
+        /// <summary>
+        /// The identifier for the CertificateExpirationAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public const uint CertificateExpirationAlarmType_SilenceState_Id = 17056;
 
         /// <summary>
         /// The identifier for the CertificateExpirationAlarmType_ExpirationDate Variable.
@@ -15225,11 +15145,6 @@ namespace Opc.Ua
         public const uint DiscrepancyAlarmType_OutOfServiceState_Id = 17163;
 
         /// <summary>
-        /// The identifier for the DiscrepancyAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public const uint DiscrepancyAlarmType_SilenceState_Id = 17172;
-
-        /// <summary>
         /// The identifier for the DiscrepancyAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public const uint DiscrepancyAlarmType_ShelvingState_CurrentState = 17181;
@@ -15253,6 +15168,11 @@ namespace Opc.Ua
         /// The identifier for the DiscrepancyAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public const uint DiscrepancyAlarmType_ShelvingState_TimedShelve_InputArguments = 17196;
+
+        /// <summary>
+        /// The identifier for the DiscrepancyAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public const uint DiscrepancyAlarmType_SilenceState_Id = 17172;
 
         /// <summary>
         /// The identifier for the DiscrepancyAlarmType_TargetValueNode Variable.
@@ -15310,59 +15230,84 @@ namespace Opc.Ua
         public const uint AuditConditionShelvingEventType_ShelvingTime = 11855;
 
         /// <summary>
+        /// The identifier for the AudioVariableType_MIMEType Variable.
+        /// </summary>
+        public const uint AudioVariableType_MIMEType = 17987;
+
+        /// <summary>
+        /// The identifier for the AudioVariableType_MIMEListId Variable.
+        /// </summary>
+        public const uint AudioVariableType_MIMEListId = 17988;
+
+        /// <summary>
+        /// The identifier for the AudioVariableType_MIMEListAgencyId Variable.
+        /// </summary>
+        public const uint AudioVariableType_MIMEListAgencyId = 17989;
+
+        /// <summary>
+        /// The identifier for the AudioVariableType_MIMEListVersionId Variable.
+        /// </summary>
+        public const uint AudioVariableType_MIMEListVersionId = 17990;
+
+        /// <summary>
         /// The identifier for the AlarmRateVariableType_Rate Variable.
         /// </summary>
         public const uint AlarmRateVariableType_Rate = 17278;
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType_AlarmCount Variable.
+        /// The identifier for the AlarmMetricsType_AlarmCount Variable.
         /// </summary>
-        public const uint AlarmDiagnosticsSummaryType_AlarmCount = 17280;
+        public const uint AlarmMetricsType_AlarmCount = 17280;
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType_MaximumActiveState Variable.
+        /// The identifier for the AlarmMetricsType_StartTime Variable.
         /// </summary>
-        public const uint AlarmDiagnosticsSummaryType_MaximumActiveState = 17281;
+        public const uint AlarmMetricsType_StartTime = 17991;
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType_MaximumUnAck Variable.
+        /// The identifier for the AlarmMetricsType_MaximumActiveState Variable.
         /// </summary>
-        public const uint AlarmDiagnosticsSummaryType_MaximumUnAck = 17282;
+        public const uint AlarmMetricsType_MaximumActiveState = 17281;
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType_MaximumReAlarmCount Variable.
+        /// The identifier for the AlarmMetricsType_MaximumUnAck Variable.
         /// </summary>
-        public const uint AlarmDiagnosticsSummaryType_MaximumReAlarmCount = 17283;
+        public const uint AlarmMetricsType_MaximumUnAck = 17282;
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType_CurrentAlarmRate Variable.
+        /// The identifier for the AlarmMetricsType_CurrentAlarmRate Variable.
         /// </summary>
-        public const uint AlarmDiagnosticsSummaryType_CurrentAlarmRate = 17284;
+        public const uint AlarmMetricsType_CurrentAlarmRate = 17284;
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType_CurrentAlarmRate_Rate Variable.
+        /// The identifier for the AlarmMetricsType_CurrentAlarmRate_Rate Variable.
         /// </summary>
-        public const uint AlarmDiagnosticsSummaryType_CurrentAlarmRate_Rate = 17285;
+        public const uint AlarmMetricsType_CurrentAlarmRate_Rate = 17285;
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType_MaximumAlarmRate Variable.
+        /// The identifier for the AlarmMetricsType_MaximumAlarmRate Variable.
         /// </summary>
-        public const uint AlarmDiagnosticsSummaryType_MaximumAlarmRate = 17286;
+        public const uint AlarmMetricsType_MaximumAlarmRate = 17286;
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType_MaximumAlarmRate_Rate Variable.
+        /// The identifier for the AlarmMetricsType_MaximumAlarmRate_Rate Variable.
         /// </summary>
-        public const uint AlarmDiagnosticsSummaryType_MaximumAlarmRate_Rate = 17287;
+        public const uint AlarmMetricsType_MaximumAlarmRate_Rate = 17287;
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType_AverageAlarmRate Variable.
+        /// The identifier for the AlarmMetricsType_MaximumReAlarmCount Variable.
         /// </summary>
-        public const uint AlarmDiagnosticsSummaryType_AverageAlarmRate = 17288;
+        public const uint AlarmMetricsType_MaximumReAlarmCount = 17283;
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType_AverageAlarmRate_Rate Variable.
+        /// The identifier for the AlarmMetricsType_AverageAlarmRate Variable.
         /// </summary>
-        public const uint AlarmDiagnosticsSummaryType_AverageAlarmRate_Rate = 17289;
+        public const uint AlarmMetricsType_AverageAlarmRate = 17288;
+
+        /// <summary>
+        /// The identifier for the AlarmMetricsType_AverageAlarmRate_Rate Variable.
+        /// </summary>
+        public const uint AlarmMetricsType_AverageAlarmRate_Rate = 17289;
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType_CurrentState Variable.
@@ -17235,209 +17180,64 @@ namespace Opc.Ua
         public const uint ServerConfiguration_GetRejectedList_OutputArguments = 12778;
 
         /// <summary>
-        /// The identifier for the NetworkServiceFolderType_ServiceName_Placeholder_StartCredentialRequest_InputArguments Variable.
+        /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_Uri Variable.
         /// </summary>
-        public const uint NetworkServiceFolderType_ServiceName_Placeholder_StartCredentialRequest_InputArguments = 17725;
+        public const uint KeyCredentialManagement_ServiceName_Placeholder_Uri = 17994;
 
         /// <summary>
-        /// The identifier for the NetworkServiceFolderType_ServiceName_Placeholder_StartCredentialRequest_OutputArguments Variable.
+        /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_ProfileUri Variable.
         /// </summary>
-        public const uint NetworkServiceFolderType_ServiceName_Placeholder_StartCredentialRequest_OutputArguments = 17726;
+        public const uint KeyCredentialManagement_ServiceName_Placeholder_ProfileUri = 17995;
 
         /// <summary>
-        /// The identifier for the NetworkServiceFolderType_ServiceName_Placeholder_FinishCredentialRequest_InputArguments Variable.
+        /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_UpdateCredential_InputArguments Variable.
         /// </summary>
-        public const uint NetworkServiceFolderType_ServiceName_Placeholder_FinishCredentialRequest_InputArguments = 17728;
+        public const uint KeyCredentialManagement_ServiceName_Placeholder_UpdateCredential_InputArguments = 17999;
 
         /// <summary>
-        /// The identifier for the NetworkServiceFolderType_ServiceName_Placeholder_FinishCredentialRequest_OutputArguments Variable.
+        /// The identifier for the KeyCredentialConfigurationType_Uri Variable.
         /// </summary>
-        public const uint NetworkServiceFolderType_ServiceName_Placeholder_FinishCredentialRequest_OutputArguments = 17729;
+        public const uint KeyCredentialConfigurationType_Uri = 18002;
 
         /// <summary>
-        /// The identifier for the NetworkServiceFolderType_ServiceName_Placeholder_RevokeCredential_InputArguments Variable.
+        /// The identifier for the KeyCredentialConfigurationType_ProfileUri Variable.
         /// </summary>
-        public const uint NetworkServiceFolderType_ServiceName_Placeholder_RevokeCredential_InputArguments = 17731;
+        public const uint KeyCredentialConfigurationType_ProfileUri = 18003;
 
         /// <summary>
-        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_StartCredentialRequest_InputArguments Variable.
+        /// The identifier for the KeyCredentialConfigurationType_EndpointUrls Variable.
         /// </summary>
-        public const uint AuthorizationServices_ServiceName_Placeholder_StartCredentialRequest_InputArguments = 17735;
+        public const uint KeyCredentialConfigurationType_EndpointUrls = 18004;
 
         /// <summary>
-        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_StartCredentialRequest_OutputArguments Variable.
+        /// The identifier for the KeyCredentialConfigurationType_ServiceStatus Variable.
         /// </summary>
-        public const uint AuthorizationServices_ServiceName_Placeholder_StartCredentialRequest_OutputArguments = 17736;
+        public const uint KeyCredentialConfigurationType_ServiceStatus = 18005;
 
         /// <summary>
-        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_FinishCredentialRequest_InputArguments Variable.
+        /// The identifier for the KeyCredentialConfigurationType_UpdateCredential_InputArguments Variable.
         /// </summary>
-        public const uint AuthorizationServices_ServiceName_Placeholder_FinishCredentialRequest_InputArguments = 17738;
+        public const uint KeyCredentialConfigurationType_UpdateCredential_InputArguments = 18007;
 
         /// <summary>
-        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_FinishCredentialRequest_OutputArguments Variable.
+        /// The identifier for the KeyCredentialAuditEventType_ResourceUri Variable.
         /// </summary>
-        public const uint AuthorizationServices_ServiceName_Placeholder_FinishCredentialRequest_OutputArguments = 17739;
+        public const uint KeyCredentialAuditEventType_ResourceUri = 18028;
 
         /// <summary>
-        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_RevokeCredential_InputArguments Variable.
+        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_Uri Variable.
         /// </summary>
-        public const uint AuthorizationServices_ServiceName_Placeholder_RevokeCredential_InputArguments = 17741;
+        public const uint AuthorizationServices_ServiceName_Placeholder_Uri = 18065;
 
         /// <summary>
-        /// The identifier for the CredentialManagementType_StartCredentialRequest_InputArguments Variable.
+        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_ServiceCertificate Variable.
         /// </summary>
-        public const uint CredentialManagementType_StartCredentialRequest_InputArguments = 17744;
+        public const uint AuthorizationServices_ServiceName_Placeholder_ServiceCertificate = 18066;
 
         /// <summary>
-        /// The identifier for the CredentialManagementType_StartCredentialRequest_OutputArguments Variable.
+        /// The identifier for the AuthorizationServiceConfigurationType_Uri Variable.
         /// </summary>
-        public const uint CredentialManagementType_StartCredentialRequest_OutputArguments = 17745;
-
-        /// <summary>
-        /// The identifier for the CredentialManagementType_FinishCredentialRequest_InputArguments Variable.
-        /// </summary>
-        public const uint CredentialManagementType_FinishCredentialRequest_InputArguments = 17747;
-
-        /// <summary>
-        /// The identifier for the CredentialManagementType_FinishCredentialRequest_OutputArguments Variable.
-        /// </summary>
-        public const uint CredentialManagementType_FinishCredentialRequest_OutputArguments = 17748;
-
-        /// <summary>
-        /// The identifier for the CredentialManagementType_RevokeCredential_InputArguments Variable.
-        /// </summary>
-        public const uint CredentialManagementType_RevokeCredential_InputArguments = 17750;
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_ServiceUri Variable.
-        /// </summary>
-        public const uint NetworkServiceType_ServiceUri = 16094;
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_ServiceProfileUri Variable.
-        /// </summary>
-        public const uint NetworkServiceType_ServiceProfileUri = 17759;
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_ServiceEndpointUrls Variable.
-        /// </summary>
-        public const uint NetworkServiceType_ServiceEndpointUrls = 17760;
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_CredentialManagement_StartCredentialRequest_InputArguments Variable.
-        /// </summary>
-        public const uint NetworkServiceType_CredentialManagement_StartCredentialRequest_InputArguments = 17763;
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_CredentialManagement_StartCredentialRequest_OutputArguments Variable.
-        /// </summary>
-        public const uint NetworkServiceType_CredentialManagement_StartCredentialRequest_OutputArguments = 17764;
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_CredentialManagement_FinishCredentialRequest_InputArguments Variable.
-        /// </summary>
-        public const uint NetworkServiceType_CredentialManagement_FinishCredentialRequest_InputArguments = 17766;
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_CredentialManagement_FinishCredentialRequest_OutputArguments Variable.
-        /// </summary>
-        public const uint NetworkServiceType_CredentialManagement_FinishCredentialRequest_OutputArguments = 17767;
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_CredentialManagement_RevokeCredential_InputArguments Variable.
-        /// </summary>
-        public const uint NetworkServiceType_CredentialManagement_RevokeCredential_InputArguments = 17769;
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_CredentialManagement_StartCredentialRequest_InputArguments Variable.
-        /// </summary>
-        public const uint AuthorizationServiceType_CredentialManagement_StartCredentialRequest_InputArguments = 17776;
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_CredentialManagement_StartCredentialRequest_OutputArguments Variable.
-        /// </summary>
-        public const uint AuthorizationServiceType_CredentialManagement_StartCredentialRequest_OutputArguments = 17777;
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_CredentialManagement_FinishCredentialRequest_InputArguments Variable.
-        /// </summary>
-        public const uint AuthorizationServiceType_CredentialManagement_FinishCredentialRequest_InputArguments = 17779;
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_CredentialManagement_FinishCredentialRequest_OutputArguments Variable.
-        /// </summary>
-        public const uint AuthorizationServiceType_CredentialManagement_FinishCredentialRequest_OutputArguments = 17780;
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_CredentialManagement_RevokeCredential_InputArguments Variable.
-        /// </summary>
-        public const uint AuthorizationServiceType_CredentialManagement_RevokeCredential_InputArguments = 17782;
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_UserTokenPolicies Variable.
-        /// </summary>
-        public const uint AuthorizationServiceType_UserTokenPolicies = 17783;
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_RequestAccessToken_InputArguments Variable.
-        /// </summary>
-        public const uint AuthorizationServiceType_RequestAccessToken_InputArguments = 17785;
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_RequestAccessToken_OutputArguments Variable.
-        /// </summary>
-        public const uint AuthorizationServiceType_RequestAccessToken_OutputArguments = 17786;
-
-        /// <summary>
-        /// The identifier for the CredentialRequestedAuditEventType_ServiceUri Variable.
-        /// </summary>
-        public const uint CredentialRequestedAuditEventType_ServiceUri = 17807;
-
-        /// <summary>
-        /// The identifier for the CredentialDeliveredAuditEventType_ServiceUri Variable.
-        /// </summary>
-        public const uint CredentialDeliveredAuditEventType_ServiceUri = 17825;
-
-        /// <summary>
-        /// The identifier for the CredentialRevokedAuditEventType_ServiceUri Variable.
-        /// </summary>
-        public const uint CredentialRevokedAuditEventType_ServiceUri = 17843;
-
-        /// <summary>
-        /// The identifier for the NetworkServiceConfigurationType_ServiceUri Variable.
-        /// </summary>
-        public const uint NetworkServiceConfigurationType_ServiceUri = 17845;
-
-        /// <summary>
-        /// The identifier for the NetworkServiceConfigurationType_ServiceProfileUri Variable.
-        /// </summary>
-        public const uint NetworkServiceConfigurationType_ServiceProfileUri = 17846;
-
-        /// <summary>
-        /// The identifier for the NetworkServiceConfigurationType_ServiceEndpointUrls Variable.
-        /// </summary>
-        public const uint NetworkServiceConfigurationType_ServiceEndpointUrls = 17847;
-
-        /// <summary>
-        /// The identifier for the NetworkServiceConfigurationType_Enabled Variable.
-        /// </summary>
-        public const uint NetworkServiceConfigurationType_Enabled = 17848;
-
-        /// <summary>
-        /// The identifier for the NetworkServiceConfigurationType_ServiceStatus Variable.
-        /// </summary>
-        public const uint NetworkServiceConfigurationType_ServiceStatus = 17849;
-
-        /// <summary>
-        /// The identifier for the NetworkServiceConfigurationType_UpdateCredential_InputArguments Variable.
-        /// </summary>
-        public const uint NetworkServiceConfigurationType_UpdateCredential_InputArguments = 17851;
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceConfigurationType_UpdateCredential_InputArguments Variable.
-        /// </summary>
-        public const uint AuthorizationServiceConfigurationType_UpdateCredential_InputArguments = 17859;
+        public const uint AuthorizationServiceConfigurationType_Uri = 18067;
 
         /// <summary>
         /// The identifier for the AuthorizationServiceConfigurationType_ServiceCertificate Variable.
@@ -20030,6 +19830,11 @@ namespace Opc.Ua
         public const uint ConditionVariableType = 9002;
 
         /// <summary>
+        /// The identifier for the AudioVariableType VariableType.
+        /// </summary>
+        public const uint AudioVariableType = 17986;
+
+        /// <summary>
         /// The identifier for the AlarmRateVariableType VariableType.
         /// </summary>
         public const uint AlarmRateVariableType = 17277;
@@ -22135,6 +21940,11 @@ namespace Opc.Ua
         public static readonly NodeId AcknowledgeableConditionType_Confirm = new NodeId(Opc.Ua.Methods.AcknowledgeableConditionType_Confirm);
 
         /// <summary>
+        /// The identifier for the AlarmConditionType_ShelvingState_TimedShelve Method.
+        /// </summary>
+        public static readonly NodeId AlarmConditionType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.AlarmConditionType_ShelvingState_TimedShelve);
+
+        /// <summary>
         /// The identifier for the AlarmConditionType_ShelvingState_Unshelve Method.
         /// </summary>
         public static readonly NodeId AlarmConditionType_ShelvingState_Unshelve = new NodeId(Opc.Ua.Methods.AlarmConditionType_ShelvingState_Unshelve);
@@ -22143,11 +21953,6 @@ namespace Opc.Ua
         /// The identifier for the AlarmConditionType_ShelvingState_OneShotShelve Method.
         /// </summary>
         public static readonly NodeId AlarmConditionType_ShelvingState_OneShotShelve = new NodeId(Opc.Ua.Methods.AlarmConditionType_ShelvingState_OneShotShelve);
-
-        /// <summary>
-        /// The identifier for the AlarmConditionType_ShelvingState_TimedShelve Method.
-        /// </summary>
-        public static readonly NodeId AlarmConditionType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.AlarmConditionType_ShelvingState_TimedShelve);
 
         /// <summary>
         /// The identifier for the AlarmConditionType_Silence Method.
@@ -22160,9 +21965,19 @@ namespace Opc.Ua
         public static readonly NodeId AlarmConditionType_Suppress = new NodeId(Opc.Ua.Methods.AlarmConditionType_Suppress);
 
         /// <summary>
-        /// The identifier for the AlarmConditionType_OutOfService Method.
+        /// The identifier for the AlarmConditionType_UnSuppress Method.
         /// </summary>
-        public static readonly NodeId AlarmConditionType_OutOfService = new NodeId(Opc.Ua.Methods.AlarmConditionType_OutOfService);
+        public static readonly NodeId AlarmConditionType_UnSuppress = new NodeId(Opc.Ua.Methods.AlarmConditionType_UnSuppress);
+
+        /// <summary>
+        /// The identifier for the AlarmConditionType_RemoveFromService Method.
+        /// </summary>
+        public static readonly NodeId AlarmConditionType_RemoveFromService = new NodeId(Opc.Ua.Methods.AlarmConditionType_RemoveFromService);
+
+        /// <summary>
+        /// The identifier for the AlarmConditionType_PlaceInService Method.
+        /// </summary>
+        public static readonly NodeId AlarmConditionType_PlaceInService = new NodeId(Opc.Ua.Methods.AlarmConditionType_PlaceInService);
 
         /// <summary>
         /// The identifier for the AlarmGroupType_AlarmConditionInstance_Placeholder_Disable Method.
@@ -22185,6 +22000,11 @@ namespace Opc.Ua
         public static readonly NodeId AlarmGroupType_AlarmConditionInstance_Placeholder_Acknowledge = new NodeId(Opc.Ua.Methods.AlarmGroupType_AlarmConditionInstance_Placeholder_Acknowledge);
 
         /// <summary>
+        /// The identifier for the AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_TimedShelve Method.
+        /// </summary>
+        public static readonly NodeId AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_TimedShelve);
+
+        /// <summary>
         /// The identifier for the AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_Unshelve Method.
         /// </summary>
         public static readonly NodeId AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_Unshelve = new NodeId(Opc.Ua.Methods.AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_Unshelve);
@@ -22195,9 +22015,9 @@ namespace Opc.Ua
         public static readonly NodeId AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_OneShotShelve = new NodeId(Opc.Ua.Methods.AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_OneShotShelve);
 
         /// <summary>
-        /// The identifier for the AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_TimedShelve Method.
+        /// The identifier for the ShelvedStateMachineType_TimedShelve Method.
         /// </summary>
-        public static readonly NodeId AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_TimedShelve);
+        public static readonly NodeId ShelvedStateMachineType_TimedShelve = new NodeId(Opc.Ua.Methods.ShelvedStateMachineType_TimedShelve);
 
         /// <summary>
         /// The identifier for the ShelvedStateMachineType_Unshelve Method.
@@ -22210,9 +22030,9 @@ namespace Opc.Ua
         public static readonly NodeId ShelvedStateMachineType_OneShotShelve = new NodeId(Opc.Ua.Methods.ShelvedStateMachineType_OneShotShelve);
 
         /// <summary>
-        /// The identifier for the ShelvedStateMachineType_TimedShelve Method.
+        /// The identifier for the LimitAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public static readonly NodeId ShelvedStateMachineType_TimedShelve = new NodeId(Opc.Ua.Methods.ShelvedStateMachineType_TimedShelve);
+        public static readonly NodeId LimitAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.LimitAlarmType_ShelvingState_TimedShelve);
 
         /// <summary>
         /// The identifier for the LimitAlarmType_ShelvingState_Unshelve Method.
@@ -22225,9 +22045,9 @@ namespace Opc.Ua
         public static readonly NodeId LimitAlarmType_ShelvingState_OneShotShelve = new NodeId(Opc.Ua.Methods.LimitAlarmType_ShelvingState_OneShotShelve);
 
         /// <summary>
-        /// The identifier for the LimitAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the ExclusiveLimitAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public static readonly NodeId LimitAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.LimitAlarmType_ShelvingState_TimedShelve);
+        public static readonly NodeId ExclusiveLimitAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.ExclusiveLimitAlarmType_ShelvingState_TimedShelve);
 
         /// <summary>
         /// The identifier for the ExclusiveLimitAlarmType_ShelvingState_Unshelve Method.
@@ -22240,9 +22060,9 @@ namespace Opc.Ua
         public static readonly NodeId ExclusiveLimitAlarmType_ShelvingState_OneShotShelve = new NodeId(Opc.Ua.Methods.ExclusiveLimitAlarmType_ShelvingState_OneShotShelve);
 
         /// <summary>
-        /// The identifier for the ExclusiveLimitAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the NonExclusiveLimitAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public static readonly NodeId ExclusiveLimitAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.ExclusiveLimitAlarmType_ShelvingState_TimedShelve);
+        public static readonly NodeId NonExclusiveLimitAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.NonExclusiveLimitAlarmType_ShelvingState_TimedShelve);
 
         /// <summary>
         /// The identifier for the NonExclusiveLimitAlarmType_ShelvingState_Unshelve Method.
@@ -22255,9 +22075,9 @@ namespace Opc.Ua
         public static readonly NodeId NonExclusiveLimitAlarmType_ShelvingState_OneShotShelve = new NodeId(Opc.Ua.Methods.NonExclusiveLimitAlarmType_ShelvingState_OneShotShelve);
 
         /// <summary>
-        /// The identifier for the NonExclusiveLimitAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the NonExclusiveLevelAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public static readonly NodeId NonExclusiveLimitAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.NonExclusiveLimitAlarmType_ShelvingState_TimedShelve);
+        public static readonly NodeId NonExclusiveLevelAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.NonExclusiveLevelAlarmType_ShelvingState_TimedShelve);
 
         /// <summary>
         /// The identifier for the NonExclusiveLevelAlarmType_ShelvingState_Unshelve Method.
@@ -22270,9 +22090,9 @@ namespace Opc.Ua
         public static readonly NodeId NonExclusiveLevelAlarmType_ShelvingState_OneShotShelve = new NodeId(Opc.Ua.Methods.NonExclusiveLevelAlarmType_ShelvingState_OneShotShelve);
 
         /// <summary>
-        /// The identifier for the NonExclusiveLevelAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the ExclusiveLevelAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public static readonly NodeId NonExclusiveLevelAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.NonExclusiveLevelAlarmType_ShelvingState_TimedShelve);
+        public static readonly NodeId ExclusiveLevelAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.ExclusiveLevelAlarmType_ShelvingState_TimedShelve);
 
         /// <summary>
         /// The identifier for the ExclusiveLevelAlarmType_ShelvingState_Unshelve Method.
@@ -22285,9 +22105,9 @@ namespace Opc.Ua
         public static readonly NodeId ExclusiveLevelAlarmType_ShelvingState_OneShotShelve = new NodeId(Opc.Ua.Methods.ExclusiveLevelAlarmType_ShelvingState_OneShotShelve);
 
         /// <summary>
-        /// The identifier for the ExclusiveLevelAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the NonExclusiveDeviationAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public static readonly NodeId ExclusiveLevelAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.ExclusiveLevelAlarmType_ShelvingState_TimedShelve);
+        public static readonly NodeId NonExclusiveDeviationAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.NonExclusiveDeviationAlarmType_ShelvingState_TimedShelve);
 
         /// <summary>
         /// The identifier for the NonExclusiveDeviationAlarmType_ShelvingState_Unshelve Method.
@@ -22300,24 +22120,9 @@ namespace Opc.Ua
         public static readonly NodeId NonExclusiveDeviationAlarmType_ShelvingState_OneShotShelve = new NodeId(Opc.Ua.Methods.NonExclusiveDeviationAlarmType_ShelvingState_OneShotShelve);
 
         /// <summary>
-        /// The identifier for the NonExclusiveDeviationAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the NonExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public static readonly NodeId NonExclusiveDeviationAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.NonExclusiveDeviationAlarmType_ShelvingState_TimedShelve);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_Unshelve Method.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_ShelvingState_Unshelve = new NodeId(Opc.Ua.Methods.ExclusiveDeviationAlarmType_ShelvingState_Unshelve);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_OneShotShelve Method.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_ShelvingState_OneShotShelve = new NodeId(Opc.Ua.Methods.ExclusiveDeviationAlarmType_ShelvingState_OneShotShelve);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_TimedShelve Method.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.ExclusiveDeviationAlarmType_ShelvingState_TimedShelve);
+        public static readonly NodeId NonExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.NonExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve);
 
         /// <summary>
         /// The identifier for the NonExclusiveRateOfChangeAlarmType_ShelvingState_Unshelve Method.
@@ -22330,9 +22135,24 @@ namespace Opc.Ua
         public static readonly NodeId NonExclusiveRateOfChangeAlarmType_ShelvingState_OneShotShelve = new NodeId(Opc.Ua.Methods.NonExclusiveRateOfChangeAlarmType_ShelvingState_OneShotShelve);
 
         /// <summary>
-        /// The identifier for the NonExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public static readonly NodeId NonExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.NonExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve);
+        public static readonly NodeId ExclusiveDeviationAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.ExclusiveDeviationAlarmType_ShelvingState_TimedShelve);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_Unshelve Method.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_ShelvingState_Unshelve = new NodeId(Opc.Ua.Methods.ExclusiveDeviationAlarmType_ShelvingState_Unshelve);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_OneShotShelve Method.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_ShelvingState_OneShotShelve = new NodeId(Opc.Ua.Methods.ExclusiveDeviationAlarmType_ShelvingState_OneShotShelve);
+
+        /// <summary>
+        /// The identifier for the ExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve Method.
+        /// </summary>
+        public static readonly NodeId ExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.ExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve);
 
         /// <summary>
         /// The identifier for the ExclusiveRateOfChangeAlarmType_ShelvingState_Unshelve Method.
@@ -22345,9 +22165,9 @@ namespace Opc.Ua
         public static readonly NodeId ExclusiveRateOfChangeAlarmType_ShelvingState_OneShotShelve = new NodeId(Opc.Ua.Methods.ExclusiveRateOfChangeAlarmType_ShelvingState_OneShotShelve);
 
         /// <summary>
-        /// The identifier for the ExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the DiscreteAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public static readonly NodeId ExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.ExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve);
+        public static readonly NodeId DiscreteAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.DiscreteAlarmType_ShelvingState_TimedShelve);
 
         /// <summary>
         /// The identifier for the DiscreteAlarmType_ShelvingState_Unshelve Method.
@@ -22360,9 +22180,9 @@ namespace Opc.Ua
         public static readonly NodeId DiscreteAlarmType_ShelvingState_OneShotShelve = new NodeId(Opc.Ua.Methods.DiscreteAlarmType_ShelvingState_OneShotShelve);
 
         /// <summary>
-        /// The identifier for the DiscreteAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the OffNormalAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public static readonly NodeId DiscreteAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.DiscreteAlarmType_ShelvingState_TimedShelve);
+        public static readonly NodeId OffNormalAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.OffNormalAlarmType_ShelvingState_TimedShelve);
 
         /// <summary>
         /// The identifier for the OffNormalAlarmType_ShelvingState_Unshelve Method.
@@ -22375,9 +22195,9 @@ namespace Opc.Ua
         public static readonly NodeId OffNormalAlarmType_ShelvingState_OneShotShelve = new NodeId(Opc.Ua.Methods.OffNormalAlarmType_ShelvingState_OneShotShelve);
 
         /// <summary>
-        /// The identifier for the OffNormalAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the SystemOffNormalAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public static readonly NodeId OffNormalAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.OffNormalAlarmType_ShelvingState_TimedShelve);
+        public static readonly NodeId SystemOffNormalAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.SystemOffNormalAlarmType_ShelvingState_TimedShelve);
 
         /// <summary>
         /// The identifier for the SystemOffNormalAlarmType_ShelvingState_Unshelve Method.
@@ -22390,9 +22210,9 @@ namespace Opc.Ua
         public static readonly NodeId SystemOffNormalAlarmType_ShelvingState_OneShotShelve = new NodeId(Opc.Ua.Methods.SystemOffNormalAlarmType_ShelvingState_OneShotShelve);
 
         /// <summary>
-        /// The identifier for the SystemOffNormalAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the TripAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public static readonly NodeId SystemOffNormalAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.SystemOffNormalAlarmType_ShelvingState_TimedShelve);
+        public static readonly NodeId TripAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.TripAlarmType_ShelvingState_TimedShelve);
 
         /// <summary>
         /// The identifier for the TripAlarmType_ShelvingState_Unshelve Method.
@@ -22405,9 +22225,9 @@ namespace Opc.Ua
         public static readonly NodeId TripAlarmType_ShelvingState_OneShotShelve = new NodeId(Opc.Ua.Methods.TripAlarmType_ShelvingState_OneShotShelve);
 
         /// <summary>
-        /// The identifier for the TripAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the CertificateExpirationAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public static readonly NodeId TripAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.TripAlarmType_ShelvingState_TimedShelve);
+        public static readonly NodeId CertificateExpirationAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.CertificateExpirationAlarmType_ShelvingState_TimedShelve);
 
         /// <summary>
         /// The identifier for the CertificateExpirationAlarmType_ShelvingState_Unshelve Method.
@@ -22420,9 +22240,9 @@ namespace Opc.Ua
         public static readonly NodeId CertificateExpirationAlarmType_ShelvingState_OneShotShelve = new NodeId(Opc.Ua.Methods.CertificateExpirationAlarmType_ShelvingState_OneShotShelve);
 
         /// <summary>
-        /// The identifier for the CertificateExpirationAlarmType_ShelvingState_TimedShelve Method.
+        /// The identifier for the DiscrepancyAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public static readonly NodeId CertificateExpirationAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.CertificateExpirationAlarmType_ShelvingState_TimedShelve);
+        public static readonly NodeId DiscrepancyAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.DiscrepancyAlarmType_ShelvingState_TimedShelve);
 
         /// <summary>
         /// The identifier for the DiscrepancyAlarmType_ShelvingState_Unshelve Method.
@@ -22433,11 +22253,6 @@ namespace Opc.Ua
         /// The identifier for the DiscrepancyAlarmType_ShelvingState_OneShotShelve Method.
         /// </summary>
         public static readonly NodeId DiscrepancyAlarmType_ShelvingState_OneShotShelve = new NodeId(Opc.Ua.Methods.DiscrepancyAlarmType_ShelvingState_OneShotShelve);
-
-        /// <summary>
-        /// The identifier for the DiscrepancyAlarmType_ShelvingState_TimedShelve Method.
-        /// </summary>
-        public static readonly NodeId DiscrepancyAlarmType_ShelvingState_TimedShelve = new NodeId(Opc.Ua.Methods.DiscrepancyAlarmType_ShelvingState_TimedShelve);
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType_Start Method.
@@ -22955,69 +22770,14 @@ namespace Opc.Ua
         public static readonly NodeId ServerConfiguration_GetRejectedList = new NodeId(Opc.Ua.Methods.ServerConfiguration_GetRejectedList);
 
         /// <summary>
-        /// The identifier for the NetworkServiceFolderType_ServiceName_Placeholder_StartCredentialRequest Method.
+        /// The identifier for the KeyCredentialConfigurationType_UpdateCredential Method.
         /// </summary>
-        public static readonly NodeId NetworkServiceFolderType_ServiceName_Placeholder_StartCredentialRequest = new NodeId(Opc.Ua.Methods.NetworkServiceFolderType_ServiceName_Placeholder_StartCredentialRequest);
+        public static readonly NodeId KeyCredentialConfigurationType_UpdateCredential = new NodeId(Opc.Ua.Methods.KeyCredentialConfigurationType_UpdateCredential);
 
         /// <summary>
-        /// The identifier for the NetworkServiceFolderType_ServiceName_Placeholder_FinishCredentialRequest Method.
+        /// The identifier for the KeyCredentialConfigurationType_DeleteCredential Method.
         /// </summary>
-        public static readonly NodeId NetworkServiceFolderType_ServiceName_Placeholder_FinishCredentialRequest = new NodeId(Opc.Ua.Methods.NetworkServiceFolderType_ServiceName_Placeholder_FinishCredentialRequest);
-
-        /// <summary>
-        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_StartCredentialRequest Method.
-        /// </summary>
-        public static readonly NodeId AuthorizationServices_ServiceName_Placeholder_StartCredentialRequest = new NodeId(Opc.Ua.Methods.AuthorizationServices_ServiceName_Placeholder_StartCredentialRequest);
-
-        /// <summary>
-        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_FinishCredentialRequest Method.
-        /// </summary>
-        public static readonly NodeId AuthorizationServices_ServiceName_Placeholder_FinishCredentialRequest = new NodeId(Opc.Ua.Methods.AuthorizationServices_ServiceName_Placeholder_FinishCredentialRequest);
-
-        /// <summary>
-        /// The identifier for the CredentialManagementType_StartCredentialRequest Method.
-        /// </summary>
-        public static readonly NodeId CredentialManagementType_StartCredentialRequest = new NodeId(Opc.Ua.Methods.CredentialManagementType_StartCredentialRequest);
-
-        /// <summary>
-        /// The identifier for the CredentialManagementType_FinishCredentialRequest Method.
-        /// </summary>
-        public static readonly NodeId CredentialManagementType_FinishCredentialRequest = new NodeId(Opc.Ua.Methods.CredentialManagementType_FinishCredentialRequest);
-
-        /// <summary>
-        /// The identifier for the CredentialManagementType_RevokeCredential Method.
-        /// </summary>
-        public static readonly NodeId CredentialManagementType_RevokeCredential = new NodeId(Opc.Ua.Methods.CredentialManagementType_RevokeCredential);
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_CredentialManagement_StartCredentialRequest Method.
-        /// </summary>
-        public static readonly NodeId NetworkServiceType_CredentialManagement_StartCredentialRequest = new NodeId(Opc.Ua.Methods.NetworkServiceType_CredentialManagement_StartCredentialRequest);
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_CredentialManagement_FinishCredentialRequest Method.
-        /// </summary>
-        public static readonly NodeId NetworkServiceType_CredentialManagement_FinishCredentialRequest = new NodeId(Opc.Ua.Methods.NetworkServiceType_CredentialManagement_FinishCredentialRequest);
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_CredentialManagement_StartCredentialRequest Method.
-        /// </summary>
-        public static readonly NodeId AuthorizationServiceType_CredentialManagement_StartCredentialRequest = new NodeId(Opc.Ua.Methods.AuthorizationServiceType_CredentialManagement_StartCredentialRequest);
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_CredentialManagement_FinishCredentialRequest Method.
-        /// </summary>
-        public static readonly NodeId AuthorizationServiceType_CredentialManagement_FinishCredentialRequest = new NodeId(Opc.Ua.Methods.AuthorizationServiceType_CredentialManagement_FinishCredentialRequest);
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_RequestAccessToken Method.
-        /// </summary>
-        public static readonly NodeId AuthorizationServiceType_RequestAccessToken = new NodeId(Opc.Ua.Methods.AuthorizationServiceType_RequestAccessToken);
-
-        /// <summary>
-        /// The identifier for the NetworkServiceConfigurationType_UpdateCredential Method.
-        /// </summary>
-        public static readonly NodeId NetworkServiceConfigurationType_UpdateCredential = new NodeId(Opc.Ua.Methods.NetworkServiceConfigurationType_UpdateCredential);
+        public static readonly NodeId KeyCredentialConfigurationType_DeleteCredential = new NodeId(Opc.Ua.Methods.KeyCredentialConfigurationType_DeleteCredential);
 
         /// <summary>
         /// The identifier for the PubSubKeyServiceType_GetSecurityKeys Method.
@@ -24030,24 +23790,14 @@ namespace Opc.Ua
         public static readonly NodeId ServerConfiguration_CertificateGroups_DefaultUserTokenGroup_TrustList = new NodeId(Opc.Ua.Objects.ServerConfiguration_CertificateGroups_DefaultUserTokenGroup_TrustList);
 
         /// <summary>
-        /// The identifier for the NetworkServiceFolderType_ServiceName_Placeholder Object.
+        /// The identifier for the KeyCredentialManagement Object.
         /// </summary>
-        public static readonly NodeId NetworkServiceFolderType_ServiceName_Placeholder = new NodeId(Opc.Ua.Objects.NetworkServiceFolderType_ServiceName_Placeholder);
+        public static readonly NodeId KeyCredentialManagement = new NodeId(Opc.Ua.Objects.KeyCredentialManagement);
 
         /// <summary>
         /// The identifier for the AuthorizationServices Object.
         /// </summary>
         public static readonly NodeId AuthorizationServices = new NodeId(Opc.Ua.Objects.AuthorizationServices);
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_CredentialManagement Object.
-        /// </summary>
-        public static readonly NodeId NetworkServiceType_CredentialManagement = new NodeId(Opc.Ua.Objects.NetworkServiceType_CredentialManagement);
-
-        /// <summary>
-        /// The identifier for the NetworkServices Object.
-        /// </summary>
-        public static readonly NodeId NetworkServices = new NodeId(Opc.Ua.Objects.NetworkServices);
 
         /// <summary>
         /// The identifier for the AggregateFunction_Interpolative Object.
@@ -27330,14 +27080,14 @@ namespace Opc.Ua
         public static readonly NodeId NonExclusiveDeviationAlarmType = new NodeId(Opc.Ua.ObjectTypes.NonExclusiveDeviationAlarmType);
 
         /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType ObjectType.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType = new NodeId(Opc.Ua.ObjectTypes.ExclusiveDeviationAlarmType);
-
-        /// <summary>
         /// The identifier for the NonExclusiveRateOfChangeAlarmType ObjectType.
         /// </summary>
         public static readonly NodeId NonExclusiveRateOfChangeAlarmType = new NodeId(Opc.Ua.ObjectTypes.NonExclusiveRateOfChangeAlarmType);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType ObjectType.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType = new NodeId(Opc.Ua.ObjectTypes.ExclusiveDeviationAlarmType);
 
         /// <summary>
         /// The identifier for the ExclusiveRateOfChangeAlarmType ObjectType.
@@ -27400,19 +27150,19 @@ namespace Opc.Ua
         public static readonly NodeId SafetyConditionClassType = new NodeId(Opc.Ua.ObjectTypes.SafetyConditionClassType);
 
         /// <summary>
-        /// The identifier for the BaseConditionClassModifierType ObjectType.
+        /// The identifier for the HighlyManagedAlarmConditionClassType ObjectType.
         /// </summary>
-        public static readonly NodeId BaseConditionClassModifierType = new NodeId(Opc.Ua.ObjectTypes.BaseConditionClassModifierType);
+        public static readonly NodeId HighlyManagedAlarmConditionClassType = new NodeId(Opc.Ua.ObjectTypes.HighlyManagedAlarmConditionClassType);
 
         /// <summary>
-        /// The identifier for the TrainingConditionClassModifierType ObjectType.
+        /// The identifier for the TrainingConditionClassType ObjectType.
         /// </summary>
-        public static readonly NodeId TrainingConditionClassModifierType = new NodeId(Opc.Ua.ObjectTypes.TrainingConditionClassModifierType);
+        public static readonly NodeId TrainingConditionClassType = new NodeId(Opc.Ua.ObjectTypes.TrainingConditionClassType);
 
         /// <summary>
-        /// The identifier for the TestingConditionClassModifierType ObjectType.
+        /// The identifier for the TestingConditionClassType ObjectType.
         /// </summary>
-        public static readonly NodeId TestingConditionClassModifierType = new NodeId(Opc.Ua.ObjectTypes.TestingConditionClassModifierType);
+        public static readonly NodeId TestingConditionClassType = new NodeId(Opc.Ua.ObjectTypes.TestingConditionClassType);
 
         /// <summary>
         /// The identifier for the AuditConditionEventType ObjectType.
@@ -27450,9 +27200,9 @@ namespace Opc.Ua
         public static readonly NodeId AuditConditionShelvingEventType = new NodeId(Opc.Ua.ObjectTypes.AuditConditionShelvingEventType);
 
         /// <summary>
-        /// The identifier for the AuditConditionSuppressionEventType ObjectType.
+        /// The identifier for the AuditConditionSuppressEventType ObjectType.
         /// </summary>
-        public static readonly NodeId AuditConditionSuppressionEventType = new NodeId(Opc.Ua.ObjectTypes.AuditConditionSuppressionEventType);
+        public static readonly NodeId AuditConditionSuppressEventType = new NodeId(Opc.Ua.ObjectTypes.AuditConditionSuppressEventType);
 
         /// <summary>
         /// The identifier for the AuditConditionSilenceEventType ObjectType.
@@ -27480,9 +27230,9 @@ namespace Opc.Ua
         public static readonly NodeId RefreshRequiredEventType = new NodeId(Opc.Ua.ObjectTypes.RefreshRequiredEventType);
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType ObjectType.
+        /// The identifier for the AlarmMetricsType ObjectType.
         /// </summary>
-        public static readonly NodeId AlarmDiagnosticsSummaryType = new NodeId(Opc.Ua.ObjectTypes.AlarmDiagnosticsSummaryType);
+        public static readonly NodeId AlarmMetricsType = new NodeId(Opc.Ua.ObjectTypes.AlarmMetricsType);
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType ObjectType.
@@ -27600,44 +27350,24 @@ namespace Opc.Ua
         public static readonly NodeId CertificateUpdatedAuditEventType = new NodeId(Opc.Ua.ObjectTypes.CertificateUpdatedAuditEventType);
 
         /// <summary>
-        /// The identifier for the NetworkServiceFolderType ObjectType.
+        /// The identifier for the KeyCredentialConfigurationType ObjectType.
         /// </summary>
-        public static readonly NodeId NetworkServiceFolderType = new NodeId(Opc.Ua.ObjectTypes.NetworkServiceFolderType);
+        public static readonly NodeId KeyCredentialConfigurationType = new NodeId(Opc.Ua.ObjectTypes.KeyCredentialConfigurationType);
 
         /// <summary>
-        /// The identifier for the CredentialManagementType ObjectType.
+        /// The identifier for the KeyCredentialAuditEventType ObjectType.
         /// </summary>
-        public static readonly NodeId CredentialManagementType = new NodeId(Opc.Ua.ObjectTypes.CredentialManagementType);
+        public static readonly NodeId KeyCredentialAuditEventType = new NodeId(Opc.Ua.ObjectTypes.KeyCredentialAuditEventType);
 
         /// <summary>
-        /// The identifier for the NetworkServiceType ObjectType.
+        /// The identifier for the KeyCredentialUpdatedAuditEventType ObjectType.
         /// </summary>
-        public static readonly NodeId NetworkServiceType = new NodeId(Opc.Ua.ObjectTypes.NetworkServiceType);
+        public static readonly NodeId KeyCredentialUpdatedAuditEventType = new NodeId(Opc.Ua.ObjectTypes.KeyCredentialUpdatedAuditEventType);
 
         /// <summary>
-        /// The identifier for the AuthorizationServiceType ObjectType.
+        /// The identifier for the KeyCredentialDeletedAuditEventType ObjectType.
         /// </summary>
-        public static readonly NodeId AuthorizationServiceType = new NodeId(Opc.Ua.ObjectTypes.AuthorizationServiceType);
-
-        /// <summary>
-        /// The identifier for the CredentialRequestedAuditEventType ObjectType.
-        /// </summary>
-        public static readonly NodeId CredentialRequestedAuditEventType = new NodeId(Opc.Ua.ObjectTypes.CredentialRequestedAuditEventType);
-
-        /// <summary>
-        /// The identifier for the CredentialDeliveredAuditEventType ObjectType.
-        /// </summary>
-        public static readonly NodeId CredentialDeliveredAuditEventType = new NodeId(Opc.Ua.ObjectTypes.CredentialDeliveredAuditEventType);
-
-        /// <summary>
-        /// The identifier for the CredentialRevokedAuditEventType ObjectType.
-        /// </summary>
-        public static readonly NodeId CredentialRevokedAuditEventType = new NodeId(Opc.Ua.ObjectTypes.CredentialRevokedAuditEventType);
-
-        /// <summary>
-        /// The identifier for the NetworkServiceConfigurationType ObjectType.
-        /// </summary>
-        public static readonly NodeId NetworkServiceConfigurationType = new NodeId(Opc.Ua.ObjectTypes.NetworkServiceConfigurationType);
+        public static readonly NodeId KeyCredentialDeletedAuditEventType = new NodeId(Opc.Ua.ObjectTypes.KeyCredentialDeletedAuditEventType);
 
         /// <summary>
         /// The identifier for the AuthorizationServiceConfigurationType ObjectType.
@@ -27983,6 +27713,21 @@ namespace Opc.Ua
         /// The identifier for the HasEffectDisable ReferenceType.
         /// </summary>
         public static readonly NodeId HasEffectDisable = new NodeId(Opc.Ua.ReferenceTypes.HasEffectDisable);
+
+        /// <summary>
+        /// The identifier for the HasEffectEnable ReferenceType.
+        /// </summary>
+        public static readonly NodeId HasEffectEnable = new NodeId(Opc.Ua.ReferenceTypes.HasEffectEnable);
+
+        /// <summary>
+        /// The identifier for the HasEffectSuppressed ReferenceType.
+        /// </summary>
+        public static readonly NodeId HasEffectSuppressed = new NodeId(Opc.Ua.ReferenceTypes.HasEffectSuppressed);
+
+        /// <summary>
+        /// The identifier for the HasEffectUnSuppressed ReferenceType.
+        /// </summary>
+        public static readonly NodeId HasEffectUnSuppressed = new NodeId(Opc.Ua.ReferenceTypes.HasEffectUnSuppressed);
 
         /// <summary>
         /// The identifier for the HasPubSubConnection ReferenceType.
@@ -32520,14 +32265,14 @@ namespace Opc.Ua
         public static readonly NodeId ConditionType_ConditionClassName = new NodeId(Opc.Ua.Variables.ConditionType_ConditionClassName);
 
         /// <summary>
-        /// The identifier for the ConditionType_ConditionClassModifier Variable.
+        /// The identifier for the ConditionType_ConditionSubClass Variable.
         /// </summary>
-        public static readonly NodeId ConditionType_ConditionClassModifier = new NodeId(Opc.Ua.Variables.ConditionType_ConditionClassModifier);
+        public static readonly NodeId ConditionType_ConditionSubClass = new NodeId(Opc.Ua.Variables.ConditionType_ConditionSubClass);
 
         /// <summary>
-        /// The identifier for the ConditionType_ConditionClassModifierName Variable.
+        /// The identifier for the ConditionType_ConditionSubClassName Variable.
         /// </summary>
-        public static readonly NodeId ConditionType_ConditionClassModifierName = new NodeId(Opc.Ua.Variables.ConditionType_ConditionClassModifierName);
+        public static readonly NodeId ConditionType_ConditionSubClassName = new NodeId(Opc.Ua.Variables.ConditionType_ConditionSubClassName);
 
         /// <summary>
         /// The identifier for the ConditionType_ConditionName Variable.
@@ -32980,31 +32725,6 @@ namespace Opc.Ua
         public static readonly NodeId AlarmConditionType_OutOfServiceState_FalseState = new NodeId(Opc.Ua.Variables.AlarmConditionType_OutOfServiceState_FalseState);
 
         /// <summary>
-        /// The identifier for the AlarmConditionType_SilenceState Variable.
-        /// </summary>
-        public static readonly NodeId AlarmConditionType_SilenceState = new NodeId(Opc.Ua.Variables.AlarmConditionType_SilenceState);
-
-        /// <summary>
-        /// The identifier for the AlarmConditionType_SilenceState_Id Variable.
-        /// </summary>
-        public static readonly NodeId AlarmConditionType_SilenceState_Id = new NodeId(Opc.Ua.Variables.AlarmConditionType_SilenceState_Id);
-
-        /// <summary>
-        /// The identifier for the AlarmConditionType_SilenceState_TransitionTime Variable.
-        /// </summary>
-        public static readonly NodeId AlarmConditionType_SilenceState_TransitionTime = new NodeId(Opc.Ua.Variables.AlarmConditionType_SilenceState_TransitionTime);
-
-        /// <summary>
-        /// The identifier for the AlarmConditionType_SilenceState_TrueState Variable.
-        /// </summary>
-        public static readonly NodeId AlarmConditionType_SilenceState_TrueState = new NodeId(Opc.Ua.Variables.AlarmConditionType_SilenceState_TrueState);
-
-        /// <summary>
-        /// The identifier for the AlarmConditionType_SilenceState_FalseState Variable.
-        /// </summary>
-        public static readonly NodeId AlarmConditionType_SilenceState_FalseState = new NodeId(Opc.Ua.Variables.AlarmConditionType_SilenceState_FalseState);
-
-        /// <summary>
         /// The identifier for the AlarmConditionType_ShelvingState_CurrentState Variable.
         /// </summary>
         public static readonly NodeId AlarmConditionType_ShelvingState_CurrentState = new NodeId(Opc.Ua.Variables.AlarmConditionType_ShelvingState_CurrentState);
@@ -33060,24 +32780,29 @@ namespace Opc.Ua
         public static readonly NodeId AlarmConditionType_AudibleSound = new NodeId(Opc.Ua.Variables.AlarmConditionType_AudibleSound);
 
         /// <summary>
-        /// The identifier for the AlarmConditionType_AudibleSoundMIMEType Variable.
+        /// The identifier for the AlarmConditionType_SilenceState Variable.
         /// </summary>
-        public static readonly NodeId AlarmConditionType_AudibleSoundMIMEType = new NodeId(Opc.Ua.Variables.AlarmConditionType_AudibleSoundMIMEType);
+        public static readonly NodeId AlarmConditionType_SilenceState = new NodeId(Opc.Ua.Variables.AlarmConditionType_SilenceState);
 
         /// <summary>
-        /// The identifier for the AlarmConditionType_AudibleSoundMIMEListId Variable.
+        /// The identifier for the AlarmConditionType_SilenceState_Id Variable.
         /// </summary>
-        public static readonly NodeId AlarmConditionType_AudibleSoundMIMEListId = new NodeId(Opc.Ua.Variables.AlarmConditionType_AudibleSoundMIMEListId);
+        public static readonly NodeId AlarmConditionType_SilenceState_Id = new NodeId(Opc.Ua.Variables.AlarmConditionType_SilenceState_Id);
 
         /// <summary>
-        /// The identifier for the AlarmConditionType_AudibleSoundMIMEListAgencyId Variable.
+        /// The identifier for the AlarmConditionType_SilenceState_TransitionTime Variable.
         /// </summary>
-        public static readonly NodeId AlarmConditionType_AudibleSoundMIMEListAgencyId = new NodeId(Opc.Ua.Variables.AlarmConditionType_AudibleSoundMIMEListAgencyId);
+        public static readonly NodeId AlarmConditionType_SilenceState_TransitionTime = new NodeId(Opc.Ua.Variables.AlarmConditionType_SilenceState_TransitionTime);
 
         /// <summary>
-        /// The identifier for the AlarmConditionType_AudibleSoundMIMEListVersionId Variable.
+        /// The identifier for the AlarmConditionType_SilenceState_TrueState Variable.
         /// </summary>
-        public static readonly NodeId AlarmConditionType_AudibleSoundMIMEListVersionId = new NodeId(Opc.Ua.Variables.AlarmConditionType_AudibleSoundMIMEListVersionId);
+        public static readonly NodeId AlarmConditionType_SilenceState_TrueState = new NodeId(Opc.Ua.Variables.AlarmConditionType_SilenceState_TrueState);
+
+        /// <summary>
+        /// The identifier for the AlarmConditionType_SilenceState_FalseState Variable.
+        /// </summary>
+        public static readonly NodeId AlarmConditionType_SilenceState_FalseState = new NodeId(Opc.Ua.Variables.AlarmConditionType_SilenceState_FalseState);
 
         /// <summary>
         /// The identifier for the AlarmConditionType_OnDelay Variable.
@@ -33275,11 +33000,6 @@ namespace Opc.Ua
         public static readonly NodeId AlarmGroupType_AlarmConditionInstance_Placeholder_OutOfServiceState_Id = new NodeId(Opc.Ua.Variables.AlarmGroupType_AlarmConditionInstance_Placeholder_OutOfServiceState_Id);
 
         /// <summary>
-        /// The identifier for the AlarmGroupType_AlarmConditionInstance_Placeholder_SilenceState_Id Variable.
-        /// </summary>
-        public static readonly NodeId AlarmGroupType_AlarmConditionInstance_Placeholder_SilenceState_Id = new NodeId(Opc.Ua.Variables.AlarmGroupType_AlarmConditionInstance_Placeholder_SilenceState_Id);
-
-        /// <summary>
         /// The identifier for the AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_CurrentState Variable.
         /// </summary>
         public static readonly NodeId AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_CurrentState = new NodeId(Opc.Ua.Variables.AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_CurrentState);
@@ -33308,6 +33028,11 @@ namespace Opc.Ua
         /// The identifier for the AlarmGroupType_AlarmConditionInstance_Placeholder_SuppressedOrShelved Variable.
         /// </summary>
         public static readonly NodeId AlarmGroupType_AlarmConditionInstance_Placeholder_SuppressedOrShelved = new NodeId(Opc.Ua.Variables.AlarmGroupType_AlarmConditionInstance_Placeholder_SuppressedOrShelved);
+
+        /// <summary>
+        /// The identifier for the AlarmGroupType_AlarmConditionInstance_Placeholder_SilenceState_Id Variable.
+        /// </summary>
+        public static readonly NodeId AlarmGroupType_AlarmConditionInstance_Placeholder_SilenceState_Id = new NodeId(Opc.Ua.Variables.AlarmGroupType_AlarmConditionInstance_Placeholder_SilenceState_Id);
 
         /// <summary>
         /// The identifier for the ShelvedStateMachineType_CurrentState_Id Variable.
@@ -33445,11 +33170,6 @@ namespace Opc.Ua
         public static readonly NodeId LimitAlarmType_OutOfServiceState_Id = new NodeId(Opc.Ua.Variables.LimitAlarmType_OutOfServiceState_Id);
 
         /// <summary>
-        /// The identifier for the LimitAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public static readonly NodeId LimitAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.LimitAlarmType_SilenceState_Id);
-
-        /// <summary>
         /// The identifier for the LimitAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public static readonly NodeId LimitAlarmType_ShelvingState_CurrentState = new NodeId(Opc.Ua.Variables.LimitAlarmType_ShelvingState_CurrentState);
@@ -33473,6 +33193,11 @@ namespace Opc.Ua
         /// The identifier for the LimitAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public static readonly NodeId LimitAlarmType_ShelvingState_TimedShelve_InputArguments = new NodeId(Opc.Ua.Variables.LimitAlarmType_ShelvingState_TimedShelve_InputArguments);
+
+        /// <summary>
+        /// The identifier for the LimitAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public static readonly NodeId LimitAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.LimitAlarmType_SilenceState_Id);
 
         /// <summary>
         /// The identifier for the LimitAlarmType_HighHighLimit Variable.
@@ -33640,11 +33365,6 @@ namespace Opc.Ua
         public static readonly NodeId ExclusiveLimitAlarmType_OutOfServiceState_Id = new NodeId(Opc.Ua.Variables.ExclusiveLimitAlarmType_OutOfServiceState_Id);
 
         /// <summary>
-        /// The identifier for the ExclusiveLimitAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveLimitAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.ExclusiveLimitAlarmType_SilenceState_Id);
-
-        /// <summary>
         /// The identifier for the ExclusiveLimitAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public static readonly NodeId ExclusiveLimitAlarmType_ShelvingState_CurrentState = new NodeId(Opc.Ua.Variables.ExclusiveLimitAlarmType_ShelvingState_CurrentState);
@@ -33668,6 +33388,11 @@ namespace Opc.Ua
         /// The identifier for the ExclusiveLimitAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public static readonly NodeId ExclusiveLimitAlarmType_ShelvingState_TimedShelve_InputArguments = new NodeId(Opc.Ua.Variables.ExclusiveLimitAlarmType_ShelvingState_TimedShelve_InputArguments);
+
+        /// <summary>
+        /// The identifier for the ExclusiveLimitAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveLimitAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.ExclusiveLimitAlarmType_SilenceState_Id);
 
         /// <summary>
         /// The identifier for the ExclusiveLimitAlarmType_LimitState_CurrentState Variable.
@@ -33770,11 +33495,6 @@ namespace Opc.Ua
         public static readonly NodeId NonExclusiveLimitAlarmType_OutOfServiceState_Id = new NodeId(Opc.Ua.Variables.NonExclusiveLimitAlarmType_OutOfServiceState_Id);
 
         /// <summary>
-        /// The identifier for the NonExclusiveLimitAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public static readonly NodeId NonExclusiveLimitAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.NonExclusiveLimitAlarmType_SilenceState_Id);
-
-        /// <summary>
         /// The identifier for the NonExclusiveLimitAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public static readonly NodeId NonExclusiveLimitAlarmType_ShelvingState_CurrentState = new NodeId(Opc.Ua.Variables.NonExclusiveLimitAlarmType_ShelvingState_CurrentState);
@@ -33798,6 +33518,11 @@ namespace Opc.Ua
         /// The identifier for the NonExclusiveLimitAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public static readonly NodeId NonExclusiveLimitAlarmType_ShelvingState_TimedShelve_InputArguments = new NodeId(Opc.Ua.Variables.NonExclusiveLimitAlarmType_ShelvingState_TimedShelve_InputArguments);
+
+        /// <summary>
+        /// The identifier for the NonExclusiveLimitAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public static readonly NodeId NonExclusiveLimitAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.NonExclusiveLimitAlarmType_SilenceState_Id);
 
         /// <summary>
         /// The identifier for the NonExclusiveLimitAlarmType_HighHighState Variable.
@@ -33970,11 +33695,6 @@ namespace Opc.Ua
         public static readonly NodeId NonExclusiveLevelAlarmType_OutOfServiceState_Id = new NodeId(Opc.Ua.Variables.NonExclusiveLevelAlarmType_OutOfServiceState_Id);
 
         /// <summary>
-        /// The identifier for the NonExclusiveLevelAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public static readonly NodeId NonExclusiveLevelAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.NonExclusiveLevelAlarmType_SilenceState_Id);
-
-        /// <summary>
         /// The identifier for the NonExclusiveLevelAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public static readonly NodeId NonExclusiveLevelAlarmType_ShelvingState_CurrentState = new NodeId(Opc.Ua.Variables.NonExclusiveLevelAlarmType_ShelvingState_CurrentState);
@@ -33998,6 +33718,11 @@ namespace Opc.Ua
         /// The identifier for the NonExclusiveLevelAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public static readonly NodeId NonExclusiveLevelAlarmType_ShelvingState_TimedShelve_InputArguments = new NodeId(Opc.Ua.Variables.NonExclusiveLevelAlarmType_ShelvingState_TimedShelve_InputArguments);
+
+        /// <summary>
+        /// The identifier for the NonExclusiveLevelAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public static readonly NodeId NonExclusiveLevelAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.NonExclusiveLevelAlarmType_SilenceState_Id);
 
         /// <summary>
         /// The identifier for the NonExclusiveLevelAlarmType_HighHighState_Id Variable.
@@ -34090,11 +33815,6 @@ namespace Opc.Ua
         public static readonly NodeId ExclusiveLevelAlarmType_OutOfServiceState_Id = new NodeId(Opc.Ua.Variables.ExclusiveLevelAlarmType_OutOfServiceState_Id);
 
         /// <summary>
-        /// The identifier for the ExclusiveLevelAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveLevelAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.ExclusiveLevelAlarmType_SilenceState_Id);
-
-        /// <summary>
         /// The identifier for the ExclusiveLevelAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public static readonly NodeId ExclusiveLevelAlarmType_ShelvingState_CurrentState = new NodeId(Opc.Ua.Variables.ExclusiveLevelAlarmType_ShelvingState_CurrentState);
@@ -34118,6 +33838,11 @@ namespace Opc.Ua
         /// The identifier for the ExclusiveLevelAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public static readonly NodeId ExclusiveLevelAlarmType_ShelvingState_TimedShelve_InputArguments = new NodeId(Opc.Ua.Variables.ExclusiveLevelAlarmType_ShelvingState_TimedShelve_InputArguments);
+
+        /// <summary>
+        /// The identifier for the ExclusiveLevelAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveLevelAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.ExclusiveLevelAlarmType_SilenceState_Id);
 
         /// <summary>
         /// The identifier for the ExclusiveLevelAlarmType_LimitState_CurrentState Variable.
@@ -34205,11 +33930,6 @@ namespace Opc.Ua
         public static readonly NodeId NonExclusiveDeviationAlarmType_OutOfServiceState_Id = new NodeId(Opc.Ua.Variables.NonExclusiveDeviationAlarmType_OutOfServiceState_Id);
 
         /// <summary>
-        /// The identifier for the NonExclusiveDeviationAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public static readonly NodeId NonExclusiveDeviationAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.NonExclusiveDeviationAlarmType_SilenceState_Id);
-
-        /// <summary>
         /// The identifier for the NonExclusiveDeviationAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public static readonly NodeId NonExclusiveDeviationAlarmType_ShelvingState_CurrentState = new NodeId(Opc.Ua.Variables.NonExclusiveDeviationAlarmType_ShelvingState_CurrentState);
@@ -34233,6 +33953,11 @@ namespace Opc.Ua
         /// The identifier for the NonExclusiveDeviationAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public static readonly NodeId NonExclusiveDeviationAlarmType_ShelvingState_TimedShelve_InputArguments = new NodeId(Opc.Ua.Variables.NonExclusiveDeviationAlarmType_ShelvingState_TimedShelve_InputArguments);
+
+        /// <summary>
+        /// The identifier for the NonExclusiveDeviationAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public static readonly NodeId NonExclusiveDeviationAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.NonExclusiveDeviationAlarmType_SilenceState_Id);
 
         /// <summary>
         /// The identifier for the NonExclusiveDeviationAlarmType_HighHighState_Id Variable.
@@ -34263,131 +33988,6 @@ namespace Opc.Ua
         /// The identifier for the NonExclusiveDeviationAlarmType_BaseSetpointNode Variable.
         /// </summary>
         public static readonly NodeId NonExclusiveDeviationAlarmType_BaseSetpointNode = new NodeId(Opc.Ua.Variables.NonExclusiveDeviationAlarmType_BaseSetpointNode);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_EnabledState_Id Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_EnabledState_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_EnabledState_Id);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_Quality_SourceTimestamp Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_Quality_SourceTimestamp = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_Quality_SourceTimestamp);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_LastSeverity_SourceTimestamp Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_LastSeverity_SourceTimestamp = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_LastSeverity_SourceTimestamp);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_Comment_SourceTimestamp Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_Comment_SourceTimestamp = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_Comment_SourceTimestamp);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_AddComment_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_AddComment_InputArguments = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_AddComment_InputArguments);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ConditionRefresh_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_ConditionRefresh_InputArguments = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_ConditionRefresh_InputArguments);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ConditionRefresh2_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_ConditionRefresh2_InputArguments = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_ConditionRefresh2_InputArguments);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_AckedState_Id Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_AckedState_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_AckedState_Id);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ConfirmedState_Id Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_ConfirmedState_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_ConfirmedState_Id);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_Acknowledge_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_Acknowledge_InputArguments = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_Acknowledge_InputArguments);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_Confirm_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_Confirm_InputArguments = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_Confirm_InputArguments);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ActiveState_Id Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_ActiveState_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_ActiveState_Id);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_SuppressedState_Id Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_SuppressedState_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_SuppressedState_Id);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_OutOfServiceState_Id Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_OutOfServiceState_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_OutOfServiceState_Id);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_SilenceState_Id);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_CurrentState Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_ShelvingState_CurrentState = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_ShelvingState_CurrentState);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_CurrentState_Id Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_ShelvingState_CurrentState_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_ShelvingState_CurrentState_Id);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_LastTransition_Id Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_ShelvingState_LastTransition_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_ShelvingState_LastTransition_Id);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_UnshelveTime Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_ShelvingState_UnshelveTime = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_ShelvingState_UnshelveTime);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_ShelvingState_TimedShelve_InputArguments = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_ShelvingState_TimedShelve_InputArguments);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_LimitState_CurrentState Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_LimitState_CurrentState = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_LimitState_CurrentState);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_LimitState_CurrentState_Id Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_LimitState_CurrentState_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_LimitState_CurrentState_Id);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_LimitState_LastTransition_Id Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_LimitState_LastTransition_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_LimitState_LastTransition_Id);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_SetpointNode Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_SetpointNode = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_SetpointNode);
-
-        /// <summary>
-        /// The identifier for the ExclusiveDeviationAlarmType_BaseSetpointNode Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveDeviationAlarmType_BaseSetpointNode = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_BaseSetpointNode);
 
         /// <summary>
         /// The identifier for the NonExclusiveRateOfChangeAlarmType_EnabledState_Id Variable.
@@ -34460,11 +34060,6 @@ namespace Opc.Ua
         public static readonly NodeId NonExclusiveRateOfChangeAlarmType_OutOfServiceState_Id = new NodeId(Opc.Ua.Variables.NonExclusiveRateOfChangeAlarmType_OutOfServiceState_Id);
 
         /// <summary>
-        /// The identifier for the NonExclusiveRateOfChangeAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public static readonly NodeId NonExclusiveRateOfChangeAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.NonExclusiveRateOfChangeAlarmType_SilenceState_Id);
-
-        /// <summary>
         /// The identifier for the NonExclusiveRateOfChangeAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public static readonly NodeId NonExclusiveRateOfChangeAlarmType_ShelvingState_CurrentState = new NodeId(Opc.Ua.Variables.NonExclusiveRateOfChangeAlarmType_ShelvingState_CurrentState);
@@ -34490,6 +34085,11 @@ namespace Opc.Ua
         public static readonly NodeId NonExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve_InputArguments = new NodeId(Opc.Ua.Variables.NonExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve_InputArguments);
 
         /// <summary>
+        /// The identifier for the NonExclusiveRateOfChangeAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public static readonly NodeId NonExclusiveRateOfChangeAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.NonExclusiveRateOfChangeAlarmType_SilenceState_Id);
+
+        /// <summary>
         /// The identifier for the NonExclusiveRateOfChangeAlarmType_HighHighState_Id Variable.
         /// </summary>
         public static readonly NodeId NonExclusiveRateOfChangeAlarmType_HighHighState_Id = new NodeId(Opc.Ua.Variables.NonExclusiveRateOfChangeAlarmType_HighHighState_Id);
@@ -34513,6 +34113,131 @@ namespace Opc.Ua
         /// The identifier for the NonExclusiveRateOfChangeAlarmType_EngineeringUnits Variable.
         /// </summary>
         public static readonly NodeId NonExclusiveRateOfChangeAlarmType_EngineeringUnits = new NodeId(Opc.Ua.Variables.NonExclusiveRateOfChangeAlarmType_EngineeringUnits);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_EnabledState_Id Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_EnabledState_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_EnabledState_Id);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_Quality_SourceTimestamp Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_Quality_SourceTimestamp = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_Quality_SourceTimestamp);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_LastSeverity_SourceTimestamp Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_LastSeverity_SourceTimestamp = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_LastSeverity_SourceTimestamp);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_Comment_SourceTimestamp Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_Comment_SourceTimestamp = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_Comment_SourceTimestamp);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_AddComment_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_AddComment_InputArguments = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_AddComment_InputArguments);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ConditionRefresh_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_ConditionRefresh_InputArguments = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_ConditionRefresh_InputArguments);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ConditionRefresh2_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_ConditionRefresh2_InputArguments = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_ConditionRefresh2_InputArguments);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_AckedState_Id Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_AckedState_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_AckedState_Id);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ConfirmedState_Id Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_ConfirmedState_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_ConfirmedState_Id);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_Acknowledge_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_Acknowledge_InputArguments = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_Acknowledge_InputArguments);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_Confirm_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_Confirm_InputArguments = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_Confirm_InputArguments);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ActiveState_Id Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_ActiveState_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_ActiveState_Id);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_SuppressedState_Id Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_SuppressedState_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_SuppressedState_Id);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_OutOfServiceState_Id Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_OutOfServiceState_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_OutOfServiceState_Id);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_CurrentState Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_ShelvingState_CurrentState = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_ShelvingState_CurrentState);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_CurrentState_Id Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_ShelvingState_CurrentState_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_ShelvingState_CurrentState_Id);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_LastTransition_Id Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_ShelvingState_LastTransition_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_ShelvingState_LastTransition_Id);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_UnshelveTime Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_ShelvingState_UnshelveTime = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_ShelvingState_UnshelveTime);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_ShelvingState_TimedShelve_InputArguments = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_ShelvingState_TimedShelve_InputArguments);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_SilenceState_Id);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_LimitState_CurrentState Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_LimitState_CurrentState = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_LimitState_CurrentState);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_LimitState_CurrentState_Id Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_LimitState_CurrentState_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_LimitState_CurrentState_Id);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_LimitState_LastTransition_Id Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_LimitState_LastTransition_Id = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_LimitState_LastTransition_Id);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_SetpointNode Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_SetpointNode = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_SetpointNode);
+
+        /// <summary>
+        /// The identifier for the ExclusiveDeviationAlarmType_BaseSetpointNode Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveDeviationAlarmType_BaseSetpointNode = new NodeId(Opc.Ua.Variables.ExclusiveDeviationAlarmType_BaseSetpointNode);
 
         /// <summary>
         /// The identifier for the ExclusiveRateOfChangeAlarmType_EnabledState_Id Variable.
@@ -34585,11 +34310,6 @@ namespace Opc.Ua
         public static readonly NodeId ExclusiveRateOfChangeAlarmType_OutOfServiceState_Id = new NodeId(Opc.Ua.Variables.ExclusiveRateOfChangeAlarmType_OutOfServiceState_Id);
 
         /// <summary>
-        /// The identifier for the ExclusiveRateOfChangeAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveRateOfChangeAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.ExclusiveRateOfChangeAlarmType_SilenceState_Id);
-
-        /// <summary>
         /// The identifier for the ExclusiveRateOfChangeAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public static readonly NodeId ExclusiveRateOfChangeAlarmType_ShelvingState_CurrentState = new NodeId(Opc.Ua.Variables.ExclusiveRateOfChangeAlarmType_ShelvingState_CurrentState);
@@ -34613,6 +34333,11 @@ namespace Opc.Ua
         /// The identifier for the ExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public static readonly NodeId ExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve_InputArguments = new NodeId(Opc.Ua.Variables.ExclusiveRateOfChangeAlarmType_ShelvingState_TimedShelve_InputArguments);
+
+        /// <summary>
+        /// The identifier for the ExclusiveRateOfChangeAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveRateOfChangeAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.ExclusiveRateOfChangeAlarmType_SilenceState_Id);
 
         /// <summary>
         /// The identifier for the ExclusiveRateOfChangeAlarmType_LimitState_CurrentState Variable.
@@ -34705,11 +34430,6 @@ namespace Opc.Ua
         public static readonly NodeId DiscreteAlarmType_OutOfServiceState_Id = new NodeId(Opc.Ua.Variables.DiscreteAlarmType_OutOfServiceState_Id);
 
         /// <summary>
-        /// The identifier for the DiscreteAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public static readonly NodeId DiscreteAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.DiscreteAlarmType_SilenceState_Id);
-
-        /// <summary>
         /// The identifier for the DiscreteAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public static readonly NodeId DiscreteAlarmType_ShelvingState_CurrentState = new NodeId(Opc.Ua.Variables.DiscreteAlarmType_ShelvingState_CurrentState);
@@ -34733,6 +34453,11 @@ namespace Opc.Ua
         /// The identifier for the DiscreteAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public static readonly NodeId DiscreteAlarmType_ShelvingState_TimedShelve_InputArguments = new NodeId(Opc.Ua.Variables.DiscreteAlarmType_ShelvingState_TimedShelve_InputArguments);
+
+        /// <summary>
+        /// The identifier for the DiscreteAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public static readonly NodeId DiscreteAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.DiscreteAlarmType_SilenceState_Id);
 
         /// <summary>
         /// The identifier for the OffNormalAlarmType_EnabledState_Id Variable.
@@ -34805,11 +34530,6 @@ namespace Opc.Ua
         public static readonly NodeId OffNormalAlarmType_OutOfServiceState_Id = new NodeId(Opc.Ua.Variables.OffNormalAlarmType_OutOfServiceState_Id);
 
         /// <summary>
-        /// The identifier for the OffNormalAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public static readonly NodeId OffNormalAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.OffNormalAlarmType_SilenceState_Id);
-
-        /// <summary>
         /// The identifier for the OffNormalAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public static readonly NodeId OffNormalAlarmType_ShelvingState_CurrentState = new NodeId(Opc.Ua.Variables.OffNormalAlarmType_ShelvingState_CurrentState);
@@ -34833,6 +34553,11 @@ namespace Opc.Ua
         /// The identifier for the OffNormalAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public static readonly NodeId OffNormalAlarmType_ShelvingState_TimedShelve_InputArguments = new NodeId(Opc.Ua.Variables.OffNormalAlarmType_ShelvingState_TimedShelve_InputArguments);
+
+        /// <summary>
+        /// The identifier for the OffNormalAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public static readonly NodeId OffNormalAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.OffNormalAlarmType_SilenceState_Id);
 
         /// <summary>
         /// The identifier for the OffNormalAlarmType_NormalState Variable.
@@ -34910,11 +34635,6 @@ namespace Opc.Ua
         public static readonly NodeId SystemOffNormalAlarmType_OutOfServiceState_Id = new NodeId(Opc.Ua.Variables.SystemOffNormalAlarmType_OutOfServiceState_Id);
 
         /// <summary>
-        /// The identifier for the SystemOffNormalAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public static readonly NodeId SystemOffNormalAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.SystemOffNormalAlarmType_SilenceState_Id);
-
-        /// <summary>
         /// The identifier for the SystemOffNormalAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public static readonly NodeId SystemOffNormalAlarmType_ShelvingState_CurrentState = new NodeId(Opc.Ua.Variables.SystemOffNormalAlarmType_ShelvingState_CurrentState);
@@ -34938,6 +34658,11 @@ namespace Opc.Ua
         /// The identifier for the SystemOffNormalAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public static readonly NodeId SystemOffNormalAlarmType_ShelvingState_TimedShelve_InputArguments = new NodeId(Opc.Ua.Variables.SystemOffNormalAlarmType_ShelvingState_TimedShelve_InputArguments);
+
+        /// <summary>
+        /// The identifier for the SystemOffNormalAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public static readonly NodeId SystemOffNormalAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.SystemOffNormalAlarmType_SilenceState_Id);
 
         /// <summary>
         /// The identifier for the TripAlarmType_EnabledState_Id Variable.
@@ -35010,11 +34735,6 @@ namespace Opc.Ua
         public static readonly NodeId TripAlarmType_OutOfServiceState_Id = new NodeId(Opc.Ua.Variables.TripAlarmType_OutOfServiceState_Id);
 
         /// <summary>
-        /// The identifier for the TripAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public static readonly NodeId TripAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.TripAlarmType_SilenceState_Id);
-
-        /// <summary>
         /// The identifier for the TripAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public static readonly NodeId TripAlarmType_ShelvingState_CurrentState = new NodeId(Opc.Ua.Variables.TripAlarmType_ShelvingState_CurrentState);
@@ -35038,6 +34758,11 @@ namespace Opc.Ua
         /// The identifier for the TripAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public static readonly NodeId TripAlarmType_ShelvingState_TimedShelve_InputArguments = new NodeId(Opc.Ua.Variables.TripAlarmType_ShelvingState_TimedShelve_InputArguments);
+
+        /// <summary>
+        /// The identifier for the TripAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public static readonly NodeId TripAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.TripAlarmType_SilenceState_Id);
 
         /// <summary>
         /// The identifier for the CertificateExpirationAlarmType_EnabledState_Id Variable.
@@ -35110,11 +34835,6 @@ namespace Opc.Ua
         public static readonly NodeId CertificateExpirationAlarmType_OutOfServiceState_Id = new NodeId(Opc.Ua.Variables.CertificateExpirationAlarmType_OutOfServiceState_Id);
 
         /// <summary>
-        /// The identifier for the CertificateExpirationAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public static readonly NodeId CertificateExpirationAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.CertificateExpirationAlarmType_SilenceState_Id);
-
-        /// <summary>
         /// The identifier for the CertificateExpirationAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public static readonly NodeId CertificateExpirationAlarmType_ShelvingState_CurrentState = new NodeId(Opc.Ua.Variables.CertificateExpirationAlarmType_ShelvingState_CurrentState);
@@ -35138,6 +34858,11 @@ namespace Opc.Ua
         /// The identifier for the CertificateExpirationAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public static readonly NodeId CertificateExpirationAlarmType_ShelvingState_TimedShelve_InputArguments = new NodeId(Opc.Ua.Variables.CertificateExpirationAlarmType_ShelvingState_TimedShelve_InputArguments);
+
+        /// <summary>
+        /// The identifier for the CertificateExpirationAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public static readonly NodeId CertificateExpirationAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.CertificateExpirationAlarmType_SilenceState_Id);
 
         /// <summary>
         /// The identifier for the CertificateExpirationAlarmType_ExpirationDate Variable.
@@ -35230,11 +34955,6 @@ namespace Opc.Ua
         public static readonly NodeId DiscrepancyAlarmType_OutOfServiceState_Id = new NodeId(Opc.Ua.Variables.DiscrepancyAlarmType_OutOfServiceState_Id);
 
         /// <summary>
-        /// The identifier for the DiscrepancyAlarmType_SilenceState_Id Variable.
-        /// </summary>
-        public static readonly NodeId DiscrepancyAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.DiscrepancyAlarmType_SilenceState_Id);
-
-        /// <summary>
         /// The identifier for the DiscrepancyAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
         public static readonly NodeId DiscrepancyAlarmType_ShelvingState_CurrentState = new NodeId(Opc.Ua.Variables.DiscrepancyAlarmType_ShelvingState_CurrentState);
@@ -35258,6 +34978,11 @@ namespace Opc.Ua
         /// The identifier for the DiscrepancyAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
         public static readonly NodeId DiscrepancyAlarmType_ShelvingState_TimedShelve_InputArguments = new NodeId(Opc.Ua.Variables.DiscrepancyAlarmType_ShelvingState_TimedShelve_InputArguments);
+
+        /// <summary>
+        /// The identifier for the DiscrepancyAlarmType_SilenceState_Id Variable.
+        /// </summary>
+        public static readonly NodeId DiscrepancyAlarmType_SilenceState_Id = new NodeId(Opc.Ua.Variables.DiscrepancyAlarmType_SilenceState_Id);
 
         /// <summary>
         /// The identifier for the DiscrepancyAlarmType_TargetValueNode Variable.
@@ -35315,59 +35040,84 @@ namespace Opc.Ua
         public static readonly NodeId AuditConditionShelvingEventType_ShelvingTime = new NodeId(Opc.Ua.Variables.AuditConditionShelvingEventType_ShelvingTime);
 
         /// <summary>
+        /// The identifier for the AudioVariableType_MIMEType Variable.
+        /// </summary>
+        public static readonly NodeId AudioVariableType_MIMEType = new NodeId(Opc.Ua.Variables.AudioVariableType_MIMEType);
+
+        /// <summary>
+        /// The identifier for the AudioVariableType_MIMEListId Variable.
+        /// </summary>
+        public static readonly NodeId AudioVariableType_MIMEListId = new NodeId(Opc.Ua.Variables.AudioVariableType_MIMEListId);
+
+        /// <summary>
+        /// The identifier for the AudioVariableType_MIMEListAgencyId Variable.
+        /// </summary>
+        public static readonly NodeId AudioVariableType_MIMEListAgencyId = new NodeId(Opc.Ua.Variables.AudioVariableType_MIMEListAgencyId);
+
+        /// <summary>
+        /// The identifier for the AudioVariableType_MIMEListVersionId Variable.
+        /// </summary>
+        public static readonly NodeId AudioVariableType_MIMEListVersionId = new NodeId(Opc.Ua.Variables.AudioVariableType_MIMEListVersionId);
+
+        /// <summary>
         /// The identifier for the AlarmRateVariableType_Rate Variable.
         /// </summary>
         public static readonly NodeId AlarmRateVariableType_Rate = new NodeId(Opc.Ua.Variables.AlarmRateVariableType_Rate);
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType_AlarmCount Variable.
+        /// The identifier for the AlarmMetricsType_AlarmCount Variable.
         /// </summary>
-        public static readonly NodeId AlarmDiagnosticsSummaryType_AlarmCount = new NodeId(Opc.Ua.Variables.AlarmDiagnosticsSummaryType_AlarmCount);
+        public static readonly NodeId AlarmMetricsType_AlarmCount = new NodeId(Opc.Ua.Variables.AlarmMetricsType_AlarmCount);
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType_MaximumActiveState Variable.
+        /// The identifier for the AlarmMetricsType_StartTime Variable.
         /// </summary>
-        public static readonly NodeId AlarmDiagnosticsSummaryType_MaximumActiveState = new NodeId(Opc.Ua.Variables.AlarmDiagnosticsSummaryType_MaximumActiveState);
+        public static readonly NodeId AlarmMetricsType_StartTime = new NodeId(Opc.Ua.Variables.AlarmMetricsType_StartTime);
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType_MaximumUnAck Variable.
+        /// The identifier for the AlarmMetricsType_MaximumActiveState Variable.
         /// </summary>
-        public static readonly NodeId AlarmDiagnosticsSummaryType_MaximumUnAck = new NodeId(Opc.Ua.Variables.AlarmDiagnosticsSummaryType_MaximumUnAck);
+        public static readonly NodeId AlarmMetricsType_MaximumActiveState = new NodeId(Opc.Ua.Variables.AlarmMetricsType_MaximumActiveState);
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType_MaximumReAlarmCount Variable.
+        /// The identifier for the AlarmMetricsType_MaximumUnAck Variable.
         /// </summary>
-        public static readonly NodeId AlarmDiagnosticsSummaryType_MaximumReAlarmCount = new NodeId(Opc.Ua.Variables.AlarmDiagnosticsSummaryType_MaximumReAlarmCount);
+        public static readonly NodeId AlarmMetricsType_MaximumUnAck = new NodeId(Opc.Ua.Variables.AlarmMetricsType_MaximumUnAck);
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType_CurrentAlarmRate Variable.
+        /// The identifier for the AlarmMetricsType_CurrentAlarmRate Variable.
         /// </summary>
-        public static readonly NodeId AlarmDiagnosticsSummaryType_CurrentAlarmRate = new NodeId(Opc.Ua.Variables.AlarmDiagnosticsSummaryType_CurrentAlarmRate);
+        public static readonly NodeId AlarmMetricsType_CurrentAlarmRate = new NodeId(Opc.Ua.Variables.AlarmMetricsType_CurrentAlarmRate);
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType_CurrentAlarmRate_Rate Variable.
+        /// The identifier for the AlarmMetricsType_CurrentAlarmRate_Rate Variable.
         /// </summary>
-        public static readonly NodeId AlarmDiagnosticsSummaryType_CurrentAlarmRate_Rate = new NodeId(Opc.Ua.Variables.AlarmDiagnosticsSummaryType_CurrentAlarmRate_Rate);
+        public static readonly NodeId AlarmMetricsType_CurrentAlarmRate_Rate = new NodeId(Opc.Ua.Variables.AlarmMetricsType_CurrentAlarmRate_Rate);
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType_MaximumAlarmRate Variable.
+        /// The identifier for the AlarmMetricsType_MaximumAlarmRate Variable.
         /// </summary>
-        public static readonly NodeId AlarmDiagnosticsSummaryType_MaximumAlarmRate = new NodeId(Opc.Ua.Variables.AlarmDiagnosticsSummaryType_MaximumAlarmRate);
+        public static readonly NodeId AlarmMetricsType_MaximumAlarmRate = new NodeId(Opc.Ua.Variables.AlarmMetricsType_MaximumAlarmRate);
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType_MaximumAlarmRate_Rate Variable.
+        /// The identifier for the AlarmMetricsType_MaximumAlarmRate_Rate Variable.
         /// </summary>
-        public static readonly NodeId AlarmDiagnosticsSummaryType_MaximumAlarmRate_Rate = new NodeId(Opc.Ua.Variables.AlarmDiagnosticsSummaryType_MaximumAlarmRate_Rate);
+        public static readonly NodeId AlarmMetricsType_MaximumAlarmRate_Rate = new NodeId(Opc.Ua.Variables.AlarmMetricsType_MaximumAlarmRate_Rate);
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType_AverageAlarmRate Variable.
+        /// The identifier for the AlarmMetricsType_MaximumReAlarmCount Variable.
         /// </summary>
-        public static readonly NodeId AlarmDiagnosticsSummaryType_AverageAlarmRate = new NodeId(Opc.Ua.Variables.AlarmDiagnosticsSummaryType_AverageAlarmRate);
+        public static readonly NodeId AlarmMetricsType_MaximumReAlarmCount = new NodeId(Opc.Ua.Variables.AlarmMetricsType_MaximumReAlarmCount);
 
         /// <summary>
-        /// The identifier for the AlarmDiagnosticsSummaryType_AverageAlarmRate_Rate Variable.
+        /// The identifier for the AlarmMetricsType_AverageAlarmRate Variable.
         /// </summary>
-        public static readonly NodeId AlarmDiagnosticsSummaryType_AverageAlarmRate_Rate = new NodeId(Opc.Ua.Variables.AlarmDiagnosticsSummaryType_AverageAlarmRate_Rate);
+        public static readonly NodeId AlarmMetricsType_AverageAlarmRate = new NodeId(Opc.Ua.Variables.AlarmMetricsType_AverageAlarmRate);
+
+        /// <summary>
+        /// The identifier for the AlarmMetricsType_AverageAlarmRate_Rate Variable.
+        /// </summary>
+        public static readonly NodeId AlarmMetricsType_AverageAlarmRate_Rate = new NodeId(Opc.Ua.Variables.AlarmMetricsType_AverageAlarmRate_Rate);
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType_CurrentState Variable.
@@ -37240,209 +36990,64 @@ namespace Opc.Ua
         public static readonly NodeId ServerConfiguration_GetRejectedList_OutputArguments = new NodeId(Opc.Ua.Variables.ServerConfiguration_GetRejectedList_OutputArguments);
 
         /// <summary>
-        /// The identifier for the NetworkServiceFolderType_ServiceName_Placeholder_StartCredentialRequest_InputArguments Variable.
+        /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_Uri Variable.
         /// </summary>
-        public static readonly NodeId NetworkServiceFolderType_ServiceName_Placeholder_StartCredentialRequest_InputArguments = new NodeId(Opc.Ua.Variables.NetworkServiceFolderType_ServiceName_Placeholder_StartCredentialRequest_InputArguments);
+        public static readonly NodeId KeyCredentialManagement_ServiceName_Placeholder_Uri = new NodeId(Opc.Ua.Variables.KeyCredentialManagement_ServiceName_Placeholder_Uri);
 
         /// <summary>
-        /// The identifier for the NetworkServiceFolderType_ServiceName_Placeholder_StartCredentialRequest_OutputArguments Variable.
+        /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_ProfileUri Variable.
         /// </summary>
-        public static readonly NodeId NetworkServiceFolderType_ServiceName_Placeholder_StartCredentialRequest_OutputArguments = new NodeId(Opc.Ua.Variables.NetworkServiceFolderType_ServiceName_Placeholder_StartCredentialRequest_OutputArguments);
+        public static readonly NodeId KeyCredentialManagement_ServiceName_Placeholder_ProfileUri = new NodeId(Opc.Ua.Variables.KeyCredentialManagement_ServiceName_Placeholder_ProfileUri);
 
         /// <summary>
-        /// The identifier for the NetworkServiceFolderType_ServiceName_Placeholder_FinishCredentialRequest_InputArguments Variable.
+        /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_UpdateCredential_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId NetworkServiceFolderType_ServiceName_Placeholder_FinishCredentialRequest_InputArguments = new NodeId(Opc.Ua.Variables.NetworkServiceFolderType_ServiceName_Placeholder_FinishCredentialRequest_InputArguments);
+        public static readonly NodeId KeyCredentialManagement_ServiceName_Placeholder_UpdateCredential_InputArguments = new NodeId(Opc.Ua.Variables.KeyCredentialManagement_ServiceName_Placeholder_UpdateCredential_InputArguments);
 
         /// <summary>
-        /// The identifier for the NetworkServiceFolderType_ServiceName_Placeholder_FinishCredentialRequest_OutputArguments Variable.
+        /// The identifier for the KeyCredentialConfigurationType_Uri Variable.
         /// </summary>
-        public static readonly NodeId NetworkServiceFolderType_ServiceName_Placeholder_FinishCredentialRequest_OutputArguments = new NodeId(Opc.Ua.Variables.NetworkServiceFolderType_ServiceName_Placeholder_FinishCredentialRequest_OutputArguments);
+        public static readonly NodeId KeyCredentialConfigurationType_Uri = new NodeId(Opc.Ua.Variables.KeyCredentialConfigurationType_Uri);
 
         /// <summary>
-        /// The identifier for the NetworkServiceFolderType_ServiceName_Placeholder_RevokeCredential_InputArguments Variable.
+        /// The identifier for the KeyCredentialConfigurationType_ProfileUri Variable.
         /// </summary>
-        public static readonly NodeId NetworkServiceFolderType_ServiceName_Placeholder_RevokeCredential_InputArguments = new NodeId(Opc.Ua.Variables.NetworkServiceFolderType_ServiceName_Placeholder_RevokeCredential_InputArguments);
+        public static readonly NodeId KeyCredentialConfigurationType_ProfileUri = new NodeId(Opc.Ua.Variables.KeyCredentialConfigurationType_ProfileUri);
 
         /// <summary>
-        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_StartCredentialRequest_InputArguments Variable.
+        /// The identifier for the KeyCredentialConfigurationType_EndpointUrls Variable.
         /// </summary>
-        public static readonly NodeId AuthorizationServices_ServiceName_Placeholder_StartCredentialRequest_InputArguments = new NodeId(Opc.Ua.Variables.AuthorizationServices_ServiceName_Placeholder_StartCredentialRequest_InputArguments);
+        public static readonly NodeId KeyCredentialConfigurationType_EndpointUrls = new NodeId(Opc.Ua.Variables.KeyCredentialConfigurationType_EndpointUrls);
 
         /// <summary>
-        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_StartCredentialRequest_OutputArguments Variable.
+        /// The identifier for the KeyCredentialConfigurationType_ServiceStatus Variable.
         /// </summary>
-        public static readonly NodeId AuthorizationServices_ServiceName_Placeholder_StartCredentialRequest_OutputArguments = new NodeId(Opc.Ua.Variables.AuthorizationServices_ServiceName_Placeholder_StartCredentialRequest_OutputArguments);
+        public static readonly NodeId KeyCredentialConfigurationType_ServiceStatus = new NodeId(Opc.Ua.Variables.KeyCredentialConfigurationType_ServiceStatus);
 
         /// <summary>
-        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_FinishCredentialRequest_InputArguments Variable.
+        /// The identifier for the KeyCredentialConfigurationType_UpdateCredential_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId AuthorizationServices_ServiceName_Placeholder_FinishCredentialRequest_InputArguments = new NodeId(Opc.Ua.Variables.AuthorizationServices_ServiceName_Placeholder_FinishCredentialRequest_InputArguments);
+        public static readonly NodeId KeyCredentialConfigurationType_UpdateCredential_InputArguments = new NodeId(Opc.Ua.Variables.KeyCredentialConfigurationType_UpdateCredential_InputArguments);
 
         /// <summary>
-        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_FinishCredentialRequest_OutputArguments Variable.
+        /// The identifier for the KeyCredentialAuditEventType_ResourceUri Variable.
         /// </summary>
-        public static readonly NodeId AuthorizationServices_ServiceName_Placeholder_FinishCredentialRequest_OutputArguments = new NodeId(Opc.Ua.Variables.AuthorizationServices_ServiceName_Placeholder_FinishCredentialRequest_OutputArguments);
+        public static readonly NodeId KeyCredentialAuditEventType_ResourceUri = new NodeId(Opc.Ua.Variables.KeyCredentialAuditEventType_ResourceUri);
 
         /// <summary>
-        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_RevokeCredential_InputArguments Variable.
+        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_Uri Variable.
         /// </summary>
-        public static readonly NodeId AuthorizationServices_ServiceName_Placeholder_RevokeCredential_InputArguments = new NodeId(Opc.Ua.Variables.AuthorizationServices_ServiceName_Placeholder_RevokeCredential_InputArguments);
+        public static readonly NodeId AuthorizationServices_ServiceName_Placeholder_Uri = new NodeId(Opc.Ua.Variables.AuthorizationServices_ServiceName_Placeholder_Uri);
 
         /// <summary>
-        /// The identifier for the CredentialManagementType_StartCredentialRequest_InputArguments Variable.
+        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_ServiceCertificate Variable.
         /// </summary>
-        public static readonly NodeId CredentialManagementType_StartCredentialRequest_InputArguments = new NodeId(Opc.Ua.Variables.CredentialManagementType_StartCredentialRequest_InputArguments);
+        public static readonly NodeId AuthorizationServices_ServiceName_Placeholder_ServiceCertificate = new NodeId(Opc.Ua.Variables.AuthorizationServices_ServiceName_Placeholder_ServiceCertificate);
 
         /// <summary>
-        /// The identifier for the CredentialManagementType_StartCredentialRequest_OutputArguments Variable.
+        /// The identifier for the AuthorizationServiceConfigurationType_Uri Variable.
         /// </summary>
-        public static readonly NodeId CredentialManagementType_StartCredentialRequest_OutputArguments = new NodeId(Opc.Ua.Variables.CredentialManagementType_StartCredentialRequest_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the CredentialManagementType_FinishCredentialRequest_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId CredentialManagementType_FinishCredentialRequest_InputArguments = new NodeId(Opc.Ua.Variables.CredentialManagementType_FinishCredentialRequest_InputArguments);
-
-        /// <summary>
-        /// The identifier for the CredentialManagementType_FinishCredentialRequest_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId CredentialManagementType_FinishCredentialRequest_OutputArguments = new NodeId(Opc.Ua.Variables.CredentialManagementType_FinishCredentialRequest_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the CredentialManagementType_RevokeCredential_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId CredentialManagementType_RevokeCredential_InputArguments = new NodeId(Opc.Ua.Variables.CredentialManagementType_RevokeCredential_InputArguments);
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_ServiceUri Variable.
-        /// </summary>
-        public static readonly NodeId NetworkServiceType_ServiceUri = new NodeId(Opc.Ua.Variables.NetworkServiceType_ServiceUri);
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_ServiceProfileUri Variable.
-        /// </summary>
-        public static readonly NodeId NetworkServiceType_ServiceProfileUri = new NodeId(Opc.Ua.Variables.NetworkServiceType_ServiceProfileUri);
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_ServiceEndpointUrls Variable.
-        /// </summary>
-        public static readonly NodeId NetworkServiceType_ServiceEndpointUrls = new NodeId(Opc.Ua.Variables.NetworkServiceType_ServiceEndpointUrls);
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_CredentialManagement_StartCredentialRequest_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId NetworkServiceType_CredentialManagement_StartCredentialRequest_InputArguments = new NodeId(Opc.Ua.Variables.NetworkServiceType_CredentialManagement_StartCredentialRequest_InputArguments);
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_CredentialManagement_StartCredentialRequest_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId NetworkServiceType_CredentialManagement_StartCredentialRequest_OutputArguments = new NodeId(Opc.Ua.Variables.NetworkServiceType_CredentialManagement_StartCredentialRequest_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_CredentialManagement_FinishCredentialRequest_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId NetworkServiceType_CredentialManagement_FinishCredentialRequest_InputArguments = new NodeId(Opc.Ua.Variables.NetworkServiceType_CredentialManagement_FinishCredentialRequest_InputArguments);
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_CredentialManagement_FinishCredentialRequest_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId NetworkServiceType_CredentialManagement_FinishCredentialRequest_OutputArguments = new NodeId(Opc.Ua.Variables.NetworkServiceType_CredentialManagement_FinishCredentialRequest_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the NetworkServiceType_CredentialManagement_RevokeCredential_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId NetworkServiceType_CredentialManagement_RevokeCredential_InputArguments = new NodeId(Opc.Ua.Variables.NetworkServiceType_CredentialManagement_RevokeCredential_InputArguments);
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_CredentialManagement_StartCredentialRequest_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId AuthorizationServiceType_CredentialManagement_StartCredentialRequest_InputArguments = new NodeId(Opc.Ua.Variables.AuthorizationServiceType_CredentialManagement_StartCredentialRequest_InputArguments);
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_CredentialManagement_StartCredentialRequest_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId AuthorizationServiceType_CredentialManagement_StartCredentialRequest_OutputArguments = new NodeId(Opc.Ua.Variables.AuthorizationServiceType_CredentialManagement_StartCredentialRequest_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_CredentialManagement_FinishCredentialRequest_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId AuthorizationServiceType_CredentialManagement_FinishCredentialRequest_InputArguments = new NodeId(Opc.Ua.Variables.AuthorizationServiceType_CredentialManagement_FinishCredentialRequest_InputArguments);
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_CredentialManagement_FinishCredentialRequest_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId AuthorizationServiceType_CredentialManagement_FinishCredentialRequest_OutputArguments = new NodeId(Opc.Ua.Variables.AuthorizationServiceType_CredentialManagement_FinishCredentialRequest_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_CredentialManagement_RevokeCredential_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId AuthorizationServiceType_CredentialManagement_RevokeCredential_InputArguments = new NodeId(Opc.Ua.Variables.AuthorizationServiceType_CredentialManagement_RevokeCredential_InputArguments);
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_UserTokenPolicies Variable.
-        /// </summary>
-        public static readonly NodeId AuthorizationServiceType_UserTokenPolicies = new NodeId(Opc.Ua.Variables.AuthorizationServiceType_UserTokenPolicies);
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_RequestAccessToken_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId AuthorizationServiceType_RequestAccessToken_InputArguments = new NodeId(Opc.Ua.Variables.AuthorizationServiceType_RequestAccessToken_InputArguments);
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceType_RequestAccessToken_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId AuthorizationServiceType_RequestAccessToken_OutputArguments = new NodeId(Opc.Ua.Variables.AuthorizationServiceType_RequestAccessToken_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the CredentialRequestedAuditEventType_ServiceUri Variable.
-        /// </summary>
-        public static readonly NodeId CredentialRequestedAuditEventType_ServiceUri = new NodeId(Opc.Ua.Variables.CredentialRequestedAuditEventType_ServiceUri);
-
-        /// <summary>
-        /// The identifier for the CredentialDeliveredAuditEventType_ServiceUri Variable.
-        /// </summary>
-        public static readonly NodeId CredentialDeliveredAuditEventType_ServiceUri = new NodeId(Opc.Ua.Variables.CredentialDeliveredAuditEventType_ServiceUri);
-
-        /// <summary>
-        /// The identifier for the CredentialRevokedAuditEventType_ServiceUri Variable.
-        /// </summary>
-        public static readonly NodeId CredentialRevokedAuditEventType_ServiceUri = new NodeId(Opc.Ua.Variables.CredentialRevokedAuditEventType_ServiceUri);
-
-        /// <summary>
-        /// The identifier for the NetworkServiceConfigurationType_ServiceUri Variable.
-        /// </summary>
-        public static readonly NodeId NetworkServiceConfigurationType_ServiceUri = new NodeId(Opc.Ua.Variables.NetworkServiceConfigurationType_ServiceUri);
-
-        /// <summary>
-        /// The identifier for the NetworkServiceConfigurationType_ServiceProfileUri Variable.
-        /// </summary>
-        public static readonly NodeId NetworkServiceConfigurationType_ServiceProfileUri = new NodeId(Opc.Ua.Variables.NetworkServiceConfigurationType_ServiceProfileUri);
-
-        /// <summary>
-        /// The identifier for the NetworkServiceConfigurationType_ServiceEndpointUrls Variable.
-        /// </summary>
-        public static readonly NodeId NetworkServiceConfigurationType_ServiceEndpointUrls = new NodeId(Opc.Ua.Variables.NetworkServiceConfigurationType_ServiceEndpointUrls);
-
-        /// <summary>
-        /// The identifier for the NetworkServiceConfigurationType_Enabled Variable.
-        /// </summary>
-        public static readonly NodeId NetworkServiceConfigurationType_Enabled = new NodeId(Opc.Ua.Variables.NetworkServiceConfigurationType_Enabled);
-
-        /// <summary>
-        /// The identifier for the NetworkServiceConfigurationType_ServiceStatus Variable.
-        /// </summary>
-        public static readonly NodeId NetworkServiceConfigurationType_ServiceStatus = new NodeId(Opc.Ua.Variables.NetworkServiceConfigurationType_ServiceStatus);
-
-        /// <summary>
-        /// The identifier for the NetworkServiceConfigurationType_UpdateCredential_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId NetworkServiceConfigurationType_UpdateCredential_InputArguments = new NodeId(Opc.Ua.Variables.NetworkServiceConfigurationType_UpdateCredential_InputArguments);
-
-        /// <summary>
-        /// The identifier for the AuthorizationServiceConfigurationType_UpdateCredential_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId AuthorizationServiceConfigurationType_UpdateCredential_InputArguments = new NodeId(Opc.Ua.Variables.AuthorizationServiceConfigurationType_UpdateCredential_InputArguments);
+        public static readonly NodeId AuthorizationServiceConfigurationType_Uri = new NodeId(Opc.Ua.Variables.AuthorizationServiceConfigurationType_Uri);
 
         /// <summary>
         /// The identifier for the AuthorizationServiceConfigurationType_ServiceCertificate Variable.
@@ -40035,6 +39640,11 @@ namespace Opc.Ua
         public static readonly NodeId ConditionVariableType = new NodeId(Opc.Ua.VariableTypes.ConditionVariableType);
 
         /// <summary>
+        /// The identifier for the AudioVariableType VariableType.
+        /// </summary>
+        public static readonly NodeId AudioVariableType = new NodeId(Opc.Ua.VariableTypes.AudioVariableType);
+
+        /// <summary>
         /// The identifier for the AlarmRateVariableType VariableType.
         /// </summary>
         public static readonly NodeId AlarmRateVariableType = new NodeId(Opc.Ua.VariableTypes.AlarmRateVariableType);
@@ -40499,11 +40109,6 @@ namespace Opc.Ua
         public const string AlarmCount = "AlarmCount";
 
         /// <summary>
-        /// The BrowseName for the AlarmDiagnosticsSummaryType component.
-        /// </summary>
-        public const string AlarmDiagnosticsSummaryType = "AlarmDiagnosticsSummaryType";
-
-        /// <summary>
         /// The BrowseName for the AlarmGroup_Placeholder component.
         /// </summary>
         public const string AlarmGroup_Placeholder = "<AlarmGroup>";
@@ -40517,6 +40122,11 @@ namespace Opc.Ua
         /// The BrowseName for the AlarmGroupType component.
         /// </summary>
         public const string AlarmGroupType = "AlarmGroupType";
+
+        /// <summary>
+        /// The BrowseName for the AlarmMetricsType component.
+        /// </summary>
+        public const string AlarmMetricsType = "AlarmMetricsType";
 
         /// <summary>
         /// The BrowseName for the AlarmRateVariableType component.
@@ -40634,29 +40244,14 @@ namespace Opc.Ua
         public const string AudibleSound = "AudibleSound";
 
         /// <summary>
-        /// The BrowseName for the AudibleSoundMIMEListAgencyId component.
-        /// </summary>
-        public const string AudibleSoundMIMEListAgencyId = "AudibleSoundMIMEListAgencyId";
-
-        /// <summary>
-        /// The BrowseName for the AudibleSoundMIMEListId component.
-        /// </summary>
-        public const string AudibleSoundMIMEListId = "AudibleSoundMIMEListId";
-
-        /// <summary>
-        /// The BrowseName for the AudibleSoundMIMEListVersionId component.
-        /// </summary>
-        public const string AudibleSoundMIMEListVersionId = "AudibleSoundMIMEListVersionId";
-
-        /// <summary>
-        /// The BrowseName for the AudibleSoundMIMEType component.
-        /// </summary>
-        public const string AudibleSoundMIMEType = "AudibleSoundMIMEType";
-
-        /// <summary>
         /// The BrowseName for the AudioData component.
         /// </summary>
         public const string AudioData = "AudioData";
+
+        /// <summary>
+        /// The BrowseName for the AudioVariableType component.
+        /// </summary>
+        public const string AudioVariableType = "AudioVariableType";
 
         /// <summary>
         /// The BrowseName for the AuditActivateSessionEventType component.
@@ -40764,9 +40359,9 @@ namespace Opc.Ua
         public const string AuditConditionSilenceEventType = "AuditConditionSilenceEventType";
 
         /// <summary>
-        /// The BrowseName for the AuditConditionSuppressionEventType component.
+        /// The BrowseName for the AuditConditionSuppressEventType component.
         /// </summary>
-        public const string AuditConditionSuppressionEventType = "AuditConditionSuppressionEventType";
+        public const string AuditConditionSuppressEventType = "AuditConditionSuppressEventType";
 
         /// <summary>
         /// The BrowseName for the AuditCreateSessionEventType component.
@@ -40894,11 +40489,6 @@ namespace Opc.Ua
         public const string AuthorizationServices = "AuthorizationServices";
 
         /// <summary>
-        /// The BrowseName for the AuthorizationServiceType component.
-        /// </summary>
-        public const string AuthorizationServiceType = "AuthorizationServiceType";
-
-        /// <summary>
         /// The BrowseName for the AutoDelete component.
         /// </summary>
         public const string AutoDelete = "AutoDelete";
@@ -40937,11 +40527,6 @@ namespace Opc.Ua
         /// The BrowseName for the AxisScaleType component.
         /// </summary>
         public const string AxisScaleType = "AxisScaleType";
-
-        /// <summary>
-        /// The BrowseName for the BaseConditionClassModifierType component.
-        /// </summary>
-        public const string BaseConditionClassModifierType = "BaseConditionClassModifierType";
 
         /// <summary>
         /// The BrowseName for the BaseConditionClassType component.
@@ -41349,16 +40934,6 @@ namespace Opc.Ua
         public const string ConditionClassId = "ConditionClassId";
 
         /// <summary>
-        /// The BrowseName for the ConditionClassModifier component.
-        /// </summary>
-        public const string ConditionClassModifier = "ConditionClassModifier";
-
-        /// <summary>
-        /// The BrowseName for the ConditionClassModifierName component.
-        /// </summary>
-        public const string ConditionClassModifierName = "ConditionClassModifierName";
-
-        /// <summary>
         /// The BrowseName for the ConditionClassName component.
         /// </summary>
         public const string ConditionClassName = "ConditionClassName";
@@ -41382,6 +40957,16 @@ namespace Opc.Ua
         /// The BrowseName for the ConditionRefresh2 component.
         /// </summary>
         public const string ConditionRefresh2 = "ConditionRefresh2";
+
+        /// <summary>
+        /// The BrowseName for the ConditionSubClass component.
+        /// </summary>
+        public const string ConditionSubClass = "ConditionSubClass";
+
+        /// <summary>
+        /// The BrowseName for the ConditionSubClassName component.
+        /// </summary>
+        public const string ConditionSubClassName = "ConditionSubClassName";
 
         /// <summary>
         /// The BrowseName for the ConditionType component.
@@ -41547,31 +41132,6 @@ namespace Opc.Ua
         /// The BrowseName for the CreateSubscriptionResponse component.
         /// </summary>
         public const string CreateSubscriptionResponse = "CreateSubscriptionResponse";
-
-        /// <summary>
-        /// The BrowseName for the CredentialDeliveredAuditEventType component.
-        /// </summary>
-        public const string CredentialDeliveredAuditEventType = "CredentialDeliveredAuditEventType";
-
-        /// <summary>
-        /// The BrowseName for the CredentialManagement component.
-        /// </summary>
-        public const string CredentialManagement = "CredentialManagement";
-
-        /// <summary>
-        /// The BrowseName for the CredentialManagementType component.
-        /// </summary>
-        public const string CredentialManagementType = "CredentialManagementType";
-
-        /// <summary>
-        /// The BrowseName for the CredentialRequestedAuditEventType component.
-        /// </summary>
-        public const string CredentialRequestedAuditEventType = "CredentialRequestedAuditEventType";
-
-        /// <summary>
-        /// The BrowseName for the CredentialRevokedAuditEventType component.
-        /// </summary>
-        public const string CredentialRevokedAuditEventType = "CredentialRevokedAuditEventType";
 
         /// <summary>
         /// The BrowseName for the CubeItemType component.
@@ -41919,6 +41479,11 @@ namespace Opc.Ua
         public const string DeleteAtTimeDetails = "DeleteAtTimeDetails";
 
         /// <summary>
+        /// The BrowseName for the DeleteCredential component.
+        /// </summary>
+        public const string DeleteCredential = "DeleteCredential";
+
+        /// <summary>
         /// The BrowseName for the DeleteEventCapability component.
         /// </summary>
         public const string DeleteEventCapability = "DeleteEventCapability";
@@ -42129,11 +41694,6 @@ namespace Opc.Ua
         public const string EnableCount = "EnableCount";
 
         /// <summary>
-        /// The BrowseName for the Enabled component.
-        /// </summary>
-        public const string Enabled = "Enabled";
-
-        /// <summary>
         /// The BrowseName for the EnabledFlag component.
         /// </summary>
         public const string EnabledFlag = "EnabledFlag";
@@ -42177,6 +41737,11 @@ namespace Opc.Ua
         /// The BrowseName for the EndpointUrlListDataType component.
         /// </summary>
         public const string EndpointUrlListDataType = "EndpointUrlListDataType";
+
+        /// <summary>
+        /// The BrowseName for the EndpointUrls component.
+        /// </summary>
+        public const string EndpointUrls = "EndpointUrls";
 
         /// <summary>
         /// The BrowseName for the EndTime component.
@@ -42459,11 +42024,6 @@ namespace Opc.Ua
         public const string FindServersResponse = "FindServersResponse";
 
         /// <summary>
-        /// The BrowseName for the FinishCredentialRequest component.
-        /// </summary>
-        public const string FinishCredentialRequest = "FinishCredentialRequest";
-
-        /// <summary>
         /// The BrowseName for the FiniteStateMachineType component.
         /// </summary>
         public const string FiniteStateMachineType = "FiniteStateMachineType";
@@ -42649,6 +42209,21 @@ namespace Opc.Ua
         public const string HasEffectDisable = "HasEffectDisable";
 
         /// <summary>
+        /// The BrowseName for the HasEffectEnable component.
+        /// </summary>
+        public const string HasEffectEnable = "HasEffectEnable";
+
+        /// <summary>
+        /// The BrowseName for the HasEffectSuppressed component.
+        /// </summary>
+        public const string HasEffectSuppressed = "HasEffectSuppressed";
+
+        /// <summary>
+        /// The BrowseName for the HasEffectUnSuppressed component.
+        /// </summary>
+        public const string HasEffectUnSuppressed = "HasEffectUnSuppressed";
+
+        /// <summary>
         /// The BrowseName for the HasEncoding component.
         /// </summary>
         public const string HasEncoding = "HasEncoding";
@@ -42747,6 +42322,11 @@ namespace Opc.Ua
         /// The BrowseName for the HighLimit component.
         /// </summary>
         public const string HighLimit = "HighLimit";
+
+        /// <summary>
+        /// The BrowseName for the HighlyManagedAlarmConditionClassType component.
+        /// </summary>
+        public const string HighlyManagedAlarmConditionClassType = "HighlyManagedAlarmConditionClassType";
 
         /// <summary>
         /// The BrowseName for the HighState component.
@@ -43052,6 +42632,31 @@ namespace Opc.Ua
         /// The BrowseName for the KeepAliveTime component.
         /// </summary>
         public const string KeepAliveTime = "KeepAliveTime";
+
+        /// <summary>
+        /// The BrowseName for the KeyCredentialAuditEventType component.
+        /// </summary>
+        public const string KeyCredentialAuditEventType = "KeyCredentialAuditEventType";
+
+        /// <summary>
+        /// The BrowseName for the KeyCredentialConfigurationType component.
+        /// </summary>
+        public const string KeyCredentialConfigurationType = "KeyCredentialConfigurationType";
+
+        /// <summary>
+        /// The BrowseName for the KeyCredentialDeletedAuditEventType component.
+        /// </summary>
+        public const string KeyCredentialDeletedAuditEventType = "KeyCredentialDeletedAuditEventType";
+
+        /// <summary>
+        /// The BrowseName for the KeyCredentialManagement component.
+        /// </summary>
+        public const string KeyCredentialManagement = "KeyCredentialManagement";
+
+        /// <summary>
+        /// The BrowseName for the KeyCredentialUpdatedAuditEventType component.
+        /// </summary>
+        public const string KeyCredentialUpdatedAuditEventType = "KeyCredentialUpdatedAuditEventType";
 
         /// <summary>
         /// The BrowseName for the KeyFrameCount component.
@@ -43454,9 +43059,29 @@ namespace Opc.Ua
         public const string MethodNode = "MethodNode";
 
         /// <summary>
+        /// The BrowseName for the MIMEListAgencyId component.
+        /// </summary>
+        public const string MIMEListAgencyId = "MIMEListAgencyId";
+
+        /// <summary>
+        /// The BrowseName for the MIMEListId component.
+        /// </summary>
+        public const string MIMEListId = "MIMEListId";
+
+        /// <summary>
+        /// The BrowseName for the MIMEListVersionId component.
+        /// </summary>
+        public const string MIMEListVersionId = "MIMEListVersionId";
+
+        /// <summary>
         /// The BrowseName for the MimeType component.
         /// </summary>
         public const string MimeType = "MimeType";
+
+        /// <summary>
+        /// The BrowseName for the MIMEType component.
+        /// </summary>
+        public const string MIMEType = "MIMEType";
 
         /// <summary>
         /// The BrowseName for the MinSupportedSampleRate component.
@@ -43717,26 +43342,6 @@ namespace Opc.Ua
         /// The BrowseName for the NetworkMessageContentMask component.
         /// </summary>
         public const string NetworkMessageContentMask = "NetworkMessageContentMask";
-
-        /// <summary>
-        /// The BrowseName for the NetworkServiceConfigurationType component.
-        /// </summary>
-        public const string NetworkServiceConfigurationType = "NetworkServiceConfigurationType";
-
-        /// <summary>
-        /// The BrowseName for the NetworkServiceFolderType component.
-        /// </summary>
-        public const string NetworkServiceFolderType = "NetworkServiceFolderType";
-
-        /// <summary>
-        /// The BrowseName for the NetworkServices component.
-        /// </summary>
-        public const string NetworkServices = "NetworkServices";
-
-        /// <summary>
-        /// The BrowseName for the NetworkServiceType component.
-        /// </summary>
-        public const string NetworkServiceType = "NetworkServiceType";
 
         /// <summary>
         /// The BrowseName for the NewStateId component.
@@ -44044,11 +43649,6 @@ namespace Opc.Ua
         public const string Organizes = "Organizes";
 
         /// <summary>
-        /// The BrowseName for the OutOfService component.
-        /// </summary>
-        public const string OutOfService = "OutOfService";
-
-        /// <summary>
         /// The BrowseName for the OutOfServiceState component.
         /// </summary>
         public const string OutOfServiceState = "OutOfServiceState";
@@ -44099,6 +43699,11 @@ namespace Opc.Ua
         public const string PermissionType = "PermissionType";
 
         /// <summary>
+        /// The BrowseName for the PlaceInService component.
+        /// </summary>
+        public const string PlaceInService = "PlaceInService";
+
+        /// <summary>
         /// The BrowseName for the Priority component.
         /// </summary>
         public const string Priority = "Priority";
@@ -44117,6 +43722,11 @@ namespace Opc.Ua
         /// The BrowseName for the ProductUri component.
         /// </summary>
         public const string ProductUri = "ProductUri";
+
+        /// <summary>
+        /// The BrowseName for the ProfileUri component.
+        /// </summary>
+        public const string ProfileUri = "ProfileUri";
 
         /// <summary>
         /// The BrowseName for the ProgramDiagnosticDataType component.
@@ -44664,6 +44274,11 @@ namespace Opc.Ua
         public const string RemoveExtensionField = "RemoveExtensionField";
 
         /// <summary>
+        /// The BrowseName for the RemoveFromService component.
+        /// </summary>
+        public const string RemoveFromService = "RemoveFromService";
+
+        /// <summary>
         /// The BrowseName for the RemoveGroup component.
         /// </summary>
         public const string RemoveGroup = "RemoveGroup";
@@ -44739,11 +44354,6 @@ namespace Opc.Ua
         public const string ReqTimes = "ReqTimes";
 
         /// <summary>
-        /// The BrowseName for the RequestAccessToken component.
-        /// </summary>
-        public const string RequestAccessToken = "RequestAccessToken";
-
-        /// <summary>
         /// The BrowseName for the RequestedLifetime component.
         /// </summary>
         public const string RequestedLifetime = "RequestedLifetime";
@@ -44779,6 +44389,11 @@ namespace Opc.Ua
         public const string Reset = "Reset";
 
         /// <summary>
+        /// The BrowseName for the ResourceUri component.
+        /// </summary>
+        public const string ResourceUri = "ResourceUri";
+
+        /// <summary>
         /// The BrowseName for the Respond component.
         /// </summary>
         public const string Respond = "Respond";
@@ -44812,11 +44427,6 @@ namespace Opc.Ua
         /// The BrowseName for the RevisedSessionTimeout component.
         /// </summary>
         public const string RevisedSessionTimeout = "RevisedSessionTimeout";
-
-        /// <summary>
-        /// The BrowseName for the RevokeCredential component.
-        /// </summary>
-        public const string RevokeCredential = "RevokeCredential";
 
         /// <summary>
         /// The BrowseName for the RoleMappingRuleChangedAuditEventType component.
@@ -45179,11 +44789,6 @@ namespace Opc.Ua
         public const string ServiceCounterDataType = "ServiceCounterDataType";
 
         /// <summary>
-        /// The BrowseName for the ServiceEndpointUrls component.
-        /// </summary>
-        public const string ServiceEndpointUrls = "ServiceEndpointUrls";
-
-        /// <summary>
         /// The BrowseName for the ServiceFault component.
         /// </summary>
         public const string ServiceFault = "ServiceFault";
@@ -45199,19 +44804,9 @@ namespace Opc.Ua
         public const string ServiceName_Placeholder = "<ServiceName>";
 
         /// <summary>
-        /// The BrowseName for the ServiceProfileUri component.
-        /// </summary>
-        public const string ServiceProfileUri = "ServiceProfileUri";
-
-        /// <summary>
         /// The BrowseName for the ServiceStatus component.
         /// </summary>
         public const string ServiceStatus = "ServiceStatus";
-
-        /// <summary>
-        /// The BrowseName for the ServiceUri component.
-        /// </summary>
-        public const string ServiceUri = "ServiceUri";
 
         /// <summary>
         /// The BrowseName for the SessionAbortCount component.
@@ -45459,11 +45054,6 @@ namespace Opc.Ua
         public const string Start = "Start";
 
         /// <summary>
-        /// The BrowseName for the StartCredentialRequest component.
-        /// </summary>
-        public const string StartCredentialRequest = "StartCredentialRequest";
-
-        /// <summary>
         /// The BrowseName for the StartOfArchive component.
         /// </summary>
         public const string StartOfArchive = "StartOfArchive";
@@ -45709,9 +45299,9 @@ namespace Opc.Ua
         public const string TemporaryFileTransferType = "TemporaryFileTransferType";
 
         /// <summary>
-        /// The BrowseName for the TestingConditionClassModifierType component.
+        /// The BrowseName for the TestingConditionClassType component.
         /// </summary>
-        public const string TestingConditionClassModifierType = "TestingConditionClassModifierType";
+        public const string TestingConditionClassType = "TestingConditionClassType";
 
         /// <summary>
         /// The BrowseName for the Time component.
@@ -45779,9 +45369,9 @@ namespace Opc.Ua
         public const string TotalRequestCount = "TotalRequestCount";
 
         /// <summary>
-        /// The BrowseName for the TrainingConditionClassModifierType component.
+        /// The BrowseName for the TrainingConditionClassType component.
         /// </summary>
-        public const string TrainingConditionClassModifierType = "TrainingConditionClassModifierType";
+        public const string TrainingConditionClassType = "TrainingConditionClassType";
 
         /// <summary>
         /// The BrowseName for the TransferredToAltClientCount component.
@@ -46054,6 +45644,11 @@ namespace Opc.Ua
         public const string UnshelveTime = "UnshelveTime";
 
         /// <summary>
+        /// The BrowseName for the UnSuppress component.
+        /// </summary>
+        public const string UnSuppress = "UnSuppress";
+
+        /// <summary>
         /// The BrowseName for the UpdateCertificate component.
         /// </summary>
         public const string UpdateCertificate = "UpdateCertificate";
@@ -46094,6 +45689,11 @@ namespace Opc.Ua
         public const string UpdateStructureDataDetails = "UpdateStructureDataDetails";
 
         /// <summary>
+        /// The BrowseName for the Uri component.
+        /// </summary>
+        public const string Uri = "Uri";
+
+        /// <summary>
         /// The BrowseName for the UserIdentityToken component.
         /// </summary>
         public const string UserIdentityToken = "UserIdentityToken";
@@ -46102,11 +45702,6 @@ namespace Opc.Ua
         /// The BrowseName for the UserNameIdentityToken component.
         /// </summary>
         public const string UserNameIdentityToken = "UserNameIdentityToken";
-
-        /// <summary>
-        /// The BrowseName for the UserTokenPolicies component.
-        /// </summary>
-        public const string UserTokenPolicies = "UserTokenPolicies";
 
         /// <summary>
         /// The BrowseName for the UserTokenPolicy component.
@@ -46211,42 +45806,42 @@ namespace Opc.Ua
         /// <summary>
         /// The BrowseName for the WellKnownRole_Anonymous component.
         /// </summary>
-        public const string WellKnownRole_Anonymous = "Anonymous";
+        public const string WellKnownRole_Anonymous = "AnonymousRole";
 
         /// <summary>
         /// The BrowseName for the WellKnownRole_AuthenticatedUser component.
         /// </summary>
-        public const string WellKnownRole_AuthenticatedUser = "AuthenticatedUser";
+        public const string WellKnownRole_AuthenticatedUser = "AuthenticatedUserRole";
 
         /// <summary>
         /// The BrowseName for the WellKnownRole_ConfigureAdmin component.
         /// </summary>
-        public const string WellKnownRole_ConfigureAdmin = "ConfigureAdmin";
+        public const string WellKnownRole_ConfigureAdmin = "ConfigureAdminRole";
 
         /// <summary>
         /// The BrowseName for the WellKnownRole_Engineer component.
         /// </summary>
-        public const string WellKnownRole_Engineer = "Engineer";
+        public const string WellKnownRole_Engineer = "EngineerRole";
 
         /// <summary>
         /// The BrowseName for the WellKnownRole_Observer component.
         /// </summary>
-        public const string WellKnownRole_Observer = "Observer";
+        public const string WellKnownRole_Observer = "ObserverRole";
 
         /// <summary>
         /// The BrowseName for the WellKnownRole_Operator component.
         /// </summary>
-        public const string WellKnownRole_Operator = "Operator";
+        public const string WellKnownRole_Operator = "OperatorRole";
 
         /// <summary>
         /// The BrowseName for the WellKnownRole_SecurityAdmin component.
         /// </summary>
-        public const string WellKnownRole_SecurityAdmin = "SecurityAdmin";
+        public const string WellKnownRole_SecurityAdmin = "SecurityAdminRole";
 
         /// <summary>
         /// The BrowseName for the WellKnownRole_Supervisor component.
         /// </summary>
-        public const string WellKnownRole_Supervisor = "Supervisor";
+        public const string WellKnownRole_Supervisor = "SupervisorRole";
 
         /// <summary>
         /// The BrowseName for the Writable component.

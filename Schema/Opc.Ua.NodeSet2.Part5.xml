@@ -10625,7 +10625,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2127</Reference>
     </References>
   </UAObjectType>
-  <UAObject NodeId="i=15644" BrowseName="Anonymous" SymbolicName="WellKnownRole_Anonymous">
+  <UAObject NodeId="i=15644" BrowseName="AnonymousRole" SymbolicName="WellKnownRole_Anonymous">
     <DisplayName>Anonymous</DisplayName>
     <Description>The Role has very limited access for use when a Session has anonymous credentials.</Description>
     <References>
@@ -10641,7 +10641,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=15644</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="i=15656" BrowseName="AuthenticatedUser" SymbolicName="WellKnownRole_AuthenticatedUser">
+  <UAObject NodeId="i=15656" BrowseName="AuthenticatedUserRole" SymbolicName="WellKnownRole_AuthenticatedUser">
     <DisplayName>AuthenticatedUser</DisplayName>
     <Description>The Role has limited access for use when a Session has valid non-anonymous credentials but has not been explicity granted access to a Role.</Description>
     <References>
@@ -10657,7 +10657,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=15656</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="i=15668" BrowseName="Observer" SymbolicName="WellKnownRole_Observer">
+  <UAObject NodeId="i=15668" BrowseName="ObserverRole" SymbolicName="WellKnownRole_Observer">
     <DisplayName>Observer</DisplayName>
     <Description>The Role is allowed to browse, read live data, read historical data/events or subscribe to data/events.</Description>
     <References>
@@ -10673,7 +10673,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=15668</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="i=15680" BrowseName="Operator" SymbolicName="WellKnownRole_Operator">
+  <UAObject NodeId="i=15680" BrowseName="OperatorRole" SymbolicName="WellKnownRole_Operator">
     <DisplayName>Operator</DisplayName>
     <Description>The Role is allowed to browse, read live data, read historical data/events or subscribe to data/events.</Description>
     <References>
@@ -10689,7 +10689,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=15680</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="i=16036" BrowseName="Engineer" SymbolicName="WellKnownRole_Engineer">
+  <UAObject NodeId="i=16036" BrowseName="EngineerRole" SymbolicName="WellKnownRole_Engineer">
     <DisplayName>Engineer</DisplayName>
     <Description>The Role is allowed to browse, read live data, read and update historical data/events, call methods or subscribe to data/events.</Description>
     <References>
@@ -10705,7 +10705,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=16036</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="i=15692" BrowseName="Supervisor" SymbolicName="WellKnownRole_Supervisor">
+  <UAObject NodeId="i=15692" BrowseName="SupervisorRole" SymbolicName="WellKnownRole_Supervisor">
     <DisplayName>Supervisor</DisplayName>
     <Description>The Role is allowed to browse, read live data, read and historical data/events, call methods or subscribe to data/events.</Description>
     <References>
@@ -10721,7 +10721,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=15692</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="i=15704" BrowseName="SecurityAdmin" SymbolicName="WellKnownRole_SecurityAdmin">
+  <UAObject NodeId="i=15704" BrowseName="SecurityAdminRole" SymbolicName="WellKnownRole_SecurityAdmin">
     <DisplayName>SecurityAdmin</DisplayName>
     <Description>The Role is allowed to change security related settings.</Description>
     <References>
@@ -10737,7 +10737,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=15704</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="i=15716" BrowseName="ConfigureAdmin" SymbolicName="WellKnownRole_ConfigureAdmin">
+  <UAObject NodeId="i=15716" BrowseName="ConfigureAdminRole" SymbolicName="WellKnownRole_ConfigureAdmin">
     <DisplayName>ConfigureAdmin</DisplayName>
     <Description>The Role is allowed to change the non-security related configuration settings.</Description>
     <References>
