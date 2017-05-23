@@ -132,6 +132,7 @@
     </opc:InputArguments>
     <opc:OutputArguments>
       <opc:Argument Name="LastCounterResetTime" DataType="ua:UtcTime"></opc:Argument>
+      <opc:Argument Name="NextRecordId" DataType="ua:UInt32"></opc:Argument>
       <opc:Argument Name="Applications" DataType="ua:ApplicationDescription" ValueRank="Array"></opc:Argument>
     </opc:OutputArguments>
   </opc:Method>
@@ -281,8 +282,8 @@
 
   <opc:ObjectType SymbolicName="KeyCredentialServiceType" BaseType="ua:BaseObjectType">
     <opc:Children>
-      <opc:Property SymbolicName="Uri"  DataType="ua:String" ValueRank="Scalar" ModellingRule="Mandatory" />
-      <opc:Property SymbolicName="ProfileUri"  DataType="ua:String" ValueRank="Scalar" ModellingRule="Mandatory" />
+      <opc:Property SymbolicName="ResourceUri"  DataType="ua:String" ValueRank="Scalar" ModellingRule="Mandatory" />
+      <opc:Property SymbolicName="ProfileUris"  DataType="ua:String" ValueRank="Array" ModellingRule="Mandatory" />
       <opc:Method SymbolicName="StartRequest" TypeDefinition="KeyCredentialStartRequestMethodType" ModellingRule="Mandatory" />
       <opc:Method SymbolicName="FinishRequest" TypeDefinition="KeyCredentialFinishRequestMethodType" ModellingRule="Mandatory" />
       <opc:Method SymbolicName="Revoke" TypeDefinition="KeyCredentialRevokeMethodType" ModellingRule="Optional" />
@@ -291,8 +292,10 @@
 
   <opc:Method SymbolicName="KeyCredentialStartRequestMethodType">
     <opc:InputArguments>
+      <opc:Argument Name="ApplicationUri" DataType="ua:String" />
       <opc:Argument Name="Certificate" DataType="ua:ByteString"></opc:Argument>
       <opc:Argument Name="SecurityPolicyUri" DataType="ua:String" />
+      <opc:Argument Name="RequestedRoles" DataType="ua:NodeId" ValueRank="Array" />
     </opc:InputArguments>
     <opc:OutputArguments>
       <opc:Argument Name="RequestId" DataType="ua:NodeId"></opc:Argument>
@@ -309,6 +312,7 @@
       <opc:Argument Name="CredentialSecret" DataType="ua:ByteString"></opc:Argument>
       <opc:Argument Name="CertificateThumbprint" DataType="ua:String" />
       <opc:Argument Name="SecurityPolicyUri" DataType="ua:String" />
+      <opc:Argument Name="GrantedRoles" DataType="ua:NodeId" ValueRank="Array" />
     </opc:OutputArguments>
   </opc:Method>
 
@@ -321,7 +325,7 @@
   <opc:ObjectType SymbolicName="KeyCredentialRequestedAuditEventType" BaseType="ua:KeyCredentialAuditEventType" IsAbstract="false" />
   <opc:ObjectType SymbolicName="KeyCredentialDeliveredAuditEventType" BaseType="ua:KeyCredentialAuditEventType" IsAbstract="false" />
   <opc:ObjectType SymbolicName="KeyCredentialRevokedAuditEventType" BaseType="ua:KeyCredentialAuditEventType" IsAbstract="false" />
-
+  
   <opc:Object SymbolicName="AuthorizationServices" TypeDefinition="ua:FolderType">
     <opc:Children>
       <opc:Object SymbolicName="ServiceName_Placeholder" TypeDefinition="AuthorizationServiceType"  ModellingRule="OptionalPlaceholder">
@@ -339,19 +343,29 @@
 
   <opc:ObjectType SymbolicName="AuthorizationServiceType" BaseType="ua:BaseObjectType">
     <opc:Children>
-      <opc:Property SymbolicName="UserTokenPolicies"  DataType="ua:UserTokenPolicy" ValueRank="Array" ModellingRule="Optional" />
+      <opc:Property SymbolicName="ServiceUri"  DataType="ua:String" ValueRank="Scalar" ModellingRule="Mandatory" />
       <opc:Property SymbolicName="ServiceCertificate"  DataType="ua:ByteString" ValueRank="Scalar" ModellingRule="Mandatory" />
-      <opc:Method SymbolicName="RequestAccessToken" TypeDefinition="AuthorizationServiceRequestAccessTokenMethodType" ModellingRule="Optional" />
+      <opc:Property SymbolicName="UserTokenPolicies"  DataType="ua:UserTokenPolicy" ValueRank="Array" ModellingRule="Optional" />
+      <opc:Method SymbolicName="GetServiceDescription" TypeDefinition="GetServiceDescriptionMethodType" ModellingRule="Mandatory" />
+      <opc:Method SymbolicName="RequestAccessToken" TypeDefinition="RequestAccessTokenMethodType" ModellingRule="Optional" />
     </opc:Children>
   </opc:ObjectType>
 
-  <opc:Method SymbolicName="AuthorizationServiceRequestAccessTokenMethodType">
+  <opc:Method SymbolicName="GetServiceDescriptionMethodType">
+    <opc:OutputArguments>
+      <opc:Argument Name="ServiceUri" DataType="ua:String"></opc:Argument>
+      <opc:Argument Name="ServiceCertificate" DataType="ua:ByteString"></opc:Argument>
+      <opc:Argument Name="UserTokenPolicies" DataType="ua:UserTokenPolicy" ValueRank="Array"></opc:Argument>
+    </opc:OutputArguments>
+  </opc:Method>
+
+  <opc:Method SymbolicName="RequestAccessTokenMethodType">
     <opc:InputArguments>
       <opc:Argument Name="IdentityToken" DataType="ua:UserIdentityToken"></opc:Argument>
       <opc:Argument Name="ResourceId" DataType="ua:String"></opc:Argument>
     </opc:InputArguments>
     <opc:OutputArguments>
-      <opc:Argument Name="AccessToken" DataType="ua:ByteString"></opc:Argument>
+      <opc:Argument Name="AccessToken" DataType="ua:String"></opc:Argument>
     </opc:OutputArguments>
   </opc:Method>
 
@@ -411,7 +425,5 @@
       </opc:Reference>
     </opc:References>
   </opc:Object>
-  
-  
   
 </opc:ModelDesign>

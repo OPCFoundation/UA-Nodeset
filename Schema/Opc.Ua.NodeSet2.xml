@@ -22584,8 +22584,8 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAObject NodeId="i=17992" BrowseName="KeyCredentialManagement">
-    <DisplayName>KeyCredentialManagement</DisplayName>
+  <UAObject NodeId="i=18155" BrowseName="KeyCredentialConfiguration">
+    <DisplayName>KeyCredentialConfiguration</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">i=12637</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
@@ -22594,8 +22594,8 @@
   <UAObjectType NodeId="i=18001" BrowseName="KeyCredentialConfigurationType">
     <DisplayName>KeyCredentialConfigurationType</DisplayName>
     <References>
-      <Reference ReferenceType="HasProperty">i=18002</Reference>
-      <Reference ReferenceType="HasProperty">i=18003</Reference>
+      <Reference ReferenceType="HasProperty">i=18069</Reference>
+      <Reference ReferenceType="HasProperty">i=18165</Reference>
       <Reference ReferenceType="HasProperty">i=18004</Reference>
       <Reference ReferenceType="HasProperty">i=18005</Reference>
       <Reference ReferenceType="HasComponent">i=18006</Reference>
@@ -22603,15 +22603,15 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=18002" BrowseName="Uri" ParentNodeId="i=18001" DataType="String">
-    <DisplayName>Uri</DisplayName>
+  <UAVariable NodeId="i=18069" BrowseName="ResourceUri" ParentNodeId="i=18001" DataType="String">
+    <DisplayName>ResourceUri</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=18001</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=18003" BrowseName="ProfileUri" ParentNodeId="i=18001" DataType="String">
+  <UAVariable NodeId="i=18165" BrowseName="ProfileUri" ParentNodeId="i=18001" DataType="String">
     <DisplayName>ProfileUri</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -22716,22 +22716,6 @@
             </Argument>
           </Body>
         </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>RequestTime</Name>
-              <DataType>
-                <Identifier>i=13</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
-            </Argument>
-          </Body>
-        </ExtensionObject>
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
@@ -22779,13 +22763,14 @@
   <UAObjectType NodeId="i=17852" BrowseName="AuthorizationServiceConfigurationType">
     <DisplayName>AuthorizationServiceConfigurationType</DisplayName>
     <References>
-      <Reference ReferenceType="HasProperty">i=18067</Reference>
+      <Reference ReferenceType="HasProperty">i=18072</Reference>
       <Reference ReferenceType="HasProperty">i=17860</Reference>
+      <Reference ReferenceType="HasProperty">i=18073</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=18067" BrowseName="Uri" ParentNodeId="i=17852" DataType="String">
-    <DisplayName>Uri</DisplayName>
+  <UAVariable NodeId="i=18072" BrowseName="ServiceUri" ParentNodeId="i=17852" DataType="String">
+    <DisplayName>ServiceUri</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -22794,6 +22779,14 @@
   </UAVariable>
   <UAVariable NodeId="i=17860" BrowseName="ServiceCertificate" ParentNodeId="i=17852" DataType="ByteString">
     <DisplayName>ServiceCertificate</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=17852</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=18073" BrowseName="IssuerEndpointUrl" ParentNodeId="i=17852" DataType="String">
+    <DisplayName>IssuerEndpointUrl</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -30529,6 +30522,85 @@
       <Field Name="Permissions" DataType="i=7" />
     </Definition>
   </UADataType>
+  <UADataType NodeId="i=97" BrowseName="DataTypeDefinition">
+    <DisplayName>DataTypeDefinition</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="i=98" BrowseName="StructureType">
+    <DisplayName>StructureType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=14528</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+    </References>
+    <Definition Name="StructureType">
+      <Field Name="Structure" Value="0" />
+      <Field Name="StructureWithOptionalFields" Value="1" />
+      <Field Name="Union" Value="2" />
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="i=14528" BrowseName="EnumStrings" ParentNodeId="i=98" DataType="LocalizedText" ValueRank="1">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=98</Reference>
+    </References>
+    <Value>
+      <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Structure</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>StructureWithOptionalFields</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Union</Text>
+        </LocalizedText>
+      </ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="i=101" BrowseName="StructureField">
+    <DisplayName>StructureField</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="StructureField">
+      <Field Name="Name" DataType="i=12" />
+      <Field Name="Description" DataType="i=21" />
+      <Field Name="DataType" DataType="i=17" />
+      <Field Name="ValueRank" DataType="i=6" />
+      <Field Name="IsOptional" DataType="i=1" />
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="i=99" BrowseName="StructureDefinition">
+    <DisplayName>StructureDefinition</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=97</Reference>
+    </References>
+    <Definition Name="StructureDefinition">
+      <Field Name="DefaultEncodingId" DataType="i=17" />
+      <Field Name="BaseDataType" DataType="i=17" />
+      <Field Name="StructureType" DataType="i=98" />
+      <Field Name="Fields" DataType="i=101" ValueRank="1" />
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="i=100" BrowseName="EnumDefinition">
+    <DisplayName>EnumDefinition</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=97</Reference>
+    </References>
+    <Definition Name="EnumDefinition">
+      <Field Name="Fields" DataType="i=102" ValueRank="1" />
+    </Definition>
+  </UADataType>
   <UADataType NodeId="i=296" BrowseName="Argument">
     <DisplayName>Argument</DisplayName>
     <Description>An argument for a method.</Description>
@@ -33839,6 +33911,38 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
+  <UAObject NodeId="i=14797" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=97</Reference>
+      <Reference ReferenceType="HasDescription">i=18166</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=14800" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=101</Reference>
+      <Reference ReferenceType="HasDescription">i=18169</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=14798" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=99</Reference>
+      <Reference ReferenceType="HasDescription">i=18172</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=14799" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=100</Reference>
+      <Reference ReferenceType="HasDescription">i=18175</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
   <UAObject NodeId="i=297" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
@@ -34335,6 +34439,10 @@
       <Reference ReferenceType="HasComponent">i=14320</Reference>
       <Reference ReferenceType="HasComponent">i=14835</Reference>
       <Reference ReferenceType="HasComponent">i=16127</Reference>
+      <Reference ReferenceType="HasComponent">i=18166</Reference>
+      <Reference ReferenceType="HasComponent">i=18169</Reference>
+      <Reference ReferenceType="HasComponent">i=18172</Reference>
+      <Reference ReferenceType="HasComponent">i=18175</Reference>
       <Reference ReferenceType="HasComponent">i=8285</Reference>
       <Reference ReferenceType="HasComponent">i=8291</Reference>
       <Reference ReferenceType="HasComponent">i=14826</Reference>
@@ -38252,6 +38360,46 @@ DQo8L3hzOnNjaGVtYT4=</ByteString>
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='RolePermissionType']</String>
     </Value>
   </UAVariable>
+  <UAVariable NodeId="i=18166" BrowseName="DataTypeDefinition" ParentNodeId="i=8252" DataType="String">
+    <DisplayName>DataTypeDefinition</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=8252</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='DataTypeDefinition']</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="i=18169" BrowseName="StructureField" ParentNodeId="i=8252" DataType="String">
+    <DisplayName>StructureField</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=8252</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='StructureField']</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="i=18172" BrowseName="StructureDefinition" ParentNodeId="i=8252" DataType="String">
+    <DisplayName>StructureDefinition</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=8252</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='StructureDefinition']</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="i=18175" BrowseName="EnumDefinition" ParentNodeId="i=8252" DataType="String">
+    <DisplayName>EnumDefinition</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=8252</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='EnumDefinition']</String>
+    </Value>
+  </UAVariable>
   <UAVariable NodeId="i=8285" BrowseName="Argument" ParentNodeId="i=8252" DataType="String">
     <DisplayName>Argument</DisplayName>
     <References>
@@ -38948,6 +39096,38 @@ DQo8L3hzOnNjaGVtYT4=</ByteString>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
+  <UAObject NodeId="i=121" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=97</Reference>
+      <Reference ReferenceType="HasDescription">i=18178</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=14844" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=101</Reference>
+      <Reference ReferenceType="HasDescription">i=18181</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=122" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=99</Reference>
+      <Reference ReferenceType="HasDescription">i=18184</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=123" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=100</Reference>
+      <Reference ReferenceType="HasDescription">i=18187</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
   <UAObject NodeId="i=298" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
     <References>
@@ -39444,6 +39624,10 @@ DQo8L3hzOnNjaGVtYT4=</ByteString>
       <Reference ReferenceType="HasComponent">i=14324</Reference>
       <Reference ReferenceType="HasComponent">i=14879</Reference>
       <Reference ReferenceType="HasComponent">i=16131</Reference>
+      <Reference ReferenceType="HasComponent">i=18178</Reference>
+      <Reference ReferenceType="HasComponent">i=18181</Reference>
+      <Reference ReferenceType="HasComponent">i=18184</Reference>
+      <Reference ReferenceType="HasComponent">i=18187</Reference>
       <Reference ReferenceType="HasComponent">i=7650</Reference>
       <Reference ReferenceType="HasComponent">i=7656</Reference>
       <Reference ReferenceType="HasComponent">i=14870</Reference>
@@ -42393,6 +42577,46 @@ Lz4NCiAgPC9vcGM6RW51bWVyYXRlZFR5cGU+DQoNCjwvb3BjOlR5cGVEaWN0aW9uYXJ5Pg==</ByteSt
     </References>
     <Value>
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">RolePermissionType</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="i=18178" BrowseName="DataTypeDefinition" ParentNodeId="i=7617" DataType="String">
+    <DisplayName>DataTypeDefinition</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=7617</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">DataTypeDefinition</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="i=18181" BrowseName="StructureField" ParentNodeId="i=7617" DataType="String">
+    <DisplayName>StructureField</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=7617</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">StructureField</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="i=18184" BrowseName="StructureDefinition" ParentNodeId="i=7617" DataType="String">
+    <DisplayName>StructureDefinition</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=7617</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">StructureDefinition</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="i=18187" BrowseName="EnumDefinition" ParentNodeId="i=7617" DataType="String">
+    <DisplayName>EnumDefinition</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=7617</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">EnumDefinition</String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="i=7650" BrowseName="Argument" ParentNodeId="i=7617" DataType="String">

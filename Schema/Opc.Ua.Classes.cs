@@ -57437,11 +57437,10 @@ namespace Opc.Ua
 
         private const string UpdateCredential_InitializationString =
            "//////////8EYYIKBAAAAAAAEAAAAFVwZGF0ZUNyZWRlbnRpYWwBAFZGAC8BAFZGVkYAAAEB/////wEA" +
-           "AAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQBXRgAuAERXRgAAlgUAAAABACoBARsAAAAMAAAA" +
+           "AAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQBXRgAuAERXRgAAlgQAAAABACoBARsAAAAMAAAA" +
            "Q3JlZGVudGlhbElkAAz/////AAAAAAABACoBAR8AAAAQAAAAQ3JlZGVudGlhbFNlY3JldAAP/////wAA" +
            "AAAAAQAqAQEkAAAAFQAAAENlcnRpZmljYXRlVGh1bWJwcmludAAM/////wAAAAAAAQAqAQEgAAAAEQAA" +
-           "AFNlY3VyaXR5UG9saWN5VXJpAAz/////AAAAAAABACoBARoAAAALAAAAUmVxdWVzdFRpbWUADf////8A" +
-           "AAAAAAEAKAEBAAAAAQH/////AAAAAA==";
+           "AFNlY3VyaXR5UG9saWN5VXJpAAz/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
 
         private const string DeleteCredential_InitializationString =
            "//////////8EYYIKBAAAAAAAEAAAAERlbGV0ZUNyZWRlbnRpYWwBAFhGAC8BAFhGWEYAAAEB/////wAA" +
@@ -57449,39 +57448,39 @@ namespace Opc.Ua
 
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAAJgAAAEtleUNyZWRlbnRpYWxDb25maWd1cmF0aW9uVHlwZUluc3RhbmNl" +
-           "AQBRRgEAUUb/////BgAAABVgiQoCAAAAAAADAAAAVXJpAQBSRgAuAERSRgAAAAz/////AQH/////AAAA" +
-           "ABVgiQoCAAAAAAAKAAAAUHJvZmlsZVVyaQEAU0YALgBEU0YAAAAM/////wEB/////wAAAAAVYIkKAgAA" +
-           "AAAADAAAAEVuZHBvaW50VXJscwEAVEYALgBEVEYAAAAMAQAAAAEB/////wAAAAAVYIkKAgAAAAAADQAA" +
-           "AFNlcnZpY2VTdGF0dXMBAFVGAC4ARFVGAAAAE/////8BAf////8AAAAABGGCCgQAAAAAABAAAABVcGRh" +
-           "dGVDcmVkZW50aWFsAQBWRgAvAQBWRlZGAAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3Vt" +
-           "ZW50cwEAV0YALgBEV0YAAJYFAAAAAQAqAQEbAAAADAAAAENyZWRlbnRpYWxJZAAM/////wAAAAAAAQAq" +
-           "AQEfAAAAEAAAAENyZWRlbnRpYWxTZWNyZXQAD/////8AAAAAAAEAKgEBJAAAABUAAABDZXJ0aWZpY2F0" +
-           "ZVRodW1icHJpbnQADP////8AAAAAAAEAKgEBIAAAABEAAABTZWN1cml0eVBvbGljeVVyaQAM/////wAA" +
-           "AAAAAQAqAQEaAAAACwAAAFJlcXVlc3RUaW1lAA3/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIK" +
-           "BAAAAAAAEAAAAERlbGV0ZUNyZWRlbnRpYWwBAFhGAC8BAFhGWEYAAAEB/////wAAAAA=";
+           "AQBRRgEAUUb/////BgAAABVgiQoCAAAAAAALAAAAUmVzb3VyY2VVcmkBAJVGAC4ARJVGAAAADP////8B" +
+           "Af////8AAAAAFWCJCgIAAAAAAAoAAABQcm9maWxlVXJpAQD1RgAuAET1RgAAAAz/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAAMAAAARW5kcG9pbnRVcmxzAQBURgAuAERURgAAAAwBAAAAAQH/////AAAAABVgiQoC" +
+           "AAAAAAANAAAAU2VydmljZVN0YXR1cwEAVUYALgBEVUYAAAAT/////wEB/////wAAAAAEYYIKBAAAAAAA" +
+           "EAAAAFVwZGF0ZUNyZWRlbnRpYWwBAFZGAC8BAFZGVkYAAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElu" +
+           "cHV0QXJndW1lbnRzAQBXRgAuAERXRgAAlgQAAAABACoBARsAAAAMAAAAQ3JlZGVudGlhbElkAAz/////" +
+           "AAAAAAABACoBAR8AAAAQAAAAQ3JlZGVudGlhbFNlY3JldAAP/////wAAAAAAAQAqAQEkAAAAFQAAAENl" +
+           "cnRpZmljYXRlVGh1bWJwcmludAAM/////wAAAAAAAQAqAQEgAAAAEQAAAFNlY3VyaXR5UG9saWN5VXJp" +
+           "AAz/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAAAEAAAAERlbGV0ZUNyZWRlbnRpYWwB" +
+           "AFhGAC8BAFhGWEYAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
         /// <summary>
-        /// A description for the Uri Property.
+        /// A description for the ResourceUri Property.
         /// </summary>
-        public PropertyState<string> Uri
+        public PropertyState<string> ResourceUri
         {
             get
             {
-                return m_uri;
+                return m_resourceUri;
             }
 
             set
             {
-                if (!Object.ReferenceEquals(m_uri, value))
+                if (!Object.ReferenceEquals(m_resourceUri, value))
                 {
                     ChangeMasks |= NodeStateChangeMasks.Children;
                 }
 
-                m_uri = value;
+                m_resourceUri = value;
             }
         }
 
@@ -57601,9 +57600,9 @@ namespace Opc.Ua
             ISystemContext context,
             IList<BaseInstanceState> children)
         {
-            if (m_uri != null)
+            if (m_resourceUri != null)
             {
-                children.Add(m_uri);
+                children.Add(m_resourceUri);
             }
 
             if (m_profileUri != null)
@@ -57652,24 +57651,24 @@ namespace Opc.Ua
 
             switch (browseName.Name)
             {
-                case Opc.Ua.BrowseNames.Uri:
+                case Opc.Ua.BrowseNames.ResourceUri:
                 {
                     if (createOrReplace)
                     {
-                        if (Uri == null)
+                        if (ResourceUri == null)
                         {
                             if (replacement == null)
                             {
-                                Uri = new PropertyState<string>(this);
+                                ResourceUri = new PropertyState<string>(this);
                             }
                             else
                             {
-                                Uri = (PropertyState<string>)replacement;
+                                ResourceUri = (PropertyState<string>)replacement;
                             }
                         }
                     }
 
-                    instance = Uri;
+                    instance = ResourceUri;
                     break;
                 }
 
@@ -57789,7 +57788,7 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
-        private PropertyState<string> m_uri;
+        private PropertyState<string> m_resourceUri;
         private PropertyState<string> m_profileUri;
         private PropertyState<string[]> m_endpointUrls;
         private PropertyState<StatusCode> m_serviceStatus;
@@ -57848,11 +57847,10 @@ namespace Opc.Ua
         #region Initialization String
         private const string InitializationString =
            "//////////8EYYIKBAAAAAAAHQAAAEtleUNyZWRlbnRpYWxVcGRhdGVNZXRob2RUeXBlAQBZRgAvAQBZ" +
-           "RllGAAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAWkYALgBEWkYAAJYFAAAA" +
+           "RllGAAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAWkYALgBEWkYAAJYEAAAA" +
            "AQAqAQEbAAAADAAAAENyZWRlbnRpYWxJZAAM/////wAAAAAAAQAqAQEfAAAAEAAAAENyZWRlbnRpYWxT" +
            "ZWNyZXQAD/////8AAAAAAAEAKgEBJAAAABUAAABDZXJ0aWZpY2F0ZVRodW1icHJpbnQADP////8AAAAA" +
-           "AAEAKgEBIAAAABEAAABTZWN1cml0eVBvbGljeVVyaQAM/////wAAAAAAAQAqAQEaAAAACwAAAFJlcXVl" +
-           "c3RUaW1lAA3/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
+           "AAEAKgEBIAAAABEAAABTZWN1cml0eVBvbGljeVVyaQAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -57893,7 +57891,6 @@ namespace Opc.Ua
             byte[] credentialSecret = (byte[])inputArguments[1];
             string certificateThumbprint = (string)inputArguments[2];
             string securityPolicyUri = (string)inputArguments[3];
-            DateTime requestTime = (DateTime)inputArguments[4];
 
             if (OnCall != null)
             {
@@ -57904,8 +57901,7 @@ namespace Opc.Ua
                     credentialId,
                     credentialSecret,
                     certificateThumbprint,
-                    securityPolicyUri,
-                    requestTime);
+                    securityPolicyUri);
             }
 
             return result;
@@ -57927,8 +57923,7 @@ namespace Opc.Ua
         string credentialId,
         byte[] credentialSecret,
         string certificateThumbprint,
-        string securityPolicyUri,
-        DateTime requestTime);
+        string securityPolicyUri);
     #endif
     #endregion
 
@@ -58372,32 +58367,33 @@ namespace Opc.Ua
         #region Initialization String
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAALQAAAEF1dGhvcml6YXRpb25TZXJ2aWNlQ29uZmlndXJhdGlvblR5cGVJ" +
-           "bnN0YW5jZQEAvEUBALxF/////wIAAAAVYIkKAgAAAAAAAwAAAFVyaQEAk0YALgBEk0YAAAAM/////wEB" +
-           "/////wAAAAAVYIkKAgAAAAAAEgAAAFNlcnZpY2VDZXJ0aWZpY2F0ZQEAxEUALgBExEUAAAAP/////wEB" +
-           "/////wAAAAA=";
+           "bnN0YW5jZQEAvEUBALxF/////wMAAAAVYIkKAgAAAAAACgAAAFNlcnZpY2VVcmkBAJhGAC4ARJhGAAAA" +
+           "DP////8BAf////8AAAAAFWCJCgIAAAAAABIAAABTZXJ2aWNlQ2VydGlmaWNhdGUBAMRFAC4ARMRFAAAA" +
+           "D/////8BAf////8AAAAAFWCJCgIAAAAAABEAAABJc3N1ZXJFbmRwb2ludFVybAEAmUYALgBEmUYAAAAM" +
+           "/////wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
         /// <summary>
-        /// A description for the Uri Property.
+        /// A description for the ServiceUri Property.
         /// </summary>
-        public PropertyState<string> Uri
+        public PropertyState<string> ServiceUri
         {
             get
             {
-                return m_uri;
+                return m_serviceUri;
             }
 
             set
             {
-                if (!Object.ReferenceEquals(m_uri, value))
+                if (!Object.ReferenceEquals(m_serviceUri, value))
                 {
                     ChangeMasks |= NodeStateChangeMasks.Children;
                 }
 
-                m_uri = value;
+                m_serviceUri = value;
             }
         }
 
@@ -58421,6 +58417,27 @@ namespace Opc.Ua
                 m_serviceCertificate = value;
             }
         }
+
+        /// <summary>
+        /// A description for the IssuerEndpointUrl Property.
+        /// </summary>
+        public PropertyState<string> IssuerEndpointUrl
+        {
+            get
+            {
+                return m_issuerEndpointUrl;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_issuerEndpointUrl, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_issuerEndpointUrl = value;
+            }
+        }
         #endregion
 
         #region Overridden Methods
@@ -58433,14 +58450,19 @@ namespace Opc.Ua
             ISystemContext context,
             IList<BaseInstanceState> children)
         {
-            if (m_uri != null)
+            if (m_serviceUri != null)
             {
-                children.Add(m_uri);
+                children.Add(m_serviceUri);
             }
 
             if (m_serviceCertificate != null)
             {
                 children.Add(m_serviceCertificate);
+            }
+
+            if (m_issuerEndpointUrl != null)
+            {
+                children.Add(m_issuerEndpointUrl);
             }
 
             base.GetChildren(context, children);
@@ -58464,24 +58486,24 @@ namespace Opc.Ua
 
             switch (browseName.Name)
             {
-                case Opc.Ua.BrowseNames.Uri:
+                case Opc.Ua.BrowseNames.ServiceUri:
                 {
                     if (createOrReplace)
                     {
-                        if (Uri == null)
+                        if (ServiceUri == null)
                         {
                             if (replacement == null)
                             {
-                                Uri = new PropertyState<string>(this);
+                                ServiceUri = new PropertyState<string>(this);
                             }
                             else
                             {
-                                Uri = (PropertyState<string>)replacement;
+                                ServiceUri = (PropertyState<string>)replacement;
                             }
                         }
                     }
 
-                    instance = Uri;
+                    instance = ServiceUri;
                     break;
                 }
 
@@ -58505,6 +58527,27 @@ namespace Opc.Ua
                     instance = ServiceCertificate;
                     break;
                 }
+
+                case Opc.Ua.BrowseNames.IssuerEndpointUrl:
+                {
+                    if (createOrReplace)
+                    {
+                        if (IssuerEndpointUrl == null)
+                        {
+                            if (replacement == null)
+                            {
+                                IssuerEndpointUrl = new PropertyState<string>(this);
+                            }
+                            else
+                            {
+                                IssuerEndpointUrl = (PropertyState<string>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = IssuerEndpointUrl;
+                    break;
+                }
             }
 
             if (instance != null)
@@ -58517,8 +58560,9 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
-        private PropertyState<string> m_uri;
+        private PropertyState<string> m_serviceUri;
         private PropertyState<byte[]> m_serviceCertificate;
+        private PropertyState<string> m_issuerEndpointUrl;
         #endregion
     }
     #endif

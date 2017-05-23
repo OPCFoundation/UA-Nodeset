@@ -1073,6 +1073,11 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadRequestNotAllowed 0x80E40000
 
 /*============================================================================
+ * The request has not been processed by the server yet.
+ *===========================================================================*/
+#define OpcUa_BadRequestNotComplete 0x81130000
+
+/*============================================================================
  * The value does not come from the real source and has been edited by the server.
  *===========================================================================*/
 #define OpcUa_GoodEdited 0x00DC0000

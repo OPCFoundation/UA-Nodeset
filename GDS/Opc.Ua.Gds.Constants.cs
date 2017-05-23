@@ -263,27 +263,37 @@ namespace Opc.Ua.Gds
         /// <summary>
         /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_StartRequest Method.
         /// </summary>
-        public const uint KeyCredentialManagement_ServiceName_Placeholder_StartRequest = 878;
+        public const uint KeyCredentialManagement_ServiceName_Placeholder_StartRequest = 1012;
 
         /// <summary>
         /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_FinishRequest Method.
         /// </summary>
-        public const uint KeyCredentialManagement_ServiceName_Placeholder_FinishRequest = 881;
+        public const uint KeyCredentialManagement_ServiceName_Placeholder_FinishRequest = 1015;
 
         /// <summary>
         /// The identifier for the KeyCredentialServiceType_StartRequest Method.
         /// </summary>
-        public const uint KeyCredentialServiceType_StartRequest = 889;
+        public const uint KeyCredentialServiceType_StartRequest = 1023;
 
         /// <summary>
         /// The identifier for the KeyCredentialServiceType_FinishRequest Method.
         /// </summary>
-        public const uint KeyCredentialServiceType_FinishRequest = 892;
+        public const uint KeyCredentialServiceType_FinishRequest = 1026;
 
         /// <summary>
         /// The identifier for the KeyCredentialServiceType_Revoke Method.
         /// </summary>
-        public const uint KeyCredentialServiceType_Revoke = 895;
+        public const uint KeyCredentialServiceType_Revoke = 1029;
+
+        /// <summary>
+        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_GetServiceDescription Method.
+        /// </summary>
+        public const uint AuthorizationServices_ServiceName_Placeholder_GetServiceDescription = 1001;
+
+        /// <summary>
+        /// The identifier for the AuthorizationServiceType_GetServiceDescription Method.
+        /// </summary>
+        public const uint AuthorizationServiceType_GetServiceDescription = 1004;
 
         /// <summary>
         /// The identifier for the AuthorizationServiceType_RequestAccessToken Method.
@@ -553,7 +563,7 @@ namespace Opc.Ua.Gds
         /// <summary>
         /// The identifier for the KeyCredentialManagement Object.
         /// </summary>
-        public const uint KeyCredentialManagement = 874;
+        public const uint KeyCredentialManagement = 1008;
 
         /// <summary>
         /// The identifier for the AuthorizationServices Object.
@@ -653,22 +663,22 @@ namespace Opc.Ua.Gds
         /// <summary>
         /// The identifier for the KeyCredentialServiceType ObjectType.
         /// </summary>
-        public const uint KeyCredentialServiceType = 886;
+        public const uint KeyCredentialServiceType = 1020;
 
         /// <summary>
         /// The identifier for the KeyCredentialRequestedAuditEventType ObjectType.
         /// </summary>
-        public const uint KeyCredentialRequestedAuditEventType = 905;
+        public const uint KeyCredentialRequestedAuditEventType = 1039;
 
         /// <summary>
         /// The identifier for the KeyCredentialDeliveredAuditEventType ObjectType.
         /// </summary>
-        public const uint KeyCredentialDeliveredAuditEventType = 923;
+        public const uint KeyCredentialDeliveredAuditEventType = 1057;
 
         /// <summary>
         /// The identifier for the KeyCredentialRevokedAuditEventType ObjectType.
         /// </summary>
-        public const uint KeyCredentialRevokedAuditEventType = 941;
+        public const uint KeyCredentialRevokedAuditEventType = 1075;
 
         /// <summary>
         /// The identifier for the AuthorizationServiceType ObjectType.
@@ -1321,79 +1331,89 @@ namespace Opc.Ua.Gds
         public const uint CertificateDeliveredAuditEventType_CertificateType = 720;
 
         /// <summary>
-        /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_Uri Variable.
+        /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_ResourceUri Variable.
         /// </summary>
-        public const uint KeyCredentialManagement_ServiceName_Placeholder_Uri = 876;
+        public const uint KeyCredentialManagement_ServiceName_Placeholder_ResourceUri = 1010;
 
         /// <summary>
-        /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_ProfileUri Variable.
+        /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_ProfileUris Variable.
         /// </summary>
-        public const uint KeyCredentialManagement_ServiceName_Placeholder_ProfileUri = 877;
+        public const uint KeyCredentialManagement_ServiceName_Placeholder_ProfileUris = 1011;
 
         /// <summary>
         /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_StartRequest_InputArguments Variable.
         /// </summary>
-        public const uint KeyCredentialManagement_ServiceName_Placeholder_StartRequest_InputArguments = 879;
+        public const uint KeyCredentialManagement_ServiceName_Placeholder_StartRequest_InputArguments = 1013;
 
         /// <summary>
         /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_StartRequest_OutputArguments Variable.
         /// </summary>
-        public const uint KeyCredentialManagement_ServiceName_Placeholder_StartRequest_OutputArguments = 880;
+        public const uint KeyCredentialManagement_ServiceName_Placeholder_StartRequest_OutputArguments = 1014;
 
         /// <summary>
         /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_FinishRequest_InputArguments Variable.
         /// </summary>
-        public const uint KeyCredentialManagement_ServiceName_Placeholder_FinishRequest_InputArguments = 882;
+        public const uint KeyCredentialManagement_ServiceName_Placeholder_FinishRequest_InputArguments = 1016;
 
         /// <summary>
         /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_FinishRequest_OutputArguments Variable.
         /// </summary>
-        public const uint KeyCredentialManagement_ServiceName_Placeholder_FinishRequest_OutputArguments = 883;
+        public const uint KeyCredentialManagement_ServiceName_Placeholder_FinishRequest_OutputArguments = 1017;
 
         /// <summary>
         /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_Revoke_InputArguments Variable.
         /// </summary>
-        public const uint KeyCredentialManagement_ServiceName_Placeholder_Revoke_InputArguments = 885;
+        public const uint KeyCredentialManagement_ServiceName_Placeholder_Revoke_InputArguments = 1019;
 
         /// <summary>
-        /// The identifier for the KeyCredentialServiceType_Uri Variable.
+        /// The identifier for the KeyCredentialServiceType_ResourceUri Variable.
         /// </summary>
-        public const uint KeyCredentialServiceType_Uri = 887;
+        public const uint KeyCredentialServiceType_ResourceUri = 1021;
 
         /// <summary>
-        /// The identifier for the KeyCredentialServiceType_ProfileUri Variable.
+        /// The identifier for the KeyCredentialServiceType_ProfileUris Variable.
         /// </summary>
-        public const uint KeyCredentialServiceType_ProfileUri = 888;
+        public const uint KeyCredentialServiceType_ProfileUris = 1022;
 
         /// <summary>
         /// The identifier for the KeyCredentialServiceType_StartRequest_InputArguments Variable.
         /// </summary>
-        public const uint KeyCredentialServiceType_StartRequest_InputArguments = 890;
+        public const uint KeyCredentialServiceType_StartRequest_InputArguments = 1024;
 
         /// <summary>
         /// The identifier for the KeyCredentialServiceType_StartRequest_OutputArguments Variable.
         /// </summary>
-        public const uint KeyCredentialServiceType_StartRequest_OutputArguments = 891;
+        public const uint KeyCredentialServiceType_StartRequest_OutputArguments = 1025;
 
         /// <summary>
         /// The identifier for the KeyCredentialServiceType_FinishRequest_InputArguments Variable.
         /// </summary>
-        public const uint KeyCredentialServiceType_FinishRequest_InputArguments = 893;
+        public const uint KeyCredentialServiceType_FinishRequest_InputArguments = 1027;
 
         /// <summary>
         /// The identifier for the KeyCredentialServiceType_FinishRequest_OutputArguments Variable.
         /// </summary>
-        public const uint KeyCredentialServiceType_FinishRequest_OutputArguments = 894;
+        public const uint KeyCredentialServiceType_FinishRequest_OutputArguments = 1028;
 
         /// <summary>
         /// The identifier for the KeyCredentialServiceType_Revoke_InputArguments Variable.
         /// </summary>
-        public const uint KeyCredentialServiceType_Revoke_InputArguments = 896;
+        public const uint KeyCredentialServiceType_Revoke_InputArguments = 1030;
+
+        /// <summary>
+        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_ServiceUri Variable.
+        /// </summary>
+        public const uint AuthorizationServices_ServiceName_Placeholder_ServiceUri = 1000;
 
         /// <summary>
         /// The identifier for the AuthorizationServices_ServiceName_Placeholder_ServiceCertificate Variable.
         /// </summary>
         public const uint AuthorizationServices_ServiceName_Placeholder_ServiceCertificate = 962;
+
+        /// <summary>
+        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_GetServiceDescription_OutputArguments Variable.
+        /// </summary>
+        public const uint AuthorizationServices_ServiceName_Placeholder_GetServiceDescription_OutputArguments = 1002;
 
         /// <summary>
         /// The identifier for the AuthorizationServices_ServiceName_Placeholder_RequestAccessToken_InputArguments Variable.
@@ -1406,14 +1426,24 @@ namespace Opc.Ua.Gds
         public const uint AuthorizationServices_ServiceName_Placeholder_RequestAccessToken_OutputArguments = 965;
 
         /// <summary>
-        /// The identifier for the AuthorizationServiceType_UserTokenPolicies Variable.
+        /// The identifier for the AuthorizationServiceType_ServiceUri Variable.
         /// </summary>
-        public const uint AuthorizationServiceType_UserTokenPolicies = 967;
+        public const uint AuthorizationServiceType_ServiceUri = 1003;
 
         /// <summary>
         /// The identifier for the AuthorizationServiceType_ServiceCertificate Variable.
         /// </summary>
         public const uint AuthorizationServiceType_ServiceCertificate = 968;
+
+        /// <summary>
+        /// The identifier for the AuthorizationServiceType_UserTokenPolicies Variable.
+        /// </summary>
+        public const uint AuthorizationServiceType_UserTokenPolicies = 967;
+
+        /// <summary>
+        /// The identifier for the AuthorizationServiceType_GetServiceDescription_OutputArguments Variable.
+        /// </summary>
+        public const uint AuthorizationServiceType_GetServiceDescription_OutputArguments = 1005;
 
         /// <summary>
         /// The identifier for the AuthorizationServiceType_RequestAccessToken_InputArguments Variable.
@@ -2139,6 +2169,16 @@ namespace Opc.Ua.Gds
         /// The identifier for the KeyCredentialServiceType_Revoke Method.
         /// </summary>
         public static readonly ExpandedNodeId KeyCredentialServiceType_Revoke = new ExpandedNodeId(Opc.Ua.Gds.Methods.KeyCredentialServiceType_Revoke, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <summary>
+        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_GetServiceDescription Method.
+        /// </summary>
+        public static readonly ExpandedNodeId AuthorizationServices_ServiceName_Placeholder_GetServiceDescription = new ExpandedNodeId(Opc.Ua.Gds.Methods.AuthorizationServices_ServiceName_Placeholder_GetServiceDescription, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <summary>
+        /// The identifier for the AuthorizationServiceType_GetServiceDescription Method.
+        /// </summary>
+        public static readonly ExpandedNodeId AuthorizationServiceType_GetServiceDescription = new ExpandedNodeId(Opc.Ua.Gds.Methods.AuthorizationServiceType_GetServiceDescription, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <summary>
         /// The identifier for the AuthorizationServiceType_RequestAccessToken Method.
@@ -3176,14 +3216,14 @@ namespace Opc.Ua.Gds
         public static readonly ExpandedNodeId CertificateDeliveredAuditEventType_CertificateType = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDeliveredAuditEventType_CertificateType, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <summary>
-        /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_Uri Variable.
+        /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_ResourceUri Variable.
         /// </summary>
-        public static readonly ExpandedNodeId KeyCredentialManagement_ServiceName_Placeholder_Uri = new ExpandedNodeId(Opc.Ua.Gds.Variables.KeyCredentialManagement_ServiceName_Placeholder_Uri, Opc.Ua.Gds.Namespaces.OpcUaGds);
+        public static readonly ExpandedNodeId KeyCredentialManagement_ServiceName_Placeholder_ResourceUri = new ExpandedNodeId(Opc.Ua.Gds.Variables.KeyCredentialManagement_ServiceName_Placeholder_ResourceUri, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <summary>
-        /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_ProfileUri Variable.
+        /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_ProfileUris Variable.
         /// </summary>
-        public static readonly ExpandedNodeId KeyCredentialManagement_ServiceName_Placeholder_ProfileUri = new ExpandedNodeId(Opc.Ua.Gds.Variables.KeyCredentialManagement_ServiceName_Placeholder_ProfileUri, Opc.Ua.Gds.Namespaces.OpcUaGds);
+        public static readonly ExpandedNodeId KeyCredentialManagement_ServiceName_Placeholder_ProfileUris = new ExpandedNodeId(Opc.Ua.Gds.Variables.KeyCredentialManagement_ServiceName_Placeholder_ProfileUris, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <summary>
         /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_StartRequest_InputArguments Variable.
@@ -3211,14 +3251,14 @@ namespace Opc.Ua.Gds
         public static readonly ExpandedNodeId KeyCredentialManagement_ServiceName_Placeholder_Revoke_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.KeyCredentialManagement_ServiceName_Placeholder_Revoke_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <summary>
-        /// The identifier for the KeyCredentialServiceType_Uri Variable.
+        /// The identifier for the KeyCredentialServiceType_ResourceUri Variable.
         /// </summary>
-        public static readonly ExpandedNodeId KeyCredentialServiceType_Uri = new ExpandedNodeId(Opc.Ua.Gds.Variables.KeyCredentialServiceType_Uri, Opc.Ua.Gds.Namespaces.OpcUaGds);
+        public static readonly ExpandedNodeId KeyCredentialServiceType_ResourceUri = new ExpandedNodeId(Opc.Ua.Gds.Variables.KeyCredentialServiceType_ResourceUri, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <summary>
-        /// The identifier for the KeyCredentialServiceType_ProfileUri Variable.
+        /// The identifier for the KeyCredentialServiceType_ProfileUris Variable.
         /// </summary>
-        public static readonly ExpandedNodeId KeyCredentialServiceType_ProfileUri = new ExpandedNodeId(Opc.Ua.Gds.Variables.KeyCredentialServiceType_ProfileUri, Opc.Ua.Gds.Namespaces.OpcUaGds);
+        public static readonly ExpandedNodeId KeyCredentialServiceType_ProfileUris = new ExpandedNodeId(Opc.Ua.Gds.Variables.KeyCredentialServiceType_ProfileUris, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <summary>
         /// The identifier for the KeyCredentialServiceType_StartRequest_InputArguments Variable.
@@ -3246,9 +3286,19 @@ namespace Opc.Ua.Gds
         public static readonly ExpandedNodeId KeyCredentialServiceType_Revoke_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.KeyCredentialServiceType_Revoke_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <summary>
+        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_ServiceUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId AuthorizationServices_ServiceName_Placeholder_ServiceUri = new ExpandedNodeId(Opc.Ua.Gds.Variables.AuthorizationServices_ServiceName_Placeholder_ServiceUri, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <summary>
         /// The identifier for the AuthorizationServices_ServiceName_Placeholder_ServiceCertificate Variable.
         /// </summary>
         public static readonly ExpandedNodeId AuthorizationServices_ServiceName_Placeholder_ServiceCertificate = new ExpandedNodeId(Opc.Ua.Gds.Variables.AuthorizationServices_ServiceName_Placeholder_ServiceCertificate, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <summary>
+        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_GetServiceDescription_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId AuthorizationServices_ServiceName_Placeholder_GetServiceDescription_OutputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.AuthorizationServices_ServiceName_Placeholder_GetServiceDescription_OutputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <summary>
         /// The identifier for the AuthorizationServices_ServiceName_Placeholder_RequestAccessToken_InputArguments Variable.
@@ -3261,14 +3311,24 @@ namespace Opc.Ua.Gds
         public static readonly ExpandedNodeId AuthorizationServices_ServiceName_Placeholder_RequestAccessToken_OutputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.AuthorizationServices_ServiceName_Placeholder_RequestAccessToken_OutputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <summary>
-        /// The identifier for the AuthorizationServiceType_UserTokenPolicies Variable.
+        /// The identifier for the AuthorizationServiceType_ServiceUri Variable.
         /// </summary>
-        public static readonly ExpandedNodeId AuthorizationServiceType_UserTokenPolicies = new ExpandedNodeId(Opc.Ua.Gds.Variables.AuthorizationServiceType_UserTokenPolicies, Opc.Ua.Gds.Namespaces.OpcUaGds);
+        public static readonly ExpandedNodeId AuthorizationServiceType_ServiceUri = new ExpandedNodeId(Opc.Ua.Gds.Variables.AuthorizationServiceType_ServiceUri, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <summary>
         /// The identifier for the AuthorizationServiceType_ServiceCertificate Variable.
         /// </summary>
         public static readonly ExpandedNodeId AuthorizationServiceType_ServiceCertificate = new ExpandedNodeId(Opc.Ua.Gds.Variables.AuthorizationServiceType_ServiceCertificate, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <summary>
+        /// The identifier for the AuthorizationServiceType_UserTokenPolicies Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId AuthorizationServiceType_UserTokenPolicies = new ExpandedNodeId(Opc.Ua.Gds.Variables.AuthorizationServiceType_UserTokenPolicies, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <summary>
+        /// The identifier for the AuthorizationServiceType_GetServiceDescription_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId AuthorizationServiceType_GetServiceDescription_OutputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.AuthorizationServiceType_GetServiceDescription_OutputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <summary>
         /// The identifier for the AuthorizationServiceType_RequestAccessToken_InputArguments Variable.
@@ -3865,6 +3925,11 @@ namespace Opc.Ua.Gds
         public const string GetCertificateStatus = "GetCertificateStatus";
 
         /// <summary>
+        /// The BrowseName for the GetServiceDescription component.
+        /// </summary>
+        public const string GetServiceDescription = "GetServiceDescription";
+
+        /// <summary>
         /// The BrowseName for the GetTrustList component.
         /// </summary>
         public const string GetTrustList = "GetTrustList";
@@ -3930,9 +3995,9 @@ namespace Opc.Ua.Gds
         public const string OPCUAGDSNamespaceMetadata = "http://opcfoundation.org/UA/GDS/";
 
         /// <summary>
-        /// The BrowseName for the ProfileUri component.
+        /// The BrowseName for the ProfileUris component.
         /// </summary>
-        public const string ProfileUri = "ProfileUri";
+        public const string ProfileUris = "ProfileUris";
 
         /// <summary>
         /// The BrowseName for the QueryApplications component.
@@ -3955,6 +4020,11 @@ namespace Opc.Ua.Gds
         public const string RequestAccessToken = "RequestAccessToken";
 
         /// <summary>
+        /// The BrowseName for the ResourceUri component.
+        /// </summary>
+        public const string ResourceUri = "ResourceUri";
+
+        /// <summary>
         /// The BrowseName for the Revoke component.
         /// </summary>
         public const string Revoke = "Revoke";
@@ -3968,6 +4038,11 @@ namespace Opc.Ua.Gds
         /// The BrowseName for the ServiceName_Placeholder component.
         /// </summary>
         public const string ServiceName_Placeholder = "<ServiceName>";
+
+        /// <summary>
+        /// The BrowseName for the ServiceUri component.
+        /// </summary>
+        public const string ServiceUri = "ServiceUri";
 
         /// <summary>
         /// The BrowseName for the StartNewKeyPairRequest component.
@@ -4008,11 +4083,6 @@ namespace Opc.Ua.Gds
         /// The BrowseName for the UpdateApplication component.
         /// </summary>
         public const string UpdateApplication = "UpdateApplication";
-
-        /// <summary>
-        /// The BrowseName for the Uri component.
-        /// </summary>
-        public const string Uri = "Uri";
 
         /// <summary>
         /// The BrowseName for the UserTokenPolicies component.

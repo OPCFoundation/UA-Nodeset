@@ -704,9 +704,9 @@ namespace Opc.Ua.Gds
            "AR4AAAAPAAAAQXBwbGljYXRpb25OYW1lAAz/////AAAAAAABACoBAR0AAAAOAAAAQXBwbGljYXRpb25V" +
            "cmkADP////8AAAAAAAEAKgEBGQAAAAoAAABQcm9kdWN0VXJpAAz/////AAAAAAABACoBARsAAAAMAAAA" +
            "Q2FwYWJpbGl0aWVzAAwBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1" +
-           "dEFyZ3VtZW50cwEBYwMALgBEYwMAAJYCAAAAAQAqAQElAAAAFAAAAExhc3RDb3VudGVyUmVzZXRUaW1l" +
-           "AQAmAf////8AAAAAAAEAKgEBHQAAAAwAAABBcHBsaWNhdGlvbnMBADQBAQAAAAAAAAAAAQAoAQEAAAAB" +
-           "Af////8AAAAA";
+           "dEFyZ3VtZW50cwEBYwMALgBEYwMAAJYDAAAAAQAqAQElAAAAFAAAAExhc3RDb3VudGVyUmVzZXRUaW1l" +
+           "AQAmAf////8AAAAAAAEAKgEBGwAAAAwAAABOZXh0UmVjb3JkSWQAB/////8AAAAAAAEAKgEBHQAAAAwA" +
+           "AABBcHBsaWNhdGlvbnMBADQBAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -751,7 +751,8 @@ namespace Opc.Ua.Gds
             string[] capabilities = (string[])inputArguments[5];
 
             DateTime lastCounterResetTime = (DateTime)outputArguments[0];
-            ApplicationDescription[] applications = (ApplicationDescription[])outputArguments[1];
+            uint nextRecordId = (uint)outputArguments[1];
+            ApplicationDescription[] applications = (ApplicationDescription[])outputArguments[2];
 
             if (OnCall != null)
             {
@@ -766,11 +767,13 @@ namespace Opc.Ua.Gds
                     productUri,
                     capabilities,
                     ref lastCounterResetTime,
+                    ref nextRecordId,
                     ref applications);
             }
 
             outputArguments[0] = lastCounterResetTime;
-            outputArguments[1] = applications;
+            outputArguments[1] = nextRecordId;
+            outputArguments[2] = applications;
 
             return result;
         }
@@ -795,6 +798,7 @@ namespace Opc.Ua.Gds
         string productUri,
         string[] capabilities,
         ref DateTime lastCounterResetTime,
+        ref uint nextRecordId,
         ref ApplicationDescription[] applications);
     #endif
     #endregion
@@ -1028,17 +1032,18 @@ namespace Opc.Ua.Gds
            "ZWNvcmRzVG9SZXR1cm4AB/////8AAAAAAAEAKgEBHgAAAA8AAABBcHBsaWNhdGlvbk5hbWUADP////8A" +
            "AAAAAAEAKgEBHQAAAA4AAABBcHBsaWNhdGlvblVyaQAM/////wAAAAAAAQAqAQEZAAAACgAAAFByb2R1" +
            "Y3RVcmkADP////8AAAAAAAEAKgEBGwAAAAwAAABDYXBhYmlsaXRpZXMADAEAAAAAAAAAAAEAKAEBAAAA" +
-           "AQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQFmAwAuAERmAwAAlgIAAAABACoB" +
-           "ASUAAAAUAAAATGFzdENvdW50ZXJSZXNldFRpbWUBACYB/////wAAAAAAAQAqAQEdAAAADAAAAEFwcGxp" +
-           "Y2F0aW9ucwEANAEBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEADAAAAFF1ZXJ5U2Vy" +
-           "dmVycwEBFwAALwEBFwAXAAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBARgA" +
-           "AC4ARBgAAACWBgAAAAEAKgEBHwAAABAAAABTdGFydGluZ1JlY29yZElkAAf/////AAAAAAABACoBASEA" +
-           "AAASAAAATWF4UmVjb3Jkc1RvUmV0dXJuAAf/////AAAAAAABACoBAR4AAAAPAAAAQXBwbGljYXRpb25O" +
-           "YW1lAAz/////AAAAAAABACoBAR0AAAAOAAAAQXBwbGljYXRpb25VcmkADP////8AAAAAAAEAKgEBGQAA" +
-           "AAoAAABQcm9kdWN0VXJpAAz/////AAAAAAABACoBASEAAAASAAAAU2VydmVyQ2FwYWJpbGl0aWVzAAwB" +
-           "AAAAAAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBGQAA" +
-           "LgBEGQAAAJYCAAAAAQAqAQElAAAAFAAAAExhc3RDb3VudGVyUmVzZXRUaW1lAQAmAf////8AAAAAAAEA" +
-           "KgEBGAAAAAcAAABTZXJ2ZXJzAQCdLwEAAAAAAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
+           "AQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQFmAwAuAERmAwAAlgMAAAABACoB" +
+           "ASUAAAAUAAAATGFzdENvdW50ZXJSZXNldFRpbWUBACYB/////wAAAAAAAQAqAQEbAAAADAAAAE5leHRS" +
+           "ZWNvcmRJZAAH/////wAAAAAAAQAqAQEdAAAADAAAAEFwcGxpY2F0aW9ucwEANAEBAAAAAAAAAAABACgB" +
+           "AQAAAAEB/////wAAAAAEYYIKBAAAAAEADAAAAFF1ZXJ5U2VydmVycwEBFwAALwEBFwAXAAAAAQH/////" +
+           "AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBARgAAC4ARBgAAACWBgAAAAEAKgEBHwAAABAA" +
+           "AABTdGFydGluZ1JlY29yZElkAAf/////AAAAAAABACoBASEAAAASAAAATWF4UmVjb3Jkc1RvUmV0dXJu" +
+           "AAf/////AAAAAAABACoBAR4AAAAPAAAAQXBwbGljYXRpb25OYW1lAAz/////AAAAAAABACoBAR0AAAAO" +
+           "AAAAQXBwbGljYXRpb25VcmkADP////8AAAAAAAEAKgEBGQAAAAoAAABQcm9kdWN0VXJpAAz/////AAAA" +
+           "AAABACoBASEAAAASAAAAU2VydmVyQ2FwYWJpbGl0aWVzAAwBAAAAAAAAAAABACgBAQAAAAEB/////wAA" +
+           "AAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBGQAALgBEGQAAAJYCAAAAAQAqAQElAAAAFAAA" +
+           "AExhc3RDb3VudGVyUmVzZXRUaW1lAQAmAf////8AAAAAAAEAKgEBGAAAAAcAAABTZXJ2ZXJzAQCdLwEA" +
+           "AAAAAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -2468,87 +2473,88 @@ namespace Opc.Ua.Gds
            "TmFtZQAM/////wAAAAAAAQAqAQEdAAAADgAAAEFwcGxpY2F0aW9uVXJpAAz/////AAAAAAABACoBARkA" +
            "AAAKAAAAUHJvZHVjdFVyaQAM/////wAAAAAAAQAqAQEbAAAADAAAAENhcGFiaWxpdGllcwAMAQAAAAAA" +
            "AAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAWkDAC4ARGkD" +
-           "AACWAgAAAAEAKgEBJQAAABQAAABMYXN0Q291bnRlclJlc2V0VGltZQEAJgH/////AAAAAAABACoBAR0A" +
-           "AAAMAAAAQXBwbGljYXRpb25zAQA0AQEAAAAAAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQAM" +
-           "AAAAUXVlcnlTZXJ2ZXJzAQFJAAAvAQEXAEkAAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFy" +
-           "Z3VtZW50cwEBSgAALgBESgAAAJYGAAAAAQAqAQEfAAAAEAAAAFN0YXJ0aW5nUmVjb3JkSWQAB/////8A" +
-           "AAAAAAEAKgEBIQAAABIAAABNYXhSZWNvcmRzVG9SZXR1cm4AB/////8AAAAAAAEAKgEBHgAAAA8AAABB" +
-           "cHBsaWNhdGlvbk5hbWUADP////8AAAAAAAEAKgEBHQAAAA4AAABBcHBsaWNhdGlvblVyaQAM/////wAA" +
-           "AAAAAQAqAQEZAAAACgAAAFByb2R1Y3RVcmkADP////8AAAAAAAEAKgEBIQAAABIAAABTZXJ2ZXJDYXBh" +
-           "YmlsaXRpZXMADAEAAAAAAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJn" +
-           "dW1lbnRzAQFLAAAuAERLAAAAlgIAAAABACoBASUAAAAUAAAATGFzdENvdW50ZXJSZXNldFRpbWUBACYB" +
-           "/////wAAAAAAAQAqAQEYAAAABwAAAFNlcnZlcnMBAJ0vAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAA" +
-           "BGCACgEAAAABABEAAABDZXJ0aWZpY2F0ZUdyb3VwcwEB/wEAIwEA9TX/AQAA/////wEAAAAEYIAKAQAA" +
-           "AAAAFwAAAERlZmF1bHRBcHBsaWNhdGlvbkdyb3VwAQEAAgAvAQALMQACAAD/////AgAAAARggAoBAAAA" +
-           "AAAJAAAAVHJ1c3RMaXN0AQEBAgAvAQDqMAECAAD/////DAAAADVgiQoCAAAAAAAEAAAAU2l6ZQEBAgID" +
-           "AAAAAB4AAABUaGUgc2l6ZSBvZiB0aGUgZmlsZSBpbiBieXRlcy4ALgBEAgIAAAAJ/////wEB/////wAA" +
-           "AAA1YIkKAgAAAAAACAAAAFdyaXRhYmxlAQEDAgMAAAAAHQAAAFdoZXRoZXIgdGhlIGZpbGUgaXMgd3Jp" +
-           "dGFibGUuAC4ARAMCAAAAAf////8BAf////8AAAAANWCJCgIAAAAAAAwAAABVc2VyV3JpdGFibGUBAQQC" +
-           "AwAAAAAxAAAAV2hldGhlciB0aGUgZmlsZSBpcyB3cml0YWJsZSBieSB0aGUgY3VycmVudCB1c2VyLgAu" +
-           "AEQEAgAAAAH/////AQH/////AAAAADVgiQoCAAAAAAAJAAAAT3BlbkNvdW50AQEFAgMAAAAAKAAAAFRo" +
-           "ZSBjdXJyZW50IG51bWJlciBvZiBvcGVuIGZpbGUgaGFuZGxlcy4ALgBEBQIAAAAF/////wEB/////wAA" +
-           "AAAEYYIKBAAAAAAABAAAAE9wZW4BAQcCAC8BADwtBwIAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElu" +
-           "cHV0QXJndW1lbnRzAQEIAgAuAEQIAgAAlgEAAAABACoBARMAAAAEAAAATW9kZQAD/////wAAAAAAAQAo" +
-           "AQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAQkCAC4ARAkCAACWAQAA" +
-           "AAEAKgEBGQAAAAoAAABGaWxlSGFuZGxlAAf/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAA" +
-           "AAAABQAAAENsb3NlAQEKAgAvAQA/LQoCAAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3Vt" +
-           "ZW50cwEBCwIALgBECwIAAJYBAAAAAQAqAQEZAAAACgAAAEZpbGVIYW5kbGUAB/////8AAAAAAAEAKAEB" +
-           "AAAAAQH/////AAAAAARhggoEAAAAAAAEAAAAUmVhZAEBDAIALwEAQS0MAgAAAQH/////AgAAABVgqQoC" +
-           "AAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAQ0CAC4ARA0CAACWAgAAAAEAKgEBGQAAAAoAAABGaWxlSGFu" +
-           "ZGxlAAf/////AAAAAAABACoBARUAAAAGAAAATGVuZ3RoAAb/////AAAAAAABACgBAQAAAAEB/////wAA" +
-           "AAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBDgIALgBEDgIAAJYBAAAAAQAqAQETAAAABAAA" +
-           "AERhdGEAD/////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAAAFAAAAV3JpdGUBAQ8CAC8B" +
-           "AEQtDwIAAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQEQAgAuAEQQAgAAlgIA" +
-           "AAABACoBARkAAAAKAAAARmlsZUhhbmRsZQAH/////wAAAAAAAQAqAQETAAAABAAAAERhdGEAD/////8A" +
-           "AAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAAALAAAAR2V0UG9zaXRpb24BARECAC8BAEYtEQIA" +
-           "AAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQESAgAuAEQSAgAAlgEAAAABACoB" +
-           "ARkAAAAKAAAARmlsZUhhbmRsZQAH/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8A" +
-           "AABPdXRwdXRBcmd1bWVudHMBARMCAC4ARBMCAACWAQAAAAEAKgEBFwAAAAgAAABQb3NpdGlvbgAJ////" +
-           "/wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAAAAAsAAABTZXRQb3NpdGlvbgEBFAIALwEASS0U" +
-           "AgAAAQH/////AQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBARUCAC4ARBUCAACWAgAAAAEA" +
-           "KgEBGQAAAAoAAABGaWxlSGFuZGxlAAf/////AAAAAAABACoBARcAAAAIAAAAUG9zaXRpb24ACf////8A" +
-           "AAAAAAEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAAAOAAAATGFzdFVwZGF0ZVRpbWUBARYCAC4ARBYC" +
-           "AAABACYB/////wEB/////wAAAAAEYYIKBAAAAAAADQAAAE9wZW5XaXRoTWFza3MBARcCAC8BAP8wFwIA" +
-           "AAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQEYAgAuAEQYAgAAlgEAAAABACoB" +
-           "ARQAAAAFAAAATWFza3MAB/////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0" +
-           "cHV0QXJndW1lbnRzAQEZAgAuAEQZAgAAlgEAAAABACoBARkAAAAKAAAARmlsZUhhbmRsZQAH/////wAA" +
-           "AAAAAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAAAABAAAABDZXJ0aWZpY2F0ZVR5cGVzAQEhAgAuAEQh" +
-           "AgAAABEBAAAAAQH/////AAAAAARhggoEAAAAAQATAAAAU3RhcnRTaWduaW5nUmVxdWVzdAEBTwAALwEB" +
-           "TwBPAAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAVAAAC4ARFAAAACWBAAA" +
-           "AAEAKgEBHAAAAA0AAABBcHBsaWNhdGlvbklkABH/////AAAAAAABACoBASEAAAASAAAAQ2VydGlmaWNh" +
-           "dGVHcm91cElkABH/////AAAAAAABACoBASAAAAARAAAAQ2VydGlmaWNhdGVUeXBlSWQAEf////8AAAAA" +
-           "AAEAKgEBIQAAABIAAABDZXJ0aWZpY2F0ZVJlcXVlc3QAD/////8AAAAAAAEAKAEBAAAAAQH/////AAAA" +
-           "ABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQFRAAAuAERRAAAAlgEAAAABACoBARgAAAAJAAAA" +
-           "UmVxdWVzdElkABH/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEAFgAAAFN0YXJ0TmV3" +
-           "S2V5UGFpclJlcXVlc3QBAUwAAC8BAUwATAAAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJn" +
-           "dW1lbnRzAQFNAAAuAERNAAAAlgcAAAABACoBARwAAAANAAAAQXBwbGljYXRpb25JZAAR/////wAAAAAA" +
-           "AQAqAQEhAAAAEgAAAENlcnRpZmljYXRlR3JvdXBJZAAR/////wAAAAAAAQAqAQEgAAAAEQAAAENlcnRp" +
-           "ZmljYXRlVHlwZUlkABH/////AAAAAAABACoBARoAAAALAAAAU3ViamVjdE5hbWUADP////8AAAAAAAEA" +
-           "KgEBGgAAAAsAAABEb21haW5OYW1lcwAMAQAAAAAAAAAAAQAqAQEfAAAAEAAAAFByaXZhdGVLZXlGb3Jt" +
-           "YXQADP////8AAAAAAAEAKgEBIQAAABIAAABQcml2YXRlS2V5UGFzc3dvcmQADP////8AAAAAAAEAKAEB" +
-           "AAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQFOAAAuAEROAAAAlgEAAAAB" +
-           "ACoBARgAAAAJAAAAUmVxdWVzdElkABH/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEA" +
-           "DQAAAEZpbmlzaFJlcXVlc3QBAVUAAC8BAVUAVQAAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0" +
-           "QXJndW1lbnRzAQFWAAAuAERWAAAAlgIAAAABACoBARwAAAANAAAAQXBwbGljYXRpb25JZAAR/////wAA" +
-           "AAAAAQAqAQEYAAAACQAAAFJlcXVlc3RJZAAR/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIA" +
-           "AAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAVcAAC4ARFcAAACWAwAAAAEAKgEBGgAAAAsAAABDZXJ0aWZp" +
-           "Y2F0ZQAP/////wAAAAAAAQAqAQEZAAAACgAAAFByaXZhdGVLZXkAD/////8AAAAAAAEAKgEBIQAAABIA" +
-           "AABJc3N1ZXJDZXJ0aWZpY2F0ZXMADwEAAAAAAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQAU" +
-           "AAAAR2V0Q2VydGlmaWNhdGVHcm91cHMBAXEBAC8BAXEBcQEAAAEB/////wIAAAAVYKkKAgAAAAAADgAA" +
-           "AElucHV0QXJndW1lbnRzAQFyAQAuAERyAQAAlgEAAAABACoBARwAAAANAAAAQXBwbGljYXRpb25JZAAR" +
-           "/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAXMB" +
-           "AC4ARHMBAACWAQAAAAEAKgEBIgAAABMAAABDZXJ0aWZpY2F0ZUdyb3VwSWRzABEBAAAAAAAAAAABACgB" +
-           "AQAAAAEB/////wAAAAAEYYIKBAAAAAEADAAAAEdldFRydXN0TGlzdAEBxQAALwEBxQDFAAAAAQH/////" +
-           "AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAcYAAC4ARMYAAACWAgAAAAEAKgEBHAAAAA0A" +
-           "AABBcHBsaWNhdGlvbklkABH/////AAAAAAABACoBASEAAAASAAAAQ2VydGlmaWNhdGVHcm91cElkABH/" +
-           "////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBxwAA" +
-           "LgBExwAAAJYBAAAAAQAqAQEaAAAACwAAAFRydXN0TGlzdElkABH/////AAAAAAABACgBAQAAAAEB////" +
-           "/wAAAAAEYYIKBAAAAAEAFAAAAEdldENlcnRpZmljYXRlU3RhdHVzAQHeAAAvAQHeAN4AAAABAf////8C" +
-           "AAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEB3wAALgBE3wAAAJYDAAAAAQAqAQEcAAAADQAA" +
-           "AEFwcGxpY2F0aW9uSWQAEf////8AAAAAAAEAKgEBIQAAABIAAABDZXJ0aWZpY2F0ZUdyb3VwSWQAEf//" +
-           "//8AAAAAAAEAKgEBIAAAABEAAABDZXJ0aWZpY2F0ZVR5cGVJZAAR/////wAAAAAAAQAoAQEAAAABAf//" +
-           "//8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAeAAAC4AROAAAACWAQAAAAEAKgEBHQAA" +
-           "AA4AAABVcGRhdGVSZXF1aXJlZAAB/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
+           "AACWAwAAAAEAKgEBJQAAABQAAABMYXN0Q291bnRlclJlc2V0VGltZQEAJgH/////AAAAAAABACoBARsA" +
+           "AAAMAAAATmV4dFJlY29yZElkAAf/////AAAAAAABACoBAR0AAAAMAAAAQXBwbGljYXRpb25zAQA0AQEA" +
+           "AAAAAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQAMAAAAUXVlcnlTZXJ2ZXJzAQFJAAAvAQEX" +
+           "AEkAAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBSgAALgBESgAAAJYGAAAA" +
+           "AQAqAQEfAAAAEAAAAFN0YXJ0aW5nUmVjb3JkSWQAB/////8AAAAAAAEAKgEBIQAAABIAAABNYXhSZWNv" +
+           "cmRzVG9SZXR1cm4AB/////8AAAAAAAEAKgEBHgAAAA8AAABBcHBsaWNhdGlvbk5hbWUADP////8AAAAA" +
+           "AAEAKgEBHQAAAA4AAABBcHBsaWNhdGlvblVyaQAM/////wAAAAAAAQAqAQEZAAAACgAAAFByb2R1Y3RV" +
+           "cmkADP////8AAAAAAAEAKgEBIQAAABIAAABTZXJ2ZXJDYXBhYmlsaXRpZXMADAEAAAAAAAAAAAEAKAEB" +
+           "AAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQFLAAAuAERLAAAAlgIAAAAB" +
+           "ACoBASUAAAAUAAAATGFzdENvdW50ZXJSZXNldFRpbWUBACYB/////wAAAAAAAQAqAQEYAAAABwAAAFNl" +
+           "cnZlcnMBAJ0vAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAABGCACgEAAAABABEAAABDZXJ0aWZpY2F0" +
+           "ZUdyb3VwcwEB/wEAIwEA9TX/AQAA/////wEAAAAEYIAKAQAAAAAAFwAAAERlZmF1bHRBcHBsaWNhdGlv" +
+           "bkdyb3VwAQEAAgAvAQALMQACAAD/////AgAAAARggAoBAAAAAAAJAAAAVHJ1c3RMaXN0AQEBAgAvAQDq" +
+           "MAECAAD/////DAAAADVgiQoCAAAAAAAEAAAAU2l6ZQEBAgIDAAAAAB4AAABUaGUgc2l6ZSBvZiB0aGUg" +
+           "ZmlsZSBpbiBieXRlcy4ALgBEAgIAAAAJ/////wEB/////wAAAAA1YIkKAgAAAAAACAAAAFdyaXRhYmxl" +
+           "AQEDAgMAAAAAHQAAAFdoZXRoZXIgdGhlIGZpbGUgaXMgd3JpdGFibGUuAC4ARAMCAAAAAf////8BAf//" +
+           "//8AAAAANWCJCgIAAAAAAAwAAABVc2VyV3JpdGFibGUBAQQCAwAAAAAxAAAAV2hldGhlciB0aGUgZmls" +
+           "ZSBpcyB3cml0YWJsZSBieSB0aGUgY3VycmVudCB1c2VyLgAuAEQEAgAAAAH/////AQH/////AAAAADVg" +
+           "iQoCAAAAAAAJAAAAT3BlbkNvdW50AQEFAgMAAAAAKAAAAFRoZSBjdXJyZW50IG51bWJlciBvZiBvcGVu" +
+           "IGZpbGUgaGFuZGxlcy4ALgBEBQIAAAAF/////wEB/////wAAAAAEYYIKBAAAAAAABAAAAE9wZW4BAQcC" +
+           "AC8BADwtBwIAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQEIAgAuAEQIAgAA" +
+           "lgEAAAABACoBARMAAAAEAAAATW9kZQAD/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAA" +
+           "AA8AAABPdXRwdXRBcmd1bWVudHMBAQkCAC4ARAkCAACWAQAAAAEAKgEBGQAAAAoAAABGaWxlSGFuZGxl" +
+           "AAf/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAAABQAAAENsb3NlAQEKAgAvAQA/LQoC" +
+           "AAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBCwIALgBECwIAAJYBAAAAAQAq" +
+           "AQEZAAAACgAAAEZpbGVIYW5kbGUAB/////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAAAE" +
+           "AAAAUmVhZAEBDAIALwEAQS0MAgAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMB" +
+           "AQ0CAC4ARA0CAACWAgAAAAEAKgEBGQAAAAoAAABGaWxlSGFuZGxlAAf/////AAAAAAABACoBARUAAAAG" +
+           "AAAATGVuZ3RoAAb/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFy" +
+           "Z3VtZW50cwEBDgIALgBEDgIAAJYBAAAAAQAqAQETAAAABAAAAERhdGEAD/////8AAAAAAAEAKAEBAAAA" +
+           "AQH/////AAAAAARhggoEAAAAAAAFAAAAV3JpdGUBAQ8CAC8BAEQtDwIAAAEB/////wEAAAAVYKkKAgAA" +
+           "AAAADgAAAElucHV0QXJndW1lbnRzAQEQAgAuAEQQAgAAlgIAAAABACoBARkAAAAKAAAARmlsZUhhbmRs" +
+           "ZQAH/////wAAAAAAAQAqAQETAAAABAAAAERhdGEAD/////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARh" +
+           "ggoEAAAAAAALAAAAR2V0UG9zaXRpb24BARECAC8BAEYtEQIAAAEB/////wIAAAAVYKkKAgAAAAAADgAA" +
+           "AElucHV0QXJndW1lbnRzAQESAgAuAEQSAgAAlgEAAAABACoBARkAAAAKAAAARmlsZUhhbmRsZQAH////" +
+           "/wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBARMCAC4A" +
+           "RBMCAACWAQAAAAEAKgEBFwAAAAgAAABQb3NpdGlvbgAJ/////wAAAAAAAQAoAQEAAAABAf////8AAAAA" +
+           "BGGCCgQAAAAAAAsAAABTZXRQb3NpdGlvbgEBFAIALwEASS0UAgAAAQH/////AQAAABVgqQoCAAAAAAAO" +
+           "AAAASW5wdXRBcmd1bWVudHMBARUCAC4ARBUCAACWAgAAAAEAKgEBGQAAAAoAAABGaWxlSGFuZGxlAAf/" +
+           "////AAAAAAABACoBARcAAAAIAAAAUG9zaXRpb24ACf////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVg" +
+           "iQoCAAAAAAAOAAAATGFzdFVwZGF0ZVRpbWUBARYCAC4ARBYCAAABACYB/////wEB/////wAAAAAEYYIK" +
+           "BAAAAAAADQAAAE9wZW5XaXRoTWFza3MBARcCAC8BAP8wFwIAAAEB/////wIAAAAVYKkKAgAAAAAADgAA" +
+           "AElucHV0QXJndW1lbnRzAQEYAgAuAEQYAgAAlgEAAAABACoBARQAAAAFAAAATWFza3MAB/////8AAAAA" +
+           "AAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQEZAgAuAEQZAgAA" +
+           "lgEAAAABACoBARkAAAAKAAAARmlsZUhhbmRsZQAH/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCJ" +
+           "CgIAAAAAABAAAABDZXJ0aWZpY2F0ZVR5cGVzAQEhAgAuAEQhAgAAABEBAAAAAQH/////AAAAAARhggoE" +
+           "AAAAAQATAAAAU3RhcnRTaWduaW5nUmVxdWVzdAEBTwAALwEBTwBPAAAAAQH/////AgAAABVgqQoCAAAA" +
+           "AAAOAAAASW5wdXRBcmd1bWVudHMBAVAAAC4ARFAAAACWBAAAAAEAKgEBHAAAAA0AAABBcHBsaWNhdGlv" +
+           "bklkABH/////AAAAAAABACoBASEAAAASAAAAQ2VydGlmaWNhdGVHcm91cElkABH/////AAAAAAABACoB" +
+           "ASAAAAARAAAAQ2VydGlmaWNhdGVUeXBlSWQAEf////8AAAAAAAEAKgEBIQAAABIAAABDZXJ0aWZpY2F0" +
+           "ZVJlcXVlc3QAD/////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJn" +
+           "dW1lbnRzAQFRAAAuAERRAAAAlgEAAAABACoBARgAAAAJAAAAUmVxdWVzdElkABH/////AAAAAAABACgB" +
+           "AQAAAAEB/////wAAAAAEYYIKBAAAAAEAFgAAAFN0YXJ0TmV3S2V5UGFpclJlcXVlc3QBAUwAAC8BAUwA" +
+           "TAAAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFNAAAuAERNAAAAlgcAAAAB" +
+           "ACoBARwAAAANAAAAQXBwbGljYXRpb25JZAAR/////wAAAAAAAQAqAQEhAAAAEgAAAENlcnRpZmljYXRl" +
+           "R3JvdXBJZAAR/////wAAAAAAAQAqAQEgAAAAEQAAAENlcnRpZmljYXRlVHlwZUlkABH/////AAAAAAAB" +
+           "ACoBARoAAAALAAAAU3ViamVjdE5hbWUADP////8AAAAAAAEAKgEBGgAAAAsAAABEb21haW5OYW1lcwAM" +
+           "AQAAAAAAAAAAAQAqAQEfAAAAEAAAAFByaXZhdGVLZXlGb3JtYXQADP////8AAAAAAAEAKgEBIQAAABIA" +
+           "AABQcml2YXRlS2V5UGFzc3dvcmQADP////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAP" +
+           "AAAAT3V0cHV0QXJndW1lbnRzAQFOAAAuAEROAAAAlgEAAAABACoBARgAAAAJAAAAUmVxdWVzdElkABH/" +
+           "////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEADQAAAEZpbmlzaFJlcXVlc3QBAVUAAC8B" +
+           "AVUAVQAAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFWAAAuAERWAAAAlgIA" +
+           "AAABACoBARwAAAANAAAAQXBwbGljYXRpb25JZAAR/////wAAAAAAAQAqAQEYAAAACQAAAFJlcXVlc3RJ" +
+           "ZAAR/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMB" +
+           "AVcAAC4ARFcAAACWAwAAAAEAKgEBGgAAAAsAAABDZXJ0aWZpY2F0ZQAP/////wAAAAAAAQAqAQEZAAAA" +
+           "CgAAAFByaXZhdGVLZXkAD/////8AAAAAAAEAKgEBIQAAABIAAABJc3N1ZXJDZXJ0aWZpY2F0ZXMADwEA" +
+           "AAAAAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQAUAAAAR2V0Q2VydGlmaWNhdGVHcm91cHMB" +
+           "AXEBAC8BAXEBcQEAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFyAQAuAERy" +
+           "AQAAlgEAAAABACoBARwAAAANAAAAQXBwbGljYXRpb25JZAAR/////wAAAAAAAQAoAQEAAAABAf////8A" +
+           "AAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAXMBAC4ARHMBAACWAQAAAAEAKgEBIgAAABMA" +
+           "AABDZXJ0aWZpY2F0ZUdyb3VwSWRzABEBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEA" +
+           "DAAAAEdldFRydXN0TGlzdAEBxQAALwEBxQDFAAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRB" +
+           "cmd1bWVudHMBAcYAAC4ARMYAAACWAgAAAAEAKgEBHAAAAA0AAABBcHBsaWNhdGlvbklkABH/////AAAA" +
+           "AAABACoBASEAAAASAAAAQ2VydGlmaWNhdGVHcm91cElkABH/////AAAAAAABACgBAQAAAAEB/////wAA" +
+           "AAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBxwAALgBExwAAAJYBAAAAAQAqAQEaAAAACwAA" +
+           "AFRydXN0TGlzdElkABH/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEAFAAAAEdldENl" +
+           "cnRpZmljYXRlU3RhdHVzAQHeAAAvAQHeAN4AAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFy" +
+           "Z3VtZW50cwEB3wAALgBE3wAAAJYDAAAAAQAqAQEcAAAADQAAAEFwcGxpY2F0aW9uSWQAEf////8AAAAA" +
+           "AAEAKgEBIQAAABIAAABDZXJ0aWZpY2F0ZUdyb3VwSWQAEf////8AAAAAAAEAKgEBIAAAABEAAABDZXJ0" +
+           "aWZpY2F0ZVR5cGVJZAAR/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRw" +
+           "dXRBcmd1bWVudHMBAeAAAC4AROAAAACWAQAAAAEAKgEBHQAAAA4AAABVcGRhdGVSZXF1aXJlZAAB////" +
+           "/wAAAAAAAQAoAQEAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -3468,73 +3474,75 @@ namespace Opc.Ua.Gds
         #region Initialization String
         private const string Revoke_InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvR0RTL/////8EYYIKBAAAAAEABgAAAFJl" +
-           "dm9rZQEBfwMALwEBfwN/AwAAAQH/////AQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAYAD" +
-           "AC4ARIADAACWAQAAAAEAKgEBGwAAAAwAAABDcmVkZW50aWFsSWQADP////8AAAAAAAEAKAEBAAAAAQH/" +
+           "dm9rZQEBBQQALwEBBQQFBAAAAQH/////AQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAQYE" +
+           "AC4ARAYEAACWAQAAAAEAKgEBGwAAAAwAAABDcmVkZW50aWFsSWQADP////8AAAAAAAEAKAEBAAAAAQH/" +
            "////AAAAAA==";
 
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvR0RTL/////8EYIAAAQAAAAEAIAAAAEtl" +
-           "eUNyZWRlbnRpYWxTZXJ2aWNlVHlwZUluc3RhbmNlAQF2AwEBdgP/////BQAAABVgiQoCAAAAAQADAAAA" +
-           "VXJpAQF3AwAuAER3AwAAAAz/////AQH/////AAAAABVgiQoCAAAAAQAKAAAAUHJvZmlsZVVyaQEBeAMA" +
-           "LgBEeAMAAAAM/////wEB/////wAAAAAEYYIKBAAAAAEADAAAAFN0YXJ0UmVxdWVzdAEBeQMALwEBeQN5" +
-           "AwAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAXoDAC4ARHoDAACWAgAAAAEA" +
-           "KgEBGgAAAAsAAABDZXJ0aWZpY2F0ZQAP/////wAAAAAAAQAqAQEgAAAAEQAAAFNlY3VyaXR5UG9saWN5" +
-           "VXJpAAz/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50" +
-           "cwEBewMALgBEewMAAJYBAAAAAQAqAQEYAAAACQAAAFJlcXVlc3RJZAAR/////wAAAAAAAQAoAQEAAAAB" +
-           "Af////8AAAAABGGCCgQAAAABAA0AAABGaW5pc2hSZXF1ZXN0AQF8AwAvAQF8A3wDAAABAf////8CAAAA" +
-           "FWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBfQMALgBEfQMAAJYCAAAAAQAqAQEYAAAACQAAAFJl" +
-           "cXVlc3RJZAAR/////wAAAAAAAQAqAQEcAAAADQAAAENhbmNlbFJlcXVlc3QAAf////8AAAAAAAEAKAEB" +
-           "AAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQF+AwAuAER+AwAAlgQAAAAB" +
-           "ACoBARsAAAAMAAAAQ3JlZGVudGlhbElkAAz/////AAAAAAABACoBAR8AAAAQAAAAQ3JlZGVudGlhbFNl" +
-           "Y3JldAAP/////wAAAAAAAQAqAQEkAAAAFQAAAENlcnRpZmljYXRlVGh1bWJwcmludAAM/////wAAAAAA" +
-           "AQAqAQEgAAAAEQAAAFNlY3VyaXR5UG9saWN5VXJpAAz/////AAAAAAABACgBAQAAAAEB/////wAAAAAE" +
-           "YYIKBAAAAAEABgAAAFJldm9rZQEBfwMALwEBfwN/AwAAAQH/////AQAAABVgqQoCAAAAAAAOAAAASW5w" +
-           "dXRBcmd1bWVudHMBAYADAC4ARIADAACWAQAAAAEAKgEBGwAAAAwAAABDcmVkZW50aWFsSWQADP////8A" +
-           "AAAAAAEAKAEBAAAAAQH/////AAAAAA==";
+           "eUNyZWRlbnRpYWxTZXJ2aWNlVHlwZUluc3RhbmNlAQH8AwEB/AP/////BQAAABVgiQoCAAAAAQALAAAA" +
+           "UmVzb3VyY2VVcmkBAf0DAC4ARP0DAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABQcm9maWxl" +
+           "VXJpcwEB/gMALgBE/gMAAAAMAQAAAAEB/////wAAAAAEYYIKBAAAAAEADAAAAFN0YXJ0UmVxdWVzdAEB" +
+           "/wMALwEB/wP/AwAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAQAEAC4ARAAE" +
+           "AACWBAAAAAEAKgEBHQAAAA4AAABBcHBsaWNhdGlvblVyaQAM/////wAAAAAAAQAqAQEaAAAACwAAAENl" +
+           "cnRpZmljYXRlAA//////AAAAAAABACoBASAAAAARAAAAU2VjdXJpdHlQb2xpY3lVcmkADP////8AAAAA" +
+           "AAEAKgEBHQAAAA4AAABSZXF1ZXN0ZWRSb2xlcwARAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAAFWCp" +
+           "CgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAQEEAC4ARAEEAACWAQAAAAEAKgEBGAAAAAkAAABSZXF1" +
+           "ZXN0SWQAEf////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQANAAAARmluaXNoUmVxdWVz" +
+           "dAEBAgQALwEBAgQCBAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAQMEAC4A" +
+           "RAMEAACWAgAAAAEAKgEBGAAAAAkAAABSZXF1ZXN0SWQAEf////8AAAAAAAEAKgEBHAAAAA0AAABDYW5j" +
+           "ZWxSZXF1ZXN0AAH/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFy" +
+           "Z3VtZW50cwEBBAQALgBEBAQAAJYFAAAAAQAqAQEbAAAADAAAAENyZWRlbnRpYWxJZAAM/////wAAAAAA" +
+           "AQAqAQEfAAAAEAAAAENyZWRlbnRpYWxTZWNyZXQAD/////8AAAAAAAEAKgEBJAAAABUAAABDZXJ0aWZp" +
+           "Y2F0ZVRodW1icHJpbnQADP////8AAAAAAAEAKgEBIAAAABEAAABTZWN1cml0eVBvbGljeVVyaQAM////" +
+           "/wAAAAAAAQAqAQEbAAAADAAAAEdyYW50ZWRSb2xlcwARAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAA" +
+           "BGGCCgQAAAABAAYAAABSZXZva2UBAQUEAC8BAQUEBQQAAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElu" +
+           "cHV0QXJndW1lbnRzAQEGBAAuAEQGBAAAlgEAAAABACoBARsAAAAMAAAAQ3JlZGVudGlhbElkAAz/////" +
+           "AAAAAAABACgBAQAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
         /// <summary>
-        /// A description for the Uri Property.
+        /// A description for the ResourceUri Property.
         /// </summary>
-        public PropertyState<string> Uri
+        public PropertyState<string> ResourceUri
         {
             get
             {
-                return m_uri;
+                return m_resourceUri;
             }
 
             set
             {
-                if (!Object.ReferenceEquals(m_uri, value))
+                if (!Object.ReferenceEquals(m_resourceUri, value))
                 {
                     ChangeMasks |= NodeStateChangeMasks.Children;
                 }
 
-                m_uri = value;
+                m_resourceUri = value;
             }
         }
 
         /// <summary>
-        /// A description for the ProfileUri Property.
+        /// A description for the ProfileUris Property.
         /// </summary>
-        public PropertyState<string> ProfileUri
+        public PropertyState<string[]> ProfileUris
         {
             get
             {
-                return m_profileUri;
+                return m_profileUris;
             }
 
             set
             {
-                if (!Object.ReferenceEquals(m_profileUri, value))
+                if (!Object.ReferenceEquals(m_profileUris, value))
                 {
                     ChangeMasks |= NodeStateChangeMasks.Children;
                 }
 
-                m_profileUri = value;
+                m_profileUris = value;
             }
         }
 
@@ -3612,14 +3620,14 @@ namespace Opc.Ua.Gds
             ISystemContext context,
             IList<BaseInstanceState> children)
         {
-            if (m_uri != null)
+            if (m_resourceUri != null)
             {
-                children.Add(m_uri);
+                children.Add(m_resourceUri);
             }
 
-            if (m_profileUri != null)
+            if (m_profileUris != null)
             {
-                children.Add(m_profileUri);
+                children.Add(m_profileUris);
             }
 
             if (m_startRequestMethod != null)
@@ -3658,45 +3666,45 @@ namespace Opc.Ua.Gds
 
             switch (browseName.Name)
             {
-                case Opc.Ua.Gds.BrowseNames.Uri:
+                case Opc.Ua.Gds.BrowseNames.ResourceUri:
                 {
                     if (createOrReplace)
                     {
-                        if (Uri == null)
+                        if (ResourceUri == null)
                         {
                             if (replacement == null)
                             {
-                                Uri = new PropertyState<string>(this);
+                                ResourceUri = new PropertyState<string>(this);
                             }
                             else
                             {
-                                Uri = (PropertyState<string>)replacement;
+                                ResourceUri = (PropertyState<string>)replacement;
                             }
                         }
                     }
 
-                    instance = Uri;
+                    instance = ResourceUri;
                     break;
                 }
 
-                case Opc.Ua.Gds.BrowseNames.ProfileUri:
+                case Opc.Ua.Gds.BrowseNames.ProfileUris:
                 {
                     if (createOrReplace)
                     {
-                        if (ProfileUri == null)
+                        if (ProfileUris == null)
                         {
                             if (replacement == null)
                             {
-                                ProfileUri = new PropertyState<string>(this);
+                                ProfileUris = new PropertyState<string[]>(this);
                             }
                             else
                             {
-                                ProfileUri = (PropertyState<string>)replacement;
+                                ProfileUris = (PropertyState<string[]>)replacement;
                             }
                         }
                     }
 
-                    instance = ProfileUri;
+                    instance = ProfileUris;
                     break;
                 }
 
@@ -3774,8 +3782,8 @@ namespace Opc.Ua.Gds
         #endregion
 
         #region Private Fields
-        private PropertyState<string> m_uri;
-        private PropertyState<string> m_profileUri;
+        private PropertyState<string> m_resourceUri;
+        private PropertyState<string[]> m_profileUris;
         private KeyCredentialStartRequestMethodState m_startRequestMethod;
         private KeyCredentialFinishRequestMethodState m_finishRequestMethod;
         private KeyCredentialRevokeMethodState m_revokeMethod;
@@ -3832,11 +3840,13 @@ namespace Opc.Ua.Gds
         #region Initialization String
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvR0RTL/////8EYYIKBAAAAAEAIwAAAEtl" +
-           "eUNyZWRlbnRpYWxTdGFydFJlcXVlc3RNZXRob2RUeXBlAQGBAwAvAQGBA4EDAAABAf////8CAAAAFWCp" +
-           "CgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBggMALgBEggMAAJYCAAAAAQAqAQEaAAAACwAAAENlcnRp" +
-           "ZmljYXRlAA//////AAAAAAABACoBASAAAAARAAAAU2VjdXJpdHlQb2xpY3lVcmkADP////8AAAAAAAEA" +
-           "KAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQGDAwAuAESDAwAAlgEA" +
-           "AAABACoBARgAAAAJAAAAUmVxdWVzdElkABH/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
+           "eUNyZWRlbnRpYWxTdGFydFJlcXVlc3RNZXRob2RUeXBlAQEHBAAvAQEHBAcEAAABAf////8CAAAAFWCp" +
+           "CgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBCAQALgBECAQAAJYEAAAAAQAqAQEdAAAADgAAAEFwcGxp" +
+           "Y2F0aW9uVXJpAAz/////AAAAAAABACoBARoAAAALAAAAQ2VydGlmaWNhdGUAD/////8AAAAAAAEAKgEB" +
+           "IAAAABEAAABTZWN1cml0eVBvbGljeVVyaQAM/////wAAAAAAAQAqAQEdAAAADgAAAFJlcXVlc3RlZFJv" +
+           "bGVzABEBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50" +
+           "cwEBCQQALgBECQQAAJYBAAAAAQAqAQEYAAAACQAAAFJlcXVlc3RJZAAR/////wAAAAAAAQAoAQEAAAAB" +
+           "Af////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -3873,8 +3883,10 @@ namespace Opc.Ua.Gds
 
             ServiceResult result = null;
 
-            byte[] certificate = (byte[])inputArguments[0];
-            string securityPolicyUri = (string)inputArguments[1];
+            string applicationUri = (string)inputArguments[0];
+            byte[] certificate = (byte[])inputArguments[1];
+            string securityPolicyUri = (string)inputArguments[2];
+            NodeId[] requestedRoles = (NodeId[])inputArguments[3];
 
             NodeId requestId = (NodeId)outputArguments[0];
 
@@ -3884,8 +3896,10 @@ namespace Opc.Ua.Gds
                     context,
                     this,
                     objectId,
+                    applicationUri,
                     certificate,
                     securityPolicyUri,
+                    requestedRoles,
                     ref requestId);
             }
 
@@ -3907,8 +3921,10 @@ namespace Opc.Ua.Gds
         ISystemContext context,
         MethodState method,
         NodeId objectId,
+        string applicationUri,
         byte[] certificate,
         string securityPolicyUri,
+        NodeId[] requestedRoles,
         ref NodeId requestId);
     #endif
     #endregion
@@ -3961,13 +3977,14 @@ namespace Opc.Ua.Gds
         #region Initialization String
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvR0RTL/////8EYYIKBAAAAAEAJAAAAEtl" +
-           "eUNyZWRlbnRpYWxGaW5pc2hSZXF1ZXN0TWV0aG9kVHlwZQEBhAMALwEBhAOEAwAAAQH/////AgAAABVg" +
-           "qQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAYUDAC4ARIUDAACWAgAAAAEAKgEBGAAAAAkAAABSZXF1" +
+           "eUNyZWRlbnRpYWxGaW5pc2hSZXF1ZXN0TWV0aG9kVHlwZQEBCgQALwEBCgQKBAAAAQH/////AgAAABVg" +
+           "qQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAQsEAC4ARAsEAACWAgAAAAEAKgEBGAAAAAkAAABSZXF1" +
            "ZXN0SWQAEf////8AAAAAAAEAKgEBHAAAAA0AAABDYW5jZWxSZXF1ZXN0AAH/////AAAAAAABACgBAQAA" +
-           "AAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBhgMALgBEhgMAAJYEAAAAAQAq" +
+           "AAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBDAQALgBEDAQAAJYFAAAAAQAq" +
            "AQEbAAAADAAAAENyZWRlbnRpYWxJZAAM/////wAAAAAAAQAqAQEfAAAAEAAAAENyZWRlbnRpYWxTZWNy" +
            "ZXQAD/////8AAAAAAAEAKgEBJAAAABUAAABDZXJ0aWZpY2F0ZVRodW1icHJpbnQADP////8AAAAAAAEA" +
-           "KgEBIAAAABEAAABTZWN1cml0eVBvbGljeVVyaQAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
+           "KgEBIAAAABEAAABTZWN1cml0eVBvbGljeVVyaQAM/////wAAAAAAAQAqAQEbAAAADAAAAEdyYW50ZWRS" +
+           "b2xlcwARAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -4011,6 +4028,7 @@ namespace Opc.Ua.Gds
             byte[] credentialSecret = (byte[])outputArguments[1];
             string certificateThumbprint = (string)outputArguments[2];
             string securityPolicyUri = (string)outputArguments[3];
+            NodeId[] grantedRoles = (NodeId[])outputArguments[4];
 
             if (OnCall != null)
             {
@@ -4023,13 +4041,15 @@ namespace Opc.Ua.Gds
                     ref credentialId,
                     ref credentialSecret,
                     ref certificateThumbprint,
-                    ref securityPolicyUri);
+                    ref securityPolicyUri,
+                    ref grantedRoles);
             }
 
             outputArguments[0] = credentialId;
             outputArguments[1] = credentialSecret;
             outputArguments[2] = certificateThumbprint;
             outputArguments[3] = securityPolicyUri;
+            outputArguments[4] = grantedRoles;
 
             return result;
         }
@@ -4052,7 +4072,8 @@ namespace Opc.Ua.Gds
         ref string credentialId,
         ref byte[] credentialSecret,
         ref string certificateThumbprint,
-        ref string securityPolicyUri);
+        ref string securityPolicyUri,
+        ref NodeId[] grantedRoles);
     #endif
     #endregion
 
@@ -4104,8 +4125,8 @@ namespace Opc.Ua.Gds
         #region Initialization String
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvR0RTL/////8EYYIKBAAAAAEAHQAAAEtl" +
-           "eUNyZWRlbnRpYWxSZXZva2VNZXRob2RUeXBlAQGHAwAvAQGHA4cDAAABAf////8BAAAAFWCpCgIAAAAA" +
-           "AA4AAABJbnB1dEFyZ3VtZW50cwEBiAMALgBEiAMAAJYBAAAAAQAqAQEbAAAADAAAAENyZWRlbnRpYWxJ" +
+           "eUNyZWRlbnRpYWxSZXZva2VNZXRob2RUeXBlAQENBAAvAQENBA0EAAABAf////8BAAAAFWCpCgIAAAAA" +
+           "AA4AAABJbnB1dEFyZ3VtZW50cwEBDgQALgBEDgQAAJYBAAAAAQAqAQEbAAAADAAAAENyZWRlbnRpYWxJ" +
            "ZAAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
         #endregion
         #endif
@@ -4229,36 +4250,36 @@ namespace Opc.Ua.Gds
         #region Initialization String
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvR0RTL/////8EYIAAAQAAAAEALAAAAEtl" +
-           "eUNyZWRlbnRpYWxSZXF1ZXN0ZWRBdWRpdEV2ZW50VHlwZUluc3RhbmNlAQGJAwEBiQP/////EQAAADVg" +
-           "iQoCAAAAAAAHAAAARXZlbnRJZAEBigMDAAAAACsAAABBIGdsb2JhbGx5IHVuaXF1ZSBpZGVudGlmaWVy" +
-           "IGZvciB0aGUgZXZlbnQuAC4ARIoDAAAAD/////8BAf////8AAAAANWCJCgIAAAAAAAkAAABFdmVudFR5" +
-           "cGUBAYsDAwAAAAAiAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0eXBlLgAuAESLAwAAABH/" +
-           "////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBjAMDAAAAABgAAABUaGUgc291cmNl" +
-           "IG9mIHRoZSBldmVudC4ALgBEjAMAAAAR/////wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5h" +
-           "bWUBAY0DAwAAAAApAAAAQSBkZXNjcmlwdGlvbiBvZiB0aGUgc291cmNlIG9mIHRoZSBldmVudC4ALgBE" +
-           "jQMAAAAM/////wEB/////wAAAAA1YIkKAgAAAAAABAAAAFRpbWUBAY4DAwAAAAAYAAAAV2hlbiB0aGUg" +
-           "ZXZlbnQgb2NjdXJyZWQuAC4ARI4DAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACwAAAFJlY2Vp" +
-           "dmVUaW1lAQGPAwMAAAAAPgAAAFdoZW4gdGhlIHNlcnZlciByZWNlaXZlZCB0aGUgZXZlbnQgZnJvbSB0" +
-           "aGUgdW5kZXJseWluZyBzeXN0ZW0uAC4ARI8DAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACQAA" +
-           "AExvY2FsVGltZQEBkAMDAAAAADwAAABJbmZvcm1hdGlvbiBhYm91dCB0aGUgbG9jYWwgdGltZSB3aGVy" +
-           "ZSB0aGUgZXZlbnQgb3JpZ2luYXRlZC4ALgBEkAMAAAEA0CL/////AQH/////AAAAADVgiQoCAAAAAAAH" +
-           "AAAATWVzc2FnZQEBkQMDAAAAACUAAABBIGxvY2FsaXplZCBkZXNjcmlwdGlvbiBvZiB0aGUgZXZlbnQu" +
-           "AC4ARJEDAAAAFf////8BAf////8AAAAANWCJCgIAAAAAAAgAAABTZXZlcml0eQEBkgMDAAAAACEAAABJ" +
-           "bmRpY2F0ZXMgaG93IHVyZ2VudCBhbiBldmVudCBpcy4ALgBEkgMAAAAF/////wEB/////wAAAAA1YIkK" +
-           "AgAAAAAADwAAAEFjdGlvblRpbWVTdGFtcAEBkwMDAAAAAC4AAABXaGVuIHRoZSBhY3Rpb24gdHJpZ2dl" +
-           "cmluZyB0aGUgZXZlbnQgb2NjdXJyZWQuAC4ARJMDAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAA" +
-           "BgAAAFN0YXR1cwEBlAMDAAAAAGEAAABJZiBUUlVFIHRoZSBhY3Rpb24gd2FzIHBlcmZvcm1lZC4gSWYg" +
+           "eUNyZWRlbnRpYWxSZXF1ZXN0ZWRBdWRpdEV2ZW50VHlwZUluc3RhbmNlAQEPBAEBDwT/////EQAAADVg" +
+           "iQoCAAAAAAAHAAAARXZlbnRJZAEBEAQDAAAAACsAAABBIGdsb2JhbGx5IHVuaXF1ZSBpZGVudGlmaWVy" +
+           "IGZvciB0aGUgZXZlbnQuAC4ARBAEAAAAD/////8BAf////8AAAAANWCJCgIAAAAAAAkAAABFdmVudFR5" +
+           "cGUBAREEAwAAAAAiAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0eXBlLgAuAEQRBAAAABH/" +
+           "////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBEgQDAAAAABgAAABUaGUgc291cmNl" +
+           "IG9mIHRoZSBldmVudC4ALgBEEgQAAAAR/////wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5h" +
+           "bWUBARMEAwAAAAApAAAAQSBkZXNjcmlwdGlvbiBvZiB0aGUgc291cmNlIG9mIHRoZSBldmVudC4ALgBE" +
+           "EwQAAAAM/////wEB/////wAAAAA1YIkKAgAAAAAABAAAAFRpbWUBARQEAwAAAAAYAAAAV2hlbiB0aGUg" +
+           "ZXZlbnQgb2NjdXJyZWQuAC4ARBQEAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACwAAAFJlY2Vp" +
+           "dmVUaW1lAQEVBAMAAAAAPgAAAFdoZW4gdGhlIHNlcnZlciByZWNlaXZlZCB0aGUgZXZlbnQgZnJvbSB0" +
+           "aGUgdW5kZXJseWluZyBzeXN0ZW0uAC4ARBUEAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACQAA" +
+           "AExvY2FsVGltZQEBFgQDAAAAADwAAABJbmZvcm1hdGlvbiBhYm91dCB0aGUgbG9jYWwgdGltZSB3aGVy" +
+           "ZSB0aGUgZXZlbnQgb3JpZ2luYXRlZC4ALgBEFgQAAAEA0CL/////AQH/////AAAAADVgiQoCAAAAAAAH" +
+           "AAAATWVzc2FnZQEBFwQDAAAAACUAAABBIGxvY2FsaXplZCBkZXNjcmlwdGlvbiBvZiB0aGUgZXZlbnQu" +
+           "AC4ARBcEAAAAFf////8BAf////8AAAAANWCJCgIAAAAAAAgAAABTZXZlcml0eQEBGAQDAAAAACEAAABJ" +
+           "bmRpY2F0ZXMgaG93IHVyZ2VudCBhbiBldmVudCBpcy4ALgBEGAQAAAAF/////wEB/////wAAAAA1YIkK" +
+           "AgAAAAAADwAAAEFjdGlvblRpbWVTdGFtcAEBGQQDAAAAAC4AAABXaGVuIHRoZSBhY3Rpb24gdHJpZ2dl" +
+           "cmluZyB0aGUgZXZlbnQgb2NjdXJyZWQuAC4ARBkEAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAA" +
+           "BgAAAFN0YXR1cwEBGgQDAAAAAGEAAABJZiBUUlVFIHRoZSBhY3Rpb24gd2FzIHBlcmZvcm1lZC4gSWYg" +
            "RkFMU0UgdGhlIGFjdGlvbiBmYWlsZWQgYW5kIHRoZSBzZXJ2ZXIgc3RhdGUgZGlkIG5vdCBjaGFuZ2Uu" +
-           "AC4ARJQDAAAAAf////8BAf////8AAAAANWCJCgIAAAAAAAgAAABTZXJ2ZXJJZAEBlQMDAAAAADoAAABU" +
+           "AC4ARBoEAAAAAf////8BAf////8AAAAANWCJCgIAAAAAAAgAAABTZXJ2ZXJJZAEBGwQDAAAAADoAAABU" +
            "aGUgdW5pcXVlIGlkZW50aWZpZXIgZm9yIHRoZSBzZXJ2ZXIgZ2VuZXJhdGluZyB0aGUgZXZlbnQuAC4A" +
-           "RJUDAAAADP////8BAf////8AAAAANWCJCgIAAAAAABIAAABDbGllbnRBdWRpdEVudHJ5SWQBAZYDAwAA" +
+           "RBsEAAAADP////8BAf////8AAAAANWCJCgIAAAAAABIAAABDbGllbnRBdWRpdEVudHJ5SWQBARwEAwAA" +
            "AABDAAAAVGhlIGxvZyBlbnRyeSBpZCBwcm92aWRlZCBpbiB0aGUgcmVxdWVzdCB0aGF0IGluaXRpYXRl" +
-           "ZCB0aGUgYWN0aW9uLgAuAESWAwAAAAz/////AQH/////AAAAADVgiQoCAAAAAAAMAAAAQ2xpZW50VXNl" +
-           "cklkAQGXAwMAAAAASAAAAFRoZSB1c2VyIGlkZW50aXR5IGFzc29jaWF0ZWQgd2l0aCB0aGUgc2Vzc2lv" +
-           "biB0aGF0IGluaXRpYXRlZCB0aGUgYWN0aW9uLgAuAESXAwAAAAz/////AQH/////AAAAABVgiQoCAAAA" +
-           "AAAIAAAATWV0aG9kSWQBAZgDAC4ARJgDAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAA4AAABJbnB1" +
-           "dEFyZ3VtZW50cwEBmQMALgBEmQMAAAAYAQAAAAEB/////wAAAAAVYIkKAgAAAAAACwAAAFJlc291cmNl" +
-           "VXJpAQGaAwAuAESaAwAAAAz/////AQH/////AAAAAA==";
+           "ZCB0aGUgYWN0aW9uLgAuAEQcBAAAAAz/////AQH/////AAAAADVgiQoCAAAAAAAMAAAAQ2xpZW50VXNl" +
+           "cklkAQEdBAMAAAAASAAAAFRoZSB1c2VyIGlkZW50aXR5IGFzc29jaWF0ZWQgd2l0aCB0aGUgc2Vzc2lv" +
+           "biB0aGF0IGluaXRpYXRlZCB0aGUgYWN0aW9uLgAuAEQdBAAAAAz/////AQH/////AAAAABVgiQoCAAAA" +
+           "AAAIAAAATWV0aG9kSWQBAR4EAC4ARB4EAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAA4AAABJbnB1" +
+           "dEFyZ3VtZW50cwEBHwQALgBEHwQAAAAYAQAAAAEB/////wAAAAAVYIkKAgAAAAAACwAAAFJlc291cmNl" +
+           "VXJpAQEgBAAuAEQgBAAAAAz/////AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -4330,36 +4351,36 @@ namespace Opc.Ua.Gds
         #region Initialization String
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvR0RTL/////8EYIAAAQAAAAEALAAAAEtl" +
-           "eUNyZWRlbnRpYWxEZWxpdmVyZWRBdWRpdEV2ZW50VHlwZUluc3RhbmNlAQGbAwEBmwP/////EQAAADVg" +
-           "iQoCAAAAAAAHAAAARXZlbnRJZAEBnAMDAAAAACsAAABBIGdsb2JhbGx5IHVuaXF1ZSBpZGVudGlmaWVy" +
-           "IGZvciB0aGUgZXZlbnQuAC4ARJwDAAAAD/////8BAf////8AAAAANWCJCgIAAAAAAAkAAABFdmVudFR5" +
-           "cGUBAZ0DAwAAAAAiAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0eXBlLgAuAESdAwAAABH/" +
-           "////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBngMDAAAAABgAAABUaGUgc291cmNl" +
-           "IG9mIHRoZSBldmVudC4ALgBEngMAAAAR/////wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5h" +
-           "bWUBAZ8DAwAAAAApAAAAQSBkZXNjcmlwdGlvbiBvZiB0aGUgc291cmNlIG9mIHRoZSBldmVudC4ALgBE" +
-           "nwMAAAAM/////wEB/////wAAAAA1YIkKAgAAAAAABAAAAFRpbWUBAaADAwAAAAAYAAAAV2hlbiB0aGUg" +
-           "ZXZlbnQgb2NjdXJyZWQuAC4ARKADAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACwAAAFJlY2Vp" +
-           "dmVUaW1lAQGhAwMAAAAAPgAAAFdoZW4gdGhlIHNlcnZlciByZWNlaXZlZCB0aGUgZXZlbnQgZnJvbSB0" +
-           "aGUgdW5kZXJseWluZyBzeXN0ZW0uAC4ARKEDAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACQAA" +
-           "AExvY2FsVGltZQEBogMDAAAAADwAAABJbmZvcm1hdGlvbiBhYm91dCB0aGUgbG9jYWwgdGltZSB3aGVy" +
-           "ZSB0aGUgZXZlbnQgb3JpZ2luYXRlZC4ALgBEogMAAAEA0CL/////AQH/////AAAAADVgiQoCAAAAAAAH" +
-           "AAAATWVzc2FnZQEBowMDAAAAACUAAABBIGxvY2FsaXplZCBkZXNjcmlwdGlvbiBvZiB0aGUgZXZlbnQu" +
-           "AC4ARKMDAAAAFf////8BAf////8AAAAANWCJCgIAAAAAAAgAAABTZXZlcml0eQEBpAMDAAAAACEAAABJ" +
-           "bmRpY2F0ZXMgaG93IHVyZ2VudCBhbiBldmVudCBpcy4ALgBEpAMAAAAF/////wEB/////wAAAAA1YIkK" +
-           "AgAAAAAADwAAAEFjdGlvblRpbWVTdGFtcAEBpQMDAAAAAC4AAABXaGVuIHRoZSBhY3Rpb24gdHJpZ2dl" +
-           "cmluZyB0aGUgZXZlbnQgb2NjdXJyZWQuAC4ARKUDAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAA" +
-           "BgAAAFN0YXR1cwEBpgMDAAAAAGEAAABJZiBUUlVFIHRoZSBhY3Rpb24gd2FzIHBlcmZvcm1lZC4gSWYg" +
+           "eUNyZWRlbnRpYWxEZWxpdmVyZWRBdWRpdEV2ZW50VHlwZUluc3RhbmNlAQEhBAEBIQT/////EQAAADVg" +
+           "iQoCAAAAAAAHAAAARXZlbnRJZAEBIgQDAAAAACsAAABBIGdsb2JhbGx5IHVuaXF1ZSBpZGVudGlmaWVy" +
+           "IGZvciB0aGUgZXZlbnQuAC4ARCIEAAAAD/////8BAf////8AAAAANWCJCgIAAAAAAAkAAABFdmVudFR5" +
+           "cGUBASMEAwAAAAAiAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0eXBlLgAuAEQjBAAAABH/" +
+           "////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBJAQDAAAAABgAAABUaGUgc291cmNl" +
+           "IG9mIHRoZSBldmVudC4ALgBEJAQAAAAR/////wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5h" +
+           "bWUBASUEAwAAAAApAAAAQSBkZXNjcmlwdGlvbiBvZiB0aGUgc291cmNlIG9mIHRoZSBldmVudC4ALgBE" +
+           "JQQAAAAM/////wEB/////wAAAAA1YIkKAgAAAAAABAAAAFRpbWUBASYEAwAAAAAYAAAAV2hlbiB0aGUg" +
+           "ZXZlbnQgb2NjdXJyZWQuAC4ARCYEAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACwAAAFJlY2Vp" +
+           "dmVUaW1lAQEnBAMAAAAAPgAAAFdoZW4gdGhlIHNlcnZlciByZWNlaXZlZCB0aGUgZXZlbnQgZnJvbSB0" +
+           "aGUgdW5kZXJseWluZyBzeXN0ZW0uAC4ARCcEAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACQAA" +
+           "AExvY2FsVGltZQEBKAQDAAAAADwAAABJbmZvcm1hdGlvbiBhYm91dCB0aGUgbG9jYWwgdGltZSB3aGVy" +
+           "ZSB0aGUgZXZlbnQgb3JpZ2luYXRlZC4ALgBEKAQAAAEA0CL/////AQH/////AAAAADVgiQoCAAAAAAAH" +
+           "AAAATWVzc2FnZQEBKQQDAAAAACUAAABBIGxvY2FsaXplZCBkZXNjcmlwdGlvbiBvZiB0aGUgZXZlbnQu" +
+           "AC4ARCkEAAAAFf////8BAf////8AAAAANWCJCgIAAAAAAAgAAABTZXZlcml0eQEBKgQDAAAAACEAAABJ" +
+           "bmRpY2F0ZXMgaG93IHVyZ2VudCBhbiBldmVudCBpcy4ALgBEKgQAAAAF/////wEB/////wAAAAA1YIkK" +
+           "AgAAAAAADwAAAEFjdGlvblRpbWVTdGFtcAEBKwQDAAAAAC4AAABXaGVuIHRoZSBhY3Rpb24gdHJpZ2dl" +
+           "cmluZyB0aGUgZXZlbnQgb2NjdXJyZWQuAC4ARCsEAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAA" +
+           "BgAAAFN0YXR1cwEBLAQDAAAAAGEAAABJZiBUUlVFIHRoZSBhY3Rpb24gd2FzIHBlcmZvcm1lZC4gSWYg" +
            "RkFMU0UgdGhlIGFjdGlvbiBmYWlsZWQgYW5kIHRoZSBzZXJ2ZXIgc3RhdGUgZGlkIG5vdCBjaGFuZ2Uu" +
-           "AC4ARKYDAAAAAf////8BAf////8AAAAANWCJCgIAAAAAAAgAAABTZXJ2ZXJJZAEBpwMDAAAAADoAAABU" +
+           "AC4ARCwEAAAAAf////8BAf////8AAAAANWCJCgIAAAAAAAgAAABTZXJ2ZXJJZAEBLQQDAAAAADoAAABU" +
            "aGUgdW5pcXVlIGlkZW50aWZpZXIgZm9yIHRoZSBzZXJ2ZXIgZ2VuZXJhdGluZyB0aGUgZXZlbnQuAC4A" +
-           "RKcDAAAADP////8BAf////8AAAAANWCJCgIAAAAAABIAAABDbGllbnRBdWRpdEVudHJ5SWQBAagDAwAA" +
+           "RC0EAAAADP////8BAf////8AAAAANWCJCgIAAAAAABIAAABDbGllbnRBdWRpdEVudHJ5SWQBAS4EAwAA" +
            "AABDAAAAVGhlIGxvZyBlbnRyeSBpZCBwcm92aWRlZCBpbiB0aGUgcmVxdWVzdCB0aGF0IGluaXRpYXRl" +
-           "ZCB0aGUgYWN0aW9uLgAuAESoAwAAAAz/////AQH/////AAAAADVgiQoCAAAAAAAMAAAAQ2xpZW50VXNl" +
-           "cklkAQGpAwMAAAAASAAAAFRoZSB1c2VyIGlkZW50aXR5IGFzc29jaWF0ZWQgd2l0aCB0aGUgc2Vzc2lv" +
-           "biB0aGF0IGluaXRpYXRlZCB0aGUgYWN0aW9uLgAuAESpAwAAAAz/////AQH/////AAAAABVgiQoCAAAA" +
-           "AAAIAAAATWV0aG9kSWQBAaoDAC4ARKoDAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAA4AAABJbnB1" +
-           "dEFyZ3VtZW50cwEBqwMALgBEqwMAAAAYAQAAAAEB/////wAAAAAVYIkKAgAAAAAACwAAAFJlc291cmNl" +
-           "VXJpAQGsAwAuAESsAwAAAAz/////AQH/////AAAAAA==";
+           "ZCB0aGUgYWN0aW9uLgAuAEQuBAAAAAz/////AQH/////AAAAADVgiQoCAAAAAAAMAAAAQ2xpZW50VXNl" +
+           "cklkAQEvBAMAAAAASAAAAFRoZSB1c2VyIGlkZW50aXR5IGFzc29jaWF0ZWQgd2l0aCB0aGUgc2Vzc2lv" +
+           "biB0aGF0IGluaXRpYXRlZCB0aGUgYWN0aW9uLgAuAEQvBAAAAAz/////AQH/////AAAAABVgiQoCAAAA" +
+           "AAAIAAAATWV0aG9kSWQBATAEAC4ARDAEAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAA4AAABJbnB1" +
+           "dEFyZ3VtZW50cwEBMQQALgBEMQQAAAAYAQAAAAEB/////wAAAAAVYIkKAgAAAAAACwAAAFJlc291cmNl" +
+           "VXJpAQEyBAAuAEQyBAAAAAz/////AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -4431,36 +4452,36 @@ namespace Opc.Ua.Gds
         #region Initialization String
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvR0RTL/////8EYIAAAQAAAAEAKgAAAEtl" +
-           "eUNyZWRlbnRpYWxSZXZva2VkQXVkaXRFdmVudFR5cGVJbnN0YW5jZQEBrQMBAa0D/////xEAAAA1YIkK" +
-           "AgAAAAAABwAAAEV2ZW50SWQBAa4DAwAAAAArAAAAQSBnbG9iYWxseSB1bmlxdWUgaWRlbnRpZmllciBm" +
-           "b3IgdGhlIGV2ZW50LgAuAESuAwAAAA//////AQH/////AAAAADVgiQoCAAAAAAAJAAAARXZlbnRUeXBl" +
-           "AQGvAwMAAAAAIgAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdHlwZS4ALgBErwMAAAAR////" +
-           "/wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBAbADAwAAAAAYAAAAVGhlIHNvdXJjZSBv" +
-           "ZiB0aGUgZXZlbnQuAC4ARLADAAAAEf////8BAf////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOYW1l" +
-           "AQGxAwMAAAAAKQAAAEEgZGVzY3JpcHRpb24gb2YgdGhlIHNvdXJjZSBvZiB0aGUgZXZlbnQuAC4ARLED" +
-           "AAAADP////8BAf////8AAAAANWCJCgIAAAAAAAQAAABUaW1lAQGyAwMAAAAAGAAAAFdoZW4gdGhlIGV2" +
-           "ZW50IG9jY3VycmVkLgAuAESyAwAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAsAAABSZWNlaXZl" +
-           "VGltZQEBswMDAAAAAD4AAABXaGVuIHRoZSBzZXJ2ZXIgcmVjZWl2ZWQgdGhlIGV2ZW50IGZyb20gdGhl" +
-           "IHVuZGVybHlpbmcgc3lzdGVtLgAuAESzAwAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAkAAABM" +
-           "b2NhbFRpbWUBAbQDAwAAAAA8AAAASW5mb3JtYXRpb24gYWJvdXQgdGhlIGxvY2FsIHRpbWUgd2hlcmUg" +
-           "dGhlIGV2ZW50IG9yaWdpbmF0ZWQuAC4ARLQDAAABANAi/////wEB/////wAAAAA1YIkKAgAAAAAABwAA" +
-           "AE1lc3NhZ2UBAbUDAwAAAAAlAAAAQSBsb2NhbGl6ZWQgZGVzY3JpcHRpb24gb2YgdGhlIGV2ZW50LgAu" +
-           "AES1AwAAABX/////AQH/////AAAAADVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkBAbYDAwAAAAAhAAAASW5k" +
-           "aWNhdGVzIGhvdyB1cmdlbnQgYW4gZXZlbnQgaXMuAC4ARLYDAAAABf////8BAf////8AAAAANWCJCgIA" +
-           "AAAAAA8AAABBY3Rpb25UaW1lU3RhbXABAbcDAwAAAAAuAAAAV2hlbiB0aGUgYWN0aW9uIHRyaWdnZXJp" +
-           "bmcgdGhlIGV2ZW50IG9jY3VycmVkLgAuAES3AwAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAYA" +
-           "AABTdGF0dXMBAbgDAwAAAABhAAAASWYgVFJVRSB0aGUgYWN0aW9uIHdhcyBwZXJmb3JtZWQuIElmIEZB" +
+           "eUNyZWRlbnRpYWxSZXZva2VkQXVkaXRFdmVudFR5cGVJbnN0YW5jZQEBMwQBATME/////xEAAAA1YIkK" +
+           "AgAAAAAABwAAAEV2ZW50SWQBATQEAwAAAAArAAAAQSBnbG9iYWxseSB1bmlxdWUgaWRlbnRpZmllciBm" +
+           "b3IgdGhlIGV2ZW50LgAuAEQ0BAAAAA//////AQH/////AAAAADVgiQoCAAAAAAAJAAAARXZlbnRUeXBl" +
+           "AQE1BAMAAAAAIgAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdHlwZS4ALgBENQQAAAAR////" +
+           "/wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBATYEAwAAAAAYAAAAVGhlIHNvdXJjZSBv" +
+           "ZiB0aGUgZXZlbnQuAC4ARDYEAAAAEf////8BAf////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOYW1l" +
+           "AQE3BAMAAAAAKQAAAEEgZGVzY3JpcHRpb24gb2YgdGhlIHNvdXJjZSBvZiB0aGUgZXZlbnQuAC4ARDcE" +
+           "AAAADP////8BAf////8AAAAANWCJCgIAAAAAAAQAAABUaW1lAQE4BAMAAAAAGAAAAFdoZW4gdGhlIGV2" +
+           "ZW50IG9jY3VycmVkLgAuAEQ4BAAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAsAAABSZWNlaXZl" +
+           "VGltZQEBOQQDAAAAAD4AAABXaGVuIHRoZSBzZXJ2ZXIgcmVjZWl2ZWQgdGhlIGV2ZW50IGZyb20gdGhl" +
+           "IHVuZGVybHlpbmcgc3lzdGVtLgAuAEQ5BAAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAkAAABM" +
+           "b2NhbFRpbWUBAToEAwAAAAA8AAAASW5mb3JtYXRpb24gYWJvdXQgdGhlIGxvY2FsIHRpbWUgd2hlcmUg" +
+           "dGhlIGV2ZW50IG9yaWdpbmF0ZWQuAC4ARDoEAAABANAi/////wEB/////wAAAAA1YIkKAgAAAAAABwAA" +
+           "AE1lc3NhZ2UBATsEAwAAAAAlAAAAQSBsb2NhbGl6ZWQgZGVzY3JpcHRpb24gb2YgdGhlIGV2ZW50LgAu" +
+           "AEQ7BAAAABX/////AQH/////AAAAADVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkBATwEAwAAAAAhAAAASW5k" +
+           "aWNhdGVzIGhvdyB1cmdlbnQgYW4gZXZlbnQgaXMuAC4ARDwEAAAABf////8BAf////8AAAAANWCJCgIA" +
+           "AAAAAA8AAABBY3Rpb25UaW1lU3RhbXABAT0EAwAAAAAuAAAAV2hlbiB0aGUgYWN0aW9uIHRyaWdnZXJp" +
+           "bmcgdGhlIGV2ZW50IG9jY3VycmVkLgAuAEQ9BAAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAYA" +
+           "AABTdGF0dXMBAT4EAwAAAABhAAAASWYgVFJVRSB0aGUgYWN0aW9uIHdhcyBwZXJmb3JtZWQuIElmIEZB" +
            "TFNFIHRoZSBhY3Rpb24gZmFpbGVkIGFuZCB0aGUgc2VydmVyIHN0YXRlIGRpZCBub3QgY2hhbmdlLgAu" +
-           "AES4AwAAAAH/////AQH/////AAAAADVgiQoCAAAAAAAIAAAAU2VydmVySWQBAbkDAwAAAAA6AAAAVGhl" +
-           "IHVuaXF1ZSBpZGVudGlmaWVyIGZvciB0aGUgc2VydmVyIGdlbmVyYXRpbmcgdGhlIGV2ZW50LgAuAES5" +
-           "AwAAAAz/////AQH/////AAAAADVgiQoCAAAAAAASAAAAQ2xpZW50QXVkaXRFbnRyeUlkAQG6AwMAAAAA" +
+           "AEQ+BAAAAAH/////AQH/////AAAAADVgiQoCAAAAAAAIAAAAU2VydmVySWQBAT8EAwAAAAA6AAAAVGhl" +
+           "IHVuaXF1ZSBpZGVudGlmaWVyIGZvciB0aGUgc2VydmVyIGdlbmVyYXRpbmcgdGhlIGV2ZW50LgAuAEQ/" +
+           "BAAAAAz/////AQH/////AAAAADVgiQoCAAAAAAASAAAAQ2xpZW50QXVkaXRFbnRyeUlkAQFABAMAAAAA" +
            "QwAAAFRoZSBsb2cgZW50cnkgaWQgcHJvdmlkZWQgaW4gdGhlIHJlcXVlc3QgdGhhdCBpbml0aWF0ZWQg" +
-           "dGhlIGFjdGlvbi4ALgBEugMAAAAM/////wEB/////wAAAAA1YIkKAgAAAAAADAAAAENsaWVudFVzZXJJ" +
-           "ZAEBuwMDAAAAAEgAAABUaGUgdXNlciBpZGVudGl0eSBhc3NvY2lhdGVkIHdpdGggdGhlIHNlc3Npb24g" +
-           "dGhhdCBpbml0aWF0ZWQgdGhlIGFjdGlvbi4ALgBEuwMAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "CAAAAE1ldGhvZElkAQG8AwAuAES8AwAAABH/////AQH/////AAAAABVgiQoCAAAAAAAOAAAASW5wdXRB" +
-           "cmd1bWVudHMBAb0DAC4ARL0DAAAAGAEAAAABAf////8AAAAAFWCJCgIAAAAAAAsAAABSZXNvdXJjZVVy" +
-           "aQEBvgMALgBEvgMAAAAM/////wEB/////wAAAAA=";
+           "dGhlIGFjdGlvbi4ALgBEQAQAAAAM/////wEB/////wAAAAA1YIkKAgAAAAAADAAAAENsaWVudFVzZXJJ" +
+           "ZAEBQQQDAAAAAEgAAABUaGUgdXNlciBpZGVudGl0eSBhc3NvY2lhdGVkIHdpdGggdGhlIHNlc3Npb24g" +
+           "dGhhdCBpbml0aWF0ZWQgdGhlIGFjdGlvbi4ALgBEQQQAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAA" +
+           "CAAAAE1ldGhvZElkAQFCBAAuAERCBAAAABH/////AQH/////AAAAABVgiQoCAAAAAAAOAAAASW5wdXRB" +
+           "cmd1bWVudHMBAUMEAC4AREMEAAAAGAEAAAABAf////8AAAAAFWCJCgIAAAAAAAsAAABSZXNvdXJjZVVy" +
+           "aQEBRAQALgBERAQAAAAM/////wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -4550,41 +4571,46 @@ namespace Opc.Ua.Gds
            "cmd1bWVudHMBAcoDAC4ARMoDAACWAgAAAAEAKgEBHgAAAA0AAABJZGVudGl0eVRva2VuAQA8Af////8A" +
            "AAAAAAEAKgEBGQAAAAoAAABSZXNvdXJjZUlkAAz/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkK" +
            "AgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBywMALgBEywMAAJYBAAAAAQAqAQEaAAAACwAAAEFjY2Vz" +
-           "c1Rva2VuAA//////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
+           "c1Rva2VuAAz/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
 
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvR0RTL/////8EYIAAAQAAAAEAIAAAAEF1" +
-           "dGhvcml6YXRpb25TZXJ2aWNlVHlwZUluc3RhbmNlAQHGAwEBxgP/////AwAAABVgiQoCAAAAAQARAAAA" +
-           "VXNlclRva2VuUG9saWNpZXMBAccDAC4ARMcDAAABADABAQAAAAEB/////wAAAAAVYIkKAgAAAAEAEgAA" +
-           "AFNlcnZpY2VDZXJ0aWZpY2F0ZQEByAMALgBEyAMAAAAP/////wEB/////wAAAAAEYYIKBAAAAAEAEgAA" +
-           "AFJlcXVlc3RBY2Nlc3NUb2tlbgEByQMALwEByQPJAwAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5w" +
-           "dXRBcmd1bWVudHMBAcoDAC4ARMoDAACWAgAAAAEAKgEBHgAAAA0AAABJZGVudGl0eVRva2VuAQA8Af//" +
-           "//8AAAAAAAEAKgEBGQAAAAoAAABSZXNvdXJjZUlkAAz/////AAAAAAABACgBAQAAAAEB/////wAAAAAV" +
-           "YKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBywMALgBEywMAAJYBAAAAAQAqAQEaAAAACwAAAEFj" +
-           "Y2Vzc1Rva2VuAA//////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
+           "dGhvcml6YXRpb25TZXJ2aWNlVHlwZUluc3RhbmNlAQHGAwEBxgP/////BQAAABVgiQoCAAAAAQAKAAAA" +
+           "U2VydmljZVVyaQEB6wMALgBE6wMAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEAEgAAAFNlcnZpY2VD" +
+           "ZXJ0aWZpY2F0ZQEByAMALgBEyAMAAAAP/////wEB/////wAAAAAVYIkKAgAAAAEAEQAAAFVzZXJUb2tl" +
+           "blBvbGljaWVzAQHHAwAuAETHAwAAAQAwAQEAAAABAf////8AAAAABGGCCgQAAAABABUAAABHZXRTZXJ2" +
+           "aWNlRGVzY3JpcHRpb24BAewDAC8BAewD7AMAAAEB/////wEAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFy" +
+           "Z3VtZW50cwEB7QMALgBE7QMAAJYDAAAAAQAqAQEZAAAACgAAAFNlcnZpY2VVcmkADP////8AAAAAAAEA" +
+           "KgEBIQAAABIAAABTZXJ2aWNlQ2VydGlmaWNhdGUAD/////8AAAAAAAEAKgEBIgAAABEAAABVc2VyVG9r" +
+           "ZW5Qb2xpY2llcwEAMAEBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEAEgAAAFJlcXVl" +
+           "c3RBY2Nlc3NUb2tlbgEByQMALwEByQPJAwAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1" +
+           "bWVudHMBAcoDAC4ARMoDAACWAgAAAAEAKgEBHgAAAA0AAABJZGVudGl0eVRva2VuAQA8Af////8AAAAA" +
+           "AAEAKgEBGQAAAAoAAABSZXNvdXJjZUlkAAz/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAA" +
+           "AAAADwAAAE91dHB1dEFyZ3VtZW50cwEBywMALgBEywMAAJYBAAAAAQAqAQEaAAAACwAAAEFjY2Vzc1Rv" +
+           "a2VuAAz/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
         /// <summary>
-        /// A description for the UserTokenPolicies Property.
+        /// A description for the ServiceUri Property.
         /// </summary>
-        public PropertyState<UserTokenPolicy[]> UserTokenPolicies
+        public PropertyState<string> ServiceUri
         {
             get
             {
-                return m_userTokenPolicies;
+                return m_serviceUri;
             }
 
             set
             {
-                if (!Object.ReferenceEquals(m_userTokenPolicies, value))
+                if (!Object.ReferenceEquals(m_serviceUri, value))
                 {
                     ChangeMasks |= NodeStateChangeMasks.Children;
                 }
 
-                m_userTokenPolicies = value;
+                m_serviceUri = value;
             }
         }
 
@@ -4610,9 +4636,51 @@ namespace Opc.Ua.Gds
         }
 
         /// <summary>
-        /// A description for the AuthorizationServiceRequestAccessTokenMethodType Method.
+        /// A description for the UserTokenPolicies Property.
         /// </summary>
-        public AuthorizationServiceRequestAccessTokenMethodState RequestAccessToken
+        public PropertyState<UserTokenPolicy[]> UserTokenPolicies
+        {
+            get
+            {
+                return m_userTokenPolicies;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_userTokenPolicies, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_userTokenPolicies = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the GetServiceDescriptionMethodType Method.
+        /// </summary>
+        public GetServiceDescriptionMethodState GetServiceDescription
+        {
+            get
+            {
+                return m_getServiceDescriptionMethod;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_getServiceDescriptionMethod, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_getServiceDescriptionMethod = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the RequestAccessTokenMethodType Method.
+        /// </summary>
+        public RequestAccessTokenMethodState RequestAccessToken
         {
             get
             {
@@ -4641,14 +4709,24 @@ namespace Opc.Ua.Gds
             ISystemContext context,
             IList<BaseInstanceState> children)
         {
-            if (m_userTokenPolicies != null)
+            if (m_serviceUri != null)
             {
-                children.Add(m_userTokenPolicies);
+                children.Add(m_serviceUri);
             }
 
             if (m_serviceCertificate != null)
             {
                 children.Add(m_serviceCertificate);
+            }
+
+            if (m_userTokenPolicies != null)
+            {
+                children.Add(m_userTokenPolicies);
+            }
+
+            if (m_getServiceDescriptionMethod != null)
+            {
+                children.Add(m_getServiceDescriptionMethod);
             }
 
             if (m_requestAccessTokenMethod != null)
@@ -4677,24 +4755,24 @@ namespace Opc.Ua.Gds
 
             switch (browseName.Name)
             {
-                case Opc.Ua.Gds.BrowseNames.UserTokenPolicies:
+                case Opc.Ua.Gds.BrowseNames.ServiceUri:
                 {
                     if (createOrReplace)
                     {
-                        if (UserTokenPolicies == null)
+                        if (ServiceUri == null)
                         {
                             if (replacement == null)
                             {
-                                UserTokenPolicies = new PropertyState<UserTokenPolicy[]>(this);
+                                ServiceUri = new PropertyState<string>(this);
                             }
                             else
                             {
-                                UserTokenPolicies = (PropertyState<UserTokenPolicy[]>)replacement;
+                                ServiceUri = (PropertyState<string>)replacement;
                             }
                         }
                     }
 
-                    instance = UserTokenPolicies;
+                    instance = ServiceUri;
                     break;
                 }
 
@@ -4719,6 +4797,48 @@ namespace Opc.Ua.Gds
                     break;
                 }
 
+                case Opc.Ua.Gds.BrowseNames.UserTokenPolicies:
+                {
+                    if (createOrReplace)
+                    {
+                        if (UserTokenPolicies == null)
+                        {
+                            if (replacement == null)
+                            {
+                                UserTokenPolicies = new PropertyState<UserTokenPolicy[]>(this);
+                            }
+                            else
+                            {
+                                UserTokenPolicies = (PropertyState<UserTokenPolicy[]>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = UserTokenPolicies;
+                    break;
+                }
+
+                case Opc.Ua.Gds.BrowseNames.GetServiceDescription:
+                {
+                    if (createOrReplace)
+                    {
+                        if (GetServiceDescription == null)
+                        {
+                            if (replacement == null)
+                            {
+                                GetServiceDescription = new GetServiceDescriptionMethodState(this);
+                            }
+                            else
+                            {
+                                GetServiceDescription = (GetServiceDescriptionMethodState)replacement;
+                            }
+                        }
+                    }
+
+                    instance = GetServiceDescription;
+                    break;
+                }
+
                 case Opc.Ua.Gds.BrowseNames.RequestAccessToken:
                 {
                     if (createOrReplace)
@@ -4727,11 +4847,11 @@ namespace Opc.Ua.Gds
                         {
                             if (replacement == null)
                             {
-                                RequestAccessToken = new AuthorizationServiceRequestAccessTokenMethodState(this);
+                                RequestAccessToken = new RequestAccessTokenMethodState(this);
                             }
                             else
                             {
-                                RequestAccessToken = (AuthorizationServiceRequestAccessTokenMethodState)replacement;
+                                RequestAccessToken = (RequestAccessTokenMethodState)replacement;
                             }
                         }
                     }
@@ -4751,28 +4871,30 @@ namespace Opc.Ua.Gds
         #endregion
 
         #region Private Fields
-        private PropertyState<UserTokenPolicy[]> m_userTokenPolicies;
+        private PropertyState<string> m_serviceUri;
         private PropertyState<byte[]> m_serviceCertificate;
-        private AuthorizationServiceRequestAccessTokenMethodState m_requestAccessTokenMethod;
+        private PropertyState<UserTokenPolicy[]> m_userTokenPolicies;
+        private GetServiceDescriptionMethodState m_getServiceDescriptionMethod;
+        private RequestAccessTokenMethodState m_requestAccessTokenMethod;
         #endregion
     }
     #endif
     #endregion
 
-    #region AuthorizationServiceRequestAccessTokenMethodState Class
-    #if (!OPCUA_EXCLUDE_AuthorizationServiceRequestAccessTokenMethodState)
+    #region GetServiceDescriptionMethodState Class
+    #if (!OPCUA_EXCLUDE_GetServiceDescriptionMethodState)
     /// <summary>
-    /// Stores an instance of the AuthorizationServiceRequestAccessTokenMethodType Method.
+    /// Stores an instance of the GetServiceDescriptionMethodType Method.
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public partial class AuthorizationServiceRequestAccessTokenMethodState : MethodState
+    public partial class GetServiceDescriptionMethodState : MethodState
     {
         #region Constructors
         /// <summary>
         /// Initializes the type with its default attribute values.
         /// </summary>
-        public AuthorizationServiceRequestAccessTokenMethodState(NodeState parent) : base(parent)
+        public GetServiceDescriptionMethodState(NodeState parent) : base(parent)
         {
         }
 
@@ -4783,7 +4905,7 @@ namespace Opc.Ua.Gds
         /// <returns>The new node.</returns>
         public new static NodeState Construct(NodeState parent)
         {
-            return new AuthorizationServiceRequestAccessTokenMethodState(parent);
+            return new GetServiceDescriptionMethodState(parent);
         }
 
         #if (!OPCUA_EXCLUDE_InitializationStrings)
@@ -4806,13 +4928,11 @@ namespace Opc.Ua.Gds
 
         #region Initialization String
         private const string InitializationString =
-           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvR0RTL/////8EYYIKBAAAAAEAMAAAAEF1" +
-           "dGhvcml6YXRpb25TZXJ2aWNlUmVxdWVzdEFjY2Vzc1Rva2VuTWV0aG9kVHlwZQEBzAMALwEBzAPMAwAA" +
-           "AQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAc0DAC4ARM0DAACWAgAAAAEAKgEB" +
-           "HgAAAA0AAABJZGVudGl0eVRva2VuAQA8Af////8AAAAAAAEAKgEBGQAAAAoAAABSZXNvdXJjZUlkAAz/" +
-           "////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBzgMA" +
-           "LgBEzgMAAJYBAAAAAQAqAQEaAAAACwAAAEFjY2Vzc1Rva2VuAA//////AAAAAAABACgBAQAAAAEB////" +
-           "/wAAAAA=";
+           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvR0RTL/////8EYYIKBAAAAAEAHwAAAEdl" +
+           "dFNlcnZpY2VEZXNjcmlwdGlvbk1ldGhvZFR5cGUBAe4DAC8BAe4D7gMAAAEB/////wEAAAAVYKkKAgAA" +
+           "AAAADwAAAE91dHB1dEFyZ3VtZW50cwEB7wMALgBE7wMAAJYDAAAAAQAqAQEZAAAACgAAAFNlcnZpY2VV" +
+           "cmkADP////8AAAAAAAEAKgEBIQAAABIAAABTZXJ2aWNlQ2VydGlmaWNhdGUAD/////8AAAAAAAEAKgEB" +
+           "IgAAABEAAABVc2VyVG9rZW5Qb2xpY2llcwEAMAEBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -4821,7 +4941,137 @@ namespace Opc.Ua.Gds
         /// <summary>
         /// Raised when the the method is called.
         /// </summary>
-        public AuthorizationServiceRequestAccessTokenMethodStateMethodCallHandler OnCall;
+        public GetServiceDescriptionMethodStateMethodCallHandler OnCall;
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Invokes the method, returns the result and output argument.
+        /// </summary>
+        /// <param name="context">The current context.</param>
+        /// <param name="objectId">The id of the object.</param>
+        /// <param name="inputArguments">The input arguments which have been already validated.</param>
+        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
+        /// <returns></returns>
+        protected override ServiceResult Call(
+            ISystemContext context,
+            NodeId objectId,
+            IList<object> inputArguments,
+            IList<object> outputArguments)
+        {
+            if (OnCall == null)
+            {
+                return base.Call(context, objectId, inputArguments, outputArguments);
+            }
+
+            ServiceResult result = null;
+
+            string serviceUri = (string)outputArguments[0];
+            byte[] serviceCertificate = (byte[])outputArguments[1];
+            UserTokenPolicy[] userTokenPolicies = (UserTokenPolicy[])outputArguments[2];
+
+            if (OnCall != null)
+            {
+                result = OnCall(
+                    context,
+                    this,
+                    objectId,
+                    ref serviceUri,
+                    ref serviceCertificate,
+                    ref userTokenPolicies);
+            }
+
+            outputArguments[0] = serviceUri;
+            outputArguments[1] = serviceCertificate;
+            outputArguments[2] = userTokenPolicies;
+
+            return result;
+        }
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+
+    /// <summary>
+    /// Used to receive notifications when the method is called.
+    /// </summary>
+    /// <exclude />
+    public delegate ServiceResult GetServiceDescriptionMethodStateMethodCallHandler(
+        ISystemContext context,
+        MethodState method,
+        NodeId objectId,
+        ref string serviceUri,
+        ref byte[] serviceCertificate,
+        ref UserTokenPolicy[] userTokenPolicies);
+    #endif
+    #endregion
+
+    #region RequestAccessTokenMethodState Class
+    #if (!OPCUA_EXCLUDE_RequestAccessTokenMethodState)
+    /// <summary>
+    /// Stores an instance of the RequestAccessTokenMethodType Method.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class RequestAccessTokenMethodState : MethodState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public RequestAccessTokenMethodState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Constructs an instance of a node.
+        /// </summary>
+        /// <param name="parent">The parent.</param>
+        /// <returns>The new node.</returns>
+        public new static NodeState Construct(NodeState parent)
+        {
+            return new RequestAccessTokenMethodState(parent);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvR0RTL/////8EYYIKBAAAAAEAHAAAAFJl" +
+           "cXVlc3RBY2Nlc3NUb2tlbk1ldGhvZFR5cGUBAeMDAC8BAeMD4wMAAAEB/////wIAAAAVYKkKAgAAAAAA" +
+           "DgAAAElucHV0QXJndW1lbnRzAQHkAwAuAETkAwAAlgIAAAABACoBAR4AAAANAAAASWRlbnRpdHlUb2tl" +
+           "bgEAPAH/////AAAAAAABACoBARkAAAAKAAAAUmVzb3VyY2VJZAAM/////wAAAAAAAQAoAQEAAAABAf//" +
+           "//8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAeUDAC4AROUDAACWAQAAAAEAKgEBGgAA" +
+           "AAsAAABBY2Nlc3NUb2tlbgAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
+        #endregion
+        #endif
+        #endregion
+
+        #region Event Callbacks
+        /// <summary>
+        /// Raised when the the method is called.
+        /// </summary>
+        public RequestAccessTokenMethodStateMethodCallHandler OnCall;
         #endregion
 
         #region Public Properties
@@ -4852,7 +5102,7 @@ namespace Opc.Ua.Gds
             UserIdentityToken identityToken = (UserIdentityToken)ExtensionObject.ToEncodeable((ExtensionObject)inputArguments[0]);
             string resourceId = (string)inputArguments[1];
 
-            byte[] accessToken = (byte[])outputArguments[0];
+            string accessToken = (string)outputArguments[0];
 
             if (OnCall != null)
             {
@@ -4879,13 +5129,13 @@ namespace Opc.Ua.Gds
     /// Used to receive notifications when the method is called.
     /// </summary>
     /// <exclude />
-    public delegate ServiceResult AuthorizationServiceRequestAccessTokenMethodStateMethodCallHandler(
+    public delegate ServiceResult RequestAccessTokenMethodStateMethodCallHandler(
         ISystemContext context,
         MethodState method,
         NodeId objectId,
         UserIdentityToken identityToken,
         string resourceId,
-        ref byte[] accessToken);
+        ref string accessToken);
     #endif
     #endregion
 

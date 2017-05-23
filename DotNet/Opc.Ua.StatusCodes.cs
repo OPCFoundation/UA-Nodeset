@@ -1080,6 +1080,11 @@ namespace Opc.Ua
         public const uint BadRequestNotAllowed = 0x80E40000;
 
         /// <summary>
+        /// The request has not been processed by the server yet.
+        /// </summary>
+        public const uint BadRequestNotComplete = 0x81130000;
+
+        /// <summary>
         /// The value does not come from the real source and has been edited by the server.
         /// </summary>
         public const uint GoodEdited = 0x00DC0000;

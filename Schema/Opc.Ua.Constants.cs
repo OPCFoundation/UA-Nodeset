@@ -3980,9 +3980,9 @@ namespace Opc.Ua
         public const uint ServerConfiguration_CertificateGroups_DefaultUserTokenGroup_TrustList = 14123;
 
         /// <summary>
-        /// The identifier for the KeyCredentialManagement Object.
+        /// The identifier for the KeyCredentialConfiguration Object.
         /// </summary>
-        public const uint KeyCredentialManagement = 17992;
+        public const uint KeyCredentialConfiguration = 18155;
 
         /// <summary>
         /// The identifier for the AuthorizationServices Object.
@@ -17180,29 +17180,29 @@ namespace Opc.Ua
         public const uint ServerConfiguration_GetRejectedList_OutputArguments = 12778;
 
         /// <summary>
-        /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_Uri Variable.
+        /// The identifier for the KeyCredentialConfiguration_ServiceName_Placeholder_ResourceUri Variable.
         /// </summary>
-        public const uint KeyCredentialManagement_ServiceName_Placeholder_Uri = 17994;
+        public const uint KeyCredentialConfiguration_ServiceName_Placeholder_ResourceUri = 18157;
 
         /// <summary>
-        /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_ProfileUri Variable.
+        /// The identifier for the KeyCredentialConfiguration_ServiceName_Placeholder_ProfileUri Variable.
         /// </summary>
-        public const uint KeyCredentialManagement_ServiceName_Placeholder_ProfileUri = 17995;
+        public const uint KeyCredentialConfiguration_ServiceName_Placeholder_ProfileUri = 18164;
 
         /// <summary>
-        /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_UpdateCredential_InputArguments Variable.
+        /// The identifier for the KeyCredentialConfiguration_ServiceName_Placeholder_UpdateCredential_InputArguments Variable.
         /// </summary>
-        public const uint KeyCredentialManagement_ServiceName_Placeholder_UpdateCredential_InputArguments = 17999;
+        public const uint KeyCredentialConfiguration_ServiceName_Placeholder_UpdateCredential_InputArguments = 18162;
 
         /// <summary>
-        /// The identifier for the KeyCredentialConfigurationType_Uri Variable.
+        /// The identifier for the KeyCredentialConfigurationType_ResourceUri Variable.
         /// </summary>
-        public const uint KeyCredentialConfigurationType_Uri = 18002;
+        public const uint KeyCredentialConfigurationType_ResourceUri = 18069;
 
         /// <summary>
         /// The identifier for the KeyCredentialConfigurationType_ProfileUri Variable.
         /// </summary>
-        public const uint KeyCredentialConfigurationType_ProfileUri = 18003;
+        public const uint KeyCredentialConfigurationType_ProfileUri = 18165;
 
         /// <summary>
         /// The identifier for the KeyCredentialConfigurationType_EndpointUrls Variable.
@@ -17225,9 +17225,9 @@ namespace Opc.Ua
         public const uint KeyCredentialAuditEventType_ResourceUri = 18028;
 
         /// <summary>
-        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_Uri Variable.
+        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_ServiceUri Variable.
         /// </summary>
-        public const uint AuthorizationServices_ServiceName_Placeholder_Uri = 18065;
+        public const uint AuthorizationServices_ServiceName_Placeholder_ServiceUri = 18070;
 
         /// <summary>
         /// The identifier for the AuthorizationServices_ServiceName_Placeholder_ServiceCertificate Variable.
@@ -17235,14 +17235,24 @@ namespace Opc.Ua
         public const uint AuthorizationServices_ServiceName_Placeholder_ServiceCertificate = 18066;
 
         /// <summary>
-        /// The identifier for the AuthorizationServiceConfigurationType_Uri Variable.
+        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_IssuerEndpointUrl Variable.
         /// </summary>
-        public const uint AuthorizationServiceConfigurationType_Uri = 18067;
+        public const uint AuthorizationServices_ServiceName_Placeholder_IssuerEndpointUrl = 18071;
+
+        /// <summary>
+        /// The identifier for the AuthorizationServiceConfigurationType_ServiceUri Variable.
+        /// </summary>
+        public const uint AuthorizationServiceConfigurationType_ServiceUri = 18072;
 
         /// <summary>
         /// The identifier for the AuthorizationServiceConfigurationType_ServiceCertificate Variable.
         /// </summary>
         public const uint AuthorizationServiceConfigurationType_ServiceCertificate = 17860;
+
+        /// <summary>
+        /// The identifier for the AuthorizationServiceConfigurationType_IssuerEndpointUrl Variable.
+        /// </summary>
+        public const uint AuthorizationServiceConfigurationType_IssuerEndpointUrl = 18073;
 
         /// <summary>
         /// The identifier for the AggregateConfigurationType_TreatUncertainAsBad Variable.
@@ -18965,6 +18975,26 @@ namespace Opc.Ua
         public const uint OpcUa_XmlSchema_RolePermissionType = 16127;
 
         /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataTypeDefinition Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_DataTypeDefinition = 18166;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_StructureField Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_StructureField = 18169;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_StructureDefinition Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_StructureDefinition = 18172;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EnumDefinition Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_EnumDefinition = 18175;
+
+        /// <summary>
         /// The identifier for the OpcUa_XmlSchema_Argument Variable.
         /// </summary>
         public const uint OpcUa_XmlSchema_Argument = 8285;
@@ -19333,6 +19363,26 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_BinarySchema_RolePermissionType Variable.
         /// </summary>
         public const uint OpcUa_BinarySchema_RolePermissionType = 16131;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_DataTypeDefinition Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_DataTypeDefinition = 18178;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_StructureField Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_StructureField = 18181;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_StructureDefinition Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_StructureDefinition = 18184;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_EnumDefinition Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_EnumDefinition = 18187;
 
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_Argument Variable.
@@ -23790,9 +23840,9 @@ namespace Opc.Ua
         public static readonly NodeId ServerConfiguration_CertificateGroups_DefaultUserTokenGroup_TrustList = new NodeId(Opc.Ua.Objects.ServerConfiguration_CertificateGroups_DefaultUserTokenGroup_TrustList);
 
         /// <summary>
-        /// The identifier for the KeyCredentialManagement Object.
+        /// The identifier for the KeyCredentialConfiguration Object.
         /// </summary>
-        public static readonly NodeId KeyCredentialManagement = new NodeId(Opc.Ua.Objects.KeyCredentialManagement);
+        public static readonly NodeId KeyCredentialConfiguration = new NodeId(Opc.Ua.Objects.KeyCredentialConfiguration);
 
         /// <summary>
         /// The identifier for the AuthorizationServices Object.
@@ -36990,24 +37040,24 @@ namespace Opc.Ua
         public static readonly NodeId ServerConfiguration_GetRejectedList_OutputArguments = new NodeId(Opc.Ua.Variables.ServerConfiguration_GetRejectedList_OutputArguments);
 
         /// <summary>
-        /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_Uri Variable.
+        /// The identifier for the KeyCredentialConfiguration_ServiceName_Placeholder_ResourceUri Variable.
         /// </summary>
-        public static readonly NodeId KeyCredentialManagement_ServiceName_Placeholder_Uri = new NodeId(Opc.Ua.Variables.KeyCredentialManagement_ServiceName_Placeholder_Uri);
+        public static readonly NodeId KeyCredentialConfiguration_ServiceName_Placeholder_ResourceUri = new NodeId(Opc.Ua.Variables.KeyCredentialConfiguration_ServiceName_Placeholder_ResourceUri);
 
         /// <summary>
-        /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_ProfileUri Variable.
+        /// The identifier for the KeyCredentialConfiguration_ServiceName_Placeholder_ProfileUri Variable.
         /// </summary>
-        public static readonly NodeId KeyCredentialManagement_ServiceName_Placeholder_ProfileUri = new NodeId(Opc.Ua.Variables.KeyCredentialManagement_ServiceName_Placeholder_ProfileUri);
+        public static readonly NodeId KeyCredentialConfiguration_ServiceName_Placeholder_ProfileUri = new NodeId(Opc.Ua.Variables.KeyCredentialConfiguration_ServiceName_Placeholder_ProfileUri);
 
         /// <summary>
-        /// The identifier for the KeyCredentialManagement_ServiceName_Placeholder_UpdateCredential_InputArguments Variable.
+        /// The identifier for the KeyCredentialConfiguration_ServiceName_Placeholder_UpdateCredential_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId KeyCredentialManagement_ServiceName_Placeholder_UpdateCredential_InputArguments = new NodeId(Opc.Ua.Variables.KeyCredentialManagement_ServiceName_Placeholder_UpdateCredential_InputArguments);
+        public static readonly NodeId KeyCredentialConfiguration_ServiceName_Placeholder_UpdateCredential_InputArguments = new NodeId(Opc.Ua.Variables.KeyCredentialConfiguration_ServiceName_Placeholder_UpdateCredential_InputArguments);
 
         /// <summary>
-        /// The identifier for the KeyCredentialConfigurationType_Uri Variable.
+        /// The identifier for the KeyCredentialConfigurationType_ResourceUri Variable.
         /// </summary>
-        public static readonly NodeId KeyCredentialConfigurationType_Uri = new NodeId(Opc.Ua.Variables.KeyCredentialConfigurationType_Uri);
+        public static readonly NodeId KeyCredentialConfigurationType_ResourceUri = new NodeId(Opc.Ua.Variables.KeyCredentialConfigurationType_ResourceUri);
 
         /// <summary>
         /// The identifier for the KeyCredentialConfigurationType_ProfileUri Variable.
@@ -37035,9 +37085,9 @@ namespace Opc.Ua
         public static readonly NodeId KeyCredentialAuditEventType_ResourceUri = new NodeId(Opc.Ua.Variables.KeyCredentialAuditEventType_ResourceUri);
 
         /// <summary>
-        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_Uri Variable.
+        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_ServiceUri Variable.
         /// </summary>
-        public static readonly NodeId AuthorizationServices_ServiceName_Placeholder_Uri = new NodeId(Opc.Ua.Variables.AuthorizationServices_ServiceName_Placeholder_Uri);
+        public static readonly NodeId AuthorizationServices_ServiceName_Placeholder_ServiceUri = new NodeId(Opc.Ua.Variables.AuthorizationServices_ServiceName_Placeholder_ServiceUri);
 
         /// <summary>
         /// The identifier for the AuthorizationServices_ServiceName_Placeholder_ServiceCertificate Variable.
@@ -37045,14 +37095,24 @@ namespace Opc.Ua
         public static readonly NodeId AuthorizationServices_ServiceName_Placeholder_ServiceCertificate = new NodeId(Opc.Ua.Variables.AuthorizationServices_ServiceName_Placeholder_ServiceCertificate);
 
         /// <summary>
-        /// The identifier for the AuthorizationServiceConfigurationType_Uri Variable.
+        /// The identifier for the AuthorizationServices_ServiceName_Placeholder_IssuerEndpointUrl Variable.
         /// </summary>
-        public static readonly NodeId AuthorizationServiceConfigurationType_Uri = new NodeId(Opc.Ua.Variables.AuthorizationServiceConfigurationType_Uri);
+        public static readonly NodeId AuthorizationServices_ServiceName_Placeholder_IssuerEndpointUrl = new NodeId(Opc.Ua.Variables.AuthorizationServices_ServiceName_Placeholder_IssuerEndpointUrl);
+
+        /// <summary>
+        /// The identifier for the AuthorizationServiceConfigurationType_ServiceUri Variable.
+        /// </summary>
+        public static readonly NodeId AuthorizationServiceConfigurationType_ServiceUri = new NodeId(Opc.Ua.Variables.AuthorizationServiceConfigurationType_ServiceUri);
 
         /// <summary>
         /// The identifier for the AuthorizationServiceConfigurationType_ServiceCertificate Variable.
         /// </summary>
         public static readonly NodeId AuthorizationServiceConfigurationType_ServiceCertificate = new NodeId(Opc.Ua.Variables.AuthorizationServiceConfigurationType_ServiceCertificate);
+
+        /// <summary>
+        /// The identifier for the AuthorizationServiceConfigurationType_IssuerEndpointUrl Variable.
+        /// </summary>
+        public static readonly NodeId AuthorizationServiceConfigurationType_IssuerEndpointUrl = new NodeId(Opc.Ua.Variables.AuthorizationServiceConfigurationType_IssuerEndpointUrl);
 
         /// <summary>
         /// The identifier for the AggregateConfigurationType_TreatUncertainAsBad Variable.
@@ -38775,6 +38835,26 @@ namespace Opc.Ua
         public static readonly NodeId OpcUa_XmlSchema_RolePermissionType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_RolePermissionType);
 
         /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataTypeDefinition Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_DataTypeDefinition = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DataTypeDefinition);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_StructureField Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_StructureField = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_StructureField);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_StructureDefinition Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_StructureDefinition = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_StructureDefinition);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EnumDefinition Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_EnumDefinition = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EnumDefinition);
+
+        /// <summary>
         /// The identifier for the OpcUa_XmlSchema_Argument Variable.
         /// </summary>
         public static readonly NodeId OpcUa_XmlSchema_Argument = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_Argument);
@@ -39143,6 +39223,26 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_BinarySchema_RolePermissionType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_BinarySchema_RolePermissionType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_RolePermissionType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_DataTypeDefinition Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_DataTypeDefinition = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_DataTypeDefinition);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_StructureField Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_StructureField = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_StructureField);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_StructureDefinition Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_StructureDefinition = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_StructureDefinition);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_EnumDefinition Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_EnumDefinition = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_EnumDefinition);
 
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_Argument Variable.
@@ -42629,6 +42729,11 @@ namespace Opc.Ua
         public const string IssuedIdentityToken = "IssuedIdentityToken";
 
         /// <summary>
+        /// The BrowseName for the IssuerEndpointUrl component.
+        /// </summary>
+        public const string IssuerEndpointUrl = "IssuerEndpointUrl";
+
+        /// <summary>
         /// The BrowseName for the KeepAliveTime component.
         /// </summary>
         public const string KeepAliveTime = "KeepAliveTime";
@@ -42639,6 +42744,11 @@ namespace Opc.Ua
         public const string KeyCredentialAuditEventType = "KeyCredentialAuditEventType";
 
         /// <summary>
+        /// The BrowseName for the KeyCredentialConfiguration component.
+        /// </summary>
+        public const string KeyCredentialConfiguration = "KeyCredentialConfiguration";
+
+        /// <summary>
         /// The BrowseName for the KeyCredentialConfigurationType component.
         /// </summary>
         public const string KeyCredentialConfigurationType = "KeyCredentialConfigurationType";
@@ -42647,11 +42757,6 @@ namespace Opc.Ua
         /// The BrowseName for the KeyCredentialDeletedAuditEventType component.
         /// </summary>
         public const string KeyCredentialDeletedAuditEventType = "KeyCredentialDeletedAuditEventType";
-
-        /// <summary>
-        /// The BrowseName for the KeyCredentialManagement component.
-        /// </summary>
-        public const string KeyCredentialManagement = "KeyCredentialManagement";
 
         /// <summary>
         /// The BrowseName for the KeyCredentialUpdatedAuditEventType component.
@@ -44809,6 +44914,11 @@ namespace Opc.Ua
         public const string ServiceStatus = "ServiceStatus";
 
         /// <summary>
+        /// The BrowseName for the ServiceUri component.
+        /// </summary>
+        public const string ServiceUri = "ServiceUri";
+
+        /// <summary>
         /// The BrowseName for the SessionAbortCount component.
         /// </summary>
         public const string SessionAbortCount = "SessionAbortCount";
@@ -45687,11 +45797,6 @@ namespace Opc.Ua
         /// The BrowseName for the UpdateStructureDataDetails component.
         /// </summary>
         public const string UpdateStructureDataDetails = "UpdateStructureDataDetails";
-
-        /// <summary>
-        /// The BrowseName for the Uri component.
-        /// </summary>
-        public const string Uri = "Uri";
 
         /// <summary>
         /// The BrowseName for the UserIdentityToken component.
