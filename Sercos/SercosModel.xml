@@ -22,48 +22,48 @@
   <Object SymbolicName="tns:SercosNamespaceMetadata" TypeDefinition="ua:NamespaceMetadataType">
     <BrowseName>http://sercos.org/UA/</BrowseName>
     <Children>
-      <Property SymbolicName="NamespaceUri" DataType="ua:String">
+      <Property SymbolicName="ua:NamespaceUri" DataType="ua:String">
         <DefaultValue>
           <uax:String>http://sercos.org/UA/</uax:String>
         </DefaultValue>
       </Property>
-      <Property SymbolicName="NamespaceVersion" DataType="ua:String">
+      <Property SymbolicName="ua:NamespaceVersion" DataType="ua:String">
         <DefaultValue>
           <uax:String>1.00</uax:String>
         </DefaultValue>
       </Property>
-      <Property SymbolicName="NamespacePublicationDate" DataType="ua:DateTime">
+      <Property SymbolicName="ua:NamespacePublicationDate" DataType="ua:DateTime">
         <DefaultValue>
           <uax:String>2017-03-13</uax:String>
         </DefaultValue>
       </Property>
-      <Property SymbolicName="IsNamespaceSubset" DataType="ua:Boolean">
+      <Property SymbolicName="ua:IsNamespaceSubset" DataType="ua:Boolean">
         <DefaultValue>
           <uax:Boolean>false</uax:Boolean>
         </DefaultValue>
       </Property>
-      <Property SymbolicName="StaticNodeIdTypes" DataType="ua:IdType" ValueRank="Array">
+      <Property SymbolicName="ua:StaticNodeIdTypes" DataType="ua:IdType" ValueRank="Array">
         <DefaultValue>
           <uax:ListOfInt32>
             <uax:Int32>0</uax:Int32>
           </uax:ListOfInt32>
         </DefaultValue>
       </Property>
-      <Property SymbolicName="StaticNumericNodeIdRange" DataType="ua:NumericRange" ValueRank="Array">
+      <Property SymbolicName="ua:StaticNumericNodeIdRange" DataType="ua:NumericRange" ValueRank="Array">
         <DefaultValue>
           <uax:ListOfString>
             <uax:String>1:65535</uax:String>
           </uax:ListOfString>
         </DefaultValue>
       </Property>
-      <Property SymbolicName="StaticStringNodeIdPattern" DataType="ua:String">
+      <Property SymbolicName="ua:StaticStringNodeIdPattern" DataType="ua:String">
         <DefaultValue>
           <uax:String></uax:String>
         </DefaultValue>
       </Property>
-      <Property SymbolicName="DefaultRolePermissions" ModellingRule="Mandatory" />
-      <Property SymbolicName="DefaultUserRolePermissions" ModellingRule="Mandatory" />
-      <Property SymbolicName="DefaultAccessRestrictions" ModellingRule="Mandatory" />
+      <Property SymbolicName="ua:DefaultRolePermissions" ModellingRule="Mandatory" />
+      <Property SymbolicName="ua:DefaultUserRolePermissions" ModellingRule="Mandatory" />
+      <Property SymbolicName="ua:DefaultAccessRestrictions" ModellingRule="Mandatory" />
     </Children>
     <References>
       <Reference IsInverse="true">

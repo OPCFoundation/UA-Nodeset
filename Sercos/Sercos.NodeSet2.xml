@@ -64,7 +64,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6082" BrowseName="65535:NamespaceUri" ParentNodeId="ns=1;i=6081" DataType="String">
+  <UAVariable NodeId="ns=1;i=6082" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=6081" DataType="String">
     <DisplayName>NamespaceUri</DisplayName>
     <Description>The URI of the namespace.</Description>
     <References>
@@ -75,7 +75,7 @@
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">http://sercos.org/UA/</String>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6083" BrowseName="65535:NamespaceVersion" ParentNodeId="ns=1;i=6081" DataType="String">
+  <UAVariable NodeId="ns=1;i=6083" BrowseName="NamespaceVersion" ParentNodeId="ns=1;i=6081" DataType="String">
     <DisplayName>NamespaceVersion</DisplayName>
     <Description>The human readable string representing version of the namespace.</Description>
     <References>
@@ -86,7 +86,7 @@
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1.00</String>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6084" BrowseName="65535:NamespacePublicationDate" ParentNodeId="ns=1;i=6081" DataType="DateTime">
+  <UAVariable NodeId="ns=1;i=6084" BrowseName="NamespacePublicationDate" ParentNodeId="ns=1;i=6081" DataType="DateTime">
     <DisplayName>NamespacePublicationDate</DisplayName>
     <Description>The publication date for the namespace.</Description>
     <References>
@@ -97,7 +97,7 @@
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2017-03-13</String>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6085" BrowseName="65535:IsNamespaceSubset" ParentNodeId="ns=1;i=6081" DataType="Boolean">
+  <UAVariable NodeId="ns=1;i=6085" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=6081" DataType="Boolean">
     <DisplayName>IsNamespaceSubset</DisplayName>
     <Description>If TRUE then the server only supports a subset of the namespace.</Description>
     <References>
@@ -108,7 +108,7 @@
       <Boolean xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">false</Boolean>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6086" BrowseName="65535:StaticNodeIdTypes" ParentNodeId="ns=1;i=6081" DataType="i=256" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=6086" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=6081" DataType="i=256" ValueRank="1">
     <DisplayName>StaticNodeIdTypes</DisplayName>
     <Description>A list of IdTypes for nodes which are the same in every server that exposes them.</Description>
     <References>
@@ -121,7 +121,7 @@
       </ListOfInt32>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6087" BrowseName="65535:StaticNumericNodeIdRange" ParentNodeId="ns=1;i=6081" DataType="i=291" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=6087" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=1;i=6081" DataType="i=291" ValueRank="1">
     <DisplayName>StaticNumericNodeIdRange</DisplayName>
     <Description>A list of ranges for numeric node ids which are the same in every server that exposes them.</Description>
     <References>
@@ -134,7 +134,7 @@
       </ListOfString>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6088" BrowseName="65535:StaticStringNodeIdPattern" ParentNodeId="ns=1;i=6081" DataType="String">
+  <UAVariable NodeId="ns=1;i=6088" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=1;i=6081" DataType="String">
     <DisplayName>StaticStringNodeIdPattern</DisplayName>
     <Description>A regular expression which matches string node ids are the same in every server that exposes them.</Description>
     <References>
@@ -146,21 +146,21 @@
       </String>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6111" BrowseName="65535:DefaultRolePermissions" ParentNodeId="ns=1;i=6081" DataType="i=96" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=6111" BrowseName="DefaultRolePermissions" ParentNodeId="ns=1;i=6081" DataType="i=96" ValueRank="1">
     <DisplayName>DefaultRolePermissions</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6081</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6112" BrowseName="65535:DefaultUserRolePermissions" ParentNodeId="ns=1;i=6081" DataType="i=96" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=6112" BrowseName="DefaultUserRolePermissions" ParentNodeId="ns=1;i=6081" DataType="i=96" ValueRank="1">
     <DisplayName>DefaultUserRolePermissions</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6081</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6113" BrowseName="65535:DefaultAccessRestrictions" ParentNodeId="ns=1;i=6081" DataType="UInt16">
+  <UAVariable NodeId="ns=1;i=6113" BrowseName="DefaultAccessRestrictions" ParentNodeId="ns=1;i=6081" DataType="UInt16">
     <DisplayName>DefaultAccessRestrictions</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
