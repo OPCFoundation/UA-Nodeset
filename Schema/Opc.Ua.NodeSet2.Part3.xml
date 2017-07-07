@@ -613,8 +613,8 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=30</Reference>
     </References>
   </UADataType>
-  <UADataType NodeId="i=16307" BrowseName="AudioData">
-    <DisplayName>AudioData</DisplayName>
+  <UADataType NodeId="i=16307" BrowseName="AudioDataType">
+    <DisplayName>AudioDataType</DisplayName>
     <Description>An image encoded in PNG format.</Description>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15</Reference>

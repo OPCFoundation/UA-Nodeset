@@ -984,11 +984,42 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ServiceFault_Decode(OpcUa_ServiceFault* pVal
 OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_ServiceFault_EncodeableType;
 #endif
 
-#ifndef OPCUA_EXCLUDE_SessionLessServiceMessageType
+#ifndef OPCUA_EXCLUDE_SessionlessInvokeRequestType
 /*============================================================================
- * The SessionLessServiceMessageType structure.
+ * The SessionlessInvokeRequestType structure.
  *===========================================================================*/
-typedef struct _OpcUa_SessionLessServiceMessageType
+typedef struct _OpcUa_SessionlessInvokeRequestType
+{
+    OpcUa_Int32   NoOfUrisVersion;
+    OpcUa_UInt32* UrisVersion;
+    OpcUa_Int32   NoOfNamespaceUris;
+    OpcUa_String* NamespaceUris;
+    OpcUa_Int32   NoOfServerUris;
+    OpcUa_String* ServerUris;
+    OpcUa_Int32   NoOfLocaleIds;
+    OpcUa_String* LocaleIds;
+    OpcUa_UInt32  ServiceId;
+}
+OpcUa_SessionlessInvokeRequestType;
+
+OPCUA_EXPORT OpcUa_Void OpcUa_SessionlessInvokeRequestType_Initialize(OpcUa_SessionlessInvokeRequestType* pValue);
+
+OPCUA_EXPORT OpcUa_Void OpcUa_SessionlessInvokeRequestType_Clear(OpcUa_SessionlessInvokeRequestType* pValue);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_SessionlessInvokeRequestType_GetSize(OpcUa_SessionlessInvokeRequestType* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_SessionlessInvokeRequestType_Encode(OpcUa_SessionlessInvokeRequestType* pValue, struct _OpcUa_Encoder* pEncoder);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_SessionlessInvokeRequestType_Decode(OpcUa_SessionlessInvokeRequestType* pValue, struct _OpcUa_Decoder* pDecoder);
+
+OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_SessionlessInvokeRequestType_EncodeableType;
+#endif
+
+#ifndef OPCUA_EXCLUDE_SessionlessInvokeResponseType
+/*============================================================================
+ * The SessionlessInvokeResponseType structure.
+ *===========================================================================*/
+typedef struct _OpcUa_SessionlessInvokeResponseType
 {
     OpcUa_Int32   NoOfNamespaceUris;
     OpcUa_String* NamespaceUris;
@@ -996,19 +1027,19 @@ typedef struct _OpcUa_SessionLessServiceMessageType
     OpcUa_String* ServerUris;
     OpcUa_UInt32  ServiceId;
 }
-OpcUa_SessionLessServiceMessageType;
+OpcUa_SessionlessInvokeResponseType;
 
-OPCUA_EXPORT OpcUa_Void OpcUa_SessionLessServiceMessageType_Initialize(OpcUa_SessionLessServiceMessageType* pValue);
+OPCUA_EXPORT OpcUa_Void OpcUa_SessionlessInvokeResponseType_Initialize(OpcUa_SessionlessInvokeResponseType* pValue);
 
-OPCUA_EXPORT OpcUa_Void OpcUa_SessionLessServiceMessageType_Clear(OpcUa_SessionLessServiceMessageType* pValue);
+OPCUA_EXPORT OpcUa_Void OpcUa_SessionlessInvokeResponseType_Clear(OpcUa_SessionlessInvokeResponseType* pValue);
 
-OPCUA_EXPORT OpcUa_StatusCode OpcUa_SessionLessServiceMessageType_GetSize(OpcUa_SessionLessServiceMessageType* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_SessionlessInvokeResponseType_GetSize(OpcUa_SessionlessInvokeResponseType* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
 
-OPCUA_EXPORT OpcUa_StatusCode OpcUa_SessionLessServiceMessageType_Encode(OpcUa_SessionLessServiceMessageType* pValue, struct _OpcUa_Encoder* pEncoder);
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_SessionlessInvokeResponseType_Encode(OpcUa_SessionlessInvokeResponseType* pValue, struct _OpcUa_Encoder* pEncoder);
 
-OPCUA_EXPORT OpcUa_StatusCode OpcUa_SessionLessServiceMessageType_Decode(OpcUa_SessionLessServiceMessageType* pValue, struct _OpcUa_Decoder* pDecoder);
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_SessionlessInvokeResponseType_Decode(OpcUa_SessionlessInvokeResponseType* pValue, struct _OpcUa_Decoder* pDecoder);
 
-OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_SessionLessServiceMessageType_EncodeableType;
+OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_SessionlessInvokeResponseType_EncodeableType;
 #endif
 
 #ifndef OPCUA_EXCLUDE_FindServers

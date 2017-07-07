@@ -145,6 +145,12 @@
       </Field>
     </Definition>
   </UADataType>
+  <UADataType NodeId="i=20998" BrowseName="VersionTime">
+    <DisplayName>VersionTime</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
+    </References>
+  </UADataType>
   <UADataType NodeId="i=12189" BrowseName="ServerOnNetwork">
     <DisplayName>ServerOnNetwork</DisplayName>
     <References>

@@ -3826,11 +3826,142 @@ struct _OpcUa_EncodeableType OpcUa_ServiceFault_EncodeableType =
 };
 #endif
 
-#ifndef OPCUA_EXCLUDE_SessionLessServiceMessageType
+#ifndef OPCUA_EXCLUDE_SessionlessInvokeRequestType
 /*============================================================================
- * OpcUa_SessionLessServiceMessageType_Initialize
+ * OpcUa_SessionlessInvokeRequestType_Initialize
  *===========================================================================*/
-OpcUa_Void OpcUa_SessionLessServiceMessageType_Initialize(OpcUa_SessionLessServiceMessageType* a_pValue)
+OpcUa_Void OpcUa_SessionlessInvokeRequestType_Initialize(OpcUa_SessionlessInvokeRequestType* a_pValue)
+{
+    if (a_pValue != OpcUa_Null)
+    {
+        OpcUa_Field_InitializeArray(UInt32, UrisVersion);
+        OpcUa_Field_InitializeArray(String, NamespaceUris);
+        OpcUa_Field_InitializeArray(String, ServerUris);
+        OpcUa_Field_InitializeArray(String, LocaleIds);
+        OpcUa_Field_Initialize(UInt32, ServiceId);
+    }
+}
+
+/*============================================================================
+ * OpcUa_SessionlessInvokeRequestType_Clear
+ *===========================================================================*/
+OpcUa_Void OpcUa_SessionlessInvokeRequestType_Clear(OpcUa_SessionlessInvokeRequestType* a_pValue)
+{
+    if (a_pValue != OpcUa_Null)
+    {
+        OpcUa_Field_ClearArray(UInt32, UrisVersion);
+        OpcUa_Field_ClearArray(String, NamespaceUris);
+        OpcUa_Field_ClearArray(String, ServerUris);
+        OpcUa_Field_ClearArray(String, LocaleIds);
+        OpcUa_Field_Clear(UInt32, ServiceId);
+    }
+}
+
+/*============================================================================
+ * OpcUa_SessionlessInvokeRequestType_GetSize
+ *===========================================================================*/
+OpcUa_StatusCode OpcUa_SessionlessInvokeRequestType_GetSize(OpcUa_SessionlessInvokeRequestType* a_pValue, OpcUa_Encoder* a_pEncoder, OpcUa_Int32* a_pSize)
+{
+    OpcUa_Int32 iSize = 0;
+
+    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "SessionlessInvokeRequestType_GetSize");
+
+    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
+    OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
+    OpcUa_ReturnErrorIfArgumentNull(a_pSize);
+
+    *a_pSize = -1;
+
+    OpcUa_Field_GetSizeArray(UInt32, UrisVersion);
+    OpcUa_Field_GetSizeArray(String, NamespaceUris);
+    OpcUa_Field_GetSizeArray(String, ServerUris);
+    OpcUa_Field_GetSizeArray(String, LocaleIds);
+    OpcUa_Field_GetSize(UInt32, ServiceId);
+
+    *a_pSize = iSize;
+
+    OpcUa_ReturnStatusCode;
+    OpcUa_BeginErrorHandling;
+
+    *a_pSize = -1;
+
+    OpcUa_FinishErrorHandling;
+}
+
+/*============================================================================
+ * OpcUa_SessionlessInvokeRequestType_Encode
+ *===========================================================================*/
+OpcUa_StatusCode OpcUa_SessionlessInvokeRequestType_Encode(OpcUa_SessionlessInvokeRequestType* a_pValue, OpcUa_Encoder* a_pEncoder)
+{
+    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "SessionlessInvokeRequestType_Encode");
+
+    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
+    OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
+
+    OpcUa_Field_WriteArray(UInt32, UrisVersion);
+    OpcUa_Field_WriteArray(String, NamespaceUris);
+    OpcUa_Field_WriteArray(String, ServerUris);
+    OpcUa_Field_WriteArray(String, LocaleIds);
+    OpcUa_Field_Write(UInt32, ServiceId);
+
+    OpcUa_ReturnStatusCode;
+    OpcUa_BeginErrorHandling;
+
+    /* nothing to do */
+
+    OpcUa_FinishErrorHandling;
+}
+
+/*============================================================================
+ * OpcUa_SessionlessInvokeRequestType_Decode
+ *===========================================================================*/
+OpcUa_StatusCode OpcUa_SessionlessInvokeRequestType_Decode(OpcUa_SessionlessInvokeRequestType* a_pValue, OpcUa_Decoder* a_pDecoder)
+{
+    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "SessionlessInvokeRequestType_Decode");
+
+    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
+    OpcUa_ReturnErrorIfArgumentNull(a_pDecoder);
+
+    OpcUa_SessionlessInvokeRequestType_Initialize(a_pValue);
+
+    OpcUa_Field_ReadArray(UInt32, UrisVersion);
+    OpcUa_Field_ReadArray(String, NamespaceUris);
+    OpcUa_Field_ReadArray(String, ServerUris);
+    OpcUa_Field_ReadArray(String, LocaleIds);
+    OpcUa_Field_Read(UInt32, ServiceId);
+
+    OpcUa_ReturnStatusCode;
+    OpcUa_BeginErrorHandling;
+
+    OpcUa_SessionlessInvokeRequestType_Clear(a_pValue);
+
+    OpcUa_FinishErrorHandling;
+}
+
+/*============================================================================
+ * OpcUa_SessionlessInvokeRequestType_EncodeableType
+ *===========================================================================*/
+struct _OpcUa_EncodeableType OpcUa_SessionlessInvokeRequestType_EncodeableType =
+{
+    "SessionlessInvokeRequestType",
+    OpcUaId_SessionlessInvokeRequestType,
+    OpcUaId_SessionlessInvokeRequestType_Encoding_DefaultBinary,
+    OpcUaId_SessionlessInvokeRequestType_Encoding_DefaultXml,
+    OpcUa_Null,
+    sizeof(OpcUa_SessionlessInvokeRequestType),
+    (OpcUa_EncodeableObject_PfnInitialize*)OpcUa_SessionlessInvokeRequestType_Initialize,
+    (OpcUa_EncodeableObject_PfnClear*)OpcUa_SessionlessInvokeRequestType_Clear,
+    (OpcUa_EncodeableObject_PfnGetSize*)OpcUa_SessionlessInvokeRequestType_GetSize,
+    (OpcUa_EncodeableObject_PfnEncode*)OpcUa_SessionlessInvokeRequestType_Encode,
+    (OpcUa_EncodeableObject_PfnDecode*)OpcUa_SessionlessInvokeRequestType_Decode
+};
+#endif
+
+#ifndef OPCUA_EXCLUDE_SessionlessInvokeResponseType
+/*============================================================================
+ * OpcUa_SessionlessInvokeResponseType_Initialize
+ *===========================================================================*/
+OpcUa_Void OpcUa_SessionlessInvokeResponseType_Initialize(OpcUa_SessionlessInvokeResponseType* a_pValue)
 {
     if (a_pValue != OpcUa_Null)
     {
@@ -3841,9 +3972,9 @@ OpcUa_Void OpcUa_SessionLessServiceMessageType_Initialize(OpcUa_SessionLessServi
 }
 
 /*============================================================================
- * OpcUa_SessionLessServiceMessageType_Clear
+ * OpcUa_SessionlessInvokeResponseType_Clear
  *===========================================================================*/
-OpcUa_Void OpcUa_SessionLessServiceMessageType_Clear(OpcUa_SessionLessServiceMessageType* a_pValue)
+OpcUa_Void OpcUa_SessionlessInvokeResponseType_Clear(OpcUa_SessionlessInvokeResponseType* a_pValue)
 {
     if (a_pValue != OpcUa_Null)
     {
@@ -3854,13 +3985,13 @@ OpcUa_Void OpcUa_SessionLessServiceMessageType_Clear(OpcUa_SessionLessServiceMes
 }
 
 /*============================================================================
- * OpcUa_SessionLessServiceMessageType_GetSize
+ * OpcUa_SessionlessInvokeResponseType_GetSize
  *===========================================================================*/
-OpcUa_StatusCode OpcUa_SessionLessServiceMessageType_GetSize(OpcUa_SessionLessServiceMessageType* a_pValue, OpcUa_Encoder* a_pEncoder, OpcUa_Int32* a_pSize)
+OpcUa_StatusCode OpcUa_SessionlessInvokeResponseType_GetSize(OpcUa_SessionlessInvokeResponseType* a_pValue, OpcUa_Encoder* a_pEncoder, OpcUa_Int32* a_pSize)
 {
     OpcUa_Int32 iSize = 0;
 
-    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "SessionLessServiceMessageType_GetSize");
+    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "SessionlessInvokeResponseType_GetSize");
 
     OpcUa_ReturnErrorIfArgumentNull(a_pValue);
     OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
@@ -3883,11 +4014,11 @@ OpcUa_StatusCode OpcUa_SessionLessServiceMessageType_GetSize(OpcUa_SessionLessSe
 }
 
 /*============================================================================
- * OpcUa_SessionLessServiceMessageType_Encode
+ * OpcUa_SessionlessInvokeResponseType_Encode
  *===========================================================================*/
-OpcUa_StatusCode OpcUa_SessionLessServiceMessageType_Encode(OpcUa_SessionLessServiceMessageType* a_pValue, OpcUa_Encoder* a_pEncoder)
+OpcUa_StatusCode OpcUa_SessionlessInvokeResponseType_Encode(OpcUa_SessionlessInvokeResponseType* a_pValue, OpcUa_Encoder* a_pEncoder)
 {
-    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "SessionLessServiceMessageType_Encode");
+    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "SessionlessInvokeResponseType_Encode");
 
     OpcUa_ReturnErrorIfArgumentNull(a_pValue);
     OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
@@ -3905,16 +4036,16 @@ OpcUa_StatusCode OpcUa_SessionLessServiceMessageType_Encode(OpcUa_SessionLessSer
 }
 
 /*============================================================================
- * OpcUa_SessionLessServiceMessageType_Decode
+ * OpcUa_SessionlessInvokeResponseType_Decode
  *===========================================================================*/
-OpcUa_StatusCode OpcUa_SessionLessServiceMessageType_Decode(OpcUa_SessionLessServiceMessageType* a_pValue, OpcUa_Decoder* a_pDecoder)
+OpcUa_StatusCode OpcUa_SessionlessInvokeResponseType_Decode(OpcUa_SessionlessInvokeResponseType* a_pValue, OpcUa_Decoder* a_pDecoder)
 {
-    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "SessionLessServiceMessageType_Decode");
+    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "SessionlessInvokeResponseType_Decode");
 
     OpcUa_ReturnErrorIfArgumentNull(a_pValue);
     OpcUa_ReturnErrorIfArgumentNull(a_pDecoder);
 
-    OpcUa_SessionLessServiceMessageType_Initialize(a_pValue);
+    OpcUa_SessionlessInvokeResponseType_Initialize(a_pValue);
 
     OpcUa_Field_ReadArray(String, NamespaceUris);
     OpcUa_Field_ReadArray(String, ServerUris);
@@ -3923,27 +4054,27 @@ OpcUa_StatusCode OpcUa_SessionLessServiceMessageType_Decode(OpcUa_SessionLessSer
     OpcUa_ReturnStatusCode;
     OpcUa_BeginErrorHandling;
 
-    OpcUa_SessionLessServiceMessageType_Clear(a_pValue);
+    OpcUa_SessionlessInvokeResponseType_Clear(a_pValue);
 
     OpcUa_FinishErrorHandling;
 }
 
 /*============================================================================
- * OpcUa_SessionLessServiceMessageType_EncodeableType
+ * OpcUa_SessionlessInvokeResponseType_EncodeableType
  *===========================================================================*/
-struct _OpcUa_EncodeableType OpcUa_SessionLessServiceMessageType_EncodeableType =
+struct _OpcUa_EncodeableType OpcUa_SessionlessInvokeResponseType_EncodeableType =
 {
-    "SessionLessServiceMessageType",
-    OpcUaId_SessionLessServiceMessageType,
-    OpcUaId_SessionLessServiceMessageType_Encoding_DefaultBinary,
-    OpcUaId_SessionLessServiceMessageType_Encoding_DefaultXml,
+    "SessionlessInvokeResponseType",
+    OpcUaId_SessionlessInvokeResponseType,
+    OpcUaId_SessionlessInvokeResponseType_Encoding_DefaultBinary,
+    OpcUaId_SessionlessInvokeResponseType_Encoding_DefaultXml,
     OpcUa_Null,
-    sizeof(OpcUa_SessionLessServiceMessageType),
-    (OpcUa_EncodeableObject_PfnInitialize*)OpcUa_SessionLessServiceMessageType_Initialize,
-    (OpcUa_EncodeableObject_PfnClear*)OpcUa_SessionLessServiceMessageType_Clear,
-    (OpcUa_EncodeableObject_PfnGetSize*)OpcUa_SessionLessServiceMessageType_GetSize,
-    (OpcUa_EncodeableObject_PfnEncode*)OpcUa_SessionLessServiceMessageType_Encode,
-    (OpcUa_EncodeableObject_PfnDecode*)OpcUa_SessionLessServiceMessageType_Decode
+    sizeof(OpcUa_SessionlessInvokeResponseType),
+    (OpcUa_EncodeableObject_PfnInitialize*)OpcUa_SessionlessInvokeResponseType_Initialize,
+    (OpcUa_EncodeableObject_PfnClear*)OpcUa_SessionlessInvokeResponseType_Clear,
+    (OpcUa_EncodeableObject_PfnGetSize*)OpcUa_SessionlessInvokeResponseType_GetSize,
+    (OpcUa_EncodeableObject_PfnEncode*)OpcUa_SessionlessInvokeResponseType_Encode,
+    (OpcUa_EncodeableObject_PfnDecode*)OpcUa_SessionlessInvokeResponseType_Decode
 };
 #endif
 
@@ -28911,8 +29042,11 @@ static OpcUa_EncodeableType* g_OpcUa_KnownEncodeableTypes[] =
     #ifndef OPCUA_EXCLUDE_ServiceFault
     &OpcUa_ServiceFault_EncodeableType,
     #endif
-    #ifndef OPCUA_EXCLUDE_SessionLessServiceMessageType
-    &OpcUa_SessionLessServiceMessageType_EncodeableType,
+    #ifndef OPCUA_EXCLUDE_SessionlessInvokeRequestType
+    &OpcUa_SessionlessInvokeRequestType_EncodeableType,
+    #endif
+    #ifndef OPCUA_EXCLUDE_SessionlessInvokeResponseType
+    &OpcUa_SessionlessInvokeResponseType_EncodeableType,
     #endif
     #ifndef OPCUA_EXCLUDE_FindServers
     &OpcUa_FindServersRequest_EncodeableType,
