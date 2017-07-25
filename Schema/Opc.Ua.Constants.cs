@@ -365,6 +365,16 @@ namespace Opc.Ua
         public const uint PermissionType = 94;
 
         /// <summary>
+        /// The identifier for the AccessLevelType DataType.
+        /// </summary>
+        public const uint AccessLevelType = 15031;
+
+        /// <summary>
+        /// The identifier for the EventNotifierType DataType.
+        /// </summary>
+        public const uint EventNotifierType = 15033;
+
+        /// <summary>
         /// The identifier for the AccessRestrictionType DataType.
         /// </summary>
         public const uint AccessRestrictionType = 95;
@@ -3880,14 +3890,14 @@ namespace Opc.Ua
         public const uint WellKnownRole_Supervisor = 15692;
 
         /// <summary>
-        /// The identifier for the WellKnownRole_SecurityAdmin Object.
-        /// </summary>
-        public const uint WellKnownRole_SecurityAdmin = 15704;
-
-        /// <summary>
         /// The identifier for the WellKnownRole_ConfigureAdmin Object.
         /// </summary>
         public const uint WellKnownRole_ConfigureAdmin = 15716;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin Object.
+        /// </summary>
+        public const uint WellKnownRole_SecurityAdmin = 15704;
 
         /// <summary>
         /// The identifier for the AlarmConditionType_ShelvingState Object.
@@ -5078,6 +5088,1211 @@ namespace Opc.Ua
         /// The identifier for the BrokerReaderGroupType_Diagnostics_LiveValues Object.
         /// </summary>
         public const uint BrokerReaderGroupType_Diagnostics_LiveValues = 20978;
+
+        /// <summary>
+        /// The identifier for the KeyValuePair_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint KeyValuePair_Encoding_DefaultBinary = 14846;
+
+        /// <summary>
+        /// The identifier for the IdentityMappingRuleType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint IdentityMappingRuleType_Encoding_DefaultBinary = 15736;
+
+        /// <summary>
+        /// The identifier for the TrustListDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint TrustListDataType_Encoding_DefaultBinary = 12680;
+
+        /// <summary>
+        /// The identifier for the DecimalDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DecimalDataType_Encoding_DefaultBinary = 17863;
+
+        /// <summary>
+        /// The identifier for the ConfigurationVersionDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ConfigurationVersionDataType_Encoding_DefaultBinary = 14847;
+
+        /// <summary>
+        /// The identifier for the DataSetMetaDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DataSetMetaDataType_Encoding_DefaultBinary = 124;
+
+        /// <summary>
+        /// The identifier for the FieldMetaData_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint FieldMetaData_Encoding_DefaultBinary = 14839;
+
+        /// <summary>
+        /// The identifier for the DataTypeDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DataTypeDescription_Encoding_DefaultBinary = 125;
+
+        /// <summary>
+        /// The identifier for the StructureDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint StructureDescription_Encoding_DefaultBinary = 126;
+
+        /// <summary>
+        /// The identifier for the EnumDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint EnumDescription_Encoding_DefaultBinary = 127;
+
+        /// <summary>
+        /// The identifier for the PublishedVariableDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint PublishedVariableDataType_Encoding_DefaultBinary = 14323;
+
+        /// <summary>
+        /// The identifier for the FieldTargetDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint FieldTargetDataType_Encoding_DefaultBinary = 14848;
+
+        /// <summary>
+        /// The identifier for the RolePermissionType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint RolePermissionType_Encoding_DefaultBinary = 128;
+
+        /// <summary>
+        /// The identifier for the DataTypeDefinition_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DataTypeDefinition_Encoding_DefaultBinary = 121;
+
+        /// <summary>
+        /// The identifier for the StructureField_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint StructureField_Encoding_DefaultBinary = 14844;
+
+        /// <summary>
+        /// The identifier for the StructureDefinition_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint StructureDefinition_Encoding_DefaultBinary = 122;
+
+        /// <summary>
+        /// The identifier for the EnumDefinition_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint EnumDefinition_Encoding_DefaultBinary = 123;
+
+        /// <summary>
+        /// The identifier for the Node_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint Node_Encoding_DefaultBinary = 260;
+
+        /// <summary>
+        /// The identifier for the InstanceNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint InstanceNode_Encoding_DefaultBinary = 11889;
+
+        /// <summary>
+        /// The identifier for the TypeNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint TypeNode_Encoding_DefaultBinary = 11890;
+
+        /// <summary>
+        /// The identifier for the ObjectNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ObjectNode_Encoding_DefaultBinary = 263;
+
+        /// <summary>
+        /// The identifier for the ObjectTypeNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ObjectTypeNode_Encoding_DefaultBinary = 266;
+
+        /// <summary>
+        /// The identifier for the VariableNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint VariableNode_Encoding_DefaultBinary = 269;
+
+        /// <summary>
+        /// The identifier for the VariableTypeNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint VariableTypeNode_Encoding_DefaultBinary = 272;
+
+        /// <summary>
+        /// The identifier for the ReferenceTypeNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ReferenceTypeNode_Encoding_DefaultBinary = 275;
+
+        /// <summary>
+        /// The identifier for the MethodNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint MethodNode_Encoding_DefaultBinary = 278;
+
+        /// <summary>
+        /// The identifier for the ViewNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ViewNode_Encoding_DefaultBinary = 281;
+
+        /// <summary>
+        /// The identifier for the DataTypeNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DataTypeNode_Encoding_DefaultBinary = 284;
+
+        /// <summary>
+        /// The identifier for the ReferenceNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ReferenceNode_Encoding_DefaultBinary = 287;
+
+        /// <summary>
+        /// The identifier for the Argument_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint Argument_Encoding_DefaultBinary = 298;
+
+        /// <summary>
+        /// The identifier for the EnumValueType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint EnumValueType_Encoding_DefaultBinary = 8251;
+
+        /// <summary>
+        /// The identifier for the EnumField_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint EnumField_Encoding_DefaultBinary = 14845;
+
+        /// <summary>
+        /// The identifier for the OptionSet_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint OptionSet_Encoding_DefaultBinary = 12765;
+
+        /// <summary>
+        /// The identifier for the Union_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint Union_Encoding_DefaultBinary = 12766;
+
+        /// <summary>
+        /// The identifier for the TimeZoneDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint TimeZoneDataType_Encoding_DefaultBinary = 8917;
+
+        /// <summary>
+        /// The identifier for the ApplicationDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ApplicationDescription_Encoding_DefaultBinary = 310;
+
+        /// <summary>
+        /// The identifier for the RequestHeader_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint RequestHeader_Encoding_DefaultBinary = 391;
+
+        /// <summary>
+        /// The identifier for the ResponseHeader_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ResponseHeader_Encoding_DefaultBinary = 394;
+
+        /// <summary>
+        /// The identifier for the ServiceFault_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ServiceFault_Encoding_DefaultBinary = 397;
+
+        /// <summary>
+        /// The identifier for the SessionlessInvokeRequestType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint SessionlessInvokeRequestType_Encoding_DefaultBinary = 15903;
+
+        /// <summary>
+        /// The identifier for the SessionlessInvokeResponseType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint SessionlessInvokeResponseType_Encoding_DefaultBinary = 21001;
+
+        /// <summary>
+        /// The identifier for the FindServersRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint FindServersRequest_Encoding_DefaultBinary = 422;
+
+        /// <summary>
+        /// The identifier for the FindServersResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint FindServersResponse_Encoding_DefaultBinary = 425;
+
+        /// <summary>
+        /// The identifier for the ServerOnNetwork_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ServerOnNetwork_Encoding_DefaultBinary = 12207;
+
+        /// <summary>
+        /// The identifier for the FindServersOnNetworkRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint FindServersOnNetworkRequest_Encoding_DefaultBinary = 12208;
+
+        /// <summary>
+        /// The identifier for the FindServersOnNetworkResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint FindServersOnNetworkResponse_Encoding_DefaultBinary = 12209;
+
+        /// <summary>
+        /// The identifier for the UserTokenPolicy_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint UserTokenPolicy_Encoding_DefaultBinary = 306;
+
+        /// <summary>
+        /// The identifier for the EndpointDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint EndpointDescription_Encoding_DefaultBinary = 314;
+
+        /// <summary>
+        /// The identifier for the GetEndpointsRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint GetEndpointsRequest_Encoding_DefaultBinary = 428;
+
+        /// <summary>
+        /// The identifier for the GetEndpointsResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint GetEndpointsResponse_Encoding_DefaultBinary = 431;
+
+        /// <summary>
+        /// The identifier for the RegisteredServer_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint RegisteredServer_Encoding_DefaultBinary = 434;
+
+        /// <summary>
+        /// The identifier for the RegisterServerRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint RegisterServerRequest_Encoding_DefaultBinary = 437;
+
+        /// <summary>
+        /// The identifier for the RegisterServerResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint RegisterServerResponse_Encoding_DefaultBinary = 440;
+
+        /// <summary>
+        /// The identifier for the DiscoveryConfiguration_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DiscoveryConfiguration_Encoding_DefaultBinary = 12900;
+
+        /// <summary>
+        /// The identifier for the MdnsDiscoveryConfiguration_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint MdnsDiscoveryConfiguration_Encoding_DefaultBinary = 12901;
+
+        /// <summary>
+        /// The identifier for the RegisterServer2Request_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint RegisterServer2Request_Encoding_DefaultBinary = 12211;
+
+        /// <summary>
+        /// The identifier for the RegisterServer2Response_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint RegisterServer2Response_Encoding_DefaultBinary = 12212;
+
+        /// <summary>
+        /// The identifier for the ChannelSecurityToken_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ChannelSecurityToken_Encoding_DefaultBinary = 443;
+
+        /// <summary>
+        /// The identifier for the OpenSecureChannelRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint OpenSecureChannelRequest_Encoding_DefaultBinary = 446;
+
+        /// <summary>
+        /// The identifier for the OpenSecureChannelResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint OpenSecureChannelResponse_Encoding_DefaultBinary = 449;
+
+        /// <summary>
+        /// The identifier for the CloseSecureChannelRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint CloseSecureChannelRequest_Encoding_DefaultBinary = 452;
+
+        /// <summary>
+        /// The identifier for the CloseSecureChannelResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint CloseSecureChannelResponse_Encoding_DefaultBinary = 455;
+
+        /// <summary>
+        /// The identifier for the SignedSoftwareCertificate_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint SignedSoftwareCertificate_Encoding_DefaultBinary = 346;
+
+        /// <summary>
+        /// The identifier for the SignatureData_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint SignatureData_Encoding_DefaultBinary = 458;
+
+        /// <summary>
+        /// The identifier for the CreateSessionRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint CreateSessionRequest_Encoding_DefaultBinary = 461;
+
+        /// <summary>
+        /// The identifier for the CreateSessionResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint CreateSessionResponse_Encoding_DefaultBinary = 464;
+
+        /// <summary>
+        /// The identifier for the UserIdentityToken_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint UserIdentityToken_Encoding_DefaultBinary = 318;
+
+        /// <summary>
+        /// The identifier for the AnonymousIdentityToken_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint AnonymousIdentityToken_Encoding_DefaultBinary = 321;
+
+        /// <summary>
+        /// The identifier for the UserNameIdentityToken_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint UserNameIdentityToken_Encoding_DefaultBinary = 324;
+
+        /// <summary>
+        /// The identifier for the X509IdentityToken_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint X509IdentityToken_Encoding_DefaultBinary = 327;
+
+        /// <summary>
+        /// The identifier for the IssuedIdentityToken_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint IssuedIdentityToken_Encoding_DefaultBinary = 940;
+
+        /// <summary>
+        /// The identifier for the ActivateSessionRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ActivateSessionRequest_Encoding_DefaultBinary = 467;
+
+        /// <summary>
+        /// The identifier for the ActivateSessionResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ActivateSessionResponse_Encoding_DefaultBinary = 470;
+
+        /// <summary>
+        /// The identifier for the CloseSessionRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint CloseSessionRequest_Encoding_DefaultBinary = 473;
+
+        /// <summary>
+        /// The identifier for the CloseSessionResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint CloseSessionResponse_Encoding_DefaultBinary = 476;
+
+        /// <summary>
+        /// The identifier for the CancelRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint CancelRequest_Encoding_DefaultBinary = 479;
+
+        /// <summary>
+        /// The identifier for the CancelResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint CancelResponse_Encoding_DefaultBinary = 482;
+
+        /// <summary>
+        /// The identifier for the NodeAttributes_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint NodeAttributes_Encoding_DefaultBinary = 351;
+
+        /// <summary>
+        /// The identifier for the ObjectAttributes_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ObjectAttributes_Encoding_DefaultBinary = 354;
+
+        /// <summary>
+        /// The identifier for the VariableAttributes_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint VariableAttributes_Encoding_DefaultBinary = 357;
+
+        /// <summary>
+        /// The identifier for the MethodAttributes_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint MethodAttributes_Encoding_DefaultBinary = 360;
+
+        /// <summary>
+        /// The identifier for the ObjectTypeAttributes_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ObjectTypeAttributes_Encoding_DefaultBinary = 363;
+
+        /// <summary>
+        /// The identifier for the VariableTypeAttributes_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint VariableTypeAttributes_Encoding_DefaultBinary = 366;
+
+        /// <summary>
+        /// The identifier for the ReferenceTypeAttributes_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ReferenceTypeAttributes_Encoding_DefaultBinary = 369;
+
+        /// <summary>
+        /// The identifier for the DataTypeAttributes_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DataTypeAttributes_Encoding_DefaultBinary = 372;
+
+        /// <summary>
+        /// The identifier for the ViewAttributes_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ViewAttributes_Encoding_DefaultBinary = 375;
+
+        /// <summary>
+        /// The identifier for the GenericAttributeValue_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint GenericAttributeValue_Encoding_DefaultBinary = 17610;
+
+        /// <summary>
+        /// The identifier for the GenericAttributes_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint GenericAttributes_Encoding_DefaultBinary = 17611;
+
+        /// <summary>
+        /// The identifier for the AddNodesItem_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint AddNodesItem_Encoding_DefaultBinary = 378;
+
+        /// <summary>
+        /// The identifier for the AddNodesResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint AddNodesResult_Encoding_DefaultBinary = 485;
+
+        /// <summary>
+        /// The identifier for the AddNodesRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint AddNodesRequest_Encoding_DefaultBinary = 488;
+
+        /// <summary>
+        /// The identifier for the AddNodesResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint AddNodesResponse_Encoding_DefaultBinary = 491;
+
+        /// <summary>
+        /// The identifier for the AddReferencesItem_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint AddReferencesItem_Encoding_DefaultBinary = 381;
+
+        /// <summary>
+        /// The identifier for the AddReferencesRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint AddReferencesRequest_Encoding_DefaultBinary = 494;
+
+        /// <summary>
+        /// The identifier for the AddReferencesResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint AddReferencesResponse_Encoding_DefaultBinary = 497;
+
+        /// <summary>
+        /// The identifier for the DeleteNodesItem_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DeleteNodesItem_Encoding_DefaultBinary = 384;
+
+        /// <summary>
+        /// The identifier for the DeleteNodesRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DeleteNodesRequest_Encoding_DefaultBinary = 500;
+
+        /// <summary>
+        /// The identifier for the DeleteNodesResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DeleteNodesResponse_Encoding_DefaultBinary = 503;
+
+        /// <summary>
+        /// The identifier for the DeleteReferencesItem_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DeleteReferencesItem_Encoding_DefaultBinary = 387;
+
+        /// <summary>
+        /// The identifier for the DeleteReferencesRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DeleteReferencesRequest_Encoding_DefaultBinary = 506;
+
+        /// <summary>
+        /// The identifier for the DeleteReferencesResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DeleteReferencesResponse_Encoding_DefaultBinary = 509;
+
+        /// <summary>
+        /// The identifier for the ViewDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ViewDescription_Encoding_DefaultBinary = 513;
+
+        /// <summary>
+        /// The identifier for the BrowseDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint BrowseDescription_Encoding_DefaultBinary = 516;
+
+        /// <summary>
+        /// The identifier for the ReferenceDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ReferenceDescription_Encoding_DefaultBinary = 520;
+
+        /// <summary>
+        /// The identifier for the BrowseResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint BrowseResult_Encoding_DefaultBinary = 524;
+
+        /// <summary>
+        /// The identifier for the BrowseRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint BrowseRequest_Encoding_DefaultBinary = 527;
+
+        /// <summary>
+        /// The identifier for the BrowseResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint BrowseResponse_Encoding_DefaultBinary = 530;
+
+        /// <summary>
+        /// The identifier for the BrowseNextRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint BrowseNextRequest_Encoding_DefaultBinary = 533;
+
+        /// <summary>
+        /// The identifier for the BrowseNextResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint BrowseNextResponse_Encoding_DefaultBinary = 536;
+
+        /// <summary>
+        /// The identifier for the RelativePathElement_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint RelativePathElement_Encoding_DefaultBinary = 539;
+
+        /// <summary>
+        /// The identifier for the RelativePath_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint RelativePath_Encoding_DefaultBinary = 542;
+
+        /// <summary>
+        /// The identifier for the BrowsePath_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint BrowsePath_Encoding_DefaultBinary = 545;
+
+        /// <summary>
+        /// The identifier for the BrowsePathTarget_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint BrowsePathTarget_Encoding_DefaultBinary = 548;
+
+        /// <summary>
+        /// The identifier for the BrowsePathResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint BrowsePathResult_Encoding_DefaultBinary = 551;
+
+        /// <summary>
+        /// The identifier for the TranslateBrowsePathsToNodeIdsRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint TranslateBrowsePathsToNodeIdsRequest_Encoding_DefaultBinary = 554;
+
+        /// <summary>
+        /// The identifier for the TranslateBrowsePathsToNodeIdsResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint TranslateBrowsePathsToNodeIdsResponse_Encoding_DefaultBinary = 557;
+
+        /// <summary>
+        /// The identifier for the RegisterNodesRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint RegisterNodesRequest_Encoding_DefaultBinary = 560;
+
+        /// <summary>
+        /// The identifier for the RegisterNodesResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint RegisterNodesResponse_Encoding_DefaultBinary = 563;
+
+        /// <summary>
+        /// The identifier for the UnregisterNodesRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint UnregisterNodesRequest_Encoding_DefaultBinary = 566;
+
+        /// <summary>
+        /// The identifier for the UnregisterNodesResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint UnregisterNodesResponse_Encoding_DefaultBinary = 569;
+
+        /// <summary>
+        /// The identifier for the EndpointConfiguration_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint EndpointConfiguration_Encoding_DefaultBinary = 333;
+
+        /// <summary>
+        /// The identifier for the QueryDataDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint QueryDataDescription_Encoding_DefaultBinary = 572;
+
+        /// <summary>
+        /// The identifier for the NodeTypeDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint NodeTypeDescription_Encoding_DefaultBinary = 575;
+
+        /// <summary>
+        /// The identifier for the QueryDataSet_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint QueryDataSet_Encoding_DefaultBinary = 579;
+
+        /// <summary>
+        /// The identifier for the NodeReference_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint NodeReference_Encoding_DefaultBinary = 582;
+
+        /// <summary>
+        /// The identifier for the ContentFilterElement_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ContentFilterElement_Encoding_DefaultBinary = 585;
+
+        /// <summary>
+        /// The identifier for the ContentFilter_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ContentFilter_Encoding_DefaultBinary = 588;
+
+        /// <summary>
+        /// The identifier for the FilterOperand_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint FilterOperand_Encoding_DefaultBinary = 591;
+
+        /// <summary>
+        /// The identifier for the ElementOperand_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ElementOperand_Encoding_DefaultBinary = 594;
+
+        /// <summary>
+        /// The identifier for the LiteralOperand_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint LiteralOperand_Encoding_DefaultBinary = 597;
+
+        /// <summary>
+        /// The identifier for the AttributeOperand_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint AttributeOperand_Encoding_DefaultBinary = 600;
+
+        /// <summary>
+        /// The identifier for the SimpleAttributeOperand_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint SimpleAttributeOperand_Encoding_DefaultBinary = 603;
+
+        /// <summary>
+        /// The identifier for the ContentFilterElementResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ContentFilterElementResult_Encoding_DefaultBinary = 606;
+
+        /// <summary>
+        /// The identifier for the ContentFilterResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ContentFilterResult_Encoding_DefaultBinary = 609;
+
+        /// <summary>
+        /// The identifier for the ParsingResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ParsingResult_Encoding_DefaultBinary = 612;
+
+        /// <summary>
+        /// The identifier for the QueryFirstRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint QueryFirstRequest_Encoding_DefaultBinary = 615;
+
+        /// <summary>
+        /// The identifier for the QueryFirstResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint QueryFirstResponse_Encoding_DefaultBinary = 618;
+
+        /// <summary>
+        /// The identifier for the QueryNextRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint QueryNextRequest_Encoding_DefaultBinary = 621;
+
+        /// <summary>
+        /// The identifier for the QueryNextResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint QueryNextResponse_Encoding_DefaultBinary = 624;
+
+        /// <summary>
+        /// The identifier for the ReadValueId_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ReadValueId_Encoding_DefaultBinary = 628;
+
+        /// <summary>
+        /// The identifier for the ReadRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ReadRequest_Encoding_DefaultBinary = 631;
+
+        /// <summary>
+        /// The identifier for the ReadResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ReadResponse_Encoding_DefaultBinary = 634;
+
+        /// <summary>
+        /// The identifier for the HistoryReadValueId_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint HistoryReadValueId_Encoding_DefaultBinary = 637;
+
+        /// <summary>
+        /// The identifier for the HistoryReadResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint HistoryReadResult_Encoding_DefaultBinary = 640;
+
+        /// <summary>
+        /// The identifier for the HistoryReadDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint HistoryReadDetails_Encoding_DefaultBinary = 643;
+
+        /// <summary>
+        /// The identifier for the ReadEventDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ReadEventDetails_Encoding_DefaultBinary = 646;
+
+        /// <summary>
+        /// The identifier for the ReadRawModifiedDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ReadRawModifiedDetails_Encoding_DefaultBinary = 649;
+
+        /// <summary>
+        /// The identifier for the ReadProcessedDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ReadProcessedDetails_Encoding_DefaultBinary = 652;
+
+        /// <summary>
+        /// The identifier for the ReadAtTimeDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ReadAtTimeDetails_Encoding_DefaultBinary = 655;
+
+        /// <summary>
+        /// The identifier for the HistoryData_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint HistoryData_Encoding_DefaultBinary = 658;
+
+        /// <summary>
+        /// The identifier for the ModificationInfo_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ModificationInfo_Encoding_DefaultBinary = 11226;
+
+        /// <summary>
+        /// The identifier for the HistoryModifiedData_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint HistoryModifiedData_Encoding_DefaultBinary = 11227;
+
+        /// <summary>
+        /// The identifier for the HistoryEvent_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint HistoryEvent_Encoding_DefaultBinary = 661;
+
+        /// <summary>
+        /// The identifier for the HistoryReadRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint HistoryReadRequest_Encoding_DefaultBinary = 664;
+
+        /// <summary>
+        /// The identifier for the HistoryReadResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint HistoryReadResponse_Encoding_DefaultBinary = 667;
+
+        /// <summary>
+        /// The identifier for the WriteValue_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint WriteValue_Encoding_DefaultBinary = 670;
+
+        /// <summary>
+        /// The identifier for the WriteRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint WriteRequest_Encoding_DefaultBinary = 673;
+
+        /// <summary>
+        /// The identifier for the WriteResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint WriteResponse_Encoding_DefaultBinary = 676;
+
+        /// <summary>
+        /// The identifier for the HistoryUpdateDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint HistoryUpdateDetails_Encoding_DefaultBinary = 679;
+
+        /// <summary>
+        /// The identifier for the UpdateDataDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint UpdateDataDetails_Encoding_DefaultBinary = 682;
+
+        /// <summary>
+        /// The identifier for the UpdateStructureDataDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint UpdateStructureDataDetails_Encoding_DefaultBinary = 11300;
+
+        /// <summary>
+        /// The identifier for the UpdateEventDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint UpdateEventDetails_Encoding_DefaultBinary = 685;
+
+        /// <summary>
+        /// The identifier for the DeleteRawModifiedDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DeleteRawModifiedDetails_Encoding_DefaultBinary = 688;
+
+        /// <summary>
+        /// The identifier for the DeleteAtTimeDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DeleteAtTimeDetails_Encoding_DefaultBinary = 691;
+
+        /// <summary>
+        /// The identifier for the DeleteEventDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DeleteEventDetails_Encoding_DefaultBinary = 694;
+
+        /// <summary>
+        /// The identifier for the HistoryUpdateResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint HistoryUpdateResult_Encoding_DefaultBinary = 697;
+
+        /// <summary>
+        /// The identifier for the HistoryUpdateRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint HistoryUpdateRequest_Encoding_DefaultBinary = 700;
+
+        /// <summary>
+        /// The identifier for the HistoryUpdateResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint HistoryUpdateResponse_Encoding_DefaultBinary = 703;
+
+        /// <summary>
+        /// The identifier for the CallMethodRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint CallMethodRequest_Encoding_DefaultBinary = 706;
+
+        /// <summary>
+        /// The identifier for the CallMethodResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint CallMethodResult_Encoding_DefaultBinary = 709;
+
+        /// <summary>
+        /// The identifier for the CallRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint CallRequest_Encoding_DefaultBinary = 712;
+
+        /// <summary>
+        /// The identifier for the CallResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint CallResponse_Encoding_DefaultBinary = 715;
+
+        /// <summary>
+        /// The identifier for the MonitoringFilter_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint MonitoringFilter_Encoding_DefaultBinary = 721;
+
+        /// <summary>
+        /// The identifier for the DataChangeFilter_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DataChangeFilter_Encoding_DefaultBinary = 724;
+
+        /// <summary>
+        /// The identifier for the EventFilter_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint EventFilter_Encoding_DefaultBinary = 727;
+
+        /// <summary>
+        /// The identifier for the AggregateConfiguration_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint AggregateConfiguration_Encoding_DefaultBinary = 950;
+
+        /// <summary>
+        /// The identifier for the AggregateFilter_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint AggregateFilter_Encoding_DefaultBinary = 730;
+
+        /// <summary>
+        /// The identifier for the MonitoringFilterResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint MonitoringFilterResult_Encoding_DefaultBinary = 733;
+
+        /// <summary>
+        /// The identifier for the EventFilterResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint EventFilterResult_Encoding_DefaultBinary = 736;
+
+        /// <summary>
+        /// The identifier for the AggregateFilterResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint AggregateFilterResult_Encoding_DefaultBinary = 739;
+
+        /// <summary>
+        /// The identifier for the MonitoringParameters_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint MonitoringParameters_Encoding_DefaultBinary = 742;
+
+        /// <summary>
+        /// The identifier for the MonitoredItemCreateRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint MonitoredItemCreateRequest_Encoding_DefaultBinary = 745;
+
+        /// <summary>
+        /// The identifier for the MonitoredItemCreateResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint MonitoredItemCreateResult_Encoding_DefaultBinary = 748;
+
+        /// <summary>
+        /// The identifier for the CreateMonitoredItemsRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint CreateMonitoredItemsRequest_Encoding_DefaultBinary = 751;
+
+        /// <summary>
+        /// The identifier for the CreateMonitoredItemsResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint CreateMonitoredItemsResponse_Encoding_DefaultBinary = 754;
+
+        /// <summary>
+        /// The identifier for the MonitoredItemModifyRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint MonitoredItemModifyRequest_Encoding_DefaultBinary = 757;
+
+        /// <summary>
+        /// The identifier for the MonitoredItemModifyResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint MonitoredItemModifyResult_Encoding_DefaultBinary = 760;
+
+        /// <summary>
+        /// The identifier for the ModifyMonitoredItemsRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ModifyMonitoredItemsRequest_Encoding_DefaultBinary = 763;
+
+        /// <summary>
+        /// The identifier for the ModifyMonitoredItemsResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ModifyMonitoredItemsResponse_Encoding_DefaultBinary = 766;
+
+        /// <summary>
+        /// The identifier for the SetMonitoringModeRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint SetMonitoringModeRequest_Encoding_DefaultBinary = 769;
+
+        /// <summary>
+        /// The identifier for the SetMonitoringModeResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint SetMonitoringModeResponse_Encoding_DefaultBinary = 772;
+
+        /// <summary>
+        /// The identifier for the SetTriggeringRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint SetTriggeringRequest_Encoding_DefaultBinary = 775;
+
+        /// <summary>
+        /// The identifier for the SetTriggeringResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint SetTriggeringResponse_Encoding_DefaultBinary = 778;
+
+        /// <summary>
+        /// The identifier for the DeleteMonitoredItemsRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DeleteMonitoredItemsRequest_Encoding_DefaultBinary = 781;
+
+        /// <summary>
+        /// The identifier for the DeleteMonitoredItemsResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DeleteMonitoredItemsResponse_Encoding_DefaultBinary = 784;
+
+        /// <summary>
+        /// The identifier for the CreateSubscriptionRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint CreateSubscriptionRequest_Encoding_DefaultBinary = 787;
+
+        /// <summary>
+        /// The identifier for the CreateSubscriptionResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint CreateSubscriptionResponse_Encoding_DefaultBinary = 790;
+
+        /// <summary>
+        /// The identifier for the ModifySubscriptionRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ModifySubscriptionRequest_Encoding_DefaultBinary = 793;
+
+        /// <summary>
+        /// The identifier for the ModifySubscriptionResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ModifySubscriptionResponse_Encoding_DefaultBinary = 796;
+
+        /// <summary>
+        /// The identifier for the SetPublishingModeRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint SetPublishingModeRequest_Encoding_DefaultBinary = 799;
+
+        /// <summary>
+        /// The identifier for the SetPublishingModeResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint SetPublishingModeResponse_Encoding_DefaultBinary = 802;
+
+        /// <summary>
+        /// The identifier for the NotificationMessage_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint NotificationMessage_Encoding_DefaultBinary = 805;
+
+        /// <summary>
+        /// The identifier for the NotificationData_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint NotificationData_Encoding_DefaultBinary = 947;
+
+        /// <summary>
+        /// The identifier for the DataChangeNotification_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DataChangeNotification_Encoding_DefaultBinary = 811;
+
+        /// <summary>
+        /// The identifier for the MonitoredItemNotification_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint MonitoredItemNotification_Encoding_DefaultBinary = 808;
+
+        /// <summary>
+        /// The identifier for the EventNotificationList_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint EventNotificationList_Encoding_DefaultBinary = 916;
+
+        /// <summary>
+        /// The identifier for the EventFieldList_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint EventFieldList_Encoding_DefaultBinary = 919;
+
+        /// <summary>
+        /// The identifier for the HistoryEventFieldList_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint HistoryEventFieldList_Encoding_DefaultBinary = 922;
+
+        /// <summary>
+        /// The identifier for the StatusChangeNotification_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint StatusChangeNotification_Encoding_DefaultBinary = 820;
+
+        /// <summary>
+        /// The identifier for the SubscriptionAcknowledgement_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint SubscriptionAcknowledgement_Encoding_DefaultBinary = 823;
+
+        /// <summary>
+        /// The identifier for the PublishRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint PublishRequest_Encoding_DefaultBinary = 826;
+
+        /// <summary>
+        /// The identifier for the PublishResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint PublishResponse_Encoding_DefaultBinary = 829;
+
+        /// <summary>
+        /// The identifier for the RepublishRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint RepublishRequest_Encoding_DefaultBinary = 832;
+
+        /// <summary>
+        /// The identifier for the RepublishResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint RepublishResponse_Encoding_DefaultBinary = 835;
+
+        /// <summary>
+        /// The identifier for the TransferResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint TransferResult_Encoding_DefaultBinary = 838;
+
+        /// <summary>
+        /// The identifier for the TransferSubscriptionsRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint TransferSubscriptionsRequest_Encoding_DefaultBinary = 841;
+
+        /// <summary>
+        /// The identifier for the TransferSubscriptionsResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint TransferSubscriptionsResponse_Encoding_DefaultBinary = 844;
+
+        /// <summary>
+        /// The identifier for the DeleteSubscriptionsRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DeleteSubscriptionsRequest_Encoding_DefaultBinary = 847;
+
+        /// <summary>
+        /// The identifier for the DeleteSubscriptionsResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DeleteSubscriptionsResponse_Encoding_DefaultBinary = 850;
+
+        /// <summary>
+        /// The identifier for the BuildInfo_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint BuildInfo_Encoding_DefaultBinary = 340;
+
+        /// <summary>
+        /// The identifier for the RedundantServerDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint RedundantServerDataType_Encoding_DefaultBinary = 855;
+
+        /// <summary>
+        /// The identifier for the EndpointUrlListDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint EndpointUrlListDataType_Encoding_DefaultBinary = 11957;
+
+        /// <summary>
+        /// The identifier for the NetworkGroupDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint NetworkGroupDataType_Encoding_DefaultBinary = 11958;
+
+        /// <summary>
+        /// The identifier for the SamplingIntervalDiagnosticsDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint SamplingIntervalDiagnosticsDataType_Encoding_DefaultBinary = 858;
+
+        /// <summary>
+        /// The identifier for the ServerDiagnosticsSummaryDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ServerDiagnosticsSummaryDataType_Encoding_DefaultBinary = 861;
+
+        /// <summary>
+        /// The identifier for the ServerStatusDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ServerStatusDataType_Encoding_DefaultBinary = 864;
+
+        /// <summary>
+        /// The identifier for the SessionDiagnosticsDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint SessionDiagnosticsDataType_Encoding_DefaultBinary = 867;
+
+        /// <summary>
+        /// The identifier for the SessionSecurityDiagnosticsDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint SessionSecurityDiagnosticsDataType_Encoding_DefaultBinary = 870;
+
+        /// <summary>
+        /// The identifier for the ServiceCounterDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ServiceCounterDataType_Encoding_DefaultBinary = 873;
+
+        /// <summary>
+        /// The identifier for the StatusResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint StatusResult_Encoding_DefaultBinary = 301;
+
+        /// <summary>
+        /// The identifier for the SubscriptionDiagnosticsDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint SubscriptionDiagnosticsDataType_Encoding_DefaultBinary = 876;
+
+        /// <summary>
+        /// The identifier for the ModelChangeStructureDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ModelChangeStructureDataType_Encoding_DefaultBinary = 879;
+
+        /// <summary>
+        /// The identifier for the SemanticChangeStructureDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint SemanticChangeStructureDataType_Encoding_DefaultBinary = 899;
+
+        /// <summary>
+        /// The identifier for the Range_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint Range_Encoding_DefaultBinary = 886;
+
+        /// <summary>
+        /// The identifier for the EUInformation_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint EUInformation_Encoding_DefaultBinary = 889;
+
+        /// <summary>
+        /// The identifier for the ComplexNumberType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ComplexNumberType_Encoding_DefaultBinary = 12181;
+
+        /// <summary>
+        /// The identifier for the DoubleComplexNumberType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DoubleComplexNumberType_Encoding_DefaultBinary = 12182;
+
+        /// <summary>
+        /// The identifier for the AxisInformation_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint AxisInformation_Encoding_DefaultBinary = 12089;
+
+        /// <summary>
+        /// The identifier for the XVType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint XVType_Encoding_DefaultBinary = 12090;
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnosticDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ProgramDiagnosticDataType_Encoding_DefaultBinary = 896;
+
+        /// <summary>
+        /// The identifier for the Annotation_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint Annotation_Encoding_DefaultBinary = 893;
 
         /// <summary>
         /// The identifier for the KeyValuePair_Encoding_DefaultXml Object.
@@ -6285,1209 +7500,1209 @@ namespace Opc.Ua
         public const uint Annotation_Encoding_DefaultXml = 892;
 
         /// <summary>
-        /// The identifier for the KeyValuePair_Encoding_DefaultBinary Object.
+        /// The identifier for the KeyValuePair_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint KeyValuePair_Encoding_DefaultBinary = 14846;
+        public const uint KeyValuePair_Encoding_DefaultJson = 15041;
 
         /// <summary>
-        /// The identifier for the IdentityMappingRuleType_Encoding_DefaultBinary Object.
+        /// The identifier for the IdentityMappingRuleType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint IdentityMappingRuleType_Encoding_DefaultBinary = 15736;
+        public const uint IdentityMappingRuleType_Encoding_DefaultJson = 15042;
 
         /// <summary>
-        /// The identifier for the TrustListDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the TrustListDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint TrustListDataType_Encoding_DefaultBinary = 12680;
+        public const uint TrustListDataType_Encoding_DefaultJson = 15044;
 
         /// <summary>
-        /// The identifier for the DecimalDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the DecimalDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DecimalDataType_Encoding_DefaultBinary = 17863;
+        public const uint DecimalDataType_Encoding_DefaultJson = 15045;
 
         /// <summary>
-        /// The identifier for the ConfigurationVersionDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the ConfigurationVersionDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ConfigurationVersionDataType_Encoding_DefaultBinary = 14847;
+        public const uint ConfigurationVersionDataType_Encoding_DefaultJson = 15049;
 
         /// <summary>
-        /// The identifier for the DataSetMetaDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the DataSetMetaDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DataSetMetaDataType_Encoding_DefaultBinary = 124;
+        public const uint DataSetMetaDataType_Encoding_DefaultJson = 15050;
 
         /// <summary>
-        /// The identifier for the FieldMetaData_Encoding_DefaultBinary Object.
+        /// The identifier for the FieldMetaData_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint FieldMetaData_Encoding_DefaultBinary = 14839;
+        public const uint FieldMetaData_Encoding_DefaultJson = 15051;
 
         /// <summary>
-        /// The identifier for the DataTypeDescription_Encoding_DefaultBinary Object.
+        /// The identifier for the DataTypeDescription_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DataTypeDescription_Encoding_DefaultBinary = 125;
+        public const uint DataTypeDescription_Encoding_DefaultJson = 15057;
 
         /// <summary>
-        /// The identifier for the StructureDescription_Encoding_DefaultBinary Object.
+        /// The identifier for the StructureDescription_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint StructureDescription_Encoding_DefaultBinary = 126;
+        public const uint StructureDescription_Encoding_DefaultJson = 15058;
 
         /// <summary>
-        /// The identifier for the EnumDescription_Encoding_DefaultBinary Object.
+        /// The identifier for the EnumDescription_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint EnumDescription_Encoding_DefaultBinary = 127;
+        public const uint EnumDescription_Encoding_DefaultJson = 15059;
 
         /// <summary>
-        /// The identifier for the PublishedVariableDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the PublishedVariableDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint PublishedVariableDataType_Encoding_DefaultBinary = 14323;
+        public const uint PublishedVariableDataType_Encoding_DefaultJson = 15060;
 
         /// <summary>
-        /// The identifier for the FieldTargetDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the FieldTargetDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint FieldTargetDataType_Encoding_DefaultBinary = 14848;
+        public const uint FieldTargetDataType_Encoding_DefaultJson = 15061;
 
         /// <summary>
-        /// The identifier for the RolePermissionType_Encoding_DefaultBinary Object.
+        /// The identifier for the RolePermissionType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint RolePermissionType_Encoding_DefaultBinary = 128;
+        public const uint RolePermissionType_Encoding_DefaultJson = 15062;
 
         /// <summary>
-        /// The identifier for the DataTypeDefinition_Encoding_DefaultBinary Object.
+        /// The identifier for the DataTypeDefinition_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DataTypeDefinition_Encoding_DefaultBinary = 121;
+        public const uint DataTypeDefinition_Encoding_DefaultJson = 15063;
 
         /// <summary>
-        /// The identifier for the StructureField_Encoding_DefaultBinary Object.
+        /// The identifier for the StructureField_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint StructureField_Encoding_DefaultBinary = 14844;
+        public const uint StructureField_Encoding_DefaultJson = 15065;
 
         /// <summary>
-        /// The identifier for the StructureDefinition_Encoding_DefaultBinary Object.
+        /// The identifier for the StructureDefinition_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint StructureDefinition_Encoding_DefaultBinary = 122;
+        public const uint StructureDefinition_Encoding_DefaultJson = 15066;
 
         /// <summary>
-        /// The identifier for the EnumDefinition_Encoding_DefaultBinary Object.
+        /// The identifier for the EnumDefinition_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint EnumDefinition_Encoding_DefaultBinary = 123;
+        public const uint EnumDefinition_Encoding_DefaultJson = 15067;
 
         /// <summary>
-        /// The identifier for the Node_Encoding_DefaultBinary Object.
+        /// The identifier for the Node_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint Node_Encoding_DefaultBinary = 260;
+        public const uint Node_Encoding_DefaultJson = 15068;
 
         /// <summary>
-        /// The identifier for the InstanceNode_Encoding_DefaultBinary Object.
+        /// The identifier for the InstanceNode_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint InstanceNode_Encoding_DefaultBinary = 11889;
+        public const uint InstanceNode_Encoding_DefaultJson = 15069;
 
         /// <summary>
-        /// The identifier for the TypeNode_Encoding_DefaultBinary Object.
+        /// The identifier for the TypeNode_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint TypeNode_Encoding_DefaultBinary = 11890;
+        public const uint TypeNode_Encoding_DefaultJson = 15070;
 
         /// <summary>
-        /// The identifier for the ObjectNode_Encoding_DefaultBinary Object.
+        /// The identifier for the ObjectNode_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ObjectNode_Encoding_DefaultBinary = 263;
+        public const uint ObjectNode_Encoding_DefaultJson = 15071;
 
         /// <summary>
-        /// The identifier for the ObjectTypeNode_Encoding_DefaultBinary Object.
+        /// The identifier for the ObjectTypeNode_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ObjectTypeNode_Encoding_DefaultBinary = 266;
+        public const uint ObjectTypeNode_Encoding_DefaultJson = 15073;
 
         /// <summary>
-        /// The identifier for the VariableNode_Encoding_DefaultBinary Object.
+        /// The identifier for the VariableNode_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint VariableNode_Encoding_DefaultBinary = 269;
+        public const uint VariableNode_Encoding_DefaultJson = 15074;
 
         /// <summary>
-        /// The identifier for the VariableTypeNode_Encoding_DefaultBinary Object.
+        /// The identifier for the VariableTypeNode_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint VariableTypeNode_Encoding_DefaultBinary = 272;
+        public const uint VariableTypeNode_Encoding_DefaultJson = 15075;
 
         /// <summary>
-        /// The identifier for the ReferenceTypeNode_Encoding_DefaultBinary Object.
+        /// The identifier for the ReferenceTypeNode_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ReferenceTypeNode_Encoding_DefaultBinary = 275;
+        public const uint ReferenceTypeNode_Encoding_DefaultJson = 15076;
 
         /// <summary>
-        /// The identifier for the MethodNode_Encoding_DefaultBinary Object.
+        /// The identifier for the MethodNode_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint MethodNode_Encoding_DefaultBinary = 278;
+        public const uint MethodNode_Encoding_DefaultJson = 15077;
 
         /// <summary>
-        /// The identifier for the ViewNode_Encoding_DefaultBinary Object.
+        /// The identifier for the ViewNode_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ViewNode_Encoding_DefaultBinary = 281;
+        public const uint ViewNode_Encoding_DefaultJson = 15078;
 
         /// <summary>
-        /// The identifier for the DataTypeNode_Encoding_DefaultBinary Object.
+        /// The identifier for the DataTypeNode_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DataTypeNode_Encoding_DefaultBinary = 284;
+        public const uint DataTypeNode_Encoding_DefaultJson = 15079;
 
         /// <summary>
-        /// The identifier for the ReferenceNode_Encoding_DefaultBinary Object.
+        /// The identifier for the ReferenceNode_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ReferenceNode_Encoding_DefaultBinary = 287;
+        public const uint ReferenceNode_Encoding_DefaultJson = 15080;
 
         /// <summary>
-        /// The identifier for the Argument_Encoding_DefaultBinary Object.
+        /// The identifier for the Argument_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint Argument_Encoding_DefaultBinary = 298;
+        public const uint Argument_Encoding_DefaultJson = 15081;
 
         /// <summary>
-        /// The identifier for the EnumValueType_Encoding_DefaultBinary Object.
+        /// The identifier for the EnumValueType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint EnumValueType_Encoding_DefaultBinary = 8251;
+        public const uint EnumValueType_Encoding_DefaultJson = 15082;
 
         /// <summary>
-        /// The identifier for the EnumField_Encoding_DefaultBinary Object.
+        /// The identifier for the EnumField_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint EnumField_Encoding_DefaultBinary = 14845;
+        public const uint EnumField_Encoding_DefaultJson = 15083;
 
         /// <summary>
-        /// The identifier for the OptionSet_Encoding_DefaultBinary Object.
+        /// The identifier for the OptionSet_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint OptionSet_Encoding_DefaultBinary = 12765;
+        public const uint OptionSet_Encoding_DefaultJson = 15084;
 
         /// <summary>
-        /// The identifier for the Union_Encoding_DefaultBinary Object.
+        /// The identifier for the Union_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint Union_Encoding_DefaultBinary = 12766;
+        public const uint Union_Encoding_DefaultJson = 15085;
 
         /// <summary>
-        /// The identifier for the TimeZoneDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the TimeZoneDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint TimeZoneDataType_Encoding_DefaultBinary = 8917;
+        public const uint TimeZoneDataType_Encoding_DefaultJson = 15086;
 
         /// <summary>
-        /// The identifier for the ApplicationDescription_Encoding_DefaultBinary Object.
+        /// The identifier for the ApplicationDescription_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ApplicationDescription_Encoding_DefaultBinary = 310;
+        public const uint ApplicationDescription_Encoding_DefaultJson = 15087;
 
         /// <summary>
-        /// The identifier for the RequestHeader_Encoding_DefaultBinary Object.
+        /// The identifier for the RequestHeader_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint RequestHeader_Encoding_DefaultBinary = 391;
+        public const uint RequestHeader_Encoding_DefaultJson = 15088;
 
         /// <summary>
-        /// The identifier for the ResponseHeader_Encoding_DefaultBinary Object.
+        /// The identifier for the ResponseHeader_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ResponseHeader_Encoding_DefaultBinary = 394;
+        public const uint ResponseHeader_Encoding_DefaultJson = 15089;
 
         /// <summary>
-        /// The identifier for the ServiceFault_Encoding_DefaultBinary Object.
+        /// The identifier for the ServiceFault_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ServiceFault_Encoding_DefaultBinary = 397;
+        public const uint ServiceFault_Encoding_DefaultJson = 15090;
 
         /// <summary>
-        /// The identifier for the SessionlessInvokeRequestType_Encoding_DefaultBinary Object.
+        /// The identifier for the SessionlessInvokeRequestType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint SessionlessInvokeRequestType_Encoding_DefaultBinary = 15903;
+        public const uint SessionlessInvokeRequestType_Encoding_DefaultJson = 15091;
 
         /// <summary>
-        /// The identifier for the SessionlessInvokeResponseType_Encoding_DefaultBinary Object.
+        /// The identifier for the SessionlessInvokeResponseType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint SessionlessInvokeResponseType_Encoding_DefaultBinary = 21001;
+        public const uint SessionlessInvokeResponseType_Encoding_DefaultJson = 15092;
 
         /// <summary>
-        /// The identifier for the FindServersRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the FindServersRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint FindServersRequest_Encoding_DefaultBinary = 422;
+        public const uint FindServersRequest_Encoding_DefaultJson = 15093;
 
         /// <summary>
-        /// The identifier for the FindServersResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the FindServersResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint FindServersResponse_Encoding_DefaultBinary = 425;
+        public const uint FindServersResponse_Encoding_DefaultJson = 15094;
 
         /// <summary>
-        /// The identifier for the ServerOnNetwork_Encoding_DefaultBinary Object.
+        /// The identifier for the ServerOnNetwork_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ServerOnNetwork_Encoding_DefaultBinary = 12207;
+        public const uint ServerOnNetwork_Encoding_DefaultJson = 15095;
 
         /// <summary>
-        /// The identifier for the FindServersOnNetworkRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the FindServersOnNetworkRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint FindServersOnNetworkRequest_Encoding_DefaultBinary = 12208;
+        public const uint FindServersOnNetworkRequest_Encoding_DefaultJson = 15096;
 
         /// <summary>
-        /// The identifier for the FindServersOnNetworkResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the FindServersOnNetworkResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint FindServersOnNetworkResponse_Encoding_DefaultBinary = 12209;
+        public const uint FindServersOnNetworkResponse_Encoding_DefaultJson = 15097;
 
         /// <summary>
-        /// The identifier for the UserTokenPolicy_Encoding_DefaultBinary Object.
+        /// The identifier for the UserTokenPolicy_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint UserTokenPolicy_Encoding_DefaultBinary = 306;
+        public const uint UserTokenPolicy_Encoding_DefaultJson = 15098;
 
         /// <summary>
-        /// The identifier for the EndpointDescription_Encoding_DefaultBinary Object.
+        /// The identifier for the EndpointDescription_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint EndpointDescription_Encoding_DefaultBinary = 314;
+        public const uint EndpointDescription_Encoding_DefaultJson = 15099;
 
         /// <summary>
-        /// The identifier for the GetEndpointsRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the GetEndpointsRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint GetEndpointsRequest_Encoding_DefaultBinary = 428;
+        public const uint GetEndpointsRequest_Encoding_DefaultJson = 15100;
 
         /// <summary>
-        /// The identifier for the GetEndpointsResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the GetEndpointsResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint GetEndpointsResponse_Encoding_DefaultBinary = 431;
+        public const uint GetEndpointsResponse_Encoding_DefaultJson = 15101;
 
         /// <summary>
-        /// The identifier for the RegisteredServer_Encoding_DefaultBinary Object.
+        /// The identifier for the RegisteredServer_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint RegisteredServer_Encoding_DefaultBinary = 434;
+        public const uint RegisteredServer_Encoding_DefaultJson = 15102;
 
         /// <summary>
-        /// The identifier for the RegisterServerRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the RegisterServerRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint RegisterServerRequest_Encoding_DefaultBinary = 437;
+        public const uint RegisterServerRequest_Encoding_DefaultJson = 15103;
 
         /// <summary>
-        /// The identifier for the RegisterServerResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the RegisterServerResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint RegisterServerResponse_Encoding_DefaultBinary = 440;
+        public const uint RegisterServerResponse_Encoding_DefaultJson = 15104;
 
         /// <summary>
-        /// The identifier for the DiscoveryConfiguration_Encoding_DefaultBinary Object.
+        /// The identifier for the DiscoveryConfiguration_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DiscoveryConfiguration_Encoding_DefaultBinary = 12900;
+        public const uint DiscoveryConfiguration_Encoding_DefaultJson = 15105;
 
         /// <summary>
-        /// The identifier for the MdnsDiscoveryConfiguration_Encoding_DefaultBinary Object.
+        /// The identifier for the MdnsDiscoveryConfiguration_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint MdnsDiscoveryConfiguration_Encoding_DefaultBinary = 12901;
+        public const uint MdnsDiscoveryConfiguration_Encoding_DefaultJson = 15106;
 
         /// <summary>
-        /// The identifier for the RegisterServer2Request_Encoding_DefaultBinary Object.
+        /// The identifier for the RegisterServer2Request_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint RegisterServer2Request_Encoding_DefaultBinary = 12211;
+        public const uint RegisterServer2Request_Encoding_DefaultJson = 15107;
 
         /// <summary>
-        /// The identifier for the RegisterServer2Response_Encoding_DefaultBinary Object.
+        /// The identifier for the RegisterServer2Response_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint RegisterServer2Response_Encoding_DefaultBinary = 12212;
+        public const uint RegisterServer2Response_Encoding_DefaultJson = 15130;
 
         /// <summary>
-        /// The identifier for the ChannelSecurityToken_Encoding_DefaultBinary Object.
+        /// The identifier for the ChannelSecurityToken_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ChannelSecurityToken_Encoding_DefaultBinary = 443;
+        public const uint ChannelSecurityToken_Encoding_DefaultJson = 15131;
 
         /// <summary>
-        /// The identifier for the OpenSecureChannelRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the OpenSecureChannelRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint OpenSecureChannelRequest_Encoding_DefaultBinary = 446;
+        public const uint OpenSecureChannelRequest_Encoding_DefaultJson = 15132;
 
         /// <summary>
-        /// The identifier for the OpenSecureChannelResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the OpenSecureChannelResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint OpenSecureChannelResponse_Encoding_DefaultBinary = 449;
+        public const uint OpenSecureChannelResponse_Encoding_DefaultJson = 15133;
 
         /// <summary>
-        /// The identifier for the CloseSecureChannelRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the CloseSecureChannelRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint CloseSecureChannelRequest_Encoding_DefaultBinary = 452;
+        public const uint CloseSecureChannelRequest_Encoding_DefaultJson = 15134;
 
         /// <summary>
-        /// The identifier for the CloseSecureChannelResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the CloseSecureChannelResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint CloseSecureChannelResponse_Encoding_DefaultBinary = 455;
+        public const uint CloseSecureChannelResponse_Encoding_DefaultJson = 15135;
 
         /// <summary>
-        /// The identifier for the SignedSoftwareCertificate_Encoding_DefaultBinary Object.
+        /// The identifier for the SignedSoftwareCertificate_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint SignedSoftwareCertificate_Encoding_DefaultBinary = 346;
+        public const uint SignedSoftwareCertificate_Encoding_DefaultJson = 15136;
 
         /// <summary>
-        /// The identifier for the SignatureData_Encoding_DefaultBinary Object.
+        /// The identifier for the SignatureData_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint SignatureData_Encoding_DefaultBinary = 458;
+        public const uint SignatureData_Encoding_DefaultJson = 15137;
 
         /// <summary>
-        /// The identifier for the CreateSessionRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the CreateSessionRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint CreateSessionRequest_Encoding_DefaultBinary = 461;
+        public const uint CreateSessionRequest_Encoding_DefaultJson = 15138;
 
         /// <summary>
-        /// The identifier for the CreateSessionResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the CreateSessionResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint CreateSessionResponse_Encoding_DefaultBinary = 464;
+        public const uint CreateSessionResponse_Encoding_DefaultJson = 15139;
 
         /// <summary>
-        /// The identifier for the UserIdentityToken_Encoding_DefaultBinary Object.
+        /// The identifier for the UserIdentityToken_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint UserIdentityToken_Encoding_DefaultBinary = 318;
+        public const uint UserIdentityToken_Encoding_DefaultJson = 15140;
 
         /// <summary>
-        /// The identifier for the AnonymousIdentityToken_Encoding_DefaultBinary Object.
+        /// The identifier for the AnonymousIdentityToken_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint AnonymousIdentityToken_Encoding_DefaultBinary = 321;
+        public const uint AnonymousIdentityToken_Encoding_DefaultJson = 15141;
 
         /// <summary>
-        /// The identifier for the UserNameIdentityToken_Encoding_DefaultBinary Object.
+        /// The identifier for the UserNameIdentityToken_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint UserNameIdentityToken_Encoding_DefaultBinary = 324;
+        public const uint UserNameIdentityToken_Encoding_DefaultJson = 15142;
 
         /// <summary>
-        /// The identifier for the X509IdentityToken_Encoding_DefaultBinary Object.
+        /// The identifier for the X509IdentityToken_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint X509IdentityToken_Encoding_DefaultBinary = 327;
+        public const uint X509IdentityToken_Encoding_DefaultJson = 15143;
 
         /// <summary>
-        /// The identifier for the IssuedIdentityToken_Encoding_DefaultBinary Object.
+        /// The identifier for the IssuedIdentityToken_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint IssuedIdentityToken_Encoding_DefaultBinary = 940;
+        public const uint IssuedIdentityToken_Encoding_DefaultJson = 15144;
 
         /// <summary>
-        /// The identifier for the ActivateSessionRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the ActivateSessionRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ActivateSessionRequest_Encoding_DefaultBinary = 467;
+        public const uint ActivateSessionRequest_Encoding_DefaultJson = 15145;
 
         /// <summary>
-        /// The identifier for the ActivateSessionResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the ActivateSessionResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ActivateSessionResponse_Encoding_DefaultBinary = 470;
+        public const uint ActivateSessionResponse_Encoding_DefaultJson = 15146;
 
         /// <summary>
-        /// The identifier for the CloseSessionRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the CloseSessionRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint CloseSessionRequest_Encoding_DefaultBinary = 473;
+        public const uint CloseSessionRequest_Encoding_DefaultJson = 15147;
 
         /// <summary>
-        /// The identifier for the CloseSessionResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the CloseSessionResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint CloseSessionResponse_Encoding_DefaultBinary = 476;
+        public const uint CloseSessionResponse_Encoding_DefaultJson = 15148;
 
         /// <summary>
-        /// The identifier for the CancelRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the CancelRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint CancelRequest_Encoding_DefaultBinary = 479;
+        public const uint CancelRequest_Encoding_DefaultJson = 15149;
 
         /// <summary>
-        /// The identifier for the CancelResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the CancelResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint CancelResponse_Encoding_DefaultBinary = 482;
+        public const uint CancelResponse_Encoding_DefaultJson = 15150;
 
         /// <summary>
-        /// The identifier for the NodeAttributes_Encoding_DefaultBinary Object.
+        /// The identifier for the NodeAttributes_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint NodeAttributes_Encoding_DefaultBinary = 351;
+        public const uint NodeAttributes_Encoding_DefaultJson = 15151;
 
         /// <summary>
-        /// The identifier for the ObjectAttributes_Encoding_DefaultBinary Object.
+        /// The identifier for the ObjectAttributes_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ObjectAttributes_Encoding_DefaultBinary = 354;
+        public const uint ObjectAttributes_Encoding_DefaultJson = 15152;
 
         /// <summary>
-        /// The identifier for the VariableAttributes_Encoding_DefaultBinary Object.
+        /// The identifier for the VariableAttributes_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint VariableAttributes_Encoding_DefaultBinary = 357;
+        public const uint VariableAttributes_Encoding_DefaultJson = 15153;
 
         /// <summary>
-        /// The identifier for the MethodAttributes_Encoding_DefaultBinary Object.
+        /// The identifier for the MethodAttributes_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint MethodAttributes_Encoding_DefaultBinary = 360;
+        public const uint MethodAttributes_Encoding_DefaultJson = 15157;
 
         /// <summary>
-        /// The identifier for the ObjectTypeAttributes_Encoding_DefaultBinary Object.
+        /// The identifier for the ObjectTypeAttributes_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ObjectTypeAttributes_Encoding_DefaultBinary = 363;
+        public const uint ObjectTypeAttributes_Encoding_DefaultJson = 15158;
 
         /// <summary>
-        /// The identifier for the VariableTypeAttributes_Encoding_DefaultBinary Object.
+        /// The identifier for the VariableTypeAttributes_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint VariableTypeAttributes_Encoding_DefaultBinary = 366;
+        public const uint VariableTypeAttributes_Encoding_DefaultJson = 15159;
 
         /// <summary>
-        /// The identifier for the ReferenceTypeAttributes_Encoding_DefaultBinary Object.
+        /// The identifier for the ReferenceTypeAttributes_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ReferenceTypeAttributes_Encoding_DefaultBinary = 369;
+        public const uint ReferenceTypeAttributes_Encoding_DefaultJson = 15160;
 
         /// <summary>
-        /// The identifier for the DataTypeAttributes_Encoding_DefaultBinary Object.
+        /// The identifier for the DataTypeAttributes_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DataTypeAttributes_Encoding_DefaultBinary = 372;
+        public const uint DataTypeAttributes_Encoding_DefaultJson = 15161;
 
         /// <summary>
-        /// The identifier for the ViewAttributes_Encoding_DefaultBinary Object.
+        /// The identifier for the ViewAttributes_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ViewAttributes_Encoding_DefaultBinary = 375;
+        public const uint ViewAttributes_Encoding_DefaultJson = 15162;
 
         /// <summary>
-        /// The identifier for the GenericAttributeValue_Encoding_DefaultBinary Object.
+        /// The identifier for the GenericAttributeValue_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint GenericAttributeValue_Encoding_DefaultBinary = 17610;
+        public const uint GenericAttributeValue_Encoding_DefaultJson = 15163;
 
         /// <summary>
-        /// The identifier for the GenericAttributes_Encoding_DefaultBinary Object.
+        /// The identifier for the GenericAttributes_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint GenericAttributes_Encoding_DefaultBinary = 17611;
+        public const uint GenericAttributes_Encoding_DefaultJson = 15164;
 
         /// <summary>
-        /// The identifier for the AddNodesItem_Encoding_DefaultBinary Object.
+        /// The identifier for the AddNodesItem_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint AddNodesItem_Encoding_DefaultBinary = 378;
+        public const uint AddNodesItem_Encoding_DefaultJson = 15165;
 
         /// <summary>
-        /// The identifier for the AddNodesResult_Encoding_DefaultBinary Object.
+        /// The identifier for the AddNodesResult_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint AddNodesResult_Encoding_DefaultBinary = 485;
+        public const uint AddNodesResult_Encoding_DefaultJson = 15166;
 
         /// <summary>
-        /// The identifier for the AddNodesRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the AddNodesRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint AddNodesRequest_Encoding_DefaultBinary = 488;
+        public const uint AddNodesRequest_Encoding_DefaultJson = 15167;
 
         /// <summary>
-        /// The identifier for the AddNodesResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the AddNodesResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint AddNodesResponse_Encoding_DefaultBinary = 491;
+        public const uint AddNodesResponse_Encoding_DefaultJson = 15168;
 
         /// <summary>
-        /// The identifier for the AddReferencesItem_Encoding_DefaultBinary Object.
+        /// The identifier for the AddReferencesItem_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint AddReferencesItem_Encoding_DefaultBinary = 381;
+        public const uint AddReferencesItem_Encoding_DefaultJson = 15169;
 
         /// <summary>
-        /// The identifier for the AddReferencesRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the AddReferencesRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint AddReferencesRequest_Encoding_DefaultBinary = 494;
+        public const uint AddReferencesRequest_Encoding_DefaultJson = 15170;
 
         /// <summary>
-        /// The identifier for the AddReferencesResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the AddReferencesResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint AddReferencesResponse_Encoding_DefaultBinary = 497;
+        public const uint AddReferencesResponse_Encoding_DefaultJson = 15171;
 
         /// <summary>
-        /// The identifier for the DeleteNodesItem_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteNodesItem_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DeleteNodesItem_Encoding_DefaultBinary = 384;
+        public const uint DeleteNodesItem_Encoding_DefaultJson = 15172;
 
         /// <summary>
-        /// The identifier for the DeleteNodesRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteNodesRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DeleteNodesRequest_Encoding_DefaultBinary = 500;
+        public const uint DeleteNodesRequest_Encoding_DefaultJson = 15173;
 
         /// <summary>
-        /// The identifier for the DeleteNodesResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteNodesResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DeleteNodesResponse_Encoding_DefaultBinary = 503;
+        public const uint DeleteNodesResponse_Encoding_DefaultJson = 15174;
 
         /// <summary>
-        /// The identifier for the DeleteReferencesItem_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteReferencesItem_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DeleteReferencesItem_Encoding_DefaultBinary = 387;
+        public const uint DeleteReferencesItem_Encoding_DefaultJson = 15175;
 
         /// <summary>
-        /// The identifier for the DeleteReferencesRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteReferencesRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DeleteReferencesRequest_Encoding_DefaultBinary = 506;
+        public const uint DeleteReferencesRequest_Encoding_DefaultJson = 15176;
 
         /// <summary>
-        /// The identifier for the DeleteReferencesResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteReferencesResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DeleteReferencesResponse_Encoding_DefaultBinary = 509;
+        public const uint DeleteReferencesResponse_Encoding_DefaultJson = 15177;
 
         /// <summary>
-        /// The identifier for the ViewDescription_Encoding_DefaultBinary Object.
+        /// The identifier for the ViewDescription_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ViewDescription_Encoding_DefaultBinary = 513;
+        public const uint ViewDescription_Encoding_DefaultJson = 15179;
 
         /// <summary>
-        /// The identifier for the BrowseDescription_Encoding_DefaultBinary Object.
+        /// The identifier for the BrowseDescription_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint BrowseDescription_Encoding_DefaultBinary = 516;
+        public const uint BrowseDescription_Encoding_DefaultJson = 15180;
 
         /// <summary>
-        /// The identifier for the ReferenceDescription_Encoding_DefaultBinary Object.
+        /// The identifier for the ReferenceDescription_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ReferenceDescription_Encoding_DefaultBinary = 520;
+        public const uint ReferenceDescription_Encoding_DefaultJson = 15182;
 
         /// <summary>
-        /// The identifier for the BrowseResult_Encoding_DefaultBinary Object.
+        /// The identifier for the BrowseResult_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint BrowseResult_Encoding_DefaultBinary = 524;
+        public const uint BrowseResult_Encoding_DefaultJson = 15183;
 
         /// <summary>
-        /// The identifier for the BrowseRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the BrowseRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint BrowseRequest_Encoding_DefaultBinary = 527;
+        public const uint BrowseRequest_Encoding_DefaultJson = 15184;
 
         /// <summary>
-        /// The identifier for the BrowseResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the BrowseResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint BrowseResponse_Encoding_DefaultBinary = 530;
+        public const uint BrowseResponse_Encoding_DefaultJson = 15185;
 
         /// <summary>
-        /// The identifier for the BrowseNextRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the BrowseNextRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint BrowseNextRequest_Encoding_DefaultBinary = 533;
+        public const uint BrowseNextRequest_Encoding_DefaultJson = 15186;
 
         /// <summary>
-        /// The identifier for the BrowseNextResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the BrowseNextResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint BrowseNextResponse_Encoding_DefaultBinary = 536;
+        public const uint BrowseNextResponse_Encoding_DefaultJson = 15187;
 
         /// <summary>
-        /// The identifier for the RelativePathElement_Encoding_DefaultBinary Object.
+        /// The identifier for the RelativePathElement_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint RelativePathElement_Encoding_DefaultBinary = 539;
+        public const uint RelativePathElement_Encoding_DefaultJson = 15188;
 
         /// <summary>
-        /// The identifier for the RelativePath_Encoding_DefaultBinary Object.
+        /// The identifier for the RelativePath_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint RelativePath_Encoding_DefaultBinary = 542;
+        public const uint RelativePath_Encoding_DefaultJson = 15189;
 
         /// <summary>
-        /// The identifier for the BrowsePath_Encoding_DefaultBinary Object.
+        /// The identifier for the BrowsePath_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint BrowsePath_Encoding_DefaultBinary = 545;
+        public const uint BrowsePath_Encoding_DefaultJson = 15190;
 
         /// <summary>
-        /// The identifier for the BrowsePathTarget_Encoding_DefaultBinary Object.
+        /// The identifier for the BrowsePathTarget_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint BrowsePathTarget_Encoding_DefaultBinary = 548;
+        public const uint BrowsePathTarget_Encoding_DefaultJson = 15191;
 
         /// <summary>
-        /// The identifier for the BrowsePathResult_Encoding_DefaultBinary Object.
+        /// The identifier for the BrowsePathResult_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint BrowsePathResult_Encoding_DefaultBinary = 551;
+        public const uint BrowsePathResult_Encoding_DefaultJson = 15192;
 
         /// <summary>
-        /// The identifier for the TranslateBrowsePathsToNodeIdsRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the TranslateBrowsePathsToNodeIdsRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint TranslateBrowsePathsToNodeIdsRequest_Encoding_DefaultBinary = 554;
+        public const uint TranslateBrowsePathsToNodeIdsRequest_Encoding_DefaultJson = 15193;
 
         /// <summary>
-        /// The identifier for the TranslateBrowsePathsToNodeIdsResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the TranslateBrowsePathsToNodeIdsResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint TranslateBrowsePathsToNodeIdsResponse_Encoding_DefaultBinary = 557;
+        public const uint TranslateBrowsePathsToNodeIdsResponse_Encoding_DefaultJson = 15194;
 
         /// <summary>
-        /// The identifier for the RegisterNodesRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the RegisterNodesRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint RegisterNodesRequest_Encoding_DefaultBinary = 560;
+        public const uint RegisterNodesRequest_Encoding_DefaultJson = 15195;
 
         /// <summary>
-        /// The identifier for the RegisterNodesResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the RegisterNodesResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint RegisterNodesResponse_Encoding_DefaultBinary = 563;
+        public const uint RegisterNodesResponse_Encoding_DefaultJson = 15196;
 
         /// <summary>
-        /// The identifier for the UnregisterNodesRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the UnregisterNodesRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint UnregisterNodesRequest_Encoding_DefaultBinary = 566;
+        public const uint UnregisterNodesRequest_Encoding_DefaultJson = 15197;
 
         /// <summary>
-        /// The identifier for the UnregisterNodesResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the UnregisterNodesResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint UnregisterNodesResponse_Encoding_DefaultBinary = 569;
+        public const uint UnregisterNodesResponse_Encoding_DefaultJson = 15198;
 
         /// <summary>
-        /// The identifier for the EndpointConfiguration_Encoding_DefaultBinary Object.
+        /// The identifier for the EndpointConfiguration_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint EndpointConfiguration_Encoding_DefaultBinary = 333;
+        public const uint EndpointConfiguration_Encoding_DefaultJson = 15199;
 
         /// <summary>
-        /// The identifier for the QueryDataDescription_Encoding_DefaultBinary Object.
+        /// The identifier for the QueryDataDescription_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint QueryDataDescription_Encoding_DefaultBinary = 572;
+        public const uint QueryDataDescription_Encoding_DefaultJson = 15200;
 
         /// <summary>
-        /// The identifier for the NodeTypeDescription_Encoding_DefaultBinary Object.
+        /// The identifier for the NodeTypeDescription_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint NodeTypeDescription_Encoding_DefaultBinary = 575;
+        public const uint NodeTypeDescription_Encoding_DefaultJson = 15201;
 
         /// <summary>
-        /// The identifier for the QueryDataSet_Encoding_DefaultBinary Object.
+        /// The identifier for the QueryDataSet_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint QueryDataSet_Encoding_DefaultBinary = 579;
+        public const uint QueryDataSet_Encoding_DefaultJson = 15202;
 
         /// <summary>
-        /// The identifier for the NodeReference_Encoding_DefaultBinary Object.
+        /// The identifier for the NodeReference_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint NodeReference_Encoding_DefaultBinary = 582;
+        public const uint NodeReference_Encoding_DefaultJson = 15203;
 
         /// <summary>
-        /// The identifier for the ContentFilterElement_Encoding_DefaultBinary Object.
+        /// The identifier for the ContentFilterElement_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ContentFilterElement_Encoding_DefaultBinary = 585;
+        public const uint ContentFilterElement_Encoding_DefaultJson = 15204;
 
         /// <summary>
-        /// The identifier for the ContentFilter_Encoding_DefaultBinary Object.
+        /// The identifier for the ContentFilter_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ContentFilter_Encoding_DefaultBinary = 588;
+        public const uint ContentFilter_Encoding_DefaultJson = 15205;
 
         /// <summary>
-        /// The identifier for the FilterOperand_Encoding_DefaultBinary Object.
+        /// The identifier for the FilterOperand_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint FilterOperand_Encoding_DefaultBinary = 591;
+        public const uint FilterOperand_Encoding_DefaultJson = 15206;
 
         /// <summary>
-        /// The identifier for the ElementOperand_Encoding_DefaultBinary Object.
+        /// The identifier for the ElementOperand_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ElementOperand_Encoding_DefaultBinary = 594;
+        public const uint ElementOperand_Encoding_DefaultJson = 15207;
 
         /// <summary>
-        /// The identifier for the LiteralOperand_Encoding_DefaultBinary Object.
+        /// The identifier for the LiteralOperand_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint LiteralOperand_Encoding_DefaultBinary = 597;
+        public const uint LiteralOperand_Encoding_DefaultJson = 15208;
 
         /// <summary>
-        /// The identifier for the AttributeOperand_Encoding_DefaultBinary Object.
+        /// The identifier for the AttributeOperand_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint AttributeOperand_Encoding_DefaultBinary = 600;
+        public const uint AttributeOperand_Encoding_DefaultJson = 15209;
 
         /// <summary>
-        /// The identifier for the SimpleAttributeOperand_Encoding_DefaultBinary Object.
+        /// The identifier for the SimpleAttributeOperand_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint SimpleAttributeOperand_Encoding_DefaultBinary = 603;
+        public const uint SimpleAttributeOperand_Encoding_DefaultJson = 15210;
 
         /// <summary>
-        /// The identifier for the ContentFilterElementResult_Encoding_DefaultBinary Object.
+        /// The identifier for the ContentFilterElementResult_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ContentFilterElementResult_Encoding_DefaultBinary = 606;
+        public const uint ContentFilterElementResult_Encoding_DefaultJson = 15211;
 
         /// <summary>
-        /// The identifier for the ContentFilterResult_Encoding_DefaultBinary Object.
+        /// The identifier for the ContentFilterResult_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ContentFilterResult_Encoding_DefaultBinary = 609;
+        public const uint ContentFilterResult_Encoding_DefaultJson = 15228;
 
         /// <summary>
-        /// The identifier for the ParsingResult_Encoding_DefaultBinary Object.
+        /// The identifier for the ParsingResult_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ParsingResult_Encoding_DefaultBinary = 612;
+        public const uint ParsingResult_Encoding_DefaultJson = 15236;
 
         /// <summary>
-        /// The identifier for the QueryFirstRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the QueryFirstRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint QueryFirstRequest_Encoding_DefaultBinary = 615;
+        public const uint QueryFirstRequest_Encoding_DefaultJson = 15244;
 
         /// <summary>
-        /// The identifier for the QueryFirstResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the QueryFirstResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint QueryFirstResponse_Encoding_DefaultBinary = 618;
+        public const uint QueryFirstResponse_Encoding_DefaultJson = 15252;
 
         /// <summary>
-        /// The identifier for the QueryNextRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the QueryNextRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint QueryNextRequest_Encoding_DefaultBinary = 621;
+        public const uint QueryNextRequest_Encoding_DefaultJson = 15254;
 
         /// <summary>
-        /// The identifier for the QueryNextResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the QueryNextResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint QueryNextResponse_Encoding_DefaultBinary = 624;
+        public const uint QueryNextResponse_Encoding_DefaultJson = 15255;
 
         /// <summary>
-        /// The identifier for the ReadValueId_Encoding_DefaultBinary Object.
+        /// The identifier for the ReadValueId_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ReadValueId_Encoding_DefaultBinary = 628;
+        public const uint ReadValueId_Encoding_DefaultJson = 15256;
 
         /// <summary>
-        /// The identifier for the ReadRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the ReadRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ReadRequest_Encoding_DefaultBinary = 631;
+        public const uint ReadRequest_Encoding_DefaultJson = 15257;
 
         /// <summary>
-        /// The identifier for the ReadResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the ReadResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ReadResponse_Encoding_DefaultBinary = 634;
+        public const uint ReadResponse_Encoding_DefaultJson = 15258;
 
         /// <summary>
-        /// The identifier for the HistoryReadValueId_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryReadValueId_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint HistoryReadValueId_Encoding_DefaultBinary = 637;
+        public const uint HistoryReadValueId_Encoding_DefaultJson = 15259;
 
         /// <summary>
-        /// The identifier for the HistoryReadResult_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryReadResult_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint HistoryReadResult_Encoding_DefaultBinary = 640;
+        public const uint HistoryReadResult_Encoding_DefaultJson = 15260;
 
         /// <summary>
-        /// The identifier for the HistoryReadDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryReadDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint HistoryReadDetails_Encoding_DefaultBinary = 643;
+        public const uint HistoryReadDetails_Encoding_DefaultJson = 15261;
 
         /// <summary>
-        /// The identifier for the ReadEventDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the ReadEventDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ReadEventDetails_Encoding_DefaultBinary = 646;
+        public const uint ReadEventDetails_Encoding_DefaultJson = 15262;
 
         /// <summary>
-        /// The identifier for the ReadRawModifiedDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the ReadRawModifiedDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ReadRawModifiedDetails_Encoding_DefaultBinary = 649;
+        public const uint ReadRawModifiedDetails_Encoding_DefaultJson = 15263;
 
         /// <summary>
-        /// The identifier for the ReadProcessedDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the ReadProcessedDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ReadProcessedDetails_Encoding_DefaultBinary = 652;
+        public const uint ReadProcessedDetails_Encoding_DefaultJson = 15264;
 
         /// <summary>
-        /// The identifier for the ReadAtTimeDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the ReadAtTimeDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ReadAtTimeDetails_Encoding_DefaultBinary = 655;
+        public const uint ReadAtTimeDetails_Encoding_DefaultJson = 15269;
 
         /// <summary>
-        /// The identifier for the HistoryData_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryData_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint HistoryData_Encoding_DefaultBinary = 658;
+        public const uint HistoryData_Encoding_DefaultJson = 15270;
 
         /// <summary>
-        /// The identifier for the ModificationInfo_Encoding_DefaultBinary Object.
+        /// The identifier for the ModificationInfo_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ModificationInfo_Encoding_DefaultBinary = 11226;
+        public const uint ModificationInfo_Encoding_DefaultJson = 15271;
 
         /// <summary>
-        /// The identifier for the HistoryModifiedData_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryModifiedData_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint HistoryModifiedData_Encoding_DefaultBinary = 11227;
+        public const uint HistoryModifiedData_Encoding_DefaultJson = 15272;
 
         /// <summary>
-        /// The identifier for the HistoryEvent_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryEvent_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint HistoryEvent_Encoding_DefaultBinary = 661;
+        public const uint HistoryEvent_Encoding_DefaultJson = 15273;
 
         /// <summary>
-        /// The identifier for the HistoryReadRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryReadRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint HistoryReadRequest_Encoding_DefaultBinary = 664;
+        public const uint HistoryReadRequest_Encoding_DefaultJson = 15274;
 
         /// <summary>
-        /// The identifier for the HistoryReadResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryReadResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint HistoryReadResponse_Encoding_DefaultBinary = 667;
+        public const uint HistoryReadResponse_Encoding_DefaultJson = 15275;
 
         /// <summary>
-        /// The identifier for the WriteValue_Encoding_DefaultBinary Object.
+        /// The identifier for the WriteValue_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint WriteValue_Encoding_DefaultBinary = 670;
+        public const uint WriteValue_Encoding_DefaultJson = 15276;
 
         /// <summary>
-        /// The identifier for the WriteRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the WriteRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint WriteRequest_Encoding_DefaultBinary = 673;
+        public const uint WriteRequest_Encoding_DefaultJson = 15277;
 
         /// <summary>
-        /// The identifier for the WriteResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the WriteResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint WriteResponse_Encoding_DefaultBinary = 676;
+        public const uint WriteResponse_Encoding_DefaultJson = 15278;
 
         /// <summary>
-        /// The identifier for the HistoryUpdateDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryUpdateDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint HistoryUpdateDetails_Encoding_DefaultBinary = 679;
+        public const uint HistoryUpdateDetails_Encoding_DefaultJson = 15279;
 
         /// <summary>
-        /// The identifier for the UpdateDataDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the UpdateDataDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint UpdateDataDetails_Encoding_DefaultBinary = 682;
+        public const uint UpdateDataDetails_Encoding_DefaultJson = 15280;
 
         /// <summary>
-        /// The identifier for the UpdateStructureDataDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the UpdateStructureDataDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint UpdateStructureDataDetails_Encoding_DefaultBinary = 11300;
+        public const uint UpdateStructureDataDetails_Encoding_DefaultJson = 15281;
 
         /// <summary>
-        /// The identifier for the UpdateEventDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the UpdateEventDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint UpdateEventDetails_Encoding_DefaultBinary = 685;
+        public const uint UpdateEventDetails_Encoding_DefaultJson = 15282;
 
         /// <summary>
-        /// The identifier for the DeleteRawModifiedDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteRawModifiedDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DeleteRawModifiedDetails_Encoding_DefaultBinary = 688;
+        public const uint DeleteRawModifiedDetails_Encoding_DefaultJson = 15283;
 
         /// <summary>
-        /// The identifier for the DeleteAtTimeDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteAtTimeDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DeleteAtTimeDetails_Encoding_DefaultBinary = 691;
+        public const uint DeleteAtTimeDetails_Encoding_DefaultJson = 15284;
 
         /// <summary>
-        /// The identifier for the DeleteEventDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteEventDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DeleteEventDetails_Encoding_DefaultBinary = 694;
+        public const uint DeleteEventDetails_Encoding_DefaultJson = 15285;
 
         /// <summary>
-        /// The identifier for the HistoryUpdateResult_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryUpdateResult_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint HistoryUpdateResult_Encoding_DefaultBinary = 697;
+        public const uint HistoryUpdateResult_Encoding_DefaultJson = 15286;
 
         /// <summary>
-        /// The identifier for the HistoryUpdateRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryUpdateRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint HistoryUpdateRequest_Encoding_DefaultBinary = 700;
+        public const uint HistoryUpdateRequest_Encoding_DefaultJson = 15287;
 
         /// <summary>
-        /// The identifier for the HistoryUpdateResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryUpdateResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint HistoryUpdateResponse_Encoding_DefaultBinary = 703;
+        public const uint HistoryUpdateResponse_Encoding_DefaultJson = 15288;
 
         /// <summary>
-        /// The identifier for the CallMethodRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the CallMethodRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint CallMethodRequest_Encoding_DefaultBinary = 706;
+        public const uint CallMethodRequest_Encoding_DefaultJson = 15289;
 
         /// <summary>
-        /// The identifier for the CallMethodResult_Encoding_DefaultBinary Object.
+        /// The identifier for the CallMethodResult_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint CallMethodResult_Encoding_DefaultBinary = 709;
+        public const uint CallMethodResult_Encoding_DefaultJson = 15290;
 
         /// <summary>
-        /// The identifier for the CallRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the CallRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint CallRequest_Encoding_DefaultBinary = 712;
+        public const uint CallRequest_Encoding_DefaultJson = 15291;
 
         /// <summary>
-        /// The identifier for the CallResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the CallResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint CallResponse_Encoding_DefaultBinary = 715;
+        public const uint CallResponse_Encoding_DefaultJson = 15292;
 
         /// <summary>
-        /// The identifier for the MonitoringFilter_Encoding_DefaultBinary Object.
+        /// The identifier for the MonitoringFilter_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint MonitoringFilter_Encoding_DefaultBinary = 721;
+        public const uint MonitoringFilter_Encoding_DefaultJson = 15293;
 
         /// <summary>
-        /// The identifier for the DataChangeFilter_Encoding_DefaultBinary Object.
+        /// The identifier for the DataChangeFilter_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DataChangeFilter_Encoding_DefaultBinary = 724;
+        public const uint DataChangeFilter_Encoding_DefaultJson = 15294;
 
         /// <summary>
-        /// The identifier for the EventFilter_Encoding_DefaultBinary Object.
+        /// The identifier for the EventFilter_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint EventFilter_Encoding_DefaultBinary = 727;
+        public const uint EventFilter_Encoding_DefaultJson = 15295;
 
         /// <summary>
-        /// The identifier for the AggregateConfiguration_Encoding_DefaultBinary Object.
+        /// The identifier for the AggregateConfiguration_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint AggregateConfiguration_Encoding_DefaultBinary = 950;
+        public const uint AggregateConfiguration_Encoding_DefaultJson = 15304;
 
         /// <summary>
-        /// The identifier for the AggregateFilter_Encoding_DefaultBinary Object.
+        /// The identifier for the AggregateFilter_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint AggregateFilter_Encoding_DefaultBinary = 730;
+        public const uint AggregateFilter_Encoding_DefaultJson = 15312;
 
         /// <summary>
-        /// The identifier for the MonitoringFilterResult_Encoding_DefaultBinary Object.
+        /// The identifier for the MonitoringFilterResult_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint MonitoringFilterResult_Encoding_DefaultBinary = 733;
+        public const uint MonitoringFilterResult_Encoding_DefaultJson = 15313;
 
         /// <summary>
-        /// The identifier for the EventFilterResult_Encoding_DefaultBinary Object.
+        /// The identifier for the EventFilterResult_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint EventFilterResult_Encoding_DefaultBinary = 736;
+        public const uint EventFilterResult_Encoding_DefaultJson = 15314;
 
         /// <summary>
-        /// The identifier for the AggregateFilterResult_Encoding_DefaultBinary Object.
+        /// The identifier for the AggregateFilterResult_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint AggregateFilterResult_Encoding_DefaultBinary = 739;
+        public const uint AggregateFilterResult_Encoding_DefaultJson = 15315;
 
         /// <summary>
-        /// The identifier for the MonitoringParameters_Encoding_DefaultBinary Object.
+        /// The identifier for the MonitoringParameters_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint MonitoringParameters_Encoding_DefaultBinary = 742;
+        public const uint MonitoringParameters_Encoding_DefaultJson = 15320;
 
         /// <summary>
-        /// The identifier for the MonitoredItemCreateRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the MonitoredItemCreateRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint MonitoredItemCreateRequest_Encoding_DefaultBinary = 745;
+        public const uint MonitoredItemCreateRequest_Encoding_DefaultJson = 15321;
 
         /// <summary>
-        /// The identifier for the MonitoredItemCreateResult_Encoding_DefaultBinary Object.
+        /// The identifier for the MonitoredItemCreateResult_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint MonitoredItemCreateResult_Encoding_DefaultBinary = 748;
+        public const uint MonitoredItemCreateResult_Encoding_DefaultJson = 15322;
 
         /// <summary>
-        /// The identifier for the CreateMonitoredItemsRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the CreateMonitoredItemsRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint CreateMonitoredItemsRequest_Encoding_DefaultBinary = 751;
+        public const uint CreateMonitoredItemsRequest_Encoding_DefaultJson = 15323;
 
         /// <summary>
-        /// The identifier for the CreateMonitoredItemsResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the CreateMonitoredItemsResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint CreateMonitoredItemsResponse_Encoding_DefaultBinary = 754;
+        public const uint CreateMonitoredItemsResponse_Encoding_DefaultJson = 15324;
 
         /// <summary>
-        /// The identifier for the MonitoredItemModifyRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the MonitoredItemModifyRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint MonitoredItemModifyRequest_Encoding_DefaultBinary = 757;
+        public const uint MonitoredItemModifyRequest_Encoding_DefaultJson = 15325;
 
         /// <summary>
-        /// The identifier for the MonitoredItemModifyResult_Encoding_DefaultBinary Object.
+        /// The identifier for the MonitoredItemModifyResult_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint MonitoredItemModifyResult_Encoding_DefaultBinary = 760;
+        public const uint MonitoredItemModifyResult_Encoding_DefaultJson = 15326;
 
         /// <summary>
-        /// The identifier for the ModifyMonitoredItemsRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the ModifyMonitoredItemsRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ModifyMonitoredItemsRequest_Encoding_DefaultBinary = 763;
+        public const uint ModifyMonitoredItemsRequest_Encoding_DefaultJson = 15327;
 
         /// <summary>
-        /// The identifier for the ModifyMonitoredItemsResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the ModifyMonitoredItemsResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ModifyMonitoredItemsResponse_Encoding_DefaultBinary = 766;
+        public const uint ModifyMonitoredItemsResponse_Encoding_DefaultJson = 15328;
 
         /// <summary>
-        /// The identifier for the SetMonitoringModeRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the SetMonitoringModeRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint SetMonitoringModeRequest_Encoding_DefaultBinary = 769;
+        public const uint SetMonitoringModeRequest_Encoding_DefaultJson = 15329;
 
         /// <summary>
-        /// The identifier for the SetMonitoringModeResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the SetMonitoringModeResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint SetMonitoringModeResponse_Encoding_DefaultBinary = 772;
+        public const uint SetMonitoringModeResponse_Encoding_DefaultJson = 15331;
 
         /// <summary>
-        /// The identifier for the SetTriggeringRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the SetTriggeringRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint SetTriggeringRequest_Encoding_DefaultBinary = 775;
+        public const uint SetTriggeringRequest_Encoding_DefaultJson = 15332;
 
         /// <summary>
-        /// The identifier for the SetTriggeringResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the SetTriggeringResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint SetTriggeringResponse_Encoding_DefaultBinary = 778;
+        public const uint SetTriggeringResponse_Encoding_DefaultJson = 15333;
 
         /// <summary>
-        /// The identifier for the DeleteMonitoredItemsRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteMonitoredItemsRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DeleteMonitoredItemsRequest_Encoding_DefaultBinary = 781;
+        public const uint DeleteMonitoredItemsRequest_Encoding_DefaultJson = 15335;
 
         /// <summary>
-        /// The identifier for the DeleteMonitoredItemsResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteMonitoredItemsResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DeleteMonitoredItemsResponse_Encoding_DefaultBinary = 784;
+        public const uint DeleteMonitoredItemsResponse_Encoding_DefaultJson = 15336;
 
         /// <summary>
-        /// The identifier for the CreateSubscriptionRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the CreateSubscriptionRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint CreateSubscriptionRequest_Encoding_DefaultBinary = 787;
+        public const uint CreateSubscriptionRequest_Encoding_DefaultJson = 15337;
 
         /// <summary>
-        /// The identifier for the CreateSubscriptionResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the CreateSubscriptionResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint CreateSubscriptionResponse_Encoding_DefaultBinary = 790;
+        public const uint CreateSubscriptionResponse_Encoding_DefaultJson = 15338;
 
         /// <summary>
-        /// The identifier for the ModifySubscriptionRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the ModifySubscriptionRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ModifySubscriptionRequest_Encoding_DefaultBinary = 793;
+        public const uint ModifySubscriptionRequest_Encoding_DefaultJson = 15339;
 
         /// <summary>
-        /// The identifier for the ModifySubscriptionResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the ModifySubscriptionResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ModifySubscriptionResponse_Encoding_DefaultBinary = 796;
+        public const uint ModifySubscriptionResponse_Encoding_DefaultJson = 15340;
 
         /// <summary>
-        /// The identifier for the SetPublishingModeRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the SetPublishingModeRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint SetPublishingModeRequest_Encoding_DefaultBinary = 799;
+        public const uint SetPublishingModeRequest_Encoding_DefaultJson = 15341;
 
         /// <summary>
-        /// The identifier for the SetPublishingModeResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the SetPublishingModeResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint SetPublishingModeResponse_Encoding_DefaultBinary = 802;
+        public const uint SetPublishingModeResponse_Encoding_DefaultJson = 15342;
 
         /// <summary>
-        /// The identifier for the NotificationMessage_Encoding_DefaultBinary Object.
+        /// The identifier for the NotificationMessage_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint NotificationMessage_Encoding_DefaultBinary = 805;
+        public const uint NotificationMessage_Encoding_DefaultJson = 15343;
 
         /// <summary>
-        /// The identifier for the NotificationData_Encoding_DefaultBinary Object.
+        /// The identifier for the NotificationData_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint NotificationData_Encoding_DefaultBinary = 947;
+        public const uint NotificationData_Encoding_DefaultJson = 15344;
 
         /// <summary>
-        /// The identifier for the DataChangeNotification_Encoding_DefaultBinary Object.
+        /// The identifier for the DataChangeNotification_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DataChangeNotification_Encoding_DefaultBinary = 811;
+        public const uint DataChangeNotification_Encoding_DefaultJson = 15345;
 
         /// <summary>
-        /// The identifier for the MonitoredItemNotification_Encoding_DefaultBinary Object.
+        /// The identifier for the MonitoredItemNotification_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint MonitoredItemNotification_Encoding_DefaultBinary = 808;
+        public const uint MonitoredItemNotification_Encoding_DefaultJson = 15346;
 
         /// <summary>
-        /// The identifier for the EventNotificationList_Encoding_DefaultBinary Object.
+        /// The identifier for the EventNotificationList_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint EventNotificationList_Encoding_DefaultBinary = 916;
+        public const uint EventNotificationList_Encoding_DefaultJson = 15347;
 
         /// <summary>
-        /// The identifier for the EventFieldList_Encoding_DefaultBinary Object.
+        /// The identifier for the EventFieldList_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint EventFieldList_Encoding_DefaultBinary = 919;
+        public const uint EventFieldList_Encoding_DefaultJson = 15348;
 
         /// <summary>
-        /// The identifier for the HistoryEventFieldList_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryEventFieldList_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint HistoryEventFieldList_Encoding_DefaultBinary = 922;
+        public const uint HistoryEventFieldList_Encoding_DefaultJson = 15349;
 
         /// <summary>
-        /// The identifier for the StatusChangeNotification_Encoding_DefaultBinary Object.
+        /// The identifier for the StatusChangeNotification_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint StatusChangeNotification_Encoding_DefaultBinary = 820;
+        public const uint StatusChangeNotification_Encoding_DefaultJson = 15350;
 
         /// <summary>
-        /// The identifier for the SubscriptionAcknowledgement_Encoding_DefaultBinary Object.
+        /// The identifier for the SubscriptionAcknowledgement_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint SubscriptionAcknowledgement_Encoding_DefaultBinary = 823;
+        public const uint SubscriptionAcknowledgement_Encoding_DefaultJson = 15351;
 
         /// <summary>
-        /// The identifier for the PublishRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the PublishRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint PublishRequest_Encoding_DefaultBinary = 826;
+        public const uint PublishRequest_Encoding_DefaultJson = 15352;
 
         /// <summary>
-        /// The identifier for the PublishResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the PublishResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint PublishResponse_Encoding_DefaultBinary = 829;
+        public const uint PublishResponse_Encoding_DefaultJson = 15353;
 
         /// <summary>
-        /// The identifier for the RepublishRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the RepublishRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint RepublishRequest_Encoding_DefaultBinary = 832;
+        public const uint RepublishRequest_Encoding_DefaultJson = 15354;
 
         /// <summary>
-        /// The identifier for the RepublishResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the RepublishResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint RepublishResponse_Encoding_DefaultBinary = 835;
+        public const uint RepublishResponse_Encoding_DefaultJson = 15355;
 
         /// <summary>
-        /// The identifier for the TransferResult_Encoding_DefaultBinary Object.
+        /// The identifier for the TransferResult_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint TransferResult_Encoding_DefaultBinary = 838;
+        public const uint TransferResult_Encoding_DefaultJson = 15356;
 
         /// <summary>
-        /// The identifier for the TransferSubscriptionsRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the TransferSubscriptionsRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint TransferSubscriptionsRequest_Encoding_DefaultBinary = 841;
+        public const uint TransferSubscriptionsRequest_Encoding_DefaultJson = 15357;
 
         /// <summary>
-        /// The identifier for the TransferSubscriptionsResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the TransferSubscriptionsResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint TransferSubscriptionsResponse_Encoding_DefaultBinary = 844;
+        public const uint TransferSubscriptionsResponse_Encoding_DefaultJson = 15358;
 
         /// <summary>
-        /// The identifier for the DeleteSubscriptionsRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteSubscriptionsRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DeleteSubscriptionsRequest_Encoding_DefaultBinary = 847;
+        public const uint DeleteSubscriptionsRequest_Encoding_DefaultJson = 15359;
 
         /// <summary>
-        /// The identifier for the DeleteSubscriptionsResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteSubscriptionsResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DeleteSubscriptionsResponse_Encoding_DefaultBinary = 850;
+        public const uint DeleteSubscriptionsResponse_Encoding_DefaultJson = 15360;
 
         /// <summary>
-        /// The identifier for the BuildInfo_Encoding_DefaultBinary Object.
+        /// The identifier for the BuildInfo_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint BuildInfo_Encoding_DefaultBinary = 340;
+        public const uint BuildInfo_Encoding_DefaultJson = 15361;
 
         /// <summary>
-        /// The identifier for the RedundantServerDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the RedundantServerDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint RedundantServerDataType_Encoding_DefaultBinary = 855;
+        public const uint RedundantServerDataType_Encoding_DefaultJson = 15362;
 
         /// <summary>
-        /// The identifier for the EndpointUrlListDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the EndpointUrlListDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint EndpointUrlListDataType_Encoding_DefaultBinary = 11957;
+        public const uint EndpointUrlListDataType_Encoding_DefaultJson = 15363;
 
         /// <summary>
-        /// The identifier for the NetworkGroupDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the NetworkGroupDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint NetworkGroupDataType_Encoding_DefaultBinary = 11958;
+        public const uint NetworkGroupDataType_Encoding_DefaultJson = 15364;
 
         /// <summary>
-        /// The identifier for the SamplingIntervalDiagnosticsDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the SamplingIntervalDiagnosticsDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint SamplingIntervalDiagnosticsDataType_Encoding_DefaultBinary = 858;
+        public const uint SamplingIntervalDiagnosticsDataType_Encoding_DefaultJson = 15365;
 
         /// <summary>
-        /// The identifier for the ServerDiagnosticsSummaryDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the ServerDiagnosticsSummaryDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ServerDiagnosticsSummaryDataType_Encoding_DefaultBinary = 861;
+        public const uint ServerDiagnosticsSummaryDataType_Encoding_DefaultJson = 15366;
 
         /// <summary>
-        /// The identifier for the ServerStatusDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the ServerStatusDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ServerStatusDataType_Encoding_DefaultBinary = 864;
+        public const uint ServerStatusDataType_Encoding_DefaultJson = 15367;
 
         /// <summary>
-        /// The identifier for the SessionDiagnosticsDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the SessionDiagnosticsDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint SessionDiagnosticsDataType_Encoding_DefaultBinary = 867;
+        public const uint SessionDiagnosticsDataType_Encoding_DefaultJson = 15368;
 
         /// <summary>
-        /// The identifier for the SessionSecurityDiagnosticsDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the SessionSecurityDiagnosticsDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint SessionSecurityDiagnosticsDataType_Encoding_DefaultBinary = 870;
+        public const uint SessionSecurityDiagnosticsDataType_Encoding_DefaultJson = 15369;
 
         /// <summary>
-        /// The identifier for the ServiceCounterDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the ServiceCounterDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ServiceCounterDataType_Encoding_DefaultBinary = 873;
+        public const uint ServiceCounterDataType_Encoding_DefaultJson = 15370;
 
         /// <summary>
-        /// The identifier for the StatusResult_Encoding_DefaultBinary Object.
+        /// The identifier for the StatusResult_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint StatusResult_Encoding_DefaultBinary = 301;
+        public const uint StatusResult_Encoding_DefaultJson = 15371;
 
         /// <summary>
-        /// The identifier for the SubscriptionDiagnosticsDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the SubscriptionDiagnosticsDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint SubscriptionDiagnosticsDataType_Encoding_DefaultBinary = 876;
+        public const uint SubscriptionDiagnosticsDataType_Encoding_DefaultJson = 15372;
 
         /// <summary>
-        /// The identifier for the ModelChangeStructureDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the ModelChangeStructureDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ModelChangeStructureDataType_Encoding_DefaultBinary = 879;
+        public const uint ModelChangeStructureDataType_Encoding_DefaultJson = 15373;
 
         /// <summary>
-        /// The identifier for the SemanticChangeStructureDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the SemanticChangeStructureDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint SemanticChangeStructureDataType_Encoding_DefaultBinary = 899;
+        public const uint SemanticChangeStructureDataType_Encoding_DefaultJson = 15374;
 
         /// <summary>
-        /// The identifier for the Range_Encoding_DefaultBinary Object.
+        /// The identifier for the Range_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint Range_Encoding_DefaultBinary = 886;
+        public const uint Range_Encoding_DefaultJson = 15375;
 
         /// <summary>
-        /// The identifier for the EUInformation_Encoding_DefaultBinary Object.
+        /// The identifier for the EUInformation_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint EUInformation_Encoding_DefaultBinary = 889;
+        public const uint EUInformation_Encoding_DefaultJson = 15376;
 
         /// <summary>
-        /// The identifier for the ComplexNumberType_Encoding_DefaultBinary Object.
+        /// The identifier for the ComplexNumberType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ComplexNumberType_Encoding_DefaultBinary = 12181;
+        public const uint ComplexNumberType_Encoding_DefaultJson = 15377;
 
         /// <summary>
-        /// The identifier for the DoubleComplexNumberType_Encoding_DefaultBinary Object.
+        /// The identifier for the DoubleComplexNumberType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DoubleComplexNumberType_Encoding_DefaultBinary = 12182;
+        public const uint DoubleComplexNumberType_Encoding_DefaultJson = 15378;
 
         /// <summary>
-        /// The identifier for the AxisInformation_Encoding_DefaultBinary Object.
+        /// The identifier for the AxisInformation_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint AxisInformation_Encoding_DefaultBinary = 12089;
+        public const uint AxisInformation_Encoding_DefaultJson = 15379;
 
         /// <summary>
-        /// The identifier for the XVType_Encoding_DefaultBinary Object.
+        /// The identifier for the XVType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint XVType_Encoding_DefaultBinary = 12090;
+        public const uint XVType_Encoding_DefaultJson = 15380;
 
         /// <summary>
-        /// The identifier for the ProgramDiagnosticDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the ProgramDiagnosticDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ProgramDiagnosticDataType_Encoding_DefaultBinary = 896;
+        public const uint ProgramDiagnosticDataType_Encoding_DefaultJson = 15381;
 
         /// <summary>
-        /// The identifier for the Annotation_Encoding_DefaultBinary Object.
+        /// The identifier for the Annotation_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint Annotation_Encoding_DefaultBinary = 893;
+        public const uint Annotation_Encoding_DefaultJson = 15382;
     }
     #endregion
 
@@ -8048,6 +9263,11 @@ namespace Opc.Ua
         /// The identifier for the AuditConditionSilenceEventType ObjectType.
         /// </summary>
         public const uint AuditConditionSilenceEventType = 17242;
+
+        /// <summary>
+        /// The identifier for the AuditConditionResetEventType ObjectType.
+        /// </summary>
+        public const uint AuditConditionResetEventType = 15013;
 
         /// <summary>
         /// The identifier for the AuditConditionOutOfServiceEventType ObjectType.
@@ -8655,6 +9875,11 @@ namespace Opc.Ua
         public const uint DataTypeDictionaryType_NamespaceUri = 107;
 
         /// <summary>
+        /// The identifier for the DataTypeDictionaryType_Deprecated Variable.
+        /// </summary>
+        public const uint DataTypeDictionaryType_Deprecated = 15001;
+
+        /// <summary>
         /// The identifier for the NamingRuleType_EnumValues Variable.
         /// </summary>
         public const uint NamingRuleType_EnumValues = 12169;
@@ -8845,6 +10070,11 @@ namespace Opc.Ua
         public const uint MaxStringLength = 11498;
 
         /// <summary>
+        /// The identifier for the MaxCharacters Variable.
+        /// </summary>
+        public const uint MaxCharacters = 15002;
+
+        /// <summary>
         /// The identifier for the MaxByteStringLength Variable.
         /// </summary>
         public const uint MaxByteStringLength = 12908;
@@ -8898,6 +10128,11 @@ namespace Opc.Ua
         /// The identifier for the ServerType_NamespaceArray Variable.
         /// </summary>
         public const uint ServerType_NamespaceArray = 2006;
+
+        /// <summary>
+        /// The identifier for the ServerType_UrisVersion Variable.
+        /// </summary>
+        public const uint ServerType_UrisVersion = 15003;
 
         /// <summary>
         /// The identifier for the ServerType_ServerStatus Variable.
@@ -12930,41 +14165,6 @@ namespace Opc.Ua
         public const uint WellKnownRole_Supervisor_RemoveEndpoint_InputArguments = 16257;
 
         /// <summary>
-        /// The identifier for the WellKnownRole_SecurityAdmin_Identities Variable.
-        /// </summary>
-        public const uint WellKnownRole_SecurityAdmin_Identities = 16258;
-
-        /// <summary>
-        /// The identifier for the WellKnownRole_SecurityAdmin_AddIdentity_InputArguments Variable.
-        /// </summary>
-        public const uint WellKnownRole_SecurityAdmin_AddIdentity_InputArguments = 15709;
-
-        /// <summary>
-        /// The identifier for the WellKnownRole_SecurityAdmin_RemoveIdentity_InputArguments Variable.
-        /// </summary>
-        public const uint WellKnownRole_SecurityAdmin_RemoveIdentity_InputArguments = 15711;
-
-        /// <summary>
-        /// The identifier for the WellKnownRole_SecurityAdmin_AddApplication_InputArguments Variable.
-        /// </summary>
-        public const uint WellKnownRole_SecurityAdmin_AddApplication_InputArguments = 16262;
-
-        /// <summary>
-        /// The identifier for the WellKnownRole_SecurityAdmin_RemoveApplication_InputArguments Variable.
-        /// </summary>
-        public const uint WellKnownRole_SecurityAdmin_RemoveApplication_InputArguments = 16264;
-
-        /// <summary>
-        /// The identifier for the WellKnownRole_SecurityAdmin_AddEndpoint_InputArguments Variable.
-        /// </summary>
-        public const uint WellKnownRole_SecurityAdmin_AddEndpoint_InputArguments = 16266;
-
-        /// <summary>
-        /// The identifier for the WellKnownRole_SecurityAdmin_RemoveEndpoint_InputArguments Variable.
-        /// </summary>
-        public const uint WellKnownRole_SecurityAdmin_RemoveEndpoint_InputArguments = 16268;
-
-        /// <summary>
         /// The identifier for the WellKnownRole_ConfigureAdmin_Identities Variable.
         /// </summary>
         public const uint WellKnownRole_ConfigureAdmin_Identities = 16269;
@@ -12998,6 +14198,41 @@ namespace Opc.Ua
         /// The identifier for the WellKnownRole_ConfigureAdmin_RemoveEndpoint_InputArguments Variable.
         /// </summary>
         public const uint WellKnownRole_ConfigureAdmin_RemoveEndpoint_InputArguments = 16279;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_Identities Variable.
+        /// </summary>
+        public const uint WellKnownRole_SecurityAdmin_Identities = 16258;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_AddIdentity_InputArguments Variable.
+        /// </summary>
+        public const uint WellKnownRole_SecurityAdmin_AddIdentity_InputArguments = 15709;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_RemoveIdentity_InputArguments Variable.
+        /// </summary>
+        public const uint WellKnownRole_SecurityAdmin_RemoveIdentity_InputArguments = 15711;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_AddApplication_InputArguments Variable.
+        /// </summary>
+        public const uint WellKnownRole_SecurityAdmin_AddApplication_InputArguments = 16262;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_RemoveApplication_InputArguments Variable.
+        /// </summary>
+        public const uint WellKnownRole_SecurityAdmin_RemoveApplication_InputArguments = 16264;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_AddEndpoint_InputArguments Variable.
+        /// </summary>
+        public const uint WellKnownRole_SecurityAdmin_AddEndpoint_InputArguments = 16266;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_RemoveEndpoint_InputArguments Variable.
+        /// </summary>
+        public const uint WellKnownRole_SecurityAdmin_RemoveEndpoint_InputArguments = 16268;
 
         /// <summary>
         /// The identifier for the DataItemType_Definition Variable.
@@ -18415,16 +19650,6 @@ namespace Opc.Ua
         public const uint PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_Selections = 17706;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_SelectionDescriptions Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_SelectionDescriptions = 17707;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_RestrictToList Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_RestrictToList = 17295;
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Status_State Variable.
         /// </summary>
         public const uint PublishSubscribeType_ConnectionName_Placeholder_Status_State = 14420;
@@ -19018,16 +20243,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_Selections Variable.
         /// </summary>
         public const uint PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_Selections = 17708;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_SelectionDescriptions Variable.
-        /// </summary>
-        public const uint PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_SelectionDescriptions = 17709;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_RestrictToList Variable.
-        /// </summary>
-        public const uint PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_RestrictToList = 17303;
 
         /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Status_State Variable.
@@ -20868,16 +22083,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_TransportProfileUri_Selections Variable.
         /// </summary>
         public const uint PubSubConnectionType_TransportProfileUri_Selections = 17710;
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_TransportProfileUri_SelectionDescriptions Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_TransportProfileUri_SelectionDescriptions = 17711;
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_TransportProfileUri_RestrictToList Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_TransportProfileUri_RestrictToList = 17309;
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_SecurityMode Variable.
@@ -25550,16 +26755,6 @@ namespace Opc.Ua
         public const uint UadpConnectionType_TransportProfileUri_Selections = 17712;
 
         /// <summary>
-        /// The identifier for the UadpConnectionType_TransportProfileUri_SelectionDescriptions Variable.
-        /// </summary>
-        public const uint UadpConnectionType_TransportProfileUri_SelectionDescriptions = 17713;
-
-        /// <summary>
-        /// The identifier for the UadpConnectionType_TransportProfileUri_RestrictToList Variable.
-        /// </summary>
-        public const uint UadpConnectionType_TransportProfileUri_RestrictToList = 17401;
-
-        /// <summary>
         /// The identifier for the UadpConnectionType_WriterGroupName_Placeholder_SecurityMode Variable.
         /// </summary>
         public const uint UadpConnectionType_WriterGroupName_Placeholder_SecurityMode = 17403;
@@ -26463,16 +27658,6 @@ namespace Opc.Ua
         /// The identifier for the UadpConnectionType_NetworkInterface_Selections Variable.
         /// </summary>
         public const uint UadpConnectionType_NetworkInterface_Selections = 17714;
-
-        /// <summary>
-        /// The identifier for the UadpConnectionType_NetworkInterface_SelectionDescriptions Variable.
-        /// </summary>
-        public const uint UadpConnectionType_NetworkInterface_SelectionDescriptions = 17715;
-
-        /// <summary>
-        /// The identifier for the UadpConnectionType_NetworkInterface_RestrictToList Variable.
-        /// </summary>
-        public const uint UadpConnectionType_NetworkInterface_RestrictToList = 17429;
 
         /// <summary>
         /// The identifier for the UadpConnectionType_TimeToLive Variable.
@@ -27873,16 +29058,6 @@ namespace Opc.Ua
         /// The identifier for the BrokerConnectionType_TransportProfileUri_Selections Variable.
         /// </summary>
         public const uint BrokerConnectionType_TransportProfileUri_Selections = 17716;
-
-        /// <summary>
-        /// The identifier for the BrokerConnectionType_TransportProfileUri_SelectionDescriptions Variable.
-        /// </summary>
-        public const uint BrokerConnectionType_TransportProfileUri_SelectionDescriptions = 17717;
-
-        /// <summary>
-        /// The identifier for the BrokerConnectionType_TransportProfileUri_RestrictToList Variable.
-        /// </summary>
-        public const uint BrokerConnectionType_TransportProfileUri_RestrictToList = 17509;
 
         /// <summary>
         /// The identifier for the BrokerConnectionType_WriterGroupName_Placeholder_SecurityMode Variable.
@@ -30115,14 +31290,24 @@ namespace Opc.Ua
         public const uint NodeClass_EnumValues = 11878;
 
         /// <summary>
-        /// The identifier for the PermissionType_EnumValues Variable.
+        /// The identifier for the PermissionType_OptionSetValues Variable.
         /// </summary>
-        public const uint PermissionType_EnumValues = 16122;
+        public const uint PermissionType_OptionSetValues = 15030;
 
         /// <summary>
-        /// The identifier for the AccessRestrictionType_EnumValues Variable.
+        /// The identifier for the AccessLevelType_OptionSetValues Variable.
         /// </summary>
-        public const uint AccessRestrictionType_EnumValues = 16124;
+        public const uint AccessLevelType_OptionSetValues = 15032;
+
+        /// <summary>
+        /// The identifier for the EventNotifierType_OptionSetValues Variable.
+        /// </summary>
+        public const uint EventNotifierType_OptionSetValues = 15034;
+
+        /// <summary>
+        /// The identifier for the AccessRestrictionType_OptionSetValues Variable.
+        /// </summary>
+        public const uint AccessRestrictionType_OptionSetValues = 15035;
 
         /// <summary>
         /// The identifier for the StructureType_EnumStrings Variable.
@@ -30155,9 +31340,9 @@ namespace Opc.Ua
         public const uint NodeAttributesMask_EnumValues = 11881;
 
         /// <summary>
-        /// The identifier for the AttributeWriteMask_EnumValues Variable.
+        /// The identifier for the AttributeWriteMask_OptionSetValues Variable.
         /// </summary>
-        public const uint AttributeWriteMask_EnumValues = 11882;
+        public const uint AttributeWriteMask_OptionSetValues = 15036;
 
         /// <summary>
         /// The identifier for the BrowseDirection_EnumStrings Variable.
@@ -30230,396 +31415,6 @@ namespace Opc.Ua
         public const uint ExceptionDeviationFormat_EnumStrings = 7614;
 
         /// <summary>
-        /// The identifier for the OpcUa_XmlSchema Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema = 8252;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_NamespaceUri Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_NamespaceUri = 8254;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_KeyValuePair Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_KeyValuePair = 14829;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_IdentityMappingRuleType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_IdentityMappingRuleType = 15730;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_TrustListDataType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_TrustListDataType = 12677;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ConfigurationVersionDataType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_ConfigurationVersionDataType = 14832;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_DataSetMetaDataType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_DataSetMetaDataType = 14805;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_FieldMetaData Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_FieldMetaData = 14808;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_DataTypeDescription Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_DataTypeDescription = 14811;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_StructureDescription Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_StructureDescription = 15591;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EnumDescription Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_EnumDescription = 15594;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_PublishedVariableDataType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_PublishedVariableDataType = 14320;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_FieldTargetDataType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_FieldTargetDataType = 14835;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_RolePermissionType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_RolePermissionType = 16127;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_DataTypeDefinition Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_DataTypeDefinition = 18166;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_StructureField Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_StructureField = 18169;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_StructureDefinition Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_StructureDefinition = 18172;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EnumDefinition Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_EnumDefinition = 18175;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_Argument Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_Argument = 8285;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EnumValueType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_EnumValueType = 8291;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EnumField Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_EnumField = 14826;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_OptionSet Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_OptionSet = 12759;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_Union Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_Union = 12762;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_TimeZoneDataType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_TimeZoneDataType = 8918;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ApplicationDescription Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_ApplicationDescription = 8300;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ServerOnNetwork Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_ServerOnNetwork = 12201;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_UserTokenPolicy Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_UserTokenPolicy = 8297;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EndpointDescription Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_EndpointDescription = 8303;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_RegisteredServer Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_RegisteredServer = 8417;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_DiscoveryConfiguration Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_DiscoveryConfiguration = 12894;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_MdnsDiscoveryConfiguration Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_MdnsDiscoveryConfiguration = 12897;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_SignedSoftwareCertificate Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_SignedSoftwareCertificate = 8333;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_UserIdentityToken Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_UserIdentityToken = 8306;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_AnonymousIdentityToken Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_AnonymousIdentityToken = 8309;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_UserNameIdentityToken Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_UserNameIdentityToken = 8312;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_X509IdentityToken Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_X509IdentityToken = 8315;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_IssuedIdentityToken Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_IssuedIdentityToken = 8318;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_AddNodesItem Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_AddNodesItem = 8363;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_AddReferencesItem Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_AddReferencesItem = 8366;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_DeleteNodesItem Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_DeleteNodesItem = 8369;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_DeleteReferencesItem Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_DeleteReferencesItem = 8372;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_RelativePathElement Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_RelativePathElement = 12712;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_RelativePath Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_RelativePath = 12715;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EndpointConfiguration Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_EndpointConfiguration = 8321;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ContentFilterElement Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_ContentFilterElement = 8564;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ContentFilter Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_ContentFilter = 8567;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_FilterOperand Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_FilterOperand = 8570;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ElementOperand Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_ElementOperand = 8573;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_LiteralOperand Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_LiteralOperand = 8576;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_AttributeOperand Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_AttributeOperand = 8579;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_SimpleAttributeOperand Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_SimpleAttributeOperand = 8582;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_HistoryEvent Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_HistoryEvent = 8639;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_MonitoringFilter Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_MonitoringFilter = 8702;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EventFilter Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_EventFilter = 8708;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_AggregateConfiguration Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_AggregateConfiguration = 8711;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_HistoryEventFieldList Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_HistoryEventFieldList = 8807;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_BuildInfo Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_BuildInfo = 8327;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_RedundantServerDataType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_RedundantServerDataType = 8843;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EndpointUrlListDataType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_EndpointUrlListDataType = 11951;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_NetworkGroupDataType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_NetworkGroupDataType = 11954;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_SamplingIntervalDiagnosticsDataType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_SamplingIntervalDiagnosticsDataType = 8846;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ServerDiagnosticsSummaryDataType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_ServerDiagnosticsSummaryDataType = 8849;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ServerStatusDataType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_ServerStatusDataType = 8852;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_SessionDiagnosticsDataType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_SessionDiagnosticsDataType = 8855;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_SessionSecurityDiagnosticsDataType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_SessionSecurityDiagnosticsDataType = 8858;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ServiceCounterDataType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_ServiceCounterDataType = 8861;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_StatusResult Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_StatusResult = 8294;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_SubscriptionDiagnosticsDataType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_SubscriptionDiagnosticsDataType = 8864;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ModelChangeStructureDataType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_ModelChangeStructureDataType = 8867;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_SemanticChangeStructureDataType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_SemanticChangeStructureDataType = 8870;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_Range Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_Range = 8873;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EUInformation Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_EUInformation = 8876;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ComplexNumberType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_ComplexNumberType = 12175;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_DoubleComplexNumberType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_DoubleComplexNumberType = 12178;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_AxisInformation Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_AxisInformation = 12083;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_XVType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_XVType = 12086;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ProgramDiagnosticDataType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_ProgramDiagnosticDataType = 8882;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_Annotation Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_Annotation = 8879;
-
-        /// <summary>
         /// The identifier for the OpcUa_BinarySchema Variable.
         /// </summary>
         public const uint OpcUa_BinarySchema = 7617;
@@ -30628,6 +31423,11 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_BinarySchema_NamespaceUri Variable.
         /// </summary>
         public const uint OpcUa_BinarySchema_NamespaceUri = 7619;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_Deprecated Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_Deprecated = 15037;
 
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_KeyValuePair Variable.
@@ -31008,6 +31808,401 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_BinarySchema_Annotation Variable.
         /// </summary>
         public const uint OpcUa_BinarySchema_Annotation = 8244;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema = 8252;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_NamespaceUri Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_NamespaceUri = 8254;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_Deprecated Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_Deprecated = 15039;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_KeyValuePair Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_KeyValuePair = 14829;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_IdentityMappingRuleType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_IdentityMappingRuleType = 15730;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_TrustListDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_TrustListDataType = 12677;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ConfigurationVersionDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_ConfigurationVersionDataType = 14832;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataSetMetaDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_DataSetMetaDataType = 14805;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_FieldMetaData Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_FieldMetaData = 14808;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataTypeDescription Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_DataTypeDescription = 14811;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_StructureDescription Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_StructureDescription = 15591;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EnumDescription Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_EnumDescription = 15594;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_PublishedVariableDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_PublishedVariableDataType = 14320;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_FieldTargetDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_FieldTargetDataType = 14835;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_RolePermissionType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_RolePermissionType = 16127;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataTypeDefinition Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_DataTypeDefinition = 18166;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_StructureField Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_StructureField = 18169;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_StructureDefinition Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_StructureDefinition = 18172;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EnumDefinition Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_EnumDefinition = 18175;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_Argument Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_Argument = 8285;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EnumValueType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_EnumValueType = 8291;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EnumField Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_EnumField = 14826;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_OptionSet Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_OptionSet = 12759;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_Union Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_Union = 12762;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_TimeZoneDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_TimeZoneDataType = 8918;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ApplicationDescription Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_ApplicationDescription = 8300;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ServerOnNetwork Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_ServerOnNetwork = 12201;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_UserTokenPolicy Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_UserTokenPolicy = 8297;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EndpointDescription Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_EndpointDescription = 8303;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_RegisteredServer Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_RegisteredServer = 8417;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DiscoveryConfiguration Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_DiscoveryConfiguration = 12894;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_MdnsDiscoveryConfiguration Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_MdnsDiscoveryConfiguration = 12897;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_SignedSoftwareCertificate Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_SignedSoftwareCertificate = 8333;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_UserIdentityToken Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_UserIdentityToken = 8306;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_AnonymousIdentityToken Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_AnonymousIdentityToken = 8309;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_UserNameIdentityToken Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_UserNameIdentityToken = 8312;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_X509IdentityToken Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_X509IdentityToken = 8315;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_IssuedIdentityToken Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_IssuedIdentityToken = 8318;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_AddNodesItem Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_AddNodesItem = 8363;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_AddReferencesItem Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_AddReferencesItem = 8366;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DeleteNodesItem Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_DeleteNodesItem = 8369;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DeleteReferencesItem Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_DeleteReferencesItem = 8372;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_RelativePathElement Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_RelativePathElement = 12712;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_RelativePath Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_RelativePath = 12715;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EndpointConfiguration Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_EndpointConfiguration = 8321;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ContentFilterElement Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_ContentFilterElement = 8564;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ContentFilter Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_ContentFilter = 8567;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_FilterOperand Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_FilterOperand = 8570;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ElementOperand Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_ElementOperand = 8573;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_LiteralOperand Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_LiteralOperand = 8576;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_AttributeOperand Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_AttributeOperand = 8579;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_SimpleAttributeOperand Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_SimpleAttributeOperand = 8582;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_HistoryEvent Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_HistoryEvent = 8639;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_MonitoringFilter Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_MonitoringFilter = 8702;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EventFilter Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_EventFilter = 8708;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_AggregateConfiguration Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_AggregateConfiguration = 8711;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_HistoryEventFieldList Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_HistoryEventFieldList = 8807;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_BuildInfo Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_BuildInfo = 8327;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_RedundantServerDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_RedundantServerDataType = 8843;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EndpointUrlListDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_EndpointUrlListDataType = 11951;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_NetworkGroupDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_NetworkGroupDataType = 11954;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_SamplingIntervalDiagnosticsDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_SamplingIntervalDiagnosticsDataType = 8846;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ServerDiagnosticsSummaryDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_ServerDiagnosticsSummaryDataType = 8849;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ServerStatusDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_ServerStatusDataType = 8852;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_SessionDiagnosticsDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_SessionDiagnosticsDataType = 8855;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_SessionSecurityDiagnosticsDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_SessionSecurityDiagnosticsDataType = 8858;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ServiceCounterDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_ServiceCounterDataType = 8861;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_StatusResult Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_StatusResult = 8294;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_SubscriptionDiagnosticsDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_SubscriptionDiagnosticsDataType = 8864;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ModelChangeStructureDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_ModelChangeStructureDataType = 8867;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_SemanticChangeStructureDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_SemanticChangeStructureDataType = 8870;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_Range Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_Range = 8873;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EUInformation Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_EUInformation = 8876;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ComplexNumberType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_ComplexNumberType = 12175;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DoubleComplexNumberType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_DoubleComplexNumberType = 12178;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_AxisInformation Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_AxisInformation = 12083;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_XVType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_XVType = 12086;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ProgramDiagnosticDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_ProgramDiagnosticDataType = 8882;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_Annotation Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_Annotation = 8879;
     }
     #endregion
 
@@ -31553,6 +32748,16 @@ namespace Opc.Ua
         /// The identifier for the PermissionType DataType.
         /// </summary>
         public static readonly NodeId PermissionType = new NodeId(Opc.Ua.DataTypes.PermissionType);
+
+        /// <summary>
+        /// The identifier for the AccessLevelType DataType.
+        /// </summary>
+        public static readonly NodeId AccessLevelType = new NodeId(Opc.Ua.DataTypes.AccessLevelType);
+
+        /// <summary>
+        /// The identifier for the EventNotifierType DataType.
+        /// </summary>
+        public static readonly NodeId EventNotifierType = new NodeId(Opc.Ua.DataTypes.EventNotifierType);
 
         /// <summary>
         /// The identifier for the AccessRestrictionType DataType.
@@ -35070,14 +36275,14 @@ namespace Opc.Ua
         public static readonly NodeId WellKnownRole_Supervisor = new NodeId(Opc.Ua.Objects.WellKnownRole_Supervisor);
 
         /// <summary>
-        /// The identifier for the WellKnownRole_SecurityAdmin Object.
-        /// </summary>
-        public static readonly NodeId WellKnownRole_SecurityAdmin = new NodeId(Opc.Ua.Objects.WellKnownRole_SecurityAdmin);
-
-        /// <summary>
         /// The identifier for the WellKnownRole_ConfigureAdmin Object.
         /// </summary>
         public static readonly NodeId WellKnownRole_ConfigureAdmin = new NodeId(Opc.Ua.Objects.WellKnownRole_ConfigureAdmin);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin Object.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_SecurityAdmin = new NodeId(Opc.Ua.Objects.WellKnownRole_SecurityAdmin);
 
         /// <summary>
         /// The identifier for the AlarmConditionType_ShelvingState Object.
@@ -36268,6 +37473,1211 @@ namespace Opc.Ua
         /// The identifier for the BrokerReaderGroupType_Diagnostics_LiveValues Object.
         /// </summary>
         public static readonly NodeId BrokerReaderGroupType_Diagnostics_LiveValues = new NodeId(Opc.Ua.Objects.BrokerReaderGroupType_Diagnostics_LiveValues);
+
+        /// <summary>
+        /// The identifier for the KeyValuePair_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId KeyValuePair_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.KeyValuePair_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the IdentityMappingRuleType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId IdentityMappingRuleType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.IdentityMappingRuleType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the TrustListDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId TrustListDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.TrustListDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DecimalDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DecimalDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DecimalDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ConfigurationVersionDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ConfigurationVersionDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ConfigurationVersionDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DataSetMetaDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DataSetMetaDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataSetMetaDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the FieldMetaData_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId FieldMetaData_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.FieldMetaData_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DataTypeDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DataTypeDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataTypeDescription_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the StructureDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId StructureDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.StructureDescription_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the EnumDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId EnumDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EnumDescription_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the PublishedVariableDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId PublishedVariableDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.PublishedVariableDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the FieldTargetDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId FieldTargetDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.FieldTargetDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the RolePermissionType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId RolePermissionType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RolePermissionType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DataTypeDefinition_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DataTypeDefinition_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataTypeDefinition_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the StructureField_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId StructureField_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.StructureField_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the StructureDefinition_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId StructureDefinition_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.StructureDefinition_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the EnumDefinition_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId EnumDefinition_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EnumDefinition_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the Node_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId Node_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.Node_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the InstanceNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId InstanceNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.InstanceNode_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the TypeNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId TypeNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.TypeNode_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ObjectNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ObjectNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ObjectNode_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ObjectTypeNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ObjectTypeNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ObjectTypeNode_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the VariableNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId VariableNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.VariableNode_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the VariableTypeNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId VariableTypeNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.VariableTypeNode_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ReferenceTypeNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ReferenceTypeNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReferenceTypeNode_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the MethodNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId MethodNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MethodNode_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ViewNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ViewNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ViewNode_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DataTypeNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DataTypeNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataTypeNode_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ReferenceNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ReferenceNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReferenceNode_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the Argument_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId Argument_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.Argument_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the EnumValueType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId EnumValueType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EnumValueType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the EnumField_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId EnumField_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EnumField_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the OptionSet_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId OptionSet_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.OptionSet_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the Union_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId Union_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.Union_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the TimeZoneDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId TimeZoneDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.TimeZoneDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ApplicationDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ApplicationDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ApplicationDescription_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the RequestHeader_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId RequestHeader_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RequestHeader_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ResponseHeader_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ResponseHeader_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ResponseHeader_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ServiceFault_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ServiceFault_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ServiceFault_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the SessionlessInvokeRequestType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId SessionlessInvokeRequestType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SessionlessInvokeRequestType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the SessionlessInvokeResponseType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId SessionlessInvokeResponseType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SessionlessInvokeResponseType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the FindServersRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId FindServersRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.FindServersRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the FindServersResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId FindServersResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.FindServersResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ServerOnNetwork_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ServerOnNetwork_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ServerOnNetwork_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the FindServersOnNetworkRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId FindServersOnNetworkRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.FindServersOnNetworkRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the FindServersOnNetworkResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId FindServersOnNetworkResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.FindServersOnNetworkResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the UserTokenPolicy_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId UserTokenPolicy_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.UserTokenPolicy_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the EndpointDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId EndpointDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EndpointDescription_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the GetEndpointsRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId GetEndpointsRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.GetEndpointsRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the GetEndpointsResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId GetEndpointsResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.GetEndpointsResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the RegisteredServer_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId RegisteredServer_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RegisteredServer_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the RegisterServerRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId RegisterServerRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RegisterServerRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the RegisterServerResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId RegisterServerResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RegisterServerResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DiscoveryConfiguration_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DiscoveryConfiguration_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DiscoveryConfiguration_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the MdnsDiscoveryConfiguration_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId MdnsDiscoveryConfiguration_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MdnsDiscoveryConfiguration_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the RegisterServer2Request_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId RegisterServer2Request_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RegisterServer2Request_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the RegisterServer2Response_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId RegisterServer2Response_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RegisterServer2Response_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ChannelSecurityToken_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ChannelSecurityToken_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ChannelSecurityToken_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the OpenSecureChannelRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId OpenSecureChannelRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.OpenSecureChannelRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the OpenSecureChannelResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId OpenSecureChannelResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.OpenSecureChannelResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the CloseSecureChannelRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId CloseSecureChannelRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CloseSecureChannelRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the CloseSecureChannelResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId CloseSecureChannelResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CloseSecureChannelResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the SignedSoftwareCertificate_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId SignedSoftwareCertificate_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SignedSoftwareCertificate_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the SignatureData_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId SignatureData_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SignatureData_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the CreateSessionRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId CreateSessionRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CreateSessionRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the CreateSessionResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId CreateSessionResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CreateSessionResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the UserIdentityToken_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId UserIdentityToken_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.UserIdentityToken_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the AnonymousIdentityToken_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId AnonymousIdentityToken_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AnonymousIdentityToken_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the UserNameIdentityToken_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId UserNameIdentityToken_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.UserNameIdentityToken_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the X509IdentityToken_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId X509IdentityToken_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.X509IdentityToken_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the IssuedIdentityToken_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId IssuedIdentityToken_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.IssuedIdentityToken_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ActivateSessionRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ActivateSessionRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ActivateSessionRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ActivateSessionResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ActivateSessionResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ActivateSessionResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the CloseSessionRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId CloseSessionRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CloseSessionRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the CloseSessionResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId CloseSessionResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CloseSessionResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the CancelRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId CancelRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CancelRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the CancelResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId CancelResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CancelResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the NodeAttributes_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId NodeAttributes_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.NodeAttributes_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ObjectAttributes_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ObjectAttributes_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ObjectAttributes_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the VariableAttributes_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId VariableAttributes_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.VariableAttributes_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the MethodAttributes_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId MethodAttributes_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MethodAttributes_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ObjectTypeAttributes_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ObjectTypeAttributes_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ObjectTypeAttributes_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the VariableTypeAttributes_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId VariableTypeAttributes_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.VariableTypeAttributes_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ReferenceTypeAttributes_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ReferenceTypeAttributes_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReferenceTypeAttributes_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DataTypeAttributes_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DataTypeAttributes_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataTypeAttributes_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ViewAttributes_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ViewAttributes_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ViewAttributes_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the GenericAttributeValue_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId GenericAttributeValue_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.GenericAttributeValue_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the GenericAttributes_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId GenericAttributes_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.GenericAttributes_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the AddNodesItem_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId AddNodesItem_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AddNodesItem_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the AddNodesResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId AddNodesResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AddNodesResult_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the AddNodesRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId AddNodesRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AddNodesRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the AddNodesResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId AddNodesResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AddNodesResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the AddReferencesItem_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId AddReferencesItem_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AddReferencesItem_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the AddReferencesRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId AddReferencesRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AddReferencesRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the AddReferencesResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId AddReferencesResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AddReferencesResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DeleteNodesItem_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DeleteNodesItem_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteNodesItem_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DeleteNodesRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DeleteNodesRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteNodesRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DeleteNodesResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DeleteNodesResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteNodesResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DeleteReferencesItem_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DeleteReferencesItem_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteReferencesItem_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DeleteReferencesRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DeleteReferencesRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteReferencesRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DeleteReferencesResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DeleteReferencesResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteReferencesResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ViewDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ViewDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ViewDescription_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the BrowseDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId BrowseDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrowseDescription_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ReferenceDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ReferenceDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReferenceDescription_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the BrowseResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId BrowseResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrowseResult_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the BrowseRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId BrowseRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrowseRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the BrowseResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId BrowseResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrowseResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the BrowseNextRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId BrowseNextRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrowseNextRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the BrowseNextResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId BrowseNextResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrowseNextResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the RelativePathElement_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId RelativePathElement_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RelativePathElement_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the RelativePath_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId RelativePath_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RelativePath_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the BrowsePath_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId BrowsePath_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrowsePath_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the BrowsePathTarget_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId BrowsePathTarget_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrowsePathTarget_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the BrowsePathResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId BrowsePathResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrowsePathResult_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the TranslateBrowsePathsToNodeIdsRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId TranslateBrowsePathsToNodeIdsRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.TranslateBrowsePathsToNodeIdsRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the TranslateBrowsePathsToNodeIdsResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId TranslateBrowsePathsToNodeIdsResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.TranslateBrowsePathsToNodeIdsResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the RegisterNodesRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId RegisterNodesRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RegisterNodesRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the RegisterNodesResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId RegisterNodesResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RegisterNodesResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the UnregisterNodesRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId UnregisterNodesRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.UnregisterNodesRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the UnregisterNodesResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId UnregisterNodesResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.UnregisterNodesResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the EndpointConfiguration_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId EndpointConfiguration_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EndpointConfiguration_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the QueryDataDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId QueryDataDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.QueryDataDescription_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the NodeTypeDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId NodeTypeDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.NodeTypeDescription_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the QueryDataSet_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId QueryDataSet_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.QueryDataSet_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the NodeReference_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId NodeReference_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.NodeReference_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ContentFilterElement_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ContentFilterElement_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ContentFilterElement_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ContentFilter_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ContentFilter_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ContentFilter_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the FilterOperand_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId FilterOperand_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.FilterOperand_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ElementOperand_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ElementOperand_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ElementOperand_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the LiteralOperand_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId LiteralOperand_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.LiteralOperand_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the AttributeOperand_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId AttributeOperand_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AttributeOperand_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the SimpleAttributeOperand_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId SimpleAttributeOperand_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SimpleAttributeOperand_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ContentFilterElementResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ContentFilterElementResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ContentFilterElementResult_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ContentFilterResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ContentFilterResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ContentFilterResult_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ParsingResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ParsingResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ParsingResult_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the QueryFirstRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId QueryFirstRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.QueryFirstRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the QueryFirstResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId QueryFirstResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.QueryFirstResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the QueryNextRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId QueryNextRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.QueryNextRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the QueryNextResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId QueryNextResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.QueryNextResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ReadValueId_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ReadValueId_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReadValueId_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ReadRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ReadRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReadRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ReadResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ReadResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReadResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the HistoryReadValueId_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId HistoryReadValueId_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryReadValueId_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the HistoryReadResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId HistoryReadResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryReadResult_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the HistoryReadDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId HistoryReadDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryReadDetails_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ReadEventDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ReadEventDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReadEventDetails_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ReadRawModifiedDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ReadRawModifiedDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReadRawModifiedDetails_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ReadProcessedDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ReadProcessedDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReadProcessedDetails_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ReadAtTimeDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ReadAtTimeDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReadAtTimeDetails_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the HistoryData_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId HistoryData_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryData_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ModificationInfo_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ModificationInfo_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ModificationInfo_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the HistoryModifiedData_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId HistoryModifiedData_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryModifiedData_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the HistoryEvent_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId HistoryEvent_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryEvent_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the HistoryReadRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId HistoryReadRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryReadRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the HistoryReadResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId HistoryReadResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryReadResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the WriteValue_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId WriteValue_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.WriteValue_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the WriteRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId WriteRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.WriteRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the WriteResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId WriteResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.WriteResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the HistoryUpdateDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId HistoryUpdateDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryUpdateDetails_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the UpdateDataDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId UpdateDataDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.UpdateDataDetails_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the UpdateStructureDataDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId UpdateStructureDataDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.UpdateStructureDataDetails_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the UpdateEventDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId UpdateEventDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.UpdateEventDetails_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DeleteRawModifiedDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DeleteRawModifiedDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteRawModifiedDetails_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DeleteAtTimeDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DeleteAtTimeDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteAtTimeDetails_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DeleteEventDetails_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DeleteEventDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteEventDetails_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the HistoryUpdateResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId HistoryUpdateResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryUpdateResult_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the HistoryUpdateRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId HistoryUpdateRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryUpdateRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the HistoryUpdateResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId HistoryUpdateResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryUpdateResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the CallMethodRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId CallMethodRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CallMethodRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the CallMethodResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId CallMethodResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CallMethodResult_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the CallRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId CallRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CallRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the CallResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId CallResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CallResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the MonitoringFilter_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId MonitoringFilter_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MonitoringFilter_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DataChangeFilter_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DataChangeFilter_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataChangeFilter_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the EventFilter_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId EventFilter_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EventFilter_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the AggregateConfiguration_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId AggregateConfiguration_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AggregateConfiguration_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the AggregateFilter_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId AggregateFilter_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AggregateFilter_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the MonitoringFilterResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId MonitoringFilterResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MonitoringFilterResult_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the EventFilterResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId EventFilterResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EventFilterResult_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the AggregateFilterResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId AggregateFilterResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AggregateFilterResult_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the MonitoringParameters_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId MonitoringParameters_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MonitoringParameters_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the MonitoredItemCreateRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId MonitoredItemCreateRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MonitoredItemCreateRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the MonitoredItemCreateResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId MonitoredItemCreateResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MonitoredItemCreateResult_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the CreateMonitoredItemsRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId CreateMonitoredItemsRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CreateMonitoredItemsRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the CreateMonitoredItemsResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId CreateMonitoredItemsResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CreateMonitoredItemsResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the MonitoredItemModifyRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId MonitoredItemModifyRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MonitoredItemModifyRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the MonitoredItemModifyResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId MonitoredItemModifyResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MonitoredItemModifyResult_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ModifyMonitoredItemsRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ModifyMonitoredItemsRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ModifyMonitoredItemsRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ModifyMonitoredItemsResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ModifyMonitoredItemsResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ModifyMonitoredItemsResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the SetMonitoringModeRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId SetMonitoringModeRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SetMonitoringModeRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the SetMonitoringModeResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId SetMonitoringModeResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SetMonitoringModeResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the SetTriggeringRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId SetTriggeringRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SetTriggeringRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the SetTriggeringResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId SetTriggeringResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SetTriggeringResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DeleteMonitoredItemsRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DeleteMonitoredItemsRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteMonitoredItemsRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DeleteMonitoredItemsResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DeleteMonitoredItemsResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteMonitoredItemsResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the CreateSubscriptionRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId CreateSubscriptionRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CreateSubscriptionRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the CreateSubscriptionResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId CreateSubscriptionResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CreateSubscriptionResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ModifySubscriptionRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ModifySubscriptionRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ModifySubscriptionRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ModifySubscriptionResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ModifySubscriptionResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ModifySubscriptionResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the SetPublishingModeRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId SetPublishingModeRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SetPublishingModeRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the SetPublishingModeResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId SetPublishingModeResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SetPublishingModeResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the NotificationMessage_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId NotificationMessage_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.NotificationMessage_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the NotificationData_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId NotificationData_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.NotificationData_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DataChangeNotification_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DataChangeNotification_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataChangeNotification_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the MonitoredItemNotification_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId MonitoredItemNotification_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MonitoredItemNotification_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the EventNotificationList_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId EventNotificationList_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EventNotificationList_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the EventFieldList_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId EventFieldList_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EventFieldList_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the HistoryEventFieldList_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId HistoryEventFieldList_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryEventFieldList_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the StatusChangeNotification_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId StatusChangeNotification_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.StatusChangeNotification_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the SubscriptionAcknowledgement_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId SubscriptionAcknowledgement_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SubscriptionAcknowledgement_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the PublishRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId PublishRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.PublishRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the PublishResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId PublishResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.PublishResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the RepublishRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId RepublishRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RepublishRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the RepublishResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId RepublishResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RepublishResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the TransferResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId TransferResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.TransferResult_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the TransferSubscriptionsRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId TransferSubscriptionsRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.TransferSubscriptionsRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the TransferSubscriptionsResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId TransferSubscriptionsResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.TransferSubscriptionsResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DeleteSubscriptionsRequest_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DeleteSubscriptionsRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteSubscriptionsRequest_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DeleteSubscriptionsResponse_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DeleteSubscriptionsResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteSubscriptionsResponse_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the BuildInfo_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId BuildInfo_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BuildInfo_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the RedundantServerDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId RedundantServerDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RedundantServerDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the EndpointUrlListDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId EndpointUrlListDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EndpointUrlListDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the NetworkGroupDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId NetworkGroupDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.NetworkGroupDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the SamplingIntervalDiagnosticsDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId SamplingIntervalDiagnosticsDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SamplingIntervalDiagnosticsDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ServerDiagnosticsSummaryDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ServerDiagnosticsSummaryDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ServerDiagnosticsSummaryDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ServerStatusDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ServerStatusDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ServerStatusDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the SessionDiagnosticsDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId SessionDiagnosticsDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SessionDiagnosticsDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the SessionSecurityDiagnosticsDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId SessionSecurityDiagnosticsDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SessionSecurityDiagnosticsDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ServiceCounterDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ServiceCounterDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ServiceCounterDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the StatusResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId StatusResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.StatusResult_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the SubscriptionDiagnosticsDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId SubscriptionDiagnosticsDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SubscriptionDiagnosticsDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ModelChangeStructureDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ModelChangeStructureDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ModelChangeStructureDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the SemanticChangeStructureDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId SemanticChangeStructureDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SemanticChangeStructureDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the Range_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId Range_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.Range_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the EUInformation_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId EUInformation_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EUInformation_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ComplexNumberType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ComplexNumberType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ComplexNumberType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DoubleComplexNumberType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DoubleComplexNumberType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DoubleComplexNumberType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the AxisInformation_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId AxisInformation_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AxisInformation_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the XVType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId XVType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.XVType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnosticDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ProgramDiagnosticDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ProgramDiagnosticDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the Annotation_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId Annotation_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.Annotation_Encoding_DefaultBinary);
 
         /// <summary>
         /// The identifier for the KeyValuePair_Encoding_DefaultXml Object.
@@ -37475,1209 +39885,1209 @@ namespace Opc.Ua
         public static readonly NodeId Annotation_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.Annotation_Encoding_DefaultXml);
 
         /// <summary>
-        /// The identifier for the KeyValuePair_Encoding_DefaultBinary Object.
+        /// The identifier for the KeyValuePair_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId KeyValuePair_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.KeyValuePair_Encoding_DefaultBinary);
+        public static readonly NodeId KeyValuePair_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.KeyValuePair_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the IdentityMappingRuleType_Encoding_DefaultBinary Object.
+        /// The identifier for the IdentityMappingRuleType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId IdentityMappingRuleType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.IdentityMappingRuleType_Encoding_DefaultBinary);
+        public static readonly NodeId IdentityMappingRuleType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.IdentityMappingRuleType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the TrustListDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the TrustListDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId TrustListDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.TrustListDataType_Encoding_DefaultBinary);
+        public static readonly NodeId TrustListDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.TrustListDataType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DecimalDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the DecimalDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DecimalDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DecimalDataType_Encoding_DefaultBinary);
+        public static readonly NodeId DecimalDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DecimalDataType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ConfigurationVersionDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the ConfigurationVersionDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ConfigurationVersionDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ConfigurationVersionDataType_Encoding_DefaultBinary);
+        public static readonly NodeId ConfigurationVersionDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ConfigurationVersionDataType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DataSetMetaDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the DataSetMetaDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DataSetMetaDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataSetMetaDataType_Encoding_DefaultBinary);
+        public static readonly NodeId DataSetMetaDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DataSetMetaDataType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the FieldMetaData_Encoding_DefaultBinary Object.
+        /// The identifier for the FieldMetaData_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId FieldMetaData_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.FieldMetaData_Encoding_DefaultBinary);
+        public static readonly NodeId FieldMetaData_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.FieldMetaData_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DataTypeDescription_Encoding_DefaultBinary Object.
+        /// The identifier for the DataTypeDescription_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DataTypeDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataTypeDescription_Encoding_DefaultBinary);
+        public static readonly NodeId DataTypeDescription_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DataTypeDescription_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the StructureDescription_Encoding_DefaultBinary Object.
+        /// The identifier for the StructureDescription_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId StructureDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.StructureDescription_Encoding_DefaultBinary);
+        public static readonly NodeId StructureDescription_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.StructureDescription_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the EnumDescription_Encoding_DefaultBinary Object.
+        /// The identifier for the EnumDescription_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId EnumDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EnumDescription_Encoding_DefaultBinary);
+        public static readonly NodeId EnumDescription_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.EnumDescription_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the PublishedVariableDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the PublishedVariableDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId PublishedVariableDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.PublishedVariableDataType_Encoding_DefaultBinary);
+        public static readonly NodeId PublishedVariableDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.PublishedVariableDataType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the FieldTargetDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the FieldTargetDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId FieldTargetDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.FieldTargetDataType_Encoding_DefaultBinary);
+        public static readonly NodeId FieldTargetDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.FieldTargetDataType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the RolePermissionType_Encoding_DefaultBinary Object.
+        /// The identifier for the RolePermissionType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId RolePermissionType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RolePermissionType_Encoding_DefaultBinary);
+        public static readonly NodeId RolePermissionType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.RolePermissionType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DataTypeDefinition_Encoding_DefaultBinary Object.
+        /// The identifier for the DataTypeDefinition_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DataTypeDefinition_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataTypeDefinition_Encoding_DefaultBinary);
+        public static readonly NodeId DataTypeDefinition_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DataTypeDefinition_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the StructureField_Encoding_DefaultBinary Object.
+        /// The identifier for the StructureField_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId StructureField_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.StructureField_Encoding_DefaultBinary);
+        public static readonly NodeId StructureField_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.StructureField_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the StructureDefinition_Encoding_DefaultBinary Object.
+        /// The identifier for the StructureDefinition_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId StructureDefinition_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.StructureDefinition_Encoding_DefaultBinary);
+        public static readonly NodeId StructureDefinition_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.StructureDefinition_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the EnumDefinition_Encoding_DefaultBinary Object.
+        /// The identifier for the EnumDefinition_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId EnumDefinition_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EnumDefinition_Encoding_DefaultBinary);
+        public static readonly NodeId EnumDefinition_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.EnumDefinition_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the Node_Encoding_DefaultBinary Object.
+        /// The identifier for the Node_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId Node_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.Node_Encoding_DefaultBinary);
+        public static readonly NodeId Node_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.Node_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the InstanceNode_Encoding_DefaultBinary Object.
+        /// The identifier for the InstanceNode_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId InstanceNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.InstanceNode_Encoding_DefaultBinary);
+        public static readonly NodeId InstanceNode_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.InstanceNode_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the TypeNode_Encoding_DefaultBinary Object.
+        /// The identifier for the TypeNode_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId TypeNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.TypeNode_Encoding_DefaultBinary);
+        public static readonly NodeId TypeNode_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.TypeNode_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ObjectNode_Encoding_DefaultBinary Object.
+        /// The identifier for the ObjectNode_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ObjectNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ObjectNode_Encoding_DefaultBinary);
+        public static readonly NodeId ObjectNode_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ObjectNode_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ObjectTypeNode_Encoding_DefaultBinary Object.
+        /// The identifier for the ObjectTypeNode_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ObjectTypeNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ObjectTypeNode_Encoding_DefaultBinary);
+        public static readonly NodeId ObjectTypeNode_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ObjectTypeNode_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the VariableNode_Encoding_DefaultBinary Object.
+        /// The identifier for the VariableNode_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId VariableNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.VariableNode_Encoding_DefaultBinary);
+        public static readonly NodeId VariableNode_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.VariableNode_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the VariableTypeNode_Encoding_DefaultBinary Object.
+        /// The identifier for the VariableTypeNode_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId VariableTypeNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.VariableTypeNode_Encoding_DefaultBinary);
+        public static readonly NodeId VariableTypeNode_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.VariableTypeNode_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ReferenceTypeNode_Encoding_DefaultBinary Object.
+        /// The identifier for the ReferenceTypeNode_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ReferenceTypeNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReferenceTypeNode_Encoding_DefaultBinary);
+        public static readonly NodeId ReferenceTypeNode_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ReferenceTypeNode_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the MethodNode_Encoding_DefaultBinary Object.
+        /// The identifier for the MethodNode_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId MethodNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MethodNode_Encoding_DefaultBinary);
+        public static readonly NodeId MethodNode_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.MethodNode_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ViewNode_Encoding_DefaultBinary Object.
+        /// The identifier for the ViewNode_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ViewNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ViewNode_Encoding_DefaultBinary);
+        public static readonly NodeId ViewNode_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ViewNode_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DataTypeNode_Encoding_DefaultBinary Object.
+        /// The identifier for the DataTypeNode_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DataTypeNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataTypeNode_Encoding_DefaultBinary);
+        public static readonly NodeId DataTypeNode_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DataTypeNode_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ReferenceNode_Encoding_DefaultBinary Object.
+        /// The identifier for the ReferenceNode_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ReferenceNode_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReferenceNode_Encoding_DefaultBinary);
+        public static readonly NodeId ReferenceNode_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ReferenceNode_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the Argument_Encoding_DefaultBinary Object.
+        /// The identifier for the Argument_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId Argument_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.Argument_Encoding_DefaultBinary);
+        public static readonly NodeId Argument_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.Argument_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the EnumValueType_Encoding_DefaultBinary Object.
+        /// The identifier for the EnumValueType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId EnumValueType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EnumValueType_Encoding_DefaultBinary);
+        public static readonly NodeId EnumValueType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.EnumValueType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the EnumField_Encoding_DefaultBinary Object.
+        /// The identifier for the EnumField_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId EnumField_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EnumField_Encoding_DefaultBinary);
+        public static readonly NodeId EnumField_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.EnumField_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the OptionSet_Encoding_DefaultBinary Object.
+        /// The identifier for the OptionSet_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId OptionSet_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.OptionSet_Encoding_DefaultBinary);
+        public static readonly NodeId OptionSet_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.OptionSet_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the Union_Encoding_DefaultBinary Object.
+        /// The identifier for the Union_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId Union_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.Union_Encoding_DefaultBinary);
+        public static readonly NodeId Union_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.Union_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the TimeZoneDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the TimeZoneDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId TimeZoneDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.TimeZoneDataType_Encoding_DefaultBinary);
+        public static readonly NodeId TimeZoneDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.TimeZoneDataType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ApplicationDescription_Encoding_DefaultBinary Object.
+        /// The identifier for the ApplicationDescription_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ApplicationDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ApplicationDescription_Encoding_DefaultBinary);
+        public static readonly NodeId ApplicationDescription_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ApplicationDescription_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the RequestHeader_Encoding_DefaultBinary Object.
+        /// The identifier for the RequestHeader_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId RequestHeader_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RequestHeader_Encoding_DefaultBinary);
+        public static readonly NodeId RequestHeader_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.RequestHeader_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ResponseHeader_Encoding_DefaultBinary Object.
+        /// The identifier for the ResponseHeader_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ResponseHeader_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ResponseHeader_Encoding_DefaultBinary);
+        public static readonly NodeId ResponseHeader_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ResponseHeader_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ServiceFault_Encoding_DefaultBinary Object.
+        /// The identifier for the ServiceFault_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ServiceFault_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ServiceFault_Encoding_DefaultBinary);
+        public static readonly NodeId ServiceFault_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ServiceFault_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the SessionlessInvokeRequestType_Encoding_DefaultBinary Object.
+        /// The identifier for the SessionlessInvokeRequestType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId SessionlessInvokeRequestType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SessionlessInvokeRequestType_Encoding_DefaultBinary);
+        public static readonly NodeId SessionlessInvokeRequestType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.SessionlessInvokeRequestType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the SessionlessInvokeResponseType_Encoding_DefaultBinary Object.
+        /// The identifier for the SessionlessInvokeResponseType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId SessionlessInvokeResponseType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SessionlessInvokeResponseType_Encoding_DefaultBinary);
+        public static readonly NodeId SessionlessInvokeResponseType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.SessionlessInvokeResponseType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the FindServersRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the FindServersRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId FindServersRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.FindServersRequest_Encoding_DefaultBinary);
+        public static readonly NodeId FindServersRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.FindServersRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the FindServersResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the FindServersResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId FindServersResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.FindServersResponse_Encoding_DefaultBinary);
+        public static readonly NodeId FindServersResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.FindServersResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ServerOnNetwork_Encoding_DefaultBinary Object.
+        /// The identifier for the ServerOnNetwork_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ServerOnNetwork_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ServerOnNetwork_Encoding_DefaultBinary);
+        public static readonly NodeId ServerOnNetwork_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ServerOnNetwork_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the FindServersOnNetworkRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the FindServersOnNetworkRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId FindServersOnNetworkRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.FindServersOnNetworkRequest_Encoding_DefaultBinary);
+        public static readonly NodeId FindServersOnNetworkRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.FindServersOnNetworkRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the FindServersOnNetworkResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the FindServersOnNetworkResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId FindServersOnNetworkResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.FindServersOnNetworkResponse_Encoding_DefaultBinary);
+        public static readonly NodeId FindServersOnNetworkResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.FindServersOnNetworkResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the UserTokenPolicy_Encoding_DefaultBinary Object.
+        /// The identifier for the UserTokenPolicy_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId UserTokenPolicy_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.UserTokenPolicy_Encoding_DefaultBinary);
+        public static readonly NodeId UserTokenPolicy_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.UserTokenPolicy_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the EndpointDescription_Encoding_DefaultBinary Object.
+        /// The identifier for the EndpointDescription_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId EndpointDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EndpointDescription_Encoding_DefaultBinary);
+        public static readonly NodeId EndpointDescription_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.EndpointDescription_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the GetEndpointsRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the GetEndpointsRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId GetEndpointsRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.GetEndpointsRequest_Encoding_DefaultBinary);
+        public static readonly NodeId GetEndpointsRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.GetEndpointsRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the GetEndpointsResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the GetEndpointsResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId GetEndpointsResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.GetEndpointsResponse_Encoding_DefaultBinary);
+        public static readonly NodeId GetEndpointsResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.GetEndpointsResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the RegisteredServer_Encoding_DefaultBinary Object.
+        /// The identifier for the RegisteredServer_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId RegisteredServer_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RegisteredServer_Encoding_DefaultBinary);
+        public static readonly NodeId RegisteredServer_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.RegisteredServer_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the RegisterServerRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the RegisterServerRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId RegisterServerRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RegisterServerRequest_Encoding_DefaultBinary);
+        public static readonly NodeId RegisterServerRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.RegisterServerRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the RegisterServerResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the RegisterServerResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId RegisterServerResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RegisterServerResponse_Encoding_DefaultBinary);
+        public static readonly NodeId RegisterServerResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.RegisterServerResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DiscoveryConfiguration_Encoding_DefaultBinary Object.
+        /// The identifier for the DiscoveryConfiguration_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DiscoveryConfiguration_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DiscoveryConfiguration_Encoding_DefaultBinary);
+        public static readonly NodeId DiscoveryConfiguration_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DiscoveryConfiguration_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the MdnsDiscoveryConfiguration_Encoding_DefaultBinary Object.
+        /// The identifier for the MdnsDiscoveryConfiguration_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId MdnsDiscoveryConfiguration_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MdnsDiscoveryConfiguration_Encoding_DefaultBinary);
+        public static readonly NodeId MdnsDiscoveryConfiguration_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.MdnsDiscoveryConfiguration_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the RegisterServer2Request_Encoding_DefaultBinary Object.
+        /// The identifier for the RegisterServer2Request_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId RegisterServer2Request_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RegisterServer2Request_Encoding_DefaultBinary);
+        public static readonly NodeId RegisterServer2Request_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.RegisterServer2Request_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the RegisterServer2Response_Encoding_DefaultBinary Object.
+        /// The identifier for the RegisterServer2Response_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId RegisterServer2Response_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RegisterServer2Response_Encoding_DefaultBinary);
+        public static readonly NodeId RegisterServer2Response_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.RegisterServer2Response_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ChannelSecurityToken_Encoding_DefaultBinary Object.
+        /// The identifier for the ChannelSecurityToken_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ChannelSecurityToken_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ChannelSecurityToken_Encoding_DefaultBinary);
+        public static readonly NodeId ChannelSecurityToken_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ChannelSecurityToken_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the OpenSecureChannelRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the OpenSecureChannelRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId OpenSecureChannelRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.OpenSecureChannelRequest_Encoding_DefaultBinary);
+        public static readonly NodeId OpenSecureChannelRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.OpenSecureChannelRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the OpenSecureChannelResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the OpenSecureChannelResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId OpenSecureChannelResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.OpenSecureChannelResponse_Encoding_DefaultBinary);
+        public static readonly NodeId OpenSecureChannelResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.OpenSecureChannelResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the CloseSecureChannelRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the CloseSecureChannelRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId CloseSecureChannelRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CloseSecureChannelRequest_Encoding_DefaultBinary);
+        public static readonly NodeId CloseSecureChannelRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.CloseSecureChannelRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the CloseSecureChannelResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the CloseSecureChannelResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId CloseSecureChannelResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CloseSecureChannelResponse_Encoding_DefaultBinary);
+        public static readonly NodeId CloseSecureChannelResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.CloseSecureChannelResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the SignedSoftwareCertificate_Encoding_DefaultBinary Object.
+        /// The identifier for the SignedSoftwareCertificate_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId SignedSoftwareCertificate_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SignedSoftwareCertificate_Encoding_DefaultBinary);
+        public static readonly NodeId SignedSoftwareCertificate_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.SignedSoftwareCertificate_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the SignatureData_Encoding_DefaultBinary Object.
+        /// The identifier for the SignatureData_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId SignatureData_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SignatureData_Encoding_DefaultBinary);
+        public static readonly NodeId SignatureData_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.SignatureData_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the CreateSessionRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the CreateSessionRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId CreateSessionRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CreateSessionRequest_Encoding_DefaultBinary);
+        public static readonly NodeId CreateSessionRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.CreateSessionRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the CreateSessionResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the CreateSessionResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId CreateSessionResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CreateSessionResponse_Encoding_DefaultBinary);
+        public static readonly NodeId CreateSessionResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.CreateSessionResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the UserIdentityToken_Encoding_DefaultBinary Object.
+        /// The identifier for the UserIdentityToken_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId UserIdentityToken_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.UserIdentityToken_Encoding_DefaultBinary);
+        public static readonly NodeId UserIdentityToken_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.UserIdentityToken_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the AnonymousIdentityToken_Encoding_DefaultBinary Object.
+        /// The identifier for the AnonymousIdentityToken_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId AnonymousIdentityToken_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AnonymousIdentityToken_Encoding_DefaultBinary);
+        public static readonly NodeId AnonymousIdentityToken_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.AnonymousIdentityToken_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the UserNameIdentityToken_Encoding_DefaultBinary Object.
+        /// The identifier for the UserNameIdentityToken_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId UserNameIdentityToken_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.UserNameIdentityToken_Encoding_DefaultBinary);
+        public static readonly NodeId UserNameIdentityToken_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.UserNameIdentityToken_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the X509IdentityToken_Encoding_DefaultBinary Object.
+        /// The identifier for the X509IdentityToken_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId X509IdentityToken_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.X509IdentityToken_Encoding_DefaultBinary);
+        public static readonly NodeId X509IdentityToken_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.X509IdentityToken_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the IssuedIdentityToken_Encoding_DefaultBinary Object.
+        /// The identifier for the IssuedIdentityToken_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId IssuedIdentityToken_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.IssuedIdentityToken_Encoding_DefaultBinary);
+        public static readonly NodeId IssuedIdentityToken_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.IssuedIdentityToken_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ActivateSessionRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the ActivateSessionRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ActivateSessionRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ActivateSessionRequest_Encoding_DefaultBinary);
+        public static readonly NodeId ActivateSessionRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ActivateSessionRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ActivateSessionResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the ActivateSessionResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ActivateSessionResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ActivateSessionResponse_Encoding_DefaultBinary);
+        public static readonly NodeId ActivateSessionResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ActivateSessionResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the CloseSessionRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the CloseSessionRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId CloseSessionRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CloseSessionRequest_Encoding_DefaultBinary);
+        public static readonly NodeId CloseSessionRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.CloseSessionRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the CloseSessionResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the CloseSessionResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId CloseSessionResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CloseSessionResponse_Encoding_DefaultBinary);
+        public static readonly NodeId CloseSessionResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.CloseSessionResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the CancelRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the CancelRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId CancelRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CancelRequest_Encoding_DefaultBinary);
+        public static readonly NodeId CancelRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.CancelRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the CancelResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the CancelResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId CancelResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CancelResponse_Encoding_DefaultBinary);
+        public static readonly NodeId CancelResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.CancelResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the NodeAttributes_Encoding_DefaultBinary Object.
+        /// The identifier for the NodeAttributes_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId NodeAttributes_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.NodeAttributes_Encoding_DefaultBinary);
+        public static readonly NodeId NodeAttributes_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.NodeAttributes_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ObjectAttributes_Encoding_DefaultBinary Object.
+        /// The identifier for the ObjectAttributes_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ObjectAttributes_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ObjectAttributes_Encoding_DefaultBinary);
+        public static readonly NodeId ObjectAttributes_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ObjectAttributes_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the VariableAttributes_Encoding_DefaultBinary Object.
+        /// The identifier for the VariableAttributes_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId VariableAttributes_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.VariableAttributes_Encoding_DefaultBinary);
+        public static readonly NodeId VariableAttributes_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.VariableAttributes_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the MethodAttributes_Encoding_DefaultBinary Object.
+        /// The identifier for the MethodAttributes_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId MethodAttributes_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MethodAttributes_Encoding_DefaultBinary);
+        public static readonly NodeId MethodAttributes_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.MethodAttributes_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ObjectTypeAttributes_Encoding_DefaultBinary Object.
+        /// The identifier for the ObjectTypeAttributes_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ObjectTypeAttributes_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ObjectTypeAttributes_Encoding_DefaultBinary);
+        public static readonly NodeId ObjectTypeAttributes_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ObjectTypeAttributes_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the VariableTypeAttributes_Encoding_DefaultBinary Object.
+        /// The identifier for the VariableTypeAttributes_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId VariableTypeAttributes_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.VariableTypeAttributes_Encoding_DefaultBinary);
+        public static readonly NodeId VariableTypeAttributes_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.VariableTypeAttributes_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ReferenceTypeAttributes_Encoding_DefaultBinary Object.
+        /// The identifier for the ReferenceTypeAttributes_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ReferenceTypeAttributes_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReferenceTypeAttributes_Encoding_DefaultBinary);
+        public static readonly NodeId ReferenceTypeAttributes_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ReferenceTypeAttributes_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DataTypeAttributes_Encoding_DefaultBinary Object.
+        /// The identifier for the DataTypeAttributes_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DataTypeAttributes_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataTypeAttributes_Encoding_DefaultBinary);
+        public static readonly NodeId DataTypeAttributes_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DataTypeAttributes_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ViewAttributes_Encoding_DefaultBinary Object.
+        /// The identifier for the ViewAttributes_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ViewAttributes_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ViewAttributes_Encoding_DefaultBinary);
+        public static readonly NodeId ViewAttributes_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ViewAttributes_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the GenericAttributeValue_Encoding_DefaultBinary Object.
+        /// The identifier for the GenericAttributeValue_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId GenericAttributeValue_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.GenericAttributeValue_Encoding_DefaultBinary);
+        public static readonly NodeId GenericAttributeValue_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.GenericAttributeValue_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the GenericAttributes_Encoding_DefaultBinary Object.
+        /// The identifier for the GenericAttributes_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId GenericAttributes_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.GenericAttributes_Encoding_DefaultBinary);
+        public static readonly NodeId GenericAttributes_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.GenericAttributes_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the AddNodesItem_Encoding_DefaultBinary Object.
+        /// The identifier for the AddNodesItem_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId AddNodesItem_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AddNodesItem_Encoding_DefaultBinary);
+        public static readonly NodeId AddNodesItem_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.AddNodesItem_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the AddNodesResult_Encoding_DefaultBinary Object.
+        /// The identifier for the AddNodesResult_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId AddNodesResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AddNodesResult_Encoding_DefaultBinary);
+        public static readonly NodeId AddNodesResult_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.AddNodesResult_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the AddNodesRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the AddNodesRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId AddNodesRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AddNodesRequest_Encoding_DefaultBinary);
+        public static readonly NodeId AddNodesRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.AddNodesRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the AddNodesResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the AddNodesResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId AddNodesResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AddNodesResponse_Encoding_DefaultBinary);
+        public static readonly NodeId AddNodesResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.AddNodesResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the AddReferencesItem_Encoding_DefaultBinary Object.
+        /// The identifier for the AddReferencesItem_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId AddReferencesItem_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AddReferencesItem_Encoding_DefaultBinary);
+        public static readonly NodeId AddReferencesItem_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.AddReferencesItem_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the AddReferencesRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the AddReferencesRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId AddReferencesRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AddReferencesRequest_Encoding_DefaultBinary);
+        public static readonly NodeId AddReferencesRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.AddReferencesRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the AddReferencesResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the AddReferencesResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId AddReferencesResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AddReferencesResponse_Encoding_DefaultBinary);
+        public static readonly NodeId AddReferencesResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.AddReferencesResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DeleteNodesItem_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteNodesItem_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DeleteNodesItem_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteNodesItem_Encoding_DefaultBinary);
+        public static readonly NodeId DeleteNodesItem_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DeleteNodesItem_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DeleteNodesRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteNodesRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DeleteNodesRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteNodesRequest_Encoding_DefaultBinary);
+        public static readonly NodeId DeleteNodesRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DeleteNodesRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DeleteNodesResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteNodesResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DeleteNodesResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteNodesResponse_Encoding_DefaultBinary);
+        public static readonly NodeId DeleteNodesResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DeleteNodesResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DeleteReferencesItem_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteReferencesItem_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DeleteReferencesItem_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteReferencesItem_Encoding_DefaultBinary);
+        public static readonly NodeId DeleteReferencesItem_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DeleteReferencesItem_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DeleteReferencesRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteReferencesRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DeleteReferencesRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteReferencesRequest_Encoding_DefaultBinary);
+        public static readonly NodeId DeleteReferencesRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DeleteReferencesRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DeleteReferencesResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteReferencesResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DeleteReferencesResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteReferencesResponse_Encoding_DefaultBinary);
+        public static readonly NodeId DeleteReferencesResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DeleteReferencesResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ViewDescription_Encoding_DefaultBinary Object.
+        /// The identifier for the ViewDescription_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ViewDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ViewDescription_Encoding_DefaultBinary);
+        public static readonly NodeId ViewDescription_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ViewDescription_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the BrowseDescription_Encoding_DefaultBinary Object.
+        /// The identifier for the BrowseDescription_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId BrowseDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrowseDescription_Encoding_DefaultBinary);
+        public static readonly NodeId BrowseDescription_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.BrowseDescription_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ReferenceDescription_Encoding_DefaultBinary Object.
+        /// The identifier for the ReferenceDescription_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ReferenceDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReferenceDescription_Encoding_DefaultBinary);
+        public static readonly NodeId ReferenceDescription_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ReferenceDescription_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the BrowseResult_Encoding_DefaultBinary Object.
+        /// The identifier for the BrowseResult_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId BrowseResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrowseResult_Encoding_DefaultBinary);
+        public static readonly NodeId BrowseResult_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.BrowseResult_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the BrowseRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the BrowseRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId BrowseRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrowseRequest_Encoding_DefaultBinary);
+        public static readonly NodeId BrowseRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.BrowseRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the BrowseResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the BrowseResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId BrowseResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrowseResponse_Encoding_DefaultBinary);
+        public static readonly NodeId BrowseResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.BrowseResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the BrowseNextRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the BrowseNextRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId BrowseNextRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrowseNextRequest_Encoding_DefaultBinary);
+        public static readonly NodeId BrowseNextRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.BrowseNextRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the BrowseNextResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the BrowseNextResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId BrowseNextResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrowseNextResponse_Encoding_DefaultBinary);
+        public static readonly NodeId BrowseNextResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.BrowseNextResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the RelativePathElement_Encoding_DefaultBinary Object.
+        /// The identifier for the RelativePathElement_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId RelativePathElement_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RelativePathElement_Encoding_DefaultBinary);
+        public static readonly NodeId RelativePathElement_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.RelativePathElement_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the RelativePath_Encoding_DefaultBinary Object.
+        /// The identifier for the RelativePath_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId RelativePath_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RelativePath_Encoding_DefaultBinary);
+        public static readonly NodeId RelativePath_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.RelativePath_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the BrowsePath_Encoding_DefaultBinary Object.
+        /// The identifier for the BrowsePath_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId BrowsePath_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrowsePath_Encoding_DefaultBinary);
+        public static readonly NodeId BrowsePath_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.BrowsePath_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the BrowsePathTarget_Encoding_DefaultBinary Object.
+        /// The identifier for the BrowsePathTarget_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId BrowsePathTarget_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrowsePathTarget_Encoding_DefaultBinary);
+        public static readonly NodeId BrowsePathTarget_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.BrowsePathTarget_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the BrowsePathResult_Encoding_DefaultBinary Object.
+        /// The identifier for the BrowsePathResult_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId BrowsePathResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrowsePathResult_Encoding_DefaultBinary);
+        public static readonly NodeId BrowsePathResult_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.BrowsePathResult_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the TranslateBrowsePathsToNodeIdsRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the TranslateBrowsePathsToNodeIdsRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId TranslateBrowsePathsToNodeIdsRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.TranslateBrowsePathsToNodeIdsRequest_Encoding_DefaultBinary);
+        public static readonly NodeId TranslateBrowsePathsToNodeIdsRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.TranslateBrowsePathsToNodeIdsRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the TranslateBrowsePathsToNodeIdsResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the TranslateBrowsePathsToNodeIdsResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId TranslateBrowsePathsToNodeIdsResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.TranslateBrowsePathsToNodeIdsResponse_Encoding_DefaultBinary);
+        public static readonly NodeId TranslateBrowsePathsToNodeIdsResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.TranslateBrowsePathsToNodeIdsResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the RegisterNodesRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the RegisterNodesRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId RegisterNodesRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RegisterNodesRequest_Encoding_DefaultBinary);
+        public static readonly NodeId RegisterNodesRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.RegisterNodesRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the RegisterNodesResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the RegisterNodesResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId RegisterNodesResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RegisterNodesResponse_Encoding_DefaultBinary);
+        public static readonly NodeId RegisterNodesResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.RegisterNodesResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the UnregisterNodesRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the UnregisterNodesRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId UnregisterNodesRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.UnregisterNodesRequest_Encoding_DefaultBinary);
+        public static readonly NodeId UnregisterNodesRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.UnregisterNodesRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the UnregisterNodesResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the UnregisterNodesResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId UnregisterNodesResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.UnregisterNodesResponse_Encoding_DefaultBinary);
+        public static readonly NodeId UnregisterNodesResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.UnregisterNodesResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the EndpointConfiguration_Encoding_DefaultBinary Object.
+        /// The identifier for the EndpointConfiguration_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId EndpointConfiguration_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EndpointConfiguration_Encoding_DefaultBinary);
+        public static readonly NodeId EndpointConfiguration_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.EndpointConfiguration_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the QueryDataDescription_Encoding_DefaultBinary Object.
+        /// The identifier for the QueryDataDescription_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId QueryDataDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.QueryDataDescription_Encoding_DefaultBinary);
+        public static readonly NodeId QueryDataDescription_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.QueryDataDescription_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the NodeTypeDescription_Encoding_DefaultBinary Object.
+        /// The identifier for the NodeTypeDescription_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId NodeTypeDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.NodeTypeDescription_Encoding_DefaultBinary);
+        public static readonly NodeId NodeTypeDescription_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.NodeTypeDescription_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the QueryDataSet_Encoding_DefaultBinary Object.
+        /// The identifier for the QueryDataSet_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId QueryDataSet_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.QueryDataSet_Encoding_DefaultBinary);
+        public static readonly NodeId QueryDataSet_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.QueryDataSet_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the NodeReference_Encoding_DefaultBinary Object.
+        /// The identifier for the NodeReference_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId NodeReference_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.NodeReference_Encoding_DefaultBinary);
+        public static readonly NodeId NodeReference_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.NodeReference_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ContentFilterElement_Encoding_DefaultBinary Object.
+        /// The identifier for the ContentFilterElement_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ContentFilterElement_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ContentFilterElement_Encoding_DefaultBinary);
+        public static readonly NodeId ContentFilterElement_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ContentFilterElement_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ContentFilter_Encoding_DefaultBinary Object.
+        /// The identifier for the ContentFilter_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ContentFilter_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ContentFilter_Encoding_DefaultBinary);
+        public static readonly NodeId ContentFilter_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ContentFilter_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the FilterOperand_Encoding_DefaultBinary Object.
+        /// The identifier for the FilterOperand_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId FilterOperand_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.FilterOperand_Encoding_DefaultBinary);
+        public static readonly NodeId FilterOperand_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.FilterOperand_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ElementOperand_Encoding_DefaultBinary Object.
+        /// The identifier for the ElementOperand_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ElementOperand_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ElementOperand_Encoding_DefaultBinary);
+        public static readonly NodeId ElementOperand_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ElementOperand_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the LiteralOperand_Encoding_DefaultBinary Object.
+        /// The identifier for the LiteralOperand_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId LiteralOperand_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.LiteralOperand_Encoding_DefaultBinary);
+        public static readonly NodeId LiteralOperand_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.LiteralOperand_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the AttributeOperand_Encoding_DefaultBinary Object.
+        /// The identifier for the AttributeOperand_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId AttributeOperand_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AttributeOperand_Encoding_DefaultBinary);
+        public static readonly NodeId AttributeOperand_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.AttributeOperand_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the SimpleAttributeOperand_Encoding_DefaultBinary Object.
+        /// The identifier for the SimpleAttributeOperand_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId SimpleAttributeOperand_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SimpleAttributeOperand_Encoding_DefaultBinary);
+        public static readonly NodeId SimpleAttributeOperand_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.SimpleAttributeOperand_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ContentFilterElementResult_Encoding_DefaultBinary Object.
+        /// The identifier for the ContentFilterElementResult_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ContentFilterElementResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ContentFilterElementResult_Encoding_DefaultBinary);
+        public static readonly NodeId ContentFilterElementResult_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ContentFilterElementResult_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ContentFilterResult_Encoding_DefaultBinary Object.
+        /// The identifier for the ContentFilterResult_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ContentFilterResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ContentFilterResult_Encoding_DefaultBinary);
+        public static readonly NodeId ContentFilterResult_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ContentFilterResult_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ParsingResult_Encoding_DefaultBinary Object.
+        /// The identifier for the ParsingResult_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ParsingResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ParsingResult_Encoding_DefaultBinary);
+        public static readonly NodeId ParsingResult_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ParsingResult_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the QueryFirstRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the QueryFirstRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId QueryFirstRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.QueryFirstRequest_Encoding_DefaultBinary);
+        public static readonly NodeId QueryFirstRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.QueryFirstRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the QueryFirstResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the QueryFirstResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId QueryFirstResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.QueryFirstResponse_Encoding_DefaultBinary);
+        public static readonly NodeId QueryFirstResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.QueryFirstResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the QueryNextRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the QueryNextRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId QueryNextRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.QueryNextRequest_Encoding_DefaultBinary);
+        public static readonly NodeId QueryNextRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.QueryNextRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the QueryNextResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the QueryNextResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId QueryNextResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.QueryNextResponse_Encoding_DefaultBinary);
+        public static readonly NodeId QueryNextResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.QueryNextResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ReadValueId_Encoding_DefaultBinary Object.
+        /// The identifier for the ReadValueId_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ReadValueId_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReadValueId_Encoding_DefaultBinary);
+        public static readonly NodeId ReadValueId_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ReadValueId_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ReadRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the ReadRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ReadRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReadRequest_Encoding_DefaultBinary);
+        public static readonly NodeId ReadRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ReadRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ReadResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the ReadResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ReadResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReadResponse_Encoding_DefaultBinary);
+        public static readonly NodeId ReadResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ReadResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the HistoryReadValueId_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryReadValueId_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId HistoryReadValueId_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryReadValueId_Encoding_DefaultBinary);
+        public static readonly NodeId HistoryReadValueId_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.HistoryReadValueId_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the HistoryReadResult_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryReadResult_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId HistoryReadResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryReadResult_Encoding_DefaultBinary);
+        public static readonly NodeId HistoryReadResult_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.HistoryReadResult_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the HistoryReadDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryReadDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId HistoryReadDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryReadDetails_Encoding_DefaultBinary);
+        public static readonly NodeId HistoryReadDetails_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.HistoryReadDetails_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ReadEventDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the ReadEventDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ReadEventDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReadEventDetails_Encoding_DefaultBinary);
+        public static readonly NodeId ReadEventDetails_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ReadEventDetails_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ReadRawModifiedDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the ReadRawModifiedDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ReadRawModifiedDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReadRawModifiedDetails_Encoding_DefaultBinary);
+        public static readonly NodeId ReadRawModifiedDetails_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ReadRawModifiedDetails_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ReadProcessedDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the ReadProcessedDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ReadProcessedDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReadProcessedDetails_Encoding_DefaultBinary);
+        public static readonly NodeId ReadProcessedDetails_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ReadProcessedDetails_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ReadAtTimeDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the ReadAtTimeDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ReadAtTimeDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReadAtTimeDetails_Encoding_DefaultBinary);
+        public static readonly NodeId ReadAtTimeDetails_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ReadAtTimeDetails_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the HistoryData_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryData_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId HistoryData_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryData_Encoding_DefaultBinary);
+        public static readonly NodeId HistoryData_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.HistoryData_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ModificationInfo_Encoding_DefaultBinary Object.
+        /// The identifier for the ModificationInfo_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ModificationInfo_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ModificationInfo_Encoding_DefaultBinary);
+        public static readonly NodeId ModificationInfo_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ModificationInfo_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the HistoryModifiedData_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryModifiedData_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId HistoryModifiedData_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryModifiedData_Encoding_DefaultBinary);
+        public static readonly NodeId HistoryModifiedData_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.HistoryModifiedData_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the HistoryEvent_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryEvent_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId HistoryEvent_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryEvent_Encoding_DefaultBinary);
+        public static readonly NodeId HistoryEvent_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.HistoryEvent_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the HistoryReadRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryReadRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId HistoryReadRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryReadRequest_Encoding_DefaultBinary);
+        public static readonly NodeId HistoryReadRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.HistoryReadRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the HistoryReadResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryReadResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId HistoryReadResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryReadResponse_Encoding_DefaultBinary);
+        public static readonly NodeId HistoryReadResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.HistoryReadResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the WriteValue_Encoding_DefaultBinary Object.
+        /// The identifier for the WriteValue_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId WriteValue_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.WriteValue_Encoding_DefaultBinary);
+        public static readonly NodeId WriteValue_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.WriteValue_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the WriteRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the WriteRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId WriteRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.WriteRequest_Encoding_DefaultBinary);
+        public static readonly NodeId WriteRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.WriteRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the WriteResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the WriteResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId WriteResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.WriteResponse_Encoding_DefaultBinary);
+        public static readonly NodeId WriteResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.WriteResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the HistoryUpdateDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryUpdateDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId HistoryUpdateDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryUpdateDetails_Encoding_DefaultBinary);
+        public static readonly NodeId HistoryUpdateDetails_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.HistoryUpdateDetails_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the UpdateDataDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the UpdateDataDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId UpdateDataDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.UpdateDataDetails_Encoding_DefaultBinary);
+        public static readonly NodeId UpdateDataDetails_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.UpdateDataDetails_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the UpdateStructureDataDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the UpdateStructureDataDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId UpdateStructureDataDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.UpdateStructureDataDetails_Encoding_DefaultBinary);
+        public static readonly NodeId UpdateStructureDataDetails_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.UpdateStructureDataDetails_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the UpdateEventDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the UpdateEventDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId UpdateEventDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.UpdateEventDetails_Encoding_DefaultBinary);
+        public static readonly NodeId UpdateEventDetails_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.UpdateEventDetails_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DeleteRawModifiedDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteRawModifiedDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DeleteRawModifiedDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteRawModifiedDetails_Encoding_DefaultBinary);
+        public static readonly NodeId DeleteRawModifiedDetails_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DeleteRawModifiedDetails_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DeleteAtTimeDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteAtTimeDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DeleteAtTimeDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteAtTimeDetails_Encoding_DefaultBinary);
+        public static readonly NodeId DeleteAtTimeDetails_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DeleteAtTimeDetails_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DeleteEventDetails_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteEventDetails_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DeleteEventDetails_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteEventDetails_Encoding_DefaultBinary);
+        public static readonly NodeId DeleteEventDetails_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DeleteEventDetails_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the HistoryUpdateResult_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryUpdateResult_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId HistoryUpdateResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryUpdateResult_Encoding_DefaultBinary);
+        public static readonly NodeId HistoryUpdateResult_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.HistoryUpdateResult_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the HistoryUpdateRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryUpdateRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId HistoryUpdateRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryUpdateRequest_Encoding_DefaultBinary);
+        public static readonly NodeId HistoryUpdateRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.HistoryUpdateRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the HistoryUpdateResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryUpdateResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId HistoryUpdateResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryUpdateResponse_Encoding_DefaultBinary);
+        public static readonly NodeId HistoryUpdateResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.HistoryUpdateResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the CallMethodRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the CallMethodRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId CallMethodRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CallMethodRequest_Encoding_DefaultBinary);
+        public static readonly NodeId CallMethodRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.CallMethodRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the CallMethodResult_Encoding_DefaultBinary Object.
+        /// The identifier for the CallMethodResult_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId CallMethodResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CallMethodResult_Encoding_DefaultBinary);
+        public static readonly NodeId CallMethodResult_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.CallMethodResult_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the CallRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the CallRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId CallRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CallRequest_Encoding_DefaultBinary);
+        public static readonly NodeId CallRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.CallRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the CallResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the CallResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId CallResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CallResponse_Encoding_DefaultBinary);
+        public static readonly NodeId CallResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.CallResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the MonitoringFilter_Encoding_DefaultBinary Object.
+        /// The identifier for the MonitoringFilter_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId MonitoringFilter_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MonitoringFilter_Encoding_DefaultBinary);
+        public static readonly NodeId MonitoringFilter_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.MonitoringFilter_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DataChangeFilter_Encoding_DefaultBinary Object.
+        /// The identifier for the DataChangeFilter_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DataChangeFilter_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataChangeFilter_Encoding_DefaultBinary);
+        public static readonly NodeId DataChangeFilter_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DataChangeFilter_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the EventFilter_Encoding_DefaultBinary Object.
+        /// The identifier for the EventFilter_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId EventFilter_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EventFilter_Encoding_DefaultBinary);
+        public static readonly NodeId EventFilter_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.EventFilter_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the AggregateConfiguration_Encoding_DefaultBinary Object.
+        /// The identifier for the AggregateConfiguration_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId AggregateConfiguration_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AggregateConfiguration_Encoding_DefaultBinary);
+        public static readonly NodeId AggregateConfiguration_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.AggregateConfiguration_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the AggregateFilter_Encoding_DefaultBinary Object.
+        /// The identifier for the AggregateFilter_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId AggregateFilter_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AggregateFilter_Encoding_DefaultBinary);
+        public static readonly NodeId AggregateFilter_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.AggregateFilter_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the MonitoringFilterResult_Encoding_DefaultBinary Object.
+        /// The identifier for the MonitoringFilterResult_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId MonitoringFilterResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MonitoringFilterResult_Encoding_DefaultBinary);
+        public static readonly NodeId MonitoringFilterResult_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.MonitoringFilterResult_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the EventFilterResult_Encoding_DefaultBinary Object.
+        /// The identifier for the EventFilterResult_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId EventFilterResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EventFilterResult_Encoding_DefaultBinary);
+        public static readonly NodeId EventFilterResult_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.EventFilterResult_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the AggregateFilterResult_Encoding_DefaultBinary Object.
+        /// The identifier for the AggregateFilterResult_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId AggregateFilterResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AggregateFilterResult_Encoding_DefaultBinary);
+        public static readonly NodeId AggregateFilterResult_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.AggregateFilterResult_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the MonitoringParameters_Encoding_DefaultBinary Object.
+        /// The identifier for the MonitoringParameters_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId MonitoringParameters_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MonitoringParameters_Encoding_DefaultBinary);
+        public static readonly NodeId MonitoringParameters_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.MonitoringParameters_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the MonitoredItemCreateRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the MonitoredItemCreateRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId MonitoredItemCreateRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MonitoredItemCreateRequest_Encoding_DefaultBinary);
+        public static readonly NodeId MonitoredItemCreateRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.MonitoredItemCreateRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the MonitoredItemCreateResult_Encoding_DefaultBinary Object.
+        /// The identifier for the MonitoredItemCreateResult_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId MonitoredItemCreateResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MonitoredItemCreateResult_Encoding_DefaultBinary);
+        public static readonly NodeId MonitoredItemCreateResult_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.MonitoredItemCreateResult_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the CreateMonitoredItemsRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the CreateMonitoredItemsRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId CreateMonitoredItemsRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CreateMonitoredItemsRequest_Encoding_DefaultBinary);
+        public static readonly NodeId CreateMonitoredItemsRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.CreateMonitoredItemsRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the CreateMonitoredItemsResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the CreateMonitoredItemsResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId CreateMonitoredItemsResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CreateMonitoredItemsResponse_Encoding_DefaultBinary);
+        public static readonly NodeId CreateMonitoredItemsResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.CreateMonitoredItemsResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the MonitoredItemModifyRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the MonitoredItemModifyRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId MonitoredItemModifyRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MonitoredItemModifyRequest_Encoding_DefaultBinary);
+        public static readonly NodeId MonitoredItemModifyRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.MonitoredItemModifyRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the MonitoredItemModifyResult_Encoding_DefaultBinary Object.
+        /// The identifier for the MonitoredItemModifyResult_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId MonitoredItemModifyResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MonitoredItemModifyResult_Encoding_DefaultBinary);
+        public static readonly NodeId MonitoredItemModifyResult_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.MonitoredItemModifyResult_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ModifyMonitoredItemsRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the ModifyMonitoredItemsRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ModifyMonitoredItemsRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ModifyMonitoredItemsRequest_Encoding_DefaultBinary);
+        public static readonly NodeId ModifyMonitoredItemsRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ModifyMonitoredItemsRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ModifyMonitoredItemsResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the ModifyMonitoredItemsResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ModifyMonitoredItemsResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ModifyMonitoredItemsResponse_Encoding_DefaultBinary);
+        public static readonly NodeId ModifyMonitoredItemsResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ModifyMonitoredItemsResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the SetMonitoringModeRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the SetMonitoringModeRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId SetMonitoringModeRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SetMonitoringModeRequest_Encoding_DefaultBinary);
+        public static readonly NodeId SetMonitoringModeRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.SetMonitoringModeRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the SetMonitoringModeResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the SetMonitoringModeResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId SetMonitoringModeResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SetMonitoringModeResponse_Encoding_DefaultBinary);
+        public static readonly NodeId SetMonitoringModeResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.SetMonitoringModeResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the SetTriggeringRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the SetTriggeringRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId SetTriggeringRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SetTriggeringRequest_Encoding_DefaultBinary);
+        public static readonly NodeId SetTriggeringRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.SetTriggeringRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the SetTriggeringResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the SetTriggeringResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId SetTriggeringResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SetTriggeringResponse_Encoding_DefaultBinary);
+        public static readonly NodeId SetTriggeringResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.SetTriggeringResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DeleteMonitoredItemsRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteMonitoredItemsRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DeleteMonitoredItemsRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteMonitoredItemsRequest_Encoding_DefaultBinary);
+        public static readonly NodeId DeleteMonitoredItemsRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DeleteMonitoredItemsRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DeleteMonitoredItemsResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteMonitoredItemsResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DeleteMonitoredItemsResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteMonitoredItemsResponse_Encoding_DefaultBinary);
+        public static readonly NodeId DeleteMonitoredItemsResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DeleteMonitoredItemsResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the CreateSubscriptionRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the CreateSubscriptionRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId CreateSubscriptionRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CreateSubscriptionRequest_Encoding_DefaultBinary);
+        public static readonly NodeId CreateSubscriptionRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.CreateSubscriptionRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the CreateSubscriptionResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the CreateSubscriptionResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId CreateSubscriptionResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.CreateSubscriptionResponse_Encoding_DefaultBinary);
+        public static readonly NodeId CreateSubscriptionResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.CreateSubscriptionResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ModifySubscriptionRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the ModifySubscriptionRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ModifySubscriptionRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ModifySubscriptionRequest_Encoding_DefaultBinary);
+        public static readonly NodeId ModifySubscriptionRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ModifySubscriptionRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ModifySubscriptionResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the ModifySubscriptionResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ModifySubscriptionResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ModifySubscriptionResponse_Encoding_DefaultBinary);
+        public static readonly NodeId ModifySubscriptionResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ModifySubscriptionResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the SetPublishingModeRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the SetPublishingModeRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId SetPublishingModeRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SetPublishingModeRequest_Encoding_DefaultBinary);
+        public static readonly NodeId SetPublishingModeRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.SetPublishingModeRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the SetPublishingModeResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the SetPublishingModeResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId SetPublishingModeResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SetPublishingModeResponse_Encoding_DefaultBinary);
+        public static readonly NodeId SetPublishingModeResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.SetPublishingModeResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the NotificationMessage_Encoding_DefaultBinary Object.
+        /// The identifier for the NotificationMessage_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId NotificationMessage_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.NotificationMessage_Encoding_DefaultBinary);
+        public static readonly NodeId NotificationMessage_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.NotificationMessage_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the NotificationData_Encoding_DefaultBinary Object.
+        /// The identifier for the NotificationData_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId NotificationData_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.NotificationData_Encoding_DefaultBinary);
+        public static readonly NodeId NotificationData_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.NotificationData_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DataChangeNotification_Encoding_DefaultBinary Object.
+        /// The identifier for the DataChangeNotification_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DataChangeNotification_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataChangeNotification_Encoding_DefaultBinary);
+        public static readonly NodeId DataChangeNotification_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DataChangeNotification_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the MonitoredItemNotification_Encoding_DefaultBinary Object.
+        /// The identifier for the MonitoredItemNotification_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId MonitoredItemNotification_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.MonitoredItemNotification_Encoding_DefaultBinary);
+        public static readonly NodeId MonitoredItemNotification_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.MonitoredItemNotification_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the EventNotificationList_Encoding_DefaultBinary Object.
+        /// The identifier for the EventNotificationList_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId EventNotificationList_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EventNotificationList_Encoding_DefaultBinary);
+        public static readonly NodeId EventNotificationList_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.EventNotificationList_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the EventFieldList_Encoding_DefaultBinary Object.
+        /// The identifier for the EventFieldList_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId EventFieldList_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EventFieldList_Encoding_DefaultBinary);
+        public static readonly NodeId EventFieldList_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.EventFieldList_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the HistoryEventFieldList_Encoding_DefaultBinary Object.
+        /// The identifier for the HistoryEventFieldList_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId HistoryEventFieldList_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.HistoryEventFieldList_Encoding_DefaultBinary);
+        public static readonly NodeId HistoryEventFieldList_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.HistoryEventFieldList_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the StatusChangeNotification_Encoding_DefaultBinary Object.
+        /// The identifier for the StatusChangeNotification_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId StatusChangeNotification_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.StatusChangeNotification_Encoding_DefaultBinary);
+        public static readonly NodeId StatusChangeNotification_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.StatusChangeNotification_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the SubscriptionAcknowledgement_Encoding_DefaultBinary Object.
+        /// The identifier for the SubscriptionAcknowledgement_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId SubscriptionAcknowledgement_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SubscriptionAcknowledgement_Encoding_DefaultBinary);
+        public static readonly NodeId SubscriptionAcknowledgement_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.SubscriptionAcknowledgement_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the PublishRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the PublishRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId PublishRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.PublishRequest_Encoding_DefaultBinary);
+        public static readonly NodeId PublishRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.PublishRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the PublishResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the PublishResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId PublishResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.PublishResponse_Encoding_DefaultBinary);
+        public static readonly NodeId PublishResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.PublishResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the RepublishRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the RepublishRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId RepublishRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RepublishRequest_Encoding_DefaultBinary);
+        public static readonly NodeId RepublishRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.RepublishRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the RepublishResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the RepublishResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId RepublishResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RepublishResponse_Encoding_DefaultBinary);
+        public static readonly NodeId RepublishResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.RepublishResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the TransferResult_Encoding_DefaultBinary Object.
+        /// The identifier for the TransferResult_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId TransferResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.TransferResult_Encoding_DefaultBinary);
+        public static readonly NodeId TransferResult_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.TransferResult_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the TransferSubscriptionsRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the TransferSubscriptionsRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId TransferSubscriptionsRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.TransferSubscriptionsRequest_Encoding_DefaultBinary);
+        public static readonly NodeId TransferSubscriptionsRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.TransferSubscriptionsRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the TransferSubscriptionsResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the TransferSubscriptionsResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId TransferSubscriptionsResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.TransferSubscriptionsResponse_Encoding_DefaultBinary);
+        public static readonly NodeId TransferSubscriptionsResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.TransferSubscriptionsResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DeleteSubscriptionsRequest_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteSubscriptionsRequest_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DeleteSubscriptionsRequest_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteSubscriptionsRequest_Encoding_DefaultBinary);
+        public static readonly NodeId DeleteSubscriptionsRequest_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DeleteSubscriptionsRequest_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DeleteSubscriptionsResponse_Encoding_DefaultBinary Object.
+        /// The identifier for the DeleteSubscriptionsResponse_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DeleteSubscriptionsResponse_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DeleteSubscriptionsResponse_Encoding_DefaultBinary);
+        public static readonly NodeId DeleteSubscriptionsResponse_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DeleteSubscriptionsResponse_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the BuildInfo_Encoding_DefaultBinary Object.
+        /// The identifier for the BuildInfo_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId BuildInfo_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BuildInfo_Encoding_DefaultBinary);
+        public static readonly NodeId BuildInfo_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.BuildInfo_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the RedundantServerDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the RedundantServerDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId RedundantServerDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.RedundantServerDataType_Encoding_DefaultBinary);
+        public static readonly NodeId RedundantServerDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.RedundantServerDataType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the EndpointUrlListDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the EndpointUrlListDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId EndpointUrlListDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EndpointUrlListDataType_Encoding_DefaultBinary);
+        public static readonly NodeId EndpointUrlListDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.EndpointUrlListDataType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the NetworkGroupDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the NetworkGroupDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId NetworkGroupDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.NetworkGroupDataType_Encoding_DefaultBinary);
+        public static readonly NodeId NetworkGroupDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.NetworkGroupDataType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the SamplingIntervalDiagnosticsDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the SamplingIntervalDiagnosticsDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId SamplingIntervalDiagnosticsDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SamplingIntervalDiagnosticsDataType_Encoding_DefaultBinary);
+        public static readonly NodeId SamplingIntervalDiagnosticsDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.SamplingIntervalDiagnosticsDataType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ServerDiagnosticsSummaryDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the ServerDiagnosticsSummaryDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ServerDiagnosticsSummaryDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ServerDiagnosticsSummaryDataType_Encoding_DefaultBinary);
+        public static readonly NodeId ServerDiagnosticsSummaryDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ServerDiagnosticsSummaryDataType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ServerStatusDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the ServerStatusDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ServerStatusDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ServerStatusDataType_Encoding_DefaultBinary);
+        public static readonly NodeId ServerStatusDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ServerStatusDataType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the SessionDiagnosticsDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the SessionDiagnosticsDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId SessionDiagnosticsDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SessionDiagnosticsDataType_Encoding_DefaultBinary);
+        public static readonly NodeId SessionDiagnosticsDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.SessionDiagnosticsDataType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the SessionSecurityDiagnosticsDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the SessionSecurityDiagnosticsDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId SessionSecurityDiagnosticsDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SessionSecurityDiagnosticsDataType_Encoding_DefaultBinary);
+        public static readonly NodeId SessionSecurityDiagnosticsDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.SessionSecurityDiagnosticsDataType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ServiceCounterDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the ServiceCounterDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ServiceCounterDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ServiceCounterDataType_Encoding_DefaultBinary);
+        public static readonly NodeId ServiceCounterDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ServiceCounterDataType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the StatusResult_Encoding_DefaultBinary Object.
+        /// The identifier for the StatusResult_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId StatusResult_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.StatusResult_Encoding_DefaultBinary);
+        public static readonly NodeId StatusResult_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.StatusResult_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the SubscriptionDiagnosticsDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the SubscriptionDiagnosticsDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId SubscriptionDiagnosticsDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SubscriptionDiagnosticsDataType_Encoding_DefaultBinary);
+        public static readonly NodeId SubscriptionDiagnosticsDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.SubscriptionDiagnosticsDataType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ModelChangeStructureDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the ModelChangeStructureDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ModelChangeStructureDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ModelChangeStructureDataType_Encoding_DefaultBinary);
+        public static readonly NodeId ModelChangeStructureDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ModelChangeStructureDataType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the SemanticChangeStructureDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the SemanticChangeStructureDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId SemanticChangeStructureDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SemanticChangeStructureDataType_Encoding_DefaultBinary);
+        public static readonly NodeId SemanticChangeStructureDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.SemanticChangeStructureDataType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the Range_Encoding_DefaultBinary Object.
+        /// The identifier for the Range_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId Range_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.Range_Encoding_DefaultBinary);
+        public static readonly NodeId Range_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.Range_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the EUInformation_Encoding_DefaultBinary Object.
+        /// The identifier for the EUInformation_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId EUInformation_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EUInformation_Encoding_DefaultBinary);
+        public static readonly NodeId EUInformation_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.EUInformation_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ComplexNumberType_Encoding_DefaultBinary Object.
+        /// The identifier for the ComplexNumberType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ComplexNumberType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ComplexNumberType_Encoding_DefaultBinary);
+        public static readonly NodeId ComplexNumberType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ComplexNumberType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the DoubleComplexNumberType_Encoding_DefaultBinary Object.
+        /// The identifier for the DoubleComplexNumberType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId DoubleComplexNumberType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DoubleComplexNumberType_Encoding_DefaultBinary);
+        public static readonly NodeId DoubleComplexNumberType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DoubleComplexNumberType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the AxisInformation_Encoding_DefaultBinary Object.
+        /// The identifier for the AxisInformation_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId AxisInformation_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AxisInformation_Encoding_DefaultBinary);
+        public static readonly NodeId AxisInformation_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.AxisInformation_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the XVType_Encoding_DefaultBinary Object.
+        /// The identifier for the XVType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId XVType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.XVType_Encoding_DefaultBinary);
+        public static readonly NodeId XVType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.XVType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ProgramDiagnosticDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the ProgramDiagnosticDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ProgramDiagnosticDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ProgramDiagnosticDataType_Encoding_DefaultBinary);
+        public static readonly NodeId ProgramDiagnosticDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ProgramDiagnosticDataType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the Annotation_Encoding_DefaultBinary Object.
+        /// The identifier for the Annotation_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId Annotation_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.Annotation_Encoding_DefaultBinary);
+        public static readonly NodeId Annotation_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.Annotation_Encoding_DefaultJson);
     }
     #endregion
 
@@ -39238,6 +41648,11 @@ namespace Opc.Ua
         /// The identifier for the AuditConditionSilenceEventType ObjectType.
         /// </summary>
         public static readonly NodeId AuditConditionSilenceEventType = new NodeId(Opc.Ua.ObjectTypes.AuditConditionSilenceEventType);
+
+        /// <summary>
+        /// The identifier for the AuditConditionResetEventType ObjectType.
+        /// </summary>
+        public static readonly NodeId AuditConditionResetEventType = new NodeId(Opc.Ua.ObjectTypes.AuditConditionResetEventType);
 
         /// <summary>
         /// The identifier for the AuditConditionOutOfServiceEventType ObjectType.
@@ -39845,6 +42260,11 @@ namespace Opc.Ua
         public static readonly NodeId DataTypeDictionaryType_NamespaceUri = new NodeId(Opc.Ua.Variables.DataTypeDictionaryType_NamespaceUri);
 
         /// <summary>
+        /// The identifier for the DataTypeDictionaryType_Deprecated Variable.
+        /// </summary>
+        public static readonly NodeId DataTypeDictionaryType_Deprecated = new NodeId(Opc.Ua.Variables.DataTypeDictionaryType_Deprecated);
+
+        /// <summary>
         /// The identifier for the NamingRuleType_EnumValues Variable.
         /// </summary>
         public static readonly NodeId NamingRuleType_EnumValues = new NodeId(Opc.Ua.Variables.NamingRuleType_EnumValues);
@@ -40035,6 +42455,11 @@ namespace Opc.Ua
         public static readonly NodeId MaxStringLength = new NodeId(Opc.Ua.Variables.MaxStringLength);
 
         /// <summary>
+        /// The identifier for the MaxCharacters Variable.
+        /// </summary>
+        public static readonly NodeId MaxCharacters = new NodeId(Opc.Ua.Variables.MaxCharacters);
+
+        /// <summary>
         /// The identifier for the MaxByteStringLength Variable.
         /// </summary>
         public static readonly NodeId MaxByteStringLength = new NodeId(Opc.Ua.Variables.MaxByteStringLength);
@@ -40088,6 +42513,11 @@ namespace Opc.Ua
         /// The identifier for the ServerType_NamespaceArray Variable.
         /// </summary>
         public static readonly NodeId ServerType_NamespaceArray = new NodeId(Opc.Ua.Variables.ServerType_NamespaceArray);
+
+        /// <summary>
+        /// The identifier for the ServerType_UrisVersion Variable.
+        /// </summary>
+        public static readonly NodeId ServerType_UrisVersion = new NodeId(Opc.Ua.Variables.ServerType_UrisVersion);
 
         /// <summary>
         /// The identifier for the ServerType_ServerStatus Variable.
@@ -44120,41 +46550,6 @@ namespace Opc.Ua
         public static readonly NodeId WellKnownRole_Supervisor_RemoveEndpoint_InputArguments = new NodeId(Opc.Ua.Variables.WellKnownRole_Supervisor_RemoveEndpoint_InputArguments);
 
         /// <summary>
-        /// The identifier for the WellKnownRole_SecurityAdmin_Identities Variable.
-        /// </summary>
-        public static readonly NodeId WellKnownRole_SecurityAdmin_Identities = new NodeId(Opc.Ua.Variables.WellKnownRole_SecurityAdmin_Identities);
-
-        /// <summary>
-        /// The identifier for the WellKnownRole_SecurityAdmin_AddIdentity_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId WellKnownRole_SecurityAdmin_AddIdentity_InputArguments = new NodeId(Opc.Ua.Variables.WellKnownRole_SecurityAdmin_AddIdentity_InputArguments);
-
-        /// <summary>
-        /// The identifier for the WellKnownRole_SecurityAdmin_RemoveIdentity_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId WellKnownRole_SecurityAdmin_RemoveIdentity_InputArguments = new NodeId(Opc.Ua.Variables.WellKnownRole_SecurityAdmin_RemoveIdentity_InputArguments);
-
-        /// <summary>
-        /// The identifier for the WellKnownRole_SecurityAdmin_AddApplication_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId WellKnownRole_SecurityAdmin_AddApplication_InputArguments = new NodeId(Opc.Ua.Variables.WellKnownRole_SecurityAdmin_AddApplication_InputArguments);
-
-        /// <summary>
-        /// The identifier for the WellKnownRole_SecurityAdmin_RemoveApplication_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId WellKnownRole_SecurityAdmin_RemoveApplication_InputArguments = new NodeId(Opc.Ua.Variables.WellKnownRole_SecurityAdmin_RemoveApplication_InputArguments);
-
-        /// <summary>
-        /// The identifier for the WellKnownRole_SecurityAdmin_AddEndpoint_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId WellKnownRole_SecurityAdmin_AddEndpoint_InputArguments = new NodeId(Opc.Ua.Variables.WellKnownRole_SecurityAdmin_AddEndpoint_InputArguments);
-
-        /// <summary>
-        /// The identifier for the WellKnownRole_SecurityAdmin_RemoveEndpoint_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId WellKnownRole_SecurityAdmin_RemoveEndpoint_InputArguments = new NodeId(Opc.Ua.Variables.WellKnownRole_SecurityAdmin_RemoveEndpoint_InputArguments);
-
-        /// <summary>
         /// The identifier for the WellKnownRole_ConfigureAdmin_Identities Variable.
         /// </summary>
         public static readonly NodeId WellKnownRole_ConfigureAdmin_Identities = new NodeId(Opc.Ua.Variables.WellKnownRole_ConfigureAdmin_Identities);
@@ -44188,6 +46583,41 @@ namespace Opc.Ua
         /// The identifier for the WellKnownRole_ConfigureAdmin_RemoveEndpoint_InputArguments Variable.
         /// </summary>
         public static readonly NodeId WellKnownRole_ConfigureAdmin_RemoveEndpoint_InputArguments = new NodeId(Opc.Ua.Variables.WellKnownRole_ConfigureAdmin_RemoveEndpoint_InputArguments);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_Identities Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_SecurityAdmin_Identities = new NodeId(Opc.Ua.Variables.WellKnownRole_SecurityAdmin_Identities);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_AddIdentity_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_SecurityAdmin_AddIdentity_InputArguments = new NodeId(Opc.Ua.Variables.WellKnownRole_SecurityAdmin_AddIdentity_InputArguments);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_RemoveIdentity_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_SecurityAdmin_RemoveIdentity_InputArguments = new NodeId(Opc.Ua.Variables.WellKnownRole_SecurityAdmin_RemoveIdentity_InputArguments);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_AddApplication_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_SecurityAdmin_AddApplication_InputArguments = new NodeId(Opc.Ua.Variables.WellKnownRole_SecurityAdmin_AddApplication_InputArguments);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_RemoveApplication_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_SecurityAdmin_RemoveApplication_InputArguments = new NodeId(Opc.Ua.Variables.WellKnownRole_SecurityAdmin_RemoveApplication_InputArguments);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_AddEndpoint_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_SecurityAdmin_AddEndpoint_InputArguments = new NodeId(Opc.Ua.Variables.WellKnownRole_SecurityAdmin_AddEndpoint_InputArguments);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_RemoveEndpoint_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_SecurityAdmin_RemoveEndpoint_InputArguments = new NodeId(Opc.Ua.Variables.WellKnownRole_SecurityAdmin_RemoveEndpoint_InputArguments);
 
         /// <summary>
         /// The identifier for the DataItemType_Definition Variable.
@@ -49605,16 +52035,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_Selections = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_Selections);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_SelectionDescriptions Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_SelectionDescriptions = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_SelectionDescriptions);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_RestrictToList Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_RestrictToList = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_RestrictToList);
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Status_State Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Status_State = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Status_State);
@@ -50208,16 +52628,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_Selections Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_Selections = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_Selections);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_SelectionDescriptions Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_SelectionDescriptions = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_SelectionDescriptions);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_RestrictToList Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_RestrictToList = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_RestrictToList);
 
         /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Status_State Variable.
@@ -52058,16 +54468,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_TransportProfileUri_Selections Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_TransportProfileUri_Selections = new NodeId(Opc.Ua.Variables.PubSubConnectionType_TransportProfileUri_Selections);
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_TransportProfileUri_SelectionDescriptions Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_TransportProfileUri_SelectionDescriptions = new NodeId(Opc.Ua.Variables.PubSubConnectionType_TransportProfileUri_SelectionDescriptions);
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_TransportProfileUri_RestrictToList Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_TransportProfileUri_RestrictToList = new NodeId(Opc.Ua.Variables.PubSubConnectionType_TransportProfileUri_RestrictToList);
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_SecurityMode Variable.
@@ -56740,16 +59140,6 @@ namespace Opc.Ua
         public static readonly NodeId UadpConnectionType_TransportProfileUri_Selections = new NodeId(Opc.Ua.Variables.UadpConnectionType_TransportProfileUri_Selections);
 
         /// <summary>
-        /// The identifier for the UadpConnectionType_TransportProfileUri_SelectionDescriptions Variable.
-        /// </summary>
-        public static readonly NodeId UadpConnectionType_TransportProfileUri_SelectionDescriptions = new NodeId(Opc.Ua.Variables.UadpConnectionType_TransportProfileUri_SelectionDescriptions);
-
-        /// <summary>
-        /// The identifier for the UadpConnectionType_TransportProfileUri_RestrictToList Variable.
-        /// </summary>
-        public static readonly NodeId UadpConnectionType_TransportProfileUri_RestrictToList = new NodeId(Opc.Ua.Variables.UadpConnectionType_TransportProfileUri_RestrictToList);
-
-        /// <summary>
         /// The identifier for the UadpConnectionType_WriterGroupName_Placeholder_SecurityMode Variable.
         /// </summary>
         public static readonly NodeId UadpConnectionType_WriterGroupName_Placeholder_SecurityMode = new NodeId(Opc.Ua.Variables.UadpConnectionType_WriterGroupName_Placeholder_SecurityMode);
@@ -57653,16 +60043,6 @@ namespace Opc.Ua
         /// The identifier for the UadpConnectionType_NetworkInterface_Selections Variable.
         /// </summary>
         public static readonly NodeId UadpConnectionType_NetworkInterface_Selections = new NodeId(Opc.Ua.Variables.UadpConnectionType_NetworkInterface_Selections);
-
-        /// <summary>
-        /// The identifier for the UadpConnectionType_NetworkInterface_SelectionDescriptions Variable.
-        /// </summary>
-        public static readonly NodeId UadpConnectionType_NetworkInterface_SelectionDescriptions = new NodeId(Opc.Ua.Variables.UadpConnectionType_NetworkInterface_SelectionDescriptions);
-
-        /// <summary>
-        /// The identifier for the UadpConnectionType_NetworkInterface_RestrictToList Variable.
-        /// </summary>
-        public static readonly NodeId UadpConnectionType_NetworkInterface_RestrictToList = new NodeId(Opc.Ua.Variables.UadpConnectionType_NetworkInterface_RestrictToList);
 
         /// <summary>
         /// The identifier for the UadpConnectionType_TimeToLive Variable.
@@ -59063,16 +61443,6 @@ namespace Opc.Ua
         /// The identifier for the BrokerConnectionType_TransportProfileUri_Selections Variable.
         /// </summary>
         public static readonly NodeId BrokerConnectionType_TransportProfileUri_Selections = new NodeId(Opc.Ua.Variables.BrokerConnectionType_TransportProfileUri_Selections);
-
-        /// <summary>
-        /// The identifier for the BrokerConnectionType_TransportProfileUri_SelectionDescriptions Variable.
-        /// </summary>
-        public static readonly NodeId BrokerConnectionType_TransportProfileUri_SelectionDescriptions = new NodeId(Opc.Ua.Variables.BrokerConnectionType_TransportProfileUri_SelectionDescriptions);
-
-        /// <summary>
-        /// The identifier for the BrokerConnectionType_TransportProfileUri_RestrictToList Variable.
-        /// </summary>
-        public static readonly NodeId BrokerConnectionType_TransportProfileUri_RestrictToList = new NodeId(Opc.Ua.Variables.BrokerConnectionType_TransportProfileUri_RestrictToList);
 
         /// <summary>
         /// The identifier for the BrokerConnectionType_WriterGroupName_Placeholder_SecurityMode Variable.
@@ -61305,14 +63675,24 @@ namespace Opc.Ua
         public static readonly NodeId NodeClass_EnumValues = new NodeId(Opc.Ua.Variables.NodeClass_EnumValues);
 
         /// <summary>
-        /// The identifier for the PermissionType_EnumValues Variable.
+        /// The identifier for the PermissionType_OptionSetValues Variable.
         /// </summary>
-        public static readonly NodeId PermissionType_EnumValues = new NodeId(Opc.Ua.Variables.PermissionType_EnumValues);
+        public static readonly NodeId PermissionType_OptionSetValues = new NodeId(Opc.Ua.Variables.PermissionType_OptionSetValues);
 
         /// <summary>
-        /// The identifier for the AccessRestrictionType_EnumValues Variable.
+        /// The identifier for the AccessLevelType_OptionSetValues Variable.
         /// </summary>
-        public static readonly NodeId AccessRestrictionType_EnumValues = new NodeId(Opc.Ua.Variables.AccessRestrictionType_EnumValues);
+        public static readonly NodeId AccessLevelType_OptionSetValues = new NodeId(Opc.Ua.Variables.AccessLevelType_OptionSetValues);
+
+        /// <summary>
+        /// The identifier for the EventNotifierType_OptionSetValues Variable.
+        /// </summary>
+        public static readonly NodeId EventNotifierType_OptionSetValues = new NodeId(Opc.Ua.Variables.EventNotifierType_OptionSetValues);
+
+        /// <summary>
+        /// The identifier for the AccessRestrictionType_OptionSetValues Variable.
+        /// </summary>
+        public static readonly NodeId AccessRestrictionType_OptionSetValues = new NodeId(Opc.Ua.Variables.AccessRestrictionType_OptionSetValues);
 
         /// <summary>
         /// The identifier for the StructureType_EnumStrings Variable.
@@ -61345,9 +63725,9 @@ namespace Opc.Ua
         public static readonly NodeId NodeAttributesMask_EnumValues = new NodeId(Opc.Ua.Variables.NodeAttributesMask_EnumValues);
 
         /// <summary>
-        /// The identifier for the AttributeWriteMask_EnumValues Variable.
+        /// The identifier for the AttributeWriteMask_OptionSetValues Variable.
         /// </summary>
-        public static readonly NodeId AttributeWriteMask_EnumValues = new NodeId(Opc.Ua.Variables.AttributeWriteMask_EnumValues);
+        public static readonly NodeId AttributeWriteMask_OptionSetValues = new NodeId(Opc.Ua.Variables.AttributeWriteMask_OptionSetValues);
 
         /// <summary>
         /// The identifier for the BrowseDirection_EnumStrings Variable.
@@ -61420,396 +63800,6 @@ namespace Opc.Ua
         public static readonly NodeId ExceptionDeviationFormat_EnumStrings = new NodeId(Opc.Ua.Variables.ExceptionDeviationFormat_EnumStrings);
 
         /// <summary>
-        /// The identifier for the OpcUa_XmlSchema Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_NamespaceUri Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_NamespaceUri = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_NamespaceUri);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_KeyValuePair Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_KeyValuePair = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_KeyValuePair);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_IdentityMappingRuleType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_IdentityMappingRuleType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_IdentityMappingRuleType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_TrustListDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_TrustListDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_TrustListDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ConfigurationVersionDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_ConfigurationVersionDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ConfigurationVersionDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_DataSetMetaDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_DataSetMetaDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DataSetMetaDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_FieldMetaData Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_FieldMetaData = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_FieldMetaData);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_DataTypeDescription Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_DataTypeDescription = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DataTypeDescription);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_StructureDescription Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_StructureDescription = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_StructureDescription);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EnumDescription Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_EnumDescription = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EnumDescription);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_PublishedVariableDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_PublishedVariableDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_PublishedVariableDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_FieldTargetDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_FieldTargetDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_FieldTargetDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_RolePermissionType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_RolePermissionType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_RolePermissionType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_DataTypeDefinition Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_DataTypeDefinition = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DataTypeDefinition);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_StructureField Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_StructureField = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_StructureField);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_StructureDefinition Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_StructureDefinition = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_StructureDefinition);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EnumDefinition Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_EnumDefinition = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EnumDefinition);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_Argument Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_Argument = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_Argument);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EnumValueType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_EnumValueType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EnumValueType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EnumField Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_EnumField = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EnumField);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_OptionSet Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_OptionSet = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_OptionSet);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_Union Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_Union = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_Union);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_TimeZoneDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_TimeZoneDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_TimeZoneDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ApplicationDescription Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_ApplicationDescription = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ApplicationDescription);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ServerOnNetwork Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_ServerOnNetwork = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ServerOnNetwork);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_UserTokenPolicy Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_UserTokenPolicy = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_UserTokenPolicy);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EndpointDescription Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_EndpointDescription = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EndpointDescription);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_RegisteredServer Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_RegisteredServer = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_RegisteredServer);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_DiscoveryConfiguration Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_DiscoveryConfiguration = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DiscoveryConfiguration);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_MdnsDiscoveryConfiguration Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_MdnsDiscoveryConfiguration = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_MdnsDiscoveryConfiguration);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_SignedSoftwareCertificate Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_SignedSoftwareCertificate = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_SignedSoftwareCertificate);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_UserIdentityToken Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_UserIdentityToken = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_UserIdentityToken);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_AnonymousIdentityToken Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_AnonymousIdentityToken = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_AnonymousIdentityToken);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_UserNameIdentityToken Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_UserNameIdentityToken = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_UserNameIdentityToken);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_X509IdentityToken Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_X509IdentityToken = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_X509IdentityToken);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_IssuedIdentityToken Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_IssuedIdentityToken = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_IssuedIdentityToken);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_AddNodesItem Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_AddNodesItem = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_AddNodesItem);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_AddReferencesItem Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_AddReferencesItem = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_AddReferencesItem);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_DeleteNodesItem Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_DeleteNodesItem = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DeleteNodesItem);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_DeleteReferencesItem Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_DeleteReferencesItem = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DeleteReferencesItem);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_RelativePathElement Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_RelativePathElement = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_RelativePathElement);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_RelativePath Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_RelativePath = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_RelativePath);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EndpointConfiguration Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_EndpointConfiguration = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EndpointConfiguration);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ContentFilterElement Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_ContentFilterElement = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ContentFilterElement);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ContentFilter Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_ContentFilter = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ContentFilter);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_FilterOperand Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_FilterOperand = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_FilterOperand);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ElementOperand Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_ElementOperand = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ElementOperand);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_LiteralOperand Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_LiteralOperand = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_LiteralOperand);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_AttributeOperand Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_AttributeOperand = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_AttributeOperand);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_SimpleAttributeOperand Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_SimpleAttributeOperand = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_SimpleAttributeOperand);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_HistoryEvent Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_HistoryEvent = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_HistoryEvent);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_MonitoringFilter Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_MonitoringFilter = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_MonitoringFilter);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EventFilter Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_EventFilter = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EventFilter);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_AggregateConfiguration Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_AggregateConfiguration = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_AggregateConfiguration);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_HistoryEventFieldList Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_HistoryEventFieldList = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_HistoryEventFieldList);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_BuildInfo Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_BuildInfo = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_BuildInfo);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_RedundantServerDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_RedundantServerDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_RedundantServerDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EndpointUrlListDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_EndpointUrlListDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EndpointUrlListDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_NetworkGroupDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_NetworkGroupDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_NetworkGroupDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_SamplingIntervalDiagnosticsDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_SamplingIntervalDiagnosticsDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_SamplingIntervalDiagnosticsDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ServerDiagnosticsSummaryDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_ServerDiagnosticsSummaryDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ServerDiagnosticsSummaryDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ServerStatusDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_ServerStatusDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ServerStatusDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_SessionDiagnosticsDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_SessionDiagnosticsDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_SessionDiagnosticsDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_SessionSecurityDiagnosticsDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_SessionSecurityDiagnosticsDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_SessionSecurityDiagnosticsDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ServiceCounterDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_ServiceCounterDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ServiceCounterDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_StatusResult Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_StatusResult = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_StatusResult);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_SubscriptionDiagnosticsDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_SubscriptionDiagnosticsDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_SubscriptionDiagnosticsDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ModelChangeStructureDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_ModelChangeStructureDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ModelChangeStructureDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_SemanticChangeStructureDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_SemanticChangeStructureDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_SemanticChangeStructureDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_Range Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_Range = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_Range);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EUInformation Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_EUInformation = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EUInformation);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ComplexNumberType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_ComplexNumberType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ComplexNumberType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_DoubleComplexNumberType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_DoubleComplexNumberType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DoubleComplexNumberType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_AxisInformation Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_AxisInformation = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_AxisInformation);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_XVType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_XVType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_XVType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ProgramDiagnosticDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_ProgramDiagnosticDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ProgramDiagnosticDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_Annotation Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_Annotation = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_Annotation);
-
-        /// <summary>
         /// The identifier for the OpcUa_BinarySchema Variable.
         /// </summary>
         public static readonly NodeId OpcUa_BinarySchema = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema);
@@ -61818,6 +63808,11 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_BinarySchema_NamespaceUri Variable.
         /// </summary>
         public static readonly NodeId OpcUa_BinarySchema_NamespaceUri = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_NamespaceUri);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_Deprecated Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_Deprecated = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_Deprecated);
 
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_KeyValuePair Variable.
@@ -62198,6 +64193,401 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_BinarySchema_Annotation Variable.
         /// </summary>
         public static readonly NodeId OpcUa_BinarySchema_Annotation = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_Annotation);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_NamespaceUri Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_NamespaceUri = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_NamespaceUri);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_Deprecated Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_Deprecated = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_Deprecated);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_KeyValuePair Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_KeyValuePair = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_KeyValuePair);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_IdentityMappingRuleType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_IdentityMappingRuleType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_IdentityMappingRuleType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_TrustListDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_TrustListDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_TrustListDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ConfigurationVersionDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_ConfigurationVersionDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ConfigurationVersionDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataSetMetaDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_DataSetMetaDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DataSetMetaDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_FieldMetaData Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_FieldMetaData = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_FieldMetaData);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataTypeDescription Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_DataTypeDescription = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DataTypeDescription);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_StructureDescription Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_StructureDescription = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_StructureDescription);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EnumDescription Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_EnumDescription = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EnumDescription);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_PublishedVariableDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_PublishedVariableDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_PublishedVariableDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_FieldTargetDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_FieldTargetDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_FieldTargetDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_RolePermissionType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_RolePermissionType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_RolePermissionType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataTypeDefinition Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_DataTypeDefinition = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DataTypeDefinition);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_StructureField Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_StructureField = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_StructureField);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_StructureDefinition Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_StructureDefinition = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_StructureDefinition);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EnumDefinition Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_EnumDefinition = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EnumDefinition);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_Argument Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_Argument = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_Argument);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EnumValueType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_EnumValueType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EnumValueType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EnumField Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_EnumField = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EnumField);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_OptionSet Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_OptionSet = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_OptionSet);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_Union Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_Union = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_Union);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_TimeZoneDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_TimeZoneDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_TimeZoneDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ApplicationDescription Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_ApplicationDescription = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ApplicationDescription);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ServerOnNetwork Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_ServerOnNetwork = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ServerOnNetwork);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_UserTokenPolicy Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_UserTokenPolicy = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_UserTokenPolicy);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EndpointDescription Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_EndpointDescription = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EndpointDescription);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_RegisteredServer Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_RegisteredServer = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_RegisteredServer);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DiscoveryConfiguration Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_DiscoveryConfiguration = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DiscoveryConfiguration);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_MdnsDiscoveryConfiguration Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_MdnsDiscoveryConfiguration = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_MdnsDiscoveryConfiguration);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_SignedSoftwareCertificate Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_SignedSoftwareCertificate = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_SignedSoftwareCertificate);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_UserIdentityToken Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_UserIdentityToken = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_UserIdentityToken);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_AnonymousIdentityToken Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_AnonymousIdentityToken = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_AnonymousIdentityToken);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_UserNameIdentityToken Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_UserNameIdentityToken = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_UserNameIdentityToken);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_X509IdentityToken Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_X509IdentityToken = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_X509IdentityToken);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_IssuedIdentityToken Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_IssuedIdentityToken = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_IssuedIdentityToken);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_AddNodesItem Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_AddNodesItem = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_AddNodesItem);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_AddReferencesItem Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_AddReferencesItem = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_AddReferencesItem);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DeleteNodesItem Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_DeleteNodesItem = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DeleteNodesItem);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DeleteReferencesItem Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_DeleteReferencesItem = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DeleteReferencesItem);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_RelativePathElement Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_RelativePathElement = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_RelativePathElement);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_RelativePath Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_RelativePath = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_RelativePath);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EndpointConfiguration Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_EndpointConfiguration = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EndpointConfiguration);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ContentFilterElement Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_ContentFilterElement = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ContentFilterElement);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ContentFilter Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_ContentFilter = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ContentFilter);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_FilterOperand Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_FilterOperand = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_FilterOperand);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ElementOperand Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_ElementOperand = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ElementOperand);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_LiteralOperand Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_LiteralOperand = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_LiteralOperand);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_AttributeOperand Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_AttributeOperand = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_AttributeOperand);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_SimpleAttributeOperand Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_SimpleAttributeOperand = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_SimpleAttributeOperand);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_HistoryEvent Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_HistoryEvent = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_HistoryEvent);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_MonitoringFilter Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_MonitoringFilter = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_MonitoringFilter);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EventFilter Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_EventFilter = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EventFilter);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_AggregateConfiguration Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_AggregateConfiguration = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_AggregateConfiguration);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_HistoryEventFieldList Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_HistoryEventFieldList = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_HistoryEventFieldList);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_BuildInfo Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_BuildInfo = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_BuildInfo);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_RedundantServerDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_RedundantServerDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_RedundantServerDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EndpointUrlListDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_EndpointUrlListDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EndpointUrlListDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_NetworkGroupDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_NetworkGroupDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_NetworkGroupDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_SamplingIntervalDiagnosticsDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_SamplingIntervalDiagnosticsDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_SamplingIntervalDiagnosticsDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ServerDiagnosticsSummaryDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_ServerDiagnosticsSummaryDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ServerDiagnosticsSummaryDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ServerStatusDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_ServerStatusDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ServerStatusDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_SessionDiagnosticsDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_SessionDiagnosticsDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_SessionDiagnosticsDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_SessionSecurityDiagnosticsDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_SessionSecurityDiagnosticsDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_SessionSecurityDiagnosticsDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ServiceCounterDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_ServiceCounterDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ServiceCounterDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_StatusResult Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_StatusResult = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_StatusResult);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_SubscriptionDiagnosticsDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_SubscriptionDiagnosticsDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_SubscriptionDiagnosticsDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ModelChangeStructureDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_ModelChangeStructureDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ModelChangeStructureDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_SemanticChangeStructureDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_SemanticChangeStructureDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_SemanticChangeStructureDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_Range Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_Range = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_Range);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EUInformation Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_EUInformation = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EUInformation);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ComplexNumberType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_ComplexNumberType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ComplexNumberType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DoubleComplexNumberType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_DoubleComplexNumberType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DoubleComplexNumberType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_AxisInformation Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_AxisInformation = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_AxisInformation);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_XVType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_XVType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_XVType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ProgramDiagnosticDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_ProgramDiagnosticDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ProgramDiagnosticDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_Annotation Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_Annotation = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_Annotation);
     }
     #endregion
 
@@ -62432,6 +64822,11 @@ namespace Opc.Ua
         /// The BrowseName for the AccessHistoryEventsCapability component.
         /// </summary>
         public const string AccessHistoryEventsCapability = "AccessHistoryEventsCapability";
+
+        /// <summary>
+        /// The BrowseName for the AccessLevelType component.
+        /// </summary>
+        public const string AccessLevelType = "AccessLevelType";
 
         /// <summary>
         /// The BrowseName for the AccessRestrictionType component.
@@ -63112,6 +65507,11 @@ namespace Opc.Ua
         /// The BrowseName for the AuditConditionOutOfServiceEventType component.
         /// </summary>
         public const string AuditConditionOutOfServiceEventType = "AuditConditionOutOfServiceEventType";
+
+        /// <summary>
+        /// The BrowseName for the AuditConditionResetEventType component.
+        /// </summary>
+        public const string AuditConditionResetEventType = "AuditConditionResetEventType";
 
         /// <summary>
         /// The BrowseName for the AuditConditionRespondEventType component.
@@ -64219,6 +66619,11 @@ namespace Opc.Ua
         public const string DefaultInputValues = "DefaultInputValues";
 
         /// <summary>
+        /// The BrowseName for the DefaultJson component.
+        /// </summary>
+        public const string DefaultJson = "Default JSON";
+
+        /// <summary>
         /// The BrowseName for the DefaultResponse component.
         /// </summary>
         public const string DefaultResponse = "DefaultResponse";
@@ -64362,6 +66767,11 @@ namespace Opc.Ua
         /// The BrowseName for the DeleteSubscriptionsResponse component.
         /// </summary>
         public const string DeleteSubscriptionsResponse = "DeleteSubscriptionsResponse";
+
+        /// <summary>
+        /// The BrowseName for the Deprecated component.
+        /// </summary>
+        public const string Deprecated = "Deprecated";
 
         /// <summary>
         /// The BrowseName for the DeviceFailureEventType component.
@@ -64642,6 +67052,11 @@ namespace Opc.Ua
         /// The BrowseName for the EventNotificationsCount component.
         /// </summary>
         public const string EventNotificationsCount = "EventNotificationsCount";
+
+        /// <summary>
+        /// The BrowseName for the EventNotifierType component.
+        /// </summary>
+        public const string EventNotifierType = "EventNotifierType";
 
         /// <summary>
         /// The BrowseName for the EventQueueOverFlowCount component.
@@ -65662,6 +68077,11 @@ namespace Opc.Ua
         /// The BrowseName for the MaxByteStringLength component.
         /// </summary>
         public const string MaxByteStringLength = "MaxByteStringLength";
+
+        /// <summary>
+        /// The BrowseName for the MaxCharacters component.
+        /// </summary>
+        public const string MaxCharacters = "MaxCharacters";
 
         /// <summary>
         /// The BrowseName for the MaxHistoryContinuationPoints component.
@@ -68592,6 +71012,11 @@ namespace Opc.Ua
         /// The BrowseName for the UpdateStructureDataDetails component.
         /// </summary>
         public const string UpdateStructureDataDetails = "UpdateStructureDataDetails";
+
+        /// <summary>
+        /// The BrowseName for the UrisVersion component.
+        /// </summary>
+        public const string UrisVersion = "UrisVersion";
 
         /// <summary>
         /// The BrowseName for the UserIdentityToken component.

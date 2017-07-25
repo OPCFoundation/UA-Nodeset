@@ -3251,6 +3251,12 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2790</Reference>
     </References>
   </UAObjectType>
+  <UAObjectType NodeId="i=15013" BrowseName="AuditConditionResetEventType">
+    <DisplayName>AuditConditionResetEventType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=2790</Reference>
+    </References>
+  </UAObjectType>
   <UAObjectType NodeId="i=17259" BrowseName="AuditConditionOutOfServiceEventType">
     <DisplayName>AuditConditionOutOfServiceEventType</DisplayName>
     <References>

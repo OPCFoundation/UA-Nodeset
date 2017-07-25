@@ -422,6 +422,26 @@
     <opc:EnumeratedValue Name="View" Value="128" />
   </opc:EnumeratedType>
 
+  <opc:EnumeratedType Name="AccessLevelType" LengthInBits="32">
+    <opc:EnumeratedValue Name="None" Value="0" />
+    <opc:EnumeratedValue Name="CurrentRead" Value="1" />
+    <opc:EnumeratedValue Name="CurrentWrite" Value="2" />
+    <opc:EnumeratedValue Name="HistoryRead" Value="4" />
+    <opc:EnumeratedValue Name="HistoryWrite" Value="16" />
+    <opc:EnumeratedValue Name="StatusWrite" Value="32" />
+    <opc:EnumeratedValue Name="TimestampWrite" Value="64" />
+    <opc:EnumeratedValue Name="NonatomicRead" Value="65536" />
+    <opc:EnumeratedValue Name="NonatomicWrite" Value="131072" />
+    <opc:EnumeratedValue Name="WriteFullArrayOnly" Value="262144" />
+  </opc:EnumeratedType>
+
+  <opc:EnumeratedType Name="EventNotifierType" LengthInBits="32">
+    <opc:EnumeratedValue Name="None" Value="0" />
+    <opc:EnumeratedValue Name="SubscribeToEvents" Value="1" />
+    <opc:EnumeratedValue Name="HistoryRead" Value="4" />
+    <opc:EnumeratedValue Name="HistoryWrite" Value="8" />
+  </opc:EnumeratedType>
+
   <opc:StructuredType Name="RolePermissionType" BaseType="ua:ExtensionObject">
     <opc:Field Name="RoleId" TypeName="ua:NodeId" />
     <opc:Field Name="Permissions" TypeName="opc:UInt32" />

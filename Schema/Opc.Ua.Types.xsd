@@ -713,17 +713,17 @@
 
   <xs:simpleType  name="DataSetMessageContentMask">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="FieldStatusCode_1" />
-      <xs:enumeration value="FieldSourceTimestamp_2" />
-      <xs:enumeration value="FieldServerTimestamp_4" />
-      <xs:enumeration value="FieldSourcePicoSeconds_8" />
-      <xs:enumeration value="FieldServerPicoSeconds_16" />
-      <xs:enumeration value="FieldRawDataEncoding_32" />
-      <xs:enumeration value="HeaderTimestamp_65536" />
-      <xs:enumeration value="HeaderPicoSeconds_131072" />
-      <xs:enumeration value="HeaderStatusCode_262144" />
-      <xs:enumeration value="HeaderMajorVersion_524288" />
-      <xs:enumeration value="HeaderMinorVersion_1048576" />
+      <xs:element name="FieldStatusCode" type="ua:Variant" minOccurs="0" />
+      <xs:element name="FieldSourceTimestamp" type="ua:Variant" minOccurs="0" />
+      <xs:element name="FieldServerTimestamp" type="ua:Variant" minOccurs="0" />
+      <xs:element name="FieldSourcePicoSeconds" type="ua:Variant" minOccurs="0" />
+      <xs:element name="FieldServerPicoSeconds" type="ua:Variant" minOccurs="0" />
+      <xs:element name="FieldRawDataEncoding" type="ua:Variant" minOccurs="0" />
+      <xs:element name="HeaderTimestamp" type="ua:Variant" minOccurs="0" />
+      <xs:element name="HeaderPicoSeconds" type="ua:Variant" minOccurs="0" />
+      <xs:element name="HeaderStatusCode" type="ua:Variant" minOccurs="0" />
+      <xs:element name="HeaderMajorVersion" type="ua:Variant" minOccurs="0" />
+      <xs:element name="HeaderMinorVersion" type="ua:Variant" minOccurs="0" />
     </xs:restriction>
   </xs:simpleType>
   <xs:element name="DataSetMessageContentMask" type="tns:DataSetMessageContentMask" />
@@ -737,17 +737,17 @@
 
   <xs:simpleType  name="NetworkMessageContentMask">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="PublisherId_1" />
-      <xs:enumeration value="GroupHeader_2" />
-      <xs:enumeration value="GroupId_4" />
-      <xs:enumeration value="GroupVersion_8" />
-      <xs:enumeration value="NetworkMessageNumber_16" />
-      <xs:enumeration value="SequenceNumber_32" />
-      <xs:enumeration value="PayloadHeader_64" />
-      <xs:enumeration value="Timestamp_128" />
-      <xs:enumeration value="Picoseconds_256" />
-      <xs:enumeration value="DataSetClassId_512" />
-      <xs:enumeration value="PromotedFields_1024" />
+      <xs:element name="PublisherId" type="ua:Variant" minOccurs="0" />
+      <xs:element name="GroupHeader" type="ua:Variant" minOccurs="0" />
+      <xs:element name="GroupId" type="ua:Variant" minOccurs="0" />
+      <xs:element name="GroupVersion" type="ua:Variant" minOccurs="0" />
+      <xs:element name="NetworkMessageNumber" type="ua:Variant" minOccurs="0" />
+      <xs:element name="SequenceNumber" type="ua:Variant" minOccurs="0" />
+      <xs:element name="PayloadHeader" type="ua:Variant" minOccurs="0" />
+      <xs:element name="Timestamp" type="ua:Variant" minOccurs="0" />
+      <xs:element name="Picoseconds" type="ua:Variant" minOccurs="0" />
+      <xs:element name="DataSetClassId" type="ua:Variant" minOccurs="0" />
+      <xs:element name="PromotedFields" type="ua:Variant" minOccurs="0" />
     </xs:restriction>
   </xs:simpleType>
   <xs:element name="NetworkMessageContentMask" type="tns:NetworkMessageContentMask" />
@@ -918,6 +918,32 @@
     </xs:restriction>
   </xs:simpleType>
   <xs:element name="NodeClass" type="tns:NodeClass" />
+
+  <xs:simpleType  name="AccessLevelType">
+    <xs:restriction base="xs:string">
+      <xs:element name="None" type="ua:Variant" minOccurs="0" />
+      <xs:element name="CurrentRead" type="ua:Variant" minOccurs="0" />
+      <xs:element name="CurrentWrite" type="ua:Variant" minOccurs="0" />
+      <xs:element name="HistoryRead" type="ua:Variant" minOccurs="0" />
+      <xs:element name="HistoryWrite" type="ua:Variant" minOccurs="0" />
+      <xs:element name="StatusWrite" type="ua:Variant" minOccurs="0" />
+      <xs:element name="TimestampWrite" type="ua:Variant" minOccurs="0" />
+      <xs:element name="NonatomicRead" type="ua:Variant" minOccurs="0" />
+      <xs:element name="NonatomicWrite" type="ua:Variant" minOccurs="0" />
+      <xs:element name="WriteFullArrayOnly" type="ua:Variant" minOccurs="0" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="AccessLevelType" type="tns:AccessLevelType" />
+
+  <xs:simpleType  name="EventNotifierType">
+    <xs:restriction base="xs:string">
+      <xs:element name="None" type="ua:Variant" minOccurs="0" />
+      <xs:element name="SubscribeToEvents" type="ua:Variant" minOccurs="0" />
+      <xs:element name="HistoryRead" type="ua:Variant" minOccurs="0" />
+      <xs:element name="HistoryWrite" type="ua:Variant" minOccurs="0" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="EventNotifierType" type="tns:EventNotifierType" />
 
   <xs:complexType name="RolePermissionType">
     <xs:sequence>
@@ -2332,33 +2358,33 @@
       <xs:documentation>Define bits used to indicate which attributes are writable.</xs:documentation>
     </xs:annotation>
     <xs:restriction base="xs:string">
-      <xs:enumeration value="None_0" />
-      <xs:enumeration value="AccessLevel_1" />
-      <xs:enumeration value="ArrayDimensions_2" />
-      <xs:enumeration value="BrowseName_4" />
-      <xs:enumeration value="ContainsNoLoops_8" />
-      <xs:enumeration value="DataType_16" />
-      <xs:enumeration value="Description_32" />
-      <xs:enumeration value="DisplayName_64" />
-      <xs:enumeration value="EventNotifier_128" />
-      <xs:enumeration value="Executable_256" />
-      <xs:enumeration value="Historizing_512" />
-      <xs:enumeration value="InverseName_1024" />
-      <xs:enumeration value="IsAbstract_2048" />
-      <xs:enumeration value="MinimumSamplingInterval_4096" />
-      <xs:enumeration value="NodeClass_8192" />
-      <xs:enumeration value="NodeId_16384" />
-      <xs:enumeration value="Symmetric_32768" />
-      <xs:enumeration value="UserAccessLevel_65536" />
-      <xs:enumeration value="UserExecutable_131072" />
-      <xs:enumeration value="UserWriteMask_262144" />
-      <xs:enumeration value="ValueRank_524288" />
-      <xs:enumeration value="WriteMask_1048576" />
-      <xs:enumeration value="ValueForVariableType_2097152" />
-      <xs:enumeration value="DataTypeDefinition_4194304" />
-      <xs:enumeration value="RolePermissions_8388608" />
-      <xs:enumeration value="AccessRestrictions_16777216" />
-      <xs:enumeration value="AccessLevelEx_33554432" />
+      <xs:element name="None" type="ua:Variant" minOccurs="0" />
+      <xs:element name="AccessLevel" type="ua:Variant" minOccurs="0" />
+      <xs:element name="ArrayDimensions" type="ua:Variant" minOccurs="0" />
+      <xs:element name="BrowseName" type="ua:Variant" minOccurs="0" />
+      <xs:element name="ContainsNoLoops" type="ua:Variant" minOccurs="0" />
+      <xs:element name="DataType" type="ua:Variant" minOccurs="0" />
+      <xs:element name="Description" type="ua:Variant" minOccurs="0" />
+      <xs:element name="DisplayName" type="ua:Variant" minOccurs="0" />
+      <xs:element name="EventNotifier" type="ua:Variant" minOccurs="0" />
+      <xs:element name="Executable" type="ua:Variant" minOccurs="0" />
+      <xs:element name="Historizing" type="ua:Variant" minOccurs="0" />
+      <xs:element name="InverseName" type="ua:Variant" minOccurs="0" />
+      <xs:element name="IsAbstract" type="ua:Variant" minOccurs="0" />
+      <xs:element name="MinimumSamplingInterval" type="ua:Variant" minOccurs="0" />
+      <xs:element name="NodeClass" type="ua:Variant" minOccurs="0" />
+      <xs:element name="NodeId" type="ua:Variant" minOccurs="0" />
+      <xs:element name="Symmetric" type="ua:Variant" minOccurs="0" />
+      <xs:element name="UserAccessLevel" type="ua:Variant" minOccurs="0" />
+      <xs:element name="UserExecutable" type="ua:Variant" minOccurs="0" />
+      <xs:element name="UserWriteMask" type="ua:Variant" minOccurs="0" />
+      <xs:element name="ValueRank" type="ua:Variant" minOccurs="0" />
+      <xs:element name="WriteMask" type="ua:Variant" minOccurs="0" />
+      <xs:element name="ValueForVariableType" type="ua:Variant" minOccurs="0" />
+      <xs:element name="DataTypeDefinition" type="ua:Variant" minOccurs="0" />
+      <xs:element name="RolePermissions" type="ua:Variant" minOccurs="0" />
+      <xs:element name="AccessRestrictions" type="ua:Variant" minOccurs="0" />
+      <xs:element name="AccessLevelEx" type="ua:Variant" minOccurs="0" />
     </xs:restriction>
   </xs:simpleType>
   <xs:element name="AttributeWriteMask" type="tns:AttributeWriteMask" />

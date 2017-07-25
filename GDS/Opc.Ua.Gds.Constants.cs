@@ -616,14 +616,19 @@ namespace Opc.Ua.Gds
         public const uint Directory_CertificateGroups_DefaultUserTokenGroup_TrustList = 684;
 
         /// <summary>
+        /// The identifier for the ApplicationRecordDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ApplicationRecordDataType_Encoding_DefaultBinary = 134;
+
+        /// <summary>
         /// The identifier for the ApplicationRecordDataType_Encoding_DefaultXml Object.
         /// </summary>
         public const uint ApplicationRecordDataType_Encoding_DefaultXml = 127;
 
         /// <summary>
-        /// The identifier for the ApplicationRecordDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the ApplicationRecordDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ApplicationRecordDataType_Encoding_DefaultBinary = 134;
+        public const uint ApplicationRecordDataType_Encoding_DefaultJson = 8001;
     }
     #endregion
 
@@ -1891,21 +1896,6 @@ namespace Opc.Ua.Gds
         public const uint Directory_GetCertificateStatus_OutputArguments = 227;
 
         /// <summary>
-        /// The identifier for the OpcUaGds_XmlSchema Variable.
-        /// </summary>
-        public const uint OpcUaGds_XmlSchema = 128;
-
-        /// <summary>
-        /// The identifier for the OpcUaGds_XmlSchema_NamespaceUri Variable.
-        /// </summary>
-        public const uint OpcUaGds_XmlSchema_NamespaceUri = 130;
-
-        /// <summary>
-        /// The identifier for the OpcUaGds_XmlSchema_ApplicationRecordDataType Variable.
-        /// </summary>
-        public const uint OpcUaGds_XmlSchema_ApplicationRecordDataType = 131;
-
-        /// <summary>
         /// The identifier for the OpcUaGds_BinarySchema Variable.
         /// </summary>
         public const uint OpcUaGds_BinarySchema = 135;
@@ -1916,9 +1906,34 @@ namespace Opc.Ua.Gds
         public const uint OpcUaGds_BinarySchema_NamespaceUri = 137;
 
         /// <summary>
+        /// The identifier for the OpcUaGds_BinarySchema_Deprecated Variable.
+        /// </summary>
+        public const uint OpcUaGds_BinarySchema_Deprecated = 8002;
+
+        /// <summary>
         /// The identifier for the OpcUaGds_BinarySchema_ApplicationRecordDataType Variable.
         /// </summary>
         public const uint OpcUaGds_BinarySchema_ApplicationRecordDataType = 138;
+
+        /// <summary>
+        /// The identifier for the OpcUaGds_XmlSchema Variable.
+        /// </summary>
+        public const uint OpcUaGds_XmlSchema = 128;
+
+        /// <summary>
+        /// The identifier for the OpcUaGds_XmlSchema_NamespaceUri Variable.
+        /// </summary>
+        public const uint OpcUaGds_XmlSchema_NamespaceUri = 130;
+
+        /// <summary>
+        /// The identifier for the OpcUaGds_XmlSchema_Deprecated Variable.
+        /// </summary>
+        public const uint OpcUaGds_XmlSchema_Deprecated = 8004;
+
+        /// <summary>
+        /// The identifier for the OpcUaGds_XmlSchema_ApplicationRecordDataType Variable.
+        /// </summary>
+        public const uint OpcUaGds_XmlSchema_ApplicationRecordDataType = 131;
     }
     #endregion
 
@@ -2501,14 +2516,19 @@ namespace Opc.Ua.Gds
         public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultUserTokenGroup_TrustList = new ExpandedNodeId(Opc.Ua.Gds.Objects.Directory_CertificateGroups_DefaultUserTokenGroup_TrustList, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <summary>
+        /// The identifier for the ApplicationRecordDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly ExpandedNodeId ApplicationRecordDataType_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Gds.Objects.ApplicationRecordDataType_Encoding_DefaultBinary, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <summary>
         /// The identifier for the ApplicationRecordDataType_Encoding_DefaultXml Object.
         /// </summary>
         public static readonly ExpandedNodeId ApplicationRecordDataType_Encoding_DefaultXml = new ExpandedNodeId(Opc.Ua.Gds.Objects.ApplicationRecordDataType_Encoding_DefaultXml, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <summary>
-        /// The identifier for the ApplicationRecordDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the ApplicationRecordDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly ExpandedNodeId ApplicationRecordDataType_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Gds.Objects.ApplicationRecordDataType_Encoding_DefaultBinary, Opc.Ua.Gds.Namespaces.OpcUaGds);
+        public static readonly ExpandedNodeId ApplicationRecordDataType_Encoding_DefaultJson = new ExpandedNodeId(Opc.Ua.Gds.Objects.ApplicationRecordDataType_Encoding_DefaultJson, Opc.Ua.Gds.Namespaces.OpcUaGds);
     }
     #endregion
 
@@ -3776,21 +3796,6 @@ namespace Opc.Ua.Gds
         public static readonly ExpandedNodeId Directory_GetCertificateStatus_OutputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_GetCertificateStatus_OutputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <summary>
-        /// The identifier for the OpcUaGds_XmlSchema Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaGds_XmlSchema = new ExpandedNodeId(Opc.Ua.Gds.Variables.OpcUaGds_XmlSchema, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <summary>
-        /// The identifier for the OpcUaGds_XmlSchema_NamespaceUri Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaGds_XmlSchema_NamespaceUri = new ExpandedNodeId(Opc.Ua.Gds.Variables.OpcUaGds_XmlSchema_NamespaceUri, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <summary>
-        /// The identifier for the OpcUaGds_XmlSchema_ApplicationRecordDataType Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaGds_XmlSchema_ApplicationRecordDataType = new ExpandedNodeId(Opc.Ua.Gds.Variables.OpcUaGds_XmlSchema_ApplicationRecordDataType, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <summary>
         /// The identifier for the OpcUaGds_BinarySchema Variable.
         /// </summary>
         public static readonly ExpandedNodeId OpcUaGds_BinarySchema = new ExpandedNodeId(Opc.Ua.Gds.Variables.OpcUaGds_BinarySchema, Opc.Ua.Gds.Namespaces.OpcUaGds);
@@ -3801,9 +3806,34 @@ namespace Opc.Ua.Gds
         public static readonly ExpandedNodeId OpcUaGds_BinarySchema_NamespaceUri = new ExpandedNodeId(Opc.Ua.Gds.Variables.OpcUaGds_BinarySchema_NamespaceUri, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <summary>
+        /// The identifier for the OpcUaGds_BinarySchema_Deprecated Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaGds_BinarySchema_Deprecated = new ExpandedNodeId(Opc.Ua.Gds.Variables.OpcUaGds_BinarySchema_Deprecated, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <summary>
         /// The identifier for the OpcUaGds_BinarySchema_ApplicationRecordDataType Variable.
         /// </summary>
         public static readonly ExpandedNodeId OpcUaGds_BinarySchema_ApplicationRecordDataType = new ExpandedNodeId(Opc.Ua.Gds.Variables.OpcUaGds_BinarySchema_ApplicationRecordDataType, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <summary>
+        /// The identifier for the OpcUaGds_XmlSchema Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaGds_XmlSchema = new ExpandedNodeId(Opc.Ua.Gds.Variables.OpcUaGds_XmlSchema, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <summary>
+        /// The identifier for the OpcUaGds_XmlSchema_NamespaceUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaGds_XmlSchema_NamespaceUri = new ExpandedNodeId(Opc.Ua.Gds.Variables.OpcUaGds_XmlSchema_NamespaceUri, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <summary>
+        /// The identifier for the OpcUaGds_XmlSchema_Deprecated Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaGds_XmlSchema_Deprecated = new ExpandedNodeId(Opc.Ua.Gds.Variables.OpcUaGds_XmlSchema_Deprecated, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <summary>
+        /// The identifier for the OpcUaGds_XmlSchema_ApplicationRecordDataType Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaGds_XmlSchema_ApplicationRecordDataType = new ExpandedNodeId(Opc.Ua.Gds.Variables.OpcUaGds_XmlSchema_ApplicationRecordDataType, Opc.Ua.Gds.Namespaces.OpcUaGds);
     }
     #endregion
 

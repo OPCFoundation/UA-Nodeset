@@ -125,9 +125,9 @@
     <DisplayName>DataSetMessageContentMask</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=15533</Reference>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
-    <Definition Name="DataSetMessageContentMask">
+    <Definition Name="DataSetMessageContentMask" IsOptionSet="true">
       <Field Name="FieldStatusCode" Value="1" />
       <Field Name="FieldSourceTimestamp" Value="2" />
       <Field Name="FieldServerTimestamp" Value="4" />
@@ -166,49 +166,9 @@
           <Text>FieldServerTimestamp</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
           <Locale>
           </Locale>
           <Text>FieldSourcePicoSeconds</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
         </LocalizedText>
         <LocalizedText>
           <Locale>
@@ -216,69 +176,84 @@
           <Text>FieldServerPicoSeconds</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+          <Locale>
+          </Locale>
+          <Text>FieldRawDataEncoding</Text>
         </LocalizedText>
         <LocalizedText>
           <Locale>
           </Locale>
-          <Text>FieldRawDataEncoding</Text>
+          <Text>Reserved</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Reserved</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Reserved</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Reserved</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Reserved</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Reserved</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Reserved</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Reserved</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Reserved</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Reserved</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>HeaderTimestamp</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>HeaderPicoSeconds</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>HeaderStatusCode</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>HeaderMajorVersion</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>HeaderMinorVersion</Text>
         </LocalizedText>
       </ListOfLocalizedText>
     </Value>
@@ -287,9 +262,9 @@
     <DisplayName>NetworkMessageContentMask</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=17291</Reference>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
-    <Definition Name="NetworkMessageContentMask">
+    <Definition Name="NetworkMessageContentMask" IsOptionSet="true">
       <Field Name="PublisherId" Value="1" />
       <Field Name="GroupHeader" Value="2" />
       <Field Name="GroupId" Value="4" />
@@ -328,49 +303,9 @@
           <Text>GroupId</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
           <Locale>
           </Locale>
           <Text>GroupVersion</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
         </LocalizedText>
         <LocalizedText>
           <Locale>
@@ -378,198 +313,34 @@
           <Text>NetworkMessageNumber</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
           <Locale>
           </Locale>
           <Text>SequenceNumber</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-        </LocalizedText>
-        <LocalizedText>
-          <Locale p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
-          <Text p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+          <Locale>
+          </Locale>
+          <Text>PayloadHeader</Text>
         </LocalizedText>
         <LocalizedText>
           <Locale>
           </Locale>
-          <Text>PayloadHeader</Text>
+          <Text>Timestamp</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Picoseconds</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>DataSetClassId</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>PromotedFields</Text>
         </LocalizedText>
       </ListOfLocalizedText>
     </Value>
@@ -1268,8 +1039,6 @@
     <DisplayName>TransportProfileUri</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=17706</Reference>
-      <Reference ReferenceType="HasProperty">i=17707</Reference>
-      <Reference ReferenceType="HasProperty">i=17295</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=16309</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=14417</Reference>
@@ -1277,22 +1046,6 @@
   </UAVariable>
   <UAVariable NodeId="i=17706" BrowseName="Selections" ParentNodeId="i=17292" ValueRank="1">
     <DisplayName>Selections</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=17292</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=17707" BrowseName="SelectionDescriptions" ParentNodeId="i=17292" DataType="LocalizedText" ValueRank="1">
-    <DisplayName>SelectionDescriptions</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=17292</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=17295" BrowseName="RestrictToList" ParentNodeId="i=17292" DataType="Boolean">
-    <DisplayName>RestrictToList</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -4498,8 +4251,6 @@
     <DisplayName>TransportProfileUri</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=17710</Reference>
-      <Reference ReferenceType="HasProperty">i=17711</Reference>
-      <Reference ReferenceType="HasProperty">i=17309</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=16309</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=14209</Reference>
@@ -4507,22 +4258,6 @@
   </UAVariable>
   <UAVariable NodeId="i=17710" BrowseName="Selections" ParentNodeId="i=17306" ValueRank="1">
     <DisplayName>Selections</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=17306</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=17711" BrowseName="SelectionDescriptions" ParentNodeId="i=17306" DataType="LocalizedText" ValueRank="1">
-    <DisplayName>SelectionDescriptions</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=17306</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=17309" BrowseName="RestrictToList" ParentNodeId="i=17306" DataType="Boolean">
-    <DisplayName>RestrictToList</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -11091,8 +10826,6 @@
     <DisplayName>NetworkInterface</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=17714</Reference>
-      <Reference ReferenceType="HasProperty">i=17715</Reference>
-      <Reference ReferenceType="HasProperty">i=17429</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=16309</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=14943</Reference>
@@ -11100,22 +10833,6 @@
   </UAVariable>
   <UAVariable NodeId="i=17714" BrowseName="Selections" ParentNodeId="i=15330" ValueRank="1">
     <DisplayName>Selections</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=15330</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=17715" BrowseName="SelectionDescriptions" ParentNodeId="i=15330" DataType="LocalizedText" ValueRank="1">
-    <DisplayName>SelectionDescriptions</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=15330</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=17429" BrowseName="RestrictToList" ParentNodeId="i=15330" DataType="Boolean">
-    <DisplayName>RestrictToList</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -12925,55 +12642,6 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=15178</Reference>
     </References>
   </UAVariable>
-  <UADataType NodeId="i=102" BrowseName="EnumField">
-    <DisplayName>EnumField</DisplayName>
-    <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=7594</Reference>
-    </References>
-    <Definition Name="EnumField">
-      <Field Name="Name" DataType="i=12" />
-    </Definition>
-  </UADataType>
-  <UAObject NodeId="i=14803" BrowseName="Default XML" SymbolicName="DefaultXml">
-    <DisplayName>Default XML</DisplayName>
-    <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=14593</Reference>
-      <Reference ReferenceType="HasDescription">i=14832</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="i=14794" BrowseName="Default XML" SymbolicName="DefaultXml">
-    <DisplayName>Default XML</DisplayName>
-    <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=14523</Reference>
-      <Reference ReferenceType="HasDescription">i=14805</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="i=14795" BrowseName="Default XML" SymbolicName="DefaultXml">
-    <DisplayName>Default XML</DisplayName>
-    <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=14524</Reference>
-      <Reference ReferenceType="HasDescription">i=14808</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="i=14319" BrowseName="Default XML" SymbolicName="DefaultXml">
-    <DisplayName>Default XML</DisplayName>
-    <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=14273</Reference>
-      <Reference ReferenceType="HasDescription">i=14320</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="i=14801" BrowseName="Default XML" SymbolicName="DefaultXml">
-    <DisplayName>Default XML</DisplayName>
-    <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=102</Reference>
-      <Reference ReferenceType="HasDescription">i=14826</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
   <UAObject NodeId="i=14847" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
     <References>
@@ -13006,11 +12674,63 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="i=14845" BrowseName="Default Binary" SymbolicName="DefaultBinary">
-    <DisplayName>Default Binary</DisplayName>
+  <UAObject NodeId="i=14803" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
     <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=102</Reference>
-      <Reference ReferenceType="HasDescription">i=14870</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=14593</Reference>
+      <Reference ReferenceType="HasDescription">i=14832</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=14794" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=14523</Reference>
+      <Reference ReferenceType="HasDescription">i=14805</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=14795" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=14524</Reference>
+      <Reference ReferenceType="HasDescription">i=14808</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=14319" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=14273</Reference>
+      <Reference ReferenceType="HasDescription">i=14320</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=15049" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=14593</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=15050" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=14523</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=15051" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=14524</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=15060" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=14273</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>

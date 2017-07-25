@@ -3236,7 +3236,7 @@ namespace Opc.Ua
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)][Flags]
     public enum DataSetMessageContentMask
     {
         /// <summary>
@@ -3400,7 +3400,7 @@ namespace Opc.Ua
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)][Flags]
     public enum NetworkMessageContentMask
     {
         /// <summary>
@@ -4997,7 +4997,7 @@ namespace Opc.Ua
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)][Flags]
     public enum PermissionType
     {
         /// <summary>
@@ -5117,6 +5117,116 @@ namespace Opc.Ua
     #endif
     #endregion
 
+    #region AccessLevelType Enumeration
+    #if (!OPCUA_EXCLUDE_AccessLevelType)
+    /// <summary>
+    /// A description for the AccessLevelType DataType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)][Flags]
+    public enum AccessLevelType
+    {
+        /// <summary>
+        /// A description for the None field.
+        /// </summary>
+        [EnumMember(Value = "None_0")]
+        None = 0,
+
+        /// <summary>
+        /// A description for the CurrentRead field.
+        /// </summary>
+        [EnumMember(Value = "CurrentRead_1")]
+        CurrentRead = 1,
+
+        /// <summary>
+        /// A description for the CurrentWrite field.
+        /// </summary>
+        [EnumMember(Value = "CurrentWrite_2")]
+        CurrentWrite = 2,
+
+        /// <summary>
+        /// A description for the HistoryRead field.
+        /// </summary>
+        [EnumMember(Value = "HistoryRead_4")]
+        HistoryRead = 4,
+
+        /// <summary>
+        /// A description for the HistoryWrite field.
+        /// </summary>
+        [EnumMember(Value = "HistoryWrite_16")]
+        HistoryWrite = 16,
+
+        /// <summary>
+        /// A description for the StatusWrite field.
+        /// </summary>
+        [EnumMember(Value = "StatusWrite_32")]
+        StatusWrite = 32,
+
+        /// <summary>
+        /// A description for the TimestampWrite field.
+        /// </summary>
+        [EnumMember(Value = "TimestampWrite_64")]
+        TimestampWrite = 64,
+
+        /// <summary>
+        /// A description for the NonatomicRead field.
+        /// </summary>
+        [EnumMember(Value = "NonatomicRead_65536")]
+        NonatomicRead = 65536,
+
+        /// <summary>
+        /// A description for the NonatomicWrite field.
+        /// </summary>
+        [EnumMember(Value = "NonatomicWrite_131072")]
+        NonatomicWrite = 131072,
+
+        /// <summary>
+        /// A description for the WriteFullArrayOnly field.
+        /// </summary>
+        [EnumMember(Value = "WriteFullArrayOnly_262144")]
+        WriteFullArrayOnly = 262144,
+    }
+    #endif
+    #endregion
+
+    #region EventNotifierType Enumeration
+    #if (!OPCUA_EXCLUDE_EventNotifierType)
+    /// <summary>
+    /// A description for the EventNotifierType DataType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)][Flags]
+    public enum EventNotifierType
+    {
+        /// <summary>
+        /// A description for the None field.
+        /// </summary>
+        [EnumMember(Value = "None_0")]
+        None = 0,
+
+        /// <summary>
+        /// A description for the SubscribeToEvents field.
+        /// </summary>
+        [EnumMember(Value = "SubscribeToEvents_1")]
+        SubscribeToEvents = 1,
+
+        /// <summary>
+        /// A description for the HistoryRead field.
+        /// </summary>
+        [EnumMember(Value = "HistoryRead_4")]
+        HistoryRead = 4,
+
+        /// <summary>
+        /// A description for the HistoryWrite field.
+        /// </summary>
+        [EnumMember(Value = "HistoryWrite_8")]
+        HistoryWrite = 8,
+    }
+    #endif
+    #endregion
+
     #region AccessRestrictionType Enumeration
     #if (!OPCUA_EXCLUDE_AccessRestrictionType)
     /// <summary>
@@ -5124,7 +5234,7 @@ namespace Opc.Ua
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)][Flags]
     public enum AccessRestrictionType
     {
         /// <summary>
@@ -23794,7 +23904,7 @@ namespace Opc.Ua
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)][Flags]
     public enum AttributeWriteMask
     {
         /// <summary>

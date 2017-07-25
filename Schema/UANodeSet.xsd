@@ -420,6 +420,7 @@
     <xs:attribute name="Name" type="QualifiedName" use="required"></xs:attribute>
     <xs:attribute name="SymbolicName" type="SymbolicName" use="optional" default=""></xs:attribute>
     <xs:attribute name="IsUnion" type="xs:boolean" use="optional" default="false"></xs:attribute>
+    <xs:attribute name="IsOptionSet" type="xs:boolean" use="optional" default="false"></xs:attribute>
   </xs:complexType>
 
   <xs:complexType name="DataTypeField">

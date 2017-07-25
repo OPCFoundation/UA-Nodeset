@@ -97,24 +97,24 @@ OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_NodeClass_EnumeratedTyp
 typedef enum _OpcUa_PermissionType
 {
     OpcUa_PermissionType_None                 = 0,
-    OpcUa_PermissionType_Browse               = 1,
-    OpcUa_PermissionType_ReadRolePermissions  = 2,
-    OpcUa_PermissionType_WriteAttribute       = 4,
-    OpcUa_PermissionType_WriteRolePermissions = 8,
-    OpcUa_PermissionType_WriteHistorizing     = 16,
-    OpcUa_PermissionType_Read                 = 32,
-    OpcUa_PermissionType_Write                = 64,
-    OpcUa_PermissionType_ReadHistory          = 128,
-    OpcUa_PermissionType_InsertHistory        = 256,
-    OpcUa_PermissionType_ModifyHistory        = 512,
-    OpcUa_PermissionType_DeleteHistory        = 1024,
-    OpcUa_PermissionType_ReceiveEvents        = 2048,
-    OpcUa_PermissionType_Call                 = 4096,
-    OpcUa_PermissionType_AddReference         = 8192,
-    OpcUa_PermissionType_RemoveReference      = 16384,
-    OpcUa_PermissionType_DeleteNode           = 32768,
-    OpcUa_PermissionType_AddNode              = 65536,
-    OpcUa_PermissionType_All                  = 131071
+    OpcUa_PermissionType_Browse               = 0,
+    OpcUa_PermissionType_ReadRolePermissions  = 0,
+    OpcUa_PermissionType_WriteAttribute       = 0,
+    OpcUa_PermissionType_WriteRolePermissions = 0,
+    OpcUa_PermissionType_WriteHistorizing     = 0,
+    OpcUa_PermissionType_Read                 = 0,
+    OpcUa_PermissionType_Write                = 0,
+    OpcUa_PermissionType_ReadHistory          = 0,
+    OpcUa_PermissionType_InsertHistory        = 0,
+    OpcUa_PermissionType_ModifyHistory        = 0,
+    OpcUa_PermissionType_DeleteHistory        = 0,
+    OpcUa_PermissionType_ReceiveEvents        = 0,
+    OpcUa_PermissionType_Call                 = 0,
+    OpcUa_PermissionType_AddReference         = 0,
+    OpcUa_PermissionType_RemoveReference      = 0,
+    OpcUa_PermissionType_DeleteNode           = 0,
+    OpcUa_PermissionType_AddNode              = 0,
+    OpcUa_PermissionType_All                  = 0
 #if OPCUA_FORCE_INT32_ENUMS
     ,_OpcUa_PermissionType_MaxEnumerationValue = OpcUa_Int32_Max
 #endif
@@ -128,6 +128,58 @@ OpcUa_PermissionType;
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_PermissionType_EnumeratedType;
 #endif
 
+#ifndef OPCUA_EXCLUDE_AccessLevelType
+/*============================================================================
+ * The AccessLevelType enumeration.
+ *===========================================================================*/
+typedef enum _OpcUa_AccessLevelType
+{
+    OpcUa_AccessLevelType_None               = 0,
+    OpcUa_AccessLevelType_CurrentRead        = 0,
+    OpcUa_AccessLevelType_CurrentWrite       = 0,
+    OpcUa_AccessLevelType_HistoryRead        = 0,
+    OpcUa_AccessLevelType_HistoryWrite       = 0,
+    OpcUa_AccessLevelType_StatusWrite        = 0,
+    OpcUa_AccessLevelType_TimestampWrite     = 0,
+    OpcUa_AccessLevelType_NonatomicRead      = 0,
+    OpcUa_AccessLevelType_NonatomicWrite     = 0,
+    OpcUa_AccessLevelType_WriteFullArrayOnly = 0
+#if OPCUA_FORCE_INT32_ENUMS
+    ,_OpcUa_AccessLevelType_MaxEnumerationValue = OpcUa_Int32_Max
+#endif
+}
+OpcUa_AccessLevelType;
+
+#define OpcUa_AccessLevelType_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_AccessLevelType_None)
+
+#define OpcUa_AccessLevelType_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_AccessLevelType_None)
+
+OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_AccessLevelType_EnumeratedType;
+#endif
+
+#ifndef OPCUA_EXCLUDE_EventNotifierType
+/*============================================================================
+ * The EventNotifierType enumeration.
+ *===========================================================================*/
+typedef enum _OpcUa_EventNotifierType
+{
+    OpcUa_EventNotifierType_None              = 0,
+    OpcUa_EventNotifierType_SubscribeToEvents = 0,
+    OpcUa_EventNotifierType_HistoryRead       = 0,
+    OpcUa_EventNotifierType_HistoryWrite      = 0
+#if OPCUA_FORCE_INT32_ENUMS
+    ,_OpcUa_EventNotifierType_MaxEnumerationValue = OpcUa_Int32_Max
+#endif
+}
+OpcUa_EventNotifierType;
+
+#define OpcUa_EventNotifierType_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_EventNotifierType_None)
+
+#define OpcUa_EventNotifierType_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_EventNotifierType_None)
+
+OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_EventNotifierType_EnumeratedType;
+#endif
+
 #ifndef OPCUA_EXCLUDE_AccessRestrictionType
 /*============================================================================
  * The AccessRestrictionType enumeration.
@@ -135,9 +187,9 @@ OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_PermissionType_Enumerat
 typedef enum _OpcUa_AccessRestrictionType
 {
     OpcUa_AccessRestrictionType_None               = 0,
-    OpcUa_AccessRestrictionType_SigningRequired    = 1,
-    OpcUa_AccessRestrictionType_EncryptionRequired = 2,
-    OpcUa_AccessRestrictionType_SessionRequired    = 4
+    OpcUa_AccessRestrictionType_SigningRequired    = 0,
+    OpcUa_AccessRestrictionType_EncryptionRequired = 0,
+    OpcUa_AccessRestrictionType_SessionRequired    = 0
 #if OPCUA_FORCE_INT32_ENUMS
     ,_OpcUa_AccessRestrictionType_MaxEnumerationValue = OpcUa_Int32_Max
 #endif
@@ -2775,32 +2827,32 @@ OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_DeleteReferencesRespons
 typedef enum _OpcUa_AttributeWriteMask
 {
     OpcUa_AttributeWriteMask_None                    = 0,
-    OpcUa_AttributeWriteMask_AccessLevel             = 1,
-    OpcUa_AttributeWriteMask_ArrayDimensions         = 2,
-    OpcUa_AttributeWriteMask_BrowseName              = 4,
-    OpcUa_AttributeWriteMask_ContainsNoLoops         = 8,
-    OpcUa_AttributeWriteMask_DataType                = 16,
-    OpcUa_AttributeWriteMask_Description             = 32,
-    OpcUa_AttributeWriteMask_DisplayName             = 64,
-    OpcUa_AttributeWriteMask_EventNotifier           = 128,
-    OpcUa_AttributeWriteMask_Executable              = 256,
-    OpcUa_AttributeWriteMask_Historizing             = 512,
-    OpcUa_AttributeWriteMask_InverseName             = 1024,
-    OpcUa_AttributeWriteMask_IsAbstract              = 2048,
-    OpcUa_AttributeWriteMask_MinimumSamplingInterval = 4096,
-    OpcUa_AttributeWriteMask_NodeClass               = 8192,
-    OpcUa_AttributeWriteMask_NodeId                  = 16384,
-    OpcUa_AttributeWriteMask_Symmetric               = 32768,
-    OpcUa_AttributeWriteMask_UserAccessLevel         = 65536,
-    OpcUa_AttributeWriteMask_UserExecutable          = 131072,
-    OpcUa_AttributeWriteMask_UserWriteMask           = 262144,
-    OpcUa_AttributeWriteMask_ValueRank               = 524288,
-    OpcUa_AttributeWriteMask_WriteMask               = 1048576,
-    OpcUa_AttributeWriteMask_ValueForVariableType    = 2097152,
-    OpcUa_AttributeWriteMask_DataTypeDefinition      = 4194304,
-    OpcUa_AttributeWriteMask_RolePermissions         = 8388608,
-    OpcUa_AttributeWriteMask_AccessRestrictions      = 16777216,
-    OpcUa_AttributeWriteMask_AccessLevelEx           = 33554432
+    OpcUa_AttributeWriteMask_AccessLevel             = 0,
+    OpcUa_AttributeWriteMask_ArrayDimensions         = 0,
+    OpcUa_AttributeWriteMask_BrowseName              = 0,
+    OpcUa_AttributeWriteMask_ContainsNoLoops         = 0,
+    OpcUa_AttributeWriteMask_DataType                = 0,
+    OpcUa_AttributeWriteMask_Description             = 0,
+    OpcUa_AttributeWriteMask_DisplayName             = 0,
+    OpcUa_AttributeWriteMask_EventNotifier           = 0,
+    OpcUa_AttributeWriteMask_Executable              = 0,
+    OpcUa_AttributeWriteMask_Historizing             = 0,
+    OpcUa_AttributeWriteMask_InverseName             = 0,
+    OpcUa_AttributeWriteMask_IsAbstract              = 0,
+    OpcUa_AttributeWriteMask_MinimumSamplingInterval = 0,
+    OpcUa_AttributeWriteMask_NodeClass               = 0,
+    OpcUa_AttributeWriteMask_NodeId                  = 0,
+    OpcUa_AttributeWriteMask_Symmetric               = 0,
+    OpcUa_AttributeWriteMask_UserAccessLevel         = 0,
+    OpcUa_AttributeWriteMask_UserExecutable          = 0,
+    OpcUa_AttributeWriteMask_UserWriteMask           = 0,
+    OpcUa_AttributeWriteMask_ValueRank               = 0,
+    OpcUa_AttributeWriteMask_WriteMask               = 0,
+    OpcUa_AttributeWriteMask_ValueForVariableType    = 0,
+    OpcUa_AttributeWriteMask_DataTypeDefinition      = 0,
+    OpcUa_AttributeWriteMask_RolePermissions         = 0,
+    OpcUa_AttributeWriteMask_AccessRestrictions      = 0,
+    OpcUa_AttributeWriteMask_AccessLevelEx           = 0
 #if OPCUA_FORCE_INT32_ENUMS
     ,_OpcUa_AttributeWriteMask_MaxEnumerationValue = OpcUa_Int32_Max
 #endif
