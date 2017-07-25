@@ -202,6 +202,31 @@ namespace Opc.Ua.Fdi5
         public const uint ActionSet = 183;
 
         /// <summary>
+        /// The identifier for the RegistrationParameters_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint RegistrationParameters_Encoding_DefaultBinary = 118;
+
+        /// <summary>
+        /// The identifier for the RegisteredNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint RegisteredNode_Encoding_DefaultBinary = 119;
+
+        /// <summary>
+        /// The identifier for the RegisterNodesResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint RegisterNodesResult_Encoding_DefaultBinary = 120;
+
+        /// <summary>
+        /// The identifier for the TransferIncident_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint TransferIncident_Encoding_DefaultBinary = 121;
+
+        /// <summary>
+        /// The identifier for the ApplyResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ApplyResult_Encoding_DefaultBinary = 122;
+
+        /// <summary>
         /// The identifier for the RegistrationParameters_Encoding_DefaultXml Object.
         /// </summary>
         public const uint RegistrationParameters_Encoding_DefaultXml = 95;
@@ -227,29 +252,29 @@ namespace Opc.Ua.Fdi5
         public const uint ApplyResult_Encoding_DefaultXml = 99;
 
         /// <summary>
-        /// The identifier for the RegistrationParameters_Encoding_DefaultBinary Object.
+        /// The identifier for the RegistrationParameters_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint RegistrationParameters_Encoding_DefaultBinary = 118;
+        public const uint RegistrationParameters_Encoding_DefaultJson = 8001;
 
         /// <summary>
-        /// The identifier for the RegisteredNode_Encoding_DefaultBinary Object.
+        /// The identifier for the RegisteredNode_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint RegisteredNode_Encoding_DefaultBinary = 119;
+        public const uint RegisteredNode_Encoding_DefaultJson = 8002;
 
         /// <summary>
-        /// The identifier for the RegisterNodesResult_Encoding_DefaultBinary Object.
+        /// The identifier for the RegisterNodesResult_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint RegisterNodesResult_Encoding_DefaultBinary = 120;
+        public const uint RegisterNodesResult_Encoding_DefaultJson = 8003;
 
         /// <summary>
-        /// The identifier for the TransferIncident_Encoding_DefaultBinary Object.
+        /// The identifier for the TransferIncident_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint TransferIncident_Encoding_DefaultBinary = 121;
+        public const uint TransferIncident_Encoding_DefaultJson = 8004;
 
         /// <summary>
-        /// The identifier for the ApplyResult_Encoding_DefaultBinary Object.
+        /// The identifier for the ApplyResult_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ApplyResult_Encoding_DefaultBinary = 122;
+        public const uint ApplyResult_Encoding_DefaultJson = 8005;
     }
     #endregion
 
@@ -467,6 +492,11 @@ namespace Opc.Ua.Fdi5
         public const uint FDIServerVersion = 94;
 
         /// <summary>
+        /// The identifier for the DeviceHealthDiagnostics Variable.
+        /// </summary>
+        public const uint DeviceHealthDiagnostics = 198;
+
+        /// <summary>
         /// The identifier for the ActionSet_InvokeAction_InputArguments Variable.
         /// </summary>
         public const uint ActionSet_InvokeAction_InputArguments = 185;
@@ -497,41 +527,6 @@ namespace Opc.Ua.Fdi5
         public const uint ActionSet_AbortAction_OutputArguments = 192;
 
         /// <summary>
-        /// The identifier for the OpcUaFdi5_XmlSchema Variable.
-        /// </summary>
-        public const uint OpcUaFdi5_XmlSchema = 100;
-
-        /// <summary>
-        /// The identifier for the OpcUaFdi5_XmlSchema_NamespaceUri Variable.
-        /// </summary>
-        public const uint OpcUaFdi5_XmlSchema_NamespaceUri = 102;
-
-        /// <summary>
-        /// The identifier for the OpcUaFdi5_XmlSchema_RegistrationParameters Variable.
-        /// </summary>
-        public const uint OpcUaFdi5_XmlSchema_RegistrationParameters = 103;
-
-        /// <summary>
-        /// The identifier for the OpcUaFdi5_XmlSchema_RegisteredNode Variable.
-        /// </summary>
-        public const uint OpcUaFdi5_XmlSchema_RegisteredNode = 106;
-
-        /// <summary>
-        /// The identifier for the OpcUaFdi5_XmlSchema_RegisterNodesResult Variable.
-        /// </summary>
-        public const uint OpcUaFdi5_XmlSchema_RegisterNodesResult = 109;
-
-        /// <summary>
-        /// The identifier for the OpcUaFdi5_XmlSchema_TransferIncident Variable.
-        /// </summary>
-        public const uint OpcUaFdi5_XmlSchema_TransferIncident = 112;
-
-        /// <summary>
-        /// The identifier for the OpcUaFdi5_XmlSchema_ApplyResult Variable.
-        /// </summary>
-        public const uint OpcUaFdi5_XmlSchema_ApplyResult = 115;
-
-        /// <summary>
         /// The identifier for the OpcUaFdi5_BinarySchema Variable.
         /// </summary>
         public const uint OpcUaFdi5_BinarySchema = 123;
@@ -540,6 +535,11 @@ namespace Opc.Ua.Fdi5
         /// The identifier for the OpcUaFdi5_BinarySchema_NamespaceUri Variable.
         /// </summary>
         public const uint OpcUaFdi5_BinarySchema_NamespaceUri = 125;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5_BinarySchema_Deprecated Variable.
+        /// </summary>
+        public const uint OpcUaFdi5_BinarySchema_Deprecated = 8006;
 
         /// <summary>
         /// The identifier for the OpcUaFdi5_BinarySchema_RegistrationParameters Variable.
@@ -565,6 +565,46 @@ namespace Opc.Ua.Fdi5
         /// The identifier for the OpcUaFdi5_BinarySchema_ApplyResult Variable.
         /// </summary>
         public const uint OpcUaFdi5_BinarySchema_ApplyResult = 138;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5_XmlSchema Variable.
+        /// </summary>
+        public const uint OpcUaFdi5_XmlSchema = 100;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5_XmlSchema_NamespaceUri Variable.
+        /// </summary>
+        public const uint OpcUaFdi5_XmlSchema_NamespaceUri = 102;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5_XmlSchema_Deprecated Variable.
+        /// </summary>
+        public const uint OpcUaFdi5_XmlSchema_Deprecated = 8008;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5_XmlSchema_RegistrationParameters Variable.
+        /// </summary>
+        public const uint OpcUaFdi5_XmlSchema_RegistrationParameters = 103;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5_XmlSchema_RegisteredNode Variable.
+        /// </summary>
+        public const uint OpcUaFdi5_XmlSchema_RegisteredNode = 106;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5_XmlSchema_RegisterNodesResult Variable.
+        /// </summary>
+        public const uint OpcUaFdi5_XmlSchema_RegisterNodesResult = 109;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5_XmlSchema_TransferIncident Variable.
+        /// </summary>
+        public const uint OpcUaFdi5_XmlSchema_TransferIncident = 112;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5_XmlSchema_ApplyResult Variable.
+        /// </summary>
+        public const uint OpcUaFdi5_XmlSchema_ApplyResult = 115;
     }
     #endregion
 
@@ -752,6 +792,31 @@ namespace Opc.Ua.Fdi5
         public static readonly ExpandedNodeId ActionSet = new ExpandedNodeId(Opc.Ua.Fdi5.Objects.ActionSet, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
 
         /// <summary>
+        /// The identifier for the RegistrationParameters_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly ExpandedNodeId RegistrationParameters_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Fdi5.Objects.RegistrationParameters_Encoding_DefaultBinary, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the RegisteredNode_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly ExpandedNodeId RegisteredNode_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Fdi5.Objects.RegisteredNode_Encoding_DefaultBinary, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the RegisterNodesResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly ExpandedNodeId RegisterNodesResult_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Fdi5.Objects.RegisterNodesResult_Encoding_DefaultBinary, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the TransferIncident_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly ExpandedNodeId TransferIncident_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Fdi5.Objects.TransferIncident_Encoding_DefaultBinary, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the ApplyResult_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly ExpandedNodeId ApplyResult_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Fdi5.Objects.ApplyResult_Encoding_DefaultBinary, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
         /// The identifier for the RegistrationParameters_Encoding_DefaultXml Object.
         /// </summary>
         public static readonly ExpandedNodeId RegistrationParameters_Encoding_DefaultXml = new ExpandedNodeId(Opc.Ua.Fdi5.Objects.RegistrationParameters_Encoding_DefaultXml, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
@@ -777,29 +842,29 @@ namespace Opc.Ua.Fdi5
         public static readonly ExpandedNodeId ApplyResult_Encoding_DefaultXml = new ExpandedNodeId(Opc.Ua.Fdi5.Objects.ApplyResult_Encoding_DefaultXml, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
 
         /// <summary>
-        /// The identifier for the RegistrationParameters_Encoding_DefaultBinary Object.
+        /// The identifier for the RegistrationParameters_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly ExpandedNodeId RegistrationParameters_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Fdi5.Objects.RegistrationParameters_Encoding_DefaultBinary, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+        public static readonly ExpandedNodeId RegistrationParameters_Encoding_DefaultJson = new ExpandedNodeId(Opc.Ua.Fdi5.Objects.RegistrationParameters_Encoding_DefaultJson, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
 
         /// <summary>
-        /// The identifier for the RegisteredNode_Encoding_DefaultBinary Object.
+        /// The identifier for the RegisteredNode_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly ExpandedNodeId RegisteredNode_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Fdi5.Objects.RegisteredNode_Encoding_DefaultBinary, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+        public static readonly ExpandedNodeId RegisteredNode_Encoding_DefaultJson = new ExpandedNodeId(Opc.Ua.Fdi5.Objects.RegisteredNode_Encoding_DefaultJson, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
 
         /// <summary>
-        /// The identifier for the RegisterNodesResult_Encoding_DefaultBinary Object.
+        /// The identifier for the RegisterNodesResult_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly ExpandedNodeId RegisterNodesResult_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Fdi5.Objects.RegisterNodesResult_Encoding_DefaultBinary, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+        public static readonly ExpandedNodeId RegisterNodesResult_Encoding_DefaultJson = new ExpandedNodeId(Opc.Ua.Fdi5.Objects.RegisterNodesResult_Encoding_DefaultJson, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
 
         /// <summary>
-        /// The identifier for the TransferIncident_Encoding_DefaultBinary Object.
+        /// The identifier for the TransferIncident_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly ExpandedNodeId TransferIncident_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Fdi5.Objects.TransferIncident_Encoding_DefaultBinary, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+        public static readonly ExpandedNodeId TransferIncident_Encoding_DefaultJson = new ExpandedNodeId(Opc.Ua.Fdi5.Objects.TransferIncident_Encoding_DefaultJson, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
 
         /// <summary>
-        /// The identifier for the ApplyResult_Encoding_DefaultBinary Object.
+        /// The identifier for the ApplyResult_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly ExpandedNodeId ApplyResult_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Fdi5.Objects.ApplyResult_Encoding_DefaultBinary, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+        public static readonly ExpandedNodeId ApplyResult_Encoding_DefaultJson = new ExpandedNodeId(Opc.Ua.Fdi5.Objects.ApplyResult_Encoding_DefaultJson, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
     }
     #endregion
 
@@ -1017,6 +1082,11 @@ namespace Opc.Ua.Fdi5
         public static readonly ExpandedNodeId FDIServerVersion = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.FDIServerVersion, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
 
         /// <summary>
+        /// The identifier for the DeviceHealthDiagnostics Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId DeviceHealthDiagnostics = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.DeviceHealthDiagnostics, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
         /// The identifier for the ActionSet_InvokeAction_InputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ActionSet_InvokeAction_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.ActionSet_InvokeAction_InputArguments, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
@@ -1047,41 +1117,6 @@ namespace Opc.Ua.Fdi5
         public static readonly ExpandedNodeId ActionSet_AbortAction_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.ActionSet_AbortAction_OutputArguments, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
 
         /// <summary>
-        /// The identifier for the OpcUaFdi5_XmlSchema Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaFdi5_XmlSchema = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5_XmlSchema, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
-
-        /// <summary>
-        /// The identifier for the OpcUaFdi5_XmlSchema_NamespaceUri Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaFdi5_XmlSchema_NamespaceUri = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5_XmlSchema_NamespaceUri, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
-
-        /// <summary>
-        /// The identifier for the OpcUaFdi5_XmlSchema_RegistrationParameters Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaFdi5_XmlSchema_RegistrationParameters = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5_XmlSchema_RegistrationParameters, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
-
-        /// <summary>
-        /// The identifier for the OpcUaFdi5_XmlSchema_RegisteredNode Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaFdi5_XmlSchema_RegisteredNode = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5_XmlSchema_RegisteredNode, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
-
-        /// <summary>
-        /// The identifier for the OpcUaFdi5_XmlSchema_RegisterNodesResult Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaFdi5_XmlSchema_RegisterNodesResult = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5_XmlSchema_RegisterNodesResult, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
-
-        /// <summary>
-        /// The identifier for the OpcUaFdi5_XmlSchema_TransferIncident Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaFdi5_XmlSchema_TransferIncident = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5_XmlSchema_TransferIncident, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
-
-        /// <summary>
-        /// The identifier for the OpcUaFdi5_XmlSchema_ApplyResult Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaFdi5_XmlSchema_ApplyResult = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5_XmlSchema_ApplyResult, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
-
-        /// <summary>
         /// The identifier for the OpcUaFdi5_BinarySchema Variable.
         /// </summary>
         public static readonly ExpandedNodeId OpcUaFdi5_BinarySchema = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5_BinarySchema, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
@@ -1090,6 +1125,11 @@ namespace Opc.Ua.Fdi5
         /// The identifier for the OpcUaFdi5_BinarySchema_NamespaceUri Variable.
         /// </summary>
         public static readonly ExpandedNodeId OpcUaFdi5_BinarySchema_NamespaceUri = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5_BinarySchema_NamespaceUri, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5_BinarySchema_Deprecated Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5_BinarySchema_Deprecated = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5_BinarySchema_Deprecated, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
 
         /// <summary>
         /// The identifier for the OpcUaFdi5_BinarySchema_RegistrationParameters Variable.
@@ -1115,6 +1155,46 @@ namespace Opc.Ua.Fdi5
         /// The identifier for the OpcUaFdi5_BinarySchema_ApplyResult Variable.
         /// </summary>
         public static readonly ExpandedNodeId OpcUaFdi5_BinarySchema_ApplyResult = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5_BinarySchema_ApplyResult, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5_XmlSchema Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5_XmlSchema = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5_XmlSchema, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5_XmlSchema_NamespaceUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5_XmlSchema_NamespaceUri = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5_XmlSchema_NamespaceUri, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5_XmlSchema_Deprecated Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5_XmlSchema_Deprecated = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5_XmlSchema_Deprecated, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5_XmlSchema_RegistrationParameters Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5_XmlSchema_RegistrationParameters = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5_XmlSchema_RegistrationParameters, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5_XmlSchema_RegisteredNode Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5_XmlSchema_RegisteredNode = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5_XmlSchema_RegisteredNode, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5_XmlSchema_RegisterNodesResult Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5_XmlSchema_RegisterNodesResult = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5_XmlSchema_RegisterNodesResult, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5_XmlSchema_TransferIncident Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5_XmlSchema_TransferIncident = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5_XmlSchema_TransferIncident, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5_XmlSchema_ApplyResult Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5_XmlSchema_ApplyResult = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5_XmlSchema_ApplyResult, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
     }
     #endregion
 
@@ -1189,6 +1269,11 @@ namespace Opc.Ua.Fdi5
         /// The BrowseName for the CpuInformation component.
         /// </summary>
         public const string CpuInformation = "CpuInformation";
+
+        /// <summary>
+        /// The BrowseName for the DeviceHealthDiagnostics component.
+        /// </summary>
+        public const string DeviceHealthDiagnostics = "DeviceHealthDiagnostics";
 
         /// <summary>
         /// The BrowseName for the DirectDeviceAccessType component.

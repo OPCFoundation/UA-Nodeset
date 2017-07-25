@@ -2185,6 +2185,40 @@
       </uax:Reference>
     </uax:References>
   </FDIServerVersion>
+  <DeviceHealthDiagnostics xmlns="http://fdi-cooperation.com/OPCUA/FDI5/">
+    <uax:NodeClass>Variable_2</uax:NodeClass>
+    <uax:NodeId>
+      <uax:Identifier>ns=1;i=198</uax:Identifier>
+    </uax:NodeId>
+    <uax:BrowseName>
+      <uax:NamespaceIndex>1</uax:NamespaceIndex>
+      <uax:Name>DeviceHealthDiagnostics</uax:Name>
+    </uax:BrowseName>
+    <uax:ReferenceTypeId>
+      <uax:Identifier>i=47</uax:Identifier>
+    </uax:ReferenceTypeId>
+    <uax:TypeDefinitionId>
+      <uax:Identifier>i=68</uax:Identifier>
+    </uax:TypeDefinitionId>
+    <uax:NumericId>198</uax:NumericId>
+    <uax:DataType>
+      <uax:Identifier>i=21</uax:Identifier>
+    </uax:DataType>
+    <uax:ValueRank>1</uax:ValueRank>
+    <uax:AccessLevel>1</uax:AccessLevel>
+    <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:IsInverse>true</uax:IsInverse>
+        <uax:TargetId>
+          <uax:Identifier>ns=2;i=1002</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
+  </DeviceHealthDiagnostics>
   <ActionIdentifier xmlns="http://fdi-cooperation.com/OPCUA/FDI5/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
@@ -2594,6 +2628,457 @@
       </OutputArguments>
     </AbortAction>
   </ActionSet>
+  <DefaultBinary xmlns="http://opcfoundation.org/UA/">
+    <uax:NodeClass>Object_1</uax:NodeClass>
+    <uax:NodeId>
+      <uax:Identifier>ns=1;i=118</uax:Identifier>
+    </uax:NodeId>
+    <uax:BrowseName>
+      <uax:NamespaceIndex>0</uax:NamespaceIndex>
+      <uax:Name>Default Binary</uax:Name>
+    </uax:BrowseName>
+    <uax:TypeDefinitionId>
+      <uax:Identifier>i=76</uax:Identifier>
+    </uax:TypeDefinitionId>
+    <uax:NumericId>118</uax:NumericId>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:IsInverse>true</uax:IsInverse>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=37</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=39</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=126</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
+  </DefaultBinary>
+  <DefaultBinary xmlns="http://opcfoundation.org/UA/">
+    <uax:NodeClass>Object_1</uax:NodeClass>
+    <uax:NodeId>
+      <uax:Identifier>ns=1;i=119</uax:Identifier>
+    </uax:NodeId>
+    <uax:BrowseName>
+      <uax:NamespaceIndex>0</uax:NamespaceIndex>
+      <uax:Name>Default Binary</uax:Name>
+    </uax:BrowseName>
+    <uax:TypeDefinitionId>
+      <uax:Identifier>i=76</uax:Identifier>
+    </uax:TypeDefinitionId>
+    <uax:NumericId>119</uax:NumericId>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:IsInverse>true</uax:IsInverse>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=38</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=39</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=129</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
+  </DefaultBinary>
+  <DefaultBinary xmlns="http://opcfoundation.org/UA/">
+    <uax:NodeClass>Object_1</uax:NodeClass>
+    <uax:NodeId>
+      <uax:Identifier>ns=1;i=120</uax:Identifier>
+    </uax:NodeId>
+    <uax:BrowseName>
+      <uax:NamespaceIndex>0</uax:NamespaceIndex>
+      <uax:Name>Default Binary</uax:Name>
+    </uax:BrowseName>
+    <uax:TypeDefinitionId>
+      <uax:Identifier>i=76</uax:Identifier>
+    </uax:TypeDefinitionId>
+    <uax:NumericId>120</uax:NumericId>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:IsInverse>true</uax:IsInverse>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=39</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=39</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=132</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
+  </DefaultBinary>
+  <DefaultBinary xmlns="http://opcfoundation.org/UA/">
+    <uax:NodeClass>Object_1</uax:NodeClass>
+    <uax:NodeId>
+      <uax:Identifier>ns=1;i=121</uax:Identifier>
+    </uax:NodeId>
+    <uax:BrowseName>
+      <uax:NamespaceIndex>0</uax:NamespaceIndex>
+      <uax:Name>Default Binary</uax:Name>
+    </uax:BrowseName>
+    <uax:TypeDefinitionId>
+      <uax:Identifier>i=76</uax:Identifier>
+    </uax:TypeDefinitionId>
+    <uax:NumericId>121</uax:NumericId>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:IsInverse>true</uax:IsInverse>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=43</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=39</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=135</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
+  </DefaultBinary>
+  <DefaultBinary xmlns="http://opcfoundation.org/UA/">
+    <uax:NodeClass>Object_1</uax:NodeClass>
+    <uax:NodeId>
+      <uax:Identifier>ns=1;i=122</uax:Identifier>
+    </uax:NodeId>
+    <uax:BrowseName>
+      <uax:NamespaceIndex>0</uax:NamespaceIndex>
+      <uax:Name>Default Binary</uax:Name>
+    </uax:BrowseName>
+    <uax:TypeDefinitionId>
+      <uax:Identifier>i=76</uax:Identifier>
+    </uax:TypeDefinitionId>
+    <uax:NumericId>122</uax:NumericId>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:IsInverse>true</uax:IsInverse>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=44</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=39</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=138</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
+  </DefaultBinary>
+  <OpcUaFdi5_BinarySchema xmlns="http://fdi-cooperation.com/OPCUA/FDI5/">
+    <uax:NodeClass>Variable_2</uax:NodeClass>
+    <uax:NodeId>
+      <uax:Identifier>ns=1;i=123</uax:Identifier>
+    </uax:NodeId>
+    <uax:BrowseName>
+      <uax:NamespaceIndex>1</uax:NamespaceIndex>
+      <uax:Name>Opc.Ua.Fdi5</uax:Name>
+    </uax:BrowseName>
+    <uax:TypeDefinitionId>
+      <uax:Identifier>i=72</uax:Identifier>
+    </uax:TypeDefinitionId>
+    <uax:NumericId>123</uax:NumericId>
+    <uax:Value>
+      <uax:Value>
+        <uax:ByteString>PG9wYzpUeXBlRGljdGlvbmFyeQ0KICB4bWxuczpEST0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3Jn
+L1VBL0RJLyINCiAgeG1sbnM6b3BjPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvQmluYXJ5U2No
+ZW1hLyINCiAgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0
+YW5jZSINCiAgeG1sbnM6dWE9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS8iDQogIHhtbG5z
+OnRucz0iaHR0cDovL2ZkaS1jb29wZXJhdGlvbi5jb20vT1BDVUEvRkRJNS8iDQogIERlZmF1bHRC
+eXRlT3JkZXI9IkxpdHRsZUVuZGlhbiINCiAgVGFyZ2V0TmFtZXNwYWNlPSJodHRwOi8vZmRpLWNv
+b3BlcmF0aW9uLmNvbS9PUENVQS9GREk1LyINCj4NCiAgPG9wYzpJbXBvcnQgTmFtZXNwYWNlPSJo
+dHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkvIiBMb2NhdGlvbj0iT3BjLlVhLkRpLkJpbmFy
+eVNjaGVtYS5ic2QiLz4NCiAgPG9wYzpJbXBvcnQgTmFtZXNwYWNlPSJodHRwOi8vb3BjZm91bmRh
+dGlvbi5vcmcvVUEvIiBMb2NhdGlvbj0iT3BjLlVhLkJpbmFyeVNjaGVtYS5ic2QiLz4NCg0KICA8
+b3BjOkVudW1lcmF0ZWRUeXBlIE5hbWU9IldpbmRvd01vZGVUeXBlIiBMZW5ndGhJbkJpdHM9IjMy
+Ij4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNb2RhbFdpbmRvdyIgVmFsdWU9IjEi
+IC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTm9uTW9kYWxXaW5kb3ciIFZhbHVl
+PSIyIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlVJUCIgVmFsdWU9IjMiIC8+
+DQogIDwvb3BjOkVudW1lcmF0ZWRUeXBlPg0KDQogIDxvcGM6RW51bWVyYXRlZFR5cGUgTmFtZT0i
+U3R5bGVUeXBlIiBMZW5ndGhJbkJpdHM9IjMyIj4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBO
+YW1lPSJXaW5kb3ciIFZhbHVlPSIxIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9
+IkRpYWxvZyIgVmFsdWU9IjIiIC8+DQogIDwvb3BjOkVudW1lcmF0ZWRUeXBlPg0KDQogIDxvcGM6
+U3RydWN0dXJlZFR5cGUgTmFtZT0iUmVnaXN0cmF0aW9uUGFyYW1ldGVycyIgQmFzZVR5cGU9InVh
+OkV4dGVuc2lvbk9iamVjdCI+DQogICAgPG9wYzpGaWVsZCBOYW1lPSJQYXRoIiBUeXBlTmFtZT0i
+dWE6UmVsYXRpdmVQYXRoIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0iU2VsZWN0aW9uRmxhZ3Mi
+IFR5cGVOYW1lPSJvcGM6VUludDMyIiAvPg0KICA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4NCg0KICA8
+b3BjOlN0cnVjdHVyZWRUeXBlIE5hbWU9IlJlZ2lzdGVyZWROb2RlIiBCYXNlVHlwZT0idWE6RXh0
+ZW5zaW9uT2JqZWN0Ij4NCiAgICA8b3BjOkZpZWxkIE5hbWU9Ik5vZGVTdGF0dXMiIFR5cGVOYW1l
+PSJvcGM6SW50MzIiIC8+DQogICAgPG9wYzpGaWVsZCBOYW1lPSJPbmxpbmVDb250ZXh0Tm9kZUlk
+IiBUeXBlTmFtZT0idWE6Tm9kZUlkIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0iT25saW5lRGV2
+aWNlTm9kZUlkIiBUeXBlTmFtZT0idWE6Tm9kZUlkIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0i
+T2ZmbGluZUNvbnRleHROb2RlSWQiIFR5cGVOYW1lPSJ1YTpOb2RlSWQiIC8+DQogICAgPG9wYzpG
+aWVsZCBOYW1lPSJPZmZsaW5lRGV2aWNlTm9kZUlkIiBUeXBlTmFtZT0idWE6Tm9kZUlkIiAvPg0K
+ICA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4NCg0KICA8b3BjOlN0cnVjdHVyZWRUeXBlIE5hbWU9IlJl
+Z2lzdGVyTm9kZXNSZXN1bHQiIEJhc2VUeXBlPSJ1YTpFeHRlbnNpb25PYmplY3QiPg0KICAgIDxv
+cGM6RmllbGQgTmFtZT0iU3RhdHVzIiBUeXBlTmFtZT0ib3BjOkludDMyIiAvPg0KICAgIDxvcGM6
+RmllbGQgTmFtZT0iTm9PZlJlZ2lzdGVyZWROb2RlcyIgVHlwZU5hbWU9Im9wYzpJbnQzMiIgLz4N
+CiAgICA8b3BjOkZpZWxkIE5hbWU9IlJlZ2lzdGVyZWROb2RlcyIgVHlwZU5hbWU9InRuczpSZWdp
+c3RlcmVkTm9kZSIgTGVuZ3RoRmllbGQ9Ik5vT2ZSZWdpc3RlcmVkTm9kZXMiIC8+DQogIDwvb3Bj
+OlN0cnVjdHVyZWRUeXBlPg0KDQogIDxvcGM6U3RydWN0dXJlZFR5cGUgTmFtZT0iVHJhbnNmZXJJ
+bmNpZGVudCIgQmFzZVR5cGU9InVhOkV4dGVuc2lvbk9iamVjdCI+DQogICAgPG9wYzpGaWVsZCBO
+YW1lPSJDb250ZXh0Tm9kZUlkIiBUeXBlTmFtZT0idWE6Tm9kZUlkIiAvPg0KICAgIDxvcGM6Rmll
+bGQgTmFtZT0iU3RhdHVzQ29kZSIgVHlwZU5hbWU9InVhOlN0YXR1c0NvZGUiIC8+DQogICAgPG9w
+YzpGaWVsZCBOYW1lPSJEaWFnbm9zdGljcyIgVHlwZU5hbWU9InVhOkRpYWdub3N0aWNJbmZvIiAv
+Pg0KICA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4NCg0KICA8b3BjOlN0cnVjdHVyZWRUeXBlIE5hbWU9
+IkFwcGx5UmVzdWx0IiBCYXNlVHlwZT0idWE6RXh0ZW5zaW9uT2JqZWN0Ij4NCiAgICA8b3BjOkZp
+ZWxkIE5hbWU9IlN0YXR1cyIgVHlwZU5hbWU9Im9wYzpJbnQzMiIgLz4NCiAgICA8b3BjOkZpZWxk
+IE5hbWU9Ik5vT2ZUcmFuc2ZlckluY2lkZW50cyIgVHlwZU5hbWU9Im9wYzpJbnQzMiIgLz4NCiAg
+ICA8b3BjOkZpZWxkIE5hbWU9IlRyYW5zZmVySW5jaWRlbnRzIiBUeXBlTmFtZT0idG5zOlRyYW5z
+ZmVySW5jaWRlbnQiIExlbmd0aEZpZWxkPSJOb09mVHJhbnNmZXJJbmNpZGVudHMiIC8+DQogIDwv
+b3BjOlN0cnVjdHVyZWRUeXBlPg0KDQo8L29wYzpUeXBlRGljdGlvbmFyeT4=</uax:ByteString>
+      </uax:Value>
+    </uax:Value>
+    <uax:DataType>
+      <uax:Identifier>i=15</uax:Identifier>
+    </uax:DataType>
+    <uax:ValueRank>-1</uax:ValueRank>
+    <uax:AccessLevel>1</uax:AccessLevel>
+    <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=47</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:IsInverse>true</uax:IsInverse>
+        <uax:TargetId>
+          <uax:Identifier>i=93</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
+    <NamespaceUri xmlns="http://opcfoundation.org/UA/">
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=125</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
+        <uax:Name>NamespaceUri</uax:Name>
+      </uax:BrowseName>
+      <uax:Description>
+        <uax:Locale></uax:Locale>
+        <uax:Text>A URI that uniquely identifies the dictionary.</uax:Text>
+      </uax:Description>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:NumericId>125</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:String>http://fdi-cooperation.com/OPCUA/FDI5/</uax:String>
+        </uax:Value>
+      </uax:Value>
+      <uax:DataType>
+        <uax:Identifier>i=12</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </NamespaceUri>
+    <Deprecated xmlns="http://opcfoundation.org/UA/">
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=8006</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
+        <uax:Name>Deprecated</uax:Name>
+      </uax:BrowseName>
+      <uax:Description>
+        <uax:Locale></uax:Locale>
+        <uax:Text>Indicates that all of the definitions for the dictionary are available through a DataTypeDefinition Attribute.</uax:Text>
+      </uax:Description>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:NumericId>8006</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Boolean>true</uax:Boolean>
+        </uax:Value>
+      </uax:Value>
+      <uax:DataType>
+        <uax:Identifier>i=1</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </Deprecated>
+    <RegistrationParameters>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=126</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>RegistrationParameters</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=47</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=69</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:NumericId>126</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:String>RegistrationParameters</uax:String>
+        </uax:Value>
+      </uax:Value>
+      <uax:DataType>
+        <uax:Identifier>i=12</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </RegistrationParameters>
+    <RegisteredNode>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=129</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>RegisteredNode</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=47</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=69</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:NumericId>129</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:String>RegisteredNode</uax:String>
+        </uax:Value>
+      </uax:Value>
+      <uax:DataType>
+        <uax:Identifier>i=12</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </RegisteredNode>
+    <RegisterNodesResult>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=132</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>RegisterNodesResult</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=47</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=69</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:NumericId>132</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:String>RegisterNodesResult</uax:String>
+        </uax:Value>
+      </uax:Value>
+      <uax:DataType>
+        <uax:Identifier>i=12</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </RegisterNodesResult>
+    <TransferIncident>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=135</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>TransferIncident</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=47</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=69</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:NumericId>135</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:String>TransferIncident</uax:String>
+        </uax:Value>
+      </uax:Value>
+      <uax:DataType>
+        <uax:Identifier>i=12</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </TransferIncident>
+    <ApplyResult>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=138</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>ApplyResult</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=47</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=69</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:NumericId>138</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:String>ApplyResult</uax:String>
+        </uax:Value>
+      </uax:Value>
+      <uax:DataType>
+        <uax:Identifier>i=12</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </ApplyResult>
+  </OpcUaFdi5_BinarySchema>
   <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
@@ -2923,6 +3408,38 @@ YWJsZT0idHJ1ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </NamespaceUri>
+    <Deprecated xmlns="http://opcfoundation.org/UA/">
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=8008</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
+        <uax:Name>Deprecated</uax:Name>
+      </uax:BrowseName>
+      <uax:Description>
+        <uax:Locale></uax:Locale>
+        <uax:Text>Indicates that all of the definitions for the dictionary are available through a DataTypeDefinition Attribute.</uax:Text>
+      </uax:Description>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:NumericId>8008</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Boolean>true</uax:Boolean>
+        </uax:Value>
+      </uax:Value>
+      <uax:DataType>
+        <uax:Identifier>i=1</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </Deprecated>
     <RegistrationParameters>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -3064,19 +3581,19 @@ YWJsZT0idHJ1ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </ApplyResult>
   </OpcUaFdi5_XmlSchema>
-  <DefaultBinary xmlns="http://opcfoundation.org/UA/">
+  <DefaultJson xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=118</uax:Identifier>
+      <uax:Identifier>ns=1;i=8001</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>0</uax:NamespaceIndex>
-      <uax:Name>Default Binary</uax:Name>
+      <uax:Name>Default JSON</uax:Name>
     </uax:BrowseName>
     <uax:TypeDefinitionId>
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
-    <uax:NumericId>118</uax:NumericId>
+    <uax:NumericId>8001</uax:NumericId>
     <uax:References>
       <uax:Reference>
         <uax:ReferenceTypeId>
@@ -3087,29 +3604,21 @@ YWJsZT0idHJ1ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
           <uax:Identifier>ns=1;i=37</uax:Identifier>
         </uax:TargetId>
       </uax:Reference>
-      <uax:Reference>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=39</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TargetId>
-          <uax:Identifier>ns=1;i=126</uax:Identifier>
-        </uax:TargetId>
-      </uax:Reference>
     </uax:References>
-  </DefaultBinary>
-  <DefaultBinary xmlns="http://opcfoundation.org/UA/">
+  </DefaultJson>
+  <DefaultJson xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=119</uax:Identifier>
+      <uax:Identifier>ns=1;i=8002</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>0</uax:NamespaceIndex>
-      <uax:Name>Default Binary</uax:Name>
+      <uax:Name>Default JSON</uax:Name>
     </uax:BrowseName>
     <uax:TypeDefinitionId>
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
-    <uax:NumericId>119</uax:NumericId>
+    <uax:NumericId>8002</uax:NumericId>
     <uax:References>
       <uax:Reference>
         <uax:ReferenceTypeId>
@@ -3120,29 +3629,21 @@ YWJsZT0idHJ1ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
           <uax:Identifier>ns=1;i=38</uax:Identifier>
         </uax:TargetId>
       </uax:Reference>
-      <uax:Reference>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=39</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TargetId>
-          <uax:Identifier>ns=1;i=129</uax:Identifier>
-        </uax:TargetId>
-      </uax:Reference>
     </uax:References>
-  </DefaultBinary>
-  <DefaultBinary xmlns="http://opcfoundation.org/UA/">
+  </DefaultJson>
+  <DefaultJson xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=120</uax:Identifier>
+      <uax:Identifier>ns=1;i=8003</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>0</uax:NamespaceIndex>
-      <uax:Name>Default Binary</uax:Name>
+      <uax:Name>Default JSON</uax:Name>
     </uax:BrowseName>
     <uax:TypeDefinitionId>
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
-    <uax:NumericId>120</uax:NumericId>
+    <uax:NumericId>8003</uax:NumericId>
     <uax:References>
       <uax:Reference>
         <uax:ReferenceTypeId>
@@ -3153,29 +3654,21 @@ YWJsZT0idHJ1ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
           <uax:Identifier>ns=1;i=39</uax:Identifier>
         </uax:TargetId>
       </uax:Reference>
-      <uax:Reference>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=39</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TargetId>
-          <uax:Identifier>ns=1;i=132</uax:Identifier>
-        </uax:TargetId>
-      </uax:Reference>
     </uax:References>
-  </DefaultBinary>
-  <DefaultBinary xmlns="http://opcfoundation.org/UA/">
+  </DefaultJson>
+  <DefaultJson xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=121</uax:Identifier>
+      <uax:Identifier>ns=1;i=8004</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>0</uax:NamespaceIndex>
-      <uax:Name>Default Binary</uax:Name>
+      <uax:Name>Default JSON</uax:Name>
     </uax:BrowseName>
     <uax:TypeDefinitionId>
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
-    <uax:NumericId>121</uax:NumericId>
+    <uax:NumericId>8004</uax:NumericId>
     <uax:References>
       <uax:Reference>
         <uax:ReferenceTypeId>
@@ -3186,29 +3679,21 @@ YWJsZT0idHJ1ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
           <uax:Identifier>ns=1;i=43</uax:Identifier>
         </uax:TargetId>
       </uax:Reference>
-      <uax:Reference>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=39</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TargetId>
-          <uax:Identifier>ns=1;i=135</uax:Identifier>
-        </uax:TargetId>
-      </uax:Reference>
     </uax:References>
-  </DefaultBinary>
-  <DefaultBinary xmlns="http://opcfoundation.org/UA/">
+  </DefaultJson>
+  <DefaultJson xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=122</uax:Identifier>
+      <uax:Identifier>ns=1;i=8005</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>0</uax:NamespaceIndex>
-      <uax:Name>Default Binary</uax:Name>
+      <uax:Name>Default JSON</uax:Name>
     </uax:BrowseName>
     <uax:TypeDefinitionId>
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
-    <uax:NumericId>122</uax:NumericId>
+    <uax:NumericId>8005</uax:NumericId>
     <uax:References>
       <uax:Reference>
         <uax:ReferenceTypeId>
@@ -3219,268 +3704,6 @@ YWJsZT0idHJ1ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
           <uax:Identifier>ns=1;i=44</uax:Identifier>
         </uax:TargetId>
       </uax:Reference>
-      <uax:Reference>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=39</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TargetId>
-          <uax:Identifier>ns=1;i=138</uax:Identifier>
-        </uax:TargetId>
-      </uax:Reference>
     </uax:References>
-  </DefaultBinary>
-  <OpcUaFdi5_BinarySchema xmlns="http://fdi-cooperation.com/OPCUA/FDI5/">
-    <uax:NodeClass>Variable_2</uax:NodeClass>
-    <uax:NodeId>
-      <uax:Identifier>ns=1;i=123</uax:Identifier>
-    </uax:NodeId>
-    <uax:BrowseName>
-      <uax:NamespaceIndex>1</uax:NamespaceIndex>
-      <uax:Name>Opc.Ua.Fdi5</uax:Name>
-    </uax:BrowseName>
-    <uax:TypeDefinitionId>
-      <uax:Identifier>i=72</uax:Identifier>
-    </uax:TypeDefinitionId>
-    <uax:NumericId>123</uax:NumericId>
-    <uax:Value>
-      <uax:Value>
-        <uax:ByteString>PG9wYzpUeXBlRGljdGlvbmFyeQ0KICB4bWxuczpEST0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3Jn
-L1VBL0RJLyINCiAgeG1sbnM6b3BjPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvQmluYXJ5U2No
-ZW1hLyINCiAgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0
-YW5jZSINCiAgeG1sbnM6dWE9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS8iDQogIHhtbG5z
-OnRucz0iaHR0cDovL2ZkaS1jb29wZXJhdGlvbi5jb20vT1BDVUEvRkRJNS8iDQogIERlZmF1bHRC
-eXRlT3JkZXI9IkxpdHRsZUVuZGlhbiINCiAgVGFyZ2V0TmFtZXNwYWNlPSJodHRwOi8vZmRpLWNv
-b3BlcmF0aW9uLmNvbS9PUENVQS9GREk1LyINCj4NCiAgPG9wYzpJbXBvcnQgTmFtZXNwYWNlPSJo
-dHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkvIiBMb2NhdGlvbj0iT3BjLlVhLkRpLkJpbmFy
-eVNjaGVtYS5ic2QiLz4NCiAgPG9wYzpJbXBvcnQgTmFtZXNwYWNlPSJodHRwOi8vb3BjZm91bmRh
-dGlvbi5vcmcvVUEvIiBMb2NhdGlvbj0iT3BjLlVhLkJpbmFyeVNjaGVtYS5ic2QiLz4NCg0KICA8
-b3BjOkVudW1lcmF0ZWRUeXBlIE5hbWU9IldpbmRvd01vZGVUeXBlIiBMZW5ndGhJbkJpdHM9IjMy
-Ij4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNb2RhbFdpbmRvdyIgVmFsdWU9IjEi
-IC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTm9uTW9kYWxXaW5kb3ciIFZhbHVl
-PSIyIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlVJUCIgVmFsdWU9IjMiIC8+
-DQogIDwvb3BjOkVudW1lcmF0ZWRUeXBlPg0KDQogIDxvcGM6RW51bWVyYXRlZFR5cGUgTmFtZT0i
-U3R5bGVUeXBlIiBMZW5ndGhJbkJpdHM9IjMyIj4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBO
-YW1lPSJXaW5kb3ciIFZhbHVlPSIxIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9
-IkRpYWxvZyIgVmFsdWU9IjIiIC8+DQogIDwvb3BjOkVudW1lcmF0ZWRUeXBlPg0KDQogIDxvcGM6
-U3RydWN0dXJlZFR5cGUgTmFtZT0iUmVnaXN0cmF0aW9uUGFyYW1ldGVycyIgQmFzZVR5cGU9InVh
-OkV4dGVuc2lvbk9iamVjdCI+DQogICAgPG9wYzpGaWVsZCBOYW1lPSJQYXRoIiBUeXBlTmFtZT0i
-dWE6UmVsYXRpdmVQYXRoIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0iU2VsZWN0aW9uRmxhZ3Mi
-IFR5cGVOYW1lPSJvcGM6VUludDMyIiAvPg0KICA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4NCg0KICA8
-b3BjOlN0cnVjdHVyZWRUeXBlIE5hbWU9IlJlZ2lzdGVyZWROb2RlIiBCYXNlVHlwZT0idWE6RXh0
-ZW5zaW9uT2JqZWN0Ij4NCiAgICA8b3BjOkZpZWxkIE5hbWU9Ik5vZGVTdGF0dXMiIFR5cGVOYW1l
-PSJvcGM6SW50MzIiIC8+DQogICAgPG9wYzpGaWVsZCBOYW1lPSJPbmxpbmVDb250ZXh0Tm9kZUlk
-IiBUeXBlTmFtZT0idWE6Tm9kZUlkIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0iT25saW5lRGV2
-aWNlTm9kZUlkIiBUeXBlTmFtZT0idWE6Tm9kZUlkIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0i
-T2ZmbGluZUNvbnRleHROb2RlSWQiIFR5cGVOYW1lPSJ1YTpOb2RlSWQiIC8+DQogICAgPG9wYzpG
-aWVsZCBOYW1lPSJPZmZsaW5lRGV2aWNlTm9kZUlkIiBUeXBlTmFtZT0idWE6Tm9kZUlkIiAvPg0K
-ICA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4NCg0KICA8b3BjOlN0cnVjdHVyZWRUeXBlIE5hbWU9IlJl
-Z2lzdGVyTm9kZXNSZXN1bHQiIEJhc2VUeXBlPSJ1YTpFeHRlbnNpb25PYmplY3QiPg0KICAgIDxv
-cGM6RmllbGQgTmFtZT0iU3RhdHVzIiBUeXBlTmFtZT0ib3BjOkludDMyIiAvPg0KICAgIDxvcGM6
-RmllbGQgTmFtZT0iTm9PZlJlZ2lzdGVyZWROb2RlcyIgVHlwZU5hbWU9Im9wYzpJbnQzMiIgLz4N
-CiAgICA8b3BjOkZpZWxkIE5hbWU9IlJlZ2lzdGVyZWROb2RlcyIgVHlwZU5hbWU9InRuczpSZWdp
-c3RlcmVkTm9kZSIgTGVuZ3RoRmllbGQ9Ik5vT2ZSZWdpc3RlcmVkTm9kZXMiIC8+DQogIDwvb3Bj
-OlN0cnVjdHVyZWRUeXBlPg0KDQogIDxvcGM6U3RydWN0dXJlZFR5cGUgTmFtZT0iVHJhbnNmZXJJ
-bmNpZGVudCIgQmFzZVR5cGU9InVhOkV4dGVuc2lvbk9iamVjdCI+DQogICAgPG9wYzpGaWVsZCBO
-YW1lPSJDb250ZXh0Tm9kZUlkIiBUeXBlTmFtZT0idWE6Tm9kZUlkIiAvPg0KICAgIDxvcGM6Rmll
-bGQgTmFtZT0iU3RhdHVzQ29kZSIgVHlwZU5hbWU9InVhOlN0YXR1c0NvZGUiIC8+DQogICAgPG9w
-YzpGaWVsZCBOYW1lPSJEaWFnbm9zdGljcyIgVHlwZU5hbWU9InVhOkRpYWdub3N0aWNJbmZvIiAv
-Pg0KICA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4NCg0KICA8b3BjOlN0cnVjdHVyZWRUeXBlIE5hbWU9
-IkFwcGx5UmVzdWx0IiBCYXNlVHlwZT0idWE6RXh0ZW5zaW9uT2JqZWN0Ij4NCiAgICA8b3BjOkZp
-ZWxkIE5hbWU9IlN0YXR1cyIgVHlwZU5hbWU9Im9wYzpJbnQzMiIgLz4NCiAgICA8b3BjOkZpZWxk
-IE5hbWU9Ik5vT2ZUcmFuc2ZlckluY2lkZW50cyIgVHlwZU5hbWU9Im9wYzpJbnQzMiIgLz4NCiAg
-ICA8b3BjOkZpZWxkIE5hbWU9IlRyYW5zZmVySW5jaWRlbnRzIiBUeXBlTmFtZT0idG5zOlRyYW5z
-ZmVySW5jaWRlbnQiIExlbmd0aEZpZWxkPSJOb09mVHJhbnNmZXJJbmNpZGVudHMiIC8+DQogIDwv
-b3BjOlN0cnVjdHVyZWRUeXBlPg0KDQo8L29wYzpUeXBlRGljdGlvbmFyeT4=</uax:ByteString>
-      </uax:Value>
-    </uax:Value>
-    <uax:DataType>
-      <uax:Identifier>i=15</uax:Identifier>
-    </uax:DataType>
-    <uax:ValueRank>-1</uax:ValueRank>
-    <uax:AccessLevel>1</uax:AccessLevel>
-    <uax:UserAccessLevel>1</uax:UserAccessLevel>
-    <uax:References>
-      <uax:Reference>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:IsInverse>true</uax:IsInverse>
-        <uax:TargetId>
-          <uax:Identifier>i=93</uax:Identifier>
-        </uax:TargetId>
-      </uax:Reference>
-    </uax:References>
-    <NamespaceUri xmlns="http://opcfoundation.org/UA/">
-      <uax:NodeClass>Variable_2</uax:NodeClass>
-      <uax:NodeId>
-        <uax:Identifier>ns=1;i=125</uax:Identifier>
-      </uax:NodeId>
-      <uax:BrowseName>
-        <uax:NamespaceIndex>0</uax:NamespaceIndex>
-        <uax:Name>NamespaceUri</uax:Name>
-      </uax:BrowseName>
-      <uax:Description>
-        <uax:Locale></uax:Locale>
-        <uax:Text>A URI that uniquely identifies the dictionary.</uax:Text>
-      </uax:Description>
-      <uax:ReferenceTypeId>
-        <uax:Identifier>i=46</uax:Identifier>
-      </uax:ReferenceTypeId>
-      <uax:TypeDefinitionId>
-        <uax:Identifier>i=68</uax:Identifier>
-      </uax:TypeDefinitionId>
-      <uax:NumericId>125</uax:NumericId>
-      <uax:Value>
-        <uax:Value>
-          <uax:String>http://fdi-cooperation.com/OPCUA/FDI5/</uax:String>
-        </uax:Value>
-      </uax:Value>
-      <uax:DataType>
-        <uax:Identifier>i=12</uax:Identifier>
-      </uax:DataType>
-      <uax:ValueRank>-1</uax:ValueRank>
-      <uax:AccessLevel>1</uax:AccessLevel>
-      <uax:UserAccessLevel>1</uax:UserAccessLevel>
-    </NamespaceUri>
-    <RegistrationParameters>
-      <uax:NodeClass>Variable_2</uax:NodeClass>
-      <uax:NodeId>
-        <uax:Identifier>ns=1;i=126</uax:Identifier>
-      </uax:NodeId>
-      <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
-        <uax:Name>RegistrationParameters</uax:Name>
-      </uax:BrowseName>
-      <uax:ReferenceTypeId>
-        <uax:Identifier>i=47</uax:Identifier>
-      </uax:ReferenceTypeId>
-      <uax:TypeDefinitionId>
-        <uax:Identifier>i=69</uax:Identifier>
-      </uax:TypeDefinitionId>
-      <uax:NumericId>126</uax:NumericId>
-      <uax:Value>
-        <uax:Value>
-          <uax:String>RegistrationParameters</uax:String>
-        </uax:Value>
-      </uax:Value>
-      <uax:DataType>
-        <uax:Identifier>i=12</uax:Identifier>
-      </uax:DataType>
-      <uax:ValueRank>-1</uax:ValueRank>
-      <uax:AccessLevel>1</uax:AccessLevel>
-      <uax:UserAccessLevel>1</uax:UserAccessLevel>
-    </RegistrationParameters>
-    <RegisteredNode>
-      <uax:NodeClass>Variable_2</uax:NodeClass>
-      <uax:NodeId>
-        <uax:Identifier>ns=1;i=129</uax:Identifier>
-      </uax:NodeId>
-      <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
-        <uax:Name>RegisteredNode</uax:Name>
-      </uax:BrowseName>
-      <uax:ReferenceTypeId>
-        <uax:Identifier>i=47</uax:Identifier>
-      </uax:ReferenceTypeId>
-      <uax:TypeDefinitionId>
-        <uax:Identifier>i=69</uax:Identifier>
-      </uax:TypeDefinitionId>
-      <uax:NumericId>129</uax:NumericId>
-      <uax:Value>
-        <uax:Value>
-          <uax:String>RegisteredNode</uax:String>
-        </uax:Value>
-      </uax:Value>
-      <uax:DataType>
-        <uax:Identifier>i=12</uax:Identifier>
-      </uax:DataType>
-      <uax:ValueRank>-1</uax:ValueRank>
-      <uax:AccessLevel>1</uax:AccessLevel>
-      <uax:UserAccessLevel>1</uax:UserAccessLevel>
-    </RegisteredNode>
-    <RegisterNodesResult>
-      <uax:NodeClass>Variable_2</uax:NodeClass>
-      <uax:NodeId>
-        <uax:Identifier>ns=1;i=132</uax:Identifier>
-      </uax:NodeId>
-      <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
-        <uax:Name>RegisterNodesResult</uax:Name>
-      </uax:BrowseName>
-      <uax:ReferenceTypeId>
-        <uax:Identifier>i=47</uax:Identifier>
-      </uax:ReferenceTypeId>
-      <uax:TypeDefinitionId>
-        <uax:Identifier>i=69</uax:Identifier>
-      </uax:TypeDefinitionId>
-      <uax:NumericId>132</uax:NumericId>
-      <uax:Value>
-        <uax:Value>
-          <uax:String>RegisterNodesResult</uax:String>
-        </uax:Value>
-      </uax:Value>
-      <uax:DataType>
-        <uax:Identifier>i=12</uax:Identifier>
-      </uax:DataType>
-      <uax:ValueRank>-1</uax:ValueRank>
-      <uax:AccessLevel>1</uax:AccessLevel>
-      <uax:UserAccessLevel>1</uax:UserAccessLevel>
-    </RegisterNodesResult>
-    <TransferIncident>
-      <uax:NodeClass>Variable_2</uax:NodeClass>
-      <uax:NodeId>
-        <uax:Identifier>ns=1;i=135</uax:Identifier>
-      </uax:NodeId>
-      <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
-        <uax:Name>TransferIncident</uax:Name>
-      </uax:BrowseName>
-      <uax:ReferenceTypeId>
-        <uax:Identifier>i=47</uax:Identifier>
-      </uax:ReferenceTypeId>
-      <uax:TypeDefinitionId>
-        <uax:Identifier>i=69</uax:Identifier>
-      </uax:TypeDefinitionId>
-      <uax:NumericId>135</uax:NumericId>
-      <uax:Value>
-        <uax:Value>
-          <uax:String>TransferIncident</uax:String>
-        </uax:Value>
-      </uax:Value>
-      <uax:DataType>
-        <uax:Identifier>i=12</uax:Identifier>
-      </uax:DataType>
-      <uax:ValueRank>-1</uax:ValueRank>
-      <uax:AccessLevel>1</uax:AccessLevel>
-      <uax:UserAccessLevel>1</uax:UserAccessLevel>
-    </TransferIncident>
-    <ApplyResult>
-      <uax:NodeClass>Variable_2</uax:NodeClass>
-      <uax:NodeId>
-        <uax:Identifier>ns=1;i=138</uax:Identifier>
-      </uax:NodeId>
-      <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
-        <uax:Name>ApplyResult</uax:Name>
-      </uax:BrowseName>
-      <uax:ReferenceTypeId>
-        <uax:Identifier>i=47</uax:Identifier>
-      </uax:ReferenceTypeId>
-      <uax:TypeDefinitionId>
-        <uax:Identifier>i=69</uax:Identifier>
-      </uax:TypeDefinitionId>
-      <uax:NumericId>138</uax:NumericId>
-      <uax:Value>
-        <uax:Value>
-          <uax:String>ApplyResult</uax:String>
-        </uax:Value>
-      </uax:Value>
-      <uax:DataType>
-        <uax:Identifier>i=12</uax:Identifier>
-      </uax:DataType>
-      <uax:ValueRank>-1</uax:ValueRank>
-      <uax:AccessLevel>1</uax:AccessLevel>
-      <uax:UserAccessLevel>1</uax:UserAccessLevel>
-    </ApplyResult>
-  </OpcUaFdi5_BinarySchema>
+  </DefaultJson>
 </uax:ListOfNodeState>

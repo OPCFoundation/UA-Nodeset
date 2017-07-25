@@ -1927,14 +1927,19 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationGENERICServiceType_CPIdentifier_NetworkAddress = 2195;
 
         /// <summary>
+        /// The identifier for the EddDataTypeInfo_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint EddDataTypeInfo_Encoding_DefaultBinary = 2213;
+
+        /// <summary>
         /// The identifier for the EddDataTypeInfo_Encoding_DefaultXml Object.
         /// </summary>
         public const uint EddDataTypeInfo_Encoding_DefaultXml = 2206;
 
         /// <summary>
-        /// The identifier for the EddDataTypeInfo_Encoding_DefaultBinary Object.
+        /// The identifier for the EddDataTypeInfo_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint EddDataTypeInfo_Encoding_DefaultBinary = 2213;
+        public const uint EddDataTypeInfo_Encoding_DefaultJson = 8001;
     }
     #endregion
 
@@ -6377,21 +6382,6 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationGENERICServiceType_MethodSet_Transfer_OutputArguments = 2205;
 
         /// <summary>
-        /// The identifier for the OpcUaFdi7_XmlSchema Variable.
-        /// </summary>
-        public const uint OpcUaFdi7_XmlSchema = 2207;
-
-        /// <summary>
-        /// The identifier for the OpcUaFdi7_XmlSchema_NamespaceUri Variable.
-        /// </summary>
-        public const uint OpcUaFdi7_XmlSchema_NamespaceUri = 2209;
-
-        /// <summary>
-        /// The identifier for the OpcUaFdi7_XmlSchema_EddDataTypeInfo Variable.
-        /// </summary>
-        public const uint OpcUaFdi7_XmlSchema_EddDataTypeInfo = 2210;
-
-        /// <summary>
         /// The identifier for the OpcUaFdi7_BinarySchema Variable.
         /// </summary>
         public const uint OpcUaFdi7_BinarySchema = 2214;
@@ -6402,9 +6392,34 @@ namespace Opc.Ua.Fdi7
         public const uint OpcUaFdi7_BinarySchema_NamespaceUri = 2216;
 
         /// <summary>
+        /// The identifier for the OpcUaFdi7_BinarySchema_Deprecated Variable.
+        /// </summary>
+        public const uint OpcUaFdi7_BinarySchema_Deprecated = 8002;
+
+        /// <summary>
         /// The identifier for the OpcUaFdi7_BinarySchema_EddDataTypeInfo Variable.
         /// </summary>
         public const uint OpcUaFdi7_BinarySchema_EddDataTypeInfo = 2217;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi7_XmlSchema Variable.
+        /// </summary>
+        public const uint OpcUaFdi7_XmlSchema = 2207;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi7_XmlSchema_NamespaceUri Variable.
+        /// </summary>
+        public const uint OpcUaFdi7_XmlSchema_NamespaceUri = 2209;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi7_XmlSchema_Deprecated Variable.
+        /// </summary>
+        public const uint OpcUaFdi7_XmlSchema_Deprecated = 8004;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi7_XmlSchema_EddDataTypeInfo Variable.
+        /// </summary>
+        public const uint OpcUaFdi7_XmlSchema_EddDataTypeInfo = 2210;
     }
     #endregion
 
@@ -8297,14 +8312,19 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_CPIdentifier_NetworkAddress = new ExpandedNodeId(Opc.Ua.Fdi7.Objects.ServerCommunicationGENERICServiceType_CPIdentifier_NetworkAddress, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the EddDataTypeInfo_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly ExpandedNodeId EddDataTypeInfo_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Fdi7.Objects.EddDataTypeInfo_Encoding_DefaultBinary, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the EddDataTypeInfo_Encoding_DefaultXml Object.
         /// </summary>
         public static readonly ExpandedNodeId EddDataTypeInfo_Encoding_DefaultXml = new ExpandedNodeId(Opc.Ua.Fdi7.Objects.EddDataTypeInfo_Encoding_DefaultXml, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the EddDataTypeInfo_Encoding_DefaultBinary Object.
+        /// The identifier for the EddDataTypeInfo_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly ExpandedNodeId EddDataTypeInfo_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Fdi7.Objects.EddDataTypeInfo_Encoding_DefaultBinary, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId EddDataTypeInfo_Encoding_DefaultJson = new ExpandedNodeId(Opc.Ua.Fdi7.Objects.EddDataTypeInfo_Encoding_DefaultJson, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
     }
     #endregion
 
@@ -12747,21 +12767,6 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_MethodSet_Transfer_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_MethodSet_Transfer_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the OpcUaFdi7_XmlSchema Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaFdi7_XmlSchema = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.OpcUaFdi7_XmlSchema, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the OpcUaFdi7_XmlSchema_NamespaceUri Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaFdi7_XmlSchema_NamespaceUri = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.OpcUaFdi7_XmlSchema_NamespaceUri, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the OpcUaFdi7_XmlSchema_EddDataTypeInfo Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaFdi7_XmlSchema_EddDataTypeInfo = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.OpcUaFdi7_XmlSchema_EddDataTypeInfo, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
         /// The identifier for the OpcUaFdi7_BinarySchema Variable.
         /// </summary>
         public static readonly ExpandedNodeId OpcUaFdi7_BinarySchema = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.OpcUaFdi7_BinarySchema, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -12772,9 +12777,34 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId OpcUaFdi7_BinarySchema_NamespaceUri = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.OpcUaFdi7_BinarySchema_NamespaceUri, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the OpcUaFdi7_BinarySchema_Deprecated Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi7_BinarySchema_Deprecated = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.OpcUaFdi7_BinarySchema_Deprecated, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the OpcUaFdi7_BinarySchema_EddDataTypeInfo Variable.
         /// </summary>
         public static readonly ExpandedNodeId OpcUaFdi7_BinarySchema_EddDataTypeInfo = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.OpcUaFdi7_BinarySchema_EddDataTypeInfo, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi7_XmlSchema Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi7_XmlSchema = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.OpcUaFdi7_XmlSchema, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi7_XmlSchema_NamespaceUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi7_XmlSchema_NamespaceUri = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.OpcUaFdi7_XmlSchema_NamespaceUri, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi7_XmlSchema_Deprecated Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi7_XmlSchema_Deprecated = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.OpcUaFdi7_XmlSchema_Deprecated, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi7_XmlSchema_EddDataTypeInfo Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi7_XmlSchema_EddDataTypeInfo = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.OpcUaFdi7_XmlSchema_EddDataTypeInfo, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
     }
     #endregion
 

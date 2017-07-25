@@ -152,3 +152,11 @@ WindowModeType,194,DataType
 WindowModeType_EnumValues,195,Variable
 StyleType,196,DataType
 StyleType_EnumValues,197,Variable
+DeviceHealthDiagnostics,198,Variable
+RegistrationParameters_Encoding_DefaultJson,8001,Object
+RegisteredNode_Encoding_DefaultJson,8002,Object
+RegisterNodesResult_Encoding_DefaultJson,8003,Object
+TransferIncident_Encoding_DefaultJson,8004,Object
+ApplyResult_Encoding_DefaultJson,8005,Object
+OpcUaFdi5_BinarySchema_Deprecated,8006,Variable
+OpcUaFdi5_XmlSchema_Deprecated,8008,Variable

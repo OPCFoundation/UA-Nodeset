@@ -8,8 +8,8 @@
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   TargetNamespace="http://fdi-cooperation.com/OPCUA/FDI5/"
   TargetXmlNamespace="http://fdi-cooperation.com/OPCUA/FDI5/"
-  TargetVersion="1.00"
-  TargetPublicationDate="2013-12-31T00:00:00Z"
+  TargetVersion="1.1"
+  TargetPublicationDate="2017-07-14T00:00:00Z"
   xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
 
   <Namespaces>
@@ -238,6 +238,15 @@
       <Reference IsInverse="true">
         <ReferenceType>ua:HasProperty</ReferenceType>
         <TargetId>ua:Server</TargetId>
+      </Reference>
+    </References>
+  </Variable>
+
+  <Variable SymbolicName="FDI:DeviceHealthDiagnostics" TypeDefinition="ua:PropertyType" DataType="ua:LocalizedText" ValueRank="Array" ModellingRule="Optional">
+    <References>
+      <Reference IsInverse="true">
+        <ReferenceType>ua:HasProperty</ReferenceType>
+        <TargetId>DI:DeviceType</TargetId>
       </Reference>
     </References>
   </Variable>
