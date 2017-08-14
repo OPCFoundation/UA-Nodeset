@@ -15332,10 +15332,10 @@
       <Reference ReferenceType="HasProperty">i=2398</Reference>
       <Reference ReferenceType="HasComponent">i=2399</Reference>
       <Reference ReferenceType="HasComponent">i=3850</Reference>
+      <Reference ReferenceType="HasComponent">i=2406</Reference>
       <Reference ReferenceType="HasComponent">i=2400</Reference>
       <Reference ReferenceType="HasComponent">i=2402</Reference>
       <Reference ReferenceType="HasComponent">i=2404</Reference>
-      <Reference ReferenceType="HasComponent">i=2406</Reference>
       <Reference ReferenceType="HasComponent">i=2408</Reference>
       <Reference ReferenceType="HasComponent">i=2410</Reference>
       <Reference ReferenceType="HasComponent">i=2412</Reference>
@@ -15466,7 +15466,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2391</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2399" BrowseName="ProgramDiagnostics" ParentNodeId="i=2391" DataType="i=894">
+  <UAVariable NodeId="i=2399" BrowseName="ProgramDiagnostics" ParentNodeId="i=2391" DataType="i=15396">
     <DisplayName>ProgramDiagnostics</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=3840</Reference>
@@ -15477,9 +15477,11 @@
       <Reference ReferenceType="HasProperty">i=3845</Reference>
       <Reference ReferenceType="HasProperty">i=3846</Reference>
       <Reference ReferenceType="HasProperty">i=3847</Reference>
+      <Reference ReferenceType="HasProperty">i=15038</Reference>
+      <Reference ReferenceType="HasProperty">i=15040</Reference>
       <Reference ReferenceType="HasProperty">i=3848</Reference>
       <Reference ReferenceType="HasProperty">i=3849</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2380</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=15383</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -15532,7 +15534,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2399</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3846" BrowseName="LastMethodInputArguments" ParentNodeId="i=2399" ValueRank="1">
+  <UAVariable NodeId="i=3846" BrowseName="LastMethodInputArguments" ParentNodeId="i=2399" DataType="i=296" ValueRank="1">
     <DisplayName>LastMethodInputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -15540,8 +15542,24 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2399</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3847" BrowseName="LastMethodOutputArguments" ParentNodeId="i=2399" ValueRank="1">
+  <UAVariable NodeId="i=3847" BrowseName="LastMethodOutputArguments" ParentNodeId="i=2399" DataType="i=296" ValueRank="1">
     <DisplayName>LastMethodOutputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=2399</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=15038" BrowseName="LastMethodInputValues" ParentNodeId="i=2399" ValueRank="1">
+    <DisplayName>LastMethodInputValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=2399</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=15040" BrowseName="LastMethodOutputValues" ParentNodeId="i=2399" ValueRank="1">
+    <DisplayName>LastMethodOutputValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -15572,6 +15590,30 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
   </UAObject>
+  <UAObject NodeId="i=2406" BrowseName="Halted" ParentNodeId="i=2391">
+    <DisplayName>Halted</DisplayName>
+    <Description>The Program is in a terminal or failed state, and it cannot be started or resumed without being reset.</Description>
+    <References>
+      <Reference ReferenceType="HasProperty">i=2407</Reference>
+      <Reference ReferenceType="i=51" IsForward="false">i=2408</Reference>
+      <Reference ReferenceType="i=52" IsForward="false">i=2412</Reference>
+      <Reference ReferenceType="i=52" IsForward="false">i=2420</Reference>
+      <Reference ReferenceType="i=52" IsForward="false">i=2424</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=2407" BrowseName="StateNumber" ParentNodeId="i=2406" DataType="UInt32">
+    <DisplayName>StateNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=2406</Reference>
+    </References>
+    <Value>
+      <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1</UInt32>
+    </Value>
+  </UAVariable>
   <UAObject NodeId="i=2400" BrowseName="Ready" ParentNodeId="i=2391">
     <DisplayName>Ready</DisplayName>
     <Description>The Program is properly initialized and may be started.</Description>
@@ -15594,7 +15636,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2400</Reference>
     </References>
     <Value>
-      <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1</UInt32>
+      <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2</UInt32>
     </Value>
   </UAVariable>
   <UAObject NodeId="i=2402" BrowseName="Running" ParentNodeId="i=2391">
@@ -15619,7 +15661,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2402</Reference>
     </References>
     <Value>
-      <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2</UInt32>
+      <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">3</UInt32>
     </Value>
   </UAVariable>
   <UAObject NodeId="i=2404" BrowseName="Suspended" ParentNodeId="i=2391">
@@ -15641,30 +15683,6 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=2404</Reference>
-    </References>
-    <Value>
-      <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">3</UInt32>
-    </Value>
-  </UAVariable>
-  <UAObject NodeId="i=2406" BrowseName="Halted" ParentNodeId="i=2391">
-    <DisplayName>Halted</DisplayName>
-    <Description>The Program is in a terminal or failed state, and it cannot be started or resumed without being reset.</Description>
-    <References>
-      <Reference ReferenceType="HasProperty">i=2407</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">i=2408</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=2412</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=2420</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=2424</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
-    </References>
-  </UAObject>
-  <UAVariable NodeId="i=2407" BrowseName="StateNumber" ParentNodeId="i=2406" DataType="UInt32">
-    <DisplayName>StateNumber</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=2406</Reference>
     </References>
     <Value>
       <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">4</UInt32>
@@ -15880,7 +15898,7 @@
     <Description>Causes the Program to transition from the Ready state to the Running state.</Description>
     <References>
       <Reference ReferenceType="i=53" IsForward="false">i=2410</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
   </UAMethod>
@@ -15889,7 +15907,7 @@
     <Description>Causes the Program to transition from the Running state to the Suspended state.</Description>
     <References>
       <Reference ReferenceType="i=53" IsForward="false">i=2416</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
   </UAMethod>
@@ -15898,7 +15916,7 @@
     <Description>Causes the Program to transition from the Suspended state to the Running state.</Description>
     <References>
       <Reference ReferenceType="i=53" IsForward="false">i=2418</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
   </UAMethod>
@@ -15909,7 +15927,7 @@
       <Reference ReferenceType="i=53" IsForward="false">i=2412</Reference>
       <Reference ReferenceType="i=53" IsForward="false">i=2420</Reference>
       <Reference ReferenceType="i=53" IsForward="false">i=2424</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
   </UAMethod>
@@ -15918,7 +15936,7 @@
     <Description>Causes the Program to transition from the Halted state to the Ready state.</Description>
     <References>
       <Reference ReferenceType="i=53" IsForward="false">i=2408</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
   </UAMethod>
@@ -16070,6 +16088,120 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=2380</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="i=15383" BrowseName="ProgramDiagnostic2Type" DataType="i=15396">
+    <DisplayName>ProgramDiagnostic2Type</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=15384</Reference>
+      <Reference ReferenceType="HasProperty">i=15385</Reference>
+      <Reference ReferenceType="HasProperty">i=15386</Reference>
+      <Reference ReferenceType="HasProperty">i=15387</Reference>
+      <Reference ReferenceType="HasProperty">i=15388</Reference>
+      <Reference ReferenceType="HasProperty">i=15389</Reference>
+      <Reference ReferenceType="HasProperty">i=15390</Reference>
+      <Reference ReferenceType="HasProperty">i=15391</Reference>
+      <Reference ReferenceType="HasProperty">i=15392</Reference>
+      <Reference ReferenceType="HasProperty">i=15393</Reference>
+      <Reference ReferenceType="HasProperty">i=15394</Reference>
+      <Reference ReferenceType="HasProperty">i=15395</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="i=15384" BrowseName="CreateSessionId" ParentNodeId="i=15383" DataType="NodeId">
+    <DisplayName>CreateSessionId</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15383</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=15385" BrowseName="CreateClientName" ParentNodeId="i=15383" DataType="String">
+    <DisplayName>CreateClientName</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15383</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=15386" BrowseName="InvocationCreationTime" ParentNodeId="i=15383" DataType="i=294">
+    <DisplayName>InvocationCreationTime</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15383</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=15387" BrowseName="LastTransitionTime" ParentNodeId="i=15383" DataType="i=294">
+    <DisplayName>LastTransitionTime</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15383</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=15388" BrowseName="LastMethodCall" ParentNodeId="i=15383" DataType="String">
+    <DisplayName>LastMethodCall</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15383</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=15389" BrowseName="LastMethodSessionId" ParentNodeId="i=15383" DataType="NodeId">
+    <DisplayName>LastMethodSessionId</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15383</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=15390" BrowseName="LastMethodInputArguments" ParentNodeId="i=15383" DataType="i=296" ValueRank="1">
+    <DisplayName>LastMethodInputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15383</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=15391" BrowseName="LastMethodOutputArguments" ParentNodeId="i=15383" DataType="i=296" ValueRank="1">
+    <DisplayName>LastMethodOutputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15383</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=15392" BrowseName="LastMethodInputValues" ParentNodeId="i=15383" ValueRank="1">
+    <DisplayName>LastMethodInputValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15383</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=15393" BrowseName="LastMethodOutputValues" ParentNodeId="i=15383" ValueRank="1">
+    <DisplayName>LastMethodOutputValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15383</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=15394" BrowseName="LastMethodCallTime" ParentNodeId="i=15383" DataType="i=294">
+    <DisplayName>LastMethodCallTime</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15383</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=15395" BrowseName="LastMethodReturnStatus" ParentNodeId="i=15383" DataType="StatusCode">
+    <DisplayName>LastMethodReturnStatus</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15383</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="i=11214" BrowseName="Annotations" DataType="i=891" ValueRank="-2">
@@ -39495,6 +39627,26 @@
       <Field Name="LastMethodReturnStatus" DataType="i=299" />
     </Definition>
   </UADataType>
+  <UADataType NodeId="i=15396" BrowseName="ProgramDiagnostic2DataType">
+    <DisplayName>ProgramDiagnostic2DataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="ProgramDiagnostic2DataType">
+      <Field Name="CreateSessionId" DataType="i=17" />
+      <Field Name="CreateClientName" DataType="i=12" />
+      <Field Name="InvocationCreationTime" DataType="i=294" />
+      <Field Name="LastTransitionTime" DataType="i=294" />
+      <Field Name="LastMethodCall" DataType="i=12" />
+      <Field Name="LastMethodSessionId" DataType="i=17" />
+      <Field Name="LastMethodInputArguments" DataType="i=296" ValueRank="1" />
+      <Field Name="LastMethodOutputArguments" DataType="i=296" ValueRank="1" />
+      <Field Name="LastMethodInputValues" ValueRank="1" />
+      <Field Name="LastMethodOutputValues" ValueRank="1" />
+      <Field Name="LastMethodCallTime" DataType="i=294" />
+      <Field Name="LastMethodReturnStatus" DataType="i=299" />
+    </Definition>
+  </UADataType>
   <UADataType NodeId="i=891" BrowseName="Annotation">
     <DisplayName>Annotation</DisplayName>
     <References>
@@ -40157,6 +40309,14 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
+  <UAObject NodeId="i=15397" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=15396</Reference>
+      <Reference ReferenceType="HasDescription">i=15398</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
   <UAObject NodeId="i=893" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
     <References>
@@ -40245,6 +40405,7 @@
       <Reference ReferenceType="HasComponent">i=12091</Reference>
       <Reference ReferenceType="HasComponent">i=12094</Reference>
       <Reference ReferenceType="HasComponent">i=8247</Reference>
+      <Reference ReferenceType="HasComponent">i=15398</Reference>
       <Reference ReferenceType="HasComponent">i=8244</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=93</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
@@ -43044,19 +43205,44 @@ bWU9InRuczpBcmd1bWVudCIgTGVuZ3RoRmllbGQ9Ik5vT2ZMYXN0TWV0aG9kT3V0cHV0QXJndW1l
 bnRzIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0iTGFzdE1ldGhvZENhbGxUaW1lIiBUeXBlTmFt
 ZT0ib3BjOkRhdGVUaW1lIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0iTGFzdE1ldGhvZFJldHVy
 blN0YXR1cyIgVHlwZU5hbWU9InRuczpTdGF0dXNSZXN1bHQiIC8+DQogIDwvb3BjOlN0cnVjdHVy
-ZWRUeXBlPg0KDQogIDxvcGM6U3RydWN0dXJlZFR5cGUgTmFtZT0iQW5ub3RhdGlvbiIgQmFzZVR5
-cGU9InVhOkV4dGVuc2lvbk9iamVjdCI+DQogICAgPG9wYzpGaWVsZCBOYW1lPSJNZXNzYWdlIiBU
-eXBlTmFtZT0ib3BjOlN0cmluZyIgLz4NCiAgICA8b3BjOkZpZWxkIE5hbWU9IlVzZXJOYW1lIiBU
-eXBlTmFtZT0ib3BjOlN0cmluZyIgLz4NCiAgICA8b3BjOkZpZWxkIE5hbWU9IkFubm90YXRpb25U
-aW1lIiBUeXBlTmFtZT0ib3BjOkRhdGVUaW1lIiAvPg0KICA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4N
-Cg0KICA8b3BjOkVudW1lcmF0ZWRUeXBlIE5hbWU9IkV4Y2VwdGlvbkRldmlhdGlvbkZvcm1hdCIg
-TGVuZ3RoSW5CaXRzPSIzMiI+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQWJzb2x1
-dGVWYWx1ZSIgVmFsdWU9IjAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iUGVy
-Y2VudE9mVmFsdWUiIFZhbHVlPSIxIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9
-IlBlcmNlbnRPZlJhbmdlIiBWYWx1ZT0iMiIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBO
-YW1lPSJQZXJjZW50T2ZFVVJhbmdlIiBWYWx1ZT0iMyIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRW
-YWx1ZSBOYW1lPSJVbmtub3duIiBWYWx1ZT0iNCIgLz4NCiAgPC9vcGM6RW51bWVyYXRlZFR5cGU+
-DQoNCjwvb3BjOlR5cGVEaWN0aW9uYXJ5Pg==</ByteString>
+ZWRUeXBlPg0KDQogIDxvcGM6U3RydWN0dXJlZFR5cGUgTmFtZT0iUHJvZ3JhbURpYWdub3N0aWMy
+RGF0YVR5cGUiIEJhc2VUeXBlPSJ1YTpFeHRlbnNpb25PYmplY3QiPg0KICAgIDxvcGM6RmllbGQg
+TmFtZT0iQ3JlYXRlU2Vzc2lvbklkIiBUeXBlTmFtZT0idWE6Tm9kZUlkIiAvPg0KICAgIDxvcGM6
+RmllbGQgTmFtZT0iQ3JlYXRlQ2xpZW50TmFtZSIgVHlwZU5hbWU9Im9wYzpTdHJpbmciIC8+DQog
+ICAgPG9wYzpGaWVsZCBOYW1lPSJJbnZvY2F0aW9uQ3JlYXRpb25UaW1lIiBUeXBlTmFtZT0ib3Bj
+OkRhdGVUaW1lIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0iTGFzdFRyYW5zaXRpb25UaW1lIiBU
+eXBlTmFtZT0ib3BjOkRhdGVUaW1lIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0iTGFzdE1ldGhv
+ZENhbGwiIFR5cGVOYW1lPSJvcGM6U3RyaW5nIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0iTGFz
+dE1ldGhvZFNlc3Npb25JZCIgVHlwZU5hbWU9InVhOk5vZGVJZCIgLz4NCiAgICA8b3BjOkZpZWxk
+IE5hbWU9Ik5vT2ZMYXN0TWV0aG9kSW5wdXRBcmd1bWVudHMiIFR5cGVOYW1lPSJvcGM6SW50MzIi
+IC8+DQogICAgPG9wYzpGaWVsZCBOYW1lPSJMYXN0TWV0aG9kSW5wdXRBcmd1bWVudHMiIFR5cGVO
+YW1lPSJ0bnM6QXJndW1lbnQiIExlbmd0aEZpZWxkPSJOb09mTGFzdE1ldGhvZElucHV0QXJndW1l
+bnRzIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0iTm9PZkxhc3RNZXRob2RPdXRwdXRBcmd1bWVu
+dHMiIFR5cGVOYW1lPSJvcGM6SW50MzIiIC8+DQogICAgPG9wYzpGaWVsZCBOYW1lPSJMYXN0TWV0
+aG9kT3V0cHV0QXJndW1lbnRzIiBUeXBlTmFtZT0idG5zOkFyZ3VtZW50IiBMZW5ndGhGaWVsZD0i
+Tm9PZkxhc3RNZXRob2RPdXRwdXRBcmd1bWVudHMiIC8+DQogICAgPG9wYzpGaWVsZCBOYW1lPSJO
+b09mTGFzdE1ldGhvZElucHV0VmFsdWVzIiBUeXBlTmFtZT0ib3BjOkludDMyIiAvPg0KICAgIDxv
+cGM6RmllbGQgTmFtZT0iTGFzdE1ldGhvZElucHV0VmFsdWVzIiBUeXBlTmFtZT0idWE6VmFyaWFu
+dCIgTGVuZ3RoRmllbGQ9Ik5vT2ZMYXN0TWV0aG9kSW5wdXRWYWx1ZXMiIC8+DQogICAgPG9wYzpG
+aWVsZCBOYW1lPSJOb09mTGFzdE1ldGhvZE91dHB1dFZhbHVlcyIgVHlwZU5hbWU9Im9wYzpJbnQz
+MiIgLz4NCiAgICA8b3BjOkZpZWxkIE5hbWU9Ikxhc3RNZXRob2RPdXRwdXRWYWx1ZXMiIFR5cGVO
+YW1lPSJ1YTpWYXJpYW50IiBMZW5ndGhGaWVsZD0iTm9PZkxhc3RNZXRob2RPdXRwdXRWYWx1ZXMi
+IC8+DQogICAgPG9wYzpGaWVsZCBOYW1lPSJMYXN0TWV0aG9kQ2FsbFRpbWUiIFR5cGVOYW1lPSJv
+cGM6RGF0ZVRpbWUiIC8+DQogICAgPG9wYzpGaWVsZCBOYW1lPSJMYXN0TWV0aG9kUmV0dXJuU3Rh
+dHVzIiBUeXBlTmFtZT0idG5zOlN0YXR1c1Jlc3VsdCIgLz4NCiAgPC9vcGM6U3RydWN0dXJlZFR5
+cGU+DQoNCiAgPG9wYzpTdHJ1Y3R1cmVkVHlwZSBOYW1lPSJBbm5vdGF0aW9uIiBCYXNlVHlwZT0i
+dWE6RXh0ZW5zaW9uT2JqZWN0Ij4NCiAgICA8b3BjOkZpZWxkIE5hbWU9Ik1lc3NhZ2UiIFR5cGVO
+YW1lPSJvcGM6U3RyaW5nIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0iVXNlck5hbWUiIFR5cGVO
+YW1lPSJvcGM6U3RyaW5nIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0iQW5ub3RhdGlvblRpbWUi
+IFR5cGVOYW1lPSJvcGM6RGF0ZVRpbWUiIC8+DQogIDwvb3BjOlN0cnVjdHVyZWRUeXBlPg0KDQog
+IDxvcGM6RW51bWVyYXRlZFR5cGUgTmFtZT0iRXhjZXB0aW9uRGV2aWF0aW9uRm9ybWF0IiBMZW5n
+dGhJbkJpdHM9IjMyIj4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJBYnNvbHV0ZVZh
+bHVlIiBWYWx1ZT0iMCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJQZXJjZW50
+T2ZWYWx1ZSIgVmFsdWU9IjEiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iUGVy
+Y2VudE9mUmFuZ2UiIFZhbHVlPSIyIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9
+IlBlcmNlbnRPZkVVUmFuZ2UiIFZhbHVlPSIzIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVl
+IE5hbWU9IlVua25vd24iIFZhbHVlPSI0IiAvPg0KICA8L29wYzpFbnVtZXJhdGVkVHlwZT4NCg0K
+PC9vcGM6VHlwZURpY3Rpb25hcnk+</ByteString>
     </Value>
   </UAVariable>
   <UAVariable NodeId="i=7619" BrowseName="NamespaceUri" ParentNodeId="i=7617" DataType="String">
@@ -43831,6 +44017,16 @@ DQoNCjwvb3BjOlR5cGVEaWN0aW9uYXJ5Pg==</ByteString>
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">ProgramDiagnosticDataType</String>
     </Value>
   </UAVariable>
+  <UAVariable NodeId="i=15398" BrowseName="ProgramDiagnostic2DataType" ParentNodeId="i=7617" DataType="String">
+    <DisplayName>ProgramDiagnostic2DataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=7617</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">ProgramDiagnostic2DataType</String>
+    </Value>
+  </UAVariable>
   <UAVariable NodeId="i=8244" BrowseName="Annotation" ParentNodeId="i=7617" DataType="String">
     <DisplayName>Annotation</DisplayName>
     <References>
@@ -44441,6 +44637,14 @@ DQoNCjwvb3BjOlR5cGVEaWN0aW9uYXJ5Pg==</ByteString>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
+  <UAObject NodeId="i=15401" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=15396</Reference>
+      <Reference ReferenceType="HasDescription">i=15402</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
   <UAObject NodeId="i=892" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
@@ -44529,6 +44733,7 @@ DQoNCjwvb3BjOlR5cGVEaWN0aW9uYXJ5Pg==</ByteString>
       <Reference ReferenceType="HasComponent">i=12083</Reference>
       <Reference ReferenceType="HasComponent">i=12086</Reference>
       <Reference ReferenceType="HasComponent">i=8882</Reference>
+      <Reference ReferenceType="HasComponent">i=15402</Reference>
       <Reference ReferenceType="HasComponent">i=8879</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=92</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
@@ -48338,23 +48543,46 @@ bWluT2NjdXJzPSIwIiAvPg0KICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iTGFzdE1ldGhvZFJldHVy
 blN0YXR1cyIgdHlwZT0idG5zOlN0YXR1c1Jlc3VsdCIgbWluT2NjdXJzPSIwIiBuaWxsYWJsZT0i
 dHJ1ZSIgLz4NCiAgICA8L3hzOnNlcXVlbmNlPg0KICA8L3hzOmNvbXBsZXhUeXBlPg0KICA8eHM6
 ZWxlbWVudCBuYW1lPSJQcm9ncmFtRGlhZ25vc3RpY0RhdGFUeXBlIiB0eXBlPSJ0bnM6UHJvZ3Jh
-bURpYWdub3N0aWNEYXRhVHlwZSIgLz4NCg0KICA8eHM6Y29tcGxleFR5cGUgbmFtZT0iQW5ub3Rh
-dGlvbiI+DQogICAgPHhzOnNlcXVlbmNlPg0KICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iTWVzc2Fn
-ZSIgdHlwZT0ieHM6c3RyaW5nIiBtaW5PY2N1cnM9IjAiIG5pbGxhYmxlPSJ0cnVlIiAvPg0KICAg
-ICAgPHhzOmVsZW1lbnQgbmFtZT0iVXNlck5hbWUiIHR5cGU9InhzOnN0cmluZyIgbWluT2NjdXJz
-PSIwIiBuaWxsYWJsZT0idHJ1ZSIgLz4NCiAgICAgIDx4czplbGVtZW50IG5hbWU9IkFubm90YXRp
-b25UaW1lIiB0eXBlPSJ4czpkYXRlVGltZSIgbWluT2NjdXJzPSIwIiAvPg0KICAgIDwveHM6c2Vx
-dWVuY2U+DQogIDwveHM6Y29tcGxleFR5cGU+DQogIDx4czplbGVtZW50IG5hbWU9IkFubm90YXRp
-b24iIHR5cGU9InRuczpBbm5vdGF0aW9uIiAvPg0KDQogIDx4czpzaW1wbGVUeXBlICBuYW1lPSJF
-eGNlcHRpb25EZXZpYXRpb25Gb3JtYXQiPg0KICAgIDx4czpyZXN0cmljdGlvbiBiYXNlPSJ4czpz
-dHJpbmciPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJBYnNvbHV0ZVZhbHVlXzAiIC8+
-DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlBlcmNlbnRPZlZhbHVlXzEiIC8+DQogICAg
-ICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlBlcmNlbnRPZlJhbmdlXzIiIC8+DQogICAgICA8eHM6
-ZW51bWVyYXRpb24gdmFsdWU9IlBlcmNlbnRPZkVVUmFuZ2VfMyIgLz4NCiAgICAgIDx4czplbnVt
-ZXJhdGlvbiB2YWx1ZT0iVW5rbm93bl80IiAvPg0KICAgIDwveHM6cmVzdHJpY3Rpb24+DQogIDwv
-eHM6c2ltcGxlVHlwZT4NCiAgPHhzOmVsZW1lbnQgbmFtZT0iRXhjZXB0aW9uRGV2aWF0aW9uRm9y
-bWF0IiB0eXBlPSJ0bnM6RXhjZXB0aW9uRGV2aWF0aW9uRm9ybWF0IiAvPg0KDQo8L3hzOnNjaGVt
-YT4=</ByteString>
+bURpYWdub3N0aWNEYXRhVHlwZSIgLz4NCg0KICA8eHM6Y29tcGxleFR5cGUgbmFtZT0iUHJvZ3Jh
+bURpYWdub3N0aWMyRGF0YVR5cGUiPg0KICAgIDx4czpzZXF1ZW5jZT4NCiAgICAgIDx4czplbGVt
+ZW50IG5hbWU9IkNyZWF0ZVNlc3Npb25JZCIgdHlwZT0idWE6Tm9kZUlkIiBtaW5PY2N1cnM9IjAi
+IG5pbGxhYmxlPSJ0cnVlIiAvPg0KICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iQ3JlYXRlQ2xpZW50
+TmFtZSIgdHlwZT0ieHM6c3RyaW5nIiBtaW5PY2N1cnM9IjAiIG5pbGxhYmxlPSJ0cnVlIiAvPg0K
+ICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iSW52b2NhdGlvbkNyZWF0aW9uVGltZSIgdHlwZT0ieHM6
+ZGF0ZVRpbWUiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgIDx4czplbGVtZW50IG5hbWU9Ikxhc3RU
+cmFuc2l0aW9uVGltZSIgdHlwZT0ieHM6ZGF0ZVRpbWUiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAg
+IDx4czplbGVtZW50IG5hbWU9Ikxhc3RNZXRob2RDYWxsIiB0eXBlPSJ4czpzdHJpbmciIG1pbk9j
+Y3Vycz0iMCIgbmlsbGFibGU9InRydWUiIC8+DQogICAgICA8eHM6ZWxlbWVudCBuYW1lPSJMYXN0
+TWV0aG9kU2Vzc2lvbklkIiB0eXBlPSJ1YTpOb2RlSWQiIG1pbk9jY3Vycz0iMCIgbmlsbGFibGU9
+InRydWUiIC8+DQogICAgICA8eHM6ZWxlbWVudCBuYW1lPSJMYXN0TWV0aG9kSW5wdXRBcmd1bWVu
+dHMiIHR5cGU9InRuczpMaXN0T2ZBcmd1bWVudCIgbWluT2NjdXJzPSIwIiBuaWxsYWJsZT0idHJ1
+ZSIgLz4NCiAgICAgIDx4czplbGVtZW50IG5hbWU9Ikxhc3RNZXRob2RPdXRwdXRBcmd1bWVudHMi
+IHR5cGU9InRuczpMaXN0T2ZBcmd1bWVudCIgbWluT2NjdXJzPSIwIiBuaWxsYWJsZT0idHJ1ZSIg
+Lz4NCiAgICAgIDx4czplbGVtZW50IG5hbWU9Ikxhc3RNZXRob2RJbnB1dFZhbHVlcyIgdHlwZT0i
+dWE6TGlzdE9mVmFyaWFudCIgbWluT2NjdXJzPSIwIiBuaWxsYWJsZT0idHJ1ZSIgLz4NCiAgICAg
+IDx4czplbGVtZW50IG5hbWU9Ikxhc3RNZXRob2RPdXRwdXRWYWx1ZXMiIHR5cGU9InVhOkxpc3RP
+ZlZhcmlhbnQiIG1pbk9jY3Vycz0iMCIgbmlsbGFibGU9InRydWUiIC8+DQogICAgICA8eHM6ZWxl
+bWVudCBuYW1lPSJMYXN0TWV0aG9kQ2FsbFRpbWUiIHR5cGU9InhzOmRhdGVUaW1lIiBtaW5PY2N1
+cnM9IjAiIC8+DQogICAgICA8eHM6ZWxlbWVudCBuYW1lPSJMYXN0TWV0aG9kUmV0dXJuU3RhdHVz
+IiB0eXBlPSJ0bnM6U3RhdHVzUmVzdWx0IiBtaW5PY2N1cnM9IjAiIG5pbGxhYmxlPSJ0cnVlIiAv
+Pg0KICAgIDwveHM6c2VxdWVuY2U+DQogIDwveHM6Y29tcGxleFR5cGU+DQogIDx4czplbGVtZW50
+IG5hbWU9IlByb2dyYW1EaWFnbm9zdGljMkRhdGFUeXBlIiB0eXBlPSJ0bnM6UHJvZ3JhbURpYWdu
+b3N0aWMyRGF0YVR5cGUiIC8+DQoNCiAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9IkFubm90YXRpb24i
+Pg0KICAgIDx4czpzZXF1ZW5jZT4NCiAgICAgIDx4czplbGVtZW50IG5hbWU9Ik1lc3NhZ2UiIHR5
+cGU9InhzOnN0cmluZyIgbWluT2NjdXJzPSIwIiBuaWxsYWJsZT0idHJ1ZSIgLz4NCiAgICAgIDx4
+czplbGVtZW50IG5hbWU9IlVzZXJOYW1lIiB0eXBlPSJ4czpzdHJpbmciIG1pbk9jY3Vycz0iMCIg
+bmlsbGFibGU9InRydWUiIC8+DQogICAgICA8eHM6ZWxlbWVudCBuYW1lPSJBbm5vdGF0aW9uVGlt
+ZSIgdHlwZT0ieHM6ZGF0ZVRpbWUiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICA8L3hzOnNlcXVlbmNl
+Pg0KICA8L3hzOmNvbXBsZXhUeXBlPg0KICA8eHM6ZWxlbWVudCBuYW1lPSJBbm5vdGF0aW9uIiB0
+eXBlPSJ0bnM6QW5ub3RhdGlvbiIgLz4NCg0KICA8eHM6c2ltcGxlVHlwZSAgbmFtZT0iRXhjZXB0
+aW9uRGV2aWF0aW9uRm9ybWF0Ij4NCiAgICA8eHM6cmVzdHJpY3Rpb24gYmFzZT0ieHM6c3RyaW5n
+Ij4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQWJzb2x1dGVWYWx1ZV8wIiAvPg0KICAg
+ICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJQZXJjZW50T2ZWYWx1ZV8xIiAvPg0KICAgICAgPHhz
+OmVudW1lcmF0aW9uIHZhbHVlPSJQZXJjZW50T2ZSYW5nZV8yIiAvPg0KICAgICAgPHhzOmVudW1l
+cmF0aW9uIHZhbHVlPSJQZXJjZW50T2ZFVVJhbmdlXzMiIC8+DQogICAgICA8eHM6ZW51bWVyYXRp
+b24gdmFsdWU9IlVua25vd25fNCIgLz4NCiAgICA8L3hzOnJlc3RyaWN0aW9uPg0KICA8L3hzOnNp
+bXBsZVR5cGU+DQogIDx4czplbGVtZW50IG5hbWU9IkV4Y2VwdGlvbkRldmlhdGlvbkZvcm1hdCIg
+dHlwZT0idG5zOkV4Y2VwdGlvbkRldmlhdGlvbkZvcm1hdCIgLz4NCg0KPC94czpzY2hlbWE+</ByteString>
     </Value>
   </UAVariable>
   <UAVariable NodeId="i=8254" BrowseName="NamespaceUri" ParentNodeId="i=8252" DataType="String">
@@ -49129,6 +49357,16 @@ YT4=</ByteString>
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='ProgramDiagnosticDataType']</String>
     </Value>
   </UAVariable>
+  <UAVariable NodeId="i=15402" BrowseName="ProgramDiagnostic2DataType" ParentNodeId="i=8252" DataType="String">
+    <DisplayName>ProgramDiagnostic2DataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=8252</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='ProgramDiagnostic2DataType']</String>
+    </Value>
+  </UAVariable>
   <UAVariable NodeId="i=8879" BrowseName="Annotation" ParentNodeId="i=8252" DataType="String">
     <DisplayName>Annotation</DisplayName>
     <References>
@@ -49661,6 +49899,13 @@ YT4=</ByteString>
     <DisplayName>Default JSON</DisplayName>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=894</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=15405" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=15396</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>

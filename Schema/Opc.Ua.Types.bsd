@@ -2656,6 +2656,25 @@
     <opc:Field Name="LastMethodReturnStatus" TypeName="tns:StatusResult" />
   </opc:StructuredType>
 
+  <opc:StructuredType Name="ProgramDiagnostic2DataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="CreateSessionId" TypeName="ua:NodeId" />
+    <opc:Field Name="CreateClientName" TypeName="opc:String" />
+    <opc:Field Name="InvocationCreationTime" TypeName="opc:DateTime" />
+    <opc:Field Name="LastTransitionTime" TypeName="opc:DateTime" />
+    <opc:Field Name="LastMethodCall" TypeName="opc:String" />
+    <opc:Field Name="LastMethodSessionId" TypeName="ua:NodeId" />
+    <opc:Field Name="NoOfLastMethodInputArguments" TypeName="opc:Int32" />
+    <opc:Field Name="LastMethodInputArguments" TypeName="tns:Argument" LengthField="NoOfLastMethodInputArguments" />
+    <opc:Field Name="NoOfLastMethodOutputArguments" TypeName="opc:Int32" />
+    <opc:Field Name="LastMethodOutputArguments" TypeName="tns:Argument" LengthField="NoOfLastMethodOutputArguments" />
+    <opc:Field Name="NoOfLastMethodInputValues" TypeName="opc:Int32" />
+    <opc:Field Name="LastMethodInputValues" TypeName="ua:Variant" LengthField="NoOfLastMethodInputValues" />
+    <opc:Field Name="NoOfLastMethodOutputValues" TypeName="opc:Int32" />
+    <opc:Field Name="LastMethodOutputValues" TypeName="ua:Variant" LengthField="NoOfLastMethodOutputValues" />
+    <opc:Field Name="LastMethodCallTime" TypeName="opc:DateTime" />
+    <opc:Field Name="LastMethodReturnStatus" TypeName="tns:StatusResult" />
+  </opc:StructuredType>
+
   <opc:StructuredType Name="Annotation" BaseType="ua:ExtensionObject">
     <opc:Field Name="Message" TypeName="opc:String" />
     <opc:Field Name="UserName" TypeName="opc:String" />

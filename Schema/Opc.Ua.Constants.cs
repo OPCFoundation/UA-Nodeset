@@ -1705,6 +1705,11 @@ namespace Opc.Ua
         public const uint ProgramDiagnosticDataType = 894;
 
         /// <summary>
+        /// The identifier for the ProgramDiagnostic2DataType DataType.
+        /// </summary>
+        public const uint ProgramDiagnostic2DataType = 15396;
+
+        /// <summary>
         /// The identifier for the Annotation DataType.
         /// </summary>
         public const uint Annotation = 891;
@@ -4015,6 +4020,11 @@ namespace Opc.Ua
         public const uint ProgramStateMachineType_FinalResultData = 3850;
 
         /// <summary>
+        /// The identifier for the ProgramStateMachineType_Halted Object.
+        /// </summary>
+        public const uint ProgramStateMachineType_Halted = 2406;
+
+        /// <summary>
         /// The identifier for the ProgramStateMachineType_Ready Object.
         /// </summary>
         public const uint ProgramStateMachineType_Ready = 2400;
@@ -4028,11 +4038,6 @@ namespace Opc.Ua
         /// The identifier for the ProgramStateMachineType_Suspended Object.
         /// </summary>
         public const uint ProgramStateMachineType_Suspended = 2404;
-
-        /// <summary>
-        /// The identifier for the ProgramStateMachineType_Halted Object.
-        /// </summary>
-        public const uint ProgramStateMachineType_Halted = 2406;
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType_HaltedToReady Object.
@@ -6290,6 +6295,11 @@ namespace Opc.Ua
         public const uint ProgramDiagnosticDataType_Encoding_DefaultBinary = 896;
 
         /// <summary>
+        /// The identifier for the ProgramDiagnostic2DataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ProgramDiagnostic2DataType_Encoding_DefaultBinary = 15397;
+
+        /// <summary>
         /// The identifier for the Annotation_Encoding_DefaultBinary Object.
         /// </summary>
         public const uint Annotation_Encoding_DefaultBinary = 893;
@@ -7495,6 +7505,11 @@ namespace Opc.Ua
         public const uint ProgramDiagnosticDataType_Encoding_DefaultXml = 895;
 
         /// <summary>
+        /// The identifier for the ProgramDiagnostic2DataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint ProgramDiagnostic2DataType_Encoding_DefaultXml = 15401;
+
+        /// <summary>
         /// The identifier for the Annotation_Encoding_DefaultXml Object.
         /// </summary>
         public const uint Annotation_Encoding_DefaultXml = 892;
@@ -8698,6 +8713,11 @@ namespace Opc.Ua
         /// The identifier for the ProgramDiagnosticDataType_Encoding_DefaultJson Object.
         /// </summary>
         public const uint ProgramDiagnosticDataType_Encoding_DefaultJson = 15381;
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2DataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint ProgramDiagnostic2DataType_Encoding_DefaultJson = 15405;
 
         /// <summary>
         /// The identifier for the Annotation_Encoding_DefaultJson Object.
@@ -17655,6 +17675,16 @@ namespace Opc.Ua
         public const uint ProgramStateMachineType_ProgramDiagnostics_LastMethodOutputArguments = 3847;
 
         /// <summary>
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodInputValues Variable.
+        /// </summary>
+        public const uint ProgramStateMachineType_ProgramDiagnostics_LastMethodInputValues = 15038;
+
+        /// <summary>
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodOutputValues Variable.
+        /// </summary>
+        public const uint ProgramStateMachineType_ProgramDiagnostics_LastMethodOutputValues = 15040;
+
+        /// <summary>
         /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodCallTime Variable.
         /// </summary>
         public const uint ProgramStateMachineType_ProgramDiagnostics_LastMethodCallTime = 3848;
@@ -17663,6 +17693,11 @@ namespace Opc.Ua
         /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodReturnStatus Variable.
         /// </summary>
         public const uint ProgramStateMachineType_ProgramDiagnostics_LastMethodReturnStatus = 3849;
+
+        /// <summary>
+        /// The identifier for the ProgramStateMachineType_Halted_StateNumber Variable.
+        /// </summary>
+        public const uint ProgramStateMachineType_Halted_StateNumber = 2407;
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType_Ready_StateNumber Variable.
@@ -17678,11 +17713,6 @@ namespace Opc.Ua
         /// The identifier for the ProgramStateMachineType_Suspended_StateNumber Variable.
         /// </summary>
         public const uint ProgramStateMachineType_Suspended_StateNumber = 2405;
-
-        /// <summary>
-        /// The identifier for the ProgramStateMachineType_Halted_StateNumber Variable.
-        /// </summary>
-        public const uint ProgramStateMachineType_Halted_StateNumber = 2407;
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType_HaltedToReady_TransitionNumber Variable.
@@ -17813,6 +17843,66 @@ namespace Opc.Ua
         /// The identifier for the ProgramDiagnosticType_LastMethodReturnStatus Variable.
         /// </summary>
         public const uint ProgramDiagnosticType_LastMethodReturnStatus = 2390;
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_CreateSessionId Variable.
+        /// </summary>
+        public const uint ProgramDiagnostic2Type_CreateSessionId = 15384;
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_CreateClientName Variable.
+        /// </summary>
+        public const uint ProgramDiagnostic2Type_CreateClientName = 15385;
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_InvocationCreationTime Variable.
+        /// </summary>
+        public const uint ProgramDiagnostic2Type_InvocationCreationTime = 15386;
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_LastTransitionTime Variable.
+        /// </summary>
+        public const uint ProgramDiagnostic2Type_LastTransitionTime = 15387;
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_LastMethodCall Variable.
+        /// </summary>
+        public const uint ProgramDiagnostic2Type_LastMethodCall = 15388;
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_LastMethodSessionId Variable.
+        /// </summary>
+        public const uint ProgramDiagnostic2Type_LastMethodSessionId = 15389;
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_LastMethodInputArguments Variable.
+        /// </summary>
+        public const uint ProgramDiagnostic2Type_LastMethodInputArguments = 15390;
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_LastMethodOutputArguments Variable.
+        /// </summary>
+        public const uint ProgramDiagnostic2Type_LastMethodOutputArguments = 15391;
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_LastMethodInputValues Variable.
+        /// </summary>
+        public const uint ProgramDiagnostic2Type_LastMethodInputValues = 15392;
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_LastMethodOutputValues Variable.
+        /// </summary>
+        public const uint ProgramDiagnostic2Type_LastMethodOutputValues = 15393;
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_LastMethodCallTime Variable.
+        /// </summary>
+        public const uint ProgramDiagnostic2Type_LastMethodCallTime = 15394;
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_LastMethodReturnStatus Variable.
+        /// </summary>
+        public const uint ProgramDiagnostic2Type_LastMethodReturnStatus = 15395;
 
         /// <summary>
         /// The identifier for the Annotations Variable.
@@ -31805,6 +31895,11 @@ namespace Opc.Ua
         public const uint OpcUa_BinarySchema_ProgramDiagnosticDataType = 8247;
 
         /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_ProgramDiagnostic2DataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_ProgramDiagnostic2DataType = 15398;
+
+        /// <summary>
         /// The identifier for the OpcUa_BinarySchema_Annotation Variable.
         /// </summary>
         public const uint OpcUa_BinarySchema_Annotation = 8244;
@@ -32200,6 +32295,11 @@ namespace Opc.Ua
         public const uint OpcUa_XmlSchema_ProgramDiagnosticDataType = 8882;
 
         /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ProgramDiagnostic2DataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_ProgramDiagnostic2DataType = 15402;
+
+        /// <summary>
         /// The identifier for the OpcUa_XmlSchema_Annotation Variable.
         /// </summary>
         public const uint OpcUa_XmlSchema_Annotation = 8879;
@@ -32413,6 +32513,11 @@ namespace Opc.Ua
         /// The identifier for the ProgramDiagnosticType VariableType.
         /// </summary>
         public const uint ProgramDiagnosticType = 2380;
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type VariableType.
+        /// </summary>
+        public const uint ProgramDiagnostic2Type = 15383;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsCounterType VariableType.
@@ -34088,6 +34193,11 @@ namespace Opc.Ua
         /// The identifier for the ProgramDiagnosticDataType DataType.
         /// </summary>
         public static readonly NodeId ProgramDiagnosticDataType = new NodeId(Opc.Ua.DataTypes.ProgramDiagnosticDataType);
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2DataType DataType.
+        /// </summary>
+        public static readonly NodeId ProgramDiagnostic2DataType = new NodeId(Opc.Ua.DataTypes.ProgramDiagnostic2DataType);
 
         /// <summary>
         /// The identifier for the Annotation DataType.
@@ -36400,6 +36510,11 @@ namespace Opc.Ua
         public static readonly NodeId ProgramStateMachineType_FinalResultData = new NodeId(Opc.Ua.Objects.ProgramStateMachineType_FinalResultData);
 
         /// <summary>
+        /// The identifier for the ProgramStateMachineType_Halted Object.
+        /// </summary>
+        public static readonly NodeId ProgramStateMachineType_Halted = new NodeId(Opc.Ua.Objects.ProgramStateMachineType_Halted);
+
+        /// <summary>
         /// The identifier for the ProgramStateMachineType_Ready Object.
         /// </summary>
         public static readonly NodeId ProgramStateMachineType_Ready = new NodeId(Opc.Ua.Objects.ProgramStateMachineType_Ready);
@@ -36413,11 +36528,6 @@ namespace Opc.Ua
         /// The identifier for the ProgramStateMachineType_Suspended Object.
         /// </summary>
         public static readonly NodeId ProgramStateMachineType_Suspended = new NodeId(Opc.Ua.Objects.ProgramStateMachineType_Suspended);
-
-        /// <summary>
-        /// The identifier for the ProgramStateMachineType_Halted Object.
-        /// </summary>
-        public static readonly NodeId ProgramStateMachineType_Halted = new NodeId(Opc.Ua.Objects.ProgramStateMachineType_Halted);
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType_HaltedToReady Object.
@@ -38675,6 +38785,11 @@ namespace Opc.Ua
         public static readonly NodeId ProgramDiagnosticDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ProgramDiagnosticDataType_Encoding_DefaultBinary);
 
         /// <summary>
+        /// The identifier for the ProgramDiagnostic2DataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ProgramDiagnostic2DataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ProgramDiagnostic2DataType_Encoding_DefaultBinary);
+
+        /// <summary>
         /// The identifier for the Annotation_Encoding_DefaultBinary Object.
         /// </summary>
         public static readonly NodeId Annotation_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.Annotation_Encoding_DefaultBinary);
@@ -39880,6 +39995,11 @@ namespace Opc.Ua
         public static readonly NodeId ProgramDiagnosticDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.ProgramDiagnosticDataType_Encoding_DefaultXml);
 
         /// <summary>
+        /// The identifier for the ProgramDiagnostic2DataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId ProgramDiagnostic2DataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.ProgramDiagnostic2DataType_Encoding_DefaultXml);
+
+        /// <summary>
         /// The identifier for the Annotation_Encoding_DefaultXml Object.
         /// </summary>
         public static readonly NodeId Annotation_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.Annotation_Encoding_DefaultXml);
@@ -41083,6 +41203,11 @@ namespace Opc.Ua
         /// The identifier for the ProgramDiagnosticDataType_Encoding_DefaultJson Object.
         /// </summary>
         public static readonly NodeId ProgramDiagnosticDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ProgramDiagnosticDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2DataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId ProgramDiagnostic2DataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ProgramDiagnostic2DataType_Encoding_DefaultJson);
 
         /// <summary>
         /// The identifier for the Annotation_Encoding_DefaultJson Object.
@@ -50040,6 +50165,16 @@ namespace Opc.Ua
         public static readonly NodeId ProgramStateMachineType_ProgramDiagnostics_LastMethodOutputArguments = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostics_LastMethodOutputArguments);
 
         /// <summary>
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodInputValues Variable.
+        /// </summary>
+        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostics_LastMethodInputValues = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostics_LastMethodInputValues);
+
+        /// <summary>
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodOutputValues Variable.
+        /// </summary>
+        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostics_LastMethodOutputValues = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostics_LastMethodOutputValues);
+
+        /// <summary>
         /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodCallTime Variable.
         /// </summary>
         public static readonly NodeId ProgramStateMachineType_ProgramDiagnostics_LastMethodCallTime = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostics_LastMethodCallTime);
@@ -50048,6 +50183,11 @@ namespace Opc.Ua
         /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodReturnStatus Variable.
         /// </summary>
         public static readonly NodeId ProgramStateMachineType_ProgramDiagnostics_LastMethodReturnStatus = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostics_LastMethodReturnStatus);
+
+        /// <summary>
+        /// The identifier for the ProgramStateMachineType_Halted_StateNumber Variable.
+        /// </summary>
+        public static readonly NodeId ProgramStateMachineType_Halted_StateNumber = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_Halted_StateNumber);
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType_Ready_StateNumber Variable.
@@ -50063,11 +50203,6 @@ namespace Opc.Ua
         /// The identifier for the ProgramStateMachineType_Suspended_StateNumber Variable.
         /// </summary>
         public static readonly NodeId ProgramStateMachineType_Suspended_StateNumber = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_Suspended_StateNumber);
-
-        /// <summary>
-        /// The identifier for the ProgramStateMachineType_Halted_StateNumber Variable.
-        /// </summary>
-        public static readonly NodeId ProgramStateMachineType_Halted_StateNumber = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_Halted_StateNumber);
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType_HaltedToReady_TransitionNumber Variable.
@@ -50198,6 +50333,66 @@ namespace Opc.Ua
         /// The identifier for the ProgramDiagnosticType_LastMethodReturnStatus Variable.
         /// </summary>
         public static readonly NodeId ProgramDiagnosticType_LastMethodReturnStatus = new NodeId(Opc.Ua.Variables.ProgramDiagnosticType_LastMethodReturnStatus);
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_CreateSessionId Variable.
+        /// </summary>
+        public static readonly NodeId ProgramDiagnostic2Type_CreateSessionId = new NodeId(Opc.Ua.Variables.ProgramDiagnostic2Type_CreateSessionId);
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_CreateClientName Variable.
+        /// </summary>
+        public static readonly NodeId ProgramDiagnostic2Type_CreateClientName = new NodeId(Opc.Ua.Variables.ProgramDiagnostic2Type_CreateClientName);
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_InvocationCreationTime Variable.
+        /// </summary>
+        public static readonly NodeId ProgramDiagnostic2Type_InvocationCreationTime = new NodeId(Opc.Ua.Variables.ProgramDiagnostic2Type_InvocationCreationTime);
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_LastTransitionTime Variable.
+        /// </summary>
+        public static readonly NodeId ProgramDiagnostic2Type_LastTransitionTime = new NodeId(Opc.Ua.Variables.ProgramDiagnostic2Type_LastTransitionTime);
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_LastMethodCall Variable.
+        /// </summary>
+        public static readonly NodeId ProgramDiagnostic2Type_LastMethodCall = new NodeId(Opc.Ua.Variables.ProgramDiagnostic2Type_LastMethodCall);
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_LastMethodSessionId Variable.
+        /// </summary>
+        public static readonly NodeId ProgramDiagnostic2Type_LastMethodSessionId = new NodeId(Opc.Ua.Variables.ProgramDiagnostic2Type_LastMethodSessionId);
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_LastMethodInputArguments Variable.
+        /// </summary>
+        public static readonly NodeId ProgramDiagnostic2Type_LastMethodInputArguments = new NodeId(Opc.Ua.Variables.ProgramDiagnostic2Type_LastMethodInputArguments);
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_LastMethodOutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId ProgramDiagnostic2Type_LastMethodOutputArguments = new NodeId(Opc.Ua.Variables.ProgramDiagnostic2Type_LastMethodOutputArguments);
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_LastMethodInputValues Variable.
+        /// </summary>
+        public static readonly NodeId ProgramDiagnostic2Type_LastMethodInputValues = new NodeId(Opc.Ua.Variables.ProgramDiagnostic2Type_LastMethodInputValues);
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_LastMethodOutputValues Variable.
+        /// </summary>
+        public static readonly NodeId ProgramDiagnostic2Type_LastMethodOutputValues = new NodeId(Opc.Ua.Variables.ProgramDiagnostic2Type_LastMethodOutputValues);
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_LastMethodCallTime Variable.
+        /// </summary>
+        public static readonly NodeId ProgramDiagnostic2Type_LastMethodCallTime = new NodeId(Opc.Ua.Variables.ProgramDiagnostic2Type_LastMethodCallTime);
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type_LastMethodReturnStatus Variable.
+        /// </summary>
+        public static readonly NodeId ProgramDiagnostic2Type_LastMethodReturnStatus = new NodeId(Opc.Ua.Variables.ProgramDiagnostic2Type_LastMethodReturnStatus);
 
         /// <summary>
         /// The identifier for the Annotations Variable.
@@ -64190,6 +64385,11 @@ namespace Opc.Ua
         public static readonly NodeId OpcUa_BinarySchema_ProgramDiagnosticDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_ProgramDiagnosticDataType);
 
         /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_ProgramDiagnostic2DataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_ProgramDiagnostic2DataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_ProgramDiagnostic2DataType);
+
+        /// <summary>
         /// The identifier for the OpcUa_BinarySchema_Annotation Variable.
         /// </summary>
         public static readonly NodeId OpcUa_BinarySchema_Annotation = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_Annotation);
@@ -64585,6 +64785,11 @@ namespace Opc.Ua
         public static readonly NodeId OpcUa_XmlSchema_ProgramDiagnosticDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ProgramDiagnosticDataType);
 
         /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ProgramDiagnostic2DataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_ProgramDiagnostic2DataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ProgramDiagnostic2DataType);
+
+        /// <summary>
         /// The identifier for the OpcUa_XmlSchema_Annotation Variable.
         /// </summary>
         public static readonly NodeId OpcUa_XmlSchema_Annotation = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_Annotation);
@@ -64798,6 +65003,11 @@ namespace Opc.Ua
         /// The identifier for the ProgramDiagnosticType VariableType.
         /// </summary>
         public static readonly NodeId ProgramDiagnosticType = new NodeId(Opc.Ua.VariableTypes.ProgramDiagnosticType);
+
+        /// <summary>
+        /// The identifier for the ProgramDiagnostic2Type VariableType.
+        /// </summary>
+        public static readonly NodeId ProgramDiagnostic2Type = new NodeId(Opc.Ua.VariableTypes.ProgramDiagnostic2Type);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsCounterType VariableType.
@@ -67914,9 +68124,19 @@ namespace Opc.Ua
         public const string LastMethodInputArguments = "LastMethodInputArguments";
 
         /// <summary>
+        /// The BrowseName for the LastMethodInputValues component.
+        /// </summary>
+        public const string LastMethodInputValues = "LastMethodInputValues";
+
+        /// <summary>
         /// The BrowseName for the LastMethodOutputArguments component.
         /// </summary>
         public const string LastMethodOutputArguments = "LastMethodOutputArguments";
+
+        /// <summary>
+        /// The BrowseName for the LastMethodOutputValues component.
+        /// </summary>
+        public const string LastMethodOutputValues = "LastMethodOutputValues";
 
         /// <summary>
         /// The BrowseName for the LastMethodReturnStatus component.
@@ -68962,6 +69182,16 @@ namespace Opc.Ua
         /// The BrowseName for the ProfileUri component.
         /// </summary>
         public const string ProfileUri = "ProfileUri";
+
+        /// <summary>
+        /// The BrowseName for the ProgramDiagnostic2DataType component.
+        /// </summary>
+        public const string ProgramDiagnostic2DataType = "ProgramDiagnostic2DataType";
+
+        /// <summary>
+        /// The BrowseName for the ProgramDiagnostic2Type component.
+        /// </summary>
+        public const string ProgramDiagnostic2Type = "ProgramDiagnostic2Type";
 
         /// <summary>
         /// The BrowseName for the ProgramDiagnosticDataType component.

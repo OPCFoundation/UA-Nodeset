@@ -6811,6 +6811,44 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ProgramDiagnosticDataType_Decode(OpcUa_Progr
 OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_ProgramDiagnosticDataType_EncodeableType;
 #endif
 
+#ifndef OPCUA_EXCLUDE_ProgramDiagnostic2DataType
+/*============================================================================
+ * The ProgramDiagnostic2DataType structure.
+ *===========================================================================*/
+typedef struct _OpcUa_ProgramDiagnostic2DataType
+{
+    OpcUa_NodeId       CreateSessionId;
+    OpcUa_String       CreateClientName;
+    OpcUa_DateTime     InvocationCreationTime;
+    OpcUa_DateTime     LastTransitionTime;
+    OpcUa_String       LastMethodCall;
+    OpcUa_NodeId       LastMethodSessionId;
+    OpcUa_Int32        NoOfLastMethodInputArguments;
+    OpcUa_Argument*    LastMethodInputArguments;
+    OpcUa_Int32        NoOfLastMethodOutputArguments;
+    OpcUa_Argument*    LastMethodOutputArguments;
+    OpcUa_Int32        NoOfLastMethodInputValues;
+    OpcUa_Variant*     LastMethodInputValues;
+    OpcUa_Int32        NoOfLastMethodOutputValues;
+    OpcUa_Variant*     LastMethodOutputValues;
+    OpcUa_DateTime     LastMethodCallTime;
+    OpcUa_StatusResult LastMethodReturnStatus;
+}
+OpcUa_ProgramDiagnostic2DataType;
+
+OPCUA_EXPORT OpcUa_Void OpcUa_ProgramDiagnostic2DataType_Initialize(OpcUa_ProgramDiagnostic2DataType* pValue);
+
+OPCUA_EXPORT OpcUa_Void OpcUa_ProgramDiagnostic2DataType_Clear(OpcUa_ProgramDiagnostic2DataType* pValue);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_ProgramDiagnostic2DataType_GetSize(OpcUa_ProgramDiagnostic2DataType* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_ProgramDiagnostic2DataType_Encode(OpcUa_ProgramDiagnostic2DataType* pValue, struct _OpcUa_Encoder* pEncoder);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_ProgramDiagnostic2DataType_Decode(OpcUa_ProgramDiagnostic2DataType* pValue, struct _OpcUa_Decoder* pDecoder);
+
+OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_ProgramDiagnostic2DataType_EncodeableType;
+#endif
+
 #ifndef OPCUA_EXCLUDE_Annotation
 /*============================================================================
  * The Annotation structure.

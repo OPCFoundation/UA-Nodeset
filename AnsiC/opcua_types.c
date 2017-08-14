@@ -28866,6 +28866,172 @@ struct _OpcUa_EncodeableType OpcUa_ProgramDiagnosticDataType_EncodeableType =
 };
 #endif
 
+#ifndef OPCUA_EXCLUDE_ProgramDiagnostic2DataType
+/*============================================================================
+ * OpcUa_ProgramDiagnostic2DataType_Initialize
+ *===========================================================================*/
+OpcUa_Void OpcUa_ProgramDiagnostic2DataType_Initialize(OpcUa_ProgramDiagnostic2DataType* a_pValue)
+{
+    if (a_pValue != OpcUa_Null)
+    {
+        OpcUa_Field_Initialize(NodeId, CreateSessionId);
+        OpcUa_Field_Initialize(String, CreateClientName);
+        OpcUa_Field_Initialize(DateTime, InvocationCreationTime);
+        OpcUa_Field_Initialize(DateTime, LastTransitionTime);
+        OpcUa_Field_Initialize(String, LastMethodCall);
+        OpcUa_Field_Initialize(NodeId, LastMethodSessionId);
+        OpcUa_Field_InitializeEncodeableArray(OpcUa_Argument, LastMethodInputArguments);
+        OpcUa_Field_InitializeEncodeableArray(OpcUa_Argument, LastMethodOutputArguments);
+        OpcUa_Field_InitializeArray(Variant, LastMethodInputValues);
+        OpcUa_Field_InitializeArray(Variant, LastMethodOutputValues);
+        OpcUa_Field_Initialize(DateTime, LastMethodCallTime);
+        OpcUa_Field_InitializeEncodeable(OpcUa_StatusResult, LastMethodReturnStatus);
+    }
+}
+
+/*============================================================================
+ * OpcUa_ProgramDiagnostic2DataType_Clear
+ *===========================================================================*/
+OpcUa_Void OpcUa_ProgramDiagnostic2DataType_Clear(OpcUa_ProgramDiagnostic2DataType* a_pValue)
+{
+    if (a_pValue != OpcUa_Null)
+    {
+        OpcUa_Field_Clear(NodeId, CreateSessionId);
+        OpcUa_Field_Clear(String, CreateClientName);
+        OpcUa_Field_Clear(DateTime, InvocationCreationTime);
+        OpcUa_Field_Clear(DateTime, LastTransitionTime);
+        OpcUa_Field_Clear(String, LastMethodCall);
+        OpcUa_Field_Clear(NodeId, LastMethodSessionId);
+        OpcUa_Field_ClearEncodeableArray(OpcUa_Argument, LastMethodInputArguments);
+        OpcUa_Field_ClearEncodeableArray(OpcUa_Argument, LastMethodOutputArguments);
+        OpcUa_Field_ClearArray(Variant, LastMethodInputValues);
+        OpcUa_Field_ClearArray(Variant, LastMethodOutputValues);
+        OpcUa_Field_Clear(DateTime, LastMethodCallTime);
+        OpcUa_Field_ClearEncodeable(OpcUa_StatusResult, LastMethodReturnStatus);
+    }
+}
+
+/*============================================================================
+ * OpcUa_ProgramDiagnostic2DataType_GetSize
+ *===========================================================================*/
+OpcUa_StatusCode OpcUa_ProgramDiagnostic2DataType_GetSize(OpcUa_ProgramDiagnostic2DataType* a_pValue, OpcUa_Encoder* a_pEncoder, OpcUa_Int32* a_pSize)
+{
+    OpcUa_Int32 iSize = 0;
+
+    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "ProgramDiagnostic2DataType_GetSize");
+
+    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
+    OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
+    OpcUa_ReturnErrorIfArgumentNull(a_pSize);
+
+    *a_pSize = -1;
+
+    OpcUa_Field_GetSize(NodeId, CreateSessionId);
+    OpcUa_Field_GetSize(String, CreateClientName);
+    OpcUa_Field_GetSize(DateTime, InvocationCreationTime);
+    OpcUa_Field_GetSize(DateTime, LastTransitionTime);
+    OpcUa_Field_GetSize(String, LastMethodCall);
+    OpcUa_Field_GetSize(NodeId, LastMethodSessionId);
+    OpcUa_Field_GetSizeEncodeableArray(OpcUa_Argument, LastMethodInputArguments);
+    OpcUa_Field_GetSizeEncodeableArray(OpcUa_Argument, LastMethodOutputArguments);
+    OpcUa_Field_GetSizeArray(Variant, LastMethodInputValues);
+    OpcUa_Field_GetSizeArray(Variant, LastMethodOutputValues);
+    OpcUa_Field_GetSize(DateTime, LastMethodCallTime);
+    OpcUa_Field_GetSizeEncodeable(OpcUa_StatusResult, LastMethodReturnStatus);
+
+    *a_pSize = iSize;
+
+    OpcUa_ReturnStatusCode;
+    OpcUa_BeginErrorHandling;
+
+    *a_pSize = -1;
+
+    OpcUa_FinishErrorHandling;
+}
+
+/*============================================================================
+ * OpcUa_ProgramDiagnostic2DataType_Encode
+ *===========================================================================*/
+OpcUa_StatusCode OpcUa_ProgramDiagnostic2DataType_Encode(OpcUa_ProgramDiagnostic2DataType* a_pValue, OpcUa_Encoder* a_pEncoder)
+{
+    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "ProgramDiagnostic2DataType_Encode");
+
+    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
+    OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
+
+    OpcUa_Field_Write(NodeId, CreateSessionId);
+    OpcUa_Field_Write(String, CreateClientName);
+    OpcUa_Field_Write(DateTime, InvocationCreationTime);
+    OpcUa_Field_Write(DateTime, LastTransitionTime);
+    OpcUa_Field_Write(String, LastMethodCall);
+    OpcUa_Field_Write(NodeId, LastMethodSessionId);
+    OpcUa_Field_WriteEncodeableArray(OpcUa_Argument, LastMethodInputArguments);
+    OpcUa_Field_WriteEncodeableArray(OpcUa_Argument, LastMethodOutputArguments);
+    OpcUa_Field_WriteArray(Variant, LastMethodInputValues);
+    OpcUa_Field_WriteArray(Variant, LastMethodOutputValues);
+    OpcUa_Field_Write(DateTime, LastMethodCallTime);
+    OpcUa_Field_WriteEncodeable(OpcUa_StatusResult, LastMethodReturnStatus);
+
+    OpcUa_ReturnStatusCode;
+    OpcUa_BeginErrorHandling;
+
+    /* nothing to do */
+
+    OpcUa_FinishErrorHandling;
+}
+
+/*============================================================================
+ * OpcUa_ProgramDiagnostic2DataType_Decode
+ *===========================================================================*/
+OpcUa_StatusCode OpcUa_ProgramDiagnostic2DataType_Decode(OpcUa_ProgramDiagnostic2DataType* a_pValue, OpcUa_Decoder* a_pDecoder)
+{
+    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "ProgramDiagnostic2DataType_Decode");
+
+    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
+    OpcUa_ReturnErrorIfArgumentNull(a_pDecoder);
+
+    OpcUa_ProgramDiagnostic2DataType_Initialize(a_pValue);
+
+    OpcUa_Field_Read(NodeId, CreateSessionId);
+    OpcUa_Field_Read(String, CreateClientName);
+    OpcUa_Field_Read(DateTime, InvocationCreationTime);
+    OpcUa_Field_Read(DateTime, LastTransitionTime);
+    OpcUa_Field_Read(String, LastMethodCall);
+    OpcUa_Field_Read(NodeId, LastMethodSessionId);
+    OpcUa_Field_ReadEncodeableArray(OpcUa_Argument, LastMethodInputArguments);
+    OpcUa_Field_ReadEncodeableArray(OpcUa_Argument, LastMethodOutputArguments);
+    OpcUa_Field_ReadArray(Variant, LastMethodInputValues);
+    OpcUa_Field_ReadArray(Variant, LastMethodOutputValues);
+    OpcUa_Field_Read(DateTime, LastMethodCallTime);
+    OpcUa_Field_ReadEncodeable(OpcUa_StatusResult, LastMethodReturnStatus);
+
+    OpcUa_ReturnStatusCode;
+    OpcUa_BeginErrorHandling;
+
+    OpcUa_ProgramDiagnostic2DataType_Clear(a_pValue);
+
+    OpcUa_FinishErrorHandling;
+}
+
+/*============================================================================
+ * OpcUa_ProgramDiagnostic2DataType_EncodeableType
+ *===========================================================================*/
+struct _OpcUa_EncodeableType OpcUa_ProgramDiagnostic2DataType_EncodeableType =
+{
+    "ProgramDiagnostic2DataType",
+    OpcUaId_ProgramDiagnostic2DataType,
+    OpcUaId_ProgramDiagnostic2DataType_Encoding_DefaultBinary,
+    OpcUaId_ProgramDiagnostic2DataType_Encoding_DefaultXml,
+    OpcUa_Null,
+    sizeof(OpcUa_ProgramDiagnostic2DataType),
+    (OpcUa_EncodeableObject_PfnInitialize*)OpcUa_ProgramDiagnostic2DataType_Initialize,
+    (OpcUa_EncodeableObject_PfnClear*)OpcUa_ProgramDiagnostic2DataType_Clear,
+    (OpcUa_EncodeableObject_PfnGetSize*)OpcUa_ProgramDiagnostic2DataType_GetSize,
+    (OpcUa_EncodeableObject_PfnEncode*)OpcUa_ProgramDiagnostic2DataType_Encode,
+    (OpcUa_EncodeableObject_PfnDecode*)OpcUa_ProgramDiagnostic2DataType_Decode
+};
+#endif
+
 #ifndef OPCUA_EXCLUDE_Annotation
 /*============================================================================
  * OpcUa_Annotation_Initialize
@@ -29594,6 +29760,9 @@ static OpcUa_EncodeableType* g_OpcUa_KnownEncodeableTypes[] =
     #endif
     #ifndef OPCUA_EXCLUDE_ProgramDiagnosticDataType
     &OpcUa_ProgramDiagnosticDataType_EncodeableType,
+    #endif
+    #ifndef OPCUA_EXCLUDE_ProgramDiagnostic2DataType
+    &OpcUa_ProgramDiagnostic2DataType_EncodeableType,
     #endif
     #ifndef OPCUA_EXCLUDE_Annotation
     &OpcUa_Annotation_EncodeableType,

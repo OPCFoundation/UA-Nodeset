@@ -366,6 +366,7 @@
 #define OpcUaId_AxisInformation 12079
 #define OpcUaId_XVType 12080
 #define OpcUaId_ProgramDiagnosticDataType 894
+#define OpcUaId_ProgramDiagnostic2DataType 15396
 #define OpcUaId_Annotation 891
 #define OpcUaId_ExceptionDeviationFormat 890
 
@@ -832,10 +833,10 @@
 #define OpcUaId_ExclusiveLimitStateMachineType_HighToHighHigh 9340
 #define OpcUaId_ExclusiveLimitAlarmType_LimitState 9455
 #define OpcUaId_ProgramStateMachineType_FinalResultData 3850
+#define OpcUaId_ProgramStateMachineType_Halted 2406
 #define OpcUaId_ProgramStateMachineType_Ready 2400
 #define OpcUaId_ProgramStateMachineType_Running 2402
 #define OpcUaId_ProgramStateMachineType_Suspended 2404
-#define OpcUaId_ProgramStateMachineType_Halted 2406
 #define OpcUaId_ProgramStateMachineType_HaltedToReady 2408
 #define OpcUaId_ProgramStateMachineType_ReadyToRunning 2410
 #define OpcUaId_ProgramStateMachineType_RunningToHalted 2412
@@ -1287,6 +1288,7 @@
 #define OpcUaId_AxisInformation_Encoding_DefaultBinary 12089
 #define OpcUaId_XVType_Encoding_DefaultBinary 12090
 #define OpcUaId_ProgramDiagnosticDataType_Encoding_DefaultBinary 896
+#define OpcUaId_ProgramDiagnostic2DataType_Encoding_DefaultBinary 15397
 #define OpcUaId_Annotation_Encoding_DefaultBinary 893
 #define OpcUaId_KeyValuePair_Encoding_DefaultXml 14802
 #define OpcUaId_IdentityMappingRuleType_Encoding_DefaultXml 15728
@@ -1528,6 +1530,7 @@
 #define OpcUaId_AxisInformation_Encoding_DefaultXml 12081
 #define OpcUaId_XVType_Encoding_DefaultXml 12082
 #define OpcUaId_ProgramDiagnosticDataType_Encoding_DefaultXml 895
+#define OpcUaId_ProgramDiagnostic2DataType_Encoding_DefaultXml 15401
 #define OpcUaId_Annotation_Encoding_DefaultXml 892
 #define OpcUaId_KeyValuePair_Encoding_DefaultJson 15041
 #define OpcUaId_IdentityMappingRuleType_Encoding_DefaultJson 15042
@@ -1769,6 +1772,7 @@
 #define OpcUaId_AxisInformation_Encoding_DefaultJson 15379
 #define OpcUaId_XVType_Encoding_DefaultJson 15380
 #define OpcUaId_ProgramDiagnosticDataType_Encoding_DefaultJson 15381
+#define OpcUaId_ProgramDiagnostic2DataType_Encoding_DefaultJson 15405
 #define OpcUaId_Annotation_Encoding_DefaultJson 15382
 
 /*============================================================================
@@ -3566,12 +3570,14 @@
 #define OpcUaId_ProgramStateMachineType_ProgramDiagnostics_LastMethodSessionId 3845
 #define OpcUaId_ProgramStateMachineType_ProgramDiagnostics_LastMethodInputArguments 3846
 #define OpcUaId_ProgramStateMachineType_ProgramDiagnostics_LastMethodOutputArguments 3847
+#define OpcUaId_ProgramStateMachineType_ProgramDiagnostics_LastMethodInputValues 15038
+#define OpcUaId_ProgramStateMachineType_ProgramDiagnostics_LastMethodOutputValues 15040
 #define OpcUaId_ProgramStateMachineType_ProgramDiagnostics_LastMethodCallTime 3848
 #define OpcUaId_ProgramStateMachineType_ProgramDiagnostics_LastMethodReturnStatus 3849
+#define OpcUaId_ProgramStateMachineType_Halted_StateNumber 2407
 #define OpcUaId_ProgramStateMachineType_Ready_StateNumber 2401
 #define OpcUaId_ProgramStateMachineType_Running_StateNumber 2403
 #define OpcUaId_ProgramStateMachineType_Suspended_StateNumber 2405
-#define OpcUaId_ProgramStateMachineType_Halted_StateNumber 2407
 #define OpcUaId_ProgramStateMachineType_HaltedToReady_TransitionNumber 2409
 #define OpcUaId_ProgramStateMachineType_ReadyToRunning_TransitionNumber 2411
 #define OpcUaId_ProgramStateMachineType_RunningToHalted_TransitionNumber 2413
@@ -3598,6 +3604,18 @@
 #define OpcUaId_ProgramDiagnosticType_LastMethodOutputArguments 2388
 #define OpcUaId_ProgramDiagnosticType_LastMethodCallTime 2389
 #define OpcUaId_ProgramDiagnosticType_LastMethodReturnStatus 2390
+#define OpcUaId_ProgramDiagnostic2Type_CreateSessionId 15384
+#define OpcUaId_ProgramDiagnostic2Type_CreateClientName 15385
+#define OpcUaId_ProgramDiagnostic2Type_InvocationCreationTime 15386
+#define OpcUaId_ProgramDiagnostic2Type_LastTransitionTime 15387
+#define OpcUaId_ProgramDiagnostic2Type_LastMethodCall 15388
+#define OpcUaId_ProgramDiagnostic2Type_LastMethodSessionId 15389
+#define OpcUaId_ProgramDiagnostic2Type_LastMethodInputArguments 15390
+#define OpcUaId_ProgramDiagnostic2Type_LastMethodOutputArguments 15391
+#define OpcUaId_ProgramDiagnostic2Type_LastMethodInputValues 15392
+#define OpcUaId_ProgramDiagnostic2Type_LastMethodOutputValues 15393
+#define OpcUaId_ProgramDiagnostic2Type_LastMethodCallTime 15394
+#define OpcUaId_ProgramDiagnostic2Type_LastMethodReturnStatus 15395
 #define OpcUaId_Annotations 11214
 #define OpcUaId_HistoricalDataConfigurationType_AggregateConfiguration_TreatUncertainAsBad 11168
 #define OpcUaId_HistoricalDataConfigurationType_AggregateConfiguration_PercentDataBad 11169
@@ -6396,6 +6414,7 @@
 #define OpcUaId_OpcUa_BinarySchema_AxisInformation 12091
 #define OpcUaId_OpcUa_BinarySchema_XVType 12094
 #define OpcUaId_OpcUa_BinarySchema_ProgramDiagnosticDataType 8247
+#define OpcUaId_OpcUa_BinarySchema_ProgramDiagnostic2DataType 15398
 #define OpcUaId_OpcUa_BinarySchema_Annotation 8244
 #define OpcUaId_OpcUa_XmlSchema 8252
 #define OpcUaId_OpcUa_XmlSchema_NamespaceUri 8254
@@ -6475,6 +6494,7 @@
 #define OpcUaId_OpcUa_XmlSchema_AxisInformation 12083
 #define OpcUaId_OpcUa_XmlSchema_XVType 12086
 #define OpcUaId_OpcUa_XmlSchema_ProgramDiagnosticDataType 8882
+#define OpcUaId_OpcUa_XmlSchema_ProgramDiagnostic2DataType 15402
 #define OpcUaId_OpcUa_XmlSchema_Annotation 8879
 
 /*============================================================================
@@ -6520,6 +6540,7 @@
 #define OpcUaId_ConditionVariableType 9002
 #define OpcUaId_AlarmRateVariableType 17277
 #define OpcUaId_ProgramDiagnosticType 2380
+#define OpcUaId_ProgramDiagnostic2Type 15383
 #define OpcUaId_PubSubDiagnosticsCounterType 19725
 
 #endif /* _OpcUa_Identifiers_H_ */

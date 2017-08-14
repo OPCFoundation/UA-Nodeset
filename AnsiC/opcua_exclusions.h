@@ -239,6 +239,7 @@
 /* #define OPCUA_EXCLUDE_AxisInformation */
 /* #define OPCUA_EXCLUDE_XVType */
 /* #define OPCUA_EXCLUDE_ProgramDiagnosticDataType */
+/* #define OPCUA_EXCLUDE_ProgramDiagnostic2DataType */
 /* #define OPCUA_EXCLUDE_Annotation */
 
 #endif /* _OpcUa_Exclusions_H_ */

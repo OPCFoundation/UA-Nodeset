@@ -4357,6 +4357,24 @@
   </xs:complexType>
   <xs:element name="ProgramDiagnosticDataType" type="tns:ProgramDiagnosticDataType" />
 
+  <xs:complexType name="ProgramDiagnostic2DataType">
+    <xs:sequence>
+      <xs:element name="CreateSessionId" type="ua:NodeId" minOccurs="0" nillable="true" />
+      <xs:element name="CreateClientName" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="InvocationCreationTime" type="xs:dateTime" minOccurs="0" />
+      <xs:element name="LastTransitionTime" type="xs:dateTime" minOccurs="0" />
+      <xs:element name="LastMethodCall" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="LastMethodSessionId" type="ua:NodeId" minOccurs="0" nillable="true" />
+      <xs:element name="LastMethodInputArguments" type="tns:ListOfArgument" minOccurs="0" nillable="true" />
+      <xs:element name="LastMethodOutputArguments" type="tns:ListOfArgument" minOccurs="0" nillable="true" />
+      <xs:element name="LastMethodInputValues" type="ua:ListOfVariant" minOccurs="0" nillable="true" />
+      <xs:element name="LastMethodOutputValues" type="ua:ListOfVariant" minOccurs="0" nillable="true" />
+      <xs:element name="LastMethodCallTime" type="xs:dateTime" minOccurs="0" />
+      <xs:element name="LastMethodReturnStatus" type="tns:StatusResult" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProgramDiagnostic2DataType" type="tns:ProgramDiagnostic2DataType" />
+
   <xs:complexType name="Annotation">
     <xs:sequence>
       <xs:element name="Message" type="xs:string" minOccurs="0" nillable="true" />

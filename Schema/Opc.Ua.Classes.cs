@@ -49045,79 +49045,31 @@ namespace Opc.Ua
             {
                 FinalResultData.Initialize(context, FinalResultData_InitializationString);
             }
-
-            if (Start != null)
-            {
-                Start.Initialize(context, Start_InitializationString);
-            }
-
-            if (Suspend != null)
-            {
-                Suspend.Initialize(context, Suspend_InitializationString);
-            }
-
-            if (Resume != null)
-            {
-                Resume.Initialize(context, Resume_InitializationString);
-            }
-
-            if (Halt != null)
-            {
-                Halt.Initialize(context, Halt_InitializationString);
-            }
-
-            if (Reset != null)
-            {
-                Reset.Initialize(context, Reset_InitializationString);
-            }
         }
 
         #region Initialization String
         private const string ProgramDiagnostics_InitializationString =
-           "//////////8VYIkKAgAAAAAAEgAAAFByb2dyYW1EaWFnbm9zdGljcwEAXwkALwEATAlfCQAAAQB+A///" +
-           "//8BAf////8KAAAAFWCJCgIAAAAAAA8AAABDcmVhdGVTZXNzaW9uSWQBAAAPAC4ARAAPAAAAEf////8B" +
+           "//////////8VYIkKAgAAAAAAEgAAAFByb2dyYW1EaWFnbm9zdGljcwEAXwkALwEAFzxfCQAAAQAkPP//" +
+           "//8BAf////8MAAAAFWCJCgIAAAAAAA8AAABDcmVhdGVTZXNzaW9uSWQBAAAPAC4ARAAPAAAAEf////8B" +
            "Af////8AAAAAFWCJCgIAAAAAABAAAABDcmVhdGVDbGllbnROYW1lAQABDwAuAEQBDwAAAAz/////AQH/" +
            "////AAAAABVgiQoCAAAAAAAWAAAASW52b2NhdGlvbkNyZWF0aW9uVGltZQEAAg8ALgBEAg8AAAEAJgH/" +
            "////AQH/////AAAAABVgiQoCAAAAAAASAAAATGFzdFRyYW5zaXRpb25UaW1lAQADDwAuAEQDDwAAAQAm" +
            "Af////8BAf////8AAAAAFWCJCgIAAAAAAA4AAABMYXN0TWV0aG9kQ2FsbAEABA8ALgBEBA8AAAAM////" +
            "/wEB/////wAAAAAVYIkKAgAAAAAAEwAAAExhc3RNZXRob2RTZXNzaW9uSWQBAAUPAC4ARAUPAAAAEf//" +
            "//8BAf////8AAAAAFWCJCgIAAAAAABgAAABMYXN0TWV0aG9kSW5wdXRBcmd1bWVudHMBAAYPAC4ARAYP" +
-           "AAAAGAEAAAABAf////8AAAAAFWCJCgIAAAAAABkAAABMYXN0TWV0aG9kT3V0cHV0QXJndW1lbnRzAQAH" +
-           "DwAuAEQHDwAAABgBAAAAAQH/////AAAAABVgiQoCAAAAAAASAAAATGFzdE1ldGhvZENhbGxUaW1lAQAI" +
-           "DwAuAEQIDwAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAABYAAABMYXN0TWV0aG9kUmV0dXJuU3Rh" +
-           "dHVzAQAJDwAuAEQJDwAAABP/////AQH/////AAAAAA==";
+           "AAABACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAAAGQAAAExhc3RNZXRob2RPdXRwdXRBcmd1bWVudHMB" +
+           "AAcPAC4ARAcPAAABACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAAAFQAAAExhc3RNZXRob2RJbnB1dFZh" +
+           "bHVlcwEAvjoALgBEvjoAAAAYAQAAAAEB/////wAAAAAVYIkKAgAAAAAAFgAAAExhc3RNZXRob2RPdXRw" +
+           "dXRWYWx1ZXMBAMA6AC4ARMA6AAAAGAEAAAABAf////8AAAAAFWCJCgIAAAAAABIAAABMYXN0TWV0aG9k" +
+           "Q2FsbFRpbWUBAAgPAC4ARAgPAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAAFgAAAExhc3RNZXRo" +
+           "b2RSZXR1cm5TdGF0dXMBAAkPAC4ARAkPAAAAE/////8BAf////8AAAAA";
 
         private const string FinalResultData_InitializationString =
            "//////////8EYIAKAQAAAAAADwAAAEZpbmFsUmVzdWx0RGF0YQEACg8ALwA6Cg8AAP////8AAAAA";
 
-        private const string Start_InitializationString =
-           "//////////8kYYIKBAAAAAAABQAAAFN0YXJ0AQB6CQMAAAAASwAAAENhdXNlcyB0aGUgUHJvZ3JhbSB0" +
-           "byB0cmFuc2l0aW9uIGZyb20gdGhlIFJlYWR5IHN0YXRlIHRvIHRoZSBSdW5uaW5nIHN0YXRlLgAvAQB6" +
-           "CXoJAAABAQEAAAAANQEBAGoJAAAAAA==";
-
-        private const string Suspend_InitializationString =
-           "//////////8kYYIKBAAAAAAABwAAAFN1c3BlbmQBAHsJAwAAAABPAAAAQ2F1c2VzIHRoZSBQcm9ncmFt" +
-           "IHRvIHRyYW5zaXRpb24gZnJvbSB0aGUgUnVubmluZyBzdGF0ZSB0byB0aGUgU3VzcGVuZGVkIHN0YXRl" +
-           "LgAvAQB7CXsJAAABAQEAAAAANQEBAHAJAAAAAA==";
-
-        private const string Resume_InitializationString =
-           "//////////8kYYIKBAAAAAAABgAAAFJlc3VtZQEAfAkDAAAAAE8AAABDYXVzZXMgdGhlIFByb2dyYW0g" +
-           "dG8gdHJhbnNpdGlvbiBmcm9tIHRoZSBTdXNwZW5kZWQgc3RhdGUgdG8gdGhlIFJ1bm5pbmcgc3RhdGUu" +
-           "AC8BAHwJfAkAAAEBAQAAAAA1AQEAcgkAAAAA";
-
-        private const string Halt_InitializationString =
-           "//////////8kYYIKBAAAAAAABAAAAEhhbHQBAH0JAwAAAABgAAAAQ2F1c2VzIHRoZSBQcm9ncmFtIHRv" +
-           "IHRyYW5zaXRpb24gZnJvbSB0aGUgUmVhZHksIFJ1bm5pbmcgb3IgU3VzcGVuZGVkIHN0YXRlIHRvIHRo" +
-           "ZSBIYWx0ZWQgc3RhdGUuAC8BAH0JfQkAAAEBAwAAAAA1AQEAbAkANQEBAHQJADUBAQB4CQAAAAA=";
-
-        private const string Reset_InitializationString =
-           "//////////8kYYIKBAAAAAAABQAAAFJlc2V0AQB+CQMAAAAASgAAAENhdXNlcyB0aGUgUHJvZ3JhbSB0" +
-           "byB0cmFuc2l0aW9uIGZyb20gdGhlIEhhbHRlZCBzdGF0ZSB0byB0aGUgUmVhZHkgc3RhdGUuAC8BAH4J" +
-           "fgkAAAEBAQAAAAA1AQEAaAkAAAAA";
-
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAAHwAAAFByb2dyYW1TdGF0ZU1hY2hpbmVUeXBlSW5zdGFuY2UBAFcJAQBX" +
-           "Cf////8MAAAAFWCJCgIAAAAAAAwAAABDdXJyZW50U3RhdGUBAPYOAC8BAMgK9g4AAAAV/////wEB////" +
+           "Cf////8HAAAAFWCJCgIAAAAAAAwAAABDdXJyZW50U3RhdGUBAPYOAC8BAMgK9g4AAAAV/////wEB////" +
            "/wIAAAAVYIkKAgAAAAAAAgAAAElkAQD3DgAuAET3DgAAABH/////AQH/////AAAAABVgiQoCAAAAAAAG" +
            "AAAATnVtYmVyAQD5DgAuAET5DgAAAAf/////AQH/////AAAAABVgiQoCAAAAAAAOAAAATGFzdFRyYW5z" +
            "aXRpb24BAPsOAC8BAM8K+w4AAAAV/////wEB/////wMAAAAVYIkKAgAAAAAAAgAAAElkAQD8DgAuAET8" +
@@ -49126,30 +49078,21 @@ namespace Opc.Ua
            "/wAAAAAVYIkKAgAAAAAACQAAAERlbGV0YWJsZQEAWQkALgBEWQkAAAAB/////wEB/////wAAAAAVYIkK" +
            "AgAAAAAACgAAAEF1dG9EZWxldGUBAFoJAC4ARFoJAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAwA" +
            "AABSZWN5Y2xlQ291bnQBAFsJAC4ARFsJAAAABv////8BAf////8AAAAAFWCJCgIAAAAAABIAAABQcm9n" +
-           "cmFtRGlhZ25vc3RpY3MBAF8JAC8BAEwJXwkAAAEAfgP/////AQH/////CgAAABVgiQoCAAAAAAAPAAAA" +
+           "cmFtRGlhZ25vc3RpY3MBAF8JAC8BABc8XwkAAAEAJDz/////AQH/////DAAAABVgiQoCAAAAAAAPAAAA" +
            "Q3JlYXRlU2Vzc2lvbklkAQAADwAuAEQADwAAABH/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAQ3Jl" +
            "YXRlQ2xpZW50TmFtZQEAAQ8ALgBEAQ8AAAAM/////wEB/////wAAAAAVYIkKAgAAAAAAFgAAAEludm9j" +
            "YXRpb25DcmVhdGlvblRpbWUBAAIPAC4ARAIPAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAAEgAA" +
            "AExhc3RUcmFuc2l0aW9uVGltZQEAAw8ALgBEAw8AAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAO" +
            "AAAATGFzdE1ldGhvZENhbGwBAAQPAC4ARAQPAAAADP////8BAf////8AAAAAFWCJCgIAAAAAABMAAABM" +
            "YXN0TWV0aG9kU2Vzc2lvbklkAQAFDwAuAEQFDwAAABH/////AQH/////AAAAABVgiQoCAAAAAAAYAAAA" +
-           "TGFzdE1ldGhvZElucHV0QXJndW1lbnRzAQAGDwAuAEQGDwAAABgBAAAAAQH/////AAAAABVgiQoCAAAA" +
-           "AAAZAAAATGFzdE1ldGhvZE91dHB1dEFyZ3VtZW50cwEABw8ALgBEBw8AAAAYAQAAAAEB/////wAAAAAV" +
-           "YIkKAgAAAAAAEgAAAExhc3RNZXRob2RDYWxsVGltZQEACA8ALgBECA8AAAEAJgH/////AQH/////AAAA" +
-           "ABVgiQoCAAAAAAAWAAAATGFzdE1ldGhvZFJldHVyblN0YXR1cwEACQ8ALgBECQ8AAAAT/////wEB////" +
-           "/wAAAAAEYIAKAQAAAAAADwAAAEZpbmFsUmVzdWx0RGF0YQEACg8ALwA6Cg8AAP////8AAAAAJGGCCgQA" +
-           "AAAAAAUAAABTdGFydAEAegkDAAAAAEsAAABDYXVzZXMgdGhlIFByb2dyYW0gdG8gdHJhbnNpdGlvbiBm" +
-           "cm9tIHRoZSBSZWFkeSBzdGF0ZSB0byB0aGUgUnVubmluZyBzdGF0ZS4ALwEAegl6CQAAAQEBAAAAADUB" +
-           "AQBqCQAAAAAkYYIKBAAAAAAABwAAAFN1c3BlbmQBAHsJAwAAAABPAAAAQ2F1c2VzIHRoZSBQcm9ncmFt" +
-           "IHRvIHRyYW5zaXRpb24gZnJvbSB0aGUgUnVubmluZyBzdGF0ZSB0byB0aGUgU3VzcGVuZGVkIHN0YXRl" +
-           "LgAvAQB7CXsJAAABAQEAAAAANQEBAHAJAAAAACRhggoEAAAAAAAGAAAAUmVzdW1lAQB8CQMAAAAATwAA" +
-           "AENhdXNlcyB0aGUgUHJvZ3JhbSB0byB0cmFuc2l0aW9uIGZyb20gdGhlIFN1c3BlbmRlZCBzdGF0ZSB0" +
-           "byB0aGUgUnVubmluZyBzdGF0ZS4ALwEAfAl8CQAAAQEBAAAAADUBAQByCQAAAAAkYYIKBAAAAAAABAAA" +
-           "AEhhbHQBAH0JAwAAAABgAAAAQ2F1c2VzIHRoZSBQcm9ncmFtIHRvIHRyYW5zaXRpb24gZnJvbSB0aGUg" +
-           "UmVhZHksIFJ1bm5pbmcgb3IgU3VzcGVuZGVkIHN0YXRlIHRvIHRoZSBIYWx0ZWQgc3RhdGUuAC8BAH0J" +
-           "fQkAAAEBAwAAAAA1AQEAbAkANQEBAHQJADUBAQB4CQAAAAAkYYIKBAAAAAAABQAAAFJlc2V0AQB+CQMA" +
-           "AAAASgAAAENhdXNlcyB0aGUgUHJvZ3JhbSB0byB0cmFuc2l0aW9uIGZyb20gdGhlIEhhbHRlZCBzdGF0" +
-           "ZSB0byB0aGUgUmVhZHkgc3RhdGUuAC8BAH4JfgkAAAEBAQAAAAA1AQEAaAkAAAAA";
+           "TGFzdE1ldGhvZElucHV0QXJndW1lbnRzAQAGDwAuAEQGDwAAAQAoAQEAAAABAf////8AAAAAFWCJCgIA" +
+           "AAAAABkAAABMYXN0TWV0aG9kT3V0cHV0QXJndW1lbnRzAQAHDwAuAEQHDwAAAQAoAQEAAAABAf////8A" +
+           "AAAAFWCJCgIAAAAAABUAAABMYXN0TWV0aG9kSW5wdXRWYWx1ZXMBAL46AC4ARL46AAAAGAEAAAABAf//" +
+           "//8AAAAAFWCJCgIAAAAAABYAAABMYXN0TWV0aG9kT3V0cHV0VmFsdWVzAQDAOgAuAETAOgAAABgBAAAA" +
+           "AQH/////AAAAABVgiQoCAAAAAAASAAAATGFzdE1ldGhvZENhbGxUaW1lAQAIDwAuAEQIDwAAAQAmAf//" +
+           "//8BAf////8AAAAAFWCJCgIAAAAAABYAAABMYXN0TWV0aG9kUmV0dXJuU3RhdHVzAQAJDwAuAEQJDwAA" +
+           "ABP/////AQH/////AAAAAARggAoBAAAAAAAPAAAARmluYWxSZXN1bHREYXRhAQAKDwAvADoKDwAA////" +
+           "/wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -49221,7 +49164,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the ProgramDiagnostics Variable.
         /// </summary>
-        public ProgramDiagnosticState ProgramDiagnostics
+        public ProgramDiagnostic2State ProgramDiagnostics
         {
             get
             {
@@ -49259,111 +49202,6 @@ namespace Opc.Ua
                 m_finalResultData = value;
             }
         }
-
-        /// <summary>
-        /// Causes the Program to transition from the Ready state to the Running state.
-        /// </summary>
-        public MethodState Start
-        {
-            get
-            {
-                return m_startMethod;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_startMethod, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_startMethod = value;
-            }
-        }
-
-        /// <summary>
-        /// Causes the Program to transition from the Running state to the Suspended state.
-        /// </summary>
-        public MethodState Suspend
-        {
-            get
-            {
-                return m_suspendMethod;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_suspendMethod, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_suspendMethod = value;
-            }
-        }
-
-        /// <summary>
-        /// Causes the Program to transition from the Suspended state to the Running state.
-        /// </summary>
-        public MethodState Resume
-        {
-            get
-            {
-                return m_resumeMethod;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_resumeMethod, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_resumeMethod = value;
-            }
-        }
-
-        /// <summary>
-        /// Causes the Program to transition from the Ready, Running or Suspended state to the Halted state.
-        /// </summary>
-        public MethodState Halt
-        {
-            get
-            {
-                return m_haltMethod;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_haltMethod, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_haltMethod = value;
-            }
-        }
-
-        /// <summary>
-        /// Causes the Program to transition from the Halted state to the Ready state.
-        /// </summary>
-        public MethodState Reset
-        {
-            get
-            {
-                return m_resetMethod;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_resetMethod, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_resetMethod = value;
-            }
-        }
         #endregion
 
         #region Overridden Methods
@@ -49399,31 +49237,6 @@ namespace Opc.Ua
             if (m_finalResultData != null)
             {
                 children.Add(m_finalResultData);
-            }
-
-            if (m_startMethod != null)
-            {
-                children.Add(m_startMethod);
-            }
-
-            if (m_suspendMethod != null)
-            {
-                children.Add(m_suspendMethod);
-            }
-
-            if (m_resumeMethod != null)
-            {
-                children.Add(m_resumeMethod);
-            }
-
-            if (m_haltMethod != null)
-            {
-                children.Add(m_haltMethod);
-            }
-
-            if (m_resetMethod != null)
-            {
-                children.Add(m_resetMethod);
             }
 
             base.GetChildren(context, children);
@@ -49518,11 +49331,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                ProgramDiagnostics = new ProgramDiagnosticState(this);
+                                ProgramDiagnostics = new ProgramDiagnostic2State(this);
                             }
                             else
                             {
-                                ProgramDiagnostics = (ProgramDiagnosticState)replacement;
+                                ProgramDiagnostics = (ProgramDiagnostic2State)replacement;
                             }
                         }
                     }
@@ -49551,111 +49364,6 @@ namespace Opc.Ua
                     instance = FinalResultData;
                     break;
                 }
-
-                case Opc.Ua.BrowseNames.Start:
-                {
-                    if (createOrReplace)
-                    {
-                        if (Start == null)
-                        {
-                            if (replacement == null)
-                            {
-                                Start = new MethodState(this);
-                            }
-                            else
-                            {
-                                Start = (MethodState)replacement;
-                            }
-                        }
-                    }
-
-                    instance = Start;
-                    break;
-                }
-
-                case Opc.Ua.BrowseNames.Suspend:
-                {
-                    if (createOrReplace)
-                    {
-                        if (Suspend == null)
-                        {
-                            if (replacement == null)
-                            {
-                                Suspend = new MethodState(this);
-                            }
-                            else
-                            {
-                                Suspend = (MethodState)replacement;
-                            }
-                        }
-                    }
-
-                    instance = Suspend;
-                    break;
-                }
-
-                case Opc.Ua.BrowseNames.Resume:
-                {
-                    if (createOrReplace)
-                    {
-                        if (Resume == null)
-                        {
-                            if (replacement == null)
-                            {
-                                Resume = new MethodState(this);
-                            }
-                            else
-                            {
-                                Resume = (MethodState)replacement;
-                            }
-                        }
-                    }
-
-                    instance = Resume;
-                    break;
-                }
-
-                case Opc.Ua.BrowseNames.Halt:
-                {
-                    if (createOrReplace)
-                    {
-                        if (Halt == null)
-                        {
-                            if (replacement == null)
-                            {
-                                Halt = new MethodState(this);
-                            }
-                            else
-                            {
-                                Halt = (MethodState)replacement;
-                            }
-                        }
-                    }
-
-                    instance = Halt;
-                    break;
-                }
-
-                case Opc.Ua.BrowseNames.Reset:
-                {
-                    if (createOrReplace)
-                    {
-                        if (Reset == null)
-                        {
-                            if (replacement == null)
-                            {
-                                Reset = new MethodState(this);
-                            }
-                            else
-                            {
-                                Reset = (MethodState)replacement;
-                            }
-                        }
-                    }
-
-                    instance = Reset;
-                    break;
-                }
             }
 
             if (instance != null)
@@ -49671,13 +49379,8 @@ namespace Opc.Ua
         private PropertyState<bool> m_deletable;
         private PropertyState<bool> m_autoDelete;
         private PropertyState<int> m_recycleCount;
-        private ProgramDiagnosticState m_programDiagnostics;
+        private ProgramDiagnostic2State m_programDiagnostics;
         private BaseObjectState m_finalResultData;
-        private MethodState m_startMethod;
-        private MethodState m_suspendMethod;
-        private MethodState m_resumeMethod;
-        private MethodState m_haltMethod;
-        private MethodState m_resetMethod;
         #endregion
     }
     #endif
@@ -51398,6 +51101,1361 @@ namespace Opc.Ua
         #region Private Fields
         private ProgramDiagnosticDataType m_value;
         private ProgramDiagnosticState m_variable;
+        #endregion
+    }
+    #endregion
+    #endif
+    #endregion
+
+    #region ProgramDiagnostic2State Class
+    #if (!OPCUA_EXCLUDE_ProgramDiagnostic2State)
+    /// <summary>
+    /// Stores an instance of the ProgramDiagnostic2Type VariableType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class ProgramDiagnostic2State : BaseDataVariableState<ProgramDiagnostic2DataType>
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public ProgramDiagnostic2State(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.VariableTypes.ProgramDiagnostic2Type, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+        }
+
+        /// <summary>
+        /// Returns the id of the default data type node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultDataTypeId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.DataTypes.ProgramDiagnostic2DataType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+        }
+
+        /// <summary>
+        /// Returns the id of the default value rank for the instance.
+        /// </summary>
+        protected override int GetDefaultValueRank()
+        {
+            return ValueRanks.Scalar;
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "//////////8VYIkAAgAAAAAAHgAAAFByb2dyYW1EaWFnbm9zdGljMlR5cGVJbnN0YW5jZQEAFzwBABc8" +
+           "AQAkPP////8BAf////8MAAAAFWCJCgIAAAAAAA8AAABDcmVhdGVTZXNzaW9uSWQBABg8AC4ARBg8AAAA" +
+           "Ef////8BAf////8AAAAAFWCJCgIAAAAAABAAAABDcmVhdGVDbGllbnROYW1lAQAZPAAuAEQZPAAAAAz/" +
+           "////AQH/////AAAAABVgiQoCAAAAAAAWAAAASW52b2NhdGlvbkNyZWF0aW9uVGltZQEAGjwALgBEGjwA" +
+           "AAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAASAAAATGFzdFRyYW5zaXRpb25UaW1lAQAbPAAuAEQb" +
+           "PAAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAA4AAABMYXN0TWV0aG9kQ2FsbAEAHDwALgBEHDwA" +
+           "AAAM/////wEB/////wAAAAAVYIkKAgAAAAAAEwAAAExhc3RNZXRob2RTZXNzaW9uSWQBAB08AC4ARB08" +
+           "AAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABgAAABMYXN0TWV0aG9kSW5wdXRBcmd1bWVudHMBAB48" +
+           "AC4ARB48AAABACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAAAGQAAAExhc3RNZXRob2RPdXRwdXRBcmd1" +
+           "bWVudHMBAB88AC4ARB88AAABACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAAAFQAAAExhc3RNZXRob2RJ" +
+           "bnB1dFZhbHVlcwEAIDwALgBEIDwAAAAYAQAAAAEB/////wAAAAAVYIkKAgAAAAAAFgAAAExhc3RNZXRo" +
+           "b2RPdXRwdXRWYWx1ZXMBACE8AC4ARCE8AAAAGAEAAAABAf////8AAAAAFWCJCgIAAAAAABIAAABMYXN0" +
+           "TWV0aG9kQ2FsbFRpbWUBACI8AC4ARCI8AAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAAFgAAAExh" +
+           "c3RNZXRob2RSZXR1cm5TdGF0dXMBACM8AC4ARCM8AAAAE/////8BAf////8AAAAA";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the CreateSessionId Property.
+        /// </summary>
+        public PropertyState<NodeId> CreateSessionId
+        {
+            get
+            {
+                return m_createSessionId;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_createSessionId, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_createSessionId = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the CreateClientName Property.
+        /// </summary>
+        public PropertyState<string> CreateClientName
+        {
+            get
+            {
+                return m_createClientName;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_createClientName, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_createClientName = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the InvocationCreationTime Property.
+        /// </summary>
+        public PropertyState<DateTime> InvocationCreationTime
+        {
+            get
+            {
+                return m_invocationCreationTime;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_invocationCreationTime, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_invocationCreationTime = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the LastTransitionTime Property.
+        /// </summary>
+        public PropertyState<DateTime> LastTransitionTime
+        {
+            get
+            {
+                return m_lastTransitionTime;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_lastTransitionTime, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_lastTransitionTime = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the LastMethodCall Property.
+        /// </summary>
+        public PropertyState<string> LastMethodCall
+        {
+            get
+            {
+                return m_lastMethodCall;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_lastMethodCall, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_lastMethodCall = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the LastMethodSessionId Property.
+        /// </summary>
+        public PropertyState<NodeId> LastMethodSessionId
+        {
+            get
+            {
+                return m_lastMethodSessionId;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_lastMethodSessionId, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_lastMethodSessionId = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the LastMethodInputArguments Property.
+        /// </summary>
+        public PropertyState<Argument[]> LastMethodInputArguments
+        {
+            get
+            {
+                return m_lastMethodInputArguments;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_lastMethodInputArguments, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_lastMethodInputArguments = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the LastMethodOutputArguments Property.
+        /// </summary>
+        public PropertyState<Argument[]> LastMethodOutputArguments
+        {
+            get
+            {
+                return m_lastMethodOutputArguments;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_lastMethodOutputArguments, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_lastMethodOutputArguments = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the LastMethodInputValues Property.
+        /// </summary>
+        public PropertyState<object[]> LastMethodInputValues
+        {
+            get
+            {
+                return m_lastMethodInputValues;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_lastMethodInputValues, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_lastMethodInputValues = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the LastMethodOutputValues Property.
+        /// </summary>
+        public PropertyState<object[]> LastMethodOutputValues
+        {
+            get
+            {
+                return m_lastMethodOutputValues;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_lastMethodOutputValues, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_lastMethodOutputValues = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the LastMethodCallTime Property.
+        /// </summary>
+        public PropertyState<DateTime> LastMethodCallTime
+        {
+            get
+            {
+                return m_lastMethodCallTime;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_lastMethodCallTime, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_lastMethodCallTime = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the LastMethodReturnStatus Property.
+        /// </summary>
+        public PropertyState<StatusCode> LastMethodReturnStatus
+        {
+            get
+            {
+                return m_lastMethodReturnStatus;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_lastMethodReturnStatus, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_lastMethodReturnStatus = value;
+            }
+        }
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Populates a list with the children that belong to the node.
+        /// </summary>
+        /// <param name="context">The context for the system being accessed.</param>
+        /// <param name="children">The list of children to populate.</param>
+        public override void GetChildren(
+            ISystemContext context,
+            IList<BaseInstanceState> children)
+        {
+            if (m_createSessionId != null)
+            {
+                children.Add(m_createSessionId);
+            }
+
+            if (m_createClientName != null)
+            {
+                children.Add(m_createClientName);
+            }
+
+            if (m_invocationCreationTime != null)
+            {
+                children.Add(m_invocationCreationTime);
+            }
+
+            if (m_lastTransitionTime != null)
+            {
+                children.Add(m_lastTransitionTime);
+            }
+
+            if (m_lastMethodCall != null)
+            {
+                children.Add(m_lastMethodCall);
+            }
+
+            if (m_lastMethodSessionId != null)
+            {
+                children.Add(m_lastMethodSessionId);
+            }
+
+            if (m_lastMethodInputArguments != null)
+            {
+                children.Add(m_lastMethodInputArguments);
+            }
+
+            if (m_lastMethodOutputArguments != null)
+            {
+                children.Add(m_lastMethodOutputArguments);
+            }
+
+            if (m_lastMethodInputValues != null)
+            {
+                children.Add(m_lastMethodInputValues);
+            }
+
+            if (m_lastMethodOutputValues != null)
+            {
+                children.Add(m_lastMethodOutputValues);
+            }
+
+            if (m_lastMethodCallTime != null)
+            {
+                children.Add(m_lastMethodCallTime);
+            }
+
+            if (m_lastMethodReturnStatus != null)
+            {
+                children.Add(m_lastMethodReturnStatus);
+            }
+
+            base.GetChildren(context, children);
+        }
+
+        /// <summary>
+        /// Finds the child with the specified browse name.
+        /// </summary>
+        protected override BaseInstanceState FindChild(
+            ISystemContext context,
+            QualifiedName browseName,
+            bool createOrReplace,
+            BaseInstanceState replacement)
+        {
+            if (QualifiedName.IsNull(browseName))
+            {
+                return null;
+            }
+
+            BaseInstanceState instance = null;
+
+            switch (browseName.Name)
+            {
+                case Opc.Ua.BrowseNames.CreateSessionId:
+                {
+                    if (createOrReplace)
+                    {
+                        if (CreateSessionId == null)
+                        {
+                            if (replacement == null)
+                            {
+                                CreateSessionId = new PropertyState<NodeId>(this);
+                            }
+                            else
+                            {
+                                CreateSessionId = (PropertyState<NodeId>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = CreateSessionId;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.CreateClientName:
+                {
+                    if (createOrReplace)
+                    {
+                        if (CreateClientName == null)
+                        {
+                            if (replacement == null)
+                            {
+                                CreateClientName = new PropertyState<string>(this);
+                            }
+                            else
+                            {
+                                CreateClientName = (PropertyState<string>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = CreateClientName;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.InvocationCreationTime:
+                {
+                    if (createOrReplace)
+                    {
+                        if (InvocationCreationTime == null)
+                        {
+                            if (replacement == null)
+                            {
+                                InvocationCreationTime = new PropertyState<DateTime>(this);
+                            }
+                            else
+                            {
+                                InvocationCreationTime = (PropertyState<DateTime>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = InvocationCreationTime;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.LastTransitionTime:
+                {
+                    if (createOrReplace)
+                    {
+                        if (LastTransitionTime == null)
+                        {
+                            if (replacement == null)
+                            {
+                                LastTransitionTime = new PropertyState<DateTime>(this);
+                            }
+                            else
+                            {
+                                LastTransitionTime = (PropertyState<DateTime>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = LastTransitionTime;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.LastMethodCall:
+                {
+                    if (createOrReplace)
+                    {
+                        if (LastMethodCall == null)
+                        {
+                            if (replacement == null)
+                            {
+                                LastMethodCall = new PropertyState<string>(this);
+                            }
+                            else
+                            {
+                                LastMethodCall = (PropertyState<string>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = LastMethodCall;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.LastMethodSessionId:
+                {
+                    if (createOrReplace)
+                    {
+                        if (LastMethodSessionId == null)
+                        {
+                            if (replacement == null)
+                            {
+                                LastMethodSessionId = new PropertyState<NodeId>(this);
+                            }
+                            else
+                            {
+                                LastMethodSessionId = (PropertyState<NodeId>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = LastMethodSessionId;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.LastMethodInputArguments:
+                {
+                    if (createOrReplace)
+                    {
+                        if (LastMethodInputArguments == null)
+                        {
+                            if (replacement == null)
+                            {
+                                LastMethodInputArguments = new PropertyState<Argument[]>(this);
+                            }
+                            else
+                            {
+                                LastMethodInputArguments = (PropertyState<Argument[]>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = LastMethodInputArguments;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.LastMethodOutputArguments:
+                {
+                    if (createOrReplace)
+                    {
+                        if (LastMethodOutputArguments == null)
+                        {
+                            if (replacement == null)
+                            {
+                                LastMethodOutputArguments = new PropertyState<Argument[]>(this);
+                            }
+                            else
+                            {
+                                LastMethodOutputArguments = (PropertyState<Argument[]>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = LastMethodOutputArguments;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.LastMethodInputValues:
+                {
+                    if (createOrReplace)
+                    {
+                        if (LastMethodInputValues == null)
+                        {
+                            if (replacement == null)
+                            {
+                                LastMethodInputValues = new PropertyState<object[]>(this);
+                            }
+                            else
+                            {
+                                LastMethodInputValues = (PropertyState<object[]>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = LastMethodInputValues;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.LastMethodOutputValues:
+                {
+                    if (createOrReplace)
+                    {
+                        if (LastMethodOutputValues == null)
+                        {
+                            if (replacement == null)
+                            {
+                                LastMethodOutputValues = new PropertyState<object[]>(this);
+                            }
+                            else
+                            {
+                                LastMethodOutputValues = (PropertyState<object[]>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = LastMethodOutputValues;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.LastMethodCallTime:
+                {
+                    if (createOrReplace)
+                    {
+                        if (LastMethodCallTime == null)
+                        {
+                            if (replacement == null)
+                            {
+                                LastMethodCallTime = new PropertyState<DateTime>(this);
+                            }
+                            else
+                            {
+                                LastMethodCallTime = (PropertyState<DateTime>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = LastMethodCallTime;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.LastMethodReturnStatus:
+                {
+                    if (createOrReplace)
+                    {
+                        if (LastMethodReturnStatus == null)
+                        {
+                            if (replacement == null)
+                            {
+                                LastMethodReturnStatus = new PropertyState<StatusCode>(this);
+                            }
+                            else
+                            {
+                                LastMethodReturnStatus = (PropertyState<StatusCode>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = LastMethodReturnStatus;
+                    break;
+                }
+            }
+
+            if (instance != null)
+            {
+                return instance;
+            }
+
+            return base.FindChild(context, browseName, createOrReplace, replacement);
+        }
+        #endregion
+
+        #region Private Fields
+        private PropertyState<NodeId> m_createSessionId;
+        private PropertyState<string> m_createClientName;
+        private PropertyState<DateTime> m_invocationCreationTime;
+        private PropertyState<DateTime> m_lastTransitionTime;
+        private PropertyState<string> m_lastMethodCall;
+        private PropertyState<NodeId> m_lastMethodSessionId;
+        private PropertyState<Argument[]> m_lastMethodInputArguments;
+        private PropertyState<Argument[]> m_lastMethodOutputArguments;
+        private PropertyState<object[]> m_lastMethodInputValues;
+        private PropertyState<object[]> m_lastMethodOutputValues;
+        private PropertyState<DateTime> m_lastMethodCallTime;
+        private PropertyState<StatusCode> m_lastMethodReturnStatus;
+        #endregion
+    }
+
+    #region ProgramDiagnostic2Value Class
+    /// <summary>
+    /// A typed version of the _BrowseName_ variable.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public class ProgramDiagnostic2Value : BaseVariableValue
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the instance with its defalt attribute values.
+        /// </summary>
+        public ProgramDiagnostic2Value(ProgramDiagnostic2State variable, ProgramDiagnostic2DataType value, object dataLock) : base(dataLock)
+        {
+            m_value = value;
+
+            if (m_value == null)
+            {
+                m_value = new ProgramDiagnostic2DataType();
+            }
+
+            Initialize(variable);
+        }
+        #endregion
+
+        #region Public Members
+        /// <summary>
+        /// The variable that the value belongs to.
+        /// </summary>
+        public ProgramDiagnostic2State Variable
+        {
+            get { return m_variable; }
+        }
+
+        /// <summary>
+        /// The value of the variable.
+        /// </summary>
+        public ProgramDiagnostic2DataType Value
+        {
+            get { return m_value;  }
+            set { m_value = value; }
+        }
+        #endregion
+
+        #region Private Methods
+        /// <summary>
+        /// Initializes the object.
+        /// </summary>
+        private void Initialize(ProgramDiagnostic2State variable)
+        {
+            lock (Lock)
+            {
+                m_variable = variable;
+
+                variable.Value = m_value;
+
+                variable.OnReadValue = OnReadValue;
+                variable.OnSimpleWriteValue = OnWriteValue;
+
+                BaseVariableState instance = null;
+                List<BaseInstanceState> updateList = new List<BaseInstanceState>();
+                updateList.Add(variable);
+
+                instance = m_variable.CreateSessionId;
+                instance.OnReadValue = OnRead_CreateSessionId;
+                instance.OnSimpleWriteValue = OnWrite_CreateSessionId;
+                updateList.Add(instance);
+                instance = m_variable.CreateClientName;
+                instance.OnReadValue = OnRead_CreateClientName;
+                instance.OnSimpleWriteValue = OnWrite_CreateClientName;
+                updateList.Add(instance);
+                instance = m_variable.InvocationCreationTime;
+                instance.OnReadValue = OnRead_InvocationCreationTime;
+                instance.OnSimpleWriteValue = OnWrite_InvocationCreationTime;
+                updateList.Add(instance);
+                instance = m_variable.LastTransitionTime;
+                instance.OnReadValue = OnRead_LastTransitionTime;
+                instance.OnSimpleWriteValue = OnWrite_LastTransitionTime;
+                updateList.Add(instance);
+                instance = m_variable.LastMethodCall;
+                instance.OnReadValue = OnRead_LastMethodCall;
+                instance.OnSimpleWriteValue = OnWrite_LastMethodCall;
+                updateList.Add(instance);
+                instance = m_variable.LastMethodSessionId;
+                instance.OnReadValue = OnRead_LastMethodSessionId;
+                instance.OnSimpleWriteValue = OnWrite_LastMethodSessionId;
+                updateList.Add(instance);
+                instance = m_variable.LastMethodInputArguments;
+                instance.OnReadValue = OnRead_LastMethodInputArguments;
+                instance.OnSimpleWriteValue = OnWrite_LastMethodInputArguments;
+                updateList.Add(instance);
+                instance = m_variable.LastMethodOutputArguments;
+                instance.OnReadValue = OnRead_LastMethodOutputArguments;
+                instance.OnSimpleWriteValue = OnWrite_LastMethodOutputArguments;
+                updateList.Add(instance);
+                instance = m_variable.LastMethodInputValues;
+                instance.OnReadValue = OnRead_LastMethodInputValues;
+                instance.OnSimpleWriteValue = OnWrite_LastMethodInputValues;
+                updateList.Add(instance);
+                instance = m_variable.LastMethodOutputValues;
+                instance.OnReadValue = OnRead_LastMethodOutputValues;
+                instance.OnSimpleWriteValue = OnWrite_LastMethodOutputValues;
+                updateList.Add(instance);
+                instance = m_variable.LastMethodCallTime;
+                instance.OnReadValue = OnRead_LastMethodCallTime;
+                instance.OnSimpleWriteValue = OnWrite_LastMethodCallTime;
+                updateList.Add(instance);
+                instance = m_variable.LastMethodReturnStatus;
+                instance.OnReadValue = OnRead_LastMethodReturnStatus;
+                instance.OnSimpleWriteValue = OnWrite_LastMethodReturnStatus;
+                updateList.Add(instance);
+
+                SetUpdateList(updateList);
+            }
+        }
+
+        /// <summary>
+        /// Reads the value of the variable.
+        /// </summary>
+        protected ServiceResult OnReadValue(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable.
+        /// </summary>
+        private ServiceResult OnWriteValue(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value = (ProgramDiagnostic2DataType)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+
+        #region CreateSessionId Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_CreateSessionId(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.CreateSessionId;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_CreateSessionId(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.CreateSessionId = (NodeId)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region CreateClientName Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_CreateClientName(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.CreateClientName;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_CreateClientName(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.CreateClientName = (string)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region InvocationCreationTime Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_InvocationCreationTime(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.InvocationCreationTime;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_InvocationCreationTime(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.InvocationCreationTime = (DateTime)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region LastTransitionTime Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_LastTransitionTime(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.LastTransitionTime;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_LastTransitionTime(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.LastTransitionTime = (DateTime)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region LastMethodCall Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_LastMethodCall(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.LastMethodCall;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_LastMethodCall(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.LastMethodCall = (string)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region LastMethodSessionId Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_LastMethodSessionId(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.LastMethodSessionId;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_LastMethodSessionId(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.LastMethodSessionId = (NodeId)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region LastMethodInputArguments Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_LastMethodInputArguments(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.LastMethodInputArguments;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_LastMethodInputArguments(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.LastMethodInputArguments = (ArgumentCollection)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region LastMethodOutputArguments Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_LastMethodOutputArguments(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.LastMethodOutputArguments;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_LastMethodOutputArguments(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.LastMethodOutputArguments = (ArgumentCollection)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region LastMethodInputValues Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_LastMethodInputValues(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.LastMethodInputValues;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_LastMethodInputValues(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.LastMethodInputValues = (VariantCollection)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region LastMethodOutputValues Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_LastMethodOutputValues(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.LastMethodOutputValues;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_LastMethodOutputValues(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.LastMethodOutputValues = (VariantCollection)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region LastMethodCallTime Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_LastMethodCallTime(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.LastMethodCallTime;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_LastMethodCallTime(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.LastMethodCallTime = (DateTime)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region LastMethodReturnStatus Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_LastMethodReturnStatus(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.LastMethodReturnStatus;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_LastMethodReturnStatus(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.LastMethodReturnStatus = (StatusResult)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+        #endregion
+
+        #region Private Fields
+        private ProgramDiagnostic2DataType m_value;
+        private ProgramDiagnostic2State m_variable;
         #endregion
     }
     #endregion

@@ -55615,6 +55615,376 @@ namespace Opc.Ua
     #endif
     #endregion
 
+    #region ProgramDiagnostic2DataType Class
+    #if (!OPCUA_EXCLUDE_ProgramDiagnostic2DataType)
+    /// <summary>
+    /// A description for the ProgramDiagnostic2DataType DataType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class ProgramDiagnostic2DataType : IEncodeable
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public ProgramDiagnostic2DataType()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+            m_createSessionId = null;
+            m_createClientName = null;
+            m_invocationCreationTime = DateTime.MinValue;
+            m_lastTransitionTime = DateTime.MinValue;
+            m_lastMethodCall = null;
+            m_lastMethodSessionId = null;
+            m_lastMethodInputArguments = new ArgumentCollection();
+            m_lastMethodOutputArguments = new ArgumentCollection();
+            m_lastMethodInputValues = new VariantCollection();
+            m_lastMethodOutputValues = new VariantCollection();
+            m_lastMethodCallTime = DateTime.MinValue;
+            m_lastMethodReturnStatus = new StatusResult();
+        }
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the CreateSessionId field.
+        /// </summary>
+        [DataMember(Name = "CreateSessionId", IsRequired = false, Order = 1)]
+        public NodeId CreateSessionId
+        {
+            get { return m_createSessionId;  }
+            set { m_createSessionId = value; }
+        }
+
+        /// <summary>
+        /// A description for the CreateClientName field.
+        /// </summary>
+        [DataMember(Name = "CreateClientName", IsRequired = false, Order = 2)]
+        public string CreateClientName
+        {
+            get { return m_createClientName;  }
+            set { m_createClientName = value; }
+        }
+
+        /// <summary>
+        /// A description for the InvocationCreationTime field.
+        /// </summary>
+        [DataMember(Name = "InvocationCreationTime", IsRequired = false, Order = 3)]
+        public DateTime InvocationCreationTime
+        {
+            get { return m_invocationCreationTime;  }
+            set { m_invocationCreationTime = value; }
+        }
+
+        /// <summary>
+        /// A description for the LastTransitionTime field.
+        /// </summary>
+        [DataMember(Name = "LastTransitionTime", IsRequired = false, Order = 4)]
+        public DateTime LastTransitionTime
+        {
+            get { return m_lastTransitionTime;  }
+            set { m_lastTransitionTime = value; }
+        }
+
+        /// <summary>
+        /// A description for the LastMethodCall field.
+        /// </summary>
+        [DataMember(Name = "LastMethodCall", IsRequired = false, Order = 5)]
+        public string LastMethodCall
+        {
+            get { return m_lastMethodCall;  }
+            set { m_lastMethodCall = value; }
+        }
+
+        /// <summary>
+        /// A description for the LastMethodSessionId field.
+        /// </summary>
+        [DataMember(Name = "LastMethodSessionId", IsRequired = false, Order = 6)]
+        public NodeId LastMethodSessionId
+        {
+            get { return m_lastMethodSessionId;  }
+            set { m_lastMethodSessionId = value; }
+        }
+
+        /// <summary>
+        /// A description for the LastMethodInputArguments field.
+        /// </summary>
+        [DataMember(Name = "LastMethodInputArguments", IsRequired = false, Order = 7)]
+        public ArgumentCollection LastMethodInputArguments
+        {
+            get
+            {
+                return m_lastMethodInputArguments;
+            }
+
+            set
+            {
+                m_lastMethodInputArguments = value;
+
+                if (value == null)
+                {
+                    m_lastMethodInputArguments = new ArgumentCollection();
+                }
+            }
+        }
+
+        /// <summary>
+        /// A description for the LastMethodOutputArguments field.
+        /// </summary>
+        [DataMember(Name = "LastMethodOutputArguments", IsRequired = false, Order = 8)]
+        public ArgumentCollection LastMethodOutputArguments
+        {
+            get
+            {
+                return m_lastMethodOutputArguments;
+            }
+
+            set
+            {
+                m_lastMethodOutputArguments = value;
+
+                if (value == null)
+                {
+                    m_lastMethodOutputArguments = new ArgumentCollection();
+                }
+            }
+        }
+
+        /// <summary>
+        /// A description for the LastMethodInputValues field.
+        /// </summary>
+        [DataMember(Name = "LastMethodInputValues", IsRequired = false, Order = 9)]
+        public VariantCollection LastMethodInputValues
+        {
+            get
+            {
+                return m_lastMethodInputValues;
+            }
+
+            set
+            {
+                m_lastMethodInputValues = value;
+
+                if (value == null)
+                {
+                    m_lastMethodInputValues = new VariantCollection();
+                }
+            }
+        }
+
+        /// <summary>
+        /// A description for the LastMethodOutputValues field.
+        /// </summary>
+        [DataMember(Name = "LastMethodOutputValues", IsRequired = false, Order = 10)]
+        public VariantCollection LastMethodOutputValues
+        {
+            get
+            {
+                return m_lastMethodOutputValues;
+            }
+
+            set
+            {
+                m_lastMethodOutputValues = value;
+
+                if (value == null)
+                {
+                    m_lastMethodOutputValues = new VariantCollection();
+                }
+            }
+        }
+
+        /// <summary>
+        /// A description for the LastMethodCallTime field.
+        /// </summary>
+        [DataMember(Name = "LastMethodCallTime", IsRequired = false, Order = 11)]
+        public DateTime LastMethodCallTime
+        {
+            get { return m_lastMethodCallTime;  }
+            set { m_lastMethodCallTime = value; }
+        }
+
+        /// <summary>
+        /// A description for the LastMethodReturnStatus field.
+        /// </summary>
+        [DataMember(Name = "LastMethodReturnStatus", IsRequired = false, Order = 12)]
+        public StatusResult LastMethodReturnStatus
+        {
+            get
+            {
+                return m_lastMethodReturnStatus;
+            }
+
+            set
+            {
+                m_lastMethodReturnStatus = value;
+
+                if (value == null)
+                {
+                    m_lastMethodReturnStatus = new StatusResult();
+                }
+            }
+        }
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public virtual ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.ProgramDiagnostic2DataType; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public virtual ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.ProgramDiagnostic2DataType_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public virtual ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.ProgramDiagnostic2DataType_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public virtual void Encode(IEncoder encoder)
+        {
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            encoder.WriteNodeId("CreateSessionId", CreateSessionId);
+            encoder.WriteString("CreateClientName", CreateClientName);
+            encoder.WriteDateTime("InvocationCreationTime", InvocationCreationTime);
+            encoder.WriteDateTime("LastTransitionTime", LastTransitionTime);
+            encoder.WriteString("LastMethodCall", LastMethodCall);
+            encoder.WriteNodeId("LastMethodSessionId", LastMethodSessionId);
+            encoder.WriteEncodeableArray("LastMethodInputArguments", LastMethodInputArguments.ToArray(), typeof(Argument));
+            encoder.WriteEncodeableArray("LastMethodOutputArguments", LastMethodOutputArguments.ToArray(), typeof(Argument));
+            encoder.WriteVariantArray("LastMethodInputValues", LastMethodInputValues);
+            encoder.WriteVariantArray("LastMethodOutputValues", LastMethodOutputValues);
+            encoder.WriteDateTime("LastMethodCallTime", LastMethodCallTime);
+            encoder.WriteEncodeable("LastMethodReturnStatus", LastMethodReturnStatus, typeof(StatusResult));
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public virtual void Decode(IDecoder decoder)
+        {
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            CreateSessionId = decoder.ReadNodeId("CreateSessionId");
+            CreateClientName = decoder.ReadString("CreateClientName");
+            InvocationCreationTime = decoder.ReadDateTime("InvocationCreationTime");
+            LastTransitionTime = decoder.ReadDateTime("LastTransitionTime");
+            LastMethodCall = decoder.ReadString("LastMethodCall");
+            LastMethodSessionId = decoder.ReadNodeId("LastMethodSessionId");
+            LastMethodInputArguments = (ArgumentCollection)decoder.ReadEncodeableArray("LastMethodInputArguments", typeof(Argument));
+            LastMethodOutputArguments = (ArgumentCollection)decoder.ReadEncodeableArray("LastMethodOutputArguments", typeof(Argument));
+            LastMethodInputValues = decoder.ReadVariantArray("LastMethodInputValues");
+            LastMethodOutputValues = decoder.ReadVariantArray("LastMethodOutputValues");
+            LastMethodCallTime = decoder.ReadDateTime("LastMethodCallTime");
+            LastMethodReturnStatus = (StatusResult)decoder.ReadEncodeable("LastMethodReturnStatus", typeof(StatusResult));
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public virtual bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            ProgramDiagnostic2DataType value = encodeable as ProgramDiagnostic2DataType;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+            if (!Utils.IsEqual(m_createSessionId, value.m_createSessionId)) return false;
+            if (!Utils.IsEqual(m_createClientName, value.m_createClientName)) return false;
+            if (!Utils.IsEqual(m_invocationCreationTime, value.m_invocationCreationTime)) return false;
+            if (!Utils.IsEqual(m_lastTransitionTime, value.m_lastTransitionTime)) return false;
+            if (!Utils.IsEqual(m_lastMethodCall, value.m_lastMethodCall)) return false;
+            if (!Utils.IsEqual(m_lastMethodSessionId, value.m_lastMethodSessionId)) return false;
+            if (!Utils.IsEqual(m_lastMethodInputArguments, value.m_lastMethodInputArguments)) return false;
+            if (!Utils.IsEqual(m_lastMethodOutputArguments, value.m_lastMethodOutputArguments)) return false;
+            if (!Utils.IsEqual(m_lastMethodInputValues, value.m_lastMethodInputValues)) return false;
+            if (!Utils.IsEqual(m_lastMethodOutputValues, value.m_lastMethodOutputValues)) return false;
+            if (!Utils.IsEqual(m_lastMethodCallTime, value.m_lastMethodCallTime)) return false;
+            if (!Utils.IsEqual(m_lastMethodReturnStatus, value.m_lastMethodReturnStatus)) return false;
+
+            return true;
+        }
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public virtual object Clone()
+        {
+            return (ProgramDiagnostic2DataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ProgramDiagnostic2DataType clone = (ProgramDiagnostic2DataType)base.MemberwiseClone();
+
+            clone.m_createSessionId = (NodeId)Utils.Clone(this.m_createSessionId);
+            clone.m_createClientName = (string)Utils.Clone(this.m_createClientName);
+            clone.m_invocationCreationTime = (DateTime)Utils.Clone(this.m_invocationCreationTime);
+            clone.m_lastTransitionTime = (DateTime)Utils.Clone(this.m_lastTransitionTime);
+            clone.m_lastMethodCall = (string)Utils.Clone(this.m_lastMethodCall);
+            clone.m_lastMethodSessionId = (NodeId)Utils.Clone(this.m_lastMethodSessionId);
+            clone.m_lastMethodInputArguments = (ArgumentCollection)Utils.Clone(this.m_lastMethodInputArguments);
+            clone.m_lastMethodOutputArguments = (ArgumentCollection)Utils.Clone(this.m_lastMethodOutputArguments);
+            clone.m_lastMethodInputValues = (VariantCollection)Utils.Clone(this.m_lastMethodInputValues);
+            clone.m_lastMethodOutputValues = (VariantCollection)Utils.Clone(this.m_lastMethodOutputValues);
+            clone.m_lastMethodCallTime = (DateTime)Utils.Clone(this.m_lastMethodCallTime);
+            clone.m_lastMethodReturnStatus = (StatusResult)Utils.Clone(this.m_lastMethodReturnStatus);
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        private NodeId m_createSessionId;
+        private string m_createClientName;
+        private DateTime m_invocationCreationTime;
+        private DateTime m_lastTransitionTime;
+        private string m_lastMethodCall;
+        private NodeId m_lastMethodSessionId;
+        private ArgumentCollection m_lastMethodInputArguments;
+        private ArgumentCollection m_lastMethodOutputArguments;
+        private VariantCollection m_lastMethodInputValues;
+        private VariantCollection m_lastMethodOutputValues;
+        private DateTime m_lastMethodCallTime;
+        private StatusResult m_lastMethodReturnStatus;
+        #endregion
+    }
+    #endif
+    #endregion
+
     #region Annotation Class
     #if (!OPCUA_EXCLUDE_Annotation)
     /// <summary>

@@ -39004,14 +39004,14 @@
         <uax:Identifier>i=47</uax:Identifier>
       </uax:ReferenceTypeId>
       <uax:TypeDefinitionId>
-        <uax:Identifier>i=2380</uax:Identifier>
+        <uax:Identifier>i=15383</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:ModellingRuleId>
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>2399</uax:NumericId>
       <uax:DataType>
-        <uax:Identifier>i=894</uax:Identifier>
+        <uax:Identifier>i=15396</uax:Identifier>
       </uax:DataType>
       <uax:ValueRank>-1</uax:ValueRank>
       <uax:AccessLevel>1</uax:AccessLevel>
@@ -39192,7 +39192,7 @@
         </uax:ModellingRuleId>
         <uax:NumericId>3846</uax:NumericId>
         <uax:DataType>
-          <uax:Identifier>i=24</uax:Identifier>
+          <uax:Identifier>i=296</uax:Identifier>
         </uax:DataType>
         <uax:ValueRank>1</uax:ValueRank>
         <uax:AccessLevel>1</uax:AccessLevel>
@@ -39218,12 +39218,64 @@
         </uax:ModellingRuleId>
         <uax:NumericId>3847</uax:NumericId>
         <uax:DataType>
-          <uax:Identifier>i=24</uax:Identifier>
+          <uax:Identifier>i=296</uax:Identifier>
         </uax:DataType>
         <uax:ValueRank>1</uax:ValueRank>
         <uax:AccessLevel>1</uax:AccessLevel>
         <uax:UserAccessLevel>1</uax:UserAccessLevel>
       </LastMethodOutputArguments>
+      <LastMethodInputValues>
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>i=15038</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>0</uax:NamespaceIndex>
+          <uax:Name>LastMethodInputValues</uax:Name>
+        </uax:BrowseName>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>15038</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=24</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </LastMethodInputValues>
+      <LastMethodOutputValues>
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>i=15040</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>0</uax:NamespaceIndex>
+          <uax:Name>LastMethodOutputValues</uax:Name>
+        </uax:BrowseName>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>15040</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=24</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </LastMethodOutputValues>
       <LastMethodCallTime>
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
@@ -39297,6 +39349,96 @@
       </uax:ModellingRuleId>
       <uax:NumericId>3850</uax:NumericId>
     </FinalResultData>
+    <Halted>
+      <uax:NodeClass>Object_1</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>i=2406</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
+        <uax:Name>Halted</uax:Name>
+      </uax:BrowseName>
+      <uax:Description>
+        <uax:Locale></uax:Locale>
+        <uax:Text>The Program is in a terminal or failed state, and it cannot be started or resumed without being reset.</uax:Text>
+      </uax:Description>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=47</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=2307</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:NumericId>2406</uax:NumericId>
+      <uax:References>
+        <uax:Reference>
+          <uax:ReferenceTypeId>
+            <uax:Identifier>i=51</uax:Identifier>
+          </uax:ReferenceTypeId>
+          <uax:IsInverse>true</uax:IsInverse>
+          <uax:TargetId>
+            <uax:Identifier>i=2408</uax:Identifier>
+          </uax:TargetId>
+        </uax:Reference>
+        <uax:Reference>
+          <uax:ReferenceTypeId>
+            <uax:Identifier>i=52</uax:Identifier>
+          </uax:ReferenceTypeId>
+          <uax:IsInverse>true</uax:IsInverse>
+          <uax:TargetId>
+            <uax:Identifier>i=2412</uax:Identifier>
+          </uax:TargetId>
+        </uax:Reference>
+        <uax:Reference>
+          <uax:ReferenceTypeId>
+            <uax:Identifier>i=52</uax:Identifier>
+          </uax:ReferenceTypeId>
+          <uax:IsInverse>true</uax:IsInverse>
+          <uax:TargetId>
+            <uax:Identifier>i=2420</uax:Identifier>
+          </uax:TargetId>
+        </uax:Reference>
+        <uax:Reference>
+          <uax:ReferenceTypeId>
+            <uax:Identifier>i=52</uax:Identifier>
+          </uax:ReferenceTypeId>
+          <uax:IsInverse>true</uax:IsInverse>
+          <uax:TargetId>
+            <uax:Identifier>i=2424</uax:Identifier>
+          </uax:TargetId>
+        </uax:Reference>
+      </uax:References>
+      <StateNumber>
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>i=2407</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>0</uax:NamespaceIndex>
+          <uax:Name>StateNumber</uax:Name>
+        </uax:BrowseName>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>2407</uax:NumericId>
+        <uax:Value>
+          <uax:Value>
+            <uax:UInt32>1</uax:UInt32>
+          </uax:Value>
+        </uax:Value>
+        <uax:DataType>
+          <uax:Identifier>i=7</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </StateNumber>
+    </Halted>
     <Ready>
       <uax:NodeClass>Object_1</uax:NodeClass>
       <uax:NodeId>
@@ -39385,7 +39527,7 @@
         <uax:NumericId>2401</uax:NumericId>
         <uax:Value>
           <uax:Value>
-            <uax:UInt32>1</uax:UInt32>
+            <uax:UInt32>2</uax:UInt32>
           </uax:Value>
         </uax:Value>
         <uax:DataType>
@@ -39484,7 +39626,7 @@
         <uax:NumericId>2403</uax:NumericId>
         <uax:Value>
           <uax:Value>
-            <uax:UInt32>2</uax:UInt32>
+            <uax:UInt32>3</uax:UInt32>
           </uax:Value>
         </uax:Value>
         <uax:DataType>
@@ -39574,96 +39716,6 @@
         <uax:NumericId>2405</uax:NumericId>
         <uax:Value>
           <uax:Value>
-            <uax:UInt32>3</uax:UInt32>
-          </uax:Value>
-        </uax:Value>
-        <uax:DataType>
-          <uax:Identifier>i=7</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </StateNumber>
-    </Suspended>
-    <Halted>
-      <uax:NodeClass>Object_1</uax:NodeClass>
-      <uax:NodeId>
-        <uax:Identifier>i=2406</uax:Identifier>
-      </uax:NodeId>
-      <uax:BrowseName>
-        <uax:NamespaceIndex>0</uax:NamespaceIndex>
-        <uax:Name>Halted</uax:Name>
-      </uax:BrowseName>
-      <uax:Description>
-        <uax:Locale></uax:Locale>
-        <uax:Text>The Program is in a terminal or failed state, and it cannot be started or resumed without being reset.</uax:Text>
-      </uax:Description>
-      <uax:ReferenceTypeId>
-        <uax:Identifier>i=47</uax:Identifier>
-      </uax:ReferenceTypeId>
-      <uax:TypeDefinitionId>
-        <uax:Identifier>i=2307</uax:Identifier>
-      </uax:TypeDefinitionId>
-      <uax:NumericId>2406</uax:NumericId>
-      <uax:References>
-        <uax:Reference>
-          <uax:ReferenceTypeId>
-            <uax:Identifier>i=51</uax:Identifier>
-          </uax:ReferenceTypeId>
-          <uax:IsInverse>true</uax:IsInverse>
-          <uax:TargetId>
-            <uax:Identifier>i=2408</uax:Identifier>
-          </uax:TargetId>
-        </uax:Reference>
-        <uax:Reference>
-          <uax:ReferenceTypeId>
-            <uax:Identifier>i=52</uax:Identifier>
-          </uax:ReferenceTypeId>
-          <uax:IsInverse>true</uax:IsInverse>
-          <uax:TargetId>
-            <uax:Identifier>i=2412</uax:Identifier>
-          </uax:TargetId>
-        </uax:Reference>
-        <uax:Reference>
-          <uax:ReferenceTypeId>
-            <uax:Identifier>i=52</uax:Identifier>
-          </uax:ReferenceTypeId>
-          <uax:IsInverse>true</uax:IsInverse>
-          <uax:TargetId>
-            <uax:Identifier>i=2420</uax:Identifier>
-          </uax:TargetId>
-        </uax:Reference>
-        <uax:Reference>
-          <uax:ReferenceTypeId>
-            <uax:Identifier>i=52</uax:Identifier>
-          </uax:ReferenceTypeId>
-          <uax:IsInverse>true</uax:IsInverse>
-          <uax:TargetId>
-            <uax:Identifier>i=2424</uax:Identifier>
-          </uax:TargetId>
-        </uax:Reference>
-      </uax:References>
-      <StateNumber>
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>i=2407</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>0</uax:NamespaceIndex>
-          <uax:Name>StateNumber</uax:Name>
-        </uax:BrowseName>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>2407</uax:NumericId>
-        <uax:Value>
-          <uax:Value>
             <uax:UInt32>4</uax:UInt32>
           </uax:Value>
         </uax:Value>
@@ -39674,7 +39726,7 @@
         <uax:AccessLevel>1</uax:AccessLevel>
         <uax:UserAccessLevel>1</uax:UserAccessLevel>
       </StateNumber>
-    </Halted>
+    </Suspended>
     <HaltedToReady>
       <uax:NodeClass>Object_1</uax:NodeClass>
       <uax:NodeId>
@@ -40417,7 +40469,7 @@
         <uax:Identifier>i=2426</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:ModellingRuleId>
-        <uax:Identifier>i=80</uax:Identifier>
+        <uax:Identifier>i=11508</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>2426</uax:NumericId>
       <uax:Executable>true</uax:Executable>
@@ -40454,7 +40506,7 @@
         <uax:Identifier>i=2427</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:ModellingRuleId>
-        <uax:Identifier>i=80</uax:Identifier>
+        <uax:Identifier>i=11508</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>2427</uax:NumericId>
       <uax:Executable>true</uax:Executable>
@@ -40491,7 +40543,7 @@
         <uax:Identifier>i=2428</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:ModellingRuleId>
-        <uax:Identifier>i=80</uax:Identifier>
+        <uax:Identifier>i=11508</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>2428</uax:NumericId>
       <uax:Executable>true</uax:Executable>
@@ -40528,7 +40580,7 @@
         <uax:Identifier>i=2429</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:ModellingRuleId>
-        <uax:Identifier>i=80</uax:Identifier>
+        <uax:Identifier>i=11508</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>2429</uax:NumericId>
       <uax:Executable>true</uax:Executable>
@@ -40583,7 +40635,7 @@
         <uax:Identifier>i=2430</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:ModellingRuleId>
-        <uax:Identifier>i=80</uax:Identifier>
+        <uax:Identifier>i=11508</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>2430</uax:NumericId>
       <uax:Executable>true</uax:Executable>
@@ -41021,6 +41073,335 @@
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </LastMethodReturnStatus>
   </ProgramDiagnosticType>
+  <ProgramDiagnostic2Type xmlns="http://opcfoundation.org/UA/">
+    <uax:NodeClass>VariableType_16</uax:NodeClass>
+    <uax:NodeId>
+      <uax:Identifier>i=15383</uax:Identifier>
+    </uax:NodeId>
+    <uax:BrowseName>
+      <uax:NamespaceIndex>0</uax:NamespaceIndex>
+      <uax:Name>ProgramDiagnostic2Type</uax:Name>
+    </uax:BrowseName>
+    <uax:SuperTypeId>
+      <uax:Identifier>i=63</uax:Identifier>
+    </uax:SuperTypeId>
+    <uax:DataType>
+      <uax:Identifier>i=15396</uax:Identifier>
+    </uax:DataType>
+    <uax:ValueRank>-1</uax:ValueRank>
+    <CreateSessionId>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>i=15384</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
+        <uax:Name>CreateSessionId</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=78</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15384</uax:NumericId>
+      <uax:DataType>
+        <uax:Identifier>i=17</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </CreateSessionId>
+    <CreateClientName>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>i=15385</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
+        <uax:Name>CreateClientName</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=78</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15385</uax:NumericId>
+      <uax:DataType>
+        <uax:Identifier>i=12</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </CreateClientName>
+    <InvocationCreationTime>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>i=15386</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
+        <uax:Name>InvocationCreationTime</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=78</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15386</uax:NumericId>
+      <uax:DataType>
+        <uax:Identifier>i=294</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </InvocationCreationTime>
+    <LastTransitionTime>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>i=15387</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
+        <uax:Name>LastTransitionTime</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=78</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15387</uax:NumericId>
+      <uax:DataType>
+        <uax:Identifier>i=294</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </LastTransitionTime>
+    <LastMethodCall>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>i=15388</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
+        <uax:Name>LastMethodCall</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=78</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15388</uax:NumericId>
+      <uax:DataType>
+        <uax:Identifier>i=12</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </LastMethodCall>
+    <LastMethodSessionId>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>i=15389</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
+        <uax:Name>LastMethodSessionId</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=78</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15389</uax:NumericId>
+      <uax:DataType>
+        <uax:Identifier>i=17</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </LastMethodSessionId>
+    <LastMethodInputArguments>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>i=15390</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
+        <uax:Name>LastMethodInputArguments</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=78</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15390</uax:NumericId>
+      <uax:DataType>
+        <uax:Identifier>i=296</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </LastMethodInputArguments>
+    <LastMethodOutputArguments>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>i=15391</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
+        <uax:Name>LastMethodOutputArguments</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=78</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15391</uax:NumericId>
+      <uax:DataType>
+        <uax:Identifier>i=296</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </LastMethodOutputArguments>
+    <LastMethodInputValues>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>i=15392</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
+        <uax:Name>LastMethodInputValues</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=78</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15392</uax:NumericId>
+      <uax:DataType>
+        <uax:Identifier>i=24</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </LastMethodInputValues>
+    <LastMethodOutputValues>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>i=15393</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
+        <uax:Name>LastMethodOutputValues</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=78</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15393</uax:NumericId>
+      <uax:DataType>
+        <uax:Identifier>i=24</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </LastMethodOutputValues>
+    <LastMethodCallTime>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>i=15394</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
+        <uax:Name>LastMethodCallTime</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=78</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15394</uax:NumericId>
+      <uax:DataType>
+        <uax:Identifier>i=294</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </LastMethodCallTime>
+    <LastMethodReturnStatus>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>i=15395</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
+        <uax:Name>LastMethodReturnStatus</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=78</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15395</uax:NumericId>
+      <uax:DataType>
+        <uax:Identifier>i=19</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </LastMethodReturnStatus>
+  </ProgramDiagnostic2Type>
   <Annotations xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Variable_2</uax:NodeClass>
     <uax:NodeId>
@@ -86337,6 +86718,19 @@
       <uax:Identifier>i=22</uax:Identifier>
     </uax:SuperTypeId>
   </ProgramDiagnosticDataType>
+  <ProgramDiagnostic2DataType xmlns="http://opcfoundation.org/UA/">
+    <uax:NodeClass>DataType_64</uax:NodeClass>
+    <uax:NodeId>
+      <uax:Identifier>i=15396</uax:Identifier>
+    </uax:NodeId>
+    <uax:BrowseName>
+      <uax:NamespaceIndex>0</uax:NamespaceIndex>
+      <uax:Name>ProgramDiagnostic2DataType</uax:Name>
+    </uax:BrowseName>
+    <uax:SuperTypeId>
+      <uax:Identifier>i=22</uax:Identifier>
+    </uax:SuperTypeId>
+  </ProgramDiagnostic2DataType>
   <Annotation xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
     <uax:NodeId>
@@ -88886,6 +89280,39 @@
         </uax:ReferenceTypeId>
         <uax:TargetId>
           <uax:Identifier>i=8247</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
+  </DefaultBinary>
+  <DefaultBinary xmlns="http://opcfoundation.org/UA/">
+    <uax:NodeClass>Object_1</uax:NodeClass>
+    <uax:NodeId>
+      <uax:Identifier>i=15397</uax:Identifier>
+    </uax:NodeId>
+    <uax:BrowseName>
+      <uax:NamespaceIndex>0</uax:NamespaceIndex>
+      <uax:Name>Default Binary</uax:Name>
+    </uax:BrowseName>
+    <uax:TypeDefinitionId>
+      <uax:Identifier>i=76</uax:Identifier>
+    </uax:TypeDefinitionId>
+    <uax:NumericId>15397</uax:NumericId>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:IsInverse>true</uax:IsInverse>
+        <uax:TargetId>
+          <uax:Identifier>i=15396</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=39</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>i=15398</uax:Identifier>
         </uax:TargetId>
       </uax:Reference>
     </uax:References>
@@ -91732,19 +92159,44 @@ bWU9InRuczpBcmd1bWVudCIgTGVuZ3RoRmllbGQ9Ik5vT2ZMYXN0TWV0aG9kT3V0cHV0QXJndW1l
 bnRzIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0iTGFzdE1ldGhvZENhbGxUaW1lIiBUeXBlTmFt
 ZT0ib3BjOkRhdGVUaW1lIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0iTGFzdE1ldGhvZFJldHVy
 blN0YXR1cyIgVHlwZU5hbWU9InRuczpTdGF0dXNSZXN1bHQiIC8+DQogIDwvb3BjOlN0cnVjdHVy
-ZWRUeXBlPg0KDQogIDxvcGM6U3RydWN0dXJlZFR5cGUgTmFtZT0iQW5ub3RhdGlvbiIgQmFzZVR5
-cGU9InVhOkV4dGVuc2lvbk9iamVjdCI+DQogICAgPG9wYzpGaWVsZCBOYW1lPSJNZXNzYWdlIiBU
-eXBlTmFtZT0ib3BjOlN0cmluZyIgLz4NCiAgICA8b3BjOkZpZWxkIE5hbWU9IlVzZXJOYW1lIiBU
-eXBlTmFtZT0ib3BjOlN0cmluZyIgLz4NCiAgICA8b3BjOkZpZWxkIE5hbWU9IkFubm90YXRpb25U
-aW1lIiBUeXBlTmFtZT0ib3BjOkRhdGVUaW1lIiAvPg0KICA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4N
-Cg0KICA8b3BjOkVudW1lcmF0ZWRUeXBlIE5hbWU9IkV4Y2VwdGlvbkRldmlhdGlvbkZvcm1hdCIg
-TGVuZ3RoSW5CaXRzPSIzMiI+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQWJzb2x1
-dGVWYWx1ZSIgVmFsdWU9IjAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iUGVy
-Y2VudE9mVmFsdWUiIFZhbHVlPSIxIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9
-IlBlcmNlbnRPZlJhbmdlIiBWYWx1ZT0iMiIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBO
-YW1lPSJQZXJjZW50T2ZFVVJhbmdlIiBWYWx1ZT0iMyIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRW
-YWx1ZSBOYW1lPSJVbmtub3duIiBWYWx1ZT0iNCIgLz4NCiAgPC9vcGM6RW51bWVyYXRlZFR5cGU+
-DQoNCjwvb3BjOlR5cGVEaWN0aW9uYXJ5Pg==</uax:ByteString>
+ZWRUeXBlPg0KDQogIDxvcGM6U3RydWN0dXJlZFR5cGUgTmFtZT0iUHJvZ3JhbURpYWdub3N0aWMy
+RGF0YVR5cGUiIEJhc2VUeXBlPSJ1YTpFeHRlbnNpb25PYmplY3QiPg0KICAgIDxvcGM6RmllbGQg
+TmFtZT0iQ3JlYXRlU2Vzc2lvbklkIiBUeXBlTmFtZT0idWE6Tm9kZUlkIiAvPg0KICAgIDxvcGM6
+RmllbGQgTmFtZT0iQ3JlYXRlQ2xpZW50TmFtZSIgVHlwZU5hbWU9Im9wYzpTdHJpbmciIC8+DQog
+ICAgPG9wYzpGaWVsZCBOYW1lPSJJbnZvY2F0aW9uQ3JlYXRpb25UaW1lIiBUeXBlTmFtZT0ib3Bj
+OkRhdGVUaW1lIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0iTGFzdFRyYW5zaXRpb25UaW1lIiBU
+eXBlTmFtZT0ib3BjOkRhdGVUaW1lIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0iTGFzdE1ldGhv
+ZENhbGwiIFR5cGVOYW1lPSJvcGM6U3RyaW5nIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0iTGFz
+dE1ldGhvZFNlc3Npb25JZCIgVHlwZU5hbWU9InVhOk5vZGVJZCIgLz4NCiAgICA8b3BjOkZpZWxk
+IE5hbWU9Ik5vT2ZMYXN0TWV0aG9kSW5wdXRBcmd1bWVudHMiIFR5cGVOYW1lPSJvcGM6SW50MzIi
+IC8+DQogICAgPG9wYzpGaWVsZCBOYW1lPSJMYXN0TWV0aG9kSW5wdXRBcmd1bWVudHMiIFR5cGVO
+YW1lPSJ0bnM6QXJndW1lbnQiIExlbmd0aEZpZWxkPSJOb09mTGFzdE1ldGhvZElucHV0QXJndW1l
+bnRzIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0iTm9PZkxhc3RNZXRob2RPdXRwdXRBcmd1bWVu
+dHMiIFR5cGVOYW1lPSJvcGM6SW50MzIiIC8+DQogICAgPG9wYzpGaWVsZCBOYW1lPSJMYXN0TWV0
+aG9kT3V0cHV0QXJndW1lbnRzIiBUeXBlTmFtZT0idG5zOkFyZ3VtZW50IiBMZW5ndGhGaWVsZD0i
+Tm9PZkxhc3RNZXRob2RPdXRwdXRBcmd1bWVudHMiIC8+DQogICAgPG9wYzpGaWVsZCBOYW1lPSJO
+b09mTGFzdE1ldGhvZElucHV0VmFsdWVzIiBUeXBlTmFtZT0ib3BjOkludDMyIiAvPg0KICAgIDxv
+cGM6RmllbGQgTmFtZT0iTGFzdE1ldGhvZElucHV0VmFsdWVzIiBUeXBlTmFtZT0idWE6VmFyaWFu
+dCIgTGVuZ3RoRmllbGQ9Ik5vT2ZMYXN0TWV0aG9kSW5wdXRWYWx1ZXMiIC8+DQogICAgPG9wYzpG
+aWVsZCBOYW1lPSJOb09mTGFzdE1ldGhvZE91dHB1dFZhbHVlcyIgVHlwZU5hbWU9Im9wYzpJbnQz
+MiIgLz4NCiAgICA8b3BjOkZpZWxkIE5hbWU9Ikxhc3RNZXRob2RPdXRwdXRWYWx1ZXMiIFR5cGVO
+YW1lPSJ1YTpWYXJpYW50IiBMZW5ndGhGaWVsZD0iTm9PZkxhc3RNZXRob2RPdXRwdXRWYWx1ZXMi
+IC8+DQogICAgPG9wYzpGaWVsZCBOYW1lPSJMYXN0TWV0aG9kQ2FsbFRpbWUiIFR5cGVOYW1lPSJv
+cGM6RGF0ZVRpbWUiIC8+DQogICAgPG9wYzpGaWVsZCBOYW1lPSJMYXN0TWV0aG9kUmV0dXJuU3Rh
+dHVzIiBUeXBlTmFtZT0idG5zOlN0YXR1c1Jlc3VsdCIgLz4NCiAgPC9vcGM6U3RydWN0dXJlZFR5
+cGU+DQoNCiAgPG9wYzpTdHJ1Y3R1cmVkVHlwZSBOYW1lPSJBbm5vdGF0aW9uIiBCYXNlVHlwZT0i
+dWE6RXh0ZW5zaW9uT2JqZWN0Ij4NCiAgICA8b3BjOkZpZWxkIE5hbWU9Ik1lc3NhZ2UiIFR5cGVO
+YW1lPSJvcGM6U3RyaW5nIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0iVXNlck5hbWUiIFR5cGVO
+YW1lPSJvcGM6U3RyaW5nIiAvPg0KICAgIDxvcGM6RmllbGQgTmFtZT0iQW5ub3RhdGlvblRpbWUi
+IFR5cGVOYW1lPSJvcGM6RGF0ZVRpbWUiIC8+DQogIDwvb3BjOlN0cnVjdHVyZWRUeXBlPg0KDQog
+IDxvcGM6RW51bWVyYXRlZFR5cGUgTmFtZT0iRXhjZXB0aW9uRGV2aWF0aW9uRm9ybWF0IiBMZW5n
+dGhJbkJpdHM9IjMyIj4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJBYnNvbHV0ZVZh
+bHVlIiBWYWx1ZT0iMCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJQZXJjZW50
+T2ZWYWx1ZSIgVmFsdWU9IjEiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iUGVy
+Y2VudE9mUmFuZ2UiIFZhbHVlPSIyIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9
+IlBlcmNlbnRPZkVVUmFuZ2UiIFZhbHVlPSIzIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVl
+IE5hbWU9IlVua25vd24iIFZhbHVlPSI0IiAvPg0KICA8L29wYzpFbnVtZXJhdGVkVHlwZT4NCg0K
+PC9vcGM6VHlwZURpY3Rpb25hcnk+</uax:ByteString>
       </uax:Value>
     </uax:Value>
     <uax:DataType>
@@ -93928,6 +94380,34 @@ DQoNCjwvb3BjOlR5cGVEaWN0aW9uYXJ5Pg==</uax:ByteString>
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </ProgramDiagnosticDataType>
+    <ProgramDiagnostic2DataType>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>i=15398</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
+        <uax:Name>ProgramDiagnostic2DataType</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=47</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=69</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:NumericId>15398</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:String>ProgramDiagnostic2DataType</uax:String>
+        </uax:Value>
+      </uax:Value>
+      <uax:DataType>
+        <uax:Identifier>i=12</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </ProgramDiagnostic2DataType>
     <Annotation>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -96428,6 +96908,39 @@ DQoNCjwvb3BjOlR5cGVEaWN0aW9uYXJ5Pg==</uax:ByteString>
         </uax:ReferenceTypeId>
         <uax:TargetId>
           <uax:Identifier>i=8882</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
+  </DefaultXml>
+  <DefaultXml xmlns="http://opcfoundation.org/UA/">
+    <uax:NodeClass>Object_1</uax:NodeClass>
+    <uax:NodeId>
+      <uax:Identifier>i=15401</uax:Identifier>
+    </uax:NodeId>
+    <uax:BrowseName>
+      <uax:NamespaceIndex>0</uax:NamespaceIndex>
+      <uax:Name>Default XML</uax:Name>
+    </uax:BrowseName>
+    <uax:TypeDefinitionId>
+      <uax:Identifier>i=76</uax:Identifier>
+    </uax:TypeDefinitionId>
+    <uax:NumericId>15401</uax:NumericId>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:IsInverse>true</uax:IsInverse>
+        <uax:TargetId>
+          <uax:Identifier>i=15396</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=39</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>i=15402</uax:Identifier>
         </uax:TargetId>
       </uax:Reference>
     </uax:References>
@@ -100284,23 +100797,46 @@ bWluT2NjdXJzPSIwIiAvPg0KICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iTGFzdE1ldGhvZFJldHVy
 blN0YXR1cyIgdHlwZT0idG5zOlN0YXR1c1Jlc3VsdCIgbWluT2NjdXJzPSIwIiBuaWxsYWJsZT0i
 dHJ1ZSIgLz4NCiAgICA8L3hzOnNlcXVlbmNlPg0KICA8L3hzOmNvbXBsZXhUeXBlPg0KICA8eHM6
 ZWxlbWVudCBuYW1lPSJQcm9ncmFtRGlhZ25vc3RpY0RhdGFUeXBlIiB0eXBlPSJ0bnM6UHJvZ3Jh
-bURpYWdub3N0aWNEYXRhVHlwZSIgLz4NCg0KICA8eHM6Y29tcGxleFR5cGUgbmFtZT0iQW5ub3Rh
-dGlvbiI+DQogICAgPHhzOnNlcXVlbmNlPg0KICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iTWVzc2Fn
-ZSIgdHlwZT0ieHM6c3RyaW5nIiBtaW5PY2N1cnM9IjAiIG5pbGxhYmxlPSJ0cnVlIiAvPg0KICAg
-ICAgPHhzOmVsZW1lbnQgbmFtZT0iVXNlck5hbWUiIHR5cGU9InhzOnN0cmluZyIgbWluT2NjdXJz
-PSIwIiBuaWxsYWJsZT0idHJ1ZSIgLz4NCiAgICAgIDx4czplbGVtZW50IG5hbWU9IkFubm90YXRp
-b25UaW1lIiB0eXBlPSJ4czpkYXRlVGltZSIgbWluT2NjdXJzPSIwIiAvPg0KICAgIDwveHM6c2Vx
-dWVuY2U+DQogIDwveHM6Y29tcGxleFR5cGU+DQogIDx4czplbGVtZW50IG5hbWU9IkFubm90YXRp
-b24iIHR5cGU9InRuczpBbm5vdGF0aW9uIiAvPg0KDQogIDx4czpzaW1wbGVUeXBlICBuYW1lPSJF
-eGNlcHRpb25EZXZpYXRpb25Gb3JtYXQiPg0KICAgIDx4czpyZXN0cmljdGlvbiBiYXNlPSJ4czpz
-dHJpbmciPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJBYnNvbHV0ZVZhbHVlXzAiIC8+
-DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlBlcmNlbnRPZlZhbHVlXzEiIC8+DQogICAg
-ICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlBlcmNlbnRPZlJhbmdlXzIiIC8+DQogICAgICA8eHM6
-ZW51bWVyYXRpb24gdmFsdWU9IlBlcmNlbnRPZkVVUmFuZ2VfMyIgLz4NCiAgICAgIDx4czplbnVt
-ZXJhdGlvbiB2YWx1ZT0iVW5rbm93bl80IiAvPg0KICAgIDwveHM6cmVzdHJpY3Rpb24+DQogIDwv
-eHM6c2ltcGxlVHlwZT4NCiAgPHhzOmVsZW1lbnQgbmFtZT0iRXhjZXB0aW9uRGV2aWF0aW9uRm9y
-bWF0IiB0eXBlPSJ0bnM6RXhjZXB0aW9uRGV2aWF0aW9uRm9ybWF0IiAvPg0KDQo8L3hzOnNjaGVt
-YT4=</uax:ByteString>
+bURpYWdub3N0aWNEYXRhVHlwZSIgLz4NCg0KICA8eHM6Y29tcGxleFR5cGUgbmFtZT0iUHJvZ3Jh
+bURpYWdub3N0aWMyRGF0YVR5cGUiPg0KICAgIDx4czpzZXF1ZW5jZT4NCiAgICAgIDx4czplbGVt
+ZW50IG5hbWU9IkNyZWF0ZVNlc3Npb25JZCIgdHlwZT0idWE6Tm9kZUlkIiBtaW5PY2N1cnM9IjAi
+IG5pbGxhYmxlPSJ0cnVlIiAvPg0KICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iQ3JlYXRlQ2xpZW50
+TmFtZSIgdHlwZT0ieHM6c3RyaW5nIiBtaW5PY2N1cnM9IjAiIG5pbGxhYmxlPSJ0cnVlIiAvPg0K
+ICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iSW52b2NhdGlvbkNyZWF0aW9uVGltZSIgdHlwZT0ieHM6
+ZGF0ZVRpbWUiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgIDx4czplbGVtZW50IG5hbWU9Ikxhc3RU
+cmFuc2l0aW9uVGltZSIgdHlwZT0ieHM6ZGF0ZVRpbWUiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAg
+IDx4czplbGVtZW50IG5hbWU9Ikxhc3RNZXRob2RDYWxsIiB0eXBlPSJ4czpzdHJpbmciIG1pbk9j
+Y3Vycz0iMCIgbmlsbGFibGU9InRydWUiIC8+DQogICAgICA8eHM6ZWxlbWVudCBuYW1lPSJMYXN0
+TWV0aG9kU2Vzc2lvbklkIiB0eXBlPSJ1YTpOb2RlSWQiIG1pbk9jY3Vycz0iMCIgbmlsbGFibGU9
+InRydWUiIC8+DQogICAgICA8eHM6ZWxlbWVudCBuYW1lPSJMYXN0TWV0aG9kSW5wdXRBcmd1bWVu
+dHMiIHR5cGU9InRuczpMaXN0T2ZBcmd1bWVudCIgbWluT2NjdXJzPSIwIiBuaWxsYWJsZT0idHJ1
+ZSIgLz4NCiAgICAgIDx4czplbGVtZW50IG5hbWU9Ikxhc3RNZXRob2RPdXRwdXRBcmd1bWVudHMi
+IHR5cGU9InRuczpMaXN0T2ZBcmd1bWVudCIgbWluT2NjdXJzPSIwIiBuaWxsYWJsZT0idHJ1ZSIg
+Lz4NCiAgICAgIDx4czplbGVtZW50IG5hbWU9Ikxhc3RNZXRob2RJbnB1dFZhbHVlcyIgdHlwZT0i
+dWE6TGlzdE9mVmFyaWFudCIgbWluT2NjdXJzPSIwIiBuaWxsYWJsZT0idHJ1ZSIgLz4NCiAgICAg
+IDx4czplbGVtZW50IG5hbWU9Ikxhc3RNZXRob2RPdXRwdXRWYWx1ZXMiIHR5cGU9InVhOkxpc3RP
+ZlZhcmlhbnQiIG1pbk9jY3Vycz0iMCIgbmlsbGFibGU9InRydWUiIC8+DQogICAgICA8eHM6ZWxl
+bWVudCBuYW1lPSJMYXN0TWV0aG9kQ2FsbFRpbWUiIHR5cGU9InhzOmRhdGVUaW1lIiBtaW5PY2N1
+cnM9IjAiIC8+DQogICAgICA8eHM6ZWxlbWVudCBuYW1lPSJMYXN0TWV0aG9kUmV0dXJuU3RhdHVz
+IiB0eXBlPSJ0bnM6U3RhdHVzUmVzdWx0IiBtaW5PY2N1cnM9IjAiIG5pbGxhYmxlPSJ0cnVlIiAv
+Pg0KICAgIDwveHM6c2VxdWVuY2U+DQogIDwveHM6Y29tcGxleFR5cGU+DQogIDx4czplbGVtZW50
+IG5hbWU9IlByb2dyYW1EaWFnbm9zdGljMkRhdGFUeXBlIiB0eXBlPSJ0bnM6UHJvZ3JhbURpYWdu
+b3N0aWMyRGF0YVR5cGUiIC8+DQoNCiAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9IkFubm90YXRpb24i
+Pg0KICAgIDx4czpzZXF1ZW5jZT4NCiAgICAgIDx4czplbGVtZW50IG5hbWU9Ik1lc3NhZ2UiIHR5
+cGU9InhzOnN0cmluZyIgbWluT2NjdXJzPSIwIiBuaWxsYWJsZT0idHJ1ZSIgLz4NCiAgICAgIDx4
+czplbGVtZW50IG5hbWU9IlVzZXJOYW1lIiB0eXBlPSJ4czpzdHJpbmciIG1pbk9jY3Vycz0iMCIg
+bmlsbGFibGU9InRydWUiIC8+DQogICAgICA8eHM6ZWxlbWVudCBuYW1lPSJBbm5vdGF0aW9uVGlt
+ZSIgdHlwZT0ieHM6ZGF0ZVRpbWUiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICA8L3hzOnNlcXVlbmNl
+Pg0KICA8L3hzOmNvbXBsZXhUeXBlPg0KICA8eHM6ZWxlbWVudCBuYW1lPSJBbm5vdGF0aW9uIiB0
+eXBlPSJ0bnM6QW5ub3RhdGlvbiIgLz4NCg0KICA8eHM6c2ltcGxlVHlwZSAgbmFtZT0iRXhjZXB0
+aW9uRGV2aWF0aW9uRm9ybWF0Ij4NCiAgICA8eHM6cmVzdHJpY3Rpb24gYmFzZT0ieHM6c3RyaW5n
+Ij4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQWJzb2x1dGVWYWx1ZV8wIiAvPg0KICAg
+ICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJQZXJjZW50T2ZWYWx1ZV8xIiAvPg0KICAgICAgPHhz
+OmVudW1lcmF0aW9uIHZhbHVlPSJQZXJjZW50T2ZSYW5nZV8yIiAvPg0KICAgICAgPHhzOmVudW1l
+cmF0aW9uIHZhbHVlPSJQZXJjZW50T2ZFVVJhbmdlXzMiIC8+DQogICAgICA8eHM6ZW51bWVyYXRp
+b24gdmFsdWU9IlVua25vd25fNCIgLz4NCiAgICA8L3hzOnJlc3RyaWN0aW9uPg0KICA8L3hzOnNp
+bXBsZVR5cGU+DQogIDx4czplbGVtZW50IG5hbWU9IkV4Y2VwdGlvbkRldmlhdGlvbkZvcm1hdCIg
+dHlwZT0idG5zOkV4Y2VwdGlvbkRldmlhdGlvbkZvcm1hdCIgLz4NCg0KPC94czpzY2hlbWE+</uax:ByteString>
       </uax:Value>
     </uax:Value>
     <uax:DataType>
@@ -102484,6 +103020,34 @@ YT4=</uax:ByteString>
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </ProgramDiagnosticDataType>
+    <ProgramDiagnostic2DataType>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>i=15402</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
+        <uax:Name>ProgramDiagnostic2DataType</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=47</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=69</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:NumericId>15402</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:String>//xs:element[@name='ProgramDiagnostic2DataType']</uax:String>
+        </uax:Value>
+      </uax:Value>
+      <uax:DataType>
+        <uax:Identifier>i=12</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </ProgramDiagnostic2DataType>
     <Annotation>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -104384,6 +104948,31 @@ YT4=</uax:ByteString>
         <uax:IsInverse>true</uax:IsInverse>
         <uax:TargetId>
           <uax:Identifier>i=894</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
+  </DefaultJson>
+  <DefaultJson xmlns="http://opcfoundation.org/UA/">
+    <uax:NodeClass>Object_1</uax:NodeClass>
+    <uax:NodeId>
+      <uax:Identifier>i=15405</uax:Identifier>
+    </uax:NodeId>
+    <uax:BrowseName>
+      <uax:NamespaceIndex>0</uax:NamespaceIndex>
+      <uax:Name>Default JSON</uax:Name>
+    </uax:BrowseName>
+    <uax:TypeDefinitionId>
+      <uax:Identifier>i=76</uax:Identifier>
+    </uax:TypeDefinitionId>
+    <uax:NumericId>15405</uax:NumericId>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:IsInverse>true</uax:IsInverse>
+        <uax:TargetId>
+          <uax:Identifier>i=15396</uax:Identifier>
         </uax:TargetId>
       </uax:Reference>
     </uax:References>
