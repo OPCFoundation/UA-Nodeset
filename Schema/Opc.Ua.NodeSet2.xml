@@ -241,7 +241,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
   </UADataType>
-  <UADataType NodeId="i=30" BrowseName="Image">
+  <UADataType NodeId="i=30" BrowseName="Image" IsAbstract="true">
     <DisplayName>Image</DisplayName>
     <Description>Describes a value that is an image encoded as a string of bytes.</Description>
     <References>
@@ -276,7 +276,7 @@
     </References>
     <InverseName>HierarchicalReferences</InverseName>
   </UAReferenceType>
-  <UAReferenceType NodeId="i=34" BrowseName="HasChild">
+  <UAReferenceType NodeId="i=34" BrowseName="HasChild" IsAbstract="true">
     <DisplayName>HasChild</DisplayName>
     <Description>The abstract base type for all non-looping hierarchical references.</Description>
     <References>
@@ -338,7 +338,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
-    <InverseName>GeneratesEvent</InverseName>
+    <InverseName>GeneratedBy</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="i=3065" BrowseName="AlwaysGeneratesEvent">
     <DisplayName>AlwaysGeneratesEvent</DisplayName>
@@ -346,9 +346,9 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=41</Reference>
     </References>
-    <InverseName>AlwaysGeneratesEvent</InverseName>
+    <InverseName>AlwaysGeneratedBy</InverseName>
   </UAReferenceType>
-  <UAReferenceType NodeId="i=44" BrowseName="Aggregates">
+  <UAReferenceType NodeId="i=44" BrowseName="Aggregates" IsAbstract="true">
     <DisplayName>Aggregates</DisplayName>
     <Description>The type for non-looping hierarchical references that are used to aggregate nodes into complex types.</Description>
     <References>
@@ -6059,8 +6059,8 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=12784</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=12815" BrowseName="EventQueueOverFlowCount" ParentNodeId="i=12784" DataType="UInt32">
-    <DisplayName>EventQueueOverFlowCount</DisplayName>
+  <UAVariable NodeId="i=12815" BrowseName="EventQueueOverflowCount" ParentNodeId="i=12784" DataType="UInt32">
+    <DisplayName>EventQueueOverflowCount</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -6344,8 +6344,8 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2172</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=8902" BrowseName="EventQueueOverFlowCount" ParentNodeId="i=2172" DataType="UInt32">
-    <DisplayName>EventQueueOverFlowCount</DisplayName>
+  <UAVariable NodeId="i=8902" BrowseName="EventQueueOverflowCount" ParentNodeId="i=2172" DataType="UInt32">
+    <DisplayName>EventQueueOverflowCount</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -14944,55 +14944,55 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=17080</Reference>
     </References>
   </UAVariable>
-  <UAObjectType NodeId="i=11163" BrowseName="BaseConditionClassType">
+  <UAObjectType NodeId="i=11163" BrowseName="BaseConditionClassType" IsAbstract="true">
     <DisplayName>BaseConditionClassType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=11164" BrowseName="ProcessConditionClassType">
+  <UAObjectType NodeId="i=11164" BrowseName="ProcessConditionClassType" IsAbstract="true">
     <DisplayName>ProcessConditionClassType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=11165" BrowseName="MaintenanceConditionClassType">
+  <UAObjectType NodeId="i=11165" BrowseName="MaintenanceConditionClassType" IsAbstract="true">
     <DisplayName>MaintenanceConditionClassType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=11166" BrowseName="SystemConditionClassType">
+  <UAObjectType NodeId="i=11166" BrowseName="SystemConditionClassType" IsAbstract="true">
     <DisplayName>SystemConditionClassType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=17218" BrowseName="SafetyConditionClassType">
+  <UAObjectType NodeId="i=17218" BrowseName="SafetyConditionClassType" IsAbstract="true">
     <DisplayName>SafetyConditionClassType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=17219" BrowseName="HighlyManagedAlarmConditionClassType">
+  <UAObjectType NodeId="i=17219" BrowseName="HighlyManagedAlarmConditionClassType" IsAbstract="true">
     <DisplayName>HighlyManagedAlarmConditionClassType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=17220" BrowseName="TrainingConditionClassType">
+  <UAObjectType NodeId="i=17220" BrowseName="TrainingConditionClassType" IsAbstract="true">
     <DisplayName>TrainingConditionClassType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=18665" BrowseName="StatisticalConditionClassType">
+  <UAObjectType NodeId="i=18665" BrowseName="StatisticalConditionClassType" IsAbstract="true">
     <DisplayName>StatisticalConditionClassType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=17221" BrowseName="TestingConditionClassType">
+  <UAObjectType NodeId="i=17221" BrowseName="TestingConditionClassType" IsAbstract="true">
     <DisplayName>TestingConditionClassType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
@@ -15136,19 +15136,19 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2790</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=2787" BrowseName="RefreshStartEventType">
+  <UAObjectType NodeId="i=2787" BrowseName="RefreshStartEventType" IsAbstract="true">
     <DisplayName>RefreshStartEventType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2130</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=2788" BrowseName="RefreshEndEventType">
+  <UAObjectType NodeId="i=2788" BrowseName="RefreshEndEventType" IsAbstract="true">
     <DisplayName>RefreshEndEventType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2130</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=2789" BrowseName="RefreshRequiredEventType">
+  <UAObjectType NodeId="i=2789" BrowseName="RefreshRequiredEventType" IsAbstract="true">
     <DisplayName>RefreshRequiredEventType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2130</Reference>
@@ -37282,7 +37282,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=17</Reference>
     </References>
   </UADataType>
-  <UADataType NodeId="i=316" BrowseName="UserIdentityToken">
+  <UADataType NodeId="i=316" BrowseName="UserIdentityToken" IsAbstract="true">
     <DisplayName>UserIdentityToken</DisplayName>
     <Description>A base type for a user identity token.</Description>
     <References>

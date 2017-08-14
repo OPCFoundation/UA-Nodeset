@@ -19,48 +19,48 @@
   <opc:Object SymbolicName="OPCUAGDSNamespaceMetadata" TypeDefinition="ua:NamespaceMetadataType" PartNo="12">
     <opc:BrowseName>http://opcfoundation.org/UA/GDS/</opc:BrowseName>
     <opc:Children>
-      <opc:Property SymbolicName="NamespaceUri" DataType="ua:String">
+      <opc:Property SymbolicName="ua:NamespaceUri" DataType="ua:String">
         <opc:DefaultValue>
           <uax:String>http://opcfoundation.org/UA/GDS/</uax:String>
         </opc:DefaultValue>
       </opc:Property>
-      <opc:Property SymbolicName="NamespaceVersion" DataType="ua:String">
+      <opc:Property SymbolicName="ua:NamespaceVersion" DataType="ua:String">
         <opc:DefaultValue>
           <uax:String>1.04</uax:String>
         </opc:DefaultValue>
       </opc:Property>
-      <opc:Property SymbolicName="NamespacePublicationDate" DataType="ua:DateTime">
+      <opc:Property SymbolicName="ua:NamespacePublicationDate" DataType="ua:DateTime">
         <opc:DefaultValue>
           <uax:String>2016-12-31</uax:String>
         </opc:DefaultValue>
       </opc:Property>
-      <opc:Property SymbolicName="IsNamespaceSubset" DataType="ua:Boolean">
+      <opc:Property SymbolicName="ua:IsNamespaceSubset" DataType="ua:Boolean">
         <opc:DefaultValue>
           <uax:Boolean>false</uax:Boolean>
         </opc:DefaultValue>
       </opc:Property>
-      <opc:Property SymbolicName="StaticNodeIdTypes" DataType="ua:IdType" ValueRank="Array">
+      <opc:Property SymbolicName="ua:StaticNodeIdTypes" DataType="ua:IdType" ValueRank="Array">
         <opc:DefaultValue>
           <uax:ListOfInt32>
             <uax:Int32>0</uax:Int32>
           </uax:ListOfInt32>
         </opc:DefaultValue>
       </opc:Property>
-      <opc:Property SymbolicName="StaticNumericNodeIdRange" DataType="ua:NumericRange" ValueRank="Array">
+      <opc:Property SymbolicName="ua:StaticNumericNodeIdRange" DataType="ua:NumericRange" ValueRank="Array">
         <opc:DefaultValue>
           <uax:ListOfString>
             <uax:String>1:65535</uax:String>
           </uax:ListOfString>
         </opc:DefaultValue>
       </opc:Property>
-      <opc:Property SymbolicName="StaticStringNodeIdPattern" DataType="ua:String">
+      <opc:Property SymbolicName="ua:StaticStringNodeIdPattern" DataType="ua:String">
         <opc:DefaultValue>
           <uax:String></uax:String>
         </opc:DefaultValue>
       </opc:Property>
-      <opc:Property SymbolicName="DefaultRolePermissions" ModellingRule="Mandatory" />
-      <opc:Property SymbolicName="DefaultUserRolePermissions" ModellingRule="Mandatory" />
-      <opc:Property SymbolicName="DefaultAccessRestrictions" ModellingRule="Mandatory" />
+      <opc:Property SymbolicName="ua:DefaultRolePermissions" ModellingRule="Mandatory" />
+      <opc:Property SymbolicName="ua:DefaultUserRolePermissions" ModellingRule="Mandatory" />
+      <opc:Property SymbolicName="ua:DefaultAccessRestrictions" ModellingRule="Mandatory" />
     </opc:Children>
     <opc:References>
       <opc:Reference IsInverse="true">

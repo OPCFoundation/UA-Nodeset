@@ -3071,55 +3071,55 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=17080</Reference>
     </References>
   </UAVariable>
-  <UAObjectType NodeId="i=11163" BrowseName="BaseConditionClassType">
+  <UAObjectType NodeId="i=11163" BrowseName="BaseConditionClassType" IsAbstract="true">
     <DisplayName>BaseConditionClassType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=11164" BrowseName="ProcessConditionClassType">
+  <UAObjectType NodeId="i=11164" BrowseName="ProcessConditionClassType" IsAbstract="true">
     <DisplayName>ProcessConditionClassType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=11165" BrowseName="MaintenanceConditionClassType">
+  <UAObjectType NodeId="i=11165" BrowseName="MaintenanceConditionClassType" IsAbstract="true">
     <DisplayName>MaintenanceConditionClassType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=11166" BrowseName="SystemConditionClassType">
+  <UAObjectType NodeId="i=11166" BrowseName="SystemConditionClassType" IsAbstract="true">
     <DisplayName>SystemConditionClassType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=17218" BrowseName="SafetyConditionClassType">
+  <UAObjectType NodeId="i=17218" BrowseName="SafetyConditionClassType" IsAbstract="true">
     <DisplayName>SafetyConditionClassType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=17219" BrowseName="HighlyManagedAlarmConditionClassType">
+  <UAObjectType NodeId="i=17219" BrowseName="HighlyManagedAlarmConditionClassType" IsAbstract="true">
     <DisplayName>HighlyManagedAlarmConditionClassType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=17220" BrowseName="TrainingConditionClassType">
+  <UAObjectType NodeId="i=17220" BrowseName="TrainingConditionClassType" IsAbstract="true">
     <DisplayName>TrainingConditionClassType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=18665" BrowseName="StatisticalConditionClassType">
+  <UAObjectType NodeId="i=18665" BrowseName="StatisticalConditionClassType" IsAbstract="true">
     <DisplayName>StatisticalConditionClassType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=17221" BrowseName="TestingConditionClassType">
+  <UAObjectType NodeId="i=17221" BrowseName="TestingConditionClassType" IsAbstract="true">
     <DisplayName>TestingConditionClassType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
@@ -3263,19 +3263,19 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2790</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=2787" BrowseName="RefreshStartEventType">
+  <UAObjectType NodeId="i=2787" BrowseName="RefreshStartEventType" IsAbstract="true">
     <DisplayName>RefreshStartEventType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2130</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=2788" BrowseName="RefreshEndEventType">
+  <UAObjectType NodeId="i=2788" BrowseName="RefreshEndEventType" IsAbstract="true">
     <DisplayName>RefreshEndEventType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2130</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=2789" BrowseName="RefreshRequiredEventType">
+  <UAObjectType NodeId="i=2789" BrowseName="RefreshRequiredEventType" IsAbstract="true">
     <DisplayName>RefreshRequiredEventType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2130</Reference>

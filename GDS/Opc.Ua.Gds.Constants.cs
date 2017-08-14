@@ -3905,21 +3905,6 @@ namespace Opc.Ua.Gds
         public const string CertificateType = "CertificateType";
 
         /// <summary>
-        /// The BrowseName for the DefaultAccessRestrictions component.
-        /// </summary>
-        public const string DefaultAccessRestrictions = "DefaultAccessRestrictions";
-
-        /// <summary>
-        /// The BrowseName for the DefaultRolePermissions component.
-        /// </summary>
-        public const string DefaultRolePermissions = "DefaultRolePermissions";
-
-        /// <summary>
-        /// The BrowseName for the DefaultUserRolePermissions component.
-        /// </summary>
-        public const string DefaultUserRolePermissions = "DefaultUserRolePermissions";
-
-        /// <summary>
         /// The BrowseName for the Directory component.
         /// </summary>
         public const string Directory = "Directory";
@@ -3965,11 +3950,6 @@ namespace Opc.Ua.Gds
         public const string GetTrustList = "GetTrustList";
 
         /// <summary>
-        /// The BrowseName for the IsNamespaceSubset component.
-        /// </summary>
-        public const string IsNamespaceSubset = "IsNamespaceSubset";
-
-        /// <summary>
         /// The BrowseName for the KeyCredentialDeliveredAuditEventType component.
         /// </summary>
         public const string KeyCredentialDeliveredAuditEventType = "KeyCredentialDeliveredAuditEventType";
@@ -3993,21 +3973,6 @@ namespace Opc.Ua.Gds
         /// The BrowseName for the KeyCredentialServiceType component.
         /// </summary>
         public const string KeyCredentialServiceType = "KeyCredentialServiceType";
-
-        /// <summary>
-        /// The BrowseName for the NamespacePublicationDate component.
-        /// </summary>
-        public const string NamespacePublicationDate = "NamespacePublicationDate";
-
-        /// <summary>
-        /// The BrowseName for the NamespaceUri component.
-        /// </summary>
-        public const string NamespaceUri = "NamespaceUri";
-
-        /// <summary>
-        /// The BrowseName for the NamespaceVersion component.
-        /// </summary>
-        public const string NamespaceVersion = "NamespaceVersion";
 
         /// <summary>
         /// The BrowseName for the OpcUaGds_BinarySchema component.
@@ -4088,21 +4053,6 @@ namespace Opc.Ua.Gds
         /// The BrowseName for the StartSigningRequest component.
         /// </summary>
         public const string StartSigningRequest = "StartSigningRequest";
-
-        /// <summary>
-        /// The BrowseName for the StaticNodeIdTypes component.
-        /// </summary>
-        public const string StaticNodeIdTypes = "StaticNodeIdTypes";
-
-        /// <summary>
-        /// The BrowseName for the StaticNumericNodeIdRange component.
-        /// </summary>
-        public const string StaticNumericNodeIdRange = "StaticNumericNodeIdRange";
-
-        /// <summary>
-        /// The BrowseName for the StaticStringNodeIdPattern component.
-        /// </summary>
-        public const string StaticStringNodeIdPattern = "StaticStringNodeIdPattern";
 
         /// <summary>
         /// The BrowseName for the UnregisterApplication component.

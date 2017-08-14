@@ -450,7 +450,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=17</Reference>
     </References>
   </UADataType>
-  <UADataType NodeId="i=316" BrowseName="UserIdentityToken">
+  <UADataType NodeId="i=316" BrowseName="UserIdentityToken" IsAbstract="true">
     <DisplayName>UserIdentityToken</DisplayName>
     <Description>A base type for a user identity token.</Description>
     <References>

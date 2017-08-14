@@ -227,7 +227,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
   </UADataType>
-  <UADataType NodeId="i=30" BrowseName="Image">
+  <UADataType NodeId="i=30" BrowseName="Image" IsAbstract="true">
     <DisplayName>Image</DisplayName>
     <Description>Describes a value that is an image encoded as a string of bytes.</Description>
     <References>
@@ -262,7 +262,7 @@
     </References>
     <InverseName>HierarchicalReferences</InverseName>
   </UAReferenceType>
-  <UAReferenceType NodeId="i=34" BrowseName="HasChild">
+  <UAReferenceType NodeId="i=34" BrowseName="HasChild" IsAbstract="true">
     <DisplayName>HasChild</DisplayName>
     <Description>The abstract base type for all non-looping hierarchical references.</Description>
     <References>
@@ -324,7 +324,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
-    <InverseName>GeneratesEvent</InverseName>
+    <InverseName>GeneratedBy</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="i=3065" BrowseName="AlwaysGeneratesEvent">
     <DisplayName>AlwaysGeneratesEvent</DisplayName>
@@ -332,9 +332,9 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=41</Reference>
     </References>
-    <InverseName>AlwaysGeneratesEvent</InverseName>
+    <InverseName>AlwaysGeneratedBy</InverseName>
   </UAReferenceType>
-  <UAReferenceType NodeId="i=44" BrowseName="Aggregates">
+  <UAReferenceType NodeId="i=44" BrowseName="Aggregates" IsAbstract="true">
     <DisplayName>Aggregates</DisplayName>
     <Description>The type for non-looping hierarchical references that are used to aggregate nodes into complex types.</Description>
     <References>

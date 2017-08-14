@@ -479,7 +479,7 @@
 #define OpcUa_BrowseName_EventNotificationList "EventNotificationList"
 #define OpcUa_BrowseName_EventNotificationsCount "EventNotificationsCount"
 #define OpcUa_BrowseName_EventNotifierType "EventNotifierType"
-#define OpcUa_BrowseName_EventQueueOverFlowCount "EventQueueOverFlowCount"
+#define OpcUa_BrowseName_EventQueueOverflowCount "EventQueueOverflowCount"
 #define OpcUa_BrowseName_EventQueueOverflowEventType "EventQueueOverflowEventType"
 #define OpcUa_BrowseName_EventType "EventType"
 #define OpcUa_BrowseName_EventTypesFolder "EventTypes"

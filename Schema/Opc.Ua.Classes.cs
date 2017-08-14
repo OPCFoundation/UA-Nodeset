@@ -17011,7 +17011,7 @@ namespace Opc.Ua
            "iQoCAAAAAAAaAAAARGlzYWJsZWRNb25pdG9yZWRJdGVtQ291bnQBAL8iAC8AP78iAAAAB/////8BAf//" +
            "//8AAAAAFWCJCgIAAAAAABwAAABNb25pdG9yaW5nUXVldWVPdmVyZmxvd0NvdW50AQDAIgAvAD/AIgAA" +
            "AAf/////AQH/////AAAAABVgiQoCAAAAAAASAAAATmV4dFNlcXVlbmNlTnVtYmVyAQDBIgAvAD/BIgAA" +
-           "AAf/////AQH/////AAAAABVgiQoCAAAAAAAXAAAARXZlbnRRdWV1ZU92ZXJGbG93Q291bnQBAMYiAC8A" +
+           "AAf/////AQH/////AAAAABVgiQoCAAAAAAAXAAAARXZlbnRRdWV1ZU92ZXJmbG93Q291bnQBAMYiAC8A" +
            "P8YiAAAAB/////8BAf////8AAAAA";
         #endregion
         #endif
@@ -17649,23 +17649,23 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the EventQueueOverFlowCount Variable.
+        /// A description for the EventQueueOverflowCount Variable.
         /// </summary>
-        public BaseDataVariableState<uint> EventQueueOverFlowCount
+        public BaseDataVariableState<uint> EventQueueOverflowCount
         {
             get
             {
-                return m_eventQueueOverFlowCount;
+                return m_eventQueueOverflowCount;
             }
 
             set
             {
-                if (!Object.ReferenceEquals(m_eventQueueOverFlowCount, value))
+                if (!Object.ReferenceEquals(m_eventQueueOverflowCount, value))
                 {
                     ChangeMasks |= NodeStateChangeMasks.Children;
                 }
 
-                m_eventQueueOverFlowCount = value;
+                m_eventQueueOverflowCount = value;
             }
         }
         #endregion
@@ -17830,9 +17830,9 @@ namespace Opc.Ua
                 children.Add(m_nextSequenceNumber);
             }
 
-            if (m_eventQueueOverFlowCount != null)
+            if (m_eventQueueOverflowCount != null)
             {
-                children.Add(m_eventQueueOverFlowCount);
+                children.Add(m_eventQueueOverflowCount);
             }
 
             base.GetChildren(context, children);
@@ -18486,24 +18486,24 @@ namespace Opc.Ua
                     break;
                 }
 
-                case Opc.Ua.BrowseNames.EventQueueOverFlowCount:
+                case Opc.Ua.BrowseNames.EventQueueOverflowCount:
                 {
                     if (createOrReplace)
                     {
-                        if (EventQueueOverFlowCount == null)
+                        if (EventQueueOverflowCount == null)
                         {
                             if (replacement == null)
                             {
-                                EventQueueOverFlowCount = new BaseDataVariableState<uint>(this);
+                                EventQueueOverflowCount = new BaseDataVariableState<uint>(this);
                             }
                             else
                             {
-                                EventQueueOverFlowCount = (BaseDataVariableState<uint>)replacement;
+                                EventQueueOverflowCount = (BaseDataVariableState<uint>)replacement;
                             }
                         }
                     }
 
-                    instance = EventQueueOverFlowCount;
+                    instance = EventQueueOverflowCount;
                     break;
                 }
             }
@@ -18548,7 +18548,7 @@ namespace Opc.Ua
         private BaseDataVariableState<uint> m_disabledMonitoredItemCount;
         private BaseDataVariableState<uint> m_monitoringQueueOverflowCount;
         private BaseDataVariableState<uint> m_nextSequenceNumber;
-        private BaseDataVariableState<uint> m_eventQueueOverFlowCount;
+        private BaseDataVariableState<uint> m_eventQueueOverflowCount;
         #endregion
     }
 
@@ -18734,10 +18734,6 @@ namespace Opc.Ua
                 instance = m_variable.NextSequenceNumber;
                 instance.OnReadValue = OnRead_NextSequenceNumber;
                 instance.OnSimpleWriteValue = OnWrite_NextSequenceNumber;
-                updateList.Add(instance);
-                instance = m_variable.EventQueueOverFlowCount;
-                instance.OnReadValue = OnRead_EventQueueOverFlowCount;
-                instance.OnSimpleWriteValue = OnWrite_EventQueueOverFlowCount;
                 updateList.Add(instance);
 
                 SetUpdateList(updateList);
@@ -19976,46 +19972,6 @@ namespace Opc.Ua
             lock (Lock)
             {
                 m_value.NextSequenceNumber = (uint)Write(value);
-            }
-
-            return ServiceResult.Good;
-        }
-        #endregion
-
-        #region EventQueueOverFlowCount Access Methods
-        /// <summary>
-        /// Reads the value of the variable child.
-        /// </summary>
-        private ServiceResult OnRead_EventQueueOverFlowCount(
-            ISystemContext context,
-            NodeState node,
-            NumericRange indexRange,
-            QualifiedName dataEncoding,
-            ref object value,
-            ref StatusCode statusCode,
-            ref DateTime timestamp)
-        {
-            lock (Lock)
-            {
-                DoBeforeReadProcessing(context, node);
-
-                if (m_value != null)
-                {
-                    value = m_value.EventQueueOverFlowCount;
-                }
-
-                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
-            }
-        }
-
-        /// <summary>
-        /// Writes the value of the variable child.
-        /// </summary>
-        private ServiceResult OnWrite_EventQueueOverFlowCount(ISystemContext context, NodeState node, ref object value)
-        {
-            lock (Lock)
-            {
-                m_value.EventQueueOverFlowCount = (uint)Write(value);
             }
 
             return ServiceResult.Good;
@@ -34906,7 +34862,7 @@ namespace Opc.Ua
         /// </summary>
         protected override int GetDefaultValueRank()
         {
-            return ValueRanks.Scalar;
+            return ValueRanks.Any;
         }
 
         #if (!OPCUA_EXCLUDE_InitializationStrings)

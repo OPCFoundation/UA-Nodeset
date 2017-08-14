@@ -5450,8 +5450,8 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=12784</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=12815" BrowseName="EventQueueOverFlowCount" ParentNodeId="i=12784" DataType="UInt32">
-    <DisplayName>EventQueueOverFlowCount</DisplayName>
+  <UAVariable NodeId="i=12815" BrowseName="EventQueueOverflowCount" ParentNodeId="i=12784" DataType="UInt32">
+    <DisplayName>EventQueueOverflowCount</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -5735,8 +5735,8 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2172</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=8902" BrowseName="EventQueueOverFlowCount" ParentNodeId="i=2172" DataType="UInt32">
-    <DisplayName>EventQueueOverFlowCount</DisplayName>
+  <UAVariable NodeId="i=8902" BrowseName="EventQueueOverflowCount" ParentNodeId="i=2172" DataType="UInt32">
+    <DisplayName>EventQueueOverflowCount</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>

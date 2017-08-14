@@ -30,13 +30,13 @@
         </uax:TargetId>
       </uax:Reference>
     </uax:References>
-    <NamespaceUri>
+    <NamespaceUri xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
         <uax:Identifier>ns=1;i=722</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>NamespaceUri</uax:Name>
       </uax:BrowseName>
       <uax:Description>
@@ -62,13 +62,13 @@
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </NamespaceUri>
-    <NamespaceVersion>
+    <NamespaceVersion xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
         <uax:Identifier>ns=1;i=723</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>NamespaceVersion</uax:Name>
       </uax:BrowseName>
       <uax:Description>
@@ -94,13 +94,13 @@
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </NamespaceVersion>
-    <NamespacePublicationDate>
+    <NamespacePublicationDate xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
         <uax:Identifier>ns=1;i=724</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>NamespacePublicationDate</uax:Name>
       </uax:BrowseName>
       <uax:Description>
@@ -126,13 +126,13 @@
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </NamespacePublicationDate>
-    <IsNamespaceSubset>
+    <IsNamespaceSubset xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
         <uax:Identifier>ns=1;i=725</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>IsNamespaceSubset</uax:Name>
       </uax:BrowseName>
       <uax:Description>
@@ -158,13 +158,13 @@
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </IsNamespaceSubset>
-    <StaticNodeIdTypes>
+    <StaticNodeIdTypes xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
         <uax:Identifier>ns=1;i=726</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>StaticNodeIdTypes</uax:Name>
       </uax:BrowseName>
       <uax:Description>
@@ -192,13 +192,13 @@
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </StaticNodeIdTypes>
-    <StaticNumericNodeIdRange>
+    <StaticNumericNodeIdRange xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
         <uax:Identifier>ns=1;i=727</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>StaticNumericNodeIdRange</uax:Name>
       </uax:BrowseName>
       <uax:Description>
@@ -226,13 +226,13 @@
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </StaticNumericNodeIdRange>
-    <StaticStringNodeIdPattern>
+    <StaticStringNodeIdPattern xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
         <uax:Identifier>ns=1;i=728</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>StaticStringNodeIdPattern</uax:Name>
       </uax:BrowseName>
       <uax:Description>
@@ -258,13 +258,13 @@
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </StaticStringNodeIdPattern>
-    <DefaultRolePermissions>
+    <DefaultRolePermissions xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
         <uax:Identifier>ns=1;i=862</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>DefaultRolePermissions</uax:Name>
       </uax:BrowseName>
       <uax:ReferenceTypeId>
@@ -281,13 +281,13 @@
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </DefaultRolePermissions>
-    <DefaultUserRolePermissions>
+    <DefaultUserRolePermissions xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
         <uax:Identifier>ns=1;i=863</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>DefaultUserRolePermissions</uax:Name>
       </uax:BrowseName>
       <uax:ReferenceTypeId>
@@ -304,13 +304,13 @@
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </DefaultUserRolePermissions>
-    <DefaultAccessRestrictions>
+    <DefaultAccessRestrictions xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
         <uax:Identifier>ns=1;i=864</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>DefaultAccessRestrictions</uax:Name>
       </uax:BrowseName>
       <uax:ReferenceTypeId>

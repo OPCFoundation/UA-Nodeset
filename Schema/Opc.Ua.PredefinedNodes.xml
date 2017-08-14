@@ -520,6 +520,7 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=15</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:IsAbstract>true</uax:IsAbstract>
   </Image>
   <Decimal xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -614,6 +615,7 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=33</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:IsAbstract>true</uax:IsAbstract>
     <uax:InverseName>
       <uax:Locale></uax:Locale>
       <uax:Text>ChildOf</uax:Text>
@@ -763,7 +765,7 @@
     </uax:SuperTypeId>
     <uax:InverseName>
       <uax:Locale></uax:Locale>
-      <uax:Text>GeneratesEvent</uax:Text>
+      <uax:Text>GeneratedBy</uax:Text>
     </uax:InverseName>
   </GeneratesEvent>
   <AlwaysGeneratesEvent xmlns="http://opcfoundation.org/UA/">
@@ -784,7 +786,7 @@
     </uax:SuperTypeId>
     <uax:InverseName>
       <uax:Locale></uax:Locale>
-      <uax:Text>AlwaysGeneratesEvent</uax:Text>
+      <uax:Text>AlwaysGeneratedBy</uax:Text>
     </uax:InverseName>
   </AlwaysGeneratesEvent>
   <Aggregates xmlns="http://opcfoundation.org/UA/">
@@ -803,6 +805,7 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=34</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:IsAbstract>true</uax:IsAbstract>
     <uax:InverseName>
       <uax:Locale></uax:Locale>
       <uax:Text>AggregatedBy</uax:Text>
@@ -15772,14 +15775,14 @@
         <uax:AccessLevel>1</uax:AccessLevel>
         <uax:UserAccessLevel>1</uax:UserAccessLevel>
       </NextSequenceNumber>
-      <EventQueueOverFlowCount>
+      <EventQueueOverflowCount>
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
           <uax:Identifier>i=12815</uax:Identifier>
         </uax:NodeId>
         <uax:BrowseName>
           <uax:NamespaceIndex>0</uax:NamespaceIndex>
-          <uax:Name>EventQueueOverFlowCount</uax:Name>
+          <uax:Name>EventQueueOverflowCount</uax:Name>
         </uax:BrowseName>
         <uax:ReferenceTypeId>
           <uax:Identifier>i=47</uax:Identifier>
@@ -15797,7 +15800,7 @@
         <uax:ValueRank>-1</uax:ValueRank>
         <uax:AccessLevel>1</uax:AccessLevel>
         <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </EventQueueOverFlowCount>
+      </EventQueueOverflowCount>
     </SubscriptionDiagnostics>
   </SubscriptionDiagnosticsArrayType>
   <SubscriptionDiagnosticsType xmlns="http://opcfoundation.org/UA/">
@@ -16596,14 +16599,14 @@
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </NextSequenceNumber>
-    <EventQueueOverFlowCount>
+    <EventQueueOverflowCount>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
         <uax:Identifier>i=8902</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
-        <uax:Name>EventQueueOverFlowCount</uax:Name>
+        <uax:Name>EventQueueOverflowCount</uax:Name>
       </uax:BrowseName>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=47</uax:Identifier>
@@ -16621,7 +16624,7 @@
       <uax:ValueRank>-1</uax:ValueRank>
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
-    </EventQueueOverFlowCount>
+    </EventQueueOverflowCount>
   </SubscriptionDiagnosticsType>
   <SessionDiagnosticsArrayType xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>VariableType_16</uax:NodeClass>
@@ -37664,6 +37667,7 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=58</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:IsAbstract>true</uax:IsAbstract>
   </BaseConditionClassType>
   <ProcessConditionClassType xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
@@ -37677,6 +37681,7 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=11163</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:IsAbstract>true</uax:IsAbstract>
   </ProcessConditionClassType>
   <MaintenanceConditionClassType xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
@@ -37690,6 +37695,7 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=11163</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:IsAbstract>true</uax:IsAbstract>
   </MaintenanceConditionClassType>
   <SystemConditionClassType xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
@@ -37703,6 +37709,7 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=11163</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:IsAbstract>true</uax:IsAbstract>
   </SystemConditionClassType>
   <SafetyConditionClassType xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
@@ -37716,6 +37723,7 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=11163</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:IsAbstract>true</uax:IsAbstract>
   </SafetyConditionClassType>
   <HighlyManagedAlarmConditionClassType xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
@@ -37729,6 +37737,7 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=11163</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:IsAbstract>true</uax:IsAbstract>
   </HighlyManagedAlarmConditionClassType>
   <TrainingConditionClassType xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
@@ -37742,6 +37751,7 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=11163</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:IsAbstract>true</uax:IsAbstract>
   </TrainingConditionClassType>
   <StatisticalConditionClassType xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
@@ -37755,6 +37765,7 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=11163</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:IsAbstract>true</uax:IsAbstract>
   </StatisticalConditionClassType>
   <TestingConditionClassType xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
@@ -37768,6 +37779,7 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=11163</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:IsAbstract>true</uax:IsAbstract>
   </TestingConditionClassType>
   <AuditConditionEventType xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
@@ -38132,6 +38144,7 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=2130</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:IsAbstract>true</uax:IsAbstract>
   </RefreshStartEventType>
   <RefreshEndEventType xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
@@ -38145,6 +38158,7 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=2130</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:IsAbstract>true</uax:IsAbstract>
   </RefreshEndEventType>
   <RefreshRequiredEventType xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
@@ -38158,6 +38172,7 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=2130</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:IsAbstract>true</uax:IsAbstract>
   </RefreshRequiredEventType>
   <HasCondition xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>ReferenceType_32</uax:NodeClass>
@@ -84261,6 +84276,7 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=22</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:IsAbstract>true</uax:IsAbstract>
   </UserIdentityToken>
   <AnonymousIdentityToken xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
