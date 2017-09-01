@@ -416,6 +416,26 @@ namespace Opc.Ua.Di
         public const uint ConnectionPointType_NetworkIdentifier = 6599;
 
         /// <summary>
+        /// The identifier for the FetchResultDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint FetchResultDataType_Encoding_DefaultBinary = 6551;
+
+        /// <summary>
+        /// The identifier for the FetchResultErrorDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint FetchResultErrorDataType_Encoding_DefaultBinary = 6552;
+
+        /// <summary>
+        /// The identifier for the FetchResultDataDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint FetchResultDataDataType_Encoding_DefaultBinary = 6553;
+
+        /// <summary>
+        /// The identifier for the ParameterResultDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ParameterResultDataType_Encoding_DefaultBinary = 6554;
+
+        /// <summary>
         /// The identifier for the FetchResultDataType_Encoding_DefaultXml Object.
         /// </summary>
         public const uint FetchResultDataType_Encoding_DefaultXml = 6535;
@@ -436,24 +456,24 @@ namespace Opc.Ua.Di
         public const uint ParameterResultDataType_Encoding_DefaultXml = 6538;
 
         /// <summary>
-        /// The identifier for the FetchResultDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the FetchResultDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint FetchResultDataType_Encoding_DefaultBinary = 6551;
+        public const uint FetchResultDataType_Encoding_DefaultJson = 8001;
 
         /// <summary>
-        /// The identifier for the FetchResultErrorDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the FetchResultErrorDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint FetchResultErrorDataType_Encoding_DefaultBinary = 6552;
+        public const uint FetchResultErrorDataType_Encoding_DefaultJson = 8002;
 
         /// <summary>
-        /// The identifier for the FetchResultDataDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the FetchResultDataDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint FetchResultDataDataType_Encoding_DefaultBinary = 6553;
+        public const uint FetchResultDataDataType_Encoding_DefaultJson = 8003;
 
         /// <summary>
-        /// The identifier for the ParameterResultDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the ParameterResultDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ParameterResultDataType_Encoding_DefaultBinary = 6554;
+        public const uint ParameterResultDataType_Encoding_DefaultJson = 8004;
     }
     #endregion
 
@@ -1106,36 +1126,6 @@ namespace Opc.Ua.Di
         public const uint LockingServicesType_BreakLock_OutputArguments = 6401;
 
         /// <summary>
-        /// The identifier for the OpcUaDi_XmlSchema Variable.
-        /// </summary>
-        public const uint OpcUaDi_XmlSchema = 6423;
-
-        /// <summary>
-        /// The identifier for the OpcUaDi_XmlSchema_NamespaceUri Variable.
-        /// </summary>
-        public const uint OpcUaDi_XmlSchema_NamespaceUri = 6425;
-
-        /// <summary>
-        /// The identifier for the OpcUaDi_XmlSchema_FetchResultDataType Variable.
-        /// </summary>
-        public const uint OpcUaDi_XmlSchema_FetchResultDataType = 6539;
-
-        /// <summary>
-        /// The identifier for the OpcUaDi_XmlSchema_FetchResultErrorDataType Variable.
-        /// </summary>
-        public const uint OpcUaDi_XmlSchema_FetchResultErrorDataType = 6542;
-
-        /// <summary>
-        /// The identifier for the OpcUaDi_XmlSchema_FetchResultDataDataType Variable.
-        /// </summary>
-        public const uint OpcUaDi_XmlSchema_FetchResultDataDataType = 6545;
-
-        /// <summary>
-        /// The identifier for the OpcUaDi_XmlSchema_ParameterResultDataType Variable.
-        /// </summary>
-        public const uint OpcUaDi_XmlSchema_ParameterResultDataType = 6548;
-
-        /// <summary>
         /// The identifier for the OpcUaDi_BinarySchema Variable.
         /// </summary>
         public const uint OpcUaDi_BinarySchema = 6435;
@@ -1144,6 +1134,11 @@ namespace Opc.Ua.Di
         /// The identifier for the OpcUaDi_BinarySchema_NamespaceUri Variable.
         /// </summary>
         public const uint OpcUaDi_BinarySchema_NamespaceUri = 6437;
+
+        /// <summary>
+        /// The identifier for the OpcUaDi_BinarySchema_Deprecated Variable.
+        /// </summary>
+        public const uint OpcUaDi_BinarySchema_Deprecated = 8005;
 
         /// <summary>
         /// The identifier for the OpcUaDi_BinarySchema_FetchResultDataType Variable.
@@ -1164,6 +1159,41 @@ namespace Opc.Ua.Di
         /// The identifier for the OpcUaDi_BinarySchema_ParameterResultDataType Variable.
         /// </summary>
         public const uint OpcUaDi_BinarySchema_ParameterResultDataType = 6564;
+
+        /// <summary>
+        /// The identifier for the OpcUaDi_XmlSchema Variable.
+        /// </summary>
+        public const uint OpcUaDi_XmlSchema = 6423;
+
+        /// <summary>
+        /// The identifier for the OpcUaDi_XmlSchema_NamespaceUri Variable.
+        /// </summary>
+        public const uint OpcUaDi_XmlSchema_NamespaceUri = 6425;
+
+        /// <summary>
+        /// The identifier for the OpcUaDi_XmlSchema_Deprecated Variable.
+        /// </summary>
+        public const uint OpcUaDi_XmlSchema_Deprecated = 8007;
+
+        /// <summary>
+        /// The identifier for the OpcUaDi_XmlSchema_FetchResultDataType Variable.
+        /// </summary>
+        public const uint OpcUaDi_XmlSchema_FetchResultDataType = 6539;
+
+        /// <summary>
+        /// The identifier for the OpcUaDi_XmlSchema_FetchResultErrorDataType Variable.
+        /// </summary>
+        public const uint OpcUaDi_XmlSchema_FetchResultErrorDataType = 6542;
+
+        /// <summary>
+        /// The identifier for the OpcUaDi_XmlSchema_FetchResultDataDataType Variable.
+        /// </summary>
+        public const uint OpcUaDi_XmlSchema_FetchResultDataDataType = 6545;
+
+        /// <summary>
+        /// The identifier for the OpcUaDi_XmlSchema_ParameterResultDataType Variable.
+        /// </summary>
+        public const uint OpcUaDi_XmlSchema_ParameterResultDataType = 6548;
     }
     #endregion
 
@@ -1561,6 +1591,26 @@ namespace Opc.Ua.Di
         public static readonly ExpandedNodeId ConnectionPointType_NetworkIdentifier = new ExpandedNodeId(Opc.Ua.Di.Objects.ConnectionPointType_NetworkIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
+        /// The identifier for the FetchResultDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly ExpandedNodeId FetchResultDataType_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Di.Objects.FetchResultDataType_Encoding_DefaultBinary, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the FetchResultErrorDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly ExpandedNodeId FetchResultErrorDataType_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Di.Objects.FetchResultErrorDataType_Encoding_DefaultBinary, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the FetchResultDataDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly ExpandedNodeId FetchResultDataDataType_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Di.Objects.FetchResultDataDataType_Encoding_DefaultBinary, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the ParameterResultDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly ExpandedNodeId ParameterResultDataType_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Di.Objects.ParameterResultDataType_Encoding_DefaultBinary, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
         /// The identifier for the FetchResultDataType_Encoding_DefaultXml Object.
         /// </summary>
         public static readonly ExpandedNodeId FetchResultDataType_Encoding_DefaultXml = new ExpandedNodeId(Opc.Ua.Di.Objects.FetchResultDataType_Encoding_DefaultXml, Opc.Ua.Di.Namespaces.OpcUaDi);
@@ -1581,24 +1631,24 @@ namespace Opc.Ua.Di
         public static readonly ExpandedNodeId ParameterResultDataType_Encoding_DefaultXml = new ExpandedNodeId(Opc.Ua.Di.Objects.ParameterResultDataType_Encoding_DefaultXml, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
-        /// The identifier for the FetchResultDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the FetchResultDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly ExpandedNodeId FetchResultDataType_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Di.Objects.FetchResultDataType_Encoding_DefaultBinary, Opc.Ua.Di.Namespaces.OpcUaDi);
+        public static readonly ExpandedNodeId FetchResultDataType_Encoding_DefaultJson = new ExpandedNodeId(Opc.Ua.Di.Objects.FetchResultDataType_Encoding_DefaultJson, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
-        /// The identifier for the FetchResultErrorDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the FetchResultErrorDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly ExpandedNodeId FetchResultErrorDataType_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Di.Objects.FetchResultErrorDataType_Encoding_DefaultBinary, Opc.Ua.Di.Namespaces.OpcUaDi);
+        public static readonly ExpandedNodeId FetchResultErrorDataType_Encoding_DefaultJson = new ExpandedNodeId(Opc.Ua.Di.Objects.FetchResultErrorDataType_Encoding_DefaultJson, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
-        /// The identifier for the FetchResultDataDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the FetchResultDataDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly ExpandedNodeId FetchResultDataDataType_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Di.Objects.FetchResultDataDataType_Encoding_DefaultBinary, Opc.Ua.Di.Namespaces.OpcUaDi);
+        public static readonly ExpandedNodeId FetchResultDataDataType_Encoding_DefaultJson = new ExpandedNodeId(Opc.Ua.Di.Objects.FetchResultDataDataType_Encoding_DefaultJson, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
-        /// The identifier for the ParameterResultDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the ParameterResultDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly ExpandedNodeId ParameterResultDataType_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.Di.Objects.ParameterResultDataType_Encoding_DefaultBinary, Opc.Ua.Di.Namespaces.OpcUaDi);
+        public static readonly ExpandedNodeId ParameterResultDataType_Encoding_DefaultJson = new ExpandedNodeId(Opc.Ua.Di.Objects.ParameterResultDataType_Encoding_DefaultJson, Opc.Ua.Di.Namespaces.OpcUaDi);
     }
     #endregion
 
@@ -2251,36 +2301,6 @@ namespace Opc.Ua.Di
         public static readonly ExpandedNodeId LockingServicesType_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.LockingServicesType_BreakLock_OutputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
-        /// The identifier for the OpcUaDi_XmlSchema Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaDi_XmlSchema = new ExpandedNodeId(Opc.Ua.Di.Variables.OpcUaDi_XmlSchema, Opc.Ua.Di.Namespaces.OpcUaDi);
-
-        /// <summary>
-        /// The identifier for the OpcUaDi_XmlSchema_NamespaceUri Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaDi_XmlSchema_NamespaceUri = new ExpandedNodeId(Opc.Ua.Di.Variables.OpcUaDi_XmlSchema_NamespaceUri, Opc.Ua.Di.Namespaces.OpcUaDi);
-
-        /// <summary>
-        /// The identifier for the OpcUaDi_XmlSchema_FetchResultDataType Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaDi_XmlSchema_FetchResultDataType = new ExpandedNodeId(Opc.Ua.Di.Variables.OpcUaDi_XmlSchema_FetchResultDataType, Opc.Ua.Di.Namespaces.OpcUaDi);
-
-        /// <summary>
-        /// The identifier for the OpcUaDi_XmlSchema_FetchResultErrorDataType Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaDi_XmlSchema_FetchResultErrorDataType = new ExpandedNodeId(Opc.Ua.Di.Variables.OpcUaDi_XmlSchema_FetchResultErrorDataType, Opc.Ua.Di.Namespaces.OpcUaDi);
-
-        /// <summary>
-        /// The identifier for the OpcUaDi_XmlSchema_FetchResultDataDataType Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaDi_XmlSchema_FetchResultDataDataType = new ExpandedNodeId(Opc.Ua.Di.Variables.OpcUaDi_XmlSchema_FetchResultDataDataType, Opc.Ua.Di.Namespaces.OpcUaDi);
-
-        /// <summary>
-        /// The identifier for the OpcUaDi_XmlSchema_ParameterResultDataType Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaDi_XmlSchema_ParameterResultDataType = new ExpandedNodeId(Opc.Ua.Di.Variables.OpcUaDi_XmlSchema_ParameterResultDataType, Opc.Ua.Di.Namespaces.OpcUaDi);
-
-        /// <summary>
         /// The identifier for the OpcUaDi_BinarySchema Variable.
         /// </summary>
         public static readonly ExpandedNodeId OpcUaDi_BinarySchema = new ExpandedNodeId(Opc.Ua.Di.Variables.OpcUaDi_BinarySchema, Opc.Ua.Di.Namespaces.OpcUaDi);
@@ -2289,6 +2309,11 @@ namespace Opc.Ua.Di
         /// The identifier for the OpcUaDi_BinarySchema_NamespaceUri Variable.
         /// </summary>
         public static readonly ExpandedNodeId OpcUaDi_BinarySchema_NamespaceUri = new ExpandedNodeId(Opc.Ua.Di.Variables.OpcUaDi_BinarySchema_NamespaceUri, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the OpcUaDi_BinarySchema_Deprecated Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaDi_BinarySchema_Deprecated = new ExpandedNodeId(Opc.Ua.Di.Variables.OpcUaDi_BinarySchema_Deprecated, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
         /// The identifier for the OpcUaDi_BinarySchema_FetchResultDataType Variable.
@@ -2309,6 +2334,41 @@ namespace Opc.Ua.Di
         /// The identifier for the OpcUaDi_BinarySchema_ParameterResultDataType Variable.
         /// </summary>
         public static readonly ExpandedNodeId OpcUaDi_BinarySchema_ParameterResultDataType = new ExpandedNodeId(Opc.Ua.Di.Variables.OpcUaDi_BinarySchema_ParameterResultDataType, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the OpcUaDi_XmlSchema Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaDi_XmlSchema = new ExpandedNodeId(Opc.Ua.Di.Variables.OpcUaDi_XmlSchema, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the OpcUaDi_XmlSchema_NamespaceUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaDi_XmlSchema_NamespaceUri = new ExpandedNodeId(Opc.Ua.Di.Variables.OpcUaDi_XmlSchema_NamespaceUri, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the OpcUaDi_XmlSchema_Deprecated Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaDi_XmlSchema_Deprecated = new ExpandedNodeId(Opc.Ua.Di.Variables.OpcUaDi_XmlSchema_Deprecated, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the OpcUaDi_XmlSchema_FetchResultDataType Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaDi_XmlSchema_FetchResultDataType = new ExpandedNodeId(Opc.Ua.Di.Variables.OpcUaDi_XmlSchema_FetchResultDataType, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the OpcUaDi_XmlSchema_FetchResultErrorDataType Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaDi_XmlSchema_FetchResultErrorDataType = new ExpandedNodeId(Opc.Ua.Di.Variables.OpcUaDi_XmlSchema_FetchResultErrorDataType, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the OpcUaDi_XmlSchema_FetchResultDataDataType Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaDi_XmlSchema_FetchResultDataDataType = new ExpandedNodeId(Opc.Ua.Di.Variables.OpcUaDi_XmlSchema_FetchResultDataDataType, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the OpcUaDi_XmlSchema_ParameterResultDataType Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaDi_XmlSchema_ParameterResultDataType = new ExpandedNodeId(Opc.Ua.Di.Variables.OpcUaDi_XmlSchema_ParameterResultDataType, Opc.Ua.Di.Namespaces.OpcUaDi);
     }
     #endregion
 

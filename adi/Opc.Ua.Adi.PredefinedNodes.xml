@@ -24012,6 +24012,145 @@
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </EnumValues>
   </AlarmStateEnumeration>
+  <OpcUaAdi_BinarySchema xmlns="http://opcfoundation.org/UA/ADI/">
+    <uax:NodeClass>Variable_2</uax:NodeClass>
+    <uax:NodeId>
+      <uax:Identifier>ns=1;i=13067</uax:Identifier>
+    </uax:NodeId>
+    <uax:BrowseName>
+      <uax:NamespaceIndex>1</uax:NamespaceIndex>
+      <uax:Name>Opc.Ua.Adi</uax:Name>
+    </uax:BrowseName>
+    <uax:TypeDefinitionId>
+      <uax:Identifier>i=72</uax:Identifier>
+    </uax:TypeDefinitionId>
+    <uax:NumericId>13067</uax:NumericId>
+    <uax:Value>
+      <uax:Value>
+        <uax:ByteString>PG9wYzpUeXBlRGljdGlvbmFyeQ0KICB4bWxuczpEST0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3Jn
+L1VBL0RJLyINCiAgeG1sbnM6b3BjPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvQmluYXJ5U2No
+ZW1hLyINCiAgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0
+YW5jZSINCiAgeG1sbnM6dWE9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS8iDQogIHhtbG5z
+OnRucz0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBL0FESS8iDQogIERlZmF1bHRCeXRlT3Jk
+ZXI9IkxpdHRsZUVuZGlhbiINCiAgVGFyZ2V0TmFtZXNwYWNlPSJodHRwOi8vb3BjZm91bmRhdGlv
+bi5vcmcvVUEvQURJLyINCj4NCiAgPG9wYzpJbXBvcnQgTmFtZXNwYWNlPSJodHRwOi8vb3BjZm91
+bmRhdGlvbi5vcmcvVUEvREkvIiBMb2NhdGlvbj0iT3BjLlVhLkRpLkJpbmFyeVNjaGVtYS5ic2Qi
+Lz4NCiAgPG9wYzpJbXBvcnQgTmFtZXNwYWNlPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEv
+IiBMb2NhdGlvbj0iT3BjLlVhLkJpbmFyeVNjaGVtYS5ic2QiLz4NCg0KICA8b3BjOkVudW1lcmF0
+ZWRUeXBlIE5hbWU9IkV4ZWN1dGlvbkN5Y2xlRW51bWVyYXRpb24iIExlbmd0aEluQml0cz0iMzIi
+Pg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IklETEUiIFZhbHVlPSIwIiAvPg0KICAg
+IDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkRJQUdOT1NUSUMiIFZhbHVlPSIxIiAvPg0KICAg
+IDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkNMRUFOSU5HIiBWYWx1ZT0iMiIgLz4NCiAgICA8
+b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJDQUxJQlJBVElPTiIgVmFsdWU9IjQiIC8+DQogICAg
+PG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVkFMSURBVElPTiIgVmFsdWU9IjgiIC8+DQogICAg
+PG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iU0FNUExJTkciIFZhbHVlPSIxNiIgLz4NCiAgICA8
+b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJESUFHTk9TVElDX1dJVEhfR1JBQl9TQU1QTEUiIFZh
+bHVlPSIzMjc2OSIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJDTEVBTklOR19X
+SVRIX0dSQUJfU0FNUExFIiBWYWx1ZT0iMzI3NzAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFs
+dWUgTmFtZT0iQ0FMSUJSQVRJT05fV0lUSF9HUkFCX1NBTVBMRSIgVmFsdWU9IjMyNzcyIiAvPg0K
+ICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlZBTElEQVRJT05fV0lUSF9HUkFCX1NBTVBM
+RSIgVmFsdWU9IjMyNzc2IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlNBTVBM
+SU5HX1dJVEhfR1JBQl9TQU1QTEUiIFZhbHVlPSIzMjc4NCIgLz4NCiAgPC9vcGM6RW51bWVyYXRl
+ZFR5cGU+DQoNCiAgPG9wYzpFbnVtZXJhdGVkVHlwZSBOYW1lPSJBY3F1aXNpdGlvblJlc3VsdFN0
+YXR1c0VudW1lcmF0aW9uIiBMZW5ndGhJbkJpdHM9IjMyIj4NCiAgICA8b3BjOkVudW1lcmF0ZWRW
+YWx1ZSBOYW1lPSJOT1RfVVNFRCIgVmFsdWU9IjAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFs
+dWUgTmFtZT0iR09PRCIgVmFsdWU9IjEiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFt
+ZT0iQkFEIiBWYWx1ZT0iMiIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJVTktO
+T1dOIiBWYWx1ZT0iMyIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJQQVJUSUFM
+IiBWYWx1ZT0iNCIgLz4NCiAgPC9vcGM6RW51bWVyYXRlZFR5cGU+DQoNCiAgPG9wYzpFbnVtZXJh
+dGVkVHlwZSBOYW1lPSJBbGFybVN0YXRlRW51bWVyYXRpb24iIExlbmd0aEluQml0cz0iMzIiPg0K
+ICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik5PUk1BTF8wIiBWYWx1ZT0iMCIgLz4NCiAg
+ICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJXQVJOSU5HX0xPV18xIiBWYWx1ZT0iMSIgLz4N
+CiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJXQVJOSU5HX0hJR0hfMiIgVmFsdWU9IjIi
+IC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iV0FSTklOR180IiBWYWx1ZT0iNCIg
+Lz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJBTEFSTV9MT1dfOCIgVmFsdWU9Ijgi
+IC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQUxBUk1fSElHSF8xNiIgVmFsdWU9
+IjE2IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkFMQVJNXzMyIiBWYWx1ZT0i
+MzIiIC8+DQogIDwvb3BjOkVudW1lcmF0ZWRUeXBlPg0KDQo8L29wYzpUeXBlRGljdGlvbmFyeT4=</uax:ByteString>
+      </uax:Value>
+    </uax:Value>
+    <uax:DataType>
+      <uax:Identifier>i=15</uax:Identifier>
+    </uax:DataType>
+    <uax:ValueRank>-1</uax:ValueRank>
+    <uax:AccessLevel>1</uax:AccessLevel>
+    <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=47</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:IsInverse>true</uax:IsInverse>
+        <uax:TargetId>
+          <uax:Identifier>i=93</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
+    <NamespaceUri xmlns="http://opcfoundation.org/UA/">
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=13069</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
+        <uax:Name>NamespaceUri</uax:Name>
+      </uax:BrowseName>
+      <uax:Description>
+        <uax:Locale></uax:Locale>
+        <uax:Text>A URI that uniquely identifies the dictionary.</uax:Text>
+      </uax:Description>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:NumericId>13069</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:String>http://opcfoundation.org/UA/ADI/</uax:String>
+        </uax:Value>
+      </uax:Value>
+      <uax:DataType>
+        <uax:Identifier>i=12</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </NamespaceUri>
+    <Deprecated xmlns="http://opcfoundation.org/UA/">
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=8001</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>0</uax:NamespaceIndex>
+        <uax:Name>Deprecated</uax:Name>
+      </uax:BrowseName>
+      <uax:Description>
+        <uax:Locale></uax:Locale>
+        <uax:Text>Indicates that all of the definitions for the dictionary are available through a DataTypeDefinition Attribute.</uax:Text>
+      </uax:Description>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:NumericId>8001</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Boolean>true</uax:Boolean>
+        </uax:Value>
+      </uax:Value>
+      <uax:DataType>
+        <uax:Identifier>i=1</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </Deprecated>
+  </OpcUaAdi_BinarySchema>
   <OpcUaAdi_XmlSchema xmlns="http://opcfoundation.org/UA/ADI/">
     <uax:NodeClass>Variable_2</uax:NodeClass>
     <uax:NodeId>
@@ -24140,93 +24279,18 @@ YT4=</uax:ByteString>
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </NamespaceUri>
-  </OpcUaAdi_XmlSchema>
-  <OpcUaAdi_BinarySchema xmlns="http://opcfoundation.org/UA/ADI/">
-    <uax:NodeClass>Variable_2</uax:NodeClass>
-    <uax:NodeId>
-      <uax:Identifier>ns=1;i=13067</uax:Identifier>
-    </uax:NodeId>
-    <uax:BrowseName>
-      <uax:NamespaceIndex>1</uax:NamespaceIndex>
-      <uax:Name>Opc.Ua.Adi</uax:Name>
-    </uax:BrowseName>
-    <uax:TypeDefinitionId>
-      <uax:Identifier>i=72</uax:Identifier>
-    </uax:TypeDefinitionId>
-    <uax:NumericId>13067</uax:NumericId>
-    <uax:Value>
-      <uax:Value>
-        <uax:ByteString>PG9wYzpUeXBlRGljdGlvbmFyeQ0KICB4bWxuczpEST0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3Jn
-L1VBL0RJLyINCiAgeG1sbnM6b3BjPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvQmluYXJ5U2No
-ZW1hLyINCiAgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0
-YW5jZSINCiAgeG1sbnM6dWE9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS8iDQogIHhtbG5z
-OnRucz0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBL0FESS8iDQogIERlZmF1bHRCeXRlT3Jk
-ZXI9IkxpdHRsZUVuZGlhbiINCiAgVGFyZ2V0TmFtZXNwYWNlPSJodHRwOi8vb3BjZm91bmRhdGlv
-bi5vcmcvVUEvQURJLyINCj4NCiAgPG9wYzpJbXBvcnQgTmFtZXNwYWNlPSJodHRwOi8vb3BjZm91
-bmRhdGlvbi5vcmcvVUEvREkvIiBMb2NhdGlvbj0iT3BjLlVhLkRpLkJpbmFyeVNjaGVtYS5ic2Qi
-Lz4NCiAgPG9wYzpJbXBvcnQgTmFtZXNwYWNlPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEv
-IiBMb2NhdGlvbj0iT3BjLlVhLkJpbmFyeVNjaGVtYS5ic2QiLz4NCg0KICA8b3BjOkVudW1lcmF0
-ZWRUeXBlIE5hbWU9IkV4ZWN1dGlvbkN5Y2xlRW51bWVyYXRpb24iIExlbmd0aEluQml0cz0iMzIi
-Pg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IklETEUiIFZhbHVlPSIwIiAvPg0KICAg
-IDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkRJQUdOT1NUSUMiIFZhbHVlPSIxIiAvPg0KICAg
-IDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkNMRUFOSU5HIiBWYWx1ZT0iMiIgLz4NCiAgICA8
-b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJDQUxJQlJBVElPTiIgVmFsdWU9IjQiIC8+DQogICAg
-PG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVkFMSURBVElPTiIgVmFsdWU9IjgiIC8+DQogICAg
-PG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iU0FNUExJTkciIFZhbHVlPSIxNiIgLz4NCiAgICA8
-b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJESUFHTk9TVElDX1dJVEhfR1JBQl9TQU1QTEUiIFZh
-bHVlPSIzMjc2OSIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJDTEVBTklOR19X
-SVRIX0dSQUJfU0FNUExFIiBWYWx1ZT0iMzI3NzAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFs
-dWUgTmFtZT0iQ0FMSUJSQVRJT05fV0lUSF9HUkFCX1NBTVBMRSIgVmFsdWU9IjMyNzcyIiAvPg0K
-ICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlZBTElEQVRJT05fV0lUSF9HUkFCX1NBTVBM
-RSIgVmFsdWU9IjMyNzc2IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlNBTVBM
-SU5HX1dJVEhfR1JBQl9TQU1QTEUiIFZhbHVlPSIzMjc4NCIgLz4NCiAgPC9vcGM6RW51bWVyYXRl
-ZFR5cGU+DQoNCiAgPG9wYzpFbnVtZXJhdGVkVHlwZSBOYW1lPSJBY3F1aXNpdGlvblJlc3VsdFN0
-YXR1c0VudW1lcmF0aW9uIiBMZW5ndGhJbkJpdHM9IjMyIj4NCiAgICA8b3BjOkVudW1lcmF0ZWRW
-YWx1ZSBOYW1lPSJOT1RfVVNFRCIgVmFsdWU9IjAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFs
-dWUgTmFtZT0iR09PRCIgVmFsdWU9IjEiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFt
-ZT0iQkFEIiBWYWx1ZT0iMiIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJVTktO
-T1dOIiBWYWx1ZT0iMyIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJQQVJUSUFM
-IiBWYWx1ZT0iNCIgLz4NCiAgPC9vcGM6RW51bWVyYXRlZFR5cGU+DQoNCiAgPG9wYzpFbnVtZXJh
-dGVkVHlwZSBOYW1lPSJBbGFybVN0YXRlRW51bWVyYXRpb24iIExlbmd0aEluQml0cz0iMzIiPg0K
-ICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik5PUk1BTF8wIiBWYWx1ZT0iMCIgLz4NCiAg
-ICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJXQVJOSU5HX0xPV18xIiBWYWx1ZT0iMSIgLz4N
-CiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJXQVJOSU5HX0hJR0hfMiIgVmFsdWU9IjIi
-IC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iV0FSTklOR180IiBWYWx1ZT0iNCIg
-Lz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJBTEFSTV9MT1dfOCIgVmFsdWU9Ijgi
-IC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQUxBUk1fSElHSF8xNiIgVmFsdWU9
-IjE2IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkFMQVJNXzMyIiBWYWx1ZT0i
-MzIiIC8+DQogIDwvb3BjOkVudW1lcmF0ZWRUeXBlPg0KDQo8L29wYzpUeXBlRGljdGlvbmFyeT4=</uax:ByteString>
-      </uax:Value>
-    </uax:Value>
-    <uax:DataType>
-      <uax:Identifier>i=15</uax:Identifier>
-    </uax:DataType>
-    <uax:ValueRank>-1</uax:ValueRank>
-    <uax:AccessLevel>1</uax:AccessLevel>
-    <uax:UserAccessLevel>1</uax:UserAccessLevel>
-    <uax:References>
-      <uax:Reference>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:IsInverse>true</uax:IsInverse>
-        <uax:TargetId>
-          <uax:Identifier>i=93</uax:Identifier>
-        </uax:TargetId>
-      </uax:Reference>
-    </uax:References>
-    <NamespaceUri xmlns="http://opcfoundation.org/UA/">
+    <Deprecated xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=13069</uax:Identifier>
+        <uax:Identifier>ns=1;i=8003</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
-        <uax:Name>NamespaceUri</uax:Name>
+        <uax:Name>Deprecated</uax:Name>
       </uax:BrowseName>
       <uax:Description>
         <uax:Locale></uax:Locale>
-        <uax:Text>A URI that uniquely identifies the dictionary.</uax:Text>
+        <uax:Text>Indicates that all of the definitions for the dictionary are available through a DataTypeDefinition Attribute.</uax:Text>
       </uax:Description>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
@@ -24234,18 +24298,18 @@ MzIiIC8+DQogIDwvb3BjOkVudW1lcmF0ZWRUeXBlPg0KDQo8L29wYzpUeXBlRGljdGlvbmFyeT4=</ua
       <uax:TypeDefinitionId>
         <uax:Identifier>i=68</uax:Identifier>
       </uax:TypeDefinitionId>
-      <uax:NumericId>13069</uax:NumericId>
+      <uax:NumericId>8003</uax:NumericId>
       <uax:Value>
         <uax:Value>
-          <uax:String>http://opcfoundation.org/UA/ADI/</uax:String>
+          <uax:Boolean>true</uax:Boolean>
         </uax:Value>
       </uax:Value>
       <uax:DataType>
-        <uax:Identifier>i=12</uax:Identifier>
+        <uax:Identifier>i=1</uax:Identifier>
       </uax:DataType>
       <uax:ValueRank>-1</uax:ValueRank>
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
-    </NamespaceUri>
-  </OpcUaAdi_BinarySchema>
+    </Deprecated>
+  </OpcUaAdi_XmlSchema>
 </uax:ListOfNodeState>

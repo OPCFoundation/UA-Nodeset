@@ -34,6 +34,8 @@ HasDataSource,4001,ReferenceType
 HasInput,4002,ReferenceType
 HasOutput,4003,ReferenceType
 AnalyserDeviceType_ParameterSet,5001,Object
+OpcUaAdi_BinarySchema_Deprecated,8001,Variable
+OpcUaAdi_XmlSchema_Deprecated,8003,Variable
 AnalyserChannelOperatingExecuteStateType,8964,ObjectType
 DetectorType,9350,ObjectType
 SmartSamplingSystemType,9359,ObjectType

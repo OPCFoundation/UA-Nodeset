@@ -581,6 +581,16 @@ namespace Opc.Ua.MTConnect
         public const uint CuttingItemType_Measurements = 9948;
 
         /// <summary>
+        /// The identifier for the DataItemEnumDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DataItemEnumDataType_Encoding_DefaultBinary = 10099;
+
+        /// <summary>
+        /// The identifier for the DataItemStatisticsDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DataItemStatisticsDataType_Encoding_DefaultBinary = 10100;
+
+        /// <summary>
         /// The identifier for the DataItemEnumDataType_Encoding_DefaultXml Object.
         /// </summary>
         public const uint DataItemEnumDataType_Encoding_DefaultXml = 10088;
@@ -591,14 +601,14 @@ namespace Opc.Ua.MTConnect
         public const uint DataItemStatisticsDataType_Encoding_DefaultXml = 10089;
 
         /// <summary>
-        /// The identifier for the DataItemEnumDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the DataItemEnumDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DataItemEnumDataType_Encoding_DefaultBinary = 10099;
+        public const uint DataItemEnumDataType_Encoding_DefaultJson = 10200;
 
         /// <summary>
-        /// The identifier for the DataItemStatisticsDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the DataItemStatisticsDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint DataItemStatisticsDataType_Encoding_DefaultBinary = 10100;
+        public const uint DataItemStatisticsDataType_Encoding_DefaultJson = 10201;
     }
     #endregion
 
@@ -3851,26 +3861,6 @@ namespace Opc.Ua.MTConnect
         public const uint ToolLifeTypeEnum_EnumValues = 10083;
 
         /// <summary>
-        /// The identifier for the OpcUaMTConnect_XmlSchema Variable.
-        /// </summary>
-        public const uint OpcUaMTConnect_XmlSchema = 10090;
-
-        /// <summary>
-        /// The identifier for the OpcUaMTConnect_XmlSchema_NamespaceUri Variable.
-        /// </summary>
-        public const uint OpcUaMTConnect_XmlSchema_NamespaceUri = 10092;
-
-        /// <summary>
-        /// The identifier for the OpcUaMTConnect_XmlSchema_DataItemEnumDataType Variable.
-        /// </summary>
-        public const uint OpcUaMTConnect_XmlSchema_DataItemEnumDataType = 10093;
-
-        /// <summary>
-        /// The identifier for the OpcUaMTConnect_XmlSchema_DataItemStatisticsDataType Variable.
-        /// </summary>
-        public const uint OpcUaMTConnect_XmlSchema_DataItemStatisticsDataType = 10096;
-
-        /// <summary>
         /// The identifier for the OpcUaMTConnect_BinarySchema Variable.
         /// </summary>
         public const uint OpcUaMTConnect_BinarySchema = 10101;
@@ -3881,6 +3871,11 @@ namespace Opc.Ua.MTConnect
         public const uint OpcUaMTConnect_BinarySchema_NamespaceUri = 10103;
 
         /// <summary>
+        /// The identifier for the OpcUaMTConnect_BinarySchema_Deprecated Variable.
+        /// </summary>
+        public const uint OpcUaMTConnect_BinarySchema_Deprecated = 10202;
+
+        /// <summary>
         /// The identifier for the OpcUaMTConnect_BinarySchema_DataItemEnumDataType Variable.
         /// </summary>
         public const uint OpcUaMTConnect_BinarySchema_DataItemEnumDataType = 10104;
@@ -3889,6 +3884,31 @@ namespace Opc.Ua.MTConnect
         /// The identifier for the OpcUaMTConnect_BinarySchema_DataItemStatisticsDataType Variable.
         /// </summary>
         public const uint OpcUaMTConnect_BinarySchema_DataItemStatisticsDataType = 10107;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnect_XmlSchema Variable.
+        /// </summary>
+        public const uint OpcUaMTConnect_XmlSchema = 10090;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnect_XmlSchema_NamespaceUri Variable.
+        /// </summary>
+        public const uint OpcUaMTConnect_XmlSchema_NamespaceUri = 10092;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnect_XmlSchema_Deprecated Variable.
+        /// </summary>
+        public const uint OpcUaMTConnect_XmlSchema_Deprecated = 10204;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnect_XmlSchema_DataItemEnumDataType Variable.
+        /// </summary>
+        public const uint OpcUaMTConnect_XmlSchema_DataItemEnumDataType = 10093;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnect_XmlSchema_DataItemStatisticsDataType Variable.
+        /// </summary>
+        public const uint OpcUaMTConnect_XmlSchema_DataItemStatisticsDataType = 10096;
     }
     #endregion
 
@@ -4806,6 +4826,16 @@ namespace Opc.Ua.MTConnect
         public static readonly ExpandedNodeId CuttingItemType_Measurements = new ExpandedNodeId(Opc.Ua.MTConnect.Objects.CuttingItemType_Measurements, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
 
         /// <summary>
+        /// The identifier for the DataItemEnumDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly ExpandedNodeId DataItemEnumDataType_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.MTConnect.Objects.DataItemEnumDataType_Encoding_DefaultBinary, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the DataItemStatisticsDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly ExpandedNodeId DataItemStatisticsDataType_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.MTConnect.Objects.DataItemStatisticsDataType_Encoding_DefaultBinary, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
         /// The identifier for the DataItemEnumDataType_Encoding_DefaultXml Object.
         /// </summary>
         public static readonly ExpandedNodeId DataItemEnumDataType_Encoding_DefaultXml = new ExpandedNodeId(Opc.Ua.MTConnect.Objects.DataItemEnumDataType_Encoding_DefaultXml, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
@@ -4816,14 +4846,14 @@ namespace Opc.Ua.MTConnect
         public static readonly ExpandedNodeId DataItemStatisticsDataType_Encoding_DefaultXml = new ExpandedNodeId(Opc.Ua.MTConnect.Objects.DataItemStatisticsDataType_Encoding_DefaultXml, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
 
         /// <summary>
-        /// The identifier for the DataItemEnumDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the DataItemEnumDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly ExpandedNodeId DataItemEnumDataType_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.MTConnect.Objects.DataItemEnumDataType_Encoding_DefaultBinary, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+        public static readonly ExpandedNodeId DataItemEnumDataType_Encoding_DefaultJson = new ExpandedNodeId(Opc.Ua.MTConnect.Objects.DataItemEnumDataType_Encoding_DefaultJson, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
 
         /// <summary>
-        /// The identifier for the DataItemStatisticsDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the DataItemStatisticsDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly ExpandedNodeId DataItemStatisticsDataType_Encoding_DefaultBinary = new ExpandedNodeId(Opc.Ua.MTConnect.Objects.DataItemStatisticsDataType_Encoding_DefaultBinary, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+        public static readonly ExpandedNodeId DataItemStatisticsDataType_Encoding_DefaultJson = new ExpandedNodeId(Opc.Ua.MTConnect.Objects.DataItemStatisticsDataType_Encoding_DefaultJson, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
     }
     #endregion
 
@@ -8076,26 +8106,6 @@ namespace Opc.Ua.MTConnect
         public static readonly ExpandedNodeId ToolLifeTypeEnum_EnumValues = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.ToolLifeTypeEnum_EnumValues, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
 
         /// <summary>
-        /// The identifier for the OpcUaMTConnect_XmlSchema Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaMTConnect_XmlSchema = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnect_XmlSchema, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
-
-        /// <summary>
-        /// The identifier for the OpcUaMTConnect_XmlSchema_NamespaceUri Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaMTConnect_XmlSchema_NamespaceUri = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnect_XmlSchema_NamespaceUri, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
-
-        /// <summary>
-        /// The identifier for the OpcUaMTConnect_XmlSchema_DataItemEnumDataType Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaMTConnect_XmlSchema_DataItemEnumDataType = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnect_XmlSchema_DataItemEnumDataType, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
-
-        /// <summary>
-        /// The identifier for the OpcUaMTConnect_XmlSchema_DataItemStatisticsDataType Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId OpcUaMTConnect_XmlSchema_DataItemStatisticsDataType = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnect_XmlSchema_DataItemStatisticsDataType, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
-
-        /// <summary>
         /// The identifier for the OpcUaMTConnect_BinarySchema Variable.
         /// </summary>
         public static readonly ExpandedNodeId OpcUaMTConnect_BinarySchema = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnect_BinarySchema, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
@@ -8106,6 +8116,11 @@ namespace Opc.Ua.MTConnect
         public static readonly ExpandedNodeId OpcUaMTConnect_BinarySchema_NamespaceUri = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnect_BinarySchema_NamespaceUri, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
 
         /// <summary>
+        /// The identifier for the OpcUaMTConnect_BinarySchema_Deprecated Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnect_BinarySchema_Deprecated = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnect_BinarySchema_Deprecated, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
         /// The identifier for the OpcUaMTConnect_BinarySchema_DataItemEnumDataType Variable.
         /// </summary>
         public static readonly ExpandedNodeId OpcUaMTConnect_BinarySchema_DataItemEnumDataType = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnect_BinarySchema_DataItemEnumDataType, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
@@ -8114,6 +8129,31 @@ namespace Opc.Ua.MTConnect
         /// The identifier for the OpcUaMTConnect_BinarySchema_DataItemStatisticsDataType Variable.
         /// </summary>
         public static readonly ExpandedNodeId OpcUaMTConnect_BinarySchema_DataItemStatisticsDataType = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnect_BinarySchema_DataItemStatisticsDataType, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnect_XmlSchema Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnect_XmlSchema = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnect_XmlSchema, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnect_XmlSchema_NamespaceUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnect_XmlSchema_NamespaceUri = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnect_XmlSchema_NamespaceUri, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnect_XmlSchema_Deprecated Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnect_XmlSchema_Deprecated = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnect_XmlSchema_Deprecated, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnect_XmlSchema_DataItemEnumDataType Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnect_XmlSchema_DataItemEnumDataType = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnect_XmlSchema_DataItemEnumDataType, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnect_XmlSchema_DataItemStatisticsDataType Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnect_XmlSchema_DataItemStatisticsDataType = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnect_XmlSchema_DataItemStatisticsDataType, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
     }
     #endregion
 
