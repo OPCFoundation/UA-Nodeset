@@ -334,7 +334,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2406</Reference>
     </References>
     <Value>
-      <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1</UInt32>
+      <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">11</UInt32>
     </Value>
   </UAVariable>
   <UAObject NodeId="i=2400" BrowseName="Ready" ParentNodeId="i=2391">
@@ -359,7 +359,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2400</Reference>
     </References>
     <Value>
-      <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2</UInt32>
+      <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">12</UInt32>
     </Value>
   </UAVariable>
   <UAObject NodeId="i=2402" BrowseName="Running" ParentNodeId="i=2391">
@@ -384,7 +384,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2402</Reference>
     </References>
     <Value>
-      <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">3</UInt32>
+      <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">13</UInt32>
     </Value>
   </UAVariable>
   <UAObject NodeId="i=2404" BrowseName="Suspended" ParentNodeId="i=2391">
@@ -408,7 +408,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2404</Reference>
     </References>
     <Value>
-      <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">4</UInt32>
+      <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">14</UInt32>
     </Value>
   </UAVariable>
   <UAObject NodeId="i=2408" BrowseName="HaltedToReady" ParentNodeId="i=2391">
