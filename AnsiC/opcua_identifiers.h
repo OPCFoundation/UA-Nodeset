@@ -99,6 +99,7 @@
 #define OpcUaId_NodeClass 257
 #define OpcUaId_PermissionType 94
 #define OpcUaId_AccessLevelType 15031
+#define OpcUaId_AccessLevelExType 15406
 #define OpcUaId_EventNotifierType 15033
 #define OpcUaId_AccessRestrictionType 95
 #define OpcUaId_RolePermissionType 96
@@ -2822,7 +2823,9 @@
 #define OpcUaId_RoleSetType_RemoveRole_InputArguments 16001
 #define OpcUaId_RoleType_Identities 16173
 #define OpcUaId_RoleType_Applications 16174
+#define OpcUaId_RoleType_ApplicationsExclude 15410
 #define OpcUaId_RoleType_Endpoints 16175
+#define OpcUaId_RoleType_EndpointsExclude 15411
 #define OpcUaId_RoleType_AddIdentity_InputArguments 15625
 #define OpcUaId_RoleType_RemoveIdentity_InputArguments 15627
 #define OpcUaId_RoleType_AddApplication_InputArguments 16177
@@ -6313,6 +6316,7 @@
 #define OpcUaId_NodeClass_EnumValues 11878
 #define OpcUaId_PermissionType_OptionSetValues 15030
 #define OpcUaId_AccessLevelType_OptionSetValues 15032
+#define OpcUaId_AccessLevelExType_OptionSetValues 15407
 #define OpcUaId_EventNotifierType_OptionSetValues 15034
 #define OpcUaId_AccessRestrictionType_OptionSetValues 15035
 #define OpcUaId_StructureType_EnumStrings 14528

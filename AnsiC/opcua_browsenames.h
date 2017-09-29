@@ -32,6 +32,7 @@
 
 #define OpcUa_BrowseName_AccessHistoryDataCapability "AccessHistoryDataCapability"
 #define OpcUa_BrowseName_AccessHistoryEventsCapability "AccessHistoryEventsCapability"
+#define OpcUa_BrowseName_AccessLevelExType "AccessLevelExType"
 #define OpcUa_BrowseName_AccessLevelType "AccessLevelType"
 #define OpcUa_BrowseName_AccessRestrictionType "AccessRestrictionType"
 #define OpcUa_BrowseName_AckedState "AckedState"
@@ -137,6 +138,7 @@
 #define OpcUa_BrowseName_ApplicationDescription "ApplicationDescription"
 #define OpcUa_BrowseName_ApplicationInstanceCertificate "ApplicationInstanceCertificate"
 #define OpcUa_BrowseName_Applications "Applications"
+#define OpcUa_BrowseName_ApplicationsExclude "ApplicationsExclude"
 #define OpcUa_BrowseName_ApplicationType "ApplicationType"
 #define OpcUa_BrowseName_ApplyChanges "ApplyChanges"
 #define OpcUa_BrowseName_ApplyWrite "ApplyWrite"
@@ -454,6 +456,7 @@
 #define OpcUa_BrowseName_EndpointConfiguration "EndpointConfiguration"
 #define OpcUa_BrowseName_EndpointDescription "EndpointDescription"
 #define OpcUa_BrowseName_Endpoints "Endpoints"
+#define OpcUa_BrowseName_EndpointsExclude "EndpointsExclude"
 #define OpcUa_BrowseName_EndpointUrl "EndpointUrl"
 #define OpcUa_BrowseName_EndpointUrlListDataType "EndpointUrlListDataType"
 #define OpcUa_BrowseName_EndpointUrls "EndpointUrls"

@@ -370,6 +370,11 @@ namespace Opc.Ua
         public const uint AccessLevelType = 15031;
 
         /// <summary>
+        /// The identifier for the AccessLevelExType DataType.
+        /// </summary>
+        public const uint AccessLevelExType = 15406;
+
+        /// <summary>
         /// The identifier for the EventNotifierType DataType.
         /// </summary>
         public const uint EventNotifierType = 15033;
@@ -13935,9 +13940,19 @@ namespace Opc.Ua
         public const uint RoleType_Applications = 16174;
 
         /// <summary>
+        /// The identifier for the RoleType_ApplicationsExclude Variable.
+        /// </summary>
+        public const uint RoleType_ApplicationsExclude = 15410;
+
+        /// <summary>
         /// The identifier for the RoleType_Endpoints Variable.
         /// </summary>
         public const uint RoleType_Endpoints = 16175;
+
+        /// <summary>
+        /// The identifier for the RoleType_EndpointsExclude Variable.
+        /// </summary>
+        public const uint RoleType_EndpointsExclude = 15411;
 
         /// <summary>
         /// The identifier for the RoleType_AddIdentity_InputArguments Variable.
@@ -31390,6 +31405,11 @@ namespace Opc.Ua
         public const uint AccessLevelType_OptionSetValues = 15032;
 
         /// <summary>
+        /// The identifier for the AccessLevelExType_OptionSetValues Variable.
+        /// </summary>
+        public const uint AccessLevelExType_OptionSetValues = 15407;
+
+        /// <summary>
         /// The identifier for the EventNotifierType_OptionSetValues Variable.
         /// </summary>
         public const uint EventNotifierType_OptionSetValues = 15034;
@@ -32858,6 +32878,11 @@ namespace Opc.Ua
         /// The identifier for the AccessLevelType DataType.
         /// </summary>
         public static readonly NodeId AccessLevelType = new NodeId(Opc.Ua.DataTypes.AccessLevelType);
+
+        /// <summary>
+        /// The identifier for the AccessLevelExType DataType.
+        /// </summary>
+        public static readonly NodeId AccessLevelExType = new NodeId(Opc.Ua.DataTypes.AccessLevelExType);
 
         /// <summary>
         /// The identifier for the EventNotifierType DataType.
@@ -46425,9 +46450,19 @@ namespace Opc.Ua
         public static readonly NodeId RoleType_Applications = new NodeId(Opc.Ua.Variables.RoleType_Applications);
 
         /// <summary>
+        /// The identifier for the RoleType_ApplicationsExclude Variable.
+        /// </summary>
+        public static readonly NodeId RoleType_ApplicationsExclude = new NodeId(Opc.Ua.Variables.RoleType_ApplicationsExclude);
+
+        /// <summary>
         /// The identifier for the RoleType_Endpoints Variable.
         /// </summary>
         public static readonly NodeId RoleType_Endpoints = new NodeId(Opc.Ua.Variables.RoleType_Endpoints);
+
+        /// <summary>
+        /// The identifier for the RoleType_EndpointsExclude Variable.
+        /// </summary>
+        public static readonly NodeId RoleType_EndpointsExclude = new NodeId(Opc.Ua.Variables.RoleType_EndpointsExclude);
 
         /// <summary>
         /// The identifier for the RoleType_AddIdentity_InputArguments Variable.
@@ -63880,6 +63915,11 @@ namespace Opc.Ua
         public static readonly NodeId AccessLevelType_OptionSetValues = new NodeId(Opc.Ua.Variables.AccessLevelType_OptionSetValues);
 
         /// <summary>
+        /// The identifier for the AccessLevelExType_OptionSetValues Variable.
+        /// </summary>
+        public static readonly NodeId AccessLevelExType_OptionSetValues = new NodeId(Opc.Ua.Variables.AccessLevelExType_OptionSetValues);
+
+        /// <summary>
         /// The identifier for the EventNotifierType_OptionSetValues Variable.
         /// </summary>
         public static readonly NodeId EventNotifierType_OptionSetValues = new NodeId(Opc.Ua.Variables.EventNotifierType_OptionSetValues);
@@ -65034,6 +65074,11 @@ namespace Opc.Ua
         public const string AccessHistoryEventsCapability = "AccessHistoryEventsCapability";
 
         /// <summary>
+        /// The BrowseName for the AccessLevelExType component.
+        /// </summary>
+        public const string AccessLevelExType = "AccessLevelExType";
+
+        /// <summary>
         /// The BrowseName for the AccessLevelType component.
         /// </summary>
         public const string AccessLevelType = "AccessLevelType";
@@ -65557,6 +65602,11 @@ namespace Opc.Ua
         /// The BrowseName for the Applications component.
         /// </summary>
         public const string Applications = "Applications";
+
+        /// <summary>
+        /// The BrowseName for the ApplicationsExclude component.
+        /// </summary>
+        public const string ApplicationsExclude = "ApplicationsExclude";
 
         /// <summary>
         /// The BrowseName for the ApplicationType component.
@@ -67142,6 +67192,11 @@ namespace Opc.Ua
         /// The BrowseName for the Endpoints component.
         /// </summary>
         public const string Endpoints = "Endpoints";
+
+        /// <summary>
+        /// The BrowseName for the EndpointsExclude component.
+        /// </summary>
+        public const string EndpointsExclude = "EndpointsExclude";
 
         /// <summary>
         /// The BrowseName for the EndpointUrl component.

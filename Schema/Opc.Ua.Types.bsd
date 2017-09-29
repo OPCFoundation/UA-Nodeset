@@ -298,6 +298,7 @@
     <opc:Field Name="ValueRank" TypeName="opc:Int32" />
     <opc:Field Name="NoOfArrayDimensions" TypeName="opc:Int32" />
     <opc:Field Name="ArrayDimensions" TypeName="opc:UInt32" LengthField="NoOfArrayDimensions" />
+    <opc:Field Name="MaxStringLength" TypeName="opc:UInt32" />
     <opc:Field Name="DataSetFieldId" TypeName="opc:Guid" />
     <opc:Field Name="NoOfProperties" TypeName="opc:Int32" />
     <opc:Field Name="Properties" TypeName="tns:KeyValuePair" LengthField="NoOfProperties" />
@@ -430,6 +431,16 @@
     <opc:EnumeratedValue Name="HistoryWrite" Value="16" />
     <opc:EnumeratedValue Name="StatusWrite" Value="32" />
     <opc:EnumeratedValue Name="TimestampWrite" Value="64" />
+  </opc:EnumeratedType>
+
+  <opc:EnumeratedType Name="AccessLevelExType" LengthInBits="32">
+    <opc:EnumeratedValue Name="None" Value="0" />
+    <opc:EnumeratedValue Name="CurrentRead" Value="1" />
+    <opc:EnumeratedValue Name="CurrentWrite" Value="2" />
+    <opc:EnumeratedValue Name="HistoryRead" Value="4" />
+    <opc:EnumeratedValue Name="HistoryWrite" Value="16" />
+    <opc:EnumeratedValue Name="StatusWrite" Value="32" />
+    <opc:EnumeratedValue Name="TimestampWrite" Value="64" />
     <opc:EnumeratedValue Name="NonatomicRead" Value="65536" />
     <opc:EnumeratedValue Name="NonatomicWrite" Value="131072" />
     <opc:EnumeratedValue Name="WriteFullArrayOnly" Value="262144" />
@@ -458,6 +469,9 @@
     <opc:Field Name="Description" TypeName="ua:LocalizedText" />
     <opc:Field Name="DataType" TypeName="ua:NodeId" />
     <opc:Field Name="ValueRank" TypeName="opc:Int32" />
+    <opc:Field Name="NoOfArrayDimensions" TypeName="opc:Int32" />
+    <opc:Field Name="ArrayDimensions" TypeName="opc:UInt32" LengthField="NoOfArrayDimensions" />
+    <opc:Field Name="MaxStringLength" TypeName="opc:UInt32" />
     <opc:Field Name="IsOptional" TypeName="opc:Boolean" />
   </opc:StructuredType>
 

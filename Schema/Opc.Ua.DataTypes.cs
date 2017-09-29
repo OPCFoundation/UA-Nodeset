@@ -2191,6 +2191,7 @@ namespace Opc.Ua
             m_dataType = null;
             m_valueRank = (int)0;
             m_arrayDimensions = new UInt32Collection();
+            m_maxStringLength = (uint)0;
             m_dataSetFieldId = Uuid.Empty;
             m_properties = new KeyValuePairCollection();
         }
@@ -2280,9 +2281,19 @@ namespace Opc.Ua
         }
 
         /// <summary>
+        /// A description for the MaxStringLength field.
+        /// </summary>
+        [DataMember(Name = "MaxStringLength", IsRequired = false, Order = 8)]
+        public uint MaxStringLength
+        {
+            get { return m_maxStringLength;  }
+            set { m_maxStringLength = value; }
+        }
+
+        /// <summary>
         /// A description for the DataSetFieldId field.
         /// </summary>
-        [DataMember(Name = "DataSetFieldId", IsRequired = false, Order = 8)]
+        [DataMember(Name = "DataSetFieldId", IsRequired = false, Order = 9)]
         public Uuid DataSetFieldId
         {
             get { return m_dataSetFieldId;  }
@@ -2292,7 +2303,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the Properties field.
         /// </summary>
-        [DataMember(Name = "Properties", IsRequired = false, Order = 9)]
+        [DataMember(Name = "Properties", IsRequired = false, Order = 10)]
         public KeyValuePairCollection Properties
         {
             get
@@ -2343,6 +2354,7 @@ namespace Opc.Ua
             encoder.WriteNodeId("DataType", DataType);
             encoder.WriteInt32("ValueRank", ValueRank);
             encoder.WriteUInt32Array("ArrayDimensions", ArrayDimensions);
+            encoder.WriteUInt32("MaxStringLength", MaxStringLength);
             encoder.WriteGuid("DataSetFieldId", DataSetFieldId);
             encoder.WriteEncodeableArray("Properties", Properties.ToArray(), typeof(KeyValuePair));
 
@@ -2361,6 +2373,7 @@ namespace Opc.Ua
             DataType = decoder.ReadNodeId("DataType");
             ValueRank = decoder.ReadInt32("ValueRank");
             ArrayDimensions = decoder.ReadUInt32Array("ArrayDimensions");
+            MaxStringLength = decoder.ReadUInt32("MaxStringLength");
             DataSetFieldId = decoder.ReadGuid("DataSetFieldId");
             Properties = (KeyValuePairCollection)decoder.ReadEncodeableArray("Properties", typeof(KeyValuePair));
 
@@ -2389,6 +2402,7 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_dataType, value.m_dataType)) return false;
             if (!Utils.IsEqual(m_valueRank, value.m_valueRank)) return false;
             if (!Utils.IsEqual(m_arrayDimensions, value.m_arrayDimensions)) return false;
+            if (!Utils.IsEqual(m_maxStringLength, value.m_maxStringLength)) return false;
             if (!Utils.IsEqual(m_dataSetFieldId, value.m_dataSetFieldId)) return false;
             if (!Utils.IsEqual(m_properties, value.m_properties)) return false;
 
@@ -2415,6 +2429,7 @@ namespace Opc.Ua
             clone.m_dataType = (NodeId)Utils.Clone(this.m_dataType);
             clone.m_valueRank = (int)Utils.Clone(this.m_valueRank);
             clone.m_arrayDimensions = (UInt32Collection)Utils.Clone(this.m_arrayDimensions);
+            clone.m_maxStringLength = (uint)Utils.Clone(this.m_maxStringLength);
             clone.m_dataSetFieldId = (Uuid)Utils.Clone(this.m_dataSetFieldId);
             clone.m_properties = (KeyValuePairCollection)Utils.Clone(this.m_properties);
 
@@ -2430,6 +2445,7 @@ namespace Opc.Ua
         private NodeId m_dataType;
         private int m_valueRank;
         private UInt32Collection m_arrayDimensions;
+        private uint m_maxStringLength;
         private Uuid m_dataSetFieldId;
         private KeyValuePairCollection m_properties;
         #endregion
@@ -5168,6 +5184,61 @@ namespace Opc.Ua
         /// </summary>
         [EnumMember(Value = "TimestampWrite_64")]
         TimestampWrite = 64,
+    }
+    #endif
+    #endregion
+
+    #region AccessLevelExType Enumeration
+    #if (!OPCUA_EXCLUDE_AccessLevelExType)
+    /// <summary>
+    /// A description for the AccessLevelExType DataType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)][Flags]
+    public enum AccessLevelExType
+    {
+        /// <summary>
+        /// A description for the None field.
+        /// </summary>
+        [EnumMember(Value = "None_0")]
+        None = 0,
+
+        /// <summary>
+        /// A description for the CurrentRead field.
+        /// </summary>
+        [EnumMember(Value = "CurrentRead_1")]
+        CurrentRead = 1,
+
+        /// <summary>
+        /// A description for the CurrentWrite field.
+        /// </summary>
+        [EnumMember(Value = "CurrentWrite_2")]
+        CurrentWrite = 2,
+
+        /// <summary>
+        /// A description for the HistoryRead field.
+        /// </summary>
+        [EnumMember(Value = "HistoryRead_4")]
+        HistoryRead = 4,
+
+        /// <summary>
+        /// A description for the HistoryWrite field.
+        /// </summary>
+        [EnumMember(Value = "HistoryWrite_16")]
+        HistoryWrite = 16,
+
+        /// <summary>
+        /// A description for the StatusWrite field.
+        /// </summary>
+        [EnumMember(Value = "StatusWrite_32")]
+        StatusWrite = 32,
+
+        /// <summary>
+        /// A description for the TimestampWrite field.
+        /// </summary>
+        [EnumMember(Value = "TimestampWrite_64")]
+        TimestampWrite = 64,
 
         /// <summary>
         /// A description for the NonatomicRead field.
@@ -5771,6 +5842,8 @@ namespace Opc.Ua
             m_description = null;
             m_dataType = null;
             m_valueRank = (int)0;
+            m_arrayDimensions = new UInt32Collection();
+            m_maxStringLength = (uint)0;
             m_isOptional = true;
         }
         #endregion
@@ -5817,9 +5890,41 @@ namespace Opc.Ua
         }
 
         /// <summary>
+        /// A description for the ArrayDimensions field.
+        /// </summary>
+        [DataMember(Name = "ArrayDimensions", IsRequired = false, Order = 5)]
+        public UInt32Collection ArrayDimensions
+        {
+            get
+            {
+                return m_arrayDimensions;
+            }
+
+            set
+            {
+                m_arrayDimensions = value;
+
+                if (value == null)
+                {
+                    m_arrayDimensions = new UInt32Collection();
+                }
+            }
+        }
+
+        /// <summary>
+        /// A description for the MaxStringLength field.
+        /// </summary>
+        [DataMember(Name = "MaxStringLength", IsRequired = false, Order = 6)]
+        public uint MaxStringLength
+        {
+            get { return m_maxStringLength;  }
+            set { m_maxStringLength = value; }
+        }
+
+        /// <summary>
         /// A description for the IsOptional field.
         /// </summary>
-        [DataMember(Name = "IsOptional", IsRequired = false, Order = 5)]
+        [DataMember(Name = "IsOptional", IsRequired = false, Order = 7)]
         public bool IsOptional
         {
             get { return m_isOptional;  }
@@ -5855,6 +5960,8 @@ namespace Opc.Ua
             encoder.WriteLocalizedText("Description", Description);
             encoder.WriteNodeId("DataType", DataType);
             encoder.WriteInt32("ValueRank", ValueRank);
+            encoder.WriteUInt32Array("ArrayDimensions", ArrayDimensions);
+            encoder.WriteUInt32("MaxStringLength", MaxStringLength);
             encoder.WriteBoolean("IsOptional", IsOptional);
 
             encoder.PopNamespace();
@@ -5869,6 +5976,8 @@ namespace Opc.Ua
             Description = decoder.ReadLocalizedText("Description");
             DataType = decoder.ReadNodeId("DataType");
             ValueRank = decoder.ReadInt32("ValueRank");
+            ArrayDimensions = decoder.ReadUInt32Array("ArrayDimensions");
+            MaxStringLength = decoder.ReadUInt32("MaxStringLength");
             IsOptional = decoder.ReadBoolean("IsOptional");
 
             decoder.PopNamespace();
@@ -5893,6 +6002,8 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_description, value.m_description)) return false;
             if (!Utils.IsEqual(m_dataType, value.m_dataType)) return false;
             if (!Utils.IsEqual(m_valueRank, value.m_valueRank)) return false;
+            if (!Utils.IsEqual(m_arrayDimensions, value.m_arrayDimensions)) return false;
+            if (!Utils.IsEqual(m_maxStringLength, value.m_maxStringLength)) return false;
             if (!Utils.IsEqual(m_isOptional, value.m_isOptional)) return false;
 
             return true;
@@ -5915,6 +6026,8 @@ namespace Opc.Ua
             clone.m_description = (LocalizedText)Utils.Clone(this.m_description);
             clone.m_dataType = (NodeId)Utils.Clone(this.m_dataType);
             clone.m_valueRank = (int)Utils.Clone(this.m_valueRank);
+            clone.m_arrayDimensions = (UInt32Collection)Utils.Clone(this.m_arrayDimensions);
+            clone.m_maxStringLength = (uint)Utils.Clone(this.m_maxStringLength);
             clone.m_isOptional = (bool)Utils.Clone(this.m_isOptional);
 
             return clone;
@@ -5926,6 +6039,8 @@ namespace Opc.Ua
         private LocalizedText m_description;
         private NodeId m_dataType;
         private int m_valueRank;
+        private UInt32Collection m_arrayDimensions;
+        private uint m_maxStringLength;
         private bool m_isOptional;
         #endregion
     }

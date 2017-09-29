@@ -32272,9 +32272,19 @@ namespace Opc.Ua
                 Applications.Initialize(context, Applications_InitializationString);
             }
 
+            if (ApplicationsExclude != null)
+            {
+                ApplicationsExclude.Initialize(context, ApplicationsExclude_InitializationString);
+            }
+
             if (Endpoints != null)
             {
                 Endpoints.Initialize(context, Endpoints_InitializationString);
+            }
+
+            if (EndpointsExclude != null)
+            {
+                EndpointsExclude.Initialize(context, EndpointsExclude_InitializationString);
             }
 
             if (AddIdentity != null)
@@ -32313,8 +32323,16 @@ namespace Opc.Ua
            "//////////8VYIkKAgAAAAAADAAAAEFwcGxpY2F0aW9ucwEALj8ALgBELj8AAAAMAQAAAAEB/////wAA" +
            "AAA=";
 
+        private const string ApplicationsExclude_InitializationString =
+           "//////////8VYIkKAgAAAAAAEwAAAEFwcGxpY2F0aW9uc0V4Y2x1ZGUBADI8AC4ARDI8AAAAAf////8B" +
+           "Af////8AAAAA";
+
         private const string Endpoints_InitializationString =
            "//////////8VYIkKAgAAAAAACQAAAEVuZHBvaW50cwEALz8ALgBELz8AAAAMAQAAAAEB/////wAAAAA=";
+
+        private const string EndpointsExclude_InitializationString =
+           "//////////8VYIkKAgAAAAAAEAAAAEVuZHBvaW50c0V4Y2x1ZGUBADM8AC4ARDM8AAAAAf////8BAf//" +
+           "//8AAAAA";
 
         private const string AddIdentity_InitializationString =
            "//////////8EYYIKBAAAAAAACwAAAEFkZElkZW50aXR5AQAIPQAvAQAIPQg9AAABAf////8BAAAAFWCp" +
@@ -32347,25 +32365,27 @@ namespace Opc.Ua
            "bGVUb1JlbW92ZQAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
 
         private const string InitializationString =
-           "//////////8EYIAAAQAAAAAAEAAAAFJvbGVUeXBlSW5zdGFuY2UBAAQ9AQAEPf////8JAAAAFWCJCgIA" +
+           "//////////8EYIAAAQAAAAAAEAAAAFJvbGVUeXBlSW5zdGFuY2UBAAQ9AQAEPf////8LAAAAFWCJCgIA" +
            "AAAAAAoAAABJZGVudGl0aWVzAQAtPwAuAEQtPwAAAQASPQEAAAABAf////8AAAAAFWCJCgIAAAAAAAwA" +
-           "AABBcHBsaWNhdGlvbnMBAC4/AC4ARC4/AAAADAEAAAABAf////8AAAAAFWCJCgIAAAAAAAkAAABFbmRw" +
-           "b2ludHMBAC8/AC4ARC8/AAAADAEAAAABAf////8AAAAABGGCCgQAAAAAAAsAAABBZGRJZGVudGl0eQEA" +
-           "CD0ALwEACD0IPQAAAQH/////AQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAAk9AC4ARAk9" +
-           "AACWAQAAAAEAKgEBGgAAAAkAAABSdWxlVG9BZGQBABI9/////wAAAAAAAQAoAQEAAAABAf////8AAAAA" +
-           "BGGCCgQAAAAAAA4AAABSZW1vdmVJZGVudGl0eQEACj0ALwEACj0KPQAAAQH/////AQAAABVgqQoCAAAA" +
-           "AAAOAAAASW5wdXRBcmd1bWVudHMBAAs9AC4ARAs9AACWAQAAAAEAKgEBHQAAAAwAAABSdWxlVG9SZW1v" +
-           "dmUBABI9/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAAAAA4AAABBZGRBcHBsaWNhdGlv" +
-           "bgEAMD8ALwEAMD8wPwAAAQH/////AQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBADE/AC4A" +
-           "RDE/AACWAQAAAAEAKgEBGAAAAAkAAABSdWxlVG9BZGQADP////8AAAAAAAEAKAEBAAAAAQH/////AAAA" +
-           "AARhggoEAAAAAAARAAAAUmVtb3ZlQXBwbGljYXRpb24BADI/AC8BADI/Mj8AAAEB/////wEAAAAVYKkK" +
-           "AgAAAAAADgAAAElucHV0QXJndW1lbnRzAQAzPwAuAEQzPwAAlgEAAAABACoBARsAAAAMAAAAUnVsZVRv" +
-           "UmVtb3ZlAAz/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAAACwAAAEFkZEVuZHBvaW50" +
-           "AQA0PwAvAQA0PzQ/AAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEANT8ALgBE" +
-           "NT8AAJYBAAAAAQAqAQEYAAAACQAAAFJ1bGVUb0FkZAAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAA" +
-           "BGGCCgQAAAAAAA4AAABSZW1vdmVFbmRwb2ludAEANj8ALwEANj82PwAAAQH/////AQAAABVgqQoCAAAA" +
-           "AAAOAAAASW5wdXRBcmd1bWVudHMBADc/AC4ARDc/AACWAQAAAAEAKgEBGwAAAAwAAABSdWxlVG9SZW1v" +
-           "dmUADP////8AAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
+           "AABBcHBsaWNhdGlvbnMBAC4/AC4ARC4/AAAADAEAAAABAf////8AAAAAFWCJCgIAAAAAABMAAABBcHBs" +
+           "aWNhdGlvbnNFeGNsdWRlAQAyPAAuAEQyPAAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAJAAAARW5k" +
+           "cG9pbnRzAQAvPwAuAEQvPwAAAAwBAAAAAQH/////AAAAABVgiQoCAAAAAAAQAAAARW5kcG9pbnRzRXhj" +
+           "bHVkZQEAMzwALgBEMzwAAAAB/////wEB/////wAAAAAEYYIKBAAAAAAACwAAAEFkZElkZW50aXR5AQAI" +
+           "PQAvAQAIPQg9AAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEACT0ALgBECT0A" +
+           "AJYBAAAAAQAqAQEaAAAACQAAAFJ1bGVUb0FkZAEAEj3/////AAAAAAABACgBAQAAAAEB/////wAAAAAE" +
+           "YYIKBAAAAAAADgAAAFJlbW92ZUlkZW50aXR5AQAKPQAvAQAKPQo9AAABAf////8BAAAAFWCpCgIAAAAA" +
+           "AA4AAABJbnB1dEFyZ3VtZW50cwEACz0ALgBECz0AAJYBAAAAAQAqAQEdAAAADAAAAFJ1bGVUb1JlbW92" +
+           "ZQEAEj3/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAAADgAAAEFkZEFwcGxpY2F0aW9u" +
+           "AQAwPwAvAQAwPzA/AAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAMT8ALgBE" +
+           "MT8AAJYBAAAAAQAqAQEYAAAACQAAAFJ1bGVUb0FkZAAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAA" +
+           "BGGCCgQAAAAAABEAAABSZW1vdmVBcHBsaWNhdGlvbgEAMj8ALwEAMj8yPwAAAQH/////AQAAABVgqQoC" +
+           "AAAAAAAOAAAASW5wdXRBcmd1bWVudHMBADM/AC4ARDM/AACWAQAAAAEAKgEBGwAAAAwAAABSdWxlVG9S" +
+           "ZW1vdmUADP////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAAALAAAAQWRkRW5kcG9pbnQB" +
+           "ADQ/AC8BADQ/ND8AAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQA1PwAuAEQ1" +
+           "PwAAlgEAAAABACoBARgAAAAJAAAAUnVsZVRvQWRkAAz/////AAAAAAABACgBAQAAAAEB/////wAAAAAE" +
+           "YYIKBAAAAAAADgAAAFJlbW92ZUVuZHBvaW50AQA2PwAvAQA2PzY/AAABAf////8BAAAAFWCpCgIAAAAA" +
+           "AA4AAABJbnB1dEFyZ3VtZW50cwEANz8ALgBENz8AAJYBAAAAAQAqAQEbAAAADAAAAFJ1bGVUb1JlbW92" +
+           "ZQAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -32414,6 +32434,27 @@ namespace Opc.Ua
         }
 
         /// <summary>
+        /// A description for the ApplicationsExclude Property.
+        /// </summary>
+        public PropertyState<bool> ApplicationsExclude
+        {
+            get
+            {
+                return m_applicationsExclude;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_applicationsExclude, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_applicationsExclude = value;
+            }
+        }
+
+        /// <summary>
         /// A description for the Endpoints Property.
         /// </summary>
         public PropertyState<string[]> Endpoints
@@ -32431,6 +32472,27 @@ namespace Opc.Ua
                 }
 
                 m_endpoints = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the EndpointsExclude Property.
+        /// </summary>
+        public PropertyState<bool> EndpointsExclude
+        {
+            get
+            {
+                return m_endpointsExclude;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_endpointsExclude, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_endpointsExclude = value;
             }
         }
 
@@ -32581,9 +32643,19 @@ namespace Opc.Ua
                 children.Add(m_applications);
             }
 
+            if (m_applicationsExclude != null)
+            {
+                children.Add(m_applicationsExclude);
+            }
+
             if (m_endpoints != null)
             {
                 children.Add(m_endpoints);
+            }
+
+            if (m_endpointsExclude != null)
+            {
+                children.Add(m_endpointsExclude);
             }
 
             if (m_addIdentityMethod != null)
@@ -32679,6 +32751,27 @@ namespace Opc.Ua
                     break;
                 }
 
+                case Opc.Ua.BrowseNames.ApplicationsExclude:
+                {
+                    if (createOrReplace)
+                    {
+                        if (ApplicationsExclude == null)
+                        {
+                            if (replacement == null)
+                            {
+                                ApplicationsExclude = new PropertyState<bool>(this);
+                            }
+                            else
+                            {
+                                ApplicationsExclude = (PropertyState<bool>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = ApplicationsExclude;
+                    break;
+                }
+
                 case Opc.Ua.BrowseNames.Endpoints:
                 {
                     if (createOrReplace)
@@ -32697,6 +32790,27 @@ namespace Opc.Ua
                     }
 
                     instance = Endpoints;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.EndpointsExclude:
+                {
+                    if (createOrReplace)
+                    {
+                        if (EndpointsExclude == null)
+                        {
+                            if (replacement == null)
+                            {
+                                EndpointsExclude = new PropertyState<bool>(this);
+                            }
+                            else
+                            {
+                                EndpointsExclude = (PropertyState<bool>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = EndpointsExclude;
                     break;
                 }
 
@@ -32839,7 +32953,9 @@ namespace Opc.Ua
         #region Private Fields
         private PropertyState<IdentityMappingRuleType[]> m_identities;
         private PropertyState<string[]> m_applications;
+        private PropertyState<bool> m_applicationsExclude;
         private PropertyState<string[]> m_endpoints;
+        private PropertyState<bool> m_endpointsExclude;
         private AddIdentityMethodState m_addIdentityMethod;
         private RemoveIdentityMethodState m_removeIdentityMethod;
         private AddApplicationMethodState m_addApplicationMethod;

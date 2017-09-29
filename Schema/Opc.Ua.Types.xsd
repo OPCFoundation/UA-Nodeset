@@ -647,6 +647,7 @@
       <xs:element name="DataType" type="ua:NodeId" minOccurs="0" nillable="true" />
       <xs:element name="ValueRank" type="xs:int" minOccurs="0" />
       <xs:element name="ArrayDimensions" type="ua:ListOfUInt32" minOccurs="0" nillable="true" />
+      <xs:element name="MaxStringLength" type="xs:unsignedInt" minOccurs="0" />
       <xs:element name="DataSetFieldId" type="ua:Guid" minOccurs="0" />
       <xs:element name="Properties" type="tns:ListOfKeyValuePair" minOccurs="0" nillable="true" />
     </xs:sequence>
@@ -928,12 +929,25 @@
       <xs:element name="HistoryWrite" type="ua:Variant" minOccurs="0" />
       <xs:element name="StatusWrite" type="ua:Variant" minOccurs="0" />
       <xs:element name="TimestampWrite" type="ua:Variant" minOccurs="0" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="AccessLevelType" type="tns:AccessLevelType" />
+
+  <xs:simpleType  name="AccessLevelExType">
+    <xs:restriction base="xs:string">
+      <xs:element name="None" type="ua:Variant" minOccurs="0" />
+      <xs:element name="CurrentRead" type="ua:Variant" minOccurs="0" />
+      <xs:element name="CurrentWrite" type="ua:Variant" minOccurs="0" />
+      <xs:element name="HistoryRead" type="ua:Variant" minOccurs="0" />
+      <xs:element name="HistoryWrite" type="ua:Variant" minOccurs="0" />
+      <xs:element name="StatusWrite" type="ua:Variant" minOccurs="0" />
+      <xs:element name="TimestampWrite" type="ua:Variant" minOccurs="0" />
       <xs:element name="NonatomicRead" type="ua:Variant" minOccurs="0" />
       <xs:element name="NonatomicWrite" type="ua:Variant" minOccurs="0" />
       <xs:element name="WriteFullArrayOnly" type="ua:Variant" minOccurs="0" />
     </xs:restriction>
   </xs:simpleType>
-  <xs:element name="AccessLevelType" type="tns:AccessLevelType" />
+  <xs:element name="AccessLevelExType" type="tns:AccessLevelExType" />
 
   <xs:simpleType  name="EventNotifierType">
     <xs:restriction base="xs:string">
@@ -975,6 +989,8 @@
       <xs:element name="Description" type="ua:LocalizedText" minOccurs="0" nillable="true" />
       <xs:element name="DataType" type="ua:NodeId" minOccurs="0" nillable="true" />
       <xs:element name="ValueRank" type="xs:int" minOccurs="0" />
+      <xs:element name="ArrayDimensions" type="ua:ListOfUInt32" minOccurs="0" nillable="true" />
+      <xs:element name="MaxStringLength" type="xs:unsignedInt" minOccurs="0" />
       <xs:element name="IsOptional" type="xs:boolean" minOccurs="0" />
     </xs:sequence>
   </xs:complexType>

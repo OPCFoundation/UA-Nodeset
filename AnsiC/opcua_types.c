@@ -99,24 +99,24 @@ struct _OpcUa_EnumeratedType OpcUa_NodeClass_EnumeratedType =
 static struct _OpcUa_EnumeratedValue g_OpcUa_PermissionType_EnumeratedValues[] =
 {
     { "None", 0 },
-    { "Browse", 0 },
-    { "ReadRolePermissions", 0 },
-    { "WriteAttribute", 0 },
-    { "WriteRolePermissions", 0 },
-    { "WriteHistorizing", 0 },
-    { "Read", 0 },
-    { "Write", 0 },
-    { "ReadHistory", 0 },
-    { "InsertHistory", 0 },
-    { "ModifyHistory", 0 },
-    { "DeleteHistory", 0 },
-    { "ReceiveEvents", 0 },
-    { "Call", 0 },
-    { "AddReference", 0 },
-    { "RemoveReference", 0 },
-    { "DeleteNode", 0 },
-    { "AddNode", 0 },
-    { "All", 0 },
+    { "Browse", 1 },
+    { "ReadRolePermissions", 2 },
+    { "WriteAttribute", 4 },
+    { "WriteRolePermissions", 8 },
+    { "WriteHistorizing", 16 },
+    { "Read", 32 },
+    { "Write", 64 },
+    { "ReadHistory", 128 },
+    { "InsertHistory", 256 },
+    { "ModifyHistory", 512 },
+    { "DeleteHistory", 1024 },
+    { "ReceiveEvents", 2048 },
+    { "Call", 4096 },
+    { "AddReference", 8192 },
+    { "RemoveReference", 16384 },
+    { "DeleteNode", 32768 },
+    { "AddNode", 65536 },
+    { "All", 131071 },
     { OpcUa_Null, 0 }
 };
 
@@ -134,15 +134,12 @@ struct _OpcUa_EnumeratedType OpcUa_PermissionType_EnumeratedType =
 static struct _OpcUa_EnumeratedValue g_OpcUa_AccessLevelType_EnumeratedValues[] =
 {
     { "None", 0 },
-    { "CurrentRead", 0 },
-    { "CurrentWrite", 0 },
-    { "HistoryRead", 0 },
-    { "HistoryWrite", 0 },
-    { "StatusWrite", 0 },
-    { "TimestampWrite", 0 },
-    { "NonatomicRead", 0 },
-    { "NonatomicWrite", 0 },
-    { "WriteFullArrayOnly", 0 },
+    { "CurrentRead", 1 },
+    { "CurrentWrite", 2 },
+    { "HistoryRead", 4 },
+    { "HistoryWrite", 16 },
+    { "StatusWrite", 32 },
+    { "TimestampWrite", 64 },
     { OpcUa_Null, 0 }
 };
 
@@ -153,6 +150,32 @@ struct _OpcUa_EnumeratedType OpcUa_AccessLevelType_EnumeratedType =
 };
 #endif
 
+#ifndef OPCUA_EXCLUDE_AccessLevelExType
+/*============================================================================
+ * OpcUa_AccessLevelExType_EnumeratedType
+ *===========================================================================*/
+static struct _OpcUa_EnumeratedValue g_OpcUa_AccessLevelExType_EnumeratedValues[] =
+{
+    { "None", 0 },
+    { "CurrentRead", 1 },
+    { "CurrentWrite", 2 },
+    { "HistoryRead", 4 },
+    { "HistoryWrite", 16 },
+    { "StatusWrite", 32 },
+    { "TimestampWrite", 64 },
+    { "NonatomicRead", 65536 },
+    { "NonatomicWrite", 131072 },
+    { "WriteFullArrayOnly", 262144 },
+    { OpcUa_Null, 0 }
+};
+
+struct _OpcUa_EnumeratedType OpcUa_AccessLevelExType_EnumeratedType =
+{
+    "AccessLevelExType",
+    g_OpcUa_AccessLevelExType_EnumeratedValues
+};
+#endif
+
 #ifndef OPCUA_EXCLUDE_EventNotifierType
 /*============================================================================
  * OpcUa_EventNotifierType_EnumeratedType
@@ -160,9 +183,9 @@ struct _OpcUa_EnumeratedType OpcUa_AccessLevelType_EnumeratedType =
 static struct _OpcUa_EnumeratedValue g_OpcUa_EventNotifierType_EnumeratedValues[] =
 {
     { "None", 0 },
-    { "SubscribeToEvents", 0 },
-    { "HistoryRead", 0 },
-    { "HistoryWrite", 0 },
+    { "SubscribeToEvents", 1 },
+    { "HistoryRead", 4 },
+    { "HistoryWrite", 8 },
     { OpcUa_Null, 0 }
 };
 
@@ -180,9 +203,9 @@ struct _OpcUa_EnumeratedType OpcUa_EventNotifierType_EnumeratedType =
 static struct _OpcUa_EnumeratedValue g_OpcUa_AccessRestrictionType_EnumeratedValues[] =
 {
     { "None", 0 },
-    { "SigningRequired", 0 },
-    { "EncryptionRequired", 0 },
-    { "SessionRequired ", 0 },
+    { "SigningRequired", 1 },
+    { "EncryptionRequired", 2 },
+    { "SessionRequired ", 4 },
     { OpcUa_Null, 0 }
 };
 
@@ -340,6 +363,8 @@ OpcUa_Void OpcUa_StructureField_Initialize(OpcUa_StructureField* a_pValue)
         OpcUa_Field_Initialize(LocalizedText, Description);
         OpcUa_Field_Initialize(NodeId, DataType);
         OpcUa_Field_Initialize(Int32, ValueRank);
+        OpcUa_Field_InitializeArray(UInt32, ArrayDimensions);
+        OpcUa_Field_Initialize(UInt32, MaxStringLength);
         OpcUa_Field_Initialize(Boolean, IsOptional);
     }
 }
@@ -355,6 +380,8 @@ OpcUa_Void OpcUa_StructureField_Clear(OpcUa_StructureField* a_pValue)
         OpcUa_Field_Clear(LocalizedText, Description);
         OpcUa_Field_Clear(NodeId, DataType);
         OpcUa_Field_Clear(Int32, ValueRank);
+        OpcUa_Field_ClearArray(UInt32, ArrayDimensions);
+        OpcUa_Field_Clear(UInt32, MaxStringLength);
         OpcUa_Field_Clear(Boolean, IsOptional);
     }
 }
@@ -378,6 +405,8 @@ OpcUa_StatusCode OpcUa_StructureField_GetSize(OpcUa_StructureField* a_pValue, Op
     OpcUa_Field_GetSize(LocalizedText, Description);
     OpcUa_Field_GetSize(NodeId, DataType);
     OpcUa_Field_GetSize(Int32, ValueRank);
+    OpcUa_Field_GetSizeArray(UInt32, ArrayDimensions);
+    OpcUa_Field_GetSize(UInt32, MaxStringLength);
     OpcUa_Field_GetSize(Boolean, IsOptional);
 
     *a_pSize = iSize;
@@ -404,6 +433,8 @@ OpcUa_StatusCode OpcUa_StructureField_Encode(OpcUa_StructureField* a_pValue, Opc
     OpcUa_Field_Write(LocalizedText, Description);
     OpcUa_Field_Write(NodeId, DataType);
     OpcUa_Field_Write(Int32, ValueRank);
+    OpcUa_Field_WriteArray(UInt32, ArrayDimensions);
+    OpcUa_Field_Write(UInt32, MaxStringLength);
     OpcUa_Field_Write(Boolean, IsOptional);
 
     OpcUa_ReturnStatusCode;
@@ -430,6 +461,8 @@ OpcUa_StatusCode OpcUa_StructureField_Decode(OpcUa_StructureField* a_pValue, Opc
     OpcUa_Field_Read(LocalizedText, Description);
     OpcUa_Field_Read(NodeId, DataType);
     OpcUa_Field_Read(Int32, ValueRank);
+    OpcUa_Field_ReadArray(UInt32, ArrayDimensions);
+    OpcUa_Field_Read(UInt32, MaxStringLength);
     OpcUa_Field_Read(Boolean, IsOptional);
 
     OpcUa_ReturnStatusCode;
@@ -11724,32 +11757,32 @@ struct _OpcUa_EncodeableType OpcUa_DeleteReferencesResponse_EncodeableType =
 static struct _OpcUa_EnumeratedValue g_OpcUa_AttributeWriteMask_EnumeratedValues[] =
 {
     { "None", 0 },
-    { "AccessLevel", 0 },
-    { "ArrayDimensions", 0 },
-    { "BrowseName", 0 },
-    { "ContainsNoLoops", 0 },
-    { "DataType", 0 },
-    { "Description", 0 },
-    { "DisplayName", 0 },
-    { "EventNotifier", 0 },
-    { "Executable", 0 },
-    { "Historizing", 0 },
-    { "InverseName", 0 },
-    { "IsAbstract", 0 },
-    { "MinimumSamplingInterval", 0 },
-    { "NodeClass", 0 },
-    { "NodeId", 0 },
-    { "Symmetric", 0 },
-    { "UserAccessLevel", 0 },
-    { "UserExecutable", 0 },
-    { "UserWriteMask", 0 },
-    { "ValueRank", 0 },
-    { "WriteMask", 0 },
-    { "ValueForVariableType", 0 },
-    { "DataTypeDefinition", 0 },
-    { "RolePermissions", 0 },
-    { "AccessRestrictions", 0 },
-    { "AccessLevelEx", 0 },
+    { "AccessLevel", 1 },
+    { "ArrayDimensions", 2 },
+    { "BrowseName", 4 },
+    { "ContainsNoLoops", 8 },
+    { "DataType", 16 },
+    { "Description", 32 },
+    { "DisplayName", 64 },
+    { "EventNotifier", 128 },
+    { "Executable", 256 },
+    { "Historizing", 512 },
+    { "InverseName", 1024 },
+    { "IsAbstract", 2048 },
+    { "MinimumSamplingInterval", 4096 },
+    { "NodeClass", 8192 },
+    { "NodeId", 16384 },
+    { "Symmetric", 32768 },
+    { "UserAccessLevel", 65536 },
+    { "UserExecutable", 131072 },
+    { "UserWriteMask", 262144 },
+    { "ValueRank", 524288 },
+    { "WriteMask", 1048576 },
+    { "ValueForVariableType", 2097152 },
+    { "DataTypeDefinition", 4194304 },
+    { "RolePermissions", 8388608 },
+    { "AccessRestrictions", 16777216 },
+    { "AccessLevelEx", 33554432 },
     { OpcUa_Null, 0 }
 };
 

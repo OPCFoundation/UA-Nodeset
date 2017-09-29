@@ -117,6 +117,7 @@
       <Field Name="DataType" DataType="i=17" />
       <Field Name="ValueRank" DataType="i=6" />
       <Field Name="ArrayDimensions" DataType="i=7" ValueRank="1" />
+      <Field Name="MaxStringLength" DataType="i=7" />
       <Field Name="DataSetFieldId" DataType="i=14" />
       <Field Name="Properties" DataType="i=14533" ValueRank="1" />
     </Definition>

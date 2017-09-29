@@ -942,7 +942,7 @@
     <DisplayName>PermissionType</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=15030</Reference>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
     </References>
     <Definition Name="PermissionType" IsOptionSet="true">
       <Field Name="None" Value="0" />
@@ -1067,9 +1067,72 @@
     <DisplayName>AccessLevelType</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=15032</Reference>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=3</Reference>
     </References>
     <Definition Name="AccessLevelType" IsOptionSet="true">
+      <Field Name="None" Value="0" />
+      <Field Name="CurrentRead" Value="1" />
+      <Field Name="CurrentWrite" Value="2" />
+      <Field Name="HistoryRead" Value="4" />
+      <Field Name="HistoryWrite" Value="16" />
+      <Field Name="StatusWrite" Value="32" />
+      <Field Name="TimestampWrite" Value="64" />
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="i=15032" BrowseName="OptionSetValues" ParentNodeId="i=15031" DataType="LocalizedText" ValueRank="1">
+    <DisplayName>OptionSetValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15031</Reference>
+    </References>
+    <Value>
+      <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>CurrentRead</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>CurrentWrite</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>HistoryRead</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Reserved</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>HistoryWrite</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>StatusWrite</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>TimestampWrite</Text>
+        </LocalizedText>
+      </ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="i=15406" BrowseName="AccessLevelExType">
+    <DisplayName>AccessLevelExType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=15407</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
+    </References>
+    <Definition Name="AccessLevelExType" IsOptionSet="true">
       <Field Name="None" Value="0" />
       <Field Name="CurrentRead" Value="1" />
       <Field Name="CurrentWrite" Value="2" />
@@ -1082,12 +1145,12 @@
       <Field Name="WriteFullArrayOnly" Value="262144" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=15032" BrowseName="OptionSetValues" ParentNodeId="i=15031" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=15407" BrowseName="OptionSetValues" ParentNodeId="i=15406" DataType="LocalizedText" ValueRank="1">
     <DisplayName>OptionSetValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=15031</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15406</Reference>
     </References>
     <Value>
       <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
@@ -1339,6 +1402,8 @@
       <Field Name="Description" DataType="i=21" />
       <Field Name="DataType" DataType="i=17" />
       <Field Name="ValueRank" DataType="i=6" />
+      <Field Name="ArrayDimensions" DataType="i=7" ValueRank="1" />
+      <Field Name="MaxStringLength" DataType="i=7" />
       <Field Name="IsOptional" DataType="i=1" />
     </Definition>
   </UADataType>
