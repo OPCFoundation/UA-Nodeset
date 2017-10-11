@@ -241,6 +241,20 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
   </UADataType>
+  <UADataType NodeId="i=23" BrowseName="DataValue">
+    <DisplayName>DataValue</DisplayName>
+    <Description>Describes a value that is a structure containing a value, a status code and timestamps.</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="i=25" BrowseName="DiagnosticInfo">
+    <DisplayName>DiagnosticInfo</DisplayName>
+    <Description>Describes a value that is a structure containing diagnostics associated with a StatusCode.</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
+    </References>
+  </UADataType>
   <UADataType NodeId="i=30" BrowseName="Image" IsAbstract="true">
     <DisplayName>Image</DisplayName>
     <Description>Describes a value that is an image encoded as a string of bytes.</Description>
