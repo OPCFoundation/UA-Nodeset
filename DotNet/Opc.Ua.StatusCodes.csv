@@ -20,6 +20,7 @@ BadTooManyMonitoredItems,0x80DB0000,The request could not be processed because t
 BadDataTypeIdUnknown,0x80110000,The extension object cannot be (de)serialized because the data type id is not recognized.
 BadCertificateInvalid,0x80120000,The certificate provided as a parameter is not valid.
 BadSecurityChecksFailed,0x80130000,An error occurred verifying security.
+BadCertificatePolicyCheckFailed,0x81140000,The certificate does not meet the requirements of the security policy.
 BadCertificateTimeInvalid,0x80140000,The certificate has expired or is not yet valid.
 BadCertificateIssuerTimeInvalid,0x80150000,An issuer certificate has expired or is not yet valid.
 BadCertificateHostNameInvalid,0x80160000,The HostName used to connect to a server does not match a HostName in the certificate.

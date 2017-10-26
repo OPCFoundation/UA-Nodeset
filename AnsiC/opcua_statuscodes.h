@@ -143,6 +143,11 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadSecurityChecksFailed 0x80130000
 
 /*============================================================================
+ * The certificate does not meet the requirements of the security policy.
+ *===========================================================================*/
+#define OpcUa_BadCertificatePolicyCheckFailed 0x81140000
+
+/*============================================================================
  * The certificate has expired or is not yet valid.
  *===========================================================================*/
 #define OpcUa_BadCertificateTimeInvalid 0x80140000

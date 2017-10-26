@@ -150,6 +150,11 @@ namespace Opc.Ua
         public const uint BadSecurityChecksFailed = 0x80130000;
 
         /// <summary>
+        /// The certificate does not meet the requirements of the security policy.
+        /// </summary>
+        public const uint BadCertificatePolicyCheckFailed = 0x81140000;
+
+        /// <summary>
         /// The certificate has expired or is not yet valid.
         /// </summary>
         public const uint BadCertificateTimeInvalid = 0x80140000;
