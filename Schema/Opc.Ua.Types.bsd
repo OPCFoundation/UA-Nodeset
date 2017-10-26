@@ -295,45 +295,6 @@
     <opc:Field Name="Value" TypeName="opc:ByteString" />
   </opc:StructuredType>
 
-  <opc:StructuredType Name="ConfigurationVersionDataType" BaseType="ua:ExtensionObject">
-    <opc:Field Name="MajorVersion" TypeName="opc:UInt32" />
-    <opc:Field Name="MinorVersion" TypeName="opc:UInt32" />
-  </opc:StructuredType>
-
-  <opc:StructuredType Name="DataSetMetaDataType" BaseType="ua:ExtensionObject">
-    <opc:Field Name="Name" TypeName="opc:String" />
-    <opc:Field Name="Description" TypeName="ua:LocalizedText" />
-    <opc:Field Name="NoOfFields" TypeName="opc:Int32" />
-    <opc:Field Name="Fields" TypeName="tns:FieldMetaData" LengthField="NoOfFields" />
-    <opc:Field Name="DataSetClassId" TypeName="opc:Guid" />
-    <opc:Field Name="NoOfNamespaces" TypeName="opc:Int32" />
-    <opc:Field Name="Namespaces" TypeName="opc:String" LengthField="NoOfNamespaces" />
-    <opc:Field Name="NoOfStructureDataTypes" TypeName="opc:Int32" />
-    <opc:Field Name="StructureDataTypes" TypeName="tns:StructureDescription" LengthField="NoOfStructureDataTypes" />
-    <opc:Field Name="NoOfEnumDataTypes" TypeName="opc:Int32" />
-    <opc:Field Name="EnumDataTypes" TypeName="tns:EnumDescription" LengthField="NoOfEnumDataTypes" />
-    <opc:Field Name="ConfigurationVersion" TypeName="tns:ConfigurationVersionDataType" />
-  </opc:StructuredType>
-
-  <opc:EnumeratedType Name="DataSetFieldFlags" LengthInBits="32">
-    <opc:EnumeratedValue Name="PromotedField" Value="1" />
-  </opc:EnumeratedType>
-
-  <opc:StructuredType Name="FieldMetaData" BaseType="ua:ExtensionObject">
-    <opc:Field Name="Name" TypeName="opc:String" />
-    <opc:Field Name="Description" TypeName="ua:LocalizedText" />
-    <opc:Field Name="FieldFlags" TypeName="tns:DataSetFieldFlags" />
-    <opc:Field Name="BuiltInType" TypeName="opc:Byte" />
-    <opc:Field Name="DataType" TypeName="ua:NodeId" />
-    <opc:Field Name="ValueRank" TypeName="opc:Int32" />
-    <opc:Field Name="NoOfArrayDimensions" TypeName="opc:Int32" />
-    <opc:Field Name="ArrayDimensions" TypeName="opc:UInt32" LengthField="NoOfArrayDimensions" />
-    <opc:Field Name="MaxStringLength" TypeName="opc:UInt32" />
-    <opc:Field Name="DataSetFieldId" TypeName="opc:Guid" />
-    <opc:Field Name="NoOfProperties" TypeName="opc:Int32" />
-    <opc:Field Name="Properties" TypeName="tns:KeyValuePair" LengthField="NoOfProperties" />
-  </opc:StructuredType>
-
   <opc:StructuredType Name="DataTypeDescription" BaseType="ua:ExtensionObject">
     <opc:Field Name="DataTypeId" TypeName="ua:NodeId" />
     <opc:Field Name="Name" TypeName="ua:QualifiedName" />
@@ -350,87 +311,6 @@
     <opc:Field Name="Name" TypeName="ua:QualifiedName" SourceType="tns:DataTypeDescription" />
     <opc:Field Name="EnumDefinition" TypeName="tns:EnumDefinition" />
   </opc:StructuredType>
-
-  <opc:EnumeratedType Name="DataSetMessageContentMask" LengthInBits="32">
-    <opc:EnumeratedValue Name="FieldStatusCode" Value="1" />
-    <opc:EnumeratedValue Name="FieldSourceTimestamp" Value="2" />
-    <opc:EnumeratedValue Name="FieldServerTimestamp" Value="4" />
-    <opc:EnumeratedValue Name="FieldSourcePicoSeconds" Value="8" />
-    <opc:EnumeratedValue Name="FieldServerPicoSeconds" Value="16" />
-    <opc:EnumeratedValue Name="FieldRawDataEncoding" Value="32" />
-    <opc:EnumeratedValue Name="HeaderTimestamp" Value="65536" />
-    <opc:EnumeratedValue Name="HeaderPicoSeconds" Value="131072" />
-    <opc:EnumeratedValue Name="HeaderStatusCode" Value="262144" />
-    <opc:EnumeratedValue Name="HeaderMajorVersion" Value="524288" />
-    <opc:EnumeratedValue Name="HeaderMinorVersion" Value="1048576" />
-  </opc:EnumeratedType>
-
-  <opc:EnumeratedType Name="NetworkMessageContentMask" LengthInBits="32">
-    <opc:EnumeratedValue Name="PublisherId" Value="1" />
-    <opc:EnumeratedValue Name="GroupHeader" Value="2" />
-    <opc:EnumeratedValue Name="GroupId" Value="4" />
-    <opc:EnumeratedValue Name="GroupVersion" Value="8" />
-    <opc:EnumeratedValue Name="NetworkMessageNumber" Value="16" />
-    <opc:EnumeratedValue Name="SequenceNumber" Value="32" />
-    <opc:EnumeratedValue Name="PayloadHeader" Value="64" />
-    <opc:EnumeratedValue Name="Timestamp" Value="128" />
-    <opc:EnumeratedValue Name="Picoseconds" Value="256" />
-    <opc:EnumeratedValue Name="DataSetClassId" Value="512" />
-    <opc:EnumeratedValue Name="PromotedFields" Value="1024" />
-  </opc:EnumeratedType>
-
-  <opc:StructuredType Name="PublishedVariableDataType" BaseType="ua:ExtensionObject">
-    <opc:Field Name="PublishedVariable" TypeName="ua:NodeId" />
-    <opc:Field Name="AttributeId" TypeName="opc:UInt32" />
-    <opc:Field Name="SamplingIntervalHint" TypeName="opc:Double" />
-    <opc:Field Name="DeadbandType" TypeName="opc:UInt32" />
-    <opc:Field Name="DeadbandValue" TypeName="opc:Double" />
-    <opc:Field Name="IndexRange" TypeName="opc:String" />
-    <opc:Field Name="SubstituteValue" TypeName="ua:Variant" />
-    <opc:Field Name="NoOfMetaDataProperties" TypeName="opc:Int32" />
-    <opc:Field Name="MetaDataProperties" TypeName="ua:QualifiedName" LengthField="NoOfMetaDataProperties" />
-  </opc:StructuredType>
-
-  <opc:StructuredType Name="FieldTargetDataType" BaseType="ua:ExtensionObject">
-    <opc:Field Name="DataSetFieldId" TypeName="opc:Guid" />
-    <opc:Field Name="ReceiverIndexRange" TypeName="opc:String" />
-    <opc:Field Name="TargetNodeId" TypeName="ua:NodeId" />
-    <opc:Field Name="AttributeId" TypeName="opc:UInt32" />
-    <opc:Field Name="WriteIndexRange" TypeName="opc:String" />
-    <opc:Field Name="OverrideValueHandling" TypeName="tns:OverrideValueHandling" />
-    <opc:Field Name="OverrideValue" TypeName="ua:Variant" />
-  </opc:StructuredType>
-
-  <opc:EnumeratedType Name="OverrideValueHandling" LengthInBits="32">
-    <opc:EnumeratedValue Name="Disabled" Value="0" />
-    <opc:EnumeratedValue Name="LastUseableValue" Value="1" />
-    <opc:EnumeratedValue Name="OverrideValue" Value="2" />
-  </opc:EnumeratedType>
-
-  <opc:EnumeratedType Name="PubSubState" LengthInBits="32">
-    <opc:EnumeratedValue Name="Disabled" Value="0" />
-    <opc:EnumeratedValue Name="Paused" Value="1" />
-    <opc:EnumeratedValue Name="Operational" Value="2" />
-    <opc:EnumeratedValue Name="Error" Value="3" />
-  </opc:EnumeratedType>
-
-  <opc:EnumeratedType Name="DiagnosticsLevel" LengthInBits="32">
-    <opc:EnumeratedValue Name="Basic" Value="0" />
-    <opc:EnumeratedValue Name="Advanced" Value="1" />
-    <opc:EnumeratedValue Name="Info" Value="2" />
-    <opc:EnumeratedValue Name="Log" Value="3" />
-    <opc:EnumeratedValue Name="Debug" Value="4" />
-  </opc:EnumeratedType>
-
-  <opc:EnumeratedType Name="PubSubDiagnosticsCounterClassification" LengthInBits="32">
-    <opc:EnumeratedValue Name="Information" Value="0" />
-    <opc:EnumeratedValue Name="Error" Value="1" />
-  </opc:EnumeratedType>
-
-  <opc:EnumeratedType Name="DataSetOrderingType" LengthInBits="32">
-    <opc:EnumeratedValue Name="Undefined" Value="1" />
-    <opc:EnumeratedValue Name="AscendingWriterId" Value="2" />
-  </opc:EnumeratedType>
 
   <opc:EnumeratedType Name="IdType" LengthInBits="32">
     <opc:Documentation>The type of identifier used in a node id.</opc:Documentation>
