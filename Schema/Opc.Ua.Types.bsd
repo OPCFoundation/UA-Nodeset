@@ -248,6 +248,13 @@
     <opc:Field Name="Value" TypeName="ua:Variant" />
   </opc:StructuredType>
 
+  <opc:StructuredType Name="EndpointType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="EndpointUrl" TypeName="opc:String" />
+    <opc:Field Name="SecurityMode" TypeName="tns:MessageSecurityMode" />
+    <opc:Field Name="SecurityPolicyUri" TypeName="opc:String" />
+    <opc:Field Name="TransportProfileUri" TypeName="opc:String" />
+  </opc:StructuredType>
+
   <opc:EnumeratedType Name="OpenFileMode" LengthInBits="32">
     <opc:EnumeratedValue Name="Read" Value="1" />
     <opc:EnumeratedValue Name="Write" Value="2" />
@@ -258,7 +265,7 @@
   <opc:EnumeratedType Name="IdentityCriteriaType" LengthInBits="32">
     <opc:EnumeratedValue Name="UserName" Value="1" />
     <opc:EnumeratedValue Name="Thumbprint" Value="2" />
-    <opc:EnumeratedValue Name="Scope" Value="3" />
+    <opc:EnumeratedValue Name="Role" Value="3" />
     <opc:EnumeratedValue Name="GroupId" Value="4" />
     <opc:EnumeratedValue Name="Anonymous" Value="5" />
     <opc:EnumeratedValue Name="AuthenticatedUser" Value="6" />
@@ -293,23 +300,6 @@
   <opc:StructuredType Name="DecimalDataType" BaseType="ua:ExtensionObject">
     <opc:Field Name="Scale" TypeName="opc:Int16" />
     <opc:Field Name="Value" TypeName="opc:ByteString" />
-  </opc:StructuredType>
-
-  <opc:StructuredType Name="DataTypeDescription" BaseType="ua:ExtensionObject">
-    <opc:Field Name="DataTypeId" TypeName="ua:NodeId" />
-    <opc:Field Name="Name" TypeName="ua:QualifiedName" />
-  </opc:StructuredType>
-
-  <opc:StructuredType Name="StructureDescription" BaseType="tns:DataTypeDescription">
-    <opc:Field Name="DataTypeId" TypeName="ua:NodeId" SourceType="tns:DataTypeDescription" />
-    <opc:Field Name="Name" TypeName="ua:QualifiedName" SourceType="tns:DataTypeDescription" />
-    <opc:Field Name="StructureDefinition" TypeName="tns:StructureDefinition" />
-  </opc:StructuredType>
-
-  <opc:StructuredType Name="EnumDescription" BaseType="tns:DataTypeDescription">
-    <opc:Field Name="DataTypeId" TypeName="ua:NodeId" SourceType="tns:DataTypeDescription" />
-    <opc:Field Name="Name" TypeName="ua:QualifiedName" SourceType="tns:DataTypeDescription" />
-    <opc:Field Name="EnumDefinition" TypeName="tns:EnumDefinition" />
   </opc:StructuredType>
 
   <opc:EnumeratedType Name="IdType" LengthInBits="32">

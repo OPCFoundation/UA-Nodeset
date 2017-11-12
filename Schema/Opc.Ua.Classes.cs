@@ -32328,7 +32328,8 @@ namespace Opc.Ua
            "Af////8AAAAA";
 
         private const string Endpoints_InitializationString =
-           "//////////8VYIkKAgAAAAAACQAAAEVuZHBvaW50cwEALz8ALgBELz8AAAAMAQAAAAEB/////wAAAAA=";
+           "//////////8VYIkKAgAAAAAACQAAAEVuZHBvaW50cwEALz8ALgBELz8AAAEAqDwBAAAAAQH/////AAAA" +
+           "AA==";
 
         private const string EndpointsExclude_InitializationString =
            "//////////8VYIkKAgAAAAAAEAAAAEVuZHBvaW50c0V4Y2x1ZGUBADM8AC4ARDM8AAAAAf////8BAf//" +
@@ -32369,23 +32370,23 @@ namespace Opc.Ua
            "AAAAAAoAAABJZGVudGl0aWVzAQAtPwAuAEQtPwAAAQASPQEAAAABAf////8AAAAAFWCJCgIAAAAAAAwA" +
            "AABBcHBsaWNhdGlvbnMBAC4/AC4ARC4/AAAADAEAAAABAf////8AAAAAFWCJCgIAAAAAABMAAABBcHBs" +
            "aWNhdGlvbnNFeGNsdWRlAQAyPAAuAEQyPAAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAJAAAARW5k" +
-           "cG9pbnRzAQAvPwAuAEQvPwAAAAwBAAAAAQH/////AAAAABVgiQoCAAAAAAAQAAAARW5kcG9pbnRzRXhj" +
-           "bHVkZQEAMzwALgBEMzwAAAAB/////wEB/////wAAAAAEYYIKBAAAAAAACwAAAEFkZElkZW50aXR5AQAI" +
-           "PQAvAQAIPQg9AAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEACT0ALgBECT0A" +
-           "AJYBAAAAAQAqAQEaAAAACQAAAFJ1bGVUb0FkZAEAEj3/////AAAAAAABACgBAQAAAAEB/////wAAAAAE" +
-           "YYIKBAAAAAAADgAAAFJlbW92ZUlkZW50aXR5AQAKPQAvAQAKPQo9AAABAf////8BAAAAFWCpCgIAAAAA" +
-           "AA4AAABJbnB1dEFyZ3VtZW50cwEACz0ALgBECz0AAJYBAAAAAQAqAQEdAAAADAAAAFJ1bGVUb1JlbW92" +
-           "ZQEAEj3/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAAADgAAAEFkZEFwcGxpY2F0aW9u" +
-           "AQAwPwAvAQAwPzA/AAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAMT8ALgBE" +
-           "MT8AAJYBAAAAAQAqAQEYAAAACQAAAFJ1bGVUb0FkZAAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAA" +
-           "BGGCCgQAAAAAABEAAABSZW1vdmVBcHBsaWNhdGlvbgEAMj8ALwEAMj8yPwAAAQH/////AQAAABVgqQoC" +
-           "AAAAAAAOAAAASW5wdXRBcmd1bWVudHMBADM/AC4ARDM/AACWAQAAAAEAKgEBGwAAAAwAAABSdWxlVG9S" +
-           "ZW1vdmUADP////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAAALAAAAQWRkRW5kcG9pbnQB" +
-           "ADQ/AC8BADQ/ND8AAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQA1PwAuAEQ1" +
-           "PwAAlgEAAAABACoBARgAAAAJAAAAUnVsZVRvQWRkAAz/////AAAAAAABACgBAQAAAAEB/////wAAAAAE" +
-           "YYIKBAAAAAAADgAAAFJlbW92ZUVuZHBvaW50AQA2PwAvAQA2PzY/AAABAf////8BAAAAFWCpCgIAAAAA" +
-           "AA4AAABJbnB1dEFyZ3VtZW50cwEANz8ALgBENz8AAJYBAAAAAQAqAQEbAAAADAAAAFJ1bGVUb1JlbW92" +
-           "ZQAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
+           "cG9pbnRzAQAvPwAuAEQvPwAAAQCoPAEAAAABAf////8AAAAAFWCJCgIAAAAAABAAAABFbmRwb2ludHNF" +
+           "eGNsdWRlAQAzPAAuAEQzPAAAAAH/////AQH/////AAAAAARhggoEAAAAAAALAAAAQWRkSWRlbnRpdHkB" +
+           "AAg9AC8BAAg9CD0AAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQAJPQAuAEQJ" +
+           "PQAAlgEAAAABACoBARoAAAAJAAAAUnVsZVRvQWRkAQASPf////8AAAAAAAEAKAEBAAAAAQH/////AAAA" +
+           "AARhggoEAAAAAAAOAAAAUmVtb3ZlSWRlbnRpdHkBAAo9AC8BAAo9Cj0AAAEB/////wEAAAAVYKkKAgAA" +
+           "AAAADgAAAElucHV0QXJndW1lbnRzAQALPQAuAEQLPQAAlgEAAAABACoBAR0AAAAMAAAAUnVsZVRvUmVt" +
+           "b3ZlAQASPf////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAAAOAAAAQWRkQXBwbGljYXRp" +
+           "b24BADA/AC8BADA/MD8AAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQAxPwAu" +
+           "AEQxPwAAlgEAAAABACoBARgAAAAJAAAAUnVsZVRvQWRkAAz/////AAAAAAABACgBAQAAAAEB/////wAA" +
+           "AAAEYYIKBAAAAAAAEQAAAFJlbW92ZUFwcGxpY2F0aW9uAQAyPwAvAQAyPzI/AAABAf////8BAAAAFWCp" +
+           "CgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAMz8ALgBEMz8AAJYBAAAAAQAqAQEbAAAADAAAAFJ1bGVU" +
+           "b1JlbW92ZQAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAAAAAsAAABBZGRFbmRwb2lu" +
+           "dAEAND8ALwEAND80PwAAAQH/////AQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBADU/AC4A" +
+           "RDU/AACWAQAAAAEAKgEBGAAAAAkAAABSdWxlVG9BZGQADP////8AAAAAAAEAKAEBAAAAAQH/////AAAA" +
+           "AARhggoEAAAAAAAOAAAAUmVtb3ZlRW5kcG9pbnQBADY/AC8BADY/Nj8AAAEB/////wEAAAAVYKkKAgAA" +
+           "AAAADgAAAElucHV0QXJndW1lbnRzAQA3PwAuAEQ3PwAAlgEAAAABACoBARsAAAAMAAAAUnVsZVRvUmVt" +
+           "b3ZlAAz/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -32457,7 +32458,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the Endpoints Property.
         /// </summary>
-        public PropertyState<string[]> Endpoints
+        public PropertyState<EndpointType[]> Endpoints
         {
             get
             {
@@ -32780,11 +32781,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                Endpoints = new PropertyState<string[]>(this);
+                                Endpoints = new PropertyState<EndpointType[]>(this);
                             }
                             else
                             {
-                                Endpoints = (PropertyState<string[]>)replacement;
+                                Endpoints = (PropertyState<EndpointType[]>)replacement;
                             }
                         }
                     }
@@ -32954,7 +32955,7 @@ namespace Opc.Ua
         private PropertyState<IdentityMappingRuleType[]> m_identities;
         private PropertyState<string[]> m_applications;
         private PropertyState<bool> m_applicationsExclude;
-        private PropertyState<string[]> m_endpoints;
+        private PropertyState<EndpointType[]> m_endpoints;
         private PropertyState<bool> m_endpointsExclude;
         private AddIdentityMethodState m_addIdentityMethod;
         private RemoveIdentityMethodState m_removeIdentityMethod;

@@ -240,6 +240,11 @@ namespace Opc.Ua
         public const uint KeyValuePair = 14533;
 
         /// <summary>
+        /// The identifier for the EndpointType DataType.
+        /// </summary>
+        public const uint EndpointType = 15528;
+
+        /// <summary>
         /// The identifier for the OpenFileMode DataType.
         /// </summary>
         public const uint OpenFileMode = 11939;
@@ -268,21 +273,6 @@ namespace Opc.Ua
         /// The identifier for the DecimalDataType DataType.
         /// </summary>
         public const uint DecimalDataType = 17861;
-
-        /// <summary>
-        /// The identifier for the DataTypeDescription DataType.
-        /// </summary>
-        public const uint DataTypeDescription = 14525;
-
-        /// <summary>
-        /// The identifier for the StructureDescription DataType.
-        /// </summary>
-        public const uint StructureDescription = 15487;
-
-        /// <summary>
-        /// The identifier for the EnumDescription DataType.
-        /// </summary>
-        public const uint EnumDescription = 15488;
 
         /// <summary>
         /// The identifier for the IdType DataType.
@@ -3895,6 +3885,11 @@ namespace Opc.Ua
         public const uint KeyValuePair_Encoding_DefaultBinary = 14846;
 
         /// <summary>
+        /// The identifier for the EndpointType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint EndpointType_Encoding_DefaultBinary = 15671;
+
+        /// <summary>
         /// The identifier for the IdentityMappingRuleType_Encoding_DefaultBinary Object.
         /// </summary>
         public const uint IdentityMappingRuleType_Encoding_DefaultBinary = 15736;
@@ -3908,21 +3903,6 @@ namespace Opc.Ua
         /// The identifier for the DecimalDataType_Encoding_DefaultBinary Object.
         /// </summary>
         public const uint DecimalDataType_Encoding_DefaultBinary = 17863;
-
-        /// <summary>
-        /// The identifier for the DataTypeDescription_Encoding_DefaultBinary Object.
-        /// </summary>
-        public const uint DataTypeDescription_Encoding_DefaultBinary = 125;
-
-        /// <summary>
-        /// The identifier for the StructureDescription_Encoding_DefaultBinary Object.
-        /// </summary>
-        public const uint StructureDescription_Encoding_DefaultBinary = 126;
-
-        /// <summary>
-        /// The identifier for the EnumDescription_Encoding_DefaultBinary Object.
-        /// </summary>
-        public const uint EnumDescription_Encoding_DefaultBinary = 127;
 
         /// <summary>
         /// The identifier for the RolePermissionType_Encoding_DefaultBinary Object.
@@ -5080,6 +5060,11 @@ namespace Opc.Ua
         public const uint KeyValuePair_Encoding_DefaultXml = 14802;
 
         /// <summary>
+        /// The identifier for the EndpointType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint EndpointType_Encoding_DefaultXml = 15949;
+
+        /// <summary>
         /// The identifier for the IdentityMappingRuleType_Encoding_DefaultXml Object.
         /// </summary>
         public const uint IdentityMappingRuleType_Encoding_DefaultXml = 15728;
@@ -5093,21 +5078,6 @@ namespace Opc.Ua
         /// The identifier for the DecimalDataType_Encoding_DefaultXml Object.
         /// </summary>
         public const uint DecimalDataType_Encoding_DefaultXml = 17862;
-
-        /// <summary>
-        /// The identifier for the DataTypeDescription_Encoding_DefaultXml Object.
-        /// </summary>
-        public const uint DataTypeDescription_Encoding_DefaultXml = 14796;
-
-        /// <summary>
-        /// The identifier for the StructureDescription_Encoding_DefaultXml Object.
-        /// </summary>
-        public const uint StructureDescription_Encoding_DefaultXml = 15589;
-
-        /// <summary>
-        /// The identifier for the EnumDescription_Encoding_DefaultXml Object.
-        /// </summary>
-        public const uint EnumDescription_Encoding_DefaultXml = 15590;
 
         /// <summary>
         /// The identifier for the RolePermissionType_Encoding_DefaultXml Object.
@@ -6265,6 +6235,11 @@ namespace Opc.Ua
         public const uint KeyValuePair_Encoding_DefaultJson = 15041;
 
         /// <summary>
+        /// The identifier for the EndpointType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint EndpointType_Encoding_DefaultJson = 16150;
+
+        /// <summary>
         /// The identifier for the IdentityMappingRuleType_Encoding_DefaultJson Object.
         /// </summary>
         public const uint IdentityMappingRuleType_Encoding_DefaultJson = 15042;
@@ -6278,21 +6253,6 @@ namespace Opc.Ua
         /// The identifier for the DecimalDataType_Encoding_DefaultJson Object.
         /// </summary>
         public const uint DecimalDataType_Encoding_DefaultJson = 15045;
-
-        /// <summary>
-        /// The identifier for the DataTypeDescription_Encoding_DefaultJson Object.
-        /// </summary>
-        public const uint DataTypeDescription_Encoding_DefaultJson = 15057;
-
-        /// <summary>
-        /// The identifier for the StructureDescription_Encoding_DefaultJson Object.
-        /// </summary>
-        public const uint StructureDescription_Encoding_DefaultJson = 15058;
-
-        /// <summary>
-        /// The identifier for the EnumDescription_Encoding_DefaultJson Object.
-        /// </summary>
-        public const uint EnumDescription_Encoding_DefaultJson = 15059;
 
         /// <summary>
         /// The identifier for the RolePermissionType_Encoding_DefaultJson Object.
@@ -18255,6 +18215,11 @@ namespace Opc.Ua
         public const uint OpcUa_BinarySchema_KeyValuePair = 14873;
 
         /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_EndpointType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_EndpointType = 15734;
+
+        /// <summary>
         /// The identifier for the OpcUa_BinarySchema_IdentityMappingRuleType Variable.
         /// </summary>
         public const uint OpcUa_BinarySchema_IdentityMappingRuleType = 15738;
@@ -18263,21 +18228,6 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_BinarySchema_TrustListDataType Variable.
         /// </summary>
         public const uint OpcUa_BinarySchema_TrustListDataType = 12681;
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_DataTypeDescription Variable.
-        /// </summary>
-        public const uint OpcUa_BinarySchema_DataTypeDescription = 14855;
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_StructureDescription Variable.
-        /// </summary>
-        public const uint OpcUa_BinarySchema_StructureDescription = 15599;
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_EnumDescription Variable.
-        /// </summary>
-        public const uint OpcUa_BinarySchema_EnumDescription = 15602;
 
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_RolePermissionType Variable.
@@ -18630,6 +18580,11 @@ namespace Opc.Ua
         public const uint OpcUa_XmlSchema_KeyValuePair = 14829;
 
         /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EndpointType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_EndpointType = 16024;
+
+        /// <summary>
         /// The identifier for the OpcUa_XmlSchema_IdentityMappingRuleType Variable.
         /// </summary>
         public const uint OpcUa_XmlSchema_IdentityMappingRuleType = 15730;
@@ -18638,21 +18593,6 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_XmlSchema_TrustListDataType Variable.
         /// </summary>
         public const uint OpcUa_XmlSchema_TrustListDataType = 12677;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_DataTypeDescription Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_DataTypeDescription = 14811;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_StructureDescription Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_StructureDescription = 15591;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EnumDescription Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_EnumDescription = 15594;
 
         /// <summary>
         /// The identifier for the OpcUa_XmlSchema_RolePermissionType Variable.
@@ -19405,6 +19345,11 @@ namespace Opc.Ua
         public static readonly NodeId KeyValuePair = new NodeId(Opc.Ua.DataTypes.KeyValuePair);
 
         /// <summary>
+        /// The identifier for the EndpointType DataType.
+        /// </summary>
+        public static readonly NodeId EndpointType = new NodeId(Opc.Ua.DataTypes.EndpointType);
+
+        /// <summary>
         /// The identifier for the OpenFileMode DataType.
         /// </summary>
         public static readonly NodeId OpenFileMode = new NodeId(Opc.Ua.DataTypes.OpenFileMode);
@@ -19433,21 +19378,6 @@ namespace Opc.Ua
         /// The identifier for the DecimalDataType DataType.
         /// </summary>
         public static readonly NodeId DecimalDataType = new NodeId(Opc.Ua.DataTypes.DecimalDataType);
-
-        /// <summary>
-        /// The identifier for the DataTypeDescription DataType.
-        /// </summary>
-        public static readonly NodeId DataTypeDescription = new NodeId(Opc.Ua.DataTypes.DataTypeDescription);
-
-        /// <summary>
-        /// The identifier for the StructureDescription DataType.
-        /// </summary>
-        public static readonly NodeId StructureDescription = new NodeId(Opc.Ua.DataTypes.StructureDescription);
-
-        /// <summary>
-        /// The identifier for the EnumDescription DataType.
-        /// </summary>
-        public static readonly NodeId EnumDescription = new NodeId(Opc.Ua.DataTypes.EnumDescription);
 
         /// <summary>
         /// The identifier for the IdType DataType.
@@ -23060,6 +22990,11 @@ namespace Opc.Ua
         public static readonly NodeId KeyValuePair_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.KeyValuePair_Encoding_DefaultBinary);
 
         /// <summary>
+        /// The identifier for the EndpointType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId EndpointType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EndpointType_Encoding_DefaultBinary);
+
+        /// <summary>
         /// The identifier for the IdentityMappingRuleType_Encoding_DefaultBinary Object.
         /// </summary>
         public static readonly NodeId IdentityMappingRuleType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.IdentityMappingRuleType_Encoding_DefaultBinary);
@@ -23073,21 +23008,6 @@ namespace Opc.Ua
         /// The identifier for the DecimalDataType_Encoding_DefaultBinary Object.
         /// </summary>
         public static readonly NodeId DecimalDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DecimalDataType_Encoding_DefaultBinary);
-
-        /// <summary>
-        /// The identifier for the DataTypeDescription_Encoding_DefaultBinary Object.
-        /// </summary>
-        public static readonly NodeId DataTypeDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataTypeDescription_Encoding_DefaultBinary);
-
-        /// <summary>
-        /// The identifier for the StructureDescription_Encoding_DefaultBinary Object.
-        /// </summary>
-        public static readonly NodeId StructureDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.StructureDescription_Encoding_DefaultBinary);
-
-        /// <summary>
-        /// The identifier for the EnumDescription_Encoding_DefaultBinary Object.
-        /// </summary>
-        public static readonly NodeId EnumDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EnumDescription_Encoding_DefaultBinary);
 
         /// <summary>
         /// The identifier for the RolePermissionType_Encoding_DefaultBinary Object.
@@ -24245,6 +24165,11 @@ namespace Opc.Ua
         public static readonly NodeId KeyValuePair_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.KeyValuePair_Encoding_DefaultXml);
 
         /// <summary>
+        /// The identifier for the EndpointType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId EndpointType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.EndpointType_Encoding_DefaultXml);
+
+        /// <summary>
         /// The identifier for the IdentityMappingRuleType_Encoding_DefaultXml Object.
         /// </summary>
         public static readonly NodeId IdentityMappingRuleType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.IdentityMappingRuleType_Encoding_DefaultXml);
@@ -24258,21 +24183,6 @@ namespace Opc.Ua
         /// The identifier for the DecimalDataType_Encoding_DefaultXml Object.
         /// </summary>
         public static readonly NodeId DecimalDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.DecimalDataType_Encoding_DefaultXml);
-
-        /// <summary>
-        /// The identifier for the DataTypeDescription_Encoding_DefaultXml Object.
-        /// </summary>
-        public static readonly NodeId DataTypeDescription_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.DataTypeDescription_Encoding_DefaultXml);
-
-        /// <summary>
-        /// The identifier for the StructureDescription_Encoding_DefaultXml Object.
-        /// </summary>
-        public static readonly NodeId StructureDescription_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.StructureDescription_Encoding_DefaultXml);
-
-        /// <summary>
-        /// The identifier for the EnumDescription_Encoding_DefaultXml Object.
-        /// </summary>
-        public static readonly NodeId EnumDescription_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.EnumDescription_Encoding_DefaultXml);
 
         /// <summary>
         /// The identifier for the RolePermissionType_Encoding_DefaultXml Object.
@@ -25430,6 +25340,11 @@ namespace Opc.Ua
         public static readonly NodeId KeyValuePair_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.KeyValuePair_Encoding_DefaultJson);
 
         /// <summary>
+        /// The identifier for the EndpointType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId EndpointType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.EndpointType_Encoding_DefaultJson);
+
+        /// <summary>
         /// The identifier for the IdentityMappingRuleType_Encoding_DefaultJson Object.
         /// </summary>
         public static readonly NodeId IdentityMappingRuleType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.IdentityMappingRuleType_Encoding_DefaultJson);
@@ -25443,21 +25358,6 @@ namespace Opc.Ua
         /// The identifier for the DecimalDataType_Encoding_DefaultJson Object.
         /// </summary>
         public static readonly NodeId DecimalDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DecimalDataType_Encoding_DefaultJson);
-
-        /// <summary>
-        /// The identifier for the DataTypeDescription_Encoding_DefaultJson Object.
-        /// </summary>
-        public static readonly NodeId DataTypeDescription_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DataTypeDescription_Encoding_DefaultJson);
-
-        /// <summary>
-        /// The identifier for the StructureDescription_Encoding_DefaultJson Object.
-        /// </summary>
-        public static readonly NodeId StructureDescription_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.StructureDescription_Encoding_DefaultJson);
-
-        /// <summary>
-        /// The identifier for the EnumDescription_Encoding_DefaultJson Object.
-        /// </summary>
-        public static readonly NodeId EnumDescription_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.EnumDescription_Encoding_DefaultJson);
 
         /// <summary>
         /// The identifier for the RolePermissionType_Encoding_DefaultJson Object.
@@ -37420,6 +37320,11 @@ namespace Opc.Ua
         public static readonly NodeId OpcUa_BinarySchema_KeyValuePair = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_KeyValuePair);
 
         /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_EndpointType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_EndpointType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_EndpointType);
+
+        /// <summary>
         /// The identifier for the OpcUa_BinarySchema_IdentityMappingRuleType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_BinarySchema_IdentityMappingRuleType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_IdentityMappingRuleType);
@@ -37428,21 +37333,6 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_BinarySchema_TrustListDataType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_BinarySchema_TrustListDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_TrustListDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_DataTypeDescription Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_BinarySchema_DataTypeDescription = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_DataTypeDescription);
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_StructureDescription Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_BinarySchema_StructureDescription = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_StructureDescription);
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_EnumDescription Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_BinarySchema_EnumDescription = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_EnumDescription);
 
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_RolePermissionType Variable.
@@ -37795,6 +37685,11 @@ namespace Opc.Ua
         public static readonly NodeId OpcUa_XmlSchema_KeyValuePair = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_KeyValuePair);
 
         /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EndpointType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_EndpointType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EndpointType);
+
+        /// <summary>
         /// The identifier for the OpcUa_XmlSchema_IdentityMappingRuleType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_XmlSchema_IdentityMappingRuleType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_IdentityMappingRuleType);
@@ -37803,21 +37698,6 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_XmlSchema_TrustListDataType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_XmlSchema_TrustListDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_TrustListDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_DataTypeDescription Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_DataTypeDescription = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DataTypeDescription);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_StructureDescription Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_StructureDescription = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_StructureDescription);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_EnumDescription Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_EnumDescription = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EnumDescription);
 
         /// <summary>
         /// The identifier for the OpcUa_XmlSchema_RolePermissionType Variable.
@@ -39839,11 +39719,6 @@ namespace Opc.Ua
         public const string DataTypeDefinition = "DataTypeDefinition";
 
         /// <summary>
-        /// The BrowseName for the DataTypeDescription component.
-        /// </summary>
-        public const string DataTypeDescription = "DataTypeDescription";
-
-        /// <summary>
         /// The BrowseName for the DataTypeDescriptionType component.
         /// </summary>
         public const string DataTypeDescriptionType = "DataTypeDescriptionType";
@@ -40249,6 +40124,11 @@ namespace Opc.Ua
         public const string EndpointsExclude = "EndpointsExclude";
 
         /// <summary>
+        /// The BrowseName for the EndpointType component.
+        /// </summary>
+        public const string EndpointType = "EndpointType";
+
+        /// <summary>
         /// The BrowseName for the EndpointUrl component.
         /// </summary>
         public const string EndpointUrl = "EndpointUrl";
@@ -40277,11 +40157,6 @@ namespace Opc.Ua
         /// The BrowseName for the EnumDefinition component.
         /// </summary>
         public const string EnumDefinition = "EnumDefinition";
-
-        /// <summary>
-        /// The BrowseName for the EnumDescription component.
-        /// </summary>
-        public const string EnumDescription = "EnumDescription";
 
         /// <summary>
         /// The BrowseName for the Enumeration component.
@@ -43382,11 +43257,6 @@ namespace Opc.Ua
         /// The BrowseName for the StructureDefinition component.
         /// </summary>
         public const string StructureDefinition = "StructureDefinition";
-
-        /// <summary>
-        /// The BrowseName for the StructureDescription component.
-        /// </summary>
-        public const string StructureDescription = "StructureDescription";
 
         /// <summary>
         /// The BrowseName for the StructureField component.

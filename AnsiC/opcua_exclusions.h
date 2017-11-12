@@ -78,12 +78,10 @@
 * DataType Exclusions
  *===========================================================================*/
 /* #define OPCUA_EXCLUDE_KeyValuePair */
+/* #define OPCUA_EXCLUDE_EndpointType */
 /* #define OPCUA_EXCLUDE_IdentityMappingRuleType */
 /* #define OPCUA_EXCLUDE_TrustListDataType */
 /* #define OPCUA_EXCLUDE_DecimalDataType */
-/* #define OPCUA_EXCLUDE_DataTypeDescription */
-/* #define OPCUA_EXCLUDE_StructureDescription */
-/* #define OPCUA_EXCLUDE_EnumDescription */
 /* #define OPCUA_EXCLUDE_RolePermissionType */
 /* #define OPCUA_EXCLUDE_DataTypeDefinition */
 /* #define OPCUA_EXCLUDE_StructureField */
