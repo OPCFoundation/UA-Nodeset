@@ -240,6 +240,11 @@ namespace Opc.Ua
         public const uint KeyValuePair = 14533;
 
         /// <summary>
+        /// The identifier for the EndpointType DataType.
+        /// </summary>
+        public const uint EndpointType = 15528;
+
+        /// <summary>
         /// The identifier for the OpenFileMode DataType.
         /// </summary>
         public const uint OpenFileMode = 11939;
@@ -270,24 +275,9 @@ namespace Opc.Ua
         public const uint DecimalDataType = 17861;
 
         /// <summary>
-        /// The identifier for the ConfigurationVersionDataType DataType.
+        /// The identifier for the DataTypeSchemaHeader DataType.
         /// </summary>
-        public const uint ConfigurationVersionDataType = 14593;
-
-        /// <summary>
-        /// The identifier for the DataSetMetaDataType DataType.
-        /// </summary>
-        public const uint DataSetMetaDataType = 14523;
-
-        /// <summary>
-        /// The identifier for the DataSetFieldFlags DataType.
-        /// </summary>
-        public const uint DataSetFieldFlags = 15904;
-
-        /// <summary>
-        /// The identifier for the FieldMetaData DataType.
-        /// </summary>
-        public const uint FieldMetaData = 14524;
+        public const uint DataTypeSchemaHeader = 15534;
 
         /// <summary>
         /// The identifier for the DataTypeDescription DataType.
@@ -305,19 +295,144 @@ namespace Opc.Ua
         public const uint EnumDescription = 15488;
 
         /// <summary>
-        /// The identifier for the DataSetMessageContentMask DataType.
+        /// The identifier for the PubSubState DataType.
         /// </summary>
-        public const uint DataSetMessageContentMask = 15532;
+        public const uint PubSubState = 14647;
 
         /// <summary>
-        /// The identifier for the NetworkMessageContentMask DataType.
+        /// The identifier for the DataSetMetaDataType DataType.
         /// </summary>
-        public const uint NetworkMessageContentMask = 17290;
+        public const uint DataSetMetaDataType = 14523;
+
+        /// <summary>
+        /// The identifier for the FieldMetaData DataType.
+        /// </summary>
+        public const uint FieldMetaData = 14524;
+
+        /// <summary>
+        /// The identifier for the DataSetFieldFlags DataType.
+        /// </summary>
+        public const uint DataSetFieldFlags = 15904;
+
+        /// <summary>
+        /// The identifier for the ConfigurationVersionDataType DataType.
+        /// </summary>
+        public const uint ConfigurationVersionDataType = 14593;
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetDataType DataType.
+        /// </summary>
+        public const uint PublishedDataSetDataType = 15578;
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetSourceDataType DataType.
+        /// </summary>
+        public const uint PublishedDataSetSourceDataType = 15580;
 
         /// <summary>
         /// The identifier for the PublishedVariableDataType DataType.
         /// </summary>
         public const uint PublishedVariableDataType = 14273;
+
+        /// <summary>
+        /// The identifier for the PublishedDataItemsDataType DataType.
+        /// </summary>
+        public const uint PublishedDataItemsDataType = 15581;
+
+        /// <summary>
+        /// The identifier for the PublishedEventsDataType DataType.
+        /// </summary>
+        public const uint PublishedEventsDataType = 15582;
+
+        /// <summary>
+        /// The identifier for the DataSetFieldContentMask DataType.
+        /// </summary>
+        public const uint DataSetFieldContentMask = 15583;
+
+        /// <summary>
+        /// The identifier for the DataSetWriterDataType DataType.
+        /// </summary>
+        public const uint DataSetWriterDataType = 15597;
+
+        /// <summary>
+        /// The identifier for the DataSetWriterTransportDataType DataType.
+        /// </summary>
+        public const uint DataSetWriterTransportDataType = 15598;
+
+        /// <summary>
+        /// The identifier for the DataSetWriterMessageDataType DataType.
+        /// </summary>
+        public const uint DataSetWriterMessageDataType = 15605;
+
+        /// <summary>
+        /// The identifier for the PubSubGroupDataType DataType.
+        /// </summary>
+        public const uint PubSubGroupDataType = 15609;
+
+        /// <summary>
+        /// The identifier for the PubSubWriterGroupDataType DataType.
+        /// </summary>
+        public const uint PubSubWriterGroupDataType = 15610;
+
+        /// <summary>
+        /// The identifier for the WriterGroupTransportDataType DataType.
+        /// </summary>
+        public const uint WriterGroupTransportDataType = 15611;
+
+        /// <summary>
+        /// The identifier for the WriterGroupMessageDataType DataType.
+        /// </summary>
+        public const uint WriterGroupMessageDataType = 15616;
+
+        /// <summary>
+        /// The identifier for the PubSubConnectionDataType DataType.
+        /// </summary>
+        public const uint PubSubConnectionDataType = 15617;
+
+        /// <summary>
+        /// The identifier for the ConnectionTransportDataType DataType.
+        /// </summary>
+        public const uint ConnectionTransportDataType = 15618;
+
+        /// <summary>
+        /// The identifier for the PubSubReaderGroupDataType DataType.
+        /// </summary>
+        public const uint PubSubReaderGroupDataType = 15619;
+
+        /// <summary>
+        /// The identifier for the ReaderGroupTransportDataType DataType.
+        /// </summary>
+        public const uint ReaderGroupTransportDataType = 15621;
+
+        /// <summary>
+        /// The identifier for the ReaderGroupMessageDataType DataType.
+        /// </summary>
+        public const uint ReaderGroupMessageDataType = 15622;
+
+        /// <summary>
+        /// The identifier for the DataSetReaderDataType DataType.
+        /// </summary>
+        public const uint DataSetReaderDataType = 15623;
+
+        /// <summary>
+        /// The identifier for the DataSetReaderTransportDataType DataType.
+        /// </summary>
+        public const uint DataSetReaderTransportDataType = 15628;
+
+        /// <summary>
+        /// The identifier for the DataSetReaderMessageDataType DataType.
+        /// </summary>
+        public const uint DataSetReaderMessageDataType = 15629;
+
+        /// <summary>
+        /// The identifier for the SubscribedDataSetDataType DataType.
+        /// </summary>
+        public const uint SubscribedDataSetDataType = 15630;
+
+        /// <summary>
+        /// The identifier for the TargetVariablesDataType DataType.
+        /// </summary>
+        public const uint TargetVariablesDataType = 15631;
 
         /// <summary>
         /// The identifier for the FieldTargetDataType DataType.
@@ -330,9 +445,89 @@ namespace Opc.Ua
         public const uint OverrideValueHandling = 15874;
 
         /// <summary>
-        /// The identifier for the PubSubState DataType.
+        /// The identifier for the SubscribedDataSetMirrorDataType DataType.
         /// </summary>
-        public const uint PubSubState = 14647;
+        public const uint SubscribedDataSetMirrorDataType = 15635;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeDataType DataType.
+        /// </summary>
+        public const uint PublishSubscribeDataType = 15640;
+
+        /// <summary>
+        /// The identifier for the DataSetOrderingType DataType.
+        /// </summary>
+        public const uint DataSetOrderingType = 20408;
+
+        /// <summary>
+        /// The identifier for the UadpNetworkMessageContentMask DataType.
+        /// </summary>
+        public const uint UadpNetworkMessageContentMask = 15642;
+
+        /// <summary>
+        /// The identifier for the UadpWriterGroupMessageDataType DataType.
+        /// </summary>
+        public const uint UadpWriterGroupMessageDataType = 15645;
+
+        /// <summary>
+        /// The identifier for the UadpDataSetMessageContentMask DataType.
+        /// </summary>
+        public const uint UadpDataSetMessageContentMask = 15646;
+
+        /// <summary>
+        /// The identifier for the UadpDataSetWriterMessageDataType DataType.
+        /// </summary>
+        public const uint UadpDataSetWriterMessageDataType = 15652;
+
+        /// <summary>
+        /// The identifier for the UadpDataSetReaderMessageDataType DataType.
+        /// </summary>
+        public const uint UadpDataSetReaderMessageDataType = 15653;
+
+        /// <summary>
+        /// The identifier for the JsonNetworkMessageContentMask DataType.
+        /// </summary>
+        public const uint JsonNetworkMessageContentMask = 15654;
+
+        /// <summary>
+        /// The identifier for the JsonWriterGroupMessageDataType DataType.
+        /// </summary>
+        public const uint JsonWriterGroupMessageDataType = 15657;
+
+        /// <summary>
+        /// The identifier for the JsonDataSetMessageContentMask DataType.
+        /// </summary>
+        public const uint JsonDataSetMessageContentMask = 15658;
+
+        /// <summary>
+        /// The identifier for the JsonDataSetWriterMessageDataType DataType.
+        /// </summary>
+        public const uint JsonDataSetWriterMessageDataType = 15664;
+
+        /// <summary>
+        /// The identifier for the JsonDataSetReaderMessageDataType DataType.
+        /// </summary>
+        public const uint JsonDataSetReaderMessageDataType = 15665;
+
+        /// <summary>
+        /// The identifier for the UdpWriterGroupTransportDataType DataType.
+        /// </summary>
+        public const uint UdpWriterGroupTransportDataType = 15666;
+
+        /// <summary>
+        /// The identifier for the BrokerWriterGroupTransportDataType DataType.
+        /// </summary>
+        public const uint BrokerWriterGroupTransportDataType = 15667;
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetWriterTransportDataType DataType.
+        /// </summary>
+        public const uint BrokerDataSetWriterTransportDataType = 15669;
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetReaderTransportDataType DataType.
+        /// </summary>
+        public const uint BrokerDataSetReaderTransportDataType = 15670;
 
         /// <summary>
         /// The identifier for the DiagnosticsLevel DataType.
@@ -343,11 +538,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsCounterClassification DataType.
         /// </summary>
         public const uint PubSubDiagnosticsCounterClassification = 19730;
-
-        /// <summary>
-        /// The identifier for the DataSetOrderingType DataType.
-        /// </summary>
-        public const uint DataSetOrderingType = 20408;
 
         /// <summary>
         /// The identifier for the IdType DataType.
@@ -5105,6 +5295,11 @@ namespace Opc.Ua
         public const uint KeyValuePair_Encoding_DefaultBinary = 14846;
 
         /// <summary>
+        /// The identifier for the EndpointType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint EndpointType_Encoding_DefaultBinary = 15671;
+
+        /// <summary>
         /// The identifier for the IdentityMappingRuleType_Encoding_DefaultBinary Object.
         /// </summary>
         public const uint IdentityMappingRuleType_Encoding_DefaultBinary = 15736;
@@ -5120,19 +5315,9 @@ namespace Opc.Ua
         public const uint DecimalDataType_Encoding_DefaultBinary = 17863;
 
         /// <summary>
-        /// The identifier for the ConfigurationVersionDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the DataTypeSchemaHeader_Encoding_DefaultBinary Object.
         /// </summary>
-        public const uint ConfigurationVersionDataType_Encoding_DefaultBinary = 14847;
-
-        /// <summary>
-        /// The identifier for the DataSetMetaDataType_Encoding_DefaultBinary Object.
-        /// </summary>
-        public const uint DataSetMetaDataType_Encoding_DefaultBinary = 124;
-
-        /// <summary>
-        /// The identifier for the FieldMetaData_Encoding_DefaultBinary Object.
-        /// </summary>
-        public const uint FieldMetaData_Encoding_DefaultBinary = 14839;
+        public const uint DataTypeSchemaHeader_Encoding_DefaultBinary = 15676;
 
         /// <summary>
         /// The identifier for the DataTypeDescription_Encoding_DefaultBinary Object.
@@ -5150,14 +5335,194 @@ namespace Opc.Ua
         public const uint EnumDescription_Encoding_DefaultBinary = 127;
 
         /// <summary>
+        /// The identifier for the DataSetMetaDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DataSetMetaDataType_Encoding_DefaultBinary = 124;
+
+        /// <summary>
+        /// The identifier for the FieldMetaData_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint FieldMetaData_Encoding_DefaultBinary = 14839;
+
+        /// <summary>
+        /// The identifier for the ConfigurationVersionDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ConfigurationVersionDataType_Encoding_DefaultBinary = 14847;
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint PublishedDataSetDataType_Encoding_DefaultBinary = 15677;
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetSourceDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint PublishedDataSetSourceDataType_Encoding_DefaultBinary = 15678;
+
+        /// <summary>
         /// The identifier for the PublishedVariableDataType_Encoding_DefaultBinary Object.
         /// </summary>
         public const uint PublishedVariableDataType_Encoding_DefaultBinary = 14323;
 
         /// <summary>
+        /// The identifier for the PublishedDataItemsDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint PublishedDataItemsDataType_Encoding_DefaultBinary = 15679;
+
+        /// <summary>
+        /// The identifier for the PublishedEventsDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint PublishedEventsDataType_Encoding_DefaultBinary = 15681;
+
+        /// <summary>
+        /// The identifier for the DataSetWriterDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DataSetWriterDataType_Encoding_DefaultBinary = 15682;
+
+        /// <summary>
+        /// The identifier for the DataSetWriterTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DataSetWriterTransportDataType_Encoding_DefaultBinary = 15683;
+
+        /// <summary>
+        /// The identifier for the DataSetWriterMessageDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DataSetWriterMessageDataType_Encoding_DefaultBinary = 15688;
+
+        /// <summary>
+        /// The identifier for the PubSubGroupDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint PubSubGroupDataType_Encoding_DefaultBinary = 15689;
+
+        /// <summary>
+        /// The identifier for the PubSubWriterGroupDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint PubSubWriterGroupDataType_Encoding_DefaultBinary = 15690;
+
+        /// <summary>
+        /// The identifier for the WriterGroupTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint WriterGroupTransportDataType_Encoding_DefaultBinary = 15691;
+
+        /// <summary>
+        /// The identifier for the WriterGroupMessageDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint WriterGroupMessageDataType_Encoding_DefaultBinary = 15693;
+
+        /// <summary>
+        /// The identifier for the PubSubConnectionDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint PubSubConnectionDataType_Encoding_DefaultBinary = 15694;
+
+        /// <summary>
+        /// The identifier for the ConnectionTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ConnectionTransportDataType_Encoding_DefaultBinary = 15695;
+
+        /// <summary>
+        /// The identifier for the PubSubReaderGroupDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint PubSubReaderGroupDataType_Encoding_DefaultBinary = 15700;
+
+        /// <summary>
+        /// The identifier for the ReaderGroupTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ReaderGroupTransportDataType_Encoding_DefaultBinary = 15701;
+
+        /// <summary>
+        /// The identifier for the ReaderGroupMessageDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint ReaderGroupMessageDataType_Encoding_DefaultBinary = 15702;
+
+        /// <summary>
+        /// The identifier for the DataSetReaderDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DataSetReaderDataType_Encoding_DefaultBinary = 15703;
+
+        /// <summary>
+        /// The identifier for the DataSetReaderTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DataSetReaderTransportDataType_Encoding_DefaultBinary = 15705;
+
+        /// <summary>
+        /// The identifier for the DataSetReaderMessageDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DataSetReaderMessageDataType_Encoding_DefaultBinary = 15706;
+
+        /// <summary>
+        /// The identifier for the SubscribedDataSetDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint SubscribedDataSetDataType_Encoding_DefaultBinary = 15707;
+
+        /// <summary>
+        /// The identifier for the TargetVariablesDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint TargetVariablesDataType_Encoding_DefaultBinary = 15712;
+
+        /// <summary>
         /// The identifier for the FieldTargetDataType_Encoding_DefaultBinary Object.
         /// </summary>
         public const uint FieldTargetDataType_Encoding_DefaultBinary = 14848;
+
+        /// <summary>
+        /// The identifier for the SubscribedDataSetMirrorDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint SubscribedDataSetMirrorDataType_Encoding_DefaultBinary = 15713;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint PublishSubscribeDataType_Encoding_DefaultBinary = 15714;
+
+        /// <summary>
+        /// The identifier for the UadpWriterGroupMessageDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint UadpWriterGroupMessageDataType_Encoding_DefaultBinary = 15715;
+
+        /// <summary>
+        /// The identifier for the UadpDataSetWriterMessageDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint UadpDataSetWriterMessageDataType_Encoding_DefaultBinary = 15717;
+
+        /// <summary>
+        /// The identifier for the UadpDataSetReaderMessageDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint UadpDataSetReaderMessageDataType_Encoding_DefaultBinary = 15718;
+
+        /// <summary>
+        /// The identifier for the JsonWriterGroupMessageDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint JsonWriterGroupMessageDataType_Encoding_DefaultBinary = 15719;
+
+        /// <summary>
+        /// The identifier for the JsonDataSetWriterMessageDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint JsonDataSetWriterMessageDataType_Encoding_DefaultBinary = 15724;
+
+        /// <summary>
+        /// The identifier for the JsonDataSetReaderMessageDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint JsonDataSetReaderMessageDataType_Encoding_DefaultBinary = 15725;
+
+        /// <summary>
+        /// The identifier for the UdpWriterGroupTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint UdpWriterGroupTransportDataType_Encoding_DefaultBinary = 15726;
+
+        /// <summary>
+        /// The identifier for the BrokerWriterGroupTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint BrokerWriterGroupTransportDataType_Encoding_DefaultBinary = 15727;
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetWriterTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint BrokerDataSetWriterTransportDataType_Encoding_DefaultBinary = 15729;
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetReaderTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint BrokerDataSetReaderTransportDataType_Encoding_DefaultBinary = 15733;
 
         /// <summary>
         /// The identifier for the RolePermissionType_Encoding_DefaultBinary Object.
@@ -6315,6 +6680,11 @@ namespace Opc.Ua
         public const uint KeyValuePair_Encoding_DefaultXml = 14802;
 
         /// <summary>
+        /// The identifier for the EndpointType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint EndpointType_Encoding_DefaultXml = 15949;
+
+        /// <summary>
         /// The identifier for the IdentityMappingRuleType_Encoding_DefaultXml Object.
         /// </summary>
         public const uint IdentityMappingRuleType_Encoding_DefaultXml = 15728;
@@ -6330,19 +6700,9 @@ namespace Opc.Ua
         public const uint DecimalDataType_Encoding_DefaultXml = 17862;
 
         /// <summary>
-        /// The identifier for the ConfigurationVersionDataType_Encoding_DefaultXml Object.
+        /// The identifier for the DataTypeSchemaHeader_Encoding_DefaultXml Object.
         /// </summary>
-        public const uint ConfigurationVersionDataType_Encoding_DefaultXml = 14803;
-
-        /// <summary>
-        /// The identifier for the DataSetMetaDataType_Encoding_DefaultXml Object.
-        /// </summary>
-        public const uint DataSetMetaDataType_Encoding_DefaultXml = 14794;
-
-        /// <summary>
-        /// The identifier for the FieldMetaData_Encoding_DefaultXml Object.
-        /// </summary>
-        public const uint FieldMetaData_Encoding_DefaultXml = 14795;
+        public const uint DataTypeSchemaHeader_Encoding_DefaultXml = 15950;
 
         /// <summary>
         /// The identifier for the DataTypeDescription_Encoding_DefaultXml Object.
@@ -6360,14 +6720,194 @@ namespace Opc.Ua
         public const uint EnumDescription_Encoding_DefaultXml = 15590;
 
         /// <summary>
+        /// The identifier for the DataSetMetaDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint DataSetMetaDataType_Encoding_DefaultXml = 14794;
+
+        /// <summary>
+        /// The identifier for the FieldMetaData_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint FieldMetaData_Encoding_DefaultXml = 14795;
+
+        /// <summary>
+        /// The identifier for the ConfigurationVersionDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint ConfigurationVersionDataType_Encoding_DefaultXml = 14803;
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint PublishedDataSetDataType_Encoding_DefaultXml = 15951;
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetSourceDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint PublishedDataSetSourceDataType_Encoding_DefaultXml = 15952;
+
+        /// <summary>
         /// The identifier for the PublishedVariableDataType_Encoding_DefaultXml Object.
         /// </summary>
         public const uint PublishedVariableDataType_Encoding_DefaultXml = 14319;
 
         /// <summary>
+        /// The identifier for the PublishedDataItemsDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint PublishedDataItemsDataType_Encoding_DefaultXml = 15953;
+
+        /// <summary>
+        /// The identifier for the PublishedEventsDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint PublishedEventsDataType_Encoding_DefaultXml = 15954;
+
+        /// <summary>
+        /// The identifier for the DataSetWriterDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint DataSetWriterDataType_Encoding_DefaultXml = 15955;
+
+        /// <summary>
+        /// The identifier for the DataSetWriterTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint DataSetWriterTransportDataType_Encoding_DefaultXml = 15956;
+
+        /// <summary>
+        /// The identifier for the DataSetWriterMessageDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint DataSetWriterMessageDataType_Encoding_DefaultXml = 15987;
+
+        /// <summary>
+        /// The identifier for the PubSubGroupDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint PubSubGroupDataType_Encoding_DefaultXml = 15988;
+
+        /// <summary>
+        /// The identifier for the PubSubWriterGroupDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint PubSubWriterGroupDataType_Encoding_DefaultXml = 15989;
+
+        /// <summary>
+        /// The identifier for the WriterGroupTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint WriterGroupTransportDataType_Encoding_DefaultXml = 15990;
+
+        /// <summary>
+        /// The identifier for the WriterGroupMessageDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint WriterGroupMessageDataType_Encoding_DefaultXml = 15991;
+
+        /// <summary>
+        /// The identifier for the PubSubConnectionDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint PubSubConnectionDataType_Encoding_DefaultXml = 15992;
+
+        /// <summary>
+        /// The identifier for the ConnectionTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint ConnectionTransportDataType_Encoding_DefaultXml = 15993;
+
+        /// <summary>
+        /// The identifier for the PubSubReaderGroupDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint PubSubReaderGroupDataType_Encoding_DefaultXml = 15994;
+
+        /// <summary>
+        /// The identifier for the ReaderGroupTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint ReaderGroupTransportDataType_Encoding_DefaultXml = 15995;
+
+        /// <summary>
+        /// The identifier for the ReaderGroupMessageDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint ReaderGroupMessageDataType_Encoding_DefaultXml = 15996;
+
+        /// <summary>
+        /// The identifier for the DataSetReaderDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint DataSetReaderDataType_Encoding_DefaultXml = 16007;
+
+        /// <summary>
+        /// The identifier for the DataSetReaderTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint DataSetReaderTransportDataType_Encoding_DefaultXml = 16008;
+
+        /// <summary>
+        /// The identifier for the DataSetReaderMessageDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint DataSetReaderMessageDataType_Encoding_DefaultXml = 16009;
+
+        /// <summary>
+        /// The identifier for the SubscribedDataSetDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint SubscribedDataSetDataType_Encoding_DefaultXml = 16010;
+
+        /// <summary>
+        /// The identifier for the TargetVariablesDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint TargetVariablesDataType_Encoding_DefaultXml = 16011;
+
+        /// <summary>
         /// The identifier for the FieldTargetDataType_Encoding_DefaultXml Object.
         /// </summary>
         public const uint FieldTargetDataType_Encoding_DefaultXml = 14804;
+
+        /// <summary>
+        /// The identifier for the SubscribedDataSetMirrorDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint SubscribedDataSetMirrorDataType_Encoding_DefaultXml = 16012;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint PublishSubscribeDataType_Encoding_DefaultXml = 16013;
+
+        /// <summary>
+        /// The identifier for the UadpWriterGroupMessageDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint UadpWriterGroupMessageDataType_Encoding_DefaultXml = 16014;
+
+        /// <summary>
+        /// The identifier for the UadpDataSetWriterMessageDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint UadpDataSetWriterMessageDataType_Encoding_DefaultXml = 16015;
+
+        /// <summary>
+        /// The identifier for the UadpDataSetReaderMessageDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint UadpDataSetReaderMessageDataType_Encoding_DefaultXml = 16016;
+
+        /// <summary>
+        /// The identifier for the JsonWriterGroupMessageDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint JsonWriterGroupMessageDataType_Encoding_DefaultXml = 16017;
+
+        /// <summary>
+        /// The identifier for the JsonDataSetWriterMessageDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint JsonDataSetWriterMessageDataType_Encoding_DefaultXml = 16018;
+
+        /// <summary>
+        /// The identifier for the JsonDataSetReaderMessageDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint JsonDataSetReaderMessageDataType_Encoding_DefaultXml = 16019;
+
+        /// <summary>
+        /// The identifier for the UdpWriterGroupTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint UdpWriterGroupTransportDataType_Encoding_DefaultXml = 16020;
+
+        /// <summary>
+        /// The identifier for the BrokerWriterGroupTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint BrokerWriterGroupTransportDataType_Encoding_DefaultXml = 16021;
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetWriterTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint BrokerDataSetWriterTransportDataType_Encoding_DefaultXml = 16022;
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetReaderTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint BrokerDataSetReaderTransportDataType_Encoding_DefaultXml = 16023;
 
         /// <summary>
         /// The identifier for the RolePermissionType_Encoding_DefaultXml Object.
@@ -7525,6 +8065,11 @@ namespace Opc.Ua
         public const uint KeyValuePair_Encoding_DefaultJson = 15041;
 
         /// <summary>
+        /// The identifier for the EndpointType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint EndpointType_Encoding_DefaultJson = 16150;
+
+        /// <summary>
         /// The identifier for the IdentityMappingRuleType_Encoding_DefaultJson Object.
         /// </summary>
         public const uint IdentityMappingRuleType_Encoding_DefaultJson = 15042;
@@ -7540,19 +8085,9 @@ namespace Opc.Ua
         public const uint DecimalDataType_Encoding_DefaultJson = 15045;
 
         /// <summary>
-        /// The identifier for the ConfigurationVersionDataType_Encoding_DefaultJson Object.
+        /// The identifier for the DataTypeSchemaHeader_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint ConfigurationVersionDataType_Encoding_DefaultJson = 15049;
-
-        /// <summary>
-        /// The identifier for the DataSetMetaDataType_Encoding_DefaultJson Object.
-        /// </summary>
-        public const uint DataSetMetaDataType_Encoding_DefaultJson = 15050;
-
-        /// <summary>
-        /// The identifier for the FieldMetaData_Encoding_DefaultJson Object.
-        /// </summary>
-        public const uint FieldMetaData_Encoding_DefaultJson = 15051;
+        public const uint DataTypeSchemaHeader_Encoding_DefaultJson = 16151;
 
         /// <summary>
         /// The identifier for the DataTypeDescription_Encoding_DefaultJson Object.
@@ -7570,14 +8105,194 @@ namespace Opc.Ua
         public const uint EnumDescription_Encoding_DefaultJson = 15059;
 
         /// <summary>
+        /// The identifier for the DataSetMetaDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint DataSetMetaDataType_Encoding_DefaultJson = 15050;
+
+        /// <summary>
+        /// The identifier for the FieldMetaData_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint FieldMetaData_Encoding_DefaultJson = 15051;
+
+        /// <summary>
+        /// The identifier for the ConfigurationVersionDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint ConfigurationVersionDataType_Encoding_DefaultJson = 15049;
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint PublishedDataSetDataType_Encoding_DefaultJson = 16152;
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetSourceDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint PublishedDataSetSourceDataType_Encoding_DefaultJson = 16153;
+
+        /// <summary>
         /// The identifier for the PublishedVariableDataType_Encoding_DefaultJson Object.
         /// </summary>
         public const uint PublishedVariableDataType_Encoding_DefaultJson = 15060;
 
         /// <summary>
+        /// The identifier for the PublishedDataItemsDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint PublishedDataItemsDataType_Encoding_DefaultJson = 16154;
+
+        /// <summary>
+        /// The identifier for the PublishedEventsDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint PublishedEventsDataType_Encoding_DefaultJson = 16155;
+
+        /// <summary>
+        /// The identifier for the DataSetWriterDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint DataSetWriterDataType_Encoding_DefaultJson = 16156;
+
+        /// <summary>
+        /// The identifier for the DataSetWriterTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint DataSetWriterTransportDataType_Encoding_DefaultJson = 16157;
+
+        /// <summary>
+        /// The identifier for the DataSetWriterMessageDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint DataSetWriterMessageDataType_Encoding_DefaultJson = 16158;
+
+        /// <summary>
+        /// The identifier for the PubSubGroupDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint PubSubGroupDataType_Encoding_DefaultJson = 16159;
+
+        /// <summary>
+        /// The identifier for the PubSubWriterGroupDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint PubSubWriterGroupDataType_Encoding_DefaultJson = 16160;
+
+        /// <summary>
+        /// The identifier for the WriterGroupTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint WriterGroupTransportDataType_Encoding_DefaultJson = 16161;
+
+        /// <summary>
+        /// The identifier for the WriterGroupMessageDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint WriterGroupMessageDataType_Encoding_DefaultJson = 16280;
+
+        /// <summary>
+        /// The identifier for the PubSubConnectionDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint PubSubConnectionDataType_Encoding_DefaultJson = 16281;
+
+        /// <summary>
+        /// The identifier for the ConnectionTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint ConnectionTransportDataType_Encoding_DefaultJson = 16282;
+
+        /// <summary>
+        /// The identifier for the PubSubReaderGroupDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint PubSubReaderGroupDataType_Encoding_DefaultJson = 16283;
+
+        /// <summary>
+        /// The identifier for the ReaderGroupTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint ReaderGroupTransportDataType_Encoding_DefaultJson = 16284;
+
+        /// <summary>
+        /// The identifier for the ReaderGroupMessageDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint ReaderGroupMessageDataType_Encoding_DefaultJson = 16285;
+
+        /// <summary>
+        /// The identifier for the DataSetReaderDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint DataSetReaderDataType_Encoding_DefaultJson = 16286;
+
+        /// <summary>
+        /// The identifier for the DataSetReaderTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint DataSetReaderTransportDataType_Encoding_DefaultJson = 16287;
+
+        /// <summary>
+        /// The identifier for the DataSetReaderMessageDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint DataSetReaderMessageDataType_Encoding_DefaultJson = 16288;
+
+        /// <summary>
+        /// The identifier for the SubscribedDataSetDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint SubscribedDataSetDataType_Encoding_DefaultJson = 16308;
+
+        /// <summary>
+        /// The identifier for the TargetVariablesDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint TargetVariablesDataType_Encoding_DefaultJson = 16310;
+
+        /// <summary>
         /// The identifier for the FieldTargetDataType_Encoding_DefaultJson Object.
         /// </summary>
         public const uint FieldTargetDataType_Encoding_DefaultJson = 15061;
+
+        /// <summary>
+        /// The identifier for the SubscribedDataSetMirrorDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint SubscribedDataSetMirrorDataType_Encoding_DefaultJson = 16311;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint PublishSubscribeDataType_Encoding_DefaultJson = 16322;
+
+        /// <summary>
+        /// The identifier for the UadpWriterGroupMessageDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint UadpWriterGroupMessageDataType_Encoding_DefaultJson = 16323;
+
+        /// <summary>
+        /// The identifier for the UadpDataSetWriterMessageDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint UadpDataSetWriterMessageDataType_Encoding_DefaultJson = 16391;
+
+        /// <summary>
+        /// The identifier for the UadpDataSetReaderMessageDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint UadpDataSetReaderMessageDataType_Encoding_DefaultJson = 16392;
+
+        /// <summary>
+        /// The identifier for the JsonWriterGroupMessageDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint JsonWriterGroupMessageDataType_Encoding_DefaultJson = 16393;
+
+        /// <summary>
+        /// The identifier for the JsonDataSetWriterMessageDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint JsonDataSetWriterMessageDataType_Encoding_DefaultJson = 16394;
+
+        /// <summary>
+        /// The identifier for the JsonDataSetReaderMessageDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint JsonDataSetReaderMessageDataType_Encoding_DefaultJson = 16404;
+
+        /// <summary>
+        /// The identifier for the UdpWriterGroupTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint UdpWriterGroupTransportDataType_Encoding_DefaultJson = 16523;
+
+        /// <summary>
+        /// The identifier for the BrokerWriterGroupTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint BrokerWriterGroupTransportDataType_Encoding_DefaultJson = 16524;
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetWriterTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint BrokerDataSetWriterTransportDataType_Encoding_DefaultJson = 16525;
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetReaderTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint BrokerDataSetReaderTransportDataType_Encoding_DefaultJson = 16526;
 
         /// <summary>
         /// The identifier for the RolePermissionType_Encoding_DefaultJson Object.
@@ -19610,19 +20325,49 @@ namespace Opc.Ua
         public const uint AggregateConfigurationType_UseSlopedExtrapolation = 11191;
 
         /// <summary>
-        /// The identifier for the DataSetFieldFlags_EnumValues Variable.
+        /// The identifier for the PubSubState_EnumStrings Variable.
         /// </summary>
-        public const uint DataSetFieldFlags_EnumValues = 15905;
+        public const uint PubSubState_EnumStrings = 14648;
 
         /// <summary>
-        /// The identifier for the DataSetMessageContentMask_OptionSetValues Variable.
+        /// The identifier for the DataSetFieldFlags_OptionSetValues Variable.
         /// </summary>
-        public const uint DataSetMessageContentMask_OptionSetValues = 15533;
+        public const uint DataSetFieldFlags_OptionSetValues = 15577;
 
         /// <summary>
-        /// The identifier for the NetworkMessageContentMask_OptionSetValues Variable.
+        /// The identifier for the DataSetFieldContentMask_OptionSetValues Variable.
         /// </summary>
-        public const uint NetworkMessageContentMask_OptionSetValues = 17291;
+        public const uint DataSetFieldContentMask_OptionSetValues = 15584;
+
+        /// <summary>
+        /// The identifier for the OverrideValueHandling_EnumStrings Variable.
+        /// </summary>
+        public const uint OverrideValueHandling_EnumStrings = 15875;
+
+        /// <summary>
+        /// The identifier for the DataSetOrderingType_EnumStrings Variable.
+        /// </summary>
+        public const uint DataSetOrderingType_EnumStrings = 15641;
+
+        /// <summary>
+        /// The identifier for the UadpNetworkMessageContentMask_OptionSetValues Variable.
+        /// </summary>
+        public const uint UadpNetworkMessageContentMask_OptionSetValues = 15643;
+
+        /// <summary>
+        /// The identifier for the UadpDataSetMessageContentMask_OptionSetValues Variable.
+        /// </summary>
+        public const uint UadpDataSetMessageContentMask_OptionSetValues = 15647;
+
+        /// <summary>
+        /// The identifier for the JsonNetworkMessageContentMask_OptionSetValues Variable.
+        /// </summary>
+        public const uint JsonNetworkMessageContentMask_OptionSetValues = 15655;
+
+        /// <summary>
+        /// The identifier for the JsonDataSetMessageContentMask_OptionSetValues Variable.
+        /// </summary>
+        public const uint JsonDataSetMessageContentMask_OptionSetValues = 15659;
 
         /// <summary>
         /// The identifier for the PubSubKeyServiceType_GetSecurityKeys_InputArguments Variable.
@@ -21150,11 +21895,6 @@ namespace Opc.Ua
         public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel = 18929;
 
         /// <summary>
-        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_DataSetMessageContentMask Variable.
-        /// </summary>
-        public const uint PublishedDataSetType_DataSetWriterName_Placeholder_DataSetMessageContentMask = 15480;
-
-        /// <summary>
         /// The identifier for the PublishedDataSetType_ConfigurationVersion Variable.
         /// </summary>
         public const uint PublishedDataSetType_ConfigurationVersion = 14519;
@@ -21460,11 +22200,6 @@ namespace Opc.Ua
         public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel = 18988;
 
         /// <summary>
-        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_DataSetMessageContentMask Variable.
-        /// </summary>
-        public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_DataSetMessageContentMask = 15502;
-
-        /// <summary>
         /// The identifier for the PublishedDataItemsType_ExtensionFields_AddExtensionField_InputArguments Variable.
         /// </summary>
         public const uint PublishedDataItemsType_ExtensionFields_AddExtensionField_InputArguments = 15505;
@@ -21765,11 +22500,6 @@ namespace Opc.Ua
         public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel = 19047;
 
         /// <summary>
-        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_DataSetMessageContentMask Variable.
-        /// </summary>
-        public const uint PublishedEventsType_DataSetWriterName_Placeholder_DataSetMessageContentMask = 15510;
-
-        /// <summary>
         /// The identifier for the PublishedEventsType_ExtensionFields_AddExtensionField_InputArguments Variable.
         /// </summary>
         public const uint PublishedEventsType_ExtensionFields_AddExtensionField_InputArguments = 15513;
@@ -22068,11 +22798,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetClassType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel Variable.
         /// </summary>
         public const uint DataSetClassType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel = 19106;
-
-        /// <summary>
-        /// The identifier for the DataSetClassType_DataSetWriterName_Placeholder_DataSetMessageContentMask Variable.
-        /// </summary>
-        public const uint DataSetClassType_DataSetWriterName_Placeholder_DataSetMessageContentMask = 15520;
 
         /// <summary>
         /// The identifier for the DataSetClassType_ExtensionFields_AddExtensionField_InputArguments Variable.
@@ -23395,11 +24120,6 @@ namespace Opc.Ua
         public const uint PubSubWriterGroupType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel = 19347;
 
         /// <summary>
-        /// The identifier for the PubSubWriterGroupType_DataSetWriterName_Placeholder_DataSetMessageContentMask Variable.
-        /// </summary>
-        public const uint PubSubWriterGroupType_DataSetWriterName_Placeholder_DataSetMessageContentMask = 17355;
-
-        /// <summary>
         /// The identifier for the PubSubWriterGroupType_Diagnostics_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubWriterGroupType_Diagnostics_DiagnosticsLevel = 19349;
@@ -24615,11 +25335,6 @@ namespace Opc.Ua
         public const uint DataSetWriterType_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel = 19608;
 
         /// <summary>
-        /// The identifier for the DataSetWriterType_DataSetMessageContentMask Variable.
-        /// </summary>
-        public const uint DataSetWriterType_DataSetMessageContentMask = 15530;
-
-        /// <summary>
         /// The identifier for the DataSetWriterTransportType_KeyFrameCount Variable.
         /// </summary>
         public const uint DataSetWriterTransportType_KeyFrameCount = 15531;
@@ -24995,19 +25710,9 @@ namespace Opc.Ua
         public const uint TargetVariablesType_RemoveTargetVariables_OutputArguments = 15120;
 
         /// <summary>
-        /// The identifier for the OverrideValueHandling_EnumStrings Variable.
-        /// </summary>
-        public const uint OverrideValueHandling_EnumStrings = 15875;
-
-        /// <summary>
         /// The identifier for the PubSubStatusType_State Variable.
         /// </summary>
         public const uint PubSubStatusType_State = 14644;
-
-        /// <summary>
-        /// The identifier for the PubSubState_EnumStrings Variable.
-        /// </summary>
-        public const uint PubSubState_EnumStrings = 14648;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsType_DiagnosticsLevel Variable.
@@ -28055,11 +28760,6 @@ namespace Opc.Ua
         public const uint UadpWriterGroupType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel = 20335;
 
         /// <summary>
-        /// The identifier for the UadpWriterGroupType_DataSetWriterName_Placeholder_DataSetMessageContentMask Variable.
-        /// </summary>
-        public const uint UadpWriterGroupType_DataSetWriterName_Placeholder_DataSetMessageContentMask = 17456;
-
-        /// <summary>
         /// The identifier for the UadpWriterGroupType_Diagnostics_DiagnosticsLevel Variable.
         /// </summary>
         public const uint UadpWriterGroupType_Diagnostics_DiagnosticsLevel = 20337;
@@ -28433,11 +29133,6 @@ namespace Opc.Ua
         /// The identifier for the UadpWriterGroupType_AddDataSetWriter_OutputArguments Variable.
         /// </summary>
         public const uint UadpWriterGroupType_AddDataSetWriter_OutputArguments = 17468;
-
-        /// <summary>
-        /// The identifier for the DataSetOrderingType_EnumValues Variable.
-        /// </summary>
-        public const uint DataSetOrderingType_EnumValues = 20409;
 
         /// <summary>
         /// The identifier for the UadpReaderGroupType_Status_State Variable.
@@ -30345,11 +31040,6 @@ namespace Opc.Ua
         public const uint BrokerWriterGroupType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel = 20795;
 
         /// <summary>
-        /// The identifier for the BrokerWriterGroupType_DataSetWriterName_Placeholder_DataSetMessageContentMask Variable.
-        /// </summary>
-        public const uint BrokerWriterGroupType_DataSetWriterName_Placeholder_DataSetMessageContentMask = 17561;
-
-        /// <summary>
         /// The identifier for the BrokerWriterGroupType_Diagnostics_DiagnosticsLevel Variable.
         /// </summary>
         public const uint BrokerWriterGroupType_Diagnostics_DiagnosticsLevel = 20797;
@@ -31545,6 +32235,11 @@ namespace Opc.Ua
         public const uint OpcUa_BinarySchema_KeyValuePair = 14873;
 
         /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_EndpointType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_EndpointType = 15734;
+
+        /// <summary>
         /// The identifier for the OpcUa_BinarySchema_IdentityMappingRuleType Variable.
         /// </summary>
         public const uint OpcUa_BinarySchema_IdentityMappingRuleType = 15738;
@@ -31555,19 +32250,9 @@ namespace Opc.Ua
         public const uint OpcUa_BinarySchema_TrustListDataType = 12681;
 
         /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_ConfigurationVersionDataType Variable.
+        /// The identifier for the OpcUa_BinarySchema_DataTypeSchemaHeader Variable.
         /// </summary>
-        public const uint OpcUa_BinarySchema_ConfigurationVersionDataType = 14876;
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_DataSetMetaDataType Variable.
-        /// </summary>
-        public const uint OpcUa_BinarySchema_DataSetMetaDataType = 14849;
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_FieldMetaData Variable.
-        /// </summary>
-        public const uint OpcUa_BinarySchema_FieldMetaData = 14852;
+        public const uint OpcUa_BinarySchema_DataTypeSchemaHeader = 15741;
 
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_DataTypeDescription Variable.
@@ -31585,14 +32270,194 @@ namespace Opc.Ua
         public const uint OpcUa_BinarySchema_EnumDescription = 15602;
 
         /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_DataSetMetaDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_DataSetMetaDataType = 14849;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_FieldMetaData Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_FieldMetaData = 14852;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_ConfigurationVersionDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_ConfigurationVersionDataType = 14876;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_PublishedDataSetDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_PublishedDataSetDataType = 15766;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_PublishedDataSetSourceDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_PublishedDataSetSourceDataType = 15769;
+
+        /// <summary>
         /// The identifier for the OpcUa_BinarySchema_PublishedVariableDataType Variable.
         /// </summary>
         public const uint OpcUa_BinarySchema_PublishedVariableDataType = 14324;
 
         /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_PublishedDataItemsDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_PublishedDataItemsDataType = 15772;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_PublishedEventsDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_PublishedEventsDataType = 15775;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_DataSetWriterDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_DataSetWriterDataType = 15778;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_DataSetWriterTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_DataSetWriterTransportDataType = 15781;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_DataSetWriterMessageDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_DataSetWriterMessageDataType = 15784;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_PubSubGroupDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_PubSubGroupDataType = 15787;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_PubSubWriterGroupDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_PubSubWriterGroupDataType = 15790;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_WriterGroupTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_WriterGroupTransportDataType = 15793;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_WriterGroupMessageDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_WriterGroupMessageDataType = 15854;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_PubSubConnectionDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_PubSubConnectionDataType = 15857;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_ConnectionTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_ConnectionTransportDataType = 15860;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_PubSubReaderGroupDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_PubSubReaderGroupDataType = 15863;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_ReaderGroupTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_ReaderGroupTransportDataType = 15866;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_ReaderGroupMessageDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_ReaderGroupMessageDataType = 15869;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_DataSetReaderDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_DataSetReaderDataType = 15872;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_DataSetReaderTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_DataSetReaderTransportDataType = 15877;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_DataSetReaderMessageDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_DataSetReaderMessageDataType = 15880;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_SubscribedDataSetDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_SubscribedDataSetDataType = 15883;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_TargetVariablesDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_TargetVariablesDataType = 15886;
+
+        /// <summary>
         /// The identifier for the OpcUa_BinarySchema_FieldTargetDataType Variable.
         /// </summary>
         public const uint OpcUa_BinarySchema_FieldTargetDataType = 21002;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_SubscribedDataSetMirrorDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_SubscribedDataSetMirrorDataType = 15889;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_PublishSubscribeDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_PublishSubscribeDataType = 15892;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_UadpWriterGroupMessageDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_UadpWriterGroupMessageDataType = 15895;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_UadpDataSetWriterMessageDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_UadpDataSetWriterMessageDataType = 15898;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_UadpDataSetReaderMessageDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_UadpDataSetReaderMessageDataType = 15919;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_JsonWriterGroupMessageDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_JsonWriterGroupMessageDataType = 15922;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_JsonDataSetWriterMessageDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_JsonDataSetWriterMessageDataType = 15925;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_JsonDataSetReaderMessageDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_JsonDataSetReaderMessageDataType = 15931;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_UdpWriterGroupTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_UdpWriterGroupTransportDataType = 15937;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_BrokerWriterGroupTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_BrokerWriterGroupTransportDataType = 15940;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_BrokerDataSetWriterTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_BrokerDataSetWriterTransportDataType = 15943;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_BrokerDataSetReaderTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_BrokerDataSetReaderTransportDataType = 15946;
 
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_RolePermissionType Variable.
@@ -31945,6 +32810,11 @@ namespace Opc.Ua
         public const uint OpcUa_XmlSchema_KeyValuePair = 14829;
 
         /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EndpointType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_EndpointType = 16024;
+
+        /// <summary>
         /// The identifier for the OpcUa_XmlSchema_IdentityMappingRuleType Variable.
         /// </summary>
         public const uint OpcUa_XmlSchema_IdentityMappingRuleType = 15730;
@@ -31955,19 +32825,9 @@ namespace Opc.Ua
         public const uint OpcUa_XmlSchema_TrustListDataType = 12677;
 
         /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ConfigurationVersionDataType Variable.
+        /// The identifier for the OpcUa_XmlSchema_DataTypeSchemaHeader Variable.
         /// </summary>
-        public const uint OpcUa_XmlSchema_ConfigurationVersionDataType = 14832;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_DataSetMetaDataType Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_DataSetMetaDataType = 14805;
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_FieldMetaData Variable.
-        /// </summary>
-        public const uint OpcUa_XmlSchema_FieldMetaData = 14808;
+        public const uint OpcUa_XmlSchema_DataTypeSchemaHeader = 16027;
 
         /// <summary>
         /// The identifier for the OpcUa_XmlSchema_DataTypeDescription Variable.
@@ -31985,14 +32845,194 @@ namespace Opc.Ua
         public const uint OpcUa_XmlSchema_EnumDescription = 15594;
 
         /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataSetMetaDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_DataSetMetaDataType = 14805;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_FieldMetaData Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_FieldMetaData = 14808;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ConfigurationVersionDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_ConfigurationVersionDataType = 14832;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_PublishedDataSetDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_PublishedDataSetDataType = 16030;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_PublishedDataSetSourceDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_PublishedDataSetSourceDataType = 16033;
+
+        /// <summary>
         /// The identifier for the OpcUa_XmlSchema_PublishedVariableDataType Variable.
         /// </summary>
         public const uint OpcUa_XmlSchema_PublishedVariableDataType = 14320;
 
         /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_PublishedDataItemsDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_PublishedDataItemsDataType = 16037;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_PublishedEventsDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_PublishedEventsDataType = 16040;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataSetWriterDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_DataSetWriterDataType = 16047;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataSetWriterTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_DataSetWriterTransportDataType = 16050;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataSetWriterMessageDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_DataSetWriterMessageDataType = 16053;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_PubSubGroupDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_PubSubGroupDataType = 16056;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_PubSubWriterGroupDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_PubSubWriterGroupDataType = 16059;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_WriterGroupTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_WriterGroupTransportDataType = 16062;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_WriterGroupMessageDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_WriterGroupMessageDataType = 16065;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_PubSubConnectionDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_PubSubConnectionDataType = 16068;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ConnectionTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_ConnectionTransportDataType = 16071;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_PubSubReaderGroupDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_PubSubReaderGroupDataType = 16074;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ReaderGroupTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_ReaderGroupTransportDataType = 16077;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ReaderGroupMessageDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_ReaderGroupMessageDataType = 16080;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataSetReaderDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_DataSetReaderDataType = 16083;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataSetReaderTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_DataSetReaderTransportDataType = 16086;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataSetReaderMessageDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_DataSetReaderMessageDataType = 16089;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_SubscribedDataSetDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_SubscribedDataSetDataType = 16092;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_TargetVariablesDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_TargetVariablesDataType = 16095;
+
+        /// <summary>
         /// The identifier for the OpcUa_XmlSchema_FieldTargetDataType Variable.
         /// </summary>
         public const uint OpcUa_XmlSchema_FieldTargetDataType = 14835;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_SubscribedDataSetMirrorDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_SubscribedDataSetMirrorDataType = 16098;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_PublishSubscribeDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_PublishSubscribeDataType = 16101;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_UadpWriterGroupMessageDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_UadpWriterGroupMessageDataType = 16104;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_UadpDataSetWriterMessageDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_UadpDataSetWriterMessageDataType = 16107;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_UadpDataSetReaderMessageDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_UadpDataSetReaderMessageDataType = 16110;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_JsonWriterGroupMessageDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_JsonWriterGroupMessageDataType = 16113;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_JsonDataSetWriterMessageDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_JsonDataSetWriterMessageDataType = 16116;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_JsonDataSetReaderMessageDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_JsonDataSetReaderMessageDataType = 16119;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_UdpWriterGroupTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_UdpWriterGroupTransportDataType = 16122;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_BrokerWriterGroupTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_BrokerWriterGroupTransportDataType = 16125;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_BrokerDataSetWriterTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_BrokerDataSetWriterTransportDataType = 16144;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_BrokerDataSetReaderTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_BrokerDataSetReaderTransportDataType = 16147;
 
         /// <summary>
         /// The identifier for the OpcUa_XmlSchema_RolePermissionType Variable.
@@ -32750,6 +33790,11 @@ namespace Opc.Ua
         public static readonly NodeId KeyValuePair = new NodeId(Opc.Ua.DataTypes.KeyValuePair);
 
         /// <summary>
+        /// The identifier for the EndpointType DataType.
+        /// </summary>
+        public static readonly NodeId EndpointType = new NodeId(Opc.Ua.DataTypes.EndpointType);
+
+        /// <summary>
         /// The identifier for the OpenFileMode DataType.
         /// </summary>
         public static readonly NodeId OpenFileMode = new NodeId(Opc.Ua.DataTypes.OpenFileMode);
@@ -32780,24 +33825,9 @@ namespace Opc.Ua
         public static readonly NodeId DecimalDataType = new NodeId(Opc.Ua.DataTypes.DecimalDataType);
 
         /// <summary>
-        /// The identifier for the ConfigurationVersionDataType DataType.
+        /// The identifier for the DataTypeSchemaHeader DataType.
         /// </summary>
-        public static readonly NodeId ConfigurationVersionDataType = new NodeId(Opc.Ua.DataTypes.ConfigurationVersionDataType);
-
-        /// <summary>
-        /// The identifier for the DataSetMetaDataType DataType.
-        /// </summary>
-        public static readonly NodeId DataSetMetaDataType = new NodeId(Opc.Ua.DataTypes.DataSetMetaDataType);
-
-        /// <summary>
-        /// The identifier for the DataSetFieldFlags DataType.
-        /// </summary>
-        public static readonly NodeId DataSetFieldFlags = new NodeId(Opc.Ua.DataTypes.DataSetFieldFlags);
-
-        /// <summary>
-        /// The identifier for the FieldMetaData DataType.
-        /// </summary>
-        public static readonly NodeId FieldMetaData = new NodeId(Opc.Ua.DataTypes.FieldMetaData);
+        public static readonly NodeId DataTypeSchemaHeader = new NodeId(Opc.Ua.DataTypes.DataTypeSchemaHeader);
 
         /// <summary>
         /// The identifier for the DataTypeDescription DataType.
@@ -32815,19 +33845,144 @@ namespace Opc.Ua
         public static readonly NodeId EnumDescription = new NodeId(Opc.Ua.DataTypes.EnumDescription);
 
         /// <summary>
-        /// The identifier for the DataSetMessageContentMask DataType.
+        /// The identifier for the PubSubState DataType.
         /// </summary>
-        public static readonly NodeId DataSetMessageContentMask = new NodeId(Opc.Ua.DataTypes.DataSetMessageContentMask);
+        public static readonly NodeId PubSubState = new NodeId(Opc.Ua.DataTypes.PubSubState);
 
         /// <summary>
-        /// The identifier for the NetworkMessageContentMask DataType.
+        /// The identifier for the DataSetMetaDataType DataType.
         /// </summary>
-        public static readonly NodeId NetworkMessageContentMask = new NodeId(Opc.Ua.DataTypes.NetworkMessageContentMask);
+        public static readonly NodeId DataSetMetaDataType = new NodeId(Opc.Ua.DataTypes.DataSetMetaDataType);
+
+        /// <summary>
+        /// The identifier for the FieldMetaData DataType.
+        /// </summary>
+        public static readonly NodeId FieldMetaData = new NodeId(Opc.Ua.DataTypes.FieldMetaData);
+
+        /// <summary>
+        /// The identifier for the DataSetFieldFlags DataType.
+        /// </summary>
+        public static readonly NodeId DataSetFieldFlags = new NodeId(Opc.Ua.DataTypes.DataSetFieldFlags);
+
+        /// <summary>
+        /// The identifier for the ConfigurationVersionDataType DataType.
+        /// </summary>
+        public static readonly NodeId ConfigurationVersionDataType = new NodeId(Opc.Ua.DataTypes.ConfigurationVersionDataType);
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetDataType DataType.
+        /// </summary>
+        public static readonly NodeId PublishedDataSetDataType = new NodeId(Opc.Ua.DataTypes.PublishedDataSetDataType);
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetSourceDataType DataType.
+        /// </summary>
+        public static readonly NodeId PublishedDataSetSourceDataType = new NodeId(Opc.Ua.DataTypes.PublishedDataSetSourceDataType);
 
         /// <summary>
         /// The identifier for the PublishedVariableDataType DataType.
         /// </summary>
         public static readonly NodeId PublishedVariableDataType = new NodeId(Opc.Ua.DataTypes.PublishedVariableDataType);
+
+        /// <summary>
+        /// The identifier for the PublishedDataItemsDataType DataType.
+        /// </summary>
+        public static readonly NodeId PublishedDataItemsDataType = new NodeId(Opc.Ua.DataTypes.PublishedDataItemsDataType);
+
+        /// <summary>
+        /// The identifier for the PublishedEventsDataType DataType.
+        /// </summary>
+        public static readonly NodeId PublishedEventsDataType = new NodeId(Opc.Ua.DataTypes.PublishedEventsDataType);
+
+        /// <summary>
+        /// The identifier for the DataSetFieldContentMask DataType.
+        /// </summary>
+        public static readonly NodeId DataSetFieldContentMask = new NodeId(Opc.Ua.DataTypes.DataSetFieldContentMask);
+
+        /// <summary>
+        /// The identifier for the DataSetWriterDataType DataType.
+        /// </summary>
+        public static readonly NodeId DataSetWriterDataType = new NodeId(Opc.Ua.DataTypes.DataSetWriterDataType);
+
+        /// <summary>
+        /// The identifier for the DataSetWriterTransportDataType DataType.
+        /// </summary>
+        public static readonly NodeId DataSetWriterTransportDataType = new NodeId(Opc.Ua.DataTypes.DataSetWriterTransportDataType);
+
+        /// <summary>
+        /// The identifier for the DataSetWriterMessageDataType DataType.
+        /// </summary>
+        public static readonly NodeId DataSetWriterMessageDataType = new NodeId(Opc.Ua.DataTypes.DataSetWriterMessageDataType);
+
+        /// <summary>
+        /// The identifier for the PubSubGroupDataType DataType.
+        /// </summary>
+        public static readonly NodeId PubSubGroupDataType = new NodeId(Opc.Ua.DataTypes.PubSubGroupDataType);
+
+        /// <summary>
+        /// The identifier for the PubSubWriterGroupDataType DataType.
+        /// </summary>
+        public static readonly NodeId PubSubWriterGroupDataType = new NodeId(Opc.Ua.DataTypes.PubSubWriterGroupDataType);
+
+        /// <summary>
+        /// The identifier for the WriterGroupTransportDataType DataType.
+        /// </summary>
+        public static readonly NodeId WriterGroupTransportDataType = new NodeId(Opc.Ua.DataTypes.WriterGroupTransportDataType);
+
+        /// <summary>
+        /// The identifier for the WriterGroupMessageDataType DataType.
+        /// </summary>
+        public static readonly NodeId WriterGroupMessageDataType = new NodeId(Opc.Ua.DataTypes.WriterGroupMessageDataType);
+
+        /// <summary>
+        /// The identifier for the PubSubConnectionDataType DataType.
+        /// </summary>
+        public static readonly NodeId PubSubConnectionDataType = new NodeId(Opc.Ua.DataTypes.PubSubConnectionDataType);
+
+        /// <summary>
+        /// The identifier for the ConnectionTransportDataType DataType.
+        /// </summary>
+        public static readonly NodeId ConnectionTransportDataType = new NodeId(Opc.Ua.DataTypes.ConnectionTransportDataType);
+
+        /// <summary>
+        /// The identifier for the PubSubReaderGroupDataType DataType.
+        /// </summary>
+        public static readonly NodeId PubSubReaderGroupDataType = new NodeId(Opc.Ua.DataTypes.PubSubReaderGroupDataType);
+
+        /// <summary>
+        /// The identifier for the ReaderGroupTransportDataType DataType.
+        /// </summary>
+        public static readonly NodeId ReaderGroupTransportDataType = new NodeId(Opc.Ua.DataTypes.ReaderGroupTransportDataType);
+
+        /// <summary>
+        /// The identifier for the ReaderGroupMessageDataType DataType.
+        /// </summary>
+        public static readonly NodeId ReaderGroupMessageDataType = new NodeId(Opc.Ua.DataTypes.ReaderGroupMessageDataType);
+
+        /// <summary>
+        /// The identifier for the DataSetReaderDataType DataType.
+        /// </summary>
+        public static readonly NodeId DataSetReaderDataType = new NodeId(Opc.Ua.DataTypes.DataSetReaderDataType);
+
+        /// <summary>
+        /// The identifier for the DataSetReaderTransportDataType DataType.
+        /// </summary>
+        public static readonly NodeId DataSetReaderTransportDataType = new NodeId(Opc.Ua.DataTypes.DataSetReaderTransportDataType);
+
+        /// <summary>
+        /// The identifier for the DataSetReaderMessageDataType DataType.
+        /// </summary>
+        public static readonly NodeId DataSetReaderMessageDataType = new NodeId(Opc.Ua.DataTypes.DataSetReaderMessageDataType);
+
+        /// <summary>
+        /// The identifier for the SubscribedDataSetDataType DataType.
+        /// </summary>
+        public static readonly NodeId SubscribedDataSetDataType = new NodeId(Opc.Ua.DataTypes.SubscribedDataSetDataType);
+
+        /// <summary>
+        /// The identifier for the TargetVariablesDataType DataType.
+        /// </summary>
+        public static readonly NodeId TargetVariablesDataType = new NodeId(Opc.Ua.DataTypes.TargetVariablesDataType);
 
         /// <summary>
         /// The identifier for the FieldTargetDataType DataType.
@@ -32840,9 +33995,89 @@ namespace Opc.Ua
         public static readonly NodeId OverrideValueHandling = new NodeId(Opc.Ua.DataTypes.OverrideValueHandling);
 
         /// <summary>
-        /// The identifier for the PubSubState DataType.
+        /// The identifier for the SubscribedDataSetMirrorDataType DataType.
         /// </summary>
-        public static readonly NodeId PubSubState = new NodeId(Opc.Ua.DataTypes.PubSubState);
+        public static readonly NodeId SubscribedDataSetMirrorDataType = new NodeId(Opc.Ua.DataTypes.SubscribedDataSetMirrorDataType);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeDataType DataType.
+        /// </summary>
+        public static readonly NodeId PublishSubscribeDataType = new NodeId(Opc.Ua.DataTypes.PublishSubscribeDataType);
+
+        /// <summary>
+        /// The identifier for the DataSetOrderingType DataType.
+        /// </summary>
+        public static readonly NodeId DataSetOrderingType = new NodeId(Opc.Ua.DataTypes.DataSetOrderingType);
+
+        /// <summary>
+        /// The identifier for the UadpNetworkMessageContentMask DataType.
+        /// </summary>
+        public static readonly NodeId UadpNetworkMessageContentMask = new NodeId(Opc.Ua.DataTypes.UadpNetworkMessageContentMask);
+
+        /// <summary>
+        /// The identifier for the UadpWriterGroupMessageDataType DataType.
+        /// </summary>
+        public static readonly NodeId UadpWriterGroupMessageDataType = new NodeId(Opc.Ua.DataTypes.UadpWriterGroupMessageDataType);
+
+        /// <summary>
+        /// The identifier for the UadpDataSetMessageContentMask DataType.
+        /// </summary>
+        public static readonly NodeId UadpDataSetMessageContentMask = new NodeId(Opc.Ua.DataTypes.UadpDataSetMessageContentMask);
+
+        /// <summary>
+        /// The identifier for the UadpDataSetWriterMessageDataType DataType.
+        /// </summary>
+        public static readonly NodeId UadpDataSetWriterMessageDataType = new NodeId(Opc.Ua.DataTypes.UadpDataSetWriterMessageDataType);
+
+        /// <summary>
+        /// The identifier for the UadpDataSetReaderMessageDataType DataType.
+        /// </summary>
+        public static readonly NodeId UadpDataSetReaderMessageDataType = new NodeId(Opc.Ua.DataTypes.UadpDataSetReaderMessageDataType);
+
+        /// <summary>
+        /// The identifier for the JsonNetworkMessageContentMask DataType.
+        /// </summary>
+        public static readonly NodeId JsonNetworkMessageContentMask = new NodeId(Opc.Ua.DataTypes.JsonNetworkMessageContentMask);
+
+        /// <summary>
+        /// The identifier for the JsonWriterGroupMessageDataType DataType.
+        /// </summary>
+        public static readonly NodeId JsonWriterGroupMessageDataType = new NodeId(Opc.Ua.DataTypes.JsonWriterGroupMessageDataType);
+
+        /// <summary>
+        /// The identifier for the JsonDataSetMessageContentMask DataType.
+        /// </summary>
+        public static readonly NodeId JsonDataSetMessageContentMask = new NodeId(Opc.Ua.DataTypes.JsonDataSetMessageContentMask);
+
+        /// <summary>
+        /// The identifier for the JsonDataSetWriterMessageDataType DataType.
+        /// </summary>
+        public static readonly NodeId JsonDataSetWriterMessageDataType = new NodeId(Opc.Ua.DataTypes.JsonDataSetWriterMessageDataType);
+
+        /// <summary>
+        /// The identifier for the JsonDataSetReaderMessageDataType DataType.
+        /// </summary>
+        public static readonly NodeId JsonDataSetReaderMessageDataType = new NodeId(Opc.Ua.DataTypes.JsonDataSetReaderMessageDataType);
+
+        /// <summary>
+        /// The identifier for the UdpWriterGroupTransportDataType DataType.
+        /// </summary>
+        public static readonly NodeId UdpWriterGroupTransportDataType = new NodeId(Opc.Ua.DataTypes.UdpWriterGroupTransportDataType);
+
+        /// <summary>
+        /// The identifier for the BrokerWriterGroupTransportDataType DataType.
+        /// </summary>
+        public static readonly NodeId BrokerWriterGroupTransportDataType = new NodeId(Opc.Ua.DataTypes.BrokerWriterGroupTransportDataType);
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetWriterTransportDataType DataType.
+        /// </summary>
+        public static readonly NodeId BrokerDataSetWriterTransportDataType = new NodeId(Opc.Ua.DataTypes.BrokerDataSetWriterTransportDataType);
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetReaderTransportDataType DataType.
+        /// </summary>
+        public static readonly NodeId BrokerDataSetReaderTransportDataType = new NodeId(Opc.Ua.DataTypes.BrokerDataSetReaderTransportDataType);
 
         /// <summary>
         /// The identifier for the DiagnosticsLevel DataType.
@@ -32853,11 +34088,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsCounterClassification DataType.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsCounterClassification = new NodeId(Opc.Ua.DataTypes.PubSubDiagnosticsCounterClassification);
-
-        /// <summary>
-        /// The identifier for the DataSetOrderingType DataType.
-        /// </summary>
-        public static readonly NodeId DataSetOrderingType = new NodeId(Opc.Ua.DataTypes.DataSetOrderingType);
 
         /// <summary>
         /// The identifier for the IdType DataType.
@@ -37615,6 +38845,11 @@ namespace Opc.Ua
         public static readonly NodeId KeyValuePair_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.KeyValuePair_Encoding_DefaultBinary);
 
         /// <summary>
+        /// The identifier for the EndpointType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId EndpointType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EndpointType_Encoding_DefaultBinary);
+
+        /// <summary>
         /// The identifier for the IdentityMappingRuleType_Encoding_DefaultBinary Object.
         /// </summary>
         public static readonly NodeId IdentityMappingRuleType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.IdentityMappingRuleType_Encoding_DefaultBinary);
@@ -37630,19 +38865,9 @@ namespace Opc.Ua
         public static readonly NodeId DecimalDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DecimalDataType_Encoding_DefaultBinary);
 
         /// <summary>
-        /// The identifier for the ConfigurationVersionDataType_Encoding_DefaultBinary Object.
+        /// The identifier for the DataTypeSchemaHeader_Encoding_DefaultBinary Object.
         /// </summary>
-        public static readonly NodeId ConfigurationVersionDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ConfigurationVersionDataType_Encoding_DefaultBinary);
-
-        /// <summary>
-        /// The identifier for the DataSetMetaDataType_Encoding_DefaultBinary Object.
-        /// </summary>
-        public static readonly NodeId DataSetMetaDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataSetMetaDataType_Encoding_DefaultBinary);
-
-        /// <summary>
-        /// The identifier for the FieldMetaData_Encoding_DefaultBinary Object.
-        /// </summary>
-        public static readonly NodeId FieldMetaData_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.FieldMetaData_Encoding_DefaultBinary);
+        public static readonly NodeId DataTypeSchemaHeader_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataTypeSchemaHeader_Encoding_DefaultBinary);
 
         /// <summary>
         /// The identifier for the DataTypeDescription_Encoding_DefaultBinary Object.
@@ -37660,14 +38885,194 @@ namespace Opc.Ua
         public static readonly NodeId EnumDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EnumDescription_Encoding_DefaultBinary);
 
         /// <summary>
+        /// The identifier for the DataSetMetaDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DataSetMetaDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataSetMetaDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the FieldMetaData_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId FieldMetaData_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.FieldMetaData_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ConfigurationVersionDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ConfigurationVersionDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ConfigurationVersionDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId PublishedDataSetDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.PublishedDataSetDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetSourceDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId PublishedDataSetSourceDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.PublishedDataSetSourceDataType_Encoding_DefaultBinary);
+
+        /// <summary>
         /// The identifier for the PublishedVariableDataType_Encoding_DefaultBinary Object.
         /// </summary>
         public static readonly NodeId PublishedVariableDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.PublishedVariableDataType_Encoding_DefaultBinary);
 
         /// <summary>
+        /// The identifier for the PublishedDataItemsDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId PublishedDataItemsDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.PublishedDataItemsDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the PublishedEventsDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId PublishedEventsDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.PublishedEventsDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DataSetWriterDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DataSetWriterDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataSetWriterDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DataSetWriterTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DataSetWriterTransportDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataSetWriterTransportDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DataSetWriterMessageDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DataSetWriterMessageDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataSetWriterMessageDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the PubSubGroupDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId PubSubGroupDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.PubSubGroupDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the PubSubWriterGroupDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId PubSubWriterGroupDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.PubSubWriterGroupDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the WriterGroupTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId WriterGroupTransportDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.WriterGroupTransportDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the WriterGroupMessageDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId WriterGroupMessageDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.WriterGroupMessageDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the PubSubConnectionDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId PubSubConnectionDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.PubSubConnectionDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ConnectionTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ConnectionTransportDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ConnectionTransportDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the PubSubReaderGroupDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId PubSubReaderGroupDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.PubSubReaderGroupDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ReaderGroupTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ReaderGroupTransportDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReaderGroupTransportDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the ReaderGroupMessageDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId ReaderGroupMessageDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.ReaderGroupMessageDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DataSetReaderDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DataSetReaderDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataSetReaderDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DataSetReaderTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DataSetReaderTransportDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataSetReaderTransportDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the DataSetReaderMessageDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DataSetReaderMessageDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DataSetReaderMessageDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the SubscribedDataSetDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId SubscribedDataSetDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SubscribedDataSetDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the TargetVariablesDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId TargetVariablesDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.TargetVariablesDataType_Encoding_DefaultBinary);
+
+        /// <summary>
         /// The identifier for the FieldTargetDataType_Encoding_DefaultBinary Object.
         /// </summary>
         public static readonly NodeId FieldTargetDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.FieldTargetDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the SubscribedDataSetMirrorDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId SubscribedDataSetMirrorDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SubscribedDataSetMirrorDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId PublishSubscribeDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.PublishSubscribeDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the UadpWriterGroupMessageDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId UadpWriterGroupMessageDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.UadpWriterGroupMessageDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the UadpDataSetWriterMessageDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId UadpDataSetWriterMessageDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.UadpDataSetWriterMessageDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the UadpDataSetReaderMessageDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId UadpDataSetReaderMessageDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.UadpDataSetReaderMessageDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the JsonWriterGroupMessageDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId JsonWriterGroupMessageDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.JsonWriterGroupMessageDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the JsonDataSetWriterMessageDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId JsonDataSetWriterMessageDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.JsonDataSetWriterMessageDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the JsonDataSetReaderMessageDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId JsonDataSetReaderMessageDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.JsonDataSetReaderMessageDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the UdpWriterGroupTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId UdpWriterGroupTransportDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.UdpWriterGroupTransportDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the BrokerWriterGroupTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId BrokerWriterGroupTransportDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrokerWriterGroupTransportDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetWriterTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId BrokerDataSetWriterTransportDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrokerDataSetWriterTransportDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetReaderTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId BrokerDataSetReaderTransportDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrokerDataSetReaderTransportDataType_Encoding_DefaultBinary);
 
         /// <summary>
         /// The identifier for the RolePermissionType_Encoding_DefaultBinary Object.
@@ -38825,6 +40230,11 @@ namespace Opc.Ua
         public static readonly NodeId KeyValuePair_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.KeyValuePair_Encoding_DefaultXml);
 
         /// <summary>
+        /// The identifier for the EndpointType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId EndpointType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.EndpointType_Encoding_DefaultXml);
+
+        /// <summary>
         /// The identifier for the IdentityMappingRuleType_Encoding_DefaultXml Object.
         /// </summary>
         public static readonly NodeId IdentityMappingRuleType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.IdentityMappingRuleType_Encoding_DefaultXml);
@@ -38840,19 +40250,9 @@ namespace Opc.Ua
         public static readonly NodeId DecimalDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.DecimalDataType_Encoding_DefaultXml);
 
         /// <summary>
-        /// The identifier for the ConfigurationVersionDataType_Encoding_DefaultXml Object.
+        /// The identifier for the DataTypeSchemaHeader_Encoding_DefaultXml Object.
         /// </summary>
-        public static readonly NodeId ConfigurationVersionDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.ConfigurationVersionDataType_Encoding_DefaultXml);
-
-        /// <summary>
-        /// The identifier for the DataSetMetaDataType_Encoding_DefaultXml Object.
-        /// </summary>
-        public static readonly NodeId DataSetMetaDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.DataSetMetaDataType_Encoding_DefaultXml);
-
-        /// <summary>
-        /// The identifier for the FieldMetaData_Encoding_DefaultXml Object.
-        /// </summary>
-        public static readonly NodeId FieldMetaData_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.FieldMetaData_Encoding_DefaultXml);
+        public static readonly NodeId DataTypeSchemaHeader_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.DataTypeSchemaHeader_Encoding_DefaultXml);
 
         /// <summary>
         /// The identifier for the DataTypeDescription_Encoding_DefaultXml Object.
@@ -38870,14 +40270,194 @@ namespace Opc.Ua
         public static readonly NodeId EnumDescription_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.EnumDescription_Encoding_DefaultXml);
 
         /// <summary>
+        /// The identifier for the DataSetMetaDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId DataSetMetaDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.DataSetMetaDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the FieldMetaData_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId FieldMetaData_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.FieldMetaData_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the ConfigurationVersionDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId ConfigurationVersionDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.ConfigurationVersionDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId PublishedDataSetDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.PublishedDataSetDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetSourceDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId PublishedDataSetSourceDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.PublishedDataSetSourceDataType_Encoding_DefaultXml);
+
+        /// <summary>
         /// The identifier for the PublishedVariableDataType_Encoding_DefaultXml Object.
         /// </summary>
         public static readonly NodeId PublishedVariableDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.PublishedVariableDataType_Encoding_DefaultXml);
 
         /// <summary>
+        /// The identifier for the PublishedDataItemsDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId PublishedDataItemsDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.PublishedDataItemsDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the PublishedEventsDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId PublishedEventsDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.PublishedEventsDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the DataSetWriterDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId DataSetWriterDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.DataSetWriterDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the DataSetWriterTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId DataSetWriterTransportDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.DataSetWriterTransportDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the DataSetWriterMessageDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId DataSetWriterMessageDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.DataSetWriterMessageDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the PubSubGroupDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId PubSubGroupDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.PubSubGroupDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the PubSubWriterGroupDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId PubSubWriterGroupDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.PubSubWriterGroupDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the WriterGroupTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId WriterGroupTransportDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.WriterGroupTransportDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the WriterGroupMessageDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId WriterGroupMessageDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.WriterGroupMessageDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the PubSubConnectionDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId PubSubConnectionDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.PubSubConnectionDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the ConnectionTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId ConnectionTransportDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.ConnectionTransportDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the PubSubReaderGroupDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId PubSubReaderGroupDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.PubSubReaderGroupDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the ReaderGroupTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId ReaderGroupTransportDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.ReaderGroupTransportDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the ReaderGroupMessageDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId ReaderGroupMessageDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.ReaderGroupMessageDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the DataSetReaderDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId DataSetReaderDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.DataSetReaderDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the DataSetReaderTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId DataSetReaderTransportDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.DataSetReaderTransportDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the DataSetReaderMessageDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId DataSetReaderMessageDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.DataSetReaderMessageDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the SubscribedDataSetDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId SubscribedDataSetDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.SubscribedDataSetDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the TargetVariablesDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId TargetVariablesDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.TargetVariablesDataType_Encoding_DefaultXml);
+
+        /// <summary>
         /// The identifier for the FieldTargetDataType_Encoding_DefaultXml Object.
         /// </summary>
         public static readonly NodeId FieldTargetDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.FieldTargetDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the SubscribedDataSetMirrorDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId SubscribedDataSetMirrorDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.SubscribedDataSetMirrorDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId PublishSubscribeDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.PublishSubscribeDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the UadpWriterGroupMessageDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId UadpWriterGroupMessageDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.UadpWriterGroupMessageDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the UadpDataSetWriterMessageDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId UadpDataSetWriterMessageDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.UadpDataSetWriterMessageDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the UadpDataSetReaderMessageDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId UadpDataSetReaderMessageDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.UadpDataSetReaderMessageDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the JsonWriterGroupMessageDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId JsonWriterGroupMessageDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.JsonWriterGroupMessageDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the JsonDataSetWriterMessageDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId JsonDataSetWriterMessageDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.JsonDataSetWriterMessageDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the JsonDataSetReaderMessageDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId JsonDataSetReaderMessageDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.JsonDataSetReaderMessageDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the UdpWriterGroupTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId UdpWriterGroupTransportDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.UdpWriterGroupTransportDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the BrokerWriterGroupTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId BrokerWriterGroupTransportDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.BrokerWriterGroupTransportDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetWriterTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId BrokerDataSetWriterTransportDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.BrokerDataSetWriterTransportDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetReaderTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId BrokerDataSetReaderTransportDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.BrokerDataSetReaderTransportDataType_Encoding_DefaultXml);
 
         /// <summary>
         /// The identifier for the RolePermissionType_Encoding_DefaultXml Object.
@@ -40035,6 +41615,11 @@ namespace Opc.Ua
         public static readonly NodeId KeyValuePair_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.KeyValuePair_Encoding_DefaultJson);
 
         /// <summary>
+        /// The identifier for the EndpointType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId EndpointType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.EndpointType_Encoding_DefaultJson);
+
+        /// <summary>
         /// The identifier for the IdentityMappingRuleType_Encoding_DefaultJson Object.
         /// </summary>
         public static readonly NodeId IdentityMappingRuleType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.IdentityMappingRuleType_Encoding_DefaultJson);
@@ -40050,19 +41635,9 @@ namespace Opc.Ua
         public static readonly NodeId DecimalDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DecimalDataType_Encoding_DefaultJson);
 
         /// <summary>
-        /// The identifier for the ConfigurationVersionDataType_Encoding_DefaultJson Object.
+        /// The identifier for the DataTypeSchemaHeader_Encoding_DefaultJson Object.
         /// </summary>
-        public static readonly NodeId ConfigurationVersionDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ConfigurationVersionDataType_Encoding_DefaultJson);
-
-        /// <summary>
-        /// The identifier for the DataSetMetaDataType_Encoding_DefaultJson Object.
-        /// </summary>
-        public static readonly NodeId DataSetMetaDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DataSetMetaDataType_Encoding_DefaultJson);
-
-        /// <summary>
-        /// The identifier for the FieldMetaData_Encoding_DefaultJson Object.
-        /// </summary>
-        public static readonly NodeId FieldMetaData_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.FieldMetaData_Encoding_DefaultJson);
+        public static readonly NodeId DataTypeSchemaHeader_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DataTypeSchemaHeader_Encoding_DefaultJson);
 
         /// <summary>
         /// The identifier for the DataTypeDescription_Encoding_DefaultJson Object.
@@ -40080,14 +41655,194 @@ namespace Opc.Ua
         public static readonly NodeId EnumDescription_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.EnumDescription_Encoding_DefaultJson);
 
         /// <summary>
+        /// The identifier for the DataSetMetaDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId DataSetMetaDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DataSetMetaDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the FieldMetaData_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId FieldMetaData_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.FieldMetaData_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the ConfigurationVersionDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId ConfigurationVersionDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ConfigurationVersionDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId PublishedDataSetDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.PublishedDataSetDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetSourceDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId PublishedDataSetSourceDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.PublishedDataSetSourceDataType_Encoding_DefaultJson);
+
+        /// <summary>
         /// The identifier for the PublishedVariableDataType_Encoding_DefaultJson Object.
         /// </summary>
         public static readonly NodeId PublishedVariableDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.PublishedVariableDataType_Encoding_DefaultJson);
 
         /// <summary>
+        /// The identifier for the PublishedDataItemsDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId PublishedDataItemsDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.PublishedDataItemsDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the PublishedEventsDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId PublishedEventsDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.PublishedEventsDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the DataSetWriterDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId DataSetWriterDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DataSetWriterDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the DataSetWriterTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId DataSetWriterTransportDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DataSetWriterTransportDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the DataSetWriterMessageDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId DataSetWriterMessageDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DataSetWriterMessageDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the PubSubGroupDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId PubSubGroupDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.PubSubGroupDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the PubSubWriterGroupDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId PubSubWriterGroupDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.PubSubWriterGroupDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the WriterGroupTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId WriterGroupTransportDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.WriterGroupTransportDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the WriterGroupMessageDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId WriterGroupMessageDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.WriterGroupMessageDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the PubSubConnectionDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId PubSubConnectionDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.PubSubConnectionDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the ConnectionTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId ConnectionTransportDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ConnectionTransportDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the PubSubReaderGroupDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId PubSubReaderGroupDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.PubSubReaderGroupDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the ReaderGroupTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId ReaderGroupTransportDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ReaderGroupTransportDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the ReaderGroupMessageDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId ReaderGroupMessageDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.ReaderGroupMessageDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the DataSetReaderDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId DataSetReaderDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DataSetReaderDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the DataSetReaderTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId DataSetReaderTransportDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DataSetReaderTransportDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the DataSetReaderMessageDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId DataSetReaderMessageDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DataSetReaderMessageDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the SubscribedDataSetDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId SubscribedDataSetDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.SubscribedDataSetDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the TargetVariablesDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId TargetVariablesDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.TargetVariablesDataType_Encoding_DefaultJson);
+
+        /// <summary>
         /// The identifier for the FieldTargetDataType_Encoding_DefaultJson Object.
         /// </summary>
         public static readonly NodeId FieldTargetDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.FieldTargetDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the SubscribedDataSetMirrorDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId SubscribedDataSetMirrorDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.SubscribedDataSetMirrorDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribeDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId PublishSubscribeDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.PublishSubscribeDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the UadpWriterGroupMessageDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId UadpWriterGroupMessageDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.UadpWriterGroupMessageDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the UadpDataSetWriterMessageDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId UadpDataSetWriterMessageDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.UadpDataSetWriterMessageDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the UadpDataSetReaderMessageDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId UadpDataSetReaderMessageDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.UadpDataSetReaderMessageDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the JsonWriterGroupMessageDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId JsonWriterGroupMessageDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.JsonWriterGroupMessageDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the JsonDataSetWriterMessageDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId JsonDataSetWriterMessageDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.JsonDataSetWriterMessageDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the JsonDataSetReaderMessageDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId JsonDataSetReaderMessageDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.JsonDataSetReaderMessageDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the UdpWriterGroupTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId UdpWriterGroupTransportDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.UdpWriterGroupTransportDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the BrokerWriterGroupTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId BrokerWriterGroupTransportDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.BrokerWriterGroupTransportDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetWriterTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId BrokerDataSetWriterTransportDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.BrokerDataSetWriterTransportDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetReaderTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId BrokerDataSetReaderTransportDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.BrokerDataSetReaderTransportDataType_Encoding_DefaultJson);
 
         /// <summary>
         /// The identifier for the RolePermissionType_Encoding_DefaultJson Object.
@@ -52120,19 +53875,49 @@ namespace Opc.Ua
         public static readonly NodeId AggregateConfigurationType_UseSlopedExtrapolation = new NodeId(Opc.Ua.Variables.AggregateConfigurationType_UseSlopedExtrapolation);
 
         /// <summary>
-        /// The identifier for the DataSetFieldFlags_EnumValues Variable.
+        /// The identifier for the PubSubState_EnumStrings Variable.
         /// </summary>
-        public static readonly NodeId DataSetFieldFlags_EnumValues = new NodeId(Opc.Ua.Variables.DataSetFieldFlags_EnumValues);
+        public static readonly NodeId PubSubState_EnumStrings = new NodeId(Opc.Ua.Variables.PubSubState_EnumStrings);
 
         /// <summary>
-        /// The identifier for the DataSetMessageContentMask_OptionSetValues Variable.
+        /// The identifier for the DataSetFieldFlags_OptionSetValues Variable.
         /// </summary>
-        public static readonly NodeId DataSetMessageContentMask_OptionSetValues = new NodeId(Opc.Ua.Variables.DataSetMessageContentMask_OptionSetValues);
+        public static readonly NodeId DataSetFieldFlags_OptionSetValues = new NodeId(Opc.Ua.Variables.DataSetFieldFlags_OptionSetValues);
 
         /// <summary>
-        /// The identifier for the NetworkMessageContentMask_OptionSetValues Variable.
+        /// The identifier for the DataSetFieldContentMask_OptionSetValues Variable.
         /// </summary>
-        public static readonly NodeId NetworkMessageContentMask_OptionSetValues = new NodeId(Opc.Ua.Variables.NetworkMessageContentMask_OptionSetValues);
+        public static readonly NodeId DataSetFieldContentMask_OptionSetValues = new NodeId(Opc.Ua.Variables.DataSetFieldContentMask_OptionSetValues);
+
+        /// <summary>
+        /// The identifier for the OverrideValueHandling_EnumStrings Variable.
+        /// </summary>
+        public static readonly NodeId OverrideValueHandling_EnumStrings = new NodeId(Opc.Ua.Variables.OverrideValueHandling_EnumStrings);
+
+        /// <summary>
+        /// The identifier for the DataSetOrderingType_EnumStrings Variable.
+        /// </summary>
+        public static readonly NodeId DataSetOrderingType_EnumStrings = new NodeId(Opc.Ua.Variables.DataSetOrderingType_EnumStrings);
+
+        /// <summary>
+        /// The identifier for the UadpNetworkMessageContentMask_OptionSetValues Variable.
+        /// </summary>
+        public static readonly NodeId UadpNetworkMessageContentMask_OptionSetValues = new NodeId(Opc.Ua.Variables.UadpNetworkMessageContentMask_OptionSetValues);
+
+        /// <summary>
+        /// The identifier for the UadpDataSetMessageContentMask_OptionSetValues Variable.
+        /// </summary>
+        public static readonly NodeId UadpDataSetMessageContentMask_OptionSetValues = new NodeId(Opc.Ua.Variables.UadpDataSetMessageContentMask_OptionSetValues);
+
+        /// <summary>
+        /// The identifier for the JsonNetworkMessageContentMask_OptionSetValues Variable.
+        /// </summary>
+        public static readonly NodeId JsonNetworkMessageContentMask_OptionSetValues = new NodeId(Opc.Ua.Variables.JsonNetworkMessageContentMask_OptionSetValues);
+
+        /// <summary>
+        /// The identifier for the JsonDataSetMessageContentMask_OptionSetValues Variable.
+        /// </summary>
+        public static readonly NodeId JsonDataSetMessageContentMask_OptionSetValues = new NodeId(Opc.Ua.Variables.JsonDataSetMessageContentMask_OptionSetValues);
 
         /// <summary>
         /// The identifier for the PubSubKeyServiceType_GetSecurityKeys_InputArguments Variable.
@@ -53660,11 +55445,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_DataSetMessageContentMask Variable.
-        /// </summary>
-        public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_DataSetMessageContentMask = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_DataSetMessageContentMask);
-
-        /// <summary>
         /// The identifier for the PublishedDataSetType_ConfigurationVersion Variable.
         /// </summary>
         public static readonly NodeId PublishedDataSetType_ConfigurationVersion = new NodeId(Opc.Ua.Variables.PublishedDataSetType_ConfigurationVersion);
@@ -53970,11 +55750,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_DataSetMessageContentMask Variable.
-        /// </summary>
-        public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_DataSetMessageContentMask = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_DataSetMessageContentMask);
-
-        /// <summary>
         /// The identifier for the PublishedDataItemsType_ExtensionFields_AddExtensionField_InputArguments Variable.
         /// </summary>
         public static readonly NodeId PublishedDataItemsType_ExtensionFields_AddExtensionField_InputArguments = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_ExtensionFields_AddExtensionField_InputArguments);
@@ -54275,11 +56050,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_DataSetMessageContentMask Variable.
-        /// </summary>
-        public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_DataSetMessageContentMask = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_DataSetMessageContentMask);
-
-        /// <summary>
         /// The identifier for the PublishedEventsType_ExtensionFields_AddExtensionField_InputArguments Variable.
         /// </summary>
         public static readonly NodeId PublishedEventsType_ExtensionFields_AddExtensionField_InputArguments = new NodeId(Opc.Ua.Variables.PublishedEventsType_ExtensionFields_AddExtensionField_InputArguments);
@@ -54578,11 +56348,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetClassType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId DataSetClassType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetClassType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the DataSetClassType_DataSetWriterName_Placeholder_DataSetMessageContentMask Variable.
-        /// </summary>
-        public static readonly NodeId DataSetClassType_DataSetWriterName_Placeholder_DataSetMessageContentMask = new NodeId(Opc.Ua.Variables.DataSetClassType_DataSetWriterName_Placeholder_DataSetMessageContentMask);
 
         /// <summary>
         /// The identifier for the DataSetClassType_ExtensionFields_AddExtensionField_InputArguments Variable.
@@ -55905,11 +57670,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubWriterGroupType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubWriterGroupType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubWriterGroupType_DataSetWriterName_Placeholder_DataSetMessageContentMask Variable.
-        /// </summary>
-        public static readonly NodeId PubSubWriterGroupType_DataSetWriterName_Placeholder_DataSetMessageContentMask = new NodeId(Opc.Ua.Variables.PubSubWriterGroupType_DataSetWriterName_Placeholder_DataSetMessageContentMask);
-
-        /// <summary>
         /// The identifier for the PubSubWriterGroupType_Diagnostics_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubWriterGroupType_Diagnostics_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubWriterGroupType_Diagnostics_DiagnosticsLevel);
@@ -57125,11 +58885,6 @@ namespace Opc.Ua
         public static readonly NodeId DataSetWriterType_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the DataSetWriterType_DataSetMessageContentMask Variable.
-        /// </summary>
-        public static readonly NodeId DataSetWriterType_DataSetMessageContentMask = new NodeId(Opc.Ua.Variables.DataSetWriterType_DataSetMessageContentMask);
-
-        /// <summary>
         /// The identifier for the DataSetWriterTransportType_KeyFrameCount Variable.
         /// </summary>
         public static readonly NodeId DataSetWriterTransportType_KeyFrameCount = new NodeId(Opc.Ua.Variables.DataSetWriterTransportType_KeyFrameCount);
@@ -57505,19 +59260,9 @@ namespace Opc.Ua
         public static readonly NodeId TargetVariablesType_RemoveTargetVariables_OutputArguments = new NodeId(Opc.Ua.Variables.TargetVariablesType_RemoveTargetVariables_OutputArguments);
 
         /// <summary>
-        /// The identifier for the OverrideValueHandling_EnumStrings Variable.
-        /// </summary>
-        public static readonly NodeId OverrideValueHandling_EnumStrings = new NodeId(Opc.Ua.Variables.OverrideValueHandling_EnumStrings);
-
-        /// <summary>
         /// The identifier for the PubSubStatusType_State Variable.
         /// </summary>
         public static readonly NodeId PubSubStatusType_State = new NodeId(Opc.Ua.Variables.PubSubStatusType_State);
-
-        /// <summary>
-        /// The identifier for the PubSubState_EnumStrings Variable.
-        /// </summary>
-        public static readonly NodeId PubSubState_EnumStrings = new NodeId(Opc.Ua.Variables.PubSubState_EnumStrings);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsType_DiagnosticsLevel Variable.
@@ -60565,11 +62310,6 @@ namespace Opc.Ua
         public static readonly NodeId UadpWriterGroupType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.UadpWriterGroupType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the UadpWriterGroupType_DataSetWriterName_Placeholder_DataSetMessageContentMask Variable.
-        /// </summary>
-        public static readonly NodeId UadpWriterGroupType_DataSetWriterName_Placeholder_DataSetMessageContentMask = new NodeId(Opc.Ua.Variables.UadpWriterGroupType_DataSetWriterName_Placeholder_DataSetMessageContentMask);
-
-        /// <summary>
         /// The identifier for the UadpWriterGroupType_Diagnostics_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId UadpWriterGroupType_Diagnostics_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.UadpWriterGroupType_Diagnostics_DiagnosticsLevel);
@@ -60943,11 +62683,6 @@ namespace Opc.Ua
         /// The identifier for the UadpWriterGroupType_AddDataSetWriter_OutputArguments Variable.
         /// </summary>
         public static readonly NodeId UadpWriterGroupType_AddDataSetWriter_OutputArguments = new NodeId(Opc.Ua.Variables.UadpWriterGroupType_AddDataSetWriter_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the DataSetOrderingType_EnumValues Variable.
-        /// </summary>
-        public static readonly NodeId DataSetOrderingType_EnumValues = new NodeId(Opc.Ua.Variables.DataSetOrderingType_EnumValues);
 
         /// <summary>
         /// The identifier for the UadpReaderGroupType_Status_State Variable.
@@ -62855,11 +64590,6 @@ namespace Opc.Ua
         public static readonly NodeId BrokerWriterGroupType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.BrokerWriterGroupType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MinorVersion_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the BrokerWriterGroupType_DataSetWriterName_Placeholder_DataSetMessageContentMask Variable.
-        /// </summary>
-        public static readonly NodeId BrokerWriterGroupType_DataSetWriterName_Placeholder_DataSetMessageContentMask = new NodeId(Opc.Ua.Variables.BrokerWriterGroupType_DataSetWriterName_Placeholder_DataSetMessageContentMask);
-
-        /// <summary>
         /// The identifier for the BrokerWriterGroupType_Diagnostics_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId BrokerWriterGroupType_Diagnostics_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.BrokerWriterGroupType_Diagnostics_DiagnosticsLevel);
@@ -64055,6 +65785,11 @@ namespace Opc.Ua
         public static readonly NodeId OpcUa_BinarySchema_KeyValuePair = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_KeyValuePair);
 
         /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_EndpointType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_EndpointType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_EndpointType);
+
+        /// <summary>
         /// The identifier for the OpcUa_BinarySchema_IdentityMappingRuleType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_BinarySchema_IdentityMappingRuleType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_IdentityMappingRuleType);
@@ -64065,19 +65800,9 @@ namespace Opc.Ua
         public static readonly NodeId OpcUa_BinarySchema_TrustListDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_TrustListDataType);
 
         /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_ConfigurationVersionDataType Variable.
+        /// The identifier for the OpcUa_BinarySchema_DataTypeSchemaHeader Variable.
         /// </summary>
-        public static readonly NodeId OpcUa_BinarySchema_ConfigurationVersionDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_ConfigurationVersionDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_DataSetMetaDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_BinarySchema_DataSetMetaDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_DataSetMetaDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_BinarySchema_FieldMetaData Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_BinarySchema_FieldMetaData = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_FieldMetaData);
+        public static readonly NodeId OpcUa_BinarySchema_DataTypeSchemaHeader = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_DataTypeSchemaHeader);
 
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_DataTypeDescription Variable.
@@ -64095,14 +65820,194 @@ namespace Opc.Ua
         public static readonly NodeId OpcUa_BinarySchema_EnumDescription = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_EnumDescription);
 
         /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_DataSetMetaDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_DataSetMetaDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_DataSetMetaDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_FieldMetaData Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_FieldMetaData = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_FieldMetaData);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_ConfigurationVersionDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_ConfigurationVersionDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_ConfigurationVersionDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_PublishedDataSetDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_PublishedDataSetDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_PublishedDataSetDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_PublishedDataSetSourceDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_PublishedDataSetSourceDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_PublishedDataSetSourceDataType);
+
+        /// <summary>
         /// The identifier for the OpcUa_BinarySchema_PublishedVariableDataType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_BinarySchema_PublishedVariableDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_PublishedVariableDataType);
 
         /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_PublishedDataItemsDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_PublishedDataItemsDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_PublishedDataItemsDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_PublishedEventsDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_PublishedEventsDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_PublishedEventsDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_DataSetWriterDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_DataSetWriterDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_DataSetWriterDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_DataSetWriterTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_DataSetWriterTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_DataSetWriterTransportDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_DataSetWriterMessageDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_DataSetWriterMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_DataSetWriterMessageDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_PubSubGroupDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_PubSubGroupDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_PubSubGroupDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_PubSubWriterGroupDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_PubSubWriterGroupDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_PubSubWriterGroupDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_WriterGroupTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_WriterGroupTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_WriterGroupTransportDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_WriterGroupMessageDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_WriterGroupMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_WriterGroupMessageDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_PubSubConnectionDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_PubSubConnectionDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_PubSubConnectionDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_ConnectionTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_ConnectionTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_ConnectionTransportDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_PubSubReaderGroupDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_PubSubReaderGroupDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_PubSubReaderGroupDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_ReaderGroupTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_ReaderGroupTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_ReaderGroupTransportDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_ReaderGroupMessageDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_ReaderGroupMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_ReaderGroupMessageDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_DataSetReaderDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_DataSetReaderDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_DataSetReaderDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_DataSetReaderTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_DataSetReaderTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_DataSetReaderTransportDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_DataSetReaderMessageDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_DataSetReaderMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_DataSetReaderMessageDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_SubscribedDataSetDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_SubscribedDataSetDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_SubscribedDataSetDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_TargetVariablesDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_TargetVariablesDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_TargetVariablesDataType);
+
+        /// <summary>
         /// The identifier for the OpcUa_BinarySchema_FieldTargetDataType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_BinarySchema_FieldTargetDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_FieldTargetDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_SubscribedDataSetMirrorDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_SubscribedDataSetMirrorDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_SubscribedDataSetMirrorDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_PublishSubscribeDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_PublishSubscribeDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_PublishSubscribeDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_UadpWriterGroupMessageDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_UadpWriterGroupMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_UadpWriterGroupMessageDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_UadpDataSetWriterMessageDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_UadpDataSetWriterMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_UadpDataSetWriterMessageDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_UadpDataSetReaderMessageDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_UadpDataSetReaderMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_UadpDataSetReaderMessageDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_JsonWriterGroupMessageDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_JsonWriterGroupMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_JsonWriterGroupMessageDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_JsonDataSetWriterMessageDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_JsonDataSetWriterMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_JsonDataSetWriterMessageDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_JsonDataSetReaderMessageDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_JsonDataSetReaderMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_JsonDataSetReaderMessageDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_UdpWriterGroupTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_UdpWriterGroupTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_UdpWriterGroupTransportDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_BrokerWriterGroupTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_BrokerWriterGroupTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_BrokerWriterGroupTransportDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_BrokerDataSetWriterTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_BrokerDataSetWriterTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_BrokerDataSetWriterTransportDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_BrokerDataSetReaderTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_BrokerDataSetReaderTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_BrokerDataSetReaderTransportDataType);
 
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_RolePermissionType Variable.
@@ -64455,6 +66360,11 @@ namespace Opc.Ua
         public static readonly NodeId OpcUa_XmlSchema_KeyValuePair = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_KeyValuePair);
 
         /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EndpointType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_EndpointType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EndpointType);
+
+        /// <summary>
         /// The identifier for the OpcUa_XmlSchema_IdentityMappingRuleType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_XmlSchema_IdentityMappingRuleType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_IdentityMappingRuleType);
@@ -64465,19 +66375,9 @@ namespace Opc.Ua
         public static readonly NodeId OpcUa_XmlSchema_TrustListDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_TrustListDataType);
 
         /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_ConfigurationVersionDataType Variable.
+        /// The identifier for the OpcUa_XmlSchema_DataTypeSchemaHeader Variable.
         /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_ConfigurationVersionDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ConfigurationVersionDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_DataSetMetaDataType Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_DataSetMetaDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DataSetMetaDataType);
-
-        /// <summary>
-        /// The identifier for the OpcUa_XmlSchema_FieldMetaData Variable.
-        /// </summary>
-        public static readonly NodeId OpcUa_XmlSchema_FieldMetaData = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_FieldMetaData);
+        public static readonly NodeId OpcUa_XmlSchema_DataTypeSchemaHeader = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DataTypeSchemaHeader);
 
         /// <summary>
         /// The identifier for the OpcUa_XmlSchema_DataTypeDescription Variable.
@@ -64495,14 +66395,194 @@ namespace Opc.Ua
         public static readonly NodeId OpcUa_XmlSchema_EnumDescription = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EnumDescription);
 
         /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataSetMetaDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_DataSetMetaDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DataSetMetaDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_FieldMetaData Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_FieldMetaData = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_FieldMetaData);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ConfigurationVersionDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_ConfigurationVersionDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ConfigurationVersionDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_PublishedDataSetDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_PublishedDataSetDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_PublishedDataSetDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_PublishedDataSetSourceDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_PublishedDataSetSourceDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_PublishedDataSetSourceDataType);
+
+        /// <summary>
         /// The identifier for the OpcUa_XmlSchema_PublishedVariableDataType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_XmlSchema_PublishedVariableDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_PublishedVariableDataType);
 
         /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_PublishedDataItemsDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_PublishedDataItemsDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_PublishedDataItemsDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_PublishedEventsDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_PublishedEventsDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_PublishedEventsDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataSetWriterDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_DataSetWriterDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DataSetWriterDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataSetWriterTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_DataSetWriterTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DataSetWriterTransportDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataSetWriterMessageDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_DataSetWriterMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DataSetWriterMessageDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_PubSubGroupDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_PubSubGroupDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_PubSubGroupDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_PubSubWriterGroupDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_PubSubWriterGroupDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_PubSubWriterGroupDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_WriterGroupTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_WriterGroupTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_WriterGroupTransportDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_WriterGroupMessageDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_WriterGroupMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_WriterGroupMessageDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_PubSubConnectionDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_PubSubConnectionDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_PubSubConnectionDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ConnectionTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_ConnectionTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ConnectionTransportDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_PubSubReaderGroupDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_PubSubReaderGroupDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_PubSubReaderGroupDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ReaderGroupTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_ReaderGroupTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ReaderGroupTransportDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_ReaderGroupMessageDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_ReaderGroupMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_ReaderGroupMessageDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataSetReaderDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_DataSetReaderDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DataSetReaderDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataSetReaderTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_DataSetReaderTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DataSetReaderTransportDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DataSetReaderMessageDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_DataSetReaderMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DataSetReaderMessageDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_SubscribedDataSetDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_SubscribedDataSetDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_SubscribedDataSetDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_TargetVariablesDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_TargetVariablesDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_TargetVariablesDataType);
+
+        /// <summary>
         /// The identifier for the OpcUa_XmlSchema_FieldTargetDataType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_XmlSchema_FieldTargetDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_FieldTargetDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_SubscribedDataSetMirrorDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_SubscribedDataSetMirrorDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_SubscribedDataSetMirrorDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_PublishSubscribeDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_PublishSubscribeDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_PublishSubscribeDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_UadpWriterGroupMessageDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_UadpWriterGroupMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_UadpWriterGroupMessageDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_UadpDataSetWriterMessageDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_UadpDataSetWriterMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_UadpDataSetWriterMessageDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_UadpDataSetReaderMessageDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_UadpDataSetReaderMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_UadpDataSetReaderMessageDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_JsonWriterGroupMessageDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_JsonWriterGroupMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_JsonWriterGroupMessageDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_JsonDataSetWriterMessageDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_JsonDataSetWriterMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_JsonDataSetWriterMessageDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_JsonDataSetReaderMessageDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_JsonDataSetReaderMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_JsonDataSetReaderMessageDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_UdpWriterGroupTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_UdpWriterGroupTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_UdpWriterGroupTransportDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_BrokerWriterGroupTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_BrokerWriterGroupTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_BrokerWriterGroupTransportDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_BrokerDataSetWriterTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_BrokerDataSetWriterTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_BrokerDataSetWriterTransportDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_BrokerDataSetReaderTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_BrokerDataSetReaderTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_BrokerDataSetReaderTransportDataType);
 
         /// <summary>
         /// The identifier for the OpcUa_XmlSchema_RolePermissionType Variable.
@@ -66044,6 +68124,16 @@ namespace Opc.Ua
         public const string BrokerConnectionType = "BrokerConnectionType";
 
         /// <summary>
+        /// The BrowseName for the BrokerDataSetReaderTransportDataType component.
+        /// </summary>
+        public const string BrokerDataSetReaderTransportDataType = "BrokerDataSetReaderTransportDataType";
+
+        /// <summary>
+        /// The BrowseName for the BrokerDataSetWriterTransportDataType component.
+        /// </summary>
+        public const string BrokerDataSetWriterTransportDataType = "BrokerDataSetWriterTransportDataType";
+
+        /// <summary>
         /// The BrowseName for the BrokerGroupTypeAddReaderType component.
         /// </summary>
         public const string BrokerGroupTypeAddReaderType = "BrokerGroupTypeAddReaderType";
@@ -66057,6 +68147,11 @@ namespace Opc.Ua
         /// The BrowseName for the BrokerReaderTransportType component.
         /// </summary>
         public const string BrokerReaderTransportType = "BrokerReaderTransportType";
+
+        /// <summary>
+        /// The BrowseName for the BrokerWriterGroupTransportDataType component.
+        /// </summary>
+        public const string BrokerWriterGroupTransportDataType = "BrokerWriterGroupTransportDataType";
 
         /// <summary>
         /// The BrowseName for the BrokerWriterGroupType component.
@@ -66449,6 +68544,11 @@ namespace Opc.Ua
         public const string ConnectionName_Placeholder = "<ConnectionName>";
 
         /// <summary>
+        /// The BrowseName for the ConnectionTransportDataType component.
+        /// </summary>
+        public const string ConnectionTransportDataType = "ConnectionTransportDataType";
+
+        /// <summary>
         /// The BrowseName for the ContentFilter component.
         /// </summary>
         public const string ContentFilter = "ContentFilter";
@@ -66679,6 +68779,11 @@ namespace Opc.Ua
         public const string DataSetClassType = "DataSetClassType";
 
         /// <summary>
+        /// The BrowseName for the DataSetFieldContentMask component.
+        /// </summary>
+        public const string DataSetFieldContentMask = "DataSetFieldContentMask";
+
+        /// <summary>
         /// The BrowseName for the DataSetFieldFlags component.
         /// </summary>
         public const string DataSetFieldFlags = "DataSetFieldFlags";
@@ -66724,9 +68829,24 @@ namespace Opc.Ua
         public const string DataSetOrderingType = "DataSetOrderingType";
 
         /// <summary>
+        /// The BrowseName for the DataSetReaderDataType component.
+        /// </summary>
+        public const string DataSetReaderDataType = "DataSetReaderDataType";
+
+        /// <summary>
+        /// The BrowseName for the DataSetReaderMessageDataType component.
+        /// </summary>
+        public const string DataSetReaderMessageDataType = "DataSetReaderMessageDataType";
+
+        /// <summary>
         /// The BrowseName for the DataSetReaderName_Placeholder component.
         /// </summary>
         public const string DataSetReaderName_Placeholder = "<DataSetReaderName>";
+
+        /// <summary>
+        /// The BrowseName for the DataSetReaderTransportDataType component.
+        /// </summary>
+        public const string DataSetReaderTransportDataType = "DataSetReaderTransportDataType";
 
         /// <summary>
         /// The BrowseName for the DataSetReaderTransportType component.
@@ -66744,14 +68864,29 @@ namespace Opc.Ua
         public const string DataSetToWriter = "DataSetToWriter";
 
         /// <summary>
+        /// The BrowseName for the DataSetWriterDataType component.
+        /// </summary>
+        public const string DataSetWriterDataType = "DataSetWriterDataType";
+
+        /// <summary>
         /// The BrowseName for the DataSetWriterId component.
         /// </summary>
         public const string DataSetWriterId = "DataSetWriterId";
 
         /// <summary>
+        /// The BrowseName for the DataSetWriterMessageDataType component.
+        /// </summary>
+        public const string DataSetWriterMessageDataType = "DataSetWriterMessageDataType";
+
+        /// <summary>
         /// The BrowseName for the DataSetWriterName_Placeholder component.
         /// </summary>
         public const string DataSetWriterName_Placeholder = "<DataSetWriterName>";
+
+        /// <summary>
+        /// The BrowseName for the DataSetWriterTransportDataType component.
+        /// </summary>
+        public const string DataSetWriterTransportDataType = "DataSetWriterTransportDataType";
 
         /// <summary>
         /// The BrowseName for the DataSetWriterTransportType component.
@@ -66797,6 +68932,11 @@ namespace Opc.Ua
         /// The BrowseName for the DataTypeNode component.
         /// </summary>
         public const string DataTypeNode = "DataTypeNode";
+
+        /// <summary>
+        /// The BrowseName for the DataTypeSchemaHeader component.
+        /// </summary>
+        public const string DataTypeSchemaHeader = "DataTypeSchemaHeader";
 
         /// <summary>
         /// The BrowseName for the DataTypesFolder component.
@@ -67197,6 +69337,11 @@ namespace Opc.Ua
         /// The BrowseName for the EndpointsExclude component.
         /// </summary>
         public const string EndpointsExclude = "EndpointsExclude";
+
+        /// <summary>
+        /// The BrowseName for the EndpointType component.
+        /// </summary>
+        public const string EndpointType = "EndpointType";
 
         /// <summary>
         /// The BrowseName for the EndpointUrl component.
@@ -68122,6 +70267,31 @@ namespace Opc.Ua
         /// The BrowseName for the IssuerEndpointUrl component.
         /// </summary>
         public const string IssuerEndpointUrl = "IssuerEndpointUrl";
+
+        /// <summary>
+        /// The BrowseName for the JsonDataSetMessageContentMask component.
+        /// </summary>
+        public const string JsonDataSetMessageContentMask = "JsonDataSetMessageContentMask";
+
+        /// <summary>
+        /// The BrowseName for the JsonDataSetReaderMessageDataType component.
+        /// </summary>
+        public const string JsonDataSetReaderMessageDataType = "JsonDataSetReaderMessageDataType";
+
+        /// <summary>
+        /// The BrowseName for the JsonDataSetWriterMessageDataType component.
+        /// </summary>
+        public const string JsonDataSetWriterMessageDataType = "JsonDataSetWriterMessageDataType";
+
+        /// <summary>
+        /// The BrowseName for the JsonNetworkMessageContentMask component.
+        /// </summary>
+        public const string JsonNetworkMessageContentMask = "JsonNetworkMessageContentMask";
+
+        /// <summary>
+        /// The BrowseName for the JsonWriterGroupMessageDataType component.
+        /// </summary>
+        public const string JsonWriterGroupMessageDataType = "JsonWriterGroupMessageDataType";
 
         /// <summary>
         /// The BrowseName for the KeepAliveTime component.
@@ -69309,9 +71479,19 @@ namespace Opc.Ua
         public const string PublishedData = "PublishedData";
 
         /// <summary>
+        /// The BrowseName for the PublishedDataItemsDataType component.
+        /// </summary>
+        public const string PublishedDataItemsDataType = "PublishedDataItemsDataType";
+
+        /// <summary>
         /// The BrowseName for the PublishedDataItemsType component.
         /// </summary>
         public const string PublishedDataItemsType = "PublishedDataItemsType";
+
+        /// <summary>
+        /// The BrowseName for the PublishedDataSetDataType component.
+        /// </summary>
+        public const string PublishedDataSetDataType = "PublishedDataSetDataType";
 
         /// <summary>
         /// The BrowseName for the PublishedDataSetName_Placeholder component.
@@ -69324,9 +71504,19 @@ namespace Opc.Ua
         public const string PublishedDataSets = "PublishedDataSets";
 
         /// <summary>
+        /// The BrowseName for the PublishedDataSetSourceDataType component.
+        /// </summary>
+        public const string PublishedDataSetSourceDataType = "PublishedDataSetSourceDataType";
+
+        /// <summary>
         /// The BrowseName for the PublishedDataSetType component.
         /// </summary>
         public const string PublishedDataSetType = "PublishedDataSetType";
+
+        /// <summary>
+        /// The BrowseName for the PublishedEventsDataType component.
+        /// </summary>
+        public const string PublishedEventsDataType = "PublishedEventsDataType";
 
         /// <summary>
         /// The BrowseName for the PublishedEventsType component.
@@ -69384,6 +71574,11 @@ namespace Opc.Ua
         public const string PublishSubscribe = "PublishSubscribe";
 
         /// <summary>
+        /// The BrowseName for the PublishSubscribeDataType component.
+        /// </summary>
+        public const string PublishSubscribeDataType = "PublishSubscribeDataType";
+
+        /// <summary>
         /// The BrowseName for the PublishSubscribeType component.
         /// </summary>
         public const string PublishSubscribeType = "PublishSubscribeType";
@@ -69392,6 +71587,11 @@ namespace Opc.Ua
         /// The BrowseName for the PubSubCommunicationFailureEventType component.
         /// </summary>
         public const string PubSubCommunicationFailureEventType = "PubSubCommunicationFailureEventType";
+
+        /// <summary>
+        /// The BrowseName for the PubSubConnectionDataType component.
+        /// </summary>
+        public const string PubSubConnectionDataType = "PubSubConnectionDataType";
 
         /// <summary>
         /// The BrowseName for the PubSubConnectionType component.
@@ -69449,6 +71649,11 @@ namespace Opc.Ua
         public const string PubSubEventNotifier = "EventNotifier";
 
         /// <summary>
+        /// The BrowseName for the PubSubGroupDataType component.
+        /// </summary>
+        public const string PubSubGroupDataType = "PubSubGroupDataType";
+
+        /// <summary>
         /// The BrowseName for the PubSubGroupType component.
         /// </summary>
         public const string PubSubGroupType = "PubSubGroupType";
@@ -69457,6 +71662,11 @@ namespace Opc.Ua
         /// The BrowseName for the PubSubKeyServiceType component.
         /// </summary>
         public const string PubSubKeyServiceType = "PubSubKeyServiceType";
+
+        /// <summary>
+        /// The BrowseName for the PubSubReaderGroupDataType component.
+        /// </summary>
+        public const string PubSubReaderGroupDataType = "PubSubReaderGroupDataType";
 
         /// <summary>
         /// The BrowseName for the PubSubReaderGroupType component.
@@ -69482,6 +71692,11 @@ namespace Opc.Ua
         /// The BrowseName for the PubSubTransportLimitsExceedEventType component.
         /// </summary>
         public const string PubSubTransportLimitsExceedEventType = "PubSubTransportLimitsExceedEventType";
+
+        /// <summary>
+        /// The BrowseName for the PubSubWriterGroupDataType component.
+        /// </summary>
+        public const string PubSubWriterGroupDataType = "PubSubWriterGroupDataType";
 
         /// <summary>
         /// The BrowseName for the PubSubWriterGroupType component.
@@ -69569,9 +71784,19 @@ namespace Opc.Ua
         public const string ReadCount = "ReadCount";
 
         /// <summary>
+        /// The BrowseName for the ReaderGroupMessageDataType component.
+        /// </summary>
+        public const string ReaderGroupMessageDataType = "ReaderGroupMessageDataType";
+
+        /// <summary>
         /// The BrowseName for the ReaderGroupName_Placeholder component.
         /// </summary>
         public const string ReaderGroupName_Placeholder = "<ReaderGroupName>";
+
+        /// <summary>
+        /// The BrowseName for the ReaderGroupTransportDataType component.
+        /// </summary>
+        public const string ReaderGroupTransportDataType = "ReaderGroupTransportDataType";
 
         /// <summary>
         /// The BrowseName for the ReadEventDetails component.
@@ -70759,6 +72984,16 @@ namespace Opc.Ua
         public const string SubscribedDataSet = "SubscribedDataSet";
 
         /// <summary>
+        /// The BrowseName for the SubscribedDataSetDataType component.
+        /// </summary>
+        public const string SubscribedDataSetDataType = "SubscribedDataSetDataType";
+
+        /// <summary>
+        /// The BrowseName for the SubscribedDataSetMirrorDataType component.
+        /// </summary>
+        public const string SubscribedDataSetMirrorDataType = "SubscribedDataSetMirrorDataType";
+
+        /// <summary>
         /// The BrowseName for the SubscribedDataSetMirrorType component.
         /// </summary>
         public const string SubscribedDataSetMirrorType = "SubscribedDataSetMirrorType";
@@ -70887,6 +73122,11 @@ namespace Opc.Ua
         /// The BrowseName for the TargetVariables component.
         /// </summary>
         public const string TargetVariables = "TargetVariables";
+
+        /// <summary>
+        /// The BrowseName for the TargetVariablesDataType component.
+        /// </summary>
+        public const string TargetVariablesDataType = "TargetVariablesDataType";
 
         /// <summary>
         /// The BrowseName for the TargetVariablesType component.
@@ -71159,14 +73399,39 @@ namespace Opc.Ua
         public const string UadpConnectionType = "UadpConnectionType";
 
         /// <summary>
+        /// The BrowseName for the UadpDataSetMessageContentMask component.
+        /// </summary>
+        public const string UadpDataSetMessageContentMask = "UadpDataSetMessageContentMask";
+
+        /// <summary>
+        /// The BrowseName for the UadpDataSetReaderMessageDataType component.
+        /// </summary>
+        public const string UadpDataSetReaderMessageDataType = "UadpDataSetReaderMessageDataType";
+
+        /// <summary>
         /// The BrowseName for the UadpDataSetReaderTransportType component.
         /// </summary>
         public const string UadpDataSetReaderTransportType = "UadpDataSetReaderTransportType";
 
         /// <summary>
+        /// The BrowseName for the UadpDataSetWriterMessageDataType component.
+        /// </summary>
+        public const string UadpDataSetWriterMessageDataType = "UadpDataSetWriterMessageDataType";
+
+        /// <summary>
+        /// The BrowseName for the UadpNetworkMessageContentMask component.
+        /// </summary>
+        public const string UadpNetworkMessageContentMask = "UadpNetworkMessageContentMask";
+
+        /// <summary>
         /// The BrowseName for the UadpReaderGroupType component.
         /// </summary>
         public const string UadpReaderGroupType = "UadpReaderGroupType";
+
+        /// <summary>
+        /// The BrowseName for the UadpWriterGroupMessageDataType component.
+        /// </summary>
+        public const string UadpWriterGroupMessageDataType = "UadpWriterGroupMessageDataType";
 
         /// <summary>
         /// The BrowseName for the UadpWriterGroupType component.
@@ -71177,6 +73442,11 @@ namespace Opc.Ua
         /// The BrowseName for the UadpWriterTransportType component.
         /// </summary>
         public const string UadpWriterTransportType = "UadpWriterTransportType";
+
+        /// <summary>
+        /// The BrowseName for the UdpWriterGroupTransportDataType component.
+        /// </summary>
+        public const string UdpWriterGroupTransportDataType = "UdpWriterGroupTransportDataType";
 
         /// <summary>
         /// The BrowseName for the UInt16 component.
@@ -71494,9 +73764,19 @@ namespace Opc.Ua
         public const string WriterGroupId = "WriterGroupId";
 
         /// <summary>
+        /// The BrowseName for the WriterGroupMessageDataType component.
+        /// </summary>
+        public const string WriterGroupMessageDataType = "WriterGroupMessageDataType";
+
+        /// <summary>
         /// The BrowseName for the WriterGroupName_Placeholder component.
         /// </summary>
         public const string WriterGroupName_Placeholder = "<WriterGroupName>";
+
+        /// <summary>
+        /// The BrowseName for the WriterGroupTransportDataType component.
+        /// </summary>
+        public const string WriterGroupTransportDataType = "WriterGroupTransportDataType";
 
         /// <summary>
         /// The BrowseName for the WriteValue component.

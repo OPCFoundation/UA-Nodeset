@@ -32328,7 +32328,8 @@ namespace Opc.Ua
            "Af////8AAAAA";
 
         private const string Endpoints_InitializationString =
-           "//////////8VYIkKAgAAAAAACQAAAEVuZHBvaW50cwEALz8ALgBELz8AAAAMAQAAAAEB/////wAAAAA=";
+           "//////////8VYIkKAgAAAAAACQAAAEVuZHBvaW50cwEALz8ALgBELz8AAAEAqDwBAAAAAQH/////AAAA" +
+           "AA==";
 
         private const string EndpointsExclude_InitializationString =
            "//////////8VYIkKAgAAAAAAEAAAAEVuZHBvaW50c0V4Y2x1ZGUBADM8AC4ARDM8AAAAAf////8BAf//" +
@@ -32369,23 +32370,23 @@ namespace Opc.Ua
            "AAAAAAoAAABJZGVudGl0aWVzAQAtPwAuAEQtPwAAAQASPQEAAAABAf////8AAAAAFWCJCgIAAAAAAAwA" +
            "AABBcHBsaWNhdGlvbnMBAC4/AC4ARC4/AAAADAEAAAABAf////8AAAAAFWCJCgIAAAAAABMAAABBcHBs" +
            "aWNhdGlvbnNFeGNsdWRlAQAyPAAuAEQyPAAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAJAAAARW5k" +
-           "cG9pbnRzAQAvPwAuAEQvPwAAAAwBAAAAAQH/////AAAAABVgiQoCAAAAAAAQAAAARW5kcG9pbnRzRXhj" +
-           "bHVkZQEAMzwALgBEMzwAAAAB/////wEB/////wAAAAAEYYIKBAAAAAAACwAAAEFkZElkZW50aXR5AQAI" +
-           "PQAvAQAIPQg9AAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEACT0ALgBECT0A" +
-           "AJYBAAAAAQAqAQEaAAAACQAAAFJ1bGVUb0FkZAEAEj3/////AAAAAAABACgBAQAAAAEB/////wAAAAAE" +
-           "YYIKBAAAAAAADgAAAFJlbW92ZUlkZW50aXR5AQAKPQAvAQAKPQo9AAABAf////8BAAAAFWCpCgIAAAAA" +
-           "AA4AAABJbnB1dEFyZ3VtZW50cwEACz0ALgBECz0AAJYBAAAAAQAqAQEdAAAADAAAAFJ1bGVUb1JlbW92" +
-           "ZQEAEj3/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAAADgAAAEFkZEFwcGxpY2F0aW9u" +
-           "AQAwPwAvAQAwPzA/AAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAMT8ALgBE" +
-           "MT8AAJYBAAAAAQAqAQEYAAAACQAAAFJ1bGVUb0FkZAAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAA" +
-           "BGGCCgQAAAAAABEAAABSZW1vdmVBcHBsaWNhdGlvbgEAMj8ALwEAMj8yPwAAAQH/////AQAAABVgqQoC" +
-           "AAAAAAAOAAAASW5wdXRBcmd1bWVudHMBADM/AC4ARDM/AACWAQAAAAEAKgEBGwAAAAwAAABSdWxlVG9S" +
-           "ZW1vdmUADP////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAAALAAAAQWRkRW5kcG9pbnQB" +
-           "ADQ/AC8BADQ/ND8AAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQA1PwAuAEQ1" +
-           "PwAAlgEAAAABACoBARgAAAAJAAAAUnVsZVRvQWRkAAz/////AAAAAAABACgBAQAAAAEB/////wAAAAAE" +
-           "YYIKBAAAAAAADgAAAFJlbW92ZUVuZHBvaW50AQA2PwAvAQA2PzY/AAABAf////8BAAAAFWCpCgIAAAAA" +
-           "AA4AAABJbnB1dEFyZ3VtZW50cwEANz8ALgBENz8AAJYBAAAAAQAqAQEbAAAADAAAAFJ1bGVUb1JlbW92" +
-           "ZQAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
+           "cG9pbnRzAQAvPwAuAEQvPwAAAQCoPAEAAAABAf////8AAAAAFWCJCgIAAAAAABAAAABFbmRwb2ludHNF" +
+           "eGNsdWRlAQAzPAAuAEQzPAAAAAH/////AQH/////AAAAAARhggoEAAAAAAALAAAAQWRkSWRlbnRpdHkB" +
+           "AAg9AC8BAAg9CD0AAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQAJPQAuAEQJ" +
+           "PQAAlgEAAAABACoBARoAAAAJAAAAUnVsZVRvQWRkAQASPf////8AAAAAAAEAKAEBAAAAAQH/////AAAA" +
+           "AARhggoEAAAAAAAOAAAAUmVtb3ZlSWRlbnRpdHkBAAo9AC8BAAo9Cj0AAAEB/////wEAAAAVYKkKAgAA" +
+           "AAAADgAAAElucHV0QXJndW1lbnRzAQALPQAuAEQLPQAAlgEAAAABACoBAR0AAAAMAAAAUnVsZVRvUmVt" +
+           "b3ZlAQASPf////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAAAOAAAAQWRkQXBwbGljYXRp" +
+           "b24BADA/AC8BADA/MD8AAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQAxPwAu" +
+           "AEQxPwAAlgEAAAABACoBARgAAAAJAAAAUnVsZVRvQWRkAAz/////AAAAAAABACgBAQAAAAEB/////wAA" +
+           "AAAEYYIKBAAAAAAAEQAAAFJlbW92ZUFwcGxpY2F0aW9uAQAyPwAvAQAyPzI/AAABAf////8BAAAAFWCp" +
+           "CgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAMz8ALgBEMz8AAJYBAAAAAQAqAQEbAAAADAAAAFJ1bGVU" +
+           "b1JlbW92ZQAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAAAAAsAAABBZGRFbmRwb2lu" +
+           "dAEAND8ALwEAND80PwAAAQH/////AQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBADU/AC4A" +
+           "RDU/AACWAQAAAAEAKgEBGAAAAAkAAABSdWxlVG9BZGQADP////8AAAAAAAEAKAEBAAAAAQH/////AAAA" +
+           "AARhggoEAAAAAAAOAAAAUmVtb3ZlRW5kcG9pbnQBADY/AC8BADY/Nj8AAAEB/////wEAAAAVYKkKAgAA" +
+           "AAAADgAAAElucHV0QXJndW1lbnRzAQA3PwAuAEQ3PwAAlgEAAAABACoBARsAAAAMAAAAUnVsZVRvUmVt" +
+           "b3ZlAAz/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -32457,7 +32458,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the Endpoints Property.
         /// </summary>
-        public PropertyState<string[]> Endpoints
+        public PropertyState<EndpointType[]> Endpoints
         {
             get
             {
@@ -32780,11 +32781,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                Endpoints = new PropertyState<string[]>(this);
+                                Endpoints = new PropertyState<EndpointType[]>(this);
                             }
                             else
                             {
-                                Endpoints = (PropertyState<string[]>)replacement;
+                                Endpoints = (PropertyState<EndpointType[]>)replacement;
                             }
                         }
                     }
@@ -32954,7 +32955,7 @@ namespace Opc.Ua
         private PropertyState<IdentityMappingRuleType[]> m_identities;
         private PropertyState<string[]> m_applications;
         private PropertyState<bool> m_applicationsExclude;
-        private PropertyState<string[]> m_endpoints;
+        private PropertyState<EndpointType[]> m_endpoints;
         private PropertyState<bool> m_endpointsExclude;
         private AddIdentityMethodState m_addIdentityMethod;
         private RemoveIdentityMethodState m_removeIdentityMethod;
@@ -67582,7 +67583,7 @@ namespace Opc.Ua
            "////AQH/////AAAAAARggAoBAAAAAAAKAAAATGl2ZVZhbHVlcwEAi0wALwA6i0wAAP////8AAAAA";
 
         private const string InitializationString =
-           "//////////8EYIAAAQAAAAAAGQAAAERhdGFTZXRXcml0ZXJUeXBlSW5zdGFuY2UBAMI7AQDCO/////8E" +
+           "//////////8EYIAAAQAAAAAAGQAAAERhdGFTZXRXcml0ZXJUeXBlSW5zdGFuY2UBAMI7AQDCO/////8D" +
            "AAAABGCACgEAAAAAAAYAAABTdGF0dXMBAMM7AC8BADM5wzsAAP////8BAAAAFWCJCgIAAAAAAAUAAABT" +
            "dGF0ZQEAxDsALgBExDsAAAEANzn/////AQH/////AAAAAARggAoBAAAAAAALAAAARGlhZ25vc3RpY3MB" +
            "AF5MAC8BAABOXkwAAP////8HAAAAFWCJCgIAAAAAABAAAABEaWFnbm9zdGljc0xldmVsAQBfTAAvAD9f" +
@@ -67634,8 +67635,7 @@ namespace Opc.Ua
            "Y3NMZXZlbAEAj0wALgBEj0wAAAYAAAAAAQALTf////8BAf////8AAAAAFWCJCgIAAAAAAA8AAABUaW1l" +
            "Rmlyc3RDaGFuZ2UBAJBMAC4ARJBMAAAADf////8BAf////8AAAAABGCACgEAAAAAAAoAAABMaXZlVmFs" +
            "dWVzAQCLTAAvADqLTAAA/////wAAAAAEYIAKAQAAAAAAEQAAAFRyYW5zcG9ydFNldHRpbmdzAQDHOwAv" +
-           "AQDJO8c7AAD/////AAAAABVgiQoCAAAAAAAZAAAARGF0YVNldE1lc3NhZ2VDb250ZW50TWFzawEAqjwA" +
-           "LgBEqjwAAAEArDz/////AQH/////AAAAAA==";
+           "AQDJO8c7AAD/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -67703,27 +67703,6 @@ namespace Opc.Ua
                 m_transportSettings = value;
             }
         }
-
-        /// <summary>
-        /// A description for the DataSetMessageContentMask Property.
-        /// </summary>
-        public PropertyState<DataSetMessageContentMask> DataSetMessageContentMask
-        {
-            get
-            {
-                return m_dataSetMessageContentMask;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_dataSetMessageContentMask, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_dataSetMessageContentMask = value;
-            }
-        }
         #endregion
 
         #region Overridden Methods
@@ -67749,11 +67728,6 @@ namespace Opc.Ua
             if (m_transportSettings != null)
             {
                 children.Add(m_transportSettings);
-            }
-
-            if (m_dataSetMessageContentMask != null)
-            {
-                children.Add(m_dataSetMessageContentMask);
             }
 
             base.GetChildren(context, children);
@@ -67839,27 +67813,6 @@ namespace Opc.Ua
                     instance = TransportSettings;
                     break;
                 }
-
-                case Opc.Ua.BrowseNames.DataSetMessageContentMask:
-                {
-                    if (createOrReplace)
-                    {
-                        if (DataSetMessageContentMask == null)
-                        {
-                            if (replacement == null)
-                            {
-                                DataSetMessageContentMask = new PropertyState<DataSetMessageContentMask>(this);
-                            }
-                            else
-                            {
-                                DataSetMessageContentMask = (PropertyState<DataSetMessageContentMask>)replacement;
-                            }
-                        }
-                    }
-
-                    instance = DataSetMessageContentMask;
-                    break;
-                }
             }
 
             if (instance != null)
@@ -67875,7 +67828,6 @@ namespace Opc.Ua
         private PubSubStatusState m_status;
         private PubSubDiagnosticsDataSetWriterState m_diagnostics;
         private DataSetWriterTransportState m_transportSettings;
-        private PropertyState<DataSetMessageContentMask> m_dataSetMessageContentMask;
         #endregion
     }
     #endif
@@ -72647,7 +72599,7 @@ namespace Opc.Ua
            "HQAAAAwAAABTZWN1cml0eU1vZGUBAC4B/////wAAAAAAAQAqAQEeAAAADwAAAFNlY3VyaXR5R3JvdXBJ" +
            "ZAAM/////wAAAAAAAQAqAQEcAAAADQAAAFdyaXRlckdyb3VwSWQABf////8AAAAAAAEAKgEBJAAAABUA" +
            "AABNYXhOZXR3b3JrTWVzc2FnZVNpemUABf////8AAAAAAAEAKgEBKgAAABkAAABOZXR3b3JrTWVzc2Fn" +
-           "ZUNvbnRlbnRNYXNrAQCKQ/////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0" +
+           "ZUNvbnRlbnRNYXNrAQAaPf////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0" +
            "cHV0QXJndW1lbnRzAQAYRAAuAEQYRAAAlgEAAAABACoBARYAAAAHAAAAR3JvdXBJZAAR/////wAAAAAA" +
            "AQAoAQEAAAABAf////8AAAAA";
 
@@ -72678,7 +72630,7 @@ namespace Opc.Ua
            "cml0eU1vZGUBAC4B/////wAAAAAAAQAqAQEeAAAADwAAAFNlY3VyaXR5R3JvdXBJZAAM/////wAAAAAA" +
            "AQAqAQEcAAAADQAAAFdyaXRlckdyb3VwSWQABf////8AAAAAAAEAKgEBJAAAABUAAABNYXhOZXR3b3Jr" +
            "TWVzc2FnZVNpemUABf////8AAAAAAAEAKgEBKgAAABkAAABOZXR3b3JrTWVzc2FnZUNvbnRlbnRNYXNr" +
-           "AQCKQ/////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRz" +
+           "AQAaPf////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRz" +
            "AQAYRAAuAEQYRAAAlgEAAAABACoBARYAAAAHAAAAR3JvdXBJZAAR/////wAAAAAAAQAoAQEAAAABAf//" +
            "//8AAAAABGGCCgQAAAAAAA4AAABBZGRSZWFkZXJHcm91cAEAGUQALwEAGUQZRAAAAQH/////AgAAABVg" +
            "qQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBABpEAC4ARBpEAACWBAAAAAEAKgEBGAAAAAkAAABHcm91" +
@@ -72987,7 +72939,7 @@ namespace Opc.Ua
            "CAAAAFByaW9yaXR5AAP/////AAAAAAABACoBAR0AAAAMAAAAU2VjdXJpdHlNb2RlAQAuAf////8AAAAA" +
            "AAEAKgEBHgAAAA8AAABTZWN1cml0eUdyb3VwSWQADP////8AAAAAAAEAKgEBHAAAAA0AAABXcml0ZXJH" +
            "cm91cElkAAX/////AAAAAAABACoBASQAAAAVAAAATWF4TmV0d29ya01lc3NhZ2VTaXplAAX/////AAAA" +
-           "AAABACoBASoAAAAZAAAATmV0d29ya01lc3NhZ2VDb250ZW50TWFzawEAikP/////AAAAAAABACgBAQAA" +
+           "AAABACoBASoAAAAZAAAATmV0d29ya01lc3NhZ2VDb250ZW50TWFzawEAGj3/////AAAAAAABACgBAQAA" +
            "AAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEAP0QALgBEP0QAAJYBAAAAAQAq" +
            "AQEWAAAABwAAAEdyb3VwSWQAEf////8AAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
         #endregion
@@ -73035,7 +72987,7 @@ namespace Opc.Ua
             string securityGroupId = (string)inputArguments[6];
             ushort writerGroupId = (ushort)inputArguments[7];
             ushort maxNetworkMessageSize = (ushort)inputArguments[8];
-            NetworkMessageContentMask networkMessageContentMask = (NetworkMessageContentMask)inputArguments[9];
+            UadpNetworkMessageContentMask networkMessageContentMask = (UadpNetworkMessageContentMask)inputArguments[9];
 
             NodeId groupId = (NodeId)outputArguments[0];
 
@@ -73085,7 +73037,7 @@ namespace Opc.Ua
         string securityGroupId,
         ushort writerGroupId,
         ushort maxNetworkMessageSize,
-        NetworkMessageContentMask networkMessageContentMask,
+        UadpNetworkMessageContentMask networkMessageContentMask,
         ref NodeId groupId);
     #endif
     #endregion
@@ -73316,7 +73268,7 @@ namespace Opc.Ua
            "AAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQA7RAAuAEQ7RAAAlgUAAAABACoBASAAAAARAAAA" +
            "RGF0YVNldFdyaXRlck5hbWUADP////8AAAAAAAEAKgEBHgAAAA8AAABEYXRhU2V0V3JpdGVySWQABf//" +
            "//8AAAAAAAEAKgEBIQAAABIAAABQdWJsaXNoZWREYXRhU2V0SWQAEf////8AAAAAAAEAKgEBKgAAABkA" +
-           "AABEYXRhU2V0TWVzc2FnZUNvbnRlbnRNYXNrAQCsPP////8AAAAAAAEAKgEBHAAAAA0AAABLZXlGcmFt" +
+           "AABEYXRhU2V0TWVzc2FnZUNvbnRlbnRNYXNrAQAePf////8AAAAAAAEAKgEBHAAAAA0AAABLZXlGcmFt" +
            "ZUNvdW50AAf/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3Vt" +
            "ZW50cwEAPEQALgBEPEQAAJYCAAAAAQAqAQEiAAAAEwAAAERhdGFTZXRXcml0ZXJOb2RlSWQAEf////8A" +
            "AAAAAAEAKgEBIwAAABQAAABSZXZpc2VkS2V5RnJhbWVDb3VudAAH/////wAAAAAAAQAoAQEAAAABAf//" +
@@ -73335,7 +73287,7 @@ namespace Opc.Ua
            "////AAAAABVgiQoCAAAAAAAMAAAAR3JvdXBWZXJzaW9uAQC2TwAuAES2TwAAAQAGUv////8BAf////8A" +
            "AAAAFWCJCgIAAAAAAA8AAABEYXRhU2V0T3JkZXJpbmcBALdPAC4ARLdPAAABALhP/////wEB/////wAA" +
            "AAAVYIkKAgAAAAAAFQAAAE1heE5ldHdvcmtNZXNzYWdlU2l6ZQEAM0QALgBEM0QAAAAF/////wEB////" +
-           "/wAAAAAVYIkKAgAAAAAAGQAAAE5ldHdvcmtNZXNzYWdlQ29udGVudE1hc2sBADREAC4ARDREAAABAIpD" +
+           "/wAAAAAVYIkKAgAAAAAAGQAAAE5ldHdvcmtNZXNzYWdlQ29udGVudE1hc2sBADREAC4ARDREAAABABo9" +
            "/////wEB/////wAAAAAVYIkKAgAAAAAADgAAAFNhbXBsaW5nT2Zmc2V0AQA1RAAuAEQ1RAAAAQAiAf//" +
            "//8BAf////8AAAAAFWCJCgIAAAAAABAAAABQdWJsaXNoaW5nT2Zmc2V0AQA2RAAuAEQ2RAAAAQAiAf//" +
            "//8BAf////8AAAAAFWCJCgIAAAAAABIAAABNZXNzYWdlUmVwZWF0Q291bnQBADdEAC4ARDdEAAAAA///" +
@@ -73344,7 +73296,7 @@ namespace Opc.Ua
            "/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQA7RAAuAEQ7RAAAlgUAAAABACoBASAA" +
            "AAARAAAARGF0YVNldFdyaXRlck5hbWUADP////8AAAAAAAEAKgEBHgAAAA8AAABEYXRhU2V0V3JpdGVy" +
            "SWQABf////8AAAAAAAEAKgEBIQAAABIAAABQdWJsaXNoZWREYXRhU2V0SWQAEf////8AAAAAAAEAKgEB" +
-           "KgAAABkAAABEYXRhU2V0TWVzc2FnZUNvbnRlbnRNYXNrAQCsPP////8AAAAAAAEAKgEBHAAAAA0AAABL" +
+           "KgAAABkAAABEYXRhU2V0TWVzc2FnZUNvbnRlbnRNYXNrAQAePf////8AAAAAAAEAKgEBHAAAAA0AAABL" +
            "ZXlGcmFtZUNvdW50AAf/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1" +
            "dEFyZ3VtZW50cwEAPEQALgBEPEQAAJYCAAAAAQAqAQEiAAAAEwAAAERhdGFTZXRXcml0ZXJOb2RlSWQA" +
            "Ef////8AAAAAAAEAKgEBIwAAABQAAABSZXZpc2VkS2V5RnJhbWVDb3VudAAH/////wAAAAAAAQAoAQEA" +
@@ -73441,7 +73393,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the NetworkMessageContentMask Property.
         /// </summary>
-        public PropertyState<NetworkMessageContentMask> NetworkMessageContentMask
+        public PropertyState<UadpNetworkMessageContentMask> NetworkMessageContentMask
         {
             get
             {
@@ -73738,11 +73690,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                NetworkMessageContentMask = new PropertyState<NetworkMessageContentMask>(this);
+                                NetworkMessageContentMask = new PropertyState<UadpNetworkMessageContentMask>(this);
                             }
                             else
                             {
-                                NetworkMessageContentMask = (PropertyState<NetworkMessageContentMask>)replacement;
+                                NetworkMessageContentMask = (PropertyState<UadpNetworkMessageContentMask>)replacement;
                             }
                         }
                     }
@@ -73871,7 +73823,7 @@ namespace Opc.Ua
         private PropertyState<uint> m_groupVersion;
         private PropertyState<DataSetOrderingType> m_dataSetOrdering;
         private PropertyState<ushort> m_maxNetworkMessageSize;
-        private PropertyState<NetworkMessageContentMask> m_networkMessageContentMask;
+        private PropertyState<UadpNetworkMessageContentMask> m_networkMessageContentMask;
         private PropertyState<double> m_samplingOffset;
         private PropertyState<double> m_publishingOffset;
         private PropertyState<byte> m_messageRepeatCount;
@@ -73933,7 +73885,7 @@ namespace Opc.Ua
            "AQCdOp06AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAnjoALgBEnjoAAJYF" +
            "AAAAAQAqAQEgAAAAEQAAAERhdGFTZXRXcml0ZXJOYW1lAAz/////AAAAAAABACoBAR4AAAAPAAAARGF0" +
            "YVNldFdyaXRlcklkAAX/////AAAAAAABACoBASEAAAASAAAAUHVibGlzaGVkRGF0YVNldElkABH/////" +
-           "AAAAAAABACoBASoAAAAZAAAARGF0YVNldE1lc3NhZ2VDb250ZW50TWFzawEArDz/////AAAAAAABACoB" +
+           "AAAAAAABACoBASoAAAAZAAAARGF0YVNldE1lc3NhZ2VDb250ZW50TWFzawEAHj3/////AAAAAAABACoB" +
            "ARwAAAANAAAAS2V5RnJhbWVDb3VudAAH/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAA" +
            "AA8AAABPdXRwdXRBcmd1bWVudHMBAJ86AC4ARJ86AACWAgAAAAEAKgEBIgAAABMAAABEYXRhU2V0V3Jp" +
            "dGVyTm9kZUlkABH/////AAAAAAABACoBASMAAAAUAAAAUmV2aXNlZEtleUZyYW1lQ291bnQAB/////8A" +
@@ -73977,7 +73929,7 @@ namespace Opc.Ua
             string dataSetWriterName = (string)inputArguments[0];
             ushort dataSetWriterId = (ushort)inputArguments[1];
             NodeId publishedDataSetId = (NodeId)inputArguments[2];
-            DataSetMessageContentMask dataSetMessageContentMask = (DataSetMessageContentMask)inputArguments[3];
+            UadpDataSetMessageContentMask dataSetMessageContentMask = (UadpDataSetMessageContentMask)inputArguments[3];
             uint keyFrameCount = (uint)inputArguments[4];
 
             NodeId dataSetWriterNodeId = (NodeId)outputArguments[0];
@@ -74020,7 +73972,7 @@ namespace Opc.Ua
         string dataSetWriterName,
         ushort dataSetWriterId,
         NodeId publishedDataSetId,
-        DataSetMessageContentMask dataSetMessageContentMask,
+        UadpDataSetMessageContentMask dataSetMessageContentMask,
         uint keyFrameCount,
         ref NodeId dataSetWriterNodeId,
         ref uint revisedKeyFrameCount);
@@ -74091,8 +74043,8 @@ namespace Opc.Ua
            "RGF0YVNldFJlYWRlck5hbWUADP////8AAAAAAAEAKgEBGgAAAAsAAABQdWJsaXNoZXJJZAAY/////wAA" +
            "AAAAAQAqAQEeAAAADwAAAERhdGFTZXRXcml0ZXJJZAAF/////wAAAAAAAQAqAQEgAAAADwAAAERhdGFT" +
            "ZXRNZXRhRGF0YQEAuzj/////AAAAAAABACoBASYAAAAVAAAATWVzc2FnZVJlY2VpdmVUaW1lb3V0AQAi" +
-           "Af////8AAAAAAAEAKgEBKgAAABkAAABOZXR3b3JrTWVzc2FnZUNvbnRlbnRNYXNrAQCKQ/////8AAAAA" +
-           "AAEAKgEBKgAAABkAAABEYXRhU2V0TWVzc2FnZUNvbnRlbnRNYXNrAQCsPP////8AAAAAAAEAKgEBIwAA" +
+           "Af////8AAAAAAAEAKgEBKgAAABkAAABOZXR3b3JrTWVzc2FnZUNvbnRlbnRNYXNrAQAaPf////8AAAAA" +
+           "AAEAKgEBKgAAABkAAABEYXRhU2V0TWVzc2FnZUNvbnRlbnRNYXNrAQAePf////8AAAAAAAEAKgEBIwAA" +
            "ABIAAABQdWJsaXNoaW5nSW50ZXJ2YWwBACIB/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIA" +
            "AAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAF5EAC4ARF5EAACWAgAAAAEAKgEBIgAAABMAAABEYXRhU2V0" +
            "UmVhZGVyTm9kZUlkABH/////AAAAAAABACoBAS0AAAAcAAAAUmV2aXNlZE1lc3NhZ2VSZWNlaXZlVGlt" +
@@ -74109,8 +74061,8 @@ namespace Opc.Ua
            "GgAAAAsAAABQdWJsaXNoZXJJZAAY/////wAAAAAAAQAqAQEeAAAADwAAAERhdGFTZXRXcml0ZXJJZAAF" +
            "/////wAAAAAAAQAqAQEgAAAADwAAAERhdGFTZXRNZXRhRGF0YQEAuzj/////AAAAAAABACoBASYAAAAV" +
            "AAAATWVzc2FnZVJlY2VpdmVUaW1lb3V0AQAiAf////8AAAAAAAEAKgEBKgAAABkAAABOZXR3b3JrTWVz" +
-           "c2FnZUNvbnRlbnRNYXNrAQCKQ/////8AAAAAAAEAKgEBKgAAABkAAABEYXRhU2V0TWVzc2FnZUNvbnRl" +
-           "bnRNYXNrAQCsPP////8AAAAAAAEAKgEBIwAAABIAAABQdWJsaXNoaW5nSW50ZXJ2YWwBACIB/////wAA" +
+           "c2FnZUNvbnRlbnRNYXNrAQAaPf////8AAAAAAAEAKgEBKgAAABkAAABEYXRhU2V0TWVzc2FnZUNvbnRl" +
+           "bnRNYXNrAQAePf////8AAAAAAAEAKgEBIwAAABIAAABQdWJsaXNoaW5nSW50ZXJ2YWwBACIB/////wAA" +
            "AAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAF5EAC4ARF5E" +
            "AACWAgAAAAEAKgEBIgAAABMAAABEYXRhU2V0UmVhZGVyTm9kZUlkABH/////AAAAAAABACoBAS0AAAAc" +
            "AAAAUmV2aXNlZE1lc3NhZ2VSZWNlaXZlVGltZW91dAEAIgH/////AAAAAAABACgBAQAAAAEB/////wAA" +
@@ -74317,7 +74269,7 @@ namespace Opc.Ua
            "bGlzaGVySWQAGP////8AAAAAAAEAKgEBHgAAAA8AAABEYXRhU2V0V3JpdGVySWQABf////8AAAAAAAEA" +
            "KgEBIAAAAA8AAABEYXRhU2V0TWV0YURhdGEBALs4/////wAAAAAAAQAqAQEmAAAAFQAAAE1lc3NhZ2VS" +
            "ZWNlaXZlVGltZW91dAEAIgH/////AAAAAAABACoBASoAAAAZAAAATmV0d29ya01lc3NhZ2VDb250ZW50" +
-           "TWFzawEAikP/////AAAAAAABACoBASoAAAAZAAAARGF0YVNldE1lc3NhZ2VDb250ZW50TWFzawEArDz/" +
+           "TWFzawEAGj3/////AAAAAAABACoBASoAAAAZAAAARGF0YVNldE1lc3NhZ2VDb250ZW50TWFzawEAHj3/" +
            "////AAAAAAABACoBASMAAAASAAAAUHVibGlzaGluZ0ludGVydmFsAQAiAf////8AAAAAAAEAKAEBAAAA" +
            "AQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQCiOgAuAESiOgAAlgIAAAABACoB" +
            "ASIAAAATAAAARGF0YVNldFJlYWRlck5vZGVJZAAR/////wAAAAAAAQAqAQEtAAAAHAAAAFJldmlzZWRN" +
@@ -74363,8 +74315,8 @@ namespace Opc.Ua
             ushort dataSetWriterId = (ushort)inputArguments[2];
             DataSetMetaDataType dataSetMetaData = (DataSetMetaDataType)ExtensionObject.ToEncodeable((ExtensionObject)inputArguments[3]);
             double messageReceiveTimeout = (double)inputArguments[4];
-            NetworkMessageContentMask networkMessageContentMask = (NetworkMessageContentMask)inputArguments[5];
-            DataSetMessageContentMask dataSetMessageContentMask = (DataSetMessageContentMask)inputArguments[6];
+            UadpNetworkMessageContentMask networkMessageContentMask = (UadpNetworkMessageContentMask)inputArguments[5];
+            UadpDataSetMessageContentMask dataSetMessageContentMask = (UadpDataSetMessageContentMask)inputArguments[6];
             double publishingInterval = (double)inputArguments[7];
 
             NodeId dataSetReaderNodeId = (NodeId)outputArguments[0];
@@ -74412,8 +74364,8 @@ namespace Opc.Ua
         ushort dataSetWriterId,
         DataSetMetaDataType dataSetMetaData,
         double messageReceiveTimeout,
-        NetworkMessageContentMask networkMessageContentMask,
-        DataSetMessageContentMask dataSetMessageContentMask,
+        UadpNetworkMessageContentMask networkMessageContentMask,
+        UadpDataSetMessageContentMask dataSetMessageContentMask,
         double publishingInterval,
         ref NodeId dataSetReaderNodeId,
         ref double revisedMessageReceiveTimeout);
@@ -74786,8 +74738,8 @@ namespace Opc.Ua
            "AAAVYIkKAgAAAAAADQAAAERhdGFTZXRPZmZzZXQBAEZQAC4AREZQAAAABf////8BAf////8AAAAAFWCJ" +
            "CgIAAAAAAA8AAABEYXRhU2V0V3JpdGVySWQBADQ7AC4ARDQ7AAAABf////8BAf////8AAAAAFWCJCgIA" +
            "AAAAAA4AAABEYXRhU2V0Q2xhc3NJZAEAR1AALgBER1AAAAAO/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "GQAAAE5ldHdvcmtNZXNzYWdlQ29udGVudE1hc2sBAEhQAC4AREhQAAABAIpD/////wEB/////wAAAAAV" +
-           "YIkKAgAAAAAAGQAAAERhdGFTZXRNZXNzYWdlQ29udGVudE1hc2sBAElQAC4ARElQAAABAKw8/////wEB" +
+           "GQAAAE5ldHdvcmtNZXNzYWdlQ29udGVudE1hc2sBAEhQAC4AREhQAAABABo9/////wEB/////wAAAAAV" +
+           "YIkKAgAAAAAAGQAAAERhdGFTZXRNZXNzYWdlQ29udGVudE1hc2sBAElQAC4ARElQAAABAB49/////wEB" +
            "/////wAAAAAVYIkKAgAAAAAAEgAAAFB1Ymxpc2hpbmdJbnRlcnZhbAEASlAALgBESlAAAAEAIgH/////" +
            "AQH/////AAAAAA==";
         #endregion
@@ -74945,7 +74897,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the NetworkMessageContentMask Property.
         /// </summary>
-        public PropertyState<NetworkMessageContentMask> NetworkMessageContentMask
+        public PropertyState<UadpNetworkMessageContentMask> NetworkMessageContentMask
         {
             get
             {
@@ -74966,7 +74918,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the DataSetMessageContentMask Property.
         /// </summary>
-        public PropertyState<DataSetMessageContentMask> DataSetMessageContentMask
+        public PropertyState<UadpDataSetMessageContentMask> DataSetMessageContentMask
         {
             get
             {
@@ -75242,11 +75194,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                NetworkMessageContentMask = new PropertyState<NetworkMessageContentMask>(this);
+                                NetworkMessageContentMask = new PropertyState<UadpNetworkMessageContentMask>(this);
                             }
                             else
                             {
-                                NetworkMessageContentMask = (PropertyState<NetworkMessageContentMask>)replacement;
+                                NetworkMessageContentMask = (PropertyState<UadpNetworkMessageContentMask>)replacement;
                             }
                         }
                     }
@@ -75263,11 +75215,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                DataSetMessageContentMask = new PropertyState<DataSetMessageContentMask>(this);
+                                DataSetMessageContentMask = new PropertyState<UadpDataSetMessageContentMask>(this);
                             }
                             else
                             {
-                                DataSetMessageContentMask = (PropertyState<DataSetMessageContentMask>)replacement;
+                                DataSetMessageContentMask = (PropertyState<UadpDataSetMessageContentMask>)replacement;
                             }
                         }
                     }
@@ -75315,8 +75267,8 @@ namespace Opc.Ua
         private PropertyState<ushort> m_dataSetOffset;
         private PropertyState<ushort> m_dataSetWriterId;
         private PropertyState<Guid> m_dataSetClassId;
-        private PropertyState<NetworkMessageContentMask> m_networkMessageContentMask;
-        private PropertyState<DataSetMessageContentMask> m_dataSetMessageContentMask;
+        private PropertyState<UadpNetworkMessageContentMask> m_networkMessageContentMask;
+        private PropertyState<UadpDataSetMessageContentMask> m_dataSetMessageContentMask;
         private PropertyState<double> m_publishingInterval;
         #endregion
     }
