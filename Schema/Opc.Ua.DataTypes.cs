@@ -15569,6 +15569,91 @@ namespace Opc.Ua
         private StructureFieldCollection m_fields;
         #endregion
     }
+
+    #region StructureDefinitionCollection Class
+    /// <summary>
+    /// A collection of StructureDefinition objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfStructureDefinition", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "StructureDefinition")]
+    #if !NET_STANDARD
+    public partial class StructureDefinitionCollection : List<StructureDefinition>, ICloneable
+    #else
+    public partial class StructureDefinitionCollection : List<StructureDefinition>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public StructureDefinitionCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public StructureDefinitionCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public StructureDefinitionCollection(IEnumerable<StructureDefinition> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator StructureDefinitionCollection(StructureDefinition[] values)
+        {
+            if (values != null)
+            {
+                return new StructureDefinitionCollection(values);
+            }
+
+            return new StructureDefinitionCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator StructureDefinition[](StructureDefinitionCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (StructureDefinitionCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            StructureDefinitionCollection clone = new StructureDefinitionCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((StructureDefinition)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
     #endif
     #endregion
 
@@ -15720,6 +15805,91 @@ namespace Opc.Ua
         private EnumFieldCollection m_fields;
         #endregion
     }
+
+    #region EnumDefinitionCollection Class
+    /// <summary>
+    /// A collection of EnumDefinition objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfEnumDefinition", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "EnumDefinition")]
+    #if !NET_STANDARD
+    public partial class EnumDefinitionCollection : List<EnumDefinition>, ICloneable
+    #else
+    public partial class EnumDefinitionCollection : List<EnumDefinition>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public EnumDefinitionCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public EnumDefinitionCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public EnumDefinitionCollection(IEnumerable<EnumDefinition> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator EnumDefinitionCollection(EnumDefinition[] values)
+        {
+            if (values != null)
+            {
+                return new EnumDefinitionCollection(values);
+            }
+
+            return new EnumDefinitionCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator EnumDefinition[](EnumDefinitionCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (EnumDefinitionCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            EnumDefinitionCollection clone = new EnumDefinitionCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((EnumDefinition)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
     #endif
     #endregion
 
