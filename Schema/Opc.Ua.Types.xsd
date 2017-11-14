@@ -1592,6 +1592,19 @@
   </xs:complexType>
   <xs:element name="ListOfRolePermissionType" type="tns:ListOfRolePermissionType" nillable="true"></xs:element>
 
+  <xs:complexType name="DataTypeDefinition">
+    <xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DataTypeDefinition" type="tns:DataTypeDefinition" />
+
+  <xs:complexType name="ListOfDataTypeDefinition">
+    <xs:sequence>
+      <xs:element name="DataTypeDefinition" type="tns:DataTypeDefinition" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfDataTypeDefinition" type="tns:ListOfDataTypeDefinition" nillable="true"></xs:element>
+
   <xs:simpleType  name="StructureType">
     <xs:restriction base="xs:string">
       <xs:enumeration value="Structure_0" />
@@ -1635,6 +1648,13 @@
   </xs:complexType>
   <xs:element name="StructureDefinition" type="tns:StructureDefinition" />
 
+  <xs:complexType name="ListOfStructureDefinition">
+    <xs:sequence>
+      <xs:element name="StructureDefinition" type="tns:StructureDefinition" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfStructureDefinition" type="tns:ListOfStructureDefinition" nillable="true"></xs:element>
+
   <xs:complexType name="EnumDefinition">
     <xs:complexContent mixed="false">
       <xs:extension base="tns:DataTypeDefinition">
@@ -1645,6 +1665,13 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="EnumDefinition" type="tns:EnumDefinition" />
+
+  <xs:complexType name="ListOfEnumDefinition">
+    <xs:sequence>
+      <xs:element name="EnumDefinition" type="tns:EnumDefinition" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfEnumDefinition" type="tns:ListOfEnumDefinition" nillable="true"></xs:element>
 
   <xs:complexType name="Node">
     <xs:annotation>

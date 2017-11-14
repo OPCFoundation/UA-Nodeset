@@ -32467,7 +32467,7 @@ namespace Opc.Ua
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_DataTypeDefinition Variable.
         /// </summary>
-        public const uint OpcUa_BinarySchema_DataTypeDefinition = 18178;
+        public const uint OpcUa_BinarySchema_DataTypeDefinition = 15480;
 
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_StructureField Variable.
@@ -32477,12 +32477,12 @@ namespace Opc.Ua
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_StructureDefinition Variable.
         /// </summary>
-        public const uint OpcUa_BinarySchema_StructureDefinition = 18184;
+        public const uint OpcUa_BinarySchema_StructureDefinition = 15520;
 
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_EnumDefinition Variable.
         /// </summary>
-        public const uint OpcUa_BinarySchema_EnumDefinition = 18187;
+        public const uint OpcUa_BinarySchema_EnumDefinition = 15533;
 
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_Argument Variable.
@@ -33042,7 +33042,7 @@ namespace Opc.Ua
         /// <summary>
         /// The identifier for the OpcUa_XmlSchema_DataTypeDefinition Variable.
         /// </summary>
-        public const uint OpcUa_XmlSchema_DataTypeDefinition = 18166;
+        public const uint OpcUa_XmlSchema_DataTypeDefinition = 16558;
 
         /// <summary>
         /// The identifier for the OpcUa_XmlSchema_StructureField Variable.
@@ -33052,12 +33052,12 @@ namespace Opc.Ua
         /// <summary>
         /// The identifier for the OpcUa_XmlSchema_StructureDefinition Variable.
         /// </summary>
-        public const uint OpcUa_XmlSchema_StructureDefinition = 18172;
+        public const uint OpcUa_XmlSchema_StructureDefinition = 16561;
 
         /// <summary>
         /// The identifier for the OpcUa_XmlSchema_EnumDefinition Variable.
         /// </summary>
-        public const uint OpcUa_XmlSchema_EnumDefinition = 18175;
+        public const uint OpcUa_XmlSchema_EnumDefinition = 16599;
 
         /// <summary>
         /// The identifier for the OpcUa_XmlSchema_Argument Variable.
