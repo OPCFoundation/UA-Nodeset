@@ -440,7 +440,7 @@
 
   <opc:StructuredType Name="PubSubGroupDataType" BaseType="ua:ExtensionObject">
     <opc:Field Name="Name" TypeName="opc:String" />
-    <opc:Field Name="State" TypeName="tns:PubSubState" />
+    <opc:Field Name="Enabled" TypeName="opc:Boolean" />
     <opc:Field Name="SecurityMode" TypeName="tns:MessageSecurityMode" />
     <opc:Field Name="SecurityGroupId" TypeName="opc:String" />
     <opc:Field Name="NoOfSecurityKeyServices" TypeName="opc:Int32" />
@@ -448,11 +448,10 @@
     <opc:Field Name="MaxNetworkMessageSize" TypeName="opc:UInt32" />
   </opc:StructuredType>
 
-  <opc:StructuredType Name="PubSubWriterGroupDataType" BaseType="ua:ExtensionObject">
+  <opc:StructuredType Name="WriterGroupDataType" BaseType="ua:ExtensionObject">
     <opc:Field Name="WriterGroupId" TypeName="opc:UInt16" />
     <opc:Field Name="PublishingInterval" TypeName="opc:Double" />
     <opc:Field Name="KeepAliveTime" TypeName="opc:Double" />
-    <opc:Field Name="EncodingMimeType" TypeName="opc:String" />
     <opc:Field Name="Priority" TypeName="opc:Byte" />
     <opc:Field Name="NoOfLocaleIds" TypeName="opc:Int32" />
     <opc:Field Name="LocaleIds" TypeName="opc:String" LengthField="NoOfLocaleIds" />
@@ -469,20 +468,31 @@
   </opc:StructuredType>
 
   <opc:StructuredType Name="PubSubConnectionDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="Name" TypeName="opc:String" />
     <opc:Field Name="PublisherId" TypeName="ua:Variant" />
     <opc:Field Name="Address" TypeName="opc:String" />
     <opc:Field Name="TransportProfileUri" TypeName="opc:String" />
+    <opc:Field Name="NetworkAddress" TypeName="ua:ExtensionObject" />
     <opc:Field Name="TransportSettings" TypeName="ua:ExtensionObject" />
     <opc:Field Name="NoOfWriterGroups" TypeName="opc:Int32" />
-    <opc:Field Name="WriterGroups" TypeName="tns:PubSubWriterGroupDataType" LengthField="NoOfWriterGroups" />
+    <opc:Field Name="WriterGroups" TypeName="tns:WriterGroupDataType" LengthField="NoOfWriterGroups" />
     <opc:Field Name="NoOfReaderGroups" TypeName="opc:Int32" />
-    <opc:Field Name="ReaderGroups" TypeName="tns:PubSubReaderGroupDataType" LengthField="NoOfReaderGroups" />
+    <opc:Field Name="ReaderGroups" TypeName="tns:ReaderGroupDataType" LengthField="NoOfReaderGroups" />
   </opc:StructuredType>
 
   <opc:StructuredType Name="ConnectionTransportDataType" BaseType="ua:ExtensionObject">
   </opc:StructuredType>
 
-  <opc:StructuredType Name="PubSubReaderGroupDataType" BaseType="ua:ExtensionObject">
+  <opc:StructuredType Name="NetworkAddressDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="NetworkInterface" TypeName="opc:String" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="NetworkAddressUrlDataType" BaseType="tns:NetworkAddressDataType">
+    <opc:Field Name="NetworkInterface" TypeName="opc:String" SourceType="tns:NetworkAddressDataType" />
+    <opc:Field Name="Url" TypeName="opc:String" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="ReaderGroupDataType" BaseType="ua:ExtensionObject">
     <opc:Field Name="TransportSettings" TypeName="ua:ExtensionObject" />
     <opc:Field Name="MessageSettings" TypeName="ua:ExtensionObject" />
     <opc:Field Name="NoOfDataSetWriters" TypeName="opc:Int32" />
@@ -497,15 +507,17 @@
 
   <opc:StructuredType Name="DataSetReaderDataType" BaseType="ua:ExtensionObject">
     <opc:Field Name="Name" TypeName="opc:String" />
-    <opc:Field Name="State" TypeName="tns:PubSubState" />
+    <opc:Field Name="Enabled" TypeName="opc:Boolean" />
+    <opc:Field Name="PublisherId" TypeName="ua:Variant" />
+    <opc:Field Name="WriterGroupId" TypeName="opc:UInt16" />
+    <opc:Field Name="DataSetWriterId" TypeName="opc:UInt16" />
+    <opc:Field Name="DataSetMetaData" TypeName="tns:DataSetMetaDataType" />
+    <opc:Field Name="DataSetFieldContentMask" TypeName="tns:DataSetFieldContentMask" />
+    <opc:Field Name="MessageReceiveTimeout" TypeName="opc:Double" />
     <opc:Field Name="SecurityMode" TypeName="tns:MessageSecurityMode" />
     <opc:Field Name="SecurityGroupId" TypeName="opc:String" />
     <opc:Field Name="NoOfSecurityKeyServices" TypeName="opc:Int32" />
     <opc:Field Name="SecurityKeyServices" TypeName="tns:EndpointDescription" LengthField="NoOfSecurityKeyServices" />
-    <opc:Field Name="PublisherId" TypeName="ua:Variant" />
-    <opc:Field Name="DataSetWriterId" TypeName="opc:UInt16" />
-    <opc:Field Name="DataSetFieldContentMask" TypeName="tns:DataSetFieldContentMask" />
-    <opc:Field Name="MessageReceiveTimeout" TypeName="opc:Double" />
     <opc:Field Name="TransportSettings" TypeName="ua:ExtensionObject" />
     <opc:Field Name="MessageSettings" TypeName="ua:ExtensionObject" />
     <opc:Field Name="SubscribedDataSet" TypeName="ua:ExtensionObject" />
@@ -547,11 +559,12 @@
     <opc:Field Name="RolePermissions" TypeName="tns:RolePermissionType" LengthField="NoOfRolePermissions" />
   </opc:StructuredType>
 
-  <opc:StructuredType Name="PublishSubscribeDataType" BaseType="ua:ExtensionObject">
+  <opc:StructuredType Name="PubSubConfigurationDataType" BaseType="ua:ExtensionObject">
     <opc:Field Name="NoOfPublishedDataSets" TypeName="opc:Int32" />
     <opc:Field Name="PublishedDataSets" TypeName="tns:PublishedDataSetDataType" LengthField="NoOfPublishedDataSets" />
     <opc:Field Name="NoOfConnections" TypeName="opc:Int32" />
     <opc:Field Name="Connections" TypeName="tns:PubSubConnectionDataType" LengthField="NoOfConnections" />
+    <opc:Field Name="Enabled" TypeName="opc:Boolean" />
   </opc:StructuredType>
 
   <opc:EnumeratedType Name="DataSetOrderingType" LengthInBits="32">
@@ -563,7 +576,7 @@
   <opc:EnumeratedType Name="UadpNetworkMessageContentMask" LengthInBits="32">
     <opc:EnumeratedValue Name="PublisherId" Value="1" />
     <opc:EnumeratedValue Name="GroupHeader" Value="2" />
-    <opc:EnumeratedValue Name="GroupId" Value="4" />
+    <opc:EnumeratedValue Name="WriterGroupId" Value="4" />
     <opc:EnumeratedValue Name="GroupVersion" Value="8" />
     <opc:EnumeratedValue Name="NetworkMessageNumber" Value="16" />
     <opc:EnumeratedValue Name="SequenceNumber" Value="32" />
@@ -579,12 +592,13 @@
     <opc:Field Name="DataSetOrdering" TypeName="tns:DataSetOrderingType" />
     <opc:Field Name="NetworkMessageContentMask" TypeName="tns:UadpNetworkMessageContentMask" />
     <opc:Field Name="SamplingOffset" TypeName="opc:Double" />
-    <opc:Field Name="PublishingOffset" TypeName="opc:Double" />
+    <opc:Field Name="NoOfPublishingOffset" TypeName="opc:Int32" />
+    <opc:Field Name="PublishingOffset" TypeName="opc:Double" LengthField="NoOfPublishingOffset" />
   </opc:StructuredType>
 
   <opc:EnumeratedType Name="UadpDataSetMessageContentMask" LengthInBits="32">
     <opc:EnumeratedValue Name="Timestamp" Value="1" />
-    <opc:EnumeratedValue Name="Picoseconds" Value="2" />
+    <opc:EnumeratedValue Name="PicoSeconds" Value="2" />
     <opc:EnumeratedValue Name="Status" Value="4" />
     <opc:EnumeratedValue Name="MajorVersion" Value="8" />
     <opc:EnumeratedValue Name="MinorVersion" Value="16" />
@@ -641,7 +655,7 @@
     <opc:Field Name="DataSetMessageContentMask" TypeName="tns:JsonDataSetMessageContentMask" />
   </opc:StructuredType>
 
-  <opc:StructuredType Name="UdpWriterGroupTransportDataType" BaseType="tns:WriterGroupTransportDataType">
+  <opc:StructuredType Name="DatagramWriterGroupTransportDataType" BaseType="tns:WriterGroupTransportDataType">
     <opc:Field Name="MessageRepeatCount" TypeName="opc:Byte" />
     <opc:Field Name="MessageRepeatDelay" TypeName="opc:Double" />
   </opc:StructuredType>

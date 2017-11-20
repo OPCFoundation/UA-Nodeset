@@ -1580,7 +1580,7 @@
     <DisplayName>Default Binary</DisplayName>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=97</Reference>
-      <Reference ReferenceType="HasDescription">i=15480</Reference>
+      <Reference ReferenceType="HasDescription">i=18178</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
@@ -1596,7 +1596,7 @@
     <DisplayName>Default Binary</DisplayName>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=99</Reference>
-      <Reference ReferenceType="HasDescription">i=15520</Reference>
+      <Reference ReferenceType="HasDescription">i=18184</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
@@ -1604,7 +1604,7 @@
     <DisplayName>Default Binary</DisplayName>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=100</Reference>
-      <Reference ReferenceType="HasDescription">i=15533</Reference>
+      <Reference ReferenceType="HasDescription">i=18187</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
@@ -1668,7 +1668,7 @@
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=97</Reference>
-      <Reference ReferenceType="HasDescription">i=16558</Reference>
+      <Reference ReferenceType="HasDescription">i=18166</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
@@ -1684,7 +1684,7 @@
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=99</Reference>
-      <Reference ReferenceType="HasDescription">i=16561</Reference>
+      <Reference ReferenceType="HasDescription">i=18172</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
@@ -1692,7 +1692,7 @@
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=100</Reference>
-      <Reference ReferenceType="HasDescription">i=16599</Reference>
+      <Reference ReferenceType="HasDescription">i=18175</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
