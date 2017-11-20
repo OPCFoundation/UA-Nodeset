@@ -6137,7 +6137,7 @@ namespace Opc.Ua
         private void Initialize()
         {
             m_name = null;
-            m_state = PubSubState.Disabled;
+            m_enabled = true;
             m_securityMode = MessageSecurityMode.Invalid;
             m_securityGroupId = null;
             m_securityKeyServices = new EndpointDescriptionCollection();
@@ -6157,13 +6157,13 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the State field.
+        /// A description for the Enabled field.
         /// </summary>
-        [DataMember(Name = "State", IsRequired = false, Order = 2)]
-        public PubSubState State
+        [DataMember(Name = "Enabled", IsRequired = false, Order = 2)]
+        public bool Enabled
         {
-            get { return m_state;  }
-            set { m_state = value; }
+            get { return m_enabled;  }
+            set { m_enabled = value; }
         }
 
         /// <summary>
@@ -6244,7 +6244,7 @@ namespace Opc.Ua
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             encoder.WriteString("Name", Name);
-            encoder.WriteEnumerated("State", State);
+            encoder.WriteBoolean("Enabled", Enabled);
             encoder.WriteEnumerated("SecurityMode", SecurityMode);
             encoder.WriteString("SecurityGroupId", SecurityGroupId);
             encoder.WriteEncodeableArray("SecurityKeyServices", SecurityKeyServices.ToArray(), typeof(EndpointDescription));
@@ -6259,7 +6259,7 @@ namespace Opc.Ua
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             Name = decoder.ReadString("Name");
-            State = (PubSubState)decoder.ReadEnumerated("State", typeof(PubSubState));
+            Enabled = decoder.ReadBoolean("Enabled");
             SecurityMode = (MessageSecurityMode)decoder.ReadEnumerated("SecurityMode", typeof(MessageSecurityMode));
             SecurityGroupId = decoder.ReadString("SecurityGroupId");
             SecurityKeyServices = (EndpointDescriptionCollection)decoder.ReadEncodeableArray("SecurityKeyServices", typeof(EndpointDescription));
@@ -6284,7 +6284,7 @@ namespace Opc.Ua
             }
 
             if (!Utils.IsEqual(m_name, value.m_name)) return false;
-            if (!Utils.IsEqual(m_state, value.m_state)) return false;
+            if (!Utils.IsEqual(m_enabled, value.m_enabled)) return false;
             if (!Utils.IsEqual(m_securityMode, value.m_securityMode)) return false;
             if (!Utils.IsEqual(m_securityGroupId, value.m_securityGroupId)) return false;
             if (!Utils.IsEqual(m_securityKeyServices, value.m_securityKeyServices)) return false;
@@ -6307,7 +6307,7 @@ namespace Opc.Ua
             PubSubGroupDataType clone = (PubSubGroupDataType)base.MemberwiseClone();
 
             clone.m_name = (string)Utils.Clone(this.m_name);
-            clone.m_state = (PubSubState)Utils.Clone(this.m_state);
+            clone.m_enabled = (bool)Utils.Clone(this.m_enabled);
             clone.m_securityMode = (MessageSecurityMode)Utils.Clone(this.m_securityMode);
             clone.m_securityGroupId = (string)Utils.Clone(this.m_securityGroupId);
             clone.m_securityKeyServices = (EndpointDescriptionCollection)Utils.Clone(this.m_securityKeyServices);
@@ -6319,7 +6319,7 @@ namespace Opc.Ua
 
         #region Private Fields
         private string m_name;
-        private PubSubState m_state;
+        private bool m_enabled;
         private MessageSecurityMode m_securityMode;
         private string m_securityGroupId;
         private EndpointDescriptionCollection m_securityKeyServices;
@@ -6414,21 +6414,21 @@ namespace Opc.Ua
     #endif
     #endregion
 
-    #region PubSubWriterGroupDataType Class
-    #if (!OPCUA_EXCLUDE_PubSubWriterGroupDataType)
+    #region WriterGroupDataType Class
+    #if (!OPCUA_EXCLUDE_WriterGroupDataType)
     /// <summary>
-    /// A description for the PubSubWriterGroupDataType DataType.
+    /// A description for the WriterGroupDataType DataType.
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
-    public partial class PubSubWriterGroupDataType : IEncodeable
+    public partial class WriterGroupDataType : IEncodeable
     {
         #region Constructors
         /// <summary>
         /// The default constructor.
         /// </summary>
-        public PubSubWriterGroupDataType()
+        public WriterGroupDataType()
         {
             Initialize();
         }
@@ -6450,7 +6450,6 @@ namespace Opc.Ua
             m_writerGroupId = (ushort)0;
             m_publishingInterval = (double)0;
             m_keepAliveTime = (double)0;
-            m_encodingMimeType = null;
             m_priority = (byte)0;
             m_localeIds = new StringCollection();
             m_transportSettings = null;
@@ -6491,19 +6490,9 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the EncodingMimeType field.
-        /// </summary>
-        [DataMember(Name = "EncodingMimeType", IsRequired = false, Order = 4)]
-        public string EncodingMimeType
-        {
-            get { return m_encodingMimeType;  }
-            set { m_encodingMimeType = value; }
-        }
-
-        /// <summary>
         /// A description for the Priority field.
         /// </summary>
-        [DataMember(Name = "Priority", IsRequired = false, Order = 5)]
+        [DataMember(Name = "Priority", IsRequired = false, Order = 4)]
         public byte Priority
         {
             get { return m_priority;  }
@@ -6513,7 +6502,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the LocaleIds field.
         /// </summary>
-        [DataMember(Name = "LocaleIds", IsRequired = false, Order = 6)]
+        [DataMember(Name = "LocaleIds", IsRequired = false, Order = 5)]
         public StringCollection LocaleIds
         {
             get
@@ -6535,7 +6524,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the TransportSettings field.
         /// </summary>
-        [DataMember(Name = "TransportSettings", IsRequired = false, Order = 7)]
+        [DataMember(Name = "TransportSettings", IsRequired = false, Order = 6)]
         public ExtensionObject TransportSettings
         {
             get { return m_transportSettings;  }
@@ -6545,7 +6534,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the MessageSettings field.
         /// </summary>
-        [DataMember(Name = "MessageSettings", IsRequired = false, Order = 8)]
+        [DataMember(Name = "MessageSettings", IsRequired = false, Order = 7)]
         public ExtensionObject MessageSettings
         {
             get { return m_messageSettings;  }
@@ -6555,7 +6544,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the DataSetWriters field.
         /// </summary>
-        [DataMember(Name = "DataSetWriters", IsRequired = false, Order = 9)]
+        [DataMember(Name = "DataSetWriters", IsRequired = false, Order = 8)]
         public DataSetWriterDataTypeCollection DataSetWriters
         {
             get
@@ -6579,19 +6568,19 @@ namespace Opc.Ua
         /// <summary cref="IEncodeable.TypeId" />
         public virtual ExpandedNodeId TypeId
         {
-            get { return DataTypeIds.PubSubWriterGroupDataType; }
+            get { return DataTypeIds.WriterGroupDataType; }
         }
 
         /// <summary cref="IEncodeable.BinaryEncodingId" />
         public virtual ExpandedNodeId BinaryEncodingId
         {
-            get { return ObjectIds.PubSubWriterGroupDataType_Encoding_DefaultBinary; }
+            get { return ObjectIds.WriterGroupDataType_Encoding_DefaultBinary; }
         }
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
         public virtual ExpandedNodeId XmlEncodingId
         {
-            get { return ObjectIds.PubSubWriterGroupDataType_Encoding_DefaultXml; }
+            get { return ObjectIds.WriterGroupDataType_Encoding_DefaultXml; }
         }
 
         /// <summary cref="IEncodeable.Encode(IEncoder)" />
@@ -6602,7 +6591,6 @@ namespace Opc.Ua
             encoder.WriteUInt16("WriterGroupId", WriterGroupId);
             encoder.WriteDouble("PublishingInterval", PublishingInterval);
             encoder.WriteDouble("KeepAliveTime", KeepAliveTime);
-            encoder.WriteString("EncodingMimeType", EncodingMimeType);
             encoder.WriteByte("Priority", Priority);
             encoder.WriteStringArray("LocaleIds", LocaleIds);
             encoder.WriteExtensionObject("TransportSettings", TransportSettings);
@@ -6620,7 +6608,6 @@ namespace Opc.Ua
             WriterGroupId = decoder.ReadUInt16("WriterGroupId");
             PublishingInterval = decoder.ReadDouble("PublishingInterval");
             KeepAliveTime = decoder.ReadDouble("KeepAliveTime");
-            EncodingMimeType = decoder.ReadString("EncodingMimeType");
             Priority = decoder.ReadByte("Priority");
             LocaleIds = decoder.ReadStringArray("LocaleIds");
             TransportSettings = decoder.ReadExtensionObject("TransportSettings");
@@ -6638,7 +6625,7 @@ namespace Opc.Ua
                 return true;
             }
 
-            PubSubWriterGroupDataType value = encodeable as PubSubWriterGroupDataType;
+            WriterGroupDataType value = encodeable as WriterGroupDataType;
 
             if (value == null)
             {
@@ -6648,7 +6635,6 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_writerGroupId, value.m_writerGroupId)) return false;
             if (!Utils.IsEqual(m_publishingInterval, value.m_publishingInterval)) return false;
             if (!Utils.IsEqual(m_keepAliveTime, value.m_keepAliveTime)) return false;
-            if (!Utils.IsEqual(m_encodingMimeType, value.m_encodingMimeType)) return false;
             if (!Utils.IsEqual(m_priority, value.m_priority)) return false;
             if (!Utils.IsEqual(m_localeIds, value.m_localeIds)) return false;
             if (!Utils.IsEqual(m_transportSettings, value.m_transportSettings)) return false;
@@ -6662,19 +6648,18 @@ namespace Opc.Ua
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            return (PubSubWriterGroupDataType)this.MemberwiseClone();
+            return (WriterGroupDataType)this.MemberwiseClone();
         }
         #endif
 
         /// <summary cref="Object.MemberwiseClone" />
         public new object MemberwiseClone()
         {
-            PubSubWriterGroupDataType clone = (PubSubWriterGroupDataType)base.MemberwiseClone();
+            WriterGroupDataType clone = (WriterGroupDataType)base.MemberwiseClone();
 
             clone.m_writerGroupId = (ushort)Utils.Clone(this.m_writerGroupId);
             clone.m_publishingInterval = (double)Utils.Clone(this.m_publishingInterval);
             clone.m_keepAliveTime = (double)Utils.Clone(this.m_keepAliveTime);
-            clone.m_encodingMimeType = (string)Utils.Clone(this.m_encodingMimeType);
             clone.m_priority = (byte)Utils.Clone(this.m_priority);
             clone.m_localeIds = (StringCollection)Utils.Clone(this.m_localeIds);
             clone.m_transportSettings = (ExtensionObject)Utils.Clone(this.m_transportSettings);
@@ -6689,7 +6674,6 @@ namespace Opc.Ua
         private ushort m_writerGroupId;
         private double m_publishingInterval;
         private double m_keepAliveTime;
-        private string m_encodingMimeType;
         private byte m_priority;
         private StringCollection m_localeIds;
         private ExtensionObject m_transportSettings;
@@ -6698,54 +6682,54 @@ namespace Opc.Ua
         #endregion
     }
 
-    #region PubSubWriterGroupDataTypeCollection Class
+    #region WriterGroupDataTypeCollection Class
     /// <summary>
-    /// A collection of PubSubWriterGroupDataType objects.
+    /// A collection of WriterGroupDataType objects.
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    [CollectionDataContract(Name = "ListOfPubSubWriterGroupDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "PubSubWriterGroupDataType")]
+    [CollectionDataContract(Name = "ListOfWriterGroupDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "WriterGroupDataType")]
     #if !NET_STANDARD
-    public partial class PubSubWriterGroupDataTypeCollection : List<PubSubWriterGroupDataType>, ICloneable
+    public partial class WriterGroupDataTypeCollection : List<WriterGroupDataType>, ICloneable
     #else
-    public partial class PubSubWriterGroupDataTypeCollection : List<PubSubWriterGroupDataType>
+    public partial class WriterGroupDataTypeCollection : List<WriterGroupDataType>
     #endif
     {
         #region Constructors
         /// <summary>
         /// Initializes the collection with default values.
         /// </summary>
-        public PubSubWriterGroupDataTypeCollection() {}
+        public WriterGroupDataTypeCollection() {}
 
         /// <summary>
         /// Initializes the collection with an initial capacity.
         /// </summary>
-        public PubSubWriterGroupDataTypeCollection(int capacity) : base(capacity) {}
+        public WriterGroupDataTypeCollection(int capacity) : base(capacity) {}
 
         /// <summary>
         /// Initializes the collection with another collection.
         /// </summary>
-        public PubSubWriterGroupDataTypeCollection(IEnumerable<PubSubWriterGroupDataType> collection) : base(collection) {}
+        public WriterGroupDataTypeCollection(IEnumerable<WriterGroupDataType> collection) : base(collection) {}
         #endregion
 
         #region Static Operators
         /// <summary>
         /// Converts an array to a collection.
         /// </summary>
-        public static implicit operator PubSubWriterGroupDataTypeCollection(PubSubWriterGroupDataType[] values)
+        public static implicit operator WriterGroupDataTypeCollection(WriterGroupDataType[] values)
         {
             if (values != null)
             {
-                return new PubSubWriterGroupDataTypeCollection(values);
+                return new WriterGroupDataTypeCollection(values);
             }
 
-            return new PubSubWriterGroupDataTypeCollection();
+            return new WriterGroupDataTypeCollection();
         }
 
         /// <summary>
         /// Converts a collection to an array.
         /// </summary>
-        public static explicit operator PubSubWriterGroupDataType[](PubSubWriterGroupDataTypeCollection values)
+        public static explicit operator WriterGroupDataType[](WriterGroupDataTypeCollection values)
         {
             if (values != null)
             {
@@ -6763,7 +6747,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (PubSubWriterGroupDataTypeCollection)this.MemberwiseClone();
+            return (WriterGroupDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -6771,11 +6755,11 @@ namespace Opc.Ua
         /// <summary cref="Object.MemberwiseClone" />
         public new object MemberwiseClone()
         {
-            PubSubWriterGroupDataTypeCollection clone = new PubSubWriterGroupDataTypeCollection(this.Count);
+            WriterGroupDataTypeCollection clone = new WriterGroupDataTypeCollection(this.Count);
 
             for (int ii = 0; ii < this.Count; ii++)
             {
-                clone.Add((PubSubWriterGroupDataType)Utils.Clone(this[ii]));
+                clone.Add((WriterGroupDataType)Utils.Clone(this[ii]));
             }
 
             return clone;
@@ -7226,20 +7210,32 @@ namespace Opc.Ua
         /// </summary>
         private void Initialize()
         {
+            m_name = null;
             m_publisherId = Variant.Null;
             m_address = null;
             m_transportProfileUri = null;
+            m_networkAddress = null;
             m_transportSettings = null;
-            m_writerGroups = new PubSubWriterGroupDataTypeCollection();
-            m_readerGroups = new PubSubReaderGroupDataTypeCollection();
+            m_writerGroups = new WriterGroupDataTypeCollection();
+            m_readerGroups = new ReaderGroupDataTypeCollection();
         }
         #endregion
 
         #region Public Properties
         /// <summary>
+        /// A description for the Name field.
+        /// </summary>
+        [DataMember(Name = "Name", IsRequired = false, Order = 1)]
+        public string Name
+        {
+            get { return m_name;  }
+            set { m_name = value; }
+        }
+
+        /// <summary>
         /// A description for the PublisherId field.
         /// </summary>
-        [DataMember(Name = "PublisherId", IsRequired = false, Order = 1)]
+        [DataMember(Name = "PublisherId", IsRequired = false, Order = 2)]
         public Variant PublisherId
         {
             get { return m_publisherId;  }
@@ -7249,7 +7245,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the Address field.
         /// </summary>
-        [DataMember(Name = "Address", IsRequired = false, Order = 2)]
+        [DataMember(Name = "Address", IsRequired = false, Order = 3)]
         public string Address
         {
             get { return m_address;  }
@@ -7259,7 +7255,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the TransportProfileUri field.
         /// </summary>
-        [DataMember(Name = "TransportProfileUri", IsRequired = false, Order = 3)]
+        [DataMember(Name = "TransportProfileUri", IsRequired = false, Order = 4)]
         public string TransportProfileUri
         {
             get { return m_transportProfileUri;  }
@@ -7267,9 +7263,19 @@ namespace Opc.Ua
         }
 
         /// <summary>
+        /// A description for the NetworkAddress field.
+        /// </summary>
+        [DataMember(Name = "NetworkAddress", IsRequired = false, Order = 5)]
+        public ExtensionObject NetworkAddress
+        {
+            get { return m_networkAddress;  }
+            set { m_networkAddress = value; }
+        }
+
+        /// <summary>
         /// A description for the TransportSettings field.
         /// </summary>
-        [DataMember(Name = "TransportSettings", IsRequired = false, Order = 4)]
+        [DataMember(Name = "TransportSettings", IsRequired = false, Order = 6)]
         public ExtensionObject TransportSettings
         {
             get { return m_transportSettings;  }
@@ -7279,8 +7285,8 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the WriterGroups field.
         /// </summary>
-        [DataMember(Name = "WriterGroups", IsRequired = false, Order = 5)]
-        public PubSubWriterGroupDataTypeCollection WriterGroups
+        [DataMember(Name = "WriterGroups", IsRequired = false, Order = 7)]
+        public WriterGroupDataTypeCollection WriterGroups
         {
             get
             {
@@ -7293,7 +7299,7 @@ namespace Opc.Ua
 
                 if (value == null)
                 {
-                    m_writerGroups = new PubSubWriterGroupDataTypeCollection();
+                    m_writerGroups = new WriterGroupDataTypeCollection();
                 }
             }
         }
@@ -7301,8 +7307,8 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the ReaderGroups field.
         /// </summary>
-        [DataMember(Name = "ReaderGroups", IsRequired = false, Order = 6)]
-        public PubSubReaderGroupDataTypeCollection ReaderGroups
+        [DataMember(Name = "ReaderGroups", IsRequired = false, Order = 8)]
+        public ReaderGroupDataTypeCollection ReaderGroups
         {
             get
             {
@@ -7315,7 +7321,7 @@ namespace Opc.Ua
 
                 if (value == null)
                 {
-                    m_readerGroups = new PubSubReaderGroupDataTypeCollection();
+                    m_readerGroups = new ReaderGroupDataTypeCollection();
                 }
             }
         }
@@ -7345,12 +7351,14 @@ namespace Opc.Ua
         {
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
+            encoder.WriteString("Name", Name);
             encoder.WriteVariant("PublisherId", PublisherId);
             encoder.WriteString("Address", Address);
             encoder.WriteString("TransportProfileUri", TransportProfileUri);
+            encoder.WriteExtensionObject("NetworkAddress", NetworkAddress);
             encoder.WriteExtensionObject("TransportSettings", TransportSettings);
-            encoder.WriteEncodeableArray("WriterGroups", WriterGroups.ToArray(), typeof(PubSubWriterGroupDataType));
-            encoder.WriteEncodeableArray("ReaderGroups", ReaderGroups.ToArray(), typeof(PubSubReaderGroupDataType));
+            encoder.WriteEncodeableArray("WriterGroups", WriterGroups.ToArray(), typeof(WriterGroupDataType));
+            encoder.WriteEncodeableArray("ReaderGroups", ReaderGroups.ToArray(), typeof(ReaderGroupDataType));
 
             encoder.PopNamespace();
         }
@@ -7360,12 +7368,14 @@ namespace Opc.Ua
         {
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
+            Name = decoder.ReadString("Name");
             PublisherId = decoder.ReadVariant("PublisherId");
             Address = decoder.ReadString("Address");
             TransportProfileUri = decoder.ReadString("TransportProfileUri");
+            NetworkAddress = decoder.ReadExtensionObject("NetworkAddress");
             TransportSettings = decoder.ReadExtensionObject("TransportSettings");
-            WriterGroups = (PubSubWriterGroupDataTypeCollection)decoder.ReadEncodeableArray("WriterGroups", typeof(PubSubWriterGroupDataType));
-            ReaderGroups = (PubSubReaderGroupDataTypeCollection)decoder.ReadEncodeableArray("ReaderGroups", typeof(PubSubReaderGroupDataType));
+            WriterGroups = (WriterGroupDataTypeCollection)decoder.ReadEncodeableArray("WriterGroups", typeof(WriterGroupDataType));
+            ReaderGroups = (ReaderGroupDataTypeCollection)decoder.ReadEncodeableArray("ReaderGroups", typeof(ReaderGroupDataType));
 
             decoder.PopNamespace();
         }
@@ -7385,9 +7395,11 @@ namespace Opc.Ua
                 return false;
             }
 
+            if (!Utils.IsEqual(m_name, value.m_name)) return false;
             if (!Utils.IsEqual(m_publisherId, value.m_publisherId)) return false;
             if (!Utils.IsEqual(m_address, value.m_address)) return false;
             if (!Utils.IsEqual(m_transportProfileUri, value.m_transportProfileUri)) return false;
+            if (!Utils.IsEqual(m_networkAddress, value.m_networkAddress)) return false;
             if (!Utils.IsEqual(m_transportSettings, value.m_transportSettings)) return false;
             if (!Utils.IsEqual(m_writerGroups, value.m_writerGroups)) return false;
             if (!Utils.IsEqual(m_readerGroups, value.m_readerGroups)) return false;
@@ -7408,24 +7420,28 @@ namespace Opc.Ua
         {
             PubSubConnectionDataType clone = (PubSubConnectionDataType)base.MemberwiseClone();
 
+            clone.m_name = (string)Utils.Clone(this.m_name);
             clone.m_publisherId = (Variant)Utils.Clone(this.m_publisherId);
             clone.m_address = (string)Utils.Clone(this.m_address);
             clone.m_transportProfileUri = (string)Utils.Clone(this.m_transportProfileUri);
+            clone.m_networkAddress = (ExtensionObject)Utils.Clone(this.m_networkAddress);
             clone.m_transportSettings = (ExtensionObject)Utils.Clone(this.m_transportSettings);
-            clone.m_writerGroups = (PubSubWriterGroupDataTypeCollection)Utils.Clone(this.m_writerGroups);
-            clone.m_readerGroups = (PubSubReaderGroupDataTypeCollection)Utils.Clone(this.m_readerGroups);
+            clone.m_writerGroups = (WriterGroupDataTypeCollection)Utils.Clone(this.m_writerGroups);
+            clone.m_readerGroups = (ReaderGroupDataTypeCollection)Utils.Clone(this.m_readerGroups);
 
             return clone;
         }
         #endregion
 
         #region Private Fields
+        private string m_name;
         private Variant m_publisherId;
         private string m_address;
         private string m_transportProfileUri;
+        private ExtensionObject m_networkAddress;
         private ExtensionObject m_transportSettings;
-        private PubSubWriterGroupDataTypeCollection m_writerGroups;
-        private PubSubReaderGroupDataTypeCollection m_readerGroups;
+        private WriterGroupDataTypeCollection m_writerGroups;
+        private ReaderGroupDataTypeCollection m_readerGroups;
         #endregion
     }
 
@@ -7720,21 +7736,464 @@ namespace Opc.Ua
     #endif
     #endregion
 
-    #region PubSubReaderGroupDataType Class
-    #if (!OPCUA_EXCLUDE_PubSubReaderGroupDataType)
+    #region NetworkAddressDataType Class
+    #if (!OPCUA_EXCLUDE_NetworkAddressDataType)
     /// <summary>
-    /// A description for the PubSubReaderGroupDataType DataType.
+    /// A description for the NetworkAddressDataType DataType.
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
-    public partial class PubSubReaderGroupDataType : IEncodeable
+    public partial class NetworkAddressDataType : IEncodeable
     {
         #region Constructors
         /// <summary>
         /// The default constructor.
         /// </summary>
-        public PubSubReaderGroupDataType()
+        public NetworkAddressDataType()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+            m_networkInterface = null;
+        }
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the NetworkInterface field.
+        /// </summary>
+        [DataMember(Name = "NetworkInterface", IsRequired = false, Order = 1)]
+        public string NetworkInterface
+        {
+            get { return m_networkInterface;  }
+            set { m_networkInterface = value; }
+        }
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public virtual ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.NetworkAddressDataType; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public virtual ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.NetworkAddressDataType_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public virtual ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.NetworkAddressDataType_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public virtual void Encode(IEncoder encoder)
+        {
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            encoder.WriteString("NetworkInterface", NetworkInterface);
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public virtual void Decode(IDecoder decoder)
+        {
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            NetworkInterface = decoder.ReadString("NetworkInterface");
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public virtual bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            NetworkAddressDataType value = encodeable as NetworkAddressDataType;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+            if (!Utils.IsEqual(m_networkInterface, value.m_networkInterface)) return false;
+
+            return true;
+        }
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public virtual object Clone()
+        {
+            return (NetworkAddressDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            NetworkAddressDataType clone = (NetworkAddressDataType)base.MemberwiseClone();
+
+            clone.m_networkInterface = (string)Utils.Clone(this.m_networkInterface);
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        private string m_networkInterface;
+        #endregion
+    }
+
+    #region NetworkAddressDataTypeCollection Class
+    /// <summary>
+    /// A collection of NetworkAddressDataType objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfNetworkAddressDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "NetworkAddressDataType")]
+    #if !NET_STANDARD
+    public partial class NetworkAddressDataTypeCollection : List<NetworkAddressDataType>, ICloneable
+    #else
+    public partial class NetworkAddressDataTypeCollection : List<NetworkAddressDataType>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public NetworkAddressDataTypeCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public NetworkAddressDataTypeCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public NetworkAddressDataTypeCollection(IEnumerable<NetworkAddressDataType> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator NetworkAddressDataTypeCollection(NetworkAddressDataType[] values)
+        {
+            if (values != null)
+            {
+                return new NetworkAddressDataTypeCollection(values);
+            }
+
+            return new NetworkAddressDataTypeCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator NetworkAddressDataType[](NetworkAddressDataTypeCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (NetworkAddressDataTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            NetworkAddressDataTypeCollection clone = new NetworkAddressDataTypeCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((NetworkAddressDataType)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
+    #endif
+    #endregion
+
+    #region NetworkAddressUrlDataType Class
+    #if (!OPCUA_EXCLUDE_NetworkAddressUrlDataType)
+    /// <summary>
+    /// A description for the NetworkAddressUrlDataType DataType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class NetworkAddressUrlDataType : NetworkAddressDataType
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public NetworkAddressUrlDataType()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+            m_url = null;
+        }
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the Url field.
+        /// </summary>
+        [DataMember(Name = "Url", IsRequired = false, Order = 1)]
+        public string Url
+        {
+            get { return m_url;  }
+            set { m_url = value; }
+        }
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public override ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.NetworkAddressUrlDataType; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public override ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.NetworkAddressUrlDataType_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public override ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.NetworkAddressUrlDataType_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public override void Encode(IEncoder encoder)
+        {
+            base.Encode(encoder);
+
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            encoder.WriteString("Url", Url);
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public override void Decode(IDecoder decoder)
+        {
+            base.Decode(decoder);
+
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            Url = decoder.ReadString("Url");
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public override bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            NetworkAddressUrlDataType value = encodeable as NetworkAddressUrlDataType;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+            if (!base.IsEqual(encodeable)) return false;
+            if (!Utils.IsEqual(m_url, value.m_url)) return false;
+
+            return true;
+        }    
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public override object Clone()
+        {
+            return (NetworkAddressUrlDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            NetworkAddressUrlDataType clone = (NetworkAddressUrlDataType)base.MemberwiseClone();
+
+            clone.m_url = (string)Utils.Clone(this.m_url);
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        private string m_url;
+        #endregion
+    }
+
+    #region NetworkAddressUrlDataTypeCollection Class
+    /// <summary>
+    /// A collection of NetworkAddressUrlDataType objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfNetworkAddressUrlDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "NetworkAddressUrlDataType")]
+    #if !NET_STANDARD
+    public partial class NetworkAddressUrlDataTypeCollection : List<NetworkAddressUrlDataType>, ICloneable
+    #else
+    public partial class NetworkAddressUrlDataTypeCollection : List<NetworkAddressUrlDataType>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public NetworkAddressUrlDataTypeCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public NetworkAddressUrlDataTypeCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public NetworkAddressUrlDataTypeCollection(IEnumerable<NetworkAddressUrlDataType> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator NetworkAddressUrlDataTypeCollection(NetworkAddressUrlDataType[] values)
+        {
+            if (values != null)
+            {
+                return new NetworkAddressUrlDataTypeCollection(values);
+            }
+
+            return new NetworkAddressUrlDataTypeCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator NetworkAddressUrlDataType[](NetworkAddressUrlDataTypeCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (NetworkAddressUrlDataTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            NetworkAddressUrlDataTypeCollection clone = new NetworkAddressUrlDataTypeCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((NetworkAddressUrlDataType)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
+    #endif
+    #endregion
+
+    #region ReaderGroupDataType Class
+    #if (!OPCUA_EXCLUDE_ReaderGroupDataType)
+    /// <summary>
+    /// A description for the ReaderGroupDataType DataType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class ReaderGroupDataType : IEncodeable
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public ReaderGroupDataType()
         {
             Initialize();
         }
@@ -7807,19 +8266,19 @@ namespace Opc.Ua
         /// <summary cref="IEncodeable.TypeId" />
         public virtual ExpandedNodeId TypeId
         {
-            get { return DataTypeIds.PubSubReaderGroupDataType; }
+            get { return DataTypeIds.ReaderGroupDataType; }
         }
 
         /// <summary cref="IEncodeable.BinaryEncodingId" />
         public virtual ExpandedNodeId BinaryEncodingId
         {
-            get { return ObjectIds.PubSubReaderGroupDataType_Encoding_DefaultBinary; }
+            get { return ObjectIds.ReaderGroupDataType_Encoding_DefaultBinary; }
         }
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
         public virtual ExpandedNodeId XmlEncodingId
         {
-            get { return ObjectIds.PubSubReaderGroupDataType_Encoding_DefaultXml; }
+            get { return ObjectIds.ReaderGroupDataType_Encoding_DefaultXml; }
         }
 
         /// <summary cref="IEncodeable.Encode(IEncoder)" />
@@ -7854,7 +8313,7 @@ namespace Opc.Ua
                 return true;
             }
 
-            PubSubReaderGroupDataType value = encodeable as PubSubReaderGroupDataType;
+            ReaderGroupDataType value = encodeable as ReaderGroupDataType;
 
             if (value == null)
             {
@@ -7872,14 +8331,14 @@ namespace Opc.Ua
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            return (PubSubReaderGroupDataType)this.MemberwiseClone();
+            return (ReaderGroupDataType)this.MemberwiseClone();
         }
         #endif
 
         /// <summary cref="Object.MemberwiseClone" />
         public new object MemberwiseClone()
         {
-            PubSubReaderGroupDataType clone = (PubSubReaderGroupDataType)base.MemberwiseClone();
+            ReaderGroupDataType clone = (ReaderGroupDataType)base.MemberwiseClone();
 
             clone.m_transportSettings = (ExtensionObject)Utils.Clone(this.m_transportSettings);
             clone.m_messageSettings = (ExtensionObject)Utils.Clone(this.m_messageSettings);
@@ -7896,54 +8355,54 @@ namespace Opc.Ua
         #endregion
     }
 
-    #region PubSubReaderGroupDataTypeCollection Class
+    #region ReaderGroupDataTypeCollection Class
     /// <summary>
-    /// A collection of PubSubReaderGroupDataType objects.
+    /// A collection of ReaderGroupDataType objects.
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    [CollectionDataContract(Name = "ListOfPubSubReaderGroupDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "PubSubReaderGroupDataType")]
+    [CollectionDataContract(Name = "ListOfReaderGroupDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "ReaderGroupDataType")]
     #if !NET_STANDARD
-    public partial class PubSubReaderGroupDataTypeCollection : List<PubSubReaderGroupDataType>, ICloneable
+    public partial class ReaderGroupDataTypeCollection : List<ReaderGroupDataType>, ICloneable
     #else
-    public partial class PubSubReaderGroupDataTypeCollection : List<PubSubReaderGroupDataType>
+    public partial class ReaderGroupDataTypeCollection : List<ReaderGroupDataType>
     #endif
     {
         #region Constructors
         /// <summary>
         /// Initializes the collection with default values.
         /// </summary>
-        public PubSubReaderGroupDataTypeCollection() {}
+        public ReaderGroupDataTypeCollection() {}
 
         /// <summary>
         /// Initializes the collection with an initial capacity.
         /// </summary>
-        public PubSubReaderGroupDataTypeCollection(int capacity) : base(capacity) {}
+        public ReaderGroupDataTypeCollection(int capacity) : base(capacity) {}
 
         /// <summary>
         /// Initializes the collection with another collection.
         /// </summary>
-        public PubSubReaderGroupDataTypeCollection(IEnumerable<PubSubReaderGroupDataType> collection) : base(collection) {}
+        public ReaderGroupDataTypeCollection(IEnumerable<ReaderGroupDataType> collection) : base(collection) {}
         #endregion
 
         #region Static Operators
         /// <summary>
         /// Converts an array to a collection.
         /// </summary>
-        public static implicit operator PubSubReaderGroupDataTypeCollection(PubSubReaderGroupDataType[] values)
+        public static implicit operator ReaderGroupDataTypeCollection(ReaderGroupDataType[] values)
         {
             if (values != null)
             {
-                return new PubSubReaderGroupDataTypeCollection(values);
+                return new ReaderGroupDataTypeCollection(values);
             }
 
-            return new PubSubReaderGroupDataTypeCollection();
+            return new ReaderGroupDataTypeCollection();
         }
 
         /// <summary>
         /// Converts a collection to an array.
         /// </summary>
-        public static explicit operator PubSubReaderGroupDataType[](PubSubReaderGroupDataTypeCollection values)
+        public static explicit operator ReaderGroupDataType[](ReaderGroupDataTypeCollection values)
         {
             if (values != null)
             {
@@ -7961,7 +8420,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (PubSubReaderGroupDataTypeCollection)this.MemberwiseClone();
+            return (ReaderGroupDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -7969,11 +8428,11 @@ namespace Opc.Ua
         /// <summary cref="Object.MemberwiseClone" />
         public new object MemberwiseClone()
         {
-            PubSubReaderGroupDataTypeCollection clone = new PubSubReaderGroupDataTypeCollection(this.Count);
+            ReaderGroupDataTypeCollection clone = new ReaderGroupDataTypeCollection(this.Count);
 
             for (int ii = 0; ii < this.Count; ii++)
             {
-                clone.Add((PubSubReaderGroupDataType)Utils.Clone(this[ii]));
+                clone.Add((ReaderGroupDataType)Utils.Clone(this[ii]));
             }
 
             return clone;
@@ -8425,14 +8884,16 @@ namespace Opc.Ua
         private void Initialize()
         {
             m_name = null;
-            m_state = PubSubState.Disabled;
+            m_enabled = true;
+            m_publisherId = Variant.Null;
+            m_writerGroupId = (ushort)0;
+            m_dataSetWriterId = (ushort)0;
+            m_dataSetMetaData = new DataSetMetaDataType();
+            m_dataSetFieldContentMask = DataSetFieldContentMask.StatusCode;
+            m_messageReceiveTimeout = (double)0;
             m_securityMode = MessageSecurityMode.Invalid;
             m_securityGroupId = null;
             m_securityKeyServices = new EndpointDescriptionCollection();
-            m_publisherId = Variant.Null;
-            m_dataSetWriterId = (ushort)0;
-            m_dataSetFieldContentMask = DataSetFieldContentMask.StatusCode;
-            m_messageReceiveTimeout = (double)0;
             m_transportSettings = null;
             m_messageSettings = null;
             m_subscribedDataSet = null;
@@ -8451,19 +8912,91 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the State field.
+        /// A description for the Enabled field.
         /// </summary>
-        [DataMember(Name = "State", IsRequired = false, Order = 2)]
-        public PubSubState State
+        [DataMember(Name = "Enabled", IsRequired = false, Order = 2)]
+        public bool Enabled
         {
-            get { return m_state;  }
-            set { m_state = value; }
+            get { return m_enabled;  }
+            set { m_enabled = value; }
+        }
+
+        /// <summary>
+        /// A description for the PublisherId field.
+        /// </summary>
+        [DataMember(Name = "PublisherId", IsRequired = false, Order = 3)]
+        public Variant PublisherId
+        {
+            get { return m_publisherId;  }
+            set { m_publisherId = value; }
+        }
+
+        /// <summary>
+        /// A description for the WriterGroupId field.
+        /// </summary>
+        [DataMember(Name = "WriterGroupId", IsRequired = false, Order = 4)]
+        public ushort WriterGroupId
+        {
+            get { return m_writerGroupId;  }
+            set { m_writerGroupId = value; }
+        }
+
+        /// <summary>
+        /// A description for the DataSetWriterId field.
+        /// </summary>
+        [DataMember(Name = "DataSetWriterId", IsRequired = false, Order = 5)]
+        public ushort DataSetWriterId
+        {
+            get { return m_dataSetWriterId;  }
+            set { m_dataSetWriterId = value; }
+        }
+
+        /// <summary>
+        /// A description for the DataSetMetaData field.
+        /// </summary>
+        [DataMember(Name = "DataSetMetaData", IsRequired = false, Order = 6)]
+        public DataSetMetaDataType DataSetMetaData
+        {
+            get
+            {
+                return m_dataSetMetaData;
+            }
+
+            set
+            {
+                m_dataSetMetaData = value;
+
+                if (value == null)
+                {
+                    m_dataSetMetaData = new DataSetMetaDataType();
+                }
+            }
+        }
+
+        /// <summary>
+        /// A description for the DataSetFieldContentMask field.
+        /// </summary>
+        [DataMember(Name = "DataSetFieldContentMask", IsRequired = false, Order = 7)]
+        public DataSetFieldContentMask DataSetFieldContentMask
+        {
+            get { return m_dataSetFieldContentMask;  }
+            set { m_dataSetFieldContentMask = value; }
+        }
+
+        /// <summary>
+        /// A description for the MessageReceiveTimeout field.
+        /// </summary>
+        [DataMember(Name = "MessageReceiveTimeout", IsRequired = false, Order = 8)]
+        public double MessageReceiveTimeout
+        {
+            get { return m_messageReceiveTimeout;  }
+            set { m_messageReceiveTimeout = value; }
         }
 
         /// <summary>
         /// A description for the SecurityMode field.
         /// </summary>
-        [DataMember(Name = "SecurityMode", IsRequired = false, Order = 3)]
+        [DataMember(Name = "SecurityMode", IsRequired = false, Order = 9)]
         public MessageSecurityMode SecurityMode
         {
             get { return m_securityMode;  }
@@ -8473,7 +9006,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the SecurityGroupId field.
         /// </summary>
-        [DataMember(Name = "SecurityGroupId", IsRequired = false, Order = 4)]
+        [DataMember(Name = "SecurityGroupId", IsRequired = false, Order = 10)]
         public string SecurityGroupId
         {
             get { return m_securityGroupId;  }
@@ -8483,7 +9016,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the SecurityKeyServices field.
         /// </summary>
-        [DataMember(Name = "SecurityKeyServices", IsRequired = false, Order = 5)]
+        [DataMember(Name = "SecurityKeyServices", IsRequired = false, Order = 11)]
         public EndpointDescriptionCollection SecurityKeyServices
         {
             get
@@ -8503,49 +9036,9 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the PublisherId field.
-        /// </summary>
-        [DataMember(Name = "PublisherId", IsRequired = false, Order = 6)]
-        public Variant PublisherId
-        {
-            get { return m_publisherId;  }
-            set { m_publisherId = value; }
-        }
-
-        /// <summary>
-        /// A description for the DataSetWriterId field.
-        /// </summary>
-        [DataMember(Name = "DataSetWriterId", IsRequired = false, Order = 7)]
-        public ushort DataSetWriterId
-        {
-            get { return m_dataSetWriterId;  }
-            set { m_dataSetWriterId = value; }
-        }
-
-        /// <summary>
-        /// A description for the DataSetFieldContentMask field.
-        /// </summary>
-        [DataMember(Name = "DataSetFieldContentMask", IsRequired = false, Order = 8)]
-        public DataSetFieldContentMask DataSetFieldContentMask
-        {
-            get { return m_dataSetFieldContentMask;  }
-            set { m_dataSetFieldContentMask = value; }
-        }
-
-        /// <summary>
-        /// A description for the MessageReceiveTimeout field.
-        /// </summary>
-        [DataMember(Name = "MessageReceiveTimeout", IsRequired = false, Order = 9)]
-        public double MessageReceiveTimeout
-        {
-            get { return m_messageReceiveTimeout;  }
-            set { m_messageReceiveTimeout = value; }
-        }
-
-        /// <summary>
         /// A description for the TransportSettings field.
         /// </summary>
-        [DataMember(Name = "TransportSettings", IsRequired = false, Order = 10)]
+        [DataMember(Name = "TransportSettings", IsRequired = false, Order = 12)]
         public ExtensionObject TransportSettings
         {
             get { return m_transportSettings;  }
@@ -8555,7 +9048,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the MessageSettings field.
         /// </summary>
-        [DataMember(Name = "MessageSettings", IsRequired = false, Order = 11)]
+        [DataMember(Name = "MessageSettings", IsRequired = false, Order = 13)]
         public ExtensionObject MessageSettings
         {
             get { return m_messageSettings;  }
@@ -8565,7 +9058,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the SubscribedDataSet field.
         /// </summary>
-        [DataMember(Name = "SubscribedDataSet", IsRequired = false, Order = 12)]
+        [DataMember(Name = "SubscribedDataSet", IsRequired = false, Order = 14)]
         public ExtensionObject SubscribedDataSet
         {
             get { return m_subscribedDataSet;  }
@@ -8598,14 +9091,16 @@ namespace Opc.Ua
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             encoder.WriteString("Name", Name);
-            encoder.WriteEnumerated("State", State);
+            encoder.WriteBoolean("Enabled", Enabled);
+            encoder.WriteVariant("PublisherId", PublisherId);
+            encoder.WriteUInt16("WriterGroupId", WriterGroupId);
+            encoder.WriteUInt16("DataSetWriterId", DataSetWriterId);
+            encoder.WriteEncodeable("DataSetMetaData", DataSetMetaData, typeof(DataSetMetaDataType));
+            encoder.WriteEnumerated("DataSetFieldContentMask", DataSetFieldContentMask);
+            encoder.WriteDouble("MessageReceiveTimeout", MessageReceiveTimeout);
             encoder.WriteEnumerated("SecurityMode", SecurityMode);
             encoder.WriteString("SecurityGroupId", SecurityGroupId);
             encoder.WriteEncodeableArray("SecurityKeyServices", SecurityKeyServices.ToArray(), typeof(EndpointDescription));
-            encoder.WriteVariant("PublisherId", PublisherId);
-            encoder.WriteUInt16("DataSetWriterId", DataSetWriterId);
-            encoder.WriteEnumerated("DataSetFieldContentMask", DataSetFieldContentMask);
-            encoder.WriteDouble("MessageReceiveTimeout", MessageReceiveTimeout);
             encoder.WriteExtensionObject("TransportSettings", TransportSettings);
             encoder.WriteExtensionObject("MessageSettings", MessageSettings);
             encoder.WriteExtensionObject("SubscribedDataSet", SubscribedDataSet);
@@ -8619,14 +9114,16 @@ namespace Opc.Ua
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             Name = decoder.ReadString("Name");
-            State = (PubSubState)decoder.ReadEnumerated("State", typeof(PubSubState));
+            Enabled = decoder.ReadBoolean("Enabled");
+            PublisherId = decoder.ReadVariant("PublisherId");
+            WriterGroupId = decoder.ReadUInt16("WriterGroupId");
+            DataSetWriterId = decoder.ReadUInt16("DataSetWriterId");
+            DataSetMetaData = (DataSetMetaDataType)decoder.ReadEncodeable("DataSetMetaData", typeof(DataSetMetaDataType));
+            DataSetFieldContentMask = (DataSetFieldContentMask)decoder.ReadEnumerated("DataSetFieldContentMask", typeof(DataSetFieldContentMask));
+            MessageReceiveTimeout = decoder.ReadDouble("MessageReceiveTimeout");
             SecurityMode = (MessageSecurityMode)decoder.ReadEnumerated("SecurityMode", typeof(MessageSecurityMode));
             SecurityGroupId = decoder.ReadString("SecurityGroupId");
             SecurityKeyServices = (EndpointDescriptionCollection)decoder.ReadEncodeableArray("SecurityKeyServices", typeof(EndpointDescription));
-            PublisherId = decoder.ReadVariant("PublisherId");
-            DataSetWriterId = decoder.ReadUInt16("DataSetWriterId");
-            DataSetFieldContentMask = (DataSetFieldContentMask)decoder.ReadEnumerated("DataSetFieldContentMask", typeof(DataSetFieldContentMask));
-            MessageReceiveTimeout = decoder.ReadDouble("MessageReceiveTimeout");
             TransportSettings = decoder.ReadExtensionObject("TransportSettings");
             MessageSettings = decoder.ReadExtensionObject("MessageSettings");
             SubscribedDataSet = decoder.ReadExtensionObject("SubscribedDataSet");
@@ -8650,14 +9147,16 @@ namespace Opc.Ua
             }
 
             if (!Utils.IsEqual(m_name, value.m_name)) return false;
-            if (!Utils.IsEqual(m_state, value.m_state)) return false;
+            if (!Utils.IsEqual(m_enabled, value.m_enabled)) return false;
+            if (!Utils.IsEqual(m_publisherId, value.m_publisherId)) return false;
+            if (!Utils.IsEqual(m_writerGroupId, value.m_writerGroupId)) return false;
+            if (!Utils.IsEqual(m_dataSetWriterId, value.m_dataSetWriterId)) return false;
+            if (!Utils.IsEqual(m_dataSetMetaData, value.m_dataSetMetaData)) return false;
+            if (!Utils.IsEqual(m_dataSetFieldContentMask, value.m_dataSetFieldContentMask)) return false;
+            if (!Utils.IsEqual(m_messageReceiveTimeout, value.m_messageReceiveTimeout)) return false;
             if (!Utils.IsEqual(m_securityMode, value.m_securityMode)) return false;
             if (!Utils.IsEqual(m_securityGroupId, value.m_securityGroupId)) return false;
             if (!Utils.IsEqual(m_securityKeyServices, value.m_securityKeyServices)) return false;
-            if (!Utils.IsEqual(m_publisherId, value.m_publisherId)) return false;
-            if (!Utils.IsEqual(m_dataSetWriterId, value.m_dataSetWriterId)) return false;
-            if (!Utils.IsEqual(m_dataSetFieldContentMask, value.m_dataSetFieldContentMask)) return false;
-            if (!Utils.IsEqual(m_messageReceiveTimeout, value.m_messageReceiveTimeout)) return false;
             if (!Utils.IsEqual(m_transportSettings, value.m_transportSettings)) return false;
             if (!Utils.IsEqual(m_messageSettings, value.m_messageSettings)) return false;
             if (!Utils.IsEqual(m_subscribedDataSet, value.m_subscribedDataSet)) return false;
@@ -8679,14 +9178,16 @@ namespace Opc.Ua
             DataSetReaderDataType clone = (DataSetReaderDataType)base.MemberwiseClone();
 
             clone.m_name = (string)Utils.Clone(this.m_name);
-            clone.m_state = (PubSubState)Utils.Clone(this.m_state);
+            clone.m_enabled = (bool)Utils.Clone(this.m_enabled);
+            clone.m_publisherId = (Variant)Utils.Clone(this.m_publisherId);
+            clone.m_writerGroupId = (ushort)Utils.Clone(this.m_writerGroupId);
+            clone.m_dataSetWriterId = (ushort)Utils.Clone(this.m_dataSetWriterId);
+            clone.m_dataSetMetaData = (DataSetMetaDataType)Utils.Clone(this.m_dataSetMetaData);
+            clone.m_dataSetFieldContentMask = (DataSetFieldContentMask)Utils.Clone(this.m_dataSetFieldContentMask);
+            clone.m_messageReceiveTimeout = (double)Utils.Clone(this.m_messageReceiveTimeout);
             clone.m_securityMode = (MessageSecurityMode)Utils.Clone(this.m_securityMode);
             clone.m_securityGroupId = (string)Utils.Clone(this.m_securityGroupId);
             clone.m_securityKeyServices = (EndpointDescriptionCollection)Utils.Clone(this.m_securityKeyServices);
-            clone.m_publisherId = (Variant)Utils.Clone(this.m_publisherId);
-            clone.m_dataSetWriterId = (ushort)Utils.Clone(this.m_dataSetWriterId);
-            clone.m_dataSetFieldContentMask = (DataSetFieldContentMask)Utils.Clone(this.m_dataSetFieldContentMask);
-            clone.m_messageReceiveTimeout = (double)Utils.Clone(this.m_messageReceiveTimeout);
             clone.m_transportSettings = (ExtensionObject)Utils.Clone(this.m_transportSettings);
             clone.m_messageSettings = (ExtensionObject)Utils.Clone(this.m_messageSettings);
             clone.m_subscribedDataSet = (ExtensionObject)Utils.Clone(this.m_subscribedDataSet);
@@ -8697,14 +9198,16 @@ namespace Opc.Ua
 
         #region Private Fields
         private string m_name;
-        private PubSubState m_state;
+        private bool m_enabled;
+        private Variant m_publisherId;
+        private ushort m_writerGroupId;
+        private ushort m_dataSetWriterId;
+        private DataSetMetaDataType m_dataSetMetaData;
+        private DataSetFieldContentMask m_dataSetFieldContentMask;
+        private double m_messageReceiveTimeout;
         private MessageSecurityMode m_securityMode;
         private string m_securityGroupId;
         private EndpointDescriptionCollection m_securityKeyServices;
-        private Variant m_publisherId;
-        private ushort m_dataSetWriterId;
-        private DataSetFieldContentMask m_dataSetFieldContentMask;
-        private double m_messageReceiveTimeout;
         private ExtensionObject m_transportSettings;
         private ExtensionObject m_messageSettings;
         private ExtensionObject m_subscribedDataSet;
@@ -10319,21 +10822,21 @@ namespace Opc.Ua
     #endif
     #endregion
 
-    #region PublishSubscribeDataType Class
-    #if (!OPCUA_EXCLUDE_PublishSubscribeDataType)
+    #region PubSubConfigurationDataType Class
+    #if (!OPCUA_EXCLUDE_PubSubConfigurationDataType)
     /// <summary>
-    /// A description for the PublishSubscribeDataType DataType.
+    /// A description for the PubSubConfigurationDataType DataType.
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
-    public partial class PublishSubscribeDataType : IEncodeable
+    public partial class PubSubConfigurationDataType : IEncodeable
     {
         #region Constructors
         /// <summary>
         /// The default constructor.
         /// </summary>
-        public PublishSubscribeDataType()
+        public PubSubConfigurationDataType()
         {
             Initialize();
         }
@@ -10354,6 +10857,7 @@ namespace Opc.Ua
         {
             m_publishedDataSets = new PublishedDataSetDataTypeCollection();
             m_connections = new PubSubConnectionDataTypeCollection();
+            m_enabled = true;
         }
         #endregion
 
@@ -10401,25 +10905,35 @@ namespace Opc.Ua
                 }
             }
         }
+
+        /// <summary>
+        /// A description for the Enabled field.
+        /// </summary>
+        [DataMember(Name = "Enabled", IsRequired = false, Order = 3)]
+        public bool Enabled
+        {
+            get { return m_enabled;  }
+            set { m_enabled = value; }
+        }
         #endregion
 
         #region IEncodeable Members
         /// <summary cref="IEncodeable.TypeId" />
         public virtual ExpandedNodeId TypeId
         {
-            get { return DataTypeIds.PublishSubscribeDataType; }
+            get { return DataTypeIds.PubSubConfigurationDataType; }
         }
 
         /// <summary cref="IEncodeable.BinaryEncodingId" />
         public virtual ExpandedNodeId BinaryEncodingId
         {
-            get { return ObjectIds.PublishSubscribeDataType_Encoding_DefaultBinary; }
+            get { return ObjectIds.PubSubConfigurationDataType_Encoding_DefaultBinary; }
         }
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
         public virtual ExpandedNodeId XmlEncodingId
         {
-            get { return ObjectIds.PublishSubscribeDataType_Encoding_DefaultXml; }
+            get { return ObjectIds.PubSubConfigurationDataType_Encoding_DefaultXml; }
         }
 
         /// <summary cref="IEncodeable.Encode(IEncoder)" />
@@ -10429,6 +10943,7 @@ namespace Opc.Ua
 
             encoder.WriteEncodeableArray("PublishedDataSets", PublishedDataSets.ToArray(), typeof(PublishedDataSetDataType));
             encoder.WriteEncodeableArray("Connections", Connections.ToArray(), typeof(PubSubConnectionDataType));
+            encoder.WriteBoolean("Enabled", Enabled);
 
             encoder.PopNamespace();
         }
@@ -10440,6 +10955,7 @@ namespace Opc.Ua
 
             PublishedDataSets = (PublishedDataSetDataTypeCollection)decoder.ReadEncodeableArray("PublishedDataSets", typeof(PublishedDataSetDataType));
             Connections = (PubSubConnectionDataTypeCollection)decoder.ReadEncodeableArray("Connections", typeof(PubSubConnectionDataType));
+            Enabled = decoder.ReadBoolean("Enabled");
 
             decoder.PopNamespace();
         }
@@ -10452,7 +10968,7 @@ namespace Opc.Ua
                 return true;
             }
 
-            PublishSubscribeDataType value = encodeable as PublishSubscribeDataType;
+            PubSubConfigurationDataType value = encodeable as PubSubConfigurationDataType;
 
             if (value == null)
             {
@@ -10461,6 +10977,7 @@ namespace Opc.Ua
 
             if (!Utils.IsEqual(m_publishedDataSets, value.m_publishedDataSets)) return false;
             if (!Utils.IsEqual(m_connections, value.m_connections)) return false;
+            if (!Utils.IsEqual(m_enabled, value.m_enabled)) return false;
 
             return true;
         }
@@ -10469,17 +10986,18 @@ namespace Opc.Ua
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            return (PublishSubscribeDataType)this.MemberwiseClone();
+            return (PubSubConfigurationDataType)this.MemberwiseClone();
         }
         #endif
 
         /// <summary cref="Object.MemberwiseClone" />
         public new object MemberwiseClone()
         {
-            PublishSubscribeDataType clone = (PublishSubscribeDataType)base.MemberwiseClone();
+            PubSubConfigurationDataType clone = (PubSubConfigurationDataType)base.MemberwiseClone();
 
             clone.m_publishedDataSets = (PublishedDataSetDataTypeCollection)Utils.Clone(this.m_publishedDataSets);
             clone.m_connections = (PubSubConnectionDataTypeCollection)Utils.Clone(this.m_connections);
+            clone.m_enabled = (bool)Utils.Clone(this.m_enabled);
 
             return clone;
         }
@@ -10488,57 +11006,58 @@ namespace Opc.Ua
         #region Private Fields
         private PublishedDataSetDataTypeCollection m_publishedDataSets;
         private PubSubConnectionDataTypeCollection m_connections;
+        private bool m_enabled;
         #endregion
     }
 
-    #region PublishSubscribeDataTypeCollection Class
+    #region PubSubConfigurationDataTypeCollection Class
     /// <summary>
-    /// A collection of PublishSubscribeDataType objects.
+    /// A collection of PubSubConfigurationDataType objects.
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    [CollectionDataContract(Name = "ListOfPublishSubscribeDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "PublishSubscribeDataType")]
+    [CollectionDataContract(Name = "ListOfPubSubConfigurationDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "PubSubConfigurationDataType")]
     #if !NET_STANDARD
-    public partial class PublishSubscribeDataTypeCollection : List<PublishSubscribeDataType>, ICloneable
+    public partial class PubSubConfigurationDataTypeCollection : List<PubSubConfigurationDataType>, ICloneable
     #else
-    public partial class PublishSubscribeDataTypeCollection : List<PublishSubscribeDataType>
+    public partial class PubSubConfigurationDataTypeCollection : List<PubSubConfigurationDataType>
     #endif
     {
         #region Constructors
         /// <summary>
         /// Initializes the collection with default values.
         /// </summary>
-        public PublishSubscribeDataTypeCollection() {}
+        public PubSubConfigurationDataTypeCollection() {}
 
         /// <summary>
         /// Initializes the collection with an initial capacity.
         /// </summary>
-        public PublishSubscribeDataTypeCollection(int capacity) : base(capacity) {}
+        public PubSubConfigurationDataTypeCollection(int capacity) : base(capacity) {}
 
         /// <summary>
         /// Initializes the collection with another collection.
         /// </summary>
-        public PublishSubscribeDataTypeCollection(IEnumerable<PublishSubscribeDataType> collection) : base(collection) {}
+        public PubSubConfigurationDataTypeCollection(IEnumerable<PubSubConfigurationDataType> collection) : base(collection) {}
         #endregion
 
         #region Static Operators
         /// <summary>
         /// Converts an array to a collection.
         /// </summary>
-        public static implicit operator PublishSubscribeDataTypeCollection(PublishSubscribeDataType[] values)
+        public static implicit operator PubSubConfigurationDataTypeCollection(PubSubConfigurationDataType[] values)
         {
             if (values != null)
             {
-                return new PublishSubscribeDataTypeCollection(values);
+                return new PubSubConfigurationDataTypeCollection(values);
             }
 
-            return new PublishSubscribeDataTypeCollection();
+            return new PubSubConfigurationDataTypeCollection();
         }
 
         /// <summary>
         /// Converts a collection to an array.
         /// </summary>
-        public static explicit operator PublishSubscribeDataType[](PublishSubscribeDataTypeCollection values)
+        public static explicit operator PubSubConfigurationDataType[](PubSubConfigurationDataTypeCollection values)
         {
             if (values != null)
             {
@@ -10556,7 +11075,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (PublishSubscribeDataTypeCollection)this.MemberwiseClone();
+            return (PubSubConfigurationDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -10564,11 +11083,11 @@ namespace Opc.Ua
         /// <summary cref="Object.MemberwiseClone" />
         public new object MemberwiseClone()
         {
-            PublishSubscribeDataTypeCollection clone = new PublishSubscribeDataTypeCollection(this.Count);
+            PubSubConfigurationDataTypeCollection clone = new PubSubConfigurationDataTypeCollection(this.Count);
 
             for (int ii = 0; ii < this.Count; ii++)
             {
-                clone.Add((PublishSubscribeDataType)Utils.Clone(this[ii]));
+                clone.Add((PubSubConfigurationDataType)Utils.Clone(this[ii]));
             }
 
             return clone;
@@ -10717,10 +11236,10 @@ namespace Opc.Ua
         GroupHeader = 2,
 
         /// <summary>
-        /// A description for the GroupId field.
+        /// A description for the WriterGroupId field.
         /// </summary>
-        [EnumMember(Value = "GroupId_4")]
-        GroupId = 4,
+        [EnumMember(Value = "WriterGroupId_4")]
+        WriterGroupId = 4,
 
         /// <summary>
         /// A description for the GroupVersion field.
@@ -10895,7 +11414,7 @@ namespace Opc.Ua
             m_dataSetOrdering = DataSetOrderingType.Undefined;
             m_networkMessageContentMask = UadpNetworkMessageContentMask.PublisherId;
             m_samplingOffset = (double)0;
-            m_publishingOffset = (double)0;
+            m_publishingOffset = new DoubleCollection();
         }
         #endregion
 
@@ -10944,10 +11463,22 @@ namespace Opc.Ua
         /// A description for the PublishingOffset field.
         /// </summary>
         [DataMember(Name = "PublishingOffset", IsRequired = false, Order = 5)]
-        public double PublishingOffset
+        public DoubleCollection PublishingOffset
         {
-            get { return m_publishingOffset;  }
-            set { m_publishingOffset = value; }
+            get
+            {
+                return m_publishingOffset;
+            }
+
+            set
+            {
+                m_publishingOffset = value;
+
+                if (value == null)
+                {
+                    m_publishingOffset = new DoubleCollection();
+                }
+            }
         }
         #endregion
 
@@ -10981,7 +11512,7 @@ namespace Opc.Ua
             encoder.WriteEnumerated("DataSetOrdering", DataSetOrdering);
             encoder.WriteEnumerated("NetworkMessageContentMask", NetworkMessageContentMask);
             encoder.WriteDouble("SamplingOffset", SamplingOffset);
-            encoder.WriteDouble("PublishingOffset", PublishingOffset);
+            encoder.WriteDoubleArray("PublishingOffset", PublishingOffset);
 
             encoder.PopNamespace();
         }
@@ -10997,7 +11528,7 @@ namespace Opc.Ua
             DataSetOrdering = (DataSetOrderingType)decoder.ReadEnumerated("DataSetOrdering", typeof(DataSetOrderingType));
             NetworkMessageContentMask = (UadpNetworkMessageContentMask)decoder.ReadEnumerated("NetworkMessageContentMask", typeof(UadpNetworkMessageContentMask));
             SamplingOffset = decoder.ReadDouble("SamplingOffset");
-            PublishingOffset = decoder.ReadDouble("PublishingOffset");
+            PublishingOffset = decoder.ReadDoubleArray("PublishingOffset");
 
             decoder.PopNamespace();
         }
@@ -11044,7 +11575,7 @@ namespace Opc.Ua
             clone.m_dataSetOrdering = (DataSetOrderingType)Utils.Clone(this.m_dataSetOrdering);
             clone.m_networkMessageContentMask = (UadpNetworkMessageContentMask)Utils.Clone(this.m_networkMessageContentMask);
             clone.m_samplingOffset = (double)Utils.Clone(this.m_samplingOffset);
-            clone.m_publishingOffset = (double)Utils.Clone(this.m_publishingOffset);
+            clone.m_publishingOffset = (DoubleCollection)Utils.Clone(this.m_publishingOffset);
 
             return clone;
         }
@@ -11055,7 +11586,7 @@ namespace Opc.Ua
         private DataSetOrderingType m_dataSetOrdering;
         private UadpNetworkMessageContentMask m_networkMessageContentMask;
         private double m_samplingOffset;
-        private double m_publishingOffset;
+        private DoubleCollection m_publishingOffset;
         #endregion
     }
 
@@ -11163,10 +11694,10 @@ namespace Opc.Ua
         Timestamp = 1,
 
         /// <summary>
-        /// A description for the Picoseconds field.
+        /// A description for the PicoSeconds field.
         /// </summary>
-        [EnumMember(Value = "Picoseconds_2")]
-        Picoseconds = 2,
+        [EnumMember(Value = "PicoSeconds_2")]
+        PicoSeconds = 2,
 
         /// <summary>
         /// A description for the Status field.
@@ -12860,21 +13391,21 @@ namespace Opc.Ua
     #endif
     #endregion
 
-    #region UdpWriterGroupTransportDataType Class
-    #if (!OPCUA_EXCLUDE_UdpWriterGroupTransportDataType)
+    #region DatagramWriterGroupTransportDataType Class
+    #if (!OPCUA_EXCLUDE_DatagramWriterGroupTransportDataType)
     /// <summary>
-    /// A description for the UdpWriterGroupTransportDataType DataType.
+    /// A description for the DatagramWriterGroupTransportDataType DataType.
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
-    public partial class UdpWriterGroupTransportDataType : WriterGroupTransportDataType
+    public partial class DatagramWriterGroupTransportDataType : WriterGroupTransportDataType
     {
         #region Constructors
         /// <summary>
         /// The default constructor.
         /// </summary>
-        public UdpWriterGroupTransportDataType()
+        public DatagramWriterGroupTransportDataType()
         {
             Initialize();
         }
@@ -12924,19 +13455,19 @@ namespace Opc.Ua
         /// <summary cref="IEncodeable.TypeId" />
         public override ExpandedNodeId TypeId
         {
-            get { return DataTypeIds.UdpWriterGroupTransportDataType; }
+            get { return DataTypeIds.DatagramWriterGroupTransportDataType; }
         }
 
         /// <summary cref="IEncodeable.BinaryEncodingId" />
         public override ExpandedNodeId BinaryEncodingId
         {
-            get { return ObjectIds.UdpWriterGroupTransportDataType_Encoding_DefaultBinary; }
+            get { return ObjectIds.DatagramWriterGroupTransportDataType_Encoding_DefaultBinary; }
         }
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
         public override ExpandedNodeId XmlEncodingId
         {
-            get { return ObjectIds.UdpWriterGroupTransportDataType_Encoding_DefaultXml; }
+            get { return ObjectIds.DatagramWriterGroupTransportDataType_Encoding_DefaultXml; }
         }
 
         /// <summary cref="IEncodeable.Encode(IEncoder)" />
@@ -12973,7 +13504,7 @@ namespace Opc.Ua
                 return true;
             }
 
-            UdpWriterGroupTransportDataType value = encodeable as UdpWriterGroupTransportDataType;
+            DatagramWriterGroupTransportDataType value = encodeable as DatagramWriterGroupTransportDataType;
 
             if (value == null)
             {
@@ -12991,14 +13522,14 @@ namespace Opc.Ua
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            return (UdpWriterGroupTransportDataType)this.MemberwiseClone();
+            return (DatagramWriterGroupTransportDataType)this.MemberwiseClone();
         }
         #endif
 
         /// <summary cref="Object.MemberwiseClone" />
         public new object MemberwiseClone()
         {
-            UdpWriterGroupTransportDataType clone = (UdpWriterGroupTransportDataType)base.MemberwiseClone();
+            DatagramWriterGroupTransportDataType clone = (DatagramWriterGroupTransportDataType)base.MemberwiseClone();
 
             clone.m_messageRepeatCount = (byte)Utils.Clone(this.m_messageRepeatCount);
             clone.m_messageRepeatDelay = (double)Utils.Clone(this.m_messageRepeatDelay);
@@ -13013,54 +13544,54 @@ namespace Opc.Ua
         #endregion
     }
 
-    #region UdpWriterGroupTransportDataTypeCollection Class
+    #region DatagramWriterGroupTransportDataTypeCollection Class
     /// <summary>
-    /// A collection of UdpWriterGroupTransportDataType objects.
+    /// A collection of DatagramWriterGroupTransportDataType objects.
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    [CollectionDataContract(Name = "ListOfUdpWriterGroupTransportDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "UdpWriterGroupTransportDataType")]
+    [CollectionDataContract(Name = "ListOfDatagramWriterGroupTransportDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "DatagramWriterGroupTransportDataType")]
     #if !NET_STANDARD
-    public partial class UdpWriterGroupTransportDataTypeCollection : List<UdpWriterGroupTransportDataType>, ICloneable
+    public partial class DatagramWriterGroupTransportDataTypeCollection : List<DatagramWriterGroupTransportDataType>, ICloneable
     #else
-    public partial class UdpWriterGroupTransportDataTypeCollection : List<UdpWriterGroupTransportDataType>
+    public partial class DatagramWriterGroupTransportDataTypeCollection : List<DatagramWriterGroupTransportDataType>
     #endif
     {
         #region Constructors
         /// <summary>
         /// Initializes the collection with default values.
         /// </summary>
-        public UdpWriterGroupTransportDataTypeCollection() {}
+        public DatagramWriterGroupTransportDataTypeCollection() {}
 
         /// <summary>
         /// Initializes the collection with an initial capacity.
         /// </summary>
-        public UdpWriterGroupTransportDataTypeCollection(int capacity) : base(capacity) {}
+        public DatagramWriterGroupTransportDataTypeCollection(int capacity) : base(capacity) {}
 
         /// <summary>
         /// Initializes the collection with another collection.
         /// </summary>
-        public UdpWriterGroupTransportDataTypeCollection(IEnumerable<UdpWriterGroupTransportDataType> collection) : base(collection) {}
+        public DatagramWriterGroupTransportDataTypeCollection(IEnumerable<DatagramWriterGroupTransportDataType> collection) : base(collection) {}
         #endregion
 
         #region Static Operators
         /// <summary>
         /// Converts an array to a collection.
         /// </summary>
-        public static implicit operator UdpWriterGroupTransportDataTypeCollection(UdpWriterGroupTransportDataType[] values)
+        public static implicit operator DatagramWriterGroupTransportDataTypeCollection(DatagramWriterGroupTransportDataType[] values)
         {
             if (values != null)
             {
-                return new UdpWriterGroupTransportDataTypeCollection(values);
+                return new DatagramWriterGroupTransportDataTypeCollection(values);
             }
 
-            return new UdpWriterGroupTransportDataTypeCollection();
+            return new DatagramWriterGroupTransportDataTypeCollection();
         }
 
         /// <summary>
         /// Converts a collection to an array.
         /// </summary>
-        public static explicit operator UdpWriterGroupTransportDataType[](UdpWriterGroupTransportDataTypeCollection values)
+        public static explicit operator DatagramWriterGroupTransportDataType[](DatagramWriterGroupTransportDataTypeCollection values)
         {
             if (values != null)
             {
@@ -13078,7 +13609,7 @@ namespace Opc.Ua
         /// </summary>
         public object Clone()
         {
-            return (UdpWriterGroupTransportDataTypeCollection)this.MemberwiseClone();
+            return (DatagramWriterGroupTransportDataTypeCollection)this.MemberwiseClone();
         }
         #endregion
         #endif
@@ -13086,11 +13617,11 @@ namespace Opc.Ua
         /// <summary cref="Object.MemberwiseClone" />
         public new object MemberwiseClone()
         {
-            UdpWriterGroupTransportDataTypeCollection clone = new UdpWriterGroupTransportDataTypeCollection(this.Count);
+            DatagramWriterGroupTransportDataTypeCollection clone = new DatagramWriterGroupTransportDataTypeCollection(this.Count);
 
             for (int ii = 0; ii < this.Count; ii++)
             {
-                clone.Add((UdpWriterGroupTransportDataType)Utils.Clone(this[ii]));
+                clone.Add((DatagramWriterGroupTransportDataType)Utils.Clone(this[ii]));
             }
 
             return clone;

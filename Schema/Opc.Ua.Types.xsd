@@ -773,7 +773,7 @@
   <xs:element name="ListOfFieldMetaData" type="tns:ListOfFieldMetaData" nillable="true"></xs:element>
 
   <xs:simpleType  name="DataSetFieldFlags">
-    <xs:restriction base="xs:unsignedInt">
+    <xs:restriction base="xs:unsignedShort">
     </xs:restriction>
   </xs:simpleType>
   <xs:element name="DataSetFieldFlags" type="tns:DataSetFieldFlags" />
@@ -938,7 +938,7 @@
   <xs:complexType name="PubSubGroupDataType">
     <xs:sequence>
       <xs:element name="Name" type="xs:string" minOccurs="0" nillable="true" />
-      <xs:element name="State" type="tns:PubSubState" minOccurs="0" />
+      <xs:element name="Enabled" type="xs:boolean" minOccurs="0" />
       <xs:element name="SecurityMode" type="tns:MessageSecurityMode" minOccurs="0" />
       <xs:element name="SecurityGroupId" type="xs:string" minOccurs="0" nillable="true" />
       <xs:element name="SecurityKeyServices" type="tns:ListOfEndpointDescription" minOccurs="0" nillable="true" />
@@ -954,12 +954,11 @@
   </xs:complexType>
   <xs:element name="ListOfPubSubGroupDataType" type="tns:ListOfPubSubGroupDataType" nillable="true"></xs:element>
 
-  <xs:complexType name="PubSubWriterGroupDataType">
+  <xs:complexType name="WriterGroupDataType">
     <xs:sequence>
       <xs:element name="WriterGroupId" type="xs:unsignedShort" minOccurs="0" />
       <xs:element name="PublishingInterval" type="xs:double" minOccurs="0" />
       <xs:element name="KeepAliveTime" type="xs:double" minOccurs="0" />
-      <xs:element name="EncodingMimeType" type="xs:string" minOccurs="0" nillable="true" />
       <xs:element name="Priority" type="xs:unsignedByte" minOccurs="0" />
       <xs:element name="LocaleIds" type="ua:ListOfString" minOccurs="0" nillable="true" />
       <xs:element name="TransportSettings" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
@@ -967,14 +966,14 @@
       <xs:element name="DataSetWriters" type="tns:ListOfDataSetWriterDataType" minOccurs="0" nillable="true" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="PubSubWriterGroupDataType" type="tns:PubSubWriterGroupDataType" />
+  <xs:element name="WriterGroupDataType" type="tns:WriterGroupDataType" />
 
-  <xs:complexType name="ListOfPubSubWriterGroupDataType">
+  <xs:complexType name="ListOfWriterGroupDataType">
     <xs:sequence>
-      <xs:element name="PubSubWriterGroupDataType" type="tns:PubSubWriterGroupDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+      <xs:element name="WriterGroupDataType" type="tns:WriterGroupDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="ListOfPubSubWriterGroupDataType" type="tns:ListOfPubSubWriterGroupDataType" nillable="true"></xs:element>
+  <xs:element name="ListOfWriterGroupDataType" type="tns:ListOfWriterGroupDataType" nillable="true"></xs:element>
 
   <xs:complexType name="WriterGroupTransportDataType">
     <xs:sequence>
@@ -1004,12 +1003,14 @@
 
   <xs:complexType name="PubSubConnectionDataType">
     <xs:sequence>
+      <xs:element name="Name" type="xs:string" minOccurs="0" nillable="true" />
       <xs:element name="PublisherId" type="ua:Variant" minOccurs="0" />
       <xs:element name="Address" type="xs:string" minOccurs="0" nillable="true" />
       <xs:element name="TransportProfileUri" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="NetworkAddress" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
       <xs:element name="TransportSettings" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
-      <xs:element name="WriterGroups" type="tns:ListOfPubSubWriterGroupDataType" minOccurs="0" nillable="true" />
-      <xs:element name="ReaderGroups" type="tns:ListOfPubSubReaderGroupDataType" minOccurs="0" nillable="true" />
+      <xs:element name="WriterGroups" type="tns:ListOfWriterGroupDataType" minOccurs="0" nillable="true" />
+      <xs:element name="ReaderGroups" type="tns:ListOfReaderGroupDataType" minOccurs="0" nillable="true" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="PubSubConnectionDataType" type="tns:PubSubConnectionDataType" />
@@ -1034,21 +1035,53 @@
   </xs:complexType>
   <xs:element name="ListOfConnectionTransportDataType" type="tns:ListOfConnectionTransportDataType" nillable="true"></xs:element>
 
-  <xs:complexType name="PubSubReaderGroupDataType">
+  <xs:complexType name="NetworkAddressDataType">
+    <xs:sequence>
+      <xs:element name="NetworkInterface" type="xs:string" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NetworkAddressDataType" type="tns:NetworkAddressDataType" />
+
+  <xs:complexType name="ListOfNetworkAddressDataType">
+    <xs:sequence>
+      <xs:element name="NetworkAddressDataType" type="tns:NetworkAddressDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfNetworkAddressDataType" type="tns:ListOfNetworkAddressDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="NetworkAddressUrlDataType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:NetworkAddressDataType">
+        <xs:sequence>
+          <xs:element name="Url" type="xs:string" minOccurs="0" nillable="true" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="NetworkAddressUrlDataType" type="tns:NetworkAddressUrlDataType" />
+
+  <xs:complexType name="ListOfNetworkAddressUrlDataType">
+    <xs:sequence>
+      <xs:element name="NetworkAddressUrlDataType" type="tns:NetworkAddressUrlDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfNetworkAddressUrlDataType" type="tns:ListOfNetworkAddressUrlDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="ReaderGroupDataType">
     <xs:sequence>
       <xs:element name="TransportSettings" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
       <xs:element name="MessageSettings" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
       <xs:element name="DataSetWriters" type="tns:ListOfDataSetReaderDataType" minOccurs="0" nillable="true" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="PubSubReaderGroupDataType" type="tns:PubSubReaderGroupDataType" />
+  <xs:element name="ReaderGroupDataType" type="tns:ReaderGroupDataType" />
 
-  <xs:complexType name="ListOfPubSubReaderGroupDataType">
+  <xs:complexType name="ListOfReaderGroupDataType">
     <xs:sequence>
-      <xs:element name="PubSubReaderGroupDataType" type="tns:PubSubReaderGroupDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+      <xs:element name="ReaderGroupDataType" type="tns:ReaderGroupDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="ListOfPubSubReaderGroupDataType" type="tns:ListOfPubSubReaderGroupDataType" nillable="true"></xs:element>
+  <xs:element name="ListOfReaderGroupDataType" type="tns:ListOfReaderGroupDataType" nillable="true"></xs:element>
 
   <xs:complexType name="ReaderGroupTransportDataType">
     <xs:sequence>
@@ -1079,14 +1112,16 @@
   <xs:complexType name="DataSetReaderDataType">
     <xs:sequence>
       <xs:element name="Name" type="xs:string" minOccurs="0" nillable="true" />
-      <xs:element name="State" type="tns:PubSubState" minOccurs="0" />
+      <xs:element name="Enabled" type="xs:boolean" minOccurs="0" />
+      <xs:element name="PublisherId" type="ua:Variant" minOccurs="0" />
+      <xs:element name="WriterGroupId" type="xs:unsignedShort" minOccurs="0" />
+      <xs:element name="DataSetWriterId" type="xs:unsignedShort" minOccurs="0" />
+      <xs:element name="DataSetMetaData" type="tns:DataSetMetaDataType" minOccurs="0" nillable="true" />
+      <xs:element name="DataSetFieldContentMask" type="tns:DataSetFieldContentMask" minOccurs="0" />
+      <xs:element name="MessageReceiveTimeout" type="xs:double" minOccurs="0" />
       <xs:element name="SecurityMode" type="tns:MessageSecurityMode" minOccurs="0" />
       <xs:element name="SecurityGroupId" type="xs:string" minOccurs="0" nillable="true" />
       <xs:element name="SecurityKeyServices" type="tns:ListOfEndpointDescription" minOccurs="0" nillable="true" />
-      <xs:element name="PublisherId" type="ua:Variant" minOccurs="0" />
-      <xs:element name="DataSetWriterId" type="xs:unsignedShort" minOccurs="0" />
-      <xs:element name="DataSetFieldContentMask" type="tns:DataSetFieldContentMask" minOccurs="0" />
-      <xs:element name="MessageReceiveTimeout" type="xs:double" minOccurs="0" />
       <xs:element name="TransportSettings" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
       <xs:element name="MessageSettings" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
       <xs:element name="SubscribedDataSet" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
@@ -1205,20 +1240,21 @@
   </xs:complexType>
   <xs:element name="ListOfSubscribedDataSetMirrorDataType" type="tns:ListOfSubscribedDataSetMirrorDataType" nillable="true"></xs:element>
 
-  <xs:complexType name="PublishSubscribeDataType">
+  <xs:complexType name="PubSubConfigurationDataType">
     <xs:sequence>
       <xs:element name="PublishedDataSets" type="tns:ListOfPublishedDataSetDataType" minOccurs="0" nillable="true" />
       <xs:element name="Connections" type="tns:ListOfPubSubConnectionDataType" minOccurs="0" nillable="true" />
+      <xs:element name="Enabled" type="xs:boolean" minOccurs="0" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="PublishSubscribeDataType" type="tns:PublishSubscribeDataType" />
+  <xs:element name="PubSubConfigurationDataType" type="tns:PubSubConfigurationDataType" />
 
-  <xs:complexType name="ListOfPublishSubscribeDataType">
+  <xs:complexType name="ListOfPubSubConfigurationDataType">
     <xs:sequence>
-      <xs:element name="PublishSubscribeDataType" type="tns:PublishSubscribeDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+      <xs:element name="PubSubConfigurationDataType" type="tns:PubSubConfigurationDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="ListOfPublishSubscribeDataType" type="tns:ListOfPublishSubscribeDataType" nillable="true"></xs:element>
+  <xs:element name="ListOfPubSubConfigurationDataType" type="tns:ListOfPubSubConfigurationDataType" nillable="true"></xs:element>
 
   <xs:simpleType  name="DataSetOrderingType">
     <xs:restriction base="xs:string">
@@ -1257,7 +1293,7 @@
           <xs:element name="DataSetOrdering" type="tns:DataSetOrderingType" minOccurs="0" />
           <xs:element name="NetworkMessageContentMask" type="tns:UadpNetworkMessageContentMask" minOccurs="0" />
           <xs:element name="SamplingOffset" type="xs:double" minOccurs="0" />
-          <xs:element name="PublishingOffset" type="xs:double" minOccurs="0" />
+          <xs:element name="PublishingOffset" type="ua:ListOfDouble" minOccurs="0" nillable="true" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -1412,7 +1448,7 @@
   </xs:complexType>
   <xs:element name="ListOfJsonDataSetReaderMessageDataType" type="tns:ListOfJsonDataSetReaderMessageDataType" nillable="true"></xs:element>
 
-  <xs:complexType name="UdpWriterGroupTransportDataType">
+  <xs:complexType name="DatagramWriterGroupTransportDataType">
     <xs:complexContent mixed="false">
       <xs:extension base="tns:WriterGroupTransportDataType">
         <xs:sequence>
@@ -1422,14 +1458,14 @@
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="UdpWriterGroupTransportDataType" type="tns:UdpWriterGroupTransportDataType" />
+  <xs:element name="DatagramWriterGroupTransportDataType" type="tns:DatagramWriterGroupTransportDataType" />
 
-  <xs:complexType name="ListOfUdpWriterGroupTransportDataType">
+  <xs:complexType name="ListOfDatagramWriterGroupTransportDataType">
     <xs:sequence>
-      <xs:element name="UdpWriterGroupTransportDataType" type="tns:UdpWriterGroupTransportDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+      <xs:element name="DatagramWriterGroupTransportDataType" type="tns:DatagramWriterGroupTransportDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="ListOfUdpWriterGroupTransportDataType" type="tns:ListOfUdpWriterGroupTransportDataType" nillable="true"></xs:element>
+  <xs:element name="ListOfDatagramWriterGroupTransportDataType" type="tns:ListOfDatagramWriterGroupTransportDataType" nillable="true"></xs:element>
 
   <xs:complexType name="BrokerWriterGroupTransportDataType">
     <xs:complexContent mixed="false">
