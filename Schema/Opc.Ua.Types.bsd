@@ -470,9 +470,8 @@
   <opc:StructuredType Name="PubSubConnectionDataType" BaseType="ua:ExtensionObject">
     <opc:Field Name="Name" TypeName="opc:String" />
     <opc:Field Name="PublisherId" TypeName="ua:Variant" />
-    <opc:Field Name="Address" TypeName="opc:String" />
     <opc:Field Name="TransportProfileUri" TypeName="opc:String" />
-    <opc:Field Name="NetworkAddress" TypeName="ua:ExtensionObject" />
+    <opc:Field Name="Address" TypeName="ua:ExtensionObject" />
     <opc:Field Name="TransportSettings" TypeName="ua:ExtensionObject" />
     <opc:Field Name="NoOfWriterGroups" TypeName="opc:Int32" />
     <opc:Field Name="WriterGroups" TypeName="tns:WriterGroupDataType" LengthField="NoOfWriterGroups" />

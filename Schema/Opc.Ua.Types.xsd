@@ -1005,9 +1005,8 @@
     <xs:sequence>
       <xs:element name="Name" type="xs:string" minOccurs="0" nillable="true" />
       <xs:element name="PublisherId" type="ua:Variant" minOccurs="0" />
-      <xs:element name="Address" type="xs:string" minOccurs="0" nillable="true" />
       <xs:element name="TransportProfileUri" type="xs:string" minOccurs="0" nillable="true" />
-      <xs:element name="NetworkAddress" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
+      <xs:element name="Address" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
       <xs:element name="TransportSettings" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
       <xs:element name="WriterGroups" type="tns:ListOfWriterGroupDataType" minOccurs="0" nillable="true" />
       <xs:element name="ReaderGroups" type="tns:ListOfReaderGroupDataType" minOccurs="0" nillable="true" />
