@@ -367,9 +367,8 @@
     <Definition Name="PubSubConnectionDataType">
       <Field Name="Name" DataType="i=12" />
       <Field Name="PublisherId" />
-      <Field Name="Address" DataType="i=12" />
       <Field Name="TransportProfileUri" DataType="i=12" />
-      <Field Name="NetworkAddress" DataType="i=22" />
+      <Field Name="Address" DataType="i=22" />
       <Field Name="TransportSettings" DataType="i=22" />
       <Field Name="WriterGroups" DataType="i=15480" ValueRank="1" />
       <Field Name="ReaderGroups" DataType="i=15520" ValueRank="1" />

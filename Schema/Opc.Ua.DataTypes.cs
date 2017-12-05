@@ -7212,9 +7212,8 @@ namespace Opc.Ua
         {
             m_name = null;
             m_publisherId = Variant.Null;
-            m_address = null;
             m_transportProfileUri = null;
-            m_networkAddress = null;
+            m_address = null;
             m_transportSettings = null;
             m_writerGroups = new WriterGroupDataTypeCollection();
             m_readerGroups = new ReaderGroupDataTypeCollection();
@@ -7243,19 +7242,9 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the Address field.
-        /// </summary>
-        [DataMember(Name = "Address", IsRequired = false, Order = 3)]
-        public string Address
-        {
-            get { return m_address;  }
-            set { m_address = value; }
-        }
-
-        /// <summary>
         /// A description for the TransportProfileUri field.
         /// </summary>
-        [DataMember(Name = "TransportProfileUri", IsRequired = false, Order = 4)]
+        [DataMember(Name = "TransportProfileUri", IsRequired = false, Order = 3)]
         public string TransportProfileUri
         {
             get { return m_transportProfileUri;  }
@@ -7263,19 +7252,19 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the NetworkAddress field.
+        /// A description for the Address field.
         /// </summary>
-        [DataMember(Name = "NetworkAddress", IsRequired = false, Order = 5)]
-        public ExtensionObject NetworkAddress
+        [DataMember(Name = "Address", IsRequired = false, Order = 4)]
+        public ExtensionObject Address
         {
-            get { return m_networkAddress;  }
-            set { m_networkAddress = value; }
+            get { return m_address;  }
+            set { m_address = value; }
         }
 
         /// <summary>
         /// A description for the TransportSettings field.
         /// </summary>
-        [DataMember(Name = "TransportSettings", IsRequired = false, Order = 6)]
+        [DataMember(Name = "TransportSettings", IsRequired = false, Order = 5)]
         public ExtensionObject TransportSettings
         {
             get { return m_transportSettings;  }
@@ -7285,7 +7274,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the WriterGroups field.
         /// </summary>
-        [DataMember(Name = "WriterGroups", IsRequired = false, Order = 7)]
+        [DataMember(Name = "WriterGroups", IsRequired = false, Order = 6)]
         public WriterGroupDataTypeCollection WriterGroups
         {
             get
@@ -7307,7 +7296,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the ReaderGroups field.
         /// </summary>
-        [DataMember(Name = "ReaderGroups", IsRequired = false, Order = 8)]
+        [DataMember(Name = "ReaderGroups", IsRequired = false, Order = 7)]
         public ReaderGroupDataTypeCollection ReaderGroups
         {
             get
@@ -7353,9 +7342,8 @@ namespace Opc.Ua
 
             encoder.WriteString("Name", Name);
             encoder.WriteVariant("PublisherId", PublisherId);
-            encoder.WriteString("Address", Address);
             encoder.WriteString("TransportProfileUri", TransportProfileUri);
-            encoder.WriteExtensionObject("NetworkAddress", NetworkAddress);
+            encoder.WriteExtensionObject("Address", Address);
             encoder.WriteExtensionObject("TransportSettings", TransportSettings);
             encoder.WriteEncodeableArray("WriterGroups", WriterGroups.ToArray(), typeof(WriterGroupDataType));
             encoder.WriteEncodeableArray("ReaderGroups", ReaderGroups.ToArray(), typeof(ReaderGroupDataType));
@@ -7370,9 +7358,8 @@ namespace Opc.Ua
 
             Name = decoder.ReadString("Name");
             PublisherId = decoder.ReadVariant("PublisherId");
-            Address = decoder.ReadString("Address");
             TransportProfileUri = decoder.ReadString("TransportProfileUri");
-            NetworkAddress = decoder.ReadExtensionObject("NetworkAddress");
+            Address = decoder.ReadExtensionObject("Address");
             TransportSettings = decoder.ReadExtensionObject("TransportSettings");
             WriterGroups = (WriterGroupDataTypeCollection)decoder.ReadEncodeableArray("WriterGroups", typeof(WriterGroupDataType));
             ReaderGroups = (ReaderGroupDataTypeCollection)decoder.ReadEncodeableArray("ReaderGroups", typeof(ReaderGroupDataType));
@@ -7397,9 +7384,8 @@ namespace Opc.Ua
 
             if (!Utils.IsEqual(m_name, value.m_name)) return false;
             if (!Utils.IsEqual(m_publisherId, value.m_publisherId)) return false;
-            if (!Utils.IsEqual(m_address, value.m_address)) return false;
             if (!Utils.IsEqual(m_transportProfileUri, value.m_transportProfileUri)) return false;
-            if (!Utils.IsEqual(m_networkAddress, value.m_networkAddress)) return false;
+            if (!Utils.IsEqual(m_address, value.m_address)) return false;
             if (!Utils.IsEqual(m_transportSettings, value.m_transportSettings)) return false;
             if (!Utils.IsEqual(m_writerGroups, value.m_writerGroups)) return false;
             if (!Utils.IsEqual(m_readerGroups, value.m_readerGroups)) return false;
@@ -7422,9 +7408,8 @@ namespace Opc.Ua
 
             clone.m_name = (string)Utils.Clone(this.m_name);
             clone.m_publisherId = (Variant)Utils.Clone(this.m_publisherId);
-            clone.m_address = (string)Utils.Clone(this.m_address);
             clone.m_transportProfileUri = (string)Utils.Clone(this.m_transportProfileUri);
-            clone.m_networkAddress = (ExtensionObject)Utils.Clone(this.m_networkAddress);
+            clone.m_address = (ExtensionObject)Utils.Clone(this.m_address);
             clone.m_transportSettings = (ExtensionObject)Utils.Clone(this.m_transportSettings);
             clone.m_writerGroups = (WriterGroupDataTypeCollection)Utils.Clone(this.m_writerGroups);
             clone.m_readerGroups = (ReaderGroupDataTypeCollection)Utils.Clone(this.m_readerGroups);
@@ -7436,9 +7421,8 @@ namespace Opc.Ua
         #region Private Fields
         private string m_name;
         private Variant m_publisherId;
-        private string m_address;
         private string m_transportProfileUri;
-        private ExtensionObject m_networkAddress;
+        private ExtensionObject m_address;
         private ExtensionObject m_transportSettings;
         private WriterGroupDataTypeCollection m_writerGroups;
         private ReaderGroupDataTypeCollection m_readerGroups;
