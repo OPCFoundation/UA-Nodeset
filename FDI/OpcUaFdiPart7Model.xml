@@ -275,9 +275,9 @@
 
   <ObjectType SymbolicName="FDI:ServerCommunicationDeviceType" BaseType="DI:DeviceType" IsAbstract="true">
     <Children>
+      <Property SymbolicName="FDI:ListOfCommunicationProfiles" DataType="ua:String" ModellingRule="Mandatory" ValueRank="Array" />
       <Object SymbolicName="DI:MethodSet" TypeDefinition="ua:BaseObjectType" ModellingRule="Optional">
         <Children>
-          <Property SymbolicName="FDI:ListOfCommunicationProfiles" DataType="ua:String" ModellingRule="Mandatory" ValueRank="Array" />
           <Method SymbolicName="FDI:Scan" TypeDefinition="FDI:ScanMethodType" ModellingRule="Optional" />
           <Method SymbolicName="FDI:ResetScan" TypeDefinition="FDI:ResetScanMethodType" ModellingRule="Optional" />
           <Method SymbolicName="FDI:AddComponent" TypeDefinition="FDI:AddComponentMethodType" ModellingRule="Optional" />
@@ -745,6 +745,5 @@
       </Object>
     </Children>
   </ObjectType>
-
 
 </ModelDesign>

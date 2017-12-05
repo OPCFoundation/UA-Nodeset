@@ -3397,9 +3397,9 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments = 154;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationDeviceType_MethodSet_ListOfCommunicationProfiles Variable.
+        /// The identifier for the ServerCommunicationDeviceType_ListOfCommunicationProfiles Variable.
         /// </summary>
-        public const uint ServerCommunicationDeviceType_MethodSet_ListOfCommunicationProfiles = 2220;
+        public const uint ServerCommunicationDeviceType_ListOfCommunicationProfiles = 15001;
 
         /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_MethodSet_Scan_OutputArguments Variable.
@@ -3520,11 +3520,6 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public const uint ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_BreakLock_OutputArguments = 385;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_MethodSet_ListOfCommunicationProfiles Variable.
-        /// </summary>
-        public const uint ServerCommunicationFFH1DeviceType_MethodSet_ListOfCommunicationProfiles = 2221;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_MethodSet_Scan_OutputArguments Variable.
@@ -3782,11 +3777,6 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments = 513;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_MethodSet_ListOfCommunicationProfiles Variable.
-        /// </summary>
-        public const uint ServerCommunicationFFHSEDeviceType_MethodSet_ListOfCommunicationProfiles = 2222;
-
-        /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_MethodSet_Scan_OutputArguments Variable.
         /// </summary>
         public const uint ServerCommunicationFFHSEDeviceType_MethodSet_Scan_OutputArguments = 517;
@@ -4042,11 +4032,6 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments = 641;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_MethodSet_ListOfCommunicationProfiles Variable.
-        /// </summary>
-        public const uint ServerCommunicationPROFIBUSDeviceType_MethodSet_ListOfCommunicationProfiles = 2223;
-
-        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_MethodSet_Scan_OutputArguments Variable.
         /// </summary>
         public const uint ServerCommunicationPROFIBUSDeviceType_MethodSet_Scan_OutputArguments = 645;
@@ -4292,11 +4277,6 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments = 766;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_MethodSet_ListOfCommunicationProfiles Variable.
-        /// </summary>
-        public const uint ServerCommunicationPROFINETDeviceType_MethodSet_ListOfCommunicationProfiles = 2224;
-
-        /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_MethodSet_Scan_OutputArguments Variable.
         /// </summary>
         public const uint ServerCommunicationPROFINETDeviceType_MethodSet_Scan_OutputArguments = 770;
@@ -4540,11 +4520,6 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationHARType_CPIdentifier_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public const uint ServerCommunicationHARType_CPIdentifier_Lock_BreakLock_OutputArguments = 891;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationHARType_MethodSet_ListOfCommunicationProfiles Variable.
-        /// </summary>
-        public const uint ServerCommunicationHARType_MethodSet_ListOfCommunicationProfiles = 2225;
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_MethodSet_Scan_OutputArguments Variable.
@@ -4802,11 +4777,6 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments = 1849;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_MethodSet_ListOfCommunicationProfiles Variable.
-        /// </summary>
-        public const uint ServerCommunicationISA100_WirelessDeviceType_MethodSet_ListOfCommunicationProfiles = 2226;
-
-        /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_MethodSet_Scan_OutputArguments Variable.
         /// </summary>
         public const uint ServerCommunicationISA100_WirelessDeviceType_MethodSet_Scan_OutputArguments = 1853;
@@ -5050,11 +5020,6 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments = 1974;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_ListOfCommunicationProfiles Variable.
-        /// </summary>
-        public const uint ServerCommunicationGENERICDeviceType_MethodSet_ListOfCommunicationProfiles = 2227;
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_Scan_OutputArguments Variable.
@@ -9782,9 +9747,9 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationDeviceType_MethodSet_ListOfCommunicationProfiles Variable.
+        /// The identifier for the ServerCommunicationDeviceType_ListOfCommunicationProfiles Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationDeviceType_MethodSet_ListOfCommunicationProfiles = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationDeviceType_MethodSet_ListOfCommunicationProfiles, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationDeviceType_ListOfCommunicationProfiles = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationDeviceType_ListOfCommunicationProfiles, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_MethodSet_Scan_OutputArguments Variable.
@@ -9905,11 +9870,6 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_MethodSet_ListOfCommunicationProfiles Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_MethodSet_ListOfCommunicationProfiles = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_MethodSet_ListOfCommunicationProfiles, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_MethodSet_Scan_OutputArguments Variable.
@@ -10167,11 +10127,6 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_MethodSet_ListOfCommunicationProfiles Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_MethodSet_ListOfCommunicationProfiles = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_MethodSet_ListOfCommunicationProfiles, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_MethodSet_Scan_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_MethodSet_Scan_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_MethodSet_Scan_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -10427,11 +10382,6 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_MethodSet_ListOfCommunicationProfiles Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_MethodSet_ListOfCommunicationProfiles = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_MethodSet_ListOfCommunicationProfiles, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_MethodSet_Scan_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_MethodSet_Scan_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_MethodSet_Scan_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -10677,11 +10627,6 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_MethodSet_ListOfCommunicationProfiles Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_MethodSet_ListOfCommunicationProfiles = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_MethodSet_ListOfCommunicationProfiles, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_MethodSet_Scan_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_MethodSet_Scan_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_MethodSet_Scan_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -10925,11 +10870,6 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationHARType_CPIdentifier_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationHARType_CPIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_CPIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationHARType_MethodSet_ListOfCommunicationProfiles Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationHARType_MethodSet_ListOfCommunicationProfiles = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_MethodSet_ListOfCommunicationProfiles, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_MethodSet_Scan_OutputArguments Variable.
@@ -11187,11 +11127,6 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_MethodSet_ListOfCommunicationProfiles Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_MethodSet_ListOfCommunicationProfiles = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_MethodSet_ListOfCommunicationProfiles, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_MethodSet_Scan_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_MethodSet_Scan_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_MethodSet_Scan_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -11435,11 +11370,6 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_ListOfCommunicationProfiles Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_MethodSet_ListOfCommunicationProfiles = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_MethodSet_ListOfCommunicationProfiles, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_Scan_OutputArguments Variable.
@@ -13004,6 +12934,11 @@ namespace Opc.Ua.Fdi7
         /// The BrowseName for the ISA100_Wireless component.
         /// </summary>
         public const string ISA100_Wireless = "ISA100_Wireless";
+
+        /// <summary>
+        /// The BrowseName for the ListOfCommunicationProfiles component.
+        /// </summary>
+        public const string ListOfCommunicationProfiles = "ListOfCommunicationProfiles";
 
         /// <summary>
         /// The BrowseName for the MAC component.
