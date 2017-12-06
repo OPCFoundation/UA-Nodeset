@@ -43,7 +43,7 @@
   <Namespaces>
     <Namespace Name="OpcUaFdi7" Prefix="Opc.Ua.Fdi7" XmlNamespace="http://fdi-cooperation.com/OPCUA/FDI7/Types.xsd" XmlPrefix="FDI7">http://fdi-cooperation.com/OPCUA/FDI7/</Namespace>
     <Namespace Name="OpcUaDi" Prefix="Opc.Ua.Di" XmlNamespace="http://opcfoundation.org/UA/DI/Types.xsd" XmlPrefix="DI" FilePath="OpcUaDiModel">http://opcfoundation.org/UA/DI/</Namespace>
-    <Namespace Name="OpcUa" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="OpcUa" Version="1.03" PublicationDate="2013-12-02T00:00:00Z" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</Namespace>
   </Namespaces>
 
   <ObjectType SymbolicName="FDI:Foundation_H1" BaseType="DI:ProtocolType" IsAbstract="false"/>
