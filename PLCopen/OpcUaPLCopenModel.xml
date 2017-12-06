@@ -40,7 +40,7 @@
   <Namespaces>
     <Namespace Name="OpcUa" Prefix="Opc.Ua" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="OpcUaDi" Prefix="Opc.Ua.Di" XmlNamespace="http://opcfoundation.org/UA/DI/Types.xsd" FilePath="OpcUaDiModel">http://opcfoundation.org/UA/DI/</Namespace>
-    <Namespace Name="OpcUaPlc" Prefix="Opc.Ua.Plc" XmlNamespace="http://PLCopen.org/OpcUa/IEC61131-3/Types.xsd">http://PLCopen.org/OpcUa/IEC61131-3/</Namespace>
+    <Namespace Name="OpcUaPlc" Version="1.03" PublicationDate="2013-12-02T00:00:00Z" Prefix="Opc.Ua.Plc" XmlNamespace="http://PLCopen.org/OpcUa/IEC61131-3/Types.xsd">http://PLCopen.org/OpcUa/IEC61131-3/</Namespace>
   </Namespaces>
   <ReferenceType SymbolicName="OpcUaPlc:HasInputVars" BaseType="OpcUa:HasComponent">
     <InverseName>InputVarsOf</InverseName>
