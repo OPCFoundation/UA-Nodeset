@@ -1809,6 +1809,7 @@ namespace Opc.Ua
             m_namespaces = new StringCollection();
             m_structureDataTypes = new StructureDescriptionCollection();
             m_enumDataTypes = new EnumDescriptionCollection();
+            m_simpleDataTypes = new SimpleTypeDescriptionCollection();
         }
         #endregion
 
@@ -1878,6 +1879,28 @@ namespace Opc.Ua
                 }
             }
         }
+
+        /// <summary>
+        /// A description for the SimpleDataTypes field.
+        /// </summary>
+        [DataMember(Name = "SimpleDataTypes", IsRequired = false, Order = 4)]
+        public SimpleTypeDescriptionCollection SimpleDataTypes
+        {
+            get
+            {
+                return m_simpleDataTypes;
+            }
+
+            set
+            {
+                m_simpleDataTypes = value;
+
+                if (value == null)
+                {
+                    m_simpleDataTypes = new SimpleTypeDescriptionCollection();
+                }
+            }
+        }
         #endregion
 
         #region IEncodeable Members
@@ -1907,6 +1930,7 @@ namespace Opc.Ua
             encoder.WriteStringArray("Namespaces", Namespaces);
             encoder.WriteEncodeableArray("StructureDataTypes", StructureDataTypes.ToArray(), typeof(StructureDescription));
             encoder.WriteEncodeableArray("EnumDataTypes", EnumDataTypes.ToArray(), typeof(EnumDescription));
+            encoder.WriteEncodeableArray("SimpleDataTypes", SimpleDataTypes.ToArray(), typeof(SimpleTypeDescription));
 
             encoder.PopNamespace();
         }
@@ -1919,6 +1943,7 @@ namespace Opc.Ua
             Namespaces = decoder.ReadStringArray("Namespaces");
             StructureDataTypes = (StructureDescriptionCollection)decoder.ReadEncodeableArray("StructureDataTypes", typeof(StructureDescription));
             EnumDataTypes = (EnumDescriptionCollection)decoder.ReadEncodeableArray("EnumDataTypes", typeof(EnumDescription));
+            SimpleDataTypes = (SimpleTypeDescriptionCollection)decoder.ReadEncodeableArray("SimpleDataTypes", typeof(SimpleTypeDescription));
 
             decoder.PopNamespace();
         }
@@ -1941,6 +1966,7 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_namespaces, value.m_namespaces)) return false;
             if (!Utils.IsEqual(m_structureDataTypes, value.m_structureDataTypes)) return false;
             if (!Utils.IsEqual(m_enumDataTypes, value.m_enumDataTypes)) return false;
+            if (!Utils.IsEqual(m_simpleDataTypes, value.m_simpleDataTypes)) return false;
 
             return true;
         }
@@ -1961,6 +1987,7 @@ namespace Opc.Ua
             clone.m_namespaces = (StringCollection)Utils.Clone(this.m_namespaces);
             clone.m_structureDataTypes = (StructureDescriptionCollection)Utils.Clone(this.m_structureDataTypes);
             clone.m_enumDataTypes = (EnumDescriptionCollection)Utils.Clone(this.m_enumDataTypes);
+            clone.m_simpleDataTypes = (SimpleTypeDescriptionCollection)Utils.Clone(this.m_simpleDataTypes);
 
             return clone;
         }
@@ -1970,6 +1997,7 @@ namespace Opc.Ua
         private StringCollection m_namespaces;
         private StructureDescriptionCollection m_structureDataTypes;
         private EnumDescriptionCollection m_enumDataTypes;
+        private SimpleTypeDescriptionCollection m_simpleDataTypes;
         #endregion
     }
 
@@ -2774,6 +2802,521 @@ namespace Opc.Ua
             for (int ii = 0; ii < this.Count; ii++)
             {
                 clone.Add((EnumDescription)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
+    #endif
+    #endregion
+
+    #region SimpleTypeDescription Class
+    #if (!OPCUA_EXCLUDE_SimpleTypeDescription)
+    /// <summary>
+    /// A description for the SimpleTypeDescription DataType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class SimpleTypeDescription : DataTypeDescription
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public SimpleTypeDescription()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+            m_baseDataType = null;
+            m_builtInType = (byte)0;
+        }
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the BaseDataType field.
+        /// </summary>
+        [DataMember(Name = "BaseDataType", IsRequired = false, Order = 1)]
+        public NodeId BaseDataType
+        {
+            get { return m_baseDataType;  }
+            set { m_baseDataType = value; }
+        }
+
+        /// <summary>
+        /// A description for the BuiltInType field.
+        /// </summary>
+        [DataMember(Name = "BuiltInType", IsRequired = false, Order = 2)]
+        public byte BuiltInType
+        {
+            get { return m_builtInType;  }
+            set { m_builtInType = value; }
+        }
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public override ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.SimpleTypeDescription; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public override ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.SimpleTypeDescription_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public override ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.SimpleTypeDescription_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public override void Encode(IEncoder encoder)
+        {
+            base.Encode(encoder);
+
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            encoder.WriteNodeId("BaseDataType", BaseDataType);
+            encoder.WriteByte("BuiltInType", BuiltInType);
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public override void Decode(IDecoder decoder)
+        {
+            base.Decode(decoder);
+
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            BaseDataType = decoder.ReadNodeId("BaseDataType");
+            BuiltInType = decoder.ReadByte("BuiltInType");
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public override bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            SimpleTypeDescription value = encodeable as SimpleTypeDescription;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+            if (!base.IsEqual(encodeable)) return false;
+            if (!Utils.IsEqual(m_baseDataType, value.m_baseDataType)) return false;
+            if (!Utils.IsEqual(m_builtInType, value.m_builtInType)) return false;
+
+            return true;
+        }    
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public override object Clone()
+        {
+            return (SimpleTypeDescription)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            SimpleTypeDescription clone = (SimpleTypeDescription)base.MemberwiseClone();
+
+            clone.m_baseDataType = (NodeId)Utils.Clone(this.m_baseDataType);
+            clone.m_builtInType = (byte)Utils.Clone(this.m_builtInType);
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        private NodeId m_baseDataType;
+        private byte m_builtInType;
+        #endregion
+    }
+
+    #region SimpleTypeDescriptionCollection Class
+    /// <summary>
+    /// A collection of SimpleTypeDescription objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfSimpleTypeDescription", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "SimpleTypeDescription")]
+    #if !NET_STANDARD
+    public partial class SimpleTypeDescriptionCollection : List<SimpleTypeDescription>, ICloneable
+    #else
+    public partial class SimpleTypeDescriptionCollection : List<SimpleTypeDescription>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public SimpleTypeDescriptionCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public SimpleTypeDescriptionCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public SimpleTypeDescriptionCollection(IEnumerable<SimpleTypeDescription> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator SimpleTypeDescriptionCollection(SimpleTypeDescription[] values)
+        {
+            if (values != null)
+            {
+                return new SimpleTypeDescriptionCollection(values);
+            }
+
+            return new SimpleTypeDescriptionCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator SimpleTypeDescription[](SimpleTypeDescriptionCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (SimpleTypeDescriptionCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            SimpleTypeDescriptionCollection clone = new SimpleTypeDescriptionCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((SimpleTypeDescription)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
+    #endif
+    #endregion
+
+    #region UABinaryFileDataType Class
+    #if (!OPCUA_EXCLUDE_UABinaryFileDataType)
+    /// <summary>
+    /// A description for the UABinaryFileDataType DataType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class UABinaryFileDataType : IEncodeable
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public UABinaryFileDataType()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+            m_schemaLocation = null;
+            m_fileHeader = new KeyValuePairCollection();
+            m_body = new ExtensionObjectCollection();
+        }
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the SchemaLocation field.
+        /// </summary>
+        [DataMember(Name = "SchemaLocation", IsRequired = false, Order = 1)]
+        public string SchemaLocation
+        {
+            get { return m_schemaLocation;  }
+            set { m_schemaLocation = value; }
+        }
+
+        /// <summary>
+        /// A description for the FileHeader field.
+        /// </summary>
+        [DataMember(Name = "FileHeader", IsRequired = false, Order = 2)]
+        public KeyValuePairCollection FileHeader
+        {
+            get
+            {
+                return m_fileHeader;
+            }
+
+            set
+            {
+                m_fileHeader = value;
+
+                if (value == null)
+                {
+                    m_fileHeader = new KeyValuePairCollection();
+                }
+            }
+        }
+
+        /// <summary>
+        /// A description for the Body field.
+        /// </summary>
+        [DataMember(Name = "Body", IsRequired = false, Order = 3)]
+        public ExtensionObjectCollection Body
+        {
+            get
+            {
+                return m_body;
+            }
+
+            set
+            {
+                m_body = value;
+
+                if (value == null)
+                {
+                    m_body = new ExtensionObjectCollection();
+                }
+            }
+        }
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public virtual ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.UABinaryFileDataType; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public virtual ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.UABinaryFileDataType_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public virtual ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.UABinaryFileDataType_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public virtual void Encode(IEncoder encoder)
+        {
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            encoder.WriteString("SchemaLocation", SchemaLocation);
+            encoder.WriteEncodeableArray("FileHeader", FileHeader.ToArray(), typeof(KeyValuePair));
+            encoder.WriteExtensionObjectArray("Body", Body);
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public virtual void Decode(IDecoder decoder)
+        {
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            SchemaLocation = decoder.ReadString("SchemaLocation");
+            FileHeader = (KeyValuePairCollection)decoder.ReadEncodeableArray("FileHeader", typeof(KeyValuePair));
+            Body = decoder.ReadExtensionObjectArray("Body");
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public virtual bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            UABinaryFileDataType value = encodeable as UABinaryFileDataType;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+            if (!Utils.IsEqual(m_schemaLocation, value.m_schemaLocation)) return false;
+            if (!Utils.IsEqual(m_fileHeader, value.m_fileHeader)) return false;
+            if (!Utils.IsEqual(m_body, value.m_body)) return false;
+
+            return true;
+        }
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public virtual object Clone()
+        {
+            return (UABinaryFileDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            UABinaryFileDataType clone = (UABinaryFileDataType)base.MemberwiseClone();
+
+            clone.m_schemaLocation = (string)Utils.Clone(this.m_schemaLocation);
+            clone.m_fileHeader = (KeyValuePairCollection)Utils.Clone(this.m_fileHeader);
+            clone.m_body = (ExtensionObjectCollection)Utils.Clone(this.m_body);
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        private string m_schemaLocation;
+        private KeyValuePairCollection m_fileHeader;
+        private ExtensionObjectCollection m_body;
+        #endregion
+    }
+
+    #region UABinaryFileDataTypeCollection Class
+    /// <summary>
+    /// A collection of UABinaryFileDataType objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfUABinaryFileDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "UABinaryFileDataType")]
+    #if !NET_STANDARD
+    public partial class UABinaryFileDataTypeCollection : List<UABinaryFileDataType>, ICloneable
+    #else
+    public partial class UABinaryFileDataTypeCollection : List<UABinaryFileDataType>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public UABinaryFileDataTypeCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public UABinaryFileDataTypeCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public UABinaryFileDataTypeCollection(IEnumerable<UABinaryFileDataType> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator UABinaryFileDataTypeCollection(UABinaryFileDataType[] values)
+        {
+            if (values != null)
+            {
+                return new UABinaryFileDataTypeCollection(values);
+            }
+
+            return new UABinaryFileDataTypeCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator UABinaryFileDataType[](UABinaryFileDataTypeCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (UABinaryFileDataTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            UABinaryFileDataTypeCollection clone = new UABinaryFileDataTypeCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((UABinaryFileDataType)Utils.Clone(this[ii]));
             }
 
             return clone;
@@ -12800,28 +13343,22 @@ namespace Opc.Ua
         MetaDataVersion = 2,
 
         /// <summary>
-        /// A description for the MetaDataQueueName field.
-        /// </summary>
-        [EnumMember(Value = "MetaDataQueueName_4")]
-        MetaDataQueueName = 4,
-
-        /// <summary>
         /// A description for the SequenceNumber field.
         /// </summary>
-        [EnumMember(Value = "SequenceNumber_8")]
-        SequenceNumber = 8,
+        [EnumMember(Value = "SequenceNumber_4")]
+        SequenceNumber = 4,
 
         /// <summary>
         /// A description for the Timestamp field.
         /// </summary>
-        [EnumMember(Value = "Timestamp_16")]
-        Timestamp = 16,
+        [EnumMember(Value = "Timestamp_8")]
+        Timestamp = 8,
 
         /// <summary>
         /// A description for the Status field.
         /// </summary>
-        [EnumMember(Value = "Status_32")]
-        Status = 32,
+        [EnumMember(Value = "Status_16")]
+        Status = 16,
     }
 
     #region JsonDataSetMessageContentMaskCollection Class
@@ -13615,6 +14152,402 @@ namespace Opc.Ua
     #endif
     #endregion
 
+    #region BrokerConnectionTransportDataType Class
+    #if (!OPCUA_EXCLUDE_BrokerConnectionTransportDataType)
+    /// <summary>
+    /// A description for the BrokerConnectionTransportDataType DataType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class BrokerConnectionTransportDataType : DataSetWriterTransportDataType
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public BrokerConnectionTransportDataType()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+            m_resourceUri = null;
+            m_authenticationProfileUri = null;
+            m_connectionProperties = new KeyValuePairCollection();
+        }
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the ResourceUri field.
+        /// </summary>
+        [DataMember(Name = "ResourceUri", IsRequired = false, Order = 1)]
+        public string ResourceUri
+        {
+            get { return m_resourceUri;  }
+            set { m_resourceUri = value; }
+        }
+
+        /// <summary>
+        /// A description for the AuthenticationProfileUri field.
+        /// </summary>
+        [DataMember(Name = "AuthenticationProfileUri", IsRequired = false, Order = 2)]
+        public string AuthenticationProfileUri
+        {
+            get { return m_authenticationProfileUri;  }
+            set { m_authenticationProfileUri = value; }
+        }
+
+        /// <summary>
+        /// A description for the ConnectionProperties field.
+        /// </summary>
+        [DataMember(Name = "ConnectionProperties", IsRequired = false, Order = 3)]
+        public KeyValuePairCollection ConnectionProperties
+        {
+            get
+            {
+                return m_connectionProperties;
+            }
+
+            set
+            {
+                m_connectionProperties = value;
+
+                if (value == null)
+                {
+                    m_connectionProperties = new KeyValuePairCollection();
+                }
+            }
+        }
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public override ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.BrokerConnectionTransportDataType; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public override ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.BrokerConnectionTransportDataType_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public override ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.BrokerConnectionTransportDataType_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public override void Encode(IEncoder encoder)
+        {
+            base.Encode(encoder);
+
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            encoder.WriteString("ResourceUri", ResourceUri);
+            encoder.WriteString("AuthenticationProfileUri", AuthenticationProfileUri);
+            encoder.WriteEncodeableArray("ConnectionProperties", ConnectionProperties.ToArray(), typeof(KeyValuePair));
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public override void Decode(IDecoder decoder)
+        {
+            base.Decode(decoder);
+
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            ResourceUri = decoder.ReadString("ResourceUri");
+            AuthenticationProfileUri = decoder.ReadString("AuthenticationProfileUri");
+            ConnectionProperties = (KeyValuePairCollection)decoder.ReadEncodeableArray("ConnectionProperties", typeof(KeyValuePair));
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public override bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            BrokerConnectionTransportDataType value = encodeable as BrokerConnectionTransportDataType;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+            if (!base.IsEqual(encodeable)) return false;
+            if (!Utils.IsEqual(m_resourceUri, value.m_resourceUri)) return false;
+            if (!Utils.IsEqual(m_authenticationProfileUri, value.m_authenticationProfileUri)) return false;
+            if (!Utils.IsEqual(m_connectionProperties, value.m_connectionProperties)) return false;
+
+            return true;
+        }    
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public override object Clone()
+        {
+            return (BrokerConnectionTransportDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            BrokerConnectionTransportDataType clone = (BrokerConnectionTransportDataType)base.MemberwiseClone();
+
+            clone.m_resourceUri = (string)Utils.Clone(this.m_resourceUri);
+            clone.m_authenticationProfileUri = (string)Utils.Clone(this.m_authenticationProfileUri);
+            clone.m_connectionProperties = (KeyValuePairCollection)Utils.Clone(this.m_connectionProperties);
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        private string m_resourceUri;
+        private string m_authenticationProfileUri;
+        private KeyValuePairCollection m_connectionProperties;
+        #endregion
+    }
+
+    #region BrokerConnectionTransportDataTypeCollection Class
+    /// <summary>
+    /// A collection of BrokerConnectionTransportDataType objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfBrokerConnectionTransportDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "BrokerConnectionTransportDataType")]
+    #if !NET_STANDARD
+    public partial class BrokerConnectionTransportDataTypeCollection : List<BrokerConnectionTransportDataType>, ICloneable
+    #else
+    public partial class BrokerConnectionTransportDataTypeCollection : List<BrokerConnectionTransportDataType>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public BrokerConnectionTransportDataTypeCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public BrokerConnectionTransportDataTypeCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public BrokerConnectionTransportDataTypeCollection(IEnumerable<BrokerConnectionTransportDataType> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator BrokerConnectionTransportDataTypeCollection(BrokerConnectionTransportDataType[] values)
+        {
+            if (values != null)
+            {
+                return new BrokerConnectionTransportDataTypeCollection(values);
+            }
+
+            return new BrokerConnectionTransportDataTypeCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator BrokerConnectionTransportDataType[](BrokerConnectionTransportDataTypeCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (BrokerConnectionTransportDataTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            BrokerConnectionTransportDataTypeCollection clone = new BrokerConnectionTransportDataTypeCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((BrokerConnectionTransportDataType)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
+    #endif
+    #endregion
+
+    #region BrokerTransportQualityOfService Enumeration
+    #if (!OPCUA_EXCLUDE_BrokerTransportQualityOfService)
+    /// <summary>
+    /// A description for the BrokerTransportQualityOfService DataType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public enum BrokerTransportQualityOfService
+    {
+        /// <summary>
+        /// A description for the NotSpecified field.
+        /// </summary>
+        [EnumMember(Value = "NotSpecified_0")]
+        NotSpecified = 0,
+
+        /// <summary>
+        /// A description for the BestEffort field.
+        /// </summary>
+        [EnumMember(Value = "BestEffort_1")]
+        BestEffort = 1,
+
+        /// <summary>
+        /// A description for the AtLeastOnce field.
+        /// </summary>
+        [EnumMember(Value = "AtLeastOnce_2")]
+        AtLeastOnce = 2,
+
+        /// <summary>
+        /// A description for the AtMostOnce field.
+        /// </summary>
+        [EnumMember(Value = "AtMostOnce_3")]
+        AtMostOnce = 3,
+
+        /// <summary>
+        /// A description for the ExactlyOnce field.
+        /// </summary>
+        [EnumMember(Value = "ExactlyOnce_4")]
+        ExactlyOnce = 4,
+    }
+
+    #region BrokerTransportQualityOfServiceCollection Class
+    /// <summary>
+    /// A collection of BrokerTransportQualityOfService objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfBrokerTransportQualityOfService", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "BrokerTransportQualityOfService")]
+    #if !NET_STANDARD
+    public partial class BrokerTransportQualityOfServiceCollection : List<BrokerTransportQualityOfService>, ICloneable
+    #else
+    public partial class BrokerTransportQualityOfServiceCollection : List<BrokerTransportQualityOfService>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public BrokerTransportQualityOfServiceCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public BrokerTransportQualityOfServiceCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public BrokerTransportQualityOfServiceCollection(IEnumerable<BrokerTransportQualityOfService> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator BrokerTransportQualityOfServiceCollection(BrokerTransportQualityOfService[] values)
+        {
+            if (values != null)
+            {
+                return new BrokerTransportQualityOfServiceCollection(values);
+            }
+
+            return new BrokerTransportQualityOfServiceCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator BrokerTransportQualityOfService[](BrokerTransportQualityOfServiceCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (BrokerTransportQualityOfServiceCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            BrokerTransportQualityOfServiceCollection clone = new BrokerTransportQualityOfServiceCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((BrokerTransportQualityOfService)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
+    #endif
+    #endregion
+
     #region BrokerWriterGroupTransportDataType Class
     #if (!OPCUA_EXCLUDE_BrokerWriterGroupTransportDataType)
     /// <summary>
@@ -13649,6 +14582,10 @@ namespace Opc.Ua
         private void Initialize()
         {
             m_queueName = null;
+            m_resourceUri = null;
+            m_authenticationProfileUri = null;
+            m_writerGroupProperties = new KeyValuePairCollection();
+            m_requestedDeliveryGuarantee = BrokerTransportQualityOfService.NotSpecified;
         }
         #endregion
 
@@ -13661,6 +14598,58 @@ namespace Opc.Ua
         {
             get { return m_queueName;  }
             set { m_queueName = value; }
+        }
+
+        /// <summary>
+        /// A description for the ResourceUri field.
+        /// </summary>
+        [DataMember(Name = "ResourceUri", IsRequired = false, Order = 2)]
+        public string ResourceUri
+        {
+            get { return m_resourceUri;  }
+            set { m_resourceUri = value; }
+        }
+
+        /// <summary>
+        /// A description for the AuthenticationProfileUri field.
+        /// </summary>
+        [DataMember(Name = "AuthenticationProfileUri", IsRequired = false, Order = 3)]
+        public string AuthenticationProfileUri
+        {
+            get { return m_authenticationProfileUri;  }
+            set { m_authenticationProfileUri = value; }
+        }
+
+        /// <summary>
+        /// A description for the WriterGroupProperties field.
+        /// </summary>
+        [DataMember(Name = "WriterGroupProperties", IsRequired = false, Order = 4)]
+        public KeyValuePairCollection WriterGroupProperties
+        {
+            get
+            {
+                return m_writerGroupProperties;
+            }
+
+            set
+            {
+                m_writerGroupProperties = value;
+
+                if (value == null)
+                {
+                    m_writerGroupProperties = new KeyValuePairCollection();
+                }
+            }
+        }
+
+        /// <summary>
+        /// A description for the RequestedDeliveryGuarantee field.
+        /// </summary>
+        [DataMember(Name = "RequestedDeliveryGuarantee", IsRequired = false, Order = 5)]
+        public BrokerTransportQualityOfService RequestedDeliveryGuarantee
+        {
+            get { return m_requestedDeliveryGuarantee;  }
+            set { m_requestedDeliveryGuarantee = value; }
         }
         #endregion
 
@@ -13691,6 +14680,10 @@ namespace Opc.Ua
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             encoder.WriteString("QueueName", QueueName);
+            encoder.WriteString("ResourceUri", ResourceUri);
+            encoder.WriteString("AuthenticationProfileUri", AuthenticationProfileUri);
+            encoder.WriteEncodeableArray("WriterGroupProperties", WriterGroupProperties.ToArray(), typeof(KeyValuePair));
+            encoder.WriteEnumerated("RequestedDeliveryGuarantee", RequestedDeliveryGuarantee);
 
             encoder.PopNamespace();
         }
@@ -13703,6 +14696,10 @@ namespace Opc.Ua
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             QueueName = decoder.ReadString("QueueName");
+            ResourceUri = decoder.ReadString("ResourceUri");
+            AuthenticationProfileUri = decoder.ReadString("AuthenticationProfileUri");
+            WriterGroupProperties = (KeyValuePairCollection)decoder.ReadEncodeableArray("WriterGroupProperties", typeof(KeyValuePair));
+            RequestedDeliveryGuarantee = (BrokerTransportQualityOfService)decoder.ReadEnumerated("RequestedDeliveryGuarantee", typeof(BrokerTransportQualityOfService));
 
             decoder.PopNamespace();
         }
@@ -13724,6 +14721,10 @@ namespace Opc.Ua
 
             if (!base.IsEqual(encodeable)) return false;
             if (!Utils.IsEqual(m_queueName, value.m_queueName)) return false;
+            if (!Utils.IsEqual(m_resourceUri, value.m_resourceUri)) return false;
+            if (!Utils.IsEqual(m_authenticationProfileUri, value.m_authenticationProfileUri)) return false;
+            if (!Utils.IsEqual(m_writerGroupProperties, value.m_writerGroupProperties)) return false;
+            if (!Utils.IsEqual(m_requestedDeliveryGuarantee, value.m_requestedDeliveryGuarantee)) return false;
 
             return true;
         }    
@@ -13742,6 +14743,10 @@ namespace Opc.Ua
             BrokerWriterGroupTransportDataType clone = (BrokerWriterGroupTransportDataType)base.MemberwiseClone();
 
             clone.m_queueName = (string)Utils.Clone(this.m_queueName);
+            clone.m_resourceUri = (string)Utils.Clone(this.m_resourceUri);
+            clone.m_authenticationProfileUri = (string)Utils.Clone(this.m_authenticationProfileUri);
+            clone.m_writerGroupProperties = (KeyValuePairCollection)Utils.Clone(this.m_writerGroupProperties);
+            clone.m_requestedDeliveryGuarantee = (BrokerTransportQualityOfService)Utils.Clone(this.m_requestedDeliveryGuarantee);
 
             return clone;
         }
@@ -13749,6 +14754,10 @@ namespace Opc.Ua
 
         #region Private Fields
         private string m_queueName;
+        private string m_resourceUri;
+        private string m_authenticationProfileUri;
+        private KeyValuePairCollection m_writerGroupProperties;
+        private BrokerTransportQualityOfService m_requestedDeliveryGuarantee;
         #endregion
     }
 
@@ -13847,7 +14856,7 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
-    public partial class BrokerDataSetWriterTransportDataType : DataSetWriterTransportDataType
+    public partial class BrokerDataSetWriterTransportDataType : WriterGroupTransportDataType
     {
         #region Constructors
         /// <summary>
@@ -13873,6 +14882,9 @@ namespace Opc.Ua
         private void Initialize()
         {
             m_queueName = null;
+            m_resourceUri = null;
+            m_authenticationProfileUri = null;
+            m_dataSetWriterProperties = new KeyValuePairCollection();
             m_metaDataQueueName = null;
             m_metaDataUpdateTime = (double)0;
         }
@@ -13890,9 +14902,51 @@ namespace Opc.Ua
         }
 
         /// <summary>
+        /// A description for the ResourceUri field.
+        /// </summary>
+        [DataMember(Name = "ResourceUri", IsRequired = false, Order = 2)]
+        public string ResourceUri
+        {
+            get { return m_resourceUri;  }
+            set { m_resourceUri = value; }
+        }
+
+        /// <summary>
+        /// A description for the AuthenticationProfileUri field.
+        /// </summary>
+        [DataMember(Name = "AuthenticationProfileUri", IsRequired = false, Order = 3)]
+        public string AuthenticationProfileUri
+        {
+            get { return m_authenticationProfileUri;  }
+            set { m_authenticationProfileUri = value; }
+        }
+
+        /// <summary>
+        /// A description for the DataSetWriterProperties field.
+        /// </summary>
+        [DataMember(Name = "DataSetWriterProperties", IsRequired = false, Order = 4)]
+        public KeyValuePairCollection DataSetWriterProperties
+        {
+            get
+            {
+                return m_dataSetWriterProperties;
+            }
+
+            set
+            {
+                m_dataSetWriterProperties = value;
+
+                if (value == null)
+                {
+                    m_dataSetWriterProperties = new KeyValuePairCollection();
+                }
+            }
+        }
+
+        /// <summary>
         /// A description for the MetaDataQueueName field.
         /// </summary>
-        [DataMember(Name = "MetaDataQueueName", IsRequired = false, Order = 2)]
+        [DataMember(Name = "MetaDataQueueName", IsRequired = false, Order = 5)]
         public string MetaDataQueueName
         {
             get { return m_metaDataQueueName;  }
@@ -13902,7 +14956,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the MetaDataUpdateTime field.
         /// </summary>
-        [DataMember(Name = "MetaDataUpdateTime", IsRequired = false, Order = 3)]
+        [DataMember(Name = "MetaDataUpdateTime", IsRequired = false, Order = 6)]
         public double MetaDataUpdateTime
         {
             get { return m_metaDataUpdateTime;  }
@@ -13937,6 +14991,9 @@ namespace Opc.Ua
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             encoder.WriteString("QueueName", QueueName);
+            encoder.WriteString("ResourceUri", ResourceUri);
+            encoder.WriteString("AuthenticationProfileUri", AuthenticationProfileUri);
+            encoder.WriteEncodeableArray("DataSetWriterProperties", DataSetWriterProperties.ToArray(), typeof(KeyValuePair));
             encoder.WriteString("MetaDataQueueName", MetaDataQueueName);
             encoder.WriteDouble("MetaDataUpdateTime", MetaDataUpdateTime);
 
@@ -13951,6 +15008,9 @@ namespace Opc.Ua
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             QueueName = decoder.ReadString("QueueName");
+            ResourceUri = decoder.ReadString("ResourceUri");
+            AuthenticationProfileUri = decoder.ReadString("AuthenticationProfileUri");
+            DataSetWriterProperties = (KeyValuePairCollection)decoder.ReadEncodeableArray("DataSetWriterProperties", typeof(KeyValuePair));
             MetaDataQueueName = decoder.ReadString("MetaDataQueueName");
             MetaDataUpdateTime = decoder.ReadDouble("MetaDataUpdateTime");
 
@@ -13974,6 +15034,9 @@ namespace Opc.Ua
 
             if (!base.IsEqual(encodeable)) return false;
             if (!Utils.IsEqual(m_queueName, value.m_queueName)) return false;
+            if (!Utils.IsEqual(m_resourceUri, value.m_resourceUri)) return false;
+            if (!Utils.IsEqual(m_authenticationProfileUri, value.m_authenticationProfileUri)) return false;
+            if (!Utils.IsEqual(m_dataSetWriterProperties, value.m_dataSetWriterProperties)) return false;
             if (!Utils.IsEqual(m_metaDataQueueName, value.m_metaDataQueueName)) return false;
             if (!Utils.IsEqual(m_metaDataUpdateTime, value.m_metaDataUpdateTime)) return false;
 
@@ -13994,6 +15057,9 @@ namespace Opc.Ua
             BrokerDataSetWriterTransportDataType clone = (BrokerDataSetWriterTransportDataType)base.MemberwiseClone();
 
             clone.m_queueName = (string)Utils.Clone(this.m_queueName);
+            clone.m_resourceUri = (string)Utils.Clone(this.m_resourceUri);
+            clone.m_authenticationProfileUri = (string)Utils.Clone(this.m_authenticationProfileUri);
+            clone.m_dataSetWriterProperties = (KeyValuePairCollection)Utils.Clone(this.m_dataSetWriterProperties);
             clone.m_metaDataQueueName = (string)Utils.Clone(this.m_metaDataQueueName);
             clone.m_metaDataUpdateTime = (double)Utils.Clone(this.m_metaDataUpdateTime);
 
@@ -14003,6 +15069,9 @@ namespace Opc.Ua
 
         #region Private Fields
         private string m_queueName;
+        private string m_resourceUri;
+        private string m_authenticationProfileUri;
+        private KeyValuePairCollection m_dataSetWriterProperties;
         private string m_metaDataQueueName;
         private double m_metaDataUpdateTime;
         #endregion
@@ -14129,6 +15198,9 @@ namespace Opc.Ua
         private void Initialize()
         {
             m_queueName = null;
+            m_resourceUri = null;
+            m_authenticationProfileUri = null;
+            m_requestedDeliveryGuarantee = BrokerTransportQualityOfService.NotSpecified;
             m_metaDataQueueName = null;
         }
         #endregion
@@ -14145,9 +15217,39 @@ namespace Opc.Ua
         }
 
         /// <summary>
+        /// A description for the ResourceUri field.
+        /// </summary>
+        [DataMember(Name = "ResourceUri", IsRequired = false, Order = 2)]
+        public string ResourceUri
+        {
+            get { return m_resourceUri;  }
+            set { m_resourceUri = value; }
+        }
+
+        /// <summary>
+        /// A description for the AuthenticationProfileUri field.
+        /// </summary>
+        [DataMember(Name = "AuthenticationProfileUri", IsRequired = false, Order = 3)]
+        public string AuthenticationProfileUri
+        {
+            get { return m_authenticationProfileUri;  }
+            set { m_authenticationProfileUri = value; }
+        }
+
+        /// <summary>
+        /// A description for the RequestedDeliveryGuarantee field.
+        /// </summary>
+        [DataMember(Name = "RequestedDeliveryGuarantee", IsRequired = false, Order = 4)]
+        public BrokerTransportQualityOfService RequestedDeliveryGuarantee
+        {
+            get { return m_requestedDeliveryGuarantee;  }
+            set { m_requestedDeliveryGuarantee = value; }
+        }
+
+        /// <summary>
         /// A description for the MetaDataQueueName field.
         /// </summary>
-        [DataMember(Name = "MetaDataQueueName", IsRequired = false, Order = 2)]
+        [DataMember(Name = "MetaDataQueueName", IsRequired = false, Order = 5)]
         public string MetaDataQueueName
         {
             get { return m_metaDataQueueName;  }
@@ -14182,6 +15284,9 @@ namespace Opc.Ua
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             encoder.WriteString("QueueName", QueueName);
+            encoder.WriteString("ResourceUri", ResourceUri);
+            encoder.WriteString("AuthenticationProfileUri", AuthenticationProfileUri);
+            encoder.WriteEnumerated("RequestedDeliveryGuarantee", RequestedDeliveryGuarantee);
             encoder.WriteString("MetaDataQueueName", MetaDataQueueName);
 
             encoder.PopNamespace();
@@ -14195,6 +15300,9 @@ namespace Opc.Ua
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             QueueName = decoder.ReadString("QueueName");
+            ResourceUri = decoder.ReadString("ResourceUri");
+            AuthenticationProfileUri = decoder.ReadString("AuthenticationProfileUri");
+            RequestedDeliveryGuarantee = (BrokerTransportQualityOfService)decoder.ReadEnumerated("RequestedDeliveryGuarantee", typeof(BrokerTransportQualityOfService));
             MetaDataQueueName = decoder.ReadString("MetaDataQueueName");
 
             decoder.PopNamespace();
@@ -14217,6 +15325,9 @@ namespace Opc.Ua
 
             if (!base.IsEqual(encodeable)) return false;
             if (!Utils.IsEqual(m_queueName, value.m_queueName)) return false;
+            if (!Utils.IsEqual(m_resourceUri, value.m_resourceUri)) return false;
+            if (!Utils.IsEqual(m_authenticationProfileUri, value.m_authenticationProfileUri)) return false;
+            if (!Utils.IsEqual(m_requestedDeliveryGuarantee, value.m_requestedDeliveryGuarantee)) return false;
             if (!Utils.IsEqual(m_metaDataQueueName, value.m_metaDataQueueName)) return false;
 
             return true;
@@ -14236,6 +15347,9 @@ namespace Opc.Ua
             BrokerDataSetReaderTransportDataType clone = (BrokerDataSetReaderTransportDataType)base.MemberwiseClone();
 
             clone.m_queueName = (string)Utils.Clone(this.m_queueName);
+            clone.m_resourceUri = (string)Utils.Clone(this.m_resourceUri);
+            clone.m_authenticationProfileUri = (string)Utils.Clone(this.m_authenticationProfileUri);
+            clone.m_requestedDeliveryGuarantee = (BrokerTransportQualityOfService)Utils.Clone(this.m_requestedDeliveryGuarantee);
             clone.m_metaDataQueueName = (string)Utils.Clone(this.m_metaDataQueueName);
 
             return clone;
@@ -14244,6 +15358,9 @@ namespace Opc.Ua
 
         #region Private Fields
         private string m_queueName;
+        private string m_resourceUri;
+        private string m_authenticationProfileUri;
+        private BrokerTransportQualityOfService m_requestedDeliveryGuarantee;
         private string m_metaDataQueueName;
         #endregion
     }

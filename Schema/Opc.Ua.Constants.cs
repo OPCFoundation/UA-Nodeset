@@ -295,6 +295,16 @@ namespace Opc.Ua
         public const uint EnumDescription = 15488;
 
         /// <summary>
+        /// The identifier for the SimpleTypeDescription DataType.
+        /// </summary>
+        public const uint SimpleTypeDescription = 15005;
+
+        /// <summary>
+        /// The identifier for the UABinaryFileDataType DataType.
+        /// </summary>
+        public const uint UABinaryFileDataType = 15006;
+
+        /// <summary>
         /// The identifier for the PubSubState DataType.
         /// </summary>
         public const uint PubSubState = 14647;
@@ -523,6 +533,16 @@ namespace Opc.Ua
         /// The identifier for the DatagramWriterGroupTransportDataType DataType.
         /// </summary>
         public const uint DatagramWriterGroupTransportDataType = 15532;
+
+        /// <summary>
+        /// The identifier for the BrokerConnectionTransportDataType DataType.
+        /// </summary>
+        public const uint BrokerConnectionTransportDataType = 15007;
+
+        /// <summary>
+        /// The identifier for the BrokerTransportQualityOfService DataType.
+        /// </summary>
+        public const uint BrokerTransportQualityOfService = 15008;
 
         /// <summary>
         /// The identifier for the BrokerWriterGroupTransportDataType DataType.
@@ -4950,6 +4970,11 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsDataSetReaderType_LiveValues = 20072;
 
         /// <summary>
+        /// The identifier for the DatagramConnectionTransportType_DiscoveryAddress Object.
+        /// </summary>
+        public const uint DatagramConnectionTransportType_DiscoveryAddress = 15072;
+
+        /// <summary>
         /// The identifier for the KeyValuePair_Encoding_DefaultBinary Object.
         /// </summary>
         public const uint KeyValuePair_Encoding_DefaultBinary = 14846;
@@ -4993,6 +5018,16 @@ namespace Opc.Ua
         /// The identifier for the EnumDescription_Encoding_DefaultBinary Object.
         /// </summary>
         public const uint EnumDescription_Encoding_DefaultBinary = 127;
+
+        /// <summary>
+        /// The identifier for the SimpleTypeDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint SimpleTypeDescription_Encoding_DefaultBinary = 15421;
+
+        /// <summary>
+        /// The identifier for the UABinaryFileDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint UABinaryFileDataType_Encoding_DefaultBinary = 15422;
 
         /// <summary>
         /// The identifier for the DataSetMetaDataType_Encoding_DefaultBinary Object.
@@ -5178,6 +5213,11 @@ namespace Opc.Ua
         /// The identifier for the DatagramWriterGroupTransportDataType_Encoding_DefaultBinary Object.
         /// </summary>
         public const uint DatagramWriterGroupTransportDataType_Encoding_DefaultBinary = 21155;
+
+        /// <summary>
+        /// The identifier for the BrokerConnectionTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint BrokerConnectionTransportDataType_Encoding_DefaultBinary = 15479;
 
         /// <summary>
         /// The identifier for the BrokerWriterGroupTransportDataType_Encoding_DefaultBinary Object.
@@ -6390,6 +6430,16 @@ namespace Opc.Ua
         public const uint EnumDescription_Encoding_DefaultXml = 15590;
 
         /// <summary>
+        /// The identifier for the SimpleTypeDescription_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint SimpleTypeDescription_Encoding_DefaultXml = 15529;
+
+        /// <summary>
+        /// The identifier for the UABinaryFileDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint UABinaryFileDataType_Encoding_DefaultXml = 15531;
+
+        /// <summary>
         /// The identifier for the DataSetMetaDataType_Encoding_DefaultXml Object.
         /// </summary>
         public const uint DataSetMetaDataType_Encoding_DefaultXml = 14794;
@@ -6573,6 +6623,11 @@ namespace Opc.Ua
         /// The identifier for the DatagramWriterGroupTransportDataType_Encoding_DefaultXml Object.
         /// </summary>
         public const uint DatagramWriterGroupTransportDataType_Encoding_DefaultXml = 21179;
+
+        /// <summary>
+        /// The identifier for the BrokerConnectionTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint BrokerConnectionTransportDataType_Encoding_DefaultXml = 15579;
 
         /// <summary>
         /// The identifier for the BrokerWriterGroupTransportDataType_Encoding_DefaultXml Object.
@@ -7785,6 +7840,16 @@ namespace Opc.Ua
         public const uint EnumDescription_Encoding_DefaultJson = 15059;
 
         /// <summary>
+        /// The identifier for the SimpleTypeDescription_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint SimpleTypeDescription_Encoding_DefaultJson = 15700;
+
+        /// <summary>
+        /// The identifier for the UABinaryFileDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint UABinaryFileDataType_Encoding_DefaultJson = 15714;
+
+        /// <summary>
         /// The identifier for the DataSetMetaDataType_Encoding_DefaultJson Object.
         /// </summary>
         public const uint DataSetMetaDataType_Encoding_DefaultJson = 15050;
@@ -7968,6 +8033,11 @@ namespace Opc.Ua
         /// The identifier for the DatagramWriterGroupTransportDataType_Encoding_DefaultJson Object.
         /// </summary>
         public const uint DatagramWriterGroupTransportDataType_Encoding_DefaultJson = 21203;
+
+        /// <summary>
+        /// The identifier for the BrokerConnectionTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint BrokerConnectionTransportDataType_Encoding_DefaultJson = 15726;
 
         /// <summary>
         /// The identifier for the BrokerWriterGroupTransportDataType_Encoding_DefaultJson Object.
@@ -10090,9 +10160,19 @@ namespace Opc.Ua
         public const uint JsonDataSetReaderMessageType = 21130;
 
         /// <summary>
+        /// The identifier for the DatagramConnectionTransportType ObjectType.
+        /// </summary>
+        public const uint DatagramConnectionTransportType = 15064;
+
+        /// <summary>
         /// The identifier for the DatagramWriterGroupTransportType ObjectType.
         /// </summary>
         public const uint DatagramWriterGroupTransportType = 21133;
+
+        /// <summary>
+        /// The identifier for the BrokerConnectionTransportType ObjectType.
+        /// </summary>
+        public const uint BrokerConnectionTransportType = 15155;
 
         /// <summary>
         /// The identifier for the BrokerWriterGroupTransportType ObjectType.
@@ -20100,6 +20180,11 @@ namespace Opc.Ua
         public const uint JsonDataSetMessageContentMask_OptionSetValues = 15659;
 
         /// <summary>
+        /// The identifier for the BrokerTransportQualityOfService_EnumStrings Variable.
+        /// </summary>
+        public const uint BrokerTransportQualityOfService_EnumStrings = 15009;
+
+        /// <summary>
         /// The identifier for the PubSubKeyServiceType_GetSecurityKeys_InputArguments Variable.
         /// </summary>
         public const uint PubSubKeyServiceType_GetSecurityKeys_InputArguments = 15908;
@@ -20155,6 +20240,26 @@ namespace Opc.Ua
         public const uint SecurityGroupFolderType_SecurityGroupName_Placeholder_SecurityGroupId = 15460;
 
         /// <summary>
+        /// The identifier for the SecurityGroupFolderType_SecurityGroupName_Placeholder_KeyLifetime Variable.
+        /// </summary>
+        public const uint SecurityGroupFolderType_SecurityGroupName_Placeholder_KeyLifetime = 15010;
+
+        /// <summary>
+        /// The identifier for the SecurityGroupFolderType_SecurityGroupName_Placeholder_SecurityPolicyUri Variable.
+        /// </summary>
+        public const uint SecurityGroupFolderType_SecurityGroupName_Placeholder_SecurityPolicyUri = 15011;
+
+        /// <summary>
+        /// The identifier for the SecurityGroupFolderType_SecurityGroupName_Placeholder_MaxFutureKeyCount Variable.
+        /// </summary>
+        public const uint SecurityGroupFolderType_SecurityGroupName_Placeholder_MaxFutureKeyCount = 15012;
+
+        /// <summary>
+        /// The identifier for the SecurityGroupFolderType_SecurityGroupName_Placeholder_MaxPastKeyCount Variable.
+        /// </summary>
+        public const uint SecurityGroupFolderType_SecurityGroupName_Placeholder_MaxPastKeyCount = 15043;
+
+        /// <summary>
         /// The identifier for the SecurityGroupFolderType_AddSecurityGroup_InputArguments Variable.
         /// </summary>
         public const uint SecurityGroupFolderType_AddSecurityGroup_InputArguments = 15462;
@@ -20173,6 +20278,26 @@ namespace Opc.Ua
         /// The identifier for the SecurityGroupType_SecurityGroupId Variable.
         /// </summary>
         public const uint SecurityGroupType_SecurityGroupId = 15472;
+
+        /// <summary>
+        /// The identifier for the SecurityGroupType_KeyLifetime Variable.
+        /// </summary>
+        public const uint SecurityGroupType_KeyLifetime = 15046;
+
+        /// <summary>
+        /// The identifier for the SecurityGroupType_SecurityPolicyUri Variable.
+        /// </summary>
+        public const uint SecurityGroupType_SecurityPolicyUri = 15047;
+
+        /// <summary>
+        /// The identifier for the SecurityGroupType_MaxFutureKeyCount Variable.
+        /// </summary>
+        public const uint SecurityGroupType_MaxFutureKeyCount = 15048;
+
+        /// <summary>
+        /// The identifier for the SecurityGroupType_MaxPastKeyCount Variable.
+        /// </summary>
+        public const uint SecurityGroupType_MaxPastKeyCount = 15056;
 
         /// <summary>
         /// The identifier for the PublishSubscribe_GetSecurityKeys_InputArguments Variable.
@@ -26855,6 +26980,11 @@ namespace Opc.Ua
         public const uint JsonDataSetReaderMessageType_DataSetMessageContentMask = 21132;
 
         /// <summary>
+        /// The identifier for the DatagramConnectionTransportType_DiscoveryAddress_NetworkInterface Variable.
+        /// </summary>
+        public const uint DatagramConnectionTransportType_DiscoveryAddress_NetworkInterface = 15154;
+
+        /// <summary>
         /// The identifier for the DatagramWriterGroupTransportType_MessageRepeatCount Variable.
         /// </summary>
         public const uint DatagramWriterGroupTransportType_MessageRepeatCount = 21134;
@@ -26865,9 +26995,44 @@ namespace Opc.Ua
         public const uint DatagramWriterGroupTransportType_MessageRepeatDelay = 21135;
 
         /// <summary>
+        /// The identifier for the BrokerConnectionTransportType_ResourceUri Variable.
+        /// </summary>
+        public const uint BrokerConnectionTransportType_ResourceUri = 15156;
+
+        /// <summary>
+        /// The identifier for the BrokerConnectionTransportType_AuthenticationProfileUri Variable.
+        /// </summary>
+        public const uint BrokerConnectionTransportType_AuthenticationProfileUri = 15178;
+
+        /// <summary>
+        /// The identifier for the BrokerConnectionTransportType_ConnectionProperties Variable.
+        /// </summary>
+        public const uint BrokerConnectionTransportType_ConnectionProperties = 15181;
+
+        /// <summary>
         /// The identifier for the BrokerWriterGroupTransportType_QueueName Variable.
         /// </summary>
         public const uint BrokerWriterGroupTransportType_QueueName = 21137;
+
+        /// <summary>
+        /// The identifier for the BrokerWriterGroupTransportType_ResourceUri Variable.
+        /// </summary>
+        public const uint BrokerWriterGroupTransportType_ResourceUri = 15246;
+
+        /// <summary>
+        /// The identifier for the BrokerWriterGroupTransportType_AuthenticationProfileUri Variable.
+        /// </summary>
+        public const uint BrokerWriterGroupTransportType_AuthenticationProfileUri = 15247;
+
+        /// <summary>
+        /// The identifier for the BrokerWriterGroupTransportType_WriterGroupProperties Variable.
+        /// </summary>
+        public const uint BrokerWriterGroupTransportType_WriterGroupProperties = 15248;
+
+        /// <summary>
+        /// The identifier for the BrokerWriterGroupTransportType_RequestedDeliveryGuarantee Variable.
+        /// </summary>
+        public const uint BrokerWriterGroupTransportType_RequestedDeliveryGuarantee = 15249;
 
         /// <summary>
         /// The identifier for the BrokerDataSetWriterTransportType_QueueName Variable.
@@ -26880,6 +27045,26 @@ namespace Opc.Ua
         public const uint BrokerDataSetWriterTransportType_MetaDataQueueName = 21140;
 
         /// <summary>
+        /// The identifier for the BrokerDataSetWriterTransportType_ResourceUri Variable.
+        /// </summary>
+        public const uint BrokerDataSetWriterTransportType_ResourceUri = 15250;
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetWriterTransportType_AuthenticationProfileUri Variable.
+        /// </summary>
+        public const uint BrokerDataSetWriterTransportType_AuthenticationProfileUri = 15251;
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetWriterTransportType_DataSetWriterProperties Variable.
+        /// </summary>
+        public const uint BrokerDataSetWriterTransportType_DataSetWriterProperties = 15253;
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetWriterTransportType_RequestedDeliveryGuarantee Variable.
+        /// </summary>
+        public const uint BrokerDataSetWriterTransportType_RequestedDeliveryGuarantee = 15330;
+
+        /// <summary>
         /// The identifier for the BrokerDataSetWriterTransportType_MetaDataUpdateTime Variable.
         /// </summary>
         public const uint BrokerDataSetWriterTransportType_MetaDataUpdateTime = 21141;
@@ -26888,6 +27073,21 @@ namespace Opc.Ua
         /// The identifier for the BrokerDataSetReaderTransportType_QueueName Variable.
         /// </summary>
         public const uint BrokerDataSetReaderTransportType_QueueName = 21143;
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetReaderTransportType_ResourceUri Variable.
+        /// </summary>
+        public const uint BrokerDataSetReaderTransportType_ResourceUri = 15334;
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetReaderTransportType_AuthenticationProfileUri Variable.
+        /// </summary>
+        public const uint BrokerDataSetReaderTransportType_AuthenticationProfileUri = 15419;
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetReaderTransportType_RequestedDeliveryGuarantee Variable.
+        /// </summary>
+        public const uint BrokerDataSetReaderTransportType_RequestedDeliveryGuarantee = 15420;
 
         /// <summary>
         /// The identifier for the BrokerDataSetReaderTransportType_MetaDataQueueName Variable.
@@ -27100,6 +27300,16 @@ namespace Opc.Ua
         public const uint OpcUa_BinarySchema_EnumDescription = 15602;
 
         /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_SimpleTypeDescription Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_SimpleTypeDescription = 15501;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_UABinaryFileDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_UABinaryFileDataType = 15521;
+
+        /// <summary>
         /// The identifier for the OpcUa_BinarySchema_DataSetMetaDataType Variable.
         /// </summary>
         public const uint OpcUa_BinarySchema_DataSetMetaDataType = 14849;
@@ -27283,6 +27493,11 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_BinarySchema_DatagramWriterGroupTransportDataType Variable.
         /// </summary>
         public const uint OpcUa_BinarySchema_DatagramWriterGroupTransportDataType = 21171;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_BrokerConnectionTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_BrokerConnectionTransportDataType = 15524;
 
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_BrokerWriterGroupTransportDataType Variable.
@@ -27685,6 +27900,16 @@ namespace Opc.Ua
         public const uint OpcUa_XmlSchema_EnumDescription = 15594;
 
         /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_SimpleTypeDescription Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_SimpleTypeDescription = 15585;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_UABinaryFileDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_UABinaryFileDataType = 15588;
+
+        /// <summary>
         /// The identifier for the OpcUa_XmlSchema_DataSetMetaDataType Variable.
         /// </summary>
         public const uint OpcUa_XmlSchema_DataSetMetaDataType = 14805;
@@ -27868,6 +28093,11 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_XmlSchema_DatagramWriterGroupTransportDataType Variable.
         /// </summary>
         public const uint OpcUa_XmlSchema_DatagramWriterGroupTransportDataType = 21195;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_BrokerConnectionTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_BrokerConnectionTransportDataType = 15640;
 
         /// <summary>
         /// The identifier for the OpcUa_XmlSchema_BrokerWriterGroupTransportDataType Variable.
@@ -28695,6 +28925,16 @@ namespace Opc.Ua
         public static readonly NodeId EnumDescription = new NodeId(Opc.Ua.DataTypes.EnumDescription);
 
         /// <summary>
+        /// The identifier for the SimpleTypeDescription DataType.
+        /// </summary>
+        public static readonly NodeId SimpleTypeDescription = new NodeId(Opc.Ua.DataTypes.SimpleTypeDescription);
+
+        /// <summary>
+        /// The identifier for the UABinaryFileDataType DataType.
+        /// </summary>
+        public static readonly NodeId UABinaryFileDataType = new NodeId(Opc.Ua.DataTypes.UABinaryFileDataType);
+
+        /// <summary>
         /// The identifier for the PubSubState DataType.
         /// </summary>
         public static readonly NodeId PubSubState = new NodeId(Opc.Ua.DataTypes.PubSubState);
@@ -28923,6 +29163,16 @@ namespace Opc.Ua
         /// The identifier for the DatagramWriterGroupTransportDataType DataType.
         /// </summary>
         public static readonly NodeId DatagramWriterGroupTransportDataType = new NodeId(Opc.Ua.DataTypes.DatagramWriterGroupTransportDataType);
+
+        /// <summary>
+        /// The identifier for the BrokerConnectionTransportDataType DataType.
+        /// </summary>
+        public static readonly NodeId BrokerConnectionTransportDataType = new NodeId(Opc.Ua.DataTypes.BrokerConnectionTransportDataType);
+
+        /// <summary>
+        /// The identifier for the BrokerTransportQualityOfService DataType.
+        /// </summary>
+        public static readonly NodeId BrokerTransportQualityOfService = new NodeId(Opc.Ua.DataTypes.BrokerTransportQualityOfService);
 
         /// <summary>
         /// The identifier for the BrokerWriterGroupTransportDataType DataType.
@@ -33350,6 +33600,11 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsDataSetReaderType_LiveValues = new NodeId(Opc.Ua.Objects.PubSubDiagnosticsDataSetReaderType_LiveValues);
 
         /// <summary>
+        /// The identifier for the DatagramConnectionTransportType_DiscoveryAddress Object.
+        /// </summary>
+        public static readonly NodeId DatagramConnectionTransportType_DiscoveryAddress = new NodeId(Opc.Ua.Objects.DatagramConnectionTransportType_DiscoveryAddress);
+
+        /// <summary>
         /// The identifier for the KeyValuePair_Encoding_DefaultBinary Object.
         /// </summary>
         public static readonly NodeId KeyValuePair_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.KeyValuePair_Encoding_DefaultBinary);
@@ -33393,6 +33648,16 @@ namespace Opc.Ua
         /// The identifier for the EnumDescription_Encoding_DefaultBinary Object.
         /// </summary>
         public static readonly NodeId EnumDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EnumDescription_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the SimpleTypeDescription_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId SimpleTypeDescription_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.SimpleTypeDescription_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the UABinaryFileDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId UABinaryFileDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.UABinaryFileDataType_Encoding_DefaultBinary);
 
         /// <summary>
         /// The identifier for the DataSetMetaDataType_Encoding_DefaultBinary Object.
@@ -33578,6 +33843,11 @@ namespace Opc.Ua
         /// The identifier for the DatagramWriterGroupTransportDataType_Encoding_DefaultBinary Object.
         /// </summary>
         public static readonly NodeId DatagramWriterGroupTransportDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DatagramWriterGroupTransportDataType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the BrokerConnectionTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId BrokerConnectionTransportDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.BrokerConnectionTransportDataType_Encoding_DefaultBinary);
 
         /// <summary>
         /// The identifier for the BrokerWriterGroupTransportDataType_Encoding_DefaultBinary Object.
@@ -34790,6 +35060,16 @@ namespace Opc.Ua
         public static readonly NodeId EnumDescription_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.EnumDescription_Encoding_DefaultXml);
 
         /// <summary>
+        /// The identifier for the SimpleTypeDescription_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId SimpleTypeDescription_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.SimpleTypeDescription_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the UABinaryFileDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId UABinaryFileDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.UABinaryFileDataType_Encoding_DefaultXml);
+
+        /// <summary>
         /// The identifier for the DataSetMetaDataType_Encoding_DefaultXml Object.
         /// </summary>
         public static readonly NodeId DataSetMetaDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.DataSetMetaDataType_Encoding_DefaultXml);
@@ -34973,6 +35253,11 @@ namespace Opc.Ua
         /// The identifier for the DatagramWriterGroupTransportDataType_Encoding_DefaultXml Object.
         /// </summary>
         public static readonly NodeId DatagramWriterGroupTransportDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.DatagramWriterGroupTransportDataType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the BrokerConnectionTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId BrokerConnectionTransportDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.BrokerConnectionTransportDataType_Encoding_DefaultXml);
 
         /// <summary>
         /// The identifier for the BrokerWriterGroupTransportDataType_Encoding_DefaultXml Object.
@@ -36185,6 +36470,16 @@ namespace Opc.Ua
         public static readonly NodeId EnumDescription_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.EnumDescription_Encoding_DefaultJson);
 
         /// <summary>
+        /// The identifier for the SimpleTypeDescription_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId SimpleTypeDescription_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.SimpleTypeDescription_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the UABinaryFileDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId UABinaryFileDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.UABinaryFileDataType_Encoding_DefaultJson);
+
+        /// <summary>
         /// The identifier for the DataSetMetaDataType_Encoding_DefaultJson Object.
         /// </summary>
         public static readonly NodeId DataSetMetaDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DataSetMetaDataType_Encoding_DefaultJson);
@@ -36368,6 +36663,11 @@ namespace Opc.Ua
         /// The identifier for the DatagramWriterGroupTransportDataType_Encoding_DefaultJson Object.
         /// </summary>
         public static readonly NodeId DatagramWriterGroupTransportDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DatagramWriterGroupTransportDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the BrokerConnectionTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId BrokerConnectionTransportDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.BrokerConnectionTransportDataType_Encoding_DefaultJson);
 
         /// <summary>
         /// The identifier for the BrokerWriterGroupTransportDataType_Encoding_DefaultJson Object.
@@ -38490,9 +38790,19 @@ namespace Opc.Ua
         public static readonly NodeId JsonDataSetReaderMessageType = new NodeId(Opc.Ua.ObjectTypes.JsonDataSetReaderMessageType);
 
         /// <summary>
+        /// The identifier for the DatagramConnectionTransportType ObjectType.
+        /// </summary>
+        public static readonly NodeId DatagramConnectionTransportType = new NodeId(Opc.Ua.ObjectTypes.DatagramConnectionTransportType);
+
+        /// <summary>
         /// The identifier for the DatagramWriterGroupTransportType ObjectType.
         /// </summary>
         public static readonly NodeId DatagramWriterGroupTransportType = new NodeId(Opc.Ua.ObjectTypes.DatagramWriterGroupTransportType);
+
+        /// <summary>
+        /// The identifier for the BrokerConnectionTransportType ObjectType.
+        /// </summary>
+        public static readonly NodeId BrokerConnectionTransportType = new NodeId(Opc.Ua.ObjectTypes.BrokerConnectionTransportType);
 
         /// <summary>
         /// The identifier for the BrokerWriterGroupTransportType ObjectType.
@@ -48500,6 +48810,11 @@ namespace Opc.Ua
         public static readonly NodeId JsonDataSetMessageContentMask_OptionSetValues = new NodeId(Opc.Ua.Variables.JsonDataSetMessageContentMask_OptionSetValues);
 
         /// <summary>
+        /// The identifier for the BrokerTransportQualityOfService_EnumStrings Variable.
+        /// </summary>
+        public static readonly NodeId BrokerTransportQualityOfService_EnumStrings = new NodeId(Opc.Ua.Variables.BrokerTransportQualityOfService_EnumStrings);
+
+        /// <summary>
         /// The identifier for the PubSubKeyServiceType_GetSecurityKeys_InputArguments Variable.
         /// </summary>
         public static readonly NodeId PubSubKeyServiceType_GetSecurityKeys_InputArguments = new NodeId(Opc.Ua.Variables.PubSubKeyServiceType_GetSecurityKeys_InputArguments);
@@ -48555,6 +48870,26 @@ namespace Opc.Ua
         public static readonly NodeId SecurityGroupFolderType_SecurityGroupName_Placeholder_SecurityGroupId = new NodeId(Opc.Ua.Variables.SecurityGroupFolderType_SecurityGroupName_Placeholder_SecurityGroupId);
 
         /// <summary>
+        /// The identifier for the SecurityGroupFolderType_SecurityGroupName_Placeholder_KeyLifetime Variable.
+        /// </summary>
+        public static readonly NodeId SecurityGroupFolderType_SecurityGroupName_Placeholder_KeyLifetime = new NodeId(Opc.Ua.Variables.SecurityGroupFolderType_SecurityGroupName_Placeholder_KeyLifetime);
+
+        /// <summary>
+        /// The identifier for the SecurityGroupFolderType_SecurityGroupName_Placeholder_SecurityPolicyUri Variable.
+        /// </summary>
+        public static readonly NodeId SecurityGroupFolderType_SecurityGroupName_Placeholder_SecurityPolicyUri = new NodeId(Opc.Ua.Variables.SecurityGroupFolderType_SecurityGroupName_Placeholder_SecurityPolicyUri);
+
+        /// <summary>
+        /// The identifier for the SecurityGroupFolderType_SecurityGroupName_Placeholder_MaxFutureKeyCount Variable.
+        /// </summary>
+        public static readonly NodeId SecurityGroupFolderType_SecurityGroupName_Placeholder_MaxFutureKeyCount = new NodeId(Opc.Ua.Variables.SecurityGroupFolderType_SecurityGroupName_Placeholder_MaxFutureKeyCount);
+
+        /// <summary>
+        /// The identifier for the SecurityGroupFolderType_SecurityGroupName_Placeholder_MaxPastKeyCount Variable.
+        /// </summary>
+        public static readonly NodeId SecurityGroupFolderType_SecurityGroupName_Placeholder_MaxPastKeyCount = new NodeId(Opc.Ua.Variables.SecurityGroupFolderType_SecurityGroupName_Placeholder_MaxPastKeyCount);
+
+        /// <summary>
         /// The identifier for the SecurityGroupFolderType_AddSecurityGroup_InputArguments Variable.
         /// </summary>
         public static readonly NodeId SecurityGroupFolderType_AddSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.SecurityGroupFolderType_AddSecurityGroup_InputArguments);
@@ -48573,6 +48908,26 @@ namespace Opc.Ua
         /// The identifier for the SecurityGroupType_SecurityGroupId Variable.
         /// </summary>
         public static readonly NodeId SecurityGroupType_SecurityGroupId = new NodeId(Opc.Ua.Variables.SecurityGroupType_SecurityGroupId);
+
+        /// <summary>
+        /// The identifier for the SecurityGroupType_KeyLifetime Variable.
+        /// </summary>
+        public static readonly NodeId SecurityGroupType_KeyLifetime = new NodeId(Opc.Ua.Variables.SecurityGroupType_KeyLifetime);
+
+        /// <summary>
+        /// The identifier for the SecurityGroupType_SecurityPolicyUri Variable.
+        /// </summary>
+        public static readonly NodeId SecurityGroupType_SecurityPolicyUri = new NodeId(Opc.Ua.Variables.SecurityGroupType_SecurityPolicyUri);
+
+        /// <summary>
+        /// The identifier for the SecurityGroupType_MaxFutureKeyCount Variable.
+        /// </summary>
+        public static readonly NodeId SecurityGroupType_MaxFutureKeyCount = new NodeId(Opc.Ua.Variables.SecurityGroupType_MaxFutureKeyCount);
+
+        /// <summary>
+        /// The identifier for the SecurityGroupType_MaxPastKeyCount Variable.
+        /// </summary>
+        public static readonly NodeId SecurityGroupType_MaxPastKeyCount = new NodeId(Opc.Ua.Variables.SecurityGroupType_MaxPastKeyCount);
 
         /// <summary>
         /// The identifier for the PublishSubscribe_GetSecurityKeys_InputArguments Variable.
@@ -55255,6 +55610,11 @@ namespace Opc.Ua
         public static readonly NodeId JsonDataSetReaderMessageType_DataSetMessageContentMask = new NodeId(Opc.Ua.Variables.JsonDataSetReaderMessageType_DataSetMessageContentMask);
 
         /// <summary>
+        /// The identifier for the DatagramConnectionTransportType_DiscoveryAddress_NetworkInterface Variable.
+        /// </summary>
+        public static readonly NodeId DatagramConnectionTransportType_DiscoveryAddress_NetworkInterface = new NodeId(Opc.Ua.Variables.DatagramConnectionTransportType_DiscoveryAddress_NetworkInterface);
+
+        /// <summary>
         /// The identifier for the DatagramWriterGroupTransportType_MessageRepeatCount Variable.
         /// </summary>
         public static readonly NodeId DatagramWriterGroupTransportType_MessageRepeatCount = new NodeId(Opc.Ua.Variables.DatagramWriterGroupTransportType_MessageRepeatCount);
@@ -55265,9 +55625,44 @@ namespace Opc.Ua
         public static readonly NodeId DatagramWriterGroupTransportType_MessageRepeatDelay = new NodeId(Opc.Ua.Variables.DatagramWriterGroupTransportType_MessageRepeatDelay);
 
         /// <summary>
+        /// The identifier for the BrokerConnectionTransportType_ResourceUri Variable.
+        /// </summary>
+        public static readonly NodeId BrokerConnectionTransportType_ResourceUri = new NodeId(Opc.Ua.Variables.BrokerConnectionTransportType_ResourceUri);
+
+        /// <summary>
+        /// The identifier for the BrokerConnectionTransportType_AuthenticationProfileUri Variable.
+        /// </summary>
+        public static readonly NodeId BrokerConnectionTransportType_AuthenticationProfileUri = new NodeId(Opc.Ua.Variables.BrokerConnectionTransportType_AuthenticationProfileUri);
+
+        /// <summary>
+        /// The identifier for the BrokerConnectionTransportType_ConnectionProperties Variable.
+        /// </summary>
+        public static readonly NodeId BrokerConnectionTransportType_ConnectionProperties = new NodeId(Opc.Ua.Variables.BrokerConnectionTransportType_ConnectionProperties);
+
+        /// <summary>
         /// The identifier for the BrokerWriterGroupTransportType_QueueName Variable.
         /// </summary>
         public static readonly NodeId BrokerWriterGroupTransportType_QueueName = new NodeId(Opc.Ua.Variables.BrokerWriterGroupTransportType_QueueName);
+
+        /// <summary>
+        /// The identifier for the BrokerWriterGroupTransportType_ResourceUri Variable.
+        /// </summary>
+        public static readonly NodeId BrokerWriterGroupTransportType_ResourceUri = new NodeId(Opc.Ua.Variables.BrokerWriterGroupTransportType_ResourceUri);
+
+        /// <summary>
+        /// The identifier for the BrokerWriterGroupTransportType_AuthenticationProfileUri Variable.
+        /// </summary>
+        public static readonly NodeId BrokerWriterGroupTransportType_AuthenticationProfileUri = new NodeId(Opc.Ua.Variables.BrokerWriterGroupTransportType_AuthenticationProfileUri);
+
+        /// <summary>
+        /// The identifier for the BrokerWriterGroupTransportType_WriterGroupProperties Variable.
+        /// </summary>
+        public static readonly NodeId BrokerWriterGroupTransportType_WriterGroupProperties = new NodeId(Opc.Ua.Variables.BrokerWriterGroupTransportType_WriterGroupProperties);
+
+        /// <summary>
+        /// The identifier for the BrokerWriterGroupTransportType_RequestedDeliveryGuarantee Variable.
+        /// </summary>
+        public static readonly NodeId BrokerWriterGroupTransportType_RequestedDeliveryGuarantee = new NodeId(Opc.Ua.Variables.BrokerWriterGroupTransportType_RequestedDeliveryGuarantee);
 
         /// <summary>
         /// The identifier for the BrokerDataSetWriterTransportType_QueueName Variable.
@@ -55280,6 +55675,26 @@ namespace Opc.Ua
         public static readonly NodeId BrokerDataSetWriterTransportType_MetaDataQueueName = new NodeId(Opc.Ua.Variables.BrokerDataSetWriterTransportType_MetaDataQueueName);
 
         /// <summary>
+        /// The identifier for the BrokerDataSetWriterTransportType_ResourceUri Variable.
+        /// </summary>
+        public static readonly NodeId BrokerDataSetWriterTransportType_ResourceUri = new NodeId(Opc.Ua.Variables.BrokerDataSetWriterTransportType_ResourceUri);
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetWriterTransportType_AuthenticationProfileUri Variable.
+        /// </summary>
+        public static readonly NodeId BrokerDataSetWriterTransportType_AuthenticationProfileUri = new NodeId(Opc.Ua.Variables.BrokerDataSetWriterTransportType_AuthenticationProfileUri);
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetWriterTransportType_DataSetWriterProperties Variable.
+        /// </summary>
+        public static readonly NodeId BrokerDataSetWriterTransportType_DataSetWriterProperties = new NodeId(Opc.Ua.Variables.BrokerDataSetWriterTransportType_DataSetWriterProperties);
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetWriterTransportType_RequestedDeliveryGuarantee Variable.
+        /// </summary>
+        public static readonly NodeId BrokerDataSetWriterTransportType_RequestedDeliveryGuarantee = new NodeId(Opc.Ua.Variables.BrokerDataSetWriterTransportType_RequestedDeliveryGuarantee);
+
+        /// <summary>
         /// The identifier for the BrokerDataSetWriterTransportType_MetaDataUpdateTime Variable.
         /// </summary>
         public static readonly NodeId BrokerDataSetWriterTransportType_MetaDataUpdateTime = new NodeId(Opc.Ua.Variables.BrokerDataSetWriterTransportType_MetaDataUpdateTime);
@@ -55288,6 +55703,21 @@ namespace Opc.Ua
         /// The identifier for the BrokerDataSetReaderTransportType_QueueName Variable.
         /// </summary>
         public static readonly NodeId BrokerDataSetReaderTransportType_QueueName = new NodeId(Opc.Ua.Variables.BrokerDataSetReaderTransportType_QueueName);
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetReaderTransportType_ResourceUri Variable.
+        /// </summary>
+        public static readonly NodeId BrokerDataSetReaderTransportType_ResourceUri = new NodeId(Opc.Ua.Variables.BrokerDataSetReaderTransportType_ResourceUri);
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetReaderTransportType_AuthenticationProfileUri Variable.
+        /// </summary>
+        public static readonly NodeId BrokerDataSetReaderTransportType_AuthenticationProfileUri = new NodeId(Opc.Ua.Variables.BrokerDataSetReaderTransportType_AuthenticationProfileUri);
+
+        /// <summary>
+        /// The identifier for the BrokerDataSetReaderTransportType_RequestedDeliveryGuarantee Variable.
+        /// </summary>
+        public static readonly NodeId BrokerDataSetReaderTransportType_RequestedDeliveryGuarantee = new NodeId(Opc.Ua.Variables.BrokerDataSetReaderTransportType_RequestedDeliveryGuarantee);
 
         /// <summary>
         /// The identifier for the BrokerDataSetReaderTransportType_MetaDataQueueName Variable.
@@ -55500,6 +55930,16 @@ namespace Opc.Ua
         public static readonly NodeId OpcUa_BinarySchema_EnumDescription = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_EnumDescription);
 
         /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_SimpleTypeDescription Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_SimpleTypeDescription = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_SimpleTypeDescription);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_UABinaryFileDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_UABinaryFileDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_UABinaryFileDataType);
+
+        /// <summary>
         /// The identifier for the OpcUa_BinarySchema_DataSetMetaDataType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_BinarySchema_DataSetMetaDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_DataSetMetaDataType);
@@ -55683,6 +56123,11 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_BinarySchema_DatagramWriterGroupTransportDataType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_BinarySchema_DatagramWriterGroupTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_DatagramWriterGroupTransportDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_BrokerConnectionTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_BrokerConnectionTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_BrokerConnectionTransportDataType);
 
         /// <summary>
         /// The identifier for the OpcUa_BinarySchema_BrokerWriterGroupTransportDataType Variable.
@@ -56085,6 +56530,16 @@ namespace Opc.Ua
         public static readonly NodeId OpcUa_XmlSchema_EnumDescription = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EnumDescription);
 
         /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_SimpleTypeDescription Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_SimpleTypeDescription = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_SimpleTypeDescription);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_UABinaryFileDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_UABinaryFileDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_UABinaryFileDataType);
+
+        /// <summary>
         /// The identifier for the OpcUa_XmlSchema_DataSetMetaDataType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_XmlSchema_DataSetMetaDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DataSetMetaDataType);
@@ -56268,6 +56723,11 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_XmlSchema_DatagramWriterGroupTransportDataType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_XmlSchema_DatagramWriterGroupTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DatagramWriterGroupTransportDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_BrokerConnectionTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_BrokerConnectionTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_BrokerConnectionTransportDataType);
 
         /// <summary>
         /// The identifier for the OpcUa_XmlSchema_BrokerWriterGroupTransportDataType Variable.
@@ -57699,6 +58159,11 @@ namespace Opc.Ua
         public const string AuthenticationMechanism = "AuthenticationMechanism";
 
         /// <summary>
+        /// The BrowseName for the AuthenticationProfileUri component.
+        /// </summary>
+        public const string AuthenticationProfileUri = "AuthenticationProfileUri";
+
+        /// <summary>
         /// The BrowseName for the AuthorizationServiceConfigurationType component.
         /// </summary>
         public const string AuthorizationServiceConfigurationType = "AuthorizationServiceConfigurationType";
@@ -57829,6 +58294,16 @@ namespace Opc.Ua
         public const string BranchId = "BranchId";
 
         /// <summary>
+        /// The BrowseName for the BrokerConnectionTransportDataType component.
+        /// </summary>
+        public const string BrokerConnectionTransportDataType = "BrokerConnectionTransportDataType";
+
+        /// <summary>
+        /// The BrowseName for the BrokerConnectionTransportType component.
+        /// </summary>
+        public const string BrokerConnectionTransportType = "BrokerConnectionTransportType";
+
+        /// <summary>
         /// The BrowseName for the BrokerDataSetReaderTransportDataType component.
         /// </summary>
         public const string BrokerDataSetReaderTransportDataType = "BrokerDataSetReaderTransportDataType";
@@ -57847,6 +58322,11 @@ namespace Opc.Ua
         /// The BrowseName for the BrokerDataSetWriterTransportType component.
         /// </summary>
         public const string BrokerDataSetWriterTransportType = "BrokerDataSetWriterTransportType";
+
+        /// <summary>
+        /// The BrowseName for the BrokerTransportQualityOfService component.
+        /// </summary>
+        public const string BrokerTransportQualityOfService = "BrokerTransportQualityOfService";
 
         /// <summary>
         /// The BrowseName for the BrokerWriterGroupTransportDataType component.
@@ -58239,6 +58719,11 @@ namespace Opc.Ua
         public const string ConnectionName_Placeholder = "<ConnectionName>";
 
         /// <summary>
+        /// The BrowseName for the ConnectionProperties component.
+        /// </summary>
+        public const string ConnectionProperties = "ConnectionProperties";
+
+        /// <summary>
         /// The BrowseName for the ConnectionTransportDataType component.
         /// </summary>
         public const string ConnectionTransportDataType = "ConnectionTransportDataType";
@@ -58464,6 +58949,11 @@ namespace Opc.Ua
         public const string DataChangeTrigger = "DataChangeTrigger";
 
         /// <summary>
+        /// The BrowseName for the DatagramConnectionTransportType component.
+        /// </summary>
+        public const string DatagramConnectionTransportType = "DatagramConnectionTransportType";
+
+        /// <summary>
         /// The BrowseName for the DatagramWriterGroupTransportDataType component.
         /// </summary>
         public const string DatagramWriterGroupTransportDataType = "DatagramWriterGroupTransportDataType";
@@ -58597,6 +59087,11 @@ namespace Opc.Ua
         /// The BrowseName for the DataSetWriterName_Placeholder component.
         /// </summary>
         public const string DataSetWriterName_Placeholder = "<DataSetWriterName>";
+
+        /// <summary>
+        /// The BrowseName for the DataSetWriterProperties component.
+        /// </summary>
+        public const string DataSetWriterProperties = "DataSetWriterProperties";
 
         /// <summary>
         /// The BrowseName for the DataSetWriterTransportDataType component.
@@ -58947,6 +59442,11 @@ namespace Opc.Ua
         /// The BrowseName for the DiscardedMessageCount component.
         /// </summary>
         public const string DiscardedMessageCount = "DiscardedMessageCount";
+
+        /// <summary>
+        /// The BrowseName for the DiscoveryAddress component.
+        /// </summary>
+        public const string DiscoveryAddress = "DiscoveryAddress";
 
         /// <summary>
         /// The BrowseName for the DiscoveryConfiguration component.
@@ -60054,6 +60554,11 @@ namespace Opc.Ua
         public const string KeyFrameCount = "KeyFrameCount";
 
         /// <summary>
+        /// The BrowseName for the KeyLifetime component.
+        /// </summary>
+        public const string KeyLifetime = "KeyLifetime";
+
+        /// <summary>
         /// The BrowseName for the KeyValuePair component.
         /// </summary>
         public const string KeyValuePair = "KeyValuePair";
@@ -60254,6 +60759,11 @@ namespace Opc.Ua
         public const string MaxCharacters = "MaxCharacters";
 
         /// <summary>
+        /// The BrowseName for the MaxFutureKeyCount component.
+        /// </summary>
+        public const string MaxFutureKeyCount = "MaxFutureKeyCount";
+
+        /// <summary>
         /// The BrowseName for the MaxHistoryContinuationPoints component.
         /// </summary>
         public const string MaxHistoryContinuationPoints = "MaxHistoryContinuationPoints";
@@ -60367,6 +60877,11 @@ namespace Opc.Ua
         /// The BrowseName for the MaxNotificationsPerPublish component.
         /// </summary>
         public const string MaxNotificationsPerPublish = "MaxNotificationsPerPublish";
+
+        /// <summary>
+        /// The BrowseName for the MaxPastKeyCount component.
+        /// </summary>
+        public const string MaxPastKeyCount = "MaxPastKeyCount";
 
         /// <summary>
         /// The BrowseName for the MaxQueryContinuationPoints component.
@@ -61894,6 +62409,11 @@ namespace Opc.Ua
         public const string ReqTimes = "ReqTimes";
 
         /// <summary>
+        /// The BrowseName for the RequestedDeliveryGuarantee component.
+        /// </summary>
+        public const string RequestedDeliveryGuarantee = "RequestedDeliveryGuarantee";
+
+        /// <summary>
         /// The BrowseName for the RequestedLifetime component.
         /// </summary>
         public const string RequestedLifetime = "RequestedLifetime";
@@ -62569,6 +63089,11 @@ namespace Opc.Ua
         public const string SimpleAttributeOperand = "SimpleAttributeOperand";
 
         /// <summary>
+        /// The BrowseName for the SimpleTypeDescription component.
+        /// </summary>
+        public const string SimpleTypeDescription = "SimpleTypeDescription";
+
+        /// <summary>
         /// The BrowseName for the Size component.
         /// </summary>
         public const string Size = "Size";
@@ -63139,6 +63664,11 @@ namespace Opc.Ua
         public const string TypesFolder = "Types";
 
         /// <summary>
+        /// The BrowseName for the UABinaryFileDataType component.
+        /// </summary>
+        public const string UABinaryFileDataType = "UABinaryFileDataType";
+
+        /// <summary>
         /// The BrowseName for the UadpDataSetMessageContentMask component.
         /// </summary>
         public const string UadpDataSetMessageContentMask = "UadpDataSetMessageContentMask";
@@ -63517,6 +64047,11 @@ namespace Opc.Ua
         /// The BrowseName for the WriterGroupName_Placeholder component.
         /// </summary>
         public const string WriterGroupName_Placeholder = "<WriterGroupName>";
+
+        /// <summary>
+        /// The BrowseName for the WriterGroupProperties component.
+        /// </summary>
+        public const string WriterGroupProperties = "WriterGroupProperties";
 
         /// <summary>
         /// The BrowseName for the WriterGroupTransportDataType component.

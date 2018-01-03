@@ -647,6 +647,7 @@
       <xs:element name="Namespaces" type="ua:ListOfString" minOccurs="0" nillable="true" />
       <xs:element name="StructureDataTypes" type="tns:ListOfStructureDescription" minOccurs="0" nillable="true" />
       <xs:element name="EnumDataTypes" type="tns:ListOfEnumDescription" minOccurs="0" nillable="true" />
+      <xs:element name="SimpleDataTypes" type="tns:ListOfSimpleTypeDescription" minOccurs="0" nillable="true" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="DataTypeSchemaHeader" type="tns:DataTypeSchemaHeader" />
@@ -709,6 +710,41 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ListOfEnumDescription" type="tns:ListOfEnumDescription" nillable="true"></xs:element>
+
+  <xs:complexType name="SimpleTypeDescription">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DataTypeDescription">
+        <xs:sequence>
+          <xs:element name="BaseDataType" type="ua:NodeId" minOccurs="0" nillable="true" />
+          <xs:element name="BuiltInType" type="xs:unsignedByte" minOccurs="0" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SimpleTypeDescription" type="tns:SimpleTypeDescription" />
+
+  <xs:complexType name="ListOfSimpleTypeDescription">
+    <xs:sequence>
+      <xs:element name="SimpleTypeDescription" type="tns:SimpleTypeDescription" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfSimpleTypeDescription" type="tns:ListOfSimpleTypeDescription" nillable="true"></xs:element>
+
+  <xs:complexType name="UABinaryFileDataType">
+    <xs:sequence>
+      <xs:element name="SchemaLocation" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="FileHeader" type="tns:ListOfKeyValuePair" minOccurs="0" nillable="true" />
+      <xs:element name="Body" type="ua:ListOfExtensionObject" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UABinaryFileDataType" type="tns:UABinaryFileDataType" />
+
+  <xs:complexType name="ListOfUABinaryFileDataType">
+    <xs:sequence>
+      <xs:element name="UABinaryFileDataType" type="tns:UABinaryFileDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfUABinaryFileDataType" type="tns:ListOfUABinaryFileDataType" nillable="true"></xs:element>
 
   <xs:simpleType  name="PubSubState">
     <xs:restriction base="xs:string">
@@ -1466,11 +1502,53 @@
   </xs:complexType>
   <xs:element name="ListOfDatagramWriterGroupTransportDataType" type="tns:ListOfDatagramWriterGroupTransportDataType" nillable="true"></xs:element>
 
+  <xs:complexType name="BrokerConnectionTransportDataType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DataSetWriterTransportDataType">
+        <xs:sequence>
+          <xs:element name="ResourceUri" type="xs:string" minOccurs="0" nillable="true" />
+          <xs:element name="AuthenticationProfileUri" type="xs:string" minOccurs="0" nillable="true" />
+          <xs:element name="ConnectionProperties" type="tns:ListOfKeyValuePair" minOccurs="0" nillable="true" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BrokerConnectionTransportDataType" type="tns:BrokerConnectionTransportDataType" />
+
+  <xs:complexType name="ListOfBrokerConnectionTransportDataType">
+    <xs:sequence>
+      <xs:element name="BrokerConnectionTransportDataType" type="tns:BrokerConnectionTransportDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfBrokerConnectionTransportDataType" type="tns:ListOfBrokerConnectionTransportDataType" nillable="true"></xs:element>
+
+  <xs:simpleType  name="BrokerTransportQualityOfService">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotSpecified_0" />
+      <xs:enumeration value="BestEffort_1" />
+      <xs:enumeration value="AtLeastOnce_2" />
+      <xs:enumeration value="AtMostOnce_3" />
+      <xs:enumeration value="ExactlyOnce_4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="BrokerTransportQualityOfService" type="tns:BrokerTransportQualityOfService" />
+
+  <xs:complexType name="ListOfBrokerTransportQualityOfService">
+    <xs:sequence>
+      <xs:element name="BrokerTransportQualityOfService" type="tns:BrokerTransportQualityOfService" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfBrokerTransportQualityOfService" type="tns:ListOfBrokerTransportQualityOfService" nillable="true"></xs:element>
+
   <xs:complexType name="BrokerWriterGroupTransportDataType">
     <xs:complexContent mixed="false">
       <xs:extension base="tns:WriterGroupTransportDataType">
         <xs:sequence>
           <xs:element name="QueueName" type="xs:string" minOccurs="0" nillable="true" />
+          <xs:element name="ResourceUri" type="xs:string" minOccurs="0" nillable="true" />
+          <xs:element name="AuthenticationProfileUri" type="xs:string" minOccurs="0" nillable="true" />
+          <xs:element name="WriterGroupProperties" type="tns:ListOfKeyValuePair" minOccurs="0" nillable="true" />
+          <xs:element name="RequestedDeliveryGuarantee" type="tns:BrokerTransportQualityOfService" minOccurs="0" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -1486,9 +1564,12 @@
 
   <xs:complexType name="BrokerDataSetWriterTransportDataType">
     <xs:complexContent mixed="false">
-      <xs:extension base="tns:DataSetWriterTransportDataType">
+      <xs:extension base="tns:WriterGroupTransportDataType">
         <xs:sequence>
           <xs:element name="QueueName" type="xs:string" minOccurs="0" nillable="true" />
+          <xs:element name="ResourceUri" type="xs:string" minOccurs="0" nillable="true" />
+          <xs:element name="AuthenticationProfileUri" type="xs:string" minOccurs="0" nillable="true" />
+          <xs:element name="DataSetWriterProperties" type="tns:ListOfKeyValuePair" minOccurs="0" nillable="true" />
           <xs:element name="MetaDataQueueName" type="xs:string" minOccurs="0" nillable="true" />
           <xs:element name="MetaDataUpdateTime" type="xs:double" minOccurs="0" />
         </xs:sequence>
@@ -1509,6 +1590,9 @@
       <xs:extension base="tns:DataSetReaderTransportDataType">
         <xs:sequence>
           <xs:element name="QueueName" type="xs:string" minOccurs="0" nillable="true" />
+          <xs:element name="ResourceUri" type="xs:string" minOccurs="0" nillable="true" />
+          <xs:element name="AuthenticationProfileUri" type="xs:string" minOccurs="0" nillable="true" />
+          <xs:element name="RequestedDeliveryGuarantee" type="tns:BrokerTransportQualityOfService" minOccurs="0" />
           <xs:element name="MetaDataQueueName" type="xs:string" minOccurs="0" nillable="true" />
         </xs:sequence>
       </xs:extension>

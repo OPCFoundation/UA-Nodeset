@@ -309,6 +309,8 @@
     <opc:Field Name="StructureDataTypes" TypeName="tns:StructureDescription" LengthField="NoOfStructureDataTypes" />
     <opc:Field Name="NoOfEnumDataTypes" TypeName="opc:Int32" />
     <opc:Field Name="EnumDataTypes" TypeName="tns:EnumDescription" LengthField="NoOfEnumDataTypes" />
+    <opc:Field Name="NoOfSimpleDataTypes" TypeName="opc:Int32" />
+    <opc:Field Name="SimpleDataTypes" TypeName="tns:SimpleTypeDescription" LengthField="NoOfSimpleDataTypes" />
   </opc:StructuredType>
 
   <opc:StructuredType Name="DataTypeDescription" BaseType="ua:ExtensionObject">
@@ -329,6 +331,21 @@
     <opc:Field Name="BuiltInType" TypeName="opc:Byte" />
   </opc:StructuredType>
 
+  <opc:StructuredType Name="SimpleTypeDescription" BaseType="tns:DataTypeDescription">
+    <opc:Field Name="DataTypeId" TypeName="ua:NodeId" SourceType="tns:DataTypeDescription" />
+    <opc:Field Name="Name" TypeName="ua:QualifiedName" SourceType="tns:DataTypeDescription" />
+    <opc:Field Name="BaseDataType" TypeName="ua:NodeId" />
+    <opc:Field Name="BuiltInType" TypeName="opc:Byte" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="UABinaryFileDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="SchemaLocation" TypeName="opc:String" />
+    <opc:Field Name="NoOfFileHeader" TypeName="opc:Int32" />
+    <opc:Field Name="FileHeader" TypeName="tns:KeyValuePair" LengthField="NoOfFileHeader" />
+    <opc:Field Name="NoOfBody" TypeName="opc:Int32" />
+    <opc:Field Name="Body" TypeName="ua:ExtensionObject" LengthField="NoOfBody" />
+  </opc:StructuredType>
+
   <opc:EnumeratedType Name="PubSubState" LengthInBits="32">
     <opc:EnumeratedValue Name="Disabled" Value="0" />
     <opc:EnumeratedValue Name="Paused" Value="1" />
@@ -343,6 +360,8 @@
     <opc:Field Name="StructureDataTypes" TypeName="tns:StructureDescription" LengthField="NoOfStructureDataTypes" />
     <opc:Field Name="NoOfEnumDataTypes" TypeName="opc:Int32" />
     <opc:Field Name="EnumDataTypes" TypeName="tns:EnumDescription" LengthField="NoOfEnumDataTypes" />
+    <opc:Field Name="NoOfSimpleDataTypes" TypeName="opc:Int32" />
+    <opc:Field Name="SimpleDataTypes" TypeName="tns:SimpleTypeDescription" LengthField="NoOfSimpleDataTypes" />
     <opc:Field Name="Name" TypeName="opc:String" />
     <opc:Field Name="Description" TypeName="ua:LocalizedText" />
     <opc:Field Name="NoOfFields" TypeName="opc:Int32" />
@@ -639,10 +658,9 @@
   <opc:EnumeratedType Name="JsonDataSetMessageContentMask" LengthInBits="32">
     <opc:EnumeratedValue Name="DataSetWriterId" Value="1" />
     <opc:EnumeratedValue Name="MetaDataVersion" Value="2" />
-    <opc:EnumeratedValue Name="MetaDataQueueName" Value="4" />
-    <opc:EnumeratedValue Name="SequenceNumber" Value="8" />
-    <opc:EnumeratedValue Name="Timestamp" Value="16" />
-    <opc:EnumeratedValue Name="Status" Value="32" />
+    <opc:EnumeratedValue Name="SequenceNumber" Value="4" />
+    <opc:EnumeratedValue Name="Timestamp" Value="8" />
+    <opc:EnumeratedValue Name="Status" Value="16" />
   </opc:EnumeratedType>
 
   <opc:StructuredType Name="JsonDataSetWriterMessageDataType" BaseType="tns:DataSetWriterMessageDataType">
@@ -659,18 +677,45 @@
     <opc:Field Name="MessageRepeatDelay" TypeName="opc:Double" />
   </opc:StructuredType>
 
-  <opc:StructuredType Name="BrokerWriterGroupTransportDataType" BaseType="tns:WriterGroupTransportDataType">
-    <opc:Field Name="QueueName" TypeName="opc:String" />
+  <opc:StructuredType Name="BrokerConnectionTransportDataType" BaseType="tns:DataSetWriterTransportDataType">
+    <opc:Field Name="ResourceUri" TypeName="opc:String" />
+    <opc:Field Name="AuthenticationProfileUri" TypeName="opc:String" />
+    <opc:Field Name="NoOfConnectionProperties" TypeName="opc:Int32" />
+    <opc:Field Name="ConnectionProperties" TypeName="tns:KeyValuePair" LengthField="NoOfConnectionProperties" />
   </opc:StructuredType>
 
-  <opc:StructuredType Name="BrokerDataSetWriterTransportDataType" BaseType="tns:DataSetWriterTransportDataType">
+  <opc:EnumeratedType Name="BrokerTransportQualityOfService" LengthInBits="32">
+    <opc:EnumeratedValue Name="NotSpecified" Value="0" />
+    <opc:EnumeratedValue Name="BestEffort" Value="1" />
+    <opc:EnumeratedValue Name="AtLeastOnce" Value="2" />
+    <opc:EnumeratedValue Name="AtMostOnce" Value="3" />
+    <opc:EnumeratedValue Name="ExactlyOnce" Value="4" />
+  </opc:EnumeratedType>
+
+  <opc:StructuredType Name="BrokerWriterGroupTransportDataType" BaseType="tns:WriterGroupTransportDataType">
     <opc:Field Name="QueueName" TypeName="opc:String" />
+    <opc:Field Name="ResourceUri" TypeName="opc:String" />
+    <opc:Field Name="AuthenticationProfileUri" TypeName="opc:String" />
+    <opc:Field Name="NoOfWriterGroupProperties" TypeName="opc:Int32" />
+    <opc:Field Name="WriterGroupProperties" TypeName="tns:KeyValuePair" LengthField="NoOfWriterGroupProperties" />
+    <opc:Field Name="RequestedDeliveryGuarantee" TypeName="tns:BrokerTransportQualityOfService" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="BrokerDataSetWriterTransportDataType" BaseType="tns:WriterGroupTransportDataType">
+    <opc:Field Name="QueueName" TypeName="opc:String" />
+    <opc:Field Name="ResourceUri" TypeName="opc:String" />
+    <opc:Field Name="AuthenticationProfileUri" TypeName="opc:String" />
+    <opc:Field Name="NoOfDataSetWriterProperties" TypeName="opc:Int32" />
+    <opc:Field Name="DataSetWriterProperties" TypeName="tns:KeyValuePair" LengthField="NoOfDataSetWriterProperties" />
     <opc:Field Name="MetaDataQueueName" TypeName="opc:String" />
     <opc:Field Name="MetaDataUpdateTime" TypeName="opc:Double" />
   </opc:StructuredType>
 
   <opc:StructuredType Name="BrokerDataSetReaderTransportDataType" BaseType="tns:DataSetReaderTransportDataType">
     <opc:Field Name="QueueName" TypeName="opc:String" />
+    <opc:Field Name="ResourceUri" TypeName="opc:String" />
+    <opc:Field Name="AuthenticationProfileUri" TypeName="opc:String" />
+    <opc:Field Name="RequestedDeliveryGuarantee" TypeName="tns:BrokerTransportQualityOfService" />
     <opc:Field Name="MetaDataQueueName" TypeName="opc:String" />
   </opc:StructuredType>
 
