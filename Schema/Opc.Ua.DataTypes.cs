@@ -5941,7 +5941,7 @@ namespace Opc.Ua
         private void Initialize()
         {
             m_name = null;
-            m_state = PubSubState.Disabled;
+            m_enabled = true;
             m_dataSetWriterId = (ushort)0;
             m_dataSetFieldContentMask = DataSetFieldContentMask.StatusCode;
             m_keyFrameCount = (uint)0;
@@ -5963,13 +5963,13 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the State field.
+        /// A description for the Enabled field.
         /// </summary>
-        [DataMember(Name = "State", IsRequired = false, Order = 2)]
-        public PubSubState State
+        [DataMember(Name = "Enabled", IsRequired = false, Order = 2)]
+        public bool Enabled
         {
-            get { return m_state;  }
-            set { m_state = value; }
+            get { return m_enabled;  }
+            set { m_enabled = value; }
         }
 
         /// <summary>
@@ -6058,7 +6058,7 @@ namespace Opc.Ua
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             encoder.WriteString("Name", Name);
-            encoder.WriteEnumerated("State", State);
+            encoder.WriteBoolean("Enabled", Enabled);
             encoder.WriteUInt16("DataSetWriterId", DataSetWriterId);
             encoder.WriteEnumerated("DataSetFieldContentMask", DataSetFieldContentMask);
             encoder.WriteUInt32("KeyFrameCount", KeyFrameCount);
@@ -6075,7 +6075,7 @@ namespace Opc.Ua
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             Name = decoder.ReadString("Name");
-            State = (PubSubState)decoder.ReadEnumerated("State", typeof(PubSubState));
+            Enabled = decoder.ReadBoolean("Enabled");
             DataSetWriterId = decoder.ReadUInt16("DataSetWriterId");
             DataSetFieldContentMask = (DataSetFieldContentMask)decoder.ReadEnumerated("DataSetFieldContentMask", typeof(DataSetFieldContentMask));
             KeyFrameCount = decoder.ReadUInt32("KeyFrameCount");
@@ -6102,7 +6102,7 @@ namespace Opc.Ua
             }
 
             if (!Utils.IsEqual(m_name, value.m_name)) return false;
-            if (!Utils.IsEqual(m_state, value.m_state)) return false;
+            if (!Utils.IsEqual(m_enabled, value.m_enabled)) return false;
             if (!Utils.IsEqual(m_dataSetWriterId, value.m_dataSetWriterId)) return false;
             if (!Utils.IsEqual(m_dataSetFieldContentMask, value.m_dataSetFieldContentMask)) return false;
             if (!Utils.IsEqual(m_keyFrameCount, value.m_keyFrameCount)) return false;
@@ -6127,7 +6127,7 @@ namespace Opc.Ua
             DataSetWriterDataType clone = (DataSetWriterDataType)base.MemberwiseClone();
 
             clone.m_name = (string)Utils.Clone(this.m_name);
-            clone.m_state = (PubSubState)Utils.Clone(this.m_state);
+            clone.m_enabled = (bool)Utils.Clone(this.m_enabled);
             clone.m_dataSetWriterId = (ushort)Utils.Clone(this.m_dataSetWriterId);
             clone.m_dataSetFieldContentMask = (DataSetFieldContentMask)Utils.Clone(this.m_dataSetFieldContentMask);
             clone.m_keyFrameCount = (uint)Utils.Clone(this.m_keyFrameCount);
@@ -6141,7 +6141,7 @@ namespace Opc.Ua
 
         #region Private Fields
         private string m_name;
-        private PubSubState m_state;
+        private bool m_enabled;
         private ushort m_dataSetWriterId;
         private DataSetFieldContentMask m_dataSetFieldContentMask;
         private uint m_keyFrameCount;
@@ -6965,7 +6965,7 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
-    public partial class WriterGroupDataType : IEncodeable
+    public partial class WriterGroupDataType : PubSubGroupDataType
     {
         #region Constructors
         /// <summary>
@@ -7109,26 +7109,28 @@ namespace Opc.Ua
 
         #region IEncodeable Members
         /// <summary cref="IEncodeable.TypeId" />
-        public virtual ExpandedNodeId TypeId
+        public override ExpandedNodeId TypeId
         {
             get { return DataTypeIds.WriterGroupDataType; }
         }
 
         /// <summary cref="IEncodeable.BinaryEncodingId" />
-        public virtual ExpandedNodeId BinaryEncodingId
+        public override ExpandedNodeId BinaryEncodingId
         {
             get { return ObjectIds.WriterGroupDataType_Encoding_DefaultBinary; }
         }
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId
+        public override ExpandedNodeId XmlEncodingId
         {
             get { return ObjectIds.WriterGroupDataType_Encoding_DefaultXml; }
         }
 
         /// <summary cref="IEncodeable.Encode(IEncoder)" />
-        public virtual void Encode(IEncoder encoder)
+        public override void Encode(IEncoder encoder)
         {
+            base.Encode(encoder);
+
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             encoder.WriteUInt16("WriterGroupId", WriterGroupId);
@@ -7144,8 +7146,10 @@ namespace Opc.Ua
         }
 
         /// <summary cref="IEncodeable.Decode(IDecoder)" />
-        public virtual void Decode(IDecoder decoder)
+        public override void Decode(IDecoder decoder)
         {
+            base.Decode(decoder);
+
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             WriterGroupId = decoder.ReadUInt16("WriterGroupId");
@@ -7161,7 +7165,7 @@ namespace Opc.Ua
         }
 
         /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
-        public virtual bool IsEqual(IEncodeable encodeable)
+        public override bool IsEqual(IEncodeable encodeable)
         {
             if (Object.ReferenceEquals(this, encodeable))
             {
@@ -7175,6 +7179,7 @@ namespace Opc.Ua
                 return false;
             }
 
+            if (!base.IsEqual(encodeable)) return false;
             if (!Utils.IsEqual(m_writerGroupId, value.m_writerGroupId)) return false;
             if (!Utils.IsEqual(m_publishingInterval, value.m_publishingInterval)) return false;
             if (!Utils.IsEqual(m_keepAliveTime, value.m_keepAliveTime)) return false;
@@ -7185,11 +7190,11 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_dataSetWriters, value.m_dataSetWriters)) return false;
 
             return true;
-        }
+        }    
 
         #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
-        public virtual object Clone()
+        public override object Clone()
         {
             return (WriterGroupDataType)this.MemberwiseClone();
         }
@@ -7754,6 +7759,7 @@ namespace Opc.Ua
         private void Initialize()
         {
             m_name = null;
+            m_enabled = true;
             m_publisherId = Variant.Null;
             m_transportProfileUri = null;
             m_address = null;
@@ -7775,9 +7781,19 @@ namespace Opc.Ua
         }
 
         /// <summary>
+        /// A description for the Enabled field.
+        /// </summary>
+        [DataMember(Name = "Enabled", IsRequired = false, Order = 2)]
+        public bool Enabled
+        {
+            get { return m_enabled;  }
+            set { m_enabled = value; }
+        }
+
+        /// <summary>
         /// A description for the PublisherId field.
         /// </summary>
-        [DataMember(Name = "PublisherId", IsRequired = false, Order = 2)]
+        [DataMember(Name = "PublisherId", IsRequired = false, Order = 3)]
         public Variant PublisherId
         {
             get { return m_publisherId;  }
@@ -7787,7 +7803,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the TransportProfileUri field.
         /// </summary>
-        [DataMember(Name = "TransportProfileUri", IsRequired = false, Order = 3)]
+        [DataMember(Name = "TransportProfileUri", IsRequired = false, Order = 4)]
         public string TransportProfileUri
         {
             get { return m_transportProfileUri;  }
@@ -7797,7 +7813,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the Address field.
         /// </summary>
-        [DataMember(Name = "Address", IsRequired = false, Order = 4)]
+        [DataMember(Name = "Address", IsRequired = false, Order = 5)]
         public ExtensionObject Address
         {
             get { return m_address;  }
@@ -7807,7 +7823,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the TransportSettings field.
         /// </summary>
-        [DataMember(Name = "TransportSettings", IsRequired = false, Order = 5)]
+        [DataMember(Name = "TransportSettings", IsRequired = false, Order = 6)]
         public ExtensionObject TransportSettings
         {
             get { return m_transportSettings;  }
@@ -7817,7 +7833,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the WriterGroups field.
         /// </summary>
-        [DataMember(Name = "WriterGroups", IsRequired = false, Order = 6)]
+        [DataMember(Name = "WriterGroups", IsRequired = false, Order = 7)]
         public WriterGroupDataTypeCollection WriterGroups
         {
             get
@@ -7839,7 +7855,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the ReaderGroups field.
         /// </summary>
-        [DataMember(Name = "ReaderGroups", IsRequired = false, Order = 7)]
+        [DataMember(Name = "ReaderGroups", IsRequired = false, Order = 8)]
         public ReaderGroupDataTypeCollection ReaderGroups
         {
             get
@@ -7884,6 +7900,7 @@ namespace Opc.Ua
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             encoder.WriteString("Name", Name);
+            encoder.WriteBoolean("Enabled", Enabled);
             encoder.WriteVariant("PublisherId", PublisherId);
             encoder.WriteString("TransportProfileUri", TransportProfileUri);
             encoder.WriteExtensionObject("Address", Address);
@@ -7900,6 +7917,7 @@ namespace Opc.Ua
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             Name = decoder.ReadString("Name");
+            Enabled = decoder.ReadBoolean("Enabled");
             PublisherId = decoder.ReadVariant("PublisherId");
             TransportProfileUri = decoder.ReadString("TransportProfileUri");
             Address = decoder.ReadExtensionObject("Address");
@@ -7926,6 +7944,7 @@ namespace Opc.Ua
             }
 
             if (!Utils.IsEqual(m_name, value.m_name)) return false;
+            if (!Utils.IsEqual(m_enabled, value.m_enabled)) return false;
             if (!Utils.IsEqual(m_publisherId, value.m_publisherId)) return false;
             if (!Utils.IsEqual(m_transportProfileUri, value.m_transportProfileUri)) return false;
             if (!Utils.IsEqual(m_address, value.m_address)) return false;
@@ -7950,6 +7969,7 @@ namespace Opc.Ua
             PubSubConnectionDataType clone = (PubSubConnectionDataType)base.MemberwiseClone();
 
             clone.m_name = (string)Utils.Clone(this.m_name);
+            clone.m_enabled = (bool)Utils.Clone(this.m_enabled);
             clone.m_publisherId = (Variant)Utils.Clone(this.m_publisherId);
             clone.m_transportProfileUri = (string)Utils.Clone(this.m_transportProfileUri);
             clone.m_address = (ExtensionObject)Utils.Clone(this.m_address);
@@ -7963,6 +7983,7 @@ namespace Opc.Ua
 
         #region Private Fields
         private string m_name;
+        private bool m_enabled;
         private Variant m_publisherId;
         private string m_transportProfileUri;
         private ExtensionObject m_address;
@@ -8714,7 +8735,7 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
-    public partial class ReaderGroupDataType : IEncodeable
+    public partial class ReaderGroupDataType : PubSubGroupDataType
     {
         #region Constructors
         /// <summary>
@@ -8791,26 +8812,28 @@ namespace Opc.Ua
 
         #region IEncodeable Members
         /// <summary cref="IEncodeable.TypeId" />
-        public virtual ExpandedNodeId TypeId
+        public override ExpandedNodeId TypeId
         {
             get { return DataTypeIds.ReaderGroupDataType; }
         }
 
         /// <summary cref="IEncodeable.BinaryEncodingId" />
-        public virtual ExpandedNodeId BinaryEncodingId
+        public override ExpandedNodeId BinaryEncodingId
         {
             get { return ObjectIds.ReaderGroupDataType_Encoding_DefaultBinary; }
         }
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId
+        public override ExpandedNodeId XmlEncodingId
         {
             get { return ObjectIds.ReaderGroupDataType_Encoding_DefaultXml; }
         }
 
         /// <summary cref="IEncodeable.Encode(IEncoder)" />
-        public virtual void Encode(IEncoder encoder)
+        public override void Encode(IEncoder encoder)
         {
+            base.Encode(encoder);
+
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             encoder.WriteExtensionObject("TransportSettings", TransportSettings);
@@ -8821,8 +8844,10 @@ namespace Opc.Ua
         }
 
         /// <summary cref="IEncodeable.Decode(IDecoder)" />
-        public virtual void Decode(IDecoder decoder)
+        public override void Decode(IDecoder decoder)
         {
+            base.Decode(decoder);
+
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             TransportSettings = decoder.ReadExtensionObject("TransportSettings");
@@ -8833,7 +8858,7 @@ namespace Opc.Ua
         }
 
         /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
-        public virtual bool IsEqual(IEncodeable encodeable)
+        public override bool IsEqual(IEncodeable encodeable)
         {
             if (Object.ReferenceEquals(this, encodeable))
             {
@@ -8847,16 +8872,17 @@ namespace Opc.Ua
                 return false;
             }
 
+            if (!base.IsEqual(encodeable)) return false;
             if (!Utils.IsEqual(m_transportSettings, value.m_transportSettings)) return false;
             if (!Utils.IsEqual(m_messageSettings, value.m_messageSettings)) return false;
             if (!Utils.IsEqual(m_dataSetWriters, value.m_dataSetWriters)) return false;
 
             return true;
-        }
+        }    
 
         #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
-        public virtual object Clone()
+        public override object Clone()
         {
             return (ReaderGroupDataType)this.MemberwiseClone();
         }

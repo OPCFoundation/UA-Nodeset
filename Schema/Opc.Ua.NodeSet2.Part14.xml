@@ -318,7 +318,7 @@
     </References>
     <Definition Name="DataSetWriterDataType">
       <Field Name="Name" DataType="i=12" />
-      <Field Name="State" DataType="i=14647" />
+      <Field Name="Enabled" DataType="i=1" />
       <Field Name="DataSetWriterId" DataType="i=5" />
       <Field Name="DataSetFieldContentMask" DataType="i=15583" />
       <Field Name="KeyFrameCount" DataType="i=7" />
@@ -356,7 +356,7 @@
   <UADataType NodeId="i=15480" BrowseName="WriterGroupDataType">
     <DisplayName>WriterGroupDataType</DisplayName>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=15609</Reference>
     </References>
     <Definition Name="WriterGroupDataType">
       <Field Name="WriterGroupId" DataType="i=5" />
@@ -388,6 +388,7 @@
     </References>
     <Definition Name="PubSubConnectionDataType">
       <Field Name="Name" DataType="i=12" />
+      <Field Name="Enabled" DataType="i=1" />
       <Field Name="PublisherId" />
       <Field Name="TransportProfileUri" DataType="i=12" />
       <Field Name="Address" DataType="i=22" />
@@ -423,7 +424,7 @@
   <UADataType NodeId="i=15520" BrowseName="ReaderGroupDataType">
     <DisplayName>ReaderGroupDataType</DisplayName>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=15609</Reference>
     </References>
     <Definition Name="ReaderGroupDataType">
       <Field Name="TransportSettings" DataType="i=22" />
