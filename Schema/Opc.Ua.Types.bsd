@@ -400,8 +400,7 @@
     <opc:Field Name="DataSetMetaData" TypeName="tns:DataSetMetaDataType" />
     <opc:Field Name="NoOfExtensionFields" TypeName="opc:Int32" />
     <opc:Field Name="ExtensionFields" TypeName="tns:KeyValuePair" LengthField="NoOfExtensionFields" />
-    <opc:Field Name="NoOfDataSetSource" TypeName="opc:Int32" />
-    <opc:Field Name="DataSetSource" TypeName="ua:ExtensionObject" LengthField="NoOfDataSetSource" />
+    <opc:Field Name="DataSetSource" TypeName="ua:ExtensionObject" />
   </opc:StructuredType>
 
   <opc:StructuredType Name="PublishedDataSetSourceDataType" BaseType="ua:ExtensionObject">
@@ -528,8 +527,8 @@
     <opc:Field Name="MaxNetworkMessageSize" TypeName="opc:UInt32" SourceType="tns:PubSubGroupDataType" />
     <opc:Field Name="TransportSettings" TypeName="ua:ExtensionObject" />
     <opc:Field Name="MessageSettings" TypeName="ua:ExtensionObject" />
-    <opc:Field Name="NoOfDataSetWriters" TypeName="opc:Int32" />
-    <opc:Field Name="DataSetWriters" TypeName="tns:DataSetReaderDataType" LengthField="NoOfDataSetWriters" />
+    <opc:Field Name="NoOfDataSetReaders" TypeName="opc:Int32" />
+    <opc:Field Name="DataSetReaders" TypeName="tns:DataSetReaderDataType" LengthField="NoOfDataSetReaders" />
   </opc:StructuredType>
 
   <opc:StructuredType Name="ReaderGroupTransportDataType" BaseType="ua:ExtensionObject">

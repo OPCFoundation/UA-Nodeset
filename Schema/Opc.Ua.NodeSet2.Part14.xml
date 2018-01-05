@@ -209,7 +209,7 @@
       <Field Name="DataSetFolder" DataType="i=20998" />
       <Field Name="DataSetMetaData" DataType="i=14523" />
       <Field Name="ExtensionFields" DataType="i=14533" ValueRank="1" />
-      <Field Name="DataSetSource" DataType="i=22" ValueRank="1" />
+      <Field Name="DataSetSource" DataType="i=22" />
     </Definition>
   </UADataType>
   <UADataType NodeId="i=15580" BrowseName="PublishedDataSetSourceDataType" IsAbstract="true">
@@ -429,7 +429,7 @@
     <Definition Name="ReaderGroupDataType">
       <Field Name="TransportSettings" DataType="i=22" />
       <Field Name="MessageSettings" DataType="i=22" />
-      <Field Name="DataSetWriters" DataType="i=15623" ValueRank="1" />
+      <Field Name="DataSetReaders" DataType="i=15623" ValueRank="1" />
     </Definition>
   </UADataType>
   <UADataType NodeId="i=15621" BrowseName="ReaderGroupTransportDataType" IsAbstract="true">

@@ -835,7 +835,7 @@
       <xs:element name="DataSetFolder" type="xs:unsignedInt" minOccurs="0" />
       <xs:element name="DataSetMetaData" type="tns:DataSetMetaDataType" minOccurs="0" nillable="true" />
       <xs:element name="ExtensionFields" type="tns:ListOfKeyValuePair" minOccurs="0" nillable="true" />
-      <xs:element name="DataSetSource" type="ua:ListOfExtensionObject" minOccurs="0" nillable="true" />
+      <xs:element name="DataSetSource" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="PublishedDataSetDataType" type="tns:PublishedDataSetDataType" />
@@ -1113,7 +1113,7 @@
         <xs:sequence>
           <xs:element name="TransportSettings" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
           <xs:element name="MessageSettings" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
-          <xs:element name="DataSetWriters" type="tns:ListOfDataSetReaderDataType" minOccurs="0" nillable="true" />
+          <xs:element name="DataSetReaders" type="tns:ListOfDataSetReaderDataType" minOccurs="0" nillable="true" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>

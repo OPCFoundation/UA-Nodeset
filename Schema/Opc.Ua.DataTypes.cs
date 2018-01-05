@@ -4438,7 +4438,7 @@ namespace Opc.Ua
             m_dataSetFolder = (uint)0;
             m_dataSetMetaData = new DataSetMetaDataType();
             m_extensionFields = new KeyValuePairCollection();
-            m_dataSetSource = new ExtensionObjectCollection();
+            m_dataSetSource = null;
         }
         #endregion
 
@@ -4511,22 +4511,10 @@ namespace Opc.Ua
         /// A description for the DataSetSource field.
         /// </summary>
         [DataMember(Name = "DataSetSource", IsRequired = false, Order = 5)]
-        public ExtensionObjectCollection DataSetSource
+        public ExtensionObject DataSetSource
         {
-            get
-            {
-                return m_dataSetSource;
-            }
-
-            set
-            {
-                m_dataSetSource = value;
-
-                if (value == null)
-                {
-                    m_dataSetSource = new ExtensionObjectCollection();
-                }
-            }
+            get { return m_dataSetSource;  }
+            set { m_dataSetSource = value; }
         }
         #endregion
 
@@ -4558,7 +4546,7 @@ namespace Opc.Ua
             encoder.WriteUInt32("DataSetFolder", DataSetFolder);
             encoder.WriteEncodeable("DataSetMetaData", DataSetMetaData, typeof(DataSetMetaDataType));
             encoder.WriteEncodeableArray("ExtensionFields", ExtensionFields.ToArray(), typeof(KeyValuePair));
-            encoder.WriteExtensionObjectArray("DataSetSource", DataSetSource);
+            encoder.WriteExtensionObject("DataSetSource", DataSetSource);
 
             encoder.PopNamespace();
         }
@@ -4572,7 +4560,7 @@ namespace Opc.Ua
             DataSetFolder = decoder.ReadUInt32("DataSetFolder");
             DataSetMetaData = (DataSetMetaDataType)decoder.ReadEncodeable("DataSetMetaData", typeof(DataSetMetaDataType));
             ExtensionFields = (KeyValuePairCollection)decoder.ReadEncodeableArray("ExtensionFields", typeof(KeyValuePair));
-            DataSetSource = decoder.ReadExtensionObjectArray("DataSetSource");
+            DataSetSource = decoder.ReadExtensionObject("DataSetSource");
 
             decoder.PopNamespace();
         }
@@ -4618,7 +4606,7 @@ namespace Opc.Ua
             clone.m_dataSetFolder = (uint)Utils.Clone(this.m_dataSetFolder);
             clone.m_dataSetMetaData = (DataSetMetaDataType)Utils.Clone(this.m_dataSetMetaData);
             clone.m_extensionFields = (KeyValuePairCollection)Utils.Clone(this.m_extensionFields);
-            clone.m_dataSetSource = (ExtensionObjectCollection)Utils.Clone(this.m_dataSetSource);
+            clone.m_dataSetSource = (ExtensionObject)Utils.Clone(this.m_dataSetSource);
 
             return clone;
         }
@@ -4629,7 +4617,7 @@ namespace Opc.Ua
         private uint m_dataSetFolder;
         private DataSetMetaDataType m_dataSetMetaData;
         private KeyValuePairCollection m_extensionFields;
-        private ExtensionObjectCollection m_dataSetSource;
+        private ExtensionObject m_dataSetSource;
         #endregion
     }
 
@@ -8762,7 +8750,7 @@ namespace Opc.Ua
         {
             m_transportSettings = null;
             m_messageSettings = null;
-            m_dataSetWriters = new DataSetReaderDataTypeCollection();
+            m_dataSetReaders = new DataSetReaderDataTypeCollection();
         }
         #endregion
 
@@ -8788,23 +8776,23 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DataSetWriters field.
+        /// A description for the DataSetReaders field.
         /// </summary>
-        [DataMember(Name = "DataSetWriters", IsRequired = false, Order = 3)]
-        public DataSetReaderDataTypeCollection DataSetWriters
+        [DataMember(Name = "DataSetReaders", IsRequired = false, Order = 3)]
+        public DataSetReaderDataTypeCollection DataSetReaders
         {
             get
             {
-                return m_dataSetWriters;
+                return m_dataSetReaders;
             }
 
             set
             {
-                m_dataSetWriters = value;
+                m_dataSetReaders = value;
 
                 if (value == null)
                 {
-                    m_dataSetWriters = new DataSetReaderDataTypeCollection();
+                    m_dataSetReaders = new DataSetReaderDataTypeCollection();
                 }
             }
         }
@@ -8838,7 +8826,7 @@ namespace Opc.Ua
 
             encoder.WriteExtensionObject("TransportSettings", TransportSettings);
             encoder.WriteExtensionObject("MessageSettings", MessageSettings);
-            encoder.WriteEncodeableArray("DataSetWriters", DataSetWriters.ToArray(), typeof(DataSetReaderDataType));
+            encoder.WriteEncodeableArray("DataSetReaders", DataSetReaders.ToArray(), typeof(DataSetReaderDataType));
 
             encoder.PopNamespace();
         }
@@ -8852,7 +8840,7 @@ namespace Opc.Ua
 
             TransportSettings = decoder.ReadExtensionObject("TransportSettings");
             MessageSettings = decoder.ReadExtensionObject("MessageSettings");
-            DataSetWriters = (DataSetReaderDataTypeCollection)decoder.ReadEncodeableArray("DataSetWriters", typeof(DataSetReaderDataType));
+            DataSetReaders = (DataSetReaderDataTypeCollection)decoder.ReadEncodeableArray("DataSetReaders", typeof(DataSetReaderDataType));
 
             decoder.PopNamespace();
         }
@@ -8875,7 +8863,7 @@ namespace Opc.Ua
             if (!base.IsEqual(encodeable)) return false;
             if (!Utils.IsEqual(m_transportSettings, value.m_transportSettings)) return false;
             if (!Utils.IsEqual(m_messageSettings, value.m_messageSettings)) return false;
-            if (!Utils.IsEqual(m_dataSetWriters, value.m_dataSetWriters)) return false;
+            if (!Utils.IsEqual(m_dataSetReaders, value.m_dataSetReaders)) return false;
 
             return true;
         }    
@@ -8895,7 +8883,7 @@ namespace Opc.Ua
 
             clone.m_transportSettings = (ExtensionObject)Utils.Clone(this.m_transportSettings);
             clone.m_messageSettings = (ExtensionObject)Utils.Clone(this.m_messageSettings);
-            clone.m_dataSetWriters = (DataSetReaderDataTypeCollection)Utils.Clone(this.m_dataSetWriters);
+            clone.m_dataSetReaders = (DataSetReaderDataTypeCollection)Utils.Clone(this.m_dataSetReaders);
 
             return clone;
         }
@@ -8904,7 +8892,7 @@ namespace Opc.Ua
         #region Private Fields
         private ExtensionObject m_transportSettings;
         private ExtensionObject m_messageSettings;
-        private DataSetReaderDataTypeCollection m_dataSetWriters;
+        private DataSetReaderDataTypeCollection m_dataSetReaders;
         #endregion
     }
 
