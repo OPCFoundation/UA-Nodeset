@@ -2355,6 +2355,246 @@ namespace Opc.Ua
         public const uint RoleType_RemoveEndpoint = 16182;
 
         /// <summary>
+        /// The identifier for the WellKnownRole_Anonymous_AddIdentity Method.
+        /// </summary>
+        public const uint WellKnownRole_Anonymous_AddIdentity = 15648;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Anonymous_RemoveIdentity Method.
+        /// </summary>
+        public const uint WellKnownRole_Anonymous_RemoveIdentity = 15650;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Anonymous_AddApplication Method.
+        /// </summary>
+        public const uint WellKnownRole_Anonymous_AddApplication = 16195;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Anonymous_RemoveApplication Method.
+        /// </summary>
+        public const uint WellKnownRole_Anonymous_RemoveApplication = 16197;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Anonymous_AddEndpoint Method.
+        /// </summary>
+        public const uint WellKnownRole_Anonymous_AddEndpoint = 16199;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Anonymous_RemoveEndpoint Method.
+        /// </summary>
+        public const uint WellKnownRole_Anonymous_RemoveEndpoint = 16201;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_AuthenticatedUser_AddIdentity Method.
+        /// </summary>
+        public const uint WellKnownRole_AuthenticatedUser_AddIdentity = 15660;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_AuthenticatedUser_RemoveIdentity Method.
+        /// </summary>
+        public const uint WellKnownRole_AuthenticatedUser_RemoveIdentity = 15662;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_AuthenticatedUser_AddApplication Method.
+        /// </summary>
+        public const uint WellKnownRole_AuthenticatedUser_AddApplication = 16206;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_AuthenticatedUser_RemoveApplication Method.
+        /// </summary>
+        public const uint WellKnownRole_AuthenticatedUser_RemoveApplication = 16208;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_AuthenticatedUser_AddEndpoint Method.
+        /// </summary>
+        public const uint WellKnownRole_AuthenticatedUser_AddEndpoint = 16210;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_AuthenticatedUser_RemoveEndpoint Method.
+        /// </summary>
+        public const uint WellKnownRole_AuthenticatedUser_RemoveEndpoint = 16212;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Observer_AddIdentity Method.
+        /// </summary>
+        public const uint WellKnownRole_Observer_AddIdentity = 15672;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Observer_RemoveIdentity Method.
+        /// </summary>
+        public const uint WellKnownRole_Observer_RemoveIdentity = 15674;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Observer_AddApplication Method.
+        /// </summary>
+        public const uint WellKnownRole_Observer_AddApplication = 16217;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Observer_RemoveApplication Method.
+        /// </summary>
+        public const uint WellKnownRole_Observer_RemoveApplication = 16219;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Observer_AddEndpoint Method.
+        /// </summary>
+        public const uint WellKnownRole_Observer_AddEndpoint = 16221;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Observer_RemoveEndpoint Method.
+        /// </summary>
+        public const uint WellKnownRole_Observer_RemoveEndpoint = 16223;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Operator_AddIdentity Method.
+        /// </summary>
+        public const uint WellKnownRole_Operator_AddIdentity = 15684;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Operator_RemoveIdentity Method.
+        /// </summary>
+        public const uint WellKnownRole_Operator_RemoveIdentity = 15686;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Operator_AddApplication Method.
+        /// </summary>
+        public const uint WellKnownRole_Operator_AddApplication = 16228;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Operator_RemoveApplication Method.
+        /// </summary>
+        public const uint WellKnownRole_Operator_RemoveApplication = 16230;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Operator_AddEndpoint Method.
+        /// </summary>
+        public const uint WellKnownRole_Operator_AddEndpoint = 16232;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Operator_RemoveEndpoint Method.
+        /// </summary>
+        public const uint WellKnownRole_Operator_RemoveEndpoint = 16234;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Engineer_AddIdentity Method.
+        /// </summary>
+        public const uint WellKnownRole_Engineer_AddIdentity = 16041;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Engineer_RemoveIdentity Method.
+        /// </summary>
+        public const uint WellKnownRole_Engineer_RemoveIdentity = 16043;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Engineer_AddApplication Method.
+        /// </summary>
+        public const uint WellKnownRole_Engineer_AddApplication = 16239;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Engineer_RemoveApplication Method.
+        /// </summary>
+        public const uint WellKnownRole_Engineer_RemoveApplication = 16241;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Engineer_AddEndpoint Method.
+        /// </summary>
+        public const uint WellKnownRole_Engineer_AddEndpoint = 16243;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Engineer_RemoveEndpoint Method.
+        /// </summary>
+        public const uint WellKnownRole_Engineer_RemoveEndpoint = 16245;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Supervisor_AddIdentity Method.
+        /// </summary>
+        public const uint WellKnownRole_Supervisor_AddIdentity = 15696;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Supervisor_RemoveIdentity Method.
+        /// </summary>
+        public const uint WellKnownRole_Supervisor_RemoveIdentity = 15698;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Supervisor_AddApplication Method.
+        /// </summary>
+        public const uint WellKnownRole_Supervisor_AddApplication = 16250;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Supervisor_RemoveApplication Method.
+        /// </summary>
+        public const uint WellKnownRole_Supervisor_RemoveApplication = 16252;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Supervisor_AddEndpoint Method.
+        /// </summary>
+        public const uint WellKnownRole_Supervisor_AddEndpoint = 16254;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Supervisor_RemoveEndpoint Method.
+        /// </summary>
+        public const uint WellKnownRole_Supervisor_RemoveEndpoint = 16256;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_ConfigureAdmin_AddIdentity Method.
+        /// </summary>
+        public const uint WellKnownRole_ConfigureAdmin_AddIdentity = 15720;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_ConfigureAdmin_RemoveIdentity Method.
+        /// </summary>
+        public const uint WellKnownRole_ConfigureAdmin_RemoveIdentity = 15722;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_ConfigureAdmin_AddApplication Method.
+        /// </summary>
+        public const uint WellKnownRole_ConfigureAdmin_AddApplication = 16272;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_ConfigureAdmin_RemoveApplication Method.
+        /// </summary>
+        public const uint WellKnownRole_ConfigureAdmin_RemoveApplication = 16274;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_ConfigureAdmin_AddEndpoint Method.
+        /// </summary>
+        public const uint WellKnownRole_ConfigureAdmin_AddEndpoint = 16276;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_ConfigureAdmin_RemoveEndpoint Method.
+        /// </summary>
+        public const uint WellKnownRole_ConfigureAdmin_RemoveEndpoint = 16278;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_AddIdentity Method.
+        /// </summary>
+        public const uint WellKnownRole_SecurityAdmin_AddIdentity = 15708;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_RemoveIdentity Method.
+        /// </summary>
+        public const uint WellKnownRole_SecurityAdmin_RemoveIdentity = 15710;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_AddApplication Method.
+        /// </summary>
+        public const uint WellKnownRole_SecurityAdmin_AddApplication = 16261;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_RemoveApplication Method.
+        /// </summary>
+        public const uint WellKnownRole_SecurityAdmin_RemoveApplication = 16263;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_AddEndpoint Method.
+        /// </summary>
+        public const uint WellKnownRole_SecurityAdmin_AddEndpoint = 16265;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_RemoveEndpoint Method.
+        /// </summary>
+        public const uint WellKnownRole_SecurityAdmin_RemoveEndpoint = 16267;
+
+        /// <summary>
         /// The identifier for the ConditionType_Disable Method.
         /// </summary>
         public const uint ConditionType_Disable = 9028;
@@ -14585,6 +14825,26 @@ namespace Opc.Ua
         public const uint WellKnownRole_Anonymous_Identities = 16192;
 
         /// <summary>
+        /// The identifier for the WellKnownRole_Anonymous_Applications Variable.
+        /// </summary>
+        public const uint WellKnownRole_Anonymous_Applications = 16193;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Anonymous_ApplicationsExclude Variable.
+        /// </summary>
+        public const uint WellKnownRole_Anonymous_ApplicationsExclude = 15412;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Anonymous_Endpoints Variable.
+        /// </summary>
+        public const uint WellKnownRole_Anonymous_Endpoints = 16194;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Anonymous_EndpointsExclude Variable.
+        /// </summary>
+        public const uint WellKnownRole_Anonymous_EndpointsExclude = 15413;
+
+        /// <summary>
         /// The identifier for the WellKnownRole_Anonymous_AddIdentity_InputArguments Variable.
         /// </summary>
         public const uint WellKnownRole_Anonymous_AddIdentity_InputArguments = 15649;
@@ -14618,6 +14878,26 @@ namespace Opc.Ua
         /// The identifier for the WellKnownRole_AuthenticatedUser_Identities Variable.
         /// </summary>
         public const uint WellKnownRole_AuthenticatedUser_Identities = 16203;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_AuthenticatedUser_Applications Variable.
+        /// </summary>
+        public const uint WellKnownRole_AuthenticatedUser_Applications = 16204;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_AuthenticatedUser_ApplicationsExclude Variable.
+        /// </summary>
+        public const uint WellKnownRole_AuthenticatedUser_ApplicationsExclude = 15414;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_AuthenticatedUser_Endpoints Variable.
+        /// </summary>
+        public const uint WellKnownRole_AuthenticatedUser_Endpoints = 16205;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_AuthenticatedUser_EndpointsExclude Variable.
+        /// </summary>
+        public const uint WellKnownRole_AuthenticatedUser_EndpointsExclude = 15415;
 
         /// <summary>
         /// The identifier for the WellKnownRole_AuthenticatedUser_AddIdentity_InputArguments Variable.
@@ -14655,6 +14935,26 @@ namespace Opc.Ua
         public const uint WellKnownRole_Observer_Identities = 16214;
 
         /// <summary>
+        /// The identifier for the WellKnownRole_Observer_Applications Variable.
+        /// </summary>
+        public const uint WellKnownRole_Observer_Applications = 16215;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Observer_ApplicationsExclude Variable.
+        /// </summary>
+        public const uint WellKnownRole_Observer_ApplicationsExclude = 15416;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Observer_Endpoints Variable.
+        /// </summary>
+        public const uint WellKnownRole_Observer_Endpoints = 16216;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Observer_EndpointsExclude Variable.
+        /// </summary>
+        public const uint WellKnownRole_Observer_EndpointsExclude = 15417;
+
+        /// <summary>
         /// The identifier for the WellKnownRole_Observer_AddIdentity_InputArguments Variable.
         /// </summary>
         public const uint WellKnownRole_Observer_AddIdentity_InputArguments = 15673;
@@ -14688,6 +14988,26 @@ namespace Opc.Ua
         /// The identifier for the WellKnownRole_Operator_Identities Variable.
         /// </summary>
         public const uint WellKnownRole_Operator_Identities = 16225;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Operator_Applications Variable.
+        /// </summary>
+        public const uint WellKnownRole_Operator_Applications = 16226;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Operator_ApplicationsExclude Variable.
+        /// </summary>
+        public const uint WellKnownRole_Operator_ApplicationsExclude = 15418;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Operator_Endpoints Variable.
+        /// </summary>
+        public const uint WellKnownRole_Operator_Endpoints = 16227;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Operator_EndpointsExclude Variable.
+        /// </summary>
+        public const uint WellKnownRole_Operator_EndpointsExclude = 15423;
 
         /// <summary>
         /// The identifier for the WellKnownRole_Operator_AddIdentity_InputArguments Variable.
@@ -14725,6 +15045,26 @@ namespace Opc.Ua
         public const uint WellKnownRole_Engineer_Identities = 16236;
 
         /// <summary>
+        /// The identifier for the WellKnownRole_Engineer_Applications Variable.
+        /// </summary>
+        public const uint WellKnownRole_Engineer_Applications = 16237;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Engineer_ApplicationsExclude Variable.
+        /// </summary>
+        public const uint WellKnownRole_Engineer_ApplicationsExclude = 15424;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Engineer_Endpoints Variable.
+        /// </summary>
+        public const uint WellKnownRole_Engineer_Endpoints = 16238;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Engineer_EndpointsExclude Variable.
+        /// </summary>
+        public const uint WellKnownRole_Engineer_EndpointsExclude = 15425;
+
+        /// <summary>
         /// The identifier for the WellKnownRole_Engineer_AddIdentity_InputArguments Variable.
         /// </summary>
         public const uint WellKnownRole_Engineer_AddIdentity_InputArguments = 16042;
@@ -14758,6 +15098,26 @@ namespace Opc.Ua
         /// The identifier for the WellKnownRole_Supervisor_Identities Variable.
         /// </summary>
         public const uint WellKnownRole_Supervisor_Identities = 16247;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Supervisor_Applications Variable.
+        /// </summary>
+        public const uint WellKnownRole_Supervisor_Applications = 16248;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Supervisor_ApplicationsExclude Variable.
+        /// </summary>
+        public const uint WellKnownRole_Supervisor_ApplicationsExclude = 15426;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Supervisor_Endpoints Variable.
+        /// </summary>
+        public const uint WellKnownRole_Supervisor_Endpoints = 16249;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Supervisor_EndpointsExclude Variable.
+        /// </summary>
+        public const uint WellKnownRole_Supervisor_EndpointsExclude = 15427;
 
         /// <summary>
         /// The identifier for the WellKnownRole_Supervisor_AddIdentity_InputArguments Variable.
@@ -14795,6 +15155,26 @@ namespace Opc.Ua
         public const uint WellKnownRole_ConfigureAdmin_Identities = 16269;
 
         /// <summary>
+        /// The identifier for the WellKnownRole_ConfigureAdmin_Applications Variable.
+        /// </summary>
+        public const uint WellKnownRole_ConfigureAdmin_Applications = 16270;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_ConfigureAdmin_ApplicationsExclude Variable.
+        /// </summary>
+        public const uint WellKnownRole_ConfigureAdmin_ApplicationsExclude = 15428;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_ConfigureAdmin_Endpoints Variable.
+        /// </summary>
+        public const uint WellKnownRole_ConfigureAdmin_Endpoints = 16271;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_ConfigureAdmin_EndpointsExclude Variable.
+        /// </summary>
+        public const uint WellKnownRole_ConfigureAdmin_EndpointsExclude = 15429;
+
+        /// <summary>
         /// The identifier for the WellKnownRole_ConfigureAdmin_AddIdentity_InputArguments Variable.
         /// </summary>
         public const uint WellKnownRole_ConfigureAdmin_AddIdentity_InputArguments = 15721;
@@ -14828,6 +15208,26 @@ namespace Opc.Ua
         /// The identifier for the WellKnownRole_SecurityAdmin_Identities Variable.
         /// </summary>
         public const uint WellKnownRole_SecurityAdmin_Identities = 16258;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_Applications Variable.
+        /// </summary>
+        public const uint WellKnownRole_SecurityAdmin_Applications = 16259;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_ApplicationsExclude Variable.
+        /// </summary>
+        public const uint WellKnownRole_SecurityAdmin_ApplicationsExclude = 15430;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_Endpoints Variable.
+        /// </summary>
+        public const uint WellKnownRole_SecurityAdmin_Endpoints = 16260;
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_EndpointsExclude Variable.
+        /// </summary>
+        public const uint WellKnownRole_SecurityAdmin_EndpointsExclude = 15527;
 
         /// <summary>
         /// The identifier for the WellKnownRole_SecurityAdmin_AddIdentity_InputArguments Variable.
@@ -31655,6 +32055,246 @@ namespace Opc.Ua
         public static readonly NodeId RoleType_RemoveEndpoint = new NodeId(Opc.Ua.Methods.RoleType_RemoveEndpoint);
 
         /// <summary>
+        /// The identifier for the WellKnownRole_Anonymous_AddIdentity Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Anonymous_AddIdentity = new NodeId(Opc.Ua.Methods.WellKnownRole_Anonymous_AddIdentity);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Anonymous_RemoveIdentity Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Anonymous_RemoveIdentity = new NodeId(Opc.Ua.Methods.WellKnownRole_Anonymous_RemoveIdentity);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Anonymous_AddApplication Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Anonymous_AddApplication = new NodeId(Opc.Ua.Methods.WellKnownRole_Anonymous_AddApplication);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Anonymous_RemoveApplication Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Anonymous_RemoveApplication = new NodeId(Opc.Ua.Methods.WellKnownRole_Anonymous_RemoveApplication);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Anonymous_AddEndpoint Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Anonymous_AddEndpoint = new NodeId(Opc.Ua.Methods.WellKnownRole_Anonymous_AddEndpoint);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Anonymous_RemoveEndpoint Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Anonymous_RemoveEndpoint = new NodeId(Opc.Ua.Methods.WellKnownRole_Anonymous_RemoveEndpoint);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_AuthenticatedUser_AddIdentity Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_AuthenticatedUser_AddIdentity = new NodeId(Opc.Ua.Methods.WellKnownRole_AuthenticatedUser_AddIdentity);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_AuthenticatedUser_RemoveIdentity Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_AuthenticatedUser_RemoveIdentity = new NodeId(Opc.Ua.Methods.WellKnownRole_AuthenticatedUser_RemoveIdentity);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_AuthenticatedUser_AddApplication Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_AuthenticatedUser_AddApplication = new NodeId(Opc.Ua.Methods.WellKnownRole_AuthenticatedUser_AddApplication);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_AuthenticatedUser_RemoveApplication Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_AuthenticatedUser_RemoveApplication = new NodeId(Opc.Ua.Methods.WellKnownRole_AuthenticatedUser_RemoveApplication);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_AuthenticatedUser_AddEndpoint Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_AuthenticatedUser_AddEndpoint = new NodeId(Opc.Ua.Methods.WellKnownRole_AuthenticatedUser_AddEndpoint);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_AuthenticatedUser_RemoveEndpoint Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_AuthenticatedUser_RemoveEndpoint = new NodeId(Opc.Ua.Methods.WellKnownRole_AuthenticatedUser_RemoveEndpoint);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Observer_AddIdentity Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Observer_AddIdentity = new NodeId(Opc.Ua.Methods.WellKnownRole_Observer_AddIdentity);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Observer_RemoveIdentity Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Observer_RemoveIdentity = new NodeId(Opc.Ua.Methods.WellKnownRole_Observer_RemoveIdentity);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Observer_AddApplication Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Observer_AddApplication = new NodeId(Opc.Ua.Methods.WellKnownRole_Observer_AddApplication);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Observer_RemoveApplication Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Observer_RemoveApplication = new NodeId(Opc.Ua.Methods.WellKnownRole_Observer_RemoveApplication);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Observer_AddEndpoint Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Observer_AddEndpoint = new NodeId(Opc.Ua.Methods.WellKnownRole_Observer_AddEndpoint);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Observer_RemoveEndpoint Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Observer_RemoveEndpoint = new NodeId(Opc.Ua.Methods.WellKnownRole_Observer_RemoveEndpoint);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Operator_AddIdentity Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Operator_AddIdentity = new NodeId(Opc.Ua.Methods.WellKnownRole_Operator_AddIdentity);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Operator_RemoveIdentity Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Operator_RemoveIdentity = new NodeId(Opc.Ua.Methods.WellKnownRole_Operator_RemoveIdentity);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Operator_AddApplication Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Operator_AddApplication = new NodeId(Opc.Ua.Methods.WellKnownRole_Operator_AddApplication);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Operator_RemoveApplication Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Operator_RemoveApplication = new NodeId(Opc.Ua.Methods.WellKnownRole_Operator_RemoveApplication);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Operator_AddEndpoint Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Operator_AddEndpoint = new NodeId(Opc.Ua.Methods.WellKnownRole_Operator_AddEndpoint);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Operator_RemoveEndpoint Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Operator_RemoveEndpoint = new NodeId(Opc.Ua.Methods.WellKnownRole_Operator_RemoveEndpoint);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Engineer_AddIdentity Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Engineer_AddIdentity = new NodeId(Opc.Ua.Methods.WellKnownRole_Engineer_AddIdentity);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Engineer_RemoveIdentity Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Engineer_RemoveIdentity = new NodeId(Opc.Ua.Methods.WellKnownRole_Engineer_RemoveIdentity);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Engineer_AddApplication Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Engineer_AddApplication = new NodeId(Opc.Ua.Methods.WellKnownRole_Engineer_AddApplication);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Engineer_RemoveApplication Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Engineer_RemoveApplication = new NodeId(Opc.Ua.Methods.WellKnownRole_Engineer_RemoveApplication);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Engineer_AddEndpoint Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Engineer_AddEndpoint = new NodeId(Opc.Ua.Methods.WellKnownRole_Engineer_AddEndpoint);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Engineer_RemoveEndpoint Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Engineer_RemoveEndpoint = new NodeId(Opc.Ua.Methods.WellKnownRole_Engineer_RemoveEndpoint);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Supervisor_AddIdentity Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Supervisor_AddIdentity = new NodeId(Opc.Ua.Methods.WellKnownRole_Supervisor_AddIdentity);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Supervisor_RemoveIdentity Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Supervisor_RemoveIdentity = new NodeId(Opc.Ua.Methods.WellKnownRole_Supervisor_RemoveIdentity);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Supervisor_AddApplication Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Supervisor_AddApplication = new NodeId(Opc.Ua.Methods.WellKnownRole_Supervisor_AddApplication);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Supervisor_RemoveApplication Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Supervisor_RemoveApplication = new NodeId(Opc.Ua.Methods.WellKnownRole_Supervisor_RemoveApplication);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Supervisor_AddEndpoint Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Supervisor_AddEndpoint = new NodeId(Opc.Ua.Methods.WellKnownRole_Supervisor_AddEndpoint);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Supervisor_RemoveEndpoint Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Supervisor_RemoveEndpoint = new NodeId(Opc.Ua.Methods.WellKnownRole_Supervisor_RemoveEndpoint);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_ConfigureAdmin_AddIdentity Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_ConfigureAdmin_AddIdentity = new NodeId(Opc.Ua.Methods.WellKnownRole_ConfigureAdmin_AddIdentity);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_ConfigureAdmin_RemoveIdentity Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_ConfigureAdmin_RemoveIdentity = new NodeId(Opc.Ua.Methods.WellKnownRole_ConfigureAdmin_RemoveIdentity);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_ConfigureAdmin_AddApplication Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_ConfigureAdmin_AddApplication = new NodeId(Opc.Ua.Methods.WellKnownRole_ConfigureAdmin_AddApplication);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_ConfigureAdmin_RemoveApplication Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_ConfigureAdmin_RemoveApplication = new NodeId(Opc.Ua.Methods.WellKnownRole_ConfigureAdmin_RemoveApplication);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_ConfigureAdmin_AddEndpoint Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_ConfigureAdmin_AddEndpoint = new NodeId(Opc.Ua.Methods.WellKnownRole_ConfigureAdmin_AddEndpoint);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_ConfigureAdmin_RemoveEndpoint Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_ConfigureAdmin_RemoveEndpoint = new NodeId(Opc.Ua.Methods.WellKnownRole_ConfigureAdmin_RemoveEndpoint);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_AddIdentity Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_SecurityAdmin_AddIdentity = new NodeId(Opc.Ua.Methods.WellKnownRole_SecurityAdmin_AddIdentity);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_RemoveIdentity Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_SecurityAdmin_RemoveIdentity = new NodeId(Opc.Ua.Methods.WellKnownRole_SecurityAdmin_RemoveIdentity);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_AddApplication Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_SecurityAdmin_AddApplication = new NodeId(Opc.Ua.Methods.WellKnownRole_SecurityAdmin_AddApplication);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_RemoveApplication Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_SecurityAdmin_RemoveApplication = new NodeId(Opc.Ua.Methods.WellKnownRole_SecurityAdmin_RemoveApplication);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_AddEndpoint Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_SecurityAdmin_AddEndpoint = new NodeId(Opc.Ua.Methods.WellKnownRole_SecurityAdmin_AddEndpoint);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_RemoveEndpoint Method.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_SecurityAdmin_RemoveEndpoint = new NodeId(Opc.Ua.Methods.WellKnownRole_SecurityAdmin_RemoveEndpoint);
+
+        /// <summary>
         /// The identifier for the ConditionType_Disable Method.
         /// </summary>
         public static readonly NodeId ConditionType_Disable = new NodeId(Opc.Ua.Methods.ConditionType_Disable);
@@ -43885,6 +44525,26 @@ namespace Opc.Ua
         public static readonly NodeId WellKnownRole_Anonymous_Identities = new NodeId(Opc.Ua.Variables.WellKnownRole_Anonymous_Identities);
 
         /// <summary>
+        /// The identifier for the WellKnownRole_Anonymous_Applications Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Anonymous_Applications = new NodeId(Opc.Ua.Variables.WellKnownRole_Anonymous_Applications);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Anonymous_ApplicationsExclude Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Anonymous_ApplicationsExclude = new NodeId(Opc.Ua.Variables.WellKnownRole_Anonymous_ApplicationsExclude);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Anonymous_Endpoints Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Anonymous_Endpoints = new NodeId(Opc.Ua.Variables.WellKnownRole_Anonymous_Endpoints);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Anonymous_EndpointsExclude Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Anonymous_EndpointsExclude = new NodeId(Opc.Ua.Variables.WellKnownRole_Anonymous_EndpointsExclude);
+
+        /// <summary>
         /// The identifier for the WellKnownRole_Anonymous_AddIdentity_InputArguments Variable.
         /// </summary>
         public static readonly NodeId WellKnownRole_Anonymous_AddIdentity_InputArguments = new NodeId(Opc.Ua.Variables.WellKnownRole_Anonymous_AddIdentity_InputArguments);
@@ -43918,6 +44578,26 @@ namespace Opc.Ua
         /// The identifier for the WellKnownRole_AuthenticatedUser_Identities Variable.
         /// </summary>
         public static readonly NodeId WellKnownRole_AuthenticatedUser_Identities = new NodeId(Opc.Ua.Variables.WellKnownRole_AuthenticatedUser_Identities);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_AuthenticatedUser_Applications Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_AuthenticatedUser_Applications = new NodeId(Opc.Ua.Variables.WellKnownRole_AuthenticatedUser_Applications);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_AuthenticatedUser_ApplicationsExclude Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_AuthenticatedUser_ApplicationsExclude = new NodeId(Opc.Ua.Variables.WellKnownRole_AuthenticatedUser_ApplicationsExclude);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_AuthenticatedUser_Endpoints Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_AuthenticatedUser_Endpoints = new NodeId(Opc.Ua.Variables.WellKnownRole_AuthenticatedUser_Endpoints);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_AuthenticatedUser_EndpointsExclude Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_AuthenticatedUser_EndpointsExclude = new NodeId(Opc.Ua.Variables.WellKnownRole_AuthenticatedUser_EndpointsExclude);
 
         /// <summary>
         /// The identifier for the WellKnownRole_AuthenticatedUser_AddIdentity_InputArguments Variable.
@@ -43955,6 +44635,26 @@ namespace Opc.Ua
         public static readonly NodeId WellKnownRole_Observer_Identities = new NodeId(Opc.Ua.Variables.WellKnownRole_Observer_Identities);
 
         /// <summary>
+        /// The identifier for the WellKnownRole_Observer_Applications Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Observer_Applications = new NodeId(Opc.Ua.Variables.WellKnownRole_Observer_Applications);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Observer_ApplicationsExclude Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Observer_ApplicationsExclude = new NodeId(Opc.Ua.Variables.WellKnownRole_Observer_ApplicationsExclude);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Observer_Endpoints Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Observer_Endpoints = new NodeId(Opc.Ua.Variables.WellKnownRole_Observer_Endpoints);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Observer_EndpointsExclude Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Observer_EndpointsExclude = new NodeId(Opc.Ua.Variables.WellKnownRole_Observer_EndpointsExclude);
+
+        /// <summary>
         /// The identifier for the WellKnownRole_Observer_AddIdentity_InputArguments Variable.
         /// </summary>
         public static readonly NodeId WellKnownRole_Observer_AddIdentity_InputArguments = new NodeId(Opc.Ua.Variables.WellKnownRole_Observer_AddIdentity_InputArguments);
@@ -43988,6 +44688,26 @@ namespace Opc.Ua
         /// The identifier for the WellKnownRole_Operator_Identities Variable.
         /// </summary>
         public static readonly NodeId WellKnownRole_Operator_Identities = new NodeId(Opc.Ua.Variables.WellKnownRole_Operator_Identities);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Operator_Applications Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Operator_Applications = new NodeId(Opc.Ua.Variables.WellKnownRole_Operator_Applications);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Operator_ApplicationsExclude Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Operator_ApplicationsExclude = new NodeId(Opc.Ua.Variables.WellKnownRole_Operator_ApplicationsExclude);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Operator_Endpoints Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Operator_Endpoints = new NodeId(Opc.Ua.Variables.WellKnownRole_Operator_Endpoints);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Operator_EndpointsExclude Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Operator_EndpointsExclude = new NodeId(Opc.Ua.Variables.WellKnownRole_Operator_EndpointsExclude);
 
         /// <summary>
         /// The identifier for the WellKnownRole_Operator_AddIdentity_InputArguments Variable.
@@ -44025,6 +44745,26 @@ namespace Opc.Ua
         public static readonly NodeId WellKnownRole_Engineer_Identities = new NodeId(Opc.Ua.Variables.WellKnownRole_Engineer_Identities);
 
         /// <summary>
+        /// The identifier for the WellKnownRole_Engineer_Applications Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Engineer_Applications = new NodeId(Opc.Ua.Variables.WellKnownRole_Engineer_Applications);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Engineer_ApplicationsExclude Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Engineer_ApplicationsExclude = new NodeId(Opc.Ua.Variables.WellKnownRole_Engineer_ApplicationsExclude);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Engineer_Endpoints Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Engineer_Endpoints = new NodeId(Opc.Ua.Variables.WellKnownRole_Engineer_Endpoints);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Engineer_EndpointsExclude Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Engineer_EndpointsExclude = new NodeId(Opc.Ua.Variables.WellKnownRole_Engineer_EndpointsExclude);
+
+        /// <summary>
         /// The identifier for the WellKnownRole_Engineer_AddIdentity_InputArguments Variable.
         /// </summary>
         public static readonly NodeId WellKnownRole_Engineer_AddIdentity_InputArguments = new NodeId(Opc.Ua.Variables.WellKnownRole_Engineer_AddIdentity_InputArguments);
@@ -44058,6 +44798,26 @@ namespace Opc.Ua
         /// The identifier for the WellKnownRole_Supervisor_Identities Variable.
         /// </summary>
         public static readonly NodeId WellKnownRole_Supervisor_Identities = new NodeId(Opc.Ua.Variables.WellKnownRole_Supervisor_Identities);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Supervisor_Applications Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Supervisor_Applications = new NodeId(Opc.Ua.Variables.WellKnownRole_Supervisor_Applications);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Supervisor_ApplicationsExclude Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Supervisor_ApplicationsExclude = new NodeId(Opc.Ua.Variables.WellKnownRole_Supervisor_ApplicationsExclude);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Supervisor_Endpoints Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Supervisor_Endpoints = new NodeId(Opc.Ua.Variables.WellKnownRole_Supervisor_Endpoints);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_Supervisor_EndpointsExclude Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_Supervisor_EndpointsExclude = new NodeId(Opc.Ua.Variables.WellKnownRole_Supervisor_EndpointsExclude);
 
         /// <summary>
         /// The identifier for the WellKnownRole_Supervisor_AddIdentity_InputArguments Variable.
@@ -44095,6 +44855,26 @@ namespace Opc.Ua
         public static readonly NodeId WellKnownRole_ConfigureAdmin_Identities = new NodeId(Opc.Ua.Variables.WellKnownRole_ConfigureAdmin_Identities);
 
         /// <summary>
+        /// The identifier for the WellKnownRole_ConfigureAdmin_Applications Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_ConfigureAdmin_Applications = new NodeId(Opc.Ua.Variables.WellKnownRole_ConfigureAdmin_Applications);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_ConfigureAdmin_ApplicationsExclude Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_ConfigureAdmin_ApplicationsExclude = new NodeId(Opc.Ua.Variables.WellKnownRole_ConfigureAdmin_ApplicationsExclude);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_ConfigureAdmin_Endpoints Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_ConfigureAdmin_Endpoints = new NodeId(Opc.Ua.Variables.WellKnownRole_ConfigureAdmin_Endpoints);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_ConfigureAdmin_EndpointsExclude Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_ConfigureAdmin_EndpointsExclude = new NodeId(Opc.Ua.Variables.WellKnownRole_ConfigureAdmin_EndpointsExclude);
+
+        /// <summary>
         /// The identifier for the WellKnownRole_ConfigureAdmin_AddIdentity_InputArguments Variable.
         /// </summary>
         public static readonly NodeId WellKnownRole_ConfigureAdmin_AddIdentity_InputArguments = new NodeId(Opc.Ua.Variables.WellKnownRole_ConfigureAdmin_AddIdentity_InputArguments);
@@ -44128,6 +44908,26 @@ namespace Opc.Ua
         /// The identifier for the WellKnownRole_SecurityAdmin_Identities Variable.
         /// </summary>
         public static readonly NodeId WellKnownRole_SecurityAdmin_Identities = new NodeId(Opc.Ua.Variables.WellKnownRole_SecurityAdmin_Identities);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_Applications Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_SecurityAdmin_Applications = new NodeId(Opc.Ua.Variables.WellKnownRole_SecurityAdmin_Applications);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_ApplicationsExclude Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_SecurityAdmin_ApplicationsExclude = new NodeId(Opc.Ua.Variables.WellKnownRole_SecurityAdmin_ApplicationsExclude);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_Endpoints Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_SecurityAdmin_Endpoints = new NodeId(Opc.Ua.Variables.WellKnownRole_SecurityAdmin_Endpoints);
+
+        /// <summary>
+        /// The identifier for the WellKnownRole_SecurityAdmin_EndpointsExclude Variable.
+        /// </summary>
+        public static readonly NodeId WellKnownRole_SecurityAdmin_EndpointsExclude = new NodeId(Opc.Ua.Variables.WellKnownRole_SecurityAdmin_EndpointsExclude);
 
         /// <summary>
         /// The identifier for the WellKnownRole_SecurityAdmin_AddIdentity_InputArguments Variable.

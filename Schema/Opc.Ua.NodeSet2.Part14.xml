@@ -2199,7 +2199,7 @@
     <DisplayName>RemoveConnection</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=14433</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=14416</Reference>
     </References>
   </UAMethod>

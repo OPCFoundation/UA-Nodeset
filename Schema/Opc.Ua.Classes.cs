@@ -62089,11 +62089,6 @@ namespace Opc.Ua
                 AddConnection.Initialize(context, AddConnection_InitializationString);
             }
 
-            if (RemoveConnection != null)
-            {
-                RemoveConnection.Initialize(context, RemoveConnection_InitializationString);
-            }
-
             if (Diagnostics != null)
             {
                 Diagnostics.Initialize(context, Diagnostics_InitializationString);
@@ -62116,11 +62111,6 @@ namespace Opc.Ua
            "ZmlndXJhdGlvbgEAAT3/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1" +
            "dEFyZ3VtZW50cwEA2EAALgBE2EAAAJYBAAAAAQAqAQEbAAAADAAAAENvbm5lY3Rpb25JZAAR/////wAA" +
            "AAAAAQAoAQEAAAABAf////8AAAAA";
-
-        private const string RemoveConnection_InitializationString =
-           "//////////8EYYIKBAAAAAAAEAAAAFJlbW92ZUNvbm5lY3Rpb24BAGA4AC8BAGA4YDgAAAEB/////wEA" +
-           "AAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQBhOAAuAERhOAAAlgEAAAABACoBARsAAAAMAAAA" +
-           "Q29ubmVjdGlvbklkABH/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
 
         private const string Diagnostics_InitializationString =
            "//////////8EYIAKAQAAAAAACwAAAERpYWdub3N0aWNzAQAbSQAvAQAUTRtJAAD/////BwAAABVgiQoC" +
