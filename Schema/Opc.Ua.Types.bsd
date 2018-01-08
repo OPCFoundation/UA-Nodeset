@@ -395,8 +395,9 @@
   </opc:StructuredType>
 
   <opc:StructuredType Name="PublishedDataSetDataType" BaseType="ua:ExtensionObject">
-    <opc:Field Name="Name" TypeName="opc:UInt32" />
-    <opc:Field Name="DataSetFolder" TypeName="opc:UInt32" />
+    <opc:Field Name="Name" TypeName="opc:String" />
+    <opc:Field Name="NoOfDataSetFolder" TypeName="opc:Int32" />
+    <opc:Field Name="DataSetFolder" TypeName="opc:String" LengthField="NoOfDataSetFolder" />
     <opc:Field Name="DataSetMetaData" TypeName="tns:DataSetMetaDataType" />
     <opc:Field Name="NoOfExtensionFields" TypeName="opc:Int32" />
     <opc:Field Name="ExtensionFields" TypeName="tns:KeyValuePair" LengthField="NoOfExtensionFields" />

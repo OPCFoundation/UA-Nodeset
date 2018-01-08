@@ -3315,26 +3315,6 @@ namespace Opc.Ua
         public const uint SecurityGroupFolderType_RemoveSecurityGroup = 15464;
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityKeys Method.
-        /// </summary>
-        public const uint PublishSubscribe_GetSecurityKeys = 15215;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityGroup Method.
-        /// </summary>
-        public const uint PublishSubscribe_GetSecurityGroup = 15440;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup Method.
-        /// </summary>
-        public const uint PublishSubscribe_SecurityGroups_AddSecurityGroup = 15444;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups_RemoveSecurityGroup Method.
-        /// </summary>
-        public const uint PublishSubscribe_SecurityGroups_RemoveSecurityGroup = 15447;
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_SecurityGroups_AddSecurityGroup Method.
         /// </summary>
         public const uint PublishSubscribeType_SecurityGroups_AddSecurityGroup = 15435;
@@ -3368,6 +3348,46 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_Diagnostics_Reset Method.
         /// </summary>
         public const uint PublishSubscribeType_Diagnostics_Reset = 18727;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_GetSecurityKeys Method.
+        /// </summary>
+        public const uint PublishSubscribe_GetSecurityKeys = 15215;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_GetSecurityGroup Method.
+        /// </summary>
+        public const uint PublishSubscribe_GetSecurityGroup = 15440;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup Method.
+        /// </summary>
+        public const uint PublishSubscribe_SecurityGroups_AddSecurityGroup = 15444;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SecurityGroups_RemoveSecurityGroup Method.
+        /// </summary>
+        public const uint PublishSubscribe_SecurityGroups_RemoveSecurityGroup = 15447;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Reset Method.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Reset = 16076;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_AddConnection Method.
+        /// </summary>
+        public const uint PublishSubscribe_AddConnection = 17366;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_RemoveConnection Method.
+        /// </summary>
+        public const uint PublishSubscribe_RemoveConnection = 17369;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Reset Method.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Reset = 17421;
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Reset Method.
@@ -4550,16 +4570,6 @@ namespace Opc.Ua
         public const uint SecurityGroupFolderType_SecurityGroupName_Placeholder = 15459;
 
         /// <summary>
-        /// The identifier for the PublishSubscribe Object.
-        /// </summary>
-        public const uint PublishSubscribe = 14443;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups Object.
-        /// </summary>
-        public const uint PublishSubscribe_SecurityGroups = 15443;
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder Object.
         /// </summary>
         public const uint PublishSubscribeType_ConnectionName_Placeholder = 14417;
@@ -4608,6 +4618,61 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_Diagnostics_LiveValues Object.
         /// </summary>
         public const uint PublishSubscribeType_Diagnostics_LiveValues = 18760;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe Object.
+        /// </summary>
+        public const uint PublishSubscribe = 14443;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SecurityGroups Object.
+        /// </summary>
+        public const uint PublishSubscribe_SecurityGroups = 15443;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Address Object.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Address = 15851;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Status Object.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Status = 15865;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters Object.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters = 16102;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_LiveValues Object.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_LiveValues = 17352;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets Object.
+        /// </summary>
+        public const uint PublishSubscribe_PublishedDataSets = 17371;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Status Object.
+        /// </summary>
+        public const uint PublishSubscribe_Status = 17405;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics Object.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics = 17409;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters Object.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters = 17423;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_LiveValues Object.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_LiveValues = 17457;
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder Object.
@@ -20300,41 +20365,6 @@ namespace Opc.Ua
         public const uint SecurityGroupType_MaxPastKeyCount = 15056;
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityKeys_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_GetSecurityKeys_InputArguments = 15216;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityKeys_OutputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_GetSecurityKeys_OutputArguments = 15217;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityGroup_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_GetSecurityGroup_InputArguments = 15441;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityGroup_OutputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_GetSecurityGroup_OutputArguments = 15442;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_SecurityGroups_AddSecurityGroup_InputArguments = 15445;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup_OutputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_SecurityGroups_AddSecurityGroup_OutputArguments = 15446;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups_RemoveSecurityGroup_InputArguments Variable.
-        /// </summary>
-        public const uint PublishSubscribe_SecurityGroups_RemoveSecurityGroup_InputArguments = 15448;
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_GetSecurityKeys_InputArguments Variable.
         /// </summary>
         public const uint PublishSubscribeType_GetSecurityKeys_InputArguments = 15213;
@@ -20973,6 +21003,646 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_Diagnostics_LiveValues_OperationalDataSetReaders_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishSubscribeType_Diagnostics_LiveValues_OperationalDataSetReaders_DiagnosticsLevel = 18768;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_GetSecurityKeys_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_GetSecurityKeys_InputArguments = 15216;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_GetSecurityKeys_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_GetSecurityKeys_OutputArguments = 15217;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_GetSecurityGroup_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_GetSecurityGroup_InputArguments = 15441;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_GetSecurityGroup_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_GetSecurityGroup_OutputArguments = 15442;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_SecurityGroups_AddSecurityGroup_InputArguments = 15445;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_SecurityGroups_AddSecurityGroup_OutputArguments = 15446;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SecurityGroups_RemoveSecurityGroup_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_SecurityGroups_RemoveSecurityGroup_InputArguments = 15448;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_PublisherId Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_PublisherId = 15791;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri = 15792;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_Selections Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_Selections = 15848;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Address_NetworkInterface Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Address_NetworkInterface = 15863;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Status_State Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Status_State = 15892;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_DiagnosticsLevel = 15938;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation = 15939;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_Active Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_Active = 15989;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_Classification Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_Classification = 15994;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel = 16013;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange = 16020;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError = 16059;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_Active Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_Active = 16060;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_Classification Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_Classification = 16061;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel = 16074;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_TimeFirstChange Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_TimeFirstChange = 16075;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_SubError Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_SubError = 16101;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError = 16103;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_Active Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_Active = 16122;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_Classification Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_Classification = 16123;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel = 16124;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange = 16160;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod = 16283;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_Active Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_Active = 16322;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_Classification Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_Classification = 16523;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = 17300;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = 17303;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent = 17304;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_Active Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_Active = 17305;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_Classification Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_Classification = 17320;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = 17335;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = 17336;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError = 17337;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_Active Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_Active = 17338;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_Classification Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_Classification = 17339;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = 17340;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = 17341;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent = 17342;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_Active Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_Active = 17343;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_Classification Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_Classification = 17344;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = 17345;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = 17346;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod = 17347;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_Active Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_Active = 17348;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_Classification Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_Classification = 17349;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = 17350;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = 17351;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_LiveValues_ResolvedAddress Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_LiveValues_ResolvedAddress = 17353;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_LiveValues_ResolvedAddress_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_LiveValues_ResolvedAddress_DiagnosticsLevel = 17354;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_AddWriterGroup_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_AddWriterGroup_InputArguments = 17357;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_AddWriterGroup_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_AddWriterGroup_OutputArguments = 17358;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_AddReaderGroup_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_AddReaderGroup_InputArguments = 17360;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_AddReaderGroup_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_AddReaderGroup_OutputArguments = 17361;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_RemoveGroup_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_RemoveGroup_InputArguments = 17363;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SetSecurityKeys_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_SetSecurityKeys_InputArguments = 17365;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_AddConnection_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_AddConnection_InputArguments = 17367;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_AddConnection_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_AddConnection_OutputArguments = 17368;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_RemoveConnection_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_RemoveConnection_InputArguments = 17370;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedDataItems_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_PublishedDataSets_AddPublishedDataItems_InputArguments = 17373;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedDataItems_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_PublishedDataSets_AddPublishedDataItems_OutputArguments = 17374;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedEvents_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_PublishedDataSets_AddPublishedEvents_InputArguments = 17376;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedEvents_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_PublishedDataSets_AddPublishedEvents_OutputArguments = 17377;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedDataItemsTemplate_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_PublishedDataSets_AddPublishedDataItemsTemplate_InputArguments = 17379;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedDataItemsTemplate_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_PublishedDataSets_AddPublishedDataItemsTemplate_OutputArguments = 17380;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedEventsTemplate_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_PublishedDataSets_AddPublishedEventsTemplate_InputArguments = 17382;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedEventsTemplate_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_PublishedDataSets_AddPublishedEventsTemplate_OutputArguments = 17383;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_RemovePublishedDataSet_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_PublishedDataSets_RemovePublishedDataSet_InputArguments = 17385;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddDataSetFolder_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_PublishedDataSets_AddDataSetFolder_InputArguments = 17401;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddDataSetFolder_OutputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_PublishedDataSets_AddDataSetFolder_OutputArguments = 17402;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_RemoveDataSetFolder_InputArguments Variable.
+        /// </summary>
+        public const uint PublishSubscribe_PublishedDataSets_RemoveDataSetFolder_InputArguments = 17404;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Status_State Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Status_State = 17406;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_DiagnosticsLevel = 17410;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_TotalInformation Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_TotalInformation = 17411;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_TotalInformation_Active Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_TotalInformation_Active = 17412;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_TotalInformation_Classification Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_TotalInformation_Classification = 17413;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_TotalInformation_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_TotalInformation_DiagnosticsLevel = 17414;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_TotalInformation_TimeFirstChange Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_TotalInformation_TimeFirstChange = 17415;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_TotalError Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_TotalError = 17416;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_TotalError_Active Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_TotalError_Active = 17417;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_TotalError_Classification Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_TotalError_Classification = 17418;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_TotalError_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_TotalError_DiagnosticsLevel = 17419;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_TotalError_TimeFirstChange Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_TotalError_TimeFirstChange = 17420;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_SubError Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_SubError = 17422;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateError Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateError = 17424;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateError_Active Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateError_Active = 17425;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateError_Classification Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateError_Classification = 17426;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateError_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateError_DiagnosticsLevel = 17429;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateError_TimeFirstChange Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateError_TimeFirstChange = 17430;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod = 17431;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_Active Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_Active = 17432;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_Classification Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_Classification = 17433;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = 17434;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = 17435;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByParent Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalByParent = 17436;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_Active Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_Active = 17437;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_Classification Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_Classification = 17438;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = 17439;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = 17440;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalFromError Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalFromError = 17441;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_Active Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_Active = 17442;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_Classification Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_Classification = 17443;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = 17444;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = 17445;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StatePausedByParent Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StatePausedByParent = 17446;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StatePausedByParent_Active Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StatePausedByParent_Active = 17447;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StatePausedByParent_Classification Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StatePausedByParent_Classification = 17448;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = 17449;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = 17450;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod = 17451;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_Active Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_Active = 17452;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_Classification Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_Classification = 17453;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = 17454;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = 17455;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetWriters Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetWriters = 17458;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetWriters_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetWriters_DiagnosticsLevel = 17459;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetReaders Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetReaders = 17460;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetReaders_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetReaders_DiagnosticsLevel = 17461;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetWriters Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetWriters = 17462;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetWriters_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetWriters_DiagnosticsLevel = 17463;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetReaders Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetReaders = 17464;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetReaders_DiagnosticsLevel Variable.
+        /// </summary>
+        public const uint PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetReaders_DiagnosticsLevel = 17466;
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_DataSetWriterId Variable.
@@ -31945,26 +32615,6 @@ namespace Opc.Ua
         public static readonly NodeId SecurityGroupFolderType_RemoveSecurityGroup = new NodeId(Opc.Ua.Methods.SecurityGroupFolderType_RemoveSecurityGroup);
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityKeys Method.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_GetSecurityKeys = new NodeId(Opc.Ua.Methods.PublishSubscribe_GetSecurityKeys);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityGroup Method.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_GetSecurityGroup = new NodeId(Opc.Ua.Methods.PublishSubscribe_GetSecurityGroup);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup Method.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_SecurityGroups_AddSecurityGroup = new NodeId(Opc.Ua.Methods.PublishSubscribe_SecurityGroups_AddSecurityGroup);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups_RemoveSecurityGroup Method.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_SecurityGroups_RemoveSecurityGroup = new NodeId(Opc.Ua.Methods.PublishSubscribe_SecurityGroups_RemoveSecurityGroup);
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_SecurityGroups_AddSecurityGroup Method.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_SecurityGroups_AddSecurityGroup = new NodeId(Opc.Ua.Methods.PublishSubscribeType_SecurityGroups_AddSecurityGroup);
@@ -31998,6 +32648,46 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_Diagnostics_Reset Method.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_Diagnostics_Reset = new NodeId(Opc.Ua.Methods.PublishSubscribeType_Diagnostics_Reset);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_GetSecurityKeys Method.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_GetSecurityKeys = new NodeId(Opc.Ua.Methods.PublishSubscribe_GetSecurityKeys);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_GetSecurityGroup Method.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_GetSecurityGroup = new NodeId(Opc.Ua.Methods.PublishSubscribe_GetSecurityGroup);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup Method.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_SecurityGroups_AddSecurityGroup = new NodeId(Opc.Ua.Methods.PublishSubscribe_SecurityGroups_AddSecurityGroup);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SecurityGroups_RemoveSecurityGroup Method.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_SecurityGroups_RemoveSecurityGroup = new NodeId(Opc.Ua.Methods.PublishSubscribe_SecurityGroups_RemoveSecurityGroup);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Reset Method.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Reset = new NodeId(Opc.Ua.Methods.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Reset);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_AddConnection Method.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_AddConnection = new NodeId(Opc.Ua.Methods.PublishSubscribe_AddConnection);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_RemoveConnection Method.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_RemoveConnection = new NodeId(Opc.Ua.Methods.PublishSubscribe_RemoveConnection);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Reset Method.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Reset = new NodeId(Opc.Ua.Methods.PublishSubscribe_Diagnostics_Reset);
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Reset Method.
@@ -33180,16 +33870,6 @@ namespace Opc.Ua
         public static readonly NodeId SecurityGroupFolderType_SecurityGroupName_Placeholder = new NodeId(Opc.Ua.Objects.SecurityGroupFolderType_SecurityGroupName_Placeholder);
 
         /// <summary>
-        /// The identifier for the PublishSubscribe Object.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe = new NodeId(Opc.Ua.Objects.PublishSubscribe);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups Object.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_SecurityGroups = new NodeId(Opc.Ua.Objects.PublishSubscribe_SecurityGroups);
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder Object.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder = new NodeId(Opc.Ua.Objects.PublishSubscribeType_ConnectionName_Placeholder);
@@ -33238,6 +33918,61 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_Diagnostics_LiveValues Object.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_Diagnostics_LiveValues = new NodeId(Opc.Ua.Objects.PublishSubscribeType_Diagnostics_LiveValues);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe Object.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe = new NodeId(Opc.Ua.Objects.PublishSubscribe);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SecurityGroups Object.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_SecurityGroups = new NodeId(Opc.Ua.Objects.PublishSubscribe_SecurityGroups);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Address Object.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Address = new NodeId(Opc.Ua.Objects.PublishSubscribe_ConnectionName_Placeholder_Address);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Status Object.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Status = new NodeId(Opc.Ua.Objects.PublishSubscribe_ConnectionName_Placeholder_Status);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters Object.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters = new NodeId(Opc.Ua.Objects.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_LiveValues Object.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_LiveValues = new NodeId(Opc.Ua.Objects.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_LiveValues);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets Object.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_PublishedDataSets = new NodeId(Opc.Ua.Objects.PublishSubscribe_PublishedDataSets);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Status Object.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Status = new NodeId(Opc.Ua.Objects.PublishSubscribe_Status);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics Object.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics = new NodeId(Opc.Ua.Objects.PublishSubscribe_Diagnostics);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters Object.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters = new NodeId(Opc.Ua.Objects.PublishSubscribe_Diagnostics_Counters);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_LiveValues Object.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_LiveValues = new NodeId(Opc.Ua.Objects.PublishSubscribe_Diagnostics_LiveValues);
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder Object.
@@ -48930,41 +49665,6 @@ namespace Opc.Ua
         public static readonly NodeId SecurityGroupType_MaxPastKeyCount = new NodeId(Opc.Ua.Variables.SecurityGroupType_MaxPastKeyCount);
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityKeys_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_GetSecurityKeys_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_GetSecurityKeys_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityKeys_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_GetSecurityKeys_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_GetSecurityKeys_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityGroup_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_GetSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_GetSecurityGroup_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_GetSecurityGroup_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_GetSecurityGroup_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_GetSecurityGroup_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_SecurityGroups_AddSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_SecurityGroups_AddSecurityGroup_InputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup_OutputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_SecurityGroups_AddSecurityGroup_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_SecurityGroups_AddSecurityGroup_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_SecurityGroups_RemoveSecurityGroup_InputArguments Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_SecurityGroups_RemoveSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_SecurityGroups_RemoveSecurityGroup_InputArguments);
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_GetSecurityKeys_InputArguments Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_GetSecurityKeys_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribeType_GetSecurityKeys_InputArguments);
@@ -49603,6 +50303,646 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_Diagnostics_LiveValues_OperationalDataSetReaders_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_Diagnostics_LiveValues_OperationalDataSetReaders_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_LiveValues_OperationalDataSetReaders_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_GetSecurityKeys_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_GetSecurityKeys_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_GetSecurityKeys_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_GetSecurityKeys_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_GetSecurityKeys_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_GetSecurityKeys_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_GetSecurityGroup_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_GetSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_GetSecurityGroup_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_GetSecurityGroup_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_GetSecurityGroup_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_GetSecurityGroup_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_SecurityGroups_AddSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_SecurityGroups_AddSecurityGroup_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SecurityGroups_AddSecurityGroup_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_SecurityGroups_AddSecurityGroup_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_SecurityGroups_AddSecurityGroup_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SecurityGroups_RemoveSecurityGroup_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_SecurityGroups_RemoveSecurityGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_SecurityGroups_RemoveSecurityGroup_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_PublisherId Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_PublisherId = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_PublisherId);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_Selections Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_Selections = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_Selections);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Address_NetworkInterface Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Address_NetworkInterface = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Address_NetworkInterface);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Status_State Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Status_State = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Status_State);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_Active Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_Active = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_Active);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_Classification Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_Classification = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_Classification);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_Active Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_Active = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_Active);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_Classification Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_Classification = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_Classification);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_TimeFirstChange Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_TimeFirstChange);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_SubError Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_SubError = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_SubError);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_Active Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_Active = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_Active);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_Classification Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_Classification = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_Classification);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_Active Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_Active = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_Active);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_Classification Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_Classification = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_Classification);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_Active Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_Active = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_Active);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_Classification Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_Classification = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_Classification);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_Active Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_Active = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_Active);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_Classification Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_Classification = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_Classification);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_Active Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_Active = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_Active);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_Classification Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_Classification = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_Classification);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_Active Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_Active = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_Active);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_Classification Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_Classification = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_Classification);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_LiveValues_ResolvedAddress Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_LiveValues_ResolvedAddress = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_LiveValues_ResolvedAddress);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_LiveValues_ResolvedAddress_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_LiveValues_ResolvedAddress_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_LiveValues_ResolvedAddress_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_AddWriterGroup_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_AddWriterGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_AddWriterGroup_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_AddWriterGroup_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_AddWriterGroup_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_AddWriterGroup_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_AddReaderGroup_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_AddReaderGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_AddReaderGroup_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_AddReaderGroup_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_AddReaderGroup_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_AddReaderGroup_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_RemoveGroup_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_RemoveGroup_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_RemoveGroup_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_SetSecurityKeys_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_SetSecurityKeys_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_SetSecurityKeys_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_AddConnection_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_AddConnection_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_AddConnection_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_AddConnection_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_AddConnection_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_AddConnection_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_RemoveConnection_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_RemoveConnection_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_RemoveConnection_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedDataItems_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_PublishedDataSets_AddPublishedDataItems_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_AddPublishedDataItems_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedDataItems_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_PublishedDataSets_AddPublishedDataItems_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_AddPublishedDataItems_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedEvents_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_PublishedDataSets_AddPublishedEvents_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_AddPublishedEvents_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedEvents_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_PublishedDataSets_AddPublishedEvents_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_AddPublishedEvents_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedDataItemsTemplate_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_PublishedDataSets_AddPublishedDataItemsTemplate_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_AddPublishedDataItemsTemplate_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedDataItemsTemplate_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_PublishedDataSets_AddPublishedDataItemsTemplate_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_AddPublishedDataItemsTemplate_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedEventsTemplate_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_PublishedDataSets_AddPublishedEventsTemplate_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_AddPublishedEventsTemplate_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddPublishedEventsTemplate_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_PublishedDataSets_AddPublishedEventsTemplate_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_AddPublishedEventsTemplate_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_RemovePublishedDataSet_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_PublishedDataSets_RemovePublishedDataSet_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_RemovePublishedDataSet_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddDataSetFolder_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_PublishedDataSets_AddDataSetFolder_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_AddDataSetFolder_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_AddDataSetFolder_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_PublishedDataSets_AddDataSetFolder_OutputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_AddDataSetFolder_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_PublishedDataSets_RemoveDataSetFolder_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_PublishedDataSets_RemoveDataSetFolder_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_PublishedDataSets_RemoveDataSetFolder_InputArguments);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Status_State Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Status_State = new NodeId(Opc.Ua.Variables.PublishSubscribe_Status_State);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_TotalInformation Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_TotalInformation = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_TotalInformation);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_TotalInformation_Active Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_TotalInformation_Active = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_TotalInformation_Active);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_TotalInformation_Classification Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_TotalInformation_Classification = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_TotalInformation_Classification);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_TotalInformation_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_TotalInformation_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_TotalInformation_TimeFirstChange Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_TotalInformation_TimeFirstChange);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_TotalError Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_TotalError = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_TotalError);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_TotalError_Active Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_TotalError_Active = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_TotalError_Active);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_TotalError_Classification Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_TotalError_Classification = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_TotalError_Classification);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_TotalError_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_TotalError_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_TotalError_TimeFirstChange Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_TotalError_TimeFirstChange);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_SubError Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_SubError = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_SubError);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateError Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateError = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateError);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateError_Active Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateError_Active = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateError_Active);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateError_Classification Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateError_Classification = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateError_Classification);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateError_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateError_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateError_TimeFirstChange Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateError_TimeFirstChange);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_Active Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_Active = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_Active);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_Classification Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_Classification = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_Classification);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByParent Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalByParent = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalByParent);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_Active Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_Active = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_Active);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_Classification Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_Classification = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_Classification);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalFromError Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalFromError);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_Active Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_Active = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_Active);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_Classification Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_Classification = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_Classification);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StatePausedByParent Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StatePausedByParent = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StatePausedByParent);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StatePausedByParent_Active Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StatePausedByParent_Active = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StatePausedByParent_Active);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StatePausedByParent_Classification Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StatePausedByParent_Classification = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StatePausedByParent_Classification);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StatePausedByParent_TimeFirstChange);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_Active Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_Active = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_Active);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_Classification Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_Classification = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_Classification);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetWriters Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetWriters = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetWriters);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetWriters_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetWriters_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetWriters_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetReaders Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetReaders = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetReaders);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetReaders_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetReaders_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetReaders_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetWriters Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetWriters = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetWriters);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetWriters_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetWriters_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetWriters_DiagnosticsLevel);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetReaders Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetReaders = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetReaders);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetReaders_DiagnosticsLevel Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetReaders_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetReaders_DiagnosticsLevel);
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_DataSetWriterId Variable.

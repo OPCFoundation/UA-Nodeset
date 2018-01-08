@@ -831,8 +831,8 @@
 
   <xs:complexType name="PublishedDataSetDataType">
     <xs:sequence>
-      <xs:element name="Name" type="xs:unsignedInt" minOccurs="0" />
-      <xs:element name="DataSetFolder" type="xs:unsignedInt" minOccurs="0" />
+      <xs:element name="Name" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="DataSetFolder" type="ua:ListOfString" minOccurs="0" nillable="true" />
       <xs:element name="DataSetMetaData" type="tns:DataSetMetaDataType" minOccurs="0" nillable="true" />
       <xs:element name="ExtensionFields" type="tns:ListOfKeyValuePair" minOccurs="0" nillable="true" />
       <xs:element name="DataSetSource" type="ua:ExtensionObject" minOccurs="0" nillable="true" />

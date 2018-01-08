@@ -4434,8 +4434,8 @@ namespace Opc.Ua
         /// </summary>
         private void Initialize()
         {
-            m_name = (uint)0;
-            m_dataSetFolder = (uint)0;
+            m_name = null;
+            m_dataSetFolder = new StringCollection();
             m_dataSetMetaData = new DataSetMetaDataType();
             m_extensionFields = new KeyValuePairCollection();
             m_dataSetSource = null;
@@ -4447,7 +4447,7 @@ namespace Opc.Ua
         /// A description for the Name field.
         /// </summary>
         [DataMember(Name = "Name", IsRequired = false, Order = 1)]
-        public uint Name
+        public string Name
         {
             get { return m_name;  }
             set { m_name = value; }
@@ -4457,10 +4457,22 @@ namespace Opc.Ua
         /// A description for the DataSetFolder field.
         /// </summary>
         [DataMember(Name = "DataSetFolder", IsRequired = false, Order = 2)]
-        public uint DataSetFolder
+        public StringCollection DataSetFolder
         {
-            get { return m_dataSetFolder;  }
-            set { m_dataSetFolder = value; }
+            get
+            {
+                return m_dataSetFolder;
+            }
+
+            set
+            {
+                m_dataSetFolder = value;
+
+                if (value == null)
+                {
+                    m_dataSetFolder = new StringCollection();
+                }
+            }
         }
 
         /// <summary>
@@ -4542,8 +4554,8 @@ namespace Opc.Ua
         {
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
-            encoder.WriteUInt32("Name", Name);
-            encoder.WriteUInt32("DataSetFolder", DataSetFolder);
+            encoder.WriteString("Name", Name);
+            encoder.WriteStringArray("DataSetFolder", DataSetFolder);
             encoder.WriteEncodeable("DataSetMetaData", DataSetMetaData, typeof(DataSetMetaDataType));
             encoder.WriteEncodeableArray("ExtensionFields", ExtensionFields.ToArray(), typeof(KeyValuePair));
             encoder.WriteExtensionObject("DataSetSource", DataSetSource);
@@ -4556,8 +4568,8 @@ namespace Opc.Ua
         {
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
-            Name = decoder.ReadUInt32("Name");
-            DataSetFolder = decoder.ReadUInt32("DataSetFolder");
+            Name = decoder.ReadString("Name");
+            DataSetFolder = decoder.ReadStringArray("DataSetFolder");
             DataSetMetaData = (DataSetMetaDataType)decoder.ReadEncodeable("DataSetMetaData", typeof(DataSetMetaDataType));
             ExtensionFields = (KeyValuePairCollection)decoder.ReadEncodeableArray("ExtensionFields", typeof(KeyValuePair));
             DataSetSource = decoder.ReadExtensionObject("DataSetSource");
@@ -4602,8 +4614,8 @@ namespace Opc.Ua
         {
             PublishedDataSetDataType clone = (PublishedDataSetDataType)base.MemberwiseClone();
 
-            clone.m_name = (uint)Utils.Clone(this.m_name);
-            clone.m_dataSetFolder = (uint)Utils.Clone(this.m_dataSetFolder);
+            clone.m_name = (string)Utils.Clone(this.m_name);
+            clone.m_dataSetFolder = (StringCollection)Utils.Clone(this.m_dataSetFolder);
             clone.m_dataSetMetaData = (DataSetMetaDataType)Utils.Clone(this.m_dataSetMetaData);
             clone.m_extensionFields = (KeyValuePairCollection)Utils.Clone(this.m_extensionFields);
             clone.m_dataSetSource = (ExtensionObject)Utils.Clone(this.m_dataSetSource);
@@ -4613,8 +4625,8 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
-        private uint m_name;
-        private uint m_dataSetFolder;
+        private string m_name;
+        private StringCollection m_dataSetFolder;
         private DataSetMetaDataType m_dataSetMetaData;
         private KeyValuePairCollection m_extensionFields;
         private ExtensionObject m_dataSetSource;
