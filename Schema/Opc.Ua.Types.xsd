@@ -1492,6 +1492,24 @@
   </xs:complexType>
   <xs:element name="ListOfJsonDataSetReaderMessageDataType" type="tns:ListOfJsonDataSetReaderMessageDataType" nillable="true"></xs:element>
 
+  <xs:complexType name="DatagramConnectionTransportDataType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ConnectionTransportDataType">
+        <xs:sequence>
+          <xs:element name="DiscoveryAddress" type="tns:NetworkAddressDataType" minOccurs="0" nillable="true" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DatagramConnectionTransportDataType" type="tns:DatagramConnectionTransportDataType" />
+
+  <xs:complexType name="ListOfDatagramConnectionTransportDataType">
+    <xs:sequence>
+      <xs:element name="DatagramConnectionTransportDataType" type="tns:DatagramConnectionTransportDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfDatagramConnectionTransportDataType" type="tns:ListOfDatagramConnectionTransportDataType" nillable="true"></xs:element>
+
   <xs:complexType name="DatagramWriterGroupTransportDataType">
     <xs:complexContent mixed="false">
       <xs:extension base="tns:WriterGroupTransportDataType">
@@ -1513,7 +1531,7 @@
 
   <xs:complexType name="BrokerConnectionTransportDataType">
     <xs:complexContent mixed="false">
-      <xs:extension base="tns:DataSetWriterTransportDataType">
+      <xs:extension base="tns:ConnectionTransportDataType">
         <xs:sequence>
           <xs:element name="ResourceUri" type="xs:string" minOccurs="0" nillable="true" />
           <xs:element name="AuthenticationProfileUri" type="xs:string" minOccurs="0" nillable="true" />
@@ -1573,7 +1591,7 @@
 
   <xs:complexType name="BrokerDataSetWriterTransportDataType">
     <xs:complexContent mixed="false">
-      <xs:extension base="tns:WriterGroupTransportDataType">
+      <xs:extension base="tns:DataSetWriterTransportDataType">
         <xs:sequence>
           <xs:element name="QueueName" type="xs:string" minOccurs="0" nillable="true" />
           <xs:element name="ResourceUri" type="xs:string" minOccurs="0" nillable="true" />

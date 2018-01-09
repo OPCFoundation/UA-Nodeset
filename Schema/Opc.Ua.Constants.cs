@@ -530,6 +530,11 @@ namespace Opc.Ua
         public const uint JsonDataSetReaderMessageDataType = 15665;
 
         /// <summary>
+        /// The identifier for the DatagramConnectionTransportDataType DataType.
+        /// </summary>
+        public const uint DatagramConnectionTransportDataType = 17467;
+
+        /// <summary>
         /// The identifier for the DatagramWriterGroupTransportDataType DataType.
         /// </summary>
         public const uint DatagramWriterGroupTransportDataType = 15532;
@@ -5515,6 +5520,11 @@ namespace Opc.Ua
         public const uint JsonDataSetReaderMessageDataType_Encoding_DefaultBinary = 15725;
 
         /// <summary>
+        /// The identifier for the DatagramConnectionTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint DatagramConnectionTransportDataType_Encoding_DefaultBinary = 17468;
+
+        /// <summary>
         /// The identifier for the DatagramWriterGroupTransportDataType_Encoding_DefaultBinary Object.
         /// </summary>
         public const uint DatagramWriterGroupTransportDataType_Encoding_DefaultBinary = 21155;
@@ -6925,6 +6935,11 @@ namespace Opc.Ua
         public const uint JsonDataSetReaderMessageDataType_Encoding_DefaultXml = 16019;
 
         /// <summary>
+        /// The identifier for the DatagramConnectionTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint DatagramConnectionTransportDataType_Encoding_DefaultXml = 17472;
+
+        /// <summary>
         /// The identifier for the DatagramWriterGroupTransportDataType_Encoding_DefaultXml Object.
         /// </summary>
         public const uint DatagramWriterGroupTransportDataType_Encoding_DefaultXml = 21179;
@@ -8333,6 +8348,11 @@ namespace Opc.Ua
         /// The identifier for the JsonDataSetReaderMessageDataType_Encoding_DefaultJson Object.
         /// </summary>
         public const uint JsonDataSetReaderMessageDataType_Encoding_DefaultJson = 16404;
+
+        /// <summary>
+        /// The identifier for the DatagramConnectionTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint DatagramConnectionTransportDataType_Encoding_DefaultJson = 17476;
 
         /// <summary>
         /// The identifier for the DatagramWriterGroupTransportDataType_Encoding_DefaultJson Object.
@@ -28560,6 +28580,11 @@ namespace Opc.Ua
         public const uint OpcUa_BinarySchema_JsonDataSetReaderMessageDataType = 15931;
 
         /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_DatagramConnectionTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_DatagramConnectionTransportDataType = 17469;
+
+        /// <summary>
         /// The identifier for the OpcUa_BinarySchema_DatagramWriterGroupTransportDataType Variable.
         /// </summary>
         public const uint OpcUa_BinarySchema_DatagramWriterGroupTransportDataType = 21171;
@@ -29158,6 +29183,11 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_XmlSchema_JsonDataSetReaderMessageDataType Variable.
         /// </summary>
         public const uint OpcUa_XmlSchema_JsonDataSetReaderMessageDataType = 16119;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DatagramConnectionTransportDataType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_DatagramConnectionTransportDataType = 17473;
 
         /// <summary>
         /// The identifier for the OpcUa_XmlSchema_DatagramWriterGroupTransportDataType Variable.
@@ -30228,6 +30258,11 @@ namespace Opc.Ua
         /// The identifier for the JsonDataSetReaderMessageDataType DataType.
         /// </summary>
         public static readonly NodeId JsonDataSetReaderMessageDataType = new NodeId(Opc.Ua.DataTypes.JsonDataSetReaderMessageDataType);
+
+        /// <summary>
+        /// The identifier for the DatagramConnectionTransportDataType DataType.
+        /// </summary>
+        public static readonly NodeId DatagramConnectionTransportDataType = new NodeId(Opc.Ua.DataTypes.DatagramConnectionTransportDataType);
 
         /// <summary>
         /// The identifier for the DatagramWriterGroupTransportDataType DataType.
@@ -35215,6 +35250,11 @@ namespace Opc.Ua
         public static readonly NodeId JsonDataSetReaderMessageDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.JsonDataSetReaderMessageDataType_Encoding_DefaultBinary);
 
         /// <summary>
+        /// The identifier for the DatagramConnectionTransportDataType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId DatagramConnectionTransportDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DatagramConnectionTransportDataType_Encoding_DefaultBinary);
+
+        /// <summary>
         /// The identifier for the DatagramWriterGroupTransportDataType_Encoding_DefaultBinary Object.
         /// </summary>
         public static readonly NodeId DatagramWriterGroupTransportDataType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.DatagramWriterGroupTransportDataType_Encoding_DefaultBinary);
@@ -36625,6 +36665,11 @@ namespace Opc.Ua
         public static readonly NodeId JsonDataSetReaderMessageDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.JsonDataSetReaderMessageDataType_Encoding_DefaultXml);
 
         /// <summary>
+        /// The identifier for the DatagramConnectionTransportDataType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId DatagramConnectionTransportDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.DatagramConnectionTransportDataType_Encoding_DefaultXml);
+
+        /// <summary>
         /// The identifier for the DatagramWriterGroupTransportDataType_Encoding_DefaultXml Object.
         /// </summary>
         public static readonly NodeId DatagramWriterGroupTransportDataType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.DatagramWriterGroupTransportDataType_Encoding_DefaultXml);
@@ -38033,6 +38078,11 @@ namespace Opc.Ua
         /// The identifier for the JsonDataSetReaderMessageDataType_Encoding_DefaultJson Object.
         /// </summary>
         public static readonly NodeId JsonDataSetReaderMessageDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.JsonDataSetReaderMessageDataType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the DatagramConnectionTransportDataType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId DatagramConnectionTransportDataType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.DatagramConnectionTransportDataType_Encoding_DefaultJson);
 
         /// <summary>
         /// The identifier for the DatagramWriterGroupTransportDataType_Encoding_DefaultJson Object.
@@ -58260,6 +58310,11 @@ namespace Opc.Ua
         public static readonly NodeId OpcUa_BinarySchema_JsonDataSetReaderMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_JsonDataSetReaderMessageDataType);
 
         /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_DatagramConnectionTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_DatagramConnectionTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_DatagramConnectionTransportDataType);
+
+        /// <summary>
         /// The identifier for the OpcUa_BinarySchema_DatagramWriterGroupTransportDataType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_BinarySchema_DatagramWriterGroupTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_DatagramWriterGroupTransportDataType);
@@ -58858,6 +58913,11 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_XmlSchema_JsonDataSetReaderMessageDataType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_XmlSchema_JsonDataSetReaderMessageDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_JsonDataSetReaderMessageDataType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_DatagramConnectionTransportDataType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_DatagramConnectionTransportDataType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_DatagramConnectionTransportDataType);
 
         /// <summary>
         /// The identifier for the OpcUa_XmlSchema_DatagramWriterGroupTransportDataType Variable.
@@ -61087,6 +61147,11 @@ namespace Opc.Ua
         /// The BrowseName for the DataChangeTrigger component.
         /// </summary>
         public const string DataChangeTrigger = "DataChangeTrigger";
+
+        /// <summary>
+        /// The BrowseName for the DatagramConnectionTransportDataType component.
+        /// </summary>
+        public const string DatagramConnectionTransportDataType = "DatagramConnectionTransportDataType";
 
         /// <summary>
         /// The BrowseName for the DatagramConnectionTransportType component.

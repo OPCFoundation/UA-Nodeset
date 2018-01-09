@@ -687,12 +687,16 @@
     <opc:Field Name="DataSetMessageContentMask" TypeName="tns:JsonDataSetMessageContentMask" />
   </opc:StructuredType>
 
+  <opc:StructuredType Name="DatagramConnectionTransportDataType" BaseType="tns:ConnectionTransportDataType">
+    <opc:Field Name="DiscoveryAddress" TypeName="tns:NetworkAddressDataType" />
+  </opc:StructuredType>
+
   <opc:StructuredType Name="DatagramWriterGroupTransportDataType" BaseType="tns:WriterGroupTransportDataType">
     <opc:Field Name="MessageRepeatCount" TypeName="opc:Byte" />
     <opc:Field Name="MessageRepeatDelay" TypeName="opc:Double" />
   </opc:StructuredType>
 
-  <opc:StructuredType Name="BrokerConnectionTransportDataType" BaseType="tns:DataSetWriterTransportDataType">
+  <opc:StructuredType Name="BrokerConnectionTransportDataType" BaseType="tns:ConnectionTransportDataType">
     <opc:Field Name="ResourceUri" TypeName="opc:String" />
     <opc:Field Name="AuthenticationProfileUri" TypeName="opc:String" />
     <opc:Field Name="NoOfConnectionProperties" TypeName="opc:Int32" />
@@ -716,7 +720,7 @@
     <opc:Field Name="RequestedDeliveryGuarantee" TypeName="tns:BrokerTransportQualityOfService" />
   </opc:StructuredType>
 
-  <opc:StructuredType Name="BrokerDataSetWriterTransportDataType" BaseType="tns:WriterGroupTransportDataType">
+  <opc:StructuredType Name="BrokerDataSetWriterTransportDataType" BaseType="tns:DataSetWriterTransportDataType">
     <opc:Field Name="QueueName" TypeName="opc:String" />
     <opc:Field Name="ResourceUri" TypeName="opc:String" />
     <opc:Field Name="AuthenticationProfileUri" TypeName="opc:String" />

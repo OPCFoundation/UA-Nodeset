@@ -890,6 +890,15 @@
       <Field Name="DataSetMessageContentMask" DataType="i=15658" />
     </Definition>
   </UADataType>
+  <UADataType NodeId="i=17467" BrowseName="DatagramConnectionTransportDataType">
+    <DisplayName>DatagramConnectionTransportDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=15618</Reference>
+    </References>
+    <Definition Name="DatagramConnectionTransportDataType">
+      <Field Name="DiscoveryAddress" DataType="i=15502" />
+    </Definition>
+  </UADataType>
   <UADataType NodeId="i=15532" BrowseName="DatagramWriterGroupTransportDataType">
     <DisplayName>DatagramWriterGroupTransportDataType</DisplayName>
     <References>
@@ -903,7 +912,7 @@
   <UADataType NodeId="i=15007" BrowseName="BrokerConnectionTransportDataType">
     <DisplayName>BrokerConnectionTransportDataType</DisplayName>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=15598</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=15618</Reference>
     </References>
     <Definition Name="BrokerConnectionTransportDataType">
       <Field Name="ResourceUri" DataType="i=12" />
@@ -978,7 +987,7 @@
   <UADataType NodeId="i=15669" BrowseName="BrokerDataSetWriterTransportDataType">
     <DisplayName>BrokerDataSetWriterTransportDataType</DisplayName>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=15611</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=15598</Reference>
     </References>
     <Definition Name="BrokerDataSetWriterTransportDataType">
       <Field Name="QueueName" DataType="i=12" />
@@ -13877,6 +13886,14 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
+  <UAObject NodeId="i=17468" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=17467</Reference>
+      <Reference ReferenceType="HasDescription">i=17469</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
   <UAObject NodeId="i=21155" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
     <References>
@@ -14253,6 +14270,14 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
+  <UAObject NodeId="i=17472" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=17467</Reference>
+      <Reference ReferenceType="HasDescription">i=17473</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
   <UAObject NodeId="i=21179" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
@@ -14584,6 +14609,13 @@
     <DisplayName>Default JSON</DisplayName>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=15665</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=17476" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=17467</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>

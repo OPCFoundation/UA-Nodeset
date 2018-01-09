@@ -124,6 +124,7 @@
 /* #define OPCUA_EXCLUDE_JsonWriterGroupMessageDataType */
 /* #define OPCUA_EXCLUDE_JsonDataSetWriterMessageDataType */
 /* #define OPCUA_EXCLUDE_JsonDataSetReaderMessageDataType */
+/* #define OPCUA_EXCLUDE_DatagramConnectionTransportDataType */
 /* #define OPCUA_EXCLUDE_DatagramWriterGroupTransportDataType */
 /* #define OPCUA_EXCLUDE_BrokerConnectionTransportDataType */
 /* #define OPCUA_EXCLUDE_BrokerWriterGroupTransportDataType */
