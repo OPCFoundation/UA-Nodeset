@@ -734,7 +734,7 @@
     <xs:sequence>
       <xs:element name="SchemaLocation" type="xs:string" minOccurs="0" nillable="true" />
       <xs:element name="FileHeader" type="tns:ListOfKeyValuePair" minOccurs="0" nillable="true" />
-      <xs:element name="Body" type="ua:ListOfExtensionObject" minOccurs="0" nillable="true" />
+      <xs:element name="Body" type="ua:Variant" minOccurs="0" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="UABinaryFileDataType" type="tns:UABinaryFileDataType" />

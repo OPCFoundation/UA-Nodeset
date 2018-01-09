@@ -128,7 +128,7 @@
     <Definition Name="UABinaryFileDataType">
       <Field Name="SchemaLocation" DataType="i=12" />
       <Field Name="FileHeader" DataType="i=14533" ValueRank="1" />
-      <Field Name="Body" DataType="i=22" ValueRank="1" />
+      <Field Name="Body" />
     </Definition>
   </UADataType>
   <UADataType NodeId="i=14523" BrowseName="DataSetMetaDataType">

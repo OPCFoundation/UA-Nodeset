@@ -342,8 +342,7 @@
     <opc:Field Name="SchemaLocation" TypeName="opc:String" />
     <opc:Field Name="NoOfFileHeader" TypeName="opc:Int32" />
     <opc:Field Name="FileHeader" TypeName="tns:KeyValuePair" LengthField="NoOfFileHeader" />
-    <opc:Field Name="NoOfBody" TypeName="opc:Int32" />
-    <opc:Field Name="Body" TypeName="ua:ExtensionObject" LengthField="NoOfBody" />
+    <opc:Field Name="Body" TypeName="ua:Variant" />
   </opc:StructuredType>
 
   <opc:EnumeratedType Name="PubSubState" LengthInBits="32">

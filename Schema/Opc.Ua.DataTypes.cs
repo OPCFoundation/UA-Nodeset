@@ -3086,7 +3086,7 @@ namespace Opc.Ua
         {
             m_schemaLocation = null;
             m_fileHeader = new KeyValuePairCollection();
-            m_body = new ExtensionObjectCollection();
+            m_body = Variant.Null;
         }
         #endregion
 
@@ -3127,22 +3127,10 @@ namespace Opc.Ua
         /// A description for the Body field.
         /// </summary>
         [DataMember(Name = "Body", IsRequired = false, Order = 3)]
-        public ExtensionObjectCollection Body
+        public Variant Body
         {
-            get
-            {
-                return m_body;
-            }
-
-            set
-            {
-                m_body = value;
-
-                if (value == null)
-                {
-                    m_body = new ExtensionObjectCollection();
-                }
-            }
+            get { return m_body;  }
+            set { m_body = value; }
         }
         #endregion
 
@@ -3172,7 +3160,7 @@ namespace Opc.Ua
 
             encoder.WriteString("SchemaLocation", SchemaLocation);
             encoder.WriteEncodeableArray("FileHeader", FileHeader.ToArray(), typeof(KeyValuePair));
-            encoder.WriteExtensionObjectArray("Body", Body);
+            encoder.WriteVariant("Body", Body);
 
             encoder.PopNamespace();
         }
@@ -3184,7 +3172,7 @@ namespace Opc.Ua
 
             SchemaLocation = decoder.ReadString("SchemaLocation");
             FileHeader = (KeyValuePairCollection)decoder.ReadEncodeableArray("FileHeader", typeof(KeyValuePair));
-            Body = decoder.ReadExtensionObjectArray("Body");
+            Body = decoder.ReadVariant("Body");
 
             decoder.PopNamespace();
         }
@@ -3226,7 +3214,7 @@ namespace Opc.Ua
 
             clone.m_schemaLocation = (string)Utils.Clone(this.m_schemaLocation);
             clone.m_fileHeader = (KeyValuePairCollection)Utils.Clone(this.m_fileHeader);
-            clone.m_body = (ExtensionObjectCollection)Utils.Clone(this.m_body);
+            clone.m_body = (Variant)Utils.Clone(this.m_body);
 
             return clone;
         }
@@ -3235,7 +3223,7 @@ namespace Opc.Ua
         #region Private Fields
         private string m_schemaLocation;
         private KeyValuePairCollection m_fileHeader;
-        private ExtensionObjectCollection m_body;
+        private Variant m_body;
         #endregion
     }
 
