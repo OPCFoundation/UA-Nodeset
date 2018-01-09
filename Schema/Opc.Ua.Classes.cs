@@ -67511,7 +67511,7 @@ namespace Opc.Ua
            "ABVgiQoCAAAAAAAMAAAAU2VjdXJpdHlNb2RlAQA2PgAuAEQ2PgAAAQAuAf////8BAf////8AAAAAFWCJ" +
            "CgIAAAAAAA8AAABTZWN1cml0eUdyb3VwSWQBADc+AC4ARDc+AAAADP////8BAf////8AAAAAFWCJCgIA" +
            "AAAAABMAAABTZWN1cml0eUtleVNlcnZpY2VzAQA4PgAuAEQ4PgAAAQA4AQEAAAABAf////8AAAAAFWCJ" +
-           "CgIAAAAAABUAAABNYXhOZXR3b3JrTWVzc2FnZVNpemUBADxFAC4ARDxFAAAABf////8BAf////8AAAAA" +
+           "CgIAAAAAABUAAABNYXhOZXR3b3JrTWVzc2FnZVNpemUBADxFAC4ARDxFAAAAB/////8BAf////8AAAAA" +
            "BGCACgEAAAAAAAYAAABTdGF0dXMBAKE7AC8BADM5oTsAAP////8BAAAAFWCJCgIAAAAAAAUAAABTdGF0" +
            "ZQEAojsALwA/ojsAAAEANzn/////AQH/////AAAAAA==";
         #endregion
@@ -67585,7 +67585,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the MaxNetworkMessageSize Property.
         /// </summary>
-        public PropertyState<ushort> MaxNetworkMessageSize
+        public PropertyState<uint> MaxNetworkMessageSize
         {
             get
             {
@@ -67752,11 +67752,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                MaxNetworkMessageSize = new PropertyState<ushort>(this);
+                                MaxNetworkMessageSize = new PropertyState<uint>(this);
                             }
                             else
                             {
-                                MaxNetworkMessageSize = (PropertyState<ushort>)replacement;
+                                MaxNetworkMessageSize = (PropertyState<uint>)replacement;
                             }
                         }
                     }
@@ -67800,7 +67800,7 @@ namespace Opc.Ua
         private PropertyState<MessageSecurityMode> m_securityMode;
         private PropertyState<string> m_securityGroupId;
         private PropertyState<EndpointDescription[]> m_securityKeyServices;
-        private PropertyState<ushort> m_maxNetworkMessageSize;
+        private PropertyState<uint> m_maxNetworkMessageSize;
         private PubSubStatusState m_status;
         #endregion
     }
@@ -67973,7 +67973,7 @@ namespace Opc.Ua
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAAFwAAAFdyaXRlckdyb3VwVHlwZUluc3RhbmNlAQA9RQEAPUX/////DQAA" +
            "ABVgiQoCAAAAAAAMAAAAU2VjdXJpdHlNb2RlAQA+RQAuAEQ+RQAAAQAuAf////8BAf////8AAAAAFWCJ" +
-           "CgIAAAAAABUAAABNYXhOZXR3b3JrTWVzc2FnZVNpemUBAEFFAC4AREFFAAAABf////8BAf////8AAAAA" +
+           "CgIAAAAAABUAAABNYXhOZXR3b3JrTWVzc2FnZVNpemUBAEFFAC4AREFFAAAAB/////8BAf////8AAAAA" +
            "BGCACgEAAAAAAAYAAABTdGF0dXMBAEJFAC8BADM5QkUAAP////8BAAAAFWCJCgIAAAAAAAUAAABTdGF0" +
            "ZQEAQ0UALwA/Q0UAAAEANzn/////AQH/////AAAAABVgiQoCAAAAAAANAAAAV3JpdGVyR3JvdXBJZAEA" +
            "SEUALgBESEUAAAAF/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAFB1Ymxpc2hpbmdJbnRlcnZhbAEA" +
@@ -69128,7 +69128,7 @@ namespace Opc.Ua
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAAFwAAAFJlYWRlckdyb3VwVHlwZUluc3RhbmNlAQBPRgEAT0b/////CAAA" +
            "ABVgiQoCAAAAAAAMAAAAU2VjdXJpdHlNb2RlAQBQRgAuAERQRgAAAQAuAf////8BAf////8AAAAAFWCJ" +
-           "CgIAAAAAABUAAABNYXhOZXR3b3JrTWVzc2FnZVNpemUBAJFGAC4ARJFGAAAABf////8BAf////8AAAAA" +
+           "CgIAAAAAABUAAABNYXhOZXR3b3JrTWVzc2FnZVNpemUBAJFGAC4ARJFGAAAAB/////8BAf////8AAAAA" +
            "BGCACgEAAAAAAAYAAABTdGF0dXMBAJNGAC8BADM5k0YAAP////8BAAAAFWCJCgIAAAAAAAUAAABTdGF0" +
            "ZQEAlEYALwA/lEYAAAEANzn/////AQH/////AAAAAARggAoBAAAAAAALAAAARGlhZ25vc3RpY3MBABdS" +
            "AC8BAL9NF1IAAP////8HAAAAFWCJCgIAAAAAABAAAABEaWFnbm9zdGljc0xldmVsAQAYUgAvAD8YUgAA" +

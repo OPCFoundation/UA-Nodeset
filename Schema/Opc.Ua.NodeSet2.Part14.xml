@@ -6074,7 +6074,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=17310</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=17204" BrowseName="MaxNetworkMessageSize" ParentNodeId="i=17310" DataType="UInt16">
+  <UAVariable NodeId="i=17204" BrowseName="MaxNetworkMessageSize" ParentNodeId="i=17310" DataType="UInt32">
     <DisplayName>MaxNetworkMessageSize</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -6158,7 +6158,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=17325</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=17302" BrowseName="MaxNetworkMessageSize" ParentNodeId="i=17325" DataType="UInt16">
+  <UAVariable NodeId="i=17302" BrowseName="MaxNetworkMessageSize" ParentNodeId="i=17325" DataType="UInt32">
     <DisplayName>MaxNetworkMessageSize</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -6876,7 +6876,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=14232</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=17724" BrowseName="MaxNetworkMessageSize" ParentNodeId="i=14232" DataType="UInt16">
+  <UAVariable NodeId="i=17724" BrowseName="MaxNetworkMessageSize" ParentNodeId="i=14232" DataType="UInt32">
     <DisplayName>MaxNetworkMessageSize</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
