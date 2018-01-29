@@ -664,8 +664,8 @@
       <Field Name="GroupVersion" DataType="i=7" />
       <Field Name="DataSetOrdering" DataType="i=20408" />
       <Field Name="NetworkMessageContentMask" DataType="i=15642" />
-      <Field Name="ProcessingOffset" DataType="i=290" />
-      <Field Name="ReceiveOffset" DataType="i=290" ValueRank="1" />
+      <Field Name="SamplingOffset" DataType="i=290" />
+      <Field Name="PublishingOffset" DataType="i=290" ValueRank="1" />
     </Definition>
   </UADataType>
   <UADataType NodeId="i=15646" BrowseName="UadpDataSetMessageContentMask">
@@ -13069,16 +13069,16 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=21105</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=21109" BrowseName="ProcessingOffset" ParentNodeId="i=21105" DataType="i=290">
-    <DisplayName>ProcessingOffset</DisplayName>
+  <UAVariable NodeId="i=21109" BrowseName="SamplingOffset" ParentNodeId="i=21105" DataType="i=290">
+    <DisplayName>SamplingOffset</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=21105</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=21110" BrowseName="ReceiveOffset" ParentNodeId="i=21105" DataType="i=290">
-    <DisplayName>ReceiveOffset</DisplayName>
+  <UAVariable NodeId="i=21110" BrowseName="PublishingOffset" ParentNodeId="i=21105" DataType="i=290">
+    <DisplayName>PublishingOffset</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>

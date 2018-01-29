@@ -11954,8 +11954,8 @@ namespace Opc.Ua
             m_groupVersion = (uint)0;
             m_dataSetOrdering = DataSetOrderingType.Undefined;
             m_networkMessageContentMask = UadpNetworkMessageContentMask.PublisherId;
-            m_processingOffset = (double)0;
-            m_receiveOffset = new DoubleCollection();
+            m_samplingOffset = (double)0;
+            m_publishingOffset = new DoubleCollection();
         }
         #endregion
 
@@ -11991,33 +11991,33 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the ProcessingOffset field.
+        /// A description for the SamplingOffset field.
         /// </summary>
-        [DataMember(Name = "ProcessingOffset", IsRequired = false, Order = 4)]
-        public double ProcessingOffset
+        [DataMember(Name = "SamplingOffset", IsRequired = false, Order = 4)]
+        public double SamplingOffset
         {
-            get { return m_processingOffset;  }
-            set { m_processingOffset = value; }
+            get { return m_samplingOffset;  }
+            set { m_samplingOffset = value; }
         }
 
         /// <summary>
-        /// A description for the ReceiveOffset field.
+        /// A description for the PublishingOffset field.
         /// </summary>
-        [DataMember(Name = "ReceiveOffset", IsRequired = false, Order = 5)]
-        public DoubleCollection ReceiveOffset
+        [DataMember(Name = "PublishingOffset", IsRequired = false, Order = 5)]
+        public DoubleCollection PublishingOffset
         {
             get
             {
-                return m_receiveOffset;
+                return m_publishingOffset;
             }
 
             set
             {
-                m_receiveOffset = value;
+                m_publishingOffset = value;
 
                 if (value == null)
                 {
-                    m_receiveOffset = new DoubleCollection();
+                    m_publishingOffset = new DoubleCollection();
                 }
             }
         }
@@ -12052,8 +12052,8 @@ namespace Opc.Ua
             encoder.WriteUInt32("GroupVersion", GroupVersion);
             encoder.WriteEnumerated("DataSetOrdering", DataSetOrdering);
             encoder.WriteEnumerated("NetworkMessageContentMask", NetworkMessageContentMask);
-            encoder.WriteDouble("ProcessingOffset", ProcessingOffset);
-            encoder.WriteDoubleArray("ReceiveOffset", ReceiveOffset);
+            encoder.WriteDouble("SamplingOffset", SamplingOffset);
+            encoder.WriteDoubleArray("PublishingOffset", PublishingOffset);
 
             encoder.PopNamespace();
         }
@@ -12068,8 +12068,8 @@ namespace Opc.Ua
             GroupVersion = decoder.ReadUInt32("GroupVersion");
             DataSetOrdering = (DataSetOrderingType)decoder.ReadEnumerated("DataSetOrdering", typeof(DataSetOrderingType));
             NetworkMessageContentMask = (UadpNetworkMessageContentMask)decoder.ReadEnumerated("NetworkMessageContentMask", typeof(UadpNetworkMessageContentMask));
-            ProcessingOffset = decoder.ReadDouble("ProcessingOffset");
-            ReceiveOffset = decoder.ReadDoubleArray("ReceiveOffset");
+            SamplingOffset = decoder.ReadDouble("SamplingOffset");
+            PublishingOffset = decoder.ReadDoubleArray("PublishingOffset");
 
             decoder.PopNamespace();
         }
@@ -12093,8 +12093,8 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_groupVersion, value.m_groupVersion)) return false;
             if (!Utils.IsEqual(m_dataSetOrdering, value.m_dataSetOrdering)) return false;
             if (!Utils.IsEqual(m_networkMessageContentMask, value.m_networkMessageContentMask)) return false;
-            if (!Utils.IsEqual(m_processingOffset, value.m_processingOffset)) return false;
-            if (!Utils.IsEqual(m_receiveOffset, value.m_receiveOffset)) return false;
+            if (!Utils.IsEqual(m_samplingOffset, value.m_samplingOffset)) return false;
+            if (!Utils.IsEqual(m_publishingOffset, value.m_publishingOffset)) return false;
 
             return true;
         }    
@@ -12115,8 +12115,8 @@ namespace Opc.Ua
             clone.m_groupVersion = (uint)Utils.Clone(this.m_groupVersion);
             clone.m_dataSetOrdering = (DataSetOrderingType)Utils.Clone(this.m_dataSetOrdering);
             clone.m_networkMessageContentMask = (UadpNetworkMessageContentMask)Utils.Clone(this.m_networkMessageContentMask);
-            clone.m_processingOffset = (double)Utils.Clone(this.m_processingOffset);
-            clone.m_receiveOffset = (DoubleCollection)Utils.Clone(this.m_receiveOffset);
+            clone.m_samplingOffset = (double)Utils.Clone(this.m_samplingOffset);
+            clone.m_publishingOffset = (DoubleCollection)Utils.Clone(this.m_publishingOffset);
 
             return clone;
         }
@@ -12126,8 +12126,8 @@ namespace Opc.Ua
         private uint m_groupVersion;
         private DataSetOrderingType m_dataSetOrdering;
         private UadpNetworkMessageContentMask m_networkMessageContentMask;
-        private double m_processingOffset;
-        private DoubleCollection m_receiveOffset;
+        private double m_samplingOffset;
+        private DoubleCollection m_publishingOffset;
         #endregion
     }
 
