@@ -27975,14 +27975,14 @@ namespace Opc.Ua
         public const uint UadpWriterGroupMessageType_NetworkMessageContentMask = 21108;
 
         /// <summary>
-        /// The identifier for the UadpWriterGroupMessageType_SamplingOffset Variable.
+        /// The identifier for the UadpWriterGroupMessageType_ProcessingOffset Variable.
         /// </summary>
-        public const uint UadpWriterGroupMessageType_SamplingOffset = 21109;
+        public const uint UadpWriterGroupMessageType_ProcessingOffset = 21109;
 
         /// <summary>
-        /// The identifier for the UadpWriterGroupMessageType_PublishingOffset Variable.
+        /// The identifier for the UadpWriterGroupMessageType_ReceiveOffset Variable.
         /// </summary>
-        public const uint UadpWriterGroupMessageType_PublishingOffset = 21110;
+        public const uint UadpWriterGroupMessageType_ReceiveOffset = 21110;
 
         /// <summary>
         /// The identifier for the UadpDataSetWriterMessageType_DataSetMessageContentMask Variable.
@@ -28020,6 +28020,11 @@ namespace Opc.Ua
         public const uint UadpDataSetReaderMessageType_NetworkMessageNumber = 21119;
 
         /// <summary>
+        /// The identifier for the UadpDataSetReaderMessageType_DataSetOffset Variable.
+        /// </summary>
+        public const uint UadpDataSetReaderMessageType_DataSetOffset = 17477;
+
+        /// <summary>
         /// The identifier for the UadpDataSetReaderMessageType_DataSetClassId Variable.
         /// </summary>
         public const uint UadpDataSetReaderMessageType_DataSetClassId = 21120;
@@ -28040,14 +28045,14 @@ namespace Opc.Ua
         public const uint UadpDataSetReaderMessageType_PublishingInterval = 21123;
 
         /// <summary>
-        /// The identifier for the UadpDataSetReaderMessageType_SamplingOffset Variable.
+        /// The identifier for the UadpDataSetReaderMessageType_ProcessingOffset Variable.
         /// </summary>
-        public const uint UadpDataSetReaderMessageType_SamplingOffset = 21124;
+        public const uint UadpDataSetReaderMessageType_ProcessingOffset = 21124;
 
         /// <summary>
-        /// The identifier for the UadpDataSetReaderMessageType_PublishingOffset Variable.
+        /// The identifier for the UadpDataSetReaderMessageType_ReceiveOffset Variable.
         /// </summary>
-        public const uint UadpDataSetReaderMessageType_PublishingOffset = 21125;
+        public const uint UadpDataSetReaderMessageType_ReceiveOffset = 21125;
 
         /// <summary>
         /// The identifier for the JsonWriterGroupMessageType_NetworkMessageContentMask Variable.
@@ -57705,14 +57710,14 @@ namespace Opc.Ua
         public static readonly NodeId UadpWriterGroupMessageType_NetworkMessageContentMask = new NodeId(Opc.Ua.Variables.UadpWriterGroupMessageType_NetworkMessageContentMask);
 
         /// <summary>
-        /// The identifier for the UadpWriterGroupMessageType_SamplingOffset Variable.
+        /// The identifier for the UadpWriterGroupMessageType_ProcessingOffset Variable.
         /// </summary>
-        public static readonly NodeId UadpWriterGroupMessageType_SamplingOffset = new NodeId(Opc.Ua.Variables.UadpWriterGroupMessageType_SamplingOffset);
+        public static readonly NodeId UadpWriterGroupMessageType_ProcessingOffset = new NodeId(Opc.Ua.Variables.UadpWriterGroupMessageType_ProcessingOffset);
 
         /// <summary>
-        /// The identifier for the UadpWriterGroupMessageType_PublishingOffset Variable.
+        /// The identifier for the UadpWriterGroupMessageType_ReceiveOffset Variable.
         /// </summary>
-        public static readonly NodeId UadpWriterGroupMessageType_PublishingOffset = new NodeId(Opc.Ua.Variables.UadpWriterGroupMessageType_PublishingOffset);
+        public static readonly NodeId UadpWriterGroupMessageType_ReceiveOffset = new NodeId(Opc.Ua.Variables.UadpWriterGroupMessageType_ReceiveOffset);
 
         /// <summary>
         /// The identifier for the UadpDataSetWriterMessageType_DataSetMessageContentMask Variable.
@@ -57750,6 +57755,11 @@ namespace Opc.Ua
         public static readonly NodeId UadpDataSetReaderMessageType_NetworkMessageNumber = new NodeId(Opc.Ua.Variables.UadpDataSetReaderMessageType_NetworkMessageNumber);
 
         /// <summary>
+        /// The identifier for the UadpDataSetReaderMessageType_DataSetOffset Variable.
+        /// </summary>
+        public static readonly NodeId UadpDataSetReaderMessageType_DataSetOffset = new NodeId(Opc.Ua.Variables.UadpDataSetReaderMessageType_DataSetOffset);
+
+        /// <summary>
         /// The identifier for the UadpDataSetReaderMessageType_DataSetClassId Variable.
         /// </summary>
         public static readonly NodeId UadpDataSetReaderMessageType_DataSetClassId = new NodeId(Opc.Ua.Variables.UadpDataSetReaderMessageType_DataSetClassId);
@@ -57770,14 +57780,14 @@ namespace Opc.Ua
         public static readonly NodeId UadpDataSetReaderMessageType_PublishingInterval = new NodeId(Opc.Ua.Variables.UadpDataSetReaderMessageType_PublishingInterval);
 
         /// <summary>
-        /// The identifier for the UadpDataSetReaderMessageType_SamplingOffset Variable.
+        /// The identifier for the UadpDataSetReaderMessageType_ProcessingOffset Variable.
         /// </summary>
-        public static readonly NodeId UadpDataSetReaderMessageType_SamplingOffset = new NodeId(Opc.Ua.Variables.UadpDataSetReaderMessageType_SamplingOffset);
+        public static readonly NodeId UadpDataSetReaderMessageType_ProcessingOffset = new NodeId(Opc.Ua.Variables.UadpDataSetReaderMessageType_ProcessingOffset);
 
         /// <summary>
-        /// The identifier for the UadpDataSetReaderMessageType_PublishingOffset Variable.
+        /// The identifier for the UadpDataSetReaderMessageType_ReceiveOffset Variable.
         /// </summary>
-        public static readonly NodeId UadpDataSetReaderMessageType_PublishingOffset = new NodeId(Opc.Ua.Variables.UadpDataSetReaderMessageType_PublishingOffset);
+        public static readonly NodeId UadpDataSetReaderMessageType_ReceiveOffset = new NodeId(Opc.Ua.Variables.UadpDataSetReaderMessageType_ReceiveOffset);
 
         /// <summary>
         /// The identifier for the JsonWriterGroupMessageType_NetworkMessageContentMask Variable.
@@ -63859,6 +63869,11 @@ namespace Opc.Ua
         public const string ProcessConditionClassType = "ProcessConditionClassType";
 
         /// <summary>
+        /// The BrowseName for the ProcessingOffset component.
+        /// </summary>
+        public const string ProcessingOffset = "ProcessingOffset";
+
+        /// <summary>
         /// The BrowseName for the ProductName component.
         /// </summary>
         public const string ProductName = "ProductName";
@@ -64012,11 +64027,6 @@ namespace Opc.Ua
         /// The BrowseName for the PublishingIntervalCount component.
         /// </summary>
         public const string PublishingIntervalCount = "PublishingIntervalCount";
-
-        /// <summary>
-        /// The BrowseName for the PublishingOffset component.
-        /// </summary>
-        public const string PublishingOffset = "PublishingOffset";
 
         /// <summary>
         /// The BrowseName for the PublishRequest component.
@@ -64347,6 +64357,11 @@ namespace Opc.Ua
         /// The BrowseName for the ReAlarmTime component.
         /// </summary>
         public const string ReAlarmTime = "ReAlarmTime";
+
+        /// <summary>
+        /// The BrowseName for the ReceiveOffset component.
+        /// </summary>
+        public const string ReceiveOffset = "ReceiveOffset";
 
         /// <summary>
         /// The BrowseName for the ReceiveTime component.
@@ -64797,11 +64812,6 @@ namespace Opc.Ua
         /// The BrowseName for the SamplingIntervalDiagnosticsType component.
         /// </summary>
         public const string SamplingIntervalDiagnosticsType = "SamplingIntervalDiagnosticsType";
-
-        /// <summary>
-        /// The BrowseName for the SamplingOffset component.
-        /// </summary>
-        public const string SamplingOffset = "SamplingOffset";
 
         /// <summary>
         /// The BrowseName for the SByte component.

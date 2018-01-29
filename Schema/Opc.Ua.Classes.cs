@@ -75487,25 +75487,25 @@ namespace Opc.Ua
         {
             base.InitializeOptionalChildren(context);
 
-            if (SamplingOffset != null)
+            if (ProcessingOffset != null)
             {
-                SamplingOffset.Initialize(context, SamplingOffset_InitializationString);
+                ProcessingOffset.Initialize(context, ProcessingOffset_InitializationString);
             }
         }
 
         #region Initialization String
-        private const string SamplingOffset_InitializationString =
-           "//////////8VYIkKAgAAAAAADgAAAFNhbXBsaW5nT2Zmc2V0AQB1UgAuAER1UgAAAQAiAf////8BAf//" +
-           "//8AAAAA";
+        private const string ProcessingOffset_InitializationString =
+           "//////////8VYIkKAgAAAAAAEAAAAFByb2Nlc3NpbmdPZmZzZXQBAHVSAC4ARHVSAAABACIB/////wEB" +
+           "/////wAAAAA=";
 
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAAIgAAAFVhZHBXcml0ZXJHcm91cE1lc3NhZ2VUeXBlSW5zdGFuY2UBAHFS" +
            "AQBxUv////8FAAAAFWCJCgIAAAAAAAwAAABHcm91cFZlcnNpb24BAHJSAC4ARHJSAAABAAZS/////wEB" +
            "/////wAAAAAVYIkKAgAAAAAADwAAAERhdGFTZXRPcmRlcmluZwEAc1IALgBEc1IAAAEAuE//////AQH/" +
            "////AAAAABVgiQoCAAAAAAAZAAAATmV0d29ya01lc3NhZ2VDb250ZW50TWFzawEAdFIALgBEdFIAAAEA" +
-           "Gj3/////AQH/////AAAAABVgiQoCAAAAAAAOAAAAU2FtcGxpbmdPZmZzZXQBAHVSAC4ARHVSAAABACIB" +
-           "/////wEB/////wAAAAAVYIkKAgAAAAAAEAAAAFB1Ymxpc2hpbmdPZmZzZXQBAHZSAC4ARHZSAAABACIB" +
-           "/////wEB/////wAAAAA=";
+           "Gj3/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAUHJvY2Vzc2luZ09mZnNldAEAdVIALgBEdVIAAAEA" +
+           "IgH/////AQH/////AAAAABVgiQoCAAAAAAANAAAAUmVjZWl2ZU9mZnNldAEAdlIALgBEdlIAAAEAIgH/" +
+           "////AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -75575,44 +75575,44 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the SamplingOffset Property.
+        /// A description for the ProcessingOffset Property.
         /// </summary>
-        public PropertyState<double> SamplingOffset
+        public PropertyState<double> ProcessingOffset
         {
             get
             {
-                return m_samplingOffset;
+                return m_processingOffset;
             }
 
             set
             {
-                if (!Object.ReferenceEquals(m_samplingOffset, value))
+                if (!Object.ReferenceEquals(m_processingOffset, value))
                 {
                     ChangeMasks |= NodeStateChangeMasks.Children;
                 }
 
-                m_samplingOffset = value;
+                m_processingOffset = value;
             }
         }
 
         /// <summary>
-        /// A description for the PublishingOffset Property.
+        /// A description for the ReceiveOffset Property.
         /// </summary>
-        public PropertyState<double> PublishingOffset
+        public PropertyState<double> ReceiveOffset
         {
             get
             {
-                return m_publishingOffset;
+                return m_receiveOffset;
             }
 
             set
             {
-                if (!Object.ReferenceEquals(m_publishingOffset, value))
+                if (!Object.ReferenceEquals(m_receiveOffset, value))
                 {
                     ChangeMasks |= NodeStateChangeMasks.Children;
                 }
 
-                m_publishingOffset = value;
+                m_receiveOffset = value;
             }
         }
         #endregion
@@ -75642,14 +75642,14 @@ namespace Opc.Ua
                 children.Add(m_networkMessageContentMask);
             }
 
-            if (m_samplingOffset != null)
+            if (m_processingOffset != null)
             {
-                children.Add(m_samplingOffset);
+                children.Add(m_processingOffset);
             }
 
-            if (m_publishingOffset != null)
+            if (m_receiveOffset != null)
             {
-                children.Add(m_publishingOffset);
+                children.Add(m_receiveOffset);
             }
 
             base.GetChildren(context, children);
@@ -75736,45 +75736,45 @@ namespace Opc.Ua
                     break;
                 }
 
-                case Opc.Ua.BrowseNames.SamplingOffset:
+                case Opc.Ua.BrowseNames.ProcessingOffset:
                 {
                     if (createOrReplace)
                     {
-                        if (SamplingOffset == null)
+                        if (ProcessingOffset == null)
                         {
                             if (replacement == null)
                             {
-                                SamplingOffset = new PropertyState<double>(this);
+                                ProcessingOffset = new PropertyState<double>(this);
                             }
                             else
                             {
-                                SamplingOffset = (PropertyState<double>)replacement;
+                                ProcessingOffset = (PropertyState<double>)replacement;
                             }
                         }
                     }
 
-                    instance = SamplingOffset;
+                    instance = ProcessingOffset;
                     break;
                 }
 
-                case Opc.Ua.BrowseNames.PublishingOffset:
+                case Opc.Ua.BrowseNames.ReceiveOffset:
                 {
                     if (createOrReplace)
                     {
-                        if (PublishingOffset == null)
+                        if (ReceiveOffset == null)
                         {
                             if (replacement == null)
                             {
-                                PublishingOffset = new PropertyState<double>(this);
+                                ReceiveOffset = new PropertyState<double>(this);
                             }
                             else
                             {
-                                PublishingOffset = (PropertyState<double>)replacement;
+                                ReceiveOffset = (PropertyState<double>)replacement;
                             }
                         }
                     }
 
-                    instance = PublishingOffset;
+                    instance = ReceiveOffset;
                     break;
                 }
             }
@@ -75792,8 +75792,8 @@ namespace Opc.Ua
         private PropertyState<uint> m_groupVersion;
         private PropertyState<DataSetOrderingType> m_dataSetOrdering;
         private PropertyState<UadpNetworkMessageContentMask> m_networkMessageContentMask;
-        private PropertyState<double> m_samplingOffset;
-        private PropertyState<double> m_publishingOffset;
+        private PropertyState<double> m_processingOffset;
+        private PropertyState<double> m_receiveOffset;
         #endregion
     }
     #endif
@@ -76159,16 +76159,17 @@ namespace Opc.Ua
         #region Initialization String
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAAJAAAAFVhZHBEYXRhU2V0UmVhZGVyTWVzc2FnZVR5cGVJbnN0YW5jZQEA" +
-           "fFIBAHxS/////wkAAAAVYIkKAgAAAAAADAAAAEdyb3VwVmVyc2lvbgEAfVIALgBEfVIAAAEABlL/////" +
+           "fFIBAHxS/////woAAAAVYIkKAgAAAAAADAAAAEdyb3VwVmVyc2lvbgEAfVIALgBEfVIAAAEABlL/////" +
            "AQH/////AAAAABVgiQoCAAAAAAAPAAAARGF0YVNldE9yZGVyaW5nAQB+UgAuAER+UgAAAQC4T/////8B" +
            "Af////8AAAAAFWCJCgIAAAAAABQAAABOZXR3b3JrTWVzc2FnZU51bWJlcgEAf1IALgBEf1IAAAAF////" +
-           "/wEB/////wAAAAAVYIkKAgAAAAAADgAAAERhdGFTZXRDbGFzc0lkAQCAUgAuAESAUgAAAA7/////AQH/" +
-           "////AAAAABVgiQoCAAAAAAAZAAAATmV0d29ya01lc3NhZ2VDb250ZW50TWFzawEAgVIALgBEgVIAAAEA" +
-           "Gj3/////AQH/////AAAAABVgiQoCAAAAAAAZAAAARGF0YVNldE1lc3NhZ2VDb250ZW50TWFzawEAglIA" +
-           "LgBEglIAAAEAHj3/////AQH/////AAAAABVgiQoCAAAAAAASAAAAUHVibGlzaGluZ0ludGVydmFsAQCD" +
-           "UgAuAESDUgAAAQAiAf////8BAf////8AAAAAFWCJCgIAAAAAAA4AAABTYW1wbGluZ09mZnNldAEAhFIA" +
-           "LgBEhFIAAAEAIgH/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAUHVibGlzaGluZ09mZnNldAEAhVIA" +
-           "LgBEhVIAAAEAIgH/////AQH/////AAAAAA==";
+           "/wEB/////wAAAAAVYIkKAgAAAAAADQAAAERhdGFTZXRPZmZzZXQBAEVEAC4AREVEAAAABf////8BAf//" +
+           "//8AAAAAFWCJCgIAAAAAAA4AAABEYXRhU2V0Q2xhc3NJZAEAgFIALgBEgFIAAAAO/////wEB/////wAA" +
+           "AAAVYIkKAgAAAAAAGQAAAE5ldHdvcmtNZXNzYWdlQ29udGVudE1hc2sBAIFSAC4ARIFSAAABABo9////" +
+           "/wEB/////wAAAAAVYIkKAgAAAAAAGQAAAERhdGFTZXRNZXNzYWdlQ29udGVudE1hc2sBAIJSAC4ARIJS" +
+           "AAABAB49/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAFB1Ymxpc2hpbmdJbnRlcnZhbAEAg1IALgBE" +
+           "g1IAAAEAIgH/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAUHJvY2Vzc2luZ09mZnNldAEAhFIALgBE" +
+           "hFIAAAEAIgH/////AQH/////AAAAABVgiQoCAAAAAAANAAAAUmVjZWl2ZU9mZnNldAEAhVIALgBEhVIA" +
+           "AAEAIgH/////AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -76234,6 +76235,27 @@ namespace Opc.Ua
                 }
 
                 m_networkMessageNumber = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the DataSetOffset Property.
+        /// </summary>
+        public PropertyState<ushort> DataSetOffset
+        {
+            get
+            {
+                return m_dataSetOffset;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_dataSetOffset, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_dataSetOffset = value;
             }
         }
 
@@ -76322,44 +76344,44 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the SamplingOffset Property.
+        /// A description for the ProcessingOffset Property.
         /// </summary>
-        public PropertyState<double> SamplingOffset
+        public PropertyState<double> ProcessingOffset
         {
             get
             {
-                return m_samplingOffset;
+                return m_processingOffset;
             }
 
             set
             {
-                if (!Object.ReferenceEquals(m_samplingOffset, value))
+                if (!Object.ReferenceEquals(m_processingOffset, value))
                 {
                     ChangeMasks |= NodeStateChangeMasks.Children;
                 }
 
-                m_samplingOffset = value;
+                m_processingOffset = value;
             }
         }
 
         /// <summary>
-        /// A description for the PublishingOffset Property.
+        /// A description for the ReceiveOffset Property.
         /// </summary>
-        public PropertyState<double> PublishingOffset
+        public PropertyState<double> ReceiveOffset
         {
             get
             {
-                return m_publishingOffset;
+                return m_receiveOffset;
             }
 
             set
             {
-                if (!Object.ReferenceEquals(m_publishingOffset, value))
+                if (!Object.ReferenceEquals(m_receiveOffset, value))
                 {
                     ChangeMasks |= NodeStateChangeMasks.Children;
                 }
 
-                m_publishingOffset = value;
+                m_receiveOffset = value;
             }
         }
         #endregion
@@ -76389,6 +76411,11 @@ namespace Opc.Ua
                 children.Add(m_networkMessageNumber);
             }
 
+            if (m_dataSetOffset != null)
+            {
+                children.Add(m_dataSetOffset);
+            }
+
             if (m_dataSetClassId != null)
             {
                 children.Add(m_dataSetClassId);
@@ -76409,14 +76436,14 @@ namespace Opc.Ua
                 children.Add(m_publishingInterval);
             }
 
-            if (m_samplingOffset != null)
+            if (m_processingOffset != null)
             {
-                children.Add(m_samplingOffset);
+                children.Add(m_processingOffset);
             }
 
-            if (m_publishingOffset != null)
+            if (m_receiveOffset != null)
             {
-                children.Add(m_publishingOffset);
+                children.Add(m_receiveOffset);
             }
 
             base.GetChildren(context, children);
@@ -76500,6 +76527,27 @@ namespace Opc.Ua
                     }
 
                     instance = NetworkMessageNumber;
+                    break;
+                }
+
+                case Opc.Ua.BrowseNames.DataSetOffset:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DataSetOffset == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DataSetOffset = new PropertyState<ushort>(this);
+                            }
+                            else
+                            {
+                                DataSetOffset = (PropertyState<ushort>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DataSetOffset;
                     break;
                 }
 
@@ -76587,45 +76635,45 @@ namespace Opc.Ua
                     break;
                 }
 
-                case Opc.Ua.BrowseNames.SamplingOffset:
+                case Opc.Ua.BrowseNames.ProcessingOffset:
                 {
                     if (createOrReplace)
                     {
-                        if (SamplingOffset == null)
+                        if (ProcessingOffset == null)
                         {
                             if (replacement == null)
                             {
-                                SamplingOffset = new PropertyState<double>(this);
+                                ProcessingOffset = new PropertyState<double>(this);
                             }
                             else
                             {
-                                SamplingOffset = (PropertyState<double>)replacement;
+                                ProcessingOffset = (PropertyState<double>)replacement;
                             }
                         }
                     }
 
-                    instance = SamplingOffset;
+                    instance = ProcessingOffset;
                     break;
                 }
 
-                case Opc.Ua.BrowseNames.PublishingOffset:
+                case Opc.Ua.BrowseNames.ReceiveOffset:
                 {
                     if (createOrReplace)
                     {
-                        if (PublishingOffset == null)
+                        if (ReceiveOffset == null)
                         {
                             if (replacement == null)
                             {
-                                PublishingOffset = new PropertyState<double>(this);
+                                ReceiveOffset = new PropertyState<double>(this);
                             }
                             else
                             {
-                                PublishingOffset = (PropertyState<double>)replacement;
+                                ReceiveOffset = (PropertyState<double>)replacement;
                             }
                         }
                     }
 
-                    instance = PublishingOffset;
+                    instance = ReceiveOffset;
                     break;
                 }
             }
@@ -76643,12 +76691,13 @@ namespace Opc.Ua
         private PropertyState<uint> m_groupVersion;
         private PropertyState<DataSetOrderingType> m_dataSetOrdering;
         private PropertyState<ushort> m_networkMessageNumber;
+        private PropertyState<ushort> m_dataSetOffset;
         private PropertyState<Guid> m_dataSetClassId;
         private PropertyState<UadpNetworkMessageContentMask> m_networkMessageContentMask;
         private PropertyState<UadpDataSetMessageContentMask> m_dataSetMessageContentMask;
         private PropertyState<double> m_publishingInterval;
-        private PropertyState<double> m_samplingOffset;
-        private PropertyState<double> m_publishingOffset;
+        private PropertyState<double> m_processingOffset;
+        private PropertyState<double> m_receiveOffset;
         #endregion
     }
     #endif

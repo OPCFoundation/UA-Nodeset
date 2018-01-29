@@ -623,9 +623,9 @@
     <opc:Field Name="GroupVersion" TypeName="opc:UInt32" />
     <opc:Field Name="DataSetOrdering" TypeName="tns:DataSetOrderingType" />
     <opc:Field Name="NetworkMessageContentMask" TypeName="tns:UadpNetworkMessageContentMask" />
-    <opc:Field Name="SamplingOffset" TypeName="opc:Double" />
-    <opc:Field Name="NoOfPublishingOffset" TypeName="opc:Int32" />
-    <opc:Field Name="PublishingOffset" TypeName="opc:Double" LengthField="NoOfPublishingOffset" />
+    <opc:Field Name="ProcessingOffset" TypeName="opc:Double" />
+    <opc:Field Name="NoOfReceiveOffset" TypeName="opc:Int32" />
+    <opc:Field Name="ReceiveOffset" TypeName="opc:Double" LengthField="NoOfReceiveOffset" />
   </opc:StructuredType>
 
   <opc:EnumeratedType Name="UadpDataSetMessageContentMask" LengthInBits="32">

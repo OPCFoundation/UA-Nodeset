@@ -1336,8 +1336,8 @@
           <xs:element name="GroupVersion" type="xs:unsignedInt" minOccurs="0" />
           <xs:element name="DataSetOrdering" type="tns:DataSetOrderingType" minOccurs="0" />
           <xs:element name="NetworkMessageContentMask" type="tns:UadpNetworkMessageContentMask" minOccurs="0" />
-          <xs:element name="SamplingOffset" type="xs:double" minOccurs="0" />
-          <xs:element name="PublishingOffset" type="ua:ListOfDouble" minOccurs="0" nillable="true" />
+          <xs:element name="ProcessingOffset" type="xs:double" minOccurs="0" />
+          <xs:element name="ReceiveOffset" type="ua:ListOfDouble" minOccurs="0" nillable="true" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
