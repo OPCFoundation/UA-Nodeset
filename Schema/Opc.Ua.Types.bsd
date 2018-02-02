@@ -687,7 +687,7 @@
   </opc:StructuredType>
 
   <opc:StructuredType Name="DatagramConnectionTransportDataType" BaseType="tns:ConnectionTransportDataType">
-    <opc:Field Name="DiscoveryAddress" TypeName="tns:NetworkAddressDataType" />
+    <opc:Field Name="DiscoveryAddress" TypeName="ua:ExtensionObject" />
   </opc:StructuredType>
 
   <opc:StructuredType Name="DatagramWriterGroupTransportDataType" BaseType="tns:WriterGroupTransportDataType">

@@ -896,7 +896,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15618</Reference>
     </References>
     <Definition Name="DatagramConnectionTransportDataType">
-      <Field Name="DiscoveryAddress" DataType="i=15502" />
+      <Field Name="DiscoveryAddress" DataType="i=22" />
     </Definition>
   </UADataType>
   <UADataType NodeId="i=15532" BrowseName="DatagramWriterGroupTransportDataType">

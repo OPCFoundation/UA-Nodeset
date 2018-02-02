@@ -13959,7 +13959,7 @@ namespace Opc.Ua
         /// </summary>
         private void Initialize()
         {
-            m_discoveryAddress = new NetworkAddressDataType();
+            m_discoveryAddress = null;
         }
         #endregion
 
@@ -13968,22 +13968,10 @@ namespace Opc.Ua
         /// A description for the DiscoveryAddress field.
         /// </summary>
         [DataMember(Name = "DiscoveryAddress", IsRequired = false, Order = 1)]
-        public NetworkAddressDataType DiscoveryAddress
+        public ExtensionObject DiscoveryAddress
         {
-            get
-            {
-                return m_discoveryAddress;
-            }
-
-            set
-            {
-                m_discoveryAddress = value;
-
-                if (value == null)
-                {
-                    m_discoveryAddress = new NetworkAddressDataType();
-                }
-            }
+            get { return m_discoveryAddress;  }
+            set { m_discoveryAddress = value; }
         }
         #endregion
 
@@ -14013,7 +14001,7 @@ namespace Opc.Ua
 
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
-            encoder.WriteEncodeable("DiscoveryAddress", DiscoveryAddress, typeof(NetworkAddressDataType));
+            encoder.WriteExtensionObject("DiscoveryAddress", DiscoveryAddress);
 
             encoder.PopNamespace();
         }
@@ -14025,7 +14013,7 @@ namespace Opc.Ua
 
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
-            DiscoveryAddress = (NetworkAddressDataType)decoder.ReadEncodeable("DiscoveryAddress", typeof(NetworkAddressDataType));
+            DiscoveryAddress = decoder.ReadExtensionObject("DiscoveryAddress");
 
             decoder.PopNamespace();
         }
@@ -14064,14 +14052,14 @@ namespace Opc.Ua
         {
             DatagramConnectionTransportDataType clone = (DatagramConnectionTransportDataType)base.MemberwiseClone();
 
-            clone.m_discoveryAddress = (NetworkAddressDataType)Utils.Clone(this.m_discoveryAddress);
+            clone.m_discoveryAddress = (ExtensionObject)Utils.Clone(this.m_discoveryAddress);
 
             return clone;
         }
         #endregion
 
         #region Private Fields
-        private NetworkAddressDataType m_discoveryAddress;
+        private ExtensionObject m_discoveryAddress;
         #endregion
     }
 

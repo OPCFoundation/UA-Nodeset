@@ -1496,7 +1496,7 @@
     <xs:complexContent mixed="false">
       <xs:extension base="tns:ConnectionTransportDataType">
         <xs:sequence>
-          <xs:element name="DiscoveryAddress" type="tns:NetworkAddressDataType" minOccurs="0" nillable="true" />
+          <xs:element name="DiscoveryAddress" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
