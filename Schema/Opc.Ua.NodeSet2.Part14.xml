@@ -323,6 +323,7 @@
       <Field Name="DataSetFieldContentMask" DataType="i=15583" />
       <Field Name="KeyFrameCount" DataType="i=7" />
       <Field Name="DataSetName" DataType="i=12" />
+      <Field Name="DataSetWriterProperties" DataType="i=14533" ValueRank="1" />
       <Field Name="TransportSettings" DataType="i=22" />
       <Field Name="MessageSettings" DataType="i=22" />
     </Definition>
@@ -351,6 +352,7 @@
       <Field Name="SecurityGroupId" DataType="i=12" />
       <Field Name="SecurityKeyServices" DataType="i=312" ValueRank="1" />
       <Field Name="MaxNetworkMessageSize" DataType="i=7" />
+      <Field Name="GroupProperties" DataType="i=14533" ValueRank="1" />
     </Definition>
   </UADataType>
   <UADataType NodeId="i=15480" BrowseName="WriterGroupDataType">
@@ -392,6 +394,7 @@
       <Field Name="PublisherId" />
       <Field Name="TransportProfileUri" DataType="i=12" />
       <Field Name="Address" DataType="i=22" />
+      <Field Name="ConnectionProperties" DataType="i=14533" ValueRank="1" />
       <Field Name="TransportSettings" DataType="i=22" />
       <Field Name="WriterGroups" DataType="i=15480" ValueRank="1" />
       <Field Name="ReaderGroups" DataType="i=15520" ValueRank="1" />
@@ -461,6 +464,7 @@
       <Field Name="SecurityMode" DataType="i=302" />
       <Field Name="SecurityGroupId" DataType="i=12" />
       <Field Name="SecurityKeyServices" DataType="i=312" ValueRank="1" />
+      <Field Name="DataSetReaderProperties" DataType="i=14533" ValueRank="1" />
       <Field Name="TransportSettings" DataType="i=22" />
       <Field Name="MessageSettings" DataType="i=22" />
       <Field Name="SubscribedDataSet" DataType="i=22" />
@@ -917,7 +921,6 @@
     <Definition Name="BrokerConnectionTransportDataType">
       <Field Name="ResourceUri" DataType="i=12" />
       <Field Name="AuthenticationProfileUri" DataType="i=12" />
-      <Field Name="ConnectionProperties" DataType="i=14533" ValueRank="1" />
     </Definition>
   </UADataType>
   <UADataType NodeId="i=15008" BrowseName="BrokerTransportQualityOfService">
@@ -980,7 +983,6 @@
       <Field Name="QueueName" DataType="i=12" />
       <Field Name="ResourceUri" DataType="i=12" />
       <Field Name="AuthenticationProfileUri" DataType="i=12" />
-      <Field Name="WriterGroupProperties" DataType="i=14533" ValueRank="1" />
       <Field Name="RequestedDeliveryGuarantee" DataType="i=15008" />
     </Definition>
   </UADataType>
@@ -993,7 +995,6 @@
       <Field Name="QueueName" DataType="i=12" />
       <Field Name="ResourceUri" DataType="i=12" />
       <Field Name="AuthenticationProfileUri" DataType="i=12" />
-      <Field Name="DataSetWriterProperties" DataType="i=14533" ValueRank="1" />
       <Field Name="MetaDataQueueName" DataType="i=12" />
       <Field Name="MetaDataUpdateTime" DataType="i=290" />
     </Definition>
@@ -1933,6 +1934,7 @@
       <Reference ReferenceType="HasComponent">i=14434</Reference>
       <Reference ReferenceType="HasComponent">i=15844</Reference>
       <Reference ReferenceType="HasComponent">i=18715</Reference>
+      <Reference ReferenceType="HasProperty">i=17479</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15906</Reference>
     </References>
   </UAObjectType>
@@ -1941,6 +1943,7 @@
     <References>
       <Reference ReferenceType="HasProperty">i=14418</Reference>
       <Reference ReferenceType="HasComponent">i=17292</Reference>
+      <Reference ReferenceType="HasProperty">i=17478</Reference>
       <Reference ReferenceType="HasComponent">i=14423</Reference>
       <Reference ReferenceType="HasComponent">i=14419</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=14209</Reference>
@@ -1971,6 +1974,14 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=17292</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=17478" BrowseName="ConnectionProperties" ParentNodeId="i=14417" DataType="i=14533" ValueRank="1">
+    <DisplayName>ConnectionProperties</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=14417</Reference>
     </References>
   </UAVariable>
   <UAObject NodeId="i=14423" BrowseName="Address" ParentNodeId="i=14417">
@@ -2208,7 +2219,7 @@
     <DisplayName>RemoveConnection</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=14433</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=14416</Reference>
     </References>
   </UAMethod>
@@ -2797,6 +2808,14 @@
       <Int32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int32>
     </Value>
   </UAVariable>
+  <UAVariable NodeId="i=17479" BrowseName="SupportedTransportProfiles" ParentNodeId="i=14416" DataType="String" ValueRank="1">
+    <DisplayName>SupportedTransportProfiles</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=14416</Reference>
+    </References>
+  </UAVariable>
   <UAObject NodeId="i=14443" BrowseName="PublishSubscribe">
     <DisplayName>PublishSubscribe</DisplayName>
     <References>
@@ -2808,6 +2827,7 @@
       <Reference ReferenceType="HasComponent">i=17371</Reference>
       <Reference ReferenceType="HasComponent">i=17405</Reference>
       <Reference ReferenceType="HasComponent">i=17409</Reference>
+      <Reference ReferenceType="HasProperty">i=17481</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2253</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=14416</Reference>
     </References>
@@ -3813,6 +3833,13 @@
       <Int32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int32>
     </Value>
   </UAVariable>
+  <UAVariable NodeId="i=17481" BrowseName="SupportedTransportProfiles" ParentNodeId="i=14443" DataType="String" ValueRank="1">
+    <DisplayName>SupportedTransportProfiles</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=14443</Reference>
+    </References>
+  </UAVariable>
   <UAReferenceType NodeId="i=14476" BrowseName="HasPubSubConnection">
     <DisplayName>HasPubSubConnection</DisplayName>
     <References>
@@ -3836,6 +3863,7 @@
     <References>
       <Reference ReferenceType="HasProperty">i=16720</Reference>
       <Reference ReferenceType="HasProperty">i=16721</Reference>
+      <Reference ReferenceType="HasProperty">i=17482</Reference>
       <Reference ReferenceType="HasComponent">i=15223</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=15298</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
@@ -3852,6 +3880,14 @@
   </UAVariable>
   <UAVariable NodeId="i=16721" BrowseName="DataSetFieldContentMask" ParentNodeId="i=15222" DataType="i=15583">
     <DisplayName>DataSetFieldContentMask</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15222</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=17482" BrowseName="DataSetWriterProperties" ParentNodeId="i=15222" DataType="i=14533" ValueRank="1">
+    <DisplayName>DataSetWriterProperties</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -5988,6 +6024,7 @@
     <References>
       <Reference ReferenceType="HasProperty">i=14595</Reference>
       <Reference ReferenceType="HasComponent">i=17306</Reference>
+      <Reference ReferenceType="HasProperty">i=17485</Reference>
       <Reference ReferenceType="HasComponent">i=14221</Reference>
       <Reference ReferenceType="HasComponent">i=17203</Reference>
       <Reference ReferenceType="HasComponent">i=17310</Reference>
@@ -6025,6 +6062,14 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=17306</Reference>
     </References>
   </UAVariable>
+  <UAVariable NodeId="i=17485" BrowseName="ConnectionProperties" ParentNodeId="i=14209" DataType="i=14533" ValueRank="1">
+    <DisplayName>ConnectionProperties</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=14209</Reference>
+    </References>
+  </UAVariable>
   <UAObject NodeId="i=14221" BrowseName="Address" ParentNodeId="i=14209">
     <DisplayName>Address</DisplayName>
     <References>
@@ -6055,6 +6100,7 @@
     <References>
       <Reference ReferenceType="HasProperty">i=17311</Reference>
       <Reference ReferenceType="HasProperty">i=17204</Reference>
+      <Reference ReferenceType="HasProperty">i=17486</Reference>
       <Reference ReferenceType="HasComponent">i=17314</Reference>
       <Reference ReferenceType="HasProperty">i=17214</Reference>
       <Reference ReferenceType="HasProperty">i=17318</Reference>
@@ -6076,6 +6122,14 @@
   </UAVariable>
   <UAVariable NodeId="i=17204" BrowseName="MaxNetworkMessageSize" ParentNodeId="i=17310" DataType="UInt32">
     <DisplayName>MaxNetworkMessageSize</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=17310</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=17486" BrowseName="GroupProperties" ParentNodeId="i=17310" DataType="i=14533" ValueRank="1">
+    <DisplayName>GroupProperties</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -6144,6 +6198,7 @@
     <References>
       <Reference ReferenceType="HasProperty">i=17326</Reference>
       <Reference ReferenceType="HasProperty">i=17302</Reference>
+      <Reference ReferenceType="HasProperty">i=17487</Reference>
       <Reference ReferenceType="HasComponent">i=17329</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=17999</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
@@ -6160,6 +6215,14 @@
   </UAVariable>
   <UAVariable NodeId="i=17302" BrowseName="MaxNetworkMessageSize" ParentNodeId="i=17325" DataType="UInt32">
     <DisplayName>MaxNetworkMessageSize</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=17325</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=17487" BrowseName="GroupProperties" ParentNodeId="i=17325" DataType="i=14533" ValueRank="1">
+    <DisplayName>GroupProperties</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -6848,6 +6911,7 @@
       <Reference ReferenceType="HasProperty">i=15927</Reference>
       <Reference ReferenceType="HasProperty">i=15928</Reference>
       <Reference ReferenceType="HasProperty">i=17724</Reference>
+      <Reference ReferenceType="HasProperty">i=17488</Reference>
       <Reference ReferenceType="HasComponent">i=15265</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
@@ -6878,6 +6942,14 @@
   </UAVariable>
   <UAVariable NodeId="i=17724" BrowseName="MaxNetworkMessageSize" ParentNodeId="i=14232" DataType="UInt32">
     <DisplayName>MaxNetworkMessageSize</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=14232</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=17488" BrowseName="GroupProperties" ParentNodeId="i=14232" DataType="i=14533" ValueRank="1">
+    <DisplayName>GroupProperties</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -6979,6 +7051,7 @@
     <References>
       <Reference ReferenceType="HasProperty">i=17744</Reference>
       <Reference ReferenceType="HasProperty">i=17745</Reference>
+      <Reference ReferenceType="HasProperty">i=17490</Reference>
       <Reference ReferenceType="HasComponent">i=17749</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=15298</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
@@ -6995,6 +7068,14 @@
   </UAVariable>
   <UAVariable NodeId="i=17745" BrowseName="DataSetFieldContentMask" ParentNodeId="i=17743" DataType="i=15583">
     <DisplayName>DataSetFieldContentMask</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=17743</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=17490" BrowseName="DataSetWriterProperties" ParentNodeId="i=17743" DataType="i=14533" ValueRank="1">
+    <DisplayName>DataSetWriterProperties</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -7802,6 +7883,7 @@
       <Reference ReferenceType="HasProperty">i=18080</Reference>
       <Reference ReferenceType="HasProperty">i=18081</Reference>
       <Reference ReferenceType="HasProperty">i=18082</Reference>
+      <Reference ReferenceType="HasProperty">i=17492</Reference>
       <Reference ReferenceType="HasComponent">i=18088</Reference>
       <Reference ReferenceType="HasComponent">i=21006</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=15306</Reference>
@@ -7851,6 +7933,14 @@
   </UAVariable>
   <UAVariable NodeId="i=18082" BrowseName="MessageReceiveTimeout" ParentNodeId="i=18076" DataType="UInt16">
     <DisplayName>MessageReceiveTimeout</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=18076</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=17492" BrowseName="DataSetReaderProperties" ParentNodeId="i=18076" DataType="i=14533" ValueRank="1">
+    <DisplayName>DataSetReaderProperties</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -8583,6 +8673,7 @@
       <Reference ReferenceType="HasProperty">i=21092</Reference>
       <Reference ReferenceType="HasProperty">i=21093</Reference>
       <Reference ReferenceType="HasProperty">i=21094</Reference>
+      <Reference ReferenceType="HasProperty">i=17493</Reference>
       <Reference ReferenceType="HasComponent">i=15303</Reference>
       <Reference ReferenceType="HasComponent">i=21095</Reference>
       <Reference ReferenceType="HasComponent">i=15299</Reference>
@@ -8611,6 +8702,14 @@
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15298</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=17493" BrowseName="DataSetWriterProperties" ParentNodeId="i=15298" DataType="i=14533" ValueRank="1">
+    <DisplayName>DataSetWriterProperties</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=15298</Reference>
     </References>
   </UAVariable>
@@ -9170,6 +9269,7 @@
       <Reference ReferenceType="HasProperty">i=15932</Reference>
       <Reference ReferenceType="HasProperty">i=15933</Reference>
       <Reference ReferenceType="HasProperty">i=15934</Reference>
+      <Reference ReferenceType="HasProperty">i=17494</Reference>
       <Reference ReferenceType="HasComponent">i=15311</Reference>
       <Reference ReferenceType="HasComponent">i=21103</Reference>
       <Reference ReferenceType="HasComponent">i=15307</Reference>
@@ -9249,6 +9349,14 @@
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15306</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=17494" BrowseName="DataSetReaderProperties" ParentNodeId="i=15306" DataType="i=14533" ValueRank="1">
+    <DisplayName>DataSetReaderProperties</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=15306</Reference>
     </References>
   </UAVariable>
@@ -13330,7 +13438,6 @@
     <References>
       <Reference ReferenceType="HasProperty">i=15156</Reference>
       <Reference ReferenceType="HasProperty">i=15178</Reference>
-      <Reference ReferenceType="HasProperty">i=15181</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=17997</Reference>
     </References>
   </UAObjectType>
@@ -13350,21 +13457,12 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=15155</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=15181" BrowseName="ConnectionProperties" ParentNodeId="i=15155" DataType="i=14533" ValueRank="1">
-    <DisplayName>ConnectionProperties</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=15155</Reference>
-    </References>
-  </UAVariable>
   <UAObjectType NodeId="i=21136" BrowseName="BrokerWriterGroupTransportType">
     <DisplayName>BrokerWriterGroupTransportType</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=21137</Reference>
       <Reference ReferenceType="HasProperty">i=15246</Reference>
       <Reference ReferenceType="HasProperty">i=15247</Reference>
-      <Reference ReferenceType="HasProperty">i=15248</Reference>
       <Reference ReferenceType="HasProperty">i=15249</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=17997</Reference>
     </References>
@@ -13393,14 +13491,6 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=21136</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=15248" BrowseName="WriterGroupProperties" ParentNodeId="i=21136" DataType="i=14533" ValueRank="1">
-    <DisplayName>WriterGroupProperties</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=21136</Reference>
-    </References>
-  </UAVariable>
   <UAVariable NodeId="i=15249" BrowseName="RequestedDeliveryGuarantee" ParentNodeId="i=21136" DataType="i=15008">
     <DisplayName>RequestedDeliveryGuarantee</DisplayName>
     <References>
@@ -13416,7 +13506,6 @@
       <Reference ReferenceType="HasProperty">i=21140</Reference>
       <Reference ReferenceType="HasProperty">i=15250</Reference>
       <Reference ReferenceType="HasProperty">i=15251</Reference>
-      <Reference ReferenceType="HasProperty">i=15253</Reference>
       <Reference ReferenceType="HasProperty">i=15330</Reference>
       <Reference ReferenceType="HasProperty">i=21141</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15305</Reference>
@@ -13448,14 +13537,6 @@
   </UAVariable>
   <UAVariable NodeId="i=15251" BrowseName="AuthenticationProfileUri" ParentNodeId="i=21138" DataType="String">
     <DisplayName>AuthenticationProfileUri</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=21138</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=15253" BrowseName="DataSetWriterProperties" ParentNodeId="i=21138" DataType="i=14533" ValueRank="1">
-    <DisplayName>DataSetWriterProperties</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>

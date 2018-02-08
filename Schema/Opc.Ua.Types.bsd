@@ -446,6 +446,8 @@
     <opc:Field Name="DataSetFieldContentMask" TypeName="tns:DataSetFieldContentMask" />
     <opc:Field Name="KeyFrameCount" TypeName="opc:UInt32" />
     <opc:Field Name="DataSetName" TypeName="opc:String" />
+    <opc:Field Name="NoOfDataSetWriterProperties" TypeName="opc:Int32" />
+    <opc:Field Name="DataSetWriterProperties" TypeName="tns:KeyValuePair" LengthField="NoOfDataSetWriterProperties" />
     <opc:Field Name="TransportSettings" TypeName="ua:ExtensionObject" />
     <opc:Field Name="MessageSettings" TypeName="ua:ExtensionObject" />
   </opc:StructuredType>
@@ -464,6 +466,8 @@
     <opc:Field Name="NoOfSecurityKeyServices" TypeName="opc:Int32" />
     <opc:Field Name="SecurityKeyServices" TypeName="tns:EndpointDescription" LengthField="NoOfSecurityKeyServices" />
     <opc:Field Name="MaxNetworkMessageSize" TypeName="opc:UInt32" />
+    <opc:Field Name="NoOfGroupProperties" TypeName="opc:Int32" />
+    <opc:Field Name="GroupProperties" TypeName="tns:KeyValuePair" LengthField="NoOfGroupProperties" />
   </opc:StructuredType>
 
   <opc:StructuredType Name="WriterGroupDataType" BaseType="tns:PubSubGroupDataType">
@@ -474,6 +478,8 @@
     <opc:Field Name="NoOfSecurityKeyServices" TypeName="opc:Int32" />
     <opc:Field Name="SecurityKeyServices" TypeName="tns:EndpointDescription" LengthField="NoOfSecurityKeyServices" />
     <opc:Field Name="MaxNetworkMessageSize" TypeName="opc:UInt32" SourceType="tns:PubSubGroupDataType" />
+    <opc:Field Name="NoOfGroupProperties" TypeName="opc:Int32" />
+    <opc:Field Name="GroupProperties" TypeName="tns:KeyValuePair" LengthField="NoOfGroupProperties" />
     <opc:Field Name="WriterGroupId" TypeName="opc:UInt16" />
     <opc:Field Name="PublishingInterval" TypeName="opc:Double" />
     <opc:Field Name="KeepAliveTime" TypeName="opc:Double" />
@@ -498,6 +504,8 @@
     <opc:Field Name="PublisherId" TypeName="ua:Variant" />
     <opc:Field Name="TransportProfileUri" TypeName="opc:String" />
     <opc:Field Name="Address" TypeName="ua:ExtensionObject" />
+    <opc:Field Name="NoOfConnectionProperties" TypeName="opc:Int32" />
+    <opc:Field Name="ConnectionProperties" TypeName="tns:KeyValuePair" LengthField="NoOfConnectionProperties" />
     <opc:Field Name="TransportSettings" TypeName="ua:ExtensionObject" />
     <opc:Field Name="NoOfWriterGroups" TypeName="opc:Int32" />
     <opc:Field Name="WriterGroups" TypeName="tns:WriterGroupDataType" LengthField="NoOfWriterGroups" />
@@ -525,6 +533,8 @@
     <opc:Field Name="NoOfSecurityKeyServices" TypeName="opc:Int32" />
     <opc:Field Name="SecurityKeyServices" TypeName="tns:EndpointDescription" LengthField="NoOfSecurityKeyServices" />
     <opc:Field Name="MaxNetworkMessageSize" TypeName="opc:UInt32" SourceType="tns:PubSubGroupDataType" />
+    <opc:Field Name="NoOfGroupProperties" TypeName="opc:Int32" />
+    <opc:Field Name="GroupProperties" TypeName="tns:KeyValuePair" LengthField="NoOfGroupProperties" />
     <opc:Field Name="TransportSettings" TypeName="ua:ExtensionObject" />
     <opc:Field Name="MessageSettings" TypeName="ua:ExtensionObject" />
     <opc:Field Name="NoOfDataSetReaders" TypeName="opc:Int32" />
@@ -550,6 +560,8 @@
     <opc:Field Name="SecurityGroupId" TypeName="opc:String" />
     <opc:Field Name="NoOfSecurityKeyServices" TypeName="opc:Int32" />
     <opc:Field Name="SecurityKeyServices" TypeName="tns:EndpointDescription" LengthField="NoOfSecurityKeyServices" />
+    <opc:Field Name="NoOfDataSetReaderProperties" TypeName="opc:Int32" />
+    <opc:Field Name="DataSetReaderProperties" TypeName="tns:KeyValuePair" LengthField="NoOfDataSetReaderProperties" />
     <opc:Field Name="TransportSettings" TypeName="ua:ExtensionObject" />
     <opc:Field Name="MessageSettings" TypeName="ua:ExtensionObject" />
     <opc:Field Name="SubscribedDataSet" TypeName="ua:ExtensionObject" />
@@ -698,8 +710,6 @@
   <opc:StructuredType Name="BrokerConnectionTransportDataType" BaseType="tns:ConnectionTransportDataType">
     <opc:Field Name="ResourceUri" TypeName="opc:String" />
     <opc:Field Name="AuthenticationProfileUri" TypeName="opc:String" />
-    <opc:Field Name="NoOfConnectionProperties" TypeName="opc:Int32" />
-    <opc:Field Name="ConnectionProperties" TypeName="tns:KeyValuePair" LengthField="NoOfConnectionProperties" />
   </opc:StructuredType>
 
   <opc:EnumeratedType Name="BrokerTransportQualityOfService" LengthInBits="32">
@@ -714,8 +724,6 @@
     <opc:Field Name="QueueName" TypeName="opc:String" />
     <opc:Field Name="ResourceUri" TypeName="opc:String" />
     <opc:Field Name="AuthenticationProfileUri" TypeName="opc:String" />
-    <opc:Field Name="NoOfWriterGroupProperties" TypeName="opc:Int32" />
-    <opc:Field Name="WriterGroupProperties" TypeName="tns:KeyValuePair" LengthField="NoOfWriterGroupProperties" />
     <opc:Field Name="RequestedDeliveryGuarantee" TypeName="tns:BrokerTransportQualityOfService" />
   </opc:StructuredType>
 
@@ -723,8 +731,6 @@
     <opc:Field Name="QueueName" TypeName="opc:String" />
     <opc:Field Name="ResourceUri" TypeName="opc:String" />
     <opc:Field Name="AuthenticationProfileUri" TypeName="opc:String" />
-    <opc:Field Name="NoOfDataSetWriterProperties" TypeName="opc:Int32" />
-    <opc:Field Name="DataSetWriterProperties" TypeName="tns:KeyValuePair" LengthField="NoOfDataSetWriterProperties" />
     <opc:Field Name="MetaDataQueueName" TypeName="opc:String" />
     <opc:Field Name="MetaDataUpdateTime" TypeName="opc:Double" />
   </opc:StructuredType>

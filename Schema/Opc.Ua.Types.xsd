@@ -932,6 +932,7 @@
       <xs:element name="DataSetFieldContentMask" type="tns:DataSetFieldContentMask" minOccurs="0" />
       <xs:element name="KeyFrameCount" type="xs:unsignedInt" minOccurs="0" />
       <xs:element name="DataSetName" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="DataSetWriterProperties" type="tns:ListOfKeyValuePair" minOccurs="0" nillable="true" />
       <xs:element name="TransportSettings" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
       <xs:element name="MessageSettings" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
     </xs:sequence>
@@ -979,6 +980,7 @@
       <xs:element name="SecurityGroupId" type="xs:string" minOccurs="0" nillable="true" />
       <xs:element name="SecurityKeyServices" type="tns:ListOfEndpointDescription" minOccurs="0" nillable="true" />
       <xs:element name="MaxNetworkMessageSize" type="xs:unsignedInt" minOccurs="0" />
+      <xs:element name="GroupProperties" type="tns:ListOfKeyValuePair" minOccurs="0" nillable="true" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="PubSubGroupDataType" type="tns:PubSubGroupDataType" />
@@ -1048,6 +1050,7 @@
       <xs:element name="PublisherId" type="ua:Variant" minOccurs="0" />
       <xs:element name="TransportProfileUri" type="xs:string" minOccurs="0" nillable="true" />
       <xs:element name="Address" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
+      <xs:element name="ConnectionProperties" type="tns:ListOfKeyValuePair" minOccurs="0" nillable="true" />
       <xs:element name="TransportSettings" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
       <xs:element name="WriterGroups" type="tns:ListOfWriterGroupDataType" minOccurs="0" nillable="true" />
       <xs:element name="ReaderGroups" type="tns:ListOfReaderGroupDataType" minOccurs="0" nillable="true" />
@@ -1166,6 +1169,7 @@
       <xs:element name="SecurityMode" type="tns:MessageSecurityMode" minOccurs="0" />
       <xs:element name="SecurityGroupId" type="xs:string" minOccurs="0" nillable="true" />
       <xs:element name="SecurityKeyServices" type="tns:ListOfEndpointDescription" minOccurs="0" nillable="true" />
+      <xs:element name="DataSetReaderProperties" type="tns:ListOfKeyValuePair" minOccurs="0" nillable="true" />
       <xs:element name="TransportSettings" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
       <xs:element name="MessageSettings" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
       <xs:element name="SubscribedDataSet" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
@@ -1535,7 +1539,6 @@
         <xs:sequence>
           <xs:element name="ResourceUri" type="xs:string" minOccurs="0" nillable="true" />
           <xs:element name="AuthenticationProfileUri" type="xs:string" minOccurs="0" nillable="true" />
-          <xs:element name="ConnectionProperties" type="tns:ListOfKeyValuePair" minOccurs="0" nillable="true" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -1574,7 +1577,6 @@
           <xs:element name="QueueName" type="xs:string" minOccurs="0" nillable="true" />
           <xs:element name="ResourceUri" type="xs:string" minOccurs="0" nillable="true" />
           <xs:element name="AuthenticationProfileUri" type="xs:string" minOccurs="0" nillable="true" />
-          <xs:element name="WriterGroupProperties" type="tns:ListOfKeyValuePair" minOccurs="0" nillable="true" />
           <xs:element name="RequestedDeliveryGuarantee" type="tns:BrokerTransportQualityOfService" minOccurs="0" />
         </xs:sequence>
       </xs:extension>
@@ -1596,7 +1598,6 @@
           <xs:element name="QueueName" type="xs:string" minOccurs="0" nillable="true" />
           <xs:element name="ResourceUri" type="xs:string" minOccurs="0" nillable="true" />
           <xs:element name="AuthenticationProfileUri" type="xs:string" minOccurs="0" nillable="true" />
-          <xs:element name="DataSetWriterProperties" type="tns:ListOfKeyValuePair" minOccurs="0" nillable="true" />
           <xs:element name="MetaDataQueueName" type="xs:string" minOccurs="0" nillable="true" />
           <xs:element name="MetaDataUpdateTime" type="xs:double" minOccurs="0" />
         </xs:sequence>

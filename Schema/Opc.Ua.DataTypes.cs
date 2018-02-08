@@ -5934,6 +5934,7 @@ namespace Opc.Ua
             m_dataSetFieldContentMask = DataSetFieldContentMask.StatusCode;
             m_keyFrameCount = (uint)0;
             m_dataSetName = null;
+            m_dataSetWriterProperties = new KeyValuePairCollection();
             m_transportSettings = null;
             m_messageSettings = null;
         }
@@ -6001,9 +6002,31 @@ namespace Opc.Ua
         }
 
         /// <summary>
+        /// A description for the DataSetWriterProperties field.
+        /// </summary>
+        [DataMember(Name = "DataSetWriterProperties", IsRequired = false, Order = 7)]
+        public KeyValuePairCollection DataSetWriterProperties
+        {
+            get
+            {
+                return m_dataSetWriterProperties;
+            }
+
+            set
+            {
+                m_dataSetWriterProperties = value;
+
+                if (value == null)
+                {
+                    m_dataSetWriterProperties = new KeyValuePairCollection();
+                }
+            }
+        }
+
+        /// <summary>
         /// A description for the TransportSettings field.
         /// </summary>
-        [DataMember(Name = "TransportSettings", IsRequired = false, Order = 7)]
+        [DataMember(Name = "TransportSettings", IsRequired = false, Order = 8)]
         public ExtensionObject TransportSettings
         {
             get { return m_transportSettings;  }
@@ -6013,7 +6036,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the MessageSettings field.
         /// </summary>
-        [DataMember(Name = "MessageSettings", IsRequired = false, Order = 8)]
+        [DataMember(Name = "MessageSettings", IsRequired = false, Order = 9)]
         public ExtensionObject MessageSettings
         {
             get { return m_messageSettings;  }
@@ -6051,6 +6074,7 @@ namespace Opc.Ua
             encoder.WriteEnumerated("DataSetFieldContentMask", DataSetFieldContentMask);
             encoder.WriteUInt32("KeyFrameCount", KeyFrameCount);
             encoder.WriteString("DataSetName", DataSetName);
+            encoder.WriteEncodeableArray("DataSetWriterProperties", DataSetWriterProperties.ToArray(), typeof(KeyValuePair));
             encoder.WriteExtensionObject("TransportSettings", TransportSettings);
             encoder.WriteExtensionObject("MessageSettings", MessageSettings);
 
@@ -6068,6 +6092,7 @@ namespace Opc.Ua
             DataSetFieldContentMask = (DataSetFieldContentMask)decoder.ReadEnumerated("DataSetFieldContentMask", typeof(DataSetFieldContentMask));
             KeyFrameCount = decoder.ReadUInt32("KeyFrameCount");
             DataSetName = decoder.ReadString("DataSetName");
+            DataSetWriterProperties = (KeyValuePairCollection)decoder.ReadEncodeableArray("DataSetWriterProperties", typeof(KeyValuePair));
             TransportSettings = decoder.ReadExtensionObject("TransportSettings");
             MessageSettings = decoder.ReadExtensionObject("MessageSettings");
 
@@ -6095,6 +6120,7 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_dataSetFieldContentMask, value.m_dataSetFieldContentMask)) return false;
             if (!Utils.IsEqual(m_keyFrameCount, value.m_keyFrameCount)) return false;
             if (!Utils.IsEqual(m_dataSetName, value.m_dataSetName)) return false;
+            if (!Utils.IsEqual(m_dataSetWriterProperties, value.m_dataSetWriterProperties)) return false;
             if (!Utils.IsEqual(m_transportSettings, value.m_transportSettings)) return false;
             if (!Utils.IsEqual(m_messageSettings, value.m_messageSettings)) return false;
 
@@ -6120,6 +6146,7 @@ namespace Opc.Ua
             clone.m_dataSetFieldContentMask = (DataSetFieldContentMask)Utils.Clone(this.m_dataSetFieldContentMask);
             clone.m_keyFrameCount = (uint)Utils.Clone(this.m_keyFrameCount);
             clone.m_dataSetName = (string)Utils.Clone(this.m_dataSetName);
+            clone.m_dataSetWriterProperties = (KeyValuePairCollection)Utils.Clone(this.m_dataSetWriterProperties);
             clone.m_transportSettings = (ExtensionObject)Utils.Clone(this.m_transportSettings);
             clone.m_messageSettings = (ExtensionObject)Utils.Clone(this.m_messageSettings);
 
@@ -6134,6 +6161,7 @@ namespace Opc.Ua
         private DataSetFieldContentMask m_dataSetFieldContentMask;
         private uint m_keyFrameCount;
         private string m_dataSetName;
+        private KeyValuePairCollection m_dataSetWriterProperties;
         private ExtensionObject m_transportSettings;
         private ExtensionObject m_messageSettings;
         #endregion
@@ -6673,6 +6701,7 @@ namespace Opc.Ua
             m_securityGroupId = null;
             m_securityKeyServices = new EndpointDescriptionCollection();
             m_maxNetworkMessageSize = (uint)0;
+            m_groupProperties = new KeyValuePairCollection();
         }
         #endregion
 
@@ -6748,6 +6777,28 @@ namespace Opc.Ua
             get { return m_maxNetworkMessageSize;  }
             set { m_maxNetworkMessageSize = value; }
         }
+
+        /// <summary>
+        /// A description for the GroupProperties field.
+        /// </summary>
+        [DataMember(Name = "GroupProperties", IsRequired = false, Order = 7)]
+        public KeyValuePairCollection GroupProperties
+        {
+            get
+            {
+                return m_groupProperties;
+            }
+
+            set
+            {
+                m_groupProperties = value;
+
+                if (value == null)
+                {
+                    m_groupProperties = new KeyValuePairCollection();
+                }
+            }
+        }
         #endregion
 
         #region IEncodeable Members
@@ -6780,6 +6831,7 @@ namespace Opc.Ua
             encoder.WriteString("SecurityGroupId", SecurityGroupId);
             encoder.WriteEncodeableArray("SecurityKeyServices", SecurityKeyServices.ToArray(), typeof(EndpointDescription));
             encoder.WriteUInt32("MaxNetworkMessageSize", MaxNetworkMessageSize);
+            encoder.WriteEncodeableArray("GroupProperties", GroupProperties.ToArray(), typeof(KeyValuePair));
 
             encoder.PopNamespace();
         }
@@ -6795,6 +6847,7 @@ namespace Opc.Ua
             SecurityGroupId = decoder.ReadString("SecurityGroupId");
             SecurityKeyServices = (EndpointDescriptionCollection)decoder.ReadEncodeableArray("SecurityKeyServices", typeof(EndpointDescription));
             MaxNetworkMessageSize = decoder.ReadUInt32("MaxNetworkMessageSize");
+            GroupProperties = (KeyValuePairCollection)decoder.ReadEncodeableArray("GroupProperties", typeof(KeyValuePair));
 
             decoder.PopNamespace();
         }
@@ -6820,6 +6873,7 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_securityGroupId, value.m_securityGroupId)) return false;
             if (!Utils.IsEqual(m_securityKeyServices, value.m_securityKeyServices)) return false;
             if (!Utils.IsEqual(m_maxNetworkMessageSize, value.m_maxNetworkMessageSize)) return false;
+            if (!Utils.IsEqual(m_groupProperties, value.m_groupProperties)) return false;
 
             return true;
         }
@@ -6843,6 +6897,7 @@ namespace Opc.Ua
             clone.m_securityGroupId = (string)Utils.Clone(this.m_securityGroupId);
             clone.m_securityKeyServices = (EndpointDescriptionCollection)Utils.Clone(this.m_securityKeyServices);
             clone.m_maxNetworkMessageSize = (uint)Utils.Clone(this.m_maxNetworkMessageSize);
+            clone.m_groupProperties = (KeyValuePairCollection)Utils.Clone(this.m_groupProperties);
 
             return clone;
         }
@@ -6855,6 +6910,7 @@ namespace Opc.Ua
         private string m_securityGroupId;
         private EndpointDescriptionCollection m_securityKeyServices;
         private uint m_maxNetworkMessageSize;
+        private KeyValuePairCollection m_groupProperties;
         #endregion
     }
 
@@ -7751,6 +7807,7 @@ namespace Opc.Ua
             m_publisherId = Variant.Null;
             m_transportProfileUri = null;
             m_address = null;
+            m_connectionProperties = new KeyValuePairCollection();
             m_transportSettings = null;
             m_writerGroups = new WriterGroupDataTypeCollection();
             m_readerGroups = new ReaderGroupDataTypeCollection();
@@ -7809,9 +7866,31 @@ namespace Opc.Ua
         }
 
         /// <summary>
+        /// A description for the ConnectionProperties field.
+        /// </summary>
+        [DataMember(Name = "ConnectionProperties", IsRequired = false, Order = 6)]
+        public KeyValuePairCollection ConnectionProperties
+        {
+            get
+            {
+                return m_connectionProperties;
+            }
+
+            set
+            {
+                m_connectionProperties = value;
+
+                if (value == null)
+                {
+                    m_connectionProperties = new KeyValuePairCollection();
+                }
+            }
+        }
+
+        /// <summary>
         /// A description for the TransportSettings field.
         /// </summary>
-        [DataMember(Name = "TransportSettings", IsRequired = false, Order = 6)]
+        [DataMember(Name = "TransportSettings", IsRequired = false, Order = 7)]
         public ExtensionObject TransportSettings
         {
             get { return m_transportSettings;  }
@@ -7821,7 +7900,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the WriterGroups field.
         /// </summary>
-        [DataMember(Name = "WriterGroups", IsRequired = false, Order = 7)]
+        [DataMember(Name = "WriterGroups", IsRequired = false, Order = 8)]
         public WriterGroupDataTypeCollection WriterGroups
         {
             get
@@ -7843,7 +7922,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the ReaderGroups field.
         /// </summary>
-        [DataMember(Name = "ReaderGroups", IsRequired = false, Order = 8)]
+        [DataMember(Name = "ReaderGroups", IsRequired = false, Order = 9)]
         public ReaderGroupDataTypeCollection ReaderGroups
         {
             get
@@ -7892,6 +7971,7 @@ namespace Opc.Ua
             encoder.WriteVariant("PublisherId", PublisherId);
             encoder.WriteString("TransportProfileUri", TransportProfileUri);
             encoder.WriteExtensionObject("Address", Address);
+            encoder.WriteEncodeableArray("ConnectionProperties", ConnectionProperties.ToArray(), typeof(KeyValuePair));
             encoder.WriteExtensionObject("TransportSettings", TransportSettings);
             encoder.WriteEncodeableArray("WriterGroups", WriterGroups.ToArray(), typeof(WriterGroupDataType));
             encoder.WriteEncodeableArray("ReaderGroups", ReaderGroups.ToArray(), typeof(ReaderGroupDataType));
@@ -7909,6 +7989,7 @@ namespace Opc.Ua
             PublisherId = decoder.ReadVariant("PublisherId");
             TransportProfileUri = decoder.ReadString("TransportProfileUri");
             Address = decoder.ReadExtensionObject("Address");
+            ConnectionProperties = (KeyValuePairCollection)decoder.ReadEncodeableArray("ConnectionProperties", typeof(KeyValuePair));
             TransportSettings = decoder.ReadExtensionObject("TransportSettings");
             WriterGroups = (WriterGroupDataTypeCollection)decoder.ReadEncodeableArray("WriterGroups", typeof(WriterGroupDataType));
             ReaderGroups = (ReaderGroupDataTypeCollection)decoder.ReadEncodeableArray("ReaderGroups", typeof(ReaderGroupDataType));
@@ -7936,6 +8017,7 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_publisherId, value.m_publisherId)) return false;
             if (!Utils.IsEqual(m_transportProfileUri, value.m_transportProfileUri)) return false;
             if (!Utils.IsEqual(m_address, value.m_address)) return false;
+            if (!Utils.IsEqual(m_connectionProperties, value.m_connectionProperties)) return false;
             if (!Utils.IsEqual(m_transportSettings, value.m_transportSettings)) return false;
             if (!Utils.IsEqual(m_writerGroups, value.m_writerGroups)) return false;
             if (!Utils.IsEqual(m_readerGroups, value.m_readerGroups)) return false;
@@ -7961,6 +8043,7 @@ namespace Opc.Ua
             clone.m_publisherId = (Variant)Utils.Clone(this.m_publisherId);
             clone.m_transportProfileUri = (string)Utils.Clone(this.m_transportProfileUri);
             clone.m_address = (ExtensionObject)Utils.Clone(this.m_address);
+            clone.m_connectionProperties = (KeyValuePairCollection)Utils.Clone(this.m_connectionProperties);
             clone.m_transportSettings = (ExtensionObject)Utils.Clone(this.m_transportSettings);
             clone.m_writerGroups = (WriterGroupDataTypeCollection)Utils.Clone(this.m_writerGroups);
             clone.m_readerGroups = (ReaderGroupDataTypeCollection)Utils.Clone(this.m_readerGroups);
@@ -7975,6 +8058,7 @@ namespace Opc.Ua
         private Variant m_publisherId;
         private string m_transportProfileUri;
         private ExtensionObject m_address;
+        private KeyValuePairCollection m_connectionProperties;
         private ExtensionObject m_transportSettings;
         private WriterGroupDataTypeCollection m_writerGroups;
         private ReaderGroupDataTypeCollection m_readerGroups;
@@ -9435,6 +9519,7 @@ namespace Opc.Ua
             m_securityMode = MessageSecurityMode.Invalid;
             m_securityGroupId = null;
             m_securityKeyServices = new EndpointDescriptionCollection();
+            m_dataSetReaderProperties = new KeyValuePairCollection();
             m_transportSettings = null;
             m_messageSettings = null;
             m_subscribedDataSet = null;
@@ -9577,9 +9662,31 @@ namespace Opc.Ua
         }
 
         /// <summary>
+        /// A description for the DataSetReaderProperties field.
+        /// </summary>
+        [DataMember(Name = "DataSetReaderProperties", IsRequired = false, Order = 12)]
+        public KeyValuePairCollection DataSetReaderProperties
+        {
+            get
+            {
+                return m_dataSetReaderProperties;
+            }
+
+            set
+            {
+                m_dataSetReaderProperties = value;
+
+                if (value == null)
+                {
+                    m_dataSetReaderProperties = new KeyValuePairCollection();
+                }
+            }
+        }
+
+        /// <summary>
         /// A description for the TransportSettings field.
         /// </summary>
-        [DataMember(Name = "TransportSettings", IsRequired = false, Order = 12)]
+        [DataMember(Name = "TransportSettings", IsRequired = false, Order = 13)]
         public ExtensionObject TransportSettings
         {
             get { return m_transportSettings;  }
@@ -9589,7 +9696,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the MessageSettings field.
         /// </summary>
-        [DataMember(Name = "MessageSettings", IsRequired = false, Order = 13)]
+        [DataMember(Name = "MessageSettings", IsRequired = false, Order = 14)]
         public ExtensionObject MessageSettings
         {
             get { return m_messageSettings;  }
@@ -9599,7 +9706,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the SubscribedDataSet field.
         /// </summary>
-        [DataMember(Name = "SubscribedDataSet", IsRequired = false, Order = 14)]
+        [DataMember(Name = "SubscribedDataSet", IsRequired = false, Order = 15)]
         public ExtensionObject SubscribedDataSet
         {
             get { return m_subscribedDataSet;  }
@@ -9642,6 +9749,7 @@ namespace Opc.Ua
             encoder.WriteEnumerated("SecurityMode", SecurityMode);
             encoder.WriteString("SecurityGroupId", SecurityGroupId);
             encoder.WriteEncodeableArray("SecurityKeyServices", SecurityKeyServices.ToArray(), typeof(EndpointDescription));
+            encoder.WriteEncodeableArray("DataSetReaderProperties", DataSetReaderProperties.ToArray(), typeof(KeyValuePair));
             encoder.WriteExtensionObject("TransportSettings", TransportSettings);
             encoder.WriteExtensionObject("MessageSettings", MessageSettings);
             encoder.WriteExtensionObject("SubscribedDataSet", SubscribedDataSet);
@@ -9665,6 +9773,7 @@ namespace Opc.Ua
             SecurityMode = (MessageSecurityMode)decoder.ReadEnumerated("SecurityMode", typeof(MessageSecurityMode));
             SecurityGroupId = decoder.ReadString("SecurityGroupId");
             SecurityKeyServices = (EndpointDescriptionCollection)decoder.ReadEncodeableArray("SecurityKeyServices", typeof(EndpointDescription));
+            DataSetReaderProperties = (KeyValuePairCollection)decoder.ReadEncodeableArray("DataSetReaderProperties", typeof(KeyValuePair));
             TransportSettings = decoder.ReadExtensionObject("TransportSettings");
             MessageSettings = decoder.ReadExtensionObject("MessageSettings");
             SubscribedDataSet = decoder.ReadExtensionObject("SubscribedDataSet");
@@ -9698,6 +9807,7 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_securityMode, value.m_securityMode)) return false;
             if (!Utils.IsEqual(m_securityGroupId, value.m_securityGroupId)) return false;
             if (!Utils.IsEqual(m_securityKeyServices, value.m_securityKeyServices)) return false;
+            if (!Utils.IsEqual(m_dataSetReaderProperties, value.m_dataSetReaderProperties)) return false;
             if (!Utils.IsEqual(m_transportSettings, value.m_transportSettings)) return false;
             if (!Utils.IsEqual(m_messageSettings, value.m_messageSettings)) return false;
             if (!Utils.IsEqual(m_subscribedDataSet, value.m_subscribedDataSet)) return false;
@@ -9729,6 +9839,7 @@ namespace Opc.Ua
             clone.m_securityMode = (MessageSecurityMode)Utils.Clone(this.m_securityMode);
             clone.m_securityGroupId = (string)Utils.Clone(this.m_securityGroupId);
             clone.m_securityKeyServices = (EndpointDescriptionCollection)Utils.Clone(this.m_securityKeyServices);
+            clone.m_dataSetReaderProperties = (KeyValuePairCollection)Utils.Clone(this.m_dataSetReaderProperties);
             clone.m_transportSettings = (ExtensionObject)Utils.Clone(this.m_transportSettings);
             clone.m_messageSettings = (ExtensionObject)Utils.Clone(this.m_messageSettings);
             clone.m_subscribedDataSet = (ExtensionObject)Utils.Clone(this.m_subscribedDataSet);
@@ -9749,6 +9860,7 @@ namespace Opc.Ua
         private MessageSecurityMode m_securityMode;
         private string m_securityGroupId;
         private EndpointDescriptionCollection m_securityKeyServices;
+        private KeyValuePairCollection m_dataSetReaderProperties;
         private ExtensionObject m_transportSettings;
         private ExtensionObject m_messageSettings;
         private ExtensionObject m_subscribedDataSet;
@@ -14425,7 +14537,6 @@ namespace Opc.Ua
         {
             m_resourceUri = null;
             m_authenticationProfileUri = null;
-            m_connectionProperties = new KeyValuePairCollection();
         }
         #endregion
 
@@ -14448,28 +14559,6 @@ namespace Opc.Ua
         {
             get { return m_authenticationProfileUri;  }
             set { m_authenticationProfileUri = value; }
-        }
-
-        /// <summary>
-        /// A description for the ConnectionProperties field.
-        /// </summary>
-        [DataMember(Name = "ConnectionProperties", IsRequired = false, Order = 3)]
-        public KeyValuePairCollection ConnectionProperties
-        {
-            get
-            {
-                return m_connectionProperties;
-            }
-
-            set
-            {
-                m_connectionProperties = value;
-
-                if (value == null)
-                {
-                    m_connectionProperties = new KeyValuePairCollection();
-                }
-            }
         }
         #endregion
 
@@ -14501,7 +14590,6 @@ namespace Opc.Ua
 
             encoder.WriteString("ResourceUri", ResourceUri);
             encoder.WriteString("AuthenticationProfileUri", AuthenticationProfileUri);
-            encoder.WriteEncodeableArray("ConnectionProperties", ConnectionProperties.ToArray(), typeof(KeyValuePair));
 
             encoder.PopNamespace();
         }
@@ -14515,7 +14603,6 @@ namespace Opc.Ua
 
             ResourceUri = decoder.ReadString("ResourceUri");
             AuthenticationProfileUri = decoder.ReadString("AuthenticationProfileUri");
-            ConnectionProperties = (KeyValuePairCollection)decoder.ReadEncodeableArray("ConnectionProperties", typeof(KeyValuePair));
 
             decoder.PopNamespace();
         }
@@ -14538,7 +14625,6 @@ namespace Opc.Ua
             if (!base.IsEqual(encodeable)) return false;
             if (!Utils.IsEqual(m_resourceUri, value.m_resourceUri)) return false;
             if (!Utils.IsEqual(m_authenticationProfileUri, value.m_authenticationProfileUri)) return false;
-            if (!Utils.IsEqual(m_connectionProperties, value.m_connectionProperties)) return false;
 
             return true;
         }    
@@ -14558,7 +14644,6 @@ namespace Opc.Ua
 
             clone.m_resourceUri = (string)Utils.Clone(this.m_resourceUri);
             clone.m_authenticationProfileUri = (string)Utils.Clone(this.m_authenticationProfileUri);
-            clone.m_connectionProperties = (KeyValuePairCollection)Utils.Clone(this.m_connectionProperties);
 
             return clone;
         }
@@ -14567,7 +14652,6 @@ namespace Opc.Ua
         #region Private Fields
         private string m_resourceUri;
         private string m_authenticationProfileUri;
-        private KeyValuePairCollection m_connectionProperties;
         #endregion
     }
 
@@ -14822,7 +14906,6 @@ namespace Opc.Ua
             m_queueName = null;
             m_resourceUri = null;
             m_authenticationProfileUri = null;
-            m_writerGroupProperties = new KeyValuePairCollection();
             m_requestedDeliveryGuarantee = BrokerTransportQualityOfService.NotSpecified;
         }
         #endregion
@@ -14859,31 +14942,9 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the WriterGroupProperties field.
-        /// </summary>
-        [DataMember(Name = "WriterGroupProperties", IsRequired = false, Order = 4)]
-        public KeyValuePairCollection WriterGroupProperties
-        {
-            get
-            {
-                return m_writerGroupProperties;
-            }
-
-            set
-            {
-                m_writerGroupProperties = value;
-
-                if (value == null)
-                {
-                    m_writerGroupProperties = new KeyValuePairCollection();
-                }
-            }
-        }
-
-        /// <summary>
         /// A description for the RequestedDeliveryGuarantee field.
         /// </summary>
-        [DataMember(Name = "RequestedDeliveryGuarantee", IsRequired = false, Order = 5)]
+        [DataMember(Name = "RequestedDeliveryGuarantee", IsRequired = false, Order = 4)]
         public BrokerTransportQualityOfService RequestedDeliveryGuarantee
         {
             get { return m_requestedDeliveryGuarantee;  }
@@ -14920,7 +14981,6 @@ namespace Opc.Ua
             encoder.WriteString("QueueName", QueueName);
             encoder.WriteString("ResourceUri", ResourceUri);
             encoder.WriteString("AuthenticationProfileUri", AuthenticationProfileUri);
-            encoder.WriteEncodeableArray("WriterGroupProperties", WriterGroupProperties.ToArray(), typeof(KeyValuePair));
             encoder.WriteEnumerated("RequestedDeliveryGuarantee", RequestedDeliveryGuarantee);
 
             encoder.PopNamespace();
@@ -14936,7 +14996,6 @@ namespace Opc.Ua
             QueueName = decoder.ReadString("QueueName");
             ResourceUri = decoder.ReadString("ResourceUri");
             AuthenticationProfileUri = decoder.ReadString("AuthenticationProfileUri");
-            WriterGroupProperties = (KeyValuePairCollection)decoder.ReadEncodeableArray("WriterGroupProperties", typeof(KeyValuePair));
             RequestedDeliveryGuarantee = (BrokerTransportQualityOfService)decoder.ReadEnumerated("RequestedDeliveryGuarantee", typeof(BrokerTransportQualityOfService));
 
             decoder.PopNamespace();
@@ -14961,7 +15020,6 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_queueName, value.m_queueName)) return false;
             if (!Utils.IsEqual(m_resourceUri, value.m_resourceUri)) return false;
             if (!Utils.IsEqual(m_authenticationProfileUri, value.m_authenticationProfileUri)) return false;
-            if (!Utils.IsEqual(m_writerGroupProperties, value.m_writerGroupProperties)) return false;
             if (!Utils.IsEqual(m_requestedDeliveryGuarantee, value.m_requestedDeliveryGuarantee)) return false;
 
             return true;
@@ -14983,7 +15041,6 @@ namespace Opc.Ua
             clone.m_queueName = (string)Utils.Clone(this.m_queueName);
             clone.m_resourceUri = (string)Utils.Clone(this.m_resourceUri);
             clone.m_authenticationProfileUri = (string)Utils.Clone(this.m_authenticationProfileUri);
-            clone.m_writerGroupProperties = (KeyValuePairCollection)Utils.Clone(this.m_writerGroupProperties);
             clone.m_requestedDeliveryGuarantee = (BrokerTransportQualityOfService)Utils.Clone(this.m_requestedDeliveryGuarantee);
 
             return clone;
@@ -14994,7 +15051,6 @@ namespace Opc.Ua
         private string m_queueName;
         private string m_resourceUri;
         private string m_authenticationProfileUri;
-        private KeyValuePairCollection m_writerGroupProperties;
         private BrokerTransportQualityOfService m_requestedDeliveryGuarantee;
         #endregion
     }
@@ -15122,7 +15178,6 @@ namespace Opc.Ua
             m_queueName = null;
             m_resourceUri = null;
             m_authenticationProfileUri = null;
-            m_dataSetWriterProperties = new KeyValuePairCollection();
             m_metaDataQueueName = null;
             m_metaDataUpdateTime = (double)0;
         }
@@ -15160,31 +15215,9 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DataSetWriterProperties field.
-        /// </summary>
-        [DataMember(Name = "DataSetWriterProperties", IsRequired = false, Order = 4)]
-        public KeyValuePairCollection DataSetWriterProperties
-        {
-            get
-            {
-                return m_dataSetWriterProperties;
-            }
-
-            set
-            {
-                m_dataSetWriterProperties = value;
-
-                if (value == null)
-                {
-                    m_dataSetWriterProperties = new KeyValuePairCollection();
-                }
-            }
-        }
-
-        /// <summary>
         /// A description for the MetaDataQueueName field.
         /// </summary>
-        [DataMember(Name = "MetaDataQueueName", IsRequired = false, Order = 5)]
+        [DataMember(Name = "MetaDataQueueName", IsRequired = false, Order = 4)]
         public string MetaDataQueueName
         {
             get { return m_metaDataQueueName;  }
@@ -15194,7 +15227,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the MetaDataUpdateTime field.
         /// </summary>
-        [DataMember(Name = "MetaDataUpdateTime", IsRequired = false, Order = 6)]
+        [DataMember(Name = "MetaDataUpdateTime", IsRequired = false, Order = 5)]
         public double MetaDataUpdateTime
         {
             get { return m_metaDataUpdateTime;  }
@@ -15231,7 +15264,6 @@ namespace Opc.Ua
             encoder.WriteString("QueueName", QueueName);
             encoder.WriteString("ResourceUri", ResourceUri);
             encoder.WriteString("AuthenticationProfileUri", AuthenticationProfileUri);
-            encoder.WriteEncodeableArray("DataSetWriterProperties", DataSetWriterProperties.ToArray(), typeof(KeyValuePair));
             encoder.WriteString("MetaDataQueueName", MetaDataQueueName);
             encoder.WriteDouble("MetaDataUpdateTime", MetaDataUpdateTime);
 
@@ -15248,7 +15280,6 @@ namespace Opc.Ua
             QueueName = decoder.ReadString("QueueName");
             ResourceUri = decoder.ReadString("ResourceUri");
             AuthenticationProfileUri = decoder.ReadString("AuthenticationProfileUri");
-            DataSetWriterProperties = (KeyValuePairCollection)decoder.ReadEncodeableArray("DataSetWriterProperties", typeof(KeyValuePair));
             MetaDataQueueName = decoder.ReadString("MetaDataQueueName");
             MetaDataUpdateTime = decoder.ReadDouble("MetaDataUpdateTime");
 
@@ -15274,7 +15305,6 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_queueName, value.m_queueName)) return false;
             if (!Utils.IsEqual(m_resourceUri, value.m_resourceUri)) return false;
             if (!Utils.IsEqual(m_authenticationProfileUri, value.m_authenticationProfileUri)) return false;
-            if (!Utils.IsEqual(m_dataSetWriterProperties, value.m_dataSetWriterProperties)) return false;
             if (!Utils.IsEqual(m_metaDataQueueName, value.m_metaDataQueueName)) return false;
             if (!Utils.IsEqual(m_metaDataUpdateTime, value.m_metaDataUpdateTime)) return false;
 
@@ -15297,7 +15327,6 @@ namespace Opc.Ua
             clone.m_queueName = (string)Utils.Clone(this.m_queueName);
             clone.m_resourceUri = (string)Utils.Clone(this.m_resourceUri);
             clone.m_authenticationProfileUri = (string)Utils.Clone(this.m_authenticationProfileUri);
-            clone.m_dataSetWriterProperties = (KeyValuePairCollection)Utils.Clone(this.m_dataSetWriterProperties);
             clone.m_metaDataQueueName = (string)Utils.Clone(this.m_metaDataQueueName);
             clone.m_metaDataUpdateTime = (double)Utils.Clone(this.m_metaDataUpdateTime);
 
@@ -15309,7 +15338,6 @@ namespace Opc.Ua
         private string m_queueName;
         private string m_resourceUri;
         private string m_authenticationProfileUri;
-        private KeyValuePairCollection m_dataSetWriterProperties;
         private string m_metaDataQueueName;
         private double m_metaDataUpdateTime;
         #endregion

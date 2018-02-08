@@ -20835,6 +20835,11 @@ namespace Opc.Ua
         public const uint PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_Selections = 17706;
 
         /// <summary>
+        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_ConnectionProperties Variable.
+        /// </summary>
+        public const uint PublishSubscribeType_ConnectionName_Placeholder_ConnectionProperties = 17478;
+
+        /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Address_NetworkInterface Variable.
         /// </summary>
         public const uint PublishSubscribeType_ConnectionName_Placeholder_Address_NetworkInterface = 15533;
@@ -21425,6 +21430,11 @@ namespace Opc.Ua
         public const uint PublishSubscribeType_Diagnostics_LiveValues_OperationalDataSetReaders_DiagnosticsLevel = 18768;
 
         /// <summary>
+        /// The identifier for the PublishSubscribeType_SupportedTransportProfiles Variable.
+        /// </summary>
+        public const uint PublishSubscribeType_SupportedTransportProfiles = 17479;
+
+        /// <summary>
         /// The identifier for the PublishSubscribe_GetSecurityKeys_InputArguments Variable.
         /// </summary>
         public const uint PublishSubscribe_GetSecurityKeys_InputArguments = 15216;
@@ -21473,6 +21483,11 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_Selections Variable.
         /// </summary>
         public const uint PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_Selections = 15848;
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_ConnectionProperties Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_ConnectionProperties = 17480;
 
         /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Address_NetworkInterface Variable.
@@ -22065,6 +22080,11 @@ namespace Opc.Ua
         public const uint PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetReaders_DiagnosticsLevel = 17466;
 
         /// <summary>
+        /// The identifier for the PublishSubscribe_SupportedTransportProfiles Variable.
+        /// </summary>
+        public const uint PublishSubscribe_SupportedTransportProfiles = 17481;
+
+        /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_DataSetWriterId Variable.
         /// </summary>
         public const uint PublishedDataSetType_DataSetWriterName_Placeholder_DataSetWriterId = 16720;
@@ -22073,6 +22093,11 @@ namespace Opc.Ua
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_DataSetFieldContentMask Variable.
         /// </summary>
         public const uint PublishedDataSetType_DataSetWriterName_Placeholder_DataSetFieldContentMask = 16721;
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_DataSetWriterProperties Variable.
+        /// </summary>
+        public const uint PublishedDataSetType_DataSetWriterName_Placeholder_DataSetWriterProperties = 17482;
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Status_State Variable.
@@ -22395,6 +22420,11 @@ namespace Opc.Ua
         public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_DataSetFieldContentMask = 16761;
 
         /// <summary>
+        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_DataSetWriterProperties Variable.
+        /// </summary>
+        public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_DataSetWriterProperties = 17483;
+
+        /// <summary>
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Status_State Variable.
         /// </summary>
         public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Status_State = 15232;
@@ -22703,6 +22733,11 @@ namespace Opc.Ua
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_DataSetFieldContentMask Variable.
         /// </summary>
         public const uint PublishedEventsType_DataSetWriterName_Placeholder_DataSetFieldContentMask = 16802;
+
+        /// <summary>
+        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_DataSetWriterProperties Variable.
+        /// </summary>
+        public const uint PublishedEventsType_DataSetWriterName_Placeholder_DataSetWriterProperties = 17484;
 
         /// <summary>
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Status_State Variable.
@@ -23165,6 +23200,11 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_TransportProfileUri_Selections = 17710;
 
         /// <summary>
+        /// The identifier for the PubSubConnectionType_ConnectionProperties Variable.
+        /// </summary>
+        public const uint PubSubConnectionType_ConnectionProperties = 17485;
+
+        /// <summary>
         /// The identifier for the PubSubConnectionType_Address_NetworkInterface Variable.
         /// </summary>
         public const uint PubSubConnectionType_Address_NetworkInterface = 17202;
@@ -23178,6 +23218,11 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_MaxNetworkMessageSize Variable.
         /// </summary>
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_MaxNetworkMessageSize = 17204;
+
+        /// <summary>
+        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_GroupProperties Variable.
+        /// </summary>
+        public const uint PubSubConnectionType_WriterGroupName_Placeholder_GroupProperties = 17486;
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Status_State Variable.
@@ -23548,6 +23593,11 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_MaxNetworkMessageSize Variable.
         /// </summary>
         public const uint PubSubConnectionType_ReaderGroupName_Placeholder_MaxNetworkMessageSize = 17302;
+
+        /// <summary>
+        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_GroupProperties Variable.
+        /// </summary>
+        public const uint PubSubConnectionType_ReaderGroupName_Placeholder_GroupProperties = 17487;
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Status_State Variable.
@@ -24135,6 +24185,11 @@ namespace Opc.Ua
         public const uint PubSubGroupType_MaxNetworkMessageSize = 17724;
 
         /// <summary>
+        /// The identifier for the PubSubGroupType_GroupProperties Variable.
+        /// </summary>
+        public const uint PubSubGroupType_GroupProperties = 17488;
+
+        /// <summary>
         /// The identifier for the PubSubGroupType_Status_State Variable.
         /// </summary>
         public const uint PubSubGroupType_Status_State = 15266;
@@ -24178,6 +24233,11 @@ namespace Opc.Ua
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_DataSetFieldContentMask Variable.
         /// </summary>
         public const uint WriterGroupType_DataSetWriterName_Placeholder_DataSetFieldContentMask = 17745;
+
+        /// <summary>
+        /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_DataSetWriterProperties Variable.
+        /// </summary>
+        public const uint WriterGroupType_DataSetWriterName_Placeholder_DataSetWriterProperties = 17490;
 
         /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Status_State Variable.
@@ -24803,6 +24863,11 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_MessageReceiveTimeout Variable.
         /// </summary>
         public const uint ReaderGroupType_DataSetReaderName_Placeholder_MessageReceiveTimeout = 18082;
+
+        /// <summary>
+        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_DataSetReaderProperties Variable.
+        /// </summary>
+        public const uint ReaderGroupType_DataSetReaderName_Placeholder_DataSetReaderProperties = 17492;
 
         /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Status_State Variable.
@@ -25450,6 +25515,11 @@ namespace Opc.Ua
         public const uint DataSetWriterType_KeyFrameCount = 21094;
 
         /// <summary>
+        /// The identifier for the DataSetWriterType_DataSetWriterProperties Variable.
+        /// </summary>
+        public const uint DataSetWriterType_DataSetWriterProperties = 17493;
+
+        /// <summary>
         /// The identifier for the DataSetWriterType_Status_State Variable.
         /// </summary>
         public const uint DataSetWriterType_Status_State = 15300;
@@ -25753,6 +25823,11 @@ namespace Opc.Ua
         /// The identifier for the DataSetReaderType_SecurityKeyServices Variable.
         /// </summary>
         public const uint DataSetReaderType_SecurityKeyServices = 15934;
+
+        /// <summary>
+        /// The identifier for the DataSetReaderType_DataSetReaderProperties Variable.
+        /// </summary>
+        public const uint DataSetReaderType_DataSetReaderProperties = 17494;
 
         /// <summary>
         /// The identifier for the DataSetReaderType_Status_State Variable.
@@ -28100,11 +28175,6 @@ namespace Opc.Ua
         public const uint BrokerConnectionTransportType_AuthenticationProfileUri = 15178;
 
         /// <summary>
-        /// The identifier for the BrokerConnectionTransportType_ConnectionProperties Variable.
-        /// </summary>
-        public const uint BrokerConnectionTransportType_ConnectionProperties = 15181;
-
-        /// <summary>
         /// The identifier for the BrokerWriterGroupTransportType_QueueName Variable.
         /// </summary>
         public const uint BrokerWriterGroupTransportType_QueueName = 21137;
@@ -28118,11 +28188,6 @@ namespace Opc.Ua
         /// The identifier for the BrokerWriterGroupTransportType_AuthenticationProfileUri Variable.
         /// </summary>
         public const uint BrokerWriterGroupTransportType_AuthenticationProfileUri = 15247;
-
-        /// <summary>
-        /// The identifier for the BrokerWriterGroupTransportType_WriterGroupProperties Variable.
-        /// </summary>
-        public const uint BrokerWriterGroupTransportType_WriterGroupProperties = 15248;
 
         /// <summary>
         /// The identifier for the BrokerWriterGroupTransportType_RequestedDeliveryGuarantee Variable.
@@ -28148,11 +28213,6 @@ namespace Opc.Ua
         /// The identifier for the BrokerDataSetWriterTransportType_AuthenticationProfileUri Variable.
         /// </summary>
         public const uint BrokerDataSetWriterTransportType_AuthenticationProfileUri = 15251;
-
-        /// <summary>
-        /// The identifier for the BrokerDataSetWriterTransportType_DataSetWriterProperties Variable.
-        /// </summary>
-        public const uint BrokerDataSetWriterTransportType_DataSetWriterProperties = 15253;
 
         /// <summary>
         /// The identifier for the BrokerDataSetWriterTransportType_RequestedDeliveryGuarantee Variable.
@@ -50570,6 +50630,11 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_Selections = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_TransportProfileUri_Selections);
 
         /// <summary>
+        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_ConnectionProperties Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_ConnectionProperties = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_ConnectionProperties);
+
+        /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Address_NetworkInterface Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Address_NetworkInterface = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Address_NetworkInterface);
@@ -51160,6 +51225,11 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribeType_Diagnostics_LiveValues_OperationalDataSetReaders_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_LiveValues_OperationalDataSetReaders_DiagnosticsLevel);
 
         /// <summary>
+        /// The identifier for the PublishSubscribeType_SupportedTransportProfiles Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribeType_SupportedTransportProfiles = new NodeId(Opc.Ua.Variables.PublishSubscribeType_SupportedTransportProfiles);
+
+        /// <summary>
         /// The identifier for the PublishSubscribe_GetSecurityKeys_InputArguments Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribe_GetSecurityKeys_InputArguments = new NodeId(Opc.Ua.Variables.PublishSubscribe_GetSecurityKeys_InputArguments);
@@ -51208,6 +51278,11 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_Selections Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_Selections = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_TransportProfileUri_Selections);
+
+        /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_ConnectionProperties Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_ConnectionProperties = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_ConnectionProperties);
 
         /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Address_NetworkInterface Variable.
@@ -51800,6 +51875,11 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetReaders_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_LiveValues_OperationalDataSetReaders_DiagnosticsLevel);
 
         /// <summary>
+        /// The identifier for the PublishSubscribe_SupportedTransportProfiles Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_SupportedTransportProfiles = new NodeId(Opc.Ua.Variables.PublishSubscribe_SupportedTransportProfiles);
+
+        /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_DataSetWriterId Variable.
         /// </summary>
         public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_DataSetWriterId = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_DataSetWriterId);
@@ -51808,6 +51888,11 @@ namespace Opc.Ua
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_DataSetFieldContentMask Variable.
         /// </summary>
         public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_DataSetFieldContentMask = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_DataSetFieldContentMask);
+
+        /// <summary>
+        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_DataSetWriterProperties Variable.
+        /// </summary>
+        public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_DataSetWriterProperties = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_DataSetWriterProperties);
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Status_State Variable.
@@ -52130,6 +52215,11 @@ namespace Opc.Ua
         public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_DataSetFieldContentMask = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_DataSetFieldContentMask);
 
         /// <summary>
+        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_DataSetWriterProperties Variable.
+        /// </summary>
+        public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_DataSetWriterProperties = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_DataSetWriterProperties);
+
+        /// <summary>
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Status_State Variable.
         /// </summary>
         public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Status_State = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Status_State);
@@ -52438,6 +52528,11 @@ namespace Opc.Ua
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_DataSetFieldContentMask Variable.
         /// </summary>
         public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_DataSetFieldContentMask = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_DataSetFieldContentMask);
+
+        /// <summary>
+        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_DataSetWriterProperties Variable.
+        /// </summary>
+        public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_DataSetWriterProperties = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_DataSetWriterProperties);
 
         /// <summary>
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Status_State Variable.
@@ -52900,6 +52995,11 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_TransportProfileUri_Selections = new NodeId(Opc.Ua.Variables.PubSubConnectionType_TransportProfileUri_Selections);
 
         /// <summary>
+        /// The identifier for the PubSubConnectionType_ConnectionProperties Variable.
+        /// </summary>
+        public static readonly NodeId PubSubConnectionType_ConnectionProperties = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ConnectionProperties);
+
+        /// <summary>
         /// The identifier for the PubSubConnectionType_Address_NetworkInterface Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_Address_NetworkInterface = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Address_NetworkInterface);
@@ -52913,6 +53013,11 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_MaxNetworkMessageSize Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_MaxNetworkMessageSize = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_MaxNetworkMessageSize);
+
+        /// <summary>
+        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_GroupProperties Variable.
+        /// </summary>
+        public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_GroupProperties = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_GroupProperties);
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Status_State Variable.
@@ -53283,6 +53388,11 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_MaxNetworkMessageSize Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_MaxNetworkMessageSize = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_MaxNetworkMessageSize);
+
+        /// <summary>
+        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_GroupProperties Variable.
+        /// </summary>
+        public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_GroupProperties = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_GroupProperties);
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Status_State Variable.
@@ -53870,6 +53980,11 @@ namespace Opc.Ua
         public static readonly NodeId PubSubGroupType_MaxNetworkMessageSize = new NodeId(Opc.Ua.Variables.PubSubGroupType_MaxNetworkMessageSize);
 
         /// <summary>
+        /// The identifier for the PubSubGroupType_GroupProperties Variable.
+        /// </summary>
+        public static readonly NodeId PubSubGroupType_GroupProperties = new NodeId(Opc.Ua.Variables.PubSubGroupType_GroupProperties);
+
+        /// <summary>
         /// The identifier for the PubSubGroupType_Status_State Variable.
         /// </summary>
         public static readonly NodeId PubSubGroupType_Status_State = new NodeId(Opc.Ua.Variables.PubSubGroupType_Status_State);
@@ -53913,6 +54028,11 @@ namespace Opc.Ua
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_DataSetFieldContentMask Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_DataSetFieldContentMask = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_DataSetFieldContentMask);
+
+        /// <summary>
+        /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_DataSetWriterProperties Variable.
+        /// </summary>
+        public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_DataSetWriterProperties = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_DataSetWriterProperties);
 
         /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Status_State Variable.
@@ -54538,6 +54658,11 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_MessageReceiveTimeout Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_MessageReceiveTimeout = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_MessageReceiveTimeout);
+
+        /// <summary>
+        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_DataSetReaderProperties Variable.
+        /// </summary>
+        public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_DataSetReaderProperties = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_DataSetReaderProperties);
 
         /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Status_State Variable.
@@ -55185,6 +55310,11 @@ namespace Opc.Ua
         public static readonly NodeId DataSetWriterType_KeyFrameCount = new NodeId(Opc.Ua.Variables.DataSetWriterType_KeyFrameCount);
 
         /// <summary>
+        /// The identifier for the DataSetWriterType_DataSetWriterProperties Variable.
+        /// </summary>
+        public static readonly NodeId DataSetWriterType_DataSetWriterProperties = new NodeId(Opc.Ua.Variables.DataSetWriterType_DataSetWriterProperties);
+
+        /// <summary>
         /// The identifier for the DataSetWriterType_Status_State Variable.
         /// </summary>
         public static readonly NodeId DataSetWriterType_Status_State = new NodeId(Opc.Ua.Variables.DataSetWriterType_Status_State);
@@ -55488,6 +55618,11 @@ namespace Opc.Ua
         /// The identifier for the DataSetReaderType_SecurityKeyServices Variable.
         /// </summary>
         public static readonly NodeId DataSetReaderType_SecurityKeyServices = new NodeId(Opc.Ua.Variables.DataSetReaderType_SecurityKeyServices);
+
+        /// <summary>
+        /// The identifier for the DataSetReaderType_DataSetReaderProperties Variable.
+        /// </summary>
+        public static readonly NodeId DataSetReaderType_DataSetReaderProperties = new NodeId(Opc.Ua.Variables.DataSetReaderType_DataSetReaderProperties);
 
         /// <summary>
         /// The identifier for the DataSetReaderType_Status_State Variable.
@@ -57835,11 +57970,6 @@ namespace Opc.Ua
         public static readonly NodeId BrokerConnectionTransportType_AuthenticationProfileUri = new NodeId(Opc.Ua.Variables.BrokerConnectionTransportType_AuthenticationProfileUri);
 
         /// <summary>
-        /// The identifier for the BrokerConnectionTransportType_ConnectionProperties Variable.
-        /// </summary>
-        public static readonly NodeId BrokerConnectionTransportType_ConnectionProperties = new NodeId(Opc.Ua.Variables.BrokerConnectionTransportType_ConnectionProperties);
-
-        /// <summary>
         /// The identifier for the BrokerWriterGroupTransportType_QueueName Variable.
         /// </summary>
         public static readonly NodeId BrokerWriterGroupTransportType_QueueName = new NodeId(Opc.Ua.Variables.BrokerWriterGroupTransportType_QueueName);
@@ -57853,11 +57983,6 @@ namespace Opc.Ua
         /// The identifier for the BrokerWriterGroupTransportType_AuthenticationProfileUri Variable.
         /// </summary>
         public static readonly NodeId BrokerWriterGroupTransportType_AuthenticationProfileUri = new NodeId(Opc.Ua.Variables.BrokerWriterGroupTransportType_AuthenticationProfileUri);
-
-        /// <summary>
-        /// The identifier for the BrokerWriterGroupTransportType_WriterGroupProperties Variable.
-        /// </summary>
-        public static readonly NodeId BrokerWriterGroupTransportType_WriterGroupProperties = new NodeId(Opc.Ua.Variables.BrokerWriterGroupTransportType_WriterGroupProperties);
 
         /// <summary>
         /// The identifier for the BrokerWriterGroupTransportType_RequestedDeliveryGuarantee Variable.
@@ -57883,11 +58008,6 @@ namespace Opc.Ua
         /// The identifier for the BrokerDataSetWriterTransportType_AuthenticationProfileUri Variable.
         /// </summary>
         public static readonly NodeId BrokerDataSetWriterTransportType_AuthenticationProfileUri = new NodeId(Opc.Ua.Variables.BrokerDataSetWriterTransportType_AuthenticationProfileUri);
-
-        /// <summary>
-        /// The identifier for the BrokerDataSetWriterTransportType_DataSetWriterProperties Variable.
-        /// </summary>
-        public static readonly NodeId BrokerDataSetWriterTransportType_DataSetWriterProperties = new NodeId(Opc.Ua.Variables.BrokerDataSetWriterTransportType_DataSetWriterProperties);
 
         /// <summary>
         /// The identifier for the BrokerDataSetWriterTransportType_RequestedDeliveryGuarantee Variable.
@@ -61259,6 +61379,11 @@ namespace Opc.Ua
         public const string DataSetReaderName_Placeholder = "<DataSetReaderName>";
 
         /// <summary>
+        /// The BrowseName for the DataSetReaderProperties component.
+        /// </summary>
+        public const string DataSetReaderProperties = "DataSetReaderProperties";
+
+        /// <summary>
         /// The BrowseName for the DataSetReaderTransportDataType component.
         /// </summary>
         public const string DataSetReaderTransportDataType = "DataSetReaderTransportDataType";
@@ -62182,6 +62307,11 @@ namespace Opc.Ua
         /// The BrowseName for the GroupId component.
         /// </summary>
         public const string GroupId = "GroupId";
+
+        /// <summary>
+        /// The BrowseName for the GroupProperties component.
+        /// </summary>
+        public const string GroupProperties = "GroupProperties";
 
         /// <summary>
         /// The BrowseName for the GroupVersion component.
@@ -65544,6 +65674,11 @@ namespace Opc.Ua
         public const string SupportedPrivateKeyFormats = "SupportedPrivateKeyFormats";
 
         /// <summary>
+        /// The BrowseName for the SupportedTransportProfiles component.
+        /// </summary>
+        public const string SupportedTransportProfiles = "SupportedTransportProfiles";
+
+        /// <summary>
         /// The BrowseName for the Suppress component.
         /// </summary>
         public const string Suppress = "Suppress";
@@ -66272,11 +66407,6 @@ namespace Opc.Ua
         /// The BrowseName for the WriterGroupName_Placeholder component.
         /// </summary>
         public const string WriterGroupName_Placeholder = "<WriterGroupName>";
-
-        /// <summary>
-        /// The BrowseName for the WriterGroupProperties component.
-        /// </summary>
-        public const string WriterGroupProperties = "WriterGroupProperties";
 
         /// <summary>
         /// The BrowseName for the WriterGroupTransportDataType component.
