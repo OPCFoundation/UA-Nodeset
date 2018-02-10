@@ -5268,7 +5268,7 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
-    public partial class PublishedDataItemsDataType : IEncodeable
+    public partial class PublishedDataItemsDataType : PublishedDataSetSourceDataType
     {
         #region Constructors
         /// <summary>
@@ -5323,26 +5323,28 @@ namespace Opc.Ua
 
         #region IEncodeable Members
         /// <summary cref="IEncodeable.TypeId" />
-        public virtual ExpandedNodeId TypeId
+        public override ExpandedNodeId TypeId
         {
             get { return DataTypeIds.PublishedDataItemsDataType; }
         }
 
         /// <summary cref="IEncodeable.BinaryEncodingId" />
-        public virtual ExpandedNodeId BinaryEncodingId
+        public override ExpandedNodeId BinaryEncodingId
         {
             get { return ObjectIds.PublishedDataItemsDataType_Encoding_DefaultBinary; }
         }
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId
+        public override ExpandedNodeId XmlEncodingId
         {
             get { return ObjectIds.PublishedDataItemsDataType_Encoding_DefaultXml; }
         }
 
         /// <summary cref="IEncodeable.Encode(IEncoder)" />
-        public virtual void Encode(IEncoder encoder)
+        public override void Encode(IEncoder encoder)
         {
+            base.Encode(encoder);
+
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             encoder.WriteEncodeableArray("PublishedData", PublishedData.ToArray(), typeof(PublishedVariableDataType));
@@ -5351,8 +5353,10 @@ namespace Opc.Ua
         }
 
         /// <summary cref="IEncodeable.Decode(IDecoder)" />
-        public virtual void Decode(IDecoder decoder)
+        public override void Decode(IDecoder decoder)
         {
+            base.Decode(decoder);
+
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             PublishedData = (PublishedVariableDataTypeCollection)decoder.ReadEncodeableArray("PublishedData", typeof(PublishedVariableDataType));
@@ -5361,7 +5365,7 @@ namespace Opc.Ua
         }
 
         /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
-        public virtual bool IsEqual(IEncodeable encodeable)
+        public override bool IsEqual(IEncodeable encodeable)
         {
             if (Object.ReferenceEquals(this, encodeable))
             {
@@ -5375,14 +5379,15 @@ namespace Opc.Ua
                 return false;
             }
 
+            if (!base.IsEqual(encodeable)) return false;
             if (!Utils.IsEqual(m_publishedData, value.m_publishedData)) return false;
 
             return true;
-        }
+        }    
 
         #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
-        public virtual object Clone()
+        public override object Clone()
         {
             return (PublishedDataItemsDataType)this.MemberwiseClone();
         }
@@ -5499,7 +5504,7 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
-    public partial class PublishedEventsDataType : IEncodeable
+    public partial class PublishedEventsDataType : PublishedDataSetSourceDataType
     {
         #region Constructors
         /// <summary>
@@ -5588,26 +5593,28 @@ namespace Opc.Ua
 
         #region IEncodeable Members
         /// <summary cref="IEncodeable.TypeId" />
-        public virtual ExpandedNodeId TypeId
+        public override ExpandedNodeId TypeId
         {
             get { return DataTypeIds.PublishedEventsDataType; }
         }
 
         /// <summary cref="IEncodeable.BinaryEncodingId" />
-        public virtual ExpandedNodeId BinaryEncodingId
+        public override ExpandedNodeId BinaryEncodingId
         {
             get { return ObjectIds.PublishedEventsDataType_Encoding_DefaultBinary; }
         }
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId
+        public override ExpandedNodeId XmlEncodingId
         {
             get { return ObjectIds.PublishedEventsDataType_Encoding_DefaultXml; }
         }
 
         /// <summary cref="IEncodeable.Encode(IEncoder)" />
-        public virtual void Encode(IEncoder encoder)
+        public override void Encode(IEncoder encoder)
         {
+            base.Encode(encoder);
+
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             encoder.WriteNodeId("EventNotifier", EventNotifier);
@@ -5618,8 +5625,10 @@ namespace Opc.Ua
         }
 
         /// <summary cref="IEncodeable.Decode(IDecoder)" />
-        public virtual void Decode(IDecoder decoder)
+        public override void Decode(IDecoder decoder)
         {
+            base.Decode(decoder);
+
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             EventNotifier = decoder.ReadNodeId("EventNotifier");
@@ -5630,7 +5639,7 @@ namespace Opc.Ua
         }
 
         /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
-        public virtual bool IsEqual(IEncodeable encodeable)
+        public override bool IsEqual(IEncodeable encodeable)
         {
             if (Object.ReferenceEquals(this, encodeable))
             {
@@ -5644,16 +5653,17 @@ namespace Opc.Ua
                 return false;
             }
 
+            if (!base.IsEqual(encodeable)) return false;
             if (!Utils.IsEqual(m_eventNotifier, value.m_eventNotifier)) return false;
             if (!Utils.IsEqual(m_selectedFields, value.m_selectedFields)) return false;
             if (!Utils.IsEqual(m_filter, value.m_filter)) return false;
 
             return true;
-        }
+        }    
 
         #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
-        public virtual object Clone()
+        public override object Clone()
         {
             return (PublishedEventsDataType)this.MemberwiseClone();
         }
@@ -10579,7 +10589,7 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
-    public partial class TargetVariablesDataType : IEncodeable
+    public partial class TargetVariablesDataType : SubscribedDataSetDataType
     {
         #region Constructors
         /// <summary>
@@ -10634,26 +10644,28 @@ namespace Opc.Ua
 
         #region IEncodeable Members
         /// <summary cref="IEncodeable.TypeId" />
-        public virtual ExpandedNodeId TypeId
+        public override ExpandedNodeId TypeId
         {
             get { return DataTypeIds.TargetVariablesDataType; }
         }
 
         /// <summary cref="IEncodeable.BinaryEncodingId" />
-        public virtual ExpandedNodeId BinaryEncodingId
+        public override ExpandedNodeId BinaryEncodingId
         {
             get { return ObjectIds.TargetVariablesDataType_Encoding_DefaultBinary; }
         }
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId
+        public override ExpandedNodeId XmlEncodingId
         {
             get { return ObjectIds.TargetVariablesDataType_Encoding_DefaultXml; }
         }
 
         /// <summary cref="IEncodeable.Encode(IEncoder)" />
-        public virtual void Encode(IEncoder encoder)
+        public override void Encode(IEncoder encoder)
         {
+            base.Encode(encoder);
+
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             encoder.WriteEncodeableArray("TargetVariables", TargetVariables.ToArray(), typeof(FieldTargetDataType));
@@ -10662,8 +10674,10 @@ namespace Opc.Ua
         }
 
         /// <summary cref="IEncodeable.Decode(IDecoder)" />
-        public virtual void Decode(IDecoder decoder)
+        public override void Decode(IDecoder decoder)
         {
+            base.Decode(decoder);
+
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             TargetVariables = (FieldTargetDataTypeCollection)decoder.ReadEncodeableArray("TargetVariables", typeof(FieldTargetDataType));
@@ -10672,7 +10686,7 @@ namespace Opc.Ua
         }
 
         /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
-        public virtual bool IsEqual(IEncodeable encodeable)
+        public override bool IsEqual(IEncodeable encodeable)
         {
             if (Object.ReferenceEquals(this, encodeable))
             {
@@ -10686,14 +10700,15 @@ namespace Opc.Ua
                 return false;
             }
 
+            if (!base.IsEqual(encodeable)) return false;
             if (!Utils.IsEqual(m_targetVariables, value.m_targetVariables)) return false;
 
             return true;
-        }
+        }    
 
         #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
-        public virtual object Clone()
+        public override object Clone()
         {
             return (TargetVariablesDataType)this.MemberwiseClone();
         }
@@ -11241,7 +11256,7 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
-    public partial class SubscribedDataSetMirrorDataType : IEncodeable
+    public partial class SubscribedDataSetMirrorDataType : SubscribedDataSetDataType
     {
         #region Constructors
         /// <summary>
@@ -11307,26 +11322,28 @@ namespace Opc.Ua
 
         #region IEncodeable Members
         /// <summary cref="IEncodeable.TypeId" />
-        public virtual ExpandedNodeId TypeId
+        public override ExpandedNodeId TypeId
         {
             get { return DataTypeIds.SubscribedDataSetMirrorDataType; }
         }
 
         /// <summary cref="IEncodeable.BinaryEncodingId" />
-        public virtual ExpandedNodeId BinaryEncodingId
+        public override ExpandedNodeId BinaryEncodingId
         {
             get { return ObjectIds.SubscribedDataSetMirrorDataType_Encoding_DefaultBinary; }
         }
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId
+        public override ExpandedNodeId XmlEncodingId
         {
             get { return ObjectIds.SubscribedDataSetMirrorDataType_Encoding_DefaultXml; }
         }
 
         /// <summary cref="IEncodeable.Encode(IEncoder)" />
-        public virtual void Encode(IEncoder encoder)
+        public override void Encode(IEncoder encoder)
         {
+            base.Encode(encoder);
+
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             encoder.WriteString("ParentNodeName", ParentNodeName);
@@ -11336,8 +11353,10 @@ namespace Opc.Ua
         }
 
         /// <summary cref="IEncodeable.Decode(IDecoder)" />
-        public virtual void Decode(IDecoder decoder)
+        public override void Decode(IDecoder decoder)
         {
+            base.Decode(decoder);
+
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             ParentNodeName = decoder.ReadString("ParentNodeName");
@@ -11347,7 +11366,7 @@ namespace Opc.Ua
         }
 
         /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
-        public virtual bool IsEqual(IEncodeable encodeable)
+        public override bool IsEqual(IEncodeable encodeable)
         {
             if (Object.ReferenceEquals(this, encodeable))
             {
@@ -11361,15 +11380,16 @@ namespace Opc.Ua
                 return false;
             }
 
+            if (!base.IsEqual(encodeable)) return false;
             if (!Utils.IsEqual(m_parentNodeName, value.m_parentNodeName)) return false;
             if (!Utils.IsEqual(m_rolePermissions, value.m_rolePermissions)) return false;
 
             return true;
-        }
+        }    
 
         #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
-        public virtual object Clone()
+        public override object Clone()
         {
             return (SubscribedDataSetMirrorDataType)this.MemberwiseClone();
         }
