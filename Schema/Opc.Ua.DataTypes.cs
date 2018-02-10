@@ -3059,7 +3059,7 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
-    public partial class UABinaryFileDataType : IEncodeable
+    public partial class UABinaryFileDataType : DataTypeSchemaHeader
     {
         #region Constructors
         /// <summary>
@@ -3136,26 +3136,28 @@ namespace Opc.Ua
 
         #region IEncodeable Members
         /// <summary cref="IEncodeable.TypeId" />
-        public virtual ExpandedNodeId TypeId
+        public override ExpandedNodeId TypeId
         {
             get { return DataTypeIds.UABinaryFileDataType; }
         }
 
         /// <summary cref="IEncodeable.BinaryEncodingId" />
-        public virtual ExpandedNodeId BinaryEncodingId
+        public override ExpandedNodeId BinaryEncodingId
         {
             get { return ObjectIds.UABinaryFileDataType_Encoding_DefaultBinary; }
         }
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId
+        public override ExpandedNodeId XmlEncodingId
         {
             get { return ObjectIds.UABinaryFileDataType_Encoding_DefaultXml; }
         }
 
         /// <summary cref="IEncodeable.Encode(IEncoder)" />
-        public virtual void Encode(IEncoder encoder)
+        public override void Encode(IEncoder encoder)
         {
+            base.Encode(encoder);
+
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             encoder.WriteString("SchemaLocation", SchemaLocation);
@@ -3166,8 +3168,10 @@ namespace Opc.Ua
         }
 
         /// <summary cref="IEncodeable.Decode(IDecoder)" />
-        public virtual void Decode(IDecoder decoder)
+        public override void Decode(IDecoder decoder)
         {
+            base.Decode(decoder);
+
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             SchemaLocation = decoder.ReadString("SchemaLocation");
@@ -3178,7 +3182,7 @@ namespace Opc.Ua
         }
 
         /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
-        public virtual bool IsEqual(IEncodeable encodeable)
+        public override bool IsEqual(IEncodeable encodeable)
         {
             if (Object.ReferenceEquals(this, encodeable))
             {
@@ -3192,16 +3196,17 @@ namespace Opc.Ua
                 return false;
             }
 
+            if (!base.IsEqual(encodeable)) return false;
             if (!Utils.IsEqual(m_schemaLocation, value.m_schemaLocation)) return false;
             if (!Utils.IsEqual(m_fileHeader, value.m_fileHeader)) return false;
             if (!Utils.IsEqual(m_body, value.m_body)) return false;
 
             return true;
-        }
+        }    
 
         #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
-        public virtual object Clone()
+        public override object Clone()
         {
             return (UABinaryFileDataType)this.MemberwiseClone();
         }

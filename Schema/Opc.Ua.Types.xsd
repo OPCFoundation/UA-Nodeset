@@ -731,11 +731,15 @@
   <xs:element name="ListOfSimpleTypeDescription" type="tns:ListOfSimpleTypeDescription" nillable="true"></xs:element>
 
   <xs:complexType name="UABinaryFileDataType">
-    <xs:sequence>
-      <xs:element name="SchemaLocation" type="xs:string" minOccurs="0" nillable="true" />
-      <xs:element name="FileHeader" type="tns:ListOfKeyValuePair" minOccurs="0" nillable="true" />
-      <xs:element name="Body" type="ua:Variant" minOccurs="0" />
-    </xs:sequence>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DataTypeSchemaHeader">
+        <xs:sequence>
+          <xs:element name="SchemaLocation" type="xs:string" minOccurs="0" nillable="true" />
+          <xs:element name="FileHeader" type="tns:ListOfKeyValuePair" minOccurs="0" nillable="true" />
+          <xs:element name="Body" type="ua:Variant" minOccurs="0" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
   </xs:complexType>
   <xs:element name="UABinaryFileDataType" type="tns:UABinaryFileDataType" />
 

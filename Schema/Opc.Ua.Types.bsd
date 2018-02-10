@@ -338,7 +338,15 @@
     <opc:Field Name="BuiltInType" TypeName="opc:Byte" />
   </opc:StructuredType>
 
-  <opc:StructuredType Name="UABinaryFileDataType" BaseType="ua:ExtensionObject">
+  <opc:StructuredType Name="UABinaryFileDataType" BaseType="tns:DataTypeSchemaHeader">
+    <opc:Field Name="NoOfNamespaces" TypeName="opc:Int32" />
+    <opc:Field Name="Namespaces" TypeName="opc:String" LengthField="NoOfNamespaces" />
+    <opc:Field Name="NoOfStructureDataTypes" TypeName="opc:Int32" />
+    <opc:Field Name="StructureDataTypes" TypeName="tns:StructureDescription" LengthField="NoOfStructureDataTypes" />
+    <opc:Field Name="NoOfEnumDataTypes" TypeName="opc:Int32" />
+    <opc:Field Name="EnumDataTypes" TypeName="tns:EnumDescription" LengthField="NoOfEnumDataTypes" />
+    <opc:Field Name="NoOfSimpleDataTypes" TypeName="opc:Int32" />
+    <opc:Field Name="SimpleDataTypes" TypeName="tns:SimpleTypeDescription" LengthField="NoOfSimpleDataTypes" />
     <opc:Field Name="SchemaLocation" TypeName="opc:String" />
     <opc:Field Name="NoOfFileHeader" TypeName="opc:Int32" />
     <opc:Field Name="FileHeader" TypeName="tns:KeyValuePair" LengthField="NoOfFileHeader" />
