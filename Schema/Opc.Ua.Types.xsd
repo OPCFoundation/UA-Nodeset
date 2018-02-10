@@ -886,13 +886,9 @@
   <xs:element name="ListOfPublishedVariableDataType" type="tns:ListOfPublishedVariableDataType" nillable="true"></xs:element>
 
   <xs:complexType name="PublishedDataItemsDataType">
-    <xs:complexContent mixed="false">
-      <xs:extension base="tns:PublishedDataSetSourceDataType">
-        <xs:sequence>
-          <xs:element name="PublishedData" type="tns:ListOfPublishedVariableDataType" minOccurs="0" nillable="true" />
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
+    <xs:sequence>
+      <xs:element name="PublishedData" type="tns:ListOfPublishedVariableDataType" minOccurs="0" nillable="true" />
+    </xs:sequence>
   </xs:complexType>
   <xs:element name="PublishedDataItemsDataType" type="tns:PublishedDataItemsDataType" />
 
@@ -904,15 +900,11 @@
   <xs:element name="ListOfPublishedDataItemsDataType" type="tns:ListOfPublishedDataItemsDataType" nillable="true"></xs:element>
 
   <xs:complexType name="PublishedEventsDataType">
-    <xs:complexContent mixed="false">
-      <xs:extension base="tns:PublishedDataSetSourceDataType">
-        <xs:sequence>
-          <xs:element name="EventNotifier" type="ua:NodeId" minOccurs="0" nillable="true" />
-          <xs:element name="SelectedFields" type="tns:ListOfSimpleAttributeOperand" minOccurs="0" nillable="true" />
-          <xs:element name="Filter" type="tns:ContentFilter" minOccurs="0" nillable="true" />
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
+    <xs:sequence>
+      <xs:element name="EventNotifier" type="ua:NodeId" minOccurs="0" nillable="true" />
+      <xs:element name="SelectedFields" type="tns:ListOfSimpleAttributeOperand" minOccurs="0" nillable="true" />
+      <xs:element name="Filter" type="tns:ContentFilter" minOccurs="0" nillable="true" />
+    </xs:sequence>
   </xs:complexType>
   <xs:element name="PublishedEventsDataType" type="tns:PublishedEventsDataType" />
 
@@ -1236,13 +1228,9 @@
   <xs:element name="ListOfSubscribedDataSetDataType" type="tns:ListOfSubscribedDataSetDataType" nillable="true"></xs:element>
 
   <xs:complexType name="TargetVariablesDataType">
-    <xs:complexContent mixed="false">
-      <xs:extension base="tns:SubscribedDataSetDataType">
-        <xs:sequence>
-          <xs:element name="TargetVariables" type="tns:ListOfFieldTargetDataType" minOccurs="0" nillable="true" />
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
+    <xs:sequence>
+      <xs:element name="TargetVariables" type="tns:ListOfFieldTargetDataType" minOccurs="0" nillable="true" />
+    </xs:sequence>
   </xs:complexType>
   <xs:element name="TargetVariablesDataType" type="tns:TargetVariablesDataType" />
 
@@ -1290,14 +1278,10 @@
   <xs:element name="ListOfOverrideValueHandling" type="tns:ListOfOverrideValueHandling" nillable="true"></xs:element>
 
   <xs:complexType name="SubscribedDataSetMirrorDataType">
-    <xs:complexContent mixed="false">
-      <xs:extension base="tns:SubscribedDataSetDataType">
-        <xs:sequence>
-          <xs:element name="ParentNodeName" type="xs:string" minOccurs="0" nillable="true" />
-          <xs:element name="RolePermissions" type="tns:ListOfRolePermissionType" minOccurs="0" nillable="true" />
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
+    <xs:sequence>
+      <xs:element name="ParentNodeName" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="RolePermissions" type="tns:ListOfRolePermissionType" minOccurs="0" nillable="true" />
+    </xs:sequence>
   </xs:complexType>
   <xs:element name="SubscribedDataSetMirrorDataType" type="tns:SubscribedDataSetMirrorDataType" />
 

@@ -426,12 +426,12 @@
     <opc:Field Name="MetaDataProperties" TypeName="ua:QualifiedName" LengthField="NoOfMetaDataProperties" />
   </opc:StructuredType>
 
-  <opc:StructuredType Name="PublishedDataItemsDataType" BaseType="tns:PublishedDataSetSourceDataType">
+  <opc:StructuredType Name="PublishedDataItemsDataType" BaseType="ua:ExtensionObject">
     <opc:Field Name="NoOfPublishedData" TypeName="opc:Int32" />
     <opc:Field Name="PublishedData" TypeName="tns:PublishedVariableDataType" LengthField="NoOfPublishedData" />
   </opc:StructuredType>
 
-  <opc:StructuredType Name="PublishedEventsDataType" BaseType="tns:PublishedDataSetSourceDataType">
+  <opc:StructuredType Name="PublishedEventsDataType" BaseType="ua:ExtensionObject">
     <opc:Field Name="EventNotifier" TypeName="ua:NodeId" />
     <opc:Field Name="NoOfSelectedFields" TypeName="opc:Int32" />
     <opc:Field Name="SelectedFields" TypeName="tns:SimpleAttributeOperand" LengthField="NoOfSelectedFields" />
@@ -584,7 +584,7 @@
   <opc:StructuredType Name="SubscribedDataSetDataType" BaseType="ua:ExtensionObject">
   </opc:StructuredType>
 
-  <opc:StructuredType Name="TargetVariablesDataType" BaseType="tns:SubscribedDataSetDataType">
+  <opc:StructuredType Name="TargetVariablesDataType" BaseType="ua:ExtensionObject">
     <opc:Field Name="NoOfTargetVariables" TypeName="opc:Int32" />
     <opc:Field Name="TargetVariables" TypeName="tns:FieldTargetDataType" LengthField="NoOfTargetVariables" />
   </opc:StructuredType>
@@ -605,7 +605,7 @@
     <opc:EnumeratedValue Name="OverrideValue" Value="2" />
   </opc:EnumeratedType>
 
-  <opc:StructuredType Name="SubscribedDataSetMirrorDataType" BaseType="tns:SubscribedDataSetDataType">
+  <opc:StructuredType Name="SubscribedDataSetMirrorDataType" BaseType="ua:ExtensionObject">
     <opc:Field Name="ParentNodeName" TypeName="opc:String" />
     <opc:Field Name="NoOfRolePermissions" TypeName="opc:Int32" />
     <opc:Field Name="RolePermissions" TypeName="tns:RolePermissionType" LengthField="NoOfRolePermissions" />

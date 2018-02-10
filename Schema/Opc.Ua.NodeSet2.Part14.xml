@@ -237,7 +237,7 @@
   <UADataType NodeId="i=15581" BrowseName="PublishedDataItemsDataType">
     <DisplayName>PublishedDataItemsDataType</DisplayName>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=15580</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="PublishedDataItemsDataType">
       <Field Name="PublishedData" DataType="i=14273" ValueRank="1" />
@@ -246,7 +246,7 @@
   <UADataType NodeId="i=15582" BrowseName="PublishedEventsDataType">
     <DisplayName>PublishedEventsDataType</DisplayName>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=15580</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="PublishedEventsDataType">
       <Field Name="EventNotifier" DataType="i=17" />
@@ -491,7 +491,7 @@
   <UADataType NodeId="i=15631" BrowseName="TargetVariablesDataType">
     <DisplayName>TargetVariablesDataType</DisplayName>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=15630</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="TargetVariablesDataType">
       <Field Name="TargetVariables" DataType="i=14744" ValueRank="1" />
@@ -554,7 +554,7 @@
   <UADataType NodeId="i=15635" BrowseName="SubscribedDataSetMirrorDataType">
     <DisplayName>SubscribedDataSetMirrorDataType</DisplayName>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=15630</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="SubscribedDataSetMirrorDataType">
       <Field Name="ParentNodeName" DataType="i=12" />
