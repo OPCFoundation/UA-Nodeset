@@ -123,7 +123,7 @@
   <UADataType NodeId="i=15006" BrowseName="UABinaryFileDataType">
     <DisplayName>UABinaryFileDataType</DisplayName>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=15534</Reference>
     </References>
     <Definition Name="UABinaryFileDataType">
       <Field Name="SchemaLocation" DataType="i=12" />
