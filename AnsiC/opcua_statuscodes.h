@@ -783,6 +783,11 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadStateNotActive 0x80BF0000
 
 /*============================================================================
+ * An equivalent rule already exists.
+ *===========================================================================*/
+#define OpcUa_BadAlreadyExists 0x81150000
+
+/*============================================================================
  * The server cannot process the request because it is too busy.
  *===========================================================================*/
 #define OpcUa_BadTcpServerTooBusy 0x807D0000
