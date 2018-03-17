@@ -2075,6 +2075,7 @@
 #define OpcUaId_HttpsCertificateType 12558
 #define OpcUaId_RsaMinApplicationCertificateType 12559
 #define OpcUaId_RsaSha256ApplicationCertificateType 12560
+#define OpcUaId_UserCredentialCertificateType 15181
 #define OpcUaId_TrustListUpdatedAuditEventType 12561
 #define OpcUaId_ServerConfigurationType 12581
 #define OpcUaId_CertificateUpdatedAuditEventType 12620

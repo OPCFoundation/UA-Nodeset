@@ -2986,6 +2986,12 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12557</Reference>
     </References>
   </UAObjectType>
+  <UAObjectType NodeId="i=15181" BrowseName="UserCredentialCertificateType">
+    <DisplayName>UserCredentialCertificateType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=12557</Reference>
+    </References>
+  </UAObjectType>
   <UAObjectType NodeId="i=12561" BrowseName="TrustListUpdatedAuditEventType" IsAbstract="true">
     <DisplayName>TrustListUpdatedAuditEventType</DisplayName>
     <References>

@@ -1343,6 +1343,7 @@
 #define OpcUa_BrowseName_UpdateStructureDataDetails "UpdateStructureDataDetails"
 #define OpcUa_BrowseName_UrisVersion "UrisVersion"
 #define OpcUa_BrowseName_Url "Url"
+#define OpcUa_BrowseName_UserCredentialCertificateType "UserCredentialCertificateType"
 #define OpcUa_BrowseName_UserIdentityToken "UserIdentityToken"
 #define OpcUa_BrowseName_UserNameIdentityToken "UserNameIdentityToken"
 #define OpcUa_BrowseName_UserTokenPolicy "UserTokenPolicy"

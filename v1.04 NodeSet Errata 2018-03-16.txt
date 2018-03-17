@@ -1,0 +1,6 @@
+The following mismatches between the specification have been corrected in the v1.04 NodeSet since the release of the specification:
+
+#4202 -	v1.04 Part 12: 7.5.14 UserCredentialCertificateType is missing from the nodeset files on github;
+
+
+

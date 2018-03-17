@@ -10220,6 +10220,11 @@ namespace Opc.Ua
         public const uint RsaSha256ApplicationCertificateType = 12560;
 
         /// <summary>
+        /// The identifier for the UserCredentialCertificateType ObjectType.
+        /// </summary>
+        public const uint UserCredentialCertificateType = 15181;
+
+        /// <summary>
         /// The identifier for the TrustListUpdatedAuditEventType ObjectType.
         /// </summary>
         public const uint TrustListUpdatedAuditEventType = 12561;
@@ -40015,6 +40020,11 @@ namespace Opc.Ua
         public static readonly NodeId RsaSha256ApplicationCertificateType = new NodeId(Opc.Ua.ObjectTypes.RsaSha256ApplicationCertificateType);
 
         /// <summary>
+        /// The identifier for the UserCredentialCertificateType ObjectType.
+        /// </summary>
+        public static readonly NodeId UserCredentialCertificateType = new NodeId(Opc.Ua.ObjectTypes.UserCredentialCertificateType);
+
+        /// <summary>
         /// The identifier for the TrustListUpdatedAuditEventType ObjectType.
         /// </summary>
         public static readonly NodeId TrustListUpdatedAuditEventType = new NodeId(Opc.Ua.ObjectTypes.TrustListUpdatedAuditEventType);
@@ -66197,6 +66207,11 @@ namespace Opc.Ua
         /// The BrowseName for the Url component.
         /// </summary>
         public const string Url = "Url";
+
+        /// <summary>
+        /// The BrowseName for the UserCredentialCertificateType component.
+        /// </summary>
+        public const string UserCredentialCertificateType = "UserCredentialCertificateType";
 
         /// <summary>
         /// The BrowseName for the UserIdentityToken component.
