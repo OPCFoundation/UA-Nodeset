@@ -21655,6 +21655,12 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12556</Reference>
     </References>
   </UAObjectType>
+  <UAObjectType NodeId="i=15181" BrowseName="UserCredentialCertificateType">
+    <DisplayName>UserCredentialCertificateType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=12556</Reference>
+    </References>
+  </UAObjectType>
   <UAObjectType NodeId="i=12559" BrowseName="RsaMinApplicationCertificateType">
     <DisplayName>RsaMinApplicationCertificateType</DisplayName>
     <References>
