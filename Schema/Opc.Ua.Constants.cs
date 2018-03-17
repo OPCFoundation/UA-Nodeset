@@ -10210,6 +10210,11 @@ namespace Opc.Ua
         public const uint HttpsCertificateType = 12558;
 
         /// <summary>
+        /// The identifier for the UserCredentialCertificateType ObjectType.
+        /// </summary>
+        public const uint UserCredentialCertificateType = 15181;
+
+        /// <summary>
         /// The identifier for the RsaMinApplicationCertificateType ObjectType.
         /// </summary>
         public const uint RsaMinApplicationCertificateType = 12559;
@@ -10218,11 +10223,6 @@ namespace Opc.Ua
         /// The identifier for the RsaSha256ApplicationCertificateType ObjectType.
         /// </summary>
         public const uint RsaSha256ApplicationCertificateType = 12560;
-
-        /// <summary>
-        /// The identifier for the UserCredentialCertificateType ObjectType.
-        /// </summary>
-        public const uint UserCredentialCertificateType = 15181;
 
         /// <summary>
         /// The identifier for the TrustListUpdatedAuditEventType ObjectType.
@@ -40010,6 +40010,11 @@ namespace Opc.Ua
         public static readonly NodeId HttpsCertificateType = new NodeId(Opc.Ua.ObjectTypes.HttpsCertificateType);
 
         /// <summary>
+        /// The identifier for the UserCredentialCertificateType ObjectType.
+        /// </summary>
+        public static readonly NodeId UserCredentialCertificateType = new NodeId(Opc.Ua.ObjectTypes.UserCredentialCertificateType);
+
+        /// <summary>
         /// The identifier for the RsaMinApplicationCertificateType ObjectType.
         /// </summary>
         public static readonly NodeId RsaMinApplicationCertificateType = new NodeId(Opc.Ua.ObjectTypes.RsaMinApplicationCertificateType);
@@ -40018,11 +40023,6 @@ namespace Opc.Ua
         /// The identifier for the RsaSha256ApplicationCertificateType ObjectType.
         /// </summary>
         public static readonly NodeId RsaSha256ApplicationCertificateType = new NodeId(Opc.Ua.ObjectTypes.RsaSha256ApplicationCertificateType);
-
-        /// <summary>
-        /// The identifier for the UserCredentialCertificateType ObjectType.
-        /// </summary>
-        public static readonly NodeId UserCredentialCertificateType = new NodeId(Opc.Ua.ObjectTypes.UserCredentialCertificateType);
 
         /// <summary>
         /// The identifier for the TrustListUpdatedAuditEventType ObjectType.
