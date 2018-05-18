@@ -943,7 +943,7 @@
     <DisplayName>PermissionType</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=15030</Reference>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
     <Definition Name="PermissionType" IsOptionSet="true">
       <Field Name="None" Value="0" />
@@ -1141,9 +1141,9 @@
       <Field Name="HistoryWrite" Value="16" />
       <Field Name="StatusWrite" Value="32" />
       <Field Name="TimestampWrite" Value="64" />
-      <Field Name="NonatomicRead" Value="65536" />
-      <Field Name="NonatomicWrite" Value="131072" />
-      <Field Name="WriteFullArrayOnly" Value="262144" />
+      <Field Name="NonatomicRead" Value="256" />
+      <Field Name="NonatomicWrite" Value="512" />
+      <Field Name="WriteFullArrayOnly" Value="1024" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15407" BrowseName="OptionSetValues" ParentNodeId="i=15406" DataType="LocalizedText" ValueRank="1">
@@ -1198,46 +1198,6 @@
         <LocalizedText>
           <Locale>
           </Locale>
-          <Text>Reserved</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>Reserved</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>Reserved</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>Reserved</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>Reserved</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>Reserved</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>Reserved</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>Reserved</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>NonatomicRead</Text>
         </LocalizedText>
         <LocalizedText>
@@ -1257,7 +1217,7 @@
     <DisplayName>EventNotifierType</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=15034</Reference>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=3</Reference>
     </References>
     <Definition Name="EventNotifierType" IsOptionSet="true">
       <Field Name="None" Value="0" />
@@ -1308,7 +1268,7 @@
       <Field Name="None" Value="0" />
       <Field Name="SigningRequired" Value="1" />
       <Field Name="EncryptionRequired" Value="2" />
-      <Field Name="SessionRequired " Value="4" />
+      <Field Name="SessionRequired" Value="4" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15035" BrowseName="OptionSetValues" ParentNodeId="i=95" DataType="LocalizedText" ValueRank="1">
@@ -1333,7 +1293,7 @@
         <LocalizedText>
           <Locale>
           </Locale>
-          <Text>SessionRequired </Text>
+          <Text>SessionRequired</Text>
         </LocalizedText>
       </ListOfLocalizedText>
     </Value>
@@ -1345,7 +1305,7 @@
     </References>
     <Definition Name="RolePermissionType">
       <Field Name="RoleId" DataType="i=17" />
-      <Field Name="Permissions" DataType="i=7" />
+      <Field Name="Permissions" DataType="i=94" />
     </Definition>
   </UADataType>
   <UADataType NodeId="i=97" BrowseName="DataTypeDefinition" IsAbstract="true">

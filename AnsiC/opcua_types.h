@@ -167,9 +167,9 @@ typedef enum _OpcUa_AccessLevelExType
     OpcUa_AccessLevelExType_HistoryWrite       = 16,
     OpcUa_AccessLevelExType_StatusWrite        = 32,
     OpcUa_AccessLevelExType_TimestampWrite     = 64,
-    OpcUa_AccessLevelExType_NonatomicRead      = 65536,
-    OpcUa_AccessLevelExType_NonatomicWrite     = 131072,
-    OpcUa_AccessLevelExType_WriteFullArrayOnly = 262144
+    OpcUa_AccessLevelExType_NonatomicRead      = 256,
+    OpcUa_AccessLevelExType_NonatomicWrite     = 512,
+    OpcUa_AccessLevelExType_WriteFullArrayOnly = 1024
 #if OPCUA_FORCE_INT32_ENUMS
     ,_OpcUa_AccessLevelExType_MaxEnumerationValue = OpcUa_Int32_Max
 #endif
@@ -235,8 +235,8 @@ OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_AccessRestrictionType_E
  *===========================================================================*/
 typedef struct _OpcUa_RolePermissionType
 {
-    OpcUa_NodeId RoleId;
-    OpcUa_UInt32 Permissions;
+    OpcUa_NodeId         RoleId;
+    OpcUa_PermissionType Permissions;
 }
 OpcUa_RolePermissionType;
 

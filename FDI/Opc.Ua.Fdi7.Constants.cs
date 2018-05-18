@@ -67,6 +67,21 @@ namespace Opc.Ua.Fdi7
     public static partial class Methods
     {
         /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_MethodSet_MethodIdentifier = 1384;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_GroupIdentifier_MethodIdentifier = 15009;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_Identification_MethodIdentifier = 15010;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_H1_Lock_InitLock Method.
         /// </summary>
         public const uint ConnectionPoint_Foundation_H1_Lock_InitLock = 1394;
@@ -85,6 +100,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_Foundation_H1_Lock_BreakLock Method.
         /// </summary>
         public const uint ConnectionPoint_Foundation_H1_Lock_BreakLock = 1401;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_NetworkAddress_MethodIdentifier = 15011;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_InitLock Method.
@@ -107,6 +127,21 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_BreakLock = 1419;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_MethodSet_MethodIdentifier = 1428;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_GroupIdentifier_MethodIdentifier = 15012;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_Identification_MethodIdentifier = 15013;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_InitLock Method.
         /// </summary>
         public const uint ConnectionPoint_Foundation_HSE_Lock_InitLock = 1438;
@@ -125,6 +160,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_BreakLock Method.
         /// </summary>
         public const uint ConnectionPoint_Foundation_HSE_Lock_BreakLock = 1445;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_NetworkAddress_MethodIdentifier = 15014;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_InitLock Method.
@@ -147,6 +187,21 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_BreakLock = 1463;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_MethodSet_MethodIdentifier = 1471;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_GroupIdentifier_MethodIdentifier = 15015;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_Identification_MethodIdentifier = 15016;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_Profibus_DP_Lock_InitLock Method.
         /// </summary>
         public const uint ConnectionPoint_Profibus_DP_Lock_InitLock = 1481;
@@ -165,6 +220,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_Profibus_DP_Lock_BreakLock Method.
         /// </summary>
         public const uint ConnectionPoint_Profibus_DP_Lock_BreakLock = 1488;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_NetworkAddress_MethodIdentifier = 15017;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_InitLock Method.
@@ -187,6 +247,21 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_BreakLock = 1506;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_MethodSet_MethodIdentifier = 1513;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_GroupIdentifier_MethodIdentifier = 15018;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_Identification_MethodIdentifier = 15019;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_Profinet_IO_Lock_InitLock Method.
         /// </summary>
         public const uint ConnectionPoint_Profinet_IO_Lock_InitLock = 1523;
@@ -205,6 +280,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_Profinet_IO_Lock_BreakLock Method.
         /// </summary>
         public const uint ConnectionPoint_Profinet_IO_Lock_BreakLock = 1530;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_NetworkAddress_MethodIdentifier = 15020;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_InitLock Method.
@@ -227,6 +307,21 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_BreakLock = 1548;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_MethodSet_MethodIdentifier = 1558;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_GroupIdentifier_MethodIdentifier = 15021;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_Identification_MethodIdentifier = 15022;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP5_Lock_InitLock Method.
         /// </summary>
         public const uint ConnectionPoint_HART_TP5_Lock_InitLock = 1568;
@@ -245,6 +340,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_HART_TP5_Lock_BreakLock Method.
         /// </summary>
         public const uint ConnectionPoint_HART_TP5_Lock_BreakLock = 1575;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_NetworkAddress_MethodIdentifier = 15023;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_InitLock Method.
@@ -267,6 +367,21 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_BreakLock = 1593;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_MethodSet_MethodIdentifier = 1605;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_GroupIdentifier_MethodIdentifier = 15024;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_Identification_MethodIdentifier = 15025;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP6_Lock_InitLock Method.
         /// </summary>
         public const uint ConnectionPoint_HART_TP6_Lock_InitLock = 1615;
@@ -285,6 +400,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_HART_TP6_Lock_BreakLock Method.
         /// </summary>
         public const uint ConnectionPoint_HART_TP6_Lock_BreakLock = 1622;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_NetworkAddress_MethodIdentifier = 15026;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_InitLock Method.
@@ -307,6 +427,21 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_BreakLock = 1640;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_MethodSet_MethodIdentifier = 1652;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_GroupIdentifier_MethodIdentifier = 15027;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_Identification_MethodIdentifier = 15028;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP7_Lock_InitLock Method.
         /// </summary>
         public const uint ConnectionPoint_HART_TP7_Lock_InitLock = 1662;
@@ -325,6 +460,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_HART_TP7_Lock_BreakLock Method.
         /// </summary>
         public const uint ConnectionPoint_HART_TP7_Lock_BreakLock = 1669;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_NetworkAddress_MethodIdentifier = 15029;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_InitLock Method.
@@ -347,6 +487,21 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_BreakLock = 1687;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_MethodSet_MethodIdentifier = 1699;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_GroupIdentifier_MethodIdentifier = 15030;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_Identification_MethodIdentifier = 15031;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_InitLock Method.
         /// </summary>
         public const uint ConnectionPoint_ISA100_Wireless_Lock_InitLock = 1709;
@@ -365,6 +520,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_BreakLock Method.
         /// </summary>
         public const uint ConnectionPoint_ISA100_Wireless_Lock_BreakLock = 1716;
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_NetworkAddress_MethodIdentifier = 15032;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_InitLock Method.
@@ -387,6 +547,21 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_BreakLock = 1734;
 
         /// <summary>
+        /// The identifier for the GenericConnectionPoint_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint GenericConnectionPoint_MethodSet_MethodIdentifier = 1746;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint GenericConnectionPoint_GroupIdentifier_MethodIdentifier = 15033;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint GenericConnectionPoint_Identification_MethodIdentifier = 15034;
+
+        /// <summary>
         /// The identifier for the GenericConnectionPoint_Lock_InitLock Method.
         /// </summary>
         public const uint GenericConnectionPoint_Lock_InitLock = 1756;
@@ -405,6 +580,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the GenericConnectionPoint_Lock_BreakLock Method.
         /// </summary>
         public const uint GenericConnectionPoint_Lock_BreakLock = 1763;
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint GenericConnectionPoint_NetworkAddress_MethodIdentifier = 15035;
 
         /// <summary>
         /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_InitLock Method.
@@ -427,6 +607,21 @@ namespace Opc.Ua.Fdi7
         public const uint GenericConnectionPoint_NetworkIdentifier_Lock_BreakLock = 1781;
 
         /// <summary>
+        /// The identifier for the CommunicationServerType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint CommunicationServerType_MethodSet_MethodIdentifier = 15;
+
+        /// <summary>
+        /// The identifier for the CommunicationServerType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint CommunicationServerType_GroupIdentifier_MethodIdentifier = 15036;
+
+        /// <summary>
+        /// The identifier for the CommunicationServerType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint CommunicationServerType_Identification_MethodIdentifier = 15037;
+
+        /// <summary>
         /// The identifier for the CommunicationServerType_Lock_InitLock Method.
         /// </summary>
         public const uint CommunicationServerType_Lock_InitLock = 25;
@@ -447,6 +642,16 @@ namespace Opc.Ua.Fdi7
         public const uint CommunicationServerType_Lock_BreakLock = 32;
 
         /// <summary>
+        /// The identifier for the CommunicationServerType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint CommunicationServerType_CPIdentifier_MethodSet_MethodIdentifier = 56;
+
+        /// <summary>
+        /// The identifier for the CommunicationServerType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint CommunicationServerType_CPIdentifier_Identification_MethodIdentifier = 15038;
+
+        /// <summary>
         /// The identifier for the CommunicationServerType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint CommunicationServerType_CPIdentifier_Lock_InitLock = 64;
@@ -465,6 +670,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the CommunicationServerType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public const uint CommunicationServerType_CPIdentifier_Lock_BreakLock = 71;
+
+        /// <summary>
+        /// The identifier for the CommunicationServerType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint CommunicationServerType_CPIdentifier_NetworkAddress_MethodIdentifier = 15039;
 
         /// <summary>
         /// The identifier for the CommunicationServerType_MethodSet_Initialize Method.
@@ -517,6 +727,21 @@ namespace Opc.Ua.Fdi7
         public const uint SetAddressMethodGENERICType = 1785;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationDeviceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationDeviceType_MethodSet_MethodIdentifier = 97;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationDeviceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationDeviceType_GroupIdentifier_MethodIdentifier = 15040;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationDeviceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationDeviceType_Identification_MethodIdentifier = 15041;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_Lock_InitLock Method.
         /// </summary>
         public const uint ServerCommunicationDeviceType_Lock_InitLock = 107;
@@ -535,6 +760,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationDeviceType_Lock_BreakLock Method.
         /// </summary>
         public const uint ServerCommunicationDeviceType_Lock_BreakLock = 114;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationDeviceType_CPIdentifier_MethodSet_MethodIdentifier = 138;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationDeviceType_CPIdentifier_Identification_MethodIdentifier = 15042;
 
         /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_CPIdentifier_Lock_InitLock Method.
@@ -557,6 +792,11 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationDeviceType_CPIdentifier_Lock_BreakLock = 153;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15043;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_MethodSet_Scan Method.
         /// </summary>
         public const uint ServerCommunicationDeviceType_MethodSet_Scan = 157;
@@ -575,6 +815,21 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationDeviceType_MethodSet_RemoveComponent Method.
         /// </summary>
         public const uint ServerCommunicationDeviceType_MethodSet_RemoveComponent = 167;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFH1DeviceType_MethodSet_MethodIdentifier = 328;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFH1DeviceType_GroupIdentifier_MethodIdentifier = 15044;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFH1DeviceType_Identification_MethodIdentifier = 15045;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_Lock_InitLock Method.
@@ -597,6 +852,16 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFH1DeviceType_Lock_BreakLock = 345;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFH1DeviceType_CPIdentifier_MethodSet_MethodIdentifier = 369;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFH1DeviceType_CPIdentifier_Identification_MethodIdentifier = 15046;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_InitLock = 377;
@@ -617,9 +882,24 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_BreakLock = 384;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFH1DeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15047;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_MethodSet_SetAddress Method.
         /// </summary>
         public const uint ServerCommunicationFFH1DeviceType_MethodSet_SetAddress = 398;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_MethodIdentifier = 405;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_Identification_MethodIdentifier = 15048;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_InitLock Method.
@@ -657,6 +937,21 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Transfer = 446;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEDeviceType_MethodSet_MethodIdentifier = 456;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEDeviceType_GroupIdentifier_MethodIdentifier = 15049;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEDeviceType_Identification_MethodIdentifier = 15050;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_Lock_InitLock Method.
         /// </summary>
         public const uint ServerCommunicationFFHSEDeviceType_Lock_InitLock = 466;
@@ -675,6 +970,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationFFHSEDeviceType_Lock_BreakLock Method.
         /// </summary>
         public const uint ServerCommunicationFFHSEDeviceType_Lock_BreakLock = 473;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEDeviceType_CPIdentifier_MethodSet_MethodIdentifier = 497;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEDeviceType_CPIdentifier_Identification_MethodIdentifier = 15051;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_InitLock Method.
@@ -697,9 +1002,24 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_BreakLock = 512;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15052;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_MethodSet_SetAddress Method.
         /// </summary>
         public const uint ServerCommunicationFFHSEDeviceType_MethodSet_SetAddress = 526;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_MethodIdentifier = 533;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_Identification_MethodIdentifier = 15053;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_InitLock Method.
@@ -737,6 +1057,21 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_Transfer = 574;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSDeviceType_MethodSet_MethodIdentifier = 584;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSDeviceType_GroupIdentifier_MethodIdentifier = 15054;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSDeviceType_Identification_MethodIdentifier = 15055;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_Lock_InitLock Method.
         /// </summary>
         public const uint ServerCommunicationPROFIBUSDeviceType_Lock_InitLock = 594;
@@ -755,6 +1090,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_Lock_BreakLock Method.
         /// </summary>
         public const uint ServerCommunicationPROFIBUSDeviceType_Lock_BreakLock = 601;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSDeviceType_CPIdentifier_MethodSet_MethodIdentifier = 625;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Identification_MethodIdentifier = 15056;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_InitLock Method.
@@ -777,9 +1122,24 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_BreakLock = 640;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15057;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_MethodSet_SetAddress Method.
         /// </summary>
         public const uint ServerCommunicationPROFIBUSDeviceType_MethodSet_SetAddress = 654;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_MethodIdentifier = 661;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Identification_MethodIdentifier = 15058;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_InitLock Method.
@@ -817,6 +1177,21 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Transfer = 702;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETDeviceType_MethodSet_MethodIdentifier = 709;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETDeviceType_GroupIdentifier_MethodIdentifier = 15059;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETDeviceType_Identification_MethodIdentifier = 15060;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_Lock_InitLock Method.
         /// </summary>
         public const uint ServerCommunicationPROFINETDeviceType_Lock_InitLock = 719;
@@ -835,6 +1210,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationPROFINETDeviceType_Lock_BreakLock Method.
         /// </summary>
         public const uint ServerCommunicationPROFINETDeviceType_Lock_BreakLock = 726;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETDeviceType_CPIdentifier_MethodSet_MethodIdentifier = 750;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETDeviceType_CPIdentifier_Identification_MethodIdentifier = 15061;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_InitLock Method.
@@ -857,9 +1242,24 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_BreakLock = 765;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15062;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_MethodSet_SetAddress Method.
         /// </summary>
         public const uint ServerCommunicationPROFINETDeviceType_MethodSet_SetAddress = 779;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_MethodIdentifier = 786;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_Identification_MethodIdentifier = 15063;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_InitLock Method.
@@ -897,6 +1297,21 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Transfer = 827;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationHARType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationHARType_MethodSet_MethodIdentifier = 834;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationHARType_GroupIdentifier_MethodIdentifier = 15064;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationHARType_Identification_MethodIdentifier = 15065;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationHARType_Lock_InitLock Method.
         /// </summary>
         public const uint ServerCommunicationHARType_Lock_InitLock = 844;
@@ -915,6 +1330,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationHARType_Lock_BreakLock Method.
         /// </summary>
         public const uint ServerCommunicationHARType_Lock_BreakLock = 851;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationHARType_CPIdentifier_MethodSet_MethodIdentifier = 875;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationHARType_CPIdentifier_Identification_MethodIdentifier = 15066;
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_CPIdentifier_Lock_InitLock Method.
@@ -937,9 +1362,24 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationHARType_CPIdentifier_Lock_BreakLock = 890;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationHARType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationHARType_CPIdentifier_NetworkAddress_MethodIdentifier = 15067;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationHARType_MethodSet_SetAddress Method.
         /// </summary>
         public const uint ServerCommunicationHARType_MethodSet_SetAddress = 904;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationHARType_ServiceProvider_MethodSet_MethodIdentifier = 911;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationHARType_ServiceProvider_Identification_MethodIdentifier = 15068;
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_Lock_InitLock Method.
@@ -977,6 +1417,21 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationHARType_ServiceProvider_MethodSet_Transfer = 952;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_MethodSet_MethodIdentifier = 1792;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_GroupIdentifier_MethodIdentifier = 15069;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_Identification_MethodIdentifier = 15070;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_InitLock Method.
         /// </summary>
         public const uint ServerCommunicationISA100_WirelessDeviceType_Lock_InitLock = 1802;
@@ -997,6 +1452,16 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationISA100_WirelessDeviceType_Lock_BreakLock = 1809;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_MethodSet_MethodIdentifier = 1833;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Identification_MethodIdentifier = 15071;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_InitLock = 1841;
@@ -1015,6 +1480,21 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_BreakLock = 1848;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15072;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_MethodIdentifier = 1866;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Identification_MethodIdentifier = 15073;
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_InitLock Method.
@@ -1052,6 +1532,21 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Transfer = 1907;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_MethodSet_MethodIdentifier = 1917;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_GroupIdentifier_MethodIdentifier = 15074;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_Identification_MethodIdentifier = 15075;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_InitLock Method.
         /// </summary>
         public const uint ServerCommunicationGENERICDeviceType_Lock_InitLock = 1927;
@@ -1070,6 +1565,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_BreakLock Method.
         /// </summary>
         public const uint ServerCommunicationGENERICDeviceType_Lock_BreakLock = 1934;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_MethodSet_MethodIdentifier = 1958;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_Identification_MethodIdentifier = 15076;
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_InitLock Method.
@@ -1092,9 +1597,24 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_BreakLock = 1973;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15077;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_SetAddress Method.
         /// </summary>
         public const uint ServerCommunicationGENERICDeviceType_MethodSet_SetAddress = 1988;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_MethodIdentifier = 1995;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Identification_MethodIdentifier = 15078;
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_InitLock Method.
@@ -1222,6 +1742,21 @@ namespace Opc.Ua.Fdi7
         public const uint GetPublishedDataMethodISA100_WirelessType = 2054;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationServiceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationServiceType_MethodSet_MethodIdentifier = 237;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationServiceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationServiceType_GroupIdentifier_MethodIdentifier = 15079;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationServiceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationServiceType_Identification_MethodIdentifier = 15080;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationServiceType_Lock_InitLock Method.
         /// </summary>
         public const uint ServerCommunicationServiceType_Lock_InitLock = 247;
@@ -1240,6 +1775,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationServiceType_Lock_BreakLock Method.
         /// </summary>
         public const uint ServerCommunicationServiceType_Lock_BreakLock = 254;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationServiceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationServiceType_CPIdentifier_MethodSet_MethodIdentifier = 278;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationServiceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationServiceType_CPIdentifier_Identification_MethodIdentifier = 15081;
 
         /// <summary>
         /// The identifier for the ServerCommunicationServiceType_CPIdentifier_Lock_InitLock Method.
@@ -1262,9 +1807,29 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationServiceType_CPIdentifier_Lock_BreakLock = 293;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationServiceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationServiceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15082;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationServiceType_MethodSet_Disconnect Method.
         /// </summary>
         public const uint ServerCommunicationServiceType_MethodSet_Disconnect = 300;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1ServiceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFH1ServiceType_MethodSet_MethodIdentifier = 1001;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1ServiceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFH1ServiceType_GroupIdentifier_MethodIdentifier = 15083;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1ServiceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFH1ServiceType_Identification_MethodIdentifier = 15084;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1ServiceType_Lock_InitLock Method.
@@ -1287,6 +1852,16 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFH1ServiceType_Lock_BreakLock = 1018;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFH1ServiceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFH1ServiceType_CPIdentifier_MethodSet_MethodIdentifier = 1042;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1ServiceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFH1ServiceType_CPIdentifier_Identification_MethodIdentifier = 15085;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_InitLock = 1050;
@@ -1305,6 +1880,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public const uint ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_BreakLock = 1057;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1ServiceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFH1ServiceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15086;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1ServiceType_MethodSet_Disconnect Method.
@@ -1327,6 +1907,21 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFH1ServiceType_MethodSet_GetPublishedData = 1070;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEServiceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEServiceType_MethodSet_MethodIdentifier = 1077;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEServiceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEServiceType_GroupIdentifier_MethodIdentifier = 15087;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEServiceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEServiceType_Identification_MethodIdentifier = 15088;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFHSEServiceType_Lock_InitLock Method.
         /// </summary>
         public const uint ServerCommunicationFFHSEServiceType_Lock_InitLock = 1087;
@@ -1345,6 +1940,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationFFHSEServiceType_Lock_BreakLock Method.
         /// </summary>
         public const uint ServerCommunicationFFHSEServiceType_Lock_BreakLock = 1094;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEServiceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEServiceType_CPIdentifier_MethodSet_MethodIdentifier = 1118;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEServiceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEServiceType_CPIdentifier_Identification_MethodIdentifier = 15089;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_InitLock Method.
@@ -1367,6 +1972,11 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_BreakLock = 1133;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEServiceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEServiceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15090;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFHSEServiceType_MethodSet_Disconnect Method.
         /// </summary>
         public const uint ServerCommunicationFFHSEServiceType_MethodSet_Disconnect = 1137;
@@ -1385,6 +1995,21 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationFFHSEServiceType_MethodSet_GetPublishedData Method.
         /// </summary>
         public const uint ServerCommunicationFFHSEServiceType_MethodSet_GetPublishedData = 1146;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSServiceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSServiceType_MethodSet_MethodIdentifier = 1153;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSServiceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSServiceType_GroupIdentifier_MethodIdentifier = 15091;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSServiceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSServiceType_Identification_MethodIdentifier = 15092;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSServiceType_Lock_InitLock Method.
@@ -1407,6 +2032,16 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFIBUSServiceType_Lock_BreakLock = 1170;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSServiceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSServiceType_CPIdentifier_MethodSet_MethodIdentifier = 1194;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSServiceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSServiceType_CPIdentifier_Identification_MethodIdentifier = 15093;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_InitLock = 1202;
@@ -1427,6 +2062,11 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_BreakLock = 1209;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSServiceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSServiceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15094;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSServiceType_MethodSet_Disconnect Method.
         /// </summary>
         public const uint ServerCommunicationPROFIBUSServiceType_MethodSet_Disconnect = 1213;
@@ -1440,6 +2080,21 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationPROFIBUSServiceType_MethodSet_Transfer Method.
         /// </summary>
         public const uint ServerCommunicationPROFIBUSServiceType_MethodSet_Transfer = 1219;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETServiceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETServiceType_MethodSet_MethodIdentifier = 1226;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETServiceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETServiceType_GroupIdentifier_MethodIdentifier = 15095;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETServiceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETServiceType_Identification_MethodIdentifier = 15096;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETServiceType_Lock_InitLock Method.
@@ -1462,6 +2117,16 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFINETServiceType_Lock_BreakLock = 1243;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETServiceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETServiceType_CPIdentifier_MethodSet_MethodIdentifier = 1267;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETServiceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETServiceType_CPIdentifier_Identification_MethodIdentifier = 15097;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_InitLock = 1275;
@@ -1482,6 +2147,11 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_BreakLock = 1282;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETServiceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETServiceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15098;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFINETServiceType_MethodSet_Disconnect Method.
         /// </summary>
         public const uint ServerCommunicationPROFINETServiceType_MethodSet_Disconnect = 1286;
@@ -1495,6 +2165,21 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationPROFINETServiceType_MethodSet_Transfer Method.
         /// </summary>
         public const uint ServerCommunicationPROFINETServiceType_MethodSet_Transfer = 1292;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARTServiceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationHARTServiceType_MethodSet_MethodIdentifier = 1299;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARTServiceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationHARTServiceType_GroupIdentifier_MethodIdentifier = 15099;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARTServiceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationHARTServiceType_Identification_MethodIdentifier = 15100;
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARTServiceType_Lock_InitLock Method.
@@ -1517,6 +2202,16 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationHARTServiceType_Lock_BreakLock = 1316;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationHARTServiceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationHARTServiceType_CPIdentifier_MethodSet_MethodIdentifier = 1340;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARTServiceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationHARTServiceType_CPIdentifier_Identification_MethodIdentifier = 15101;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationHARTServiceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint ServerCommunicationHARTServiceType_CPIdentifier_Lock_InitLock = 1348;
@@ -1535,6 +2230,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationHARTServiceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public const uint ServerCommunicationHARTServiceType_CPIdentifier_Lock_BreakLock = 1355;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARTServiceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationHARTServiceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15102;
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARTServiceType_MethodSet_Disconnect Method.
@@ -1557,6 +2257,21 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationHARTServiceType_MethodSet_GetPublishedData = 1368;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_MethodSet_MethodIdentifier = 2061;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_GroupIdentifier_MethodIdentifier = 15103;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_Identification_MethodIdentifier = 15104;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_InitLock Method.
         /// </summary>
         public const uint ServerCommunicationISA100_WirelessServiceType_Lock_InitLock = 2071;
@@ -1575,6 +2290,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_BreakLock Method.
         /// </summary>
         public const uint ServerCommunicationISA100_WirelessServiceType_Lock_BreakLock = 2078;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_MethodSet_MethodIdentifier = 2102;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Identification_MethodIdentifier = 15105;
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_InitLock Method.
@@ -1597,6 +2322,11 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_BreakLock = 2117;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15106;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_Disconnect Method.
         /// </summary>
         public const uint ServerCommunicationISA100_WirelessServiceType_MethodSet_Disconnect = 2121;
@@ -1615,6 +2345,21 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData Method.
         /// </summary>
         public const uint ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData = 2130;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_MethodSet_MethodIdentifier = 2137;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_GroupIdentifier_MethodIdentifier = 15107;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_Identification_MethodIdentifier = 15108;
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICServiceType_Lock_InitLock Method.
@@ -1637,6 +2382,16 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationGENERICServiceType_Lock_BreakLock = 2154;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_MethodSet_MethodIdentifier = 2178;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_Identification_MethodIdentifier = 15109;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint ServerCommunicationGENERICServiceType_CPIdentifier_Lock_InitLock = 2186;
@@ -1655,6 +2410,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public const uint ServerCommunicationGENERICServiceType_CPIdentifier_Lock_BreakLock = 2193;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15110;
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_Disconnect Method.
@@ -6417,6 +7177,21 @@ namespace Opc.Ua.Fdi7
     public static partial class MethodIds
     {
         /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_H1_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_H1_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_H1_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_H1_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_H1_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -6435,6 +7210,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_Foundation_H1_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_H1_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_H1_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_InitLock Method.
@@ -6457,6 +7237,21 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_HSE_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_HSE_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_HSE_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_HSE_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -6475,6 +7270,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_HSE_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_HSE_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_InitLock Method.
@@ -6497,6 +7297,21 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profibus_DP_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profibus_DP_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profibus_DP_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_Profibus_DP_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profibus_DP_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -6515,6 +7330,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_Profibus_DP_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profibus_DP_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profibus_DP_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_InitLock Method.
@@ -6537,6 +7357,21 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profinet_IO_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profinet_IO_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profinet_IO_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_Profinet_IO_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profinet_IO_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -6555,6 +7390,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_Profinet_IO_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profinet_IO_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profinet_IO_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_InitLock Method.
@@ -6577,6 +7417,21 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP5_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP5_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP5_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP5_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP5_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -6595,6 +7450,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_HART_TP5_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP5_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP5_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_InitLock Method.
@@ -6617,6 +7477,21 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP6_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP6_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP6_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP6_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP6_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -6635,6 +7510,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_HART_TP6_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP6_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP6_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_InitLock Method.
@@ -6657,6 +7537,21 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP7_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP7_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP7_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP7_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP7_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -6675,6 +7570,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_HART_TP7_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP7_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP7_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_InitLock Method.
@@ -6697,6 +7597,21 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_ISA100_Wireless_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_ISA100_Wireless_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_ISA100_Wireless_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_ISA100_Wireless_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -6715,6 +7630,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_ISA100_Wireless_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_ISA100_Wireless_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_InitLock Method.
@@ -6737,6 +7657,21 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the GenericConnectionPoint_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.GenericConnectionPoint_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.GenericConnectionPoint_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.GenericConnectionPoint_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the GenericConnectionPoint_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId GenericConnectionPoint_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.GenericConnectionPoint_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -6755,6 +7690,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the GenericConnectionPoint_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId GenericConnectionPoint_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.GenericConnectionPoint_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.GenericConnectionPoint_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_InitLock Method.
@@ -6777,6 +7717,21 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId GenericConnectionPoint_NetworkIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.GenericConnectionPoint_NetworkIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the CommunicationServerType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CommunicationServerType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.CommunicationServerType_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the CommunicationServerType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CommunicationServerType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.CommunicationServerType_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the CommunicationServerType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CommunicationServerType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.CommunicationServerType_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the CommunicationServerType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId CommunicationServerType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.CommunicationServerType_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -6797,6 +7752,16 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId CommunicationServerType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.CommunicationServerType_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the CommunicationServerType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CommunicationServerType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.CommunicationServerType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the CommunicationServerType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CommunicationServerType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.CommunicationServerType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the CommunicationServerType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId CommunicationServerType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.CommunicationServerType_CPIdentifier_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -6815,6 +7780,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the CommunicationServerType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId CommunicationServerType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.CommunicationServerType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the CommunicationServerType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CommunicationServerType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.CommunicationServerType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the CommunicationServerType_MethodSet_Initialize Method.
@@ -6867,6 +7837,21 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId SetAddressMethodGENERICType = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.SetAddressMethodGENERICType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationDeviceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationDeviceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationDeviceType_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationDeviceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationDeviceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationDeviceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationDeviceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationDeviceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationDeviceType_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationDeviceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationDeviceType_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -6885,6 +7870,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationDeviceType_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationDeviceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationDeviceType_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationDeviceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationDeviceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationDeviceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationDeviceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_CPIdentifier_Lock_InitLock Method.
@@ -6907,6 +7902,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationDeviceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationDeviceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_MethodSet_Scan Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationDeviceType_MethodSet_Scan = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationDeviceType_MethodSet_Scan, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -6925,6 +7925,21 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationDeviceType_MethodSet_RemoveComponent Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationDeviceType_MethodSet_RemoveComponent = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationDeviceType_MethodSet_RemoveComponent, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1DeviceType_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1DeviceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1DeviceType_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_Lock_InitLock Method.
@@ -6947,6 +7962,16 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1DeviceType_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1DeviceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1DeviceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -6967,9 +7992,24 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1DeviceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_MethodSet_SetAddress Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_MethodSet_SetAddress = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1DeviceType_MethodSet_SetAddress, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1DeviceType_ServiceProvider_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_InitLock Method.
@@ -7007,6 +8047,21 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Transfer = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Transfer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEDeviceType_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEDeviceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEDeviceType_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEDeviceType_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -7025,6 +8080,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationFFHSEDeviceType_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEDeviceType_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEDeviceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEDeviceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_InitLock Method.
@@ -7047,9 +8112,24 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_MethodSet_SetAddress Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_MethodSet_SetAddress = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEDeviceType_MethodSet_SetAddress, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEDeviceType_ServiceProvider_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_InitLock Method.
@@ -7087,6 +8167,21 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_Transfer = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_Transfer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSDeviceType_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSDeviceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSDeviceType_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSDeviceType_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -7105,6 +8200,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSDeviceType_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSDeviceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_InitLock Method.
@@ -7127,9 +8232,24 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_MethodSet_SetAddress Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_MethodSet_SetAddress = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSDeviceType_MethodSet_SetAddress, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_InitLock Method.
@@ -7167,6 +8287,21 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Transfer = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Transfer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETDeviceType_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETDeviceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETDeviceType_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETDeviceType_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -7185,6 +8320,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationPROFINETDeviceType_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETDeviceType_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETDeviceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETDeviceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_InitLock Method.
@@ -7207,9 +8352,24 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_MethodSet_SetAddress Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_MethodSet_SetAddress = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETDeviceType_MethodSet_SetAddress, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETDeviceType_ServiceProvider_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_InitLock Method.
@@ -7247,6 +8407,21 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Transfer = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Transfer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationHARType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARType_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARType_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARType_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationHARType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationHARType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARType_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -7265,6 +8440,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationHARType_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationHARType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARType_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_CPIdentifier_Lock_InitLock Method.
@@ -7287,9 +8472,24 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationHARType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationHARType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationHARType_MethodSet_SetAddress Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationHARType_MethodSet_SetAddress = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARType_MethodSet_SetAddress, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARType_ServiceProvider_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARType_ServiceProvider_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_Lock_InitLock Method.
@@ -7327,6 +8527,21 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_MethodSet_Transfer = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARType_ServiceProvider_MethodSet_Transfer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -7347,6 +8562,16 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -7365,6 +8590,21 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_InitLock Method.
@@ -7402,6 +8642,21 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Transfer = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Transfer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -7420,6 +8675,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_InitLock Method.
@@ -7442,9 +8707,24 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_MethodSet_SetAddress Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_MethodSet_SetAddress = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_MethodSet_SetAddress, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICDeviceType_ServiceProvider_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_InitLock Method.
@@ -7572,6 +8852,21 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId GetPublishedDataMethodISA100_WirelessType = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.GetPublishedDataMethodISA100_WirelessType, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationServiceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationServiceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationServiceType_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationServiceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationServiceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationServiceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationServiceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationServiceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationServiceType_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationServiceType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationServiceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationServiceType_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -7590,6 +8885,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationServiceType_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationServiceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationServiceType_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationServiceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationServiceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationServiceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationServiceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationServiceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationServiceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationServiceType_CPIdentifier_Lock_InitLock Method.
@@ -7612,9 +8917,29 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationServiceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationServiceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationServiceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationServiceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationServiceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationServiceType_MethodSet_Disconnect Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationServiceType_MethodSet_Disconnect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationServiceType_MethodSet_Disconnect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1ServiceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1ServiceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1ServiceType_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1ServiceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1ServiceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1ServiceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1ServiceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1ServiceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1ServiceType_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1ServiceType_Lock_InitLock Method.
@@ -7637,6 +8962,16 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFH1ServiceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1ServiceType_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFH1ServiceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1ServiceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1ServiceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1ServiceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1ServiceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1ServiceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -7655,6 +8990,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1ServiceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1ServiceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1ServiceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1ServiceType_MethodSet_Disconnect Method.
@@ -7677,6 +9017,21 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFH1ServiceType_MethodSet_GetPublishedData = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFH1ServiceType_MethodSet_GetPublishedData, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEServiceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEServiceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEServiceType_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEServiceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEServiceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEServiceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEServiceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEServiceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEServiceType_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFHSEServiceType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFHSEServiceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEServiceType_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -7695,6 +9050,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationFFHSEServiceType_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFHSEServiceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEServiceType_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEServiceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEServiceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEServiceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEServiceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEServiceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEServiceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_InitLock Method.
@@ -7717,6 +9082,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEServiceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEServiceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEServiceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFHSEServiceType_MethodSet_Disconnect Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFHSEServiceType_MethodSet_Disconnect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEServiceType_MethodSet_Disconnect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -7735,6 +9105,21 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationFFHSEServiceType_MethodSet_GetPublishedData Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFHSEServiceType_MethodSet_GetPublishedData = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationFFHSEServiceType_MethodSet_GetPublishedData, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSServiceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSServiceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSServiceType_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSServiceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSServiceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSServiceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSServiceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSServiceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSServiceType_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSServiceType_Lock_InitLock Method.
@@ -7757,6 +9142,16 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSServiceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSServiceType_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSServiceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSServiceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSServiceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSServiceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSServiceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSServiceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -7777,6 +9172,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSServiceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSServiceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSServiceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSServiceType_MethodSet_Disconnect Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSServiceType_MethodSet_Disconnect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSServiceType_MethodSet_Disconnect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -7790,6 +9190,21 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationPROFIBUSServiceType_MethodSet_Transfer Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSServiceType_MethodSet_Transfer = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFIBUSServiceType_MethodSet_Transfer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETServiceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETServiceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETServiceType_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETServiceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETServiceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETServiceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETServiceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETServiceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETServiceType_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETServiceType_Lock_InitLock Method.
@@ -7812,6 +9227,16 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFINETServiceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETServiceType_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETServiceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETServiceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETServiceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETServiceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETServiceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETServiceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -7832,6 +9257,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETServiceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETServiceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETServiceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFINETServiceType_MethodSet_Disconnect Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFINETServiceType_MethodSet_Disconnect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETServiceType_MethodSet_Disconnect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -7845,6 +9275,21 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationPROFINETServiceType_MethodSet_Transfer Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFINETServiceType_MethodSet_Transfer = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationPROFINETServiceType_MethodSet_Transfer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARTServiceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARTServiceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARTServiceType_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARTServiceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARTServiceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARTServiceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARTServiceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARTServiceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARTServiceType_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARTServiceType_Lock_InitLock Method.
@@ -7867,6 +9312,16 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationHARTServiceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARTServiceType_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationHARTServiceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARTServiceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARTServiceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARTServiceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARTServiceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARTServiceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationHARTServiceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationHARTServiceType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARTServiceType_CPIdentifier_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -7885,6 +9340,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationHARTServiceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationHARTServiceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARTServiceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARTServiceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARTServiceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARTServiceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARTServiceType_MethodSet_Disconnect Method.
@@ -7907,6 +9367,21 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationHARTServiceType_MethodSet_GetPublishedData = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationHARTServiceType_MethodSet_GetPublishedData, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -7925,6 +9400,16 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_InitLock Method.
@@ -7947,6 +9432,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_Disconnect Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_MethodSet_Disconnect = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_MethodSet_Disconnect, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -7965,6 +9455,21 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICServiceType_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICServiceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICServiceType_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICServiceType_Lock_InitLock Method.
@@ -7987,6 +9492,16 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICServiceType_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICServiceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICServiceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICServiceType_CPIdentifier_Lock_InitLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -8005,6 +9520,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICServiceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Methods.ServerCommunicationGENERICServiceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICServiceType_MethodSet_Disconnect Method.

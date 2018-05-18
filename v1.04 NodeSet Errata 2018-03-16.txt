@@ -1,6 +1,14 @@
 The following mismatches between the specification have been corrected in the v1.04 NodeSet since the release of the specification:
 
-#4202 -	v1.04 Part 12: 7.5.14 UserCredentialCertificateType is missing from the nodeset files on github;
-
-
-
+0004202 - v1.04 Part 12: 7.5.14 UserCredentialCertificateType is missing from the nodeset files on github;
+0004180 - RolePermissionType::permissions has wrong data type in UANodeSet;
+0004201 - Wrong usage of MandatoryPlaceholder in DI model
+0004209 - DataTypeField: ArrayDimensions and MaxStringLength missing from UANodeSet schema; 
+0004259 - 1.04 NodeSet2 (and Ua Defined Types xml) have wrong supertypes for EventNotifierType and PermissionType
+0004234 - Missing references in FileTransferStateMachineType;
+0004213 - Wrong ReferenceType at Namespaces Object
+0004216 - v1.04 Part 3: 8.58 NonatomicRead/Write define false bits in the nodeset files on github
+0004214 - v1.04 Part 12: 7.5.14 QueryApplications lacks the applicationType field in the nodeset files on github
+0004274 - DataSetFieldFlags broken in Opc.Ua.Types.xsd
+0004282 - Typo for AccessRestrictionType
+0004283 - NamespacePublicationDate not correct

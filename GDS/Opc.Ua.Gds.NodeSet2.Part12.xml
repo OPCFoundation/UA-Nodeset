@@ -28,12 +28,12 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-02-09T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-05-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
     <Uri>http://opcfoundation.org/UA/GDS/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.02" PublicationDate="2018-02-09T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.02" PublicationDate="2018-05-15T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -85,7 +85,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=862</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=863</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=864</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">i=11715</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
     </References>
   </UAObject>
@@ -119,7 +119,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=721</Reference>
     </References>
     <Value>
-      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2017-11-22</String>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2018-05-15</String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=725" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=721" DataType="Boolean">

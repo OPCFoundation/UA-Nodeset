@@ -135,6 +135,7 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=7006</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7001</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7002</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
@@ -142,6 +143,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1001</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=7006" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=5002" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5002</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=7001" BrowseName="1:Start" ParentNodeId="ns=1;i=5002">
     <DisplayName>Start</DisplayName>
     <References>
@@ -177,43 +186,88 @@
   <UAObject NodeId="ns=1;i=5006" BrowseName="1:GlobalVars" ParentNodeId="ns=1;i=1001">
     <DisplayName>GlobalVars</DisplayName>
     <References>
+      <Reference ReferenceType="Organizes">ns=1;i=15005</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1001</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=15005" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=5006" MethodDeclarationId="ns=2;i=6029">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the group.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5006</Reference>
+    </References>
+  </UAMethod>
   <UAObject NodeId="ns=1;i=5007" BrowseName="1:AccessVars" ParentNodeId="ns=1;i=1001">
     <DisplayName>AccessVars</DisplayName>
     <References>
+      <Reference ReferenceType="Organizes">ns=1;i=15006</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1001</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=15006" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=5007" MethodDeclarationId="ns=2;i=6029">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the group.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5007</Reference>
+    </References>
+  </UAMethod>
   <UAObject NodeId="ns=1;i=5008" BrowseName="1:ConfigVars" ParentNodeId="ns=1;i=1001">
     <DisplayName>ConfigVars</DisplayName>
     <References>
+      <Reference ReferenceType="Organizes">ns=1;i=15007</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1001</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=15007" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=5008" MethodDeclarationId="ns=2;i=6029">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the group.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5008</Reference>
+    </References>
+  </UAMethod>
   <UAObject NodeId="ns=1;i=5009" BrowseName="1:Configuration" ParentNodeId="ns=1;i=1001">
     <DisplayName>Configuration</DisplayName>
     <References>
+      <Reference ReferenceType="Organizes">ns=1;i=15008</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1001</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=15008" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=5009" MethodDeclarationId="ns=2;i=6029">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the group.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5009</Reference>
+    </References>
+  </UAMethod>
   <UAObject NodeId="ns=1;i=5010" BrowseName="1:Diagnostic" ParentNodeId="ns=1;i=1001">
     <DisplayName>Diagnostic</DisplayName>
     <References>
+      <Reference ReferenceType="Organizes">ns=1;i=15009</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1001</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=15009" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=5010" MethodDeclarationId="ns=2;i=6029">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the group.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5010</Reference>
+    </References>
+  </UAMethod>
   <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:CtrlResourceType">
     <DisplayName>CtrlResourceType</DisplayName>
     <References>
@@ -230,6 +284,7 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=7009</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7003</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7004</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
@@ -237,6 +292,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1002</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=7009" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=5012" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5012</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=7003" BrowseName="1:Start" ParentNodeId="ns=1;i=5012">
     <DisplayName>Start</DisplayName>
     <References>
@@ -290,27 +353,54 @@
   <UAObject NodeId="ns=1;i=5018" BrowseName="1:GlobalVars" ParentNodeId="ns=1;i=1002">
     <DisplayName>GlobalVars</DisplayName>
     <References>
+      <Reference ReferenceType="Organizes">ns=1;i=15014</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1002</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=15014" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=5018" MethodDeclarationId="ns=2;i=6029">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the group.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5018</Reference>
+    </References>
+  </UAMethod>
   <UAObject NodeId="ns=1;i=5019" BrowseName="1:Configuration" ParentNodeId="ns=1;i=1002">
     <DisplayName>Configuration</DisplayName>
     <References>
+      <Reference ReferenceType="Organizes">ns=1;i=15015</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1002</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=15015" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=5019" MethodDeclarationId="ns=2;i=6029">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the group.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5019</Reference>
+    </References>
+  </UAMethod>
   <UAObject NodeId="ns=1;i=5020" BrowseName="1:Diagnostic" ParentNodeId="ns=1;i=1002">
     <DisplayName>Diagnostic</DisplayName>
     <References>
+      <Reference ReferenceType="Organizes">ns=1;i=15016</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1002</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=15016" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=5020" MethodDeclarationId="ns=2;i=6029">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the group.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5020</Reference>
+    </References>
+  </UAMethod>
   <UAObjectType NodeId="ns=1;i=1003" BrowseName="1:CtrlProgramOrganizationUnitType" IsAbstract="true">
     <DisplayName>CtrlProgramOrganizationUnitType</DisplayName>
     <References>

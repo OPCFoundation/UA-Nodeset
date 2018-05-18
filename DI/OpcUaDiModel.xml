@@ -108,7 +108,7 @@
       <Object SymbolicName="DI:MethodSet" TypeDefinition="OpcUa:BaseObjectType" ModellingRule="Optional">
         <Description>Flat list of Methods</Description>
         <Children>
-          <Method SymbolicName="DI:MethodIdentifier" ModellingRule="MandatoryPlaceholder">
+          <Method SymbolicName="DI:MethodIdentifier">
             <BrowseName>&lt;MethodIdentifier&gt;</BrowseName>
             <Description>A method which belongs to the topology element.</Description>
           </Method>
@@ -247,7 +247,7 @@
         <Description>A parameter which belongs to the group.</Description>
         <ReferenceType>OpcUa:Organizes</ReferenceType>
       </Variable>
-      <Method SymbolicName="DI:MethodIdentifier" ModellingRule="OptionalPlaceholder">
+      <Method SymbolicName="DI:MethodIdentifier">
         <BrowseName>&lt;MethodIdentifier&gt;</BrowseName>
         <Description>A method which belongs to the group.</Description>
         <ReferenceType>OpcUa:Organizes</ReferenceType>
