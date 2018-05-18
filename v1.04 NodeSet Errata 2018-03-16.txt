@@ -11,3 +11,4 @@ The following mismatches between the specification have been corrected in the v1
 0004214 - v1.04 Part 12: 7.5.14 QueryApplications lacks the applicationType field in the nodeset files on github
 0004274 - DataSetFieldFlags broken in Opc.Ua.Types.xsd
 0004282 - Typo for AccessRestrictionType
+0004283 - NamespacePublicationDate not correct
