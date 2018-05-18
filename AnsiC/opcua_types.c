@@ -163,9 +163,9 @@ static struct _OpcUa_EnumeratedValue g_OpcUa_AccessLevelExType_EnumeratedValues[
     { "HistoryWrite", 16 },
     { "StatusWrite", 32 },
     { "TimestampWrite", 64 },
-    { "NonatomicRead", 65536 },
-    { "NonatomicWrite", 131072 },
-    { "WriteFullArrayOnly", 262144 },
+    { "NonatomicRead", 256 },
+    { "NonatomicWrite", 512 },
+    { "WriteFullArrayOnly", 1024 },
     { OpcUa_Null, 0 }
 };
 

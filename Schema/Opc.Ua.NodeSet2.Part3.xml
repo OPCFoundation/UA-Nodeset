@@ -1141,9 +1141,9 @@
       <Field Name="HistoryWrite" Value="16" />
       <Field Name="StatusWrite" Value="32" />
       <Field Name="TimestampWrite" Value="64" />
-      <Field Name="NonatomicRead" Value="65536" />
-      <Field Name="NonatomicWrite" Value="131072" />
-      <Field Name="WriteFullArrayOnly" Value="262144" />
+      <Field Name="NonatomicRead" Value="256" />
+      <Field Name="NonatomicWrite" Value="512" />
+      <Field Name="WriteFullArrayOnly" Value="1024" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15407" BrowseName="OptionSetValues" ParentNodeId="i=15406" DataType="LocalizedText" ValueRank="1">
@@ -1189,46 +1189,6 @@
           <Locale>
           </Locale>
           <Text>TimestampWrite</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>Reserved</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>Reserved</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>Reserved</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>Reserved</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>Reserved</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>Reserved</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>Reserved</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>Reserved</Text>
         </LocalizedText>
         <LocalizedText>
           <Locale>

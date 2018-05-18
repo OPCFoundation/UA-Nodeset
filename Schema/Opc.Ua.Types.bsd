@@ -803,9 +803,9 @@
     <opc:EnumeratedValue Name="HistoryWrite" Value="16" />
     <opc:EnumeratedValue Name="StatusWrite" Value="32" />
     <opc:EnumeratedValue Name="TimestampWrite" Value="64" />
-    <opc:EnumeratedValue Name="NonatomicRead" Value="65536" />
-    <opc:EnumeratedValue Name="NonatomicWrite" Value="131072" />
-    <opc:EnumeratedValue Name="WriteFullArrayOnly" Value="262144" />
+    <opc:EnumeratedValue Name="NonatomicRead" Value="256" />
+    <opc:EnumeratedValue Name="NonatomicWrite" Value="512" />
+    <opc:EnumeratedValue Name="WriteFullArrayOnly" Value="1024" />
   </opc:EnumeratedType>
 
   <opc:EnumeratedType Name="EventNotifierType" LengthInBits="32">

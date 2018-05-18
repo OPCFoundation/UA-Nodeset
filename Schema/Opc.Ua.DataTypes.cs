@@ -16407,20 +16407,20 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the NonatomicRead field.
         /// </summary>
-        [EnumMember(Value = "NonatomicRead_65536")]
-        NonatomicRead = 65536,
+        [EnumMember(Value = "NonatomicRead_256")]
+        NonatomicRead = 256,
 
         /// <summary>
         /// A description for the NonatomicWrite field.
         /// </summary>
-        [EnumMember(Value = "NonatomicWrite_131072")]
-        NonatomicWrite = 131072,
+        [EnumMember(Value = "NonatomicWrite_512")]
+        NonatomicWrite = 512,
 
         /// <summary>
         /// A description for the WriteFullArrayOnly field.
         /// </summary>
-        [EnumMember(Value = "WriteFullArrayOnly_262144")]
-        WriteFullArrayOnly = 262144,
+        [EnumMember(Value = "WriteFullArrayOnly_1024")]
+        WriteFullArrayOnly = 1024,
     }
     #endif
     #endregion
