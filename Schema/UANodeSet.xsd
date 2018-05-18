@@ -464,6 +464,8 @@
     <xs:attribute name="SymbolicName" type="SymbolicName" use="optional"></xs:attribute>
     <xs:attribute name="DataType" type="NodeId" default="i=24"></xs:attribute>
     <xs:attribute name="ValueRank" type="ValueRank" default="-1"></xs:attribute>
+    <xs:attribute name="ArrayDimensions" type="xs:string" default=""></xs:attribute>
+    <xs:attribute name="MaxStringLength" type="xs:unsignedInt" default="0"></xs:attribute>
     <xs:attribute name="Value" type="xs:int" default="-1"></xs:attribute>
     <xs:attribute name="IsOptional" type="xs:boolean" use="optional" default="false"></xs:attribute>
   </xs:complexType>
