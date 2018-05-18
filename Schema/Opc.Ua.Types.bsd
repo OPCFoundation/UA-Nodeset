@@ -817,7 +817,7 @@
 
   <opc:StructuredType Name="RolePermissionType" BaseType="ua:ExtensionObject">
     <opc:Field Name="RoleId" TypeName="ua:NodeId" />
-    <opc:Field Name="Permissions" TypeName="opc:UInt32" />
+    <opc:Field Name="Permissions" TypeName="tns:PermissionType" />
   </opc:StructuredType>
 
   <opc:EnumeratedType Name="StructureType" LengthInBits="32">

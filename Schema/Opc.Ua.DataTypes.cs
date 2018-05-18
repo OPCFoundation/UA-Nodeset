@@ -16533,7 +16533,7 @@ namespace Opc.Ua
         private void Initialize()
         {
             m_roleId = null;
-            m_permissions = (uint)0;
+            m_permissions = PermissionType.None;
         }
         #endregion
 
@@ -16552,7 +16552,7 @@ namespace Opc.Ua
         /// A description for the Permissions field.
         /// </summary>
         [DataMember(Name = "Permissions", IsRequired = false, Order = 2)]
-        public uint Permissions
+        public PermissionType Permissions
         {
             get { return m_permissions;  }
             set { m_permissions = value; }
@@ -16584,7 +16584,7 @@ namespace Opc.Ua
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             encoder.WriteNodeId("RoleId", RoleId);
-            encoder.WriteUInt32("Permissions", Permissions);
+            encoder.WriteEnumerated("Permissions", Permissions);
 
             encoder.PopNamespace();
         }
@@ -16595,7 +16595,7 @@ namespace Opc.Ua
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             RoleId = decoder.ReadNodeId("RoleId");
-            Permissions = decoder.ReadUInt32("Permissions");
+            Permissions = (PermissionType)decoder.ReadEnumerated("Permissions", typeof(PermissionType));
 
             decoder.PopNamespace();
         }
@@ -16635,7 +16635,7 @@ namespace Opc.Ua
             RolePermissionType clone = (RolePermissionType)base.MemberwiseClone();
 
             clone.m_roleId = (NodeId)Utils.Clone(this.m_roleId);
-            clone.m_permissions = (uint)Utils.Clone(this.m_permissions);
+            clone.m_permissions = (PermissionType)Utils.Clone(this.m_permissions);
 
             return clone;
         }
@@ -16643,7 +16643,7 @@ namespace Opc.Ua
 
         #region Private Fields
         private NodeId m_roleId;
-        private uint m_permissions;
+        private PermissionType m_permissions;
         #endregion
     }
 

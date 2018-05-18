@@ -235,8 +235,8 @@ OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_AccessRestrictionType_E
  *===========================================================================*/
 typedef struct _OpcUa_RolePermissionType
 {
-    OpcUa_NodeId RoleId;
-    OpcUa_UInt32 Permissions;
+    OpcUa_NodeId         RoleId;
+    OpcUa_PermissionType Permissions;
 }
 OpcUa_RolePermissionType;
 

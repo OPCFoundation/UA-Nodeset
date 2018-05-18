@@ -225,7 +225,7 @@ OpcUa_Void OpcUa_RolePermissionType_Initialize(OpcUa_RolePermissionType* a_pValu
     if (a_pValue != OpcUa_Null)
     {
         OpcUa_Field_Initialize(NodeId, RoleId);
-        OpcUa_Field_Initialize(UInt32, Permissions);
+        OpcUa_Field_InitializeEnumerated(OpcUa_PermissionType, Permissions);
     }
 }
 
@@ -237,7 +237,7 @@ OpcUa_Void OpcUa_RolePermissionType_Clear(OpcUa_RolePermissionType* a_pValue)
     if (a_pValue != OpcUa_Null)
     {
         OpcUa_Field_Clear(NodeId, RoleId);
-        OpcUa_Field_Clear(UInt32, Permissions);
+        OpcUa_Field_ClearEnumerated(OpcUa_PermissionType, Permissions);
     }
 }
 
@@ -257,7 +257,7 @@ OpcUa_StatusCode OpcUa_RolePermissionType_GetSize(OpcUa_RolePermissionType* a_pV
     *a_pSize = -1;
 
     OpcUa_Field_GetSize(NodeId, RoleId);
-    OpcUa_Field_GetSize(UInt32, Permissions);
+    OpcUa_Field_GetSizeEnumerated(OpcUa_PermissionType, Permissions);
 
     *a_pSize = iSize;
 
@@ -280,7 +280,7 @@ OpcUa_StatusCode OpcUa_RolePermissionType_Encode(OpcUa_RolePermissionType* a_pVa
     OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
 
     OpcUa_Field_Write(NodeId, RoleId);
-    OpcUa_Field_Write(UInt32, Permissions);
+    OpcUa_Field_WriteEnumerated(OpcUa_PermissionType, Permissions);
 
     OpcUa_ReturnStatusCode;
     OpcUa_BeginErrorHandling;
@@ -303,7 +303,7 @@ OpcUa_StatusCode OpcUa_RolePermissionType_Decode(OpcUa_RolePermissionType* a_pVa
     OpcUa_RolePermissionType_Initialize(a_pValue);
 
     OpcUa_Field_Read(NodeId, RoleId);
-    OpcUa_Field_Read(UInt32, Permissions);
+    OpcUa_Field_ReadEnumerated(OpcUa_PermissionType, Permissions);
 
     OpcUa_ReturnStatusCode;
     OpcUa_BeginErrorHandling;
