@@ -4,3 +4,5 @@ The following mismatches between the specification have been corrected in the v1
 0004180 - RolePermissionType::permissions has wrong data type in UANodeSet;
 0004201 - Wrong usage of MandatoryPlaceholder in DI model
 0004209 - DataTypeField: ArrayDimensions and MaxStringLength missing from UANodeSet schema; 
+0004259 - 1.04 NodeSet2 (and Ua Defined Types xml) have wrong supertypes for EventNotifierType and PermissionType
+

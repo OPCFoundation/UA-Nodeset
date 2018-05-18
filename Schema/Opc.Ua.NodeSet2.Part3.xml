@@ -943,7 +943,7 @@
     <DisplayName>PermissionType</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=15030</Reference>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
     <Definition Name="PermissionType" IsOptionSet="true">
       <Field Name="None" Value="0" />
@@ -1257,7 +1257,7 @@
     <DisplayName>EventNotifierType</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=15034</Reference>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=3</Reference>
     </References>
     <Definition Name="EventNotifierType" IsOptionSet="true">
       <Field Name="None" Value="0" />
