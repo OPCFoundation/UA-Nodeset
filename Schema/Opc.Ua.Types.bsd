@@ -392,7 +392,7 @@
     <opc:Field Name="Properties" TypeName="tns:KeyValuePair" LengthField="NoOfProperties" />
   </opc:StructuredType>
 
-  <opc:EnumeratedType Name="DataSetFieldFlags" LengthInBits="32">
+  <opc:EnumeratedType Name="DataSetFieldFlags" LengthInBits="16">
     <opc:EnumeratedValue Name="PromotedField" Value="1" />
   </opc:EnumeratedType>
 
@@ -785,7 +785,7 @@
     <opc:EnumeratedValue Name="View" Value="128" />
   </opc:EnumeratedType>
 
-  <opc:EnumeratedType Name="AccessLevelType" LengthInBits="32">
+  <opc:EnumeratedType Name="AccessLevelType" LengthInBits="8">
     <opc:EnumeratedValue Name="None" Value="0" />
     <opc:EnumeratedValue Name="CurrentRead" Value="1" />
     <opc:EnumeratedValue Name="CurrentWrite" Value="2" />
@@ -808,7 +808,7 @@
     <opc:EnumeratedValue Name="WriteFullArrayOnly" Value="1024" />
   </opc:EnumeratedType>
 
-  <opc:EnumeratedType Name="EventNotifierType" LengthInBits="32">
+  <opc:EnumeratedType Name="EventNotifierType" LengthInBits="8">
     <opc:EnumeratedValue Name="None" Value="0" />
     <opc:EnumeratedValue Name="SubscribeToEvents" Value="1" />
     <opc:EnumeratedValue Name="HistoryRead" Value="4" />
