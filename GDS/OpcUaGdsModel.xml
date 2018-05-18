@@ -93,7 +93,7 @@
     </opc:Children>
     <opc:References>
       <opc:Reference IsInverse="true">
-        <opc:ReferenceType>ua:Organizes</opc:ReferenceType>
+        <opc:ReferenceType>ua:HasComponent</opc:ReferenceType>
         <opc:TargetId>ua:Server_Namespaces</opc:TargetId>
       </opc:Reference>
     </opc:References>
@@ -156,6 +156,7 @@
       <opc:Argument Name="MaxRecordsToReturn" DataType="ua:UInt32"></opc:Argument>
       <opc:Argument Name="ApplicationName" DataType="ua:String"></opc:Argument>
       <opc:Argument Name="ApplicationUri" DataType="ua:String"></opc:Argument>
+      <opc:Argument Name="ApplicationType" DataType="ua:UInt32"></opc:Argument>
       <opc:Argument Name="ProductUri" DataType="ua:String"></opc:Argument>
       <opc:Argument Name="Capabilities" DataType="ua:String" ValueRank="Array"></opc:Argument>
     </opc:InputArguments>

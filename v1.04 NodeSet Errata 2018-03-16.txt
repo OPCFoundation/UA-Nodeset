@@ -8,4 +8,4 @@ The following mismatches between the specification have been corrected in the v1
 0004234 - Missing references in FileTransferStateMachineType;
 0004213 - Wrong ReferenceType at Namespaces Object
 0004216 - v1.04 Part 3: 8.58 NonatomicRead/Write define false bits in the nodeset files on github
-
+0004214 - v1.04 Part 12: 7.5.14 QueryApplications lacks the applicationType field in the nodeset files on github
