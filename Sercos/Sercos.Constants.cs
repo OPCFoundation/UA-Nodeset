@@ -77,6 +77,21 @@ namespace Sercos
         public const uint SercosNamespaceMetadata_NamespaceFile_SetPosition = 6108;
 
         /// <summary>
+        /// The identifier for the SercosDeviceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint SercosDeviceType_MethodSet_MethodIdentifier = 6015;
+
+        /// <summary>
+        /// The identifier for the SercosDeviceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint SercosDeviceType_GroupIdentifier_MethodIdentifier = 15001;
+
+        /// <summary>
+        /// The identifier for the SercosDeviceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint SercosDeviceType_Identification_MethodIdentifier = 15002;
+
+        /// <summary>
         /// The identifier for the SercosDeviceType_Lock_InitLock Method.
         /// </summary>
         public const uint SercosDeviceType_Lock_InitLock = 6025;
@@ -97,6 +112,16 @@ namespace Sercos
         public const uint SercosDeviceType_Lock_BreakLock = 6032;
 
         /// <summary>
+        /// The identifier for the SercosDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint SercosDeviceType_CPIdentifier_MethodSet_MethodIdentifier = 6056;
+
+        /// <summary>
+        /// The identifier for the SercosDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint SercosDeviceType_CPIdentifier_Identification_MethodIdentifier = 15003;
+
+        /// <summary>
         /// The identifier for the SercosDeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint SercosDeviceType_CPIdentifier_Lock_InitLock = 6064;
@@ -115,6 +140,11 @@ namespace Sercos
         /// The identifier for the SercosDeviceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public const uint SercosDeviceType_CPIdentifier_Lock_BreakLock = 6071;
+
+        /// <summary>
+        /// The identifier for the SercosDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint SercosDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15004;
     }
     #endregion
 
@@ -532,6 +562,21 @@ namespace Sercos
         public static readonly ExpandedNodeId SercosNamespaceMetadata_NamespaceFile_SetPosition = new ExpandedNodeId(Sercos.Methods.SercosNamespaceMetadata_NamespaceFile_SetPosition, Sercos.Namespaces.Sercos);
 
         /// <summary>
+        /// The identifier for the SercosDeviceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosDeviceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Sercos.Methods.SercosDeviceType_MethodSet_MethodIdentifier, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosDeviceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosDeviceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Sercos.Methods.SercosDeviceType_GroupIdentifier_MethodIdentifier, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosDeviceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosDeviceType_Identification_MethodIdentifier = new ExpandedNodeId(Sercos.Methods.SercosDeviceType_Identification_MethodIdentifier, Sercos.Namespaces.Sercos);
+
+        /// <summary>
         /// The identifier for the SercosDeviceType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId SercosDeviceType_Lock_InitLock = new ExpandedNodeId(Sercos.Methods.SercosDeviceType_Lock_InitLock, Sercos.Namespaces.Sercos);
@@ -552,6 +597,16 @@ namespace Sercos
         public static readonly ExpandedNodeId SercosDeviceType_Lock_BreakLock = new ExpandedNodeId(Sercos.Methods.SercosDeviceType_Lock_BreakLock, Sercos.Namespaces.Sercos);
 
         /// <summary>
+        /// The identifier for the SercosDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosDeviceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Sercos.Methods.SercosDeviceType_CPIdentifier_MethodSet_MethodIdentifier, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosDeviceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Sercos.Methods.SercosDeviceType_CPIdentifier_Identification_MethodIdentifier, Sercos.Namespaces.Sercos);
+
+        /// <summary>
         /// The identifier for the SercosDeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId SercosDeviceType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Sercos.Methods.SercosDeviceType_CPIdentifier_Lock_InitLock, Sercos.Namespaces.Sercos);
@@ -570,6 +625,11 @@ namespace Sercos
         /// The identifier for the SercosDeviceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId SercosDeviceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Sercos.Methods.SercosDeviceType_CPIdentifier_Lock_BreakLock, Sercos.Namespaces.Sercos);
+
+        /// <summary>
+        /// The identifier for the SercosDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId SercosDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Sercos.Methods.SercosDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier, Sercos.Namespaces.Sercos);
     }
     #endregion
 

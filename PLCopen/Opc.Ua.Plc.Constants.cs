@@ -47,6 +47,21 @@ namespace Opc.Ua.Plc
     public static partial class Methods
     {
         /// <summary>
+        /// The identifier for the CtrlConfigurationType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlConfigurationType_MethodSet_MethodIdentifier = 7006;
+
+        /// <summary>
+        /// The identifier for the CtrlConfigurationType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlConfigurationType_GroupIdentifier_MethodIdentifier = 15001;
+
+        /// <summary>
+        /// The identifier for the CtrlConfigurationType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlConfigurationType_Identification_MethodIdentifier = 15002;
+
+        /// <summary>
         /// The identifier for the CtrlConfigurationType_Lock_InitLock Method.
         /// </summary>
         public const uint CtrlConfigurationType_Lock_InitLock = 7028;
@@ -65,6 +80,16 @@ namespace Opc.Ua.Plc
         /// The identifier for the CtrlConfigurationType_Lock_BreakLock Method.
         /// </summary>
         public const uint CtrlConfigurationType_Lock_BreakLock = 7035;
+
+        /// <summary>
+        /// The identifier for the CtrlConfigurationType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlConfigurationType_CPIdentifier_MethodSet_MethodIdentifier = 7230;
+
+        /// <summary>
+        /// The identifier for the CtrlConfigurationType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlConfigurationType_CPIdentifier_Identification_MethodIdentifier = 15003;
 
         /// <summary>
         /// The identifier for the CtrlConfigurationType_CPIdentifier_Lock_InitLock Method.
@@ -87,6 +112,11 @@ namespace Opc.Ua.Plc
         public const uint CtrlConfigurationType_CPIdentifier_Lock_BreakLock = 7245;
 
         /// <summary>
+        /// The identifier for the CtrlConfigurationType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlConfigurationType_CPIdentifier_NetworkAddress_MethodIdentifier = 15004;
+
+        /// <summary>
         /// The identifier for the CtrlConfigurationType_MethodSet_Start Method.
         /// </summary>
         public const uint CtrlConfigurationType_MethodSet_Start = 7001;
@@ -95,6 +125,46 @@ namespace Opc.Ua.Plc
         /// The identifier for the CtrlConfigurationType_MethodSet_Stop Method.
         /// </summary>
         public const uint CtrlConfigurationType_MethodSet_Stop = 7002;
+
+        /// <summary>
+        /// The identifier for the CtrlConfigurationType_GlobalVars_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlConfigurationType_GlobalVars_MethodIdentifier = 15005;
+
+        /// <summary>
+        /// The identifier for the CtrlConfigurationType_AccessVars_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlConfigurationType_AccessVars_MethodIdentifier = 15006;
+
+        /// <summary>
+        /// The identifier for the CtrlConfigurationType_ConfigVars_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlConfigurationType_ConfigVars_MethodIdentifier = 15007;
+
+        /// <summary>
+        /// The identifier for the CtrlConfigurationType_Configuration_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlConfigurationType_Configuration_MethodIdentifier = 15008;
+
+        /// <summary>
+        /// The identifier for the CtrlConfigurationType_Diagnostic_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlConfigurationType_Diagnostic_MethodIdentifier = 15009;
+
+        /// <summary>
+        /// The identifier for the CtrlResourceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlResourceType_MethodSet_MethodIdentifier = 7009;
+
+        /// <summary>
+        /// The identifier for the CtrlResourceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlResourceType_GroupIdentifier_MethodIdentifier = 15010;
+
+        /// <summary>
+        /// The identifier for the CtrlResourceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlResourceType_Identification_MethodIdentifier = 15011;
 
         /// <summary>
         /// The identifier for the CtrlResourceType_Lock_InitLock Method.
@@ -117,6 +187,16 @@ namespace Opc.Ua.Plc
         public const uint CtrlResourceType_Lock_BreakLock = 7074;
 
         /// <summary>
+        /// The identifier for the CtrlResourceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlResourceType_CPIdentifier_MethodSet_MethodIdentifier = 7255;
+
+        /// <summary>
+        /// The identifier for the CtrlResourceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlResourceType_CPIdentifier_Identification_MethodIdentifier = 15012;
+
+        /// <summary>
         /// The identifier for the CtrlResourceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint CtrlResourceType_CPIdentifier_Lock_InitLock = 7263;
@@ -137,6 +217,11 @@ namespace Opc.Ua.Plc
         public const uint CtrlResourceType_CPIdentifier_Lock_BreakLock = 7270;
 
         /// <summary>
+        /// The identifier for the CtrlResourceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlResourceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15013;
+
+        /// <summary>
         /// The identifier for the CtrlResourceType_MethodSet_Start Method.
         /// </summary>
         public const uint CtrlResourceType_MethodSet_Start = 7003;
@@ -145,6 +230,36 @@ namespace Opc.Ua.Plc
         /// The identifier for the CtrlResourceType_MethodSet_Stop Method.
         /// </summary>
         public const uint CtrlResourceType_MethodSet_Stop = 7004;
+
+        /// <summary>
+        /// The identifier for the CtrlResourceType_GlobalVars_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlResourceType_GlobalVars_MethodIdentifier = 15014;
+
+        /// <summary>
+        /// The identifier for the CtrlResourceType_Configuration_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlResourceType_Configuration_MethodIdentifier = 15015;
+
+        /// <summary>
+        /// The identifier for the CtrlResourceType_Diagnostic_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlResourceType_Diagnostic_MethodIdentifier = 15016;
+
+        /// <summary>
+        /// The identifier for the CtrlProgramOrganizationUnitType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlProgramOrganizationUnitType_MethodSet_MethodIdentifier = 7012;
+
+        /// <summary>
+        /// The identifier for the CtrlProgramOrganizationUnitType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlProgramOrganizationUnitType_GroupIdentifier_MethodIdentifier = 15017;
+
+        /// <summary>
+        /// The identifier for the CtrlProgramOrganizationUnitType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlProgramOrganizationUnitType_Identification_MethodIdentifier = 15018;
 
         /// <summary>
         /// The identifier for the CtrlProgramOrganizationUnitType_Lock_InitLock Method.
@@ -167,6 +282,21 @@ namespace Opc.Ua.Plc
         public const uint CtrlProgramOrganizationUnitType_Lock_BreakLock = 7111;
 
         /// <summary>
+        /// The identifier for the CtrlProgramType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlProgramType_MethodSet_MethodIdentifier = 7015;
+
+        /// <summary>
+        /// The identifier for the CtrlProgramType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlProgramType_GroupIdentifier_MethodIdentifier = 15019;
+
+        /// <summary>
+        /// The identifier for the CtrlProgramType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlProgramType_Identification_MethodIdentifier = 15020;
+
+        /// <summary>
         /// The identifier for the CtrlProgramType_Lock_InitLock Method.
         /// </summary>
         public const uint CtrlProgramType_Lock_InitLock = 7129;
@@ -185,6 +315,21 @@ namespace Opc.Ua.Plc
         /// The identifier for the CtrlProgramType_Lock_BreakLock Method.
         /// </summary>
         public const uint CtrlProgramType_Lock_BreakLock = 7136;
+
+        /// <summary>
+        /// The identifier for the CtrlFunctionBlockType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlFunctionBlockType_MethodSet_MethodIdentifier = 7018;
+
+        /// <summary>
+        /// The identifier for the CtrlFunctionBlockType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlFunctionBlockType_GroupIdentifier_MethodIdentifier = 15021;
+
+        /// <summary>
+        /// The identifier for the CtrlFunctionBlockType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint CtrlFunctionBlockType_Identification_MethodIdentifier = 15022;
 
         /// <summary>
         /// The identifier for the CtrlFunctionBlockType_Lock_InitLock Method.
@@ -757,6 +902,21 @@ namespace Opc.Ua.Plc
     public static partial class MethodIds
     {
         /// <summary>
+        /// The identifier for the CtrlConfigurationType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlConfigurationType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlConfigurationType_MethodSet_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlConfigurationType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlConfigurationType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlConfigurationType_GroupIdentifier_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlConfigurationType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlConfigurationType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlConfigurationType_Identification_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
         /// The identifier for the CtrlConfigurationType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId CtrlConfigurationType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlConfigurationType_Lock_InitLock, Opc.Ua.Plc.Namespaces.OpcUaPlc);
@@ -775,6 +935,16 @@ namespace Opc.Ua.Plc
         /// The identifier for the CtrlConfigurationType_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId CtrlConfigurationType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlConfigurationType_Lock_BreakLock, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlConfigurationType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlConfigurationType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlConfigurationType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlConfigurationType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlConfigurationType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlConfigurationType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
 
         /// <summary>
         /// The identifier for the CtrlConfigurationType_CPIdentifier_Lock_InitLock Method.
@@ -797,6 +967,11 @@ namespace Opc.Ua.Plc
         public static readonly ExpandedNodeId CtrlConfigurationType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlConfigurationType_CPIdentifier_Lock_BreakLock, Opc.Ua.Plc.Namespaces.OpcUaPlc);
 
         /// <summary>
+        /// The identifier for the CtrlConfigurationType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlConfigurationType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlConfigurationType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
         /// The identifier for the CtrlConfigurationType_MethodSet_Start Method.
         /// </summary>
         public static readonly ExpandedNodeId CtrlConfigurationType_MethodSet_Start = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlConfigurationType_MethodSet_Start, Opc.Ua.Plc.Namespaces.OpcUaPlc);
@@ -805,6 +980,46 @@ namespace Opc.Ua.Plc
         /// The identifier for the CtrlConfigurationType_MethodSet_Stop Method.
         /// </summary>
         public static readonly ExpandedNodeId CtrlConfigurationType_MethodSet_Stop = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlConfigurationType_MethodSet_Stop, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlConfigurationType_GlobalVars_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlConfigurationType_GlobalVars_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlConfigurationType_GlobalVars_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlConfigurationType_AccessVars_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlConfigurationType_AccessVars_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlConfigurationType_AccessVars_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlConfigurationType_ConfigVars_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlConfigurationType_ConfigVars_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlConfigurationType_ConfigVars_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlConfigurationType_Configuration_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlConfigurationType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlConfigurationType_Configuration_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlConfigurationType_Diagnostic_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlConfigurationType_Diagnostic_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlConfigurationType_Diagnostic_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlResourceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlResourceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlResourceType_MethodSet_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlResourceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlResourceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlResourceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlResourceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlResourceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlResourceType_Identification_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
 
         /// <summary>
         /// The identifier for the CtrlResourceType_Lock_InitLock Method.
@@ -827,6 +1042,16 @@ namespace Opc.Ua.Plc
         public static readonly ExpandedNodeId CtrlResourceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlResourceType_Lock_BreakLock, Opc.Ua.Plc.Namespaces.OpcUaPlc);
 
         /// <summary>
+        /// The identifier for the CtrlResourceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlResourceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlResourceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlResourceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlResourceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlResourceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
         /// The identifier for the CtrlResourceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId CtrlResourceType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlResourceType_CPIdentifier_Lock_InitLock, Opc.Ua.Plc.Namespaces.OpcUaPlc);
@@ -847,6 +1072,11 @@ namespace Opc.Ua.Plc
         public static readonly ExpandedNodeId CtrlResourceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlResourceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Plc.Namespaces.OpcUaPlc);
 
         /// <summary>
+        /// The identifier for the CtrlResourceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlResourceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlResourceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
         /// The identifier for the CtrlResourceType_MethodSet_Start Method.
         /// </summary>
         public static readonly ExpandedNodeId CtrlResourceType_MethodSet_Start = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlResourceType_MethodSet_Start, Opc.Ua.Plc.Namespaces.OpcUaPlc);
@@ -855,6 +1085,36 @@ namespace Opc.Ua.Plc
         /// The identifier for the CtrlResourceType_MethodSet_Stop Method.
         /// </summary>
         public static readonly ExpandedNodeId CtrlResourceType_MethodSet_Stop = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlResourceType_MethodSet_Stop, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlResourceType_GlobalVars_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlResourceType_GlobalVars_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlResourceType_GlobalVars_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlResourceType_Configuration_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlResourceType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlResourceType_Configuration_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlResourceType_Diagnostic_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlResourceType_Diagnostic_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlResourceType_Diagnostic_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlProgramOrganizationUnitType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlProgramOrganizationUnitType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlProgramOrganizationUnitType_MethodSet_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlProgramOrganizationUnitType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlProgramOrganizationUnitType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlProgramOrganizationUnitType_GroupIdentifier_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlProgramOrganizationUnitType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlProgramOrganizationUnitType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlProgramOrganizationUnitType_Identification_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
 
         /// <summary>
         /// The identifier for the CtrlProgramOrganizationUnitType_Lock_InitLock Method.
@@ -877,6 +1137,21 @@ namespace Opc.Ua.Plc
         public static readonly ExpandedNodeId CtrlProgramOrganizationUnitType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlProgramOrganizationUnitType_Lock_BreakLock, Opc.Ua.Plc.Namespaces.OpcUaPlc);
 
         /// <summary>
+        /// The identifier for the CtrlProgramType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlProgramType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlProgramType_MethodSet_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlProgramType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlProgramType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlProgramType_GroupIdentifier_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlProgramType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlProgramType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlProgramType_Identification_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
         /// The identifier for the CtrlProgramType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId CtrlProgramType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlProgramType_Lock_InitLock, Opc.Ua.Plc.Namespaces.OpcUaPlc);
@@ -895,6 +1170,21 @@ namespace Opc.Ua.Plc
         /// The identifier for the CtrlProgramType_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId CtrlProgramType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlProgramType_Lock_BreakLock, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlFunctionBlockType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlFunctionBlockType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlFunctionBlockType_MethodSet_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlFunctionBlockType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlFunctionBlockType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlFunctionBlockType_GroupIdentifier_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlFunctionBlockType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlFunctionBlockType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlFunctionBlockType_Identification_MethodIdentifier, Opc.Ua.Plc.Namespaces.OpcUaPlc);
 
         /// <summary>
         /// The identifier for the CtrlFunctionBlockType_Lock_InitLock Method.

@@ -174,7 +174,7 @@
     <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
     <Description>A method which belongs to the topology element.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=11510</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
     </References>
   </UAMethod>
@@ -182,20 +182,38 @@
     <DisplayName>&lt;GroupIdentifier&gt;</DisplayName>
     <Description>An application specific functional group used to organize parameters and methods.</Description>
     <References>
+      <Reference ReferenceType="Organizes">ns=1;i=15001</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1001</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=15001" BrowseName="1:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=6567" MethodDeclarationId="ns=1;i=6029">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the group.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=6567</Reference>
+    </References>
+  </UAMethod>
   <UAObject NodeId="ns=1;i=6014" BrowseName="1:Identification" ParentNodeId="ns=1;i=1001">
     <DisplayName>Identification</DisplayName>
     <Description>Used to organize parameters for identification of this TopologyElement</Description>
     <References>
+      <Reference ReferenceType="Organizes">ns=1;i=15002</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1001</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=15002" BrowseName="1:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=6014" MethodDeclarationId="ns=1;i=6029">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the group.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=6014</Reference>
+    </References>
+  </UAMethod>
   <UAObject NodeId="ns=1;i=6161" BrowseName="1:Lock" ParentNodeId="ns=1;i=1001">
     <DisplayName>Lock</DisplayName>
     <Description>Used to lock the topology element.</Description>
@@ -619,11 +637,20 @@
     <DisplayName>NetworkAddress</DisplayName>
     <Description>The address of the device on this network.</Description>
     <References>
+      <Reference ReferenceType="Organizes">ns=1;i=15006</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6571</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=15006" BrowseName="1:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=6592" MethodDeclarationId="ns=1;i=6029">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the group.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=6592</Reference>
+    </References>
+  </UAMethod>
   <UAObjectType NodeId="ns=1;i=1003" BrowseName="1:BlockType" IsAbstract="true">
     <DisplayName>BlockType</DisplayName>
     <Description>Adds the concept of Blocks needed for block-oriented FieldDevices</Description>
@@ -722,12 +749,21 @@
     <DisplayName>&lt;GroupIdentifier&gt;</DisplayName>
     <Description>An application specific functional group used to organize parameters and methods.</Description>
     <References>
+      <Reference ReferenceType="Organizes">ns=1;i=15009</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6242</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1005</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=15009" BrowseName="1:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=6027" MethodDeclarationId="ns=1;i=6029">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the group.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=6027</Reference>
+    </References>
+  </UAMethod>
   <UAVariable NodeId="ns=1;i=6242" BrowseName="1:UIElement" ParentNodeId="ns=1;i=6027">
     <DisplayName>UIElement</DisplayName>
     <Description>A user interface element assigned to this group.</Description>
@@ -750,7 +786,7 @@
     <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
     <Description>A method which belongs to the group.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=1005</Reference>
     </References>
   </UAMethod>
@@ -870,11 +906,20 @@
     <DisplayName>NetworkAddress</DisplayName>
     <Description>The address of the device on this network.</Description>
     <References>
+      <Reference ReferenceType="Organizes">ns=1;i=15011</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6248</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=15011" BrowseName="1:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=6292" MethodDeclarationId="ns=1;i=6029">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the group.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=6292</Reference>
+    </References>
+  </UAMethod>
   <UAObject NodeId="ns=1;i=6294" BrowseName="1:Lock" ParentNodeId="ns=1;i=6247">
     <DisplayName>Lock</DisplayName>
     <Description>Used to lock the Network.</Description>
@@ -1111,11 +1156,20 @@
     <DisplayName>NetworkAddress</DisplayName>
     <Description>The address of the device on this network.</Description>
     <References>
+      <Reference ReferenceType="Organizes">ns=1;i=15014</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6308</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=15014" BrowseName="1:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=6354" MethodDeclarationId="ns=1;i=6029">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the group.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=6354</Reference>
+    </References>
+  </UAMethod>
   <UAObject NodeId="ns=1;i=6499" BrowseName="1:&lt;ProfileId&gt;" SymbolicName="ProfileId" ParentNodeId="ns=1;i=6308">
     <DisplayName>&lt;ProfileId&gt;</DisplayName>
     <References>

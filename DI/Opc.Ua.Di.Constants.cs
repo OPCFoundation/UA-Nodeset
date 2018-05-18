@@ -86,6 +86,16 @@ namespace Opc.Ua.Di
         public const uint TopologyElementType_MethodSet_MethodIdentifier = 6018;
 
         /// <summary>
+        /// The identifier for the TopologyElementType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint TopologyElementType_GroupIdentifier_MethodIdentifier = 15001;
+
+        /// <summary>
+        /// The identifier for the TopologyElementType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint TopologyElementType_Identification_MethodIdentifier = 15002;
+
+        /// <summary>
         /// The identifier for the TopologyElementType_Lock_InitLock Method.
         /// </summary>
         public const uint TopologyElementType_Lock_InitLock = 6166;
@@ -104,6 +114,21 @@ namespace Opc.Ua.Di
         /// The identifier for the TopologyElementType_Lock_BreakLock Method.
         /// </summary>
         public const uint TopologyElementType_Lock_BreakLock = 6173;
+
+        /// <summary>
+        /// The identifier for the DeviceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint DeviceType_MethodSet_MethodIdentifier = 6021;
+
+        /// <summary>
+        /// The identifier for the DeviceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint DeviceType_GroupIdentifier_MethodIdentifier = 15003;
+
+        /// <summary>
+        /// The identifier for the DeviceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint DeviceType_Identification_MethodIdentifier = 15004;
 
         /// <summary>
         /// The identifier for the DeviceType_Lock_InitLock Method.
@@ -126,6 +151,16 @@ namespace Opc.Ua.Di
         public const uint DeviceType_Lock_BreakLock = 6198;
 
         /// <summary>
+        /// The identifier for the DeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint DeviceType_CPIdentifier_MethodSet_MethodIdentifier = 6575;
+
+        /// <summary>
+        /// The identifier for the DeviceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint DeviceType_CPIdentifier_Identification_MethodIdentifier = 15005;
+
+        /// <summary>
         /// The identifier for the DeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint DeviceType_CPIdentifier_Lock_InitLock = 6583;
@@ -144,6 +179,26 @@ namespace Opc.Ua.Di
         /// The identifier for the DeviceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public const uint DeviceType_CPIdentifier_Lock_BreakLock = 6590;
+
+        /// <summary>
+        /// The identifier for the DeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint DeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15006;
+
+        /// <summary>
+        /// The identifier for the BlockType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint BlockType_MethodSet_MethodIdentifier = 6024;
+
+        /// <summary>
+        /// The identifier for the BlockType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint BlockType_GroupIdentifier_MethodIdentifier = 15007;
+
+        /// <summary>
+        /// The identifier for the BlockType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint BlockType_Identification_MethodIdentifier = 15008;
 
         /// <summary>
         /// The identifier for the BlockType_Lock_InitLock Method.
@@ -166,9 +221,24 @@ namespace Opc.Ua.Di
         public const uint BlockType_Lock_BreakLock = 6232;
 
         /// <summary>
+        /// The identifier for the FunctionalGroupType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint FunctionalGroupType_GroupIdentifier_MethodIdentifier = 15009;
+
+        /// <summary>
         /// The identifier for the FunctionalGroupType_MethodIdentifier Method.
         /// </summary>
         public const uint FunctionalGroupType_MethodIdentifier = 6029;
+
+        /// <summary>
+        /// The identifier for the NetworkType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint NetworkType_CPIdentifier_MethodSet_MethodIdentifier = 6252;
+
+        /// <summary>
+        /// The identifier for the NetworkType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint NetworkType_CPIdentifier_Identification_MethodIdentifier = 15010;
 
         /// <summary>
         /// The identifier for the NetworkType_CPIdentifier_Lock_InitLock Method.
@@ -191,6 +261,11 @@ namespace Opc.Ua.Di
         public const uint NetworkType_CPIdentifier_Lock_BreakLock = 6267;
 
         /// <summary>
+        /// The identifier for the NetworkType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint NetworkType_CPIdentifier_NetworkAddress_MethodIdentifier = 15011;
+
+        /// <summary>
         /// The identifier for the NetworkType_Lock_InitLock Method.
         /// </summary>
         public const uint NetworkType_Lock_InitLock = 6299;
@@ -211,6 +286,21 @@ namespace Opc.Ua.Di
         public const uint NetworkType_Lock_BreakLock = 6306;
 
         /// <summary>
+        /// The identifier for the ConnectionPointType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPointType_MethodSet_MethodIdentifier = 6312;
+
+        /// <summary>
+        /// The identifier for the ConnectionPointType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPointType_GroupIdentifier_MethodIdentifier = 15012;
+
+        /// <summary>
+        /// The identifier for the ConnectionPointType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPointType_Identification_MethodIdentifier = 15013;
+
+        /// <summary>
         /// The identifier for the ConnectionPointType_Lock_InitLock Method.
         /// </summary>
         public const uint ConnectionPointType_Lock_InitLock = 6322;
@@ -229,6 +319,11 @@ namespace Opc.Ua.Di
         /// The identifier for the ConnectionPointType_Lock_BreakLock Method.
         /// </summary>
         public const uint ConnectionPointType_Lock_BreakLock = 6329;
+
+        /// <summary>
+        /// The identifier for the ConnectionPointType_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public const uint ConnectionPointType_NetworkAddress_MethodIdentifier = 15014;
 
         /// <summary>
         /// The identifier for the ConnectionPointType_NetworkIdentifier_Lock_InitLock Method.
@@ -1261,6 +1356,16 @@ namespace Opc.Ua.Di
         public static readonly ExpandedNodeId TopologyElementType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.TopologyElementType_MethodSet_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
+        /// The identifier for the TopologyElementType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId TopologyElementType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.TopologyElementType_GroupIdentifier_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the TopologyElementType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId TopologyElementType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.TopologyElementType_Identification_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
         /// The identifier for the TopologyElementType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId TopologyElementType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Di.Methods.TopologyElementType_Lock_InitLock, Opc.Ua.Di.Namespaces.OpcUaDi);
@@ -1279,6 +1384,21 @@ namespace Opc.Ua.Di
         /// The identifier for the TopologyElementType_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId TopologyElementType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Di.Methods.TopologyElementType_Lock_BreakLock, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DeviceType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId DeviceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.DeviceType_MethodSet_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DeviceType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId DeviceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.DeviceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DeviceType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId DeviceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.DeviceType_Identification_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
         /// The identifier for the DeviceType_Lock_InitLock Method.
@@ -1301,6 +1421,16 @@ namespace Opc.Ua.Di
         public static readonly ExpandedNodeId DeviceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Di.Methods.DeviceType_Lock_BreakLock, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
+        /// The identifier for the DeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId DeviceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.DeviceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DeviceType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId DeviceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.DeviceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
         /// The identifier for the DeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId DeviceType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Di.Methods.DeviceType_CPIdentifier_Lock_InitLock, Opc.Ua.Di.Namespaces.OpcUaDi);
@@ -1319,6 +1449,26 @@ namespace Opc.Ua.Di
         /// The identifier for the DeviceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId DeviceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Di.Methods.DeviceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId DeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.DeviceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the BlockType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId BlockType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.BlockType_MethodSet_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the BlockType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId BlockType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.BlockType_GroupIdentifier_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the BlockType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId BlockType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.BlockType_Identification_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
         /// The identifier for the BlockType_Lock_InitLock Method.
@@ -1341,9 +1491,24 @@ namespace Opc.Ua.Di
         public static readonly ExpandedNodeId BlockType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Di.Methods.BlockType_Lock_BreakLock, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
+        /// The identifier for the FunctionalGroupType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId FunctionalGroupType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.FunctionalGroupType_GroupIdentifier_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
         /// The identifier for the FunctionalGroupType_MethodIdentifier Method.
         /// </summary>
         public static readonly ExpandedNodeId FunctionalGroupType_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.FunctionalGroupType_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the NetworkType_CPIdentifier_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId NetworkType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.NetworkType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the NetworkType_CPIdentifier_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId NetworkType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.NetworkType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
         /// The identifier for the NetworkType_CPIdentifier_Lock_InitLock Method.
@@ -1366,6 +1531,11 @@ namespace Opc.Ua.Di
         public static readonly ExpandedNodeId NetworkType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Di.Methods.NetworkType_CPIdentifier_Lock_BreakLock, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
+        /// The identifier for the NetworkType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId NetworkType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.NetworkType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
         /// The identifier for the NetworkType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId NetworkType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Di.Methods.NetworkType_Lock_InitLock, Opc.Ua.Di.Namespaces.OpcUaDi);
@@ -1386,6 +1556,21 @@ namespace Opc.Ua.Di
         public static readonly ExpandedNodeId NetworkType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Di.Methods.NetworkType_Lock_BreakLock, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
+        /// The identifier for the ConnectionPointType_MethodSet_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPointType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.ConnectionPointType_MethodSet_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the ConnectionPointType_GroupIdentifier_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPointType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.ConnectionPointType_GroupIdentifier_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the ConnectionPointType_Identification_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPointType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.ConnectionPointType_Identification_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
         /// The identifier for the ConnectionPointType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPointType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Di.Methods.ConnectionPointType_Lock_InitLock, Opc.Ua.Di.Namespaces.OpcUaDi);
@@ -1404,6 +1589,11 @@ namespace Opc.Ua.Di
         /// The identifier for the ConnectionPointType_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPointType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Di.Methods.ConnectionPointType_Lock_BreakLock, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the ConnectionPointType_NetworkAddress_MethodIdentifier Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPointType_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.ConnectionPointType_NetworkAddress_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
         /// The identifier for the ConnectionPointType_NetworkIdentifier_Lock_InitLock Method.

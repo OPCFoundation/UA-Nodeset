@@ -326,7 +326,7 @@
           <uax:Identifier>ns=1;i=6018</uax:Identifier>
         </uax:TypeDefinitionId>
         <uax:ModellingRuleId>
-          <uax:Identifier>i=11510</uax:Identifier>
+          <uax:Identifier>i=78</uax:Identifier>
         </uax:ModellingRuleId>
         <uax:NumericId>6018</uax:NumericId>
         <uax:Executable>true</uax:Executable>
@@ -356,6 +356,32 @@
         <uax:Identifier>i=11508</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>6567</uax:NumericId>
+      <MethodIdentifier>
+        <uax:NodeClass>Method_4</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=15001</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>1</uax:NamespaceIndex>
+          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>A method which belongs to the group.</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=35</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>ns=1;i=6029</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>15001</uax:NumericId>
+        <uax:Executable>true</uax:Executable>
+        <uax:UserExecutable>true</uax:UserExecutable>
+      </MethodIdentifier>
     </GroupIdentifier>
     <Identification>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -380,6 +406,32 @@
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>6014</uax:NumericId>
+      <MethodIdentifier>
+        <uax:NodeClass>Method_4</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=15002</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>1</uax:NamespaceIndex>
+          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>A method which belongs to the group.</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=35</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>ns=1;i=6029</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>15002</uax:NumericId>
+        <uax:Executable>true</uax:Executable>
+        <uax:UserExecutable>true</uax:UserExecutable>
+      </MethodIdentifier>
     </Identification>
     <Lock>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -1413,6 +1465,32 @@
           <uax:Identifier>i=78</uax:Identifier>
         </uax:ModellingRuleId>
         <uax:NumericId>6592</uax:NumericId>
+        <MethodIdentifier>
+          <uax:NodeClass>Method_4</uax:NodeClass>
+          <uax:NodeId>
+            <uax:Identifier>ns=1;i=15006</uax:Identifier>
+          </uax:NodeId>
+          <uax:BrowseName>
+            <uax:NamespaceIndex>1</uax:NamespaceIndex>
+            <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
+          </uax:BrowseName>
+          <uax:Description>
+            <uax:Locale></uax:Locale>
+            <uax:Text>A method which belongs to the group.</uax:Text>
+          </uax:Description>
+          <uax:ReferenceTypeId>
+            <uax:Identifier>i=35</uax:Identifier>
+          </uax:ReferenceTypeId>
+          <uax:TypeDefinitionId>
+            <uax:Identifier>ns=1;i=6029</uax:Identifier>
+          </uax:TypeDefinitionId>
+          <uax:ModellingRuleId>
+            <uax:Identifier>i=78</uax:Identifier>
+          </uax:ModellingRuleId>
+          <uax:NumericId>15006</uax:NumericId>
+          <uax:Executable>true</uax:Executable>
+          <uax:UserExecutable>true</uax:UserExecutable>
+        </MethodIdentifier>
       </NetworkAddress>
     </CPIdentifier>
   </DeviceType>
@@ -1684,6 +1762,32 @@
         <uax:Identifier>i=11508</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>6027</uax:NumericId>
+      <MethodIdentifier>
+        <uax:NodeClass>Method_4</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=15009</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>1</uax:NamespaceIndex>
+          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>A method which belongs to the group.</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=35</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>ns=1;i=6029</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>15009</uax:NumericId>
+        <uax:Executable>true</uax:Executable>
+        <uax:UserExecutable>true</uax:UserExecutable>
+      </MethodIdentifier>
       <UIElement>
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
@@ -1765,7 +1869,7 @@
         <uax:Identifier>ns=1;i=6029</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:ModellingRuleId>
-        <uax:Identifier>i=11508</uax:Identifier>
+        <uax:Identifier>i=78</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>6029</uax:NumericId>
       <uax:Executable>true</uax:Executable>
@@ -1988,6 +2092,32 @@
           <uax:Identifier>i=78</uax:Identifier>
         </uax:ModellingRuleId>
         <uax:NumericId>6292</uax:NumericId>
+        <MethodIdentifier>
+          <uax:NodeClass>Method_4</uax:NodeClass>
+          <uax:NodeId>
+            <uax:Identifier>ns=1;i=15011</uax:Identifier>
+          </uax:NodeId>
+          <uax:BrowseName>
+            <uax:NamespaceIndex>1</uax:NamespaceIndex>
+            <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
+          </uax:BrowseName>
+          <uax:Description>
+            <uax:Locale></uax:Locale>
+            <uax:Text>A method which belongs to the group.</uax:Text>
+          </uax:Description>
+          <uax:ReferenceTypeId>
+            <uax:Identifier>i=35</uax:Identifier>
+          </uax:ReferenceTypeId>
+          <uax:TypeDefinitionId>
+            <uax:Identifier>ns=1;i=6029</uax:Identifier>
+          </uax:TypeDefinitionId>
+          <uax:ModellingRuleId>
+            <uax:Identifier>i=78</uax:Identifier>
+          </uax:ModellingRuleId>
+          <uax:NumericId>15011</uax:NumericId>
+          <uax:Executable>true</uax:Executable>
+          <uax:UserExecutable>true</uax:UserExecutable>
+        </MethodIdentifier>
       </NetworkAddress>
     </CPIdentifier>
     <Lock>
@@ -2487,6 +2617,32 @@
         <uax:Identifier>i=78</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>6354</uax:NumericId>
+      <MethodIdentifier>
+        <uax:NodeClass>Method_4</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=15014</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>1</uax:NamespaceIndex>
+          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>A method which belongs to the group.</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=35</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>ns=1;i=6029</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>15014</uax:NumericId>
+        <uax:Executable>true</uax:Executable>
+        <uax:UserExecutable>true</uax:UserExecutable>
+      </MethodIdentifier>
     </NetworkAddress>
     <ProfileId>
       <uax:NodeClass>Object_1</uax:NodeClass>

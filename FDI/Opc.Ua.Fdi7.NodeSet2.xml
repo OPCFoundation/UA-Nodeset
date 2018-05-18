@@ -533,6 +533,7 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=15</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=75</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=77</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=79</Reference>
@@ -542,6 +543,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=11</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=15" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=14" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=14</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=75" BrowseName="1:Initialize" ParentNodeId="ns=1;i=14">
     <DisplayName>Initialize</DisplayName>
     <References>
@@ -1442,6 +1451,7 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=97</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=157</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=159</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=164</Reference>
@@ -1451,6 +1461,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=93</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=97" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=96" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=96</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=157" BrowseName="1:Scan" ParentNodeId="ns=1;i=96">
     <DisplayName>Scan</DisplayName>
     <References>
@@ -1737,12 +1755,21 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=328</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=398</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=324</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=328" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=327" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=327</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=398" BrowseName="1:SetAddress" ParentNodeId="ns=1;i=327">
     <DisplayName>SetAddress</DisplayName>
     <References>
@@ -1925,6 +1952,7 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=405</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=440</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=443</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=446</Reference>
@@ -1933,6 +1961,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=401</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=405" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=404" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=404</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=440" BrowseName="1:Disconnect" ParentNodeId="ns=1;i=404" MethodDeclarationId="ns=1;i=300">
     <DisplayName>Disconnect</DisplayName>
     <References>
@@ -2436,12 +2472,21 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=456</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=526</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=452</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=456" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=455" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=455</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=526" BrowseName="1:SetAddress" ParentNodeId="ns=1;i=455">
     <DisplayName>SetAddress</DisplayName>
     <References>
@@ -2576,6 +2621,7 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=533</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=568</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=571</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=574</Reference>
@@ -2584,6 +2630,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=529</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=533" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=532" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=532</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=568" BrowseName="1:Disconnect" ParentNodeId="ns=1;i=532" MethodDeclarationId="ns=1;i=300">
     <DisplayName>Disconnect</DisplayName>
     <References>
@@ -3055,12 +3109,21 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=584</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=654</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=580</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=584" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=583" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=583</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=654" BrowseName="1:SetAddress" ParentNodeId="ns=1;i=583">
     <DisplayName>SetAddress</DisplayName>
     <References>
@@ -3163,6 +3226,7 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=661</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=696</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=699</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=702</Reference>
@@ -3171,6 +3235,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=657</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=661" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=660" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=660</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=696" BrowseName="1:Disconnect" ParentNodeId="ns=1;i=660" MethodDeclarationId="ns=1;i=300">
     <DisplayName>Disconnect</DisplayName>
     <References>
@@ -3578,12 +3650,21 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=709</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=779</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=705</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=709" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=708" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=708</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=779" BrowseName="1:SetAddress" ParentNodeId="ns=1;i=708">
     <DisplayName>SetAddress</DisplayName>
     <References>
@@ -3742,6 +3823,7 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=786</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=821</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=824</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=827</Reference>
@@ -3750,6 +3832,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=782</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=786" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=785" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=785</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=821" BrowseName="1:Disconnect" ParentNodeId="ns=1;i=785" MethodDeclarationId="ns=1;i=300">
     <DisplayName>Disconnect</DisplayName>
     <References>
@@ -4205,12 +4295,21 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=834</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=904</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=830</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=834" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=833" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=833</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=904" BrowseName="1:SetAddress" ParentNodeId="ns=1;i=833">
     <DisplayName>SetAddress</DisplayName>
     <References>
@@ -4313,6 +4412,7 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=911</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=946</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=949</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=952</Reference>
@@ -4321,6 +4421,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=907</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=911" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=910" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=910</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=946" BrowseName="1:Disconnect" ParentNodeId="ns=1;i=910" MethodDeclarationId="ns=1;i=300">
     <DisplayName>Disconnect</DisplayName>
     <References>
@@ -4680,6 +4788,7 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=1866</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1901</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1904</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1907</Reference>
@@ -4688,6 +4797,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1862</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=1866" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=1865" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1865</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=1901" BrowseName="1:Disconnect" ParentNodeId="ns=1;i=1865" MethodDeclarationId="ns=1;i=300">
     <DisplayName>Disconnect</DisplayName>
     <References>
@@ -5128,12 +5245,21 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=1917</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1988</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1913</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=1917" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=1916" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1916</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=1988" BrowseName="1:SetAddress" ParentNodeId="ns=1;i=1916">
     <DisplayName>SetAddress</DisplayName>
     <References>
@@ -5244,6 +5370,7 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=1995</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=2030</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=2033</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=2036</Reference>
@@ -5252,6 +5379,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1991</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=1995" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=1994" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1994</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=2030" BrowseName="1:Disconnect" ParentNodeId="ns=1;i=1994" MethodDeclarationId="ns=1;i=300">
     <DisplayName>Disconnect</DisplayName>
     <References>
@@ -8470,12 +8605,21 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=237</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=300</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=233</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=237" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=236" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=236</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=300" BrowseName="1:Disconnect" ParentNodeId="ns=1;i=236">
     <DisplayName>Disconnect</DisplayName>
     <References>
@@ -8552,6 +8696,7 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=1001</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1061</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1064</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1067</Reference>
@@ -8561,6 +8706,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=997</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=1001" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=1000" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1000</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=1061" BrowseName="1:Disconnect" ParentNodeId="ns=1;i=1000" MethodDeclarationId="ns=1;i=300">
     <DisplayName>Disconnect</DisplayName>
     <References>
@@ -9152,6 +9305,7 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=1077</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1137</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1140</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1143</Reference>
@@ -9161,6 +9315,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1073</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=1077" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=1076" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1076</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=1137" BrowseName="1:Disconnect" ParentNodeId="ns=1;i=1076" MethodDeclarationId="ns=1;i=300">
     <DisplayName>Disconnect</DisplayName>
     <References>
@@ -9720,6 +9882,7 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=1153</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1213</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1216</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1219</Reference>
@@ -9728,6 +9891,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1149</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=1153" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=1152" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1152</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=1213" BrowseName="1:Disconnect" ParentNodeId="ns=1;i=1152" MethodDeclarationId="ns=1;i=300">
     <DisplayName>Disconnect</DisplayName>
     <References>
@@ -10062,6 +10233,7 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=1226</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1286</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1289</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1292</Reference>
@@ -10070,6 +10242,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1222</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=1226" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=1225" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1225</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=1286" BrowseName="1:Disconnect" ParentNodeId="ns=1;i=1225" MethodDeclarationId="ns=1;i=300">
     <DisplayName>Disconnect</DisplayName>
     <References>
@@ -10452,6 +10632,7 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=1299</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1359</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1362</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1365</Reference>
@@ -10461,6 +10642,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1295</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=1299" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=1298" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1298</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=1359" BrowseName="1:Disconnect" ParentNodeId="ns=1;i=1298" MethodDeclarationId="ns=1;i=300">
     <DisplayName>Disconnect</DisplayName>
     <References>
@@ -10844,6 +11033,7 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=2061</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=2121</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=2124</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=2127</Reference>
@@ -10853,6 +11043,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2057</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=2061" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=2060" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2060</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=2121" BrowseName="1:Disconnect" ParentNodeId="ns=1;i=2060" MethodDeclarationId="ns=1;i=300">
     <DisplayName>Disconnect</DisplayName>
     <References>
@@ -11364,6 +11562,7 @@
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=2137</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=2197</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=2200</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=2203</Reference>
@@ -11372,6 +11571,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2133</Reference>
     </References>
   </UAObject>
+  <UAMethod NodeId="ns=1;i=2137" BrowseName="2:&lt;MethodIdentifier&gt;" SymbolicName="MethodIdentifier" ParentNodeId="ns=1;i=2136" MethodDeclarationId="ns=2;i=6018">
+    <DisplayName>&lt;MethodIdentifier&gt;</DisplayName>
+    <Description>A method which belongs to the topology element.</Description>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2136</Reference>
+    </References>
+  </UAMethod>
   <UAMethod NodeId="ns=1;i=2197" BrowseName="1:Disconnect" ParentNodeId="ns=1;i=2136" MethodDeclarationId="ns=1;i=300">
     <DisplayName>Disconnect</DisplayName>
     <References>
