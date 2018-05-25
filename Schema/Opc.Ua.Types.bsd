@@ -785,6 +785,28 @@
     <opc:EnumeratedValue Name="View" Value="128" />
   </opc:EnumeratedType>
 
+  <opc:EnumeratedType Name="PermissionType" LengthInBits="32">
+    <opc:EnumeratedValue Name="None" Value="0" />
+    <opc:EnumeratedValue Name="Browse" Value="1" />
+    <opc:EnumeratedValue Name="ReadRolePermissions" Value="2" />
+    <opc:EnumeratedValue Name="WriteAttribute" Value="4" />
+    <opc:EnumeratedValue Name="WriteRolePermissions" Value="8" />
+    <opc:EnumeratedValue Name="WriteHistorizing" Value="16" />
+    <opc:EnumeratedValue Name="Read" Value="32" />
+    <opc:EnumeratedValue Name="Write" Value="64" />
+    <opc:EnumeratedValue Name="ReadHistory" Value="128" />
+    <opc:EnumeratedValue Name="InsertHistory" Value="256" />
+    <opc:EnumeratedValue Name="ModifyHistory" Value="512" />
+    <opc:EnumeratedValue Name="DeleteHistory" Value="1024" />
+    <opc:EnumeratedValue Name="ReceiveEvents" Value="2048" />
+    <opc:EnumeratedValue Name="Call" Value="4096" />
+    <opc:EnumeratedValue Name="AddReference" Value="8192" />
+    <opc:EnumeratedValue Name="RemoveReference" Value="16384" />
+    <opc:EnumeratedValue Name="DeleteNode" Value="32768" />
+    <opc:EnumeratedValue Name="AddNode" Value="65536" />
+    <opc:EnumeratedValue Name="All" Value="131071" />
+  </opc:EnumeratedType>
+
   <opc:EnumeratedType Name="AccessLevelType" LengthInBits="8">
     <opc:EnumeratedValue Name="None" Value="0" />
     <opc:EnumeratedValue Name="CurrentRead" Value="1" />
