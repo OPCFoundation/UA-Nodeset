@@ -205,7 +205,7 @@ static struct _OpcUa_EnumeratedValue g_OpcUa_AccessRestrictionType_EnumeratedVal
     { "None", 0 },
     { "SigningRequired", 1 },
     { "EncryptionRequired", 2 },
-    { "SessionRequired ", 4 },
+    { "SessionRequired", 4 },
     { OpcUa_Null, 0 }
 };
 

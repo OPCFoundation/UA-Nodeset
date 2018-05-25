@@ -12,3 +12,4 @@ The following mismatches between the specification have been corrected in the v1
 0004274 - DataSetFieldFlags broken in Opc.Ua.Types.xsd
 0004282 - Typo for AccessRestrictionType
 0004283 - NamespacePublicationDate not correct
+0004290 - PermissionType is missing in Opc.Ua.Types.bsd

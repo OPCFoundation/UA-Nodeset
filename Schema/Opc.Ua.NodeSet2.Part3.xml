@@ -1268,7 +1268,7 @@
       <Field Name="None" Value="0" />
       <Field Name="SigningRequired" Value="1" />
       <Field Name="EncryptionRequired" Value="2" />
-      <Field Name="SessionRequired " Value="4" />
+      <Field Name="SessionRequired" Value="4" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15035" BrowseName="OptionSetValues" ParentNodeId="i=95" DataType="LocalizedText" ValueRank="1">
@@ -1293,7 +1293,7 @@
         <LocalizedText>
           <Locale>
           </Locale>
-          <Text>SessionRequired </Text>
+          <Text>SessionRequired</Text>
         </LocalizedText>
       </ListOfLocalizedText>
     </Value>

@@ -16491,10 +16491,10 @@ namespace Opc.Ua
         EncryptionRequired = 2,
 
         /// <summary>
-        /// A description for the SessionRequired  field.
+        /// A description for the SessionRequired field.
         /// </summary>
-        [EnumMember(Value = "SessionRequired _4")]
-        SessionRequired  = 4,
+        [EnumMember(Value = "SessionRequired_4")]
+        SessionRequired = 4,
     }
     #endif
     #endregion
