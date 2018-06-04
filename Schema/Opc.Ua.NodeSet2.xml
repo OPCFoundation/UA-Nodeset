@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-05-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-06-04T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2018-05-15T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2018-06-04T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -949,7 +949,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=15957</Reference>
     </References>
     <Value>
-      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2018-05-15</String>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2018-06-04</String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="i=15961" BrowseName="IsNamespaceSubset" ParentNodeId="i=15957" DataType="Boolean">
@@ -25547,7 +25547,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
     </References>
     <Definition Name="DataSetFieldFlags" IsOptionSet="true">
-      <Field Name="PromotedField" Value="1" />
+      <Field Name="PromotedField" Value="0" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15577" BrowseName="OptionSetValues" ParentNodeId="i=15904" DataType="LocalizedText" ValueRank="1">
@@ -25639,12 +25639,12 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
     <Definition Name="DataSetFieldContentMask" IsOptionSet="true">
-      <Field Name="StatusCode" Value="1" />
-      <Field Name="SourceTimestamp" Value="2" />
-      <Field Name="ServerTimestamp" Value="4" />
-      <Field Name="SourcePicoSeconds" Value="8" />
-      <Field Name="ServerPicoSeconds" Value="16" />
-      <Field Name="RawDataEncoding" Value="32" />
+      <Field Name="StatusCode" Value="0" />
+      <Field Name="SourceTimestamp" Value="1" />
+      <Field Name="ServerTimestamp" Value="2" />
+      <Field Name="SourcePicoSeconds" Value="3" />
+      <Field Name="ServerPicoSeconds" Value="4" />
+      <Field Name="RawDataEncoding" Value="5" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15584" BrowseName="OptionSetValues" ParentNodeId="i=15583" DataType="LocalizedText" ValueRank="1">
@@ -25996,17 +25996,17 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
     <Definition Name="UadpNetworkMessageContentMask" IsOptionSet="true">
-      <Field Name="PublisherId" Value="1" />
-      <Field Name="GroupHeader" Value="2" />
-      <Field Name="WriterGroupId" Value="4" />
-      <Field Name="GroupVersion" Value="8" />
-      <Field Name="NetworkMessageNumber" Value="16" />
-      <Field Name="SequenceNumber" Value="32" />
-      <Field Name="PayloadHeader" Value="64" />
-      <Field Name="Timestamp" Value="128" />
-      <Field Name="Picoseconds" Value="256" />
-      <Field Name="DataSetClassId" Value="512" />
-      <Field Name="PromotedFields" Value="1024" />
+      <Field Name="PublisherId" Value="0" />
+      <Field Name="GroupHeader" Value="1" />
+      <Field Name="WriterGroupId" Value="2" />
+      <Field Name="GroupVersion" Value="3" />
+      <Field Name="NetworkMessageNumber" Value="4" />
+      <Field Name="SequenceNumber" Value="5" />
+      <Field Name="PayloadHeader" Value="6" />
+      <Field Name="Timestamp" Value="7" />
+      <Field Name="Picoseconds" Value="8" />
+      <Field Name="DataSetClassId" Value="9" />
+      <Field Name="PromotedFields" Value="10" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15643" BrowseName="OptionSetValues" ParentNodeId="i=15642" DataType="LocalizedText" ValueRank="1">
@@ -26096,12 +26096,12 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
     <Definition Name="UadpDataSetMessageContentMask" IsOptionSet="true">
-      <Field Name="Timestamp" Value="1" />
-      <Field Name="PicoSeconds" Value="2" />
-      <Field Name="Status" Value="4" />
-      <Field Name="MajorVersion" Value="8" />
-      <Field Name="MinorVersion" Value="16" />
-      <Field Name="SequenceNumber" Value="32" />
+      <Field Name="Timestamp" Value="0" />
+      <Field Name="PicoSeconds" Value="1" />
+      <Field Name="Status" Value="2" />
+      <Field Name="MajorVersion" Value="3" />
+      <Field Name="MinorVersion" Value="4" />
+      <Field Name="SequenceNumber" Value="5" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15647" BrowseName="OptionSetValues" ParentNodeId="i=15646" DataType="LocalizedText" ValueRank="1">
@@ -26182,12 +26182,12 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
     <Definition Name="JsonNetworkMessageContentMask" IsOptionSet="true">
-      <Field Name="NetworkMessageHeader" Value="1" />
-      <Field Name="DataSetMessageHeader" Value="2" />
-      <Field Name="SingleDataSetMessage" Value="4" />
-      <Field Name="PublisherId" Value="8" />
-      <Field Name="DataSetClassId" Value="16" />
-      <Field Name="ReplyTo" Value="32" />
+      <Field Name="NetworkMessageHeader" Value="0" />
+      <Field Name="DataSetMessageHeader" Value="1" />
+      <Field Name="SingleDataSetMessage" Value="2" />
+      <Field Name="PublisherId" Value="3" />
+      <Field Name="DataSetClassId" Value="4" />
+      <Field Name="ReplyTo" Value="5" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15655" BrowseName="OptionSetValues" ParentNodeId="i=15654" DataType="LocalizedText" ValueRank="1">
@@ -26248,11 +26248,11 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
     <Definition Name="JsonDataSetMessageContentMask" IsOptionSet="true">
-      <Field Name="DataSetWriterId" Value="1" />
-      <Field Name="MetaDataVersion" Value="2" />
-      <Field Name="SequenceNumber" Value="4" />
-      <Field Name="Timestamp" Value="8" />
-      <Field Name="Status" Value="16" />
+      <Field Name="DataSetWriterId" Value="0" />
+      <Field Name="MetaDataVersion" Value="1" />
+      <Field Name="SequenceNumber" Value="2" />
+      <Field Name="Timestamp" Value="3" />
+      <Field Name="Status" Value="4" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15659" BrowseName="OptionSetValues" ParentNodeId="i=15658" DataType="LocalizedText" ValueRank="1">
@@ -39432,24 +39432,24 @@
     </References>
     <Definition Name="PermissionType" IsOptionSet="true">
       <Field Name="None" Value="0" />
-      <Field Name="Browse" Value="1" />
-      <Field Name="ReadRolePermissions" Value="2" />
-      <Field Name="WriteAttribute" Value="4" />
-      <Field Name="WriteRolePermissions" Value="8" />
-      <Field Name="WriteHistorizing" Value="16" />
-      <Field Name="Read" Value="32" />
-      <Field Name="Write" Value="64" />
-      <Field Name="ReadHistory" Value="128" />
-      <Field Name="InsertHistory" Value="256" />
-      <Field Name="ModifyHistory" Value="512" />
-      <Field Name="DeleteHistory" Value="1024" />
-      <Field Name="ReceiveEvents" Value="2048" />
-      <Field Name="Call" Value="4096" />
-      <Field Name="AddReference" Value="8192" />
-      <Field Name="RemoveReference" Value="16384" />
-      <Field Name="DeleteNode" Value="32768" />
-      <Field Name="AddNode" Value="65536" />
-      <Field Name="All" Value="131071" />
+      <Field Name="Browse" Value="0" />
+      <Field Name="ReadRolePermissions" Value="1" />
+      <Field Name="WriteAttribute" Value="2" />
+      <Field Name="WriteRolePermissions" Value="3" />
+      <Field Name="WriteHistorizing" Value="4" />
+      <Field Name="Read" Value="5" />
+      <Field Name="Write" Value="6" />
+      <Field Name="ReadHistory" Value="7" />
+      <Field Name="InsertHistory" Value="8" />
+      <Field Name="ModifyHistory" Value="9" />
+      <Field Name="DeleteHistory" Value="10" />
+      <Field Name="ReceiveEvents" Value="11" />
+      <Field Name="Call" Value="12" />
+      <Field Name="AddReference" Value="13" />
+      <Field Name="RemoveReference" Value="14" />
+      <Field Name="DeleteNode" Value="15" />
+      <Field Name="AddNode" Value="16" />
+      <Field Name="All" Value="0" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15030" BrowseName="OptionSetValues" ParentNodeId="i=94" DataType="LocalizedText" ValueRank="1">
@@ -39557,12 +39557,12 @@
     </References>
     <Definition Name="AccessLevelType" IsOptionSet="true">
       <Field Name="None" Value="0" />
-      <Field Name="CurrentRead" Value="1" />
-      <Field Name="CurrentWrite" Value="2" />
-      <Field Name="HistoryRead" Value="4" />
-      <Field Name="HistoryWrite" Value="16" />
-      <Field Name="StatusWrite" Value="32" />
-      <Field Name="TimestampWrite" Value="64" />
+      <Field Name="CurrentRead" Value="0" />
+      <Field Name="CurrentWrite" Value="1" />
+      <Field Name="HistoryRead" Value="2" />
+      <Field Name="HistoryWrite" Value="4" />
+      <Field Name="StatusWrite" Value="5" />
+      <Field Name="TimestampWrite" Value="6" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15032" BrowseName="OptionSetValues" ParentNodeId="i=15031" DataType="LocalizedText" ValueRank="1">
@@ -39620,15 +39620,15 @@
     </References>
     <Definition Name="AccessLevelExType" IsOptionSet="true">
       <Field Name="None" Value="0" />
-      <Field Name="CurrentRead" Value="1" />
-      <Field Name="CurrentWrite" Value="2" />
-      <Field Name="HistoryRead" Value="4" />
-      <Field Name="HistoryWrite" Value="16" />
-      <Field Name="StatusWrite" Value="32" />
-      <Field Name="TimestampWrite" Value="64" />
-      <Field Name="NonatomicRead" Value="256" />
-      <Field Name="NonatomicWrite" Value="512" />
-      <Field Name="WriteFullArrayOnly" Value="1024" />
+      <Field Name="CurrentRead" Value="0" />
+      <Field Name="CurrentWrite" Value="1" />
+      <Field Name="HistoryRead" Value="2" />
+      <Field Name="HistoryWrite" Value="4" />
+      <Field Name="StatusWrite" Value="5" />
+      <Field Name="TimestampWrite" Value="6" />
+      <Field Name="NonatomicRead" Value="8" />
+      <Field Name="NonatomicWrite" Value="9" />
+      <Field Name="WriteFullArrayOnly" Value="10" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15407" BrowseName="OptionSetValues" ParentNodeId="i=15406" DataType="LocalizedText" ValueRank="1">
@@ -39706,9 +39706,9 @@
     </References>
     <Definition Name="EventNotifierType" IsOptionSet="true">
       <Field Name="None" Value="0" />
-      <Field Name="SubscribeToEvents" Value="1" />
-      <Field Name="HistoryRead" Value="4" />
-      <Field Name="HistoryWrite" Value="8" />
+      <Field Name="SubscribeToEvents" Value="0" />
+      <Field Name="HistoryRead" Value="2" />
+      <Field Name="HistoryWrite" Value="3" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15034" BrowseName="OptionSetValues" ParentNodeId="i=15033" DataType="LocalizedText" ValueRank="1">
@@ -39751,9 +39751,9 @@
     </References>
     <Definition Name="AccessRestrictionType" IsOptionSet="true">
       <Field Name="None" Value="0" />
-      <Field Name="SigningRequired" Value="1" />
-      <Field Name="EncryptionRequired" Value="2" />
-      <Field Name="SessionRequired" Value="4" />
+      <Field Name="SigningRequired" Value="0" />
+      <Field Name="EncryptionRequired" Value="1" />
+      <Field Name="SessionRequired" Value="2" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15035" BrowseName="OptionSetValues" ParentNodeId="i=95" DataType="LocalizedText" ValueRank="1">
@@ -41407,82 +41407,82 @@
       <Field Name="None" Value="0">
         <Description>No attributes are writable.</Description>
       </Field>
-      <Field Name="AccessLevel" Value="1">
+      <Field Name="AccessLevel" Value="0">
         <Description>The access level attribute is writable.</Description>
       </Field>
-      <Field Name="ArrayDimensions" Value="2">
+      <Field Name="ArrayDimensions" Value="1">
         <Description>The array dimensions attribute is writable.</Description>
       </Field>
-      <Field Name="BrowseName" Value="4">
+      <Field Name="BrowseName" Value="2">
         <Description>The browse name attribute is writable.</Description>
       </Field>
-      <Field Name="ContainsNoLoops" Value="8">
+      <Field Name="ContainsNoLoops" Value="3">
         <Description>The contains no loops attribute is writable.</Description>
       </Field>
-      <Field Name="DataType" Value="16">
+      <Field Name="DataType" Value="4">
         <Description>The data type attribute is writable.</Description>
       </Field>
-      <Field Name="Description" Value="32">
+      <Field Name="Description" Value="5">
         <Description>The description attribute is writable.</Description>
       </Field>
-      <Field Name="DisplayName" Value="64">
+      <Field Name="DisplayName" Value="6">
         <Description>The display name attribute is writable.</Description>
       </Field>
-      <Field Name="EventNotifier" Value="128">
+      <Field Name="EventNotifier" Value="7">
         <Description>The event notifier attribute is writable.</Description>
       </Field>
-      <Field Name="Executable" Value="256">
+      <Field Name="Executable" Value="8">
         <Description>The executable attribute is writable.</Description>
       </Field>
-      <Field Name="Historizing" Value="512">
+      <Field Name="Historizing" Value="9">
         <Description>The historizing attribute is writable.</Description>
       </Field>
-      <Field Name="InverseName" Value="1024">
+      <Field Name="InverseName" Value="10">
         <Description>The inverse name attribute is writable.</Description>
       </Field>
-      <Field Name="IsAbstract" Value="2048">
+      <Field Name="IsAbstract" Value="11">
         <Description>The is abstract attribute is writable.</Description>
       </Field>
-      <Field Name="MinimumSamplingInterval" Value="4096">
+      <Field Name="MinimumSamplingInterval" Value="12">
         <Description>The minimum sampling interval attribute is writable.</Description>
       </Field>
-      <Field Name="NodeClass" Value="8192">
+      <Field Name="NodeClass" Value="13">
         <Description>The node class attribute is writable.</Description>
       </Field>
-      <Field Name="NodeId" Value="16384">
+      <Field Name="NodeId" Value="14">
         <Description>The node id attribute is writable.</Description>
       </Field>
-      <Field Name="Symmetric" Value="32768">
+      <Field Name="Symmetric" Value="15">
         <Description>The symmetric attribute is writable.</Description>
       </Field>
-      <Field Name="UserAccessLevel" Value="65536">
+      <Field Name="UserAccessLevel" Value="16">
         <Description>The user access level attribute is writable.</Description>
       </Field>
-      <Field Name="UserExecutable" Value="131072">
+      <Field Name="UserExecutable" Value="17">
         <Description>The user executable attribute is writable.</Description>
       </Field>
-      <Field Name="UserWriteMask" Value="262144">
+      <Field Name="UserWriteMask" Value="18">
         <Description>The user write mask attribute is writable.</Description>
       </Field>
-      <Field Name="ValueRank" Value="524288">
+      <Field Name="ValueRank" Value="19">
         <Description>The value rank attribute is writable.</Description>
       </Field>
-      <Field Name="WriteMask" Value="1048576">
+      <Field Name="WriteMask" Value="20">
         <Description>The write mask attribute is writable.</Description>
       </Field>
-      <Field Name="ValueForVariableType" Value="2097152">
+      <Field Name="ValueForVariableType" Value="21">
         <Description>The value attribute is writable.</Description>
       </Field>
-      <Field Name="DataTypeDefinition" Value="4194304">
+      <Field Name="DataTypeDefinition" Value="22">
         <Description>The DataTypeDefinition attribute is writable.</Description>
       </Field>
-      <Field Name="RolePermissions" Value="8388608">
+      <Field Name="RolePermissions" Value="23">
         <Description>The RolePermissions attribute is writable.</Description>
       </Field>
-      <Field Name="AccessRestrictions" Value="16777216">
+      <Field Name="AccessRestrictions" Value="24">
         <Description>The AccessRestrictions attribute is writable.</Description>
       </Field>
-      <Field Name="AccessLevelEx" Value="33554432">
+      <Field Name="AccessLevelEx" Value="25">
         <Description>The AccessLevelEx attribute is writable.</Description>
       </Field>
     </Definition>

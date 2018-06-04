@@ -13,3 +13,4 @@ The following mismatches between the specification have been corrected in the v1
 0004282 - Typo for AccessRestrictionType
 0004283 - NamespacePublicationDate not correct
 0004290 - PermissionType is missing in Opc.Ua.Types.bsd
+0004291 - All OptionSet field values wrong in NodeSet2 file
