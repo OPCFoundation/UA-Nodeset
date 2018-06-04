@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-05-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-06-04T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.02" PublicationDate="2018-05-15T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.02" PublicationDate="2018-06-04T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -947,24 +947,24 @@
     </References>
     <Definition Name="PermissionType" IsOptionSet="true">
       <Field Name="None" Value="0" />
-      <Field Name="Browse" Value="1" />
-      <Field Name="ReadRolePermissions" Value="2" />
-      <Field Name="WriteAttribute" Value="4" />
-      <Field Name="WriteRolePermissions" Value="8" />
-      <Field Name="WriteHistorizing" Value="16" />
-      <Field Name="Read" Value="32" />
-      <Field Name="Write" Value="64" />
-      <Field Name="ReadHistory" Value="128" />
-      <Field Name="InsertHistory" Value="256" />
-      <Field Name="ModifyHistory" Value="512" />
-      <Field Name="DeleteHistory" Value="1024" />
-      <Field Name="ReceiveEvents" Value="2048" />
-      <Field Name="Call" Value="4096" />
-      <Field Name="AddReference" Value="8192" />
-      <Field Name="RemoveReference" Value="16384" />
-      <Field Name="DeleteNode" Value="32768" />
-      <Field Name="AddNode" Value="65536" />
-      <Field Name="All" Value="131071" />
+      <Field Name="Browse" Value="0" />
+      <Field Name="ReadRolePermissions" Value="1" />
+      <Field Name="WriteAttribute" Value="2" />
+      <Field Name="WriteRolePermissions" Value="3" />
+      <Field Name="WriteHistorizing" Value="4" />
+      <Field Name="Read" Value="5" />
+      <Field Name="Write" Value="6" />
+      <Field Name="ReadHistory" Value="7" />
+      <Field Name="InsertHistory" Value="8" />
+      <Field Name="ModifyHistory" Value="9" />
+      <Field Name="DeleteHistory" Value="10" />
+      <Field Name="ReceiveEvents" Value="11" />
+      <Field Name="Call" Value="12" />
+      <Field Name="AddReference" Value="13" />
+      <Field Name="RemoveReference" Value="14" />
+      <Field Name="DeleteNode" Value="15" />
+      <Field Name="AddNode" Value="16" />
+      <Field Name="All" Value="0" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15030" BrowseName="OptionSetValues" ParentNodeId="i=94" DataType="LocalizedText" ValueRank="1">
@@ -1072,12 +1072,12 @@
     </References>
     <Definition Name="AccessLevelType" IsOptionSet="true">
       <Field Name="None" Value="0" />
-      <Field Name="CurrentRead" Value="1" />
-      <Field Name="CurrentWrite" Value="2" />
-      <Field Name="HistoryRead" Value="4" />
-      <Field Name="HistoryWrite" Value="16" />
-      <Field Name="StatusWrite" Value="32" />
-      <Field Name="TimestampWrite" Value="64" />
+      <Field Name="CurrentRead" Value="0" />
+      <Field Name="CurrentWrite" Value="1" />
+      <Field Name="HistoryRead" Value="2" />
+      <Field Name="HistoryWrite" Value="4" />
+      <Field Name="StatusWrite" Value="5" />
+      <Field Name="TimestampWrite" Value="6" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15032" BrowseName="OptionSetValues" ParentNodeId="i=15031" DataType="LocalizedText" ValueRank="1">
@@ -1135,15 +1135,15 @@
     </References>
     <Definition Name="AccessLevelExType" IsOptionSet="true">
       <Field Name="None" Value="0" />
-      <Field Name="CurrentRead" Value="1" />
-      <Field Name="CurrentWrite" Value="2" />
-      <Field Name="HistoryRead" Value="4" />
-      <Field Name="HistoryWrite" Value="16" />
-      <Field Name="StatusWrite" Value="32" />
-      <Field Name="TimestampWrite" Value="64" />
-      <Field Name="NonatomicRead" Value="256" />
-      <Field Name="NonatomicWrite" Value="512" />
-      <Field Name="WriteFullArrayOnly" Value="1024" />
+      <Field Name="CurrentRead" Value="0" />
+      <Field Name="CurrentWrite" Value="1" />
+      <Field Name="HistoryRead" Value="2" />
+      <Field Name="HistoryWrite" Value="4" />
+      <Field Name="StatusWrite" Value="5" />
+      <Field Name="TimestampWrite" Value="6" />
+      <Field Name="NonatomicRead" Value="8" />
+      <Field Name="NonatomicWrite" Value="9" />
+      <Field Name="WriteFullArrayOnly" Value="10" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15407" BrowseName="OptionSetValues" ParentNodeId="i=15406" DataType="LocalizedText" ValueRank="1">
@@ -1221,9 +1221,9 @@
     </References>
     <Definition Name="EventNotifierType" IsOptionSet="true">
       <Field Name="None" Value="0" />
-      <Field Name="SubscribeToEvents" Value="1" />
-      <Field Name="HistoryRead" Value="4" />
-      <Field Name="HistoryWrite" Value="8" />
+      <Field Name="SubscribeToEvents" Value="0" />
+      <Field Name="HistoryRead" Value="2" />
+      <Field Name="HistoryWrite" Value="3" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15034" BrowseName="OptionSetValues" ParentNodeId="i=15033" DataType="LocalizedText" ValueRank="1">
@@ -1266,9 +1266,9 @@
     </References>
     <Definition Name="AccessRestrictionType" IsOptionSet="true">
       <Field Name="None" Value="0" />
-      <Field Name="SigningRequired" Value="1" />
-      <Field Name="EncryptionRequired" Value="2" />
-      <Field Name="SessionRequired" Value="4" />
+      <Field Name="SigningRequired" Value="0" />
+      <Field Name="EncryptionRequired" Value="1" />
+      <Field Name="SessionRequired" Value="2" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15035" BrowseName="OptionSetValues" ParentNodeId="i=95" DataType="LocalizedText" ValueRank="1">
