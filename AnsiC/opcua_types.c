@@ -116,7 +116,6 @@ static struct _OpcUa_EnumeratedValue g_OpcUa_PermissionType_EnumeratedValues[] =
     { "RemoveReference", 16384 },
     { "DeleteNode", 32768 },
     { "AddNode", 65536 },
-    { "All", 131071 },
     { OpcUa_Null, 0 }
 };
 

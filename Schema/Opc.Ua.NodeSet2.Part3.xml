@@ -946,7 +946,6 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
     <Definition Name="PermissionType" IsOptionSet="true">
-      <Field Name="None" Value="0" />
       <Field Name="Browse" Value="0" />
       <Field Name="ReadRolePermissions" Value="1" />
       <Field Name="WriteAttribute" Value="2" />
@@ -964,7 +963,6 @@
       <Field Name="RemoveReference" Value="14" />
       <Field Name="DeleteNode" Value="15" />
       <Field Name="AddNode" Value="16" />
-      <Field Name="All" Value="0" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15030" BrowseName="OptionSetValues" ParentNodeId="i=94" DataType="LocalizedText" ValueRank="1">
@@ -1071,7 +1069,6 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=3</Reference>
     </References>
     <Definition Name="AccessLevelType" IsOptionSet="true">
-      <Field Name="None" Value="0" />
       <Field Name="CurrentRead" Value="0" />
       <Field Name="CurrentWrite" Value="1" />
       <Field Name="HistoryRead" Value="2" />
@@ -1134,7 +1131,6 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
     <Definition Name="AccessLevelExType" IsOptionSet="true">
-      <Field Name="None" Value="0" />
       <Field Name="CurrentRead" Value="0" />
       <Field Name="CurrentWrite" Value="1" />
       <Field Name="HistoryRead" Value="2" />
@@ -1220,7 +1216,6 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=3</Reference>
     </References>
     <Definition Name="EventNotifierType" IsOptionSet="true">
-      <Field Name="None" Value="0" />
       <Field Name="SubscribeToEvents" Value="0" />
       <Field Name="HistoryRead" Value="2" />
       <Field Name="HistoryWrite" Value="3" />
@@ -1265,7 +1260,6 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
     <Definition Name="AccessRestrictionType" IsOptionSet="true">
-      <Field Name="None" Value="0" />
       <Field Name="SigningRequired" Value="0" />
       <Field Name="EncryptionRequired" Value="1" />
       <Field Name="SessionRequired" Value="2" />

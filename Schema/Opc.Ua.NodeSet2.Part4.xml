@@ -1488,9 +1488,6 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
     <Definition Name="AttributeWriteMask" IsOptionSet="true">
-      <Field Name="None" Value="0">
-        <Description>No attributes are writable.</Description>
-      </Field>
       <Field Name="AccessLevel" Value="0">
         <Description>The access level attribute is writable.</Description>
       </Field>

@@ -113,8 +113,7 @@ typedef enum _OpcUa_PermissionType
     OpcUa_PermissionType_AddReference         = 8192,
     OpcUa_PermissionType_RemoveReference      = 16384,
     OpcUa_PermissionType_DeleteNode           = 32768,
-    OpcUa_PermissionType_AddNode              = 65536,
-    OpcUa_PermissionType_All                  = 131071
+    OpcUa_PermissionType_AddNode              = 65536
 #if OPCUA_FORCE_INT32_ENUMS
     ,_OpcUa_PermissionType_MaxEnumerationValue = OpcUa_Int32_Max
 #endif
