@@ -3788,7 +3788,7 @@ namespace Opc.Ua
         {
             m_name = null;
             m_description = null;
-            m_fieldFlags = DataSetFieldFlags.PromotedField;
+            m_fieldFlags = DataSetFieldFlags.None;
             m_builtInType = (byte)0;
             m_dataType = null;
             m_valueRank = (int)0;
@@ -4150,6 +4150,12 @@ namespace Opc.Ua
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)][Flags]
     public enum DataSetFieldFlags
     {
+        /// <summary>
+        /// No value specified.
+        /// </summary>
+        [EnumMember(Value = "None_0")]
+        None = 0,
+
         /// <summary>
         /// A description for the PromotedField field.
         /// </summary>
@@ -5787,6 +5793,12 @@ namespace Opc.Ua
     public enum DataSetFieldContentMask
     {
         /// <summary>
+        /// No value specified.
+        /// </summary>
+        [EnumMember(Value = "None_0")]
+        None = 0,
+
+        /// <summary>
         /// A description for the StatusCode field.
         /// </summary>
         [EnumMember(Value = "StatusCode_1")]
@@ -5946,7 +5958,7 @@ namespace Opc.Ua
             m_name = null;
             m_enabled = true;
             m_dataSetWriterId = (ushort)0;
-            m_dataSetFieldContentMask = DataSetFieldContentMask.StatusCode;
+            m_dataSetFieldContentMask = DataSetFieldContentMask.None;
             m_keyFrameCount = (uint)0;
             m_dataSetName = null;
             m_dataSetWriterProperties = new KeyValuePairCollection();
@@ -9529,7 +9541,7 @@ namespace Opc.Ua
             m_writerGroupId = (ushort)0;
             m_dataSetWriterId = (ushort)0;
             m_dataSetMetaData = new DataSetMetaDataType();
-            m_dataSetFieldContentMask = DataSetFieldContentMask.StatusCode;
+            m_dataSetFieldContentMask = DataSetFieldContentMask.None;
             m_messageReceiveTimeout = (double)0;
             m_securityMode = MessageSecurityMode.Invalid;
             m_securityGroupId = null;
@@ -11902,6 +11914,12 @@ namespace Opc.Ua
     public enum UadpNetworkMessageContentMask
     {
         /// <summary>
+        /// No value specified.
+        /// </summary>
+        [EnumMember(Value = "None_0")]
+        None = 0,
+
+        /// <summary>
         /// A description for the PublisherId field.
         /// </summary>
         [EnumMember(Value = "PublisherId_1")]
@@ -12090,7 +12108,7 @@ namespace Opc.Ua
         {
             m_groupVersion = (uint)0;
             m_dataSetOrdering = DataSetOrderingType.Undefined;
-            m_networkMessageContentMask = UadpNetworkMessageContentMask.PublisherId;
+            m_networkMessageContentMask = UadpNetworkMessageContentMask.None;
             m_samplingOffset = (double)0;
             m_publishingOffset = new DoubleCollection();
         }
@@ -12366,6 +12384,12 @@ namespace Opc.Ua
     public enum UadpDataSetMessageContentMask
     {
         /// <summary>
+        /// No value specified.
+        /// </summary>
+        [EnumMember(Value = "None_0")]
+        None = 0,
+
+        /// <summary>
         /// A description for the Timestamp field.
         /// </summary>
         [EnumMember(Value = "Timestamp_1")]
@@ -12522,7 +12546,7 @@ namespace Opc.Ua
         /// </summary>
         private void Initialize()
         {
-            m_dataSetMessageContentMask = UadpDataSetMessageContentMask.Timestamp;
+            m_dataSetMessageContentMask = UadpDataSetMessageContentMask.None;
             m_configuredSize = (ushort)0;
             m_networkMessageNumber = (ushort)0;
             m_dataSetOffset = (ushort)0;
@@ -12798,8 +12822,8 @@ namespace Opc.Ua
             m_networkMessageNumber = (ushort)0;
             m_dataSetOffset = (ushort)0;
             m_dataSetClassId = Uuid.Empty;
-            m_networkMessageContentMask = UadpNetworkMessageContentMask.PublisherId;
-            m_dataSetMessageContentMask = UadpDataSetMessageContentMask.Timestamp;
+            m_networkMessageContentMask = UadpNetworkMessageContentMask.None;
+            m_dataSetMessageContentMask = UadpDataSetMessageContentMask.None;
             m_publishingInterval = (double)0;
             m_receiveOffset = (double)0;
             m_processingOffset = (double)0;
@@ -13124,6 +13148,12 @@ namespace Opc.Ua
     public enum JsonNetworkMessageContentMask
     {
         /// <summary>
+        /// No value specified.
+        /// </summary>
+        [EnumMember(Value = "None_0")]
+        None = 0,
+
+        /// <summary>
         /// A description for the NetworkMessageHeader field.
         /// </summary>
         [EnumMember(Value = "NetworkMessageHeader_1")]
@@ -13280,7 +13310,7 @@ namespace Opc.Ua
         /// </summary>
         private void Initialize()
         {
-            m_networkMessageContentMask = JsonNetworkMessageContentMask.NetworkMessageHeader;
+            m_networkMessageContentMask = JsonNetworkMessageContentMask.None;
         }
         #endregion
 
@@ -13482,6 +13512,12 @@ namespace Opc.Ua
     public enum JsonDataSetMessageContentMask
     {
         /// <summary>
+        /// No value specified.
+        /// </summary>
+        [EnumMember(Value = "None_0")]
+        None = 0,
+
+        /// <summary>
         /// A description for the DataSetWriterId field.
         /// </summary>
         [EnumMember(Value = "DataSetWriterId_1")]
@@ -13632,7 +13668,7 @@ namespace Opc.Ua
         /// </summary>
         private void Initialize()
         {
-            m_dataSetMessageContentMask = JsonDataSetMessageContentMask.DataSetWriterId;
+            m_dataSetMessageContentMask = JsonDataSetMessageContentMask.None;
         }
         #endregion
 
@@ -13856,8 +13892,8 @@ namespace Opc.Ua
         /// </summary>
         private void Initialize()
         {
-            m_networkMessageContentMask = JsonNetworkMessageContentMask.NetworkMessageHeader;
-            m_dataSetMessageContentMask = JsonDataSetMessageContentMask.DataSetWriterId;
+            m_networkMessageContentMask = JsonNetworkMessageContentMask.None;
+            m_dataSetMessageContentMask = JsonDataSetMessageContentMask.None;
         }
         #endregion
 
@@ -16181,7 +16217,7 @@ namespace Opc.Ua
     public enum PermissionType
     {
         /// <summary>
-        /// A description for the None field.
+        /// No value specified.
         /// </summary>
         [EnumMember(Value = "None_0")]
         None = 0,
@@ -16287,12 +16323,6 @@ namespace Opc.Ua
         /// </summary>
         [EnumMember(Value = "AddNode_65536")]
         AddNode = 65536,
-
-        /// <summary>
-        /// A description for the All field.
-        /// </summary>
-        [EnumMember(Value = "All_131071")]
-        All = 131071,
     }
     #endif
     #endregion
@@ -16308,7 +16338,7 @@ namespace Opc.Ua
     public enum AccessLevelType
     {
         /// <summary>
-        /// A description for the None field.
+        /// No value specified.
         /// </summary>
         [EnumMember(Value = "None_0")]
         None = 0,
@@ -16363,7 +16393,7 @@ namespace Opc.Ua
     public enum AccessLevelExType
     {
         /// <summary>
-        /// A description for the None field.
+        /// No value specified.
         /// </summary>
         [EnumMember(Value = "None_0")]
         None = 0,
@@ -16436,7 +16466,7 @@ namespace Opc.Ua
     public enum EventNotifierType
     {
         /// <summary>
-        /// A description for the None field.
+        /// No value specified.
         /// </summary>
         [EnumMember(Value = "None_0")]
         None = 0,
@@ -16473,7 +16503,7 @@ namespace Opc.Ua
     public enum AccessRestrictionType
     {
         /// <summary>
-        /// A description for the None field.
+        /// No value specified.
         /// </summary>
         [EnumMember(Value = "None_0")]
         None = 0,
@@ -35357,7 +35387,7 @@ namespace Opc.Ua
     public enum AttributeWriteMask
     {
         /// <summary>
-        /// No attributes are writable.
+        /// No value specified.
         /// </summary>
         [EnumMember(Value = "None_0")]
         None = 0,
