@@ -433,7 +433,7 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadContentFilterInvalid 0x80480000
 
 /*============================================================================
- * An unregognized operator was provided in a filter.
+ * An unrecognized operator was provided in a filter.
  *===========================================================================*/
 #define OpcUa_BadFilterOperatorInvalid 0x80C10000
 
@@ -473,7 +473,7 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadNoContinuationPoints 0x804B0000
 
 /*============================================================================
- * The operation could not be processed because all continuation points have been allocated.
+ * The reference type id does not refer to a valid reference type node.
  *===========================================================================*/
 #define OpcUa_BadReferenceTypeIdInvalid 0x804C0000
 
@@ -748,7 +748,7 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadNotExecutable 0x81110000
 
 /*============================================================================
- * The server has reached its  maximum number of subscriptions.
+ * The server has reached its maximum number of subscriptions.
  *===========================================================================*/
 #define OpcUa_BadTooManySubscriptions 0x80770000
 
@@ -1073,7 +1073,7 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadAggregateConfigurationRejected 0x80DA0000
 
 /*============================================================================
- * The request pecifies fields which are not valid for the EventType or cannot be saved by the historian.
+ * The request specifies fields which are not valid for the EventType or cannot be saved by the historian.
  *===========================================================================*/
 #define OpcUa_GoodDataIgnored 0x00D90000
 

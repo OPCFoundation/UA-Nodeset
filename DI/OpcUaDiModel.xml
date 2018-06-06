@@ -37,7 +37,7 @@
   TargetNamespace="http://opcfoundation.org/UA/DI/"
   TargetXmlNamespace="http://opcfoundation.org/UA/DI/"
   TargetVersion="1.01"
-  TargetPublicationDate="2012-12-31T00:00:00Z"
+  TargetPublicationDate="2018-06-06T00:00:00Z"
   xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
 
   <Namespaces>
@@ -45,6 +45,60 @@
     <Namespace Name="OpcUa" Version="1.03" PublicationDate="2013-12-02T00:00:00Z" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</Namespace>
   </Namespaces>
 
+  <Object SymbolicName="DI:OPCUADINamespaceMetadata" TypeDefinition="OpcUa:NamespaceMetadataType">
+    <BrowseName>http://opcfoundation.org/UA/DI/</BrowseName>
+    <Children>
+      <Property SymbolicName="OpcUa:NamespaceUri" DataType="OpcUa:String">
+        <DefaultValue>
+          <uax:String>http://opcfoundation.org/UA/DI/</uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="OpcUa:NamespaceVersion" DataType="OpcUa:String">
+        <DefaultValue>
+          <uax:String>1.01</uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="OpcUa:NamespacePublicationDate" DataType="OpcUa:DateTime">
+        <DefaultValue>
+          <uax:String>2018-06-06</uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="OpcUa:IsNamespaceSubset" DataType="OpcUa:Boolean">
+        <DefaultValue>
+          <uax:Boolean>false</uax:Boolean>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="OpcUa:StaticNodeIdTypes" DataType="OpcUa:IdType" ValueRank="Array">
+        <DefaultValue>
+          <uax:ListOfInt32>
+            <uax:Int32>0</uax:Int32>
+          </uax:ListOfInt32>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="OpcUa:StaticNumericNodeIdRange" DataType="OpcUa:NumericRange" ValueRank="Array">
+        <DefaultValue>
+          <uax:ListOfString>
+            <uax:String>1:65535</uax:String>
+          </uax:ListOfString>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="OpcUa:StaticStringNodeIdPattern" DataType="OpcUa:String">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="OpcUa:DefaultRolePermissions" ModellingRule="Mandatory" />
+      <Property SymbolicName="OpcUa:DefaultUserRolePermissions" ModellingRule="Mandatory" />
+      <Property SymbolicName="OpcUa:DefaultAccessRestrictions" ModellingRule="Mandatory" />
+    </Children>
+    <References>
+      <Reference IsInverse="true">
+        <ReferenceType>OpcUa:HasComponent</ReferenceType>
+        <TargetId>OpcUa:Server_Namespaces</TargetId>
+      </Reference>
+    </References>
+  </Object>
+  
   <ReferenceType SymbolicName="DI:ConnectsTo" BaseType="OpcUa:HierarchicalReferences" Symmetric="true">
     <Description>Used to indicate that source and target Node have a topological connection.</Description>
   </ReferenceType>
@@ -108,7 +162,7 @@
       <Object SymbolicName="DI:MethodSet" TypeDefinition="OpcUa:BaseObjectType" ModellingRule="Optional">
         <Description>Flat list of Methods</Description>
         <Children>
-          <Method SymbolicName="DI:MethodIdentifier">
+          <Method SymbolicName="DI:MethodIdentifier" ModellingRule="None">
             <BrowseName>&lt;MethodIdentifier&gt;</BrowseName>
             <Description>A method which belongs to the topology element.</Description>
           </Method>
@@ -247,7 +301,7 @@
         <Description>A parameter which belongs to the group.</Description>
         <ReferenceType>OpcUa:Organizes</ReferenceType>
       </Variable>
-      <Method SymbolicName="DI:MethodIdentifier">
+      <Method SymbolicName="DI:MethodIdentifier" ModellingRule="None">
         <BrowseName>&lt;MethodIdentifier&gt;</BrowseName>
         <Description>A method which belongs to the group.</Description>
         <ReferenceType>OpcUa:Organizes</ReferenceType>

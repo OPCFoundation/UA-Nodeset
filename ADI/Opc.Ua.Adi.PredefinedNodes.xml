@@ -901,32 +901,6 @@
         <uax:Identifier>i=78</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>9382</uax:NumericId>
-      <MethodIdentifier>
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=9383</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the topology element.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6018</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>9383</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
       <GetConfiguration xmlns="http://opcfoundation.org/UA/ADI/">
         <uax:NodeClass>Method_4</uax:NodeClass>
         <uax:NodeId>
@@ -1509,32 +1483,6 @@
           </uax:TargetId>
         </uax:Reference>
       </uax:References>
-      <MethodIdentifier>
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15002</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15002</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </Identification>
     <Configuration>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -1565,32 +1513,6 @@
           </uax:TargetId>
         </uax:Reference>
       </uax:References>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15005</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15005</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </Configuration>
     <Status>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -1621,32 +1543,6 @@
           </uax:TargetId>
         </uax:Reference>
       </uax:References>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15006</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15006</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </Status>
     <FactorySettings>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -1667,32 +1563,6 @@
         <uax:Identifier>i=78</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>9486</uax:NumericId>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15007</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15007</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </FactorySettings>
     <AnalyserStateMachine>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -1812,32 +1682,6 @@
           <uax:Identifier>i=78</uax:Identifier>
         </uax:ModellingRuleId>
         <uax:NumericId>9503</uax:NumericId>
-        <MethodIdentifier>
-          <uax:NodeClass>Method_4</uax:NodeClass>
-          <uax:NodeId>
-            <uax:Identifier>ns=1;i=9504</uax:Identifier>
-          </uax:NodeId>
-          <uax:BrowseName>
-            <uax:NamespaceIndex>2</uax:NamespaceIndex>
-            <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-          </uax:BrowseName>
-          <uax:Description>
-            <uax:Locale></uax:Locale>
-            <uax:Text>A method which belongs to the topology element.</uax:Text>
-          </uax:Description>
-          <uax:ReferenceTypeId>
-            <uax:Identifier>i=47</uax:Identifier>
-          </uax:ReferenceTypeId>
-          <uax:TypeDefinitionId>
-            <uax:Identifier>ns=2;i=6018</uax:Identifier>
-          </uax:TypeDefinitionId>
-          <uax:ModellingRuleId>
-            <uax:Identifier>i=78</uax:Identifier>
-          </uax:ModellingRuleId>
-          <uax:NumericId>9504</uax:NumericId>
-          <uax:Executable>true</uax:Executable>
-          <uax:UserExecutable>true</uax:UserExecutable>
-        </MethodIdentifier>
         <GotoOperating xmlns="http://opcfoundation.org/UA/ADI/">
           <uax:NodeClass>Method_4</uax:NodeClass>
           <uax:NodeId>
@@ -2246,32 +2090,6 @@
           <uax:Identifier>i=78</uax:Identifier>
         </uax:ModellingRuleId>
         <uax:NumericId>9546</uax:NumericId>
-        <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-          <uax:NodeClass>Method_4</uax:NodeClass>
-          <uax:NodeId>
-            <uax:Identifier>ns=1;i=15009</uax:Identifier>
-          </uax:NodeId>
-          <uax:BrowseName>
-            <uax:NamespaceIndex>2</uax:NamespaceIndex>
-            <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-          </uax:BrowseName>
-          <uax:Description>
-            <uax:Locale></uax:Locale>
-            <uax:Text>A method which belongs to the group.</uax:Text>
-          </uax:Description>
-          <uax:ReferenceTypeId>
-            <uax:Identifier>i=35</uax:Identifier>
-          </uax:ReferenceTypeId>
-          <uax:TypeDefinitionId>
-            <uax:Identifier>ns=2;i=6029</uax:Identifier>
-          </uax:TypeDefinitionId>
-          <uax:ModellingRuleId>
-            <uax:Identifier>i=78</uax:Identifier>
-          </uax:ModellingRuleId>
-          <uax:NumericId>15009</uax:NumericId>
-          <uax:Executable>true</uax:Executable>
-          <uax:UserExecutable>true</uax:UserExecutable>
-        </MethodIdentifier>
       </Configuration>
       <Status>
         <uax:NodeClass>Object_1</uax:NodeClass>
@@ -2292,32 +2110,6 @@
           <uax:Identifier>i=78</uax:Identifier>
         </uax:ModellingRuleId>
         <uax:NumericId>9548</uax:NumericId>
-        <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-          <uax:NodeClass>Method_4</uax:NodeClass>
-          <uax:NodeId>
-            <uax:Identifier>ns=1;i=15010</uax:Identifier>
-          </uax:NodeId>
-          <uax:BrowseName>
-            <uax:NamespaceIndex>2</uax:NamespaceIndex>
-            <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-          </uax:BrowseName>
-          <uax:Description>
-            <uax:Locale></uax:Locale>
-            <uax:Text>A method which belongs to the group.</uax:Text>
-          </uax:Description>
-          <uax:ReferenceTypeId>
-            <uax:Identifier>i=35</uax:Identifier>
-          </uax:ReferenceTypeId>
-          <uax:TypeDefinitionId>
-            <uax:Identifier>ns=2;i=6029</uax:Identifier>
-          </uax:TypeDefinitionId>
-          <uax:ModellingRuleId>
-            <uax:Identifier>i=78</uax:Identifier>
-          </uax:ModellingRuleId>
-          <uax:NumericId>15010</uax:NumericId>
-          <uax:Executable>true</uax:Executable>
-          <uax:UserExecutable>true</uax:UserExecutable>
-        </MethodIdentifier>
       </Status>
       <ChannelStateMachine>
         <uax:NodeClass>Object_1</uax:NodeClass>
@@ -4069,32 +3861,6 @@
         <uax:Identifier>i=78</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>9679</uax:NumericId>
-      <MethodIdentifier>
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=9680</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the topology element.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6018</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>9680</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
       <GotoOperating xmlns="http://opcfoundation.org/UA/ADI/">
         <uax:NodeClass>Method_4</uax:NodeClass>
         <uax:NodeId>
@@ -4507,32 +4273,6 @@
         <uax:Identifier>i=11508</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>9788</uax:NumericId>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15011</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15011</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </GroupIdentifier>
     <Configuration>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -4563,32 +4303,6 @@
           </uax:TargetId>
         </uax:Reference>
       </uax:References>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15013</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15013</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </Configuration>
     <Status>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -4627,32 +4341,6 @@
           </uax:TargetId>
         </uax:Reference>
       </uax:References>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15014</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15014</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </Status>
     <ChannelStateMachine>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -4913,32 +4601,6 @@
           <uax:Identifier>i=78</uax:Identifier>
         </uax:ModellingRuleId>
         <uax:NumericId>9902</uax:NumericId>
-        <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-          <uax:NodeClass>Method_4</uax:NodeClass>
-          <uax:NodeId>
-            <uax:Identifier>ns=1;i=15016</uax:Identifier>
-          </uax:NodeId>
-          <uax:BrowseName>
-            <uax:NamespaceIndex>2</uax:NamespaceIndex>
-            <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-          </uax:BrowseName>
-          <uax:Description>
-            <uax:Locale></uax:Locale>
-            <uax:Text>A method which belongs to the group.</uax:Text>
-          </uax:Description>
-          <uax:ReferenceTypeId>
-            <uax:Identifier>i=35</uax:Identifier>
-          </uax:ReferenceTypeId>
-          <uax:TypeDefinitionId>
-            <uax:Identifier>ns=2;i=6029</uax:Identifier>
-          </uax:TypeDefinitionId>
-          <uax:ModellingRuleId>
-            <uax:Identifier>i=78</uax:Identifier>
-          </uax:ModellingRuleId>
-          <uax:NumericId>15016</uax:NumericId>
-          <uax:Executable>true</uax:Executable>
-          <uax:UserExecutable>true</uax:UserExecutable>
-        </MethodIdentifier>
       </Configuration>
       <Status>
         <uax:NodeClass>Object_1</uax:NodeClass>
@@ -4959,32 +4621,6 @@
           <uax:Identifier>i=78</uax:Identifier>
         </uax:ModellingRuleId>
         <uax:NumericId>9904</uax:NumericId>
-        <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-          <uax:NodeClass>Method_4</uax:NodeClass>
-          <uax:NodeId>
-            <uax:Identifier>ns=1;i=15017</uax:Identifier>
-          </uax:NodeId>
-          <uax:BrowseName>
-            <uax:NamespaceIndex>2</uax:NamespaceIndex>
-            <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-          </uax:BrowseName>
-          <uax:Description>
-            <uax:Locale></uax:Locale>
-            <uax:Text>A method which belongs to the group.</uax:Text>
-          </uax:Description>
-          <uax:ReferenceTypeId>
-            <uax:Identifier>i=35</uax:Identifier>
-          </uax:ReferenceTypeId>
-          <uax:TypeDefinitionId>
-            <uax:Identifier>ns=2;i=6029</uax:Identifier>
-          </uax:TypeDefinitionId>
-          <uax:ModellingRuleId>
-            <uax:Identifier>i=78</uax:Identifier>
-          </uax:ModellingRuleId>
-          <uax:NumericId>15017</uax:NumericId>
-          <uax:Executable>true</uax:Executable>
-          <uax:UserExecutable>true</uax:UserExecutable>
-        </MethodIdentifier>
       </Status>
       <AcquisitionSettings>
         <uax:NodeClass>Object_1</uax:NodeClass>
@@ -5005,32 +4641,6 @@
           <uax:Identifier>i=78</uax:Identifier>
         </uax:ModellingRuleId>
         <uax:NumericId>9906</uax:NumericId>
-        <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-          <uax:NodeClass>Method_4</uax:NodeClass>
-          <uax:NodeId>
-            <uax:Identifier>ns=1;i=15018</uax:Identifier>
-          </uax:NodeId>
-          <uax:BrowseName>
-            <uax:NamespaceIndex>2</uax:NamespaceIndex>
-            <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-          </uax:BrowseName>
-          <uax:Description>
-            <uax:Locale></uax:Locale>
-            <uax:Text>A method which belongs to the group.</uax:Text>
-          </uax:Description>
-          <uax:ReferenceTypeId>
-            <uax:Identifier>i=35</uax:Identifier>
-          </uax:ReferenceTypeId>
-          <uax:TypeDefinitionId>
-            <uax:Identifier>ns=2;i=6029</uax:Identifier>
-          </uax:TypeDefinitionId>
-          <uax:ModellingRuleId>
-            <uax:Identifier>i=78</uax:Identifier>
-          </uax:ModellingRuleId>
-          <uax:NumericId>15018</uax:NumericId>
-          <uax:Executable>true</uax:Executable>
-          <uax:UserExecutable>true</uax:UserExecutable>
-        </MethodIdentifier>
       </AcquisitionSettings>
       <AcquisitionStatus>
         <uax:NodeClass>Object_1</uax:NodeClass>
@@ -5051,32 +4661,6 @@
           <uax:Identifier>i=78</uax:Identifier>
         </uax:ModellingRuleId>
         <uax:NumericId>9908</uax:NumericId>
-        <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-          <uax:NodeClass>Method_4</uax:NodeClass>
-          <uax:NodeId>
-            <uax:Identifier>ns=1;i=15019</uax:Identifier>
-          </uax:NodeId>
-          <uax:BrowseName>
-            <uax:NamespaceIndex>2</uax:NamespaceIndex>
-            <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-          </uax:BrowseName>
-          <uax:Description>
-            <uax:Locale></uax:Locale>
-            <uax:Text>A method which belongs to the group.</uax:Text>
-          </uax:Description>
-          <uax:ReferenceTypeId>
-            <uax:Identifier>i=35</uax:Identifier>
-          </uax:ReferenceTypeId>
-          <uax:TypeDefinitionId>
-            <uax:Identifier>ns=2;i=6029</uax:Identifier>
-          </uax:TypeDefinitionId>
-          <uax:ModellingRuleId>
-            <uax:Identifier>i=78</uax:Identifier>
-          </uax:ModellingRuleId>
-          <uax:NumericId>15019</uax:NumericId>
-          <uax:Executable>true</uax:Executable>
-          <uax:UserExecutable>true</uax:UserExecutable>
-        </MethodIdentifier>
       </AcquisitionStatus>
       <AcquisitionData>
         <uax:NodeClass>Object_1</uax:NodeClass>
@@ -5097,32 +4681,6 @@
           <uax:Identifier>i=78</uax:Identifier>
         </uax:ModellingRuleId>
         <uax:NumericId>9910</uax:NumericId>
-        <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-          <uax:NodeClass>Method_4</uax:NodeClass>
-          <uax:NodeId>
-            <uax:Identifier>ns=1;i=15020</uax:Identifier>
-          </uax:NodeId>
-          <uax:BrowseName>
-            <uax:NamespaceIndex>2</uax:NamespaceIndex>
-            <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-          </uax:BrowseName>
-          <uax:Description>
-            <uax:Locale></uax:Locale>
-            <uax:Text>A method which belongs to the group.</uax:Text>
-          </uax:Description>
-          <uax:ReferenceTypeId>
-            <uax:Identifier>i=35</uax:Identifier>
-          </uax:ReferenceTypeId>
-          <uax:TypeDefinitionId>
-            <uax:Identifier>ns=2;i=6029</uax:Identifier>
-          </uax:TypeDefinitionId>
-          <uax:ModellingRuleId>
-            <uax:Identifier>i=78</uax:Identifier>
-          </uax:ModellingRuleId>
-          <uax:NumericId>15020</uax:NumericId>
-          <uax:Executable>true</uax:Executable>
-          <uax:UserExecutable>true</uax:UserExecutable>
-        </MethodIdentifier>
       </AcquisitionData>
       <ChemometricModelSettings>
         <uax:NodeClass>Object_1</uax:NodeClass>
@@ -5143,32 +4701,6 @@
           <uax:Identifier>i=78</uax:Identifier>
         </uax:ModellingRuleId>
         <uax:NumericId>9912</uax:NumericId>
-        <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-          <uax:NodeClass>Method_4</uax:NodeClass>
-          <uax:NodeId>
-            <uax:Identifier>ns=1;i=15021</uax:Identifier>
-          </uax:NodeId>
-          <uax:BrowseName>
-            <uax:NamespaceIndex>2</uax:NamespaceIndex>
-            <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-          </uax:BrowseName>
-          <uax:Description>
-            <uax:Locale></uax:Locale>
-            <uax:Text>A method which belongs to the group.</uax:Text>
-          </uax:Description>
-          <uax:ReferenceTypeId>
-            <uax:Identifier>i=35</uax:Identifier>
-          </uax:ReferenceTypeId>
-          <uax:TypeDefinitionId>
-            <uax:Identifier>ns=2;i=6029</uax:Identifier>
-          </uax:TypeDefinitionId>
-          <uax:ModellingRuleId>
-            <uax:Identifier>i=78</uax:Identifier>
-          </uax:ModellingRuleId>
-          <uax:NumericId>15021</uax:NumericId>
-          <uax:Executable>true</uax:Executable>
-          <uax:UserExecutable>true</uax:UserExecutable>
-        </MethodIdentifier>
       </ChemometricModelSettings>
       <Context>
         <uax:NodeClass>Object_1</uax:NodeClass>
@@ -5189,32 +4721,6 @@
           <uax:Identifier>i=78</uax:Identifier>
         </uax:ModellingRuleId>
         <uax:NumericId>9914</uax:NumericId>
-        <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-          <uax:NodeClass>Method_4</uax:NodeClass>
-          <uax:NodeId>
-            <uax:Identifier>ns=1;i=15022</uax:Identifier>
-          </uax:NodeId>
-          <uax:BrowseName>
-            <uax:NamespaceIndex>2</uax:NamespaceIndex>
-            <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-          </uax:BrowseName>
-          <uax:Description>
-            <uax:Locale></uax:Locale>
-            <uax:Text>A method which belongs to the group.</uax:Text>
-          </uax:Description>
-          <uax:ReferenceTypeId>
-            <uax:Identifier>i=35</uax:Identifier>
-          </uax:ReferenceTypeId>
-          <uax:TypeDefinitionId>
-            <uax:Identifier>ns=2;i=6029</uax:Identifier>
-          </uax:TypeDefinitionId>
-          <uax:ModellingRuleId>
-            <uax:Identifier>i=78</uax:Identifier>
-          </uax:ModellingRuleId>
-          <uax:NumericId>15022</uax:NumericId>
-          <uax:Executable>true</uax:Executable>
-          <uax:UserExecutable>true</uax:UserExecutable>
-        </MethodIdentifier>
       </Context>
     </StreamIdentifier>
     <AccessorySlotIdentifier>
@@ -18333,32 +17839,6 @@
         <uax:Identifier>i=11508</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>10444</uax:NumericId>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15023</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15023</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </GroupIdentifier>
     <Configuration>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -18397,32 +17877,6 @@
           </uax:TargetId>
         </uax:Reference>
       </uax:References>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15025</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15025</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </Configuration>
     <Status>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -18477,32 +17931,6 @@
           </uax:TargetId>
         </uax:Reference>
       </uax:References>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15026</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15026</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </Status>
     <AcquisitionSettings>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -18533,32 +17961,6 @@
           </uax:TargetId>
         </uax:Reference>
       </uax:References>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15027</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15027</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </AcquisitionSettings>
     <AcquisitionStatus>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -18613,32 +18015,6 @@
           </uax:TargetId>
         </uax:Reference>
       </uax:References>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15028</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15028</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </AcquisitionStatus>
     <AcquisitionData>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -18709,32 +18085,6 @@
           </uax:TargetId>
         </uax:Reference>
       </uax:References>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15029</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15029</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </AcquisitionData>
     <ChemometricModelSettings>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -18755,32 +18105,6 @@
         <uax:Identifier>i=78</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>10440</uax:NumericId>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15030</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15030</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </ChemometricModelSettings>
     <Context>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -18891,32 +18215,6 @@
           </uax:TargetId>
         </uax:Reference>
       </uax:References>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15031</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15031</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </Context>
   </StreamType>
   <SpectrometerDeviceStreamType xmlns="http://opcfoundation.org/UA/ADI/">
@@ -20474,32 +19772,6 @@
           </uax:TargetId>
         </uax:Reference>
       </uax:References>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15034</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15034</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </Configuration>
     <AcquisitionSettings>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -20570,32 +19842,6 @@
           </uax:TargetId>
         </uax:Reference>
       </uax:References>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15036</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15036</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </AcquisitionSettings>
     <AcquisitionStatus>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -20626,32 +19872,6 @@
           </uax:TargetId>
         </uax:Reference>
       </uax:References>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15037</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15037</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </AcquisitionStatus>
     <AcquisitionData>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -20706,32 +19926,6 @@
           </uax:TargetId>
         </uax:Reference>
       </uax:References>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15038</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15038</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </AcquisitionData>
     <FactorySettings>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -21645,32 +20839,6 @@
           </uax:TargetId>
         </uax:Reference>
       </uax:References>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15056</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15056</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </AcquisitionData>
   </ParticleSizeMonitorDeviceStreamType>
   <AcousticSpectrometerDeviceStreamType xmlns="http://opcfoundation.org/UA/ADI/">
@@ -21823,32 +20991,6 @@
         <uax:Identifier>i=78</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>11411</uax:NumericId>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15092</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15092</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </FactorySettings>
   </SpectrometerDeviceType>
   <ParticleSizeMonitorDeviceType xmlns="http://opcfoundation.org/UA/ADI/">
@@ -22106,32 +21248,6 @@
           <uax:Identifier>i=78</uax:Identifier>
         </uax:ModellingRuleId>
         <uax:NumericId>12821</uax:NumericId>
-        <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-          <uax:NodeClass>Method_4</uax:NodeClass>
-          <uax:NodeId>
-            <uax:Identifier>ns=1;i=15147</uax:Identifier>
-          </uax:NodeId>
-          <uax:BrowseName>
-            <uax:NamespaceIndex>2</uax:NamespaceIndex>
-            <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-          </uax:BrowseName>
-          <uax:Description>
-            <uax:Locale></uax:Locale>
-            <uax:Text>A method which belongs to the group.</uax:Text>
-          </uax:Description>
-          <uax:ReferenceTypeId>
-            <uax:Identifier>i=35</uax:Identifier>
-          </uax:ReferenceTypeId>
-          <uax:TypeDefinitionId>
-            <uax:Identifier>ns=2;i=6029</uax:Identifier>
-          </uax:TypeDefinitionId>
-          <uax:ModellingRuleId>
-            <uax:Identifier>i=78</uax:Identifier>
-          </uax:ModellingRuleId>
-          <uax:NumericId>15147</uax:NumericId>
-          <uax:Executable>true</uax:Executable>
-          <uax:UserExecutable>true</uax:UserExecutable>
-        </MethodIdentifier>
       </Configuration>
       <Status>
         <uax:NodeClass>Object_1</uax:NodeClass>
@@ -22152,32 +21268,6 @@
           <uax:Identifier>i=78</uax:Identifier>
         </uax:ModellingRuleId>
         <uax:NumericId>12823</uax:NumericId>
-        <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-          <uax:NodeClass>Method_4</uax:NodeClass>
-          <uax:NodeId>
-            <uax:Identifier>ns=1;i=15148</uax:Identifier>
-          </uax:NodeId>
-          <uax:BrowseName>
-            <uax:NamespaceIndex>2</uax:NamespaceIndex>
-            <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-          </uax:BrowseName>
-          <uax:Description>
-            <uax:Locale></uax:Locale>
-            <uax:Text>A method which belongs to the group.</uax:Text>
-          </uax:Description>
-          <uax:ReferenceTypeId>
-            <uax:Identifier>i=35</uax:Identifier>
-          </uax:ReferenceTypeId>
-          <uax:TypeDefinitionId>
-            <uax:Identifier>ns=2;i=6029</uax:Identifier>
-          </uax:TypeDefinitionId>
-          <uax:ModellingRuleId>
-            <uax:Identifier>i=78</uax:Identifier>
-          </uax:ModellingRuleId>
-          <uax:NumericId>15148</uax:NumericId>
-          <uax:Executable>true</uax:Executable>
-          <uax:UserExecutable>true</uax:UserExecutable>
-        </MethodIdentifier>
       </Status>
       <FactorySettings>
         <uax:NodeClass>Object_1</uax:NodeClass>
@@ -22198,32 +21288,6 @@
           <uax:Identifier>i=78</uax:Identifier>
         </uax:ModellingRuleId>
         <uax:NumericId>12825</uax:NumericId>
-        <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-          <uax:NodeClass>Method_4</uax:NodeClass>
-          <uax:NodeId>
-            <uax:Identifier>ns=1;i=15149</uax:Identifier>
-          </uax:NodeId>
-          <uax:BrowseName>
-            <uax:NamespaceIndex>2</uax:NamespaceIndex>
-            <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-          </uax:BrowseName>
-          <uax:Description>
-            <uax:Locale></uax:Locale>
-            <uax:Text>A method which belongs to the group.</uax:Text>
-          </uax:Description>
-          <uax:ReferenceTypeId>
-            <uax:Identifier>i=35</uax:Identifier>
-          </uax:ReferenceTypeId>
-          <uax:TypeDefinitionId>
-            <uax:Identifier>ns=2;i=6029</uax:Identifier>
-          </uax:TypeDefinitionId>
-          <uax:ModellingRuleId>
-            <uax:Identifier>i=78</uax:Identifier>
-          </uax:ModellingRuleId>
-          <uax:NumericId>15149</uax:NumericId>
-          <uax:Executable>true</uax:Executable>
-          <uax:UserExecutable>true</uax:UserExecutable>
-        </MethodIdentifier>
       </FactorySettings>
       <IsHotSwappable>
         <uax:NodeClass>Variable_2</uax:NodeClass>
@@ -23667,32 +22731,6 @@
         <uax:Identifier>i=78</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>12898</uax:NumericId>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15152</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15152</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </Configuration>
     <Status>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -23713,32 +22751,6 @@
         <uax:Identifier>i=78</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>12900</uax:NumericId>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15153</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15153</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </Status>
     <FactorySettings>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -23759,32 +22771,6 @@
         <uax:Identifier>i=78</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>12902</uax:NumericId>
-      <MethodIdentifier xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Method_4</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15154</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>&lt;MethodIdentifier&gt;</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>A method which belongs to the group.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=35</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>ns=2;i=6029</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15154</uax:NumericId>
-        <uax:Executable>true</uax:Executable>
-        <uax:UserExecutable>true</uax:UserExecutable>
-      </MethodIdentifier>
     </FactorySettings>
     <IsHotSwappable>
       <uax:NodeClass>Variable_2</uax:NodeClass>
