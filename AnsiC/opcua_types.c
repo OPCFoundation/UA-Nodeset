@@ -31,6 +31,7 @@
 #include <opcua_platformdefs.h>
 #include <opcua_statuscodes.h>
 #include <opcua_errorhandling.h>
+#include <opcua_trace.h>
 
 /* core */
 #include <opcua_memory.h>

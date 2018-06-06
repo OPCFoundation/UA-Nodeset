@@ -116,17 +116,12 @@ namespace Opc.Ua.Di
 
         private const string MethodSet_InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////yRggAoBAAAAAQAJAAAATWV0" +
-           "aG9kU2V0AQGLEwMAAAAAFAAAAEZsYXQgbGlzdCBvZiBNZXRob2RzAC8AOosTAAD/////AQAAACRhwgoE" +
-           "AAAAEAAAAE1ldGhvZElkZW50aWZpZXIBABIAAAA8TWV0aG9kSWRlbnRpZmllcj4BAYIXAwAAAAAvAAAA" +
-           "QSBtZXRob2Qgd2hpY2ggYmVsb25ncyB0byB0aGUgdG9wb2xvZ3kgZWxlbWVudC4ALwEBgheCFwAAAQH/" +
-           "////AAAAAA==";
+           "aG9kU2V0AQGLEwMAAAAAFAAAAEZsYXQgbGlzdCBvZiBNZXRob2RzAC8AOosTAAD/////AAAAAA==";
 
         private const string Identification_InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////yRggAoBAAAAAQAOAAAASWRl" +
            "bnRpZmljYXRpb24BAX4XAwAAAABGAAAAVXNlZCB0byBvcmdhbml6ZSBwYXJhbWV0ZXJzIGZvciBpZGVu" +
-           "dGlmaWNhdGlvbiBvZiB0aGlzIFRvcG9sb2d5RWxlbWVudAAvAQHtA34XAAD/////AQAAACRhwgoEAAAA" +
-           "EAAAAE1ldGhvZElkZW50aWZpZXIBABIAAAA8TWV0aG9kSWRlbnRpZmllcj4BAZo6AwAAAAAkAAAAQSBt" +
-           "ZXRob2Qgd2hpY2ggYmVsb25ncyB0byB0aGUgZ3JvdXAuACMBAY0XmjoAAAEB/////wAAAAA=";
+           "dGlmaWNhdGlvbiBvZiB0aGlzIFRvcG9sb2d5RWxlbWVudAAvAQHtA34XAAD/////AAAAAA==";
 
         private const string Lock_InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////yRggAoBAAAAAQAEAAAATG9j" +
@@ -153,30 +148,25 @@ namespace Opc.Ua.Di
            "b2xvZ3lFbGVtZW50VHlwZUluc3RhbmNlAQHpAwEB6QP/////BAAAACRggAoBAAAAAQAMAAAAUGFyYW1l" +
            "dGVyU2V0AQGKEwMAAAAAFwAAAEZsYXQgbGlzdCBvZiBQYXJhbWV0ZXJzAC8AOooTAAD/////AAAAACRg" +
            "gAoBAAAAAQAJAAAATWV0aG9kU2V0AQGLEwMAAAAAFAAAAEZsYXQgbGlzdCBvZiBNZXRob2RzAC8AOosT" +
-           "AAD/////AQAAACRhwgoEAAAAEAAAAE1ldGhvZElkZW50aWZpZXIBABIAAAA8TWV0aG9kSWRlbnRpZmll" +
-           "cj4BAYIXAwAAAAAvAAAAQSBtZXRob2Qgd2hpY2ggYmVsb25ncyB0byB0aGUgdG9wb2xvZ3kgZWxlbWVu" +
-           "dC4ALwEBgheCFwAAAQH/////AAAAACRggAoBAAAAAQAOAAAASWRlbnRpZmljYXRpb24BAX4XAwAAAABG" +
-           "AAAAVXNlZCB0byBvcmdhbml6ZSBwYXJhbWV0ZXJzIGZvciBpZGVudGlmaWNhdGlvbiBvZiB0aGlzIFRv" +
-           "cG9sb2d5RWxlbWVudAAvAQHtA34XAAD/////AQAAACRhwgoEAAAAEAAAAE1ldGhvZElkZW50aWZpZXIB" +
-           "ABIAAAA8TWV0aG9kSWRlbnRpZmllcj4BAZo6AwAAAAAkAAAAQSBtZXRob2Qgd2hpY2ggYmVsb25ncyB0" +
-           "byB0aGUgZ3JvdXAuACMBAY0XmjoAAAEB/////wAAAAAkYIAKAQAAAAEABAAAAExvY2sBAREYAwAAAAAi" +
-           "AAAAVXNlZCB0byBsb2NrIHRoZSB0b3BvbG9neSBlbGVtZW50LgAvAQH0GBEYAAD/////CAAAABVgiQoC" +
-           "AAAAAQAGAAAATG9ja2VkAQFEGQAuAEREGQAAAAH/////AQH/////AAAAABVgiQoCAAAAAQANAAAATG9j" +
-           "a2luZ0NsaWVudAEBExgALgBEExgAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAExvY2tpbmdV" +
-           "c2VyAQEUGAAuAEQUGAAAAAz/////AQH/////AAAAABVgiQoCAAAAAQARAAAAUmVtYWluaW5nTG9ja1Rp" +
-           "bWUBARUYAC4ARBUYAAABACIB/////wEB/////wAAAAAEYYIKBAAAAAEACAAAAEluaXRMb2NrAQEWGAAv" +
-           "AQH5GBYYAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBFxgALgBEFxgAAJYB" +
-           "AAAAAQAqAQEdAAAADgAAAEN1cnJlbnRDb250ZXh0AAz/////AAAAAAABACgBAQAAAAEB/////wAAAAAV" +
-           "YKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBGBgALgBEGBgAAJYBAAAAAQAqAQEdAAAADgAAAElu" +
-           "aXRMb2NrU3RhdHVzAAb/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEACQAAAFJlbmV3" +
-           "TG9jawEBGRgALwEB/BgZGAAAAQH/////AQAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQEa" +
-           "GAAuAEQaGAAAlgEAAAABACoBAR4AAAAPAAAAUmVuZXdMb2NrU3RhdHVzAAb/////AAAAAAABACgBAQAA" +
-           "AAEB/////wAAAAAEYYIKBAAAAAEACAAAAEV4aXRMb2NrAQEbGAAvAQH+GBsYAAABAf////8BAAAAFWCp" +
-           "CgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBARwYAC4ARBwYAACWAQAAAAEAKgEBHQAAAA4AAABFeGl0" +
-           "TG9ja1N0YXR1cwAG/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAABAAkAAABCcmVha0xv" +
-           "Y2sBAR0YAC8BAQAZHRgAAAEB/////wEAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBHhgA" +
-           "LgBEHhgAAJYBAAAAAQAqAQEeAAAADwAAAEJyZWFrTG9ja1N0YXR1cwAG/////wAAAAAAAQAoAQEAAAAB" +
-           "Af////8AAAAA";
+           "AAD/////AAAAACRggAoBAAAAAQAOAAAASWRlbnRpZmljYXRpb24BAX4XAwAAAABGAAAAVXNlZCB0byBv" +
+           "cmdhbml6ZSBwYXJhbWV0ZXJzIGZvciBpZGVudGlmaWNhdGlvbiBvZiB0aGlzIFRvcG9sb2d5RWxlbWVu" +
+           "dAAvAQHtA34XAAD/////AAAAACRggAoBAAAAAQAEAAAATG9jawEBERgDAAAAACIAAABVc2VkIHRvIGxv" +
+           "Y2sgdGhlIHRvcG9sb2d5IGVsZW1lbnQuAC8BAfQYERgAAP////8IAAAAFWCJCgIAAAABAAYAAABMb2Nr" +
+           "ZWQBAUQZAC4AREQZAAAAAf////8BAf////8AAAAAFWCJCgIAAAABAA0AAABMb2NraW5nQ2xpZW50AQET" +
+           "GAAuAEQTGAAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAATG9ja2luZ1VzZXIBARQYAC4ARBQY" +
+           "AAAADP////8BAf////8AAAAAFWCJCgIAAAABABEAAABSZW1haW5pbmdMb2NrVGltZQEBFRgALgBEFRgA" +
+           "AAEAIgH/////AQH/////AAAAAARhggoEAAAAAQAIAAAASW5pdExvY2sBARYYAC8BAfkYFhgAAAEB////" +
+           "/wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQEXGAAuAEQXGAAAlgEAAAABACoBAR0AAAAO" +
+           "AAAAQ3VycmVudENvbnRleHQADP////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAA" +
+           "T3V0cHV0QXJndW1lbnRzAQEYGAAuAEQYGAAAlgEAAAABACoBAR0AAAAOAAAASW5pdExvY2tTdGF0dXMA" +
+           "Bv////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQAJAAAAUmVuZXdMb2NrAQEZGAAvAQH8" +
+           "GBkYAAABAf////8BAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBARoYAC4ARBoYAACWAQAA" +
+           "AAEAKgEBHgAAAA8AAABSZW5ld0xvY2tTdGF0dXMABv////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARh" +
+           "ggoEAAAAAQAIAAAARXhpdExvY2sBARsYAC8BAf4YGxgAAAEB/////wEAAAAVYKkKAgAAAAAADwAAAE91" +
+           "dHB1dEFyZ3VtZW50cwEBHBgALgBEHBgAAJYBAAAAAQAqAQEdAAAADgAAAEV4aXRMb2NrU3RhdHVzAAb/" +
+           "////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEACQAAAEJyZWFrTG9jawEBHRgALwEBABkd" +
+           "GAAAAQH/////AQAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQEeGAAuAEQeGAAAlgEAAAAB" +
+           "ACoBAR4AAAAPAAAAQnJlYWtMb2NrU3RhdHVzAAb/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -1927,37 +1917,14 @@ namespace Opc.Ua.Di
 
         private const string InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAbAAAARnVu" +
-           "Y3Rpb25hbEdyb3VwVHlwZUluc3RhbmNlAQHtAwEB7QP/////AgAAACRhwgoEAAAAEAAAAE1ldGhvZElk" +
-           "ZW50aWZpZXIBABIAAAA8TWV0aG9kSWRlbnRpZmllcj4BAY0XAwAAAAAkAAAAQSBtZXRob2Qgd2hpY2gg" +
-           "YmVsb25ncyB0byB0aGUgZ3JvdXAuACMBAY0XjRcAAAEB/////wAAAAA1YIkKAgAAAAEACQAAAFVJRWxl" +
-           "bWVudAEBYxgDAAAAADAAAABBIHVzZXIgaW50ZXJmYWNlIGVsZW1lbnQgYXNzaWduZWQgdG8gdGhpcyBn" +
-           "cm91cC4ALwEBZhhjGAAAABj/////AQH/////AAAAAA==";
+           "Y3Rpb25hbEdyb3VwVHlwZUluc3RhbmNlAQHtAwEB7QP/////AQAAADVgiQoCAAAAAQAJAAAAVUlFbGVt" +
+           "ZW50AQFjGAMAAAAAMAAAAEEgdXNlciBpbnRlcmZhY2UgZWxlbWVudCBhc3NpZ25lZCB0byB0aGlzIGdy" +
+           "b3VwLgAvAQFmGGMYAAAAGP////8BAf////8AAAAA";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A method which belongs to the group.
-        /// </summary>
-        public MethodState MethodIdentifier
-        {
-            get
-            {
-                return m_methodIdentifierMethod;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_methodIdentifierMethod, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_methodIdentifierMethod = value;
-            }
-        }
-
         /// <summary>
         /// A user interface element assigned to this group.
         /// </summary>
@@ -1990,11 +1957,6 @@ namespace Opc.Ua.Di
             ISystemContext context,
             IList<BaseInstanceState> children)
         {
-            if (m_methodIdentifierMethod != null)
-            {
-                children.Add(m_methodIdentifierMethod);
-            }
-
             if (m_uIElement != null)
             {
                 children.Add(m_uIElement);
@@ -2021,27 +1983,6 @@ namespace Opc.Ua.Di
 
             switch (browseName.Name)
             {
-                case Opc.Ua.Di.BrowseNames.MethodIdentifier:
-                {
-                    if (createOrReplace)
-                    {
-                        if (MethodIdentifier == null)
-                        {
-                            if (replacement == null)
-                            {
-                                MethodIdentifier = new MethodState(this);
-                            }
-                            else
-                            {
-                                MethodIdentifier = (MethodState)replacement;
-                            }
-                        }
-                    }
-
-                    instance = MethodIdentifier;
-                    break;
-                }
-
                 case Opc.Ua.Di.BrowseNames.UIElement:
                 {
                     if (createOrReplace)
@@ -2074,7 +2015,6 @@ namespace Opc.Ua.Di
         #endregion
 
         #region Private Fields
-        private MethodState m_methodIdentifierMethod;
         private UIElementState m_uIElement;
         #endregion
     }
@@ -2555,9 +2495,7 @@ namespace Opc.Ua.Di
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAbAAAAQ29u" +
            "bmVjdGlvblBvaW50VHlwZUluc3RhbmNlAQGkGAEBpBj/////AQAAACRggAoBAAAAAQAOAAAATmV0d29y" +
            "a0FkZHJlc3MBAdIYAwAAAAAqAAAAVGhlIGFkZHJlc3Mgb2YgdGhlIGRldmljZSBvbiB0aGlzIG5ldHdv" +
-           "cmsuAC8BAe0D0hgAAP////8BAAAAJGHCCgQAAAAQAAAATWV0aG9kSWRlbnRpZmllcgEAEgAAADxNZXRo" +
-           "b2RJZGVudGlmaWVyPgEBpjoDAAAAACQAAABBIG1ldGhvZCB3aGljaCBiZWxvbmdzIHRvIHRoZSBncm91" +
-           "cC4AIwEBjRemOgAAAQH/////AAAAAA==";
+           "cmsuAC8BAe0D0hgAAP////8AAAAA";
         #endregion
         #endif
         #endregion

@@ -72,21 +72,6 @@ namespace Opc.Ua.Adi
     public static partial class Methods
     {
         /// <summary>
-        /// The identifier for the AnalyserDeviceType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserDeviceType_MethodSet_MethodIdentifier = 9383;
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserDeviceType_GroupIdentifier_MethodIdentifier = 15001;
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserDeviceType_Identification_MethodIdentifier = 15002;
-
-        /// <summary>
         /// The identifier for the AnalyserDeviceType_Lock_InitLock Method.
         /// </summary>
         public const uint AnalyserDeviceType_Lock_InitLock = 9393;
@@ -107,16 +92,6 @@ namespace Opc.Ua.Adi
         public const uint AnalyserDeviceType_Lock_BreakLock = 9400;
 
         /// <summary>
-        /// The identifier for the AnalyserDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserDeviceType_CPIdentifier_MethodSet_MethodIdentifier = 13090;
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserDeviceType_CPIdentifier_Identification_MethodIdentifier = 15003;
-
-        /// <summary>
         /// The identifier for the AnalyserDeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint AnalyserDeviceType_CPIdentifier_Lock_InitLock = 13098;
@@ -135,11 +110,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AnalyserDeviceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public const uint AnalyserDeviceType_CPIdentifier_Lock_BreakLock = 13105;
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15004;
 
         /// <summary>
         /// The identifier for the AnalyserDeviceType_MethodSet_GetConfiguration Method.
@@ -222,31 +192,6 @@ namespace Opc.Ua.Adi
         public const uint AnalyserDeviceType_ParameterSet_ConfigData_SetPosition = 9480;
 
         /// <summary>
-        /// The identifier for the AnalyserDeviceType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserDeviceType_Configuration_MethodIdentifier = 15005;
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserDeviceType_Status_MethodIdentifier = 15006;
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserDeviceType_FactorySettings_MethodIdentifier = 15007;
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier = 9504;
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_ChannelIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserDeviceType_ChannelIdentifier_Identification_MethodIdentifier = 15008;
-
-        /// <summary>
         /// The identifier for the AnalyserDeviceType_ChannelIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint AnalyserDeviceType_ChannelIdentifier_Lock_InitLock = 9512;
@@ -325,31 +270,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AnalyserDeviceType_ChannelIdentifier_MethodSet_Clear Method.
         /// </summary>
         public const uint AnalyserDeviceType_ChannelIdentifier_MethodSet_Clear = 9533;
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_ChannelIdentifier_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserDeviceType_ChannelIdentifier_Configuration_MethodIdentifier = 15009;
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_ChannelIdentifier_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserDeviceType_ChannelIdentifier_Status_MethodIdentifier = 15010;
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserChannelType_MethodSet_MethodIdentifier = 9680;
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserChannelType_GroupIdentifier_MethodIdentifier = 15011;
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserChannelType_Identification_MethodIdentifier = 15012;
 
         /// <summary>
         /// The identifier for the AnalyserChannelType_Lock_InitLock Method.
@@ -432,26 +352,6 @@ namespace Opc.Ua.Adi
         public const uint AnalyserChannelType_MethodSet_Clear = 9711;
 
         /// <summary>
-        /// The identifier for the AnalyserChannelType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserChannelType_Configuration_MethodIdentifier = 15013;
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserChannelType_Status_MethodIdentifier = 15014;
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_StreamIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserChannelType_StreamIdentifier_MethodSet_MethodIdentifier = 9794;
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_StreamIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserChannelType_StreamIdentifier_Identification_MethodIdentifier = 15015;
-
-        /// <summary>
         /// The identifier for the AnalyserChannelType_StreamIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint AnalyserChannelType_StreamIdentifier_Lock_InitLock = 9802;
@@ -470,56 +370,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AnalyserChannelType_StreamIdentifier_Lock_BreakLock Method.
         /// </summary>
         public const uint AnalyserChannelType_StreamIdentifier_Lock_BreakLock = 9809;
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_StreamIdentifier_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserChannelType_StreamIdentifier_Configuration_MethodIdentifier = 15016;
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_StreamIdentifier_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserChannelType_StreamIdentifier_Status_MethodIdentifier = 15017;
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_StreamIdentifier_AcquisitionSettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserChannelType_StreamIdentifier_AcquisitionSettings_MethodIdentifier = 15018;
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_StreamIdentifier_AcquisitionStatus_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserChannelType_StreamIdentifier_AcquisitionStatus_MethodIdentifier = 15019;
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_StreamIdentifier_AcquisitionData_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserChannelType_StreamIdentifier_AcquisitionData_MethodIdentifier = 15020;
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_StreamIdentifier_ChemometricModelSettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserChannelType_StreamIdentifier_ChemometricModelSettings_MethodIdentifier = 15021;
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_StreamIdentifier_Context_MethodIdentifier Method.
-        /// </summary>
-        public const uint AnalyserChannelType_StreamIdentifier_Context_MethodIdentifier = 15022;
-
-        /// <summary>
-        /// The identifier for the StreamType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint StreamType_MethodSet_MethodIdentifier = 10320;
-
-        /// <summary>
-        /// The identifier for the StreamType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public const uint StreamType_GroupIdentifier_MethodIdentifier = 15023;
-
-        /// <summary>
-        /// The identifier for the StreamType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint StreamType_Identification_MethodIdentifier = 15024;
 
         /// <summary>
         /// The identifier for the StreamType_Lock_InitLock Method.
@@ -542,56 +392,6 @@ namespace Opc.Ua.Adi
         public const uint StreamType_Lock_BreakLock = 10337;
 
         /// <summary>
-        /// The identifier for the StreamType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint StreamType_Configuration_MethodIdentifier = 15025;
-
-        /// <summary>
-        /// The identifier for the StreamType_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint StreamType_Status_MethodIdentifier = 15026;
-
-        /// <summary>
-        /// The identifier for the StreamType_AcquisitionSettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint StreamType_AcquisitionSettings_MethodIdentifier = 15027;
-
-        /// <summary>
-        /// The identifier for the StreamType_AcquisitionStatus_MethodIdentifier Method.
-        /// </summary>
-        public const uint StreamType_AcquisitionStatus_MethodIdentifier = 15028;
-
-        /// <summary>
-        /// The identifier for the StreamType_AcquisitionData_MethodIdentifier Method.
-        /// </summary>
-        public const uint StreamType_AcquisitionData_MethodIdentifier = 15029;
-
-        /// <summary>
-        /// The identifier for the StreamType_ChemometricModelSettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint StreamType_ChemometricModelSettings_MethodIdentifier = 15030;
-
-        /// <summary>
-        /// The identifier for the StreamType_Context_MethodIdentifier Method.
-        /// </summary>
-        public const uint StreamType_Context_MethodIdentifier = 15031;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceStreamType_MethodSet_MethodIdentifier = 10449;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceStreamType_GroupIdentifier_MethodIdentifier = 15032;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceStreamType_Identification_MethodIdentifier = 15033;
-
-        /// <summary>
         /// The identifier for the SpectrometerDeviceStreamType_Lock_InitLock Method.
         /// </summary>
         public const uint SpectrometerDeviceStreamType_Lock_InitLock = 10459;
@@ -610,56 +410,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the SpectrometerDeviceStreamType_Lock_BreakLock Method.
         /// </summary>
         public const uint SpectrometerDeviceStreamType_Lock_BreakLock = 10466;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceStreamType_Configuration_MethodIdentifier = 15034;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceStreamType_Status_MethodIdentifier = 15035;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_AcquisitionSettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceStreamType_AcquisitionSettings_MethodIdentifier = 15036;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_AcquisitionStatus_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceStreamType_AcquisitionStatus_MethodIdentifier = 15037;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_AcquisitionData_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceStreamType_AcquisitionData_MethodIdentifier = 15038;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_ChemometricModelSettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceStreamType_ChemometricModelSettings_MethodIdentifier = 15039;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_Context_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceStreamType_Context_MethodIdentifier = 15040;
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceStreamType_MethodSet_MethodIdentifier = 10642;
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceStreamType_GroupIdentifier_MethodIdentifier = 15041;
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceStreamType_Identification_MethodIdentifier = 15042;
 
         /// <summary>
         /// The identifier for the MassSpectrometerDeviceStreamType_Lock_InitLock Method.
@@ -682,56 +432,6 @@ namespace Opc.Ua.Adi
         public const uint MassSpectrometerDeviceStreamType_Lock_BreakLock = 10659;
 
         /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceStreamType_Configuration_MethodIdentifier = 15043;
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceStreamType_Status_MethodIdentifier = 15044;
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_AcquisitionSettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceStreamType_AcquisitionSettings_MethodIdentifier = 15045;
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_AcquisitionStatus_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceStreamType_AcquisitionStatus_MethodIdentifier = 15046;
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_AcquisitionData_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceStreamType_AcquisitionData_MethodIdentifier = 15047;
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_ChemometricModelSettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceStreamType_ChemometricModelSettings_MethodIdentifier = 15048;
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_Context_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceStreamType_Context_MethodIdentifier = 15049;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceStreamType_MethodSet_MethodIdentifier = 10771;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceStreamType_GroupIdentifier_MethodIdentifier = 15050;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceStreamType_Identification_MethodIdentifier = 15051;
-
-        /// <summary>
         /// The identifier for the ParticleSizeMonitorDeviceStreamType_Lock_InitLock Method.
         /// </summary>
         public const uint ParticleSizeMonitorDeviceStreamType_Lock_InitLock = 10781;
@@ -750,56 +450,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the ParticleSizeMonitorDeviceStreamType_Lock_BreakLock Method.
         /// </summary>
         public const uint ParticleSizeMonitorDeviceStreamType_Lock_BreakLock = 10788;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceStreamType_Configuration_MethodIdentifier = 15052;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceStreamType_Status_MethodIdentifier = 15053;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_AcquisitionSettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceStreamType_AcquisitionSettings_MethodIdentifier = 15054;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_AcquisitionStatus_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceStreamType_AcquisitionStatus_MethodIdentifier = 15055;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_AcquisitionData_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceStreamType_AcquisitionData_MethodIdentifier = 15056;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_ChemometricModelSettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceStreamType_ChemometricModelSettings_MethodIdentifier = 15057;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_Context_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceStreamType_Context_MethodIdentifier = 15058;
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceStreamType_MethodSet_MethodIdentifier = 10921;
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceStreamType_GroupIdentifier_MethodIdentifier = 15059;
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceStreamType_Identification_MethodIdentifier = 15060;
 
         /// <summary>
         /// The identifier for the AcousticSpectrometerDeviceStreamType_Lock_InitLock Method.
@@ -822,56 +472,6 @@ namespace Opc.Ua.Adi
         public const uint AcousticSpectrometerDeviceStreamType_Lock_BreakLock = 10938;
 
         /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceStreamType_Configuration_MethodIdentifier = 15061;
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceStreamType_Status_MethodIdentifier = 15062;
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_AcquisitionSettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceStreamType_AcquisitionSettings_MethodIdentifier = 15063;
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_AcquisitionStatus_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceStreamType_AcquisitionStatus_MethodIdentifier = 15064;
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_AcquisitionData_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceStreamType_AcquisitionData_MethodIdentifier = 15065;
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_ChemometricModelSettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceStreamType_ChemometricModelSettings_MethodIdentifier = 15066;
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_Context_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceStreamType_Context_MethodIdentifier = 15067;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceStreamType_MethodSet_MethodIdentifier = 11050;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceStreamType_GroupIdentifier_MethodIdentifier = 15068;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceStreamType_Identification_MethodIdentifier = 15069;
-
-        /// <summary>
         /// The identifier for the ChromatographDeviceStreamType_Lock_InitLock Method.
         /// </summary>
         public const uint ChromatographDeviceStreamType_Lock_InitLock = 11060;
@@ -890,56 +490,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the ChromatographDeviceStreamType_Lock_BreakLock Method.
         /// </summary>
         public const uint ChromatographDeviceStreamType_Lock_BreakLock = 11067;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceStreamType_Configuration_MethodIdentifier = 15070;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceStreamType_Status_MethodIdentifier = 15071;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_AcquisitionSettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceStreamType_AcquisitionSettings_MethodIdentifier = 15072;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_AcquisitionStatus_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceStreamType_AcquisitionStatus_MethodIdentifier = 15073;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_AcquisitionData_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceStreamType_AcquisitionData_MethodIdentifier = 15074;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_ChemometricModelSettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceStreamType_ChemometricModelSettings_MethodIdentifier = 15075;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_Context_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceStreamType_Context_MethodIdentifier = 15076;
-
-        /// <summary>
-        /// The identifier for the MNRDeviceStreamType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint MNRDeviceStreamType_MethodSet_MethodIdentifier = 11179;
-
-        /// <summary>
-        /// The identifier for the MNRDeviceStreamType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public const uint MNRDeviceStreamType_GroupIdentifier_MethodIdentifier = 15077;
-
-        /// <summary>
-        /// The identifier for the MNRDeviceStreamType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint MNRDeviceStreamType_Identification_MethodIdentifier = 15078;
 
         /// <summary>
         /// The identifier for the MNRDeviceStreamType_Lock_InitLock Method.
@@ -962,56 +512,6 @@ namespace Opc.Ua.Adi
         public const uint MNRDeviceStreamType_Lock_BreakLock = 11196;
 
         /// <summary>
-        /// The identifier for the MNRDeviceStreamType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint MNRDeviceStreamType_Configuration_MethodIdentifier = 15079;
-
-        /// <summary>
-        /// The identifier for the MNRDeviceStreamType_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint MNRDeviceStreamType_Status_MethodIdentifier = 15080;
-
-        /// <summary>
-        /// The identifier for the MNRDeviceStreamType_AcquisitionSettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint MNRDeviceStreamType_AcquisitionSettings_MethodIdentifier = 15081;
-
-        /// <summary>
-        /// The identifier for the MNRDeviceStreamType_AcquisitionStatus_MethodIdentifier Method.
-        /// </summary>
-        public const uint MNRDeviceStreamType_AcquisitionStatus_MethodIdentifier = 15082;
-
-        /// <summary>
-        /// The identifier for the MNRDeviceStreamType_AcquisitionData_MethodIdentifier Method.
-        /// </summary>
-        public const uint MNRDeviceStreamType_AcquisitionData_MethodIdentifier = 15083;
-
-        /// <summary>
-        /// The identifier for the MNRDeviceStreamType_ChemometricModelSettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint MNRDeviceStreamType_ChemometricModelSettings_MethodIdentifier = 15084;
-
-        /// <summary>
-        /// The identifier for the MNRDeviceStreamType_Context_MethodIdentifier Method.
-        /// </summary>
-        public const uint MNRDeviceStreamType_Context_MethodIdentifier = 15085;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceType_MethodSet_MethodIdentifier = 11308;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceType_GroupIdentifier_MethodIdentifier = 15086;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceType_Identification_MethodIdentifier = 15087;
-
-        /// <summary>
         /// The identifier for the SpectrometerDeviceType_Lock_InitLock Method.
         /// </summary>
         public const uint SpectrometerDeviceType_Lock_InitLock = 11318;
@@ -1032,16 +532,6 @@ namespace Opc.Ua.Adi
         public const uint SpectrometerDeviceType_Lock_BreakLock = 11325;
 
         /// <summary>
-        /// The identifier for the SpectrometerDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceType_CPIdentifier_MethodSet_MethodIdentifier = 13115;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceType_CPIdentifier_Identification_MethodIdentifier = 15088;
-
-        /// <summary>
         /// The identifier for the SpectrometerDeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint SpectrometerDeviceType_CPIdentifier_Lock_InitLock = 13123;
@@ -1060,11 +550,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the SpectrometerDeviceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public const uint SpectrometerDeviceType_CPIdentifier_Lock_BreakLock = 13130;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15089;
 
         /// <summary>
         /// The identifier for the SpectrometerDeviceType_MethodSet_GetConfiguration Method.
@@ -1147,31 +632,6 @@ namespace Opc.Ua.Adi
         public const uint SpectrometerDeviceType_ParameterSet_ConfigData_SetPosition = 11405;
 
         /// <summary>
-        /// The identifier for the SpectrometerDeviceType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceType_Configuration_MethodIdentifier = 15090;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceType_Status_MethodIdentifier = 15091;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceType_FactorySettings_MethodIdentifier = 15092;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier = 11429;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_ChannelIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceType_ChannelIdentifier_Identification_MethodIdentifier = 15093;
-
-        /// <summary>
         /// The identifier for the SpectrometerDeviceType_ChannelIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint SpectrometerDeviceType_ChannelIdentifier_Lock_InitLock = 11437;
@@ -1252,31 +712,6 @@ namespace Opc.Ua.Adi
         public const uint SpectrometerDeviceType_ChannelIdentifier_MethodSet_Clear = 11458;
 
         /// <summary>
-        /// The identifier for the SpectrometerDeviceType_ChannelIdentifier_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceType_ChannelIdentifier_Configuration_MethodIdentifier = 15094;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_ChannelIdentifier_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint SpectrometerDeviceType_ChannelIdentifier_Status_MethodIdentifier = 15095;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceType_MethodSet_MethodIdentifier = 11557;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceType_GroupIdentifier_MethodIdentifier = 15096;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceType_Identification_MethodIdentifier = 15097;
-
-        /// <summary>
         /// The identifier for the ParticleSizeMonitorDeviceType_Lock_InitLock Method.
         /// </summary>
         public const uint ParticleSizeMonitorDeviceType_Lock_InitLock = 11567;
@@ -1297,16 +732,6 @@ namespace Opc.Ua.Adi
         public const uint ParticleSizeMonitorDeviceType_Lock_BreakLock = 11574;
 
         /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceType_CPIdentifier_MethodSet_MethodIdentifier = 13140;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceType_CPIdentifier_Identification_MethodIdentifier = 15098;
-
-        /// <summary>
         /// The identifier for the ParticleSizeMonitorDeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint ParticleSizeMonitorDeviceType_CPIdentifier_Lock_InitLock = 13148;
@@ -1325,11 +750,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the ParticleSizeMonitorDeviceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public const uint ParticleSizeMonitorDeviceType_CPIdentifier_Lock_BreakLock = 13155;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15099;
 
         /// <summary>
         /// The identifier for the ParticleSizeMonitorDeviceType_MethodSet_GetConfiguration Method.
@@ -1412,31 +832,6 @@ namespace Opc.Ua.Adi
         public const uint ParticleSizeMonitorDeviceType_ParameterSet_ConfigData_SetPosition = 11654;
 
         /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceType_Configuration_MethodIdentifier = 15100;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceType_Status_MethodIdentifier = 15101;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceType_FactorySettings_MethodIdentifier = 15102;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier = 11678;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_ChannelIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceType_ChannelIdentifier_Identification_MethodIdentifier = 15103;
-
-        /// <summary>
         /// The identifier for the ParticleSizeMonitorDeviceType_ChannelIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint ParticleSizeMonitorDeviceType_ChannelIdentifier_Lock_InitLock = 11686;
@@ -1517,31 +912,6 @@ namespace Opc.Ua.Adi
         public const uint ParticleSizeMonitorDeviceType_ChannelIdentifier_MethodSet_Clear = 11707;
 
         /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_ChannelIdentifier_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceType_ChannelIdentifier_Configuration_MethodIdentifier = 15104;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_ChannelIdentifier_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceType_ChannelIdentifier_Status_MethodIdentifier = 15105;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceType_MethodSet_MethodIdentifier = 11803;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceType_GroupIdentifier_MethodIdentifier = 15106;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceType_Identification_MethodIdentifier = 15107;
-
-        /// <summary>
         /// The identifier for the ChromatographDeviceType_Lock_InitLock Method.
         /// </summary>
         public const uint ChromatographDeviceType_Lock_InitLock = 11813;
@@ -1562,16 +932,6 @@ namespace Opc.Ua.Adi
         public const uint ChromatographDeviceType_Lock_BreakLock = 11820;
 
         /// <summary>
-        /// The identifier for the ChromatographDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceType_CPIdentifier_MethodSet_MethodIdentifier = 13165;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceType_CPIdentifier_Identification_MethodIdentifier = 15108;
-
-        /// <summary>
         /// The identifier for the ChromatographDeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint ChromatographDeviceType_CPIdentifier_Lock_InitLock = 13173;
@@ -1590,11 +950,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the ChromatographDeviceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public const uint ChromatographDeviceType_CPIdentifier_Lock_BreakLock = 13180;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15109;
 
         /// <summary>
         /// The identifier for the ChromatographDeviceType_MethodSet_GetConfiguration Method.
@@ -1677,31 +1032,6 @@ namespace Opc.Ua.Adi
         public const uint ChromatographDeviceType_ParameterSet_ConfigData_SetPosition = 11900;
 
         /// <summary>
-        /// The identifier for the ChromatographDeviceType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceType_Configuration_MethodIdentifier = 15110;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceType_Status_MethodIdentifier = 15111;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceType_FactorySettings_MethodIdentifier = 15112;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier = 11924;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_ChannelIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceType_ChannelIdentifier_Identification_MethodIdentifier = 15113;
-
-        /// <summary>
         /// The identifier for the ChromatographDeviceType_ChannelIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint ChromatographDeviceType_ChannelIdentifier_Lock_InitLock = 11932;
@@ -1782,31 +1112,6 @@ namespace Opc.Ua.Adi
         public const uint ChromatographDeviceType_ChannelIdentifier_MethodSet_Clear = 11953;
 
         /// <summary>
-        /// The identifier for the ChromatographDeviceType_ChannelIdentifier_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceType_ChannelIdentifier_Configuration_MethodIdentifier = 15114;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_ChannelIdentifier_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint ChromatographDeviceType_ChannelIdentifier_Status_MethodIdentifier = 15115;
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceType_MethodSet_MethodIdentifier = 12049;
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceType_GroupIdentifier_MethodIdentifier = 15116;
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceType_Identification_MethodIdentifier = 15117;
-
-        /// <summary>
         /// The identifier for the MassSpectrometerDeviceType_Lock_InitLock Method.
         /// </summary>
         public const uint MassSpectrometerDeviceType_Lock_InitLock = 12059;
@@ -1827,16 +1132,6 @@ namespace Opc.Ua.Adi
         public const uint MassSpectrometerDeviceType_Lock_BreakLock = 12066;
 
         /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceType_CPIdentifier_MethodSet_MethodIdentifier = 13190;
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceType_CPIdentifier_Identification_MethodIdentifier = 15118;
-
-        /// <summary>
         /// The identifier for the MassSpectrometerDeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint MassSpectrometerDeviceType_CPIdentifier_Lock_InitLock = 13198;
@@ -1855,11 +1150,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the MassSpectrometerDeviceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public const uint MassSpectrometerDeviceType_CPIdentifier_Lock_BreakLock = 13205;
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15119;
 
         /// <summary>
         /// The identifier for the MassSpectrometerDeviceType_MethodSet_GetConfiguration Method.
@@ -1942,31 +1232,6 @@ namespace Opc.Ua.Adi
         public const uint MassSpectrometerDeviceType_ParameterSet_ConfigData_SetPosition = 12146;
 
         /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceType_Configuration_MethodIdentifier = 15120;
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceType_Status_MethodIdentifier = 15121;
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceType_FactorySettings_MethodIdentifier = 15122;
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier = 12170;
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_ChannelIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceType_ChannelIdentifier_Identification_MethodIdentifier = 15123;
-
-        /// <summary>
         /// The identifier for the MassSpectrometerDeviceType_ChannelIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint MassSpectrometerDeviceType_ChannelIdentifier_Lock_InitLock = 12178;
@@ -2047,31 +1312,6 @@ namespace Opc.Ua.Adi
         public const uint MassSpectrometerDeviceType_ChannelIdentifier_MethodSet_Clear = 12199;
 
         /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_ChannelIdentifier_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceType_ChannelIdentifier_Configuration_MethodIdentifier = 15124;
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_ChannelIdentifier_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint MassSpectrometerDeviceType_ChannelIdentifier_Status_MethodIdentifier = 15125;
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceType_MethodSet_MethodIdentifier = 12295;
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceType_GroupIdentifier_MethodIdentifier = 15126;
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceType_Identification_MethodIdentifier = 15127;
-
-        /// <summary>
         /// The identifier for the AcousticSpectrometerDeviceType_Lock_InitLock Method.
         /// </summary>
         public const uint AcousticSpectrometerDeviceType_Lock_InitLock = 12305;
@@ -2092,16 +1332,6 @@ namespace Opc.Ua.Adi
         public const uint AcousticSpectrometerDeviceType_Lock_BreakLock = 12312;
 
         /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceType_CPIdentifier_MethodSet_MethodIdentifier = 13215;
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceType_CPIdentifier_Identification_MethodIdentifier = 15128;
-
-        /// <summary>
         /// The identifier for the AcousticSpectrometerDeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint AcousticSpectrometerDeviceType_CPIdentifier_Lock_InitLock = 13223;
@@ -2120,11 +1350,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AcousticSpectrometerDeviceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public const uint AcousticSpectrometerDeviceType_CPIdentifier_Lock_BreakLock = 13230;
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15129;
 
         /// <summary>
         /// The identifier for the AcousticSpectrometerDeviceType_MethodSet_GetConfiguration Method.
@@ -2207,31 +1432,6 @@ namespace Opc.Ua.Adi
         public const uint AcousticSpectrometerDeviceType_ParameterSet_ConfigData_SetPosition = 12392;
 
         /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceType_Configuration_MethodIdentifier = 15130;
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceType_Status_MethodIdentifier = 15131;
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceType_FactorySettings_MethodIdentifier = 15132;
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier = 12416;
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_ChannelIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceType_ChannelIdentifier_Identification_MethodIdentifier = 15133;
-
-        /// <summary>
         /// The identifier for the AcousticSpectrometerDeviceType_ChannelIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint AcousticSpectrometerDeviceType_ChannelIdentifier_Lock_InitLock = 12424;
@@ -2312,31 +1512,6 @@ namespace Opc.Ua.Adi
         public const uint AcousticSpectrometerDeviceType_ChannelIdentifier_MethodSet_Clear = 12445;
 
         /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_ChannelIdentifier_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceType_ChannelIdentifier_Configuration_MethodIdentifier = 15134;
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_ChannelIdentifier_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceType_ChannelIdentifier_Status_MethodIdentifier = 15135;
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint NMRDeviceType_MethodSet_MethodIdentifier = 12541;
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public const uint NMRDeviceType_GroupIdentifier_MethodIdentifier = 15136;
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint NMRDeviceType_Identification_MethodIdentifier = 15137;
-
-        /// <summary>
         /// The identifier for the NMRDeviceType_Lock_InitLock Method.
         /// </summary>
         public const uint NMRDeviceType_Lock_InitLock = 12551;
@@ -2357,16 +1532,6 @@ namespace Opc.Ua.Adi
         public const uint NMRDeviceType_Lock_BreakLock = 12558;
 
         /// <summary>
-        /// The identifier for the NMRDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint NMRDeviceType_CPIdentifier_MethodSet_MethodIdentifier = 13240;
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint NMRDeviceType_CPIdentifier_Identification_MethodIdentifier = 15138;
-
-        /// <summary>
         /// The identifier for the NMRDeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint NMRDeviceType_CPIdentifier_Lock_InitLock = 13248;
@@ -2385,11 +1550,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the NMRDeviceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public const uint NMRDeviceType_CPIdentifier_Lock_BreakLock = 13255;
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
-        /// </summary>
-        public const uint NMRDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = 15139;
 
         /// <summary>
         /// The identifier for the NMRDeviceType_MethodSet_GetConfiguration Method.
@@ -2472,31 +1632,6 @@ namespace Opc.Ua.Adi
         public const uint NMRDeviceType_ParameterSet_ConfigData_SetPosition = 12638;
 
         /// <summary>
-        /// The identifier for the NMRDeviceType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint NMRDeviceType_Configuration_MethodIdentifier = 15140;
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint NMRDeviceType_Status_MethodIdentifier = 15141;
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint NMRDeviceType_FactorySettings_MethodIdentifier = 15142;
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint NMRDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier = 12662;
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_ChannelIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint NMRDeviceType_ChannelIdentifier_Identification_MethodIdentifier = 15143;
-
-        /// <summary>
         /// The identifier for the NMRDeviceType_ChannelIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint NMRDeviceType_ChannelIdentifier_Lock_InitLock = 12670;
@@ -2577,26 +1712,6 @@ namespace Opc.Ua.Adi
         public const uint NMRDeviceType_ChannelIdentifier_MethodSet_Clear = 12691;
 
         /// <summary>
-        /// The identifier for the NMRDeviceType_ChannelIdentifier_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint NMRDeviceType_ChannelIdentifier_Configuration_MethodIdentifier = 15144;
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_ChannelIdentifier_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint NMRDeviceType_ChannelIdentifier_Status_MethodIdentifier = 15145;
-
-        /// <summary>
-        /// The identifier for the AccessorySlotType_AccessoryIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint AccessorySlotType_AccessoryIdentifier_MethodSet_MethodIdentifier = 12804;
-
-        /// <summary>
-        /// The identifier for the AccessorySlotType_AccessoryIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint AccessorySlotType_AccessoryIdentifier_Identification_MethodIdentifier = 15146;
-
-        /// <summary>
         /// The identifier for the AccessorySlotType_AccessoryIdentifier_Lock_InitLock Method.
         /// </summary>
         public const uint AccessorySlotType_AccessoryIdentifier_Lock_InitLock = 12812;
@@ -2615,36 +1730,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AccessorySlotType_AccessoryIdentifier_Lock_BreakLock Method.
         /// </summary>
         public const uint AccessorySlotType_AccessoryIdentifier_Lock_BreakLock = 12819;
-
-        /// <summary>
-        /// The identifier for the AccessorySlotType_AccessoryIdentifier_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint AccessorySlotType_AccessoryIdentifier_Configuration_MethodIdentifier = 15147;
-
-        /// <summary>
-        /// The identifier for the AccessorySlotType_AccessoryIdentifier_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint AccessorySlotType_AccessoryIdentifier_Status_MethodIdentifier = 15148;
-
-        /// <summary>
-        /// The identifier for the AccessorySlotType_AccessoryIdentifier_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint AccessorySlotType_AccessoryIdentifier_FactorySettings_MethodIdentifier = 15149;
-
-        /// <summary>
-        /// The identifier for the AccessoryType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint AccessoryType_MethodSet_MethodIdentifier = 12879;
-
-        /// <summary>
-        /// The identifier for the AccessoryType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public const uint AccessoryType_GroupIdentifier_MethodIdentifier = 15150;
-
-        /// <summary>
-        /// The identifier for the AccessoryType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint AccessoryType_Identification_MethodIdentifier = 15151;
 
         /// <summary>
         /// The identifier for the AccessoryType_Lock_InitLock Method.
@@ -2667,36 +1752,6 @@ namespace Opc.Ua.Adi
         public const uint AccessoryType_Lock_BreakLock = 12896;
 
         /// <summary>
-        /// The identifier for the AccessoryType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint AccessoryType_Configuration_MethodIdentifier = 15152;
-
-        /// <summary>
-        /// The identifier for the AccessoryType_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint AccessoryType_Status_MethodIdentifier = 15153;
-
-        /// <summary>
-        /// The identifier for the AccessoryType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint AccessoryType_FactorySettings_MethodIdentifier = 15154;
-
-        /// <summary>
-        /// The identifier for the DetectorType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint DetectorType_MethodSet_MethodIdentifier = 12909;
-
-        /// <summary>
-        /// The identifier for the DetectorType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public const uint DetectorType_GroupIdentifier_MethodIdentifier = 15155;
-
-        /// <summary>
-        /// The identifier for the DetectorType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint DetectorType_Identification_MethodIdentifier = 15156;
-
-        /// <summary>
         /// The identifier for the DetectorType_Lock_InitLock Method.
         /// </summary>
         public const uint DetectorType_Lock_InitLock = 12919;
@@ -2715,36 +1770,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the DetectorType_Lock_BreakLock Method.
         /// </summary>
         public const uint DetectorType_Lock_BreakLock = 12926;
-
-        /// <summary>
-        /// The identifier for the DetectorType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint DetectorType_Configuration_MethodIdentifier = 15157;
-
-        /// <summary>
-        /// The identifier for the DetectorType_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint DetectorType_Status_MethodIdentifier = 15158;
-
-        /// <summary>
-        /// The identifier for the DetectorType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint DetectorType_FactorySettings_MethodIdentifier = 15159;
-
-        /// <summary>
-        /// The identifier for the SmartSamplingSystemType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint SmartSamplingSystemType_MethodSet_MethodIdentifier = 12939;
-
-        /// <summary>
-        /// The identifier for the SmartSamplingSystemType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public const uint SmartSamplingSystemType_GroupIdentifier_MethodIdentifier = 15160;
-
-        /// <summary>
-        /// The identifier for the SmartSamplingSystemType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint SmartSamplingSystemType_Identification_MethodIdentifier = 15161;
 
         /// <summary>
         /// The identifier for the SmartSamplingSystemType_Lock_InitLock Method.
@@ -2767,36 +1792,6 @@ namespace Opc.Ua.Adi
         public const uint SmartSamplingSystemType_Lock_BreakLock = 12956;
 
         /// <summary>
-        /// The identifier for the SmartSamplingSystemType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint SmartSamplingSystemType_Configuration_MethodIdentifier = 15162;
-
-        /// <summary>
-        /// The identifier for the SmartSamplingSystemType_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint SmartSamplingSystemType_Status_MethodIdentifier = 15163;
-
-        /// <summary>
-        /// The identifier for the SmartSamplingSystemType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint SmartSamplingSystemType_FactorySettings_MethodIdentifier = 15164;
-
-        /// <summary>
-        /// The identifier for the SourceType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint SourceType_MethodSet_MethodIdentifier = 12969;
-
-        /// <summary>
-        /// The identifier for the SourceType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public const uint SourceType_GroupIdentifier_MethodIdentifier = 15165;
-
-        /// <summary>
-        /// The identifier for the SourceType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint SourceType_Identification_MethodIdentifier = 15166;
-
-        /// <summary>
         /// The identifier for the SourceType_Lock_InitLock Method.
         /// </summary>
         public const uint SourceType_Lock_InitLock = 12979;
@@ -2817,36 +1812,6 @@ namespace Opc.Ua.Adi
         public const uint SourceType_Lock_BreakLock = 12986;
 
         /// <summary>
-        /// The identifier for the SourceType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint SourceType_Configuration_MethodIdentifier = 15167;
-
-        /// <summary>
-        /// The identifier for the SourceType_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint SourceType_Status_MethodIdentifier = 15168;
-
-        /// <summary>
-        /// The identifier for the SourceType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint SourceType_FactorySettings_MethodIdentifier = 15169;
-
-        /// <summary>
-        /// The identifier for the GcOvenType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint GcOvenType_MethodSet_MethodIdentifier = 12999;
-
-        /// <summary>
-        /// The identifier for the GcOvenType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public const uint GcOvenType_GroupIdentifier_MethodIdentifier = 15170;
-
-        /// <summary>
-        /// The identifier for the GcOvenType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public const uint GcOvenType_Identification_MethodIdentifier = 15171;
-
-        /// <summary>
         /// The identifier for the GcOvenType_Lock_InitLock Method.
         /// </summary>
         public const uint GcOvenType_Lock_InitLock = 13009;
@@ -2865,21 +1830,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the GcOvenType_Lock_BreakLock Method.
         /// </summary>
         public const uint GcOvenType_Lock_BreakLock = 13016;
-
-        /// <summary>
-        /// The identifier for the GcOvenType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public const uint GcOvenType_Configuration_MethodIdentifier = 15172;
-
-        /// <summary>
-        /// The identifier for the GcOvenType_Status_MethodIdentifier Method.
-        /// </summary>
-        public const uint GcOvenType_Status_MethodIdentifier = 15173;
-
-        /// <summary>
-        /// The identifier for the GcOvenType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public const uint GcOvenType_FactorySettings_MethodIdentifier = 15174;
     }
     #endregion
 
@@ -10117,21 +9067,6 @@ namespace Opc.Ua.Adi
     public static partial class MethodIds
     {
         /// <summary>
-        /// The identifier for the AnalyserDeviceType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserDeviceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserDeviceType_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserDeviceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserDeviceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserDeviceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserDeviceType_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the AnalyserDeviceType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId AnalyserDeviceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserDeviceType_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -10152,16 +9087,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId AnalyserDeviceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserDeviceType_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the AnalyserDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserDeviceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserDeviceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserDeviceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserDeviceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the AnalyserDeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId AnalyserDeviceType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserDeviceType_CPIdentifier_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -10180,11 +9105,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AnalyserDeviceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId AnalyserDeviceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserDeviceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the AnalyserDeviceType_MethodSet_GetConfiguration Method.
@@ -10267,31 +9187,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId AnalyserDeviceType_ParameterSet_ConfigData_SetPosition = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserDeviceType_ParameterSet_ConfigData_SetPosition, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the AnalyserDeviceType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserDeviceType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserDeviceType_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserDeviceType_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserDeviceType_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserDeviceType_FactorySettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserDeviceType_FactorySettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_ChannelIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserDeviceType_ChannelIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserDeviceType_ChannelIdentifier_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the AnalyserDeviceType_ChannelIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId AnalyserDeviceType_ChannelIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserDeviceType_ChannelIdentifier_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -10370,31 +9265,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AnalyserDeviceType_ChannelIdentifier_MethodSet_Clear Method.
         /// </summary>
         public static readonly ExpandedNodeId AnalyserDeviceType_ChannelIdentifier_MethodSet_Clear = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserDeviceType_ChannelIdentifier_MethodSet_Clear, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_ChannelIdentifier_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserDeviceType_ChannelIdentifier_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserDeviceType_ChannelIdentifier_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_ChannelIdentifier_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserDeviceType_ChannelIdentifier_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserDeviceType_ChannelIdentifier_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserChannelType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserChannelType_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserChannelType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserChannelType_GroupIdentifier_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserChannelType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserChannelType_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the AnalyserChannelType_Lock_InitLock Method.
@@ -10477,26 +9347,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId AnalyserChannelType_MethodSet_Clear = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserChannelType_MethodSet_Clear, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the AnalyserChannelType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserChannelType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserChannelType_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserChannelType_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserChannelType_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_StreamIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserChannelType_StreamIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserChannelType_StreamIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_StreamIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserChannelType_StreamIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserChannelType_StreamIdentifier_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the AnalyserChannelType_StreamIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId AnalyserChannelType_StreamIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserChannelType_StreamIdentifier_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -10515,56 +9365,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AnalyserChannelType_StreamIdentifier_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId AnalyserChannelType_StreamIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserChannelType_StreamIdentifier_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_StreamIdentifier_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserChannelType_StreamIdentifier_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserChannelType_StreamIdentifier_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_StreamIdentifier_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserChannelType_StreamIdentifier_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserChannelType_StreamIdentifier_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_StreamIdentifier_AcquisitionSettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserChannelType_StreamIdentifier_AcquisitionSettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserChannelType_StreamIdentifier_AcquisitionSettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_StreamIdentifier_AcquisitionStatus_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserChannelType_StreamIdentifier_AcquisitionStatus_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserChannelType_StreamIdentifier_AcquisitionStatus_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_StreamIdentifier_AcquisitionData_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserChannelType_StreamIdentifier_AcquisitionData_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserChannelType_StreamIdentifier_AcquisitionData_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_StreamIdentifier_ChemometricModelSettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserChannelType_StreamIdentifier_ChemometricModelSettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserChannelType_StreamIdentifier_ChemometricModelSettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_StreamIdentifier_Context_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserChannelType_StreamIdentifier_Context_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserChannelType_StreamIdentifier_Context_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the StreamType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId StreamType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.StreamType_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the StreamType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId StreamType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.StreamType_GroupIdentifier_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the StreamType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId StreamType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.StreamType_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the StreamType_Lock_InitLock Method.
@@ -10587,56 +9387,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId StreamType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.StreamType_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the StreamType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId StreamType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.StreamType_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the StreamType_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId StreamType_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.StreamType_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the StreamType_AcquisitionSettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId StreamType_AcquisitionSettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.StreamType_AcquisitionSettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the StreamType_AcquisitionStatus_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId StreamType_AcquisitionStatus_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.StreamType_AcquisitionStatus_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the StreamType_AcquisitionData_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId StreamType_AcquisitionData_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.StreamType_AcquisitionData_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the StreamType_ChemometricModelSettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId StreamType_ChemometricModelSettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.StreamType_ChemometricModelSettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the StreamType_Context_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId StreamType_Context_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.StreamType_Context_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceStreamType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceStreamType_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceStreamType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceStreamType_GroupIdentifier_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceStreamType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceStreamType_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the SpectrometerDeviceStreamType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId SpectrometerDeviceStreamType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceStreamType_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -10655,56 +9405,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the SpectrometerDeviceStreamType_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId SpectrometerDeviceStreamType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceStreamType_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceStreamType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceStreamType_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceStreamType_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceStreamType_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_AcquisitionSettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceStreamType_AcquisitionSettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceStreamType_AcquisitionSettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_AcquisitionStatus_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceStreamType_AcquisitionStatus_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceStreamType_AcquisitionStatus_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_AcquisitionData_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceStreamType_AcquisitionData_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceStreamType_AcquisitionData_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_ChemometricModelSettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceStreamType_ChemometricModelSettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceStreamType_ChemometricModelSettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_Context_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceStreamType_Context_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceStreamType_Context_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceStreamType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceStreamType_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceStreamType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceStreamType_GroupIdentifier_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceStreamType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceStreamType_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the MassSpectrometerDeviceStreamType_Lock_InitLock Method.
@@ -10727,56 +9427,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId MassSpectrometerDeviceStreamType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceStreamType_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceStreamType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceStreamType_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceStreamType_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceStreamType_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_AcquisitionSettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceStreamType_AcquisitionSettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceStreamType_AcquisitionSettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_AcquisitionStatus_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceStreamType_AcquisitionStatus_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceStreamType_AcquisitionStatus_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_AcquisitionData_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceStreamType_AcquisitionData_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceStreamType_AcquisitionData_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_ChemometricModelSettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceStreamType_ChemometricModelSettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceStreamType_ChemometricModelSettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_Context_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceStreamType_Context_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceStreamType_Context_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceStreamType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceStreamType_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceStreamType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceStreamType_GroupIdentifier_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceStreamType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceStreamType_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the ParticleSizeMonitorDeviceStreamType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ParticleSizeMonitorDeviceStreamType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceStreamType_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -10795,56 +9445,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the ParticleSizeMonitorDeviceStreamType_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ParticleSizeMonitorDeviceStreamType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceStreamType_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceStreamType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceStreamType_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceStreamType_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceStreamType_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_AcquisitionSettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceStreamType_AcquisitionSettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceStreamType_AcquisitionSettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_AcquisitionStatus_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceStreamType_AcquisitionStatus_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceStreamType_AcquisitionStatus_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_AcquisitionData_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceStreamType_AcquisitionData_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceStreamType_AcquisitionData_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_ChemometricModelSettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceStreamType_ChemometricModelSettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceStreamType_ChemometricModelSettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_Context_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceStreamType_Context_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceStreamType_Context_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceStreamType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceStreamType_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceStreamType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceStreamType_GroupIdentifier_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceStreamType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceStreamType_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the AcousticSpectrometerDeviceStreamType_Lock_InitLock Method.
@@ -10867,56 +9467,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId AcousticSpectrometerDeviceStreamType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceStreamType_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceStreamType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceStreamType_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceStreamType_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceStreamType_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_AcquisitionSettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceStreamType_AcquisitionSettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceStreamType_AcquisitionSettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_AcquisitionStatus_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceStreamType_AcquisitionStatus_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceStreamType_AcquisitionStatus_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_AcquisitionData_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceStreamType_AcquisitionData_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceStreamType_AcquisitionData_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_ChemometricModelSettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceStreamType_ChemometricModelSettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceStreamType_ChemometricModelSettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_Context_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceStreamType_Context_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceStreamType_Context_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceStreamType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceStreamType_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceStreamType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceStreamType_GroupIdentifier_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceStreamType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceStreamType_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the ChromatographDeviceStreamType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ChromatographDeviceStreamType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceStreamType_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -10935,56 +9485,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the ChromatographDeviceStreamType_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ChromatographDeviceStreamType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceStreamType_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceStreamType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceStreamType_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceStreamType_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceStreamType_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_AcquisitionSettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceStreamType_AcquisitionSettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceStreamType_AcquisitionSettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_AcquisitionStatus_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceStreamType_AcquisitionStatus_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceStreamType_AcquisitionStatus_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_AcquisitionData_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceStreamType_AcquisitionData_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceStreamType_AcquisitionData_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_ChemometricModelSettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceStreamType_ChemometricModelSettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceStreamType_ChemometricModelSettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_Context_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceStreamType_Context_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceStreamType_Context_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MNRDeviceStreamType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MNRDeviceStreamType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MNRDeviceStreamType_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MNRDeviceStreamType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MNRDeviceStreamType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MNRDeviceStreamType_GroupIdentifier_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MNRDeviceStreamType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MNRDeviceStreamType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MNRDeviceStreamType_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the MNRDeviceStreamType_Lock_InitLock Method.
@@ -11007,56 +9507,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId MNRDeviceStreamType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.MNRDeviceStreamType_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the MNRDeviceStreamType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MNRDeviceStreamType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MNRDeviceStreamType_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MNRDeviceStreamType_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MNRDeviceStreamType_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MNRDeviceStreamType_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MNRDeviceStreamType_AcquisitionSettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MNRDeviceStreamType_AcquisitionSettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MNRDeviceStreamType_AcquisitionSettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MNRDeviceStreamType_AcquisitionStatus_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MNRDeviceStreamType_AcquisitionStatus_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MNRDeviceStreamType_AcquisitionStatus_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MNRDeviceStreamType_AcquisitionData_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MNRDeviceStreamType_AcquisitionData_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MNRDeviceStreamType_AcquisitionData_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MNRDeviceStreamType_ChemometricModelSettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MNRDeviceStreamType_ChemometricModelSettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MNRDeviceStreamType_ChemometricModelSettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MNRDeviceStreamType_Context_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MNRDeviceStreamType_Context_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MNRDeviceStreamType_Context_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceType_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceType_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the SpectrometerDeviceType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId SpectrometerDeviceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceType_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -11077,16 +9527,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId SpectrometerDeviceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceType_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the SpectrometerDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the SpectrometerDeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId SpectrometerDeviceType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceType_CPIdentifier_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -11105,11 +9545,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the SpectrometerDeviceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId SpectrometerDeviceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the SpectrometerDeviceType_MethodSet_GetConfiguration Method.
@@ -11192,31 +9627,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId SpectrometerDeviceType_ParameterSet_ConfigData_SetPosition = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceType_ParameterSet_ConfigData_SetPosition, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the SpectrometerDeviceType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceType_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceType_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceType_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceType_FactorySettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceType_FactorySettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_ChannelIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceType_ChannelIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceType_ChannelIdentifier_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the SpectrometerDeviceType_ChannelIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId SpectrometerDeviceType_ChannelIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceType_ChannelIdentifier_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -11297,31 +9707,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId SpectrometerDeviceType_ChannelIdentifier_MethodSet_Clear = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceType_ChannelIdentifier_MethodSet_Clear, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the SpectrometerDeviceType_ChannelIdentifier_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceType_ChannelIdentifier_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceType_ChannelIdentifier_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_ChannelIdentifier_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceType_ChannelIdentifier_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SpectrometerDeviceType_ChannelIdentifier_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceType_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceType_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the ParticleSizeMonitorDeviceType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceType_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -11342,16 +9727,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceType_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the ParticleSizeMonitorDeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceType_CPIdentifier_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -11370,11 +9745,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the ParticleSizeMonitorDeviceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the ParticleSizeMonitorDeviceType_MethodSet_GetConfiguration Method.
@@ -11457,31 +9827,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_ParameterSet_ConfigData_SetPosition = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceType_ParameterSet_ConfigData_SetPosition, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceType_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceType_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_FactorySettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceType_FactorySettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_ChannelIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_ChannelIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceType_ChannelIdentifier_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the ParticleSizeMonitorDeviceType_ChannelIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_ChannelIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceType_ChannelIdentifier_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -11562,31 +9907,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_ChannelIdentifier_MethodSet_Clear = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceType_ChannelIdentifier_MethodSet_Clear, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_ChannelIdentifier_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_ChannelIdentifier_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceType_ChannelIdentifier_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_ChannelIdentifier_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_ChannelIdentifier_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ParticleSizeMonitorDeviceType_ChannelIdentifier_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceType_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceType_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the ChromatographDeviceType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ChromatographDeviceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceType_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -11607,16 +9927,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId ChromatographDeviceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceType_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the ChromatographDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the ChromatographDeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ChromatographDeviceType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceType_CPIdentifier_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -11635,11 +9945,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the ChromatographDeviceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ChromatographDeviceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the ChromatographDeviceType_MethodSet_GetConfiguration Method.
@@ -11722,31 +10027,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId ChromatographDeviceType_ParameterSet_ConfigData_SetPosition = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceType_ParameterSet_ConfigData_SetPosition, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the ChromatographDeviceType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceType_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceType_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceType_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceType_FactorySettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceType_FactorySettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_ChannelIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceType_ChannelIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceType_ChannelIdentifier_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the ChromatographDeviceType_ChannelIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId ChromatographDeviceType_ChannelIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceType_ChannelIdentifier_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -11827,31 +10107,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId ChromatographDeviceType_ChannelIdentifier_MethodSet_Clear = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceType_ChannelIdentifier_MethodSet_Clear, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the ChromatographDeviceType_ChannelIdentifier_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceType_ChannelIdentifier_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceType_ChannelIdentifier_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_ChannelIdentifier_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceType_ChannelIdentifier_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.ChromatographDeviceType_ChannelIdentifier_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceType_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceType_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the MassSpectrometerDeviceType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId MassSpectrometerDeviceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceType_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -11872,16 +10127,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId MassSpectrometerDeviceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceType_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the MassSpectrometerDeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId MassSpectrometerDeviceType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceType_CPIdentifier_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -11900,11 +10145,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the MassSpectrometerDeviceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId MassSpectrometerDeviceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the MassSpectrometerDeviceType_MethodSet_GetConfiguration Method.
@@ -11987,31 +10227,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId MassSpectrometerDeviceType_ParameterSet_ConfigData_SetPosition = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceType_ParameterSet_ConfigData_SetPosition, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceType_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceType_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceType_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceType_FactorySettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceType_FactorySettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_ChannelIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceType_ChannelIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceType_ChannelIdentifier_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the MassSpectrometerDeviceType_ChannelIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId MassSpectrometerDeviceType_ChannelIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceType_ChannelIdentifier_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -12092,31 +10307,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId MassSpectrometerDeviceType_ChannelIdentifier_MethodSet_Clear = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceType_ChannelIdentifier_MethodSet_Clear, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_ChannelIdentifier_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceType_ChannelIdentifier_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceType_ChannelIdentifier_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_ChannelIdentifier_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceType_ChannelIdentifier_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.MassSpectrometerDeviceType_ChannelIdentifier_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceType_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceType_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the AcousticSpectrometerDeviceType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceType_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -12137,16 +10327,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceType_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the AcousticSpectrometerDeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceType_CPIdentifier_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -12165,11 +10345,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AcousticSpectrometerDeviceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the AcousticSpectrometerDeviceType_MethodSet_GetConfiguration Method.
@@ -12252,31 +10427,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_ParameterSet_ConfigData_SetPosition = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceType_ParameterSet_ConfigData_SetPosition, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceType_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceType_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_FactorySettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceType_FactorySettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_ChannelIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_ChannelIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceType_ChannelIdentifier_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the AcousticSpectrometerDeviceType_ChannelIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_ChannelIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceType_ChannelIdentifier_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -12357,31 +10507,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_ChannelIdentifier_MethodSet_Clear = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceType_ChannelIdentifier_MethodSet_Clear, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_ChannelIdentifier_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_ChannelIdentifier_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceType_ChannelIdentifier_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_ChannelIdentifier_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_ChannelIdentifier_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AcousticSpectrometerDeviceType_ChannelIdentifier_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId NMRDeviceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.NMRDeviceType_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId NMRDeviceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.NMRDeviceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId NMRDeviceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.NMRDeviceType_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the NMRDeviceType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId NMRDeviceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.NMRDeviceType_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -12402,16 +10527,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId NMRDeviceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.NMRDeviceType_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the NMRDeviceType_CPIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId NMRDeviceType_CPIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.NMRDeviceType_CPIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_CPIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId NMRDeviceType_CPIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.NMRDeviceType_CPIdentifier_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the NMRDeviceType_CPIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId NMRDeviceType_CPIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.NMRDeviceType_CPIdentifier_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -12430,11 +10545,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the NMRDeviceType_CPIdentifier_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId NMRDeviceType_CPIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.NMRDeviceType_CPIdentifier_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId NMRDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.NMRDeviceType_CPIdentifier_NetworkAddress_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the NMRDeviceType_MethodSet_GetConfiguration Method.
@@ -12517,31 +10627,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId NMRDeviceType_ParameterSet_ConfigData_SetPosition = new ExpandedNodeId(Opc.Ua.Adi.Methods.NMRDeviceType_ParameterSet_ConfigData_SetPosition, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the NMRDeviceType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId NMRDeviceType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.NMRDeviceType_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId NMRDeviceType_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.NMRDeviceType_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId NMRDeviceType_FactorySettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.NMRDeviceType_FactorySettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId NMRDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.NMRDeviceType_ChannelIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_ChannelIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId NMRDeviceType_ChannelIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.NMRDeviceType_ChannelIdentifier_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the NMRDeviceType_ChannelIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId NMRDeviceType_ChannelIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.NMRDeviceType_ChannelIdentifier_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -12622,26 +10707,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId NMRDeviceType_ChannelIdentifier_MethodSet_Clear = new ExpandedNodeId(Opc.Ua.Adi.Methods.NMRDeviceType_ChannelIdentifier_MethodSet_Clear, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the NMRDeviceType_ChannelIdentifier_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId NMRDeviceType_ChannelIdentifier_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.NMRDeviceType_ChannelIdentifier_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_ChannelIdentifier_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId NMRDeviceType_ChannelIdentifier_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.NMRDeviceType_ChannelIdentifier_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AccessorySlotType_AccessoryIdentifier_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AccessorySlotType_AccessoryIdentifier_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AccessorySlotType_AccessoryIdentifier_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AccessorySlotType_AccessoryIdentifier_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AccessorySlotType_AccessoryIdentifier_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AccessorySlotType_AccessoryIdentifier_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the AccessorySlotType_AccessoryIdentifier_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId AccessorySlotType_AccessoryIdentifier_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.AccessorySlotType_AccessoryIdentifier_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -12660,36 +10725,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AccessorySlotType_AccessoryIdentifier_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId AccessorySlotType_AccessoryIdentifier_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.AccessorySlotType_AccessoryIdentifier_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AccessorySlotType_AccessoryIdentifier_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AccessorySlotType_AccessoryIdentifier_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AccessorySlotType_AccessoryIdentifier_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AccessorySlotType_AccessoryIdentifier_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AccessorySlotType_AccessoryIdentifier_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AccessorySlotType_AccessoryIdentifier_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AccessorySlotType_AccessoryIdentifier_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AccessorySlotType_AccessoryIdentifier_FactorySettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AccessorySlotType_AccessoryIdentifier_FactorySettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AccessoryType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AccessoryType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AccessoryType_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AccessoryType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AccessoryType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AccessoryType_GroupIdentifier_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AccessoryType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AccessoryType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AccessoryType_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the AccessoryType_Lock_InitLock Method.
@@ -12712,36 +10747,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId AccessoryType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.AccessoryType_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the AccessoryType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AccessoryType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AccessoryType_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AccessoryType_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AccessoryType_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AccessoryType_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AccessoryType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId AccessoryType_FactorySettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.AccessoryType_FactorySettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the DetectorType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId DetectorType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.DetectorType_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the DetectorType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId DetectorType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.DetectorType_GroupIdentifier_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the DetectorType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId DetectorType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.DetectorType_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the DetectorType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId DetectorType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.DetectorType_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -12760,36 +10765,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the DetectorType_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId DetectorType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.DetectorType_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the DetectorType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId DetectorType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.DetectorType_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the DetectorType_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId DetectorType_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.DetectorType_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the DetectorType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId DetectorType_FactorySettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.DetectorType_FactorySettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SmartSamplingSystemType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SmartSamplingSystemType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SmartSamplingSystemType_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SmartSamplingSystemType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SmartSamplingSystemType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SmartSamplingSystemType_GroupIdentifier_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SmartSamplingSystemType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SmartSamplingSystemType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SmartSamplingSystemType_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the SmartSamplingSystemType_Lock_InitLock Method.
@@ -12812,36 +10787,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId SmartSamplingSystemType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.SmartSamplingSystemType_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the SmartSamplingSystemType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SmartSamplingSystemType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SmartSamplingSystemType_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SmartSamplingSystemType_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SmartSamplingSystemType_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SmartSamplingSystemType_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SmartSamplingSystemType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SmartSamplingSystemType_FactorySettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SmartSamplingSystemType_FactorySettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SourceType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SourceType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SourceType_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SourceType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SourceType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SourceType_GroupIdentifier_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SourceType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SourceType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SourceType_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the SourceType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId SourceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.SourceType_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -12862,36 +10807,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId SourceType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.SourceType_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the SourceType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SourceType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SourceType_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SourceType_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SourceType_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SourceType_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SourceType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SourceType_FactorySettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.SourceType_FactorySettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the GcOvenType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId GcOvenType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.GcOvenType_MethodSet_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the GcOvenType_GroupIdentifier_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId GcOvenType_GroupIdentifier_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.GcOvenType_GroupIdentifier_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the GcOvenType_Identification_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId GcOvenType_Identification_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.GcOvenType_Identification_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the GcOvenType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId GcOvenType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.GcOvenType_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -12910,21 +10825,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the GcOvenType_Lock_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId GcOvenType_Lock_BreakLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.GcOvenType_Lock_BreakLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the GcOvenType_Configuration_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId GcOvenType_Configuration_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.GcOvenType_Configuration_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the GcOvenType_Status_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId GcOvenType_Status_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.GcOvenType_Status_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the GcOvenType_FactorySettings_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId GcOvenType_FactorySettings_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Adi.Methods.GcOvenType_FactorySettings_MethodIdentifier, Opc.Ua.Adi.Namespaces.OpcUaAdi);
     }
     #endregion
 
