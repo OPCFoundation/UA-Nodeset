@@ -12,3 +12,9 @@ The following mismatches between the specification have been corrected in the v1
 0004274 - DataSetFieldFlags broken in Opc.Ua.Types.xsd
 0004282 - Typo for AccessRestrictionType
 0004283 - NamespacePublicationDate not correct
+0004290 - PermissionType is missing in Opc.Ua.Types.bsd
+0004291 - All OptionSet field values wrong in NodeSet2 file
+0004075 - The regex in the specifications allows Unicode characters in SymbolicName which makes no sense.
+0004190 - V 1.04 - "SymbolicName" in "ModelTableEntry" is missing in Part 6 Table F.1 – UANodeSet
+0004296	- PermissionType is also missing in Opc.Ua.Types.xsd
+

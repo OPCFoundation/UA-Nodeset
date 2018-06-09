@@ -1726,6 +1726,12 @@
   </xs:simpleType>
   <xs:element name="NodeClass" type="tns:NodeClass" />
 
+  <xs:simpleType  name="PermissionType">
+    <xs:restriction base="xs:unsignedInt">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PermissionType" type="tns:PermissionType" />
+
   <xs:simpleType  name="AccessLevelType">
     <xs:restriction base="xs:unsignedByte">
     </xs:restriction>
