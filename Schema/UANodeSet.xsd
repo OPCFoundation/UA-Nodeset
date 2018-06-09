@@ -159,7 +159,6 @@
     <xs:attribute name="ModelUri" type="xs:string" use="optional"></xs:attribute>
     <xs:attribute name="Version" type="xs:string" use="optional"></xs:attribute>
     <xs:attribute name="PublicationDate" type="xs:dateTime" use="optional"></xs:attribute>
-    <xs:attribute name="SymbolicName" type="SymbolicName" use="optional"></xs:attribute>
     <xs:attribute name="AccessRestrictions" type="AccessRestriction" default="0"></xs:attribute>
   </xs:complexType>
 
@@ -233,7 +232,7 @@
     <xs:list>
       <xs:simpleType>
         <xs:restriction base="xs:string">
-          <xs:pattern value="(\p{L})(\p{L}|\p{N}|_)*"></xs:pattern>
+          <xs:pattern value="[A-Za-z][A-Za-z0-9_]*"></xs:pattern>
         </xs:restriction>
       </xs:simpleType>
     </xs:list>
