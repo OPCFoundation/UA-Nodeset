@@ -17,4 +17,8 @@ The following mismatches between the specification have been corrected in the v1
 0004075 - The regex in the specifications allows Unicode characters in SymbolicName which makes no sense.
 0004190 - V 1.04 - "SymbolicName" in "ModelTableEntry" is missing in Part 6 Table F.1 – UANodeSet
 0004296	- PermissionType is also missing in Opc.Ua.Types.xsd
+0004221: Support for additional information about method arguments
+0004303: VariableType with Mandatory EngineeringUnits
+0004293: ServerCapabilities > Roles v.s RoleSet inconsistency between Nodeset and Part 5
+0004308: LocaleIds field inconsistency between WriterGroupDataType and WriterGroupType
 

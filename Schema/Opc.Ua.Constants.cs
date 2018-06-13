@@ -1990,14 +1990,14 @@ namespace Opc.Ua
         public const uint OPCUANamespaceMetadata_NamespaceFile_SetPosition = 15984;
 
         /// <summary>
-        /// The identifier for the ServerType_ServerCapabilities_Roles_AddRole Method.
+        /// The identifier for the ServerType_ServerCapabilities_RoleSet_AddRole Method.
         /// </summary>
-        public const uint ServerType_ServerCapabilities_Roles_AddRole = 16290;
+        public const uint ServerType_ServerCapabilities_RoleSet_AddRole = 16290;
 
         /// <summary>
-        /// The identifier for the ServerType_ServerCapabilities_Roles_RemoveRole Method.
+        /// The identifier for the ServerType_ServerCapabilities_RoleSet_RemoveRole Method.
         /// </summary>
-        public const uint ServerType_ServerCapabilities_Roles_RemoveRole = 16293;
+        public const uint ServerType_ServerCapabilities_RoleSet_RemoveRole = 16293;
 
         /// <summary>
         /// The identifier for the ServerType_GetMonitoredItems Method.
@@ -2020,14 +2020,14 @@ namespace Opc.Ua
         public const uint ServerType_RequestServerStateChange = 12883;
 
         /// <summary>
-        /// The identifier for the ServerCapabilitiesType_Roles_AddRole Method.
+        /// The identifier for the ServerCapabilitiesType_RoleSet_AddRole Method.
         /// </summary>
-        public const uint ServerCapabilitiesType_Roles_AddRole = 16296;
+        public const uint ServerCapabilitiesType_RoleSet_AddRole = 16296;
 
         /// <summary>
-        /// The identifier for the ServerCapabilitiesType_Roles_RemoveRole Method.
+        /// The identifier for the ServerCapabilitiesType_RoleSet_RemoveRole Method.
         /// </summary>
-        public const uint ServerCapabilitiesType_Roles_RemoveRole = 16299;
+        public const uint ServerCapabilitiesType_RoleSet_RemoveRole = 16299;
 
         /// <summary>
         /// The identifier for the FileType_Open Method.
@@ -2125,14 +2125,14 @@ namespace Opc.Ua
         public const uint NamespacesType_NamespaceIdentifier_Placeholder_NamespaceFile_SetPosition = 11672;
 
         /// <summary>
-        /// The identifier for the Server_ServerCapabilities_Roles_AddRole Method.
+        /// The identifier for the Server_ServerCapabilities_RoleSet_AddRole Method.
         /// </summary>
-        public const uint Server_ServerCapabilities_Roles_AddRole = 16301;
+        public const uint Server_ServerCapabilities_RoleSet_AddRole = 16301;
 
         /// <summary>
-        /// The identifier for the Server_ServerCapabilities_Roles_RemoveRole Method.
+        /// The identifier for the Server_ServerCapabilities_RoleSet_RemoveRole Method.
         /// </summary>
-        public const uint Server_ServerCapabilities_Roles_RemoveRole = 16304;
+        public const uint Server_ServerCapabilities_RoleSet_RemoveRole = 16304;
 
         /// <summary>
         /// The identifier for the Server_GetMonitoredItems Method.
@@ -4060,9 +4060,9 @@ namespace Opc.Ua
         public const uint ServerCapabilitiesType_AggregateFunctions = 2754;
 
         /// <summary>
-        /// The identifier for the ServerCapabilitiesType_Roles Object.
+        /// The identifier for the ServerCapabilitiesType_RoleSet Object.
         /// </summary>
-        public const uint ServerCapabilitiesType_Roles = 16295;
+        public const uint ServerCapabilitiesType_RoleSet = 16295;
 
         /// <summary>
         /// The identifier for the ServerDiagnosticsType_SessionsDiagnosticsSummary Object.
@@ -4115,9 +4115,9 @@ namespace Opc.Ua
         public const uint Server_ServerCapabilities_AggregateFunctions = 2997;
 
         /// <summary>
-        /// The identifier for the Server_ServerCapabilities_Roles Object.
+        /// The identifier for the Server_ServerCapabilities_RoleSet Object.
         /// </summary>
-        public const uint Server_ServerCapabilities_Roles = 15606;
+        public const uint Server_ServerCapabilities_RoleSet = 15606;
 
         /// <summary>
         /// The identifier for the Server_ServerDiagnostics Object.
@@ -10660,6 +10660,26 @@ namespace Opc.Ua
         public const uint HasHistoricalConfiguration = 56;
 
         /// <summary>
+        /// The identifier for the DescribesArgument ReferenceType.
+        /// </summary>
+        public const uint DescribesArgument = 129;
+
+        /// <summary>
+        /// The identifier for the DescribesInputArgument ReferenceType.
+        /// </summary>
+        public const uint DescribesInputArgument = 130;
+
+        /// <summary>
+        /// The identifier for the DescribesOptionalInputArgument ReferenceType.
+        /// </summary>
+        public const uint DescribesOptionalInputArgument = 131;
+
+        /// <summary>
+        /// The identifier for the DescribesOutputArgument ReferenceType.
+        /// </summary>
+        public const uint DescribesOutputArgument = 132;
+
+        /// <summary>
         /// The identifier for the HasTrueSubState ReferenceType.
         /// </summary>
         public const uint HasTrueSubState = 9004;
@@ -11135,19 +11155,19 @@ namespace Opc.Ua
         public const uint ServerType_ServerCapabilities_SoftwareCertificates = 3092;
 
         /// <summary>
-        /// The identifier for the ServerType_ServerCapabilities_Roles_AddRole_InputArguments Variable.
+        /// The identifier for the ServerType_ServerCapabilities_RoleSet_AddRole_InputArguments Variable.
         /// </summary>
-        public const uint ServerType_ServerCapabilities_Roles_AddRole_InputArguments = 16291;
+        public const uint ServerType_ServerCapabilities_RoleSet_AddRole_InputArguments = 16291;
 
         /// <summary>
-        /// The identifier for the ServerType_ServerCapabilities_Roles_AddRole_OutputArguments Variable.
+        /// The identifier for the ServerType_ServerCapabilities_RoleSet_AddRole_OutputArguments Variable.
         /// </summary>
-        public const uint ServerType_ServerCapabilities_Roles_AddRole_OutputArguments = 16292;
+        public const uint ServerType_ServerCapabilities_RoleSet_AddRole_OutputArguments = 16292;
 
         /// <summary>
-        /// The identifier for the ServerType_ServerCapabilities_Roles_RemoveRole_InputArguments Variable.
+        /// The identifier for the ServerType_ServerCapabilities_RoleSet_RemoveRole_InputArguments Variable.
         /// </summary>
-        public const uint ServerType_ServerCapabilities_Roles_RemoveRole_InputArguments = 16294;
+        public const uint ServerType_ServerCapabilities_RoleSet_RemoveRole_InputArguments = 16294;
 
         /// <summary>
         /// The identifier for the ServerType_ServerDiagnostics_ServerDiagnosticsSummary Variable.
@@ -11325,19 +11345,19 @@ namespace Opc.Ua
         public const uint ServerCapabilitiesType_VendorCapability_Placeholder = 11562;
 
         /// <summary>
-        /// The identifier for the ServerCapabilitiesType_Roles_AddRole_InputArguments Variable.
+        /// The identifier for the ServerCapabilitiesType_RoleSet_AddRole_InputArguments Variable.
         /// </summary>
-        public const uint ServerCapabilitiesType_Roles_AddRole_InputArguments = 16297;
+        public const uint ServerCapabilitiesType_RoleSet_AddRole_InputArguments = 16297;
 
         /// <summary>
-        /// The identifier for the ServerCapabilitiesType_Roles_AddRole_OutputArguments Variable.
+        /// The identifier for the ServerCapabilitiesType_RoleSet_AddRole_OutputArguments Variable.
         /// </summary>
-        public const uint ServerCapabilitiesType_Roles_AddRole_OutputArguments = 16298;
+        public const uint ServerCapabilitiesType_RoleSet_AddRole_OutputArguments = 16298;
 
         /// <summary>
-        /// The identifier for the ServerCapabilitiesType_Roles_RemoveRole_InputArguments Variable.
+        /// The identifier for the ServerCapabilitiesType_RoleSet_RemoveRole_InputArguments Variable.
         /// </summary>
-        public const uint ServerCapabilitiesType_Roles_RemoveRole_InputArguments = 16300;
+        public const uint ServerCapabilitiesType_RoleSet_RemoveRole_InputArguments = 16300;
 
         /// <summary>
         /// The identifier for the ServerDiagnosticsType_ServerDiagnosticsSummary Variable.
@@ -13940,19 +13960,19 @@ namespace Opc.Ua
         public const uint Server_ServerCapabilities_OperationLimits_MaxMonitoredItemsPerCall = 11714;
 
         /// <summary>
-        /// The identifier for the Server_ServerCapabilities_Roles_AddRole_InputArguments Variable.
+        /// The identifier for the Server_ServerCapabilities_RoleSet_AddRole_InputArguments Variable.
         /// </summary>
-        public const uint Server_ServerCapabilities_Roles_AddRole_InputArguments = 16302;
+        public const uint Server_ServerCapabilities_RoleSet_AddRole_InputArguments = 16302;
 
         /// <summary>
-        /// The identifier for the Server_ServerCapabilities_Roles_AddRole_OutputArguments Variable.
+        /// The identifier for the Server_ServerCapabilities_RoleSet_AddRole_OutputArguments Variable.
         /// </summary>
-        public const uint Server_ServerCapabilities_Roles_AddRole_OutputArguments = 16303;
+        public const uint Server_ServerCapabilities_RoleSet_AddRole_OutputArguments = 16303;
 
         /// <summary>
-        /// The identifier for the Server_ServerCapabilities_Roles_RemoveRole_InputArguments Variable.
+        /// The identifier for the Server_ServerCapabilities_RoleSet_RemoveRole_InputArguments Variable.
         /// </summary>
-        public const uint Server_ServerCapabilities_Roles_RemoveRole_InputArguments = 16305;
+        public const uint Server_ServerCapabilities_RoleSet_RemoveRole_InputArguments = 16305;
 
         /// <summary>
         /// The identifier for the Server_ServerDiagnostics_ServerDiagnosticsSummary Variable.
@@ -15308,6 +15328,36 @@ namespace Opc.Ua
         /// The identifier for the AnalogItemType_EngineeringUnits Variable.
         /// </summary>
         public const uint AnalogItemType_EngineeringUnits = 2371;
+
+        /// <summary>
+        /// The identifier for the EUItemType_InstrumentRange Variable.
+        /// </summary>
+        public const uint EUItemType_InstrumentRange = 17500;
+
+        /// <summary>
+        /// The identifier for the EUItemType_EURange Variable.
+        /// </summary>
+        public const uint EUItemType_EURange = 17501;
+
+        /// <summary>
+        /// The identifier for the EUItemType_EngineeringUnits Variable.
+        /// </summary>
+        public const uint EUItemType_EngineeringUnits = 17502;
+
+        /// <summary>
+        /// The identifier for the AnalogUnitItemType_InstrumentRange Variable.
+        /// </summary>
+        public const uint AnalogUnitItemType_InstrumentRange = 17506;
+
+        /// <summary>
+        /// The identifier for the AnalogUnitItemType_EURange Variable.
+        /// </summary>
+        public const uint AnalogUnitItemType_EURange = 17509;
+
+        /// <summary>
+        /// The identifier for the AnalogUnitItemType_EngineeringUnits Variable.
+        /// </summary>
+        public const uint AnalogUnitItemType_EngineeringUnits = 17510;
 
         /// <summary>
         /// The identifier for the TwoStateDiscreteType_FalseState Variable.
@@ -29755,6 +29805,16 @@ namespace Opc.Ua
         public const uint AnalogItemType = 2368;
 
         /// <summary>
+        /// The identifier for the EUItemType VariableType.
+        /// </summary>
+        public const uint EUItemType = 17497;
+
+        /// <summary>
+        /// The identifier for the AnalogUnitItemType VariableType.
+        /// </summary>
+        public const uint AnalogUnitItemType = 17503;
+
+        /// <summary>
         /// The identifier for the DiscreteItemType VariableType.
         /// </summary>
         public const uint DiscreteItemType = 2372;
@@ -31790,14 +31850,14 @@ namespace Opc.Ua
         public static readonly NodeId OPCUANamespaceMetadata_NamespaceFile_SetPosition = new NodeId(Opc.Ua.Methods.OPCUANamespaceMetadata_NamespaceFile_SetPosition);
 
         /// <summary>
-        /// The identifier for the ServerType_ServerCapabilities_Roles_AddRole Method.
+        /// The identifier for the ServerType_ServerCapabilities_RoleSet_AddRole Method.
         /// </summary>
-        public static readonly NodeId ServerType_ServerCapabilities_Roles_AddRole = new NodeId(Opc.Ua.Methods.ServerType_ServerCapabilities_Roles_AddRole);
+        public static readonly NodeId ServerType_ServerCapabilities_RoleSet_AddRole = new NodeId(Opc.Ua.Methods.ServerType_ServerCapabilities_RoleSet_AddRole);
 
         /// <summary>
-        /// The identifier for the ServerType_ServerCapabilities_Roles_RemoveRole Method.
+        /// The identifier for the ServerType_ServerCapabilities_RoleSet_RemoveRole Method.
         /// </summary>
-        public static readonly NodeId ServerType_ServerCapabilities_Roles_RemoveRole = new NodeId(Opc.Ua.Methods.ServerType_ServerCapabilities_Roles_RemoveRole);
+        public static readonly NodeId ServerType_ServerCapabilities_RoleSet_RemoveRole = new NodeId(Opc.Ua.Methods.ServerType_ServerCapabilities_RoleSet_RemoveRole);
 
         /// <summary>
         /// The identifier for the ServerType_GetMonitoredItems Method.
@@ -31820,14 +31880,14 @@ namespace Opc.Ua
         public static readonly NodeId ServerType_RequestServerStateChange = new NodeId(Opc.Ua.Methods.ServerType_RequestServerStateChange);
 
         /// <summary>
-        /// The identifier for the ServerCapabilitiesType_Roles_AddRole Method.
+        /// The identifier for the ServerCapabilitiesType_RoleSet_AddRole Method.
         /// </summary>
-        public static readonly NodeId ServerCapabilitiesType_Roles_AddRole = new NodeId(Opc.Ua.Methods.ServerCapabilitiesType_Roles_AddRole);
+        public static readonly NodeId ServerCapabilitiesType_RoleSet_AddRole = new NodeId(Opc.Ua.Methods.ServerCapabilitiesType_RoleSet_AddRole);
 
         /// <summary>
-        /// The identifier for the ServerCapabilitiesType_Roles_RemoveRole Method.
+        /// The identifier for the ServerCapabilitiesType_RoleSet_RemoveRole Method.
         /// </summary>
-        public static readonly NodeId ServerCapabilitiesType_Roles_RemoveRole = new NodeId(Opc.Ua.Methods.ServerCapabilitiesType_Roles_RemoveRole);
+        public static readonly NodeId ServerCapabilitiesType_RoleSet_RemoveRole = new NodeId(Opc.Ua.Methods.ServerCapabilitiesType_RoleSet_RemoveRole);
 
         /// <summary>
         /// The identifier for the FileType_Open Method.
@@ -31925,14 +31985,14 @@ namespace Opc.Ua
         public static readonly NodeId NamespacesType_NamespaceIdentifier_Placeholder_NamespaceFile_SetPosition = new NodeId(Opc.Ua.Methods.NamespacesType_NamespaceIdentifier_Placeholder_NamespaceFile_SetPosition);
 
         /// <summary>
-        /// The identifier for the Server_ServerCapabilities_Roles_AddRole Method.
+        /// The identifier for the Server_ServerCapabilities_RoleSet_AddRole Method.
         /// </summary>
-        public static readonly NodeId Server_ServerCapabilities_Roles_AddRole = new NodeId(Opc.Ua.Methods.Server_ServerCapabilities_Roles_AddRole);
+        public static readonly NodeId Server_ServerCapabilities_RoleSet_AddRole = new NodeId(Opc.Ua.Methods.Server_ServerCapabilities_RoleSet_AddRole);
 
         /// <summary>
-        /// The identifier for the Server_ServerCapabilities_Roles_RemoveRole Method.
+        /// The identifier for the Server_ServerCapabilities_RoleSet_RemoveRole Method.
         /// </summary>
-        public static readonly NodeId Server_ServerCapabilities_Roles_RemoveRole = new NodeId(Opc.Ua.Methods.Server_ServerCapabilities_Roles_RemoveRole);
+        public static readonly NodeId Server_ServerCapabilities_RoleSet_RemoveRole = new NodeId(Opc.Ua.Methods.Server_ServerCapabilities_RoleSet_RemoveRole);
 
         /// <summary>
         /// The identifier for the Server_GetMonitoredItems Method.
@@ -33860,9 +33920,9 @@ namespace Opc.Ua
         public static readonly NodeId ServerCapabilitiesType_AggregateFunctions = new NodeId(Opc.Ua.Objects.ServerCapabilitiesType_AggregateFunctions);
 
         /// <summary>
-        /// The identifier for the ServerCapabilitiesType_Roles Object.
+        /// The identifier for the ServerCapabilitiesType_RoleSet Object.
         /// </summary>
-        public static readonly NodeId ServerCapabilitiesType_Roles = new NodeId(Opc.Ua.Objects.ServerCapabilitiesType_Roles);
+        public static readonly NodeId ServerCapabilitiesType_RoleSet = new NodeId(Opc.Ua.Objects.ServerCapabilitiesType_RoleSet);
 
         /// <summary>
         /// The identifier for the ServerDiagnosticsType_SessionsDiagnosticsSummary Object.
@@ -33915,9 +33975,9 @@ namespace Opc.Ua
         public static readonly NodeId Server_ServerCapabilities_AggregateFunctions = new NodeId(Opc.Ua.Objects.Server_ServerCapabilities_AggregateFunctions);
 
         /// <summary>
-        /// The identifier for the Server_ServerCapabilities_Roles Object.
+        /// The identifier for the Server_ServerCapabilities_RoleSet Object.
         /// </summary>
-        public static readonly NodeId Server_ServerCapabilities_Roles = new NodeId(Opc.Ua.Objects.Server_ServerCapabilities_Roles);
+        public static readonly NodeId Server_ServerCapabilities_RoleSet = new NodeId(Opc.Ua.Objects.Server_ServerCapabilities_RoleSet);
 
         /// <summary>
         /// The identifier for the Server_ServerDiagnostics Object.
@@ -40460,6 +40520,26 @@ namespace Opc.Ua
         public static readonly NodeId HasHistoricalConfiguration = new NodeId(Opc.Ua.ReferenceTypes.HasHistoricalConfiguration);
 
         /// <summary>
+        /// The identifier for the DescribesArgument ReferenceType.
+        /// </summary>
+        public static readonly NodeId DescribesArgument = new NodeId(Opc.Ua.ReferenceTypes.DescribesArgument);
+
+        /// <summary>
+        /// The identifier for the DescribesInputArgument ReferenceType.
+        /// </summary>
+        public static readonly NodeId DescribesInputArgument = new NodeId(Opc.Ua.ReferenceTypes.DescribesInputArgument);
+
+        /// <summary>
+        /// The identifier for the DescribesOptionalInputArgument ReferenceType.
+        /// </summary>
+        public static readonly NodeId DescribesOptionalInputArgument = new NodeId(Opc.Ua.ReferenceTypes.DescribesOptionalInputArgument);
+
+        /// <summary>
+        /// The identifier for the DescribesOutputArgument ReferenceType.
+        /// </summary>
+        public static readonly NodeId DescribesOutputArgument = new NodeId(Opc.Ua.ReferenceTypes.DescribesOutputArgument);
+
+        /// <summary>
         /// The identifier for the HasTrueSubState ReferenceType.
         /// </summary>
         public static readonly NodeId HasTrueSubState = new NodeId(Opc.Ua.ReferenceTypes.HasTrueSubState);
@@ -40935,19 +41015,19 @@ namespace Opc.Ua
         public static readonly NodeId ServerType_ServerCapabilities_SoftwareCertificates = new NodeId(Opc.Ua.Variables.ServerType_ServerCapabilities_SoftwareCertificates);
 
         /// <summary>
-        /// The identifier for the ServerType_ServerCapabilities_Roles_AddRole_InputArguments Variable.
+        /// The identifier for the ServerType_ServerCapabilities_RoleSet_AddRole_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId ServerType_ServerCapabilities_Roles_AddRole_InputArguments = new NodeId(Opc.Ua.Variables.ServerType_ServerCapabilities_Roles_AddRole_InputArguments);
+        public static readonly NodeId ServerType_ServerCapabilities_RoleSet_AddRole_InputArguments = new NodeId(Opc.Ua.Variables.ServerType_ServerCapabilities_RoleSet_AddRole_InputArguments);
 
         /// <summary>
-        /// The identifier for the ServerType_ServerCapabilities_Roles_AddRole_OutputArguments Variable.
+        /// The identifier for the ServerType_ServerCapabilities_RoleSet_AddRole_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId ServerType_ServerCapabilities_Roles_AddRole_OutputArguments = new NodeId(Opc.Ua.Variables.ServerType_ServerCapabilities_Roles_AddRole_OutputArguments);
+        public static readonly NodeId ServerType_ServerCapabilities_RoleSet_AddRole_OutputArguments = new NodeId(Opc.Ua.Variables.ServerType_ServerCapabilities_RoleSet_AddRole_OutputArguments);
 
         /// <summary>
-        /// The identifier for the ServerType_ServerCapabilities_Roles_RemoveRole_InputArguments Variable.
+        /// The identifier for the ServerType_ServerCapabilities_RoleSet_RemoveRole_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId ServerType_ServerCapabilities_Roles_RemoveRole_InputArguments = new NodeId(Opc.Ua.Variables.ServerType_ServerCapabilities_Roles_RemoveRole_InputArguments);
+        public static readonly NodeId ServerType_ServerCapabilities_RoleSet_RemoveRole_InputArguments = new NodeId(Opc.Ua.Variables.ServerType_ServerCapabilities_RoleSet_RemoveRole_InputArguments);
 
         /// <summary>
         /// The identifier for the ServerType_ServerDiagnostics_ServerDiagnosticsSummary Variable.
@@ -41125,19 +41205,19 @@ namespace Opc.Ua
         public static readonly NodeId ServerCapabilitiesType_VendorCapability_Placeholder = new NodeId(Opc.Ua.Variables.ServerCapabilitiesType_VendorCapability_Placeholder);
 
         /// <summary>
-        /// The identifier for the ServerCapabilitiesType_Roles_AddRole_InputArguments Variable.
+        /// The identifier for the ServerCapabilitiesType_RoleSet_AddRole_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId ServerCapabilitiesType_Roles_AddRole_InputArguments = new NodeId(Opc.Ua.Variables.ServerCapabilitiesType_Roles_AddRole_InputArguments);
+        public static readonly NodeId ServerCapabilitiesType_RoleSet_AddRole_InputArguments = new NodeId(Opc.Ua.Variables.ServerCapabilitiesType_RoleSet_AddRole_InputArguments);
 
         /// <summary>
-        /// The identifier for the ServerCapabilitiesType_Roles_AddRole_OutputArguments Variable.
+        /// The identifier for the ServerCapabilitiesType_RoleSet_AddRole_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId ServerCapabilitiesType_Roles_AddRole_OutputArguments = new NodeId(Opc.Ua.Variables.ServerCapabilitiesType_Roles_AddRole_OutputArguments);
+        public static readonly NodeId ServerCapabilitiesType_RoleSet_AddRole_OutputArguments = new NodeId(Opc.Ua.Variables.ServerCapabilitiesType_RoleSet_AddRole_OutputArguments);
 
         /// <summary>
-        /// The identifier for the ServerCapabilitiesType_Roles_RemoveRole_InputArguments Variable.
+        /// The identifier for the ServerCapabilitiesType_RoleSet_RemoveRole_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId ServerCapabilitiesType_Roles_RemoveRole_InputArguments = new NodeId(Opc.Ua.Variables.ServerCapabilitiesType_Roles_RemoveRole_InputArguments);
+        public static readonly NodeId ServerCapabilitiesType_RoleSet_RemoveRole_InputArguments = new NodeId(Opc.Ua.Variables.ServerCapabilitiesType_RoleSet_RemoveRole_InputArguments);
 
         /// <summary>
         /// The identifier for the ServerDiagnosticsType_ServerDiagnosticsSummary Variable.
@@ -43740,19 +43820,19 @@ namespace Opc.Ua
         public static readonly NodeId Server_ServerCapabilities_OperationLimits_MaxMonitoredItemsPerCall = new NodeId(Opc.Ua.Variables.Server_ServerCapabilities_OperationLimits_MaxMonitoredItemsPerCall);
 
         /// <summary>
-        /// The identifier for the Server_ServerCapabilities_Roles_AddRole_InputArguments Variable.
+        /// The identifier for the Server_ServerCapabilities_RoleSet_AddRole_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId Server_ServerCapabilities_Roles_AddRole_InputArguments = new NodeId(Opc.Ua.Variables.Server_ServerCapabilities_Roles_AddRole_InputArguments);
+        public static readonly NodeId Server_ServerCapabilities_RoleSet_AddRole_InputArguments = new NodeId(Opc.Ua.Variables.Server_ServerCapabilities_RoleSet_AddRole_InputArguments);
 
         /// <summary>
-        /// The identifier for the Server_ServerCapabilities_Roles_AddRole_OutputArguments Variable.
+        /// The identifier for the Server_ServerCapabilities_RoleSet_AddRole_OutputArguments Variable.
         /// </summary>
-        public static readonly NodeId Server_ServerCapabilities_Roles_AddRole_OutputArguments = new NodeId(Opc.Ua.Variables.Server_ServerCapabilities_Roles_AddRole_OutputArguments);
+        public static readonly NodeId Server_ServerCapabilities_RoleSet_AddRole_OutputArguments = new NodeId(Opc.Ua.Variables.Server_ServerCapabilities_RoleSet_AddRole_OutputArguments);
 
         /// <summary>
-        /// The identifier for the Server_ServerCapabilities_Roles_RemoveRole_InputArguments Variable.
+        /// The identifier for the Server_ServerCapabilities_RoleSet_RemoveRole_InputArguments Variable.
         /// </summary>
-        public static readonly NodeId Server_ServerCapabilities_Roles_RemoveRole_InputArguments = new NodeId(Opc.Ua.Variables.Server_ServerCapabilities_Roles_RemoveRole_InputArguments);
+        public static readonly NodeId Server_ServerCapabilities_RoleSet_RemoveRole_InputArguments = new NodeId(Opc.Ua.Variables.Server_ServerCapabilities_RoleSet_RemoveRole_InputArguments);
 
         /// <summary>
         /// The identifier for the Server_ServerDiagnostics_ServerDiagnosticsSummary Variable.
@@ -45108,6 +45188,36 @@ namespace Opc.Ua
         /// The identifier for the AnalogItemType_EngineeringUnits Variable.
         /// </summary>
         public static readonly NodeId AnalogItemType_EngineeringUnits = new NodeId(Opc.Ua.Variables.AnalogItemType_EngineeringUnits);
+
+        /// <summary>
+        /// The identifier for the EUItemType_InstrumentRange Variable.
+        /// </summary>
+        public static readonly NodeId EUItemType_InstrumentRange = new NodeId(Opc.Ua.Variables.EUItemType_InstrumentRange);
+
+        /// <summary>
+        /// The identifier for the EUItemType_EURange Variable.
+        /// </summary>
+        public static readonly NodeId EUItemType_EURange = new NodeId(Opc.Ua.Variables.EUItemType_EURange);
+
+        /// <summary>
+        /// The identifier for the EUItemType_EngineeringUnits Variable.
+        /// </summary>
+        public static readonly NodeId EUItemType_EngineeringUnits = new NodeId(Opc.Ua.Variables.EUItemType_EngineeringUnits);
+
+        /// <summary>
+        /// The identifier for the AnalogUnitItemType_InstrumentRange Variable.
+        /// </summary>
+        public static readonly NodeId AnalogUnitItemType_InstrumentRange = new NodeId(Opc.Ua.Variables.AnalogUnitItemType_InstrumentRange);
+
+        /// <summary>
+        /// The identifier for the AnalogUnitItemType_EURange Variable.
+        /// </summary>
+        public static readonly NodeId AnalogUnitItemType_EURange = new NodeId(Opc.Ua.Variables.AnalogUnitItemType_EURange);
+
+        /// <summary>
+        /// The identifier for the AnalogUnitItemType_EngineeringUnits Variable.
+        /// </summary>
+        public static readonly NodeId AnalogUnitItemType_EngineeringUnits = new NodeId(Opc.Ua.Variables.AnalogUnitItemType_EngineeringUnits);
 
         /// <summary>
         /// The identifier for the TwoStateDiscreteType_FalseState Variable.
@@ -59555,6 +59665,16 @@ namespace Opc.Ua
         public static readonly NodeId AnalogItemType = new NodeId(Opc.Ua.VariableTypes.AnalogItemType);
 
         /// <summary>
+        /// The identifier for the EUItemType VariableType.
+        /// </summary>
+        public static readonly NodeId EUItemType = new NodeId(Opc.Ua.VariableTypes.EUItemType);
+
+        /// <summary>
+        /// The identifier for the AnalogUnitItemType VariableType.
+        /// </summary>
+        public static readonly NodeId AnalogUnitItemType = new NodeId(Opc.Ua.VariableTypes.AnalogUnitItemType);
+
+        /// <summary>
         /// The identifier for the DiscreteItemType VariableType.
         /// </summary>
         public static readonly NodeId DiscreteItemType = new NodeId(Opc.Ua.VariableTypes.DiscreteItemType);
@@ -60157,6 +60277,11 @@ namespace Opc.Ua
         /// The BrowseName for the AnalogItemType component.
         /// </summary>
         public const string AnalogItemType = "AnalogItemType";
+
+        /// <summary>
+        /// The BrowseName for the AnalogUnitItemType component.
+        /// </summary>
+        public const string AnalogUnitItemType = "AnalogUnitItemType";
 
         /// <summary>
         /// The BrowseName for the Annotation component.
@@ -61734,6 +61859,26 @@ namespace Opc.Ua
         public const string Deprecated = "Deprecated";
 
         /// <summary>
+        /// The BrowseName for the DescribesArgument component.
+        /// </summary>
+        public const string DescribesArgument = "DescribesArgument";
+
+        /// <summary>
+        /// The BrowseName for the DescribesInputArgument component.
+        /// </summary>
+        public const string DescribesInputArgument = "DescribesInputArgument";
+
+        /// <summary>
+        /// The BrowseName for the DescribesOptionalInputArgument component.
+        /// </summary>
+        public const string DescribesOptionalInputArgument = "DescribesOptionalInputArgument";
+
+        /// <summary>
+        /// The BrowseName for the DescribesOutputArgument component.
+        /// </summary>
+        public const string DescribesOutputArgument = "DescribesOutputArgument";
+
+        /// <summary>
         /// The BrowseName for the DeviceFailureEventType component.
         /// </summary>
         public const string DeviceFailureEventType = "DeviceFailureEventType";
@@ -61982,6 +62127,11 @@ namespace Opc.Ua
         /// The BrowseName for the EUInformation component.
         /// </summary>
         public const string EUInformation = "EUInformation";
+
+        /// <summary>
+        /// The BrowseName for the EUItemType component.
+        /// </summary>
+        public const string EUItemType = "EUItemType";
 
         /// <summary>
         /// The BrowseName for the EURange component.
@@ -64869,9 +65019,9 @@ namespace Opc.Ua
         public const string RolePermissionType = "RolePermissionType";
 
         /// <summary>
-        /// The BrowseName for the Roles component.
+        /// The BrowseName for the RoleSet component.
         /// </summary>
-        public const string Roles = "Roles";
+        public const string RoleSet = "RoleSet";
 
         /// <summary>
         /// The BrowseName for the RoleSetType component.
