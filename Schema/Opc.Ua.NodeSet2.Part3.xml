@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-06-04T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-06-12T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.02" PublicationDate="2018-06-04T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.02" PublicationDate="2018-06-12T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -502,6 +502,34 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
+  <UAReferenceType NodeId="i=129" BrowseName="DescribesArgument">
+    <DisplayName>DescribesArgument</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
+    </References>
+    <InverseName>ArgumentDescriptionFor</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="i=130" BrowseName="DescribesInputArgument">
+    <DisplayName>DescribesInputArgument</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=129</Reference>
+    </References>
+    <InverseName>InputArgumentDescriptionFor</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="i=131" BrowseName="DescribesOptionalInputArgument">
+    <DisplayName>DescribesOptionalInputArgument</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=129</Reference>
+    </References>
+    <InverseName>OptionalInputArgumentDescriptionFor</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="i=132" BrowseName="DescribesOutputArgument">
+    <DisplayName>DescribesOutputArgument</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=129</Reference>
+    </References>
+    <InverseName>OutputArgumentDescriptionFor</InverseName>
+  </UAReferenceType>
   <UAVariable NodeId="i=3068" BrowseName="NodeVersion" DataType="String" ValueRank="-2">
     <DisplayName>NodeVersion</DisplayName>
     <Description>The version number of the node (used to indicate changes to references of the owning node).</Description>
