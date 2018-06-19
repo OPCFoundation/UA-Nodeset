@@ -21,4 +21,4 @@ The following mismatches between the specification have been corrected in the v1
 0004303: VariableType with Mandatory EngineeringUnits
 0004293: ServerCapabilities > Roles v.s RoleSet inconsistency between Nodeset and Part 5
 0004308: LocaleIds field inconsistency between WriterGroupDataType and WriterGroupType
-
+0004309: Extend documentation capabilities in UANodeSet XML schema
