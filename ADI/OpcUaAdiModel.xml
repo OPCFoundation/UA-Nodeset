@@ -43,7 +43,7 @@
 
   <Namespaces>
     <Namespace Name="OpcUaAdi" Prefix="Opc.Ua.Adi" XmlNamespace="http://opcfoundation.org/UA/ADI/Types.xsd" XmlPrefix="ADI">http://opcfoundation.org/UA/ADI/</Namespace>
-    <Namespace Name="OpcUaDi" Prefix="Opc.Ua.Di" XmlNamespace="http://opcfoundation.org/UA/DI/Types.xsd" XmlPrefix="DI" FilePath="OpcUaDiModel">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="OpcUaDi" Prefix="Opc.Ua.Di" PublicationDate="2012-12-31T00:00:00Z" XmlNamespace="http://opcfoundation.org/UA/DI/Types.xsd" XmlPrefix="DI" FilePath="OpcUaDiModel">http://opcfoundation.org/UA/DI/</Namespace>
     <Namespace Name="OpcUa" Version="1.03" PublicationDate="2013-12-02T00:00:00Z" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</Namespace>
   </Namespaces>
 
