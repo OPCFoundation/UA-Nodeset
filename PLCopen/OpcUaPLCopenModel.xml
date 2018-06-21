@@ -34,14 +34,70 @@
   xmlns:OpcUa="http://opcfoundation.org/UA/"
   TargetNamespace="http://PLCopen.org/OpcUa/IEC61131-3/"
   TargetXmlNamespace="http://PLCopen.org/OpcUa/IEC61131-3/" 
+  xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"
   TargetVersion="1.00"
   TargetPublicationDate="2010-03-24T00:00:00Z"
   xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
-    <Namespace Name="OpcUa" Prefix="Opc.Ua" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="OpcUa" Version="1.03" PublicationDate="2013-12-02T00:00:00Z" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="OpcUaDi" Prefix="Opc.Ua.Di" XmlNamespace="http://opcfoundation.org/UA/DI/Types.xsd" FilePath="OpcUaDiModel">http://opcfoundation.org/UA/DI/</Namespace>
     <Namespace Name="OpcUaPlc" Version="1.03" PublicationDate="2013-12-02T00:00:00Z" Prefix="Opc.Ua.Plc" XmlNamespace="http://PLCopen.org/OpcUa/IEC61131-3/Types.xsd">http://PLCopen.org/OpcUa/IEC61131-3/</Namespace>
   </Namespaces>
+
+  <Object SymbolicName="OpcUaPlc:OpcUaPlcNamespaceMetadata" TypeDefinition="OpcUa:NamespaceMetadataType">
+    <BrowseName>http://PLCopen.org/OpcUa/IEC61131-3/</BrowseName>
+    <Children>
+      <Property SymbolicName="OpcUa:NamespaceUri" DataType="OpcUa:String">
+        <DefaultValue>
+          <uax:String>http://PLCopen.org/OpcUa/IEC61131-3/</uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="OpcUa:NamespaceVersion" DataType="OpcUa:String">
+        <DefaultValue>
+          <uax:String>1.00</uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="OpcUa:NamespacePublicationDate" DataType="OpcUa:DateTime">
+        <DefaultValue>
+          <uax:String>2010-03-24</uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="OpcUa:IsNamespaceSubset" DataType="OpcUa:Boolean">
+        <DefaultValue>
+          <uax:Boolean>false</uax:Boolean>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="OpcUa:StaticNodeIdTypes" DataType="OpcUa:IdType" ValueRank="Array">
+        <DefaultValue>
+          <uax:ListOfInt32>
+            <uax:Int32>0</uax:Int32>
+          </uax:ListOfInt32>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="OpcUa:StaticNumericNodeIdRange" DataType="OpcUa:NumericRange" ValueRank="Array">
+        <DefaultValue>
+          <uax:ListOfString>
+            <uax:String>1:65535</uax:String>
+          </uax:ListOfString>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="OpcUa:StaticStringNodeIdPattern" DataType="OpcUa:String">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="OpcUa:DefaultRolePermissions" ModellingRule="Mandatory" />
+      <Property SymbolicName="OpcUa:DefaultUserRolePermissions" ModellingRule="Mandatory" />
+      <Property SymbolicName="OpcUa:DefaultAccessRestrictions" ModellingRule="Mandatory" />
+    </Children>
+    <References>
+      <Reference IsInverse="true">
+        <ReferenceType>OpcUa:HasComponent</ReferenceType>
+        <TargetId>OpcUa:Server_Namespaces</TargetId>
+      </Reference>
+    </References>
+  </Object>
+  
   <ReferenceType SymbolicName="OpcUaPlc:HasInputVars" BaseType="OpcUa:HasComponent">
     <InverseName>InputVarsOf</InverseName>
   </ReferenceType>

@@ -1,4 +1,4 @@
-The following mismatches between the specification have been corrected in the v1.04 NodeSet since the release of the specification:
+﻿The following mismatches between the specification have been corrected in the v1.04 NodeSet since the release of the specification:
 
 0004202 - v1.04 Part 12: 7.5.14 UserCredentialCertificateType is missing from the nodeset files on github;
 0004180 - RolePermissionType::permissions has wrong data type in UANodeSet;
@@ -17,4 +17,11 @@ The following mismatches between the specification have been corrected in the v1
 0004075 - The regex in the specifications allows Unicode characters in SymbolicName which makes no sense.
 0004190 - V 1.04 - "SymbolicName" in "ModelTableEntry" is missing in Part 6 Table F.1 – UANodeSet
 0004296	- PermissionType is also missing in Opc.Ua.Types.xsd
-
+0004221: Support for additional information about method arguments
+0004303: VariableType with Mandatory EngineeringUnits
+0004293: ServerCapabilities > Roles v.s RoleSet inconsistency between Nodeset and Part 5
+0004308: LocaleIds field inconsistency between WriterGroupDataType and WriterGroupType
+0004309: Extend documentation capabilities in UANodeSet XML schema
+0004299: KeyCredentialManagement needs to support ECC
+0004262: UnregisterApplication should imply certificate revocation
+0004104: We need a way to add/remove instance of KeyCredentialConfigurationType in Push model

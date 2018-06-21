@@ -537,6 +537,46 @@ namespace Opc.Ua.MTConnect
     }
     #endregion
 
+    #region Method Identifiers
+    /// <summary>
+    /// A class that declares constants for all Methods in the Model Design.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public static partial class Methods
+    {
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Open Method.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespaceFile_Open = 15015;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Close Method.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespaceFile_Close = 15018;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Read Method.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespaceFile_Read = 15020;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Write Method.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespaceFile_Write = 15023;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_GetPosition Method.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespaceFile_GetPosition = 15025;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_SetPosition Method.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespaceFile_SetPosition = 15028;
+    }
+    #endregion
+
     #region Object Identifiers
     /// <summary>
     /// A class that declares constants for all Objects in the Model Design.
@@ -545,6 +585,11 @@ namespace Opc.Ua.MTConnect
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class Objects
     {
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata Object.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata = 15001;
+
         /// <summary>
         /// The identifier for the MTDevices Object.
         /// </summary>
@@ -915,6 +960,121 @@ namespace Opc.Ua.MTConnect
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class Variables
     {
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceUri Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespaceUri = 15002;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceVersion Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespaceVersion = 15003;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespacePublicationDate Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespacePublicationDate = 15004;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_IsNamespaceSubset Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_IsNamespaceSubset = 15005;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_StaticNodeIdTypes Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_StaticNodeIdTypes = 15006;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_StaticNumericNodeIdRange Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_StaticNumericNodeIdRange = 15007;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_StaticStringNodeIdPattern Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_StaticStringNodeIdPattern = 15008;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Size Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespaceFile_Size = 15010;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Writable Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespaceFile_Writable = 15011;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_UserWritable Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespaceFile_UserWritable = 15012;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_OpenCount Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespaceFile_OpenCount = 15013;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Open_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespaceFile_Open_InputArguments = 15016;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Open_OutputArguments Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespaceFile_Open_OutputArguments = 15017;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Close_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespaceFile_Close_InputArguments = 15019;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Read_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespaceFile_Read_InputArguments = 15021;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Read_OutputArguments Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespaceFile_Read_OutputArguments = 15022;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Write_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespaceFile_Write_InputArguments = 15024;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_GetPosition_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespaceFile_GetPosition_InputArguments = 15026;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_GetPosition_OutputArguments Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespaceFile_GetPosition_OutputArguments = 15027;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_SetPosition_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_NamespaceFile_SetPosition_InputArguments = 15029;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_DefaultRolePermissions Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_DefaultRolePermissions = 15031;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_DefaultUserRolePermissions Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_DefaultUserRolePermissions = 15032;
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_DefaultAccessRestrictions Variable.
+        /// </summary>
+        public const uint OpcUaMTConnectNamespaceMetadata_DefaultAccessRestrictions = 15033;
+
         /// <summary>
         /// The identifier for the MTDevicesType_MTConnectVersion Variable.
         /// </summary>
@@ -4782,6 +4942,46 @@ namespace Opc.Ua.MTConnect
     }
     #endregion
 
+    #region Method Node Identifiers
+    /// <summary>
+    /// A class that declares constants for all Methods in the Model Design.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public static partial class MethodIds
+    {
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Open Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespaceFile_Open = new ExpandedNodeId(Opc.Ua.MTConnect.Methods.OpcUaMTConnectNamespaceMetadata_NamespaceFile_Open, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Close Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespaceFile_Close = new ExpandedNodeId(Opc.Ua.MTConnect.Methods.OpcUaMTConnectNamespaceMetadata_NamespaceFile_Close, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Read Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespaceFile_Read = new ExpandedNodeId(Opc.Ua.MTConnect.Methods.OpcUaMTConnectNamespaceMetadata_NamespaceFile_Read, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Write Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespaceFile_Write = new ExpandedNodeId(Opc.Ua.MTConnect.Methods.OpcUaMTConnectNamespaceMetadata_NamespaceFile_Write, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_GetPosition Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespaceFile_GetPosition = new ExpandedNodeId(Opc.Ua.MTConnect.Methods.OpcUaMTConnectNamespaceMetadata_NamespaceFile_GetPosition, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_SetPosition Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespaceFile_SetPosition = new ExpandedNodeId(Opc.Ua.MTConnect.Methods.OpcUaMTConnectNamespaceMetadata_NamespaceFile_SetPosition, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+    }
+    #endregion
+
     #region Object Node Identifiers
     /// <summary>
     /// A class that declares constants for all Objects in the Model Design.
@@ -4790,6 +4990,11 @@ namespace Opc.Ua.MTConnect
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class ObjectIds
     {
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata Object.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata = new ExpandedNodeId(Opc.Ua.MTConnect.Objects.OpcUaMTConnectNamespaceMetadata, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
         /// <summary>
         /// The identifier for the MTDevices Object.
         /// </summary>
@@ -5160,6 +5365,121 @@ namespace Opc.Ua.MTConnect
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class VariableIds
     {
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespaceUri = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_NamespaceUri, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceVersion Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespaceVersion = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_NamespaceVersion, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespacePublicationDate Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespacePublicationDate = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_NamespacePublicationDate, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_IsNamespaceSubset Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_IsNamespaceSubset = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_IsNamespaceSubset, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_StaticNodeIdTypes Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_StaticNodeIdTypes = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_StaticNodeIdTypes, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_StaticNumericNodeIdRange Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_StaticNumericNodeIdRange = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_StaticNumericNodeIdRange, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_StaticStringNodeIdPattern Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_StaticStringNodeIdPattern = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_StaticStringNodeIdPattern, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Size Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespaceFile_Size = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_NamespaceFile_Size, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Writable Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespaceFile_Writable = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_NamespaceFile_Writable, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_UserWritable Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespaceFile_UserWritable = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_NamespaceFile_UserWritable, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_OpenCount Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespaceFile_OpenCount = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_NamespaceFile_OpenCount, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Open_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespaceFile_Open_InputArguments = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_NamespaceFile_Open_InputArguments, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Open_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespaceFile_Open_OutputArguments = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_NamespaceFile_Open_OutputArguments, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Close_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespaceFile_Close_InputArguments = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_NamespaceFile_Close_InputArguments, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Read_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespaceFile_Read_InputArguments = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_NamespaceFile_Read_InputArguments, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Read_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespaceFile_Read_OutputArguments = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_NamespaceFile_Read_OutputArguments, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_Write_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespaceFile_Write_InputArguments = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_NamespaceFile_Write_InputArguments, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_GetPosition_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespaceFile_GetPosition_InputArguments = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_NamespaceFile_GetPosition_InputArguments, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_GetPosition_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespaceFile_GetPosition_OutputArguments = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_NamespaceFile_GetPosition_OutputArguments, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_NamespaceFile_SetPosition_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_NamespaceFile_SetPosition_InputArguments = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_NamespaceFile_SetPosition_InputArguments, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_DefaultRolePermissions Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_DefaultRolePermissions = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_DefaultRolePermissions, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_DefaultUserRolePermissions Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_DefaultUserRolePermissions = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_DefaultUserRolePermissions, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
+        /// <summary>
+        /// The identifier for the OpcUaMTConnectNamespaceMetadata_DefaultAccessRestrictions Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaMTConnectNamespaceMetadata_DefaultAccessRestrictions = new ExpandedNodeId(Opc.Ua.MTConnect.Variables.OpcUaMTConnectNamespaceMetadata_DefaultAccessRestrictions, Opc.Ua.MTConnect.Namespaces.OpcUaMTConnect);
+
         /// <summary>
         /// The identifier for the MTDevicesType_MTConnectVersion Variable.
         /// </summary>
@@ -9508,6 +9828,11 @@ namespace Opc.Ua.MTConnect
         /// The BrowseName for the OpcUaMTConnect_XmlSchema component.
         /// </summary>
         public const string OpcUaMTConnect_XmlSchema = "Opc.Ua.MTConnect";
+
+        /// <summary>
+        /// The BrowseName for the OpcUaMTConnectNamespaceMetadata component.
+        /// </summary>
+        public const string OpcUaMTConnectNamespaceMetadata = "http://opcfoundation.org/UA/MTConnect/";
 
         /// <summary>
         /// The BrowseName for the OPCUAVersion component.

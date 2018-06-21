@@ -47,6 +47,36 @@ namespace Opc.Ua.Plc
     public static partial class Methods
     {
         /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Open Method.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespaceFile_Open = 15015;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Close Method.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespaceFile_Close = 15018;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Read Method.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespaceFile_Read = 15020;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Write Method.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespaceFile_Write = 15023;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_GetPosition Method.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespaceFile_GetPosition = 15025;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_SetPosition Method.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespaceFile_SetPosition = 15028;
+
+        /// <summary>
         /// The identifier for the CtrlConfigurationType_Lock_InitLock Method.
         /// </summary>
         public const uint CtrlConfigurationType_Lock_InitLock = 7028;
@@ -216,6 +246,11 @@ namespace Opc.Ua.Plc
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class Objects
     {
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata Object.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata = 15001;
+
         /// <summary>
         /// The identifier for the CtrlConfigurationType_MethodSet Object.
         /// </summary>
@@ -401,6 +436,121 @@ namespace Opc.Ua.Plc
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class Variables
     {
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceUri Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespaceUri = 15002;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceVersion Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespaceVersion = 15003;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespacePublicationDate Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespacePublicationDate = 15004;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_IsNamespaceSubset Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_IsNamespaceSubset = 15005;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_StaticNodeIdTypes Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_StaticNodeIdTypes = 15006;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_StaticNumericNodeIdRange Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_StaticNumericNodeIdRange = 15007;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_StaticStringNodeIdPattern Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_StaticStringNodeIdPattern = 15008;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Size Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespaceFile_Size = 15010;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Writable Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespaceFile_Writable = 15011;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_UserWritable Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespaceFile_UserWritable = 15012;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_OpenCount Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespaceFile_OpenCount = 15013;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Open_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespaceFile_Open_InputArguments = 15016;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Open_OutputArguments Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespaceFile_Open_OutputArguments = 15017;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Close_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespaceFile_Close_InputArguments = 15019;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Read_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespaceFile_Read_InputArguments = 15021;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Read_OutputArguments Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespaceFile_Read_OutputArguments = 15022;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Write_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespaceFile_Write_InputArguments = 15024;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_GetPosition_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespaceFile_GetPosition_InputArguments = 15026;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_GetPosition_OutputArguments Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespaceFile_GetPosition_OutputArguments = 15027;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_SetPosition_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_NamespaceFile_SetPosition_InputArguments = 15029;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_DefaultRolePermissions Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_DefaultRolePermissions = 15031;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_DefaultUserRolePermissions Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_DefaultUserRolePermissions = 15032;
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_DefaultAccessRestrictions Variable.
+        /// </summary>
+        public const uint OpcUaPlcNamespaceMetadata_DefaultAccessRestrictions = 15033;
+
         /// <summary>
         /// The identifier for the CtrlConfigurationType_Lock_Locked Variable.
         /// </summary>
@@ -757,6 +907,36 @@ namespace Opc.Ua.Plc
     public static partial class MethodIds
     {
         /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Open Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespaceFile_Open = new ExpandedNodeId(Opc.Ua.Plc.Methods.OpcUaPlcNamespaceMetadata_NamespaceFile_Open, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Close Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespaceFile_Close = new ExpandedNodeId(Opc.Ua.Plc.Methods.OpcUaPlcNamespaceMetadata_NamespaceFile_Close, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Read Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespaceFile_Read = new ExpandedNodeId(Opc.Ua.Plc.Methods.OpcUaPlcNamespaceMetadata_NamespaceFile_Read, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Write Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespaceFile_Write = new ExpandedNodeId(Opc.Ua.Plc.Methods.OpcUaPlcNamespaceMetadata_NamespaceFile_Write, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_GetPosition Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespaceFile_GetPosition = new ExpandedNodeId(Opc.Ua.Plc.Methods.OpcUaPlcNamespaceMetadata_NamespaceFile_GetPosition, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_SetPosition Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespaceFile_SetPosition = new ExpandedNodeId(Opc.Ua.Plc.Methods.OpcUaPlcNamespaceMetadata_NamespaceFile_SetPosition, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
         /// The identifier for the CtrlConfigurationType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId CtrlConfigurationType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Plc.Methods.CtrlConfigurationType_Lock_InitLock, Opc.Ua.Plc.Namespaces.OpcUaPlc);
@@ -926,6 +1106,11 @@ namespace Opc.Ua.Plc
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class ObjectIds
     {
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata Object.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata = new ExpandedNodeId(Opc.Ua.Plc.Objects.OpcUaPlcNamespaceMetadata, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
         /// <summary>
         /// The identifier for the CtrlConfigurationType_MethodSet Object.
         /// </summary>
@@ -1111,6 +1296,121 @@ namespace Opc.Ua.Plc
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class VariableIds
     {
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespaceUri = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_NamespaceUri, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceVersion Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespaceVersion = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_NamespaceVersion, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespacePublicationDate Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespacePublicationDate = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_NamespacePublicationDate, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_IsNamespaceSubset Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_IsNamespaceSubset = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_IsNamespaceSubset, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_StaticNodeIdTypes Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_StaticNodeIdTypes = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_StaticNodeIdTypes, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_StaticNumericNodeIdRange Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_StaticNumericNodeIdRange = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_StaticNumericNodeIdRange, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_StaticStringNodeIdPattern Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_StaticStringNodeIdPattern = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_StaticStringNodeIdPattern, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Size Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespaceFile_Size = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_NamespaceFile_Size, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Writable Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespaceFile_Writable = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_NamespaceFile_Writable, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_UserWritable Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespaceFile_UserWritable = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_NamespaceFile_UserWritable, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_OpenCount Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespaceFile_OpenCount = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_NamespaceFile_OpenCount, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Open_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespaceFile_Open_InputArguments = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_NamespaceFile_Open_InputArguments, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Open_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespaceFile_Open_OutputArguments = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_NamespaceFile_Open_OutputArguments, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Close_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespaceFile_Close_InputArguments = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_NamespaceFile_Close_InputArguments, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Read_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespaceFile_Read_InputArguments = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_NamespaceFile_Read_InputArguments, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Read_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespaceFile_Read_OutputArguments = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_NamespaceFile_Read_OutputArguments, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_Write_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespaceFile_Write_InputArguments = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_NamespaceFile_Write_InputArguments, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_GetPosition_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespaceFile_GetPosition_InputArguments = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_NamespaceFile_GetPosition_InputArguments, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_GetPosition_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespaceFile_GetPosition_OutputArguments = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_NamespaceFile_GetPosition_OutputArguments, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_NamespaceFile_SetPosition_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_NamespaceFile_SetPosition_InputArguments = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_NamespaceFile_SetPosition_InputArguments, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_DefaultRolePermissions Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_DefaultRolePermissions = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_DefaultRolePermissions, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_DefaultUserRolePermissions Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_DefaultUserRolePermissions = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_DefaultUserRolePermissions, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the OpcUaPlcNamespaceMetadata_DefaultAccessRestrictions Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_DefaultAccessRestrictions = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_DefaultAccessRestrictions, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
         /// <summary>
         /// The identifier for the CtrlConfigurationType_Lock_Locked Variable.
         /// </summary>
@@ -1564,6 +1864,11 @@ namespace Opc.Ua.Plc
         /// The BrowseName for the MethodSet component.
         /// </summary>
         public const string MethodSet = "MethodSet";
+
+        /// <summary>
+        /// The BrowseName for the OpcUaPlcNamespaceMetadata component.
+        /// </summary>
+        public const string OpcUaPlcNamespaceMetadata = "http://PLCopen.org/OpcUa/IEC61131-3/";
 
         /// <summary>
         /// The BrowseName for the Priority component.

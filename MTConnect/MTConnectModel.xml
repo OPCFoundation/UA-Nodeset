@@ -44,6 +44,60 @@
     <opc:Namespace Name="OpcUaMTConnect" Prefix="Opc.Ua.MTConnect" XmlNamespace="http://opcfoundation.org/UA/MTConnect/Types.xsd" XmlPrefix="DI">http://opcfoundation.org/UA/MTConnect/</opc:Namespace>
     <opc:Namespace Name="OpcUa" Version="1.03" PublicationDate="2013-12-02T00:00:00Z" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</opc:Namespace>
   </opc:Namespaces>
+  
+  <opc:Object SymbolicName="OpcUaMTConnectNamespaceMetadata" TypeDefinition="ua:NamespaceMetadataType" PartNo="12">
+    <opc:BrowseName>http://opcfoundation.org/UA/MTConnect/</opc:BrowseName>
+    <opc:Children>
+      <opc:Property SymbolicName="ua:NamespaceUri" DataType="ua:String">
+        <opc:DefaultValue>
+          <uax:String>http://opcfoundation.org/UA/MTConnect/</uax:String>
+        </opc:DefaultValue>
+      </opc:Property>
+      <opc:Property SymbolicName="ua:NamespaceVersion" DataType="ua:String">
+        <opc:DefaultValue>
+          <uax:String>1.00</uax:String>
+        </opc:DefaultValue>
+      </opc:Property>
+      <opc:Property SymbolicName="ua:NamespacePublicationDate" DataType="ua:DateTime">
+        <opc:DefaultValue>
+          <uax:String>2013-12-31</uax:String>
+        </opc:DefaultValue>
+      </opc:Property>
+      <opc:Property SymbolicName="ua:IsNamespaceSubset" DataType="ua:Boolean">
+        <opc:DefaultValue>
+          <uax:Boolean>false</uax:Boolean>
+        </opc:DefaultValue>
+      </opc:Property>
+      <opc:Property SymbolicName="ua:StaticNodeIdTypes" DataType="ua:IdType" ValueRank="Array">
+        <opc:DefaultValue>
+          <uax:ListOfInt32>
+            <uax:Int32>0</uax:Int32>
+          </uax:ListOfInt32>
+        </opc:DefaultValue>
+      </opc:Property>
+      <opc:Property SymbolicName="ua:StaticNumericNodeIdRange" DataType="ua:NumericRange" ValueRank="Array">
+        <opc:DefaultValue>
+          <uax:ListOfString>
+            <uax:String>1:65535</uax:String>
+          </uax:ListOfString>
+        </opc:DefaultValue>
+      </opc:Property>
+      <opc:Property SymbolicName="ua:StaticStringNodeIdPattern" DataType="ua:String">
+        <opc:DefaultValue>
+          <uax:String></uax:String>
+        </opc:DefaultValue>
+      </opc:Property>
+      <opc:Property SymbolicName="ua:DefaultRolePermissions" ModellingRule="Mandatory" />
+      <opc:Property SymbolicName="ua:DefaultUserRolePermissions" ModellingRule="Mandatory" />
+      <opc:Property SymbolicName="ua:DefaultAccessRestrictions" ModellingRule="Mandatory" />
+    </opc:Children>
+    <opc:References>
+      <opc:Reference IsInverse="true">
+        <opc:ReferenceType>ua:HasComponent</opc:ReferenceType>
+        <opc:TargetId>ua:Server_Namespaces</opc:TargetId>
+      </opc:Reference>
+    </opc:References>
+  </opc:Object>
 
   <opc:ObjectType SymbolicName="MTDevicesType" BaseType="ua:FolderType">
     <opc:Children>
