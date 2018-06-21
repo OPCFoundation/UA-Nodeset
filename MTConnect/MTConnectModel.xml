@@ -45,7 +45,7 @@
     <opc:Namespace Name="OpcUa" Version="1.03" PublicationDate="2013-12-02T00:00:00Z" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</opc:Namespace>
   </opc:Namespaces>
   
-  <opc:Object SymbolicName="OpcUaMTConnectNamespaceMetadata" TypeDefinition="ua:NamespaceMetadataType" PartNo="12">
+  <opc:Object SymbolicName="OpcUaMTConnectNamespaceMetadata" TypeDefinition="ua:NamespaceMetadataType">
     <opc:BrowseName>http://opcfoundation.org/UA/MTConnect/</opc:BrowseName>
     <opc:Children>
       <opc:Property SymbolicName="ua:NamespaceUri" DataType="ua:String">
