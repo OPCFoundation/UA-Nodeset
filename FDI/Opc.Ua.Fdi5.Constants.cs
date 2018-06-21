@@ -92,6 +92,36 @@ namespace Opc.Ua.Fdi5
     public static partial class Methods
     {
         /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Open Method.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespaceFile_Open = 15015;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Close Method.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespaceFile_Close = 15018;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Read Method.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespaceFile_Read = 15020;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Write Method.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespaceFile_Write = 15023;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_GetPosition Method.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespaceFile_GetPosition = 15025;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_SetPosition Method.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespaceFile_SetPosition = 15028;
+
+        /// <summary>
         /// The identifier for the ActionServiceType_InvokeAction Method.
         /// </summary>
         public const uint ActionServiceType_InvokeAction = 22;
@@ -181,6 +211,11 @@ namespace Opc.Ua.Fdi5
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class Objects
     {
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata Object.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata = 15001;
+
         /// <summary>
         /// The identifier for the UIPlugInType_Documentation Object.
         /// </summary>
@@ -316,6 +351,121 @@ namespace Opc.Ua.Fdi5
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class Variables
     {
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceUri Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespaceUri = 15002;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceVersion Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespaceVersion = 15003;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespacePublicationDate Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespacePublicationDate = 15004;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_IsNamespaceSubset Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_IsNamespaceSubset = 15005;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_StaticNodeIdTypes Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_StaticNodeIdTypes = 15006;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_StaticNumericNodeIdRange Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_StaticNumericNodeIdRange = 15007;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_StaticStringNodeIdPattern Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_StaticStringNodeIdPattern = 15008;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Size Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespaceFile_Size = 15010;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Writable Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespaceFile_Writable = 15011;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_UserWritable Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespaceFile_UserWritable = 15012;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_OpenCount Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespaceFile_OpenCount = 15013;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Open_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespaceFile_Open_InputArguments = 15016;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Open_OutputArguments Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespaceFile_Open_OutputArguments = 15017;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Close_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespaceFile_Close_InputArguments = 15019;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Read_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespaceFile_Read_InputArguments = 15021;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Read_OutputArguments Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespaceFile_Read_OutputArguments = 15022;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Write_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespaceFile_Write_InputArguments = 15024;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_GetPosition_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespaceFile_GetPosition_InputArguments = 15026;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_GetPosition_OutputArguments Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespaceFile_GetPosition_OutputArguments = 15027;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_SetPosition_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_NamespaceFile_SetPosition_InputArguments = 15029;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_DefaultRolePermissions Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_DefaultRolePermissions = 15031;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_DefaultUserRolePermissions Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_DefaultUserRolePermissions = 15032;
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_DefaultAccessRestrictions Variable.
+        /// </summary>
+        public const uint OpcUaFdi5NamespaceMetadata_DefaultAccessRestrictions = 15033;
+
         /// <summary>
         /// The identifier for the UIPlugInType_UIPVariantVersion Variable.
         /// </summary>
@@ -682,6 +832,36 @@ namespace Opc.Ua.Fdi5
     public static partial class MethodIds
     {
         /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Open Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespaceFile_Open = new ExpandedNodeId(Opc.Ua.Fdi5.Methods.OpcUaFdi5NamespaceMetadata_NamespaceFile_Open, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Close Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespaceFile_Close = new ExpandedNodeId(Opc.Ua.Fdi5.Methods.OpcUaFdi5NamespaceMetadata_NamespaceFile_Close, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Read Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespaceFile_Read = new ExpandedNodeId(Opc.Ua.Fdi5.Methods.OpcUaFdi5NamespaceMetadata_NamespaceFile_Read, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Write Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespaceFile_Write = new ExpandedNodeId(Opc.Ua.Fdi5.Methods.OpcUaFdi5NamespaceMetadata_NamespaceFile_Write, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_GetPosition Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespaceFile_GetPosition = new ExpandedNodeId(Opc.Ua.Fdi5.Methods.OpcUaFdi5NamespaceMetadata_NamespaceFile_GetPosition, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_SetPosition Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespaceFile_SetPosition = new ExpandedNodeId(Opc.Ua.Fdi5.Methods.OpcUaFdi5NamespaceMetadata_NamespaceFile_SetPosition, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
         /// The identifier for the ActionServiceType_InvokeAction Method.
         /// </summary>
         public static readonly ExpandedNodeId ActionServiceType_InvokeAction = new ExpandedNodeId(Opc.Ua.Fdi5.Methods.ActionServiceType_InvokeAction, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
@@ -771,6 +951,11 @@ namespace Opc.Ua.Fdi5
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class ObjectIds
     {
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata Object.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata = new ExpandedNodeId(Opc.Ua.Fdi5.Objects.OpcUaFdi5NamespaceMetadata, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
         /// <summary>
         /// The identifier for the UIPlugInType_Documentation Object.
         /// </summary>
@@ -906,6 +1091,121 @@ namespace Opc.Ua.Fdi5
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class VariableIds
     {
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespaceUri = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_NamespaceUri, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceVersion Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespaceVersion = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_NamespaceVersion, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespacePublicationDate Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespacePublicationDate = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_NamespacePublicationDate, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_IsNamespaceSubset Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_IsNamespaceSubset = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_IsNamespaceSubset, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_StaticNodeIdTypes Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_StaticNodeIdTypes = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_StaticNodeIdTypes, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_StaticNumericNodeIdRange Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_StaticNumericNodeIdRange = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_StaticNumericNodeIdRange, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_StaticStringNodeIdPattern Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_StaticStringNodeIdPattern = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_StaticStringNodeIdPattern, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Size Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespaceFile_Size = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_NamespaceFile_Size, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Writable Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespaceFile_Writable = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_NamespaceFile_Writable, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_UserWritable Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespaceFile_UserWritable = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_NamespaceFile_UserWritable, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_OpenCount Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespaceFile_OpenCount = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_NamespaceFile_OpenCount, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Open_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespaceFile_Open_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_NamespaceFile_Open_InputArguments, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Open_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespaceFile_Open_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_NamespaceFile_Open_OutputArguments, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Close_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespaceFile_Close_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_NamespaceFile_Close_InputArguments, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Read_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespaceFile_Read_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_NamespaceFile_Read_InputArguments, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Read_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespaceFile_Read_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_NamespaceFile_Read_OutputArguments, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_Write_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespaceFile_Write_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_NamespaceFile_Write_InputArguments, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_GetPosition_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespaceFile_GetPosition_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_NamespaceFile_GetPosition_InputArguments, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_GetPosition_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespaceFile_GetPosition_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_NamespaceFile_GetPosition_OutputArguments, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_NamespaceFile_SetPosition_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_NamespaceFile_SetPosition_InputArguments = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_NamespaceFile_SetPosition_InputArguments, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_DefaultRolePermissions Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_DefaultRolePermissions = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_DefaultRolePermissions, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_DefaultUserRolePermissions Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_DefaultUserRolePermissions = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_DefaultUserRolePermissions, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
+        /// <summary>
+        /// The identifier for the OpcUaFdi5NamespaceMetadata_DefaultAccessRestrictions Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaFdi5NamespaceMetadata_DefaultAccessRestrictions = new ExpandedNodeId(Opc.Ua.Fdi5.Variables.OpcUaFdi5NamespaceMetadata_DefaultAccessRestrictions, Opc.Ua.Fdi5.Namespaces.OpcUaFdi5);
+
         /// <summary>
         /// The identifier for the UIPlugInType_UIPVariantVersion Variable.
         /// </summary>
@@ -1339,6 +1639,11 @@ namespace Opc.Ua.Fdi5
         /// The BrowseName for the OpcUaFdi5_XmlSchema component.
         /// </summary>
         public const string OpcUaFdi5_XmlSchema = "Opc.Ua.Fdi5";
+
+        /// <summary>
+        /// The BrowseName for the OpcUaFdi5NamespaceMetadata component.
+        /// </summary>
+        public const string OpcUaFdi5NamespaceMetadata = "http://fdi-cooperation.com/OPCUA/FDI5/";
 
         /// <summary>
         /// The BrowseName for the PlatformId component.

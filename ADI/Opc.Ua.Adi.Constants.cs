@@ -72,6 +72,36 @@ namespace Opc.Ua.Adi
     public static partial class Methods
     {
         /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Open Method.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespaceFile_Open = 15015;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Close Method.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespaceFile_Close = 15018;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Read Method.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespaceFile_Read = 15020;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Write Method.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespaceFile_Write = 15023;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_GetPosition Method.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespaceFile_GetPosition = 15025;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_SetPosition Method.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespaceFile_SetPosition = 15028;
+
+        /// <summary>
         /// The identifier for the AnalyserDeviceType_Lock_InitLock Method.
         /// </summary>
         public const uint AnalyserDeviceType_Lock_InitLock = 9393;
@@ -1842,6 +1872,11 @@ namespace Opc.Ua.Adi
     public static partial class Objects
     {
         /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata Object.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata = 15001;
+
+        /// <summary>
         /// The identifier for the AnalyserDeviceType_ParameterSet Object.
         /// </summary>
         public const uint AnalyserDeviceType_ParameterSet = 5001;
@@ -3536,6 +3571,121 @@ namespace Opc.Ua.Adi
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class Variables
     {
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceUri Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespaceUri = 15002;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceVersion Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespaceVersion = 15003;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespacePublicationDate Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespacePublicationDate = 15004;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_IsNamespaceSubset Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_IsNamespaceSubset = 15005;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_StaticNodeIdTypes Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_StaticNodeIdTypes = 15006;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_StaticNumericNodeIdRange Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_StaticNumericNodeIdRange = 15007;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_StaticStringNodeIdPattern Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_StaticStringNodeIdPattern = 15008;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Size Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespaceFile_Size = 15010;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Writable Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespaceFile_Writable = 15011;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_UserWritable Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespaceFile_UserWritable = 15012;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_OpenCount Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespaceFile_OpenCount = 15013;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Open_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespaceFile_Open_InputArguments = 15016;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Open_OutputArguments Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespaceFile_Open_OutputArguments = 15017;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Close_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespaceFile_Close_InputArguments = 15019;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Read_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespaceFile_Read_InputArguments = 15021;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Read_OutputArguments Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespaceFile_Read_OutputArguments = 15022;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Write_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespaceFile_Write_InputArguments = 15024;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_GetPosition_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespaceFile_GetPosition_InputArguments = 15026;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_GetPosition_OutputArguments Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespaceFile_GetPosition_OutputArguments = 15027;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_SetPosition_InputArguments Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_NamespaceFile_SetPosition_InputArguments = 15029;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_DefaultRolePermissions Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_DefaultRolePermissions = 15031;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_DefaultUserRolePermissions Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_DefaultUserRolePermissions = 15032;
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_DefaultAccessRestrictions Variable.
+        /// </summary>
+        public const uint OpcUaAdiNamespaceMetadata_DefaultAccessRestrictions = 15033;
+
         /// <summary>
         /// The identifier for the AnalyserDeviceType_Lock_Locked Variable.
         /// </summary>
@@ -9067,6 +9217,36 @@ namespace Opc.Ua.Adi
     public static partial class MethodIds
     {
         /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Open Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespaceFile_Open = new ExpandedNodeId(Opc.Ua.Adi.Methods.OpcUaAdiNamespaceMetadata_NamespaceFile_Open, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Close Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespaceFile_Close = new ExpandedNodeId(Opc.Ua.Adi.Methods.OpcUaAdiNamespaceMetadata_NamespaceFile_Close, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Read Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespaceFile_Read = new ExpandedNodeId(Opc.Ua.Adi.Methods.OpcUaAdiNamespaceMetadata_NamespaceFile_Read, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Write Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespaceFile_Write = new ExpandedNodeId(Opc.Ua.Adi.Methods.OpcUaAdiNamespaceMetadata_NamespaceFile_Write, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_GetPosition Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespaceFile_GetPosition = new ExpandedNodeId(Opc.Ua.Adi.Methods.OpcUaAdiNamespaceMetadata_NamespaceFile_GetPosition, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_SetPosition Method.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespaceFile_SetPosition = new ExpandedNodeId(Opc.Ua.Adi.Methods.OpcUaAdiNamespaceMetadata_NamespaceFile_SetPosition, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
         /// The identifier for the AnalyserDeviceType_Lock_InitLock Method.
         /// </summary>
         public static readonly ExpandedNodeId AnalyserDeviceType_Lock_InitLock = new ExpandedNodeId(Opc.Ua.Adi.Methods.AnalyserDeviceType_Lock_InitLock, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -10837,6 +11017,11 @@ namespace Opc.Ua.Adi
     public static partial class ObjectIds
     {
         /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata Object.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata = new ExpandedNodeId(Opc.Ua.Adi.Objects.OpcUaAdiNamespaceMetadata, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
         /// The identifier for the AnalyserDeviceType_ParameterSet Object.
         /// </summary>
         public static readonly ExpandedNodeId AnalyserDeviceType_ParameterSet = new ExpandedNodeId(Opc.Ua.Adi.Objects.AnalyserDeviceType_ParameterSet, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -12531,6 +12716,121 @@ namespace Opc.Ua.Adi
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class VariableIds
     {
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespaceUri = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_NamespaceUri, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceVersion Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespaceVersion = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_NamespaceVersion, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespacePublicationDate Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespacePublicationDate = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_NamespacePublicationDate, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_IsNamespaceSubset Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_IsNamespaceSubset = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_IsNamespaceSubset, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_StaticNodeIdTypes Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_StaticNodeIdTypes = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_StaticNodeIdTypes, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_StaticNumericNodeIdRange Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_StaticNumericNodeIdRange = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_StaticNumericNodeIdRange, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_StaticStringNodeIdPattern Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_StaticStringNodeIdPattern = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_StaticStringNodeIdPattern, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Size Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespaceFile_Size = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_NamespaceFile_Size, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Writable Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespaceFile_Writable = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_NamespaceFile_Writable, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_UserWritable Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespaceFile_UserWritable = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_NamespaceFile_UserWritable, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_OpenCount Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespaceFile_OpenCount = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_NamespaceFile_OpenCount, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Open_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespaceFile_Open_InputArguments = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_NamespaceFile_Open_InputArguments, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Open_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespaceFile_Open_OutputArguments = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_NamespaceFile_Open_OutputArguments, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Close_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespaceFile_Close_InputArguments = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_NamespaceFile_Close_InputArguments, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Read_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespaceFile_Read_InputArguments = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_NamespaceFile_Read_InputArguments, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Read_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespaceFile_Read_OutputArguments = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_NamespaceFile_Read_OutputArguments, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_Write_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespaceFile_Write_InputArguments = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_NamespaceFile_Write_InputArguments, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_GetPosition_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespaceFile_GetPosition_InputArguments = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_NamespaceFile_GetPosition_InputArguments, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_GetPosition_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespaceFile_GetPosition_OutputArguments = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_NamespaceFile_GetPosition_OutputArguments, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_NamespaceFile_SetPosition_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_NamespaceFile_SetPosition_InputArguments = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_NamespaceFile_SetPosition_InputArguments, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_DefaultRolePermissions Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_DefaultRolePermissions = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_DefaultRolePermissions, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_DefaultUserRolePermissions Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_DefaultUserRolePermissions = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_DefaultUserRolePermissions, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
+        /// <summary>
+        /// The identifier for the OpcUaAdiNamespaceMetadata_DefaultAccessRestrictions Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_DefaultAccessRestrictions = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_DefaultAccessRestrictions, Opc.Ua.Adi.Namespaces.OpcUaAdi);
+
         /// <summary>
         /// The identifier for the AnalyserDeviceType_Lock_Locked Variable.
         /// </summary>
@@ -18764,6 +19064,11 @@ namespace Opc.Ua.Adi
         /// The BrowseName for the OpcUaAdi_XmlSchema component.
         /// </summary>
         public const string OpcUaAdi_XmlSchema = "Opc.Ua.Adi";
+
+        /// <summary>
+        /// The BrowseName for the OpcUaAdiNamespaceMetadata component.
+        /// </summary>
+        public const string OpcUaAdiNamespaceMetadata = "http://opcfoundation.org/UA/ADI/";
 
         /// <summary>
         /// The BrowseName for the Operating component.

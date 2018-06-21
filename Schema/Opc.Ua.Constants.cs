@@ -3510,6 +3510,16 @@ namespace Opc.Ua
         public const uint ServerConfiguration_GetRejectedList = 12777;
 
         /// <summary>
+        /// The identifier for the KeyCredentialConfigurationFolderType_CreateCredential Method.
+        /// </summary>
+        public const uint KeyCredentialConfigurationFolderType_CreateCredential = 17522;
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationType_GetEncryptingKey Method.
+        /// </summary>
+        public const uint KeyCredentialConfigurationType_GetEncryptingKey = 17534;
+
+        /// <summary>
         /// The identifier for the KeyCredentialConfigurationType_UpdateCredential Method.
         /// </summary>
         public const uint KeyCredentialConfigurationType_UpdateCredential = 18006;
@@ -4603,6 +4613,11 @@ namespace Opc.Ua
         /// The identifier for the ServerConfiguration_CertificateGroups_DefaultUserTokenGroup_TrustList Object.
         /// </summary>
         public const uint ServerConfiguration_CertificateGroups_DefaultUserTokenGroup_TrustList = 14123;
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationFolderType_ServiceName_Placeholder Object.
+        /// </summary>
+        public const uint KeyCredentialConfigurationFolderType_ServiceName_Placeholder = 17511;
 
         /// <summary>
         /// The identifier for the KeyCredentialConfiguration Object.
@@ -10238,6 +10253,11 @@ namespace Opc.Ua
         /// The identifier for the CertificateUpdatedAuditEventType ObjectType.
         /// </summary>
         public const uint CertificateUpdatedAuditEventType = 12620;
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationFolderType ObjectType.
+        /// </summary>
+        public const uint KeyCredentialConfigurationFolderType = 17496;
 
         /// <summary>
         /// The identifier for the KeyCredentialConfigurationType ObjectType.
@@ -20580,6 +20600,41 @@ namespace Opc.Ua
         public const uint ServerConfiguration_GetRejectedList_OutputArguments = 12778;
 
         /// <summary>
+        /// The identifier for the KeyCredentialConfigurationFolderType_ServiceName_Placeholder_ResourceUri Variable.
+        /// </summary>
+        public const uint KeyCredentialConfigurationFolderType_ServiceName_Placeholder_ResourceUri = 17512;
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationFolderType_ServiceName_Placeholder_ProfileUri Variable.
+        /// </summary>
+        public const uint KeyCredentialConfigurationFolderType_ServiceName_Placeholder_ProfileUri = 17513;
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationFolderType_ServiceName_Placeholder_GetEncryptingKey_InputArguments Variable.
+        /// </summary>
+        public const uint KeyCredentialConfigurationFolderType_ServiceName_Placeholder_GetEncryptingKey_InputArguments = 17517;
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationFolderType_ServiceName_Placeholder_GetEncryptingKey_OutputArguments Variable.
+        /// </summary>
+        public const uint KeyCredentialConfigurationFolderType_ServiceName_Placeholder_GetEncryptingKey_OutputArguments = 17518;
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationFolderType_ServiceName_Placeholder_UpdateCredential_InputArguments Variable.
+        /// </summary>
+        public const uint KeyCredentialConfigurationFolderType_ServiceName_Placeholder_UpdateCredential_InputArguments = 17520;
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationFolderType_CreateCredential_InputArguments Variable.
+        /// </summary>
+        public const uint KeyCredentialConfigurationFolderType_CreateCredential_InputArguments = 17523;
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationFolderType_CreateCredential_OutputArguments Variable.
+        /// </summary>
+        public const uint KeyCredentialConfigurationFolderType_CreateCredential_OutputArguments = 17524;
+
+        /// <summary>
         /// The identifier for the KeyCredentialConfiguration_ServiceName_Placeholder_ResourceUri Variable.
         /// </summary>
         public const uint KeyCredentialConfiguration_ServiceName_Placeholder_ResourceUri = 18157;
@@ -20590,9 +20645,29 @@ namespace Opc.Ua
         public const uint KeyCredentialConfiguration_ServiceName_Placeholder_ProfileUri = 18164;
 
         /// <summary>
+        /// The identifier for the KeyCredentialConfiguration_ServiceName_Placeholder_GetEncryptingKey_InputArguments Variable.
+        /// </summary>
+        public const uint KeyCredentialConfiguration_ServiceName_Placeholder_GetEncryptingKey_InputArguments = 17526;
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfiguration_ServiceName_Placeholder_GetEncryptingKey_OutputArguments Variable.
+        /// </summary>
+        public const uint KeyCredentialConfiguration_ServiceName_Placeholder_GetEncryptingKey_OutputArguments = 17527;
+
+        /// <summary>
         /// The identifier for the KeyCredentialConfiguration_ServiceName_Placeholder_UpdateCredential_InputArguments Variable.
         /// </summary>
         public const uint KeyCredentialConfiguration_ServiceName_Placeholder_UpdateCredential_InputArguments = 18162;
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfiguration_CreateCredential_InputArguments Variable.
+        /// </summary>
+        public const uint KeyCredentialConfiguration_CreateCredential_InputArguments = 17529;
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfiguration_CreateCredential_OutputArguments Variable.
+        /// </summary>
+        public const uint KeyCredentialConfiguration_CreateCredential_OutputArguments = 17530;
 
         /// <summary>
         /// The identifier for the KeyCredentialConfigurationType_ResourceUri Variable.
@@ -20613,6 +20688,16 @@ namespace Opc.Ua
         /// The identifier for the KeyCredentialConfigurationType_ServiceStatus Variable.
         /// </summary>
         public const uint KeyCredentialConfigurationType_ServiceStatus = 18005;
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationType_GetEncryptingKey_InputArguments Variable.
+        /// </summary>
+        public const uint KeyCredentialConfigurationType_GetEncryptingKey_InputArguments = 17535;
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationType_GetEncryptingKey_OutputArguments Variable.
+        /// </summary>
+        public const uint KeyCredentialConfigurationType_GetEncryptingKey_OutputArguments = 17536;
 
         /// <summary>
         /// The identifier for the KeyCredentialConfigurationType_UpdateCredential_InputArguments Variable.
@@ -33370,6 +33455,16 @@ namespace Opc.Ua
         public static readonly NodeId ServerConfiguration_GetRejectedList = new NodeId(Opc.Ua.Methods.ServerConfiguration_GetRejectedList);
 
         /// <summary>
+        /// The identifier for the KeyCredentialConfigurationFolderType_CreateCredential Method.
+        /// </summary>
+        public static readonly NodeId KeyCredentialConfigurationFolderType_CreateCredential = new NodeId(Opc.Ua.Methods.KeyCredentialConfigurationFolderType_CreateCredential);
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationType_GetEncryptingKey Method.
+        /// </summary>
+        public static readonly NodeId KeyCredentialConfigurationType_GetEncryptingKey = new NodeId(Opc.Ua.Methods.KeyCredentialConfigurationType_GetEncryptingKey);
+
+        /// <summary>
         /// The identifier for the KeyCredentialConfigurationType_UpdateCredential Method.
         /// </summary>
         public static readonly NodeId KeyCredentialConfigurationType_UpdateCredential = new NodeId(Opc.Ua.Methods.KeyCredentialConfigurationType_UpdateCredential);
@@ -34463,6 +34558,11 @@ namespace Opc.Ua
         /// The identifier for the ServerConfiguration_CertificateGroups_DefaultUserTokenGroup_TrustList Object.
         /// </summary>
         public static readonly NodeId ServerConfiguration_CertificateGroups_DefaultUserTokenGroup_TrustList = new NodeId(Opc.Ua.Objects.ServerConfiguration_CertificateGroups_DefaultUserTokenGroup_TrustList);
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationFolderType_ServiceName_Placeholder Object.
+        /// </summary>
+        public static readonly NodeId KeyCredentialConfigurationFolderType_ServiceName_Placeholder = new NodeId(Opc.Ua.Objects.KeyCredentialConfigurationFolderType_ServiceName_Placeholder);
 
         /// <summary>
         /// The identifier for the KeyCredentialConfiguration Object.
@@ -40098,6 +40198,11 @@ namespace Opc.Ua
         /// The identifier for the CertificateUpdatedAuditEventType ObjectType.
         /// </summary>
         public static readonly NodeId CertificateUpdatedAuditEventType = new NodeId(Opc.Ua.ObjectTypes.CertificateUpdatedAuditEventType);
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationFolderType ObjectType.
+        /// </summary>
+        public static readonly NodeId KeyCredentialConfigurationFolderType = new NodeId(Opc.Ua.ObjectTypes.KeyCredentialConfigurationFolderType);
 
         /// <summary>
         /// The identifier for the KeyCredentialConfigurationType ObjectType.
@@ -50440,6 +50545,41 @@ namespace Opc.Ua
         public static readonly NodeId ServerConfiguration_GetRejectedList_OutputArguments = new NodeId(Opc.Ua.Variables.ServerConfiguration_GetRejectedList_OutputArguments);
 
         /// <summary>
+        /// The identifier for the KeyCredentialConfigurationFolderType_ServiceName_Placeholder_ResourceUri Variable.
+        /// </summary>
+        public static readonly NodeId KeyCredentialConfigurationFolderType_ServiceName_Placeholder_ResourceUri = new NodeId(Opc.Ua.Variables.KeyCredentialConfigurationFolderType_ServiceName_Placeholder_ResourceUri);
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationFolderType_ServiceName_Placeholder_ProfileUri Variable.
+        /// </summary>
+        public static readonly NodeId KeyCredentialConfigurationFolderType_ServiceName_Placeholder_ProfileUri = new NodeId(Opc.Ua.Variables.KeyCredentialConfigurationFolderType_ServiceName_Placeholder_ProfileUri);
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationFolderType_ServiceName_Placeholder_GetEncryptingKey_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId KeyCredentialConfigurationFolderType_ServiceName_Placeholder_GetEncryptingKey_InputArguments = new NodeId(Opc.Ua.Variables.KeyCredentialConfigurationFolderType_ServiceName_Placeholder_GetEncryptingKey_InputArguments);
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationFolderType_ServiceName_Placeholder_GetEncryptingKey_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId KeyCredentialConfigurationFolderType_ServiceName_Placeholder_GetEncryptingKey_OutputArguments = new NodeId(Opc.Ua.Variables.KeyCredentialConfigurationFolderType_ServiceName_Placeholder_GetEncryptingKey_OutputArguments);
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationFolderType_ServiceName_Placeholder_UpdateCredential_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId KeyCredentialConfigurationFolderType_ServiceName_Placeholder_UpdateCredential_InputArguments = new NodeId(Opc.Ua.Variables.KeyCredentialConfigurationFolderType_ServiceName_Placeholder_UpdateCredential_InputArguments);
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationFolderType_CreateCredential_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId KeyCredentialConfigurationFolderType_CreateCredential_InputArguments = new NodeId(Opc.Ua.Variables.KeyCredentialConfigurationFolderType_CreateCredential_InputArguments);
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationFolderType_CreateCredential_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId KeyCredentialConfigurationFolderType_CreateCredential_OutputArguments = new NodeId(Opc.Ua.Variables.KeyCredentialConfigurationFolderType_CreateCredential_OutputArguments);
+
+        /// <summary>
         /// The identifier for the KeyCredentialConfiguration_ServiceName_Placeholder_ResourceUri Variable.
         /// </summary>
         public static readonly NodeId KeyCredentialConfiguration_ServiceName_Placeholder_ResourceUri = new NodeId(Opc.Ua.Variables.KeyCredentialConfiguration_ServiceName_Placeholder_ResourceUri);
@@ -50450,9 +50590,29 @@ namespace Opc.Ua
         public static readonly NodeId KeyCredentialConfiguration_ServiceName_Placeholder_ProfileUri = new NodeId(Opc.Ua.Variables.KeyCredentialConfiguration_ServiceName_Placeholder_ProfileUri);
 
         /// <summary>
+        /// The identifier for the KeyCredentialConfiguration_ServiceName_Placeholder_GetEncryptingKey_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId KeyCredentialConfiguration_ServiceName_Placeholder_GetEncryptingKey_InputArguments = new NodeId(Opc.Ua.Variables.KeyCredentialConfiguration_ServiceName_Placeholder_GetEncryptingKey_InputArguments);
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfiguration_ServiceName_Placeholder_GetEncryptingKey_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId KeyCredentialConfiguration_ServiceName_Placeholder_GetEncryptingKey_OutputArguments = new NodeId(Opc.Ua.Variables.KeyCredentialConfiguration_ServiceName_Placeholder_GetEncryptingKey_OutputArguments);
+
+        /// <summary>
         /// The identifier for the KeyCredentialConfiguration_ServiceName_Placeholder_UpdateCredential_InputArguments Variable.
         /// </summary>
         public static readonly NodeId KeyCredentialConfiguration_ServiceName_Placeholder_UpdateCredential_InputArguments = new NodeId(Opc.Ua.Variables.KeyCredentialConfiguration_ServiceName_Placeholder_UpdateCredential_InputArguments);
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfiguration_CreateCredential_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId KeyCredentialConfiguration_CreateCredential_InputArguments = new NodeId(Opc.Ua.Variables.KeyCredentialConfiguration_CreateCredential_InputArguments);
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfiguration_CreateCredential_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId KeyCredentialConfiguration_CreateCredential_OutputArguments = new NodeId(Opc.Ua.Variables.KeyCredentialConfiguration_CreateCredential_OutputArguments);
 
         /// <summary>
         /// The identifier for the KeyCredentialConfigurationType_ResourceUri Variable.
@@ -50473,6 +50633,16 @@ namespace Opc.Ua
         /// The identifier for the KeyCredentialConfigurationType_ServiceStatus Variable.
         /// </summary>
         public static readonly NodeId KeyCredentialConfigurationType_ServiceStatus = new NodeId(Opc.Ua.Variables.KeyCredentialConfigurationType_ServiceStatus);
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationType_GetEncryptingKey_InputArguments Variable.
+        /// </summary>
+        public static readonly NodeId KeyCredentialConfigurationType_GetEncryptingKey_InputArguments = new NodeId(Opc.Ua.Variables.KeyCredentialConfigurationType_GetEncryptingKey_InputArguments);
+
+        /// <summary>
+        /// The identifier for the KeyCredentialConfigurationType_GetEncryptingKey_OutputArguments Variable.
+        /// </summary>
+        public static readonly NodeId KeyCredentialConfigurationType_GetEncryptingKey_OutputArguments = new NodeId(Opc.Ua.Variables.KeyCredentialConfigurationType_GetEncryptingKey_OutputArguments);
 
         /// <summary>
         /// The identifier for the KeyCredentialConfigurationType_UpdateCredential_InputArguments Variable.
@@ -61249,6 +61419,11 @@ namespace Opc.Ua
         public const string CreateClientName = "CreateClientName";
 
         /// <summary>
+        /// The BrowseName for the CreateCredential component.
+        /// </summary>
+        public const string CreateCredential = "CreateCredential";
+
+        /// <summary>
         /// The BrowseName for the CreateDataSetMirror component.
         /// </summary>
         public const string CreateDataSetMirror = "CreateDataSetMirror";
@@ -62429,6 +62604,11 @@ namespace Opc.Ua
         public const string GenericAttributeValue = "GenericAttributeValue";
 
         /// <summary>
+        /// The BrowseName for the GetEncryptingKey component.
+        /// </summary>
+        public const string GetEncryptingKey = "GetEncryptingKey";
+
+        /// <summary>
         /// The BrowseName for the GetEndpointsRequest component.
         /// </summary>
         public const string GetEndpointsRequest = "GetEndpointsRequest";
@@ -63037,6 +63217,11 @@ namespace Opc.Ua
         /// The BrowseName for the KeyCredentialConfiguration component.
         /// </summary>
         public const string KeyCredentialConfiguration = "KeyCredentialConfiguration";
+
+        /// <summary>
+        /// The BrowseName for the KeyCredentialConfigurationFolderType component.
+        /// </summary>
+        public const string KeyCredentialConfigurationFolderType = "KeyCredentialConfigurationFolderType";
 
         /// <summary>
         /// The BrowseName for the KeyCredentialConfigurationType component.

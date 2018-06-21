@@ -2264,6 +2264,128 @@ namespace Opc.Ua.Gds
     #endif
     #endregion
 
+    #region RevokeCertificateMethodState Class
+    #if (!OPCUA_EXCLUDE_RevokeCertificateMethodState)
+    /// <summary>
+    /// Stores an instance of the RevokeCertificateMethodType Method.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class RevokeCertificateMethodState : MethodState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public RevokeCertificateMethodState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Constructs an instance of a node.
+        /// </summary>
+        /// <param name="parent">The parent.</param>
+        /// <returns>The new node.</returns>
+        public new static NodeState Construct(NodeState parent)
+        {
+            return new RevokeCertificateMethodState(parent);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvR0RTL/////8EYYIKBAAAAAEAGwAAAFJl" +
+           "dm9rZUNlcnRpZmljYXRlTWV0aG9kVHlwZQEBmToALwEBmTqZOgAAAQH/////AQAAABVgqQoCAAAAAAAO" +
+           "AAAASW5wdXRBcmd1bWVudHMBAZo6AC4ARJo6AACWAgAAAAEAKgEBHAAAAA0AAABBcHBsaWNhdGlvbklk" +
+           "ABH/////AAAAAAABACoBARoAAAALAAAAQ2VydGlmaWNhdGUAD/////8AAAAAAAEAKAEBAAAAAQH/////" +
+           "AAAAAA==";
+        #endregion
+        #endif
+        #endregion
+
+        #region Event Callbacks
+        /// <summary>
+        /// Raised when the the method is called.
+        /// </summary>
+        public RevokeCertificateMethodStateMethodCallHandler OnCall;
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Invokes the method, returns the result and output argument.
+        /// </summary>
+        /// <param name="context">The current context.</param>
+        /// <param name="objectId">The id of the object.</param>
+        /// <param name="inputArguments">The input arguments which have been already validated.</param>
+        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
+        /// <returns></returns>
+        protected override ServiceResult Call(
+            ISystemContext context,
+            NodeId objectId,
+            IList<object> inputArguments,
+            IList<object> outputArguments)
+        {
+            if (OnCall == null)
+            {
+                return base.Call(context, objectId, inputArguments, outputArguments);
+            }
+
+            ServiceResult result = null;
+
+            NodeId applicationId = (NodeId)inputArguments[0];
+            byte[] certificate = (byte[])inputArguments[1];
+
+            if (OnCall != null)
+            {
+                result = OnCall(
+                    context,
+                    this,
+                    objectId,
+                    applicationId,
+                    certificate);
+            }
+
+            return result;
+        }
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+
+    /// <summary>
+    /// Used to receive notifications when the method is called.
+    /// </summary>
+    /// <exclude />
+    public delegate ServiceResult RevokeCertificateMethodStateMethodCallHandler(
+        ISystemContext context,
+        MethodState method,
+        NodeId objectId,
+        NodeId applicationId,
+        byte[] certificate);
+    #endif
+    #endregion
+
     #region GetCertificateStatusMethodState Class
     #if (!OPCUA_EXCLUDE_GetCertificateStatusMethodState)
     /// <summary>
@@ -2447,12 +2569,23 @@ namespace Opc.Ua.Gds
         protected override void InitializeOptionalChildren(ISystemContext context)
         {
             base.InitializeOptionalChildren(context);
+
+            if (RevokeCertificate != null)
+            {
+                RevokeCertificate.Initialize(context, RevokeCertificate_InitializationString);
+            }
         }
 
         #region Initialization String
+        private const string RevokeCertificate_InitializationString =
+           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvR0RTL/////8EYYIKBAAAAAEAEQAAAFJl" +
+           "dm9rZUNlcnRpZmljYXRlAQGbOgAvAQGbOps6AAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFy" +
+           "Z3VtZW50cwEBnDoALgBEnDoAAJYCAAAAAQAqAQEcAAAADQAAAEFwcGxpY2F0aW9uSWQAEf////8AAAAA" +
+           "AAEAKgEBGgAAAAsAAABDZXJ0aWZpY2F0ZQAP/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
+
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvR0RTL/////8EYIAAAQAAAAEAIAAAAENl" +
-           "cnRpZmljYXRlRGlyZWN0b3J5VHlwZUluc3RhbmNlAQE/AAEBPwD/////DwAAAARggAoBAAAAAQAMAAAA" +
+           "cnRpZmljYXRlRGlyZWN0b3J5VHlwZUluc3RhbmNlAQE/AAEBPwD/////EAAAAARggAoBAAAAAQAMAAAA" +
            "QXBwbGljYXRpb25zAQFAAAAvAD1AAAAA/////wAAAAAEYYIKBAAAAAEAEAAAAEZpbmRBcHBsaWNhdGlv" +
            "bnMBAUEAAC8BAQ8AQQAAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFCAAAu" +
            "AERCAAAAlgEAAAABACoBAR0AAAAOAAAAQXBwbGljYXRpb25VcmkADP////8AAAAAAAEAKAEBAAAAAQH/" +
@@ -2545,22 +2678,25 @@ namespace Opc.Ua.Gds
            "Af////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAVcAAC4ARFcAAACWAwAAAAEAKgEB" +
            "GgAAAAsAAABDZXJ0aWZpY2F0ZQAP/////wAAAAAAAQAqAQEZAAAACgAAAFByaXZhdGVLZXkAD/////8A" +
            "AAAAAAEAKgEBIQAAABIAAABJc3N1ZXJDZXJ0aWZpY2F0ZXMADwEAAAAAAAAAAAEAKAEBAAAAAQH/////" +
-           "AAAAAARhggoEAAAAAQAUAAAAR2V0Q2VydGlmaWNhdGVHcm91cHMBAXEBAC8BAXEBcQEAAAEB/////wIA" +
-           "AAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFyAQAuAERyAQAAlgEAAAABACoBARwAAAANAAAA" +
-           "QXBwbGljYXRpb25JZAAR/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRw" +
-           "dXRBcmd1bWVudHMBAXMBAC4ARHMBAACWAQAAAAEAKgEBIgAAABMAAABDZXJ0aWZpY2F0ZUdyb3VwSWRz" +
-           "ABEBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEADAAAAEdldFRydXN0TGlzdAEBxQAA" +
-           "LwEBxQDFAAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAcYAAC4ARMYAAACW" +
-           "AgAAAAEAKgEBHAAAAA0AAABBcHBsaWNhdGlvbklkABH/////AAAAAAABACoBASEAAAASAAAAQ2VydGlm" +
-           "aWNhdGVHcm91cElkABH/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1" +
-           "dEFyZ3VtZW50cwEBxwAALgBExwAAAJYBAAAAAQAqAQEaAAAACwAAAFRydXN0TGlzdElkABH/////AAAA" +
-           "AAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEAFAAAAEdldENlcnRpZmljYXRlU3RhdHVzAQHeAAAv" +
-           "AQHeAN4AAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEB3wAALgBE3wAAAJYD" +
-           "AAAAAQAqAQEcAAAADQAAAEFwcGxpY2F0aW9uSWQAEf////8AAAAAAAEAKgEBIQAAABIAAABDZXJ0aWZp" +
-           "Y2F0ZUdyb3VwSWQAEf////8AAAAAAAEAKgEBIAAAABEAAABDZXJ0aWZpY2F0ZVR5cGVJZAAR/////wAA" +
-           "AAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAeAAAC4AROAA" +
-           "AACWAQAAAAEAKgEBHQAAAA4AAABVcGRhdGVSZXF1aXJlZAAB/////wAAAAAAAQAoAQEAAAABAf////8A" +
-           "AAAA";
+           "AAAAAARhggoEAAAAAQARAAAAUmV2b2tlQ2VydGlmaWNhdGUBAZs6AC8BAZs6mzoAAAEB/////wEAAAAV" +
+           "YKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQGcOgAuAEScOgAAlgIAAAABACoBARwAAAANAAAAQXBw" +
+           "bGljYXRpb25JZAAR/////wAAAAAAAQAqAQEaAAAACwAAAENlcnRpZmljYXRlAA//////AAAAAAABACgB" +
+           "AQAAAAEB/////wAAAAAEYYIKBAAAAAEAFAAAAEdldENlcnRpZmljYXRlR3JvdXBzAQFxAQAvAQFxAXEB" +
+           "AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBcgEALgBEcgEAAJYBAAAAAQAq" +
+           "AQEcAAAADQAAAEFwcGxpY2F0aW9uSWQAEf////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAA" +
+           "AAAPAAAAT3V0cHV0QXJndW1lbnRzAQFzAQAuAERzAQAAlgEAAAABACoBASIAAAATAAAAQ2VydGlmaWNh" +
+           "dGVHcm91cElkcwARAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAABAAwAAABHZXRUcnVz" +
+           "dExpc3QBAcUAAC8BAcUAxQAAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQHG" +
+           "AAAuAETGAAAAlgIAAAABACoBARwAAAANAAAAQXBwbGljYXRpb25JZAAR/////wAAAAAAAQAqAQEhAAAA" +
+           "EgAAAENlcnRpZmljYXRlR3JvdXBJZAAR/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAA" +
+           "AA8AAABPdXRwdXRBcmd1bWVudHMBAccAAC4ARMcAAACWAQAAAAEAKgEBGgAAAAsAAABUcnVzdExpc3RJ" +
+           "ZAAR/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAABABQAAABHZXRDZXJ0aWZpY2F0ZVN0" +
+           "YXR1cwEB3gAALwEB3gDeAAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAd8A" +
+           "AC4ARN8AAACWAwAAAAEAKgEBHAAAAA0AAABBcHBsaWNhdGlvbklkABH/////AAAAAAABACoBASEAAAAS" +
+           "AAAAQ2VydGlmaWNhdGVHcm91cElkABH/////AAAAAAABACoBASAAAAARAAAAQ2VydGlmaWNhdGVUeXBl" +
+           "SWQAEf////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRz" +
+           "AQHgAAAuAETgAAAAlgEAAAABACoBAR0AAAAOAAAAVXBkYXRlUmVxdWlyZWQAAf////8AAAAAAAEAKAEB" +
+           "AAAAAQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -2647,6 +2783,27 @@ namespace Opc.Ua.Gds
                 }
 
                 m_finishRequestMethod = value;
+            }
+        }
+
+        /// <summary>
+        /// A description for the RevokeCertificateMethodType Method.
+        /// </summary>
+        public RevokeCertificateMethodState RevokeCertificate
+        {
+            get
+            {
+                return m_revokeCertificateMethod;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_revokeCertificateMethod, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_revokeCertificateMethod = value;
             }
         }
 
@@ -2742,6 +2899,11 @@ namespace Opc.Ua.Gds
             if (m_finishRequestMethod != null)
             {
                 children.Add(m_finishRequestMethod);
+            }
+
+            if (m_revokeCertificateMethod != null)
+            {
+                children.Add(m_revokeCertificateMethod);
             }
 
             if (m_getCertificateGroupsMethod != null)
@@ -2864,6 +3026,27 @@ namespace Opc.Ua.Gds
                     break;
                 }
 
+                case Opc.Ua.Gds.BrowseNames.RevokeCertificate:
+                {
+                    if (createOrReplace)
+                    {
+                        if (RevokeCertificate == null)
+                        {
+                            if (replacement == null)
+                            {
+                                RevokeCertificate = new RevokeCertificateMethodState(this);
+                            }
+                            else
+                            {
+                                RevokeCertificate = (RevokeCertificateMethodState)replacement;
+                            }
+                        }
+                    }
+
+                    instance = RevokeCertificate;
+                    break;
+                }
+
                 case Opc.Ua.Gds.BrowseNames.GetCertificateGroups:
                 {
                     if (createOrReplace)
@@ -2942,6 +3125,7 @@ namespace Opc.Ua.Gds
         private StartSigningRequestMethodState m_startSigningRequestMethod;
         private StartNewKeyPairRequestMethodState m_startNewKeyPairRequestMethod;
         private FinishRequestMethodState m_finishRequestMethod;
+        private RevokeCertificateMethodState m_revokeCertificateMethod;
         private GetCertificateGroupsMethodState m_getCertificateGroupsMethod;
         private GetTrustListMethodState m_getTrustListMethod;
         private GetCertificateStatusMethodState m_getCertificateStatusMethod;
@@ -3490,21 +3674,21 @@ namespace Opc.Ua.Gds
            "UmVzb3VyY2VVcmkBAf0DAC4ARP0DAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABQcm9maWxl" +
            "VXJpcwEB/gMALgBE/gMAAAAMAQAAAAEB/////wAAAAAEYYIKBAAAAAEADAAAAFN0YXJ0UmVxdWVzdAEB" +
            "/wMALwEB/wP/AwAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAQAEAC4ARAAE" +
-           "AACWBAAAAAEAKgEBHQAAAA4AAABBcHBsaWNhdGlvblVyaQAM/////wAAAAAAAQAqAQEaAAAACwAAAENl" +
-           "cnRpZmljYXRlAA//////AAAAAAABACoBASAAAAARAAAAU2VjdXJpdHlQb2xpY3lVcmkADP////8AAAAA" +
-           "AAEAKgEBHQAAAA4AAABSZXF1ZXN0ZWRSb2xlcwARAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAAFWCp" +
-           "CgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAQEEAC4ARAEEAACWAQAAAAEAKgEBGAAAAAkAAABSZXF1" +
-           "ZXN0SWQAEf////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQANAAAARmluaXNoUmVxdWVz" +
-           "dAEBAgQALwEBAgQCBAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAQMEAC4A" +
-           "RAMEAACWAgAAAAEAKgEBGAAAAAkAAABSZXF1ZXN0SWQAEf////8AAAAAAAEAKgEBHAAAAA0AAABDYW5j" +
-           "ZWxSZXF1ZXN0AAH/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFy" +
-           "Z3VtZW50cwEBBAQALgBEBAQAAJYFAAAAAQAqAQEbAAAADAAAAENyZWRlbnRpYWxJZAAM/////wAAAAAA" +
-           "AQAqAQEfAAAAEAAAAENyZWRlbnRpYWxTZWNyZXQAD/////8AAAAAAAEAKgEBJAAAABUAAABDZXJ0aWZp" +
-           "Y2F0ZVRodW1icHJpbnQADP////8AAAAAAAEAKgEBIAAAABEAAABTZWN1cml0eVBvbGljeVVyaQAM////" +
-           "/wAAAAAAAQAqAQEbAAAADAAAAEdyYW50ZWRSb2xlcwARAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAA" +
-           "BGGCCgQAAAABAAYAAABSZXZva2UBAQUEAC8BAQUEBQQAAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElu" +
-           "cHV0QXJndW1lbnRzAQEGBAAuAEQGBAAAlgEAAAABACoBARsAAAAMAAAAQ3JlZGVudGlhbElkAAz/////" +
-           "AAAAAAABACgBAQAAAAEB/////wAAAAA=";
+           "AACWBAAAAAEAKgEBHQAAAA4AAABBcHBsaWNhdGlvblVyaQAM/////wAAAAAAAQAqAQEYAAAACQAAAFB1" +
+           "YmxpY0tleQAP/////wAAAAAAAQAqAQEgAAAAEQAAAFNlY3VyaXR5UG9saWN5VXJpAAz/////AAAAAAAB" +
+           "ACoBAR0AAAAOAAAAUmVxdWVzdGVkUm9sZXMAEQEAAAAAAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoC" +
+           "AAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQEBBAAuAEQBBAAAlgEAAAABACoBARgAAAAJAAAAUmVxdWVz" +
+           "dElkABH/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEADQAAAEZpbmlzaFJlcXVlc3QB" +
+           "AQIEAC8BAQIEAgQAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQEDBAAuAEQD" +
+           "BAAAlgIAAAABACoBARgAAAAJAAAAUmVxdWVzdElkABH/////AAAAAAABACoBARwAAAANAAAAQ2FuY2Vs" +
+           "UmVxdWVzdAAB/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1" +
+           "bWVudHMBAQQEAC4ARAQEAACWBQAAAAEAKgEBGwAAAAwAAABDcmVkZW50aWFsSWQADP////8AAAAAAAEA" +
+           "KgEBHwAAABAAAABDcmVkZW50aWFsU2VjcmV0AA//////AAAAAAABACoBASQAAAAVAAAAQ2VydGlmaWNh" +
+           "dGVUaHVtYnByaW50AAz/////AAAAAAABACoBASAAAAARAAAAU2VjdXJpdHlQb2xpY3lVcmkADP////8A" +
+           "AAAAAAEAKgEBGwAAAAwAAABHcmFudGVkUm9sZXMAEQEAAAAAAAAAAAEAKAEBAAAAAQH/////AAAAAARh" +
+           "ggoEAAAAAQAGAAAAUmV2b2tlAQEFBAAvAQEFBAUEAAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1" +
+           "dEFyZ3VtZW50cwEBBgQALgBEBgQAAJYBAAAAAQAqAQEbAAAADAAAAENyZWRlbnRpYWxJZAAM/////wAA" +
+           "AAAAAQAoAQEAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -3848,11 +4032,11 @@ namespace Opc.Ua.Gds
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvR0RTL/////8EYYIKBAAAAAEAIwAAAEtl" +
            "eUNyZWRlbnRpYWxTdGFydFJlcXVlc3RNZXRob2RUeXBlAQEHBAAvAQEHBAcEAAABAf////8CAAAAFWCp" +
            "CgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBCAQALgBECAQAAJYEAAAAAQAqAQEdAAAADgAAAEFwcGxp" +
-           "Y2F0aW9uVXJpAAz/////AAAAAAABACoBARoAAAALAAAAQ2VydGlmaWNhdGUAD/////8AAAAAAAEAKgEB" +
-           "IAAAABEAAABTZWN1cml0eVBvbGljeVVyaQAM/////wAAAAAAAQAqAQEdAAAADgAAAFJlcXVlc3RlZFJv" +
-           "bGVzABEBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50" +
-           "cwEBCQQALgBECQQAAJYBAAAAAQAqAQEYAAAACQAAAFJlcXVlc3RJZAAR/////wAAAAAAAQAoAQEAAAAB" +
-           "Af////8AAAAA";
+           "Y2F0aW9uVXJpAAz/////AAAAAAABACoBARgAAAAJAAAAUHVibGljS2V5AA//////AAAAAAABACoBASAA" +
+           "AAARAAAAU2VjdXJpdHlQb2xpY3lVcmkADP////8AAAAAAAEAKgEBHQAAAA4AAABSZXF1ZXN0ZWRSb2xl" +
+           "cwARAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMB" +
+           "AQkEAC4ARAkEAACWAQAAAAEAKgEBGAAAAAkAAABSZXF1ZXN0SWQAEf////8AAAAAAAEAKAEBAAAAAQH/" +
+           "////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -3890,7 +4074,7 @@ namespace Opc.Ua.Gds
             ServiceResult result = null;
 
             string applicationUri = (string)inputArguments[0];
-            byte[] certificate = (byte[])inputArguments[1];
+            byte[] publicKey = (byte[])inputArguments[1];
             string securityPolicyUri = (string)inputArguments[2];
             NodeId[] requestedRoles = (NodeId[])inputArguments[3];
 
@@ -3903,7 +4087,7 @@ namespace Opc.Ua.Gds
                     this,
                     objectId,
                     applicationUri,
-                    certificate,
+                    publicKey,
                     securityPolicyUri,
                     requestedRoles,
                     ref requestId);
@@ -3928,7 +4112,7 @@ namespace Opc.Ua.Gds
         MethodState method,
         NodeId objectId,
         string applicationUri,
-        byte[] certificate,
+        byte[] publicKey,
         string securityPolicyUri,
         NodeId[] requestedRoles,
         ref NodeId requestId);

@@ -47,6 +47,60 @@
     <Namespace Name="OpcUa" Version="1.03" PublicationDate="2013-12-02T00:00:00Z" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</Namespace>
   </Namespaces>
 
+  <Object SymbolicName="ADI:OpcUaAdiNamespaceMetadata" TypeDefinition="OpcUa:NamespaceMetadataType">
+    <BrowseName>http://opcfoundation.org/UA/ADI/</BrowseName>
+    <Children>
+      <Property SymbolicName="OpcUa:NamespaceUri" DataType="OpcUa:String">
+        <DefaultValue>
+          <uax:String>http://opcfoundation.org/UA/ADI/</uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="OpcUa:NamespaceVersion" DataType="OpcUa:String">
+        <DefaultValue>
+          <uax:String>1.01</uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="OpcUa:NamespacePublicationDate" DataType="OpcUa:DateTime">
+        <DefaultValue>
+          <uax:String>2013-07-31</uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="OpcUa:IsNamespaceSubset" DataType="OpcUa:Boolean">
+        <DefaultValue>
+          <uax:Boolean>false</uax:Boolean>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="OpcUa:StaticNodeIdTypes" DataType="OpcUa:IdType" ValueRank="Array">
+        <DefaultValue>
+          <uax:ListOfInt32>
+            <uax:Int32>0</uax:Int32>
+          </uax:ListOfInt32>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="OpcUa:StaticNumericNodeIdRange" DataType="OpcUa:NumericRange" ValueRank="Array">
+        <DefaultValue>
+          <uax:ListOfString>
+            <uax:String>1:65535</uax:String>
+          </uax:ListOfString>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="OpcUa:StaticStringNodeIdPattern" DataType="OpcUa:String">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="OpcUa:DefaultRolePermissions" ModellingRule="Mandatory" />
+      <Property SymbolicName="OpcUa:DefaultUserRolePermissions" ModellingRule="Mandatory" />
+      <Property SymbolicName="OpcUa:DefaultAccessRestrictions" ModellingRule="Mandatory" />
+    </Children>
+    <References>
+      <Reference IsInverse="true">
+        <ReferenceType>OpcUa:HasComponent</ReferenceType>
+        <TargetId>OpcUa:Server_Namespaces</TargetId>
+      </Reference>
+    </References>
+  </Object>
+  
     <!-- AnalyserDeviceType -->
   <ObjectType SymbolicName="ADI:AnalyserDeviceType" BaseType="DI:DeviceType" IsAbstract="true" SupportsEvents="true">
     <Children>

@@ -28,13 +28,13 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2017-07-14T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
     <Uri>http://fdi-cooperation.com/OPCUA/FDI7/</Uri>
     <Uri>http://opcfoundation.org/UA/DI/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://fdi-cooperation.com/OPCUA/FDI7/">
+    <Model ModelUri="http://fdi-cooperation.com/OPCUA/FDI7/" PublicationDate="2017-07-14T00:00:00Z">
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.03" PublicationDate="2013-12-02T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.01" PublicationDate="2018-06-06T00:00:00Z" />
     </Model>
@@ -76,6 +76,126 @@
     <Alias Alias="HasEncoding">i=38</Alias>
     <Alias Alias="HasDescription">i=39</Alias>
   </Aliases>
+  <UAObject NodeId="ns=1;i=15009" BrowseName="1:http://fdi-cooperation.com/OPCUA/FDI7/" SymbolicName="OpcUaFdi7NamespaceMetadata">
+    <DisplayName>http://fdi-cooperation.com/OPCUA/FDI7/</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=15010</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=15011</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=15012</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=15013</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=15014</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=15015</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=15016</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=15039</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=15040</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=15041</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=15010" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=15009" DataType="String">
+    <DisplayName>NamespaceUri</DisplayName>
+    <Description>The URI of the namespace.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15009</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">http://fdi-cooperation.com/OPCUA/FDI7/</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=15011" BrowseName="NamespaceVersion" ParentNodeId="ns=1;i=15009" DataType="String">
+    <DisplayName>NamespaceVersion</DisplayName>
+    <Description>The human readable string representing version of the namespace.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15009</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1.3</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=15012" BrowseName="NamespacePublicationDate" ParentNodeId="ns=1;i=15009" DataType="DateTime">
+    <DisplayName>NamespacePublicationDate</DisplayName>
+    <Description>The publication date for the namespace.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15009</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2017-07-14</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=15013" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=15009" DataType="Boolean">
+    <DisplayName>IsNamespaceSubset</DisplayName>
+    <Description>If TRUE then the server only supports a subset of the namespace.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15009</Reference>
+    </References>
+    <Value>
+      <Boolean xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">false</Boolean>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=15014" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=15009" DataType="i=256" ValueRank="1">
+    <DisplayName>StaticNodeIdTypes</DisplayName>
+    <Description>A list of IdTypes for nodes which are the same in every server that exposes them.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15009</Reference>
+    </References>
+    <Value>
+      <ListOfInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <Int32>0</Int32>
+      </ListOfInt32>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=15015" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=1;i=15009" DataType="i=291" ValueRank="1">
+    <DisplayName>StaticNumericNodeIdRange</DisplayName>
+    <Description>A list of ranges for numeric node ids which are the same in every server that exposes them.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15009</Reference>
+    </References>
+    <Value>
+      <ListOfString xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <String>1:65535</String>
+      </ListOfString>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=15016" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=1;i=15009" DataType="String">
+    <DisplayName>StaticStringNodeIdPattern</DisplayName>
+    <Description>A regular expression which matches string node ids are the same in every server that exposes them.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15009</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+      </String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=15039" BrowseName="DefaultRolePermissions" ParentNodeId="ns=1;i=15009" DataType="i=96" ValueRank="1">
+    <DisplayName>DefaultRolePermissions</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15009</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=15040" BrowseName="DefaultUserRolePermissions" ParentNodeId="ns=1;i=15009" DataType="i=96" ValueRank="1">
+    <DisplayName>DefaultUserRolePermissions</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15009</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=15041" BrowseName="DefaultAccessRestrictions" ParentNodeId="ns=1;i=15009" DataType="UInt16">
+    <DisplayName>DefaultAccessRestrictions</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15009</Reference>
+    </References>
+  </UAVariable>
   <UAObjectType NodeId="ns=1;i=1371" BrowseName="1:Foundation_H1">
     <DisplayName>Foundation_H1</DisplayName>
     <References>
