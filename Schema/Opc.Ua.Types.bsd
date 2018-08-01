@@ -745,6 +745,7 @@
     <opc:Field Name="QueueName" TypeName="opc:String" />
     <opc:Field Name="ResourceUri" TypeName="opc:String" />
     <opc:Field Name="AuthenticationProfileUri" TypeName="opc:String" />
+    <opc:Field Name="RequestedDeliveryGuarantee" TypeName="tns:BrokerTransportQualityOfService" />
     <opc:Field Name="MetaDataQueueName" TypeName="opc:String" />
     <opc:Field Name="MetaDataUpdateTime" TypeName="opc:Double" />
   </opc:StructuredType>

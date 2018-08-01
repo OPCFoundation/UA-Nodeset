@@ -60,7 +60,7 @@
       </Property>
       <Property SymbolicName="OpcUa:NamespacePublicationDate" DataType="OpcUa:DateTime">
         <DefaultValue>
-          <uax:String>2018-06-06</uax:String>
+          <uax:DateTime>2018-06-06</uax:DateTime>
         </DefaultValue>
       </Property>
       <Property SymbolicName="OpcUa:IsNamespaceSubset" DataType="OpcUa:Boolean">

@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-06-20T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-07-31T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.02" PublicationDate="2018-06-20T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.02" PublicationDate="2018-07-31T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -995,6 +995,7 @@
       <Field Name="QueueName" DataType="i=12" />
       <Field Name="ResourceUri" DataType="i=12" />
       <Field Name="AuthenticationProfileUri" DataType="i=12" />
+      <Field Name="RequestedDeliveryGuarantee" DataType="i=15008" />
       <Field Name="MetaDataQueueName" DataType="i=12" />
       <Field Name="MetaDataUpdateTime" DataType="i=290" />
     </Definition>

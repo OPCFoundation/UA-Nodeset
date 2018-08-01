@@ -145,7 +145,7 @@
       <uax:NumericId>15004</uax:NumericId>
       <uax:Value>
         <uax:Value>
-          <uax:String>2018-06-06</uax:String>
+          <uax:DateTime>2018-06-06T00:00:00Z</uax:DateTime>
         </uax:Value>
       </uax:Value>
       <uax:DataType>

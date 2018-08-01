@@ -36,7 +36,7 @@
   <Models>
     <Model ModelUri="http://fdi-cooperation.com/OPCUA/FDI7/" PublicationDate="2017-07-14T00:00:00Z">
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.03" PublicationDate="2013-12-02T00:00:00Z" />
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.01" PublicationDate="2018-06-06T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.01" PublicationDate="2012-12-31T00:00:00Z" />
     </Model>
   </Models>
   <Aliases>
@@ -123,7 +123,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15009</Reference>
     </References>
     <Value>
-      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2017-07-14</String>
+      <DateTime xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2017-07-14T00:00:00Z</DateTime>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=15013" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=15009" DataType="Boolean">
