@@ -15239,6 +15239,7 @@ namespace Opc.Ua
             m_queueName = null;
             m_resourceUri = null;
             m_authenticationProfileUri = null;
+            m_requestedDeliveryGuarantee = BrokerTransportQualityOfService.NotSpecified;
             m_metaDataQueueName = null;
             m_metaDataUpdateTime = (double)0;
         }
@@ -15276,9 +15277,19 @@ namespace Opc.Ua
         }
 
         /// <summary>
+        /// A description for the RequestedDeliveryGuarantee field.
+        /// </summary>
+        [DataMember(Name = "RequestedDeliveryGuarantee", IsRequired = false, Order = 4)]
+        public BrokerTransportQualityOfService RequestedDeliveryGuarantee
+        {
+            get { return m_requestedDeliveryGuarantee;  }
+            set { m_requestedDeliveryGuarantee = value; }
+        }
+
+        /// <summary>
         /// A description for the MetaDataQueueName field.
         /// </summary>
-        [DataMember(Name = "MetaDataQueueName", IsRequired = false, Order = 4)]
+        [DataMember(Name = "MetaDataQueueName", IsRequired = false, Order = 5)]
         public string MetaDataQueueName
         {
             get { return m_metaDataQueueName;  }
@@ -15288,7 +15299,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the MetaDataUpdateTime field.
         /// </summary>
-        [DataMember(Name = "MetaDataUpdateTime", IsRequired = false, Order = 5)]
+        [DataMember(Name = "MetaDataUpdateTime", IsRequired = false, Order = 6)]
         public double MetaDataUpdateTime
         {
             get { return m_metaDataUpdateTime;  }
@@ -15325,6 +15336,7 @@ namespace Opc.Ua
             encoder.WriteString("QueueName", QueueName);
             encoder.WriteString("ResourceUri", ResourceUri);
             encoder.WriteString("AuthenticationProfileUri", AuthenticationProfileUri);
+            encoder.WriteEnumerated("RequestedDeliveryGuarantee", RequestedDeliveryGuarantee);
             encoder.WriteString("MetaDataQueueName", MetaDataQueueName);
             encoder.WriteDouble("MetaDataUpdateTime", MetaDataUpdateTime);
 
@@ -15341,6 +15353,7 @@ namespace Opc.Ua
             QueueName = decoder.ReadString("QueueName");
             ResourceUri = decoder.ReadString("ResourceUri");
             AuthenticationProfileUri = decoder.ReadString("AuthenticationProfileUri");
+            RequestedDeliveryGuarantee = (BrokerTransportQualityOfService)decoder.ReadEnumerated("RequestedDeliveryGuarantee", typeof(BrokerTransportQualityOfService));
             MetaDataQueueName = decoder.ReadString("MetaDataQueueName");
             MetaDataUpdateTime = decoder.ReadDouble("MetaDataUpdateTime");
 
@@ -15366,6 +15379,7 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_queueName, value.m_queueName)) return false;
             if (!Utils.IsEqual(m_resourceUri, value.m_resourceUri)) return false;
             if (!Utils.IsEqual(m_authenticationProfileUri, value.m_authenticationProfileUri)) return false;
+            if (!Utils.IsEqual(m_requestedDeliveryGuarantee, value.m_requestedDeliveryGuarantee)) return false;
             if (!Utils.IsEqual(m_metaDataQueueName, value.m_metaDataQueueName)) return false;
             if (!Utils.IsEqual(m_metaDataUpdateTime, value.m_metaDataUpdateTime)) return false;
 
@@ -15388,6 +15402,7 @@ namespace Opc.Ua
             clone.m_queueName = (string)Utils.Clone(this.m_queueName);
             clone.m_resourceUri = (string)Utils.Clone(this.m_resourceUri);
             clone.m_authenticationProfileUri = (string)Utils.Clone(this.m_authenticationProfileUri);
+            clone.m_requestedDeliveryGuarantee = (BrokerTransportQualityOfService)Utils.Clone(this.m_requestedDeliveryGuarantee);
             clone.m_metaDataQueueName = (string)Utils.Clone(this.m_metaDataQueueName);
             clone.m_metaDataUpdateTime = (double)Utils.Clone(this.m_metaDataUpdateTime);
 
@@ -15399,6 +15414,7 @@ namespace Opc.Ua
         private string m_queueName;
         private string m_resourceUri;
         private string m_authenticationProfileUri;
+        private BrokerTransportQualityOfService m_requestedDeliveryGuarantee;
         private string m_metaDataQueueName;
         private double m_metaDataUpdateTime;
         #endregion

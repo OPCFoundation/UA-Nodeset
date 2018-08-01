@@ -62,7 +62,7 @@
       </Property>
       <Property SymbolicName="ua:NamespacePublicationDate" DataType="ua:DateTime">
         <DefaultValue>
-          <uax:String>2017-07-14</uax:String>
+          <uax:DateTime>2017-07-14</uax:DateTime>
         </DefaultValue>
       </Property>
       <Property SymbolicName="ua:IsNamespaceSubset" DataType="ua:Boolean">
