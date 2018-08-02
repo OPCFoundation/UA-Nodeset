@@ -137,7 +137,8 @@ static struct _OpcUa_EnumeratedValue g_OpcUa_AccessLevelType_EnumeratedValues[] 
     { "CurrentRead", 1 },
     { "CurrentWrite", 2 },
     { "HistoryRead", 4 },
-    { "HistoryWrite", 16 },
+    { "HistoryWrite", 8 },
+    { "SemanticChange", 16 },
     { "StatusWrite", 32 },
     { "TimestampWrite", 64 },
     { OpcUa_Null, 0 }

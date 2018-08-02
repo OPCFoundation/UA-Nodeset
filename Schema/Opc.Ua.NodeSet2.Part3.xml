@@ -1100,7 +1100,8 @@
       <Field Name="CurrentRead" Value="0" />
       <Field Name="CurrentWrite" Value="1" />
       <Field Name="HistoryRead" Value="2" />
-      <Field Name="HistoryWrite" Value="4" />
+      <Field Name="HistoryWrite" Value="3" />
+      <Field Name="SemanticChange" Value="4" />
       <Field Name="StatusWrite" Value="5" />
       <Field Name="TimestampWrite" Value="6" />
     </Definition>
@@ -1132,12 +1133,12 @@
         <LocalizedText>
           <Locale>
           </Locale>
-          <Text>Reserved</Text>
+          <Text>HistoryWrite</Text>
         </LocalizedText>
         <LocalizedText>
           <Locale>
           </Locale>
-          <Text>HistoryWrite</Text>
+          <Text>SemanticChange</Text>
         </LocalizedText>
         <LocalizedText>
           <Locale>
