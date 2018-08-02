@@ -818,7 +818,8 @@
     <opc:EnumeratedValue Name="CurrentRead" Value="1" />
     <opc:EnumeratedValue Name="CurrentWrite" Value="2" />
     <opc:EnumeratedValue Name="HistoryRead" Value="4" />
-    <opc:EnumeratedValue Name="HistoryWrite" Value="16" />
+    <opc:EnumeratedValue Name="HistoryWrite" Value="8" />
+    <opc:EnumeratedValue Name="SemanticChange" Value="16" />
     <opc:EnumeratedValue Name="StatusWrite" Value="32" />
     <opc:EnumeratedValue Name="TimestampWrite" Value="64" />
   </opc:EnumeratedType>
@@ -828,7 +829,8 @@
     <opc:EnumeratedValue Name="CurrentRead" Value="1" />
     <opc:EnumeratedValue Name="CurrentWrite" Value="2" />
     <opc:EnumeratedValue Name="HistoryRead" Value="4" />
-    <opc:EnumeratedValue Name="HistoryWrite" Value="16" />
+    <opc:EnumeratedValue Name="HistoryWrite" Value="8" />
+    <opc:EnumeratedValue Name="SemanticChange" Value="16" />
     <opc:EnumeratedValue Name="StatusWrite" Value="32" />
     <opc:EnumeratedValue Name="TimestampWrite" Value="64" />
     <opc:EnumeratedValue Name="NonatomicRead" Value="256" />
