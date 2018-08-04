@@ -72,7 +72,6 @@
   <UAReferenceType NodeId="i=56" BrowseName="HasHistoricalConfiguration">
     <DisplayName>HasHistoricalConfiguration</DisplayName>
     <Description>The type for a reference to the historical configuration for a data variable.</Description>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=44</Reference>
     </References>
@@ -80,7 +79,6 @@
   </UAReferenceType>
   <UAObject NodeId="i=11192" BrowseName="HistoryServerCapabilities">
     <DisplayName>HistoryServerCapabilities</DisplayName>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=11193</Reference>
       <Reference ReferenceType="HasProperty">i=11242</Reference>
@@ -208,7 +206,6 @@
   </UAObject>
   <UAVariable NodeId="i=11214" BrowseName="Annotations" DataType="i=891" ValueRank="-2">
     <DisplayName>Annotations</DisplayName>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
@@ -348,7 +345,6 @@
   </UAVariable>
   <UAObject NodeId="i=11202" BrowseName="HA Configuration" SymbolicName="HAConfiguration">
     <DisplayName>HA Configuration</DisplayName>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasComponent">i=11203</Reference>
       <Reference ReferenceType="HasProperty">i=11208</Reference>
@@ -403,7 +399,6 @@
   </UAVariable>
   <UAVariable NodeId="i=11215" BrowseName="HistoricalEventFilter" DataType="i=725" ValueRank="-2">
     <DisplayName>HistoricalEventFilter</DisplayName>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
@@ -756,7 +751,6 @@
   </UAVariable>
   <UADataType NodeId="i=891" BrowseName="Annotation">
     <DisplayName>Annotation</DisplayName>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -768,7 +762,6 @@
   </UADataType>
   <UADataType NodeId="i=890" BrowseName="ExceptionDeviationFormat">
     <DisplayName>ExceptionDeviationFormat</DisplayName>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=7614</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -783,7 +776,6 @@
   </UADataType>
   <UAVariable NodeId="i=7614" BrowseName="EnumStrings" ParentNodeId="i=890" DataType="LocalizedText" ValueRank="1">
     <DisplayName>EnumStrings</DisplayName>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -821,7 +813,6 @@
   </UAVariable>
   <UAObject NodeId="i=893" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=891</Reference>
       <Reference ReferenceType="HasDescription">i=8244</Reference>
@@ -830,7 +821,6 @@
   </UAObject>
   <UAObject NodeId="i=892" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=891</Reference>
       <Reference ReferenceType="HasDescription">i=8879</Reference>
@@ -839,7 +829,6 @@
   </UAObject>
   <UAObject NodeId="i=15382" BrowseName="Default JSON" SymbolicName="DefaultJson">
     <DisplayName>Default JSON</DisplayName>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=891</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>

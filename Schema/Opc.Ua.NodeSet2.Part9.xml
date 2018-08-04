@@ -139,7 +139,6 @@
   </UAVariable>
   <UAReferenceType NodeId="i=9004" BrowseName="HasTrueSubState">
     <DisplayName>HasTrueSubState</DisplayName>
-    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -147,7 +146,6 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=9005" BrowseName="HasFalseSubState">
     <DisplayName>HasFalseSubState</DisplayName>
-    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -155,7 +153,6 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=16361" BrowseName="HasAlarmSuppressionGroup">
     <DisplayName>HasAlarmSuppressionGroup</DisplayName>
-    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -163,7 +160,6 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=16362" BrowseName="AlarmGroupMember">
     <DisplayName>AlarmGroupMember</DisplayName>
-    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=35</Reference>
     </References>
@@ -409,7 +405,6 @@
   </UAMethod>
   <UAVariable NodeId="i=9030" BrowseName="InputArguments" ParentNodeId="i=9029" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
-    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -471,7 +466,6 @@
   </UAMethod>
   <UAVariable NodeId="i=3876" BrowseName="InputArguments" ParentNodeId="i=3875" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
-    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -513,7 +507,6 @@
   </UAMethod>
   <UAVariable NodeId="i=12913" BrowseName="InputArguments" ParentNodeId="i=12912" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
-    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -714,7 +707,6 @@
   </UAMethod>
   <UAVariable NodeId="i=9070" BrowseName="InputArguments" ParentNodeId="i=9069" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
-    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -901,7 +893,6 @@
   </UAMethod>
   <UAVariable NodeId="i=9112" BrowseName="InputArguments" ParentNodeId="i=9111" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
-    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -963,7 +954,6 @@
   </UAMethod>
   <UAVariable NodeId="i=9114" BrowseName="InputArguments" ParentNodeId="i=9113" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
-    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1339,7 +1329,6 @@
   </UAMethod>
   <UAVariable NodeId="i=9214" BrowseName="InputArguments" ParentNodeId="i=9213" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
-    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1901,7 +1890,6 @@
   </UAMethod>
   <UAVariable NodeId="i=16442" BrowseName="InputArguments" ParentNodeId="i=16441" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
-    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1980,7 +1968,6 @@
   </UAMethod>
   <UAVariable NodeId="i=16462" BrowseName="InputArguments" ParentNodeId="i=16461" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
-    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2285,7 +2272,6 @@
   </UAMethod>
   <UAVariable NodeId="i=2991" BrowseName="InputArguments" ParentNodeId="i=2949" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
-    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3375,7 +3361,6 @@
   </UAObjectType>
   <UAReferenceType NodeId="i=9006" BrowseName="HasCondition">
     <DisplayName>HasCondition</DisplayName>
-    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -3383,7 +3368,6 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=17276" BrowseName="HasEffectDisable">
     <DisplayName>HasEffectDisable</DisplayName>
-    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=54</Reference>
     </References>
@@ -3391,7 +3375,6 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=17983" BrowseName="HasEffectEnable">
     <DisplayName>HasEffectEnable</DisplayName>
-    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=54</Reference>
     </References>
@@ -3399,7 +3382,6 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=17984" BrowseName="HasEffectSuppressed">
     <DisplayName>HasEffectSuppressed</DisplayName>
-    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=54</Reference>
     </References>
@@ -3407,7 +3389,6 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=17985" BrowseName="HasEffectUnsuppressed">
     <DisplayName>HasEffectUnsuppressed</DisplayName>
-    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=54</Reference>
     </References>

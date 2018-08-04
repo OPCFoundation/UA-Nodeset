@@ -29,3 +29,4 @@
 0004338: Value of NamespacePublicationDate has wrong data type
 0004322: DataSetFieldFlags in "Ua Defined Types.xml" uses enum-style instead of optionset style
 0004354: The bits of AccessLevelType are incomplete and wrong.
+0004355: Add Categories and Service DataTypes to NodeSet
