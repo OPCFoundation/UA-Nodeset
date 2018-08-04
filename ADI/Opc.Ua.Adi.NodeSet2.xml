@@ -299,6 +299,7 @@
   </UAMethod>
   <UAVariable NodeId="ns=1;i=9468" BrowseName="InputArguments" ParentNodeId="ns=1;i=9467" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -327,6 +328,7 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=9469" BrowseName="OutputArguments" ParentNodeId="ns=1;i=9467" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -363,6 +365,7 @@
   </UAMethod>
   <UAVariable NodeId="ns=1;i=9471" BrowseName="InputArguments" ParentNodeId="ns=1;i=9470" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -400,6 +403,7 @@
   </UAMethod>
   <UAVariable NodeId="ns=1;i=9473" BrowseName="InputArguments" ParentNodeId="ns=1;i=9472" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -444,6 +448,7 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=9474" BrowseName="OutputArguments" ParentNodeId="ns=1;i=9472" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -480,6 +485,7 @@
   </UAMethod>
   <UAVariable NodeId="ns=1;i=9476" BrowseName="InputArguments" ParentNodeId="ns=1;i=9475" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -533,6 +539,7 @@
   </UAMethod>
   <UAVariable NodeId="ns=1;i=9478" BrowseName="InputArguments" ParentNodeId="ns=1;i=9477" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -561,6 +568,7 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=9479" BrowseName="OutputArguments" ParentNodeId="ns=1;i=9477" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -597,6 +605,7 @@
   </UAMethod>
   <UAVariable NodeId="ns=1;i=9481" BrowseName="InputArguments" ParentNodeId="ns=1;i=9480" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>

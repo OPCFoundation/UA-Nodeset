@@ -33,7 +33,7 @@
     <Uri>http://opcfoundation.org/UA/GDS/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.02" PublicationDate="2018-07-31T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2018-07-31T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -74,6 +74,7 @@
   </Aliases>
   <UAObject NodeId="ns=1;i=721" BrowseName="1:http://opcfoundation.org/UA/GDS/" SymbolicName="OPCUAGDSNamespaceMetadata">
     <DisplayName>http://opcfoundation.org/UA/GDS/</DisplayName>
+    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=722</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=723</Reference>

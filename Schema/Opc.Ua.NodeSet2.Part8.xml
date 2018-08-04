@@ -30,7 +30,7 @@
 
 <UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-07-31T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.02" PublicationDate="2018-07-31T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2018-07-31T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -72,6 +72,7 @@
   <UAVariableType NodeId="i=2365" BrowseName="DataItemType" ValueRank="-2">
     <DisplayName>DataItemType</DisplayName>
     <Description>A variable that contains live automation data.</Description>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=2366</Reference>
       <Reference ReferenceType="HasProperty">i=2367</Reference>
@@ -98,6 +99,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=2368" BrowseName="AnalogItemType" DataType="Number" ValueRank="-2">
     <DisplayName>AnalogItemType</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=2370</Reference>
       <Reference ReferenceType="HasProperty">i=2369</Reference>
@@ -131,6 +133,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=17497" BrowseName="EUItemType" DataType="Number" ValueRank="-2">
     <DisplayName>EUItemType</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=17500</Reference>
       <Reference ReferenceType="HasProperty">i=17501</Reference>
@@ -164,6 +167,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=17503" BrowseName="AnalogUnitItemType" DataType="Number" ValueRank="-2">
     <DisplayName>AnalogUnitItemType</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=17506</Reference>
       <Reference ReferenceType="HasProperty">i=17509</Reference>
@@ -197,12 +201,14 @@
   </UAVariable>
   <UAVariableType NodeId="i=2372" BrowseName="DiscreteItemType" IsAbstract="true" ValueRank="-2">
     <DisplayName>DiscreteItemType</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2365</Reference>
     </References>
   </UAVariableType>
   <UAVariableType NodeId="i=2373" BrowseName="TwoStateDiscreteType" DataType="Boolean" ValueRank="-2">
     <DisplayName>TwoStateDiscreteType</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=2374</Reference>
       <Reference ReferenceType="HasProperty">i=2375</Reference>
@@ -227,6 +233,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=2376" BrowseName="MultiStateDiscreteType" DataType="UInteger" ValueRank="-2">
     <DisplayName>MultiStateDiscreteType</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=2377</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2372</Reference>
@@ -242,6 +249,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=11238" BrowseName="MultiStateValueDiscreteType" DataType="Number" ValueRank="-2">
     <DisplayName>MultiStateValueDiscreteType</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=11241</Reference>
       <Reference ReferenceType="HasProperty">i=11461</Reference>
@@ -266,6 +274,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=12021" BrowseName="ArrayItemType" IsAbstract="true" ValueRank="0">
     <DisplayName>ArrayItemType</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=12024</Reference>
       <Reference ReferenceType="HasProperty">i=12025</Reference>
@@ -317,6 +326,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=12029" BrowseName="YArrayItemType" ValueRank="1" ArrayDimensions="0">
     <DisplayName>YArrayItemType</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=12037</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12021</Reference>
@@ -332,6 +342,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=12038" BrowseName="XYArrayItemType" DataType="i=12080" ValueRank="1" ArrayDimensions="0">
     <DisplayName>XYArrayItemType</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=12046</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12021</Reference>
@@ -347,6 +358,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=12047" BrowseName="ImageItemType" ValueRank="2" ArrayDimensions="0,0">
     <DisplayName>ImageItemType</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=12055</Reference>
       <Reference ReferenceType="HasProperty">i=12056</Reference>
@@ -371,6 +383,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=12057" BrowseName="CubeItemType" ValueRank="3" ArrayDimensions="0,0,0">
     <DisplayName>CubeItemType</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=12065</Reference>
       <Reference ReferenceType="HasProperty">i=12066</Reference>
@@ -404,6 +417,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=12068" BrowseName="NDimensionArrayItemType" ValueRank="0">
     <DisplayName>NDimensionArrayItemType</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=12076</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12021</Reference>
@@ -419,6 +433,7 @@
   </UAVariable>
   <UADataType NodeId="i=884" BrowseName="Range">
     <DisplayName>Range</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -429,6 +444,7 @@
   </UADataType>
   <UADataType NodeId="i=887" BrowseName="EUInformation">
     <DisplayName>EUInformation</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -441,6 +457,7 @@
   </UADataType>
   <UADataType NodeId="i=12077" BrowseName="AxisScaleEnumeration">
     <DisplayName>AxisScaleEnumeration</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=12078</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -453,6 +470,7 @@
   </UADataType>
   <UAVariable NodeId="i=12078" BrowseName="EnumStrings" ParentNodeId="i=12077" DataType="LocalizedText" ValueRank="1">
     <DisplayName>EnumStrings</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -480,6 +498,7 @@
   </UAVariable>
   <UADataType NodeId="i=12171" BrowseName="ComplexNumberType">
     <DisplayName>ComplexNumberType</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -490,6 +509,7 @@
   </UADataType>
   <UADataType NodeId="i=12172" BrowseName="DoubleComplexNumberType">
     <DisplayName>DoubleComplexNumberType</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -500,6 +520,7 @@
   </UADataType>
   <UADataType NodeId="i=12079" BrowseName="AxisInformation">
     <DisplayName>AxisInformation</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -513,6 +534,7 @@
   </UADataType>
   <UADataType NodeId="i=12080" BrowseName="XVType">
     <DisplayName>XVType</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -523,6 +545,7 @@
   </UADataType>
   <UAObject NodeId="i=886" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=884</Reference>
       <Reference ReferenceType="HasDescription">i=8238</Reference>
@@ -531,6 +554,7 @@
   </UAObject>
   <UAObject NodeId="i=889" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=887</Reference>
       <Reference ReferenceType="HasDescription">i=8241</Reference>
@@ -539,6 +563,7 @@
   </UAObject>
   <UAObject NodeId="i=12181" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=12171</Reference>
       <Reference ReferenceType="HasDescription">i=12183</Reference>
@@ -547,6 +572,7 @@
   </UAObject>
   <UAObject NodeId="i=12182" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=12172</Reference>
       <Reference ReferenceType="HasDescription">i=12186</Reference>
@@ -555,6 +581,7 @@
   </UAObject>
   <UAObject NodeId="i=12089" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=12079</Reference>
       <Reference ReferenceType="HasDescription">i=12091</Reference>
@@ -563,6 +590,7 @@
   </UAObject>
   <UAObject NodeId="i=12090" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=12080</Reference>
       <Reference ReferenceType="HasDescription">i=12094</Reference>
@@ -571,6 +599,7 @@
   </UAObject>
   <UAObject NodeId="i=885" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=884</Reference>
       <Reference ReferenceType="HasDescription">i=8873</Reference>
@@ -579,6 +608,7 @@
   </UAObject>
   <UAObject NodeId="i=888" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=887</Reference>
       <Reference ReferenceType="HasDescription">i=8876</Reference>
@@ -587,6 +617,7 @@
   </UAObject>
   <UAObject NodeId="i=12173" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=12171</Reference>
       <Reference ReferenceType="HasDescription">i=12175</Reference>
@@ -595,6 +626,7 @@
   </UAObject>
   <UAObject NodeId="i=12174" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=12172</Reference>
       <Reference ReferenceType="HasDescription">i=12178</Reference>
@@ -603,6 +635,7 @@
   </UAObject>
   <UAObject NodeId="i=12081" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=12079</Reference>
       <Reference ReferenceType="HasDescription">i=12083</Reference>
@@ -611,6 +644,7 @@
   </UAObject>
   <UAObject NodeId="i=12082" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=12080</Reference>
       <Reference ReferenceType="HasDescription">i=12086</Reference>
@@ -619,6 +653,7 @@
   </UAObject>
   <UAObject NodeId="i=15375" BrowseName="Default JSON" SymbolicName="DefaultJson">
     <DisplayName>Default JSON</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=884</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -626,6 +661,7 @@
   </UAObject>
   <UAObject NodeId="i=15376" BrowseName="Default JSON" SymbolicName="DefaultJson">
     <DisplayName>Default JSON</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=887</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -633,6 +669,7 @@
   </UAObject>
   <UAObject NodeId="i=15377" BrowseName="Default JSON" SymbolicName="DefaultJson">
     <DisplayName>Default JSON</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=12171</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -640,6 +677,7 @@
   </UAObject>
   <UAObject NodeId="i=15378" BrowseName="Default JSON" SymbolicName="DefaultJson">
     <DisplayName>Default JSON</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=12172</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -647,6 +685,7 @@
   </UAObject>
   <UAObject NodeId="i=15379" BrowseName="Default JSON" SymbolicName="DefaultJson">
     <DisplayName>Default JSON</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=12079</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -654,6 +693,7 @@
   </UAObject>
   <UAObject NodeId="i=15380" BrowseName="Default JSON" SymbolicName="DefaultJson">
     <DisplayName>Default JSON</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=12080</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>

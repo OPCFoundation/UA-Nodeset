@@ -30,7 +30,7 @@
 
 <UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-07-31T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.02" PublicationDate="2018-07-31T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2018-07-31T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -71,6 +71,7 @@
   </Aliases>
   <UAVariableType NodeId="i=8995" BrowseName="TwoStateVariableType" DataType="LocalizedText">
     <DisplayName>TwoStateVariableType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=8996</Reference>
       <Reference ReferenceType="HasProperty">i=9000</Reference>
@@ -122,6 +123,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=9002" BrowseName="ConditionVariableType" ValueRank="-2">
     <DisplayName>ConditionVariableType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=9003</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
@@ -137,6 +139,7 @@
   </UAVariable>
   <UAReferenceType NodeId="i=9004" BrowseName="HasTrueSubState">
     <DisplayName>HasTrueSubState</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -144,6 +147,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=9005" BrowseName="HasFalseSubState">
     <DisplayName>HasFalseSubState</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -151,6 +155,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=16361" BrowseName="HasAlarmSuppressionGroup">
     <DisplayName>HasAlarmSuppressionGroup</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -158,6 +163,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=16362" BrowseName="AlarmGroupMember">
     <DisplayName>AlarmGroupMember</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=35</Reference>
     </References>
@@ -165,6 +171,7 @@
   </UAReferenceType>
   <UAObjectType NodeId="i=2782" BrowseName="ConditionType" IsAbstract="true">
     <DisplayName>ConditionType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=11112</Reference>
       <Reference ReferenceType="HasProperty">i=11113</Reference>
@@ -402,6 +409,7 @@
   </UAMethod>
   <UAVariable NodeId="i=9030" BrowseName="InputArguments" ParentNodeId="i=9029" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -463,6 +471,7 @@
   </UAMethod>
   <UAVariable NodeId="i=3876" BrowseName="InputArguments" ParentNodeId="i=3875" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -504,6 +513,7 @@
   </UAMethod>
   <UAVariable NodeId="i=12913" BrowseName="InputArguments" ParentNodeId="i=12912" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -556,6 +566,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=2830" BrowseName="DialogConditionType">
     <DisplayName>DialogConditionType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasComponent">i=9035</Reference>
       <Reference ReferenceType="HasComponent">i=9055</Reference>
@@ -703,6 +714,7 @@
   </UAMethod>
   <UAVariable NodeId="i=9070" BrowseName="InputArguments" ParentNodeId="i=9069" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -735,6 +747,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=2881" BrowseName="AcknowledgeableConditionType">
     <DisplayName>AcknowledgeableConditionType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasComponent">i=9073</Reference>
       <Reference ReferenceType="HasComponent">i=9093</Reference>
@@ -888,6 +901,7 @@
   </UAMethod>
   <UAVariable NodeId="i=9112" BrowseName="InputArguments" ParentNodeId="i=9111" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -949,6 +963,7 @@
   </UAMethod>
   <UAVariable NodeId="i=9114" BrowseName="InputArguments" ParentNodeId="i=9113" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1001,6 +1016,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=2915" BrowseName="AlarmConditionType">
     <DisplayName>AlarmConditionType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasComponent">i=9118</Reference>
       <Reference ReferenceType="HasComponent">i=9160</Reference>
@@ -1323,6 +1339,7 @@
   </UAMethod>
   <UAVariable NodeId="i=9214" BrowseName="InputArguments" ParentNodeId="i=9213" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1619,6 +1636,7 @@
   </UAMethod>
   <UAObjectType NodeId="i=16405" BrowseName="AlarmGroupType">
     <DisplayName>AlarmGroupType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="i=16362">i=16406</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
@@ -1883,6 +1901,7 @@
   </UAMethod>
   <UAVariable NodeId="i=16442" BrowseName="InputArguments" ParentNodeId="i=16441" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1961,6 +1980,7 @@
   </UAMethod>
   <UAVariable NodeId="i=16462" BrowseName="InputArguments" ParentNodeId="i=16461" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2046,6 +2066,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=2929" BrowseName="ShelvedStateMachineType">
     <DisplayName>ShelvedStateMachineType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=9115</Reference>
       <Reference ReferenceType="HasComponent">i=2930</Reference>
@@ -2264,6 +2285,7 @@
   </UAMethod>
   <UAVariable NodeId="i=2991" BrowseName="InputArguments" ParentNodeId="i=2949" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2316,6 +2338,7 @@
   </UAMethod>
   <UAObjectType NodeId="i=2955" BrowseName="LimitAlarmType">
     <DisplayName>LimitAlarmType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=11124</Reference>
       <Reference ReferenceType="HasProperty">i=11125</Reference>
@@ -2394,6 +2417,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=9318" BrowseName="ExclusiveLimitStateMachineType">
     <DisplayName>ExclusiveLimitStateMachineType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasComponent">i=9329</Reference>
       <Reference ReferenceType="HasComponent">i=9331</Reference>
@@ -2552,6 +2576,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=9341" BrowseName="ExclusiveLimitAlarmType">
     <DisplayName>ExclusiveLimitAlarmType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasComponent">i=9398</Reference>
       <Reference ReferenceType="HasComponent">i=9455</Reference>
@@ -2632,6 +2657,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=9906" BrowseName="NonExclusiveLimitAlarmType">
     <DisplayName>NonExclusiveLimitAlarmType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasComponent">i=9963</Reference>
       <Reference ReferenceType="HasComponent">i=10020</Reference>
@@ -2892,18 +2918,21 @@
   </UAVariable>
   <UAObjectType NodeId="i=10060" BrowseName="NonExclusiveLevelAlarmType">
     <DisplayName>NonExclusiveLevelAlarmType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=9906</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=9482" BrowseName="ExclusiveLevelAlarmType">
     <DisplayName>ExclusiveLevelAlarmType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=9341</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=10368" BrowseName="NonExclusiveDeviationAlarmType">
     <DisplayName>NonExclusiveDeviationAlarmType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=10522</Reference>
       <Reference ReferenceType="HasProperty">i=16776</Reference>
@@ -2928,6 +2957,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=10214" BrowseName="NonExclusiveRateOfChangeAlarmType">
     <DisplayName>NonExclusiveRateOfChangeAlarmType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=16858</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=9906</Reference>
@@ -2943,6 +2973,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=9764" BrowseName="ExclusiveDeviationAlarmType">
     <DisplayName>ExclusiveDeviationAlarmType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=9905</Reference>
       <Reference ReferenceType="HasProperty">i=16817</Reference>
@@ -2967,6 +2998,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=9623" BrowseName="ExclusiveRateOfChangeAlarmType">
     <DisplayName>ExclusiveRateOfChangeAlarmType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=16899</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=9341</Reference>
@@ -2982,12 +3014,14 @@
   </UAVariable>
   <UAObjectType NodeId="i=10523" BrowseName="DiscreteAlarmType">
     <DisplayName>DiscreteAlarmType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2915</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=10637" BrowseName="OffNormalAlarmType">
     <DisplayName>OffNormalAlarmType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=11158</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=10523</Reference>
@@ -3003,30 +3037,35 @@
   </UAVariable>
   <UAObjectType NodeId="i=11753" BrowseName="SystemOffNormalAlarmType">
     <DisplayName>SystemOffNormalAlarmType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=10637</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=10751" BrowseName="TripAlarmType">
     <DisplayName>TripAlarmType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=10637</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=18347" BrowseName="InstrumentDiagnosticAlarmType">
     <DisplayName>InstrumentDiagnosticAlarmType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=10637</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=18496" BrowseName="SystemDiagnosticAlarmType">
     <DisplayName>SystemDiagnosticAlarmType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=10637</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=13225" BrowseName="CertificateExpirationAlarmType">
     <DisplayName>CertificateExpirationAlarmType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=13325</Reference>
       <Reference ReferenceType="HasProperty">i=14900</Reference>
@@ -3069,6 +3108,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=17080" BrowseName="DiscrepancyAlarmType">
     <DisplayName>DiscrepancyAlarmType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=17215</Reference>
       <Reference ReferenceType="HasProperty">i=17216</Reference>
@@ -3102,72 +3142,84 @@
   </UAVariable>
   <UAObjectType NodeId="i=11163" BrowseName="BaseConditionClassType" IsAbstract="true">
     <DisplayName>BaseConditionClassType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=11164" BrowseName="ProcessConditionClassType" IsAbstract="true">
     <DisplayName>ProcessConditionClassType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=11165" BrowseName="MaintenanceConditionClassType" IsAbstract="true">
     <DisplayName>MaintenanceConditionClassType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=11166" BrowseName="SystemConditionClassType" IsAbstract="true">
     <DisplayName>SystemConditionClassType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=17218" BrowseName="SafetyConditionClassType" IsAbstract="true">
     <DisplayName>SafetyConditionClassType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=17219" BrowseName="HighlyManagedAlarmConditionClassType" IsAbstract="true">
     <DisplayName>HighlyManagedAlarmConditionClassType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=17220" BrowseName="TrainingConditionClassType" IsAbstract="true">
     <DisplayName>TrainingConditionClassType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=18665" BrowseName="StatisticalConditionClassType" IsAbstract="true">
     <DisplayName>StatisticalConditionClassType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=17221" BrowseName="TestingConditionClassType" IsAbstract="true">
     <DisplayName>TestingConditionClassType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=2790" BrowseName="AuditConditionEventType">
     <DisplayName>AuditConditionEventType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2127</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=2803" BrowseName="AuditConditionEnableEventType">
     <DisplayName>AuditConditionEnableEventType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2790</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=2829" BrowseName="AuditConditionCommentEventType">
     <DisplayName>AuditConditionCommentEventType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=17222</Reference>
       <Reference ReferenceType="HasProperty">i=11851</Reference>
@@ -3192,6 +3244,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=8927" BrowseName="AuditConditionRespondEventType">
     <DisplayName>AuditConditionRespondEventType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=11852</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2790</Reference>
@@ -3207,6 +3260,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=8944" BrowseName="AuditConditionAcknowledgeEventType">
     <DisplayName>AuditConditionAcknowledgeEventType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=17223</Reference>
       <Reference ReferenceType="HasProperty">i=11853</Reference>
@@ -3231,6 +3285,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=8961" BrowseName="AuditConditionConfirmEventType">
     <DisplayName>AuditConditionConfirmEventType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=17224</Reference>
       <Reference ReferenceType="HasProperty">i=11854</Reference>
@@ -3255,6 +3310,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=11093" BrowseName="AuditConditionShelvingEventType">
     <DisplayName>AuditConditionShelvingEventType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=11855</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2790</Reference>
@@ -3270,48 +3326,56 @@
   </UAVariable>
   <UAObjectType NodeId="i=17225" BrowseName="AuditConditionSuppressEventType">
     <DisplayName>AuditConditionSuppressEventType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2790</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=17242" BrowseName="AuditConditionSilenceEventType">
     <DisplayName>AuditConditionSilenceEventType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2790</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=15013" BrowseName="AuditConditionResetEventType">
     <DisplayName>AuditConditionResetEventType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2790</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=17259" BrowseName="AuditConditionOutOfServiceEventType">
     <DisplayName>AuditConditionOutOfServiceEventType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2790</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=2787" BrowseName="RefreshStartEventType" IsAbstract="true">
     <DisplayName>RefreshStartEventType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2130</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=2788" BrowseName="RefreshEndEventType" IsAbstract="true">
     <DisplayName>RefreshEndEventType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2130</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=2789" BrowseName="RefreshRequiredEventType" IsAbstract="true">
     <DisplayName>RefreshRequiredEventType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2130</Reference>
     </References>
   </UAObjectType>
   <UAReferenceType NodeId="i=9006" BrowseName="HasCondition">
     <DisplayName>HasCondition</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -3319,6 +3383,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=17276" BrowseName="HasEffectDisable">
     <DisplayName>HasEffectDisable</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=54</Reference>
     </References>
@@ -3326,6 +3391,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=17983" BrowseName="HasEffectEnable">
     <DisplayName>HasEffectEnable</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=54</Reference>
     </References>
@@ -3333,6 +3399,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=17984" BrowseName="HasEffectSuppressed">
     <DisplayName>HasEffectSuppressed</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=54</Reference>
     </References>
@@ -3340,6 +3407,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=17985" BrowseName="HasEffectUnsuppressed">
     <DisplayName>HasEffectUnsuppressed</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=54</Reference>
     </References>
@@ -3347,6 +3415,7 @@
   </UAReferenceType>
   <UAObjectType NodeId="i=17279" BrowseName="AlarmMetricsType">
     <DisplayName>AlarmMetricsType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=17280</Reference>
       <Reference ReferenceType="HasProperty">i=17991</Reference>
@@ -3460,6 +3529,7 @@
   </UAMethod>
   <UAVariableType NodeId="i=17277" BrowseName="AlarmRateVariableType" DataType="Double">
     <DisplayName>AlarmRateVariableType</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=17278</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>

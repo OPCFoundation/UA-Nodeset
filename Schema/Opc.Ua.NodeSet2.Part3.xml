@@ -30,7 +30,7 @@
 
 <UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-07-31T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.02" PublicationDate="2018-07-31T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2018-07-31T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -72,6 +72,7 @@
   <UAObject NodeId="i=3062" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
     <Description>The default binary encoding for a data type.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
     </References>
@@ -79,6 +80,7 @@
   <UAObject NodeId="i=3063" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <Description>The default XML encoding for a data type.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
     </References>
@@ -86,11 +88,13 @@
   <UADataType NodeId="i=24" BrowseName="BaseDataType" IsAbstract="true">
     <DisplayName>BaseDataType</DisplayName>
     <Description>Describes a value that can have any valid DataType.</Description>
+    <Category>Part3</Category>
     <References />
   </UADataType>
   <UADataType NodeId="i=26" BrowseName="Number" IsAbstract="true">
     <DisplayName>Number</DisplayName>
     <Description>Describes a value that can have any numeric DataType.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
@@ -98,6 +102,7 @@
   <UADataType NodeId="i=27" BrowseName="Integer" IsAbstract="true">
     <DisplayName>Integer</DisplayName>
     <Description>Describes a value that can have any integer DataType.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=26</Reference>
     </References>
@@ -105,6 +110,7 @@
   <UADataType NodeId="i=28" BrowseName="UInteger" IsAbstract="true">
     <DisplayName>UInteger</DisplayName>
     <Description>Describes a value that can have any unsigned integer DataType.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=26</Reference>
     </References>
@@ -112,6 +118,7 @@
   <UADataType NodeId="i=29" BrowseName="Enumeration" IsAbstract="true">
     <DisplayName>Enumeration</DisplayName>
     <Description>Describes a value that is an enumerated DataType.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
@@ -119,6 +126,7 @@
   <UADataType NodeId="i=1" BrowseName="Boolean">
     <DisplayName>Boolean</DisplayName>
     <Description>Describes a value that is either TRUE or FALSE.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
@@ -126,6 +134,7 @@
   <UADataType NodeId="i=2" BrowseName="SByte">
     <DisplayName>SByte</DisplayName>
     <Description>Describes a value that is an integer between -128 and 127.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=27</Reference>
     </References>
@@ -133,6 +142,7 @@
   <UADataType NodeId="i=3" BrowseName="Byte">
     <DisplayName>Byte</DisplayName>
     <Description>Describes a value that is an integer between 0 and 255.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=28</Reference>
     </References>
@@ -140,6 +150,7 @@
   <UADataType NodeId="i=4" BrowseName="Int16">
     <DisplayName>Int16</DisplayName>
     <Description>Describes a value that is an integer between −32,768 and 32,767.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=27</Reference>
     </References>
@@ -147,6 +158,7 @@
   <UADataType NodeId="i=5" BrowseName="UInt16">
     <DisplayName>UInt16</DisplayName>
     <Description>Describes a value that is an integer between 0 and 65535.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=28</Reference>
     </References>
@@ -154,6 +166,7 @@
   <UADataType NodeId="i=6" BrowseName="Int32">
     <DisplayName>Int32</DisplayName>
     <Description>Describes a value that is an integer between −2,147,483,648  and 2,147,483,647.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=27</Reference>
     </References>
@@ -161,6 +174,7 @@
   <UADataType NodeId="i=7" BrowseName="UInt32">
     <DisplayName>UInt32</DisplayName>
     <Description>Describes a value that is an integer between 0 and 4,294,967,295.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=28</Reference>
     </References>
@@ -168,6 +182,7 @@
   <UADataType NodeId="i=8" BrowseName="Int64">
     <DisplayName>Int64</DisplayName>
     <Description>Describes a value that is an integer between −9,223,372,036,854,775,808 and 9,223,372,036,854,775,807.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=27</Reference>
     </References>
@@ -175,6 +190,7 @@
   <UADataType NodeId="i=9" BrowseName="UInt64">
     <DisplayName>UInt64</DisplayName>
     <Description>Describes a value that is an integer between 0 and 18,446,744,073,709,551,615.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=28</Reference>
     </References>
@@ -182,6 +198,7 @@
   <UADataType NodeId="i=10" BrowseName="Float">
     <DisplayName>Float</DisplayName>
     <Description>Describes a value that is an IEEE 754-1985 single precision floating point number.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=26</Reference>
     </References>
@@ -189,6 +206,7 @@
   <UADataType NodeId="i=11" BrowseName="Double">
     <DisplayName>Double</DisplayName>
     <Description>Describes a value that is an IEEE 754-1985 double precision floating point number.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=26</Reference>
     </References>
@@ -196,6 +214,7 @@
   <UADataType NodeId="i=12" BrowseName="String">
     <DisplayName>String</DisplayName>
     <Description>Describes a value that is a sequence of printable Unicode characters.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
@@ -203,6 +222,7 @@
   <UADataType NodeId="i=13" BrowseName="DateTime">
     <DisplayName>DateTime</DisplayName>
     <Description>Describes a value that is a Gregorian calender date and time.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
@@ -210,6 +230,7 @@
   <UADataType NodeId="i=14" BrowseName="Guid">
     <DisplayName>Guid</DisplayName>
     <Description>Describes a value that is a 128-bit globally unique identifier.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
@@ -217,6 +238,7 @@
   <UADataType NodeId="i=15" BrowseName="ByteString">
     <DisplayName>ByteString</DisplayName>
     <Description>Describes a value that is a sequence of bytes.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
@@ -224,6 +246,7 @@
   <UADataType NodeId="i=16" BrowseName="XmlElement">
     <DisplayName>XmlElement</DisplayName>
     <Description>Describes a value that is an XML element.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
@@ -231,6 +254,7 @@
   <UADataType NodeId="i=17" BrowseName="NodeId">
     <DisplayName>NodeId</DisplayName>
     <Description>Describes a value that is an identifier for a node within a Server address space.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
@@ -238,6 +262,7 @@
   <UADataType NodeId="i=20" BrowseName="QualifiedName">
     <DisplayName>QualifiedName</DisplayName>
     <Description>Describes a value that is a name qualified by a namespace.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
@@ -245,6 +270,7 @@
   <UADataType NodeId="i=21" BrowseName="LocalizedText">
     <DisplayName>LocalizedText</DisplayName>
     <Description>Describes a value that is human readable Unicode text with a locale identifier.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
@@ -252,6 +278,7 @@
   <UADataType NodeId="i=22" BrowseName="Structure" IsAbstract="true">
     <DisplayName>Structure</DisplayName>
     <Description>Describes a value that is any type of structure that can be described with a data encoding.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
@@ -259,6 +286,7 @@
   <UADataType NodeId="i=30" BrowseName="Image" IsAbstract="true">
     <DisplayName>Image</DisplayName>
     <Description>Describes a value that is an image encoded as a string of bytes.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15</Reference>
     </References>
@@ -266,6 +294,7 @@
   <UADataType NodeId="i=50" BrowseName="Decimal">
     <DisplayName>Decimal</DisplayName>
     <Description>Describes an arbitrary precision decimal value.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=26</Reference>
     </References>
@@ -273,11 +302,13 @@
   <UAReferenceType NodeId="i=31" BrowseName="References" IsAbstract="true" Symmetric="true">
     <DisplayName>References</DisplayName>
     <Description>The abstract base type for all references.</Description>
+    <Category>Part3</Category>
     <References />
   </UAReferenceType>
   <UAReferenceType NodeId="i=32" BrowseName="NonHierarchicalReferences" IsAbstract="true">
     <DisplayName>NonHierarchicalReferences</DisplayName>
     <Description>The abstract base type for all non-hierarchical references.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=31</Reference>
     </References>
@@ -286,6 +317,7 @@
   <UAReferenceType NodeId="i=33" BrowseName="HierarchicalReferences" IsAbstract="true">
     <DisplayName>HierarchicalReferences</DisplayName>
     <Description>The abstract base type for all hierarchical references.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=31</Reference>
     </References>
@@ -294,6 +326,7 @@
   <UAReferenceType NodeId="i=34" BrowseName="HasChild" IsAbstract="true">
     <DisplayName>HasChild</DisplayName>
     <Description>The abstract base type for all non-looping hierarchical references.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=33</Reference>
     </References>
@@ -302,6 +335,7 @@
   <UAReferenceType NodeId="i=35" BrowseName="Organizes">
     <DisplayName>Organizes</DisplayName>
     <Description>The type for hierarchical references that are used to organize nodes.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=33</Reference>
     </References>
@@ -310,6 +344,7 @@
   <UAReferenceType NodeId="i=36" BrowseName="HasEventSource">
     <DisplayName>HasEventSource</DisplayName>
     <Description>The type for non-looping hierarchical references that are used to organize event sources.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=33</Reference>
     </References>
@@ -318,6 +353,7 @@
   <UAReferenceType NodeId="i=37" BrowseName="HasModellingRule">
     <DisplayName>HasModellingRule</DisplayName>
     <Description>The type for references from instance declarations to modelling rule nodes.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -326,6 +362,7 @@
   <UAReferenceType NodeId="i=38" BrowseName="HasEncoding">
     <DisplayName>HasEncoding</DisplayName>
     <Description>The type for references from data type nodes to to data type encoding nodes.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -334,6 +371,7 @@
   <UAReferenceType NodeId="i=39" BrowseName="HasDescription">
     <DisplayName>HasDescription</DisplayName>
     <Description>The type for references from data type encoding nodes to data type description nodes.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -342,6 +380,7 @@
   <UAReferenceType NodeId="i=40" BrowseName="HasTypeDefinition">
     <DisplayName>HasTypeDefinition</DisplayName>
     <Description>The type for references from a instance node its type defintion node.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -350,6 +389,7 @@
   <UAReferenceType NodeId="i=41" BrowseName="GeneratesEvent">
     <DisplayName>GeneratesEvent</DisplayName>
     <Description>The type for references from a node to an event type that is raised by node.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -358,6 +398,7 @@
   <UAReferenceType NodeId="i=3065" BrowseName="AlwaysGeneratesEvent">
     <DisplayName>AlwaysGeneratesEvent</DisplayName>
     <Description>The type for references from a node to an event type that is always raised by node.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=41</Reference>
     </References>
@@ -366,6 +407,7 @@
   <UAReferenceType NodeId="i=44" BrowseName="Aggregates" IsAbstract="true">
     <DisplayName>Aggregates</DisplayName>
     <Description>The type for non-looping hierarchical references that are used to aggregate nodes into complex types.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=34</Reference>
     </References>
@@ -374,6 +416,7 @@
   <UAReferenceType NodeId="i=45" BrowseName="HasSubtype">
     <DisplayName>HasSubtype</DisplayName>
     <Description>The type for non-looping hierarchical references that are used to define sub types.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=34</Reference>
     </References>
@@ -382,6 +425,7 @@
   <UAReferenceType NodeId="i=46" BrowseName="HasProperty">
     <DisplayName>HasProperty</DisplayName>
     <Description>The type for non-looping hierarchical reference from a node to its property.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=44</Reference>
     </References>
@@ -390,6 +434,7 @@
   <UAReferenceType NodeId="i=47" BrowseName="HasComponent">
     <DisplayName>HasComponent</DisplayName>
     <Description>The type for non-looping hierarchical reference from a node to its component.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=44</Reference>
     </References>
@@ -398,6 +443,7 @@
   <UAReferenceType NodeId="i=48" BrowseName="HasNotifier">
     <DisplayName>HasNotifier</DisplayName>
     <Description>The type for non-looping hierarchical references that are used to indicate how events propagate from node to node.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=36</Reference>
     </References>
@@ -406,6 +452,7 @@
   <UAReferenceType NodeId="i=49" BrowseName="HasOrderedComponent">
     <DisplayName>HasOrderedComponent</DisplayName>
     <Description>The type for non-looping hierarchical reference from a node to its component when the order of references matters.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -414,6 +461,7 @@
   <UADataType NodeId="i=120" BrowseName="NamingRuleType">
     <DisplayName>NamingRuleType</DisplayName>
     <Description>Describes a value that specifies the significance of the BrowseName for an instance declaration.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=12169</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -432,6 +480,7 @@
   </UADataType>
   <UAVariable NodeId="i=12169" BrowseName="EnumValues" ParentNodeId="i=120" DataType="i=7594" ValueRank="1">
     <DisplayName>EnumValues</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -504,6 +553,7 @@
   </UAVariable>
   <UAReferenceType NodeId="i=129" BrowseName="DescribesArgument">
     <DisplayName>DescribesArgument</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -511,6 +561,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=130" BrowseName="DescribesInputArgument">
     <DisplayName>DescribesInputArgument</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=129</Reference>
     </References>
@@ -518,6 +569,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=131" BrowseName="DescribesOptionalInputArgument">
     <DisplayName>DescribesOptionalInputArgument</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=130</Reference>
     </References>
@@ -525,6 +577,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=132" BrowseName="DescribesOutputArgument">
     <DisplayName>DescribesOutputArgument</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=129</Reference>
     </References>
@@ -533,6 +586,7 @@
   <UAVariable NodeId="i=3068" BrowseName="NodeVersion" DataType="String" ValueRank="-2">
     <DisplayName>NodeVersion</DisplayName>
     <Description>The version number of the node (used to indicate changes to references of the owning node).</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
@@ -540,6 +594,7 @@
   <UAVariable NodeId="i=12170" BrowseName="ViewVersion" DataType="UInt32" ValueRank="-2">
     <DisplayName>ViewVersion</DisplayName>
     <Description>The version number of the view.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
@@ -547,6 +602,7 @@
   <UAVariable NodeId="i=3067" BrowseName="Icon" DataType="i=30" ValueRank="-2">
     <DisplayName>Icon</DisplayName>
     <Description>A small image representing the object.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
@@ -554,6 +610,7 @@
   <UAVariable NodeId="i=3069" BrowseName="LocalTime" DataType="i=8912" ValueRank="-2">
     <DisplayName>LocalTime</DisplayName>
     <Description>The local time where the owning variable value was collected.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
@@ -561,6 +618,7 @@
   <UAVariable NodeId="i=3070" BrowseName="AllowNulls" DataType="Boolean" ValueRank="-2">
     <DisplayName>AllowNulls</DisplayName>
     <Description>Whether the value of the owning variable is allowed to be null.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
@@ -568,6 +626,7 @@
   <UAVariable NodeId="i=11433" BrowseName="ValueAsText" DataType="LocalizedText" ValueRank="-2">
     <DisplayName>ValueAsText</DisplayName>
     <Description>The string representation of the current value for a variable with an enumerated data type.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
@@ -575,6 +634,7 @@
   <UAVariable NodeId="i=11498" BrowseName="MaxStringLength" DataType="UInt32" ValueRank="-2">
     <DisplayName>MaxStringLength</DisplayName>
     <Description>The maximum number of bytes supported by the DataVariable.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
@@ -582,6 +642,7 @@
   <UAVariable NodeId="i=15002" BrowseName="MaxCharacters" DataType="UInt32" ValueRank="-2">
     <DisplayName>MaxCharacters</DisplayName>
     <Description>The maximum number of Unicode characters supported by the DataVariable.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
@@ -589,6 +650,7 @@
   <UAVariable NodeId="i=12908" BrowseName="MaxByteStringLength" DataType="UInt32" ValueRank="-2">
     <DisplayName>MaxByteStringLength</DisplayName>
     <Description>The maximum length for a byte string that can be stored in the owning variable.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
@@ -596,6 +658,7 @@
   <UAVariable NodeId="i=11512" BrowseName="MaxArrayLength" DataType="UInt32" ValueRank="-2">
     <DisplayName>MaxArrayLength</DisplayName>
     <Description>The maximum length for an array that can be stored in the owning variable.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
@@ -603,6 +666,7 @@
   <UAVariable NodeId="i=11513" BrowseName="EngineeringUnits" DataType="i=887" ValueRank="-2">
     <DisplayName>EngineeringUnits</DisplayName>
     <Description>The engineering units for the value of the owning variable.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
@@ -610,6 +674,7 @@
   <UAVariable NodeId="i=11432" BrowseName="EnumStrings" DataType="LocalizedText" ValueRank="1">
     <DisplayName>EnumStrings</DisplayName>
     <Description>The human readable strings associated with the values of an enumerated value (when values are sequential).</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
@@ -617,6 +682,7 @@
   <UAVariable NodeId="i=3071" BrowseName="EnumValues" DataType="i=7594" ValueRank="1">
     <DisplayName>EnumValues</DisplayName>
     <Description>The human readable strings associated with the values of an enumerated value (when values have no sequence).</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
@@ -624,6 +690,7 @@
   <UAVariable NodeId="i=12745" BrowseName="OptionSetValues" DataType="LocalizedText" ValueRank="1">
     <DisplayName>OptionSetValues</DisplayName>
     <Description>Contains the human-readable representation for each bit of the bit mask.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
@@ -631,6 +698,7 @@
   <UAVariable NodeId="i=3072" BrowseName="InputArguments" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
     <Description>The input arguments for a method.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
@@ -638,6 +706,7 @@
   <UAVariable NodeId="i=3073" BrowseName="OutputArguments" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
     <Description>The output arguments for a method.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
@@ -645,6 +714,7 @@
   <UAVariable NodeId="i=16306" BrowseName="DefaultInputValues" ValueRank="1">
     <DisplayName>DefaultInputValues</DisplayName>
     <Description>Specifies the default values for optional input arguments.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
@@ -652,6 +722,7 @@
   <UADataType NodeId="i=2000" BrowseName="ImageBMP">
     <DisplayName>ImageBMP</DisplayName>
     <Description>An image encoded in BMP format.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=30</Reference>
     </References>
@@ -659,6 +730,7 @@
   <UADataType NodeId="i=2001" BrowseName="ImageGIF">
     <DisplayName>ImageGIF</DisplayName>
     <Description>An image encoded in GIF format.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=30</Reference>
     </References>
@@ -666,6 +738,7 @@
   <UADataType NodeId="i=2002" BrowseName="ImageJPG">
     <DisplayName>ImageJPG</DisplayName>
     <Description>An image encoded in JPEG format.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=30</Reference>
     </References>
@@ -673,6 +746,7 @@
   <UADataType NodeId="i=2003" BrowseName="ImagePNG">
     <DisplayName>ImagePNG</DisplayName>
     <Description>An image encoded in PNG format.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=30</Reference>
     </References>
@@ -680,13 +754,26 @@
   <UADataType NodeId="i=16307" BrowseName="AudioDataType">
     <DisplayName>AudioDataType</DisplayName>
     <Description>An image encoded in PNG format.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15</Reference>
     </References>
   </UADataType>
+  <UADataType NodeId="i=17861" BrowseName="DecimalDataType">
+    <DisplayName>DecimalDataType</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="DecimalDataType">
+      <Field Name="Scale" DataType="i=4" />
+      <Field Name="Value" DataType="i=15" />
+    </Definition>
+  </UADataType>
   <UADataType NodeId="i=256" BrowseName="IdType">
     <DisplayName>IdType</DisplayName>
     <Description>The type of identifier used in a node id.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=7591</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -708,6 +795,7 @@
   </UADataType>
   <UAVariable NodeId="i=7591" BrowseName="EnumStrings" ParentNodeId="i=256" DataType="LocalizedText" ValueRank="1">
     <DisplayName>EnumStrings</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -741,6 +829,7 @@
   <UADataType NodeId="i=257" BrowseName="NodeClass">
     <DisplayName>NodeClass</DisplayName>
     <Description>A mask specifying the class of the node.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=11878</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -777,6 +866,7 @@
   </UADataType>
   <UAVariable NodeId="i=11878" BrowseName="EnumValues" ParentNodeId="i=257" DataType="i=7594" ValueRank="1">
     <DisplayName>EnumValues</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -969,6 +1059,7 @@
   </UAVariable>
   <UADataType NodeId="i=94" BrowseName="PermissionType">
     <DisplayName>PermissionType</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=15030</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
@@ -995,6 +1086,7 @@
   </UADataType>
   <UAVariable NodeId="i=15030" BrowseName="OptionSetValues" ParentNodeId="i=94" DataType="LocalizedText" ValueRank="1">
     <DisplayName>OptionSetValues</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1092,6 +1184,7 @@
   </UAVariable>
   <UADataType NodeId="i=15031" BrowseName="AccessLevelType">
     <DisplayName>AccessLevelType</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=15032</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=3</Reference>
@@ -1108,6 +1201,7 @@
   </UADataType>
   <UAVariable NodeId="i=15032" BrowseName="OptionSetValues" ParentNodeId="i=15031" DataType="LocalizedText" ValueRank="1">
     <DisplayName>OptionSetValues</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1155,6 +1249,7 @@
   </UAVariable>
   <UADataType NodeId="i=15406" BrowseName="AccessLevelExType">
     <DisplayName>AccessLevelExType</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=15407</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
@@ -1174,6 +1269,7 @@
   </UADataType>
   <UAVariable NodeId="i=15407" BrowseName="OptionSetValues" ParentNodeId="i=15406" DataType="LocalizedText" ValueRank="1">
     <DisplayName>OptionSetValues</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1241,6 +1337,7 @@
   </UAVariable>
   <UADataType NodeId="i=15033" BrowseName="EventNotifierType">
     <DisplayName>EventNotifierType</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=15034</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=3</Reference>
@@ -1253,6 +1350,7 @@
   </UADataType>
   <UAVariable NodeId="i=15034" BrowseName="OptionSetValues" ParentNodeId="i=15033" DataType="LocalizedText" ValueRank="1">
     <DisplayName>OptionSetValues</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1285,6 +1383,7 @@
   </UAVariable>
   <UADataType NodeId="i=95" BrowseName="AccessRestrictionType">
     <DisplayName>AccessRestrictionType</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=15035</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
@@ -1297,6 +1396,7 @@
   </UADataType>
   <UAVariable NodeId="i=15035" BrowseName="OptionSetValues" ParentNodeId="i=95" DataType="LocalizedText" ValueRank="1">
     <DisplayName>OptionSetValues</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1324,6 +1424,7 @@
   </UAVariable>
   <UADataType NodeId="i=96" BrowseName="RolePermissionType">
     <DisplayName>RolePermissionType</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -1334,12 +1435,14 @@
   </UADataType>
   <UADataType NodeId="i=97" BrowseName="DataTypeDefinition" IsAbstract="true">
     <DisplayName>DataTypeDefinition</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=98" BrowseName="StructureType">
     <DisplayName>StructureType</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=14528</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -1352,6 +1455,7 @@
   </UADataType>
   <UAVariable NodeId="i=14528" BrowseName="EnumStrings" ParentNodeId="i=98" DataType="LocalizedText" ValueRank="1">
     <DisplayName>EnumStrings</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1379,6 +1483,7 @@
   </UAVariable>
   <UADataType NodeId="i=101" BrowseName="StructureField">
     <DisplayName>StructureField</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -1394,6 +1499,7 @@
   </UADataType>
   <UADataType NodeId="i=99" BrowseName="StructureDefinition">
     <DisplayName>StructureDefinition</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=97</Reference>
     </References>
@@ -1406,6 +1512,7 @@
   </UADataType>
   <UADataType NodeId="i=100" BrowseName="EnumDefinition">
     <DisplayName>EnumDefinition</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=97</Reference>
     </References>
@@ -1413,9 +1520,239 @@
       <Field Name="Fields" DataType="i=102" ValueRank="1" />
     </Definition>
   </UADataType>
+  <UADataType NodeId="i=258" BrowseName="Node">
+    <DisplayName>Node</DisplayName>
+    <Description>Specifies the attributes which belong to all nodes.</Description>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="Node">
+      <Field Name="NodeId" DataType="i=17">
+        <Description>A unique identifier for the node.</Description>
+      </Field>
+      <Field Name="NodeClass" DataType="i=257">
+        <Description>The class of the node.</Description>
+      </Field>
+      <Field Name="BrowseName" DataType="i=20">
+        <Description>The browse name of the node.</Description>
+      </Field>
+      <Field Name="DisplayName" DataType="i=21">
+        <Description>The display name of the node.</Description>
+      </Field>
+      <Field Name="Description" DataType="i=21">
+        <Description>The description of the node.</Description>
+      </Field>
+      <Field Name="WriteMask" DataType="i=7">
+        <Description>A mask indicating which attributes are writable.</Description>
+      </Field>
+      <Field Name="UserWriteMask" DataType="i=7">
+        <Description>A mask indicating which attributes are writable by the current user.</Description>
+      </Field>
+      <Field Name="RolePermissions" DataType="i=96" ValueRank="1">
+        <Description>A list of permissions for the node assigned to roles.</Description>
+      </Field>
+      <Field Name="UserRolePermissions" DataType="i=96" ValueRank="1">
+        <Description>A list of permissions for the node assigned to roles which are available to the current session.</Description>
+      </Field>
+      <Field Name="AccessRestrictions" DataType="i=5">
+        <Description>A mask indicating any access restrictions that apply to the node.</Description>
+      </Field>
+      <Field Name="References" DataType="i=285" ValueRank="1">
+        <Description>The references that belong to the node.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="i=11879" BrowseName="InstanceNode">
+    <DisplayName>InstanceNode</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=258</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="i=11880" BrowseName="TypeNode">
+    <DisplayName>TypeNode</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=258</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="i=261" BrowseName="ObjectNode">
+    <DisplayName>ObjectNode</DisplayName>
+    <Description>Specifies the attributes which belong to object nodes.</Description>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=11879</Reference>
+    </References>
+    <Definition Name="ObjectNode">
+      <Field Name="EventNotifier" DataType="i=3">
+        <Description>A mask indicating whether events are produced by the object.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="i=264" BrowseName="ObjectTypeNode">
+    <DisplayName>ObjectTypeNode</DisplayName>
+    <Description>Specifies the attributes which belong to object type nodes.</Description>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=11880</Reference>
+    </References>
+    <Definition Name="ObjectTypeNode">
+      <Field Name="IsAbstract" DataType="i=1">
+        <Description>If TRUE the type is abstract and only subtypes of it appear in the address space.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="i=267" BrowseName="VariableNode">
+    <DisplayName>VariableNode</DisplayName>
+    <Description>Specifies the attributes which belong to variable nodes.</Description>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=11879</Reference>
+    </References>
+    <Definition Name="VariableNode">
+      <Field Name="Value">
+        <Description>The current value.</Description>
+      </Field>
+      <Field Name="DataType" DataType="i=17">
+        <Description>The data type of the value.</Description>
+      </Field>
+      <Field Name="ValueRank" DataType="i=6">
+        <Description>Whether the value is an array type and the rank of the array if it is.</Description>
+      </Field>
+      <Field Name="ArrayDimensions" DataType="i=7" ValueRank="1">
+        <Description>The number of dimensions if the value is an array type and one or more dimensions have a fixed length.</Description>
+      </Field>
+      <Field Name="AccessLevel" DataType="i=3">
+        <Description>A bit mask specifying how the value may be accessed.</Description>
+      </Field>
+      <Field Name="UserAccessLevel" DataType="i=3">
+        <Description>A bit mask specifying how the value may be accessed by the current user.</Description>
+      </Field>
+      <Field Name="MinimumSamplingInterval" DataType="i=290">
+        <Description>The minimum possible sampling interval for the value.</Description>
+      </Field>
+      <Field Name="Historizing" DataType="i=1">
+        <Description>TRUE if the server is current storing the history of the value.</Description>
+      </Field>
+      <Field Name="AccessLevelEx" DataType="i=7">
+        <Description>A bit mask specifying how the value may be accessed.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="i=270" BrowseName="VariableTypeNode">
+    <DisplayName>VariableTypeNode</DisplayName>
+    <Description>Specifies the attributes which belong to variable type nodes.</Description>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=11880</Reference>
+    </References>
+    <Definition Name="VariableTypeNode">
+      <Field Name="Value">
+        <Description>The default value when creating new instances.</Description>
+      </Field>
+      <Field Name="DataType" DataType="i=17">
+        <Description>The data type of the value.</Description>
+      </Field>
+      <Field Name="ValueRank" DataType="i=6">
+        <Description>Whether the value is an array type and the rank of the array if it is.</Description>
+      </Field>
+      <Field Name="ArrayDimensions" DataType="i=7" ValueRank="1">
+        <Description>The number of dimensions if the value is an array type and one or more dimensions have a fixed length.</Description>
+      </Field>
+      <Field Name="IsAbstract" DataType="i=1">
+        <Description>If TRUE the type is abstract and only subtypes of it appear in the address space.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="i=273" BrowseName="ReferenceTypeNode">
+    <DisplayName>ReferenceTypeNode</DisplayName>
+    <Description>Specifies the attributes which belong to reference type nodes.</Description>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=11880</Reference>
+    </References>
+    <Definition Name="ReferenceTypeNode">
+      <Field Name="IsAbstract" DataType="i=1">
+        <Description>If TRUE the type is abstract and only subtypes of it appear in the address space.</Description>
+      </Field>
+      <Field Name="Symmetric" DataType="i=1">
+        <Description>If TRUE the reference type has the same semantics in both directions.</Description>
+      </Field>
+      <Field Name="InverseName" DataType="i=21">
+        <Description>The display name for the reference when following it from target to source.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="i=276" BrowseName="MethodNode">
+    <DisplayName>MethodNode</DisplayName>
+    <Description>Specifies the attributes which belong to method nodes.</Description>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=11879</Reference>
+    </References>
+    <Definition Name="MethodNode">
+      <Field Name="Executable" DataType="i=1">
+        <Description>If TRUE the method can be called.</Description>
+      </Field>
+      <Field Name="UserExecutable" DataType="i=1">
+        <Description>If TRUE the method can be called by the current user.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="i=279" BrowseName="ViewNode">
+    <DisplayName>ViewNode</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=11879</Reference>
+    </References>
+    <Definition Name="ViewNode">
+      <Field Name="ContainsNoLoops" DataType="i=1">
+        <Description>If TRUE the view contains a tree of non-looping hierarchical references.</Description>
+      </Field>
+      <Field Name="EventNotifier" DataType="i=3">
+        <Description>A mask indicating whether events are produced by the view.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="i=282" BrowseName="DataTypeNode">
+    <DisplayName>DataTypeNode</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=11880</Reference>
+    </References>
+    <Definition Name="DataTypeNode">
+      <Field Name="IsAbstract" DataType="i=1">
+        <Description>If TRUE the type is abstract and only subtypes of it appear in the address space.</Description>
+      </Field>
+      <Field Name="DataTypeDefinition" DataType="i=22">
+        <Description>Provides the metadata and encoding information for custom DataTypes.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="i=285" BrowseName="ReferenceNode">
+    <DisplayName>ReferenceNode</DisplayName>
+    <Description>Specifies a reference which belongs to a node.</Description>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="ReferenceNode">
+      <Field Name="ReferenceTypeId" DataType="i=17">
+        <Description>The node id of the reference type for the reference.</Description>
+      </Field>
+      <Field Name="IsInverse" DataType="i=1">
+        <Description>The reference is an inverse reference.</Description>
+      </Field>
+      <Field Name="TargetId" DataType="i=18">
+        <Description>The node id for the target of the reference.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
   <UADataType NodeId="i=296" BrowseName="Argument">
     <DisplayName>Argument</DisplayName>
     <Description>An argument for a method.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -1440,6 +1777,7 @@
   <UADataType NodeId="i=7594" BrowseName="EnumValueType">
     <DisplayName>EnumValueType</DisplayName>
     <Description>A mapping between a value of an enumerated type and a name and description.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -1457,6 +1795,7 @@
   </UADataType>
   <UADataType NodeId="i=102" BrowseName="EnumField">
     <DisplayName>EnumField</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7594</Reference>
     </References>
@@ -1467,6 +1806,7 @@
   <UADataType NodeId="i=12755" BrowseName="OptionSet">
     <DisplayName>OptionSet</DisplayName>
     <Description>This abstract Structured DataType is the base DataType for all DataTypes representing a bit mask.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -1482,6 +1822,7 @@
   <UADataType NodeId="i=12756" BrowseName="Union">
     <DisplayName>Union</DisplayName>
     <Description>This abstract DataType is the base DataType for all union DataTypes.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -1489,6 +1830,7 @@
   <UADataType NodeId="i=12877" BrowseName="NormalizedString">
     <DisplayName>NormalizedString</DisplayName>
     <Description>A string normalized based on the rules in the unicode specification.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
@@ -1496,6 +1838,7 @@
   <UADataType NodeId="i=12878" BrowseName="DecimalString">
     <DisplayName>DecimalString</DisplayName>
     <Description>An arbitraty numeric value.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
@@ -1503,6 +1846,7 @@
   <UADataType NodeId="i=12879" BrowseName="DurationString">
     <DisplayName>DurationString</DisplayName>
     <Description>A period of time formatted as defined in ISO 8601-2000.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
@@ -1510,6 +1854,7 @@
   <UADataType NodeId="i=12880" BrowseName="TimeString">
     <DisplayName>TimeString</DisplayName>
     <Description>A time formatted as defined in ISO 8601-2000.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
@@ -1517,6 +1862,7 @@
   <UADataType NodeId="i=12881" BrowseName="DateString">
     <DisplayName>DateString</DisplayName>
     <Description>A date formatted as defined in ISO 8601-2000.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
@@ -1524,6 +1870,7 @@
   <UADataType NodeId="i=290" BrowseName="Duration">
     <DisplayName>Duration</DisplayName>
     <Description>A period of time measured in milliseconds.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11</Reference>
     </References>
@@ -1531,6 +1878,7 @@
   <UADataType NodeId="i=294" BrowseName="UtcTime">
     <DisplayName>UtcTime</DisplayName>
     <Description>A date/time value specified in Universal Coordinated Time (UTC).</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=13</Reference>
     </References>
@@ -1538,12 +1886,14 @@
   <UADataType NodeId="i=295" BrowseName="LocaleId">
     <DisplayName>LocaleId</DisplayName>
     <Description>An identifier for a user locale.</Description>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=8912" BrowseName="TimeZoneDataType">
     <DisplayName>TimeZoneDataType</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -1552,8 +1902,17 @@
       <Field Name="DaylightSavingInOffset" DataType="i=1" />
     </Definition>
   </UADataType>
+  <UAObject NodeId="i=17863" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=17861</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
   <UAObject NodeId="i=128" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=96</Reference>
       <Reference ReferenceType="HasDescription">i=16131</Reference>
@@ -1562,6 +1921,7 @@
   </UAObject>
   <UAObject NodeId="i=121" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=97</Reference>
       <Reference ReferenceType="HasDescription">i=18178</Reference>
@@ -1570,6 +1930,7 @@
   </UAObject>
   <UAObject NodeId="i=14844" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=101</Reference>
       <Reference ReferenceType="HasDescription">i=18181</Reference>
@@ -1578,6 +1939,7 @@
   </UAObject>
   <UAObject NodeId="i=122" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=99</Reference>
       <Reference ReferenceType="HasDescription">i=18184</Reference>
@@ -1586,14 +1948,112 @@
   </UAObject>
   <UAObject NodeId="i=123" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=100</Reference>
       <Reference ReferenceType="HasDescription">i=18187</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
+  <UAObject NodeId="i=260" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=258</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=11889" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=11879</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=11890" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=11880</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=263" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=261</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=266" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=264</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=269" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=267</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=272" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=270</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=275" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=273</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=278" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=276</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=281" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=279</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=284" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=282</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=287" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=285</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
   <UAObject NodeId="i=298" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=296</Reference>
       <Reference ReferenceType="HasDescription">i=7650</Reference>
@@ -1602,6 +2062,7 @@
   </UAObject>
   <UAObject NodeId="i=8251" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=7594</Reference>
       <Reference ReferenceType="HasDescription">i=7656</Reference>
@@ -1610,6 +2071,7 @@
   </UAObject>
   <UAObject NodeId="i=14845" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=102</Reference>
       <Reference ReferenceType="HasDescription">i=14870</Reference>
@@ -1618,6 +2080,7 @@
   </UAObject>
   <UAObject NodeId="i=12765" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=12755</Reference>
       <Reference ReferenceType="HasDescription">i=12767</Reference>
@@ -1626,6 +2089,7 @@
   </UAObject>
   <UAObject NodeId="i=12766" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=12756</Reference>
       <Reference ReferenceType="HasDescription">i=12770</Reference>
@@ -1634,14 +2098,24 @@
   </UAObject>
   <UAObject NodeId="i=8917" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=8912</Reference>
       <Reference ReferenceType="HasDescription">i=8914</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
+  <UAObject NodeId="i=17862" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=17861</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
   <UAObject NodeId="i=16126" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=96</Reference>
       <Reference ReferenceType="HasDescription">i=16127</Reference>
@@ -1650,6 +2124,7 @@
   </UAObject>
   <UAObject NodeId="i=14797" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=97</Reference>
       <Reference ReferenceType="HasDescription">i=18166</Reference>
@@ -1658,6 +2133,7 @@
   </UAObject>
   <UAObject NodeId="i=14800" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=101</Reference>
       <Reference ReferenceType="HasDescription">i=18169</Reference>
@@ -1666,6 +2142,7 @@
   </UAObject>
   <UAObject NodeId="i=14798" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=99</Reference>
       <Reference ReferenceType="HasDescription">i=18172</Reference>
@@ -1674,14 +2151,112 @@
   </UAObject>
   <UAObject NodeId="i=14799" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=100</Reference>
       <Reference ReferenceType="HasDescription">i=18175</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
+  <UAObject NodeId="i=259" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=258</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=11887" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=11879</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=11888" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=11880</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=262" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=261</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=265" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=264</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=268" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=267</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=271" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=270</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=274" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=273</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=277" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=276</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=280" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=279</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=283" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=282</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=286" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=285</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
   <UAObject NodeId="i=297" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=296</Reference>
       <Reference ReferenceType="HasDescription">i=8285</Reference>
@@ -1690,6 +2265,7 @@
   </UAObject>
   <UAObject NodeId="i=7616" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=7594</Reference>
       <Reference ReferenceType="HasDescription">i=8291</Reference>
@@ -1698,6 +2274,7 @@
   </UAObject>
   <UAObject NodeId="i=14801" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=102</Reference>
       <Reference ReferenceType="HasDescription">i=14826</Reference>
@@ -1706,6 +2283,7 @@
   </UAObject>
   <UAObject NodeId="i=12757" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=12755</Reference>
       <Reference ReferenceType="HasDescription">i=12759</Reference>
@@ -1714,6 +2292,7 @@
   </UAObject>
   <UAObject NodeId="i=12758" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=12756</Reference>
       <Reference ReferenceType="HasDescription">i=12762</Reference>
@@ -1722,14 +2301,24 @@
   </UAObject>
   <UAObject NodeId="i=8913" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=8912</Reference>
       <Reference ReferenceType="HasDescription">i=8918</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
+  <UAObject NodeId="i=15045" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=17861</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
   <UAObject NodeId="i=15062" BrowseName="Default JSON" SymbolicName="DefaultJson">
     <DisplayName>Default JSON</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=96</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -1737,6 +2326,7 @@
   </UAObject>
   <UAObject NodeId="i=15063" BrowseName="Default JSON" SymbolicName="DefaultJson">
     <DisplayName>Default JSON</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=97</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -1744,6 +2334,7 @@
   </UAObject>
   <UAObject NodeId="i=15065" BrowseName="Default JSON" SymbolicName="DefaultJson">
     <DisplayName>Default JSON</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=101</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -1751,6 +2342,7 @@
   </UAObject>
   <UAObject NodeId="i=15066" BrowseName="Default JSON" SymbolicName="DefaultJson">
     <DisplayName>Default JSON</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=99</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -1758,13 +2350,111 @@
   </UAObject>
   <UAObject NodeId="i=15067" BrowseName="Default JSON" SymbolicName="DefaultJson">
     <DisplayName>Default JSON</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=100</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
+  <UAObject NodeId="i=15068" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=258</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=15069" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=11879</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=15070" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=11880</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=15071" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=261</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=15073" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=264</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=15074" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=267</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=15075" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=270</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=15076" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=273</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=15077" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=276</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=15078" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=279</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=15079" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=282</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=15080" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <Category>Part3/Services</Category>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=285</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
   <UAObject NodeId="i=15081" BrowseName="Default JSON" SymbolicName="DefaultJson">
     <DisplayName>Default JSON</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=296</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -1772,6 +2462,7 @@
   </UAObject>
   <UAObject NodeId="i=15082" BrowseName="Default JSON" SymbolicName="DefaultJson">
     <DisplayName>Default JSON</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=7594</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -1779,6 +2470,7 @@
   </UAObject>
   <UAObject NodeId="i=15083" BrowseName="Default JSON" SymbolicName="DefaultJson">
     <DisplayName>Default JSON</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=102</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -1786,6 +2478,7 @@
   </UAObject>
   <UAObject NodeId="i=15084" BrowseName="Default JSON" SymbolicName="DefaultJson">
     <DisplayName>Default JSON</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=12755</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -1793,6 +2486,7 @@
   </UAObject>
   <UAObject NodeId="i=15085" BrowseName="Default JSON" SymbolicName="DefaultJson">
     <DisplayName>Default JSON</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=12756</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -1800,6 +2494,7 @@
   </UAObject>
   <UAObject NodeId="i=15086" BrowseName="Default JSON" SymbolicName="DefaultJson">
     <DisplayName>Default JSON</DisplayName>
+    <Category>Part3</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=8912</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>

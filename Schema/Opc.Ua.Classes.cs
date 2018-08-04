@@ -25775,7 +25775,7 @@ namespace Opc.Ua
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public partial class SelectionListState : BaseDataVariableState<ServerStatusDataType[]>
+    public partial class SelectionListState : BaseDataVariableState
     {
         #region Constructors
         /// <summary>
@@ -25798,7 +25798,7 @@ namespace Opc.Ua
         /// </summary>
         protected override NodeId GetDefaultDataTypeId(NamespaceTable namespaceUris)
         {
-            return Opc.Ua.NodeId.Create(Opc.Ua.DataTypes.ServerStatusDataType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+            return Opc.Ua.NodeId.Create(Opc.Ua.DataTypes.BaseDataType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
         }
 
         /// <summary>
@@ -25856,10 +25856,10 @@ namespace Opc.Ua
            "AAAAAA==";
 
         private const string InitializationString =
-           "//////////8VYIEAAgAAAAAAGQAAAFNlbGVjdGlvbkxpc3RUeXBlSW5zdGFuY2UBALU/AQC1PwEAXgMB" +
-           "Af////8DAAAAFWCJCgIAAAAAAAoAAABTZWxlY3Rpb25zAQDgRAAuAETgRAAAABgBAAAAAQH/////AAAA" +
-           "ABVgiQoCAAAAAAAVAAAAU2VsZWN0aW9uRGVzY3JpcHRpb25zAQDhRAAuAEThRAAAABUBAAAAAQH/////" +
-           "AAAAABVgiQoCAAAAAAAOAAAAUmVzdHJpY3RUb0xpc3QBALg/AC4ARLg/AAAAAf////8BAf////8AAAAA";
+           "//////////8VYIEAAgAAAAAAGQAAAFNlbGVjdGlvbkxpc3RUeXBlSW5zdGFuY2UBALU/AQC1PwAYAQH/" +
+           "////AwAAABVgiQoCAAAAAAAKAAAAU2VsZWN0aW9ucwEA4EQALgBE4EQAAAAYAQAAAAEB/////wAAAAAV" +
+           "YIkKAgAAAAAAFQAAAFNlbGVjdGlvbkRlc2NyaXB0aW9ucwEA4UQALgBE4UQAAAAVAQAAAAEB/////wAA" +
+           "AAAVYIkKAgAAAAAADgAAAFJlc3RyaWN0VG9MaXN0AQC4PwAuAES4PwAAAAH/////AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -26054,6 +26054,65 @@ namespace Opc.Ua
         private PropertyState<bool> m_restrictToList;
         #endregion
     }
+
+    #region SelectionListState<T> Class
+    /// <summary>
+    /// A typed version of the SelectionListType variable.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public class SelectionListState<T> : SelectionListState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the instance with its defalt attribute values.
+        /// </summary>
+        public SelectionListState(NodeState parent) : base(parent)
+        {
+            Value = default(T);
+        }
+
+        /// <summary>
+        /// Initializes the instance with the default values.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            base.Initialize(context);
+
+            Value = default(T);
+            DataType = TypeInfo.GetDataTypeId(typeof(T));
+            ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+        #endregion
+
+        #region Public Members
+        /// <summary>
+        /// The value of the variable.
+        /// </summary>
+        public new T Value
+        {
+            get
+            {
+                return CheckTypeBeforeCast<T>(base.Value, true);
+            }
+
+            set
+            {
+                base.Value = value;
+            }
+        }
+        #endregion
+    }
+    #endregion
     #endif
     #endregion
 
@@ -67882,7 +67941,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the TransportProfileUri Variable.
         /// </summary>
-        public SelectionListState TransportProfileUri
+        public SelectionListState<string> TransportProfileUri
         {
             get
             {
@@ -68179,11 +68238,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                TransportProfileUri = new SelectionListState(this);
+                                TransportProfileUri = new SelectionListState<string>(this);
                             }
                             else
                             {
-                                TransportProfileUri = (SelectionListState)replacement;
+                                TransportProfileUri = (SelectionListState<string>)replacement;
                             }
                         }
                     }
@@ -68372,7 +68431,7 @@ namespace Opc.Ua
 
         #region Private Fields
         private PropertyState m_publisherId;
-        private SelectionListState m_transportProfileUri;
+        private SelectionListState<string> m_transportProfileUri;
         private PropertyState<KeyValuePair[]> m_connectionProperties;
         private NetworkAddressState m_address;
         private ConnectionTransportState m_transportSettings;
@@ -79139,7 +79198,7 @@ namespace Opc.Ua
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public partial class BrokerConnectionTransportState : WriterGroupTransportState
+    public partial class BrokerConnectionTransportState : ConnectionTransportState
     {
         #region Constructors
         /// <summary>

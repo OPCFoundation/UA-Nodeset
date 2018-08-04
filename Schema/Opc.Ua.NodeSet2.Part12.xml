@@ -30,7 +30,7 @@
 
 <UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-07-31T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.02" PublicationDate="2018-07-31T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2018-07-31T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -71,6 +71,7 @@
   </Aliases>
   <UAObjectType NodeId="i=12522" BrowseName="TrustListType">
     <DisplayName>TrustListType</DisplayName>
+    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=12542</Reference>
       <Reference ReferenceType="HasComponent">i=12543</Reference>
@@ -324,6 +325,7 @@
   </UAVariable>
   <UADataType NodeId="i=12552" BrowseName="TrustListMasks">
     <DisplayName>TrustListMasks</DisplayName>
+    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=12553</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -339,6 +341,7 @@
   </UADataType>
   <UAVariable NodeId="i=12553" BrowseName="EnumValues" ParentNodeId="i=12552" DataType="i=7594" ValueRank="1">
     <DisplayName>EnumValues</DisplayName>
+    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -447,6 +450,7 @@
   </UAVariable>
   <UADataType NodeId="i=12554" BrowseName="TrustListDataType">
     <DisplayName>TrustListDataType</DisplayName>
+    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -460,6 +464,7 @@
   </UADataType>
   <UAObjectType NodeId="i=12555" BrowseName="CertificateGroupType">
     <DisplayName>CertificateGroupType</DisplayName>
+    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasComponent">i=13599</Reference>
       <Reference ReferenceType="HasProperty">i=13631</Reference>
@@ -533,6 +538,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13606" BrowseName="InputArguments" ParentNodeId="i=13605" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -561,6 +567,7 @@
   </UAVariable>
   <UAVariable NodeId="i=13607" BrowseName="OutputArguments" ParentNodeId="i=13605" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -597,6 +604,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13609" BrowseName="InputArguments" ParentNodeId="i=13608" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -634,6 +642,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13611" BrowseName="InputArguments" ParentNodeId="i=13610" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -678,6 +687,7 @@
   </UAVariable>
   <UAVariable NodeId="i=13612" BrowseName="OutputArguments" ParentNodeId="i=13610" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -714,6 +724,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13614" BrowseName="InputArguments" ParentNodeId="i=13613" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -767,6 +778,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13616" BrowseName="InputArguments" ParentNodeId="i=13615" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -795,6 +807,7 @@
   </UAVariable>
   <UAVariable NodeId="i=13617" BrowseName="OutputArguments" ParentNodeId="i=13615" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -831,6 +844,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13619" BrowseName="InputArguments" ParentNodeId="i=13618" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -956,6 +970,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=13813" BrowseName="CertificateGroupFolderType">
     <DisplayName>CertificateGroupFolderType</DisplayName>
+    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasComponent">i=13814</Reference>
       <Reference ReferenceType="HasComponent">i=13848</Reference>
@@ -1041,6 +1056,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13822" BrowseName="InputArguments" ParentNodeId="i=13821" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1069,6 +1085,7 @@
   </UAVariable>
   <UAVariable NodeId="i=13823" BrowseName="OutputArguments" ParentNodeId="i=13821" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1105,6 +1122,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13825" BrowseName="InputArguments" ParentNodeId="i=13824" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1142,6 +1160,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13827" BrowseName="InputArguments" ParentNodeId="i=13826" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1186,6 +1205,7 @@
   </UAVariable>
   <UAVariable NodeId="i=13828" BrowseName="OutputArguments" ParentNodeId="i=13826" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1222,6 +1242,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13830" BrowseName="InputArguments" ParentNodeId="i=13829" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1275,6 +1296,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13832" BrowseName="InputArguments" ParentNodeId="i=13831" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1303,6 +1325,7 @@
   </UAVariable>
   <UAVariable NodeId="i=13833" BrowseName="OutputArguments" ParentNodeId="i=13831" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1339,6 +1362,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13835" BrowseName="InputArguments" ParentNodeId="i=13834" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1539,6 +1563,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13856" BrowseName="InputArguments" ParentNodeId="i=13855" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1567,6 +1592,7 @@
   </UAVariable>
   <UAVariable NodeId="i=13857" BrowseName="OutputArguments" ParentNodeId="i=13855" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1603,6 +1629,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13859" BrowseName="InputArguments" ParentNodeId="i=13858" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1640,6 +1667,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13861" BrowseName="InputArguments" ParentNodeId="i=13860" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1684,6 +1712,7 @@
   </UAVariable>
   <UAVariable NodeId="i=13862" BrowseName="OutputArguments" ParentNodeId="i=13860" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1720,6 +1749,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13864" BrowseName="InputArguments" ParentNodeId="i=13863" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1773,6 +1803,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13866" BrowseName="InputArguments" ParentNodeId="i=13865" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1801,6 +1832,7 @@
   </UAVariable>
   <UAVariable NodeId="i=13867" BrowseName="OutputArguments" ParentNodeId="i=13865" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1837,6 +1869,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13869" BrowseName="InputArguments" ParentNodeId="i=13868" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2037,6 +2070,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13890" BrowseName="InputArguments" ParentNodeId="i=13889" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2065,6 +2099,7 @@
   </UAVariable>
   <UAVariable NodeId="i=13891" BrowseName="OutputArguments" ParentNodeId="i=13889" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2101,6 +2136,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13893" BrowseName="InputArguments" ParentNodeId="i=13892" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2138,6 +2174,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13895" BrowseName="InputArguments" ParentNodeId="i=13894" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2182,6 +2219,7 @@
   </UAVariable>
   <UAVariable NodeId="i=13896" BrowseName="OutputArguments" ParentNodeId="i=13894" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2218,6 +2256,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13898" BrowseName="InputArguments" ParentNodeId="i=13897" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2271,6 +2310,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13900" BrowseName="InputArguments" ParentNodeId="i=13899" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2299,6 +2339,7 @@
   </UAVariable>
   <UAVariable NodeId="i=13901" BrowseName="OutputArguments" ParentNodeId="i=13899" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2335,6 +2376,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13903" BrowseName="InputArguments" ParentNodeId="i=13902" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2535,6 +2577,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13924" BrowseName="InputArguments" ParentNodeId="i=13923" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2563,6 +2606,7 @@
   </UAVariable>
   <UAVariable NodeId="i=13925" BrowseName="OutputArguments" ParentNodeId="i=13923" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2599,6 +2643,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13927" BrowseName="InputArguments" ParentNodeId="i=13926" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2636,6 +2681,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13929" BrowseName="InputArguments" ParentNodeId="i=13928" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2680,6 +2726,7 @@
   </UAVariable>
   <UAVariable NodeId="i=13930" BrowseName="OutputArguments" ParentNodeId="i=13928" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2716,6 +2763,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13932" BrowseName="InputArguments" ParentNodeId="i=13931" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2769,6 +2817,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13934" BrowseName="InputArguments" ParentNodeId="i=13933" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2797,6 +2846,7 @@
   </UAVariable>
   <UAVariable NodeId="i=13935" BrowseName="OutputArguments" ParentNodeId="i=13933" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2833,6 +2883,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13937" BrowseName="InputArguments" ParentNodeId="i=13936" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2958,48 +3009,56 @@
   </UAVariable>
   <UAObjectType NodeId="i=12556" BrowseName="CertificateType" IsAbstract="true">
     <DisplayName>CertificateType</DisplayName>
+    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=12557" BrowseName="ApplicationCertificateType" IsAbstract="true">
     <DisplayName>ApplicationCertificateType</DisplayName>
+    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12556</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=12558" BrowseName="HttpsCertificateType">
     <DisplayName>HttpsCertificateType</DisplayName>
+    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12556</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=15181" BrowseName="UserCredentialCertificateType">
     <DisplayName>UserCredentialCertificateType</DisplayName>
+    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12556</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=12559" BrowseName="RsaMinApplicationCertificateType">
     <DisplayName>RsaMinApplicationCertificateType</DisplayName>
+    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12557</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=12560" BrowseName="RsaSha256ApplicationCertificateType">
     <DisplayName>RsaSha256ApplicationCertificateType</DisplayName>
+    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12557</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=12561" BrowseName="TrustListUpdatedAuditEventType" IsAbstract="true">
     <DisplayName>TrustListUpdatedAuditEventType</DisplayName>
+    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2127</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=12581" BrowseName="ServerConfigurationType">
     <DisplayName>ServerConfigurationType</DisplayName>
+    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasComponent">i=13950</Reference>
       <Reference ReferenceType="HasProperty">i=12708</Reference>
@@ -3099,6 +3158,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13959" BrowseName="InputArguments" ParentNodeId="i=13958" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3127,6 +3187,7 @@
   </UAVariable>
   <UAVariable NodeId="i=13960" BrowseName="OutputArguments" ParentNodeId="i=13958" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3163,6 +3224,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13962" BrowseName="InputArguments" ParentNodeId="i=13961" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3200,6 +3262,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13964" BrowseName="InputArguments" ParentNodeId="i=13963" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3244,6 +3307,7 @@
   </UAVariable>
   <UAVariable NodeId="i=13965" BrowseName="OutputArguments" ParentNodeId="i=13963" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3280,6 +3344,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13967" BrowseName="InputArguments" ParentNodeId="i=13966" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3333,6 +3398,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13969" BrowseName="InputArguments" ParentNodeId="i=13968" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3361,6 +3427,7 @@
   </UAVariable>
   <UAVariable NodeId="i=13970" BrowseName="OutputArguments" ParentNodeId="i=13968" DataType="i=296" ValueRank="1">
     <DisplayName>OutputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3397,6 +3464,7 @@
   </UAMethod>
   <UAVariable NodeId="i=13972" BrowseName="InputArguments" ParentNodeId="i=13971" DataType="i=296" ValueRank="1">
     <DisplayName>InputArguments</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3871,6 +3939,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=12620" BrowseName="CertificateUpdatedAuditEventType" IsAbstract="true">
     <DisplayName>CertificateUpdatedAuditEventType</DisplayName>
+    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=13735</Reference>
       <Reference ReferenceType="HasProperty">i=13736</Reference>
@@ -3893,8 +3962,460 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=12620</Reference>
     </References>
   </UAVariable>
+  <UAObjectType NodeId="i=17496" BrowseName="KeyCredentialConfigurationFolderType">
+    <DisplayName>KeyCredentialConfigurationFolderType</DisplayName>
+    <Category>Part12</Category>
+    <References>
+      <Reference ReferenceType="HasComponent">i=17511</Reference>
+      <Reference ReferenceType="HasComponent">i=17522</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="i=17511" BrowseName="&lt;ServiceName&gt;" SymbolicName="ServiceName_Placeholder" ParentNodeId="i=17496">
+    <DisplayName>&lt;ServiceName&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=17512</Reference>
+      <Reference ReferenceType="HasProperty">i=17513</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=18001</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17496</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=17512" BrowseName="ResourceUri" ParentNodeId="i=17511" DataType="String">
+    <DisplayName>ResourceUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=17511</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=17513" BrowseName="ProfileUri" ParentNodeId="i=17511" DataType="String">
+    <DisplayName>ProfileUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=17511</Reference>
+    </References>
+  </UAVariable>
+  <UAMethod NodeId="i=17522" BrowseName="CreateCredential" ParentNodeId="i=17496">
+    <DisplayName>CreateCredential</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=17523</Reference>
+      <Reference ReferenceType="HasProperty">i=17524</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17496</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="i=17523" BrowseName="InputArguments" ParentNodeId="i=17522" DataType="i=296" ValueRank="1">
+    <DisplayName>InputArguments</DisplayName>
+    <Category>Part12</Category>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=17522</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ResourceUri</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ProfileUri</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>EndpointUrls</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="i=17524" BrowseName="OutputArguments" ParentNodeId="i=17522" DataType="i=296" ValueRank="1">
+    <DisplayName>OutputArguments</DisplayName>
+    <Category>Part12</Category>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=17522</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ObjectId</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="i=18155" BrowseName="KeyCredentialConfiguration">
+    <DisplayName>KeyCredentialConfiguration</DisplayName>
+    <Category>Part12</Category>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=12637</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17496</Reference>
+    </References>
+  </UAObject>
+  <UAObjectType NodeId="i=18001" BrowseName="KeyCredentialConfigurationType">
+    <DisplayName>KeyCredentialConfigurationType</DisplayName>
+    <Category>Part12</Category>
+    <References>
+      <Reference ReferenceType="HasProperty">i=18069</Reference>
+      <Reference ReferenceType="HasProperty">i=18165</Reference>
+      <Reference ReferenceType="HasProperty">i=18004</Reference>
+      <Reference ReferenceType="HasProperty">i=18005</Reference>
+      <Reference ReferenceType="HasComponent">i=17534</Reference>
+      <Reference ReferenceType="HasComponent">i=18006</Reference>
+      <Reference ReferenceType="HasComponent">i=18008</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="i=18069" BrowseName="ResourceUri" ParentNodeId="i=18001" DataType="String">
+    <DisplayName>ResourceUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=18001</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=18165" BrowseName="ProfileUri" ParentNodeId="i=18001" DataType="String">
+    <DisplayName>ProfileUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=18001</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=18004" BrowseName="EndpointUrls" ParentNodeId="i=18001" DataType="String" ValueRank="1">
+    <DisplayName>EndpointUrls</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=18001</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=18005" BrowseName="ServiceStatus" ParentNodeId="i=18001" DataType="StatusCode">
+    <DisplayName>ServiceStatus</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=18001</Reference>
+    </References>
+  </UAVariable>
+  <UAMethod NodeId="i=17534" BrowseName="GetEncryptingKey" ParentNodeId="i=18001">
+    <DisplayName>GetEncryptingKey</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=17535</Reference>
+      <Reference ReferenceType="HasProperty">i=17536</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=18001</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="i=17535" BrowseName="InputArguments" ParentNodeId="i=17534" DataType="i=296" ValueRank="1">
+    <DisplayName>InputArguments</DisplayName>
+    <Category>Part12</Category>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=17534</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>CredentialId</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>RequestedSecurityPolicyUri</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="i=17536" BrowseName="OutputArguments" ParentNodeId="i=17534" DataType="i=296" ValueRank="1">
+    <DisplayName>OutputArguments</DisplayName>
+    <Category>Part12</Category>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=17534</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>PublicKey</Name>
+              <DataType>
+                <Identifier>i=15</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>RevisedSecurityPolicyUri</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAMethod NodeId="i=18006" BrowseName="UpdateCredential" ParentNodeId="i=18001">
+    <DisplayName>UpdateCredential</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=18007</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=18001</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="i=18007" BrowseName="InputArguments" ParentNodeId="i=18006" DataType="i=296" ValueRank="1">
+    <DisplayName>InputArguments</DisplayName>
+    <Category>Part12</Category>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=18006</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>CredentialId</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>CredentialSecret</Name>
+              <DataType>
+                <Identifier>i=15</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>CertificateThumbprint</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>SecurityPolicyUri</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAMethod NodeId="i=18008" BrowseName="DeleteCredential" ParentNodeId="i=18001">
+    <DisplayName>DeleteCredential</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=18001</Reference>
+    </References>
+  </UAMethod>
+  <UAObjectType NodeId="i=18011" BrowseName="KeyCredentialAuditEventType" IsAbstract="true">
+    <DisplayName>KeyCredentialAuditEventType</DisplayName>
+    <Category>Part12</Category>
+    <References>
+      <Reference ReferenceType="HasProperty">i=18028</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=2127</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="i=18028" BrowseName="ResourceUri" ParentNodeId="i=18011" DataType="String">
+    <DisplayName>ResourceUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=18011</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="i=18029" BrowseName="KeyCredentialUpdatedAuditEventType">
+    <DisplayName>KeyCredentialUpdatedAuditEventType</DisplayName>
+    <Category>Part12</Category>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=18011</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="i=18047" BrowseName="KeyCredentialDeletedAuditEventType">
+    <DisplayName>KeyCredentialDeletedAuditEventType</DisplayName>
+    <Category>Part12</Category>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=18011</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="i=17732" BrowseName="AuthorizationServices">
+    <DisplayName>AuthorizationServices</DisplayName>
+    <Category>Part12</Category>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=12637</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+  <UAObjectType NodeId="i=17852" BrowseName="AuthorizationServiceConfigurationType">
+    <DisplayName>AuthorizationServiceConfigurationType</DisplayName>
+    <Category>Part12</Category>
+    <References>
+      <Reference ReferenceType="HasProperty">i=18072</Reference>
+      <Reference ReferenceType="HasProperty">i=17860</Reference>
+      <Reference ReferenceType="HasProperty">i=18073</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="i=18072" BrowseName="ServiceUri" ParentNodeId="i=17852" DataType="String">
+    <DisplayName>ServiceUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=17852</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=17860" BrowseName="ServiceCertificate" ParentNodeId="i=17852" DataType="ByteString">
+    <DisplayName>ServiceCertificate</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=17852</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="i=18073" BrowseName="IssuerEndpointUrl" ParentNodeId="i=17852" DataType="String">
+    <DisplayName>IssuerEndpointUrl</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=17852</Reference>
+    </References>
+  </UAVariable>
   <UAObject NodeId="i=12680" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
+    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=12554</Reference>
       <Reference ReferenceType="HasDescription">i=12681</Reference>
@@ -3903,6 +4424,7 @@
   </UAObject>
   <UAObject NodeId="i=12676" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
+    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=12554</Reference>
       <Reference ReferenceType="HasDescription">i=12677</Reference>
@@ -3911,6 +4433,7 @@
   </UAObject>
   <UAObject NodeId="i=15044" BrowseName="Default JSON" SymbolicName="DefaultJson">
     <DisplayName>Default JSON</DisplayName>
+    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasEncoding" IsForward="false">i=12554</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
