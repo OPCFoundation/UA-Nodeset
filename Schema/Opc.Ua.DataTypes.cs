@@ -16441,8 +16441,14 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the HistoryWrite field.
         /// </summary>
-        [EnumMember(Value = "HistoryWrite_16")]
-        HistoryWrite = 16,
+        [EnumMember(Value = "HistoryWrite_8")]
+        HistoryWrite = 8,
+
+        /// <summary>
+        /// A description for the SemanticChange field.
+        /// </summary>
+        [EnumMember(Value = "SemanticChange_16")]
+        SemanticChange = 16,
 
         /// <summary>
         /// A description for the StatusWrite field.
