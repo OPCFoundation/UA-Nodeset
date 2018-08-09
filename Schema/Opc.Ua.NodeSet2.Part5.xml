@@ -72,6 +72,7 @@
   <UAReferenceType NodeId="i=51" BrowseName="FromState">
     <DisplayName>FromState</DisplayName>
     <Description>The type for a reference to the state before a transition.</Description>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -80,6 +81,7 @@
   <UAReferenceType NodeId="i=52" BrowseName="ToState">
     <DisplayName>ToState</DisplayName>
     <Description>The type for a reference to the state after a transition.</Description>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -88,6 +90,7 @@
   <UAReferenceType NodeId="i=53" BrowseName="HasCause">
     <DisplayName>HasCause</DisplayName>
     <Description>The type for a reference to a method that can cause a transition to occur.</Description>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -96,6 +99,7 @@
   <UAReferenceType NodeId="i=54" BrowseName="HasEffect">
     <DisplayName>HasEffect</DisplayName>
     <Description>The type for a reference to an event that may be raised when a transition occurs.</Description>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -104,6 +108,7 @@
   <UAReferenceType NodeId="i=117" BrowseName="HasSubStateMachine">
     <DisplayName>HasSubStateMachine</DisplayName>
     <Description>The type for a reference to a substate for a state.</Description>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -7976,12 +7981,14 @@
   <UADataType NodeId="i=11737" BrowseName="BitFieldMaskDataType">
     <DisplayName>BitFieldMaskDataType</DisplayName>
     <Description>A mask of 32 bits that can be updated individually by using the top 32 bits as a mask.</Description>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=9</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=14533" BrowseName="KeyValuePair">
     <DisplayName>KeyValuePair</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -7992,6 +7999,7 @@
   </UADataType>
   <UADataType NodeId="i=15528" BrowseName="EndpointType">
     <DisplayName>EndpointType</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -8360,6 +8368,7 @@
   </UAVariable>
   <UADataType NodeId="i=11939" BrowseName="OpenFileMode">
     <DisplayName>OpenFileMode</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=11940</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -10825,6 +10834,7 @@
   </UAVariable>
   <UADataType NodeId="i=15632" BrowseName="IdentityCriteriaType">
     <DisplayName>IdentityCriteriaType</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=15633</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -10948,6 +10958,7 @@
   </UAVariable>
   <UADataType NodeId="i=15634" BrowseName="IdentityMappingRuleType">
     <DisplayName>IdentityMappingRuleType</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -13029,6 +13040,7 @@
   </UAVariable>
   <UADataType NodeId="i=338" BrowseName="BuildInfo">
     <DisplayName>BuildInfo</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -13043,6 +13055,7 @@
   </UADataType>
   <UADataType NodeId="i=851" BrowseName="RedundancySupport">
     <DisplayName>RedundancySupport</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=7611</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -13100,6 +13113,7 @@
   </UAVariable>
   <UADataType NodeId="i=852" BrowseName="ServerState">
     <DisplayName>ServerState</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=7612</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -13169,6 +13183,7 @@
   </UAVariable>
   <UADataType NodeId="i=853" BrowseName="RedundantServerDataType">
     <DisplayName>RedundantServerDataType</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -13180,6 +13195,7 @@
   </UADataType>
   <UADataType NodeId="i=11943" BrowseName="EndpointUrlListDataType">
     <DisplayName>EndpointUrlListDataType</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -13189,6 +13205,7 @@
   </UADataType>
   <UADataType NodeId="i=11944" BrowseName="NetworkGroupDataType">
     <DisplayName>NetworkGroupDataType</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -13199,6 +13216,7 @@
   </UADataType>
   <UADataType NodeId="i=856" BrowseName="SamplingIntervalDiagnosticsDataType">
     <DisplayName>SamplingIntervalDiagnosticsDataType</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -13211,6 +13229,7 @@
   </UADataType>
   <UADataType NodeId="i=859" BrowseName="ServerDiagnosticsSummaryDataType">
     <DisplayName>ServerDiagnosticsSummaryDataType</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -13231,6 +13250,7 @@
   </UADataType>
   <UADataType NodeId="i=862" BrowseName="ServerStatusDataType">
     <DisplayName>ServerStatusDataType</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -13245,6 +13265,7 @@
   </UADataType>
   <UADataType NodeId="i=865" BrowseName="SessionDiagnosticsDataType">
     <DisplayName>SessionDiagnosticsDataType</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -13296,6 +13317,7 @@
   </UADataType>
   <UADataType NodeId="i=868" BrowseName="SessionSecurityDiagnosticsDataType">
     <DisplayName>SessionSecurityDiagnosticsDataType</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -13313,6 +13335,7 @@
   </UADataType>
   <UADataType NodeId="i=871" BrowseName="ServiceCounterDataType">
     <DisplayName>ServiceCounterDataType</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -13323,6 +13346,7 @@
   </UADataType>
   <UADataType NodeId="i=299" BrowseName="StatusResult">
     <DisplayName>StatusResult</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -13333,6 +13357,7 @@
   </UADataType>
   <UADataType NodeId="i=874" BrowseName="SubscriptionDiagnosticsDataType">
     <DisplayName>SubscriptionDiagnosticsDataType</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -13372,6 +13397,7 @@
   </UADataType>
   <UADataType NodeId="i=11941" BrowseName="ModelChangeStructureVerbMask">
     <DisplayName>ModelChangeStructureVerbMask</DisplayName>
+    <Category>Part5/Services</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=11942</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -13478,6 +13504,7 @@
   </UAVariable>
   <UADataType NodeId="i=877" BrowseName="ModelChangeStructureDataType">
     <DisplayName>ModelChangeStructureDataType</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -13489,6 +13516,7 @@
   </UADataType>
   <UADataType NodeId="i=897" BrowseName="SemanticChangeStructureDataType">
     <DisplayName>SemanticChangeStructureDataType</DisplayName>
+    <Category>Part5</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>

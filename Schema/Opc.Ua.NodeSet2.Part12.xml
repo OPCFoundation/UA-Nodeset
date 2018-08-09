@@ -325,6 +325,7 @@
   </UAVariable>
   <UADataType NodeId="i=12552" BrowseName="TrustListMasks">
     <DisplayName>TrustListMasks</DisplayName>
+    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=12553</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -448,6 +449,7 @@
   </UAVariable>
   <UADataType NodeId="i=12554" BrowseName="TrustListDataType">
     <DisplayName>TrustListDataType</DisplayName>
+    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4024,7 +4026,7 @@
           </TypeId>
           <Body>
             <Argument>
-              <Name>ObjectId</Name>
+              <Name>CredentialNodeId</Name>
               <DataType>
                 <Identifier>i=17</Identifier>
               </DataType>

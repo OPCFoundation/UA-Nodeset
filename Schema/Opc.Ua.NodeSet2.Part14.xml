@@ -71,6 +71,7 @@
   </Aliases>
   <UADataType NodeId="i=15534" BrowseName="DataTypeSchemaHeader">
     <DisplayName>DataTypeSchemaHeader</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -83,6 +84,7 @@
   </UADataType>
   <UADataType NodeId="i=14525" BrowseName="DataTypeDescription">
     <DisplayName>DataTypeDescription</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -93,6 +95,7 @@
   </UADataType>
   <UADataType NodeId="i=15487" BrowseName="StructureDescription">
     <DisplayName>StructureDescription</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=14525</Reference>
     </References>
@@ -102,6 +105,7 @@
   </UADataType>
   <UADataType NodeId="i=15488" BrowseName="EnumDescription">
     <DisplayName>EnumDescription</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=14525</Reference>
     </References>
@@ -112,6 +116,7 @@
   </UADataType>
   <UADataType NodeId="i=15005" BrowseName="SimpleTypeDescription">
     <DisplayName>SimpleTypeDescription</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=14525</Reference>
     </References>
@@ -122,6 +127,7 @@
   </UADataType>
   <UADataType NodeId="i=15006" BrowseName="UABinaryFileDataType">
     <DisplayName>UABinaryFileDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15534</Reference>
     </References>
@@ -133,6 +139,7 @@
   </UADataType>
   <UADataType NodeId="i=14647" BrowseName="PubSubState">
     <DisplayName>PubSubState</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=14648</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -178,6 +185,7 @@
   </UAVariable>
   <UADataType NodeId="i=14523" BrowseName="DataSetMetaDataType">
     <DisplayName>DataSetMetaDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15534</Reference>
     </References>
@@ -191,6 +199,7 @@
   </UADataType>
   <UADataType NodeId="i=14524" BrowseName="FieldMetaData">
     <DisplayName>FieldMetaData</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -209,6 +218,7 @@
   </UADataType>
   <UADataType NodeId="i=15904" BrowseName="DataSetFieldFlags">
     <DisplayName>DataSetFieldFlags</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=15577</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
@@ -236,6 +246,7 @@
   </UAVariable>
   <UADataType NodeId="i=14593" BrowseName="ConfigurationVersionDataType">
     <DisplayName>ConfigurationVersionDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -246,6 +257,7 @@
   </UADataType>
   <UADataType NodeId="i=15578" BrowseName="PublishedDataSetDataType">
     <DisplayName>PublishedDataSetDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -259,12 +271,14 @@
   </UADataType>
   <UADataType NodeId="i=15580" BrowseName="PublishedDataSetSourceDataType" IsAbstract="true">
     <DisplayName>PublishedDataSetSourceDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=14273" BrowseName="PublishedVariableDataType">
     <DisplayName>PublishedVariableDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -281,6 +295,7 @@
   </UADataType>
   <UADataType NodeId="i=15581" BrowseName="PublishedDataItemsDataType">
     <DisplayName>PublishedDataItemsDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15580</Reference>
     </References>
@@ -290,6 +305,7 @@
   </UADataType>
   <UADataType NodeId="i=15582" BrowseName="PublishedEventsDataType">
     <DisplayName>PublishedEventsDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15580</Reference>
     </References>
@@ -301,6 +317,7 @@
   </UADataType>
   <UADataType NodeId="i=15583" BrowseName="DataSetFieldContentMask">
     <DisplayName>DataSetFieldContentMask</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=15584</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
@@ -358,6 +375,7 @@
   </UAVariable>
   <UADataType NodeId="i=15597" BrowseName="DataSetWriterDataType">
     <DisplayName>DataSetWriterDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -375,18 +393,21 @@
   </UADataType>
   <UADataType NodeId="i=15598" BrowseName="DataSetWriterTransportDataType" IsAbstract="true">
     <DisplayName>DataSetWriterTransportDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=15605" BrowseName="DataSetWriterMessageDataType" IsAbstract="true">
     <DisplayName>DataSetWriterMessageDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=15609" BrowseName="PubSubGroupDataType">
     <DisplayName>PubSubGroupDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -402,6 +423,7 @@
   </UADataType>
   <UADataType NodeId="i=15480" BrowseName="WriterGroupDataType">
     <DisplayName>WriterGroupDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15609</Reference>
     </References>
@@ -418,18 +440,21 @@
   </UADataType>
   <UADataType NodeId="i=15611" BrowseName="WriterGroupTransportDataType" IsAbstract="true">
     <DisplayName>WriterGroupTransportDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=15616" BrowseName="WriterGroupMessageDataType" IsAbstract="true">
     <DisplayName>WriterGroupMessageDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=15617" BrowseName="PubSubConnectionDataType">
     <DisplayName>PubSubConnectionDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -447,12 +472,14 @@
   </UADataType>
   <UADataType NodeId="i=15618" BrowseName="ConnectionTransportDataType" IsAbstract="true">
     <DisplayName>ConnectionTransportDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=15502" BrowseName="NetworkAddressDataType" IsAbstract="true">
     <DisplayName>NetworkAddressDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -462,6 +489,7 @@
   </UADataType>
   <UADataType NodeId="i=15510" BrowseName="NetworkAddressUrlDataType">
     <DisplayName>NetworkAddressUrlDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15502</Reference>
     </References>
@@ -471,6 +499,7 @@
   </UADataType>
   <UADataType NodeId="i=15520" BrowseName="ReaderGroupDataType">
     <DisplayName>ReaderGroupDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15609</Reference>
     </References>
@@ -482,18 +511,21 @@
   </UADataType>
   <UADataType NodeId="i=15621" BrowseName="ReaderGroupTransportDataType" IsAbstract="true">
     <DisplayName>ReaderGroupTransportDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=15622" BrowseName="ReaderGroupMessageDataType" IsAbstract="true">
     <DisplayName>ReaderGroupMessageDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=15623" BrowseName="DataSetReaderDataType">
     <DisplayName>DataSetReaderDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -517,24 +549,28 @@
   </UADataType>
   <UADataType NodeId="i=15628" BrowseName="DataSetReaderTransportDataType" IsAbstract="true">
     <DisplayName>DataSetReaderTransportDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=15629" BrowseName="DataSetReaderMessageDataType" IsAbstract="true">
     <DisplayName>DataSetReaderMessageDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=15630" BrowseName="SubscribedDataSetDataType" IsAbstract="true">
     <DisplayName>SubscribedDataSetDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=15631" BrowseName="TargetVariablesDataType">
     <DisplayName>TargetVariablesDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15630</Reference>
     </References>
@@ -544,6 +580,7 @@
   </UADataType>
   <UADataType NodeId="i=14744" BrowseName="FieldTargetDataType">
     <DisplayName>FieldTargetDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -559,6 +596,7 @@
   </UADataType>
   <UADataType NodeId="i=15874" BrowseName="OverrideValueHandling">
     <DisplayName>OverrideValueHandling</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=15875</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -598,6 +636,7 @@
   </UAVariable>
   <UADataType NodeId="i=15635" BrowseName="SubscribedDataSetMirrorDataType">
     <DisplayName>SubscribedDataSetMirrorDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15630</Reference>
     </References>
@@ -608,6 +647,7 @@
   </UADataType>
   <UADataType NodeId="i=15530" BrowseName="PubSubConfigurationDataType">
     <DisplayName>PubSubConfigurationDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -619,6 +659,7 @@
   </UADataType>
   <UADataType NodeId="i=20408" BrowseName="DataSetOrderingType">
     <DisplayName>DataSetOrderingType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=15641</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -658,6 +699,7 @@
   </UAVariable>
   <UADataType NodeId="i=15642" BrowseName="UadpNetworkMessageContentMask">
     <DisplayName>UadpNetworkMessageContentMask</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=15643</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
@@ -745,6 +787,7 @@
   </UAVariable>
   <UADataType NodeId="i=15645" BrowseName="UadpWriterGroupMessageDataType">
     <DisplayName>UadpWriterGroupMessageDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15616</Reference>
     </References>
@@ -758,6 +801,7 @@
   </UADataType>
   <UADataType NodeId="i=15646" BrowseName="UadpDataSetMessageContentMask">
     <DisplayName>UadpDataSetMessageContentMask</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=15647</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
@@ -815,6 +859,7 @@
   </UAVariable>
   <UADataType NodeId="i=15652" BrowseName="UadpDataSetWriterMessageDataType">
     <DisplayName>UadpDataSetWriterMessageDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15605</Reference>
     </References>
@@ -827,6 +872,7 @@
   </UADataType>
   <UADataType NodeId="i=15653" BrowseName="UadpDataSetReaderMessageDataType">
     <DisplayName>UadpDataSetReaderMessageDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15629</Reference>
     </References>
@@ -844,6 +890,7 @@
   </UADataType>
   <UADataType NodeId="i=15654" BrowseName="JsonNetworkMessageContentMask">
     <DisplayName>JsonNetworkMessageContentMask</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=15655</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
@@ -901,6 +948,7 @@
   </UAVariable>
   <UADataType NodeId="i=15657" BrowseName="JsonWriterGroupMessageDataType">
     <DisplayName>JsonWriterGroupMessageDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15616</Reference>
     </References>
@@ -910,6 +958,7 @@
   </UADataType>
   <UADataType NodeId="i=15658" BrowseName="JsonDataSetMessageContentMask">
     <DisplayName>JsonDataSetMessageContentMask</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=15659</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
@@ -961,6 +1010,7 @@
   </UAVariable>
   <UADataType NodeId="i=15664" BrowseName="JsonDataSetWriterMessageDataType">
     <DisplayName>JsonDataSetWriterMessageDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15605</Reference>
     </References>
@@ -970,6 +1020,7 @@
   </UADataType>
   <UADataType NodeId="i=15665" BrowseName="JsonDataSetReaderMessageDataType">
     <DisplayName>JsonDataSetReaderMessageDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15629</Reference>
     </References>
@@ -980,6 +1031,7 @@
   </UADataType>
   <UADataType NodeId="i=17467" BrowseName="DatagramConnectionTransportDataType">
     <DisplayName>DatagramConnectionTransportDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15618</Reference>
     </References>
@@ -989,6 +1041,7 @@
   </UADataType>
   <UADataType NodeId="i=15532" BrowseName="DatagramWriterGroupTransportDataType">
     <DisplayName>DatagramWriterGroupTransportDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15611</Reference>
     </References>
@@ -999,6 +1052,7 @@
   </UADataType>
   <UADataType NodeId="i=15007" BrowseName="BrokerConnectionTransportDataType">
     <DisplayName>BrokerConnectionTransportDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15618</Reference>
     </References>
@@ -1009,6 +1063,7 @@
   </UADataType>
   <UADataType NodeId="i=15008" BrowseName="BrokerTransportQualityOfService">
     <DisplayName>BrokerTransportQualityOfService</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=15009</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -1060,6 +1115,7 @@
   </UAVariable>
   <UADataType NodeId="i=15667" BrowseName="BrokerWriterGroupTransportDataType">
     <DisplayName>BrokerWriterGroupTransportDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15611</Reference>
     </References>
@@ -1072,6 +1128,7 @@
   </UADataType>
   <UADataType NodeId="i=15669" BrowseName="BrokerDataSetWriterTransportDataType">
     <DisplayName>BrokerDataSetWriterTransportDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15598</Reference>
     </References>
@@ -1086,6 +1143,7 @@
   </UADataType>
   <UADataType NodeId="i=15670" BrowseName="BrokerDataSetReaderTransportDataType">
     <DisplayName>BrokerDataSetReaderTransportDataType</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15628</Reference>
     </References>
@@ -3931,6 +3989,7 @@
   </UAVariable>
   <UAReferenceType NodeId="i=14476" BrowseName="HasPubSubConnection">
     <DisplayName>HasPubSubConnection</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -4289,6 +4348,7 @@
   </UAVariable>
   <UAReferenceType NodeId="i=14936" BrowseName="DataSetToWriter">
     <DisplayName>DataSetToWriter</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=33</Reference>
     </References>
@@ -7943,6 +8003,7 @@
   </UAVariable>
   <UAReferenceType NodeId="i=15296" BrowseName="HasDataSetWriter">
     <DisplayName>HasDataSetWriter</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -8751,6 +8812,7 @@
   </UAVariable>
   <UAReferenceType NodeId="i=15297" BrowseName="HasDataSetReader">
     <DisplayName>HasDataSetReader</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -10894,6 +10956,7 @@
   </UAObject>
   <UADataType NodeId="i=19723" BrowseName="DiagnosticsLevel">
     <DisplayName>DiagnosticsLevel</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=19724</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -10988,6 +11051,7 @@
   </UAVariable>
   <UADataType NodeId="i=19730" BrowseName="PubSubDiagnosticsCounterClassification">
     <DisplayName>PubSubDiagnosticsCounterClassification</DisplayName>
+    <Category>Part14</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=19731</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>

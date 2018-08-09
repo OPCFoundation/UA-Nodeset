@@ -964,6 +964,7 @@
   </UAVariable>
   <UADataType NodeId="i=894" BrowseName="ProgramDiagnosticDataType">
     <DisplayName>ProgramDiagnosticDataType</DisplayName>
+    <Category>Part10</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -982,6 +983,7 @@
   </UADataType>
   <UADataType NodeId="i=15396" BrowseName="ProgramDiagnostic2DataType">
     <DisplayName>ProgramDiagnostic2DataType</DisplayName>
+    <Category>Part10</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
