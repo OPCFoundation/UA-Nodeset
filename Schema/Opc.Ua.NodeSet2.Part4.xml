@@ -1033,14 +1033,6 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
   </UADataType>
-  <UADataType NodeId="i=17546" BrowseName="EccEncryptedSecret">
-    <DisplayName>EccEncryptedSecret</DisplayName>
-    <Category>Part4/Services</Category>
-    <Category>1.05</Category>
-    <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
-    </References>
-  </UADataType>
   <UADataType NodeId="i=465" BrowseName="ActivateSessionRequest">
     <DisplayName>ActivateSessionRequest</DisplayName>
     <Description>Activates a session with the server.</Description>
