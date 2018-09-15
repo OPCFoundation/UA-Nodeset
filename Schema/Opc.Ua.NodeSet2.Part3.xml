@@ -551,6 +551,7 @@
   <UAReferenceType NodeId="i=129" BrowseName="DescribesArgument">
     <DisplayName>DescribesArgument</DisplayName>
     <Category>Part3</Category>
+    <Category>1.05</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -559,6 +560,7 @@
   <UAReferenceType NodeId="i=130" BrowseName="DescribesInputArgument">
     <DisplayName>DescribesInputArgument</DisplayName>
     <Category>Part3</Category>
+    <Category>1.05</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=129</Reference>
     </References>
@@ -567,6 +569,7 @@
   <UAReferenceType NodeId="i=131" BrowseName="DescribesOptionalInputArgument">
     <DisplayName>DescribesOptionalInputArgument</DisplayName>
     <Category>Part3</Category>
+    <Category>1.05</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=130</Reference>
     </References>
@@ -575,6 +578,7 @@
   <UAReferenceType NodeId="i=132" BrowseName="DescribesOutputArgument">
     <DisplayName>DescribesOutputArgument</DisplayName>
     <Category>Part3</Category>
+    <Category>1.05</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=129</Reference>
     </References>
@@ -741,7 +745,7 @@
   </UADataType>
   <UADataType NodeId="i=17861" BrowseName="DecimalDataType">
     <DisplayName>DecimalDataType</DisplayName>
-    <Category>Part3/Services</Category>
+    <Category>Part3/Internal</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -1495,7 +1499,7 @@
   <UADataType NodeId="i=258" BrowseName="Node">
     <DisplayName>Node</DisplayName>
     <Description>Specifies the attributes which belong to all nodes.</Description>
-    <Category>Part3/Services</Category>
+    <Category>Part3/Internal</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -1537,14 +1541,14 @@
   </UADataType>
   <UADataType NodeId="i=11879" BrowseName="InstanceNode">
     <DisplayName>InstanceNode</DisplayName>
-    <Category>Part3/Services</Category>
+    <Category>Part3/Internal</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=258</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=11880" BrowseName="TypeNode">
     <DisplayName>TypeNode</DisplayName>
-    <Category>Part3/Services</Category>
+    <Category>Part3/Internal</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=258</Reference>
     </References>
@@ -1552,7 +1556,7 @@
   <UADataType NodeId="i=261" BrowseName="ObjectNode">
     <DisplayName>ObjectNode</DisplayName>
     <Description>Specifies the attributes which belong to object nodes.</Description>
-    <Category>Part3/Services</Category>
+    <Category>Part3/Internal</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11879</Reference>
     </References>
@@ -1565,7 +1569,7 @@
   <UADataType NodeId="i=264" BrowseName="ObjectTypeNode">
     <DisplayName>ObjectTypeNode</DisplayName>
     <Description>Specifies the attributes which belong to object type nodes.</Description>
-    <Category>Part3/Services</Category>
+    <Category>Part3/Internal</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11880</Reference>
     </References>
@@ -1578,7 +1582,7 @@
   <UADataType NodeId="i=267" BrowseName="VariableNode">
     <DisplayName>VariableNode</DisplayName>
     <Description>Specifies the attributes which belong to variable nodes.</Description>
-    <Category>Part3/Services</Category>
+    <Category>Part3/Internal</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11879</Reference>
     </References>
@@ -1615,7 +1619,7 @@
   <UADataType NodeId="i=270" BrowseName="VariableTypeNode">
     <DisplayName>VariableTypeNode</DisplayName>
     <Description>Specifies the attributes which belong to variable type nodes.</Description>
-    <Category>Part3/Services</Category>
+    <Category>Part3/Internal</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11880</Reference>
     </References>
@@ -1640,7 +1644,7 @@
   <UADataType NodeId="i=273" BrowseName="ReferenceTypeNode">
     <DisplayName>ReferenceTypeNode</DisplayName>
     <Description>Specifies the attributes which belong to reference type nodes.</Description>
-    <Category>Part3/Services</Category>
+    <Category>Part3/Internal</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11880</Reference>
     </References>
@@ -1659,7 +1663,7 @@
   <UADataType NodeId="i=276" BrowseName="MethodNode">
     <DisplayName>MethodNode</DisplayName>
     <Description>Specifies the attributes which belong to method nodes.</Description>
-    <Category>Part3/Services</Category>
+    <Category>Part3/Internal</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11879</Reference>
     </References>
@@ -1674,7 +1678,7 @@
   </UADataType>
   <UADataType NodeId="i=279" BrowseName="ViewNode">
     <DisplayName>ViewNode</DisplayName>
-    <Category>Part3/Services</Category>
+    <Category>Part3/Internal</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11879</Reference>
     </References>
@@ -1689,7 +1693,7 @@
   </UADataType>
   <UADataType NodeId="i=282" BrowseName="DataTypeNode">
     <DisplayName>DataTypeNode</DisplayName>
-    <Category>Part3/Services</Category>
+    <Category>Part3/Internal</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11880</Reference>
     </References>
@@ -1705,7 +1709,7 @@
   <UADataType NodeId="i=285" BrowseName="ReferenceNode">
     <DisplayName>ReferenceNode</DisplayName>
     <Description>Specifies a reference which belongs to a node.</Description>
-    <Category>Part3/Services</Category>
+    <Category>Part3/Internal</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -1791,7 +1795,7 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=12756" BrowseName="Union">
+  <UADataType NodeId="i=12756" BrowseName="Union" IsAbstract="true">
     <DisplayName>Union</DisplayName>
     <Description>This abstract DataType is the base DataType for all union DataTypes.</Description>
     <Category>Part3</Category>

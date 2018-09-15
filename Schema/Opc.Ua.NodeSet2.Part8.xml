@@ -134,6 +134,7 @@
   <UAVariableType NodeId="i=17497" BrowseName="EUItemType" DataType="Number" ValueRank="-2">
     <DisplayName>EUItemType</DisplayName>
     <Category>Part8</Category>
+    <Category>1.05</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=17500</Reference>
       <Reference ReferenceType="HasProperty">i=17501</Reference>
@@ -168,6 +169,7 @@
   <UAVariableType NodeId="i=17503" BrowseName="AnalogUnitItemType" DataType="Number" ValueRank="-2">
     <DisplayName>AnalogUnitItemType</DisplayName>
     <Category>Part8</Category>
+    <Category>1.05</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=17506</Reference>
       <Reference ReferenceType="HasProperty">i=17509</Reference>

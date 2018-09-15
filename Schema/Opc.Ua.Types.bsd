@@ -1521,6 +1521,12 @@
     <opc:Field Name="EncryptionAlgorithm" TypeName="opc:String" />
   </opc:StructuredType>
 
+  <opc:OpaqueType Name="RsaEncryptedSecret">
+  </opc:OpaqueType>
+
+  <opc:OpaqueType Name="EccEncryptedSecret">
+  </opc:OpaqueType>
+
   <opc:StructuredType Name="ActivateSessionRequest" BaseType="ua:ExtensionObject">
     <opc:Documentation>Activates a session with the server.</opc:Documentation>
     <opc:Field Name="RequestHeader" TypeName="tns:RequestHeader" />

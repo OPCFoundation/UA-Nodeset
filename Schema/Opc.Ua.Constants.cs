@@ -990,6 +990,16 @@ namespace Opc.Ua
         public const uint IssuedIdentityToken = 938;
 
         /// <summary>
+        /// The identifier for the RsaEncryptedSecret DataType.
+        /// </summary>
+        public const uint RsaEncryptedSecret = 17545;
+
+        /// <summary>
+        /// The identifier for the EccEncryptedSecret DataType.
+        /// </summary>
+        public const uint EccEncryptedSecret = 17546;
+
+        /// <summary>
         /// The identifier for the ActivateSessionRequest DataType.
         /// </summary>
         public const uint ActivateSessionRequest = 465;
@@ -13870,6 +13880,11 @@ namespace Opc.Ua
         public const uint Server_EstimatedReturnTime = 12885;
 
         /// <summary>
+        /// The identifier for the Server_LocalTime Variable.
+        /// </summary>
+        public const uint Server_LocalTime = 17634;
+
+        /// <summary>
         /// The identifier for the Server_ServerCapabilities_ServerProfileArray Variable.
         /// </summary>
         public const uint Server_ServerCapabilities_ServerProfileArray = 2269;
@@ -14118,11 +14133,6 @@ namespace Opc.Ua
         /// The identifier for the Server_RequestServerStateChange_InputArguments Variable.
         /// </summary>
         public const uint Server_RequestServerStateChange_InputArguments = 12887;
-
-        /// <summary>
-        /// The identifier for the Server_CurrentTimeZone Variable.
-        /// </summary>
-        public const uint Server_CurrentTimeZone = 16313;
 
         /// <summary>
         /// The identifier for the Server_ServerRedundancy_CurrentServerId Variable.
@@ -30935,6 +30945,16 @@ namespace Opc.Ua
         public static readonly NodeId IssuedIdentityToken = new NodeId(Opc.Ua.DataTypes.IssuedIdentityToken);
 
         /// <summary>
+        /// The identifier for the RsaEncryptedSecret DataType.
+        /// </summary>
+        public static readonly NodeId RsaEncryptedSecret = new NodeId(Opc.Ua.DataTypes.RsaEncryptedSecret);
+
+        /// <summary>
+        /// The identifier for the EccEncryptedSecret DataType.
+        /// </summary>
+        public static readonly NodeId EccEncryptedSecret = new NodeId(Opc.Ua.DataTypes.EccEncryptedSecret);
+
+        /// <summary>
         /// The identifier for the ActivateSessionRequest DataType.
         /// </summary>
         public static readonly NodeId ActivateSessionRequest = new NodeId(Opc.Ua.DataTypes.ActivateSessionRequest);
@@ -43815,6 +43835,11 @@ namespace Opc.Ua
         public static readonly NodeId Server_EstimatedReturnTime = new NodeId(Opc.Ua.Variables.Server_EstimatedReturnTime);
 
         /// <summary>
+        /// The identifier for the Server_LocalTime Variable.
+        /// </summary>
+        public static readonly NodeId Server_LocalTime = new NodeId(Opc.Ua.Variables.Server_LocalTime);
+
+        /// <summary>
         /// The identifier for the Server_ServerCapabilities_ServerProfileArray Variable.
         /// </summary>
         public static readonly NodeId Server_ServerCapabilities_ServerProfileArray = new NodeId(Opc.Ua.Variables.Server_ServerCapabilities_ServerProfileArray);
@@ -44063,11 +44088,6 @@ namespace Opc.Ua
         /// The identifier for the Server_RequestServerStateChange_InputArguments Variable.
         /// </summary>
         public static readonly NodeId Server_RequestServerStateChange_InputArguments = new NodeId(Opc.Ua.Variables.Server_RequestServerStateChange_InputArguments);
-
-        /// <summary>
-        /// The identifier for the Server_CurrentTimeZone Variable.
-        /// </summary>
-        public static readonly NodeId Server_CurrentTimeZone = new NodeId(Opc.Ua.Variables.Server_CurrentTimeZone);
 
         /// <summary>
         /// The identifier for the Server_ServerRedundancy_CurrentServerId Variable.
@@ -61564,11 +61584,6 @@ namespace Opc.Ua
         public const string CurrentTime = "CurrentTime";
 
         /// <summary>
-        /// The BrowseName for the CurrentTimeZone component.
-        /// </summary>
-        public const string CurrentTimeZone = "CurrentTimeZone";
-
-        /// <summary>
         /// The BrowseName for the DataChangeFilter component.
         /// </summary>
         public const string DataChangeFilter = "DataChangeFilter";
@@ -62157,6 +62172,11 @@ namespace Opc.Ua
         /// The BrowseName for the DurationString component.
         /// </summary>
         public const string DurationString = "DurationString";
+
+        /// <summary>
+        /// The BrowseName for the EccEncryptedSecret component.
+        /// </summary>
+        public const string EccEncryptedSecret = "EccEncryptedSecret";
 
         /// <summary>
         /// The BrowseName for the EffectiveDisplayName component.
@@ -65222,6 +65242,11 @@ namespace Opc.Ua
         /// The BrowseName for the RootFolder component.
         /// </summary>
         public const string RootFolder = "Root";
+
+        /// <summary>
+        /// The BrowseName for the RsaEncryptedSecret component.
+        /// </summary>
+        public const string RsaEncryptedSecret = "RsaEncryptedSecret";
 
         /// <summary>
         /// The BrowseName for the RsaMinApplicationCertificateType component.
