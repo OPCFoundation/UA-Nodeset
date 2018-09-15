@@ -59965,8 +59965,8 @@ namespace Opc.Ua
            "AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAlTsALgBElTsAAJYDAAAAAQAq" +
            "AQEaAAAACwAAAFJlc291cmNlVXJpAAz/////AAAAAAABACoBARkAAAAKAAAAUHJvZmlsZVVyaQAM////" +
            "/wAAAAAAAQAqAQEbAAAADAAAAEVuZHBvaW50VXJscwAMAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAA" +
-           "FWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAFdEAC4ARFdEAACWAQAAAAEAKgEBFwAAAAgAAABP" +
-           "YmplY3RJZAAR/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
+           "FWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAFdEAC4ARFdEAACWAQAAAAEAKgEBHwAAABAAAABD" +
+           "cmVkZW50aWFsTm9kZUlkABH/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -60007,7 +60007,7 @@ namespace Opc.Ua
             string profileUri = (string)inputArguments[1];
             string[] endpointUrls = (string[])inputArguments[2];
 
-            NodeId objectId = (NodeId)outputArguments[0];
+            NodeId credentialNodeId = (NodeId)outputArguments[0];
 
             if (OnCall != null)
             {
@@ -60018,10 +60018,10 @@ namespace Opc.Ua
                     resourceUri,
                     profileUri,
                     endpointUrls,
-                    ref objectId);
+                    ref credentialNodeId);
             }
 
-            outputArguments[0] = objectId;
+            outputArguments[0] = credentialNodeId;
 
             return result;
         }
@@ -60042,7 +60042,7 @@ namespace Opc.Ua
         string resourceUri,
         string profileUri,
         string[] endpointUrls,
-        ref NodeId objectId);
+        ref NodeId credentialNodeId);
     #endif
     #endregion
 
@@ -60109,8 +60109,8 @@ namespace Opc.Ua
            "AAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQBzRAAuAERzRAAAlgMAAAABACoBARoAAAALAAAA" +
            "UmVzb3VyY2VVcmkADP////8AAAAAAAEAKgEBGQAAAAoAAABQcm9maWxlVXJpAAz/////AAAAAAABACoB" +
            "ARsAAAAMAAAARW5kcG9pbnRVcmxzAAwBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAA" +
-           "DwAAAE91dHB1dEFyZ3VtZW50cwEAdEQALgBEdEQAAJYBAAAAAQAqAQEXAAAACAAAAE9iamVjdElkABH/" +
-           "////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
+           "DwAAAE91dHB1dEFyZ3VtZW50cwEAdEQALgBEdEQAAJYBAAAAAQAqAQEfAAAAEAAAAENyZWRlbnRpYWxO" +
+           "b2RlSWQAEf////8AAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
 
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAALAAAAEtleUNyZWRlbnRpYWxDb25maWd1cmF0aW9uRm9sZGVyVHlwZUlu" +
@@ -60118,8 +60118,8 @@ namespace Opc.Ua
            "ckRyRAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAHNEAC4ARHNEAACWAwAA" +
            "AAEAKgEBGgAAAAsAAABSZXNvdXJjZVVyaQAM/////wAAAAAAAQAqAQEZAAAACgAAAFByb2ZpbGVVcmkA" +
            "DP////8AAAAAAAEAKgEBGwAAAAwAAABFbmRwb2ludFVybHMADAEAAAAAAAAAAAEAKAEBAAAAAQH/////" +
-           "AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQB0RAAuAER0RAAAlgEAAAABACoBARcAAAAI" +
-           "AAAAT2JqZWN0SWQAEf////8AAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
+           "AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQB0RAAuAER0RAAAlgEAAAABACoBAR8AAAAQ" +
+           "AAAAQ3JlZGVudGlhbE5vZGVJZAAR/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -66858,7 +66858,7 @@ namespace Opc.Ua
 
             string name = (string)inputArguments[0];
             string[] fieldNameAliases = (string[])inputArguments[1];
-            DataSetFieldFlags[] fieldFlags = (DataSetFieldFlags[])inputArguments[2];
+            ushort[] fieldFlags = (ushort[])inputArguments[2];
             PublishedVariableDataType[] variablesToAdd = (PublishedVariableDataType[])ExtensionObject.ToArray(inputArguments[3], typeof(PublishedVariableDataType));
 
             NodeId dataSetNodeId = (NodeId)outputArguments[0];
@@ -66902,7 +66902,7 @@ namespace Opc.Ua
         NodeId objectId,
         string name,
         string[] fieldNameAliases,
-        DataSetFieldFlags[] fieldFlags,
+        ushort[] fieldFlags,
         PublishedVariableDataType[] variablesToAdd,
         ref NodeId dataSetNodeId,
         ref ConfigurationVersionDataType configurationVersion,
@@ -67005,7 +67005,7 @@ namespace Opc.Ua
             string name = (string)inputArguments[0];
             NodeId eventNotifier = (NodeId)inputArguments[1];
             string[] fieldNameAliases = (string[])inputArguments[2];
-            DataSetFieldFlags[] fieldFlags = (DataSetFieldFlags[])inputArguments[3];
+            ushort[] fieldFlags = (ushort[])inputArguments[3];
             SimpleAttributeOperand[] selectedFields = (SimpleAttributeOperand[])ExtensionObject.ToArray(inputArguments[4], typeof(SimpleAttributeOperand));
             ContentFilter filter = (ContentFilter)ExtensionObject.ToEncodeable((ExtensionObject)inputArguments[5]);
 
@@ -67050,7 +67050,7 @@ namespace Opc.Ua
         string name,
         NodeId eventNotifier,
         string[] fieldNameAliases,
-        DataSetFieldFlags[] fieldFlags,
+        ushort[] fieldFlags,
         SimpleAttributeOperand[] selectedFields,
         ContentFilter filter,
         ref ConfigurationVersionDataType configurationVersion,
@@ -71597,7 +71597,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the DataSetFieldContentMask Property.
         /// </summary>
-        public PropertyState<DataSetFieldContentMask> DataSetFieldContentMask
+        public PropertyState<uint> DataSetFieldContentMask
         {
             get
             {
@@ -71842,11 +71842,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                DataSetFieldContentMask = new PropertyState<DataSetFieldContentMask>(this);
+                                DataSetFieldContentMask = new PropertyState<uint>(this);
                             }
                             else
                             {
-                                DataSetFieldContentMask = (PropertyState<DataSetFieldContentMask>)replacement;
+                                DataSetFieldContentMask = (PropertyState<uint>)replacement;
                             }
                         }
                     }
@@ -71993,7 +71993,7 @@ namespace Opc.Ua
 
         #region Private Fields
         private PropertyState<ushort> m_dataSetWriterId;
-        private PropertyState<DataSetFieldContentMask> m_dataSetFieldContentMask;
+        private PropertyState<uint> m_dataSetFieldContentMask;
         private PropertyState<uint> m_keyFrameCount;
         private PropertyState<KeyValuePair[]> m_dataSetWriterProperties;
         private DataSetWriterTransportState m_transportSettings;
@@ -72498,7 +72498,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the DataSetFieldContentMask Property.
         /// </summary>
-        public PropertyState<DataSetFieldContentMask> DataSetFieldContentMask
+        public PropertyState<uint> DataSetFieldContentMask
         {
             get
             {
@@ -72977,11 +72977,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                DataSetFieldContentMask = new PropertyState<DataSetFieldContentMask>(this);
+                                DataSetFieldContentMask = new PropertyState<uint>(this);
                             }
                             else
                             {
-                                DataSetFieldContentMask = (PropertyState<DataSetFieldContentMask>)replacement;
+                                DataSetFieldContentMask = (PropertyState<uint>)replacement;
                             }
                         }
                     }
@@ -73257,7 +73257,7 @@ namespace Opc.Ua
         private PropertyState<ushort> m_writerGroupId;
         private PropertyState<ushort> m_dataSetWriterId;
         private PropertyState<DataSetMetaDataType> m_dataSetMetaData;
-        private PropertyState<DataSetFieldContentMask> m_dataSetFieldContentMask;
+        private PropertyState<uint> m_dataSetFieldContentMask;
         private PropertyState<ushort> m_messageReceiveTimeout;
         private PropertyState<MessageSecurityMode> m_securityMode;
         private PropertyState<string> m_securityGroupId;
@@ -77155,7 +77155,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the NetworkMessageContentMask Property.
         /// </summary>
-        public PropertyState<UadpNetworkMessageContentMask> NetworkMessageContentMask
+        public PropertyState<uint> NetworkMessageContentMask
         {
             get
             {
@@ -77322,11 +77322,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                NetworkMessageContentMask = new PropertyState<UadpNetworkMessageContentMask>(this);
+                                NetworkMessageContentMask = new PropertyState<uint>(this);
                             }
                             else
                             {
-                                NetworkMessageContentMask = (PropertyState<UadpNetworkMessageContentMask>)replacement;
+                                NetworkMessageContentMask = (PropertyState<uint>)replacement;
                             }
                         }
                     }
@@ -77390,7 +77390,7 @@ namespace Opc.Ua
         #region Private Fields
         private PropertyState<uint> m_groupVersion;
         private PropertyState<DataSetOrderingType> m_dataSetOrdering;
-        private PropertyState<UadpNetworkMessageContentMask> m_networkMessageContentMask;
+        private PropertyState<uint> m_networkMessageContentMask;
         private PropertyState<double> m_samplingOffset;
         private PropertyState<double> m_publishingOffset;
         #endregion
@@ -77466,7 +77466,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the DataSetMessageContentMask Property.
         /// </summary>
-        public PropertyState<UadpDataSetMessageContentMask> DataSetMessageContentMask
+        public PropertyState<uint> DataSetMessageContentMask
         {
             get
             {
@@ -77607,11 +77607,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                DataSetMessageContentMask = new PropertyState<UadpDataSetMessageContentMask>(this);
+                                DataSetMessageContentMask = new PropertyState<uint>(this);
                             }
                             else
                             {
-                                DataSetMessageContentMask = (PropertyState<UadpDataSetMessageContentMask>)replacement;
+                                DataSetMessageContentMask = (PropertyState<uint>)replacement;
                             }
                         }
                     }
@@ -77694,7 +77694,7 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
-        private PropertyState<UadpDataSetMessageContentMask> m_dataSetMessageContentMask;
+        private PropertyState<uint> m_dataSetMessageContentMask;
         private PropertyState<ushort> m_configuredSize;
         private PropertyState<ushort> m_networkMessageNumber;
         private PropertyState<ushort> m_dataSetOffset;
@@ -77882,7 +77882,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the NetworkMessageContentMask Property.
         /// </summary>
-        public PropertyState<UadpNetworkMessageContentMask> NetworkMessageContentMask
+        public PropertyState<uint> NetworkMessageContentMask
         {
             get
             {
@@ -77903,7 +77903,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the DataSetMessageContentMask Property.
         /// </summary>
-        public PropertyState<UadpDataSetMessageContentMask> DataSetMessageContentMask
+        public PropertyState<uint> DataSetMessageContentMask
         {
             get
             {
@@ -78179,11 +78179,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                NetworkMessageContentMask = new PropertyState<UadpNetworkMessageContentMask>(this);
+                                NetworkMessageContentMask = new PropertyState<uint>(this);
                             }
                             else
                             {
-                                NetworkMessageContentMask = (PropertyState<UadpNetworkMessageContentMask>)replacement;
+                                NetworkMessageContentMask = (PropertyState<uint>)replacement;
                             }
                         }
                     }
@@ -78200,11 +78200,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                DataSetMessageContentMask = new PropertyState<UadpDataSetMessageContentMask>(this);
+                                DataSetMessageContentMask = new PropertyState<uint>(this);
                             }
                             else
                             {
-                                DataSetMessageContentMask = (PropertyState<UadpDataSetMessageContentMask>)replacement;
+                                DataSetMessageContentMask = (PropertyState<uint>)replacement;
                             }
                         }
                     }
@@ -78292,8 +78292,8 @@ namespace Opc.Ua
         private PropertyState<ushort> m_networkMessageNumber;
         private PropertyState<ushort> m_dataSetOffset;
         private PropertyState<Guid> m_dataSetClassId;
-        private PropertyState<UadpNetworkMessageContentMask> m_networkMessageContentMask;
-        private PropertyState<UadpDataSetMessageContentMask> m_dataSetMessageContentMask;
+        private PropertyState<uint> m_networkMessageContentMask;
+        private PropertyState<uint> m_dataSetMessageContentMask;
         private PropertyState<double> m_publishingInterval;
         private PropertyState<double> m_processingOffset;
         private PropertyState<double> m_receiveOffset;
@@ -78367,7 +78367,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the NetworkMessageContentMask Property.
         /// </summary>
-        public PropertyState<JsonNetworkMessageContentMask> NetworkMessageContentMask
+        public PropertyState<uint> NetworkMessageContentMask
         {
             get
             {
@@ -78430,11 +78430,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                NetworkMessageContentMask = new PropertyState<JsonNetworkMessageContentMask>(this);
+                                NetworkMessageContentMask = new PropertyState<uint>(this);
                             }
                             else
                             {
-                                NetworkMessageContentMask = (PropertyState<JsonNetworkMessageContentMask>)replacement;
+                                NetworkMessageContentMask = (PropertyState<uint>)replacement;
                             }
                         }
                     }
@@ -78454,7 +78454,7 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
-        private PropertyState<JsonNetworkMessageContentMask> m_networkMessageContentMask;
+        private PropertyState<uint> m_networkMessageContentMask;
         #endregion
     }
     #endif
@@ -78525,7 +78525,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the DataSetMessageContentMask Property.
         /// </summary>
-        public PropertyState<JsonDataSetMessageContentMask> DataSetMessageContentMask
+        public PropertyState<uint> DataSetMessageContentMask
         {
             get
             {
@@ -78588,11 +78588,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                DataSetMessageContentMask = new PropertyState<JsonDataSetMessageContentMask>(this);
+                                DataSetMessageContentMask = new PropertyState<uint>(this);
                             }
                             else
                             {
-                                DataSetMessageContentMask = (PropertyState<JsonDataSetMessageContentMask>)replacement;
+                                DataSetMessageContentMask = (PropertyState<uint>)replacement;
                             }
                         }
                     }
@@ -78612,7 +78612,7 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
-        private PropertyState<JsonDataSetMessageContentMask> m_dataSetMessageContentMask;
+        private PropertyState<uint> m_dataSetMessageContentMask;
         #endregion
     }
     #endif
@@ -78684,7 +78684,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the NetworkMessageContentMask Property.
         /// </summary>
-        public PropertyState<JsonNetworkMessageContentMask> NetworkMessageContentMask
+        public PropertyState<uint> NetworkMessageContentMask
         {
             get
             {
@@ -78705,7 +78705,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the DataSetMessageContentMask Property.
         /// </summary>
-        public PropertyState<JsonDataSetMessageContentMask> DataSetMessageContentMask
+        public PropertyState<uint> DataSetMessageContentMask
         {
             get
             {
@@ -78773,11 +78773,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                NetworkMessageContentMask = new PropertyState<JsonNetworkMessageContentMask>(this);
+                                NetworkMessageContentMask = new PropertyState<uint>(this);
                             }
                             else
                             {
-                                NetworkMessageContentMask = (PropertyState<JsonNetworkMessageContentMask>)replacement;
+                                NetworkMessageContentMask = (PropertyState<uint>)replacement;
                             }
                         }
                     }
@@ -78794,11 +78794,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                DataSetMessageContentMask = new PropertyState<JsonDataSetMessageContentMask>(this);
+                                DataSetMessageContentMask = new PropertyState<uint>(this);
                             }
                             else
                             {
-                                DataSetMessageContentMask = (PropertyState<JsonDataSetMessageContentMask>)replacement;
+                                DataSetMessageContentMask = (PropertyState<uint>)replacement;
                             }
                         }
                     }
@@ -78818,8 +78818,8 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
-        private PropertyState<JsonNetworkMessageContentMask> m_networkMessageContentMask;
-        private PropertyState<JsonDataSetMessageContentMask> m_dataSetMessageContentMask;
+        private PropertyState<uint> m_networkMessageContentMask;
+        private PropertyState<uint> m_dataSetMessageContentMask;
         #endregion
     }
     #endif

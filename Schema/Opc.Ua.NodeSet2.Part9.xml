@@ -139,6 +139,7 @@
   </UAVariable>
   <UAReferenceType NodeId="i=9004" BrowseName="HasTrueSubState">
     <DisplayName>HasTrueSubState</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -146,6 +147,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=9005" BrowseName="HasFalseSubState">
     <DisplayName>HasFalseSubState</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -153,6 +155,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=16361" BrowseName="HasAlarmSuppressionGroup">
     <DisplayName>HasAlarmSuppressionGroup</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -160,6 +163,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=16362" BrowseName="AlarmGroupMember">
     <DisplayName>AlarmGroupMember</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=35</Reference>
     </References>
@@ -3361,6 +3365,7 @@
   </UAObjectType>
   <UAReferenceType NodeId="i=9006" BrowseName="HasCondition">
     <DisplayName>HasCondition</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -3368,6 +3373,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=17276" BrowseName="HasEffectDisable">
     <DisplayName>HasEffectDisable</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=54</Reference>
     </References>
@@ -3375,6 +3381,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=17983" BrowseName="HasEffectEnable">
     <DisplayName>HasEffectEnable</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=54</Reference>
     </References>
@@ -3382,6 +3389,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=17984" BrowseName="HasEffectSuppressed">
     <DisplayName>HasEffectSuppressed</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=54</Reference>
     </References>
@@ -3389,6 +3397,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=17985" BrowseName="HasEffectUnsuppressed">
     <DisplayName>HasEffectUnsuppressed</DisplayName>
+    <Category>Part9</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=54</Reference>
     </References>

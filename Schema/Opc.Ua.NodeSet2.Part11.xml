@@ -72,6 +72,7 @@
   <UAReferenceType NodeId="i=56" BrowseName="HasHistoricalConfiguration">
     <DisplayName>HasHistoricalConfiguration</DisplayName>
     <Description>The type for a reference to the historical configuration for a data variable.</Description>
+    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=44</Reference>
     </References>
@@ -751,6 +752,7 @@
   </UAVariable>
   <UADataType NodeId="i=891" BrowseName="Annotation">
     <DisplayName>Annotation</DisplayName>
+    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -762,6 +764,7 @@
   </UADataType>
   <UADataType NodeId="i=890" BrowseName="ExceptionDeviationFormat">
     <DisplayName>ExceptionDeviationFormat</DisplayName>
+    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=7614</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>

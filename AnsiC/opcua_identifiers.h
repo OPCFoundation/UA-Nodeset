@@ -223,6 +223,8 @@
 #define OpcUaId_UserNameIdentityToken 322
 #define OpcUaId_X509IdentityToken 325
 #define OpcUaId_IssuedIdentityToken 938
+#define OpcUaId_RsaEncryptedSecret 17545
+#define OpcUaId_EccEncryptedSecret 17546
 #define OpcUaId_ActivateSessionRequest 465
 #define OpcUaId_ActivateSessionResponse 468
 #define OpcUaId_CloseSessionRequest 471
@@ -2809,6 +2811,7 @@
 #define OpcUaId_Server_ServiceLevel 2267
 #define OpcUaId_Server_Auditing 2994
 #define OpcUaId_Server_EstimatedReturnTime 12885
+#define OpcUaId_Server_LocalTime 17634
 #define OpcUaId_Server_ServerCapabilities_ServerProfileArray 2269
 #define OpcUaId_Server_ServerCapabilities_LocaleIdArray 2271
 #define OpcUaId_Server_ServerCapabilities_MinSupportedSampleRate 2272
@@ -2859,7 +2862,6 @@
 #define OpcUaId_Server_SetSubscriptionDurable_InputArguments 12750
 #define OpcUaId_Server_SetSubscriptionDurable_OutputArguments 12751
 #define OpcUaId_Server_RequestServerStateChange_InputArguments 12887
-#define OpcUaId_Server_CurrentTimeZone 16313
 #define OpcUaId_Server_ServerRedundancy_CurrentServerId 11312
 #define OpcUaId_Server_ServerRedundancy_RedundantServerArray 11313
 #define OpcUaId_Server_ServerRedundancy_ServerUriArray 11314

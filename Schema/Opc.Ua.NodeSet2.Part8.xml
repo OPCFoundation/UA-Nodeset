@@ -134,6 +134,7 @@
   <UAVariableType NodeId="i=17497" BrowseName="EUItemType" DataType="Number" ValueRank="-2">
     <DisplayName>EUItemType</DisplayName>
     <Category>Part8</Category>
+    <Category>1.05</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=17500</Reference>
       <Reference ReferenceType="HasProperty">i=17501</Reference>
@@ -168,6 +169,7 @@
   <UAVariableType NodeId="i=17503" BrowseName="AnalogUnitItemType" DataType="Number" ValueRank="-2">
     <DisplayName>AnalogUnitItemType</DisplayName>
     <Category>Part8</Category>
+    <Category>1.05</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=17506</Reference>
       <Reference ReferenceType="HasProperty">i=17509</Reference>
@@ -433,6 +435,7 @@
   </UAVariable>
   <UADataType NodeId="i=884" BrowseName="Range">
     <DisplayName>Range</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -443,6 +446,7 @@
   </UADataType>
   <UADataType NodeId="i=887" BrowseName="EUInformation">
     <DisplayName>EUInformation</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -455,6 +459,7 @@
   </UADataType>
   <UADataType NodeId="i=12077" BrowseName="AxisScaleEnumeration">
     <DisplayName>AxisScaleEnumeration</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=12078</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -494,6 +499,7 @@
   </UAVariable>
   <UADataType NodeId="i=12171" BrowseName="ComplexNumberType">
     <DisplayName>ComplexNumberType</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -504,6 +510,7 @@
   </UADataType>
   <UADataType NodeId="i=12172" BrowseName="DoubleComplexNumberType">
     <DisplayName>DoubleComplexNumberType</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -514,6 +521,7 @@
   </UADataType>
   <UADataType NodeId="i=12079" BrowseName="AxisInformation">
     <DisplayName>AxisInformation</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -527,6 +535,7 @@
   </UADataType>
   <UADataType NodeId="i=12080" BrowseName="XVType">
     <DisplayName>XVType</DisplayName>
+    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
