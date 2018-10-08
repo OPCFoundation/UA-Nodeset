@@ -995,11 +995,6 @@ namespace Opc.Ua
         public const uint RsaEncryptedSecret = 17545;
 
         /// <summary>
-        /// The identifier for the EccEncryptedSecret DataType.
-        /// </summary>
-        public const uint EccEncryptedSecret = 17546;
-
-        /// <summary>
         /// The identifier for the ActivateSessionRequest DataType.
         /// </summary>
         public const uint ActivateSessionRequest = 465;
@@ -10690,26 +10685,6 @@ namespace Opc.Ua
         public const uint HasHistoricalConfiguration = 56;
 
         /// <summary>
-        /// The identifier for the DescribesArgument ReferenceType.
-        /// </summary>
-        public const uint DescribesArgument = 129;
-
-        /// <summary>
-        /// The identifier for the DescribesInputArgument ReferenceType.
-        /// </summary>
-        public const uint DescribesInputArgument = 130;
-
-        /// <summary>
-        /// The identifier for the DescribesOptionalInputArgument ReferenceType.
-        /// </summary>
-        public const uint DescribesOptionalInputArgument = 131;
-
-        /// <summary>
-        /// The identifier for the DescribesOutputArgument ReferenceType.
-        /// </summary>
-        public const uint DescribesOutputArgument = 132;
-
-        /// <summary>
         /// The identifier for the HasTrueSubState ReferenceType.
         /// </summary>
         public const uint HasTrueSubState = 9004;
@@ -15358,36 +15333,6 @@ namespace Opc.Ua
         /// The identifier for the AnalogItemType_EngineeringUnits Variable.
         /// </summary>
         public const uint AnalogItemType_EngineeringUnits = 2371;
-
-        /// <summary>
-        /// The identifier for the EUItemType_InstrumentRange Variable.
-        /// </summary>
-        public const uint EUItemType_InstrumentRange = 17500;
-
-        /// <summary>
-        /// The identifier for the EUItemType_EURange Variable.
-        /// </summary>
-        public const uint EUItemType_EURange = 17501;
-
-        /// <summary>
-        /// The identifier for the EUItemType_EngineeringUnits Variable.
-        /// </summary>
-        public const uint EUItemType_EngineeringUnits = 17502;
-
-        /// <summary>
-        /// The identifier for the AnalogUnitItemType_InstrumentRange Variable.
-        /// </summary>
-        public const uint AnalogUnitItemType_InstrumentRange = 17506;
-
-        /// <summary>
-        /// The identifier for the AnalogUnitItemType_EURange Variable.
-        /// </summary>
-        public const uint AnalogUnitItemType_EURange = 17509;
-
-        /// <summary>
-        /// The identifier for the AnalogUnitItemType_EngineeringUnits Variable.
-        /// </summary>
-        public const uint AnalogUnitItemType_EngineeringUnits = 17510;
 
         /// <summary>
         /// The identifier for the TwoStateDiscreteType_FalseState Variable.
@@ -23405,6 +23350,11 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_LocaleIds = 17322;
 
         /// <summary>
+        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_HeaderLayoutUri Variable.
+        /// </summary>
+        public const uint PubSubConnectionType_WriterGroupName_Placeholder_HeaderLayoutUri = 17558;
+
+        /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_DiagnosticsLevel = 19108;
@@ -24375,6 +24325,11 @@ namespace Opc.Ua
         public const uint WriterGroupType_LocaleIds = 17740;
 
         /// <summary>
+        /// The identifier for the WriterGroupType_HeaderLayoutUri Variable.
+        /// </summary>
+        public const uint WriterGroupType_HeaderLayoutUri = 17559;
+
+        /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_DataSetWriterId Variable.
         /// </summary>
         public const uint WriterGroupType_DataSetWriterName_Placeholder_DataSetWriterId = 17744;
@@ -25013,6 +24968,16 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_MessageReceiveTimeout Variable.
         /// </summary>
         public const uint ReaderGroupType_DataSetReaderName_Placeholder_MessageReceiveTimeout = 18082;
+
+        /// <summary>
+        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_KeyFrameCount Variable.
+        /// </summary>
+        public const uint ReaderGroupType_DataSetReaderName_Placeholder_KeyFrameCount = 17560;
+
+        /// <summary>
+        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_HeaderLayoutUri Variable.
+        /// </summary>
+        public const uint ReaderGroupType_DataSetReaderName_Placeholder_HeaderLayoutUri = 17562;
 
         /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_DataSetReaderProperties Variable.
@@ -25958,6 +25923,16 @@ namespace Opc.Ua
         /// The identifier for the DataSetReaderType_MessageReceiveTimeout Variable.
         /// </summary>
         public const uint DataSetReaderType_MessageReceiveTimeout = 21102;
+
+        /// <summary>
+        /// The identifier for the DataSetReaderType_KeyFrameCount Variable.
+        /// </summary>
+        public const uint DataSetReaderType_KeyFrameCount = 17563;
+
+        /// <summary>
+        /// The identifier for the DataSetReaderType_HeaderLayoutUri Variable.
+        /// </summary>
+        public const uint DataSetReaderType_HeaderLayoutUri = 17564;
 
         /// <summary>
         /// The identifier for the DataSetReaderType_SecurityMode Variable.
@@ -29900,16 +29875,6 @@ namespace Opc.Ua
         public const uint AnalogItemType = 2368;
 
         /// <summary>
-        /// The identifier for the EUItemType VariableType.
-        /// </summary>
-        public const uint EUItemType = 17497;
-
-        /// <summary>
-        /// The identifier for the AnalogUnitItemType VariableType.
-        /// </summary>
-        public const uint AnalogUnitItemType = 17503;
-
-        /// <summary>
         /// The identifier for the DiscreteItemType VariableType.
         /// </summary>
         public const uint DiscreteItemType = 2372;
@@ -30948,11 +30913,6 @@ namespace Opc.Ua
         /// The identifier for the RsaEncryptedSecret DataType.
         /// </summary>
         public static readonly NodeId RsaEncryptedSecret = new NodeId(Opc.Ua.DataTypes.RsaEncryptedSecret);
-
-        /// <summary>
-        /// The identifier for the EccEncryptedSecret DataType.
-        /// </summary>
-        public static readonly NodeId EccEncryptedSecret = new NodeId(Opc.Ua.DataTypes.EccEncryptedSecret);
 
         /// <summary>
         /// The identifier for the ActivateSessionRequest DataType.
@@ -40645,26 +40605,6 @@ namespace Opc.Ua
         public static readonly NodeId HasHistoricalConfiguration = new NodeId(Opc.Ua.ReferenceTypes.HasHistoricalConfiguration);
 
         /// <summary>
-        /// The identifier for the DescribesArgument ReferenceType.
-        /// </summary>
-        public static readonly NodeId DescribesArgument = new NodeId(Opc.Ua.ReferenceTypes.DescribesArgument);
-
-        /// <summary>
-        /// The identifier for the DescribesInputArgument ReferenceType.
-        /// </summary>
-        public static readonly NodeId DescribesInputArgument = new NodeId(Opc.Ua.ReferenceTypes.DescribesInputArgument);
-
-        /// <summary>
-        /// The identifier for the DescribesOptionalInputArgument ReferenceType.
-        /// </summary>
-        public static readonly NodeId DescribesOptionalInputArgument = new NodeId(Opc.Ua.ReferenceTypes.DescribesOptionalInputArgument);
-
-        /// <summary>
-        /// The identifier for the DescribesOutputArgument ReferenceType.
-        /// </summary>
-        public static readonly NodeId DescribesOutputArgument = new NodeId(Opc.Ua.ReferenceTypes.DescribesOutputArgument);
-
-        /// <summary>
         /// The identifier for the HasTrueSubState ReferenceType.
         /// </summary>
         public static readonly NodeId HasTrueSubState = new NodeId(Opc.Ua.ReferenceTypes.HasTrueSubState);
@@ -45313,36 +45253,6 @@ namespace Opc.Ua
         /// The identifier for the AnalogItemType_EngineeringUnits Variable.
         /// </summary>
         public static readonly NodeId AnalogItemType_EngineeringUnits = new NodeId(Opc.Ua.Variables.AnalogItemType_EngineeringUnits);
-
-        /// <summary>
-        /// The identifier for the EUItemType_InstrumentRange Variable.
-        /// </summary>
-        public static readonly NodeId EUItemType_InstrumentRange = new NodeId(Opc.Ua.Variables.EUItemType_InstrumentRange);
-
-        /// <summary>
-        /// The identifier for the EUItemType_EURange Variable.
-        /// </summary>
-        public static readonly NodeId EUItemType_EURange = new NodeId(Opc.Ua.Variables.EUItemType_EURange);
-
-        /// <summary>
-        /// The identifier for the EUItemType_EngineeringUnits Variable.
-        /// </summary>
-        public static readonly NodeId EUItemType_EngineeringUnits = new NodeId(Opc.Ua.Variables.EUItemType_EngineeringUnits);
-
-        /// <summary>
-        /// The identifier for the AnalogUnitItemType_InstrumentRange Variable.
-        /// </summary>
-        public static readonly NodeId AnalogUnitItemType_InstrumentRange = new NodeId(Opc.Ua.Variables.AnalogUnitItemType_InstrumentRange);
-
-        /// <summary>
-        /// The identifier for the AnalogUnitItemType_EURange Variable.
-        /// </summary>
-        public static readonly NodeId AnalogUnitItemType_EURange = new NodeId(Opc.Ua.Variables.AnalogUnitItemType_EURange);
-
-        /// <summary>
-        /// The identifier for the AnalogUnitItemType_EngineeringUnits Variable.
-        /// </summary>
-        public static readonly NodeId AnalogUnitItemType_EngineeringUnits = new NodeId(Opc.Ua.Variables.AnalogUnitItemType_EngineeringUnits);
 
         /// <summary>
         /// The identifier for the TwoStateDiscreteType_FalseState Variable.
@@ -53360,6 +53270,11 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_LocaleIds = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_LocaleIds);
 
         /// <summary>
+        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_HeaderLayoutUri Variable.
+        /// </summary>
+        public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_HeaderLayoutUri = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_HeaderLayoutUri);
+
+        /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_DiagnosticsLevel);
@@ -54330,6 +54245,11 @@ namespace Opc.Ua
         public static readonly NodeId WriterGroupType_LocaleIds = new NodeId(Opc.Ua.Variables.WriterGroupType_LocaleIds);
 
         /// <summary>
+        /// The identifier for the WriterGroupType_HeaderLayoutUri Variable.
+        /// </summary>
+        public static readonly NodeId WriterGroupType_HeaderLayoutUri = new NodeId(Opc.Ua.Variables.WriterGroupType_HeaderLayoutUri);
+
+        /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_DataSetWriterId Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_DataSetWriterId = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_DataSetWriterId);
@@ -54968,6 +54888,16 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_MessageReceiveTimeout Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_MessageReceiveTimeout = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_MessageReceiveTimeout);
+
+        /// <summary>
+        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_KeyFrameCount Variable.
+        /// </summary>
+        public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_KeyFrameCount = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_KeyFrameCount);
+
+        /// <summary>
+        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_HeaderLayoutUri Variable.
+        /// </summary>
+        public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_HeaderLayoutUri = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_HeaderLayoutUri);
 
         /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_DataSetReaderProperties Variable.
@@ -55913,6 +55843,16 @@ namespace Opc.Ua
         /// The identifier for the DataSetReaderType_MessageReceiveTimeout Variable.
         /// </summary>
         public static readonly NodeId DataSetReaderType_MessageReceiveTimeout = new NodeId(Opc.Ua.Variables.DataSetReaderType_MessageReceiveTimeout);
+
+        /// <summary>
+        /// The identifier for the DataSetReaderType_KeyFrameCount Variable.
+        /// </summary>
+        public static readonly NodeId DataSetReaderType_KeyFrameCount = new NodeId(Opc.Ua.Variables.DataSetReaderType_KeyFrameCount);
+
+        /// <summary>
+        /// The identifier for the DataSetReaderType_HeaderLayoutUri Variable.
+        /// </summary>
+        public static readonly NodeId DataSetReaderType_HeaderLayoutUri = new NodeId(Opc.Ua.Variables.DataSetReaderType_HeaderLayoutUri);
 
         /// <summary>
         /// The identifier for the DataSetReaderType_SecurityMode Variable.
@@ -59855,16 +59795,6 @@ namespace Opc.Ua
         public static readonly NodeId AnalogItemType = new NodeId(Opc.Ua.VariableTypes.AnalogItemType);
 
         /// <summary>
-        /// The identifier for the EUItemType VariableType.
-        /// </summary>
-        public static readonly NodeId EUItemType = new NodeId(Opc.Ua.VariableTypes.EUItemType);
-
-        /// <summary>
-        /// The identifier for the AnalogUnitItemType VariableType.
-        /// </summary>
-        public static readonly NodeId AnalogUnitItemType = new NodeId(Opc.Ua.VariableTypes.AnalogUnitItemType);
-
-        /// <summary>
         /// The identifier for the DiscreteItemType VariableType.
         /// </summary>
         public static readonly NodeId DiscreteItemType = new NodeId(Opc.Ua.VariableTypes.DiscreteItemType);
@@ -60467,11 +60397,6 @@ namespace Opc.Ua
         /// The BrowseName for the AnalogItemType component.
         /// </summary>
         public const string AnalogItemType = "AnalogItemType";
-
-        /// <summary>
-        /// The BrowseName for the AnalogUnitItemType component.
-        /// </summary>
-        public const string AnalogUnitItemType = "AnalogUnitItemType";
 
         /// <summary>
         /// The BrowseName for the Annotation component.
@@ -62049,26 +61974,6 @@ namespace Opc.Ua
         public const string Deprecated = "Deprecated";
 
         /// <summary>
-        /// The BrowseName for the DescribesArgument component.
-        /// </summary>
-        public const string DescribesArgument = "DescribesArgument";
-
-        /// <summary>
-        /// The BrowseName for the DescribesInputArgument component.
-        /// </summary>
-        public const string DescribesInputArgument = "DescribesInputArgument";
-
-        /// <summary>
-        /// The BrowseName for the DescribesOptionalInputArgument component.
-        /// </summary>
-        public const string DescribesOptionalInputArgument = "DescribesOptionalInputArgument";
-
-        /// <summary>
-        /// The BrowseName for the DescribesOutputArgument component.
-        /// </summary>
-        public const string DescribesOutputArgument = "DescribesOutputArgument";
-
-        /// <summary>
         /// The BrowseName for the DeviceFailureEventType component.
         /// </summary>
         public const string DeviceFailureEventType = "DeviceFailureEventType";
@@ -62172,11 +62077,6 @@ namespace Opc.Ua
         /// The BrowseName for the DurationString component.
         /// </summary>
         public const string DurationString = "DurationString";
-
-        /// <summary>
-        /// The BrowseName for the EccEncryptedSecret component.
-        /// </summary>
-        public const string EccEncryptedSecret = "EccEncryptedSecret";
 
         /// <summary>
         /// The BrowseName for the EffectiveDisplayName component.
@@ -62322,11 +62222,6 @@ namespace Opc.Ua
         /// The BrowseName for the EUInformation component.
         /// </summary>
         public const string EUInformation = "EUInformation";
-
-        /// <summary>
-        /// The BrowseName for the EUItemType component.
-        /// </summary>
-        public const string EUItemType = "EUItemType";
 
         /// <summary>
         /// The BrowseName for the EURange component.
@@ -62832,6 +62727,11 @@ namespace Opc.Ua
         /// The BrowseName for the HasTypeDefinition component.
         /// </summary>
         public const string HasTypeDefinition = "HasTypeDefinition";
+
+        /// <summary>
+        /// The BrowseName for the HeaderLayoutUri component.
+        /// </summary>
+        public const string HeaderLayoutUri = "HeaderLayoutUri";
 
         /// <summary>
         /// The BrowseName for the HierarchicalReferences component.

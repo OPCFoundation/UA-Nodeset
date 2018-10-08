@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-07-31T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-09-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2018-07-31T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2018-09-15T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -72,7 +72,6 @@
   <UADataType NodeId="i=18" BrowseName="ExpandedNodeId">
     <DisplayName>ExpandedNodeId</DisplayName>
     <Description>Describes a value that is an absolute identifier for a node.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
@@ -80,7 +79,6 @@
   <UADataType NodeId="i=19" BrowseName="StatusCode">
     <DisplayName>StatusCode</DisplayName>
     <Description>Describes a value that is a code representing the outcome of an operation by a Server.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
@@ -88,7 +86,6 @@
   <UADataType NodeId="i=23" BrowseName="DataValue">
     <DisplayName>DataValue</DisplayName>
     <Description>Describes a value that is a structure containing a value, a status code and timestamps.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
@@ -96,7 +93,6 @@
   <UADataType NodeId="i=25" BrowseName="DiagnosticInfo">
     <DisplayName>DiagnosticInfo</DisplayName>
     <Description>Describes a value that is a structure containing diagnostics associated with a StatusCode.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
@@ -104,7 +100,6 @@
   <UADataType NodeId="i=288" BrowseName="IntegerId">
     <DisplayName>IntegerId</DisplayName>
     <Description>A numeric identifier for an object.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
@@ -112,7 +107,6 @@
   <UADataType NodeId="i=307" BrowseName="ApplicationType">
     <DisplayName>ApplicationType</DisplayName>
     <Description>The types of applications.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=7597</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -167,7 +161,6 @@
   <UADataType NodeId="i=308" BrowseName="ApplicationDescription">
     <DisplayName>ApplicationDescription</DisplayName>
     <Description>Describes an application and how to find it.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -195,10 +188,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=389" BrowseName="RequestHeader">
+  <UADataType NodeId="i=389" BrowseName="RequestHeader" Purpose="ServicesOnly">
     <DisplayName>RequestHeader</DisplayName>
     <Description>The header passed with every server request.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -226,10 +218,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=392" BrowseName="ResponseHeader">
+  <UADataType NodeId="i=392" BrowseName="ResponseHeader" Purpose="ServicesOnly">
     <DisplayName>ResponseHeader</DisplayName>
     <Description>The header passed with every server response.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -256,15 +247,13 @@
   </UADataType>
   <UADataType NodeId="i=20998" BrowseName="VersionTime">
     <DisplayName>VersionTime</DisplayName>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
   </UADataType>
-  <UADataType NodeId="i=395" BrowseName="ServiceFault">
+  <UADataType NodeId="i=395" BrowseName="ServiceFault" Purpose="ServicesOnly">
     <DisplayName>ServiceFault</DisplayName>
     <Description>The response returned by all services when there is a service level error.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -274,9 +263,8 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=15901" BrowseName="SessionlessInvokeRequestType">
+  <UADataType NodeId="i=15901" BrowseName="SessionlessInvokeRequestType" Purpose="ServicesOnly">
     <DisplayName>SessionlessInvokeRequestType</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -288,9 +276,8 @@
       <Field Name="ServiceId" DataType="i=7" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=20999" BrowseName="SessionlessInvokeResponseType">
+  <UADataType NodeId="i=20999" BrowseName="SessionlessInvokeResponseType" Purpose="ServicesOnly">
     <DisplayName>SessionlessInvokeResponseType</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -300,10 +287,9 @@
       <Field Name="ServiceId" DataType="i=7" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=420" BrowseName="FindServersRequest">
+  <UADataType NodeId="i=420" BrowseName="FindServersRequest" Purpose="ServicesOnly">
     <DisplayName>FindServersRequest</DisplayName>
     <Description>Finds the servers known to the discovery server.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -322,10 +308,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=423" BrowseName="FindServersResponse">
+  <UADataType NodeId="i=423" BrowseName="FindServersResponse" Purpose="ServicesOnly">
     <DisplayName>FindServersResponse</DisplayName>
     <Description>Finds the servers known to the discovery server.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -340,7 +325,6 @@
   </UADataType>
   <UADataType NodeId="i=12189" BrowseName="ServerOnNetwork">
     <DisplayName>ServerOnNetwork</DisplayName>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -351,9 +335,8 @@
       <Field Name="ServerCapabilities" DataType="i=12" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=12190" BrowseName="FindServersOnNetworkRequest">
+  <UADataType NodeId="i=12190" BrowseName="FindServersOnNetworkRequest" Purpose="ServicesOnly">
     <DisplayName>FindServersOnNetworkRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -364,9 +347,8 @@
       <Field Name="ServerCapabilityFilter" DataType="i=12" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=12191" BrowseName="FindServersOnNetworkResponse">
+  <UADataType NodeId="i=12191" BrowseName="FindServersOnNetworkResponse" Purpose="ServicesOnly">
     <DisplayName>FindServersOnNetworkResponse</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -379,7 +361,6 @@
   <UADataType NodeId="i=311" BrowseName="ApplicationInstanceCertificate">
     <DisplayName>ApplicationInstanceCertificate</DisplayName>
     <Description>A certificate for an instance of an application.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15</Reference>
     </References>
@@ -387,7 +368,6 @@
   <UADataType NodeId="i=302" BrowseName="MessageSecurityMode">
     <DisplayName>MessageSecurityMode</DisplayName>
     <Description>The type of security to use on a message.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=7595</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -442,7 +422,6 @@
   <UADataType NodeId="i=303" BrowseName="UserTokenType">
     <DisplayName>UserTokenType</DisplayName>
     <Description>The possible user token types.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=7596</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -497,7 +476,6 @@
   <UADataType NodeId="i=304" BrowseName="UserTokenPolicy">
     <DisplayName>UserTokenPolicy</DisplayName>
     <Description>Describes a user token that can be used with a server.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -522,7 +500,6 @@
   <UADataType NodeId="i=312" BrowseName="EndpointDescription">
     <DisplayName>EndpointDescription</DisplayName>
     <Description>The description of a endpoint that can be used to access a server.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -553,10 +530,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=426" BrowseName="GetEndpointsRequest">
+  <UADataType NodeId="i=426" BrowseName="GetEndpointsRequest" Purpose="ServicesOnly">
     <DisplayName>GetEndpointsRequest</DisplayName>
     <Description>Gets the endpoints used by the server.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -575,10 +551,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=429" BrowseName="GetEndpointsResponse">
+  <UADataType NodeId="i=429" BrowseName="GetEndpointsResponse" Purpose="ServicesOnly">
     <DisplayName>GetEndpointsResponse</DisplayName>
     <Description>Gets the endpoints used by the server.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -594,7 +569,6 @@
   <UADataType NodeId="i=432" BrowseName="RegisteredServer">
     <DisplayName>RegisteredServer</DisplayName>
     <Description>The information required to register a server with a discovery server.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -625,10 +599,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=435" BrowseName="RegisterServerRequest">
+  <UADataType NodeId="i=435" BrowseName="RegisterServerRequest" Purpose="ServicesOnly">
     <DisplayName>RegisterServerRequest</DisplayName>
     <Description>Registers a server with the discovery server.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -641,10 +614,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=438" BrowseName="RegisterServerResponse">
+  <UADataType NodeId="i=438" BrowseName="RegisterServerResponse" Purpose="ServicesOnly">
     <DisplayName>RegisterServerResponse</DisplayName>
     <Description>Registers a server with the discovery server.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -657,7 +629,6 @@
   <UADataType NodeId="i=12890" BrowseName="DiscoveryConfiguration">
     <DisplayName>DiscoveryConfiguration</DisplayName>
     <Description>A base type for discovery configuration information.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -665,7 +636,6 @@
   <UADataType NodeId="i=12891" BrowseName="MdnsDiscoveryConfiguration">
     <DisplayName>MdnsDiscoveryConfiguration</DisplayName>
     <Description>The discovery information needed for mDNS registration.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12890</Reference>
     </References>
@@ -678,9 +648,8 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=12193" BrowseName="RegisterServer2Request">
+  <UADataType NodeId="i=12193" BrowseName="RegisterServer2Request" Purpose="ServicesOnly">
     <DisplayName>RegisterServer2Request</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -690,9 +659,8 @@
       <Field Name="DiscoveryConfiguration" DataType="i=22" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=12194" BrowseName="RegisterServer2Response">
+  <UADataType NodeId="i=12194" BrowseName="RegisterServer2Response" Purpose="ServicesOnly">
     <DisplayName>RegisterServer2Response</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -705,7 +673,6 @@
   <UADataType NodeId="i=315" BrowseName="SecurityTokenRequestType">
     <DisplayName>SecurityTokenRequestType</DisplayName>
     <Description>Indicates whether a token if being created or renewed.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=7598</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -741,10 +708,9 @@
       </ListOfLocalizedText>
     </Value>
   </UAVariable>
-  <UADataType NodeId="i=441" BrowseName="ChannelSecurityToken">
+  <UADataType NodeId="i=441" BrowseName="ChannelSecurityToken" Purpose="ServicesOnly">
     <DisplayName>ChannelSecurityToken</DisplayName>
     <Description>The token that identifies a set of keys for an active secure channel.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -763,10 +729,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=444" BrowseName="OpenSecureChannelRequest">
+  <UADataType NodeId="i=444" BrowseName="OpenSecureChannelRequest" Purpose="ServicesOnly">
     <DisplayName>OpenSecureChannelRequest</DisplayName>
     <Description>Creates a secure channel with a server.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -791,10 +756,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=447" BrowseName="OpenSecureChannelResponse">
+  <UADataType NodeId="i=447" BrowseName="OpenSecureChannelResponse" Purpose="ServicesOnly">
     <DisplayName>OpenSecureChannelResponse</DisplayName>
     <Description>Creates a secure channel with a server.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -813,10 +777,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=450" BrowseName="CloseSecureChannelRequest">
+  <UADataType NodeId="i=450" BrowseName="CloseSecureChannelRequest" Purpose="ServicesOnly">
     <DisplayName>CloseSecureChannelRequest</DisplayName>
     <Description>Closes a secure channel.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -826,10 +789,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=453" BrowseName="CloseSecureChannelResponse">
+  <UADataType NodeId="i=453" BrowseName="CloseSecureChannelResponse" Purpose="ServicesOnly">
     <DisplayName>CloseSecureChannelResponse</DisplayName>
     <Description>Closes a secure channel.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -842,7 +804,6 @@
   <UADataType NodeId="i=344" BrowseName="SignedSoftwareCertificate">
     <DisplayName>SignedSoftwareCertificate</DisplayName>
     <Description>A software certificate with a digital signature.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -858,15 +819,13 @@
   <UADataType NodeId="i=388" BrowseName="SessionAuthenticationToken">
     <DisplayName>SessionAuthenticationToken</DisplayName>
     <Description>A unique identifier for a session used to authenticate requests.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=17</Reference>
     </References>
   </UADataType>
-  <UADataType NodeId="i=456" BrowseName="SignatureData">
+  <UADataType NodeId="i=456" BrowseName="SignatureData" Purpose="ServicesOnly">
     <DisplayName>SignatureData</DisplayName>
     <Description>A digital signature.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -879,10 +838,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=459" BrowseName="CreateSessionRequest">
+  <UADataType NodeId="i=459" BrowseName="CreateSessionRequest" Purpose="ServicesOnly">
     <DisplayName>CreateSessionRequest</DisplayName>
     <Description>Creates a new session with the server.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -916,10 +874,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=462" BrowseName="CreateSessionResponse">
+  <UADataType NodeId="i=462" BrowseName="CreateSessionResponse" Purpose="ServicesOnly">
     <DisplayName>CreateSessionResponse</DisplayName>
     <Description>Creates a new session with the server.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -959,7 +916,6 @@
   <UADataType NodeId="i=316" BrowseName="UserIdentityToken" IsAbstract="true">
     <DisplayName>UserIdentityToken</DisplayName>
     <Description>A base type for a user identity token.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -972,7 +928,6 @@
   <UADataType NodeId="i=319" BrowseName="AnonymousIdentityToken">
     <DisplayName>AnonymousIdentityToken</DisplayName>
     <Description>A token representing an anonymous user.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=316</Reference>
     </References>
@@ -980,7 +935,6 @@
   <UADataType NodeId="i=322" BrowseName="UserNameIdentityToken">
     <DisplayName>UserNameIdentityToken</DisplayName>
     <Description>A token representing a user identified by a user name and password.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=316</Reference>
     </References>
@@ -999,7 +953,6 @@
   <UADataType NodeId="i=325" BrowseName="X509IdentityToken">
     <DisplayName>X509IdentityToken</DisplayName>
     <Description>A token representing a user identified by an X509 certificate.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=316</Reference>
     </References>
@@ -1012,7 +965,6 @@
   <UADataType NodeId="i=938" BrowseName="IssuedIdentityToken">
     <DisplayName>IssuedIdentityToken</DisplayName>
     <Description>A token representing a user identified by a WS-Security XML token.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=316</Reference>
     </References>
@@ -1027,16 +979,13 @@
   </UADataType>
   <UADataType NodeId="i=17545" BrowseName="RsaEncryptedSecret">
     <DisplayName>RsaEncryptedSecret</DisplayName>
-    <Category>Part4/Services</Category>
-    <Category>1.04</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
   </UADataType>
-  <UADataType NodeId="i=465" BrowseName="ActivateSessionRequest">
+  <UADataType NodeId="i=465" BrowseName="ActivateSessionRequest" Purpose="ServicesOnly">
     <DisplayName>ActivateSessionRequest</DisplayName>
     <Description>Activates a session with the server.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -1061,10 +1010,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=468" BrowseName="ActivateSessionResponse">
+  <UADataType NodeId="i=468" BrowseName="ActivateSessionResponse" Purpose="ServicesOnly">
     <DisplayName>ActivateSessionResponse</DisplayName>
     <Description>Activates a session with the server.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -1083,10 +1031,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=471" BrowseName="CloseSessionRequest">
+  <UADataType NodeId="i=471" BrowseName="CloseSessionRequest" Purpose="ServicesOnly">
     <DisplayName>CloseSessionRequest</DisplayName>
     <Description>Closes a session with the server.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -1099,10 +1046,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=474" BrowseName="CloseSessionResponse">
+  <UADataType NodeId="i=474" BrowseName="CloseSessionResponse" Purpose="ServicesOnly">
     <DisplayName>CloseSessionResponse</DisplayName>
     <Description>Closes a session with the server.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -1112,10 +1058,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=477" BrowseName="CancelRequest">
+  <UADataType NodeId="i=477" BrowseName="CancelRequest" Purpose="ServicesOnly">
     <DisplayName>CancelRequest</DisplayName>
     <Description>Cancels an outstanding request.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -1128,10 +1073,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=480" BrowseName="CancelResponse">
+  <UADataType NodeId="i=480" BrowseName="CancelResponse" Purpose="ServicesOnly">
     <DisplayName>CancelResponse</DisplayName>
     <Description>Cancels an outstanding request.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -1147,7 +1091,6 @@
   <UADataType NodeId="i=348" BrowseName="NodeAttributesMask">
     <DisplayName>NodeAttributesMask</DisplayName>
     <Description>The bits used to specify default attributes for a new node.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=11881</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -1972,10 +1915,9 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UADataType NodeId="i=349" BrowseName="NodeAttributes">
+  <UADataType NodeId="i=349" BrowseName="NodeAttributes" Purpose="ServicesOnly">
     <DisplayName>NodeAttributes</DisplayName>
     <Description>The base attributes for all nodes.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -1997,10 +1939,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=352" BrowseName="ObjectAttributes">
+  <UADataType NodeId="i=352" BrowseName="ObjectAttributes" Purpose="ServicesOnly">
     <DisplayName>ObjectAttributes</DisplayName>
     <Description>The attributes for an object node.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=349</Reference>
     </References>
@@ -2010,10 +1951,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=355" BrowseName="VariableAttributes">
+  <UADataType NodeId="i=355" BrowseName="VariableAttributes" Purpose="ServicesOnly">
     <DisplayName>VariableAttributes</DisplayName>
     <Description>The attributes for a variable node.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=349</Reference>
     </References>
@@ -2044,10 +1984,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=358" BrowseName="MethodAttributes">
+  <UADataType NodeId="i=358" BrowseName="MethodAttributes" Purpose="ServicesOnly">
     <DisplayName>MethodAttributes</DisplayName>
     <Description>The attributes for a method node.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=349</Reference>
     </References>
@@ -2060,10 +1999,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=361" BrowseName="ObjectTypeAttributes">
+  <UADataType NodeId="i=361" BrowseName="ObjectTypeAttributes" Purpose="ServicesOnly">
     <DisplayName>ObjectTypeAttributes</DisplayName>
     <Description>The attributes for an object type node.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=349</Reference>
     </References>
@@ -2073,10 +2011,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=364" BrowseName="VariableTypeAttributes">
+  <UADataType NodeId="i=364" BrowseName="VariableTypeAttributes" Purpose="ServicesOnly">
     <DisplayName>VariableTypeAttributes</DisplayName>
     <Description>The attributes for a variable type node.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=349</Reference>
     </References>
@@ -2098,10 +2035,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=367" BrowseName="ReferenceTypeAttributes">
+  <UADataType NodeId="i=367" BrowseName="ReferenceTypeAttributes" Purpose="ServicesOnly">
     <DisplayName>ReferenceTypeAttributes</DisplayName>
     <Description>The attributes for a reference type node.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=349</Reference>
     </References>
@@ -2117,10 +2053,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=370" BrowseName="DataTypeAttributes">
+  <UADataType NodeId="i=370" BrowseName="DataTypeAttributes" Purpose="ServicesOnly">
     <DisplayName>DataTypeAttributes</DisplayName>
     <Description>The attributes for a data type node.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=349</Reference>
     </References>
@@ -2130,10 +2065,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=373" BrowseName="ViewAttributes">
+  <UADataType NodeId="i=373" BrowseName="ViewAttributes" Purpose="ServicesOnly">
     <DisplayName>ViewAttributes</DisplayName>
     <Description>The attributes for a view node.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=349</Reference>
     </References>
@@ -2146,9 +2080,8 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=17606" BrowseName="GenericAttributeValue">
+  <UADataType NodeId="i=17606" BrowseName="GenericAttributeValue" Purpose="ServicesOnly">
     <DisplayName>GenericAttributeValue</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -2157,9 +2090,8 @@
       <Field Name="Value" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=17607" BrowseName="GenericAttributes">
+  <UADataType NodeId="i=17607" BrowseName="GenericAttributes" Purpose="ServicesOnly">
     <DisplayName>GenericAttributes</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=349</Reference>
     </References>
@@ -2170,7 +2102,6 @@
   <UADataType NodeId="i=376" BrowseName="AddNodesItem">
     <DisplayName>AddNodesItem</DisplayName>
     <Description>A request to add a node to the server address space.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -2198,10 +2129,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=483" BrowseName="AddNodesResult">
+  <UADataType NodeId="i=483" BrowseName="AddNodesResult" Purpose="ServicesOnly">
     <DisplayName>AddNodesResult</DisplayName>
     <Description>A result of an add node operation.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -2214,10 +2144,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=486" BrowseName="AddNodesRequest">
+  <UADataType NodeId="i=486" BrowseName="AddNodesRequest" Purpose="ServicesOnly">
     <DisplayName>AddNodesRequest</DisplayName>
     <Description>Adds one or more nodes to the server address space.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -2230,10 +2159,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=489" BrowseName="AddNodesResponse">
+  <UADataType NodeId="i=489" BrowseName="AddNodesResponse" Purpose="ServicesOnly">
     <DisplayName>AddNodesResponse</DisplayName>
     <Description>Adds one or more nodes to the server address space.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -2252,7 +2180,6 @@
   <UADataType NodeId="i=379" BrowseName="AddReferencesItem">
     <DisplayName>AddReferencesItem</DisplayName>
     <Description>A request to add a reference to the server address space.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -2277,10 +2204,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=492" BrowseName="AddReferencesRequest">
+  <UADataType NodeId="i=492" BrowseName="AddReferencesRequest" Purpose="ServicesOnly">
     <DisplayName>AddReferencesRequest</DisplayName>
     <Description>Adds one or more references to the server address space.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -2293,10 +2219,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=495" BrowseName="AddReferencesResponse">
+  <UADataType NodeId="i=495" BrowseName="AddReferencesResponse" Purpose="ServicesOnly">
     <DisplayName>AddReferencesResponse</DisplayName>
     <Description>Adds one or more references to the server address space.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -2315,7 +2240,6 @@
   <UADataType NodeId="i=382" BrowseName="DeleteNodesItem">
     <DisplayName>DeleteNodesItem</DisplayName>
     <Description>A request to delete a node to the server address space.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -2328,10 +2252,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=498" BrowseName="DeleteNodesRequest">
+  <UADataType NodeId="i=498" BrowseName="DeleteNodesRequest" Purpose="ServicesOnly">
     <DisplayName>DeleteNodesRequest</DisplayName>
     <Description>Delete one or more nodes from the server address space.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -2344,10 +2267,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=501" BrowseName="DeleteNodesResponse">
+  <UADataType NodeId="i=501" BrowseName="DeleteNodesResponse" Purpose="ServicesOnly">
     <DisplayName>DeleteNodesResponse</DisplayName>
     <Description>Delete one or more nodes from the server address space.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -2366,7 +2288,6 @@
   <UADataType NodeId="i=385" BrowseName="DeleteReferencesItem">
     <DisplayName>DeleteReferencesItem</DisplayName>
     <Description>A request to delete a node from the server address space.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -2388,10 +2309,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=504" BrowseName="DeleteReferencesRequest">
+  <UADataType NodeId="i=504" BrowseName="DeleteReferencesRequest" Purpose="ServicesOnly">
     <DisplayName>DeleteReferencesRequest</DisplayName>
     <Description>Delete one or more references from the server address space.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -2404,10 +2324,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=507" BrowseName="DeleteReferencesResponse">
+  <UADataType NodeId="i=507" BrowseName="DeleteReferencesResponse" Purpose="ServicesOnly">
     <DisplayName>DeleteReferencesResponse</DisplayName>
     <Description>Delete one or more references from the server address space.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -2426,7 +2345,6 @@
   <UADataType NodeId="i=347" BrowseName="AttributeWriteMask">
     <DisplayName>AttributeWriteMask</DisplayName>
     <Description>Define bits used to indicate which attributes are writable.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=15036</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
@@ -2654,10 +2572,9 @@
       </ListOfLocalizedText>
     </Value>
   </UAVariable>
-  <UADataType NodeId="i=510" BrowseName="BrowseDirection">
+  <UADataType NodeId="i=510" BrowseName="BrowseDirection" Purpose="ServicesOnly">
     <DisplayName>BrowseDirection</DisplayName>
     <Description>The directions of the references to return.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=7603</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -2707,10 +2624,9 @@
       </ListOfLocalizedText>
     </Value>
   </UAVariable>
-  <UADataType NodeId="i=511" BrowseName="ViewDescription">
+  <UADataType NodeId="i=511" BrowseName="ViewDescription" Purpose="ServicesOnly">
     <DisplayName>ViewDescription</DisplayName>
     <Description>The view to browse.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -2726,10 +2642,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=514" BrowseName="BrowseDescription">
+  <UADataType NodeId="i=514" BrowseName="BrowseDescription" Purpose="ServicesOnly">
     <DisplayName>BrowseDescription</DisplayName>
     <Description>A request to browse the the references from a node.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -2754,10 +2669,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=517" BrowseName="BrowseResultMask">
+  <UADataType NodeId="i=517" BrowseName="BrowseResultMask" Purpose="ServicesOnly">
     <DisplayName>BrowseResultMask</DisplayName>
     <Description>A bit mask which specifies what should be returned in a browse response.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=11883</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -3007,10 +2921,9 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UADataType NodeId="i=518" BrowseName="ReferenceDescription">
+  <UADataType NodeId="i=518" BrowseName="ReferenceDescription" Purpose="ServicesOnly">
     <DisplayName>ReferenceDescription</DisplayName>
     <Description>The description of a reference.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3041,15 +2954,13 @@
   <UADataType NodeId="i=521" BrowseName="ContinuationPoint">
     <DisplayName>ContinuationPoint</DisplayName>
     <Description>An identifier for a suspended query or browse operation.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15</Reference>
     </References>
   </UADataType>
-  <UADataType NodeId="i=522" BrowseName="BrowseResult">
+  <UADataType NodeId="i=522" BrowseName="BrowseResult" Purpose="ServicesOnly">
     <DisplayName>BrowseResult</DisplayName>
     <Description>The result of a browse operation.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3065,10 +2976,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=525" BrowseName="BrowseRequest">
+  <UADataType NodeId="i=525" BrowseName="BrowseRequest" Purpose="ServicesOnly">
     <DisplayName>BrowseRequest</DisplayName>
     <Description>Browse the references for one or more nodes from the server address space.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3087,10 +2997,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=528" BrowseName="BrowseResponse">
+  <UADataType NodeId="i=528" BrowseName="BrowseResponse" Purpose="ServicesOnly">
     <DisplayName>BrowseResponse</DisplayName>
     <Description>Browse the references for one or more nodes from the server address space.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3106,10 +3015,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=531" BrowseName="BrowseNextRequest">
+  <UADataType NodeId="i=531" BrowseName="BrowseNextRequest" Purpose="ServicesOnly">
     <DisplayName>BrowseNextRequest</DisplayName>
     <Description>Continues one or more browse operations.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3125,10 +3033,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=534" BrowseName="BrowseNextResponse">
+  <UADataType NodeId="i=534" BrowseName="BrowseNextResponse" Purpose="ServicesOnly">
     <DisplayName>BrowseNextResponse</DisplayName>
     <Description>Continues one or more browse operations.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3147,7 +3054,6 @@
   <UADataType NodeId="i=537" BrowseName="RelativePathElement">
     <DisplayName>RelativePathElement</DisplayName>
     <Description>An element in a relative path.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3169,7 +3075,6 @@
   <UADataType NodeId="i=540" BrowseName="RelativePath">
     <DisplayName>RelativePath</DisplayName>
     <Description>A relative path constructed from reference types and browse names.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3179,10 +3084,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=543" BrowseName="BrowsePath">
+  <UADataType NodeId="i=543" BrowseName="BrowsePath" Purpose="ServicesOnly">
     <DisplayName>BrowsePath</DisplayName>
     <Description>A request to translate a path into a node id.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3195,10 +3099,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=546" BrowseName="BrowsePathTarget">
+  <UADataType NodeId="i=546" BrowseName="BrowsePathTarget" Purpose="ServicesOnly">
     <DisplayName>BrowsePathTarget</DisplayName>
     <Description>The target of the translated path.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3211,10 +3114,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=549" BrowseName="BrowsePathResult">
+  <UADataType NodeId="i=549" BrowseName="BrowsePathResult" Purpose="ServicesOnly">
     <DisplayName>BrowsePathResult</DisplayName>
     <Description>The result of a translate opearation.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3227,10 +3129,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=552" BrowseName="TranslateBrowsePathsToNodeIdsRequest">
+  <UADataType NodeId="i=552" BrowseName="TranslateBrowsePathsToNodeIdsRequest" Purpose="ServicesOnly">
     <DisplayName>TranslateBrowsePathsToNodeIdsRequest</DisplayName>
     <Description>Translates one or more paths in the server address space.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3243,10 +3144,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=555" BrowseName="TranslateBrowsePathsToNodeIdsResponse">
+  <UADataType NodeId="i=555" BrowseName="TranslateBrowsePathsToNodeIdsResponse" Purpose="ServicesOnly">
     <DisplayName>TranslateBrowsePathsToNodeIdsResponse</DisplayName>
     <Description>Translates one or more paths in the server address space.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3262,10 +3162,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=558" BrowseName="RegisterNodesRequest">
+  <UADataType NodeId="i=558" BrowseName="RegisterNodesRequest" Purpose="ServicesOnly">
     <DisplayName>RegisterNodesRequest</DisplayName>
     <Description>Registers one or more nodes for repeated use within a session.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3278,10 +3177,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=561" BrowseName="RegisterNodesResponse">
+  <UADataType NodeId="i=561" BrowseName="RegisterNodesResponse" Purpose="ServicesOnly">
     <DisplayName>RegisterNodesResponse</DisplayName>
     <Description>Registers one or more nodes for repeated use within a session.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3294,10 +3192,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=564" BrowseName="UnregisterNodesRequest">
+  <UADataType NodeId="i=564" BrowseName="UnregisterNodesRequest" Purpose="ServicesOnly">
     <DisplayName>UnregisterNodesRequest</DisplayName>
     <Description>Unregisters one or more previously registered nodes.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3310,10 +3207,9 @@
       </Field>
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=567" BrowseName="UnregisterNodesResponse">
+  <UADataType NodeId="i=567" BrowseName="UnregisterNodesResponse" Purpose="ServicesOnly">
     <DisplayName>UnregisterNodesResponse</DisplayName>
     <Description>Unregisters one or more previously registered nodes.</Description>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3326,7 +3222,6 @@
   <UADataType NodeId="i=289" BrowseName="Counter">
     <DisplayName>Counter</DisplayName>
     <Description>A monotonically increasing value.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
@@ -3334,7 +3229,6 @@
   <UADataType NodeId="i=291" BrowseName="NumericRange">
     <DisplayName>NumericRange</DisplayName>
     <Description>Specifies a range of array indexes.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
@@ -3342,7 +3236,6 @@
   <UADataType NodeId="i=292" BrowseName="Time">
     <DisplayName>Time</DisplayName>
     <Description>A time value specified as HH:MM:SS.SSS.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
@@ -3350,14 +3243,12 @@
   <UADataType NodeId="i=293" BrowseName="Date">
     <DisplayName>Date</DisplayName>
     <Description>A date value.</Description>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=13</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=331" BrowseName="EndpointConfiguration">
     <DisplayName>EndpointConfiguration</DisplayName>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3373,9 +3264,8 @@
       <Field Name="SecurityTokenLifetime" DataType="i=6" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=570" BrowseName="QueryDataDescription">
+  <UADataType NodeId="i=570" BrowseName="QueryDataDescription" Purpose="ServicesOnly">
     <DisplayName>QueryDataDescription</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3385,9 +3275,8 @@
       <Field Name="IndexRange" DataType="i=291" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=573" BrowseName="NodeTypeDescription">
+  <UADataType NodeId="i=573" BrowseName="NodeTypeDescription" Purpose="ServicesOnly">
     <DisplayName>NodeTypeDescription</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3399,7 +3288,6 @@
   </UADataType>
   <UADataType NodeId="i=576" BrowseName="FilterOperator">
     <DisplayName>FilterOperator</DisplayName>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=7605</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -3527,9 +3415,8 @@
       </ListOfLocalizedText>
     </Value>
   </UAVariable>
-  <UADataType NodeId="i=577" BrowseName="QueryDataSet">
+  <UADataType NodeId="i=577" BrowseName="QueryDataSet" Purpose="ServicesOnly">
     <DisplayName>QueryDataSet</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3539,9 +3426,8 @@
       <Field Name="Values" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=580" BrowseName="NodeReference">
+  <UADataType NodeId="i=580" BrowseName="NodeReference" Purpose="ServicesOnly">
     <DisplayName>NodeReference</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3554,7 +3440,6 @@
   </UADataType>
   <UADataType NodeId="i=583" BrowseName="ContentFilterElement">
     <DisplayName>ContentFilterElement</DisplayName>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3565,7 +3450,6 @@
   </UADataType>
   <UADataType NodeId="i=586" BrowseName="ContentFilter">
     <DisplayName>ContentFilter</DisplayName>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3575,14 +3459,12 @@
   </UADataType>
   <UADataType NodeId="i=589" BrowseName="FilterOperand">
     <DisplayName>FilterOperand</DisplayName>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=592" BrowseName="ElementOperand">
     <DisplayName>ElementOperand</DisplayName>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=589</Reference>
     </References>
@@ -3592,7 +3474,6 @@
   </UADataType>
   <UADataType NodeId="i=595" BrowseName="LiteralOperand">
     <DisplayName>LiteralOperand</DisplayName>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=589</Reference>
     </References>
@@ -3602,7 +3483,6 @@
   </UADataType>
   <UADataType NodeId="i=598" BrowseName="AttributeOperand">
     <DisplayName>AttributeOperand</DisplayName>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=589</Reference>
     </References>
@@ -3616,7 +3496,6 @@
   </UADataType>
   <UADataType NodeId="i=601" BrowseName="SimpleAttributeOperand">
     <DisplayName>SimpleAttributeOperand</DisplayName>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=589</Reference>
     </References>
@@ -3627,9 +3506,8 @@
       <Field Name="IndexRange" DataType="i=291" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=604" BrowseName="ContentFilterElementResult">
+  <UADataType NodeId="i=604" BrowseName="ContentFilterElementResult" Purpose="ServicesOnly">
     <DisplayName>ContentFilterElementResult</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3639,9 +3517,8 @@
       <Field Name="OperandDiagnosticInfos" DataType="i=25" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=607" BrowseName="ContentFilterResult">
+  <UADataType NodeId="i=607" BrowseName="ContentFilterResult" Purpose="ServicesOnly">
     <DisplayName>ContentFilterResult</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3650,9 +3527,8 @@
       <Field Name="ElementDiagnosticInfos" DataType="i=25" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=610" BrowseName="ParsingResult">
+  <UADataType NodeId="i=610" BrowseName="ParsingResult" Purpose="ServicesOnly">
     <DisplayName>ParsingResult</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3662,9 +3538,8 @@
       <Field Name="DataDiagnosticInfos" DataType="i=25" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=613" BrowseName="QueryFirstRequest">
+  <UADataType NodeId="i=613" BrowseName="QueryFirstRequest" Purpose="ServicesOnly">
     <DisplayName>QueryFirstRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3677,9 +3552,8 @@
       <Field Name="MaxReferencesToReturn" DataType="i=289" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=616" BrowseName="QueryFirstResponse">
+  <UADataType NodeId="i=616" BrowseName="QueryFirstResponse" Purpose="ServicesOnly">
     <DisplayName>QueryFirstResponse</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3692,9 +3566,8 @@
       <Field Name="FilterResult" DataType="i=607" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=619" BrowseName="QueryNextRequest">
+  <UADataType NodeId="i=619" BrowseName="QueryNextRequest" Purpose="ServicesOnly">
     <DisplayName>QueryNextRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3704,9 +3577,8 @@
       <Field Name="ContinuationPoint" DataType="i=521" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=622" BrowseName="QueryNextResponse">
+  <UADataType NodeId="i=622" BrowseName="QueryNextResponse" Purpose="ServicesOnly">
     <DisplayName>QueryNextResponse</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3716,9 +3588,8 @@
       <Field Name="RevisedContinuationPoint" DataType="i=521" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=625" BrowseName="TimestampsToReturn">
+  <UADataType NodeId="i=625" BrowseName="TimestampsToReturn" Purpose="ServicesOnly">
     <DisplayName>TimestampsToReturn</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=7606</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -3768,9 +3639,8 @@
       </ListOfLocalizedText>
     </Value>
   </UAVariable>
-  <UADataType NodeId="i=626" BrowseName="ReadValueId">
+  <UADataType NodeId="i=626" BrowseName="ReadValueId" Purpose="ServicesOnly">
     <DisplayName>ReadValueId</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3781,9 +3651,8 @@
       <Field Name="DataEncoding" DataType="i=20" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=629" BrowseName="ReadRequest">
+  <UADataType NodeId="i=629" BrowseName="ReadRequest" Purpose="ServicesOnly">
     <DisplayName>ReadRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3794,9 +3663,8 @@
       <Field Name="NodesToRead" DataType="i=626" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=632" BrowseName="ReadResponse">
+  <UADataType NodeId="i=632" BrowseName="ReadResponse" Purpose="ServicesOnly">
     <DisplayName>ReadResponse</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3806,9 +3674,8 @@
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=635" BrowseName="HistoryReadValueId">
+  <UADataType NodeId="i=635" BrowseName="HistoryReadValueId" Purpose="ServicesOnly">
     <DisplayName>HistoryReadValueId</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3819,9 +3686,8 @@
       <Field Name="ContinuationPoint" DataType="i=15" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=638" BrowseName="HistoryReadResult">
+  <UADataType NodeId="i=638" BrowseName="HistoryReadResult" Purpose="ServicesOnly">
     <DisplayName>HistoryReadResult</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3833,14 +3699,12 @@
   </UADataType>
   <UADataType NodeId="i=641" BrowseName="HistoryReadDetails">
     <DisplayName>HistoryReadDetails</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
-  <UADataType NodeId="i=644" BrowseName="ReadEventDetails">
+  <UADataType NodeId="i=644" BrowseName="ReadEventDetails" Purpose="ServicesOnly">
     <DisplayName>ReadEventDetails</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=641</Reference>
     </References>
@@ -3851,9 +3715,8 @@
       <Field Name="Filter" DataType="i=725" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=647" BrowseName="ReadRawModifiedDetails">
+  <UADataType NodeId="i=647" BrowseName="ReadRawModifiedDetails" Purpose="ServicesOnly">
     <DisplayName>ReadRawModifiedDetails</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=641</Reference>
     </References>
@@ -3865,9 +3728,8 @@
       <Field Name="ReturnBounds" DataType="i=1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=650" BrowseName="ReadProcessedDetails">
+  <UADataType NodeId="i=650" BrowseName="ReadProcessedDetails" Purpose="ServicesOnly">
     <DisplayName>ReadProcessedDetails</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=641</Reference>
     </References>
@@ -3879,9 +3741,8 @@
       <Field Name="AggregateConfiguration" DataType="i=948" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=653" BrowseName="ReadAtTimeDetails">
+  <UADataType NodeId="i=653" BrowseName="ReadAtTimeDetails" Purpose="ServicesOnly">
     <DisplayName>ReadAtTimeDetails</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=641</Reference>
     </References>
@@ -3890,9 +3751,8 @@
       <Field Name="UseSimpleBounds" DataType="i=1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=656" BrowseName="HistoryData">
+  <UADataType NodeId="i=656" BrowseName="HistoryData" Purpose="ServicesOnly">
     <DisplayName>HistoryData</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3900,9 +3760,8 @@
       <Field Name="DataValues" DataType="i=23" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=11216" BrowseName="ModificationInfo">
+  <UADataType NodeId="i=11216" BrowseName="ModificationInfo" Purpose="ServicesOnly">
     <DisplayName>ModificationInfo</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3912,9 +3771,8 @@
       <Field Name="UserName" DataType="i=12" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=11217" BrowseName="HistoryModifiedData">
+  <UADataType NodeId="i=11217" BrowseName="HistoryModifiedData" Purpose="ServicesOnly">
     <DisplayName>HistoryModifiedData</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=656</Reference>
     </References>
@@ -3924,7 +3782,6 @@
   </UADataType>
   <UADataType NodeId="i=659" BrowseName="HistoryEvent">
     <DisplayName>HistoryEvent</DisplayName>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3932,9 +3789,8 @@
       <Field Name="Events" DataType="i=920" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=662" BrowseName="HistoryReadRequest">
+  <UADataType NodeId="i=662" BrowseName="HistoryReadRequest" Purpose="ServicesOnly">
     <DisplayName>HistoryReadRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3946,9 +3802,8 @@
       <Field Name="NodesToRead" DataType="i=635" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=665" BrowseName="HistoryReadResponse">
+  <UADataType NodeId="i=665" BrowseName="HistoryReadResponse" Purpose="ServicesOnly">
     <DisplayName>HistoryReadResponse</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3958,9 +3813,8 @@
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=668" BrowseName="WriteValue">
+  <UADataType NodeId="i=668" BrowseName="WriteValue" Purpose="ServicesOnly">
     <DisplayName>WriteValue</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3971,9 +3825,8 @@
       <Field Name="Value" DataType="i=23" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=671" BrowseName="WriteRequest">
+  <UADataType NodeId="i=671" BrowseName="WriteRequest" Purpose="ServicesOnly">
     <DisplayName>WriteRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3982,9 +3835,8 @@
       <Field Name="NodesToWrite" DataType="i=668" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=674" BrowseName="WriteResponse">
+  <UADataType NodeId="i=674" BrowseName="WriteResponse" Purpose="ServicesOnly">
     <DisplayName>WriteResponse</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -3994,9 +3846,8 @@
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=677" BrowseName="HistoryUpdateDetails">
+  <UADataType NodeId="i=677" BrowseName="HistoryUpdateDetails" Purpose="ServicesOnly">
     <DisplayName>HistoryUpdateDetails</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4006,7 +3857,6 @@
   </UADataType>
   <UADataType NodeId="i=11234" BrowseName="HistoryUpdateType">
     <DisplayName>HistoryUpdateType</DisplayName>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=11884</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -4096,7 +3946,6 @@
   </UAVariable>
   <UADataType NodeId="i=11293" BrowseName="PerformUpdateType">
     <DisplayName>PerformUpdateType</DisplayName>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=11885</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -4184,9 +4033,8 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UADataType NodeId="i=680" BrowseName="UpdateDataDetails">
+  <UADataType NodeId="i=680" BrowseName="UpdateDataDetails" Purpose="ServicesOnly">
     <DisplayName>UpdateDataDetails</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=677</Reference>
     </References>
@@ -4195,9 +4043,8 @@
       <Field Name="UpdateValues" DataType="i=23" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=11295" BrowseName="UpdateStructureDataDetails">
+  <UADataType NodeId="i=11295" BrowseName="UpdateStructureDataDetails" Purpose="ServicesOnly">
     <DisplayName>UpdateStructureDataDetails</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=677</Reference>
     </References>
@@ -4206,9 +4053,8 @@
       <Field Name="UpdateValues" DataType="i=23" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=683" BrowseName="UpdateEventDetails">
+  <UADataType NodeId="i=683" BrowseName="UpdateEventDetails" Purpose="ServicesOnly">
     <DisplayName>UpdateEventDetails</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=677</Reference>
     </References>
@@ -4218,9 +4064,8 @@
       <Field Name="EventData" DataType="i=920" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=686" BrowseName="DeleteRawModifiedDetails">
+  <UADataType NodeId="i=686" BrowseName="DeleteRawModifiedDetails" Purpose="ServicesOnly">
     <DisplayName>DeleteRawModifiedDetails</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=677</Reference>
     </References>
@@ -4230,9 +4075,8 @@
       <Field Name="EndTime" DataType="i=294" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=689" BrowseName="DeleteAtTimeDetails">
+  <UADataType NodeId="i=689" BrowseName="DeleteAtTimeDetails" Purpose="ServicesOnly">
     <DisplayName>DeleteAtTimeDetails</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=677</Reference>
     </References>
@@ -4240,9 +4084,8 @@
       <Field Name="ReqTimes" DataType="i=294" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=692" BrowseName="DeleteEventDetails">
+  <UADataType NodeId="i=692" BrowseName="DeleteEventDetails" Purpose="ServicesOnly">
     <DisplayName>DeleteEventDetails</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=677</Reference>
     </References>
@@ -4250,9 +4093,8 @@
       <Field Name="EventIds" DataType="i=15" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=695" BrowseName="HistoryUpdateResult">
+  <UADataType NodeId="i=695" BrowseName="HistoryUpdateResult" Purpose="ServicesOnly">
     <DisplayName>HistoryUpdateResult</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4262,9 +4104,8 @@
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=698" BrowseName="HistoryUpdateRequest">
+  <UADataType NodeId="i=698" BrowseName="HistoryUpdateRequest" Purpose="ServicesOnly">
     <DisplayName>HistoryUpdateRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4273,9 +4114,8 @@
       <Field Name="HistoryUpdateDetails" DataType="i=22" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=701" BrowseName="HistoryUpdateResponse">
+  <UADataType NodeId="i=701" BrowseName="HistoryUpdateResponse" Purpose="ServicesOnly">
     <DisplayName>HistoryUpdateResponse</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4285,9 +4125,8 @@
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=704" BrowseName="CallMethodRequest">
+  <UADataType NodeId="i=704" BrowseName="CallMethodRequest" Purpose="ServicesOnly">
     <DisplayName>CallMethodRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4297,9 +4136,8 @@
       <Field Name="InputArguments" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=707" BrowseName="CallMethodResult">
+  <UADataType NodeId="i=707" BrowseName="CallMethodResult" Purpose="ServicesOnly">
     <DisplayName>CallMethodResult</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4310,9 +4148,8 @@
       <Field Name="OutputArguments" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=710" BrowseName="CallRequest">
+  <UADataType NodeId="i=710" BrowseName="CallRequest" Purpose="ServicesOnly">
     <DisplayName>CallRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4321,9 +4158,8 @@
       <Field Name="MethodsToCall" DataType="i=704" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=713" BrowseName="CallResponse">
+  <UADataType NodeId="i=713" BrowseName="CallResponse" Purpose="ServicesOnly">
     <DisplayName>CallResponse</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4333,9 +4169,8 @@
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=716" BrowseName="MonitoringMode">
+  <UADataType NodeId="i=716" BrowseName="MonitoringMode" Purpose="ServicesOnly">
     <DisplayName>MonitoringMode</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=7608</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -4373,9 +4208,8 @@
       </ListOfLocalizedText>
     </Value>
   </UAVariable>
-  <UADataType NodeId="i=717" BrowseName="DataChangeTrigger">
+  <UADataType NodeId="i=717" BrowseName="DataChangeTrigger" Purpose="ServicesOnly">
     <DisplayName>DataChangeTrigger</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=7609</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -4413,9 +4247,8 @@
       </ListOfLocalizedText>
     </Value>
   </UAVariable>
-  <UADataType NodeId="i=718" BrowseName="DeadbandType">
+  <UADataType NodeId="i=718" BrowseName="DeadbandType" Purpose="ServicesOnly">
     <DisplayName>DeadbandType</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=7610</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -4455,14 +4288,12 @@
   </UAVariable>
   <UADataType NodeId="i=719" BrowseName="MonitoringFilter">
     <DisplayName>MonitoringFilter</DisplayName>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
-  <UADataType NodeId="i=722" BrowseName="DataChangeFilter">
+  <UADataType NodeId="i=722" BrowseName="DataChangeFilter" Purpose="ServicesOnly">
     <DisplayName>DataChangeFilter</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=719</Reference>
     </References>
@@ -4474,7 +4305,6 @@
   </UADataType>
   <UADataType NodeId="i=725" BrowseName="EventFilter">
     <DisplayName>EventFilter</DisplayName>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=719</Reference>
     </References>
@@ -4485,7 +4315,6 @@
   </UADataType>
   <UADataType NodeId="i=948" BrowseName="AggregateConfiguration">
     <DisplayName>AggregateConfiguration</DisplayName>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4497,9 +4326,8 @@
       <Field Name="UseSlopedExtrapolation" DataType="i=1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=728" BrowseName="AggregateFilter">
+  <UADataType NodeId="i=728" BrowseName="AggregateFilter" Purpose="ServicesOnly">
     <DisplayName>AggregateFilter</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=719</Reference>
     </References>
@@ -4512,14 +4340,12 @@
   </UADataType>
   <UADataType NodeId="i=731" BrowseName="MonitoringFilterResult">
     <DisplayName>MonitoringFilterResult</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
-  <UADataType NodeId="i=734" BrowseName="EventFilterResult">
+  <UADataType NodeId="i=734" BrowseName="EventFilterResult" Purpose="ServicesOnly">
     <DisplayName>EventFilterResult</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=731</Reference>
     </References>
@@ -4529,9 +4355,8 @@
       <Field Name="WhereClauseResult" DataType="i=607" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=737" BrowseName="AggregateFilterResult">
+  <UADataType NodeId="i=737" BrowseName="AggregateFilterResult" Purpose="ServicesOnly">
     <DisplayName>AggregateFilterResult</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=731</Reference>
     </References>
@@ -4541,9 +4366,8 @@
       <Field Name="RevisedAggregateConfiguration" DataType="i=948" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=740" BrowseName="MonitoringParameters">
+  <UADataType NodeId="i=740" BrowseName="MonitoringParameters" Purpose="ServicesOnly">
     <DisplayName>MonitoringParameters</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4555,9 +4379,8 @@
       <Field Name="DiscardOldest" DataType="i=1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=743" BrowseName="MonitoredItemCreateRequest">
+  <UADataType NodeId="i=743" BrowseName="MonitoredItemCreateRequest" Purpose="ServicesOnly">
     <DisplayName>MonitoredItemCreateRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4567,9 +4390,8 @@
       <Field Name="RequestedParameters" DataType="i=740" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=746" BrowseName="MonitoredItemCreateResult">
+  <UADataType NodeId="i=746" BrowseName="MonitoredItemCreateResult" Purpose="ServicesOnly">
     <DisplayName>MonitoredItemCreateResult</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4581,9 +4403,8 @@
       <Field Name="FilterResult" DataType="i=22" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=749" BrowseName="CreateMonitoredItemsRequest">
+  <UADataType NodeId="i=749" BrowseName="CreateMonitoredItemsRequest" Purpose="ServicesOnly">
     <DisplayName>CreateMonitoredItemsRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4594,9 +4415,8 @@
       <Field Name="ItemsToCreate" DataType="i=743" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=752" BrowseName="CreateMonitoredItemsResponse">
+  <UADataType NodeId="i=752" BrowseName="CreateMonitoredItemsResponse" Purpose="ServicesOnly">
     <DisplayName>CreateMonitoredItemsResponse</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4606,9 +4426,8 @@
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=755" BrowseName="MonitoredItemModifyRequest">
+  <UADataType NodeId="i=755" BrowseName="MonitoredItemModifyRequest" Purpose="ServicesOnly">
     <DisplayName>MonitoredItemModifyRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4617,9 +4436,8 @@
       <Field Name="RequestedParameters" DataType="i=740" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=758" BrowseName="MonitoredItemModifyResult">
+  <UADataType NodeId="i=758" BrowseName="MonitoredItemModifyResult" Purpose="ServicesOnly">
     <DisplayName>MonitoredItemModifyResult</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4630,9 +4448,8 @@
       <Field Name="FilterResult" DataType="i=22" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=761" BrowseName="ModifyMonitoredItemsRequest">
+  <UADataType NodeId="i=761" BrowseName="ModifyMonitoredItemsRequest" Purpose="ServicesOnly">
     <DisplayName>ModifyMonitoredItemsRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4643,9 +4460,8 @@
       <Field Name="ItemsToModify" DataType="i=755" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=764" BrowseName="ModifyMonitoredItemsResponse">
+  <UADataType NodeId="i=764" BrowseName="ModifyMonitoredItemsResponse" Purpose="ServicesOnly">
     <DisplayName>ModifyMonitoredItemsResponse</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4655,9 +4471,8 @@
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=767" BrowseName="SetMonitoringModeRequest">
+  <UADataType NodeId="i=767" BrowseName="SetMonitoringModeRequest" Purpose="ServicesOnly">
     <DisplayName>SetMonitoringModeRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4668,9 +4483,8 @@
       <Field Name="MonitoredItemIds" DataType="i=288" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=770" BrowseName="SetMonitoringModeResponse">
+  <UADataType NodeId="i=770" BrowseName="SetMonitoringModeResponse" Purpose="ServicesOnly">
     <DisplayName>SetMonitoringModeResponse</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4680,9 +4494,8 @@
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=773" BrowseName="SetTriggeringRequest">
+  <UADataType NodeId="i=773" BrowseName="SetTriggeringRequest" Purpose="ServicesOnly">
     <DisplayName>SetTriggeringRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4694,9 +4507,8 @@
       <Field Name="LinksToRemove" DataType="i=288" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=776" BrowseName="SetTriggeringResponse">
+  <UADataType NodeId="i=776" BrowseName="SetTriggeringResponse" Purpose="ServicesOnly">
     <DisplayName>SetTriggeringResponse</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4708,9 +4520,8 @@
       <Field Name="RemoveDiagnosticInfos" DataType="i=25" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=779" BrowseName="DeleteMonitoredItemsRequest">
+  <UADataType NodeId="i=779" BrowseName="DeleteMonitoredItemsRequest" Purpose="ServicesOnly">
     <DisplayName>DeleteMonitoredItemsRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4720,9 +4531,8 @@
       <Field Name="MonitoredItemIds" DataType="i=288" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=782" BrowseName="DeleteMonitoredItemsResponse">
+  <UADataType NodeId="i=782" BrowseName="DeleteMonitoredItemsResponse" Purpose="ServicesOnly">
     <DisplayName>DeleteMonitoredItemsResponse</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4732,9 +4542,8 @@
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=785" BrowseName="CreateSubscriptionRequest">
+  <UADataType NodeId="i=785" BrowseName="CreateSubscriptionRequest" Purpose="ServicesOnly">
     <DisplayName>CreateSubscriptionRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4748,9 +4557,8 @@
       <Field Name="Priority" DataType="i=3" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=788" BrowseName="CreateSubscriptionResponse">
+  <UADataType NodeId="i=788" BrowseName="CreateSubscriptionResponse" Purpose="ServicesOnly">
     <DisplayName>CreateSubscriptionResponse</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4762,9 +4570,8 @@
       <Field Name="RevisedMaxKeepAliveCount" DataType="i=289" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=791" BrowseName="ModifySubscriptionRequest">
+  <UADataType NodeId="i=791" BrowseName="ModifySubscriptionRequest" Purpose="ServicesOnly">
     <DisplayName>ModifySubscriptionRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4778,9 +4585,8 @@
       <Field Name="Priority" DataType="i=3" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=794" BrowseName="ModifySubscriptionResponse">
+  <UADataType NodeId="i=794" BrowseName="ModifySubscriptionResponse" Purpose="ServicesOnly">
     <DisplayName>ModifySubscriptionResponse</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4791,9 +4597,8 @@
       <Field Name="RevisedMaxKeepAliveCount" DataType="i=289" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=797" BrowseName="SetPublishingModeRequest">
+  <UADataType NodeId="i=797" BrowseName="SetPublishingModeRequest" Purpose="ServicesOnly">
     <DisplayName>SetPublishingModeRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4803,9 +4608,8 @@
       <Field Name="SubscriptionIds" DataType="i=288" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=800" BrowseName="SetPublishingModeResponse">
+  <UADataType NodeId="i=800" BrowseName="SetPublishingModeResponse" Purpose="ServicesOnly">
     <DisplayName>SetPublishingModeResponse</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4815,9 +4619,8 @@
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=803" BrowseName="NotificationMessage">
+  <UADataType NodeId="i=803" BrowseName="NotificationMessage" Purpose="ServicesOnly">
     <DisplayName>NotificationMessage</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4829,14 +4632,12 @@
   </UADataType>
   <UADataType NodeId="i=945" BrowseName="NotificationData">
     <DisplayName>NotificationData</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
-  <UADataType NodeId="i=809" BrowseName="DataChangeNotification">
+  <UADataType NodeId="i=809" BrowseName="DataChangeNotification" Purpose="ServicesOnly">
     <DisplayName>DataChangeNotification</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=945</Reference>
     </References>
@@ -4845,9 +4646,8 @@
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=806" BrowseName="MonitoredItemNotification">
+  <UADataType NodeId="i=806" BrowseName="MonitoredItemNotification" Purpose="ServicesOnly">
     <DisplayName>MonitoredItemNotification</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4856,9 +4656,8 @@
       <Field Name="Value" DataType="i=23" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=914" BrowseName="EventNotificationList">
+  <UADataType NodeId="i=914" BrowseName="EventNotificationList" Purpose="ServicesOnly">
     <DisplayName>EventNotificationList</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=945</Reference>
     </References>
@@ -4866,9 +4665,8 @@
       <Field Name="Events" DataType="i=917" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=917" BrowseName="EventFieldList">
+  <UADataType NodeId="i=917" BrowseName="EventFieldList" Purpose="ServicesOnly">
     <DisplayName>EventFieldList</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4879,7 +4677,6 @@
   </UADataType>
   <UADataType NodeId="i=920" BrowseName="HistoryEventFieldList">
     <DisplayName>HistoryEventFieldList</DisplayName>
-    <Category>Part4</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4887,9 +4684,8 @@
       <Field Name="EventFields" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=818" BrowseName="StatusChangeNotification">
+  <UADataType NodeId="i=818" BrowseName="StatusChangeNotification" Purpose="ServicesOnly">
     <DisplayName>StatusChangeNotification</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=945</Reference>
     </References>
@@ -4898,9 +4694,8 @@
       <Field Name="DiagnosticInfo" DataType="i=25" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=821" BrowseName="SubscriptionAcknowledgement">
+  <UADataType NodeId="i=821" BrowseName="SubscriptionAcknowledgement" Purpose="ServicesOnly">
     <DisplayName>SubscriptionAcknowledgement</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4909,9 +4704,8 @@
       <Field Name="SequenceNumber" DataType="i=289" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=824" BrowseName="PublishRequest">
+  <UADataType NodeId="i=824" BrowseName="PublishRequest" Purpose="ServicesOnly">
     <DisplayName>PublishRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4920,9 +4714,8 @@
       <Field Name="SubscriptionAcknowledgements" DataType="i=821" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=827" BrowseName="PublishResponse">
+  <UADataType NodeId="i=827" BrowseName="PublishResponse" Purpose="ServicesOnly">
     <DisplayName>PublishResponse</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4936,9 +4729,8 @@
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=830" BrowseName="RepublishRequest">
+  <UADataType NodeId="i=830" BrowseName="RepublishRequest" Purpose="ServicesOnly">
     <DisplayName>RepublishRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4948,9 +4740,8 @@
       <Field Name="RetransmitSequenceNumber" DataType="i=289" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=833" BrowseName="RepublishResponse">
+  <UADataType NodeId="i=833" BrowseName="RepublishResponse" Purpose="ServicesOnly">
     <DisplayName>RepublishResponse</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4959,9 +4750,8 @@
       <Field Name="NotificationMessage" DataType="i=803" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=836" BrowseName="TransferResult">
+  <UADataType NodeId="i=836" BrowseName="TransferResult" Purpose="ServicesOnly">
     <DisplayName>TransferResult</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4970,9 +4760,8 @@
       <Field Name="AvailableSequenceNumbers" DataType="i=289" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=839" BrowseName="TransferSubscriptionsRequest">
+  <UADataType NodeId="i=839" BrowseName="TransferSubscriptionsRequest" Purpose="ServicesOnly">
     <DisplayName>TransferSubscriptionsRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4982,9 +4771,8 @@
       <Field Name="SendInitialValues" DataType="i=1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=842" BrowseName="TransferSubscriptionsResponse">
+  <UADataType NodeId="i=842" BrowseName="TransferSubscriptionsResponse" Purpose="ServicesOnly">
     <DisplayName>TransferSubscriptionsResponse</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -4994,9 +4782,8 @@
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=845" BrowseName="DeleteSubscriptionsRequest">
+  <UADataType NodeId="i=845" BrowseName="DeleteSubscriptionsRequest" Purpose="ServicesOnly">
     <DisplayName>DeleteSubscriptionsRequest</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -5005,9 +4792,8 @@
       <Field Name="SubscriptionIds" DataType="i=288" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=848" BrowseName="DeleteSubscriptionsResponse">
+  <UADataType NodeId="i=848" BrowseName="DeleteSubscriptionsResponse" Purpose="ServicesOnly">
     <DisplayName>DeleteSubscriptionsResponse</DisplayName>
-    <Category>Part4/Services</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>

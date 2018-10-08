@@ -496,6 +496,7 @@
     <opc:Field Name="Priority" TypeName="opc:Byte" />
     <opc:Field Name="NoOfLocaleIds" TypeName="opc:Int32" />
     <opc:Field Name="LocaleIds" TypeName="opc:String" LengthField="NoOfLocaleIds" />
+    <opc:Field Name="HeaderLayoutUri" TypeName="opc:String" />
     <opc:Field Name="TransportSettings" TypeName="ua:ExtensionObject" />
     <opc:Field Name="MessageSettings" TypeName="ua:ExtensionObject" />
     <opc:Field Name="NoOfDataSetWriters" TypeName="opc:Int32" />
@@ -566,6 +567,8 @@
     <opc:Field Name="DataSetMetaData" TypeName="tns:DataSetMetaDataType" />
     <opc:Field Name="DataSetFieldContentMask" TypeName="tns:DataSetFieldContentMask" />
     <opc:Field Name="MessageReceiveTimeout" TypeName="opc:Double" />
+    <opc:Field Name="KeyFrameCount" TypeName="opc:UInt32" />
+    <opc:Field Name="HeaderLayoutUri" TypeName="opc:String" />
     <opc:Field Name="SecurityMode" TypeName="tns:MessageSecurityMode" />
     <opc:Field Name="SecurityGroupId" TypeName="opc:String" />
     <opc:Field Name="NoOfSecurityKeyServices" TypeName="opc:Int32" />
@@ -1522,9 +1525,6 @@
   </opc:StructuredType>
 
   <opc:OpaqueType Name="RsaEncryptedSecret">
-  </opc:OpaqueType>
-
-  <opc:OpaqueType Name="EccEncryptedSecret">
   </opc:OpaqueType>
 
   <opc:StructuredType Name="ActivateSessionRequest" BaseType="ua:ExtensionObject">

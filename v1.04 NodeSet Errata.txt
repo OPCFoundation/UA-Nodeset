@@ -35,4 +35,8 @@
 0004372: RoleType method argument names are wrong
 0004345: Encoding node for GenericAttributeValue missing
 0004318: Generated 1.04 resources contains references to types not in the specification
+0004408: DataSetReader is missing the KeyFrameCount
+0004407: We need a header layout setting in PubSub communication parameters
+0004395: DataSetReaderType::MessageReceiveTimeout has wrong DataType in Nodeset
+
 
