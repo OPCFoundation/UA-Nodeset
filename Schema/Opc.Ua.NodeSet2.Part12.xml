@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-07-31T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-09-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2018-07-31T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2018-09-15T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -71,7 +71,6 @@
   </Aliases>
   <UAObjectType NodeId="i=12522" BrowseName="TrustListType">
     <DisplayName>TrustListType</DisplayName>
-    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=12542</Reference>
       <Reference ReferenceType="HasComponent">i=12543</Reference>
@@ -325,7 +324,6 @@
   </UAVariable>
   <UADataType NodeId="i=12552" BrowseName="TrustListMasks">
     <DisplayName>TrustListMasks</DisplayName>
-    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=12553</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -449,7 +447,6 @@
   </UAVariable>
   <UADataType NodeId="i=12554" BrowseName="TrustListDataType">
     <DisplayName>TrustListDataType</DisplayName>
-    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -463,7 +460,6 @@
   </UADataType>
   <UAObjectType NodeId="i=12555" BrowseName="CertificateGroupType">
     <DisplayName>CertificateGroupType</DisplayName>
-    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasComponent">i=13599</Reference>
       <Reference ReferenceType="HasProperty">i=13631</Reference>
@@ -960,7 +956,6 @@
   </UAVariable>
   <UAObjectType NodeId="i=13813" BrowseName="CertificateGroupFolderType">
     <DisplayName>CertificateGroupFolderType</DisplayName>
-    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasComponent">i=13814</Reference>
       <Reference ReferenceType="HasComponent">i=13848</Reference>
@@ -2963,56 +2958,48 @@
   </UAVariable>
   <UAObjectType NodeId="i=12556" BrowseName="CertificateType" IsAbstract="true">
     <DisplayName>CertificateType</DisplayName>
-    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=12557" BrowseName="ApplicationCertificateType" IsAbstract="true">
     <DisplayName>ApplicationCertificateType</DisplayName>
-    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12556</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=12558" BrowseName="HttpsCertificateType">
     <DisplayName>HttpsCertificateType</DisplayName>
-    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12556</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=15181" BrowseName="UserCredentialCertificateType">
     <DisplayName>UserCredentialCertificateType</DisplayName>
-    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12556</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=12559" BrowseName="RsaMinApplicationCertificateType">
     <DisplayName>RsaMinApplicationCertificateType</DisplayName>
-    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12557</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=12560" BrowseName="RsaSha256ApplicationCertificateType">
     <DisplayName>RsaSha256ApplicationCertificateType</DisplayName>
-    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12557</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=12561" BrowseName="TrustListUpdatedAuditEventType" IsAbstract="true">
     <DisplayName>TrustListUpdatedAuditEventType</DisplayName>
-    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2127</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=12581" BrowseName="ServerConfigurationType">
     <DisplayName>ServerConfigurationType</DisplayName>
-    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasComponent">i=13950</Reference>
       <Reference ReferenceType="HasProperty">i=12708</Reference>
@@ -3884,7 +3871,6 @@
   </UAVariable>
   <UAObjectType NodeId="i=12620" BrowseName="CertificateUpdatedAuditEventType" IsAbstract="true">
     <DisplayName>CertificateUpdatedAuditEventType</DisplayName>
-    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=13735</Reference>
       <Reference ReferenceType="HasProperty">i=13736</Reference>
@@ -3909,7 +3895,6 @@
   </UAVariable>
   <UAObjectType NodeId="i=17496" BrowseName="KeyCredentialConfigurationFolderType">
     <DisplayName>KeyCredentialConfigurationFolderType</DisplayName>
-    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasComponent">i=17511</Reference>
       <Reference ReferenceType="HasComponent">i=17522</Reference>
@@ -4048,7 +4033,6 @@
   </UAObject>
   <UAObjectType NodeId="i=18001" BrowseName="KeyCredentialConfigurationType">
     <DisplayName>KeyCredentialConfigurationType</DisplayName>
-    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=18069</Reference>
       <Reference ReferenceType="HasProperty">i=18165</Reference>
@@ -4282,7 +4266,6 @@
   </UAMethod>
   <UAObjectType NodeId="i=18011" BrowseName="KeyCredentialAuditEventType" IsAbstract="true">
     <DisplayName>KeyCredentialAuditEventType</DisplayName>
-    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=18028</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2127</Reference>
@@ -4298,14 +4281,12 @@
   </UAVariable>
   <UAObjectType NodeId="i=18029" BrowseName="KeyCredentialUpdatedAuditEventType">
     <DisplayName>KeyCredentialUpdatedAuditEventType</DisplayName>
-    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=18011</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=18047" BrowseName="KeyCredentialDeletedAuditEventType">
     <DisplayName>KeyCredentialDeletedAuditEventType</DisplayName>
-    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=18011</Reference>
     </References>
@@ -4319,7 +4300,6 @@
   </UAObject>
   <UAObjectType NodeId="i=17852" BrowseName="AuthorizationServiceConfigurationType">
     <DisplayName>AuthorizationServiceConfigurationType</DisplayName>
-    <Category>Part12</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=18072</Reference>
       <Reference ReferenceType="HasProperty">i=17860</Reference>

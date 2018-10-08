@@ -485,6 +485,302 @@ namespace Opc.Ua
     #endif
     #endregion
 
+    #region AdditionalParametersType Class
+    #if (!OPCUA_EXCLUDE_AdditionalParametersType)
+    /// <summary>
+    /// A description for the AdditionalParametersType DataType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class AdditionalParametersType : IEncodeable
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public AdditionalParametersType()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+            m_parameters = new KeyValuePairCollection();
+        }
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the Parameters field.
+        /// </summary>
+        [DataMember(Name = "Parameters", IsRequired = false, Order = 1)]
+        public KeyValuePairCollection Parameters
+        {
+            get
+            {
+                return m_parameters;
+            }
+
+            set
+            {
+                m_parameters = value;
+
+                if (value == null)
+                {
+                    m_parameters = new KeyValuePairCollection();
+                }
+            }
+        }
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public virtual ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.AdditionalParametersType; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public virtual ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.AdditionalParametersType_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public virtual ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.AdditionalParametersType_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public virtual void Encode(IEncoder encoder)
+        {
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            encoder.WriteEncodeableArray("Parameters", Parameters.ToArray(), typeof(KeyValuePair));
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public virtual void Decode(IDecoder decoder)
+        {
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            Parameters = (KeyValuePairCollection)decoder.ReadEncodeableArray("Parameters", typeof(KeyValuePair));
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public virtual bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            AdditionalParametersType value = encodeable as AdditionalParametersType;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+            if (!Utils.IsEqual(m_parameters, value.m_parameters)) return false;
+
+            return true;
+        }
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public virtual object Clone()
+        {
+            return (AdditionalParametersType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            AdditionalParametersType clone = (AdditionalParametersType)base.MemberwiseClone();
+
+            clone.m_parameters = (KeyValuePairCollection)Utils.Clone(this.m_parameters);
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        private KeyValuePairCollection m_parameters;
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region EphemeralKeyType Class
+    #if (!OPCUA_EXCLUDE_EphemeralKeyType)
+    /// <summary>
+    /// A description for the EphemeralKeyType DataType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class EphemeralKeyType : IEncodeable
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public EphemeralKeyType()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+            m_publicKey = null;
+            m_signature = null;
+        }
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// A description for the PublicKey field.
+        /// </summary>
+        [DataMember(Name = "PublicKey", IsRequired = false, Order = 1)]
+        public byte[] PublicKey
+        {
+            get { return m_publicKey;  }
+            set { m_publicKey = value; }
+        }
+
+        /// <summary>
+        /// A description for the Signature field.
+        /// </summary>
+        [DataMember(Name = "Signature", IsRequired = false, Order = 2)]
+        public byte[] Signature
+        {
+            get { return m_signature;  }
+            set { m_signature = value; }
+        }
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public virtual ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.EphemeralKeyType; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public virtual ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.EphemeralKeyType_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public virtual ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.EphemeralKeyType_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public virtual void Encode(IEncoder encoder)
+        {
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            encoder.WriteByteString("PublicKey", PublicKey);
+            encoder.WriteByteString("Signature", Signature);
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public virtual void Decode(IDecoder decoder)
+        {
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            PublicKey = decoder.ReadByteString("PublicKey");
+            Signature = decoder.ReadByteString("Signature");
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public virtual bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            EphemeralKeyType value = encodeable as EphemeralKeyType;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+            if (!Utils.IsEqual(m_publicKey, value.m_publicKey)) return false;
+            if (!Utils.IsEqual(m_signature, value.m_signature)) return false;
+
+            return true;
+        }
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public virtual object Clone()
+        {
+            return (EphemeralKeyType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            EphemeralKeyType clone = (EphemeralKeyType)base.MemberwiseClone();
+
+            clone.m_publicKey = (byte[])Utils.Clone(this.m_publicKey);
+            clone.m_signature = (byte[])Utils.Clone(this.m_signature);
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        private byte[] m_publicKey;
+        private byte[] m_signature;
+        #endregion
+    }
+    #endif
+    #endregion
+
     #region EndpointType Class
     #if (!OPCUA_EXCLUDE_EndpointType)
     /// <summary>
@@ -7066,6 +7362,7 @@ namespace Opc.Ua
             m_keepAliveTime = (double)0;
             m_priority = (byte)0;
             m_localeIds = new StringCollection();
+            m_headerLayoutUri = null;
             m_transportSettings = null;
             m_messageSettings = null;
             m_dataSetWriters = new DataSetWriterDataTypeCollection();
@@ -7136,9 +7433,19 @@ namespace Opc.Ua
         }
 
         /// <summary>
+        /// A description for the HeaderLayoutUri field.
+        /// </summary>
+        [DataMember(Name = "HeaderLayoutUri", IsRequired = false, Order = 6)]
+        public string HeaderLayoutUri
+        {
+            get { return m_headerLayoutUri;  }
+            set { m_headerLayoutUri = value; }
+        }
+
+        /// <summary>
         /// A description for the TransportSettings field.
         /// </summary>
-        [DataMember(Name = "TransportSettings", IsRequired = false, Order = 6)]
+        [DataMember(Name = "TransportSettings", IsRequired = false, Order = 7)]
         public ExtensionObject TransportSettings
         {
             get { return m_transportSettings;  }
@@ -7148,7 +7455,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the MessageSettings field.
         /// </summary>
-        [DataMember(Name = "MessageSettings", IsRequired = false, Order = 7)]
+        [DataMember(Name = "MessageSettings", IsRequired = false, Order = 8)]
         public ExtensionObject MessageSettings
         {
             get { return m_messageSettings;  }
@@ -7158,7 +7465,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the DataSetWriters field.
         /// </summary>
-        [DataMember(Name = "DataSetWriters", IsRequired = false, Order = 8)]
+        [DataMember(Name = "DataSetWriters", IsRequired = false, Order = 9)]
         public DataSetWriterDataTypeCollection DataSetWriters
         {
             get
@@ -7209,6 +7516,7 @@ namespace Opc.Ua
             encoder.WriteDouble("KeepAliveTime", KeepAliveTime);
             encoder.WriteByte("Priority", Priority);
             encoder.WriteStringArray("LocaleIds", LocaleIds);
+            encoder.WriteString("HeaderLayoutUri", HeaderLayoutUri);
             encoder.WriteExtensionObject("TransportSettings", TransportSettings);
             encoder.WriteExtensionObject("MessageSettings", MessageSettings);
             encoder.WriteEncodeableArray("DataSetWriters", DataSetWriters.ToArray(), typeof(DataSetWriterDataType));
@@ -7228,6 +7536,7 @@ namespace Opc.Ua
             KeepAliveTime = decoder.ReadDouble("KeepAliveTime");
             Priority = decoder.ReadByte("Priority");
             LocaleIds = decoder.ReadStringArray("LocaleIds");
+            HeaderLayoutUri = decoder.ReadString("HeaderLayoutUri");
             TransportSettings = decoder.ReadExtensionObject("TransportSettings");
             MessageSettings = decoder.ReadExtensionObject("MessageSettings");
             DataSetWriters = (DataSetWriterDataTypeCollection)decoder.ReadEncodeableArray("DataSetWriters", typeof(DataSetWriterDataType));
@@ -7256,6 +7565,7 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_keepAliveTime, value.m_keepAliveTime)) return false;
             if (!Utils.IsEqual(m_priority, value.m_priority)) return false;
             if (!Utils.IsEqual(m_localeIds, value.m_localeIds)) return false;
+            if (!Utils.IsEqual(m_headerLayoutUri, value.m_headerLayoutUri)) return false;
             if (!Utils.IsEqual(m_transportSettings, value.m_transportSettings)) return false;
             if (!Utils.IsEqual(m_messageSettings, value.m_messageSettings)) return false;
             if (!Utils.IsEqual(m_dataSetWriters, value.m_dataSetWriters)) return false;
@@ -7281,6 +7591,7 @@ namespace Opc.Ua
             clone.m_keepAliveTime = (double)Utils.Clone(this.m_keepAliveTime);
             clone.m_priority = (byte)Utils.Clone(this.m_priority);
             clone.m_localeIds = (StringCollection)Utils.Clone(this.m_localeIds);
+            clone.m_headerLayoutUri = (string)Utils.Clone(this.m_headerLayoutUri);
             clone.m_transportSettings = (ExtensionObject)Utils.Clone(this.m_transportSettings);
             clone.m_messageSettings = (ExtensionObject)Utils.Clone(this.m_messageSettings);
             clone.m_dataSetWriters = (DataSetWriterDataTypeCollection)Utils.Clone(this.m_dataSetWriters);
@@ -7295,6 +7606,7 @@ namespace Opc.Ua
         private double m_keepAliveTime;
         private byte m_priority;
         private StringCollection m_localeIds;
+        private string m_headerLayoutUri;
         private ExtensionObject m_transportSettings;
         private ExtensionObject m_messageSettings;
         private DataSetWriterDataTypeCollection m_dataSetWriters;
@@ -9543,6 +9855,8 @@ namespace Opc.Ua
             m_dataSetMetaData = new DataSetMetaDataType();
             m_dataSetFieldContentMask = 0;
             m_messageReceiveTimeout = (double)0;
+            m_keyFrameCount = (uint)0;
+            m_headerLayoutUri = null;
             m_securityMode = MessageSecurityMode.Invalid;
             m_securityGroupId = null;
             m_securityKeyServices = new EndpointDescriptionCollection();
@@ -9647,9 +9961,29 @@ namespace Opc.Ua
         }
 
         /// <summary>
+        /// A description for the KeyFrameCount field.
+        /// </summary>
+        [DataMember(Name = "KeyFrameCount", IsRequired = false, Order = 9)]
+        public uint KeyFrameCount
+        {
+            get { return m_keyFrameCount;  }
+            set { m_keyFrameCount = value; }
+        }
+
+        /// <summary>
+        /// A description for the HeaderLayoutUri field.
+        /// </summary>
+        [DataMember(Name = "HeaderLayoutUri", IsRequired = false, Order = 10)]
+        public string HeaderLayoutUri
+        {
+            get { return m_headerLayoutUri;  }
+            set { m_headerLayoutUri = value; }
+        }
+
+        /// <summary>
         /// A description for the SecurityMode field.
         /// </summary>
-        [DataMember(Name = "SecurityMode", IsRequired = false, Order = 9)]
+        [DataMember(Name = "SecurityMode", IsRequired = false, Order = 11)]
         public MessageSecurityMode SecurityMode
         {
             get { return m_securityMode;  }
@@ -9659,7 +9993,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the SecurityGroupId field.
         /// </summary>
-        [DataMember(Name = "SecurityGroupId", IsRequired = false, Order = 10)]
+        [DataMember(Name = "SecurityGroupId", IsRequired = false, Order = 12)]
         public string SecurityGroupId
         {
             get { return m_securityGroupId;  }
@@ -9669,7 +10003,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the SecurityKeyServices field.
         /// </summary>
-        [DataMember(Name = "SecurityKeyServices", IsRequired = false, Order = 11)]
+        [DataMember(Name = "SecurityKeyServices", IsRequired = false, Order = 13)]
         public EndpointDescriptionCollection SecurityKeyServices
         {
             get
@@ -9691,7 +10025,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the DataSetReaderProperties field.
         /// </summary>
-        [DataMember(Name = "DataSetReaderProperties", IsRequired = false, Order = 12)]
+        [DataMember(Name = "DataSetReaderProperties", IsRequired = false, Order = 14)]
         public KeyValuePairCollection DataSetReaderProperties
         {
             get
@@ -9713,7 +10047,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the TransportSettings field.
         /// </summary>
-        [DataMember(Name = "TransportSettings", IsRequired = false, Order = 13)]
+        [DataMember(Name = "TransportSettings", IsRequired = false, Order = 15)]
         public ExtensionObject TransportSettings
         {
             get { return m_transportSettings;  }
@@ -9723,7 +10057,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the MessageSettings field.
         /// </summary>
-        [DataMember(Name = "MessageSettings", IsRequired = false, Order = 14)]
+        [DataMember(Name = "MessageSettings", IsRequired = false, Order = 16)]
         public ExtensionObject MessageSettings
         {
             get { return m_messageSettings;  }
@@ -9733,7 +10067,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the SubscribedDataSet field.
         /// </summary>
-        [DataMember(Name = "SubscribedDataSet", IsRequired = false, Order = 15)]
+        [DataMember(Name = "SubscribedDataSet", IsRequired = false, Order = 17)]
         public ExtensionObject SubscribedDataSet
         {
             get { return m_subscribedDataSet;  }
@@ -9773,6 +10107,8 @@ namespace Opc.Ua
             encoder.WriteEncodeable("DataSetMetaData", DataSetMetaData, typeof(DataSetMetaDataType));
             encoder.WriteUInt32("DataSetFieldContentMask", DataSetFieldContentMask);
             encoder.WriteDouble("MessageReceiveTimeout", MessageReceiveTimeout);
+            encoder.WriteUInt32("KeyFrameCount", KeyFrameCount);
+            encoder.WriteString("HeaderLayoutUri", HeaderLayoutUri);
             encoder.WriteEnumerated("SecurityMode", SecurityMode);
             encoder.WriteString("SecurityGroupId", SecurityGroupId);
             encoder.WriteEncodeableArray("SecurityKeyServices", SecurityKeyServices.ToArray(), typeof(EndpointDescription));
@@ -9797,6 +10133,8 @@ namespace Opc.Ua
             DataSetMetaData = (DataSetMetaDataType)decoder.ReadEncodeable("DataSetMetaData", typeof(DataSetMetaDataType));
             DataSetFieldContentMask = decoder.ReadUInt32("DataSetFieldContentMask");
             MessageReceiveTimeout = decoder.ReadDouble("MessageReceiveTimeout");
+            KeyFrameCount = decoder.ReadUInt32("KeyFrameCount");
+            HeaderLayoutUri = decoder.ReadString("HeaderLayoutUri");
             SecurityMode = (MessageSecurityMode)decoder.ReadEnumerated("SecurityMode", typeof(MessageSecurityMode));
             SecurityGroupId = decoder.ReadString("SecurityGroupId");
             SecurityKeyServices = (EndpointDescriptionCollection)decoder.ReadEncodeableArray("SecurityKeyServices", typeof(EndpointDescription));
@@ -9831,6 +10169,8 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_dataSetMetaData, value.m_dataSetMetaData)) return false;
             if (!Utils.IsEqual(m_dataSetFieldContentMask, value.m_dataSetFieldContentMask)) return false;
             if (!Utils.IsEqual(m_messageReceiveTimeout, value.m_messageReceiveTimeout)) return false;
+            if (!Utils.IsEqual(m_keyFrameCount, value.m_keyFrameCount)) return false;
+            if (!Utils.IsEqual(m_headerLayoutUri, value.m_headerLayoutUri)) return false;
             if (!Utils.IsEqual(m_securityMode, value.m_securityMode)) return false;
             if (!Utils.IsEqual(m_securityGroupId, value.m_securityGroupId)) return false;
             if (!Utils.IsEqual(m_securityKeyServices, value.m_securityKeyServices)) return false;
@@ -9863,6 +10203,8 @@ namespace Opc.Ua
             clone.m_dataSetMetaData = (DataSetMetaDataType)Utils.Clone(this.m_dataSetMetaData);
             clone.m_dataSetFieldContentMask = (uint)Utils.Clone(this.m_dataSetFieldContentMask);
             clone.m_messageReceiveTimeout = (double)Utils.Clone(this.m_messageReceiveTimeout);
+            clone.m_keyFrameCount = (uint)Utils.Clone(this.m_keyFrameCount);
+            clone.m_headerLayoutUri = (string)Utils.Clone(this.m_headerLayoutUri);
             clone.m_securityMode = (MessageSecurityMode)Utils.Clone(this.m_securityMode);
             clone.m_securityGroupId = (string)Utils.Clone(this.m_securityGroupId);
             clone.m_securityKeyServices = (EndpointDescriptionCollection)Utils.Clone(this.m_securityKeyServices);
@@ -9884,6 +10226,8 @@ namespace Opc.Ua
         private DataSetMetaDataType m_dataSetMetaData;
         private uint m_dataSetFieldContentMask;
         private double m_messageReceiveTimeout;
+        private uint m_keyFrameCount;
+        private string m_headerLayoutUri;
         private MessageSecurityMode m_securityMode;
         private string m_securityGroupId;
         private EndpointDescriptionCollection m_securityKeyServices;

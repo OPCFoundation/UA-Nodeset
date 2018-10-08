@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-07-31T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-09-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2018-07-31T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2018-09-15T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -72,7 +72,6 @@
   <UAVariableType NodeId="i=2365" BrowseName="DataItemType" ValueRank="-2">
     <DisplayName>DataItemType</DisplayName>
     <Description>A variable that contains live automation data.</Description>
-    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=2366</Reference>
       <Reference ReferenceType="HasProperty">i=2367</Reference>
@@ -99,7 +98,6 @@
   </UAVariable>
   <UAVariableType NodeId="i=2368" BrowseName="AnalogItemType" DataType="Number" ValueRank="-2">
     <DisplayName>AnalogItemType</DisplayName>
-    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=2370</Reference>
       <Reference ReferenceType="HasProperty">i=2369</Reference>
@@ -131,10 +129,8 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2368</Reference>
     </References>
   </UAVariable>
-  <UAVariableType NodeId="i=17497" BrowseName="EUItemType" DataType="Number" ValueRank="-2">
+  <UAVariableType NodeId="i=17497" BrowseName="EUItemType" ReleaseStatus="Draft" DataType="Number" ValueRank="-2">
     <DisplayName>EUItemType</DisplayName>
-    <Category>Part8</Category>
-    <Category>1.05</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=17500</Reference>
       <Reference ReferenceType="HasProperty">i=17501</Reference>
@@ -166,10 +162,8 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=17497</Reference>
     </References>
   </UAVariable>
-  <UAVariableType NodeId="i=17503" BrowseName="AnalogUnitItemType" DataType="Number" ValueRank="-2">
+  <UAVariableType NodeId="i=17503" BrowseName="AnalogUnitItemType" ReleaseStatus="Draft" DataType="Number" ValueRank="-2">
     <DisplayName>AnalogUnitItemType</DisplayName>
-    <Category>Part8</Category>
-    <Category>1.05</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=17506</Reference>
       <Reference ReferenceType="HasProperty">i=17509</Reference>
@@ -203,14 +197,12 @@
   </UAVariable>
   <UAVariableType NodeId="i=2372" BrowseName="DiscreteItemType" IsAbstract="true" ValueRank="-2">
     <DisplayName>DiscreteItemType</DisplayName>
-    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2365</Reference>
     </References>
   </UAVariableType>
   <UAVariableType NodeId="i=2373" BrowseName="TwoStateDiscreteType" DataType="Boolean" ValueRank="-2">
     <DisplayName>TwoStateDiscreteType</DisplayName>
-    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=2374</Reference>
       <Reference ReferenceType="HasProperty">i=2375</Reference>
@@ -235,7 +227,6 @@
   </UAVariable>
   <UAVariableType NodeId="i=2376" BrowseName="MultiStateDiscreteType" DataType="UInteger" ValueRank="-2">
     <DisplayName>MultiStateDiscreteType</DisplayName>
-    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=2377</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2372</Reference>
@@ -251,7 +242,6 @@
   </UAVariable>
   <UAVariableType NodeId="i=11238" BrowseName="MultiStateValueDiscreteType" DataType="Number" ValueRank="-2">
     <DisplayName>MultiStateValueDiscreteType</DisplayName>
-    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=11241</Reference>
       <Reference ReferenceType="HasProperty">i=11461</Reference>
@@ -276,7 +266,6 @@
   </UAVariable>
   <UAVariableType NodeId="i=12021" BrowseName="ArrayItemType" IsAbstract="true" ValueRank="0">
     <DisplayName>ArrayItemType</DisplayName>
-    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=12024</Reference>
       <Reference ReferenceType="HasProperty">i=12025</Reference>
@@ -328,7 +317,6 @@
   </UAVariable>
   <UAVariableType NodeId="i=12029" BrowseName="YArrayItemType" ValueRank="1" ArrayDimensions="0">
     <DisplayName>YArrayItemType</DisplayName>
-    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=12037</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12021</Reference>
@@ -344,7 +332,6 @@
   </UAVariable>
   <UAVariableType NodeId="i=12038" BrowseName="XYArrayItemType" DataType="i=12080" ValueRank="1" ArrayDimensions="0">
     <DisplayName>XYArrayItemType</DisplayName>
-    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=12046</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12021</Reference>
@@ -360,7 +347,6 @@
   </UAVariable>
   <UAVariableType NodeId="i=12047" BrowseName="ImageItemType" ValueRank="2" ArrayDimensions="0,0">
     <DisplayName>ImageItemType</DisplayName>
-    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=12055</Reference>
       <Reference ReferenceType="HasProperty">i=12056</Reference>
@@ -385,7 +371,6 @@
   </UAVariable>
   <UAVariableType NodeId="i=12057" BrowseName="CubeItemType" ValueRank="3" ArrayDimensions="0,0,0">
     <DisplayName>CubeItemType</DisplayName>
-    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=12065</Reference>
       <Reference ReferenceType="HasProperty">i=12066</Reference>
@@ -419,7 +404,6 @@
   </UAVariable>
   <UAVariableType NodeId="i=12068" BrowseName="NDimensionArrayItemType" ValueRank="0">
     <DisplayName>NDimensionArrayItemType</DisplayName>
-    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=12076</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12021</Reference>
@@ -435,7 +419,6 @@
   </UAVariable>
   <UADataType NodeId="i=884" BrowseName="Range">
     <DisplayName>Range</DisplayName>
-    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -446,7 +429,6 @@
   </UADataType>
   <UADataType NodeId="i=887" BrowseName="EUInformation">
     <DisplayName>EUInformation</DisplayName>
-    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -459,7 +441,6 @@
   </UADataType>
   <UADataType NodeId="i=12077" BrowseName="AxisScaleEnumeration">
     <DisplayName>AxisScaleEnumeration</DisplayName>
-    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=12078</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -499,7 +480,6 @@
   </UAVariable>
   <UADataType NodeId="i=12171" BrowseName="ComplexNumberType">
     <DisplayName>ComplexNumberType</DisplayName>
-    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -510,7 +490,6 @@
   </UADataType>
   <UADataType NodeId="i=12172" BrowseName="DoubleComplexNumberType">
     <DisplayName>DoubleComplexNumberType</DisplayName>
-    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -521,7 +500,6 @@
   </UADataType>
   <UADataType NodeId="i=12079" BrowseName="AxisInformation">
     <DisplayName>AxisInformation</DisplayName>
-    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -535,7 +513,6 @@
   </UADataType>
   <UADataType NodeId="i=12080" BrowseName="XVType">
     <DisplayName>XVType</DisplayName>
-    <Category>Part8</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>

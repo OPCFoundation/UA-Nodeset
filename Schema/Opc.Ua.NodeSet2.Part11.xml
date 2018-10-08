@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-07-31T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-09-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2018-07-31T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2018-09-15T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -72,7 +72,6 @@
   <UAReferenceType NodeId="i=56" BrowseName="HasHistoricalConfiguration">
     <DisplayName>HasHistoricalConfiguration</DisplayName>
     <Description>The type for a reference to the historical configuration for a data variable.</Description>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=44</Reference>
     </References>
@@ -213,7 +212,6 @@
   </UAVariable>
   <UAObjectType NodeId="i=2318" BrowseName="HistoricalDataConfigurationType">
     <DisplayName>HistoricalDataConfigurationType</DisplayName>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasComponent">i=3059</Reference>
       <Reference ReferenceType="HasComponent">i=11876</Reference>
@@ -406,7 +404,6 @@
   </UAVariable>
   <UAObjectType NodeId="i=2330" BrowseName="HistoryServerCapabilitiesType">
     <DisplayName>HistoryServerCapabilitiesType</DisplayName>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=2331</Reference>
       <Reference ReferenceType="HasProperty">i=2332</Reference>
@@ -548,7 +545,6 @@
   </UAObject>
   <UAObjectType NodeId="i=2999" BrowseName="AuditHistoryEventUpdateEventType" IsAbstract="true">
     <DisplayName>AuditHistoryEventUpdateEventType</DisplayName>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=3025</Reference>
       <Reference ReferenceType="HasProperty">i=3028</Reference>
@@ -600,7 +596,6 @@
   </UAVariable>
   <UAObjectType NodeId="i=3006" BrowseName="AuditHistoryValueUpdateEventType" IsAbstract="true">
     <DisplayName>AuditHistoryValueUpdateEventType</DisplayName>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=3026</Reference>
       <Reference ReferenceType="HasProperty">i=3031</Reference>
@@ -643,7 +638,6 @@
   </UAVariable>
   <UAObjectType NodeId="i=3012" BrowseName="AuditHistoryDeleteEventType" IsAbstract="true">
     <DisplayName>AuditHistoryDeleteEventType</DisplayName>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=3027</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2104</Reference>
@@ -659,7 +653,6 @@
   </UAVariable>
   <UAObjectType NodeId="i=3014" BrowseName="AuditHistoryRawModifyDeleteEventType" IsAbstract="true">
     <DisplayName>AuditHistoryRawModifyDeleteEventType</DisplayName>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=3015</Reference>
       <Reference ReferenceType="HasProperty">i=3016</Reference>
@@ -702,7 +695,6 @@
   </UAVariable>
   <UAObjectType NodeId="i=3019" BrowseName="AuditHistoryAtTimeDeleteEventType" IsAbstract="true">
     <DisplayName>AuditHistoryAtTimeDeleteEventType</DisplayName>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=3020</Reference>
       <Reference ReferenceType="HasProperty">i=3021</Reference>
@@ -727,7 +719,6 @@
   </UAVariable>
   <UAObjectType NodeId="i=3022" BrowseName="AuditHistoryEventDeleteEventType" IsAbstract="true">
     <DisplayName>AuditHistoryEventDeleteEventType</DisplayName>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=3023</Reference>
       <Reference ReferenceType="HasProperty">i=3024</Reference>
@@ -752,7 +743,6 @@
   </UAVariable>
   <UADataType NodeId="i=891" BrowseName="Annotation">
     <DisplayName>Annotation</DisplayName>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -764,7 +754,6 @@
   </UADataType>
   <UADataType NodeId="i=890" BrowseName="ExceptionDeviationFormat">
     <DisplayName>ExceptionDeviationFormat</DisplayName>
-    <Category>Part11</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=7614</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>

@@ -73,6 +73,8 @@
 #define OpcUaId_AudioDataType 16307
 #define OpcUaId_BitFieldMaskDataType 11737
 #define OpcUaId_KeyValuePair 14533
+#define OpcUaId_AdditionalParametersType 16313
+#define OpcUaId_EphemeralKeyType 17548
 #define OpcUaId_EndpointType 15528
 #define OpcUaId_OpenFileMode 11939
 #define OpcUaId_IdentityCriteriaType 15632
@@ -1092,6 +1094,8 @@
 #define OpcUaId_PubSubDiagnosticsDataSetReaderType_LiveValues 20072
 #define OpcUaId_DatagramConnectionTransportType_DiscoveryAddress 15072
 #define OpcUaId_KeyValuePair_Encoding_DefaultBinary 14846
+#define OpcUaId_AdditionalParametersType_Encoding_DefaultBinary 17537
+#define OpcUaId_EphemeralKeyType_Encoding_DefaultBinary 17549
 #define OpcUaId_EndpointType_Encoding_DefaultBinary 15671
 #define OpcUaId_IdentityMappingRuleType_Encoding_DefaultBinary 15736
 #define OpcUaId_TrustListDataType_Encoding_DefaultBinary 12680
@@ -1375,6 +1379,8 @@
 #define OpcUaId_ProgramDiagnostic2DataType_Encoding_DefaultBinary 15397
 #define OpcUaId_Annotation_Encoding_DefaultBinary 893
 #define OpcUaId_KeyValuePair_Encoding_DefaultXml 14802
+#define OpcUaId_AdditionalParametersType_Encoding_DefaultXml 17541
+#define OpcUaId_EphemeralKeyType_Encoding_DefaultXml 17553
 #define OpcUaId_EndpointType_Encoding_DefaultXml 15949
 #define OpcUaId_IdentityMappingRuleType_Encoding_DefaultXml 15728
 #define OpcUaId_TrustListDataType_Encoding_DefaultXml 12676
@@ -1658,6 +1664,8 @@
 #define OpcUaId_ProgramDiagnostic2DataType_Encoding_DefaultXml 15401
 #define OpcUaId_Annotation_Encoding_DefaultXml 892
 #define OpcUaId_KeyValuePair_Encoding_DefaultJson 15041
+#define OpcUaId_AdditionalParametersType_Encoding_DefaultJson 17547
+#define OpcUaId_EphemeralKeyType_Encoding_DefaultJson 17557
 #define OpcUaId_EndpointType_Encoding_DefaultJson 16150
 #define OpcUaId_IdentityMappingRuleType_Encoding_DefaultJson 15042
 #define OpcUaId_TrustListDataType_Encoding_DefaultJson 15044
@@ -2171,10 +2179,10 @@
 #define OpcUaId_HasEffect 54
 #define OpcUaId_HasSubStateMachine 117
 #define OpcUaId_HasHistoricalConfiguration 56
-#define OpcUaId_DescribesArgument 129
-#define OpcUaId_DescribesInputArgument 130
-#define OpcUaId_DescribesOptionalInputArgument 131
-#define OpcUaId_DescribesOutputArgument 132
+#define OpcUaId_HasArgumentDescription 129
+#define OpcUaId_HasInputArgumentDescription 130
+#define OpcUaId_HasOptionalInputArgumentDescription 131
+#define OpcUaId_HasOutputArgumentDescription 132
 #define OpcUaId_HasTrueSubState 9004
 #define OpcUaId_HasFalseSubState 9005
 #define OpcUaId_HasAlarmSuppressionGroup 16361
@@ -4716,6 +4724,7 @@
 #define OpcUaId_PubSubConnectionType_WriterGroupName_Placeholder_KeepAliveTime 17319
 #define OpcUaId_PubSubConnectionType_WriterGroupName_Placeholder_Priority 17321
 #define OpcUaId_PubSubConnectionType_WriterGroupName_Placeholder_LocaleIds 17322
+#define OpcUaId_PubSubConnectionType_WriterGroupName_Placeholder_HeaderLayoutUri 17558
 #define OpcUaId_PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_DiagnosticsLevel 19108
 #define OpcUaId_PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalInformation 19109
 #define OpcUaId_PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalInformation_Active 19110
@@ -4910,6 +4919,7 @@
 #define OpcUaId_WriterGroupType_KeepAliveTime 17738
 #define OpcUaId_WriterGroupType_Priority 17739
 #define OpcUaId_WriterGroupType_LocaleIds 17740
+#define OpcUaId_WriterGroupType_HeaderLayoutUri 17559
 #define OpcUaId_WriterGroupType_DataSetWriterName_Placeholder_DataSetWriterId 17744
 #define OpcUaId_WriterGroupType_DataSetWriterName_Placeholder_DataSetFieldContentMask 17745
 #define OpcUaId_WriterGroupType_DataSetWriterName_Placeholder_DataSetWriterProperties 17490
@@ -5038,6 +5048,8 @@
 #define OpcUaId_ReaderGroupType_DataSetReaderName_Placeholder_DataSetMetaData 18080
 #define OpcUaId_ReaderGroupType_DataSetReaderName_Placeholder_DataSetFieldContentMask 18081
 #define OpcUaId_ReaderGroupType_DataSetReaderName_Placeholder_MessageReceiveTimeout 18082
+#define OpcUaId_ReaderGroupType_DataSetReaderName_Placeholder_KeyFrameCount 17560
+#define OpcUaId_ReaderGroupType_DataSetReaderName_Placeholder_HeaderLayoutUri 17562
 #define OpcUaId_ReaderGroupType_DataSetReaderName_Placeholder_DataSetReaderProperties 17492
 #define OpcUaId_ReaderGroupType_DataSetReaderName_Placeholder_Status_State 18089
 #define OpcUaId_ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_DiagnosticsLevel 18093
@@ -5227,6 +5239,8 @@
 #define OpcUaId_DataSetReaderType_DataSetMetaData 21100
 #define OpcUaId_DataSetReaderType_DataSetFieldContentMask 21101
 #define OpcUaId_DataSetReaderType_MessageReceiveTimeout 21102
+#define OpcUaId_DataSetReaderType_KeyFrameCount 17563
+#define OpcUaId_DataSetReaderType_HeaderLayoutUri 17564
 #define OpcUaId_DataSetReaderType_SecurityMode 15932
 #define OpcUaId_DataSetReaderType_SecurityGroupId 15933
 #define OpcUaId_DataSetReaderType_SecurityKeyServices 15934
@@ -5749,6 +5763,8 @@
 #define OpcUaId_OpcUa_BinarySchema_NamespaceUri 7619
 #define OpcUaId_OpcUa_BinarySchema_Deprecated 15037
 #define OpcUaId_OpcUa_BinarySchema_KeyValuePair 14873
+#define OpcUaId_OpcUa_BinarySchema_AdditionalParametersType 17538
+#define OpcUaId_OpcUa_BinarySchema_EphemeralKeyType 17550
 #define OpcUaId_OpcUa_BinarySchema_EndpointType 15734
 #define OpcUaId_OpcUa_BinarySchema_IdentityMappingRuleType 15738
 #define OpcUaId_OpcUa_BinarySchema_TrustListDataType 12681
@@ -5870,6 +5886,8 @@
 #define OpcUaId_OpcUa_XmlSchema_NamespaceUri 8254
 #define OpcUaId_OpcUa_XmlSchema_Deprecated 15039
 #define OpcUaId_OpcUa_XmlSchema_KeyValuePair 14829
+#define OpcUaId_OpcUa_XmlSchema_AdditionalParametersType 17542
+#define OpcUaId_OpcUa_XmlSchema_EphemeralKeyType 17554
 #define OpcUaId_OpcUa_XmlSchema_EndpointType 16024
 #define OpcUaId_OpcUa_XmlSchema_IdentityMappingRuleType 15730
 #define OpcUaId_OpcUa_XmlSchema_TrustListDataType 12677

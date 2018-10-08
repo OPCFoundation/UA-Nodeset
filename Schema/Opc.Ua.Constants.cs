@@ -240,6 +240,16 @@ namespace Opc.Ua
         public const uint KeyValuePair = 14533;
 
         /// <summary>
+        /// The identifier for the AdditionalParametersType DataType.
+        /// </summary>
+        public const uint AdditionalParametersType = 16313;
+
+        /// <summary>
+        /// The identifier for the EphemeralKeyType DataType.
+        /// </summary>
+        public const uint EphemeralKeyType = 17548;
+
+        /// <summary>
         /// The identifier for the EndpointType DataType.
         /// </summary>
         public const uint EndpointType = 15528;
@@ -5315,6 +5325,16 @@ namespace Opc.Ua
         public const uint KeyValuePair_Encoding_DefaultBinary = 14846;
 
         /// <summary>
+        /// The identifier for the AdditionalParametersType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint AdditionalParametersType_Encoding_DefaultBinary = 17537;
+
+        /// <summary>
+        /// The identifier for the EphemeralKeyType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public const uint EphemeralKeyType_Encoding_DefaultBinary = 17549;
+
+        /// <summary>
         /// The identifier for the EndpointType_Encoding_DefaultBinary Object.
         /// </summary>
         public const uint EndpointType_Encoding_DefaultBinary = 15671;
@@ -6730,6 +6750,16 @@ namespace Opc.Ua
         public const uint KeyValuePair_Encoding_DefaultXml = 14802;
 
         /// <summary>
+        /// The identifier for the AdditionalParametersType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint AdditionalParametersType_Encoding_DefaultXml = 17541;
+
+        /// <summary>
+        /// The identifier for the EphemeralKeyType_Encoding_DefaultXml Object.
+        /// </summary>
+        public const uint EphemeralKeyType_Encoding_DefaultXml = 17553;
+
+        /// <summary>
         /// The identifier for the EndpointType_Encoding_DefaultXml Object.
         /// </summary>
         public const uint EndpointType_Encoding_DefaultXml = 15949;
@@ -8143,6 +8173,16 @@ namespace Opc.Ua
         /// The identifier for the KeyValuePair_Encoding_DefaultJson Object.
         /// </summary>
         public const uint KeyValuePair_Encoding_DefaultJson = 15041;
+
+        /// <summary>
+        /// The identifier for the AdditionalParametersType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint AdditionalParametersType_Encoding_DefaultJson = 17547;
+
+        /// <summary>
+        /// The identifier for the EphemeralKeyType_Encoding_DefaultJson Object.
+        /// </summary>
+        public const uint EphemeralKeyType_Encoding_DefaultJson = 17557;
 
         /// <summary>
         /// The identifier for the EndpointType_Encoding_DefaultJson Object.
@@ -10690,24 +10730,24 @@ namespace Opc.Ua
         public const uint HasHistoricalConfiguration = 56;
 
         /// <summary>
-        /// The identifier for the DescribesArgument ReferenceType.
+        /// The identifier for the HasArgumentDescription ReferenceType.
         /// </summary>
-        public const uint DescribesArgument = 129;
+        public const uint HasArgumentDescription = 129;
 
         /// <summary>
-        /// The identifier for the DescribesInputArgument ReferenceType.
+        /// The identifier for the HasInputArgumentDescription ReferenceType.
         /// </summary>
-        public const uint DescribesInputArgument = 130;
+        public const uint HasInputArgumentDescription = 130;
 
         /// <summary>
-        /// The identifier for the DescribesOptionalInputArgument ReferenceType.
+        /// The identifier for the HasOptionalInputArgumentDescription ReferenceType.
         /// </summary>
-        public const uint DescribesOptionalInputArgument = 131;
+        public const uint HasOptionalInputArgumentDescription = 131;
 
         /// <summary>
-        /// The identifier for the DescribesOutputArgument ReferenceType.
+        /// The identifier for the HasOutputArgumentDescription ReferenceType.
         /// </summary>
-        public const uint DescribesOutputArgument = 132;
+        public const uint HasOutputArgumentDescription = 132;
 
         /// <summary>
         /// The identifier for the HasTrueSubState ReferenceType.
@@ -23405,6 +23445,11 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_LocaleIds = 17322;
 
         /// <summary>
+        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_HeaderLayoutUri Variable.
+        /// </summary>
+        public const uint PubSubConnectionType_WriterGroupName_Placeholder_HeaderLayoutUri = 17558;
+
+        /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_DiagnosticsLevel = 19108;
@@ -24375,6 +24420,11 @@ namespace Opc.Ua
         public const uint WriterGroupType_LocaleIds = 17740;
 
         /// <summary>
+        /// The identifier for the WriterGroupType_HeaderLayoutUri Variable.
+        /// </summary>
+        public const uint WriterGroupType_HeaderLayoutUri = 17559;
+
+        /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_DataSetWriterId Variable.
         /// </summary>
         public const uint WriterGroupType_DataSetWriterName_Placeholder_DataSetWriterId = 17744;
@@ -25013,6 +25063,16 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_MessageReceiveTimeout Variable.
         /// </summary>
         public const uint ReaderGroupType_DataSetReaderName_Placeholder_MessageReceiveTimeout = 18082;
+
+        /// <summary>
+        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_KeyFrameCount Variable.
+        /// </summary>
+        public const uint ReaderGroupType_DataSetReaderName_Placeholder_KeyFrameCount = 17560;
+
+        /// <summary>
+        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_HeaderLayoutUri Variable.
+        /// </summary>
+        public const uint ReaderGroupType_DataSetReaderName_Placeholder_HeaderLayoutUri = 17562;
 
         /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_DataSetReaderProperties Variable.
@@ -25958,6 +26018,16 @@ namespace Opc.Ua
         /// The identifier for the DataSetReaderType_MessageReceiveTimeout Variable.
         /// </summary>
         public const uint DataSetReaderType_MessageReceiveTimeout = 21102;
+
+        /// <summary>
+        /// The identifier for the DataSetReaderType_KeyFrameCount Variable.
+        /// </summary>
+        public const uint DataSetReaderType_KeyFrameCount = 17563;
+
+        /// <summary>
+        /// The identifier for the DataSetReaderType_HeaderLayoutUri Variable.
+        /// </summary>
+        public const uint DataSetReaderType_HeaderLayoutUri = 17564;
 
         /// <summary>
         /// The identifier for the DataSetReaderType_SecurityMode Variable.
@@ -28570,6 +28640,16 @@ namespace Opc.Ua
         public const uint OpcUa_BinarySchema_KeyValuePair = 14873;
 
         /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_AdditionalParametersType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_AdditionalParametersType = 17538;
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_EphemeralKeyType Variable.
+        /// </summary>
+        public const uint OpcUa_BinarySchema_EphemeralKeyType = 17550;
+
+        /// <summary>
         /// The identifier for the OpcUa_BinarySchema_EndpointType Variable.
         /// </summary>
         public const uint OpcUa_BinarySchema_EndpointType = 15734;
@@ -29173,6 +29253,16 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_XmlSchema_KeyValuePair Variable.
         /// </summary>
         public const uint OpcUa_XmlSchema_KeyValuePair = 14829;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_AdditionalParametersType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_AdditionalParametersType = 17542;
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EphemeralKeyType Variable.
+        /// </summary>
+        public const uint OpcUa_XmlSchema_EphemeralKeyType = 17554;
 
         /// <summary>
         /// The identifier for the OpcUa_XmlSchema_EndpointType Variable.
@@ -30193,6 +30283,16 @@ namespace Opc.Ua
         /// The identifier for the KeyValuePair DataType.
         /// </summary>
         public static readonly NodeId KeyValuePair = new NodeId(Opc.Ua.DataTypes.KeyValuePair);
+
+        /// <summary>
+        /// The identifier for the AdditionalParametersType DataType.
+        /// </summary>
+        public static readonly NodeId AdditionalParametersType = new NodeId(Opc.Ua.DataTypes.AdditionalParametersType);
+
+        /// <summary>
+        /// The identifier for the EphemeralKeyType DataType.
+        /// </summary>
+        public static readonly NodeId EphemeralKeyType = new NodeId(Opc.Ua.DataTypes.EphemeralKeyType);
 
         /// <summary>
         /// The identifier for the EndpointType DataType.
@@ -35270,6 +35370,16 @@ namespace Opc.Ua
         public static readonly NodeId KeyValuePair_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.KeyValuePair_Encoding_DefaultBinary);
 
         /// <summary>
+        /// The identifier for the AdditionalParametersType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId AdditionalParametersType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.AdditionalParametersType_Encoding_DefaultBinary);
+
+        /// <summary>
+        /// The identifier for the EphemeralKeyType_Encoding_DefaultBinary Object.
+        /// </summary>
+        public static readonly NodeId EphemeralKeyType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EphemeralKeyType_Encoding_DefaultBinary);
+
+        /// <summary>
         /// The identifier for the EndpointType_Encoding_DefaultBinary Object.
         /// </summary>
         public static readonly NodeId EndpointType_Encoding_DefaultBinary = new NodeId(Opc.Ua.Objects.EndpointType_Encoding_DefaultBinary);
@@ -36685,6 +36795,16 @@ namespace Opc.Ua
         public static readonly NodeId KeyValuePair_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.KeyValuePair_Encoding_DefaultXml);
 
         /// <summary>
+        /// The identifier for the AdditionalParametersType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId AdditionalParametersType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.AdditionalParametersType_Encoding_DefaultXml);
+
+        /// <summary>
+        /// The identifier for the EphemeralKeyType_Encoding_DefaultXml Object.
+        /// </summary>
+        public static readonly NodeId EphemeralKeyType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.EphemeralKeyType_Encoding_DefaultXml);
+
+        /// <summary>
         /// The identifier for the EndpointType_Encoding_DefaultXml Object.
         /// </summary>
         public static readonly NodeId EndpointType_Encoding_DefaultXml = new NodeId(Opc.Ua.Objects.EndpointType_Encoding_DefaultXml);
@@ -38098,6 +38218,16 @@ namespace Opc.Ua
         /// The identifier for the KeyValuePair_Encoding_DefaultJson Object.
         /// </summary>
         public static readonly NodeId KeyValuePair_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.KeyValuePair_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the AdditionalParametersType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId AdditionalParametersType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.AdditionalParametersType_Encoding_DefaultJson);
+
+        /// <summary>
+        /// The identifier for the EphemeralKeyType_Encoding_DefaultJson Object.
+        /// </summary>
+        public static readonly NodeId EphemeralKeyType_Encoding_DefaultJson = new NodeId(Opc.Ua.Objects.EphemeralKeyType_Encoding_DefaultJson);
 
         /// <summary>
         /// The identifier for the EndpointType_Encoding_DefaultJson Object.
@@ -40645,24 +40775,24 @@ namespace Opc.Ua
         public static readonly NodeId HasHistoricalConfiguration = new NodeId(Opc.Ua.ReferenceTypes.HasHistoricalConfiguration);
 
         /// <summary>
-        /// The identifier for the DescribesArgument ReferenceType.
+        /// The identifier for the HasArgumentDescription ReferenceType.
         /// </summary>
-        public static readonly NodeId DescribesArgument = new NodeId(Opc.Ua.ReferenceTypes.DescribesArgument);
+        public static readonly NodeId HasArgumentDescription = new NodeId(Opc.Ua.ReferenceTypes.HasArgumentDescription);
 
         /// <summary>
-        /// The identifier for the DescribesInputArgument ReferenceType.
+        /// The identifier for the HasInputArgumentDescription ReferenceType.
         /// </summary>
-        public static readonly NodeId DescribesInputArgument = new NodeId(Opc.Ua.ReferenceTypes.DescribesInputArgument);
+        public static readonly NodeId HasInputArgumentDescription = new NodeId(Opc.Ua.ReferenceTypes.HasInputArgumentDescription);
 
         /// <summary>
-        /// The identifier for the DescribesOptionalInputArgument ReferenceType.
+        /// The identifier for the HasOptionalInputArgumentDescription ReferenceType.
         /// </summary>
-        public static readonly NodeId DescribesOptionalInputArgument = new NodeId(Opc.Ua.ReferenceTypes.DescribesOptionalInputArgument);
+        public static readonly NodeId HasOptionalInputArgumentDescription = new NodeId(Opc.Ua.ReferenceTypes.HasOptionalInputArgumentDescription);
 
         /// <summary>
-        /// The identifier for the DescribesOutputArgument ReferenceType.
+        /// The identifier for the HasOutputArgumentDescription ReferenceType.
         /// </summary>
-        public static readonly NodeId DescribesOutputArgument = new NodeId(Opc.Ua.ReferenceTypes.DescribesOutputArgument);
+        public static readonly NodeId HasOutputArgumentDescription = new NodeId(Opc.Ua.ReferenceTypes.HasOutputArgumentDescription);
 
         /// <summary>
         /// The identifier for the HasTrueSubState ReferenceType.
@@ -53360,6 +53490,11 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_LocaleIds = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_LocaleIds);
 
         /// <summary>
+        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_HeaderLayoutUri Variable.
+        /// </summary>
+        public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_HeaderLayoutUri = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_HeaderLayoutUri);
+
+        /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_DiagnosticsLevel);
@@ -54330,6 +54465,11 @@ namespace Opc.Ua
         public static readonly NodeId WriterGroupType_LocaleIds = new NodeId(Opc.Ua.Variables.WriterGroupType_LocaleIds);
 
         /// <summary>
+        /// The identifier for the WriterGroupType_HeaderLayoutUri Variable.
+        /// </summary>
+        public static readonly NodeId WriterGroupType_HeaderLayoutUri = new NodeId(Opc.Ua.Variables.WriterGroupType_HeaderLayoutUri);
+
+        /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_DataSetWriterId Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_DataSetWriterId = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_DataSetWriterId);
@@ -54968,6 +55108,16 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_MessageReceiveTimeout Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_MessageReceiveTimeout = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_MessageReceiveTimeout);
+
+        /// <summary>
+        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_KeyFrameCount Variable.
+        /// </summary>
+        public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_KeyFrameCount = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_KeyFrameCount);
+
+        /// <summary>
+        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_HeaderLayoutUri Variable.
+        /// </summary>
+        public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_HeaderLayoutUri = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_HeaderLayoutUri);
 
         /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_DataSetReaderProperties Variable.
@@ -55913,6 +56063,16 @@ namespace Opc.Ua
         /// The identifier for the DataSetReaderType_MessageReceiveTimeout Variable.
         /// </summary>
         public static readonly NodeId DataSetReaderType_MessageReceiveTimeout = new NodeId(Opc.Ua.Variables.DataSetReaderType_MessageReceiveTimeout);
+
+        /// <summary>
+        /// The identifier for the DataSetReaderType_KeyFrameCount Variable.
+        /// </summary>
+        public static readonly NodeId DataSetReaderType_KeyFrameCount = new NodeId(Opc.Ua.Variables.DataSetReaderType_KeyFrameCount);
+
+        /// <summary>
+        /// The identifier for the DataSetReaderType_HeaderLayoutUri Variable.
+        /// </summary>
+        public static readonly NodeId DataSetReaderType_HeaderLayoutUri = new NodeId(Opc.Ua.Variables.DataSetReaderType_HeaderLayoutUri);
 
         /// <summary>
         /// The identifier for the DataSetReaderType_SecurityMode Variable.
@@ -58525,6 +58685,16 @@ namespace Opc.Ua
         public static readonly NodeId OpcUa_BinarySchema_KeyValuePair = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_KeyValuePair);
 
         /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_AdditionalParametersType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_AdditionalParametersType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_AdditionalParametersType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_BinarySchema_EphemeralKeyType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_BinarySchema_EphemeralKeyType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_EphemeralKeyType);
+
+        /// <summary>
         /// The identifier for the OpcUa_BinarySchema_EndpointType Variable.
         /// </summary>
         public static readonly NodeId OpcUa_BinarySchema_EndpointType = new NodeId(Opc.Ua.Variables.OpcUa_BinarySchema_EndpointType);
@@ -59128,6 +59298,16 @@ namespace Opc.Ua
         /// The identifier for the OpcUa_XmlSchema_KeyValuePair Variable.
         /// </summary>
         public static readonly NodeId OpcUa_XmlSchema_KeyValuePair = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_KeyValuePair);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_AdditionalParametersType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_AdditionalParametersType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_AdditionalParametersType);
+
+        /// <summary>
+        /// The identifier for the OpcUa_XmlSchema_EphemeralKeyType Variable.
+        /// </summary>
+        public static readonly NodeId OpcUa_XmlSchema_EphemeralKeyType = new NodeId(Opc.Ua.Variables.OpcUa_XmlSchema_EphemeralKeyType);
 
         /// <summary>
         /// The identifier for the OpcUa_XmlSchema_EndpointType Variable.
@@ -60082,6 +60262,11 @@ namespace Opc.Ua
         /// The BrowseName for the AdditionalGroup_Placeholder component.
         /// </summary>
         public const string AdditionalGroup_Placeholder = "<AdditionalGroup>";
+
+        /// <summary>
+        /// The BrowseName for the AdditionalParametersType component.
+        /// </summary>
+        public const string AdditionalParametersType = "AdditionalParametersType";
 
         /// <summary>
         /// The BrowseName for the AddNodesCount component.
@@ -62049,26 +62234,6 @@ namespace Opc.Ua
         public const string Deprecated = "Deprecated";
 
         /// <summary>
-        /// The BrowseName for the DescribesArgument component.
-        /// </summary>
-        public const string DescribesArgument = "DescribesArgument";
-
-        /// <summary>
-        /// The BrowseName for the DescribesInputArgument component.
-        /// </summary>
-        public const string DescribesInputArgument = "DescribesInputArgument";
-
-        /// <summary>
-        /// The BrowseName for the DescribesOptionalInputArgument component.
-        /// </summary>
-        public const string DescribesOptionalInputArgument = "DescribesOptionalInputArgument";
-
-        /// <summary>
-        /// The BrowseName for the DescribesOutputArgument component.
-        /// </summary>
-        public const string DescribesOutputArgument = "DescribesOutputArgument";
-
-        /// <summary>
         /// The BrowseName for the DeviceFailureEventType component.
         /// </summary>
         public const string DeviceFailureEventType = "DeviceFailureEventType";
@@ -62302,6 +62467,11 @@ namespace Opc.Ua
         /// The BrowseName for the EnumValueType component.
         /// </summary>
         public const string EnumValueType = "EnumValueType";
+
+        /// <summary>
+        /// The BrowseName for the EphemeralKeyType component.
+        /// </summary>
+        public const string EphemeralKeyType = "EphemeralKeyType";
 
         /// <summary>
         /// The BrowseName for the Error component.
@@ -62709,6 +62879,11 @@ namespace Opc.Ua
         public const string HasAlarmSuppressionGroup = "HasAlarmSuppressionGroup";
 
         /// <summary>
+        /// The BrowseName for the HasArgumentDescription component.
+        /// </summary>
+        public const string HasArgumentDescription = "HasArgumentDescription";
+
+        /// <summary>
         /// The BrowseName for the HasCause component.
         /// </summary>
         public const string HasCause = "HasCause";
@@ -62789,6 +62964,11 @@ namespace Opc.Ua
         public const string HasHistoricalConfiguration = "HasHistoricalConfiguration";
 
         /// <summary>
+        /// The BrowseName for the HasInputArgumentDescription component.
+        /// </summary>
+        public const string HasInputArgumentDescription = "HasInputArgumentDescription";
+
+        /// <summary>
         /// The BrowseName for the HasModellingRule component.
         /// </summary>
         public const string HasModellingRule = "HasModellingRule";
@@ -62799,9 +62979,19 @@ namespace Opc.Ua
         public const string HasNotifier = "HasNotifier";
 
         /// <summary>
+        /// The BrowseName for the HasOptionalInputArgumentDescription component.
+        /// </summary>
+        public const string HasOptionalInputArgumentDescription = "HasOptionalInputArgumentDescription";
+
+        /// <summary>
         /// The BrowseName for the HasOrderedComponent component.
         /// </summary>
         public const string HasOrderedComponent = "HasOrderedComponent";
+
+        /// <summary>
+        /// The BrowseName for the HasOutputArgumentDescription component.
+        /// </summary>
+        public const string HasOutputArgumentDescription = "HasOutputArgumentDescription";
 
         /// <summary>
         /// The BrowseName for the HasProperty component.
@@ -62832,6 +63022,11 @@ namespace Opc.Ua
         /// The BrowseName for the HasTypeDefinition component.
         /// </summary>
         public const string HasTypeDefinition = "HasTypeDefinition";
+
+        /// <summary>
+        /// The BrowseName for the HeaderLayoutUri component.
+        /// </summary>
+        public const string HeaderLayoutUri = "HeaderLayoutUri";
 
         /// <summary>
         /// The BrowseName for the HierarchicalReferences component.

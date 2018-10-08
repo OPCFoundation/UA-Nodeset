@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-07-31T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-09-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2018-07-31T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2018-09-15T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -72,7 +72,6 @@
   <UAObjectType NodeId="i=2391" BrowseName="ProgramStateMachineType">
     <DisplayName>ProgramStateMachineType</DisplayName>
     <Description>A state machine for a program.</Description>
-    <Category>Part10</Category>
     <References>
       <Reference ReferenceType="HasComponent">i=3830</Reference>
       <Reference ReferenceType="HasComponent">i=3835</Reference>
@@ -695,7 +694,6 @@
   </UAMethod>
   <UAObjectType NodeId="i=2378" BrowseName="ProgramTransitionEventType">
     <DisplayName>ProgramTransitionEventType</DisplayName>
-    <Category>Part10</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=2379</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2311</Reference>
@@ -711,7 +709,6 @@
   </UAVariable>
   <UAObjectType NodeId="i=11856" BrowseName="AuditProgramTransitionEventType">
     <DisplayName>AuditProgramTransitionEventType</DisplayName>
-    <Category>Part10</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=11875</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2315</Reference>
@@ -727,7 +724,6 @@
   </UAVariable>
   <UAObjectType NodeId="i=3806" BrowseName="ProgramTransitionAuditEventType">
     <DisplayName>ProgramTransitionAuditEventType</DisplayName>
-    <Category>Part10</Category>
     <References>
       <Reference ReferenceType="HasComponent">i=3825</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2315</Reference>
@@ -752,7 +748,6 @@
   </UAVariable>
   <UAVariableType NodeId="i=2380" BrowseName="ProgramDiagnosticType" DataType="i=894">
     <DisplayName>ProgramDiagnosticType</DisplayName>
-    <Category>Part10</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=2381</Reference>
       <Reference ReferenceType="HasProperty">i=2382</Reference>
@@ -849,7 +844,6 @@
   </UAVariable>
   <UAVariableType NodeId="i=15383" BrowseName="ProgramDiagnostic2Type" DataType="i=15396">
     <DisplayName>ProgramDiagnostic2Type</DisplayName>
-    <Category>Part10</Category>
     <References>
       <Reference ReferenceType="HasProperty">i=15384</Reference>
       <Reference ReferenceType="HasProperty">i=15385</Reference>
@@ -964,7 +958,6 @@
   </UAVariable>
   <UADataType NodeId="i=894" BrowseName="ProgramDiagnosticDataType">
     <DisplayName>ProgramDiagnosticDataType</DisplayName>
-    <Category>Part10</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -983,7 +976,6 @@
   </UADataType>
   <UADataType NodeId="i=15396" BrowseName="ProgramDiagnostic2DataType">
     <DisplayName>ProgramDiagnostic2DataType</DisplayName>
-    <Category>Part10</Category>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
