@@ -10667,7 +10667,7 @@
           </TypeId>
           <Body>
             <Argument>
-              <Name>RuleToRemove</Name>
+              <Name>ApplicationUri</Name>
               <DataType>
                 <Identifier>i=12</Identifier>
               </DataType>
@@ -11068,7 +11068,7 @@
           </TypeId>
           <Body>
             <Argument>
-              <Name>RuleToRemove</Name>
+              <Name>ApplicationUri</Name>
               <DataType>
                 <Identifier>i=12</Identifier>
               </DataType>
@@ -11326,7 +11326,7 @@
           </TypeId>
           <Body>
             <Argument>
-              <Name>RuleToRemove</Name>
+              <Name>ApplicationUri</Name>
               <DataType>
                 <Identifier>i=12</Identifier>
               </DataType>
@@ -11584,7 +11584,7 @@
           </TypeId>
           <Body>
             <Argument>
-              <Name>RuleToRemove</Name>
+              <Name>ApplicationUri</Name>
               <DataType>
                 <Identifier>i=12</Identifier>
               </DataType>
@@ -11842,7 +11842,7 @@
           </TypeId>
           <Body>
             <Argument>
-              <Name>RuleToRemove</Name>
+              <Name>ApplicationUri</Name>
               <DataType>
                 <Identifier>i=12</Identifier>
               </DataType>
@@ -12100,7 +12100,7 @@
           </TypeId>
           <Body>
             <Argument>
-              <Name>RuleToRemove</Name>
+              <Name>ApplicationUri</Name>
               <DataType>
                 <Identifier>i=12</Identifier>
               </DataType>
@@ -12358,7 +12358,7 @@
           </TypeId>
           <Body>
             <Argument>
-              <Name>RuleToRemove</Name>
+              <Name>ApplicationUri</Name>
               <DataType>
                 <Identifier>i=12</Identifier>
               </DataType>
@@ -12616,7 +12616,7 @@
           </TypeId>
           <Body>
             <Argument>
-              <Name>RuleToRemove</Name>
+              <Name>ApplicationUri</Name>
               <DataType>
                 <Identifier>i=12</Identifier>
               </DataType>
@@ -12874,7 +12874,7 @@
           </TypeId>
           <Body>
             <Argument>
-              <Name>RuleToRemove</Name>
+              <Name>ApplicationUri</Name>
               <DataType>
                 <Identifier>i=12</Identifier>
               </DataType>

@@ -32411,8 +32411,8 @@ namespace Opc.Ua
 
         private const string RemoveApplication_InitializationString =
            "//////////8EYYIKBAAAAAAAEQAAAFJlbW92ZUFwcGxpY2F0aW9uAQAyPwAvAQAyPzI/AAABAf////8B" +
-           "AAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAMz8ALgBEMz8AAJYBAAAAAQAqAQEbAAAADAAA" +
-           "AFJ1bGVUb1JlbW92ZQAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
+           "AAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEAMz8ALgBEMz8AAJYBAAAAAQAqAQEdAAAADgAA" +
+           "AEFwcGxpY2F0aW9uVXJpAAz/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
 
         private const string AddEndpoint_InitializationString =
            "//////////8EYYIKBAAAAAAACwAAAEFkZEVuZHBvaW50AQA0PwAvAQA0PzQ/AAABAf////8BAAAAFWCp" +
@@ -32439,13 +32439,13 @@ namespace Opc.Ua
            "PwAAAQH/////AQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBADE/AC4ARDE/AACWAQAAAAEA" +
            "KgEBHQAAAA4AAABBcHBsaWNhdGlvblVyaQAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQA" +
            "AAAAABEAAABSZW1vdmVBcHBsaWNhdGlvbgEAMj8ALwEAMj8yPwAAAQH/////AQAAABVgqQoCAAAAAAAO" +
-           "AAAASW5wdXRBcmd1bWVudHMBADM/AC4ARDM/AACWAQAAAAEAKgEBGwAAAAwAAABSdWxlVG9SZW1vdmUA" +
-           "DP////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAAALAAAAQWRkRW5kcG9pbnQBADQ/AC8B" +
-           "ADQ/ND8AAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQA1PwAuAEQ1PwAAlgEA" +
-           "AAABACoBARcAAAAIAAAARW5kcG9pbnQADP////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAA" +
-           "AAAOAAAAUmVtb3ZlRW5kcG9pbnQBADY/AC8BADY/Nj8AAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElu" +
-           "cHV0QXJndW1lbnRzAQA3PwAuAEQ3PwAAlgEAAAABACoBARcAAAAIAAAARW5kcG9pbnQADP////8AAAAA" +
-           "AAEAKAEBAAAAAQH/////AAAAAA==";
+           "AAAASW5wdXRBcmd1bWVudHMBADM/AC4ARDM/AACWAQAAAAEAKgEBHQAAAA4AAABBcHBsaWNhdGlvblVy" +
+           "aQAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAAAAAsAAABBZGRFbmRwb2ludAEAND8A" +
+           "LwEAND80PwAAAQH/////AQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBADU/AC4ARDU/AACW" +
+           "AQAAAAEAKgEBFwAAAAgAAABFbmRwb2ludAAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQA" +
+           "AAAAAA4AAABSZW1vdmVFbmRwb2ludAEANj8ALwEANj82PwAAAQH/////AQAAABVgqQoCAAAAAAAOAAAA" +
+           "SW5wdXRBcmd1bWVudHMBADc/AC4ARDc/AACWAQAAAAEAKgEBFwAAAAgAAABFbmRwb2ludAAM/////wAA" +
+           "AAAAAQAoAQEAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -33427,7 +33427,7 @@ namespace Opc.Ua
         private const string InitializationString =
            "//////////8EYYIKBAAAAAAAGwAAAFJlbW92ZUFwcGxpY2F0aW9uTWV0aG9kVHlwZQEAOj8ALwEAOj86" +
            "PwAAAQH/////AQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBADs/AC4ARDs/AACWAQAAAAEA" +
-           "KgEBGwAAAAwAAABSdWxlVG9SZW1vdmUADP////8AAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
+           "KgEBHQAAAA4AAABBcHBsaWNhdGlvblVyaQAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -33464,7 +33464,7 @@ namespace Opc.Ua
 
             ServiceResult result = null;
 
-            string ruleToRemove = (string)inputArguments[0];
+            string applicationUri = (string)inputArguments[0];
 
             if (OnCall != null)
             {
@@ -33472,7 +33472,7 @@ namespace Opc.Ua
                     context,
                     this,
                     objectId,
-                    ruleToRemove);
+                    applicationUri);
             }
 
             return result;
@@ -33491,7 +33491,7 @@ namespace Opc.Ua
         ISystemContext context,
         MethodState method,
         NodeId objectId,
-        string ruleToRemove);
+        string applicationUri);
     #endif
     #endregion
 

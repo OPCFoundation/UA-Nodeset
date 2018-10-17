@@ -301,7 +301,7 @@
     <xs:restriction base="xs:string">
       <xs:enumeration value="Released" />
       <xs:enumeration value="Draft" />
-      <xs:enumeration value="Depreciated" />
+      <xs:enumeration value="Deprecated" />
     </xs:restriction>
   </xs:simpleType>
 
