@@ -72443,20 +72443,17 @@ namespace Opc.Ua
            "//8BAf////8AAAAAFWCpCgIAAAAAABAAAABEaWFnbm9zdGljc0xldmVsAQDKTAAuAETKTAAABgAAAAAB" +
            "AAtN/////wEB/////wAAAAAVYIkKAgAAAAAADwAAAFRpbWVGaXJzdENoYW5nZQEAy0wALgBEy0wAAAAN" +
            "/////wEB/////wAAAAAEYIAKAQAAAAAACgAAAExpdmVWYWx1ZXMBAMZMAC8AOsZMAAD/////AAAAAARg" +
-           "gAoBAAAAAAARAAAAU3Vic2NyaWJlZERhdGFTZXQBANQ7AC8BAAQ71DsAAP////8CAAAAFWCJCgIAAAAA" +
-           "AA8AAABEYXRhU2V0TWV0YURhdGEBANU7AC4ARNU7AAABALs4/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "FQAAAE1lc3NhZ2VSZWNlaXZlVGltZW91dAEA1jsALgBE1jsAAAEAIgH/////AQH/////AAAAAARhggoE" +
-           "AAAAAAAVAAAAQ3JlYXRlVGFyZ2V0VmFyaWFibGVzAQDqQwAvAQDqQ+pDAAABAf////8CAAAAFWCpCgIA" +
-           "AAAAAA4AAABJbnB1dEFyZ3VtZW50cwEA60MALgBE60MAAJYCAAAAAQAqAQElAAAAFAAAAENvbmZpZ3Vy" +
-           "YXRpb25WZXJzaW9uAQABOf////8AAAAAAAEAKgEBJQAAABQAAABUYXJnZXRWYXJpYWJsZXNUb0FkZAEA" +
-           "mDkBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEA" +
-           "7EMALgBE7EMAAJYBAAAAAQAqAQEZAAAACgAAAEFkZFJlc3VsdHMAEwEAAAAAAAAAAAEAKAEBAAAAAQH/" +
-           "////AAAAAARhggoEAAAAAAATAAAAQ3JlYXRlRGF0YVNldE1pcnJvcgEA7UMALwEA7UPtQwAAAQH/////" +
-           "AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAO5DAC4ARO5DAACWAgAAAAEAKgEBHQAAAA4A" +
-           "AABQYXJlbnROb2RlTmFtZQAM/////wAAAAAAAQAqAQEeAAAADwAAAFJvbGVQZXJtaXNzaW9ucwBgAQAA" +
-           "AAAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAO9DAC4A" +
-           "RO9DAACWAQAAAAEAKgEBGwAAAAwAAABQYXJlbnROb2RlSWQAEf////8AAAAAAAEAKAEBAAAAAQH/////" +
-           "AAAAAA==";
+           "gAoBAAAAAAARAAAAU3Vic2NyaWJlZERhdGFTZXQBANQ7AC8BAAQ71DsAAP////8AAAAABGGCCgQAAAAA" +
+           "ABUAAABDcmVhdGVUYXJnZXRWYXJpYWJsZXMBAOpDAC8BAOpD6kMAAAEB/////wIAAAAVYKkKAgAAAAAA" +
+           "DgAAAElucHV0QXJndW1lbnRzAQDrQwAuAETrQwAAlgIAAAABACoBASUAAAAUAAAAQ29uZmlndXJhdGlv" +
+           "blZlcnNpb24BAAE5/////wAAAAAAAQAqAQElAAAAFAAAAFRhcmdldFZhcmlhYmxlc1RvQWRkAQCYOQEA" +
+           "AAAAAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQDsQwAu" +
+           "AETsQwAAlgEAAAABACoBARkAAAAKAAAAQWRkUmVzdWx0cwATAQAAAAAAAAAAAQAoAQEAAAABAf////8A" +
+           "AAAABGGCCgQAAAAAABMAAABDcmVhdGVEYXRhU2V0TWlycm9yAQDtQwAvAQDtQ+1DAAABAf////8CAAAA" +
+           "FWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEA7kMALgBE7kMAAJYCAAAAAQAqAQEdAAAADgAAAFBh" +
+           "cmVudE5vZGVOYW1lAAz/////AAAAAAABACoBAR4AAAAPAAAAUm9sZVBlcm1pc3Npb25zAGABAAAAAAAA" +
+           "AAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEA70MALgBE70MA" +
+           "AJYBAAAAAQAqAQEbAAAADAAAAFBhcmVudE5vZGVJZAAR/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -73879,153 +73876,18 @@ namespace Opc.Ua
         #region Initialization String
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAAHQAAAFN1YnNjcmliZWREYXRhU2V0VHlwZUluc3RhbmNlAQAEOwEABDv/" +
-           "////AgAAABVgiQoCAAAAAAAPAAAARGF0YVNldE1ldGFEYXRhAQAFOwAuAEQFOwAAAQC7OP////8BAf//" +
-           "//8AAAAAFWCJCgIAAAAAABUAAABNZXNzYWdlUmVjZWl2ZVRpbWVvdXQBAAY7AC4ARAY7AAABACIB////" +
-           "/wEB/////wAAAAA=";
+           "////AAAAAA==";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the DataSetMetaData Property.
-        /// </summary>
-        public PropertyState<DataSetMetaDataType> DataSetMetaData
-        {
-            get
-            {
-                return m_dataSetMetaData;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_dataSetMetaData, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_dataSetMetaData = value;
-            }
-        }
-
-        /// <summary>
-        /// A description for the MessageReceiveTimeout Property.
-        /// </summary>
-        public PropertyState<double> MessageReceiveTimeout
-        {
-            get
-            {
-                return m_messageReceiveTimeout;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_messageReceiveTimeout, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_messageReceiveTimeout = value;
-            }
-        }
         #endregion
 
         #region Overridden Methods
-        /// <summary>
-        /// Populates a list with the children that belong to the node.
-        /// </summary>
-        /// <param name="context">The context for the system being accessed.</param>
-        /// <param name="children">The list of children to populate.</param>
-        public override void GetChildren(
-            ISystemContext context,
-            IList<BaseInstanceState> children)
-        {
-            if (m_dataSetMetaData != null)
-            {
-                children.Add(m_dataSetMetaData);
-            }
-
-            if (m_messageReceiveTimeout != null)
-            {
-                children.Add(m_messageReceiveTimeout);
-            }
-
-            base.GetChildren(context, children);
-        }
-
-        /// <summary>
-        /// Finds the child with the specified browse name.
-        /// </summary>
-        protected override BaseInstanceState FindChild(
-            ISystemContext context,
-            QualifiedName browseName,
-            bool createOrReplace,
-            BaseInstanceState replacement)
-        {
-            if (QualifiedName.IsNull(browseName))
-            {
-                return null;
-            }
-
-            BaseInstanceState instance = null;
-
-            switch (browseName.Name)
-            {
-                case Opc.Ua.BrowseNames.DataSetMetaData:
-                {
-                    if (createOrReplace)
-                    {
-                        if (DataSetMetaData == null)
-                        {
-                            if (replacement == null)
-                            {
-                                DataSetMetaData = new PropertyState<DataSetMetaDataType>(this);
-                            }
-                            else
-                            {
-                                DataSetMetaData = (PropertyState<DataSetMetaDataType>)replacement;
-                            }
-                        }
-                    }
-
-                    instance = DataSetMetaData;
-                    break;
-                }
-
-                case Opc.Ua.BrowseNames.MessageReceiveTimeout:
-                {
-                    if (createOrReplace)
-                    {
-                        if (MessageReceiveTimeout == null)
-                        {
-                            if (replacement == null)
-                            {
-                                MessageReceiveTimeout = new PropertyState<double>(this);
-                            }
-                            else
-                            {
-                                MessageReceiveTimeout = (PropertyState<double>)replacement;
-                            }
-                        }
-                    }
-
-                    instance = MessageReceiveTimeout;
-                    break;
-                }
-            }
-
-            if (instance != null)
-            {
-                return instance;
-            }
-
-            return base.FindChild(context, browseName, createOrReplace, replacement);
-        }
         #endregion
 
         #region Private Fields
-        private PropertyState<DataSetMetaDataType> m_dataSetMetaData;
-        private PropertyState<double> m_messageReceiveTimeout;
         #endregion
     }
     #endif
@@ -74112,20 +73974,18 @@ namespace Opc.Ua
 
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAAGwAAAFRhcmdldFZhcmlhYmxlc1R5cGVJbnN0YW5jZQEABzsBAAc7////" +
-           "/wUAAAAVYIkKAgAAAAAADwAAAERhdGFTZXRNZXRhRGF0YQEACDsALgBECDsAAAEAuzj/////AQH/////" +
-           "AAAAABVgiQoCAAAAAAAVAAAATWVzc2FnZVJlY2VpdmVUaW1lb3V0AQAJOwAuAEQJOwAAAQAiAf////8B" +
-           "Af////8AAAAAFWCJCgIAAAAAAA8AAABUYXJnZXRWYXJpYWJsZXMBAAo7AC4ARAo7AAABAJg5AQAAAAEB" +
-           "/////wAAAAAEYYIKBAAAAAAAEgAAAEFkZFRhcmdldFZhcmlhYmxlcwEACzsALwEACzsLOwAAAQH/////" +
-           "AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAAw7AC4ARAw7AACWAgAAAAEAKgEBJQAAABQA" +
-           "AABDb25maWd1cmF0aW9uVmVyc2lvbgEAATn/////AAAAAAABACoBASUAAAAUAAAAVGFyZ2V0VmFyaWFi" +
-           "bGVzVG9BZGQBAJg5AQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRB" +
-           "cmd1bWVudHMBAA07AC4ARA07AACWAQAAAAEAKgEBGQAAAAoAAABBZGRSZXN1bHRzABMBAAAAAAAAAAAB" +
-           "ACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAAAFQAAAFJlbW92ZVRhcmdldFZhcmlhYmxlcwEADjsALwEA" +
-           "DjsOOwAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAA87AC4ARA87AACWAgAA" +
-           "AAEAKgEBJQAAABQAAABDb25maWd1cmF0aW9uVmVyc2lvbgEAATn/////AAAAAAABACoBAR4AAAAPAAAA" +
-           "VGFyZ2V0c1RvUmVtb3ZlAAcBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91" +
-           "dHB1dEFyZ3VtZW50cwEAEDsALgBEEDsAAJYBAAAAAQAqAQEcAAAADQAAAFJlbW92ZVJlc3VsdHMAEwEA" +
-           "AAAAAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
+           "/wMAAAAVYIkKAgAAAAAADwAAAFRhcmdldFZhcmlhYmxlcwEACjsALgBECjsAAAEAmDkBAAAAAQH/////" +
+           "AAAAAARhggoEAAAAAAASAAAAQWRkVGFyZ2V0VmFyaWFibGVzAQALOwAvAQALOws7AAABAf////8CAAAA" +
+           "FWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEADDsALgBEDDsAAJYCAAAAAQAqAQElAAAAFAAAAENv" +
+           "bmZpZ3VyYXRpb25WZXJzaW9uAQABOf////8AAAAAAAEAKgEBJQAAABQAAABUYXJnZXRWYXJpYWJsZXNU" +
+           "b0FkZAEAmDkBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3Vt" +
+           "ZW50cwEADTsALgBEDTsAAJYBAAAAAQAqAQEZAAAACgAAAEFkZFJlc3VsdHMAEwEAAAAAAAAAAAEAKAEB" +
+           "AAAAAQH/////AAAAAARhggoEAAAAAAAVAAAAUmVtb3ZlVGFyZ2V0VmFyaWFibGVzAQAOOwAvAQAOOw47" +
+           "AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEADzsALgBEDzsAAJYCAAAAAQAq" +
+           "AQElAAAAFAAAAENvbmZpZ3VyYXRpb25WZXJzaW9uAQABOf////8AAAAAAAEAKgEBHgAAAA8AAABUYXJn" +
+           "ZXRzVG9SZW1vdmUABwEAAAAAAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0" +
+           "QXJndW1lbnRzAQAQOwAuAEQQOwAAlgEAAAABACoBARwAAAANAAAAUmVtb3ZlUmVzdWx0cwATAQAAAAAA" +
+           "AAAAAQAoAQEAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -74636,9 +74496,7 @@ namespace Opc.Ua
         #region Initialization String
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAAIwAAAFN1YnNjcmliZWREYXRhU2V0TWlycm9yVHlwZUluc3RhbmNlAQAX" +
-           "OwEAFzv/////AgAAABVgiQoCAAAAAAAPAAAARGF0YVNldE1ldGFEYXRhAQAYOwAuAEQYOwAAAQC7OP//" +
-           "//8BAf////8AAAAAFWCJCgIAAAAAABUAAABNZXNzYWdlUmVjZWl2ZVRpbWVvdXQBABk7AC4ARBk7AAAB" +
-           "ACIB/////wEB/////wAAAAA=";
+           "OwEAFzv/////AAAAAA==";
         #endregion
         #endif
         #endregion

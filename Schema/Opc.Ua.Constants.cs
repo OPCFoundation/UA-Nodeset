@@ -25370,16 +25370,6 @@ namespace Opc.Ua
         public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_LiveValues_TimeToNextTokenID_DiagnosticsLevel = 21005;
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_DataSetMetaData Variable.
-        /// </summary>
-        public const uint ReaderGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_DataSetMetaData = 21007;
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_MessageReceiveTimeout Variable.
-        /// </summary>
-        public const uint ReaderGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_MessageReceiveTimeout = 21008;
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_CreateTargetVariables_InputArguments Variable.
         /// </summary>
         public const uint ReaderGroupType_DataSetReaderName_Placeholder_CreateTargetVariables_InputArguments = 21010;
@@ -26340,16 +26330,6 @@ namespace Opc.Ua
         public const uint DataSetReaderType_Diagnostics_LiveValues_TimeToNextTokenID_DiagnosticsLevel = 19676;
 
         /// <summary>
-        /// The identifier for the DataSetReaderType_SubscribedDataSet_DataSetMetaData Variable.
-        /// </summary>
-        public const uint DataSetReaderType_SubscribedDataSet_DataSetMetaData = 15317;
-
-        /// <summary>
-        /// The identifier for the DataSetReaderType_SubscribedDataSet_MessageReceiveTimeout Variable.
-        /// </summary>
-        public const uint DataSetReaderType_SubscribedDataSet_MessageReceiveTimeout = 15318;
-
-        /// <summary>
         /// The identifier for the DataSetReaderType_CreateTargetVariables_InputArguments Variable.
         /// </summary>
         public const uint DataSetReaderType_CreateTargetVariables_InputArguments = 17387;
@@ -26368,16 +26348,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetReaderType_CreateDataSetMirror_OutputArguments Variable.
         /// </summary>
         public const uint DataSetReaderType_CreateDataSetMirror_OutputArguments = 17391;
-
-        /// <summary>
-        /// The identifier for the SubscribedDataSetType_DataSetMetaData Variable.
-        /// </summary>
-        public const uint SubscribedDataSetType_DataSetMetaData = 15109;
-
-        /// <summary>
-        /// The identifier for the SubscribedDataSetType_MessageReceiveTimeout Variable.
-        /// </summary>
-        public const uint SubscribedDataSetType_MessageReceiveTimeout = 15110;
 
         /// <summary>
         /// The identifier for the TargetVariablesType_TargetVariables Variable.
@@ -55415,16 +55385,6 @@ namespace Opc.Ua
         public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_LiveValues_TimeToNextTokenID_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_LiveValues_TimeToNextTokenID_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_DataSetMetaData Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_DataSetMetaData = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_DataSetMetaData);
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_MessageReceiveTimeout Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_MessageReceiveTimeout = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_SubscribedDataSet_MessageReceiveTimeout);
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_CreateTargetVariables_InputArguments Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_CreateTargetVariables_InputArguments = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_CreateTargetVariables_InputArguments);
@@ -56385,16 +56345,6 @@ namespace Opc.Ua
         public static readonly NodeId DataSetReaderType_Diagnostics_LiveValues_TimeToNextTokenID_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_LiveValues_TimeToNextTokenID_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the DataSetReaderType_SubscribedDataSet_DataSetMetaData Variable.
-        /// </summary>
-        public static readonly NodeId DataSetReaderType_SubscribedDataSet_DataSetMetaData = new NodeId(Opc.Ua.Variables.DataSetReaderType_SubscribedDataSet_DataSetMetaData);
-
-        /// <summary>
-        /// The identifier for the DataSetReaderType_SubscribedDataSet_MessageReceiveTimeout Variable.
-        /// </summary>
-        public static readonly NodeId DataSetReaderType_SubscribedDataSet_MessageReceiveTimeout = new NodeId(Opc.Ua.Variables.DataSetReaderType_SubscribedDataSet_MessageReceiveTimeout);
-
-        /// <summary>
         /// The identifier for the DataSetReaderType_CreateTargetVariables_InputArguments Variable.
         /// </summary>
         public static readonly NodeId DataSetReaderType_CreateTargetVariables_InputArguments = new NodeId(Opc.Ua.Variables.DataSetReaderType_CreateTargetVariables_InputArguments);
@@ -56413,16 +56363,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetReaderType_CreateDataSetMirror_OutputArguments Variable.
         /// </summary>
         public static readonly NodeId DataSetReaderType_CreateDataSetMirror_OutputArguments = new NodeId(Opc.Ua.Variables.DataSetReaderType_CreateDataSetMirror_OutputArguments);
-
-        /// <summary>
-        /// The identifier for the SubscribedDataSetType_DataSetMetaData Variable.
-        /// </summary>
-        public static readonly NodeId SubscribedDataSetType_DataSetMetaData = new NodeId(Opc.Ua.Variables.SubscribedDataSetType_DataSetMetaData);
-
-        /// <summary>
-        /// The identifier for the SubscribedDataSetType_MessageReceiveTimeout Variable.
-        /// </summary>
-        public static readonly NodeId SubscribedDataSetType_MessageReceiveTimeout = new NodeId(Opc.Ua.Variables.SubscribedDataSetType_MessageReceiveTimeout);
 
         /// <summary>
         /// The identifier for the TargetVariablesType_TargetVariables Variable.
