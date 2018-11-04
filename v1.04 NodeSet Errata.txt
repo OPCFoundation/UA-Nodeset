@@ -39,3 +39,4 @@
 0004407: We need a header layout setting in PubSub communication parameters
 0004395: DataSetReaderType::MessageReceiveTimeout has wrong DataType in Nodeset
 0004420: SubscribedDataSetType has properties not longer defined in specification
+0004432: Encodings for Services still in Core NodeSet
