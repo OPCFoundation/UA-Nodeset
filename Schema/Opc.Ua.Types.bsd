@@ -717,6 +717,7 @@
   </opc:EnumeratedType>
 
   <opc:StructuredType Name="JsonDataSetWriterMessageDataType" BaseType="tns:DataSetWriterMessageDataType">
+    <opc:Field Name="NetworkMessageContentMask" TypeName="tns:JsonNetworkMessageContentMask" />
     <opc:Field Name="DataSetMessageContentMask" TypeName="tns:JsonDataSetMessageContentMask" />
   </opc:StructuredType>
 
