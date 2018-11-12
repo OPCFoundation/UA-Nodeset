@@ -9860,6 +9860,11 @@ namespace Opc.Ua
         public const uint TransitionType = 2310;
 
         /// <summary>
+        /// The identifier for the ChoiceStateType ObjectType.
+        /// </summary>
+        public const uint ChoiceStateType = 15109;
+
+        /// <summary>
         /// The identifier for the TransitionEventType ObjectType.
         /// </summary>
         public const uint TransitionEventType = 2311;
@@ -10683,6 +10688,21 @@ namespace Opc.Ua
         /// The identifier for the HasHistoricalConfiguration ReferenceType.
         /// </summary>
         public const uint HasHistoricalConfiguration = 56;
+
+        /// <summary>
+        /// The identifier for the HasArgumentDescription ReferenceType.
+        /// </summary>
+        public const uint HasArgumentDescription = 129;
+
+        /// <summary>
+        /// The identifier for the HasOptionalInputArgumentDescription ReferenceType.
+        /// </summary>
+        public const uint HasOptionalInputArgumentDescription = 131;
+
+        /// <summary>
+        /// The identifier for the HasGuard ReferenceType.
+        /// </summary>
+        public const uint HasGuard = 15112;
 
         /// <summary>
         /// The identifier for the HasTrueSubState ReferenceType.
@@ -14315,6 +14335,11 @@ namespace Opc.Ua
         public const uint TransitionType_TransitionNumber = 2312;
 
         /// <summary>
+        /// The identifier for the ExpressionGuardVariableType_Expression Variable.
+        /// </summary>
+        public const uint ExpressionGuardVariableType_Expression = 15129;
+
+        /// <summary>
         /// The identifier for the TransitionEventType_Transition Variable.
         /// </summary>
         public const uint TransitionEventType_Transition = 2774;
@@ -15320,9 +15345,19 @@ namespace Opc.Ua
         public const uint DataItemType_ValuePrecision = 2367;
 
         /// <summary>
-        /// The identifier for the AnalogItemType_InstrumentRange Variable.
+        /// The identifier for the BaseAnalogType_InstrumentRange Variable.
         /// </summary>
-        public const uint AnalogItemType_InstrumentRange = 2370;
+        public const uint BaseAnalogType_InstrumentRange = 17567;
+
+        /// <summary>
+        /// The identifier for the BaseAnalogType_EURange Variable.
+        /// </summary>
+        public const uint BaseAnalogType_EURange = 17568;
+
+        /// <summary>
+        /// The identifier for the BaseAnalogType_EngineeringUnits Variable.
+        /// </summary>
+        public const uint BaseAnalogType_EngineeringUnits = 17569;
 
         /// <summary>
         /// The identifier for the AnalogItemType_EURange Variable.
@@ -15330,9 +15365,14 @@ namespace Opc.Ua
         public const uint AnalogItemType_EURange = 2369;
 
         /// <summary>
-        /// The identifier for the AnalogItemType_EngineeringUnits Variable.
+        /// The identifier for the AnalogUnitType_EngineeringUnits Variable.
         /// </summary>
-        public const uint AnalogItemType_EngineeringUnits = 2371;
+        public const uint AnalogUnitType_EngineeringUnits = 17502;
+
+        /// <summary>
+        /// The identifier for the AnalogUnitRangeType_EngineeringUnits Variable.
+        /// </summary>
+        public const uint AnalogUnitRangeType_EngineeringUnits = 17575;
 
         /// <summary>
         /// The identifier for the TwoStateDiscreteType_FalseState Variable.
@@ -29835,14 +29875,44 @@ namespace Opc.Ua
         public const uint FiniteTransitionVariableType = 2767;
 
         /// <summary>
+        /// The identifier for the GuardVariableType VariableType.
+        /// </summary>
+        public const uint GuardVariableType = 15113;
+
+        /// <summary>
+        /// The identifier for the ExpressionGuardVariableType VariableType.
+        /// </summary>
+        public const uint ExpressionGuardVariableType = 15128;
+
+        /// <summary>
+        /// The identifier for the ElseGuardVariableType VariableType.
+        /// </summary>
+        public const uint ElseGuardVariableType = 15317;
+
+        /// <summary>
         /// The identifier for the DataItemType VariableType.
         /// </summary>
         public const uint DataItemType = 2365;
 
         /// <summary>
+        /// The identifier for the BaseAnalogType VariableType.
+        /// </summary>
+        public const uint BaseAnalogType = 15318;
+
+        /// <summary>
         /// The identifier for the AnalogItemType VariableType.
         /// </summary>
         public const uint AnalogItemType = 2368;
+
+        /// <summary>
+        /// The identifier for the AnalogUnitType VariableType.
+        /// </summary>
+        public const uint AnalogUnitType = 17497;
+
+        /// <summary>
+        /// The identifier for the AnalogUnitRangeType VariableType.
+        /// </summary>
+        public const uint AnalogUnitRangeType = 17570;
 
         /// <summary>
         /// The identifier for the DiscreteItemType VariableType.
@@ -39750,6 +39820,11 @@ namespace Opc.Ua
         public static readonly NodeId TransitionType = new NodeId(Opc.Ua.ObjectTypes.TransitionType);
 
         /// <summary>
+        /// The identifier for the ChoiceStateType ObjectType.
+        /// </summary>
+        public static readonly NodeId ChoiceStateType = new NodeId(Opc.Ua.ObjectTypes.ChoiceStateType);
+
+        /// <summary>
         /// The identifier for the TransitionEventType ObjectType.
         /// </summary>
         public static readonly NodeId TransitionEventType = new NodeId(Opc.Ua.ObjectTypes.TransitionEventType);
@@ -40573,6 +40648,21 @@ namespace Opc.Ua
         /// The identifier for the HasHistoricalConfiguration ReferenceType.
         /// </summary>
         public static readonly NodeId HasHistoricalConfiguration = new NodeId(Opc.Ua.ReferenceTypes.HasHistoricalConfiguration);
+
+        /// <summary>
+        /// The identifier for the HasArgumentDescription ReferenceType.
+        /// </summary>
+        public static readonly NodeId HasArgumentDescription = new NodeId(Opc.Ua.ReferenceTypes.HasArgumentDescription);
+
+        /// <summary>
+        /// The identifier for the HasOptionalInputArgumentDescription ReferenceType.
+        /// </summary>
+        public static readonly NodeId HasOptionalInputArgumentDescription = new NodeId(Opc.Ua.ReferenceTypes.HasOptionalInputArgumentDescription);
+
+        /// <summary>
+        /// The identifier for the HasGuard ReferenceType.
+        /// </summary>
+        public static readonly NodeId HasGuard = new NodeId(Opc.Ua.ReferenceTypes.HasGuard);
 
         /// <summary>
         /// The identifier for the HasTrueSubState ReferenceType.
@@ -44205,6 +44295,11 @@ namespace Opc.Ua
         public static readonly NodeId TransitionType_TransitionNumber = new NodeId(Opc.Ua.Variables.TransitionType_TransitionNumber);
 
         /// <summary>
+        /// The identifier for the ExpressionGuardVariableType_Expression Variable.
+        /// </summary>
+        public static readonly NodeId ExpressionGuardVariableType_Expression = new NodeId(Opc.Ua.Variables.ExpressionGuardVariableType_Expression);
+
+        /// <summary>
         /// The identifier for the TransitionEventType_Transition Variable.
         /// </summary>
         public static readonly NodeId TransitionEventType_Transition = new NodeId(Opc.Ua.Variables.TransitionEventType_Transition);
@@ -45210,9 +45305,19 @@ namespace Opc.Ua
         public static readonly NodeId DataItemType_ValuePrecision = new NodeId(Opc.Ua.Variables.DataItemType_ValuePrecision);
 
         /// <summary>
-        /// The identifier for the AnalogItemType_InstrumentRange Variable.
+        /// The identifier for the BaseAnalogType_InstrumentRange Variable.
         /// </summary>
-        public static readonly NodeId AnalogItemType_InstrumentRange = new NodeId(Opc.Ua.Variables.AnalogItemType_InstrumentRange);
+        public static readonly NodeId BaseAnalogType_InstrumentRange = new NodeId(Opc.Ua.Variables.BaseAnalogType_InstrumentRange);
+
+        /// <summary>
+        /// The identifier for the BaseAnalogType_EURange Variable.
+        /// </summary>
+        public static readonly NodeId BaseAnalogType_EURange = new NodeId(Opc.Ua.Variables.BaseAnalogType_EURange);
+
+        /// <summary>
+        /// The identifier for the BaseAnalogType_EngineeringUnits Variable.
+        /// </summary>
+        public static readonly NodeId BaseAnalogType_EngineeringUnits = new NodeId(Opc.Ua.Variables.BaseAnalogType_EngineeringUnits);
 
         /// <summary>
         /// The identifier for the AnalogItemType_EURange Variable.
@@ -45220,9 +45325,14 @@ namespace Opc.Ua
         public static readonly NodeId AnalogItemType_EURange = new NodeId(Opc.Ua.Variables.AnalogItemType_EURange);
 
         /// <summary>
-        /// The identifier for the AnalogItemType_EngineeringUnits Variable.
+        /// The identifier for the AnalogUnitType_EngineeringUnits Variable.
         /// </summary>
-        public static readonly NodeId AnalogItemType_EngineeringUnits = new NodeId(Opc.Ua.Variables.AnalogItemType_EngineeringUnits);
+        public static readonly NodeId AnalogUnitType_EngineeringUnits = new NodeId(Opc.Ua.Variables.AnalogUnitType_EngineeringUnits);
+
+        /// <summary>
+        /// The identifier for the AnalogUnitRangeType_EngineeringUnits Variable.
+        /// </summary>
+        public static readonly NodeId AnalogUnitRangeType_EngineeringUnits = new NodeId(Opc.Ua.Variables.AnalogUnitRangeType_EngineeringUnits);
 
         /// <summary>
         /// The identifier for the TwoStateDiscreteType_FalseState Variable.
@@ -59725,14 +59835,44 @@ namespace Opc.Ua
         public static readonly NodeId FiniteTransitionVariableType = new NodeId(Opc.Ua.VariableTypes.FiniteTransitionVariableType);
 
         /// <summary>
+        /// The identifier for the GuardVariableType VariableType.
+        /// </summary>
+        public static readonly NodeId GuardVariableType = new NodeId(Opc.Ua.VariableTypes.GuardVariableType);
+
+        /// <summary>
+        /// The identifier for the ExpressionGuardVariableType VariableType.
+        /// </summary>
+        public static readonly NodeId ExpressionGuardVariableType = new NodeId(Opc.Ua.VariableTypes.ExpressionGuardVariableType);
+
+        /// <summary>
+        /// The identifier for the ElseGuardVariableType VariableType.
+        /// </summary>
+        public static readonly NodeId ElseGuardVariableType = new NodeId(Opc.Ua.VariableTypes.ElseGuardVariableType);
+
+        /// <summary>
         /// The identifier for the DataItemType VariableType.
         /// </summary>
         public static readonly NodeId DataItemType = new NodeId(Opc.Ua.VariableTypes.DataItemType);
 
         /// <summary>
+        /// The identifier for the BaseAnalogType VariableType.
+        /// </summary>
+        public static readonly NodeId BaseAnalogType = new NodeId(Opc.Ua.VariableTypes.BaseAnalogType);
+
+        /// <summary>
         /// The identifier for the AnalogItemType VariableType.
         /// </summary>
         public static readonly NodeId AnalogItemType = new NodeId(Opc.Ua.VariableTypes.AnalogItemType);
+
+        /// <summary>
+        /// The identifier for the AnalogUnitType VariableType.
+        /// </summary>
+        public static readonly NodeId AnalogUnitType = new NodeId(Opc.Ua.VariableTypes.AnalogUnitType);
+
+        /// <summary>
+        /// The identifier for the AnalogUnitRangeType VariableType.
+        /// </summary>
+        public static readonly NodeId AnalogUnitRangeType = new NodeId(Opc.Ua.VariableTypes.AnalogUnitRangeType);
 
         /// <summary>
         /// The identifier for the DiscreteItemType VariableType.
@@ -60339,6 +60479,16 @@ namespace Opc.Ua
         public const string AnalogItemType = "AnalogItemType";
 
         /// <summary>
+        /// The BrowseName for the AnalogUnitRangeType component.
+        /// </summary>
+        public const string AnalogUnitRangeType = "AnalogUnitRangeType";
+
+        /// <summary>
+        /// The BrowseName for the AnalogUnitType component.
+        /// </summary>
+        public const string AnalogUnitType = "AnalogUnitType";
+
+        /// <summary>
         /// The BrowseName for the Annotation component.
         /// </summary>
         public const string Annotation = "Annotation";
@@ -60734,6 +60884,11 @@ namespace Opc.Ua
         public const string AxisScaleType = "AxisScaleType";
 
         /// <summary>
+        /// The BrowseName for the BaseAnalogType component.
+        /// </summary>
+        public const string BaseAnalogType = "BaseAnalogType";
+
+        /// <summary>
         /// The BrowseName for the BaseConditionClassType component.
         /// </summary>
         public const string BaseConditionClassType = "BaseConditionClassType";
@@ -61042,6 +61197,11 @@ namespace Opc.Ua
         /// The BrowseName for the ChannelSecurityToken component.
         /// </summary>
         public const string ChannelSecurityToken = "ChannelSecurityToken";
+
+        /// <summary>
+        /// The BrowseName for the ChoiceStateType component.
+        /// </summary>
+        public const string ChoiceStateType = "ChoiceStateType";
 
         /// <summary>
         /// The BrowseName for the Classification component.
@@ -62034,6 +62194,11 @@ namespace Opc.Ua
         public const string ElementOperand = "ElementOperand";
 
         /// <summary>
+        /// The BrowseName for the ElseGuardVariableType component.
+        /// </summary>
+        public const string ElseGuardVariableType = "ElseGuardVariableType";
+
+        /// <summary>
         /// The BrowseName for the Enable component.
         /// </summary>
         public const string Enable = "Enable";
@@ -62289,6 +62454,16 @@ namespace Opc.Ua
         public const string ExportNamespace = "ExportNamespace";
 
         /// <summary>
+        /// The BrowseName for the Expression component.
+        /// </summary>
+        public const string Expression = "Expression";
+
+        /// <summary>
+        /// The BrowseName for the ExpressionGuardVariableType component.
+        /// </summary>
+        public const string ExpressionGuardVariableType = "ExpressionGuardVariableType";
+
+        /// <summary>
         /// The BrowseName for the ExtensionFieldName_Placeholder component.
         /// </summary>
         public const string ExtensionFieldName_Placeholder = "<ExtensionFieldName>";
@@ -62514,6 +62689,11 @@ namespace Opc.Ua
         public const string GroupVersion = "GroupVersion";
 
         /// <summary>
+        /// The BrowseName for the GuardVariableType component.
+        /// </summary>
+        public const string GuardVariableType = "GuardVariableType";
+
+        /// <summary>
         /// The BrowseName for the Guid component.
         /// </summary>
         public const string Guid = "Guid";
@@ -62542,6 +62722,11 @@ namespace Opc.Ua
         /// The BrowseName for the HasAlarmSuppressionGroup component.
         /// </summary>
         public const string HasAlarmSuppressionGroup = "HasAlarmSuppressionGroup";
+
+        /// <summary>
+        /// The BrowseName for the HasArgumentDescription component.
+        /// </summary>
+        public const string HasArgumentDescription = "HasArgumentDescription";
 
         /// <summary>
         /// The BrowseName for the HasCause component.
@@ -62619,6 +62804,11 @@ namespace Opc.Ua
         public const string HasFalseSubState = "HasFalseSubState";
 
         /// <summary>
+        /// The BrowseName for the HasGuard component.
+        /// </summary>
+        public const string HasGuard = "HasGuard";
+
+        /// <summary>
         /// The BrowseName for the HasHistoricalConfiguration component.
         /// </summary>
         public const string HasHistoricalConfiguration = "HasHistoricalConfiguration";
@@ -62632,6 +62822,11 @@ namespace Opc.Ua
         /// The BrowseName for the HasNotifier component.
         /// </summary>
         public const string HasNotifier = "HasNotifier";
+
+        /// <summary>
+        /// The BrowseName for the HasOptionalInputArgumentDescription component.
+        /// </summary>
+        public const string HasOptionalInputArgumentDescription = "HasOptionalInputArgumentDescription";
 
         /// <summary>
         /// The BrowseName for the HasOrderedComponent component.

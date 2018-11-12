@@ -13716,15 +13716,26 @@ namespace Opc.Ua
         /// </summary>
         private void Initialize()
         {
+            m_networkMessageContentMask = 0;
             m_dataSetMessageContentMask = 0;
         }
         #endregion
 
         #region Public Properties
         /// <summary>
+        /// A description for the NetworkMessageContentMask field.
+        /// </summary>
+        [DataMember(Name = "NetworkMessageContentMask", IsRequired = false, Order = 1)]
+        public uint NetworkMessageContentMask
+        {
+            get { return m_networkMessageContentMask;  }
+            set { m_networkMessageContentMask = value; }
+        }
+
+        /// <summary>
         /// A description for the DataSetMessageContentMask field.
         /// </summary>
-        [DataMember(Name = "DataSetMessageContentMask", IsRequired = false, Order = 1)]
+        [DataMember(Name = "DataSetMessageContentMask", IsRequired = false, Order = 2)]
         public uint DataSetMessageContentMask
         {
             get { return m_dataSetMessageContentMask;  }
@@ -13758,6 +13769,7 @@ namespace Opc.Ua
 
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
+            encoder.WriteUInt32("NetworkMessageContentMask", NetworkMessageContentMask);
             encoder.WriteUInt32("DataSetMessageContentMask", DataSetMessageContentMask);
 
             encoder.PopNamespace();
@@ -13770,6 +13782,7 @@ namespace Opc.Ua
 
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
+            NetworkMessageContentMask = decoder.ReadUInt32("NetworkMessageContentMask");
             DataSetMessageContentMask = decoder.ReadUInt32("DataSetMessageContentMask");
 
             decoder.PopNamespace();
@@ -13791,6 +13804,7 @@ namespace Opc.Ua
             }
 
             if (!base.IsEqual(encodeable)) return false;
+            if (!Utils.IsEqual(m_networkMessageContentMask, value.m_networkMessageContentMask)) return false;
             if (!Utils.IsEqual(m_dataSetMessageContentMask, value.m_dataSetMessageContentMask)) return false;
 
             return true;
@@ -13809,6 +13823,7 @@ namespace Opc.Ua
         {
             JsonDataSetWriterMessageDataType clone = (JsonDataSetWriterMessageDataType)base.MemberwiseClone();
 
+            clone.m_networkMessageContentMask = (uint)Utils.Clone(this.m_networkMessageContentMask);
             clone.m_dataSetMessageContentMask = (uint)Utils.Clone(this.m_dataSetMessageContentMask);
 
             return clone;
@@ -13816,6 +13831,7 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
+        private uint m_networkMessageContentMask;
         private uint m_dataSetMessageContentMask;
         #endregion
     }

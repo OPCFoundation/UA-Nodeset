@@ -2003,6 +2003,7 @@
 #define OpcUaId_StateType 2307
 #define OpcUaId_InitialStateType 2309
 #define OpcUaId_TransitionType 2310
+#define OpcUaId_ChoiceStateType 15109
 #define OpcUaId_TransitionEventType 2311
 #define OpcUaId_AuditUpdateStateEventType 2315
 #define OpcUaId_FileDirectoryType 13353
@@ -2170,6 +2171,9 @@
 #define OpcUaId_HasEffect 54
 #define OpcUaId_HasSubStateMachine 117
 #define OpcUaId_HasHistoricalConfiguration 56
+#define OpcUaId_HasArgumentDescription 129
+#define OpcUaId_HasOptionalInputArgumentDescription 131
+#define OpcUaId_HasGuard 15112
 #define OpcUaId_HasTrueSubState 9004
 #define OpcUaId_HasFalseSubState 9005
 #define OpcUaId_HasAlarmSuppressionGroup 16361
@@ -2898,6 +2902,7 @@
 #define OpcUaId_FiniteTransitionVariableType_Id 2768
 #define OpcUaId_StateType_StateNumber 2308
 #define OpcUaId_TransitionType_TransitionNumber 2312
+#define OpcUaId_ExpressionGuardVariableType_Expression 15129
 #define OpcUaId_TransitionEventType_Transition 2774
 #define OpcUaId_TransitionEventType_Transition_Id 3754
 #define OpcUaId_TransitionEventType_FromState 2775
@@ -3099,9 +3104,12 @@
 #define OpcUaId_WellKnownRole_SecurityAdmin_RemoveEndpoint_InputArguments 16268
 #define OpcUaId_DataItemType_Definition 2366
 #define OpcUaId_DataItemType_ValuePrecision 2367
-#define OpcUaId_AnalogItemType_InstrumentRange 2370
+#define OpcUaId_BaseAnalogType_InstrumentRange 17567
+#define OpcUaId_BaseAnalogType_EURange 17568
+#define OpcUaId_BaseAnalogType_EngineeringUnits 17569
 #define OpcUaId_AnalogItemType_EURange 2369
-#define OpcUaId_AnalogItemType_EngineeringUnits 2371
+#define OpcUaId_AnalogUnitType_EngineeringUnits 17502
+#define OpcUaId_AnalogUnitRangeType_EngineeringUnits 17575
 #define OpcUaId_TwoStateDiscreteType_FalseState 2374
 #define OpcUaId_TwoStateDiscreteType_TrueState 2375
 #define OpcUaId_MultiStateDiscreteType_EnumStrings 2377
@@ -6004,8 +6012,14 @@
 #define OpcUaId_TransitionVariableType 2762
 #define OpcUaId_FiniteStateVariableType 2760
 #define OpcUaId_FiniteTransitionVariableType 2767
+#define OpcUaId_GuardVariableType 15113
+#define OpcUaId_ExpressionGuardVariableType 15128
+#define OpcUaId_ElseGuardVariableType 15317
 #define OpcUaId_DataItemType 2365
+#define OpcUaId_BaseAnalogType 15318
 #define OpcUaId_AnalogItemType 2368
+#define OpcUaId_AnalogUnitType 17497
+#define OpcUaId_AnalogUnitRangeType 17570
 #define OpcUaId_DiscreteItemType 2372
 #define OpcUaId_TwoStateDiscreteType 2373
 #define OpcUaId_MultiStateDiscreteType 2376
