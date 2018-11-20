@@ -311,7 +311,7 @@
       <Field Name="ServerTimestamp" Value="2" />
       <Field Name="SourcePicoSeconds" Value="3" />
       <Field Name="ServerPicoSeconds" Value="4" />
-      <Field Name="RawDataEncoding" Value="5" />
+      <Field Name="RawData" Value="5" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15584" BrowseName="OptionSetValues" ParentNodeId="i=15583" DataType="LocalizedText" ValueRank="1">
@@ -351,7 +351,7 @@
         <LocalizedText>
           <Locale>
           </Locale>
-          <Text>RawDataEncoding</Text>
+          <Text>RawData</Text>
         </LocalizedText>
       </ListOfLocalizedText>
     </Value>
@@ -568,7 +568,7 @@
     </References>
     <Definition Name="OverrideValueHandling">
       <Field Name="Disabled" Value="0" />
-      <Field Name="LastUseableValue" Value="1" />
+      <Field Name="LastUsableValue" Value="1" />
       <Field Name="OverrideValue" Value="2" />
     </Definition>
   </UADataType>
@@ -589,7 +589,7 @@
         <LocalizedText>
           <Locale>
           </Locale>
-          <Text>LastUseableValue</Text>
+          <Text>LastUsableValue</Text>
         </LocalizedText>
         <LocalizedText>
           <Locale>
@@ -674,7 +674,7 @@
       <Field Name="SequenceNumber" Value="5" />
       <Field Name="PayloadHeader" Value="6" />
       <Field Name="Timestamp" Value="7" />
-      <Field Name="Picoseconds" Value="8" />
+      <Field Name="PicoSeconds" Value="8" />
       <Field Name="DataSetClassId" Value="9" />
       <Field Name="PromotedFields" Value="10" />
     </Definition>
@@ -731,7 +731,7 @@
         <LocalizedText>
           <Locale>
           </Locale>
-          <Text>Picoseconds</Text>
+          <Text>PicoSeconds</Text>
         </LocalizedText>
         <LocalizedText>
           <Locale>

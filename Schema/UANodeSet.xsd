@@ -156,7 +156,7 @@
       <xs:element name="RolePermissions" type="ListOfRolePermissions" minOccurs="0"></xs:element>
       <xs:element name="RequiredModel" type="ModelTableEntry" minOccurs="0" maxOccurs="unbounded"></xs:element>
     </xs:sequence>
-    <xs:attribute name="ModelUri" type="xs:string" use="optional"></xs:attribute>
+    <xs:attribute name="ModelUri" type="xs:string" use="required"></xs:attribute>
     <xs:attribute name="Version" type="xs:string" use="optional"></xs:attribute>
     <xs:attribute name="PublicationDate" type="xs:dateTime" use="optional"></xs:attribute>
     <xs:attribute name="AccessRestrictions" type="AccessRestriction" default="0"></xs:attribute>
@@ -179,7 +179,7 @@
   <xs:complexType name="NodeIdAlias">
     <xs:simpleContent>
       <xs:extension base="NodeId">
-        <xs:attribute name="Alias" type="xs:string"></xs:attribute>
+        <xs:attribute name="Alias" type="xs:string" use="required"></xs:attribute>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
@@ -312,6 +312,7 @@
       <xs:element name="Category" type="xs:string" minOccurs="0" maxOccurs="unbounded"></xs:element>
       <xs:element name="References" type="ListOfReferences" minOccurs="0"></xs:element>
       <xs:element name="RolePermissions" type="ListOfRolePermissions" minOccurs="0"></xs:element>
+      <xs:element name="Documentation" type="xs:string" minOccurs="0"></xs:element>
       <xs:element name="Extensions" type="ListOfExtensions" minOccurs="0"></xs:element>
     </xs:sequence>
     <xs:attribute name="NodeId" type="NodeId" use="required"></xs:attribute>
@@ -367,7 +368,6 @@
     <xs:sequence>
       <xs:element name="Name" type="xs:string" minOccurs="0" maxOccurs="1"></xs:element>
       <xs:element name="Description" type="LocalizedText" minOccurs="0" maxOccurs="unbounded"></xs:element>
-      <xs:element name="Documentation" type="xs:string" minOccurs="0" maxOccurs="1"></xs:element>
     </xs:sequence>
   </xs:complexType>
 
