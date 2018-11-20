@@ -5829,10 +5829,10 @@ namespace Opc.Ua
         ServerPicoSeconds = 16,
 
         /// <summary>
-        /// A description for the RawDataEncoding field.
+        /// A description for the RawData field.
         /// </summary>
-        [EnumMember(Value = "RawDataEncoding_32")]
-        RawDataEncoding = 32,
+        [EnumMember(Value = "RawData_32")]
+        RawData = 32,
     }
 
     #region DataSetFieldContentMaskCollection Class
@@ -11209,10 +11209,10 @@ namespace Opc.Ua
         Disabled = 0,
 
         /// <summary>
-        /// A description for the LastUseableValue field.
+        /// A description for the LastUsableValue field.
         /// </summary>
-        [EnumMember(Value = "LastUseableValue_1")]
-        LastUseableValue = 1,
+        [EnumMember(Value = "LastUsableValue_1")]
+        LastUsableValue = 1,
 
         /// <summary>
         /// A description for the OverrideValue field.
@@ -12016,10 +12016,10 @@ namespace Opc.Ua
         Timestamp = 128,
 
         /// <summary>
-        /// A description for the Picoseconds field.
+        /// A description for the PicoSeconds field.
         /// </summary>
-        [EnumMember(Value = "Picoseconds_256")]
-        Picoseconds = 256,
+        [EnumMember(Value = "PicoSeconds_256")]
+        PicoSeconds = 256,
 
         /// <summary>
         /// A description for the DataSetClassId field.

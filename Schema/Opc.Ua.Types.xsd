@@ -1279,7 +1279,7 @@
   <xs:simpleType  name="OverrideValueHandling">
     <xs:restriction base="xs:string">
       <xs:enumeration value="Disabled_0" />
-      <xs:enumeration value="LastUseableValue_1" />
+      <xs:enumeration value="LastUsableValue_1" />
       <xs:enumeration value="OverrideValue_2" />
     </xs:restriction>
   </xs:simpleType>

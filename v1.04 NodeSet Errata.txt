@@ -42,5 +42,6 @@
 0004432: Encodings for Services still in Core NodeSet
 0004450: Add Types for Released Amendments 1, 2 and 3
 0004451: Fix Part 14 Inconsistencies
+0004465: UANodeSet.xsd some attributes should not be optional
 
 	

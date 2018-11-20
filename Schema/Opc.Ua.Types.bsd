@@ -446,7 +446,7 @@
     <opc:EnumeratedValue Name="ServerTimestamp" Value="4" />
     <opc:EnumeratedValue Name="SourcePicoSeconds" Value="8" />
     <opc:EnumeratedValue Name="ServerPicoSeconds" Value="16" />
-    <opc:EnumeratedValue Name="RawDataEncoding" Value="32" />
+    <opc:EnumeratedValue Name="RawData" Value="32" />
   </opc:EnumeratedType>
 
   <opc:StructuredType Name="DataSetWriterDataType" BaseType="ua:ExtensionObject">
@@ -606,7 +606,7 @@
 
   <opc:EnumeratedType Name="OverrideValueHandling" LengthInBits="32">
     <opc:EnumeratedValue Name="Disabled" Value="0" />
-    <opc:EnumeratedValue Name="LastUseableValue" Value="1" />
+    <opc:EnumeratedValue Name="LastUsableValue" Value="1" />
     <opc:EnumeratedValue Name="OverrideValue" Value="2" />
   </opc:EnumeratedType>
 
@@ -640,7 +640,7 @@
     <opc:EnumeratedValue Name="SequenceNumber" Value="32" />
     <opc:EnumeratedValue Name="PayloadHeader" Value="64" />
     <opc:EnumeratedValue Name="Timestamp" Value="128" />
-    <opc:EnumeratedValue Name="Picoseconds" Value="256" />
+    <opc:EnumeratedValue Name="PicoSeconds" Value="256" />
     <opc:EnumeratedValue Name="DataSetClassId" Value="512" />
     <opc:EnumeratedValue Name="PromotedFields" Value="1024" />
   </opc:EnumeratedType>
