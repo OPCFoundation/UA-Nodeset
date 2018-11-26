@@ -136,7 +136,7 @@
 
   <opc:StructuredType Name="QualifiedName">
     <opc:Documentation>A string qualified with a namespace index.</opc:Documentation>
-    <opc:Field Name="NamespaceIndex" TypeName="opc:Int32" />
+    <opc:Field Name="NamespaceIndex" TypeName="opc:UInt16" />
     <opc:Field Name="Name" TypeName="opc:CharArray" />
   </opc:StructuredType>
 
@@ -717,7 +717,6 @@
   </opc:EnumeratedType>
 
   <opc:StructuredType Name="JsonDataSetWriterMessageDataType" BaseType="tns:DataSetWriterMessageDataType">
-    <opc:Field Name="NetworkMessageContentMask" TypeName="tns:JsonNetworkMessageContentMask" />
     <opc:Field Name="DataSetMessageContentMask" TypeName="tns:JsonDataSetMessageContentMask" />
   </opc:StructuredType>
 

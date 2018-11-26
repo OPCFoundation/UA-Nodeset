@@ -43,5 +43,12 @@
 0004450: Add Types for Released Amendments 1, 2 and 3
 0004451: Fix Part 14 Inconsistencies
 0004465: UANodeSet.xsd some attributes should not be optional
+0004477: Various Part 14 Inconsistencies
+0004482: Various Part 10 Inconsistencies
+0004481: Various Part 9 Inconsistencies
+0004480: Various Part 5 Inconsistencies
+0004479: BrowseNames of well known roles to not match specification
+0004470: UadpDataSetReaderMessageType does not have a DataSetOrdering variable
 
+	
 	

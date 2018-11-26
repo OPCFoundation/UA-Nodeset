@@ -3015,6 +3015,41 @@ namespace Opc.Ua
         public const uint AlarmMetricsType_Reset = 18666;
 
         /// <summary>
+        /// The identifier for the SystemStateStateMachineType_Start Method.
+        /// </summary>
+        public const uint SystemStateStateMachineType_Start = 18793;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_Maintain Method.
+        /// </summary>
+        public const uint SystemStateStateMachineType_Maintain = 18794;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_Stop Method.
+        /// </summary>
+        public const uint SystemStateStateMachineType_Stop = 18795;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_PlaceOutOfService Method.
+        /// </summary>
+        public const uint SystemStateStateMachineType_PlaceOutOfService = 18796;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_QuickShutdown Method.
+        /// </summary>
+        public const uint SystemStateStateMachineType_QuickShutdown = 18797;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_QuickStart Method.
+        /// </summary>
+        public const uint SystemStateStateMachineType_QuickStart = 18798;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OutOfServiceShutdown Method.
+        /// </summary>
+        public const uint SystemStateStateMachineType_OutOfServiceShutdown = 18799;
+
+        /// <summary>
         /// The identifier for the ProgramStateMachineType_Start Method.
         /// </summary>
         public const uint ProgramStateMachineType_Start = 2426;
@@ -4428,6 +4463,96 @@ namespace Opc.Ua
         /// The identifier for the ExclusiveLimitAlarmType_LimitState Object.
         /// </summary>
         public const uint ExclusiveLimitAlarmType_LimitState = 9455;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_Operating Object.
+        /// </summary>
+        public const uint SystemStateStateMachineType_Operating = 17602;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_ShuttingDown Object.
+        /// </summary>
+        public const uint SystemStateStateMachineType_ShuttingDown = 17604;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_StartingUp Object.
+        /// </summary>
+        public const uint SystemStateStateMachineType_StartingUp = 17708;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_Shutdown Object.
+        /// </summary>
+        public const uint SystemStateStateMachineType_Shutdown = 17712;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OutOfService Object.
+        /// </summary>
+        public const uint SystemStateStateMachineType_OutOfService = 17714;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_Maintenance Object.
+        /// </summary>
+        public const uint SystemStateStateMachineType_Maintenance = 17716;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_ShutdownToOperating Object.
+        /// </summary>
+        public const uint SystemStateStateMachineType_ShutdownToOperating = 18769;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OperatingToShutdown Object.
+        /// </summary>
+        public const uint SystemStateStateMachineType_OperatingToShutdown = 18771;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_ShuttingDownToShutdown Object.
+        /// </summary>
+        public const uint SystemStateStateMachineType_ShuttingDownToShutdown = 18773;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OperatingToShuttingDown Object.
+        /// </summary>
+        public const uint SystemStateStateMachineType_OperatingToShuttingDown = 18775;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_StartingUpToOperating Object.
+        /// </summary>
+        public const uint SystemStateStateMachineType_StartingUpToOperating = 18777;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_ShutdownToStartingUp Object.
+        /// </summary>
+        public const uint SystemStateStateMachineType_ShutdownToStartingUp = 18779;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OutOfServiceToShutdown Object.
+        /// </summary>
+        public const uint SystemStateStateMachineType_OutOfServiceToShutdown = 18781;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_ShutdownToOutOfService Object.
+        /// </summary>
+        public const uint SystemStateStateMachineType_ShutdownToOutOfService = 18783;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OutOfServiceToOperating Object.
+        /// </summary>
+        public const uint SystemStateStateMachineType_OutOfServiceToOperating = 18785;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OperatingToOutOfService Object.
+        /// </summary>
+        public const uint SystemStateStateMachineType_OperatingToOutOfService = 18787;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_MaintenanceToOutOfService Object.
+        /// </summary>
+        public const uint SystemStateStateMachineType_MaintenanceToOutOfService = 18789;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OutOfServiceToMaintenance Object.
+        /// </summary>
+        public const uint SystemStateStateMachineType_OutOfServiceToMaintenance = 18791;
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType_FinalResultData Object.
@@ -10110,9 +10235,9 @@ namespace Opc.Ua
         public const uint StatisticalConditionClassType = 18665;
 
         /// <summary>
-        /// The identifier for the TestingConditionClassType ObjectType.
+        /// The identifier for the TestingConditionSubClassType ObjectType.
         /// </summary>
-        public const uint TestingConditionClassType = 17221;
+        public const uint TestingConditionSubClassType = 17221;
 
         /// <summary>
         /// The identifier for the AuditConditionEventType ObjectType.
@@ -10150,9 +10275,9 @@ namespace Opc.Ua
         public const uint AuditConditionShelvingEventType = 11093;
 
         /// <summary>
-        /// The identifier for the AuditConditionSuppressEventType ObjectType.
+        /// The identifier for the AuditConditionSuppressionEventType ObjectType.
         /// </summary>
-        public const uint AuditConditionSuppressEventType = 17225;
+        public const uint AuditConditionSuppressionEventType = 17225;
 
         /// <summary>
         /// The identifier for the AuditConditionSilenceEventType ObjectType.
@@ -10188,6 +10313,11 @@ namespace Opc.Ua
         /// The identifier for the AlarmMetricsType ObjectType.
         /// </summary>
         public const uint AlarmMetricsType = 17279;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType ObjectType.
+        /// </summary>
+        public const uint SystemStateStateMachineType = 17588;
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType ObjectType.
@@ -16170,11 +16300,6 @@ namespace Opc.Ua
         public const uint AlarmGroupType_AlarmConditionInstance_Placeholder_ReceiveTime = 16412;
 
         /// <summary>
-        /// The identifier for the AlarmGroupType_AlarmConditionInstance_Placeholder_LocalTime Variable.
-        /// </summary>
-        public const uint AlarmGroupType_AlarmConditionInstance_Placeholder_LocalTime = 16413;
-
-        /// <summary>
         /// The identifier for the AlarmGroupType_AlarmConditionInstance_Placeholder_Message Variable.
         /// </summary>
         public const uint AlarmGroupType_AlarmConditionInstance_Placeholder_Message = 16414;
@@ -18700,6 +18825,106 @@ namespace Opc.Ua
         public const uint AlarmRateVariableType_Rate = 17278;
 
         /// <summary>
+        /// The identifier for the SystemStateStateMachineType_CurrentState_Id Variable.
+        /// </summary>
+        public const uint SystemStateStateMachineType_CurrentState_Id = 17590;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_LastTransition_Id Variable.
+        /// </summary>
+        public const uint SystemStateStateMachineType_LastTransition_Id = 17595;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_Operating_StateNumber Variable.
+        /// </summary>
+        public const uint SystemStateStateMachineType_Operating_StateNumber = 17603;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_ShuttingDown_StateNumber Variable.
+        /// </summary>
+        public const uint SystemStateStateMachineType_ShuttingDown_StateNumber = 17605;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_StartingUp_StateNumber Variable.
+        /// </summary>
+        public const uint SystemStateStateMachineType_StartingUp_StateNumber = 17709;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_Shutdown_StateNumber Variable.
+        /// </summary>
+        public const uint SystemStateStateMachineType_Shutdown_StateNumber = 17713;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OutOfService_StateNumber Variable.
+        /// </summary>
+        public const uint SystemStateStateMachineType_OutOfService_StateNumber = 17715;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_Maintenance_StateNumber Variable.
+        /// </summary>
+        public const uint SystemStateStateMachineType_Maintenance_StateNumber = 17717;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_ShutdownToOperating_TransitionNumber Variable.
+        /// </summary>
+        public const uint SystemStateStateMachineType_ShutdownToOperating_TransitionNumber = 18770;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OperatingToShutdown_TransitionNumber Variable.
+        /// </summary>
+        public const uint SystemStateStateMachineType_OperatingToShutdown_TransitionNumber = 18772;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_ShuttingDownToShutdown_TransitionNumber Variable.
+        /// </summary>
+        public const uint SystemStateStateMachineType_ShuttingDownToShutdown_TransitionNumber = 18774;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OperatingToShuttingDown_TransitionNumber Variable.
+        /// </summary>
+        public const uint SystemStateStateMachineType_OperatingToShuttingDown_TransitionNumber = 18776;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_StartingUpToOperating_TransitionNumber Variable.
+        /// </summary>
+        public const uint SystemStateStateMachineType_StartingUpToOperating_TransitionNumber = 18778;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_ShutdownToStartingUp_TransitionNumber Variable.
+        /// </summary>
+        public const uint SystemStateStateMachineType_ShutdownToStartingUp_TransitionNumber = 18780;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OutOfServiceToShutdown_TransitionNumber Variable.
+        /// </summary>
+        public const uint SystemStateStateMachineType_OutOfServiceToShutdown_TransitionNumber = 18782;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_ShutdownToOutOfService_TransitionNumber Variable.
+        /// </summary>
+        public const uint SystemStateStateMachineType_ShutdownToOutOfService_TransitionNumber = 18784;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OutOfServiceToOperating_TransitionNumber Variable.
+        /// </summary>
+        public const uint SystemStateStateMachineType_OutOfServiceToOperating_TransitionNumber = 18786;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OperatingToOutOfService_TransitionNumber Variable.
+        /// </summary>
+        public const uint SystemStateStateMachineType_OperatingToOutOfService_TransitionNumber = 18788;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_MaintenanceToOutOfService_TransitionNumber Variable.
+        /// </summary>
+        public const uint SystemStateStateMachineType_MaintenanceToOutOfService_TransitionNumber = 18790;
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OutOfServiceToMaintenance_TransitionNumber Variable.
+        /// </summary>
+        public const uint SystemStateStateMachineType_OutOfServiceToMaintenance_TransitionNumber = 18792;
+
+        /// <summary>
         /// The identifier for the ProgramStateMachineType_CurrentState Variable.
         /// </summary>
         public const uint ProgramStateMachineType_CurrentState = 3830;
@@ -18770,69 +18995,69 @@ namespace Opc.Ua
         public const uint ProgramStateMachineType_MaxRecycleCount = 2398;
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic Variable.
         /// </summary>
-        public const uint ProgramStateMachineType_ProgramDiagnostics = 2399;
+        public const uint ProgramStateMachineType_ProgramDiagnostic = 2399;
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_CreateSessionId Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_CreateSessionId Variable.
         /// </summary>
-        public const uint ProgramStateMachineType_ProgramDiagnostics_CreateSessionId = 3840;
+        public const uint ProgramStateMachineType_ProgramDiagnostic_CreateSessionId = 3840;
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_CreateClientName Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_CreateClientName Variable.
         /// </summary>
-        public const uint ProgramStateMachineType_ProgramDiagnostics_CreateClientName = 3841;
+        public const uint ProgramStateMachineType_ProgramDiagnostic_CreateClientName = 3841;
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_InvocationCreationTime Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_InvocationCreationTime Variable.
         /// </summary>
-        public const uint ProgramStateMachineType_ProgramDiagnostics_InvocationCreationTime = 3842;
+        public const uint ProgramStateMachineType_ProgramDiagnostic_InvocationCreationTime = 3842;
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastTransitionTime Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_LastTransitionTime Variable.
         /// </summary>
-        public const uint ProgramStateMachineType_ProgramDiagnostics_LastTransitionTime = 3843;
+        public const uint ProgramStateMachineType_ProgramDiagnostic_LastTransitionTime = 3843;
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodCall Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_LastMethodCall Variable.
         /// </summary>
-        public const uint ProgramStateMachineType_ProgramDiagnostics_LastMethodCall = 3844;
+        public const uint ProgramStateMachineType_ProgramDiagnostic_LastMethodCall = 3844;
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodSessionId Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_LastMethodSessionId Variable.
         /// </summary>
-        public const uint ProgramStateMachineType_ProgramDiagnostics_LastMethodSessionId = 3845;
+        public const uint ProgramStateMachineType_ProgramDiagnostic_LastMethodSessionId = 3845;
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodInputArguments Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_LastMethodInputArguments Variable.
         /// </summary>
-        public const uint ProgramStateMachineType_ProgramDiagnostics_LastMethodInputArguments = 3846;
+        public const uint ProgramStateMachineType_ProgramDiagnostic_LastMethodInputArguments = 3846;
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodOutputArguments Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_LastMethodOutputArguments Variable.
         /// </summary>
-        public const uint ProgramStateMachineType_ProgramDiagnostics_LastMethodOutputArguments = 3847;
+        public const uint ProgramStateMachineType_ProgramDiagnostic_LastMethodOutputArguments = 3847;
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodInputValues Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_LastMethodInputValues Variable.
         /// </summary>
-        public const uint ProgramStateMachineType_ProgramDiagnostics_LastMethodInputValues = 15038;
+        public const uint ProgramStateMachineType_ProgramDiagnostic_LastMethodInputValues = 15038;
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodOutputValues Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_LastMethodOutputValues Variable.
         /// </summary>
-        public const uint ProgramStateMachineType_ProgramDiagnostics_LastMethodOutputValues = 15040;
+        public const uint ProgramStateMachineType_ProgramDiagnostic_LastMethodOutputValues = 15040;
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodCallTime Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_LastMethodCallTime Variable.
         /// </summary>
-        public const uint ProgramStateMachineType_ProgramDiagnostics_LastMethodCallTime = 3848;
+        public const uint ProgramStateMachineType_ProgramDiagnostic_LastMethodCallTime = 3848;
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodReturnStatus Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_LastMethodReturnStatus Variable.
         /// </summary>
-        public const uint ProgramStateMachineType_ProgramDiagnostics_LastMethodReturnStatus = 3849;
+        public const uint ProgramStateMachineType_ProgramDiagnostic_LastMethodReturnStatus = 3849;
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType_Halted_StateNumber Variable.
@@ -21025,6 +21250,11 @@ namespace Opc.Ua
         public const uint PublishSubscribeType_ConnectionName_Placeholder_Address_NetworkInterface = 15533;
 
         /// <summary>
+        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Address_NetworkInterface_Selections Variable.
+        /// </summary>
+        public const uint PublishSubscribeType_ConnectionName_Placeholder_Address_NetworkInterface_Selections = 17503;
+
+        /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Status_State Variable.
         /// </summary>
         public const uint PublishSubscribeType_ConnectionName_Placeholder_Status_State = 14420;
@@ -21055,11 +21285,6 @@ namespace Opc.Ua
         public const uint PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel = 18672;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange = 18673;
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalError Variable.
         /// </summary>
         public const uint PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalError = 18674;
@@ -21078,11 +21303,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel = 18677;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalError_TimeFirstChange = 18678;
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_SubError Variable.
@@ -21110,11 +21330,6 @@ namespace Opc.Ua
         public const uint PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel = 18685;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange = 18686;
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod = 18687;
@@ -21133,11 +21348,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = 18690;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = 18691;
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -21160,11 +21370,6 @@ namespace Opc.Ua
         public const uint PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = 18695;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = 18696;
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError = 18697;
@@ -21183,11 +21388,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = 18700;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = 18701;
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent Variable.
@@ -21210,11 +21410,6 @@ namespace Opc.Ua
         public const uint PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = 18705;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = 18706;
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod = 18707;
@@ -21233,11 +21428,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = 18710;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = 18711;
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_LiveValues_ResolvedAddress Variable.
@@ -21385,11 +21575,6 @@ namespace Opc.Ua
         public const uint PublishSubscribeType_Diagnostics_TotalInformation_DiagnosticsLevel = 18720;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_Diagnostics_TotalInformation_TimeFirstChange = 18721;
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_Diagnostics_TotalError Variable.
         /// </summary>
         public const uint PublishSubscribeType_Diagnostics_TotalError = 18722;
@@ -21408,11 +21593,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishSubscribeType_Diagnostics_TotalError_DiagnosticsLevel = 18725;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_Diagnostics_TotalError_TimeFirstChange = 18726;
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_Diagnostics_SubError Variable.
@@ -21440,11 +21620,6 @@ namespace Opc.Ua
         public const uint PublishSubscribeType_Diagnostics_Counters_StateError_DiagnosticsLevel = 18733;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_Diagnostics_Counters_StateError_TimeFirstChange = 18734;
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint PublishSubscribeType_Diagnostics_Counters_StateOperationalByMethod = 18735;
@@ -21463,11 +21638,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishSubscribeType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = 18738;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = 18739;
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -21490,11 +21660,6 @@ namespace Opc.Ua
         public const uint PublishSubscribeType_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = 18743;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = 18744;
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint PublishSubscribeType_Diagnostics_Counters_StateOperationalFromError = 18745;
@@ -21513,11 +21678,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishSubscribeType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = 18748;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = 18749;
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StatePausedByParent Variable.
@@ -21540,11 +21700,6 @@ namespace Opc.Ua
         public const uint PublishSubscribeType_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = 18753;
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = 18754;
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint PublishSubscribeType_Diagnostics_Counters_StateDisabledByMethod = 18755;
@@ -21563,11 +21718,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishSubscribeType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = 18758;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribeType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = 18759;
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_Diagnostics_LiveValues_ConfiguredDataSetWriters Variable.
@@ -21675,6 +21825,11 @@ namespace Opc.Ua
         public const uint PublishSubscribe_ConnectionName_Placeholder_Address_NetworkInterface = 15863;
 
         /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Address_NetworkInterface_Selections Variable.
+        /// </summary>
+        public const uint PublishSubscribe_ConnectionName_Placeholder_Address_NetworkInterface_Selections = 17506;
+
+        /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Status_State Variable.
         /// </summary>
         public const uint PublishSubscribe_ConnectionName_Placeholder_Status_State = 15892;
@@ -21705,11 +21860,6 @@ namespace Opc.Ua
         public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel = 16013;
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange = 16020;
-
-        /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError Variable.
         /// </summary>
         public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError = 16059;
@@ -21728,11 +21878,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel = 16074;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_TimeFirstChange = 16075;
 
         /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_SubError Variable.
@@ -21760,11 +21905,6 @@ namespace Opc.Ua
         public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel = 16124;
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange = 16160;
-
-        /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod = 16283;
@@ -21783,11 +21923,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = 17300;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = 17303;
 
         /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -21810,11 +21945,6 @@ namespace Opc.Ua
         public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = 17335;
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = 17336;
-
-        /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError = 17337;
@@ -21833,11 +21963,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = 17340;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = 17341;
 
         /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent Variable.
@@ -21860,11 +21985,6 @@ namespace Opc.Ua
         public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = 17345;
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = 17346;
-
-        /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod = 17347;
@@ -21883,11 +22003,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = 17350;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = 17351;
 
         /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_LiveValues_ResolvedAddress Variable.
@@ -22035,11 +22150,6 @@ namespace Opc.Ua
         public const uint PublishSubscribe_Diagnostics_TotalInformation_DiagnosticsLevel = 17414;
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribe_Diagnostics_TotalInformation_TimeFirstChange = 17415;
-
-        /// <summary>
         /// The identifier for the PublishSubscribe_Diagnostics_TotalError Variable.
         /// </summary>
         public const uint PublishSubscribe_Diagnostics_TotalError = 17416;
@@ -22058,11 +22168,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishSubscribe_Diagnostics_TotalError_DiagnosticsLevel = 17419;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribe_Diagnostics_TotalError_TimeFirstChange = 17420;
 
         /// <summary>
         /// The identifier for the PublishSubscribe_Diagnostics_SubError Variable.
@@ -22090,11 +22195,6 @@ namespace Opc.Ua
         public const uint PublishSubscribe_Diagnostics_Counters_StateError_DiagnosticsLevel = 17429;
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribe_Diagnostics_Counters_StateError_TimeFirstChange = 17430;
-
-        /// <summary>
         /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod = 17431;
@@ -22113,11 +22213,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = 17434;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = 17435;
 
         /// <summary>
         /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -22140,11 +22235,6 @@ namespace Opc.Ua
         public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = 17439;
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = 17440;
-
-        /// <summary>
         /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalFromError = 17441;
@@ -22163,11 +22253,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = 17444;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = 17445;
 
         /// <summary>
         /// The identifier for the PublishSubscribe_Diagnostics_Counters_StatePausedByParent Variable.
@@ -22190,11 +22275,6 @@ namespace Opc.Ua
         public const uint PublishSubscribe_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = 17449;
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribe_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = 17450;
-
-        /// <summary>
         /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod = 17451;
@@ -22213,11 +22293,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = 17454;
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = 17455;
 
         /// <summary>
         /// The identifier for the PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetWriters Variable.
@@ -22310,11 +22385,6 @@ namespace Opc.Ua
         public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel = 18876;
 
         /// <summary>
-        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange = 18877;
-
-        /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalError Variable.
         /// </summary>
         public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalError = 18878;
@@ -22333,11 +22403,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel = 18881;
-
-        /// <summary>
-        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalError_TimeFirstChange = 18882;
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_SubError Variable.
@@ -22365,11 +22430,6 @@ namespace Opc.Ua
         public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel = 18889;
 
         /// <summary>
-        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange = 18890;
-
-        /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod = 18891;
@@ -22388,11 +22448,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = 18894;
-
-        /// <summary>
-        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = 18895;
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -22415,11 +22470,6 @@ namespace Opc.Ua
         public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = 18899;
 
         /// <summary>
-        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = 18900;
-
-        /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError = 18901;
@@ -22438,11 +22488,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = 18904;
-
-        /// <summary>
-        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = 18905;
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent Variable.
@@ -22465,11 +22510,6 @@ namespace Opc.Ua
         public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = 18909;
 
         /// <summary>
-        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = 18910;
-
-        /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod = 18911;
@@ -22490,11 +22530,6 @@ namespace Opc.Ua
         public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = 18914;
 
         /// <summary>
-        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = 18915;
-
-        /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages Variable.
         /// </summary>
         public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages = 18917;
@@ -22513,11 +22548,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel = 18920;
-
-        /// <summary>
-        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange = 18921;
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MessageSequenceNumber_DiagnosticsLevel Variable.
@@ -22635,11 +22665,6 @@ namespace Opc.Ua
         public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel = 18935;
 
         /// <summary>
-        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange = 18936;
-
-        /// <summary>
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalError Variable.
         /// </summary>
         public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalError = 18937;
@@ -22658,11 +22683,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel = 18940;
-
-        /// <summary>
-        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalError_TimeFirstChange = 18941;
 
         /// <summary>
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_SubError Variable.
@@ -22690,11 +22710,6 @@ namespace Opc.Ua
         public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel = 18948;
 
         /// <summary>
-        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange = 18949;
-
-        /// <summary>
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod = 18950;
@@ -22713,11 +22728,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = 18953;
-
-        /// <summary>
-        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = 18954;
 
         /// <summary>
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -22740,11 +22750,6 @@ namespace Opc.Ua
         public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = 18958;
 
         /// <summary>
-        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = 18959;
-
-        /// <summary>
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError = 18960;
@@ -22763,11 +22768,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = 18963;
-
-        /// <summary>
-        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = 18964;
 
         /// <summary>
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent Variable.
@@ -22790,11 +22790,6 @@ namespace Opc.Ua
         public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = 18968;
 
         /// <summary>
-        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = 18969;
-
-        /// <summary>
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod = 18970;
@@ -22815,11 +22810,6 @@ namespace Opc.Ua
         public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = 18973;
 
         /// <summary>
-        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = 18974;
-
-        /// <summary>
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages Variable.
         /// </summary>
         public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages = 18976;
@@ -22838,11 +22828,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel = 18979;
-
-        /// <summary>
-        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange = 18980;
 
         /// <summary>
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MessageSequenceNumber_DiagnosticsLevel Variable.
@@ -22950,11 +22935,6 @@ namespace Opc.Ua
         public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel = 18994;
 
         /// <summary>
-        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange = 18995;
-
-        /// <summary>
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalError Variable.
         /// </summary>
         public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalError = 18996;
@@ -22973,11 +22953,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel = 18999;
-
-        /// <summary>
-        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalError_TimeFirstChange = 19000;
 
         /// <summary>
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_SubError Variable.
@@ -23005,11 +22980,6 @@ namespace Opc.Ua
         public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel = 19007;
 
         /// <summary>
-        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange = 19008;
-
-        /// <summary>
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod = 19009;
@@ -23028,11 +22998,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = 19012;
-
-        /// <summary>
-        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = 19013;
 
         /// <summary>
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -23055,11 +23020,6 @@ namespace Opc.Ua
         public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = 19017;
 
         /// <summary>
-        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = 19018;
-
-        /// <summary>
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError = 19019;
@@ -23078,11 +23038,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = 19022;
-
-        /// <summary>
-        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = 19023;
 
         /// <summary>
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent Variable.
@@ -23105,11 +23060,6 @@ namespace Opc.Ua
         public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = 19027;
 
         /// <summary>
-        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = 19028;
-
-        /// <summary>
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod = 19029;
@@ -23130,11 +23080,6 @@ namespace Opc.Ua
         public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = 19032;
 
         /// <summary>
-        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = 19033;
-
-        /// <summary>
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages Variable.
         /// </summary>
         public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages = 19035;
@@ -23153,11 +23098,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel = 19038;
-
-        /// <summary>
-        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange = 19039;
 
         /// <summary>
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MessageSequenceNumber_DiagnosticsLevel Variable.
@@ -23390,6 +23330,11 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_Address_NetworkInterface = 17202;
 
         /// <summary>
+        /// The identifier for the PubSubConnectionType_Address_NetworkInterface_Selections Variable.
+        /// </summary>
+        public const uint PubSubConnectionType_Address_NetworkInterface_Selections = 17576;
+
+        /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_SecurityMode Variable.
         /// </summary>
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_SecurityMode = 17311;
@@ -23465,11 +23410,6 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel = 19112;
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange = 19113;
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalError Variable.
         /// </summary>
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalError = 19114;
@@ -23488,11 +23428,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel = 19117;
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalError_TimeFirstChange = 19118;
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_SubError Variable.
@@ -23520,11 +23455,6 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel = 19125;
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange = 19126;
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod = 19127;
@@ -23543,11 +23473,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = 19130;
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = 19131;
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -23570,11 +23495,6 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = 19135;
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = 19136;
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError = 19137;
@@ -23593,11 +23513,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = 19140;
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = 19141;
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StatePausedByParent Variable.
@@ -23620,11 +23535,6 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = 19145;
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = 19146;
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod = 19147;
@@ -23643,11 +23553,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = 19150;
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = 19151;
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_SentNetworkMessages Variable.
@@ -23670,11 +23575,6 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_SentNetworkMessages_DiagnosticsLevel = 19156;
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_SentNetworkMessages_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_SentNetworkMessages_TimeFirstChange = 19157;
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_FailedTransmissions Variable.
         /// </summary>
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_FailedTransmissions = 19158;
@@ -23695,11 +23595,6 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_FailedTransmissions_DiagnosticsLevel = 19161;
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_FailedTransmissions_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_FailedTransmissions_TimeFirstChange = 19162;
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_EncryptionErrors Variable.
         /// </summary>
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_EncryptionErrors = 19163;
@@ -23718,11 +23613,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_EncryptionErrors_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_EncryptionErrors_DiagnosticsLevel = 19166;
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_EncryptionErrors_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_EncryptionErrors_TimeFirstChange = 19167;
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_LiveValues_ConfiguredDataSetWriters Variable.
@@ -23815,11 +23705,6 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel = 19181;
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange = 19182;
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalError Variable.
         /// </summary>
         public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalError = 19183;
@@ -23838,11 +23723,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel = 19186;
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalError_TimeFirstChange = 19187;
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_SubError Variable.
@@ -23870,11 +23750,6 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel = 19194;
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange = 19195;
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod = 19196;
@@ -23893,11 +23768,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = 19199;
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = 19200;
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -23920,11 +23790,6 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = 19204;
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = 19205;
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError = 19206;
@@ -23943,11 +23808,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = 19209;
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = 19210;
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StatePausedByParent Variable.
@@ -23970,11 +23830,6 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = 19214;
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = 19215;
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod = 19216;
@@ -23993,11 +23848,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = 19219;
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = 19220;
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedNetworkMessages Variable.
@@ -24020,11 +23870,6 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedNetworkMessages_DiagnosticsLevel = 19225;
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedNetworkMessages_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedNetworkMessages_TimeFirstChange = 19226;
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedInvalidNetworkMessages_Active Variable.
         /// </summary>
         public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedInvalidNetworkMessages_Active = 19228;
@@ -24040,11 +23885,6 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedInvalidNetworkMessages_DiagnosticsLevel = 19230;
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedInvalidNetworkMessages_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedInvalidNetworkMessages_TimeFirstChange = 19231;
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_DecryptionErrors_Active Variable.
         /// </summary>
         public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_DecryptionErrors_Active = 19233;
@@ -24058,11 +23898,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_DecryptionErrors_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_DecryptionErrors_DiagnosticsLevel = 19235;
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_DecryptionErrors_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_DecryptionErrors_TimeFirstChange = 19236;
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_LiveValues_ConfiguredDataSetReaders Variable.
@@ -24130,11 +23965,6 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_Diagnostics_TotalInformation_DiagnosticsLevel = 19246;
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_Diagnostics_TotalInformation_TimeFirstChange = 19247;
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_Diagnostics_TotalError Variable.
         /// </summary>
         public const uint PubSubConnectionType_Diagnostics_TotalError = 19248;
@@ -24153,11 +23983,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubConnectionType_Diagnostics_TotalError_DiagnosticsLevel = 19251;
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_Diagnostics_TotalError_TimeFirstChange = 19252;
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_Diagnostics_SubError Variable.
@@ -24185,11 +24010,6 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_Diagnostics_Counters_StateError_DiagnosticsLevel = 19259;
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_Diagnostics_Counters_StateError_TimeFirstChange = 19260;
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint PubSubConnectionType_Diagnostics_Counters_StateOperationalByMethod = 19261;
@@ -24208,11 +24028,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubConnectionType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = 19264;
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = 19265;
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -24235,11 +24050,6 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = 19269;
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = 19270;
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint PubSubConnectionType_Diagnostics_Counters_StateOperationalFromError = 19271;
@@ -24258,11 +24068,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubConnectionType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = 19274;
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = 19275;
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StatePausedByParent Variable.
@@ -24285,11 +24090,6 @@ namespace Opc.Ua
         public const uint PubSubConnectionType_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = 19279;
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = 19280;
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint PubSubConnectionType_Diagnostics_Counters_StateDisabledByMethod = 19281;
@@ -24308,11 +24108,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubConnectionType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = 19284;
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubConnectionType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = 19285;
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_Diagnostics_LiveValues_ResolvedAddress Variable.
@@ -24460,11 +24255,6 @@ namespace Opc.Ua
         public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel = 17758;
 
         /// <summary>
-        /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange = 17759;
-
-        /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalError Variable.
         /// </summary>
         public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalError = 17760;
@@ -24483,11 +24273,6 @@ namespace Opc.Ua
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel = 17763;
-
-        /// <summary>
-        /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalError_TimeFirstChange = 17764;
 
         /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_SubError Variable.
@@ -24515,11 +24300,6 @@ namespace Opc.Ua
         public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel = 17771;
 
         /// <summary>
-        /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange = 17772;
-
-        /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod = 17773;
@@ -24538,11 +24318,6 @@ namespace Opc.Ua
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = 17776;
-
-        /// <summary>
-        /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = 17777;
 
         /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -24565,11 +24340,6 @@ namespace Opc.Ua
         public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = 17781;
 
         /// <summary>
-        /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = 17782;
-
-        /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError = 17783;
@@ -24588,11 +24358,6 @@ namespace Opc.Ua
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = 17786;
-
-        /// <summary>
-        /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = 17787;
 
         /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent Variable.
@@ -24615,11 +24380,6 @@ namespace Opc.Ua
         public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = 17791;
 
         /// <summary>
-        /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = 17792;
-
-        /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod = 17793;
@@ -24640,11 +24400,6 @@ namespace Opc.Ua
         public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = 17796;
 
         /// <summary>
-        /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = 17797;
-
-        /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages Variable.
         /// </summary>
         public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages = 17799;
@@ -24663,11 +24418,6 @@ namespace Opc.Ua
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel Variable.
         /// </summary>
         public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel = 17802;
-
-        /// <summary>
-        /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange Variable.
-        /// </summary>
-        public const uint WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange = 17803;
 
         /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MessageSequenceNumber_DiagnosticsLevel Variable.
@@ -24715,11 +24465,6 @@ namespace Opc.Ua
         public const uint WriterGroupType_Diagnostics_TotalInformation_DiagnosticsLevel = 17817;
 
         /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint WriterGroupType_Diagnostics_TotalInformation_TimeFirstChange = 17818;
-
-        /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_TotalError Variable.
         /// </summary>
         public const uint WriterGroupType_Diagnostics_TotalError = 17819;
@@ -24738,11 +24483,6 @@ namespace Opc.Ua
         /// The identifier for the WriterGroupType_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint WriterGroupType_Diagnostics_TotalError_DiagnosticsLevel = 17822;
-
-        /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint WriterGroupType_Diagnostics_TotalError_TimeFirstChange = 17823;
 
         /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_SubError Variable.
@@ -24770,11 +24510,6 @@ namespace Opc.Ua
         public const uint WriterGroupType_Diagnostics_Counters_StateError_DiagnosticsLevel = 17830;
 
         /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint WriterGroupType_Diagnostics_Counters_StateError_TimeFirstChange = 17831;
-
-        /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint WriterGroupType_Diagnostics_Counters_StateOperationalByMethod = 17832;
@@ -24793,11 +24528,6 @@ namespace Opc.Ua
         /// The identifier for the WriterGroupType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint WriterGroupType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = 17835;
-
-        /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint WriterGroupType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = 17836;
 
         /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -24820,11 +24550,6 @@ namespace Opc.Ua
         public const uint WriterGroupType_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = 17840;
 
         /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint WriterGroupType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = 17841;
-
-        /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint WriterGroupType_Diagnostics_Counters_StateOperationalFromError = 17842;
@@ -24843,11 +24568,6 @@ namespace Opc.Ua
         /// The identifier for the WriterGroupType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint WriterGroupType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = 17845;
-
-        /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint WriterGroupType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = 17846;
 
         /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_Counters_StatePausedByParent Variable.
@@ -24870,11 +24590,6 @@ namespace Opc.Ua
         public const uint WriterGroupType_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = 17850;
 
         /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint WriterGroupType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = 17851;
-
-        /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint WriterGroupType_Diagnostics_Counters_StateDisabledByMethod = 17853;
@@ -24893,11 +24608,6 @@ namespace Opc.Ua
         /// The identifier for the WriterGroupType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint WriterGroupType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = 17856;
-
-        /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint WriterGroupType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = 17857;
 
         /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_Counters_SentNetworkMessages Variable.
@@ -24920,11 +24630,6 @@ namespace Opc.Ua
         public const uint WriterGroupType_Diagnostics_Counters_SentNetworkMessages_DiagnosticsLevel = 17872;
 
         /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_Counters_SentNetworkMessages_TimeFirstChange Variable.
-        /// </summary>
-        public const uint WriterGroupType_Diagnostics_Counters_SentNetworkMessages_TimeFirstChange = 17873;
-
-        /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_Counters_FailedTransmissions Variable.
         /// </summary>
         public const uint WriterGroupType_Diagnostics_Counters_FailedTransmissions = 17874;
@@ -24945,11 +24650,6 @@ namespace Opc.Ua
         public const uint WriterGroupType_Diagnostics_Counters_FailedTransmissions_DiagnosticsLevel = 17892;
 
         /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_Counters_FailedTransmissions_TimeFirstChange Variable.
-        /// </summary>
-        public const uint WriterGroupType_Diagnostics_Counters_FailedTransmissions_TimeFirstChange = 17899;
-
-        /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_Counters_EncryptionErrors Variable.
         /// </summary>
         public const uint WriterGroupType_Diagnostics_Counters_EncryptionErrors = 17900;
@@ -24968,11 +24668,6 @@ namespace Opc.Ua
         /// The identifier for the WriterGroupType_Diagnostics_Counters_EncryptionErrors_DiagnosticsLevel Variable.
         /// </summary>
         public const uint WriterGroupType_Diagnostics_Counters_EncryptionErrors_DiagnosticsLevel = 17903;
-
-        /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_Counters_EncryptionErrors_TimeFirstChange Variable.
-        /// </summary>
-        public const uint WriterGroupType_Diagnostics_Counters_EncryptionErrors_TimeFirstChange = 17906;
 
         /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_LiveValues_ConfiguredDataSetWriters Variable.
@@ -25100,11 +24795,6 @@ namespace Opc.Ua
         public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel = 18097;
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange = 18098;
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalError Variable.
         /// </summary>
         public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalError = 18099;
@@ -25123,11 +24813,6 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel = 18102;
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalError_TimeFirstChange = 18103;
 
         /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_SubError Variable.
@@ -25155,11 +24840,6 @@ namespace Opc.Ua
         public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel = 18110;
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange = 18111;
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByMethod = 18112;
@@ -25178,11 +24858,6 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = 18115;
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = 18116;
 
         /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -25205,11 +24880,6 @@ namespace Opc.Ua
         public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = 18120;
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = 18121;
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalFromError = 18122;
@@ -25228,11 +24898,6 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = 18125;
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = 18126;
 
         /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StatePausedByParent Variable.
@@ -25255,11 +24920,6 @@ namespace Opc.Ua
         public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = 18130;
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = 18131;
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateDisabledByMethod = 18132;
@@ -25278,11 +24938,6 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = 18135;
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = 18136;
 
         /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_FailedDataSetMessages Variable.
@@ -25305,11 +24960,6 @@ namespace Opc.Ua
         public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel = 18141;
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange Variable.
-        /// </summary>
-        public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange = 18142;
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_DecryptionErrors_Active Variable.
         /// </summary>
         public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_DecryptionErrors_Active = 18144;
@@ -25323,11 +24973,6 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_DecryptionErrors_DiagnosticsLevel Variable.
         /// </summary>
         public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_DecryptionErrors_DiagnosticsLevel = 18146;
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_DecryptionErrors_TimeFirstChange Variable.
-        /// </summary>
-        public const uint ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_DecryptionErrors_TimeFirstChange = 18147;
 
         /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_LiveValues_MessageSequenceNumber_DiagnosticsLevel Variable.
@@ -25405,11 +25050,6 @@ namespace Opc.Ua
         public const uint ReaderGroupType_Diagnostics_TotalInformation_DiagnosticsLevel = 21020;
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint ReaderGroupType_Diagnostics_TotalInformation_TimeFirstChange = 21021;
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_TotalError Variable.
         /// </summary>
         public const uint ReaderGroupType_Diagnostics_TotalError = 21022;
@@ -25428,11 +25068,6 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint ReaderGroupType_Diagnostics_TotalError_DiagnosticsLevel = 21025;
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint ReaderGroupType_Diagnostics_TotalError_TimeFirstChange = 21026;
 
         /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_SubError Variable.
@@ -25460,11 +25095,6 @@ namespace Opc.Ua
         public const uint ReaderGroupType_Diagnostics_Counters_StateError_DiagnosticsLevel = 21033;
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint ReaderGroupType_Diagnostics_Counters_StateError_TimeFirstChange = 21034;
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint ReaderGroupType_Diagnostics_Counters_StateOperationalByMethod = 21035;
@@ -25483,11 +25113,6 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint ReaderGroupType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = 21038;
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint ReaderGroupType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = 21039;
 
         /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -25510,11 +25135,6 @@ namespace Opc.Ua
         public const uint ReaderGroupType_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = 21043;
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint ReaderGroupType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = 21044;
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint ReaderGroupType_Diagnostics_Counters_StateOperationalFromError = 21045;
@@ -25533,11 +25153,6 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint ReaderGroupType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = 21048;
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint ReaderGroupType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = 21049;
 
         /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_StatePausedByParent Variable.
@@ -25560,11 +25175,6 @@ namespace Opc.Ua
         public const uint ReaderGroupType_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = 21053;
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint ReaderGroupType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = 21054;
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint ReaderGroupType_Diagnostics_Counters_StateDisabledByMethod = 21055;
@@ -25583,11 +25193,6 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint ReaderGroupType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = 21058;
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint ReaderGroupType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = 21059;
 
         /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_ReceivedNetworkMessages Variable.
@@ -25610,11 +25215,6 @@ namespace Opc.Ua
         public const uint ReaderGroupType_Diagnostics_Counters_ReceivedNetworkMessages_DiagnosticsLevel = 21064;
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_Counters_ReceivedNetworkMessages_TimeFirstChange Variable.
-        /// </summary>
-        public const uint ReaderGroupType_Diagnostics_Counters_ReceivedNetworkMessages_TimeFirstChange = 21065;
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_ReceivedInvalidNetworkMessages_Active Variable.
         /// </summary>
         public const uint ReaderGroupType_Diagnostics_Counters_ReceivedInvalidNetworkMessages_Active = 21067;
@@ -25630,11 +25230,6 @@ namespace Opc.Ua
         public const uint ReaderGroupType_Diagnostics_Counters_ReceivedInvalidNetworkMessages_DiagnosticsLevel = 21069;
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_Counters_ReceivedInvalidNetworkMessages_TimeFirstChange Variable.
-        /// </summary>
-        public const uint ReaderGroupType_Diagnostics_Counters_ReceivedInvalidNetworkMessages_TimeFirstChange = 21070;
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_DecryptionErrors_Active Variable.
         /// </summary>
         public const uint ReaderGroupType_Diagnostics_Counters_DecryptionErrors_Active = 21072;
@@ -25648,11 +25243,6 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_DecryptionErrors_DiagnosticsLevel Variable.
         /// </summary>
         public const uint ReaderGroupType_Diagnostics_Counters_DecryptionErrors_DiagnosticsLevel = 21074;
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_Counters_DecryptionErrors_TimeFirstChange Variable.
-        /// </summary>
-        public const uint ReaderGroupType_Diagnostics_Counters_DecryptionErrors_TimeFirstChange = 21075;
 
         /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_LiveValues_ConfiguredDataSetReaders Variable.
@@ -25740,11 +25330,6 @@ namespace Opc.Ua
         public const uint DataSetWriterType_Diagnostics_TotalInformation_DiagnosticsLevel = 19555;
 
         /// <summary>
-        /// The identifier for the DataSetWriterType_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint DataSetWriterType_Diagnostics_TotalInformation_TimeFirstChange = 19556;
-
-        /// <summary>
         /// The identifier for the DataSetWriterType_Diagnostics_TotalError Variable.
         /// </summary>
         public const uint DataSetWriterType_Diagnostics_TotalError = 19557;
@@ -25763,11 +25348,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetWriterType_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint DataSetWriterType_Diagnostics_TotalError_DiagnosticsLevel = 19560;
-
-        /// <summary>
-        /// The identifier for the DataSetWriterType_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint DataSetWriterType_Diagnostics_TotalError_TimeFirstChange = 19561;
 
         /// <summary>
         /// The identifier for the DataSetWriterType_Diagnostics_SubError Variable.
@@ -25795,11 +25375,6 @@ namespace Opc.Ua
         public const uint DataSetWriterType_Diagnostics_Counters_StateError_DiagnosticsLevel = 19568;
 
         /// <summary>
-        /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint DataSetWriterType_Diagnostics_Counters_StateError_TimeFirstChange = 19569;
-
-        /// <summary>
         /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint DataSetWriterType_Diagnostics_Counters_StateOperationalByMethod = 19570;
@@ -25818,11 +25393,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint DataSetWriterType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = 19573;
-
-        /// <summary>
-        /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint DataSetWriterType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = 19574;
 
         /// <summary>
         /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -25845,11 +25415,6 @@ namespace Opc.Ua
         public const uint DataSetWriterType_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = 19578;
 
         /// <summary>
-        /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint DataSetWriterType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = 19579;
-
-        /// <summary>
         /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint DataSetWriterType_Diagnostics_Counters_StateOperationalFromError = 19580;
@@ -25868,11 +25433,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint DataSetWriterType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = 19583;
-
-        /// <summary>
-        /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint DataSetWriterType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = 19584;
 
         /// <summary>
         /// The identifier for the DataSetWriterType_Diagnostics_Counters_StatePausedByParent Variable.
@@ -25895,11 +25455,6 @@ namespace Opc.Ua
         public const uint DataSetWriterType_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = 19588;
 
         /// <summary>
-        /// The identifier for the DataSetWriterType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint DataSetWriterType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = 19589;
-
-        /// <summary>
         /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint DataSetWriterType_Diagnostics_Counters_StateDisabledByMethod = 19590;
@@ -25920,11 +25475,6 @@ namespace Opc.Ua
         public const uint DataSetWriterType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = 19593;
 
         /// <summary>
-        /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint DataSetWriterType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = 19594;
-
-        /// <summary>
         /// The identifier for the DataSetWriterType_Diagnostics_Counters_FailedDataSetMessages Variable.
         /// </summary>
         public const uint DataSetWriterType_Diagnostics_Counters_FailedDataSetMessages = 19596;
@@ -25943,11 +25493,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetWriterType_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel Variable.
         /// </summary>
         public const uint DataSetWriterType_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel = 19599;
-
-        /// <summary>
-        /// The identifier for the DataSetWriterType_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange Variable.
-        /// </summary>
-        public const uint DataSetWriterType_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange = 19600;
 
         /// <summary>
         /// The identifier for the DataSetWriterType_Diagnostics_LiveValues_MessageSequenceNumber_DiagnosticsLevel Variable.
@@ -26060,11 +25605,6 @@ namespace Opc.Ua
         public const uint DataSetReaderType_Diagnostics_TotalInformation_DiagnosticsLevel = 19614;
 
         /// <summary>
-        /// The identifier for the DataSetReaderType_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint DataSetReaderType_Diagnostics_TotalInformation_TimeFirstChange = 19615;
-
-        /// <summary>
         /// The identifier for the DataSetReaderType_Diagnostics_TotalError Variable.
         /// </summary>
         public const uint DataSetReaderType_Diagnostics_TotalError = 19616;
@@ -26083,11 +25623,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetReaderType_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint DataSetReaderType_Diagnostics_TotalError_DiagnosticsLevel = 19619;
-
-        /// <summary>
-        /// The identifier for the DataSetReaderType_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint DataSetReaderType_Diagnostics_TotalError_TimeFirstChange = 19620;
 
         /// <summary>
         /// The identifier for the DataSetReaderType_Diagnostics_SubError Variable.
@@ -26115,11 +25650,6 @@ namespace Opc.Ua
         public const uint DataSetReaderType_Diagnostics_Counters_StateError_DiagnosticsLevel = 19627;
 
         /// <summary>
-        /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint DataSetReaderType_Diagnostics_Counters_StateError_TimeFirstChange = 19628;
-
-        /// <summary>
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint DataSetReaderType_Diagnostics_Counters_StateOperationalByMethod = 19629;
@@ -26138,11 +25668,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint DataSetReaderType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = 19632;
-
-        /// <summary>
-        /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint DataSetReaderType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = 19633;
 
         /// <summary>
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -26165,11 +25690,6 @@ namespace Opc.Ua
         public const uint DataSetReaderType_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = 19637;
 
         /// <summary>
-        /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint DataSetReaderType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = 19638;
-
-        /// <summary>
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint DataSetReaderType_Diagnostics_Counters_StateOperationalFromError = 19639;
@@ -26188,11 +25708,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint DataSetReaderType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = 19642;
-
-        /// <summary>
-        /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint DataSetReaderType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = 19643;
 
         /// <summary>
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_StatePausedByParent Variable.
@@ -26215,11 +25730,6 @@ namespace Opc.Ua
         public const uint DataSetReaderType_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = 19647;
 
         /// <summary>
-        /// The identifier for the DataSetReaderType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint DataSetReaderType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = 19648;
-
-        /// <summary>
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint DataSetReaderType_Diagnostics_Counters_StateDisabledByMethod = 19649;
@@ -26238,11 +25748,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint DataSetReaderType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = 19652;
-
-        /// <summary>
-        /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint DataSetReaderType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = 19653;
 
         /// <summary>
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_FailedDataSetMessages Variable.
@@ -26265,11 +25770,6 @@ namespace Opc.Ua
         public const uint DataSetReaderType_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel = 19658;
 
         /// <summary>
-        /// The identifier for the DataSetReaderType_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange Variable.
-        /// </summary>
-        public const uint DataSetReaderType_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange = 19659;
-
-        /// <summary>
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_DecryptionErrors_Active Variable.
         /// </summary>
         public const uint DataSetReaderType_Diagnostics_Counters_DecryptionErrors_Active = 19661;
@@ -26283,11 +25783,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_DecryptionErrors_DiagnosticsLevel Variable.
         /// </summary>
         public const uint DataSetReaderType_Diagnostics_Counters_DecryptionErrors_DiagnosticsLevel = 19663;
-
-        /// <summary>
-        /// The identifier for the DataSetReaderType_Diagnostics_Counters_DecryptionErrors_TimeFirstChange Variable.
-        /// </summary>
-        public const uint DataSetReaderType_Diagnostics_Counters_DecryptionErrors_TimeFirstChange = 19664;
 
         /// <summary>
         /// The identifier for the DataSetReaderType_Diagnostics_LiveValues_MessageSequenceNumber_DiagnosticsLevel Variable.
@@ -26395,11 +25890,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsType_TotalInformation_DiagnosticsLevel = 19682;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsType_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsType_TotalInformation_TimeFirstChange = 19683;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsType_TotalError Variable.
         /// </summary>
         public const uint PubSubDiagnosticsType_TotalError = 19684;
@@ -26418,11 +25908,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsType_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsType_TotalError_DiagnosticsLevel = 19687;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsType_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsType_TotalError_TimeFirstChange = 19688;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsType_SubError Variable.
@@ -26450,11 +25935,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsType_Counters_StateError_DiagnosticsLevel = 19695;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsType_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsType_Counters_StateError_TimeFirstChange = 19696;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsType_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint PubSubDiagnosticsType_Counters_StateOperationalByMethod = 19697;
@@ -26473,11 +25953,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsType_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsType_Counters_StateOperationalByMethod_DiagnosticsLevel = 19700;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsType_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsType_Counters_StateOperationalByMethod_TimeFirstChange = 19701;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsType_Counters_StateOperationalByParent Variable.
@@ -26500,11 +25975,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsType_Counters_StateOperationalByParent_DiagnosticsLevel = 19705;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsType_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsType_Counters_StateOperationalByParent_TimeFirstChange = 19706;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsType_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint PubSubDiagnosticsType_Counters_StateOperationalFromError = 19707;
@@ -26523,11 +25993,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsType_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsType_Counters_StateOperationalFromError_DiagnosticsLevel = 19710;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsType_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsType_Counters_StateOperationalFromError_TimeFirstChange = 19711;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsType_Counters_StatePausedByParent Variable.
@@ -26550,11 +26015,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsType_Counters_StatePausedByParent_DiagnosticsLevel = 19715;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsType_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsType_Counters_StatePausedByParent_TimeFirstChange = 19716;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsType_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint PubSubDiagnosticsType_Counters_StateDisabledByMethod = 19717;
@@ -26573,11 +26033,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsType_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsType_Counters_StateDisabledByMethod_DiagnosticsLevel = 19720;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsType_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsType_Counters_StateDisabledByMethod_TimeFirstChange = 19721;
 
         /// <summary>
         /// The identifier for the DiagnosticsLevel_EnumStrings Variable.
@@ -26625,11 +26080,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsRootType_TotalInformation_DiagnosticsLevel = 19737;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsRootType_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsRootType_TotalInformation_TimeFirstChange = 19738;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsRootType_TotalError_Active Variable.
         /// </summary>
         public const uint PubSubDiagnosticsRootType_TotalError_Active = 19740;
@@ -26643,11 +26093,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsRootType_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsRootType_TotalError_DiagnosticsLevel = 19742;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsRootType_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsRootType_TotalError_TimeFirstChange = 19743;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsRootType_Counters_StateError Variable.
@@ -26670,11 +26115,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsRootType_Counters_StateError_DiagnosticsLevel = 19750;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsRootType_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsRootType_Counters_StateError_TimeFirstChange = 19751;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsRootType_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint PubSubDiagnosticsRootType_Counters_StateOperationalByMethod = 19752;
@@ -26693,11 +26133,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsRootType_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsRootType_Counters_StateOperationalByMethod_DiagnosticsLevel = 19755;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsRootType_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsRootType_Counters_StateOperationalByMethod_TimeFirstChange = 19756;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsRootType_Counters_StateOperationalByParent Variable.
@@ -26720,11 +26155,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsRootType_Counters_StateOperationalByParent_DiagnosticsLevel = 19760;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsRootType_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsRootType_Counters_StateOperationalByParent_TimeFirstChange = 19761;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsRootType_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint PubSubDiagnosticsRootType_Counters_StateOperationalFromError = 19762;
@@ -26743,11 +26173,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsRootType_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsRootType_Counters_StateOperationalFromError_DiagnosticsLevel = 19765;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsRootType_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsRootType_Counters_StateOperationalFromError_TimeFirstChange = 19766;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsRootType_Counters_StatePausedByParent Variable.
@@ -26770,11 +26195,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsRootType_Counters_StatePausedByParent_DiagnosticsLevel = 19770;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsRootType_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsRootType_Counters_StatePausedByParent_TimeFirstChange = 19771;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsRootType_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint PubSubDiagnosticsRootType_Counters_StateDisabledByMethod = 19772;
@@ -26793,11 +26213,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsRootType_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsRootType_Counters_StateDisabledByMethod_DiagnosticsLevel = 19775;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsRootType_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsRootType_Counters_StateDisabledByMethod_TimeFirstChange = 19776;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsRootType_LiveValues_ConfiguredDataSetWriters Variable.
@@ -26855,11 +26270,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsConnectionType_TotalInformation_DiagnosticsLevel = 19791;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsConnectionType_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsConnectionType_TotalInformation_TimeFirstChange = 19792;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsConnectionType_TotalError_Active Variable.
         /// </summary>
         public const uint PubSubDiagnosticsConnectionType_TotalError_Active = 19794;
@@ -26873,11 +26283,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsConnectionType_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsConnectionType_TotalError_DiagnosticsLevel = 19796;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsConnectionType_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsConnectionType_TotalError_TimeFirstChange = 19797;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateError Variable.
@@ -26900,11 +26305,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsConnectionType_Counters_StateError_DiagnosticsLevel = 19804;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsConnectionType_Counters_StateError_TimeFirstChange = 19805;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint PubSubDiagnosticsConnectionType_Counters_StateOperationalByMethod = 19806;
@@ -26923,11 +26323,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsConnectionType_Counters_StateOperationalByMethod_DiagnosticsLevel = 19809;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsConnectionType_Counters_StateOperationalByMethod_TimeFirstChange = 19810;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateOperationalByParent Variable.
@@ -26950,11 +26345,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsConnectionType_Counters_StateOperationalByParent_DiagnosticsLevel = 19814;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsConnectionType_Counters_StateOperationalByParent_TimeFirstChange = 19815;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint PubSubDiagnosticsConnectionType_Counters_StateOperationalFromError = 19816;
@@ -26973,11 +26363,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsConnectionType_Counters_StateOperationalFromError_DiagnosticsLevel = 19819;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsConnectionType_Counters_StateOperationalFromError_TimeFirstChange = 19820;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StatePausedByParent Variable.
@@ -27000,11 +26385,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsConnectionType_Counters_StatePausedByParent_DiagnosticsLevel = 19824;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsConnectionType_Counters_StatePausedByParent_TimeFirstChange = 19825;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint PubSubDiagnosticsConnectionType_Counters_StateDisabledByMethod = 19826;
@@ -27023,11 +26403,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsConnectionType_Counters_StateDisabledByMethod_DiagnosticsLevel = 19829;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsConnectionType_Counters_StateDisabledByMethod_TimeFirstChange = 19830;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsConnectionType_LiveValues_ResolvedAddress Variable.
@@ -27055,11 +26430,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsWriterGroupType_TotalInformation_DiagnosticsLevel = 19839;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsWriterGroupType_TotalInformation_TimeFirstChange = 19840;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_TotalError_Active Variable.
         /// </summary>
         public const uint PubSubDiagnosticsWriterGroupType_TotalError_Active = 19842;
@@ -27073,11 +26443,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsWriterGroupType_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsWriterGroupType_TotalError_DiagnosticsLevel = 19844;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsWriterGroupType_TotalError_TimeFirstChange = 19845;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateError Variable.
@@ -27100,11 +26465,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsWriterGroupType_Counters_StateError_DiagnosticsLevel = 19852;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsWriterGroupType_Counters_StateError_TimeFirstChange = 19853;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByMethod = 19854;
@@ -27123,11 +26483,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByMethod_DiagnosticsLevel = 19857;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByMethod_TimeFirstChange = 19858;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByParent Variable.
@@ -27150,11 +26505,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByParent_DiagnosticsLevel = 19862;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByParent_TimeFirstChange = 19863;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint PubSubDiagnosticsWriterGroupType_Counters_StateOperationalFromError = 19864;
@@ -27173,11 +26523,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsWriterGroupType_Counters_StateOperationalFromError_DiagnosticsLevel = 19867;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsWriterGroupType_Counters_StateOperationalFromError_TimeFirstChange = 19868;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StatePausedByParent Variable.
@@ -27200,11 +26545,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsWriterGroupType_Counters_StatePausedByParent_DiagnosticsLevel = 19872;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsWriterGroupType_Counters_StatePausedByParent_TimeFirstChange = 19873;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint PubSubDiagnosticsWriterGroupType_Counters_StateDisabledByMethod = 19874;
@@ -27223,11 +26563,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsWriterGroupType_Counters_StateDisabledByMethod_DiagnosticsLevel = 19877;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsWriterGroupType_Counters_StateDisabledByMethod_TimeFirstChange = 19878;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_SentNetworkMessages Variable.
@@ -27250,11 +26585,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsWriterGroupType_Counters_SentNetworkMessages_DiagnosticsLevel = 19883;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_SentNetworkMessages_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsWriterGroupType_Counters_SentNetworkMessages_TimeFirstChange = 19884;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_FailedTransmissions Variable.
         /// </summary>
         public const uint PubSubDiagnosticsWriterGroupType_Counters_FailedTransmissions = 19885;
@@ -27275,11 +26605,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsWriterGroupType_Counters_FailedTransmissions_DiagnosticsLevel = 19888;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_FailedTransmissions_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsWriterGroupType_Counters_FailedTransmissions_TimeFirstChange = 19889;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_EncryptionErrors Variable.
         /// </summary>
         public const uint PubSubDiagnosticsWriterGroupType_Counters_EncryptionErrors = 19890;
@@ -27298,11 +26623,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_EncryptionErrors_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsWriterGroupType_Counters_EncryptionErrors_DiagnosticsLevel = 19893;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_EncryptionErrors_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsWriterGroupType_Counters_EncryptionErrors_TimeFirstChange = 19894;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_LiveValues_ConfiguredDataSetWriters Variable.
@@ -27360,11 +26680,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsReaderGroupType_TotalInformation_DiagnosticsLevel = 19908;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsReaderGroupType_TotalInformation_TimeFirstChange = 19909;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_TotalError_Active Variable.
         /// </summary>
         public const uint PubSubDiagnosticsReaderGroupType_TotalError_Active = 19911;
@@ -27378,11 +26693,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsReaderGroupType_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsReaderGroupType_TotalError_DiagnosticsLevel = 19913;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsReaderGroupType_TotalError_TimeFirstChange = 19914;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateError Variable.
@@ -27405,11 +26715,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsReaderGroupType_Counters_StateError_DiagnosticsLevel = 19921;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsReaderGroupType_Counters_StateError_TimeFirstChange = 19922;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByMethod = 19923;
@@ -27428,11 +26733,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByMethod_DiagnosticsLevel = 19926;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByMethod_TimeFirstChange = 19927;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByParent Variable.
@@ -27455,11 +26755,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByParent_DiagnosticsLevel = 19931;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByParent_TimeFirstChange = 19932;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint PubSubDiagnosticsReaderGroupType_Counters_StateOperationalFromError = 19933;
@@ -27478,11 +26773,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsReaderGroupType_Counters_StateOperationalFromError_DiagnosticsLevel = 19936;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsReaderGroupType_Counters_StateOperationalFromError_TimeFirstChange = 19937;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StatePausedByParent Variable.
@@ -27505,11 +26795,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsReaderGroupType_Counters_StatePausedByParent_DiagnosticsLevel = 19941;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsReaderGroupType_Counters_StatePausedByParent_TimeFirstChange = 19942;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint PubSubDiagnosticsReaderGroupType_Counters_StateDisabledByMethod = 19943;
@@ -27528,11 +26813,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsReaderGroupType_Counters_StateDisabledByMethod_DiagnosticsLevel = 19946;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsReaderGroupType_Counters_StateDisabledByMethod_TimeFirstChange = 19947;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_ReceivedNetworkMessages Variable.
@@ -27555,11 +26835,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsReaderGroupType_Counters_ReceivedNetworkMessages_DiagnosticsLevel = 19952;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_ReceivedNetworkMessages_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsReaderGroupType_Counters_ReceivedNetworkMessages_TimeFirstChange = 19953;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_ReceivedInvalidNetworkMessages Variable.
         /// </summary>
         public const uint PubSubDiagnosticsReaderGroupType_Counters_ReceivedInvalidNetworkMessages = 19954;
@@ -27580,11 +26855,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsReaderGroupType_Counters_ReceivedInvalidNetworkMessages_DiagnosticsLevel = 19957;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_ReceivedInvalidNetworkMessages_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsReaderGroupType_Counters_ReceivedInvalidNetworkMessages_TimeFirstChange = 19958;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_DecryptionErrors Variable.
         /// </summary>
         public const uint PubSubDiagnosticsReaderGroupType_Counters_DecryptionErrors = 19959;
@@ -27603,11 +26873,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_DecryptionErrors_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsReaderGroupType_Counters_DecryptionErrors_DiagnosticsLevel = 19962;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_DecryptionErrors_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsReaderGroupType_Counters_DecryptionErrors_TimeFirstChange = 19963;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_LiveValues_ConfiguredDataSetReaders Variable.
@@ -27645,11 +26910,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsDataSetWriterType_TotalInformation_DiagnosticsLevel = 19973;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetWriterType_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsDataSetWriterType_TotalInformation_TimeFirstChange = 19974;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_TotalError_Active Variable.
         /// </summary>
         public const uint PubSubDiagnosticsDataSetWriterType_TotalError_Active = 19976;
@@ -27663,11 +26923,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsDataSetWriterType_TotalError_DiagnosticsLevel = 19978;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetWriterType_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsDataSetWriterType_TotalError_TimeFirstChange = 19979;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateError Variable.
@@ -27690,11 +26945,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsDataSetWriterType_Counters_StateError_DiagnosticsLevel = 19986;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsDataSetWriterType_Counters_StateError_TimeFirstChange = 19987;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByMethod = 19988;
@@ -27713,11 +26963,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByMethod_DiagnosticsLevel = 19991;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByMethod_TimeFirstChange = 19992;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByParent Variable.
@@ -27740,11 +26985,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByParent_DiagnosticsLevel = 19996;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByParent_TimeFirstChange = 19997;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalFromError = 19998;
@@ -27763,11 +27003,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalFromError_DiagnosticsLevel = 20001;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalFromError_TimeFirstChange = 20002;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StatePausedByParent Variable.
@@ -27790,11 +27025,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsDataSetWriterType_Counters_StatePausedByParent_DiagnosticsLevel = 20006;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsDataSetWriterType_Counters_StatePausedByParent_TimeFirstChange = 20007;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint PubSubDiagnosticsDataSetWriterType_Counters_StateDisabledByMethod = 20008;
@@ -27815,11 +27045,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsDataSetWriterType_Counters_StateDisabledByMethod_DiagnosticsLevel = 20011;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsDataSetWriterType_Counters_StateDisabledByMethod_TimeFirstChange = 20012;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_FailedDataSetMessages Variable.
         /// </summary>
         public const uint PubSubDiagnosticsDataSetWriterType_Counters_FailedDataSetMessages = 20014;
@@ -27838,11 +27063,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_FailedDataSetMessages_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsDataSetWriterType_Counters_FailedDataSetMessages_DiagnosticsLevel = 20017;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_FailedDataSetMessages_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsDataSetWriterType_Counters_FailedDataSetMessages_TimeFirstChange = 20018;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_LiveValues_MessageSequenceNumber Variable.
@@ -27900,11 +27120,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsDataSetReaderType_TotalInformation_DiagnosticsLevel = 20032;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetReaderType_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsDataSetReaderType_TotalInformation_TimeFirstChange = 20033;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_TotalError_Active Variable.
         /// </summary>
         public const uint PubSubDiagnosticsDataSetReaderType_TotalError_Active = 20035;
@@ -27918,11 +27133,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsDataSetReaderType_TotalError_DiagnosticsLevel = 20037;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetReaderType_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsDataSetReaderType_TotalError_TimeFirstChange = 20038;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateError Variable.
@@ -27945,11 +27155,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsDataSetReaderType_Counters_StateError_DiagnosticsLevel = 20045;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsDataSetReaderType_Counters_StateError_TimeFirstChange = 20046;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public const uint PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByMethod = 20047;
@@ -27968,11 +27173,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByMethod_DiagnosticsLevel = 20050;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByMethod_TimeFirstChange = 20051;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByParent Variable.
@@ -27995,11 +27195,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByParent_DiagnosticsLevel = 20055;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByParent_TimeFirstChange = 20056;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalFromError Variable.
         /// </summary>
         public const uint PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalFromError = 20057;
@@ -28018,11 +27213,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalFromError_DiagnosticsLevel = 20060;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalFromError_TimeFirstChange = 20061;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StatePausedByParent Variable.
@@ -28045,11 +27235,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsDataSetReaderType_Counters_StatePausedByParent_DiagnosticsLevel = 20065;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsDataSetReaderType_Counters_StatePausedByParent_TimeFirstChange = 20066;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public const uint PubSubDiagnosticsDataSetReaderType_Counters_StateDisabledByMethod = 20067;
@@ -28068,11 +27253,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsDataSetReaderType_Counters_StateDisabledByMethod_DiagnosticsLevel = 20070;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsDataSetReaderType_Counters_StateDisabledByMethod_TimeFirstChange = 20071;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_FailedDataSetMessages Variable.
@@ -28095,11 +27275,6 @@ namespace Opc.Ua
         public const uint PubSubDiagnosticsDataSetReaderType_Counters_FailedDataSetMessages_DiagnosticsLevel = 20076;
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_FailedDataSetMessages_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsDataSetReaderType_Counters_FailedDataSetMessages_TimeFirstChange = 20077;
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_DecryptionErrors Variable.
         /// </summary>
         public const uint PubSubDiagnosticsDataSetReaderType_Counters_DecryptionErrors = 20078;
@@ -28118,11 +27293,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_DecryptionErrors_DiagnosticsLevel Variable.
         /// </summary>
         public const uint PubSubDiagnosticsDataSetReaderType_Counters_DecryptionErrors_DiagnosticsLevel = 20081;
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_DecryptionErrors_TimeFirstChange Variable.
-        /// </summary>
-        public const uint PubSubDiagnosticsDataSetReaderType_Counters_DecryptionErrors_TimeFirstChange = 20082;
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_LiveValues_MessageSequenceNumber Variable.
@@ -28265,11 +27435,6 @@ namespace Opc.Ua
         public const uint UadpDataSetReaderMessageType_GroupVersion = 21117;
 
         /// <summary>
-        /// The identifier for the UadpDataSetReaderMessageType_DataSetOrdering Variable.
-        /// </summary>
-        public const uint UadpDataSetReaderMessageType_DataSetOrdering = 21118;
-
-        /// <summary>
         /// The identifier for the UadpDataSetReaderMessageType_NetworkMessageNumber Variable.
         /// </summary>
         public const uint UadpDataSetReaderMessageType_NetworkMessageNumber = 21119;
@@ -28333,6 +27498,11 @@ namespace Opc.Ua
         /// The identifier for the DatagramConnectionTransportType_DiscoveryAddress_NetworkInterface Variable.
         /// </summary>
         public const uint DatagramConnectionTransportType_DiscoveryAddress_NetworkInterface = 15154;
+
+        /// <summary>
+        /// The identifier for the DatagramConnectionTransportType_DiscoveryAddress_NetworkInterface_Selections Variable.
+        /// </summary>
+        public const uint DatagramConnectionTransportType_DiscoveryAddress_NetworkInterface_Selections = 17579;
 
         /// <summary>
         /// The identifier for the DatagramWriterGroupTransportType_MessageRepeatCount Variable.
@@ -28433,6 +27603,16 @@ namespace Opc.Ua
         /// The identifier for the NetworkAddressType_NetworkInterface Variable.
         /// </summary>
         public const uint NetworkAddressType_NetworkInterface = 21146;
+
+        /// <summary>
+        /// The identifier for the NetworkAddressType_NetworkInterface_Selections Variable.
+        /// </summary>
+        public const uint NetworkAddressType_NetworkInterface_Selections = 17582;
+
+        /// <summary>
+        /// The identifier for the NetworkAddressUrlType_NetworkInterface_Selections Variable.
+        /// </summary>
+        public const uint NetworkAddressUrlType_NetworkInterface_Selections = 17585;
 
         /// <summary>
         /// The identifier for the NetworkAddressUrlType_Url Variable.
@@ -33040,6 +32220,41 @@ namespace Opc.Ua
         public static readonly NodeId AlarmMetricsType_Reset = new NodeId(Opc.Ua.Methods.AlarmMetricsType_Reset);
 
         /// <summary>
+        /// The identifier for the SystemStateStateMachineType_Start Method.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_Start = new NodeId(Opc.Ua.Methods.SystemStateStateMachineType_Start);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_Maintain Method.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_Maintain = new NodeId(Opc.Ua.Methods.SystemStateStateMachineType_Maintain);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_Stop Method.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_Stop = new NodeId(Opc.Ua.Methods.SystemStateStateMachineType_Stop);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_PlaceOutOfService Method.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_PlaceOutOfService = new NodeId(Opc.Ua.Methods.SystemStateStateMachineType_PlaceOutOfService);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_QuickShutdown Method.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_QuickShutdown = new NodeId(Opc.Ua.Methods.SystemStateStateMachineType_QuickShutdown);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_QuickStart Method.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_QuickStart = new NodeId(Opc.Ua.Methods.SystemStateStateMachineType_QuickStart);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OutOfServiceShutdown Method.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_OutOfServiceShutdown = new NodeId(Opc.Ua.Methods.SystemStateStateMachineType_OutOfServiceShutdown);
+
+        /// <summary>
         /// The identifier for the ProgramStateMachineType_Start Method.
         /// </summary>
         public static readonly NodeId ProgramStateMachineType_Start = new NodeId(Opc.Ua.Methods.ProgramStateMachineType_Start);
@@ -34453,6 +33668,96 @@ namespace Opc.Ua
         /// The identifier for the ExclusiveLimitAlarmType_LimitState Object.
         /// </summary>
         public static readonly NodeId ExclusiveLimitAlarmType_LimitState = new NodeId(Opc.Ua.Objects.ExclusiveLimitAlarmType_LimitState);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_Operating Object.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_Operating = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_Operating);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_ShuttingDown Object.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_ShuttingDown = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_ShuttingDown);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_StartingUp Object.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_StartingUp = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_StartingUp);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_Shutdown Object.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_Shutdown = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_Shutdown);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OutOfService Object.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_OutOfService = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_OutOfService);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_Maintenance Object.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_Maintenance = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_Maintenance);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_ShutdownToOperating Object.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_ShutdownToOperating = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_ShutdownToOperating);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OperatingToShutdown Object.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_OperatingToShutdown = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_OperatingToShutdown);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_ShuttingDownToShutdown Object.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_ShuttingDownToShutdown = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_ShuttingDownToShutdown);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OperatingToShuttingDown Object.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_OperatingToShuttingDown = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_OperatingToShuttingDown);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_StartingUpToOperating Object.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_StartingUpToOperating = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_StartingUpToOperating);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_ShutdownToStartingUp Object.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_ShutdownToStartingUp = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_ShutdownToStartingUp);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OutOfServiceToShutdown Object.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_OutOfServiceToShutdown = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_OutOfServiceToShutdown);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_ShutdownToOutOfService Object.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_ShutdownToOutOfService = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_ShutdownToOutOfService);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OutOfServiceToOperating Object.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_OutOfServiceToOperating = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_OutOfServiceToOperating);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OperatingToOutOfService Object.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_OperatingToOutOfService = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_OperatingToOutOfService);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_MaintenanceToOutOfService Object.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_MaintenanceToOutOfService = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_MaintenanceToOutOfService);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OutOfServiceToMaintenance Object.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_OutOfServiceToMaintenance = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_OutOfServiceToMaintenance);
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType_FinalResultData Object.
@@ -40135,9 +39440,9 @@ namespace Opc.Ua
         public static readonly NodeId StatisticalConditionClassType = new NodeId(Opc.Ua.ObjectTypes.StatisticalConditionClassType);
 
         /// <summary>
-        /// The identifier for the TestingConditionClassType ObjectType.
+        /// The identifier for the TestingConditionSubClassType ObjectType.
         /// </summary>
-        public static readonly NodeId TestingConditionClassType = new NodeId(Opc.Ua.ObjectTypes.TestingConditionClassType);
+        public static readonly NodeId TestingConditionSubClassType = new NodeId(Opc.Ua.ObjectTypes.TestingConditionSubClassType);
 
         /// <summary>
         /// The identifier for the AuditConditionEventType ObjectType.
@@ -40175,9 +39480,9 @@ namespace Opc.Ua
         public static readonly NodeId AuditConditionShelvingEventType = new NodeId(Opc.Ua.ObjectTypes.AuditConditionShelvingEventType);
 
         /// <summary>
-        /// The identifier for the AuditConditionSuppressEventType ObjectType.
+        /// The identifier for the AuditConditionSuppressionEventType ObjectType.
         /// </summary>
-        public static readonly NodeId AuditConditionSuppressEventType = new NodeId(Opc.Ua.ObjectTypes.AuditConditionSuppressEventType);
+        public static readonly NodeId AuditConditionSuppressionEventType = new NodeId(Opc.Ua.ObjectTypes.AuditConditionSuppressionEventType);
 
         /// <summary>
         /// The identifier for the AuditConditionSilenceEventType ObjectType.
@@ -40213,6 +39518,11 @@ namespace Opc.Ua
         /// The identifier for the AlarmMetricsType ObjectType.
         /// </summary>
         public static readonly NodeId AlarmMetricsType = new NodeId(Opc.Ua.ObjectTypes.AlarmMetricsType);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType ObjectType.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType = new NodeId(Opc.Ua.ObjectTypes.SystemStateStateMachineType);
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType ObjectType.
@@ -46195,11 +45505,6 @@ namespace Opc.Ua
         public static readonly NodeId AlarmGroupType_AlarmConditionInstance_Placeholder_ReceiveTime = new NodeId(Opc.Ua.Variables.AlarmGroupType_AlarmConditionInstance_Placeholder_ReceiveTime);
 
         /// <summary>
-        /// The identifier for the AlarmGroupType_AlarmConditionInstance_Placeholder_LocalTime Variable.
-        /// </summary>
-        public static readonly NodeId AlarmGroupType_AlarmConditionInstance_Placeholder_LocalTime = new NodeId(Opc.Ua.Variables.AlarmGroupType_AlarmConditionInstance_Placeholder_LocalTime);
-
-        /// <summary>
         /// The identifier for the AlarmGroupType_AlarmConditionInstance_Placeholder_Message Variable.
         /// </summary>
         public static readonly NodeId AlarmGroupType_AlarmConditionInstance_Placeholder_Message = new NodeId(Opc.Ua.Variables.AlarmGroupType_AlarmConditionInstance_Placeholder_Message);
@@ -48725,6 +48030,106 @@ namespace Opc.Ua
         public static readonly NodeId AlarmRateVariableType_Rate = new NodeId(Opc.Ua.Variables.AlarmRateVariableType_Rate);
 
         /// <summary>
+        /// The identifier for the SystemStateStateMachineType_CurrentState_Id Variable.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_CurrentState_Id = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_CurrentState_Id);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_LastTransition_Id Variable.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_LastTransition_Id = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_LastTransition_Id);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_Operating_StateNumber Variable.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_Operating_StateNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_Operating_StateNumber);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_ShuttingDown_StateNumber Variable.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_ShuttingDown_StateNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_ShuttingDown_StateNumber);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_StartingUp_StateNumber Variable.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_StartingUp_StateNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_StartingUp_StateNumber);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_Shutdown_StateNumber Variable.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_Shutdown_StateNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_Shutdown_StateNumber);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OutOfService_StateNumber Variable.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_OutOfService_StateNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_OutOfService_StateNumber);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_Maintenance_StateNumber Variable.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_Maintenance_StateNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_Maintenance_StateNumber);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_ShutdownToOperating_TransitionNumber Variable.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_ShutdownToOperating_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_ShutdownToOperating_TransitionNumber);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OperatingToShutdown_TransitionNumber Variable.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_OperatingToShutdown_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_OperatingToShutdown_TransitionNumber);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_ShuttingDownToShutdown_TransitionNumber Variable.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_ShuttingDownToShutdown_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_ShuttingDownToShutdown_TransitionNumber);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OperatingToShuttingDown_TransitionNumber Variable.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_OperatingToShuttingDown_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_OperatingToShuttingDown_TransitionNumber);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_StartingUpToOperating_TransitionNumber Variable.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_StartingUpToOperating_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_StartingUpToOperating_TransitionNumber);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_ShutdownToStartingUp_TransitionNumber Variable.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_ShutdownToStartingUp_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_ShutdownToStartingUp_TransitionNumber);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OutOfServiceToShutdown_TransitionNumber Variable.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_OutOfServiceToShutdown_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_OutOfServiceToShutdown_TransitionNumber);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_ShutdownToOutOfService_TransitionNumber Variable.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_ShutdownToOutOfService_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_ShutdownToOutOfService_TransitionNumber);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OutOfServiceToOperating_TransitionNumber Variable.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_OutOfServiceToOperating_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_OutOfServiceToOperating_TransitionNumber);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OperatingToOutOfService_TransitionNumber Variable.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_OperatingToOutOfService_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_OperatingToOutOfService_TransitionNumber);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_MaintenanceToOutOfService_TransitionNumber Variable.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_MaintenanceToOutOfService_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_MaintenanceToOutOfService_TransitionNumber);
+
+        /// <summary>
+        /// The identifier for the SystemStateStateMachineType_OutOfServiceToMaintenance_TransitionNumber Variable.
+        /// </summary>
+        public static readonly NodeId SystemStateStateMachineType_OutOfServiceToMaintenance_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_OutOfServiceToMaintenance_TransitionNumber);
+
+        /// <summary>
         /// The identifier for the ProgramStateMachineType_CurrentState Variable.
         /// </summary>
         public static readonly NodeId ProgramStateMachineType_CurrentState = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_CurrentState);
@@ -48795,69 +48200,69 @@ namespace Opc.Ua
         public static readonly NodeId ProgramStateMachineType_MaxRecycleCount = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_MaxRecycleCount);
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic Variable.
         /// </summary>
-        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostics = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostics);
+        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostic = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostic);
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_CreateSessionId Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_CreateSessionId Variable.
         /// </summary>
-        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostics_CreateSessionId = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostics_CreateSessionId);
+        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostic_CreateSessionId = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostic_CreateSessionId);
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_CreateClientName Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_CreateClientName Variable.
         /// </summary>
-        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostics_CreateClientName = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostics_CreateClientName);
+        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostic_CreateClientName = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostic_CreateClientName);
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_InvocationCreationTime Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_InvocationCreationTime Variable.
         /// </summary>
-        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostics_InvocationCreationTime = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostics_InvocationCreationTime);
+        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostic_InvocationCreationTime = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostic_InvocationCreationTime);
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastTransitionTime Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_LastTransitionTime Variable.
         /// </summary>
-        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostics_LastTransitionTime = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostics_LastTransitionTime);
+        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostic_LastTransitionTime = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostic_LastTransitionTime);
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodCall Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_LastMethodCall Variable.
         /// </summary>
-        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostics_LastMethodCall = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostics_LastMethodCall);
+        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostic_LastMethodCall = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostic_LastMethodCall);
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodSessionId Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_LastMethodSessionId Variable.
         /// </summary>
-        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostics_LastMethodSessionId = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostics_LastMethodSessionId);
+        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostic_LastMethodSessionId = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostic_LastMethodSessionId);
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodInputArguments Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_LastMethodInputArguments Variable.
         /// </summary>
-        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostics_LastMethodInputArguments = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostics_LastMethodInputArguments);
+        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostic_LastMethodInputArguments = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostic_LastMethodInputArguments);
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodOutputArguments Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_LastMethodOutputArguments Variable.
         /// </summary>
-        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostics_LastMethodOutputArguments = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostics_LastMethodOutputArguments);
+        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostic_LastMethodOutputArguments = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostic_LastMethodOutputArguments);
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodInputValues Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_LastMethodInputValues Variable.
         /// </summary>
-        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostics_LastMethodInputValues = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostics_LastMethodInputValues);
+        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostic_LastMethodInputValues = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostic_LastMethodInputValues);
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodOutputValues Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_LastMethodOutputValues Variable.
         /// </summary>
-        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostics_LastMethodOutputValues = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostics_LastMethodOutputValues);
+        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostic_LastMethodOutputValues = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostic_LastMethodOutputValues);
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodCallTime Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_LastMethodCallTime Variable.
         /// </summary>
-        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostics_LastMethodCallTime = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostics_LastMethodCallTime);
+        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostic_LastMethodCallTime = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostic_LastMethodCallTime);
 
         /// <summary>
-        /// The identifier for the ProgramStateMachineType_ProgramDiagnostics_LastMethodReturnStatus Variable.
+        /// The identifier for the ProgramStateMachineType_ProgramDiagnostic_LastMethodReturnStatus Variable.
         /// </summary>
-        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostics_LastMethodReturnStatus = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostics_LastMethodReturnStatus);
+        public static readonly NodeId ProgramStateMachineType_ProgramDiagnostic_LastMethodReturnStatus = new NodeId(Opc.Ua.Variables.ProgramStateMachineType_ProgramDiagnostic_LastMethodReturnStatus);
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType_Halted_StateNumber Variable.
@@ -51050,6 +50455,11 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Address_NetworkInterface = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Address_NetworkInterface);
 
         /// <summary>
+        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Address_NetworkInterface_Selections Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Address_NetworkInterface_Selections = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Address_NetworkInterface_Selections);
+
+        /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Status_State Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Status_State = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Status_State);
@@ -51080,11 +50490,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalError Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalError = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalError);
@@ -51103,11 +50508,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_SubError Variable.
@@ -51135,11 +50535,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod);
@@ -51158,11 +50553,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -51185,11 +50575,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError);
@@ -51208,11 +50593,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent Variable.
@@ -51235,11 +50615,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod);
@@ -51258,11 +50633,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_ConnectionName_Placeholder_Diagnostics_LiveValues_ResolvedAddress Variable.
@@ -51410,11 +50780,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribeType_Diagnostics_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_Diagnostics_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_Diagnostics_TotalError Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_Diagnostics_TotalError = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_TotalError);
@@ -51433,11 +50798,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_Diagnostics_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_Diagnostics_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_Diagnostics_SubError Variable.
@@ -51465,11 +50825,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribeType_Diagnostics_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_Diagnostics_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_Diagnostics_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_Counters_StateOperationalByMethod);
@@ -51488,11 +50843,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -51515,11 +50865,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribeType_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_Diagnostics_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_Counters_StateOperationalFromError);
@@ -51538,11 +50883,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StatePausedByParent Variable.
@@ -51565,11 +50905,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribeType_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_Diagnostics_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_Counters_StateDisabledByMethod);
@@ -51588,11 +50923,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribeType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribeType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribeType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribeType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishSubscribeType_Diagnostics_LiveValues_ConfiguredDataSetWriters Variable.
@@ -51700,6 +51030,11 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Address_NetworkInterface = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Address_NetworkInterface);
 
         /// <summary>
+        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Address_NetworkInterface_Selections Variable.
+        /// </summary>
+        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Address_NetworkInterface_Selections = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Address_NetworkInterface_Selections);
+
+        /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Status_State Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Status_State = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Status_State);
@@ -51730,11 +51065,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError);
@@ -51753,11 +51083,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_SubError Variable.
@@ -51785,11 +51110,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod);
@@ -51808,11 +51128,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -51835,11 +51150,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError);
@@ -51858,11 +51168,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent Variable.
@@ -51885,11 +51190,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod);
@@ -51908,11 +51208,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_ConnectionName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishSubscribe_ConnectionName_Placeholder_Diagnostics_LiveValues_ResolvedAddress Variable.
@@ -52060,11 +51355,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribe_Diagnostics_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_Diagnostics_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishSubscribe_Diagnostics_TotalError Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribe_Diagnostics_TotalError = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_TotalError);
@@ -52083,11 +51373,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribe_Diagnostics_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_Diagnostics_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishSubscribe_Diagnostics_SubError Variable.
@@ -52115,11 +51400,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod);
@@ -52138,11 +51418,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -52165,11 +51440,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalFromError);
@@ -52188,11 +51458,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishSubscribe_Diagnostics_Counters_StatePausedByParent Variable.
@@ -52215,11 +51480,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod);
@@ -52238,11 +51498,6 @@ namespace Opc.Ua
         /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishSubscribe_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishSubscribe_Diagnostics_LiveValues_ConfiguredDataSetWriters Variable.
@@ -52335,11 +51590,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalError Variable.
         /// </summary>
         public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalError = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalError);
@@ -52358,11 +51608,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_SubError Variable.
@@ -52390,11 +51635,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod);
@@ -52413,11 +51653,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -52440,11 +51675,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError);
@@ -52463,11 +51693,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent Variable.
@@ -52490,11 +51715,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod);
@@ -52515,11 +51735,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages Variable.
         /// </summary>
         public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages);
@@ -52538,11 +51753,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishedDataSetType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MessageSequenceNumber_DiagnosticsLevel Variable.
@@ -52660,11 +51870,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalError Variable.
         /// </summary>
         public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalError = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalError);
@@ -52683,11 +51888,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_SubError Variable.
@@ -52715,11 +51915,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod);
@@ -52738,11 +51933,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -52765,11 +51955,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError);
@@ -52788,11 +51973,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent Variable.
@@ -52815,11 +51995,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod);
@@ -52840,11 +52015,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages Variable.
         /// </summary>
         public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages);
@@ -52863,11 +52033,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishedDataItemsType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MessageSequenceNumber_DiagnosticsLevel Variable.
@@ -52975,11 +52140,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalError Variable.
         /// </summary>
         public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalError = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalError);
@@ -52998,11 +52158,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_SubError Variable.
@@ -53030,11 +52185,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod);
@@ -53053,11 +52203,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -53080,11 +52225,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError);
@@ -53103,11 +52243,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent Variable.
@@ -53130,11 +52265,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod);
@@ -53155,11 +52285,6 @@ namespace Opc.Ua
         public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages Variable.
         /// </summary>
         public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages);
@@ -53178,11 +52303,6 @@ namespace Opc.Ua
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange = new NodeId(Opc.Ua.Variables.PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PublishedEventsType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MessageSequenceNumber_DiagnosticsLevel Variable.
@@ -53415,6 +52535,11 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_Address_NetworkInterface = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Address_NetworkInterface);
 
         /// <summary>
+        /// The identifier for the PubSubConnectionType_Address_NetworkInterface_Selections Variable.
+        /// </summary>
+        public static readonly NodeId PubSubConnectionType_Address_NetworkInterface_Selections = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Address_NetworkInterface_Selections);
+
+        /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_SecurityMode Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_SecurityMode = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_SecurityMode);
@@ -53490,11 +52615,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalError Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalError = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalError);
@@ -53513,11 +52633,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_SubError Variable.
@@ -53545,11 +52660,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod);
@@ -53568,11 +52678,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -53595,11 +52700,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError);
@@ -53618,11 +52718,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StatePausedByParent Variable.
@@ -53645,11 +52740,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod);
@@ -53668,11 +52758,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_SentNetworkMessages Variable.
@@ -53695,11 +52780,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_SentNetworkMessages_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_SentNetworkMessages_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_SentNetworkMessages_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_SentNetworkMessages_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_SentNetworkMessages_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_FailedTransmissions Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_FailedTransmissions = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_FailedTransmissions);
@@ -53720,11 +52800,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_FailedTransmissions_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_FailedTransmissions_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_FailedTransmissions_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_FailedTransmissions_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_FailedTransmissions_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_EncryptionErrors Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_EncryptionErrors = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_EncryptionErrors);
@@ -53743,11 +52818,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_EncryptionErrors_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_EncryptionErrors_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_EncryptionErrors_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_EncryptionErrors_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_EncryptionErrors_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_Counters_EncryptionErrors_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_WriterGroupName_Placeholder_Diagnostics_LiveValues_ConfiguredDataSetWriters Variable.
@@ -53840,11 +52910,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalError Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalError = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalError);
@@ -53863,11 +52928,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_SubError Variable.
@@ -53895,11 +52955,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod);
@@ -53918,11 +52973,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -53945,11 +52995,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError);
@@ -53968,11 +53013,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StatePausedByParent Variable.
@@ -53995,11 +53035,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod);
@@ -54018,11 +53053,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedNetworkMessages Variable.
@@ -54045,11 +53075,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedNetworkMessages_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedNetworkMessages_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedNetworkMessages_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedNetworkMessages_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedNetworkMessages_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedInvalidNetworkMessages_Active Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedInvalidNetworkMessages_Active = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedInvalidNetworkMessages_Active);
@@ -54065,11 +53090,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedInvalidNetworkMessages_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedInvalidNetworkMessages_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedInvalidNetworkMessages_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedInvalidNetworkMessages_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_ReceivedInvalidNetworkMessages_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_DecryptionErrors_Active Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_DecryptionErrors_Active = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_DecryptionErrors_Active);
@@ -54083,11 +53103,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_DecryptionErrors_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_DecryptionErrors_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_DecryptionErrors_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_DecryptionErrors_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_DecryptionErrors_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_Counters_DecryptionErrors_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_ReaderGroupName_Placeholder_Diagnostics_LiveValues_ConfiguredDataSetReaders Variable.
@@ -54155,11 +53170,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_Diagnostics_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Diagnostics_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_Diagnostics_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Diagnostics_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_Diagnostics_TotalError Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_Diagnostics_TotalError = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Diagnostics_TotalError);
@@ -54178,11 +53188,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_Diagnostics_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Diagnostics_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_Diagnostics_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Diagnostics_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_Diagnostics_SubError Variable.
@@ -54210,11 +53215,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_Diagnostics_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Diagnostics_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_Diagnostics_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Diagnostics_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_Diagnostics_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Diagnostics_Counters_StateOperationalByMethod);
@@ -54233,11 +53233,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -54260,11 +53255,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_Diagnostics_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Diagnostics_Counters_StateOperationalFromError);
@@ -54283,11 +53273,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StatePausedByParent Variable.
@@ -54310,11 +53295,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubConnectionType_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_Diagnostics_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Diagnostics_Counters_StateDisabledByMethod);
@@ -54333,11 +53313,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubConnectionType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubConnectionType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubConnectionType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubConnectionType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubConnectionType_Diagnostics_LiveValues_ResolvedAddress Variable.
@@ -54485,11 +53460,6 @@ namespace Opc.Ua
         public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalError Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalError = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalError);
@@ -54508,11 +53478,6 @@ namespace Opc.Ua
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_SubError Variable.
@@ -54540,11 +53505,6 @@ namespace Opc.Ua
         public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod);
@@ -54563,11 +53523,6 @@ namespace Opc.Ua
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -54590,11 +53545,6 @@ namespace Opc.Ua
         public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError);
@@ -54613,11 +53563,6 @@ namespace Opc.Ua
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent Variable.
@@ -54640,11 +53585,6 @@ namespace Opc.Ua
         public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod);
@@ -54665,11 +53605,6 @@ namespace Opc.Ua
         public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages);
@@ -54688,11 +53623,6 @@ namespace Opc.Ua
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange = new NodeId(Opc.Ua.Variables.WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the WriterGroupType_DataSetWriterName_Placeholder_Diagnostics_LiveValues_MessageSequenceNumber_DiagnosticsLevel Variable.
@@ -54740,11 +53670,6 @@ namespace Opc.Ua
         public static readonly NodeId WriterGroupType_Diagnostics_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId WriterGroupType_Diagnostics_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_TotalError Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_Diagnostics_TotalError = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_TotalError);
@@ -54763,11 +53688,6 @@ namespace Opc.Ua
         /// The identifier for the WriterGroupType_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_Diagnostics_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId WriterGroupType_Diagnostics_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_SubError Variable.
@@ -54795,11 +53715,6 @@ namespace Opc.Ua
         public static readonly NodeId WriterGroupType_Diagnostics_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId WriterGroupType_Diagnostics_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_Diagnostics_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_StateOperationalByMethod);
@@ -54818,11 +53733,6 @@ namespace Opc.Ua
         /// The identifier for the WriterGroupType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId WriterGroupType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -54845,11 +53755,6 @@ namespace Opc.Ua
         public static readonly NodeId WriterGroupType_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId WriterGroupType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_Diagnostics_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_StateOperationalFromError);
@@ -54868,11 +53773,6 @@ namespace Opc.Ua
         /// The identifier for the WriterGroupType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId WriterGroupType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_Counters_StatePausedByParent Variable.
@@ -54895,11 +53795,6 @@ namespace Opc.Ua
         public static readonly NodeId WriterGroupType_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId WriterGroupType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_Diagnostics_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_StateDisabledByMethod);
@@ -54918,11 +53813,6 @@ namespace Opc.Ua
         /// The identifier for the WriterGroupType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId WriterGroupType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_Counters_SentNetworkMessages Variable.
@@ -54945,11 +53835,6 @@ namespace Opc.Ua
         public static readonly NodeId WriterGroupType_Diagnostics_Counters_SentNetworkMessages_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_SentNetworkMessages_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_Counters_SentNetworkMessages_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId WriterGroupType_Diagnostics_Counters_SentNetworkMessages_TimeFirstChange = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_SentNetworkMessages_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_Counters_FailedTransmissions Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_Diagnostics_Counters_FailedTransmissions = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_FailedTransmissions);
@@ -54970,11 +53855,6 @@ namespace Opc.Ua
         public static readonly NodeId WriterGroupType_Diagnostics_Counters_FailedTransmissions_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_FailedTransmissions_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_Counters_FailedTransmissions_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId WriterGroupType_Diagnostics_Counters_FailedTransmissions_TimeFirstChange = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_FailedTransmissions_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_Counters_EncryptionErrors Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_Diagnostics_Counters_EncryptionErrors = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_EncryptionErrors);
@@ -54993,11 +53873,6 @@ namespace Opc.Ua
         /// The identifier for the WriterGroupType_Diagnostics_Counters_EncryptionErrors_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId WriterGroupType_Diagnostics_Counters_EncryptionErrors_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_EncryptionErrors_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the WriterGroupType_Diagnostics_Counters_EncryptionErrors_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId WriterGroupType_Diagnostics_Counters_EncryptionErrors_TimeFirstChange = new NodeId(Opc.Ua.Variables.WriterGroupType_Diagnostics_Counters_EncryptionErrors_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the WriterGroupType_Diagnostics_LiveValues_ConfiguredDataSetWriters Variable.
@@ -55125,11 +54000,6 @@ namespace Opc.Ua
         public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalError Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalError = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalError);
@@ -55148,11 +54018,6 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_SubError Variable.
@@ -55180,11 +54045,6 @@ namespace Opc.Ua
         public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByMethod);
@@ -55203,11 +54063,6 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -55230,11 +54085,6 @@ namespace Opc.Ua
         public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalFromError);
@@ -55253,11 +54103,6 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StatePausedByParent Variable.
@@ -55280,11 +54125,6 @@ namespace Opc.Ua
         public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateDisabledByMethod);
@@ -55303,11 +54143,6 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_FailedDataSetMessages Variable.
@@ -55330,11 +54165,6 @@ namespace Opc.Ua
         public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_DecryptionErrors_Active Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_DecryptionErrors_Active = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_DecryptionErrors_Active);
@@ -55348,11 +54178,6 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_DecryptionErrors_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_DecryptionErrors_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_DecryptionErrors_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_DecryptionErrors_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_DecryptionErrors_TimeFirstChange = new NodeId(Opc.Ua.Variables.ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_Counters_DecryptionErrors_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the ReaderGroupType_DataSetReaderName_Placeholder_Diagnostics_LiveValues_MessageSequenceNumber_DiagnosticsLevel Variable.
@@ -55430,11 +54255,6 @@ namespace Opc.Ua
         public static readonly NodeId ReaderGroupType_Diagnostics_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_Diagnostics_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_TotalError Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_Diagnostics_TotalError = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_TotalError);
@@ -55453,11 +54273,6 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_Diagnostics_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_Diagnostics_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_SubError Variable.
@@ -55485,11 +54300,6 @@ namespace Opc.Ua
         public static readonly NodeId ReaderGroupType_Diagnostics_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_Diagnostics_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_Diagnostics_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_StateOperationalByMethod);
@@ -55508,11 +54318,6 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -55535,11 +54340,6 @@ namespace Opc.Ua
         public static readonly NodeId ReaderGroupType_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_Diagnostics_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_StateOperationalFromError);
@@ -55558,11 +54358,6 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_StatePausedByParent Variable.
@@ -55585,11 +54380,6 @@ namespace Opc.Ua
         public static readonly NodeId ReaderGroupType_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_Diagnostics_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_StateDisabledByMethod);
@@ -55608,11 +54398,6 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_ReceivedNetworkMessages Variable.
@@ -55635,11 +54420,6 @@ namespace Opc.Ua
         public static readonly NodeId ReaderGroupType_Diagnostics_Counters_ReceivedNetworkMessages_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_ReceivedNetworkMessages_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_Counters_ReceivedNetworkMessages_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_Diagnostics_Counters_ReceivedNetworkMessages_TimeFirstChange = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_ReceivedNetworkMessages_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_ReceivedInvalidNetworkMessages_Active Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_Diagnostics_Counters_ReceivedInvalidNetworkMessages_Active = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_ReceivedInvalidNetworkMessages_Active);
@@ -55655,11 +54435,6 @@ namespace Opc.Ua
         public static readonly NodeId ReaderGroupType_Diagnostics_Counters_ReceivedInvalidNetworkMessages_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_ReceivedInvalidNetworkMessages_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_Counters_ReceivedInvalidNetworkMessages_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_Diagnostics_Counters_ReceivedInvalidNetworkMessages_TimeFirstChange = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_ReceivedInvalidNetworkMessages_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_DecryptionErrors_Active Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_Diagnostics_Counters_DecryptionErrors_Active = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_DecryptionErrors_Active);
@@ -55673,11 +54448,6 @@ namespace Opc.Ua
         /// The identifier for the ReaderGroupType_Diagnostics_Counters_DecryptionErrors_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId ReaderGroupType_Diagnostics_Counters_DecryptionErrors_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_DecryptionErrors_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the ReaderGroupType_Diagnostics_Counters_DecryptionErrors_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId ReaderGroupType_Diagnostics_Counters_DecryptionErrors_TimeFirstChange = new NodeId(Opc.Ua.Variables.ReaderGroupType_Diagnostics_Counters_DecryptionErrors_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the ReaderGroupType_Diagnostics_LiveValues_ConfiguredDataSetReaders Variable.
@@ -55765,11 +54535,6 @@ namespace Opc.Ua
         public static readonly NodeId DataSetWriterType_Diagnostics_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the DataSetWriterType_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId DataSetWriterType_Diagnostics_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the DataSetWriterType_Diagnostics_TotalError Variable.
         /// </summary>
         public static readonly NodeId DataSetWriterType_Diagnostics_TotalError = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_TotalError);
@@ -55788,11 +54553,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetWriterType_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId DataSetWriterType_Diagnostics_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the DataSetWriterType_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId DataSetWriterType_Diagnostics_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the DataSetWriterType_Diagnostics_SubError Variable.
@@ -55820,11 +54580,6 @@ namespace Opc.Ua
         public static readonly NodeId DataSetWriterType_Diagnostics_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId DataSetWriterType_Diagnostics_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId DataSetWriterType_Diagnostics_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_Counters_StateOperationalByMethod);
@@ -55843,11 +54598,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId DataSetWriterType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId DataSetWriterType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -55870,11 +54620,6 @@ namespace Opc.Ua
         public static readonly NodeId DataSetWriterType_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId DataSetWriterType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId DataSetWriterType_Diagnostics_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_Counters_StateOperationalFromError);
@@ -55893,11 +54638,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId DataSetWriterType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId DataSetWriterType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the DataSetWriterType_Diagnostics_Counters_StatePausedByParent Variable.
@@ -55920,11 +54660,6 @@ namespace Opc.Ua
         public static readonly NodeId DataSetWriterType_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the DataSetWriterType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId DataSetWriterType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId DataSetWriterType_Diagnostics_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_Counters_StateDisabledByMethod);
@@ -55945,11 +54680,6 @@ namespace Opc.Ua
         public static readonly NodeId DataSetWriterType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the DataSetWriterType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId DataSetWriterType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the DataSetWriterType_Diagnostics_Counters_FailedDataSetMessages Variable.
         /// </summary>
         public static readonly NodeId DataSetWriterType_Diagnostics_Counters_FailedDataSetMessages = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_Counters_FailedDataSetMessages);
@@ -55968,11 +54698,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetWriterType_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId DataSetWriterType_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the DataSetWriterType_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId DataSetWriterType_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange = new NodeId(Opc.Ua.Variables.DataSetWriterType_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the DataSetWriterType_Diagnostics_LiveValues_MessageSequenceNumber_DiagnosticsLevel Variable.
@@ -56085,11 +54810,6 @@ namespace Opc.Ua
         public static readonly NodeId DataSetReaderType_Diagnostics_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the DataSetReaderType_Diagnostics_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId DataSetReaderType_Diagnostics_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the DataSetReaderType_Diagnostics_TotalError Variable.
         /// </summary>
         public static readonly NodeId DataSetReaderType_Diagnostics_TotalError = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_TotalError);
@@ -56108,11 +54828,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetReaderType_Diagnostics_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId DataSetReaderType_Diagnostics_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the DataSetReaderType_Diagnostics_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId DataSetReaderType_Diagnostics_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the DataSetReaderType_Diagnostics_SubError Variable.
@@ -56140,11 +54855,6 @@ namespace Opc.Ua
         public static readonly NodeId DataSetReaderType_Diagnostics_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId DataSetReaderType_Diagnostics_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId DataSetReaderType_Diagnostics_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_Counters_StateOperationalByMethod);
@@ -56163,11 +54873,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId DataSetReaderType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId DataSetReaderType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateOperationalByParent Variable.
@@ -56190,11 +54895,6 @@ namespace Opc.Ua
         public static readonly NodeId DataSetReaderType_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId DataSetReaderType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId DataSetReaderType_Diagnostics_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_Counters_StateOperationalFromError);
@@ -56213,11 +54913,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId DataSetReaderType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId DataSetReaderType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_StatePausedByParent Variable.
@@ -56240,11 +54935,6 @@ namespace Opc.Ua
         public static readonly NodeId DataSetReaderType_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the DataSetReaderType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId DataSetReaderType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId DataSetReaderType_Diagnostics_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_Counters_StateDisabledByMethod);
@@ -56263,11 +54953,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId DataSetReaderType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_Counters_StateDisabledByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the DataSetReaderType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId DataSetReaderType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_Counters_StateDisabledByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_FailedDataSetMessages Variable.
@@ -56290,11 +54975,6 @@ namespace Opc.Ua
         public static readonly NodeId DataSetReaderType_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_Counters_FailedDataSetMessages_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the DataSetReaderType_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId DataSetReaderType_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_Counters_FailedDataSetMessages_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_DecryptionErrors_Active Variable.
         /// </summary>
         public static readonly NodeId DataSetReaderType_Diagnostics_Counters_DecryptionErrors_Active = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_Counters_DecryptionErrors_Active);
@@ -56308,11 +54988,6 @@ namespace Opc.Ua
         /// The identifier for the DataSetReaderType_Diagnostics_Counters_DecryptionErrors_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId DataSetReaderType_Diagnostics_Counters_DecryptionErrors_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_Counters_DecryptionErrors_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the DataSetReaderType_Diagnostics_Counters_DecryptionErrors_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId DataSetReaderType_Diagnostics_Counters_DecryptionErrors_TimeFirstChange = new NodeId(Opc.Ua.Variables.DataSetReaderType_Diagnostics_Counters_DecryptionErrors_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the DataSetReaderType_Diagnostics_LiveValues_MessageSequenceNumber_DiagnosticsLevel Variable.
@@ -56420,11 +55095,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsType_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsType_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsType_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsType_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsType_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsType_TotalError Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsType_TotalError = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsType_TotalError);
@@ -56443,11 +55113,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsType_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsType_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsType_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsType_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsType_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsType_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsType_SubError Variable.
@@ -56475,11 +55140,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsType_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsType_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsType_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsType_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsType_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsType_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsType_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsType_Counters_StateOperationalByMethod);
@@ -56498,11 +55158,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsType_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsType_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsType_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsType_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsType_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsType_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsType_Counters_StateOperationalByParent Variable.
@@ -56525,11 +55180,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsType_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsType_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsType_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsType_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsType_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsType_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsType_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsType_Counters_StateOperationalFromError);
@@ -56548,11 +55198,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsType_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsType_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsType_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsType_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsType_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsType_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsType_Counters_StatePausedByParent Variable.
@@ -56575,11 +55220,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsType_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsType_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsType_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsType_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsType_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsType_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsType_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsType_Counters_StateDisabledByMethod);
@@ -56598,11 +55238,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsType_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsType_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsType_Counters_StateDisabledByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsType_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsType_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsType_Counters_StateDisabledByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the DiagnosticsLevel_EnumStrings Variable.
@@ -56650,11 +55285,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsRootType_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsRootType_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsRootType_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsRootType_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsRootType_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsRootType_TotalError_Active Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsRootType_TotalError_Active = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsRootType_TotalError_Active);
@@ -56668,11 +55298,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsRootType_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsRootType_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsRootType_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsRootType_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsRootType_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsRootType_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsRootType_Counters_StateError Variable.
@@ -56695,11 +55320,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsRootType_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsRootType_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsRootType_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsRootType_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsRootType_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsRootType_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsRootType_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsRootType_Counters_StateOperationalByMethod);
@@ -56718,11 +55338,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsRootType_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsRootType_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsRootType_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsRootType_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsRootType_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsRootType_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsRootType_Counters_StateOperationalByParent Variable.
@@ -56745,11 +55360,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsRootType_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsRootType_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsRootType_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsRootType_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsRootType_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsRootType_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsRootType_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsRootType_Counters_StateOperationalFromError);
@@ -56768,11 +55378,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsRootType_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsRootType_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsRootType_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsRootType_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsRootType_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsRootType_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsRootType_Counters_StatePausedByParent Variable.
@@ -56795,11 +55400,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsRootType_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsRootType_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsRootType_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsRootType_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsRootType_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsRootType_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsRootType_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsRootType_Counters_StateDisabledByMethod);
@@ -56818,11 +55418,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsRootType_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsRootType_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsRootType_Counters_StateDisabledByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsRootType_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsRootType_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsRootType_Counters_StateDisabledByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsRootType_LiveValues_ConfiguredDataSetWriters Variable.
@@ -56880,11 +55475,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsConnectionType_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsConnectionType_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsConnectionType_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsConnectionType_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsConnectionType_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsConnectionType_TotalError_Active Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsConnectionType_TotalError_Active = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsConnectionType_TotalError_Active);
@@ -56898,11 +55488,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsConnectionType_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsConnectionType_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsConnectionType_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsConnectionType_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsConnectionType_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsConnectionType_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateError Variable.
@@ -56925,11 +55510,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsConnectionType_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsConnectionType_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsConnectionType_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsConnectionType_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsConnectionType_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsConnectionType_Counters_StateOperationalByMethod);
@@ -56948,11 +55528,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsConnectionType_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsConnectionType_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsConnectionType_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsConnectionType_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateOperationalByParent Variable.
@@ -56975,11 +55550,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsConnectionType_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsConnectionType_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsConnectionType_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsConnectionType_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsConnectionType_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsConnectionType_Counters_StateOperationalFromError);
@@ -56998,11 +55568,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsConnectionType_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsConnectionType_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsConnectionType_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsConnectionType_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StatePausedByParent Variable.
@@ -57025,11 +55590,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsConnectionType_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsConnectionType_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsConnectionType_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsConnectionType_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsConnectionType_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsConnectionType_Counters_StateDisabledByMethod);
@@ -57048,11 +55608,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsConnectionType_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsConnectionType_Counters_StateDisabledByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsConnectionType_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsConnectionType_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsConnectionType_Counters_StateDisabledByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsConnectionType_LiveValues_ResolvedAddress Variable.
@@ -57080,11 +55635,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsWriterGroupType_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsWriterGroupType_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_TotalError_Active Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsWriterGroupType_TotalError_Active = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_TotalError_Active);
@@ -57098,11 +55648,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsWriterGroupType_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsWriterGroupType_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsWriterGroupType_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateError Variable.
@@ -57125,11 +55670,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByMethod);
@@ -57148,11 +55688,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByParent Variable.
@@ -57175,11 +55710,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_StateOperationalFromError);
@@ -57198,11 +55728,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StatePausedByParent Variable.
@@ -57225,11 +55750,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_StateDisabledByMethod);
@@ -57248,11 +55768,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_StateDisabledByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_StateDisabledByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_SentNetworkMessages Variable.
@@ -57275,11 +55790,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_SentNetworkMessages_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_SentNetworkMessages_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_SentNetworkMessages_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_SentNetworkMessages_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_SentNetworkMessages_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_FailedTransmissions Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_FailedTransmissions = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_FailedTransmissions);
@@ -57300,11 +55810,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_FailedTransmissions_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_FailedTransmissions_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_FailedTransmissions_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_FailedTransmissions_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_FailedTransmissions_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_EncryptionErrors Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_EncryptionErrors = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_EncryptionErrors);
@@ -57323,11 +55828,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_EncryptionErrors_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_EncryptionErrors_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_EncryptionErrors_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsWriterGroupType_Counters_EncryptionErrors_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsWriterGroupType_Counters_EncryptionErrors_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsWriterGroupType_Counters_EncryptionErrors_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsWriterGroupType_LiveValues_ConfiguredDataSetWriters Variable.
@@ -57385,11 +55885,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsReaderGroupType_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsReaderGroupType_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_TotalError_Active Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsReaderGroupType_TotalError_Active = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_TotalError_Active);
@@ -57403,11 +55898,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsReaderGroupType_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsReaderGroupType_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsReaderGroupType_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateError Variable.
@@ -57430,11 +55920,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByMethod);
@@ -57453,11 +55938,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByParent Variable.
@@ -57480,11 +55960,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_StateOperationalFromError);
@@ -57503,11 +55978,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StatePausedByParent Variable.
@@ -57530,11 +56000,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_StateDisabledByMethod);
@@ -57553,11 +56018,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_StateDisabledByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_StateDisabledByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_ReceivedNetworkMessages Variable.
@@ -57580,11 +56040,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_ReceivedNetworkMessages_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_ReceivedNetworkMessages_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_ReceivedNetworkMessages_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_ReceivedNetworkMessages_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_ReceivedNetworkMessages_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_ReceivedInvalidNetworkMessages Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_ReceivedInvalidNetworkMessages = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_ReceivedInvalidNetworkMessages);
@@ -57605,11 +56060,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_ReceivedInvalidNetworkMessages_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_ReceivedInvalidNetworkMessages_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_ReceivedInvalidNetworkMessages_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_ReceivedInvalidNetworkMessages_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_ReceivedInvalidNetworkMessages_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_DecryptionErrors Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_DecryptionErrors = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_DecryptionErrors);
@@ -57628,11 +56078,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_DecryptionErrors_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_DecryptionErrors_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_DecryptionErrors_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsReaderGroupType_Counters_DecryptionErrors_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsReaderGroupType_Counters_DecryptionErrors_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsReaderGroupType_Counters_DecryptionErrors_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsReaderGroupType_LiveValues_ConfiguredDataSetReaders Variable.
@@ -57670,11 +56115,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsDataSetWriterType_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetWriterType_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsDataSetWriterType_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_TotalError_Active Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsDataSetWriterType_TotalError_Active = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_TotalError_Active);
@@ -57688,11 +56128,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsDataSetWriterType_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetWriterType_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsDataSetWriterType_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateError Variable.
@@ -57715,11 +56150,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsDataSetWriterType_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsDataSetWriterType_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByMethod);
@@ -57738,11 +56168,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByParent Variable.
@@ -57765,11 +56190,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalFromError);
@@ -57788,11 +56208,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StatePausedByParent Variable.
@@ -57815,11 +56230,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsDataSetWriterType_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsDataSetWriterType_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsDataSetWriterType_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_Counters_StateDisabledByMethod);
@@ -57840,11 +56250,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsDataSetWriterType_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_Counters_StateDisabledByMethod_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsDataSetWriterType_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_Counters_StateDisabledByMethod_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_FailedDataSetMessages Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsDataSetWriterType_Counters_FailedDataSetMessages = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_Counters_FailedDataSetMessages);
@@ -57863,11 +56268,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_FailedDataSetMessages_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsDataSetWriterType_Counters_FailedDataSetMessages_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_Counters_FailedDataSetMessages_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetWriterType_Counters_FailedDataSetMessages_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsDataSetWriterType_Counters_FailedDataSetMessages_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetWriterType_Counters_FailedDataSetMessages_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetWriterType_LiveValues_MessageSequenceNumber Variable.
@@ -57925,11 +56325,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsDataSetReaderType_TotalInformation_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_TotalInformation_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetReaderType_TotalInformation_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsDataSetReaderType_TotalInformation_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_TotalInformation_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_TotalError_Active Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsDataSetReaderType_TotalError_Active = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_TotalError_Active);
@@ -57943,11 +56338,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_TotalError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsDataSetReaderType_TotalError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_TotalError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetReaderType_TotalError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsDataSetReaderType_TotalError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_TotalError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateError Variable.
@@ -57970,11 +56360,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsDataSetReaderType_Counters_StateError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_Counters_StateError_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsDataSetReaderType_Counters_StateError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_Counters_StateError_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByMethod Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByMethod = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByMethod);
@@ -57993,11 +56378,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByParent Variable.
@@ -58020,11 +56400,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalFromError Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalFromError = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalFromError);
@@ -58043,11 +56418,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalFromError_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalFromError_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalFromError_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalFromError_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalFromError_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_Counters_StateOperationalFromError_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StatePausedByParent Variable.
@@ -58070,11 +56440,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsDataSetReaderType_Counters_StatePausedByParent_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_Counters_StatePausedByParent_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StatePausedByParent_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsDataSetReaderType_Counters_StatePausedByParent_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_Counters_StatePausedByParent_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateDisabledByMethod Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsDataSetReaderType_Counters_StateDisabledByMethod = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_Counters_StateDisabledByMethod);
@@ -58093,11 +56458,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateDisabledByMethod_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsDataSetReaderType_Counters_StateDisabledByMethod_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_Counters_StateDisabledByMethod_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_StateDisabledByMethod_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsDataSetReaderType_Counters_StateDisabledByMethod_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_Counters_StateDisabledByMethod_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_FailedDataSetMessages Variable.
@@ -58120,11 +56480,6 @@ namespace Opc.Ua
         public static readonly NodeId PubSubDiagnosticsDataSetReaderType_Counters_FailedDataSetMessages_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_Counters_FailedDataSetMessages_DiagnosticsLevel);
 
         /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_FailedDataSetMessages_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsDataSetReaderType_Counters_FailedDataSetMessages_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_Counters_FailedDataSetMessages_TimeFirstChange);
-
-        /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_DecryptionErrors Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsDataSetReaderType_Counters_DecryptionErrors = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_Counters_DecryptionErrors);
@@ -58143,11 +56498,6 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_DecryptionErrors_DiagnosticsLevel Variable.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsDataSetReaderType_Counters_DecryptionErrors_DiagnosticsLevel = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_Counters_DecryptionErrors_DiagnosticsLevel);
-
-        /// <summary>
-        /// The identifier for the PubSubDiagnosticsDataSetReaderType_Counters_DecryptionErrors_TimeFirstChange Variable.
-        /// </summary>
-        public static readonly NodeId PubSubDiagnosticsDataSetReaderType_Counters_DecryptionErrors_TimeFirstChange = new NodeId(Opc.Ua.Variables.PubSubDiagnosticsDataSetReaderType_Counters_DecryptionErrors_TimeFirstChange);
 
         /// <summary>
         /// The identifier for the PubSubDiagnosticsDataSetReaderType_LiveValues_MessageSequenceNumber Variable.
@@ -58290,11 +56640,6 @@ namespace Opc.Ua
         public static readonly NodeId UadpDataSetReaderMessageType_GroupVersion = new NodeId(Opc.Ua.Variables.UadpDataSetReaderMessageType_GroupVersion);
 
         /// <summary>
-        /// The identifier for the UadpDataSetReaderMessageType_DataSetOrdering Variable.
-        /// </summary>
-        public static readonly NodeId UadpDataSetReaderMessageType_DataSetOrdering = new NodeId(Opc.Ua.Variables.UadpDataSetReaderMessageType_DataSetOrdering);
-
-        /// <summary>
         /// The identifier for the UadpDataSetReaderMessageType_NetworkMessageNumber Variable.
         /// </summary>
         public static readonly NodeId UadpDataSetReaderMessageType_NetworkMessageNumber = new NodeId(Opc.Ua.Variables.UadpDataSetReaderMessageType_NetworkMessageNumber);
@@ -58358,6 +56703,11 @@ namespace Opc.Ua
         /// The identifier for the DatagramConnectionTransportType_DiscoveryAddress_NetworkInterface Variable.
         /// </summary>
         public static readonly NodeId DatagramConnectionTransportType_DiscoveryAddress_NetworkInterface = new NodeId(Opc.Ua.Variables.DatagramConnectionTransportType_DiscoveryAddress_NetworkInterface);
+
+        /// <summary>
+        /// The identifier for the DatagramConnectionTransportType_DiscoveryAddress_NetworkInterface_Selections Variable.
+        /// </summary>
+        public static readonly NodeId DatagramConnectionTransportType_DiscoveryAddress_NetworkInterface_Selections = new NodeId(Opc.Ua.Variables.DatagramConnectionTransportType_DiscoveryAddress_NetworkInterface_Selections);
 
         /// <summary>
         /// The identifier for the DatagramWriterGroupTransportType_MessageRepeatCount Variable.
@@ -58458,6 +56808,16 @@ namespace Opc.Ua
         /// The identifier for the NetworkAddressType_NetworkInterface Variable.
         /// </summary>
         public static readonly NodeId NetworkAddressType_NetworkInterface = new NodeId(Opc.Ua.Variables.NetworkAddressType_NetworkInterface);
+
+        /// <summary>
+        /// The identifier for the NetworkAddressType_NetworkInterface_Selections Variable.
+        /// </summary>
+        public static readonly NodeId NetworkAddressType_NetworkInterface_Selections = new NodeId(Opc.Ua.Variables.NetworkAddressType_NetworkInterface_Selections);
+
+        /// <summary>
+        /// The identifier for the NetworkAddressUrlType_NetworkInterface_Selections Variable.
+        /// </summary>
+        public static readonly NodeId NetworkAddressUrlType_NetworkInterface_Selections = new NodeId(Opc.Ua.Variables.NetworkAddressUrlType_NetworkInterface_Selections);
 
         /// <summary>
         /// The identifier for the NetworkAddressUrlType_Url Variable.
@@ -60844,9 +59204,9 @@ namespace Opc.Ua
         public const string AuditConditionSilenceEventType = "AuditConditionSilenceEventType";
 
         /// <summary>
-        /// The BrowseName for the AuditConditionSuppressEventType component.
+        /// The BrowseName for the AuditConditionSuppressionEventType component.
         /// </summary>
-        public const string AuditConditionSuppressEventType = "AuditConditionSuppressEventType";
+        public const string AuditConditionSuppressionEventType = "AuditConditionSuppressionEventType";
 
         /// <summary>
         /// The BrowseName for the AuditCreateSessionEventType component.
@@ -63619,9 +61979,24 @@ namespace Opc.Ua
         public const string LowToLowLow = "LowToLowLow";
 
         /// <summary>
+        /// The BrowseName for the Maintain component.
+        /// </summary>
+        public const string Maintain = "Maintain";
+
+        /// <summary>
+        /// The BrowseName for the Maintenance component.
+        /// </summary>
+        public const string Maintenance = "Maintenance";
+
+        /// <summary>
         /// The BrowseName for the MaintenanceConditionClassType component.
         /// </summary>
         public const string MaintenanceConditionClassType = "MaintenanceConditionClassType";
+
+        /// <summary>
+        /// The BrowseName for the MaintenanceToOutOfService component.
+        /// </summary>
+        public const string MaintenanceToOutOfService = "MaintenanceToOutOfService";
 
         /// <summary>
         /// The BrowseName for the ManufacturerName component.
@@ -64449,6 +62824,26 @@ namespace Opc.Ua
         public const string OpenWithMasks = "OpenWithMasks";
 
         /// <summary>
+        /// The BrowseName for the Operating component.
+        /// </summary>
+        public const string Operating = "Operating";
+
+        /// <summary>
+        /// The BrowseName for the OperatingToOutOfService component.
+        /// </summary>
+        public const string OperatingToOutOfService = "OperatingToOutOfService";
+
+        /// <summary>
+        /// The BrowseName for the OperatingToShutdown component.
+        /// </summary>
+        public const string OperatingToShutdown = "OperatingToShutdown";
+
+        /// <summary>
+        /// The BrowseName for the OperatingToShuttingDown component.
+        /// </summary>
+        public const string OperatingToShuttingDown = "OperatingToShuttingDown";
+
+        /// <summary>
         /// The BrowseName for the OperationLimits component.
         /// </summary>
         public const string OperationLimits = "OperationLimits";
@@ -64479,9 +62874,34 @@ namespace Opc.Ua
         public const string Organizes = "Organizes";
 
         /// <summary>
+        /// The BrowseName for the OutOfService component.
+        /// </summary>
+        public const string OutOfService = "OutOfService";
+
+        /// <summary>
+        /// The BrowseName for the OutOfServiceShutdown component.
+        /// </summary>
+        public const string OutOfServiceShutdown = "OutOfServiceShutdown";
+
+        /// <summary>
         /// The BrowseName for the OutOfServiceState component.
         /// </summary>
         public const string OutOfServiceState = "OutOfServiceState";
+
+        /// <summary>
+        /// The BrowseName for the OutOfServiceToMaintenance component.
+        /// </summary>
+        public const string OutOfServiceToMaintenance = "OutOfServiceToMaintenance";
+
+        /// <summary>
+        /// The BrowseName for the OutOfServiceToOperating component.
+        /// </summary>
+        public const string OutOfServiceToOperating = "OutOfServiceToOperating";
+
+        /// <summary>
+        /// The BrowseName for the OutOfServiceToShutdown component.
+        /// </summary>
+        public const string OutOfServiceToShutdown = "OutOfServiceToShutdown";
 
         /// <summary>
         /// The BrowseName for the OutputArguments component.
@@ -64534,6 +62954,11 @@ namespace Opc.Ua
         public const string PlaceInService = "PlaceInService";
 
         /// <summary>
+        /// The BrowseName for the PlaceOutOfService component.
+        /// </summary>
+        public const string PlaceOutOfService = "PlaceOutOfService";
+
+        /// <summary>
         /// The BrowseName for the Priority component.
         /// </summary>
         public const string Priority = "Priority";
@@ -64564,6 +62989,11 @@ namespace Opc.Ua
         public const string ProfileUri = "ProfileUri";
 
         /// <summary>
+        /// The BrowseName for the ProgramDiagnostic component.
+        /// </summary>
+        public const string ProgramDiagnostic = "ProgramDiagnostic";
+
+        /// <summary>
         /// The BrowseName for the ProgramDiagnostic2DataType component.
         /// </summary>
         public const string ProgramDiagnostic2DataType = "ProgramDiagnostic2DataType";
@@ -64577,11 +63007,6 @@ namespace Opc.Ua
         /// The BrowseName for the ProgramDiagnosticDataType component.
         /// </summary>
         public const string ProgramDiagnosticDataType = "ProgramDiagnosticDataType";
-
-        /// <summary>
-        /// The BrowseName for the ProgramDiagnostics component.
-        /// </summary>
-        public const string ProgramDiagnostics = "ProgramDiagnostics";
 
         /// <summary>
         /// The BrowseName for the ProgramDiagnosticType component.
@@ -64892,6 +63317,16 @@ namespace Opc.Ua
         /// The BrowseName for the QueueName component.
         /// </summary>
         public const string QueueName = "QueueName";
+
+        /// <summary>
+        /// The BrowseName for the QuickShutdown component.
+        /// </summary>
+        public const string QuickShutdown = "QuickShutdown";
+
+        /// <summary>
+        /// The BrowseName for the QuickStart component.
+        /// </summary>
+        public const string QuickStart = "QuickStart";
 
         /// <summary>
         /// The BrowseName for the Range component.
@@ -65964,9 +64399,39 @@ namespace Opc.Ua
         public const string ShelvingTime = "ShelvingTime";
 
         /// <summary>
+        /// The BrowseName for the Shutdown component.
+        /// </summary>
+        public const string Shutdown = "Shutdown";
+
+        /// <summary>
         /// The BrowseName for the ShutdownReason component.
         /// </summary>
         public const string ShutdownReason = "ShutdownReason";
+
+        /// <summary>
+        /// The BrowseName for the ShutdownToOperating component.
+        /// </summary>
+        public const string ShutdownToOperating = "ShutdownToOperating";
+
+        /// <summary>
+        /// The BrowseName for the ShutdownToOutOfService component.
+        /// </summary>
+        public const string ShutdownToOutOfService = "ShutdownToOutOfService";
+
+        /// <summary>
+        /// The BrowseName for the ShutdownToStartingUp component.
+        /// </summary>
+        public const string ShutdownToStartingUp = "ShutdownToStartingUp";
+
+        /// <summary>
+        /// The BrowseName for the ShuttingDown component.
+        /// </summary>
+        public const string ShuttingDown = "ShuttingDown";
+
+        /// <summary>
+        /// The BrowseName for the ShuttingDownToShutdown component.
+        /// </summary>
+        public const string ShuttingDownToShutdown = "ShuttingDownToShutdown";
 
         /// <summary>
         /// The BrowseName for the SignatureData component.
@@ -66032,6 +64497,16 @@ namespace Opc.Ua
         /// The BrowseName for the Start component.
         /// </summary>
         public const string Start = "Start";
+
+        /// <summary>
+        /// The BrowseName for the StartingUp component.
+        /// </summary>
+        public const string StartingUp = "StartingUp";
+
+        /// <summary>
+        /// The BrowseName for the StartingUpToOperating component.
+        /// </summary>
+        public const string StartingUpToOperating = "StartingUpToOperating";
 
         /// <summary>
         /// The BrowseName for the StartOfArchive component.
@@ -66122,6 +64597,11 @@ namespace Opc.Ua
         /// The BrowseName for the Stepped component.
         /// </summary>
         public const string Stepped = "Stepped";
+
+        /// <summary>
+        /// The BrowseName for the Stop component.
+        /// </summary>
+        public const string Stop = "Stop";
 
         /// <summary>
         /// The BrowseName for the String component.
@@ -66294,6 +64774,11 @@ namespace Opc.Ua
         public const string SystemState = "SystemState";
 
         /// <summary>
+        /// The BrowseName for the SystemStateStateMachineType component.
+        /// </summary>
+        public const string SystemStateStateMachineType = "SystemStateStateMachineType";
+
+        /// <summary>
         /// The BrowseName for the SystemStatusChangeEventType component.
         /// </summary>
         public const string SystemStatusChangeEventType = "SystemStatusChangeEventType";
@@ -66324,9 +64809,9 @@ namespace Opc.Ua
         public const string TemporaryFileTransferType = "TemporaryFileTransferType";
 
         /// <summary>
-        /// The BrowseName for the TestingConditionClassType component.
+        /// The BrowseName for the TestingConditionSubClassType component.
         /// </summary>
-        public const string TestingConditionClassType = "TestingConditionClassType";
+        public const string TestingConditionSubClassType = "TestingConditionSubClassType";
 
         /// <summary>
         /// The BrowseName for the Time component.
@@ -66876,42 +65361,42 @@ namespace Opc.Ua
         /// <summary>
         /// The BrowseName for the WellKnownRole_Anonymous component.
         /// </summary>
-        public const string WellKnownRole_Anonymous = "AnonymousRole";
+        public const string WellKnownRole_Anonymous = "WellKnownRole_Anonymous";
 
         /// <summary>
         /// The BrowseName for the WellKnownRole_AuthenticatedUser component.
         /// </summary>
-        public const string WellKnownRole_AuthenticatedUser = "AuthenticatedUserRole";
+        public const string WellKnownRole_AuthenticatedUser = "WellKnownRole_AuthenticatedUser";
 
         /// <summary>
         /// The BrowseName for the WellKnownRole_ConfigureAdmin component.
         /// </summary>
-        public const string WellKnownRole_ConfigureAdmin = "ConfigureAdminRole";
+        public const string WellKnownRole_ConfigureAdmin = "WellKnownRole_ConfigureAdmin";
 
         /// <summary>
         /// The BrowseName for the WellKnownRole_Engineer component.
         /// </summary>
-        public const string WellKnownRole_Engineer = "EngineerRole";
+        public const string WellKnownRole_Engineer = "WellKnownRole_Engineer";
 
         /// <summary>
         /// The BrowseName for the WellKnownRole_Observer component.
         /// </summary>
-        public const string WellKnownRole_Observer = "ObserverRole";
+        public const string WellKnownRole_Observer = "WellKnownRole_Observer";
 
         /// <summary>
         /// The BrowseName for the WellKnownRole_Operator component.
         /// </summary>
-        public const string WellKnownRole_Operator = "OperatorRole";
+        public const string WellKnownRole_Operator = "WellKnownRole_Operator";
 
         /// <summary>
         /// The BrowseName for the WellKnownRole_SecurityAdmin component.
         /// </summary>
-        public const string WellKnownRole_SecurityAdmin = "SecurityAdminRole";
+        public const string WellKnownRole_SecurityAdmin = "WellKnownRole_SecurityAdmin";
 
         /// <summary>
         /// The BrowseName for the WellKnownRole_Supervisor component.
         /// </summary>
-        public const string WellKnownRole_Supervisor = "SupervisorRole";
+        public const string WellKnownRole_Supervisor = "WellKnownRole_Supervisor";
 
         /// <summary>
         /// The BrowseName for the Writable component.
