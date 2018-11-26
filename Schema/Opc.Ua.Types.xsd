@@ -1486,7 +1486,6 @@
     <xs:complexContent mixed="false">
       <xs:extension base="tns:DataSetWriterMessageDataType">
         <xs:sequence>
-          <xs:element name="NetworkMessageContentMask" type="tns:JsonNetworkMessageContentMask" minOccurs="0" />
           <xs:element name="DataSetMessageContentMask" type="tns:JsonDataSetMessageContentMask" minOccurs="0" />
         </xs:sequence>
       </xs:extension>

@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-11-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-12-01T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2018-11-15T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2018-12-01T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -1011,16 +1011,16 @@
       <Reference ReferenceType="HasProperty">i=9215</Reference>
       <Reference ReferenceType="HasProperty">i=9216</Reference>
       <Reference ReferenceType="HasProperty">i=16389</Reference>
-      <Reference ReferenceType="HasComponent">i=16390</Reference>
+      <Reference ReferenceType="HasProperty">i=16390</Reference>
       <Reference ReferenceType="HasComponent">i=16380</Reference>
       <Reference ReferenceType="HasProperty">i=16395</Reference>
       <Reference ReferenceType="HasProperty">i=16396</Reference>
-      <Reference ReferenceType="HasProperty">i=16397</Reference>
+      <Reference ReferenceType="HasComponent">i=16397</Reference>
       <Reference ReferenceType="HasComponent">i=16398</Reference>
       <Reference ReferenceType="HasComponent">i=18190</Reference>
       <Reference ReferenceType="i=16361">i=16399</Reference>
       <Reference ReferenceType="HasProperty">i=16400</Reference>
-      <Reference ReferenceType="HasProperty">i=16401</Reference>
+      <Reference ReferenceType="HasComponent">i=16401</Reference>
       <Reference ReferenceType="HasComponent">i=16402</Reference>
       <Reference ReferenceType="HasComponent">i=16403</Reference>
       <Reference ReferenceType="HasComponent">i=17868</Reference>
@@ -1398,7 +1398,7 @@
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=17986</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">i=2915</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=2915</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="i=16380" BrowseName="SilenceState" ParentNodeId="i=2915" DataType="LocalizedText">
@@ -1476,9 +1476,9 @@
   <UAVariable NodeId="i=16397" BrowseName="FirstInGroupFlag" ParentNodeId="i=2915" DataType="Boolean">
     <DisplayName>FirstInGroupFlag</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=2915</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=2915</Reference>
     </References>
   </UAVariable>
   <UAObject NodeId="i=16398" BrowseName="FirstInGroup" ParentNodeId="i=2915">
@@ -1564,9 +1564,9 @@
   <UAVariable NodeId="i=16401" BrowseName="ReAlarmRepeatCount" ParentNodeId="i=2915" DataType="Int16">
     <DisplayName>ReAlarmRepeatCount</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=2915</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=2915</Reference>
     </References>
   </UAVariable>
   <UAMethod NodeId="i=16402" BrowseName="Silence" ParentNodeId="i=2915">
@@ -1612,7 +1612,7 @@
   <UAMethod NodeId="i=18199" BrowseName="Reset" ParentNodeId="i=2915">
     <DisplayName>Reset</DisplayName>
     <References>
-      <Reference ReferenceType="i=3065">i=17259</Reference>
+      <Reference ReferenceType="i=3065">i=15013</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2915</Reference>
     </References>
@@ -1633,7 +1633,6 @@
       <Reference ReferenceType="HasProperty">i=16410</Reference>
       <Reference ReferenceType="HasProperty">i=16411</Reference>
       <Reference ReferenceType="HasProperty">i=16412</Reference>
-      <Reference ReferenceType="HasProperty">i=16413</Reference>
       <Reference ReferenceType="HasProperty">i=16414</Reference>
       <Reference ReferenceType="HasProperty">i=16415</Reference>
       <Reference ReferenceType="HasProperty">i=16416</Reference>
@@ -1707,15 +1706,6 @@
   <UAVariable NodeId="i=16412" BrowseName="ReceiveTime" ParentNodeId="i=16406" DataType="i=294">
     <DisplayName>ReceiveTime</DisplayName>
     <Description>When the server received the event from the underlying system.</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=16406</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="i=16413" BrowseName="LocalTime" ParentNodeId="i=16406" DataType="i=8912">
-    <DisplayName>LocalTime</DisplayName>
-    <Description>Information about the local time where the event originated.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3001,7 +2991,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=10637</Reference>
     </References>
   </UAVariable>
-  <UAObjectType NodeId="i=11753" BrowseName="SystemOffNormalAlarmType">
+  <UAObjectType NodeId="i=11753" BrowseName="SystemOffNormalAlarmType" IsAbstract="true">
     <DisplayName>SystemOffNormalAlarmType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=10637</Reference>
@@ -3148,8 +3138,8 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=17221" BrowseName="TestingConditionClassType" IsAbstract="true">
-    <DisplayName>TestingConditionClassType</DisplayName>
+  <UAObjectType NodeId="i=17221" BrowseName="TestingConditionSubClassType" IsAbstract="true">
+    <DisplayName>TestingConditionSubClassType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11163</Reference>
     </References>
@@ -3197,7 +3187,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2790</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=11852" BrowseName="SelectedResponse" ParentNodeId="i=8927" DataType="Int32">
+  <UAVariable NodeId="i=11852" BrowseName="SelectedResponse" ParentNodeId="i=8927" DataType="UInt32">
     <DisplayName>SelectedResponse</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3264,12 +3254,12 @@
     <DisplayName>ShelvingTime</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11093</Reference>
     </References>
   </UAVariable>
-  <UAObjectType NodeId="i=17225" BrowseName="AuditConditionSuppressEventType">
-    <DisplayName>AuditConditionSuppressEventType</DisplayName>
+  <UAObjectType NodeId="i=17225" BrowseName="AuditConditionSuppressionEventType">
+    <DisplayName>AuditConditionSuppressionEventType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2790</Reference>
     </References>
@@ -3348,13 +3338,13 @@
   <UAObjectType NodeId="i=17279" BrowseName="AlarmMetricsType">
     <DisplayName>AlarmMetricsType</DisplayName>
     <References>
-      <Reference ReferenceType="HasProperty">i=17280</Reference>
-      <Reference ReferenceType="HasProperty">i=17991</Reference>
-      <Reference ReferenceType="HasProperty">i=17281</Reference>
-      <Reference ReferenceType="HasProperty">i=17282</Reference>
+      <Reference ReferenceType="HasComponent">i=17280</Reference>
+      <Reference ReferenceType="HasComponent">i=17991</Reference>
+      <Reference ReferenceType="HasComponent">i=17281</Reference>
+      <Reference ReferenceType="HasComponent">i=17282</Reference>
       <Reference ReferenceType="HasComponent">i=17284</Reference>
       <Reference ReferenceType="HasComponent">i=17286</Reference>
-      <Reference ReferenceType="HasProperty">i=17283</Reference>
+      <Reference ReferenceType="HasComponent">i=17283</Reference>
       <Reference ReferenceType="HasComponent">i=17288</Reference>
       <Reference ReferenceType="HasComponent">i=18666</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
@@ -3363,33 +3353,33 @@
   <UAVariable NodeId="i=17280" BrowseName="AlarmCount" ParentNodeId="i=17279" DataType="UInt32">
     <DisplayName>AlarmCount</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=17279</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17279</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="i=17991" BrowseName="StartTime" ParentNodeId="i=17279" DataType="i=294">
     <DisplayName>StartTime</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=17279</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17279</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="i=17281" BrowseName="MaximumActiveState" ParentNodeId="i=17279" DataType="i=290">
     <DisplayName>MaximumActiveState</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=17279</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17279</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="i=17282" BrowseName="MaximumUnAck" ParentNodeId="i=17279" DataType="i=290">
     <DisplayName>MaximumUnAck</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=17279</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17279</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="i=17284" BrowseName="CurrentAlarmRate" ParentNodeId="i=17279" DataType="Double">
@@ -3429,9 +3419,9 @@
   <UAVariable NodeId="i=17283" BrowseName="MaximumReAlarmCount" ParentNodeId="i=17279" DataType="UInt32">
     <DisplayName>MaximumReAlarmCount</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=17279</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17279</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="i=17288" BrowseName="AverageAlarmRate" ParentNodeId="i=17279" DataType="Double">
@@ -3454,6 +3444,7 @@
   <UAMethod NodeId="i=18666" BrowseName="Reset" ParentNodeId="i=17279">
     <DisplayName>Reset</DisplayName>
     <References>
+      <Reference ReferenceType="i=3065">i=2127</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=17279</Reference>
     </References>
@@ -3473,4 +3464,438 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=17277</Reference>
     </References>
   </UAVariable>
+  <UAObjectType NodeId="i=17588" BrowseName="SystemStateStateMachineType">
+    <DisplayName>SystemStateStateMachineType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">i=17602</Reference>
+      <Reference ReferenceType="HasComponent">i=17604</Reference>
+      <Reference ReferenceType="HasComponent">i=17708</Reference>
+      <Reference ReferenceType="HasComponent">i=17712</Reference>
+      <Reference ReferenceType="HasComponent">i=17714</Reference>
+      <Reference ReferenceType="HasComponent">i=17716</Reference>
+      <Reference ReferenceType="HasComponent">i=18769</Reference>
+      <Reference ReferenceType="HasComponent">i=18771</Reference>
+      <Reference ReferenceType="HasComponent">i=18773</Reference>
+      <Reference ReferenceType="HasComponent">i=18775</Reference>
+      <Reference ReferenceType="HasComponent">i=18777</Reference>
+      <Reference ReferenceType="HasComponent">i=18779</Reference>
+      <Reference ReferenceType="HasComponent">i=18781</Reference>
+      <Reference ReferenceType="HasComponent">i=18783</Reference>
+      <Reference ReferenceType="HasComponent">i=18785</Reference>
+      <Reference ReferenceType="HasComponent">i=18787</Reference>
+      <Reference ReferenceType="HasComponent">i=18789</Reference>
+      <Reference ReferenceType="HasComponent">i=18791</Reference>
+      <Reference ReferenceType="HasComponent">i=18793</Reference>
+      <Reference ReferenceType="HasComponent">i=18794</Reference>
+      <Reference ReferenceType="HasComponent">i=18795</Reference>
+      <Reference ReferenceType="HasComponent">i=18796</Reference>
+      <Reference ReferenceType="HasComponent">i=18797</Reference>
+      <Reference ReferenceType="HasComponent">i=18798</Reference>
+      <Reference ReferenceType="HasComponent">i=18799</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=2771</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="i=17602" BrowseName="Operating" ParentNodeId="i=17588">
+    <DisplayName>Operating</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=17603</Reference>
+      <Reference ReferenceType="i=52" IsForward="false">i=18769</Reference>
+      <Reference ReferenceType="i=51" IsForward="false">i=18771</Reference>
+      <Reference ReferenceType="i=51" IsForward="false">i=18775</Reference>
+      <Reference ReferenceType="i=52" IsForward="false">i=18777</Reference>
+      <Reference ReferenceType="i=52" IsForward="false">i=18785</Reference>
+      <Reference ReferenceType="i=51" IsForward="false">i=18787</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=17603" BrowseName="StateNumber" ParentNodeId="i=17602" DataType="UInt32">
+    <DisplayName>StateNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=17602</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="i=17604" BrowseName="ShuttingDown" ParentNodeId="i=17588">
+    <DisplayName>ShuttingDown</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=17605</Reference>
+      <Reference ReferenceType="i=51" IsForward="false">i=18773</Reference>
+      <Reference ReferenceType="i=52" IsForward="false">i=18775</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=17605" BrowseName="StateNumber" ParentNodeId="i=17604" DataType="UInt32">
+    <DisplayName>StateNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=17604</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="i=17708" BrowseName="StartingUp" ParentNodeId="i=17588">
+    <DisplayName>StartingUp</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=17709</Reference>
+      <Reference ReferenceType="i=51" IsForward="false">i=18777</Reference>
+      <Reference ReferenceType="i=52" IsForward="false">i=18779</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=17709" BrowseName="StateNumber" ParentNodeId="i=17708" DataType="UInt32">
+    <DisplayName>StateNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=17708</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="i=17712" BrowseName="Shutdown" ParentNodeId="i=17588">
+    <DisplayName>Shutdown</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=17713</Reference>
+      <Reference ReferenceType="i=51" IsForward="false">i=18769</Reference>
+      <Reference ReferenceType="i=52" IsForward="false">i=18771</Reference>
+      <Reference ReferenceType="i=52" IsForward="false">i=18773</Reference>
+      <Reference ReferenceType="i=51" IsForward="false">i=18779</Reference>
+      <Reference ReferenceType="i=52" IsForward="false">i=18781</Reference>
+      <Reference ReferenceType="i=51" IsForward="false">i=18783</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=17713" BrowseName="StateNumber" ParentNodeId="i=17712" DataType="UInt32">
+    <DisplayName>StateNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=17712</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="i=17714" BrowseName="OutOfService" ParentNodeId="i=17588">
+    <DisplayName>OutOfService</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=17715</Reference>
+      <Reference ReferenceType="i=51" IsForward="false">i=18781</Reference>
+      <Reference ReferenceType="i=52" IsForward="false">i=18783</Reference>
+      <Reference ReferenceType="i=51" IsForward="false">i=18785</Reference>
+      <Reference ReferenceType="i=52" IsForward="false">i=18787</Reference>
+      <Reference ReferenceType="i=52" IsForward="false">i=18789</Reference>
+      <Reference ReferenceType="i=51" IsForward="false">i=18791</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=17715" BrowseName="StateNumber" ParentNodeId="i=17714" DataType="UInt32">
+    <DisplayName>StateNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=17714</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="i=17716" BrowseName="Maintenance" ParentNodeId="i=17588">
+    <DisplayName>Maintenance</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=17717</Reference>
+      <Reference ReferenceType="i=51" IsForward="false">i=18789</Reference>
+      <Reference ReferenceType="i=52" IsForward="false">i=18791</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=17717" BrowseName="StateNumber" ParentNodeId="i=17716" DataType="UInt32">
+    <DisplayName>StateNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=17716</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="i=18769" BrowseName="ShutdownToOperating" ParentNodeId="i=17588">
+    <DisplayName>ShutdownToOperating</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=18770</Reference>
+      <Reference ReferenceType="i=51">i=17712</Reference>
+      <Reference ReferenceType="i=52">i=17602</Reference>
+      <Reference ReferenceType="i=53">i=18798</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=18770" BrowseName="TransitionNumber" ParentNodeId="i=18769" DataType="UInt32">
+    <DisplayName>TransitionNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=18769</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="i=18771" BrowseName="OperatingToShutdown" ParentNodeId="i=17588">
+    <DisplayName>OperatingToShutdown</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=18772</Reference>
+      <Reference ReferenceType="i=51">i=17602</Reference>
+      <Reference ReferenceType="i=52">i=17712</Reference>
+      <Reference ReferenceType="i=53">i=18797</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=18772" BrowseName="TransitionNumber" ParentNodeId="i=18771" DataType="UInt32">
+    <DisplayName>TransitionNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=18771</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="i=18773" BrowseName="ShuttingDownToShutdown" ParentNodeId="i=17588">
+    <DisplayName>ShuttingDownToShutdown</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=18774</Reference>
+      <Reference ReferenceType="i=51">i=17604</Reference>
+      <Reference ReferenceType="i=52">i=17712</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=18774" BrowseName="TransitionNumber" ParentNodeId="i=18773" DataType="UInt32">
+    <DisplayName>TransitionNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=18773</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="i=18775" BrowseName="OperatingToShuttingDown" ParentNodeId="i=17588">
+    <DisplayName>OperatingToShuttingDown</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=18776</Reference>
+      <Reference ReferenceType="i=51">i=17602</Reference>
+      <Reference ReferenceType="i=52">i=17604</Reference>
+      <Reference ReferenceType="i=53">i=18795</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=18776" BrowseName="TransitionNumber" ParentNodeId="i=18775" DataType="UInt32">
+    <DisplayName>TransitionNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=18775</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="i=18777" BrowseName="StartingUpToOperating" ParentNodeId="i=17588">
+    <DisplayName>StartingUpToOperating</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=18778</Reference>
+      <Reference ReferenceType="i=51">i=17708</Reference>
+      <Reference ReferenceType="i=52">i=17602</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=18778" BrowseName="TransitionNumber" ParentNodeId="i=18777" DataType="UInt32">
+    <DisplayName>TransitionNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=18777</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="i=18779" BrowseName="ShutdownToStartingUp" ParentNodeId="i=17588">
+    <DisplayName>ShutdownToStartingUp</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=18780</Reference>
+      <Reference ReferenceType="i=51">i=17712</Reference>
+      <Reference ReferenceType="i=52">i=17708</Reference>
+      <Reference ReferenceType="i=53">i=18793</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=18780" BrowseName="TransitionNumber" ParentNodeId="i=18779" DataType="UInt32">
+    <DisplayName>TransitionNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=18779</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="i=18781" BrowseName="OutOfServiceToShutdown" ParentNodeId="i=17588">
+    <DisplayName>OutOfServiceToShutdown</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=18782</Reference>
+      <Reference ReferenceType="i=51">i=17714</Reference>
+      <Reference ReferenceType="i=52">i=17712</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=18782" BrowseName="TransitionNumber" ParentNodeId="i=18781" DataType="UInt32">
+    <DisplayName>TransitionNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=18781</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="i=18783" BrowseName="ShutdownToOutOfService" ParentNodeId="i=17588">
+    <DisplayName>ShutdownToOutOfService</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=18784</Reference>
+      <Reference ReferenceType="i=51">i=17712</Reference>
+      <Reference ReferenceType="i=52">i=17714</Reference>
+      <Reference ReferenceType="i=53">i=18799</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=18784" BrowseName="TransitionNumber" ParentNodeId="i=18783" DataType="UInt32">
+    <DisplayName>TransitionNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=18783</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="i=18785" BrowseName="OutOfServiceToOperating" ParentNodeId="i=17588">
+    <DisplayName>OutOfServiceToOperating</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=18786</Reference>
+      <Reference ReferenceType="i=51">i=17714</Reference>
+      <Reference ReferenceType="i=52">i=17602</Reference>
+      <Reference ReferenceType="i=53">i=18796</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=18786" BrowseName="TransitionNumber" ParentNodeId="i=18785" DataType="UInt32">
+    <DisplayName>TransitionNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=18785</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="i=18787" BrowseName="OperatingToOutOfService" ParentNodeId="i=17588">
+    <DisplayName>OperatingToOutOfService</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=18788</Reference>
+      <Reference ReferenceType="i=51">i=17602</Reference>
+      <Reference ReferenceType="i=52">i=17714</Reference>
+      <Reference ReferenceType="i=53">i=18796</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=18788" BrowseName="TransitionNumber" ParentNodeId="i=18787" DataType="UInt32">
+    <DisplayName>TransitionNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=18787</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="i=18789" BrowseName="MaintenanceToOutOfService" ParentNodeId="i=17588">
+    <DisplayName>MaintenanceToOutOfService</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=18790</Reference>
+      <Reference ReferenceType="i=51">i=17716</Reference>
+      <Reference ReferenceType="i=52">i=17714</Reference>
+      <Reference ReferenceType="i=53">i=18794</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=18790" BrowseName="TransitionNumber" ParentNodeId="i=18789" DataType="UInt32">
+    <DisplayName>TransitionNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=18789</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="i=18791" BrowseName="OutOfServiceToMaintenance" ParentNodeId="i=17588">
+    <DisplayName>OutOfServiceToMaintenance</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">i=18792</Reference>
+      <Reference ReferenceType="i=51">i=17714</Reference>
+      <Reference ReferenceType="i=52">i=17716</Reference>
+      <Reference ReferenceType="i=53">i=18794</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=18792" BrowseName="TransitionNumber" ParentNodeId="i=18791" DataType="UInt32">
+    <DisplayName>TransitionNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=18791</Reference>
+    </References>
+  </UAVariable>
+  <UAMethod NodeId="i=18793" BrowseName="Start" ParentNodeId="i=17588">
+    <DisplayName>Start</DisplayName>
+    <References>
+      <Reference ReferenceType="i=53" IsForward="false">i=18779</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAMethod>
+  <UAMethod NodeId="i=18794" BrowseName="Maintain" ParentNodeId="i=17588">
+    <DisplayName>Maintain</DisplayName>
+    <References>
+      <Reference ReferenceType="i=53" IsForward="false">i=18789</Reference>
+      <Reference ReferenceType="i=53" IsForward="false">i=18791</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAMethod>
+  <UAMethod NodeId="i=18795" BrowseName="Stop" ParentNodeId="i=17588">
+    <DisplayName>Stop</DisplayName>
+    <References>
+      <Reference ReferenceType="i=53" IsForward="false">i=18775</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAMethod>
+  <UAMethod NodeId="i=18796" BrowseName="PlaceOutOfService" ParentNodeId="i=17588">
+    <DisplayName>PlaceOutOfService</DisplayName>
+    <References>
+      <Reference ReferenceType="i=53" IsForward="false">i=18785</Reference>
+      <Reference ReferenceType="i=53" IsForward="false">i=18787</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAMethod>
+  <UAMethod NodeId="i=18797" BrowseName="QuickShutdown" ParentNodeId="i=17588">
+    <DisplayName>QuickShutdown</DisplayName>
+    <References>
+      <Reference ReferenceType="i=53" IsForward="false">i=18771</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAMethod>
+  <UAMethod NodeId="i=18798" BrowseName="QuickStart" ParentNodeId="i=17588">
+    <DisplayName>QuickStart</DisplayName>
+    <References>
+      <Reference ReferenceType="i=53" IsForward="false">i=18769</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAMethod>
+  <UAMethod NodeId="i=18799" BrowseName="OutOfServiceShutdown" ParentNodeId="i=17588">
+    <DisplayName>OutOfServiceShutdown</DisplayName>
+    <References>
+      <Reference ReferenceType="i=53" IsForward="false">i=18783</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17588</Reference>
+    </References>
+  </UAMethod>
 </UANodeSet>
