@@ -3015,41 +3015,6 @@ namespace Opc.Ua
         public const uint AlarmMetricsType_Reset = 18666;
 
         /// <summary>
-        /// The identifier for the SystemStateStateMachineType_Start Method.
-        /// </summary>
-        public const uint SystemStateStateMachineType_Start = 18793;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_Maintain Method.
-        /// </summary>
-        public const uint SystemStateStateMachineType_Maintain = 18794;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_Stop Method.
-        /// </summary>
-        public const uint SystemStateStateMachineType_Stop = 18795;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_PlaceOutOfService Method.
-        /// </summary>
-        public const uint SystemStateStateMachineType_PlaceOutOfService = 18796;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_QuickShutdown Method.
-        /// </summary>
-        public const uint SystemStateStateMachineType_QuickShutdown = 18797;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_QuickStart Method.
-        /// </summary>
-        public const uint SystemStateStateMachineType_QuickStart = 18798;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OutOfServiceShutdown Method.
-        /// </summary>
-        public const uint SystemStateStateMachineType_OutOfServiceShutdown = 18799;
-
-        /// <summary>
         /// The identifier for the ProgramStateMachineType_Start Method.
         /// </summary>
         public const uint ProgramStateMachineType_Start = 2426;
@@ -4463,96 +4428,6 @@ namespace Opc.Ua
         /// The identifier for the ExclusiveLimitAlarmType_LimitState Object.
         /// </summary>
         public const uint ExclusiveLimitAlarmType_LimitState = 9455;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_Operating Object.
-        /// </summary>
-        public const uint SystemStateStateMachineType_Operating = 17602;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_ShuttingDown Object.
-        /// </summary>
-        public const uint SystemStateStateMachineType_ShuttingDown = 17604;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_StartingUp Object.
-        /// </summary>
-        public const uint SystemStateStateMachineType_StartingUp = 17708;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_Shutdown Object.
-        /// </summary>
-        public const uint SystemStateStateMachineType_Shutdown = 17712;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OutOfService Object.
-        /// </summary>
-        public const uint SystemStateStateMachineType_OutOfService = 17714;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_Maintenance Object.
-        /// </summary>
-        public const uint SystemStateStateMachineType_Maintenance = 17716;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_ShutdownToOperating Object.
-        /// </summary>
-        public const uint SystemStateStateMachineType_ShutdownToOperating = 18769;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OperatingToShutdown Object.
-        /// </summary>
-        public const uint SystemStateStateMachineType_OperatingToShutdown = 18771;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_ShuttingDownToShutdown Object.
-        /// </summary>
-        public const uint SystemStateStateMachineType_ShuttingDownToShutdown = 18773;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OperatingToShuttingDown Object.
-        /// </summary>
-        public const uint SystemStateStateMachineType_OperatingToShuttingDown = 18775;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_StartingUpToOperating Object.
-        /// </summary>
-        public const uint SystemStateStateMachineType_StartingUpToOperating = 18777;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_ShutdownToStartingUp Object.
-        /// </summary>
-        public const uint SystemStateStateMachineType_ShutdownToStartingUp = 18779;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OutOfServiceToShutdown Object.
-        /// </summary>
-        public const uint SystemStateStateMachineType_OutOfServiceToShutdown = 18781;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_ShutdownToOutOfService Object.
-        /// </summary>
-        public const uint SystemStateStateMachineType_ShutdownToOutOfService = 18783;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OutOfServiceToOperating Object.
-        /// </summary>
-        public const uint SystemStateStateMachineType_OutOfServiceToOperating = 18785;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OperatingToOutOfService Object.
-        /// </summary>
-        public const uint SystemStateStateMachineType_OperatingToOutOfService = 18787;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_MaintenanceToOutOfService Object.
-        /// </summary>
-        public const uint SystemStateStateMachineType_MaintenanceToOutOfService = 18789;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OutOfServiceToMaintenance Object.
-        /// </summary>
-        public const uint SystemStateStateMachineType_OutOfServiceToMaintenance = 18791;
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType_FinalResultData Object.
@@ -10313,11 +10188,6 @@ namespace Opc.Ua
         /// The identifier for the AlarmMetricsType ObjectType.
         /// </summary>
         public const uint AlarmMetricsType = 17279;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType ObjectType.
-        /// </summary>
-        public const uint SystemStateStateMachineType = 17588;
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType ObjectType.
@@ -18823,106 +18693,6 @@ namespace Opc.Ua
         /// The identifier for the AlarmRateVariableType_Rate Variable.
         /// </summary>
         public const uint AlarmRateVariableType_Rate = 17278;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_CurrentState_Id Variable.
-        /// </summary>
-        public const uint SystemStateStateMachineType_CurrentState_Id = 17590;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_LastTransition_Id Variable.
-        /// </summary>
-        public const uint SystemStateStateMachineType_LastTransition_Id = 17595;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_Operating_StateNumber Variable.
-        /// </summary>
-        public const uint SystemStateStateMachineType_Operating_StateNumber = 17603;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_ShuttingDown_StateNumber Variable.
-        /// </summary>
-        public const uint SystemStateStateMachineType_ShuttingDown_StateNumber = 17605;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_StartingUp_StateNumber Variable.
-        /// </summary>
-        public const uint SystemStateStateMachineType_StartingUp_StateNumber = 17709;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_Shutdown_StateNumber Variable.
-        /// </summary>
-        public const uint SystemStateStateMachineType_Shutdown_StateNumber = 17713;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OutOfService_StateNumber Variable.
-        /// </summary>
-        public const uint SystemStateStateMachineType_OutOfService_StateNumber = 17715;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_Maintenance_StateNumber Variable.
-        /// </summary>
-        public const uint SystemStateStateMachineType_Maintenance_StateNumber = 17717;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_ShutdownToOperating_TransitionNumber Variable.
-        /// </summary>
-        public const uint SystemStateStateMachineType_ShutdownToOperating_TransitionNumber = 18770;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OperatingToShutdown_TransitionNumber Variable.
-        /// </summary>
-        public const uint SystemStateStateMachineType_OperatingToShutdown_TransitionNumber = 18772;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_ShuttingDownToShutdown_TransitionNumber Variable.
-        /// </summary>
-        public const uint SystemStateStateMachineType_ShuttingDownToShutdown_TransitionNumber = 18774;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OperatingToShuttingDown_TransitionNumber Variable.
-        /// </summary>
-        public const uint SystemStateStateMachineType_OperatingToShuttingDown_TransitionNumber = 18776;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_StartingUpToOperating_TransitionNumber Variable.
-        /// </summary>
-        public const uint SystemStateStateMachineType_StartingUpToOperating_TransitionNumber = 18778;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_ShutdownToStartingUp_TransitionNumber Variable.
-        /// </summary>
-        public const uint SystemStateStateMachineType_ShutdownToStartingUp_TransitionNumber = 18780;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OutOfServiceToShutdown_TransitionNumber Variable.
-        /// </summary>
-        public const uint SystemStateStateMachineType_OutOfServiceToShutdown_TransitionNumber = 18782;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_ShutdownToOutOfService_TransitionNumber Variable.
-        /// </summary>
-        public const uint SystemStateStateMachineType_ShutdownToOutOfService_TransitionNumber = 18784;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OutOfServiceToOperating_TransitionNumber Variable.
-        /// </summary>
-        public const uint SystemStateStateMachineType_OutOfServiceToOperating_TransitionNumber = 18786;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OperatingToOutOfService_TransitionNumber Variable.
-        /// </summary>
-        public const uint SystemStateStateMachineType_OperatingToOutOfService_TransitionNumber = 18788;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_MaintenanceToOutOfService_TransitionNumber Variable.
-        /// </summary>
-        public const uint SystemStateStateMachineType_MaintenanceToOutOfService_TransitionNumber = 18790;
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OutOfServiceToMaintenance_TransitionNumber Variable.
-        /// </summary>
-        public const uint SystemStateStateMachineType_OutOfServiceToMaintenance_TransitionNumber = 18792;
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType_CurrentState Variable.
@@ -32220,41 +31990,6 @@ namespace Opc.Ua
         public static readonly NodeId AlarmMetricsType_Reset = new NodeId(Opc.Ua.Methods.AlarmMetricsType_Reset);
 
         /// <summary>
-        /// The identifier for the SystemStateStateMachineType_Start Method.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_Start = new NodeId(Opc.Ua.Methods.SystemStateStateMachineType_Start);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_Maintain Method.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_Maintain = new NodeId(Opc.Ua.Methods.SystemStateStateMachineType_Maintain);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_Stop Method.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_Stop = new NodeId(Opc.Ua.Methods.SystemStateStateMachineType_Stop);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_PlaceOutOfService Method.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_PlaceOutOfService = new NodeId(Opc.Ua.Methods.SystemStateStateMachineType_PlaceOutOfService);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_QuickShutdown Method.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_QuickShutdown = new NodeId(Opc.Ua.Methods.SystemStateStateMachineType_QuickShutdown);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_QuickStart Method.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_QuickStart = new NodeId(Opc.Ua.Methods.SystemStateStateMachineType_QuickStart);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OutOfServiceShutdown Method.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_OutOfServiceShutdown = new NodeId(Opc.Ua.Methods.SystemStateStateMachineType_OutOfServiceShutdown);
-
-        /// <summary>
         /// The identifier for the ProgramStateMachineType_Start Method.
         /// </summary>
         public static readonly NodeId ProgramStateMachineType_Start = new NodeId(Opc.Ua.Methods.ProgramStateMachineType_Start);
@@ -33668,96 +33403,6 @@ namespace Opc.Ua
         /// The identifier for the ExclusiveLimitAlarmType_LimitState Object.
         /// </summary>
         public static readonly NodeId ExclusiveLimitAlarmType_LimitState = new NodeId(Opc.Ua.Objects.ExclusiveLimitAlarmType_LimitState);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_Operating Object.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_Operating = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_Operating);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_ShuttingDown Object.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_ShuttingDown = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_ShuttingDown);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_StartingUp Object.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_StartingUp = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_StartingUp);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_Shutdown Object.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_Shutdown = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_Shutdown);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OutOfService Object.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_OutOfService = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_OutOfService);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_Maintenance Object.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_Maintenance = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_Maintenance);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_ShutdownToOperating Object.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_ShutdownToOperating = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_ShutdownToOperating);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OperatingToShutdown Object.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_OperatingToShutdown = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_OperatingToShutdown);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_ShuttingDownToShutdown Object.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_ShuttingDownToShutdown = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_ShuttingDownToShutdown);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OperatingToShuttingDown Object.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_OperatingToShuttingDown = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_OperatingToShuttingDown);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_StartingUpToOperating Object.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_StartingUpToOperating = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_StartingUpToOperating);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_ShutdownToStartingUp Object.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_ShutdownToStartingUp = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_ShutdownToStartingUp);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OutOfServiceToShutdown Object.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_OutOfServiceToShutdown = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_OutOfServiceToShutdown);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_ShutdownToOutOfService Object.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_ShutdownToOutOfService = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_ShutdownToOutOfService);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OutOfServiceToOperating Object.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_OutOfServiceToOperating = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_OutOfServiceToOperating);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OperatingToOutOfService Object.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_OperatingToOutOfService = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_OperatingToOutOfService);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_MaintenanceToOutOfService Object.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_MaintenanceToOutOfService = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_MaintenanceToOutOfService);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OutOfServiceToMaintenance Object.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_OutOfServiceToMaintenance = new NodeId(Opc.Ua.Objects.SystemStateStateMachineType_OutOfServiceToMaintenance);
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType_FinalResultData Object.
@@ -39518,11 +39163,6 @@ namespace Opc.Ua
         /// The identifier for the AlarmMetricsType ObjectType.
         /// </summary>
         public static readonly NodeId AlarmMetricsType = new NodeId(Opc.Ua.ObjectTypes.AlarmMetricsType);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType ObjectType.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType = new NodeId(Opc.Ua.ObjectTypes.SystemStateStateMachineType);
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType ObjectType.
@@ -48028,106 +47668,6 @@ namespace Opc.Ua
         /// The identifier for the AlarmRateVariableType_Rate Variable.
         /// </summary>
         public static readonly NodeId AlarmRateVariableType_Rate = new NodeId(Opc.Ua.Variables.AlarmRateVariableType_Rate);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_CurrentState_Id Variable.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_CurrentState_Id = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_CurrentState_Id);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_LastTransition_Id Variable.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_LastTransition_Id = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_LastTransition_Id);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_Operating_StateNumber Variable.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_Operating_StateNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_Operating_StateNumber);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_ShuttingDown_StateNumber Variable.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_ShuttingDown_StateNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_ShuttingDown_StateNumber);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_StartingUp_StateNumber Variable.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_StartingUp_StateNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_StartingUp_StateNumber);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_Shutdown_StateNumber Variable.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_Shutdown_StateNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_Shutdown_StateNumber);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OutOfService_StateNumber Variable.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_OutOfService_StateNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_OutOfService_StateNumber);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_Maintenance_StateNumber Variable.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_Maintenance_StateNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_Maintenance_StateNumber);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_ShutdownToOperating_TransitionNumber Variable.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_ShutdownToOperating_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_ShutdownToOperating_TransitionNumber);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OperatingToShutdown_TransitionNumber Variable.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_OperatingToShutdown_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_OperatingToShutdown_TransitionNumber);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_ShuttingDownToShutdown_TransitionNumber Variable.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_ShuttingDownToShutdown_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_ShuttingDownToShutdown_TransitionNumber);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OperatingToShuttingDown_TransitionNumber Variable.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_OperatingToShuttingDown_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_OperatingToShuttingDown_TransitionNumber);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_StartingUpToOperating_TransitionNumber Variable.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_StartingUpToOperating_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_StartingUpToOperating_TransitionNumber);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_ShutdownToStartingUp_TransitionNumber Variable.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_ShutdownToStartingUp_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_ShutdownToStartingUp_TransitionNumber);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OutOfServiceToShutdown_TransitionNumber Variable.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_OutOfServiceToShutdown_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_OutOfServiceToShutdown_TransitionNumber);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_ShutdownToOutOfService_TransitionNumber Variable.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_ShutdownToOutOfService_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_ShutdownToOutOfService_TransitionNumber);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OutOfServiceToOperating_TransitionNumber Variable.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_OutOfServiceToOperating_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_OutOfServiceToOperating_TransitionNumber);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OperatingToOutOfService_TransitionNumber Variable.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_OperatingToOutOfService_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_OperatingToOutOfService_TransitionNumber);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_MaintenanceToOutOfService_TransitionNumber Variable.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_MaintenanceToOutOfService_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_MaintenanceToOutOfService_TransitionNumber);
-
-        /// <summary>
-        /// The identifier for the SystemStateStateMachineType_OutOfServiceToMaintenance_TransitionNumber Variable.
-        /// </summary>
-        public static readonly NodeId SystemStateStateMachineType_OutOfServiceToMaintenance_TransitionNumber = new NodeId(Opc.Ua.Variables.SystemStateStateMachineType_OutOfServiceToMaintenance_TransitionNumber);
 
         /// <summary>
         /// The identifier for the ProgramStateMachineType_CurrentState Variable.
@@ -61979,24 +61519,9 @@ namespace Opc.Ua
         public const string LowToLowLow = "LowToLowLow";
 
         /// <summary>
-        /// The BrowseName for the Maintain component.
-        /// </summary>
-        public const string Maintain = "Maintain";
-
-        /// <summary>
-        /// The BrowseName for the Maintenance component.
-        /// </summary>
-        public const string Maintenance = "Maintenance";
-
-        /// <summary>
         /// The BrowseName for the MaintenanceConditionClassType component.
         /// </summary>
         public const string MaintenanceConditionClassType = "MaintenanceConditionClassType";
-
-        /// <summary>
-        /// The BrowseName for the MaintenanceToOutOfService component.
-        /// </summary>
-        public const string MaintenanceToOutOfService = "MaintenanceToOutOfService";
 
         /// <summary>
         /// The BrowseName for the ManufacturerName component.
@@ -62824,26 +62349,6 @@ namespace Opc.Ua
         public const string OpenWithMasks = "OpenWithMasks";
 
         /// <summary>
-        /// The BrowseName for the Operating component.
-        /// </summary>
-        public const string Operating = "Operating";
-
-        /// <summary>
-        /// The BrowseName for the OperatingToOutOfService component.
-        /// </summary>
-        public const string OperatingToOutOfService = "OperatingToOutOfService";
-
-        /// <summary>
-        /// The BrowseName for the OperatingToShutdown component.
-        /// </summary>
-        public const string OperatingToShutdown = "OperatingToShutdown";
-
-        /// <summary>
-        /// The BrowseName for the OperatingToShuttingDown component.
-        /// </summary>
-        public const string OperatingToShuttingDown = "OperatingToShuttingDown";
-
-        /// <summary>
         /// The BrowseName for the OperationLimits component.
         /// </summary>
         public const string OperationLimits = "OperationLimits";
@@ -62874,34 +62379,9 @@ namespace Opc.Ua
         public const string Organizes = "Organizes";
 
         /// <summary>
-        /// The BrowseName for the OutOfService component.
-        /// </summary>
-        public const string OutOfService = "OutOfService";
-
-        /// <summary>
-        /// The BrowseName for the OutOfServiceShutdown component.
-        /// </summary>
-        public const string OutOfServiceShutdown = "OutOfServiceShutdown";
-
-        /// <summary>
         /// The BrowseName for the OutOfServiceState component.
         /// </summary>
         public const string OutOfServiceState = "OutOfServiceState";
-
-        /// <summary>
-        /// The BrowseName for the OutOfServiceToMaintenance component.
-        /// </summary>
-        public const string OutOfServiceToMaintenance = "OutOfServiceToMaintenance";
-
-        /// <summary>
-        /// The BrowseName for the OutOfServiceToOperating component.
-        /// </summary>
-        public const string OutOfServiceToOperating = "OutOfServiceToOperating";
-
-        /// <summary>
-        /// The BrowseName for the OutOfServiceToShutdown component.
-        /// </summary>
-        public const string OutOfServiceToShutdown = "OutOfServiceToShutdown";
 
         /// <summary>
         /// The BrowseName for the OutputArguments component.
@@ -62952,11 +62432,6 @@ namespace Opc.Ua
         /// The BrowseName for the PlaceInService component.
         /// </summary>
         public const string PlaceInService = "PlaceInService";
-
-        /// <summary>
-        /// The BrowseName for the PlaceOutOfService component.
-        /// </summary>
-        public const string PlaceOutOfService = "PlaceOutOfService";
 
         /// <summary>
         /// The BrowseName for the Priority component.
@@ -63317,16 +62792,6 @@ namespace Opc.Ua
         /// The BrowseName for the QueueName component.
         /// </summary>
         public const string QueueName = "QueueName";
-
-        /// <summary>
-        /// The BrowseName for the QuickShutdown component.
-        /// </summary>
-        public const string QuickShutdown = "QuickShutdown";
-
-        /// <summary>
-        /// The BrowseName for the QuickStart component.
-        /// </summary>
-        public const string QuickStart = "QuickStart";
 
         /// <summary>
         /// The BrowseName for the Range component.
@@ -64399,39 +63864,9 @@ namespace Opc.Ua
         public const string ShelvingTime = "ShelvingTime";
 
         /// <summary>
-        /// The BrowseName for the Shutdown component.
-        /// </summary>
-        public const string Shutdown = "Shutdown";
-
-        /// <summary>
         /// The BrowseName for the ShutdownReason component.
         /// </summary>
         public const string ShutdownReason = "ShutdownReason";
-
-        /// <summary>
-        /// The BrowseName for the ShutdownToOperating component.
-        /// </summary>
-        public const string ShutdownToOperating = "ShutdownToOperating";
-
-        /// <summary>
-        /// The BrowseName for the ShutdownToOutOfService component.
-        /// </summary>
-        public const string ShutdownToOutOfService = "ShutdownToOutOfService";
-
-        /// <summary>
-        /// The BrowseName for the ShutdownToStartingUp component.
-        /// </summary>
-        public const string ShutdownToStartingUp = "ShutdownToStartingUp";
-
-        /// <summary>
-        /// The BrowseName for the ShuttingDown component.
-        /// </summary>
-        public const string ShuttingDown = "ShuttingDown";
-
-        /// <summary>
-        /// The BrowseName for the ShuttingDownToShutdown component.
-        /// </summary>
-        public const string ShuttingDownToShutdown = "ShuttingDownToShutdown";
 
         /// <summary>
         /// The BrowseName for the SignatureData component.
@@ -64497,16 +63932,6 @@ namespace Opc.Ua
         /// The BrowseName for the Start component.
         /// </summary>
         public const string Start = "Start";
-
-        /// <summary>
-        /// The BrowseName for the StartingUp component.
-        /// </summary>
-        public const string StartingUp = "StartingUp";
-
-        /// <summary>
-        /// The BrowseName for the StartingUpToOperating component.
-        /// </summary>
-        public const string StartingUpToOperating = "StartingUpToOperating";
 
         /// <summary>
         /// The BrowseName for the StartOfArchive component.
@@ -64597,11 +64022,6 @@ namespace Opc.Ua
         /// The BrowseName for the Stepped component.
         /// </summary>
         public const string Stepped = "Stepped";
-
-        /// <summary>
-        /// The BrowseName for the Stop component.
-        /// </summary>
-        public const string Stop = "Stop";
 
         /// <summary>
         /// The BrowseName for the String component.
@@ -64772,11 +64192,6 @@ namespace Opc.Ua
         /// The BrowseName for the SystemState component.
         /// </summary>
         public const string SystemState = "SystemState";
-
-        /// <summary>
-        /// The BrowseName for the SystemStateStateMachineType component.
-        /// </summary>
-        public const string SystemStateStateMachineType = "SystemStateStateMachineType";
 
         /// <summary>
         /// The BrowseName for the SystemStatusChangeEventType component.
