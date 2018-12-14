@@ -2162,6 +2162,8 @@
   </xs:complexType>
   <xs:element name="ListOfTimeZoneDataType" type="tns:ListOfTimeZoneDataType" nillable="true"></xs:element>
 
+  <xs:element name="Index" type="xs:unsignedInt" />
+
   <xs:element name="IntegerId" type="xs:unsignedInt" />
 
   <xs:simpleType  name="ApplicationType">

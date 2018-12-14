@@ -5515,7 +5515,7 @@ namespace Opc.Ua
 
         private const string DefaultAccessRestrictions_InitializationString =
            "//////////8VYIkKAgAAAAAAGQAAAERlZmF1bHRBY2Nlc3NSZXN0cmljdGlvbnMBAAs/AC4ARAs/AAAA" +
-           "Bf////8BAf////8AAAAA";
+           "X/////8BAf////8AAAAA";
 
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAAHQAAAE5hbWVzcGFjZU1ldGFkYXRhVHlwZUluc3RhbmNlAQBgLQEAYC3/" +
@@ -5566,7 +5566,7 @@ namespace Opc.Ua
            "dGlvbgAJ/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAAAABYAAABEZWZhdWx0Um9sZVBl" +
            "cm1pc3Npb25zAQAJPwAuAEQJPwAAAGABAAAAAQH/////AAAAABVgiQoCAAAAAAAaAAAARGVmYXVsdFVz" +
            "ZXJSb2xlUGVybWlzc2lvbnMBAAo/AC4ARAo/AAAAYAEAAAABAf////8AAAAAFWCJCgIAAAAAABkAAABE" +
-           "ZWZhdWx0QWNjZXNzUmVzdHJpY3Rpb25zAQALPwAuAEQLPwAAAAX/////AQH/////AAAAAA==";
+           "ZWZhdWx0QWNjZXNzUmVzdHJpY3Rpb25zAQALPwAuAEQLPwAAAF//////AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -5785,7 +5785,7 @@ namespace Opc.Ua
         /// <summary>
         /// A description for the DefaultAccessRestrictions Property.
         /// </summary>
-        public PropertyState<ushort> DefaultAccessRestrictions
+        public PropertyState<uint> DefaultAccessRestrictions
         {
             get
             {
@@ -6108,11 +6108,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                DefaultAccessRestrictions = new PropertyState<ushort>(this);
+                                DefaultAccessRestrictions = new PropertyState<uint>(this);
                             }
                             else
                             {
-                                DefaultAccessRestrictions = (PropertyState<ushort>)replacement;
+                                DefaultAccessRestrictions = (PropertyState<uint>)replacement;
                             }
                         }
                     }
@@ -6142,7 +6142,7 @@ namespace Opc.Ua
         private AddressSpaceFileState m_namespaceFile;
         private PropertyState<RolePermissionType[]> m_defaultRolePermissions;
         private PropertyState<RolePermissionType[]> m_defaultUserRolePermissions;
-        private PropertyState<ushort> m_defaultAccessRestrictions;
+        private PropertyState<uint> m_defaultAccessRestrictions;
         #endregion
     }
     #endif
@@ -28486,9 +28486,18 @@ namespace Opc.Ua
         protected override void InitializeOptionalChildren(ISystemContext context)
         {
             base.InitializeOptionalChildren(context);
+
+            if (StateNumber != null)
+            {
+                StateNumber.Initialize(context, StateNumber_InitializationString);
+            }
         }
 
         #region Initialization String
+        private const string StateNumber_InitializationString =
+           "//////////8VYIkKAgAAAAAACwAAAFN0YXRlTnVtYmVyAQAECQAuAEQECQAAAAf/////AQH/////AAAA" +
+           "AA==";
+
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAAEQAAAFN0YXRlVHlwZUluc3RhbmNlAQADCQEAAwn/////AQAAABVgiQoC" +
            "AAAAAAALAAAAU3RhdGVOdW1iZXIBAAQJAC4ARAQJAAAAB/////8BAf////8AAAAA";
@@ -28647,8 +28656,8 @@ namespace Opc.Ua
 
         #region Initialization String
         private const string InitializationString =
-           "//////////8EYIAAAQAAAAAAGAAAAEluaXRpYWxTdGF0ZVR5cGVJbnN0YW5jZQEABQkBAAUJ/////wEA" +
-           "AAAVYIkKAgAAAAAACwAAAFN0YXRlTnVtYmVyAQCYDgAuAESYDgAAAAf/////AQH/////AAAAAA==";
+           "//////////8EYIAAAQAAAAAAGAAAAEluaXRpYWxTdGF0ZVR5cGVJbnN0YW5jZQEABQkBAAUJ/////wAA" +
+           "AAA=";
         #endregion
         #endif
         #endregion
@@ -28876,8 +28885,8 @@ namespace Opc.Ua
 
         #region Initialization String
         private const string InitializationString =
-           "//////////8EYIAAAQAAAAAAFwAAAENob2ljZVN0YXRlVHlwZUluc3RhbmNlAQAFOwEABTv/////AQAA" +
-           "ABVgiQoCAAAAAAALAAAAU3RhdGVOdW1iZXIBAAY7AC4ARAY7AAAAB/////8BAf////8AAAAA";
+           "//////////8EYIAAAQAAAAAAFwAAAENob2ljZVN0YXRlVHlwZUluc3RhbmNlAQAFOwEABTv/////AAAA" +
+           "AA==";
         #endregion
         #endif
         #endregion

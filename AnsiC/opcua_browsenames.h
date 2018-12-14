@@ -657,6 +657,7 @@
 #define OpcUa_BrowseName_ImageItemType "ImageItemType"
 #define OpcUa_BrowseName_ImageJPG "ImageJPG"
 #define OpcUa_BrowseName_ImagePNG "ImagePNG"
+#define OpcUa_BrowseName_Index "Index"
 #define OpcUa_BrowseName_IndexRange "IndexRange"
 #define OpcUa_BrowseName_InitialStateType "InitialStateType"
 #define OpcUa_BrowseName_InputArguments "InputArguments"
