@@ -1192,6 +1192,10 @@
     <opc:Field Name="DaylightSavingInOffset" TypeName="opc:Boolean" />
   </opc:StructuredType>
 
+  <opc:OpaqueType Name="Index">
+    <opc:Documentation>This primitive data type is a UInt32 that identifies an element of an array.</opc:Documentation>
+  </opc:OpaqueType>
+
   <opc:OpaqueType Name="IntegerId">
     <opc:Documentation>A numeric identifier for an object.</opc:Documentation>
   </opc:OpaqueType>

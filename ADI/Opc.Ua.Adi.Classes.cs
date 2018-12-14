@@ -1472,8 +1472,7 @@ namespace Opc.Ua.Adi
         private const string InitializationString =
            "AgAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvQURJLx8AAABodHRwOi8vb3BjZm91bmRh" +
            "dGlvbi5vcmcvVUEvREkv/////4RggAABAAAAAQApAAAAQW5hbHlzZXJDaGFubmVsT3BlcmF0aW5nU3Rh" +
-           "dGVUeXBlSW5zdGFuY2UBAewDAQHsAwEBAAAAAHUAAQHcJgEAAAAVYIkKAgAAAAAACwAAAFN0YXRlTnVt" +
-           "YmVyAQHOJgAuAETOJgAAAAf/////AQH/////AAAAAA==";
+           "dGVUeXBlSW5zdGFuY2UBAewDAQHsAwEBAAAAAHUAAQHcJgAAAAA=";
         #endregion
         #endif
         #endregion
@@ -1546,8 +1545,7 @@ namespace Opc.Ua.Adi
         private const string InitializationString =
            "AgAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvQURJLx8AAABodHRwOi8vb3BjZm91bmRh" +
            "dGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAlAAAAQW5hbHlzZXJDaGFubmVsTG9jYWxTdGF0ZVR5" +
-           "cGVJbnN0YW5jZQEB7QMBAe0D/////wEAAAAVYIkKAgAAAAAACwAAAFN0YXRlTnVtYmVyAQHPJgAuAETP" +
-           "JgAAAAf/////AQH/////AAAAAA==";
+           "cGVJbnN0YW5jZQEB7QMBAe0D/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -1620,8 +1618,7 @@ namespace Opc.Ua.Adi
         private const string InitializationString =
            "AgAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvQURJLx8AAABodHRwOi8vb3BjZm91bmRh" +
            "dGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQArAAAAQW5hbHlzZXJDaGFubmVsTWFpbnRlbmFuY2VT" +
-           "dGF0ZVR5cGVJbnN0YW5jZQEB7gMBAe4D/////wEAAAAVYIkKAgAAAAAACwAAAFN0YXRlTnVtYmVyAQHQ" +
-           "JgAuAETQJgAAAAf/////AQH/////AAAAAA==";
+           "dGF0ZVR5cGVJbnN0YW5jZQEB7gMBAe4D/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -1985,8 +1982,7 @@ namespace Opc.Ua.Adi
         private const string InitializationString =
            "AgAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvQURJLx8AAABodHRwOi8vb3BjZm91bmRh" +
            "dGlvbi5vcmcvVUEvREkv/////4RggAABAAAAAQAwAAAAQW5hbHlzZXJDaGFubmVsT3BlcmF0aW5nRXhl" +
-           "Y3V0ZVN0YXRlVHlwZUluc3RhbmNlAQEEIwEBBCMBAQAAAAB1AAEBNCcBAAAAFWCJCgIAAAAAAAsAAABT" +
-           "dGF0ZU51bWJlcgEBKCcALgBEKCcAAAAH/////wEB/////wAAAAA=";
+           "Y3V0ZVN0YXRlVHlwZUluc3RhbmNlAQEEIwEBBCMBAQAAAAB1AAEBNCcAAAAA";
         #endregion
         #endif
         #endregion

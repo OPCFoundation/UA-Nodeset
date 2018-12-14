@@ -97,6 +97,13 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
   </UADataType>
+  <UADataType NodeId="i=17588" BrowseName="Index">
+    <DisplayName>Index</DisplayName>
+    <Description>This primitive data type is a UInt32 that identifies an element of an array.</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
+    </References>
+  </UADataType>
   <UADataType NodeId="i=288" BrowseName="IntegerId">
     <DisplayName>IntegerId</DisplayName>
     <Description>A numeric identifier for an object.</Description>
@@ -3115,7 +3122,7 @@
       <Field Name="TargetId" DataType="i=18">
         <Description>The id of the target node.</Description>
       </Field>
-      <Field Name="RemainingPathIndex" DataType="i=7">
+      <Field Name="RemainingPathIndex" DataType="i=17588">
         <Description>The index of the target in the relative path. UInt32.MaxValue if the entire path was processed.</Description>
       </Field>
     </Definition>
@@ -3689,7 +3696,7 @@
       <Field Name="NodeId" DataType="i=17" />
       <Field Name="IndexRange" DataType="i=291" />
       <Field Name="DataEncoding" DataType="i=20" />
-      <Field Name="ContinuationPoint" DataType="i=15" />
+      <Field Name="ContinuationPoint" DataType="i=521" />
     </Definition>
   </UADataType>
   <UADataType NodeId="i=638" BrowseName="HistoryReadResult" Purpose="ServicesOnly">
@@ -3699,7 +3706,7 @@
     </References>
     <Definition Name="HistoryReadResult">
       <Field Name="StatusCode" DataType="i=19" />
-      <Field Name="ContinuationPoint" DataType="i=15" />
+      <Field Name="ContinuationPoint" DataType="i=521" />
       <Field Name="HistoryData" DataType="i=22" />
     </Definition>
   </UADataType>

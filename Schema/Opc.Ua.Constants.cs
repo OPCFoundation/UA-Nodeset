@@ -780,6 +780,11 @@ namespace Opc.Ua
         public const uint TimeZoneDataType = 8912;
 
         /// <summary>
+        /// The identifier for the Index DataType.
+        /// </summary>
+        public const uint Index = 17588;
+
+        /// <summary>
         /// The identifier for the IntegerId DataType.
         /// </summary>
         public const uint IntegerId = 288;
@@ -14760,31 +14765,6 @@ namespace Opc.Ua
         public const uint FileTransferStateMachineType_LastTransition_Id = 15810;
 
         /// <summary>
-        /// The identifier for the FileTransferStateMachineType_Idle_StateNumber Variable.
-        /// </summary>
-        public const uint FileTransferStateMachineType_Idle_StateNumber = 15816;
-
-        /// <summary>
-        /// The identifier for the FileTransferStateMachineType_ReadPrepare_StateNumber Variable.
-        /// </summary>
-        public const uint FileTransferStateMachineType_ReadPrepare_StateNumber = 15818;
-
-        /// <summary>
-        /// The identifier for the FileTransferStateMachineType_ReadTransfer_StateNumber Variable.
-        /// </summary>
-        public const uint FileTransferStateMachineType_ReadTransfer_StateNumber = 15820;
-
-        /// <summary>
-        /// The identifier for the FileTransferStateMachineType_ApplyWrite_StateNumber Variable.
-        /// </summary>
-        public const uint FileTransferStateMachineType_ApplyWrite_StateNumber = 15822;
-
-        /// <summary>
-        /// The identifier for the FileTransferStateMachineType_Error_StateNumber Variable.
-        /// </summary>
-        public const uint FileTransferStateMachineType_Error_StateNumber = 15824;
-
-        /// <summary>
         /// The identifier for the FileTransferStateMachineType_IdleToReadPrepare_TransitionNumber Variable.
         /// </summary>
         public const uint FileTransferStateMachineType_IdleToReadPrepare_TransitionNumber = 15826;
@@ -16360,21 +16340,6 @@ namespace Opc.Ua
         public const uint ShelvedStateMachineType_UnshelveTime = 9115;
 
         /// <summary>
-        /// The identifier for the ShelvedStateMachineType_Unshelved_StateNumber Variable.
-        /// </summary>
-        public const uint ShelvedStateMachineType_Unshelved_StateNumber = 6098;
-
-        /// <summary>
-        /// The identifier for the ShelvedStateMachineType_TimedShelved_StateNumber Variable.
-        /// </summary>
-        public const uint ShelvedStateMachineType_TimedShelved_StateNumber = 6100;
-
-        /// <summary>
-        /// The identifier for the ShelvedStateMachineType_OneShotShelved_StateNumber Variable.
-        /// </summary>
-        public const uint ShelvedStateMachineType_OneShotShelved_StateNumber = 6101;
-
-        /// <summary>
         /// The identifier for the ShelvedStateMachineType_UnshelvedToTimedShelved_TransitionNumber Variable.
         /// </summary>
         public const uint ShelvedStateMachineType_UnshelvedToTimedShelved_TransitionNumber = 11322;
@@ -16563,26 +16528,6 @@ namespace Opc.Ua
         /// The identifier for the ExclusiveLimitStateMachineType_LastTransition_Id Variable.
         /// </summary>
         public const uint ExclusiveLimitStateMachineType_LastTransition_Id = 9325;
-
-        /// <summary>
-        /// The identifier for the ExclusiveLimitStateMachineType_HighHigh_StateNumber Variable.
-        /// </summary>
-        public const uint ExclusiveLimitStateMachineType_HighHigh_StateNumber = 9330;
-
-        /// <summary>
-        /// The identifier for the ExclusiveLimitStateMachineType_High_StateNumber Variable.
-        /// </summary>
-        public const uint ExclusiveLimitStateMachineType_High_StateNumber = 9332;
-
-        /// <summary>
-        /// The identifier for the ExclusiveLimitStateMachineType_Low_StateNumber Variable.
-        /// </summary>
-        public const uint ExclusiveLimitStateMachineType_Low_StateNumber = 9334;
-
-        /// <summary>
-        /// The identifier for the ExclusiveLimitStateMachineType_LowLow_StateNumber Variable.
-        /// </summary>
-        public const uint ExclusiveLimitStateMachineType_LowLow_StateNumber = 9336;
 
         /// <summary>
         /// The identifier for the ExclusiveLimitStateMachineType_LowLowToLow_TransitionNumber Variable.
@@ -29753,6 +29698,11 @@ namespace Opc.Ua
         /// The identifier for the TimeZoneDataType DataType.
         /// </summary>
         public static readonly NodeId TimeZoneDataType = new NodeId(Opc.Ua.DataTypes.TimeZoneDataType);
+
+        /// <summary>
+        /// The identifier for the Index DataType.
+        /// </summary>
+        public static readonly NodeId Index = new NodeId(Opc.Ua.DataTypes.Index);
 
         /// <summary>
         /// The identifier for the IntegerId DataType.
@@ -43735,31 +43685,6 @@ namespace Opc.Ua
         public static readonly NodeId FileTransferStateMachineType_LastTransition_Id = new NodeId(Opc.Ua.Variables.FileTransferStateMachineType_LastTransition_Id);
 
         /// <summary>
-        /// The identifier for the FileTransferStateMachineType_Idle_StateNumber Variable.
-        /// </summary>
-        public static readonly NodeId FileTransferStateMachineType_Idle_StateNumber = new NodeId(Opc.Ua.Variables.FileTransferStateMachineType_Idle_StateNumber);
-
-        /// <summary>
-        /// The identifier for the FileTransferStateMachineType_ReadPrepare_StateNumber Variable.
-        /// </summary>
-        public static readonly NodeId FileTransferStateMachineType_ReadPrepare_StateNumber = new NodeId(Opc.Ua.Variables.FileTransferStateMachineType_ReadPrepare_StateNumber);
-
-        /// <summary>
-        /// The identifier for the FileTransferStateMachineType_ReadTransfer_StateNumber Variable.
-        /// </summary>
-        public static readonly NodeId FileTransferStateMachineType_ReadTransfer_StateNumber = new NodeId(Opc.Ua.Variables.FileTransferStateMachineType_ReadTransfer_StateNumber);
-
-        /// <summary>
-        /// The identifier for the FileTransferStateMachineType_ApplyWrite_StateNumber Variable.
-        /// </summary>
-        public static readonly NodeId FileTransferStateMachineType_ApplyWrite_StateNumber = new NodeId(Opc.Ua.Variables.FileTransferStateMachineType_ApplyWrite_StateNumber);
-
-        /// <summary>
-        /// The identifier for the FileTransferStateMachineType_Error_StateNumber Variable.
-        /// </summary>
-        public static readonly NodeId FileTransferStateMachineType_Error_StateNumber = new NodeId(Opc.Ua.Variables.FileTransferStateMachineType_Error_StateNumber);
-
-        /// <summary>
         /// The identifier for the FileTransferStateMachineType_IdleToReadPrepare_TransitionNumber Variable.
         /// </summary>
         public static readonly NodeId FileTransferStateMachineType_IdleToReadPrepare_TransitionNumber = new NodeId(Opc.Ua.Variables.FileTransferStateMachineType_IdleToReadPrepare_TransitionNumber);
@@ -45335,21 +45260,6 @@ namespace Opc.Ua
         public static readonly NodeId ShelvedStateMachineType_UnshelveTime = new NodeId(Opc.Ua.Variables.ShelvedStateMachineType_UnshelveTime);
 
         /// <summary>
-        /// The identifier for the ShelvedStateMachineType_Unshelved_StateNumber Variable.
-        /// </summary>
-        public static readonly NodeId ShelvedStateMachineType_Unshelved_StateNumber = new NodeId(Opc.Ua.Variables.ShelvedStateMachineType_Unshelved_StateNumber);
-
-        /// <summary>
-        /// The identifier for the ShelvedStateMachineType_TimedShelved_StateNumber Variable.
-        /// </summary>
-        public static readonly NodeId ShelvedStateMachineType_TimedShelved_StateNumber = new NodeId(Opc.Ua.Variables.ShelvedStateMachineType_TimedShelved_StateNumber);
-
-        /// <summary>
-        /// The identifier for the ShelvedStateMachineType_OneShotShelved_StateNumber Variable.
-        /// </summary>
-        public static readonly NodeId ShelvedStateMachineType_OneShotShelved_StateNumber = new NodeId(Opc.Ua.Variables.ShelvedStateMachineType_OneShotShelved_StateNumber);
-
-        /// <summary>
         /// The identifier for the ShelvedStateMachineType_UnshelvedToTimedShelved_TransitionNumber Variable.
         /// </summary>
         public static readonly NodeId ShelvedStateMachineType_UnshelvedToTimedShelved_TransitionNumber = new NodeId(Opc.Ua.Variables.ShelvedStateMachineType_UnshelvedToTimedShelved_TransitionNumber);
@@ -45538,26 +45448,6 @@ namespace Opc.Ua
         /// The identifier for the ExclusiveLimitStateMachineType_LastTransition_Id Variable.
         /// </summary>
         public static readonly NodeId ExclusiveLimitStateMachineType_LastTransition_Id = new NodeId(Opc.Ua.Variables.ExclusiveLimitStateMachineType_LastTransition_Id);
-
-        /// <summary>
-        /// The identifier for the ExclusiveLimitStateMachineType_HighHigh_StateNumber Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveLimitStateMachineType_HighHigh_StateNumber = new NodeId(Opc.Ua.Variables.ExclusiveLimitStateMachineType_HighHigh_StateNumber);
-
-        /// <summary>
-        /// The identifier for the ExclusiveLimitStateMachineType_High_StateNumber Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveLimitStateMachineType_High_StateNumber = new NodeId(Opc.Ua.Variables.ExclusiveLimitStateMachineType_High_StateNumber);
-
-        /// <summary>
-        /// The identifier for the ExclusiveLimitStateMachineType_Low_StateNumber Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveLimitStateMachineType_Low_StateNumber = new NodeId(Opc.Ua.Variables.ExclusiveLimitStateMachineType_Low_StateNumber);
-
-        /// <summary>
-        /// The identifier for the ExclusiveLimitStateMachineType_LowLow_StateNumber Variable.
-        /// </summary>
-        public static readonly NodeId ExclusiveLimitStateMachineType_LowLow_StateNumber = new NodeId(Opc.Ua.Variables.ExclusiveLimitStateMachineType_LowLow_StateNumber);
 
         /// <summary>
         /// The identifier for the ExclusiveLimitStateMachineType_LowLowToLow_TransitionNumber Variable.
@@ -61142,6 +61032,11 @@ namespace Opc.Ua
         /// The BrowseName for the ImagePNG component.
         /// </summary>
         public const string ImagePNG = "ImagePNG";
+
+        /// <summary>
+        /// The BrowseName for the Index component.
+        /// </summary>
+        public const string Index = "Index";
 
         /// <summary>
         /// The BrowseName for the IndexRange component.
