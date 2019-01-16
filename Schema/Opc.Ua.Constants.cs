@@ -11155,6 +11155,11 @@ namespace Opc.Ua
         public const uint DefaultInputValues = 16306;
 
         /// <summary>
+        /// The identifier for the DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint DefaultInstanceBrowseName = 17605;
+
+        /// <summary>
         /// The identifier for the ServerType_ServerArray Variable.
         /// </summary>
         public const uint ServerType_ServerArray = 2005;
@@ -40135,6 +40140,11 @@ namespace Opc.Ua
         public static readonly NodeId DefaultInputValues = new NodeId(Opc.Ua.Variables.DefaultInputValues);
 
         /// <summary>
+        /// The identifier for the DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly NodeId DefaultInstanceBrowseName = new NodeId(Opc.Ua.Variables.DefaultInstanceBrowseName);
+
+        /// <summary>
         /// The identifier for the ServerType_ServerArray Variable.
         /// </summary>
         public static readonly NodeId ServerType_ServerArray = new NodeId(Opc.Ua.Variables.ServerType_ServerArray);
@@ -59967,6 +59977,11 @@ namespace Opc.Ua
         /// The BrowseName for the DefaultInputValues component.
         /// </summary>
         public const string DefaultInputValues = "DefaultInputValues";
+
+        /// <summary>
+        /// The BrowseName for the DefaultInstanceBrowseName component.
+        /// </summary>
+        public const string DefaultInstanceBrowseName = "DefaultInstanceBrowseName";
 
         /// <summary>
         /// The BrowseName for the DefaultJson component.

@@ -2266,6 +2266,7 @@
 #define OpcUaId_InputArguments 3072
 #define OpcUaId_OutputArguments 3073
 #define OpcUaId_DefaultInputValues 16306
+#define OpcUaId_DefaultInstanceBrowseName 17605
 #define OpcUaId_ServerType_ServerArray 2005
 #define OpcUaId_ServerType_NamespaceArray 2006
 #define OpcUaId_ServerType_UrisVersion 15003

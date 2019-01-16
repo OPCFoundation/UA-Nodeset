@@ -634,6 +634,13 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
   </UAVariable>
+  <UAVariable NodeId="i=17605" BrowseName="DefaultInstanceBrowseName" DataType="QualifiedName">
+    <DisplayName>DefaultInstanceBrowseName</DisplayName>
+    <Description>Allows the definition of BrowseName on an ObjectType that all instances should use by default.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
   <UADataType NodeId="i=2000" BrowseName="ImageBMP">
     <DisplayName>ImageBMP</DisplayName>
     <Description>An image encoded in BMP format.</Description>

@@ -8440,6 +8440,7 @@ UriDictionaryEntryType_DictionaryEntryName_Placeholder,17601,Object
 BaseInterfaceType,17602,ObjectType
 HasInterface,17603,ReferenceType
 HasAddIn,17604,ReferenceType
+DefaultInstanceBrowseName,17605,Variable
 GenericAttributeValue,17606,DataType
 GenericAttributes,17607,DataType
 GenericAttributeValue_Encoding_DefaultXml,17608,Object
