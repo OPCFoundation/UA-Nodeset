@@ -894,6 +894,10 @@
 #define OpcUaId_WellKnownRole_Supervisor 15692
 #define OpcUaId_WellKnownRole_ConfigureAdmin 15716
 #define OpcUaId_WellKnownRole_SecurityAdmin 15704
+#define OpcUaId_DictionaryEntryType_DictionaryEntryName_Placeholder 17590
+#define OpcUaId_DictionaryFolderType_DictionaryFolderName_Placeholder 17592
+#define OpcUaId_DictionaryFolderType_DictionaryEntryName_Placeholder 17593
+#define OpcUaId_Dictionaries 17594
 #define OpcUaId_AlarmConditionType_ShelvingState 9178
 #define OpcUaId_AlarmConditionType_FirstInGroup 16398
 #define OpcUaId_AlarmConditionType_AlarmGroup_Placeholder 16399
@@ -2022,6 +2026,11 @@
 #define OpcUaId_RoleSetType 15607
 #define OpcUaId_RoleType 15620
 #define OpcUaId_RoleMappingRuleChangedAuditEventType 17641
+#define OpcUaId_DictionaryEntryType 17589
+#define OpcUaId_DictionaryFolderType 17591
+#define OpcUaId_IrdiDictionaryEntryType 17598
+#define OpcUaId_UriDictionaryEntryType 17600
+#define OpcUaId_BaseInterfaceType 17602
 #define OpcUaId_ConditionType 2782
 #define OpcUaId_DialogConditionType 2830
 #define OpcUaId_AcknowledgeableConditionType 2881
@@ -2184,6 +2193,9 @@
 #define OpcUaId_HasArgumentDescription 129
 #define OpcUaId_HasOptionalInputArgumentDescription 131
 #define OpcUaId_HasGuard 15112
+#define OpcUaId_HasDictionaryEntry 17597
+#define OpcUaId_HasInterface 17603
+#define OpcUaId_HasAddIn 17604
 #define OpcUaId_HasTrueSubState 9004
 #define OpcUaId_HasFalseSubState 9005
 #define OpcUaId_HasAlarmSuppressionGroup 16361

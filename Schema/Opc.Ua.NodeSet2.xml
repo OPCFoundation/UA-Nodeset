@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-12-01T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2019-01-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2018-12-01T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2019-01-15T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -13713,6 +13713,91 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
+  <UAObjectType NodeId="i=17589" BrowseName="DictionaryEntryType" ReleaseStatus="Draft" IsAbstract="true">
+    <DisplayName>DictionaryEntryType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">i=17590</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="i=17590" BrowseName="&lt;DictionaryEntryName&gt;" SymbolicName="DictionaryEntryName_Placeholder" ParentNodeId="i=17589">
+    <DisplayName>&lt;DictionaryEntryName&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17589</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17589</Reference>
+    </References>
+  </UAObject>
+  <UAObjectType NodeId="i=17591" BrowseName="DictionaryFolderType" ReleaseStatus="Draft">
+    <DisplayName>DictionaryFolderType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">i=17592</Reference>
+      <Reference ReferenceType="HasComponent">i=17593</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="i=17592" BrowseName="&lt;DictionaryFolderName&gt;" SymbolicName="DictionaryFolderName_Placeholder" ParentNodeId="i=17591">
+    <DisplayName>&lt;DictionaryFolderName&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17591</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17591</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=17593" BrowseName="&lt;DictionaryEntryName&gt;" SymbolicName="DictionaryEntryName_Placeholder" ParentNodeId="i=17591">
+    <DisplayName>&lt;DictionaryEntryName&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17589</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17591</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=17594" BrowseName="Dictionaries">
+    <DisplayName>Dictionaries</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=2253</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17591</Reference>
+    </References>
+  </UAObject>
+  <UAReferenceType NodeId="i=17597" BrowseName="HasDictionaryEntry" ReleaseStatus="Draft">
+    <DisplayName>HasDictionaryEntry</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
+    </References>
+    <InverseName>DictionaryEntryOf</InverseName>
+  </UAReferenceType>
+  <UAObjectType NodeId="i=17598" BrowseName="IrdiDictionaryEntryType" ReleaseStatus="Draft">
+    <DisplayName>IrdiDictionaryEntryType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=17589</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="i=17600" BrowseName="UriDictionaryEntryType" ReleaseStatus="Draft">
+    <DisplayName>UriDictionaryEntryType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=17589</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="i=17602" BrowseName="BaseInterfaceType" ReleaseStatus="Draft" IsAbstract="true">
+    <DisplayName>BaseInterfaceType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="i=17603" BrowseName="HasInterface" ReleaseStatus="Draft">
+    <DisplayName>HasInterface</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
+    </References>
+    <InverseName>InterfaceOf</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="i=17604" BrowseName="HasAddIn" ReleaseStatus="Draft">
+    <DisplayName>HasAddIn</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
+    </References>
+    <InverseName>AddInOf</InverseName>
+  </UAReferenceType>
   <UAVariableType NodeId="i=2365" BrowseName="DataItemType" ValueRank="-2">
     <DisplayName>DataItemType</DisplayName>
     <Description>A variable that contains live automation data.</Description>
