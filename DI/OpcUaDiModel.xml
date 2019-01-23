@@ -36,8 +36,8 @@
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   TargetNamespace="http://opcfoundation.org/UA/DI/"
   TargetXmlNamespace="http://opcfoundation.org/UA/DI/"
-  TargetVersion="1.01"
-  TargetPublicationDate="2018-06-06T00:00:00Z"
+  TargetVersion="1.02"
+  TargetPublicationDate="2019-01-21T00:00:00Z"
   xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
 
   <Namespaces>
@@ -60,7 +60,7 @@
       </Property>
       <Property SymbolicName="OpcUa:NamespacePublicationDate" DataType="OpcUa:DateTime">
         <DefaultValue>
-          <uax:DateTime>2018-06-06</uax:DateTime>
+          <uax:DateTime>2019-01-21</uax:DateTime>
         </DefaultValue>
       </Property>
       <Property SymbolicName="OpcUa:IsNamespaceSubset" DataType="OpcUa:Boolean">
@@ -122,6 +122,15 @@
     </References>
   </Object>
 
+  <Object SymbolicName="DI:DeviceFeatures" TypeDefinition="OpcUa:BaseObjectType">
+    <References>
+      <Reference IsInverse="true">
+        <ReferenceType>OpcUa:Organizes</ReferenceType>
+        <TargetId>DI:DeviceSet</TargetId>
+      </Reference>
+    </References>
+  </Object>
+
   <Object SymbolicName="DI:NetworkSet" TypeDefinition="OpcUa:BaseObjectType">
     <Description>Contains all instances of communication networks</Description>
     <References>
@@ -162,7 +171,7 @@
       <Object SymbolicName="DI:MethodSet" TypeDefinition="OpcUa:BaseObjectType" ModellingRule="Optional">
         <Description>Flat list of Methods</Description>
         <Children>
-          <Method SymbolicName="DI:MethodIdentifier" ModellingRule="None">
+          <Method SymbolicName="DI:MethodIdentifier" ModellingRule="MandatoryPlaceholder">
             <BrowseName>&lt;MethodIdentifier&gt;</BrowseName>
             <Description>A method which belongs to the topology element.</Description>
           </Method>
@@ -180,40 +189,128 @@
       </Object>
     </Children>
   </ObjectType>
+  
+  <ObjectType SymbolicName="DI:IVendorNameplateType" BaseType="OpcUa:BaseInterfaceType" IsAbstract="true">
+    <Children>
+      <Property SymbolicName="DI:Manufacturer" DataType="OpcUa:LocalizedText" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:ManufacturerUri" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:Model" DataType="OpcUa:LocalizedText" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:SerialNumber" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:HardwareRevision" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:SoftwareRevision" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:DeviceRevision" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:RevisionCounter" DataType="OpcUa:Int32" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:ProductCode" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:DeviceManual" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:DeviceClass" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+    </Children>
+  </ObjectType>
 
-  <ObjectType SymbolicName="DI:DeviceType" BaseType="DI:TopologyElementType" IsAbstract="true">
+  <ObjectType SymbolicName="DI:ITagNameplateType" BaseType="OpcUa:BaseInterfaceType" IsAbstract="true">
+    <Children>
+      <Property SymbolicName="DI:AssetId" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:ComponentName" DataType="OpcUa:LocalizedText" ValueRank="Scalar" ModellingRule="Optional" />
+    </Children>
+  </ObjectType>
+
+  <ObjectType SymbolicName="DI:IDeviceHealthType" BaseType="OpcUa:BaseInterfaceType" IsAbstract="true">
+    <Children>
+      <Variable SymbolicName="DI:DeviceHealth" DataType="DI:DeviceHealthEnumeration" ValueRank="Scalar" ModellingRule="Mandatory" />
+    </Children>
+  </ObjectType>
+
+  <ObjectType SymbolicName="DI:ISupportInfoType" BaseType="OpcUa:BaseInterfaceType" IsAbstract="true">
+    <Children>
+      <Object SymbolicName="DI:DeviceTypeImage" TypeDefinition="OpcUa:FolderType" ModellingRule="Optional">
+        <Children>
+          <Variable SymbolicName="DI:ImageIdentifier" DataType="OpcUa:Image" ModellingRule="MandatoryPlaceholder">
+            <BrowseName>&lt;ImageIdentifier&gt;</BrowseName>
+          </Variable>
+        </Children>
+      </Object>
+      <Object SymbolicName="DI:Documentation" TypeDefinition="OpcUa:FolderType" ModellingRule="Optional">
+        <Children>
+          <Variable SymbolicName="DI:DocumentIdentifier" DataType="OpcUa:ByteString" ModellingRule="MandatoryPlaceholder">
+            <BrowseName>&lt;DocumentIdentifier&gt;</BrowseName>
+          </Variable>
+        </Children>
+      </Object>
+      <Object SymbolicName="DI:ProtocolSupport" TypeDefinition="OpcUa:FolderType" ModellingRule="Optional">
+        <Children>
+          <Variable SymbolicName="DI:ProtocolSupportIdentifier" DataType="OpcUa:ByteString" ModellingRule="MandatoryPlaceholder">
+            <BrowseName>&lt;ProtocolSupportIdentifier&gt;</BrowseName>
+          </Variable>
+        </Children>
+      </Object>
+      <Object SymbolicName="DI:ImageSet" TypeDefinition="OpcUa:FolderType" ModellingRule="Optional">
+        <Children>
+          <Variable SymbolicName="DI:ImageIdentifier" DataType="OpcUa:Image" ModellingRule="MandatoryPlaceholder">
+            <BrowseName>&lt;ImageIdentifier&gt;</BrowseName>
+          </Variable>
+        </Children>
+      </Object>
+    </Children>
+  </ObjectType>
+  
+  <ObjectType SymbolicName="DI:ComponentType" BaseType="DI:TopologyElementType" IsAbstract="true">
+    <Children>
+      <Property SymbolicName="DI:Manufacturer" DataType="OpcUa:LocalizedText" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:ManufacturerUri" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:Model" DataType="OpcUa:LocalizedText" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:SerialNumber" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:HardwareRevision" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:SoftwareRevision" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:DeviceRevision" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:RevisionCounter" DataType="OpcUa:Int32" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:ProductCode" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:DeviceManual" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:DeviceClass" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:AssetId" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:ComponentName" DataType="OpcUa:LocalizedText" ValueRank="Scalar" ModellingRule="Optional" />
+    </Children>
+    <References>
+      <Reference IsInverse="false">
+        <ReferenceType>OpcUa:HasInterface</ReferenceType>
+        <TargetId>DI:IVendorNameplateType</TargetId>
+      </Reference>
+      <Reference IsInverse="false">
+        <ReferenceType>OpcUa:HasInterface</ReferenceType>
+        <TargetId>DI:ITagNameplateType</TargetId>
+      </Reference>
+    </References>
+  </ObjectType>
+
+  <ObjectType SymbolicName="DI:DeviceType" BaseType="DI:ComponentType" IsAbstract="true">
     <Description>Defines the basic information components for all configurable elements in a device topology</Description>
     <Children>
-      <Property SymbolicName="DI:SerialNumber" DataType="OpcUa:String">
+      <Object SymbolicName="DI:CPIdentifier" TypeDefinition="DI:ConnectionPointType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;CPIdentifier&gt;</BrowseName>
+      </Object>
+      <Property SymbolicName="DI:SerialNumber" DataType="OpcUa:String" ModellingRule="Mandatory" >
         <Description>Identifier that uniquely identifies, within a manufacturer, a device instance</Description>
       </Property>
-      <Property SymbolicName="DI:RevisionCounter" DataType="OpcUa:Int32">
+      <Property SymbolicName="DI:RevisionCounter" DataType="OpcUa:Int32" ModellingRule="Mandatory">
         <Description>An incremental counter indicating the number of times the static data within the Device has been modified</Description>
       </Property>
-      <Property SymbolicName="DI:Manufacturer" DataType="OpcUa:LocalizedText">
+      <Property SymbolicName="DI:Manufacturer" DataType="OpcUa:LocalizedText" ModellingRule="Mandatory">
         <Description>Name of the company that manufactured the device</Description>
       </Property>
-      <Property SymbolicName="DI:Model" DataType="OpcUa:LocalizedText">
+      <Property SymbolicName="DI:Model" DataType="OpcUa:LocalizedText" ModellingRule="Mandatory">
         <Description>Model name of the device</Description>
       </Property>
-      <Property SymbolicName="DI:DeviceManual" DataType="OpcUa:String">
+      <Property SymbolicName="DI:DeviceManual" DataType="OpcUa:String" ModellingRule="Mandatory">
         <Description>Address (pathname in the file system or a URL | Web address) of user manual for the device</Description>
       </Property>
-      <Property SymbolicName="DI:DeviceRevision" DataType="OpcUa:String">
+      <Property SymbolicName="DI:DeviceRevision" DataType="OpcUa:String" ModellingRule="Mandatory">
         <Description>Overall revision level of the device</Description>
       </Property>
-      <Property SymbolicName="DI:SoftwareRevision" DataType="OpcUa:String">
+      <Property SymbolicName="DI:SoftwareRevision" DataType="OpcUa:String" ModellingRule="Mandatory">
         <Description>Revision level of the software/firmware of the device</Description>
       </Property>
-      <Property SymbolicName="DI:HardwareRevision" DataType="OpcUa:String">
+      <Property SymbolicName="DI:HardwareRevision" DataType="OpcUa:String" ModellingRule="Mandatory">
         <Description>Revision level of the hardware of the device</Description>
       </Property>
-      <Property SymbolicName="DI:DeviceClass" DataType="OpcUa:String" ModellingRule="Optional">
-        <Description>Indicates in which domain or for what purpose a device is used.</Description>
-      </Property>
-      <Property SymbolicName="DI:DeviceHealth" DataType="DI:DeviceHealthEnumeration" ModellingRule="Optional">
-        <Description>Status of a device as defined by NAMUR Recommendation NE107.</Description>
-      </Property>
+      <Variable SymbolicName="DI:DeviceHealth" DataType="DI:DeviceHealthEnumeration" ValueRank="Scalar" ModellingRule="Optional" />
       <Object SymbolicName="DI:DeviceTypeImage" TypeDefinition="OpcUa:FolderType" ModellingRule="Optional">
         <Description>Organizes pictures of the device.</Description>
         <Children>
@@ -250,16 +347,31 @@
           </Variable>
         </Children>
       </Object>
-      <Object SymbolicName="DI:CPIdentifier" TypeDefinition="DI:ConnectionPointType" ModellingRule="OptionalPlaceholder">
-        <BrowseName>&lt;CPIdentifier&gt;</BrowseName>
-      </Object>
+    </Children>
+    <References>
+      <Reference IsInverse="false">
+        <ReferenceType>OpcUa:HasInterface</ReferenceType>
+        <TargetId>DI:ISupportInfoType</TargetId>
+      </Reference>
+      <Reference IsInverse="false">
+        <ReferenceType>OpcUa:HasInterface</ReferenceType>
+        <TargetId>DI:IDeviceHealthType</TargetId>
+      </Reference>
+    </References>
+  </ObjectType>
+
+  <ObjectType SymbolicName="DI:SoftwareType" BaseType="DI:ComponentType">
+    <Children>
+      <Property SymbolicName="DI:Manufacturer" DataType="OpcUa:LocalizedText" ValueRank="Scalar" ModellingRule="Mandatory" />
+      <Property SymbolicName="DI:Model" DataType="OpcUa:LocalizedText" ValueRank="Scalar" ModellingRule="Mandatory" />
+      <Property SymbolicName="DI:SoftwareRevision" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Mandatory" />
     </Children>
   </ObjectType>
 
   <ObjectType SymbolicName="DI:BlockType" BaseType="DI:TopologyElementType" IsAbstract="true">
     <Description>Adds the concept of Blocks needed for block-oriented FieldDevices</Description>
     <Children>
-      <Property SymbolicName="DI:RevisionCounter" ModellingRule="Optional" DataType="OpcUa:UInt32">
+      <Property SymbolicName="DI:RevisionCounter" ModellingRule="Optional" DataType="OpcUa:Int32">
         <Description>Incremental counter indicating the number of times the static data within the Block has been modified</Description>
       </Property>
       <Property SymbolicName="DI:ActualMode" ModellingRule="Optional" DataType="OpcUa:LocalizedText">
@@ -276,6 +388,12 @@
       </Property>
     </Children>
   </ObjectType>
+
+  <ObjectType SymbolicName="DI:DeviceHealthDiagnosticAlarmType" BaseType="OpcUa:InstrumentDiagnosticAlarmType" IsAbstract="false" />
+  <ObjectType SymbolicName="DI:FailureAlarmType" BaseType="DI:DeviceHealthDiagnosticAlarmType" IsAbstract="true" />
+  <ObjectType SymbolicName="DI:CheckFunctionAlarmType" BaseType="DI:DeviceHealthDiagnosticAlarmType" IsAbstract="true" />
+  <ObjectType SymbolicName="DI:OffSpecAlarmType" BaseType="DI:DeviceHealthDiagnosticAlarmType" IsAbstract="true" />
+  <ObjectType SymbolicName="DI:MaintenanceRequiredAlarmType" BaseType="DI:DeviceHealthDiagnosticAlarmType" IsAbstract="true" />
 
   <ObjectType SymbolicName="DI:ConfigurableObjectType" BaseType="OpcUa:BaseObjectType">
     <Description>Defines a general pattern to expose and configure modular components</Description>
@@ -296,16 +414,6 @@
         <BrowseName>&lt;GroupIdentifier&gt;</BrowseName>
         <Description>An application specific functional group used to organize parameters and methods.</Description>
       </Object>
-      <Variable SymbolicName="DI:ParameterIdentifier" TypeDefinition="OpcUa:BaseDataVariableType" ModellingRule="OptionalPlaceholder">
-        <BrowseName>&lt;ParameterIdentifier&gt;</BrowseName>
-        <Description>A parameter which belongs to the group.</Description>
-        <ReferenceType>OpcUa:Organizes</ReferenceType>
-      </Variable>
-      <Method SymbolicName="DI:MethodIdentifier" ModellingRule="None">
-        <BrowseName>&lt;MethodIdentifier&gt;</BrowseName>
-        <Description>A method which belongs to the group.</Description>
-        <ReferenceType>OpcUa:Organizes</ReferenceType>
-      </Method>
       <Variable SymbolicName="DI:UIElement" TypeDefinition="DI:UIElementType" ModellingRule="Optional">
         <Description>A user interface element assigned to this group.</Description>
       </Variable>
@@ -336,7 +444,7 @@
     </Fields>
   </DataType>
 
-  <VariableType SymbolicName="DI:UIElementType" BaseType="OpcUa:BaseVariableType" DataType="OpcUa:BaseDataType" ValueRank="Scalar" IsAbstract="true">
+  <VariableType SymbolicName="DI:UIElementType" BaseType="OpcUa:BaseDataVariableType" DataType="OpcUa:BaseDataType" ValueRank="Scalar" IsAbstract="true">
     <Description>The base type for all UI Element Types.</Description>
   </VariableType>
 
@@ -363,8 +471,8 @@
       <Object SymbolicName="DI:NetworkAddress" TypeDefinition="DI:FunctionalGroupType" ModellingRule="Mandatory">
         <Description>The address of the device on this network.</Description>
       </Object>
-      <Object SymbolicName="DI:ProfileId" TypeDefinition="DI:ProtocolType" ModellingRule="MandatoryPlaceholder">
-        <BrowseName>&lt;ProfileId&gt;</BrowseName>
+      <Object SymbolicName="DI:ProfileIdentifier" TypeDefinition="DI:ProtocolType" ModellingRule="MandatoryPlaceholder">
+        <BrowseName>&lt;ProfileIdentifier&gt;</BrowseName>
       </Object>
       <Object SymbolicName="DI:NetworkIdentifier" TypeDefinition="DI:NetworkType" ModellingRule="OptionalPlaceholder">
         <BrowseName>&lt;NetworkIdentifier&gt;</BrowseName>
@@ -395,21 +503,21 @@
       <Argument Name="OmitGoodResults" DataType="OpcUa:Boolean" />
     </InputArguments>
     <OutputArguments>
-      <Argument Name="FetchResult" DataType="DI:FetchResultDataType" />
+      <Argument Name="FetchResultData" DataType="DI:FetchResultDataType" />
     </OutputArguments>
   </Method>
 
   <DataType SymbolicName="DI:FetchResultDataType" BaseType="OpcUa:Structure" IsAbstract="true">
   </DataType>
 
-  <DataType SymbolicName="DI:FetchResultErrorDataType" BaseType="DI:FetchResultDataType">
+  <DataType SymbolicName="DI:TransferResultErrorDataType" BaseType="DI:FetchResultDataType">
     <Fields>
       <Field Name="Status" DataType="OpcUa:Int32" />
       <Field Name="Diagnostics" DataType="OpcUa:DiagnosticInfo" />
     </Fields>
   </DataType>
 
-  <DataType SymbolicName="DI:FetchResultDataDataType" BaseType="DI:FetchResultDataType">
+  <DataType SymbolicName="DI:TransferResultDataDataType" BaseType="DI:FetchResultDataType">
     <Fields>
       <Field Name="SequenceNumber" DataType="OpcUa:Int32" />
       <Field Name="EndOfResults" DataType="OpcUa:Boolean" />
@@ -445,7 +553,7 @@
 
   <Method SymbolicName="DI:InitLockMethodType">
     <InputArguments>
-      <Argument Name="CurrentContext" DataType="OpcUa:String" />
+      <Argument Name="Context" DataType="OpcUa:String" />
     </InputArguments>
     <OutputArguments>
       <Argument Name="InitLockStatus" DataType="OpcUa:Int32" />
@@ -473,7 +581,11 @@
   <ObjectType SymbolicName="DI:LockingServicesType" BaseType="OpcUa:BaseObjectType" IsAbstract="false">
     <Description>An interface for Locking.</Description>
     <Children>
-      <Property SymbolicName="DI:Locked" DataType="OpcUa:Boolean" />
+      <Property SymbolicName="OpcUa:DefaultInstanceBrowseName" DataType="OpcUa:String">
+        <DefaultValue>
+          <uax:String>Lock</uax:String>
+        </DefaultValue>
+      </Property>
       <Property SymbolicName="DI:LockingClient" DataType="OpcUa:String" />
       <Property SymbolicName="DI:LockingUser" DataType="OpcUa:String" />
       <Property SymbolicName="DI:RemainingLockTime" DataType="OpcUa:Duration" />

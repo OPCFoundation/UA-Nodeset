@@ -68,7 +68,7 @@
   </xs:complexType>
   <xs:element name="ListOfFetchResultDataType" type="tns:ListOfFetchResultDataType" nillable="true"></xs:element>
 
-  <xs:complexType name="FetchResultErrorDataType">
+  <xs:complexType name="TransferResultErrorDataType">
     <xs:complexContent mixed="false">
       <xs:extension base="tns:FetchResultDataType">
         <xs:sequence>
@@ -78,16 +78,16 @@
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="FetchResultErrorDataType" type="tns:FetchResultErrorDataType" />
+  <xs:element name="TransferResultErrorDataType" type="tns:TransferResultErrorDataType" />
 
-  <xs:complexType name="ListOfFetchResultErrorDataType">
+  <xs:complexType name="ListOfTransferResultErrorDataType">
     <xs:sequence>
-      <xs:element name="FetchResultErrorDataType" type="tns:FetchResultErrorDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+      <xs:element name="TransferResultErrorDataType" type="tns:TransferResultErrorDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="ListOfFetchResultErrorDataType" type="tns:ListOfFetchResultErrorDataType" nillable="true"></xs:element>
+  <xs:element name="ListOfTransferResultErrorDataType" type="tns:ListOfTransferResultErrorDataType" nillable="true"></xs:element>
 
-  <xs:complexType name="FetchResultDataDataType">
+  <xs:complexType name="TransferResultDataDataType">
     <xs:complexContent mixed="false">
       <xs:extension base="tns:FetchResultDataType">
         <xs:sequence>
@@ -98,14 +98,14 @@
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="FetchResultDataDataType" type="tns:FetchResultDataDataType" />
+  <xs:element name="TransferResultDataDataType" type="tns:TransferResultDataDataType" />
 
-  <xs:complexType name="ListOfFetchResultDataDataType">
+  <xs:complexType name="ListOfTransferResultDataDataType">
     <xs:sequence>
-      <xs:element name="FetchResultDataDataType" type="tns:FetchResultDataDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+      <xs:element name="TransferResultDataDataType" type="tns:TransferResultDataDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="ListOfFetchResultDataDataType" type="tns:ListOfFetchResultDataDataType" nillable="true"></xs:element>
+  <xs:element name="ListOfTransferResultDataDataType" type="tns:ListOfTransferResultDataDataType" nillable="true"></xs:element>
 
   <xs:complexType name="ParameterResultDataType">
     <xs:sequence>
