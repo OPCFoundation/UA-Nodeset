@@ -28486,18 +28486,9 @@ namespace Opc.Ua
         protected override void InitializeOptionalChildren(ISystemContext context)
         {
             base.InitializeOptionalChildren(context);
-
-            if (StateNumber != null)
-            {
-                StateNumber.Initialize(context, StateNumber_InitializationString);
-            }
         }
 
         #region Initialization String
-        private const string StateNumber_InitializationString =
-           "//////////8VYIkKAgAAAAAACwAAAFN0YXRlTnVtYmVyAQAECQAuAEQECQAAAAf/////AQH/////AAAA" +
-           "AA==";
-
         private const string InitializationString =
            "//////////8EYIAAAQAAAAAAEQAAAFN0YXRlVHlwZUluc3RhbmNlAQADCQEAAwn/////AQAAABVgiQoC" +
            "AAAAAAALAAAAU3RhdGVOdW1iZXIBAAQJAC4ARAQJAAAAB/////8BAf////8AAAAA";
@@ -28656,8 +28647,8 @@ namespace Opc.Ua
 
         #region Initialization String
         private const string InitializationString =
-           "//////////8EYIAAAQAAAAAAGAAAAEluaXRpYWxTdGF0ZVR5cGVJbnN0YW5jZQEABQkBAAUJ/////wAA" +
-           "AAA=";
+           "//////////8EYIAAAQAAAAAAGAAAAEluaXRpYWxTdGF0ZVR5cGVJbnN0YW5jZQEABQkBAAUJ/////wEA" +
+           "AAAVYIkKAgAAAAAACwAAAFN0YXRlTnVtYmVyAQCYDgAuAESYDgAAAAf/////AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -28885,8 +28876,8 @@ namespace Opc.Ua
 
         #region Initialization String
         private const string InitializationString =
-           "//////////8EYIAAAQAAAAAAFwAAAENob2ljZVN0YXRlVHlwZUluc3RhbmNlAQAFOwEABTv/////AAAA" +
-           "AA==";
+           "//////////8EYIAAAQAAAAAAFwAAAENob2ljZVN0YXRlVHlwZUluc3RhbmNlAQAFOwEABTv/////AQAA" +
+           "ABVgiQoCAAAAAAALAAAAU3RhdGVOdW1iZXIBAAY7AC4ARAY7AAAAB/////8BAf////8AAAAA";
         #endregion
         #endif
         #endregion

@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2018-12-01T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2019-01-31T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2018-12-01T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2019-01-31T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -2064,6 +2064,7 @@
   <UAObject NodeId="i=2930" BrowseName="Unshelved" ParentNodeId="i=2929">
     <DisplayName>Unshelved</DisplayName>
     <References>
+      <Reference ReferenceType="HasProperty">i=6098</Reference>
       <Reference ReferenceType="i=51" IsForward="false">i=2935</Reference>
       <Reference ReferenceType="i=51" IsForward="false">i=2936</Reference>
       <Reference ReferenceType="i=52" IsForward="false">i=2940</Reference>
@@ -2072,9 +2073,18 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2929</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="i=6098" BrowseName="StateNumber" ParentNodeId="i=2930" DataType="UInt32">
+    <DisplayName>StateNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=2930</Reference>
+    </References>
+  </UAVariable>
   <UAObject NodeId="i=2932" BrowseName="TimedShelved" ParentNodeId="i=2929">
     <DisplayName>Timed Shelved</DisplayName>
     <References>
+      <Reference ReferenceType="HasProperty">i=6100</Reference>
       <Reference ReferenceType="i=52" IsForward="false">i=2935</Reference>
       <Reference ReferenceType="i=51" IsForward="false">i=2940</Reference>
       <Reference ReferenceType="i=51" IsForward="false">i=2942</Reference>
@@ -2083,9 +2093,18 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2929</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="i=6100" BrowseName="StateNumber" ParentNodeId="i=2932" DataType="UInt32">
+    <DisplayName>StateNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=2932</Reference>
+    </References>
+  </UAVariable>
   <UAObject NodeId="i=2933" BrowseName="OneShotShelved" ParentNodeId="i=2929">
     <DisplayName>One Shot Shelved</DisplayName>
     <References>
+      <Reference ReferenceType="HasProperty">i=6101</Reference>
       <Reference ReferenceType="i=52" IsForward="false">i=2936</Reference>
       <Reference ReferenceType="i=52" IsForward="false">i=2942</Reference>
       <Reference ReferenceType="i=51" IsForward="false">i=2943</Reference>
@@ -2094,6 +2113,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2929</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="i=6101" BrowseName="StateNumber" ParentNodeId="i=2933" DataType="UInt32">
+    <DisplayName>StateNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=2933</Reference>
+    </References>
+  </UAVariable>
   <UAObject NodeId="i=2935" BrowseName="UnshelvedToTimedShelved" ParentNodeId="i=2929">
     <DisplayName>UnshelvedToTimedShelved</DisplayName>
     <References>
@@ -2372,39 +2399,75 @@
   <UAObject NodeId="i=9329" BrowseName="HighHigh" ParentNodeId="i=9318">
     <DisplayName>HighHigh</DisplayName>
     <References>
+      <Reference ReferenceType="HasProperty">i=9330</Reference>
       <Reference ReferenceType="i=51" IsForward="false">i=9339</Reference>
       <Reference ReferenceType="i=52" IsForward="false">i=9340</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=9318</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="i=9330" BrowseName="StateNumber" ParentNodeId="i=9329" DataType="UInt32">
+    <DisplayName>StateNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=9329</Reference>
+    </References>
+  </UAVariable>
   <UAObject NodeId="i=9331" BrowseName="High" ParentNodeId="i=9318">
     <DisplayName>High</DisplayName>
     <References>
+      <Reference ReferenceType="HasProperty">i=9332</Reference>
       <Reference ReferenceType="i=52" IsForward="false">i=9339</Reference>
       <Reference ReferenceType="i=51" IsForward="false">i=9340</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=9318</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="i=9332" BrowseName="StateNumber" ParentNodeId="i=9331" DataType="UInt32">
+    <DisplayName>StateNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=9331</Reference>
+    </References>
+  </UAVariable>
   <UAObject NodeId="i=9333" BrowseName="Low" ParentNodeId="i=9318">
     <DisplayName>Low</DisplayName>
     <References>
+      <Reference ReferenceType="HasProperty">i=9334</Reference>
       <Reference ReferenceType="i=52" IsForward="false">i=9337</Reference>
       <Reference ReferenceType="i=51" IsForward="false">i=9338</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=9318</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="i=9334" BrowseName="StateNumber" ParentNodeId="i=9333" DataType="UInt32">
+    <DisplayName>StateNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=9333</Reference>
+    </References>
+  </UAVariable>
   <UAObject NodeId="i=9335" BrowseName="LowLow" ParentNodeId="i=9318">
     <DisplayName>LowLow</DisplayName>
     <References>
+      <Reference ReferenceType="HasProperty">i=9336</Reference>
       <Reference ReferenceType="i=51" IsForward="false">i=9337</Reference>
       <Reference ReferenceType="i=52" IsForward="false">i=9338</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=9318</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="i=9336" BrowseName="StateNumber" ParentNodeId="i=9335" DataType="UInt32">
+    <DisplayName>StateNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=9335</Reference>
+    </References>
+  </UAVariable>
   <UAObject NodeId="i=9337" BrowseName="LowLowToLow" ParentNodeId="i=9318">
     <DisplayName>LowLowToLow</DisplayName>
     <References>
