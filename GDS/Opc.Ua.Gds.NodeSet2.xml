@@ -34,7 +34,7 @@
   </NamespaceUris>
   <Models>
     <Model ModelUri="http://opcfoundation.org/UA/GDS/" Version="1.04" PublicationDate="2019-01-15T00:00:00Z">
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2019-01-15T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2019-01-31T00:00:00Z" />
     </Model>
   </Models>
   <Aliases>

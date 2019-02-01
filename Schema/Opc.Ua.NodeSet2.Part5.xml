@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2019-01-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2019-01-31T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2019-01-15T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2019-01-31T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -480,7 +480,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=15957</Reference>
     </References>
     <Value>
-      <DateTime xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2018-12-01T00:00:00Z</DateTime>
+      <DateTime xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2019-01-31T00:00:00Z</DateTime>
     </Value>
   </UAVariable>
   <UAVariable NodeId="i=15961" BrowseName="IsNamespaceSubset" ParentNodeId="i=15957" DataType="Boolean">
@@ -8183,7 +8183,7 @@
     <DisplayName>StateNumber</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=2307</Reference>
     </References>
   </UAVariable>
@@ -10102,6 +10102,7 @@
   <UAObject NodeId="i=15815" BrowseName="Idle" ParentNodeId="i=15803">
     <DisplayName>Idle</DisplayName>
     <References>
+      <Reference ReferenceType="HasProperty">i=15816</Reference>
       <Reference ReferenceType="i=51" IsForward="false">i=15825</Reference>
       <Reference ReferenceType="i=52" IsForward="false">i=15829</Reference>
       <Reference ReferenceType="i=51" IsForward="false">i=15831</Reference>
@@ -10111,9 +10112,18 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=15803</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="i=15816" BrowseName="StateNumber" ParentNodeId="i=15815" DataType="UInt32">
+    <DisplayName>StateNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15815</Reference>
+    </References>
+  </UAVariable>
   <UAObject NodeId="i=15817" BrowseName="ReadPrepare" ParentNodeId="i=15803">
     <DisplayName>ReadPrepare</DisplayName>
     <References>
+      <Reference ReferenceType="HasProperty">i=15818</Reference>
       <Reference ReferenceType="i=52" IsForward="false">i=15825</Reference>
       <Reference ReferenceType="i=51" IsForward="false">i=15827</Reference>
       <Reference ReferenceType="i=51" IsForward="false">i=15835</Reference>
@@ -10121,9 +10131,18 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=15803</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="i=15818" BrowseName="StateNumber" ParentNodeId="i=15817" DataType="UInt32">
+    <DisplayName>StateNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15817</Reference>
+    </References>
+  </UAVariable>
   <UAObject NodeId="i=15819" BrowseName="ReadTransfer" ParentNodeId="i=15803">
     <DisplayName>ReadTransfer</DisplayName>
     <References>
+      <Reference ReferenceType="HasProperty">i=15820</Reference>
       <Reference ReferenceType="i=52" IsForward="false">i=15827</Reference>
       <Reference ReferenceType="i=51" IsForward="false">i=15829</Reference>
       <Reference ReferenceType="i=51" IsForward="false">i=15837</Reference>
@@ -10131,9 +10150,18 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=15803</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="i=15820" BrowseName="StateNumber" ParentNodeId="i=15819" DataType="UInt32">
+    <DisplayName>StateNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15819</Reference>
+    </References>
+  </UAVariable>
   <UAObject NodeId="i=15821" BrowseName="ApplyWrite" ParentNodeId="i=15803">
     <DisplayName>ApplyWrite</DisplayName>
     <References>
+      <Reference ReferenceType="HasProperty">i=15822</Reference>
       <Reference ReferenceType="i=52" IsForward="false">i=15831</Reference>
       <Reference ReferenceType="i=51" IsForward="false">i=15833</Reference>
       <Reference ReferenceType="i=51" IsForward="false">i=15839</Reference>
@@ -10141,9 +10169,18 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=15803</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="i=15822" BrowseName="StateNumber" ParentNodeId="i=15821" DataType="UInt32">
+    <DisplayName>StateNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15821</Reference>
+    </References>
+  </UAVariable>
   <UAObject NodeId="i=15823" BrowseName="Error" ParentNodeId="i=15803">
     <DisplayName>Error</DisplayName>
     <References>
+      <Reference ReferenceType="HasProperty">i=15824</Reference>
       <Reference ReferenceType="i=52" IsForward="false">i=15835</Reference>
       <Reference ReferenceType="i=52" IsForward="false">i=15837</Reference>
       <Reference ReferenceType="i=52" IsForward="false">i=15839</Reference>
@@ -10152,6 +10189,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=15803</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="i=15824" BrowseName="StateNumber" ParentNodeId="i=15823" DataType="UInt32">
+    <DisplayName>StateNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">i=15823</Reference>
+    </References>
+  </UAVariable>
   <UAObject NodeId="i=15825" BrowseName="IdleToReadPrepare" ParentNodeId="i=15803">
     <DisplayName>IdleToReadPrepare</DisplayName>
     <References>
@@ -10886,7 +10931,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2127</Reference>
     </References>
   </UAObjectType>
-  <UAObject NodeId="i=15644" BrowseName="WellKnownRole_Anonymous">
+  <UAObject NodeId="i=15644" BrowseName="Anonymous" SymbolicName="WellKnownRole_Anonymous">
     <DisplayName>Anonymous</DisplayName>
     <Description>The Role has very limited access for use when a Session has anonymous credentials.</Description>
     <References>
@@ -11144,7 +11189,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAObject NodeId="i=15656" BrowseName="WellKnownRole_AuthenticatedUser">
+  <UAObject NodeId="i=15656" BrowseName="AuthenticatedUser" SymbolicName="WellKnownRole_AuthenticatedUser">
     <DisplayName>AuthenticatedUser</DisplayName>
     <Description>The Role has limited access for use when a Session has valid non-anonymous credentials but has not been explicity granted access to a Role.</Description>
     <References>
@@ -11402,7 +11447,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAObject NodeId="i=15668" BrowseName="WellKnownRole_Observer">
+  <UAObject NodeId="i=15668" BrowseName="Observer" SymbolicName="WellKnownRole_Observer">
     <DisplayName>Observer</DisplayName>
     <Description>The Role is allowed to browse, read live data, read historical data/events or subscribe to data/events.</Description>
     <References>
@@ -11660,7 +11705,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAObject NodeId="i=15680" BrowseName="WellKnownRole_Operator">
+  <UAObject NodeId="i=15680" BrowseName="Operator" SymbolicName="WellKnownRole_Operator">
     <DisplayName>Operator</DisplayName>
     <Description>The Role is allowed to browse, read live data, read historical data/events or subscribe to data/events.</Description>
     <References>
@@ -11918,7 +11963,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAObject NodeId="i=16036" BrowseName="WellKnownRole_Engineer">
+  <UAObject NodeId="i=16036" BrowseName="Engineer" SymbolicName="WellKnownRole_Engineer">
     <DisplayName>Engineer</DisplayName>
     <Description>The Role is allowed to browse, read live data, read and update historical data/events, call methods or subscribe to data/events.</Description>
     <References>
@@ -12176,7 +12221,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAObject NodeId="i=15692" BrowseName="WellKnownRole_Supervisor">
+  <UAObject NodeId="i=15692" BrowseName="Supervisor" SymbolicName="WellKnownRole_Supervisor">
     <DisplayName>Supervisor</DisplayName>
     <Description>The Role is allowed to browse, read live data, read and historical data/events, call methods or subscribe to data/events.</Description>
     <References>
@@ -12434,7 +12479,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAObject NodeId="i=15716" BrowseName="WellKnownRole_ConfigureAdmin">
+  <UAObject NodeId="i=15716" BrowseName="ConfigureAdmin" SymbolicName="WellKnownRole_ConfigureAdmin">
     <DisplayName>ConfigureAdmin</DisplayName>
     <Description>The Role is allowed to change the non-security related configuration settings.</Description>
     <References>
@@ -12692,7 +12737,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAObject NodeId="i=15704" BrowseName="WellKnownRole_SecurityAdmin">
+  <UAObject NodeId="i=15704" BrowseName="SecurityAdmin" SymbolicName="WellKnownRole_SecurityAdmin">
     <DisplayName>SecurityAdmin</DisplayName>
     <Description>The Role is allowed to change security related settings.</Description>
     <References>

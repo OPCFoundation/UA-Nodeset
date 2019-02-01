@@ -14830,6 +14830,31 @@ namespace Opc.Ua
         public const uint FileTransferStateMachineType_LastTransition_Id = 15810;
 
         /// <summary>
+        /// The identifier for the FileTransferStateMachineType_Idle_StateNumber Variable.
+        /// </summary>
+        public const uint FileTransferStateMachineType_Idle_StateNumber = 15816;
+
+        /// <summary>
+        /// The identifier for the FileTransferStateMachineType_ReadPrepare_StateNumber Variable.
+        /// </summary>
+        public const uint FileTransferStateMachineType_ReadPrepare_StateNumber = 15818;
+
+        /// <summary>
+        /// The identifier for the FileTransferStateMachineType_ReadTransfer_StateNumber Variable.
+        /// </summary>
+        public const uint FileTransferStateMachineType_ReadTransfer_StateNumber = 15820;
+
+        /// <summary>
+        /// The identifier for the FileTransferStateMachineType_ApplyWrite_StateNumber Variable.
+        /// </summary>
+        public const uint FileTransferStateMachineType_ApplyWrite_StateNumber = 15822;
+
+        /// <summary>
+        /// The identifier for the FileTransferStateMachineType_Error_StateNumber Variable.
+        /// </summary>
+        public const uint FileTransferStateMachineType_Error_StateNumber = 15824;
+
+        /// <summary>
         /// The identifier for the FileTransferStateMachineType_IdleToReadPrepare_TransitionNumber Variable.
         /// </summary>
         public const uint FileTransferStateMachineType_IdleToReadPrepare_TransitionNumber = 15826;
@@ -16405,6 +16430,21 @@ namespace Opc.Ua
         public const uint ShelvedStateMachineType_UnshelveTime = 9115;
 
         /// <summary>
+        /// The identifier for the ShelvedStateMachineType_Unshelved_StateNumber Variable.
+        /// </summary>
+        public const uint ShelvedStateMachineType_Unshelved_StateNumber = 6098;
+
+        /// <summary>
+        /// The identifier for the ShelvedStateMachineType_TimedShelved_StateNumber Variable.
+        /// </summary>
+        public const uint ShelvedStateMachineType_TimedShelved_StateNumber = 6100;
+
+        /// <summary>
+        /// The identifier for the ShelvedStateMachineType_OneShotShelved_StateNumber Variable.
+        /// </summary>
+        public const uint ShelvedStateMachineType_OneShotShelved_StateNumber = 6101;
+
+        /// <summary>
         /// The identifier for the ShelvedStateMachineType_UnshelvedToTimedShelved_TransitionNumber Variable.
         /// </summary>
         public const uint ShelvedStateMachineType_UnshelvedToTimedShelved_TransitionNumber = 11322;
@@ -16593,6 +16633,26 @@ namespace Opc.Ua
         /// The identifier for the ExclusiveLimitStateMachineType_LastTransition_Id Variable.
         /// </summary>
         public const uint ExclusiveLimitStateMachineType_LastTransition_Id = 9325;
+
+        /// <summary>
+        /// The identifier for the ExclusiveLimitStateMachineType_HighHigh_StateNumber Variable.
+        /// </summary>
+        public const uint ExclusiveLimitStateMachineType_HighHigh_StateNumber = 9330;
+
+        /// <summary>
+        /// The identifier for the ExclusiveLimitStateMachineType_High_StateNumber Variable.
+        /// </summary>
+        public const uint ExclusiveLimitStateMachineType_High_StateNumber = 9332;
+
+        /// <summary>
+        /// The identifier for the ExclusiveLimitStateMachineType_Low_StateNumber Variable.
+        /// </summary>
+        public const uint ExclusiveLimitStateMachineType_Low_StateNumber = 9334;
+
+        /// <summary>
+        /// The identifier for the ExclusiveLimitStateMachineType_LowLow_StateNumber Variable.
+        /// </summary>
+        public const uint ExclusiveLimitStateMachineType_LowLow_StateNumber = 9336;
 
         /// <summary>
         /// The identifier for the ExclusiveLimitStateMachineType_LowLowToLow_TransitionNumber Variable.
@@ -43815,6 +43875,31 @@ namespace Opc.Ua
         public static readonly NodeId FileTransferStateMachineType_LastTransition_Id = new NodeId(Opc.Ua.Variables.FileTransferStateMachineType_LastTransition_Id);
 
         /// <summary>
+        /// The identifier for the FileTransferStateMachineType_Idle_StateNumber Variable.
+        /// </summary>
+        public static readonly NodeId FileTransferStateMachineType_Idle_StateNumber = new NodeId(Opc.Ua.Variables.FileTransferStateMachineType_Idle_StateNumber);
+
+        /// <summary>
+        /// The identifier for the FileTransferStateMachineType_ReadPrepare_StateNumber Variable.
+        /// </summary>
+        public static readonly NodeId FileTransferStateMachineType_ReadPrepare_StateNumber = new NodeId(Opc.Ua.Variables.FileTransferStateMachineType_ReadPrepare_StateNumber);
+
+        /// <summary>
+        /// The identifier for the FileTransferStateMachineType_ReadTransfer_StateNumber Variable.
+        /// </summary>
+        public static readonly NodeId FileTransferStateMachineType_ReadTransfer_StateNumber = new NodeId(Opc.Ua.Variables.FileTransferStateMachineType_ReadTransfer_StateNumber);
+
+        /// <summary>
+        /// The identifier for the FileTransferStateMachineType_ApplyWrite_StateNumber Variable.
+        /// </summary>
+        public static readonly NodeId FileTransferStateMachineType_ApplyWrite_StateNumber = new NodeId(Opc.Ua.Variables.FileTransferStateMachineType_ApplyWrite_StateNumber);
+
+        /// <summary>
+        /// The identifier for the FileTransferStateMachineType_Error_StateNumber Variable.
+        /// </summary>
+        public static readonly NodeId FileTransferStateMachineType_Error_StateNumber = new NodeId(Opc.Ua.Variables.FileTransferStateMachineType_Error_StateNumber);
+
+        /// <summary>
         /// The identifier for the FileTransferStateMachineType_IdleToReadPrepare_TransitionNumber Variable.
         /// </summary>
         public static readonly NodeId FileTransferStateMachineType_IdleToReadPrepare_TransitionNumber = new NodeId(Opc.Ua.Variables.FileTransferStateMachineType_IdleToReadPrepare_TransitionNumber);
@@ -45390,6 +45475,21 @@ namespace Opc.Ua
         public static readonly NodeId ShelvedStateMachineType_UnshelveTime = new NodeId(Opc.Ua.Variables.ShelvedStateMachineType_UnshelveTime);
 
         /// <summary>
+        /// The identifier for the ShelvedStateMachineType_Unshelved_StateNumber Variable.
+        /// </summary>
+        public static readonly NodeId ShelvedStateMachineType_Unshelved_StateNumber = new NodeId(Opc.Ua.Variables.ShelvedStateMachineType_Unshelved_StateNumber);
+
+        /// <summary>
+        /// The identifier for the ShelvedStateMachineType_TimedShelved_StateNumber Variable.
+        /// </summary>
+        public static readonly NodeId ShelvedStateMachineType_TimedShelved_StateNumber = new NodeId(Opc.Ua.Variables.ShelvedStateMachineType_TimedShelved_StateNumber);
+
+        /// <summary>
+        /// The identifier for the ShelvedStateMachineType_OneShotShelved_StateNumber Variable.
+        /// </summary>
+        public static readonly NodeId ShelvedStateMachineType_OneShotShelved_StateNumber = new NodeId(Opc.Ua.Variables.ShelvedStateMachineType_OneShotShelved_StateNumber);
+
+        /// <summary>
         /// The identifier for the ShelvedStateMachineType_UnshelvedToTimedShelved_TransitionNumber Variable.
         /// </summary>
         public static readonly NodeId ShelvedStateMachineType_UnshelvedToTimedShelved_TransitionNumber = new NodeId(Opc.Ua.Variables.ShelvedStateMachineType_UnshelvedToTimedShelved_TransitionNumber);
@@ -45578,6 +45678,26 @@ namespace Opc.Ua
         /// The identifier for the ExclusiveLimitStateMachineType_LastTransition_Id Variable.
         /// </summary>
         public static readonly NodeId ExclusiveLimitStateMachineType_LastTransition_Id = new NodeId(Opc.Ua.Variables.ExclusiveLimitStateMachineType_LastTransition_Id);
+
+        /// <summary>
+        /// The identifier for the ExclusiveLimitStateMachineType_HighHigh_StateNumber Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveLimitStateMachineType_HighHigh_StateNumber = new NodeId(Opc.Ua.Variables.ExclusiveLimitStateMachineType_HighHigh_StateNumber);
+
+        /// <summary>
+        /// The identifier for the ExclusiveLimitStateMachineType_High_StateNumber Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveLimitStateMachineType_High_StateNumber = new NodeId(Opc.Ua.Variables.ExclusiveLimitStateMachineType_High_StateNumber);
+
+        /// <summary>
+        /// The identifier for the ExclusiveLimitStateMachineType_Low_StateNumber Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveLimitStateMachineType_Low_StateNumber = new NodeId(Opc.Ua.Variables.ExclusiveLimitStateMachineType_Low_StateNumber);
+
+        /// <summary>
+        /// The identifier for the ExclusiveLimitStateMachineType_LowLow_StateNumber Variable.
+        /// </summary>
+        public static readonly NodeId ExclusiveLimitStateMachineType_LowLow_StateNumber = new NodeId(Opc.Ua.Variables.ExclusiveLimitStateMachineType_LowLow_StateNumber);
 
         /// <summary>
         /// The identifier for the ExclusiveLimitStateMachineType_LowLowToLow_TransitionNumber Variable.
@@ -64861,42 +64981,42 @@ namespace Opc.Ua
         /// <summary>
         /// The BrowseName for the WellKnownRole_Anonymous component.
         /// </summary>
-        public const string WellKnownRole_Anonymous = "WellKnownRole_Anonymous";
+        public const string WellKnownRole_Anonymous = "Anonymous";
 
         /// <summary>
         /// The BrowseName for the WellKnownRole_AuthenticatedUser component.
         /// </summary>
-        public const string WellKnownRole_AuthenticatedUser = "WellKnownRole_AuthenticatedUser";
+        public const string WellKnownRole_AuthenticatedUser = "AuthenticatedUser";
 
         /// <summary>
         /// The BrowseName for the WellKnownRole_ConfigureAdmin component.
         /// </summary>
-        public const string WellKnownRole_ConfigureAdmin = "WellKnownRole_ConfigureAdmin";
+        public const string WellKnownRole_ConfigureAdmin = "ConfigureAdmin";
 
         /// <summary>
         /// The BrowseName for the WellKnownRole_Engineer component.
         /// </summary>
-        public const string WellKnownRole_Engineer = "WellKnownRole_Engineer";
+        public const string WellKnownRole_Engineer = "Engineer";
 
         /// <summary>
         /// The BrowseName for the WellKnownRole_Observer component.
         /// </summary>
-        public const string WellKnownRole_Observer = "WellKnownRole_Observer";
+        public const string WellKnownRole_Observer = "Observer";
 
         /// <summary>
         /// The BrowseName for the WellKnownRole_Operator component.
         /// </summary>
-        public const string WellKnownRole_Operator = "WellKnownRole_Operator";
+        public const string WellKnownRole_Operator = "Operator";
 
         /// <summary>
         /// The BrowseName for the WellKnownRole_SecurityAdmin component.
         /// </summary>
-        public const string WellKnownRole_SecurityAdmin = "WellKnownRole_SecurityAdmin";
+        public const string WellKnownRole_SecurityAdmin = "SecurityAdmin";
 
         /// <summary>
         /// The BrowseName for the WellKnownRole_Supervisor component.
         /// </summary>
-        public const string WellKnownRole_Supervisor = "WellKnownRole_Supervisor";
+        public const string WellKnownRole_Supervisor = "Supervisor";
 
         /// <summary>
         /// The BrowseName for the Writable component.
