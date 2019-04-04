@@ -26,6 +26,7 @@
  * The complete license agreement can be found here:
  * http://opcfoundation.org/License/MIT/1.00/
  * ======================================================================*/
+
 using System;
 using System.Collections.Generic;
 using System.Text;
