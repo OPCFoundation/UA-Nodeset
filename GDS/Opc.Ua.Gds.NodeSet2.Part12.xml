@@ -73,7 +73,6 @@
     <Alias Alias="HasDescription">i=39</Alias>
   </Aliases>
   <UAObject NodeId="ns=1;i=721" BrowseName="1:http://opcfoundation.org/UA/GDS/" SymbolicName="OPCUAGDSNamespaceMetadata">
-    <DisplayName>http://opcfoundation.org/UA/GDS/</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=722</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=723</Reference>
@@ -90,7 +89,6 @@
     </References>
   </UAObject>
   <UAVariable NodeId="ns=1;i=722" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=721" DataType="String">
-    <DisplayName>NamespaceUri</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=721</Reference>
@@ -100,7 +98,6 @@
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=723" BrowseName="NamespaceVersion" ParentNodeId="ns=1;i=721" DataType="String">
-    <DisplayName>NamespaceVersion</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=721</Reference>
@@ -110,7 +107,6 @@
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=724" BrowseName="NamespacePublicationDate" ParentNodeId="ns=1;i=721" DataType="DateTime">
-    <DisplayName>NamespacePublicationDate</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=721</Reference>
@@ -120,7 +116,6 @@
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=725" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=721" DataType="Boolean">
-    <DisplayName>IsNamespaceSubset</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=721</Reference>
@@ -130,7 +125,6 @@
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=726" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=721" DataType="i=256" ValueRank="1">
-    <DisplayName>StaticNodeIdTypes</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=721</Reference>
@@ -142,7 +136,6 @@
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=727" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=1;i=721" DataType="i=291" ValueRank="1">
-    <DisplayName>StaticNumericNodeIdRange</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=721</Reference>
@@ -154,7 +147,6 @@
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=728" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=1;i=721" DataType="String">
-    <DisplayName>StaticStringNodeIdPattern</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=721</Reference>
@@ -165,21 +157,18 @@
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=862" BrowseName="DefaultRolePermissions" ParentNodeId="ns=1;i=721" DataType="i=96" ValueRank="1">
-    <DisplayName>DefaultRolePermissions</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=721</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=863" BrowseName="DefaultUserRolePermissions" ParentNodeId="ns=1;i=721" DataType="i=96" ValueRank="1">
-    <DisplayName>DefaultUserRolePermissions</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=721</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=864" BrowseName="DefaultAccessRestrictions" ParentNodeId="ns=1;i=721" DataType="i=95">
-    <DisplayName>DefaultAccessRestrictions</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=721</Reference>
