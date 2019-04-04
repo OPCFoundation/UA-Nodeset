@@ -310,9 +310,9 @@
       <xs:element name="DisplayName" type="LocalizedText" minOccurs="0" maxOccurs="unbounded"></xs:element>
       <xs:element name="Description" type="LocalizedText" minOccurs="0" maxOccurs="unbounded"></xs:element>
       <xs:element name="Category" type="xs:string" minOccurs="0" maxOccurs="unbounded"></xs:element>
+      <xs:element name="Documentation" type="xs:string" minOccurs="0"></xs:element>
       <xs:element name="References" type="ListOfReferences" minOccurs="0"></xs:element>
       <xs:element name="RolePermissions" type="ListOfRolePermissions" minOccurs="0"></xs:element>
-      <xs:element name="Documentation" type="xs:string" minOccurs="0"></xs:element>
       <xs:element name="Extensions" type="ListOfExtensions" minOccurs="0"></xs:element>
     </xs:sequence>
     <xs:attribute name="NodeId" type="NodeId" use="required"></xs:attribute>
@@ -463,7 +463,7 @@
     <xs:sequence>
       <xs:element name="Field" type="DataTypeField" minOccurs="0" maxOccurs="unbounded"></xs:element>
     </xs:sequence>
-    <xs:attribute name="Name" type="QualifiedName" use="required"></xs:attribute>
+    <xs:attribute name="Name" type="QualifiedName" use="optional"></xs:attribute>
     <xs:attribute name="SymbolicName" type="SymbolicName" use="optional" default=""></xs:attribute>
     <xs:attribute name="IsUnion" type="xs:boolean" use="optional" default="false"></xs:attribute>
     <xs:attribute name="IsOptionSet" type="xs:boolean" use="optional" default="false"></xs:attribute>

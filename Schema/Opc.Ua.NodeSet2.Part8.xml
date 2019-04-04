@@ -71,7 +71,6 @@
   </Aliases>
   <UAVariableType NodeId="i=2365" BrowseName="DataItemType" ValueRank="-2">
     <DisplayName>DataItemType</DisplayName>
-    <Description>A variable that contains live automation data.</Description>
     <References>
       <Reference ReferenceType="HasProperty">i=2366</Reference>
       <Reference ReferenceType="HasProperty">i=2367</Reference>
@@ -80,7 +79,6 @@
   </UAVariableType>
   <UAVariable NodeId="i=2366" BrowseName="Definition" ParentNodeId="i=2365" DataType="String">
     <DisplayName>Definition</DisplayName>
-    <Description>A vendor-specific, human readable string that specifies how the value of this DataItem is calculated.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -89,7 +87,6 @@
   </UAVariable>
   <UAVariable NodeId="i=2367" BrowseName="ValuePrecision" ParentNodeId="i=2365" DataType="Double">
     <DisplayName>ValuePrecision</DisplayName>
-    <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -401,7 +398,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="Range">
+    <Definition>
       <Field Name="Low" DataType="i=11" />
       <Field Name="High" DataType="i=11" />
     </Definition>
@@ -411,7 +408,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="EUInformation">
+    <Definition>
       <Field Name="NamespaceUri" DataType="i=12" />
       <Field Name="UnitId" DataType="i=6" />
       <Field Name="DisplayName" DataType="i=21" />
@@ -424,7 +421,7 @@
       <Reference ReferenceType="HasProperty">i=12078</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="AxisScaleEnumeration">
+    <Definition>
       <Field Name="Linear" Value="0" />
       <Field Name="Log" Value="1" />
       <Field Name="Ln" Value="2" />
@@ -462,7 +459,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ComplexNumberType">
+    <Definition>
       <Field Name="Real" DataType="i=10" />
       <Field Name="Imaginary" DataType="i=10" />
     </Definition>
@@ -472,7 +469,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DoubleComplexNumberType">
+    <Definition>
       <Field Name="Real" DataType="i=11" />
       <Field Name="Imaginary" DataType="i=11" />
     </Definition>
@@ -482,7 +479,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="AxisInformation">
+    <Definition>
       <Field Name="EngineeringUnits" DataType="i=887" />
       <Field Name="EURange" DataType="i=884" />
       <Field Name="Title" DataType="i=21" />
@@ -495,7 +492,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="XVType">
+    <Definition>
       <Field Name="X" DataType="i=11" />
       <Field Name="Value" DataType="i=10" />
     </Definition>

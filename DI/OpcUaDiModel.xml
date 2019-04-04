@@ -535,7 +535,7 @@
 
   <ObjectType SymbolicName="DI:TransferServicesType" BaseType="OpcUa:BaseObjectType" IsAbstract="false">
     <Children>
-      <Method SymbolicName="DI:TransferToDevice" TypeDefinition="DI:TransferFromDeviceMethodType" />
+      <Method SymbolicName="DI:TransferToDevice" TypeDefinition="DI:TransferToDeviceMethodType" />
       <Method SymbolicName="DI:TransferFromDevice" TypeDefinition="DI:TransferFromDeviceMethodType" />
       <Method SymbolicName="DI:FetchTransferResultData" TypeDefinition="DI:FetchTransferResultDataMethodType" />
     </Children>

@@ -328,7 +328,7 @@
       <Reference ReferenceType="HasProperty">i=12553</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="TrustListMasks">
+    <Definition>
       <Field Name="None" Value="0" />
       <Field Name="TrustedCertificates" Value="1" />
       <Field Name="TrustedCrls" Value="2" />
@@ -450,7 +450,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="TrustListDataType">
+    <Definition>
       <Field Name="SpecifiedLists" DataType="i=7" />
       <Field Name="TrustedCertificates" DataType="i=15" ValueRank="1" />
       <Field Name="TrustedCrls" DataType="i=15" ValueRank="1" />
@@ -488,7 +488,6 @@
   </UAObject>
   <UAVariable NodeId="i=13600" BrowseName="Size" ParentNodeId="i=13599" DataType="UInt64">
     <DisplayName>Size</DisplayName>
-    <Description>The size of the file in bytes.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -497,7 +496,6 @@
   </UAVariable>
   <UAVariable NodeId="i=13601" BrowseName="Writable" ParentNodeId="i=13599" DataType="Boolean">
     <DisplayName>Writable</DisplayName>
-    <Description>Whether the file is writable.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -506,7 +504,6 @@
   </UAVariable>
   <UAVariable NodeId="i=13602" BrowseName="UserWritable" ParentNodeId="i=13599" DataType="Boolean">
     <DisplayName>UserWritable</DisplayName>
-    <Description>Whether the file is writable by the current user.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -515,7 +512,6 @@
   </UAVariable>
   <UAVariable NodeId="i=13603" BrowseName="OpenCount" ParentNodeId="i=13599" DataType="UInt16">
     <DisplayName>OpenCount</DisplayName>
-    <Description>The current number of open file handles.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -996,7 +992,6 @@
   </UAObject>
   <UAVariable NodeId="i=13816" BrowseName="Size" ParentNodeId="i=13815" DataType="UInt64">
     <DisplayName>Size</DisplayName>
-    <Description>The size of the file in bytes.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1005,7 +1000,6 @@
   </UAVariable>
   <UAVariable NodeId="i=13817" BrowseName="Writable" ParentNodeId="i=13815" DataType="Boolean">
     <DisplayName>Writable</DisplayName>
-    <Description>Whether the file is writable.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1014,7 +1008,6 @@
   </UAVariable>
   <UAVariable NodeId="i=13818" BrowseName="UserWritable" ParentNodeId="i=13815" DataType="Boolean">
     <DisplayName>UserWritable</DisplayName>
-    <Description>Whether the file is writable by the current user.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1023,7 +1016,6 @@
   </UAVariable>
   <UAVariable NodeId="i=13819" BrowseName="OpenCount" ParentNodeId="i=13815" DataType="UInt16">
     <DisplayName>OpenCount</DisplayName>
-    <Description>The current number of open file handles.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1494,7 +1486,6 @@
   </UAObject>
   <UAVariable NodeId="i=13850" BrowseName="Size" ParentNodeId="i=13849" DataType="UInt64">
     <DisplayName>Size</DisplayName>
-    <Description>The size of the file in bytes.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1503,7 +1494,6 @@
   </UAVariable>
   <UAVariable NodeId="i=13851" BrowseName="Writable" ParentNodeId="i=13849" DataType="Boolean">
     <DisplayName>Writable</DisplayName>
-    <Description>Whether the file is writable.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1512,7 +1502,6 @@
   </UAVariable>
   <UAVariable NodeId="i=13852" BrowseName="UserWritable" ParentNodeId="i=13849" DataType="Boolean">
     <DisplayName>UserWritable</DisplayName>
-    <Description>Whether the file is writable by the current user.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1521,7 +1510,6 @@
   </UAVariable>
   <UAVariable NodeId="i=13853" BrowseName="OpenCount" ParentNodeId="i=13849" DataType="UInt16">
     <DisplayName>OpenCount</DisplayName>
-    <Description>The current number of open file handles.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1992,7 +1980,6 @@
   </UAObject>
   <UAVariable NodeId="i=13884" BrowseName="Size" ParentNodeId="i=13883" DataType="UInt64">
     <DisplayName>Size</DisplayName>
-    <Description>The size of the file in bytes.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2001,7 +1988,6 @@
   </UAVariable>
   <UAVariable NodeId="i=13885" BrowseName="Writable" ParentNodeId="i=13883" DataType="Boolean">
     <DisplayName>Writable</DisplayName>
-    <Description>Whether the file is writable.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2010,7 +1996,6 @@
   </UAVariable>
   <UAVariable NodeId="i=13886" BrowseName="UserWritable" ParentNodeId="i=13883" DataType="Boolean">
     <DisplayName>UserWritable</DisplayName>
-    <Description>Whether the file is writable by the current user.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2019,7 +2004,6 @@
   </UAVariable>
   <UAVariable NodeId="i=13887" BrowseName="OpenCount" ParentNodeId="i=13883" DataType="UInt16">
     <DisplayName>OpenCount</DisplayName>
-    <Description>The current number of open file handles.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2490,7 +2474,6 @@
   </UAObject>
   <UAVariable NodeId="i=13918" BrowseName="Size" ParentNodeId="i=13917" DataType="UInt64">
     <DisplayName>Size</DisplayName>
-    <Description>The size of the file in bytes.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2499,7 +2482,6 @@
   </UAVariable>
   <UAVariable NodeId="i=13919" BrowseName="Writable" ParentNodeId="i=13917" DataType="Boolean">
     <DisplayName>Writable</DisplayName>
-    <Description>Whether the file is writable.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2508,7 +2490,6 @@
   </UAVariable>
   <UAVariable NodeId="i=13920" BrowseName="UserWritable" ParentNodeId="i=13917" DataType="Boolean">
     <DisplayName>UserWritable</DisplayName>
-    <Description>Whether the file is writable by the current user.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2517,7 +2498,6 @@
   </UAVariable>
   <UAVariable NodeId="i=13921" BrowseName="OpenCount" ParentNodeId="i=13917" DataType="UInt16">
     <DisplayName>OpenCount</DisplayName>
-    <Description>The current number of open file handles.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3054,7 +3034,6 @@
   </UAObject>
   <UAVariable NodeId="i=13953" BrowseName="Size" ParentNodeId="i=13952" DataType="UInt64">
     <DisplayName>Size</DisplayName>
-    <Description>The size of the file in bytes.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3063,7 +3042,6 @@
   </UAVariable>
   <UAVariable NodeId="i=13954" BrowseName="Writable" ParentNodeId="i=13952" DataType="Boolean">
     <DisplayName>Writable</DisplayName>
-    <Description>Whether the file is writable.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3072,7 +3050,6 @@
   </UAVariable>
   <UAVariable NodeId="i=13955" BrowseName="UserWritable" ParentNodeId="i=13952" DataType="Boolean">
     <DisplayName>UserWritable</DisplayName>
-    <Description>Whether the file is writable by the current user.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3081,7 +3058,6 @@
   </UAVariable>
   <UAVariable NodeId="i=13956" BrowseName="OpenCount" ParentNodeId="i=13952" DataType="UInt16">
     <DisplayName>OpenCount</DisplayName>
-    <Description>The current number of open file handles.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>

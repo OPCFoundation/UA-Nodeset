@@ -93,7 +93,6 @@
   </UAObject>
   <UAVariable NodeId="ns=1;i=15002" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=15001" DataType="String">
     <DisplayName>NamespaceUri</DisplayName>
-    <Description>The URI of the namespace.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15001</Reference>
@@ -104,7 +103,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=15003" BrowseName="NamespaceVersion" ParentNodeId="ns=1;i=15001" DataType="String">
     <DisplayName>NamespaceVersion</DisplayName>
-    <Description>The human readable string representing version of the namespace.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15001</Reference>
@@ -115,7 +113,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=15004" BrowseName="NamespacePublicationDate" ParentNodeId="ns=1;i=15001" DataType="DateTime">
     <DisplayName>NamespacePublicationDate</DisplayName>
-    <Description>The publication date for the namespace.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15001</Reference>
@@ -126,7 +123,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=15005" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=15001" DataType="Boolean">
     <DisplayName>IsNamespaceSubset</DisplayName>
-    <Description>If TRUE then the server only supports a subset of the namespace.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15001</Reference>
@@ -137,7 +133,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=15006" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=15001" DataType="i=256" ValueRank="1">
     <DisplayName>StaticNodeIdTypes</DisplayName>
-    <Description>A list of IdTypes for nodes which are the same in every server that exposes them.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15001</Reference>
@@ -150,7 +145,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=15007" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=1;i=15001" DataType="i=291" ValueRank="1">
     <DisplayName>StaticNumericNodeIdRange</DisplayName>
-    <Description>A list of ranges for numeric node ids which are the same in every server that exposes them.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15001</Reference>
@@ -163,7 +157,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=15008" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=1;i=15001" DataType="String">
     <DisplayName>StaticStringNodeIdPattern</DisplayName>
-    <Description>A regular expression which matches string node ids are the same in every server that exposes them.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15001</Reference>
@@ -1288,7 +1281,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6450</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="DeviceHealthEnumeration">
+    <Definition>
       <Field Name="NORMAL" Value="0">
         <Description>This device functions normally.</Description>
       </Field>
@@ -1658,7 +1651,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=6522</Reference>
     </References>
-    <Definition Name="TransferResultErrorDataType">
+    <Definition>
       <Field Name="Status" DataType="i=6" />
       <Field Name="Diagnostics" DataType="i=25" />
     </Definition>
@@ -1668,7 +1661,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=6522</Reference>
     </References>
-    <Definition Name="TransferResultDataDataType">
+    <Definition>
       <Field Name="SequenceNumber" DataType="i=6" />
       <Field Name="EndOfResults" DataType="i=1" />
       <Field Name="ParameterDefs" DataType="ns=1;i=6525" ValueRank="1" />
@@ -1679,7 +1672,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ParameterResultDataType">
+    <Definition>
       <Field Name="NodePath" DataType="i=20" ValueRank="1" />
       <Field Name="StatusCode" DataType="i=19" />
       <Field Name="Diagnostics" DataType="i=25" />
@@ -2226,7 +2219,6 @@ YzpTdHJ1Y3R1cmVkVHlwZT4NCg0KPC9vcGM6VHlwZURpY3Rpb25hcnk+</ByteString>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6437" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=6435" DataType="String">
     <DisplayName>NamespaceUri</DisplayName>
-    <Description>A URI that uniquely identifies the dictionary.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6435</Reference>
@@ -2237,7 +2229,6 @@ YzpTdHJ1Y3R1cmVkVHlwZT4NCg0KPC9vcGM6VHlwZURpY3Rpb25hcnk+</ByteString>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=8005" BrowseName="Deprecated" ParentNodeId="ns=1;i=6435" DataType="Boolean">
     <DisplayName>Deprecated</DisplayName>
-    <Description>Indicates that all of the definitions for the dictionary are available through a DataTypeDefinition Attribute.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6435</Reference>
@@ -2415,7 +2406,6 @@ ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</ByteString>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6425" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=6423" DataType="String">
     <DisplayName>NamespaceUri</DisplayName>
-    <Description>A URI that uniquely identifies the dictionary.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6423</Reference>
@@ -2426,7 +2416,6 @@ ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</ByteString>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=8007" BrowseName="Deprecated" ParentNodeId="ns=1;i=6423" DataType="Boolean">
     <DisplayName>Deprecated</DisplayName>
-    <Description>Indicates that all of the definitions for the dictionary are available through a DataTypeDefinition Attribute.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6423</Reference>

@@ -93,7 +93,6 @@
   </UAObject>
   <UAVariable NodeId="ns=1;i=722" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=721" DataType="String">
     <DisplayName>NamespaceUri</DisplayName>
-    <Description>The URI of the namespace.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=721</Reference>
@@ -104,7 +103,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=723" BrowseName="NamespaceVersion" ParentNodeId="ns=1;i=721" DataType="String">
     <DisplayName>NamespaceVersion</DisplayName>
-    <Description>The human readable string representing version of the namespace.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=721</Reference>
@@ -115,7 +113,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=724" BrowseName="NamespacePublicationDate" ParentNodeId="ns=1;i=721" DataType="DateTime">
     <DisplayName>NamespacePublicationDate</DisplayName>
-    <Description>The publication date for the namespace.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=721</Reference>
@@ -126,7 +123,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=725" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=721" DataType="Boolean">
     <DisplayName>IsNamespaceSubset</DisplayName>
-    <Description>If TRUE then the server only supports a subset of the namespace.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=721</Reference>
@@ -137,7 +133,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=726" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=721" DataType="i=256" ValueRank="1">
     <DisplayName>StaticNodeIdTypes</DisplayName>
-    <Description>A list of IdTypes for nodes which are the same in every server that exposes them.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=721</Reference>
@@ -150,7 +145,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=727" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=1;i=721" DataType="i=291" ValueRank="1">
     <DisplayName>StaticNumericNodeIdRange</DisplayName>
-    <Description>A list of ranges for numeric node ids which are the same in every server that exposes them.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=721</Reference>
@@ -163,7 +157,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=728" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=1;i=721" DataType="String">
     <DisplayName>StaticStringNodeIdPattern</DisplayName>
-    <Description>A regular expression which matches string node ids are the same in every server that exposes them.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=721</Reference>
@@ -199,7 +192,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ApplicationRecordDataType">
+    <Definition>
       <Field Name="ApplicationId" DataType="i=17" />
       <Field Name="ApplicationUri" DataType="i=12" />
       <Field Name="ApplicationType" DataType="i=307" />
@@ -913,7 +906,6 @@
   </UAObject>
   <UAVariable NodeId="ns=1;i=514" BrowseName="Size" ParentNodeId="ns=1;i=513" DataType="UInt64">
     <DisplayName>Size</DisplayName>
-    <Description>The size of the file in bytes.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -922,7 +914,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=515" BrowseName="Writable" ParentNodeId="ns=1;i=513" DataType="Boolean">
     <DisplayName>Writable</DisplayName>
-    <Description>Whether the file is writable.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -931,7 +922,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=516" BrowseName="UserWritable" ParentNodeId="ns=1;i=513" DataType="Boolean">
     <DisplayName>UserWritable</DisplayName>
-    <Description>Whether the file is writable by the current user.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -940,7 +930,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=517" BrowseName="OpenCount" ParentNodeId="ns=1;i=513" DataType="UInt16">
     <DisplayName>OpenCount</DisplayName>
-    <Description>The current number of open file handles.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3326,7 +3315,6 @@
   </UAObject>
   <UAVariable NodeId="ns=1;i=617" BrowseName="Size" ParentNodeId="ns=1;i=616" DataType="UInt64">
     <DisplayName>Size</DisplayName>
-    <Description>The size of the file in bytes.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=616</Reference>
@@ -3334,7 +3322,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=618" BrowseName="Writable" ParentNodeId="ns=1;i=616" DataType="Boolean">
     <DisplayName>Writable</DisplayName>
-    <Description>Whether the file is writable.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=616</Reference>
@@ -3342,7 +3329,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=619" BrowseName="UserWritable" ParentNodeId="ns=1;i=616" DataType="Boolean">
     <DisplayName>UserWritable</DisplayName>
-    <Description>Whether the file is writable by the current user.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=616</Reference>
@@ -3350,7 +3336,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=620" BrowseName="OpenCount" ParentNodeId="ns=1;i=616" DataType="UInt16">
     <DisplayName>OpenCount</DisplayName>
-    <Description>The current number of open file handles.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=616</Reference>
@@ -3963,7 +3948,6 @@
   </UAObject>
   <UAVariable NodeId="ns=1;i=651" BrowseName="Size" ParentNodeId="ns=1;i=650" DataType="UInt64">
     <DisplayName>Size</DisplayName>
-    <Description>The size of the file in bytes.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=650</Reference>
@@ -3971,7 +3955,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=652" BrowseName="Writable" ParentNodeId="ns=1;i=650" DataType="Boolean">
     <DisplayName>Writable</DisplayName>
-    <Description>Whether the file is writable.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=650</Reference>
@@ -3979,7 +3962,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=653" BrowseName="UserWritable" ParentNodeId="ns=1;i=650" DataType="Boolean">
     <DisplayName>UserWritable</DisplayName>
-    <Description>Whether the file is writable by the current user.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=650</Reference>
@@ -3987,7 +3969,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=654" BrowseName="OpenCount" ParentNodeId="ns=1;i=650" DataType="UInt16">
     <DisplayName>OpenCount</DisplayName>
-    <Description>The current number of open file handles.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=650</Reference>
@@ -4600,7 +4581,6 @@
   </UAObject>
   <UAVariable NodeId="ns=1;i=685" BrowseName="Size" ParentNodeId="ns=1;i=684" DataType="UInt64">
     <DisplayName>Size</DisplayName>
-    <Description>The size of the file in bytes.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=684</Reference>
@@ -4608,7 +4588,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=686" BrowseName="Writable" ParentNodeId="ns=1;i=684" DataType="Boolean">
     <DisplayName>Writable</DisplayName>
-    <Description>Whether the file is writable.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=684</Reference>
@@ -4616,7 +4595,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=687" BrowseName="UserWritable" ParentNodeId="ns=1;i=684" DataType="Boolean">
     <DisplayName>UserWritable</DisplayName>
-    <Description>Whether the file is writable by the current user.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=684</Reference>
@@ -4624,7 +4602,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=688" BrowseName="OpenCount" ParentNodeId="ns=1;i=684" DataType="UInt16">
     <DisplayName>OpenCount</DisplayName>
-    <Description>The current number of open file handles.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=684</Reference>
@@ -5861,7 +5838,6 @@ IC8+DQogIDwvb3BjOlN0cnVjdHVyZWRUeXBlPg0KDQo8L29wYzpUeXBlRGljdGlvbmFyeT4=</ByteSt
   </UAVariable>
   <UAVariable NodeId="ns=1;i=137" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=135" DataType="String">
     <DisplayName>NamespaceUri</DisplayName>
-    <Description>A URI that uniquely identifies the dictionary.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=135</Reference>
@@ -5872,7 +5848,6 @@ IC8+DQogIDwvb3BjOlN0cnVjdHVyZWRUeXBlPg0KDQo8L29wYzpUeXBlRGljdGlvbmFyeT4=</ByteSt
   </UAVariable>
   <UAVariable NodeId="ns=1;i=8002" BrowseName="Deprecated" ParentNodeId="ns=1;i=135" DataType="Boolean">
     <DisplayName>Deprecated</DisplayName>
-    <Description>Indicates that all of the definitions for the dictionary are available through a DataTypeDefinition Attribute.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=135</Reference>
@@ -5942,7 +5917,6 @@ ZW50Pg0KDQo8L3hzOnNjaGVtYT4=</ByteString>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=130" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=128" DataType="String">
     <DisplayName>NamespaceUri</DisplayName>
-    <Description>A URI that uniquely identifies the dictionary.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=128</Reference>
@@ -5953,7 +5927,6 @@ ZW50Pg0KDQo8L3hzOnNjaGVtYT4=</ByteString>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=8004" BrowseName="Deprecated" ParentNodeId="ns=1;i=128" DataType="Boolean">
     <DisplayName>Deprecated</DisplayName>
-    <Description>Indicates that all of the definitions for the dictionary are available through a DataTypeDefinition Attribute.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=128</Reference>
