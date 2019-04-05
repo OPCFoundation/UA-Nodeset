@@ -850,6 +850,13 @@
     <opc:EnumeratedValue Name="HistoryWrite" Value="8" />
   </opc:EnumeratedType>
 
+  <opc:EnumeratedType Name="AccessRestrictionType" LengthInBits="32" IsOptionSet="true">
+    <opc:EnumeratedValue Name="None" Value="0" />
+    <opc:EnumeratedValue Name="SigningRequired" Value="1" />
+    <opc:EnumeratedValue Name="EncryptionRequired" Value="2" />
+    <opc:EnumeratedValue Name="SessionRequired" Value="4" />
+  </opc:EnumeratedType>
+
   <opc:StructuredType Name="RolePermissionType" BaseType="ua:ExtensionObject">
     <opc:Field Name="RoleId" TypeName="ua:NodeId" />
     <opc:Field Name="Permissions" TypeName="tns:PermissionType" />
