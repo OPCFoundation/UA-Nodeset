@@ -356,7 +356,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="Range">
+    <Definition>
       <Field Name="Low" DataType="i=11" />
       <Field Name="High" DataType="i=11" />
     </Definition>
@@ -365,7 +365,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="EUInformation">
+    <Definition>
       <Field Name="NamespaceUri" DataType="i=12" />
       <Field Name="UnitId" DataType="i=6" />
       <Field Name="DisplayName" DataType="i=21" />
@@ -377,7 +377,7 @@
       <Reference ReferenceType="HasProperty">i=12078</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="AxisScaleEnumeration">
+    <Definition>
       <Field Name="Linear" Value="0" />
       <Field Name="Log" Value="1" />
       <Field Name="Ln" Value="2" />
@@ -413,7 +413,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ComplexNumberType">
+    <Definition>
       <Field Name="Real" DataType="i=10" />
       <Field Name="Imaginary" DataType="i=10" />
     </Definition>
@@ -422,7 +422,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DoubleComplexNumberType">
+    <Definition>
       <Field Name="Real" DataType="i=11" />
       <Field Name="Imaginary" DataType="i=11" />
     </Definition>
@@ -431,7 +431,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="AxisInformation">
+    <Definition>
       <Field Name="EngineeringUnits" DataType="i=887" />
       <Field Name="EURange" DataType="i=884" />
       <Field Name="Title" DataType="i=21" />
@@ -443,7 +443,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="XVType">
+    <Definition>
       <Field Name="X" DataType="i=11" />
       <Field Name="Value" DataType="i=10" />
     </Definition>

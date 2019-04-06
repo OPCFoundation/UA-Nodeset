@@ -321,7 +321,7 @@
       <Reference ReferenceType="HasProperty">i=12169</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="NamingRuleType">
+    <Definition>
       <Field Name="Mandatory" Value="1">
         <Description>The BrowseName must appear in all instances of the type.</Description>
       </Field>
@@ -535,7 +535,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DecimalDataType">
+    <Definition>
       <Field Name="Scale" DataType="i=4" />
       <Field Name="Value" DataType="i=15" />
     </Definition>
@@ -545,7 +545,7 @@
       <Reference ReferenceType="HasProperty">i=7591</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="IdType">
+    <Definition>
       <Field Name="Numeric" Value="0" />
       <Field Name="String" Value="1" />
       <Field Name="Guid" Value="2" />
@@ -588,7 +588,7 @@
       <Reference ReferenceType="HasProperty">i=11878</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="NodeClass">
+    <Definition>
       <Field Name="Unspecified" Value="0" />
       <Field Name="Object" Value="1" />
       <Field Name="Variable" Value="2" />
@@ -760,7 +760,7 @@
       <Reference ReferenceType="HasProperty">i=15030</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
-    <Definition Name="PermissionType" IsOptionSet="true">
+    <Definition IsOptionSet="true">
       <Field Name="Browse" Value="0" />
       <Field Name="ReadRolePermissions" Value="1" />
       <Field Name="WriteAttribute" Value="2" />
@@ -881,7 +881,7 @@
       <Reference ReferenceType="HasProperty">i=15032</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=3</Reference>
     </References>
-    <Definition Name="AccessLevelType" IsOptionSet="true">
+    <Definition IsOptionSet="true">
       <Field Name="CurrentRead" Value="0" />
       <Field Name="CurrentWrite" Value="1" />
       <Field Name="HistoryRead" Value="2" />
@@ -942,7 +942,7 @@
       <Reference ReferenceType="HasProperty">i=15407</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
-    <Definition Name="AccessLevelExType" IsOptionSet="true">
+    <Definition IsOptionSet="true">
       <Field Name="CurrentRead" Value="0" />
       <Field Name="CurrentWrite" Value="1" />
       <Field Name="HistoryRead" Value="2" />
@@ -1026,7 +1026,7 @@
       <Reference ReferenceType="HasProperty">i=15034</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=3</Reference>
     </References>
-    <Definition Name="EventNotifierType" IsOptionSet="true">
+    <Definition IsOptionSet="true">
       <Field Name="SubscribeToEvents" Value="0" />
       <Field Name="HistoryRead" Value="2" />
       <Field Name="HistoryWrite" Value="3" />
@@ -1068,7 +1068,7 @@
       <Reference ReferenceType="HasProperty">i=15035</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
-    <Definition Name="AccessRestrictionType" IsOptionSet="true">
+    <Definition IsOptionSet="true">
       <Field Name="SigningRequired" Value="0" />
       <Field Name="EncryptionRequired" Value="1" />
       <Field Name="SessionRequired" Value="2" />
@@ -1104,7 +1104,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="RolePermissionType">
+    <Definition>
       <Field Name="RoleId" DataType="i=17" />
       <Field Name="Permissions" DataType="i=94" />
     </Definition>
@@ -1119,7 +1119,7 @@
       <Reference ReferenceType="HasProperty">i=14528</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="StructureType">
+    <Definition>
       <Field Name="Structure" Value="0" />
       <Field Name="StructureWithOptionalFields" Value="1" />
       <Field Name="Union" Value="2" />
@@ -1155,7 +1155,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="StructureField">
+    <Definition>
       <Field Name="Name" DataType="i=12" />
       <Field Name="Description" DataType="i=21" />
       <Field Name="DataType" DataType="i=17" />
@@ -1169,7 +1169,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=97</Reference>
     </References>
-    <Definition Name="StructureDefinition">
+    <Definition>
       <Field Name="DefaultEncodingId" DataType="i=17" />
       <Field Name="BaseDataType" DataType="i=17" />
       <Field Name="StructureType" DataType="i=98" />
@@ -1180,7 +1180,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=97</Reference>
     </References>
-    <Definition Name="EnumDefinition">
+    <Definition>
       <Field Name="Fields" DataType="i=102" ValueRank="1" />
     </Definition>
   </UADataType>
@@ -1188,7 +1188,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="Node">
+    <Definition>
       <Field Name="NodeId" DataType="i=17" />
       <Field Name="NodeClass" DataType="i=257" />
       <Field Name="BrowseName" DataType="i=20" />
@@ -1216,7 +1216,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11879</Reference>
     </References>
-    <Definition Name="ObjectNode">
+    <Definition>
       <Field Name="EventNotifier" DataType="i=3" />
     </Definition>
   </UADataType>
@@ -1224,7 +1224,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11880</Reference>
     </References>
-    <Definition Name="ObjectTypeNode">
+    <Definition>
       <Field Name="IsAbstract" DataType="i=1" />
     </Definition>
   </UADataType>
@@ -1232,7 +1232,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11879</Reference>
     </References>
-    <Definition Name="VariableNode">
+    <Definition>
       <Field Name="Value" />
       <Field Name="DataType" DataType="i=17" />
       <Field Name="ValueRank" DataType="i=6" />
@@ -1248,7 +1248,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11880</Reference>
     </References>
-    <Definition Name="VariableTypeNode">
+    <Definition>
       <Field Name="Value" />
       <Field Name="DataType" DataType="i=17" />
       <Field Name="ValueRank" DataType="i=6" />
@@ -1260,7 +1260,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11880</Reference>
     </References>
-    <Definition Name="ReferenceTypeNode">
+    <Definition>
       <Field Name="IsAbstract" DataType="i=1" />
       <Field Name="Symmetric" DataType="i=1" />
       <Field Name="InverseName" DataType="i=21" />
@@ -1270,7 +1270,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11879</Reference>
     </References>
-    <Definition Name="MethodNode">
+    <Definition>
       <Field Name="Executable" DataType="i=1" />
       <Field Name="UserExecutable" DataType="i=1" />
     </Definition>
@@ -1279,7 +1279,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11879</Reference>
     </References>
-    <Definition Name="ViewNode">
+    <Definition>
       <Field Name="ContainsNoLoops" DataType="i=1" />
       <Field Name="EventNotifier" DataType="i=3" />
     </Definition>
@@ -1288,7 +1288,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11880</Reference>
     </References>
-    <Definition Name="DataTypeNode">
+    <Definition>
       <Field Name="IsAbstract" DataType="i=1" />
       <Field Name="DataTypeDefinition" DataType="i=22" />
     </Definition>
@@ -1297,7 +1297,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ReferenceNode">
+    <Definition>
       <Field Name="ReferenceTypeId" DataType="i=17" />
       <Field Name="IsInverse" DataType="i=1" />
       <Field Name="TargetId" DataType="i=18" />
@@ -1307,7 +1307,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="Argument">
+    <Definition>
       <Field Name="Name" DataType="i=12" />
       <Field Name="DataType" DataType="i=17" />
       <Field Name="ValueRank" DataType="i=6" />
@@ -1319,7 +1319,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="EnumValueType">
+    <Definition>
       <Field Name="Value" DataType="i=8" />
       <Field Name="DisplayName" DataType="i=21" />
       <Field Name="Description" DataType="i=21" />
@@ -1329,7 +1329,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7594</Reference>
     </References>
-    <Definition Name="EnumField">
+    <Definition>
       <Field Name="Name" DataType="i=12" />
     </Definition>
   </UADataType>
@@ -1337,7 +1337,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="OptionSet">
+    <Definition>
       <Field Name="Value" DataType="i=15" />
       <Field Name="ValidBits" DataType="i=15" />
     </Definition>
@@ -1391,7 +1391,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="TimeZoneDataType">
+    <Definition>
       <Field Name="Offset" DataType="i=4" />
       <Field Name="DaylightSavingInOffset" DataType="i=1" />
     </Definition>

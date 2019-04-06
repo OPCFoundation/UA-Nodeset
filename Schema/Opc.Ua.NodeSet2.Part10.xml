@@ -859,7 +859,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ProgramDiagnosticDataType">
+    <Definition>
       <Field Name="CreateSessionId" DataType="i=17" />
       <Field Name="CreateClientName" DataType="i=12" />
       <Field Name="InvocationCreationTime" DataType="i=294" />
@@ -876,7 +876,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ProgramDiagnostic2DataType">
+    <Definition>
       <Field Name="CreateSessionId" DataType="i=17" />
       <Field Name="CreateClientName" DataType="i=12" />
       <Field Name="InvocationCreationTime" DataType="i=294" />

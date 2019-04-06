@@ -73,7 +73,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DataTypeSchemaHeader">
+    <Definition>
       <Field Name="Namespaces" DataType="i=12" ValueRank="1" />
       <Field Name="StructureDataTypes" DataType="i=15487" ValueRank="1" />
       <Field Name="EnumDataTypes" DataType="i=15488" ValueRank="1" />
@@ -84,7 +84,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DataTypeDescription">
+    <Definition>
       <Field Name="DataTypeId" DataType="i=17" />
       <Field Name="Name" DataType="i=20" />
     </Definition>
@@ -93,7 +93,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=14525</Reference>
     </References>
-    <Definition Name="StructureDescription">
+    <Definition>
       <Field Name="StructureDefinition" DataType="i=99" />
     </Definition>
   </UADataType>
@@ -101,7 +101,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=14525</Reference>
     </References>
-    <Definition Name="EnumDescription">
+    <Definition>
       <Field Name="EnumDefinition" DataType="i=100" />
       <Field Name="BuiltInType" DataType="i=3" />
     </Definition>
@@ -110,7 +110,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=14525</Reference>
     </References>
-    <Definition Name="SimpleTypeDescription">
+    <Definition>
       <Field Name="BaseDataType" DataType="i=17" />
       <Field Name="BuiltInType" DataType="i=3" />
     </Definition>
@@ -119,7 +119,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15534</Reference>
     </References>
-    <Definition Name="UABinaryFileDataType">
+    <Definition>
       <Field Name="SchemaLocation" DataType="i=12" />
       <Field Name="FileHeader" DataType="i=14533" ValueRank="1" />
       <Field Name="Body" />
@@ -130,7 +130,7 @@
       <Reference ReferenceType="HasProperty">i=14648</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="PubSubState">
+    <Definition>
       <Field Name="Disabled" Value="0" />
       <Field Name="Paused" Value="1" />
       <Field Name="Operational" Value="2" />
@@ -172,7 +172,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15534</Reference>
     </References>
-    <Definition Name="DataSetMetaDataType">
+    <Definition>
       <Field Name="Name" DataType="i=12" />
       <Field Name="Description" DataType="i=21" />
       <Field Name="Fields" DataType="i=14524" ValueRank="1" />
@@ -184,7 +184,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="FieldMetaData">
+    <Definition>
       <Field Name="Name" DataType="i=12" />
       <Field Name="Description" DataType="i=21" />
       <Field Name="FieldFlags" DataType="i=15904" />
@@ -202,7 +202,7 @@
       <Reference ReferenceType="HasProperty">i=15577</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
     </References>
-    <Definition Name="DataSetFieldFlags" IsOptionSet="true">
+    <Definition IsOptionSet="true">
       <Field Name="PromotedField" Value="0" />
     </Definition>
   </UADataType>
@@ -226,7 +226,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ConfigurationVersionDataType">
+    <Definition>
       <Field Name="MajorVersion" DataType="i=20998" />
       <Field Name="MinorVersion" DataType="i=20998" />
     </Definition>
@@ -235,7 +235,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="PublishedDataSetDataType">
+    <Definition>
       <Field Name="Name" DataType="i=12" />
       <Field Name="DataSetFolder" DataType="i=12" ValueRank="1" />
       <Field Name="DataSetMetaData" DataType="i=14523" />
@@ -252,7 +252,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="PublishedVariableDataType">
+    <Definition>
       <Field Name="PublishedVariable" DataType="i=17" />
       <Field Name="AttributeId" DataType="i=288" />
       <Field Name="SamplingIntervalHint" DataType="i=290" />
@@ -267,7 +267,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15580</Reference>
     </References>
-    <Definition Name="PublishedDataItemsDataType">
+    <Definition>
       <Field Name="PublishedData" DataType="i=14273" ValueRank="1" />
     </Definition>
   </UADataType>
@@ -275,7 +275,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15580</Reference>
     </References>
-    <Definition Name="PublishedEventsDataType">
+    <Definition>
       <Field Name="EventNotifier" DataType="i=17" />
       <Field Name="SelectedFields" DataType="i=601" ValueRank="1" />
       <Field Name="Filter" DataType="i=586" />
@@ -286,7 +286,7 @@
       <Reference ReferenceType="HasProperty">i=15584</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
-    <Definition Name="DataSetFieldContentMask" IsOptionSet="true">
+    <Definition IsOptionSet="true">
       <Field Name="StatusCode" Value="0" />
       <Field Name="SourceTimestamp" Value="1" />
       <Field Name="ServerTimestamp" Value="2" />
@@ -340,7 +340,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DataSetWriterDataType">
+    <Definition>
       <Field Name="Name" DataType="i=12" />
       <Field Name="Enabled" DataType="i=1" />
       <Field Name="DataSetWriterId" DataType="i=5" />
@@ -366,7 +366,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="PubSubGroupDataType">
+    <Definition>
       <Field Name="Name" DataType="i=12" />
       <Field Name="Enabled" DataType="i=1" />
       <Field Name="SecurityMode" DataType="i=302" />
@@ -380,7 +380,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15609</Reference>
     </References>
-    <Definition Name="WriterGroupDataType">
+    <Definition>
       <Field Name="WriterGroupId" DataType="i=5" />
       <Field Name="PublishingInterval" DataType="i=290" />
       <Field Name="KeepAliveTime" DataType="i=290" />
@@ -406,7 +406,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="PubSubConnectionDataType">
+    <Definition>
       <Field Name="Name" DataType="i=12" />
       <Field Name="Enabled" DataType="i=1" />
       <Field Name="PublisherId" />
@@ -427,7 +427,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="NetworkAddressDataType">
+    <Definition>
       <Field Name="NetworkInterface" DataType="i=12" />
     </Definition>
   </UADataType>
@@ -435,7 +435,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15502</Reference>
     </References>
-    <Definition Name="NetworkAddressUrlDataType">
+    <Definition>
       <Field Name="Url" DataType="i=12" />
     </Definition>
   </UADataType>
@@ -443,7 +443,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15609</Reference>
     </References>
-    <Definition Name="ReaderGroupDataType">
+    <Definition>
       <Field Name="TransportSettings" DataType="i=22" />
       <Field Name="MessageSettings" DataType="i=22" />
       <Field Name="DataSetReaders" DataType="i=15623" ValueRank="1" />
@@ -463,7 +463,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DataSetReaderDataType">
+    <Definition>
       <Field Name="Name" DataType="i=12" />
       <Field Name="Enabled" DataType="i=1" />
       <Field Name="PublisherId" />
@@ -502,7 +502,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15630</Reference>
     </References>
-    <Definition Name="TargetVariablesDataType">
+    <Definition>
       <Field Name="TargetVariables" DataType="i=14744" ValueRank="1" />
     </Definition>
   </UADataType>
@@ -510,7 +510,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="FieldTargetDataType">
+    <Definition>
       <Field Name="DataSetFieldId" DataType="i=14" />
       <Field Name="ReceiverIndexRange" DataType="i=291" />
       <Field Name="TargetNodeId" DataType="i=17" />
@@ -525,7 +525,7 @@
       <Reference ReferenceType="HasProperty">i=15875</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="OverrideValueHandling">
+    <Definition>
       <Field Name="Disabled" Value="0" />
       <Field Name="LastUsableValue" Value="1" />
       <Field Name="OverrideValue" Value="2" />
@@ -561,7 +561,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15630</Reference>
     </References>
-    <Definition Name="SubscribedDataSetMirrorDataType">
+    <Definition>
       <Field Name="ParentNodeName" DataType="i=12" />
       <Field Name="RolePermissions" DataType="i=96" ValueRank="1" />
     </Definition>
@@ -570,7 +570,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="PubSubConfigurationDataType">
+    <Definition>
       <Field Name="PublishedDataSets" DataType="i=15578" ValueRank="1" />
       <Field Name="Connections" DataType="i=15617" ValueRank="1" />
       <Field Name="Enabled" DataType="i=1" />
@@ -581,7 +581,7 @@
       <Reference ReferenceType="HasProperty">i=15641</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="DataSetOrderingType">
+    <Definition>
       <Field Name="Undefined" Value="0" />
       <Field Name="AscendingWriterId" Value="1" />
       <Field Name="AscendingWriterIdSingle" Value="2" />
@@ -618,7 +618,7 @@
       <Reference ReferenceType="HasProperty">i=15643</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
-    <Definition Name="UadpNetworkMessageContentMask" IsOptionSet="true">
+    <Definition IsOptionSet="true">
       <Field Name="PublisherId" Value="0" />
       <Field Name="GroupHeader" Value="1" />
       <Field Name="WriterGroupId" Value="2" />
@@ -702,7 +702,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15616</Reference>
     </References>
-    <Definition Name="UadpWriterGroupMessageDataType">
+    <Definition>
       <Field Name="GroupVersion" DataType="i=7" />
       <Field Name="DataSetOrdering" DataType="i=20408" />
       <Field Name="NetworkMessageContentMask" DataType="i=15642" />
@@ -715,7 +715,7 @@
       <Reference ReferenceType="HasProperty">i=15647</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
-    <Definition Name="UadpDataSetMessageContentMask" IsOptionSet="true">
+    <Definition IsOptionSet="true">
       <Field Name="Timestamp" Value="0" />
       <Field Name="PicoSeconds" Value="1" />
       <Field Name="Status" Value="2" />
@@ -769,7 +769,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15605</Reference>
     </References>
-    <Definition Name="UadpDataSetWriterMessageDataType">
+    <Definition>
       <Field Name="DataSetMessageContentMask" DataType="i=15646" />
       <Field Name="ConfiguredSize" DataType="i=5" />
       <Field Name="NetworkMessageNumber" DataType="i=5" />
@@ -780,7 +780,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15629</Reference>
     </References>
-    <Definition Name="UadpDataSetReaderMessageDataType">
+    <Definition>
       <Field Name="GroupVersion" DataType="i=20998" />
       <Field Name="NetworkMessageNumber" DataType="i=5" />
       <Field Name="DataSetOffset" DataType="i=5" />
@@ -797,7 +797,7 @@
       <Reference ReferenceType="HasProperty">i=15655</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
-    <Definition Name="JsonNetworkMessageContentMask" IsOptionSet="true">
+    <Definition IsOptionSet="true">
       <Field Name="NetworkMessageHeader" Value="0" />
       <Field Name="DataSetMessageHeader" Value="1" />
       <Field Name="SingleDataSetMessage" Value="2" />
@@ -851,7 +851,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15616</Reference>
     </References>
-    <Definition Name="JsonWriterGroupMessageDataType">
+    <Definition>
       <Field Name="NetworkMessageContentMask" DataType="i=15654" />
     </Definition>
   </UADataType>
@@ -860,7 +860,7 @@
       <Reference ReferenceType="HasProperty">i=15659</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
-    <Definition Name="JsonDataSetMessageContentMask" IsOptionSet="true">
+    <Definition IsOptionSet="true">
       <Field Name="DataSetWriterId" Value="0" />
       <Field Name="MetaDataVersion" Value="1" />
       <Field Name="SequenceNumber" Value="2" />
@@ -908,7 +908,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15605</Reference>
     </References>
-    <Definition Name="JsonDataSetWriterMessageDataType">
+    <Definition>
       <Field Name="DataSetMessageContentMask" DataType="i=15658" />
     </Definition>
   </UADataType>
@@ -916,7 +916,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15629</Reference>
     </References>
-    <Definition Name="JsonDataSetReaderMessageDataType">
+    <Definition>
       <Field Name="NetworkMessageContentMask" DataType="i=15654" />
       <Field Name="DataSetMessageContentMask" DataType="i=15658" />
     </Definition>
@@ -925,7 +925,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15618</Reference>
     </References>
-    <Definition Name="DatagramConnectionTransportDataType">
+    <Definition>
       <Field Name="DiscoveryAddress" DataType="i=22" />
     </Definition>
   </UADataType>
@@ -933,7 +933,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15611</Reference>
     </References>
-    <Definition Name="DatagramWriterGroupTransportDataType">
+    <Definition>
       <Field Name="MessageRepeatCount" DataType="i=3" />
       <Field Name="MessageRepeatDelay" DataType="i=290" />
     </Definition>
@@ -942,7 +942,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15618</Reference>
     </References>
-    <Definition Name="BrokerConnectionTransportDataType">
+    <Definition>
       <Field Name="ResourceUri" DataType="i=12" />
       <Field Name="AuthenticationProfileUri" DataType="i=12" />
     </Definition>
@@ -952,7 +952,7 @@
       <Reference ReferenceType="HasProperty">i=15009</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="BrokerTransportQualityOfService">
+    <Definition>
       <Field Name="NotSpecified" Value="0" />
       <Field Name="BestEffort" Value="1" />
       <Field Name="AtLeastOnce" Value="2" />
@@ -1000,7 +1000,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15611</Reference>
     </References>
-    <Definition Name="BrokerWriterGroupTransportDataType">
+    <Definition>
       <Field Name="QueueName" DataType="i=12" />
       <Field Name="ResourceUri" DataType="i=12" />
       <Field Name="AuthenticationProfileUri" DataType="i=12" />
@@ -1011,7 +1011,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15598</Reference>
     </References>
-    <Definition Name="BrokerDataSetWriterTransportDataType">
+    <Definition>
       <Field Name="QueueName" DataType="i=12" />
       <Field Name="ResourceUri" DataType="i=12" />
       <Field Name="AuthenticationProfileUri" DataType="i=12" />
@@ -1024,7 +1024,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15628</Reference>
     </References>
-    <Definition Name="BrokerDataSetReaderTransportDataType">
+    <Definition>
       <Field Name="QueueName" DataType="i=12" />
       <Field Name="ResourceUri" DataType="i=12" />
       <Field Name="AuthenticationProfileUri" DataType="i=12" />
@@ -9537,7 +9537,7 @@
       <Reference ReferenceType="HasProperty">i=19724</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="DiagnosticsLevel">
+    <Definition>
       <Field Name="Basic" Value="0" />
       <Field Name="Advanced" Value="1" />
       <Field Name="Info" Value="2" />
@@ -9623,7 +9623,7 @@
       <Reference ReferenceType="HasProperty">i=19731</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="PubSubDiagnosticsCounterClassification">
+    <Definition>
       <Field Name="Information" Value="0" />
       <Field Name="Error" Value="1" />
     </Definition>

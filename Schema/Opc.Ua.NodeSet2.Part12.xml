@@ -315,7 +315,7 @@
       <Reference ReferenceType="HasProperty">i=12553</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="TrustListMasks">
+    <Definition>
       <Field Name="None" Value="0" />
       <Field Name="TrustedCertificates" Value="1" />
       <Field Name="TrustedCrls" Value="2" />
@@ -435,7 +435,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="TrustListDataType">
+    <Definition>
       <Field Name="SpecifiedLists" DataType="i=7" />
       <Field Name="TrustedCertificates" DataType="i=15" ValueRank="1" />
       <Field Name="TrustedCrls" DataType="i=15" ValueRank="1" />

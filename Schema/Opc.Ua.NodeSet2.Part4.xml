@@ -104,7 +104,7 @@
       <Reference ReferenceType="HasProperty">i=7597</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="ApplicationType">
+    <Definition>
       <Field Name="Server" Value="0" />
       <Field Name="Client" Value="1" />
       <Field Name="ClientAndServer" Value="2" />
@@ -146,7 +146,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ApplicationDescription">
+    <Definition>
       <Field Name="ApplicationUri" DataType="i=12" />
       <Field Name="ProductUri" DataType="i=12" />
       <Field Name="ApplicationName" DataType="i=21" />
@@ -160,7 +160,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="RequestHeader">
+    <Definition>
       <Field Name="AuthenticationToken" DataType="i=388" />
       <Field Name="Timestamp" DataType="i=294" />
       <Field Name="RequestHandle" DataType="i=288" />
@@ -174,7 +174,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ResponseHeader">
+    <Definition>
       <Field Name="Timestamp" DataType="i=294" />
       <Field Name="RequestHandle" DataType="i=288" />
       <Field Name="ServiceResult" DataType="i=19" />
@@ -192,7 +192,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ServiceFault">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
     </Definition>
   </UADataType>
@@ -200,7 +200,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="SessionlessInvokeRequestType">
+    <Definition>
       <Field Name="UrisVersion" DataType="i=20998" ValueRank="1" />
       <Field Name="NamespaceUris" DataType="i=12" ValueRank="1" />
       <Field Name="ServerUris" DataType="i=12" ValueRank="1" />
@@ -212,7 +212,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="SessionlessInvokeResponseType">
+    <Definition>
       <Field Name="NamespaceUris" DataType="i=12" ValueRank="1" />
       <Field Name="ServerUris" DataType="i=12" ValueRank="1" />
       <Field Name="ServiceId" DataType="i=7" />
@@ -222,7 +222,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="FindServersRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="EndpointUrl" DataType="i=12" />
       <Field Name="LocaleIds" DataType="i=295" ValueRank="1" />
@@ -233,7 +233,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="FindServersResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Servers" DataType="i=308" ValueRank="1" />
     </Definition>
@@ -242,7 +242,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ServerOnNetwork">
+    <Definition>
       <Field Name="RecordId" DataType="i=7" />
       <Field Name="ServerName" DataType="i=12" />
       <Field Name="DiscoveryUrl" DataType="i=12" />
@@ -253,7 +253,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="FindServersOnNetworkRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="StartingRecordId" DataType="i=289" />
       <Field Name="MaxRecordsToReturn" DataType="i=7" />
@@ -264,7 +264,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="FindServersOnNetworkResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="LastCounterResetTime" DataType="i=294" />
       <Field Name="Servers" DataType="i=12189" ValueRank="1" />
@@ -280,7 +280,7 @@
       <Reference ReferenceType="HasProperty">i=7595</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="MessageSecurityMode">
+    <Definition>
       <Field Name="Invalid" Value="0" />
       <Field Name="None" Value="1" />
       <Field Name="Sign" Value="2" />
@@ -323,7 +323,7 @@
       <Reference ReferenceType="HasProperty">i=7596</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="UserTokenType">
+    <Definition>
       <Field Name="Anonymous" Value="0" />
       <Field Name="UserName" Value="1" />
       <Field Name="Certificate" Value="2" />
@@ -365,7 +365,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="UserTokenPolicy">
+    <Definition>
       <Field Name="PolicyId" DataType="i=12" />
       <Field Name="TokenType" DataType="i=303" />
       <Field Name="IssuedTokenType" DataType="i=12" />
@@ -377,7 +377,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="EndpointDescription">
+    <Definition>
       <Field Name="EndpointUrl" DataType="i=12" />
       <Field Name="Server" DataType="i=308" />
       <Field Name="ServerCertificate" DataType="i=311" />
@@ -392,7 +392,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="GetEndpointsRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="EndpointUrl" DataType="i=12" />
       <Field Name="LocaleIds" DataType="i=295" ValueRank="1" />
@@ -403,7 +403,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="GetEndpointsResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Endpoints" DataType="i=312" ValueRank="1" />
     </Definition>
@@ -412,7 +412,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="RegisteredServer">
+    <Definition>
       <Field Name="ServerUri" DataType="i=12" />
       <Field Name="ProductUri" DataType="i=12" />
       <Field Name="ServerNames" DataType="i=21" ValueRank="1" />
@@ -427,7 +427,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="RegisterServerRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="Server" DataType="i=432" />
     </Definition>
@@ -436,7 +436,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="RegisterServerResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
     </Definition>
   </UADataType>
@@ -449,7 +449,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12890</Reference>
     </References>
-    <Definition Name="MdnsDiscoveryConfiguration">
+    <Definition>
       <Field Name="MdnsServerName" DataType="i=12" />
       <Field Name="ServerCapabilities" DataType="i=12" ValueRank="1" />
     </Definition>
@@ -458,7 +458,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="RegisterServer2Request">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="Server" DataType="i=432" />
       <Field Name="DiscoveryConfiguration" DataType="i=22" ValueRank="1" />
@@ -468,7 +468,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="RegisterServer2Response">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="ConfigurationResults" DataType="i=19" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -479,7 +479,7 @@
       <Reference ReferenceType="HasProperty">i=7598</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="SecurityTokenRequestType">
+    <Definition>
       <Field Name="Issue" Value="0" />
       <Field Name="Renew" Value="1" />
     </Definition>
@@ -509,7 +509,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ChannelSecurityToken">
+    <Definition>
       <Field Name="ChannelId" DataType="i=7" />
       <Field Name="TokenId" DataType="i=7" />
       <Field Name="CreatedAt" DataType="i=294" />
@@ -520,7 +520,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="OpenSecureChannelRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="ClientProtocolVersion" DataType="i=7" />
       <Field Name="RequestType" DataType="i=315" />
@@ -533,7 +533,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="OpenSecureChannelResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="ServerProtocolVersion" DataType="i=7" />
       <Field Name="SecurityToken" DataType="i=441" />
@@ -544,7 +544,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="CloseSecureChannelRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
     </Definition>
   </UADataType>
@@ -552,7 +552,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="CloseSecureChannelResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
     </Definition>
   </UADataType>
@@ -560,7 +560,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="SignedSoftwareCertificate">
+    <Definition>
       <Field Name="CertificateData" DataType="i=15" />
       <Field Name="Signature" DataType="i=15" />
     </Definition>
@@ -574,7 +574,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="SignatureData">
+    <Definition>
       <Field Name="Algorithm" DataType="i=12" />
       <Field Name="Signature" DataType="i=15" />
     </Definition>
@@ -583,7 +583,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="CreateSessionRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="ClientDescription" DataType="i=308" />
       <Field Name="ServerUri" DataType="i=12" />
@@ -599,7 +599,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="CreateSessionResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="SessionId" DataType="i=17" />
       <Field Name="AuthenticationToken" DataType="i=388" />
@@ -616,7 +616,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="UserIdentityToken">
+    <Definition>
       <Field Name="PolicyId" DataType="i=12" />
     </Definition>
   </UADataType>
@@ -629,7 +629,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=316</Reference>
     </References>
-    <Definition Name="UserNameIdentityToken">
+    <Definition>
       <Field Name="UserName" DataType="i=12" />
       <Field Name="Password" DataType="i=15" />
       <Field Name="EncryptionAlgorithm" DataType="i=12" />
@@ -639,7 +639,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=316</Reference>
     </References>
-    <Definition Name="X509IdentityToken">
+    <Definition>
       <Field Name="CertificateData" DataType="i=15" />
     </Definition>
   </UADataType>
@@ -647,7 +647,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=316</Reference>
     </References>
-    <Definition Name="IssuedIdentityToken">
+    <Definition>
       <Field Name="TokenData" DataType="i=15" />
       <Field Name="EncryptionAlgorithm" DataType="i=12" />
     </Definition>
@@ -666,7 +666,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ActivateSessionRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="ClientSignature" DataType="i=456" />
       <Field Name="ClientSoftwareCertificates" DataType="i=344" ValueRank="1" />
@@ -679,7 +679,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ActivateSessionResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="ServerNonce" DataType="i=15" />
       <Field Name="Results" DataType="i=19" ValueRank="1" />
@@ -690,7 +690,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="CloseSessionRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="DeleteSubscriptions" DataType="i=1" />
     </Definition>
@@ -699,7 +699,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="CloseSessionResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
     </Definition>
   </UADataType>
@@ -707,7 +707,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="CancelRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="RequestHandle" DataType="i=288" />
     </Definition>
@@ -716,7 +716,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="CancelResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="CancelCount" DataType="i=7" />
     </Definition>
@@ -726,7 +726,7 @@
       <Reference ReferenceType="HasProperty">i=11881</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="NodeAttributesMask">
+    <Definition>
       <Field Name="None" Value="0" />
       <Field Name="AccessLevel" Value="1" />
       <Field Name="ArrayDimensions" Value="2" />
@@ -1339,7 +1339,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="NodeAttributes">
+    <Definition>
       <Field Name="SpecifiedAttributes" DataType="i=7" />
       <Field Name="DisplayName" DataType="i=21" />
       <Field Name="Description" DataType="i=21" />
@@ -1351,7 +1351,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=349</Reference>
     </References>
-    <Definition Name="ObjectAttributes">
+    <Definition>
       <Field Name="EventNotifier" DataType="i=3" />
     </Definition>
   </UADataType>
@@ -1359,7 +1359,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=349</Reference>
     </References>
-    <Definition Name="VariableAttributes">
+    <Definition>
       <Field Name="Value" />
       <Field Name="DataType" DataType="i=17" />
       <Field Name="ValueRank" DataType="i=6" />
@@ -1374,7 +1374,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=349</Reference>
     </References>
-    <Definition Name="MethodAttributes">
+    <Definition>
       <Field Name="Executable" DataType="i=1" />
       <Field Name="UserExecutable" DataType="i=1" />
     </Definition>
@@ -1383,7 +1383,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=349</Reference>
     </References>
-    <Definition Name="ObjectTypeAttributes">
+    <Definition>
       <Field Name="IsAbstract" DataType="i=1" />
     </Definition>
   </UADataType>
@@ -1391,7 +1391,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=349</Reference>
     </References>
-    <Definition Name="VariableTypeAttributes">
+    <Definition>
       <Field Name="Value" />
       <Field Name="DataType" DataType="i=17" />
       <Field Name="ValueRank" DataType="i=6" />
@@ -1403,7 +1403,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=349</Reference>
     </References>
-    <Definition Name="ReferenceTypeAttributes">
+    <Definition>
       <Field Name="IsAbstract" DataType="i=1" />
       <Field Name="Symmetric" DataType="i=1" />
       <Field Name="InverseName" DataType="i=21" />
@@ -1413,7 +1413,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=349</Reference>
     </References>
-    <Definition Name="DataTypeAttributes">
+    <Definition>
       <Field Name="IsAbstract" DataType="i=1" />
     </Definition>
   </UADataType>
@@ -1421,7 +1421,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=349</Reference>
     </References>
-    <Definition Name="ViewAttributes">
+    <Definition>
       <Field Name="ContainsNoLoops" DataType="i=1" />
       <Field Name="EventNotifier" DataType="i=3" />
     </Definition>
@@ -1430,7 +1430,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="GenericAttributeValue">
+    <Definition>
       <Field Name="AttributeId" DataType="i=288" />
       <Field Name="Value" />
     </Definition>
@@ -1439,7 +1439,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=349</Reference>
     </References>
-    <Definition Name="GenericAttributes">
+    <Definition>
       <Field Name="AttributeValues" DataType="i=17606" ValueRank="1" />
     </Definition>
   </UADataType>
@@ -1447,7 +1447,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="AddNodesItem">
+    <Definition>
       <Field Name="ParentNodeId" DataType="i=18" />
       <Field Name="ReferenceTypeId" DataType="i=17" />
       <Field Name="RequestedNewNodeId" DataType="i=18" />
@@ -1461,7 +1461,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="AddNodesResult">
+    <Definition>
       <Field Name="StatusCode" DataType="i=19" />
       <Field Name="AddedNodeId" DataType="i=17" />
     </Definition>
@@ -1470,7 +1470,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="AddNodesRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="NodesToAdd" DataType="i=376" ValueRank="1" />
     </Definition>
@@ -1479,7 +1479,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="AddNodesResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Results" DataType="i=483" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -1489,7 +1489,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="AddReferencesItem">
+    <Definition>
       <Field Name="SourceNodeId" DataType="i=17" />
       <Field Name="ReferenceTypeId" DataType="i=17" />
       <Field Name="IsForward" DataType="i=1" />
@@ -1502,7 +1502,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="AddReferencesRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="ReferencesToAdd" DataType="i=379" ValueRank="1" />
     </Definition>
@@ -1511,7 +1511,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="AddReferencesResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Results" DataType="i=19" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -1521,7 +1521,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DeleteNodesItem">
+    <Definition>
       <Field Name="NodeId" DataType="i=17" />
       <Field Name="DeleteTargetReferences" DataType="i=1" />
     </Definition>
@@ -1530,7 +1530,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DeleteNodesRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="NodesToDelete" DataType="i=382" ValueRank="1" />
     </Definition>
@@ -1539,7 +1539,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DeleteNodesResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Results" DataType="i=19" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -1549,7 +1549,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DeleteReferencesItem">
+    <Definition>
       <Field Name="SourceNodeId" DataType="i=17" />
       <Field Name="ReferenceTypeId" DataType="i=17" />
       <Field Name="IsForward" DataType="i=1" />
@@ -1561,7 +1561,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DeleteReferencesRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="ReferencesToDelete" DataType="i=385" ValueRank="1" />
     </Definition>
@@ -1570,7 +1570,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DeleteReferencesResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Results" DataType="i=19" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -1581,7 +1581,7 @@
       <Reference ReferenceType="HasProperty">i=15036</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
-    <Definition Name="AttributeWriteMask" IsOptionSet="true">
+    <Definition IsOptionSet="true">
       <Field Name="AccessLevel" Value="0" />
       <Field Name="ArrayDimensions" Value="1" />
       <Field Name="BrowseName" Value="2" />
@@ -1756,7 +1756,7 @@
       <Reference ReferenceType="HasProperty">i=7603</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="BrowseDirection">
+    <Definition>
       <Field Name="Forward" Value="0" />
       <Field Name="Inverse" Value="1" />
       <Field Name="Both" Value="2" />
@@ -1798,7 +1798,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ViewDescription">
+    <Definition>
       <Field Name="ViewId" DataType="i=17" />
       <Field Name="Timestamp" DataType="i=294" />
       <Field Name="ViewVersion" DataType="i=7" />
@@ -1808,7 +1808,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="BrowseDescription">
+    <Definition>
       <Field Name="NodeId" DataType="i=17" />
       <Field Name="BrowseDirection" DataType="i=510" />
       <Field Name="ReferenceTypeId" DataType="i=17" />
@@ -1822,7 +1822,7 @@
       <Reference ReferenceType="HasProperty">i=11883</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="BrowseResultMask">
+    <Definition>
       <Field Name="None" Value="0" />
       <Field Name="ReferenceTypeId" Value="1" />
       <Field Name="IsForward" Value="2" />
@@ -2010,7 +2010,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ReferenceDescription">
+    <Definition>
       <Field Name="ReferenceTypeId" DataType="i=17" />
       <Field Name="IsForward" DataType="i=1" />
       <Field Name="NodeId" DataType="i=18" />
@@ -2029,7 +2029,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="BrowseResult">
+    <Definition>
       <Field Name="StatusCode" DataType="i=19" />
       <Field Name="ContinuationPoint" DataType="i=521" />
       <Field Name="References" DataType="i=518" ValueRank="1" />
@@ -2039,7 +2039,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="BrowseRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="View" DataType="i=511" />
       <Field Name="RequestedMaxReferencesPerNode" DataType="i=289" />
@@ -2050,7 +2050,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="BrowseResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Results" DataType="i=522" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -2060,7 +2060,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="BrowseNextRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="ReleaseContinuationPoints" DataType="i=1" />
       <Field Name="ContinuationPoints" DataType="i=521" ValueRank="1" />
@@ -2070,7 +2070,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="BrowseNextResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Results" DataType="i=522" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -2080,7 +2080,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="RelativePathElement">
+    <Definition>
       <Field Name="ReferenceTypeId" DataType="i=17" />
       <Field Name="IsInverse" DataType="i=1" />
       <Field Name="IncludeSubtypes" DataType="i=1" />
@@ -2091,7 +2091,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="RelativePath">
+    <Definition>
       <Field Name="Elements" DataType="i=537" ValueRank="1" />
     </Definition>
   </UADataType>
@@ -2099,7 +2099,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="BrowsePath">
+    <Definition>
       <Field Name="StartingNode" DataType="i=17" />
       <Field Name="RelativePath" DataType="i=540" />
     </Definition>
@@ -2108,7 +2108,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="BrowsePathTarget">
+    <Definition>
       <Field Name="TargetId" DataType="i=18" />
       <Field Name="RemainingPathIndex" DataType="i=17588" />
     </Definition>
@@ -2117,7 +2117,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="BrowsePathResult">
+    <Definition>
       <Field Name="StatusCode" DataType="i=19" />
       <Field Name="Targets" DataType="i=546" ValueRank="1" />
     </Definition>
@@ -2126,7 +2126,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="TranslateBrowsePathsToNodeIdsRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="BrowsePaths" DataType="i=543" ValueRank="1" />
     </Definition>
@@ -2135,7 +2135,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="TranslateBrowsePathsToNodeIdsResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Results" DataType="i=549" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -2145,7 +2145,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="RegisterNodesRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="NodesToRegister" DataType="i=17" ValueRank="1" />
     </Definition>
@@ -2154,7 +2154,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="RegisterNodesResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="RegisteredNodeIds" DataType="i=17" ValueRank="1" />
     </Definition>
@@ -2163,7 +2163,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="UnregisterNodesRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="NodesToUnregister" DataType="i=17" ValueRank="1" />
     </Definition>
@@ -2172,7 +2172,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="UnregisterNodesResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
     </Definition>
   </UADataType>
@@ -2200,7 +2200,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="EndpointConfiguration">
+    <Definition>
       <Field Name="OperationTimeout" DataType="i=6" />
       <Field Name="UseBinaryEncoding" DataType="i=1" />
       <Field Name="MaxStringLength" DataType="i=6" />
@@ -2216,7 +2216,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="QueryDataDescription">
+    <Definition>
       <Field Name="RelativePath" DataType="i=540" />
       <Field Name="AttributeId" DataType="i=288" />
       <Field Name="IndexRange" DataType="i=291" />
@@ -2226,7 +2226,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="NodeTypeDescription">
+    <Definition>
       <Field Name="TypeDefinitionNode" DataType="i=18" />
       <Field Name="IncludeSubTypes" DataType="i=1" />
       <Field Name="DataToReturn" DataType="i=570" ValueRank="1" />
@@ -2237,7 +2237,7 @@
       <Reference ReferenceType="HasProperty">i=7605</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="FilterOperator">
+    <Definition>
       <Field Name="Equals" Value="0" />
       <Field Name="IsNull" Value="1" />
       <Field Name="GreaterThan" Value="2" />
@@ -2363,7 +2363,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="QueryDataSet">
+    <Definition>
       <Field Name="NodeId" DataType="i=18" />
       <Field Name="TypeDefinitionNode" DataType="i=18" />
       <Field Name="Values" ValueRank="1" />
@@ -2373,7 +2373,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="NodeReference">
+    <Definition>
       <Field Name="NodeId" DataType="i=17" />
       <Field Name="ReferenceTypeId" DataType="i=17" />
       <Field Name="IsForward" DataType="i=1" />
@@ -2384,7 +2384,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ContentFilterElement">
+    <Definition>
       <Field Name="FilterOperator" DataType="i=576" />
       <Field Name="FilterOperands" DataType="i=22" ValueRank="1" />
     </Definition>
@@ -2393,7 +2393,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ContentFilter">
+    <Definition>
       <Field Name="Elements" DataType="i=583" ValueRank="1" />
     </Definition>
   </UADataType>
@@ -2406,7 +2406,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=589</Reference>
     </References>
-    <Definition Name="ElementOperand">
+    <Definition>
       <Field Name="Index" DataType="i=7" />
     </Definition>
   </UADataType>
@@ -2414,7 +2414,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=589</Reference>
     </References>
-    <Definition Name="LiteralOperand">
+    <Definition>
       <Field Name="Value" />
     </Definition>
   </UADataType>
@@ -2422,7 +2422,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=589</Reference>
     </References>
-    <Definition Name="AttributeOperand">
+    <Definition>
       <Field Name="NodeId" DataType="i=17" />
       <Field Name="Alias" DataType="i=12" />
       <Field Name="BrowsePath" DataType="i=540" />
@@ -2434,7 +2434,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=589</Reference>
     </References>
-    <Definition Name="SimpleAttributeOperand">
+    <Definition>
       <Field Name="TypeDefinitionId" DataType="i=17" />
       <Field Name="BrowsePath" DataType="i=20" ValueRank="1" />
       <Field Name="AttributeId" DataType="i=288" />
@@ -2445,7 +2445,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ContentFilterElementResult">
+    <Definition>
       <Field Name="StatusCode" DataType="i=19" />
       <Field Name="OperandStatusCodes" DataType="i=19" ValueRank="1" />
       <Field Name="OperandDiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -2455,7 +2455,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ContentFilterResult">
+    <Definition>
       <Field Name="ElementResults" DataType="i=604" ValueRank="1" />
       <Field Name="ElementDiagnosticInfos" DataType="i=25" ValueRank="1" />
     </Definition>
@@ -2464,7 +2464,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ParsingResult">
+    <Definition>
       <Field Name="StatusCode" DataType="i=19" />
       <Field Name="DataStatusCodes" DataType="i=19" ValueRank="1" />
       <Field Name="DataDiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -2474,7 +2474,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="QueryFirstRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="View" DataType="i=511" />
       <Field Name="NodeTypes" DataType="i=573" ValueRank="1" />
@@ -2487,7 +2487,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="QueryFirstResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="QueryDataSets" DataType="i=577" ValueRank="1" />
       <Field Name="ContinuationPoint" DataType="i=521" />
@@ -2500,7 +2500,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="QueryNextRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="ReleaseContinuationPoint" DataType="i=1" />
       <Field Name="ContinuationPoint" DataType="i=521" />
@@ -2510,7 +2510,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="QueryNextResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="QueryDataSets" DataType="i=577" ValueRank="1" />
       <Field Name="RevisedContinuationPoint" DataType="i=521" />
@@ -2521,7 +2521,7 @@
       <Reference ReferenceType="HasProperty">i=7606</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="TimestampsToReturn">
+    <Definition>
       <Field Name="Source" Value="0" />
       <Field Name="Server" Value="1" />
       <Field Name="Both" Value="2" />
@@ -2569,7 +2569,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ReadValueId">
+    <Definition>
       <Field Name="NodeId" DataType="i=17" />
       <Field Name="AttributeId" DataType="i=288" />
       <Field Name="IndexRange" DataType="i=291" />
@@ -2580,7 +2580,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ReadRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="MaxAge" DataType="i=290" />
       <Field Name="TimestampsToReturn" DataType="i=625" />
@@ -2591,7 +2591,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ReadResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Results" DataType="i=23" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -2601,7 +2601,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="HistoryReadValueId">
+    <Definition>
       <Field Name="NodeId" DataType="i=17" />
       <Field Name="IndexRange" DataType="i=291" />
       <Field Name="DataEncoding" DataType="i=20" />
@@ -2612,7 +2612,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="HistoryReadResult">
+    <Definition>
       <Field Name="StatusCode" DataType="i=19" />
       <Field Name="ContinuationPoint" DataType="i=521" />
       <Field Name="HistoryData" DataType="i=22" />
@@ -2627,7 +2627,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=641</Reference>
     </References>
-    <Definition Name="ReadEventDetails">
+    <Definition>
       <Field Name="NumValuesPerNode" DataType="i=289" />
       <Field Name="StartTime" DataType="i=294" />
       <Field Name="EndTime" DataType="i=294" />
@@ -2638,7 +2638,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=641</Reference>
     </References>
-    <Definition Name="ReadRawModifiedDetails">
+    <Definition>
       <Field Name="IsReadModified" DataType="i=1" />
       <Field Name="StartTime" DataType="i=294" />
       <Field Name="EndTime" DataType="i=294" />
@@ -2650,7 +2650,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=641</Reference>
     </References>
-    <Definition Name="ReadProcessedDetails">
+    <Definition>
       <Field Name="StartTime" DataType="i=294" />
       <Field Name="EndTime" DataType="i=294" />
       <Field Name="ProcessingInterval" DataType="i=290" />
@@ -2662,7 +2662,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=641</Reference>
     </References>
-    <Definition Name="ReadAtTimeDetails">
+    <Definition>
       <Field Name="ReqTimes" DataType="i=294" ValueRank="1" />
       <Field Name="UseSimpleBounds" DataType="i=1" />
     </Definition>
@@ -2671,7 +2671,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="HistoryData">
+    <Definition>
       <Field Name="DataValues" DataType="i=23" ValueRank="1" />
     </Definition>
   </UADataType>
@@ -2679,7 +2679,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ModificationInfo">
+    <Definition>
       <Field Name="ModificationTime" DataType="i=294" />
       <Field Name="UpdateType" DataType="i=11234" />
       <Field Name="UserName" DataType="i=12" />
@@ -2689,7 +2689,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=656</Reference>
     </References>
-    <Definition Name="HistoryModifiedData">
+    <Definition>
       <Field Name="ModificationInfos" DataType="i=11216" ValueRank="1" />
     </Definition>
   </UADataType>
@@ -2697,7 +2697,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="HistoryEvent">
+    <Definition>
       <Field Name="Events" DataType="i=920" ValueRank="1" />
     </Definition>
   </UADataType>
@@ -2705,7 +2705,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="HistoryReadRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="HistoryReadDetails" DataType="i=22" />
       <Field Name="TimestampsToReturn" DataType="i=625" />
@@ -2717,7 +2717,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="HistoryReadResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Results" DataType="i=638" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -2727,7 +2727,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="WriteValue">
+    <Definition>
       <Field Name="NodeId" DataType="i=17" />
       <Field Name="AttributeId" DataType="i=288" />
       <Field Name="IndexRange" DataType="i=291" />
@@ -2738,7 +2738,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="WriteRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="NodesToWrite" DataType="i=668" ValueRank="1" />
     </Definition>
@@ -2747,7 +2747,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="WriteResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Results" DataType="i=19" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -2757,7 +2757,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="HistoryUpdateDetails">
+    <Definition>
       <Field Name="NodeId" DataType="i=17" />
     </Definition>
   </UADataType>
@@ -2766,7 +2766,7 @@
       <Reference ReferenceType="HasProperty">i=11884</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="HistoryUpdateType">
+    <Definition>
       <Field Name="Insert" Value="1" />
       <Field Name="Replace" Value="2" />
       <Field Name="Update" Value="3" />
@@ -2853,7 +2853,7 @@
       <Reference ReferenceType="HasProperty">i=11885</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="PerformUpdateType">
+    <Definition>
       <Field Name="Insert" Value="1" />
       <Field Name="Replace" Value="2" />
       <Field Name="Update" Value="3" />
@@ -2939,7 +2939,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=677</Reference>
     </References>
-    <Definition Name="UpdateDataDetails">
+    <Definition>
       <Field Name="PerformInsertReplace" DataType="i=11293" />
       <Field Name="UpdateValues" DataType="i=23" ValueRank="1" />
     </Definition>
@@ -2948,7 +2948,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=677</Reference>
     </References>
-    <Definition Name="UpdateStructureDataDetails">
+    <Definition>
       <Field Name="PerformInsertReplace" DataType="i=11293" />
       <Field Name="UpdateValues" DataType="i=23" ValueRank="1" />
     </Definition>
@@ -2957,7 +2957,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=677</Reference>
     </References>
-    <Definition Name="UpdateEventDetails">
+    <Definition>
       <Field Name="PerformInsertReplace" DataType="i=11293" />
       <Field Name="Filter" DataType="i=725" />
       <Field Name="EventData" DataType="i=920" ValueRank="1" />
@@ -2967,7 +2967,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=677</Reference>
     </References>
-    <Definition Name="DeleteRawModifiedDetails">
+    <Definition>
       <Field Name="IsDeleteModified" DataType="i=1" />
       <Field Name="StartTime" DataType="i=294" />
       <Field Name="EndTime" DataType="i=294" />
@@ -2977,7 +2977,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=677</Reference>
     </References>
-    <Definition Name="DeleteAtTimeDetails">
+    <Definition>
       <Field Name="ReqTimes" DataType="i=294" ValueRank="1" />
     </Definition>
   </UADataType>
@@ -2985,7 +2985,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=677</Reference>
     </References>
-    <Definition Name="DeleteEventDetails">
+    <Definition>
       <Field Name="EventIds" DataType="i=15" ValueRank="1" />
     </Definition>
   </UADataType>
@@ -2993,7 +2993,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="HistoryUpdateResult">
+    <Definition>
       <Field Name="StatusCode" DataType="i=19" />
       <Field Name="OperationResults" DataType="i=19" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -3003,7 +3003,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="HistoryUpdateRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="HistoryUpdateDetails" DataType="i=22" ValueRank="1" />
     </Definition>
@@ -3012,7 +3012,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="HistoryUpdateResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Results" DataType="i=695" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -3022,7 +3022,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="CallMethodRequest">
+    <Definition>
       <Field Name="ObjectId" DataType="i=17" />
       <Field Name="MethodId" DataType="i=17" />
       <Field Name="InputArguments" ValueRank="1" />
@@ -3032,7 +3032,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="CallMethodResult">
+    <Definition>
       <Field Name="StatusCode" DataType="i=19" />
       <Field Name="InputArgumentResults" DataType="i=19" ValueRank="1" />
       <Field Name="InputArgumentDiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -3043,7 +3043,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="CallRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="MethodsToCall" DataType="i=704" ValueRank="1" />
     </Definition>
@@ -3052,7 +3052,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="CallResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Results" DataType="i=707" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -3063,7 +3063,7 @@
       <Reference ReferenceType="HasProperty">i=7608</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="MonitoringMode">
+    <Definition>
       <Field Name="Disabled" Value="0" />
       <Field Name="Sampling" Value="1" />
       <Field Name="Reporting" Value="2" />
@@ -3100,7 +3100,7 @@
       <Reference ReferenceType="HasProperty">i=7609</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="DataChangeTrigger">
+    <Definition>
       <Field Name="Status" Value="0" />
       <Field Name="StatusValue" Value="1" />
       <Field Name="StatusValueTimestamp" Value="2" />
@@ -3137,7 +3137,7 @@
       <Reference ReferenceType="HasProperty">i=7610</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="DeadbandType">
+    <Definition>
       <Field Name="None" Value="0" />
       <Field Name="Absolute" Value="1" />
       <Field Name="Percent" Value="2" />
@@ -3178,7 +3178,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=719</Reference>
     </References>
-    <Definition Name="DataChangeFilter">
+    <Definition>
       <Field Name="Trigger" DataType="i=717" />
       <Field Name="DeadbandType" DataType="i=7" />
       <Field Name="DeadbandValue" DataType="i=11" />
@@ -3188,7 +3188,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=719</Reference>
     </References>
-    <Definition Name="EventFilter">
+    <Definition>
       <Field Name="SelectClauses" DataType="i=601" ValueRank="1" />
       <Field Name="WhereClause" DataType="i=586" />
     </Definition>
@@ -3197,7 +3197,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="AggregateConfiguration">
+    <Definition>
       <Field Name="UseServerCapabilitiesDefaults" DataType="i=1" />
       <Field Name="TreatUncertainAsBad" DataType="i=1" />
       <Field Name="PercentDataBad" DataType="i=3" />
@@ -3209,7 +3209,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=719</Reference>
     </References>
-    <Definition Name="AggregateFilter">
+    <Definition>
       <Field Name="StartTime" DataType="i=294" />
       <Field Name="AggregateType" DataType="i=17" />
       <Field Name="ProcessingInterval" DataType="i=290" />
@@ -3225,7 +3225,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=731</Reference>
     </References>
-    <Definition Name="EventFilterResult">
+    <Definition>
       <Field Name="SelectClauseResults" DataType="i=19" ValueRank="1" />
       <Field Name="SelectClauseDiagnosticInfos" DataType="i=25" ValueRank="1" />
       <Field Name="WhereClauseResult" DataType="i=607" />
@@ -3235,7 +3235,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=731</Reference>
     </References>
-    <Definition Name="AggregateFilterResult">
+    <Definition>
       <Field Name="RevisedStartTime" DataType="i=294" />
       <Field Name="RevisedProcessingInterval" DataType="i=290" />
       <Field Name="RevisedAggregateConfiguration" DataType="i=948" />
@@ -3245,7 +3245,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="MonitoringParameters">
+    <Definition>
       <Field Name="ClientHandle" DataType="i=288" />
       <Field Name="SamplingInterval" DataType="i=290" />
       <Field Name="Filter" DataType="i=22" />
@@ -3257,7 +3257,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="MonitoredItemCreateRequest">
+    <Definition>
       <Field Name="ItemToMonitor" DataType="i=626" />
       <Field Name="MonitoringMode" DataType="i=716" />
       <Field Name="RequestedParameters" DataType="i=740" />
@@ -3267,7 +3267,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="MonitoredItemCreateResult">
+    <Definition>
       <Field Name="StatusCode" DataType="i=19" />
       <Field Name="MonitoredItemId" DataType="i=288" />
       <Field Name="RevisedSamplingInterval" DataType="i=290" />
@@ -3279,7 +3279,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="CreateMonitoredItemsRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="SubscriptionId" DataType="i=288" />
       <Field Name="TimestampsToReturn" DataType="i=625" />
@@ -3290,7 +3290,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="CreateMonitoredItemsResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Results" DataType="i=746" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -3300,7 +3300,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="MonitoredItemModifyRequest">
+    <Definition>
       <Field Name="MonitoredItemId" DataType="i=288" />
       <Field Name="RequestedParameters" DataType="i=740" />
     </Definition>
@@ -3309,7 +3309,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="MonitoredItemModifyResult">
+    <Definition>
       <Field Name="StatusCode" DataType="i=19" />
       <Field Name="RevisedSamplingInterval" DataType="i=290" />
       <Field Name="RevisedQueueSize" DataType="i=289" />
@@ -3320,7 +3320,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ModifyMonitoredItemsRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="SubscriptionId" DataType="i=288" />
       <Field Name="TimestampsToReturn" DataType="i=625" />
@@ -3331,7 +3331,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ModifyMonitoredItemsResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Results" DataType="i=758" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -3341,7 +3341,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="SetMonitoringModeRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="SubscriptionId" DataType="i=288" />
       <Field Name="MonitoringMode" DataType="i=716" />
@@ -3352,7 +3352,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="SetMonitoringModeResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Results" DataType="i=19" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -3362,7 +3362,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="SetTriggeringRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="SubscriptionId" DataType="i=288" />
       <Field Name="TriggeringItemId" DataType="i=288" />
@@ -3374,7 +3374,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="SetTriggeringResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="AddResults" DataType="i=19" ValueRank="1" />
       <Field Name="AddDiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -3386,7 +3386,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DeleteMonitoredItemsRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="SubscriptionId" DataType="i=288" />
       <Field Name="MonitoredItemIds" DataType="i=288" ValueRank="1" />
@@ -3396,7 +3396,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DeleteMonitoredItemsResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Results" DataType="i=19" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -3406,7 +3406,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="CreateSubscriptionRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="RequestedPublishingInterval" DataType="i=290" />
       <Field Name="RequestedLifetimeCount" DataType="i=289" />
@@ -3420,7 +3420,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="CreateSubscriptionResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="SubscriptionId" DataType="i=288" />
       <Field Name="RevisedPublishingInterval" DataType="i=290" />
@@ -3432,7 +3432,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ModifySubscriptionRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="SubscriptionId" DataType="i=288" />
       <Field Name="RequestedPublishingInterval" DataType="i=290" />
@@ -3446,7 +3446,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="ModifySubscriptionResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="RevisedPublishingInterval" DataType="i=290" />
       <Field Name="RevisedLifetimeCount" DataType="i=289" />
@@ -3457,7 +3457,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="SetPublishingModeRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="PublishingEnabled" DataType="i=1" />
       <Field Name="SubscriptionIds" DataType="i=288" ValueRank="1" />
@@ -3467,7 +3467,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="SetPublishingModeResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Results" DataType="i=19" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -3477,7 +3477,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="NotificationMessage">
+    <Definition>
       <Field Name="SequenceNumber" DataType="i=289" />
       <Field Name="PublishTime" DataType="i=294" />
       <Field Name="NotificationData" DataType="i=22" ValueRank="1" />
@@ -3492,7 +3492,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=945</Reference>
     </References>
-    <Definition Name="DataChangeNotification">
+    <Definition>
       <Field Name="MonitoredItems" DataType="i=806" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
     </Definition>
@@ -3501,7 +3501,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="MonitoredItemNotification">
+    <Definition>
       <Field Name="ClientHandle" DataType="i=288" />
       <Field Name="Value" DataType="i=23" />
     </Definition>
@@ -3510,7 +3510,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=945</Reference>
     </References>
-    <Definition Name="EventNotificationList">
+    <Definition>
       <Field Name="Events" DataType="i=917" ValueRank="1" />
     </Definition>
   </UADataType>
@@ -3518,7 +3518,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="EventFieldList">
+    <Definition>
       <Field Name="ClientHandle" DataType="i=288" />
       <Field Name="EventFields" ValueRank="1" />
     </Definition>
@@ -3527,7 +3527,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="HistoryEventFieldList">
+    <Definition>
       <Field Name="EventFields" ValueRank="1" />
     </Definition>
   </UADataType>
@@ -3535,7 +3535,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=945</Reference>
     </References>
-    <Definition Name="StatusChangeNotification">
+    <Definition>
       <Field Name="Status" DataType="i=19" />
       <Field Name="DiagnosticInfo" DataType="i=25" />
     </Definition>
@@ -3544,7 +3544,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="SubscriptionAcknowledgement">
+    <Definition>
       <Field Name="SubscriptionId" DataType="i=288" />
       <Field Name="SequenceNumber" DataType="i=289" />
     </Definition>
@@ -3553,7 +3553,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="PublishRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="SubscriptionAcknowledgements" DataType="i=821" ValueRank="1" />
     </Definition>
@@ -3562,7 +3562,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="PublishResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="SubscriptionId" DataType="i=288" />
       <Field Name="AvailableSequenceNumbers" DataType="i=289" ValueRank="1" />
@@ -3576,7 +3576,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="RepublishRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="SubscriptionId" DataType="i=288" />
       <Field Name="RetransmitSequenceNumber" DataType="i=289" />
@@ -3586,7 +3586,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="RepublishResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="NotificationMessage" DataType="i=803" />
     </Definition>
@@ -3595,7 +3595,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="TransferResult">
+    <Definition>
       <Field Name="StatusCode" DataType="i=19" />
       <Field Name="AvailableSequenceNumbers" DataType="i=289" ValueRank="1" />
     </Definition>
@@ -3604,7 +3604,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="TransferSubscriptionsRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="SubscriptionIds" DataType="i=288" ValueRank="1" />
       <Field Name="SendInitialValues" DataType="i=1" />
@@ -3614,7 +3614,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="TransferSubscriptionsResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Results" DataType="i=836" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
@@ -3624,7 +3624,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DeleteSubscriptionsRequest">
+    <Definition>
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="SubscriptionIds" DataType="i=288" ValueRank="1" />
     </Definition>
@@ -3633,7 +3633,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DeleteSubscriptionsResponse">
+    <Definition>
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Results" DataType="i=19" ValueRank="1" />
       <Field Name="DiagnosticInfos" DataType="i=25" ValueRank="1" />
