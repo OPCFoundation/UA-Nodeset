@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2018 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -68,10 +68,6 @@
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>NamespaceUri</uax:Name>
       </uax:BrowseName>
-      <uax:Description>
-        <uax:Locale></uax:Locale>
-        <uax:Text>The URI of the namespace.</uax:Text>
-      </uax:Description>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
       </uax:ReferenceTypeId>
@@ -100,10 +96,6 @@
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>NamespaceVersion</uax:Name>
       </uax:BrowseName>
-      <uax:Description>
-        <uax:Locale></uax:Locale>
-        <uax:Text>The human readable string representing version of the namespace.</uax:Text>
-      </uax:Description>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
       </uax:ReferenceTypeId>
@@ -132,10 +124,6 @@
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>NamespacePublicationDate</uax:Name>
       </uax:BrowseName>
-      <uax:Description>
-        <uax:Locale></uax:Locale>
-        <uax:Text>The publication date for the namespace.</uax:Text>
-      </uax:Description>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
       </uax:ReferenceTypeId>
@@ -164,10 +152,6 @@
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>IsNamespaceSubset</uax:Name>
       </uax:BrowseName>
-      <uax:Description>
-        <uax:Locale></uax:Locale>
-        <uax:Text>If TRUE then the server only supports a subset of the namespace.</uax:Text>
-      </uax:Description>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
       </uax:ReferenceTypeId>
@@ -196,10 +180,6 @@
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>StaticNodeIdTypes</uax:Name>
       </uax:BrowseName>
-      <uax:Description>
-        <uax:Locale></uax:Locale>
-        <uax:Text>A list of IdTypes for nodes which are the same in every server that exposes them.</uax:Text>
-      </uax:Description>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
       </uax:ReferenceTypeId>
@@ -230,10 +210,6 @@
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>StaticNumericNodeIdRange</uax:Name>
       </uax:BrowseName>
-      <uax:Description>
-        <uax:Locale></uax:Locale>
-        <uax:Text>A list of ranges for numeric node ids which are the same in every server that exposes them.</uax:Text>
-      </uax:Description>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
       </uax:ReferenceTypeId>
@@ -264,10 +240,6 @@
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>StaticStringNodeIdPattern</uax:Name>
       </uax:BrowseName>
-      <uax:Description>
-        <uax:Locale></uax:Locale>
-        <uax:Text>A regular expression which matches string node ids are the same in every server that exposes them.</uax:Text>
-      </uax:Description>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
       </uax:ReferenceTypeId>
@@ -862,7 +834,6 @@
                       </uax:DataType>
                       <uax:ValueRank>-1</uax:ValueRank>
                       <uax:ArrayDimensions />
-                      <uax:Description xsi:nil="true" />
                     </uax:Argument>
                   </uax:Body>
                 </uax:ExtensionObject>
@@ -910,7 +881,6 @@
                       </uax:DataType>
                       <uax:ValueRank>-1</uax:ValueRank>
                       <uax:ArrayDimensions />
-                      <uax:Description xsi:nil="true" />
                     </uax:Argument>
                   </uax:Body>
                 </uax:ExtensionObject>
@@ -980,7 +950,6 @@
                       </uax:DataType>
                       <uax:ValueRank>-1</uax:ValueRank>
                       <uax:ArrayDimensions />
-                      <uax:Description xsi:nil="true" />
                     </uax:Argument>
                   </uax:Body>
                 </uax:ExtensionObject>
@@ -1050,7 +1019,6 @@
                       </uax:DataType>
                       <uax:ValueRank>-1</uax:ValueRank>
                       <uax:ArrayDimensions />
-                      <uax:Description xsi:nil="true" />
                     </uax:Argument>
                   </uax:Body>
                 </uax:ExtensionObject>
@@ -1120,7 +1088,6 @@
                       </uax:DataType>
                       <uax:ValueRank>-1</uax:ValueRank>
                       <uax:ArrayDimensions />
-                      <uax:Description xsi:nil="true" />
                     </uax:Argument>
                   </uax:Body>
                 </uax:ExtensionObject>
@@ -2468,7 +2435,6 @@
                       </uax:DataType>
                       <uax:ValueRank>-1</uax:ValueRank>
                       <uax:ArrayDimensions />
-                      <uax:Description xsi:nil="true" />
                     </uax:Argument>
                   </uax:Body>
                 </uax:ExtensionObject>
@@ -2516,7 +2482,6 @@
                       </uax:DataType>
                       <uax:ValueRank>-1</uax:ValueRank>
                       <uax:ArrayDimensions />
-                      <uax:Description xsi:nil="true" />
                     </uax:Argument>
                   </uax:Body>
                 </uax:ExtensionObject>
@@ -2586,7 +2551,6 @@
                       </uax:DataType>
                       <uax:ValueRank>-1</uax:ValueRank>
                       <uax:ArrayDimensions />
-                      <uax:Description xsi:nil="true" />
                     </uax:Argument>
                   </uax:Body>
                 </uax:ExtensionObject>
@@ -2656,7 +2620,6 @@
                       </uax:DataType>
                       <uax:ValueRank>-1</uax:ValueRank>
                       <uax:ArrayDimensions />
-                      <uax:Description xsi:nil="true" />
                     </uax:Argument>
                   </uax:Body>
                 </uax:ExtensionObject>
@@ -2726,7 +2689,6 @@
                       </uax:DataType>
                       <uax:ValueRank>-1</uax:ValueRank>
                       <uax:ArrayDimensions />
-                      <uax:Description xsi:nil="true" />
                     </uax:Argument>
                   </uax:Body>
                 </uax:ExtensionObject>
@@ -2945,7 +2907,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -2961,7 +2922,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -3031,7 +2991,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -3047,7 +3006,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -3117,7 +3075,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -3133,7 +3090,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -3149,7 +3105,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -3165,7 +3120,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -3213,7 +3167,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -3441,7 +3394,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -3489,7 +3441,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -3559,7 +3510,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -3629,7 +3579,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -3699,7 +3648,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -3925,10 +3873,6 @@ Y3R1cmVkVHlwZT4NCg0KPC9vcGM6VHlwZURpY3Rpb25hcnk+</uax:ByteString>
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>NamespaceUri</uax:Name>
       </uax:BrowseName>
-      <uax:Description>
-        <uax:Locale></uax:Locale>
-        <uax:Text>A URI that uniquely identifies the dictionary.</uax:Text>
-      </uax:Description>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
       </uax:ReferenceTypeId>
@@ -3957,10 +3901,6 @@ Y3R1cmVkVHlwZT4NCg0KPC9vcGM6VHlwZURpY3Rpb25hcnk+</uax:ByteString>
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>Deprecated</uax:Name>
       </uax:BrowseName>
-      <uax:Description>
-        <uax:Locale></uax:Locale>
-        <uax:Text>Indicates that all of the definitions for the dictionary are available through a DataTypeDefinition Attribute.</uax:Text>
-      </uax:Description>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
       </uax:ReferenceTypeId>
@@ -4347,10 +4287,6 @@ YWJsZT0idHJ1ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>NamespaceUri</uax:Name>
       </uax:BrowseName>
-      <uax:Description>
-        <uax:Locale></uax:Locale>
-        <uax:Text>A URI that uniquely identifies the dictionary.</uax:Text>
-      </uax:Description>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
       </uax:ReferenceTypeId>
@@ -4379,10 +4315,6 @@ YWJsZT0idHJ1ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>Deprecated</uax:Name>
       </uax:BrowseName>
-      <uax:Description>
-        <uax:Locale></uax:Locale>
-        <uax:Text>Indicates that all of the definitions for the dictionary are available through a DataTypeDefinition Attribute.</uax:Text>
-      </uax:Description>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
       </uax:ReferenceTypeId>

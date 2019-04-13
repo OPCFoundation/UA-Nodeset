@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2018 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -39,40 +39,30 @@ namespace Opc.Ua.Di
     #region DeviceHealthEnumeration Enumeration
     #if (!OPCUA_EXCLUDE_DeviceHealthEnumeration)
     /// <summary>
-    /// A description for the DeviceHealthEnumeration DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Di.Namespaces.OpcUaDiXsd)]
     public enum DeviceHealthEnumeration
     {
-        /// <summary>
-        /// This device functions normally.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "NORMAL_0")]
         NORMAL = 0,
 
-        /// <summary>
-        /// Malfunction of the device or any of its peripherals.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "FAILURE_1")]
         FAILURE = 1,
 
-        /// <summary>
-        /// Functional checks are currently performed.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "CHECK_FUNCTION_2")]
         CHECK_FUNCTION = 2,
 
-        /// <summary>
-        /// The device is currently working outside of its specified range or that internal diagnoses indicate deviations from measured or set values.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "OFF_SPEC_3")]
         OFF_SPEC = 3,
 
-        /// <summary>
-        /// This element is working, but a maintenance operation is required.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MAINTENANCE_REQUIRED_4")]
         MAINTENANCE_REQUIRED = 4,
     }
@@ -167,7 +157,7 @@ namespace Opc.Ua.Di
     #region FetchResultDataType Class
     #if (!OPCUA_EXCLUDE_FetchResultDataType)
     /// <summary>
-    /// A description for the FetchResultDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -371,7 +361,7 @@ namespace Opc.Ua.Di
     #region FetchResultErrorDataType Class
     #if (!OPCUA_EXCLUDE_FetchResultErrorDataType)
     /// <summary>
-    /// A description for the FetchResultErrorDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -407,9 +397,7 @@ namespace Opc.Ua.Di
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Status field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Status", IsRequired = false, Order = 1)]
         public int Status
         {
@@ -417,9 +405,7 @@ namespace Opc.Ua.Di
             set { m_status = value; }
         }
 
-        /// <summary>
-        /// A description for the Diagnostics field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Diagnostics", IsRequired = false, Order = 2)]
         public DiagnosticInfo Diagnostics
         {
@@ -611,7 +597,7 @@ namespace Opc.Ua.Di
     #region FetchResultDataDataType Class
     #if (!OPCUA_EXCLUDE_FetchResultDataDataType)
     /// <summary>
-    /// A description for the FetchResultDataDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -648,9 +634,7 @@ namespace Opc.Ua.Di
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the SequenceNumber field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SequenceNumber", IsRequired = false, Order = 1)]
         public int SequenceNumber
         {
@@ -658,9 +642,7 @@ namespace Opc.Ua.Di
             set { m_sequenceNumber = value; }
         }
 
-        /// <summary>
-        /// A description for the EndOfResults field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EndOfResults", IsRequired = false, Order = 2)]
         public bool EndOfResults
         {
@@ -669,7 +651,7 @@ namespace Opc.Ua.Di
         }
 
         /// <summary>
-        /// A description for the ParameterDefs field.
+        /// 
         /// </summary>
         [DataMember(Name = "ParameterDefs", IsRequired = false, Order = 3)]
         public ParameterResultDataTypeCollection ParameterDefs
@@ -879,7 +861,7 @@ namespace Opc.Ua.Di
     #region ParameterResultDataType Class
     #if (!OPCUA_EXCLUDE_ParameterResultDataType)
     /// <summary>
-    /// A description for the ParameterResultDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -917,7 +899,7 @@ namespace Opc.Ua.Di
 
         #region Public Properties
         /// <summary>
-        /// A description for the NodePath field.
+        /// 
         /// </summary>
         [DataMember(Name = "NodePath", IsRequired = false, Order = 1)]
         public QualifiedNameCollection NodePath
@@ -938,9 +920,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// A description for the StatusCode field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StatusCode", IsRequired = false, Order = 2)]
         public StatusCode StatusCode
         {
@@ -948,9 +928,7 @@ namespace Opc.Ua.Di
             set { m_statusCode = value; }
         }
 
-        /// <summary>
-        /// A description for the Diagnostics field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Diagnostics", IsRequired = false, Order = 3)]
         public DiagnosticInfo Diagnostics
         {

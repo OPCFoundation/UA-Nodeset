@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2018 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2019-01-31T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2019-04-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2019-01-31T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2019-04-15T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -71,7 +71,6 @@
   </Aliases>
   <UAObjectType NodeId="i=2391" BrowseName="ProgramStateMachineType">
     <DisplayName>ProgramStateMachineType</DisplayName>
-    <Description>A state machine for a program.</Description>
     <References>
       <Reference ReferenceType="HasComponent">i=3830</Reference>
       <Reference ReferenceType="HasComponent">i=3835</Reference>
@@ -344,7 +343,6 @@
   </UAObject>
   <UAObject NodeId="i=2406" BrowseName="Halted" ParentNodeId="i=2391">
     <DisplayName>Halted</DisplayName>
-    <Description>The Program is in a terminal or failed state, and it cannot be started or resumed without being reset.</Description>
     <References>
       <Reference ReferenceType="HasProperty">i=2407</Reference>
       <Reference ReferenceType="i=51" IsForward="false">i=2408</Reference>
@@ -368,7 +366,6 @@
   </UAVariable>
   <UAObject NodeId="i=2400" BrowseName="Ready" ParentNodeId="i=2391">
     <DisplayName>Ready</DisplayName>
-    <Description>The Program is properly initialized and may be started.</Description>
     <References>
       <Reference ReferenceType="HasProperty">i=2401</Reference>
       <Reference ReferenceType="i=52" IsForward="false">i=2408</Reference>
@@ -393,7 +390,6 @@
   </UAVariable>
   <UAObject NodeId="i=2402" BrowseName="Running" ParentNodeId="i=2391">
     <DisplayName>Running</DisplayName>
-    <Description>The Program is executing making progress towards completion.</Description>
     <References>
       <Reference ReferenceType="HasProperty">i=2403</Reference>
       <Reference ReferenceType="i=52" IsForward="false">i=2410</Reference>
@@ -418,7 +414,6 @@
   </UAVariable>
   <UAObject NodeId="i=2404" BrowseName="Suspended" ParentNodeId="i=2391">
     <DisplayName>Suspended</DisplayName>
-    <Description>The Program has been stopped prior to reaching a terminal state but may be resumed.</Description>
     <References>
       <Reference ReferenceType="HasProperty">i=2405</Reference>
       <Reference ReferenceType="i=52" IsForward="false">i=2416</Reference>
@@ -647,7 +642,6 @@
   </UAVariable>
   <UAMethod NodeId="i=2426" BrowseName="Start" ParentNodeId="i=2391">
     <DisplayName>Start</DisplayName>
-    <Description>Causes the Program to transition from the Ready state to the Running state.</Description>
     <References>
       <Reference ReferenceType="i=53" IsForward="false">i=2410</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
@@ -656,7 +650,6 @@
   </UAMethod>
   <UAMethod NodeId="i=2427" BrowseName="Suspend" ParentNodeId="i=2391">
     <DisplayName>Suspend</DisplayName>
-    <Description>Causes the Program to transition from the Running state to the Suspended state.</Description>
     <References>
       <Reference ReferenceType="i=53" IsForward="false">i=2416</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
@@ -665,7 +658,6 @@
   </UAMethod>
   <UAMethod NodeId="i=2428" BrowseName="Resume" ParentNodeId="i=2391">
     <DisplayName>Resume</DisplayName>
-    <Description>Causes the Program to transition from the Suspended state to the Running state.</Description>
     <References>
       <Reference ReferenceType="i=53" IsForward="false">i=2418</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
@@ -674,7 +666,6 @@
   </UAMethod>
   <UAMethod NodeId="i=2429" BrowseName="Halt" ParentNodeId="i=2391">
     <DisplayName>Halt</DisplayName>
-    <Description>Causes the Program to transition from the Ready, Running or Suspended state to the Halted state.</Description>
     <References>
       <Reference ReferenceType="i=53" IsForward="false">i=2412</Reference>
       <Reference ReferenceType="i=53" IsForward="false">i=2420</Reference>
@@ -685,7 +676,6 @@
   </UAMethod>
   <UAMethod NodeId="i=2430" BrowseName="Reset" ParentNodeId="i=2391">
     <DisplayName>Reset</DisplayName>
-    <Description>Causes the Program to transition from the Halted state to the Ready state.</Description>
     <References>
       <Reference ReferenceType="i=53" IsForward="false">i=2408</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>

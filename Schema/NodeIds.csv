@@ -103,8 +103,6 @@ DataTypeDescription_Encoding_DefaultBinary,125,Object
 StructureDescription_Encoding_DefaultBinary,126,Object
 EnumDescription_Encoding_DefaultBinary,127,Object
 RolePermissionType_Encoding_DefaultBinary,128,Object
-HasArgumentDescription,129,ReferenceType
-HasOptionalInputArgumentDescription,131,ReferenceType
 IdType,256,DataType
 NodeClass,257,DataType
 Node,258,DataType

@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2018 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -583,7 +583,6 @@
 #define OpcUa_BrowseName_Halted "Halted"
 #define OpcUa_BrowseName_HaltedToReady "HaltedToReady"
 #define OpcUa_BrowseName_HasAlarmSuppressionGroup "HasAlarmSuppressionGroup"
-#define OpcUa_BrowseName_HasArgumentDescription "HasArgumentDescription"
 #define OpcUa_BrowseName_HasCause "HasCause"
 #define OpcUa_BrowseName_HasChild "HasChild"
 #define OpcUa_BrowseName_HasComponent "HasComponent"
@@ -603,7 +602,6 @@
 #define OpcUa_BrowseName_HasHistoricalConfiguration "HasHistoricalConfiguration"
 #define OpcUa_BrowseName_HasModellingRule "HasModellingRule"
 #define OpcUa_BrowseName_HasNotifier "HasNotifier"
-#define OpcUa_BrowseName_HasOptionalInputArgumentDescription "HasOptionalInputArgumentDescription"
 #define OpcUa_BrowseName_HasOrderedComponent "HasOrderedComponent"
 #define OpcUa_BrowseName_HasProperty "HasProperty"
 #define OpcUa_BrowseName_HasPubSubConnection "HasPubSubConnection"

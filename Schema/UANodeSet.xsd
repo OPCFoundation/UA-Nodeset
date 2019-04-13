@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2018 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -310,9 +310,9 @@
       <xs:element name="DisplayName" type="LocalizedText" minOccurs="0" maxOccurs="unbounded"></xs:element>
       <xs:element name="Description" type="LocalizedText" minOccurs="0" maxOccurs="unbounded"></xs:element>
       <xs:element name="Category" type="xs:string" minOccurs="0" maxOccurs="unbounded"></xs:element>
+      <xs:element name="Documentation" type="xs:string" minOccurs="0"></xs:element>
       <xs:element name="References" type="ListOfReferences" minOccurs="0"></xs:element>
       <xs:element name="RolePermissions" type="ListOfRolePermissions" minOccurs="0"></xs:element>
-      <xs:element name="Documentation" type="xs:string" minOccurs="0"></xs:element>
       <xs:element name="Extensions" type="ListOfExtensions" minOccurs="0"></xs:element>
     </xs:sequence>
     <xs:attribute name="NodeId" type="NodeId" use="required"></xs:attribute>
@@ -476,7 +476,6 @@
     <xs:sequence>
       <xs:element name="DisplayName" type="LocalizedText" minOccurs="0" maxOccurs="unbounded"></xs:element>
       <xs:element name="Description" type="LocalizedText" minOccurs="0" maxOccurs="unbounded"></xs:element>
-      <xs:element name="Documentation" type="xs:string" minOccurs="0" maxOccurs="1"></xs:element>
     </xs:sequence>
     <xs:attribute name="Name" type="xs:string" use="required"></xs:attribute>
     <xs:attribute name="SymbolicName" type="SymbolicName" use="optional"></xs:attribute>

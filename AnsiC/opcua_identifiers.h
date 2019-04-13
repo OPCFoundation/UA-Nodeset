@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2018 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -2172,8 +2172,6 @@
 #define OpcUaId_HasEffect 54
 #define OpcUaId_HasSubStateMachine 117
 #define OpcUaId_HasHistoricalConfiguration 56
-#define OpcUaId_HasArgumentDescription 129
-#define OpcUaId_HasOptionalInputArgumentDescription 131
 #define OpcUaId_HasGuard 15112
 #define OpcUaId_HasTrueSubState 9004
 #define OpcUaId_HasFalseSubState 9005

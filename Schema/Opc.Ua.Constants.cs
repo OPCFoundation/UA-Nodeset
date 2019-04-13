@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2018 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -10693,16 +10693,6 @@ namespace Opc.Ua
         /// The identifier for the HasHistoricalConfiguration ReferenceType.
         /// </summary>
         public const uint HasHistoricalConfiguration = 56;
-
-        /// <summary>
-        /// The identifier for the HasArgumentDescription ReferenceType.
-        /// </summary>
-        public const uint HasArgumentDescription = 129;
-
-        /// <summary>
-        /// The identifier for the HasOptionalInputArgumentDescription ReferenceType.
-        /// </summary>
-        public const uint HasOptionalInputArgumentDescription = 131;
 
         /// <summary>
         /// The identifier for the HasGuard ReferenceType.
@@ -39615,16 +39605,6 @@ namespace Opc.Ua
         public static readonly NodeId HasHistoricalConfiguration = new NodeId(Opc.Ua.ReferenceTypes.HasHistoricalConfiguration);
 
         /// <summary>
-        /// The identifier for the HasArgumentDescription ReferenceType.
-        /// </summary>
-        public static readonly NodeId HasArgumentDescription = new NodeId(Opc.Ua.ReferenceTypes.HasArgumentDescription);
-
-        /// <summary>
-        /// The identifier for the HasOptionalInputArgumentDescription ReferenceType.
-        /// </summary>
-        public static readonly NodeId HasOptionalInputArgumentDescription = new NodeId(Opc.Ua.ReferenceTypes.HasOptionalInputArgumentDescription);
-
-        /// <summary>
         /// The identifier for the HasGuard ReferenceType.
         /// </summary>
         public static readonly NodeId HasGuard = new NodeId(Opc.Ua.ReferenceTypes.HasGuard);
@@ -60649,11 +60629,6 @@ namespace Opc.Ua
         public const string HasAlarmSuppressionGroup = "HasAlarmSuppressionGroup";
 
         /// <summary>
-        /// The BrowseName for the HasArgumentDescription component.
-        /// </summary>
-        public const string HasArgumentDescription = "HasArgumentDescription";
-
-        /// <summary>
         /// The BrowseName for the HasCause component.
         /// </summary>
         public const string HasCause = "HasCause";
@@ -60747,11 +60722,6 @@ namespace Opc.Ua
         /// The BrowseName for the HasNotifier component.
         /// </summary>
         public const string HasNotifier = "HasNotifier";
-
-        /// <summary>
-        /// The BrowseName for the HasOptionalInputArgumentDescription component.
-        /// </summary>
-        public const string HasOptionalInputArgumentDescription = "HasOptionalInputArgumentDescription";
 
         /// <summary>
         /// The BrowseName for the HasOrderedComponent component.
