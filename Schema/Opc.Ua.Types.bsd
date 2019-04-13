@@ -119,8 +119,8 @@
     <opc:Documentation>A recursive structure containing diagnostic information associated with a status code.</opc:Documentation>
     <opc:Field Name="SymbolicIdSpecified" TypeName="opc:Bit" />
     <opc:Field Name="NamespaceURISpecified" TypeName="opc:Bit" />
-    <opc:Field Name="LocaleSpecified" TypeName="opc:Bit" />
     <opc:Field Name="LocalizedTextSpecified" TypeName="opc:Bit" />
+    <opc:Field Name="LocaleSpecified" TypeName="opc:Bit" />
     <opc:Field Name="AdditionalInfoSpecified" TypeName="opc:Bit" />
     <opc:Field Name="InnerStatusCodeSpecified" TypeName="opc:Bit" />
     <opc:Field Name="InnerDiagnosticInfoSpecified" TypeName="opc:Bit" />
