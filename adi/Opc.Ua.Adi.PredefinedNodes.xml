@@ -1,4 +1,33 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ *
+ * OPC Foundation MIT License 1.00
+ * 
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ * 
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * The complete license agreement can be found here:
+ * http://opcfoundation.org/License/MIT/1.00/
+-->
+
 <uax:ListOfNodeState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
   <uax:NamespaceUris>
     <uax:NamespaceUri>http://opcfoundation.org/UA/ADI/</uax:NamespaceUri>
@@ -124,10 +153,6 @@
             <uax:NamespaceIndex>0</uax:NamespaceIndex>
             <uax:Name>Size</uax:Name>
           </uax:BrowseName>
-          <uax:Description>
-            <uax:Locale></uax:Locale>
-            <uax:Text>The size of the file in bytes.</uax:Text>
-          </uax:Description>
           <uax:ReferenceTypeId>
             <uax:Identifier>i=46</uax:Identifier>
           </uax:ReferenceTypeId>
@@ -154,10 +179,6 @@
             <uax:NamespaceIndex>0</uax:NamespaceIndex>
             <uax:Name>Writable</uax:Name>
           </uax:BrowseName>
-          <uax:Description>
-            <uax:Locale></uax:Locale>
-            <uax:Text>Whether the file is writable.</uax:Text>
-          </uax:Description>
           <uax:ReferenceTypeId>
             <uax:Identifier>i=46</uax:Identifier>
           </uax:ReferenceTypeId>
@@ -184,10 +205,6 @@
             <uax:NamespaceIndex>0</uax:NamespaceIndex>
             <uax:Name>UserWritable</uax:Name>
           </uax:BrowseName>
-          <uax:Description>
-            <uax:Locale></uax:Locale>
-            <uax:Text>Whether the file is writable by the current user.</uax:Text>
-          </uax:Description>
           <uax:ReferenceTypeId>
             <uax:Identifier>i=46</uax:Identifier>
           </uax:ReferenceTypeId>
@@ -214,10 +231,6 @@
             <uax:NamespaceIndex>0</uax:NamespaceIndex>
             <uax:Name>OpenCount</uax:Name>
           </uax:BrowseName>
-          <uax:Description>
-            <uax:Locale></uax:Locale>
-            <uax:Text>The current number of open file handles.</uax:Text>
-          </uax:Description>
           <uax:ReferenceTypeId>
             <uax:Identifier>i=46</uax:Identifier>
           </uax:ReferenceTypeId>
@@ -290,7 +303,6 @@
                         </uax:DataType>
                         <uax:ValueRank>-1</uax:ValueRank>
                         <uax:ArrayDimensions />
-                        <uax:Description xsi:nil="true" />
                       </uax:Argument>
                     </uax:Body>
                   </uax:ExtensionObject>
@@ -338,7 +350,6 @@
                         </uax:DataType>
                         <uax:ValueRank>-1</uax:ValueRank>
                         <uax:ArrayDimensions />
-                        <uax:Description xsi:nil="true" />
                       </uax:Argument>
                     </uax:Body>
                   </uax:ExtensionObject>
@@ -408,7 +419,6 @@
                         </uax:DataType>
                         <uax:ValueRank>-1</uax:ValueRank>
                         <uax:ArrayDimensions />
-                        <uax:Description xsi:nil="true" />
                       </uax:Argument>
                     </uax:Body>
                   </uax:ExtensionObject>
@@ -478,7 +488,6 @@
                         </uax:DataType>
                         <uax:ValueRank>-1</uax:ValueRank>
                         <uax:ArrayDimensions />
-                        <uax:Description xsi:nil="true" />
                       </uax:Argument>
                     </uax:Body>
                   </uax:ExtensionObject>
@@ -494,7 +503,6 @@
                         </uax:DataType>
                         <uax:ValueRank>-1</uax:ValueRank>
                         <uax:ArrayDimensions />
-                        <uax:Description xsi:nil="true" />
                       </uax:Argument>
                     </uax:Body>
                   </uax:ExtensionObject>
@@ -542,7 +550,6 @@
                         </uax:DataType>
                         <uax:ValueRank>-1</uax:ValueRank>
                         <uax:ArrayDimensions />
-                        <uax:Description xsi:nil="true" />
                       </uax:Argument>
                     </uax:Body>
                   </uax:ExtensionObject>
@@ -612,7 +619,6 @@
                         </uax:DataType>
                         <uax:ValueRank>-1</uax:ValueRank>
                         <uax:ArrayDimensions />
-                        <uax:Description xsi:nil="true" />
                       </uax:Argument>
                     </uax:Body>
                   </uax:ExtensionObject>
@@ -628,7 +634,6 @@
                         </uax:DataType>
                         <uax:ValueRank>-1</uax:ValueRank>
                         <uax:ArrayDimensions />
-                        <uax:Description xsi:nil="true" />
                       </uax:Argument>
                     </uax:Body>
                   </uax:ExtensionObject>
@@ -698,7 +703,6 @@
                         </uax:DataType>
                         <uax:ValueRank>-1</uax:ValueRank>
                         <uax:ArrayDimensions />
-                        <uax:Description xsi:nil="true" />
                       </uax:Argument>
                     </uax:Body>
                   </uax:ExtensionObject>
@@ -746,7 +750,6 @@
                         </uax:DataType>
                         <uax:ValueRank>-1</uax:ValueRank>
                         <uax:ArrayDimensions />
-                        <uax:Description xsi:nil="true" />
                       </uax:Argument>
                     </uax:Body>
                   </uax:ExtensionObject>
@@ -816,7 +819,6 @@
                         </uax:DataType>
                         <uax:ValueRank>-1</uax:ValueRank>
                         <uax:ArrayDimensions />
-                        <uax:Description xsi:nil="true" />
                       </uax:Argument>
                     </uax:Body>
                   </uax:ExtensionObject>
@@ -832,7 +834,6 @@
                         </uax:DataType>
                         <uax:ValueRank>-1</uax:ValueRank>
                         <uax:ArrayDimensions />
-                        <uax:Description xsi:nil="true" />
                       </uax:Argument>
                     </uax:Body>
                   </uax:ExtensionObject>
@@ -927,7 +928,6 @@
                       </uax:DataType>
                       <uax:ValueRank>-1</uax:ValueRank>
                       <uax:ArrayDimensions />
-                      <uax:Description xsi:nil="true" />
                     </uax:Argument>
                   </uax:Body>
                 </uax:ExtensionObject>
@@ -997,7 +997,6 @@
                       </uax:DataType>
                       <uax:ValueRank>-1</uax:ValueRank>
                       <uax:ArrayDimensions />
-                      <uax:Description xsi:nil="true" />
                     </uax:Argument>
                   </uax:Body>
                 </uax:ExtensionObject>
@@ -1045,7 +1044,6 @@
                       </uax:DataType>
                       <uax:ValueRank>-1</uax:ValueRank>
                       <uax:ArrayDimensions />
-                      <uax:Description xsi:nil="true" />
                     </uax:Argument>
                   </uax:Body>
                 </uax:ExtensionObject>
@@ -1115,7 +1113,6 @@
                       </uax:DataType>
                       <uax:ValueRank>-1</uax:ValueRank>
                       <uax:ArrayDimensions />
-                      <uax:Description xsi:nil="true" />
                     </uax:Argument>
                   </uax:Body>
                 </uax:ExtensionObject>
@@ -1185,7 +1182,6 @@
                       </uax:DataType>
                       <uax:ValueRank>-1</uax:ValueRank>
                       <uax:ArrayDimensions />
-                      <uax:Description xsi:nil="true" />
                     </uax:Argument>
                   </uax:Body>
                 </uax:ExtensionObject>
@@ -1233,7 +1229,6 @@
                       </uax:DataType>
                       <uax:ValueRank>-1</uax:ValueRank>
                       <uax:ArrayDimensions />
-                      <uax:Description xsi:nil="true" />
                     </uax:Argument>
                   </uax:Body>
                 </uax:ExtensionObject>
@@ -1760,7 +1755,6 @@
                         </uax:DataType>
                         <uax:ValueRank>-1</uax:ValueRank>
                         <uax:ArrayDimensions />
-                        <uax:Description xsi:nil="true" />
                       </uax:Argument>
                     </uax:Body>
                   </uax:ExtensionObject>
@@ -1776,7 +1770,6 @@
                         </uax:DataType>
                         <uax:ValueRank>-1</uax:ValueRank>
                         <uax:ArrayDimensions />
-                        <uax:Description xsi:nil="true" />
                       </uax:Argument>
                     </uax:Body>
                   </uax:ExtensionObject>
@@ -1792,7 +1785,6 @@
                         </uax:DataType>
                         <uax:ValueRank>-1</uax:ValueRank>
                         <uax:ArrayDimensions />
-                        <uax:Description xsi:nil="true" />
                       </uax:Argument>
                     </uax:Body>
                   </uax:ExtensionObject>
@@ -3939,7 +3931,6 @@
                       </uax:DataType>
                       <uax:ValueRank>-1</uax:ValueRank>
                       <uax:ArrayDimensions />
-                      <uax:Description xsi:nil="true" />
                     </uax:Argument>
                   </uax:Body>
                 </uax:ExtensionObject>
@@ -3955,7 +3946,6 @@
                       </uax:DataType>
                       <uax:ValueRank>-1</uax:ValueRank>
                       <uax:ArrayDimensions />
-                      <uax:Description xsi:nil="true" />
                     </uax:Argument>
                   </uax:Body>
                 </uax:ExtensionObject>
@@ -3971,7 +3961,6 @@
                       </uax:DataType>
                       <uax:ValueRank>-1</uax:ValueRank>
                       <uax:ArrayDimensions />
-                      <uax:Description xsi:nil="true" />
                     </uax:Argument>
                   </uax:Body>
                 </uax:ExtensionObject>
@@ -18223,487 +18212,6 @@
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>10446</uax:NumericId>
-      <IsEnabled xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10468</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>IsEnabled</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>True if this stream maybe used to perform acquisition</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2365</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10468</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=1</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-        <uax:References>
-          <uax:Reference>
-            <uax:ReferenceTypeId>
-              <uax:Identifier>i=35</uax:Identifier>
-            </uax:ReferenceTypeId>
-            <uax:IsInverse>true</uax:IsInverse>
-            <uax:TargetId>
-              <uax:Identifier>ns=1;i=10559</uax:Identifier>
-            </uax:TargetId>
-          </uax:Reference>
-        </uax:References>
-      </IsEnabled>
-      <DiagnosticStatus xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10474</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>DiagnosticStatus</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Stream health status</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2365</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10474</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>ns=2;i=6244</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </DiagnosticStatus>
-      <LastSampleTime xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10483</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>LastSampleTime</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Time at which the last sample was acquired</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2365</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10483</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=13</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </LastSampleTime>
-      <IsActive xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10492</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>IsActive</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>True if this stream is actually running, acquiring data</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2365</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10492</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=1</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-        <uax:References>
-          <uax:Reference>
-            <uax:ReferenceTypeId>
-              <uax:Identifier>i=35</uax:Identifier>
-            </uax:ReferenceTypeId>
-            <uax:IsInverse>true</uax:IsInverse>
-            <uax:TargetId>
-              <uax:Identifier>ns=1;i=10565</uax:Identifier>
-            </uax:TargetId>
-          </uax:Reference>
-        </uax:References>
-      </IsActive>
-      <ExecutionCycle xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10495</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>ExecutionCycle</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Indicates which Execution cycle is in progress</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2365</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10495</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>ns=1;i=9378</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-        <uax:References>
-          <uax:Reference>
-            <uax:ReferenceTypeId>
-              <uax:Identifier>i=35</uax:Identifier>
-            </uax:ReferenceTypeId>
-            <uax:IsInverse>true</uax:IsInverse>
-            <uax:TargetId>
-              <uax:Identifier>ns=1;i=10565</uax:Identifier>
-            </uax:TargetId>
-          </uax:Reference>
-        </uax:References>
-      </ExecutionCycle>
-      <ExecutionCycleSubcode xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10498</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>ExecutionCycleSubcode</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Indicates which Execution cycle subcode is in progress</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2376</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10498</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=28</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-        <uax:References>
-          <uax:Reference>
-            <uax:ReferenceTypeId>
-              <uax:Identifier>i=35</uax:Identifier>
-            </uax:ReferenceTypeId>
-            <uax:IsInverse>true</uax:IsInverse>
-            <uax:TargetId>
-              <uax:Identifier>ns=1;i=10565</uax:Identifier>
-            </uax:TargetId>
-          </uax:Reference>
-        </uax:References>
-        <EnumStrings xmlns="http://opcfoundation.org/UA/">
-          <uax:NodeClass>Variable_2</uax:NodeClass>
-          <uax:NodeId>
-            <uax:Identifier>ns=1;i=10501</uax:Identifier>
-          </uax:NodeId>
-          <uax:BrowseName>
-            <uax:NamespaceIndex>0</uax:NamespaceIndex>
-            <uax:Name>EnumStrings</uax:Name>
-          </uax:BrowseName>
-          <uax:ReferenceTypeId>
-            <uax:Identifier>i=46</uax:Identifier>
-          </uax:ReferenceTypeId>
-          <uax:TypeDefinitionId>
-            <uax:Identifier>i=68</uax:Identifier>
-          </uax:TypeDefinitionId>
-          <uax:ModellingRuleId>
-            <uax:Identifier>i=78</uax:Identifier>
-          </uax:ModellingRuleId>
-          <uax:NumericId>10501</uax:NumericId>
-          <uax:DataType>
-            <uax:Identifier>i=21</uax:Identifier>
-          </uax:DataType>
-          <uax:ValueRank>1</uax:ValueRank>
-          <uax:AccessLevel>1</uax:AccessLevel>
-          <uax:UserAccessLevel>1</uax:UserAccessLevel>
-        </EnumStrings>
-      </ExecutionCycleSubcode>
-      <Progress xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10502</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>Progress</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Indicates the progress of an acquisition in terms of percentage of completion. Its value shall be between 0 and 100.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2365</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10502</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=10</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-        <uax:References>
-          <uax:Reference>
-            <uax:ReferenceTypeId>
-              <uax:Identifier>i=35</uax:Identifier>
-            </uax:ReferenceTypeId>
-            <uax:IsInverse>true</uax:IsInverse>
-            <uax:TargetId>
-              <uax:Identifier>ns=1;i=10565</uax:Identifier>
-            </uax:TargetId>
-          </uax:Reference>
-        </uax:References>
-      </Progress>
-      <AcquisitionCounter xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10505</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>AcquisitionCounter</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Simple counter incremented after each Sampling acquisition performed on this Stream</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2368</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10505</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=289</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-        <uax:References>
-          <uax:Reference>
-            <uax:ReferenceTypeId>
-              <uax:Identifier>i=35</uax:Identifier>
-            </uax:ReferenceTypeId>
-            <uax:IsInverse>true</uax:IsInverse>
-            <uax:TargetId>
-              <uax:Identifier>ns=1;i=10567</uax:Identifier>
-            </uax:TargetId>
-          </uax:Reference>
-        </uax:References>
-        <EURange xmlns="http://opcfoundation.org/UA/">
-          <uax:NodeClass>Variable_2</uax:NodeClass>
-          <uax:NodeId>
-            <uax:Identifier>ns=1;i=10509</uax:Identifier>
-          </uax:NodeId>
-          <uax:BrowseName>
-            <uax:NamespaceIndex>0</uax:NamespaceIndex>
-            <uax:Name>EURange</uax:Name>
-          </uax:BrowseName>
-          <uax:ReferenceTypeId>
-            <uax:Identifier>i=46</uax:Identifier>
-          </uax:ReferenceTypeId>
-          <uax:TypeDefinitionId>
-            <uax:Identifier>i=68</uax:Identifier>
-          </uax:TypeDefinitionId>
-          <uax:ModellingRuleId>
-            <uax:Identifier>i=78</uax:Identifier>
-          </uax:ModellingRuleId>
-          <uax:NumericId>10509</uax:NumericId>
-          <uax:DataType>
-            <uax:Identifier>i=884</uax:Identifier>
-          </uax:DataType>
-          <uax:ValueRank>-1</uax:ValueRank>
-          <uax:AccessLevel>1</uax:AccessLevel>
-          <uax:UserAccessLevel>1</uax:UserAccessLevel>
-        </EURange>
-      </AcquisitionCounter>
-      <AcquisitionResultStatus xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10511</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>AcquisitionResultStatus</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Quality of the acquisition</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2365</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10511</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>ns=1;i=3003</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-        <uax:References>
-          <uax:Reference>
-            <uax:ReferenceTypeId>
-              <uax:Identifier>i=35</uax:Identifier>
-            </uax:ReferenceTypeId>
-            <uax:IsInverse>true</uax:IsInverse>
-            <uax:TargetId>
-              <uax:Identifier>ns=1;i=10567</uax:Identifier>
-            </uax:TargetId>
-          </uax:Reference>
-        </uax:References>
-      </AcquisitionResultStatus>
-      <ScaledData xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10517</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>ScaledData</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Scaled data produced as a result of data acquisition on the Stream and application of the analyser model</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2365</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10517</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=24</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-        <uax:References>
-          <uax:Reference>
-            <uax:ReferenceTypeId>
-              <uax:Identifier>i=35</uax:Identifier>
-            </uax:ReferenceTypeId>
-            <uax:IsInverse>true</uax:IsInverse>
-            <uax:TargetId>
-              <uax:Identifier>ns=1;i=10567</uax:Identifier>
-            </uax:TargetId>
-          </uax:Reference>
-        </uax:References>
-      </ScaledData>
-      <AcquisitionEndTime xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10523</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>AcquisitionEndTime</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>The end time of the AnalyseSample or AnalyseCalibrationSample or AnalyseValidationSample state of the AnalyserChannel_OperatingModeExecuteSubStateMachine state machine</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2365</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10523</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=13</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-        <uax:References>
-          <uax:Reference>
-            <uax:ReferenceTypeId>
-              <uax:Identifier>i=35</uax:Identifier>
-            </uax:ReferenceTypeId>
-            <uax:IsInverse>true</uax:IsInverse>
-            <uax:TargetId>
-              <uax:Identifier>ns=1;i=10567</uax:Identifier>
-            </uax:TargetId>
-          </uax:Reference>
-        </uax:References>
-      </AcquisitionEndTime>
       <ActiveBackground xmlns="http://opcfoundation.org/UA/ADI/">
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
@@ -19967,432 +19475,6 @@
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>10768</uax:NumericId>
-      <IsEnabled xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10790</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>IsEnabled</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>True if this stream maybe used to perform acquisition</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2365</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10790</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=1</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </IsEnabled>
-      <DiagnosticStatus xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10796</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>DiagnosticStatus</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Stream health status</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2365</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10796</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>ns=2;i=6244</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </DiagnosticStatus>
-      <LastSampleTime xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10805</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>LastSampleTime</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Time at which the last sample was acquired</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2365</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10805</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=13</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </LastSampleTime>
-      <IsActive xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10814</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>IsActive</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>True if this stream is actually running, acquiring data</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2365</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10814</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=1</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </IsActive>
-      <ExecutionCycle xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10817</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>ExecutionCycle</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Indicates which Execution cycle is in progress</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2365</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10817</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>ns=1;i=9378</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </ExecutionCycle>
-      <ExecutionCycleSubcode xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10820</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>ExecutionCycleSubcode</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Indicates which Execution cycle subcode is in progress</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2376</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10820</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=28</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-        <EnumStrings xmlns="http://opcfoundation.org/UA/">
-          <uax:NodeClass>Variable_2</uax:NodeClass>
-          <uax:NodeId>
-            <uax:Identifier>ns=1;i=10823</uax:Identifier>
-          </uax:NodeId>
-          <uax:BrowseName>
-            <uax:NamespaceIndex>0</uax:NamespaceIndex>
-            <uax:Name>EnumStrings</uax:Name>
-          </uax:BrowseName>
-          <uax:ReferenceTypeId>
-            <uax:Identifier>i=46</uax:Identifier>
-          </uax:ReferenceTypeId>
-          <uax:TypeDefinitionId>
-            <uax:Identifier>i=68</uax:Identifier>
-          </uax:TypeDefinitionId>
-          <uax:ModellingRuleId>
-            <uax:Identifier>i=78</uax:Identifier>
-          </uax:ModellingRuleId>
-          <uax:NumericId>10823</uax:NumericId>
-          <uax:DataType>
-            <uax:Identifier>i=21</uax:Identifier>
-          </uax:DataType>
-          <uax:ValueRank>1</uax:ValueRank>
-          <uax:AccessLevel>1</uax:AccessLevel>
-          <uax:UserAccessLevel>1</uax:UserAccessLevel>
-        </EnumStrings>
-      </ExecutionCycleSubcode>
-      <Progress xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10824</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>Progress</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Indicates the progress of an acquisition in terms of percentage of completion. Its value shall be between 0 and 100.</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2365</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10824</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=10</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </Progress>
-      <AcquisitionCounter xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10827</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>AcquisitionCounter</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Simple counter incremented after each Sampling acquisition performed on this Stream</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2368</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10827</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=289</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-        <uax:References>
-          <uax:Reference>
-            <uax:ReferenceTypeId>
-              <uax:Identifier>i=35</uax:Identifier>
-            </uax:ReferenceTypeId>
-            <uax:IsInverse>true</uax:IsInverse>
-            <uax:TargetId>
-              <uax:Identifier>ns=1;i=10889</uax:Identifier>
-            </uax:TargetId>
-          </uax:Reference>
-        </uax:References>
-        <EURange xmlns="http://opcfoundation.org/UA/">
-          <uax:NodeClass>Variable_2</uax:NodeClass>
-          <uax:NodeId>
-            <uax:Identifier>ns=1;i=10831</uax:Identifier>
-          </uax:NodeId>
-          <uax:BrowseName>
-            <uax:NamespaceIndex>0</uax:NamespaceIndex>
-            <uax:Name>EURange</uax:Name>
-          </uax:BrowseName>
-          <uax:ReferenceTypeId>
-            <uax:Identifier>i=46</uax:Identifier>
-          </uax:ReferenceTypeId>
-          <uax:TypeDefinitionId>
-            <uax:Identifier>i=68</uax:Identifier>
-          </uax:TypeDefinitionId>
-          <uax:ModellingRuleId>
-            <uax:Identifier>i=78</uax:Identifier>
-          </uax:ModellingRuleId>
-          <uax:NumericId>10831</uax:NumericId>
-          <uax:DataType>
-            <uax:Identifier>i=884</uax:Identifier>
-          </uax:DataType>
-          <uax:ValueRank>-1</uax:ValueRank>
-          <uax:AccessLevel>1</uax:AccessLevel>
-          <uax:UserAccessLevel>1</uax:UserAccessLevel>
-        </EURange>
-      </AcquisitionCounter>
-      <AcquisitionResultStatus xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10833</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>AcquisitionResultStatus</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Quality of the acquisition</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2365</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10833</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>ns=1;i=3003</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-        <uax:References>
-          <uax:Reference>
-            <uax:ReferenceTypeId>
-              <uax:Identifier>i=35</uax:Identifier>
-            </uax:ReferenceTypeId>
-            <uax:IsInverse>true</uax:IsInverse>
-            <uax:TargetId>
-              <uax:Identifier>ns=1;i=10889</uax:Identifier>
-            </uax:TargetId>
-          </uax:Reference>
-        </uax:References>
-      </AcquisitionResultStatus>
-      <ScaledData xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10839</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>ScaledData</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Scaled data produced as a result of data acquisition on the Stream and application of the analyser model</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2365</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10839</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=24</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-        <uax:References>
-          <uax:Reference>
-            <uax:ReferenceTypeId>
-              <uax:Identifier>i=35</uax:Identifier>
-            </uax:ReferenceTypeId>
-            <uax:IsInverse>true</uax:IsInverse>
-            <uax:TargetId>
-              <uax:Identifier>ns=1;i=10889</uax:Identifier>
-            </uax:TargetId>
-          </uax:Reference>
-        </uax:References>
-      </ScaledData>
-      <AcquisitionEndTime xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=10845</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>AcquisitionEndTime</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>The end time of the AnalyseSample or AnalyseCalibrationSample or AnalyseValidationSample state of the AnalyserChannel_OperatingModeExecuteSubStateMachine state machine</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2365</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>10845</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=13</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-        <uax:References>
-          <uax:Reference>
-            <uax:ReferenceTypeId>
-              <uax:Identifier>i=35</uax:Identifier>
-            </uax:ReferenceTypeId>
-            <uax:IsInverse>true</uax:IsInverse>
-            <uax:TargetId>
-              <uax:Identifier>ns=1;i=10889</uax:Identifier>
-            </uax:TargetId>
-          </uax:Reference>
-        </uax:References>
-      </AcquisitionEndTime>
       <Background xmlns="http://opcfoundation.org/UA/ADI/">
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
@@ -20886,36 +19968,6 @@
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>11305</uax:NumericId>
-      <DiagnosticStatus xmlns="http://opcfoundation.org/UA/ADI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=11384</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>1</uax:NamespaceIndex>
-          <uax:Name>DiagnosticStatus</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>General health status of the analyser</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=47</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=2365</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>11384</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>ns=2;i=6244</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </DiagnosticStatus>
       <SpectralRange xmlns="http://opcfoundation.org/UA/ADI/">
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
@@ -24117,10 +23169,6 @@ YT4=</uax:ByteString>
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>NamespaceUri</uax:Name>
       </uax:BrowseName>
-      <uax:Description>
-        <uax:Locale></uax:Locale>
-        <uax:Text>A URI that uniquely identifies the dictionary.</uax:Text>
-      </uax:Description>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
       </uax:ReferenceTypeId>
@@ -24224,10 +23272,6 @@ MzIiIC8+DQogIDwvb3BjOkVudW1lcmF0ZWRUeXBlPg0KDQo8L29wYzpUeXBlRGljdGlvbmFyeT4=</ua
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>NamespaceUri</uax:Name>
       </uax:BrowseName>
-      <uax:Description>
-        <uax:Locale></uax:Locale>
-        <uax:Text>A URI that uniquely identifies the dictionary.</uax:Text>
-      </uax:Description>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
       </uax:ReferenceTypeId>

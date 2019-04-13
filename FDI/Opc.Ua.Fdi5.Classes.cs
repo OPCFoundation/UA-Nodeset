@@ -1,8 +1,8 @@
 /* ========================================================================
- * Copyright (c) 2005-2016 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
- *
+ * 
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
  * files (the "Software"), to deal in the Software without
@@ -11,7 +11,7 @@
  * copies of the Software, and to permit persons to whom the
  * Software is furnished to do so, subject to the following
  * conditions:
- *
+ * 
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
@@ -30,7 +30,6 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Reflection;
 using System.Xml;
 using System.Runtime.Serialization;
 using Opc.Ua.Di;
@@ -87,6 +86,15 @@ namespace Opc.Ua.Fdi5
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -170,6 +178,15 @@ namespace Opc.Ua.Fdi5
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -204,9 +221,7 @@ namespace Opc.Ua.Fdi5
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the UIPVariantVersion Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> UIPVariantVersion
         {
             get
@@ -225,9 +240,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the FDITechnologyVersion Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> FDITechnologyVersion
         {
             get
@@ -246,9 +259,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the RuntimeId Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> RuntimeId
         {
             get
@@ -267,9 +278,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the CpuInformation Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> CpuInformation
         {
             get
@@ -288,9 +297,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the PlatformId Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> PlatformId
         {
             get
@@ -309,9 +316,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the Style Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<StyleType> Style
         {
             get
@@ -330,9 +335,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the StartElementName Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> StartElementName
         {
             get
@@ -351,9 +354,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the Documentation Object.
-        /// </summary>
+        /// <remarks />
         public FolderState Documentation
         {
             get
@@ -672,6 +673,15 @@ namespace Opc.Ua.Fdi5
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -773,44 +783,39 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string actionName = (string)inputArguments[0];
-            string methodArguments = (string)inputArguments[1];
+            string actionName = (string)_inputArguments[0];
+            string methodArguments = (string)_inputArguments[1];
 
-            NodeId actionNodeId = (NodeId)outputArguments[0];
-            int invokeActionError = (int)outputArguments[1];
+            NodeId actionNodeId = (NodeId)_outputArguments[0];
+            int invokeActionError = (int)_outputArguments[1];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     actionName,
                     methodArguments,
                     ref actionNodeId,
                     ref invokeActionError);
             }
 
-            outputArguments[0] = actionNodeId;
-            outputArguments[1] = invokeActionError;
+            _outputArguments[0] = actionNodeId;
+            _outputArguments[1] = invokeActionError;
 
             return result;
         }
@@ -907,41 +912,36 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            NodeId actionNodeId = (NodeId)inputArguments[0];
-            string response = (string)inputArguments[1];
+            NodeId actionNodeId = (NodeId)_inputArguments[0];
+            string response = (string)_inputArguments[1];
 
-            int respondActionError = (int)outputArguments[0];
+            int respondActionError = (int)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     actionNodeId,
                     response,
                     ref respondActionError);
             }
 
-            outputArguments[0] = respondActionError;
+            _outputArguments[0] = respondActionError;
 
             return result;
         }
@@ -1036,39 +1036,34 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            NodeId actionNodeId = (NodeId)inputArguments[0];
+            NodeId actionNodeId = (NodeId)_inputArguments[0];
 
-            int abortActionError = (int)outputArguments[0];
+            int abortActionError = (int)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     actionNodeId,
                     ref abortActionError);
             }
 
-            outputArguments[0] = abortActionError;
+            _outputArguments[0] = abortActionError;
 
             return result;
         }
@@ -1127,6 +1122,15 @@ namespace Opc.Ua.Fdi5
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -1158,9 +1162,7 @@ namespace Opc.Ua.Fdi5
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the InvokeActionMethodType Method.
-        /// </summary>
+        /// <remarks />
         public InvokeActionMethodState InvokeAction
         {
             get
@@ -1179,9 +1181,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the RespondActionMethodType Method.
-        /// </summary>
+        /// <remarks />
         public RespondActionMethodState RespondAction
         {
             get
@@ -1200,9 +1200,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the AbortActionMethodType Method.
-        /// </summary>
+        /// <remarks />
         public AbortActionMethodState AbortAction
         {
             get
@@ -1423,44 +1421,39 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string parentId = (string)inputArguments[0];
-            WindowModeType targetWindowMode = (WindowModeType)inputArguments[1];
+            string parentId = (string)_inputArguments[0];
+            WindowModeType targetWindowMode = (WindowModeType)_inputArguments[1];
 
-            string editContextId = (string)outputArguments[0];
-            int getEditContextStatus = (int)outputArguments[1];
+            string editContextId = (string)_outputArguments[0];
+            int getEditContextStatus = (int)_outputArguments[1];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     parentId,
                     targetWindowMode,
                     ref editContextId,
                     ref getEditContextStatus);
             }
 
-            outputArguments[0] = editContextId;
-            outputArguments[1] = getEditContextStatus;
+            _outputArguments[0] = editContextId;
+            _outputArguments[1] = getEditContextStatus;
 
             return result;
         }
@@ -1557,41 +1550,36 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string editContextId = (string)inputArguments[0];
-            RegistrationParameters[] nodesToRegister = (RegistrationParameters[])ExtensionObject.ToArray(inputArguments[1], typeof(RegistrationParameters));
+            string editContextId = (string)_inputArguments[0];
+            RegistrationParameters[] nodesToRegister = (RegistrationParameters[])ExtensionObject.ToArray(_inputArguments[1], typeof(RegistrationParameters));
 
-            RegisterNodesResult registerNodesStatus = (RegisterNodesResult)outputArguments[0];
+            RegisterNodesResult registerNodesStatus = (RegisterNodesResult)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     editContextId,
                     nodesToRegister,
                     ref registerNodesStatus);
             }
 
-            outputArguments[0] = registerNodesStatus;
+            _outputArguments[0] = registerNodesStatus;
 
             return result;
         }
@@ -1686,39 +1674,34 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string editContextId = (string)inputArguments[0];
+            string editContextId = (string)_inputArguments[0];
 
-            ApplyResult applyStatus = (ApplyResult)outputArguments[0];
+            ApplyResult applyStatus = (ApplyResult)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     editContextId,
                     ref applyStatus);
             }
 
-            outputArguments[0] = applyStatus;
+            _outputArguments[0] = applyStatus;
 
             return result;
         }
@@ -1812,39 +1795,34 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string editContextId = (string)inputArguments[0];
+            string editContextId = (string)_inputArguments[0];
 
-            int resetStatus = (int)outputArguments[0];
+            int resetStatus = (int)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     editContextId,
                     ref resetStatus);
             }
 
-            outputArguments[0] = resetStatus;
+            _outputArguments[0] = resetStatus;
 
             return result;
         }
@@ -1938,39 +1916,34 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string editContextId = (string)inputArguments[0];
+            string editContextId = (string)_inputArguments[0];
 
-            int discardStatus = (int)outputArguments[0];
+            int discardStatus = (int)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     editContextId,
                     ref discardStatus);
             }
 
-            outputArguments[0] = discardStatus;
+            _outputArguments[0] = discardStatus;
 
             return result;
         }
@@ -2029,6 +2002,15 @@ namespace Opc.Ua.Fdi5
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -2074,9 +2056,7 @@ namespace Opc.Ua.Fdi5
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the GetEditContextMethodType Method.
-        /// </summary>
+        /// <remarks />
         public GetEditContextMethodState GetEditContext
         {
             get
@@ -2095,9 +2075,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the RegisterNodesMethodType Method.
-        /// </summary>
+        /// <remarks />
         public RegisterNodesMethodState RegisterNodesById
         {
             get
@@ -2116,9 +2094,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the RegisterNodesMethodType Method.
-        /// </summary>
+        /// <remarks />
         public RegisterNodesMethodState RegisterNodesByRelativePath
         {
             get
@@ -2137,9 +2113,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the ApplyMethodType Method.
-        /// </summary>
+        /// <remarks />
         public ApplyMethodState Apply
         {
             get
@@ -2158,9 +2132,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the ResetMethodType Method.
-        /// </summary>
+        /// <remarks />
         public ResetMethodState Reset
         {
             get
@@ -2179,9 +2151,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the DiscardMethodType Method.
-        /// </summary>
+        /// <remarks />
         public DiscardMethodState Discard
         {
             get
@@ -2481,39 +2451,34 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string context = (string)inputArguments[0];
+            string context = (string)_inputArguments[0];
 
-            int initDirectAccessError = (int)outputArguments[0];
+            int initDirectAccessError = (int)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     context,
                     ref initDirectAccessError);
             }
 
-            outputArguments[0] = initDirectAccessError;
+            _outputArguments[0] = initDirectAccessError;
 
             return result;
         }
@@ -2608,41 +2573,36 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string sendData = (string)inputArguments[0];
-            string receiveData = (string)inputArguments[1];
+            string sendData = (string)_inputArguments[0];
+            string receiveData = (string)_inputArguments[1];
 
-            int transferError = (int)outputArguments[0];
+            int transferError = (int)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     sendData,
                     receiveData,
                     ref transferError);
             }
 
-            outputArguments[0] = transferError;
+            _outputArguments[0] = transferError;
 
             return result;
         }
@@ -2737,39 +2697,34 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            bool invalidateCache = (bool)inputArguments[0];
+            bool invalidateCache = (bool)_inputArguments[0];
 
-            int endDirectAccessError = (int)outputArguments[0];
+            int endDirectAccessError = (int)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     invalidateCache,
                     ref endDirectAccessError);
             }
 
-            outputArguments[0] = endDirectAccessError;
+            _outputArguments[0] = endDirectAccessError;
 
             return result;
         }
@@ -2828,6 +2783,15 @@ namespace Opc.Ua.Fdi5
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -2858,9 +2822,7 @@ namespace Opc.Ua.Fdi5
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the InitDirectAccessMethodType Method.
-        /// </summary>
+        /// <remarks />
         public InitDirectAccessMethodState InitDirectAccess
         {
             get
@@ -2879,9 +2841,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the TransferMethodType Method.
-        /// </summary>
+        /// <remarks />
         public TransferMethodState Transfer
         {
             get
@@ -2900,9 +2860,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the EndDirectAccessMethodType Method.
-        /// </summary>
+        /// <remarks />
         public EndDirectAccessMethodState EndDirectAccess
         {
             get
@@ -3119,32 +3077,27 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string message = (string)inputArguments[0];
+            string message = (string)_inputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     message);
             }
 

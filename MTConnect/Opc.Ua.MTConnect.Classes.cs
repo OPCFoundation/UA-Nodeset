@@ -1,8 +1,8 @@
 /* ========================================================================
- * Copyright (c) 2005-2016 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
- *
+ * 
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
  * files (the "Software"), to deal in the Software without
@@ -11,7 +11,7 @@
  * copies of the Software, and to permit persons to whom the
  * Software is furnished to do so, subject to the following
  * conditions:
- *
+ * 
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
@@ -30,7 +30,6 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Reflection;
 using System.Xml;
 using System.Runtime.Serialization;
 using Opc.Ua;
@@ -70,6 +69,15 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -119,9 +127,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the MTConnectVersion Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<string> MTConnectVersion
         {
             get
@@ -140,9 +146,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the OPCUAMappingDate Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<DateTime> OPCUAMappingDate
         {
             get
@@ -161,9 +165,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the OPCUAVersion Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<string> OPCUAVersion
         {
             get
@@ -347,6 +349,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -397,9 +408,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Availability Variable.
-        /// </summary>
+        /// <remarks />
         public DataItemState<string> Availability
         {
             get
@@ -418,9 +427,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Manufacturer Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> Manufacturer
         {
             get
@@ -439,9 +446,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the SerialNumber Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> SerialNumber
         {
             get
@@ -460,9 +465,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Configuration Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> Configuration
         {
             get
@@ -481,9 +484,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the SampleInterval Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<double> SampleInterval
         {
             get
@@ -502,9 +503,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the DataItems Object.
-        /// </summary>
+        /// <remarks />
         public FolderState DataItems
         {
             get
@@ -523,9 +522,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Components Object.
-        /// </summary>
+        /// <remarks />
         public FolderState Components
         {
             get
@@ -544,9 +541,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Conditions Object.
-        /// </summary>
+        /// <remarks />
         public FolderState Conditions
         {
             get
@@ -865,6 +860,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -905,9 +909,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Model Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> Model
         {
             get
@@ -926,9 +928,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Station Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<double> Station
         {
             get
@@ -1085,6 +1085,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -1165,9 +1174,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the LinearAxesX Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> LinearAxesX
         {
             get
@@ -1186,9 +1193,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the LinearAxesY Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> LinearAxesY
         {
             get
@@ -1207,9 +1212,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the LinearAxesZ Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> LinearAxesZ
         {
             get
@@ -1228,9 +1231,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the RotoryAxesA Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> RotoryAxesA
         {
             get
@@ -1249,9 +1250,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the RotoryAxesB Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> RotoryAxesB
         {
             get
@@ -1270,9 +1269,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the RotoryAxesC Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> RotoryAxesC
         {
             get
@@ -1537,6 +1534,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -1604,6 +1610,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -1634,9 +1649,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the DoorState Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> DoorState
         {
             get
@@ -1766,6 +1779,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -1796,9 +1818,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the LinearAxesX Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> LinearAxesX
         {
             get
@@ -1944,6 +1964,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -2001,9 +2030,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the CoordinateSystem Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<CoordinateSystemTypeEnum> CoordinateSystem
         {
             get
@@ -2022,9 +2049,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the NativeUnits Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<EUInformation> NativeUnits
         {
             get
@@ -2043,9 +2068,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the NativeScale Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<float> NativeScale
         {
             get
@@ -2064,9 +2087,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the SampleInterval Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<double> SampleInterval
         {
             get
@@ -2267,6 +2288,15 @@ namespace Opc.Ua.MTConnect
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
         }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
         #endregion
 
         #region Public Members
@@ -2343,6 +2373,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -2396,6 +2435,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -2473,6 +2521,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -2526,6 +2583,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -2603,6 +2669,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -2656,6 +2731,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -2733,6 +2817,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -2786,6 +2879,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -2863,6 +2965,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -2916,6 +3027,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -2993,6 +3113,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -3046,6 +3175,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -3123,6 +3261,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -3176,6 +3323,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -3253,6 +3409,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -3306,6 +3471,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -3383,6 +3557,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -3436,6 +3619,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -3513,6 +3705,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -3566,6 +3767,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -3643,6 +3853,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -3696,6 +3915,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -3773,6 +4001,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -3826,6 +4063,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -3903,6 +4149,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -3956,6 +4211,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -4033,6 +4297,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -4086,6 +4359,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -4163,6 +4445,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -4216,6 +4507,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -4293,6 +4593,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -4346,6 +4655,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -4423,6 +4741,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -4476,6 +4803,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -4553,6 +4889,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -4606,6 +4951,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -4683,6 +5037,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -4736,6 +5099,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -4813,6 +5185,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -4866,6 +5247,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -4943,6 +5333,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -4996,6 +5395,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -5073,6 +5481,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -5126,6 +5543,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -5203,6 +5629,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -5256,6 +5691,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -5333,6 +5777,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -5386,6 +5839,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -5463,6 +5925,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -5516,6 +5987,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -5593,6 +6073,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -5646,6 +6135,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -5723,6 +6221,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -5776,6 +6283,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -5853,6 +6369,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -5906,6 +6431,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -5983,6 +6517,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -6036,6 +6579,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -6113,6 +6665,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -6166,6 +6727,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -6243,6 +6813,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -6296,6 +6875,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -6373,6 +6961,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -6426,6 +7023,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -6503,6 +7109,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -6556,6 +7171,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -6633,6 +7257,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -6686,6 +7319,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -6763,6 +7405,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -6816,6 +7467,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -6893,6 +7553,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -6946,6 +7615,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -7023,6 +7701,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -7059,9 +7746,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the CoordinateSystem Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<CoordinateSystemTypeEnum> CoordinateSystem
         {
             get
@@ -7080,9 +7765,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the SampleInterval Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<double> SampleInterval
         {
             get
@@ -7229,6 +7912,15 @@ namespace Opc.Ua.MTConnect
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
         }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
         #endregion
 
         #region Public Members
@@ -7302,6 +7994,15 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -7384,6 +8085,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -7460,6 +8170,15 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -7542,6 +8261,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -7618,6 +8346,15 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -7700,6 +8437,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -7776,6 +8522,15 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -7858,6 +8613,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -7934,6 +8698,15 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -8016,6 +8789,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -8092,6 +8874,15 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -8174,6 +8965,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -8250,6 +9050,15 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -8332,6 +9141,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -8408,6 +9226,15 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -8490,6 +9317,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -8566,6 +9402,15 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -8648,6 +9493,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -8724,6 +9578,15 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -8806,6 +9669,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -8882,6 +9754,15 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -8964,6 +9845,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -9040,6 +9930,15 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -9122,6 +10021,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -9185,6 +10093,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -9224,56 +10141,47 @@ namespace Opc.Ua.MTConnect
 
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "FwAAAE1UQ29uZGl0aW9uVHlwZUluc3RhbmNlAQEUHAEBFBz/////GwAAADVgiQoCAAAAAAAHAAAARXZl" +
-           "bnRJZAEBFRwDAAAAACsAAABBIGdsb2JhbGx5IHVuaXF1ZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQu" +
-           "AC4ARBUcAAAAD/////8BAf////8AAAAANWCJCgIAAAAAAAkAAABFdmVudFR5cGUBARYcAwAAAAAiAAAA" +
-           "VGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0eXBlLgAuAEQWHAAAABH/////AQH/////AAAAADVg" +
-           "iQoCAAAAAAAKAAAAU291cmNlTm9kZQEBFxwDAAAAABgAAABUaGUgc291cmNlIG9mIHRoZSBldmVudC4A" +
-           "LgBEFxwAAAAR/////wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBARgcAwAAAAApAAAA" +
-           "QSBkZXNjcmlwdGlvbiBvZiB0aGUgc291cmNlIG9mIHRoZSBldmVudC4ALgBEGBwAAAAM/////wEB////" +
-           "/wAAAAA1YIkKAgAAAAAABAAAAFRpbWUBARkcAwAAAAAYAAAAV2hlbiB0aGUgZXZlbnQgb2NjdXJyZWQu" +
-           "AC4ARBkcAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQEaHAMAAAAA" +
-           "PgAAAFdoZW4gdGhlIHNlcnZlciByZWNlaXZlZCB0aGUgZXZlbnQgZnJvbSB0aGUgdW5kZXJseWluZyBz" +
-           "eXN0ZW0uAC4ARBocAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAExvY2FsVGltZQEBGxwD" +
-           "AAAAADwAAABJbmZvcm1hdGlvbiBhYm91dCB0aGUgbG9jYWwgdGltZSB3aGVyZSB0aGUgZXZlbnQgb3Jp" +
-           "Z2luYXRlZC4ALgBEGxwAAAEA0CL/////AQH/////AAAAADVgiQoCAAAAAAAHAAAATWVzc2FnZQEBHBwD" +
-           "AAAAACUAAABBIGxvY2FsaXplZCBkZXNjcmlwdGlvbiBvZiB0aGUgZXZlbnQuAC4ARBwcAAAAFf////8B" +
-           "Af////8AAAAANWCJCgIAAAAAAAgAAABTZXZlcml0eQEBHRwDAAAAACEAAABJbmRpY2F0ZXMgaG93IHVy" +
-           "Z2VudCBhbiBldmVudCBpcy4ALgBEHRwAAAAF/////wEB/////wAAAAAVYIkKAgAAAAAAEAAAAENvbmRp" +
-           "dGlvbkNsYXNzSWQBAR4cAC4ARB4cAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIAAABDb25kaXRp" +
-           "b25DbGFzc05hbWUBAR8cAC4ARB8cAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0AAABDb25kaXRp" +
-           "b25OYW1lAQEgHAAuAEQgHAAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJhbmNoSWQBASEc" +
-           "AC4ARCEcAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BASIcAC4ARCIcAAAAAf//" +
-           "//8BAf////8AAAAAFWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBASMcAC8BACMjIxwAAAAV/////wEB" +
-           "/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQEkHAAuAEQkHAAAAAH/////AQH/////AAAAABVgiQoCAAAA" +
-           "AAAHAAAAUXVhbGl0eQEBLBwALwEAKiMsHAAAABP/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291" +
-           "cmNlVGltZXN0YW1wAQEtHAAuAEQtHAAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABMYXN0" +
-           "U2V2ZXJpdHkBAS4cAC8BACojLhwAAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRp" +
-           "bWVzdGFtcAEBLxwALgBELxwAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQ29tbWVudAEB" +
-           "MBwALwEAKiMwHAAAABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQEx" +
-           "HAAuAEQxHAAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQBATIcAC4A" +
-           "RDIcAAAADP////8BAf////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQEzHAAvAQBEIzMcAAABAQEA" +
-           "AAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAYAAABFbmFibGUBATQcAC8BAEMjNBwAAAEBAQAAAAEA+QsA" +
-           "AQDzCgAAAAAEYYIKBAAAAAAACgAAAEFkZENvbW1lbnQBATUcAC8BAEUjNRwAAAEBAQAAAAEA+QsAAQAN" +
-           "CwEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQE2HAAuAEQ2HAAAlgIAAAABACoBAUYAAAAH" +
-           "AAAARXZlbnRJZAAP/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHRv" +
-           "IGNvbW1lbnQuAQAqAQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhlIGNvbW1lbnQg" +
-           "dG8gYWRkIHRvIHRoZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAABAA4AAABNVEN1" +
-           "cnJlbnRTdGF0ZQEBORwALwA/ORwAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAEFjdGl2ZVN0" +
-           "YXRlAQE6HAAvAQAjIzocAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBOxwALgBEOxwA" +
-           "AAAB/////wEB/////wAAAAAEYIAKAQAAAAEACgAAAExpbWl0U3RhdGUBAUMcAC8BAGYkQxwAAP////8B" +
-           "AAAAFWCJCgIAAAAAAAwAAABDdXJyZW50U3RhdGUBAUQcAC8BAMgKRBwAAAAV/////wEB/////wEAAAAV" +
-           "YIkKAgAAAAAAAgAAAElkAQFFHAAuAERFHAAAABH/////AQH/////AAAAABVgiQoCAAAAAQAKAAAATmF0" +
-           "aXZlQ29kZQEBTxwALgBETxwAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEADgAAAE5hdGl2ZVNldmVy" +
-           "aXR5AQFQHAAuAERQHAAAAAz/////AQH/////AAAAAA==";
+           "FwAAAE1UQ29uZGl0aW9uVHlwZUluc3RhbmNlAQEUHAEBFBz/////GwAAABVgiQoCAAAAAAAHAAAARXZl" +
+           "bnRJZAEBFRwALgBEFRwAAAAP/////wEB/////wAAAAAVYIkKAgAAAAAACQAAAEV2ZW50VHlwZQEBFhwA" +
+           "LgBEFhwAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBARccAC4ARBccAAAA" +
+           "Ef////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQEYHAAuAEQYHAAAAAz/////AQH/" +
+           "////AAAAABVgiQoCAAAAAAAEAAAAVGltZQEBGRwALgBEGRwAAAEAJgH/////AQH/////AAAAABVgiQoC" +
+           "AAAAAAALAAAAUmVjZWl2ZVRpbWUBARocAC4ARBocAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAA" +
+           "CQAAAExvY2FsVGltZQEBGxwALgBEGxwAAAEA0CL/////AQH/////AAAAABVgiQoCAAAAAAAHAAAATWVz" +
+           "c2FnZQEBHBwALgBEHBwAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAFNldmVyaXR5AQEdHAAu" +
+           "AEQdHAAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAQ29uZGl0aW9uQ2xhc3NJZAEBHhwALgBE" +
+           "HhwAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAENvbmRpdGlvbkNsYXNzTmFtZQEBHxwALgBE" +
+           "HxwAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAENvbmRpdGlvbk5hbWUBASAcAC4ARCAcAAAA" +
+           "DP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFuY2hJZAEBIRwALgBEIRwAAAAR/////wEB////" +
+           "/wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBIhwALgBEIhwAAAAB/////wEB/////wAAAAAVYIkKAgAA" +
+           "AAAADAAAAEVuYWJsZWRTdGF0ZQEBIxwALwEAIyMjHAAAABX/////AQH/////AQAAABVgiQoCAAAAAAAC" +
+           "AAAASWQBASQcAC4ARCQcAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABRdWFsaXR5AQEsHAAv" +
+           "AQAqIywcAAAAE/////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAS0cAC4A" +
+           "RC0cAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAExhc3RTZXZlcml0eQEBLhwALwEAKiMu" +
+           "HAAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQEvHAAuAEQvHAAA" +
+           "AQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABDb21tZW50AQEwHAAvAQAqIzAcAAAAFf////8B" +
+           "Af////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABATEcAC4ARDEcAAABACYB/////wEB" +
+           "/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJZAEBMhwALgBEMhwAAAAM/////wEB/////wAA" +
+           "AAAEYYIKBAAAAAAABwAAAERpc2FibGUBATMcAC8BAEQjMxwAAAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIK" +
+           "BAAAAAAABgAAAEVuYWJsZQEBNBwALwEAQyM0HAAAAQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAK" +
+           "AAAAQWRkQ29tbWVudAEBNRwALwEARSM1HAAAAQEBAAAAAQD5CwABAA0LAQAAABVgqQoCAAAAAAAOAAAA" +
+           "SW5wdXRBcmd1bWVudHMBATYcAC4ARDYcAACWAgAAAAEAKgEBRgAAAAcAAABFdmVudElkAA//////AAAA" +
+           "AAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdG8gY29tbWVudC4BACoBAUIAAAAH" +
+           "AAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUgY29tbWVudCB0byBhZGQgdG8gdGhlIGNvbmRp" +
+           "dGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEADgAAAE1UQ3VycmVudFN0YXRlAQE5HAAvAD85" +
+           "HAAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAAQWN0aXZlU3RhdGUBATocAC8BACMjOhwAAAAV" +
+           "/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQE7HAAuAEQ7HAAAAAH/////AQH/////AAAAAARg" +
+           "gAoBAAAAAQAKAAAATGltaXRTdGF0ZQEBQxwALwEAZiRDHAAA/////wEAAAAVYIkKAgAAAAAADAAAAEN1" +
+           "cnJlbnRTdGF0ZQEBRBwALwEAyApEHAAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAUUc" +
+           "AC4AREUcAAAAEf////8BAf////8AAAAAFWCJCgIAAAABAAoAAABOYXRpdmVDb2RlAQFPHAAuAERPHAAA" +
+           "AAz/////AQH/////AAAAABVgiQoCAAAAAQAOAAAATmF0aXZlU2V2ZXJpdHkBAVAcAC4ARFAcAAAADP//" +
+           "//8BAf////8AAAAA";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the MTCurrentState Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<string> MTCurrentState
         {
             get
@@ -9292,9 +10200,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the ActiveState Variable.
-        /// </summary>
+        /// <remarks />
         public TwoStateVariableState ActiveState
         {
             get
@@ -9313,9 +10219,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the LimitState Object.
-        /// </summary>
+        /// <remarks />
         public ExclusiveLimitStateMachineState LimitState
         {
             get
@@ -9334,9 +10238,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the NativeCode Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> NativeCode
         {
             get
@@ -9355,9 +10257,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the NativeSeverity Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> NativeSeverity
         {
             get
@@ -9595,6 +10495,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -9605,44 +10514,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "IQAAAEFjY2VsZXJhdGlvbkNvbmRpdGlvblR5cGVJbnN0YW5jZQEBURwBAVEc/////xgAAAA1YIkKAgAA" +
-           "AAAABwAAAEV2ZW50SWQBAVIcAwAAAAArAAAAQSBnbG9iYWxseSB1bmlxdWUgaWRlbnRpZmllciBmb3Ig" +
-           "dGhlIGV2ZW50LgAuAERSHAAAAA//////AQH/////AAAAADVgiQoCAAAAAAAJAAAARXZlbnRUeXBlAQFT" +
-           "HAMAAAAAIgAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdHlwZS4ALgBEUxwAAAAR/////wEB" +
-           "/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBAVQcAwAAAAAYAAAAVGhlIHNvdXJjZSBvZiB0" +
-           "aGUgZXZlbnQuAC4ARFQcAAAAEf////8BAf////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQFV" +
-           "HAMAAAAAKQAAAEEgZGVzY3JpcHRpb24gb2YgdGhlIHNvdXJjZSBvZiB0aGUgZXZlbnQuAC4ARFUcAAAA" +
-           "DP////8BAf////8AAAAANWCJCgIAAAAAAAQAAABUaW1lAQFWHAMAAAAAGAAAAFdoZW4gdGhlIGV2ZW50" +
-           "IG9jY3VycmVkLgAuAERWHAAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAsAAABSZWNlaXZlVGlt" +
-           "ZQEBVxwDAAAAAD4AAABXaGVuIHRoZSBzZXJ2ZXIgcmVjZWl2ZWQgdGhlIGV2ZW50IGZyb20gdGhlIHVu" +
-           "ZGVybHlpbmcgc3lzdGVtLgAuAERXHAAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAkAAABMb2Nh" +
-           "bFRpbWUBAVgcAwAAAAA8AAAASW5mb3JtYXRpb24gYWJvdXQgdGhlIGxvY2FsIHRpbWUgd2hlcmUgdGhl" +
-           "IGV2ZW50IG9yaWdpbmF0ZWQuAC4ARFgcAAABANAi/////wEB/////wAAAAA1YIkKAgAAAAAABwAAAE1l" +
-           "c3NhZ2UBAVkcAwAAAAAlAAAAQSBsb2NhbGl6ZWQgZGVzY3JpcHRpb24gb2YgdGhlIGV2ZW50LgAuAERZ" +
-           "HAAAABX/////AQH/////AAAAADVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkBAVocAwAAAAAhAAAASW5kaWNh" +
-           "dGVzIGhvdyB1cmdlbnQgYW4gZXZlbnQgaXMuAC4ARFocAAAABf////8BAf////8AAAAAFWCJCgIAAAAA" +
-           "ABAAAABDb25kaXRpb25DbGFzc0lkAQFbHAAuAERbHAAAABH/////AQH/////AAAAABVgiQoCAAAAAAAS" +
-           "AAAAQ29uZGl0aW9uQ2xhc3NOYW1lAQFcHAAuAERcHAAAABX/////AQH/////AAAAABVgiQoCAAAAAAAN" +
-           "AAAAQ29uZGl0aW9uTmFtZQEBXRwALgBEXRwAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJy" +
-           "YW5jaElkAQFeHAAuAEReHAAAABH/////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQFfHAAu" +
-           "AERfHAAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQFgHAAvAQAjI2Ac" +
-           "AAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBYRwALgBEYRwAAAAB/////wEB/////wAA" +
-           "AAAVYIkKAgAAAAAABwAAAFF1YWxpdHkBAWkcAC8BACojaRwAAAAT/////wEB/////wEAAAAVYIkKAgAA" +
-           "AAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBahwALgBEahwAAAEAJgH/////AQH/////AAAAABVgiQoCAAAA" +
-           "AAAMAAAATGFzdFNldmVyaXR5AQFrHAAvAQAqI2scAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8A" +
-           "AABTb3VyY2VUaW1lc3RhbXABAWwcAC4ARGwcAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAA" +
-           "AENvbW1lbnQBAW0cAC8BACojbRwAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRp" +
-           "bWVzdGFtcAEBbhwALgBEbhwAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNl" +
-           "cklkAQFvHAAuAERvHAAAAAz/////AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBcBwALwEA" +
-           "RCNwHAAAAQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQFxHAAvAQBDI3EcAAAB" +
-           "AQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAoAAABBZGRDb21tZW50AQFyHAAvAQBFI3IcAAABAQEA" +
-           "AAABAPkLAAEADQsBAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBcxwALgBEcxwAAJYCAAAA" +
-           "AQAqAQFGAAAABwAAAEV2ZW50SWQAD/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRo" +
-           "ZSBldmVudCB0byBjb21tZW50LgEAKgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRo" +
-           "ZSBjb21tZW50IHRvIGFkZCB0byB0aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAA" +
-           "AQAOAAAATVRDdXJyZW50U3RhdGUBAXYcAC8AP3YcAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsA" +
-           "AABBY3RpdmVTdGF0ZQEBdxwALwEAIyN3HAAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQB" +
-           "AXgcAC4ARHgcAAAAAf////8BAf////8AAAAA";
+           "IQAAAEFjY2VsZXJhdGlvbkNvbmRpdGlvblR5cGVJbnN0YW5jZQEBURwBAVEc/////xgAAAAVYIkKAgAA" +
+           "AAAABwAAAEV2ZW50SWQBAVIcAC4ARFIcAAAAD/////8BAf////8AAAAAFWCJCgIAAAAAAAkAAABFdmVu" +
+           "dFR5cGUBAVMcAC4ARFMcAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQFU" +
+           "HAAuAERUHAAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEBVRwALgBEVRwA" +
+           "AAAM/////wEB/////wAAAAAVYIkKAgAAAAAABAAAAFRpbWUBAVYcAC4ARFYcAAABACYB/////wEB////" +
+           "/wAAAAAVYIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQFXHAAuAERXHAAAAQAmAf////8BAf////8AAAAA" +
+           "FWCJCgIAAAAAAAkAAABMb2NhbFRpbWUBAVgcAC4ARFgcAAABANAi/////wEB/////wAAAAAVYIkKAgAA" +
+           "AAAABwAAAE1lc3NhZ2UBAVkcAC4ARFkcAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABTZXZl" +
+           "cml0eQEBWhwALgBEWhwAAAAF/////wEB/////wAAAAAVYIkKAgAAAAAAEAAAAENvbmRpdGlvbkNsYXNz" +
+           "SWQBAVscAC4ARFscAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIAAABDb25kaXRpb25DbGFzc05h" +
+           "bWUBAVwcAC4ARFwcAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0AAABDb25kaXRpb25OYW1lAQFd" +
+           "HAAuAERdHAAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJhbmNoSWQBAV4cAC4ARF4cAAAA" +
+           "Ef////8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BAV8cAC4ARF8cAAAAAf////8BAf////8A" +
+           "AAAAFWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBAWAcAC8BACMjYBwAAAAV/////wEB/////wEAAAAV" +
+           "YIkKAgAAAAAAAgAAAElkAQFhHAAuAERhHAAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAUXVh" +
+           "bGl0eQEBaRwALwEAKiNpHAAAABP/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0" +
+           "YW1wAQFqHAAuAERqHAAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABMYXN0U2V2ZXJpdHkB" +
+           "AWscAC8BACojaxwAAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEB" +
+           "bBwALgBEbBwAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQ29tbWVudAEBbRwALwEAKiNt" +
+           "HAAAABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQFuHAAuAERuHAAA" +
+           "AQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQBAW8cAC4ARG8cAAAADP//" +
+           "//8BAf////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQFwHAAvAQBEI3AcAAABAQEAAAABAPkLAAEA" +
+           "8woAAAAABGGCCgQAAAAAAAYAAABFbmFibGUBAXEcAC8BAEMjcRwAAAEBAQAAAAEA+QsAAQDzCgAAAAAE" +
+           "YYIKBAAAAAAACgAAAEFkZENvbW1lbnQBAXIcAC8BAEUjchwAAAEBAQAAAAEA+QsAAQANCwEAAAAVYKkK" +
+           "AgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFzHAAuAERzHAAAlgIAAAABACoBAUYAAAAHAAAARXZlbnRJ" +
+           "ZAAP/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHRvIGNvbW1lbnQu" +
+           "AQAqAQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhlIGNvbW1lbnQgdG8gYWRkIHRv" +
+           "IHRoZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAABAA4AAABNVEN1cnJlbnRTdGF0" +
+           "ZQEBdhwALwA/dhwAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAEFjdGl2ZVN0YXRlAQF3HAAv" +
+           "AQAjI3ccAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBeBwALgBEeBwAAAAB/////wEB" +
+           "/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -9695,6 +10597,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -9705,44 +10616,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "JQAAAEFjY3VtdWxhdGVkX1RpbWVDb25kaXRpb25UeXBlSW5zdGFuY2UBAY4cAQGOHP////8YAAAANWCJ" +
-           "CgIAAAAAAAcAAABFdmVudElkAQGPHAMAAAAAKwAAAEEgZ2xvYmFsbHkgdW5pcXVlIGlkZW50aWZpZXIg" +
-           "Zm9yIHRoZSBldmVudC4ALgBEjxwAAAAP/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAEV2ZW50VHlw" +
-           "ZQEBkBwDAAAAACIAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHR5cGUuAC4ARJAcAAAAEf//" +
-           "//8BAf////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQGRHAMAAAAAGAAAAFRoZSBzb3VyY2Ug" +
-           "b2YgdGhlIGV2ZW50LgAuAESRHAAAABH/////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTmFt" +
-           "ZQEBkhwDAAAAACkAAABBIGRlc2NyaXB0aW9uIG9mIHRoZSBzb3VyY2Ugb2YgdGhlIGV2ZW50LgAuAESS" +
-           "HAAAAAz/////AQH/////AAAAADVgiQoCAAAAAAAEAAAAVGltZQEBkxwDAAAAABgAAABXaGVuIHRoZSBl" +
-           "dmVudCBvY2N1cnJlZC4ALgBEkxwAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAALAAAAUmVjZWl2" +
-           "ZVRpbWUBAZQcAwAAAAA+AAAAV2hlbiB0aGUgc2VydmVyIHJlY2VpdmVkIHRoZSBldmVudCBmcm9tIHRo" +
-           "ZSB1bmRlcmx5aW5nIHN5c3RlbS4ALgBElBwAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAAJAAAA" +
-           "TG9jYWxUaW1lAQGVHAMAAAAAPAAAAEluZm9ybWF0aW9uIGFib3V0IHRoZSBsb2NhbCB0aW1lIHdoZXJl" +
-           "IHRoZSBldmVudCBvcmlnaW5hdGVkLgAuAESVHAAAAQDQIv////8BAf////8AAAAANWCJCgIAAAAAAAcA" +
-           "AABNZXNzYWdlAQGWHAMAAAAAJQAAAEEgbG9jYWxpemVkIGRlc2NyaXB0aW9uIG9mIHRoZSBldmVudC4A" +
-           "LgBElhwAAAAV/////wEB/////wAAAAA1YIkKAgAAAAAACAAAAFNldmVyaXR5AQGXHAMAAAAAIQAAAElu" +
-           "ZGljYXRlcyBob3cgdXJnZW50IGFuIGV2ZW50IGlzLgAuAESXHAAAAAX/////AQH/////AAAAABVgiQoC" +
-           "AAAAAAAQAAAAQ29uZGl0aW9uQ2xhc3NJZAEBmBwALgBEmBwAAAAR/////wEB/////wAAAAAVYIkKAgAA" +
-           "AAAAEgAAAENvbmRpdGlvbkNsYXNzTmFtZQEBmRwALgBEmRwAAAAV/////wEB/////wAAAAAVYIkKAgAA" +
-           "AAAADQAAAENvbmRpdGlvbk5hbWUBAZocAC4ARJocAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgA" +
-           "AABCcmFuY2hJZAEBmxwALgBEmxwAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEB" +
-           "nBwALgBEnBwAAAAB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBnRwALwEA" +
-           "IyOdHAAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAZ4cAC4ARJ4cAAAAAf////8BAf//" +
-           "//8AAAAAFWCJCgIAAAAAAAcAAABRdWFsaXR5AQGmHAAvAQAqI6YcAAAAE/////8BAf////8BAAAAFWCJ" +
-           "CgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAaccAC4ARKccAAABACYB/////wEB/////wAAAAAVYIkK" +
-           "AgAAAAAADAAAAExhc3RTZXZlcml0eQEBqBwALwEAKiOoHAAAAAX/////AQH/////AQAAABVgiQoCAAAA" +
-           "AAAPAAAAU291cmNlVGltZXN0YW1wAQGpHAAuAESpHAAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAA" +
-           "AAcAAABDb21tZW50AQGqHAAvAQAqI6ocAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3Vy" +
-           "Y2VUaW1lc3RhbXABAascAC4ARKscAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVu" +
-           "dFVzZXJJZAEBrBwALgBErBwAAAAM/////wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAa0c" +
-           "AC8BAEQjrRwAAAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBrhwALwEAQyOu" +
-           "HAAAAQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAKAAAAQWRkQ29tbWVudAEBrxwALwEARSOvHAAA" +
-           "AQEBAAAAAQD5CwABAA0LAQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAbAcAC4ARLAcAACW" +
-           "AgAAAAEAKgEBRgAAAAcAAABFdmVudElkAA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZv" +
-           "ciB0aGUgZXZlbnQgdG8gY29tbWVudC4BACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQA" +
-           "AABUaGUgY29tbWVudCB0byBhZGQgdG8gdGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkK" +
-           "AgAAAAEADgAAAE1UQ3VycmVudFN0YXRlAQGzHAAvAD+zHAAAAAz/////AQH/////AAAAABVgiQoCAAAA" +
-           "AQALAAAAQWN0aXZlU3RhdGUBAbQcAC8BACMjtBwAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAA" +
-           "AElkAQG1HAAuAES1HAAAAAH/////AQH/////AAAAAA==";
+           "JQAAAEFjY3VtdWxhdGVkX1RpbWVDb25kaXRpb25UeXBlSW5zdGFuY2UBAY4cAQGOHP////8YAAAAFWCJ" +
+           "CgIAAAAAAAcAAABFdmVudElkAQGPHAAuAESPHAAAAA//////AQH/////AAAAABVgiQoCAAAAAAAJAAAA" +
+           "RXZlbnRUeXBlAQGQHAAuAESQHAAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTm9k" +
+           "ZQEBkRwALgBEkRwAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBAZIcAC4A" +
+           "RJIcAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAQAAABUaW1lAQGTHAAuAESTHAAAAQAmAf////8B" +
+           "Af////8AAAAAFWCJCgIAAAAAAAsAAABSZWNlaXZlVGltZQEBlBwALgBElBwAAAEAJgH/////AQH/////" +
+           "AAAAABVgiQoCAAAAAAAJAAAATG9jYWxUaW1lAQGVHAAuAESVHAAAAQDQIv////8BAf////8AAAAAFWCJ" +
+           "CgIAAAAAAAcAAABNZXNzYWdlAQGWHAAuAESWHAAAABX/////AQH/////AAAAABVgiQoCAAAAAAAIAAAA" +
+           "U2V2ZXJpdHkBAZccAC4ARJccAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAAAABDb25kaXRpb25D" +
+           "bGFzc0lkAQGYHAAuAESYHAAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAAQ29uZGl0aW9uQ2xh" +
+           "c3NOYW1lAQGZHAAuAESZHAAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAAQ29uZGl0aW9uTmFt" +
+           "ZQEBmhwALgBEmhwAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5jaElkAQGbHAAuAESb" +
+           "HAAAABH/////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQGcHAAuAEScHAAAAAH/////AQH/" +
+           "////AAAAABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQGdHAAvAQAjI50cAAAAFf////8BAf////8B" +
+           "AAAAFWCJCgIAAAAAAAIAAABJZAEBnhwALgBEnhwAAAAB/////wEB/////wAAAAAVYIkKAgAAAAAABwAA" +
+           "AFF1YWxpdHkBAaYcAC8BACojphwAAAAT/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRp" +
+           "bWVzdGFtcAEBpxwALgBEpxwAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAATGFzdFNldmVy" +
+           "aXR5AQGoHAAvAQAqI6gcAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3Rh" +
+           "bXABAakcAC4ARKkcAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENvbW1lbnQBAaocAC8B" +
+           "ACojqhwAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBqxwALgBE" +
+           "qxwAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklkAQGsHAAuAESsHAAA" +
+           "AAz/////AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBrRwALwEARCOtHAAAAQEBAAAAAQD5" +
+           "CwABAPMKAAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQGuHAAvAQBDI64cAAABAQEAAAABAPkLAAEA8woA" +
+           "AAAABGGCCgQAAAAAAAoAAABBZGRDb21tZW50AQGvHAAvAQBFI68cAAABAQEAAAABAPkLAAEADQsBAAAA" +
+           "FWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBsBwALgBEsBwAAJYCAAAAAQAqAQFGAAAABwAAAEV2" +
+           "ZW50SWQAD/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0byBjb21t" +
+           "ZW50LgEAKgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBjb21tZW50IHRvIGFk" +
+           "ZCB0byB0aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAOAAAATVRDdXJyZW50" +
+           "U3RhdGUBAbMcAC8AP7McAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABBY3RpdmVTdGF0ZQEB" +
+           "tBwALwEAIyO0HAAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAbUcAC4ARLUcAAAAAf//" +
+           "//8BAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -9795,6 +10699,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -9805,44 +10718,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "HQAAAEFtcGVyYWdlQ29uZGl0aW9uVHlwZUluc3RhbmNlAQHLHAEByxz/////GAAAADVgiQoCAAAAAAAH" +
-           "AAAARXZlbnRJZAEBzBwDAAAAACsAAABBIGdsb2JhbGx5IHVuaXF1ZSBpZGVudGlmaWVyIGZvciB0aGUg" +
-           "ZXZlbnQuAC4ARMwcAAAAD/////8BAf////8AAAAANWCJCgIAAAAAAAkAAABFdmVudFR5cGUBAc0cAwAA" +
-           "AAAiAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0eXBlLgAuAETNHAAAABH/////AQH/////" +
-           "AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBzhwDAAAAABgAAABUaGUgc291cmNlIG9mIHRoZSBl" +
-           "dmVudC4ALgBEzhwAAAAR/////wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBAc8cAwAA" +
-           "AAApAAAAQSBkZXNjcmlwdGlvbiBvZiB0aGUgc291cmNlIG9mIHRoZSBldmVudC4ALgBEzxwAAAAM////" +
-           "/wEB/////wAAAAA1YIkKAgAAAAAABAAAAFRpbWUBAdAcAwAAAAAYAAAAV2hlbiB0aGUgZXZlbnQgb2Nj" +
-           "dXJyZWQuAC4ARNAcAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQHR" +
-           "HAMAAAAAPgAAAFdoZW4gdGhlIHNlcnZlciByZWNlaXZlZCB0aGUgZXZlbnQgZnJvbSB0aGUgdW5kZXJs" +
-           "eWluZyBzeXN0ZW0uAC4ARNEcAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAExvY2FsVGlt" +
-           "ZQEB0hwDAAAAADwAAABJbmZvcm1hdGlvbiBhYm91dCB0aGUgbG9jYWwgdGltZSB3aGVyZSB0aGUgZXZl" +
-           "bnQgb3JpZ2luYXRlZC4ALgBE0hwAAAEA0CL/////AQH/////AAAAADVgiQoCAAAAAAAHAAAATWVzc2Fn" +
-           "ZQEB0xwDAAAAACUAAABBIGxvY2FsaXplZCBkZXNjcmlwdGlvbiBvZiB0aGUgZXZlbnQuAC4ARNMcAAAA" +
-           "Ff////8BAf////8AAAAANWCJCgIAAAAAAAgAAABTZXZlcml0eQEB1BwDAAAAACEAAABJbmRpY2F0ZXMg" +
-           "aG93IHVyZ2VudCBhbiBldmVudCBpcy4ALgBE1BwAAAAF/////wEB/////wAAAAAVYIkKAgAAAAAAEAAA" +
-           "AENvbmRpdGlvbkNsYXNzSWQBAdUcAC4ARNUcAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIAAABD" +
-           "b25kaXRpb25DbGFzc05hbWUBAdYcAC4ARNYcAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0AAABD" +
-           "b25kaXRpb25OYW1lAQHXHAAuAETXHAAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJhbmNo" +
-           "SWQBAdgcAC4ARNgcAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BAdkcAC4ARNkc" +
-           "AAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBAdocAC8BACMj2hwAAAAV" +
-           "/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQHbHAAuAETbHAAAAAH/////AQH/////AAAAABVg" +
-           "iQoCAAAAAAAHAAAAUXVhbGl0eQEB4xwALwEAKiPjHAAAABP/////AQH/////AQAAABVgiQoCAAAAAAAP" +
-           "AAAAU291cmNlVGltZXN0YW1wAQHkHAAuAETkHAAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwA" +
-           "AABMYXN0U2V2ZXJpdHkBAeUcAC8BACoj5RwAAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNv" +
-           "dXJjZVRpbWVzdGFtcAEB5hwALgBE5hwAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQ29t" +
-           "bWVudAEB5xwALwEAKiPnHAAAABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0" +
-           "YW1wAQHoHAAuAEToHAAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQB" +
-           "AekcAC4AROkcAAAADP////8BAf////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQHqHAAvAQBEI+oc" +
-           "AAABAQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAYAAABFbmFibGUBAescAC8BAEMj6xwAAAEBAQAA" +
-           "AAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAACgAAAEFkZENvbW1lbnQBAewcAC8BAEUj7BwAAAEBAQAAAAEA" +
-           "+QsAAQANCwEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQHtHAAuAETtHAAAlgIAAAABACoB" +
-           "AUYAAAAHAAAARXZlbnRJZAAP/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2" +
-           "ZW50IHRvIGNvbW1lbnQuAQAqAQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhlIGNv" +
-           "bW1lbnQgdG8gYWRkIHRvIHRoZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAABAA4A" +
-           "AABNVEN1cnJlbnRTdGF0ZQEB8BwALwA/8BwAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAEFj" +
-           "dGl2ZVN0YXRlAQHxHAAvAQAjI/EcAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEB8hwA" +
-           "LgBE8hwAAAAB/////wEB/////wAAAAA=";
+           "HQAAAEFtcGVyYWdlQ29uZGl0aW9uVHlwZUluc3RhbmNlAQHLHAEByxz/////GAAAABVgiQoCAAAAAAAH" +
+           "AAAARXZlbnRJZAEBzBwALgBEzBwAAAAP/////wEB/////wAAAAAVYIkKAgAAAAAACQAAAEV2ZW50VHlw" +
+           "ZQEBzRwALgBEzRwAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBAc4cAC4A" +
+           "RM4cAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQHPHAAuAETPHAAAAAz/" +
+           "////AQH/////AAAAABVgiQoCAAAAAAAEAAAAVGltZQEB0BwALgBE0BwAAAEAJgH/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUBAdEcAC4ARNEcAAABACYB/////wEB/////wAAAAAVYIkK" +
+           "AgAAAAAACQAAAExvY2FsVGltZQEB0hwALgBE0hwAAAEA0CL/////AQH/////AAAAABVgiQoCAAAAAAAH" +
+           "AAAATWVzc2FnZQEB0xwALgBE0xwAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAFNldmVyaXR5" +
+           "AQHUHAAuAETUHAAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAQ29uZGl0aW9uQ2xhc3NJZAEB" +
+           "1RwALgBE1RwAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAENvbmRpdGlvbkNsYXNzTmFtZQEB" +
+           "1hwALgBE1hwAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAENvbmRpdGlvbk5hbWUBAdccAC4A" +
+           "RNccAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFuY2hJZAEB2BwALgBE2BwAAAAR////" +
+           "/wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEB2RwALgBE2RwAAAAB/////wEB/////wAAAAAV" +
+           "YIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEB2hwALwEAIyPaHAAAABX/////AQH/////AQAAABVgiQoC" +
+           "AAAAAAACAAAASWQBAdscAC4ARNscAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABRdWFsaXR5" +
+           "AQHjHAAvAQAqI+McAAAAE/////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXAB" +
+           "AeQcAC4AROQcAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAExhc3RTZXZlcml0eQEB5RwA" +
+           "LwEAKiPlHAAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQHmHAAu" +
+           "AETmHAAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABDb21tZW50AQHnHAAvAQAqI+ccAAAA" +
+           "Ff////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAegcAC4AROgcAAABACYB" +
+           "/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJZAEB6RwALgBE6RwAAAAM/////wEB" +
+           "/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAeocAC8BAEQj6hwAAAEBAQAAAAEA+QsAAQDzCgAA" +
+           "AAAEYYIKBAAAAAAABgAAAEVuYWJsZQEB6xwALwEAQyPrHAAAAQEBAAAAAQD5CwABAPMKAAAAAARhggoE" +
+           "AAAAAAAKAAAAQWRkQ29tbWVudAEB7BwALwEARSPsHAAAAQEBAAAAAQD5CwABAA0LAQAAABVgqQoCAAAA" +
+           "AAAOAAAASW5wdXRBcmd1bWVudHMBAe0cAC4ARO0cAACWAgAAAAEAKgEBRgAAAAcAAABFdmVudElkAA//" +
+           "////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdG8gY29tbWVudC4BACoB" +
+           "AUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUgY29tbWVudCB0byBhZGQgdG8gdGhl" +
+           "IGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEADgAAAE1UQ3VycmVudFN0YXRlAQHw" +
+           "HAAvAD/wHAAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAAQWN0aXZlU3RhdGUBAfEcAC8BACMj" +
+           "8RwAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQHyHAAuAETyHAAAAAH/////AQH/////" +
+           "AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -9895,6 +10801,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -9905,44 +10820,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "GgAAAEFuZ2xlQ29uZGl0aW9uVHlwZUluc3RhbmNlAQEIHQEBCB3/////GAAAADVgiQoCAAAAAAAHAAAA" +
-           "RXZlbnRJZAEBCR0DAAAAACsAAABBIGdsb2JhbGx5IHVuaXF1ZSBpZGVudGlmaWVyIGZvciB0aGUgZXZl" +
-           "bnQuAC4ARAkdAAAAD/////8BAf////8AAAAANWCJCgIAAAAAAAkAAABFdmVudFR5cGUBAQodAwAAAAAi" +
-           "AAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0eXBlLgAuAEQKHQAAABH/////AQH/////AAAA" +
-           "ADVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBCx0DAAAAABgAAABUaGUgc291cmNlIG9mIHRoZSBldmVu" +
-           "dC4ALgBECx0AAAAR/////wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBAQwdAwAAAAAp" +
-           "AAAAQSBkZXNjcmlwdGlvbiBvZiB0aGUgc291cmNlIG9mIHRoZSBldmVudC4ALgBEDB0AAAAM/////wEB" +
-           "/////wAAAAA1YIkKAgAAAAAABAAAAFRpbWUBAQ0dAwAAAAAYAAAAV2hlbiB0aGUgZXZlbnQgb2NjdXJy" +
-           "ZWQuAC4ARA0dAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQEOHQMA" +
-           "AAAAPgAAAFdoZW4gdGhlIHNlcnZlciByZWNlaXZlZCB0aGUgZXZlbnQgZnJvbSB0aGUgdW5kZXJseWlu" +
-           "ZyBzeXN0ZW0uAC4ARA4dAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAExvY2FsVGltZQEB" +
-           "Dx0DAAAAADwAAABJbmZvcm1hdGlvbiBhYm91dCB0aGUgbG9jYWwgdGltZSB3aGVyZSB0aGUgZXZlbnQg" +
-           "b3JpZ2luYXRlZC4ALgBEDx0AAAEA0CL/////AQH/////AAAAADVgiQoCAAAAAAAHAAAATWVzc2FnZQEB" +
-           "EB0DAAAAACUAAABBIGxvY2FsaXplZCBkZXNjcmlwdGlvbiBvZiB0aGUgZXZlbnQuAC4ARBAdAAAAFf//" +
-           "//8BAf////8AAAAANWCJCgIAAAAAAAgAAABTZXZlcml0eQEBER0DAAAAACEAAABJbmRpY2F0ZXMgaG93" +
-           "IHVyZ2VudCBhbiBldmVudCBpcy4ALgBEER0AAAAF/////wEB/////wAAAAAVYIkKAgAAAAAAEAAAAENv" +
-           "bmRpdGlvbkNsYXNzSWQBARIdAC4ARBIdAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIAAABDb25k" +
-           "aXRpb25DbGFzc05hbWUBARMdAC4ARBMdAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0AAABDb25k" +
-           "aXRpb25OYW1lAQEUHQAuAEQUHQAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJhbmNoSWQB" +
-           "ARUdAC4ARBUdAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BARYdAC4ARBYdAAAA" +
-           "Af////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBARcdAC8BACMjFx0AAAAV////" +
-           "/wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQEYHQAuAEQYHQAAAAH/////AQH/////AAAAABVgiQoC" +
-           "AAAAAAAHAAAAUXVhbGl0eQEBIB0ALwEAKiMgHQAAABP/////AQH/////AQAAABVgiQoCAAAAAAAPAAAA" +
-           "U291cmNlVGltZXN0YW1wAQEhHQAuAEQhHQAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABM" +
-           "YXN0U2V2ZXJpdHkBASIdAC8BACojIh0AAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJj" +
-           "ZVRpbWVzdGFtcAEBIx0ALgBEIx0AAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQ29tbWVu" +
-           "dAEBJB0ALwEAKiMkHQAAABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1w" +
-           "AQElHQAuAEQlHQAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQBASYd" +
-           "AC4ARCYdAAAADP////8BAf////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQEnHQAvAQBEIycdAAAB" +
-           "AQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAYAAABFbmFibGUBASgdAC8BAEMjKB0AAAEBAQAAAAEA" +
-           "+QsAAQDzCgAAAAAEYYIKBAAAAAAACgAAAEFkZENvbW1lbnQBASkdAC8BAEUjKR0AAAEBAQAAAAEA+QsA" +
-           "AQANCwEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQEqHQAuAEQqHQAAlgIAAAABACoBAUYA" +
-           "AAAHAAAARXZlbnRJZAAP/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50" +
-           "IHRvIGNvbW1lbnQuAQAqAQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhlIGNvbW1l" +
-           "bnQgdG8gYWRkIHRvIHRoZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAABAA4AAABN" +
-           "VEN1cnJlbnRTdGF0ZQEBLR0ALwA/LR0AAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAEFjdGl2" +
-           "ZVN0YXRlAQEuHQAvAQAjIy4dAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBLx0ALgBE" +
-           "Lx0AAAAB/////wEB/////wAAAAA=";
+           "GgAAAEFuZ2xlQ29uZGl0aW9uVHlwZUluc3RhbmNlAQEIHQEBCB3/////GAAAABVgiQoCAAAAAAAHAAAA" +
+           "RXZlbnRJZAEBCR0ALgBECR0AAAAP/////wEB/////wAAAAAVYIkKAgAAAAAACQAAAEV2ZW50VHlwZQEB" +
+           "Ch0ALgBECh0AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBAQsdAC4ARAsd" +
+           "AAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQEMHQAuAEQMHQAAAAz/////" +
+           "AQH/////AAAAABVgiQoCAAAAAAAEAAAAVGltZQEBDR0ALgBEDR0AAAEAJgH/////AQH/////AAAAABVg" +
+           "iQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUBAQ4dAC4ARA4dAAABACYB/////wEB/////wAAAAAVYIkKAgAA" +
+           "AAAACQAAAExvY2FsVGltZQEBDx0ALgBEDx0AAAEA0CL/////AQH/////AAAAABVgiQoCAAAAAAAHAAAA" +
+           "TWVzc2FnZQEBEB0ALgBEEB0AAAAV/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAFNldmVyaXR5AQER" +
+           "HQAuAEQRHQAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAQ29uZGl0aW9uQ2xhc3NJZAEBEh0A" +
+           "LgBEEh0AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAENvbmRpdGlvbkNsYXNzTmFtZQEBEx0A" +
+           "LgBEEx0AAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAENvbmRpdGlvbk5hbWUBARQdAC4ARBQd" +
+           "AAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFuY2hJZAEBFR0ALgBEFR0AAAAR/////wEB" +
+           "/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBFh0ALgBEFh0AAAAB/////wEB/////wAAAAAVYIkK" +
+           "AgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBFx0ALwEAIyMXHQAAABX/////AQH/////AQAAABVgiQoCAAAA" +
+           "AAACAAAASWQBARgdAC4ARBgdAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABRdWFsaXR5AQEg" +
+           "HQAvAQAqIyAdAAAAE/////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABASEd" +
+           "AC4ARCEdAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAExhc3RTZXZlcml0eQEBIh0ALwEA" +
+           "KiMiHQAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQEjHQAuAEQj" +
+           "HQAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABDb21tZW50AQEkHQAvAQAqIyQdAAAAFf//" +
+           "//8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABASUdAC4ARCUdAAABACYB////" +
+           "/wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJZAEBJh0ALgBEJh0AAAAM/////wEB////" +
+           "/wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAScdAC8BAEQjJx0AAAEBAQAAAAEA+QsAAQDzCgAAAAAE" +
+           "YYIKBAAAAAAABgAAAEVuYWJsZQEBKB0ALwEAQyMoHQAAAQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAA" +
+           "AAAKAAAAQWRkQ29tbWVudAEBKR0ALwEARSMpHQAAAQEBAAAAAQD5CwABAA0LAQAAABVgqQoCAAAAAAAO" +
+           "AAAASW5wdXRBcmd1bWVudHMBASodAC4ARCodAACWAgAAAAEAKgEBRgAAAAcAAABFdmVudElkAA//////" +
+           "AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdG8gY29tbWVudC4BACoBAUIA" +
+           "AAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUgY29tbWVudCB0byBhZGQgdG8gdGhlIGNv" +
+           "bmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEADgAAAE1UQ3VycmVudFN0YXRlAQEtHQAv" +
+           "AD8tHQAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAAQWN0aXZlU3RhdGUBAS4dAC8BACMjLh0A" +
+           "AAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQEvHQAuAEQvHQAAAAH/////AQH/////AAAA" +
+           "AA==";
         #endregion
         #endif
         #endregion
@@ -9995,6 +10903,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -10006,43 +10923,36 @@ namespace Opc.Ua.MTConnect
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
            "KQAAAEFuZ3VsYXItQWNjZWxlcmF0aW9uQ29uZGl0aW9uVHlwZUluc3RhbmNlAQFFHQEBRR3/////GAAA" +
-           "ADVgiQoCAAAAAAAHAAAARXZlbnRJZAEBRh0DAAAAACsAAABBIGdsb2JhbGx5IHVuaXF1ZSBpZGVudGlm" +
-           "aWVyIGZvciB0aGUgZXZlbnQuAC4AREYdAAAAD/////8BAf////8AAAAANWCJCgIAAAAAAAkAAABFdmVu" +
-           "dFR5cGUBAUcdAwAAAAAiAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0eXBlLgAuAERHHQAA" +
-           "ABH/////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBSB0DAAAAABgAAABUaGUgc291" +
-           "cmNlIG9mIHRoZSBldmVudC4ALgBESB0AAAAR/////wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJj" +
-           "ZU5hbWUBAUkdAwAAAAApAAAAQSBkZXNjcmlwdGlvbiBvZiB0aGUgc291cmNlIG9mIHRoZSBldmVudC4A" +
-           "LgBESR0AAAAM/////wEB/////wAAAAA1YIkKAgAAAAAABAAAAFRpbWUBAUodAwAAAAAYAAAAV2hlbiB0" +
-           "aGUgZXZlbnQgb2NjdXJyZWQuAC4AREodAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACwAAAFJl" +
-           "Y2VpdmVUaW1lAQFLHQMAAAAAPgAAAFdoZW4gdGhlIHNlcnZlciByZWNlaXZlZCB0aGUgZXZlbnQgZnJv" +
-           "bSB0aGUgdW5kZXJseWluZyBzeXN0ZW0uAC4AREsdAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAA" +
-           "CQAAAExvY2FsVGltZQEBTB0DAAAAADwAAABJbmZvcm1hdGlvbiBhYm91dCB0aGUgbG9jYWwgdGltZSB3" +
-           "aGVyZSB0aGUgZXZlbnQgb3JpZ2luYXRlZC4ALgBETB0AAAEA0CL/////AQH/////AAAAADVgiQoCAAAA" +
-           "AAAHAAAATWVzc2FnZQEBTR0DAAAAACUAAABBIGxvY2FsaXplZCBkZXNjcmlwdGlvbiBvZiB0aGUgZXZl" +
-           "bnQuAC4ARE0dAAAAFf////8BAf////8AAAAANWCJCgIAAAAAAAgAAABTZXZlcml0eQEBTh0DAAAAACEA" +
-           "AABJbmRpY2F0ZXMgaG93IHVyZ2VudCBhbiBldmVudCBpcy4ALgBETh0AAAAF/////wEB/////wAAAAAV" +
-           "YIkKAgAAAAAAEAAAAENvbmRpdGlvbkNsYXNzSWQBAU8dAC4ARE8dAAAAEf////8BAf////8AAAAAFWCJ" +
-           "CgIAAAAAABIAAABDb25kaXRpb25DbGFzc05hbWUBAVAdAC4ARFAdAAAAFf////8BAf////8AAAAAFWCJ" +
-           "CgIAAAAAAA0AAABDb25kaXRpb25OYW1lAQFRHQAuAERRHQAAAAz/////AQH/////AAAAABVgiQoCAAAA" +
-           "AAAIAAAAQnJhbmNoSWQBAVIdAC4ARFIdAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRh" +
-           "aW4BAVMdAC4ARFMdAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBAVQd" +
-           "AC8BACMjVB0AAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQFVHQAuAERVHQAAAAH/////" +
-           "AQH/////AAAAABVgiQoCAAAAAAAHAAAAUXVhbGl0eQEBXR0ALwEAKiNdHQAAABP/////AQH/////AQAA" +
-           "ABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQFeHQAuAEReHQAAAQAmAf////8BAf////8AAAAA" +
-           "FWCJCgIAAAAAAAwAAABMYXN0U2V2ZXJpdHkBAV8dAC8BACojXx0AAAAF/////wEB/////wEAAAAVYIkK" +
-           "AgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBYB0ALgBEYB0AAAEAJgH/////AQH/////AAAAABVgiQoC" +
-           "AAAAAAAHAAAAQ29tbWVudAEBYR0ALwEAKiNhHQAAABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAA" +
-           "U291cmNlVGltZXN0YW1wAQFiHQAuAERiHQAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABD" +
-           "bGllbnRVc2VySWQBAWMdAC4ARGMdAAAADP////8BAf////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxl" +
-           "AQFkHQAvAQBEI2QdAAABAQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAYAAABFbmFibGUBAWUdAC8B" +
-           "AEMjZR0AAAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAACgAAAEFkZENvbW1lbnQBAWYdAC8BAEUj" +
-           "Zh0AAAEBAQAAAAEA+QsAAQANCwEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFnHQAuAERn" +
-           "HQAAlgIAAAABACoBAUYAAAAHAAAARXZlbnRJZAAP/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmll" +
-           "ciBmb3IgdGhlIGV2ZW50IHRvIGNvbW1lbnQuAQAqAQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAA" +
-           "AAAkAAAAVGhlIGNvbW1lbnQgdG8gYWRkIHRvIHRoZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAA" +
-           "FWCJCgIAAAABAA4AAABNVEN1cnJlbnRTdGF0ZQEBah0ALwA/ah0AAAAM/////wEB/////wAAAAAVYIkK" +
-           "AgAAAAEACwAAAEFjdGl2ZVN0YXRlAQFrHQAvAQAjI2sdAAAAFf////8BAf////8BAAAAFWCJCgIAAAAA" +
-           "AAIAAABJZAEBbB0ALgBEbB0AAAAB/////wEB/////wAAAAA=";
+           "ABVgiQoCAAAAAAAHAAAARXZlbnRJZAEBRh0ALgBERh0AAAAP/////wEB/////wAAAAAVYIkKAgAAAAAA" +
+           "CQAAAEV2ZW50VHlwZQEBRx0ALgBERx0AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJj" +
+           "ZU5vZGUBAUgdAC4AREgdAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQFJ" +
+           "HQAuAERJHQAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAEAAAAVGltZQEBSh0ALgBESh0AAAEAJgH/" +
+           "////AQH/////AAAAABVgiQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUBAUsdAC4AREsdAAABACYB/////wEB" +
+           "/////wAAAAAVYIkKAgAAAAAACQAAAExvY2FsVGltZQEBTB0ALgBETB0AAAEA0CL/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAAHAAAATWVzc2FnZQEBTR0ALgBETR0AAAAV/////wEB/////wAAAAAVYIkKAgAAAAAA" +
+           "CAAAAFNldmVyaXR5AQFOHQAuAEROHQAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAQ29uZGl0" +
+           "aW9uQ2xhc3NJZAEBTx0ALgBETx0AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAENvbmRpdGlv" +
+           "bkNsYXNzTmFtZQEBUB0ALgBEUB0AAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAENvbmRpdGlv" +
+           "bk5hbWUBAVEdAC4ARFEdAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFuY2hJZAEBUh0A" +
+           "LgBEUh0AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBUx0ALgBEUx0AAAAB////" +
+           "/wEB/////wAAAAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBVB0ALwEAIyNUHQAAABX/////AQH/" +
+           "////AQAAABVgiQoCAAAAAAACAAAASWQBAVUdAC4ARFUdAAAAAf////8BAf////8AAAAAFWCJCgIAAAAA" +
+           "AAcAAABRdWFsaXR5AQFdHQAvAQAqI10dAAAAE/////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3Vy" +
+           "Y2VUaW1lc3RhbXABAV4dAC4ARF4dAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAExhc3RT" +
+           "ZXZlcml0eQEBXx0ALwEAKiNfHQAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGlt" +
+           "ZXN0YW1wAQFgHQAuAERgHQAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABDb21tZW50AQFh" +
+           "HQAvAQAqI2EdAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAWId" +
+           "AC4ARGIdAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJZAEBYx0ALgBE" +
+           "Yx0AAAAM/////wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAWQdAC8BAEQjZB0AAAEBAQAA" +
+           "AAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBZR0ALwEAQyNlHQAAAQEBAAAAAQD5CwAB" +
+           "APMKAAAAAARhggoEAAAAAAAKAAAAQWRkQ29tbWVudAEBZh0ALwEARSNmHQAAAQEBAAAAAQD5CwABAA0L" +
+           "AQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAWcdAC4ARGcdAACWAgAAAAEAKgEBRgAAAAcA" +
+           "AABFdmVudElkAA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdG8g" +
+           "Y29tbWVudC4BACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUgY29tbWVudCB0" +
+           "byBhZGQgdG8gdGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEADgAAAE1UQ3Vy" +
+           "cmVudFN0YXRlAQFqHQAvAD9qHQAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAAQWN0aXZlU3Rh" +
+           "dGUBAWsdAC8BACMjax0AAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQFsHQAuAERsHQAA" +
+           "AAH/////AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -10095,6 +11005,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -10105,44 +11024,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "JQAAAEFuZ3VsYXJfVmVsb2NpdHlDb25kaXRpb25UeXBlSW5zdGFuY2UBAYIdAQGCHf////8YAAAANWCJ" +
-           "CgIAAAAAAAcAAABFdmVudElkAQGDHQMAAAAAKwAAAEEgZ2xvYmFsbHkgdW5pcXVlIGlkZW50aWZpZXIg" +
-           "Zm9yIHRoZSBldmVudC4ALgBEgx0AAAAP/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAEV2ZW50VHlw" +
-           "ZQEBhB0DAAAAACIAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHR5cGUuAC4ARIQdAAAAEf//" +
-           "//8BAf////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQGFHQMAAAAAGAAAAFRoZSBzb3VyY2Ug" +
-           "b2YgdGhlIGV2ZW50LgAuAESFHQAAABH/////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTmFt" +
-           "ZQEBhh0DAAAAACkAAABBIGRlc2NyaXB0aW9uIG9mIHRoZSBzb3VyY2Ugb2YgdGhlIGV2ZW50LgAuAESG" +
-           "HQAAAAz/////AQH/////AAAAADVgiQoCAAAAAAAEAAAAVGltZQEBhx0DAAAAABgAAABXaGVuIHRoZSBl" +
-           "dmVudCBvY2N1cnJlZC4ALgBEhx0AAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAALAAAAUmVjZWl2" +
-           "ZVRpbWUBAYgdAwAAAAA+AAAAV2hlbiB0aGUgc2VydmVyIHJlY2VpdmVkIHRoZSBldmVudCBmcm9tIHRo" +
-           "ZSB1bmRlcmx5aW5nIHN5c3RlbS4ALgBEiB0AAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAAJAAAA" +
-           "TG9jYWxUaW1lAQGJHQMAAAAAPAAAAEluZm9ybWF0aW9uIGFib3V0IHRoZSBsb2NhbCB0aW1lIHdoZXJl" +
-           "IHRoZSBldmVudCBvcmlnaW5hdGVkLgAuAESJHQAAAQDQIv////8BAf////8AAAAANWCJCgIAAAAAAAcA" +
-           "AABNZXNzYWdlAQGKHQMAAAAAJQAAAEEgbG9jYWxpemVkIGRlc2NyaXB0aW9uIG9mIHRoZSBldmVudC4A" +
-           "LgBEih0AAAAV/////wEB/////wAAAAA1YIkKAgAAAAAACAAAAFNldmVyaXR5AQGLHQMAAAAAIQAAAElu" +
-           "ZGljYXRlcyBob3cgdXJnZW50IGFuIGV2ZW50IGlzLgAuAESLHQAAAAX/////AQH/////AAAAABVgiQoC" +
-           "AAAAAAAQAAAAQ29uZGl0aW9uQ2xhc3NJZAEBjB0ALgBEjB0AAAAR/////wEB/////wAAAAAVYIkKAgAA" +
-           "AAAAEgAAAENvbmRpdGlvbkNsYXNzTmFtZQEBjR0ALgBEjR0AAAAV/////wEB/////wAAAAAVYIkKAgAA" +
-           "AAAADQAAAENvbmRpdGlvbk5hbWUBAY4dAC4ARI4dAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgA" +
-           "AABCcmFuY2hJZAEBjx0ALgBEjx0AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEB" +
-           "kB0ALgBEkB0AAAAB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBkR0ALwEA" +
-           "IyORHQAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAZIdAC4ARJIdAAAAAf////8BAf//" +
-           "//8AAAAAFWCJCgIAAAAAAAcAAABRdWFsaXR5AQGaHQAvAQAqI5odAAAAE/////8BAf////8BAAAAFWCJ" +
-           "CgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAZsdAC4ARJsdAAABACYB/////wEB/////wAAAAAVYIkK" +
-           "AgAAAAAADAAAAExhc3RTZXZlcml0eQEBnB0ALwEAKiOcHQAAAAX/////AQH/////AQAAABVgiQoCAAAA" +
-           "AAAPAAAAU291cmNlVGltZXN0YW1wAQGdHQAuAESdHQAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAA" +
-           "AAcAAABDb21tZW50AQGeHQAvAQAqI54dAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3Vy" +
-           "Y2VUaW1lc3RhbXABAZ8dAC4ARJ8dAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVu" +
-           "dFVzZXJJZAEBoB0ALgBEoB0AAAAM/////wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAaEd" +
-           "AC8BAEQjoR0AAAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBoh0ALwEAQyOi" +
-           "HQAAAQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAKAAAAQWRkQ29tbWVudAEBox0ALwEARSOjHQAA" +
-           "AQEBAAAAAQD5CwABAA0LAQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAaQdAC4ARKQdAACW" +
-           "AgAAAAEAKgEBRgAAAAcAAABFdmVudElkAA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZv" +
-           "ciB0aGUgZXZlbnQgdG8gY29tbWVudC4BACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQA" +
-           "AABUaGUgY29tbWVudCB0byBhZGQgdG8gdGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkK" +
-           "AgAAAAEADgAAAE1UQ3VycmVudFN0YXRlAQGnHQAvAD+nHQAAAAz/////AQH/////AAAAABVgiQoCAAAA" +
-           "AQALAAAAQWN0aXZlU3RhdGUBAagdAC8BACMjqB0AAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAA" +
-           "AElkAQGpHQAuAESpHQAAAAH/////AQH/////AAAAAA==";
+           "JQAAAEFuZ3VsYXJfVmVsb2NpdHlDb25kaXRpb25UeXBlSW5zdGFuY2UBAYIdAQGCHf////8YAAAAFWCJ" +
+           "CgIAAAAAAAcAAABFdmVudElkAQGDHQAuAESDHQAAAA//////AQH/////AAAAABVgiQoCAAAAAAAJAAAA" +
+           "RXZlbnRUeXBlAQGEHQAuAESEHQAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTm9k" +
+           "ZQEBhR0ALgBEhR0AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBAYYdAC4A" +
+           "RIYdAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAQAAABUaW1lAQGHHQAuAESHHQAAAQAmAf////8B" +
+           "Af////8AAAAAFWCJCgIAAAAAAAsAAABSZWNlaXZlVGltZQEBiB0ALgBEiB0AAAEAJgH/////AQH/////" +
+           "AAAAABVgiQoCAAAAAAAJAAAATG9jYWxUaW1lAQGJHQAuAESJHQAAAQDQIv////8BAf////8AAAAAFWCJ" +
+           "CgIAAAAAAAcAAABNZXNzYWdlAQGKHQAuAESKHQAAABX/////AQH/////AAAAABVgiQoCAAAAAAAIAAAA" +
+           "U2V2ZXJpdHkBAYsdAC4ARIsdAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAAAABDb25kaXRpb25D" +
+           "bGFzc0lkAQGMHQAuAESMHQAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAAQ29uZGl0aW9uQ2xh" +
+           "c3NOYW1lAQGNHQAuAESNHQAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAAQ29uZGl0aW9uTmFt" +
+           "ZQEBjh0ALgBEjh0AAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5jaElkAQGPHQAuAESP" +
+           "HQAAABH/////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQGQHQAuAESQHQAAAAH/////AQH/" +
+           "////AAAAABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQGRHQAvAQAjI5EdAAAAFf////8BAf////8B" +
+           "AAAAFWCJCgIAAAAAAAIAAABJZAEBkh0ALgBEkh0AAAAB/////wEB/////wAAAAAVYIkKAgAAAAAABwAA" +
+           "AFF1YWxpdHkBAZodAC8BACojmh0AAAAT/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRp" +
+           "bWVzdGFtcAEBmx0ALgBEmx0AAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAATGFzdFNldmVy" +
+           "aXR5AQGcHQAvAQAqI5wdAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3Rh" +
+           "bXABAZ0dAC4ARJ0dAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENvbW1lbnQBAZ4dAC8B" +
+           "ACojnh0AAAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBnx0ALgBE" +
+           "nx0AAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklkAQGgHQAuAESgHQAA" +
+           "AAz/////AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBoR0ALwEARCOhHQAAAQEBAAAAAQD5" +
+           "CwABAPMKAAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQGiHQAvAQBDI6IdAAABAQEAAAABAPkLAAEA8woA" +
+           "AAAABGGCCgQAAAAAAAoAAABBZGRDb21tZW50AQGjHQAvAQBFI6MdAAABAQEAAAABAPkLAAEADQsBAAAA" +
+           "FWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBpB0ALgBEpB0AAJYCAAAAAQAqAQFGAAAABwAAAEV2" +
+           "ZW50SWQAD/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0byBjb21t" +
+           "ZW50LgEAKgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBjb21tZW50IHRvIGFk" +
+           "ZCB0byB0aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAOAAAATVRDdXJyZW50" +
+           "U3RhdGUBAacdAC8AP6cdAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABBY3RpdmVTdGF0ZQEB" +
+           "qB0ALwEAIyOoHQAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAakdAC4ARKkdAAAAAf//" +
+           "//8BAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -10195,6 +11107,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -10205,44 +11126,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "IwAAAENvbW11bmljYXRpb25zQ29uZGl0aW9uVHlwZUluc3RhbmNlAQG/HQEBvx3/////GAAAADVgiQoC" +
-           "AAAAAAAHAAAARXZlbnRJZAEBwB0DAAAAACsAAABBIGdsb2JhbGx5IHVuaXF1ZSBpZGVudGlmaWVyIGZv" +
-           "ciB0aGUgZXZlbnQuAC4ARMAdAAAAD/////8BAf////8AAAAANWCJCgIAAAAAAAkAAABFdmVudFR5cGUB" +
-           "AcEdAwAAAAAiAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0eXBlLgAuAETBHQAAABH/////" +
-           "AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBwh0DAAAAABgAAABUaGUgc291cmNlIG9m" +
-           "IHRoZSBldmVudC4ALgBEwh0AAAAR/////wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5hbWUB" +
-           "AcMdAwAAAAApAAAAQSBkZXNjcmlwdGlvbiBvZiB0aGUgc291cmNlIG9mIHRoZSBldmVudC4ALgBEwx0A" +
-           "AAAM/////wEB/////wAAAAA1YIkKAgAAAAAABAAAAFRpbWUBAcQdAwAAAAAYAAAAV2hlbiB0aGUgZXZl" +
-           "bnQgb2NjdXJyZWQuAC4ARMQdAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACwAAAFJlY2VpdmVU" +
-           "aW1lAQHFHQMAAAAAPgAAAFdoZW4gdGhlIHNlcnZlciByZWNlaXZlZCB0aGUgZXZlbnQgZnJvbSB0aGUg" +
-           "dW5kZXJseWluZyBzeXN0ZW0uAC4ARMUdAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAExv" +
-           "Y2FsVGltZQEBxh0DAAAAADwAAABJbmZvcm1hdGlvbiBhYm91dCB0aGUgbG9jYWwgdGltZSB3aGVyZSB0" +
-           "aGUgZXZlbnQgb3JpZ2luYXRlZC4ALgBExh0AAAEA0CL/////AQH/////AAAAADVgiQoCAAAAAAAHAAAA" +
-           "TWVzc2FnZQEBxx0DAAAAACUAAABBIGxvY2FsaXplZCBkZXNjcmlwdGlvbiBvZiB0aGUgZXZlbnQuAC4A" +
-           "RMcdAAAAFf////8BAf////8AAAAANWCJCgIAAAAAAAgAAABTZXZlcml0eQEByB0DAAAAACEAAABJbmRp" +
-           "Y2F0ZXMgaG93IHVyZ2VudCBhbiBldmVudCBpcy4ALgBEyB0AAAAF/////wEB/////wAAAAAVYIkKAgAA" +
-           "AAAAEAAAAENvbmRpdGlvbkNsYXNzSWQBAckdAC4ARMkdAAAAEf////8BAf////8AAAAAFWCJCgIAAAAA" +
-           "ABIAAABDb25kaXRpb25DbGFzc05hbWUBAcodAC4ARModAAAAFf////8BAf////8AAAAAFWCJCgIAAAAA" +
-           "AA0AAABDb25kaXRpb25OYW1lAQHLHQAuAETLHQAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAA" +
-           "QnJhbmNoSWQBAcwdAC4ARMwdAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BAc0d" +
-           "AC4ARM0dAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBAc4dAC8BACMj" +
-           "zh0AAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQHPHQAuAETPHQAAAAH/////AQH/////" +
-           "AAAAABVgiQoCAAAAAAAHAAAAUXVhbGl0eQEB1x0ALwEAKiPXHQAAABP/////AQH/////AQAAABVgiQoC" +
-           "AAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQHYHQAuAETYHQAAAQAmAf////8BAf////8AAAAAFWCJCgIA" +
-           "AAAAAAwAAABMYXN0U2V2ZXJpdHkBAdkdAC8BACoj2R0AAAAF/////wEB/////wEAAAAVYIkKAgAAAAAA" +
-           "DwAAAFNvdXJjZVRpbWVzdGFtcAEB2h0ALgBE2h0AAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAH" +
-           "AAAAQ29tbWVudAEB2x0ALwEAKiPbHQAAABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNl" +
-           "VGltZXN0YW1wAQHcHQAuAETcHQAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRV" +
-           "c2VySWQBAd0dAC4ARN0dAAAADP////8BAf////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQHeHQAv" +
-           "AQBEI94dAAABAQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAYAAABFbmFibGUBAd8dAC8BAEMj3x0A" +
-           "AAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAACgAAAEFkZENvbW1lbnQBAeAdAC8BAEUj4B0AAAEB" +
-           "AQAAAAEA+QsAAQANCwEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQHhHQAuAEThHQAAlgIA" +
-           "AAABACoBAUYAAAAHAAAARXZlbnRJZAAP/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3Ig" +
-           "dGhlIGV2ZW50IHRvIGNvbW1lbnQuAQAqAQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAA" +
-           "VGhlIGNvbW1lbnQgdG8gYWRkIHRvIHRoZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIA" +
-           "AAABAA4AAABNVEN1cnJlbnRTdGF0ZQEB5B0ALwA/5B0AAAAM/////wEB/////wAAAAAVYIkKAgAAAAEA" +
-           "CwAAAEFjdGl2ZVN0YXRlAQHlHQAvAQAjI+UdAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJ" +
-           "ZAEB5h0ALgBE5h0AAAAB/////wEB/////wAAAAA=";
+           "IwAAAENvbW11bmljYXRpb25zQ29uZGl0aW9uVHlwZUluc3RhbmNlAQG/HQEBvx3/////GAAAABVgiQoC" +
+           "AAAAAAAHAAAARXZlbnRJZAEBwB0ALgBEwB0AAAAP/////wEB/////wAAAAAVYIkKAgAAAAAACQAAAEV2" +
+           "ZW50VHlwZQEBwR0ALgBEwR0AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5vZGUB" +
+           "AcIdAC4ARMIdAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQHDHQAuAETD" +
+           "HQAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAEAAAAVGltZQEBxB0ALgBExB0AAAEAJgH/////AQH/" +
+           "////AAAAABVgiQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUBAcUdAC4ARMUdAAABACYB/////wEB/////wAA" +
+           "AAAVYIkKAgAAAAAACQAAAExvY2FsVGltZQEBxh0ALgBExh0AAAEA0CL/////AQH/////AAAAABVgiQoC" +
+           "AAAAAAAHAAAATWVzc2FnZQEBxx0ALgBExx0AAAAV/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAFNl" +
+           "dmVyaXR5AQHIHQAuAETIHQAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAQ29uZGl0aW9uQ2xh" +
+           "c3NJZAEByR0ALgBEyR0AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAENvbmRpdGlvbkNsYXNz" +
+           "TmFtZQEByh0ALgBEyh0AAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAENvbmRpdGlvbk5hbWUB" +
+           "AcsdAC4ARMsdAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFuY2hJZAEBzB0ALgBEzB0A" +
+           "AAAR/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBzR0ALgBEzR0AAAAB/////wEB////" +
+           "/wAAAAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBzh0ALwEAIyPOHQAAABX/////AQH/////AQAA" +
+           "ABVgiQoCAAAAAAACAAAASWQBAc8dAC4ARM8dAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABR" +
+           "dWFsaXR5AQHXHQAvAQAqI9cdAAAAE/////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1l" +
+           "c3RhbXABAdgdAC4ARNgdAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAExhc3RTZXZlcml0" +
+           "eQEB2R0ALwEAKiPZHQAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1w" +
+           "AQHaHQAuAETaHQAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABDb21tZW50AQHbHQAvAQAq" +
+           "I9sdAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAdwdAC4ARNwd" +
+           "AAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJZAEB3R0ALgBE3R0AAAAM" +
+           "/////wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAd4dAC8BAEQj3h0AAAEBAQAAAAEA+QsA" +
+           "AQDzCgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEB3x0ALwEAQyPfHQAAAQEBAAAAAQD5CwABAPMKAAAA" +
+           "AARhggoEAAAAAAAKAAAAQWRkQ29tbWVudAEB4B0ALwEARSPgHQAAAQEBAAAAAQD5CwABAA0LAQAAABVg" +
+           "qQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAeEdAC4AROEdAACWAgAAAAEAKgEBRgAAAAcAAABFdmVu" +
+           "dElkAA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdG8gY29tbWVu" +
+           "dC4BACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUgY29tbWVudCB0byBhZGQg" +
+           "dG8gdGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEADgAAAE1UQ3VycmVudFN0" +
+           "YXRlAQHkHQAvAD/kHQAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAAQWN0aXZlU3RhdGUBAeUd" +
+           "AC8BACMj5R0AAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQHmHQAuAETmHQAAAAH/////" +
+           "AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -10295,6 +11209,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -10305,44 +11228,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "IgAAAENvbmNlbnRyYXRpb25Db25kaXRpb25UeXBlSW5zdGFuY2UBAfwdAQH8Hf////8YAAAANWCJCgIA" +
-           "AAAAAAcAAABFdmVudElkAQH9HQMAAAAAKwAAAEEgZ2xvYmFsbHkgdW5pcXVlIGlkZW50aWZpZXIgZm9y" +
-           "IHRoZSBldmVudC4ALgBE/R0AAAAP/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAEV2ZW50VHlwZQEB" +
-           "/h0DAAAAACIAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHR5cGUuAC4ARP4dAAAAEf////8B" +
-           "Af////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQH/HQMAAAAAGAAAAFRoZSBzb3VyY2Ugb2Yg" +
-           "dGhlIGV2ZW50LgAuAET/HQAAABH/////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEB" +
-           "AB4DAAAAACkAAABBIGRlc2NyaXB0aW9uIG9mIHRoZSBzb3VyY2Ugb2YgdGhlIGV2ZW50LgAuAEQAHgAA" +
-           "AAz/////AQH/////AAAAADVgiQoCAAAAAAAEAAAAVGltZQEBAR4DAAAAABgAAABXaGVuIHRoZSBldmVu" +
-           "dCBvY2N1cnJlZC4ALgBEAR4AAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAALAAAAUmVjZWl2ZVRp" +
-           "bWUBAQIeAwAAAAA+AAAAV2hlbiB0aGUgc2VydmVyIHJlY2VpdmVkIHRoZSBldmVudCBmcm9tIHRoZSB1" +
-           "bmRlcmx5aW5nIHN5c3RlbS4ALgBEAh4AAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAAJAAAATG9j" +
-           "YWxUaW1lAQEDHgMAAAAAPAAAAEluZm9ybWF0aW9uIGFib3V0IHRoZSBsb2NhbCB0aW1lIHdoZXJlIHRo" +
-           "ZSBldmVudCBvcmlnaW5hdGVkLgAuAEQDHgAAAQDQIv////8BAf////8AAAAANWCJCgIAAAAAAAcAAABN" +
-           "ZXNzYWdlAQEEHgMAAAAAJQAAAEEgbG9jYWxpemVkIGRlc2NyaXB0aW9uIG9mIHRoZSBldmVudC4ALgBE" +
-           "BB4AAAAV/////wEB/////wAAAAA1YIkKAgAAAAAACAAAAFNldmVyaXR5AQEFHgMAAAAAIQAAAEluZGlj" +
-           "YXRlcyBob3cgdXJnZW50IGFuIGV2ZW50IGlzLgAuAEQFHgAAAAX/////AQH/////AAAAABVgiQoCAAAA" +
-           "AAAQAAAAQ29uZGl0aW9uQ2xhc3NJZAEBBh4ALgBEBh4AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "EgAAAENvbmRpdGlvbkNsYXNzTmFtZQEBBx4ALgBEBx4AAAAV/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "DQAAAENvbmRpdGlvbk5hbWUBAQgeAC4ARAgeAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABC" +
-           "cmFuY2hJZAEBCR4ALgBECR4AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBCh4A" +
-           "LgBECh4AAAAB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBCx4ALwEAIyML" +
-           "HgAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAQweAC4ARAweAAAAAf////8BAf////8A" +
-           "AAAAFWCJCgIAAAAAAAcAAABRdWFsaXR5AQEUHgAvAQAqIxQeAAAAE/////8BAf////8BAAAAFWCJCgIA" +
-           "AAAAAA8AAABTb3VyY2VUaW1lc3RhbXABARUeAC4ARBUeAAABACYB/////wEB/////wAAAAAVYIkKAgAA" +
-           "AAAADAAAAExhc3RTZXZlcml0eQEBFh4ALwEAKiMWHgAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAP" +
-           "AAAAU291cmNlVGltZXN0YW1wAQEXHgAuAEQXHgAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcA" +
-           "AABDb21tZW50AQEYHgAvAQAqIxgeAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VU" +
-           "aW1lc3RhbXABARkeAC4ARBkeAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVz" +
-           "ZXJJZAEBGh4ALgBEGh4AAAAM/////wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBARseAC8B" +
-           "AEQjGx4AAAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBHB4ALwEAQyMcHgAA" +
-           "AQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAKAAAAQWRkQ29tbWVudAEBHR4ALwEARSMdHgAAAQEB" +
-           "AAAAAQD5CwABAA0LAQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAR4eAC4ARB4eAACWAgAA" +
-           "AAEAKgEBRgAAAAcAAABFdmVudElkAA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0" +
-           "aGUgZXZlbnQgdG8gY29tbWVudC4BACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABU" +
-           "aGUgY29tbWVudCB0byBhZGQgdG8gdGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAA" +
-           "AAEADgAAAE1UQ3VycmVudFN0YXRlAQEhHgAvAD8hHgAAAAz/////AQH/////AAAAABVgiQoCAAAAAQAL" +
-           "AAAAQWN0aXZlU3RhdGUBASIeAC8BACMjIh4AAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElk" +
-           "AQEjHgAuAEQjHgAAAAH/////AQH/////AAAAAA==";
+           "IgAAAENvbmNlbnRyYXRpb25Db25kaXRpb25UeXBlSW5zdGFuY2UBAfwdAQH8Hf////8YAAAAFWCJCgIA" +
+           "AAAAAAcAAABFdmVudElkAQH9HQAuAET9HQAAAA//////AQH/////AAAAABVgiQoCAAAAAAAJAAAARXZl" +
+           "bnRUeXBlAQH+HQAuAET+HQAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEB" +
+           "/x0ALgBE/x0AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBAQAeAC4ARAAe" +
+           "AAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAQAAABUaW1lAQEBHgAuAEQBHgAAAQAmAf////8BAf//" +
+           "//8AAAAAFWCJCgIAAAAAAAsAAABSZWNlaXZlVGltZQEBAh4ALgBEAh4AAAEAJgH/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAAJAAAATG9jYWxUaW1lAQEDHgAuAEQDHgAAAQDQIv////8BAf////8AAAAAFWCJCgIA" +
+           "AAAAAAcAAABNZXNzYWdlAQEEHgAuAEQEHgAAABX/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAU2V2" +
+           "ZXJpdHkBAQUeAC4ARAUeAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAAAABDb25kaXRpb25DbGFz" +
+           "c0lkAQEGHgAuAEQGHgAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAAQ29uZGl0aW9uQ2xhc3NO" +
+           "YW1lAQEHHgAuAEQHHgAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAAQ29uZGl0aW9uTmFtZQEB" +
+           "CB4ALgBECB4AAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5jaElkAQEJHgAuAEQJHgAA" +
+           "ABH/////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQEKHgAuAEQKHgAAAAH/////AQH/////" +
+           "AAAAABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQELHgAvAQAjIwseAAAAFf////8BAf////8BAAAA" +
+           "FWCJCgIAAAAAAAIAAABJZAEBDB4ALgBEDB4AAAAB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAFF1" +
+           "YWxpdHkBARQeAC8BACojFB4AAAAT/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVz" +
+           "dGFtcAEBFR4ALgBEFR4AAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAATGFzdFNldmVyaXR5" +
+           "AQEWHgAvAQAqIxYeAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXAB" +
+           "ARceAC4ARBceAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENvbW1lbnQBARgeAC8BACoj" +
+           "GB4AAAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBGR4ALgBEGR4A" +
+           "AAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklkAQEaHgAuAEQaHgAAAAz/" +
+           "////AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBGx4ALwEARCMbHgAAAQEBAAAAAQD5CwAB" +
+           "APMKAAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQEcHgAvAQBDIxweAAABAQEAAAABAPkLAAEA8woAAAAA" +
+           "BGGCCgQAAAAAAAoAAABBZGRDb21tZW50AQEdHgAvAQBFIx0eAAABAQEAAAABAPkLAAEADQsBAAAAFWCp" +
+           "CgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBHh4ALgBEHh4AAJYCAAAAAQAqAQFGAAAABwAAAEV2ZW50" +
+           "SWQAD/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0byBjb21tZW50" +
+           "LgEAKgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBjb21tZW50IHRvIGFkZCB0" +
+           "byB0aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAOAAAATVRDdXJyZW50U3Rh" +
+           "dGUBASEeAC8APyEeAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABBY3RpdmVTdGF0ZQEBIh4A" +
+           "LwEAIyMiHgAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBASMeAC4ARCMeAAAAAf////8B" +
+           "Af////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -10395,6 +11311,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -10405,44 +11330,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "IQAAAENvbmR1Y3Rpdml0eUNvbmRpdGlvblR5cGVJbnN0YW5jZQEBOR4BATke/////xgAAAA1YIkKAgAA" +
-           "AAAABwAAAEV2ZW50SWQBAToeAwAAAAArAAAAQSBnbG9iYWxseSB1bmlxdWUgaWRlbnRpZmllciBmb3Ig" +
-           "dGhlIGV2ZW50LgAuAEQ6HgAAAA//////AQH/////AAAAADVgiQoCAAAAAAAJAAAARXZlbnRUeXBlAQE7" +
-           "HgMAAAAAIgAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdHlwZS4ALgBEOx4AAAAR/////wEB" +
-           "/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBATweAwAAAAAYAAAAVGhlIHNvdXJjZSBvZiB0" +
-           "aGUgZXZlbnQuAC4ARDweAAAAEf////8BAf////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQE9" +
-           "HgMAAAAAKQAAAEEgZGVzY3JpcHRpb24gb2YgdGhlIHNvdXJjZSBvZiB0aGUgZXZlbnQuAC4ARD0eAAAA" +
-           "DP////8BAf////8AAAAANWCJCgIAAAAAAAQAAABUaW1lAQE+HgMAAAAAGAAAAFdoZW4gdGhlIGV2ZW50" +
-           "IG9jY3VycmVkLgAuAEQ+HgAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAsAAABSZWNlaXZlVGlt" +
-           "ZQEBPx4DAAAAAD4AAABXaGVuIHRoZSBzZXJ2ZXIgcmVjZWl2ZWQgdGhlIGV2ZW50IGZyb20gdGhlIHVu" +
-           "ZGVybHlpbmcgc3lzdGVtLgAuAEQ/HgAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAkAAABMb2Nh" +
-           "bFRpbWUBAUAeAwAAAAA8AAAASW5mb3JtYXRpb24gYWJvdXQgdGhlIGxvY2FsIHRpbWUgd2hlcmUgdGhl" +
-           "IGV2ZW50IG9yaWdpbmF0ZWQuAC4AREAeAAABANAi/////wEB/////wAAAAA1YIkKAgAAAAAABwAAAE1l" +
-           "c3NhZ2UBAUEeAwAAAAAlAAAAQSBsb2NhbGl6ZWQgZGVzY3JpcHRpb24gb2YgdGhlIGV2ZW50LgAuAERB" +
-           "HgAAABX/////AQH/////AAAAADVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkBAUIeAwAAAAAhAAAASW5kaWNh" +
-           "dGVzIGhvdyB1cmdlbnQgYW4gZXZlbnQgaXMuAC4AREIeAAAABf////8BAf////8AAAAAFWCJCgIAAAAA" +
-           "ABAAAABDb25kaXRpb25DbGFzc0lkAQFDHgAuAERDHgAAABH/////AQH/////AAAAABVgiQoCAAAAAAAS" +
-           "AAAAQ29uZGl0aW9uQ2xhc3NOYW1lAQFEHgAuAEREHgAAABX/////AQH/////AAAAABVgiQoCAAAAAAAN" +
-           "AAAAQ29uZGl0aW9uTmFtZQEBRR4ALgBERR4AAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJy" +
-           "YW5jaElkAQFGHgAuAERGHgAAABH/////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQFHHgAu" +
-           "AERHHgAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQFIHgAvAQAjI0ge" +
-           "AAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBSR4ALgBESR4AAAAB/////wEB/////wAA" +
-           "AAAVYIkKAgAAAAAABwAAAFF1YWxpdHkBAVEeAC8BACojUR4AAAAT/////wEB/////wEAAAAVYIkKAgAA" +
-           "AAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBUh4ALgBEUh4AAAEAJgH/////AQH/////AAAAABVgiQoCAAAA" +
-           "AAAMAAAATGFzdFNldmVyaXR5AQFTHgAvAQAqI1MeAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8A" +
-           "AABTb3VyY2VUaW1lc3RhbXABAVQeAC4ARFQeAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAA" +
-           "AENvbW1lbnQBAVUeAC8BACojVR4AAAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRp" +
-           "bWVzdGFtcAEBVh4ALgBEVh4AAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNl" +
-           "cklkAQFXHgAuAERXHgAAAAz/////AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBWB4ALwEA" +
-           "RCNYHgAAAQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQFZHgAvAQBDI1keAAAB" +
-           "AQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAoAAABBZGRDb21tZW50AQFaHgAvAQBFI1oeAAABAQEA" +
-           "AAABAPkLAAEADQsBAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBWx4ALgBEWx4AAJYCAAAA" +
-           "AQAqAQFGAAAABwAAAEV2ZW50SWQAD/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRo" +
-           "ZSBldmVudCB0byBjb21tZW50LgEAKgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRo" +
-           "ZSBjb21tZW50IHRvIGFkZCB0byB0aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAA" +
-           "AQAOAAAATVRDdXJyZW50U3RhdGUBAV4eAC8AP14eAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsA" +
-           "AABBY3RpdmVTdGF0ZQEBXx4ALwEAIyNfHgAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQB" +
-           "AWAeAC4ARGAeAAAAAf////8BAf////8AAAAA";
+           "IQAAAENvbmR1Y3Rpdml0eUNvbmRpdGlvblR5cGVJbnN0YW5jZQEBOR4BATke/////xgAAAAVYIkKAgAA" +
+           "AAAABwAAAEV2ZW50SWQBAToeAC4ARDoeAAAAD/////8BAf////8AAAAAFWCJCgIAAAAAAAkAAABFdmVu" +
+           "dFR5cGUBATseAC4ARDseAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQE8" +
+           "HgAuAEQ8HgAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEBPR4ALgBEPR4A" +
+           "AAAM/////wEB/////wAAAAAVYIkKAgAAAAAABAAAAFRpbWUBAT4eAC4ARD4eAAABACYB/////wEB////" +
+           "/wAAAAAVYIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQE/HgAuAEQ/HgAAAQAmAf////8BAf////8AAAAA" +
+           "FWCJCgIAAAAAAAkAAABMb2NhbFRpbWUBAUAeAC4AREAeAAABANAi/////wEB/////wAAAAAVYIkKAgAA" +
+           "AAAABwAAAE1lc3NhZ2UBAUEeAC4AREEeAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABTZXZl" +
+           "cml0eQEBQh4ALgBEQh4AAAAF/////wEB/////wAAAAAVYIkKAgAAAAAAEAAAAENvbmRpdGlvbkNsYXNz" +
+           "SWQBAUMeAC4AREMeAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIAAABDb25kaXRpb25DbGFzc05h" +
+           "bWUBAUQeAC4AREQeAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0AAABDb25kaXRpb25OYW1lAQFF" +
+           "HgAuAERFHgAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJhbmNoSWQBAUYeAC4AREYeAAAA" +
+           "Ef////8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BAUceAC4AREceAAAAAf////8BAf////8A" +
+           "AAAAFWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBAUgeAC8BACMjSB4AAAAV/////wEB/////wEAAAAV" +
+           "YIkKAgAAAAAAAgAAAElkAQFJHgAuAERJHgAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAUXVh" +
+           "bGl0eQEBUR4ALwEAKiNRHgAAABP/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0" +
+           "YW1wAQFSHgAuAERSHgAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABMYXN0U2V2ZXJpdHkB" +
+           "AVMeAC8BACojUx4AAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEB" +
+           "VB4ALgBEVB4AAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQ29tbWVudAEBVR4ALwEAKiNV" +
+           "HgAAABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQFWHgAuAERWHgAA" +
+           "AQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQBAVceAC4ARFceAAAADP//" +
+           "//8BAf////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQFYHgAvAQBEI1geAAABAQEAAAABAPkLAAEA" +
+           "8woAAAAABGGCCgQAAAAAAAYAAABFbmFibGUBAVkeAC8BAEMjWR4AAAEBAQAAAAEA+QsAAQDzCgAAAAAE" +
+           "YYIKBAAAAAAACgAAAEFkZENvbW1lbnQBAVoeAC8BAEUjWh4AAAEBAQAAAAEA+QsAAQANCwEAAAAVYKkK" +
+           "AgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFbHgAuAERbHgAAlgIAAAABACoBAUYAAAAHAAAARXZlbnRJ" +
+           "ZAAP/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHRvIGNvbW1lbnQu" +
+           "AQAqAQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhlIGNvbW1lbnQgdG8gYWRkIHRv" +
+           "IHRoZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAABAA4AAABNVEN1cnJlbnRTdGF0" +
+           "ZQEBXh4ALwA/Xh4AAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAEFjdGl2ZVN0YXRlAQFfHgAv" +
+           "AQAjI18eAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBYB4ALgBEYB4AAAAB/////wEB" +
+           "/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -10495,6 +11413,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -10505,44 +11432,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "HwAAAERhdGFfUmFuZ2VDb25kaXRpb25UeXBlSW5zdGFuY2UBAXYeAQF2Hv////8YAAAANWCJCgIAAAAA" +
-           "AAcAAABFdmVudElkAQF3HgMAAAAAKwAAAEEgZ2xvYmFsbHkgdW5pcXVlIGlkZW50aWZpZXIgZm9yIHRo" +
-           "ZSBldmVudC4ALgBEdx4AAAAP/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAEV2ZW50VHlwZQEBeB4D" +
-           "AAAAACIAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHR5cGUuAC4ARHgeAAAAEf////8BAf//" +
-           "//8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQF5HgMAAAAAGAAAAFRoZSBzb3VyY2Ugb2YgdGhl" +
-           "IGV2ZW50LgAuAER5HgAAABH/////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEBeh4D" +
-           "AAAAACkAAABBIGRlc2NyaXB0aW9uIG9mIHRoZSBzb3VyY2Ugb2YgdGhlIGV2ZW50LgAuAER6HgAAAAz/" +
-           "////AQH/////AAAAADVgiQoCAAAAAAAEAAAAVGltZQEBex4DAAAAABgAAABXaGVuIHRoZSBldmVudCBv" +
-           "Y2N1cnJlZC4ALgBEex4AAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUB" +
-           "AXweAwAAAAA+AAAAV2hlbiB0aGUgc2VydmVyIHJlY2VpdmVkIHRoZSBldmVudCBmcm9tIHRoZSB1bmRl" +
-           "cmx5aW5nIHN5c3RlbS4ALgBEfB4AAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAAJAAAATG9jYWxU" +
-           "aW1lAQF9HgMAAAAAPAAAAEluZm9ybWF0aW9uIGFib3V0IHRoZSBsb2NhbCB0aW1lIHdoZXJlIHRoZSBl" +
-           "dmVudCBvcmlnaW5hdGVkLgAuAER9HgAAAQDQIv////8BAf////8AAAAANWCJCgIAAAAAAAcAAABNZXNz" +
-           "YWdlAQF+HgMAAAAAJQAAAEEgbG9jYWxpemVkIGRlc2NyaXB0aW9uIG9mIHRoZSBldmVudC4ALgBEfh4A" +
-           "AAAV/////wEB/////wAAAAA1YIkKAgAAAAAACAAAAFNldmVyaXR5AQF/HgMAAAAAIQAAAEluZGljYXRl" +
-           "cyBob3cgdXJnZW50IGFuIGV2ZW50IGlzLgAuAER/HgAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQ" +
-           "AAAAQ29uZGl0aW9uQ2xhc3NJZAEBgB4ALgBEgB4AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAA" +
-           "AENvbmRpdGlvbkNsYXNzTmFtZQEBgR4ALgBEgR4AAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAA" +
-           "AENvbmRpdGlvbk5hbWUBAYIeAC4ARIIeAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFu" +
-           "Y2hJZAEBgx4ALgBEgx4AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBhB4ALgBE" +
-           "hB4AAAAB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBhR4ALwEAIyOFHgAA" +
-           "ABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAYYeAC4ARIYeAAAAAf////8BAf////8AAAAA" +
-           "FWCJCgIAAAAAAAcAAABRdWFsaXR5AQGOHgAvAQAqI44eAAAAE/////8BAf////8BAAAAFWCJCgIAAAAA" +
-           "AA8AAABTb3VyY2VUaW1lc3RhbXABAY8eAC4ARI8eAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "DAAAAExhc3RTZXZlcml0eQEBkB4ALwEAKiOQHgAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAA" +
-           "U291cmNlVGltZXN0YW1wAQGRHgAuAESRHgAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABD" +
-           "b21tZW50AQGSHgAvAQAqI5IeAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1l" +
-           "c3RhbXABAZMeAC4ARJMeAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJ" +
-           "ZAEBlB4ALgBElB4AAAAM/////wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAZUeAC8BAEQj" +
-           "lR4AAAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBlh4ALwEAQyOWHgAAAQEB" +
-           "AAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAKAAAAQWRkQ29tbWVudAEBlx4ALwEARSOXHgAAAQEBAAAA" +
-           "AQD5CwABAA0LAQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAZgeAC4ARJgeAACWAgAAAAEA" +
-           "KgEBRgAAAAcAAABFdmVudElkAA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUg" +
-           "ZXZlbnQgdG8gY29tbWVudC4BACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUg" +
-           "Y29tbWVudCB0byBhZGQgdG8gdGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEA" +
-           "DgAAAE1UQ3VycmVudFN0YXRlAQGbHgAvAD+bHgAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAA" +
-           "QWN0aXZlU3RhdGUBAZweAC8BACMjnB4AAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQGd" +
-           "HgAuAESdHgAAAAH/////AQH/////AAAAAA==";
+           "HwAAAERhdGFfUmFuZ2VDb25kaXRpb25UeXBlSW5zdGFuY2UBAXYeAQF2Hv////8YAAAAFWCJCgIAAAAA" +
+           "AAcAAABFdmVudElkAQF3HgAuAER3HgAAAA//////AQH/////AAAAABVgiQoCAAAAAAAJAAAARXZlbnRU" +
+           "eXBlAQF4HgAuAER4HgAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBeR4A" +
+           "LgBEeR4AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBAXoeAC4ARHoeAAAA" +
+           "DP////8BAf////8AAAAAFWCJCgIAAAAAAAQAAABUaW1lAQF7HgAuAER7HgAAAQAmAf////8BAf////8A" +
+           "AAAAFWCJCgIAAAAAAAsAAABSZWNlaXZlVGltZQEBfB4ALgBEfB4AAAEAJgH/////AQH/////AAAAABVg" +
+           "iQoCAAAAAAAJAAAATG9jYWxUaW1lAQF9HgAuAER9HgAAAQDQIv////8BAf////8AAAAAFWCJCgIAAAAA" +
+           "AAcAAABNZXNzYWdlAQF+HgAuAER+HgAAABX/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAU2V2ZXJp" +
+           "dHkBAX8eAC4ARH8eAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAAAABDb25kaXRpb25DbGFzc0lk" +
+           "AQGAHgAuAESAHgAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAAQ29uZGl0aW9uQ2xhc3NOYW1l" +
+           "AQGBHgAuAESBHgAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAAQ29uZGl0aW9uTmFtZQEBgh4A" +
+           "LgBEgh4AAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5jaElkAQGDHgAuAESDHgAAABH/" +
+           "////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQGEHgAuAESEHgAAAAH/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQGFHgAvAQAjI4UeAAAAFf////8BAf////8BAAAAFWCJ" +
+           "CgIAAAAAAAIAAABJZAEBhh4ALgBEhh4AAAAB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAFF1YWxp" +
+           "dHkBAY4eAC8BACojjh4AAAAT/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFt" +
+           "cAEBjx4ALgBEjx4AAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAATGFzdFNldmVyaXR5AQGQ" +
+           "HgAvAQAqI5AeAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAZEe" +
+           "AC4ARJEeAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENvbW1lbnQBAZIeAC8BACojkh4A" +
+           "AAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBkx4ALgBEkx4AAAEA" +
+           "JgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklkAQGUHgAuAESUHgAAAAz/////" +
+           "AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBlR4ALwEARCOVHgAAAQEBAAAAAQD5CwABAPMK" +
+           "AAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQGWHgAvAQBDI5YeAAABAQEAAAABAPkLAAEA8woAAAAABGGC" +
+           "CgQAAAAAAAoAAABBZGRDb21tZW50AQGXHgAvAQBFI5ceAAABAQEAAAABAPkLAAEADQsBAAAAFWCpCgIA" +
+           "AAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBmB4ALgBEmB4AAJYCAAAAAQAqAQFGAAAABwAAAEV2ZW50SWQA" +
+           "D/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0byBjb21tZW50LgEA" +
+           "KgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBjb21tZW50IHRvIGFkZCB0byB0" +
+           "aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAOAAAATVRDdXJyZW50U3RhdGUB" +
+           "AZseAC8AP5seAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABBY3RpdmVTdGF0ZQEBnB4ALwEA" +
+           "IyOcHgAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAZ0eAC4ARJ0eAAAAAf////8BAf//" +
+           "//8AAAAA";
         #endregion
         #endif
         #endregion
@@ -10595,6 +11515,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -10605,44 +11534,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "HgAAAERpcmVjdGlvbkNvbmRpdGlvblR5cGVJbnN0YW5jZQEBsx4BAbMe/////xgAAAA1YIkKAgAAAAAA" +
-           "BwAAAEV2ZW50SWQBAbQeAwAAAAArAAAAQSBnbG9iYWxseSB1bmlxdWUgaWRlbnRpZmllciBmb3IgdGhl" +
-           "IGV2ZW50LgAuAES0HgAAAA//////AQH/////AAAAADVgiQoCAAAAAAAJAAAARXZlbnRUeXBlAQG1HgMA" +
-           "AAAAIgAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdHlwZS4ALgBEtR4AAAAR/////wEB////" +
-           "/wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBAbYeAwAAAAAYAAAAVGhlIHNvdXJjZSBvZiB0aGUg" +
-           "ZXZlbnQuAC4ARLYeAAAAEf////8BAf////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQG3HgMA" +
-           "AAAAKQAAAEEgZGVzY3JpcHRpb24gb2YgdGhlIHNvdXJjZSBvZiB0aGUgZXZlbnQuAC4ARLceAAAADP//" +
-           "//8BAf////8AAAAANWCJCgIAAAAAAAQAAABUaW1lAQG4HgMAAAAAGAAAAFdoZW4gdGhlIGV2ZW50IG9j" +
-           "Y3VycmVkLgAuAES4HgAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAsAAABSZWNlaXZlVGltZQEB" +
-           "uR4DAAAAAD4AAABXaGVuIHRoZSBzZXJ2ZXIgcmVjZWl2ZWQgdGhlIGV2ZW50IGZyb20gdGhlIHVuZGVy" +
-           "bHlpbmcgc3lzdGVtLgAuAES5HgAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAkAAABMb2NhbFRp" +
-           "bWUBAboeAwAAAAA8AAAASW5mb3JtYXRpb24gYWJvdXQgdGhlIGxvY2FsIHRpbWUgd2hlcmUgdGhlIGV2" +
-           "ZW50IG9yaWdpbmF0ZWQuAC4ARLoeAAABANAi/////wEB/////wAAAAA1YIkKAgAAAAAABwAAAE1lc3Nh" +
-           "Z2UBAbseAwAAAAAlAAAAQSBsb2NhbGl6ZWQgZGVzY3JpcHRpb24gb2YgdGhlIGV2ZW50LgAuAES7HgAA" +
-           "ABX/////AQH/////AAAAADVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkBAbweAwAAAAAhAAAASW5kaWNhdGVz" +
-           "IGhvdyB1cmdlbnQgYW4gZXZlbnQgaXMuAC4ARLweAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAA" +
-           "AABDb25kaXRpb25DbGFzc0lkAQG9HgAuAES9HgAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAA" +
-           "Q29uZGl0aW9uQ2xhc3NOYW1lAQG+HgAuAES+HgAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAA" +
-           "Q29uZGl0aW9uTmFtZQEBvx4ALgBEvx4AAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5j" +
-           "aElkAQHAHgAuAETAHgAAABH/////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQHBHgAuAETB" +
-           "HgAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQHCHgAvAQAjI8IeAAAA" +
-           "Ff////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBwx4ALgBEwx4AAAAB/////wEB/////wAAAAAV" +
-           "YIkKAgAAAAAABwAAAFF1YWxpdHkBAcseAC8BACojyx4AAAAT/////wEB/////wEAAAAVYIkKAgAAAAAA" +
-           "DwAAAFNvdXJjZVRpbWVzdGFtcAEBzB4ALgBEzB4AAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAM" +
-           "AAAATGFzdFNldmVyaXR5AQHNHgAvAQAqI80eAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABT" +
-           "b3VyY2VUaW1lc3RhbXABAc4eAC4ARM4eAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENv" +
-           "bW1lbnQBAc8eAC8BACojzx4AAAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVz" +
-           "dGFtcAEB0B4ALgBE0B4AAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklk" +
-           "AQHRHgAuAETRHgAAAAz/////AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEB0h4ALwEARCPS" +
-           "HgAAAQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQHTHgAvAQBDI9MeAAABAQEA" +
-           "AAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAoAAABBZGRDb21tZW50AQHUHgAvAQBFI9QeAAABAQEAAAAB" +
-           "APkLAAEADQsBAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEB1R4ALgBE1R4AAJYCAAAAAQAq" +
-           "AQFGAAAABwAAAEV2ZW50SWQAD/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBl" +
-           "dmVudCB0byBjb21tZW50LgEAKgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBj" +
-           "b21tZW50IHRvIGFkZCB0byB0aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAO" +
-           "AAAATVRDdXJyZW50U3RhdGUBAdgeAC8AP9geAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABB" +
-           "Y3RpdmVTdGF0ZQEB2R4ALwEAIyPZHgAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAdoe" +
-           "AC4ARNoeAAAAAf////8BAf////8AAAAA";
+           "HgAAAERpcmVjdGlvbkNvbmRpdGlvblR5cGVJbnN0YW5jZQEBsx4BAbMe/////xgAAAAVYIkKAgAAAAAA" +
+           "BwAAAEV2ZW50SWQBAbQeAC4ARLQeAAAAD/////8BAf////8AAAAAFWCJCgIAAAAAAAkAAABFdmVudFR5" +
+           "cGUBAbUeAC4ARLUeAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQG2HgAu" +
+           "AES2HgAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEBtx4ALgBEtx4AAAAM" +
+           "/////wEB/////wAAAAAVYIkKAgAAAAAABAAAAFRpbWUBAbgeAC4ARLgeAAABACYB/////wEB/////wAA" +
+           "AAAVYIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQG5HgAuAES5HgAAAQAmAf////8BAf////8AAAAAFWCJ" +
+           "CgIAAAAAAAkAAABMb2NhbFRpbWUBAboeAC4ARLoeAAABANAi/////wEB/////wAAAAAVYIkKAgAAAAAA" +
+           "BwAAAE1lc3NhZ2UBAbseAC4ARLseAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABTZXZlcml0" +
+           "eQEBvB4ALgBEvB4AAAAF/////wEB/////wAAAAAVYIkKAgAAAAAAEAAAAENvbmRpdGlvbkNsYXNzSWQB" +
+           "Ab0eAC4ARL0eAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIAAABDb25kaXRpb25DbGFzc05hbWUB" +
+           "Ab4eAC4ARL4eAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0AAABDb25kaXRpb25OYW1lAQG/HgAu" +
+           "AES/HgAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJhbmNoSWQBAcAeAC4ARMAeAAAAEf//" +
+           "//8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BAcEeAC4ARMEeAAAAAf////8BAf////8AAAAA" +
+           "FWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBAcIeAC8BACMjwh4AAAAV/////wEB/////wEAAAAVYIkK" +
+           "AgAAAAAAAgAAAElkAQHDHgAuAETDHgAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAUXVhbGl0" +
+           "eQEByx4ALwEAKiPLHgAAABP/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1w" +
+           "AQHMHgAuAETMHgAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABMYXN0U2V2ZXJpdHkBAc0e" +
+           "AC8BACojzR4AAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBzh4A" +
+           "LgBEzh4AAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQ29tbWVudAEBzx4ALwEAKiPPHgAA" +
+           "ABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQHQHgAuAETQHgAAAQAm" +
+           "Af////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQBAdEeAC4ARNEeAAAADP////8B" +
+           "Af////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQHSHgAvAQBEI9IeAAABAQEAAAABAPkLAAEA8woA" +
+           "AAAABGGCCgQAAAAAAAYAAABFbmFibGUBAdMeAC8BAEMj0x4AAAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIK" +
+           "BAAAAAAACgAAAEFkZENvbW1lbnQBAdQeAC8BAEUj1B4AAAEBAQAAAAEA+QsAAQANCwEAAAAVYKkKAgAA" +
+           "AAAADgAAAElucHV0QXJndW1lbnRzAQHVHgAuAETVHgAAlgIAAAABACoBAUYAAAAHAAAARXZlbnRJZAAP" +
+           "/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHRvIGNvbW1lbnQuAQAq" +
+           "AQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhlIGNvbW1lbnQgdG8gYWRkIHRvIHRo" +
+           "ZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAABAA4AAABNVEN1cnJlbnRTdGF0ZQEB" +
+           "2B4ALwA/2B4AAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAEFjdGl2ZVN0YXRlAQHZHgAvAQAj" +
+           "I9keAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEB2h4ALgBE2h4AAAAB/////wEB////" +
+           "/wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -10695,6 +11617,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -10705,44 +11636,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "IQAAAERpc3BsYWNlbWVudENvbmRpdGlvblR5cGVJbnN0YW5jZQEB8B4BAfAe/////xgAAAA1YIkKAgAA" +
-           "AAAABwAAAEV2ZW50SWQBAfEeAwAAAAArAAAAQSBnbG9iYWxseSB1bmlxdWUgaWRlbnRpZmllciBmb3Ig" +
-           "dGhlIGV2ZW50LgAuAETxHgAAAA//////AQH/////AAAAADVgiQoCAAAAAAAJAAAARXZlbnRUeXBlAQHy" +
-           "HgMAAAAAIgAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdHlwZS4ALgBE8h4AAAAR/////wEB" +
-           "/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBAfMeAwAAAAAYAAAAVGhlIHNvdXJjZSBvZiB0" +
-           "aGUgZXZlbnQuAC4ARPMeAAAAEf////8BAf////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQH0" +
-           "HgMAAAAAKQAAAEEgZGVzY3JpcHRpb24gb2YgdGhlIHNvdXJjZSBvZiB0aGUgZXZlbnQuAC4ARPQeAAAA" +
-           "DP////8BAf////8AAAAANWCJCgIAAAAAAAQAAABUaW1lAQH1HgMAAAAAGAAAAFdoZW4gdGhlIGV2ZW50" +
-           "IG9jY3VycmVkLgAuAET1HgAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAsAAABSZWNlaXZlVGlt" +
-           "ZQEB9h4DAAAAAD4AAABXaGVuIHRoZSBzZXJ2ZXIgcmVjZWl2ZWQgdGhlIGV2ZW50IGZyb20gdGhlIHVu" +
-           "ZGVybHlpbmcgc3lzdGVtLgAuAET2HgAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAkAAABMb2Nh" +
-           "bFRpbWUBAfceAwAAAAA8AAAASW5mb3JtYXRpb24gYWJvdXQgdGhlIGxvY2FsIHRpbWUgd2hlcmUgdGhl" +
-           "IGV2ZW50IG9yaWdpbmF0ZWQuAC4ARPceAAABANAi/////wEB/////wAAAAA1YIkKAgAAAAAABwAAAE1l" +
-           "c3NhZ2UBAfgeAwAAAAAlAAAAQSBsb2NhbGl6ZWQgZGVzY3JpcHRpb24gb2YgdGhlIGV2ZW50LgAuAET4" +
-           "HgAAABX/////AQH/////AAAAADVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkBAfkeAwAAAAAhAAAASW5kaWNh" +
-           "dGVzIGhvdyB1cmdlbnQgYW4gZXZlbnQgaXMuAC4ARPkeAAAABf////8BAf////8AAAAAFWCJCgIAAAAA" +
-           "ABAAAABDb25kaXRpb25DbGFzc0lkAQH6HgAuAET6HgAAABH/////AQH/////AAAAABVgiQoCAAAAAAAS" +
-           "AAAAQ29uZGl0aW9uQ2xhc3NOYW1lAQH7HgAuAET7HgAAABX/////AQH/////AAAAABVgiQoCAAAAAAAN" +
-           "AAAAQ29uZGl0aW9uTmFtZQEB/B4ALgBE/B4AAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJy" +
-           "YW5jaElkAQH9HgAuAET9HgAAABH/////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQH+HgAu" +
-           "AET+HgAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQH/HgAvAQAjI/8e" +
-           "AAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBAB8ALgBEAB8AAAAB/////wEB/////wAA" +
-           "AAAVYIkKAgAAAAAABwAAAFF1YWxpdHkBAQgfAC8BACojCB8AAAAT/////wEB/////wEAAAAVYIkKAgAA" +
-           "AAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBCR8ALgBECR8AAAEAJgH/////AQH/////AAAAABVgiQoCAAAA" +
-           "AAAMAAAATGFzdFNldmVyaXR5AQEKHwAvAQAqIwofAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8A" +
-           "AABTb3VyY2VUaW1lc3RhbXABAQsfAC4ARAsfAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAA" +
-           "AENvbW1lbnQBAQwfAC8BACojDB8AAAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRp" +
-           "bWVzdGFtcAEBDR8ALgBEDR8AAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNl" +
-           "cklkAQEOHwAuAEQOHwAAAAz/////AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBDx8ALwEA" +
-           "RCMPHwAAAQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQEQHwAvAQBDIxAfAAAB" +
-           "AQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAoAAABBZGRDb21tZW50AQERHwAvAQBFIxEfAAABAQEA" +
-           "AAABAPkLAAEADQsBAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBEh8ALgBEEh8AAJYCAAAA" +
-           "AQAqAQFGAAAABwAAAEV2ZW50SWQAD/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRo" +
-           "ZSBldmVudCB0byBjb21tZW50LgEAKgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRo" +
-           "ZSBjb21tZW50IHRvIGFkZCB0byB0aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAA" +
-           "AQAOAAAATVRDdXJyZW50U3RhdGUBARUfAC8APxUfAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsA" +
-           "AABBY3RpdmVTdGF0ZQEBFh8ALwEAIyMWHwAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQB" +
-           "ARcfAC4ARBcfAAAAAf////8BAf////8AAAAA";
+           "IQAAAERpc3BsYWNlbWVudENvbmRpdGlvblR5cGVJbnN0YW5jZQEB8B4BAfAe/////xgAAAAVYIkKAgAA" +
+           "AAAABwAAAEV2ZW50SWQBAfEeAC4ARPEeAAAAD/////8BAf////8AAAAAFWCJCgIAAAAAAAkAAABFdmVu" +
+           "dFR5cGUBAfIeAC4ARPIeAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQHz" +
+           "HgAuAETzHgAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEB9B4ALgBE9B4A" +
+           "AAAM/////wEB/////wAAAAAVYIkKAgAAAAAABAAAAFRpbWUBAfUeAC4ARPUeAAABACYB/////wEB////" +
+           "/wAAAAAVYIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQH2HgAuAET2HgAAAQAmAf////8BAf////8AAAAA" +
+           "FWCJCgIAAAAAAAkAAABMb2NhbFRpbWUBAfceAC4ARPceAAABANAi/////wEB/////wAAAAAVYIkKAgAA" +
+           "AAAABwAAAE1lc3NhZ2UBAfgeAC4ARPgeAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABTZXZl" +
+           "cml0eQEB+R4ALgBE+R4AAAAF/////wEB/////wAAAAAVYIkKAgAAAAAAEAAAAENvbmRpdGlvbkNsYXNz" +
+           "SWQBAfoeAC4ARPoeAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIAAABDb25kaXRpb25DbGFzc05h" +
+           "bWUBAfseAC4ARPseAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0AAABDb25kaXRpb25OYW1lAQH8" +
+           "HgAuAET8HgAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJhbmNoSWQBAf0eAC4ARP0eAAAA" +
+           "Ef////8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BAf4eAC4ARP4eAAAAAf////8BAf////8A" +
+           "AAAAFWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBAf8eAC8BACMj/x4AAAAV/////wEB/////wEAAAAV" +
+           "YIkKAgAAAAAAAgAAAElkAQEAHwAuAEQAHwAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAUXVh" +
+           "bGl0eQEBCB8ALwEAKiMIHwAAABP/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0" +
+           "YW1wAQEJHwAuAEQJHwAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABMYXN0U2V2ZXJpdHkB" +
+           "AQofAC8BACojCh8AAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEB" +
+           "Cx8ALgBECx8AAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQ29tbWVudAEBDB8ALwEAKiMM" +
+           "HwAAABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQENHwAuAEQNHwAA" +
+           "AQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQBAQ4fAC4ARA4fAAAADP//" +
+           "//8BAf////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQEPHwAvAQBEIw8fAAABAQEAAAABAPkLAAEA" +
+           "8woAAAAABGGCCgQAAAAAAAYAAABFbmFibGUBARAfAC8BAEMjEB8AAAEBAQAAAAEA+QsAAQDzCgAAAAAE" +
+           "YYIKBAAAAAAACgAAAEFkZENvbW1lbnQBAREfAC8BAEUjER8AAAEBAQAAAAEA+QsAAQANCwEAAAAVYKkK" +
+           "AgAAAAAADgAAAElucHV0QXJndW1lbnRzAQESHwAuAEQSHwAAlgIAAAABACoBAUYAAAAHAAAARXZlbnRJ" +
+           "ZAAP/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHRvIGNvbW1lbnQu" +
+           "AQAqAQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhlIGNvbW1lbnQgdG8gYWRkIHRv" +
+           "IHRoZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAABAA4AAABNVEN1cnJlbnRTdGF0" +
+           "ZQEBFR8ALwA/FR8AAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAEFjdGl2ZVN0YXRlAQEWHwAv" +
+           "AQAjIxYfAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBFx8ALgBEFx8AAAAB/////wEB" +
+           "/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -10795,6 +11719,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -10805,44 +11738,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "JgAAAEVsZWN0cmljYWxfRW5lcmd5Q29uZGl0aW9uVHlwZUluc3RhbmNlAQEtHwEBLR//////GAAAADVg" +
-           "iQoCAAAAAAAHAAAARXZlbnRJZAEBLh8DAAAAACsAAABBIGdsb2JhbGx5IHVuaXF1ZSBpZGVudGlmaWVy" +
-           "IGZvciB0aGUgZXZlbnQuAC4ARC4fAAAAD/////8BAf////8AAAAANWCJCgIAAAAAAAkAAABFdmVudFR5" +
-           "cGUBAS8fAwAAAAAiAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0eXBlLgAuAEQvHwAAABH/" +
-           "////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBMB8DAAAAABgAAABUaGUgc291cmNl" +
-           "IG9mIHRoZSBldmVudC4ALgBEMB8AAAAR/////wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5h" +
-           "bWUBATEfAwAAAAApAAAAQSBkZXNjcmlwdGlvbiBvZiB0aGUgc291cmNlIG9mIHRoZSBldmVudC4ALgBE" +
-           "MR8AAAAM/////wEB/////wAAAAA1YIkKAgAAAAAABAAAAFRpbWUBATIfAwAAAAAYAAAAV2hlbiB0aGUg" +
-           "ZXZlbnQgb2NjdXJyZWQuAC4ARDIfAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACwAAAFJlY2Vp" +
-           "dmVUaW1lAQEzHwMAAAAAPgAAAFdoZW4gdGhlIHNlcnZlciByZWNlaXZlZCB0aGUgZXZlbnQgZnJvbSB0" +
-           "aGUgdW5kZXJseWluZyBzeXN0ZW0uAC4ARDMfAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACQAA" +
-           "AExvY2FsVGltZQEBNB8DAAAAADwAAABJbmZvcm1hdGlvbiBhYm91dCB0aGUgbG9jYWwgdGltZSB3aGVy" +
-           "ZSB0aGUgZXZlbnQgb3JpZ2luYXRlZC4ALgBENB8AAAEA0CL/////AQH/////AAAAADVgiQoCAAAAAAAH" +
-           "AAAATWVzc2FnZQEBNR8DAAAAACUAAABBIGxvY2FsaXplZCBkZXNjcmlwdGlvbiBvZiB0aGUgZXZlbnQu" +
-           "AC4ARDUfAAAAFf////8BAf////8AAAAANWCJCgIAAAAAAAgAAABTZXZlcml0eQEBNh8DAAAAACEAAABJ" +
-           "bmRpY2F0ZXMgaG93IHVyZ2VudCBhbiBldmVudCBpcy4ALgBENh8AAAAF/////wEB/////wAAAAAVYIkK" +
-           "AgAAAAAAEAAAAENvbmRpdGlvbkNsYXNzSWQBATcfAC4ARDcfAAAAEf////8BAf////8AAAAAFWCJCgIA" +
-           "AAAAABIAAABDb25kaXRpb25DbGFzc05hbWUBATgfAC4ARDgfAAAAFf////8BAf////8AAAAAFWCJCgIA" +
-           "AAAAAA0AAABDb25kaXRpb25OYW1lAQE5HwAuAEQ5HwAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAI" +
-           "AAAAQnJhbmNoSWQBATofAC4ARDofAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4B" +
-           "ATsfAC4ARDsfAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBATwfAC8B" +
-           "ACMjPB8AAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQE9HwAuAEQ9HwAAAAH/////AQH/" +
-           "////AAAAABVgiQoCAAAAAAAHAAAAUXVhbGl0eQEBRR8ALwEAKiNFHwAAABP/////AQH/////AQAAABVg" +
-           "iQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQFGHwAuAERGHwAAAQAmAf////8BAf////8AAAAAFWCJ" +
-           "CgIAAAAAAAwAAABMYXN0U2V2ZXJpdHkBAUcfAC8BACojRx8AAAAF/////wEB/////wEAAAAVYIkKAgAA" +
-           "AAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBSB8ALgBESB8AAAEAJgH/////AQH/////AAAAABVgiQoCAAAA" +
-           "AAAHAAAAQ29tbWVudAEBSR8ALwEAKiNJHwAAABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291" +
-           "cmNlVGltZXN0YW1wAQFKHwAuAERKHwAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGll" +
-           "bnRVc2VySWQBAUsfAC4AREsfAAAADP////8BAf////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQFM" +
-           "HwAvAQBEI0wfAAABAQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAYAAABFbmFibGUBAU0fAC8BAEMj" +
-           "TR8AAAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAACgAAAEFkZENvbW1lbnQBAU4fAC8BAEUjTh8A" +
-           "AAEBAQAAAAEA+QsAAQANCwEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFPHwAuAERPHwAA" +
-           "lgIAAAABACoBAUYAAAAHAAAARXZlbnRJZAAP/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBm" +
-           "b3IgdGhlIGV2ZW50IHRvIGNvbW1lbnQuAQAqAQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAk" +
-           "AAAAVGhlIGNvbW1lbnQgdG8gYWRkIHRvIHRoZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJ" +
-           "CgIAAAABAA4AAABNVEN1cnJlbnRTdGF0ZQEBUh8ALwA/Uh8AAAAM/////wEB/////wAAAAAVYIkKAgAA" +
-           "AAEACwAAAEFjdGl2ZVN0YXRlAQFTHwAvAQAjI1MfAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIA" +
-           "AABJZAEBVB8ALgBEVB8AAAAB/////wEB/////wAAAAA=";
+           "JgAAAEVsZWN0cmljYWxfRW5lcmd5Q29uZGl0aW9uVHlwZUluc3RhbmNlAQEtHwEBLR//////GAAAABVg" +
+           "iQoCAAAAAAAHAAAARXZlbnRJZAEBLh8ALgBELh8AAAAP/////wEB/////wAAAAAVYIkKAgAAAAAACQAA" +
+           "AEV2ZW50VHlwZQEBLx8ALgBELx8AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5v" +
+           "ZGUBATAfAC4ARDAfAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQExHwAu" +
+           "AEQxHwAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAEAAAAVGltZQEBMh8ALgBEMh8AAAEAJgH/////" +
+           "AQH/////AAAAABVgiQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUBATMfAC4ARDMfAAABACYB/////wEB////" +
+           "/wAAAAAVYIkKAgAAAAAACQAAAExvY2FsVGltZQEBNB8ALgBENB8AAAEA0CL/////AQH/////AAAAABVg" +
+           "iQoCAAAAAAAHAAAATWVzc2FnZQEBNR8ALgBENR8AAAAV/////wEB/////wAAAAAVYIkKAgAAAAAACAAA" +
+           "AFNldmVyaXR5AQE2HwAuAEQ2HwAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAQ29uZGl0aW9u" +
+           "Q2xhc3NJZAEBNx8ALgBENx8AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAENvbmRpdGlvbkNs" +
+           "YXNzTmFtZQEBOB8ALgBEOB8AAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAENvbmRpdGlvbk5h" +
+           "bWUBATkfAC4ARDkfAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFuY2hJZAEBOh8ALgBE" +
+           "Oh8AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBOx8ALgBEOx8AAAAB/////wEB" +
+           "/////wAAAAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBPB8ALwEAIyM8HwAAABX/////AQH/////" +
+           "AQAAABVgiQoCAAAAAAACAAAASWQBAT0fAC4ARD0fAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAcA" +
+           "AABRdWFsaXR5AQFFHwAvAQAqI0UfAAAAE/////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VU" +
+           "aW1lc3RhbXABAUYfAC4AREYfAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAExhc3RTZXZl" +
+           "cml0eQEBRx8ALwEAKiNHHwAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0" +
+           "YW1wAQFIHwAuAERIHwAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABDb21tZW50AQFJHwAv" +
+           "AQAqI0kfAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAUofAC4A" +
+           "REofAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJZAEBSx8ALgBESx8A" +
+           "AAAM/////wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAUwfAC8BAEQjTB8AAAEBAQAAAAEA" +
+           "+QsAAQDzCgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBTR8ALwEAQyNNHwAAAQEBAAAAAQD5CwABAPMK" +
+           "AAAAAARhggoEAAAAAAAKAAAAQWRkQ29tbWVudAEBTh8ALwEARSNOHwAAAQEBAAAAAQD5CwABAA0LAQAA" +
+           "ABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAU8fAC4ARE8fAACWAgAAAAEAKgEBRgAAAAcAAABF" +
+           "dmVudElkAA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdG8gY29t" +
+           "bWVudC4BACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUgY29tbWVudCB0byBh" +
+           "ZGQgdG8gdGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEADgAAAE1UQ3VycmVu" +
+           "dFN0YXRlAQFSHwAvAD9SHwAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAAQWN0aXZlU3RhdGUB" +
+           "AVMfAC8BACMjUx8AAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQFUHwAuAERUHwAAAAH/" +
+           "////AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -10895,6 +11821,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -10905,44 +11840,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "HwAAAEZpbGxfTGV2ZWxDb25kaXRpb25UeXBlSW5zdGFuY2UBAWofAQFqH/////8YAAAANWCJCgIAAAAA" +
-           "AAcAAABFdmVudElkAQFrHwMAAAAAKwAAAEEgZ2xvYmFsbHkgdW5pcXVlIGlkZW50aWZpZXIgZm9yIHRo" +
-           "ZSBldmVudC4ALgBEax8AAAAP/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAEV2ZW50VHlwZQEBbB8D" +
-           "AAAAACIAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHR5cGUuAC4ARGwfAAAAEf////8BAf//" +
-           "//8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQFtHwMAAAAAGAAAAFRoZSBzb3VyY2Ugb2YgdGhl" +
-           "IGV2ZW50LgAuAERtHwAAABH/////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEBbh8D" +
-           "AAAAACkAAABBIGRlc2NyaXB0aW9uIG9mIHRoZSBzb3VyY2Ugb2YgdGhlIGV2ZW50LgAuAERuHwAAAAz/" +
-           "////AQH/////AAAAADVgiQoCAAAAAAAEAAAAVGltZQEBbx8DAAAAABgAAABXaGVuIHRoZSBldmVudCBv" +
-           "Y2N1cnJlZC4ALgBEbx8AAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUB" +
-           "AXAfAwAAAAA+AAAAV2hlbiB0aGUgc2VydmVyIHJlY2VpdmVkIHRoZSBldmVudCBmcm9tIHRoZSB1bmRl" +
-           "cmx5aW5nIHN5c3RlbS4ALgBEcB8AAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAAJAAAATG9jYWxU" +
-           "aW1lAQFxHwMAAAAAPAAAAEluZm9ybWF0aW9uIGFib3V0IHRoZSBsb2NhbCB0aW1lIHdoZXJlIHRoZSBl" +
-           "dmVudCBvcmlnaW5hdGVkLgAuAERxHwAAAQDQIv////8BAf////8AAAAANWCJCgIAAAAAAAcAAABNZXNz" +
-           "YWdlAQFyHwMAAAAAJQAAAEEgbG9jYWxpemVkIGRlc2NyaXB0aW9uIG9mIHRoZSBldmVudC4ALgBEch8A" +
-           "AAAV/////wEB/////wAAAAA1YIkKAgAAAAAACAAAAFNldmVyaXR5AQFzHwMAAAAAIQAAAEluZGljYXRl" +
-           "cyBob3cgdXJnZW50IGFuIGV2ZW50IGlzLgAuAERzHwAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQ" +
-           "AAAAQ29uZGl0aW9uQ2xhc3NJZAEBdB8ALgBEdB8AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAA" +
-           "AENvbmRpdGlvbkNsYXNzTmFtZQEBdR8ALgBEdR8AAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAA" +
-           "AENvbmRpdGlvbk5hbWUBAXYfAC4ARHYfAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFu" +
-           "Y2hJZAEBdx8ALgBEdx8AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBeB8ALgBE" +
-           "eB8AAAAB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBeR8ALwEAIyN5HwAA" +
-           "ABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAXofAC4ARHofAAAAAf////8BAf////8AAAAA" +
-           "FWCJCgIAAAAAAAcAAABRdWFsaXR5AQGCHwAvAQAqI4IfAAAAE/////8BAf////8BAAAAFWCJCgIAAAAA" +
-           "AA8AAABTb3VyY2VUaW1lc3RhbXABAYMfAC4ARIMfAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "DAAAAExhc3RTZXZlcml0eQEBhB8ALwEAKiOEHwAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAA" +
-           "U291cmNlVGltZXN0YW1wAQGFHwAuAESFHwAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABD" +
-           "b21tZW50AQGGHwAvAQAqI4YfAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1l" +
-           "c3RhbXABAYcfAC4ARIcfAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJ" +
-           "ZAEBiB8ALgBEiB8AAAAM/////wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAYkfAC8BAEQj" +
-           "iR8AAAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBih8ALwEAQyOKHwAAAQEB" +
-           "AAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAKAAAAQWRkQ29tbWVudAEBix8ALwEARSOLHwAAAQEBAAAA" +
-           "AQD5CwABAA0LAQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAYwfAC4ARIwfAACWAgAAAAEA" +
-           "KgEBRgAAAAcAAABFdmVudElkAA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUg" +
-           "ZXZlbnQgdG8gY29tbWVudC4BACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUg" +
-           "Y29tbWVudCB0byBhZGQgdG8gdGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEA" +
-           "DgAAAE1UQ3VycmVudFN0YXRlAQGPHwAvAD+PHwAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAA" +
-           "QWN0aXZlU3RhdGUBAZAfAC8BACMjkB8AAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQGR" +
-           "HwAuAESRHwAAAAH/////AQH/////AAAAAA==";
+           "HwAAAEZpbGxfTGV2ZWxDb25kaXRpb25UeXBlSW5zdGFuY2UBAWofAQFqH/////8YAAAAFWCJCgIAAAAA" +
+           "AAcAAABFdmVudElkAQFrHwAuAERrHwAAAA//////AQH/////AAAAABVgiQoCAAAAAAAJAAAARXZlbnRU" +
+           "eXBlAQFsHwAuAERsHwAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBbR8A" +
+           "LgBEbR8AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBAW4fAC4ARG4fAAAA" +
+           "DP////8BAf////8AAAAAFWCJCgIAAAAAAAQAAABUaW1lAQFvHwAuAERvHwAAAQAmAf////8BAf////8A" +
+           "AAAAFWCJCgIAAAAAAAsAAABSZWNlaXZlVGltZQEBcB8ALgBEcB8AAAEAJgH/////AQH/////AAAAABVg" +
+           "iQoCAAAAAAAJAAAATG9jYWxUaW1lAQFxHwAuAERxHwAAAQDQIv////8BAf////8AAAAAFWCJCgIAAAAA" +
+           "AAcAAABNZXNzYWdlAQFyHwAuAERyHwAAABX/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAU2V2ZXJp" +
+           "dHkBAXMfAC4ARHMfAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAAAABDb25kaXRpb25DbGFzc0lk" +
+           "AQF0HwAuAER0HwAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAAQ29uZGl0aW9uQ2xhc3NOYW1l" +
+           "AQF1HwAuAER1HwAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAAQ29uZGl0aW9uTmFtZQEBdh8A" +
+           "LgBEdh8AAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5jaElkAQF3HwAuAER3HwAAABH/" +
+           "////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQF4HwAuAER4HwAAAAH/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQF5HwAvAQAjI3kfAAAAFf////8BAf////8BAAAAFWCJ" +
+           "CgIAAAAAAAIAAABJZAEBeh8ALgBEeh8AAAAB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAFF1YWxp" +
+           "dHkBAYIfAC8BACojgh8AAAAT/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFt" +
+           "cAEBgx8ALgBEgx8AAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAATGFzdFNldmVyaXR5AQGE" +
+           "HwAvAQAqI4QfAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAYUf" +
+           "AC4ARIUfAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENvbW1lbnQBAYYfAC8BACojhh8A" +
+           "AAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBhx8ALgBEhx8AAAEA" +
+           "JgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklkAQGIHwAuAESIHwAAAAz/////" +
+           "AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBiR8ALwEARCOJHwAAAQEBAAAAAQD5CwABAPMK" +
+           "AAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQGKHwAvAQBDI4ofAAABAQEAAAABAPkLAAEA8woAAAAABGGC" +
+           "CgQAAAAAAAoAAABBZGRDb21tZW50AQGLHwAvAQBFI4sfAAABAQEAAAABAPkLAAEADQsBAAAAFWCpCgIA" +
+           "AAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBjB8ALgBEjB8AAJYCAAAAAQAqAQFGAAAABwAAAEV2ZW50SWQA" +
+           "D/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0byBjb21tZW50LgEA" +
+           "KgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBjb21tZW50IHRvIGFkZCB0byB0" +
+           "aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAOAAAATVRDdXJyZW50U3RhdGUB" +
+           "AY8fAC8AP48fAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABBY3RpdmVTdGF0ZQEBkB8ALwEA" +
+           "IyOQHwAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAZEfAC4ARJEfAAAAAf////8BAf//" +
+           "//8AAAAA";
         #endregion
         #endif
         #endregion
@@ -10995,6 +11923,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -11005,44 +11942,36 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "GQAAAEZsb3dDb25kaXRpb25UeXBlSW5zdGFuY2UBAacfAQGnH/////8YAAAANWCJCgIAAAAAAAcAAABF" +
-           "dmVudElkAQGoHwMAAAAAKwAAAEEgZ2xvYmFsbHkgdW5pcXVlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVu" +
-           "dC4ALgBEqB8AAAAP/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAEV2ZW50VHlwZQEBqR8DAAAAACIA" +
-           "AABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHR5cGUuAC4ARKkfAAAAEf////8BAf////8AAAAA" +
-           "NWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQGqHwMAAAAAGAAAAFRoZSBzb3VyY2Ugb2YgdGhlIGV2ZW50" +
-           "LgAuAESqHwAAABH/////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEBqx8DAAAAACkA" +
-           "AABBIGRlc2NyaXB0aW9uIG9mIHRoZSBzb3VyY2Ugb2YgdGhlIGV2ZW50LgAuAESrHwAAAAz/////AQH/" +
-           "////AAAAADVgiQoCAAAAAAAEAAAAVGltZQEBrB8DAAAAABgAAABXaGVuIHRoZSBldmVudCBvY2N1cnJl" +
-           "ZC4ALgBErB8AAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUBAa0fAwAA" +
-           "AAA+AAAAV2hlbiB0aGUgc2VydmVyIHJlY2VpdmVkIHRoZSBldmVudCBmcm9tIHRoZSB1bmRlcmx5aW5n" +
-           "IHN5c3RlbS4ALgBErR8AAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAAJAAAATG9jYWxUaW1lAQGu" +
-           "HwMAAAAAPAAAAEluZm9ybWF0aW9uIGFib3V0IHRoZSBsb2NhbCB0aW1lIHdoZXJlIHRoZSBldmVudCBv" +
-           "cmlnaW5hdGVkLgAuAESuHwAAAQDQIv////8BAf////8AAAAANWCJCgIAAAAAAAcAAABNZXNzYWdlAQGv" +
-           "HwMAAAAAJQAAAEEgbG9jYWxpemVkIGRlc2NyaXB0aW9uIG9mIHRoZSBldmVudC4ALgBErx8AAAAV////" +
-           "/wEB/////wAAAAA1YIkKAgAAAAAACAAAAFNldmVyaXR5AQGwHwMAAAAAIQAAAEluZGljYXRlcyBob3cg" +
-           "dXJnZW50IGFuIGV2ZW50IGlzLgAuAESwHwAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAQ29u" +
-           "ZGl0aW9uQ2xhc3NJZAEBsR8ALgBEsR8AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAENvbmRp" +
-           "dGlvbkNsYXNzTmFtZQEBsh8ALgBEsh8AAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAENvbmRp" +
-           "dGlvbk5hbWUBAbMfAC4ARLMfAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFuY2hJZAEB" +
-           "tB8ALgBEtB8AAAAR/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBtR8ALgBEtR8AAAAB" +
-           "/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBth8ALwEAIyO2HwAAABX/////" +
-           "AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAbcfAC4ARLcfAAAAAf////8BAf////8AAAAAFWCJCgIA" +
-           "AAAAAAcAAABRdWFsaXR5AQG/HwAvAQAqI78fAAAAE/////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABT" +
-           "b3VyY2VUaW1lc3RhbXABAcAfAC4ARMAfAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAExh" +
-           "c3RTZXZlcml0eQEBwR8ALwEAKiPBHwAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNl" +
-           "VGltZXN0YW1wAQHCHwAuAETCHwAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABDb21tZW50" +
-           "AQHDHwAvAQAqI8MfAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXAB" +
-           "AcQfAC4ARMQfAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJZAEBxR8A" +
-           "LgBExR8AAAAM/////wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAcYfAC8BAEQjxh8AAAEB" +
-           "AQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBxx8ALwEAQyPHHwAAAQEBAAAAAQD5" +
-           "CwABAPMKAAAAAARhggoEAAAAAAAKAAAAQWRkQ29tbWVudAEByB8ALwEARSPIHwAAAQEBAAAAAQD5CwAB" +
-           "AA0LAQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAckfAC4ARMkfAACWAgAAAAEAKgEBRgAA" +
-           "AAcAAABFdmVudElkAA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQg" +
-           "dG8gY29tbWVudC4BACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUgY29tbWVu" +
-           "dCB0byBhZGQgdG8gdGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEADgAAAE1U" +
-           "Q3VycmVudFN0YXRlAQHMHwAvAD/MHwAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAAQWN0aXZl" +
-           "U3RhdGUBAc0fAC8BACMjzR8AAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQHOHwAuAETO" +
-           "HwAAAAH/////AQH/////AAAAAA==";
+           "GQAAAEZsb3dDb25kaXRpb25UeXBlSW5zdGFuY2UBAacfAQGnH/////8YAAAAFWCJCgIAAAAAAAcAAABF" +
+           "dmVudElkAQGoHwAuAESoHwAAAA//////AQH/////AAAAABVgiQoCAAAAAAAJAAAARXZlbnRUeXBlAQGp" +
+           "HwAuAESpHwAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBqh8ALgBEqh8A" +
+           "AAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBAasfAC4ARKsfAAAADP////8B" +
+           "Af////8AAAAAFWCJCgIAAAAAAAQAAABUaW1lAQGsHwAuAESsHwAAAQAmAf////8BAf////8AAAAAFWCJ" +
+           "CgIAAAAAAAsAAABSZWNlaXZlVGltZQEBrR8ALgBErR8AAAEAJgH/////AQH/////AAAAABVgiQoCAAAA" +
+           "AAAJAAAATG9jYWxUaW1lAQGuHwAuAESuHwAAAQDQIv////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABN" +
+           "ZXNzYWdlAQGvHwAuAESvHwAAABX/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkBAbAf" +
+           "AC4ARLAfAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAAAABDb25kaXRpb25DbGFzc0lkAQGxHwAu" +
+           "AESxHwAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAAQ29uZGl0aW9uQ2xhc3NOYW1lAQGyHwAu" +
+           "AESyHwAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAAQ29uZGl0aW9uTmFtZQEBsx8ALgBEsx8A" +
+           "AAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5jaElkAQG0HwAuAES0HwAAABH/////AQH/" +
+           "////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQG1HwAuAES1HwAAAAH/////AQH/////AAAAABVgiQoC" +
+           "AAAAAAAMAAAARW5hYmxlZFN0YXRlAQG2HwAvAQAjI7YfAAAAFf////8BAf////8BAAAAFWCJCgIAAAAA" +
+           "AAIAAABJZAEBtx8ALgBEtx8AAAAB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAFF1YWxpdHkBAb8f" +
+           "AC8BACojvx8AAAAT/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBwB8A" +
+           "LgBEwB8AAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAATGFzdFNldmVyaXR5AQHBHwAvAQAq" +
+           "I8EfAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAcIfAC4ARMIf" +
+           "AAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENvbW1lbnQBAcMfAC8BACojwx8AAAAV////" +
+           "/wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBxB8ALgBExB8AAAEAJgH/////" +
+           "AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklkAQHFHwAuAETFHwAAAAz/////AQH/////" +
+           "AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBxh8ALwEARCPGHwAAAQEBAAAAAQD5CwABAPMKAAAAAARh" +
+           "ggoEAAAAAAAGAAAARW5hYmxlAQHHHwAvAQBDI8cfAAABAQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAA" +
+           "AAoAAABBZGRDb21tZW50AQHIHwAvAQBFI8gfAAABAQEAAAABAPkLAAEADQsBAAAAFWCpCgIAAAAAAA4A" +
+           "AABJbnB1dEFyZ3VtZW50cwEByR8ALgBEyR8AAJYCAAAAAQAqAQFGAAAABwAAAEV2ZW50SWQAD/////8A" +
+           "AAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0byBjb21tZW50LgEAKgEBQgAA" +
+           "AAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBjb21tZW50IHRvIGFkZCB0byB0aGUgY29u" +
+           "ZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAOAAAATVRDdXJyZW50U3RhdGUBAcwfAC8A" +
+           "P8wfAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABBY3RpdmVTdGF0ZQEBzR8ALwEAIyPNHwAA" +
+           "ABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAc4fAC4ARM4fAAAAAf////8BAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -11095,6 +12024,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -11105,44 +12043,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "HgAAAEZyZXF1ZW5jeUNvbmRpdGlvblR5cGVJbnN0YW5jZQEB5B8BAeQf/////xgAAAA1YIkKAgAAAAAA" +
-           "BwAAAEV2ZW50SWQBAeUfAwAAAAArAAAAQSBnbG9iYWxseSB1bmlxdWUgaWRlbnRpZmllciBmb3IgdGhl" +
-           "IGV2ZW50LgAuAETlHwAAAA//////AQH/////AAAAADVgiQoCAAAAAAAJAAAARXZlbnRUeXBlAQHmHwMA" +
-           "AAAAIgAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdHlwZS4ALgBE5h8AAAAR/////wEB////" +
-           "/wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBAecfAwAAAAAYAAAAVGhlIHNvdXJjZSBvZiB0aGUg" +
-           "ZXZlbnQuAC4AROcfAAAAEf////8BAf////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQHoHwMA" +
-           "AAAAKQAAAEEgZGVzY3JpcHRpb24gb2YgdGhlIHNvdXJjZSBvZiB0aGUgZXZlbnQuAC4AROgfAAAADP//" +
-           "//8BAf////8AAAAANWCJCgIAAAAAAAQAAABUaW1lAQHpHwMAAAAAGAAAAFdoZW4gdGhlIGV2ZW50IG9j" +
-           "Y3VycmVkLgAuAETpHwAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAsAAABSZWNlaXZlVGltZQEB" +
-           "6h8DAAAAAD4AAABXaGVuIHRoZSBzZXJ2ZXIgcmVjZWl2ZWQgdGhlIGV2ZW50IGZyb20gdGhlIHVuZGVy" +
-           "bHlpbmcgc3lzdGVtLgAuAETqHwAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAkAAABMb2NhbFRp" +
-           "bWUBAesfAwAAAAA8AAAASW5mb3JtYXRpb24gYWJvdXQgdGhlIGxvY2FsIHRpbWUgd2hlcmUgdGhlIGV2" +
-           "ZW50IG9yaWdpbmF0ZWQuAC4AROsfAAABANAi/////wEB/////wAAAAA1YIkKAgAAAAAABwAAAE1lc3Nh" +
-           "Z2UBAewfAwAAAAAlAAAAQSBsb2NhbGl6ZWQgZGVzY3JpcHRpb24gb2YgdGhlIGV2ZW50LgAuAETsHwAA" +
-           "ABX/////AQH/////AAAAADVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkBAe0fAwAAAAAhAAAASW5kaWNhdGVz" +
-           "IGhvdyB1cmdlbnQgYW4gZXZlbnQgaXMuAC4ARO0fAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAA" +
-           "AABDb25kaXRpb25DbGFzc0lkAQHuHwAuAETuHwAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAA" +
-           "Q29uZGl0aW9uQ2xhc3NOYW1lAQHvHwAuAETvHwAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAA" +
-           "Q29uZGl0aW9uTmFtZQEB8B8ALgBE8B8AAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5j" +
-           "aElkAQHxHwAuAETxHwAAABH/////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQHyHwAuAETy" +
-           "HwAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQHzHwAvAQAjI/MfAAAA" +
-           "Ff////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEB9B8ALgBE9B8AAAAB/////wEB/////wAAAAAV" +
-           "YIkKAgAAAAAABwAAAFF1YWxpdHkBAfwfAC8BACoj/B8AAAAT/////wEB/////wEAAAAVYIkKAgAAAAAA" +
-           "DwAAAFNvdXJjZVRpbWVzdGFtcAEB/R8ALgBE/R8AAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAM" +
-           "AAAATGFzdFNldmVyaXR5AQH+HwAvAQAqI/4fAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABT" +
-           "b3VyY2VUaW1lc3RhbXABAf8fAC4ARP8fAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENv" +
-           "bW1lbnQBAQAgAC8BACojACAAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVz" +
-           "dGFtcAEBASAALgBEASAAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklk" +
-           "AQECIAAuAEQCIAAAAAz/////AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBAyAALwEARCMD" +
-           "IAAAAQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQEEIAAvAQBDIwQgAAABAQEA" +
-           "AAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAoAAABBZGRDb21tZW50AQEFIAAvAQBFIwUgAAABAQEAAAAB" +
-           "APkLAAEADQsBAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBBiAALgBEBiAAAJYCAAAAAQAq" +
-           "AQFGAAAABwAAAEV2ZW50SWQAD/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBl" +
-           "dmVudCB0byBjb21tZW50LgEAKgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBj" +
-           "b21tZW50IHRvIGFkZCB0byB0aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAO" +
-           "AAAATVRDdXJyZW50U3RhdGUBAQkgAC8APwkgAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABB" +
-           "Y3RpdmVTdGF0ZQEBCiAALwEAIyMKIAAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAQsg" +
-           "AC4ARAsgAAAAAf////8BAf////8AAAAA";
+           "HgAAAEZyZXF1ZW5jeUNvbmRpdGlvblR5cGVJbnN0YW5jZQEB5B8BAeQf/////xgAAAAVYIkKAgAAAAAA" +
+           "BwAAAEV2ZW50SWQBAeUfAC4AROUfAAAAD/////8BAf////8AAAAAFWCJCgIAAAAAAAkAAABFdmVudFR5" +
+           "cGUBAeYfAC4AROYfAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQHnHwAu" +
+           "AETnHwAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEB6B8ALgBE6B8AAAAM" +
+           "/////wEB/////wAAAAAVYIkKAgAAAAAABAAAAFRpbWUBAekfAC4AROkfAAABACYB/////wEB/////wAA" +
+           "AAAVYIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQHqHwAuAETqHwAAAQAmAf////8BAf////8AAAAAFWCJ" +
+           "CgIAAAAAAAkAAABMb2NhbFRpbWUBAesfAC4AROsfAAABANAi/////wEB/////wAAAAAVYIkKAgAAAAAA" +
+           "BwAAAE1lc3NhZ2UBAewfAC4AROwfAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABTZXZlcml0" +
+           "eQEB7R8ALgBE7R8AAAAF/////wEB/////wAAAAAVYIkKAgAAAAAAEAAAAENvbmRpdGlvbkNsYXNzSWQB" +
+           "Ae4fAC4ARO4fAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIAAABDb25kaXRpb25DbGFzc05hbWUB" +
+           "Ae8fAC4ARO8fAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0AAABDb25kaXRpb25OYW1lAQHwHwAu" +
+           "AETwHwAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJhbmNoSWQBAfEfAC4ARPEfAAAAEf//" +
+           "//8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BAfIfAC4ARPIfAAAAAf////8BAf////8AAAAA" +
+           "FWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBAfMfAC8BACMj8x8AAAAV/////wEB/////wEAAAAVYIkK" +
+           "AgAAAAAAAgAAAElkAQH0HwAuAET0HwAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAUXVhbGl0" +
+           "eQEB/B8ALwEAKiP8HwAAABP/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1w" +
+           "AQH9HwAuAET9HwAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABMYXN0U2V2ZXJpdHkBAf4f" +
+           "AC8BACoj/h8AAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEB/x8A" +
+           "LgBE/x8AAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQ29tbWVudAEBACAALwEAKiMAIAAA" +
+           "ABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQEBIAAuAEQBIAAAAQAm" +
+           "Af////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQBAQIgAC4ARAIgAAAADP////8B" +
+           "Af////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQEDIAAvAQBEIwMgAAABAQEAAAABAPkLAAEA8woA" +
+           "AAAABGGCCgQAAAAAAAYAAABFbmFibGUBAQQgAC8BAEMjBCAAAAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIK" +
+           "BAAAAAAACgAAAEFkZENvbW1lbnQBAQUgAC8BAEUjBSAAAAEBAQAAAAEA+QsAAQANCwEAAAAVYKkKAgAA" +
+           "AAAADgAAAElucHV0QXJndW1lbnRzAQEGIAAuAEQGIAAAlgIAAAABACoBAUYAAAAHAAAARXZlbnRJZAAP" +
+           "/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHRvIGNvbW1lbnQuAQAq" +
+           "AQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhlIGNvbW1lbnQgdG8gYWRkIHRvIHRo" +
+           "ZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAABAA4AAABNVEN1cnJlbnRTdGF0ZQEB" +
+           "CSAALwA/CSAAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAEFjdGl2ZVN0YXRlAQEKIAAvAQAj" +
+           "IwogAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBCyAALgBECyAAAAAB/////wEB////" +
+           "/wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -11195,6 +12126,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -11205,44 +12145,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "HQAAAEhhcmR3YXJlQ29uZGl0aW9uVHlwZUluc3RhbmNlAQEhIAEBISD/////GAAAADVgiQoCAAAAAAAH" +
-           "AAAARXZlbnRJZAEBIiADAAAAACsAAABBIGdsb2JhbGx5IHVuaXF1ZSBpZGVudGlmaWVyIGZvciB0aGUg" +
-           "ZXZlbnQuAC4ARCIgAAAAD/////8BAf////8AAAAANWCJCgIAAAAAAAkAAABFdmVudFR5cGUBASMgAwAA" +
-           "AAAiAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0eXBlLgAuAEQjIAAAABH/////AQH/////" +
-           "AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBJCADAAAAABgAAABUaGUgc291cmNlIG9mIHRoZSBl" +
-           "dmVudC4ALgBEJCAAAAAR/////wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBASUgAwAA" +
-           "AAApAAAAQSBkZXNjcmlwdGlvbiBvZiB0aGUgc291cmNlIG9mIHRoZSBldmVudC4ALgBEJSAAAAAM////" +
-           "/wEB/////wAAAAA1YIkKAgAAAAAABAAAAFRpbWUBASYgAwAAAAAYAAAAV2hlbiB0aGUgZXZlbnQgb2Nj" +
-           "dXJyZWQuAC4ARCYgAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQEn" +
-           "IAMAAAAAPgAAAFdoZW4gdGhlIHNlcnZlciByZWNlaXZlZCB0aGUgZXZlbnQgZnJvbSB0aGUgdW5kZXJs" +
-           "eWluZyBzeXN0ZW0uAC4ARCcgAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAExvY2FsVGlt" +
-           "ZQEBKCADAAAAADwAAABJbmZvcm1hdGlvbiBhYm91dCB0aGUgbG9jYWwgdGltZSB3aGVyZSB0aGUgZXZl" +
-           "bnQgb3JpZ2luYXRlZC4ALgBEKCAAAAEA0CL/////AQH/////AAAAADVgiQoCAAAAAAAHAAAATWVzc2Fn" +
-           "ZQEBKSADAAAAACUAAABBIGxvY2FsaXplZCBkZXNjcmlwdGlvbiBvZiB0aGUgZXZlbnQuAC4ARCkgAAAA" +
-           "Ff////8BAf////8AAAAANWCJCgIAAAAAAAgAAABTZXZlcml0eQEBKiADAAAAACEAAABJbmRpY2F0ZXMg" +
-           "aG93IHVyZ2VudCBhbiBldmVudCBpcy4ALgBEKiAAAAAF/////wEB/////wAAAAAVYIkKAgAAAAAAEAAA" +
-           "AENvbmRpdGlvbkNsYXNzSWQBASsgAC4ARCsgAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIAAABD" +
-           "b25kaXRpb25DbGFzc05hbWUBASwgAC4ARCwgAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0AAABD" +
-           "b25kaXRpb25OYW1lAQEtIAAuAEQtIAAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJhbmNo" +
-           "SWQBAS4gAC4ARC4gAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BAS8gAC4ARC8g" +
-           "AAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBATAgAC8BACMjMCAAAAAV" +
-           "/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQExIAAuAEQxIAAAAAH/////AQH/////AAAAABVg" +
-           "iQoCAAAAAAAHAAAAUXVhbGl0eQEBOSAALwEAKiM5IAAAABP/////AQH/////AQAAABVgiQoCAAAAAAAP" +
-           "AAAAU291cmNlVGltZXN0YW1wAQE6IAAuAEQ6IAAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwA" +
-           "AABMYXN0U2V2ZXJpdHkBATsgAC8BACojOyAAAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNv" +
-           "dXJjZVRpbWVzdGFtcAEBPCAALgBEPCAAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQ29t" +
-           "bWVudAEBPSAALwEAKiM9IAAAABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0" +
-           "YW1wAQE+IAAuAEQ+IAAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQB" +
-           "AT8gAC4ARD8gAAAADP////8BAf////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQFAIAAvAQBEI0Ag" +
-           "AAABAQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAYAAABFbmFibGUBAUEgAC8BAEMjQSAAAAEBAQAA" +
-           "AAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAACgAAAEFkZENvbW1lbnQBAUIgAC8BAEUjQiAAAAEBAQAAAAEA" +
-           "+QsAAQANCwEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFDIAAuAERDIAAAlgIAAAABACoB" +
-           "AUYAAAAHAAAARXZlbnRJZAAP/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2" +
-           "ZW50IHRvIGNvbW1lbnQuAQAqAQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhlIGNv" +
-           "bW1lbnQgdG8gYWRkIHRvIHRoZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAABAA4A" +
-           "AABNVEN1cnJlbnRTdGF0ZQEBRiAALwA/RiAAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAEFj" +
-           "dGl2ZVN0YXRlAQFHIAAvAQAjI0cgAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBSCAA" +
-           "LgBESCAAAAAB/////wEB/////wAAAAA=";
+           "HQAAAEhhcmR3YXJlQ29uZGl0aW9uVHlwZUluc3RhbmNlAQEhIAEBISD/////GAAAABVgiQoCAAAAAAAH" +
+           "AAAARXZlbnRJZAEBIiAALgBEIiAAAAAP/////wEB/////wAAAAAVYIkKAgAAAAAACQAAAEV2ZW50VHlw" +
+           "ZQEBIyAALgBEIyAAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBASQgAC4A" +
+           "RCQgAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQElIAAuAEQlIAAAAAz/" +
+           "////AQH/////AAAAABVgiQoCAAAAAAAEAAAAVGltZQEBJiAALgBEJiAAAAEAJgH/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUBAScgAC4ARCcgAAABACYB/////wEB/////wAAAAAVYIkK" +
+           "AgAAAAAACQAAAExvY2FsVGltZQEBKCAALgBEKCAAAAEA0CL/////AQH/////AAAAABVgiQoCAAAAAAAH" +
+           "AAAATWVzc2FnZQEBKSAALgBEKSAAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAFNldmVyaXR5" +
+           "AQEqIAAuAEQqIAAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAQ29uZGl0aW9uQ2xhc3NJZAEB" +
+           "KyAALgBEKyAAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAENvbmRpdGlvbkNsYXNzTmFtZQEB" +
+           "LCAALgBELCAAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAENvbmRpdGlvbk5hbWUBAS0gAC4A" +
+           "RC0gAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFuY2hJZAEBLiAALgBELiAAAAAR////" +
+           "/wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBLyAALgBELyAAAAAB/////wEB/////wAAAAAV" +
+           "YIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBMCAALwEAIyMwIAAAABX/////AQH/////AQAAABVgiQoC" +
+           "AAAAAAACAAAASWQBATEgAC4ARDEgAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABRdWFsaXR5" +
+           "AQE5IAAvAQAqIzkgAAAAE/////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXAB" +
+           "ATogAC4ARDogAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAExhc3RTZXZlcml0eQEBOyAA" +
+           "LwEAKiM7IAAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQE8IAAu" +
+           "AEQ8IAAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABDb21tZW50AQE9IAAvAQAqIz0gAAAA" +
+           "Ff////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAT4gAC4ARD4gAAABACYB" +
+           "/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJZAEBPyAALgBEPyAAAAAM/////wEB" +
+           "/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAUAgAC8BAEQjQCAAAAEBAQAAAAEA+QsAAQDzCgAA" +
+           "AAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBQSAALwEAQyNBIAAAAQEBAAAAAQD5CwABAPMKAAAAAARhggoE" +
+           "AAAAAAAKAAAAQWRkQ29tbWVudAEBQiAALwEARSNCIAAAAQEBAAAAAQD5CwABAA0LAQAAABVgqQoCAAAA" +
+           "AAAOAAAASW5wdXRBcmd1bWVudHMBAUMgAC4AREMgAACWAgAAAAEAKgEBRgAAAAcAAABFdmVudElkAA//" +
+           "////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdG8gY29tbWVudC4BACoB" +
+           "AUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUgY29tbWVudCB0byBhZGQgdG8gdGhl" +
+           "IGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEADgAAAE1UQ3VycmVudFN0YXRlAQFG" +
+           "IAAvAD9GIAAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAAQWN0aXZlU3RhdGUBAUcgAC8BACMj" +
+           "RyAAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQFIIAAuAERIIAAAAAH/////AQH/////" +
+           "AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -11295,6 +12228,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -11305,44 +12247,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "IQAAAExpbmVhcl9Gb3JjZUNvbmRpdGlvblR5cGVJbnN0YW5jZQEBXiABAV4g/////xgAAAA1YIkKAgAA" +
-           "AAAABwAAAEV2ZW50SWQBAV8gAwAAAAArAAAAQSBnbG9iYWxseSB1bmlxdWUgaWRlbnRpZmllciBmb3Ig" +
-           "dGhlIGV2ZW50LgAuAERfIAAAAA//////AQH/////AAAAADVgiQoCAAAAAAAJAAAARXZlbnRUeXBlAQFg" +
-           "IAMAAAAAIgAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdHlwZS4ALgBEYCAAAAAR/////wEB" +
-           "/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBAWEgAwAAAAAYAAAAVGhlIHNvdXJjZSBvZiB0" +
-           "aGUgZXZlbnQuAC4ARGEgAAAAEf////8BAf////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQFi" +
-           "IAMAAAAAKQAAAEEgZGVzY3JpcHRpb24gb2YgdGhlIHNvdXJjZSBvZiB0aGUgZXZlbnQuAC4ARGIgAAAA" +
-           "DP////8BAf////8AAAAANWCJCgIAAAAAAAQAAABUaW1lAQFjIAMAAAAAGAAAAFdoZW4gdGhlIGV2ZW50" +
-           "IG9jY3VycmVkLgAuAERjIAAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAsAAABSZWNlaXZlVGlt" +
-           "ZQEBZCADAAAAAD4AAABXaGVuIHRoZSBzZXJ2ZXIgcmVjZWl2ZWQgdGhlIGV2ZW50IGZyb20gdGhlIHVu" +
-           "ZGVybHlpbmcgc3lzdGVtLgAuAERkIAAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAkAAABMb2Nh" +
-           "bFRpbWUBAWUgAwAAAAA8AAAASW5mb3JtYXRpb24gYWJvdXQgdGhlIGxvY2FsIHRpbWUgd2hlcmUgdGhl" +
-           "IGV2ZW50IG9yaWdpbmF0ZWQuAC4ARGUgAAABANAi/////wEB/////wAAAAA1YIkKAgAAAAAABwAAAE1l" +
-           "c3NhZ2UBAWYgAwAAAAAlAAAAQSBsb2NhbGl6ZWQgZGVzY3JpcHRpb24gb2YgdGhlIGV2ZW50LgAuAERm" +
-           "IAAAABX/////AQH/////AAAAADVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkBAWcgAwAAAAAhAAAASW5kaWNh" +
-           "dGVzIGhvdyB1cmdlbnQgYW4gZXZlbnQgaXMuAC4ARGcgAAAABf////8BAf////8AAAAAFWCJCgIAAAAA" +
-           "ABAAAABDb25kaXRpb25DbGFzc0lkAQFoIAAuAERoIAAAABH/////AQH/////AAAAABVgiQoCAAAAAAAS" +
-           "AAAAQ29uZGl0aW9uQ2xhc3NOYW1lAQFpIAAuAERpIAAAABX/////AQH/////AAAAABVgiQoCAAAAAAAN" +
-           "AAAAQ29uZGl0aW9uTmFtZQEBaiAALgBEaiAAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJy" +
-           "YW5jaElkAQFrIAAuAERrIAAAABH/////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQFsIAAu" +
-           "AERsIAAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQFtIAAvAQAjI20g" +
-           "AAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBbiAALgBEbiAAAAAB/////wEB/////wAA" +
-           "AAAVYIkKAgAAAAAABwAAAFF1YWxpdHkBAXYgAC8BACojdiAAAAAT/////wEB/////wEAAAAVYIkKAgAA" +
-           "AAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBdyAALgBEdyAAAAEAJgH/////AQH/////AAAAABVgiQoCAAAA" +
-           "AAAMAAAATGFzdFNldmVyaXR5AQF4IAAvAQAqI3ggAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8A" +
-           "AABTb3VyY2VUaW1lc3RhbXABAXkgAC4ARHkgAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAA" +
-           "AENvbW1lbnQBAXogAC8BACojeiAAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRp" +
-           "bWVzdGFtcAEBeyAALgBEeyAAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNl" +
-           "cklkAQF8IAAuAER8IAAAAAz/////AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBfSAALwEA" +
-           "RCN9IAAAAQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQF+IAAvAQBDI34gAAAB" +
-           "AQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAoAAABBZGRDb21tZW50AQF/IAAvAQBFI38gAAABAQEA" +
-           "AAABAPkLAAEADQsBAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBgCAALgBEgCAAAJYCAAAA" +
-           "AQAqAQFGAAAABwAAAEV2ZW50SWQAD/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRo" +
-           "ZSBldmVudCB0byBjb21tZW50LgEAKgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRo" +
-           "ZSBjb21tZW50IHRvIGFkZCB0byB0aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAA" +
-           "AQAOAAAATVRDdXJyZW50U3RhdGUBAYMgAC8AP4MgAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsA" +
-           "AABBY3RpdmVTdGF0ZQEBhCAALwEAIyOEIAAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQB" +
-           "AYUgAC4ARIUgAAAAAf////8BAf////8AAAAA";
+           "IQAAAExpbmVhcl9Gb3JjZUNvbmRpdGlvblR5cGVJbnN0YW5jZQEBXiABAV4g/////xgAAAAVYIkKAgAA" +
+           "AAAABwAAAEV2ZW50SWQBAV8gAC4ARF8gAAAAD/////8BAf////8AAAAAFWCJCgIAAAAAAAkAAABFdmVu" +
+           "dFR5cGUBAWAgAC4ARGAgAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQFh" +
+           "IAAuAERhIAAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEBYiAALgBEYiAA" +
+           "AAAM/////wEB/////wAAAAAVYIkKAgAAAAAABAAAAFRpbWUBAWMgAC4ARGMgAAABACYB/////wEB////" +
+           "/wAAAAAVYIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQFkIAAuAERkIAAAAQAmAf////8BAf////8AAAAA" +
+           "FWCJCgIAAAAAAAkAAABMb2NhbFRpbWUBAWUgAC4ARGUgAAABANAi/////wEB/////wAAAAAVYIkKAgAA" +
+           "AAAABwAAAE1lc3NhZ2UBAWYgAC4ARGYgAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABTZXZl" +
+           "cml0eQEBZyAALgBEZyAAAAAF/////wEB/////wAAAAAVYIkKAgAAAAAAEAAAAENvbmRpdGlvbkNsYXNz" +
+           "SWQBAWggAC4ARGggAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIAAABDb25kaXRpb25DbGFzc05h" +
+           "bWUBAWkgAC4ARGkgAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0AAABDb25kaXRpb25OYW1lAQFq" +
+           "IAAuAERqIAAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJhbmNoSWQBAWsgAC4ARGsgAAAA" +
+           "Ef////8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BAWwgAC4ARGwgAAAAAf////8BAf////8A" +
+           "AAAAFWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBAW0gAC8BACMjbSAAAAAV/////wEB/////wEAAAAV" +
+           "YIkKAgAAAAAAAgAAAElkAQFuIAAuAERuIAAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAUXVh" +
+           "bGl0eQEBdiAALwEAKiN2IAAAABP/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0" +
+           "YW1wAQF3IAAuAER3IAAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABMYXN0U2V2ZXJpdHkB" +
+           "AXggAC8BACojeCAAAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEB" +
+           "eSAALgBEeSAAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQ29tbWVudAEBeiAALwEAKiN6" +
+           "IAAAABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQF7IAAuAER7IAAA" +
+           "AQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQBAXwgAC4ARHwgAAAADP//" +
+           "//8BAf////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQF9IAAvAQBEI30gAAABAQEAAAABAPkLAAEA" +
+           "8woAAAAABGGCCgQAAAAAAAYAAABFbmFibGUBAX4gAC8BAEMjfiAAAAEBAQAAAAEA+QsAAQDzCgAAAAAE" +
+           "YYIKBAAAAAAACgAAAEFkZENvbW1lbnQBAX8gAC8BAEUjfyAAAAEBAQAAAAEA+QsAAQANCwEAAAAVYKkK" +
+           "AgAAAAAADgAAAElucHV0QXJndW1lbnRzAQGAIAAuAESAIAAAlgIAAAABACoBAUYAAAAHAAAARXZlbnRJ" +
+           "ZAAP/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHRvIGNvbW1lbnQu" +
+           "AQAqAQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhlIGNvbW1lbnQgdG8gYWRkIHRv" +
+           "IHRoZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAABAA4AAABNVEN1cnJlbnRTdGF0" +
+           "ZQEBgyAALwA/gyAAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAEFjdGl2ZVN0YXRlAQGEIAAv" +
+           "AQAjI4QgAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBhSAALgBEhSAAAAAB/////wEB" +
+           "/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -11395,6 +12330,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -11405,44 +12349,36 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "GQAAAExvYWRDb25kaXRpb25UeXBlSW5zdGFuY2UBAZsgAQGbIP////8YAAAANWCJCgIAAAAAAAcAAABF" +
-           "dmVudElkAQGcIAMAAAAAKwAAAEEgZ2xvYmFsbHkgdW5pcXVlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVu" +
-           "dC4ALgBEnCAAAAAP/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAEV2ZW50VHlwZQEBnSADAAAAACIA" +
-           "AABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHR5cGUuAC4ARJ0gAAAAEf////8BAf////8AAAAA" +
-           "NWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQGeIAMAAAAAGAAAAFRoZSBzb3VyY2Ugb2YgdGhlIGV2ZW50" +
-           "LgAuAESeIAAAABH/////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEBnyADAAAAACkA" +
-           "AABBIGRlc2NyaXB0aW9uIG9mIHRoZSBzb3VyY2Ugb2YgdGhlIGV2ZW50LgAuAESfIAAAAAz/////AQH/" +
-           "////AAAAADVgiQoCAAAAAAAEAAAAVGltZQEBoCADAAAAABgAAABXaGVuIHRoZSBldmVudCBvY2N1cnJl" +
-           "ZC4ALgBEoCAAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUBAaEgAwAA" +
-           "AAA+AAAAV2hlbiB0aGUgc2VydmVyIHJlY2VpdmVkIHRoZSBldmVudCBmcm9tIHRoZSB1bmRlcmx5aW5n" +
-           "IHN5c3RlbS4ALgBEoSAAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAAJAAAATG9jYWxUaW1lAQGi" +
-           "IAMAAAAAPAAAAEluZm9ybWF0aW9uIGFib3V0IHRoZSBsb2NhbCB0aW1lIHdoZXJlIHRoZSBldmVudCBv" +
-           "cmlnaW5hdGVkLgAuAESiIAAAAQDQIv////8BAf////8AAAAANWCJCgIAAAAAAAcAAABNZXNzYWdlAQGj" +
-           "IAMAAAAAJQAAAEEgbG9jYWxpemVkIGRlc2NyaXB0aW9uIG9mIHRoZSBldmVudC4ALgBEoyAAAAAV////" +
-           "/wEB/////wAAAAA1YIkKAgAAAAAACAAAAFNldmVyaXR5AQGkIAMAAAAAIQAAAEluZGljYXRlcyBob3cg" +
-           "dXJnZW50IGFuIGV2ZW50IGlzLgAuAESkIAAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAQ29u" +
-           "ZGl0aW9uQ2xhc3NJZAEBpSAALgBEpSAAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAENvbmRp" +
-           "dGlvbkNsYXNzTmFtZQEBpiAALgBEpiAAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAENvbmRp" +
-           "dGlvbk5hbWUBAacgAC4ARKcgAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFuY2hJZAEB" +
-           "qCAALgBEqCAAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBqSAALgBEqSAAAAAB" +
-           "/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBqiAALwEAIyOqIAAAABX/////" +
-           "AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAasgAC4ARKsgAAAAAf////8BAf////8AAAAAFWCJCgIA" +
-           "AAAAAAcAAABRdWFsaXR5AQGzIAAvAQAqI7MgAAAAE/////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABT" +
-           "b3VyY2VUaW1lc3RhbXABAbQgAC4ARLQgAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAExh" +
-           "c3RTZXZlcml0eQEBtSAALwEAKiO1IAAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNl" +
-           "VGltZXN0YW1wAQG2IAAuAES2IAAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABDb21tZW50" +
-           "AQG3IAAvAQAqI7cgAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXAB" +
-           "AbggAC4ARLggAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJZAEBuSAA" +
-           "LgBEuSAAAAAM/////wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAbogAC8BAEQjuiAAAAEB" +
-           "AQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBuyAALwEAQyO7IAAAAQEBAAAAAQD5" +
-           "CwABAPMKAAAAAARhggoEAAAAAAAKAAAAQWRkQ29tbWVudAEBvCAALwEARSO8IAAAAQEBAAAAAQD5CwAB" +
-           "AA0LAQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAb0gAC4ARL0gAACWAgAAAAEAKgEBRgAA" +
-           "AAcAAABFdmVudElkAA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQg" +
-           "dG8gY29tbWVudC4BACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUgY29tbWVu" +
-           "dCB0byBhZGQgdG8gdGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEADgAAAE1U" +
-           "Q3VycmVudFN0YXRlAQHAIAAvAD/AIAAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAAQWN0aXZl" +
-           "U3RhdGUBAcEgAC8BACMjwSAAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQHCIAAuAETC" +
-           "IAAAAAH/////AQH/////AAAAAA==";
+           "GQAAAExvYWRDb25kaXRpb25UeXBlSW5zdGFuY2UBAZsgAQGbIP////8YAAAAFWCJCgIAAAAAAAcAAABF" +
+           "dmVudElkAQGcIAAuAEScIAAAAA//////AQH/////AAAAABVgiQoCAAAAAAAJAAAARXZlbnRUeXBlAQGd" +
+           "IAAuAESdIAAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBniAALgBEniAA" +
+           "AAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBAZ8gAC4ARJ8gAAAADP////8B" +
+           "Af////8AAAAAFWCJCgIAAAAAAAQAAABUaW1lAQGgIAAuAESgIAAAAQAmAf////8BAf////8AAAAAFWCJ" +
+           "CgIAAAAAAAsAAABSZWNlaXZlVGltZQEBoSAALgBEoSAAAAEAJgH/////AQH/////AAAAABVgiQoCAAAA" +
+           "AAAJAAAATG9jYWxUaW1lAQGiIAAuAESiIAAAAQDQIv////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABN" +
+           "ZXNzYWdlAQGjIAAuAESjIAAAABX/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkBAaQg" +
+           "AC4ARKQgAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAAAABDb25kaXRpb25DbGFzc0lkAQGlIAAu" +
+           "AESlIAAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAAQ29uZGl0aW9uQ2xhc3NOYW1lAQGmIAAu" +
+           "AESmIAAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAAQ29uZGl0aW9uTmFtZQEBpyAALgBEpyAA" +
+           "AAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5jaElkAQGoIAAuAESoIAAAABH/////AQH/" +
+           "////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQGpIAAuAESpIAAAAAH/////AQH/////AAAAABVgiQoC" +
+           "AAAAAAAMAAAARW5hYmxlZFN0YXRlAQGqIAAvAQAjI6ogAAAAFf////8BAf////8BAAAAFWCJCgIAAAAA" +
+           "AAIAAABJZAEBqyAALgBEqyAAAAAB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAFF1YWxpdHkBAbMg" +
+           "AC8BACojsyAAAAAT/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBtCAA" +
+           "LgBEtCAAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAATGFzdFNldmVyaXR5AQG1IAAvAQAq" +
+           "I7UgAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAbYgAC4ARLYg" +
+           "AAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENvbW1lbnQBAbcgAC8BACojtyAAAAAV////" +
+           "/wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBuCAALgBEuCAAAAEAJgH/////" +
+           "AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklkAQG5IAAuAES5IAAAAAz/////AQH/////" +
+           "AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBuiAALwEARCO6IAAAAQEBAAAAAQD5CwABAPMKAAAAAARh" +
+           "ggoEAAAAAAAGAAAARW5hYmxlAQG7IAAvAQBDI7sgAAABAQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAA" +
+           "AAoAAABBZGRDb21tZW50AQG8IAAvAQBFI7wgAAABAQEAAAABAPkLAAEADQsBAAAAFWCpCgIAAAAAAA4A" +
+           "AABJbnB1dEFyZ3VtZW50cwEBvSAALgBEvSAAAJYCAAAAAQAqAQFGAAAABwAAAEV2ZW50SWQAD/////8A" +
+           "AAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0byBjb21tZW50LgEAKgEBQgAA" +
+           "AAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBjb21tZW50IHRvIGFkZCB0byB0aGUgY29u" +
+           "ZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAOAAAATVRDdXJyZW50U3RhdGUBAcAgAC8A" +
+           "P8AgAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABBY3RpdmVTdGF0ZQEBwSAALwEAIyPBIAAA" +
+           "ABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAcIgAC4ARMIgAAAAAf////8BAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -11495,6 +12431,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -11505,44 +12450,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "IgAAAExvZ2ljX1Byb2dyYW1Db25kaXRpb25UeXBlSW5zdGFuY2UBAdggAQHYIP////8YAAAANWCJCgIA" +
-           "AAAAAAcAAABFdmVudElkAQHZIAMAAAAAKwAAAEEgZ2xvYmFsbHkgdW5pcXVlIGlkZW50aWZpZXIgZm9y" +
-           "IHRoZSBldmVudC4ALgBE2SAAAAAP/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAEV2ZW50VHlwZQEB" +
-           "2iADAAAAACIAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHR5cGUuAC4ARNogAAAAEf////8B" +
-           "Af////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQHbIAMAAAAAGAAAAFRoZSBzb3VyY2Ugb2Yg" +
-           "dGhlIGV2ZW50LgAuAETbIAAAABH/////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEB" +
-           "3CADAAAAACkAAABBIGRlc2NyaXB0aW9uIG9mIHRoZSBzb3VyY2Ugb2YgdGhlIGV2ZW50LgAuAETcIAAA" +
-           "AAz/////AQH/////AAAAADVgiQoCAAAAAAAEAAAAVGltZQEB3SADAAAAABgAAABXaGVuIHRoZSBldmVu" +
-           "dCBvY2N1cnJlZC4ALgBE3SAAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAALAAAAUmVjZWl2ZVRp" +
-           "bWUBAd4gAwAAAAA+AAAAV2hlbiB0aGUgc2VydmVyIHJlY2VpdmVkIHRoZSBldmVudCBmcm9tIHRoZSB1" +
-           "bmRlcmx5aW5nIHN5c3RlbS4ALgBE3iAAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAAJAAAATG9j" +
-           "YWxUaW1lAQHfIAMAAAAAPAAAAEluZm9ybWF0aW9uIGFib3V0IHRoZSBsb2NhbCB0aW1lIHdoZXJlIHRo" +
-           "ZSBldmVudCBvcmlnaW5hdGVkLgAuAETfIAAAAQDQIv////8BAf////8AAAAANWCJCgIAAAAAAAcAAABN" +
-           "ZXNzYWdlAQHgIAMAAAAAJQAAAEEgbG9jYWxpemVkIGRlc2NyaXB0aW9uIG9mIHRoZSBldmVudC4ALgBE" +
-           "4CAAAAAV/////wEB/////wAAAAA1YIkKAgAAAAAACAAAAFNldmVyaXR5AQHhIAMAAAAAIQAAAEluZGlj" +
-           "YXRlcyBob3cgdXJnZW50IGFuIGV2ZW50IGlzLgAuAEThIAAAAAX/////AQH/////AAAAABVgiQoCAAAA" +
-           "AAAQAAAAQ29uZGl0aW9uQ2xhc3NJZAEB4iAALgBE4iAAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "EgAAAENvbmRpdGlvbkNsYXNzTmFtZQEB4yAALgBE4yAAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "DQAAAENvbmRpdGlvbk5hbWUBAeQgAC4AROQgAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABC" +
-           "cmFuY2hJZAEB5SAALgBE5SAAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEB5iAA" +
-           "LgBE5iAAAAAB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEB5yAALwEAIyPn" +
-           "IAAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAeggAC4AROggAAAAAf////8BAf////8A" +
-           "AAAAFWCJCgIAAAAAAAcAAABRdWFsaXR5AQHwIAAvAQAqI/AgAAAAE/////8BAf////8BAAAAFWCJCgIA" +
-           "AAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAfEgAC4ARPEgAAABACYB/////wEB/////wAAAAAVYIkKAgAA" +
-           "AAAADAAAAExhc3RTZXZlcml0eQEB8iAALwEAKiPyIAAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAP" +
-           "AAAAU291cmNlVGltZXN0YW1wAQHzIAAuAETzIAAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcA" +
-           "AABDb21tZW50AQH0IAAvAQAqI/QgAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VU" +
-           "aW1lc3RhbXABAfUgAC4ARPUgAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVz" +
-           "ZXJJZAEB9iAALgBE9iAAAAAM/////wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAfcgAC8B" +
-           "AEQj9yAAAAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEB+CAALwEAQyP4IAAA" +
-           "AQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAKAAAAQWRkQ29tbWVudAEB+SAALwEARSP5IAAAAQEB" +
-           "AAAAAQD5CwABAA0LAQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAfogAC4ARPogAACWAgAA" +
-           "AAEAKgEBRgAAAAcAAABFdmVudElkAA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0" +
-           "aGUgZXZlbnQgdG8gY29tbWVudC4BACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABU" +
-           "aGUgY29tbWVudCB0byBhZGQgdG8gdGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAA" +
-           "AAEADgAAAE1UQ3VycmVudFN0YXRlAQH9IAAvAD/9IAAAAAz/////AQH/////AAAAABVgiQoCAAAAAQAL" +
-           "AAAAQWN0aXZlU3RhdGUBAf4gAC8BACMj/iAAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElk" +
-           "AQH/IAAuAET/IAAAAAH/////AQH/////AAAAAA==";
+           "IgAAAExvZ2ljX1Byb2dyYW1Db25kaXRpb25UeXBlSW5zdGFuY2UBAdggAQHYIP////8YAAAAFWCJCgIA" +
+           "AAAAAAcAAABFdmVudElkAQHZIAAuAETZIAAAAA//////AQH/////AAAAABVgiQoCAAAAAAAJAAAARXZl" +
+           "bnRUeXBlAQHaIAAuAETaIAAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEB" +
+           "2yAALgBE2yAAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBAdwgAC4ARNwg" +
+           "AAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAQAAABUaW1lAQHdIAAuAETdIAAAAQAmAf////8BAf//" +
+           "//8AAAAAFWCJCgIAAAAAAAsAAABSZWNlaXZlVGltZQEB3iAALgBE3iAAAAEAJgH/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAAJAAAATG9jYWxUaW1lAQHfIAAuAETfIAAAAQDQIv////8BAf////8AAAAAFWCJCgIA" +
+           "AAAAAAcAAABNZXNzYWdlAQHgIAAuAETgIAAAABX/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAU2V2" +
+           "ZXJpdHkBAeEgAC4AROEgAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAAAABDb25kaXRpb25DbGFz" +
+           "c0lkAQHiIAAuAETiIAAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAAQ29uZGl0aW9uQ2xhc3NO" +
+           "YW1lAQHjIAAuAETjIAAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAAQ29uZGl0aW9uTmFtZQEB" +
+           "5CAALgBE5CAAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5jaElkAQHlIAAuAETlIAAA" +
+           "ABH/////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQHmIAAuAETmIAAAAAH/////AQH/////" +
+           "AAAAABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQHnIAAvAQAjI+cgAAAAFf////8BAf////8BAAAA" +
+           "FWCJCgIAAAAAAAIAAABJZAEB6CAALgBE6CAAAAAB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAFF1" +
+           "YWxpdHkBAfAgAC8BACoj8CAAAAAT/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVz" +
+           "dGFtcAEB8SAALgBE8SAAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAATGFzdFNldmVyaXR5" +
+           "AQHyIAAvAQAqI/IgAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXAB" +
+           "AfMgAC4ARPMgAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENvbW1lbnQBAfQgAC8BACoj" +
+           "9CAAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEB9SAALgBE9SAA" +
+           "AAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklkAQH2IAAuAET2IAAAAAz/" +
+           "////AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEB9yAALwEARCP3IAAAAQEBAAAAAQD5CwAB" +
+           "APMKAAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQH4IAAvAQBDI/ggAAABAQEAAAABAPkLAAEA8woAAAAA" +
+           "BGGCCgQAAAAAAAoAAABBZGRDb21tZW50AQH5IAAvAQBFI/kgAAABAQEAAAABAPkLAAEADQsBAAAAFWCp" +
+           "CgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEB+iAALgBE+iAAAJYCAAAAAQAqAQFGAAAABwAAAEV2ZW50" +
+           "SWQAD/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0byBjb21tZW50" +
+           "LgEAKgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBjb21tZW50IHRvIGFkZCB0" +
+           "byB0aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAOAAAATVRDdXJyZW50U3Rh" +
+           "dGUBAf0gAC8AP/0gAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABBY3RpdmVTdGF0ZQEB/iAA" +
+           "LwEAIyP+IAAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAf8gAC4ARP8gAAAAAf////8B" +
+           "Af////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -11595,6 +12533,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -11605,44 +12552,36 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "GQAAAE1hc3NDb25kaXRpb25UeXBlSW5zdGFuY2UBARUhAQEVIf////8YAAAANWCJCgIAAAAAAAcAAABF" +
-           "dmVudElkAQEWIQMAAAAAKwAAAEEgZ2xvYmFsbHkgdW5pcXVlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVu" +
-           "dC4ALgBEFiEAAAAP/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAEV2ZW50VHlwZQEBFyEDAAAAACIA" +
-           "AABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHR5cGUuAC4ARBchAAAAEf////8BAf////8AAAAA" +
-           "NWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQEYIQMAAAAAGAAAAFRoZSBzb3VyY2Ugb2YgdGhlIGV2ZW50" +
-           "LgAuAEQYIQAAABH/////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEBGSEDAAAAACkA" +
-           "AABBIGRlc2NyaXB0aW9uIG9mIHRoZSBzb3VyY2Ugb2YgdGhlIGV2ZW50LgAuAEQZIQAAAAz/////AQH/" +
-           "////AAAAADVgiQoCAAAAAAAEAAAAVGltZQEBGiEDAAAAABgAAABXaGVuIHRoZSBldmVudCBvY2N1cnJl" +
-           "ZC4ALgBEGiEAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUBARshAwAA" +
-           "AAA+AAAAV2hlbiB0aGUgc2VydmVyIHJlY2VpdmVkIHRoZSBldmVudCBmcm9tIHRoZSB1bmRlcmx5aW5n" +
-           "IHN5c3RlbS4ALgBEGyEAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAAJAAAATG9jYWxUaW1lAQEc" +
-           "IQMAAAAAPAAAAEluZm9ybWF0aW9uIGFib3V0IHRoZSBsb2NhbCB0aW1lIHdoZXJlIHRoZSBldmVudCBv" +
-           "cmlnaW5hdGVkLgAuAEQcIQAAAQDQIv////8BAf////8AAAAANWCJCgIAAAAAAAcAAABNZXNzYWdlAQEd" +
-           "IQMAAAAAJQAAAEEgbG9jYWxpemVkIGRlc2NyaXB0aW9uIG9mIHRoZSBldmVudC4ALgBEHSEAAAAV////" +
-           "/wEB/////wAAAAA1YIkKAgAAAAAACAAAAFNldmVyaXR5AQEeIQMAAAAAIQAAAEluZGljYXRlcyBob3cg" +
-           "dXJnZW50IGFuIGV2ZW50IGlzLgAuAEQeIQAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAQ29u" +
-           "ZGl0aW9uQ2xhc3NJZAEBHyEALgBEHyEAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAENvbmRp" +
-           "dGlvbkNsYXNzTmFtZQEBICEALgBEICEAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAENvbmRp" +
-           "dGlvbk5hbWUBASEhAC4ARCEhAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFuY2hJZAEB" +
-           "IiEALgBEIiEAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBIyEALgBEIyEAAAAB" +
-           "/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBJCEALwEAIyMkIQAAABX/////" +
-           "AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBASUhAC4ARCUhAAAAAf////8BAf////8AAAAAFWCJCgIA" +
-           "AAAAAAcAAABRdWFsaXR5AQEtIQAvAQAqIy0hAAAAE/////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABT" +
-           "b3VyY2VUaW1lc3RhbXABAS4hAC4ARC4hAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAExh" +
-           "c3RTZXZlcml0eQEBLyEALwEAKiMvIQAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNl" +
-           "VGltZXN0YW1wAQEwIQAuAEQwIQAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABDb21tZW50" +
-           "AQExIQAvAQAqIzEhAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXAB" +
-           "ATIhAC4ARDIhAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJZAEBMyEA" +
-           "LgBEMyEAAAAM/////wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBATQhAC8BAEQjNCEAAAEB" +
-           "AQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBNSEALwEAQyM1IQAAAQEBAAAAAQD5" +
-           "CwABAPMKAAAAAARhggoEAAAAAAAKAAAAQWRkQ29tbWVudAEBNiEALwEARSM2IQAAAQEBAAAAAQD5CwAB" +
-           "AA0LAQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBATchAC4ARDchAACWAgAAAAEAKgEBRgAA" +
-           "AAcAAABFdmVudElkAA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQg" +
-           "dG8gY29tbWVudC4BACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUgY29tbWVu" +
-           "dCB0byBhZGQgdG8gdGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEADgAAAE1U" +
-           "Q3VycmVudFN0YXRlAQE6IQAvAD86IQAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAAQWN0aXZl" +
-           "U3RhdGUBATshAC8BACMjOyEAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQE8IQAuAEQ8" +
-           "IQAAAAH/////AQH/////AAAAAA==";
+           "GQAAAE1hc3NDb25kaXRpb25UeXBlSW5zdGFuY2UBARUhAQEVIf////8YAAAAFWCJCgIAAAAAAAcAAABF" +
+           "dmVudElkAQEWIQAuAEQWIQAAAA//////AQH/////AAAAABVgiQoCAAAAAAAJAAAARXZlbnRUeXBlAQEX" +
+           "IQAuAEQXIQAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBGCEALgBEGCEA" +
+           "AAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBARkhAC4ARBkhAAAADP////8B" +
+           "Af////8AAAAAFWCJCgIAAAAAAAQAAABUaW1lAQEaIQAuAEQaIQAAAQAmAf////8BAf////8AAAAAFWCJ" +
+           "CgIAAAAAAAsAAABSZWNlaXZlVGltZQEBGyEALgBEGyEAAAEAJgH/////AQH/////AAAAABVgiQoCAAAA" +
+           "AAAJAAAATG9jYWxUaW1lAQEcIQAuAEQcIQAAAQDQIv////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABN" +
+           "ZXNzYWdlAQEdIQAuAEQdIQAAABX/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkBAR4h" +
+           "AC4ARB4hAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAAAABDb25kaXRpb25DbGFzc0lkAQEfIQAu" +
+           "AEQfIQAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAAQ29uZGl0aW9uQ2xhc3NOYW1lAQEgIQAu" +
+           "AEQgIQAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAAQ29uZGl0aW9uTmFtZQEBISEALgBEISEA" +
+           "AAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5jaElkAQEiIQAuAEQiIQAAABH/////AQH/" +
+           "////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQEjIQAuAEQjIQAAAAH/////AQH/////AAAAABVgiQoC" +
+           "AAAAAAAMAAAARW5hYmxlZFN0YXRlAQEkIQAvAQAjIyQhAAAAFf////8BAf////8BAAAAFWCJCgIAAAAA" +
+           "AAIAAABJZAEBJSEALgBEJSEAAAAB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAFF1YWxpdHkBAS0h" +
+           "AC8BACojLSEAAAAT/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBLiEA" +
+           "LgBELiEAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAATGFzdFNldmVyaXR5AQEvIQAvAQAq" +
+           "Iy8hAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABATAhAC4ARDAh" +
+           "AAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENvbW1lbnQBATEhAC8BACojMSEAAAAV////" +
+           "/wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBMiEALgBEMiEAAAEAJgH/////" +
+           "AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklkAQEzIQAuAEQzIQAAAAz/////AQH/////" +
+           "AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBNCEALwEARCM0IQAAAQEBAAAAAQD5CwABAPMKAAAAAARh" +
+           "ggoEAAAAAAAGAAAARW5hYmxlAQE1IQAvAQBDIzUhAAABAQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAA" +
+           "AAoAAABBZGRDb21tZW50AQE2IQAvAQBFIzYhAAABAQEAAAABAPkLAAEADQsBAAAAFWCpCgIAAAAAAA4A" +
+           "AABJbnB1dEFyZ3VtZW50cwEBNyEALgBENyEAAJYCAAAAAQAqAQFGAAAABwAAAEV2ZW50SWQAD/////8A" +
+           "AAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0byBjb21tZW50LgEAKgEBQgAA" +
+           "AAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBjb21tZW50IHRvIGFkZCB0byB0aGUgY29u" +
+           "ZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAOAAAATVRDdXJyZW50U3RhdGUBATohAC8A" +
+           "PzohAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABBY3RpdmVTdGF0ZQEBOyEALwEAIyM7IQAA" +
+           "ABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBATwhAC4ARDwhAAAAAf////8BAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -11695,6 +12634,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -11705,44 +12653,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "IwAAAE1vdGlvbl9Qcm9ncmFtQ29uZGl0aW9uVHlwZUluc3RhbmNlAQFSIQEBUiH/////GAAAADVgiQoC" +
-           "AAAAAAAHAAAARXZlbnRJZAEBUyEDAAAAACsAAABBIGdsb2JhbGx5IHVuaXF1ZSBpZGVudGlmaWVyIGZv" +
-           "ciB0aGUgZXZlbnQuAC4ARFMhAAAAD/////8BAf////8AAAAANWCJCgIAAAAAAAkAAABFdmVudFR5cGUB" +
-           "AVQhAwAAAAAiAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0eXBlLgAuAERUIQAAABH/////" +
-           "AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBVSEDAAAAABgAAABUaGUgc291cmNlIG9m" +
-           "IHRoZSBldmVudC4ALgBEVSEAAAAR/////wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5hbWUB" +
-           "AVYhAwAAAAApAAAAQSBkZXNjcmlwdGlvbiBvZiB0aGUgc291cmNlIG9mIHRoZSBldmVudC4ALgBEViEA" +
-           "AAAM/////wEB/////wAAAAA1YIkKAgAAAAAABAAAAFRpbWUBAVchAwAAAAAYAAAAV2hlbiB0aGUgZXZl" +
-           "bnQgb2NjdXJyZWQuAC4ARFchAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACwAAAFJlY2VpdmVU" +
-           "aW1lAQFYIQMAAAAAPgAAAFdoZW4gdGhlIHNlcnZlciByZWNlaXZlZCB0aGUgZXZlbnQgZnJvbSB0aGUg" +
-           "dW5kZXJseWluZyBzeXN0ZW0uAC4ARFghAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAExv" +
-           "Y2FsVGltZQEBWSEDAAAAADwAAABJbmZvcm1hdGlvbiBhYm91dCB0aGUgbG9jYWwgdGltZSB3aGVyZSB0" +
-           "aGUgZXZlbnQgb3JpZ2luYXRlZC4ALgBEWSEAAAEA0CL/////AQH/////AAAAADVgiQoCAAAAAAAHAAAA" +
-           "TWVzc2FnZQEBWiEDAAAAACUAAABBIGxvY2FsaXplZCBkZXNjcmlwdGlvbiBvZiB0aGUgZXZlbnQuAC4A" +
-           "RFohAAAAFf////8BAf////8AAAAANWCJCgIAAAAAAAgAAABTZXZlcml0eQEBWyEDAAAAACEAAABJbmRp" +
-           "Y2F0ZXMgaG93IHVyZ2VudCBhbiBldmVudCBpcy4ALgBEWyEAAAAF/////wEB/////wAAAAAVYIkKAgAA" +
-           "AAAAEAAAAENvbmRpdGlvbkNsYXNzSWQBAVwhAC4ARFwhAAAAEf////8BAf////8AAAAAFWCJCgIAAAAA" +
-           "ABIAAABDb25kaXRpb25DbGFzc05hbWUBAV0hAC4ARF0hAAAAFf////8BAf////8AAAAAFWCJCgIAAAAA" +
-           "AA0AAABDb25kaXRpb25OYW1lAQFeIQAuAEReIQAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAA" +
-           "QnJhbmNoSWQBAV8hAC4ARF8hAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BAWAh" +
-           "AC4ARGAhAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBAWEhAC8BACMj" +
-           "YSEAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQFiIQAuAERiIQAAAAH/////AQH/////" +
-           "AAAAABVgiQoCAAAAAAAHAAAAUXVhbGl0eQEBaiEALwEAKiNqIQAAABP/////AQH/////AQAAABVgiQoC" +
-           "AAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQFrIQAuAERrIQAAAQAmAf////8BAf////8AAAAAFWCJCgIA" +
-           "AAAAAAwAAABMYXN0U2V2ZXJpdHkBAWwhAC8BACojbCEAAAAF/////wEB/////wEAAAAVYIkKAgAAAAAA" +
-           "DwAAAFNvdXJjZVRpbWVzdGFtcAEBbSEALgBEbSEAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAH" +
-           "AAAAQ29tbWVudAEBbiEALwEAKiNuIQAAABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNl" +
-           "VGltZXN0YW1wAQFvIQAuAERvIQAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRV" +
-           "c2VySWQBAXAhAC4ARHAhAAAADP////8BAf////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQFxIQAv" +
-           "AQBEI3EhAAABAQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAYAAABFbmFibGUBAXIhAC8BAEMjciEA" +
-           "AAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAACgAAAEFkZENvbW1lbnQBAXMhAC8BAEUjcyEAAAEB" +
-           "AQAAAAEA+QsAAQANCwEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQF0IQAuAER0IQAAlgIA" +
-           "AAABACoBAUYAAAAHAAAARXZlbnRJZAAP/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3Ig" +
-           "dGhlIGV2ZW50IHRvIGNvbW1lbnQuAQAqAQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAA" +
-           "VGhlIGNvbW1lbnQgdG8gYWRkIHRvIHRoZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIA" +
-           "AAABAA4AAABNVEN1cnJlbnRTdGF0ZQEBdyEALwA/dyEAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEA" +
-           "CwAAAEFjdGl2ZVN0YXRlAQF4IQAvAQAjI3ghAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJ" +
-           "ZAEBeSEALgBEeSEAAAAB/////wEB/////wAAAAA=";
+           "IwAAAE1vdGlvbl9Qcm9ncmFtQ29uZGl0aW9uVHlwZUluc3RhbmNlAQFSIQEBUiH/////GAAAABVgiQoC" +
+           "AAAAAAAHAAAARXZlbnRJZAEBUyEALgBEUyEAAAAP/////wEB/////wAAAAAVYIkKAgAAAAAACQAAAEV2" +
+           "ZW50VHlwZQEBVCEALgBEVCEAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5vZGUB" +
+           "AVUhAC4ARFUhAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQFWIQAuAERW" +
+           "IQAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAEAAAAVGltZQEBVyEALgBEVyEAAAEAJgH/////AQH/" +
+           "////AAAAABVgiQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUBAVghAC4ARFghAAABACYB/////wEB/////wAA" +
+           "AAAVYIkKAgAAAAAACQAAAExvY2FsVGltZQEBWSEALgBEWSEAAAEA0CL/////AQH/////AAAAABVgiQoC" +
+           "AAAAAAAHAAAATWVzc2FnZQEBWiEALgBEWiEAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAFNl" +
+           "dmVyaXR5AQFbIQAuAERbIQAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAQ29uZGl0aW9uQ2xh" +
+           "c3NJZAEBXCEALgBEXCEAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAENvbmRpdGlvbkNsYXNz" +
+           "TmFtZQEBXSEALgBEXSEAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAENvbmRpdGlvbk5hbWUB" +
+           "AV4hAC4ARF4hAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFuY2hJZAEBXyEALgBEXyEA" +
+           "AAAR/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBYCEALgBEYCEAAAAB/////wEB////" +
+           "/wAAAAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBYSEALwEAIyNhIQAAABX/////AQH/////AQAA" +
+           "ABVgiQoCAAAAAAACAAAASWQBAWIhAC4ARGIhAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABR" +
+           "dWFsaXR5AQFqIQAvAQAqI2ohAAAAE/////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1l" +
+           "c3RhbXABAWshAC4ARGshAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAExhc3RTZXZlcml0" +
+           "eQEBbCEALwEAKiNsIQAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1w" +
+           "AQFtIQAuAERtIQAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABDb21tZW50AQFuIQAvAQAq" +
+           "I24hAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAW8hAC4ARG8h" +
+           "AAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJZAEBcCEALgBEcCEAAAAM" +
+           "/////wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAXEhAC8BAEQjcSEAAAEBAQAAAAEA+QsA" +
+           "AQDzCgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBciEALwEAQyNyIQAAAQEBAAAAAQD5CwABAPMKAAAA" +
+           "AARhggoEAAAAAAAKAAAAQWRkQ29tbWVudAEBcyEALwEARSNzIQAAAQEBAAAAAQD5CwABAA0LAQAAABVg" +
+           "qQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAXQhAC4ARHQhAACWAgAAAAEAKgEBRgAAAAcAAABFdmVu" +
+           "dElkAA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdG8gY29tbWVu" +
+           "dC4BACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUgY29tbWVudCB0byBhZGQg" +
+           "dG8gdGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEADgAAAE1UQ3VycmVudFN0" +
+           "YXRlAQF3IQAvAD93IQAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAAQWN0aXZlU3RhdGUBAXgh" +
+           "AC8BACMjeCEAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQF5IQAuAER5IQAAAAH/////" +
+           "AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -11795,6 +12736,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -11805,44 +12755,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "IgAAAFBhdGhfRmVlZHJhdGVDb25kaXRpb25UeXBlSW5zdGFuY2UBAY8hAQGPIf////8YAAAANWCJCgIA" +
-           "AAAAAAcAAABFdmVudElkAQGQIQMAAAAAKwAAAEEgZ2xvYmFsbHkgdW5pcXVlIGlkZW50aWZpZXIgZm9y" +
-           "IHRoZSBldmVudC4ALgBEkCEAAAAP/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAEV2ZW50VHlwZQEB" +
-           "kSEDAAAAACIAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHR5cGUuAC4ARJEhAAAAEf////8B" +
-           "Af////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQGSIQMAAAAAGAAAAFRoZSBzb3VyY2Ugb2Yg" +
-           "dGhlIGV2ZW50LgAuAESSIQAAABH/////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEB" +
-           "kyEDAAAAACkAAABBIGRlc2NyaXB0aW9uIG9mIHRoZSBzb3VyY2Ugb2YgdGhlIGV2ZW50LgAuAESTIQAA" +
-           "AAz/////AQH/////AAAAADVgiQoCAAAAAAAEAAAAVGltZQEBlCEDAAAAABgAAABXaGVuIHRoZSBldmVu" +
-           "dCBvY2N1cnJlZC4ALgBElCEAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAALAAAAUmVjZWl2ZVRp" +
-           "bWUBAZUhAwAAAAA+AAAAV2hlbiB0aGUgc2VydmVyIHJlY2VpdmVkIHRoZSBldmVudCBmcm9tIHRoZSB1" +
-           "bmRlcmx5aW5nIHN5c3RlbS4ALgBElSEAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAAJAAAATG9j" +
-           "YWxUaW1lAQGWIQMAAAAAPAAAAEluZm9ybWF0aW9uIGFib3V0IHRoZSBsb2NhbCB0aW1lIHdoZXJlIHRo" +
-           "ZSBldmVudCBvcmlnaW5hdGVkLgAuAESWIQAAAQDQIv////8BAf////8AAAAANWCJCgIAAAAAAAcAAABN" +
-           "ZXNzYWdlAQGXIQMAAAAAJQAAAEEgbG9jYWxpemVkIGRlc2NyaXB0aW9uIG9mIHRoZSBldmVudC4ALgBE" +
-           "lyEAAAAV/////wEB/////wAAAAA1YIkKAgAAAAAACAAAAFNldmVyaXR5AQGYIQMAAAAAIQAAAEluZGlj" +
-           "YXRlcyBob3cgdXJnZW50IGFuIGV2ZW50IGlzLgAuAESYIQAAAAX/////AQH/////AAAAABVgiQoCAAAA" +
-           "AAAQAAAAQ29uZGl0aW9uQ2xhc3NJZAEBmSEALgBEmSEAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "EgAAAENvbmRpdGlvbkNsYXNzTmFtZQEBmiEALgBEmiEAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "DQAAAENvbmRpdGlvbk5hbWUBAZshAC4ARJshAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABC" +
-           "cmFuY2hJZAEBnCEALgBEnCEAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBnSEA" +
-           "LgBEnSEAAAAB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBniEALwEAIyOe" +
-           "IQAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAZ8hAC4ARJ8hAAAAAf////8BAf////8A" +
-           "AAAAFWCJCgIAAAAAAAcAAABRdWFsaXR5AQGnIQAvAQAqI6chAAAAE/////8BAf////8BAAAAFWCJCgIA" +
-           "AAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAaghAC4ARKghAAABACYB/////wEB/////wAAAAAVYIkKAgAA" +
-           "AAAADAAAAExhc3RTZXZlcml0eQEBqSEALwEAKiOpIQAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAP" +
-           "AAAAU291cmNlVGltZXN0YW1wAQGqIQAuAESqIQAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcA" +
-           "AABDb21tZW50AQGrIQAvAQAqI6shAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VU" +
-           "aW1lc3RhbXABAawhAC4ARKwhAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVz" +
-           "ZXJJZAEBrSEALgBErSEAAAAM/////wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAa4hAC8B" +
-           "AEQjriEAAAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBryEALwEAQyOvIQAA" +
-           "AQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAKAAAAQWRkQ29tbWVudAEBsCEALwEARSOwIQAAAQEB" +
-           "AAAAAQD5CwABAA0LAQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAbEhAC4ARLEhAACWAgAA" +
-           "AAEAKgEBRgAAAAcAAABFdmVudElkAA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0" +
-           "aGUgZXZlbnQgdG8gY29tbWVudC4BACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABU" +
-           "aGUgY29tbWVudCB0byBhZGQgdG8gdGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAA" +
-           "AAEADgAAAE1UQ3VycmVudFN0YXRlAQG0IQAvAD+0IQAAAAz/////AQH/////AAAAABVgiQoCAAAAAQAL" +
-           "AAAAQWN0aXZlU3RhdGUBAbUhAC8BACMjtSEAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElk" +
-           "AQG2IQAuAES2IQAAAAH/////AQH/////AAAAAA==";
+           "IgAAAFBhdGhfRmVlZHJhdGVDb25kaXRpb25UeXBlSW5zdGFuY2UBAY8hAQGPIf////8YAAAAFWCJCgIA" +
+           "AAAAAAcAAABFdmVudElkAQGQIQAuAESQIQAAAA//////AQH/////AAAAABVgiQoCAAAAAAAJAAAARXZl" +
+           "bnRUeXBlAQGRIQAuAESRIQAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEB" +
+           "kiEALgBEkiEAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBAZMhAC4ARJMh" +
+           "AAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAQAAABUaW1lAQGUIQAuAESUIQAAAQAmAf////8BAf//" +
+           "//8AAAAAFWCJCgIAAAAAAAsAAABSZWNlaXZlVGltZQEBlSEALgBElSEAAAEAJgH/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAAJAAAATG9jYWxUaW1lAQGWIQAuAESWIQAAAQDQIv////8BAf////8AAAAAFWCJCgIA" +
+           "AAAAAAcAAABNZXNzYWdlAQGXIQAuAESXIQAAABX/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAU2V2" +
+           "ZXJpdHkBAZghAC4ARJghAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAAAABDb25kaXRpb25DbGFz" +
+           "c0lkAQGZIQAuAESZIQAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAAQ29uZGl0aW9uQ2xhc3NO" +
+           "YW1lAQGaIQAuAESaIQAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAAQ29uZGl0aW9uTmFtZQEB" +
+           "myEALgBEmyEAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5jaElkAQGcIQAuAEScIQAA" +
+           "ABH/////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQGdIQAuAESdIQAAAAH/////AQH/////" +
+           "AAAAABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQGeIQAvAQAjI54hAAAAFf////8BAf////8BAAAA" +
+           "FWCJCgIAAAAAAAIAAABJZAEBnyEALgBEnyEAAAAB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAFF1" +
+           "YWxpdHkBAachAC8BACojpyEAAAAT/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVz" +
+           "dGFtcAEBqCEALgBEqCEAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAATGFzdFNldmVyaXR5" +
+           "AQGpIQAvAQAqI6khAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXAB" +
+           "AaohAC4ARKohAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENvbW1lbnQBAashAC8BACoj" +
+           "qyEAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBrCEALgBErCEA" +
+           "AAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklkAQGtIQAuAEStIQAAAAz/" +
+           "////AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBriEALwEARCOuIQAAAQEBAAAAAQD5CwAB" +
+           "APMKAAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQGvIQAvAQBDI68hAAABAQEAAAABAPkLAAEA8woAAAAA" +
+           "BGGCCgQAAAAAAAoAAABBZGRDb21tZW50AQGwIQAvAQBFI7AhAAABAQEAAAABAPkLAAEADQsBAAAAFWCp" +
+           "CgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBsSEALgBEsSEAAJYCAAAAAQAqAQFGAAAABwAAAEV2ZW50" +
+           "SWQAD/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0byBjb21tZW50" +
+           "LgEAKgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBjb21tZW50IHRvIGFkZCB0" +
+           "byB0aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAOAAAATVRDdXJyZW50U3Rh" +
+           "dGUBAbQhAC8AP7QhAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABBY3RpdmVTdGF0ZQEBtSEA" +
+           "LwEAIyO1IQAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAbYhAC4ARLYhAAAAAf////8B" +
+           "Af////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -11895,6 +12838,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -11905,44 +12857,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "IgAAAFBhdGhfUG9zaXRpb25Db25kaXRpb25UeXBlSW5zdGFuY2UBAcwhAQHMIf////8YAAAANWCJCgIA" +
-           "AAAAAAcAAABFdmVudElkAQHNIQMAAAAAKwAAAEEgZ2xvYmFsbHkgdW5pcXVlIGlkZW50aWZpZXIgZm9y" +
-           "IHRoZSBldmVudC4ALgBEzSEAAAAP/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAEV2ZW50VHlwZQEB" +
-           "ziEDAAAAACIAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHR5cGUuAC4ARM4hAAAAEf////8B" +
-           "Af////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQHPIQMAAAAAGAAAAFRoZSBzb3VyY2Ugb2Yg" +
-           "dGhlIGV2ZW50LgAuAETPIQAAABH/////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEB" +
-           "0CEDAAAAACkAAABBIGRlc2NyaXB0aW9uIG9mIHRoZSBzb3VyY2Ugb2YgdGhlIGV2ZW50LgAuAETQIQAA" +
-           "AAz/////AQH/////AAAAADVgiQoCAAAAAAAEAAAAVGltZQEB0SEDAAAAABgAAABXaGVuIHRoZSBldmVu" +
-           "dCBvY2N1cnJlZC4ALgBE0SEAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAALAAAAUmVjZWl2ZVRp" +
-           "bWUBAdIhAwAAAAA+AAAAV2hlbiB0aGUgc2VydmVyIHJlY2VpdmVkIHRoZSBldmVudCBmcm9tIHRoZSB1" +
-           "bmRlcmx5aW5nIHN5c3RlbS4ALgBE0iEAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAAJAAAATG9j" +
-           "YWxUaW1lAQHTIQMAAAAAPAAAAEluZm9ybWF0aW9uIGFib3V0IHRoZSBsb2NhbCB0aW1lIHdoZXJlIHRo" +
-           "ZSBldmVudCBvcmlnaW5hdGVkLgAuAETTIQAAAQDQIv////8BAf////8AAAAANWCJCgIAAAAAAAcAAABN" +
-           "ZXNzYWdlAQHUIQMAAAAAJQAAAEEgbG9jYWxpemVkIGRlc2NyaXB0aW9uIG9mIHRoZSBldmVudC4ALgBE" +
-           "1CEAAAAV/////wEB/////wAAAAA1YIkKAgAAAAAACAAAAFNldmVyaXR5AQHVIQMAAAAAIQAAAEluZGlj" +
-           "YXRlcyBob3cgdXJnZW50IGFuIGV2ZW50IGlzLgAuAETVIQAAAAX/////AQH/////AAAAABVgiQoCAAAA" +
-           "AAAQAAAAQ29uZGl0aW9uQ2xhc3NJZAEB1iEALgBE1iEAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "EgAAAENvbmRpdGlvbkNsYXNzTmFtZQEB1yEALgBE1yEAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "DQAAAENvbmRpdGlvbk5hbWUBAdghAC4ARNghAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABC" +
-           "cmFuY2hJZAEB2SEALgBE2SEAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEB2iEA" +
-           "LgBE2iEAAAAB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEB2yEALwEAIyPb" +
-           "IQAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAdwhAC4ARNwhAAAAAf////8BAf////8A" +
-           "AAAAFWCJCgIAAAAAAAcAAABRdWFsaXR5AQHkIQAvAQAqI+QhAAAAE/////8BAf////8BAAAAFWCJCgIA" +
-           "AAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAeUhAC4AROUhAAABACYB/////wEB/////wAAAAAVYIkKAgAA" +
-           "AAAADAAAAExhc3RTZXZlcml0eQEB5iEALwEAKiPmIQAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAP" +
-           "AAAAU291cmNlVGltZXN0YW1wAQHnIQAuAETnIQAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcA" +
-           "AABDb21tZW50AQHoIQAvAQAqI+ghAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VU" +
-           "aW1lc3RhbXABAekhAC4AROkhAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVz" +
-           "ZXJJZAEB6iEALgBE6iEAAAAM/////wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAeshAC8B" +
-           "AEQj6yEAAAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEB7CEALwEAQyPsIQAA" +
-           "AQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAKAAAAQWRkQ29tbWVudAEB7SEALwEARSPtIQAAAQEB" +
-           "AAAAAQD5CwABAA0LAQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAe4hAC4ARO4hAACWAgAA" +
-           "AAEAKgEBRgAAAAcAAABFdmVudElkAA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0" +
-           "aGUgZXZlbnQgdG8gY29tbWVudC4BACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABU" +
-           "aGUgY29tbWVudCB0byBhZGQgdG8gdGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAA" +
-           "AAEADgAAAE1UQ3VycmVudFN0YXRlAQHxIQAvAD/xIQAAAAz/////AQH/////AAAAABVgiQoCAAAAAQAL" +
-           "AAAAQWN0aXZlU3RhdGUBAfIhAC8BACMj8iEAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElk" +
-           "AQHzIQAuAETzIQAAAAH/////AQH/////AAAAAA==";
+           "IgAAAFBhdGhfUG9zaXRpb25Db25kaXRpb25UeXBlSW5zdGFuY2UBAcwhAQHMIf////8YAAAAFWCJCgIA" +
+           "AAAAAAcAAABFdmVudElkAQHNIQAuAETNIQAAAA//////AQH/////AAAAABVgiQoCAAAAAAAJAAAARXZl" +
+           "bnRUeXBlAQHOIQAuAETOIQAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEB" +
+           "zyEALgBEzyEAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBAdAhAC4ARNAh" +
+           "AAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAQAAABUaW1lAQHRIQAuAETRIQAAAQAmAf////8BAf//" +
+           "//8AAAAAFWCJCgIAAAAAAAsAAABSZWNlaXZlVGltZQEB0iEALgBE0iEAAAEAJgH/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAAJAAAATG9jYWxUaW1lAQHTIQAuAETTIQAAAQDQIv////8BAf////8AAAAAFWCJCgIA" +
+           "AAAAAAcAAABNZXNzYWdlAQHUIQAuAETUIQAAABX/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAU2V2" +
+           "ZXJpdHkBAdUhAC4ARNUhAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAAAABDb25kaXRpb25DbGFz" +
+           "c0lkAQHWIQAuAETWIQAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAAQ29uZGl0aW9uQ2xhc3NO" +
+           "YW1lAQHXIQAuAETXIQAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAAQ29uZGl0aW9uTmFtZQEB" +
+           "2CEALgBE2CEAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5jaElkAQHZIQAuAETZIQAA" +
+           "ABH/////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQHaIQAuAETaIQAAAAH/////AQH/////" +
+           "AAAAABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQHbIQAvAQAjI9shAAAAFf////8BAf////8BAAAA" +
+           "FWCJCgIAAAAAAAIAAABJZAEB3CEALgBE3CEAAAAB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAFF1" +
+           "YWxpdHkBAeQhAC8BACoj5CEAAAAT/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVz" +
+           "dGFtcAEB5SEALgBE5SEAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAATGFzdFNldmVyaXR5" +
+           "AQHmIQAvAQAqI+YhAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXAB" +
+           "AechAC4AROchAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENvbW1lbnQBAeghAC8BACoj" +
+           "6CEAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEB6SEALgBE6SEA" +
+           "AAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklkAQHqIQAuAETqIQAAAAz/" +
+           "////AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEB6yEALwEARCPrIQAAAQEBAAAAAQD5CwAB" +
+           "APMKAAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQHsIQAvAQBDI+whAAABAQEAAAABAPkLAAEA8woAAAAA" +
+           "BGGCCgQAAAAAAAoAAABBZGRDb21tZW50AQHtIQAvAQBFI+0hAAABAQEAAAABAPkLAAEADQsBAAAAFWCp" +
+           "CgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEB7iEALgBE7iEAAJYCAAAAAQAqAQFGAAAABwAAAEV2ZW50" +
+           "SWQAD/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0byBjb21tZW50" +
+           "LgEAKgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBjb21tZW50IHRvIGFkZCB0" +
+           "byB0aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAOAAAATVRDdXJyZW50U3Rh" +
+           "dGUBAfEhAC8AP/EhAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABBY3RpdmVTdGF0ZQEB8iEA" +
+           "LwEAIyPyIQAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAfMhAC4ARPMhAAAAAf////8B" +
+           "Af////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -11995,6 +12940,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -12005,44 +12959,36 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "FwAAAFBIQ29uZGl0aW9uVHlwZUluc3RhbmNlAQEJIgEBCSL/////GAAAADVgiQoCAAAAAAAHAAAARXZl" +
-           "bnRJZAEBCiIDAAAAACsAAABBIGdsb2JhbGx5IHVuaXF1ZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQu" +
-           "AC4ARAoiAAAAD/////8BAf////8AAAAANWCJCgIAAAAAAAkAAABFdmVudFR5cGUBAQsiAwAAAAAiAAAA" +
-           "VGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0eXBlLgAuAEQLIgAAABH/////AQH/////AAAAADVg" +
-           "iQoCAAAAAAAKAAAAU291cmNlTm9kZQEBDCIDAAAAABgAAABUaGUgc291cmNlIG9mIHRoZSBldmVudC4A" +
-           "LgBEDCIAAAAR/////wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBAQ0iAwAAAAApAAAA" +
-           "QSBkZXNjcmlwdGlvbiBvZiB0aGUgc291cmNlIG9mIHRoZSBldmVudC4ALgBEDSIAAAAM/////wEB////" +
-           "/wAAAAA1YIkKAgAAAAAABAAAAFRpbWUBAQ4iAwAAAAAYAAAAV2hlbiB0aGUgZXZlbnQgb2NjdXJyZWQu" +
-           "AC4ARA4iAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQEPIgMAAAAA" +
-           "PgAAAFdoZW4gdGhlIHNlcnZlciByZWNlaXZlZCB0aGUgZXZlbnQgZnJvbSB0aGUgdW5kZXJseWluZyBz" +
-           "eXN0ZW0uAC4ARA8iAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAExvY2FsVGltZQEBECID" +
-           "AAAAADwAAABJbmZvcm1hdGlvbiBhYm91dCB0aGUgbG9jYWwgdGltZSB3aGVyZSB0aGUgZXZlbnQgb3Jp" +
-           "Z2luYXRlZC4ALgBEECIAAAEA0CL/////AQH/////AAAAADVgiQoCAAAAAAAHAAAATWVzc2FnZQEBESID" +
-           "AAAAACUAAABBIGxvY2FsaXplZCBkZXNjcmlwdGlvbiBvZiB0aGUgZXZlbnQuAC4ARBEiAAAAFf////8B" +
-           "Af////8AAAAANWCJCgIAAAAAAAgAAABTZXZlcml0eQEBEiIDAAAAACEAAABJbmRpY2F0ZXMgaG93IHVy" +
-           "Z2VudCBhbiBldmVudCBpcy4ALgBEEiIAAAAF/////wEB/////wAAAAAVYIkKAgAAAAAAEAAAAENvbmRp" +
-           "dGlvbkNsYXNzSWQBARMiAC4ARBMiAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIAAABDb25kaXRp" +
-           "b25DbGFzc05hbWUBARQiAC4ARBQiAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0AAABDb25kaXRp" +
-           "b25OYW1lAQEVIgAuAEQVIgAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJhbmNoSWQBARYi" +
-           "AC4ARBYiAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BARciAC4ARBciAAAAAf//" +
-           "//8BAf////8AAAAAFWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBARgiAC8BACMjGCIAAAAV/////wEB" +
-           "/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQEZIgAuAEQZIgAAAAH/////AQH/////AAAAABVgiQoCAAAA" +
-           "AAAHAAAAUXVhbGl0eQEBISIALwEAKiMhIgAAABP/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291" +
-           "cmNlVGltZXN0YW1wAQEiIgAuAEQiIgAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABMYXN0" +
-           "U2V2ZXJpdHkBASMiAC8BACojIyIAAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRp" +
-           "bWVzdGFtcAEBJCIALgBEJCIAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQ29tbWVudAEB" +
-           "JSIALwEAKiMlIgAAABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQEm" +
-           "IgAuAEQmIgAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQBASciAC4A" +
-           "RCciAAAADP////8BAf////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQEoIgAvAQBEIygiAAABAQEA" +
-           "AAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAYAAABFbmFibGUBASkiAC8BAEMjKSIAAAEBAQAAAAEA+QsA" +
-           "AQDzCgAAAAAEYYIKBAAAAAAACgAAAEFkZENvbW1lbnQBASoiAC8BAEUjKiIAAAEBAQAAAAEA+QsAAQAN" +
-           "CwEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQErIgAuAEQrIgAAlgIAAAABACoBAUYAAAAH" +
-           "AAAARXZlbnRJZAAP/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHRv" +
-           "IGNvbW1lbnQuAQAqAQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhlIGNvbW1lbnQg" +
-           "dG8gYWRkIHRvIHRoZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAABAA4AAABNVEN1" +
-           "cnJlbnRTdGF0ZQEBLiIALwA/LiIAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAEFjdGl2ZVN0" +
-           "YXRlAQEvIgAvAQAjIy8iAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBMCIALgBEMCIA" +
-           "AAAB/////wEB/////wAAAAA=";
+           "FwAAAFBIQ29uZGl0aW9uVHlwZUluc3RhbmNlAQEJIgEBCSL/////GAAAABVgiQoCAAAAAAAHAAAARXZl" +
+           "bnRJZAEBCiIALgBECiIAAAAP/////wEB/////wAAAAAVYIkKAgAAAAAACQAAAEV2ZW50VHlwZQEBCyIA" +
+           "LgBECyIAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBAQwiAC4ARAwiAAAA" +
+           "Ef////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQENIgAuAEQNIgAAAAz/////AQH/" +
+           "////AAAAABVgiQoCAAAAAAAEAAAAVGltZQEBDiIALgBEDiIAAAEAJgH/////AQH/////AAAAABVgiQoC" +
+           "AAAAAAALAAAAUmVjZWl2ZVRpbWUBAQ8iAC4ARA8iAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAA" +
+           "CQAAAExvY2FsVGltZQEBECIALgBEECIAAAEA0CL/////AQH/////AAAAABVgiQoCAAAAAAAHAAAATWVz" +
+           "c2FnZQEBESIALgBEESIAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAFNldmVyaXR5AQESIgAu" +
+           "AEQSIgAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAQ29uZGl0aW9uQ2xhc3NJZAEBEyIALgBE" +
+           "EyIAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAENvbmRpdGlvbkNsYXNzTmFtZQEBFCIALgBE" +
+           "FCIAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAENvbmRpdGlvbk5hbWUBARUiAC4ARBUiAAAA" +
+           "DP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFuY2hJZAEBFiIALgBEFiIAAAAR/////wEB////" +
+           "/wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBFyIALgBEFyIAAAAB/////wEB/////wAAAAAVYIkKAgAA" +
+           "AAAADAAAAEVuYWJsZWRTdGF0ZQEBGCIALwEAIyMYIgAAABX/////AQH/////AQAAABVgiQoCAAAAAAAC" +
+           "AAAASWQBARkiAC4ARBkiAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABRdWFsaXR5AQEhIgAv" +
+           "AQAqIyEiAAAAE/////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABASIiAC4A" +
+           "RCIiAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAExhc3RTZXZlcml0eQEBIyIALwEAKiMj" +
+           "IgAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQEkIgAuAEQkIgAA" +
+           "AQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABDb21tZW50AQElIgAvAQAqIyUiAAAAFf////8B" +
+           "Af////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABASYiAC4ARCYiAAABACYB/////wEB" +
+           "/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJZAEBJyIALgBEJyIAAAAM/////wEB/////wAA" +
+           "AAAEYYIKBAAAAAAABwAAAERpc2FibGUBASgiAC8BAEQjKCIAAAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIK" +
+           "BAAAAAAABgAAAEVuYWJsZQEBKSIALwEAQyMpIgAAAQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAK" +
+           "AAAAQWRkQ29tbWVudAEBKiIALwEARSMqIgAAAQEBAAAAAQD5CwABAA0LAQAAABVgqQoCAAAAAAAOAAAA" +
+           "SW5wdXRBcmd1bWVudHMBASsiAC4ARCsiAACWAgAAAAEAKgEBRgAAAAcAAABFdmVudElkAA//////AAAA" +
+           "AAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdG8gY29tbWVudC4BACoBAUIAAAAH" +
+           "AAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUgY29tbWVudCB0byBhZGQgdG8gdGhlIGNvbmRp" +
+           "dGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEADgAAAE1UQ3VycmVudFN0YXRlAQEuIgAvAD8u" +
+           "IgAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAAQWN0aXZlU3RhdGUBAS8iAC8BACMjLyIAAAAV" +
+           "/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQEwIgAuAEQwIgAAAAH/////AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -12095,6 +13041,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -12105,44 +13060,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "HQAAAFBvc2l0aW9uQ29uZGl0aW9uVHlwZUluc3RhbmNlAQFGIgEBRiL/////GAAAADVgiQoCAAAAAAAH" +
-           "AAAARXZlbnRJZAEBRyIDAAAAACsAAABBIGdsb2JhbGx5IHVuaXF1ZSBpZGVudGlmaWVyIGZvciB0aGUg" +
-           "ZXZlbnQuAC4AREciAAAAD/////8BAf////8AAAAANWCJCgIAAAAAAAkAAABFdmVudFR5cGUBAUgiAwAA" +
-           "AAAiAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0eXBlLgAuAERIIgAAABH/////AQH/////" +
-           "AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBSSIDAAAAABgAAABUaGUgc291cmNlIG9mIHRoZSBl" +
-           "dmVudC4ALgBESSIAAAAR/////wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBAUoiAwAA" +
-           "AAApAAAAQSBkZXNjcmlwdGlvbiBvZiB0aGUgc291cmNlIG9mIHRoZSBldmVudC4ALgBESiIAAAAM////" +
-           "/wEB/////wAAAAA1YIkKAgAAAAAABAAAAFRpbWUBAUsiAwAAAAAYAAAAV2hlbiB0aGUgZXZlbnQgb2Nj" +
-           "dXJyZWQuAC4AREsiAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQFM" +
-           "IgMAAAAAPgAAAFdoZW4gdGhlIHNlcnZlciByZWNlaXZlZCB0aGUgZXZlbnQgZnJvbSB0aGUgdW5kZXJs" +
-           "eWluZyBzeXN0ZW0uAC4AREwiAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAExvY2FsVGlt" +
-           "ZQEBTSIDAAAAADwAAABJbmZvcm1hdGlvbiBhYm91dCB0aGUgbG9jYWwgdGltZSB3aGVyZSB0aGUgZXZl" +
-           "bnQgb3JpZ2luYXRlZC4ALgBETSIAAAEA0CL/////AQH/////AAAAADVgiQoCAAAAAAAHAAAATWVzc2Fn" +
-           "ZQEBTiIDAAAAACUAAABBIGxvY2FsaXplZCBkZXNjcmlwdGlvbiBvZiB0aGUgZXZlbnQuAC4ARE4iAAAA" +
-           "Ff////8BAf////8AAAAANWCJCgIAAAAAAAgAAABTZXZlcml0eQEBTyIDAAAAACEAAABJbmRpY2F0ZXMg" +
-           "aG93IHVyZ2VudCBhbiBldmVudCBpcy4ALgBETyIAAAAF/////wEB/////wAAAAAVYIkKAgAAAAAAEAAA" +
-           "AENvbmRpdGlvbkNsYXNzSWQBAVAiAC4ARFAiAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIAAABD" +
-           "b25kaXRpb25DbGFzc05hbWUBAVEiAC4ARFEiAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0AAABD" +
-           "b25kaXRpb25OYW1lAQFSIgAuAERSIgAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJhbmNo" +
-           "SWQBAVMiAC4ARFMiAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BAVQiAC4ARFQi" +
-           "AAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBAVUiAC8BACMjVSIAAAAV" +
-           "/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQFWIgAuAERWIgAAAAH/////AQH/////AAAAABVg" +
-           "iQoCAAAAAAAHAAAAUXVhbGl0eQEBXiIALwEAKiNeIgAAABP/////AQH/////AQAAABVgiQoCAAAAAAAP" +
-           "AAAAU291cmNlVGltZXN0YW1wAQFfIgAuAERfIgAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwA" +
-           "AABMYXN0U2V2ZXJpdHkBAWAiAC8BACojYCIAAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNv" +
-           "dXJjZVRpbWVzdGFtcAEBYSIALgBEYSIAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQ29t" +
-           "bWVudAEBYiIALwEAKiNiIgAAABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0" +
-           "YW1wAQFjIgAuAERjIgAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQB" +
-           "AWQiAC4ARGQiAAAADP////8BAf////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQFlIgAvAQBEI2Ui" +
-           "AAABAQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAYAAABFbmFibGUBAWYiAC8BAEMjZiIAAAEBAQAA" +
-           "AAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAACgAAAEFkZENvbW1lbnQBAWciAC8BAEUjZyIAAAEBAQAAAAEA" +
-           "+QsAAQANCwEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFoIgAuAERoIgAAlgIAAAABACoB" +
-           "AUYAAAAHAAAARXZlbnRJZAAP/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2" +
-           "ZW50IHRvIGNvbW1lbnQuAQAqAQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhlIGNv" +
-           "bW1lbnQgdG8gYWRkIHRvIHRoZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAABAA4A" +
-           "AABNVEN1cnJlbnRTdGF0ZQEBayIALwA/ayIAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAEFj" +
-           "dGl2ZVN0YXRlAQFsIgAvAQAjI2wiAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBbSIA" +
-           "LgBEbSIAAAAB/////wEB/////wAAAAA=";
+           "HQAAAFBvc2l0aW9uQ29uZGl0aW9uVHlwZUluc3RhbmNlAQFGIgEBRiL/////GAAAABVgiQoCAAAAAAAH" +
+           "AAAARXZlbnRJZAEBRyIALgBERyIAAAAP/////wEB/////wAAAAAVYIkKAgAAAAAACQAAAEV2ZW50VHlw" +
+           "ZQEBSCIALgBESCIAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBAUkiAC4A" +
+           "REkiAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQFKIgAuAERKIgAAAAz/" +
+           "////AQH/////AAAAABVgiQoCAAAAAAAEAAAAVGltZQEBSyIALgBESyIAAAEAJgH/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUBAUwiAC4AREwiAAABACYB/////wEB/////wAAAAAVYIkK" +
+           "AgAAAAAACQAAAExvY2FsVGltZQEBTSIALgBETSIAAAEA0CL/////AQH/////AAAAABVgiQoCAAAAAAAH" +
+           "AAAATWVzc2FnZQEBTiIALgBETiIAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAFNldmVyaXR5" +
+           "AQFPIgAuAERPIgAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAQ29uZGl0aW9uQ2xhc3NJZAEB" +
+           "UCIALgBEUCIAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAENvbmRpdGlvbkNsYXNzTmFtZQEB" +
+           "USIALgBEUSIAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAENvbmRpdGlvbk5hbWUBAVIiAC4A" +
+           "RFIiAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFuY2hJZAEBUyIALgBEUyIAAAAR////" +
+           "/wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBVCIALgBEVCIAAAAB/////wEB/////wAAAAAV" +
+           "YIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBVSIALwEAIyNVIgAAABX/////AQH/////AQAAABVgiQoC" +
+           "AAAAAAACAAAASWQBAVYiAC4ARFYiAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABRdWFsaXR5" +
+           "AQFeIgAvAQAqI14iAAAAE/////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXAB" +
+           "AV8iAC4ARF8iAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAExhc3RTZXZlcml0eQEBYCIA" +
+           "LwEAKiNgIgAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQFhIgAu" +
+           "AERhIgAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABDb21tZW50AQFiIgAvAQAqI2IiAAAA" +
+           "Ff////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAWMiAC4ARGMiAAABACYB" +
+           "/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJZAEBZCIALgBEZCIAAAAM/////wEB" +
+           "/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAWUiAC8BAEQjZSIAAAEBAQAAAAEA+QsAAQDzCgAA" +
+           "AAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBZiIALwEAQyNmIgAAAQEBAAAAAQD5CwABAPMKAAAAAARhggoE" +
+           "AAAAAAAKAAAAQWRkQ29tbWVudAEBZyIALwEARSNnIgAAAQEBAAAAAQD5CwABAA0LAQAAABVgqQoCAAAA" +
+           "AAAOAAAASW5wdXRBcmd1bWVudHMBAWgiAC4ARGgiAACWAgAAAAEAKgEBRgAAAAcAAABFdmVudElkAA//" +
+           "////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdG8gY29tbWVudC4BACoB" +
+           "AUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUgY29tbWVudCB0byBhZGQgdG8gdGhl" +
+           "IGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEADgAAAE1UQ3VycmVudFN0YXRlAQFr" +
+           "IgAvAD9rIgAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAAQWN0aXZlU3RhdGUBAWwiAC8BACMj" +
+           "bCIAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQFtIgAuAERtIgAAAAH/////AQH/////" +
+           "AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -12195,6 +13143,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -12205,44 +13162,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "IQAAAFBvd2VyX0ZhY3RvckNvbmRpdGlvblR5cGVJbnN0YW5jZQEBgyIBAYMi/////xgAAAA1YIkKAgAA" +
-           "AAAABwAAAEV2ZW50SWQBAYQiAwAAAAArAAAAQSBnbG9iYWxseSB1bmlxdWUgaWRlbnRpZmllciBmb3Ig" +
-           "dGhlIGV2ZW50LgAuAESEIgAAAA//////AQH/////AAAAADVgiQoCAAAAAAAJAAAARXZlbnRUeXBlAQGF" +
-           "IgMAAAAAIgAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdHlwZS4ALgBEhSIAAAAR/////wEB" +
-           "/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBAYYiAwAAAAAYAAAAVGhlIHNvdXJjZSBvZiB0" +
-           "aGUgZXZlbnQuAC4ARIYiAAAAEf////8BAf////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQGH" +
-           "IgMAAAAAKQAAAEEgZGVzY3JpcHRpb24gb2YgdGhlIHNvdXJjZSBvZiB0aGUgZXZlbnQuAC4ARIciAAAA" +
-           "DP////8BAf////8AAAAANWCJCgIAAAAAAAQAAABUaW1lAQGIIgMAAAAAGAAAAFdoZW4gdGhlIGV2ZW50" +
-           "IG9jY3VycmVkLgAuAESIIgAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAsAAABSZWNlaXZlVGlt" +
-           "ZQEBiSIDAAAAAD4AAABXaGVuIHRoZSBzZXJ2ZXIgcmVjZWl2ZWQgdGhlIGV2ZW50IGZyb20gdGhlIHVu" +
-           "ZGVybHlpbmcgc3lzdGVtLgAuAESJIgAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAkAAABMb2Nh" +
-           "bFRpbWUBAYoiAwAAAAA8AAAASW5mb3JtYXRpb24gYWJvdXQgdGhlIGxvY2FsIHRpbWUgd2hlcmUgdGhl" +
-           "IGV2ZW50IG9yaWdpbmF0ZWQuAC4ARIoiAAABANAi/////wEB/////wAAAAA1YIkKAgAAAAAABwAAAE1l" +
-           "c3NhZ2UBAYsiAwAAAAAlAAAAQSBsb2NhbGl6ZWQgZGVzY3JpcHRpb24gb2YgdGhlIGV2ZW50LgAuAESL" +
-           "IgAAABX/////AQH/////AAAAADVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkBAYwiAwAAAAAhAAAASW5kaWNh" +
-           "dGVzIGhvdyB1cmdlbnQgYW4gZXZlbnQgaXMuAC4ARIwiAAAABf////8BAf////8AAAAAFWCJCgIAAAAA" +
-           "ABAAAABDb25kaXRpb25DbGFzc0lkAQGNIgAuAESNIgAAABH/////AQH/////AAAAABVgiQoCAAAAAAAS" +
-           "AAAAQ29uZGl0aW9uQ2xhc3NOYW1lAQGOIgAuAESOIgAAABX/////AQH/////AAAAABVgiQoCAAAAAAAN" +
-           "AAAAQ29uZGl0aW9uTmFtZQEBjyIALgBEjyIAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJy" +
-           "YW5jaElkAQGQIgAuAESQIgAAABH/////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQGRIgAu" +
-           "AESRIgAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQGSIgAvAQAjI5Ii" +
-           "AAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBkyIALgBEkyIAAAAB/////wEB/////wAA" +
-           "AAAVYIkKAgAAAAAABwAAAFF1YWxpdHkBAZsiAC8BACojmyIAAAAT/////wEB/////wEAAAAVYIkKAgAA" +
-           "AAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBnCIALgBEnCIAAAEAJgH/////AQH/////AAAAABVgiQoCAAAA" +
-           "AAAMAAAATGFzdFNldmVyaXR5AQGdIgAvAQAqI50iAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8A" +
-           "AABTb3VyY2VUaW1lc3RhbXABAZ4iAC4ARJ4iAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAA" +
-           "AENvbW1lbnQBAZ8iAC8BACojnyIAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRp" +
-           "bWVzdGFtcAEBoCIALgBEoCIAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNl" +
-           "cklkAQGhIgAuAEShIgAAAAz/////AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBoiIALwEA" +
-           "RCOiIgAAAQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQGjIgAvAQBDI6MiAAAB" +
-           "AQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAoAAABBZGRDb21tZW50AQGkIgAvAQBFI6QiAAABAQEA" +
-           "AAABAPkLAAEADQsBAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBpSIALgBEpSIAAJYCAAAA" +
-           "AQAqAQFGAAAABwAAAEV2ZW50SWQAD/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRo" +
-           "ZSBldmVudCB0byBjb21tZW50LgEAKgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRo" +
-           "ZSBjb21tZW50IHRvIGFkZCB0byB0aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAA" +
-           "AQAOAAAATVRDdXJyZW50U3RhdGUBAagiAC8AP6giAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsA" +
-           "AABBY3RpdmVTdGF0ZQEBqSIALwEAIyOpIgAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQB" +
-           "AaoiAC4ARKoiAAAAAf////8BAf////8AAAAA";
+           "IQAAAFBvd2VyX0ZhY3RvckNvbmRpdGlvblR5cGVJbnN0YW5jZQEBgyIBAYMi/////xgAAAAVYIkKAgAA" +
+           "AAAABwAAAEV2ZW50SWQBAYQiAC4ARIQiAAAAD/////8BAf////8AAAAAFWCJCgIAAAAAAAkAAABFdmVu" +
+           "dFR5cGUBAYUiAC4ARIUiAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQGG" +
+           "IgAuAESGIgAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEBhyIALgBEhyIA" +
+           "AAAM/////wEB/////wAAAAAVYIkKAgAAAAAABAAAAFRpbWUBAYgiAC4ARIgiAAABACYB/////wEB////" +
+           "/wAAAAAVYIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQGJIgAuAESJIgAAAQAmAf////8BAf////8AAAAA" +
+           "FWCJCgIAAAAAAAkAAABMb2NhbFRpbWUBAYoiAC4ARIoiAAABANAi/////wEB/////wAAAAAVYIkKAgAA" +
+           "AAAABwAAAE1lc3NhZ2UBAYsiAC4ARIsiAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABTZXZl" +
+           "cml0eQEBjCIALgBEjCIAAAAF/////wEB/////wAAAAAVYIkKAgAAAAAAEAAAAENvbmRpdGlvbkNsYXNz" +
+           "SWQBAY0iAC4ARI0iAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIAAABDb25kaXRpb25DbGFzc05h" +
+           "bWUBAY4iAC4ARI4iAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0AAABDb25kaXRpb25OYW1lAQGP" +
+           "IgAuAESPIgAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJhbmNoSWQBAZAiAC4ARJAiAAAA" +
+           "Ef////8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BAZEiAC4ARJEiAAAAAf////8BAf////8A" +
+           "AAAAFWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBAZIiAC8BACMjkiIAAAAV/////wEB/////wEAAAAV" +
+           "YIkKAgAAAAAAAgAAAElkAQGTIgAuAESTIgAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAUXVh" +
+           "bGl0eQEBmyIALwEAKiObIgAAABP/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0" +
+           "YW1wAQGcIgAuAEScIgAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABMYXN0U2V2ZXJpdHkB" +
+           "AZ0iAC8BACojnSIAAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEB" +
+           "niIALgBEniIAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQ29tbWVudAEBnyIALwEAKiOf" +
+           "IgAAABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQGgIgAuAESgIgAA" +
+           "AQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQBAaEiAC4ARKEiAAAADP//" +
+           "//8BAf////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQGiIgAvAQBEI6IiAAABAQEAAAABAPkLAAEA" +
+           "8woAAAAABGGCCgQAAAAAAAYAAABFbmFibGUBAaMiAC8BAEMjoyIAAAEBAQAAAAEA+QsAAQDzCgAAAAAE" +
+           "YYIKBAAAAAAACgAAAEFkZENvbW1lbnQBAaQiAC8BAEUjpCIAAAEBAQAAAAEA+QsAAQANCwEAAAAVYKkK" +
+           "AgAAAAAADgAAAElucHV0QXJndW1lbnRzAQGlIgAuAESlIgAAlgIAAAABACoBAUYAAAAHAAAARXZlbnRJ" +
+           "ZAAP/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHRvIGNvbW1lbnQu" +
+           "AQAqAQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhlIGNvbW1lbnQgdG8gYWRkIHRv" +
+           "IHRoZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAABAA4AAABNVEN1cnJlbnRTdGF0" +
+           "ZQEBqCIALwA/qCIAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAEFjdGl2ZVN0YXRlAQGpIgAv" +
+           "AQAjI6kiAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBqiIALgBEqiIAAAAB/////wEB" +
+           "/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -12295,6 +13245,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -12305,44 +13264,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "HQAAAFByZXNzdXJlQ29uZGl0aW9uVHlwZUluc3RhbmNlAQHAIgEBwCL/////GAAAADVgiQoCAAAAAAAH" +
-           "AAAARXZlbnRJZAEBwSIDAAAAACsAAABBIGdsb2JhbGx5IHVuaXF1ZSBpZGVudGlmaWVyIGZvciB0aGUg" +
-           "ZXZlbnQuAC4ARMEiAAAAD/////8BAf////8AAAAANWCJCgIAAAAAAAkAAABFdmVudFR5cGUBAcIiAwAA" +
-           "AAAiAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0eXBlLgAuAETCIgAAABH/////AQH/////" +
-           "AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBwyIDAAAAABgAAABUaGUgc291cmNlIG9mIHRoZSBl" +
-           "dmVudC4ALgBEwyIAAAAR/////wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBAcQiAwAA" +
-           "AAApAAAAQSBkZXNjcmlwdGlvbiBvZiB0aGUgc291cmNlIG9mIHRoZSBldmVudC4ALgBExCIAAAAM////" +
-           "/wEB/////wAAAAA1YIkKAgAAAAAABAAAAFRpbWUBAcUiAwAAAAAYAAAAV2hlbiB0aGUgZXZlbnQgb2Nj" +
-           "dXJyZWQuAC4ARMUiAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQHG" +
-           "IgMAAAAAPgAAAFdoZW4gdGhlIHNlcnZlciByZWNlaXZlZCB0aGUgZXZlbnQgZnJvbSB0aGUgdW5kZXJs" +
-           "eWluZyBzeXN0ZW0uAC4ARMYiAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAExvY2FsVGlt" +
-           "ZQEBxyIDAAAAADwAAABJbmZvcm1hdGlvbiBhYm91dCB0aGUgbG9jYWwgdGltZSB3aGVyZSB0aGUgZXZl" +
-           "bnQgb3JpZ2luYXRlZC4ALgBExyIAAAEA0CL/////AQH/////AAAAADVgiQoCAAAAAAAHAAAATWVzc2Fn" +
-           "ZQEByCIDAAAAACUAAABBIGxvY2FsaXplZCBkZXNjcmlwdGlvbiBvZiB0aGUgZXZlbnQuAC4ARMgiAAAA" +
-           "Ff////8BAf////8AAAAANWCJCgIAAAAAAAgAAABTZXZlcml0eQEBySIDAAAAACEAAABJbmRpY2F0ZXMg" +
-           "aG93IHVyZ2VudCBhbiBldmVudCBpcy4ALgBEySIAAAAF/////wEB/////wAAAAAVYIkKAgAAAAAAEAAA" +
-           "AENvbmRpdGlvbkNsYXNzSWQBAcoiAC4ARMoiAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIAAABD" +
-           "b25kaXRpb25DbGFzc05hbWUBAcsiAC4ARMsiAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0AAABD" +
-           "b25kaXRpb25OYW1lAQHMIgAuAETMIgAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJhbmNo" +
-           "SWQBAc0iAC4ARM0iAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BAc4iAC4ARM4i" +
-           "AAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBAc8iAC8BACMjzyIAAAAV" +
-           "/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQHQIgAuAETQIgAAAAH/////AQH/////AAAAABVg" +
-           "iQoCAAAAAAAHAAAAUXVhbGl0eQEB2CIALwEAKiPYIgAAABP/////AQH/////AQAAABVgiQoCAAAAAAAP" +
-           "AAAAU291cmNlVGltZXN0YW1wAQHZIgAuAETZIgAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwA" +
-           "AABMYXN0U2V2ZXJpdHkBAdoiAC8BACoj2iIAAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNv" +
-           "dXJjZVRpbWVzdGFtcAEB2yIALgBE2yIAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQ29t" +
-           "bWVudAEB3CIALwEAKiPcIgAAABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0" +
-           "YW1wAQHdIgAuAETdIgAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQB" +
-           "Ad4iAC4ARN4iAAAADP////8BAf////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQHfIgAvAQBEI98i" +
-           "AAABAQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAYAAABFbmFibGUBAeAiAC8BAEMj4CIAAAEBAQAA" +
-           "AAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAACgAAAEFkZENvbW1lbnQBAeEiAC8BAEUj4SIAAAEBAQAAAAEA" +
-           "+QsAAQANCwEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQHiIgAuAETiIgAAlgIAAAABACoB" +
-           "AUYAAAAHAAAARXZlbnRJZAAP/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2" +
-           "ZW50IHRvIGNvbW1lbnQuAQAqAQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhlIGNv" +
-           "bW1lbnQgdG8gYWRkIHRvIHRoZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAABAA4A" +
-           "AABNVEN1cnJlbnRTdGF0ZQEB5SIALwA/5SIAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAEFj" +
-           "dGl2ZVN0YXRlAQHmIgAvAQAjI+YiAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEB5yIA" +
-           "LgBE5yIAAAAB/////wEB/////wAAAAA=";
+           "HQAAAFByZXNzdXJlQ29uZGl0aW9uVHlwZUluc3RhbmNlAQHAIgEBwCL/////GAAAABVgiQoCAAAAAAAH" +
+           "AAAARXZlbnRJZAEBwSIALgBEwSIAAAAP/////wEB/////wAAAAAVYIkKAgAAAAAACQAAAEV2ZW50VHlw" +
+           "ZQEBwiIALgBEwiIAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBAcMiAC4A" +
+           "RMMiAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQHEIgAuAETEIgAAAAz/" +
+           "////AQH/////AAAAABVgiQoCAAAAAAAEAAAAVGltZQEBxSIALgBExSIAAAEAJgH/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUBAcYiAC4ARMYiAAABACYB/////wEB/////wAAAAAVYIkK" +
+           "AgAAAAAACQAAAExvY2FsVGltZQEBxyIALgBExyIAAAEA0CL/////AQH/////AAAAABVgiQoCAAAAAAAH" +
+           "AAAATWVzc2FnZQEByCIALgBEyCIAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAFNldmVyaXR5" +
+           "AQHJIgAuAETJIgAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAQ29uZGl0aW9uQ2xhc3NJZAEB" +
+           "yiIALgBEyiIAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAENvbmRpdGlvbkNsYXNzTmFtZQEB" +
+           "yyIALgBEyyIAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAENvbmRpdGlvbk5hbWUBAcwiAC4A" +
+           "RMwiAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFuY2hJZAEBzSIALgBEzSIAAAAR////" +
+           "/wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBziIALgBEziIAAAAB/////wEB/////wAAAAAV" +
+           "YIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBzyIALwEAIyPPIgAAABX/////AQH/////AQAAABVgiQoC" +
+           "AAAAAAACAAAASWQBAdAiAC4ARNAiAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABRdWFsaXR5" +
+           "AQHYIgAvAQAqI9giAAAAE/////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXAB" +
+           "AdkiAC4ARNkiAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAExhc3RTZXZlcml0eQEB2iIA" +
+           "LwEAKiPaIgAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQHbIgAu" +
+           "AETbIgAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABDb21tZW50AQHcIgAvAQAqI9wiAAAA" +
+           "Ff////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAd0iAC4ARN0iAAABACYB" +
+           "/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJZAEB3iIALgBE3iIAAAAM/////wEB" +
+           "/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAd8iAC8BAEQj3yIAAAEBAQAAAAEA+QsAAQDzCgAA" +
+           "AAAEYYIKBAAAAAAABgAAAEVuYWJsZQEB4CIALwEAQyPgIgAAAQEBAAAAAQD5CwABAPMKAAAAAARhggoE" +
+           "AAAAAAAKAAAAQWRkQ29tbWVudAEB4SIALwEARSPhIgAAAQEBAAAAAQD5CwABAA0LAQAAABVgqQoCAAAA" +
+           "AAAOAAAASW5wdXRBcmd1bWVudHMBAeIiAC4AROIiAACWAgAAAAEAKgEBRgAAAAcAAABFdmVudElkAA//" +
+           "////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdG8gY29tbWVudC4BACoB" +
+           "AUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUgY29tbWVudCB0byBhZGQgdG8gdGhl" +
+           "IGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEADgAAAE1UQ3VycmVudFN0YXRlAQHl" +
+           "IgAvAD/lIgAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAAQWN0aXZlU3RhdGUBAeYiAC8BACMj" +
+           "5iIAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQHnIgAuAETnIgAAAAH/////AQH/////" +
+           "AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -12395,6 +13347,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -12405,44 +13366,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "HwAAAFJlc2lzdGFuY2VDb25kaXRpb25UeXBlSW5zdGFuY2UBAf0iAQH9Iv////8YAAAANWCJCgIAAAAA" +
-           "AAcAAABFdmVudElkAQH+IgMAAAAAKwAAAEEgZ2xvYmFsbHkgdW5pcXVlIGlkZW50aWZpZXIgZm9yIHRo" +
-           "ZSBldmVudC4ALgBE/iIAAAAP/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAEV2ZW50VHlwZQEB/yID" +
-           "AAAAACIAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHR5cGUuAC4ARP8iAAAAEf////8BAf//" +
-           "//8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQEAIwMAAAAAGAAAAFRoZSBzb3VyY2Ugb2YgdGhl" +
-           "IGV2ZW50LgAuAEQAIwAAABH/////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEBASMD" +
-           "AAAAACkAAABBIGRlc2NyaXB0aW9uIG9mIHRoZSBzb3VyY2Ugb2YgdGhlIGV2ZW50LgAuAEQBIwAAAAz/" +
-           "////AQH/////AAAAADVgiQoCAAAAAAAEAAAAVGltZQEBAiMDAAAAABgAAABXaGVuIHRoZSBldmVudCBv" +
-           "Y2N1cnJlZC4ALgBEAiMAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUB" +
-           "AQMjAwAAAAA+AAAAV2hlbiB0aGUgc2VydmVyIHJlY2VpdmVkIHRoZSBldmVudCBmcm9tIHRoZSB1bmRl" +
-           "cmx5aW5nIHN5c3RlbS4ALgBEAyMAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAAJAAAATG9jYWxU" +
-           "aW1lAQEEIwMAAAAAPAAAAEluZm9ybWF0aW9uIGFib3V0IHRoZSBsb2NhbCB0aW1lIHdoZXJlIHRoZSBl" +
-           "dmVudCBvcmlnaW5hdGVkLgAuAEQEIwAAAQDQIv////8BAf////8AAAAANWCJCgIAAAAAAAcAAABNZXNz" +
-           "YWdlAQEFIwMAAAAAJQAAAEEgbG9jYWxpemVkIGRlc2NyaXB0aW9uIG9mIHRoZSBldmVudC4ALgBEBSMA" +
-           "AAAV/////wEB/////wAAAAA1YIkKAgAAAAAACAAAAFNldmVyaXR5AQEGIwMAAAAAIQAAAEluZGljYXRl" +
-           "cyBob3cgdXJnZW50IGFuIGV2ZW50IGlzLgAuAEQGIwAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQ" +
-           "AAAAQ29uZGl0aW9uQ2xhc3NJZAEBByMALgBEByMAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAA" +
-           "AENvbmRpdGlvbkNsYXNzTmFtZQEBCCMALgBECCMAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAA" +
-           "AENvbmRpdGlvbk5hbWUBAQkjAC4ARAkjAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFu" +
-           "Y2hJZAEBCiMALgBECiMAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBCyMALgBE" +
-           "CyMAAAAB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBDCMALwEAIyMMIwAA" +
-           "ABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAQ0jAC4ARA0jAAAAAf////8BAf////8AAAAA" +
-           "FWCJCgIAAAAAAAcAAABRdWFsaXR5AQEVIwAvAQAqIxUjAAAAE/////8BAf////8BAAAAFWCJCgIAAAAA" +
-           "AA8AAABTb3VyY2VUaW1lc3RhbXABARYjAC4ARBYjAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "DAAAAExhc3RTZXZlcml0eQEBFyMALwEAKiMXIwAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAA" +
-           "U291cmNlVGltZXN0YW1wAQEYIwAuAEQYIwAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABD" +
-           "b21tZW50AQEZIwAvAQAqIxkjAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1l" +
-           "c3RhbXABARojAC4ARBojAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJ" +
-           "ZAEBGyMALgBEGyMAAAAM/////wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBARwjAC8BAEQj" +
-           "HCMAAAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBHSMALwEAQyMdIwAAAQEB" +
-           "AAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAKAAAAQWRkQ29tbWVudAEBHiMALwEARSMeIwAAAQEBAAAA" +
-           "AQD5CwABAA0LAQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAR8jAC4ARB8jAACWAgAAAAEA" +
-           "KgEBRgAAAAcAAABFdmVudElkAA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUg" +
-           "ZXZlbnQgdG8gY29tbWVudC4BACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUg" +
-           "Y29tbWVudCB0byBhZGQgdG8gdGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEA" +
-           "DgAAAE1UQ3VycmVudFN0YXRlAQEiIwAvAD8iIwAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAA" +
-           "QWN0aXZlU3RhdGUBASMjAC8BACMjIyMAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQEk" +
-           "IwAuAEQkIwAAAAH/////AQH/////AAAAAA==";
+           "HwAAAFJlc2lzdGFuY2VDb25kaXRpb25UeXBlSW5zdGFuY2UBAf0iAQH9Iv////8YAAAAFWCJCgIAAAAA" +
+           "AAcAAABFdmVudElkAQH+IgAuAET+IgAAAA//////AQH/////AAAAABVgiQoCAAAAAAAJAAAARXZlbnRU" +
+           "eXBlAQH/IgAuAET/IgAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBACMA" +
+           "LgBEACMAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBAQEjAC4ARAEjAAAA" +
+           "DP////8BAf////8AAAAAFWCJCgIAAAAAAAQAAABUaW1lAQECIwAuAEQCIwAAAQAmAf////8BAf////8A" +
+           "AAAAFWCJCgIAAAAAAAsAAABSZWNlaXZlVGltZQEBAyMALgBEAyMAAAEAJgH/////AQH/////AAAAABVg" +
+           "iQoCAAAAAAAJAAAATG9jYWxUaW1lAQEEIwAuAEQEIwAAAQDQIv////8BAf////8AAAAAFWCJCgIAAAAA" +
+           "AAcAAABNZXNzYWdlAQEFIwAuAEQFIwAAABX/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAU2V2ZXJp" +
+           "dHkBAQYjAC4ARAYjAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAAAABDb25kaXRpb25DbGFzc0lk" +
+           "AQEHIwAuAEQHIwAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAAQ29uZGl0aW9uQ2xhc3NOYW1l" +
+           "AQEIIwAuAEQIIwAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAAQ29uZGl0aW9uTmFtZQEBCSMA" +
+           "LgBECSMAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5jaElkAQEKIwAuAEQKIwAAABH/" +
+           "////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQELIwAuAEQLIwAAAAH/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQEMIwAvAQAjIwwjAAAAFf////8BAf////8BAAAAFWCJ" +
+           "CgIAAAAAAAIAAABJZAEBDSMALgBEDSMAAAAB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAFF1YWxp" +
+           "dHkBARUjAC8BACojFSMAAAAT/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFt" +
+           "cAEBFiMALgBEFiMAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAATGFzdFNldmVyaXR5AQEX" +
+           "IwAvAQAqIxcjAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABARgj" +
+           "AC4ARBgjAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENvbW1lbnQBARkjAC8BACojGSMA" +
+           "AAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBGiMALgBEGiMAAAEA" +
+           "JgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklkAQEbIwAuAEQbIwAAAAz/////" +
+           "AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBHCMALwEARCMcIwAAAQEBAAAAAQD5CwABAPMK" +
+           "AAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQEdIwAvAQBDIx0jAAABAQEAAAABAPkLAAEA8woAAAAABGGC" +
+           "CgQAAAAAAAoAAABBZGRDb21tZW50AQEeIwAvAQBFIx4jAAABAQEAAAABAPkLAAEADQsBAAAAFWCpCgIA" +
+           "AAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBHyMALgBEHyMAAJYCAAAAAQAqAQFGAAAABwAAAEV2ZW50SWQA" +
+           "D/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0byBjb21tZW50LgEA" +
+           "KgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBjb21tZW50IHRvIGFkZCB0byB0" +
+           "aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAOAAAATVRDdXJyZW50U3RhdGUB" +
+           "ASIjAC8APyIjAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABBY3RpdmVTdGF0ZQEBIyMALwEA" +
+           "IyMjIwAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBASQjAC4ARCQjAAAAAf////8BAf//" +
+           "//8AAAAA";
         #endregion
         #endif
         #endregion
@@ -12495,6 +13449,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -12505,44 +13468,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "JAAAAFJvdGFyeV9WZWxvY2l0eUNvbmRpdGlvblR5cGVJbnN0YW5jZQEBOiMBAToj/////xgAAAA1YIkK" +
-           "AgAAAAAABwAAAEV2ZW50SWQBATsjAwAAAAArAAAAQSBnbG9iYWxseSB1bmlxdWUgaWRlbnRpZmllciBm" +
-           "b3IgdGhlIGV2ZW50LgAuAEQ7IwAAAA//////AQH/////AAAAADVgiQoCAAAAAAAJAAAARXZlbnRUeXBl" +
-           "AQE8IwMAAAAAIgAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdHlwZS4ALgBEPCMAAAAR////" +
-           "/wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBAT0jAwAAAAAYAAAAVGhlIHNvdXJjZSBv" +
-           "ZiB0aGUgZXZlbnQuAC4ARD0jAAAAEf////8BAf////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOYW1l" +
-           "AQE+IwMAAAAAKQAAAEEgZGVzY3JpcHRpb24gb2YgdGhlIHNvdXJjZSBvZiB0aGUgZXZlbnQuAC4ARD4j" +
-           "AAAADP////8BAf////8AAAAANWCJCgIAAAAAAAQAAABUaW1lAQE/IwMAAAAAGAAAAFdoZW4gdGhlIGV2" +
-           "ZW50IG9jY3VycmVkLgAuAEQ/IwAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAsAAABSZWNlaXZl" +
-           "VGltZQEBQCMDAAAAAD4AAABXaGVuIHRoZSBzZXJ2ZXIgcmVjZWl2ZWQgdGhlIGV2ZW50IGZyb20gdGhl" +
-           "IHVuZGVybHlpbmcgc3lzdGVtLgAuAERAIwAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAkAAABM" +
-           "b2NhbFRpbWUBAUEjAwAAAAA8AAAASW5mb3JtYXRpb24gYWJvdXQgdGhlIGxvY2FsIHRpbWUgd2hlcmUg" +
-           "dGhlIGV2ZW50IG9yaWdpbmF0ZWQuAC4AREEjAAABANAi/////wEB/////wAAAAA1YIkKAgAAAAAABwAA" +
-           "AE1lc3NhZ2UBAUIjAwAAAAAlAAAAQSBsb2NhbGl6ZWQgZGVzY3JpcHRpb24gb2YgdGhlIGV2ZW50LgAu" +
-           "AERCIwAAABX/////AQH/////AAAAADVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkBAUMjAwAAAAAhAAAASW5k" +
-           "aWNhdGVzIGhvdyB1cmdlbnQgYW4gZXZlbnQgaXMuAC4AREMjAAAABf////8BAf////8AAAAAFWCJCgIA" +
-           "AAAAABAAAABDb25kaXRpb25DbGFzc0lkAQFEIwAuAEREIwAAABH/////AQH/////AAAAABVgiQoCAAAA" +
-           "AAASAAAAQ29uZGl0aW9uQ2xhc3NOYW1lAQFFIwAuAERFIwAAABX/////AQH/////AAAAABVgiQoCAAAA" +
-           "AAANAAAAQ29uZGl0aW9uTmFtZQEBRiMALgBERiMAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAA" +
-           "AEJyYW5jaElkAQFHIwAuAERHIwAAABH/////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQFI" +
-           "IwAuAERIIwAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQFJIwAvAQAj" +
-           "I0kjAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBSiMALgBESiMAAAAB/////wEB////" +
-           "/wAAAAAVYIkKAgAAAAAABwAAAFF1YWxpdHkBAVIjAC8BACojUiMAAAAT/////wEB/////wEAAAAVYIkK" +
-           "AgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBUyMALgBEUyMAAAEAJgH/////AQH/////AAAAABVgiQoC" +
-           "AAAAAAAMAAAATGFzdFNldmVyaXR5AQFUIwAvAQAqI1QjAAAABf////8BAf////8BAAAAFWCJCgIAAAAA" +
-           "AA8AAABTb3VyY2VUaW1lc3RhbXABAVUjAC4ARFUjAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "BwAAAENvbW1lbnQBAVYjAC8BACojViMAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJj" +
-           "ZVRpbWVzdGFtcAEBVyMALgBEVyMAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50" +
-           "VXNlcklkAQFYIwAuAERYIwAAAAz/////AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBWSMA" +
-           "LwEARCNZIwAAAQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQFaIwAvAQBDI1oj" +
-           "AAABAQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAoAAABBZGRDb21tZW50AQFbIwAvAQBFI1sjAAAB" +
-           "AQEAAAABAPkLAAEADQsBAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBXCMALgBEXCMAAJYC" +
-           "AAAAAQAqAQFGAAAABwAAAEV2ZW50SWQAD/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9y" +
-           "IHRoZSBldmVudCB0byBjb21tZW50LgEAKgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAA" +
-           "AFRoZSBjb21tZW50IHRvIGFkZCB0byB0aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoC" +
-           "AAAAAQAOAAAATVRDdXJyZW50U3RhdGUBAV8jAC8AP18jAAAADP////8BAf////8AAAAAFWCJCgIAAAAB" +
-           "AAsAAABBY3RpdmVTdGF0ZQEBYCMALwEAIyNgIwAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAA" +
-           "SWQBAWEjAC4ARGEjAAAAAf////8BAf////8AAAAA";
+           "JAAAAFJvdGFyeV9WZWxvY2l0eUNvbmRpdGlvblR5cGVJbnN0YW5jZQEBOiMBAToj/////xgAAAAVYIkK" +
+           "AgAAAAAABwAAAEV2ZW50SWQBATsjAC4ARDsjAAAAD/////8BAf////8AAAAAFWCJCgIAAAAAAAkAAABF" +
+           "dmVudFR5cGUBATwjAC4ARDwjAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOb2Rl" +
+           "AQE9IwAuAEQ9IwAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEBPiMALgBE" +
+           "PiMAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAABAAAAFRpbWUBAT8jAC4ARD8jAAABACYB/////wEB" +
+           "/////wAAAAAVYIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQFAIwAuAERAIwAAAQAmAf////8BAf////8A" +
+           "AAAAFWCJCgIAAAAAAAkAAABMb2NhbFRpbWUBAUEjAC4AREEjAAABANAi/////wEB/////wAAAAAVYIkK" +
+           "AgAAAAAABwAAAE1lc3NhZ2UBAUIjAC4AREIjAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABT" +
+           "ZXZlcml0eQEBQyMALgBEQyMAAAAF/////wEB/////wAAAAAVYIkKAgAAAAAAEAAAAENvbmRpdGlvbkNs" +
+           "YXNzSWQBAUQjAC4AREQjAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIAAABDb25kaXRpb25DbGFz" +
+           "c05hbWUBAUUjAC4AREUjAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0AAABDb25kaXRpb25OYW1l" +
+           "AQFGIwAuAERGIwAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJhbmNoSWQBAUcjAC4AREcj" +
+           "AAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BAUgjAC4AREgjAAAAAf////8BAf//" +
+           "//8AAAAAFWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBAUkjAC8BACMjSSMAAAAV/////wEB/////wEA" +
+           "AAAVYIkKAgAAAAAAAgAAAElkAQFKIwAuAERKIwAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAA" +
+           "UXVhbGl0eQEBUiMALwEAKiNSIwAAABP/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGlt" +
+           "ZXN0YW1wAQFTIwAuAERTIwAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABMYXN0U2V2ZXJp" +
+           "dHkBAVQjAC8BACojVCMAAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFt" +
+           "cAEBVSMALgBEVSMAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQ29tbWVudAEBViMALwEA" +
+           "KiNWIwAAABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQFXIwAuAERX" +
+           "IwAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQBAVgjAC4ARFgjAAAA" +
+           "DP////8BAf////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQFZIwAvAQBEI1kjAAABAQEAAAABAPkL" +
+           "AAEA8woAAAAABGGCCgQAAAAAAAYAAABFbmFibGUBAVojAC8BAEMjWiMAAAEBAQAAAAEA+QsAAQDzCgAA" +
+           "AAAEYYIKBAAAAAAACgAAAEFkZENvbW1lbnQBAVsjAC8BAEUjWyMAAAEBAQAAAAEA+QsAAQANCwEAAAAV" +
+           "YKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFcIwAuAERcIwAAlgIAAAABACoBAUYAAAAHAAAARXZl" +
+           "bnRJZAAP/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHRvIGNvbW1l" +
+           "bnQuAQAqAQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhlIGNvbW1lbnQgdG8gYWRk" +
+           "IHRvIHRoZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAABAA4AAABNVEN1cnJlbnRT" +
+           "dGF0ZQEBXyMALwA/XyMAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAEFjdGl2ZVN0YXRlAQFg" +
+           "IwAvAQAjI2AjAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBYSMALgBEYSMAAAAB////" +
+           "/wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -12595,6 +13551,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -12605,44 +13570,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "IAAAAFNvdW5kX0xldmVsQ29uZGl0aW9uVHlwZUluc3RhbmNlAQF3IwEBdyP/////GAAAADVgiQoCAAAA" +
-           "AAAHAAAARXZlbnRJZAEBeCMDAAAAACsAAABBIGdsb2JhbGx5IHVuaXF1ZSBpZGVudGlmaWVyIGZvciB0" +
-           "aGUgZXZlbnQuAC4ARHgjAAAAD/////8BAf////8AAAAANWCJCgIAAAAAAAkAAABFdmVudFR5cGUBAXkj" +
-           "AwAAAAAiAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0eXBlLgAuAER5IwAAABH/////AQH/" +
-           "////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBeiMDAAAAABgAAABUaGUgc291cmNlIG9mIHRo" +
-           "ZSBldmVudC4ALgBEeiMAAAAR/////wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBAXsj" +
-           "AwAAAAApAAAAQSBkZXNjcmlwdGlvbiBvZiB0aGUgc291cmNlIG9mIHRoZSBldmVudC4ALgBEeyMAAAAM" +
-           "/////wEB/////wAAAAA1YIkKAgAAAAAABAAAAFRpbWUBAXwjAwAAAAAYAAAAV2hlbiB0aGUgZXZlbnQg" +
-           "b2NjdXJyZWQuAC4ARHwjAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACwAAAFJlY2VpdmVUaW1l" +
-           "AQF9IwMAAAAAPgAAAFdoZW4gdGhlIHNlcnZlciByZWNlaXZlZCB0aGUgZXZlbnQgZnJvbSB0aGUgdW5k" +
-           "ZXJseWluZyBzeXN0ZW0uAC4ARH0jAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAExvY2Fs" +
-           "VGltZQEBfiMDAAAAADwAAABJbmZvcm1hdGlvbiBhYm91dCB0aGUgbG9jYWwgdGltZSB3aGVyZSB0aGUg" +
-           "ZXZlbnQgb3JpZ2luYXRlZC4ALgBEfiMAAAEA0CL/////AQH/////AAAAADVgiQoCAAAAAAAHAAAATWVz" +
-           "c2FnZQEBfyMDAAAAACUAAABBIGxvY2FsaXplZCBkZXNjcmlwdGlvbiBvZiB0aGUgZXZlbnQuAC4ARH8j" +
-           "AAAAFf////8BAf////8AAAAANWCJCgIAAAAAAAgAAABTZXZlcml0eQEBgCMDAAAAACEAAABJbmRpY2F0" +
-           "ZXMgaG93IHVyZ2VudCBhbiBldmVudCBpcy4ALgBEgCMAAAAF/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "EAAAAENvbmRpdGlvbkNsYXNzSWQBAYEjAC4ARIEjAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIA" +
-           "AABDb25kaXRpb25DbGFzc05hbWUBAYIjAC4ARIIjAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0A" +
-           "AABDb25kaXRpb25OYW1lAQGDIwAuAESDIwAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJh" +
-           "bmNoSWQBAYQjAC4ARIQjAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BAYUjAC4A" +
-           "RIUjAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBAYYjAC8BACMjhiMA" +
-           "AAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQGHIwAuAESHIwAAAAH/////AQH/////AAAA" +
-           "ABVgiQoCAAAAAAAHAAAAUXVhbGl0eQEBjyMALwEAKiOPIwAAABP/////AQH/////AQAAABVgiQoCAAAA" +
-           "AAAPAAAAU291cmNlVGltZXN0YW1wAQGQIwAuAESQIwAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAA" +
-           "AAwAAABMYXN0U2V2ZXJpdHkBAZEjAC8BACojkSMAAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAA" +
-           "AFNvdXJjZVRpbWVzdGFtcAEBkiMALgBEkiMAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAA" +
-           "Q29tbWVudAEBkyMALwEAKiOTIwAAABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGlt" +
-           "ZXN0YW1wAQGUIwAuAESUIwAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2Vy" +
-           "SWQBAZUjAC4ARJUjAAAADP////8BAf////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQGWIwAvAQBE" +
-           "I5YjAAABAQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAYAAABFbmFibGUBAZcjAC8BAEMjlyMAAAEB" +
-           "AQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAACgAAAEFkZENvbW1lbnQBAZgjAC8BAEUjmCMAAAEBAQAA" +
-           "AAEA+QsAAQANCwEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQGZIwAuAESZIwAAlgIAAAAB" +
-           "ACoBAUYAAAAHAAAARXZlbnRJZAAP/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhl" +
-           "IGV2ZW50IHRvIGNvbW1lbnQuAQAqAQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhl" +
-           "IGNvbW1lbnQgdG8gYWRkIHRvIHRoZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAAB" +
-           "AA4AAABNVEN1cnJlbnRTdGF0ZQEBnCMALwA/nCMAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAA" +
-           "AEFjdGl2ZVN0YXRlAQGdIwAvAQAjI50jAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEB" +
-           "niMALgBEniMAAAAB/////wEB/////wAAAAA=";
+           "IAAAAFNvdW5kX0xldmVsQ29uZGl0aW9uVHlwZUluc3RhbmNlAQF3IwEBdyP/////GAAAABVgiQoCAAAA" +
+           "AAAHAAAARXZlbnRJZAEBeCMALgBEeCMAAAAP/////wEB/////wAAAAAVYIkKAgAAAAAACQAAAEV2ZW50" +
+           "VHlwZQEBeSMALgBEeSMAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBAXoj" +
+           "AC4ARHojAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQF7IwAuAER7IwAA" +
+           "AAz/////AQH/////AAAAABVgiQoCAAAAAAAEAAAAVGltZQEBfCMALgBEfCMAAAEAJgH/////AQH/////" +
+           "AAAAABVgiQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUBAX0jAC4ARH0jAAABACYB/////wEB/////wAAAAAV" +
+           "YIkKAgAAAAAACQAAAExvY2FsVGltZQEBfiMALgBEfiMAAAEA0CL/////AQH/////AAAAABVgiQoCAAAA" +
+           "AAAHAAAATWVzc2FnZQEBfyMALgBEfyMAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAFNldmVy" +
+           "aXR5AQGAIwAuAESAIwAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAQ29uZGl0aW9uQ2xhc3NJ" +
+           "ZAEBgSMALgBEgSMAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAENvbmRpdGlvbkNsYXNzTmFt" +
+           "ZQEBgiMALgBEgiMAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAENvbmRpdGlvbk5hbWUBAYMj" +
+           "AC4ARIMjAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFuY2hJZAEBhCMALgBEhCMAAAAR" +
+           "/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBhSMALgBEhSMAAAAB/////wEB/////wAA" +
+           "AAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBhiMALwEAIyOGIwAAABX/////AQH/////AQAAABVg" +
+           "iQoCAAAAAAACAAAASWQBAYcjAC4ARIcjAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABRdWFs" +
+           "aXR5AQGPIwAvAQAqI48jAAAAE/////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3Rh" +
+           "bXABAZAjAC4ARJAjAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAExhc3RTZXZlcml0eQEB" +
+           "kSMALwEAKiORIwAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQGS" +
+           "IwAuAESSIwAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABDb21tZW50AQGTIwAvAQAqI5Mj" +
+           "AAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAZQjAC4ARJQjAAAB" +
+           "ACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJZAEBlSMALgBElSMAAAAM////" +
+           "/wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAZYjAC8BAEQjliMAAAEBAQAAAAEA+QsAAQDz" +
+           "CgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBlyMALwEAQyOXIwAAAQEBAAAAAQD5CwABAPMKAAAAAARh" +
+           "ggoEAAAAAAAKAAAAQWRkQ29tbWVudAEBmCMALwEARSOYIwAAAQEBAAAAAQD5CwABAA0LAQAAABVgqQoC" +
+           "AAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAZkjAC4ARJkjAACWAgAAAAEAKgEBRgAAAAcAAABFdmVudElk" +
+           "AA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdG8gY29tbWVudC4B" +
+           "ACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUgY29tbWVudCB0byBhZGQgdG8g" +
+           "dGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEADgAAAE1UQ3VycmVudFN0YXRl" +
+           "AQGcIwAvAD+cIwAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAAQWN0aXZlU3RhdGUBAZ0jAC8B" +
+           "ACMjnSMAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQGeIwAuAESeIwAAAAH/////AQH/" +
+           "////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -12695,6 +13653,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -12705,44 +13672,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "GwAAAFN0cmFpbkNvbmRpdGlvblR5cGVJbnN0YW5jZQEBtCMBAbQj/////xgAAAA1YIkKAgAAAAAABwAA" +
-           "AEV2ZW50SWQBAbUjAwAAAAArAAAAQSBnbG9iYWxseSB1bmlxdWUgaWRlbnRpZmllciBmb3IgdGhlIGV2" +
-           "ZW50LgAuAES1IwAAAA//////AQH/////AAAAADVgiQoCAAAAAAAJAAAARXZlbnRUeXBlAQG2IwMAAAAA" +
-           "IgAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdHlwZS4ALgBEtiMAAAAR/////wEB/////wAA" +
-           "AAA1YIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBAbcjAwAAAAAYAAAAVGhlIHNvdXJjZSBvZiB0aGUgZXZl" +
-           "bnQuAC4ARLcjAAAAEf////8BAf////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQG4IwMAAAAA" +
-           "KQAAAEEgZGVzY3JpcHRpb24gb2YgdGhlIHNvdXJjZSBvZiB0aGUgZXZlbnQuAC4ARLgjAAAADP////8B" +
-           "Af////8AAAAANWCJCgIAAAAAAAQAAABUaW1lAQG5IwMAAAAAGAAAAFdoZW4gdGhlIGV2ZW50IG9jY3Vy" +
-           "cmVkLgAuAES5IwAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAsAAABSZWNlaXZlVGltZQEBuiMD" +
-           "AAAAAD4AAABXaGVuIHRoZSBzZXJ2ZXIgcmVjZWl2ZWQgdGhlIGV2ZW50IGZyb20gdGhlIHVuZGVybHlp" +
-           "bmcgc3lzdGVtLgAuAES6IwAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAkAAABMb2NhbFRpbWUB" +
-           "AbsjAwAAAAA8AAAASW5mb3JtYXRpb24gYWJvdXQgdGhlIGxvY2FsIHRpbWUgd2hlcmUgdGhlIGV2ZW50" +
-           "IG9yaWdpbmF0ZWQuAC4ARLsjAAABANAi/////wEB/////wAAAAA1YIkKAgAAAAAABwAAAE1lc3NhZ2UB" +
-           "AbwjAwAAAAAlAAAAQSBsb2NhbGl6ZWQgZGVzY3JpcHRpb24gb2YgdGhlIGV2ZW50LgAuAES8IwAAABX/" +
-           "////AQH/////AAAAADVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkBAb0jAwAAAAAhAAAASW5kaWNhdGVzIGhv" +
-           "dyB1cmdlbnQgYW4gZXZlbnQgaXMuAC4ARL0jAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAAAABD" +
-           "b25kaXRpb25DbGFzc0lkAQG+IwAuAES+IwAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAAQ29u" +
-           "ZGl0aW9uQ2xhc3NOYW1lAQG/IwAuAES/IwAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAAQ29u" +
-           "ZGl0aW9uTmFtZQEBwCMALgBEwCMAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5jaElk" +
-           "AQHBIwAuAETBIwAAABH/////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQHCIwAuAETCIwAA" +
-           "AAH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQHDIwAvAQAjI8MjAAAAFf//" +
-           "//8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBxCMALgBExCMAAAAB/////wEB/////wAAAAAVYIkK" +
-           "AgAAAAAABwAAAFF1YWxpdHkBAcwjAC8BACojzCMAAAAT/////wEB/////wEAAAAVYIkKAgAAAAAADwAA" +
-           "AFNvdXJjZVRpbWVzdGFtcAEBzSMALgBEzSMAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAA" +
-           "TGFzdFNldmVyaXR5AQHOIwAvAQAqI84jAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3Vy" +
-           "Y2VUaW1lc3RhbXABAc8jAC4ARM8jAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENvbW1l" +
-           "bnQBAdAjAC8BACoj0CMAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFt" +
-           "cAEB0SMALgBE0SMAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklkAQHS" +
-           "IwAuAETSIwAAAAz/////AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEB0yMALwEARCPTIwAA" +
-           "AQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQHUIwAvAQBDI9QjAAABAQEAAAAB" +
-           "APkLAAEA8woAAAAABGGCCgQAAAAAAAoAAABBZGRDb21tZW50AQHVIwAvAQBFI9UjAAABAQEAAAABAPkL" +
-           "AAEADQsBAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEB1iMALgBE1iMAAJYCAAAAAQAqAQFG" +
-           "AAAABwAAAEV2ZW50SWQAD/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVu" +
-           "dCB0byBjb21tZW50LgEAKgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBjb21t" +
-           "ZW50IHRvIGFkZCB0byB0aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAOAAAA" +
-           "TVRDdXJyZW50U3RhdGUBAdkjAC8AP9kjAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABBY3Rp" +
-           "dmVTdGF0ZQEB2iMALwEAIyPaIwAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAdsjAC4A" +
-           "RNsjAAAAAf////8BAf////8AAAAA";
+           "GwAAAFN0cmFpbkNvbmRpdGlvblR5cGVJbnN0YW5jZQEBtCMBAbQj/////xgAAAAVYIkKAgAAAAAABwAA" +
+           "AEV2ZW50SWQBAbUjAC4ARLUjAAAAD/////8BAf////8AAAAAFWCJCgIAAAAAAAkAAABFdmVudFR5cGUB" +
+           "AbYjAC4ARLYjAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQG3IwAuAES3" +
+           "IwAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEBuCMALgBEuCMAAAAM////" +
+           "/wEB/////wAAAAAVYIkKAgAAAAAABAAAAFRpbWUBAbkjAC4ARLkjAAABACYB/////wEB/////wAAAAAV" +
+           "YIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQG6IwAuAES6IwAAAQAmAf////8BAf////8AAAAAFWCJCgIA" +
+           "AAAAAAkAAABMb2NhbFRpbWUBAbsjAC4ARLsjAAABANAi/////wEB/////wAAAAAVYIkKAgAAAAAABwAA" +
+           "AE1lc3NhZ2UBAbwjAC4ARLwjAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABTZXZlcml0eQEB" +
+           "vSMALgBEvSMAAAAF/////wEB/////wAAAAAVYIkKAgAAAAAAEAAAAENvbmRpdGlvbkNsYXNzSWQBAb4j" +
+           "AC4ARL4jAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIAAABDb25kaXRpb25DbGFzc05hbWUBAb8j" +
+           "AC4ARL8jAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0AAABDb25kaXRpb25OYW1lAQHAIwAuAETA" +
+           "IwAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJhbmNoSWQBAcEjAC4ARMEjAAAAEf////8B" +
+           "Af////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BAcIjAC4ARMIjAAAAAf////8BAf////8AAAAAFWCJ" +
+           "CgIAAAAAAAwAAABFbmFibGVkU3RhdGUBAcMjAC8BACMjwyMAAAAV/////wEB/////wEAAAAVYIkKAgAA" +
+           "AAAAAgAAAElkAQHEIwAuAETEIwAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAUXVhbGl0eQEB" +
+           "zCMALwEAKiPMIwAAABP/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQHN" +
+           "IwAuAETNIwAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABMYXN0U2V2ZXJpdHkBAc4jAC8B" +
+           "ACojziMAAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBzyMALgBE" +
+           "zyMAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQ29tbWVudAEB0CMALwEAKiPQIwAAABX/" +
+           "////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQHRIwAuAETRIwAAAQAmAf//" +
+           "//8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQBAdIjAC4ARNIjAAAADP////8BAf//" +
+           "//8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQHTIwAvAQBEI9MjAAABAQEAAAABAPkLAAEA8woAAAAA" +
+           "BGGCCgQAAAAAAAYAAABFbmFibGUBAdQjAC8BAEMj1CMAAAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAA" +
+           "AAAACgAAAEFkZENvbW1lbnQBAdUjAC8BAEUj1SMAAAEBAQAAAAEA+QsAAQANCwEAAAAVYKkKAgAAAAAA" +
+           "DgAAAElucHV0QXJndW1lbnRzAQHWIwAuAETWIwAAlgIAAAABACoBAUYAAAAHAAAARXZlbnRJZAAP////" +
+           "/wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHRvIGNvbW1lbnQuAQAqAQFC" +
+           "AAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhlIGNvbW1lbnQgdG8gYWRkIHRvIHRoZSBj" +
+           "b25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAABAA4AAABNVEN1cnJlbnRTdGF0ZQEB2SMA" +
+           "LwA/2SMAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAEFjdGl2ZVN0YXRlAQHaIwAvAQAjI9oj" +
+           "AAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEB2yMALgBE2yMAAAAB/////wEB/////wAA" +
+           "AAA=";
         #endregion
         #endif
         #endregion
@@ -12795,6 +13755,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -12805,44 +13774,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "GwAAAFN5c3RlbUNvbmRpdGlvblR5cGVJbnN0YW5jZQEB8SMBAfEj/////xgAAAA1YIkKAgAAAAAABwAA" +
-           "AEV2ZW50SWQBAfIjAwAAAAArAAAAQSBnbG9iYWxseSB1bmlxdWUgaWRlbnRpZmllciBmb3IgdGhlIGV2" +
-           "ZW50LgAuAETyIwAAAA//////AQH/////AAAAADVgiQoCAAAAAAAJAAAARXZlbnRUeXBlAQHzIwMAAAAA" +
-           "IgAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdHlwZS4ALgBE8yMAAAAR/////wEB/////wAA" +
-           "AAA1YIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBAfQjAwAAAAAYAAAAVGhlIHNvdXJjZSBvZiB0aGUgZXZl" +
-           "bnQuAC4ARPQjAAAAEf////8BAf////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQH1IwMAAAAA" +
-           "KQAAAEEgZGVzY3JpcHRpb24gb2YgdGhlIHNvdXJjZSBvZiB0aGUgZXZlbnQuAC4ARPUjAAAADP////8B" +
-           "Af////8AAAAANWCJCgIAAAAAAAQAAABUaW1lAQH2IwMAAAAAGAAAAFdoZW4gdGhlIGV2ZW50IG9jY3Vy" +
-           "cmVkLgAuAET2IwAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAsAAABSZWNlaXZlVGltZQEB9yMD" +
-           "AAAAAD4AAABXaGVuIHRoZSBzZXJ2ZXIgcmVjZWl2ZWQgdGhlIGV2ZW50IGZyb20gdGhlIHVuZGVybHlp" +
-           "bmcgc3lzdGVtLgAuAET3IwAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAkAAABMb2NhbFRpbWUB" +
-           "AfgjAwAAAAA8AAAASW5mb3JtYXRpb24gYWJvdXQgdGhlIGxvY2FsIHRpbWUgd2hlcmUgdGhlIGV2ZW50" +
-           "IG9yaWdpbmF0ZWQuAC4ARPgjAAABANAi/////wEB/////wAAAAA1YIkKAgAAAAAABwAAAE1lc3NhZ2UB" +
-           "AfkjAwAAAAAlAAAAQSBsb2NhbGl6ZWQgZGVzY3JpcHRpb24gb2YgdGhlIGV2ZW50LgAuAET5IwAAABX/" +
-           "////AQH/////AAAAADVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkBAfojAwAAAAAhAAAASW5kaWNhdGVzIGhv" +
-           "dyB1cmdlbnQgYW4gZXZlbnQgaXMuAC4ARPojAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAAAABD" +
-           "b25kaXRpb25DbGFzc0lkAQH7IwAuAET7IwAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAAQ29u" +
-           "ZGl0aW9uQ2xhc3NOYW1lAQH8IwAuAET8IwAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAAQ29u" +
-           "ZGl0aW9uTmFtZQEB/SMALgBE/SMAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5jaElk" +
-           "AQH+IwAuAET+IwAAABH/////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQH/IwAuAET/IwAA" +
-           "AAH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQEAJAAvAQAjIwAkAAAAFf//" +
-           "//8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBASQALgBEASQAAAAB/////wEB/////wAAAAAVYIkK" +
-           "AgAAAAAABwAAAFF1YWxpdHkBAQkkAC8BACojCSQAAAAT/////wEB/////wEAAAAVYIkKAgAAAAAADwAA" +
-           "AFNvdXJjZVRpbWVzdGFtcAEBCiQALgBECiQAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAA" +
-           "TGFzdFNldmVyaXR5AQELJAAvAQAqIwskAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3Vy" +
-           "Y2VUaW1lc3RhbXABAQwkAC4ARAwkAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENvbW1l" +
-           "bnQBAQ0kAC8BACojDSQAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFt" +
-           "cAEBDiQALgBEDiQAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklkAQEP" +
-           "JAAuAEQPJAAAAAz/////AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBECQALwEARCMQJAAA" +
-           "AQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQERJAAvAQBDIxEkAAABAQEAAAAB" +
-           "APkLAAEA8woAAAAABGGCCgQAAAAAAAoAAABBZGRDb21tZW50AQESJAAvAQBFIxIkAAABAQEAAAABAPkL" +
-           "AAEADQsBAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBEyQALgBEEyQAAJYCAAAAAQAqAQFG" +
-           "AAAABwAAAEV2ZW50SWQAD/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVu" +
-           "dCB0byBjb21tZW50LgEAKgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBjb21t" +
-           "ZW50IHRvIGFkZCB0byB0aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAOAAAA" +
-           "TVRDdXJyZW50U3RhdGUBARYkAC8APxYkAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABBY3Rp" +
-           "dmVTdGF0ZQEBFyQALwEAIyMXJAAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBARgkAC4A" +
-           "RBgkAAAAAf////8BAf////8AAAAA";
+           "GwAAAFN5c3RlbUNvbmRpdGlvblR5cGVJbnN0YW5jZQEB8SMBAfEj/////xgAAAAVYIkKAgAAAAAABwAA" +
+           "AEV2ZW50SWQBAfIjAC4ARPIjAAAAD/////8BAf////8AAAAAFWCJCgIAAAAAAAkAAABFdmVudFR5cGUB" +
+           "AfMjAC4ARPMjAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQH0IwAuAET0" +
+           "IwAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEB9SMALgBE9SMAAAAM////" +
+           "/wEB/////wAAAAAVYIkKAgAAAAAABAAAAFRpbWUBAfYjAC4ARPYjAAABACYB/////wEB/////wAAAAAV" +
+           "YIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQH3IwAuAET3IwAAAQAmAf////8BAf////8AAAAAFWCJCgIA" +
+           "AAAAAAkAAABMb2NhbFRpbWUBAfgjAC4ARPgjAAABANAi/////wEB/////wAAAAAVYIkKAgAAAAAABwAA" +
+           "AE1lc3NhZ2UBAfkjAC4ARPkjAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABTZXZlcml0eQEB" +
+           "+iMALgBE+iMAAAAF/////wEB/////wAAAAAVYIkKAgAAAAAAEAAAAENvbmRpdGlvbkNsYXNzSWQBAfsj" +
+           "AC4ARPsjAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIAAABDb25kaXRpb25DbGFzc05hbWUBAfwj" +
+           "AC4ARPwjAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0AAABDb25kaXRpb25OYW1lAQH9IwAuAET9" +
+           "IwAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJhbmNoSWQBAf4jAC4ARP4jAAAAEf////8B" +
+           "Af////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BAf8jAC4ARP8jAAAAAf////8BAf////8AAAAAFWCJ" +
+           "CgIAAAAAAAwAAABFbmFibGVkU3RhdGUBAQAkAC8BACMjACQAAAAV/////wEB/////wEAAAAVYIkKAgAA" +
+           "AAAAAgAAAElkAQEBJAAuAEQBJAAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAUXVhbGl0eQEB" +
+           "CSQALwEAKiMJJAAAABP/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQEK" +
+           "JAAuAEQKJAAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABMYXN0U2V2ZXJpdHkBAQskAC8B" +
+           "ACojCyQAAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBDCQALgBE" +
+           "DCQAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQ29tbWVudAEBDSQALwEAKiMNJAAAABX/" +
+           "////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQEOJAAuAEQOJAAAAQAmAf//" +
+           "//8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQBAQ8kAC4ARA8kAAAADP////8BAf//" +
+           "//8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQEQJAAvAQBEIxAkAAABAQEAAAABAPkLAAEA8woAAAAA" +
+           "BGGCCgQAAAAAAAYAAABFbmFibGUBAREkAC8BAEMjESQAAAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAA" +
+           "AAAACgAAAEFkZENvbW1lbnQBARIkAC8BAEUjEiQAAAEBAQAAAAEA+QsAAQANCwEAAAAVYKkKAgAAAAAA" +
+           "DgAAAElucHV0QXJndW1lbnRzAQETJAAuAEQTJAAAlgIAAAABACoBAUYAAAAHAAAARXZlbnRJZAAP////" +
+           "/wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHRvIGNvbW1lbnQuAQAqAQFC" +
+           "AAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhlIGNvbW1lbnQgdG8gYWRkIHRvIHRoZSBj" +
+           "b25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAABAA4AAABNVEN1cnJlbnRTdGF0ZQEBFiQA" +
+           "LwA/FiQAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAEFjdGl2ZVN0YXRlAQEXJAAvAQAjIxck" +
+           "AAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBGCQALgBEGCQAAAAB/////wEB/////wAA" +
+           "AAA=";
         #endregion
         #endif
         #endregion
@@ -12895,6 +13857,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -12905,44 +13876,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "IAAAAFRlbXBlcmF0dXJlQ29uZGl0aW9uVHlwZUluc3RhbmNlAQEuJAEBLiT/////GAAAADVgiQoCAAAA" +
-           "AAAHAAAARXZlbnRJZAEBLyQDAAAAACsAAABBIGdsb2JhbGx5IHVuaXF1ZSBpZGVudGlmaWVyIGZvciB0" +
-           "aGUgZXZlbnQuAC4ARC8kAAAAD/////8BAf////8AAAAANWCJCgIAAAAAAAkAAABFdmVudFR5cGUBATAk" +
-           "AwAAAAAiAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0eXBlLgAuAEQwJAAAABH/////AQH/" +
-           "////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBMSQDAAAAABgAAABUaGUgc291cmNlIG9mIHRo" +
-           "ZSBldmVudC4ALgBEMSQAAAAR/////wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBATIk" +
-           "AwAAAAApAAAAQSBkZXNjcmlwdGlvbiBvZiB0aGUgc291cmNlIG9mIHRoZSBldmVudC4ALgBEMiQAAAAM" +
-           "/////wEB/////wAAAAA1YIkKAgAAAAAABAAAAFRpbWUBATMkAwAAAAAYAAAAV2hlbiB0aGUgZXZlbnQg" +
-           "b2NjdXJyZWQuAC4ARDMkAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACwAAAFJlY2VpdmVUaW1l" +
-           "AQE0JAMAAAAAPgAAAFdoZW4gdGhlIHNlcnZlciByZWNlaXZlZCB0aGUgZXZlbnQgZnJvbSB0aGUgdW5k" +
-           "ZXJseWluZyBzeXN0ZW0uAC4ARDQkAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAExvY2Fs" +
-           "VGltZQEBNSQDAAAAADwAAABJbmZvcm1hdGlvbiBhYm91dCB0aGUgbG9jYWwgdGltZSB3aGVyZSB0aGUg" +
-           "ZXZlbnQgb3JpZ2luYXRlZC4ALgBENSQAAAEA0CL/////AQH/////AAAAADVgiQoCAAAAAAAHAAAATWVz" +
-           "c2FnZQEBNiQDAAAAACUAAABBIGxvY2FsaXplZCBkZXNjcmlwdGlvbiBvZiB0aGUgZXZlbnQuAC4ARDYk" +
-           "AAAAFf////8BAf////8AAAAANWCJCgIAAAAAAAgAAABTZXZlcml0eQEBNyQDAAAAACEAAABJbmRpY2F0" +
-           "ZXMgaG93IHVyZ2VudCBhbiBldmVudCBpcy4ALgBENyQAAAAF/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "EAAAAENvbmRpdGlvbkNsYXNzSWQBATgkAC4ARDgkAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIA" +
-           "AABDb25kaXRpb25DbGFzc05hbWUBATkkAC4ARDkkAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0A" +
-           "AABDb25kaXRpb25OYW1lAQE6JAAuAEQ6JAAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJh" +
-           "bmNoSWQBATskAC4ARDskAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BATwkAC4A" +
-           "RDwkAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBAT0kAC8BACMjPSQA" +
-           "AAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQE+JAAuAEQ+JAAAAAH/////AQH/////AAAA" +
-           "ABVgiQoCAAAAAAAHAAAAUXVhbGl0eQEBRiQALwEAKiNGJAAAABP/////AQH/////AQAAABVgiQoCAAAA" +
-           "AAAPAAAAU291cmNlVGltZXN0YW1wAQFHJAAuAERHJAAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAA" +
-           "AAwAAABMYXN0U2V2ZXJpdHkBAUgkAC8BACojSCQAAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAA" +
-           "AFNvdXJjZVRpbWVzdGFtcAEBSSQALgBESSQAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAA" +
-           "Q29tbWVudAEBSiQALwEAKiNKJAAAABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGlt" +
-           "ZXN0YW1wAQFLJAAuAERLJAAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2Vy" +
-           "SWQBAUwkAC4AREwkAAAADP////8BAf////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQFNJAAvAQBE" +
-           "I00kAAABAQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAYAAABFbmFibGUBAU4kAC8BAEMjTiQAAAEB" +
-           "AQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAACgAAAEFkZENvbW1lbnQBAU8kAC8BAEUjTyQAAAEBAQAA" +
-           "AAEA+QsAAQANCwEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFQJAAuAERQJAAAlgIAAAAB" +
-           "ACoBAUYAAAAHAAAARXZlbnRJZAAP/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhl" +
-           "IGV2ZW50IHRvIGNvbW1lbnQuAQAqAQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhl" +
-           "IGNvbW1lbnQgdG8gYWRkIHRvIHRoZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAAB" +
-           "AA4AAABNVEN1cnJlbnRTdGF0ZQEBUyQALwA/UyQAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAA" +
-           "AEFjdGl2ZVN0YXRlAQFUJAAvAQAjI1QkAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEB" +
-           "VSQALgBEVSQAAAAB/////wEB/////wAAAAA=";
+           "IAAAAFRlbXBlcmF0dXJlQ29uZGl0aW9uVHlwZUluc3RhbmNlAQEuJAEBLiT/////GAAAABVgiQoCAAAA" +
+           "AAAHAAAARXZlbnRJZAEBLyQALgBELyQAAAAP/////wEB/////wAAAAAVYIkKAgAAAAAACQAAAEV2ZW50" +
+           "VHlwZQEBMCQALgBEMCQAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBATEk" +
+           "AC4ARDEkAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQEyJAAuAEQyJAAA" +
+           "AAz/////AQH/////AAAAABVgiQoCAAAAAAAEAAAAVGltZQEBMyQALgBEMyQAAAEAJgH/////AQH/////" +
+           "AAAAABVgiQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUBATQkAC4ARDQkAAABACYB/////wEB/////wAAAAAV" +
+           "YIkKAgAAAAAACQAAAExvY2FsVGltZQEBNSQALgBENSQAAAEA0CL/////AQH/////AAAAABVgiQoCAAAA" +
+           "AAAHAAAATWVzc2FnZQEBNiQALgBENiQAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAFNldmVy" +
+           "aXR5AQE3JAAuAEQ3JAAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAQ29uZGl0aW9uQ2xhc3NJ" +
+           "ZAEBOCQALgBEOCQAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAENvbmRpdGlvbkNsYXNzTmFt" +
+           "ZQEBOSQALgBEOSQAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAENvbmRpdGlvbk5hbWUBATok" +
+           "AC4ARDokAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFuY2hJZAEBOyQALgBEOyQAAAAR" +
+           "/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBPCQALgBEPCQAAAAB/////wEB/////wAA" +
+           "AAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBPSQALwEAIyM9JAAAABX/////AQH/////AQAAABVg" +
+           "iQoCAAAAAAACAAAASWQBAT4kAC4ARD4kAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABRdWFs" +
+           "aXR5AQFGJAAvAQAqI0YkAAAAE/////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3Rh" +
+           "bXABAUckAC4AREckAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAExhc3RTZXZlcml0eQEB" +
+           "SCQALwEAKiNIJAAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQFJ" +
+           "JAAuAERJJAAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABDb21tZW50AQFKJAAvAQAqI0ok" +
+           "AAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAUskAC4AREskAAAB" +
+           "ACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJZAEBTCQALgBETCQAAAAM////" +
+           "/wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAU0kAC8BAEQjTSQAAAEBAQAAAAEA+QsAAQDz" +
+           "CgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBTiQALwEAQyNOJAAAAQEBAAAAAQD5CwABAPMKAAAAAARh" +
+           "ggoEAAAAAAAKAAAAQWRkQ29tbWVudAEBTyQALwEARSNPJAAAAQEBAAAAAQD5CwABAA0LAQAAABVgqQoC" +
+           "AAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAVAkAC4ARFAkAACWAgAAAAEAKgEBRgAAAAcAAABFdmVudElk" +
+           "AA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdG8gY29tbWVudC4B" +
+           "ACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUgY29tbWVudCB0byBhZGQgdG8g" +
+           "dGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEADgAAAE1UQ3VycmVudFN0YXRl" +
+           "AQFTJAAvAD9TJAAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAAQWN0aXZlU3RhdGUBAVQkAC8B" +
+           "ACMjVCQAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQFVJAAuAERVJAAAAAH/////AQH/" +
+           "////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -12995,6 +13959,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -13005,44 +13978,36 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "GQAAAFRpbHRDb25kaXRpb25UeXBlSW5zdGFuY2UBAWskAQFrJP////8YAAAANWCJCgIAAAAAAAcAAABF" +
-           "dmVudElkAQFsJAMAAAAAKwAAAEEgZ2xvYmFsbHkgdW5pcXVlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVu" +
-           "dC4ALgBEbCQAAAAP/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAEV2ZW50VHlwZQEBbSQDAAAAACIA" +
-           "AABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHR5cGUuAC4ARG0kAAAAEf////8BAf////8AAAAA" +
-           "NWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQFuJAMAAAAAGAAAAFRoZSBzb3VyY2Ugb2YgdGhlIGV2ZW50" +
-           "LgAuAERuJAAAABH/////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEBbyQDAAAAACkA" +
-           "AABBIGRlc2NyaXB0aW9uIG9mIHRoZSBzb3VyY2Ugb2YgdGhlIGV2ZW50LgAuAERvJAAAAAz/////AQH/" +
-           "////AAAAADVgiQoCAAAAAAAEAAAAVGltZQEBcCQDAAAAABgAAABXaGVuIHRoZSBldmVudCBvY2N1cnJl" +
-           "ZC4ALgBEcCQAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUBAXEkAwAA" +
-           "AAA+AAAAV2hlbiB0aGUgc2VydmVyIHJlY2VpdmVkIHRoZSBldmVudCBmcm9tIHRoZSB1bmRlcmx5aW5n" +
-           "IHN5c3RlbS4ALgBEcSQAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAAJAAAATG9jYWxUaW1lAQFy" +
-           "JAMAAAAAPAAAAEluZm9ybWF0aW9uIGFib3V0IHRoZSBsb2NhbCB0aW1lIHdoZXJlIHRoZSBldmVudCBv" +
-           "cmlnaW5hdGVkLgAuAERyJAAAAQDQIv////8BAf////8AAAAANWCJCgIAAAAAAAcAAABNZXNzYWdlAQFz" +
-           "JAMAAAAAJQAAAEEgbG9jYWxpemVkIGRlc2NyaXB0aW9uIG9mIHRoZSBldmVudC4ALgBEcyQAAAAV////" +
-           "/wEB/////wAAAAA1YIkKAgAAAAAACAAAAFNldmVyaXR5AQF0JAMAAAAAIQAAAEluZGljYXRlcyBob3cg" +
-           "dXJnZW50IGFuIGV2ZW50IGlzLgAuAER0JAAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAQ29u" +
-           "ZGl0aW9uQ2xhc3NJZAEBdSQALgBEdSQAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAENvbmRp" +
-           "dGlvbkNsYXNzTmFtZQEBdiQALgBEdiQAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAENvbmRp" +
-           "dGlvbk5hbWUBAXckAC4ARHckAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFuY2hJZAEB" +
-           "eCQALgBEeCQAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBeSQALgBEeSQAAAAB" +
-           "/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBeiQALwEAIyN6JAAAABX/////" +
-           "AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAXskAC4ARHskAAAAAf////8BAf////8AAAAAFWCJCgIA" +
-           "AAAAAAcAAABRdWFsaXR5AQGDJAAvAQAqI4MkAAAAE/////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABT" +
-           "b3VyY2VUaW1lc3RhbXABAYQkAC4ARIQkAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAExh" +
-           "c3RTZXZlcml0eQEBhSQALwEAKiOFJAAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNl" +
-           "VGltZXN0YW1wAQGGJAAuAESGJAAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABDb21tZW50" +
-           "AQGHJAAvAQAqI4ckAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXAB" +
-           "AYgkAC4ARIgkAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJZAEBiSQA" +
-           "LgBEiSQAAAAM/////wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAYokAC8BAEQjiiQAAAEB" +
-           "AQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBiyQALwEAQyOLJAAAAQEBAAAAAQD5" +
-           "CwABAPMKAAAAAARhggoEAAAAAAAKAAAAQWRkQ29tbWVudAEBjCQALwEARSOMJAAAAQEBAAAAAQD5CwAB" +
-           "AA0LAQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAY0kAC4ARI0kAACWAgAAAAEAKgEBRgAA" +
-           "AAcAAABFdmVudElkAA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQg" +
-           "dG8gY29tbWVudC4BACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUgY29tbWVu" +
-           "dCB0byBhZGQgdG8gdGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEADgAAAE1U" +
-           "Q3VycmVudFN0YXRlAQGQJAAvAD+QJAAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAAQWN0aXZl" +
-           "U3RhdGUBAZEkAC8BACMjkSQAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQGSJAAuAESS" +
-           "JAAAAAH/////AQH/////AAAAAA==";
+           "GQAAAFRpbHRDb25kaXRpb25UeXBlSW5zdGFuY2UBAWskAQFrJP////8YAAAAFWCJCgIAAAAAAAcAAABF" +
+           "dmVudElkAQFsJAAuAERsJAAAAA//////AQH/////AAAAABVgiQoCAAAAAAAJAAAARXZlbnRUeXBlAQFt" +
+           "JAAuAERtJAAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBbiQALgBEbiQA" +
+           "AAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBAW8kAC4ARG8kAAAADP////8B" +
+           "Af////8AAAAAFWCJCgIAAAAAAAQAAABUaW1lAQFwJAAuAERwJAAAAQAmAf////8BAf////8AAAAAFWCJ" +
+           "CgIAAAAAAAsAAABSZWNlaXZlVGltZQEBcSQALgBEcSQAAAEAJgH/////AQH/////AAAAABVgiQoCAAAA" +
+           "AAAJAAAATG9jYWxUaW1lAQFyJAAuAERyJAAAAQDQIv////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABN" +
+           "ZXNzYWdlAQFzJAAuAERzJAAAABX/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkBAXQk" +
+           "AC4ARHQkAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAAAABDb25kaXRpb25DbGFzc0lkAQF1JAAu" +
+           "AER1JAAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAAQ29uZGl0aW9uQ2xhc3NOYW1lAQF2JAAu" +
+           "AER2JAAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAAQ29uZGl0aW9uTmFtZQEBdyQALgBEdyQA" +
+           "AAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5jaElkAQF4JAAuAER4JAAAABH/////AQH/" +
+           "////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQF5JAAuAER5JAAAAAH/////AQH/////AAAAABVgiQoC" +
+           "AAAAAAAMAAAARW5hYmxlZFN0YXRlAQF6JAAvAQAjI3okAAAAFf////8BAf////8BAAAAFWCJCgIAAAAA" +
+           "AAIAAABJZAEBeyQALgBEeyQAAAAB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAFF1YWxpdHkBAYMk" +
+           "AC8BACojgyQAAAAT/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBhCQA" +
+           "LgBEhCQAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAATGFzdFNldmVyaXR5AQGFJAAvAQAq" +
+           "I4UkAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAYYkAC4ARIYk" +
+           "AAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENvbW1lbnQBAYckAC8BACojhyQAAAAV////" +
+           "/wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBiCQALgBEiCQAAAEAJgH/////" +
+           "AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklkAQGJJAAuAESJJAAAAAz/////AQH/////" +
+           "AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBiiQALwEARCOKJAAAAQEBAAAAAQD5CwABAPMKAAAAAARh" +
+           "ggoEAAAAAAAGAAAARW5hYmxlAQGLJAAvAQBDI4skAAABAQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAA" +
+           "AAoAAABBZGRDb21tZW50AQGMJAAvAQBFI4wkAAABAQEAAAABAPkLAAEADQsBAAAAFWCpCgIAAAAAAA4A" +
+           "AABJbnB1dEFyZ3VtZW50cwEBjSQALgBEjSQAAJYCAAAAAQAqAQFGAAAABwAAAEV2ZW50SWQAD/////8A" +
+           "AAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0byBjb21tZW50LgEAKgEBQgAA" +
+           "AAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBjb21tZW50IHRvIGFkZCB0byB0aGUgY29u" +
+           "ZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAOAAAATVRDdXJyZW50U3RhdGUBAZAkAC8A" +
+           "P5AkAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABBY3RpdmVTdGF0ZQEBkSQALwEAIyORJAAA" +
+           "ABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAZIkAC4ARJIkAAAAAf////8BAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -13095,6 +14060,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -13105,44 +14079,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "GwAAAFRvcnF1ZUNvbmRpdGlvblR5cGVJbnN0YW5jZQEBqCQBAagk/////xgAAAA1YIkKAgAAAAAABwAA" +
-           "AEV2ZW50SWQBAakkAwAAAAArAAAAQSBnbG9iYWxseSB1bmlxdWUgaWRlbnRpZmllciBmb3IgdGhlIGV2" +
-           "ZW50LgAuAESpJAAAAA//////AQH/////AAAAADVgiQoCAAAAAAAJAAAARXZlbnRUeXBlAQGqJAMAAAAA" +
-           "IgAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdHlwZS4ALgBEqiQAAAAR/////wEB/////wAA" +
-           "AAA1YIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBAaskAwAAAAAYAAAAVGhlIHNvdXJjZSBvZiB0aGUgZXZl" +
-           "bnQuAC4ARKskAAAAEf////8BAf////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQGsJAMAAAAA" +
-           "KQAAAEEgZGVzY3JpcHRpb24gb2YgdGhlIHNvdXJjZSBvZiB0aGUgZXZlbnQuAC4ARKwkAAAADP////8B" +
-           "Af////8AAAAANWCJCgIAAAAAAAQAAABUaW1lAQGtJAMAAAAAGAAAAFdoZW4gdGhlIGV2ZW50IG9jY3Vy" +
-           "cmVkLgAuAEStJAAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAsAAABSZWNlaXZlVGltZQEBriQD" +
-           "AAAAAD4AAABXaGVuIHRoZSBzZXJ2ZXIgcmVjZWl2ZWQgdGhlIGV2ZW50IGZyb20gdGhlIHVuZGVybHlp" +
-           "bmcgc3lzdGVtLgAuAESuJAAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAkAAABMb2NhbFRpbWUB" +
-           "Aa8kAwAAAAA8AAAASW5mb3JtYXRpb24gYWJvdXQgdGhlIGxvY2FsIHRpbWUgd2hlcmUgdGhlIGV2ZW50" +
-           "IG9yaWdpbmF0ZWQuAC4ARK8kAAABANAi/////wEB/////wAAAAA1YIkKAgAAAAAABwAAAE1lc3NhZ2UB" +
-           "AbAkAwAAAAAlAAAAQSBsb2NhbGl6ZWQgZGVzY3JpcHRpb24gb2YgdGhlIGV2ZW50LgAuAESwJAAAABX/" +
-           "////AQH/////AAAAADVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkBAbEkAwAAAAAhAAAASW5kaWNhdGVzIGhv" +
-           "dyB1cmdlbnQgYW4gZXZlbnQgaXMuAC4ARLEkAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAAAABD" +
-           "b25kaXRpb25DbGFzc0lkAQGyJAAuAESyJAAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAAQ29u" +
-           "ZGl0aW9uQ2xhc3NOYW1lAQGzJAAuAESzJAAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAAQ29u" +
-           "ZGl0aW9uTmFtZQEBtCQALgBEtCQAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5jaElk" +
-           "AQG1JAAuAES1JAAAABH/////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQG2JAAuAES2JAAA" +
-           "AAH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQG3JAAvAQAjI7ckAAAAFf//" +
-           "//8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBuCQALgBEuCQAAAAB/////wEB/////wAAAAAVYIkK" +
-           "AgAAAAAABwAAAFF1YWxpdHkBAcAkAC8BACojwCQAAAAT/////wEB/////wEAAAAVYIkKAgAAAAAADwAA" +
-           "AFNvdXJjZVRpbWVzdGFtcAEBwSQALgBEwSQAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAA" +
-           "TGFzdFNldmVyaXR5AQHCJAAvAQAqI8IkAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3Vy" +
-           "Y2VUaW1lc3RhbXABAcMkAC4ARMMkAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENvbW1l" +
-           "bnQBAcQkAC8BACojxCQAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFt" +
-           "cAEBxSQALgBExSQAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklkAQHG" +
-           "JAAuAETGJAAAAAz/////AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBxyQALwEARCPHJAAA" +
-           "AQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQHIJAAvAQBDI8gkAAABAQEAAAAB" +
-           "APkLAAEA8woAAAAABGGCCgQAAAAAAAoAAABBZGRDb21tZW50AQHJJAAvAQBFI8kkAAABAQEAAAABAPkL" +
-           "AAEADQsBAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEByiQALgBEyiQAAJYCAAAAAQAqAQFG" +
-           "AAAABwAAAEV2ZW50SWQAD/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVu" +
-           "dCB0byBjb21tZW50LgEAKgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBjb21t" +
-           "ZW50IHRvIGFkZCB0byB0aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAOAAAA" +
-           "TVRDdXJyZW50U3RhdGUBAc0kAC8AP80kAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABBY3Rp" +
-           "dmVTdGF0ZQEBziQALwEAIyPOJAAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAc8kAC4A" +
-           "RM8kAAAAAf////8BAf////8AAAAA";
+           "GwAAAFRvcnF1ZUNvbmRpdGlvblR5cGVJbnN0YW5jZQEBqCQBAagk/////xgAAAAVYIkKAgAAAAAABwAA" +
+           "AEV2ZW50SWQBAakkAC4ARKkkAAAAD/////8BAf////8AAAAAFWCJCgIAAAAAAAkAAABFdmVudFR5cGUB" +
+           "AaokAC4ARKokAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQGrJAAuAESr" +
+           "JAAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEBrCQALgBErCQAAAAM////" +
+           "/wEB/////wAAAAAVYIkKAgAAAAAABAAAAFRpbWUBAa0kAC4ARK0kAAABACYB/////wEB/////wAAAAAV" +
+           "YIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQGuJAAuAESuJAAAAQAmAf////8BAf////8AAAAAFWCJCgIA" +
+           "AAAAAAkAAABMb2NhbFRpbWUBAa8kAC4ARK8kAAABANAi/////wEB/////wAAAAAVYIkKAgAAAAAABwAA" +
+           "AE1lc3NhZ2UBAbAkAC4ARLAkAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABTZXZlcml0eQEB" +
+           "sSQALgBEsSQAAAAF/////wEB/////wAAAAAVYIkKAgAAAAAAEAAAAENvbmRpdGlvbkNsYXNzSWQBAbIk" +
+           "AC4ARLIkAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIAAABDb25kaXRpb25DbGFzc05hbWUBAbMk" +
+           "AC4ARLMkAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0AAABDb25kaXRpb25OYW1lAQG0JAAuAES0" +
+           "JAAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJhbmNoSWQBAbUkAC4ARLUkAAAAEf////8B" +
+           "Af////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BAbYkAC4ARLYkAAAAAf////8BAf////8AAAAAFWCJ" +
+           "CgIAAAAAAAwAAABFbmFibGVkU3RhdGUBAbckAC8BACMjtyQAAAAV/////wEB/////wEAAAAVYIkKAgAA" +
+           "AAAAAgAAAElkAQG4JAAuAES4JAAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAUXVhbGl0eQEB" +
+           "wCQALwEAKiPAJAAAABP/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQHB" +
+           "JAAuAETBJAAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABMYXN0U2V2ZXJpdHkBAcIkAC8B" +
+           "ACojwiQAAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBwyQALgBE" +
+           "wyQAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQ29tbWVudAEBxCQALwEAKiPEJAAAABX/" +
+           "////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQHFJAAuAETFJAAAAQAmAf//" +
+           "//8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQBAcYkAC4ARMYkAAAADP////8BAf//" +
+           "//8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQHHJAAvAQBEI8ckAAABAQEAAAABAPkLAAEA8woAAAAA" +
+           "BGGCCgQAAAAAAAYAAABFbmFibGUBAcgkAC8BAEMjyCQAAAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAA" +
+           "AAAACgAAAEFkZENvbW1lbnQBAckkAC8BAEUjySQAAAEBAQAAAAEA+QsAAQANCwEAAAAVYKkKAgAAAAAA" +
+           "DgAAAElucHV0QXJndW1lbnRzAQHKJAAuAETKJAAAlgIAAAABACoBAUYAAAAHAAAARXZlbnRJZAAP////" +
+           "/wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHRvIGNvbW1lbnQuAQAqAQFC" +
+           "AAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhlIGNvbW1lbnQgdG8gYWRkIHRvIHRoZSBj" +
+           "b25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAABAA4AAABNVEN1cnJlbnRTdGF0ZQEBzSQA" +
+           "LwA/zSQAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAEFjdGl2ZVN0YXRlAQHOJAAvAQAjI84k" +
+           "AAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBzyQALgBEzyQAAAAB/////wEB/////wAA" +
+           "AAA=";
         #endregion
         #endif
         #endregion
@@ -13195,6 +14162,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -13205,44 +14181,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "HQAAAFZlbG9jaXR5Q29uZGl0aW9uVHlwZUluc3RhbmNlAQHlJAEB5ST/////GAAAADVgiQoCAAAAAAAH" +
-           "AAAARXZlbnRJZAEB5iQDAAAAACsAAABBIGdsb2JhbGx5IHVuaXF1ZSBpZGVudGlmaWVyIGZvciB0aGUg" +
-           "ZXZlbnQuAC4AROYkAAAAD/////8BAf////8AAAAANWCJCgIAAAAAAAkAAABFdmVudFR5cGUBAeckAwAA" +
-           "AAAiAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0eXBlLgAuAETnJAAAABH/////AQH/////" +
-           "AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEB6CQDAAAAABgAAABUaGUgc291cmNlIG9mIHRoZSBl" +
-           "dmVudC4ALgBE6CQAAAAR/////wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBAekkAwAA" +
-           "AAApAAAAQSBkZXNjcmlwdGlvbiBvZiB0aGUgc291cmNlIG9mIHRoZSBldmVudC4ALgBE6SQAAAAM////" +
-           "/wEB/////wAAAAA1YIkKAgAAAAAABAAAAFRpbWUBAeokAwAAAAAYAAAAV2hlbiB0aGUgZXZlbnQgb2Nj" +
-           "dXJyZWQuAC4AROokAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQHr" +
-           "JAMAAAAAPgAAAFdoZW4gdGhlIHNlcnZlciByZWNlaXZlZCB0aGUgZXZlbnQgZnJvbSB0aGUgdW5kZXJs" +
-           "eWluZyBzeXN0ZW0uAC4AROskAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAExvY2FsVGlt" +
-           "ZQEB7CQDAAAAADwAAABJbmZvcm1hdGlvbiBhYm91dCB0aGUgbG9jYWwgdGltZSB3aGVyZSB0aGUgZXZl" +
-           "bnQgb3JpZ2luYXRlZC4ALgBE7CQAAAEA0CL/////AQH/////AAAAADVgiQoCAAAAAAAHAAAATWVzc2Fn" +
-           "ZQEB7SQDAAAAACUAAABBIGxvY2FsaXplZCBkZXNjcmlwdGlvbiBvZiB0aGUgZXZlbnQuAC4ARO0kAAAA" +
-           "Ff////8BAf////8AAAAANWCJCgIAAAAAAAgAAABTZXZlcml0eQEB7iQDAAAAACEAAABJbmRpY2F0ZXMg" +
-           "aG93IHVyZ2VudCBhbiBldmVudCBpcy4ALgBE7iQAAAAF/////wEB/////wAAAAAVYIkKAgAAAAAAEAAA" +
-           "AENvbmRpdGlvbkNsYXNzSWQBAe8kAC4ARO8kAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIAAABD" +
-           "b25kaXRpb25DbGFzc05hbWUBAfAkAC4ARPAkAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0AAABD" +
-           "b25kaXRpb25OYW1lAQHxJAAuAETxJAAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJhbmNo" +
-           "SWQBAfIkAC4ARPIkAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BAfMkAC4ARPMk" +
-           "AAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBAfQkAC8BACMj9CQAAAAV" +
-           "/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQH1JAAuAET1JAAAAAH/////AQH/////AAAAABVg" +
-           "iQoCAAAAAAAHAAAAUXVhbGl0eQEB/SQALwEAKiP9JAAAABP/////AQH/////AQAAABVgiQoCAAAAAAAP" +
-           "AAAAU291cmNlVGltZXN0YW1wAQH+JAAuAET+JAAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwA" +
-           "AABMYXN0U2V2ZXJpdHkBAf8kAC8BACoj/yQAAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNv" +
-           "dXJjZVRpbWVzdGFtcAEBACUALgBEACUAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQ29t" +
-           "bWVudAEBASUALwEAKiMBJQAAABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0" +
-           "YW1wAQECJQAuAEQCJQAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQB" +
-           "AQMlAC4ARAMlAAAADP////8BAf////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQEEJQAvAQBEIwQl" +
-           "AAABAQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAYAAABFbmFibGUBAQUlAC8BAEMjBSUAAAEBAQAA" +
-           "AAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAACgAAAEFkZENvbW1lbnQBAQYlAC8BAEUjBiUAAAEBAQAAAAEA" +
-           "+QsAAQANCwEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQEHJQAuAEQHJQAAlgIAAAABACoB" +
-           "AUYAAAAHAAAARXZlbnRJZAAP/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2" +
-           "ZW50IHRvIGNvbW1lbnQuAQAqAQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhlIGNv" +
-           "bW1lbnQgdG8gYWRkIHRvIHRoZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAABAA4A" +
-           "AABNVEN1cnJlbnRTdGF0ZQEBCiUALwA/CiUAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAEFj" +
-           "dGl2ZVN0YXRlAQELJQAvAQAjIwslAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBDCUA" +
-           "LgBEDCUAAAAB/////wEB/////wAAAAA=";
+           "HQAAAFZlbG9jaXR5Q29uZGl0aW9uVHlwZUluc3RhbmNlAQHlJAEB5ST/////GAAAABVgiQoCAAAAAAAH" +
+           "AAAARXZlbnRJZAEB5iQALgBE5iQAAAAP/////wEB/////wAAAAAVYIkKAgAAAAAACQAAAEV2ZW50VHlw" +
+           "ZQEB5yQALgBE5yQAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBAegkAC4A" +
+           "ROgkAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQHpJAAuAETpJAAAAAz/" +
+           "////AQH/////AAAAABVgiQoCAAAAAAAEAAAAVGltZQEB6iQALgBE6iQAAAEAJgH/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUBAeskAC4AROskAAABACYB/////wEB/////wAAAAAVYIkK" +
+           "AgAAAAAACQAAAExvY2FsVGltZQEB7CQALgBE7CQAAAEA0CL/////AQH/////AAAAABVgiQoCAAAAAAAH" +
+           "AAAATWVzc2FnZQEB7SQALgBE7SQAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAFNldmVyaXR5" +
+           "AQHuJAAuAETuJAAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAQ29uZGl0aW9uQ2xhc3NJZAEB" +
+           "7yQALgBE7yQAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAENvbmRpdGlvbkNsYXNzTmFtZQEB" +
+           "8CQALgBE8CQAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAENvbmRpdGlvbk5hbWUBAfEkAC4A" +
+           "RPEkAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFuY2hJZAEB8iQALgBE8iQAAAAR////" +
+           "/wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEB8yQALgBE8yQAAAAB/////wEB/////wAAAAAV" +
+           "YIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEB9CQALwEAIyP0JAAAABX/////AQH/////AQAAABVgiQoC" +
+           "AAAAAAACAAAASWQBAfUkAC4ARPUkAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABRdWFsaXR5" +
+           "AQH9JAAvAQAqI/0kAAAAE/////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXAB" +
+           "Af4kAC4ARP4kAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAExhc3RTZXZlcml0eQEB/yQA" +
+           "LwEAKiP/JAAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQEAJQAu" +
+           "AEQAJQAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABDb21tZW50AQEBJQAvAQAqIwElAAAA" +
+           "Ff////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAQIlAC4ARAIlAAABACYB" +
+           "/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJZAEBAyUALgBEAyUAAAAM/////wEB" +
+           "/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAQQlAC8BAEQjBCUAAAEBAQAAAAEA+QsAAQDzCgAA" +
+           "AAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBBSUALwEAQyMFJQAAAQEBAAAAAQD5CwABAPMKAAAAAARhggoE" +
+           "AAAAAAAKAAAAQWRkQ29tbWVudAEBBiUALwEARSMGJQAAAQEBAAAAAQD5CwABAA0LAQAAABVgqQoCAAAA" +
+           "AAAOAAAASW5wdXRBcmd1bWVudHMBAQclAC4ARAclAACWAgAAAAEAKgEBRgAAAAcAAABFdmVudElkAA//" +
+           "////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdG8gY29tbWVudC4BACoB" +
+           "AUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUgY29tbWVudCB0byBhZGQgdG8gdGhl" +
+           "IGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEADgAAAE1UQ3VycmVudFN0YXRlAQEK" +
+           "JQAvAD8KJQAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAAQWN0aXZlU3RhdGUBAQslAC8BACMj" +
+           "CyUAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQEMJQAuAEQMJQAAAAH/////AQH/////" +
+           "AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -13295,6 +14264,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -13305,44 +14283,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "HgAAAFZpc2Nvc2l0eUNvbmRpdGlvblR5cGVJbnN0YW5jZQEBIiUBASIl/////xgAAAA1YIkKAgAAAAAA" +
-           "BwAAAEV2ZW50SWQBASMlAwAAAAArAAAAQSBnbG9iYWxseSB1bmlxdWUgaWRlbnRpZmllciBmb3IgdGhl" +
-           "IGV2ZW50LgAuAEQjJQAAAA//////AQH/////AAAAADVgiQoCAAAAAAAJAAAARXZlbnRUeXBlAQEkJQMA" +
-           "AAAAIgAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdHlwZS4ALgBEJCUAAAAR/////wEB////" +
-           "/wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBASUlAwAAAAAYAAAAVGhlIHNvdXJjZSBvZiB0aGUg" +
-           "ZXZlbnQuAC4ARCUlAAAAEf////8BAf////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQEmJQMA" +
-           "AAAAKQAAAEEgZGVzY3JpcHRpb24gb2YgdGhlIHNvdXJjZSBvZiB0aGUgZXZlbnQuAC4ARCYlAAAADP//" +
-           "//8BAf////8AAAAANWCJCgIAAAAAAAQAAABUaW1lAQEnJQMAAAAAGAAAAFdoZW4gdGhlIGV2ZW50IG9j" +
-           "Y3VycmVkLgAuAEQnJQAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAsAAABSZWNlaXZlVGltZQEB" +
-           "KCUDAAAAAD4AAABXaGVuIHRoZSBzZXJ2ZXIgcmVjZWl2ZWQgdGhlIGV2ZW50IGZyb20gdGhlIHVuZGVy" +
-           "bHlpbmcgc3lzdGVtLgAuAEQoJQAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAkAAABMb2NhbFRp" +
-           "bWUBASklAwAAAAA8AAAASW5mb3JtYXRpb24gYWJvdXQgdGhlIGxvY2FsIHRpbWUgd2hlcmUgdGhlIGV2" +
-           "ZW50IG9yaWdpbmF0ZWQuAC4ARCklAAABANAi/////wEB/////wAAAAA1YIkKAgAAAAAABwAAAE1lc3Nh" +
-           "Z2UBASolAwAAAAAlAAAAQSBsb2NhbGl6ZWQgZGVzY3JpcHRpb24gb2YgdGhlIGV2ZW50LgAuAEQqJQAA" +
-           "ABX/////AQH/////AAAAADVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkBASslAwAAAAAhAAAASW5kaWNhdGVz" +
-           "IGhvdyB1cmdlbnQgYW4gZXZlbnQgaXMuAC4ARCslAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAA" +
-           "AABDb25kaXRpb25DbGFzc0lkAQEsJQAuAEQsJQAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAA" +
-           "Q29uZGl0aW9uQ2xhc3NOYW1lAQEtJQAuAEQtJQAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAA" +
-           "Q29uZGl0aW9uTmFtZQEBLiUALgBELiUAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5j" +
-           "aElkAQEvJQAuAEQvJQAAABH/////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQEwJQAuAEQw" +
-           "JQAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQExJQAvAQAjIzElAAAA" +
-           "Ff////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBMiUALgBEMiUAAAAB/////wEB/////wAAAAAV" +
-           "YIkKAgAAAAAABwAAAFF1YWxpdHkBATolAC8BACojOiUAAAAT/////wEB/////wEAAAAVYIkKAgAAAAAA" +
-           "DwAAAFNvdXJjZVRpbWVzdGFtcAEBOyUALgBEOyUAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAM" +
-           "AAAATGFzdFNldmVyaXR5AQE8JQAvAQAqIzwlAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABT" +
-           "b3VyY2VUaW1lc3RhbXABAT0lAC4ARD0lAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENv" +
-           "bW1lbnQBAT4lAC8BACojPiUAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVz" +
-           "dGFtcAEBPyUALgBEPyUAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklk" +
-           "AQFAJQAuAERAJQAAAAz/////AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBQSUALwEARCNB" +
-           "JQAAAQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQFCJQAvAQBDI0IlAAABAQEA" +
-           "AAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAoAAABBZGRDb21tZW50AQFDJQAvAQBFI0MlAAABAQEAAAAB" +
-           "APkLAAEADQsBAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBRCUALgBERCUAAJYCAAAAAQAq" +
-           "AQFGAAAABwAAAEV2ZW50SWQAD/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBl" +
-           "dmVudCB0byBjb21tZW50LgEAKgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBj" +
-           "b21tZW50IHRvIGFkZCB0byB0aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAO" +
-           "AAAATVRDdXJyZW50U3RhdGUBAUclAC8AP0clAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABB" +
-           "Y3RpdmVTdGF0ZQEBSCUALwEAIyNIJQAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAUkl" +
-           "AC4AREklAAAAAf////8BAf////8AAAAA";
+           "HgAAAFZpc2Nvc2l0eUNvbmRpdGlvblR5cGVJbnN0YW5jZQEBIiUBASIl/////xgAAAAVYIkKAgAAAAAA" +
+           "BwAAAEV2ZW50SWQBASMlAC4ARCMlAAAAD/////8BAf////8AAAAAFWCJCgIAAAAAAAkAAABFdmVudFR5" +
+           "cGUBASQlAC4ARCQlAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQElJQAu" +
+           "AEQlJQAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEBJiUALgBEJiUAAAAM" +
+           "/////wEB/////wAAAAAVYIkKAgAAAAAABAAAAFRpbWUBASclAC4ARCclAAABACYB/////wEB/////wAA" +
+           "AAAVYIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQEoJQAuAEQoJQAAAQAmAf////8BAf////8AAAAAFWCJ" +
+           "CgIAAAAAAAkAAABMb2NhbFRpbWUBASklAC4ARCklAAABANAi/////wEB/////wAAAAAVYIkKAgAAAAAA" +
+           "BwAAAE1lc3NhZ2UBASolAC4ARColAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABTZXZlcml0" +
+           "eQEBKyUALgBEKyUAAAAF/////wEB/////wAAAAAVYIkKAgAAAAAAEAAAAENvbmRpdGlvbkNsYXNzSWQB" +
+           "ASwlAC4ARCwlAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAABIAAABDb25kaXRpb25DbGFzc05hbWUB" +
+           "AS0lAC4ARC0lAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0AAABDb25kaXRpb25OYW1lAQEuJQAu" +
+           "AEQuJQAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAQnJhbmNoSWQBAS8lAC4ARC8lAAAAEf//" +
+           "//8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRhaW4BATAlAC4ARDAlAAAAAf////8BAf////8AAAAA" +
+           "FWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBATElAC8BACMjMSUAAAAV/////wEB/////wEAAAAVYIkK" +
+           "AgAAAAAAAgAAAElkAQEyJQAuAEQyJQAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAUXVhbGl0" +
+           "eQEBOiUALwEAKiM6JQAAABP/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1w" +
+           "AQE7JQAuAEQ7JQAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABMYXN0U2V2ZXJpdHkBATwl" +
+           "AC8BACojPCUAAAAF/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBPSUA" +
+           "LgBEPSUAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAHAAAAQ29tbWVudAEBPiUALwEAKiM+JQAA" +
+           "ABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQE/JQAuAEQ/JQAAAQAm" +
+           "Af////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQBAUAlAC4AREAlAAAADP////8B" +
+           "Af////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxlAQFBJQAvAQBEI0ElAAABAQEAAAABAPkLAAEA8woA" +
+           "AAAABGGCCgQAAAAAAAYAAABFbmFibGUBAUIlAC8BAEMjQiUAAAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIK" +
+           "BAAAAAAACgAAAEFkZENvbW1lbnQBAUMlAC8BAEUjQyUAAAEBAQAAAAEA+QsAAQANCwEAAAAVYKkKAgAA" +
+           "AAAADgAAAElucHV0QXJndW1lbnRzAQFEJQAuAEREJQAAlgIAAAABACoBAUYAAAAHAAAARXZlbnRJZAAP" +
+           "/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHRvIGNvbW1lbnQuAQAq" +
+           "AQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAAAAAkAAAAVGhlIGNvbW1lbnQgdG8gYWRkIHRvIHRo" +
+           "ZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAABAA4AAABNVEN1cnJlbnRTdGF0ZQEB" +
+           "RyUALwA/RyUAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAEFjdGl2ZVN0YXRlAQFIJQAvAQAj" +
+           "I0glAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBSSUALgBESSUAAAAB/////wEB////" +
+           "/wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -13395,6 +14366,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -13405,44 +14385,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "HAAAAFZvbHRhZ2VDb25kaXRpb25UeXBlSW5zdGFuY2UBAV8lAQFfJf////8YAAAANWCJCgIAAAAAAAcA" +
-           "AABFdmVudElkAQFgJQMAAAAAKwAAAEEgZ2xvYmFsbHkgdW5pcXVlIGlkZW50aWZpZXIgZm9yIHRoZSBl" +
-           "dmVudC4ALgBEYCUAAAAP/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAEV2ZW50VHlwZQEBYSUDAAAA" +
-           "ACIAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHR5cGUuAC4ARGElAAAAEf////8BAf////8A" +
-           "AAAANWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQFiJQMAAAAAGAAAAFRoZSBzb3VyY2Ugb2YgdGhlIGV2" +
-           "ZW50LgAuAERiJQAAABH/////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEBYyUDAAAA" +
-           "ACkAAABBIGRlc2NyaXB0aW9uIG9mIHRoZSBzb3VyY2Ugb2YgdGhlIGV2ZW50LgAuAERjJQAAAAz/////" +
-           "AQH/////AAAAADVgiQoCAAAAAAAEAAAAVGltZQEBZCUDAAAAABgAAABXaGVuIHRoZSBldmVudCBvY2N1" +
-           "cnJlZC4ALgBEZCUAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUBAWUl" +
-           "AwAAAAA+AAAAV2hlbiB0aGUgc2VydmVyIHJlY2VpdmVkIHRoZSBldmVudCBmcm9tIHRoZSB1bmRlcmx5" +
-           "aW5nIHN5c3RlbS4ALgBEZSUAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAAJAAAATG9jYWxUaW1l" +
-           "AQFmJQMAAAAAPAAAAEluZm9ybWF0aW9uIGFib3V0IHRoZSBsb2NhbCB0aW1lIHdoZXJlIHRoZSBldmVu" +
-           "dCBvcmlnaW5hdGVkLgAuAERmJQAAAQDQIv////8BAf////8AAAAANWCJCgIAAAAAAAcAAABNZXNzYWdl" +
-           "AQFnJQMAAAAAJQAAAEEgbG9jYWxpemVkIGRlc2NyaXB0aW9uIG9mIHRoZSBldmVudC4ALgBEZyUAAAAV" +
-           "/////wEB/////wAAAAA1YIkKAgAAAAAACAAAAFNldmVyaXR5AQFoJQMAAAAAIQAAAEluZGljYXRlcyBo" +
-           "b3cgdXJnZW50IGFuIGV2ZW50IGlzLgAuAERoJQAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQAAAA" +
-           "Q29uZGl0aW9uQ2xhc3NJZAEBaSUALgBEaSUAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAENv" +
-           "bmRpdGlvbkNsYXNzTmFtZQEBaiUALgBEaiUAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAENv" +
-           "bmRpdGlvbk5hbWUBAWslAC4ARGslAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFuY2hJ" +
-           "ZAEBbCUALgBEbCUAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBbSUALgBEbSUA" +
-           "AAAB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBbiUALwEAIyNuJQAAABX/" +
-           "////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAW8lAC4ARG8lAAAAAf////8BAf////8AAAAAFWCJ" +
-           "CgIAAAAAAAcAAABRdWFsaXR5AQF3JQAvAQAqI3clAAAAE/////8BAf////8BAAAAFWCJCgIAAAAAAA8A" +
-           "AABTb3VyY2VUaW1lc3RhbXABAXglAC4ARHglAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAA" +
-           "AExhc3RTZXZlcml0eQEBeSUALwEAKiN5JQAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291" +
-           "cmNlVGltZXN0YW1wAQF6JQAuAER6JQAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABDb21t" +
-           "ZW50AQF7JQAvAQAqI3slAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3Rh" +
-           "bXABAXwlAC4ARHwlAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJZAEB" +
-           "fSUALgBEfSUAAAAM/////wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAX4lAC8BAEQjfiUA" +
-           "AAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBfyUALwEAQyN/JQAAAQEBAAAA" +
-           "AQD5CwABAPMKAAAAAARhggoEAAAAAAAKAAAAQWRkQ29tbWVudAEBgCUALwEARSOAJQAAAQEBAAAAAQD5" +
-           "CwABAA0LAQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAYElAC4ARIElAACWAgAAAAEAKgEB" +
-           "RgAAAAcAAABFdmVudElkAA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZl" +
-           "bnQgdG8gY29tbWVudC4BACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUgY29t" +
-           "bWVudCB0byBhZGQgdG8gdGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEADgAA" +
-           "AE1UQ3VycmVudFN0YXRlAQGEJQAvAD+EJQAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAAQWN0" +
-           "aXZlU3RhdGUBAYUlAC8BACMjhSUAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQGGJQAu" +
-           "AESGJQAAAAH/////AQH/////AAAAAA==";
+           "HAAAAFZvbHRhZ2VDb25kaXRpb25UeXBlSW5zdGFuY2UBAV8lAQFfJf////8YAAAAFWCJCgIAAAAAAAcA" +
+           "AABFdmVudElkAQFgJQAuAERgJQAAAA//////AQH/////AAAAABVgiQoCAAAAAAAJAAAARXZlbnRUeXBl" +
+           "AQFhJQAuAERhJQAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBYiUALgBE" +
+           "YiUAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBAWMlAC4ARGMlAAAADP//" +
+           "//8BAf////8AAAAAFWCJCgIAAAAAAAQAAABUaW1lAQFkJQAuAERkJQAAAQAmAf////8BAf////8AAAAA" +
+           "FWCJCgIAAAAAAAsAAABSZWNlaXZlVGltZQEBZSUALgBEZSUAAAEAJgH/////AQH/////AAAAABVgiQoC" +
+           "AAAAAAAJAAAATG9jYWxUaW1lAQFmJQAuAERmJQAAAQDQIv////8BAf////8AAAAAFWCJCgIAAAAAAAcA" +
+           "AABNZXNzYWdlAQFnJQAuAERnJQAAABX/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkB" +
+           "AWglAC4ARGglAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAAAABDb25kaXRpb25DbGFzc0lkAQFp" +
+           "JQAuAERpJQAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAAQ29uZGl0aW9uQ2xhc3NOYW1lAQFq" +
+           "JQAuAERqJQAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAAQ29uZGl0aW9uTmFtZQEBayUALgBE" +
+           "ayUAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5jaElkAQFsJQAuAERsJQAAABH/////" +
+           "AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQFtJQAuAERtJQAAAAH/////AQH/////AAAAABVg" +
+           "iQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQFuJQAvAQAjI24lAAAAFf////8BAf////8BAAAAFWCJCgIA" +
+           "AAAAAAIAAABJZAEBbyUALgBEbyUAAAAB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAFF1YWxpdHkB" +
+           "AXclAC8BACojdyUAAAAT/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEB" +
+           "eCUALgBEeCUAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAATGFzdFNldmVyaXR5AQF5JQAv" +
+           "AQAqI3klAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAXolAC4A" +
+           "RHolAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENvbW1lbnQBAXslAC8BACojeyUAAAAV" +
+           "/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBfCUALgBEfCUAAAEAJgH/" +
+           "////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklkAQF9JQAuAER9JQAAAAz/////AQH/" +
+           "////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBfiUALwEARCN+JQAAAQEBAAAAAQD5CwABAPMKAAAA" +
+           "AARhggoEAAAAAAAGAAAARW5hYmxlAQF/JQAvAQBDI38lAAABAQEAAAABAPkLAAEA8woAAAAABGGCCgQA" +
+           "AAAAAAoAAABBZGRDb21tZW50AQGAJQAvAQBFI4AlAAABAQEAAAABAPkLAAEADQsBAAAAFWCpCgIAAAAA" +
+           "AA4AAABJbnB1dEFyZ3VtZW50cwEBgSUALgBEgSUAAJYCAAAAAQAqAQFGAAAABwAAAEV2ZW50SWQAD///" +
+           "//8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0byBjb21tZW50LgEAKgEB" +
+           "QgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBjb21tZW50IHRvIGFkZCB0byB0aGUg" +
+           "Y29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAOAAAATVRDdXJyZW50U3RhdGUBAYQl" +
+           "AC8AP4QlAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABBY3RpdmVTdGF0ZQEBhSUALwEAIyOF" +
+           "JQAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAYYlAC4ARIYlAAAAAf////8BAf////8A" +
+           "AAAA";
         #endregion
         #endif
         #endregion
@@ -13495,6 +14468,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -13505,44 +14487,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "IgAAAFZvbHRfQW1wZXJhZ2VDb25kaXRpb25UeXBlSW5zdGFuY2UBAZwlAQGcJf////8YAAAANWCJCgIA" +
-           "AAAAAAcAAABFdmVudElkAQGdJQMAAAAAKwAAAEEgZ2xvYmFsbHkgdW5pcXVlIGlkZW50aWZpZXIgZm9y" +
-           "IHRoZSBldmVudC4ALgBEnSUAAAAP/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAEV2ZW50VHlwZQEB" +
-           "niUDAAAAACIAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHR5cGUuAC4ARJ4lAAAAEf////8B" +
-           "Af////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQGfJQMAAAAAGAAAAFRoZSBzb3VyY2Ugb2Yg" +
-           "dGhlIGV2ZW50LgAuAESfJQAAABH/////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEB" +
-           "oCUDAAAAACkAAABBIGRlc2NyaXB0aW9uIG9mIHRoZSBzb3VyY2Ugb2YgdGhlIGV2ZW50LgAuAESgJQAA" +
-           "AAz/////AQH/////AAAAADVgiQoCAAAAAAAEAAAAVGltZQEBoSUDAAAAABgAAABXaGVuIHRoZSBldmVu" +
-           "dCBvY2N1cnJlZC4ALgBEoSUAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAALAAAAUmVjZWl2ZVRp" +
-           "bWUBAaIlAwAAAAA+AAAAV2hlbiB0aGUgc2VydmVyIHJlY2VpdmVkIHRoZSBldmVudCBmcm9tIHRoZSB1" +
-           "bmRlcmx5aW5nIHN5c3RlbS4ALgBEoiUAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAAJAAAATG9j" +
-           "YWxUaW1lAQGjJQMAAAAAPAAAAEluZm9ybWF0aW9uIGFib3V0IHRoZSBsb2NhbCB0aW1lIHdoZXJlIHRo" +
-           "ZSBldmVudCBvcmlnaW5hdGVkLgAuAESjJQAAAQDQIv////8BAf////8AAAAANWCJCgIAAAAAAAcAAABN" +
-           "ZXNzYWdlAQGkJQMAAAAAJQAAAEEgbG9jYWxpemVkIGRlc2NyaXB0aW9uIG9mIHRoZSBldmVudC4ALgBE" +
-           "pCUAAAAV/////wEB/////wAAAAA1YIkKAgAAAAAACAAAAFNldmVyaXR5AQGlJQMAAAAAIQAAAEluZGlj" +
-           "YXRlcyBob3cgdXJnZW50IGFuIGV2ZW50IGlzLgAuAESlJQAAAAX/////AQH/////AAAAABVgiQoCAAAA" +
-           "AAAQAAAAQ29uZGl0aW9uQ2xhc3NJZAEBpiUALgBEpiUAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "EgAAAENvbmRpdGlvbkNsYXNzTmFtZQEBpyUALgBEpyUAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "DQAAAENvbmRpdGlvbk5hbWUBAaglAC4ARKglAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABC" +
-           "cmFuY2hJZAEBqSUALgBEqSUAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBqiUA" +
-           "LgBEqiUAAAAB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBqyUALwEAIyOr" +
-           "JQAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAawlAC4ARKwlAAAAAf////8BAf////8A" +
-           "AAAAFWCJCgIAAAAAAAcAAABRdWFsaXR5AQG0JQAvAQAqI7QlAAAAE/////8BAf////8BAAAAFWCJCgIA" +
-           "AAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAbUlAC4ARLUlAAABACYB/////wEB/////wAAAAAVYIkKAgAA" +
-           "AAAADAAAAExhc3RTZXZlcml0eQEBtiUALwEAKiO2JQAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAP" +
-           "AAAAU291cmNlVGltZXN0YW1wAQG3JQAuAES3JQAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcA" +
-           "AABDb21tZW50AQG4JQAvAQAqI7glAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VU" +
-           "aW1lc3RhbXABAbklAC4ARLklAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVz" +
-           "ZXJJZAEBuiUALgBEuiUAAAAM/////wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAbslAC8B" +
-           "AEQjuyUAAAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBvCUALwEAQyO8JQAA" +
-           "AQEBAAAAAQD5CwABAPMKAAAAAARhggoEAAAAAAAKAAAAQWRkQ29tbWVudAEBvSUALwEARSO9JQAAAQEB" +
-           "AAAAAQD5CwABAA0LAQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAb4lAC4ARL4lAACWAgAA" +
-           "AAEAKgEBRgAAAAcAAABFdmVudElkAA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0" +
-           "aGUgZXZlbnQgdG8gY29tbWVudC4BACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABU" +
-           "aGUgY29tbWVudCB0byBhZGQgdG8gdGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAA" +
-           "AAEADgAAAE1UQ3VycmVudFN0YXRlAQHBJQAvAD/BJQAAAAz/////AQH/////AAAAABVgiQoCAAAAAQAL" +
-           "AAAAQWN0aXZlU3RhdGUBAcIlAC8BACMjwiUAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElk" +
-           "AQHDJQAuAETDJQAAAAH/////AQH/////AAAAAA==";
+           "IgAAAFZvbHRfQW1wZXJhZ2VDb25kaXRpb25UeXBlSW5zdGFuY2UBAZwlAQGcJf////8YAAAAFWCJCgIA" +
+           "AAAAAAcAAABFdmVudElkAQGdJQAuAESdJQAAAA//////AQH/////AAAAABVgiQoCAAAAAAAJAAAARXZl" +
+           "bnRUeXBlAQGeJQAuAESeJQAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEB" +
+           "nyUALgBEnyUAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBAaAlAC4ARKAl" +
+           "AAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAQAAABUaW1lAQGhJQAuAEShJQAAAQAmAf////8BAf//" +
+           "//8AAAAAFWCJCgIAAAAAAAsAAABSZWNlaXZlVGltZQEBoiUALgBEoiUAAAEAJgH/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAAJAAAATG9jYWxUaW1lAQGjJQAuAESjJQAAAQDQIv////8BAf////8AAAAAFWCJCgIA" +
+           "AAAAAAcAAABNZXNzYWdlAQGkJQAuAESkJQAAABX/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAU2V2" +
+           "ZXJpdHkBAaUlAC4ARKUlAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAAAABDb25kaXRpb25DbGFz" +
+           "c0lkAQGmJQAuAESmJQAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAAQ29uZGl0aW9uQ2xhc3NO" +
+           "YW1lAQGnJQAuAESnJQAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAAQ29uZGl0aW9uTmFtZQEB" +
+           "qCUALgBEqCUAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5jaElkAQGpJQAuAESpJQAA" +
+           "ABH/////AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQGqJQAuAESqJQAAAAH/////AQH/////" +
+           "AAAAABVgiQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQGrJQAvAQAjI6slAAAAFf////8BAf////8BAAAA" +
+           "FWCJCgIAAAAAAAIAAABJZAEBrCUALgBErCUAAAAB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAFF1" +
+           "YWxpdHkBAbQlAC8BACojtCUAAAAT/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVz" +
+           "dGFtcAEBtSUALgBEtSUAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAATGFzdFNldmVyaXR5" +
+           "AQG2JQAvAQAqI7YlAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXAB" +
+           "AbclAC4ARLclAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENvbW1lbnQBAbglAC8BACoj" +
+           "uCUAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBuSUALgBEuSUA" +
+           "AAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklkAQG6JQAuAES6JQAAAAz/" +
+           "////AQH/////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBuyUALwEARCO7JQAAAQEBAAAAAQD5CwAB" +
+           "APMKAAAAAARhggoEAAAAAAAGAAAARW5hYmxlAQG8JQAvAQBDI7wlAAABAQEAAAABAPkLAAEA8woAAAAA" +
+           "BGGCCgQAAAAAAAoAAABBZGRDb21tZW50AQG9JQAvAQBFI70lAAABAQEAAAABAPkLAAEADQsBAAAAFWCp" +
+           "CgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBviUALgBEviUAAJYCAAAAAQAqAQFGAAAABwAAAEV2ZW50" +
+           "SWQAD/////8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0byBjb21tZW50" +
+           "LgEAKgEBQgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBjb21tZW50IHRvIGFkZCB0" +
+           "byB0aGUgY29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAOAAAATVRDdXJyZW50U3Rh" +
+           "dGUBAcElAC8AP8ElAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABBY3RpdmVTdGF0ZQEBwiUA" +
+           "LwEAIyPCJQAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAcMlAC4ARMMlAAAAAf////8B" +
+           "Af////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -13595,6 +14570,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -13606,43 +14590,36 @@ namespace Opc.Ua.MTConnect
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
            "KQAAAFZvbHRBbXBlcmFnZVJlYWN0aXZlQ29uZGl0aW9uVHlwZUluc3RhbmNlAQHZJQEB2SX/////GAAA" +
-           "ADVgiQoCAAAAAAAHAAAARXZlbnRJZAEB2iUDAAAAACsAAABBIGdsb2JhbGx5IHVuaXF1ZSBpZGVudGlm" +
-           "aWVyIGZvciB0aGUgZXZlbnQuAC4ARNolAAAAD/////8BAf////8AAAAANWCJCgIAAAAAAAkAAABFdmVu" +
-           "dFR5cGUBAdslAwAAAAAiAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0eXBlLgAuAETbJQAA" +
-           "ABH/////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEB3CUDAAAAABgAAABUaGUgc291" +
-           "cmNlIG9mIHRoZSBldmVudC4ALgBE3CUAAAAR/////wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJj" +
-           "ZU5hbWUBAd0lAwAAAAApAAAAQSBkZXNjcmlwdGlvbiBvZiB0aGUgc291cmNlIG9mIHRoZSBldmVudC4A" +
-           "LgBE3SUAAAAM/////wEB/////wAAAAA1YIkKAgAAAAAABAAAAFRpbWUBAd4lAwAAAAAYAAAAV2hlbiB0" +
-           "aGUgZXZlbnQgb2NjdXJyZWQuAC4ARN4lAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAACwAAAFJl" +
-           "Y2VpdmVUaW1lAQHfJQMAAAAAPgAAAFdoZW4gdGhlIHNlcnZlciByZWNlaXZlZCB0aGUgZXZlbnQgZnJv" +
-           "bSB0aGUgdW5kZXJseWluZyBzeXN0ZW0uAC4ARN8lAAABACYB/////wEB/////wAAAAA1YIkKAgAAAAAA" +
-           "CQAAAExvY2FsVGltZQEB4CUDAAAAADwAAABJbmZvcm1hdGlvbiBhYm91dCB0aGUgbG9jYWwgdGltZSB3" +
-           "aGVyZSB0aGUgZXZlbnQgb3JpZ2luYXRlZC4ALgBE4CUAAAEA0CL/////AQH/////AAAAADVgiQoCAAAA" +
-           "AAAHAAAATWVzc2FnZQEB4SUDAAAAACUAAABBIGxvY2FsaXplZCBkZXNjcmlwdGlvbiBvZiB0aGUgZXZl" +
-           "bnQuAC4AROElAAAAFf////8BAf////8AAAAANWCJCgIAAAAAAAgAAABTZXZlcml0eQEB4iUDAAAAACEA" +
-           "AABJbmRpY2F0ZXMgaG93IHVyZ2VudCBhbiBldmVudCBpcy4ALgBE4iUAAAAF/////wEB/////wAAAAAV" +
-           "YIkKAgAAAAAAEAAAAENvbmRpdGlvbkNsYXNzSWQBAeMlAC4AROMlAAAAEf////8BAf////8AAAAAFWCJ" +
-           "CgIAAAAAABIAAABDb25kaXRpb25DbGFzc05hbWUBAeQlAC4AROQlAAAAFf////8BAf////8AAAAAFWCJ" +
-           "CgIAAAAAAA0AAABDb25kaXRpb25OYW1lAQHlJQAuAETlJQAAAAz/////AQH/////AAAAABVgiQoCAAAA" +
-           "AAAIAAAAQnJhbmNoSWQBAeYlAC4AROYlAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAYAAABSZXRh" +
-           "aW4BAeclAC4AROclAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABFbmFibGVkU3RhdGUBAegl" +
-           "AC8BACMj6CUAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQHpJQAuAETpJQAAAAH/////" +
-           "AQH/////AAAAABVgiQoCAAAAAAAHAAAAUXVhbGl0eQEB8SUALwEAKiPxJQAAABP/////AQH/////AQAA" +
-           "ABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQHyJQAuAETyJQAAAQAmAf////8BAf////8AAAAA" +
-           "FWCJCgIAAAAAAAwAAABMYXN0U2V2ZXJpdHkBAfMlAC8BACoj8yUAAAAF/////wEB/////wEAAAAVYIkK" +
-           "AgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEB9CUALgBE9CUAAAEAJgH/////AQH/////AAAAABVgiQoC" +
-           "AAAAAAAHAAAAQ29tbWVudAEB9SUALwEAKiP1JQAAABX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAA" +
-           "U291cmNlVGltZXN0YW1wAQH2JQAuAET2JQAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAwAAABD" +
-           "bGllbnRVc2VySWQBAfclAC4ARPclAAAADP////8BAf////8AAAAABGGCCgQAAAAAAAcAAABEaXNhYmxl" +
-           "AQH4JQAvAQBEI/glAAABAQEAAAABAPkLAAEA8woAAAAABGGCCgQAAAAAAAYAAABFbmFibGUBAfklAC8B" +
-           "AEMj+SUAAAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAACgAAAEFkZENvbW1lbnQBAfolAC8BAEUj" +
-           "+iUAAAEBAQAAAAEA+QsAAQANCwEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQH7JQAuAET7" +
-           "JQAAlgIAAAABACoBAUYAAAAHAAAARXZlbnRJZAAP/////wAAAAADAAAAACgAAABUaGUgaWRlbnRpZmll" +
-           "ciBmb3IgdGhlIGV2ZW50IHRvIGNvbW1lbnQuAQAqAQFCAAAABwAAAENvbW1lbnQAFf////8AAAAAAwAA" +
-           "AAAkAAAAVGhlIGNvbW1lbnQgdG8gYWRkIHRvIHRoZSBjb25kaXRpb24uAQAoAQEAAAABAf////8AAAAA" +
-           "FWCJCgIAAAABAA4AAABNVEN1cnJlbnRTdGF0ZQEB/iUALwA//iUAAAAM/////wEB/////wAAAAAVYIkK" +
-           "AgAAAAEACwAAAEFjdGl2ZVN0YXRlAQH/JQAvAQAjI/8lAAAAFf////8BAf////8BAAAAFWCJCgIAAAAA" +
-           "AAIAAABJZAEBACYALgBEACYAAAAB/////wEB/////wAAAAA=";
+           "ABVgiQoCAAAAAAAHAAAARXZlbnRJZAEB2iUALgBE2iUAAAAP/////wEB/////wAAAAAVYIkKAgAAAAAA" +
+           "CQAAAEV2ZW50VHlwZQEB2yUALgBE2yUAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJj" +
+           "ZU5vZGUBAdwlAC4ARNwlAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOYW1lAQHd" +
+           "JQAuAETdJQAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAEAAAAVGltZQEB3iUALgBE3iUAAAEAJgH/" +
+           "////AQH/////AAAAABVgiQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUBAd8lAC4ARN8lAAABACYB/////wEB" +
+           "/////wAAAAAVYIkKAgAAAAAACQAAAExvY2FsVGltZQEB4CUALgBE4CUAAAEA0CL/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAAHAAAATWVzc2FnZQEB4SUALgBE4SUAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAA" +
+           "CAAAAFNldmVyaXR5AQHiJQAuAETiJQAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQAAAAQ29uZGl0" +
+           "aW9uQ2xhc3NJZAEB4yUALgBE4yUAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAENvbmRpdGlv" +
+           "bkNsYXNzTmFtZQEB5CUALgBE5CUAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAENvbmRpdGlv" +
+           "bk5hbWUBAeUlAC4AROUlAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFuY2hJZAEB5iUA" +
+           "LgBE5iUAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEB5yUALgBE5yUAAAAB////" +
+           "/wEB/////wAAAAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEB6CUALwEAIyPoJQAAABX/////AQH/" +
+           "////AQAAABVgiQoCAAAAAAACAAAASWQBAeklAC4AROklAAAAAf////8BAf////8AAAAAFWCJCgIAAAAA" +
+           "AAcAAABRdWFsaXR5AQHxJQAvAQAqI/ElAAAAE/////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3Vy" +
+           "Y2VUaW1lc3RhbXABAfIlAC4ARPIlAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAExhc3RT" +
+           "ZXZlcml0eQEB8yUALwEAKiPzJQAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGlt" +
+           "ZXN0YW1wAQH0JQAuAET0JQAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABDb21tZW50AQH1" +
+           "JQAvAQAqI/UlAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABAfYl" +
+           "AC4ARPYlAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJZAEB9yUALgBE" +
+           "9yUAAAAM/////wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBAfglAC8BAEQj+CUAAAEBAQAA" +
+           "AAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEB+SUALwEAQyP5JQAAAQEBAAAAAQD5CwAB" +
+           "APMKAAAAAARhggoEAAAAAAAKAAAAQWRkQ29tbWVudAEB+iUALwEARSP6JQAAAQEBAAAAAQD5CwABAA0L" +
+           "AQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAfslAC4ARPslAACWAgAAAAEAKgEBRgAAAAcA" +
+           "AABFdmVudElkAA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdG8g" +
+           "Y29tbWVudC4BACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUgY29tbWVudCB0" +
+           "byBhZGQgdG8gdGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEADgAAAE1UQ3Vy" +
+           "cmVudFN0YXRlAQH+JQAvAD/+JQAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAAQWN0aXZlU3Rh" +
+           "dGUBAf8lAC8BACMj/yUAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQEAJgAuAEQAJgAA" +
+           "AAH/////AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -13695,6 +14672,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -13705,44 +14691,37 @@ namespace Opc.Ua.MTConnect
         #region Initialization String
         private const string InitializationString =
            "AQAAACYAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTVRDb25uZWN0L/////8EYIAAAQAAAAEA" +
-           "HAAAAFdhdHRhZ2VDb25kaXRpb25UeXBlSW5zdGFuY2UBARYmAQEWJv////8YAAAANWCJCgIAAAAAAAcA" +
-           "AABFdmVudElkAQEXJgMAAAAAKwAAAEEgZ2xvYmFsbHkgdW5pcXVlIGlkZW50aWZpZXIgZm9yIHRoZSBl" +
-           "dmVudC4ALgBEFyYAAAAP/////wEB/////wAAAAA1YIkKAgAAAAAACQAAAEV2ZW50VHlwZQEBGCYDAAAA" +
-           "ACIAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHR5cGUuAC4ARBgmAAAAEf////8BAf////8A" +
-           "AAAANWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQEZJgMAAAAAGAAAAFRoZSBzb3VyY2Ugb2YgdGhlIGV2" +
-           "ZW50LgAuAEQZJgAAABH/////AQH/////AAAAADVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEBGiYDAAAA" +
-           "ACkAAABBIGRlc2NyaXB0aW9uIG9mIHRoZSBzb3VyY2Ugb2YgdGhlIGV2ZW50LgAuAEQaJgAAAAz/////" +
-           "AQH/////AAAAADVgiQoCAAAAAAAEAAAAVGltZQEBGyYDAAAAABgAAABXaGVuIHRoZSBldmVudCBvY2N1" +
-           "cnJlZC4ALgBEGyYAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAALAAAAUmVjZWl2ZVRpbWUBARwm" +
-           "AwAAAAA+AAAAV2hlbiB0aGUgc2VydmVyIHJlY2VpdmVkIHRoZSBldmVudCBmcm9tIHRoZSB1bmRlcmx5" +
-           "aW5nIHN5c3RlbS4ALgBEHCYAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAAJAAAATG9jYWxUaW1l" +
-           "AQEdJgMAAAAAPAAAAEluZm9ybWF0aW9uIGFib3V0IHRoZSBsb2NhbCB0aW1lIHdoZXJlIHRoZSBldmVu" +
-           "dCBvcmlnaW5hdGVkLgAuAEQdJgAAAQDQIv////8BAf////8AAAAANWCJCgIAAAAAAAcAAABNZXNzYWdl" +
-           "AQEeJgMAAAAAJQAAAEEgbG9jYWxpemVkIGRlc2NyaXB0aW9uIG9mIHRoZSBldmVudC4ALgBEHiYAAAAV" +
-           "/////wEB/////wAAAAA1YIkKAgAAAAAACAAAAFNldmVyaXR5AQEfJgMAAAAAIQAAAEluZGljYXRlcyBo" +
-           "b3cgdXJnZW50IGFuIGV2ZW50IGlzLgAuAEQfJgAAAAX/////AQH/////AAAAABVgiQoCAAAAAAAQAAAA" +
-           "Q29uZGl0aW9uQ2xhc3NJZAEBICYALgBEICYAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAAEgAAAENv" +
-           "bmRpdGlvbkNsYXNzTmFtZQEBISYALgBEISYAAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAENv" +
-           "bmRpdGlvbk5hbWUBASImAC4ARCImAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABCcmFuY2hJ" +
-           "ZAEBIyYALgBEIyYAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFJldGFpbgEBJCYALgBEJCYA" +
-           "AAAB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAEVuYWJsZWRTdGF0ZQEBJSYALwEAIyMlJgAAABX/" +
-           "////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBASYmAC4ARCYmAAAAAf////8BAf////8AAAAAFWCJ" +
-           "CgIAAAAAAAcAAABRdWFsaXR5AQEuJgAvAQAqIy4mAAAAE/////8BAf////8BAAAAFWCJCgIAAAAAAA8A" +
-           "AABTb3VyY2VUaW1lc3RhbXABAS8mAC4ARC8mAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAA" +
-           "AExhc3RTZXZlcml0eQEBMCYALwEAKiMwJgAAAAX/////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291" +
-           "cmNlVGltZXN0YW1wAQExJgAuAEQxJgAAAQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAcAAABDb21t" +
-           "ZW50AQEyJgAvAQAqIzImAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3Rh" +
-           "bXABATMmAC4ARDMmAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAADAAAAENsaWVudFVzZXJJZAEB" +
-           "NCYALgBENCYAAAAM/////wEB/////wAAAAAEYYIKBAAAAAAABwAAAERpc2FibGUBATUmAC8BAEQjNSYA" +
-           "AAEBAQAAAAEA+QsAAQDzCgAAAAAEYYIKBAAAAAAABgAAAEVuYWJsZQEBNiYALwEAQyM2JgAAAQEBAAAA" +
-           "AQD5CwABAPMKAAAAAARhggoEAAAAAAAKAAAAQWRkQ29tbWVudAEBNyYALwEARSM3JgAAAQEBAAAAAQD5" +
-           "CwABAA0LAQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBATgmAC4ARDgmAACWAgAAAAEAKgEB" +
-           "RgAAAAcAAABFdmVudElkAA//////AAAAAAMAAAAAKAAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZl" +
-           "bnQgdG8gY29tbWVudC4BACoBAUIAAAAHAAAAQ29tbWVudAAV/////wAAAAADAAAAACQAAABUaGUgY29t" +
-           "bWVudCB0byBhZGQgdG8gdGhlIGNvbmRpdGlvbi4BACgBAQAAAAEB/////wAAAAAVYIkKAgAAAAEADgAA" +
-           "AE1UQ3VycmVudFN0YXRlAQE7JgAvAD87JgAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAAQWN0" +
-           "aXZlU3RhdGUBATwmAC8BACMjPCYAAAAV/////wEB/////wEAAAAVYIkKAgAAAAAAAgAAAElkAQE9JgAu" +
-           "AEQ9JgAAAAH/////AQH/////AAAAAA==";
+           "HAAAAFdhdHRhZ2VDb25kaXRpb25UeXBlSW5zdGFuY2UBARYmAQEWJv////8YAAAAFWCJCgIAAAAAAAcA" +
+           "AABFdmVudElkAQEXJgAuAEQXJgAAAA//////AQH/////AAAAABVgiQoCAAAAAAAJAAAARXZlbnRUeXBl" +
+           "AQEYJgAuAEQYJgAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTm9kZQEBGSYALgBE" +
+           "GSYAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5hbWUBARomAC4ARBomAAAADP//" +
+           "//8BAf////8AAAAAFWCJCgIAAAAAAAQAAABUaW1lAQEbJgAuAEQbJgAAAQAmAf////8BAf////8AAAAA" +
+           "FWCJCgIAAAAAAAsAAABSZWNlaXZlVGltZQEBHCYALgBEHCYAAAEAJgH/////AQH/////AAAAABVgiQoC" +
+           "AAAAAAAJAAAATG9jYWxUaW1lAQEdJgAuAEQdJgAAAQDQIv////8BAf////8AAAAAFWCJCgIAAAAAAAcA" +
+           "AABNZXNzYWdlAQEeJgAuAEQeJgAAABX/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkB" +
+           "AR8mAC4ARB8mAAAABf////8BAf////8AAAAAFWCJCgIAAAAAABAAAABDb25kaXRpb25DbGFzc0lkAQEg" +
+           "JgAuAEQgJgAAABH/////AQH/////AAAAABVgiQoCAAAAAAASAAAAQ29uZGl0aW9uQ2xhc3NOYW1lAQEh" +
+           "JgAuAEQhJgAAABX/////AQH/////AAAAABVgiQoCAAAAAAANAAAAQ29uZGl0aW9uTmFtZQEBIiYALgBE" +
+           "IiYAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAEJyYW5jaElkAQEjJgAuAEQjJgAAABH/////" +
+           "AQH/////AAAAABVgiQoCAAAAAAAGAAAAUmV0YWluAQEkJgAuAEQkJgAAAAH/////AQH/////AAAAABVg" +
+           "iQoCAAAAAAAMAAAARW5hYmxlZFN0YXRlAQElJgAvAQAjIyUmAAAAFf////8BAf////8BAAAAFWCJCgIA" +
+           "AAAAAAIAAABJZAEBJiYALgBEJiYAAAAB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAFF1YWxpdHkB" +
+           "AS4mAC8BACojLiYAAAAT/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEB" +
+           "LyYALgBELyYAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAMAAAATGFzdFNldmVyaXR5AQEwJgAv" +
+           "AQAqIzAmAAAABf////8BAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABATEmAC4A" +
+           "RDEmAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABwAAAENvbW1lbnQBATImAC8BACojMiYAAAAV" +
+           "/////wEB/////wEAAAAVYIkKAgAAAAAADwAAAFNvdXJjZVRpbWVzdGFtcAEBMyYALgBEMyYAAAEAJgH/" +
+           "////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklkAQE0JgAuAEQ0JgAAAAz/////AQH/" +
+           "////AAAAAARhggoEAAAAAAAHAAAARGlzYWJsZQEBNSYALwEARCM1JgAAAQEBAAAAAQD5CwABAPMKAAAA" +
+           "AARhggoEAAAAAAAGAAAARW5hYmxlAQE2JgAvAQBDIzYmAAABAQEAAAABAPkLAAEA8woAAAAABGGCCgQA" +
+           "AAAAAAoAAABBZGRDb21tZW50AQE3JgAvAQBFIzcmAAABAQEAAAABAPkLAAEADQsBAAAAFWCpCgIAAAAA" +
+           "AA4AAABJbnB1dEFyZ3VtZW50cwEBOCYALgBEOCYAAJYCAAAAAQAqAQFGAAAABwAAAEV2ZW50SWQAD///" +
+           "//8AAAAAAwAAAAAoAAAAVGhlIGlkZW50aWZpZXIgZm9yIHRoZSBldmVudCB0byBjb21tZW50LgEAKgEB" +
+           "QgAAAAcAAABDb21tZW50ABX/////AAAAAAMAAAAAJAAAAFRoZSBjb21tZW50IHRvIGFkZCB0byB0aGUg" +
+           "Y29uZGl0aW9uLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAOAAAATVRDdXJyZW50U3RhdGUBATsm" +
+           "AC8APzsmAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABBY3RpdmVTdGF0ZQEBPCYALwEAIyM8" +
+           "JgAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBAT0mAC4ARD0mAAAAAf////8BAf////8A" +
+           "AAAA";
         #endregion
         #endif
         #endregion
@@ -13811,6 +14790,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -13857,9 +14845,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the CalibrationDate Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> CalibrationDate
         {
             get
@@ -13878,9 +14864,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the NextCalibrationDate Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> NextCalibrationDate
         {
             get
@@ -13899,9 +14883,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the CalibrationInitials Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> CalibrationInitials
         {
             get
@@ -14085,6 +15067,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -14152,6 +15143,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -14183,9 +15183,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the FirmwareVersion Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> FirmwareVersion
         {
             get
@@ -14315,6 +15313,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -14382,6 +15389,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -14412,9 +15428,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ComponentId Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<NodeId> ComponentId
         {
             get
@@ -14544,6 +15558,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -14582,9 +15605,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the SerialNumber Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> SerialNumber
         {
             get
@@ -14603,9 +15624,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Manufacturers Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> Manufacturers
         {
             get
@@ -14624,9 +15643,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the LastChangeTimestamp Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<DateTime> LastChangeTimestamp
         {
             get
@@ -14645,9 +15662,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the AssetDescription Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState AssetDescription
         {
             get
@@ -14874,6 +15889,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -14970,9 +15994,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the SignificantDigits Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState SignificantDigits
         {
             get
@@ -14991,9 +16013,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Units Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<EUInformation> Units
         {
             get
@@ -15012,9 +16032,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the NativeUnits Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<EUInformation> NativeUnits
         {
             get
@@ -15033,9 +16051,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the LastChangeTimestamp Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<DateTime> LastChangeTimestamp
         {
             get
@@ -15054,9 +16070,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Code Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> Code
         {
             get
@@ -15075,9 +16089,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Maximum Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<float> Maximum
         {
             get
@@ -15096,9 +16108,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Minimum Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<float> Minimum
         {
             get
@@ -15117,9 +16127,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Nominal Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<float> Nominal
         {
             get
@@ -15428,6 +16436,15 @@ namespace Opc.Ua.MTConnect
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
         }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
         #endregion
 
         #region Public Members
@@ -15488,6 +16505,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -15515,9 +16541,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ToolId Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> ToolId
         {
             get
@@ -15536,9 +16560,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the ToolGroup Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> ToolGroup
         {
             get
@@ -15695,6 +16717,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -15808,9 +16839,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the CutterStatus Variable.
-        /// </summary>
+        /// <remarks />
         public CutterStatusState<CutterStatusValueTypeEnum> CutterStatus
         {
             get
@@ -15829,9 +16858,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the ReconditionCount Variable.
-        /// </summary>
+        /// <remarks />
         public ReconditionCountState ReconditionCount
         {
             get
@@ -15850,9 +16877,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the ToolLife Variable.
-        /// </summary>
+        /// <remarks />
         public LifeState ToolLife
         {
             get
@@ -15871,9 +16896,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the ProgramToolNumber Variable.
-        /// </summary>
+        /// <remarks />
         public ProgramSpindleSpeedState ProgramToolNumber
         {
             get
@@ -15892,9 +16915,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Location Variable.
-        /// </summary>
+        /// <remarks />
         public LocationState Location
         {
             get
@@ -15913,9 +16934,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the ProgramSpindleSpeed Variable.
-        /// </summary>
+        /// <remarks />
         public ProgramSpindleSpeedState ProgramSpindleSpeed
         {
             get
@@ -15934,9 +16953,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the ProgramFeedRate Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> ProgramFeedRate
         {
             get
@@ -15955,9 +16972,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the ConnectionCodeMachineSide Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> ConnectionCodeMachineSide
         {
             get
@@ -16292,6 +17307,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -16309,9 +17333,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Status Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> Status
         {
             get
@@ -16431,6 +17453,15 @@ namespace Opc.Ua.MTConnect
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
         }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
         #endregion
 
         #region Public Members
@@ -16507,6 +17538,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -16533,9 +17573,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the MaximumCount Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState MaximumCount
         {
             get
@@ -16655,6 +17693,15 @@ namespace Opc.Ua.MTConnect
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
         }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
         #endregion
 
         #region Public Members
@@ -16731,6 +17778,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -16760,9 +17816,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Type Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<ToolLifeTypeEnum> Type
         {
             get
@@ -16781,9 +17835,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the CountDirection Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<ToolLifeDirectionTypeEnum> CountDirection
         {
             get
@@ -16802,9 +17854,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the WarningLevel Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<float> WarningLevel
         {
             get
@@ -16823,9 +17873,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Maximum Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<float> Maximum
         {
             get
@@ -17026,6 +18074,15 @@ namespace Opc.Ua.MTConnect
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
         }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
         #endregion
 
         #region Public Members
@@ -17102,6 +18159,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -17121,9 +18187,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Type Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<LocationsTypeEnum> Type
         {
             get
@@ -17142,9 +18206,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the NegativeOverlap Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState NegativeOverlap
         {
             get
@@ -17163,9 +18225,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the PositiveOverlap Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState PositiveOverlap
         {
             get
@@ -17339,6 +18399,15 @@ namespace Opc.Ua.MTConnect
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
         }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
         #endregion
 
         #region Public Members
@@ -17415,6 +18484,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -17434,9 +18512,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Maximum Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<float> Maximum
         {
             get
@@ -17455,9 +18531,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Minimum Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<float> Minimum
         {
             get
@@ -17476,9 +18550,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Nominal Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<float> Nominal
         {
             get
@@ -17652,6 +18724,15 @@ namespace Opc.Ua.MTConnect
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
         }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
         #endregion
 
         #region Public Members
@@ -17728,6 +18809,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -17747,9 +18837,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Maximum Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<float> Maximum
         {
             get
@@ -17768,9 +18856,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Minimum Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<float> Minimum
         {
             get
@@ -17789,9 +18875,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Nominal Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<float> Nominal
         {
             get
@@ -17965,6 +19049,15 @@ namespace Opc.Ua.MTConnect
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
         }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
         #endregion
 
         #region Public Members
@@ -18038,6 +19131,15 @@ namespace Opc.Ua.MTConnect
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -18127,9 +19229,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Indices Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> Indices
         {
             get
@@ -18148,9 +19248,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the ItemId Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> ItemId
         {
             get
@@ -18169,9 +19267,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Grade Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> Grade
         {
             get
@@ -18190,9 +19286,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Manufacturers Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> Manufacturers
         {
             get
@@ -18211,9 +19305,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Description Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> Description
         {
             get
@@ -18232,9 +19324,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Locus Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> Locus
         {
             get
@@ -18253,9 +19343,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the ItemLife Object.
-        /// </summary>
+        /// <remarks />
         public FolderState ItemLife
         {
             get
@@ -18274,9 +19362,7 @@ namespace Opc.Ua.MTConnect
             }
         }
 
-        /// <summary>
-        /// A description for the Measurements Object.
-        /// </summary>
+        /// <remarks />
         public FolderState Measurements
         {
             get
@@ -18585,6 +19671,15 @@ namespace Opc.Ua.MTConnect
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
         }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
         #endregion
 
         #region Public Members
@@ -18661,6 +19756,15 @@ namespace Opc.Ua.MTConnect
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -18714,6 +19818,15 @@ namespace Opc.Ua.MTConnect
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 

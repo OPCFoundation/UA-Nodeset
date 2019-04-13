@@ -1,3 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ *
+ * OPC Foundation MIT License 1.00
+ * 
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ * 
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * The complete license agreement can be found here:
+ * http://opcfoundation.org/License/MIT/1.00/
+-->
+
 <xs:schema
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd"
@@ -537,9 +567,6 @@
   <xs:element name="ListOfTrustListDataType" type="tns:ListOfTrustListDataType" nillable="true"></xs:element>
 
   <xs:simpleType  name="IdType">
-    <xs:annotation>
-      <xs:documentation>The type of identifier used in a node id.</xs:documentation>
-    </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:enumeration value="Numeric_0" />
       <xs:enumeration value="String_1" />
@@ -557,9 +584,6 @@
   <xs:element name="ListOfIdType" type="tns:ListOfIdType" nillable="true"></xs:element>
 
   <xs:simpleType  name="NodeClass">
-    <xs:annotation>
-      <xs:documentation>A mask specifying the class of the node.</xs:documentation>
-    </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:enumeration value="Unspecified_0" />
       <xs:enumeration value="Object_1" />
@@ -575,9 +599,6 @@
   <xs:element name="NodeClass" type="tns:NodeClass" />
 
   <xs:complexType name="Node">
-    <xs:annotation>
-      <xs:documentation>Specifies the attributes which belong to all nodes.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="NodeId" type="ua:NodeId" minOccurs="0" nillable="true" />
       <xs:element name="NodeClass" type="tns:NodeClass" minOccurs="0" />
@@ -619,9 +640,6 @@
   <xs:element name="TypeNode" type="tns:TypeNode" />
 
   <xs:complexType name="ObjectNode">
-    <xs:annotation>
-      <xs:documentation>Specifies the attributes which belong to object nodes.</xs:documentation>
-    </xs:annotation>
     <xs:complexContent mixed="false">
       <xs:extension base="tns:InstanceNode">
         <xs:sequence>
@@ -633,9 +651,6 @@
   <xs:element name="ObjectNode" type="tns:ObjectNode" />
 
   <xs:complexType name="ObjectTypeNode">
-    <xs:annotation>
-      <xs:documentation>Specifies the attributes which belong to object type nodes.</xs:documentation>
-    </xs:annotation>
     <xs:complexContent mixed="false">
       <xs:extension base="tns:TypeNode">
         <xs:sequence>
@@ -647,9 +662,6 @@
   <xs:element name="ObjectTypeNode" type="tns:ObjectTypeNode" />
 
   <xs:complexType name="VariableNode">
-    <xs:annotation>
-      <xs:documentation>Specifies the attributes which belong to variable nodes.</xs:documentation>
-    </xs:annotation>
     <xs:complexContent mixed="false">
       <xs:extension base="tns:InstanceNode">
         <xs:sequence>
@@ -668,9 +680,6 @@
   <xs:element name="VariableNode" type="tns:VariableNode" />
 
   <xs:complexType name="VariableTypeNode">
-    <xs:annotation>
-      <xs:documentation>Specifies the attributes which belong to variable type nodes.</xs:documentation>
-    </xs:annotation>
     <xs:complexContent mixed="false">
       <xs:extension base="tns:TypeNode">
         <xs:sequence>
@@ -686,9 +695,6 @@
   <xs:element name="VariableTypeNode" type="tns:VariableTypeNode" />
 
   <xs:complexType name="ReferenceTypeNode">
-    <xs:annotation>
-      <xs:documentation>Specifies the attributes which belong to reference type nodes.</xs:documentation>
-    </xs:annotation>
     <xs:complexContent mixed="false">
       <xs:extension base="tns:TypeNode">
         <xs:sequence>
@@ -702,9 +708,6 @@
   <xs:element name="ReferenceTypeNode" type="tns:ReferenceTypeNode" />
 
   <xs:complexType name="MethodNode">
-    <xs:annotation>
-      <xs:documentation>Specifies the attributes which belong to method nodes.</xs:documentation>
-    </xs:annotation>
     <xs:complexContent mixed="false">
       <xs:extension base="tns:InstanceNode">
         <xs:sequence>
@@ -740,9 +743,6 @@
   <xs:element name="DataTypeNode" type="tns:DataTypeNode" />
 
   <xs:complexType name="ReferenceNode">
-    <xs:annotation>
-      <xs:documentation>Specifies a reference which belongs to a node.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ReferenceTypeId" type="ua:NodeId" minOccurs="0" nillable="true" />
       <xs:element name="IsInverse" type="xs:boolean" minOccurs="0" />
@@ -759,9 +759,6 @@
   <xs:element name="ListOfReferenceNode" type="tns:ListOfReferenceNode" nillable="true"></xs:element>
 
   <xs:complexType name="Argument">
-    <xs:annotation>
-      <xs:documentation>An argument for a method.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="Name" type="xs:string" minOccurs="0" nillable="true" />
       <xs:element name="DataType" type="ua:NodeId" minOccurs="0" nillable="true" />
@@ -780,9 +777,6 @@
   <xs:element name="ListOfArgument" type="tns:ListOfArgument" nillable="true"></xs:element>
 
   <xs:complexType name="EnumValueType">
-    <xs:annotation>
-      <xs:documentation>A mapping between a value of an enumerated type and a name and description.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="Value" type="xs:long" minOccurs="0" />
       <xs:element name="DisplayName" type="ua:LocalizedText" minOccurs="0" nillable="true" />
@@ -799,9 +793,6 @@
   <xs:element name="ListOfEnumValueType" type="tns:ListOfEnumValueType" nillable="true"></xs:element>
 
   <xs:complexType name="OptionSet">
-    <xs:annotation>
-      <xs:documentation>This abstract Structured DataType is the base DataType for all DataTypes representing a bit mask.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="Value" type="xs:base64Binary" minOccurs="0" nillable="true" />
       <xs:element name="ValidBits" type="xs:base64Binary" minOccurs="0" nillable="true" />
@@ -817,9 +808,6 @@
   <xs:element name="ListOfOptionSet" type="tns:ListOfOptionSet" nillable="true"></xs:element>
 
   <xs:complexType name="Union">
-    <xs:annotation>
-      <xs:documentation>This abstract DataType is the base DataType for all union DataTypes.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
     </xs:sequence>
   </xs:complexType>
@@ -866,9 +854,6 @@
   <xs:element name="IntegerId" type="xs:unsignedInt" />
 
   <xs:simpleType  name="ApplicationType">
-    <xs:annotation>
-      <xs:documentation>The types of applications.</xs:documentation>
-    </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:enumeration value="Server_0" />
       <xs:enumeration value="Client_1" />
@@ -879,9 +864,6 @@
   <xs:element name="ApplicationType" type="tns:ApplicationType" />
 
   <xs:complexType name="ApplicationDescription">
-    <xs:annotation>
-      <xs:documentation>Describes an application and how to find it.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ApplicationUri" type="xs:string" minOccurs="0" nillable="true" />
       <xs:element name="ProductUri" type="xs:string" minOccurs="0" nillable="true" />
@@ -902,9 +884,6 @@
   <xs:element name="ListOfApplicationDescription" type="tns:ListOfApplicationDescription" nillable="true"></xs:element>
 
   <xs:complexType name="RequestHeader">
-    <xs:annotation>
-      <xs:documentation>The header passed with every server request.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="AuthenticationToken" type="ua:NodeId" minOccurs="0" nillable="true" />
       <xs:element name="Timestamp" type="xs:dateTime" minOccurs="0" />
@@ -918,9 +897,6 @@
   <xs:element name="RequestHeader" type="tns:RequestHeader" />
 
   <xs:complexType name="ResponseHeader">
-    <xs:annotation>
-      <xs:documentation>The header passed with every server response.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="Timestamp" type="xs:dateTime" minOccurs="0" />
       <xs:element name="RequestHandle" type="xs:unsignedInt" minOccurs="0" />
@@ -933,9 +909,6 @@
   <xs:element name="ResponseHeader" type="tns:ResponseHeader" />
 
   <xs:complexType name="ServiceFault">
-    <xs:annotation>
-      <xs:documentation>The response returned by all services when there is a service level error.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ResponseHeader" type="tns:ResponseHeader" minOccurs="0" nillable="true" />
     </xs:sequence>
@@ -943,9 +916,6 @@
   <xs:element name="ServiceFault" type="tns:ServiceFault" />
 
   <xs:complexType name="FindServersRequest">
-    <xs:annotation>
-      <xs:documentation>Finds the servers known to the discovery server.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="RequestHeader" type="tns:RequestHeader" minOccurs="0" nillable="true" />
       <xs:element name="EndpointUrl" type="xs:string" minOccurs="0" nillable="true" />
@@ -956,9 +926,6 @@
   <xs:element name="FindServersRequest" type="tns:FindServersRequest" />
 
   <xs:complexType name="FindServersResponse">
-    <xs:annotation>
-      <xs:documentation>Finds the servers known to the discovery server.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ResponseHeader" type="tns:ResponseHeader" minOccurs="0" nillable="true" />
       <xs:element name="Servers" type="tns:ListOfApplicationDescription" minOccurs="0" nillable="true" />
@@ -1005,9 +972,6 @@
   <xs:element name="ApplicationInstanceCertificate" type="xs:base64Binary" />
 
   <xs:simpleType  name="MessageSecurityMode">
-    <xs:annotation>
-      <xs:documentation>The type of security to use on a message.</xs:documentation>
-    </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:enumeration value="Invalid_0" />
       <xs:enumeration value="None_1" />
@@ -1018,9 +982,6 @@
   <xs:element name="MessageSecurityMode" type="tns:MessageSecurityMode" />
 
   <xs:simpleType  name="UserTokenType">
-    <xs:annotation>
-      <xs:documentation>The possible user token types.</xs:documentation>
-    </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:enumeration value="Anonymous_0" />
       <xs:enumeration value="UserName_1" />
@@ -1031,9 +992,6 @@
   <xs:element name="UserTokenType" type="tns:UserTokenType" />
 
   <xs:complexType name="UserTokenPolicy">
-    <xs:annotation>
-      <xs:documentation>Describes a user token that can be used with a server.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="PolicyId" type="xs:string" minOccurs="0" nillable="true" />
       <xs:element name="TokenType" type="tns:UserTokenType" minOccurs="0" />
@@ -1052,9 +1010,6 @@
   <xs:element name="ListOfUserTokenPolicy" type="tns:ListOfUserTokenPolicy" nillable="true"></xs:element>
 
   <xs:complexType name="EndpointDescription">
-    <xs:annotation>
-      <xs:documentation>The description of a endpoint that can be used to access a server.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="EndpointUrl" type="xs:string" minOccurs="0" nillable="true" />
       <xs:element name="Server" type="tns:ApplicationDescription" minOccurs="0" nillable="true" />
@@ -1076,9 +1031,6 @@
   <xs:element name="ListOfEndpointDescription" type="tns:ListOfEndpointDescription" nillable="true"></xs:element>
 
   <xs:complexType name="GetEndpointsRequest">
-    <xs:annotation>
-      <xs:documentation>Gets the endpoints used by the server.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="RequestHeader" type="tns:RequestHeader" minOccurs="0" nillable="true" />
       <xs:element name="EndpointUrl" type="xs:string" minOccurs="0" nillable="true" />
@@ -1089,9 +1041,6 @@
   <xs:element name="GetEndpointsRequest" type="tns:GetEndpointsRequest" />
 
   <xs:complexType name="GetEndpointsResponse">
-    <xs:annotation>
-      <xs:documentation>Gets the endpoints used by the server.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ResponseHeader" type="tns:ResponseHeader" minOccurs="0" nillable="true" />
       <xs:element name="Endpoints" type="tns:ListOfEndpointDescription" minOccurs="0" nillable="true" />
@@ -1100,9 +1049,6 @@
   <xs:element name="GetEndpointsResponse" type="tns:GetEndpointsResponse" />
 
   <xs:complexType name="RegisteredServer">
-    <xs:annotation>
-      <xs:documentation>The information required to register a server with a discovery server.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ServerUri" type="xs:string" minOccurs="0" nillable="true" />
       <xs:element name="ProductUri" type="xs:string" minOccurs="0" nillable="true" />
@@ -1124,9 +1070,6 @@
   <xs:element name="ListOfRegisteredServer" type="tns:ListOfRegisteredServer" nillable="true"></xs:element>
 
   <xs:complexType name="RegisterServerRequest">
-    <xs:annotation>
-      <xs:documentation>Registers a server with the discovery server.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="RequestHeader" type="tns:RequestHeader" minOccurs="0" nillable="true" />
       <xs:element name="Server" type="tns:RegisteredServer" minOccurs="0" nillable="true" />
@@ -1135,9 +1078,6 @@
   <xs:element name="RegisterServerRequest" type="tns:RegisterServerRequest" />
 
   <xs:complexType name="RegisterServerResponse">
-    <xs:annotation>
-      <xs:documentation>Registers a server with the discovery server.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ResponseHeader" type="tns:ResponseHeader" minOccurs="0" nillable="true" />
     </xs:sequence>
@@ -1145,18 +1085,12 @@
   <xs:element name="RegisterServerResponse" type="tns:RegisterServerResponse" />
 
   <xs:complexType name="DiscoveryConfiguration">
-    <xs:annotation>
-      <xs:documentation>A base type for discovery configuration information.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
     </xs:sequence>
   </xs:complexType>
   <xs:element name="DiscoveryConfiguration" type="tns:DiscoveryConfiguration" />
 
   <xs:complexType name="MdnsDiscoveryConfiguration">
-    <xs:annotation>
-      <xs:documentation>The discovery information needed for mDNS registration.</xs:documentation>
-    </xs:annotation>
     <xs:complexContent mixed="false">
       <xs:extension base="tns:DiscoveryConfiguration">
         <xs:sequence>
@@ -1187,9 +1121,6 @@
   <xs:element name="RegisterServer2Response" type="tns:RegisterServer2Response" />
 
   <xs:simpleType  name="SecurityTokenRequestType">
-    <xs:annotation>
-      <xs:documentation>Indicates whether a token if being created or renewed.</xs:documentation>
-    </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:enumeration value="Issue_0" />
       <xs:enumeration value="Renew_1" />
@@ -1198,9 +1129,6 @@
   <xs:element name="SecurityTokenRequestType" type="tns:SecurityTokenRequestType" />
 
   <xs:complexType name="ChannelSecurityToken">
-    <xs:annotation>
-      <xs:documentation>The token that identifies a set of keys for an active secure channel.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ChannelId" type="xs:unsignedInt" minOccurs="0" />
       <xs:element name="TokenId" type="xs:unsignedInt" minOccurs="0" />
@@ -1211,9 +1139,6 @@
   <xs:element name="ChannelSecurityToken" type="tns:ChannelSecurityToken" />
 
   <xs:complexType name="OpenSecureChannelRequest">
-    <xs:annotation>
-      <xs:documentation>Creates a secure channel with a server.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="RequestHeader" type="tns:RequestHeader" minOccurs="0" nillable="true" />
       <xs:element name="ClientProtocolVersion" type="xs:unsignedInt" minOccurs="0" />
@@ -1226,9 +1151,6 @@
   <xs:element name="OpenSecureChannelRequest" type="tns:OpenSecureChannelRequest" />
 
   <xs:complexType name="OpenSecureChannelResponse">
-    <xs:annotation>
-      <xs:documentation>Creates a secure channel with a server.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ResponseHeader" type="tns:ResponseHeader" minOccurs="0" nillable="true" />
       <xs:element name="ServerProtocolVersion" type="xs:unsignedInt" minOccurs="0" />
@@ -1239,9 +1161,6 @@
   <xs:element name="OpenSecureChannelResponse" type="tns:OpenSecureChannelResponse" />
 
   <xs:complexType name="CloseSecureChannelRequest">
-    <xs:annotation>
-      <xs:documentation>Closes a secure channel.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="RequestHeader" type="tns:RequestHeader" minOccurs="0" nillable="true" />
     </xs:sequence>
@@ -1249,9 +1168,6 @@
   <xs:element name="CloseSecureChannelRequest" type="tns:CloseSecureChannelRequest" />
 
   <xs:complexType name="CloseSecureChannelResponse">
-    <xs:annotation>
-      <xs:documentation>Closes a secure channel.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ResponseHeader" type="tns:ResponseHeader" minOccurs="0" nillable="true" />
     </xs:sequence>
@@ -1259,9 +1175,6 @@
   <xs:element name="CloseSecureChannelResponse" type="tns:CloseSecureChannelResponse" />
 
   <xs:complexType name="SignedSoftwareCertificate">
-    <xs:annotation>
-      <xs:documentation>A software certificate with a digital signature.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="CertificateData" type="xs:base64Binary" minOccurs="0" nillable="true" />
       <xs:element name="Signature" type="xs:base64Binary" minOccurs="0" nillable="true" />
@@ -1279,9 +1192,6 @@
   <xs:element name="SessionAuthenticationToken" type="ua:NodeId" />
 
   <xs:complexType name="SignatureData">
-    <xs:annotation>
-      <xs:documentation>A digital signature.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="Algorithm" type="xs:string" minOccurs="0" nillable="true" />
       <xs:element name="Signature" type="xs:base64Binary" minOccurs="0" nillable="true" />
@@ -1290,9 +1200,6 @@
   <xs:element name="SignatureData" type="tns:SignatureData" />
 
   <xs:complexType name="CreateSessionRequest">
-    <xs:annotation>
-      <xs:documentation>Creates a new session with the server.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="RequestHeader" type="tns:RequestHeader" minOccurs="0" nillable="true" />
       <xs:element name="ClientDescription" type="tns:ApplicationDescription" minOccurs="0" nillable="true" />
@@ -1308,9 +1215,6 @@
   <xs:element name="CreateSessionRequest" type="tns:CreateSessionRequest" />
 
   <xs:complexType name="CreateSessionResponse">
-    <xs:annotation>
-      <xs:documentation>Creates a new session with the server.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ResponseHeader" type="tns:ResponseHeader" minOccurs="0" nillable="true" />
       <xs:element name="SessionId" type="ua:NodeId" minOccurs="0" nillable="true" />
@@ -1327,9 +1231,6 @@
   <xs:element name="CreateSessionResponse" type="tns:CreateSessionResponse" />
 
   <xs:complexType name="UserIdentityToken">
-    <xs:annotation>
-      <xs:documentation>A base type for a user identity token.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="PolicyId" type="xs:string" minOccurs="0" nillable="true" />
     </xs:sequence>
@@ -1337,9 +1238,6 @@
   <xs:element name="UserIdentityToken" type="tns:UserIdentityToken" />
 
   <xs:complexType name="AnonymousIdentityToken">
-    <xs:annotation>
-      <xs:documentation>A token representing an anonymous user.</xs:documentation>
-    </xs:annotation>
     <xs:complexContent mixed="false">
       <xs:extension base="tns:UserIdentityToken">
         <xs:sequence>
@@ -1350,9 +1248,6 @@
   <xs:element name="AnonymousIdentityToken" type="tns:AnonymousIdentityToken" />
 
   <xs:complexType name="UserNameIdentityToken">
-    <xs:annotation>
-      <xs:documentation>A token representing a user identified by a user name and password.</xs:documentation>
-    </xs:annotation>
     <xs:complexContent mixed="false">
       <xs:extension base="tns:UserIdentityToken">
         <xs:sequence>
@@ -1366,9 +1261,6 @@
   <xs:element name="UserNameIdentityToken" type="tns:UserNameIdentityToken" />
 
   <xs:complexType name="X509IdentityToken">
-    <xs:annotation>
-      <xs:documentation>A token representing a user identified by an X509 certificate.</xs:documentation>
-    </xs:annotation>
     <xs:complexContent mixed="false">
       <xs:extension base="tns:UserIdentityToken">
         <xs:sequence>
@@ -1380,9 +1272,6 @@
   <xs:element name="X509IdentityToken" type="tns:X509IdentityToken" />
 
   <xs:complexType name="IssuedIdentityToken">
-    <xs:annotation>
-      <xs:documentation>A token representing a user identified by a WS-Security XML token.</xs:documentation>
-    </xs:annotation>
     <xs:complexContent mixed="false">
       <xs:extension base="tns:UserIdentityToken">
         <xs:sequence>
@@ -1395,9 +1284,6 @@
   <xs:element name="IssuedIdentityToken" type="tns:IssuedIdentityToken" />
 
   <xs:complexType name="ActivateSessionRequest">
-    <xs:annotation>
-      <xs:documentation>Activates a session with the server.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="RequestHeader" type="tns:RequestHeader" minOccurs="0" nillable="true" />
       <xs:element name="ClientSignature" type="tns:SignatureData" minOccurs="0" nillable="true" />
@@ -1410,9 +1296,6 @@
   <xs:element name="ActivateSessionRequest" type="tns:ActivateSessionRequest" />
 
   <xs:complexType name="ActivateSessionResponse">
-    <xs:annotation>
-      <xs:documentation>Activates a session with the server.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ResponseHeader" type="tns:ResponseHeader" minOccurs="0" nillable="true" />
       <xs:element name="ServerNonce" type="xs:base64Binary" minOccurs="0" nillable="true" />
@@ -1423,9 +1306,6 @@
   <xs:element name="ActivateSessionResponse" type="tns:ActivateSessionResponse" />
 
   <xs:complexType name="CloseSessionRequest">
-    <xs:annotation>
-      <xs:documentation>Closes a session with the server.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="RequestHeader" type="tns:RequestHeader" minOccurs="0" nillable="true" />
       <xs:element name="DeleteSubscriptions" type="xs:boolean" minOccurs="0" />
@@ -1434,9 +1314,6 @@
   <xs:element name="CloseSessionRequest" type="tns:CloseSessionRequest" />
 
   <xs:complexType name="CloseSessionResponse">
-    <xs:annotation>
-      <xs:documentation>Closes a session with the server.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ResponseHeader" type="tns:ResponseHeader" minOccurs="0" nillable="true" />
     </xs:sequence>
@@ -1444,9 +1321,6 @@
   <xs:element name="CloseSessionResponse" type="tns:CloseSessionResponse" />
 
   <xs:complexType name="CancelRequest">
-    <xs:annotation>
-      <xs:documentation>Cancels an outstanding request.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="RequestHeader" type="tns:RequestHeader" minOccurs="0" nillable="true" />
       <xs:element name="RequestHandle" type="xs:unsignedInt" minOccurs="0" />
@@ -1455,9 +1329,6 @@
   <xs:element name="CancelRequest" type="tns:CancelRequest" />
 
   <xs:complexType name="CancelResponse">
-    <xs:annotation>
-      <xs:documentation>Cancels an outstanding request.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ResponseHeader" type="tns:ResponseHeader" minOccurs="0" nillable="true" />
       <xs:element name="CancelCount" type="xs:unsignedInt" minOccurs="0" />
@@ -1466,9 +1337,6 @@
   <xs:element name="CancelResponse" type="tns:CancelResponse" />
 
   <xs:simpleType  name="NodeAttributesMask">
-    <xs:annotation>
-      <xs:documentation>The bits used to specify default attributes for a new node.</xs:documentation>
-    </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:enumeration value="None_0" />
       <xs:enumeration value="AccessLevel_1" />
@@ -1507,9 +1375,6 @@
   <xs:element name="NodeAttributesMask" type="tns:NodeAttributesMask" />
 
   <xs:complexType name="NodeAttributes">
-    <xs:annotation>
-      <xs:documentation>The base attributes for all nodes.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="SpecifiedAttributes" type="xs:unsignedInt" minOccurs="0" />
       <xs:element name="DisplayName" type="ua:LocalizedText" minOccurs="0" nillable="true" />
@@ -1521,9 +1386,6 @@
   <xs:element name="NodeAttributes" type="tns:NodeAttributes" />
 
   <xs:complexType name="ObjectAttributes">
-    <xs:annotation>
-      <xs:documentation>The attributes for an object node.</xs:documentation>
-    </xs:annotation>
     <xs:complexContent mixed="false">
       <xs:extension base="tns:NodeAttributes">
         <xs:sequence>
@@ -1535,9 +1397,6 @@
   <xs:element name="ObjectAttributes" type="tns:ObjectAttributes" />
 
   <xs:complexType name="VariableAttributes">
-    <xs:annotation>
-      <xs:documentation>The attributes for a variable node.</xs:documentation>
-    </xs:annotation>
     <xs:complexContent mixed="false">
       <xs:extension base="tns:NodeAttributes">
         <xs:sequence>
@@ -1556,9 +1415,6 @@
   <xs:element name="VariableAttributes" type="tns:VariableAttributes" />
 
   <xs:complexType name="MethodAttributes">
-    <xs:annotation>
-      <xs:documentation>The attributes for a method node.</xs:documentation>
-    </xs:annotation>
     <xs:complexContent mixed="false">
       <xs:extension base="tns:NodeAttributes">
         <xs:sequence>
@@ -1571,9 +1427,6 @@
   <xs:element name="MethodAttributes" type="tns:MethodAttributes" />
 
   <xs:complexType name="ObjectTypeAttributes">
-    <xs:annotation>
-      <xs:documentation>The attributes for an object type node.</xs:documentation>
-    </xs:annotation>
     <xs:complexContent mixed="false">
       <xs:extension base="tns:NodeAttributes">
         <xs:sequence>
@@ -1585,9 +1438,6 @@
   <xs:element name="ObjectTypeAttributes" type="tns:ObjectTypeAttributes" />
 
   <xs:complexType name="VariableTypeAttributes">
-    <xs:annotation>
-      <xs:documentation>The attributes for a variable type node.</xs:documentation>
-    </xs:annotation>
     <xs:complexContent mixed="false">
       <xs:extension base="tns:NodeAttributes">
         <xs:sequence>
@@ -1603,9 +1453,6 @@
   <xs:element name="VariableTypeAttributes" type="tns:VariableTypeAttributes" />
 
   <xs:complexType name="ReferenceTypeAttributes">
-    <xs:annotation>
-      <xs:documentation>The attributes for a reference type node.</xs:documentation>
-    </xs:annotation>
     <xs:complexContent mixed="false">
       <xs:extension base="tns:NodeAttributes">
         <xs:sequence>
@@ -1619,9 +1466,6 @@
   <xs:element name="ReferenceTypeAttributes" type="tns:ReferenceTypeAttributes" />
 
   <xs:complexType name="DataTypeAttributes">
-    <xs:annotation>
-      <xs:documentation>The attributes for a data type node.</xs:documentation>
-    </xs:annotation>
     <xs:complexContent mixed="false">
       <xs:extension base="tns:NodeAttributes">
         <xs:sequence>
@@ -1633,9 +1477,6 @@
   <xs:element name="DataTypeAttributes" type="tns:DataTypeAttributes" />
 
   <xs:complexType name="ViewAttributes">
-    <xs:annotation>
-      <xs:documentation>The attributes for a view node.</xs:documentation>
-    </xs:annotation>
     <xs:complexContent mixed="false">
       <xs:extension base="tns:NodeAttributes">
         <xs:sequence>
@@ -1648,9 +1489,6 @@
   <xs:element name="ViewAttributes" type="tns:ViewAttributes" />
 
   <xs:complexType name="AddNodesItem">
-    <xs:annotation>
-      <xs:documentation>A request to add a node to the server address space.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ParentNodeId" type="ua:ExpandedNodeId" minOccurs="0" nillable="true" />
       <xs:element name="ReferenceTypeId" type="ua:NodeId" minOccurs="0" nillable="true" />
@@ -1671,9 +1509,6 @@
   <xs:element name="ListOfAddNodesItem" type="tns:ListOfAddNodesItem" nillable="true"></xs:element>
 
   <xs:complexType name="AddNodesResult">
-    <xs:annotation>
-      <xs:documentation>A result of an add node operation.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="StatusCode" type="ua:StatusCode" minOccurs="0" />
       <xs:element name="AddedNodeId" type="ua:NodeId" minOccurs="0" nillable="true" />
@@ -1689,9 +1524,6 @@
   <xs:element name="ListOfAddNodesResult" type="tns:ListOfAddNodesResult" nillable="true"></xs:element>
 
   <xs:complexType name="AddNodesRequest">
-    <xs:annotation>
-      <xs:documentation>Adds one or more nodes to the server address space.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="RequestHeader" type="tns:RequestHeader" minOccurs="0" nillable="true" />
       <xs:element name="NodesToAdd" type="tns:ListOfAddNodesItem" minOccurs="0" nillable="true" />
@@ -1700,9 +1532,6 @@
   <xs:element name="AddNodesRequest" type="tns:AddNodesRequest" />
 
   <xs:complexType name="AddNodesResponse">
-    <xs:annotation>
-      <xs:documentation>Adds one or more nodes to the server address space.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ResponseHeader" type="tns:ResponseHeader" minOccurs="0" nillable="true" />
       <xs:element name="Results" type="tns:ListOfAddNodesResult" minOccurs="0" nillable="true" />
@@ -1712,9 +1541,6 @@
   <xs:element name="AddNodesResponse" type="tns:AddNodesResponse" />
 
   <xs:complexType name="AddReferencesItem">
-    <xs:annotation>
-      <xs:documentation>A request to add a reference to the server address space.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="SourceNodeId" type="ua:NodeId" minOccurs="0" nillable="true" />
       <xs:element name="ReferenceTypeId" type="ua:NodeId" minOccurs="0" nillable="true" />
@@ -1734,9 +1560,6 @@
   <xs:element name="ListOfAddReferencesItem" type="tns:ListOfAddReferencesItem" nillable="true"></xs:element>
 
   <xs:complexType name="AddReferencesRequest">
-    <xs:annotation>
-      <xs:documentation>Adds one or more references to the server address space.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="RequestHeader" type="tns:RequestHeader" minOccurs="0" nillable="true" />
       <xs:element name="ReferencesToAdd" type="tns:ListOfAddReferencesItem" minOccurs="0" nillable="true" />
@@ -1745,9 +1568,6 @@
   <xs:element name="AddReferencesRequest" type="tns:AddReferencesRequest" />
 
   <xs:complexType name="AddReferencesResponse">
-    <xs:annotation>
-      <xs:documentation>Adds one or more references to the server address space.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ResponseHeader" type="tns:ResponseHeader" minOccurs="0" nillable="true" />
       <xs:element name="Results" type="ua:ListOfStatusCode" minOccurs="0" nillable="true" />
@@ -1757,9 +1577,6 @@
   <xs:element name="AddReferencesResponse" type="tns:AddReferencesResponse" />
 
   <xs:complexType name="DeleteNodesItem">
-    <xs:annotation>
-      <xs:documentation>A request to delete a node to the server address space.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="NodeId" type="ua:NodeId" minOccurs="0" nillable="true" />
       <xs:element name="DeleteTargetReferences" type="xs:boolean" minOccurs="0" />
@@ -1775,9 +1592,6 @@
   <xs:element name="ListOfDeleteNodesItem" type="tns:ListOfDeleteNodesItem" nillable="true"></xs:element>
 
   <xs:complexType name="DeleteNodesRequest">
-    <xs:annotation>
-      <xs:documentation>Delete one or more nodes from the server address space.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="RequestHeader" type="tns:RequestHeader" minOccurs="0" nillable="true" />
       <xs:element name="NodesToDelete" type="tns:ListOfDeleteNodesItem" minOccurs="0" nillable="true" />
@@ -1786,9 +1600,6 @@
   <xs:element name="DeleteNodesRequest" type="tns:DeleteNodesRequest" />
 
   <xs:complexType name="DeleteNodesResponse">
-    <xs:annotation>
-      <xs:documentation>Delete one or more nodes from the server address space.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ResponseHeader" type="tns:ResponseHeader" minOccurs="0" nillable="true" />
       <xs:element name="Results" type="ua:ListOfStatusCode" minOccurs="0" nillable="true" />
@@ -1798,9 +1609,6 @@
   <xs:element name="DeleteNodesResponse" type="tns:DeleteNodesResponse" />
 
   <xs:complexType name="DeleteReferencesItem">
-    <xs:annotation>
-      <xs:documentation>A request to delete a node from the server address space.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="SourceNodeId" type="ua:NodeId" minOccurs="0" nillable="true" />
       <xs:element name="ReferenceTypeId" type="ua:NodeId" minOccurs="0" nillable="true" />
@@ -1819,9 +1627,6 @@
   <xs:element name="ListOfDeleteReferencesItem" type="tns:ListOfDeleteReferencesItem" nillable="true"></xs:element>
 
   <xs:complexType name="DeleteReferencesRequest">
-    <xs:annotation>
-      <xs:documentation>Delete one or more references from the server address space.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="RequestHeader" type="tns:RequestHeader" minOccurs="0" nillable="true" />
       <xs:element name="ReferencesToDelete" type="tns:ListOfDeleteReferencesItem" minOccurs="0" nillable="true" />
@@ -1830,9 +1635,6 @@
   <xs:element name="DeleteReferencesRequest" type="tns:DeleteReferencesRequest" />
 
   <xs:complexType name="DeleteReferencesResponse">
-    <xs:annotation>
-      <xs:documentation>Delete one or more references from the server address space.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ResponseHeader" type="tns:ResponseHeader" minOccurs="0" nillable="true" />
       <xs:element name="Results" type="ua:ListOfStatusCode" minOccurs="0" nillable="true" />
@@ -1842,9 +1644,6 @@
   <xs:element name="DeleteReferencesResponse" type="tns:DeleteReferencesResponse" />
 
   <xs:simpleType  name="AttributeWriteMask">
-    <xs:annotation>
-      <xs:documentation>Define bits used to indicate which attributes are writable.</xs:documentation>
-    </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:enumeration value="None_0" />
       <xs:enumeration value="AccessLevel_1" />
@@ -1874,9 +1673,6 @@
   <xs:element name="AttributeWriteMask" type="tns:AttributeWriteMask" />
 
   <xs:simpleType  name="BrowseDirection">
-    <xs:annotation>
-      <xs:documentation>The directions of the references to return.</xs:documentation>
-    </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:enumeration value="Forward_0" />
       <xs:enumeration value="Inverse_1" />
@@ -1887,9 +1683,6 @@
   <xs:element name="BrowseDirection" type="tns:BrowseDirection" />
 
   <xs:complexType name="ViewDescription">
-    <xs:annotation>
-      <xs:documentation>The view to browse.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ViewId" type="ua:NodeId" minOccurs="0" nillable="true" />
       <xs:element name="Timestamp" type="xs:dateTime" minOccurs="0" />
@@ -1899,9 +1692,6 @@
   <xs:element name="ViewDescription" type="tns:ViewDescription" />
 
   <xs:complexType name="BrowseDescription">
-    <xs:annotation>
-      <xs:documentation>A request to browse the the references from a node.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="NodeId" type="ua:NodeId" minOccurs="0" nillable="true" />
       <xs:element name="BrowseDirection" type="tns:BrowseDirection" minOccurs="0" />
@@ -1921,9 +1711,6 @@
   <xs:element name="ListOfBrowseDescription" type="tns:ListOfBrowseDescription" nillable="true"></xs:element>
 
   <xs:simpleType  name="BrowseResultMask">
-    <xs:annotation>
-      <xs:documentation>A bit mask which specifies what should be returned in a browse response.</xs:documentation>
-    </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:enumeration value="None_0" />
       <xs:enumeration value="ReferenceTypeId_1" />
@@ -1940,9 +1727,6 @@
   <xs:element name="BrowseResultMask" type="tns:BrowseResultMask" />
 
   <xs:complexType name="ReferenceDescription">
-    <xs:annotation>
-      <xs:documentation>The description of a reference.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ReferenceTypeId" type="ua:NodeId" minOccurs="0" nillable="true" />
       <xs:element name="IsForward" type="xs:boolean" minOccurs="0" />
@@ -1965,9 +1749,6 @@
   <xs:element name="ContinuationPoint" type="xs:base64Binary" />
 
   <xs:complexType name="BrowseResult">
-    <xs:annotation>
-      <xs:documentation>The result of a browse operation.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="StatusCode" type="ua:StatusCode" minOccurs="0" />
       <xs:element name="ContinuationPoint" type="xs:base64Binary" minOccurs="0" nillable="true" />
@@ -1984,9 +1765,6 @@
   <xs:element name="ListOfBrowseResult" type="tns:ListOfBrowseResult" nillable="true"></xs:element>
 
   <xs:complexType name="BrowseRequest">
-    <xs:annotation>
-      <xs:documentation>Browse the references for one or more nodes from the server address space.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="RequestHeader" type="tns:RequestHeader" minOccurs="0" nillable="true" />
       <xs:element name="View" type="tns:ViewDescription" minOccurs="0" nillable="true" />
@@ -1997,9 +1775,6 @@
   <xs:element name="BrowseRequest" type="tns:BrowseRequest" />
 
   <xs:complexType name="BrowseResponse">
-    <xs:annotation>
-      <xs:documentation>Browse the references for one or more nodes from the server address space.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ResponseHeader" type="tns:ResponseHeader" minOccurs="0" nillable="true" />
       <xs:element name="Results" type="tns:ListOfBrowseResult" minOccurs="0" nillable="true" />
@@ -2009,9 +1784,6 @@
   <xs:element name="BrowseResponse" type="tns:BrowseResponse" />
 
   <xs:complexType name="BrowseNextRequest">
-    <xs:annotation>
-      <xs:documentation>Continues one or more browse operations.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="RequestHeader" type="tns:RequestHeader" minOccurs="0" nillable="true" />
       <xs:element name="ReleaseContinuationPoints" type="xs:boolean" minOccurs="0" />
@@ -2021,9 +1793,6 @@
   <xs:element name="BrowseNextRequest" type="tns:BrowseNextRequest" />
 
   <xs:complexType name="BrowseNextResponse">
-    <xs:annotation>
-      <xs:documentation>Continues one or more browse operations.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ResponseHeader" type="tns:ResponseHeader" minOccurs="0" nillable="true" />
       <xs:element name="Results" type="tns:ListOfBrowseResult" minOccurs="0" nillable="true" />
@@ -2033,9 +1802,6 @@
   <xs:element name="BrowseNextResponse" type="tns:BrowseNextResponse" />
 
   <xs:complexType name="RelativePathElement">
-    <xs:annotation>
-      <xs:documentation>An element in a relative path.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ReferenceTypeId" type="ua:NodeId" minOccurs="0" nillable="true" />
       <xs:element name="IsInverse" type="xs:boolean" minOccurs="0" />
@@ -2053,9 +1819,6 @@
   <xs:element name="ListOfRelativePathElement" type="tns:ListOfRelativePathElement" nillable="true"></xs:element>
 
   <xs:complexType name="RelativePath">
-    <xs:annotation>
-      <xs:documentation>A relative path constructed from reference types and browse names.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="Elements" type="tns:ListOfRelativePathElement" minOccurs="0" nillable="true" />
     </xs:sequence>
@@ -2063,9 +1826,6 @@
   <xs:element name="RelativePath" type="tns:RelativePath" />
 
   <xs:complexType name="BrowsePath">
-    <xs:annotation>
-      <xs:documentation>A request to translate a path into a node id.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="StartingNode" type="ua:NodeId" minOccurs="0" nillable="true" />
       <xs:element name="RelativePath" type="tns:RelativePath" minOccurs="0" nillable="true" />
@@ -2081,9 +1841,6 @@
   <xs:element name="ListOfBrowsePath" type="tns:ListOfBrowsePath" nillable="true"></xs:element>
 
   <xs:complexType name="BrowsePathTarget">
-    <xs:annotation>
-      <xs:documentation>The target of the translated path.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="TargetId" type="ua:ExpandedNodeId" minOccurs="0" nillable="true" />
       <xs:element name="RemainingPathIndex" type="xs:unsignedInt" minOccurs="0" />
@@ -2099,9 +1856,6 @@
   <xs:element name="ListOfBrowsePathTarget" type="tns:ListOfBrowsePathTarget" nillable="true"></xs:element>
 
   <xs:complexType name="BrowsePathResult">
-    <xs:annotation>
-      <xs:documentation>The result of a translate opearation.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="StatusCode" type="ua:StatusCode" minOccurs="0" />
       <xs:element name="Targets" type="tns:ListOfBrowsePathTarget" minOccurs="0" nillable="true" />
@@ -2117,9 +1871,6 @@
   <xs:element name="ListOfBrowsePathResult" type="tns:ListOfBrowsePathResult" nillable="true"></xs:element>
 
   <xs:complexType name="TranslateBrowsePathsToNodeIdsRequest">
-    <xs:annotation>
-      <xs:documentation>Translates one or more paths in the server address space.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="RequestHeader" type="tns:RequestHeader" minOccurs="0" nillable="true" />
       <xs:element name="BrowsePaths" type="tns:ListOfBrowsePath" minOccurs="0" nillable="true" />
@@ -2128,9 +1879,6 @@
   <xs:element name="TranslateBrowsePathsToNodeIdsRequest" type="tns:TranslateBrowsePathsToNodeIdsRequest" />
 
   <xs:complexType name="TranslateBrowsePathsToNodeIdsResponse">
-    <xs:annotation>
-      <xs:documentation>Translates one or more paths in the server address space.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ResponseHeader" type="tns:ResponseHeader" minOccurs="0" nillable="true" />
       <xs:element name="Results" type="tns:ListOfBrowsePathResult" minOccurs="0" nillable="true" />
@@ -2140,9 +1888,6 @@
   <xs:element name="TranslateBrowsePathsToNodeIdsResponse" type="tns:TranslateBrowsePathsToNodeIdsResponse" />
 
   <xs:complexType name="RegisterNodesRequest">
-    <xs:annotation>
-      <xs:documentation>Registers one or more nodes for repeated use within a session.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="RequestHeader" type="tns:RequestHeader" minOccurs="0" nillable="true" />
       <xs:element name="NodesToRegister" type="ua:ListOfNodeId" minOccurs="0" nillable="true" />
@@ -2151,9 +1896,6 @@
   <xs:element name="RegisterNodesRequest" type="tns:RegisterNodesRequest" />
 
   <xs:complexType name="RegisterNodesResponse">
-    <xs:annotation>
-      <xs:documentation>Registers one or more nodes for repeated use within a session.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ResponseHeader" type="tns:ResponseHeader" minOccurs="0" nillable="true" />
       <xs:element name="RegisteredNodeIds" type="ua:ListOfNodeId" minOccurs="0" nillable="true" />
@@ -2162,9 +1904,6 @@
   <xs:element name="RegisterNodesResponse" type="tns:RegisterNodesResponse" />
 
   <xs:complexType name="UnregisterNodesRequest">
-    <xs:annotation>
-      <xs:documentation>Unregisters one or more previously registered nodes.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="RequestHeader" type="tns:RequestHeader" minOccurs="0" nillable="true" />
       <xs:element name="NodesToUnregister" type="ua:ListOfNodeId" minOccurs="0" nillable="true" />
@@ -2173,9 +1912,6 @@
   <xs:element name="UnregisterNodesRequest" type="tns:UnregisterNodesRequest" />
 
   <xs:complexType name="UnregisterNodesResponse">
-    <xs:annotation>
-      <xs:documentation>Unregisters one or more previously registered nodes.</xs:documentation>
-    </xs:annotation>
     <xs:sequence>
       <xs:element name="ResponseHeader" type="tns:ResponseHeader" minOccurs="0" nillable="true" />
     </xs:sequence>

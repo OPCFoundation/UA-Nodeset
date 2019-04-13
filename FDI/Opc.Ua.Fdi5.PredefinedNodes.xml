@@ -1,4 +1,33 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ *
+ * OPC Foundation MIT License 1.00
+ * 
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ * 
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * The complete license agreement can be found here:
+ * http://opcfoundation.org/License/MIT/1.00/
+-->
+
 <uax:ListOfNodeState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
   <uax:NamespaceUris>
     <uax:NamespaceUri>http://fdi-cooperation.com/OPCUA/FDI5/</uax:NamespaceUri>
@@ -321,7 +350,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -337,7 +365,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -385,7 +412,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -401,7 +427,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -471,7 +496,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -487,7 +511,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -535,7 +558,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -605,7 +627,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -653,7 +674,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -734,7 +754,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ModalWindow</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -749,7 +768,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>NonModalWindow</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -764,7 +782,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>UIP</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -824,7 +841,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>Window</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -839,7 +855,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>Dialog</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -986,7 +1001,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -1002,7 +1016,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -1050,7 +1063,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -1066,7 +1078,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -1136,7 +1147,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -1152,7 +1162,6 @@
                     </uax:DataType>
                     <uax:ValueRank>1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -1200,7 +1209,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -1270,7 +1278,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -1286,7 +1293,6 @@
                     </uax:DataType>
                     <uax:ValueRank>1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -1334,7 +1340,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -1404,7 +1409,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -1452,7 +1456,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -1522,7 +1525,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -1570,7 +1572,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -1640,7 +1641,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -1688,7 +1688,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -1771,7 +1770,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -1819,7 +1817,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -1889,7 +1886,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -1905,7 +1901,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -1953,7 +1948,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -2023,7 +2017,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -2071,7 +2064,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -2136,7 +2128,6 @@
                   </uax:DataType>
                   <uax:ValueRank>-1</uax:ValueRank>
                   <uax:ArrayDimensions />
-                  <uax:Description xsi:nil="true" />
                 </uax:Argument>
               </uax:Body>
             </uax:ExtensionObject>
@@ -2267,7 +2258,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -2283,7 +2273,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -2328,7 +2317,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -2344,7 +2332,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -2408,7 +2395,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -2424,7 +2410,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -2469,7 +2454,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -2533,7 +2517,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -2578,7 +2561,6 @@
                     </uax:DataType>
                     <uax:ValueRank>-1</uax:ValueRank>
                     <uax:ArrayDimensions />
-                    <uax:Description xsi:nil="true" />
                   </uax:Argument>
                 </uax:Body>
               </uax:ExtensionObject>
@@ -2900,10 +2882,6 @@ YWJsZT0idHJ1ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>NamespaceUri</uax:Name>
       </uax:BrowseName>
-      <uax:Description>
-        <uax:Locale></uax:Locale>
-        <uax:Text>A URI that uniquely identifies the dictionary.</uax:Text>
-      </uax:Description>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
       </uax:ReferenceTypeId>
@@ -3319,10 +3297,6 @@ b3BjOlN0cnVjdHVyZWRUeXBlPg0KDQo8L29wYzpUeXBlRGljdGlvbmFyeT4=</uax:ByteString>
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>NamespaceUri</uax:Name>
       </uax:BrowseName>
-      <uax:Description>
-        <uax:Locale></uax:Locale>
-        <uax:Text>A URI that uniquely identifies the dictionary.</uax:Text>
-      </uax:Description>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
       </uax:ReferenceTypeId>

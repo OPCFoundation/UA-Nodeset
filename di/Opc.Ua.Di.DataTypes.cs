@@ -1,8 +1,8 @@
 /* ========================================================================
- * Copyright (c) 2005-2016 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
- *
+ * 
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
  * files (the "Software"), to deal in the Software without
@@ -11,7 +11,7 @@
  * copies of the Software, and to permit persons to whom the
  * Software is furnished to do so, subject to the following
  * conditions:
- *
+ * 
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
@@ -30,7 +30,6 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Reflection;
 using System.Xml;
 using System.Runtime.Serialization;
 using Opc.Ua;
@@ -40,40 +39,30 @@ namespace Opc.Ua.Di
     #region DeviceHealthEnumeration Enumeration
     #if (!OPCUA_EXCLUDE_DeviceHealthEnumeration)
     /// <summary>
-    /// A description for the DeviceHealthEnumeration DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Di.Namespaces.OpcUaDiXsd)]
     public enum DeviceHealthEnumeration
     {
-        /// <summary>
-        /// This device functions normally.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "NORMAL_0")]
         NORMAL = 0,
 
-        /// <summary>
-        /// Malfunction of the device or any of its peripherals.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "FAILURE_1")]
         FAILURE = 1,
 
-        /// <summary>
-        /// Functional checks are currently performed.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "CHECK_FUNCTION_2")]
         CHECK_FUNCTION = 2,
 
-        /// <summary>
-        /// The device is currently working outside of its specified range or that internal diagnoses indicate deviations from measured or set values.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "OFF_SPEC_3")]
         OFF_SPEC = 3,
 
-        /// <summary>
-        /// This element is working, but a maintenance operation is required.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MAINTENANCE_REQUIRED_4")]
         MAINTENANCE_REQUIRED = 4,
     }
@@ -85,7 +74,11 @@ namespace Opc.Ua.Di
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfDeviceHealthEnumeration", Namespace = Opc.Ua.Di.Namespaces.OpcUaDiXsd, ItemName = "DeviceHealthEnumeration")]
+    #if !NET_STANDARD
     public partial class DeviceHealthEnumerationCollection : List<DeviceHealthEnumeration>, ICloneable
+    #else
+    public partial class DeviceHealthEnumerationCollection : List<DeviceHealthEnumeration>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -132,11 +125,20 @@ namespace Opc.Ua.Di
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (DeviceHealthEnumerationCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             DeviceHealthEnumerationCollection clone = new DeviceHealthEnumerationCollection(this.Count);
 
@@ -147,7 +149,6 @@ namespace Opc.Ua.Di
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -156,7 +157,7 @@ namespace Opc.Ua.Di
     #region FetchResultDataType Class
     #if (!OPCUA_EXCLUDE_FetchResultDataType)
     /// <summary>
-    /// A description for the FetchResultDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -248,10 +249,18 @@ namespace Opc.Ua.Di
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            FetchResultDataType clone = (FetchResultDataType)this.MemberwiseClone();
+            return (FetchResultDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            FetchResultDataType clone = (FetchResultDataType)base.MemberwiseClone();
 
 
             return clone;
@@ -269,7 +278,11 @@ namespace Opc.Ua.Di
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfFetchResultDataType", Namespace = Opc.Ua.Di.Namespaces.OpcUaDiXsd, ItemName = "FetchResultDataType")]
+    #if !NET_STANDARD
     public partial class FetchResultDataTypeCollection : List<FetchResultDataType>, ICloneable
+    #else
+    public partial class FetchResultDataTypeCollection : List<FetchResultDataType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -316,11 +329,20 @@ namespace Opc.Ua.Di
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (FetchResultDataTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             FetchResultDataTypeCollection clone = new FetchResultDataTypeCollection(this.Count);
 
@@ -331,7 +353,6 @@ namespace Opc.Ua.Di
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -340,7 +361,7 @@ namespace Opc.Ua.Di
     #region FetchResultErrorDataType Class
     #if (!OPCUA_EXCLUDE_FetchResultErrorDataType)
     /// <summary>
-    /// A description for the FetchResultErrorDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -376,9 +397,7 @@ namespace Opc.Ua.Di
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Status field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Status", IsRequired = false, Order = 1)]
         public int Status
         {
@@ -386,9 +405,7 @@ namespace Opc.Ua.Di
             set { m_status = value; }
         }
 
-        /// <summary>
-        /// A description for the Diagnostics field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Diagnostics", IsRequired = false, Order = 2)]
         public DiagnosticInfo Diagnostics
         {
@@ -462,12 +479,20 @@ namespace Opc.Ua.Di
             if (!Utils.IsEqual(m_diagnostics, value.m_diagnostics)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            FetchResultErrorDataType clone = (FetchResultErrorDataType)base.Clone();
+            return (FetchResultErrorDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            FetchResultErrorDataType clone = (FetchResultErrorDataType)base.MemberwiseClone();
 
             clone.m_status = (int)Utils.Clone(this.m_status);
             clone.m_diagnostics = (DiagnosticInfo)Utils.Clone(this.m_diagnostics);
@@ -489,7 +514,11 @@ namespace Opc.Ua.Di
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfFetchResultErrorDataType", Namespace = Opc.Ua.Di.Namespaces.OpcUaDiXsd, ItemName = "FetchResultErrorDataType")]
+    #if !NET_STANDARD
     public partial class FetchResultErrorDataTypeCollection : List<FetchResultErrorDataType>, ICloneable
+    #else
+    public partial class FetchResultErrorDataTypeCollection : List<FetchResultErrorDataType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -536,11 +565,20 @@ namespace Opc.Ua.Di
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (FetchResultErrorDataTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             FetchResultErrorDataTypeCollection clone = new FetchResultErrorDataTypeCollection(this.Count);
 
@@ -551,7 +589,6 @@ namespace Opc.Ua.Di
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -560,7 +597,7 @@ namespace Opc.Ua.Di
     #region FetchResultDataDataType Class
     #if (!OPCUA_EXCLUDE_FetchResultDataDataType)
     /// <summary>
-    /// A description for the FetchResultDataDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -597,9 +634,7 @@ namespace Opc.Ua.Di
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the SequenceNumber field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SequenceNumber", IsRequired = false, Order = 1)]
         public int SequenceNumber
         {
@@ -607,9 +642,7 @@ namespace Opc.Ua.Di
             set { m_sequenceNumber = value; }
         }
 
-        /// <summary>
-        /// A description for the EndOfResults field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EndOfResults", IsRequired = false, Order = 2)]
         public bool EndOfResults
         {
@@ -618,7 +651,7 @@ namespace Opc.Ua.Di
         }
 
         /// <summary>
-        /// A description for the ParameterDefs field.
+        /// 
         /// </summary>
         [DataMember(Name = "ParameterDefs", IsRequired = false, Order = 3)]
         public ParameterResultDataTypeCollection ParameterDefs
@@ -708,12 +741,20 @@ namespace Opc.Ua.Di
             if (!Utils.IsEqual(m_parameterDefs, value.m_parameterDefs)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            FetchResultDataDataType clone = (FetchResultDataDataType)base.Clone();
+            return (FetchResultDataDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            FetchResultDataDataType clone = (FetchResultDataDataType)base.MemberwiseClone();
 
             clone.m_sequenceNumber = (int)Utils.Clone(this.m_sequenceNumber);
             clone.m_endOfResults = (bool)Utils.Clone(this.m_endOfResults);
@@ -737,7 +778,11 @@ namespace Opc.Ua.Di
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfFetchResultDataDataType", Namespace = Opc.Ua.Di.Namespaces.OpcUaDiXsd, ItemName = "FetchResultDataDataType")]
+    #if !NET_STANDARD
     public partial class FetchResultDataDataTypeCollection : List<FetchResultDataDataType>, ICloneable
+    #else
+    public partial class FetchResultDataDataTypeCollection : List<FetchResultDataDataType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -784,11 +829,20 @@ namespace Opc.Ua.Di
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (FetchResultDataDataTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             FetchResultDataDataTypeCollection clone = new FetchResultDataDataTypeCollection(this.Count);
 
@@ -799,7 +853,6 @@ namespace Opc.Ua.Di
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -808,7 +861,7 @@ namespace Opc.Ua.Di
     #region ParameterResultDataType Class
     #if (!OPCUA_EXCLUDE_ParameterResultDataType)
     /// <summary>
-    /// A description for the ParameterResultDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -846,7 +899,7 @@ namespace Opc.Ua.Di
 
         #region Public Properties
         /// <summary>
-        /// A description for the NodePath field.
+        /// 
         /// </summary>
         [DataMember(Name = "NodePath", IsRequired = false, Order = 1)]
         public QualifiedNameCollection NodePath
@@ -867,9 +920,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// A description for the StatusCode field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StatusCode", IsRequired = false, Order = 2)]
         public StatusCode StatusCode
         {
@@ -877,9 +928,7 @@ namespace Opc.Ua.Di
             set { m_statusCode = value; }
         }
 
-        /// <summary>
-        /// A description for the Diagnostics field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Diagnostics", IsRequired = false, Order = 3)]
         public DiagnosticInfo Diagnostics
         {
@@ -953,10 +1002,18 @@ namespace Opc.Ua.Di
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ParameterResultDataType clone = (ParameterResultDataType)this.MemberwiseClone();
+            return (ParameterResultDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ParameterResultDataType clone = (ParameterResultDataType)base.MemberwiseClone();
 
             clone.m_nodePath = (QualifiedNameCollection)Utils.Clone(this.m_nodePath);
             clone.m_statusCode = (StatusCode)Utils.Clone(this.m_statusCode);
@@ -980,7 +1037,11 @@ namespace Opc.Ua.Di
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfParameterResultDataType", Namespace = Opc.Ua.Di.Namespaces.OpcUaDiXsd, ItemName = "ParameterResultDataType")]
+    #if !NET_STANDARD
     public partial class ParameterResultDataTypeCollection : List<ParameterResultDataType>, ICloneable
+    #else
+    public partial class ParameterResultDataTypeCollection : List<ParameterResultDataType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -1027,11 +1088,20 @@ namespace Opc.Ua.Di
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ParameterResultDataTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ParameterResultDataTypeCollection clone = new ParameterResultDataTypeCollection(this.Count);
 
@@ -1042,7 +1112,6 @@ namespace Opc.Ua.Di
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif

@@ -1,8 +1,8 @@
 /* ========================================================================
- * Copyright (c) 2005-2016 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
- *
+ * 
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
  * files (the "Software"), to deal in the Software without
@@ -11,7 +11,7 @@
  * copies of the Software, and to permit persons to whom the
  * Software is furnished to do so, subject to the following
  * conditions:
- *
+ * 
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
@@ -30,7 +30,6 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Reflection;
 using System.Xml;
 using System.Runtime.Serialization;
 using Opc.Ua.Di;
@@ -41,28 +40,22 @@ namespace Opc.Ua.Fdi5
     #region WindowModeType Enumeration
     #if (!OPCUA_EXCLUDE_WindowModeType)
     /// <summary>
-    /// A description for the WindowModeType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Fdi5.Namespaces.OpcUaFdi5Xsd)]
     public enum WindowModeType
     {
-        /// <summary>
-        /// A description for the ModalWindow field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ModalWindow_1")]
         ModalWindow = 1,
 
-        /// <summary>
-        /// A description for the NonModalWindow field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "NonModalWindow_2")]
         NonModalWindow = 2,
 
-        /// <summary>
-        /// A description for the UIP field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UIP_3")]
         UIP = 3,
     }
@@ -74,7 +67,11 @@ namespace Opc.Ua.Fdi5
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfWindowModeType", Namespace = Opc.Ua.Fdi5.Namespaces.OpcUaFdi5Xsd, ItemName = "WindowModeType")]
+    #if !NET_STANDARD
     public partial class WindowModeTypeCollection : List<WindowModeType>, ICloneable
+    #else
+    public partial class WindowModeTypeCollection : List<WindowModeType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -121,11 +118,20 @@ namespace Opc.Ua.Fdi5
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (WindowModeTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             WindowModeTypeCollection clone = new WindowModeTypeCollection(this.Count);
 
@@ -136,7 +142,6 @@ namespace Opc.Ua.Fdi5
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -145,22 +150,18 @@ namespace Opc.Ua.Fdi5
     #region StyleType Enumeration
     #if (!OPCUA_EXCLUDE_StyleType)
     /// <summary>
-    /// A description for the StyleType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Fdi5.Namespaces.OpcUaFdi5Xsd)]
     public enum StyleType
     {
-        /// <summary>
-        /// A description for the Window field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Window_1")]
         Window = 1,
 
-        /// <summary>
-        /// A description for the Dialog field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Dialog_2")]
         Dialog = 2,
     }
@@ -172,7 +173,11 @@ namespace Opc.Ua.Fdi5
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfStyleType", Namespace = Opc.Ua.Fdi5.Namespaces.OpcUaFdi5Xsd, ItemName = "StyleType")]
+    #if !NET_STANDARD
     public partial class StyleTypeCollection : List<StyleType>, ICloneable
+    #else
+    public partial class StyleTypeCollection : List<StyleType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -219,11 +224,20 @@ namespace Opc.Ua.Fdi5
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (StyleTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             StyleTypeCollection clone = new StyleTypeCollection(this.Count);
 
@@ -234,7 +248,6 @@ namespace Opc.Ua.Fdi5
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -243,7 +256,7 @@ namespace Opc.Ua.Fdi5
     #region RegistrationParameters Class
     #if (!OPCUA_EXCLUDE_RegistrationParameters)
     /// <summary>
-    /// A description for the RegistrationParameters DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -280,7 +293,7 @@ namespace Opc.Ua.Fdi5
 
         #region Public Properties
         /// <summary>
-        /// A description for the Path field.
+        /// 
         /// </summary>
         [DataMember(Name = "Path", IsRequired = false, Order = 1)]
         public RelativePath Path
@@ -301,9 +314,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the SelectionFlags field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SelectionFlags", IsRequired = false, Order = 2)]
         public uint SelectionFlags
         {
@@ -374,10 +385,18 @@ namespace Opc.Ua.Fdi5
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            RegistrationParameters clone = (RegistrationParameters)this.MemberwiseClone();
+            return (RegistrationParameters)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            RegistrationParameters clone = (RegistrationParameters)base.MemberwiseClone();
 
             clone.m_path = (RelativePath)Utils.Clone(this.m_path);
             clone.m_selectionFlags = (uint)Utils.Clone(this.m_selectionFlags);
@@ -399,7 +418,11 @@ namespace Opc.Ua.Fdi5
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfRegistrationParameters", Namespace = Opc.Ua.Fdi5.Namespaces.OpcUaFdi5Xsd, ItemName = "RegistrationParameters")]
+    #if !NET_STANDARD
     public partial class RegistrationParametersCollection : List<RegistrationParameters>, ICloneable
+    #else
+    public partial class RegistrationParametersCollection : List<RegistrationParameters>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -446,11 +469,20 @@ namespace Opc.Ua.Fdi5
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (RegistrationParametersCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             RegistrationParametersCollection clone = new RegistrationParametersCollection(this.Count);
 
@@ -461,7 +493,6 @@ namespace Opc.Ua.Fdi5
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -470,7 +501,7 @@ namespace Opc.Ua.Fdi5
     #region RegisteredNode Class
     #if (!OPCUA_EXCLUDE_RegisteredNode)
     /// <summary>
-    /// A description for the RegisteredNode DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -509,9 +540,7 @@ namespace Opc.Ua.Fdi5
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the NodeStatus field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NodeStatus", IsRequired = false, Order = 1)]
         public int NodeStatus
         {
@@ -519,9 +548,7 @@ namespace Opc.Ua.Fdi5
             set { m_nodeStatus = value; }
         }
 
-        /// <summary>
-        /// A description for the OnlineContextNodeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "OnlineContextNodeId", IsRequired = false, Order = 2)]
         public NodeId OnlineContextNodeId
         {
@@ -529,9 +556,7 @@ namespace Opc.Ua.Fdi5
             set { m_onlineContextNodeId = value; }
         }
 
-        /// <summary>
-        /// A description for the OnlineDeviceNodeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "OnlineDeviceNodeId", IsRequired = false, Order = 3)]
         public NodeId OnlineDeviceNodeId
         {
@@ -539,9 +564,7 @@ namespace Opc.Ua.Fdi5
             set { m_onlineDeviceNodeId = value; }
         }
 
-        /// <summary>
-        /// A description for the OfflineContextNodeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "OfflineContextNodeId", IsRequired = false, Order = 4)]
         public NodeId OfflineContextNodeId
         {
@@ -549,9 +572,7 @@ namespace Opc.Ua.Fdi5
             set { m_offlineContextNodeId = value; }
         }
 
-        /// <summary>
-        /// A description for the OfflineDeviceNodeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "OfflineDeviceNodeId", IsRequired = false, Order = 5)]
         public NodeId OfflineDeviceNodeId
         {
@@ -631,10 +652,18 @@ namespace Opc.Ua.Fdi5
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            RegisteredNode clone = (RegisteredNode)this.MemberwiseClone();
+            return (RegisteredNode)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            RegisteredNode clone = (RegisteredNode)base.MemberwiseClone();
 
             clone.m_nodeStatus = (int)Utils.Clone(this.m_nodeStatus);
             clone.m_onlineContextNodeId = (NodeId)Utils.Clone(this.m_onlineContextNodeId);
@@ -662,7 +691,11 @@ namespace Opc.Ua.Fdi5
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfRegisteredNode", Namespace = Opc.Ua.Fdi5.Namespaces.OpcUaFdi5Xsd, ItemName = "RegisteredNode")]
+    #if !NET_STANDARD
     public partial class RegisteredNodeCollection : List<RegisteredNode>, ICloneable
+    #else
+    public partial class RegisteredNodeCollection : List<RegisteredNode>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -709,11 +742,20 @@ namespace Opc.Ua.Fdi5
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (RegisteredNodeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             RegisteredNodeCollection clone = new RegisteredNodeCollection(this.Count);
 
@@ -724,7 +766,6 @@ namespace Opc.Ua.Fdi5
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -733,7 +774,7 @@ namespace Opc.Ua.Fdi5
     #region RegisterNodesResult Class
     #if (!OPCUA_EXCLUDE_RegisterNodesResult)
     /// <summary>
-    /// A description for the RegisterNodesResult DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -769,9 +810,7 @@ namespace Opc.Ua.Fdi5
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Status field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Status", IsRequired = false, Order = 1)]
         public int Status
         {
@@ -780,7 +819,7 @@ namespace Opc.Ua.Fdi5
         }
 
         /// <summary>
-        /// A description for the RegisteredNodes field.
+        /// 
         /// </summary>
         [DataMember(Name = "RegisteredNodes", IsRequired = false, Order = 2)]
         public RegisteredNodeCollection RegisteredNodes
@@ -864,10 +903,18 @@ namespace Opc.Ua.Fdi5
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            RegisterNodesResult clone = (RegisterNodesResult)this.MemberwiseClone();
+            return (RegisterNodesResult)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            RegisterNodesResult clone = (RegisterNodesResult)base.MemberwiseClone();
 
             clone.m_status = (int)Utils.Clone(this.m_status);
             clone.m_registeredNodes = (RegisteredNodeCollection)Utils.Clone(this.m_registeredNodes);
@@ -889,7 +936,11 @@ namespace Opc.Ua.Fdi5
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfRegisterNodesResult", Namespace = Opc.Ua.Fdi5.Namespaces.OpcUaFdi5Xsd, ItemName = "RegisterNodesResult")]
+    #if !NET_STANDARD
     public partial class RegisterNodesResultCollection : List<RegisterNodesResult>, ICloneable
+    #else
+    public partial class RegisterNodesResultCollection : List<RegisterNodesResult>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -936,11 +987,20 @@ namespace Opc.Ua.Fdi5
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (RegisterNodesResultCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             RegisterNodesResultCollection clone = new RegisterNodesResultCollection(this.Count);
 
@@ -951,7 +1011,6 @@ namespace Opc.Ua.Fdi5
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -960,7 +1019,7 @@ namespace Opc.Ua.Fdi5
     #region TransferIncident Class
     #if (!OPCUA_EXCLUDE_TransferIncident)
     /// <summary>
-    /// A description for the TransferIncident DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -997,9 +1056,7 @@ namespace Opc.Ua.Fdi5
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ContextNodeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ContextNodeId", IsRequired = false, Order = 1)]
         public NodeId ContextNodeId
         {
@@ -1007,9 +1064,7 @@ namespace Opc.Ua.Fdi5
             set { m_contextNodeId = value; }
         }
 
-        /// <summary>
-        /// A description for the StatusCode field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StatusCode", IsRequired = false, Order = 2)]
         public StatusCode StatusCode
         {
@@ -1017,9 +1072,7 @@ namespace Opc.Ua.Fdi5
             set { m_statusCode = value; }
         }
 
-        /// <summary>
-        /// A description for the Diagnostics field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Diagnostics", IsRequired = false, Order = 3)]
         public DiagnosticInfo Diagnostics
         {
@@ -1093,10 +1146,18 @@ namespace Opc.Ua.Fdi5
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            TransferIncident clone = (TransferIncident)this.MemberwiseClone();
+            return (TransferIncident)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            TransferIncident clone = (TransferIncident)base.MemberwiseClone();
 
             clone.m_contextNodeId = (NodeId)Utils.Clone(this.m_contextNodeId);
             clone.m_statusCode = (StatusCode)Utils.Clone(this.m_statusCode);
@@ -1120,7 +1181,11 @@ namespace Opc.Ua.Fdi5
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfTransferIncident", Namespace = Opc.Ua.Fdi5.Namespaces.OpcUaFdi5Xsd, ItemName = "TransferIncident")]
+    #if !NET_STANDARD
     public partial class TransferIncidentCollection : List<TransferIncident>, ICloneable
+    #else
+    public partial class TransferIncidentCollection : List<TransferIncident>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -1167,11 +1232,20 @@ namespace Opc.Ua.Fdi5
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (TransferIncidentCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             TransferIncidentCollection clone = new TransferIncidentCollection(this.Count);
 
@@ -1182,7 +1256,6 @@ namespace Opc.Ua.Fdi5
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -1191,7 +1264,7 @@ namespace Opc.Ua.Fdi5
     #region ApplyResult Class
     #if (!OPCUA_EXCLUDE_ApplyResult)
     /// <summary>
-    /// A description for the ApplyResult DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -1227,9 +1300,7 @@ namespace Opc.Ua.Fdi5
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Status field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Status", IsRequired = false, Order = 1)]
         public int Status
         {
@@ -1238,7 +1309,7 @@ namespace Opc.Ua.Fdi5
         }
 
         /// <summary>
-        /// A description for the TransferIncidents field.
+        /// 
         /// </summary>
         [DataMember(Name = "TransferIncidents", IsRequired = false, Order = 2)]
         public TransferIncidentCollection TransferIncidents
@@ -1322,10 +1393,18 @@ namespace Opc.Ua.Fdi5
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ApplyResult clone = (ApplyResult)this.MemberwiseClone();
+            return (ApplyResult)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ApplyResult clone = (ApplyResult)base.MemberwiseClone();
 
             clone.m_status = (int)Utils.Clone(this.m_status);
             clone.m_transferIncidents = (TransferIncidentCollection)Utils.Clone(this.m_transferIncidents);
@@ -1347,7 +1426,11 @@ namespace Opc.Ua.Fdi5
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfApplyResult", Namespace = Opc.Ua.Fdi5.Namespaces.OpcUaFdi5Xsd, ItemName = "ApplyResult")]
+    #if !NET_STANDARD
     public partial class ApplyResultCollection : List<ApplyResult>, ICloneable
+    #else
+    public partial class ApplyResultCollection : List<ApplyResult>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -1394,11 +1477,20 @@ namespace Opc.Ua.Fdi5
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ApplyResultCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ApplyResultCollection clone = new ApplyResultCollection(this.Count);
 
@@ -1409,7 +1501,6 @@ namespace Opc.Ua.Fdi5
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif

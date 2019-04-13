@@ -1,8 +1,8 @@
 /* ========================================================================
- * Copyright (c) 2005-2016 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
- *
+ * 
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
  * files (the "Software"), to deal in the Software without
@@ -11,7 +11,7 @@
  * copies of the Software, and to permit persons to whom the
  * Software is furnished to do so, subject to the following
  * conditions:
- *
+ * 
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
@@ -30,7 +30,6 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Reflection;
 using System.Xml;
 using System.Runtime.Serialization;
 using Opc.Ua;
@@ -70,6 +69,15 @@ namespace Opc.Ua.Di
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -164,9 +172,7 @@ namespace Opc.Ua.Di
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// Flat list of Parameters
-        /// </summary>
+        /// <remarks />
         public BaseObjectState ParameterSet
         {
             get
@@ -185,9 +191,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// Flat list of Methods
-        /// </summary>
+        /// <remarks />
         public BaseObjectState MethodSet
         {
             get
@@ -206,9 +210,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// Used to organize parameters for identification of this TopologyElement
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState Identification
         {
             get
@@ -227,9 +229,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// Used to lock the topology element.
-        /// </summary>
+        /// <remarks />
         public LockingServicesState Lock
         {
             get
@@ -440,6 +440,15 @@ namespace Opc.Ua.Di
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -543,9 +552,7 @@ namespace Opc.Ua.Di
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// Identifier that uniquely identifies, within a manufacturer, a device instance
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> SerialNumber
         {
             get
@@ -564,9 +571,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// An incremental counter indicating the number of times the static data within the Device has been modified
-        /// </summary>
+        /// <remarks />
         public PropertyState<int> RevisionCounter
         {
             get
@@ -585,9 +590,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// Name of the company that manufactured the device
-        /// </summary>
+        /// <remarks />
         public PropertyState<LocalizedText> Manufacturer
         {
             get
@@ -606,9 +609,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// Model name of the device
-        /// </summary>
+        /// <remarks />
         public PropertyState<LocalizedText> Model
         {
             get
@@ -627,9 +628,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// Address (pathname in the file system or a URL | Web address) of user manual for the device
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> DeviceManual
         {
             get
@@ -648,9 +647,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// Overall revision level of the device
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> DeviceRevision
         {
             get
@@ -669,9 +666,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// Revision level of the software/firmware of the device
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> SoftwareRevision
         {
             get
@@ -690,9 +685,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// Revision level of the hardware of the device
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> HardwareRevision
         {
             get
@@ -711,9 +704,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// Indicates in which domain or for what purpose a device is used.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> DeviceClass
         {
             get
@@ -732,9 +723,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// Status of a device as defined by NAMUR Recommendation NE107.
-        /// </summary>
+        /// <remarks />
         public PropertyState<DeviceHealthEnumeration> DeviceHealth
         {
             get
@@ -753,9 +742,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// Organizes pictures of the device.
-        /// </summary>
+        /// <remarks />
         public FolderState DeviceTypeImage
         {
             get
@@ -774,9 +761,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// Organizes documents for the device.
-        /// </summary>
+        /// <remarks />
         public FolderState Documentation
         {
             get
@@ -795,9 +780,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// Protocol-specific files for the device.
-        /// </summary>
+        /// <remarks />
         public FolderState ProtocolSupport
         {
             get
@@ -816,9 +799,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// Organizes images that are used within UIElements.
-        /// </summary>
+        /// <remarks />
         public FolderState ImageSet
         {
             get
@@ -1299,6 +1280,15 @@ namespace Opc.Ua.Di
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -1378,9 +1368,7 @@ namespace Opc.Ua.Di
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// Incremental counter indicating the number of times the static data within the Block has been modified
-        /// </summary>
+        /// <remarks />
         public PropertyState<uint> RevisionCounter
         {
             get
@@ -1399,9 +1387,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// Current mode of operation the Block is able to achieve
-        /// </summary>
+        /// <remarks />
         public PropertyState<LocalizedText> ActualMode
         {
             get
@@ -1420,9 +1406,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// Modes of operation that are allowed for the Block based on application requirements
-        /// </summary>
+        /// <remarks />
         public PropertyState<LocalizedText[]> PermittedMode
         {
             get
@@ -1441,9 +1425,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// Mode the Block should be set to during normal operating conditions
-        /// </summary>
+        /// <remarks />
         public PropertyState<LocalizedText[]> NormalMode
         {
             get
@@ -1462,9 +1444,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// Mode of operation that is desired for the Block
-        /// </summary>
+        /// <remarks />
         public PropertyState<LocalizedText[]> TargetMode
         {
             get
@@ -1702,6 +1682,15 @@ namespace Opc.Ua.Di
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -1721,9 +1710,7 @@ namespace Opc.Ua.Di
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// Folder maintaining the set of (sub-types of) BaseObjectTypes that can be instantiated in the ConfigurableComponent
-        /// </summary>
+        /// <remarks />
         public FolderState SupportedTypes
         {
             get
@@ -1853,6 +1840,15 @@ namespace Opc.Ua.Di
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -1881,9 +1877,7 @@ namespace Opc.Ua.Di
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A user interface element assigned to this group.
-        /// </summary>
+        /// <remarks />
         public UIElementState UIElement
         {
             get
@@ -2013,6 +2007,15 @@ namespace Opc.Ua.Di
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -2092,6 +2095,15 @@ namespace Opc.Ua.Di
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -2144,6 +2156,15 @@ namespace Opc.Ua.Di
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -2205,6 +2226,15 @@ namespace Opc.Ua.Di
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -2262,9 +2292,7 @@ namespace Opc.Ua.Di
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// Used to lock the Network.
-        /// </summary>
+        /// <remarks />
         public LockingServicesState Lock
         {
             get
@@ -2394,6 +2422,15 @@ namespace Opc.Ua.Di
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -2412,9 +2449,7 @@ namespace Opc.Ua.Di
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The address of the device on this network.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState NetworkAddress
         {
             get
@@ -2578,39 +2613,34 @@ namespace Opc.Ua.Di
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            int transferID = (int)outputArguments[0];
-            int initTransferStatus = (int)outputArguments[1];
+            int transferID = (int)_outputArguments[0];
+            int initTransferStatus = (int)_outputArguments[1];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     ref transferID,
                     ref initTransferStatus);
             }
 
-            outputArguments[0] = transferID;
-            outputArguments[1] = initTransferStatus;
+            _outputArguments[0] = transferID;
+            _outputArguments[1] = initTransferStatus;
 
             return result;
         }
@@ -2703,39 +2733,34 @@ namespace Opc.Ua.Di
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            int transferID = (int)outputArguments[0];
-            int initTransferStatus = (int)outputArguments[1];
+            int transferID = (int)_outputArguments[0];
+            int initTransferStatus = (int)_outputArguments[1];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     ref transferID,
                     ref initTransferStatus);
             }
 
-            outputArguments[0] = transferID;
-            outputArguments[1] = initTransferStatus;
+            _outputArguments[0] = transferID;
+            _outputArguments[1] = initTransferStatus;
 
             return result;
         }
@@ -2831,37 +2856,32 @@ namespace Opc.Ua.Di
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            int transferID = (int)inputArguments[0];
-            int sequenceNumber = (int)inputArguments[1];
-            int maxParameterResultsToReturn = (int)inputArguments[2];
-            bool omitGoodResults = (bool)inputArguments[3];
+            int transferID = (int)_inputArguments[0];
+            int sequenceNumber = (int)_inputArguments[1];
+            int maxParameterResultsToReturn = (int)_inputArguments[2];
+            bool omitGoodResults = (bool)_inputArguments[3];
 
-            FetchResultDataType fetchResult = (FetchResultDataType)outputArguments[0];
+            FetchResultDataType fetchResult = (FetchResultDataType)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     transferID,
                     sequenceNumber,
                     maxParameterResultsToReturn,
@@ -2869,7 +2889,7 @@ namespace Opc.Ua.Di
                     ref fetchResult);
             }
 
-            outputArguments[0] = fetchResult;
+            _outputArguments[0] = fetchResult;
 
             return result;
         }
@@ -2931,6 +2951,15 @@ namespace Opc.Ua.Di
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -2960,9 +2989,7 @@ namespace Opc.Ua.Di
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the TransferFromDeviceMethodType Method.
-        /// </summary>
+        /// <remarks />
         public TransferFromDeviceMethodState TransferToDevice
         {
             get
@@ -2981,9 +3008,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// A description for the TransferFromDeviceMethodType Method.
-        /// </summary>
+        /// <remarks />
         public TransferFromDeviceMethodState TransferFromDevice
         {
             get
@@ -3002,9 +3027,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// A description for the FetchTransferResultDataMethodType Method.
-        /// </summary>
+        /// <remarks />
         public FetchTransferResultDataMethodState FetchTransferResultData
         {
             get
@@ -3223,39 +3246,34 @@ namespace Opc.Ua.Di
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string currentContext = (string)inputArguments[0];
+            string currentContext = (string)_inputArguments[0];
 
-            int initLockStatus = (int)outputArguments[0];
+            int initLockStatus = (int)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     currentContext,
                     ref initLockStatus);
             }
 
-            outputArguments[0] = initLockStatus;
+            _outputArguments[0] = initLockStatus;
 
             return result;
         }
@@ -3347,36 +3365,31 @@ namespace Opc.Ua.Di
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            int renewLockStatus = (int)outputArguments[0];
+            int renewLockStatus = (int)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     ref renewLockStatus);
             }
 
-            outputArguments[0] = renewLockStatus;
+            _outputArguments[0] = renewLockStatus;
 
             return result;
         }
@@ -3467,36 +3480,31 @@ namespace Opc.Ua.Di
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            int exitLockStatus = (int)outputArguments[0];
+            int exitLockStatus = (int)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     ref exitLockStatus);
             }
 
-            outputArguments[0] = exitLockStatus;
+            _outputArguments[0] = exitLockStatus;
 
             return result;
         }
@@ -3587,36 +3595,31 @@ namespace Opc.Ua.Di
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            int breakLockStatus = (int)outputArguments[0];
+            int breakLockStatus = (int)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     ref breakLockStatus);
             }
 
-            outputArguments[0] = breakLockStatus;
+            _outputArguments[0] = breakLockStatus;
 
             return result;
         }
@@ -3674,6 +3677,15 @@ namespace Opc.Ua.Di
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -3705,9 +3717,7 @@ namespace Opc.Ua.Di
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Locked Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<bool> Locked
         {
             get
@@ -3726,9 +3736,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// A description for the LockingClient Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> LockingClient
         {
             get
@@ -3747,9 +3755,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// A description for the LockingUser Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> LockingUser
         {
             get
@@ -3768,9 +3774,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// A description for the RemainingLockTime Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<double> RemainingLockTime
         {
             get
@@ -3789,9 +3793,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// A description for the InitLockMethodType Method.
-        /// </summary>
+        /// <remarks />
         public InitLockMethodState InitLock
         {
             get
@@ -3810,9 +3812,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// A description for the RenewLockMethodType Method.
-        /// </summary>
+        /// <remarks />
         public RenewLockMethodState RenewLock
         {
             get
@@ -3831,9 +3831,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// A description for the ExitLockMethodType Method.
-        /// </summary>
+        /// <remarks />
         public ExitLockMethodState ExitLock
         {
             get
@@ -3852,9 +3850,7 @@ namespace Opc.Ua.Di
             }
         }
 
-        /// <summary>
-        /// A description for the BreakLockMethodType Method.
-        /// </summary>
+        /// <remarks />
         public BreakLockMethodState BreakLock
         {
             get

@@ -1,4 +1,33 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ *
+ * OPC Foundation MIT License 1.00
+ * 
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ * 
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * The complete license agreement can be found here:
+ * http://opcfoundation.org/License/MIT/1.00/
+-->
+
 <UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2013-07-31T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
     <Uri>http://opcfoundation.org/UA/ADI/</Uri>
@@ -6,7 +35,7 @@
   </NamespaceUris>
   <Models>
     <Model ModelUri="http://opcfoundation.org/UA/ADI/" Version="1.01" PublicationDate="2013-07-31T00:00:00Z">
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.03" PublicationDate="2013-12-02T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.03" PublicationDate="2013-12-03T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.01" PublicationDate="2012-12-31T00:00:00Z" />
     </Model>
   </Models>
@@ -105,7 +134,6 @@
   </UAObject>
   <UAVariable NodeId="ns=1;i=9463" BrowseName="Size" ParentNodeId="ns=1;i=9462" DataType="UInt64">
     <DisplayName>Size</DisplayName>
-    <Description>The size of the file in bytes.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -114,7 +142,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=13070" BrowseName="Writable" ParentNodeId="ns=1;i=9462" DataType="Boolean">
     <DisplayName>Writable</DisplayName>
-    <Description>Whether the file is writable.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -123,7 +150,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=13071" BrowseName="UserWritable" ParentNodeId="ns=1;i=9462" DataType="Boolean">
     <DisplayName>UserWritable</DisplayName>
-    <Description>Whether the file is writable by the current user.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -132,7 +158,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=9466" BrowseName="OpenCount" ParentNodeId="ns=1;i=9462" DataType="UInt16">
     <DisplayName>OpenCount</DisplayName>
-    <Description>The current number of open file handles.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -169,7 +194,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -197,7 +221,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -233,7 +256,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -270,7 +292,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -286,7 +307,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -314,7 +334,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -350,7 +369,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -366,7 +384,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -403,7 +420,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -431,7 +447,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -467,7 +482,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -483,7 +497,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -538,7 +551,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -575,7 +587,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -603,7 +614,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -639,7 +649,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -676,7 +685,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -704,7 +712,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -902,7 +909,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -918,7 +924,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -934,7 +939,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -1660,7 +1664,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -1676,7 +1679,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -1692,7 +1694,6 @@
               </DataType>
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </Argument>
           </Body>
         </ExtensionObject>
@@ -5803,7 +5804,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10397" BrowseName="1:CampaignId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10397" BrowseName="1:CampaignId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>CampaignId</DisplayName>
     <Description>Defines the current campaign</Description>
     <References>
@@ -5813,7 +5814,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10400" BrowseName="1:BatchId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10400" BrowseName="1:BatchId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>BatchId</DisplayName>
     <Description>Defines the current batch</Description>
     <References>
@@ -5823,7 +5824,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10403" BrowseName="1:SubBatchId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10403" BrowseName="1:SubBatchId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>SubBatchId</DisplayName>
     <Description>Defines the current sub-batch</Description>
     <References>
@@ -5833,7 +5834,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10406" BrowseName="1:LotId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10406" BrowseName="1:LotId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>LotId</DisplayName>
     <Description>Defines the current lot</Description>
     <References>
@@ -5843,7 +5844,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10409" BrowseName="1:MaterialId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10409" BrowseName="1:MaterialId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>MaterialId</DisplayName>
     <Description>Defines the current material</Description>
     <References>
@@ -5853,7 +5854,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10412" BrowseName="1:Process" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10412" BrowseName="1:Process" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>Process</DisplayName>
     <Description>Current Process name</Description>
     <References>
@@ -5863,7 +5864,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10415" BrowseName="1:Unit" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10415" BrowseName="1:Unit" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>Unit</DisplayName>
     <Description>Current Unit name</Description>
     <References>
@@ -5873,7 +5874,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10418" BrowseName="1:Operation" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10418" BrowseName="1:Operation" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>Operation</DisplayName>
     <Description>Current Operation name</Description>
     <References>
@@ -5883,7 +5884,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10421" BrowseName="1:Phase" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10421" BrowseName="1:Phase" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>Phase</DisplayName>
     <Description>Current Phase name</Description>
     <References>
@@ -5893,7 +5894,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10424" BrowseName="1:UserId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10424" BrowseName="1:UserId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>UserId</DisplayName>
     <Description>Login name of the user who is logged on at the device console</Description>
     <References>
@@ -5903,7 +5904,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10317</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10427" BrowseName="1:SampleId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3" UserAccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10427" BrowseName="1:SampleId" ParentNodeId="ns=1;i=10317" DataType="String" AccessLevel="3">
     <DisplayName>SampleId</DisplayName>
     <Description>Identifier for the sample</Description>
     <References>
@@ -6022,17 +6023,6 @@
     <DisplayName>ParameterSet</DisplayName>
     <Description>Flat list of Parameters</Description>
     <References>
-      <Reference ReferenceType="HasComponent">ns=1;i=10468</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=10474</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=10483</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=10492</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=10495</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=10498</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=10502</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=10505</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=10511</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=10517</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=10523</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=10575</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=10584</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=10593</Reference>
@@ -6051,132 +6041,6 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1030</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=10468" BrowseName="1:IsEnabled" ParentNodeId="ns=1;i=10446" DataType="Boolean">
-    <DisplayName>IsEnabled</DisplayName>
-    <Description>True if this stream maybe used to perform acquisition</Description>
-    <References>
-      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=10559</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2365</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10446</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10474" BrowseName="1:DiagnosticStatus" ParentNodeId="ns=1;i=10446" DataType="ns=2;i=6244">
-    <DisplayName>DiagnosticStatus</DisplayName>
-    <Description>Stream health status</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=2365</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10446</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10483" BrowseName="1:LastSampleTime" ParentNodeId="ns=1;i=10446" DataType="DateTime">
-    <DisplayName>LastSampleTime</DisplayName>
-    <Description>Time at which the last sample was acquired</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=2365</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10446</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10492" BrowseName="1:IsActive" ParentNodeId="ns=1;i=10446" DataType="Boolean">
-    <DisplayName>IsActive</DisplayName>
-    <Description>True if this stream is actually running, acquiring data</Description>
-    <References>
-      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=10565</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2365</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10446</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10495" BrowseName="1:ExecutionCycle" ParentNodeId="ns=1;i=10446" DataType="ns=1;i=9378">
-    <DisplayName>ExecutionCycle</DisplayName>
-    <Description>Indicates which Execution cycle is in progress</Description>
-    <References>
-      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=10565</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2365</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10446</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10498" BrowseName="1:ExecutionCycleSubcode" ParentNodeId="ns=1;i=10446" DataType="UInteger">
-    <DisplayName>ExecutionCycleSubcode</DisplayName>
-    <Description>Indicates which Execution cycle subcode is in progress</Description>
-    <References>
-      <Reference ReferenceType="HasProperty">ns=1;i=10501</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=10565</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2376</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10446</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10501" BrowseName="EnumStrings" ParentNodeId="ns=1;i=10498" DataType="LocalizedText" ValueRank="1">
-    <DisplayName>EnumStrings</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=10498</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10502" BrowseName="1:Progress" ParentNodeId="ns=1;i=10446" DataType="Float">
-    <DisplayName>Progress</DisplayName>
-    <Description>Indicates the progress of an acquisition in terms of percentage of completion. Its value shall be between 0 and 100.</Description>
-    <References>
-      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=10565</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2365</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10446</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10505" BrowseName="1:AcquisitionCounter" ParentNodeId="ns=1;i=10446" DataType="i=289">
-    <DisplayName>AcquisitionCounter</DisplayName>
-    <Description>Simple counter incremented after each Sampling acquisition performed on this Stream</Description>
-    <References>
-      <Reference ReferenceType="HasProperty">ns=1;i=10509</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=10567</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10446</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10509" BrowseName="EURange" ParentNodeId="ns=1;i=10505" DataType="i=884">
-    <DisplayName>EURange</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=10505</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10511" BrowseName="1:AcquisitionResultStatus" ParentNodeId="ns=1;i=10446" DataType="ns=1;i=3003">
-    <DisplayName>AcquisitionResultStatus</DisplayName>
-    <Description>Quality of the acquisition</Description>
-    <References>
-      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=10567</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2365</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10446</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10517" BrowseName="1:ScaledData" ParentNodeId="ns=1;i=10446">
-    <DisplayName>ScaledData</DisplayName>
-    <Description>Scaled data produced as a result of data acquisition on the Stream and application of the analyser model</Description>
-    <References>
-      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=10567</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2365</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10446</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10523" BrowseName="1:AcquisitionEndTime" ParentNodeId="ns=1;i=10446" DataType="DateTime">
-    <DisplayName>AcquisitionEndTime</DisplayName>
-    <Description>The end time of the AnalyseSample or AnalyseCalibrationSample or AnalyseValidationSample state of the AnalyserChannel_OperatingModeExecuteSubStateMachine state machine</Description>
-    <References>
-      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=10567</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2365</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10446</Reference>
-    </References>
-  </UAVariable>
   <UAVariable NodeId="ns=1;i=10575" BrowseName="1:ActiveBackground" ParentNodeId="ns=1;i=10446" DataType="Float">
     <DisplayName>ActiveBackground</DisplayName>
     <References>
@@ -6545,17 +6409,6 @@
     <DisplayName>ParameterSet</DisplayName>
     <Description>Flat list of Parameters</Description>
     <References>
-      <Reference ReferenceType="HasComponent">ns=1;i=10790</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=10796</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=10805</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=10814</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=10817</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=10820</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=10824</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=10827</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=10833</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=10839</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=10845</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=10897</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=10906</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=10915</Reference>
@@ -6564,127 +6417,6 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1032</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=10790" BrowseName="1:IsEnabled" ParentNodeId="ns=1;i=10768" DataType="Boolean">
-    <DisplayName>IsEnabled</DisplayName>
-    <Description>True if this stream maybe used to perform acquisition</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=2365</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10768</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10796" BrowseName="1:DiagnosticStatus" ParentNodeId="ns=1;i=10768" DataType="ns=2;i=6244">
-    <DisplayName>DiagnosticStatus</DisplayName>
-    <Description>Stream health status</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=2365</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10768</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10805" BrowseName="1:LastSampleTime" ParentNodeId="ns=1;i=10768" DataType="DateTime">
-    <DisplayName>LastSampleTime</DisplayName>
-    <Description>Time at which the last sample was acquired</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=2365</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10768</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10814" BrowseName="1:IsActive" ParentNodeId="ns=1;i=10768" DataType="Boolean">
-    <DisplayName>IsActive</DisplayName>
-    <Description>True if this stream is actually running, acquiring data</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=2365</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10768</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10817" BrowseName="1:ExecutionCycle" ParentNodeId="ns=1;i=10768" DataType="ns=1;i=9378">
-    <DisplayName>ExecutionCycle</DisplayName>
-    <Description>Indicates which Execution cycle is in progress</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=2365</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10768</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10820" BrowseName="1:ExecutionCycleSubcode" ParentNodeId="ns=1;i=10768" DataType="UInteger">
-    <DisplayName>ExecutionCycleSubcode</DisplayName>
-    <Description>Indicates which Execution cycle subcode is in progress</Description>
-    <References>
-      <Reference ReferenceType="HasProperty">ns=1;i=10823</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2376</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10768</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10823" BrowseName="EnumStrings" ParentNodeId="ns=1;i=10820" DataType="LocalizedText" ValueRank="1">
-    <DisplayName>EnumStrings</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=10820</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10824" BrowseName="1:Progress" ParentNodeId="ns=1;i=10768" DataType="Float">
-    <DisplayName>Progress</DisplayName>
-    <Description>Indicates the progress of an acquisition in terms of percentage of completion. Its value shall be between 0 and 100.</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=2365</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10768</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10827" BrowseName="1:AcquisitionCounter" ParentNodeId="ns=1;i=10768" DataType="i=289">
-    <DisplayName>AcquisitionCounter</DisplayName>
-    <Description>Simple counter incremented after each Sampling acquisition performed on this Stream</Description>
-    <References>
-      <Reference ReferenceType="HasProperty">ns=1;i=10831</Reference>
-      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=10889</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10768</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10831" BrowseName="EURange" ParentNodeId="ns=1;i=10827" DataType="i=884">
-    <DisplayName>EURange</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=10827</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10833" BrowseName="1:AcquisitionResultStatus" ParentNodeId="ns=1;i=10768" DataType="ns=1;i=3003">
-    <DisplayName>AcquisitionResultStatus</DisplayName>
-    <Description>Quality of the acquisition</Description>
-    <References>
-      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=10889</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2365</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10768</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10839" BrowseName="1:ScaledData" ParentNodeId="ns=1;i=10768">
-    <DisplayName>ScaledData</DisplayName>
-    <Description>Scaled data produced as a result of data acquisition on the Stream and application of the analyser model</Description>
-    <References>
-      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=10889</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2365</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10768</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=10845" BrowseName="1:AcquisitionEndTime" ParentNodeId="ns=1;i=10768" DataType="DateTime">
-    <DisplayName>AcquisitionEndTime</DisplayName>
-    <Description>The end time of the AnalyseSample or AnalyseCalibrationSample or AnalyseValidationSample state of the AnalyserChannel_OperatingModeExecuteSubStateMachine state machine</Description>
-    <References>
-      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=10889</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=2365</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=10768</Reference>
-    </References>
-  </UAVariable>
   <UAVariable NodeId="ns=1;i=10897" BrowseName="1:Background" ParentNodeId="ns=1;i=10768" DataType="Float">
     <DisplayName>Background</DisplayName>
     <References>
@@ -6843,22 +6575,12 @@
     <DisplayName>ParameterSet</DisplayName>
     <Description>Flat list of Parameters</Description>
     <References>
-      <Reference ReferenceType="HasComponent">ns=1;i=11384</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=11551</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1011</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=11384" BrowseName="1:DiagnosticStatus" ParentNodeId="ns=1;i=11305" DataType="ns=2;i=6244">
-    <DisplayName>DiagnosticStatus</DisplayName>
-    <Description>General health status of the analyser</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=2365</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=11305</Reference>
-    </References>
-  </UAVariable>
   <UAVariable NodeId="ns=1;i=11551" BrowseName="1:SpectralRange" ParentNodeId="ns=1;i=11305" DataType="i=884" ValueRank="1">
     <DisplayName>SpectralRange</DisplayName>
     <References>
@@ -7520,7 +7242,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=13026</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="ExecutionCycleEnumeration">
+    <Definition Name="1:ExecutionCycleEnumeration">
       <Field Name="IDLE" Value="0">
         <Description>Idle, no cleaning or acquisition cycle in progress</Description>
       </Field>
@@ -7794,7 +7516,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=13027</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="AcquisitionResultStatusEnumeration">
+    <Definition Name="1:AcquisitionResultStatusEnumeration">
       <Field Name="NOT_USED" Value="0">
         <Description>No longer used.</Description>
       </Field>
@@ -8090,7 +7812,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=13063</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="AlarmStateEnumeration">
+    <Definition Name="1:AlarmStateEnumeration">
       <Field Name="NORMAL_0" Value="0">
         <Description>Normal</Description>
       </Field>
@@ -8340,7 +8062,6 @@ YT4=</ByteString>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=13066" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=13064" DataType="String">
     <DisplayName>NamespaceUri</DisplayName>
-    <Description>A URI that uniquely identifies the dictionary.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=13064</Reference>
@@ -8401,7 +8122,6 @@ MzIiIC8+DQogIDwvb3BjOkVudW1lcmF0ZWRUeXBlPg0KDQo8L29wYzpUeXBlRGljdGlvbmFyeT4=</By
   </UAVariable>
   <UAVariable NodeId="ns=1;i=13069" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=13067" DataType="String">
     <DisplayName>NamespaceUri</DisplayName>
-    <Description>A URI that uniquely identifies the dictionary.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=13067</Reference>

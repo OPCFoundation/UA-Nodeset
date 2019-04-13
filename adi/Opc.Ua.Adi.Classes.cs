@@ -1,8 +1,8 @@
 /* ========================================================================
- * Copyright (c) 2005-2016 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
- *
+ * 
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
  * files (the "Software"), to deal in the Software without
@@ -11,7 +11,7 @@
  * copies of the Software, and to permit persons to whom the
  * Software is furnished to do so, subject to the following
  * conditions:
- *
+ * 
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
@@ -30,7 +30,6 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Reflection;
 using System.Xml;
 using System.Runtime.Serialization;
 using Opc.Ua.Di;
@@ -74,6 +73,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -90,95 +98,90 @@ namespace Opc.Ua.Adi
            "YXR1cwEB8yQDAAAAACUAAABHZW5lcmFsIGhlYWx0aCBzdGF0dXMgb2YgdGhlIGFuYWx5c2VyAC8BAD0J" +
            "8yQAAAECZBj/////AQEBAAAAACMBAQEMJQAAAAAkYIAKAQAAAAEACgAAAENvbmZpZ0RhdGEBAfYkAwAA" +
            "AAAsAAAAT3B0aW9uYWwgYW5hbHlzZXIgZGV2aWNlIGxhcmdlIGNvbmZpZ3VyYXRpb24ALwEANy32JAAA" +
-           "AQAAAAAjAQEBCiUKAAAANWCJCgIAAAAAAAQAAABTaXplAQH3JAMAAAAAHgAAAFRoZSBzaXplIG9mIHRo" +
-           "ZSBmaWxlIGluIGJ5dGVzLgAuAET3JAAAAAn/////AQH/////AAAAADVgiQoCAAAAAAAIAAAAV3JpdGFi" +
-           "bGUBAQ4zAwAAAAAdAAAAV2hldGhlciB0aGUgZmlsZSBpcyB3cml0YWJsZS4ALgBEDjMAAAAB/////wEB" +
-           "/////wAAAAA1YIkKAgAAAAAADAAAAFVzZXJXcml0YWJsZQEBDzMDAAAAADEAAABXaGV0aGVyIHRoZSBm" +
-           "aWxlIGlzIHdyaXRhYmxlIGJ5IHRoZSBjdXJyZW50IHVzZXIuAC4ARA8zAAAAAf////8BAf////8AAAAA" +
-           "NWCJCgIAAAAAAAkAAABPcGVuQ291bnQBAfokAwAAAAAoAAAAVGhlIGN1cnJlbnQgbnVtYmVyIG9mIG9w" +
-           "ZW4gZmlsZSBoYW5kbGVzLgAuAET6JAAAAAX/////AQH/////AAAAAARhggoEAAAAAAAEAAAAT3BlbgEB" +
-           "+yQALwEAPC37JAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAfwkAC4ARPwk" +
-           "AACWAQAAAAEAKgEBEwAAAAQAAABNb2RlAAP/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAA" +
-           "AAAADwAAAE91dHB1dEFyZ3VtZW50cwEB/SQALgBE/SQAAJYBAAAAAQAqAQEZAAAACgAAAEZpbGVIYW5k" +
-           "bGUAB/////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAAAFAAAAQ2xvc2UBAf4kAC8BAD8t" +
-           "/iQAAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQH/JAAuAET/JAAAlgEAAAAB" +
-           "ACoBARkAAAAKAAAARmlsZUhhbmRsZQAH/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAAA" +
-           "AAQAAABSZWFkAQEAJQAvAQBBLQAlAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50" +
-           "cwEBASUALgBEASUAAJYCAAAAAQAqAQEZAAAACgAAAEZpbGVIYW5kbGUAB/////8AAAAAAAEAKgEBFQAA" +
-           "AAYAAABMZW5ndGgABv////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0" +
-           "QXJndW1lbnRzAQECJQAuAEQCJQAAlgEAAAABACoBARMAAAAEAAAARGF0YQAP/////wAAAAAAAQAoAQEA" +
-           "AAABAf////8AAAAABGGCCgQAAAAAAAUAAABXcml0ZQEBAyUALwEARC0DJQAAAQH/////AQAAABVgqQoC" +
-           "AAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAQQlAC4ARAQlAACWAgAAAAEAKgEBGQAAAAoAAABGaWxlSGFu" +
-           "ZGxlAAf/////AAAAAAABACoBARMAAAAEAAAARGF0YQAP/////wAAAAAAAQAoAQEAAAABAf////8AAAAA" +
-           "BGGCCgQAAAAAAAsAAABHZXRQb3NpdGlvbgEBBSUALwEARi0FJQAAAQH/////AgAAABVgqQoCAAAAAAAO" +
-           "AAAASW5wdXRBcmd1bWVudHMBAQYlAC4ARAYlAACWAQAAAAEAKgEBGQAAAAoAAABGaWxlSGFuZGxlAAf/" +
-           "////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBByUA" +
-           "LgBEByUAAJYBAAAAAQAqAQEXAAAACAAAAFBvc2l0aW9uAAn/////AAAAAAABACgBAQAAAAEB/////wAA" +
-           "AAAEYYIKBAAAAAAACwAAAFNldFBvc2l0aW9uAQEIJQAvAQBJLQglAAABAf////8BAAAAFWCpCgIAAAAA" +
-           "AA4AAABJbnB1dEFyZ3VtZW50cwEBCSUALgBECSUAAJYCAAAAAQAqAQEZAAAACgAAAEZpbGVIYW5kbGUA" +
-           "B/////8AAAAAAAEAKgEBFwAAAAgAAABQb3NpdGlvbgAJ/////wAAAAAAAQAoAQEAAAABAf////8AAAAA" +
-           "JGCACgEAAAACAAkAAABNZXRob2RTZXQBAaYkAwAAAAAUAAAARmxhdCBsaXN0IG9mIE1ldGhvZHMALwA6" +
-           "piQAAP////8KAAAABGGCCgQAAAABABAAAABHZXRDb25maWd1cmF0aW9uAQHjJAAvAQHjJOMkAAABAf//" +
-           "//8BAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAeQkAC4AROQkAACWAQAAAAEAKgEBGQAA" +
-           "AAoAAABDb25maWdEYXRhAA//////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEAEAAAAFNl" +
-           "dENvbmZpZ3VyYXRpb24BAeUkAC8BAeUk5SQAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJn" +
-           "dW1lbnRzAQHmJAAuAETmJAAAlgEAAAABACoBARkAAAAKAAAAQ29uZmlnRGF0YQAP/////wAAAAAAAQAo" +
-           "AQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAeckAC4AROckAACWAQAA" +
-           "AAEAKgEBHwAAABAAAABDb25maWdEYXRhRGlnZXN0AAz/////AAAAAAABACgBAQAAAAEB/////wAAAAAE" +
-           "YYIKBAAAAAEAEwAAAEdldENvbmZpZ0RhdGFEaWdlc3QBAegkAC8BAegk6CQAAAEB/////wEAAAAVYKkK" +
-           "AgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEB6SQALgBE6SQAAJYBAAAAAQAqAQEfAAAAEAAAAENvbmZp" +
-           "Z0RhdGFEaWdlc3QADP////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQAXAAAAQ29tcGFy" +
-           "ZUNvbmZpZ0RhdGFEaWdlc3QBAeokAC8BAeok6iQAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0" +
-           "QXJndW1lbnRzAQHrJAAuAETrJAAAlgEAAAABACoBAR8AAAAQAAAAQ29uZmlnRGF0YURpZ2VzdAAM////" +
-           "/wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAewkAC4A" +
-           "ROwkAACWAQAAAAEAKgEBFgAAAAcAAABJc0VxdWFsAAH/////AAAAAAABACgBAQAAAAEB/////wAAAAAk" +
-           "YYIKBAAAAAEAEAAAAFJlc2V0QWxsQ2hhbm5lbHMBAe0kAwAAAAA8AAAAUmVzZXQgYWxsIEFuYWx5c2Vy" +
-           "Q2hhbm5lbHMgYmVsb25naW5nIHRvIHRoaXMgQW5hbHlzZXJEZXZpY2UuAC8BAe0k7SQAAAEB/////wAA" +
-           "AAAkYYIKBAAAAAEAEAAAAFN0YXJ0QWxsQ2hhbm5lbHMBAe4kAwAAAAA8AAAAU3RhcnQgYWxsIEFuYWx5" +
-           "c2VyQ2hhbm5lbHMgYmVsb25naW5nIHRvIHRoaXMgQW5hbHlzZXJEZXZpY2UuAC8BAe4k7iQAAAEB////" +
-           "/wAAAAAkYYIKBAAAAAEADwAAAFN0b3BBbGxDaGFubmVscwEB7yQDAAAAADsAAABTdG9wIGFsbCBBbmFs" +
-           "eXNlckNoYW5uZWxzIGJlbG9uZ2luZyB0byB0aGlzIEFuYWx5c2VyRGV2aWNlLgAvAQHvJO8kAAABAf//" +
-           "//8AAAAAJGGCCgQAAAABABAAAABBYm9ydEFsbENoYW5uZWxzAQHwJAMAAAAAPAAAAEFib3J0IGFsbCBB" +
-           "bmFseXNlckNoYW5uZWxzIGJlbG9uZ2luZyB0byB0aGlzIEFuYWx5c2VyRGV2aWNlLgAvAQHwJPAkAAAB" +
-           "Af////8AAAAAJGGCCgQAAAABAA0AAABHb3RvT3BlcmF0aW5nAQHxJAMAAAAAjQAAAEFuYWx5c2VyRGV2" +
-           "aWNlU3RhdGVNYWNoaW5lIHRvIGdvIHRvIE9wZXJhdGluZyBzdGF0ZSwgZm9yY2luZyBhbGwgQW5hbHlz" +
-           "ZXJDaGFubmVscyB0byBsZWF2ZSB0aGUgU2xhdmVNb2RlIHN0YXRlIGFuZCBnbyB0byB0aGUgT3BlcmF0" +
-           "aW5nIHN0YXRlLgAvAQHxJPEkAAABAf////8AAAAAJGGCCgQAAAABAA8AAABHb3RvTWFpbnRlbmFuY2UB" +
-           "AfIkAwAAAABnAAAAQW5hbHlzZXJEZXZpY2VTdGF0ZU1hY2hpbmUgdG8gZ28gdG8gTWFpbnRlbmFuY2Ug" +
-           "c3RhdGUsIGZvcmNpbmcgYWxsIEFuYWx5c2VyQ2hhbm5lbHMgdG8gU2xhdmVNb2RlIHN0YXRlLgAvAQHy" +
-           "JPIkAAABAf////8AAAAAJGCACgEAAAACAA4AAABJZGVudGlmaWNhdGlvbgEBqiQDAAAAAEYAAABVc2Vk" +
-           "IHRvIG9yZ2FuaXplIHBhcmFtZXRlcnMgZm9yIGlkZW50aWZpY2F0aW9uIG9mIHRoaXMgVG9wb2xvZ3lF" +
-           "bGVtZW50AC8BAu0DqiQAAAMAAAAAIwABAnMXACMAAQJ0FwAjAAECcRcAAAAANWCJCgIAAAACAAwAAABT" +
-           "ZXJpYWxOdW1iZXIBAbokAwAAAABNAAAASWRlbnRpZmllciB0aGF0IHVuaXF1ZWx5IGlkZW50aWZpZXMs" +
-           "IHdpdGhpbiBhIG1hbnVmYWN0dXJlciwgYSBkZXZpY2UgaW5zdGFuY2UALgBEuiQAAAAM/////wEB////" +
-           "/wAAAAA1YIkKAgAAAAIADwAAAFJldmlzaW9uQ291bnRlcgEBuyQDAAAAAGkAAABBbiBpbmNyZW1lbnRh" +
-           "bCBjb3VudGVyIGluZGljYXRpbmcgdGhlIG51bWJlciBvZiB0aW1lcyB0aGUgc3RhdGljIGRhdGEgd2l0" +
-           "aGluIHRoZSBEZXZpY2UgaGFzIGJlZW4gbW9kaWZpZWQALgBEuyQAAAAG/////wEB/////wAAAAA1YIkK" +
-           "AgAAAAIADAAAAE1hbnVmYWN0dXJlcgEBvCQDAAAAADAAAABOYW1lIG9mIHRoZSBjb21wYW55IHRoYXQg" +
-           "bWFudWZhY3R1cmVkIHRoZSBkZXZpY2UALgBEvCQAAAAV/////wEB/////wAAAAA1YIkKAgAAAAIABQAA" +
-           "AE1vZGVsAQG9JAMAAAAAGAAAAE1vZGVsIG5hbWUgb2YgdGhlIGRldmljZQAuAES9JAAAABX/////AQH/" +
-           "////AAAAADVgiQoCAAAAAgAMAAAARGV2aWNlTWFudWFsAQG+JAMAAAAAWgAAAEFkZHJlc3MgKHBhdGhu" +
-           "YW1lIGluIHRoZSBmaWxlIHN5c3RlbSBvciBhIFVSTCB8IFdlYiBhZGRyZXNzKSBvZiB1c2VyIG1hbnVh" +
-           "bCBmb3IgdGhlIGRldmljZQAuAES+JAAAAAz/////AQH/////AAAAADVgiQoCAAAAAgAOAAAARGV2aWNl" +
-           "UmV2aXNpb24BAb8kAwAAAAAkAAAAT3ZlcmFsbCByZXZpc2lvbiBsZXZlbCBvZiB0aGUgZGV2aWNlAC4A" +
-           "RL8kAAAADP////8BAf////8AAAAANWCJCgIAAAACABAAAABTb2Z0d2FyZVJldmlzaW9uAQHAJAMAAAAA" +
-           "NQAAAFJldmlzaW9uIGxldmVsIG9mIHRoZSBzb2Z0d2FyZS9maXJtd2FyZSBvZiB0aGUgZGV2aWNlAC4A" +
-           "RMAkAAAADP////8BAf////8AAAAANWCJCgIAAAACABAAAABIYXJkd2FyZVJldmlzaW9uAQHBJAMAAAAA" +
-           "LAAAAFJldmlzaW9uIGxldmVsIG9mIHRoZSBoYXJkd2FyZSBvZiB0aGUgZGV2aWNlAC4ARMEkAAAADP//" +
-           "//8BAf////8AAAAABGCACgEAAAABAA0AAABDb25maWd1cmF0aW9uAQEKJQAvAQLtAwolAAABAAAAACMA" +
-           "AQH2JAAAAAAEYIAKAQAAAAEABgAAAFN0YXR1cwEBDCUALwEC7QMMJQAAAQAAAAAjAAEB8yQAAAAABGCA" +
-           "CgEAAAABAA8AAABGYWN0b3J5U2V0dGluZ3MBAQ4lAC8BAu0DDiUAAP////8AAAAABGCACgEAAAABABQA" +
-           "AABBbmFseXNlclN0YXRlTWFjaGluZQEBECUALwEB6gMQJQAA/////wEAAAAVYIkKAgAAAAAADAAAAEN1" +
-           "cnJlbnRTdGF0ZQEBESUALwEAyAoRJQAAABX/////AQH/////AQAAABVgiQoCAAAAAAACAAAASWQBARIl" +
-           "AC4ARBIlAAAAEf////8BAf////8AAAAA";
+           "AQAAAAAjAQEBCiUKAAAAFWCJCgIAAAAAAAQAAABTaXplAQH3JAAuAET3JAAAAAn/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAAIAAAAV3JpdGFibGUBAQ4zAC4ARA4zAAAAAf////8BAf////8AAAAAFWCJCgIAAAAA" +
+           "AAwAAABVc2VyV3JpdGFibGUBAQ8zAC4ARA8zAAAAAf////8BAf////8AAAAAFWCJCgIAAAAAAAkAAABP" +
+           "cGVuQ291bnQBAfokAC4ARPokAAAABf////8BAf////8AAAAABGGCCgQAAAAAAAQAAABPcGVuAQH7JAAv" +
+           "AQA8LfskAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEB/CQALgBE/CQAAJYB" +
+           "AAAAAQAqAQETAAAABAAAAE1vZGUAA/////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAP" +
+           "AAAAT3V0cHV0QXJndW1lbnRzAQH9JAAuAET9JAAAlgEAAAABACoBARkAAAAKAAAARmlsZUhhbmRsZQAH" +
+           "/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAAAAAUAAABDbG9zZQEB/iQALwEAPy3+JAAA" +
+           "AQH/////AQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAf8kAC4ARP8kAACWAQAAAAEAKgEB" +
+           "GQAAAAoAAABGaWxlSGFuZGxlAAf/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAAABAAA" +
+           "AFJlYWQBAQAlAC8BAEEtACUAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQEB" +
+           "JQAuAEQBJQAAlgIAAAABACoBARkAAAAKAAAARmlsZUhhbmRsZQAH/////wAAAAAAAQAqAQEVAAAABgAA" +
+           "AExlbmd0aAAG/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1" +
+           "bWVudHMBAQIlAC4ARAIlAACWAQAAAAEAKgEBEwAAAAQAAABEYXRhAA//////AAAAAAABACgBAQAAAAEB" +
+           "/////wAAAAAEYYIKBAAAAAAABQAAAFdyaXRlAQEDJQAvAQBELQMlAAABAf////8BAAAAFWCpCgIAAAAA" +
+           "AA4AAABJbnB1dEFyZ3VtZW50cwEBBCUALgBEBCUAAJYCAAAAAQAqAQEZAAAACgAAAEZpbGVIYW5kbGUA" +
+           "B/////8AAAAAAAEAKgEBEwAAAAQAAABEYXRhAA//////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIK" +
+           "BAAAAAAACwAAAEdldFBvc2l0aW9uAQEFJQAvAQBGLQUlAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJ" +
+           "bnB1dEFyZ3VtZW50cwEBBiUALgBEBiUAAJYBAAAAAQAqAQEZAAAACgAAAEZpbGVIYW5kbGUAB/////8A" +
+           "AAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQEHJQAuAEQH" +
+           "JQAAlgEAAAABACoBARcAAAAIAAAAUG9zaXRpb24ACf////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARh" +
+           "ggoEAAAAAAALAAAAU2V0UG9zaXRpb24BAQglAC8BAEktCCUAAAEB/////wEAAAAVYKkKAgAAAAAADgAA" +
+           "AElucHV0QXJndW1lbnRzAQEJJQAuAEQJJQAAlgIAAAABACoBARkAAAAKAAAARmlsZUhhbmRsZQAH////" +
+           "/wAAAAAAAQAqAQEXAAAACAAAAFBvc2l0aW9uAAn/////AAAAAAABACgBAQAAAAEB/////wAAAAAkYIAK" +
+           "AQAAAAIACQAAAE1ldGhvZFNldAEBpiQDAAAAABQAAABGbGF0IGxpc3Qgb2YgTWV0aG9kcwAvADqmJAAA" +
+           "/////woAAAAEYYIKBAAAAAEAEAAAAEdldENvbmZpZ3VyYXRpb24BAeMkAC8BAeMk4yQAAAEB/////wEA" +
+           "AAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEB5CQALgBE5CQAAJYBAAAAAQAqAQEZAAAACgAA" +
+           "AENvbmZpZ0RhdGEAD/////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQAQAAAAU2V0Q29u" +
+           "ZmlndXJhdGlvbgEB5SQALwEB5STlJAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVu" +
+           "dHMBAeYkAC4AROYkAACWAQAAAAEAKgEBGQAAAAoAAABDb25maWdEYXRhAA//////AAAAAAABACgBAQAA" +
+           "AAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEB5yQALgBE5yQAAJYBAAAAAQAq" +
+           "AQEfAAAAEAAAAENvbmZpZ0RhdGFEaWdlc3QADP////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoE" +
+           "AAAAAQATAAAAR2V0Q29uZmlnRGF0YURpZ2VzdAEB6CQALwEB6CToJAAAAQH/////AQAAABVgqQoCAAAA" +
+           "AAAPAAAAT3V0cHV0QXJndW1lbnRzAQHpJAAuAETpJAAAlgEAAAABACoBAR8AAAAQAAAAQ29uZmlnRGF0" +
+           "YURpZ2VzdAAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAABABcAAABDb21wYXJlQ29u" +
+           "ZmlnRGF0YURpZ2VzdAEB6iQALwEB6iTqJAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1" +
+           "bWVudHMBAeskAC4AROskAACWAQAAAAEAKgEBHwAAABAAAABDb25maWdEYXRhRGlnZXN0AAz/////AAAA" +
+           "AAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEB7CQALgBE7CQA" +
+           "AJYBAAAAAQAqAQEWAAAABwAAAElzRXF1YWwAAf////8AAAAAAAEAKAEBAAAAAQH/////AAAAACRhggoE" +
+           "AAAAAQAQAAAAUmVzZXRBbGxDaGFubmVscwEB7SQDAAAAADwAAABSZXNldCBhbGwgQW5hbHlzZXJDaGFu" +
+           "bmVscyBiZWxvbmdpbmcgdG8gdGhpcyBBbmFseXNlckRldmljZS4ALwEB7STtJAAAAQH/////AAAAACRh" +
+           "ggoEAAAAAQAQAAAAU3RhcnRBbGxDaGFubmVscwEB7iQDAAAAADwAAABTdGFydCBhbGwgQW5hbHlzZXJD" +
+           "aGFubmVscyBiZWxvbmdpbmcgdG8gdGhpcyBBbmFseXNlckRldmljZS4ALwEB7iTuJAAAAQH/////AAAA" +
+           "ACRhggoEAAAAAQAPAAAAU3RvcEFsbENoYW5uZWxzAQHvJAMAAAAAOwAAAFN0b3AgYWxsIEFuYWx5c2Vy" +
+           "Q2hhbm5lbHMgYmVsb25naW5nIHRvIHRoaXMgQW5hbHlzZXJEZXZpY2UuAC8BAe8k7yQAAAEB/////wAA" +
+           "AAAkYYIKBAAAAAEAEAAAAEFib3J0QWxsQ2hhbm5lbHMBAfAkAwAAAAA8AAAAQWJvcnQgYWxsIEFuYWx5" +
+           "c2VyQ2hhbm5lbHMgYmVsb25naW5nIHRvIHRoaXMgQW5hbHlzZXJEZXZpY2UuAC8BAfAk8CQAAAEB////" +
+           "/wAAAAAkYYIKBAAAAAEADQAAAEdvdG9PcGVyYXRpbmcBAfEkAwAAAACNAAAAQW5hbHlzZXJEZXZpY2VT" +
+           "dGF0ZU1hY2hpbmUgdG8gZ28gdG8gT3BlcmF0aW5nIHN0YXRlLCBmb3JjaW5nIGFsbCBBbmFseXNlckNo" +
+           "YW5uZWxzIHRvIGxlYXZlIHRoZSBTbGF2ZU1vZGUgc3RhdGUgYW5kIGdvIHRvIHRoZSBPcGVyYXRpbmcg" +
+           "c3RhdGUuAC8BAfEk8SQAAAEB/////wAAAAAkYYIKBAAAAAEADwAAAEdvdG9NYWludGVuYW5jZQEB8iQD" +
+           "AAAAAGcAAABBbmFseXNlckRldmljZVN0YXRlTWFjaGluZSB0byBnbyB0byBNYWludGVuYW5jZSBzdGF0" +
+           "ZSwgZm9yY2luZyBhbGwgQW5hbHlzZXJDaGFubmVscyB0byBTbGF2ZU1vZGUgc3RhdGUuAC8BAfIk8iQA" +
+           "AAEB/////wAAAAAkYIAKAQAAAAIADgAAAElkZW50aWZpY2F0aW9uAQGqJAMAAAAARgAAAFVzZWQgdG8g" +
+           "b3JnYW5pemUgcGFyYW1ldGVycyBmb3IgaWRlbnRpZmljYXRpb24gb2YgdGhpcyBUb3BvbG9neUVsZW1l" +
+           "bnQALwEC7QOqJAAAAwAAAAAjAAECcxcAIwABAnQXACMAAQJxFwAAAAA1YIkKAgAAAAIADAAAAFNlcmlh" +
+           "bE51bWJlcgEBuiQDAAAAAE0AAABJZGVudGlmaWVyIHRoYXQgdW5pcXVlbHkgaWRlbnRpZmllcywgd2l0" +
+           "aGluIGEgbWFudWZhY3R1cmVyLCBhIGRldmljZSBpbnN0YW5jZQAuAES6JAAAAAz/////AQH/////AAAA" +
+           "ADVgiQoCAAAAAgAPAAAAUmV2aXNpb25Db3VudGVyAQG7JAMAAAAAaQAAAEFuIGluY3JlbWVudGFsIGNv" +
+           "dW50ZXIgaW5kaWNhdGluZyB0aGUgbnVtYmVyIG9mIHRpbWVzIHRoZSBzdGF0aWMgZGF0YSB3aXRoaW4g" +
+           "dGhlIERldmljZSBoYXMgYmVlbiBtb2RpZmllZAAuAES7JAAAAAb/////AQH/////AAAAADVgiQoCAAAA" +
+           "AgAMAAAATWFudWZhY3R1cmVyAQG8JAMAAAAAMAAAAE5hbWUgb2YgdGhlIGNvbXBhbnkgdGhhdCBtYW51" +
+           "ZmFjdHVyZWQgdGhlIGRldmljZQAuAES8JAAAABX/////AQH/////AAAAADVgiQoCAAAAAgAFAAAATW9k" +
+           "ZWwBAb0kAwAAAAAYAAAATW9kZWwgbmFtZSBvZiB0aGUgZGV2aWNlAC4ARL0kAAAAFf////8BAf////8A" +
+           "AAAANWCJCgIAAAACAAwAAABEZXZpY2VNYW51YWwBAb4kAwAAAABaAAAAQWRkcmVzcyAocGF0aG5hbWUg" +
+           "aW4gdGhlIGZpbGUgc3lzdGVtIG9yIGEgVVJMIHwgV2ViIGFkZHJlc3MpIG9mIHVzZXIgbWFudWFsIGZv" +
+           "ciB0aGUgZGV2aWNlAC4ARL4kAAAADP////8BAf////8AAAAANWCJCgIAAAACAA4AAABEZXZpY2VSZXZp" +
+           "c2lvbgEBvyQDAAAAACQAAABPdmVyYWxsIHJldmlzaW9uIGxldmVsIG9mIHRoZSBkZXZpY2UALgBEvyQA" +
+           "AAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAAAFNvZnR3YXJlUmV2aXNpb24BAcAkAwAAAAA1AAAA" +
+           "UmV2aXNpb24gbGV2ZWwgb2YgdGhlIHNvZnR3YXJlL2Zpcm13YXJlIG9mIHRoZSBkZXZpY2UALgBEwCQA" +
+           "AAAM/////wEB/////wAAAAA1YIkKAgAAAAIAEAAAAEhhcmR3YXJlUmV2aXNpb24BAcEkAwAAAAAsAAAA" +
+           "UmV2aXNpb24gbGV2ZWwgb2YgdGhlIGhhcmR3YXJlIG9mIHRoZSBkZXZpY2UALgBEwSQAAAAM/////wEB" +
+           "/////wAAAAAEYIAKAQAAAAEADQAAAENvbmZpZ3VyYXRpb24BAQolAC8BAu0DCiUAAAEAAAAAIwABAfYk" +
+           "AAAAAARggAoBAAAAAQAGAAAAU3RhdHVzAQEMJQAvAQLtAwwlAAABAAAAACMAAQHzJAAAAAAEYIAKAQAA" +
+           "AAEADwAAAEZhY3RvcnlTZXR0aW5ncwEBDiUALwEC7QMOJQAA/////wAAAAAEYIAKAQAAAAEAFAAAAEFu" +
+           "YWx5c2VyU3RhdGVNYWNoaW5lAQEQJQAvAQHqAxAlAAD/////AQAAABVgiQoCAAAAAAAMAAAAQ3VycmVu" +
+           "dFN0YXRlAQERJQAvAQDIChElAAAAFf////8BAf////8BAAAAFWCJCgIAAAAAAAIAAABJZAEBEiUALgBE" +
+           "EiUAAAAR/////wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Configuration Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState Configuration
         {
             get
@@ -197,9 +200,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// A description for the Status Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState Status
         {
             get
@@ -218,9 +219,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// A description for the FactorySettings Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState FactorySettings
         {
             get
@@ -239,9 +238,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// A description for the AnalyserStateMachine Object.
-        /// </summary>
+        /// <remarks />
         public AnalyserDeviceStateMachineState AnalyserStateMachine
         {
             get
@@ -486,36 +483,31 @@ namespace Opc.Ua.Adi
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] configData = (byte[])outputArguments[0];
+            byte[] configData = (byte[])_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     ref configData);
             }
 
-            outputArguments[0] = configData;
+            _outputArguments[0] = configData;
 
             return result;
         }
@@ -609,39 +601,34 @@ namespace Opc.Ua.Adi
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] configData = (byte[])inputArguments[0];
+            byte[] configData = (byte[])_inputArguments[0];
 
-            string configDataDigest = (string)outputArguments[0];
+            string configDataDigest = (string)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     configData,
                     ref configDataDigest);
             }
 
-            outputArguments[0] = configDataDigest;
+            _outputArguments[0] = configDataDigest;
 
             return result;
         }
@@ -734,36 +721,31 @@ namespace Opc.Ua.Adi
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string configDataDigest = (string)outputArguments[0];
+            string configDataDigest = (string)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     ref configDataDigest);
             }
 
-            outputArguments[0] = configDataDigest;
+            _outputArguments[0] = configDataDigest;
 
             return result;
         }
@@ -857,39 +839,34 @@ namespace Opc.Ua.Adi
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string configDataDigest = (string)inputArguments[0];
+            string configDataDigest = (string)_inputArguments[0];
 
-            bool isEqual = (bool)outputArguments[0];
+            bool isEqual = (bool)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     configDataDigest,
                     ref isEqual);
             }
 
-            outputArguments[0] = isEqual;
+            _outputArguments[0] = isEqual;
 
             return result;
         }
@@ -945,6 +922,15 @@ namespace Opc.Ua.Adi
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -1014,6 +1000,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -1072,9 +1067,7 @@ namespace Opc.Ua.Adi
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Configuration Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState Configuration
         {
             get
@@ -1093,9 +1086,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// A description for the Status Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState Status
         {
             get
@@ -1114,9 +1105,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// A description for the ChannelStateMachine Object.
-        /// </summary>
+        /// <remarks />
         public AnalyserChannelStateMachineState ChannelStateMachine
         {
             get
@@ -1335,34 +1324,29 @@ namespace Opc.Ua.Adi
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            ExecutionCycleEnumeration executionCycle = (ExecutionCycleEnumeration)inputArguments[0];
-            uint executionCycleSubcode = (uint)inputArguments[1];
-            string selectedStream = (string)inputArguments[2];
+            ExecutionCycleEnumeration executionCycle = (ExecutionCycleEnumeration)_inputArguments[0];
+            uint executionCycleSubcode = (uint)_inputArguments[1];
+            string selectedStream = (string)_inputArguments[2];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     executionCycle,
                     executionCycleSubcode,
                     selectedStream);
@@ -1423,6 +1407,15 @@ namespace Opc.Ua.Adi
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -1491,6 +1484,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -1553,6 +1555,15 @@ namespace Opc.Ua.Adi
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -1621,6 +1632,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -1675,9 +1695,7 @@ namespace Opc.Ua.Adi
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the OperatingSubStateMachine Object.
-        /// </summary>
+        /// <remarks />
         public AnalyserChannel_OperatingModeSubStateMachineState OperatingSubStateMachine
         {
             get
@@ -1696,9 +1714,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// A description for the LocalSubStateMachine Object.
-        /// </summary>
+        /// <remarks />
         public FiniteStateMachineState LocalSubStateMachine
         {
             get
@@ -1717,9 +1733,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// A description for the MaintenanceSubStateMachine Object.
-        /// </summary>
+        /// <remarks />
         public FiniteStateMachineState MaintenanceSubStateMachine
         {
             get
@@ -1903,6 +1917,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -1968,6 +1991,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -1990,9 +2022,7 @@ namespace Opc.Ua.Adi
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the OperatingExecuteSubStateMachine Object.
-        /// </summary>
+        /// <remarks />
         public AnalyserChannel_OperatingModeExecuteSubStateMachineState OperatingExecuteSubStateMachine
         {
             get
@@ -2122,6 +2152,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -2185,6 +2224,15 @@ namespace Opc.Ua.Adi
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -2276,9 +2324,7 @@ namespace Opc.Ua.Adi
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Configuration Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState Configuration
         {
             get
@@ -2297,9 +2343,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// A description for the Status Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState Status
         {
             get
@@ -2318,9 +2362,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// A description for the AcquisitionSettings Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState AcquisitionSettings
         {
             get
@@ -2339,9 +2381,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// A description for the AcquisitionStatus Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState AcquisitionStatus
         {
             get
@@ -2360,9 +2400,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// A description for the AcquisitionData Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState AcquisitionData
         {
             get
@@ -2381,9 +2419,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// A description for the ChemometricModelSettings Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState ChemometricModelSettings
         {
             get
@@ -2402,9 +2438,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// A description for the Context Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState Context
         {
             get
@@ -2696,6 +2730,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -2787,9 +2830,7 @@ namespace Opc.Ua.Adi
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the FactorySettings Object.
-        /// </summary>
+        /// <remarks />
         public BaseObjectState FactorySettings
         {
             get
@@ -2919,6 +2960,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -2989,6 +3039,15 @@ namespace Opc.Ua.Adi
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -3108,6 +3167,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -3178,6 +3246,15 @@ namespace Opc.Ua.Adi
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -3254,6 +3331,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -3324,6 +3410,15 @@ namespace Opc.Ua.Adi
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -3448,6 +3543,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -3562,6 +3666,15 @@ namespace Opc.Ua.Adi
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -3682,6 +3795,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -3796,6 +3918,15 @@ namespace Opc.Ua.Adi
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -3916,6 +4047,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -4033,6 +4173,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -4060,9 +4209,7 @@ namespace Opc.Ua.Adi
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// True if an accessory can be inserted in the accessory slot while it is powered
-        /// </summary>
+        /// <remarks />
         public PropertyState<bool> IsHotSwappable
         {
             get
@@ -4081,9 +4228,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// True if this accessory slot is capable of accepting an accessory in it
-        /// </summary>
+        /// <remarks />
         public PropertyState<bool> IsEnabled
         {
             get
@@ -4102,9 +4247,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// A description for the AccessorySlotStateMachine Object.
-        /// </summary>
+        /// <remarks />
         public AccessorySlotStateMachineState AccessorySlotStateMachine
         {
             get
@@ -4288,6 +4431,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -4354,6 +4506,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -4377,9 +4538,7 @@ namespace Opc.Ua.Adi
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Configuration Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState Configuration
         {
             get
@@ -4398,9 +4557,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// A description for the Status Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState Status
         {
             get
@@ -4419,9 +4576,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// A description for the FactorySettings Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState FactorySettings
         {
             get
@@ -4440,9 +4595,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// True if this accessory can be inserted in the accessory slot while it is powered
-        /// </summary>
+        /// <remarks />
         public PropertyState<bool> IsHotSwappable
         {
             get
@@ -4461,9 +4614,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// True if this accessory is ready for use
-        /// </summary>
+        /// <remarks />
         public PropertyState<bool> IsReady
         {
             get
@@ -4701,6 +4852,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -4768,6 +4928,15 @@ namespace Opc.Ua.Adi
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -4841,6 +5010,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -4908,6 +5086,15 @@ namespace Opc.Ua.Adi
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -4997,6 +5184,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -5050,6 +5246,15 @@ namespace Opc.Ua.Adi
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -5127,6 +5332,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -5146,9 +5360,7 @@ namespace Opc.Ua.Adi
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Name Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<LocalizedText> Name
         {
             get
@@ -5167,9 +5379,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// A description for the CreationDate Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<DateTime> CreationDate
         {
             get
@@ -5188,9 +5398,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// A description for the ModelDescription Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<LocalizedText> ModelDescription
         {
             get
@@ -5390,6 +5598,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -5443,6 +5660,15 @@ namespace Opc.Ua.Adi
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 
@@ -5520,6 +5746,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -5540,9 +5775,7 @@ namespace Opc.Ua.Adi
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the MainDataIndex Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<int> MainDataIndex
         {
             get
@@ -5708,43 +5941,38 @@ namespace Opc.Ua.Adi
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            NodeId targetModel = (NodeId)inputArguments[0];
-            int mainDataIndex = (int)inputArguments[1];
-            Variant[] inputs = (Variant[])inputArguments[2];
+            NodeId targetModel = (NodeId)_inputArguments[0];
+            int mainDataIndex = (int)_inputArguments[1];
+            Variant[] inputs = (Variant[])_inputArguments[2];
 
-            Variant[] outputs = (Variant[])outputArguments[0];
+            Variant[] outputs = (Variant[])_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     targetModel,
                     mainDataIndex,
                     inputs,
                     ref outputs);
             }
 
-            outputArguments[0] = outputs;
+            _outputArguments[0] = outputs;
 
             return result;
         }
@@ -5821,6 +6049,15 @@ namespace Opc.Ua.Adi
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -5872,9 +6109,7 @@ namespace Opc.Ua.Adi
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the WarningLimits Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<Range> WarningLimits
         {
             get
@@ -5893,9 +6128,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// A description for the AlarmLimits Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<Range> AlarmLimits
         {
             get
@@ -5914,9 +6147,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// A description for the AlarmState Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<AlarmStateEnumeration> AlarmState
         {
             get
@@ -5935,9 +6166,7 @@ namespace Opc.Ua.Adi
             }
         }
 
-        /// <summary>
-        /// A description for the VendorSpecificError Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> VendorSpecificError
         {
             get
@@ -6137,6 +6366,15 @@ namespace Opc.Ua.Adi
             Value = default(T);
             DataType = TypeInfo.GetDataTypeId(typeof(T));
             ValueRank = TypeInfo.GetValueRank(typeof(T));
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
         #endregion
 

@@ -1,8 +1,8 @@
 /* ========================================================================
- * Copyright (c) 2005-2016 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
- *
+ * 
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
  * files (the "Software"), to deal in the Software without
@@ -11,7 +11,7 @@
  * copies of the Software, and to permit persons to whom the
  * Software is furnished to do so, subject to the following
  * conditions:
- *
+ * 
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
@@ -30,7 +30,6 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Reflection;
 using System.Xml;
 using System.Runtime.Serialization;
 using Opc.Ua;
@@ -71,6 +70,15 @@ namespace Opc.Ua.Plc
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -117,9 +125,7 @@ namespace Opc.Ua.Plc
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Resources Object.
-        /// </summary>
+        /// <remarks />
         public ConfigurableObjectState Resources
         {
             get
@@ -138,9 +144,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the GlobalVars Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState GlobalVars
         {
             get
@@ -159,9 +163,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the AccessVars Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState AccessVars
         {
             get
@@ -180,9 +182,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the ConfigVars Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState ConfigVars
         {
             get
@@ -201,9 +201,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the Configuration Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState Configuration
         {
             get
@@ -222,9 +220,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the Diagnostic Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState Diagnostic
         {
             get
@@ -489,6 +485,15 @@ namespace Opc.Ua.Plc
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -575,9 +580,7 @@ namespace Opc.Ua.Plc
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Tasks Object.
-        /// </summary>
+        /// <remarks />
         public ConfigurableObjectState Tasks
         {
             get
@@ -596,9 +599,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the Programs Object.
-        /// </summary>
+        /// <remarks />
         public ConfigurableObjectState Programs
         {
             get
@@ -617,9 +618,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the GlobalVars Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState GlobalVars
         {
             get
@@ -638,9 +637,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the Configuration Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState Configuration
         {
             get
@@ -659,9 +656,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the Diagnostic Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState Diagnostic
         {
             get
@@ -899,6 +894,15 @@ namespace Opc.Ua.Plc
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -927,9 +931,7 @@ namespace Opc.Ua.Plc
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Body Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<XmlElement> Body
         {
             get
@@ -1059,6 +1061,15 @@ namespace Opc.Ua.Plc
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -1087,9 +1098,7 @@ namespace Opc.Ua.Plc
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Program Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<ExtensionObject> Program
         {
             get
@@ -1219,6 +1228,15 @@ namespace Opc.Ua.Plc
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -1247,9 +1265,7 @@ namespace Opc.Ua.Plc
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the FunctionBlock Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState FunctionBlock
         {
             get
@@ -1379,6 +1395,15 @@ namespace Opc.Ua.Plc
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -1418,9 +1443,7 @@ namespace Opc.Ua.Plc
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Priority Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<uint> Priority
         {
             get
@@ -1439,9 +1462,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the Interval Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> Interval
         {
             get
@@ -1460,9 +1481,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the Single Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> Single
         {
             get
@@ -1643,6 +1662,15 @@ namespace Opc.Ua.Plc
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>

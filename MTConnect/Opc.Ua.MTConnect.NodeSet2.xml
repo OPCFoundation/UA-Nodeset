@@ -1,11 +1,40 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ *
+ * OPC Foundation MIT License 1.00
+ * 
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ * 
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * The complete license agreement can be found here:
+ * http://opcfoundation.org/License/MIT/1.00/
+-->
+
 <UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2013-12-31T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
     <Uri>http://opcfoundation.org/UA/MTConnect/</Uri>
   </NamespaceUris>
   <Models>
     <Model ModelUri="http://opcfoundation.org/UA/MTConnect/" Version="1.00" PublicationDate="2013-12-31T00:00:00Z">
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.03" PublicationDate="2013-12-02T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.03" PublicationDate="2013-12-03T00:00:00Z" />
     </Model>
   </Models>
   <Aliases>
@@ -1715,7 +1744,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=9964</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="ActuatorStateTypeEnum">
+    <Definition Name="1:ActuatorStateTypeEnum">
       <Field Name="ACTIVE_1" Value="1" />
       <Field Name="INACTIVE_2" Value="2" />
     </Definition>
@@ -1741,7 +1770,6 @@
                 </Locale>
                 <Text>ACTIVE_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -1757,7 +1785,6 @@
                 </Locale>
                 <Text>INACTIVE_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -1770,7 +1797,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=9966</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="AlarmStateTypeEnum">
+    <Definition Name="1:AlarmStateTypeEnum">
       <Field Name="ACTIVE_1" Value="1" />
       <Field Name="CLEARED_2" Value="2" />
     </Definition>
@@ -1796,7 +1823,6 @@
                 </Locale>
                 <Text>ACTIVE_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -1812,7 +1838,6 @@
                 </Locale>
                 <Text>CLEARED_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -1849,7 +1874,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=9972</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="AvailabilityTypeEnum">
+    <Definition Name="1:AvailabilityTypeEnum">
       <Field Name="AVAILABLE_1" Value="1" />
       <Field Name="UNAVAILABLE_2" Value="2" />
     </Definition>
@@ -1875,7 +1900,6 @@
                 </Locale>
                 <Text>AVAILABLE_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -1891,7 +1915,6 @@
                 </Locale>
                 <Text>UNAVAILABLE_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -1904,7 +1927,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=9974</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="AxesCouplingTypeEnum">
+    <Definition Name="1:AxesCouplingTypeEnum">
       <Field Name="MASTER_1" Value="1" />
       <Field Name="SLAVE_2" Value="2" />
       <Field Name="SYCHRONOUS_3" Value="3" />
@@ -1933,7 +1956,6 @@
                 </Locale>
                 <Text>MASTER_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -1949,7 +1971,6 @@
                 </Locale>
                 <Text>SLAVE_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -1965,7 +1986,6 @@
                 </Locale>
                 <Text>SYCHRONOUS_3</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -1981,7 +2001,6 @@
                 </Locale>
                 <Text>TANDEM_4</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -1997,7 +2016,6 @@
                 </Locale>
                 <Text>UNAVAILABLE_5</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2034,7 +2052,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=9980</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="CategoryTypeEnum">
+    <Definition Name="1:CategoryTypeEnum">
       <Field Name="CONDITION_1" Value="1" />
       <Field Name="EVENT_2" Value="2" />
       <Field Name="SAMPLE_3" Value="3" />
@@ -2061,7 +2079,6 @@
                 </Locale>
                 <Text>CONDITION_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2077,7 +2094,6 @@
                 </Locale>
                 <Text>EVENT_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2093,7 +2109,6 @@
                 </Locale>
                 <Text>SAMPLE_3</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2112,7 +2127,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=9983</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="ClampStateTypeEnum">
+    <Definition Name="1:ClampStateTypeEnum">
       <Field Name="CLOSED_1" Value="1" />
       <Field Name="INDETERMINATE_2" Value="2" />
       <Field Name="OPEN_3" Value="3" />
@@ -2140,7 +2155,6 @@
                 </Locale>
                 <Text>CLOSED_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2156,7 +2170,6 @@
                 </Locale>
                 <Text>INDETERMINATE_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2172,7 +2185,6 @@
                 </Locale>
                 <Text>OPEN_3</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2188,7 +2200,6 @@
                 </Locale>
                 <Text>UNAVAILABLE_4</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2207,7 +2218,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=9986</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="ControllerModeTypeEnum">
+    <Definition Name="1:ControllerModeTypeEnum">
       <Field Name="AUTOMATIC_1" Value="1" />
       <Field Name="MANUAL_2" Value="2" />
       <Field Name="MANUAL_DATA_INPUT_3" Value="3" />
@@ -2236,7 +2247,6 @@
                 </Locale>
                 <Text>AUTOMATIC_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2252,7 +2262,6 @@
                 </Locale>
                 <Text>MANUAL_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2268,7 +2277,6 @@
                 </Locale>
                 <Text>MANUAL_DATA_INPUT_3</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2284,7 +2292,6 @@
                 </Locale>
                 <Text>SEMI_AUTOMATIC_4</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2300,7 +2307,6 @@
                 </Locale>
                 <Text>UNAVAILABLE_5</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2313,7 +2319,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=9988</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="CoordinateSystemTypeEnum">
+    <Definition Name="1:CoordinateSystemTypeEnum">
       <Field Name="MACHINE_1" Value="1" />
       <Field Name="WORK_2" Value="2" />
     </Definition>
@@ -2339,7 +2345,6 @@
                 </Locale>
                 <Text>MACHINE_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2355,7 +2360,6 @@
                 </Locale>
                 <Text>WORK_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2404,7 +2408,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=9996</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="CutterStatusValueTypeEnum">
+    <Definition Name="1:CutterStatusValueTypeEnum">
       <Field Name="ALLOCATED_1" Value="1" />
       <Field Name="AVAILABLE_2" Value="2" />
       <Field Name="BROKEN_3" Value="3" />
@@ -2441,7 +2445,6 @@
                 </Locale>
                 <Text>ALLOCATED_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2457,7 +2460,6 @@
                 </Locale>
                 <Text>AVAILABLE_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2473,7 +2475,6 @@
                 </Locale>
                 <Text>BROKEN_3</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2489,7 +2490,6 @@
                 </Locale>
                 <Text>EXPIRED_4</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2505,7 +2505,6 @@
                 </Locale>
                 <Text>MEASURED_5</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2521,7 +2520,6 @@
                 </Locale>
                 <Text>NEW_6</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2537,7 +2535,6 @@
                 </Locale>
                 <Text>NOT_REGISTERED_7</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2553,7 +2550,6 @@
                 </Locale>
                 <Text>RECONDITIONED_8</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2569,7 +2565,6 @@
                 </Locale>
                 <Text>TAGGED_OUT_9</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2585,7 +2580,6 @@
                 </Locale>
                 <Text>UNALLOCATED_10</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2601,7 +2595,6 @@
                 </Locale>
                 <Text>UNAVAILABLE_11</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2617,7 +2610,6 @@
                 </Locale>
                 <Text>UNKNOWN_12</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2633,7 +2625,6 @@
                 </Locale>
                 <Text>USED_13</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2645,7 +2636,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DataItemEnumDataType">
+    <Definition Name="1:DataItemEnumDataType">
       <Field Name="DataItemEnum" DataType="ns=1;i=9998" />
       <Field Name="DataItemEnumString" DataType="i=12" />
     </Definition>
@@ -2656,7 +2647,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=9999</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="DataItemEnumTypeEnum">
+    <Definition Name="1:DataItemEnumTypeEnum">
       <Field Name="ACCELERATION_1" Value="1" />
       <Field Name="ACCUMULATED_TIME_2" Value="2" />
       <Field Name="ACTIVE_AXES_3" Value="3" />
@@ -2721,7 +2712,6 @@
                 </Locale>
                 <Text>ACCELERATION_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2737,7 +2727,6 @@
                 </Locale>
                 <Text>ACCUMULATED_TIME_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2753,7 +2742,6 @@
                 </Locale>
                 <Text>ACTIVE_AXES_3</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2769,7 +2757,6 @@
                 </Locale>
                 <Text>ACTUATOR_4</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2785,7 +2772,6 @@
                 </Locale>
                 <Text>ACTUATOR_STATE_5</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2801,7 +2787,6 @@
                 </Locale>
                 <Text>ALARM_6</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2817,7 +2802,6 @@
                 </Locale>
                 <Text>AMPERAGE_7</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2833,7 +2817,6 @@
                 </Locale>
                 <Text>ANGLE_8</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2849,7 +2832,6 @@
                 </Locale>
                 <Text>ANGULAR_ACCELERATION_9</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2865,7 +2847,6 @@
                 </Locale>
                 <Text>ANGULAR_VELOCITY_10</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2881,7 +2862,6 @@
                 </Locale>
                 <Text>ASSET_CHANGED_11</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2897,7 +2877,6 @@
                 </Locale>
                 <Text>AVAILABILITY_12</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2913,7 +2892,6 @@
                 </Locale>
                 <Text>AXIS_COUPLING_13</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2929,7 +2907,6 @@
                 </Locale>
                 <Text>AXIS_FEEDRATE_14</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2945,7 +2922,6 @@
                 </Locale>
                 <Text>BLOCK_15</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2961,7 +2937,6 @@
                 </Locale>
                 <Text>CODE_16</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2977,7 +2952,6 @@
                 </Locale>
                 <Text>COMMUNICATIONS_17</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -2993,7 +2967,6 @@
                 </Locale>
                 <Text>CONCENTRATION_18</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3009,7 +2982,6 @@
                 </Locale>
                 <Text>CONDUCTIVITY_19</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3025,7 +2997,6 @@
                 </Locale>
                 <Text>CONTROLLER_MODE_20</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3041,7 +3012,6 @@
                 </Locale>
                 <Text>COUPLED_AXES_21</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3057,7 +3027,6 @@
                 </Locale>
                 <Text>DIRECTION_22</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3073,7 +3042,6 @@
                 </Locale>
                 <Text>DISPLACEMENT_23</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3089,7 +3057,6 @@
                 </Locale>
                 <Text>DOOR_STATE_24</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3105,7 +3072,6 @@
                 </Locale>
                 <Text>ELECTRICAL_POWER_25</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3121,7 +3087,6 @@
                 </Locale>
                 <Text>EMERGENCY_STOP_26</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3137,7 +3102,6 @@
                 </Locale>
                 <Text>EXECUTION_27</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3153,7 +3117,6 @@
                 </Locale>
                 <Text>FILL_LEVEL_28</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3169,7 +3132,6 @@
                 </Locale>
                 <Text>FLOW_29</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3185,7 +3147,6 @@
                 </Locale>
                 <Text>FREQUENCY_30</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3201,7 +3162,6 @@
                 </Locale>
                 <Text>HARDWARE_31</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3217,7 +3177,6 @@
                 </Locale>
                 <Text>LEVEL_32</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3233,7 +3192,6 @@
                 </Locale>
                 <Text>LINE_33</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3249,7 +3207,6 @@
                 </Locale>
                 <Text>LINEAR_FORCE_34</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3265,7 +3222,6 @@
                 </Locale>
                 <Text>LOAD_35</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3281,7 +3237,6 @@
                 </Locale>
                 <Text>LOGIC_PROGRAM_36</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3297,7 +3252,6 @@
                 </Locale>
                 <Text>MASS_37</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3313,7 +3267,6 @@
                 </Locale>
                 <Text>MESSAGE_38</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3329,7 +3282,6 @@
                 </Locale>
                 <Text>MOTION_PROGRAM_39</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3345,7 +3297,6 @@
                 </Locale>
                 <Text>PART_COUNT_40</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3361,7 +3312,6 @@
                 </Locale>
                 <Text>PART_ID_41</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3379,7 +3329,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="DataItemStatisticsDataType">
+    <Definition Name="1:DataItemStatisticsDataType">
       <Field Name="DataItemStatisticsEnum" DataType="ns=1;i=10002" />
       <Field Name="DataItemStatisticsString" DataType="i=12" />
     </Definition>
@@ -3390,7 +3340,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=10003</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="DataItemStatisticsTypeEnum">
+    <Definition Name="1:DataItemStatisticsTypeEnum">
       <Field Name="AVERAGE_1" Value="1" />
       <Field Name="KURTOSIS_2" Value="2" />
       <Field Name="MAXIMUM_3" Value="3" />
@@ -3423,7 +3373,6 @@
                 </Locale>
                 <Text>AVERAGE_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3439,7 +3388,6 @@
                 </Locale>
                 <Text>KURTOSIS_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3455,7 +3403,6 @@
                 </Locale>
                 <Text>MAXIMUM_3</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3471,7 +3418,6 @@
                 </Locale>
                 <Text>MEAN_4</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3487,7 +3433,6 @@
                 </Locale>
                 <Text>MINIMUM_5</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3503,7 +3448,6 @@
                 </Locale>
                 <Text>MODE_6</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3519,7 +3463,6 @@
                 </Locale>
                 <Text>RANGE_7</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3535,7 +3478,6 @@
                 </Locale>
                 <Text>ROOT_MEAN_SQUARE_8</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3551,7 +3493,6 @@
                 </Locale>
                 <Text>STANDARD_DEVIATION_9</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3564,7 +3505,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=10005</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="DataItemSubEnumTypeEnum">
+    <Definition Name="1:DataItemSubEnumTypeEnum">
       <Field Name="ACTUAL_1" Value="1" />
       <Field Name="ALL_2" Value="2" />
       <Field Name="ALTERNATING_3" Value="3" />
@@ -3613,7 +3554,6 @@
                 </Locale>
                 <Text>ACTUAL_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3629,7 +3569,6 @@
                 </Locale>
                 <Text>ALL_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3645,7 +3584,6 @@
                 </Locale>
                 <Text>ALTERNATING_3</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3661,7 +3599,6 @@
                 </Locale>
                 <Text>A_SCALE_4</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3677,7 +3614,6 @@
                 </Locale>
                 <Text>BAD_5</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3693,7 +3629,6 @@
                 </Locale>
                 <Text>B_SCALE_6</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3709,7 +3644,6 @@
                 </Locale>
                 <Text>COMMANDED_7</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3725,7 +3659,6 @@
                 </Locale>
                 <Text>CONTROL_8</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3741,7 +3674,6 @@
                 </Locale>
                 <Text>C_SCALE_9</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3757,7 +3689,6 @@
                 </Locale>
                 <Text>DIRECT_10</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3773,7 +3704,6 @@
                 </Locale>
                 <Text>DYNAMIC_11</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3789,7 +3719,6 @@
                 </Locale>
                 <Text>D_SCALE_12</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3805,7 +3734,6 @@
                 </Locale>
                 <Text>GOOD_13</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3821,7 +3749,6 @@
                 </Locale>
                 <Text>KINETIC_14</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3837,7 +3764,6 @@
                 </Locale>
                 <Text>LINE_15</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3853,7 +3779,6 @@
                 </Locale>
                 <Text>MAXIMUM_16</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3869,7 +3794,6 @@
                 </Locale>
                 <Text>MINIMUM_17</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3885,7 +3809,6 @@
                 </Locale>
                 <Text>MOLE_18</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3901,7 +3824,6 @@
                 </Locale>
                 <Text>NO_SCALE_19</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3917,7 +3839,6 @@
                 </Locale>
                 <Text>OTHER_20</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3933,7 +3854,6 @@
                 </Locale>
                 <Text>OVERRIDE_21</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3949,7 +3869,6 @@
                 </Locale>
                 <Text>PROBE_22</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3965,7 +3884,6 @@
                 </Locale>
                 <Text>TARGET_23</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3981,7 +3899,6 @@
                 </Locale>
                 <Text>VOLUME_24</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -3997,7 +3914,6 @@
                 </Locale>
                 <Text>WEIGHT_25</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4010,7 +3926,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=10007</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="DefinitionFormatTypeEnum">
+    <Definition Name="1:DefinitionFormatTypeEnum">
       <Field Name="EXPRESS_1" Value="1" />
       <Field Name="TEXT_2" Value="2" />
       <Field Name="UNDEFINED_3" Value="3" />
@@ -4038,7 +3954,6 @@
                 </Locale>
                 <Text>EXPRESS_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4054,7 +3969,6 @@
                 </Locale>
                 <Text>TEXT_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4070,7 +3984,6 @@
                 </Locale>
                 <Text>UNDEFINED_3</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4086,7 +3999,6 @@
                 </Locale>
                 <Text>XML_4</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4111,7 +4023,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=10011</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="DirectionTypeEnum">
+    <Definition Name="1:DirectionTypeEnum">
       <Field Name="CLOCKWISE_1" Value="1" />
       <Field Name="COUNTER_CLOCKWISE_2" Value="2" />
       <Field Name="NEGATIVE_3" Value="3" />
@@ -4140,7 +4052,6 @@
                 </Locale>
                 <Text>CLOCKWISE_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4156,7 +4067,6 @@
                 </Locale>
                 <Text>COUNTER_CLOCKWISE_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4172,7 +4082,6 @@
                 </Locale>
                 <Text>NEGATIVE_3</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4188,7 +4097,6 @@
                 </Locale>
                 <Text>POSITIVE_4</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4204,7 +4112,6 @@
                 </Locale>
                 <Text>UNAVAILABLE_5</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4217,7 +4124,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=10013</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="DoorStateTypeEnum">
+    <Definition Name="1:DoorStateTypeEnum">
       <Field Name="CLOSED_1" Value="1" />
       <Field Name="INDETERMINATE_2" Value="2" />
       <Field Name="OPEN_3" Value="3" />
@@ -4245,7 +4152,6 @@
                 </Locale>
                 <Text>CLOSED_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4261,7 +4167,6 @@
                 </Locale>
                 <Text>INDETERMINATE_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4277,7 +4182,6 @@
                 </Locale>
                 <Text>OPEN_3</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4293,7 +4197,6 @@
                 </Locale>
                 <Text>UNAVAILABLE_4</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4324,7 +4227,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=10018</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="EmergencyStopTypeEnum">
+    <Definition Name="1:EmergencyStopTypeEnum">
       <Field Name="ARMED_1" Value="1" />
       <Field Name="TRIGGERED_2" Value="2" />
       <Field Name="UNAVAILABLE_3" Value="3" />
@@ -4351,7 +4254,6 @@
                 </Locale>
                 <Text>ARMED_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4367,7 +4269,6 @@
                 </Locale>
                 <Text>TRIGGERED_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4383,7 +4284,6 @@
                 </Locale>
                 <Text>UNAVAILABLE_3</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4402,7 +4302,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=10021</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="ExecutionTypeEnum">
+    <Definition Name="1:ExecutionTypeEnum">
       <Field Name="ACTIVE_1" Value="1" />
       <Field Name="INTERRUPTED_2" Value="2" />
       <Field Name="READY_3" Value="3" />
@@ -4431,7 +4331,6 @@
                 </Locale>
                 <Text>ACTIVE_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4447,7 +4346,6 @@
                 </Locale>
                 <Text>INTERRUPTED_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4463,7 +4361,6 @@
                 </Locale>
                 <Text>READY_3</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4479,7 +4376,6 @@
                 </Locale>
                 <Text>STOPPED_4</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4495,7 +4391,6 @@
                 </Locale>
                 <Text>UNAVAILABLE_5</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4550,7 +4445,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=10030</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="InterfaceStateTypeEnum">
+    <Definition Name="1:InterfaceStateTypeEnum">
       <Field Name="ACTIVE_1" Value="1" />
       <Field Name="COMPLETE_2" Value="2" />
       <Field Name="FAIL_3" Value="3" />
@@ -4578,7 +4473,6 @@
                 </Locale>
                 <Text>ACTIVE_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4594,7 +4488,6 @@
                 </Locale>
                 <Text>COMPLETE_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4610,7 +4503,6 @@
                 </Locale>
                 <Text>FAIL_3</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4626,7 +4518,6 @@
                 </Locale>
                 <Text>READY_4</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4657,7 +4548,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=10035</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="LocationsTypeEnum">
+    <Definition Name="1:LocationsTypeEnum">
       <Field Name="CRIB_1" Value="1" />
       <Field Name="POT_2" Value="2" />
       <Field Name="STATION_3" Value="3" />
@@ -4685,7 +4576,6 @@
                 </Locale>
                 <Text>CRIB_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4701,7 +4591,6 @@
                 </Locale>
                 <Text>POT_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4717,7 +4606,6 @@
                 </Locale>
                 <Text>STATION_3</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4733,7 +4621,6 @@
                 </Locale>
                 <Text>READY_4</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4836,7 +4723,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=10052</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="NotificationCodeTypeEnum">
+    <Definition Name="1:NotificationCodeTypeEnum">
       <Field Name="CRASH_1" Value="1" />
       <Field Name="ESTOP_2" Value="2" />
       <Field Name="FAILURE_3" Value="3" />
@@ -4869,7 +4756,6 @@
                 </Locale>
                 <Text>CRASH_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4885,7 +4771,6 @@
                 </Locale>
                 <Text>ESTOP_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4901,7 +4786,6 @@
                 </Locale>
                 <Text>FAILURE_3</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4917,7 +4801,6 @@
                 </Locale>
                 <Text>FAULT_4</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4933,7 +4816,6 @@
                 </Locale>
                 <Text>JAM_5</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4949,7 +4831,6 @@
                 </Locale>
                 <Text>MATERIAL_6</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4965,7 +4846,6 @@
                 </Locale>
                 <Text>MESSAGE_7</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4981,7 +4861,6 @@
                 </Locale>
                 <Text>OTHER_8</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -4997,7 +4876,6 @@
                 </Locale>
                 <Text>OVERLOAD_9</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -5028,7 +4906,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=10057</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="PathModeTypeEnum">
+    <Definition Name="1:PathModeTypeEnum">
       <Field Name="INDEPENDENT_1" Value="1" />
       <Field Name="MIRROR_2" Value="2" />
       <Field Name="SYNCHRONOUS_3" Value="3" />
@@ -5055,7 +4933,6 @@
                 </Locale>
                 <Text>INDEPENDENT_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -5071,7 +4948,6 @@
                 </Locale>
                 <Text>MIRROR_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -5087,7 +4963,6 @@
                 </Locale>
                 <Text>SYNCHRONOUS_3</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -5100,7 +4975,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=10059</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="PowerStateTypeEnum">
+    <Definition Name="1:PowerStateTypeEnum">
       <Field Name="OFF_1" Value="1" />
       <Field Name="ON_2" Value="2" />
       <Field Name="UNAVAILABLE_3" Value="3" />
@@ -5127,7 +5002,6 @@
                 </Locale>
                 <Text>OFF_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -5143,7 +5017,6 @@
                 </Locale>
                 <Text>ON_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -5159,7 +5032,6 @@
                 </Locale>
                 <Text>UNAVAILABLE_3</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -5178,7 +5050,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=10062</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="QualifierTypeEnum">
+    <Definition Name="1:QualifierTypeEnum">
       <Field Name="HIGH_1" Value="1" />
       <Field Name="LOW_2" Value="2" />
     </Definition>
@@ -5204,7 +5076,6 @@
                 </Locale>
                 <Text>HIGH_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -5220,7 +5091,6 @@
                 </Locale>
                 <Text>LOW_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -5245,7 +5115,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=10066</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="RotaryModeTypeEnum">
+    <Definition Name="1:RotaryModeTypeEnum">
       <Field Name="CONTOUR_1" Value="1" />
       <Field Name="INDEX_2" Value="2" />
       <Field Name="SPINDLE_3" Value="3" />
@@ -5273,7 +5143,6 @@
                 </Locale>
                 <Text>CONTOUR_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -5289,7 +5158,6 @@
                 </Locale>
                 <Text>INDEX_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -5305,7 +5173,6 @@
                 </Locale>
                 <Text>SPINDLE_3</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -5321,7 +5188,6 @@
                 </Locale>
                 <Text>UNAVAILABLE_4</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -5340,7 +5206,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=10069</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="SeverityTypeEnum">
+    <Definition Name="1:SeverityTypeEnum">
       <Field Name="CRITICAL_1" Value="1" />
       <Field Name="ERROR_2" Value="2" />
       <Field Name="INFORMATION_3" Value="3" />
@@ -5368,7 +5234,6 @@
                 </Locale>
                 <Text>CRITICAL_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -5384,7 +5249,6 @@
                 </Locale>
                 <Text>ERROR_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -5400,7 +5264,6 @@
                 </Locale>
                 <Text>INFORMATION_3</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -5416,7 +5279,6 @@
                 </Locale>
                 <Text>WARNING_4</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -5489,7 +5351,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=10081</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="ToolLifeDirectionTypeEnum">
+    <Definition Name="1:ToolLifeDirectionTypeEnum">
       <Field Name="DOWN_1" Value="1" />
       <Field Name="UP_2" Value="2" />
     </Definition>
@@ -5515,7 +5377,6 @@
                 </Locale>
                 <Text>DOWN_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -5531,7 +5392,6 @@
                 </Locale>
                 <Text>UP_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -5544,7 +5404,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=10083</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Definition Name="ToolLifeTypeEnum">
+    <Definition Name="1:ToolLifeTypeEnum">
       <Field Name="MINUTES_1" Value="1" />
       <Field Name="PART_COUNT_2" Value="2" />
       <Field Name="WEAR_3" Value="3" />
@@ -5571,7 +5431,6 @@
                 </Locale>
                 <Text>MINUTES_1</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -5587,7 +5446,6 @@
                 </Locale>
                 <Text>PART_COUNT_2</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -5603,7 +5461,6 @@
                 </Locale>
                 <Text>WEAR_3</Text>
               </DisplayName>
-              <Description p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -6179,7 +6036,6 @@ L3hzOnNjaGVtYT4=</ByteString>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=10092" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=10090" DataType="String">
     <DisplayName>NamespaceUri</DisplayName>
-    <Description>A URI that uniquely identifies the dictionary.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=10090</Reference>
@@ -6561,7 +6417,6 @@ bmFyeT4=</ByteString>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=10103" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=10101" DataType="String">
     <DisplayName>NamespaceUri</DisplayName>
-    <Description>A URI that uniquely identifies the dictionary.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=10101</Reference>

@@ -1,4 +1,33 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ *
+ * OPC Foundation MIT License 1.00
+ * 
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ * 
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * The complete license agreement can be found here:
+ * http://opcfoundation.org/License/MIT/1.00/
+-->
+
 <uax:ListOfNodeState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
   <uax:NamespaceUris>
     <uax:NamespaceUri>http://opcfoundation.org/UA/MTConnect/</uax:NamespaceUri>
@@ -4553,7 +4582,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ACTIVE_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -4568,7 +4596,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>INACTIVE_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -4628,7 +4655,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ACTIVE_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -4643,7 +4669,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>CLEARED_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -4755,7 +4780,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>AVAILABLE_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -4770,7 +4794,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>UNAVAILABLE_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -4830,7 +4853,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>MASTER_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -4845,7 +4867,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>SLAVE_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -4860,7 +4881,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>SYCHRONOUS_3</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -4875,7 +4895,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>TANDEM_4</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -4890,7 +4909,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>UNAVAILABLE_5</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5002,7 +5020,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>CONDITION_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5017,7 +5034,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>EVENT_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5032,7 +5048,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>SAMPLE_3</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5105,7 +5120,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>CLOSED_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5120,7 +5134,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>INDETERMINATE_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5135,7 +5148,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>OPEN_3</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5150,7 +5162,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>UNAVAILABLE_4</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5223,7 +5234,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>AUTOMATIC_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5238,7 +5248,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>MANUAL_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5253,7 +5262,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>MANUAL_DATA_INPUT_3</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5268,7 +5276,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>SEMI_AUTOMATIC_4</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5283,7 +5290,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>UNAVAILABLE_5</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5343,7 +5349,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>MACHINE_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5358,7 +5363,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>WORK_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5496,7 +5500,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ALLOCATED_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5511,7 +5514,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>AVAILABLE_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5526,7 +5528,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>BROKEN_3</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5541,7 +5542,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>EXPIRED_4</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5556,7 +5556,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>MEASURED_5</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5571,7 +5570,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>NEW_6</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5586,7 +5584,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>NOT_REGISTERED_7</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5601,7 +5598,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>RECONDITIONED_8</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5616,7 +5612,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>TAGGED_OUT_9</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5631,7 +5626,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>UNALLOCATED_10</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5646,7 +5640,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>UNAVAILABLE_11</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5661,7 +5654,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>UNKNOWN_12</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5676,7 +5668,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>USED_13</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5749,7 +5740,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ACCELERATION_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5764,7 +5754,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ACCUMULATED_TIME_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5779,7 +5768,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ACTIVE_AXES_3</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5794,7 +5782,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ACTUATOR_4</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5809,7 +5796,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ACTUATOR_STATE_5</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5824,7 +5810,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ALARM_6</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5839,7 +5824,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>AMPERAGE_7</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5854,7 +5838,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ANGLE_8</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5869,7 +5852,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ANGULAR_ACCELERATION_9</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5884,7 +5866,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ANGULAR_VELOCITY_10</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5899,7 +5880,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ASSET_CHANGED_11</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5914,7 +5894,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>AVAILABILITY_12</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5929,7 +5908,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>AXIS_COUPLING_13</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5944,7 +5922,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>AXIS_FEEDRATE_14</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5959,7 +5936,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>BLOCK_15</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5974,7 +5950,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>CODE_16</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -5989,7 +5964,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>COMMUNICATIONS_17</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6004,7 +5978,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>CONCENTRATION_18</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6019,7 +5992,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>CONDUCTIVITY_19</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6034,7 +6006,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>CONTROLLER_MODE_20</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6049,7 +6020,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>COUPLED_AXES_21</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6064,7 +6034,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>DIRECTION_22</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6079,7 +6048,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>DISPLACEMENT_23</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6094,7 +6062,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>DOOR_STATE_24</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6109,7 +6076,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ELECTRICAL_POWER_25</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6124,7 +6090,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>EMERGENCY_STOP_26</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6139,7 +6104,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>EXECUTION_27</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6154,7 +6118,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>FILL_LEVEL_28</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6169,7 +6132,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>FLOW_29</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6184,7 +6146,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>FREQUENCY_30</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6199,7 +6160,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>HARDWARE_31</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6214,7 +6174,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>LEVEL_32</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6229,7 +6188,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>LINE_33</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6244,7 +6202,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>LINEAR_FORCE_34</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6259,7 +6216,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>LOAD_35</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6274,7 +6230,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>LOGIC_PROGRAM_36</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6289,7 +6244,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>MASS_37</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6304,7 +6258,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>MESSAGE_38</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6319,7 +6272,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>MOTION_PROGRAM_39</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6334,7 +6286,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>PART_COUNT_40</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6349,7 +6300,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>PART_ID_41</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6435,7 +6385,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>AVERAGE_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6450,7 +6399,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>KURTOSIS_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6465,7 +6413,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>MAXIMUM_3</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6480,7 +6427,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>MEAN_4</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6495,7 +6441,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>MINIMUM_5</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6510,7 +6455,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>MODE_6</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6525,7 +6469,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>RANGE_7</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6540,7 +6483,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ROOT_MEAN_SQUARE_8</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6555,7 +6497,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>STANDARD_DEVIATION_9</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6615,7 +6556,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ACTUAL_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6630,7 +6570,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ALL_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6645,7 +6584,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ALTERNATING_3</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6660,7 +6598,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>A_SCALE_4</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6675,7 +6612,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>BAD_5</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6690,7 +6626,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>B_SCALE_6</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6705,7 +6640,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>COMMANDED_7</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6720,7 +6654,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>CONTROL_8</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6735,7 +6668,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>C_SCALE_9</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6750,7 +6682,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>DIRECT_10</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6765,7 +6696,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>DYNAMIC_11</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6780,7 +6710,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>D_SCALE_12</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6795,7 +6724,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>GOOD_13</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6810,7 +6738,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>KINETIC_14</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6825,7 +6752,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>LINE_15</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6840,7 +6766,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>MAXIMUM_16</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6855,7 +6780,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>MINIMUM_17</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6870,7 +6794,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>MOLE_18</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6885,7 +6808,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>NO_SCALE_19</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6900,7 +6822,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>OTHER_20</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6915,7 +6836,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>OVERRIDE_21</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6930,7 +6850,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>PROBE_22</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6945,7 +6864,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>TARGET_23</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6960,7 +6878,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>VOLUME_24</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -6975,7 +6892,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>WEIGHT_25</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7035,7 +6951,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>EXPRESS_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7050,7 +6965,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>TEXT_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7065,7 +6979,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>UNDEFINED_3</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7080,7 +6993,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>XML_4</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7166,7 +7078,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>CLOCKWISE_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7181,7 +7092,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>COUNTER_CLOCKWISE_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7196,7 +7106,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>NEGATIVE_3</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7211,7 +7120,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>POSITIVE_4</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7226,7 +7134,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>UNAVAILABLE_5</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7286,7 +7193,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>CLOSED_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7301,7 +7207,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>INDETERMINATE_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7316,7 +7221,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>OPEN_3</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7331,7 +7235,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>UNAVAILABLE_4</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7430,7 +7333,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ARMED_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7445,7 +7347,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>TRIGGERED_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7460,7 +7361,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>UNAVAILABLE_3</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7533,7 +7433,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ACTIVE_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7548,7 +7447,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>INTERRUPTED_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7563,7 +7461,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>READY_3</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7578,7 +7475,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>STOPPED_4</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7593,7 +7489,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>UNAVAILABLE_5</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7744,7 +7639,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ACTIVE_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7759,7 +7653,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>COMPLETE_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7774,7 +7667,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>FAIL_3</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7789,7 +7681,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>READY_4</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7888,7 +7779,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>CRIB_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7903,7 +7793,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>POT_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7918,7 +7807,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>STATION_3</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -7933,7 +7821,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>READY_4</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8188,7 +8075,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>CRASH_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8203,7 +8089,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ESTOP_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8218,7 +8103,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>FAILURE_3</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8233,7 +8117,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>FAULT_4</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8248,7 +8131,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>JAM_5</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8263,7 +8145,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>MATERIAL_6</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8278,7 +8159,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>MESSAGE_7</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8293,7 +8173,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>OTHER_8</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8308,7 +8187,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>OVERLOAD_9</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8407,7 +8285,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>INDEPENDENT_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8422,7 +8299,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>MIRROR_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8437,7 +8313,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>SYNCHRONOUS_3</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8497,7 +8372,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>OFF_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8512,7 +8386,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ON_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8527,7 +8400,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>UNAVAILABLE_3</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8600,7 +8472,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>HIGH_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8615,7 +8486,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>LOW_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8701,7 +8571,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>CONTOUR_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8716,7 +8585,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>INDEX_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8731,7 +8599,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>SPINDLE_3</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8746,7 +8613,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>UNAVAILABLE_4</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8819,7 +8685,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>CRITICAL_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8834,7 +8699,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>ERROR_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8849,7 +8713,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>INFORMATION_3</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -8864,7 +8727,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>WARNING_4</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -9054,7 +8916,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>DOWN_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -9069,7 +8930,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>UP_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -9129,7 +8989,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>MINUTES_1</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -9144,7 +9003,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>PART_COUNT_2</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -9159,7 +9017,6 @@
                     <uax:Locale></uax:Locale>
                     <uax:Text>WEAR_3</uax:Text>
                   </uax:DisplayName>
-                  <uax:Description xsi:nil="true" />
                 </uax:EnumValueType>
               </uax:Body>
             </uax:ExtensionObject>
@@ -9850,10 +9707,6 @@ L3hzOnNjaGVtYT4=</uax:ByteString>
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>NamespaceUri</uax:Name>
       </uax:BrowseName>
-      <uax:Description>
-        <uax:Locale></uax:Locale>
-        <uax:Text>A URI that uniquely identifies the dictionary.</uax:Text>
-      </uax:Description>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
       </uax:ReferenceTypeId>
@@ -10362,10 +10215,6 @@ bmFyeT4=</uax:ByteString>
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
         <uax:Name>NamespaceUri</uax:Name>
       </uax:BrowseName>
-      <uax:Description>
-        <uax:Locale></uax:Locale>
-        <uax:Text>A URI that uniquely identifies the dictionary.</uax:Text>
-      </uax:Description>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
       </uax:ReferenceTypeId>

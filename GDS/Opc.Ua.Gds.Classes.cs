@@ -1,8 +1,8 @@
 /* ========================================================================
- * Copyright (c) 2005-2016 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
- *
+ * 
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
  * files (the "Software"), to deal in the Software without
@@ -11,7 +11,7 @@
  * copies of the Software, and to permit persons to whom the
  * Software is furnished to do so, subject to the following
  * conditions:
- *
+ * 
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
@@ -30,7 +30,6 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Reflection;
 using System.Xml;
 using System.Runtime.Serialization;
 using Opc.Ua;
@@ -108,39 +107,34 @@ namespace Opc.Ua.Gds
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string applicationUri = (string)inputArguments[0];
+            string applicationUri = (string)_inputArguments[0];
 
-            ApplicationRecordDataType[] applications = (ApplicationRecordDataType[])outputArguments[0];
+            ApplicationRecordDataType[] applications = (ApplicationRecordDataType[])_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     applicationUri,
                     ref applications);
             }
 
-            outputArguments[0] = applications;
+            _outputArguments[0] = applications;
 
             return result;
         }
@@ -234,39 +228,34 @@ namespace Opc.Ua.Gds
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            ApplicationRecordDataType application = (ApplicationRecordDataType)ExtensionObject.ToEncodeable((ExtensionObject)inputArguments[0]);
+            ApplicationRecordDataType application = (ApplicationRecordDataType)ExtensionObject.ToEncodeable((ExtensionObject)_inputArguments[0]);
 
-            NodeId applicationId = (NodeId)outputArguments[0];
+            NodeId applicationId = (NodeId)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     application,
                     ref applicationId);
             }
 
-            outputArguments[0] = applicationId;
+            _outputArguments[0] = applicationId;
 
             return result;
         }
@@ -358,32 +347,27 @@ namespace Opc.Ua.Gds
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            ApplicationRecordDataType application = (ApplicationRecordDataType)ExtensionObject.ToEncodeable((ExtensionObject)inputArguments[0]);
+            ApplicationRecordDataType application = (ApplicationRecordDataType)ExtensionObject.ToEncodeable((ExtensionObject)_inputArguments[0]);
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     application);
             }
 
@@ -476,32 +460,27 @@ namespace Opc.Ua.Gds
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            NodeId applicationId = (NodeId)inputArguments[0];
+            NodeId applicationId = (NodeId)_inputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     applicationId);
             }
 
@@ -596,39 +575,34 @@ namespace Opc.Ua.Gds
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            NodeId applicationId = (NodeId)inputArguments[0];
+            NodeId applicationId = (NodeId)_inputArguments[0];
 
-            ApplicationRecordDataType application = (ApplicationRecordDataType)outputArguments[0];
+            ApplicationRecordDataType application = (ApplicationRecordDataType)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     applicationId,
                     ref application);
             }
 
-            outputArguments[0] = application;
+            _outputArguments[0] = application;
 
             return result;
         }
@@ -726,40 +700,35 @@ namespace Opc.Ua.Gds
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            uint startingRecordId = (uint)inputArguments[0];
-            uint maxRecordsToReturn = (uint)inputArguments[1];
-            string applicationName = (string)inputArguments[2];
-            string applicationUri = (string)inputArguments[3];
-            string productUri = (string)inputArguments[4];
-            string[] serverCapabilities = (string[])inputArguments[5];
+            uint startingRecordId = (uint)_inputArguments[0];
+            uint maxRecordsToReturn = (uint)_inputArguments[1];
+            string applicationName = (string)_inputArguments[2];
+            string applicationUri = (string)_inputArguments[3];
+            string productUri = (string)_inputArguments[4];
+            string[] serverCapabilities = (string[])_inputArguments[5];
 
-            DateTime lastCounterResetTime = (DateTime)outputArguments[0];
-            ServerOnNetwork[] servers = (ServerOnNetwork[])outputArguments[1];
+            DateTime lastCounterResetTime = (DateTime)_outputArguments[0];
+            ServerOnNetwork[] servers = (ServerOnNetwork[])_outputArguments[1];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     startingRecordId,
                     maxRecordsToReturn,
                     applicationName,
@@ -770,8 +739,8 @@ namespace Opc.Ua.Gds
                     ref servers);
             }
 
-            outputArguments[0] = lastCounterResetTime;
-            outputArguments[1] = servers;
+            _outputArguments[0] = lastCounterResetTime;
+            _outputArguments[1] = servers;
 
             return result;
         }
@@ -836,6 +805,15 @@ namespace Opc.Ua.Gds
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -879,9 +857,7 @@ namespace Opc.Ua.Gds
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Applications Object.
-        /// </summary>
+        /// <remarks />
         public FolderState Applications
         {
             get
@@ -900,9 +876,7 @@ namespace Opc.Ua.Gds
             }
         }
 
-        /// <summary>
-        /// A description for the FindApplicationsMethodType Method.
-        /// </summary>
+        /// <remarks />
         public FindApplicationsMethodState FindApplications
         {
             get
@@ -921,9 +895,7 @@ namespace Opc.Ua.Gds
             }
         }
 
-        /// <summary>
-        /// A description for the RegisterApplicationMethodType Method.
-        /// </summary>
+        /// <remarks />
         public RegisterApplicationMethodState RegisterApplication
         {
             get
@@ -942,9 +914,7 @@ namespace Opc.Ua.Gds
             }
         }
 
-        /// <summary>
-        /// A description for the UpdateApplicationMethodType Method.
-        /// </summary>
+        /// <remarks />
         public UpdateApplicationMethodState UpdateApplication
         {
             get
@@ -963,9 +933,7 @@ namespace Opc.Ua.Gds
             }
         }
 
-        /// <summary>
-        /// A description for the UnregisterApplicationMethodType Method.
-        /// </summary>
+        /// <remarks />
         public UnregisterApplicationMethodState UnregisterApplication
         {
             get
@@ -984,9 +952,7 @@ namespace Opc.Ua.Gds
             }
         }
 
-        /// <summary>
-        /// A description for the GetApplicationMethodType Method.
-        /// </summary>
+        /// <remarks />
         public GetApplicationMethodState GetApplication
         {
             get
@@ -1005,9 +971,7 @@ namespace Opc.Ua.Gds
             }
         }
 
-        /// <summary>
-        /// A description for the QueryServersMethodType Method.
-        /// </summary>
+        /// <remarks />
         public QueryServersMethodState QueryServers
         {
             get
@@ -1299,6 +1263,15 @@ namespace Opc.Ua.Gds
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -1310,34 +1283,21 @@ namespace Opc.Ua.Gds
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvR0RTL/////8EYIAAAQAAAAEANAAAAEFw" +
            "cGxpY2F0aW9uUmVnaXN0cmF0aW9uQ2hhbmdlZEF1ZGl0RXZlbnRUeXBlSW5zdGFuY2UBARoAAQEaAP//" +
-           "//8QAAAANWCJCgIAAAAAAAcAAABFdmVudElkAQEbAAMAAAAAKwAAAEEgZ2xvYmFsbHkgdW5pcXVlIGlk" +
-           "ZW50aWZpZXIgZm9yIHRoZSBldmVudC4ALgBEGwAAAAAP/////wEB/////wAAAAA1YIkKAgAAAAAACQAA" +
-           "AEV2ZW50VHlwZQEBHAADAAAAACIAAABUaGUgaWRlbnRpZmllciBmb3IgdGhlIGV2ZW50IHR5cGUuAC4A" +
-           "RBwAAAAAEf////8BAf////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOb2RlAQEdAAMAAAAAGAAAAFRo" +
-           "ZSBzb3VyY2Ugb2YgdGhlIGV2ZW50LgAuAEQdAAAAABH/////AQH/////AAAAADVgiQoCAAAAAAAKAAAA" +
-           "U291cmNlTmFtZQEBHgADAAAAACkAAABBIGRlc2NyaXB0aW9uIG9mIHRoZSBzb3VyY2Ugb2YgdGhlIGV2" +
-           "ZW50LgAuAEQeAAAAAAz/////AQH/////AAAAADVgiQoCAAAAAAAEAAAAVGltZQEBHwADAAAAABgAAABX" +
-           "aGVuIHRoZSBldmVudCBvY2N1cnJlZC4ALgBEHwAAAAEAJgH/////AQH/////AAAAADVgiQoCAAAAAAAL" +
-           "AAAAUmVjZWl2ZVRpbWUBASAAAwAAAAA+AAAAV2hlbiB0aGUgc2VydmVyIHJlY2VpdmVkIHRoZSBldmVu" +
-           "dCBmcm9tIHRoZSB1bmRlcmx5aW5nIHN5c3RlbS4ALgBEIAAAAAEAJgH/////AQH/////AAAAADVgiQoC" +
-           "AAAAAAAJAAAATG9jYWxUaW1lAQEhAAMAAAAAPAAAAEluZm9ybWF0aW9uIGFib3V0IHRoZSBsb2NhbCB0" +
-           "aW1lIHdoZXJlIHRoZSBldmVudCBvcmlnaW5hdGVkLgAuAEQhAAAAAQDQIv////8BAf////8AAAAANWCJ" +
-           "CgIAAAAAAAcAAABNZXNzYWdlAQEiAAMAAAAAJQAAAEEgbG9jYWxpemVkIGRlc2NyaXB0aW9uIG9mIHRo" +
-           "ZSBldmVudC4ALgBEIgAAAAAV/////wEB/////wAAAAA1YIkKAgAAAAAACAAAAFNldmVyaXR5AQEjAAMA" +
-           "AAAAIQAAAEluZGljYXRlcyBob3cgdXJnZW50IGFuIGV2ZW50IGlzLgAuAEQjAAAAAAX/////AQH/////" +
-           "AAAAADVgiQoCAAAAAAAPAAAAQWN0aW9uVGltZVN0YW1wAQEkAAMAAAAALgAAAFdoZW4gdGhlIGFjdGlv" +
-           "biB0cmlnZ2VyaW5nIHRoZSBldmVudCBvY2N1cnJlZC4ALgBEJAAAAAEAJgH/////AQH/////AAAAADVg" +
-           "iQoCAAAAAAAGAAAAU3RhdHVzAQElAAMAAAAAYQAAAElmIFRSVUUgdGhlIGFjdGlvbiB3YXMgcGVyZm9y" +
-           "bWVkLiBJZiBGQUxTRSB0aGUgYWN0aW9uIGZhaWxlZCBhbmQgdGhlIHNlcnZlciBzdGF0ZSBkaWQgbm90" +
-           "IGNoYW5nZS4ALgBEJQAAAAAB/////wEB/////wAAAAA1YIkKAgAAAAAACAAAAFNlcnZlcklkAQEmAAMA" +
-           "AAAAOgAAAFRoZSB1bmlxdWUgaWRlbnRpZmllciBmb3IgdGhlIHNlcnZlciBnZW5lcmF0aW5nIHRoZSBl" +
-           "dmVudC4ALgBEJgAAAAAM/////wEB/////wAAAAA1YIkKAgAAAAAAEgAAAENsaWVudEF1ZGl0RW50cnlJ" +
-           "ZAEBJwADAAAAAEMAAABUaGUgbG9nIGVudHJ5IGlkIHByb3ZpZGVkIGluIHRoZSByZXF1ZXN0IHRoYXQg" +
-           "aW5pdGlhdGVkIHRoZSBhY3Rpb24uAC4ARCcAAAAADP////8BAf////8AAAAANWCJCgIAAAAAAAwAAABD" +
-           "bGllbnRVc2VySWQBASgAAwAAAABIAAAAVGhlIHVzZXIgaWRlbnRpdHkgYXNzb2NpYXRlZCB3aXRoIHRo" +
-           "ZSBzZXNzaW9uIHRoYXQgaW5pdGlhdGVkIHRoZSBhY3Rpb24uAC4ARCgAAAAADP////8BAf////8AAAAA" +
-           "FWCJCgIAAAAAAAgAAABNZXRob2RJZAEBKQAALgBEKQAAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "DgAAAElucHV0QXJndW1lbnRzAQEqAAAuAEQqAAAAABgBAAAAAQH/////AAAAAA==";
+           "//8QAAAAFWCJCgIAAAAAAAcAAABFdmVudElkAQEbAAAuAEQbAAAAAA//////AQH/////AAAAABVgiQoC" +
+           "AAAAAAAJAAAARXZlbnRUeXBlAQEcAAAuAEQcAAAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAA" +
+           "U291cmNlTm9kZQEBHQAALgBEHQAAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAACgAAAFNvdXJjZU5h" +
+           "bWUBAR4AAC4ARB4AAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAQAAABUaW1lAQEfAAAuAEQfAAAA" +
+           "AQAmAf////8BAf////8AAAAAFWCJCgIAAAAAAAsAAABSZWNlaXZlVGltZQEBIAAALgBEIAAAAAEAJgH/" +
+           "////AQH/////AAAAABVgiQoCAAAAAAAJAAAATG9jYWxUaW1lAQEhAAAuAEQhAAAAAQDQIv////8BAf//" +
+           "//8AAAAAFWCJCgIAAAAAAAcAAABNZXNzYWdlAQEiAAAuAEQiAAAAABX/////AQH/////AAAAABVgiQoC" +
+           "AAAAAAAIAAAAU2V2ZXJpdHkBASMAAC4ARCMAAAAABf////8BAf////8AAAAAFWCJCgIAAAAAAA8AAABB" +
+           "Y3Rpb25UaW1lU3RhbXABASQAAC4ARCQAAAABACYB/////wEB/////wAAAAAVYIkKAgAAAAAABgAAAFN0" +
+           "YXR1cwEBJQAALgBEJQAAAAAB/////wEB/////wAAAAAVYIkKAgAAAAAACAAAAFNlcnZlcklkAQEmAAAu" +
+           "AEQmAAAAAAz/////AQH/////AAAAABVgiQoCAAAAAAASAAAAQ2xpZW50QXVkaXRFbnRyeUlkAQEnAAAu" +
+           "AEQnAAAAAAz/////AQH/////AAAAABVgiQoCAAAAAAAMAAAAQ2xpZW50VXNlcklkAQEoAAAuAEQoAAAA" +
+           "AAz/////AQH/////AAAAABVgiQoCAAAAAAAIAAAATWV0aG9kSWQBASkAAC4ARCkAAAAAEf////8BAf//" +
+           "//8AAAAAFWCJCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBKgAALgBEKgAAAAAYAQAAAAEB/////wAA" +
+           "AAA=";
         #endregion
         #endif
         #endregion
@@ -1427,37 +1387,32 @@ namespace Opc.Ua.Gds
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            NodeId applicationId = (NodeId)inputArguments[0];
-            NodeId certificateGroupId = (NodeId)inputArguments[1];
-            NodeId certificateTypeId = (NodeId)inputArguments[2];
-            byte[] certificateRequest = (byte[])inputArguments[3];
+            NodeId applicationId = (NodeId)_inputArguments[0];
+            NodeId certificateGroupId = (NodeId)_inputArguments[1];
+            NodeId certificateTypeId = (NodeId)_inputArguments[2];
+            byte[] certificateRequest = (byte[])_inputArguments[3];
 
-            NodeId requestId = (NodeId)outputArguments[0];
+            NodeId requestId = (NodeId)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     applicationId,
                     certificateGroupId,
                     certificateTypeId,
@@ -1465,7 +1420,7 @@ namespace Opc.Ua.Gds
                     ref requestId);
             }
 
-            outputArguments[0] = requestId;
+            _outputArguments[0] = requestId;
 
             return result;
         }
@@ -1566,40 +1521,35 @@ namespace Opc.Ua.Gds
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            NodeId applicationId = (NodeId)inputArguments[0];
-            NodeId certificateGroupId = (NodeId)inputArguments[1];
-            NodeId certificateTypeId = (NodeId)inputArguments[2];
-            string subjectName = (string)inputArguments[3];
-            string[] domainNames = (string[])inputArguments[4];
-            string privateKeyFormat = (string)inputArguments[5];
-            string privateKeyPassword = (string)inputArguments[6];
+            NodeId applicationId = (NodeId)_inputArguments[0];
+            NodeId certificateGroupId = (NodeId)_inputArguments[1];
+            NodeId certificateTypeId = (NodeId)_inputArguments[2];
+            string subjectName = (string)_inputArguments[3];
+            string[] domainNames = (string[])_inputArguments[4];
+            string privateKeyFormat = (string)_inputArguments[5];
+            string privateKeyPassword = (string)_inputArguments[6];
 
-            NodeId requestId = (NodeId)outputArguments[0];
+            NodeId requestId = (NodeId)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     applicationId,
                     certificateGroupId,
                     certificateTypeId,
@@ -1610,7 +1560,7 @@ namespace Opc.Ua.Gds
                     ref requestId);
             }
 
-            outputArguments[0] = requestId;
+            _outputArguments[0] = requestId;
 
             return result;
         }
@@ -1711,37 +1661,32 @@ namespace Opc.Ua.Gds
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            NodeId applicationId = (NodeId)inputArguments[0];
-            NodeId requestId = (NodeId)inputArguments[1];
+            NodeId applicationId = (NodeId)_inputArguments[0];
+            NodeId requestId = (NodeId)_inputArguments[1];
 
-            byte[] certificate = (byte[])outputArguments[0];
-            byte[] privateKey = (byte[])outputArguments[1];
-            byte[][] issuerCertificates = (byte[][])outputArguments[2];
+            byte[] certificate = (byte[])_outputArguments[0];
+            byte[] privateKey = (byte[])_outputArguments[1];
+            byte[][] issuerCertificates = (byte[][])_outputArguments[2];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     applicationId,
                     requestId,
                     ref certificate,
@@ -1749,9 +1694,9 @@ namespace Opc.Ua.Gds
                     ref issuerCertificates);
             }
 
-            outputArguments[0] = certificate;
-            outputArguments[1] = privateKey;
-            outputArguments[2] = issuerCertificates;
+            _outputArguments[0] = certificate;
+            _outputArguments[1] = privateKey;
+            _outputArguments[2] = issuerCertificates;
 
             return result;
         }
@@ -1848,39 +1793,34 @@ namespace Opc.Ua.Gds
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            NodeId applicationId = (NodeId)inputArguments[0];
+            NodeId applicationId = (NodeId)_inputArguments[0];
 
-            NodeId[] certificateGroupIds = (NodeId[])outputArguments[0];
+            NodeId[] certificateGroupIds = (NodeId[])_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     applicationId,
                     ref certificateGroupIds);
             }
 
-            outputArguments[0] = certificateGroupIds;
+            _outputArguments[0] = certificateGroupIds;
 
             return result;
         }
@@ -1974,41 +1914,36 @@ namespace Opc.Ua.Gds
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            NodeId applicationId = (NodeId)inputArguments[0];
-            NodeId certificateGroupId = (NodeId)inputArguments[1];
+            NodeId applicationId = (NodeId)_inputArguments[0];
+            NodeId certificateGroupId = (NodeId)_inputArguments[1];
 
-            NodeId trustListId = (NodeId)outputArguments[0];
+            NodeId trustListId = (NodeId)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     applicationId,
                     certificateGroupId,
                     ref trustListId);
             }
 
-            outputArguments[0] = trustListId;
+            _outputArguments[0] = trustListId;
 
             return result;
         }
@@ -2104,43 +2039,38 @@ namespace Opc.Ua.Gds
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            NodeId applicationId = (NodeId)inputArguments[0];
-            NodeId certificateGroupId = (NodeId)inputArguments[1];
-            NodeId certificateTypeId = (NodeId)inputArguments[2];
+            NodeId applicationId = (NodeId)_inputArguments[0];
+            NodeId certificateGroupId = (NodeId)_inputArguments[1];
+            NodeId certificateTypeId = (NodeId)_inputArguments[2];
 
-            bool updateRequired = (bool)outputArguments[0];
+            bool updateRequired = (bool)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     applicationId,
                     certificateGroupId,
                     certificateTypeId,
                     ref updateRequired);
             }
 
-            outputArguments[0] = updateRequired;
+            _outputArguments[0] = updateRequired;
 
             return result;
         }
@@ -2201,6 +2131,15 @@ namespace Opc.Ua.Gds
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -2241,83 +2180,78 @@ namespace Opc.Ua.Gds
            "AAAABwAAAFNlcnZlcnMBAJ0vAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAABGCACgEAAAABABEAAABD" +
            "ZXJ0aWZpY2F0ZUdyb3VwcwEB/wEAIwEA9TX/AQAA/////wEAAAAEYIAKAQAAAAAAFwAAAERlZmF1bHRB" +
            "cHBsaWNhdGlvbkdyb3VwAQEAAgAvAQALMQACAAD/////AgAAAARggAoBAAAAAAAJAAAAVHJ1c3RMaXN0" +
-           "AQEBAgAvAQDqMAECAAD/////DAAAADVgiQoCAAAAAAAEAAAAU2l6ZQEBAgIDAAAAAB4AAABUaGUgc2l6" +
-           "ZSBvZiB0aGUgZmlsZSBpbiBieXRlcy4ALgBEAgIAAAAJ/////wEB/////wAAAAA1YIkKAgAAAAAACAAA" +
-           "AFdyaXRhYmxlAQEDAgMAAAAAHQAAAFdoZXRoZXIgdGhlIGZpbGUgaXMgd3JpdGFibGUuAC4ARAMCAAAA" +
-           "Af////8BAf////8AAAAANWCJCgIAAAAAAAwAAABVc2VyV3JpdGFibGUBAQQCAwAAAAAxAAAAV2hldGhl" +
-           "ciB0aGUgZmlsZSBpcyB3cml0YWJsZSBieSB0aGUgY3VycmVudCB1c2VyLgAuAEQEAgAAAAH/////AQH/" +
-           "////AAAAADVgiQoCAAAAAAAJAAAAT3BlbkNvdW50AQEFAgMAAAAAKAAAAFRoZSBjdXJyZW50IG51bWJl" +
-           "ciBvZiBvcGVuIGZpbGUgaGFuZGxlcy4ALgBEBQIAAAAF/////wEB/////wAAAAAEYYIKBAAAAAAABAAA" +
-           "AE9wZW4BAQcCAC8BADwtBwIAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQEI" +
-           "AgAuAEQIAgAAlgEAAAABACoBARMAAAAEAAAATW9kZQAD/////wAAAAAAAQAoAQEAAAABAf////8AAAAA" +
-           "FWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAQkCAC4ARAkCAACWAQAAAAEAKgEBGQAAAAoAAABG" +
-           "aWxlSGFuZGxlAAf/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAAABQAAAENsb3NlAQEK" +
-           "AgAvAQA/LQoCAAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBCwIALgBECwIA" +
-           "AJYBAAAAAQAqAQEZAAAACgAAAEZpbGVIYW5kbGUAB/////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARh" +
-           "ggoEAAAAAAAEAAAAUmVhZAEBDAIALwEAQS0MAgAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRB" +
-           "cmd1bWVudHMBAQ0CAC4ARA0CAACWAgAAAAEAKgEBGQAAAAoAAABGaWxlSGFuZGxlAAf/////AAAAAAAB" +
-           "ACoBARUAAAAGAAAATGVuZ3RoAAb/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAA" +
-           "AE91dHB1dEFyZ3VtZW50cwEBDgIALgBEDgIAAJYBAAAAAQAqAQETAAAABAAAAERhdGEAD/////8AAAAA" +
-           "AAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAAAFAAAAV3JpdGUBAQ8CAC8BAEQtDwIAAAEB/////wEA" +
-           "AAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQEQAgAuAEQQAgAAlgIAAAABACoBARkAAAAKAAAA" +
-           "RmlsZUhhbmRsZQAH/////wAAAAAAAQAqAQETAAAABAAAAERhdGEAD/////8AAAAAAAEAKAEBAAAAAQH/" +
-           "////AAAAAARhggoEAAAAAAALAAAAR2V0UG9zaXRpb24BARECAC8BAEYtEQIAAAEB/////wIAAAAVYKkK" +
-           "AgAAAAAADgAAAElucHV0QXJndW1lbnRzAQESAgAuAEQSAgAAlgEAAAABACoBARkAAAAKAAAARmlsZUhh" +
-           "bmRsZQAH/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVu" +
-           "dHMBARMCAC4ARBMCAACWAQAAAAEAKgEBFwAAAAgAAABQb3NpdGlvbgAJ/////wAAAAAAAQAoAQEAAAAB" +
-           "Af////8AAAAABGGCCgQAAAAAAAsAAABTZXRQb3NpdGlvbgEBFAIALwEASS0UAgAAAQH/////AQAAABVg" +
-           "qQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBARUCAC4ARBUCAACWAgAAAAEAKgEBGQAAAAoAAABGaWxl" +
-           "SGFuZGxlAAf/////AAAAAAABACoBARcAAAAIAAAAUG9zaXRpb24ACf////8AAAAAAAEAKAEBAAAAAQH/" +
-           "////AAAAABVgiQoCAAAAAAAOAAAATGFzdFVwZGF0ZVRpbWUBARYCAC4ARBYCAAABACYB/////wEB////" +
-           "/wAAAAAEYYIKBAAAAAAADQAAAE9wZW5XaXRoTWFza3MBARcCAC8BAP8wFwIAAAEB/////wIAAAAVYKkK" +
-           "AgAAAAAADgAAAElucHV0QXJndW1lbnRzAQEYAgAuAEQYAgAAlgEAAAABACoBARQAAAAFAAAATWFza3MA" +
-           "B/////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQEZ" +
-           "AgAuAEQZAgAAlgEAAAABACoBARkAAAAKAAAARmlsZUhhbmRsZQAH/////wAAAAAAAQAoAQEAAAABAf//" +
-           "//8AAAAAFWCJCgIAAAAAABAAAABDZXJ0aWZpY2F0ZVR5cGVzAQEhAgAuAEQhAgAAABEBAAAAAQH/////" +
-           "AAAAAARhggoEAAAAAQATAAAAU3RhcnRTaWduaW5nUmVxdWVzdAEBTwAALwEBTwBPAAAAAQH/////AgAA" +
-           "ABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAVAAAC4ARFAAAACWBAAAAAEAKgEBHAAAAA0AAABB" +
-           "cHBsaWNhdGlvbklkABH/////AAAAAAABACoBASEAAAASAAAAQ2VydGlmaWNhdGVHcm91cElkABH/////" +
-           "AAAAAAABACoBASAAAAARAAAAQ2VydGlmaWNhdGVUeXBlSWQAEf////8AAAAAAAEAKgEBIQAAABIAAABD" +
-           "ZXJ0aWZpY2F0ZVJlcXVlc3QAD/////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAA" +
-           "T3V0cHV0QXJndW1lbnRzAQFRAAAuAERRAAAAlgEAAAABACoBARgAAAAJAAAAUmVxdWVzdElkABH/////" +
-           "AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEAFgAAAFN0YXJ0TmV3S2V5UGFpclJlcXVlc3QB" +
-           "AUwAAC8BAUwATAAAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFNAAAuAERN" +
-           "AAAAlgcAAAABACoBARwAAAANAAAAQXBwbGljYXRpb25JZAAR/////wAAAAAAAQAqAQEhAAAAEgAAAENl" +
-           "cnRpZmljYXRlR3JvdXBJZAAR/////wAAAAAAAQAqAQEgAAAAEQAAAENlcnRpZmljYXRlVHlwZUlkABH/" +
-           "////AAAAAAABACoBARoAAAALAAAAU3ViamVjdE5hbWUADP////8AAAAAAAEAKgEBGgAAAAsAAABEb21h" +
-           "aW5OYW1lcwAMAQAAAAAAAAAAAQAqAQEfAAAAEAAAAFByaXZhdGVLZXlGb3JtYXQADP////8AAAAAAAEA" +
-           "KgEBIQAAABIAAABQcml2YXRlS2V5UGFzc3dvcmQADP////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVg" +
-           "qQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQFOAAAuAEROAAAAlgEAAAABACoBARgAAAAJAAAAUmVx" +
-           "dWVzdElkABH/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEADQAAAEZpbmlzaFJlcXVl" +
-           "c3QBAVUAAC8BAVUAVQAAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFWAAAu" +
-           "AERWAAAAlgIAAAABACoBARwAAAANAAAAQXBwbGljYXRpb25JZAAR/////wAAAAAAAQAqAQEYAAAACQAA" +
-           "AFJlcXVlc3RJZAAR/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRB" +
-           "cmd1bWVudHMBAVcAAC4ARFcAAACWAwAAAAEAKgEBGgAAAAsAAABDZXJ0aWZpY2F0ZQAP/////wAAAAAA" +
-           "AQAqAQEZAAAACgAAAFByaXZhdGVLZXkAD/////8AAAAAAAEAKgEBIQAAABIAAABJc3N1ZXJDZXJ0aWZp" +
-           "Y2F0ZXMADwEAAAAAAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQAUAAAAR2V0Q2VydGlmaWNh" +
-           "dGVHcm91cHMBAXEBAC8BAXEBcQEAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRz" +
-           "AQFyAQAuAERyAQAAlgEAAAABACoBARwAAAANAAAAQXBwbGljYXRpb25JZAAR/////wAAAAAAAQAoAQEA" +
-           "AAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAXMBAC4ARHMBAACWAQAAAAEA" +
-           "KgEBIgAAABMAAABDZXJ0aWZpY2F0ZUdyb3VwSWRzABEBAAAAAAAAAAABACgBAQAAAAEB/////wAAAAAE" +
-           "YYIKBAAAAAEADAAAAEdldFRydXN0TGlzdAEBxQAALwEBxQDFAAAAAQH/////AgAAABVgqQoCAAAAAAAO" +
-           "AAAASW5wdXRBcmd1bWVudHMBAcYAAC4ARMYAAACWAgAAAAEAKgEBHAAAAA0AAABBcHBsaWNhdGlvbklk" +
-           "ABH/////AAAAAAABACoBASEAAAASAAAAQ2VydGlmaWNhdGVHcm91cElkABH/////AAAAAAABACgBAQAA" +
-           "AAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBxwAALgBExwAAAJYBAAAAAQAq" +
-           "AQEaAAAACwAAAFRydXN0TGlzdElkABH/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEA" +
-           "FAAAAEdldENlcnRpZmljYXRlU3RhdHVzAQHeAAAvAQHeAN4AAAABAf////8CAAAAFWCpCgIAAAAAAA4A" +
-           "AABJbnB1dEFyZ3VtZW50cwEB3wAALgBE3wAAAJYDAAAAAQAqAQEcAAAADQAAAEFwcGxpY2F0aW9uSWQA" +
-           "Ef////8AAAAAAAEAKgEBIQAAABIAAABDZXJ0aWZpY2F0ZUdyb3VwSWQAEf////8AAAAAAAEAKgEBIAAA" +
-           "ABEAAABDZXJ0aWZpY2F0ZVR5cGVJZAAR/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAA" +
-           "AA8AAABPdXRwdXRBcmd1bWVudHMBAeAAAC4AROAAAACWAQAAAAEAKgEBHQAAAA4AAABVcGRhdGVSZXF1" +
-           "aXJlZAAB/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
+           "AQEBAgAvAQDqMAECAAD/////DAAAABVgiQoCAAAAAAAEAAAAU2l6ZQEBAgIALgBEAgIAAAAJ/////wEB" +
+           "/////wAAAAAVYIkKAgAAAAAACAAAAFdyaXRhYmxlAQEDAgAuAEQDAgAAAAH/////AQH/////AAAAABVg" +
+           "iQoCAAAAAAAMAAAAVXNlcldyaXRhYmxlAQEEAgAuAEQEAgAAAAH/////AQH/////AAAAABVgiQoCAAAA" +
+           "AAAJAAAAT3BlbkNvdW50AQEFAgAuAEQFAgAAAAX/////AQH/////AAAAAARhggoEAAAAAAAEAAAAT3Bl" +
+           "bgEBBwIALwEAPC0HAgAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAQgCAC4A" +
+           "RAgCAACWAQAAAAEAKgEBEwAAAAQAAABNb2RlAAP/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkK" +
+           "AgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBCQIALgBECQIAAJYBAAAAAQAqAQEZAAAACgAAAEZpbGVI" +
+           "YW5kbGUAB/////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAAAFAAAAQ2xvc2UBAQoCAC8B" +
+           "AD8tCgIAAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQELAgAuAEQLAgAAlgEA" +
+           "AAABACoBARkAAAAKAAAARmlsZUhhbmRsZQAH/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQA" +
+           "AAAAAAQAAABSZWFkAQEMAgAvAQBBLQwCAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3Vt" +
+           "ZW50cwEBDQIALgBEDQIAAJYCAAAAAQAqAQEZAAAACgAAAEZpbGVIYW5kbGUAB/////8AAAAAAAEAKgEB" +
+           "FQAAAAYAAABMZW5ndGgABv////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0" +
+           "cHV0QXJndW1lbnRzAQEOAgAuAEQOAgAAlgEAAAABACoBARMAAAAEAAAARGF0YQAP/////wAAAAAAAQAo" +
+           "AQEAAAABAf////8AAAAABGGCCgQAAAAAAAUAAABXcml0ZQEBDwIALwEARC0PAgAAAQH/////AQAAABVg" +
+           "qQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBARACAC4ARBACAACWAgAAAAEAKgEBGQAAAAoAAABGaWxl" +
+           "SGFuZGxlAAf/////AAAAAAABACoBARMAAAAEAAAARGF0YQAP/////wAAAAAAAQAoAQEAAAABAf////8A" +
+           "AAAABGGCCgQAAAAAAAsAAABHZXRQb3NpdGlvbgEBEQIALwEARi0RAgAAAQH/////AgAAABVgqQoCAAAA" +
+           "AAAOAAAASW5wdXRBcmd1bWVudHMBARICAC4ARBICAACWAQAAAAEAKgEBGQAAAAoAAABGaWxlSGFuZGxl" +
+           "AAf/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEB" +
+           "EwIALgBEEwIAAJYBAAAAAQAqAQEXAAAACAAAAFBvc2l0aW9uAAn/////AAAAAAABACgBAQAAAAEB////" +
+           "/wAAAAAEYYIKBAAAAAAACwAAAFNldFBvc2l0aW9uAQEUAgAvAQBJLRQCAAABAf////8BAAAAFWCpCgIA" +
+           "AAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBFQIALgBEFQIAAJYCAAAAAQAqAQEZAAAACgAAAEZpbGVIYW5k" +
+           "bGUAB/////8AAAAAAAEAKgEBFwAAAAgAAABQb3NpdGlvbgAJ/////wAAAAAAAQAoAQEAAAABAf////8A" +
+           "AAAAFWCJCgIAAAAAAA4AAABMYXN0VXBkYXRlVGltZQEBFgIALgBEFgIAAAEAJgH/////AQH/////AAAA" +
+           "AARhggoEAAAAAAANAAAAT3BlbldpdGhNYXNrcwEBFwIALwEA/zAXAgAAAQH/////AgAAABVgqQoCAAAA" +
+           "AAAOAAAASW5wdXRBcmd1bWVudHMBARgCAC4ARBgCAACWAQAAAAEAKgEBFAAAAAUAAABNYXNrcwAH////" +
+           "/wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBARkCAC4A" +
+           "RBkCAACWAQAAAAEAKgEBGQAAAAoAAABGaWxlSGFuZGxlAAf/////AAAAAAABACgBAQAAAAEB/////wAA" +
+           "AAAVYIkKAgAAAAAAEAAAAENlcnRpZmljYXRlVHlwZXMBASECAC4ARCECAAAAEQEAAAABAf////8AAAAA" +
+           "BGGCCgQAAAABABMAAABTdGFydFNpZ25pbmdSZXF1ZXN0AQFPAAAvAQFPAE8AAAABAf////8CAAAAFWCp" +
+           "CgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBUAAALgBEUAAAAJYEAAAAAQAqAQEcAAAADQAAAEFwcGxp" +
+           "Y2F0aW9uSWQAEf////8AAAAAAAEAKgEBIQAAABIAAABDZXJ0aWZpY2F0ZUdyb3VwSWQAEf////8AAAAA" +
+           "AAEAKgEBIAAAABEAAABDZXJ0aWZpY2F0ZVR5cGVJZAAR/////wAAAAAAAQAqAQEhAAAAEgAAAENlcnRp" +
+           "ZmljYXRlUmVxdWVzdAAP/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRw" +
+           "dXRBcmd1bWVudHMBAVEAAC4ARFEAAACWAQAAAAEAKgEBGAAAAAkAAABSZXF1ZXN0SWQAEf////8AAAAA" +
+           "AAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQAWAAAAU3RhcnROZXdLZXlQYWlyUmVxdWVzdAEBTAAA" +
+           "LwEBTABMAAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAU0AAC4ARE0AAACW" +
+           "BwAAAAEAKgEBHAAAAA0AAABBcHBsaWNhdGlvbklkABH/////AAAAAAABACoBASEAAAASAAAAQ2VydGlm" +
+           "aWNhdGVHcm91cElkABH/////AAAAAAABACoBASAAAAARAAAAQ2VydGlmaWNhdGVUeXBlSWQAEf////8A" +
+           "AAAAAAEAKgEBGgAAAAsAAABTdWJqZWN0TmFtZQAM/////wAAAAAAAQAqAQEaAAAACwAAAERvbWFpbk5h" +
+           "bWVzAAwBAAAAAAAAAAABACoBAR8AAAAQAAAAUHJpdmF0ZUtleUZvcm1hdAAM/////wAAAAAAAQAqAQEh" +
+           "AAAAEgAAAFByaXZhdGVLZXlQYXNzd29yZAAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIA" +
+           "AAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAU4AAC4ARE4AAACWAQAAAAEAKgEBGAAAAAkAAABSZXF1ZXN0" +
+           "SWQAEf////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQANAAAARmluaXNoUmVxdWVzdAEB" +
+           "VQAALwEBVQBVAAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAVYAAC4ARFYA" +
+           "AACWAgAAAAEAKgEBHAAAAA0AAABBcHBsaWNhdGlvbklkABH/////AAAAAAABACoBARgAAAAJAAAAUmVx" +
+           "dWVzdElkABH/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3Vt" +
+           "ZW50cwEBVwAALgBEVwAAAJYDAAAAAQAqAQEaAAAACwAAAENlcnRpZmljYXRlAA//////AAAAAAABACoB" +
+           "ARkAAAAKAAAAUHJpdmF0ZUtleQAP/////wAAAAAAAQAqAQEhAAAAEgAAAElzc3VlckNlcnRpZmljYXRl" +
+           "cwAPAQAAAAAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAABABQAAABHZXRDZXJ0aWZpY2F0ZUdy" +
+           "b3VwcwEBcQEALwEBcQFxAQAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAXIB" +
+           "AC4ARHIBAACWAQAAAAEAKgEBHAAAAA0AAABBcHBsaWNhdGlvbklkABH/////AAAAAAABACgBAQAAAAEB" +
+           "/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBcwEALgBEcwEAAJYBAAAAAQAqAQEi" +
+           "AAAAEwAAAENlcnRpZmljYXRlR3JvdXBJZHMAEQEAAAAAAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoE" +
+           "AAAAAQAMAAAAR2V0VHJ1c3RMaXN0AQHFAAAvAQHFAMUAAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJ" +
+           "bnB1dEFyZ3VtZW50cwEBxgAALgBExgAAAJYCAAAAAQAqAQEcAAAADQAAAEFwcGxpY2F0aW9uSWQAEf//" +
+           "//8AAAAAAAEAKgEBIQAAABIAAABDZXJ0aWZpY2F0ZUdyb3VwSWQAEf////8AAAAAAAEAKAEBAAAAAQH/" +
+           "////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQHHAAAuAETHAAAAlgEAAAABACoBARoA" +
+           "AAALAAAAVHJ1c3RMaXN0SWQAEf////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQAUAAAA" +
+           "R2V0Q2VydGlmaWNhdGVTdGF0dXMBAd4AAC8BAd4A3gAAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElu" +
+           "cHV0QXJndW1lbnRzAQHfAAAuAETfAAAAlgMAAAABACoBARwAAAANAAAAQXBwbGljYXRpb25JZAAR////" +
+           "/wAAAAAAAQAqAQEhAAAAEgAAAENlcnRpZmljYXRlR3JvdXBJZAAR/////wAAAAAAAQAqAQEgAAAAEQAA" +
+           "AENlcnRpZmljYXRlVHlwZUlkABH/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAA" +
+           "AE91dHB1dEFyZ3VtZW50cwEB4AAALgBE4AAAAJYBAAAAAQAqAQEdAAAADgAAAFVwZGF0ZVJlcXVpcmVk" +
+           "AAH/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the CertificateGroups Object.
-        /// </summary>
+        /// <remarks />
         public CertificateGroupFolderState CertificateGroups
         {
             get
@@ -2336,9 +2270,7 @@ namespace Opc.Ua.Gds
             }
         }
 
-        /// <summary>
-        /// A description for the StartSigningRequestMethodType Method.
-        /// </summary>
+        /// <remarks />
         public StartSigningRequestMethodState StartSigningRequest
         {
             get
@@ -2357,9 +2289,7 @@ namespace Opc.Ua.Gds
             }
         }
 
-        /// <summary>
-        /// A description for the StartNewKeyPairRequestMethodType Method.
-        /// </summary>
+        /// <remarks />
         public StartNewKeyPairRequestMethodState StartNewKeyPairRequest
         {
             get
@@ -2378,9 +2308,7 @@ namespace Opc.Ua.Gds
             }
         }
 
-        /// <summary>
-        /// A description for the FinishRequestMethodType Method.
-        /// </summary>
+        /// <remarks />
         public FinishRequestMethodState FinishRequest
         {
             get
@@ -2399,9 +2327,7 @@ namespace Opc.Ua.Gds
             }
         }
 
-        /// <summary>
-        /// A description for the GetCertificateGroupsMethodType Method.
-        /// </summary>
+        /// <remarks />
         public GetCertificateGroupsMethodState GetCertificateGroups
         {
             get
@@ -2420,9 +2346,7 @@ namespace Opc.Ua.Gds
             }
         }
 
-        /// <summary>
-        /// A description for the GetTrustListMethodType Method.
-        /// </summary>
+        /// <remarks />
         public GetTrustListMethodState GetTrustList
         {
             get
@@ -2441,9 +2365,7 @@ namespace Opc.Ua.Gds
             }
         }
 
-        /// <summary>
-        /// A description for the GetCertificateStatusMethodType Method.
-        /// </summary>
+        /// <remarks />
         public GetCertificateStatusMethodState GetCertificateStatus
         {
             get
@@ -2735,6 +2657,15 @@ namespace Opc.Ua.Gds
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -2745,45 +2676,29 @@ namespace Opc.Ua.Gds
         #region Initialization String
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvR0RTL/////8EYIAAAQAAAAEAKgAAAENl" +
-           "cnRpZmljYXRlUmVxdWVzdGVkQXVkaXRFdmVudFR5cGVJbnN0YW5jZQEBWwABAVsA/////xIAAAA1YIkK" +
-           "AgAAAAAABwAAAEV2ZW50SWQBAVwAAwAAAAArAAAAQSBnbG9iYWxseSB1bmlxdWUgaWRlbnRpZmllciBm" +
-           "b3IgdGhlIGV2ZW50LgAuAERcAAAAAA//////AQH/////AAAAADVgiQoCAAAAAAAJAAAARXZlbnRUeXBl" +
-           "AQFdAAMAAAAAIgAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdHlwZS4ALgBEXQAAAAAR////" +
-           "/wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBAV4AAwAAAAAYAAAAVGhlIHNvdXJjZSBv" +
-           "ZiB0aGUgZXZlbnQuAC4ARF4AAAAAEf////8BAf////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOYW1l" +
-           "AQFfAAMAAAAAKQAAAEEgZGVzY3JpcHRpb24gb2YgdGhlIHNvdXJjZSBvZiB0aGUgZXZlbnQuAC4ARF8A" +
-           "AAAADP////8BAf////8AAAAANWCJCgIAAAAAAAQAAABUaW1lAQFgAAMAAAAAGAAAAFdoZW4gdGhlIGV2" +
-           "ZW50IG9jY3VycmVkLgAuAERgAAAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAsAAABSZWNlaXZl" +
-           "VGltZQEBYQADAAAAAD4AAABXaGVuIHRoZSBzZXJ2ZXIgcmVjZWl2ZWQgdGhlIGV2ZW50IGZyb20gdGhl" +
-           "IHVuZGVybHlpbmcgc3lzdGVtLgAuAERhAAAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAkAAABM" +
-           "b2NhbFRpbWUBAWIAAwAAAAA8AAAASW5mb3JtYXRpb24gYWJvdXQgdGhlIGxvY2FsIHRpbWUgd2hlcmUg" +
-           "dGhlIGV2ZW50IG9yaWdpbmF0ZWQuAC4ARGIAAAABANAi/////wEB/////wAAAAA1YIkKAgAAAAAABwAA" +
-           "AE1lc3NhZ2UBAWMAAwAAAAAlAAAAQSBsb2NhbGl6ZWQgZGVzY3JpcHRpb24gb2YgdGhlIGV2ZW50LgAu" +
-           "AERjAAAAABX/////AQH/////AAAAADVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkBAWQAAwAAAAAhAAAASW5k" +
-           "aWNhdGVzIGhvdyB1cmdlbnQgYW4gZXZlbnQgaXMuAC4ARGQAAAAABf////8BAf////8AAAAANWCJCgIA" +
-           "AAAAAA8AAABBY3Rpb25UaW1lU3RhbXABAWUAAwAAAAAuAAAAV2hlbiB0aGUgYWN0aW9uIHRyaWdnZXJp" +
-           "bmcgdGhlIGV2ZW50IG9jY3VycmVkLgAuAERlAAAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAYA" +
-           "AABTdGF0dXMBAWYAAwAAAABhAAAASWYgVFJVRSB0aGUgYWN0aW9uIHdhcyBwZXJmb3JtZWQuIElmIEZB" +
-           "TFNFIHRoZSBhY3Rpb24gZmFpbGVkIGFuZCB0aGUgc2VydmVyIHN0YXRlIGRpZCBub3QgY2hhbmdlLgAu" +
-           "AERmAAAAAAH/////AQH/////AAAAADVgiQoCAAAAAAAIAAAAU2VydmVySWQBAWcAAwAAAAA6AAAAVGhl" +
-           "IHVuaXF1ZSBpZGVudGlmaWVyIGZvciB0aGUgc2VydmVyIGdlbmVyYXRpbmcgdGhlIGV2ZW50LgAuAERn" +
-           "AAAAAAz/////AQH/////AAAAADVgiQoCAAAAAAASAAAAQ2xpZW50QXVkaXRFbnRyeUlkAQFoAAMAAAAA" +
-           "QwAAAFRoZSBsb2cgZW50cnkgaWQgcHJvdmlkZWQgaW4gdGhlIHJlcXVlc3QgdGhhdCBpbml0aWF0ZWQg" +
-           "dGhlIGFjdGlvbi4ALgBEaAAAAAAM/////wEB/////wAAAAA1YIkKAgAAAAAADAAAAENsaWVudFVzZXJJ" +
-           "ZAEBaQADAAAAAEgAAABUaGUgdXNlciBpZGVudGl0eSBhc3NvY2lhdGVkIHdpdGggdGhlIHNlc3Npb24g" +
-           "dGhhdCBpbml0aWF0ZWQgdGhlIGFjdGlvbi4ALgBEaQAAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "CAAAAE1ldGhvZElkAQFqAAAuAERqAAAAABH/////AQH/////AAAAABVgiQoCAAAAAAAOAAAASW5wdXRB" +
-           "cmd1bWVudHMBAWsAAC4ARGsAAAAAGAEAAAABAf////8AAAAAFWCJCgIAAAABABAAAABDZXJ0aWZpY2F0" +
-           "ZUdyb3VwAQHNAgAuAETNAgAAABH/////AQH/////AAAAABVgiQoCAAAAAQAPAAAAQ2VydGlmaWNhdGVU" +
-           "eXBlAQHOAgAuAETOAgAAABH/////AQH/////AAAAAA==";
+           "cnRpZmljYXRlUmVxdWVzdGVkQXVkaXRFdmVudFR5cGVJbnN0YW5jZQEBWwABAVsA/////xIAAAAVYIkK" +
+           "AgAAAAAABwAAAEV2ZW50SWQBAVwAAC4ARFwAAAAAD/////8BAf////8AAAAAFWCJCgIAAAAAAAkAAABF" +
+           "dmVudFR5cGUBAV0AAC4ARF0AAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOb2Rl" +
+           "AQFeAAAuAEReAAAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEBXwAALgBE" +
+           "XwAAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAABAAAAFRpbWUBAWAAAC4ARGAAAAABACYB/////wEB" +
+           "/////wAAAAAVYIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQFhAAAuAERhAAAAAQAmAf////8BAf////8A" +
+           "AAAAFWCJCgIAAAAAAAkAAABMb2NhbFRpbWUBAWIAAC4ARGIAAAABANAi/////wEB/////wAAAAAVYIkK" +
+           "AgAAAAAABwAAAE1lc3NhZ2UBAWMAAC4ARGMAAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABT" +
+           "ZXZlcml0eQEBZAAALgBEZAAAAAAF/////wEB/////wAAAAAVYIkKAgAAAAAADwAAAEFjdGlvblRpbWVT" +
+           "dGFtcAEBZQAALgBEZQAAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAGAAAAU3RhdHVzAQFmAAAu" +
+           "AERmAAAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAU2VydmVySWQBAWcAAC4ARGcAAAAADP//" +
+           "//8BAf////8AAAAAFWCJCgIAAAAAABIAAABDbGllbnRBdWRpdEVudHJ5SWQBAWgAAC4ARGgAAAAADP//" +
+           "//8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQBAWkAAC4ARGkAAAAADP////8BAf//" +
+           "//8AAAAAFWCJCgIAAAAAAAgAAABNZXRob2RJZAEBagAALgBEagAAAAAR/////wEB/////wAAAAAVYIkK" +
+           "AgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFrAAAuAERrAAAAABgBAAAAAQH/////AAAAABVgiQoCAAAA" +
+           "AQAQAAAAQ2VydGlmaWNhdGVHcm91cAEBzQIALgBEzQIAAAAR/////wEB/////wAAAAAVYIkKAgAAAAEA" +
+           "DwAAAENlcnRpZmljYXRlVHlwZQEBzgIALgBEzgIAAAAR/////wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the CertificateGroup Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<NodeId> CertificateGroup
         {
             get
@@ -2802,9 +2717,7 @@ namespace Opc.Ua.Gds
             }
         }
 
-        /// <summary>
-        /// A description for the CertificateType Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<NodeId> CertificateType
         {
             get
@@ -2961,6 +2874,15 @@ namespace Opc.Ua.Gds
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -2971,45 +2893,29 @@ namespace Opc.Ua.Gds
         #region Initialization String
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvR0RTL/////8EYIAAAQAAAAEAKgAAAENl" +
-           "cnRpZmljYXRlRGVsaXZlcmVkQXVkaXRFdmVudFR5cGVJbnN0YW5jZQEBbQABAW0A/////xIAAAA1YIkK" +
-           "AgAAAAAABwAAAEV2ZW50SWQBAW4AAwAAAAArAAAAQSBnbG9iYWxseSB1bmlxdWUgaWRlbnRpZmllciBm" +
-           "b3IgdGhlIGV2ZW50LgAuAERuAAAAAA//////AQH/////AAAAADVgiQoCAAAAAAAJAAAARXZlbnRUeXBl" +
-           "AQFvAAMAAAAAIgAAAFRoZSBpZGVudGlmaWVyIGZvciB0aGUgZXZlbnQgdHlwZS4ALgBEbwAAAAAR////" +
-           "/wEB/////wAAAAA1YIkKAgAAAAAACgAAAFNvdXJjZU5vZGUBAXAAAwAAAAAYAAAAVGhlIHNvdXJjZSBv" +
-           "ZiB0aGUgZXZlbnQuAC4ARHAAAAAAEf////8BAf////8AAAAANWCJCgIAAAAAAAoAAABTb3VyY2VOYW1l" +
-           "AQFxAAMAAAAAKQAAAEEgZGVzY3JpcHRpb24gb2YgdGhlIHNvdXJjZSBvZiB0aGUgZXZlbnQuAC4ARHEA" +
-           "AAAADP////8BAf////8AAAAANWCJCgIAAAAAAAQAAABUaW1lAQFyAAMAAAAAGAAAAFdoZW4gdGhlIGV2" +
-           "ZW50IG9jY3VycmVkLgAuAERyAAAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAsAAABSZWNlaXZl" +
-           "VGltZQEBcwADAAAAAD4AAABXaGVuIHRoZSBzZXJ2ZXIgcmVjZWl2ZWQgdGhlIGV2ZW50IGZyb20gdGhl" +
-           "IHVuZGVybHlpbmcgc3lzdGVtLgAuAERzAAAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAkAAABM" +
-           "b2NhbFRpbWUBAXQAAwAAAAA8AAAASW5mb3JtYXRpb24gYWJvdXQgdGhlIGxvY2FsIHRpbWUgd2hlcmUg" +
-           "dGhlIGV2ZW50IG9yaWdpbmF0ZWQuAC4ARHQAAAABANAi/////wEB/////wAAAAA1YIkKAgAAAAAABwAA" +
-           "AE1lc3NhZ2UBAXUAAwAAAAAlAAAAQSBsb2NhbGl6ZWQgZGVzY3JpcHRpb24gb2YgdGhlIGV2ZW50LgAu" +
-           "AER1AAAAABX/////AQH/////AAAAADVgiQoCAAAAAAAIAAAAU2V2ZXJpdHkBAXYAAwAAAAAhAAAASW5k" +
-           "aWNhdGVzIGhvdyB1cmdlbnQgYW4gZXZlbnQgaXMuAC4ARHYAAAAABf////8BAf////8AAAAANWCJCgIA" +
-           "AAAAAA8AAABBY3Rpb25UaW1lU3RhbXABAXcAAwAAAAAuAAAAV2hlbiB0aGUgYWN0aW9uIHRyaWdnZXJp" +
-           "bmcgdGhlIGV2ZW50IG9jY3VycmVkLgAuAER3AAAAAQAmAf////8BAf////8AAAAANWCJCgIAAAAAAAYA" +
-           "AABTdGF0dXMBAXgAAwAAAABhAAAASWYgVFJVRSB0aGUgYWN0aW9uIHdhcyBwZXJmb3JtZWQuIElmIEZB" +
-           "TFNFIHRoZSBhY3Rpb24gZmFpbGVkIGFuZCB0aGUgc2VydmVyIHN0YXRlIGRpZCBub3QgY2hhbmdlLgAu" +
-           "AER4AAAAAAH/////AQH/////AAAAADVgiQoCAAAAAAAIAAAAU2VydmVySWQBAXkAAwAAAAA6AAAAVGhl" +
-           "IHVuaXF1ZSBpZGVudGlmaWVyIGZvciB0aGUgc2VydmVyIGdlbmVyYXRpbmcgdGhlIGV2ZW50LgAuAER5" +
-           "AAAAAAz/////AQH/////AAAAADVgiQoCAAAAAAASAAAAQ2xpZW50QXVkaXRFbnRyeUlkAQF6AAMAAAAA" +
-           "QwAAAFRoZSBsb2cgZW50cnkgaWQgcHJvdmlkZWQgaW4gdGhlIHJlcXVlc3QgdGhhdCBpbml0aWF0ZWQg" +
-           "dGhlIGFjdGlvbi4ALgBEegAAAAAM/////wEB/////wAAAAA1YIkKAgAAAAAADAAAAENsaWVudFVzZXJJ" +
-           "ZAEBewADAAAAAEgAAABUaGUgdXNlciBpZGVudGl0eSBhc3NvY2lhdGVkIHdpdGggdGhlIHNlc3Npb24g" +
-           "dGhhdCBpbml0aWF0ZWQgdGhlIGFjdGlvbi4ALgBEewAAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAA" +
-           "CAAAAE1ldGhvZElkAQF8AAAuAER8AAAAABH/////AQH/////AAAAABVgiQoCAAAAAAAOAAAASW5wdXRB" +
-           "cmd1bWVudHMBAX0AAC4ARH0AAAAAGAEAAAABAf////8AAAAAFWCJCgIAAAABABAAAABDZXJ0aWZpY2F0" +
-           "ZUdyb3VwAQHPAgAuAETPAgAAABH/////AQH/////AAAAABVgiQoCAAAAAQAPAAAAQ2VydGlmaWNhdGVU" +
-           "eXBlAQHQAgAuAETQAgAAABH/////AQH/////AAAAAA==";
+           "cnRpZmljYXRlRGVsaXZlcmVkQXVkaXRFdmVudFR5cGVJbnN0YW5jZQEBbQABAW0A/////xIAAAAVYIkK" +
+           "AgAAAAAABwAAAEV2ZW50SWQBAW4AAC4ARG4AAAAAD/////8BAf////8AAAAAFWCJCgIAAAAAAAkAAABF" +
+           "dmVudFR5cGUBAW8AAC4ARG8AAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAoAAABTb3VyY2VOb2Rl" +
+           "AQFwAAAuAERwAAAAABH/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAU291cmNlTmFtZQEBcQAALgBE" +
+           "cQAAAAAM/////wEB/////wAAAAAVYIkKAgAAAAAABAAAAFRpbWUBAXIAAC4ARHIAAAABACYB/////wEB" +
+           "/////wAAAAAVYIkKAgAAAAAACwAAAFJlY2VpdmVUaW1lAQFzAAAuAERzAAAAAQAmAf////8BAf////8A" +
+           "AAAAFWCJCgIAAAAAAAkAAABMb2NhbFRpbWUBAXQAAC4ARHQAAAABANAi/////wEB/////wAAAAAVYIkK" +
+           "AgAAAAAABwAAAE1lc3NhZ2UBAXUAAC4ARHUAAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABT" +
+           "ZXZlcml0eQEBdgAALgBEdgAAAAAF/////wEB/////wAAAAAVYIkKAgAAAAAADwAAAEFjdGlvblRpbWVT" +
+           "dGFtcAEBdwAALgBEdwAAAAEAJgH/////AQH/////AAAAABVgiQoCAAAAAAAGAAAAU3RhdHVzAQF4AAAu" +
+           "AER4AAAAAAH/////AQH/////AAAAABVgiQoCAAAAAAAIAAAAU2VydmVySWQBAXkAAC4ARHkAAAAADP//" +
+           "//8BAf////8AAAAAFWCJCgIAAAAAABIAAABDbGllbnRBdWRpdEVudHJ5SWQBAXoAAC4ARHoAAAAADP//" +
+           "//8BAf////8AAAAAFWCJCgIAAAAAAAwAAABDbGllbnRVc2VySWQBAXsAAC4ARHsAAAAADP////8BAf//" +
+           "//8AAAAAFWCJCgIAAAAAAAgAAABNZXRob2RJZAEBfAAALgBEfAAAAAAR/////wEB/////wAAAAAVYIkK" +
+           "AgAAAAAADgAAAElucHV0QXJndW1lbnRzAQF9AAAuAER9AAAAABgBAAAAAQH/////AAAAABVgiQoCAAAA" +
+           "AQAQAAAAQ2VydGlmaWNhdGVHcm91cAEBzwIALgBEzwIAAAAR/////wEB/////wAAAAAVYIkKAgAAAAEA" +
+           "DwAAAENlcnRpZmljYXRlVHlwZQEB0AIALgBE0AIAAAAR/////wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the CertificateGroup Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<NodeId> CertificateGroup
         {
             get
@@ -3028,9 +2934,7 @@ namespace Opc.Ua.Gds
             }
         }
 
-        /// <summary>
-        /// A description for the CertificateType Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<NodeId> CertificateType
         {
             get

@@ -1,8 +1,8 @@
 /* ========================================================================
- * Copyright (c) 2005-2016 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
- *
+ * 
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
  * files (the "Software"), to deal in the Software without
@@ -11,7 +11,7 @@
  * copies of the Software, and to permit persons to whom the
  * Software is furnished to do so, subject to the following
  * conditions:
- *
+ * 
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
@@ -30,7 +30,6 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Reflection;
 using System.Xml;
 using System.Runtime.Serialization;
 using Opc.Ua;
@@ -40,7 +39,7 @@ namespace Opc.Ua.Gds
     #region ApplicationRecordDataType Class
     #if (!OPCUA_EXCLUDE_ApplicationRecordDataType)
     /// <summary>
-    /// A description for the ApplicationRecordDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -81,9 +80,7 @@ namespace Opc.Ua.Gds
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ApplicationId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ApplicationId", IsRequired = false, Order = 1)]
         public NodeId ApplicationId
         {
@@ -91,9 +88,7 @@ namespace Opc.Ua.Gds
             set { m_applicationId = value; }
         }
 
-        /// <summary>
-        /// A description for the ApplicationUri field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ApplicationUri", IsRequired = false, Order = 2)]
         public string ApplicationUri
         {
@@ -101,9 +96,7 @@ namespace Opc.Ua.Gds
             set { m_applicationUri = value; }
         }
 
-        /// <summary>
-        /// A description for the ApplicationType field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ApplicationType", IsRequired = false, Order = 3)]
         public ApplicationType ApplicationType
         {
@@ -112,7 +105,7 @@ namespace Opc.Ua.Gds
         }
 
         /// <summary>
-        /// A description for the ApplicationNames field.
+        /// 
         /// </summary>
         [DataMember(Name = "ApplicationNames", IsRequired = false, Order = 4)]
         public LocalizedTextCollection ApplicationNames
@@ -133,9 +126,7 @@ namespace Opc.Ua.Gds
             }
         }
 
-        /// <summary>
-        /// A description for the ProductUri field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ProductUri", IsRequired = false, Order = 5)]
         public string ProductUri
         {
@@ -144,7 +135,7 @@ namespace Opc.Ua.Gds
         }
 
         /// <summary>
-        /// A description for the DiscoveryUrls field.
+        /// 
         /// </summary>
         [DataMember(Name = "DiscoveryUrls", IsRequired = false, Order = 6)]
         public StringCollection DiscoveryUrls
@@ -166,7 +157,7 @@ namespace Opc.Ua.Gds
         }
 
         /// <summary>
-        /// A description for the ServerCapabilities field.
+        /// 
         /// </summary>
         [DataMember(Name = "ServerCapabilities", IsRequired = false, Order = 7)]
         public StringCollection ServerCapabilities
@@ -265,10 +256,18 @@ namespace Opc.Ua.Gds
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ApplicationRecordDataType clone = (ApplicationRecordDataType)this.MemberwiseClone();
+            return (ApplicationRecordDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ApplicationRecordDataType clone = (ApplicationRecordDataType)base.MemberwiseClone();
 
             clone.m_applicationId = (NodeId)Utils.Clone(this.m_applicationId);
             clone.m_applicationUri = (string)Utils.Clone(this.m_applicationUri);
@@ -300,7 +299,11 @@ namespace Opc.Ua.Gds
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfApplicationRecordDataType", Namespace = Opc.Ua.Gds.Namespaces.OpcUaGdsXsd, ItemName = "ApplicationRecordDataType")]
+    #if !NET_STANDARD
     public partial class ApplicationRecordDataTypeCollection : List<ApplicationRecordDataType>, ICloneable
+    #else
+    public partial class ApplicationRecordDataTypeCollection : List<ApplicationRecordDataType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -347,11 +350,20 @@ namespace Opc.Ua.Gds
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ApplicationRecordDataTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ApplicationRecordDataTypeCollection clone = new ApplicationRecordDataTypeCollection(this.Count);
 
@@ -362,7 +374,6 @@ namespace Opc.Ua.Gds
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif

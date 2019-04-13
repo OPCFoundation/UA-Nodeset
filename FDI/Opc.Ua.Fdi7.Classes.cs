@@ -1,8 +1,8 @@
 /* ========================================================================
- * Copyright (c) 2005-2016 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
- *
+ * 
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
  * files (the "Software"), to deal in the Software without
@@ -11,7 +11,7 @@
  * copies of the Software, and to permit persons to whom the
  * Software is furnished to do so, subject to the following
  * conditions:
- *
+ * 
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
@@ -30,7 +30,6 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Reflection;
 using System.Xml;
 using System.Runtime.Serialization;
 using Opc.Ua.Di;
@@ -71,6 +70,15 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -138,6 +146,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -199,6 +216,15 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -266,6 +292,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -327,6 +362,15 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -394,6 +438,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -455,6 +508,15 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -522,6 +584,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -540,9 +611,7 @@ namespace Opc.Ua.Fdi7
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ProtocolIdentifier Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> ProtocolIdentifier
         {
             get
@@ -672,6 +741,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -713,9 +791,7 @@ namespace Opc.Ua.Fdi7
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Address Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<byte> Address
         {
             get
@@ -734,9 +810,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the OrdinalNumber Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<int> OrdinalNumber
         {
             get
@@ -755,9 +829,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the SIFConnection Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<bool> SIFConnection
         {
             get
@@ -941,6 +1013,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -972,9 +1053,7 @@ namespace Opc.Ua.Fdi7
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Address Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<byte[]> Address
         {
             get
@@ -993,9 +1072,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the OrdinalNumber Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<int> OrdinalNumber
         {
             get
@@ -1152,6 +1229,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -1171,9 +1257,7 @@ namespace Opc.Ua.Fdi7
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Address Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<byte> Address
         {
             get
@@ -1303,6 +1387,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -1325,9 +1418,7 @@ namespace Opc.Ua.Fdi7
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the MAC Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<byte[]> MAC
         {
             get
@@ -1346,9 +1437,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the IPv4 Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<byte[]> IPv4
         {
             get
@@ -1367,9 +1456,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the DNSNAME Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> DNSNAME
         {
             get
@@ -1388,9 +1475,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the VALID Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<bool> VALID
         {
             get
@@ -1601,6 +1686,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -1675,9 +1769,7 @@ namespace Opc.Ua.Fdi7
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the DevAddr Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<byte[]> DevAddr
         {
             get
@@ -1696,9 +1788,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the DevMfg Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<ushort> DevMfg
         {
             get
@@ -1717,9 +1807,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the DevType Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<ushort> DevType
         {
             get
@@ -1738,9 +1826,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the DevRev Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<ushort> DevRev
         {
             get
@@ -1759,9 +1845,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the DevTag Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> DevTag
         {
             get
@@ -1780,9 +1864,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the DevPollAddr Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<byte> DevPollAddr
         {
             get
@@ -2047,6 +2129,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -2121,9 +2212,7 @@ namespace Opc.Ua.Fdi7
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the DevAddr Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<byte[]> DevAddr
         {
             get
@@ -2142,9 +2231,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the DevMfg Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<ushort> DevMfg
         {
             get
@@ -2163,9 +2250,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the DevType Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<ushort> DevType
         {
             get
@@ -2184,9 +2269,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the DevRev Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<ushort> DevRev
         {
             get
@@ -2205,9 +2288,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the DevTag Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> DevTag
         {
             get
@@ -2226,9 +2307,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the DevPollAddr Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<byte> DevPollAddr
         {
             get
@@ -2493,6 +2572,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -2567,9 +2655,7 @@ namespace Opc.Ua.Fdi7
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the DevAddr Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<byte[]> DevAddr
         {
             get
@@ -2588,9 +2674,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the DevMfg Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<ushort> DevMfg
         {
             get
@@ -2609,9 +2693,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the DevType Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<ushort> DevType
         {
             get
@@ -2630,9 +2712,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the DevRev Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<ushort> DevRev
         {
             get
@@ -2651,9 +2731,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the DevTag Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> DevTag
         {
             get
@@ -2672,9 +2750,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the DevPollAddr Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<byte> DevPollAddr
         {
             get
@@ -2939,6 +3015,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -3013,9 +3098,7 @@ namespace Opc.Ua.Fdi7
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the IPAddress Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<byte[]> IPAddress
         {
             get
@@ -3034,9 +3117,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the DevMfg Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<uint> DevMfg
         {
             get
@@ -3055,9 +3136,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the DevType Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<ushort> DevType
         {
             get
@@ -3076,9 +3155,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the DevRev Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<ushort> DevRev
         {
             get
@@ -3097,9 +3174,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the DevTag Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> DevTag
         {
             get
@@ -3118,9 +3193,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the DevPollAddr Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<byte> DevPollAddr
         {
             get
@@ -3385,6 +3458,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -3405,9 +3487,7 @@ namespace Opc.Ua.Fdi7
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Address Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<byte[]> Address
         {
             get
@@ -3426,9 +3506,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the ProtocolIdentifier Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> ProtocolIdentifier
         {
             get
@@ -3619,36 +3697,31 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            object serviceError = (object)outputArguments[0];
+            object serviceError = (object)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     ref serviceError);
             }
 
-            outputArguments[0] = serviceError;
+            _outputArguments[0] = serviceError;
 
             return result;
         }
@@ -3740,36 +3813,31 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            object serviceError = (object)outputArguments[0];
+            object serviceError = (object)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     ref serviceError);
             }
 
-            outputArguments[0] = serviceError;
+            _outputArguments[0] = serviceError;
 
             return result;
         }
@@ -3864,37 +3932,32 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string moduleTypeName = (string)inputArguments[0];
-            string instanceName = (string)inputArguments[1];
-            string instanceLabel = (string)inputArguments[2];
+            string moduleTypeName = (string)_inputArguments[0];
+            string instanceName = (string)_inputArguments[1];
+            string instanceLabel = (string)_inputArguments[2];
 
-            NodeId instanceNodeId = (NodeId)outputArguments[0];
-            object serviceError = (object)outputArguments[1];
+            NodeId instanceNodeId = (NodeId)_outputArguments[0];
+            object serviceError = (object)_outputArguments[1];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     moduleTypeName,
                     instanceName,
                     instanceLabel,
@@ -3902,8 +3965,8 @@ namespace Opc.Ua.Fdi7
                     ref serviceError);
             }
 
-            outputArguments[0] = instanceNodeId;
-            outputArguments[1] = serviceError;
+            _outputArguments[0] = instanceNodeId;
+            _outputArguments[1] = serviceError;
 
             return result;
         }
@@ -4000,39 +4063,34 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            NodeId moduleNodeId = (NodeId)inputArguments[0];
+            NodeId moduleNodeId = (NodeId)_inputArguments[0];
 
-            object serviceError = (object)outputArguments[0];
+            object serviceError = (object)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     moduleNodeId,
                     ref serviceError);
             }
 
-            outputArguments[0] = serviceError;
+            _outputArguments[0] = serviceError;
 
             return result;
         }
@@ -4088,6 +4146,15 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -4153,9 +4220,7 @@ namespace Opc.Ua.Fdi7
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the SubDevices Object.
-        /// </summary>
+        /// <remarks />
         public FolderState SubDevices
         {
             get
@@ -4319,39 +4384,34 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            XmlElement topologyScanResult = (XmlElement)outputArguments[0];
-            object serviceError = (object)outputArguments[1];
+            XmlElement topologyScanResult = (XmlElement)_outputArguments[0];
+            object serviceError = (object)_outputArguments[1];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     ref topologyScanResult,
                     ref serviceError);
             }
 
-            outputArguments[0] = topologyScanResult;
-            outputArguments[1] = serviceError;
+            _outputArguments[0] = topologyScanResult;
+            _outputArguments[1] = serviceError;
 
             return result;
         }
@@ -4444,36 +4504,31 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            object serviceError = (object)outputArguments[0];
+            object serviceError = (object)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     ref serviceError);
             }
 
-            outputArguments[0] = serviceError;
+            _outputArguments[0] = serviceError;
 
             return result;
         }
@@ -4570,40 +4625,35 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string oPERATION = (string)inputArguments[0];
-            ushort linkId = (ushort)inputArguments[1];
-            byte oldAddress = (byte)inputArguments[2];
-            byte newAddress = (byte)inputArguments[3];
-            string newPDTag = (string)inputArguments[4];
-            uint serviceId = (uint)inputArguments[5];
+            string oPERATION = (string)_inputArguments[0];
+            ushort linkId = (ushort)_inputArguments[1];
+            byte oldAddress = (byte)_inputArguments[2];
+            byte newAddress = (byte)_inputArguments[3];
+            string newPDTag = (string)_inputArguments[4];
+            uint serviceId = (uint)_inputArguments[5];
 
-            uint delayForNextCall = (uint)outputArguments[0];
-            object serviceError = (object)outputArguments[1];
+            uint delayForNextCall = (uint)_outputArguments[0];
+            object serviceError = (object)_outputArguments[1];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     oPERATION,
                     linkId,
                     oldAddress,
@@ -4614,8 +4664,8 @@ namespace Opc.Ua.Fdi7
                     ref serviceError);
             }
 
-            outputArguments[0] = delayForNextCall;
-            outputArguments[1] = serviceError;
+            _outputArguments[0] = delayForNextCall;
+            _outputArguments[1] = serviceError;
 
             return result;
         }
@@ -4717,37 +4767,32 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string oPERATION = (string)inputArguments[0];
-            string newPDTag = (string)inputArguments[1];
-            uint serviceId = (uint)inputArguments[2];
+            string oPERATION = (string)_inputArguments[0];
+            string newPDTag = (string)_inputArguments[1];
+            uint serviceId = (uint)_inputArguments[2];
 
-            uint delayForNextCall = (uint)outputArguments[0];
-            object serviceError = (object)outputArguments[1];
+            uint delayForNextCall = (uint)_outputArguments[0];
+            object serviceError = (object)_outputArguments[1];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     oPERATION,
                     newPDTag,
                     serviceId,
@@ -4755,8 +4800,8 @@ namespace Opc.Ua.Fdi7
                     ref serviceError);
             }
 
-            outputArguments[0] = delayForNextCall;
-            outputArguments[1] = serviceError;
+            _outputArguments[0] = delayForNextCall;
+            _outputArguments[1] = serviceError;
 
             return result;
         }
@@ -4854,41 +4899,36 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte oldAddress = (byte)inputArguments[0];
-            byte newAddress = (byte)inputArguments[1];
+            byte oldAddress = (byte)_inputArguments[0];
+            byte newAddress = (byte)_inputArguments[1];
 
-            object serviceError = (object)outputArguments[0];
+            object serviceError = (object)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     oldAddress,
                     newAddress,
                     ref serviceError);
             }
 
-            outputArguments[0] = serviceError;
+            _outputArguments[0] = serviceError;
 
             return result;
         }
@@ -4985,38 +5025,33 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] mAC = (byte[])inputArguments[0];
-            byte[] iP = (byte[])inputArguments[1];
-            string dNSNAME = (string)inputArguments[2];
-            byte[] subnetMask = (byte[])inputArguments[3];
-            byte[] gateway = (byte[])inputArguments[4];
+            byte[] mAC = (byte[])_inputArguments[0];
+            byte[] iP = (byte[])_inputArguments[1];
+            string dNSNAME = (string)_inputArguments[2];
+            byte[] subnetMask = (byte[])_inputArguments[3];
+            byte[] gateway = (byte[])_inputArguments[4];
 
-            object serviceError = (object)outputArguments[0];
+            object serviceError = (object)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     mAC,
                     iP,
                     dNSNAME,
@@ -5025,7 +5060,7 @@ namespace Opc.Ua.Fdi7
                     ref serviceError);
             }
 
-            outputArguments[0] = serviceError;
+            _outputArguments[0] = serviceError;
 
             return result;
         }
@@ -5124,41 +5159,36 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte oldPollAddress = (byte)inputArguments[0];
-            byte newPollAddress = (byte)inputArguments[1];
+            byte oldPollAddress = (byte)_inputArguments[0];
+            byte newPollAddress = (byte)_inputArguments[1];
 
-            object serviceError = (object)outputArguments[0];
+            object serviceError = (object)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     oldPollAddress,
                     newPollAddress,
                     ref serviceError);
             }
 
-            outputArguments[0] = serviceError;
+            _outputArguments[0] = serviceError;
 
             return result;
         }
@@ -5254,41 +5284,36 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] oldAddress = (byte[])inputArguments[0];
-            byte[] newAddress = (byte[])inputArguments[1];
+            byte[] oldAddress = (byte[])_inputArguments[0];
+            byte[] newAddress = (byte[])_inputArguments[1];
 
-            object serviceError = (object)outputArguments[0];
+            object serviceError = (object)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     oldAddress,
                     newAddress,
                     ref serviceError);
             }
 
-            outputArguments[0] = serviceError;
+            _outputArguments[0] = serviceError;
 
             return result;
         }
@@ -5345,6 +5370,15 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -5471,6 +5505,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -5570,9 +5613,7 @@ namespace Opc.Ua.Fdi7
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ServiceProvider Object.
-        /// </summary>
+        /// <remarks />
         public ServerCommunicationFFH1ServiceState ServiceProvider
         {
             get
@@ -5702,6 +5743,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -5797,9 +5847,7 @@ namespace Opc.Ua.Fdi7
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ServiceProvider Object.
-        /// </summary>
+        /// <remarks />
         public ServerCommunicationFFHSEServiceState ServiceProvider
         {
             get
@@ -5929,6 +5977,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -6019,9 +6076,7 @@ namespace Opc.Ua.Fdi7
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ServiceProvider Object.
-        /// </summary>
+        /// <remarks />
         public ServerCommunicationPROFIBUSServiceState ServiceProvider
         {
             get
@@ -6151,6 +6206,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -6245,9 +6309,7 @@ namespace Opc.Ua.Fdi7
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ServiceProvider Object.
-        /// </summary>
+        /// <remarks />
         public ServerCommunicationPROFINETServiceState ServiceProvider
         {
             get
@@ -6377,6 +6439,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -6465,9 +6536,7 @@ namespace Opc.Ua.Fdi7
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ServiceProvider Object.
-        /// </summary>
+        /// <remarks />
         public ServerCommunicationHARTServiceState ServiceProvider
         {
             get
@@ -6597,6 +6666,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -6668,9 +6746,7 @@ namespace Opc.Ua.Fdi7
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ServiceProvider Object.
-        /// </summary>
+        /// <remarks />
         public ServerCommunicationISA100_WirelessServiceState ServiceProvider
         {
             get
@@ -6800,6 +6876,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -6891,9 +6976,7 @@ namespace Opc.Ua.Fdi7
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ProtocolIdentifier Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> ProtocolIdentifier
         {
             get
@@ -6912,9 +6995,7 @@ namespace Opc.Ua.Fdi7
             }
         }
 
-        /// <summary>
-        /// A description for the ServiceProvider Object.
-        /// </summary>
+        /// <remarks />
         public ServerCommunicationGENERICServiceState ServiceProvider
         {
             get
@@ -7110,40 +7191,35 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] communicationRelationId = (byte[])inputArguments[0];
-            ushort linkId = (ushort)inputArguments[1];
-            byte address = (byte)inputArguments[2];
-            int ordinalNumber = (int)inputArguments[3];
-            bool sIFConnection = (bool)inputArguments[4];
-            uint serviceId = (uint)inputArguments[5];
+            byte[] communicationRelationId = (byte[])_inputArguments[0];
+            ushort linkId = (ushort)_inputArguments[1];
+            byte address = (byte)_inputArguments[2];
+            int ordinalNumber = (int)_inputArguments[3];
+            bool sIFConnection = (bool)_inputArguments[4];
+            uint serviceId = (uint)_inputArguments[5];
 
-            uint delayForNextCall = (uint)outputArguments[0];
-            object serviceError = (object)outputArguments[1];
+            uint delayForNextCall = (uint)_outputArguments[0];
+            object serviceError = (object)_outputArguments[1];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     communicationRelationId,
                     linkId,
                     address,
@@ -7154,8 +7230,8 @@ namespace Opc.Ua.Fdi7
                     ref serviceError);
             }
 
-            outputArguments[0] = delayForNextCall;
-            outputArguments[1] = serviceError;
+            _outputArguments[0] = delayForNextCall;
+            _outputArguments[1] = serviceError;
 
             return result;
         }
@@ -7258,38 +7334,33 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] communicationRelationId = (byte[])inputArguments[0];
-            byte[] address = (byte[])inputArguments[1];
-            int ordinalNumber = (int)inputArguments[2];
-            uint serviceId = (uint)inputArguments[3];
+            byte[] communicationRelationId = (byte[])_inputArguments[0];
+            byte[] address = (byte[])_inputArguments[1];
+            int ordinalNumber = (int)_inputArguments[2];
+            uint serviceId = (uint)_inputArguments[3];
 
-            uint delayForNextCall = (uint)outputArguments[0];
-            object serviceError = (object)outputArguments[1];
+            uint delayForNextCall = (uint)_outputArguments[0];
+            object serviceError = (object)_outputArguments[1];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     communicationRelationId,
                     address,
                     ordinalNumber,
@@ -7298,8 +7369,8 @@ namespace Opc.Ua.Fdi7
                     ref serviceError);
             }
 
-            outputArguments[0] = delayForNextCall;
-            outputArguments[1] = serviceError;
+            _outputArguments[0] = delayForNextCall;
+            _outputArguments[1] = serviceError;
 
             return result;
         }
@@ -7399,43 +7470,38 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] communicationRelationId = (byte[])inputArguments[0];
-            byte address = (byte)inputArguments[1];
-            ushort manufacturerId = (ushort)inputArguments[2];
+            byte[] communicationRelationId = (byte[])_inputArguments[0];
+            byte address = (byte)_inputArguments[1];
+            ushort manufacturerId = (ushort)_inputArguments[2];
 
-            object serviceError = (object)outputArguments[0];
+            object serviceError = (object)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     communicationRelationId,
                     address,
                     manufacturerId,
                     ref serviceError);
             }
 
-            outputArguments[0] = serviceError;
+            _outputArguments[0] = serviceError;
 
             return result;
         }
@@ -7533,37 +7599,32 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] communicationRelationId = (byte[])inputArguments[0];
-            string dNSNAME = (string)inputArguments[1];
-            ushort deviceID = (ushort)inputArguments[2];
-            ushort vendorID = (ushort)inputArguments[3];
+            byte[] communicationRelationId = (byte[])_inputArguments[0];
+            string dNSNAME = (string)_inputArguments[1];
+            ushort deviceID = (ushort)_inputArguments[2];
+            ushort vendorID = (ushort)_inputArguments[3];
 
-            object serviceError = (object)outputArguments[0];
+            object serviceError = (object)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     communicationRelationId,
                     dNSNAME,
                     deviceID,
@@ -7571,7 +7632,7 @@ namespace Opc.Ua.Fdi7
                     ref serviceError);
             }
 
-            outputArguments[0] = serviceError;
+            _outputArguments[0] = serviceError;
 
             return result;
         }
@@ -7669,41 +7730,36 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] communicationRelationId = (byte[])inputArguments[0];
-            byte[] longAddress = (byte[])inputArguments[1];
+            byte[] communicationRelationId = (byte[])_inputArguments[0];
+            byte[] longAddress = (byte[])_inputArguments[1];
 
-            object serviceError = (object)outputArguments[0];
+            object serviceError = (object)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     communicationRelationId,
                     longAddress,
                     ref serviceError);
             }
 
-            outputArguments[0] = serviceError;
+            _outputArguments[0] = serviceError;
 
             return result;
         }
@@ -7800,37 +7856,32 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] communicationRelationId = (byte[])inputArguments[0];
-            byte[] iPAddress = (byte[])inputArguments[1];
-            uint serviceId = (uint)inputArguments[2];
+            byte[] communicationRelationId = (byte[])_inputArguments[0];
+            byte[] iPAddress = (byte[])_inputArguments[1];
+            uint serviceId = (uint)_inputArguments[2];
 
-            uint delayForNextCall = (uint)outputArguments[0];
-            object serviceError = (object)outputArguments[1];
+            uint delayForNextCall = (uint)_outputArguments[0];
+            object serviceError = (object)_outputArguments[1];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     communicationRelationId,
                     iPAddress,
                     serviceId,
@@ -7838,8 +7889,8 @@ namespace Opc.Ua.Fdi7
                     ref serviceError);
             }
 
-            outputArguments[0] = delayForNextCall;
-            outputArguments[1] = serviceError;
+            _outputArguments[0] = delayForNextCall;
+            _outputArguments[1] = serviceError;
 
             return result;
         }
@@ -7937,41 +7988,36 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] communicationRelationId = (byte[])inputArguments[0];
-            byte[] address = (byte[])inputArguments[1];
+            byte[] communicationRelationId = (byte[])_inputArguments[0];
+            byte[] address = (byte[])_inputArguments[1];
 
-            object serviceError = (object)outputArguments[0];
+            object serviceError = (object)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     communicationRelationId,
                     address,
                     ref serviceError);
             }
 
-            outputArguments[0] = serviceError;
+            _outputArguments[0] = serviceError;
 
             return result;
         }
@@ -8066,39 +8112,34 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] communicationRelationId = (byte[])inputArguments[0];
+            byte[] communicationRelationId = (byte[])_inputArguments[0];
 
-            object serviceError = (object)outputArguments[0];
+            object serviceError = (object)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     communicationRelationId,
                     ref serviceError);
             }
 
-            outputArguments[0] = serviceError;
+            _outputArguments[0] = serviceError;
 
             return result;
         }
@@ -8197,42 +8238,37 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] communicationRelationId = (byte[])inputArguments[0];
-            string oPERATION = (string)inputArguments[1];
-            string blockTag = (string)inputArguments[2];
-            uint iNDEX = (uint)inputArguments[3];
-            uint sUB_INDEX = (uint)inputArguments[4];
-            byte[] writeData = (byte[])inputArguments[5];
-            uint serviceId = (uint)inputArguments[6];
+            byte[] communicationRelationId = (byte[])_inputArguments[0];
+            string oPERATION = (string)_inputArguments[1];
+            string blockTag = (string)_inputArguments[2];
+            uint iNDEX = (uint)_inputArguments[3];
+            uint sUB_INDEX = (uint)_inputArguments[4];
+            byte[] writeData = (byte[])_inputArguments[5];
+            uint serviceId = (uint)_inputArguments[6];
 
-            byte[] readData = (byte[])outputArguments[0];
-            uint delayForNextCall = (uint)outputArguments[1];
-            object serviceError = (object)outputArguments[2];
+            byte[] readData = (byte[])_outputArguments[0];
+            uint delayForNextCall = (uint)_outputArguments[1];
+            object serviceError = (object)_outputArguments[2];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     communicationRelationId,
                     oPERATION,
                     blockTag,
@@ -8245,9 +8281,9 @@ namespace Opc.Ua.Fdi7
                     ref serviceError);
             }
 
-            outputArguments[0] = readData;
-            outputArguments[1] = delayForNextCall;
-            outputArguments[2] = serviceError;
+            _outputArguments[0] = readData;
+            _outputArguments[1] = delayForNextCall;
+            _outputArguments[2] = serviceError;
 
             return result;
         }
@@ -8354,42 +8390,37 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] communicationRelationId = (byte[])inputArguments[0];
-            string oPERATION = (string)inputArguments[1];
-            string blockTag = (string)inputArguments[2];
-            uint iNDEX = (uint)inputArguments[3];
-            uint sUB_INDEX = (uint)inputArguments[4];
-            byte[] writeData = (byte[])inputArguments[5];
-            uint serviceId = (uint)inputArguments[6];
+            byte[] communicationRelationId = (byte[])_inputArguments[0];
+            string oPERATION = (string)_inputArguments[1];
+            string blockTag = (string)_inputArguments[2];
+            uint iNDEX = (uint)_inputArguments[3];
+            uint sUB_INDEX = (uint)_inputArguments[4];
+            byte[] writeData = (byte[])_inputArguments[5];
+            uint serviceId = (uint)_inputArguments[6];
 
-            byte[] readData = (byte[])outputArguments[0];
-            uint delayForNextCall = (uint)outputArguments[1];
-            object serviceError = (object)outputArguments[2];
+            byte[] readData = (byte[])_outputArguments[0];
+            uint delayForNextCall = (uint)_outputArguments[1];
+            object serviceError = (object)_outputArguments[2];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     communicationRelationId,
                     oPERATION,
                     blockTag,
@@ -8402,9 +8433,9 @@ namespace Opc.Ua.Fdi7
                     ref serviceError);
             }
 
-            outputArguments[0] = readData;
-            outputArguments[1] = delayForNextCall;
-            outputArguments[2] = serviceError;
+            _outputArguments[0] = readData;
+            _outputArguments[1] = delayForNextCall;
+            _outputArguments[2] = serviceError;
 
             return result;
         }
@@ -8510,40 +8541,35 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] communicationRelationId = (byte[])inputArguments[0];
-            string oPERATION = (string)inputArguments[1];
-            byte sLOT = (byte)inputArguments[2];
-            byte iNDEX = (byte)inputArguments[3];
-            byte[] rEQUEST = (byte[])inputArguments[4];
+            byte[] communicationRelationId = (byte[])_inputArguments[0];
+            string oPERATION = (string)_inputArguments[1];
+            byte sLOT = (byte)_inputArguments[2];
+            byte iNDEX = (byte)_inputArguments[3];
+            byte[] rEQUEST = (byte[])_inputArguments[4];
 
-            byte[] rEPLY = (byte[])outputArguments[0];
-            byte[] rESPONSE_CODES = (byte[])outputArguments[1];
-            object serviceError = (object)outputArguments[2];
+            byte[] rEPLY = (byte[])_outputArguments[0];
+            byte[] rESPONSE_CODES = (byte[])_outputArguments[1];
+            object serviceError = (object)_outputArguments[2];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     communicationRelationId,
                     oPERATION,
                     sLOT,
@@ -8554,9 +8580,9 @@ namespace Opc.Ua.Fdi7
                     ref serviceError);
             }
 
-            outputArguments[0] = rEPLY;
-            outputArguments[1] = rESPONSE_CODES;
-            outputArguments[2] = serviceError;
+            _outputArguments[0] = rEPLY;
+            _outputArguments[1] = rESPONSE_CODES;
+            _outputArguments[2] = serviceError;
 
             return result;
         }
@@ -8661,42 +8687,37 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] communicationRelationId = (byte[])inputArguments[0];
-            string oPERATION = (string)inputArguments[1];
-            ushort sLOT = (ushort)inputArguments[2];
-            ushort sUBSLOT = (ushort)inputArguments[3];
-            ushort iNDEX = (ushort)inputArguments[4];
-            uint aPI = (uint)inputArguments[5];
-            byte[] rEQUEST = (byte[])inputArguments[6];
+            byte[] communicationRelationId = (byte[])_inputArguments[0];
+            string oPERATION = (string)_inputArguments[1];
+            ushort sLOT = (ushort)_inputArguments[2];
+            ushort sUBSLOT = (ushort)_inputArguments[3];
+            ushort iNDEX = (ushort)_inputArguments[4];
+            uint aPI = (uint)_inputArguments[5];
+            byte[] rEQUEST = (byte[])_inputArguments[6];
 
-            byte[] rEPLY = (byte[])outputArguments[0];
-            byte[] rESPONSE_CODES = (byte[])outputArguments[1];
-            object serviceError = (object)outputArguments[2];
+            byte[] rEPLY = (byte[])_outputArguments[0];
+            byte[] rESPONSE_CODES = (byte[])_outputArguments[1];
+            object serviceError = (object)_outputArguments[2];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     communicationRelationId,
                     oPERATION,
                     sLOT,
@@ -8709,9 +8730,9 @@ namespace Opc.Ua.Fdi7
                     ref serviceError);
             }
 
-            outputArguments[0] = rEPLY;
-            outputArguments[1] = rESPONSE_CODES;
-            outputArguments[2] = serviceError;
+            _outputArguments[0] = rEPLY;
+            _outputArguments[1] = rESPONSE_CODES;
+            _outputArguments[2] = serviceError;
 
             return result;
         }
@@ -8815,37 +8836,32 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] communicationRelationId = (byte[])inputArguments[0];
-            ushort command = (ushort)inputArguments[1];
-            byte[] request = (byte[])inputArguments[2];
+            byte[] communicationRelationId = (byte[])_inputArguments[0];
+            ushort command = (ushort)_inputArguments[1];
+            byte[] request = (byte[])_inputArguments[2];
 
-            byte[] reply = (byte[])outputArguments[0];
-            object serviceError = (object)outputArguments[1];
+            byte[] reply = (byte[])_outputArguments[0];
+            object serviceError = (object)_outputArguments[1];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     communicationRelationId,
                     command,
                     request,
@@ -8853,8 +8869,8 @@ namespace Opc.Ua.Fdi7
                     ref serviceError);
             }
 
-            outputArguments[0] = reply;
-            outputArguments[1] = serviceError;
+            _outputArguments[0] = reply;
+            _outputArguments[1] = serviceError;
 
             return result;
         }
@@ -8956,42 +8972,37 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] communicationRelationId = (byte[])inputArguments[0];
-            string oPERATION = (string)inputArguments[1];
-            ushort appID = (ushort)inputArguments[2];
-            ushort objectID = (ushort)inputArguments[3];
-            ushort attrOrMethID = (ushort)inputArguments[4];
-            uint sUB_INDEX = (uint)inputArguments[5];
-            byte[] writeData = (byte[])inputArguments[6];
-            uint requestId = (uint)inputArguments[7];
+            byte[] communicationRelationId = (byte[])_inputArguments[0];
+            string oPERATION = (string)_inputArguments[1];
+            ushort appID = (ushort)_inputArguments[2];
+            ushort objectID = (ushort)_inputArguments[3];
+            ushort attrOrMethID = (ushort)_inputArguments[4];
+            uint sUB_INDEX = (uint)_inputArguments[5];
+            byte[] writeData = (byte[])_inputArguments[6];
+            uint requestId = (uint)_inputArguments[7];
 
-            byte[] readData = (byte[])outputArguments[0];
-            object serviceError = (object)outputArguments[1];
+            byte[] readData = (byte[])_outputArguments[0];
+            object serviceError = (object)_outputArguments[1];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     communicationRelationId,
                     oPERATION,
                     appID,
@@ -9004,8 +9015,8 @@ namespace Opc.Ua.Fdi7
                     ref serviceError);
             }
 
-            outputArguments[0] = readData;
-            outputArguments[1] = serviceError;
+            _outputArguments[0] = readData;
+            _outputArguments[1] = serviceError;
 
             return result;
         }
@@ -9111,40 +9122,35 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] communicationRelationId = (byte[])inputArguments[0];
-            string header = (string)inputArguments[1];
-            byte[] requestData = (byte[])inputArguments[2];
-            EddDataTypeInfo[] requestDataTypes = (EddDataTypeInfo[])ExtensionObject.ToArray(inputArguments[3], typeof(EddDataTypeInfo));
-            EddDataTypeInfo[] responseDataTypes = (EddDataTypeInfo[])ExtensionObject.ToArray(inputArguments[4], typeof(EddDataTypeInfo));
+            byte[] communicationRelationId = (byte[])_inputArguments[0];
+            string header = (string)_inputArguments[1];
+            byte[] requestData = (byte[])_inputArguments[2];
+            EddDataTypeInfo[] requestDataTypes = (EddDataTypeInfo[])ExtensionObject.ToArray(_inputArguments[3], typeof(EddDataTypeInfo));
+            EddDataTypeInfo[] responseDataTypes = (EddDataTypeInfo[])ExtensionObject.ToArray(_inputArguments[4], typeof(EddDataTypeInfo));
 
-            byte[] responseData = (byte[])outputArguments[0];
-            byte[] rESPONSE_CODES = (byte[])outputArguments[1];
-            object serviceError = (object)outputArguments[2];
+            byte[] responseData = (byte[])_outputArguments[0];
+            byte[] rESPONSE_CODES = (byte[])_outputArguments[1];
+            object serviceError = (object)_outputArguments[2];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     communicationRelationId,
                     header,
                     requestData,
@@ -9155,9 +9161,9 @@ namespace Opc.Ua.Fdi7
                     ref serviceError);
             }
 
-            outputArguments[0] = responseData;
-            outputArguments[1] = rESPONSE_CODES;
-            outputArguments[2] = serviceError;
+            _outputArguments[0] = responseData;
+            _outputArguments[1] = rESPONSE_CODES;
+            _outputArguments[2] = serviceError;
 
             return result;
         }
@@ -9261,40 +9267,35 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] communicationRelationId = (byte[])inputArguments[0];
-            uint serviceId = (uint)inputArguments[1];
+            byte[] communicationRelationId = (byte[])_inputArguments[0];
+            uint serviceId = (uint)_inputArguments[1];
 
-            string blockTag = (string)outputArguments[0];
-            byte[] alarmEventData = (byte[])outputArguments[1];
-            NodeId alarmEventType = (NodeId)outputArguments[2];
-            DateTime timeStamp = (DateTime)outputArguments[3];
-            uint delayForNextCall = (uint)outputArguments[4];
-            object serviceError = (object)outputArguments[5];
+            string blockTag = (string)_outputArguments[0];
+            byte[] alarmEventData = (byte[])_outputArguments[1];
+            NodeId alarmEventType = (NodeId)_outputArguments[2];
+            DateTime timeStamp = (DateTime)_outputArguments[3];
+            uint delayForNextCall = (uint)_outputArguments[4];
+            object serviceError = (object)_outputArguments[5];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     communicationRelationId,
                     serviceId,
                     ref blockTag,
@@ -9305,12 +9306,12 @@ namespace Opc.Ua.Fdi7
                     ref serviceError);
             }
 
-            outputArguments[0] = blockTag;
-            outputArguments[1] = alarmEventData;
-            outputArguments[2] = alarmEventType;
-            outputArguments[3] = timeStamp;
-            outputArguments[4] = delayForNextCall;
-            outputArguments[5] = serviceError;
+            _outputArguments[0] = blockTag;
+            _outputArguments[1] = alarmEventData;
+            _outputArguments[2] = alarmEventType;
+            _outputArguments[3] = timeStamp;
+            _outputArguments[4] = delayForNextCall;
+            _outputArguments[5] = serviceError;
 
             return result;
         }
@@ -9414,40 +9415,35 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] communicationRelationId = (byte[])inputArguments[0];
-            uint serviceId = (uint)inputArguments[1];
+            byte[] communicationRelationId = (byte[])_inputArguments[0];
+            uint serviceId = (uint)_inputArguments[1];
 
-            string blockTag = (string)outputArguments[0];
-            byte[] alarmEventData = (byte[])outputArguments[1];
-            NodeId alarmEventType = (NodeId)outputArguments[2];
-            DateTime timeStamp = (DateTime)outputArguments[3];
-            uint delayForNextCall = (uint)outputArguments[4];
-            object serviceError = (object)outputArguments[5];
+            string blockTag = (string)_outputArguments[0];
+            byte[] alarmEventData = (byte[])_outputArguments[1];
+            NodeId alarmEventType = (NodeId)_outputArguments[2];
+            DateTime timeStamp = (DateTime)_outputArguments[3];
+            uint delayForNextCall = (uint)_outputArguments[4];
+            object serviceError = (object)_outputArguments[5];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     communicationRelationId,
                     serviceId,
                     ref blockTag,
@@ -9458,12 +9454,12 @@ namespace Opc.Ua.Fdi7
                     ref serviceError);
             }
 
-            outputArguments[0] = blockTag;
-            outputArguments[1] = alarmEventData;
-            outputArguments[2] = alarmEventType;
-            outputArguments[3] = timeStamp;
-            outputArguments[4] = delayForNextCall;
-            outputArguments[5] = serviceError;
+            _outputArguments[0] = blockTag;
+            _outputArguments[1] = alarmEventData;
+            _outputArguments[2] = alarmEventType;
+            _outputArguments[3] = timeStamp;
+            _outputArguments[4] = delayForNextCall;
+            _outputArguments[5] = serviceError;
 
             return result;
         }
@@ -9565,37 +9561,32 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] communicationRelationId = (byte[])inputArguments[0];
+            byte[] communicationRelationId = (byte[])_inputArguments[0];
 
-            ushort command = (ushort)outputArguments[0];
-            byte[] reply = (byte[])outputArguments[1];
-            DateTime timeStamp = (DateTime)outputArguments[2];
-            object serviceError = (object)outputArguments[3];
+            ushort command = (ushort)_outputArguments[0];
+            byte[] reply = (byte[])_outputArguments[1];
+            DateTime timeStamp = (DateTime)_outputArguments[2];
+            object serviceError = (object)_outputArguments[3];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     communicationRelationId,
                     ref command,
                     ref reply,
@@ -9603,10 +9594,10 @@ namespace Opc.Ua.Fdi7
                     ref serviceError);
             }
 
-            outputArguments[0] = command;
-            outputArguments[1] = reply;
-            outputArguments[2] = timeStamp;
-            outputArguments[3] = serviceError;
+            _outputArguments[0] = command;
+            _outputArguments[1] = reply;
+            _outputArguments[2] = timeStamp;
+            _outputArguments[3] = serviceError;
 
             return result;
         }
@@ -9707,40 +9698,35 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            byte[] communicationRelationId = (byte[])inputArguments[0];
-            uint requestId = (uint)inputArguments[1];
+            byte[] communicationRelationId = (byte[])_inputArguments[0];
+            uint requestId = (uint)_inputArguments[1];
 
-            ushort appID = (ushort)outputArguments[0];
-            ushort objectID = (ushort)outputArguments[1];
-            byte[] alarmEventData = (byte[])outputArguments[2];
-            ushort alarmEventType = (ushort)outputArguments[3];
-            DateTime timeStamp = (DateTime)outputArguments[4];
-            object serviceError = (object)outputArguments[5];
+            ushort appID = (ushort)_outputArguments[0];
+            ushort objectID = (ushort)_outputArguments[1];
+            byte[] alarmEventData = (byte[])_outputArguments[2];
+            ushort alarmEventType = (ushort)_outputArguments[3];
+            DateTime timeStamp = (DateTime)_outputArguments[4];
+            object serviceError = (object)_outputArguments[5];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     communicationRelationId,
                     requestId,
                     ref appID,
@@ -9751,12 +9737,12 @@ namespace Opc.Ua.Fdi7
                     ref serviceError);
             }
 
-            outputArguments[0] = appID;
-            outputArguments[1] = objectID;
-            outputArguments[2] = alarmEventData;
-            outputArguments[3] = alarmEventType;
-            outputArguments[4] = timeStamp;
-            outputArguments[5] = serviceError;
+            _outputArguments[0] = appID;
+            _outputArguments[1] = objectID;
+            _outputArguments[2] = alarmEventData;
+            _outputArguments[3] = alarmEventType;
+            _outputArguments[4] = timeStamp;
+            _outputArguments[5] = serviceError;
 
             return result;
         }
@@ -9818,6 +9804,15 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -9904,6 +9899,15 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -10017,6 +10021,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -10126,6 +10139,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -10222,6 +10244,15 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -10325,6 +10356,15 @@ namespace Opc.Ua.Fdi7
         }
 
         /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
         /// Initializes the any option children defined for the instance.
         /// </summary>
         protected override void InitializeOptionalChildren(ISystemContext context)
@@ -10425,6 +10465,15 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>
@@ -10534,6 +10583,15 @@ namespace Opc.Ua.Fdi7
         {
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
         }
 
         /// <summary>

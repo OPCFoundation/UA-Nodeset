@@ -1,8 +1,8 @@
 /* ========================================================================
- * Copyright (c) 2005-2016 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
- *
+ * 
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
  * files (the "Software"), to deal in the Software without
@@ -11,7 +11,7 @@
  * copies of the Software, and to permit persons to whom the
  * Software is furnished to do so, subject to the following
  * conditions:
- *
+ * 
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
@@ -30,7 +30,6 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Reflection;
 using System.Xml;
 using System.Runtime.Serialization;
 
@@ -39,7 +38,7 @@ namespace Opc.Ua
     #region Enumeration Enumeration
     #if (!OPCUA_EXCLUDE_Enumeration)
     /// <summary>
-    /// Describes a value that is an enumerated DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -55,7 +54,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfEnumeration", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "Enumeration")]
+    #if !NET_STANDARD
     public partial class EnumerationCollection : List<Enumeration>, ICloneable
+    #else
+    public partial class EnumerationCollection : List<Enumeration>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -102,11 +105,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (EnumerationCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             EnumerationCollection clone = new EnumerationCollection(this.Count);
 
@@ -117,7 +129,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -126,28 +137,22 @@ namespace Opc.Ua
     #region NamingRuleType Enumeration
     #if (!OPCUA_EXCLUDE_NamingRuleType)
     /// <summary>
-    /// Describes a value that specifies the significance of the BrowseName for an instance declaration.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum NamingRuleType
     {
-        /// <summary>
-        /// The BrowseName must appear in all instances of the type.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Mandatory_1")]
         Mandatory = 1,
 
-        /// <summary>
-        /// The BrowseName may appear in an instance of the type.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Optional_2")]
         Optional = 2,
 
-        /// <summary>
-        /// The modelling rule defines a constraint and the BrowseName is not used in an instance of the type.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Constraint_3")]
         Constraint = 3,
     }
@@ -159,7 +164,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfNamingRuleType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "NamingRuleType")]
+    #if !NET_STANDARD
     public partial class NamingRuleTypeCollection : List<NamingRuleType>, ICloneable
+    #else
+    public partial class NamingRuleTypeCollection : List<NamingRuleType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -206,11 +215,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (NamingRuleTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             NamingRuleTypeCollection clone = new NamingRuleTypeCollection(this.Count);
 
@@ -221,7 +239,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -230,34 +247,26 @@ namespace Opc.Ua
     #region OpenFileMode Enumeration
     #if (!OPCUA_EXCLUDE_OpenFileMode)
     /// <summary>
-    /// A description for the OpenFileMode DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum OpenFileMode
     {
-        /// <summary>
-        /// A description for the Read field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Read_1")]
         Read = 1,
 
-        /// <summary>
-        /// A description for the Write field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Write_2")]
         Write = 2,
 
-        /// <summary>
-        /// A description for the EraseExisting field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "EraseExisting_4")]
         EraseExisting = 4,
 
-        /// <summary>
-        /// A description for the Append field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Append_8")]
         Append = 8,
     }
@@ -269,7 +278,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfOpenFileMode", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "OpenFileMode")]
+    #if !NET_STANDARD
     public partial class OpenFileModeCollection : List<OpenFileMode>, ICloneable
+    #else
+    public partial class OpenFileModeCollection : List<OpenFileMode>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -316,11 +329,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (OpenFileModeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             OpenFileModeCollection clone = new OpenFileModeCollection(this.Count);
 
@@ -331,7 +353,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -340,46 +361,34 @@ namespace Opc.Ua
     #region TrustListMasks Enumeration
     #if (!OPCUA_EXCLUDE_TrustListMasks)
     /// <summary>
-    /// A description for the TrustListMasks DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum TrustListMasks
     {
-        /// <summary>
-        /// A description for the None field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "None_0")]
         None = 0,
 
-        /// <summary>
-        /// A description for the TrustedCertificates field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "TrustedCertificates_1")]
         TrustedCertificates = 1,
 
-        /// <summary>
-        /// A description for the TrustedCrls field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "TrustedCrls_2")]
         TrustedCrls = 2,
 
-        /// <summary>
-        /// A description for the IssuerCertificates field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "IssuerCertificates_4")]
         IssuerCertificates = 4,
 
-        /// <summary>
-        /// A description for the IssuerCrls field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "IssuerCrls_8")]
         IssuerCrls = 8,
 
-        /// <summary>
-        /// A description for the All field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "All_15")]
         All = 15,
     }
@@ -389,7 +398,7 @@ namespace Opc.Ua
     #region TrustListDataType Class
     #if (!OPCUA_EXCLUDE_TrustListDataType)
     /// <summary>
-    /// A description for the TrustListDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -428,9 +437,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the SpecifiedLists field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SpecifiedLists", IsRequired = false, Order = 1)]
         public uint SpecifiedLists
         {
@@ -439,7 +446,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the TrustedCertificates field.
+        /// 
         /// </summary>
         [DataMember(Name = "TrustedCertificates", IsRequired = false, Order = 2)]
         public ByteStringCollection TrustedCertificates
@@ -461,7 +468,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the TrustedCrls field.
+        /// 
         /// </summary>
         [DataMember(Name = "TrustedCrls", IsRequired = false, Order = 3)]
         public ByteStringCollection TrustedCrls
@@ -483,7 +490,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the IssuerCertificates field.
+        /// 
         /// </summary>
         [DataMember(Name = "IssuerCertificates", IsRequired = false, Order = 4)]
         public ByteStringCollection IssuerCertificates
@@ -505,7 +512,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the IssuerCrls field.
+        /// 
         /// </summary>
         [DataMember(Name = "IssuerCrls", IsRequired = false, Order = 5)]
         public ByteStringCollection IssuerCrls
@@ -598,10 +605,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            TrustListDataType clone = (TrustListDataType)this.MemberwiseClone();
+            return (TrustListDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            TrustListDataType clone = (TrustListDataType)base.MemberwiseClone();
 
             clone.m_specifiedLists = (uint)Utils.Clone(this.m_specifiedLists);
             clone.m_trustedCertificates = (ByteStringCollection)Utils.Clone(this.m_trustedCertificates);
@@ -629,7 +644,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfTrustListDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "TrustListDataType")]
+    #if !NET_STANDARD
     public partial class TrustListDataTypeCollection : List<TrustListDataType>, ICloneable
+    #else
+    public partial class TrustListDataTypeCollection : List<TrustListDataType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -676,11 +695,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (TrustListDataTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             TrustListDataTypeCollection clone = new TrustListDataTypeCollection(this.Count);
 
@@ -691,7 +719,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -700,34 +727,26 @@ namespace Opc.Ua
     #region IdType Enumeration
     #if (!OPCUA_EXCLUDE_IdType)
     /// <summary>
-    /// The type of identifier used in a node id.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum IdType
     {
-        /// <summary>
-        /// The identifier is a numeric value. 0 is a null value.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Numeric_0")]
         Numeric = 0,
 
-        /// <summary>
-        /// The identifier is a string value. An empty string is a null value.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "String_1")]
         String = 1,
 
-        /// <summary>
-        /// The identifier is a 16 byte structure. 16 zero bytes is a null value.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Guid_2")]
         Guid = 2,
 
-        /// <summary>
-        /// The identifier is an array of bytes. A zero length array is a null value.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Opaque_3")]
         Opaque = 3,
     }
@@ -739,7 +758,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfIdType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "IdType")]
+    #if !NET_STANDARD
     public partial class IdTypeCollection : List<IdType>, ICloneable
+    #else
+    public partial class IdTypeCollection : List<IdType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -786,11 +809,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (IdTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             IdTypeCollection clone = new IdTypeCollection(this.Count);
 
@@ -801,7 +833,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -810,64 +841,46 @@ namespace Opc.Ua
     #region NodeClass Enumeration
     #if (!OPCUA_EXCLUDE_NodeClass)
     /// <summary>
-    /// A mask specifying the class of the node.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum NodeClass
     {
-        /// <summary>
-        /// No classes are selected.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Unspecified_0")]
         Unspecified = 0,
 
-        /// <summary>
-        /// The node is an object.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Object_1")]
         Object = 1,
 
-        /// <summary>
-        /// The node is a variable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Variable_2")]
         Variable = 2,
 
-        /// <summary>
-        /// The node is a method.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Method_4")]
         Method = 4,
 
-        /// <summary>
-        /// The node is an object type.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ObjectType_8")]
         ObjectType = 8,
 
-        /// <summary>
-        /// The node is an variable type.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "VariableType_16")]
         VariableType = 16,
 
-        /// <summary>
-        /// The node is a reference type.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ReferenceType_32")]
         ReferenceType = 32,
 
-        /// <summary>
-        /// The node is a data type.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DataType_64")]
         DataType = 64,
 
-        /// <summary>
-        /// The node is a view.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "View_128")]
         View = 128,
     }
@@ -877,7 +890,7 @@ namespace Opc.Ua
     #region Node Class
     #if (!OPCUA_EXCLUDE_Node)
     /// <summary>
-    /// Specifies the attributes which belong to all nodes.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -919,9 +932,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A unique identifier for the node.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NodeId", IsRequired = false, Order = 1)]
         public NodeId NodeId
         {
@@ -929,9 +940,7 @@ namespace Opc.Ua
             set { m_nodeId = value; }
         }
 
-        /// <summary>
-        /// The class of the node.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NodeClass", IsRequired = false, Order = 2)]
         public NodeClass NodeClass
         {
@@ -939,9 +948,7 @@ namespace Opc.Ua
             set { m_nodeClass = value; }
         }
 
-        /// <summary>
-        /// The browse name of the node.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "BrowseName", IsRequired = false, Order = 3)]
         public QualifiedName BrowseName
         {
@@ -949,9 +956,7 @@ namespace Opc.Ua
             set { m_browseName = value; }
         }
 
-        /// <summary>
-        /// The display name of the node.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DisplayName", IsRequired = false, Order = 4)]
         public LocalizedText DisplayName
         {
@@ -959,9 +964,7 @@ namespace Opc.Ua
             set { m_displayName = value; }
         }
 
-        /// <summary>
-        /// The description of the node.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Description", IsRequired = false, Order = 5)]
         public LocalizedText Description
         {
@@ -969,9 +972,7 @@ namespace Opc.Ua
             set { m_description = value; }
         }
 
-        /// <summary>
-        /// A mask indicating which attributes are writable.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "WriteMask", IsRequired = false, Order = 6)]
         public uint WriteMask
         {
@@ -979,9 +980,7 @@ namespace Opc.Ua
             set { m_writeMask = value; }
         }
 
-        /// <summary>
-        /// A mask indicating which attributes are writable by the current user.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "UserWriteMask", IsRequired = false, Order = 7)]
         public uint UserWriteMask
         {
@@ -990,7 +989,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The references that belong to the node.
+        /// 
         /// </summary>
         [DataMember(Name = "References", IsRequired = false, Order = 8)]
         public ReferenceNodeCollection References
@@ -1092,10 +1091,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            Node clone = (Node)this.MemberwiseClone();
+            return (Node)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            Node clone = (Node)base.MemberwiseClone();
 
             clone.m_nodeId = (NodeId)Utils.Clone(this.m_nodeId);
             clone.m_nodeClass = (NodeClass)Utils.Clone(this.m_nodeClass);
@@ -1129,7 +1136,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfNode", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "Node")]
+    #if !NET_STANDARD
     public partial class NodeCollection : List<Node>, ICloneable
+    #else
+    public partial class NodeCollection : List<Node>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -1176,11 +1187,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (NodeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             NodeCollection clone = new NodeCollection(this.Count);
 
@@ -1191,7 +1211,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -1200,7 +1219,7 @@ namespace Opc.Ua
     #region InstanceNode Class
     #if (!OPCUA_EXCLUDE_InstanceNode)
     /// <summary>
-    /// A description for the InstanceNode DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -1294,12 +1313,20 @@ namespace Opc.Ua
 
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            InstanceNode clone = (InstanceNode)base.Clone();
+            return (InstanceNode)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            InstanceNode clone = (InstanceNode)base.MemberwiseClone();
 
 
             return clone;
@@ -1315,7 +1342,7 @@ namespace Opc.Ua
     #region TypeNode Class
     #if (!OPCUA_EXCLUDE_TypeNode)
     /// <summary>
-    /// A description for the TypeNode DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -1409,12 +1436,20 @@ namespace Opc.Ua
 
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            TypeNode clone = (TypeNode)base.Clone();
+            return (TypeNode)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            TypeNode clone = (TypeNode)base.MemberwiseClone();
 
 
             return clone;
@@ -1430,7 +1465,7 @@ namespace Opc.Ua
     #region ObjectNode Class
     #if (!OPCUA_EXCLUDE_ObjectNode)
     /// <summary>
-    /// Specifies the attributes which belong to object nodes.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -1465,9 +1500,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A mask indicating whether events are produced by the object.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EventNotifier", IsRequired = false, Order = 1)]
         public byte EventNotifier
         {
@@ -1538,12 +1571,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_eventNotifier, value.m_eventNotifier)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            ObjectNode clone = (ObjectNode)base.Clone();
+            return (ObjectNode)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ObjectNode clone = (ObjectNode)base.MemberwiseClone();
 
             clone.m_eventNotifier = (byte)Utils.Clone(this.m_eventNotifier);
 
@@ -1561,7 +1602,7 @@ namespace Opc.Ua
     #region ObjectTypeNode Class
     #if (!OPCUA_EXCLUDE_ObjectTypeNode)
     /// <summary>
-    /// Specifies the attributes which belong to object type nodes.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -1596,9 +1637,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// If TRUE the type is abstract and only subtypes of it appear in the address space.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IsAbstract", IsRequired = false, Order = 1)]
         public bool IsAbstract
         {
@@ -1669,12 +1708,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_isAbstract, value.m_isAbstract)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            ObjectTypeNode clone = (ObjectTypeNode)base.Clone();
+            return (ObjectTypeNode)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ObjectTypeNode clone = (ObjectTypeNode)base.MemberwiseClone();
 
             clone.m_isAbstract = (bool)Utils.Clone(this.m_isAbstract);
 
@@ -1692,7 +1739,7 @@ namespace Opc.Ua
     #region VariableNode Class
     #if (!OPCUA_EXCLUDE_VariableNode)
     /// <summary>
-    /// Specifies the attributes which belong to variable nodes.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -1734,9 +1781,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The current value.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Value", IsRequired = false, Order = 1)]
         public Variant Value
         {
@@ -1744,9 +1789,7 @@ namespace Opc.Ua
             set { m_value = value; }
         }
 
-        /// <summary>
-        /// The data type of the value.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DataType", IsRequired = false, Order = 2)]
         public NodeId DataType
         {
@@ -1754,9 +1797,7 @@ namespace Opc.Ua
             set { m_dataType = value; }
         }
 
-        /// <summary>
-        /// Whether the value is an array type and the rank of the array if it is.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ValueRank", IsRequired = false, Order = 3)]
         public int ValueRank
         {
@@ -1765,7 +1806,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The number of dimensions if the value is an array type and one or more dimensions have a fixed length.
+        /// 
         /// </summary>
         [DataMember(Name = "ArrayDimensions", IsRequired = false, Order = 4)]
         public UInt32Collection ArrayDimensions
@@ -1786,9 +1827,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A bit mask specifying how the value may be accessed.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "AccessLevel", IsRequired = false, Order = 5)]
         public byte AccessLevel
         {
@@ -1796,9 +1835,7 @@ namespace Opc.Ua
             set { m_accessLevel = value; }
         }
 
-        /// <summary>
-        /// A bit mask specifying how the value may be accessed by the current user.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "UserAccessLevel", IsRequired = false, Order = 6)]
         public byte UserAccessLevel
         {
@@ -1806,9 +1843,7 @@ namespace Opc.Ua
             set { m_userAccessLevel = value; }
         }
 
-        /// <summary>
-        /// The minimum possible sampling interval for the value.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MinimumSamplingInterval", IsRequired = false, Order = 7)]
         public double MinimumSamplingInterval
         {
@@ -1816,9 +1851,7 @@ namespace Opc.Ua
             set { m_minimumSamplingInterval = value; }
         }
 
-        /// <summary>
-        /// TRUE if the server is current storing the history of the value.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Historizing", IsRequired = false, Order = 8)]
         public bool Historizing
         {
@@ -1910,12 +1943,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_historizing, value.m_historizing)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            VariableNode clone = (VariableNode)base.Clone();
+            return (VariableNode)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            VariableNode clone = (VariableNode)base.MemberwiseClone();
 
             clone.m_value = (Variant)Utils.Clone(this.m_value);
             clone.m_dataType = (NodeId)Utils.Clone(this.m_dataType);
@@ -1947,7 +1988,7 @@ namespace Opc.Ua
     #region VariableTypeNode Class
     #if (!OPCUA_EXCLUDE_VariableTypeNode)
     /// <summary>
-    /// Specifies the attributes which belong to variable type nodes.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -1986,9 +2027,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The default value when creating new instances.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Value", IsRequired = false, Order = 1)]
         public Variant Value
         {
@@ -1996,9 +2035,7 @@ namespace Opc.Ua
             set { m_value = value; }
         }
 
-        /// <summary>
-        /// The data type of the value.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DataType", IsRequired = false, Order = 2)]
         public NodeId DataType
         {
@@ -2006,9 +2043,7 @@ namespace Opc.Ua
             set { m_dataType = value; }
         }
 
-        /// <summary>
-        /// Whether the value is an array type and the rank of the array if it is.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ValueRank", IsRequired = false, Order = 3)]
         public int ValueRank
         {
@@ -2017,7 +2052,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The number of dimensions if the value is an array type and one or more dimensions have a fixed length.
+        /// 
         /// </summary>
         [DataMember(Name = "ArrayDimensions", IsRequired = false, Order = 4)]
         public UInt32Collection ArrayDimensions
@@ -2038,9 +2073,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// If TRUE the type is abstract and only subtypes of it appear in the address space.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IsAbstract", IsRequired = false, Order = 5)]
         public bool IsAbstract
         {
@@ -2123,12 +2156,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_isAbstract, value.m_isAbstract)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            VariableTypeNode clone = (VariableTypeNode)base.Clone();
+            return (VariableTypeNode)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            VariableTypeNode clone = (VariableTypeNode)base.MemberwiseClone();
 
             clone.m_value = (Variant)Utils.Clone(this.m_value);
             clone.m_dataType = (NodeId)Utils.Clone(this.m_dataType);
@@ -2154,7 +2195,7 @@ namespace Opc.Ua
     #region ReferenceTypeNode Class
     #if (!OPCUA_EXCLUDE_ReferenceTypeNode)
     /// <summary>
-    /// Specifies the attributes which belong to reference type nodes.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -2191,9 +2232,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// If TRUE the type is abstract and only subtypes of it appear in the address space.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IsAbstract", IsRequired = false, Order = 1)]
         public bool IsAbstract
         {
@@ -2201,9 +2240,7 @@ namespace Opc.Ua
             set { m_isAbstract = value; }
         }
 
-        /// <summary>
-        /// If TRUE the reference type has the same semantics in both directions.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Symmetric", IsRequired = false, Order = 2)]
         public bool Symmetric
         {
@@ -2211,9 +2248,7 @@ namespace Opc.Ua
             set { m_symmetric = value; }
         }
 
-        /// <summary>
-        /// The display name for the reference when following it from target to source.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "InverseName", IsRequired = false, Order = 3)]
         public LocalizedText InverseName
         {
@@ -2290,12 +2325,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_inverseName, value.m_inverseName)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            ReferenceTypeNode clone = (ReferenceTypeNode)base.Clone();
+            return (ReferenceTypeNode)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ReferenceTypeNode clone = (ReferenceTypeNode)base.MemberwiseClone();
 
             clone.m_isAbstract = (bool)Utils.Clone(this.m_isAbstract);
             clone.m_symmetric = (bool)Utils.Clone(this.m_symmetric);
@@ -2317,7 +2360,7 @@ namespace Opc.Ua
     #region MethodNode Class
     #if (!OPCUA_EXCLUDE_MethodNode)
     /// <summary>
-    /// Specifies the attributes which belong to method nodes.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -2353,9 +2396,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// If TRUE the method can be called.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Executable", IsRequired = false, Order = 1)]
         public bool Executable
         {
@@ -2363,9 +2404,7 @@ namespace Opc.Ua
             set { m_executable = value; }
         }
 
-        /// <summary>
-        /// If TRUE the method can be called by the current user.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "UserExecutable", IsRequired = false, Order = 2)]
         public bool UserExecutable
         {
@@ -2439,12 +2478,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_userExecutable, value.m_userExecutable)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            MethodNode clone = (MethodNode)base.Clone();
+            return (MethodNode)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            MethodNode clone = (MethodNode)base.MemberwiseClone();
 
             clone.m_executable = (bool)Utils.Clone(this.m_executable);
             clone.m_userExecutable = (bool)Utils.Clone(this.m_userExecutable);
@@ -2464,7 +2511,7 @@ namespace Opc.Ua
     #region ViewNode Class
     #if (!OPCUA_EXCLUDE_ViewNode)
     /// <summary>
-    /// A description for the ViewNode DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -2500,9 +2547,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// If TRUE the view contains a tree of non-looping hierarchical references.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ContainsNoLoops", IsRequired = false, Order = 1)]
         public bool ContainsNoLoops
         {
@@ -2510,9 +2555,7 @@ namespace Opc.Ua
             set { m_containsNoLoops = value; }
         }
 
-        /// <summary>
-        /// A mask indicating whether events are produced by the view.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EventNotifier", IsRequired = false, Order = 2)]
         public byte EventNotifier
         {
@@ -2586,12 +2629,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_eventNotifier, value.m_eventNotifier)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            ViewNode clone = (ViewNode)base.Clone();
+            return (ViewNode)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ViewNode clone = (ViewNode)base.MemberwiseClone();
 
             clone.m_containsNoLoops = (bool)Utils.Clone(this.m_containsNoLoops);
             clone.m_eventNotifier = (byte)Utils.Clone(this.m_eventNotifier);
@@ -2611,7 +2662,7 @@ namespace Opc.Ua
     #region DataTypeNode Class
     #if (!OPCUA_EXCLUDE_DataTypeNode)
     /// <summary>
-    /// A description for the DataTypeNode DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -2646,9 +2697,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// If TRUE the type is abstract and only subtypes of it appear in the address space.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IsAbstract", IsRequired = false, Order = 1)]
         public bool IsAbstract
         {
@@ -2719,12 +2768,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_isAbstract, value.m_isAbstract)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            DataTypeNode clone = (DataTypeNode)base.Clone();
+            return (DataTypeNode)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            DataTypeNode clone = (DataTypeNode)base.MemberwiseClone();
 
             clone.m_isAbstract = (bool)Utils.Clone(this.m_isAbstract);
 
@@ -2742,7 +2799,7 @@ namespace Opc.Ua
     #region ReferenceNode Class
     #if (!OPCUA_EXCLUDE_ReferenceNode)
     /// <summary>
-    /// Specifies a reference which belongs to a node.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -2779,9 +2836,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The node id of the reference type for the reference.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ReferenceTypeId", IsRequired = false, Order = 1)]
         public NodeId ReferenceTypeId
         {
@@ -2789,9 +2844,7 @@ namespace Opc.Ua
             set { m_referenceTypeId = value; }
         }
 
-        /// <summary>
-        /// The reference is an inverse reference.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IsInverse", IsRequired = false, Order = 2)]
         public bool IsInverse
         {
@@ -2799,9 +2852,7 @@ namespace Opc.Ua
             set { m_isInverse = value; }
         }
 
-        /// <summary>
-        /// The node id for the target of the reference.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TargetId", IsRequired = false, Order = 3)]
         public ExpandedNodeId TargetId
         {
@@ -2875,10 +2926,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ReferenceNode clone = (ReferenceNode)this.MemberwiseClone();
+            return (ReferenceNode)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ReferenceNode clone = (ReferenceNode)base.MemberwiseClone();
 
             clone.m_referenceTypeId = (NodeId)Utils.Clone(this.m_referenceTypeId);
             clone.m_isInverse = (bool)Utils.Clone(this.m_isInverse);
@@ -2902,7 +2961,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfReferenceNode", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "ReferenceNode")]
+    #if !NET_STANDARD
     public partial class ReferenceNodeCollection : List<ReferenceNode>, ICloneable
+    #else
+    public partial class ReferenceNodeCollection : List<ReferenceNode>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -2949,11 +3012,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ReferenceNodeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ReferenceNodeCollection clone = new ReferenceNodeCollection(this.Count);
 
@@ -2964,7 +3036,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -2973,7 +3044,7 @@ namespace Opc.Ua
     #region Argument Class
     #if (!OPCUA_EXCLUDE_Argument)
     /// <summary>
-    /// An argument for a method.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -3012,9 +3083,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The name of the argument.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Name", IsRequired = false, Order = 1)]
         public string Name
         {
@@ -3022,9 +3091,7 @@ namespace Opc.Ua
             set { m_name = value; }
         }
 
-        /// <summary>
-        /// The data type of the argument.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DataType", IsRequired = false, Order = 2)]
         public NodeId DataType
         {
@@ -3032,9 +3099,7 @@ namespace Opc.Ua
             set { m_dataType = value; }
         }
 
-        /// <summary>
-        /// Whether the argument is an array type and the rank of the array if it is.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ValueRank", IsRequired = false, Order = 3)]
         public int ValueRank
         {
@@ -3043,7 +3108,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The number of dimensions if the argument is an array type and one or more dimensions have a fixed length.
+        /// 
         /// </summary>
         [DataMember(Name = "ArrayDimensions", IsRequired = false, Order = 4)]
         public UInt32Collection ArrayDimensions
@@ -3064,9 +3129,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// The description for the argument.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Description", IsRequired = false, Order = 5)]
         public LocalizedText Description
         {
@@ -3146,10 +3209,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            Argument clone = (Argument)this.MemberwiseClone();
+            return (Argument)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            Argument clone = (Argument)base.MemberwiseClone();
 
             clone.m_name = (string)Utils.Clone(this.m_name);
             clone.m_dataType = (NodeId)Utils.Clone(this.m_dataType);
@@ -3177,7 +3248,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfArgument", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "Argument")]
+    #if !NET_STANDARD
     public partial class ArgumentCollection : List<Argument>, ICloneable
+    #else
+    public partial class ArgumentCollection : List<Argument>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -3224,11 +3299,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ArgumentCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ArgumentCollection clone = new ArgumentCollection(this.Count);
 
@@ -3239,7 +3323,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -3248,7 +3331,7 @@ namespace Opc.Ua
     #region EnumValueType Class
     #if (!OPCUA_EXCLUDE_EnumValueType)
     /// <summary>
-    /// A mapping between a value of an enumerated type and a name and description.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -3285,9 +3368,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The value of the enumeration.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Value", IsRequired = false, Order = 1)]
         public long Value
         {
@@ -3295,9 +3376,7 @@ namespace Opc.Ua
             set { m_value = value; }
         }
 
-        /// <summary>
-        /// Human readable name for the value.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DisplayName", IsRequired = false, Order = 2)]
         public LocalizedText DisplayName
         {
@@ -3305,9 +3384,7 @@ namespace Opc.Ua
             set { m_displayName = value; }
         }
 
-        /// <summary>
-        /// A description of the value.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Description", IsRequired = false, Order = 3)]
         public LocalizedText Description
         {
@@ -3381,10 +3458,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            EnumValueType clone = (EnumValueType)this.MemberwiseClone();
+            return (EnumValueType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            EnumValueType clone = (EnumValueType)base.MemberwiseClone();
 
             clone.m_value = (long)Utils.Clone(this.m_value);
             clone.m_displayName = (LocalizedText)Utils.Clone(this.m_displayName);
@@ -3408,7 +3493,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfEnumValueType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "EnumValueType")]
+    #if !NET_STANDARD
     public partial class EnumValueTypeCollection : List<EnumValueType>, ICloneable
+    #else
+    public partial class EnumValueTypeCollection : List<EnumValueType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -3455,11 +3544,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (EnumValueTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             EnumValueTypeCollection clone = new EnumValueTypeCollection(this.Count);
 
@@ -3470,7 +3568,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -3479,7 +3576,7 @@ namespace Opc.Ua
     #region OptionSet Class
     #if (!OPCUA_EXCLUDE_OptionSet)
     /// <summary>
-    /// This abstract Structured DataType is the base DataType for all DataTypes representing a bit mask.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -3515,9 +3612,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// Array of bytes representing the bits in the option set.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Value", IsRequired = false, Order = 1)]
         public byte[] Value
         {
@@ -3525,9 +3620,7 @@ namespace Opc.Ua
             set { m_value = value; }
         }
 
-        /// <summary>
-        /// Array of bytes with same size as value representing the valid bits in the value parameter.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ValidBits", IsRequired = false, Order = 2)]
         public byte[] ValidBits
         {
@@ -3598,10 +3691,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            OptionSet clone = (OptionSet)this.MemberwiseClone();
+            return (OptionSet)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            OptionSet clone = (OptionSet)base.MemberwiseClone();
 
             clone.m_value = (byte[])Utils.Clone(this.m_value);
             clone.m_validBits = (byte[])Utils.Clone(this.m_validBits);
@@ -3623,7 +3724,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfOptionSet", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "OptionSet")]
+    #if !NET_STANDARD
     public partial class OptionSetCollection : List<OptionSet>, ICloneable
+    #else
+    public partial class OptionSetCollection : List<OptionSet>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -3670,11 +3775,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (OptionSetCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             OptionSetCollection clone = new OptionSetCollection(this.Count);
 
@@ -3685,7 +3799,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -3694,7 +3807,7 @@ namespace Opc.Ua
     #region Union Class
     #if (!OPCUA_EXCLUDE_Union)
     /// <summary>
-    /// This abstract DataType is the base DataType for all union DataTypes.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -3786,10 +3899,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            Union clone = (Union)this.MemberwiseClone();
+            return (Union)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            Union clone = (Union)base.MemberwiseClone();
 
 
             return clone;
@@ -3807,7 +3928,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfUnion", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "Union")]
+    #if !NET_STANDARD
     public partial class UnionCollection : List<Union>, ICloneable
+    #else
+    public partial class UnionCollection : List<Union>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -3854,11 +3979,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (UnionCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             UnionCollection clone = new UnionCollection(this.Count);
 
@@ -3869,7 +4003,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -3878,7 +4011,7 @@ namespace Opc.Ua
     #region TimeZoneDataType Class
     #if (!OPCUA_EXCLUDE_TimeZoneDataType)
     /// <summary>
-    /// A description for the TimeZoneDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -3914,9 +4047,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Offset field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Offset", IsRequired = false, Order = 1)]
         public short Offset
         {
@@ -3924,9 +4055,7 @@ namespace Opc.Ua
             set { m_offset = value; }
         }
 
-        /// <summary>
-        /// A description for the DaylightSavingInOffset field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DaylightSavingInOffset", IsRequired = false, Order = 2)]
         public bool DaylightSavingInOffset
         {
@@ -3997,10 +4126,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            TimeZoneDataType clone = (TimeZoneDataType)this.MemberwiseClone();
+            return (TimeZoneDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            TimeZoneDataType clone = (TimeZoneDataType)base.MemberwiseClone();
 
             clone.m_offset = (short)Utils.Clone(this.m_offset);
             clone.m_daylightSavingInOffset = (bool)Utils.Clone(this.m_daylightSavingInOffset);
@@ -4022,7 +4159,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfTimeZoneDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "TimeZoneDataType")]
+    #if !NET_STANDARD
     public partial class TimeZoneDataTypeCollection : List<TimeZoneDataType>, ICloneable
+    #else
+    public partial class TimeZoneDataTypeCollection : List<TimeZoneDataType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -4069,11 +4210,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (TimeZoneDataTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             TimeZoneDataTypeCollection clone = new TimeZoneDataTypeCollection(this.Count);
 
@@ -4084,7 +4234,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -4093,34 +4242,26 @@ namespace Opc.Ua
     #region ApplicationType Enumeration
     #if (!OPCUA_EXCLUDE_ApplicationType)
     /// <summary>
-    /// The types of applications.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum ApplicationType
     {
-        /// <summary>
-        /// The application is a server.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Server_0")]
         Server = 0,
 
-        /// <summary>
-        /// The application is a client.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Client_1")]
         Client = 1,
 
-        /// <summary>
-        /// The application is a client and a server.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ClientAndServer_2")]
         ClientAndServer = 2,
 
-        /// <summary>
-        /// The application is a discovery server.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DiscoveryServer_3")]
         DiscoveryServer = 3,
     }
@@ -4130,7 +4271,7 @@ namespace Opc.Ua
     #region ApplicationDescription Class
     #if (!OPCUA_EXCLUDE_ApplicationDescription)
     /// <summary>
-    /// Describes an application and how to find it.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -4171,9 +4312,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The globally unique identifier for the application.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ApplicationUri", IsRequired = false, Order = 1)]
         public string ApplicationUri
         {
@@ -4181,9 +4320,7 @@ namespace Opc.Ua
             set { m_applicationUri = value; }
         }
 
-        /// <summary>
-        /// The globally unique identifier for the product.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ProductUri", IsRequired = false, Order = 2)]
         public string ProductUri
         {
@@ -4191,9 +4328,7 @@ namespace Opc.Ua
             set { m_productUri = value; }
         }
 
-        /// <summary>
-        /// The name of application.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ApplicationName", IsRequired = false, Order = 3)]
         public LocalizedText ApplicationName
         {
@@ -4201,9 +4336,7 @@ namespace Opc.Ua
             set { m_applicationName = value; }
         }
 
-        /// <summary>
-        /// The type of application.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ApplicationType", IsRequired = false, Order = 4)]
         public ApplicationType ApplicationType
         {
@@ -4211,9 +4344,7 @@ namespace Opc.Ua
             set { m_applicationType = value; }
         }
 
-        /// <summary>
-        /// The globally unique identifier for the server that is acting as a gateway for the server.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "GatewayServerUri", IsRequired = false, Order = 5)]
         public string GatewayServerUri
         {
@@ -4221,9 +4352,7 @@ namespace Opc.Ua
             set { m_gatewayServerUri = value; }
         }
 
-        /// <summary>
-        /// The globally unique identifier for the discovery profile supported by the server.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DiscoveryProfileUri", IsRequired = false, Order = 6)]
         public string DiscoveryProfileUri
         {
@@ -4232,7 +4361,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The URLs for the server's discovery endpoints.
+        /// 
         /// </summary>
         [DataMember(Name = "DiscoveryUrls", IsRequired = false, Order = 7)]
         public StringCollection DiscoveryUrls
@@ -4331,10 +4460,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ApplicationDescription clone = (ApplicationDescription)this.MemberwiseClone();
+            return (ApplicationDescription)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ApplicationDescription clone = (ApplicationDescription)base.MemberwiseClone();
 
             clone.m_applicationUri = (string)Utils.Clone(this.m_applicationUri);
             clone.m_productUri = (string)Utils.Clone(this.m_productUri);
@@ -4366,7 +4503,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfApplicationDescription", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "ApplicationDescription")]
+    #if !NET_STANDARD
     public partial class ApplicationDescriptionCollection : List<ApplicationDescription>, ICloneable
+    #else
+    public partial class ApplicationDescriptionCollection : List<ApplicationDescription>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -4413,11 +4554,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ApplicationDescriptionCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ApplicationDescriptionCollection clone = new ApplicationDescriptionCollection(this.Count);
 
@@ -4428,7 +4578,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -4437,7 +4586,7 @@ namespace Opc.Ua
     #region RequestHeader Class
     #if (!OPCUA_EXCLUDE_RequestHeader)
     /// <summary>
-    /// The header passed with every server request.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -4478,9 +4627,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The authentication token for the current session.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "AuthenticationToken", IsRequired = false, Order = 1)]
         public NodeId AuthenticationToken
         {
@@ -4488,9 +4635,7 @@ namespace Opc.Ua
             set { m_authenticationToken = value; }
         }
 
-        /// <summary>
-        /// When the request was sent by the client.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Timestamp", IsRequired = false, Order = 2)]
         public DateTime Timestamp
         {
@@ -4498,9 +4643,7 @@ namespace Opc.Ua
             set { m_timestamp = value; }
         }
 
-        /// <summary>
-        /// A handle assigned by the client to the request. It is returned in the response.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RequestHandle", IsRequired = false, Order = 3)]
         public uint RequestHandle
         {
@@ -4508,9 +4651,7 @@ namespace Opc.Ua
             set { m_requestHandle = value; }
         }
 
-        /// <summary>
-        /// A mask indicating what diagnostic information should be returned in the response.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ReturnDiagnostics", IsRequired = false, Order = 4)]
         public uint ReturnDiagnostics
         {
@@ -4518,9 +4659,7 @@ namespace Opc.Ua
             set { m_returnDiagnostics = value; }
         }
 
-        /// <summary>
-        /// Identifies an entry in the client audit log.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "AuditEntryId", IsRequired = false, Order = 5)]
         public string AuditEntryId
         {
@@ -4528,9 +4667,7 @@ namespace Opc.Ua
             set { m_auditEntryId = value; }
         }
 
-        /// <summary>
-        /// The timeout for the operation specified by the client.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TimeoutHint", IsRequired = false, Order = 6)]
         public uint TimeoutHint
         {
@@ -4538,9 +4675,7 @@ namespace Opc.Ua
             set { m_timeoutHint = value; }
         }
 
-        /// <summary>
-        /// Allows vendor specific information to be included in the header.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "AdditionalHeader", IsRequired = false, Order = 7)]
         public ExtensionObject AdditionalHeader
         {
@@ -4626,10 +4761,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            RequestHeader clone = (RequestHeader)this.MemberwiseClone();
+            return (RequestHeader)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            RequestHeader clone = (RequestHeader)base.MemberwiseClone();
 
             clone.m_authenticationToken = (NodeId)Utils.Clone(this.m_authenticationToken);
             clone.m_timestamp = (DateTime)Utils.Clone(this.m_timestamp);
@@ -4659,7 +4802,7 @@ namespace Opc.Ua
     #region ResponseHeader Class
     #if (!OPCUA_EXCLUDE_ResponseHeader)
     /// <summary>
-    /// The header passed with every server response.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -4699,9 +4842,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// When the response was sent by the server.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Timestamp", IsRequired = false, Order = 1)]
         public DateTime Timestamp
         {
@@ -4709,9 +4850,7 @@ namespace Opc.Ua
             set { m_timestamp = value; }
         }
 
-        /// <summary>
-        /// The handle passed by the client in the request.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RequestHandle", IsRequired = false, Order = 2)]
         public uint RequestHandle
         {
@@ -4719,9 +4858,7 @@ namespace Opc.Ua
             set { m_requestHandle = value; }
         }
 
-        /// <summary>
-        /// The result of the operation. If Bad there are no parameters returned.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ServiceResult", IsRequired = false, Order = 3)]
         public StatusCode ServiceResult
         {
@@ -4729,9 +4866,7 @@ namespace Opc.Ua
             set { m_serviceResult = value; }
         }
 
-        /// <summary>
-        /// The diagnostics associated with the ServiceResult.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ServiceDiagnostics", IsRequired = false, Order = 4)]
         public DiagnosticInfo ServiceDiagnostics
         {
@@ -4740,7 +4875,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A table of strings referenced by the diagnotics structures included in the request.
+        /// 
         /// </summary>
         [DataMember(Name = "StringTable", IsRequired = false, Order = 5)]
         public StringCollection StringTable
@@ -4761,9 +4896,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// Allows vendor specific information to be included in the header.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "AdditionalHeader", IsRequired = false, Order = 6)]
         public ExtensionObject AdditionalHeader
         {
@@ -4846,10 +4979,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ResponseHeader clone = (ResponseHeader)this.MemberwiseClone();
+            return (ResponseHeader)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ResponseHeader clone = (ResponseHeader)base.MemberwiseClone();
 
             clone.m_timestamp = (DateTime)Utils.Clone(this.m_timestamp);
             clone.m_requestHandle = (uint)Utils.Clone(this.m_requestHandle);
@@ -4877,7 +5018,7 @@ namespace Opc.Ua
     #region ServiceFault Class
     #if (!OPCUA_EXCLUDE_ServiceFault)
     /// <summary>
-    /// The response returned by all services when there is a service level error.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -4913,7 +5054,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all responses returned by servers.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -4994,10 +5135,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ServiceFault clone = (ServiceFault)this.MemberwiseClone();
+            return (ServiceFault)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ServiceFault clone = (ServiceFault)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
 
@@ -5015,7 +5164,7 @@ namespace Opc.Ua
     #region FindServersRequest Class
     #if (!OPCUA_EXCLUDE_FindServersRequest)
     /// <summary>
-    /// Finds the servers known to the discovery server.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -5054,7 +5203,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all requests sent to a server.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -5075,9 +5224,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// The URL used by the client to send the request.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EndpointUrl", IsRequired = false, Order = 2)]
         public string EndpointUrl
         {
@@ -5086,7 +5233,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The locales to use when constructing a response.
+        /// 
         /// </summary>
         [DataMember(Name = "LocaleIds", IsRequired = false, Order = 3)]
         public StringCollection LocaleIds
@@ -5108,7 +5255,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The URIs of the servers to return (all servers returned if none specified).
+        /// 
         /// </summary>
         [DataMember(Name = "ServerUris", IsRequired = false, Order = 4)]
         public StringCollection ServerUris
@@ -5198,10 +5345,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            FindServersRequest clone = (FindServersRequest)this.MemberwiseClone();
+            return (FindServersRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            FindServersRequest clone = (FindServersRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_endpointUrl = (string)Utils.Clone(this.m_endpointUrl);
@@ -5225,7 +5380,7 @@ namespace Opc.Ua
     #region FindServersResponse Class
     #if (!OPCUA_EXCLUDE_FindServersResponse)
     /// <summary>
-    /// Finds the servers known to the discovery server.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -5262,7 +5417,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all responses returned by servers.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -5284,7 +5439,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The servers that met the criteria specified in the request.
+        /// 
         /// </summary>
         [DataMember(Name = "Servers", IsRequired = false, Order = 2)]
         public ApplicationDescriptionCollection Servers
@@ -5368,10 +5523,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            FindServersResponse clone = (FindServersResponse)this.MemberwiseClone();
+            return (FindServersResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            FindServersResponse clone = (FindServersResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_servers = (ApplicationDescriptionCollection)Utils.Clone(this.m_servers);
@@ -5391,7 +5554,7 @@ namespace Opc.Ua
     #region ServerOnNetwork Class
     #if (!OPCUA_EXCLUDE_ServerOnNetwork)
     /// <summary>
-    /// A description for the ServerOnNetwork DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -5429,9 +5592,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the RecordId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RecordId", IsRequired = false, Order = 1)]
         public uint RecordId
         {
@@ -5439,9 +5600,7 @@ namespace Opc.Ua
             set { m_recordId = value; }
         }
 
-        /// <summary>
-        /// A description for the ServerName field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ServerName", IsRequired = false, Order = 2)]
         public string ServerName
         {
@@ -5449,9 +5608,7 @@ namespace Opc.Ua
             set { m_serverName = value; }
         }
 
-        /// <summary>
-        /// A description for the DiscoveryUrl field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DiscoveryUrl", IsRequired = false, Order = 3)]
         public string DiscoveryUrl
         {
@@ -5460,7 +5617,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the ServerCapabilities field.
+        /// 
         /// </summary>
         [DataMember(Name = "ServerCapabilities", IsRequired = false, Order = 4)]
         public StringCollection ServerCapabilities
@@ -5550,10 +5707,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ServerOnNetwork clone = (ServerOnNetwork)this.MemberwiseClone();
+            return (ServerOnNetwork)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ServerOnNetwork clone = (ServerOnNetwork)base.MemberwiseClone();
 
             clone.m_recordId = (uint)Utils.Clone(this.m_recordId);
             clone.m_serverName = (string)Utils.Clone(this.m_serverName);
@@ -5579,7 +5744,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfServerOnNetwork", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "ServerOnNetwork")]
+    #if !NET_STANDARD
     public partial class ServerOnNetworkCollection : List<ServerOnNetwork>, ICloneable
+    #else
+    public partial class ServerOnNetworkCollection : List<ServerOnNetwork>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -5626,11 +5795,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ServerOnNetworkCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ServerOnNetworkCollection clone = new ServerOnNetworkCollection(this.Count);
 
@@ -5641,7 +5819,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -5650,7 +5827,7 @@ namespace Opc.Ua
     #region FindServersOnNetworkRequest Class
     #if (!OPCUA_EXCLUDE_FindServersOnNetworkRequest)
     /// <summary>
-    /// A description for the FindServersOnNetworkRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -5689,7 +5866,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RequestHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -5710,9 +5887,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the StartingRecordId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StartingRecordId", IsRequired = false, Order = 2)]
         public uint StartingRecordId
         {
@@ -5720,9 +5895,7 @@ namespace Opc.Ua
             set { m_startingRecordId = value; }
         }
 
-        /// <summary>
-        /// A description for the MaxRecordsToReturn field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MaxRecordsToReturn", IsRequired = false, Order = 3)]
         public uint MaxRecordsToReturn
         {
@@ -5731,7 +5904,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the ServerCapabilityFilter field.
+        /// 
         /// </summary>
         [DataMember(Name = "ServerCapabilityFilter", IsRequired = false, Order = 4)]
         public StringCollection ServerCapabilityFilter
@@ -5821,10 +5994,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            FindServersOnNetworkRequest clone = (FindServersOnNetworkRequest)this.MemberwiseClone();
+            return (FindServersOnNetworkRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            FindServersOnNetworkRequest clone = (FindServersOnNetworkRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_startingRecordId = (uint)Utils.Clone(this.m_startingRecordId);
@@ -5848,7 +6029,7 @@ namespace Opc.Ua
     #region FindServersOnNetworkResponse Class
     #if (!OPCUA_EXCLUDE_FindServersOnNetworkResponse)
     /// <summary>
-    /// A description for the FindServersOnNetworkResponse DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -5886,7 +6067,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ResponseHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -5907,9 +6088,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the LastCounterResetTime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "LastCounterResetTime", IsRequired = false, Order = 2)]
         public DateTime LastCounterResetTime
         {
@@ -5918,7 +6097,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the Servers field.
+        /// 
         /// </summary>
         [DataMember(Name = "Servers", IsRequired = false, Order = 3)]
         public ServerOnNetworkCollection Servers
@@ -6005,10 +6184,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            FindServersOnNetworkResponse clone = (FindServersOnNetworkResponse)this.MemberwiseClone();
+            return (FindServersOnNetworkResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            FindServersOnNetworkResponse clone = (FindServersOnNetworkResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_lastCounterResetTime = (DateTime)Utils.Clone(this.m_lastCounterResetTime);
@@ -6030,34 +6217,26 @@ namespace Opc.Ua
     #region MessageSecurityMode Enumeration
     #if (!OPCUA_EXCLUDE_MessageSecurityMode)
     /// <summary>
-    /// The type of security to use on a message.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum MessageSecurityMode
     {
-        /// <summary>
-        /// An invalid mode.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Invalid_0")]
         Invalid = 0,
 
-        /// <summary>
-        /// No security is used.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "None_1")]
         None = 1,
 
-        /// <summary>
-        /// The message is signed.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Sign_2")]
         Sign = 2,
 
-        /// <summary>
-        /// The message is signed and encrypted.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "SignAndEncrypt_3")]
         SignAndEncrypt = 3,
     }
@@ -6067,34 +6246,26 @@ namespace Opc.Ua
     #region UserTokenType Enumeration
     #if (!OPCUA_EXCLUDE_UserTokenType)
     /// <summary>
-    /// The possible user token types.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum UserTokenType
     {
-        /// <summary>
-        /// An anonymous user.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Anonymous_0")]
         Anonymous = 0,
 
-        /// <summary>
-        /// A user identified by a user name and password.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UserName_1")]
         UserName = 1,
 
-        /// <summary>
-        /// A user identified by an X509 certificate.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Certificate_2")]
         Certificate = 2,
 
-        /// <summary>
-        /// A user identified by WS-Security XML token.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "IssuedToken_3")]
         IssuedToken = 3,
     }
@@ -6104,7 +6275,7 @@ namespace Opc.Ua
     #region UserTokenPolicy Class
     #if (!OPCUA_EXCLUDE_UserTokenPolicy)
     /// <summary>
-    /// Describes a user token that can be used with a server.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -6143,9 +6314,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A identifier for the policy assigned by the server.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "PolicyId", IsRequired = false, Order = 1)]
         public string PolicyId
         {
@@ -6153,9 +6322,7 @@ namespace Opc.Ua
             set { m_policyId = value; }
         }
 
-        /// <summary>
-        /// The type of user token.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TokenType", IsRequired = false, Order = 2)]
         public UserTokenType TokenType
         {
@@ -6163,9 +6330,7 @@ namespace Opc.Ua
             set { m_tokenType = value; }
         }
 
-        /// <summary>
-        /// The type of issued token.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IssuedTokenType", IsRequired = false, Order = 3)]
         public string IssuedTokenType
         {
@@ -6173,9 +6338,7 @@ namespace Opc.Ua
             set { m_issuedTokenType = value; }
         }
 
-        /// <summary>
-        /// The endpoint or any other information need to contruct an issued token URL.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IssuerEndpointUrl", IsRequired = false, Order = 4)]
         public string IssuerEndpointUrl
         {
@@ -6183,9 +6346,7 @@ namespace Opc.Ua
             set { m_issuerEndpointUrl = value; }
         }
 
-        /// <summary>
-        /// The security policy to use when encrypting or signing the user token.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SecurityPolicyUri", IsRequired = false, Order = 5)]
         public string SecurityPolicyUri
         {
@@ -6265,10 +6426,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            UserTokenPolicy clone = (UserTokenPolicy)this.MemberwiseClone();
+            return (UserTokenPolicy)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            UserTokenPolicy clone = (UserTokenPolicy)base.MemberwiseClone();
 
             clone.m_policyId = (string)Utils.Clone(this.m_policyId);
             clone.m_tokenType = (UserTokenType)Utils.Clone(this.m_tokenType);
@@ -6296,7 +6465,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfUserTokenPolicy", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "UserTokenPolicy")]
+    #if !NET_STANDARD
     public partial class UserTokenPolicyCollection : List<UserTokenPolicy>, ICloneable
+    #else
+    public partial class UserTokenPolicyCollection : List<UserTokenPolicy>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -6343,11 +6516,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (UserTokenPolicyCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             UserTokenPolicyCollection clone = new UserTokenPolicyCollection(this.Count);
 
@@ -6358,7 +6540,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -6367,7 +6548,7 @@ namespace Opc.Ua
     #region EndpointDescription Class
     #if (!OPCUA_EXCLUDE_EndpointDescription)
     /// <summary>
-    /// The description of a endpoint that can be used to access a server.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -6409,9 +6590,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The network endpoint to use when connecting to the server.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EndpointUrl", IsRequired = false, Order = 1)]
         public string EndpointUrl
         {
@@ -6420,7 +6599,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The description of the server.
+        /// 
         /// </summary>
         [DataMember(Name = "Server", IsRequired = false, Order = 2)]
         public ApplicationDescription Server
@@ -6441,9 +6620,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// The server's application certificate.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ServerCertificate", IsRequired = false, Order = 3)]
         public byte[] ServerCertificate
         {
@@ -6451,9 +6628,7 @@ namespace Opc.Ua
             set { m_serverCertificate = value; }
         }
 
-        /// <summary>
-        /// The security mode that must be used when connecting to the endpoint.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SecurityMode", IsRequired = false, Order = 4)]
         public MessageSecurityMode SecurityMode
         {
@@ -6461,9 +6636,7 @@ namespace Opc.Ua
             set { m_securityMode = value; }
         }
 
-        /// <summary>
-        /// The security policy to use when connecting to the endpoint.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SecurityPolicyUri", IsRequired = false, Order = 5)]
         public string SecurityPolicyUri
         {
@@ -6472,7 +6645,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The user identity tokens that can be used with this endpoint.
+        /// 
         /// </summary>
         [DataMember(Name = "UserIdentityTokens", IsRequired = false, Order = 6)]
         public UserTokenPolicyCollection UserIdentityTokens
@@ -6493,9 +6666,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// The transport profile to use when connecting to the endpoint.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TransportProfileUri", IsRequired = false, Order = 7)]
         public string TransportProfileUri
         {
@@ -6503,9 +6674,7 @@ namespace Opc.Ua
             set { m_transportProfileUri = value; }
         }
 
-        /// <summary>
-        /// A server assigned value that indicates how secure the endpoint is relative to other server endpoints.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SecurityLevel", IsRequired = false, Order = 8)]
         public byte SecurityLevel
         {
@@ -6594,10 +6763,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            EndpointDescription clone = (EndpointDescription)this.MemberwiseClone();
+            return (EndpointDescription)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            EndpointDescription clone = (EndpointDescription)base.MemberwiseClone();
 
             clone.m_endpointUrl = (string)Utils.Clone(this.m_endpointUrl);
             clone.m_server = (ApplicationDescription)Utils.Clone(this.m_server);
@@ -6631,7 +6808,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfEndpointDescription", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "EndpointDescription")]
+    #if !NET_STANDARD
     public partial class EndpointDescriptionCollection : List<EndpointDescription>, ICloneable
+    #else
+    public partial class EndpointDescriptionCollection : List<EndpointDescription>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -6678,11 +6859,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (EndpointDescriptionCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             EndpointDescriptionCollection clone = new EndpointDescriptionCollection(this.Count);
 
@@ -6693,7 +6883,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -6702,7 +6891,7 @@ namespace Opc.Ua
     #region GetEndpointsRequest Class
     #if (!OPCUA_EXCLUDE_GetEndpointsRequest)
     /// <summary>
-    /// Gets the endpoints used by the server.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -6741,7 +6930,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all requests sent to a server.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -6762,9 +6951,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// The URL used by the client to send the request.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EndpointUrl", IsRequired = false, Order = 2)]
         public string EndpointUrl
         {
@@ -6773,7 +6960,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The locales to use when constructing a response.
+        /// 
         /// </summary>
         [DataMember(Name = "LocaleIds", IsRequired = false, Order = 3)]
         public StringCollection LocaleIds
@@ -6795,7 +6982,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The URIs of the transport profiles for the endpoints to return (all endpoints returned if none specified).
+        /// 
         /// </summary>
         [DataMember(Name = "ProfileUris", IsRequired = false, Order = 4)]
         public StringCollection ProfileUris
@@ -6885,10 +7072,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            GetEndpointsRequest clone = (GetEndpointsRequest)this.MemberwiseClone();
+            return (GetEndpointsRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            GetEndpointsRequest clone = (GetEndpointsRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_endpointUrl = (string)Utils.Clone(this.m_endpointUrl);
@@ -6912,7 +7107,7 @@ namespace Opc.Ua
     #region GetEndpointsResponse Class
     #if (!OPCUA_EXCLUDE_GetEndpointsResponse)
     /// <summary>
-    /// Gets the endpoints used by the server.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -6949,7 +7144,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all responses returned by servers.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -6971,7 +7166,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The endpoints that met the criteria specified in the request.
+        /// 
         /// </summary>
         [DataMember(Name = "Endpoints", IsRequired = false, Order = 2)]
         public EndpointDescriptionCollection Endpoints
@@ -7055,10 +7250,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            GetEndpointsResponse clone = (GetEndpointsResponse)this.MemberwiseClone();
+            return (GetEndpointsResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            GetEndpointsResponse clone = (GetEndpointsResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_endpoints = (EndpointDescriptionCollection)Utils.Clone(this.m_endpoints);
@@ -7078,7 +7281,7 @@ namespace Opc.Ua
     #region RegisteredServer Class
     #if (!OPCUA_EXCLUDE_RegisteredServer)
     /// <summary>
-    /// The information required to register a server with a discovery server.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -7120,9 +7323,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The globally unique identifier for the server.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ServerUri", IsRequired = false, Order = 1)]
         public string ServerUri
         {
@@ -7130,9 +7331,7 @@ namespace Opc.Ua
             set { m_serverUri = value; }
         }
 
-        /// <summary>
-        /// The globally unique identifier for the product.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ProductUri", IsRequired = false, Order = 2)]
         public string ProductUri
         {
@@ -7141,7 +7340,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The name of server in multiple lcoales.
+        /// 
         /// </summary>
         [DataMember(Name = "ServerNames", IsRequired = false, Order = 3)]
         public LocalizedTextCollection ServerNames
@@ -7162,9 +7361,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// The type of server.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ServerType", IsRequired = false, Order = 4)]
         public ApplicationType ServerType
         {
@@ -7172,9 +7369,7 @@ namespace Opc.Ua
             set { m_serverType = value; }
         }
 
-        /// <summary>
-        /// The globally unique identifier for the server that is acting as a gateway for the server.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "GatewayServerUri", IsRequired = false, Order = 5)]
         public string GatewayServerUri
         {
@@ -7183,7 +7378,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The URLs for the server's discovery endpoints.
+        /// 
         /// </summary>
         [DataMember(Name = "DiscoveryUrls", IsRequired = false, Order = 6)]
         public StringCollection DiscoveryUrls
@@ -7204,9 +7399,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A path to a file that is deleted when the server is no longer accepting connections.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SemaphoreFilePath", IsRequired = false, Order = 7)]
         public string SemaphoreFilePath
         {
@@ -7214,9 +7407,7 @@ namespace Opc.Ua
             set { m_semaphoreFilePath = value; }
         }
 
-        /// <summary>
-        /// If FALSE the server will save the registration information to a persistent datastore.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IsOnline", IsRequired = false, Order = 8)]
         public bool IsOnline
         {
@@ -7305,10 +7496,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            RegisteredServer clone = (RegisteredServer)this.MemberwiseClone();
+            return (RegisteredServer)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            RegisteredServer clone = (RegisteredServer)base.MemberwiseClone();
 
             clone.m_serverUri = (string)Utils.Clone(this.m_serverUri);
             clone.m_productUri = (string)Utils.Clone(this.m_productUri);
@@ -7342,7 +7541,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfRegisteredServer", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "RegisteredServer")]
+    #if !NET_STANDARD
     public partial class RegisteredServerCollection : List<RegisteredServer>, ICloneable
+    #else
+    public partial class RegisteredServerCollection : List<RegisteredServer>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -7389,11 +7592,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (RegisteredServerCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             RegisteredServerCollection clone = new RegisteredServerCollection(this.Count);
 
@@ -7404,7 +7616,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -7413,7 +7624,7 @@ namespace Opc.Ua
     #region RegisterServerRequest Class
     #if (!OPCUA_EXCLUDE_RegisterServerRequest)
     /// <summary>
-    /// Registers a server with the discovery server.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -7450,7 +7661,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all requests sent to a server.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -7472,7 +7683,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The server to register.
+        /// 
         /// </summary>
         [DataMember(Name = "Server", IsRequired = false, Order = 2)]
         public RegisteredServer Server
@@ -7556,10 +7767,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            RegisterServerRequest clone = (RegisterServerRequest)this.MemberwiseClone();
+            return (RegisterServerRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            RegisterServerRequest clone = (RegisterServerRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_server = (RegisteredServer)Utils.Clone(this.m_server);
@@ -7579,7 +7798,7 @@ namespace Opc.Ua
     #region RegisterServerResponse Class
     #if (!OPCUA_EXCLUDE_RegisterServerResponse)
     /// <summary>
-    /// Registers a server with the discovery server.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -7615,7 +7834,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all responses returned by servers.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -7696,10 +7915,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            RegisterServerResponse clone = (RegisterServerResponse)this.MemberwiseClone();
+            return (RegisterServerResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            RegisterServerResponse clone = (RegisterServerResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
 
@@ -7717,7 +7944,7 @@ namespace Opc.Ua
     #region DiscoveryConfiguration Class
     #if (!OPCUA_EXCLUDE_DiscoveryConfiguration)
     /// <summary>
-    /// A base type for discovery configuration information.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -7809,10 +8036,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            DiscoveryConfiguration clone = (DiscoveryConfiguration)this.MemberwiseClone();
+            return (DiscoveryConfiguration)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            DiscoveryConfiguration clone = (DiscoveryConfiguration)base.MemberwiseClone();
 
 
             return clone;
@@ -7828,7 +8063,7 @@ namespace Opc.Ua
     #region MdnsDiscoveryConfiguration Class
     #if (!OPCUA_EXCLUDE_MdnsDiscoveryConfiguration)
     /// <summary>
-    /// The discovery information needed for mDNS registration.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -7864,9 +8099,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The name for server that is broadcast via mDNS.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MdnsServerName", IsRequired = false, Order = 1)]
         public string MdnsServerName
         {
@@ -7875,7 +8108,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The server capabilities that are broadcast via mDNS.
+        /// 
         /// </summary>
         [DataMember(Name = "ServerCapabilities", IsRequired = false, Order = 2)]
         public StringCollection ServerCapabilities
@@ -7962,12 +8195,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_serverCapabilities, value.m_serverCapabilities)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            MdnsDiscoveryConfiguration clone = (MdnsDiscoveryConfiguration)base.Clone();
+            return (MdnsDiscoveryConfiguration)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            MdnsDiscoveryConfiguration clone = (MdnsDiscoveryConfiguration)base.MemberwiseClone();
 
             clone.m_mdnsServerName = (string)Utils.Clone(this.m_mdnsServerName);
             clone.m_serverCapabilities = (StringCollection)Utils.Clone(this.m_serverCapabilities);
@@ -7987,7 +8228,7 @@ namespace Opc.Ua
     #region RegisterServer2Request Class
     #if (!OPCUA_EXCLUDE_RegisterServer2Request)
     /// <summary>
-    /// A description for the RegisterServer2Request DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -8025,7 +8266,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RequestHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -8047,7 +8288,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the Server field.
+        /// 
         /// </summary>
         [DataMember(Name = "Server", IsRequired = false, Order = 2)]
         public RegisteredServer Server
@@ -8069,7 +8310,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DiscoveryConfiguration field.
+        /// 
         /// </summary>
         [DataMember(Name = "DiscoveryConfiguration", IsRequired = false, Order = 3)]
         public ExtensionObjectCollection DiscoveryConfiguration
@@ -8156,10 +8397,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            RegisterServer2Request clone = (RegisterServer2Request)this.MemberwiseClone();
+            return (RegisterServer2Request)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            RegisterServer2Request clone = (RegisterServer2Request)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_server = (RegisteredServer)Utils.Clone(this.m_server);
@@ -8181,7 +8430,7 @@ namespace Opc.Ua
     #region RegisterServer2Response Class
     #if (!OPCUA_EXCLUDE_RegisterServer2Response)
     /// <summary>
-    /// A description for the RegisterServer2Response DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -8219,7 +8468,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ResponseHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -8241,7 +8490,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the ConfigurationResults field.
+        /// 
         /// </summary>
         [DataMember(Name = "ConfigurationResults", IsRequired = false, Order = 2)]
         public StatusCodeCollection ConfigurationResults
@@ -8263,7 +8512,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -8350,10 +8599,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            RegisterServer2Response clone = (RegisterServer2Response)this.MemberwiseClone();
+            return (RegisterServer2Response)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            RegisterServer2Response clone = (RegisterServer2Response)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_configurationResults = (StatusCodeCollection)Utils.Clone(this.m_configurationResults);
@@ -8375,22 +8632,18 @@ namespace Opc.Ua
     #region SecurityTokenRequestType Enumeration
     #if (!OPCUA_EXCLUDE_SecurityTokenRequestType)
     /// <summary>
-    /// Indicates whether a token if being created or renewed.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum SecurityTokenRequestType
     {
-        /// <summary>
-        /// The channel is being created.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Issue_0")]
         Issue = 0,
 
-        /// <summary>
-        /// The channel is being renewed.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Renew_1")]
         Renew = 1,
     }
@@ -8400,7 +8653,7 @@ namespace Opc.Ua
     #region ChannelSecurityToken Class
     #if (!OPCUA_EXCLUDE_ChannelSecurityToken)
     /// <summary>
-    /// The token that identifies a set of keys for an active secure channel.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -8438,9 +8691,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A unique identifier for the channel.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ChannelId", IsRequired = false, Order = 1)]
         public uint ChannelId
         {
@@ -8448,9 +8699,7 @@ namespace Opc.Ua
             set { m_channelId = value; }
         }
 
-        /// <summary>
-        /// A unique identifier for the current token.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TokenId", IsRequired = false, Order = 2)]
         public uint TokenId
         {
@@ -8458,9 +8707,7 @@ namespace Opc.Ua
             set { m_tokenId = value; }
         }
 
-        /// <summary>
-        /// When the channel was created.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "CreatedAt", IsRequired = false, Order = 3)]
         public DateTime CreatedAt
         {
@@ -8468,9 +8715,7 @@ namespace Opc.Ua
             set { m_createdAt = value; }
         }
 
-        /// <summary>
-        /// When the channel will expiry.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RevisedLifetime", IsRequired = false, Order = 4)]
         public uint RevisedLifetime
         {
@@ -8547,10 +8792,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ChannelSecurityToken clone = (ChannelSecurityToken)this.MemberwiseClone();
+            return (ChannelSecurityToken)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ChannelSecurityToken clone = (ChannelSecurityToken)base.MemberwiseClone();
 
             clone.m_channelId = (uint)Utils.Clone(this.m_channelId);
             clone.m_tokenId = (uint)Utils.Clone(this.m_tokenId);
@@ -8574,7 +8827,7 @@ namespace Opc.Ua
     #region OpenSecureChannelRequest Class
     #if (!OPCUA_EXCLUDE_OpenSecureChannelRequest)
     /// <summary>
-    /// Creates a secure channel with a server.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -8615,7 +8868,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all requests sent to a server.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -8636,9 +8889,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// The version of protocol used by the client.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ClientProtocolVersion", IsRequired = false, Order = 2)]
         public uint ClientProtocolVersion
         {
@@ -8646,9 +8897,7 @@ namespace Opc.Ua
             set { m_clientProtocolVersion = value; }
         }
 
-        /// <summary>
-        /// Whether the channel is being created or renewed.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RequestType", IsRequired = false, Order = 3)]
         public SecurityTokenRequestType RequestType
         {
@@ -8656,9 +8905,7 @@ namespace Opc.Ua
             set { m_requestType = value; }
         }
 
-        /// <summary>
-        /// The security mode to use with the channel.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SecurityMode", IsRequired = false, Order = 4)]
         public MessageSecurityMode SecurityMode
         {
@@ -8666,9 +8913,7 @@ namespace Opc.Ua
             set { m_securityMode = value; }
         }
 
-        /// <summary>
-        /// A random number generated by the client.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ClientNonce", IsRequired = false, Order = 5)]
         public byte[] ClientNonce
         {
@@ -8676,9 +8921,7 @@ namespace Opc.Ua
             set { m_clientNonce = value; }
         }
 
-        /// <summary>
-        /// The channel lifetime in milliseconds.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RequestedLifetime", IsRequired = false, Order = 6)]
         public uint RequestedLifetime
         {
@@ -8761,10 +9004,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            OpenSecureChannelRequest clone = (OpenSecureChannelRequest)this.MemberwiseClone();
+            return (OpenSecureChannelRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            OpenSecureChannelRequest clone = (OpenSecureChannelRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_clientProtocolVersion = (uint)Utils.Clone(this.m_clientProtocolVersion);
@@ -8792,7 +9043,7 @@ namespace Opc.Ua
     #region OpenSecureChannelResponse Class
     #if (!OPCUA_EXCLUDE_OpenSecureChannelResponse)
     /// <summary>
-    /// Creates a secure channel with a server.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -8831,7 +9082,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all responses returned by servers.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -8852,9 +9103,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// The version of protocol used by the server.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ServerProtocolVersion", IsRequired = false, Order = 2)]
         public uint ServerProtocolVersion
         {
@@ -8863,7 +9112,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The token that identifies the new secure channel.
+        /// 
         /// </summary>
         [DataMember(Name = "SecurityToken", IsRequired = false, Order = 3)]
         public ChannelSecurityToken SecurityToken
@@ -8884,9 +9133,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A random number generated by the server.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ServerNonce", IsRequired = false, Order = 4)]
         public byte[] ServerNonce
         {
@@ -8963,10 +9210,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            OpenSecureChannelResponse clone = (OpenSecureChannelResponse)this.MemberwiseClone();
+            return (OpenSecureChannelResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            OpenSecureChannelResponse clone = (OpenSecureChannelResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_serverProtocolVersion = (uint)Utils.Clone(this.m_serverProtocolVersion);
@@ -8990,7 +9245,7 @@ namespace Opc.Ua
     #region CloseSecureChannelRequest Class
     #if (!OPCUA_EXCLUDE_CloseSecureChannelRequest)
     /// <summary>
-    /// Closes a secure channel.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -9026,7 +9281,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all requests sent to a server.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -9107,10 +9362,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            CloseSecureChannelRequest clone = (CloseSecureChannelRequest)this.MemberwiseClone();
+            return (CloseSecureChannelRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CloseSecureChannelRequest clone = (CloseSecureChannelRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
 
@@ -9128,7 +9391,7 @@ namespace Opc.Ua
     #region CloseSecureChannelResponse Class
     #if (!OPCUA_EXCLUDE_CloseSecureChannelResponse)
     /// <summary>
-    /// Closes a secure channel.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -9164,7 +9427,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all responses returned by servers.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -9245,10 +9508,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            CloseSecureChannelResponse clone = (CloseSecureChannelResponse)this.MemberwiseClone();
+            return (CloseSecureChannelResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CloseSecureChannelResponse clone = (CloseSecureChannelResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
 
@@ -9266,7 +9537,7 @@ namespace Opc.Ua
     #region SignedSoftwareCertificate Class
     #if (!OPCUA_EXCLUDE_SignedSoftwareCertificate)
     /// <summary>
-    /// A software certificate with a digital signature.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -9302,9 +9573,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The data of the certificate.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "CertificateData", IsRequired = false, Order = 1)]
         public byte[] CertificateData
         {
@@ -9312,9 +9581,7 @@ namespace Opc.Ua
             set { m_certificateData = value; }
         }
 
-        /// <summary>
-        /// The digital signature.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Signature", IsRequired = false, Order = 2)]
         public byte[] Signature
         {
@@ -9385,10 +9652,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            SignedSoftwareCertificate clone = (SignedSoftwareCertificate)this.MemberwiseClone();
+            return (SignedSoftwareCertificate)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            SignedSoftwareCertificate clone = (SignedSoftwareCertificate)base.MemberwiseClone();
 
             clone.m_certificateData = (byte[])Utils.Clone(this.m_certificateData);
             clone.m_signature = (byte[])Utils.Clone(this.m_signature);
@@ -9410,7 +9685,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfSignedSoftwareCertificate", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "SignedSoftwareCertificate")]
+    #if !NET_STANDARD
     public partial class SignedSoftwareCertificateCollection : List<SignedSoftwareCertificate>, ICloneable
+    #else
+    public partial class SignedSoftwareCertificateCollection : List<SignedSoftwareCertificate>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -9457,11 +9736,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (SignedSoftwareCertificateCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             SignedSoftwareCertificateCollection clone = new SignedSoftwareCertificateCollection(this.Count);
 
@@ -9472,7 +9760,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -9481,7 +9768,7 @@ namespace Opc.Ua
     #region SignatureData Class
     #if (!OPCUA_EXCLUDE_SignatureData)
     /// <summary>
-    /// A digital signature.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -9517,9 +9804,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The cryptography algorithm used to create the signature.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Algorithm", IsRequired = false, Order = 1)]
         public string Algorithm
         {
@@ -9527,9 +9812,7 @@ namespace Opc.Ua
             set { m_algorithm = value; }
         }
 
-        /// <summary>
-        /// The signature.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Signature", IsRequired = false, Order = 2)]
         public byte[] Signature
         {
@@ -9600,10 +9883,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            SignatureData clone = (SignatureData)this.MemberwiseClone();
+            return (SignatureData)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            SignatureData clone = (SignatureData)base.MemberwiseClone();
 
             clone.m_algorithm = (string)Utils.Clone(this.m_algorithm);
             clone.m_signature = (byte[])Utils.Clone(this.m_signature);
@@ -9623,7 +9914,7 @@ namespace Opc.Ua
     #region CreateSessionRequest Class
     #if (!OPCUA_EXCLUDE_CreateSessionRequest)
     /// <summary>
-    /// Creates a new session with the server.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -9667,7 +9958,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all requests sent to a server.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -9689,7 +9980,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// Describes the client application.
+        /// 
         /// </summary>
         [DataMember(Name = "ClientDescription", IsRequired = false, Order = 2)]
         public ApplicationDescription ClientDescription
@@ -9710,9 +10001,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// The URI of the server that the client wants to create a session with.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ServerUri", IsRequired = false, Order = 3)]
         public string ServerUri
         {
@@ -9720,9 +10009,7 @@ namespace Opc.Ua
             set { m_serverUri = value; }
         }
 
-        /// <summary>
-        /// The URL that the client used to connect to the server.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EndpointUrl", IsRequired = false, Order = 4)]
         public string EndpointUrl
         {
@@ -9730,9 +10017,7 @@ namespace Opc.Ua
             set { m_endpointUrl = value; }
         }
 
-        /// <summary>
-        /// A name for the session provided by the client.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SessionName", IsRequired = false, Order = 5)]
         public string SessionName
         {
@@ -9740,9 +10025,7 @@ namespace Opc.Ua
             set { m_sessionName = value; }
         }
 
-        /// <summary>
-        /// A random number generated by the client.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ClientNonce", IsRequired = false, Order = 6)]
         public byte[] ClientNonce
         {
@@ -9750,9 +10033,7 @@ namespace Opc.Ua
             set { m_clientNonce = value; }
         }
 
-        /// <summary>
-        /// The application certificate for the client.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ClientCertificate", IsRequired = false, Order = 7)]
         public byte[] ClientCertificate
         {
@@ -9760,9 +10041,7 @@ namespace Opc.Ua
             set { m_clientCertificate = value; }
         }
 
-        /// <summary>
-        /// The requested session timeout in milliseconds.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RequestedSessionTimeout", IsRequired = false, Order = 8)]
         public double RequestedSessionTimeout
         {
@@ -9770,9 +10049,7 @@ namespace Opc.Ua
             set { m_requestedSessionTimeout = value; }
         }
 
-        /// <summary>
-        /// The maximum message size accepted by the client.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MaxResponseMessageSize", IsRequired = false, Order = 9)]
         public uint MaxResponseMessageSize
         {
@@ -9864,10 +10141,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            CreateSessionRequest clone = (CreateSessionRequest)this.MemberwiseClone();
+            return (CreateSessionRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CreateSessionRequest clone = (CreateSessionRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_clientDescription = (ApplicationDescription)Utils.Clone(this.m_clientDescription);
@@ -9901,7 +10186,7 @@ namespace Opc.Ua
     #region CreateSessionResponse Class
     #if (!OPCUA_EXCLUDE_CreateSessionResponse)
     /// <summary>
-    /// Creates a new session with the server.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -9946,7 +10231,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all responses returned by servers.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -9967,9 +10252,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A identifier which uniquely identifies the session.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SessionId", IsRequired = false, Order = 2)]
         public NodeId SessionId
         {
@@ -9977,9 +10260,7 @@ namespace Opc.Ua
             set { m_sessionId = value; }
         }
 
-        /// <summary>
-        /// The token used to authenticate the client in subsequent requests.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "AuthenticationToken", IsRequired = false, Order = 3)]
         public NodeId AuthenticationToken
         {
@@ -9987,9 +10268,7 @@ namespace Opc.Ua
             set { m_authenticationToken = value; }
         }
 
-        /// <summary>
-        /// The session timeout in milliseconds.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RevisedSessionTimeout", IsRequired = false, Order = 4)]
         public double RevisedSessionTimeout
         {
@@ -9997,9 +10276,7 @@ namespace Opc.Ua
             set { m_revisedSessionTimeout = value; }
         }
 
-        /// <summary>
-        /// A random number generated by the server.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ServerNonce", IsRequired = false, Order = 5)]
         public byte[] ServerNonce
         {
@@ -10007,9 +10284,7 @@ namespace Opc.Ua
             set { m_serverNonce = value; }
         }
 
-        /// <summary>
-        /// The application certificate for the server.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ServerCertificate", IsRequired = false, Order = 6)]
         public byte[] ServerCertificate
         {
@@ -10018,7 +10293,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The endpoints provided by the server.
+        /// 
         /// </summary>
         [DataMember(Name = "ServerEndpoints", IsRequired = false, Order = 7)]
         public EndpointDescriptionCollection ServerEndpoints
@@ -10040,7 +10315,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The software certificates owned by the server.
+        /// 
         /// </summary>
         [DataMember(Name = "ServerSoftwareCertificates", IsRequired = false, Order = 8)]
         public SignedSoftwareCertificateCollection ServerSoftwareCertificates
@@ -10062,7 +10337,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A signature created with the server certificate.
+        /// 
         /// </summary>
         [DataMember(Name = "ServerSignature", IsRequired = false, Order = 9)]
         public SignatureData ServerSignature
@@ -10083,9 +10358,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// The maximum message size accepted by the server.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MaxRequestMessageSize", IsRequired = false, Order = 10)]
         public uint MaxRequestMessageSize
         {
@@ -10180,10 +10453,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            CreateSessionResponse clone = (CreateSessionResponse)this.MemberwiseClone();
+            return (CreateSessionResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CreateSessionResponse clone = (CreateSessionResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_sessionId = (NodeId)Utils.Clone(this.m_sessionId);
@@ -10219,7 +10500,7 @@ namespace Opc.Ua
     #region UserIdentityToken Class
     #if (!OPCUA_EXCLUDE_UserIdentityToken)
     /// <summary>
-    /// A base type for a user identity token.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -10254,9 +10535,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The policy id specified in a user token policy for the endpoint being used.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "PolicyId", IsRequired = false, Order = 1)]
         public string PolicyId
         {
@@ -10324,10 +10603,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            UserIdentityToken clone = (UserIdentityToken)this.MemberwiseClone();
+            return (UserIdentityToken)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            UserIdentityToken clone = (UserIdentityToken)base.MemberwiseClone();
 
             clone.m_policyId = (string)Utils.Clone(this.m_policyId);
 
@@ -10345,7 +10632,7 @@ namespace Opc.Ua
     #region AnonymousIdentityToken Class
     #if (!OPCUA_EXCLUDE_AnonymousIdentityToken)
     /// <summary>
-    /// A token representing an anonymous user.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -10439,12 +10726,20 @@ namespace Opc.Ua
 
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            AnonymousIdentityToken clone = (AnonymousIdentityToken)base.Clone();
+            return (AnonymousIdentityToken)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            AnonymousIdentityToken clone = (AnonymousIdentityToken)base.MemberwiseClone();
 
 
             return clone;
@@ -10460,7 +10755,7 @@ namespace Opc.Ua
     #region UserNameIdentityToken Class
     #if (!OPCUA_EXCLUDE_UserNameIdentityToken)
     /// <summary>
-    /// A token representing a user identified by a user name and password.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -10497,9 +10792,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The user name.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "UserName", IsRequired = false, Order = 1)]
         public string UserName
         {
@@ -10507,9 +10800,7 @@ namespace Opc.Ua
             set { m_userName = value; }
         }
 
-        /// <summary>
-        /// The password encrypted with the server certificate.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Password", IsRequired = false, Order = 2)]
         public byte[] Password
         {
@@ -10517,9 +10808,7 @@ namespace Opc.Ua
             set { m_password = value; }
         }
 
-        /// <summary>
-        /// The algorithm used to encrypt the password.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EncryptionAlgorithm", IsRequired = false, Order = 3)]
         public string EncryptionAlgorithm
         {
@@ -10596,12 +10885,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_encryptionAlgorithm, value.m_encryptionAlgorithm)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            UserNameIdentityToken clone = (UserNameIdentityToken)base.Clone();
+            return (UserNameIdentityToken)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            UserNameIdentityToken clone = (UserNameIdentityToken)base.MemberwiseClone();
 
             clone.m_userName = (string)Utils.Clone(this.m_userName);
             clone.m_password = (byte[])Utils.Clone(this.m_password);
@@ -10623,7 +10920,7 @@ namespace Opc.Ua
     #region X509IdentityToken Class
     #if (!OPCUA_EXCLUDE_X509IdentityToken)
     /// <summary>
-    /// A token representing a user identified by an X509 certificate.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -10658,9 +10955,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The certificate.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "CertificateData", IsRequired = false, Order = 1)]
         public byte[] CertificateData
         {
@@ -10731,12 +11026,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_certificateData, value.m_certificateData)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            X509IdentityToken clone = (X509IdentityToken)base.Clone();
+            return (X509IdentityToken)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            X509IdentityToken clone = (X509IdentityToken)base.MemberwiseClone();
 
             clone.m_certificateData = (byte[])Utils.Clone(this.m_certificateData);
 
@@ -10754,7 +11057,7 @@ namespace Opc.Ua
     #region IssuedIdentityToken Class
     #if (!OPCUA_EXCLUDE_IssuedIdentityToken)
     /// <summary>
-    /// A token representing a user identified by a WS-Security XML token.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -10790,9 +11093,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The XML token encrypted with the server certificate.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TokenData", IsRequired = false, Order = 1)]
         public byte[] TokenData
         {
@@ -10800,9 +11101,7 @@ namespace Opc.Ua
             set { m_tokenData = value; }
         }
 
-        /// <summary>
-        /// The algorithm used to encrypt the certificate.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EncryptionAlgorithm", IsRequired = false, Order = 2)]
         public string EncryptionAlgorithm
         {
@@ -10876,12 +11175,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_encryptionAlgorithm, value.m_encryptionAlgorithm)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            IssuedIdentityToken clone = (IssuedIdentityToken)base.Clone();
+            return (IssuedIdentityToken)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            IssuedIdentityToken clone = (IssuedIdentityToken)base.MemberwiseClone();
 
             clone.m_tokenData = (byte[])Utils.Clone(this.m_tokenData);
             clone.m_encryptionAlgorithm = (string)Utils.Clone(this.m_encryptionAlgorithm);
@@ -10901,7 +11208,7 @@ namespace Opc.Ua
     #region ActivateSessionRequest Class
     #if (!OPCUA_EXCLUDE_ActivateSessionRequest)
     /// <summary>
-    /// Activates a session with the server.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -10942,7 +11249,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all requests sent to a server.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -10964,7 +11271,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A signature created with the client certificate from the last server nonce returned by the server.
+        /// 
         /// </summary>
         [DataMember(Name = "ClientSignature", IsRequired = false, Order = 2)]
         public SignatureData ClientSignature
@@ -10986,7 +11293,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The software certificates owned by the client.
+        /// 
         /// </summary>
         [DataMember(Name = "ClientSoftwareCertificates", IsRequired = false, Order = 3)]
         public SignedSoftwareCertificateCollection ClientSoftwareCertificates
@@ -11008,7 +11315,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The locales to use with the session.
+        /// 
         /// </summary>
         [DataMember(Name = "LocaleIds", IsRequired = false, Order = 4)]
         public StringCollection LocaleIds
@@ -11029,9 +11336,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// The user identity to use with the session.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "UserIdentityToken", IsRequired = false, Order = 5)]
         public ExtensionObject UserIdentityToken
         {
@@ -11040,7 +11345,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A digital signature created with the user identity token.
+        /// 
         /// </summary>
         [DataMember(Name = "UserTokenSignature", IsRequired = false, Order = 6)]
         public SignatureData UserTokenSignature
@@ -11136,10 +11441,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ActivateSessionRequest clone = (ActivateSessionRequest)this.MemberwiseClone();
+            return (ActivateSessionRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ActivateSessionRequest clone = (ActivateSessionRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_clientSignature = (SignatureData)Utils.Clone(this.m_clientSignature);
@@ -11167,7 +11480,7 @@ namespace Opc.Ua
     #region ActivateSessionResponse Class
     #if (!OPCUA_EXCLUDE_ActivateSessionResponse)
     /// <summary>
-    /// Activates a session with the server.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -11206,7 +11519,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all responses returned by servers.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -11227,9 +11540,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A random number generated by the server.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ServerNonce", IsRequired = false, Order = 2)]
         public byte[] ServerNonce
         {
@@ -11238,7 +11549,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// Any errors during validation of the software certificates.
+        /// 
         /// </summary>
         [DataMember(Name = "Results", IsRequired = false, Order = 3)]
         public StatusCodeCollection Results
@@ -11260,7 +11571,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The diagnostics associated with the software certificates results.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 4)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -11350,10 +11661,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ActivateSessionResponse clone = (ActivateSessionResponse)this.MemberwiseClone();
+            return (ActivateSessionResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ActivateSessionResponse clone = (ActivateSessionResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_serverNonce = (byte[])Utils.Clone(this.m_serverNonce);
@@ -11377,7 +11696,7 @@ namespace Opc.Ua
     #region CloseSessionRequest Class
     #if (!OPCUA_EXCLUDE_CloseSessionRequest)
     /// <summary>
-    /// Closes a session with the server.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -11414,7 +11733,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all requests sent to a server.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -11435,9 +11754,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// If TRUE all subscriptions are deleted when the session is closed.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DeleteSubscriptions", IsRequired = false, Order = 2)]
         public bool DeleteSubscriptions
         {
@@ -11508,10 +11825,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            CloseSessionRequest clone = (CloseSessionRequest)this.MemberwiseClone();
+            return (CloseSessionRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CloseSessionRequest clone = (CloseSessionRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_deleteSubscriptions = (bool)Utils.Clone(this.m_deleteSubscriptions);
@@ -11531,7 +11856,7 @@ namespace Opc.Ua
     #region CloseSessionResponse Class
     #if (!OPCUA_EXCLUDE_CloseSessionResponse)
     /// <summary>
-    /// Closes a session with the server.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -11567,7 +11892,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all responses returned by servers.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -11648,10 +11973,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            CloseSessionResponse clone = (CloseSessionResponse)this.MemberwiseClone();
+            return (CloseSessionResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CloseSessionResponse clone = (CloseSessionResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
 
@@ -11669,7 +12002,7 @@ namespace Opc.Ua
     #region CancelRequest Class
     #if (!OPCUA_EXCLUDE_CancelRequest)
     /// <summary>
-    /// Cancels an outstanding request.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -11706,7 +12039,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all requests sent to a server.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -11727,9 +12060,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// The handle assigned by the client to the requests being cancelled.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RequestHandle", IsRequired = false, Order = 2)]
         public uint RequestHandle
         {
@@ -11800,10 +12131,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            CancelRequest clone = (CancelRequest)this.MemberwiseClone();
+            return (CancelRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CancelRequest clone = (CancelRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_requestHandle = (uint)Utils.Clone(this.m_requestHandle);
@@ -11823,7 +12162,7 @@ namespace Opc.Ua
     #region CancelResponse Class
     #if (!OPCUA_EXCLUDE_CancelResponse)
     /// <summary>
-    /// Cancels an outstanding request.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -11860,7 +12199,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all responses returned by servers.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -11881,9 +12220,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// The number of requests successfully cancelled.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "CancelCount", IsRequired = false, Order = 2)]
         public uint CancelCount
         {
@@ -11954,10 +12291,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            CancelResponse clone = (CancelResponse)this.MemberwiseClone();
+            return (CancelResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CancelResponse clone = (CancelResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_cancelCount = (uint)Utils.Clone(this.m_cancelCount);
@@ -11977,202 +12322,138 @@ namespace Opc.Ua
     #region NodeAttributesMask Enumeration
     #if (!OPCUA_EXCLUDE_NodeAttributesMask)
     /// <summary>
-    /// The bits used to specify default attributes for a new node.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum NodeAttributesMask
     {
-        /// <summary>
-        /// No attribuites provided.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "None_0")]
         None = 0,
 
-        /// <summary>
-        /// The access level attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "AccessLevel_1")]
         AccessLevel = 1,
 
-        /// <summary>
-        /// The array dimensions attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ArrayDimensions_2")]
         ArrayDimensions = 2,
 
-        /// <summary>
-        /// The browse name attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "BrowseName_4")]
         BrowseName = 4,
 
-        /// <summary>
-        /// The contains no loops attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ContainsNoLoops_8")]
         ContainsNoLoops = 8,
 
-        /// <summary>
-        /// The data type attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DataType_16")]
         DataType = 16,
 
-        /// <summary>
-        /// The description attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Description_32")]
         Description = 32,
 
-        /// <summary>
-        /// The display name attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DisplayName_64")]
         DisplayName = 64,
 
-        /// <summary>
-        /// The event notifier attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "EventNotifier_128")]
         EventNotifier = 128,
 
-        /// <summary>
-        /// The executable attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Executable_256")]
         Executable = 256,
 
-        /// <summary>
-        /// The historizing attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Historizing_512")]
         Historizing = 512,
 
-        /// <summary>
-        /// The inverse name attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "InverseName_1024")]
         InverseName = 1024,
 
-        /// <summary>
-        /// The is abstract attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "IsAbstract_2048")]
         IsAbstract = 2048,
 
-        /// <summary>
-        /// The minimum sampling interval attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MinimumSamplingInterval_4096")]
         MinimumSamplingInterval = 4096,
 
-        /// <summary>
-        /// The node class attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "NodeClass_8192")]
         NodeClass = 8192,
 
-        /// <summary>
-        /// The node id attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "NodeId_16384")]
         NodeId = 16384,
 
-        /// <summary>
-        /// The symmetric attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Symmetric_32768")]
         Symmetric = 32768,
 
-        /// <summary>
-        /// The user access level attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UserAccessLevel_65536")]
         UserAccessLevel = 65536,
 
-        /// <summary>
-        /// The user executable attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UserExecutable_131072")]
         UserExecutable = 131072,
 
-        /// <summary>
-        /// The user write mask attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UserWriteMask_262144")]
         UserWriteMask = 262144,
 
-        /// <summary>
-        /// The value rank attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ValueRank_524288")]
         ValueRank = 524288,
 
-        /// <summary>
-        /// The write mask attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "WriteMask_1048576")]
         WriteMask = 1048576,
 
-        /// <summary>
-        /// The value attribute is specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Value_2097152")]
         Value = 2097152,
 
-        /// <summary>
-        /// All attributes are specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "All_4194303")]
         All = 4194303,
 
-        /// <summary>
-        /// All base attributes are specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "BaseNode_1335396")]
         BaseNode = 1335396,
 
-        /// <summary>
-        /// All object attributes are specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Object_1335524")]
         Object = 1335524,
 
-        /// <summary>
-        /// All object type or data type attributes are specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ObjectTypeOrDataType_1337444")]
         ObjectTypeOrDataType = 1337444,
 
-        /// <summary>
-        /// All variable attributes are specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Variable_4026999")]
         Variable = 4026999,
 
-        /// <summary>
-        /// All variable type attributes are specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "VariableType_3958902")]
         VariableType = 3958902,
 
-        /// <summary>
-        /// All method attributes are specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Method_1466724")]
         Method = 1466724,
 
-        /// <summary>
-        /// All reference type attributes are specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ReferenceType_1371236")]
         ReferenceType = 1371236,
 
-        /// <summary>
-        /// All view attributes are specified.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "View_1335532")]
         View = 1335532,
     }
@@ -12182,7 +12463,7 @@ namespace Opc.Ua
     #region NodeAttributes Class
     #if (!OPCUA_EXCLUDE_NodeAttributes)
     /// <summary>
-    /// The base attributes for all nodes.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -12221,9 +12502,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A mask indicating which attributes have been provided.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SpecifiedAttributes", IsRequired = false, Order = 1)]
         public uint SpecifiedAttributes
         {
@@ -12231,9 +12510,7 @@ namespace Opc.Ua
             set { m_specifiedAttributes = value; }
         }
 
-        /// <summary>
-        /// A human readable name for the node.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DisplayName", IsRequired = false, Order = 2)]
         public LocalizedText DisplayName
         {
@@ -12241,9 +12518,7 @@ namespace Opc.Ua
             set { m_displayName = value; }
         }
 
-        /// <summary>
-        /// A description for the node.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Description", IsRequired = false, Order = 3)]
         public LocalizedText Description
         {
@@ -12251,9 +12526,7 @@ namespace Opc.Ua
             set { m_description = value; }
         }
 
-        /// <summary>
-        /// A mask which specifies which attributes are writable.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "WriteMask", IsRequired = false, Order = 4)]
         public uint WriteMask
         {
@@ -12261,9 +12534,7 @@ namespace Opc.Ua
             set { m_writeMask = value; }
         }
 
-        /// <summary>
-        /// A mask which specifies which attributes are writable by the current user.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "UserWriteMask", IsRequired = false, Order = 5)]
         public uint UserWriteMask
         {
@@ -12343,10 +12614,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            NodeAttributes clone = (NodeAttributes)this.MemberwiseClone();
+            return (NodeAttributes)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            NodeAttributes clone = (NodeAttributes)base.MemberwiseClone();
 
             clone.m_specifiedAttributes = (uint)Utils.Clone(this.m_specifiedAttributes);
             clone.m_displayName = (LocalizedText)Utils.Clone(this.m_displayName);
@@ -12372,7 +12651,7 @@ namespace Opc.Ua
     #region ObjectAttributes Class
     #if (!OPCUA_EXCLUDE_ObjectAttributes)
     /// <summary>
-    /// The attributes for an object node.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -12407,9 +12686,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A mask indicating what events are produced by the object.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EventNotifier", IsRequired = false, Order = 1)]
         public byte EventNotifier
         {
@@ -12480,12 +12757,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_eventNotifier, value.m_eventNotifier)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            ObjectAttributes clone = (ObjectAttributes)base.Clone();
+            return (ObjectAttributes)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ObjectAttributes clone = (ObjectAttributes)base.MemberwiseClone();
 
             clone.m_eventNotifier = (byte)Utils.Clone(this.m_eventNotifier);
 
@@ -12503,7 +12788,7 @@ namespace Opc.Ua
     #region VariableAttributes Class
     #if (!OPCUA_EXCLUDE_VariableAttributes)
     /// <summary>
-    /// The attributes for a variable node.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -12545,9 +12830,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The value of the variable.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Value", IsRequired = false, Order = 1)]
         public Variant Value
         {
@@ -12555,9 +12838,7 @@ namespace Opc.Ua
             set { m_value = value; }
         }
 
-        /// <summary>
-        /// The data type of the value.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DataType", IsRequired = false, Order = 2)]
         public NodeId DataType
         {
@@ -12565,9 +12846,7 @@ namespace Opc.Ua
             set { m_dataType = value; }
         }
 
-        /// <summary>
-        /// Whether the value is an array type and the rank of the array if it is.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ValueRank", IsRequired = false, Order = 3)]
         public int ValueRank
         {
@@ -12576,7 +12855,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The number of dimensions if the value is an array type and one or more dimensions have a fixed length.
+        /// 
         /// </summary>
         [DataMember(Name = "ArrayDimensions", IsRequired = false, Order = 4)]
         public UInt32Collection ArrayDimensions
@@ -12597,9 +12876,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A bit mask specifying how the value may be accessed.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "AccessLevel", IsRequired = false, Order = 5)]
         public byte AccessLevel
         {
@@ -12607,9 +12884,7 @@ namespace Opc.Ua
             set { m_accessLevel = value; }
         }
 
-        /// <summary>
-        /// A bit mask specifying how the value may be accessed by the current user.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "UserAccessLevel", IsRequired = false, Order = 6)]
         public byte UserAccessLevel
         {
@@ -12617,9 +12892,7 @@ namespace Opc.Ua
             set { m_userAccessLevel = value; }
         }
 
-        /// <summary>
-        /// The minimum possible sampling interval for the value.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MinimumSamplingInterval", IsRequired = false, Order = 7)]
         public double MinimumSamplingInterval
         {
@@ -12627,9 +12900,7 @@ namespace Opc.Ua
             set { m_minimumSamplingInterval = value; }
         }
 
-        /// <summary>
-        /// TRUE if the server is current storing the history of the value.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Historizing", IsRequired = false, Order = 8)]
         public bool Historizing
         {
@@ -12721,12 +12992,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_historizing, value.m_historizing)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            VariableAttributes clone = (VariableAttributes)base.Clone();
+            return (VariableAttributes)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            VariableAttributes clone = (VariableAttributes)base.MemberwiseClone();
 
             clone.m_value = (Variant)Utils.Clone(this.m_value);
             clone.m_dataType = (NodeId)Utils.Clone(this.m_dataType);
@@ -12758,7 +13037,7 @@ namespace Opc.Ua
     #region MethodAttributes Class
     #if (!OPCUA_EXCLUDE_MethodAttributes)
     /// <summary>
-    /// The attributes for a method node.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -12794,9 +13073,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// If TRUE the method can be called.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Executable", IsRequired = false, Order = 1)]
         public bool Executable
         {
@@ -12804,9 +13081,7 @@ namespace Opc.Ua
             set { m_executable = value; }
         }
 
-        /// <summary>
-        /// If TRUE the method can be called by the current user.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "UserExecutable", IsRequired = false, Order = 2)]
         public bool UserExecutable
         {
@@ -12880,12 +13155,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_userExecutable, value.m_userExecutable)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            MethodAttributes clone = (MethodAttributes)base.Clone();
+            return (MethodAttributes)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            MethodAttributes clone = (MethodAttributes)base.MemberwiseClone();
 
             clone.m_executable = (bool)Utils.Clone(this.m_executable);
             clone.m_userExecutable = (bool)Utils.Clone(this.m_userExecutable);
@@ -12905,7 +13188,7 @@ namespace Opc.Ua
     #region ObjectTypeAttributes Class
     #if (!OPCUA_EXCLUDE_ObjectTypeAttributes)
     /// <summary>
-    /// The attributes for an object type node.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -12940,9 +13223,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// If TRUE the type is abstract and only subtypes of it appear in the address space.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IsAbstract", IsRequired = false, Order = 1)]
         public bool IsAbstract
         {
@@ -13013,12 +13294,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_isAbstract, value.m_isAbstract)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            ObjectTypeAttributes clone = (ObjectTypeAttributes)base.Clone();
+            return (ObjectTypeAttributes)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ObjectTypeAttributes clone = (ObjectTypeAttributes)base.MemberwiseClone();
 
             clone.m_isAbstract = (bool)Utils.Clone(this.m_isAbstract);
 
@@ -13036,7 +13325,7 @@ namespace Opc.Ua
     #region VariableTypeAttributes Class
     #if (!OPCUA_EXCLUDE_VariableTypeAttributes)
     /// <summary>
-    /// The attributes for a variable type node.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -13075,9 +13364,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The default value when creating new instances.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Value", IsRequired = false, Order = 1)]
         public Variant Value
         {
@@ -13085,9 +13372,7 @@ namespace Opc.Ua
             set { m_value = value; }
         }
 
-        /// <summary>
-        /// The data type of the value.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DataType", IsRequired = false, Order = 2)]
         public NodeId DataType
         {
@@ -13095,9 +13380,7 @@ namespace Opc.Ua
             set { m_dataType = value; }
         }
 
-        /// <summary>
-        /// Whether the value is an array type and the rank of the array if it is.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ValueRank", IsRequired = false, Order = 3)]
         public int ValueRank
         {
@@ -13106,7 +13389,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The number of dimensions if the value is an array type and one or more dimensions have a fixed length.
+        /// 
         /// </summary>
         [DataMember(Name = "ArrayDimensions", IsRequired = false, Order = 4)]
         public UInt32Collection ArrayDimensions
@@ -13127,9 +13410,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// If TRUE the type is abstract and only subtypes of it appear in the address space.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IsAbstract", IsRequired = false, Order = 5)]
         public bool IsAbstract
         {
@@ -13212,12 +13493,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_isAbstract, value.m_isAbstract)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            VariableTypeAttributes clone = (VariableTypeAttributes)base.Clone();
+            return (VariableTypeAttributes)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            VariableTypeAttributes clone = (VariableTypeAttributes)base.MemberwiseClone();
 
             clone.m_value = (Variant)Utils.Clone(this.m_value);
             clone.m_dataType = (NodeId)Utils.Clone(this.m_dataType);
@@ -13243,7 +13532,7 @@ namespace Opc.Ua
     #region ReferenceTypeAttributes Class
     #if (!OPCUA_EXCLUDE_ReferenceTypeAttributes)
     /// <summary>
-    /// The attributes for a reference type node.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -13280,9 +13569,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// If TRUE the type is abstract and only subtypes of it appear in the address space.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IsAbstract", IsRequired = false, Order = 1)]
         public bool IsAbstract
         {
@@ -13290,9 +13577,7 @@ namespace Opc.Ua
             set { m_isAbstract = value; }
         }
 
-        /// <summary>
-        /// If TRUE the reference type has the same semantics in both directions.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Symmetric", IsRequired = false, Order = 2)]
         public bool Symmetric
         {
@@ -13300,9 +13585,7 @@ namespace Opc.Ua
             set { m_symmetric = value; }
         }
 
-        /// <summary>
-        /// The display name for the reference when following it from target to source.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "InverseName", IsRequired = false, Order = 3)]
         public LocalizedText InverseName
         {
@@ -13379,12 +13662,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_inverseName, value.m_inverseName)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            ReferenceTypeAttributes clone = (ReferenceTypeAttributes)base.Clone();
+            return (ReferenceTypeAttributes)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ReferenceTypeAttributes clone = (ReferenceTypeAttributes)base.MemberwiseClone();
 
             clone.m_isAbstract = (bool)Utils.Clone(this.m_isAbstract);
             clone.m_symmetric = (bool)Utils.Clone(this.m_symmetric);
@@ -13406,7 +13697,7 @@ namespace Opc.Ua
     #region DataTypeAttributes Class
     #if (!OPCUA_EXCLUDE_DataTypeAttributes)
     /// <summary>
-    /// The attributes for a data type node.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -13441,9 +13732,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// If TRUE the type is abstract and only subtypes of it appear in the address space.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IsAbstract", IsRequired = false, Order = 1)]
         public bool IsAbstract
         {
@@ -13514,12 +13803,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_isAbstract, value.m_isAbstract)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            DataTypeAttributes clone = (DataTypeAttributes)base.Clone();
+            return (DataTypeAttributes)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            DataTypeAttributes clone = (DataTypeAttributes)base.MemberwiseClone();
 
             clone.m_isAbstract = (bool)Utils.Clone(this.m_isAbstract);
 
@@ -13537,7 +13834,7 @@ namespace Opc.Ua
     #region ViewAttributes Class
     #if (!OPCUA_EXCLUDE_ViewAttributes)
     /// <summary>
-    /// The attributes for a view node.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -13573,9 +13870,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// If TRUE the view contains a tree of non-looping hierarchical references.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ContainsNoLoops", IsRequired = false, Order = 1)]
         public bool ContainsNoLoops
         {
@@ -13583,9 +13878,7 @@ namespace Opc.Ua
             set { m_containsNoLoops = value; }
         }
 
-        /// <summary>
-        /// A mask indicating whether events are produced by the view.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EventNotifier", IsRequired = false, Order = 2)]
         public byte EventNotifier
         {
@@ -13659,12 +13952,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_eventNotifier, value.m_eventNotifier)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            ViewAttributes clone = (ViewAttributes)base.Clone();
+            return (ViewAttributes)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ViewAttributes clone = (ViewAttributes)base.MemberwiseClone();
 
             clone.m_containsNoLoops = (bool)Utils.Clone(this.m_containsNoLoops);
             clone.m_eventNotifier = (byte)Utils.Clone(this.m_eventNotifier);
@@ -13684,7 +13985,7 @@ namespace Opc.Ua
     #region AddNodesItem Class
     #if (!OPCUA_EXCLUDE_AddNodesItem)
     /// <summary>
-    /// A request to add a node to the server address space.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -13725,9 +14026,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The node id for the parent node.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ParentNodeId", IsRequired = false, Order = 1)]
         public ExpandedNodeId ParentNodeId
         {
@@ -13735,9 +14034,7 @@ namespace Opc.Ua
             set { m_parentNodeId = value; }
         }
 
-        /// <summary>
-        /// The type of reference from the parent to the new node.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ReferenceTypeId", IsRequired = false, Order = 2)]
         public NodeId ReferenceTypeId
         {
@@ -13745,9 +14042,7 @@ namespace Opc.Ua
             set { m_referenceTypeId = value; }
         }
 
-        /// <summary>
-        /// The node id requested by the client. If null the server must provide one.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RequestedNewNodeId", IsRequired = false, Order = 3)]
         public ExpandedNodeId RequestedNewNodeId
         {
@@ -13755,9 +14050,7 @@ namespace Opc.Ua
             set { m_requestedNewNodeId = value; }
         }
 
-        /// <summary>
-        /// The browse name for the new node.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "BrowseName", IsRequired = false, Order = 4)]
         public QualifiedName BrowseName
         {
@@ -13765,9 +14058,7 @@ namespace Opc.Ua
             set { m_browseName = value; }
         }
 
-        /// <summary>
-        /// The class of the new node.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NodeClass", IsRequired = false, Order = 5)]
         public NodeClass NodeClass
         {
@@ -13775,9 +14066,7 @@ namespace Opc.Ua
             set { m_nodeClass = value; }
         }
 
-        /// <summary>
-        /// The default attributes for the new node.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NodeAttributes", IsRequired = false, Order = 6)]
         public ExtensionObject NodeAttributes
         {
@@ -13785,9 +14074,7 @@ namespace Opc.Ua
             set { m_nodeAttributes = value; }
         }
 
-        /// <summary>
-        /// The type definition for the new node.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TypeDefinition", IsRequired = false, Order = 7)]
         public ExpandedNodeId TypeDefinition
         {
@@ -13873,10 +14160,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            AddNodesItem clone = (AddNodesItem)this.MemberwiseClone();
+            return (AddNodesItem)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            AddNodesItem clone = (AddNodesItem)base.MemberwiseClone();
 
             clone.m_parentNodeId = (ExpandedNodeId)Utils.Clone(this.m_parentNodeId);
             clone.m_referenceTypeId = (NodeId)Utils.Clone(this.m_referenceTypeId);
@@ -13908,7 +14203,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfAddNodesItem", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "AddNodesItem")]
+    #if !NET_STANDARD
     public partial class AddNodesItemCollection : List<AddNodesItem>, ICloneable
+    #else
+    public partial class AddNodesItemCollection : List<AddNodesItem>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -13955,11 +14254,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (AddNodesItemCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             AddNodesItemCollection clone = new AddNodesItemCollection(this.Count);
 
@@ -13970,7 +14278,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -13979,7 +14286,7 @@ namespace Opc.Ua
     #region AddNodesResult Class
     #if (!OPCUA_EXCLUDE_AddNodesResult)
     /// <summary>
-    /// A result of an add node operation.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -14015,9 +14322,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A code indicating any error during the operation.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StatusCode", IsRequired = false, Order = 1)]
         public StatusCode StatusCode
         {
@@ -14025,9 +14330,7 @@ namespace Opc.Ua
             set { m_statusCode = value; }
         }
 
-        /// <summary>
-        /// The id of the new node.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "AddedNodeId", IsRequired = false, Order = 2)]
         public NodeId AddedNodeId
         {
@@ -14098,10 +14401,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            AddNodesResult clone = (AddNodesResult)this.MemberwiseClone();
+            return (AddNodesResult)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            AddNodesResult clone = (AddNodesResult)base.MemberwiseClone();
 
             clone.m_statusCode = (StatusCode)Utils.Clone(this.m_statusCode);
             clone.m_addedNodeId = (NodeId)Utils.Clone(this.m_addedNodeId);
@@ -14123,7 +14434,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfAddNodesResult", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "AddNodesResult")]
+    #if !NET_STANDARD
     public partial class AddNodesResultCollection : List<AddNodesResult>, ICloneable
+    #else
+    public partial class AddNodesResultCollection : List<AddNodesResult>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -14170,11 +14485,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (AddNodesResultCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             AddNodesResultCollection clone = new AddNodesResultCollection(this.Count);
 
@@ -14185,7 +14509,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -14194,7 +14517,7 @@ namespace Opc.Ua
     #region AddNodesRequest Class
     #if (!OPCUA_EXCLUDE_AddNodesRequest)
     /// <summary>
-    /// Adds one or more nodes to the server address space.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -14231,7 +14554,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all requests sent to a server.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -14253,7 +14576,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The list of nodes to add.
+        /// 
         /// </summary>
         [DataMember(Name = "NodesToAdd", IsRequired = false, Order = 2)]
         public AddNodesItemCollection NodesToAdd
@@ -14337,10 +14660,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            AddNodesRequest clone = (AddNodesRequest)this.MemberwiseClone();
+            return (AddNodesRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            AddNodesRequest clone = (AddNodesRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_nodesToAdd = (AddNodesItemCollection)Utils.Clone(this.m_nodesToAdd);
@@ -14360,7 +14691,7 @@ namespace Opc.Ua
     #region AddNodesResponse Class
     #if (!OPCUA_EXCLUDE_AddNodesResponse)
     /// <summary>
-    /// Adds one or more nodes to the server address space.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -14398,7 +14729,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all responses returned by servers.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -14420,7 +14751,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The results for the add node operations.
+        /// 
         /// </summary>
         [DataMember(Name = "Results", IsRequired = false, Order = 2)]
         public AddNodesResultCollection Results
@@ -14442,7 +14773,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The diagnostics associated with the results returned.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -14529,10 +14860,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            AddNodesResponse clone = (AddNodesResponse)this.MemberwiseClone();
+            return (AddNodesResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            AddNodesResponse clone = (AddNodesResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_results = (AddNodesResultCollection)Utils.Clone(this.m_results);
@@ -14554,7 +14893,7 @@ namespace Opc.Ua
     #region AddReferencesItem Class
     #if (!OPCUA_EXCLUDE_AddReferencesItem)
     /// <summary>
-    /// A request to add a reference to the server address space.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -14594,9 +14933,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The source of the reference.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SourceNodeId", IsRequired = false, Order = 1)]
         public NodeId SourceNodeId
         {
@@ -14604,9 +14941,7 @@ namespace Opc.Ua
             set { m_sourceNodeId = value; }
         }
 
-        /// <summary>
-        /// The type of reference.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ReferenceTypeId", IsRequired = false, Order = 2)]
         public NodeId ReferenceTypeId
         {
@@ -14614,9 +14949,7 @@ namespace Opc.Ua
             set { m_referenceTypeId = value; }
         }
 
-        /// <summary>
-        /// If TRUE the reference is a forward reference.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IsForward", IsRequired = false, Order = 3)]
         public bool IsForward
         {
@@ -14624,9 +14957,7 @@ namespace Opc.Ua
             set { m_isForward = value; }
         }
 
-        /// <summary>
-        /// The URI of the server containing the target (if in another server).
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TargetServerUri", IsRequired = false, Order = 4)]
         public string TargetServerUri
         {
@@ -14634,9 +14965,7 @@ namespace Opc.Ua
             set { m_targetServerUri = value; }
         }
 
-        /// <summary>
-        /// The target of the reference.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TargetNodeId", IsRequired = false, Order = 5)]
         public ExpandedNodeId TargetNodeId
         {
@@ -14644,9 +14973,7 @@ namespace Opc.Ua
             set { m_targetNodeId = value; }
         }
 
-        /// <summary>
-        /// The node class of the target (if known).
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TargetNodeClass", IsRequired = false, Order = 6)]
         public NodeClass TargetNodeClass
         {
@@ -14729,10 +15056,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            AddReferencesItem clone = (AddReferencesItem)this.MemberwiseClone();
+            return (AddReferencesItem)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            AddReferencesItem clone = (AddReferencesItem)base.MemberwiseClone();
 
             clone.m_sourceNodeId = (NodeId)Utils.Clone(this.m_sourceNodeId);
             clone.m_referenceTypeId = (NodeId)Utils.Clone(this.m_referenceTypeId);
@@ -14762,7 +15097,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfAddReferencesItem", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "AddReferencesItem")]
+    #if !NET_STANDARD
     public partial class AddReferencesItemCollection : List<AddReferencesItem>, ICloneable
+    #else
+    public partial class AddReferencesItemCollection : List<AddReferencesItem>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -14809,11 +15148,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (AddReferencesItemCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             AddReferencesItemCollection clone = new AddReferencesItemCollection(this.Count);
 
@@ -14824,7 +15172,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -14833,7 +15180,7 @@ namespace Opc.Ua
     #region AddReferencesRequest Class
     #if (!OPCUA_EXCLUDE_AddReferencesRequest)
     /// <summary>
-    /// Adds one or more references to the server address space.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -14870,7 +15217,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all requests sent to a server.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -14892,7 +15239,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The list of references to add.
+        /// 
         /// </summary>
         [DataMember(Name = "ReferencesToAdd", IsRequired = false, Order = 2)]
         public AddReferencesItemCollection ReferencesToAdd
@@ -14976,10 +15323,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            AddReferencesRequest clone = (AddReferencesRequest)this.MemberwiseClone();
+            return (AddReferencesRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            AddReferencesRequest clone = (AddReferencesRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_referencesToAdd = (AddReferencesItemCollection)Utils.Clone(this.m_referencesToAdd);
@@ -14999,7 +15354,7 @@ namespace Opc.Ua
     #region AddReferencesResponse Class
     #if (!OPCUA_EXCLUDE_AddReferencesResponse)
     /// <summary>
-    /// Adds one or more references to the server address space.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -15037,7 +15392,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all responses returned by servers.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -15059,7 +15414,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The results for the add reference operations.
+        /// 
         /// </summary>
         [DataMember(Name = "Results", IsRequired = false, Order = 2)]
         public StatusCodeCollection Results
@@ -15081,7 +15436,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The diagnostics associated with the results returned.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -15168,10 +15523,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            AddReferencesResponse clone = (AddReferencesResponse)this.MemberwiseClone();
+            return (AddReferencesResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            AddReferencesResponse clone = (AddReferencesResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_results = (StatusCodeCollection)Utils.Clone(this.m_results);
@@ -15193,7 +15556,7 @@ namespace Opc.Ua
     #region DeleteNodesItem Class
     #if (!OPCUA_EXCLUDE_DeleteNodesItem)
     /// <summary>
-    /// A request to delete a node to the server address space.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -15229,9 +15592,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The id of the node to delete.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NodeId", IsRequired = false, Order = 1)]
         public NodeId NodeId
         {
@@ -15239,9 +15600,7 @@ namespace Opc.Ua
             set { m_nodeId = value; }
         }
 
-        /// <summary>
-        /// If TRUE all references to the are deleted as well.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DeleteTargetReferences", IsRequired = false, Order = 2)]
         public bool DeleteTargetReferences
         {
@@ -15312,10 +15671,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            DeleteNodesItem clone = (DeleteNodesItem)this.MemberwiseClone();
+            return (DeleteNodesItem)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            DeleteNodesItem clone = (DeleteNodesItem)base.MemberwiseClone();
 
             clone.m_nodeId = (NodeId)Utils.Clone(this.m_nodeId);
             clone.m_deleteTargetReferences = (bool)Utils.Clone(this.m_deleteTargetReferences);
@@ -15337,7 +15704,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfDeleteNodesItem", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "DeleteNodesItem")]
+    #if !NET_STANDARD
     public partial class DeleteNodesItemCollection : List<DeleteNodesItem>, ICloneable
+    #else
+    public partial class DeleteNodesItemCollection : List<DeleteNodesItem>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -15384,11 +15755,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (DeleteNodesItemCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             DeleteNodesItemCollection clone = new DeleteNodesItemCollection(this.Count);
 
@@ -15399,7 +15779,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -15408,7 +15787,7 @@ namespace Opc.Ua
     #region DeleteNodesRequest Class
     #if (!OPCUA_EXCLUDE_DeleteNodesRequest)
     /// <summary>
-    /// Delete one or more nodes from the server address space.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -15445,7 +15824,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all requests sent to a server.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -15467,7 +15846,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The list of nodes to delete.
+        /// 
         /// </summary>
         [DataMember(Name = "NodesToDelete", IsRequired = false, Order = 2)]
         public DeleteNodesItemCollection NodesToDelete
@@ -15551,10 +15930,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            DeleteNodesRequest clone = (DeleteNodesRequest)this.MemberwiseClone();
+            return (DeleteNodesRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            DeleteNodesRequest clone = (DeleteNodesRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_nodesToDelete = (DeleteNodesItemCollection)Utils.Clone(this.m_nodesToDelete);
@@ -15574,7 +15961,7 @@ namespace Opc.Ua
     #region DeleteNodesResponse Class
     #if (!OPCUA_EXCLUDE_DeleteNodesResponse)
     /// <summary>
-    /// Delete one or more nodes from the server address space.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -15612,7 +15999,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all responses returned by servers.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -15634,7 +16021,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The results for the delete nodes operations.
+        /// 
         /// </summary>
         [DataMember(Name = "Results", IsRequired = false, Order = 2)]
         public StatusCodeCollection Results
@@ -15656,7 +16043,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The diagnostics associated with the results returned.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -15743,10 +16130,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            DeleteNodesResponse clone = (DeleteNodesResponse)this.MemberwiseClone();
+            return (DeleteNodesResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            DeleteNodesResponse clone = (DeleteNodesResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_results = (StatusCodeCollection)Utils.Clone(this.m_results);
@@ -15768,7 +16163,7 @@ namespace Opc.Ua
     #region DeleteReferencesItem Class
     #if (!OPCUA_EXCLUDE_DeleteReferencesItem)
     /// <summary>
-    /// A request to delete a node from the server address space.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -15807,9 +16202,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The source of the reference to delete.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SourceNodeId", IsRequired = false, Order = 1)]
         public NodeId SourceNodeId
         {
@@ -15817,9 +16210,7 @@ namespace Opc.Ua
             set { m_sourceNodeId = value; }
         }
 
-        /// <summary>
-        /// The type of reference to delete.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ReferenceTypeId", IsRequired = false, Order = 2)]
         public NodeId ReferenceTypeId
         {
@@ -15827,9 +16218,7 @@ namespace Opc.Ua
             set { m_referenceTypeId = value; }
         }
 
-        /// <summary>
-        /// If TRUE the a forward reference is deleted.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IsForward", IsRequired = false, Order = 3)]
         public bool IsForward
         {
@@ -15837,9 +16226,7 @@ namespace Opc.Ua
             set { m_isForward = value; }
         }
 
-        /// <summary>
-        /// The target of the reference to delete.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TargetNodeId", IsRequired = false, Order = 4)]
         public ExpandedNodeId TargetNodeId
         {
@@ -15847,9 +16234,7 @@ namespace Opc.Ua
             set { m_targetNodeId = value; }
         }
 
-        /// <summary>
-        /// If TRUE the reference is deleted in both directions.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DeleteBidirectional", IsRequired = false, Order = 5)]
         public bool DeleteBidirectional
         {
@@ -15929,10 +16314,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            DeleteReferencesItem clone = (DeleteReferencesItem)this.MemberwiseClone();
+            return (DeleteReferencesItem)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            DeleteReferencesItem clone = (DeleteReferencesItem)base.MemberwiseClone();
 
             clone.m_sourceNodeId = (NodeId)Utils.Clone(this.m_sourceNodeId);
             clone.m_referenceTypeId = (NodeId)Utils.Clone(this.m_referenceTypeId);
@@ -15960,7 +16353,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfDeleteReferencesItem", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "DeleteReferencesItem")]
+    #if !NET_STANDARD
     public partial class DeleteReferencesItemCollection : List<DeleteReferencesItem>, ICloneable
+    #else
+    public partial class DeleteReferencesItemCollection : List<DeleteReferencesItem>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -16007,11 +16404,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (DeleteReferencesItemCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             DeleteReferencesItemCollection clone = new DeleteReferencesItemCollection(this.Count);
 
@@ -16022,7 +16428,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -16031,7 +16436,7 @@ namespace Opc.Ua
     #region DeleteReferencesRequest Class
     #if (!OPCUA_EXCLUDE_DeleteReferencesRequest)
     /// <summary>
-    /// Delete one or more references from the server address space.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -16068,7 +16473,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all requests sent to a server.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -16090,7 +16495,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The list of references to delete.
+        /// 
         /// </summary>
         [DataMember(Name = "ReferencesToDelete", IsRequired = false, Order = 2)]
         public DeleteReferencesItemCollection ReferencesToDelete
@@ -16174,10 +16579,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            DeleteReferencesRequest clone = (DeleteReferencesRequest)this.MemberwiseClone();
+            return (DeleteReferencesRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            DeleteReferencesRequest clone = (DeleteReferencesRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_referencesToDelete = (DeleteReferencesItemCollection)Utils.Clone(this.m_referencesToDelete);
@@ -16197,7 +16610,7 @@ namespace Opc.Ua
     #region DeleteReferencesResponse Class
     #if (!OPCUA_EXCLUDE_DeleteReferencesResponse)
     /// <summary>
-    /// Delete one or more references from the server address space.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -16235,7 +16648,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all responses returned by servers.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -16257,7 +16670,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The results for the delete reference operations.
+        /// 
         /// </summary>
         [DataMember(Name = "Results", IsRequired = false, Order = 2)]
         public StatusCodeCollection Results
@@ -16279,7 +16692,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The diagnostics associated with the results returned.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -16366,10 +16779,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            DeleteReferencesResponse clone = (DeleteReferencesResponse)this.MemberwiseClone();
+            return (DeleteReferencesResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            DeleteReferencesResponse clone = (DeleteReferencesResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_results = (StatusCodeCollection)Utils.Clone(this.m_results);
@@ -16391,148 +16812,102 @@ namespace Opc.Ua
     #region AttributeWriteMask Enumeration
     #if (!OPCUA_EXCLUDE_AttributeWriteMask)
     /// <summary>
-    /// Define bits used to indicate which attributes are writable.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum AttributeWriteMask
     {
-        /// <summary>
-        /// No attributes are writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "None_0")]
         None = 0,
 
-        /// <summary>
-        /// The access level attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "AccessLevel_1")]
         AccessLevel = 1,
 
-        /// <summary>
-        /// The array dimensions attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ArrayDimensions_2")]
         ArrayDimensions = 2,
 
-        /// <summary>
-        /// The browse name attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "BrowseName_4")]
         BrowseName = 4,
 
-        /// <summary>
-        /// The contains no loops attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ContainsNoLoops_8")]
         ContainsNoLoops = 8,
 
-        /// <summary>
-        /// The data type attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DataType_16")]
         DataType = 16,
 
-        /// <summary>
-        /// The description attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Description_32")]
         Description = 32,
 
-        /// <summary>
-        /// The display name attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DisplayName_64")]
         DisplayName = 64,
 
-        /// <summary>
-        /// The event notifier attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "EventNotifier_128")]
         EventNotifier = 128,
 
-        /// <summary>
-        /// The executable attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Executable_256")]
         Executable = 256,
 
-        /// <summary>
-        /// The historizing attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Historizing_512")]
         Historizing = 512,
 
-        /// <summary>
-        /// The inverse name attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "InverseName_1024")]
         InverseName = 1024,
 
-        /// <summary>
-        /// The is abstract attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "IsAbstract_2048")]
         IsAbstract = 2048,
 
-        /// <summary>
-        /// The minimum sampling interval attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MinimumSamplingInterval_4096")]
         MinimumSamplingInterval = 4096,
 
-        /// <summary>
-        /// The node class attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "NodeClass_8192")]
         NodeClass = 8192,
 
-        /// <summary>
-        /// The node id attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "NodeId_16384")]
         NodeId = 16384,
 
-        /// <summary>
-        /// The symmetric attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Symmetric_32768")]
         Symmetric = 32768,
 
-        /// <summary>
-        /// The user access level attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UserAccessLevel_65536")]
         UserAccessLevel = 65536,
 
-        /// <summary>
-        /// The user executable attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UserExecutable_131072")]
         UserExecutable = 131072,
 
-        /// <summary>
-        /// The user write mask attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UserWriteMask_262144")]
         UserWriteMask = 262144,
 
-        /// <summary>
-        /// The value rank attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ValueRank_524288")]
         ValueRank = 524288,
 
-        /// <summary>
-        /// The write mask attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "WriteMask_1048576")]
         WriteMask = 1048576,
 
-        /// <summary>
-        /// The value attribute is writable.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ValueForVariableType_2097152")]
         ValueForVariableType = 2097152,
     }
@@ -16542,34 +16917,26 @@ namespace Opc.Ua
     #region BrowseDirection Enumeration
     #if (!OPCUA_EXCLUDE_BrowseDirection)
     /// <summary>
-    /// The directions of the references to return.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum BrowseDirection
     {
-        /// <summary>
-        /// Return forward references.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Forward_0")]
         Forward = 0,
 
-        /// <summary>
-        /// Return inverse references.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Inverse_1")]
         Inverse = 1,
 
-        /// <summary>
-        /// Return forward and inverse references.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Both_2")]
         Both = 2,
 
-        /// <summary>
-        /// A description for the Invalid field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Invalid_3")]
         Invalid = 3,
     }
@@ -16579,7 +16946,7 @@ namespace Opc.Ua
     #region ViewDescription Class
     #if (!OPCUA_EXCLUDE_ViewDescription)
     /// <summary>
-    /// The view to browse.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -16616,9 +16983,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The node id of the view.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ViewId", IsRequired = false, Order = 1)]
         public NodeId ViewId
         {
@@ -16626,9 +16991,7 @@ namespace Opc.Ua
             set { m_viewId = value; }
         }
 
-        /// <summary>
-        /// Browses the view at or before this time.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Timestamp", IsRequired = false, Order = 2)]
         public DateTime Timestamp
         {
@@ -16636,9 +16999,7 @@ namespace Opc.Ua
             set { m_timestamp = value; }
         }
 
-        /// <summary>
-        /// Browses a specific version of the view .
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ViewVersion", IsRequired = false, Order = 3)]
         public uint ViewVersion
         {
@@ -16712,10 +17073,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ViewDescription clone = (ViewDescription)this.MemberwiseClone();
+            return (ViewDescription)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ViewDescription clone = (ViewDescription)base.MemberwiseClone();
 
             clone.m_viewId = (NodeId)Utils.Clone(this.m_viewId);
             clone.m_timestamp = (DateTime)Utils.Clone(this.m_timestamp);
@@ -16737,7 +17106,7 @@ namespace Opc.Ua
     #region BrowseDescription Class
     #if (!OPCUA_EXCLUDE_BrowseDescription)
     /// <summary>
-    /// A request to browse the the references from a node.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -16777,9 +17146,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The id of the node to browse.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NodeId", IsRequired = false, Order = 1)]
         public NodeId NodeId
         {
@@ -16787,9 +17154,7 @@ namespace Opc.Ua
             set { m_nodeId = value; }
         }
 
-        /// <summary>
-        /// The direction of the references to return.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "BrowseDirection", IsRequired = false, Order = 2)]
         public BrowseDirection BrowseDirection
         {
@@ -16797,9 +17162,7 @@ namespace Opc.Ua
             set { m_browseDirection = value; }
         }
 
-        /// <summary>
-        /// The type of references to return.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ReferenceTypeId", IsRequired = false, Order = 3)]
         public NodeId ReferenceTypeId
         {
@@ -16807,9 +17170,7 @@ namespace Opc.Ua
             set { m_referenceTypeId = value; }
         }
 
-        /// <summary>
-        /// Includes subtypes of the reference type.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IncludeSubtypes", IsRequired = false, Order = 4)]
         public bool IncludeSubtypes
         {
@@ -16817,9 +17178,7 @@ namespace Opc.Ua
             set { m_includeSubtypes = value; }
         }
 
-        /// <summary>
-        /// A mask indicating which node classes to return. 0 means return all nodes.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NodeClassMask", IsRequired = false, Order = 5)]
         public uint NodeClassMask
         {
@@ -16827,9 +17186,7 @@ namespace Opc.Ua
             set { m_nodeClassMask = value; }
         }
 
-        /// <summary>
-        /// A mask indicating which fields should be returned in the results.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ResultMask", IsRequired = false, Order = 6)]
         public uint ResultMask
         {
@@ -16912,10 +17269,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            BrowseDescription clone = (BrowseDescription)this.MemberwiseClone();
+            return (BrowseDescription)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            BrowseDescription clone = (BrowseDescription)base.MemberwiseClone();
 
             clone.m_nodeId = (NodeId)Utils.Clone(this.m_nodeId);
             clone.m_browseDirection = (BrowseDirection)Utils.Clone(this.m_browseDirection);
@@ -16945,7 +17310,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfBrowseDescription", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "BrowseDescription")]
+    #if !NET_STANDARD
     public partial class BrowseDescriptionCollection : List<BrowseDescription>, ICloneable
+    #else
+    public partial class BrowseDescriptionCollection : List<BrowseDescription>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -16992,11 +17361,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (BrowseDescriptionCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             BrowseDescriptionCollection clone = new BrowseDescriptionCollection(this.Count);
 
@@ -17007,7 +17385,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -17016,70 +17393,50 @@ namespace Opc.Ua
     #region BrowseResultMask Enumeration
     #if (!OPCUA_EXCLUDE_BrowseResultMask)
     /// <summary>
-    /// A bit mask which specifies what should be returned in a browse response.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum BrowseResultMask
     {
-        /// <summary>
-        /// Return only the node id.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "None_0")]
         None = 0,
 
-        /// <summary>
-        /// Return the reference type id.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ReferenceTypeId_1")]
         ReferenceTypeId = 1,
 
-        /// <summary>
-        /// Return the flag indicating whether the reference is a forward reference.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "IsForward_2")]
         IsForward = 2,
 
-        /// <summary>
-        /// Return the node class.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "NodeClass_4")]
         NodeClass = 4,
 
-        /// <summary>
-        /// Return the browse name.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "BrowseName_8")]
         BrowseName = 8,
 
-        /// <summary>
-        /// Return the display name.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DisplayName_16")]
         DisplayName = 16,
 
-        /// <summary>
-        /// Return the type definition.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "TypeDefinition_32")]
         TypeDefinition = 32,
 
-        /// <summary>
-        /// Return all fields.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "All_63")]
         All = 63,
 
-        /// <summary>
-        /// Return the reference type information.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ReferenceTypeInfo_3")]
         ReferenceTypeInfo = 3,
 
-        /// <summary>
-        /// Return the information about the target node.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "TargetInfo_60")]
         TargetInfo = 60,
     }
@@ -17089,7 +17446,7 @@ namespace Opc.Ua
     #region ReferenceDescription Class
     #if (!OPCUA_EXCLUDE_ReferenceDescription)
     /// <summary>
-    /// The description of a reference.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -17130,9 +17487,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The type of references.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ReferenceTypeId", IsRequired = false, Order = 1)]
         public NodeId ReferenceTypeId
         {
@@ -17140,9 +17495,7 @@ namespace Opc.Ua
             set { m_referenceTypeId = value; }
         }
 
-        /// <summary>
-        /// TRUE if the reference is a forward reference.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IsForward", IsRequired = false, Order = 2)]
         public bool IsForward
         {
@@ -17150,9 +17503,7 @@ namespace Opc.Ua
             set { m_isForward = value; }
         }
 
-        /// <summary>
-        /// The id of the target node.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NodeId", IsRequired = false, Order = 3)]
         public ExpandedNodeId NodeId
         {
@@ -17160,9 +17511,7 @@ namespace Opc.Ua
             set { m_nodeId = value; }
         }
 
-        /// <summary>
-        /// The browse name of the target node.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "BrowseName", IsRequired = false, Order = 4)]
         public QualifiedName BrowseName
         {
@@ -17170,9 +17519,7 @@ namespace Opc.Ua
             set { m_browseName = value; }
         }
 
-        /// <summary>
-        /// The display name of the target node.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DisplayName", IsRequired = false, Order = 5)]
         public LocalizedText DisplayName
         {
@@ -17180,9 +17527,7 @@ namespace Opc.Ua
             set { m_displayName = value; }
         }
 
-        /// <summary>
-        /// The node class of the target node.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NodeClass", IsRequired = false, Order = 6)]
         public NodeClass NodeClass
         {
@@ -17190,9 +17535,7 @@ namespace Opc.Ua
             set { m_nodeClass = value; }
         }
 
-        /// <summary>
-        /// The type definition of the target node.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TypeDefinition", IsRequired = false, Order = 7)]
         public ExpandedNodeId TypeDefinition
         {
@@ -17278,10 +17621,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ReferenceDescription clone = (ReferenceDescription)this.MemberwiseClone();
+            return (ReferenceDescription)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ReferenceDescription clone = (ReferenceDescription)base.MemberwiseClone();
 
             clone.m_referenceTypeId = (NodeId)Utils.Clone(this.m_referenceTypeId);
             clone.m_isForward = (bool)Utils.Clone(this.m_isForward);
@@ -17313,7 +17664,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfReferenceDescription", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "ReferenceDescription")]
+    #if !NET_STANDARD
     public partial class ReferenceDescriptionCollection : List<ReferenceDescription>, ICloneable
+    #else
+    public partial class ReferenceDescriptionCollection : List<ReferenceDescription>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -17360,11 +17715,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ReferenceDescriptionCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ReferenceDescriptionCollection clone = new ReferenceDescriptionCollection(this.Count);
 
@@ -17375,7 +17739,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -17384,7 +17747,7 @@ namespace Opc.Ua
     #region BrowseResult Class
     #if (!OPCUA_EXCLUDE_BrowseResult)
     /// <summary>
-    /// The result of a browse operation.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -17421,9 +17784,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A code indicating any error during the operation.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StatusCode", IsRequired = false, Order = 1)]
         public StatusCode StatusCode
         {
@@ -17431,9 +17792,7 @@ namespace Opc.Ua
             set { m_statusCode = value; }
         }
 
-        /// <summary>
-        /// A value that indicates the operation is incomplete and can be continued by calling BrowseNext.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ContinuationPoint", IsRequired = false, Order = 2)]
         public byte[] ContinuationPoint
         {
@@ -17442,7 +17801,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A list of references that meet the criteria specified in the request.
+        /// 
         /// </summary>
         [DataMember(Name = "References", IsRequired = false, Order = 3)]
         public ReferenceDescriptionCollection References
@@ -17529,10 +17888,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            BrowseResult clone = (BrowseResult)this.MemberwiseClone();
+            return (BrowseResult)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            BrowseResult clone = (BrowseResult)base.MemberwiseClone();
 
             clone.m_statusCode = (StatusCode)Utils.Clone(this.m_statusCode);
             clone.m_continuationPoint = (byte[])Utils.Clone(this.m_continuationPoint);
@@ -17556,7 +17923,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfBrowseResult", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "BrowseResult")]
+    #if !NET_STANDARD
     public partial class BrowseResultCollection : List<BrowseResult>, ICloneable
+    #else
+    public partial class BrowseResultCollection : List<BrowseResult>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -17603,11 +17974,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (BrowseResultCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             BrowseResultCollection clone = new BrowseResultCollection(this.Count);
 
@@ -17618,7 +17998,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -17627,7 +18006,7 @@ namespace Opc.Ua
     #region BrowseRequest Class
     #if (!OPCUA_EXCLUDE_BrowseRequest)
     /// <summary>
-    /// Browse the references for one or more nodes from the server address space.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -17666,7 +18045,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all requests sent to a server.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -17688,7 +18067,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The view to browse.
+        /// 
         /// </summary>
         [DataMember(Name = "View", IsRequired = false, Order = 2)]
         public ViewDescription View
@@ -17709,9 +18088,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// The maximum number of references to return in the response.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RequestedMaxReferencesPerNode", IsRequired = false, Order = 3)]
         public uint RequestedMaxReferencesPerNode
         {
@@ -17720,7 +18097,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The list of nodes to browse.
+        /// 
         /// </summary>
         [DataMember(Name = "NodesToBrowse", IsRequired = false, Order = 4)]
         public BrowseDescriptionCollection NodesToBrowse
@@ -17810,10 +18187,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            BrowseRequest clone = (BrowseRequest)this.MemberwiseClone();
+            return (BrowseRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            BrowseRequest clone = (BrowseRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_view = (ViewDescription)Utils.Clone(this.m_view);
@@ -17837,7 +18222,7 @@ namespace Opc.Ua
     #region BrowseResponse Class
     #if (!OPCUA_EXCLUDE_BrowseResponse)
     /// <summary>
-    /// Browse the references for one or more nodes from the server address space.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -17875,7 +18260,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all responses returned by servers.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -17897,7 +18282,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The results for the browse operations.
+        /// 
         /// </summary>
         [DataMember(Name = "Results", IsRequired = false, Order = 2)]
         public BrowseResultCollection Results
@@ -17919,7 +18304,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The diagnostics associated with the results.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -18006,10 +18391,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            BrowseResponse clone = (BrowseResponse)this.MemberwiseClone();
+            return (BrowseResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            BrowseResponse clone = (BrowseResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_results = (BrowseResultCollection)Utils.Clone(this.m_results);
@@ -18031,7 +18424,7 @@ namespace Opc.Ua
     #region BrowseNextRequest Class
     #if (!OPCUA_EXCLUDE_BrowseNextRequest)
     /// <summary>
-    /// Continues one or more browse operations.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -18069,7 +18462,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all requests sent to a server.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -18090,9 +18483,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// If TRUE the continuation points are released and no results are returned.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ReleaseContinuationPoints", IsRequired = false, Order = 2)]
         public bool ReleaseContinuationPoints
         {
@@ -18101,7 +18492,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The contination points returned from a previous call to Browse and BrowseNext.
+        /// 
         /// </summary>
         [DataMember(Name = "ContinuationPoints", IsRequired = false, Order = 3)]
         public ByteStringCollection ContinuationPoints
@@ -18188,10 +18579,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            BrowseNextRequest clone = (BrowseNextRequest)this.MemberwiseClone();
+            return (BrowseNextRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            BrowseNextRequest clone = (BrowseNextRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_releaseContinuationPoints = (bool)Utils.Clone(this.m_releaseContinuationPoints);
@@ -18213,7 +18612,7 @@ namespace Opc.Ua
     #region BrowseNextResponse Class
     #if (!OPCUA_EXCLUDE_BrowseNextResponse)
     /// <summary>
-    /// Continues one or more browse operations.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -18251,7 +18650,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all responses returned by servers.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -18273,7 +18672,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The results for the browse operations.
+        /// 
         /// </summary>
         [DataMember(Name = "Results", IsRequired = false, Order = 2)]
         public BrowseResultCollection Results
@@ -18295,7 +18694,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The diagnostics associated with the results.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -18382,10 +18781,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            BrowseNextResponse clone = (BrowseNextResponse)this.MemberwiseClone();
+            return (BrowseNextResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            BrowseNextResponse clone = (BrowseNextResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_results = (BrowseResultCollection)Utils.Clone(this.m_results);
@@ -18407,7 +18814,7 @@ namespace Opc.Ua
     #region RelativePathElement Class
     #if (!OPCUA_EXCLUDE_RelativePathElement)
     /// <summary>
-    /// An element in a relative path.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -18445,9 +18852,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The type of reference to follow.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ReferenceTypeId", IsRequired = false, Order = 1)]
         public NodeId ReferenceTypeId
         {
@@ -18455,9 +18860,7 @@ namespace Opc.Ua
             set { m_referenceTypeId = value; }
         }
 
-        /// <summary>
-        /// If TRUE the reverse reference is followed.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IsInverse", IsRequired = false, Order = 2)]
         public bool IsInverse
         {
@@ -18465,9 +18868,7 @@ namespace Opc.Ua
             set { m_isInverse = value; }
         }
 
-        /// <summary>
-        /// If TRUE then subtypes of the reference type are followed.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IncludeSubtypes", IsRequired = false, Order = 3)]
         public bool IncludeSubtypes
         {
@@ -18475,9 +18876,7 @@ namespace Opc.Ua
             set { m_includeSubtypes = value; }
         }
 
-        /// <summary>
-        /// The browse name of the target.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TargetName", IsRequired = false, Order = 4)]
         public QualifiedName TargetName
         {
@@ -18554,10 +18953,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            RelativePathElement clone = (RelativePathElement)this.MemberwiseClone();
+            return (RelativePathElement)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            RelativePathElement clone = (RelativePathElement)base.MemberwiseClone();
 
             clone.m_referenceTypeId = (NodeId)Utils.Clone(this.m_referenceTypeId);
             clone.m_isInverse = (bool)Utils.Clone(this.m_isInverse);
@@ -18583,7 +18990,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfRelativePathElement", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "RelativePathElement")]
+    #if !NET_STANDARD
     public partial class RelativePathElementCollection : List<RelativePathElement>, ICloneable
+    #else
+    public partial class RelativePathElementCollection : List<RelativePathElement>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -18630,11 +19041,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (RelativePathElementCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             RelativePathElementCollection clone = new RelativePathElementCollection(this.Count);
 
@@ -18645,7 +19065,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -18654,7 +19073,7 @@ namespace Opc.Ua
     #region RelativePath Class
     #if (!OPCUA_EXCLUDE_RelativePath)
     /// <summary>
-    /// A relative path constructed from reference types and browse names.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -18690,7 +19109,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A list of elements in the path.
+        /// 
         /// </summary>
         [DataMember(Name = "Elements", IsRequired = false, Order = 1)]
         public RelativePathElementCollection Elements
@@ -18771,10 +19190,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            RelativePath clone = (RelativePath)this.MemberwiseClone();
+            return (RelativePath)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            RelativePath clone = (RelativePath)base.MemberwiseClone();
 
             clone.m_elements = (RelativePathElementCollection)Utils.Clone(this.m_elements);
 
@@ -18792,7 +19219,7 @@ namespace Opc.Ua
     #region BrowsePath Class
     #if (!OPCUA_EXCLUDE_BrowsePath)
     /// <summary>
-    /// A request to translate a path into a node id.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -18828,9 +19255,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The starting point for the search.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StartingNode", IsRequired = false, Order = 1)]
         public NodeId StartingNode
         {
@@ -18839,7 +19264,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The path to follow.
+        /// 
         /// </summary>
         [DataMember(Name = "RelativePath", IsRequired = false, Order = 2)]
         public RelativePath RelativePath
@@ -18923,10 +19348,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            BrowsePath clone = (BrowsePath)this.MemberwiseClone();
+            return (BrowsePath)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            BrowsePath clone = (BrowsePath)base.MemberwiseClone();
 
             clone.m_startingNode = (NodeId)Utils.Clone(this.m_startingNode);
             clone.m_relativePath = (RelativePath)Utils.Clone(this.m_relativePath);
@@ -18948,7 +19381,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfBrowsePath", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "BrowsePath")]
+    #if !NET_STANDARD
     public partial class BrowsePathCollection : List<BrowsePath>, ICloneable
+    #else
+    public partial class BrowsePathCollection : List<BrowsePath>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -18995,11 +19432,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (BrowsePathCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             BrowsePathCollection clone = new BrowsePathCollection(this.Count);
 
@@ -19010,7 +19456,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -19019,7 +19464,7 @@ namespace Opc.Ua
     #region BrowsePathTarget Class
     #if (!OPCUA_EXCLUDE_BrowsePathTarget)
     /// <summary>
-    /// The target of the translated path.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -19055,9 +19500,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// The id of the target node.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TargetId", IsRequired = false, Order = 1)]
         public ExpandedNodeId TargetId
         {
@@ -19065,9 +19508,7 @@ namespace Opc.Ua
             set { m_targetId = value; }
         }
 
-        /// <summary>
-        /// The index of the target in the relative path. UInt32.MaxValue if the entire path was processed.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RemainingPathIndex", IsRequired = false, Order = 2)]
         public uint RemainingPathIndex
         {
@@ -19138,10 +19579,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            BrowsePathTarget clone = (BrowsePathTarget)this.MemberwiseClone();
+            return (BrowsePathTarget)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            BrowsePathTarget clone = (BrowsePathTarget)base.MemberwiseClone();
 
             clone.m_targetId = (ExpandedNodeId)Utils.Clone(this.m_targetId);
             clone.m_remainingPathIndex = (uint)Utils.Clone(this.m_remainingPathIndex);
@@ -19163,7 +19612,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfBrowsePathTarget", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "BrowsePathTarget")]
+    #if !NET_STANDARD
     public partial class BrowsePathTargetCollection : List<BrowsePathTarget>, ICloneable
+    #else
+    public partial class BrowsePathTargetCollection : List<BrowsePathTarget>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -19210,11 +19663,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (BrowsePathTargetCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             BrowsePathTargetCollection clone = new BrowsePathTargetCollection(this.Count);
 
@@ -19225,7 +19687,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -19234,7 +19695,7 @@ namespace Opc.Ua
     #region BrowsePathResult Class
     #if (!OPCUA_EXCLUDE_BrowsePathResult)
     /// <summary>
-    /// The result of a translate opearation.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -19270,9 +19731,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A code indicating any error during the operation.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StatusCode", IsRequired = false, Order = 1)]
         public StatusCode StatusCode
         {
@@ -19281,7 +19740,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A list of nodes found. The first element matches the type definition.
+        /// 
         /// </summary>
         [DataMember(Name = "Targets", IsRequired = false, Order = 2)]
         public BrowsePathTargetCollection Targets
@@ -19365,10 +19824,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            BrowsePathResult clone = (BrowsePathResult)this.MemberwiseClone();
+            return (BrowsePathResult)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            BrowsePathResult clone = (BrowsePathResult)base.MemberwiseClone();
 
             clone.m_statusCode = (StatusCode)Utils.Clone(this.m_statusCode);
             clone.m_targets = (BrowsePathTargetCollection)Utils.Clone(this.m_targets);
@@ -19390,7 +19857,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfBrowsePathResult", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "BrowsePathResult")]
+    #if !NET_STANDARD
     public partial class BrowsePathResultCollection : List<BrowsePathResult>, ICloneable
+    #else
+    public partial class BrowsePathResultCollection : List<BrowsePathResult>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -19437,11 +19908,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (BrowsePathResultCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             BrowsePathResultCollection clone = new BrowsePathResultCollection(this.Count);
 
@@ -19452,7 +19932,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -19461,7 +19940,7 @@ namespace Opc.Ua
     #region TranslateBrowsePathsToNodeIdsRequest Class
     #if (!OPCUA_EXCLUDE_TranslateBrowsePathsToNodeIdsRequest)
     /// <summary>
-    /// Translates one or more paths in the server address space.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -19498,7 +19977,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all requests sent to a server.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -19520,7 +19999,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The list of paths to translate.
+        /// 
         /// </summary>
         [DataMember(Name = "BrowsePaths", IsRequired = false, Order = 2)]
         public BrowsePathCollection BrowsePaths
@@ -19604,10 +20083,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            TranslateBrowsePathsToNodeIdsRequest clone = (TranslateBrowsePathsToNodeIdsRequest)this.MemberwiseClone();
+            return (TranslateBrowsePathsToNodeIdsRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            TranslateBrowsePathsToNodeIdsRequest clone = (TranslateBrowsePathsToNodeIdsRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_browsePaths = (BrowsePathCollection)Utils.Clone(this.m_browsePaths);
@@ -19627,7 +20114,7 @@ namespace Opc.Ua
     #region TranslateBrowsePathsToNodeIdsResponse Class
     #if (!OPCUA_EXCLUDE_TranslateBrowsePathsToNodeIdsResponse)
     /// <summary>
-    /// Translates one or more paths in the server address space.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -19665,7 +20152,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all responses returned by servers.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -19687,7 +20174,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The results for the translate operations.
+        /// 
         /// </summary>
         [DataMember(Name = "Results", IsRequired = false, Order = 2)]
         public BrowsePathResultCollection Results
@@ -19709,7 +20196,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The diagnostics associated with the results.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -19796,10 +20283,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            TranslateBrowsePathsToNodeIdsResponse clone = (TranslateBrowsePathsToNodeIdsResponse)this.MemberwiseClone();
+            return (TranslateBrowsePathsToNodeIdsResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            TranslateBrowsePathsToNodeIdsResponse clone = (TranslateBrowsePathsToNodeIdsResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_results = (BrowsePathResultCollection)Utils.Clone(this.m_results);
@@ -19821,7 +20316,7 @@ namespace Opc.Ua
     #region RegisterNodesRequest Class
     #if (!OPCUA_EXCLUDE_RegisterNodesRequest)
     /// <summary>
-    /// Registers one or more nodes for repeated use within a session.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -19858,7 +20353,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all requests sent to a server.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -19880,7 +20375,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The list of nodes to register.
+        /// 
         /// </summary>
         [DataMember(Name = "NodesToRegister", IsRequired = false, Order = 2)]
         public NodeIdCollection NodesToRegister
@@ -19964,10 +20459,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            RegisterNodesRequest clone = (RegisterNodesRequest)this.MemberwiseClone();
+            return (RegisterNodesRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            RegisterNodesRequest clone = (RegisterNodesRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_nodesToRegister = (NodeIdCollection)Utils.Clone(this.m_nodesToRegister);
@@ -19987,7 +20490,7 @@ namespace Opc.Ua
     #region RegisterNodesResponse Class
     #if (!OPCUA_EXCLUDE_RegisterNodesResponse)
     /// <summary>
-    /// Registers one or more nodes for repeated use within a session.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -20024,7 +20527,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all responses returned by servers.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -20046,7 +20549,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The list of node ids that can be used for fast access to the nodes.
+        /// 
         /// </summary>
         [DataMember(Name = "RegisteredNodeIds", IsRequired = false, Order = 2)]
         public NodeIdCollection RegisteredNodeIds
@@ -20130,10 +20633,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            RegisterNodesResponse clone = (RegisterNodesResponse)this.MemberwiseClone();
+            return (RegisterNodesResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            RegisterNodesResponse clone = (RegisterNodesResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_registeredNodeIds = (NodeIdCollection)Utils.Clone(this.m_registeredNodeIds);
@@ -20153,7 +20664,7 @@ namespace Opc.Ua
     #region UnregisterNodesRequest Class
     #if (!OPCUA_EXCLUDE_UnregisterNodesRequest)
     /// <summary>
-    /// Unregisters one or more previously registered nodes.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -20190,7 +20701,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all requests sent to a server.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -20212,7 +20723,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// The list of nodes to unregister.
+        /// 
         /// </summary>
         [DataMember(Name = "NodesToUnregister", IsRequired = false, Order = 2)]
         public NodeIdCollection NodesToUnregister
@@ -20296,10 +20807,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            UnregisterNodesRequest clone = (UnregisterNodesRequest)this.MemberwiseClone();
+            return (UnregisterNodesRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            UnregisterNodesRequest clone = (UnregisterNodesRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_nodesToUnregister = (NodeIdCollection)Utils.Clone(this.m_nodesToUnregister);
@@ -20319,7 +20838,7 @@ namespace Opc.Ua
     #region UnregisterNodesResponse Class
     #if (!OPCUA_EXCLUDE_UnregisterNodesResponse)
     /// <summary>
-    /// Unregisters one or more previously registered nodes.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -20355,7 +20874,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A standard header included in all responses returned by servers.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -20436,10 +20955,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            UnregisterNodesResponse clone = (UnregisterNodesResponse)this.MemberwiseClone();
+            return (UnregisterNodesResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            UnregisterNodesResponse clone = (UnregisterNodesResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
 
@@ -20457,7 +20984,7 @@ namespace Opc.Ua
     #region EndpointConfiguration Class
     #if (!OPCUA_EXCLUDE_EndpointConfiguration)
     /// <summary>
-    /// A description for the EndpointConfiguration DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -20500,9 +21027,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the OperationTimeout field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "OperationTimeout", IsRequired = false, Order = 1)]
         public int OperationTimeout
         {
@@ -20510,9 +21035,7 @@ namespace Opc.Ua
             set { m_operationTimeout = value; }
         }
 
-        /// <summary>
-        /// A description for the UseBinaryEncoding field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "UseBinaryEncoding", IsRequired = false, Order = 2)]
         public bool UseBinaryEncoding
         {
@@ -20520,9 +21043,7 @@ namespace Opc.Ua
             set { m_useBinaryEncoding = value; }
         }
 
-        /// <summary>
-        /// A description for the MaxStringLength field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MaxStringLength", IsRequired = false, Order = 3)]
         public int MaxStringLength
         {
@@ -20530,9 +21051,7 @@ namespace Opc.Ua
             set { m_maxStringLength = value; }
         }
 
-        /// <summary>
-        /// A description for the MaxByteStringLength field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MaxByteStringLength", IsRequired = false, Order = 4)]
         public int MaxByteStringLength
         {
@@ -20540,9 +21059,7 @@ namespace Opc.Ua
             set { m_maxByteStringLength = value; }
         }
 
-        /// <summary>
-        /// A description for the MaxArrayLength field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MaxArrayLength", IsRequired = false, Order = 5)]
         public int MaxArrayLength
         {
@@ -20550,9 +21067,7 @@ namespace Opc.Ua
             set { m_maxArrayLength = value; }
         }
 
-        /// <summary>
-        /// A description for the MaxMessageSize field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MaxMessageSize", IsRequired = false, Order = 6)]
         public int MaxMessageSize
         {
@@ -20560,9 +21075,7 @@ namespace Opc.Ua
             set { m_maxMessageSize = value; }
         }
 
-        /// <summary>
-        /// A description for the MaxBufferSize field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MaxBufferSize", IsRequired = false, Order = 7)]
         public int MaxBufferSize
         {
@@ -20570,9 +21083,7 @@ namespace Opc.Ua
             set { m_maxBufferSize = value; }
         }
 
-        /// <summary>
-        /// A description for the ChannelLifetime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ChannelLifetime", IsRequired = false, Order = 8)]
         public int ChannelLifetime
         {
@@ -20580,9 +21091,7 @@ namespace Opc.Ua
             set { m_channelLifetime = value; }
         }
 
-        /// <summary>
-        /// A description for the SecurityTokenLifetime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SecurityTokenLifetime", IsRequired = false, Order = 9)]
         public int SecurityTokenLifetime
         {
@@ -20674,10 +21183,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            EndpointConfiguration clone = (EndpointConfiguration)this.MemberwiseClone();
+            return (EndpointConfiguration)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            EndpointConfiguration clone = (EndpointConfiguration)base.MemberwiseClone();
 
             clone.m_operationTimeout = (int)Utils.Clone(this.m_operationTimeout);
             clone.m_useBinaryEncoding = (bool)Utils.Clone(this.m_useBinaryEncoding);
@@ -20713,7 +21230,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfEndpointConfiguration", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "EndpointConfiguration")]
+    #if !NET_STANDARD
     public partial class EndpointConfigurationCollection : List<EndpointConfiguration>, ICloneable
+    #else
+    public partial class EndpointConfigurationCollection : List<EndpointConfiguration>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -20760,11 +21281,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (EndpointConfigurationCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             EndpointConfigurationCollection clone = new EndpointConfigurationCollection(this.Count);
 
@@ -20775,7 +21305,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -20784,7 +21313,7 @@ namespace Opc.Ua
     #region QueryDataDescription Class
     #if (!OPCUA_EXCLUDE_QueryDataDescription)
     /// <summary>
-    /// A description for the QueryDataDescription DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -20822,7 +21351,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RelativePath field.
+        /// 
         /// </summary>
         [DataMember(Name = "RelativePath", IsRequired = false, Order = 1)]
         public RelativePath RelativePath
@@ -20843,9 +21372,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the AttributeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "AttributeId", IsRequired = false, Order = 2)]
         public uint AttributeId
         {
@@ -20853,9 +21380,7 @@ namespace Opc.Ua
             set { m_attributeId = value; }
         }
 
-        /// <summary>
-        /// A description for the IndexRange field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IndexRange", IsRequired = false, Order = 3)]
         public string IndexRange
         {
@@ -20929,10 +21454,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            QueryDataDescription clone = (QueryDataDescription)this.MemberwiseClone();
+            return (QueryDataDescription)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            QueryDataDescription clone = (QueryDataDescription)base.MemberwiseClone();
 
             clone.m_relativePath = (RelativePath)Utils.Clone(this.m_relativePath);
             clone.m_attributeId = (uint)Utils.Clone(this.m_attributeId);
@@ -20956,7 +21489,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfQueryDataDescription", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "QueryDataDescription")]
+    #if !NET_STANDARD
     public partial class QueryDataDescriptionCollection : List<QueryDataDescription>, ICloneable
+    #else
+    public partial class QueryDataDescriptionCollection : List<QueryDataDescription>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -21003,11 +21540,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (QueryDataDescriptionCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             QueryDataDescriptionCollection clone = new QueryDataDescriptionCollection(this.Count);
 
@@ -21018,7 +21564,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -21027,7 +21572,7 @@ namespace Opc.Ua
     #region NodeTypeDescription Class
     #if (!OPCUA_EXCLUDE_NodeTypeDescription)
     /// <summary>
-    /// A description for the NodeTypeDescription DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -21064,9 +21609,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the TypeDefinitionNode field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TypeDefinitionNode", IsRequired = false, Order = 1)]
         public ExpandedNodeId TypeDefinitionNode
         {
@@ -21074,9 +21617,7 @@ namespace Opc.Ua
             set { m_typeDefinitionNode = value; }
         }
 
-        /// <summary>
-        /// A description for the IncludeSubTypes field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IncludeSubTypes", IsRequired = false, Order = 2)]
         public bool IncludeSubTypes
         {
@@ -21085,7 +21626,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DataToReturn field.
+        /// 
         /// </summary>
         [DataMember(Name = "DataToReturn", IsRequired = false, Order = 3)]
         public QueryDataDescriptionCollection DataToReturn
@@ -21172,10 +21713,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            NodeTypeDescription clone = (NodeTypeDescription)this.MemberwiseClone();
+            return (NodeTypeDescription)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            NodeTypeDescription clone = (NodeTypeDescription)base.MemberwiseClone();
 
             clone.m_typeDefinitionNode = (ExpandedNodeId)Utils.Clone(this.m_typeDefinitionNode);
             clone.m_includeSubTypes = (bool)Utils.Clone(this.m_includeSubTypes);
@@ -21199,7 +21748,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfNodeTypeDescription", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "NodeTypeDescription")]
+    #if !NET_STANDARD
     public partial class NodeTypeDescriptionCollection : List<NodeTypeDescription>, ICloneable
+    #else
+    public partial class NodeTypeDescriptionCollection : List<NodeTypeDescription>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -21246,11 +21799,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (NodeTypeDescriptionCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             NodeTypeDescriptionCollection clone = new NodeTypeDescriptionCollection(this.Count);
 
@@ -21261,7 +21823,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -21270,118 +21831,82 @@ namespace Opc.Ua
     #region FilterOperator Enumeration
     #if (!OPCUA_EXCLUDE_FilterOperator)
     /// <summary>
-    /// A description for the FilterOperator DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum FilterOperator
     {
-        /// <summary>
-        /// A description for the Equals field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Equals_0")]
         Equals = 0,
 
-        /// <summary>
-        /// A description for the IsNull field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "IsNull_1")]
         IsNull = 1,
 
-        /// <summary>
-        /// A description for the GreaterThan field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "GreaterThan_2")]
         GreaterThan = 2,
 
-        /// <summary>
-        /// A description for the LessThan field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "LessThan_3")]
         LessThan = 3,
 
-        /// <summary>
-        /// A description for the GreaterThanOrEqual field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "GreaterThanOrEqual_4")]
         GreaterThanOrEqual = 4,
 
-        /// <summary>
-        /// A description for the LessThanOrEqual field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "LessThanOrEqual_5")]
         LessThanOrEqual = 5,
 
-        /// <summary>
-        /// A description for the Like field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Like_6")]
         Like = 6,
 
-        /// <summary>
-        /// A description for the Not field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Not_7")]
         Not = 7,
 
-        /// <summary>
-        /// A description for the Between field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Between_8")]
         Between = 8,
 
-        /// <summary>
-        /// A description for the InList field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "InList_9")]
         InList = 9,
 
-        /// <summary>
-        /// A description for the And field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "And_10")]
         And = 10,
 
-        /// <summary>
-        /// A description for the Or field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Or_11")]
         Or = 11,
 
-        /// <summary>
-        /// A description for the Cast field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Cast_12")]
         Cast = 12,
 
-        /// <summary>
-        /// A description for the InView field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "InView_13")]
         InView = 13,
 
-        /// <summary>
-        /// A description for the OfType field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "OfType_14")]
         OfType = 14,
 
-        /// <summary>
-        /// A description for the RelatedTo field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "RelatedTo_15")]
         RelatedTo = 15,
 
-        /// <summary>
-        /// A description for the BitwiseAnd field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "BitwiseAnd_16")]
         BitwiseAnd = 16,
 
-        /// <summary>
-        /// A description for the BitwiseOr field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "BitwiseOr_17")]
         BitwiseOr = 17,
     }
@@ -21391,7 +21916,7 @@ namespace Opc.Ua
     #region QueryDataSet Class
     #if (!OPCUA_EXCLUDE_QueryDataSet)
     /// <summary>
-    /// A description for the QueryDataSet DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -21428,9 +21953,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the NodeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NodeId", IsRequired = false, Order = 1)]
         public ExpandedNodeId NodeId
         {
@@ -21438,9 +21961,7 @@ namespace Opc.Ua
             set { m_nodeId = value; }
         }
 
-        /// <summary>
-        /// A description for the TypeDefinitionNode field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TypeDefinitionNode", IsRequired = false, Order = 2)]
         public ExpandedNodeId TypeDefinitionNode
         {
@@ -21449,7 +21970,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the Values field.
+        /// 
         /// </summary>
         [DataMember(Name = "Values", IsRequired = false, Order = 3)]
         public VariantCollection Values
@@ -21536,10 +22057,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            QueryDataSet clone = (QueryDataSet)this.MemberwiseClone();
+            return (QueryDataSet)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            QueryDataSet clone = (QueryDataSet)base.MemberwiseClone();
 
             clone.m_nodeId = (ExpandedNodeId)Utils.Clone(this.m_nodeId);
             clone.m_typeDefinitionNode = (ExpandedNodeId)Utils.Clone(this.m_typeDefinitionNode);
@@ -21563,7 +22092,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfQueryDataSet", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "QueryDataSet")]
+    #if !NET_STANDARD
     public partial class QueryDataSetCollection : List<QueryDataSet>, ICloneable
+    #else
+    public partial class QueryDataSetCollection : List<QueryDataSet>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -21610,11 +22143,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (QueryDataSetCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             QueryDataSetCollection clone = new QueryDataSetCollection(this.Count);
 
@@ -21625,7 +22167,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -21634,7 +22175,7 @@ namespace Opc.Ua
     #region NodeReference Class
     #if (!OPCUA_EXCLUDE_NodeReference)
     /// <summary>
-    /// A description for the NodeReference DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -21672,9 +22213,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the NodeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NodeId", IsRequired = false, Order = 1)]
         public NodeId NodeId
         {
@@ -21682,9 +22221,7 @@ namespace Opc.Ua
             set { m_nodeId = value; }
         }
 
-        /// <summary>
-        /// A description for the ReferenceTypeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ReferenceTypeId", IsRequired = false, Order = 2)]
         public NodeId ReferenceTypeId
         {
@@ -21692,9 +22229,7 @@ namespace Opc.Ua
             set { m_referenceTypeId = value; }
         }
 
-        /// <summary>
-        /// A description for the IsForward field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IsForward", IsRequired = false, Order = 3)]
         public bool IsForward
         {
@@ -21703,7 +22238,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the ReferencedNodeIds field.
+        /// 
         /// </summary>
         [DataMember(Name = "ReferencedNodeIds", IsRequired = false, Order = 4)]
         public NodeIdCollection ReferencedNodeIds
@@ -21793,10 +22328,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            NodeReference clone = (NodeReference)this.MemberwiseClone();
+            return (NodeReference)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            NodeReference clone = (NodeReference)base.MemberwiseClone();
 
             clone.m_nodeId = (NodeId)Utils.Clone(this.m_nodeId);
             clone.m_referenceTypeId = (NodeId)Utils.Clone(this.m_referenceTypeId);
@@ -21822,7 +22365,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfNodeReference", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "NodeReference")]
+    #if !NET_STANDARD
     public partial class NodeReferenceCollection : List<NodeReference>, ICloneable
+    #else
+    public partial class NodeReferenceCollection : List<NodeReference>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -21869,11 +22416,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (NodeReferenceCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             NodeReferenceCollection clone = new NodeReferenceCollection(this.Count);
 
@@ -21884,7 +22440,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -21893,7 +22448,7 @@ namespace Opc.Ua
     #region ContentFilterElement Class
     #if (!OPCUA_EXCLUDE_ContentFilterElement)
     /// <summary>
-    /// A description for the ContentFilterElement DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -21929,9 +22484,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the FilterOperator field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "FilterOperator", IsRequired = false, Order = 1)]
         public FilterOperator FilterOperator
         {
@@ -21940,7 +22493,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the FilterOperands field.
+        /// 
         /// </summary>
         [DataMember(Name = "FilterOperands", IsRequired = false, Order = 2)]
         public ExtensionObjectCollection FilterOperands
@@ -22024,10 +22577,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ContentFilterElement clone = (ContentFilterElement)this.MemberwiseClone();
+            return (ContentFilterElement)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ContentFilterElement clone = (ContentFilterElement)base.MemberwiseClone();
 
             clone.m_filterOperator = (FilterOperator)Utils.Clone(this.m_filterOperator);
             clone.m_filterOperands = (ExtensionObjectCollection)Utils.Clone(this.m_filterOperands);
@@ -22049,7 +22610,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfContentFilterElement", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "ContentFilterElement")]
+    #if !NET_STANDARD
     public partial class ContentFilterElementCollection : List<ContentFilterElement>, ICloneable
+    #else
+    public partial class ContentFilterElementCollection : List<ContentFilterElement>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -22096,11 +22661,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ContentFilterElementCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ContentFilterElementCollection clone = new ContentFilterElementCollection(this.Count);
 
@@ -22111,7 +22685,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -22120,7 +22693,7 @@ namespace Opc.Ua
     #region ContentFilter Class
     #if (!OPCUA_EXCLUDE_ContentFilter)
     /// <summary>
-    /// A description for the ContentFilter DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -22156,7 +22729,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the Elements field.
+        /// 
         /// </summary>
         [DataMember(Name = "Elements", IsRequired = false, Order = 1)]
         public ContentFilterElementCollection Elements
@@ -22237,10 +22810,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ContentFilter clone = (ContentFilter)this.MemberwiseClone();
+            return (ContentFilter)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ContentFilter clone = (ContentFilter)base.MemberwiseClone();
 
             clone.m_elements = (ContentFilterElementCollection)Utils.Clone(this.m_elements);
 
@@ -22260,7 +22841,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfContentFilter", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "ContentFilter")]
+    #if !NET_STANDARD
     public partial class ContentFilterCollection : List<ContentFilter>, ICloneable
+    #else
+    public partial class ContentFilterCollection : List<ContentFilter>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -22307,11 +22892,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ContentFilterCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ContentFilterCollection clone = new ContentFilterCollection(this.Count);
 
@@ -22322,7 +22916,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -22331,7 +22924,7 @@ namespace Opc.Ua
     #region FilterOperand Class
     #if (!OPCUA_EXCLUDE_FilterOperand)
     /// <summary>
-    /// A description for the FilterOperand DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -22423,10 +23016,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            FilterOperand clone = (FilterOperand)this.MemberwiseClone();
+            return (FilterOperand)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            FilterOperand clone = (FilterOperand)base.MemberwiseClone();
 
 
             return clone;
@@ -22442,7 +23043,7 @@ namespace Opc.Ua
     #region ElementOperand Class
     #if (!OPCUA_EXCLUDE_ElementOperand)
     /// <summary>
-    /// A description for the ElementOperand DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -22477,9 +23078,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Index field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Index", IsRequired = false, Order = 1)]
         public uint Index
         {
@@ -22550,12 +23149,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_index, value.m_index)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            ElementOperand clone = (ElementOperand)base.Clone();
+            return (ElementOperand)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ElementOperand clone = (ElementOperand)base.MemberwiseClone();
 
             clone.m_index = (uint)Utils.Clone(this.m_index);
 
@@ -22573,7 +23180,7 @@ namespace Opc.Ua
     #region LiteralOperand Class
     #if (!OPCUA_EXCLUDE_LiteralOperand)
     /// <summary>
-    /// A description for the LiteralOperand DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -22608,9 +23215,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Value field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Value", IsRequired = false, Order = 1)]
         public Variant Value
         {
@@ -22681,12 +23286,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_value, value.m_value)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            LiteralOperand clone = (LiteralOperand)base.Clone();
+            return (LiteralOperand)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            LiteralOperand clone = (LiteralOperand)base.MemberwiseClone();
 
             clone.m_value = (Variant)Utils.Clone(this.m_value);
 
@@ -22704,7 +23317,7 @@ namespace Opc.Ua
     #region AttributeOperand Class
     #if (!OPCUA_EXCLUDE_AttributeOperand)
     /// <summary>
-    /// A description for the AttributeOperand DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -22743,9 +23356,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the NodeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NodeId", IsRequired = false, Order = 1)]
         public NodeId NodeId
         {
@@ -22753,9 +23364,7 @@ namespace Opc.Ua
             set { m_nodeId = value; }
         }
 
-        /// <summary>
-        /// A description for the Alias field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Alias", IsRequired = false, Order = 2)]
         public string Alias
         {
@@ -22764,7 +23373,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the BrowsePath field.
+        /// 
         /// </summary>
         [DataMember(Name = "BrowsePath", IsRequired = false, Order = 3)]
         public RelativePath BrowsePath
@@ -22785,9 +23394,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the AttributeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "AttributeId", IsRequired = false, Order = 4)]
         public uint AttributeId
         {
@@ -22795,9 +23402,7 @@ namespace Opc.Ua
             set { m_attributeId = value; }
         }
 
-        /// <summary>
-        /// A description for the IndexRange field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IndexRange", IsRequired = false, Order = 5)]
         public string IndexRange
         {
@@ -22880,12 +23485,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_indexRange, value.m_indexRange)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            AttributeOperand clone = (AttributeOperand)base.Clone();
+            return (AttributeOperand)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            AttributeOperand clone = (AttributeOperand)base.MemberwiseClone();
 
             clone.m_nodeId = (NodeId)Utils.Clone(this.m_nodeId);
             clone.m_alias = (string)Utils.Clone(this.m_alias);
@@ -22911,7 +23524,7 @@ namespace Opc.Ua
     #region SimpleAttributeOperand Class
     #if (!OPCUA_EXCLUDE_SimpleAttributeOperand)
     /// <summary>
-    /// A description for the SimpleAttributeOperand DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -22949,9 +23562,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the TypeDefinitionId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TypeDefinitionId", IsRequired = false, Order = 1)]
         public NodeId TypeDefinitionId
         {
@@ -22960,7 +23571,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the BrowsePath field.
+        /// 
         /// </summary>
         [DataMember(Name = "BrowsePath", IsRequired = false, Order = 2)]
         public QualifiedNameCollection BrowsePath
@@ -22981,9 +23592,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the AttributeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "AttributeId", IsRequired = false, Order = 3)]
         public uint AttributeId
         {
@@ -22991,9 +23600,7 @@ namespace Opc.Ua
             set { m_attributeId = value; }
         }
 
-        /// <summary>
-        /// A description for the IndexRange field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IndexRange", IsRequired = false, Order = 4)]
         public string IndexRange
         {
@@ -23073,12 +23680,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_indexRange, value.m_indexRange)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            SimpleAttributeOperand clone = (SimpleAttributeOperand)base.Clone();
+            return (SimpleAttributeOperand)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            SimpleAttributeOperand clone = (SimpleAttributeOperand)base.MemberwiseClone();
 
             clone.m_typeDefinitionId = (NodeId)Utils.Clone(this.m_typeDefinitionId);
             clone.m_browsePath = (QualifiedNameCollection)Utils.Clone(this.m_browsePath);
@@ -23104,7 +23719,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfSimpleAttributeOperand", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "SimpleAttributeOperand")]
+    #if !NET_STANDARD
     public partial class SimpleAttributeOperandCollection : List<SimpleAttributeOperand>, ICloneable
+    #else
+    public partial class SimpleAttributeOperandCollection : List<SimpleAttributeOperand>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -23151,11 +23770,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (SimpleAttributeOperandCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             SimpleAttributeOperandCollection clone = new SimpleAttributeOperandCollection(this.Count);
 
@@ -23166,7 +23794,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -23175,7 +23802,7 @@ namespace Opc.Ua
     #region ContentFilterElementResult Class
     #if (!OPCUA_EXCLUDE_ContentFilterElementResult)
     /// <summary>
-    /// A description for the ContentFilterElementResult DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -23212,9 +23839,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the StatusCode field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StatusCode", IsRequired = false, Order = 1)]
         public StatusCode StatusCode
         {
@@ -23223,7 +23848,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the OperandStatusCodes field.
+        /// 
         /// </summary>
         [DataMember(Name = "OperandStatusCodes", IsRequired = false, Order = 2)]
         public StatusCodeCollection OperandStatusCodes
@@ -23245,7 +23870,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the OperandDiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "OperandDiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection OperandDiagnosticInfos
@@ -23332,10 +23957,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ContentFilterElementResult clone = (ContentFilterElementResult)this.MemberwiseClone();
+            return (ContentFilterElementResult)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ContentFilterElementResult clone = (ContentFilterElementResult)base.MemberwiseClone();
 
             clone.m_statusCode = (StatusCode)Utils.Clone(this.m_statusCode);
             clone.m_operandStatusCodes = (StatusCodeCollection)Utils.Clone(this.m_operandStatusCodes);
@@ -23359,7 +23992,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfContentFilterElementResult", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "ContentFilterElementResult")]
+    #if !NET_STANDARD
     public partial class ContentFilterElementResultCollection : List<ContentFilterElementResult>, ICloneable
+    #else
+    public partial class ContentFilterElementResultCollection : List<ContentFilterElementResult>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -23406,11 +24043,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ContentFilterElementResultCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ContentFilterElementResultCollection clone = new ContentFilterElementResultCollection(this.Count);
 
@@ -23421,7 +24067,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -23430,7 +24075,7 @@ namespace Opc.Ua
     #region ContentFilterResult Class
     #if (!OPCUA_EXCLUDE_ContentFilterResult)
     /// <summary>
-    /// A description for the ContentFilterResult DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -23467,7 +24112,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ElementResults field.
+        /// 
         /// </summary>
         [DataMember(Name = "ElementResults", IsRequired = false, Order = 1)]
         public ContentFilterElementResultCollection ElementResults
@@ -23489,7 +24134,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the ElementDiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "ElementDiagnosticInfos", IsRequired = false, Order = 2)]
         public DiagnosticInfoCollection ElementDiagnosticInfos
@@ -23573,10 +24218,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ContentFilterResult clone = (ContentFilterResult)this.MemberwiseClone();
+            return (ContentFilterResult)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ContentFilterResult clone = (ContentFilterResult)base.MemberwiseClone();
 
             clone.m_elementResults = (ContentFilterElementResultCollection)Utils.Clone(this.m_elementResults);
             clone.m_elementDiagnosticInfos = (DiagnosticInfoCollection)Utils.Clone(this.m_elementDiagnosticInfos);
@@ -23596,7 +24249,7 @@ namespace Opc.Ua
     #region ParsingResult Class
     #if (!OPCUA_EXCLUDE_ParsingResult)
     /// <summary>
-    /// A description for the ParsingResult DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -23633,9 +24286,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the StatusCode field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StatusCode", IsRequired = false, Order = 1)]
         public StatusCode StatusCode
         {
@@ -23644,7 +24295,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DataStatusCodes field.
+        /// 
         /// </summary>
         [DataMember(Name = "DataStatusCodes", IsRequired = false, Order = 2)]
         public StatusCodeCollection DataStatusCodes
@@ -23666,7 +24317,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DataDiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "DataDiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DataDiagnosticInfos
@@ -23753,10 +24404,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ParsingResult clone = (ParsingResult)this.MemberwiseClone();
+            return (ParsingResult)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ParsingResult clone = (ParsingResult)base.MemberwiseClone();
 
             clone.m_statusCode = (StatusCode)Utils.Clone(this.m_statusCode);
             clone.m_dataStatusCodes = (StatusCodeCollection)Utils.Clone(this.m_dataStatusCodes);
@@ -23780,7 +24439,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfParsingResult", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "ParsingResult")]
+    #if !NET_STANDARD
     public partial class ParsingResultCollection : List<ParsingResult>, ICloneable
+    #else
+    public partial class ParsingResultCollection : List<ParsingResult>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -23827,11 +24490,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ParsingResultCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ParsingResultCollection clone = new ParsingResultCollection(this.Count);
 
@@ -23842,7 +24514,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -23851,7 +24522,7 @@ namespace Opc.Ua
     #region QueryFirstRequest Class
     #if (!OPCUA_EXCLUDE_QueryFirstRequest)
     /// <summary>
-    /// A description for the QueryFirstRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -23892,7 +24563,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RequestHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -23914,7 +24585,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the View field.
+        /// 
         /// </summary>
         [DataMember(Name = "View", IsRequired = false, Order = 2)]
         public ViewDescription View
@@ -23936,7 +24607,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the NodeTypes field.
+        /// 
         /// </summary>
         [DataMember(Name = "NodeTypes", IsRequired = false, Order = 3)]
         public NodeTypeDescriptionCollection NodeTypes
@@ -23958,7 +24629,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the Filter field.
+        /// 
         /// </summary>
         [DataMember(Name = "Filter", IsRequired = false, Order = 4)]
         public ContentFilter Filter
@@ -23979,9 +24650,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the MaxDataSetsToReturn field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MaxDataSetsToReturn", IsRequired = false, Order = 5)]
         public uint MaxDataSetsToReturn
         {
@@ -23989,9 +24658,7 @@ namespace Opc.Ua
             set { m_maxDataSetsToReturn = value; }
         }
 
-        /// <summary>
-        /// A description for the MaxReferencesToReturn field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MaxReferencesToReturn", IsRequired = false, Order = 6)]
         public uint MaxReferencesToReturn
         {
@@ -24074,10 +24741,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            QueryFirstRequest clone = (QueryFirstRequest)this.MemberwiseClone();
+            return (QueryFirstRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            QueryFirstRequest clone = (QueryFirstRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_view = (ViewDescription)Utils.Clone(this.m_view);
@@ -24105,7 +24780,7 @@ namespace Opc.Ua
     #region QueryFirstResponse Class
     #if (!OPCUA_EXCLUDE_QueryFirstResponse)
     /// <summary>
-    /// A description for the QueryFirstResponse DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -24146,7 +24821,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ResponseHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -24168,7 +24843,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the QueryDataSets field.
+        /// 
         /// </summary>
         [DataMember(Name = "QueryDataSets", IsRequired = false, Order = 2)]
         public QueryDataSetCollection QueryDataSets
@@ -24189,9 +24864,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the ContinuationPoint field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ContinuationPoint", IsRequired = false, Order = 3)]
         public byte[] ContinuationPoint
         {
@@ -24200,7 +24873,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the ParsingResults field.
+        /// 
         /// </summary>
         [DataMember(Name = "ParsingResults", IsRequired = false, Order = 4)]
         public ParsingResultCollection ParsingResults
@@ -24222,7 +24895,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 5)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -24244,7 +24917,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the FilterResult field.
+        /// 
         /// </summary>
         [DataMember(Name = "FilterResult", IsRequired = false, Order = 6)]
         public ContentFilterResult FilterResult
@@ -24340,10 +25013,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            QueryFirstResponse clone = (QueryFirstResponse)this.MemberwiseClone();
+            return (QueryFirstResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            QueryFirstResponse clone = (QueryFirstResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_queryDataSets = (QueryDataSetCollection)Utils.Clone(this.m_queryDataSets);
@@ -24371,7 +25052,7 @@ namespace Opc.Ua
     #region QueryNextRequest Class
     #if (!OPCUA_EXCLUDE_QueryNextRequest)
     /// <summary>
-    /// A description for the QueryNextRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -24409,7 +25090,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RequestHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -24430,9 +25111,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the ReleaseContinuationPoint field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ReleaseContinuationPoint", IsRequired = false, Order = 2)]
         public bool ReleaseContinuationPoint
         {
@@ -24440,9 +25119,7 @@ namespace Opc.Ua
             set { m_releaseContinuationPoint = value; }
         }
 
-        /// <summary>
-        /// A description for the ContinuationPoint field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ContinuationPoint", IsRequired = false, Order = 3)]
         public byte[] ContinuationPoint
         {
@@ -24516,10 +25193,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            QueryNextRequest clone = (QueryNextRequest)this.MemberwiseClone();
+            return (QueryNextRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            QueryNextRequest clone = (QueryNextRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_releaseContinuationPoint = (bool)Utils.Clone(this.m_releaseContinuationPoint);
@@ -24541,7 +25226,7 @@ namespace Opc.Ua
     #region QueryNextResponse Class
     #if (!OPCUA_EXCLUDE_QueryNextResponse)
     /// <summary>
-    /// A description for the QueryNextResponse DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -24579,7 +25264,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ResponseHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -24601,7 +25286,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the QueryDataSets field.
+        /// 
         /// </summary>
         [DataMember(Name = "QueryDataSets", IsRequired = false, Order = 2)]
         public QueryDataSetCollection QueryDataSets
@@ -24622,9 +25307,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the RevisedContinuationPoint field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RevisedContinuationPoint", IsRequired = false, Order = 3)]
         public byte[] RevisedContinuationPoint
         {
@@ -24698,10 +25381,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            QueryNextResponse clone = (QueryNextResponse)this.MemberwiseClone();
+            return (QueryNextResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            QueryNextResponse clone = (QueryNextResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_queryDataSets = (QueryDataSetCollection)Utils.Clone(this.m_queryDataSets);
@@ -24723,40 +25414,30 @@ namespace Opc.Ua
     #region TimestampsToReturn Enumeration
     #if (!OPCUA_EXCLUDE_TimestampsToReturn)
     /// <summary>
-    /// A description for the TimestampsToReturn DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum TimestampsToReturn
     {
-        /// <summary>
-        /// A description for the Source field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Source_0")]
         Source = 0,
 
-        /// <summary>
-        /// A description for the Server field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Server_1")]
         Server = 1,
 
-        /// <summary>
-        /// A description for the Both field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Both_2")]
         Both = 2,
 
-        /// <summary>
-        /// A description for the Neither field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Neither_3")]
         Neither = 3,
 
-        /// <summary>
-        /// A description for the Invalid field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Invalid_4")]
         Invalid = 4,
     }
@@ -24766,7 +25447,7 @@ namespace Opc.Ua
     #region ReadValueId Class
     #if (!OPCUA_EXCLUDE_ReadValueId)
     /// <summary>
-    /// A description for the ReadValueId DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -24804,9 +25485,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the NodeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NodeId", IsRequired = false, Order = 1)]
         public NodeId NodeId
         {
@@ -24814,9 +25493,7 @@ namespace Opc.Ua
             set { m_nodeId = value; }
         }
 
-        /// <summary>
-        /// A description for the AttributeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "AttributeId", IsRequired = false, Order = 2)]
         public uint AttributeId
         {
@@ -24824,9 +25501,7 @@ namespace Opc.Ua
             set { m_attributeId = value; }
         }
 
-        /// <summary>
-        /// A description for the IndexRange field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IndexRange", IsRequired = false, Order = 3)]
         public string IndexRange
         {
@@ -24834,9 +25509,7 @@ namespace Opc.Ua
             set { m_indexRange = value; }
         }
 
-        /// <summary>
-        /// A description for the DataEncoding field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DataEncoding", IsRequired = false, Order = 4)]
         public QualifiedName DataEncoding
         {
@@ -24913,10 +25586,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ReadValueId clone = (ReadValueId)this.MemberwiseClone();
+            return (ReadValueId)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ReadValueId clone = (ReadValueId)base.MemberwiseClone();
 
             clone.m_nodeId = (NodeId)Utils.Clone(this.m_nodeId);
             clone.m_attributeId = (uint)Utils.Clone(this.m_attributeId);
@@ -24942,7 +25623,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfReadValueId", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "ReadValueId")]
+    #if !NET_STANDARD
     public partial class ReadValueIdCollection : List<ReadValueId>, ICloneable
+    #else
+    public partial class ReadValueIdCollection : List<ReadValueId>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -24989,11 +25674,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ReadValueIdCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ReadValueIdCollection clone = new ReadValueIdCollection(this.Count);
 
@@ -25004,7 +25698,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -25013,7 +25706,7 @@ namespace Opc.Ua
     #region ReadRequest Class
     #if (!OPCUA_EXCLUDE_ReadRequest)
     /// <summary>
-    /// A description for the ReadRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -25052,7 +25745,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RequestHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -25073,9 +25766,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the MaxAge field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MaxAge", IsRequired = false, Order = 2)]
         public double MaxAge
         {
@@ -25083,9 +25774,7 @@ namespace Opc.Ua
             set { m_maxAge = value; }
         }
 
-        /// <summary>
-        /// A description for the TimestampsToReturn field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TimestampsToReturn", IsRequired = false, Order = 3)]
         public TimestampsToReturn TimestampsToReturn
         {
@@ -25094,7 +25783,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the NodesToRead field.
+        /// 
         /// </summary>
         [DataMember(Name = "NodesToRead", IsRequired = false, Order = 4)]
         public ReadValueIdCollection NodesToRead
@@ -25184,10 +25873,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ReadRequest clone = (ReadRequest)this.MemberwiseClone();
+            return (ReadRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ReadRequest clone = (ReadRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_maxAge = (double)Utils.Clone(this.m_maxAge);
@@ -25211,7 +25908,7 @@ namespace Opc.Ua
     #region ReadResponse Class
     #if (!OPCUA_EXCLUDE_ReadResponse)
     /// <summary>
-    /// A description for the ReadResponse DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -25249,7 +25946,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ResponseHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -25271,7 +25968,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the Results field.
+        /// 
         /// </summary>
         [DataMember(Name = "Results", IsRequired = false, Order = 2)]
         public DataValueCollection Results
@@ -25293,7 +25990,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -25380,10 +26077,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ReadResponse clone = (ReadResponse)this.MemberwiseClone();
+            return (ReadResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ReadResponse clone = (ReadResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_results = (DataValueCollection)Utils.Clone(this.m_results);
@@ -25405,7 +26110,7 @@ namespace Opc.Ua
     #region HistoryReadValueId Class
     #if (!OPCUA_EXCLUDE_HistoryReadValueId)
     /// <summary>
-    /// A description for the HistoryReadValueId DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -25443,9 +26148,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the NodeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NodeId", IsRequired = false, Order = 1)]
         public NodeId NodeId
         {
@@ -25453,9 +26156,7 @@ namespace Opc.Ua
             set { m_nodeId = value; }
         }
 
-        /// <summary>
-        /// A description for the IndexRange field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IndexRange", IsRequired = false, Order = 2)]
         public string IndexRange
         {
@@ -25463,9 +26164,7 @@ namespace Opc.Ua
             set { m_indexRange = value; }
         }
 
-        /// <summary>
-        /// A description for the DataEncoding field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DataEncoding", IsRequired = false, Order = 3)]
         public QualifiedName DataEncoding
         {
@@ -25473,9 +26172,7 @@ namespace Opc.Ua
             set { m_dataEncoding = value; }
         }
 
-        /// <summary>
-        /// A description for the ContinuationPoint field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ContinuationPoint", IsRequired = false, Order = 4)]
         public byte[] ContinuationPoint
         {
@@ -25552,10 +26249,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            HistoryReadValueId clone = (HistoryReadValueId)this.MemberwiseClone();
+            return (HistoryReadValueId)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            HistoryReadValueId clone = (HistoryReadValueId)base.MemberwiseClone();
 
             clone.m_nodeId = (NodeId)Utils.Clone(this.m_nodeId);
             clone.m_indexRange = (string)Utils.Clone(this.m_indexRange);
@@ -25581,7 +26286,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfHistoryReadValueId", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "HistoryReadValueId")]
+    #if !NET_STANDARD
     public partial class HistoryReadValueIdCollection : List<HistoryReadValueId>, ICloneable
+    #else
+    public partial class HistoryReadValueIdCollection : List<HistoryReadValueId>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -25628,11 +26337,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (HistoryReadValueIdCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             HistoryReadValueIdCollection clone = new HistoryReadValueIdCollection(this.Count);
 
@@ -25643,7 +26361,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -25652,7 +26369,7 @@ namespace Opc.Ua
     #region HistoryReadResult Class
     #if (!OPCUA_EXCLUDE_HistoryReadResult)
     /// <summary>
-    /// A description for the HistoryReadResult DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -25689,9 +26406,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the StatusCode field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StatusCode", IsRequired = false, Order = 1)]
         public StatusCode StatusCode
         {
@@ -25699,9 +26414,7 @@ namespace Opc.Ua
             set { m_statusCode = value; }
         }
 
-        /// <summary>
-        /// A description for the ContinuationPoint field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ContinuationPoint", IsRequired = false, Order = 2)]
         public byte[] ContinuationPoint
         {
@@ -25709,9 +26422,7 @@ namespace Opc.Ua
             set { m_continuationPoint = value; }
         }
 
-        /// <summary>
-        /// A description for the HistoryData field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "HistoryData", IsRequired = false, Order = 3)]
         public ExtensionObject HistoryData
         {
@@ -25785,10 +26496,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            HistoryReadResult clone = (HistoryReadResult)this.MemberwiseClone();
+            return (HistoryReadResult)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            HistoryReadResult clone = (HistoryReadResult)base.MemberwiseClone();
 
             clone.m_statusCode = (StatusCode)Utils.Clone(this.m_statusCode);
             clone.m_continuationPoint = (byte[])Utils.Clone(this.m_continuationPoint);
@@ -25812,7 +26531,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfHistoryReadResult", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "HistoryReadResult")]
+    #if !NET_STANDARD
     public partial class HistoryReadResultCollection : List<HistoryReadResult>, ICloneable
+    #else
+    public partial class HistoryReadResultCollection : List<HistoryReadResult>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -25859,11 +26582,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (HistoryReadResultCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             HistoryReadResultCollection clone = new HistoryReadResultCollection(this.Count);
 
@@ -25874,7 +26606,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -25883,7 +26614,7 @@ namespace Opc.Ua
     #region HistoryReadDetails Class
     #if (!OPCUA_EXCLUDE_HistoryReadDetails)
     /// <summary>
-    /// A description for the HistoryReadDetails DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -25975,10 +26706,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            HistoryReadDetails clone = (HistoryReadDetails)this.MemberwiseClone();
+            return (HistoryReadDetails)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            HistoryReadDetails clone = (HistoryReadDetails)base.MemberwiseClone();
 
 
             return clone;
@@ -25994,7 +26733,7 @@ namespace Opc.Ua
     #region ReadEventDetails Class
     #if (!OPCUA_EXCLUDE_ReadEventDetails)
     /// <summary>
-    /// A description for the ReadEventDetails DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -26032,9 +26771,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the NumValuesPerNode field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NumValuesPerNode", IsRequired = false, Order = 1)]
         public uint NumValuesPerNode
         {
@@ -26042,9 +26779,7 @@ namespace Opc.Ua
             set { m_numValuesPerNode = value; }
         }
 
-        /// <summary>
-        /// A description for the StartTime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StartTime", IsRequired = false, Order = 2)]
         public DateTime StartTime
         {
@@ -26052,9 +26787,7 @@ namespace Opc.Ua
             set { m_startTime = value; }
         }
 
-        /// <summary>
-        /// A description for the EndTime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EndTime", IsRequired = false, Order = 3)]
         public DateTime EndTime
         {
@@ -26063,7 +26796,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the Filter field.
+        /// 
         /// </summary>
         [DataMember(Name = "Filter", IsRequired = false, Order = 4)]
         public EventFilter Filter
@@ -26156,12 +26889,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_filter, value.m_filter)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            ReadEventDetails clone = (ReadEventDetails)base.Clone();
+            return (ReadEventDetails)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ReadEventDetails clone = (ReadEventDetails)base.MemberwiseClone();
 
             clone.m_numValuesPerNode = (uint)Utils.Clone(this.m_numValuesPerNode);
             clone.m_startTime = (DateTime)Utils.Clone(this.m_startTime);
@@ -26185,7 +26926,7 @@ namespace Opc.Ua
     #region ReadRawModifiedDetails Class
     #if (!OPCUA_EXCLUDE_ReadRawModifiedDetails)
     /// <summary>
-    /// A description for the ReadRawModifiedDetails DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -26224,9 +26965,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the IsReadModified field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IsReadModified", IsRequired = false, Order = 1)]
         public bool IsReadModified
         {
@@ -26234,9 +26973,7 @@ namespace Opc.Ua
             set { m_isReadModified = value; }
         }
 
-        /// <summary>
-        /// A description for the StartTime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StartTime", IsRequired = false, Order = 2)]
         public DateTime StartTime
         {
@@ -26244,9 +26981,7 @@ namespace Opc.Ua
             set { m_startTime = value; }
         }
 
-        /// <summary>
-        /// A description for the EndTime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EndTime", IsRequired = false, Order = 3)]
         public DateTime EndTime
         {
@@ -26254,9 +26989,7 @@ namespace Opc.Ua
             set { m_endTime = value; }
         }
 
-        /// <summary>
-        /// A description for the NumValuesPerNode field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NumValuesPerNode", IsRequired = false, Order = 4)]
         public uint NumValuesPerNode
         {
@@ -26264,9 +26997,7 @@ namespace Opc.Ua
             set { m_numValuesPerNode = value; }
         }
 
-        /// <summary>
-        /// A description for the ReturnBounds field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ReturnBounds", IsRequired = false, Order = 5)]
         public bool ReturnBounds
         {
@@ -26349,12 +27080,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_returnBounds, value.m_returnBounds)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            ReadRawModifiedDetails clone = (ReadRawModifiedDetails)base.Clone();
+            return (ReadRawModifiedDetails)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ReadRawModifiedDetails clone = (ReadRawModifiedDetails)base.MemberwiseClone();
 
             clone.m_isReadModified = (bool)Utils.Clone(this.m_isReadModified);
             clone.m_startTime = (DateTime)Utils.Clone(this.m_startTime);
@@ -26380,7 +27119,7 @@ namespace Opc.Ua
     #region ReadProcessedDetails Class
     #if (!OPCUA_EXCLUDE_ReadProcessedDetails)
     /// <summary>
-    /// A description for the ReadProcessedDetails DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -26419,9 +27158,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the StartTime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StartTime", IsRequired = false, Order = 1)]
         public DateTime StartTime
         {
@@ -26429,9 +27166,7 @@ namespace Opc.Ua
             set { m_startTime = value; }
         }
 
-        /// <summary>
-        /// A description for the EndTime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EndTime", IsRequired = false, Order = 2)]
         public DateTime EndTime
         {
@@ -26439,9 +27174,7 @@ namespace Opc.Ua
             set { m_endTime = value; }
         }
 
-        /// <summary>
-        /// A description for the ProcessingInterval field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ProcessingInterval", IsRequired = false, Order = 3)]
         public double ProcessingInterval
         {
@@ -26450,7 +27183,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the AggregateType field.
+        /// 
         /// </summary>
         [DataMember(Name = "AggregateType", IsRequired = false, Order = 4)]
         public NodeIdCollection AggregateType
@@ -26472,7 +27205,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the AggregateConfiguration field.
+        /// 
         /// </summary>
         [DataMember(Name = "AggregateConfiguration", IsRequired = false, Order = 5)]
         public AggregateConfiguration AggregateConfiguration
@@ -26568,12 +27301,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_aggregateConfiguration, value.m_aggregateConfiguration)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            ReadProcessedDetails clone = (ReadProcessedDetails)base.Clone();
+            return (ReadProcessedDetails)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ReadProcessedDetails clone = (ReadProcessedDetails)base.MemberwiseClone();
 
             clone.m_startTime = (DateTime)Utils.Clone(this.m_startTime);
             clone.m_endTime = (DateTime)Utils.Clone(this.m_endTime);
@@ -26599,7 +27340,7 @@ namespace Opc.Ua
     #region ReadAtTimeDetails Class
     #if (!OPCUA_EXCLUDE_ReadAtTimeDetails)
     /// <summary>
-    /// A description for the ReadAtTimeDetails DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -26636,7 +27377,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ReqTimes field.
+        /// 
         /// </summary>
         [DataMember(Name = "ReqTimes", IsRequired = false, Order = 1)]
         public DateTimeCollection ReqTimes
@@ -26657,9 +27398,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the UseSimpleBounds field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "UseSimpleBounds", IsRequired = false, Order = 2)]
         public bool UseSimpleBounds
         {
@@ -26733,12 +27472,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_useSimpleBounds, value.m_useSimpleBounds)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            ReadAtTimeDetails clone = (ReadAtTimeDetails)base.Clone();
+            return (ReadAtTimeDetails)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ReadAtTimeDetails clone = (ReadAtTimeDetails)base.MemberwiseClone();
 
             clone.m_reqTimes = (DateTimeCollection)Utils.Clone(this.m_reqTimes);
             clone.m_useSimpleBounds = (bool)Utils.Clone(this.m_useSimpleBounds);
@@ -26758,7 +27505,7 @@ namespace Opc.Ua
     #region HistoryData Class
     #if (!OPCUA_EXCLUDE_HistoryData)
     /// <summary>
-    /// A description for the HistoryData DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -26794,7 +27541,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the DataValues field.
+        /// 
         /// </summary>
         [DataMember(Name = "DataValues", IsRequired = false, Order = 1)]
         public DataValueCollection DataValues
@@ -26875,10 +27622,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            HistoryData clone = (HistoryData)this.MemberwiseClone();
+            return (HistoryData)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            HistoryData clone = (HistoryData)base.MemberwiseClone();
 
             clone.m_dataValues = (DataValueCollection)Utils.Clone(this.m_dataValues);
 
@@ -26896,7 +27651,7 @@ namespace Opc.Ua
     #region ModificationInfo Class
     #if (!OPCUA_EXCLUDE_ModificationInfo)
     /// <summary>
-    /// A description for the ModificationInfo DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -26933,9 +27688,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ModificationTime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ModificationTime", IsRequired = false, Order = 1)]
         public DateTime ModificationTime
         {
@@ -26943,9 +27696,7 @@ namespace Opc.Ua
             set { m_modificationTime = value; }
         }
 
-        /// <summary>
-        /// A description for the UpdateType field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "UpdateType", IsRequired = false, Order = 2)]
         public HistoryUpdateType UpdateType
         {
@@ -26953,9 +27704,7 @@ namespace Opc.Ua
             set { m_updateType = value; }
         }
 
-        /// <summary>
-        /// A description for the UserName field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "UserName", IsRequired = false, Order = 3)]
         public string UserName
         {
@@ -27029,10 +27778,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ModificationInfo clone = (ModificationInfo)this.MemberwiseClone();
+            return (ModificationInfo)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ModificationInfo clone = (ModificationInfo)base.MemberwiseClone();
 
             clone.m_modificationTime = (DateTime)Utils.Clone(this.m_modificationTime);
             clone.m_updateType = (HistoryUpdateType)Utils.Clone(this.m_updateType);
@@ -27056,7 +27813,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfModificationInfo", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "ModificationInfo")]
+    #if !NET_STANDARD
     public partial class ModificationInfoCollection : List<ModificationInfo>, ICloneable
+    #else
+    public partial class ModificationInfoCollection : List<ModificationInfo>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -27103,11 +27864,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ModificationInfoCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ModificationInfoCollection clone = new ModificationInfoCollection(this.Count);
 
@@ -27118,7 +27888,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -27127,7 +27896,7 @@ namespace Opc.Ua
     #region HistoryModifiedData Class
     #if (!OPCUA_EXCLUDE_HistoryModifiedData)
     /// <summary>
-    /// A description for the HistoryModifiedData DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -27163,7 +27932,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ModificationInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "ModificationInfos", IsRequired = false, Order = 1)]
         public ModificationInfoCollection ModificationInfos
@@ -27247,12 +28016,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_modificationInfos, value.m_modificationInfos)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            HistoryModifiedData clone = (HistoryModifiedData)base.Clone();
+            return (HistoryModifiedData)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            HistoryModifiedData clone = (HistoryModifiedData)base.MemberwiseClone();
 
             clone.m_modificationInfos = (ModificationInfoCollection)Utils.Clone(this.m_modificationInfos);
 
@@ -27270,7 +28047,7 @@ namespace Opc.Ua
     #region HistoryEvent Class
     #if (!OPCUA_EXCLUDE_HistoryEvent)
     /// <summary>
-    /// A description for the HistoryEvent DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -27306,7 +28083,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the Events field.
+        /// 
         /// </summary>
         [DataMember(Name = "Events", IsRequired = false, Order = 1)]
         public HistoryEventFieldListCollection Events
@@ -27387,10 +28164,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            HistoryEvent clone = (HistoryEvent)this.MemberwiseClone();
+            return (HistoryEvent)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            HistoryEvent clone = (HistoryEvent)base.MemberwiseClone();
 
             clone.m_events = (HistoryEventFieldListCollection)Utils.Clone(this.m_events);
 
@@ -27408,7 +28193,7 @@ namespace Opc.Ua
     #region HistoryReadRequest Class
     #if (!OPCUA_EXCLUDE_HistoryReadRequest)
     /// <summary>
-    /// A description for the HistoryReadRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -27448,7 +28233,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RequestHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -27469,9 +28254,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the HistoryReadDetails field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "HistoryReadDetails", IsRequired = false, Order = 2)]
         public ExtensionObject HistoryReadDetails
         {
@@ -27479,9 +28262,7 @@ namespace Opc.Ua
             set { m_historyReadDetails = value; }
         }
 
-        /// <summary>
-        /// A description for the TimestampsToReturn field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TimestampsToReturn", IsRequired = false, Order = 3)]
         public TimestampsToReturn TimestampsToReturn
         {
@@ -27489,9 +28270,7 @@ namespace Opc.Ua
             set { m_timestampsToReturn = value; }
         }
 
-        /// <summary>
-        /// A description for the ReleaseContinuationPoints field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ReleaseContinuationPoints", IsRequired = false, Order = 4)]
         public bool ReleaseContinuationPoints
         {
@@ -27500,7 +28279,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the NodesToRead field.
+        /// 
         /// </summary>
         [DataMember(Name = "NodesToRead", IsRequired = false, Order = 5)]
         public HistoryReadValueIdCollection NodesToRead
@@ -27593,10 +28372,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            HistoryReadRequest clone = (HistoryReadRequest)this.MemberwiseClone();
+            return (HistoryReadRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            HistoryReadRequest clone = (HistoryReadRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_historyReadDetails = (ExtensionObject)Utils.Clone(this.m_historyReadDetails);
@@ -27622,7 +28409,7 @@ namespace Opc.Ua
     #region HistoryReadResponse Class
     #if (!OPCUA_EXCLUDE_HistoryReadResponse)
     /// <summary>
-    /// A description for the HistoryReadResponse DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -27660,7 +28447,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ResponseHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -27682,7 +28469,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the Results field.
+        /// 
         /// </summary>
         [DataMember(Name = "Results", IsRequired = false, Order = 2)]
         public HistoryReadResultCollection Results
@@ -27704,7 +28491,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -27791,10 +28578,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            HistoryReadResponse clone = (HistoryReadResponse)this.MemberwiseClone();
+            return (HistoryReadResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            HistoryReadResponse clone = (HistoryReadResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_results = (HistoryReadResultCollection)Utils.Clone(this.m_results);
@@ -27816,7 +28611,7 @@ namespace Opc.Ua
     #region WriteValue Class
     #if (!OPCUA_EXCLUDE_WriteValue)
     /// <summary>
-    /// A description for the WriteValue DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -27854,9 +28649,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the NodeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NodeId", IsRequired = false, Order = 1)]
         public NodeId NodeId
         {
@@ -27864,9 +28657,7 @@ namespace Opc.Ua
             set { m_nodeId = value; }
         }
 
-        /// <summary>
-        /// A description for the AttributeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "AttributeId", IsRequired = false, Order = 2)]
         public uint AttributeId
         {
@@ -27874,9 +28665,7 @@ namespace Opc.Ua
             set { m_attributeId = value; }
         }
 
-        /// <summary>
-        /// A description for the IndexRange field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IndexRange", IsRequired = false, Order = 3)]
         public string IndexRange
         {
@@ -27884,9 +28673,7 @@ namespace Opc.Ua
             set { m_indexRange = value; }
         }
 
-        /// <summary>
-        /// A description for the Value field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Value", IsRequired = false, Order = 4)]
         public DataValue Value
         {
@@ -27963,10 +28750,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            WriteValue clone = (WriteValue)this.MemberwiseClone();
+            return (WriteValue)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            WriteValue clone = (WriteValue)base.MemberwiseClone();
 
             clone.m_nodeId = (NodeId)Utils.Clone(this.m_nodeId);
             clone.m_attributeId = (uint)Utils.Clone(this.m_attributeId);
@@ -27992,7 +28787,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfWriteValue", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "WriteValue")]
+    #if !NET_STANDARD
     public partial class WriteValueCollection : List<WriteValue>, ICloneable
+    #else
+    public partial class WriteValueCollection : List<WriteValue>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -28039,11 +28838,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (WriteValueCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             WriteValueCollection clone = new WriteValueCollection(this.Count);
 
@@ -28054,7 +28862,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -28063,7 +28870,7 @@ namespace Opc.Ua
     #region WriteRequest Class
     #if (!OPCUA_EXCLUDE_WriteRequest)
     /// <summary>
-    /// A description for the WriteRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -28100,7 +28907,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RequestHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -28122,7 +28929,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the NodesToWrite field.
+        /// 
         /// </summary>
         [DataMember(Name = "NodesToWrite", IsRequired = false, Order = 2)]
         public WriteValueCollection NodesToWrite
@@ -28206,10 +29013,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            WriteRequest clone = (WriteRequest)this.MemberwiseClone();
+            return (WriteRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            WriteRequest clone = (WriteRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_nodesToWrite = (WriteValueCollection)Utils.Clone(this.m_nodesToWrite);
@@ -28229,7 +29044,7 @@ namespace Opc.Ua
     #region WriteResponse Class
     #if (!OPCUA_EXCLUDE_WriteResponse)
     /// <summary>
-    /// A description for the WriteResponse DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -28267,7 +29082,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ResponseHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -28289,7 +29104,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the Results field.
+        /// 
         /// </summary>
         [DataMember(Name = "Results", IsRequired = false, Order = 2)]
         public StatusCodeCollection Results
@@ -28311,7 +29126,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -28398,10 +29213,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            WriteResponse clone = (WriteResponse)this.MemberwiseClone();
+            return (WriteResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            WriteResponse clone = (WriteResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_results = (StatusCodeCollection)Utils.Clone(this.m_results);
@@ -28423,7 +29246,7 @@ namespace Opc.Ua
     #region HistoryUpdateDetails Class
     #if (!OPCUA_EXCLUDE_HistoryUpdateDetails)
     /// <summary>
-    /// A description for the HistoryUpdateDetails DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -28458,9 +29281,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the NodeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NodeId", IsRequired = false, Order = 1)]
         public NodeId NodeId
         {
@@ -28528,10 +29349,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            HistoryUpdateDetails clone = (HistoryUpdateDetails)this.MemberwiseClone();
+            return (HistoryUpdateDetails)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            HistoryUpdateDetails clone = (HistoryUpdateDetails)base.MemberwiseClone();
 
             clone.m_nodeId = (NodeId)Utils.Clone(this.m_nodeId);
 
@@ -28549,34 +29378,26 @@ namespace Opc.Ua
     #region HistoryUpdateType Enumeration
     #if (!OPCUA_EXCLUDE_HistoryUpdateType)
     /// <summary>
-    /// A description for the HistoryUpdateType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum HistoryUpdateType
     {
-        /// <summary>
-        /// A description for the Insert field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Insert_1")]
         Insert = 1,
 
-        /// <summary>
-        /// A description for the Replace field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Replace_2")]
         Replace = 2,
 
-        /// <summary>
-        /// A description for the Update field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Update_3")]
         Update = 3,
 
-        /// <summary>
-        /// A description for the Delete field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Delete_4")]
         Delete = 4,
     }
@@ -28586,34 +29407,26 @@ namespace Opc.Ua
     #region PerformUpdateType Enumeration
     #if (!OPCUA_EXCLUDE_PerformUpdateType)
     /// <summary>
-    /// A description for the PerformUpdateType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum PerformUpdateType
     {
-        /// <summary>
-        /// A description for the Insert field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Insert_1")]
         Insert = 1,
 
-        /// <summary>
-        /// A description for the Replace field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Replace_2")]
         Replace = 2,
 
-        /// <summary>
-        /// A description for the Update field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Update_3")]
         Update = 3,
 
-        /// <summary>
-        /// A description for the Remove field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Remove_4")]
         Remove = 4,
     }
@@ -28623,7 +29436,7 @@ namespace Opc.Ua
     #region UpdateDataDetails Class
     #if (!OPCUA_EXCLUDE_UpdateDataDetails)
     /// <summary>
-    /// A description for the UpdateDataDetails DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -28659,9 +29472,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the PerformInsertReplace field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "PerformInsertReplace", IsRequired = false, Order = 1)]
         public PerformUpdateType PerformInsertReplace
         {
@@ -28670,7 +29481,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the UpdateValues field.
+        /// 
         /// </summary>
         [DataMember(Name = "UpdateValues", IsRequired = false, Order = 2)]
         public DataValueCollection UpdateValues
@@ -28757,12 +29568,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_updateValues, value.m_updateValues)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            UpdateDataDetails clone = (UpdateDataDetails)base.Clone();
+            return (UpdateDataDetails)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            UpdateDataDetails clone = (UpdateDataDetails)base.MemberwiseClone();
 
             clone.m_performInsertReplace = (PerformUpdateType)Utils.Clone(this.m_performInsertReplace);
             clone.m_updateValues = (DataValueCollection)Utils.Clone(this.m_updateValues);
@@ -28782,7 +29601,7 @@ namespace Opc.Ua
     #region UpdateStructureDataDetails Class
     #if (!OPCUA_EXCLUDE_UpdateStructureDataDetails)
     /// <summary>
-    /// A description for the UpdateStructureDataDetails DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -28818,9 +29637,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the PerformInsertReplace field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "PerformInsertReplace", IsRequired = false, Order = 1)]
         public PerformUpdateType PerformInsertReplace
         {
@@ -28829,7 +29646,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the UpdateValues field.
+        /// 
         /// </summary>
         [DataMember(Name = "UpdateValues", IsRequired = false, Order = 2)]
         public DataValueCollection UpdateValues
@@ -28916,12 +29733,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_updateValues, value.m_updateValues)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            UpdateStructureDataDetails clone = (UpdateStructureDataDetails)base.Clone();
+            return (UpdateStructureDataDetails)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            UpdateStructureDataDetails clone = (UpdateStructureDataDetails)base.MemberwiseClone();
 
             clone.m_performInsertReplace = (PerformUpdateType)Utils.Clone(this.m_performInsertReplace);
             clone.m_updateValues = (DataValueCollection)Utils.Clone(this.m_updateValues);
@@ -28941,7 +29766,7 @@ namespace Opc.Ua
     #region UpdateEventDetails Class
     #if (!OPCUA_EXCLUDE_UpdateEventDetails)
     /// <summary>
-    /// A description for the UpdateEventDetails DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -28978,9 +29803,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the PerformInsertReplace field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "PerformInsertReplace", IsRequired = false, Order = 1)]
         public PerformUpdateType PerformInsertReplace
         {
@@ -28989,7 +29812,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the Filter field.
+        /// 
         /// </summary>
         [DataMember(Name = "Filter", IsRequired = false, Order = 2)]
         public EventFilter Filter
@@ -29011,7 +29834,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the EventData field.
+        /// 
         /// </summary>
         [DataMember(Name = "EventData", IsRequired = false, Order = 3)]
         public HistoryEventFieldListCollection EventData
@@ -29101,12 +29924,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_eventData, value.m_eventData)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            UpdateEventDetails clone = (UpdateEventDetails)base.Clone();
+            return (UpdateEventDetails)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            UpdateEventDetails clone = (UpdateEventDetails)base.MemberwiseClone();
 
             clone.m_performInsertReplace = (PerformUpdateType)Utils.Clone(this.m_performInsertReplace);
             clone.m_filter = (EventFilter)Utils.Clone(this.m_filter);
@@ -29128,7 +29959,7 @@ namespace Opc.Ua
     #region DeleteRawModifiedDetails Class
     #if (!OPCUA_EXCLUDE_DeleteRawModifiedDetails)
     /// <summary>
-    /// A description for the DeleteRawModifiedDetails DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -29165,9 +29996,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the IsDeleteModified field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "IsDeleteModified", IsRequired = false, Order = 1)]
         public bool IsDeleteModified
         {
@@ -29175,9 +30004,7 @@ namespace Opc.Ua
             set { m_isDeleteModified = value; }
         }
 
-        /// <summary>
-        /// A description for the StartTime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StartTime", IsRequired = false, Order = 2)]
         public DateTime StartTime
         {
@@ -29185,9 +30012,7 @@ namespace Opc.Ua
             set { m_startTime = value; }
         }
 
-        /// <summary>
-        /// A description for the EndTime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EndTime", IsRequired = false, Order = 3)]
         public DateTime EndTime
         {
@@ -29264,12 +30089,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_endTime, value.m_endTime)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            DeleteRawModifiedDetails clone = (DeleteRawModifiedDetails)base.Clone();
+            return (DeleteRawModifiedDetails)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            DeleteRawModifiedDetails clone = (DeleteRawModifiedDetails)base.MemberwiseClone();
 
             clone.m_isDeleteModified = (bool)Utils.Clone(this.m_isDeleteModified);
             clone.m_startTime = (DateTime)Utils.Clone(this.m_startTime);
@@ -29291,7 +30124,7 @@ namespace Opc.Ua
     #region DeleteAtTimeDetails Class
     #if (!OPCUA_EXCLUDE_DeleteAtTimeDetails)
     /// <summary>
-    /// A description for the DeleteAtTimeDetails DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -29327,7 +30160,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ReqTimes field.
+        /// 
         /// </summary>
         [DataMember(Name = "ReqTimes", IsRequired = false, Order = 1)]
         public DateTimeCollection ReqTimes
@@ -29411,12 +30244,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_reqTimes, value.m_reqTimes)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            DeleteAtTimeDetails clone = (DeleteAtTimeDetails)base.Clone();
+            return (DeleteAtTimeDetails)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            DeleteAtTimeDetails clone = (DeleteAtTimeDetails)base.MemberwiseClone();
 
             clone.m_reqTimes = (DateTimeCollection)Utils.Clone(this.m_reqTimes);
 
@@ -29434,7 +30275,7 @@ namespace Opc.Ua
     #region DeleteEventDetails Class
     #if (!OPCUA_EXCLUDE_DeleteEventDetails)
     /// <summary>
-    /// A description for the DeleteEventDetails DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -29470,7 +30311,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the EventIds field.
+        /// 
         /// </summary>
         [DataMember(Name = "EventIds", IsRequired = false, Order = 1)]
         public ByteStringCollection EventIds
@@ -29554,12 +30395,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_eventIds, value.m_eventIds)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            DeleteEventDetails clone = (DeleteEventDetails)base.Clone();
+            return (DeleteEventDetails)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            DeleteEventDetails clone = (DeleteEventDetails)base.MemberwiseClone();
 
             clone.m_eventIds = (ByteStringCollection)Utils.Clone(this.m_eventIds);
 
@@ -29577,7 +30426,7 @@ namespace Opc.Ua
     #region HistoryUpdateResult Class
     #if (!OPCUA_EXCLUDE_HistoryUpdateResult)
     /// <summary>
-    /// A description for the HistoryUpdateResult DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -29614,9 +30463,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the StatusCode field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StatusCode", IsRequired = false, Order = 1)]
         public StatusCode StatusCode
         {
@@ -29625,7 +30472,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the OperationResults field.
+        /// 
         /// </summary>
         [DataMember(Name = "OperationResults", IsRequired = false, Order = 2)]
         public StatusCodeCollection OperationResults
@@ -29647,7 +30494,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -29734,10 +30581,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            HistoryUpdateResult clone = (HistoryUpdateResult)this.MemberwiseClone();
+            return (HistoryUpdateResult)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            HistoryUpdateResult clone = (HistoryUpdateResult)base.MemberwiseClone();
 
             clone.m_statusCode = (StatusCode)Utils.Clone(this.m_statusCode);
             clone.m_operationResults = (StatusCodeCollection)Utils.Clone(this.m_operationResults);
@@ -29761,7 +30616,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfHistoryUpdateResult", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "HistoryUpdateResult")]
+    #if !NET_STANDARD
     public partial class HistoryUpdateResultCollection : List<HistoryUpdateResult>, ICloneable
+    #else
+    public partial class HistoryUpdateResultCollection : List<HistoryUpdateResult>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -29808,11 +30667,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (HistoryUpdateResultCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             HistoryUpdateResultCollection clone = new HistoryUpdateResultCollection(this.Count);
 
@@ -29823,7 +30691,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -29832,7 +30699,7 @@ namespace Opc.Ua
     #region HistoryUpdateRequest Class
     #if (!OPCUA_EXCLUDE_HistoryUpdateRequest)
     /// <summary>
-    /// A description for the HistoryUpdateRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -29869,7 +30736,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RequestHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -29891,7 +30758,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the HistoryUpdateDetails field.
+        /// 
         /// </summary>
         [DataMember(Name = "HistoryUpdateDetails", IsRequired = false, Order = 2)]
         public ExtensionObjectCollection HistoryUpdateDetails
@@ -29975,10 +30842,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            HistoryUpdateRequest clone = (HistoryUpdateRequest)this.MemberwiseClone();
+            return (HistoryUpdateRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            HistoryUpdateRequest clone = (HistoryUpdateRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_historyUpdateDetails = (ExtensionObjectCollection)Utils.Clone(this.m_historyUpdateDetails);
@@ -29998,7 +30873,7 @@ namespace Opc.Ua
     #region HistoryUpdateResponse Class
     #if (!OPCUA_EXCLUDE_HistoryUpdateResponse)
     /// <summary>
-    /// A description for the HistoryUpdateResponse DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -30036,7 +30911,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ResponseHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -30058,7 +30933,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the Results field.
+        /// 
         /// </summary>
         [DataMember(Name = "Results", IsRequired = false, Order = 2)]
         public HistoryUpdateResultCollection Results
@@ -30080,7 +30955,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -30167,10 +31042,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            HistoryUpdateResponse clone = (HistoryUpdateResponse)this.MemberwiseClone();
+            return (HistoryUpdateResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            HistoryUpdateResponse clone = (HistoryUpdateResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_results = (HistoryUpdateResultCollection)Utils.Clone(this.m_results);
@@ -30192,7 +31075,7 @@ namespace Opc.Ua
     #region CallMethodRequest Class
     #if (!OPCUA_EXCLUDE_CallMethodRequest)
     /// <summary>
-    /// A description for the CallMethodRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -30229,9 +31112,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ObjectId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ObjectId", IsRequired = false, Order = 1)]
         public NodeId ObjectId
         {
@@ -30239,9 +31120,7 @@ namespace Opc.Ua
             set { m_objectId = value; }
         }
 
-        /// <summary>
-        /// A description for the MethodId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MethodId", IsRequired = false, Order = 2)]
         public NodeId MethodId
         {
@@ -30250,7 +31129,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the InputArguments field.
+        /// 
         /// </summary>
         [DataMember(Name = "InputArguments", IsRequired = false, Order = 3)]
         public VariantCollection InputArguments
@@ -30337,10 +31216,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            CallMethodRequest clone = (CallMethodRequest)this.MemberwiseClone();
+            return (CallMethodRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CallMethodRequest clone = (CallMethodRequest)base.MemberwiseClone();
 
             clone.m_objectId = (NodeId)Utils.Clone(this.m_objectId);
             clone.m_methodId = (NodeId)Utils.Clone(this.m_methodId);
@@ -30364,7 +31251,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfCallMethodRequest", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "CallMethodRequest")]
+    #if !NET_STANDARD
     public partial class CallMethodRequestCollection : List<CallMethodRequest>, ICloneable
+    #else
+    public partial class CallMethodRequestCollection : List<CallMethodRequest>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -30411,11 +31302,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (CallMethodRequestCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             CallMethodRequestCollection clone = new CallMethodRequestCollection(this.Count);
 
@@ -30426,7 +31326,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -30435,7 +31334,7 @@ namespace Opc.Ua
     #region CallMethodResult Class
     #if (!OPCUA_EXCLUDE_CallMethodResult)
     /// <summary>
-    /// A description for the CallMethodResult DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -30473,9 +31372,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the StatusCode field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StatusCode", IsRequired = false, Order = 1)]
         public StatusCode StatusCode
         {
@@ -30484,7 +31381,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the InputArgumentResults field.
+        /// 
         /// </summary>
         [DataMember(Name = "InputArgumentResults", IsRequired = false, Order = 2)]
         public StatusCodeCollection InputArgumentResults
@@ -30506,7 +31403,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the InputArgumentDiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "InputArgumentDiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection InputArgumentDiagnosticInfos
@@ -30528,7 +31425,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the OutputArguments field.
+        /// 
         /// </summary>
         [DataMember(Name = "OutputArguments", IsRequired = false, Order = 4)]
         public VariantCollection OutputArguments
@@ -30618,10 +31515,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            CallMethodResult clone = (CallMethodResult)this.MemberwiseClone();
+            return (CallMethodResult)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CallMethodResult clone = (CallMethodResult)base.MemberwiseClone();
 
             clone.m_statusCode = (StatusCode)Utils.Clone(this.m_statusCode);
             clone.m_inputArgumentResults = (StatusCodeCollection)Utils.Clone(this.m_inputArgumentResults);
@@ -30647,7 +31552,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfCallMethodResult", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "CallMethodResult")]
+    #if !NET_STANDARD
     public partial class CallMethodResultCollection : List<CallMethodResult>, ICloneable
+    #else
+    public partial class CallMethodResultCollection : List<CallMethodResult>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -30694,11 +31603,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (CallMethodResultCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             CallMethodResultCollection clone = new CallMethodResultCollection(this.Count);
 
@@ -30709,7 +31627,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -30718,7 +31635,7 @@ namespace Opc.Ua
     #region CallRequest Class
     #if (!OPCUA_EXCLUDE_CallRequest)
     /// <summary>
-    /// A description for the CallRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -30755,7 +31672,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RequestHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -30777,7 +31694,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the MethodsToCall field.
+        /// 
         /// </summary>
         [DataMember(Name = "MethodsToCall", IsRequired = false, Order = 2)]
         public CallMethodRequestCollection MethodsToCall
@@ -30861,10 +31778,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            CallRequest clone = (CallRequest)this.MemberwiseClone();
+            return (CallRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CallRequest clone = (CallRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_methodsToCall = (CallMethodRequestCollection)Utils.Clone(this.m_methodsToCall);
@@ -30884,7 +31809,7 @@ namespace Opc.Ua
     #region CallResponse Class
     #if (!OPCUA_EXCLUDE_CallResponse)
     /// <summary>
-    /// A description for the CallResponse DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -30922,7 +31847,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ResponseHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -30944,7 +31869,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the Results field.
+        /// 
         /// </summary>
         [DataMember(Name = "Results", IsRequired = false, Order = 2)]
         public CallMethodResultCollection Results
@@ -30966,7 +31891,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -31053,10 +31978,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            CallResponse clone = (CallResponse)this.MemberwiseClone();
+            return (CallResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CallResponse clone = (CallResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_results = (CallMethodResultCollection)Utils.Clone(this.m_results);
@@ -31078,28 +32011,22 @@ namespace Opc.Ua
     #region MonitoringMode Enumeration
     #if (!OPCUA_EXCLUDE_MonitoringMode)
     /// <summary>
-    /// A description for the MonitoringMode DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum MonitoringMode
     {
-        /// <summary>
-        /// A description for the Disabled field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Disabled_0")]
         Disabled = 0,
 
-        /// <summary>
-        /// A description for the Sampling field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Sampling_1")]
         Sampling = 1,
 
-        /// <summary>
-        /// A description for the Reporting field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Reporting_2")]
         Reporting = 2,
     }
@@ -31109,28 +32036,22 @@ namespace Opc.Ua
     #region DataChangeTrigger Enumeration
     #if (!OPCUA_EXCLUDE_DataChangeTrigger)
     /// <summary>
-    /// A description for the DataChangeTrigger DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum DataChangeTrigger
     {
-        /// <summary>
-        /// A description for the Status field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Status_0")]
         Status = 0,
 
-        /// <summary>
-        /// A description for the StatusValue field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "StatusValue_1")]
         StatusValue = 1,
 
-        /// <summary>
-        /// A description for the StatusValueTimestamp field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "StatusValueTimestamp_2")]
         StatusValueTimestamp = 2,
     }
@@ -31140,28 +32061,22 @@ namespace Opc.Ua
     #region DeadbandType Enumeration
     #if (!OPCUA_EXCLUDE_DeadbandType)
     /// <summary>
-    /// A description for the DeadbandType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum DeadbandType
     {
-        /// <summary>
-        /// A description for the None field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "None_0")]
         None = 0,
 
-        /// <summary>
-        /// A description for the Absolute field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Absolute_1")]
         Absolute = 1,
 
-        /// <summary>
-        /// A description for the Percent field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Percent_2")]
         Percent = 2,
     }
@@ -31171,7 +32086,7 @@ namespace Opc.Ua
     #region MonitoringFilter Class
     #if (!OPCUA_EXCLUDE_MonitoringFilter)
     /// <summary>
-    /// A description for the MonitoringFilter DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -31263,10 +32178,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            MonitoringFilter clone = (MonitoringFilter)this.MemberwiseClone();
+            return (MonitoringFilter)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            MonitoringFilter clone = (MonitoringFilter)base.MemberwiseClone();
 
 
             return clone;
@@ -31282,7 +32205,7 @@ namespace Opc.Ua
     #region DataChangeFilter Class
     #if (!OPCUA_EXCLUDE_DataChangeFilter)
     /// <summary>
-    /// A description for the DataChangeFilter DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -31319,9 +32242,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Trigger field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Trigger", IsRequired = false, Order = 1)]
         public DataChangeTrigger Trigger
         {
@@ -31329,9 +32250,7 @@ namespace Opc.Ua
             set { m_trigger = value; }
         }
 
-        /// <summary>
-        /// A description for the DeadbandType field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DeadbandType", IsRequired = false, Order = 2)]
         public uint DeadbandType
         {
@@ -31339,9 +32258,7 @@ namespace Opc.Ua
             set { m_deadbandType = value; }
         }
 
-        /// <summary>
-        /// A description for the DeadbandValue field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DeadbandValue", IsRequired = false, Order = 3)]
         public double DeadbandValue
         {
@@ -31418,12 +32335,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_deadbandValue, value.m_deadbandValue)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            DataChangeFilter clone = (DataChangeFilter)base.Clone();
+            return (DataChangeFilter)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            DataChangeFilter clone = (DataChangeFilter)base.MemberwiseClone();
 
             clone.m_trigger = (DataChangeTrigger)Utils.Clone(this.m_trigger);
             clone.m_deadbandType = (uint)Utils.Clone(this.m_deadbandType);
@@ -31445,7 +32370,7 @@ namespace Opc.Ua
     #region EventFilter Class
     #if (!OPCUA_EXCLUDE_EventFilter)
     /// <summary>
-    /// A description for the EventFilter DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -31482,7 +32407,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the SelectClauses field.
+        /// 
         /// </summary>
         [DataMember(Name = "SelectClauses", IsRequired = false, Order = 1)]
         public SimpleAttributeOperandCollection SelectClauses
@@ -31504,7 +32429,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the WhereClause field.
+        /// 
         /// </summary>
         [DataMember(Name = "WhereClause", IsRequired = false, Order = 2)]
         public ContentFilter WhereClause
@@ -31591,12 +32516,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_whereClause, value.m_whereClause)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            EventFilter clone = (EventFilter)base.Clone();
+            return (EventFilter)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            EventFilter clone = (EventFilter)base.MemberwiseClone();
 
             clone.m_selectClauses = (SimpleAttributeOperandCollection)Utils.Clone(this.m_selectClauses);
             clone.m_whereClause = (ContentFilter)Utils.Clone(this.m_whereClause);
@@ -31616,7 +32549,7 @@ namespace Opc.Ua
     #region AggregateConfiguration Class
     #if (!OPCUA_EXCLUDE_AggregateConfiguration)
     /// <summary>
-    /// A description for the AggregateConfiguration DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -31655,9 +32588,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the UseServerCapabilitiesDefaults field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "UseServerCapabilitiesDefaults", IsRequired = false, Order = 1)]
         public bool UseServerCapabilitiesDefaults
         {
@@ -31665,9 +32596,7 @@ namespace Opc.Ua
             set { m_useServerCapabilitiesDefaults = value; }
         }
 
-        /// <summary>
-        /// A description for the TreatUncertainAsBad field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TreatUncertainAsBad", IsRequired = false, Order = 2)]
         public bool TreatUncertainAsBad
         {
@@ -31675,9 +32604,7 @@ namespace Opc.Ua
             set { m_treatUncertainAsBad = value; }
         }
 
-        /// <summary>
-        /// A description for the PercentDataBad field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "PercentDataBad", IsRequired = false, Order = 3)]
         public byte PercentDataBad
         {
@@ -31685,9 +32612,7 @@ namespace Opc.Ua
             set { m_percentDataBad = value; }
         }
 
-        /// <summary>
-        /// A description for the PercentDataGood field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "PercentDataGood", IsRequired = false, Order = 4)]
         public byte PercentDataGood
         {
@@ -31695,9 +32620,7 @@ namespace Opc.Ua
             set { m_percentDataGood = value; }
         }
 
-        /// <summary>
-        /// A description for the UseSlopedExtrapolation field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "UseSlopedExtrapolation", IsRequired = false, Order = 5)]
         public bool UseSlopedExtrapolation
         {
@@ -31777,10 +32700,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            AggregateConfiguration clone = (AggregateConfiguration)this.MemberwiseClone();
+            return (AggregateConfiguration)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            AggregateConfiguration clone = (AggregateConfiguration)base.MemberwiseClone();
 
             clone.m_useServerCapabilitiesDefaults = (bool)Utils.Clone(this.m_useServerCapabilitiesDefaults);
             clone.m_treatUncertainAsBad = (bool)Utils.Clone(this.m_treatUncertainAsBad);
@@ -31806,7 +32737,7 @@ namespace Opc.Ua
     #region AggregateFilter Class
     #if (!OPCUA_EXCLUDE_AggregateFilter)
     /// <summary>
-    /// A description for the AggregateFilter DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -31844,9 +32775,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the StartTime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StartTime", IsRequired = false, Order = 1)]
         public DateTime StartTime
         {
@@ -31854,9 +32783,7 @@ namespace Opc.Ua
             set { m_startTime = value; }
         }
 
-        /// <summary>
-        /// A description for the AggregateType field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "AggregateType", IsRequired = false, Order = 2)]
         public NodeId AggregateType
         {
@@ -31864,9 +32791,7 @@ namespace Opc.Ua
             set { m_aggregateType = value; }
         }
 
-        /// <summary>
-        /// A description for the ProcessingInterval field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ProcessingInterval", IsRequired = false, Order = 3)]
         public double ProcessingInterval
         {
@@ -31875,7 +32800,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the AggregateConfiguration field.
+        /// 
         /// </summary>
         [DataMember(Name = "AggregateConfiguration", IsRequired = false, Order = 4)]
         public AggregateConfiguration AggregateConfiguration
@@ -31968,12 +32893,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_aggregateConfiguration, value.m_aggregateConfiguration)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            AggregateFilter clone = (AggregateFilter)base.Clone();
+            return (AggregateFilter)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            AggregateFilter clone = (AggregateFilter)base.MemberwiseClone();
 
             clone.m_startTime = (DateTime)Utils.Clone(this.m_startTime);
             clone.m_aggregateType = (NodeId)Utils.Clone(this.m_aggregateType);
@@ -31997,7 +32930,7 @@ namespace Opc.Ua
     #region MonitoringFilterResult Class
     #if (!OPCUA_EXCLUDE_MonitoringFilterResult)
     /// <summary>
-    /// A description for the MonitoringFilterResult DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -32089,10 +33022,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            MonitoringFilterResult clone = (MonitoringFilterResult)this.MemberwiseClone();
+            return (MonitoringFilterResult)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            MonitoringFilterResult clone = (MonitoringFilterResult)base.MemberwiseClone();
 
 
             return clone;
@@ -32108,7 +33049,7 @@ namespace Opc.Ua
     #region EventFilterResult Class
     #if (!OPCUA_EXCLUDE_EventFilterResult)
     /// <summary>
-    /// A description for the EventFilterResult DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -32146,7 +33087,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the SelectClauseResults field.
+        /// 
         /// </summary>
         [DataMember(Name = "SelectClauseResults", IsRequired = false, Order = 1)]
         public StatusCodeCollection SelectClauseResults
@@ -32168,7 +33109,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the SelectClauseDiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "SelectClauseDiagnosticInfos", IsRequired = false, Order = 2)]
         public DiagnosticInfoCollection SelectClauseDiagnosticInfos
@@ -32190,7 +33131,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the WhereClauseResult field.
+        /// 
         /// </summary>
         [DataMember(Name = "WhereClauseResult", IsRequired = false, Order = 3)]
         public ContentFilterResult WhereClauseResult
@@ -32280,12 +33221,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_whereClauseResult, value.m_whereClauseResult)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            EventFilterResult clone = (EventFilterResult)base.Clone();
+            return (EventFilterResult)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            EventFilterResult clone = (EventFilterResult)base.MemberwiseClone();
 
             clone.m_selectClauseResults = (StatusCodeCollection)Utils.Clone(this.m_selectClauseResults);
             clone.m_selectClauseDiagnosticInfos = (DiagnosticInfoCollection)Utils.Clone(this.m_selectClauseDiagnosticInfos);
@@ -32307,7 +33256,7 @@ namespace Opc.Ua
     #region AggregateFilterResult Class
     #if (!OPCUA_EXCLUDE_AggregateFilterResult)
     /// <summary>
-    /// A description for the AggregateFilterResult DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -32344,9 +33293,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the RevisedStartTime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RevisedStartTime", IsRequired = false, Order = 1)]
         public DateTime RevisedStartTime
         {
@@ -32354,9 +33301,7 @@ namespace Opc.Ua
             set { m_revisedStartTime = value; }
         }
 
-        /// <summary>
-        /// A description for the RevisedProcessingInterval field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RevisedProcessingInterval", IsRequired = false, Order = 2)]
         public double RevisedProcessingInterval
         {
@@ -32365,7 +33310,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the RevisedAggregateConfiguration field.
+        /// 
         /// </summary>
         [DataMember(Name = "RevisedAggregateConfiguration", IsRequired = false, Order = 3)]
         public AggregateConfiguration RevisedAggregateConfiguration
@@ -32455,12 +33400,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_revisedAggregateConfiguration, value.m_revisedAggregateConfiguration)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            AggregateFilterResult clone = (AggregateFilterResult)base.Clone();
+            return (AggregateFilterResult)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            AggregateFilterResult clone = (AggregateFilterResult)base.MemberwiseClone();
 
             clone.m_revisedStartTime = (DateTime)Utils.Clone(this.m_revisedStartTime);
             clone.m_revisedProcessingInterval = (double)Utils.Clone(this.m_revisedProcessingInterval);
@@ -32482,7 +33435,7 @@ namespace Opc.Ua
     #region MonitoringParameters Class
     #if (!OPCUA_EXCLUDE_MonitoringParameters)
     /// <summary>
-    /// A description for the MonitoringParameters DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -32521,9 +33474,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ClientHandle field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ClientHandle", IsRequired = false, Order = 1)]
         public uint ClientHandle
         {
@@ -32531,9 +33482,7 @@ namespace Opc.Ua
             set { m_clientHandle = value; }
         }
 
-        /// <summary>
-        /// A description for the SamplingInterval field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SamplingInterval", IsRequired = false, Order = 2)]
         public double SamplingInterval
         {
@@ -32541,9 +33490,7 @@ namespace Opc.Ua
             set { m_samplingInterval = value; }
         }
 
-        /// <summary>
-        /// A description for the Filter field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Filter", IsRequired = false, Order = 3)]
         public ExtensionObject Filter
         {
@@ -32551,9 +33498,7 @@ namespace Opc.Ua
             set { m_filter = value; }
         }
 
-        /// <summary>
-        /// A description for the QueueSize field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "QueueSize", IsRequired = false, Order = 4)]
         public uint QueueSize
         {
@@ -32561,9 +33506,7 @@ namespace Opc.Ua
             set { m_queueSize = value; }
         }
 
-        /// <summary>
-        /// A description for the DiscardOldest field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DiscardOldest", IsRequired = false, Order = 5)]
         public bool DiscardOldest
         {
@@ -32643,10 +33586,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            MonitoringParameters clone = (MonitoringParameters)this.MemberwiseClone();
+            return (MonitoringParameters)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            MonitoringParameters clone = (MonitoringParameters)base.MemberwiseClone();
 
             clone.m_clientHandle = (uint)Utils.Clone(this.m_clientHandle);
             clone.m_samplingInterval = (double)Utils.Clone(this.m_samplingInterval);
@@ -32672,7 +33623,7 @@ namespace Opc.Ua
     #region MonitoredItemCreateRequest Class
     #if (!OPCUA_EXCLUDE_MonitoredItemCreateRequest)
     /// <summary>
-    /// A description for the MonitoredItemCreateRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -32710,7 +33661,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ItemToMonitor field.
+        /// 
         /// </summary>
         [DataMember(Name = "ItemToMonitor", IsRequired = false, Order = 1)]
         public ReadValueId ItemToMonitor
@@ -32731,9 +33682,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the MonitoringMode field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MonitoringMode", IsRequired = false, Order = 2)]
         public MonitoringMode MonitoringMode
         {
@@ -32742,7 +33691,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the RequestedParameters field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestedParameters", IsRequired = false, Order = 3)]
         public MonitoringParameters RequestedParameters
@@ -32829,10 +33778,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            MonitoredItemCreateRequest clone = (MonitoredItemCreateRequest)this.MemberwiseClone();
+            return (MonitoredItemCreateRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            MonitoredItemCreateRequest clone = (MonitoredItemCreateRequest)base.MemberwiseClone();
 
             clone.m_itemToMonitor = (ReadValueId)Utils.Clone(this.m_itemToMonitor);
             clone.m_monitoringMode = (MonitoringMode)Utils.Clone(this.m_monitoringMode);
@@ -32856,7 +33813,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfMonitoredItemCreateRequest", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "MonitoredItemCreateRequest")]
+    #if !NET_STANDARD
     public partial class MonitoredItemCreateRequestCollection : List<MonitoredItemCreateRequest>, ICloneable
+    #else
+    public partial class MonitoredItemCreateRequestCollection : List<MonitoredItemCreateRequest>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -32903,11 +33864,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (MonitoredItemCreateRequestCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             MonitoredItemCreateRequestCollection clone = new MonitoredItemCreateRequestCollection(this.Count);
 
@@ -32918,7 +33888,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -32927,7 +33896,7 @@ namespace Opc.Ua
     #region MonitoredItemCreateResult Class
     #if (!OPCUA_EXCLUDE_MonitoredItemCreateResult)
     /// <summary>
-    /// A description for the MonitoredItemCreateResult DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -32966,9 +33935,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the StatusCode field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StatusCode", IsRequired = false, Order = 1)]
         public StatusCode StatusCode
         {
@@ -32976,9 +33943,7 @@ namespace Opc.Ua
             set { m_statusCode = value; }
         }
 
-        /// <summary>
-        /// A description for the MonitoredItemId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MonitoredItemId", IsRequired = false, Order = 2)]
         public uint MonitoredItemId
         {
@@ -32986,9 +33951,7 @@ namespace Opc.Ua
             set { m_monitoredItemId = value; }
         }
 
-        /// <summary>
-        /// A description for the RevisedSamplingInterval field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RevisedSamplingInterval", IsRequired = false, Order = 3)]
         public double RevisedSamplingInterval
         {
@@ -32996,9 +33959,7 @@ namespace Opc.Ua
             set { m_revisedSamplingInterval = value; }
         }
 
-        /// <summary>
-        /// A description for the RevisedQueueSize field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RevisedQueueSize", IsRequired = false, Order = 4)]
         public uint RevisedQueueSize
         {
@@ -33006,9 +33967,7 @@ namespace Opc.Ua
             set { m_revisedQueueSize = value; }
         }
 
-        /// <summary>
-        /// A description for the FilterResult field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "FilterResult", IsRequired = false, Order = 5)]
         public ExtensionObject FilterResult
         {
@@ -33088,10 +34047,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            MonitoredItemCreateResult clone = (MonitoredItemCreateResult)this.MemberwiseClone();
+            return (MonitoredItemCreateResult)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            MonitoredItemCreateResult clone = (MonitoredItemCreateResult)base.MemberwiseClone();
 
             clone.m_statusCode = (StatusCode)Utils.Clone(this.m_statusCode);
             clone.m_monitoredItemId = (uint)Utils.Clone(this.m_monitoredItemId);
@@ -33119,7 +34086,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfMonitoredItemCreateResult", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "MonitoredItemCreateResult")]
+    #if !NET_STANDARD
     public partial class MonitoredItemCreateResultCollection : List<MonitoredItemCreateResult>, ICloneable
+    #else
+    public partial class MonitoredItemCreateResultCollection : List<MonitoredItemCreateResult>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -33166,11 +34137,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (MonitoredItemCreateResultCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             MonitoredItemCreateResultCollection clone = new MonitoredItemCreateResultCollection(this.Count);
 
@@ -33181,7 +34161,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -33190,7 +34169,7 @@ namespace Opc.Ua
     #region CreateMonitoredItemsRequest Class
     #if (!OPCUA_EXCLUDE_CreateMonitoredItemsRequest)
     /// <summary>
-    /// A description for the CreateMonitoredItemsRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -33229,7 +34208,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RequestHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -33250,9 +34229,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the SubscriptionId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SubscriptionId", IsRequired = false, Order = 2)]
         public uint SubscriptionId
         {
@@ -33260,9 +34237,7 @@ namespace Opc.Ua
             set { m_subscriptionId = value; }
         }
 
-        /// <summary>
-        /// A description for the TimestampsToReturn field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TimestampsToReturn", IsRequired = false, Order = 3)]
         public TimestampsToReturn TimestampsToReturn
         {
@@ -33271,7 +34246,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the ItemsToCreate field.
+        /// 
         /// </summary>
         [DataMember(Name = "ItemsToCreate", IsRequired = false, Order = 4)]
         public MonitoredItemCreateRequestCollection ItemsToCreate
@@ -33361,10 +34336,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            CreateMonitoredItemsRequest clone = (CreateMonitoredItemsRequest)this.MemberwiseClone();
+            return (CreateMonitoredItemsRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CreateMonitoredItemsRequest clone = (CreateMonitoredItemsRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_subscriptionId = (uint)Utils.Clone(this.m_subscriptionId);
@@ -33388,7 +34371,7 @@ namespace Opc.Ua
     #region CreateMonitoredItemsResponse Class
     #if (!OPCUA_EXCLUDE_CreateMonitoredItemsResponse)
     /// <summary>
-    /// A description for the CreateMonitoredItemsResponse DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -33426,7 +34409,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ResponseHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -33448,7 +34431,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the Results field.
+        /// 
         /// </summary>
         [DataMember(Name = "Results", IsRequired = false, Order = 2)]
         public MonitoredItemCreateResultCollection Results
@@ -33470,7 +34453,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -33557,10 +34540,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            CreateMonitoredItemsResponse clone = (CreateMonitoredItemsResponse)this.MemberwiseClone();
+            return (CreateMonitoredItemsResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CreateMonitoredItemsResponse clone = (CreateMonitoredItemsResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_results = (MonitoredItemCreateResultCollection)Utils.Clone(this.m_results);
@@ -33582,7 +34573,7 @@ namespace Opc.Ua
     #region MonitoredItemModifyRequest Class
     #if (!OPCUA_EXCLUDE_MonitoredItemModifyRequest)
     /// <summary>
-    /// A description for the MonitoredItemModifyRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -33618,9 +34609,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the MonitoredItemId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MonitoredItemId", IsRequired = false, Order = 1)]
         public uint MonitoredItemId
         {
@@ -33629,7 +34618,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the RequestedParameters field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestedParameters", IsRequired = false, Order = 2)]
         public MonitoringParameters RequestedParameters
@@ -33713,10 +34702,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            MonitoredItemModifyRequest clone = (MonitoredItemModifyRequest)this.MemberwiseClone();
+            return (MonitoredItemModifyRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            MonitoredItemModifyRequest clone = (MonitoredItemModifyRequest)base.MemberwiseClone();
 
             clone.m_monitoredItemId = (uint)Utils.Clone(this.m_monitoredItemId);
             clone.m_requestedParameters = (MonitoringParameters)Utils.Clone(this.m_requestedParameters);
@@ -33738,7 +34735,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfMonitoredItemModifyRequest", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "MonitoredItemModifyRequest")]
+    #if !NET_STANDARD
     public partial class MonitoredItemModifyRequestCollection : List<MonitoredItemModifyRequest>, ICloneable
+    #else
+    public partial class MonitoredItemModifyRequestCollection : List<MonitoredItemModifyRequest>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -33785,11 +34786,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (MonitoredItemModifyRequestCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             MonitoredItemModifyRequestCollection clone = new MonitoredItemModifyRequestCollection(this.Count);
 
@@ -33800,7 +34810,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -33809,7 +34818,7 @@ namespace Opc.Ua
     #region MonitoredItemModifyResult Class
     #if (!OPCUA_EXCLUDE_MonitoredItemModifyResult)
     /// <summary>
-    /// A description for the MonitoredItemModifyResult DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -33847,9 +34856,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the StatusCode field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StatusCode", IsRequired = false, Order = 1)]
         public StatusCode StatusCode
         {
@@ -33857,9 +34864,7 @@ namespace Opc.Ua
             set { m_statusCode = value; }
         }
 
-        /// <summary>
-        /// A description for the RevisedSamplingInterval field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RevisedSamplingInterval", IsRequired = false, Order = 2)]
         public double RevisedSamplingInterval
         {
@@ -33867,9 +34872,7 @@ namespace Opc.Ua
             set { m_revisedSamplingInterval = value; }
         }
 
-        /// <summary>
-        /// A description for the RevisedQueueSize field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RevisedQueueSize", IsRequired = false, Order = 3)]
         public uint RevisedQueueSize
         {
@@ -33877,9 +34880,7 @@ namespace Opc.Ua
             set { m_revisedQueueSize = value; }
         }
 
-        /// <summary>
-        /// A description for the FilterResult field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "FilterResult", IsRequired = false, Order = 4)]
         public ExtensionObject FilterResult
         {
@@ -33956,10 +34957,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            MonitoredItemModifyResult clone = (MonitoredItemModifyResult)this.MemberwiseClone();
+            return (MonitoredItemModifyResult)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            MonitoredItemModifyResult clone = (MonitoredItemModifyResult)base.MemberwiseClone();
 
             clone.m_statusCode = (StatusCode)Utils.Clone(this.m_statusCode);
             clone.m_revisedSamplingInterval = (double)Utils.Clone(this.m_revisedSamplingInterval);
@@ -33985,7 +34994,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfMonitoredItemModifyResult", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "MonitoredItemModifyResult")]
+    #if !NET_STANDARD
     public partial class MonitoredItemModifyResultCollection : List<MonitoredItemModifyResult>, ICloneable
+    #else
+    public partial class MonitoredItemModifyResultCollection : List<MonitoredItemModifyResult>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -34032,11 +35045,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (MonitoredItemModifyResultCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             MonitoredItemModifyResultCollection clone = new MonitoredItemModifyResultCollection(this.Count);
 
@@ -34047,7 +35069,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -34056,7 +35077,7 @@ namespace Opc.Ua
     #region ModifyMonitoredItemsRequest Class
     #if (!OPCUA_EXCLUDE_ModifyMonitoredItemsRequest)
     /// <summary>
-    /// A description for the ModifyMonitoredItemsRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -34095,7 +35116,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RequestHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -34116,9 +35137,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the SubscriptionId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SubscriptionId", IsRequired = false, Order = 2)]
         public uint SubscriptionId
         {
@@ -34126,9 +35145,7 @@ namespace Opc.Ua
             set { m_subscriptionId = value; }
         }
 
-        /// <summary>
-        /// A description for the TimestampsToReturn field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TimestampsToReturn", IsRequired = false, Order = 3)]
         public TimestampsToReturn TimestampsToReturn
         {
@@ -34137,7 +35154,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the ItemsToModify field.
+        /// 
         /// </summary>
         [DataMember(Name = "ItemsToModify", IsRequired = false, Order = 4)]
         public MonitoredItemModifyRequestCollection ItemsToModify
@@ -34227,10 +35244,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ModifyMonitoredItemsRequest clone = (ModifyMonitoredItemsRequest)this.MemberwiseClone();
+            return (ModifyMonitoredItemsRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ModifyMonitoredItemsRequest clone = (ModifyMonitoredItemsRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_subscriptionId = (uint)Utils.Clone(this.m_subscriptionId);
@@ -34254,7 +35279,7 @@ namespace Opc.Ua
     #region ModifyMonitoredItemsResponse Class
     #if (!OPCUA_EXCLUDE_ModifyMonitoredItemsResponse)
     /// <summary>
-    /// A description for the ModifyMonitoredItemsResponse DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -34292,7 +35317,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ResponseHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -34314,7 +35339,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the Results field.
+        /// 
         /// </summary>
         [DataMember(Name = "Results", IsRequired = false, Order = 2)]
         public MonitoredItemModifyResultCollection Results
@@ -34336,7 +35361,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -34423,10 +35448,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ModifyMonitoredItemsResponse clone = (ModifyMonitoredItemsResponse)this.MemberwiseClone();
+            return (ModifyMonitoredItemsResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ModifyMonitoredItemsResponse clone = (ModifyMonitoredItemsResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_results = (MonitoredItemModifyResultCollection)Utils.Clone(this.m_results);
@@ -34448,7 +35481,7 @@ namespace Opc.Ua
     #region SetMonitoringModeRequest Class
     #if (!OPCUA_EXCLUDE_SetMonitoringModeRequest)
     /// <summary>
-    /// A description for the SetMonitoringModeRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -34487,7 +35520,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RequestHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -34508,9 +35541,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the SubscriptionId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SubscriptionId", IsRequired = false, Order = 2)]
         public uint SubscriptionId
         {
@@ -34518,9 +35549,7 @@ namespace Opc.Ua
             set { m_subscriptionId = value; }
         }
 
-        /// <summary>
-        /// A description for the MonitoringMode field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MonitoringMode", IsRequired = false, Order = 3)]
         public MonitoringMode MonitoringMode
         {
@@ -34529,7 +35558,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the MonitoredItemIds field.
+        /// 
         /// </summary>
         [DataMember(Name = "MonitoredItemIds", IsRequired = false, Order = 4)]
         public UInt32Collection MonitoredItemIds
@@ -34619,10 +35648,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            SetMonitoringModeRequest clone = (SetMonitoringModeRequest)this.MemberwiseClone();
+            return (SetMonitoringModeRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            SetMonitoringModeRequest clone = (SetMonitoringModeRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_subscriptionId = (uint)Utils.Clone(this.m_subscriptionId);
@@ -34646,7 +35683,7 @@ namespace Opc.Ua
     #region SetMonitoringModeResponse Class
     #if (!OPCUA_EXCLUDE_SetMonitoringModeResponse)
     /// <summary>
-    /// A description for the SetMonitoringModeResponse DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -34684,7 +35721,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ResponseHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -34706,7 +35743,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the Results field.
+        /// 
         /// </summary>
         [DataMember(Name = "Results", IsRequired = false, Order = 2)]
         public StatusCodeCollection Results
@@ -34728,7 +35765,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -34815,10 +35852,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            SetMonitoringModeResponse clone = (SetMonitoringModeResponse)this.MemberwiseClone();
+            return (SetMonitoringModeResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            SetMonitoringModeResponse clone = (SetMonitoringModeResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_results = (StatusCodeCollection)Utils.Clone(this.m_results);
@@ -34840,7 +35885,7 @@ namespace Opc.Ua
     #region SetTriggeringRequest Class
     #if (!OPCUA_EXCLUDE_SetTriggeringRequest)
     /// <summary>
-    /// A description for the SetTriggeringRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -34880,7 +35925,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RequestHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -34901,9 +35946,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the SubscriptionId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SubscriptionId", IsRequired = false, Order = 2)]
         public uint SubscriptionId
         {
@@ -34911,9 +35954,7 @@ namespace Opc.Ua
             set { m_subscriptionId = value; }
         }
 
-        /// <summary>
-        /// A description for the TriggeringItemId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TriggeringItemId", IsRequired = false, Order = 3)]
         public uint TriggeringItemId
         {
@@ -34922,7 +35963,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the LinksToAdd field.
+        /// 
         /// </summary>
         [DataMember(Name = "LinksToAdd", IsRequired = false, Order = 4)]
         public UInt32Collection LinksToAdd
@@ -34944,7 +35985,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the LinksToRemove field.
+        /// 
         /// </summary>
         [DataMember(Name = "LinksToRemove", IsRequired = false, Order = 5)]
         public UInt32Collection LinksToRemove
@@ -35037,10 +36078,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            SetTriggeringRequest clone = (SetTriggeringRequest)this.MemberwiseClone();
+            return (SetTriggeringRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            SetTriggeringRequest clone = (SetTriggeringRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_subscriptionId = (uint)Utils.Clone(this.m_subscriptionId);
@@ -35066,7 +36115,7 @@ namespace Opc.Ua
     #region SetTriggeringResponse Class
     #if (!OPCUA_EXCLUDE_SetTriggeringResponse)
     /// <summary>
-    /// A description for the SetTriggeringResponse DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -35106,7 +36155,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ResponseHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -35128,7 +36177,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the AddResults field.
+        /// 
         /// </summary>
         [DataMember(Name = "AddResults", IsRequired = false, Order = 2)]
         public StatusCodeCollection AddResults
@@ -35150,7 +36199,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the AddDiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "AddDiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection AddDiagnosticInfos
@@ -35172,7 +36221,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the RemoveResults field.
+        /// 
         /// </summary>
         [DataMember(Name = "RemoveResults", IsRequired = false, Order = 4)]
         public StatusCodeCollection RemoveResults
@@ -35194,7 +36243,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the RemoveDiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "RemoveDiagnosticInfos", IsRequired = false, Order = 5)]
         public DiagnosticInfoCollection RemoveDiagnosticInfos
@@ -35287,10 +36336,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            SetTriggeringResponse clone = (SetTriggeringResponse)this.MemberwiseClone();
+            return (SetTriggeringResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            SetTriggeringResponse clone = (SetTriggeringResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_addResults = (StatusCodeCollection)Utils.Clone(this.m_addResults);
@@ -35316,7 +36373,7 @@ namespace Opc.Ua
     #region DeleteMonitoredItemsRequest Class
     #if (!OPCUA_EXCLUDE_DeleteMonitoredItemsRequest)
     /// <summary>
-    /// A description for the DeleteMonitoredItemsRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -35354,7 +36411,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RequestHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -35375,9 +36432,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the SubscriptionId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SubscriptionId", IsRequired = false, Order = 2)]
         public uint SubscriptionId
         {
@@ -35386,7 +36441,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the MonitoredItemIds field.
+        /// 
         /// </summary>
         [DataMember(Name = "MonitoredItemIds", IsRequired = false, Order = 3)]
         public UInt32Collection MonitoredItemIds
@@ -35473,10 +36528,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            DeleteMonitoredItemsRequest clone = (DeleteMonitoredItemsRequest)this.MemberwiseClone();
+            return (DeleteMonitoredItemsRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            DeleteMonitoredItemsRequest clone = (DeleteMonitoredItemsRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_subscriptionId = (uint)Utils.Clone(this.m_subscriptionId);
@@ -35498,7 +36561,7 @@ namespace Opc.Ua
     #region DeleteMonitoredItemsResponse Class
     #if (!OPCUA_EXCLUDE_DeleteMonitoredItemsResponse)
     /// <summary>
-    /// A description for the DeleteMonitoredItemsResponse DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -35536,7 +36599,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ResponseHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -35558,7 +36621,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the Results field.
+        /// 
         /// </summary>
         [DataMember(Name = "Results", IsRequired = false, Order = 2)]
         public StatusCodeCollection Results
@@ -35580,7 +36643,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -35667,10 +36730,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            DeleteMonitoredItemsResponse clone = (DeleteMonitoredItemsResponse)this.MemberwiseClone();
+            return (DeleteMonitoredItemsResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            DeleteMonitoredItemsResponse clone = (DeleteMonitoredItemsResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_results = (StatusCodeCollection)Utils.Clone(this.m_results);
@@ -35692,7 +36763,7 @@ namespace Opc.Ua
     #region CreateSubscriptionRequest Class
     #if (!OPCUA_EXCLUDE_CreateSubscriptionRequest)
     /// <summary>
-    /// A description for the CreateSubscriptionRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -35734,7 +36805,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RequestHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -35755,9 +36826,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the RequestedPublishingInterval field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RequestedPublishingInterval", IsRequired = false, Order = 2)]
         public double RequestedPublishingInterval
         {
@@ -35765,9 +36834,7 @@ namespace Opc.Ua
             set { m_requestedPublishingInterval = value; }
         }
 
-        /// <summary>
-        /// A description for the RequestedLifetimeCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RequestedLifetimeCount", IsRequired = false, Order = 3)]
         public uint RequestedLifetimeCount
         {
@@ -35775,9 +36842,7 @@ namespace Opc.Ua
             set { m_requestedLifetimeCount = value; }
         }
 
-        /// <summary>
-        /// A description for the RequestedMaxKeepAliveCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RequestedMaxKeepAliveCount", IsRequired = false, Order = 4)]
         public uint RequestedMaxKeepAliveCount
         {
@@ -35785,9 +36850,7 @@ namespace Opc.Ua
             set { m_requestedMaxKeepAliveCount = value; }
         }
 
-        /// <summary>
-        /// A description for the MaxNotificationsPerPublish field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MaxNotificationsPerPublish", IsRequired = false, Order = 5)]
         public uint MaxNotificationsPerPublish
         {
@@ -35795,9 +36858,7 @@ namespace Opc.Ua
             set { m_maxNotificationsPerPublish = value; }
         }
 
-        /// <summary>
-        /// A description for the PublishingEnabled field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "PublishingEnabled", IsRequired = false, Order = 6)]
         public bool PublishingEnabled
         {
@@ -35805,9 +36866,7 @@ namespace Opc.Ua
             set { m_publishingEnabled = value; }
         }
 
-        /// <summary>
-        /// A description for the Priority field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Priority", IsRequired = false, Order = 7)]
         public byte Priority
         {
@@ -35893,10 +36952,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            CreateSubscriptionRequest clone = (CreateSubscriptionRequest)this.MemberwiseClone();
+            return (CreateSubscriptionRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CreateSubscriptionRequest clone = (CreateSubscriptionRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_requestedPublishingInterval = (double)Utils.Clone(this.m_requestedPublishingInterval);
@@ -35926,7 +36993,7 @@ namespace Opc.Ua
     #region CreateSubscriptionResponse Class
     #if (!OPCUA_EXCLUDE_CreateSubscriptionResponse)
     /// <summary>
-    /// A description for the CreateSubscriptionResponse DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -35966,7 +37033,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ResponseHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -35987,9 +37054,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the SubscriptionId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SubscriptionId", IsRequired = false, Order = 2)]
         public uint SubscriptionId
         {
@@ -35997,9 +37062,7 @@ namespace Opc.Ua
             set { m_subscriptionId = value; }
         }
 
-        /// <summary>
-        /// A description for the RevisedPublishingInterval field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RevisedPublishingInterval", IsRequired = false, Order = 3)]
         public double RevisedPublishingInterval
         {
@@ -36007,9 +37070,7 @@ namespace Opc.Ua
             set { m_revisedPublishingInterval = value; }
         }
 
-        /// <summary>
-        /// A description for the RevisedLifetimeCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RevisedLifetimeCount", IsRequired = false, Order = 4)]
         public uint RevisedLifetimeCount
         {
@@ -36017,9 +37078,7 @@ namespace Opc.Ua
             set { m_revisedLifetimeCount = value; }
         }
 
-        /// <summary>
-        /// A description for the RevisedMaxKeepAliveCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RevisedMaxKeepAliveCount", IsRequired = false, Order = 5)]
         public uint RevisedMaxKeepAliveCount
         {
@@ -36099,10 +37158,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            CreateSubscriptionResponse clone = (CreateSubscriptionResponse)this.MemberwiseClone();
+            return (CreateSubscriptionResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CreateSubscriptionResponse clone = (CreateSubscriptionResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_subscriptionId = (uint)Utils.Clone(this.m_subscriptionId);
@@ -36128,7 +37195,7 @@ namespace Opc.Ua
     #region ModifySubscriptionRequest Class
     #if (!OPCUA_EXCLUDE_ModifySubscriptionRequest)
     /// <summary>
-    /// A description for the ModifySubscriptionRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -36170,7 +37237,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RequestHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -36191,9 +37258,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the SubscriptionId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SubscriptionId", IsRequired = false, Order = 2)]
         public uint SubscriptionId
         {
@@ -36201,9 +37266,7 @@ namespace Opc.Ua
             set { m_subscriptionId = value; }
         }
 
-        /// <summary>
-        /// A description for the RequestedPublishingInterval field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RequestedPublishingInterval", IsRequired = false, Order = 3)]
         public double RequestedPublishingInterval
         {
@@ -36211,9 +37274,7 @@ namespace Opc.Ua
             set { m_requestedPublishingInterval = value; }
         }
 
-        /// <summary>
-        /// A description for the RequestedLifetimeCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RequestedLifetimeCount", IsRequired = false, Order = 4)]
         public uint RequestedLifetimeCount
         {
@@ -36221,9 +37282,7 @@ namespace Opc.Ua
             set { m_requestedLifetimeCount = value; }
         }
 
-        /// <summary>
-        /// A description for the RequestedMaxKeepAliveCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RequestedMaxKeepAliveCount", IsRequired = false, Order = 5)]
         public uint RequestedMaxKeepAliveCount
         {
@@ -36231,9 +37290,7 @@ namespace Opc.Ua
             set { m_requestedMaxKeepAliveCount = value; }
         }
 
-        /// <summary>
-        /// A description for the MaxNotificationsPerPublish field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MaxNotificationsPerPublish", IsRequired = false, Order = 6)]
         public uint MaxNotificationsPerPublish
         {
@@ -36241,9 +37298,7 @@ namespace Opc.Ua
             set { m_maxNotificationsPerPublish = value; }
         }
 
-        /// <summary>
-        /// A description for the Priority field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Priority", IsRequired = false, Order = 7)]
         public byte Priority
         {
@@ -36329,10 +37384,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ModifySubscriptionRequest clone = (ModifySubscriptionRequest)this.MemberwiseClone();
+            return (ModifySubscriptionRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ModifySubscriptionRequest clone = (ModifySubscriptionRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_subscriptionId = (uint)Utils.Clone(this.m_subscriptionId);
@@ -36362,7 +37425,7 @@ namespace Opc.Ua
     #region ModifySubscriptionResponse Class
     #if (!OPCUA_EXCLUDE_ModifySubscriptionResponse)
     /// <summary>
-    /// A description for the ModifySubscriptionResponse DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -36401,7 +37464,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ResponseHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -36422,9 +37485,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the RevisedPublishingInterval field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RevisedPublishingInterval", IsRequired = false, Order = 2)]
         public double RevisedPublishingInterval
         {
@@ -36432,9 +37493,7 @@ namespace Opc.Ua
             set { m_revisedPublishingInterval = value; }
         }
 
-        /// <summary>
-        /// A description for the RevisedLifetimeCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RevisedLifetimeCount", IsRequired = false, Order = 3)]
         public uint RevisedLifetimeCount
         {
@@ -36442,9 +37501,7 @@ namespace Opc.Ua
             set { m_revisedLifetimeCount = value; }
         }
 
-        /// <summary>
-        /// A description for the RevisedMaxKeepAliveCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RevisedMaxKeepAliveCount", IsRequired = false, Order = 4)]
         public uint RevisedMaxKeepAliveCount
         {
@@ -36521,10 +37578,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ModifySubscriptionResponse clone = (ModifySubscriptionResponse)this.MemberwiseClone();
+            return (ModifySubscriptionResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ModifySubscriptionResponse clone = (ModifySubscriptionResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_revisedPublishingInterval = (double)Utils.Clone(this.m_revisedPublishingInterval);
@@ -36548,7 +37613,7 @@ namespace Opc.Ua
     #region SetPublishingModeRequest Class
     #if (!OPCUA_EXCLUDE_SetPublishingModeRequest)
     /// <summary>
-    /// A description for the SetPublishingModeRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -36586,7 +37651,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RequestHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -36607,9 +37672,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the PublishingEnabled field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "PublishingEnabled", IsRequired = false, Order = 2)]
         public bool PublishingEnabled
         {
@@ -36618,7 +37681,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the SubscriptionIds field.
+        /// 
         /// </summary>
         [DataMember(Name = "SubscriptionIds", IsRequired = false, Order = 3)]
         public UInt32Collection SubscriptionIds
@@ -36705,10 +37768,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            SetPublishingModeRequest clone = (SetPublishingModeRequest)this.MemberwiseClone();
+            return (SetPublishingModeRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            SetPublishingModeRequest clone = (SetPublishingModeRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_publishingEnabled = (bool)Utils.Clone(this.m_publishingEnabled);
@@ -36730,7 +37801,7 @@ namespace Opc.Ua
     #region SetPublishingModeResponse Class
     #if (!OPCUA_EXCLUDE_SetPublishingModeResponse)
     /// <summary>
-    /// A description for the SetPublishingModeResponse DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -36768,7 +37839,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ResponseHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -36790,7 +37861,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the Results field.
+        /// 
         /// </summary>
         [DataMember(Name = "Results", IsRequired = false, Order = 2)]
         public StatusCodeCollection Results
@@ -36812,7 +37883,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -36899,10 +37970,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            SetPublishingModeResponse clone = (SetPublishingModeResponse)this.MemberwiseClone();
+            return (SetPublishingModeResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            SetPublishingModeResponse clone = (SetPublishingModeResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_results = (StatusCodeCollection)Utils.Clone(this.m_results);
@@ -36924,7 +38003,7 @@ namespace Opc.Ua
     #region NotificationMessage Class
     #if (!OPCUA_EXCLUDE_NotificationMessage)
     /// <summary>
-    /// A description for the NotificationMessage DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -36961,9 +38040,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the SequenceNumber field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SequenceNumber", IsRequired = false, Order = 1)]
         public uint SequenceNumber
         {
@@ -36971,9 +38048,7 @@ namespace Opc.Ua
             set { m_sequenceNumber = value; }
         }
 
-        /// <summary>
-        /// A description for the PublishTime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "PublishTime", IsRequired = false, Order = 2)]
         public DateTime PublishTime
         {
@@ -36982,7 +38057,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the NotificationData field.
+        /// 
         /// </summary>
         [DataMember(Name = "NotificationData", IsRequired = false, Order = 3)]
         public ExtensionObjectCollection NotificationData
@@ -37069,10 +38144,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            NotificationMessage clone = (NotificationMessage)this.MemberwiseClone();
+            return (NotificationMessage)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            NotificationMessage clone = (NotificationMessage)base.MemberwiseClone();
 
             clone.m_sequenceNumber = (uint)Utils.Clone(this.m_sequenceNumber);
             clone.m_publishTime = (DateTime)Utils.Clone(this.m_publishTime);
@@ -37094,7 +38177,7 @@ namespace Opc.Ua
     #region NotificationData Class
     #if (!OPCUA_EXCLUDE_NotificationData)
     /// <summary>
-    /// A description for the NotificationData DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -37186,10 +38269,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            NotificationData clone = (NotificationData)this.MemberwiseClone();
+            return (NotificationData)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            NotificationData clone = (NotificationData)base.MemberwiseClone();
 
 
             return clone;
@@ -37205,7 +38296,7 @@ namespace Opc.Ua
     #region DataChangeNotification Class
     #if (!OPCUA_EXCLUDE_DataChangeNotification)
     /// <summary>
-    /// A description for the DataChangeNotification DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -37242,7 +38333,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the MonitoredItems field.
+        /// 
         /// </summary>
         [DataMember(Name = "MonitoredItems", IsRequired = false, Order = 1)]
         public MonitoredItemNotificationCollection MonitoredItems
@@ -37264,7 +38355,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 2)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -37351,12 +38442,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_diagnosticInfos, value.m_diagnosticInfos)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            DataChangeNotification clone = (DataChangeNotification)base.Clone();
+            return (DataChangeNotification)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            DataChangeNotification clone = (DataChangeNotification)base.MemberwiseClone();
 
             clone.m_monitoredItems = (MonitoredItemNotificationCollection)Utils.Clone(this.m_monitoredItems);
             clone.m_diagnosticInfos = (DiagnosticInfoCollection)Utils.Clone(this.m_diagnosticInfos);
@@ -37376,7 +38475,7 @@ namespace Opc.Ua
     #region MonitoredItemNotification Class
     #if (!OPCUA_EXCLUDE_MonitoredItemNotification)
     /// <summary>
-    /// A description for the MonitoredItemNotification DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -37412,9 +38511,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ClientHandle field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ClientHandle", IsRequired = false, Order = 1)]
         public uint ClientHandle
         {
@@ -37422,9 +38519,7 @@ namespace Opc.Ua
             set { m_clientHandle = value; }
         }
 
-        /// <summary>
-        /// A description for the Value field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Value", IsRequired = false, Order = 2)]
         public DataValue Value
         {
@@ -37495,10 +38590,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            MonitoredItemNotification clone = (MonitoredItemNotification)this.MemberwiseClone();
+            return (MonitoredItemNotification)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            MonitoredItemNotification clone = (MonitoredItemNotification)base.MemberwiseClone();
 
             clone.m_clientHandle = (uint)Utils.Clone(this.m_clientHandle);
             clone.m_value = (DataValue)Utils.Clone(this.m_value);
@@ -37520,7 +38623,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfMonitoredItemNotification", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "MonitoredItemNotification")]
+    #if !NET_STANDARD
     public partial class MonitoredItemNotificationCollection : List<MonitoredItemNotification>, ICloneable
+    #else
+    public partial class MonitoredItemNotificationCollection : List<MonitoredItemNotification>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -37567,11 +38674,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (MonitoredItemNotificationCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             MonitoredItemNotificationCollection clone = new MonitoredItemNotificationCollection(this.Count);
 
@@ -37582,7 +38698,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -37591,7 +38706,7 @@ namespace Opc.Ua
     #region EventNotificationList Class
     #if (!OPCUA_EXCLUDE_EventNotificationList)
     /// <summary>
-    /// A description for the EventNotificationList DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -37627,7 +38742,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the Events field.
+        /// 
         /// </summary>
         [DataMember(Name = "Events", IsRequired = false, Order = 1)]
         public EventFieldListCollection Events
@@ -37711,12 +38826,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_events, value.m_events)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            EventNotificationList clone = (EventNotificationList)base.Clone();
+            return (EventNotificationList)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            EventNotificationList clone = (EventNotificationList)base.MemberwiseClone();
 
             clone.m_events = (EventFieldListCollection)Utils.Clone(this.m_events);
 
@@ -37734,7 +38857,7 @@ namespace Opc.Ua
     #region EventFieldList Class
     #if (!OPCUA_EXCLUDE_EventFieldList)
     /// <summary>
-    /// A description for the EventFieldList DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -37770,9 +38893,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ClientHandle field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ClientHandle", IsRequired = false, Order = 1)]
         public uint ClientHandle
         {
@@ -37781,7 +38902,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the EventFields field.
+        /// 
         /// </summary>
         [DataMember(Name = "EventFields", IsRequired = false, Order = 2)]
         public VariantCollection EventFields
@@ -37865,10 +38986,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            EventFieldList clone = (EventFieldList)this.MemberwiseClone();
+            return (EventFieldList)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            EventFieldList clone = (EventFieldList)base.MemberwiseClone();
 
             clone.m_clientHandle = (uint)Utils.Clone(this.m_clientHandle);
             clone.m_eventFields = (VariantCollection)Utils.Clone(this.m_eventFields);
@@ -37890,7 +39019,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfEventFieldList", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "EventFieldList")]
+    #if !NET_STANDARD
     public partial class EventFieldListCollection : List<EventFieldList>, ICloneable
+    #else
+    public partial class EventFieldListCollection : List<EventFieldList>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -37937,11 +39070,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (EventFieldListCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             EventFieldListCollection clone = new EventFieldListCollection(this.Count);
 
@@ -37952,7 +39094,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -37961,7 +39102,7 @@ namespace Opc.Ua
     #region HistoryEventFieldList Class
     #if (!OPCUA_EXCLUDE_HistoryEventFieldList)
     /// <summary>
-    /// A description for the HistoryEventFieldList DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -37997,7 +39138,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the EventFields field.
+        /// 
         /// </summary>
         [DataMember(Name = "EventFields", IsRequired = false, Order = 1)]
         public VariantCollection EventFields
@@ -38078,10 +39219,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            HistoryEventFieldList clone = (HistoryEventFieldList)this.MemberwiseClone();
+            return (HistoryEventFieldList)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            HistoryEventFieldList clone = (HistoryEventFieldList)base.MemberwiseClone();
 
             clone.m_eventFields = (VariantCollection)Utils.Clone(this.m_eventFields);
 
@@ -38101,7 +39250,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfHistoryEventFieldList", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "HistoryEventFieldList")]
+    #if !NET_STANDARD
     public partial class HistoryEventFieldListCollection : List<HistoryEventFieldList>, ICloneable
+    #else
+    public partial class HistoryEventFieldListCollection : List<HistoryEventFieldList>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -38148,11 +39301,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (HistoryEventFieldListCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             HistoryEventFieldListCollection clone = new HistoryEventFieldListCollection(this.Count);
 
@@ -38163,7 +39325,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -38172,7 +39333,7 @@ namespace Opc.Ua
     #region StatusChangeNotification Class
     #if (!OPCUA_EXCLUDE_StatusChangeNotification)
     /// <summary>
-    /// A description for the StatusChangeNotification DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -38208,9 +39369,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Status field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Status", IsRequired = false, Order = 1)]
         public StatusCode Status
         {
@@ -38218,9 +39377,7 @@ namespace Opc.Ua
             set { m_status = value; }
         }
 
-        /// <summary>
-        /// A description for the DiagnosticInfo field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DiagnosticInfo", IsRequired = false, Order = 2)]
         public DiagnosticInfo DiagnosticInfo
         {
@@ -38294,12 +39451,20 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_diagnosticInfo, value.m_diagnosticInfo)) return false;
 
             return true;
-        }
+        }    
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public override object Clone()
         {
-            StatusChangeNotification clone = (StatusChangeNotification)base.Clone();
+            return (StatusChangeNotification)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            StatusChangeNotification clone = (StatusChangeNotification)base.MemberwiseClone();
 
             clone.m_status = (StatusCode)Utils.Clone(this.m_status);
             clone.m_diagnosticInfo = (DiagnosticInfo)Utils.Clone(this.m_diagnosticInfo);
@@ -38319,7 +39484,7 @@ namespace Opc.Ua
     #region SubscriptionAcknowledgement Class
     #if (!OPCUA_EXCLUDE_SubscriptionAcknowledgement)
     /// <summary>
-    /// A description for the SubscriptionAcknowledgement DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -38355,9 +39520,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the SubscriptionId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SubscriptionId", IsRequired = false, Order = 1)]
         public uint SubscriptionId
         {
@@ -38365,9 +39528,7 @@ namespace Opc.Ua
             set { m_subscriptionId = value; }
         }
 
-        /// <summary>
-        /// A description for the SequenceNumber field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SequenceNumber", IsRequired = false, Order = 2)]
         public uint SequenceNumber
         {
@@ -38438,10 +39599,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            SubscriptionAcknowledgement clone = (SubscriptionAcknowledgement)this.MemberwiseClone();
+            return (SubscriptionAcknowledgement)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            SubscriptionAcknowledgement clone = (SubscriptionAcknowledgement)base.MemberwiseClone();
 
             clone.m_subscriptionId = (uint)Utils.Clone(this.m_subscriptionId);
             clone.m_sequenceNumber = (uint)Utils.Clone(this.m_sequenceNumber);
@@ -38463,7 +39632,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfSubscriptionAcknowledgement", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "SubscriptionAcknowledgement")]
+    #if !NET_STANDARD
     public partial class SubscriptionAcknowledgementCollection : List<SubscriptionAcknowledgement>, ICloneable
+    #else
+    public partial class SubscriptionAcknowledgementCollection : List<SubscriptionAcknowledgement>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -38510,11 +39683,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (SubscriptionAcknowledgementCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             SubscriptionAcknowledgementCollection clone = new SubscriptionAcknowledgementCollection(this.Count);
 
@@ -38525,7 +39707,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -38534,7 +39715,7 @@ namespace Opc.Ua
     #region PublishRequest Class
     #if (!OPCUA_EXCLUDE_PublishRequest)
     /// <summary>
-    /// A description for the PublishRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -38571,7 +39752,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RequestHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -38593,7 +39774,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the SubscriptionAcknowledgements field.
+        /// 
         /// </summary>
         [DataMember(Name = "SubscriptionAcknowledgements", IsRequired = false, Order = 2)]
         public SubscriptionAcknowledgementCollection SubscriptionAcknowledgements
@@ -38677,10 +39858,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            PublishRequest clone = (PublishRequest)this.MemberwiseClone();
+            return (PublishRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            PublishRequest clone = (PublishRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_subscriptionAcknowledgements = (SubscriptionAcknowledgementCollection)Utils.Clone(this.m_subscriptionAcknowledgements);
@@ -38700,7 +39889,7 @@ namespace Opc.Ua
     #region PublishResponse Class
     #if (!OPCUA_EXCLUDE_PublishResponse)
     /// <summary>
-    /// A description for the PublishResponse DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -38742,7 +39931,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ResponseHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -38763,9 +39952,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the SubscriptionId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SubscriptionId", IsRequired = false, Order = 2)]
         public uint SubscriptionId
         {
@@ -38774,7 +39961,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the AvailableSequenceNumbers field.
+        /// 
         /// </summary>
         [DataMember(Name = "AvailableSequenceNumbers", IsRequired = false, Order = 3)]
         public UInt32Collection AvailableSequenceNumbers
@@ -38795,9 +39982,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the MoreNotifications field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MoreNotifications", IsRequired = false, Order = 4)]
         public bool MoreNotifications
         {
@@ -38806,7 +39991,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the NotificationMessage field.
+        /// 
         /// </summary>
         [DataMember(Name = "NotificationMessage", IsRequired = false, Order = 5)]
         public NotificationMessage NotificationMessage
@@ -38828,7 +40013,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the Results field.
+        /// 
         /// </summary>
         [DataMember(Name = "Results", IsRequired = false, Order = 6)]
         public StatusCodeCollection Results
@@ -38850,7 +40035,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 7)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -38949,10 +40134,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            PublishResponse clone = (PublishResponse)this.MemberwiseClone();
+            return (PublishResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            PublishResponse clone = (PublishResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_subscriptionId = (uint)Utils.Clone(this.m_subscriptionId);
@@ -38982,7 +40175,7 @@ namespace Opc.Ua
     #region RepublishRequest Class
     #if (!OPCUA_EXCLUDE_RepublishRequest)
     /// <summary>
-    /// A description for the RepublishRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -39020,7 +40213,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RequestHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -39041,9 +40234,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the SubscriptionId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SubscriptionId", IsRequired = false, Order = 2)]
         public uint SubscriptionId
         {
@@ -39051,9 +40242,7 @@ namespace Opc.Ua
             set { m_subscriptionId = value; }
         }
 
-        /// <summary>
-        /// A description for the RetransmitSequenceNumber field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RetransmitSequenceNumber", IsRequired = false, Order = 3)]
         public uint RetransmitSequenceNumber
         {
@@ -39127,10 +40316,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            RepublishRequest clone = (RepublishRequest)this.MemberwiseClone();
+            return (RepublishRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            RepublishRequest clone = (RepublishRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_subscriptionId = (uint)Utils.Clone(this.m_subscriptionId);
@@ -39152,7 +40349,7 @@ namespace Opc.Ua
     #region RepublishResponse Class
     #if (!OPCUA_EXCLUDE_RepublishResponse)
     /// <summary>
-    /// A description for the RepublishResponse DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -39189,7 +40386,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ResponseHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -39211,7 +40408,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the NotificationMessage field.
+        /// 
         /// </summary>
         [DataMember(Name = "NotificationMessage", IsRequired = false, Order = 2)]
         public NotificationMessage NotificationMessage
@@ -39295,10 +40492,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            RepublishResponse clone = (RepublishResponse)this.MemberwiseClone();
+            return (RepublishResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            RepublishResponse clone = (RepublishResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_notificationMessage = (NotificationMessage)Utils.Clone(this.m_notificationMessage);
@@ -39318,7 +40523,7 @@ namespace Opc.Ua
     #region TransferResult Class
     #if (!OPCUA_EXCLUDE_TransferResult)
     /// <summary>
-    /// A description for the TransferResult DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -39354,9 +40559,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the StatusCode field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StatusCode", IsRequired = false, Order = 1)]
         public StatusCode StatusCode
         {
@@ -39365,7 +40568,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the AvailableSequenceNumbers field.
+        /// 
         /// </summary>
         [DataMember(Name = "AvailableSequenceNumbers", IsRequired = false, Order = 2)]
         public UInt32Collection AvailableSequenceNumbers
@@ -39449,10 +40652,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            TransferResult clone = (TransferResult)this.MemberwiseClone();
+            return (TransferResult)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            TransferResult clone = (TransferResult)base.MemberwiseClone();
 
             clone.m_statusCode = (StatusCode)Utils.Clone(this.m_statusCode);
             clone.m_availableSequenceNumbers = (UInt32Collection)Utils.Clone(this.m_availableSequenceNumbers);
@@ -39474,7 +40685,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfTransferResult", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "TransferResult")]
+    #if !NET_STANDARD
     public partial class TransferResultCollection : List<TransferResult>, ICloneable
+    #else
+    public partial class TransferResultCollection : List<TransferResult>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -39521,11 +40736,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (TransferResultCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             TransferResultCollection clone = new TransferResultCollection(this.Count);
 
@@ -39536,7 +40760,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -39545,7 +40768,7 @@ namespace Opc.Ua
     #region TransferSubscriptionsRequest Class
     #if (!OPCUA_EXCLUDE_TransferSubscriptionsRequest)
     /// <summary>
-    /// A description for the TransferSubscriptionsRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -39583,7 +40806,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RequestHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -39605,7 +40828,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the SubscriptionIds field.
+        /// 
         /// </summary>
         [DataMember(Name = "SubscriptionIds", IsRequired = false, Order = 2)]
         public UInt32Collection SubscriptionIds
@@ -39626,9 +40849,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the SendInitialValues field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SendInitialValues", IsRequired = false, Order = 3)]
         public bool SendInitialValues
         {
@@ -39702,10 +40923,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            TransferSubscriptionsRequest clone = (TransferSubscriptionsRequest)this.MemberwiseClone();
+            return (TransferSubscriptionsRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            TransferSubscriptionsRequest clone = (TransferSubscriptionsRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_subscriptionIds = (UInt32Collection)Utils.Clone(this.m_subscriptionIds);
@@ -39727,7 +40956,7 @@ namespace Opc.Ua
     #region TransferSubscriptionsResponse Class
     #if (!OPCUA_EXCLUDE_TransferSubscriptionsResponse)
     /// <summary>
-    /// A description for the TransferSubscriptionsResponse DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -39765,7 +40994,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ResponseHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -39787,7 +41016,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the Results field.
+        /// 
         /// </summary>
         [DataMember(Name = "Results", IsRequired = false, Order = 2)]
         public TransferResultCollection Results
@@ -39809,7 +41038,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -39896,10 +41125,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            TransferSubscriptionsResponse clone = (TransferSubscriptionsResponse)this.MemberwiseClone();
+            return (TransferSubscriptionsResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            TransferSubscriptionsResponse clone = (TransferSubscriptionsResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_results = (TransferResultCollection)Utils.Clone(this.m_results);
@@ -39921,7 +41158,7 @@ namespace Opc.Ua
     #region DeleteSubscriptionsRequest Class
     #if (!OPCUA_EXCLUDE_DeleteSubscriptionsRequest)
     /// <summary>
-    /// A description for the DeleteSubscriptionsRequest DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -39958,7 +41195,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the RequestHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "RequestHeader", IsRequired = false, Order = 1)]
         public RequestHeader RequestHeader
@@ -39980,7 +41217,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the SubscriptionIds field.
+        /// 
         /// </summary>
         [DataMember(Name = "SubscriptionIds", IsRequired = false, Order = 2)]
         public UInt32Collection SubscriptionIds
@@ -40064,10 +41301,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            DeleteSubscriptionsRequest clone = (DeleteSubscriptionsRequest)this.MemberwiseClone();
+            return (DeleteSubscriptionsRequest)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            DeleteSubscriptionsRequest clone = (DeleteSubscriptionsRequest)base.MemberwiseClone();
 
             clone.m_requestHeader = (RequestHeader)Utils.Clone(this.m_requestHeader);
             clone.m_subscriptionIds = (UInt32Collection)Utils.Clone(this.m_subscriptionIds);
@@ -40087,7 +41332,7 @@ namespace Opc.Ua
     #region DeleteSubscriptionsResponse Class
     #if (!OPCUA_EXCLUDE_DeleteSubscriptionsResponse)
     /// <summary>
-    /// A description for the DeleteSubscriptionsResponse DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -40125,7 +41370,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the ResponseHeader field.
+        /// 
         /// </summary>
         [DataMember(Name = "ResponseHeader", IsRequired = false, Order = 1)]
         public ResponseHeader ResponseHeader
@@ -40147,7 +41392,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the Results field.
+        /// 
         /// </summary>
         [DataMember(Name = "Results", IsRequired = false, Order = 2)]
         public StatusCodeCollection Results
@@ -40169,7 +41414,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DiagnosticInfos field.
+        /// 
         /// </summary>
         [DataMember(Name = "DiagnosticInfos", IsRequired = false, Order = 3)]
         public DiagnosticInfoCollection DiagnosticInfos
@@ -40256,10 +41501,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            DeleteSubscriptionsResponse clone = (DeleteSubscriptionsResponse)this.MemberwiseClone();
+            return (DeleteSubscriptionsResponse)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            DeleteSubscriptionsResponse clone = (DeleteSubscriptionsResponse)base.MemberwiseClone();
 
             clone.m_responseHeader = (ResponseHeader)Utils.Clone(this.m_responseHeader);
             clone.m_results = (StatusCodeCollection)Utils.Clone(this.m_results);
@@ -40281,7 +41534,7 @@ namespace Opc.Ua
     #region BuildInfo Class
     #if (!OPCUA_EXCLUDE_BuildInfo)
     /// <summary>
-    /// A description for the BuildInfo DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -40321,9 +41574,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ProductUri field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ProductUri", IsRequired = false, Order = 1)]
         public string ProductUri
         {
@@ -40331,9 +41582,7 @@ namespace Opc.Ua
             set { m_productUri = value; }
         }
 
-        /// <summary>
-        /// A description for the ManufacturerName field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ManufacturerName", IsRequired = false, Order = 2)]
         public string ManufacturerName
         {
@@ -40341,9 +41590,7 @@ namespace Opc.Ua
             set { m_manufacturerName = value; }
         }
 
-        /// <summary>
-        /// A description for the ProductName field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ProductName", IsRequired = false, Order = 3)]
         public string ProductName
         {
@@ -40351,9 +41598,7 @@ namespace Opc.Ua
             set { m_productName = value; }
         }
 
-        /// <summary>
-        /// A description for the SoftwareVersion field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SoftwareVersion", IsRequired = false, Order = 4)]
         public string SoftwareVersion
         {
@@ -40361,9 +41606,7 @@ namespace Opc.Ua
             set { m_softwareVersion = value; }
         }
 
-        /// <summary>
-        /// A description for the BuildNumber field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "BuildNumber", IsRequired = false, Order = 5)]
         public string BuildNumber
         {
@@ -40371,9 +41614,7 @@ namespace Opc.Ua
             set { m_buildNumber = value; }
         }
 
-        /// <summary>
-        /// A description for the BuildDate field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "BuildDate", IsRequired = false, Order = 6)]
         public DateTime BuildDate
         {
@@ -40456,10 +41697,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            BuildInfo clone = (BuildInfo)this.MemberwiseClone();
+            return (BuildInfo)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            BuildInfo clone = (BuildInfo)base.MemberwiseClone();
 
             clone.m_productUri = (string)Utils.Clone(this.m_productUri);
             clone.m_manufacturerName = (string)Utils.Clone(this.m_manufacturerName);
@@ -40487,46 +41736,34 @@ namespace Opc.Ua
     #region RedundancySupport Enumeration
     #if (!OPCUA_EXCLUDE_RedundancySupport)
     /// <summary>
-    /// A description for the RedundancySupport DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum RedundancySupport
     {
-        /// <summary>
-        /// A description for the None field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "None_0")]
         None = 0,
 
-        /// <summary>
-        /// A description for the Cold field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Cold_1")]
         Cold = 1,
 
-        /// <summary>
-        /// A description for the Warm field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Warm_2")]
         Warm = 2,
 
-        /// <summary>
-        /// A description for the Hot field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Hot_3")]
         Hot = 3,
 
-        /// <summary>
-        /// A description for the Transparent field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Transparent_4")]
         Transparent = 4,
 
-        /// <summary>
-        /// A description for the HotAndMirrored field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "HotAndMirrored_5")]
         HotAndMirrored = 5,
     }
@@ -40536,58 +41773,42 @@ namespace Opc.Ua
     #region ServerState Enumeration
     #if (!OPCUA_EXCLUDE_ServerState)
     /// <summary>
-    /// A description for the ServerState DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum ServerState
     {
-        /// <summary>
-        /// A description for the Running field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Running_0")]
         Running = 0,
 
-        /// <summary>
-        /// A description for the Failed field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Failed_1")]
         Failed = 1,
 
-        /// <summary>
-        /// A description for the NoConfiguration field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "NoConfiguration_2")]
         NoConfiguration = 2,
 
-        /// <summary>
-        /// A description for the Suspended field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Suspended_3")]
         Suspended = 3,
 
-        /// <summary>
-        /// A description for the Shutdown field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Shutdown_4")]
         Shutdown = 4,
 
-        /// <summary>
-        /// A description for the Test field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Test_5")]
         Test = 5,
 
-        /// <summary>
-        /// A description for the CommunicationFault field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "CommunicationFault_6")]
         CommunicationFault = 6,
 
-        /// <summary>
-        /// A description for the Unknown field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Unknown_7")]
         Unknown = 7,
     }
@@ -40597,7 +41818,7 @@ namespace Opc.Ua
     #region RedundantServerDataType Class
     #if (!OPCUA_EXCLUDE_RedundantServerDataType)
     /// <summary>
-    /// A description for the RedundantServerDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -40634,9 +41855,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ServerId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ServerId", IsRequired = false, Order = 1)]
         public string ServerId
         {
@@ -40644,9 +41863,7 @@ namespace Opc.Ua
             set { m_serverId = value; }
         }
 
-        /// <summary>
-        /// A description for the ServiceLevel field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ServiceLevel", IsRequired = false, Order = 2)]
         public byte ServiceLevel
         {
@@ -40654,9 +41871,7 @@ namespace Opc.Ua
             set { m_serviceLevel = value; }
         }
 
-        /// <summary>
-        /// A description for the ServerState field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ServerState", IsRequired = false, Order = 3)]
         public ServerState ServerState
         {
@@ -40730,10 +41945,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            RedundantServerDataType clone = (RedundantServerDataType)this.MemberwiseClone();
+            return (RedundantServerDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            RedundantServerDataType clone = (RedundantServerDataType)base.MemberwiseClone();
 
             clone.m_serverId = (string)Utils.Clone(this.m_serverId);
             clone.m_serviceLevel = (byte)Utils.Clone(this.m_serviceLevel);
@@ -40757,7 +41980,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfRedundantServerDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "RedundantServerDataType")]
+    #if !NET_STANDARD
     public partial class RedundantServerDataTypeCollection : List<RedundantServerDataType>, ICloneable
+    #else
+    public partial class RedundantServerDataTypeCollection : List<RedundantServerDataType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -40804,11 +42031,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (RedundantServerDataTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             RedundantServerDataTypeCollection clone = new RedundantServerDataTypeCollection(this.Count);
 
@@ -40819,7 +42055,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -40828,7 +42063,7 @@ namespace Opc.Ua
     #region EndpointUrlListDataType Class
     #if (!OPCUA_EXCLUDE_EndpointUrlListDataType)
     /// <summary>
-    /// A description for the EndpointUrlListDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -40864,7 +42099,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the EndpointUrlList field.
+        /// 
         /// </summary>
         [DataMember(Name = "EndpointUrlList", IsRequired = false, Order = 1)]
         public StringCollection EndpointUrlList
@@ -40945,10 +42180,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            EndpointUrlListDataType clone = (EndpointUrlListDataType)this.MemberwiseClone();
+            return (EndpointUrlListDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            EndpointUrlListDataType clone = (EndpointUrlListDataType)base.MemberwiseClone();
 
             clone.m_endpointUrlList = (StringCollection)Utils.Clone(this.m_endpointUrlList);
 
@@ -40968,7 +42211,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfEndpointUrlListDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "EndpointUrlListDataType")]
+    #if !NET_STANDARD
     public partial class EndpointUrlListDataTypeCollection : List<EndpointUrlListDataType>, ICloneable
+    #else
+    public partial class EndpointUrlListDataTypeCollection : List<EndpointUrlListDataType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -41015,11 +42262,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (EndpointUrlListDataTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             EndpointUrlListDataTypeCollection clone = new EndpointUrlListDataTypeCollection(this.Count);
 
@@ -41030,7 +42286,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -41039,7 +42294,7 @@ namespace Opc.Ua
     #region NetworkGroupDataType Class
     #if (!OPCUA_EXCLUDE_NetworkGroupDataType)
     /// <summary>
-    /// A description for the NetworkGroupDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -41075,9 +42330,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ServerUri field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ServerUri", IsRequired = false, Order = 1)]
         public string ServerUri
         {
@@ -41086,7 +42339,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the NetworkPaths field.
+        /// 
         /// </summary>
         [DataMember(Name = "NetworkPaths", IsRequired = false, Order = 2)]
         public EndpointUrlListDataTypeCollection NetworkPaths
@@ -41170,10 +42423,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            NetworkGroupDataType clone = (NetworkGroupDataType)this.MemberwiseClone();
+            return (NetworkGroupDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            NetworkGroupDataType clone = (NetworkGroupDataType)base.MemberwiseClone();
 
             clone.m_serverUri = (string)Utils.Clone(this.m_serverUri);
             clone.m_networkPaths = (EndpointUrlListDataTypeCollection)Utils.Clone(this.m_networkPaths);
@@ -41195,7 +42456,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfNetworkGroupDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "NetworkGroupDataType")]
+    #if !NET_STANDARD
     public partial class NetworkGroupDataTypeCollection : List<NetworkGroupDataType>, ICloneable
+    #else
+    public partial class NetworkGroupDataTypeCollection : List<NetworkGroupDataType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -41242,11 +42507,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (NetworkGroupDataTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             NetworkGroupDataTypeCollection clone = new NetworkGroupDataTypeCollection(this.Count);
 
@@ -41257,7 +42531,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -41266,7 +42539,7 @@ namespace Opc.Ua
     #region SamplingIntervalDiagnosticsDataType Class
     #if (!OPCUA_EXCLUDE_SamplingIntervalDiagnosticsDataType)
     /// <summary>
-    /// A description for the SamplingIntervalDiagnosticsDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -41304,9 +42577,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the SamplingInterval field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SamplingInterval", IsRequired = false, Order = 1)]
         public double SamplingInterval
         {
@@ -41314,9 +42585,7 @@ namespace Opc.Ua
             set { m_samplingInterval = value; }
         }
 
-        /// <summary>
-        /// A description for the MonitoredItemCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MonitoredItemCount", IsRequired = false, Order = 2)]
         public uint MonitoredItemCount
         {
@@ -41324,9 +42593,7 @@ namespace Opc.Ua
             set { m_monitoredItemCount = value; }
         }
 
-        /// <summary>
-        /// A description for the MaxMonitoredItemCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MaxMonitoredItemCount", IsRequired = false, Order = 3)]
         public uint MaxMonitoredItemCount
         {
@@ -41334,9 +42601,7 @@ namespace Opc.Ua
             set { m_maxMonitoredItemCount = value; }
         }
 
-        /// <summary>
-        /// A description for the DisabledMonitoredItemCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DisabledMonitoredItemCount", IsRequired = false, Order = 4)]
         public uint DisabledMonitoredItemCount
         {
@@ -41413,10 +42678,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            SamplingIntervalDiagnosticsDataType clone = (SamplingIntervalDiagnosticsDataType)this.MemberwiseClone();
+            return (SamplingIntervalDiagnosticsDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            SamplingIntervalDiagnosticsDataType clone = (SamplingIntervalDiagnosticsDataType)base.MemberwiseClone();
 
             clone.m_samplingInterval = (double)Utils.Clone(this.m_samplingInterval);
             clone.m_monitoredItemCount = (uint)Utils.Clone(this.m_monitoredItemCount);
@@ -41442,7 +42715,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfSamplingIntervalDiagnosticsDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "SamplingIntervalDiagnosticsDataType")]
+    #if !NET_STANDARD
     public partial class SamplingIntervalDiagnosticsDataTypeCollection : List<SamplingIntervalDiagnosticsDataType>, ICloneable
+    #else
+    public partial class SamplingIntervalDiagnosticsDataTypeCollection : List<SamplingIntervalDiagnosticsDataType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -41489,11 +42766,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (SamplingIntervalDiagnosticsDataTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             SamplingIntervalDiagnosticsDataTypeCollection clone = new SamplingIntervalDiagnosticsDataTypeCollection(this.Count);
 
@@ -41504,7 +42790,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -41513,7 +42798,7 @@ namespace Opc.Ua
     #region ServerDiagnosticsSummaryDataType Class
     #if (!OPCUA_EXCLUDE_ServerDiagnosticsSummaryDataType)
     /// <summary>
-    /// A description for the ServerDiagnosticsSummaryDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -41559,9 +42844,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ServerViewCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ServerViewCount", IsRequired = false, Order = 1)]
         public uint ServerViewCount
         {
@@ -41569,9 +42852,7 @@ namespace Opc.Ua
             set { m_serverViewCount = value; }
         }
 
-        /// <summary>
-        /// A description for the CurrentSessionCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "CurrentSessionCount", IsRequired = false, Order = 2)]
         public uint CurrentSessionCount
         {
@@ -41579,9 +42860,7 @@ namespace Opc.Ua
             set { m_currentSessionCount = value; }
         }
 
-        /// <summary>
-        /// A description for the CumulatedSessionCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "CumulatedSessionCount", IsRequired = false, Order = 3)]
         public uint CumulatedSessionCount
         {
@@ -41589,9 +42868,7 @@ namespace Opc.Ua
             set { m_cumulatedSessionCount = value; }
         }
 
-        /// <summary>
-        /// A description for the SecurityRejectedSessionCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SecurityRejectedSessionCount", IsRequired = false, Order = 4)]
         public uint SecurityRejectedSessionCount
         {
@@ -41599,9 +42876,7 @@ namespace Opc.Ua
             set { m_securityRejectedSessionCount = value; }
         }
 
-        /// <summary>
-        /// A description for the RejectedSessionCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RejectedSessionCount", IsRequired = false, Order = 5)]
         public uint RejectedSessionCount
         {
@@ -41609,9 +42884,7 @@ namespace Opc.Ua
             set { m_rejectedSessionCount = value; }
         }
 
-        /// <summary>
-        /// A description for the SessionTimeoutCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SessionTimeoutCount", IsRequired = false, Order = 6)]
         public uint SessionTimeoutCount
         {
@@ -41619,9 +42892,7 @@ namespace Opc.Ua
             set { m_sessionTimeoutCount = value; }
         }
 
-        /// <summary>
-        /// A description for the SessionAbortCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SessionAbortCount", IsRequired = false, Order = 7)]
         public uint SessionAbortCount
         {
@@ -41629,9 +42900,7 @@ namespace Opc.Ua
             set { m_sessionAbortCount = value; }
         }
 
-        /// <summary>
-        /// A description for the CurrentSubscriptionCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "CurrentSubscriptionCount", IsRequired = false, Order = 8)]
         public uint CurrentSubscriptionCount
         {
@@ -41639,9 +42908,7 @@ namespace Opc.Ua
             set { m_currentSubscriptionCount = value; }
         }
 
-        /// <summary>
-        /// A description for the CumulatedSubscriptionCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "CumulatedSubscriptionCount", IsRequired = false, Order = 9)]
         public uint CumulatedSubscriptionCount
         {
@@ -41649,9 +42916,7 @@ namespace Opc.Ua
             set { m_cumulatedSubscriptionCount = value; }
         }
 
-        /// <summary>
-        /// A description for the PublishingIntervalCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "PublishingIntervalCount", IsRequired = false, Order = 10)]
         public uint PublishingIntervalCount
         {
@@ -41659,9 +42924,7 @@ namespace Opc.Ua
             set { m_publishingIntervalCount = value; }
         }
 
-        /// <summary>
-        /// A description for the SecurityRejectedRequestsCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SecurityRejectedRequestsCount", IsRequired = false, Order = 11)]
         public uint SecurityRejectedRequestsCount
         {
@@ -41669,9 +42932,7 @@ namespace Opc.Ua
             set { m_securityRejectedRequestsCount = value; }
         }
 
-        /// <summary>
-        /// A description for the RejectedRequestsCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RejectedRequestsCount", IsRequired = false, Order = 12)]
         public uint RejectedRequestsCount
         {
@@ -41772,10 +43033,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ServerDiagnosticsSummaryDataType clone = (ServerDiagnosticsSummaryDataType)this.MemberwiseClone();
+            return (ServerDiagnosticsSummaryDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ServerDiagnosticsSummaryDataType clone = (ServerDiagnosticsSummaryDataType)base.MemberwiseClone();
 
             clone.m_serverViewCount = (uint)Utils.Clone(this.m_serverViewCount);
             clone.m_currentSessionCount = (uint)Utils.Clone(this.m_currentSessionCount);
@@ -41815,7 +43084,7 @@ namespace Opc.Ua
     #region ServerStatusDataType Class
     #if (!OPCUA_EXCLUDE_ServerStatusDataType)
     /// <summary>
-    /// A description for the ServerStatusDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -41855,9 +43124,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the StartTime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StartTime", IsRequired = false, Order = 1)]
         public DateTime StartTime
         {
@@ -41865,9 +43132,7 @@ namespace Opc.Ua
             set { m_startTime = value; }
         }
 
-        /// <summary>
-        /// A description for the CurrentTime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "CurrentTime", IsRequired = false, Order = 2)]
         public DateTime CurrentTime
         {
@@ -41875,9 +43140,7 @@ namespace Opc.Ua
             set { m_currentTime = value; }
         }
 
-        /// <summary>
-        /// A description for the State field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "State", IsRequired = false, Order = 3)]
         public ServerState State
         {
@@ -41886,7 +43149,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the BuildInfo field.
+        /// 
         /// </summary>
         [DataMember(Name = "BuildInfo", IsRequired = false, Order = 4)]
         public BuildInfo BuildInfo
@@ -41907,9 +43170,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the SecondsTillShutdown field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SecondsTillShutdown", IsRequired = false, Order = 5)]
         public uint SecondsTillShutdown
         {
@@ -41917,9 +43178,7 @@ namespace Opc.Ua
             set { m_secondsTillShutdown = value; }
         }
 
-        /// <summary>
-        /// A description for the ShutdownReason field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ShutdownReason", IsRequired = false, Order = 6)]
         public LocalizedText ShutdownReason
         {
@@ -42002,10 +43261,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ServerStatusDataType clone = (ServerStatusDataType)this.MemberwiseClone();
+            return (ServerStatusDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ServerStatusDataType clone = (ServerStatusDataType)base.MemberwiseClone();
 
             clone.m_startTime = (DateTime)Utils.Clone(this.m_startTime);
             clone.m_currentTime = (DateTime)Utils.Clone(this.m_currentTime);
@@ -42033,7 +43300,7 @@ namespace Opc.Ua
     #region SessionDiagnosticsDataType Class
     #if (!OPCUA_EXCLUDE_SessionDiagnosticsDataType)
     /// <summary>
-    /// A description for the SessionDiagnosticsDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -42110,9 +43377,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the SessionId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SessionId", IsRequired = false, Order = 1)]
         public NodeId SessionId
         {
@@ -42120,9 +43385,7 @@ namespace Opc.Ua
             set { m_sessionId = value; }
         }
 
-        /// <summary>
-        /// A description for the SessionName field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SessionName", IsRequired = false, Order = 2)]
         public string SessionName
         {
@@ -42131,7 +43394,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the ClientDescription field.
+        /// 
         /// </summary>
         [DataMember(Name = "ClientDescription", IsRequired = false, Order = 3)]
         public ApplicationDescription ClientDescription
@@ -42152,9 +43415,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the ServerUri field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ServerUri", IsRequired = false, Order = 4)]
         public string ServerUri
         {
@@ -42162,9 +43423,7 @@ namespace Opc.Ua
             set { m_serverUri = value; }
         }
 
-        /// <summary>
-        /// A description for the EndpointUrl field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EndpointUrl", IsRequired = false, Order = 5)]
         public string EndpointUrl
         {
@@ -42173,7 +43432,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the LocaleIds field.
+        /// 
         /// </summary>
         [DataMember(Name = "LocaleIds", IsRequired = false, Order = 6)]
         public StringCollection LocaleIds
@@ -42194,9 +43453,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the ActualSessionTimeout field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ActualSessionTimeout", IsRequired = false, Order = 7)]
         public double ActualSessionTimeout
         {
@@ -42204,9 +43461,7 @@ namespace Opc.Ua
             set { m_actualSessionTimeout = value; }
         }
 
-        /// <summary>
-        /// A description for the MaxResponseMessageSize field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MaxResponseMessageSize", IsRequired = false, Order = 8)]
         public uint MaxResponseMessageSize
         {
@@ -42214,9 +43469,7 @@ namespace Opc.Ua
             set { m_maxResponseMessageSize = value; }
         }
 
-        /// <summary>
-        /// A description for the ClientConnectionTime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ClientConnectionTime", IsRequired = false, Order = 9)]
         public DateTime ClientConnectionTime
         {
@@ -42224,9 +43477,7 @@ namespace Opc.Ua
             set { m_clientConnectionTime = value; }
         }
 
-        /// <summary>
-        /// A description for the ClientLastContactTime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ClientLastContactTime", IsRequired = false, Order = 10)]
         public DateTime ClientLastContactTime
         {
@@ -42234,9 +43485,7 @@ namespace Opc.Ua
             set { m_clientLastContactTime = value; }
         }
 
-        /// <summary>
-        /// A description for the CurrentSubscriptionsCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "CurrentSubscriptionsCount", IsRequired = false, Order = 11)]
         public uint CurrentSubscriptionsCount
         {
@@ -42244,9 +43493,7 @@ namespace Opc.Ua
             set { m_currentSubscriptionsCount = value; }
         }
 
-        /// <summary>
-        /// A description for the CurrentMonitoredItemsCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "CurrentMonitoredItemsCount", IsRequired = false, Order = 12)]
         public uint CurrentMonitoredItemsCount
         {
@@ -42254,9 +43501,7 @@ namespace Opc.Ua
             set { m_currentMonitoredItemsCount = value; }
         }
 
-        /// <summary>
-        /// A description for the CurrentPublishRequestsInQueue field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "CurrentPublishRequestsInQueue", IsRequired = false, Order = 13)]
         public uint CurrentPublishRequestsInQueue
         {
@@ -42265,7 +43510,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the TotalRequestCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "TotalRequestCount", IsRequired = false, Order = 14)]
         public ServiceCounterDataType TotalRequestCount
@@ -42286,9 +43531,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the UnauthorizedRequestCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "UnauthorizedRequestCount", IsRequired = false, Order = 15)]
         public uint UnauthorizedRequestCount
         {
@@ -42297,7 +43540,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the ReadCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "ReadCount", IsRequired = false, Order = 16)]
         public ServiceCounterDataType ReadCount
@@ -42319,7 +43562,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the HistoryReadCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "HistoryReadCount", IsRequired = false, Order = 17)]
         public ServiceCounterDataType HistoryReadCount
@@ -42341,7 +43584,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the WriteCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "WriteCount", IsRequired = false, Order = 18)]
         public ServiceCounterDataType WriteCount
@@ -42363,7 +43606,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the HistoryUpdateCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "HistoryUpdateCount", IsRequired = false, Order = 19)]
         public ServiceCounterDataType HistoryUpdateCount
@@ -42385,7 +43628,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the CallCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "CallCount", IsRequired = false, Order = 20)]
         public ServiceCounterDataType CallCount
@@ -42407,7 +43650,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the CreateMonitoredItemsCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "CreateMonitoredItemsCount", IsRequired = false, Order = 21)]
         public ServiceCounterDataType CreateMonitoredItemsCount
@@ -42429,7 +43672,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the ModifyMonitoredItemsCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "ModifyMonitoredItemsCount", IsRequired = false, Order = 22)]
         public ServiceCounterDataType ModifyMonitoredItemsCount
@@ -42451,7 +43694,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the SetMonitoringModeCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "SetMonitoringModeCount", IsRequired = false, Order = 23)]
         public ServiceCounterDataType SetMonitoringModeCount
@@ -42473,7 +43716,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the SetTriggeringCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "SetTriggeringCount", IsRequired = false, Order = 24)]
         public ServiceCounterDataType SetTriggeringCount
@@ -42495,7 +43738,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DeleteMonitoredItemsCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "DeleteMonitoredItemsCount", IsRequired = false, Order = 25)]
         public ServiceCounterDataType DeleteMonitoredItemsCount
@@ -42517,7 +43760,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the CreateSubscriptionCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "CreateSubscriptionCount", IsRequired = false, Order = 26)]
         public ServiceCounterDataType CreateSubscriptionCount
@@ -42539,7 +43782,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the ModifySubscriptionCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "ModifySubscriptionCount", IsRequired = false, Order = 27)]
         public ServiceCounterDataType ModifySubscriptionCount
@@ -42561,7 +43804,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the SetPublishingModeCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "SetPublishingModeCount", IsRequired = false, Order = 28)]
         public ServiceCounterDataType SetPublishingModeCount
@@ -42583,7 +43826,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the PublishCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "PublishCount", IsRequired = false, Order = 29)]
         public ServiceCounterDataType PublishCount
@@ -42605,7 +43848,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the RepublishCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "RepublishCount", IsRequired = false, Order = 30)]
         public ServiceCounterDataType RepublishCount
@@ -42627,7 +43870,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the TransferSubscriptionsCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "TransferSubscriptionsCount", IsRequired = false, Order = 31)]
         public ServiceCounterDataType TransferSubscriptionsCount
@@ -42649,7 +43892,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DeleteSubscriptionsCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "DeleteSubscriptionsCount", IsRequired = false, Order = 32)]
         public ServiceCounterDataType DeleteSubscriptionsCount
@@ -42671,7 +43914,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the AddNodesCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "AddNodesCount", IsRequired = false, Order = 33)]
         public ServiceCounterDataType AddNodesCount
@@ -42693,7 +43936,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the AddReferencesCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "AddReferencesCount", IsRequired = false, Order = 34)]
         public ServiceCounterDataType AddReferencesCount
@@ -42715,7 +43958,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DeleteNodesCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "DeleteNodesCount", IsRequired = false, Order = 35)]
         public ServiceCounterDataType DeleteNodesCount
@@ -42737,7 +43980,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the DeleteReferencesCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "DeleteReferencesCount", IsRequired = false, Order = 36)]
         public ServiceCounterDataType DeleteReferencesCount
@@ -42759,7 +44002,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the BrowseCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "BrowseCount", IsRequired = false, Order = 37)]
         public ServiceCounterDataType BrowseCount
@@ -42781,7 +44024,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the BrowseNextCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "BrowseNextCount", IsRequired = false, Order = 38)]
         public ServiceCounterDataType BrowseNextCount
@@ -42803,7 +44046,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the TranslateBrowsePathsToNodeIdsCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "TranslateBrowsePathsToNodeIdsCount", IsRequired = false, Order = 39)]
         public ServiceCounterDataType TranslateBrowsePathsToNodeIdsCount
@@ -42825,7 +44068,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the QueryFirstCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "QueryFirstCount", IsRequired = false, Order = 40)]
         public ServiceCounterDataType QueryFirstCount
@@ -42847,7 +44090,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the QueryNextCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "QueryNextCount", IsRequired = false, Order = 41)]
         public ServiceCounterDataType QueryNextCount
@@ -42869,7 +44112,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the RegisterNodesCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "RegisterNodesCount", IsRequired = false, Order = 42)]
         public ServiceCounterDataType RegisterNodesCount
@@ -42891,7 +44134,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the UnregisterNodesCount field.
+        /// 
         /// </summary>
         [DataMember(Name = "UnregisterNodesCount", IsRequired = false, Order = 43)]
         public ServiceCounterDataType UnregisterNodesCount
@@ -43098,10 +44341,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            SessionDiagnosticsDataType clone = (SessionDiagnosticsDataType)this.MemberwiseClone();
+            return (SessionDiagnosticsDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            SessionDiagnosticsDataType clone = (SessionDiagnosticsDataType)base.MemberwiseClone();
 
             clone.m_sessionId = (NodeId)Utils.Clone(this.m_sessionId);
             clone.m_sessionName = (string)Utils.Clone(this.m_sessionName);
@@ -43205,7 +44456,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfSessionDiagnosticsDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "SessionDiagnosticsDataType")]
+    #if !NET_STANDARD
     public partial class SessionDiagnosticsDataTypeCollection : List<SessionDiagnosticsDataType>, ICloneable
+    #else
+    public partial class SessionDiagnosticsDataTypeCollection : List<SessionDiagnosticsDataType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -43252,11 +44507,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (SessionDiagnosticsDataTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             SessionDiagnosticsDataTypeCollection clone = new SessionDiagnosticsDataTypeCollection(this.Count);
 
@@ -43267,7 +44531,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -43276,7 +44539,7 @@ namespace Opc.Ua
     #region SessionSecurityDiagnosticsDataType Class
     #if (!OPCUA_EXCLUDE_SessionSecurityDiagnosticsDataType)
     /// <summary>
-    /// A description for the SessionSecurityDiagnosticsDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -43319,9 +44582,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the SessionId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SessionId", IsRequired = false, Order = 1)]
         public NodeId SessionId
         {
@@ -43329,9 +44590,7 @@ namespace Opc.Ua
             set { m_sessionId = value; }
         }
 
-        /// <summary>
-        /// A description for the ClientUserIdOfSession field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ClientUserIdOfSession", IsRequired = false, Order = 2)]
         public string ClientUserIdOfSession
         {
@@ -43340,7 +44599,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the ClientUserIdHistory field.
+        /// 
         /// </summary>
         [DataMember(Name = "ClientUserIdHistory", IsRequired = false, Order = 3)]
         public StringCollection ClientUserIdHistory
@@ -43361,9 +44620,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the AuthenticationMechanism field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "AuthenticationMechanism", IsRequired = false, Order = 4)]
         public string AuthenticationMechanism
         {
@@ -43371,9 +44628,7 @@ namespace Opc.Ua
             set { m_authenticationMechanism = value; }
         }
 
-        /// <summary>
-        /// A description for the Encoding field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Encoding", IsRequired = false, Order = 5)]
         public string Encoding
         {
@@ -43381,9 +44636,7 @@ namespace Opc.Ua
             set { m_encoding = value; }
         }
 
-        /// <summary>
-        /// A description for the TransportProtocol field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TransportProtocol", IsRequired = false, Order = 6)]
         public string TransportProtocol
         {
@@ -43391,9 +44644,7 @@ namespace Opc.Ua
             set { m_transportProtocol = value; }
         }
 
-        /// <summary>
-        /// A description for the SecurityMode field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SecurityMode", IsRequired = false, Order = 7)]
         public MessageSecurityMode SecurityMode
         {
@@ -43401,9 +44652,7 @@ namespace Opc.Ua
             set { m_securityMode = value; }
         }
 
-        /// <summary>
-        /// A description for the SecurityPolicyUri field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SecurityPolicyUri", IsRequired = false, Order = 8)]
         public string SecurityPolicyUri
         {
@@ -43411,9 +44660,7 @@ namespace Opc.Ua
             set { m_securityPolicyUri = value; }
         }
 
-        /// <summary>
-        /// A description for the ClientCertificate field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ClientCertificate", IsRequired = false, Order = 9)]
         public byte[] ClientCertificate
         {
@@ -43505,10 +44752,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            SessionSecurityDiagnosticsDataType clone = (SessionSecurityDiagnosticsDataType)this.MemberwiseClone();
+            return (SessionSecurityDiagnosticsDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            SessionSecurityDiagnosticsDataType clone = (SessionSecurityDiagnosticsDataType)base.MemberwiseClone();
 
             clone.m_sessionId = (NodeId)Utils.Clone(this.m_sessionId);
             clone.m_clientUserIdOfSession = (string)Utils.Clone(this.m_clientUserIdOfSession);
@@ -43544,7 +44799,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfSessionSecurityDiagnosticsDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "SessionSecurityDiagnosticsDataType")]
+    #if !NET_STANDARD
     public partial class SessionSecurityDiagnosticsDataTypeCollection : List<SessionSecurityDiagnosticsDataType>, ICloneable
+    #else
+    public partial class SessionSecurityDiagnosticsDataTypeCollection : List<SessionSecurityDiagnosticsDataType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -43591,11 +44850,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (SessionSecurityDiagnosticsDataTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             SessionSecurityDiagnosticsDataTypeCollection clone = new SessionSecurityDiagnosticsDataTypeCollection(this.Count);
 
@@ -43606,7 +44874,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -43615,7 +44882,7 @@ namespace Opc.Ua
     #region ServiceCounterDataType Class
     #if (!OPCUA_EXCLUDE_ServiceCounterDataType)
     /// <summary>
-    /// A description for the ServiceCounterDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -43651,9 +44918,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the TotalCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TotalCount", IsRequired = false, Order = 1)]
         public uint TotalCount
         {
@@ -43661,9 +44926,7 @@ namespace Opc.Ua
             set { m_totalCount = value; }
         }
 
-        /// <summary>
-        /// A description for the ErrorCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ErrorCount", IsRequired = false, Order = 2)]
         public uint ErrorCount
         {
@@ -43734,10 +44997,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ServiceCounterDataType clone = (ServiceCounterDataType)this.MemberwiseClone();
+            return (ServiceCounterDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ServiceCounterDataType clone = (ServiceCounterDataType)base.MemberwiseClone();
 
             clone.m_totalCount = (uint)Utils.Clone(this.m_totalCount);
             clone.m_errorCount = (uint)Utils.Clone(this.m_errorCount);
@@ -43757,7 +45028,7 @@ namespace Opc.Ua
     #region StatusResult Class
     #if (!OPCUA_EXCLUDE_StatusResult)
     /// <summary>
-    /// A description for the StatusResult DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -43793,9 +45064,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the StatusCode field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StatusCode", IsRequired = false, Order = 1)]
         public StatusCode StatusCode
         {
@@ -43803,9 +45072,7 @@ namespace Opc.Ua
             set { m_statusCode = value; }
         }
 
-        /// <summary>
-        /// A description for the DiagnosticInfo field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DiagnosticInfo", IsRequired = false, Order = 2)]
         public DiagnosticInfo DiagnosticInfo
         {
@@ -43876,10 +45143,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            StatusResult clone = (StatusResult)this.MemberwiseClone();
+            return (StatusResult)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            StatusResult clone = (StatusResult)base.MemberwiseClone();
 
             clone.m_statusCode = (StatusCode)Utils.Clone(this.m_statusCode);
             clone.m_diagnosticInfo = (DiagnosticInfo)Utils.Clone(this.m_diagnosticInfo);
@@ -43901,7 +45176,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfStatusResult", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "StatusResult")]
+    #if !NET_STANDARD
     public partial class StatusResultCollection : List<StatusResult>, ICloneable
+    #else
+    public partial class StatusResultCollection : List<StatusResult>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -43948,11 +45227,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (StatusResultCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             StatusResultCollection clone = new StatusResultCollection(this.Count);
 
@@ -43963,7 +45251,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -43972,7 +45259,7 @@ namespace Opc.Ua
     #region SubscriptionDiagnosticsDataType Class
     #if (!OPCUA_EXCLUDE_SubscriptionDiagnosticsDataType)
     /// <summary>
-    /// A description for the SubscriptionDiagnosticsDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -44037,9 +45324,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the SessionId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SessionId", IsRequired = false, Order = 1)]
         public NodeId SessionId
         {
@@ -44047,9 +45332,7 @@ namespace Opc.Ua
             set { m_sessionId = value; }
         }
 
-        /// <summary>
-        /// A description for the SubscriptionId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SubscriptionId", IsRequired = false, Order = 2)]
         public uint SubscriptionId
         {
@@ -44057,9 +45340,7 @@ namespace Opc.Ua
             set { m_subscriptionId = value; }
         }
 
-        /// <summary>
-        /// A description for the Priority field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Priority", IsRequired = false, Order = 3)]
         public byte Priority
         {
@@ -44067,9 +45348,7 @@ namespace Opc.Ua
             set { m_priority = value; }
         }
 
-        /// <summary>
-        /// A description for the PublishingInterval field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "PublishingInterval", IsRequired = false, Order = 4)]
         public double PublishingInterval
         {
@@ -44077,9 +45356,7 @@ namespace Opc.Ua
             set { m_publishingInterval = value; }
         }
 
-        /// <summary>
-        /// A description for the MaxKeepAliveCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MaxKeepAliveCount", IsRequired = false, Order = 5)]
         public uint MaxKeepAliveCount
         {
@@ -44087,9 +45364,7 @@ namespace Opc.Ua
             set { m_maxKeepAliveCount = value; }
         }
 
-        /// <summary>
-        /// A description for the MaxLifetimeCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MaxLifetimeCount", IsRequired = false, Order = 6)]
         public uint MaxLifetimeCount
         {
@@ -44097,9 +45372,7 @@ namespace Opc.Ua
             set { m_maxLifetimeCount = value; }
         }
 
-        /// <summary>
-        /// A description for the MaxNotificationsPerPublish field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MaxNotificationsPerPublish", IsRequired = false, Order = 7)]
         public uint MaxNotificationsPerPublish
         {
@@ -44107,9 +45380,7 @@ namespace Opc.Ua
             set { m_maxNotificationsPerPublish = value; }
         }
 
-        /// <summary>
-        /// A description for the PublishingEnabled field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "PublishingEnabled", IsRequired = false, Order = 8)]
         public bool PublishingEnabled
         {
@@ -44117,9 +45388,7 @@ namespace Opc.Ua
             set { m_publishingEnabled = value; }
         }
 
-        /// <summary>
-        /// A description for the ModifyCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ModifyCount", IsRequired = false, Order = 9)]
         public uint ModifyCount
         {
@@ -44127,9 +45396,7 @@ namespace Opc.Ua
             set { m_modifyCount = value; }
         }
 
-        /// <summary>
-        /// A description for the EnableCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EnableCount", IsRequired = false, Order = 10)]
         public uint EnableCount
         {
@@ -44137,9 +45404,7 @@ namespace Opc.Ua
             set { m_enableCount = value; }
         }
 
-        /// <summary>
-        /// A description for the DisableCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DisableCount", IsRequired = false, Order = 11)]
         public uint DisableCount
         {
@@ -44147,9 +45412,7 @@ namespace Opc.Ua
             set { m_disableCount = value; }
         }
 
-        /// <summary>
-        /// A description for the RepublishRequestCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RepublishRequestCount", IsRequired = false, Order = 12)]
         public uint RepublishRequestCount
         {
@@ -44157,9 +45420,7 @@ namespace Opc.Ua
             set { m_republishRequestCount = value; }
         }
 
-        /// <summary>
-        /// A description for the RepublishMessageRequestCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RepublishMessageRequestCount", IsRequired = false, Order = 13)]
         public uint RepublishMessageRequestCount
         {
@@ -44167,9 +45428,7 @@ namespace Opc.Ua
             set { m_republishMessageRequestCount = value; }
         }
 
-        /// <summary>
-        /// A description for the RepublishMessageCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "RepublishMessageCount", IsRequired = false, Order = 14)]
         public uint RepublishMessageCount
         {
@@ -44177,9 +45436,7 @@ namespace Opc.Ua
             set { m_republishMessageCount = value; }
         }
 
-        /// <summary>
-        /// A description for the TransferRequestCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TransferRequestCount", IsRequired = false, Order = 15)]
         public uint TransferRequestCount
         {
@@ -44187,9 +45444,7 @@ namespace Opc.Ua
             set { m_transferRequestCount = value; }
         }
 
-        /// <summary>
-        /// A description for the TransferredToAltClientCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TransferredToAltClientCount", IsRequired = false, Order = 16)]
         public uint TransferredToAltClientCount
         {
@@ -44197,9 +45452,7 @@ namespace Opc.Ua
             set { m_transferredToAltClientCount = value; }
         }
 
-        /// <summary>
-        /// A description for the TransferredToSameClientCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "TransferredToSameClientCount", IsRequired = false, Order = 17)]
         public uint TransferredToSameClientCount
         {
@@ -44207,9 +45460,7 @@ namespace Opc.Ua
             set { m_transferredToSameClientCount = value; }
         }
 
-        /// <summary>
-        /// A description for the PublishRequestCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "PublishRequestCount", IsRequired = false, Order = 18)]
         public uint PublishRequestCount
         {
@@ -44217,9 +45468,7 @@ namespace Opc.Ua
             set { m_publishRequestCount = value; }
         }
 
-        /// <summary>
-        /// A description for the DataChangeNotificationsCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DataChangeNotificationsCount", IsRequired = false, Order = 19)]
         public uint DataChangeNotificationsCount
         {
@@ -44227,9 +45476,7 @@ namespace Opc.Ua
             set { m_dataChangeNotificationsCount = value; }
         }
 
-        /// <summary>
-        /// A description for the EventNotificationsCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EventNotificationsCount", IsRequired = false, Order = 20)]
         public uint EventNotificationsCount
         {
@@ -44237,9 +45484,7 @@ namespace Opc.Ua
             set { m_eventNotificationsCount = value; }
         }
 
-        /// <summary>
-        /// A description for the NotificationsCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NotificationsCount", IsRequired = false, Order = 21)]
         public uint NotificationsCount
         {
@@ -44247,9 +45492,7 @@ namespace Opc.Ua
             set { m_notificationsCount = value; }
         }
 
-        /// <summary>
-        /// A description for the LatePublishRequestCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "LatePublishRequestCount", IsRequired = false, Order = 22)]
         public uint LatePublishRequestCount
         {
@@ -44257,9 +45500,7 @@ namespace Opc.Ua
             set { m_latePublishRequestCount = value; }
         }
 
-        /// <summary>
-        /// A description for the CurrentKeepAliveCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "CurrentKeepAliveCount", IsRequired = false, Order = 23)]
         public uint CurrentKeepAliveCount
         {
@@ -44267,9 +45508,7 @@ namespace Opc.Ua
             set { m_currentKeepAliveCount = value; }
         }
 
-        /// <summary>
-        /// A description for the CurrentLifetimeCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "CurrentLifetimeCount", IsRequired = false, Order = 24)]
         public uint CurrentLifetimeCount
         {
@@ -44277,9 +45516,7 @@ namespace Opc.Ua
             set { m_currentLifetimeCount = value; }
         }
 
-        /// <summary>
-        /// A description for the UnacknowledgedMessageCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "UnacknowledgedMessageCount", IsRequired = false, Order = 25)]
         public uint UnacknowledgedMessageCount
         {
@@ -44287,9 +45524,7 @@ namespace Opc.Ua
             set { m_unacknowledgedMessageCount = value; }
         }
 
-        /// <summary>
-        /// A description for the DiscardedMessageCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DiscardedMessageCount", IsRequired = false, Order = 26)]
         public uint DiscardedMessageCount
         {
@@ -44297,9 +45532,7 @@ namespace Opc.Ua
             set { m_discardedMessageCount = value; }
         }
 
-        /// <summary>
-        /// A description for the MonitoredItemCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MonitoredItemCount", IsRequired = false, Order = 27)]
         public uint MonitoredItemCount
         {
@@ -44307,9 +45540,7 @@ namespace Opc.Ua
             set { m_monitoredItemCount = value; }
         }
 
-        /// <summary>
-        /// A description for the DisabledMonitoredItemCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DisabledMonitoredItemCount", IsRequired = false, Order = 28)]
         public uint DisabledMonitoredItemCount
         {
@@ -44317,9 +45548,7 @@ namespace Opc.Ua
             set { m_disabledMonitoredItemCount = value; }
         }
 
-        /// <summary>
-        /// A description for the MonitoringQueueOverflowCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MonitoringQueueOverflowCount", IsRequired = false, Order = 29)]
         public uint MonitoringQueueOverflowCount
         {
@@ -44327,9 +45556,7 @@ namespace Opc.Ua
             set { m_monitoringQueueOverflowCount = value; }
         }
 
-        /// <summary>
-        /// A description for the NextSequenceNumber field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NextSequenceNumber", IsRequired = false, Order = 30)]
         public uint NextSequenceNumber
         {
@@ -44337,9 +45564,7 @@ namespace Opc.Ua
             set { m_nextSequenceNumber = value; }
         }
 
-        /// <summary>
-        /// A description for the EventQueueOverFlowCount field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EventQueueOverFlowCount", IsRequired = false, Order = 31)]
         public uint EventQueueOverFlowCount
         {
@@ -44497,10 +45722,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            SubscriptionDiagnosticsDataType clone = (SubscriptionDiagnosticsDataType)this.MemberwiseClone();
+            return (SubscriptionDiagnosticsDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            SubscriptionDiagnosticsDataType clone = (SubscriptionDiagnosticsDataType)base.MemberwiseClone();
 
             clone.m_sessionId = (NodeId)Utils.Clone(this.m_sessionId);
             clone.m_subscriptionId = (uint)Utils.Clone(this.m_subscriptionId);
@@ -44580,7 +45813,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfSubscriptionDiagnosticsDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "SubscriptionDiagnosticsDataType")]
+    #if !NET_STANDARD
     public partial class SubscriptionDiagnosticsDataTypeCollection : List<SubscriptionDiagnosticsDataType>, ICloneable
+    #else
+    public partial class SubscriptionDiagnosticsDataTypeCollection : List<SubscriptionDiagnosticsDataType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -44627,11 +45864,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (SubscriptionDiagnosticsDataTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             SubscriptionDiagnosticsDataTypeCollection clone = new SubscriptionDiagnosticsDataTypeCollection(this.Count);
 
@@ -44642,7 +45888,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -44651,40 +45896,30 @@ namespace Opc.Ua
     #region ModelChangeStructureVerbMask Enumeration
     #if (!OPCUA_EXCLUDE_ModelChangeStructureVerbMask)
     /// <summary>
-    /// A description for the ModelChangeStructureVerbMask DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum ModelChangeStructureVerbMask
     {
-        /// <summary>
-        /// A description for the NodeAdded field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "NodeAdded_1")]
         NodeAdded = 1,
 
-        /// <summary>
-        /// A description for the NodeDeleted field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "NodeDeleted_2")]
         NodeDeleted = 2,
 
-        /// <summary>
-        /// A description for the ReferenceAdded field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ReferenceAdded_4")]
         ReferenceAdded = 4,
 
-        /// <summary>
-        /// A description for the ReferenceDeleted field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ReferenceDeleted_8")]
         ReferenceDeleted = 8,
 
-        /// <summary>
-        /// A description for the DataTypeChanged field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DataTypeChanged_16")]
         DataTypeChanged = 16,
     }
@@ -44694,7 +45929,7 @@ namespace Opc.Ua
     #region ModelChangeStructureDataType Class
     #if (!OPCUA_EXCLUDE_ModelChangeStructureDataType)
     /// <summary>
-    /// A description for the ModelChangeStructureDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -44731,9 +45966,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Affected field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Affected", IsRequired = false, Order = 1)]
         public NodeId Affected
         {
@@ -44741,9 +45974,7 @@ namespace Opc.Ua
             set { m_affected = value; }
         }
 
-        /// <summary>
-        /// A description for the AffectedType field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "AffectedType", IsRequired = false, Order = 2)]
         public NodeId AffectedType
         {
@@ -44751,9 +45982,7 @@ namespace Opc.Ua
             set { m_affectedType = value; }
         }
 
-        /// <summary>
-        /// A description for the Verb field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Verb", IsRequired = false, Order = 3)]
         public byte Verb
         {
@@ -44827,10 +46056,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ModelChangeStructureDataType clone = (ModelChangeStructureDataType)this.MemberwiseClone();
+            return (ModelChangeStructureDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ModelChangeStructureDataType clone = (ModelChangeStructureDataType)base.MemberwiseClone();
 
             clone.m_affected = (NodeId)Utils.Clone(this.m_affected);
             clone.m_affectedType = (NodeId)Utils.Clone(this.m_affectedType);
@@ -44854,7 +46091,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfModelChangeStructureDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "ModelChangeStructureDataType")]
+    #if !NET_STANDARD
     public partial class ModelChangeStructureDataTypeCollection : List<ModelChangeStructureDataType>, ICloneable
+    #else
+    public partial class ModelChangeStructureDataTypeCollection : List<ModelChangeStructureDataType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -44901,11 +46142,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (ModelChangeStructureDataTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             ModelChangeStructureDataTypeCollection clone = new ModelChangeStructureDataTypeCollection(this.Count);
 
@@ -44916,7 +46166,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -44925,7 +46174,7 @@ namespace Opc.Ua
     #region SemanticChangeStructureDataType Class
     #if (!OPCUA_EXCLUDE_SemanticChangeStructureDataType)
     /// <summary>
-    /// A description for the SemanticChangeStructureDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -44961,9 +46210,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Affected field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Affected", IsRequired = false, Order = 1)]
         public NodeId Affected
         {
@@ -44971,9 +46218,7 @@ namespace Opc.Ua
             set { m_affected = value; }
         }
 
-        /// <summary>
-        /// A description for the AffectedType field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "AffectedType", IsRequired = false, Order = 2)]
         public NodeId AffectedType
         {
@@ -45044,10 +46289,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            SemanticChangeStructureDataType clone = (SemanticChangeStructureDataType)this.MemberwiseClone();
+            return (SemanticChangeStructureDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            SemanticChangeStructureDataType clone = (SemanticChangeStructureDataType)base.MemberwiseClone();
 
             clone.m_affected = (NodeId)Utils.Clone(this.m_affected);
             clone.m_affectedType = (NodeId)Utils.Clone(this.m_affectedType);
@@ -45069,7 +46322,11 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfSemanticChangeStructureDataType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "SemanticChangeStructureDataType")]
+    #if !NET_STANDARD
     public partial class SemanticChangeStructureDataTypeCollection : List<SemanticChangeStructureDataType>, ICloneable
+    #else
+    public partial class SemanticChangeStructureDataTypeCollection : List<SemanticChangeStructureDataType>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -45116,11 +46373,20 @@ namespace Opc.Ua
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (SemanticChangeStructureDataTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             SemanticChangeStructureDataTypeCollection clone = new SemanticChangeStructureDataTypeCollection(this.Count);
 
@@ -45131,7 +46397,6 @@ namespace Opc.Ua
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -45140,7 +46405,7 @@ namespace Opc.Ua
     #region Range Class
     #if (!OPCUA_EXCLUDE_Range)
     /// <summary>
-    /// A description for the Range DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -45176,9 +46441,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Low field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Low", IsRequired = false, Order = 1)]
         public double Low
         {
@@ -45186,9 +46449,7 @@ namespace Opc.Ua
             set { m_low = value; }
         }
 
-        /// <summary>
-        /// A description for the High field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "High", IsRequired = false, Order = 2)]
         public double High
         {
@@ -45259,10 +46520,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            Range clone = (Range)this.MemberwiseClone();
+            return (Range)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            Range clone = (Range)base.MemberwiseClone();
 
             clone.m_low = (double)Utils.Clone(this.m_low);
             clone.m_high = (double)Utils.Clone(this.m_high);
@@ -45282,7 +46551,7 @@ namespace Opc.Ua
     #region EUInformation Class
     #if (!OPCUA_EXCLUDE_EUInformation)
     /// <summary>
-    /// A description for the EUInformation DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -45320,9 +46589,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the NamespaceUri field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NamespaceUri", IsRequired = false, Order = 1)]
         public string NamespaceUri
         {
@@ -45330,9 +46597,7 @@ namespace Opc.Ua
             set { m_namespaceUri = value; }
         }
 
-        /// <summary>
-        /// A description for the UnitId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "UnitId", IsRequired = false, Order = 2)]
         public int UnitId
         {
@@ -45340,9 +46605,7 @@ namespace Opc.Ua
             set { m_unitId = value; }
         }
 
-        /// <summary>
-        /// A description for the DisplayName field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DisplayName", IsRequired = false, Order = 3)]
         public LocalizedText DisplayName
         {
@@ -45350,9 +46613,7 @@ namespace Opc.Ua
             set { m_displayName = value; }
         }
 
-        /// <summary>
-        /// A description for the Description field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Description", IsRequired = false, Order = 4)]
         public LocalizedText Description
         {
@@ -45429,10 +46690,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            EUInformation clone = (EUInformation)this.MemberwiseClone();
+            return (EUInformation)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            EUInformation clone = (EUInformation)base.MemberwiseClone();
 
             clone.m_namespaceUri = (string)Utils.Clone(this.m_namespaceUri);
             clone.m_unitId = (int)Utils.Clone(this.m_unitId);
@@ -45456,28 +46725,22 @@ namespace Opc.Ua
     #region AxisScaleEnumeration Enumeration
     #if (!OPCUA_EXCLUDE_AxisScaleEnumeration)
     /// <summary>
-    /// A description for the AxisScaleEnumeration DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum AxisScaleEnumeration
     {
-        /// <summary>
-        /// A description for the Linear field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Linear_0")]
         Linear = 0,
 
-        /// <summary>
-        /// A description for the Log field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Log_1")]
         Log = 1,
 
-        /// <summary>
-        /// A description for the Ln field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Ln_2")]
         Ln = 2,
     }
@@ -45487,7 +46750,7 @@ namespace Opc.Ua
     #region ComplexNumberType Class
     #if (!OPCUA_EXCLUDE_ComplexNumberType)
     /// <summary>
-    /// A description for the ComplexNumberType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -45523,9 +46786,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Real field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Real", IsRequired = false, Order = 1)]
         public float Real
         {
@@ -45533,9 +46794,7 @@ namespace Opc.Ua
             set { m_real = value; }
         }
 
-        /// <summary>
-        /// A description for the Imaginary field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Imaginary", IsRequired = false, Order = 2)]
         public float Imaginary
         {
@@ -45606,10 +46865,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ComplexNumberType clone = (ComplexNumberType)this.MemberwiseClone();
+            return (ComplexNumberType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ComplexNumberType clone = (ComplexNumberType)base.MemberwiseClone();
 
             clone.m_real = (float)Utils.Clone(this.m_real);
             clone.m_imaginary = (float)Utils.Clone(this.m_imaginary);
@@ -45629,7 +46896,7 @@ namespace Opc.Ua
     #region DoubleComplexNumberType Class
     #if (!OPCUA_EXCLUDE_DoubleComplexNumberType)
     /// <summary>
-    /// A description for the DoubleComplexNumberType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -45665,9 +46932,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Real field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Real", IsRequired = false, Order = 1)]
         public double Real
         {
@@ -45675,9 +46940,7 @@ namespace Opc.Ua
             set { m_real = value; }
         }
 
-        /// <summary>
-        /// A description for the Imaginary field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Imaginary", IsRequired = false, Order = 2)]
         public double Imaginary
         {
@@ -45748,10 +47011,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            DoubleComplexNumberType clone = (DoubleComplexNumberType)this.MemberwiseClone();
+            return (DoubleComplexNumberType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            DoubleComplexNumberType clone = (DoubleComplexNumberType)base.MemberwiseClone();
 
             clone.m_real = (double)Utils.Clone(this.m_real);
             clone.m_imaginary = (double)Utils.Clone(this.m_imaginary);
@@ -45771,7 +47042,7 @@ namespace Opc.Ua
     #region AxisInformation Class
     #if (!OPCUA_EXCLUDE_AxisInformation)
     /// <summary>
-    /// A description for the AxisInformation DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -45811,7 +47082,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <summary>
-        /// A description for the EngineeringUnits field.
+        /// 
         /// </summary>
         [DataMember(Name = "EngineeringUnits", IsRequired = false, Order = 1)]
         public EUInformation EngineeringUnits
@@ -45833,7 +47104,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the EURange field.
+        /// 
         /// </summary>
         [DataMember(Name = "EURange", IsRequired = false, Order = 2)]
         public Range EURange
@@ -45854,9 +47125,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the Title field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Title", IsRequired = false, Order = 3)]
         public LocalizedText Title
         {
@@ -45864,9 +47133,7 @@ namespace Opc.Ua
             set { m_title = value; }
         }
 
-        /// <summary>
-        /// A description for the AxisScaleType field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "AxisScaleType", IsRequired = false, Order = 4)]
         public AxisScaleEnumeration AxisScaleType
         {
@@ -45875,7 +47142,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the AxisSteps field.
+        /// 
         /// </summary>
         [DataMember(Name = "AxisSteps", IsRequired = false, Order = 5)]
         public DoubleCollection AxisSteps
@@ -45968,10 +47235,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            AxisInformation clone = (AxisInformation)this.MemberwiseClone();
+            return (AxisInformation)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            AxisInformation clone = (AxisInformation)base.MemberwiseClone();
 
             clone.m_engineeringUnits = (EUInformation)Utils.Clone(this.m_engineeringUnits);
             clone.m_eURange = (Range)Utils.Clone(this.m_eURange);
@@ -45997,7 +47272,7 @@ namespace Opc.Ua
     #region XVType Class
     #if (!OPCUA_EXCLUDE_XVType)
     /// <summary>
-    /// A description for the XVType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -46033,9 +47308,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the X field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "X", IsRequired = false, Order = 1)]
         public double X
         {
@@ -46043,9 +47316,7 @@ namespace Opc.Ua
             set { m_x = value; }
         }
 
-        /// <summary>
-        /// A description for the Value field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Value", IsRequired = false, Order = 2)]
         public float Value
         {
@@ -46116,10 +47387,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            XVType clone = (XVType)this.MemberwiseClone();
+            return (XVType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            XVType clone = (XVType)base.MemberwiseClone();
 
             clone.m_x = (double)Utils.Clone(this.m_x);
             clone.m_value = (float)Utils.Clone(this.m_value);
@@ -46139,7 +47418,7 @@ namespace Opc.Ua
     #region ProgramDiagnosticDataType Class
     #if (!OPCUA_EXCLUDE_ProgramDiagnosticDataType)
     /// <summary>
-    /// A description for the ProgramDiagnosticDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -46183,9 +47462,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the CreateSessionId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "CreateSessionId", IsRequired = false, Order = 1)]
         public NodeId CreateSessionId
         {
@@ -46193,9 +47470,7 @@ namespace Opc.Ua
             set { m_createSessionId = value; }
         }
 
-        /// <summary>
-        /// A description for the CreateClientName field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "CreateClientName", IsRequired = false, Order = 2)]
         public string CreateClientName
         {
@@ -46203,9 +47478,7 @@ namespace Opc.Ua
             set { m_createClientName = value; }
         }
 
-        /// <summary>
-        /// A description for the InvocationCreationTime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "InvocationCreationTime", IsRequired = false, Order = 3)]
         public DateTime InvocationCreationTime
         {
@@ -46213,9 +47486,7 @@ namespace Opc.Ua
             set { m_invocationCreationTime = value; }
         }
 
-        /// <summary>
-        /// A description for the LastTransitionTime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "LastTransitionTime", IsRequired = false, Order = 4)]
         public DateTime LastTransitionTime
         {
@@ -46223,9 +47494,7 @@ namespace Opc.Ua
             set { m_lastTransitionTime = value; }
         }
 
-        /// <summary>
-        /// A description for the LastMethodCall field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "LastMethodCall", IsRequired = false, Order = 5)]
         public string LastMethodCall
         {
@@ -46233,9 +47502,7 @@ namespace Opc.Ua
             set { m_lastMethodCall = value; }
         }
 
-        /// <summary>
-        /// A description for the LastMethodSessionId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "LastMethodSessionId", IsRequired = false, Order = 6)]
         public NodeId LastMethodSessionId
         {
@@ -46244,7 +47511,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the LastMethodInputArguments field.
+        /// 
         /// </summary>
         [DataMember(Name = "LastMethodInputArguments", IsRequired = false, Order = 7)]
         public ArgumentCollection LastMethodInputArguments
@@ -46266,7 +47533,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the LastMethodOutputArguments field.
+        /// 
         /// </summary>
         [DataMember(Name = "LastMethodOutputArguments", IsRequired = false, Order = 8)]
         public ArgumentCollection LastMethodOutputArguments
@@ -46287,9 +47554,7 @@ namespace Opc.Ua
             }
         }
 
-        /// <summary>
-        /// A description for the LastMethodCallTime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "LastMethodCallTime", IsRequired = false, Order = 9)]
         public DateTime LastMethodCallTime
         {
@@ -46298,7 +47563,7 @@ namespace Opc.Ua
         }
 
         /// <summary>
-        /// A description for the LastMethodReturnStatus field.
+        /// 
         /// </summary>
         [DataMember(Name = "LastMethodReturnStatus", IsRequired = false, Order = 10)]
         public StatusResult LastMethodReturnStatus
@@ -46406,10 +47671,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            ProgramDiagnosticDataType clone = (ProgramDiagnosticDataType)this.MemberwiseClone();
+            return (ProgramDiagnosticDataType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ProgramDiagnosticDataType clone = (ProgramDiagnosticDataType)base.MemberwiseClone();
 
             clone.m_createSessionId = (NodeId)Utils.Clone(this.m_createSessionId);
             clone.m_createClientName = (string)Utils.Clone(this.m_createClientName);
@@ -46445,7 +47718,7 @@ namespace Opc.Ua
     #region Annotation Class
     #if (!OPCUA_EXCLUDE_Annotation)
     /// <summary>
-    /// A description for the Annotation DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -46482,9 +47755,7 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Message field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Message", IsRequired = false, Order = 1)]
         public string Message
         {
@@ -46492,9 +47763,7 @@ namespace Opc.Ua
             set { m_message = value; }
         }
 
-        /// <summary>
-        /// A description for the UserName field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "UserName", IsRequired = false, Order = 2)]
         public string UserName
         {
@@ -46502,9 +47771,7 @@ namespace Opc.Ua
             set { m_userName = value; }
         }
 
-        /// <summary>
-        /// A description for the AnnotationTime field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "AnnotationTime", IsRequired = false, Order = 3)]
         public DateTime AnnotationTime
         {
@@ -46578,10 +47845,18 @@ namespace Opc.Ua
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            Annotation clone = (Annotation)this.MemberwiseClone();
+            return (Annotation)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            Annotation clone = (Annotation)base.MemberwiseClone();
 
             clone.m_message = (string)Utils.Clone(this.m_message);
             clone.m_userName = (string)Utils.Clone(this.m_userName);
@@ -46603,40 +47878,30 @@ namespace Opc.Ua
     #region ExceptionDeviationFormat Enumeration
     #if (!OPCUA_EXCLUDE_ExceptionDeviationFormat)
     /// <summary>
-    /// A description for the ExceptionDeviationFormat DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
     public enum ExceptionDeviationFormat
     {
-        /// <summary>
-        /// A description for the AbsoluteValue field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "AbsoluteValue_0")]
         AbsoluteValue = 0,
 
-        /// <summary>
-        /// A description for the PercentOfValue field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "PercentOfValue_1")]
         PercentOfValue = 1,
 
-        /// <summary>
-        /// A description for the PercentOfRange field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "PercentOfRange_2")]
         PercentOfRange = 2,
 
-        /// <summary>
-        /// A description for the PercentOfEURange field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "PercentOfEURange_3")]
         PercentOfEURange = 3,
 
-        /// <summary>
-        /// A description for the Unknown field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Unknown_4")]
         Unknown = 4,
     }

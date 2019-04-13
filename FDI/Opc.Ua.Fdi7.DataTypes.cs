@@ -1,8 +1,8 @@
 /* ========================================================================
- * Copyright (c) 2005-2016 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
- *
+ * 
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
  * files (the "Software"), to deal in the Software without
@@ -11,7 +11,7 @@
  * copies of the Software, and to permit persons to whom the
  * Software is furnished to do so, subject to the following
  * conditions:
- *
+ * 
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
@@ -30,7 +30,6 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Reflection;
 using System.Xml;
 using System.Runtime.Serialization;
 using Opc.Ua.Di;
@@ -41,124 +40,86 @@ namespace Opc.Ua.Fdi7
     #region EddDataTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_EddDataTypeEnum)
     /// <summary>
-    /// A description for the EddDataTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Fdi7.Namespaces.OpcUaFdi7Xsd)]
     public enum EddDataTypeEnum
     {
-        /// <summary>
-        /// A description for the BOOLEAN field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "BOOLEAN_1")]
         BOOLEAN = 1,
 
-        /// <summary>
-        /// A description for the DOUBLE field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DOUBLE_2")]
         DOUBLE = 2,
 
-        /// <summary>
-        /// A description for the FLOAT field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "FLOAT_3")]
         FLOAT = 3,
 
-        /// <summary>
-        /// A description for the INTEGER field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "INTEGER_4")]
         INTEGER = 4,
 
-        /// <summary>
-        /// A description for the UNSIGNED_INTEGER field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UNSIGNED_INTEGER_5")]
         UNSIGNED_INTEGER = 5,
 
-        /// <summary>
-        /// A description for the DATE field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DATE_6")]
         DATE = 6,
 
-        /// <summary>
-        /// A description for the DATE_AND_TIME field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DATE_AND_TIME_7")]
         DATE_AND_TIME = 7,
 
-        /// <summary>
-        /// A description for the DURATION field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DURATION_8")]
         DURATION = 8,
 
-        /// <summary>
-        /// A description for the TIME field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "TIME_9")]
         TIME = 9,
 
-        /// <summary>
-        /// A description for the TIME_VALUE field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "TIME_VALUE_10")]
         TIME_VALUE = 10,
 
-        /// <summary>
-        /// A description for the BIT_ENUMERATED field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "BIT_ENUMERATED_11")]
         BIT_ENUMERATED = 11,
 
-        /// <summary>
-        /// A description for the ENUMERATED field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ENUMERATED_12")]
         ENUMERATED = 12,
 
-        /// <summary>
-        /// A description for the ASCII field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ASCII_13")]
         ASCII = 13,
 
-        /// <summary>
-        /// A description for the BITSTRING field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "BITSTRING_14")]
         BITSTRING = 14,
 
-        /// <summary>
-        /// A description for the EUC field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "EUC_15")]
         EUC = 15,
 
-        /// <summary>
-        /// A description for the OCTET field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "OCTET_16")]
         OCTET = 16,
 
-        /// <summary>
-        /// A description for the PACKED_ASCII field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "PACKED_ASCII_17")]
         PACKED_ASCII = 17,
 
-        /// <summary>
-        /// A description for the PASSWORD field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "PASSWORD_18")]
         PASSWORD = 18,
 
-        /// <summary>
-        /// A description for the VISIBLE field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "VISIBLE_19")]
         VISIBLE = 19,
     }
@@ -170,7 +131,11 @@ namespace Opc.Ua.Fdi7
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfEddDataTypeEnum", Namespace = Opc.Ua.Fdi7.Namespaces.OpcUaFdi7Xsd, ItemName = "EddDataTypeEnum")]
+    #if !NET_STANDARD
     public partial class EddDataTypeEnumCollection : List<EddDataTypeEnum>, ICloneable
+    #else
+    public partial class EddDataTypeEnumCollection : List<EddDataTypeEnum>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -217,11 +182,20 @@ namespace Opc.Ua.Fdi7
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (EddDataTypeEnumCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             EddDataTypeEnumCollection clone = new EddDataTypeEnumCollection(this.Count);
 
@@ -232,7 +206,6 @@ namespace Opc.Ua.Fdi7
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
@@ -241,7 +214,7 @@ namespace Opc.Ua.Fdi7
     #region EddDataTypeInfo Class
     #if (!OPCUA_EXCLUDE_EddDataTypeInfo)
     /// <summary>
-    /// A description for the EddDataTypeInfo DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -277,9 +250,7 @@ namespace Opc.Ua.Fdi7
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the EddDataType field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EddDataType", IsRequired = false, Order = 1)]
         public EddDataTypeEnum EddDataType
         {
@@ -287,9 +258,7 @@ namespace Opc.Ua.Fdi7
             set { m_eddDataType = value; }
         }
 
-        /// <summary>
-        /// A description for the Size field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Size", IsRequired = false, Order = 2)]
         public uint Size
         {
@@ -360,10 +329,18 @@ namespace Opc.Ua.Fdi7
             return true;
         }
 
+        #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
         public virtual object Clone()
         {
-            EddDataTypeInfo clone = (EddDataTypeInfo)this.MemberwiseClone();
+            return (EddDataTypeInfo)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            EddDataTypeInfo clone = (EddDataTypeInfo)base.MemberwiseClone();
 
             clone.m_eddDataType = (EddDataTypeEnum)Utils.Clone(this.m_eddDataType);
             clone.m_size = (uint)Utils.Clone(this.m_size);
@@ -385,7 +362,11 @@ namespace Opc.Ua.Fdi7
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [CollectionDataContract(Name = "ListOfEddDataTypeInfo", Namespace = Opc.Ua.Fdi7.Namespaces.OpcUaFdi7Xsd, ItemName = "EddDataTypeInfo")]
+    #if !NET_STANDARD
     public partial class EddDataTypeInfoCollection : List<EddDataTypeInfo>, ICloneable
+    #else
+    public partial class EddDataTypeInfoCollection : List<EddDataTypeInfo>
+    #endif
     {
         #region Constructors
         /// <summary>
@@ -432,11 +413,20 @@ namespace Opc.Ua.Fdi7
         }
         #endregion
 
+        #if !NET_STANDARD
         #region ICloneable Methods
         /// <summary>
         /// Creates a deep copy of the collection.
         /// </summary>
         public object Clone()
+        {
+            return (EddDataTypeInfoCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
         {
             EddDataTypeInfoCollection clone = new EddDataTypeInfoCollection(this.Count);
 
@@ -447,7 +437,6 @@ namespace Opc.Ua.Fdi7
 
             return clone;
         }
-        #endregion
     }
     #endregion
     #endif
