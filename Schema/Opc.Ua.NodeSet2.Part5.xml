@@ -7905,13 +7905,13 @@
     </References>
     <InverseName>GuardOf</InverseName>
   </UAReferenceType>
-  <UAVariableType NodeId="i=15113" BrowseName="GuardVariableType" DataType="LocalizedText" ValueRank="-2">
+  <UAVariableType NodeId="i=15113" BrowseName="GuardVariableType" DataType="LocalizedText">
     <DisplayName>GuardVariableType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
     </References>
   </UAVariableType>
-  <UAVariableType NodeId="i=15128" BrowseName="ExpressionGuardVariableType" DataType="LocalizedText" ValueRank="-2">
+  <UAVariableType NodeId="i=15128" BrowseName="ExpressionGuardVariableType" DataType="LocalizedText">
     <DisplayName>ExpressionGuardVariableType</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=15129</Reference>
@@ -7926,7 +7926,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=15128</Reference>
     </References>
   </UAVariable>
-  <UAVariableType NodeId="i=15317" BrowseName="ElseGuardVariableType" DataType="LocalizedText" ValueRank="-2">
+  <UAVariableType NodeId="i=15317" BrowseName="ElseGuardVariableType" DataType="LocalizedText">
     <DisplayName>ElseGuardVariableType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15113</Reference>
@@ -12541,6 +12541,99 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
+  <UAObjectType NodeId="i=17589" BrowseName="DictionaryEntryType" IsAbstract="true">
+    <DisplayName>DictionaryEntryType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">i=17590</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="i=17590" BrowseName="&lt;DictionaryEntryName&gt;" SymbolicName="DictionaryEntryName_Placeholder" ParentNodeId="i=17589">
+    <DisplayName>&lt;DictionaryEntryName&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17589</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17589</Reference>
+    </References>
+  </UAObject>
+  <UAObjectType NodeId="i=17591" BrowseName="DictionaryFolderType">
+    <DisplayName>DictionaryFolderType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">i=17592</Reference>
+      <Reference ReferenceType="HasComponent">i=17593</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="i=17592" BrowseName="&lt;DictionaryFolderName&gt;" SymbolicName="DictionaryFolderName_Placeholder" ParentNodeId="i=17591">
+    <DisplayName>&lt;DictionaryFolderName&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17591</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17591</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=17593" BrowseName="&lt;DictionaryEntryName&gt;" SymbolicName="DictionaryEntryName_Placeholder" ParentNodeId="i=17591">
+    <DisplayName>&lt;DictionaryEntryName&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17589</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=17591</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=17594" BrowseName="Dictionaries">
+    <DisplayName>Dictionaries</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=2253</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17591</Reference>
+    </References>
+  </UAObject>
+  <UAReferenceType NodeId="i=17597" BrowseName="HasDictionaryEntry">
+    <DisplayName>HasDictionaryEntry</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
+    </References>
+    <InverseName>DictionaryEntryOf</InverseName>
+  </UAReferenceType>
+  <UAObjectType NodeId="i=17598" BrowseName="IrdiDictionaryEntryType">
+    <DisplayName>IrdiDictionaryEntryType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=17589</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="i=17600" BrowseName="UriDictionaryEntryType">
+    <DisplayName>UriDictionaryEntryType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=17589</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="i=17602" BrowseName="BaseInterfaceType" IsAbstract="true">
+    <DisplayName>BaseInterfaceType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="i=17708" BrowseName="InterfaceTypes">
+    <DisplayName>InterfaceTypes</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes">i=17602</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">i=86</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+  <UAReferenceType NodeId="i=17603" BrowseName="HasInterface">
+    <DisplayName>HasInterface</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
+    </References>
+    <InverseName>InterfaceOf</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="i=17604" BrowseName="HasAddIn">
+    <DisplayName>HasAddIn</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
+    </References>
+    <InverseName>AddInOf</InverseName>
+  </UAReferenceType>
   <UADataType NodeId="i=338" BrowseName="BuildInfo">
     <DisplayName>BuildInfo</DisplayName>
     <References>

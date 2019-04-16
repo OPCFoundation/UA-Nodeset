@@ -27878,8 +27878,8 @@ namespace Opc.Ua
 
         #region Initialization String
         private const string InitializationString =
-           "//////////8VYIEAAgAAAAAAGQAAAEd1YXJkVmFyaWFibGVUeXBlSW5zdGFuY2UBAAk7AQAJOwAVAQH/" +
-           "////AAAAAA==";
+           "//////////8VYIkAAgAAAAAAGQAAAEd1YXJkVmFyaWFibGVUeXBlSW5zdGFuY2UBAAk7AQAJOwAV////" +
+           "/wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -27966,9 +27966,9 @@ namespace Opc.Ua
 
         #region Initialization String
         private const string InitializationString =
-           "//////////8VYIEAAgAAAAAAIwAAAEV4cHJlc3Npb25HdWFyZFZhcmlhYmxlVHlwZUluc3RhbmNlAQAY" +
-           "OwEAGDsAFQEB/////wEAAAAVYIkKAgAAAAAACgAAAEV4cHJlc3Npb24BABk7AC4ARBk7AAABAEoC////" +
-           "/wEB/////wAAAAA=";
+           "//////////8VYIkAAgAAAAAAIwAAAEV4cHJlc3Npb25HdWFyZFZhcmlhYmxlVHlwZUluc3RhbmNlAQAY" +
+           "OwEAGDsAFf////8BAf////8BAAAAFWCJCgIAAAAAAAoAAABFeHByZXNzaW9uAQAZOwAuAEQZOwAAAQBK" +
+           "Av////8BAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -28138,8 +28138,8 @@ namespace Opc.Ua
 
         #region Initialization String
         private const string InitializationString =
-           "//////////8VYIEAAgAAAAAAHQAAAEVsc2VHdWFyZFZhcmlhYmxlVHlwZUluc3RhbmNlAQDVOwEA1TsA" +
-           "FQEB/////wAAAAA=";
+           "//////////8VYIkAAgAAAAAAHQAAAEVsc2VHdWFyZFZhcmlhYmxlVHlwZUluc3RhbmNlAQDVOwEA1TsA" +
+           "Ff////8BAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -32891,6 +32891,366 @@ namespace Opc.Ua
            "bGllbnRVc2VySWQBAPdEAC4ARPdEAAAADP////8BAf////8AAAAAFWCJCgIAAAAAAAgAAABNZXRob2RJ" +
            "ZAEA+EQALgBE+EQAAAAR/////wEB/////wAAAAAVYIkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQD5" +
            "RAAuAET5RAAAABgBAAAAAQH/////AAAAAA==";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region DictionaryEntryState Class
+    #if (!OPCUA_EXCLUDE_DictionaryEntryState)
+    /// <summary>
+    /// Stores an instance of the DictionaryEntryType ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class DictionaryEntryState : BaseObjectState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public DictionaryEntryState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.DictionaryEntryType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "//////////8EYIAAAQAAAAAAGwAAAERpY3Rpb25hcnlFbnRyeVR5cGVJbnN0YW5jZQEAtUQBALVE////" +
+           "/wAAAAA=";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region DictionaryFolderState Class
+    #if (!OPCUA_EXCLUDE_DictionaryFolderState)
+    /// <summary>
+    /// Stores an instance of the DictionaryFolderType ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class DictionaryFolderState : FolderState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public DictionaryFolderState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.DictionaryFolderType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "//////////8EYIAAAQAAAAAAHAAAAERpY3Rpb25hcnlGb2xkZXJUeXBlSW5zdGFuY2UBALdEAQC3RP//" +
+           "//8AAAAA";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region IrdiDictionaryEntryState Class
+    #if (!OPCUA_EXCLUDE_IrdiDictionaryEntryState)
+    /// <summary>
+    /// Stores an instance of the IrdiDictionaryEntryType ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class IrdiDictionaryEntryState : DictionaryEntryState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public IrdiDictionaryEntryState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.IrdiDictionaryEntryType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "//////////8EYIAAAQAAAAAAHwAAAElyZGlEaWN0aW9uYXJ5RW50cnlUeXBlSW5zdGFuY2UBAL5EAQC+" +
+           "RP////8AAAAA";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region UriDictionaryEntryState Class
+    #if (!OPCUA_EXCLUDE_UriDictionaryEntryState)
+    /// <summary>
+    /// Stores an instance of the UriDictionaryEntryType ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class UriDictionaryEntryState : DictionaryEntryState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public UriDictionaryEntryState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.UriDictionaryEntryType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "//////////8EYIAAAQAAAAAAHgAAAFVyaURpY3Rpb25hcnlFbnRyeVR5cGVJbnN0YW5jZQEAwEQBAMBE" +
+           "/////wAAAAA=";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region BaseInterfaceState Class
+    #if (!OPCUA_EXCLUDE_BaseInterfaceState)
+    /// <summary>
+    /// Stores an instance of the BaseInterfaceType ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class BaseInterfaceState : BaseObjectState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public BaseInterfaceState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.BaseInterfaceType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "//////////8EYIAAAQAAAAAAGQAAAEJhc2VJbnRlcmZhY2VUeXBlSW5zdGFuY2UBAMJEAQDCRP////8A" +
+           "AAAA";
         #endregion
         #endif
         #endregion

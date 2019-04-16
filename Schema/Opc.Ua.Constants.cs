@@ -4310,6 +4310,31 @@ namespace Opc.Ua
         public const uint WellKnownRole_SecurityAdmin = 15704;
 
         /// <summary>
+        /// The identifier for the DictionaryEntryType_DictionaryEntryName_Placeholder Object.
+        /// </summary>
+        public const uint DictionaryEntryType_DictionaryEntryName_Placeholder = 17590;
+
+        /// <summary>
+        /// The identifier for the DictionaryFolderType_DictionaryFolderName_Placeholder Object.
+        /// </summary>
+        public const uint DictionaryFolderType_DictionaryFolderName_Placeholder = 17592;
+
+        /// <summary>
+        /// The identifier for the DictionaryFolderType_DictionaryEntryName_Placeholder Object.
+        /// </summary>
+        public const uint DictionaryFolderType_DictionaryEntryName_Placeholder = 17593;
+
+        /// <summary>
+        /// The identifier for the Dictionaries Object.
+        /// </summary>
+        public const uint Dictionaries = 17594;
+
+        /// <summary>
+        /// The identifier for the InterfaceTypes Object.
+        /// </summary>
+        public const uint InterfaceTypes = 17708;
+
+        /// <summary>
         /// The identifier for the AlarmConditionType_ShelvingState Object.
         /// </summary>
         public const uint AlarmConditionType_ShelvingState = 9178;
@@ -9910,6 +9935,31 @@ namespace Opc.Ua
         public const uint RoleMappingRuleChangedAuditEventType = 17641;
 
         /// <summary>
+        /// The identifier for the DictionaryEntryType ObjectType.
+        /// </summary>
+        public const uint DictionaryEntryType = 17589;
+
+        /// <summary>
+        /// The identifier for the DictionaryFolderType ObjectType.
+        /// </summary>
+        public const uint DictionaryFolderType = 17591;
+
+        /// <summary>
+        /// The identifier for the IrdiDictionaryEntryType ObjectType.
+        /// </summary>
+        public const uint IrdiDictionaryEntryType = 17598;
+
+        /// <summary>
+        /// The identifier for the UriDictionaryEntryType ObjectType.
+        /// </summary>
+        public const uint UriDictionaryEntryType = 17600;
+
+        /// <summary>
+        /// The identifier for the BaseInterfaceType ObjectType.
+        /// </summary>
+        public const uint BaseInterfaceType = 17602;
+
+        /// <summary>
         /// The identifier for the ConditionType ObjectType.
         /// </summary>
         public const uint ConditionType = 2782;
@@ -10695,9 +10745,34 @@ namespace Opc.Ua
         public const uint HasHistoricalConfiguration = 56;
 
         /// <summary>
+        /// The identifier for the HasArgumentDescription ReferenceType.
+        /// </summary>
+        public const uint HasArgumentDescription = 129;
+
+        /// <summary>
+        /// The identifier for the HasOptionalInputArgumentDescription ReferenceType.
+        /// </summary>
+        public const uint HasOptionalInputArgumentDescription = 131;
+
+        /// <summary>
         /// The identifier for the HasGuard ReferenceType.
         /// </summary>
         public const uint HasGuard = 15112;
+
+        /// <summary>
+        /// The identifier for the HasDictionaryEntry ReferenceType.
+        /// </summary>
+        public const uint HasDictionaryEntry = 17597;
+
+        /// <summary>
+        /// The identifier for the HasInterface ReferenceType.
+        /// </summary>
+        public const uint HasInterface = 17603;
+
+        /// <summary>
+        /// The identifier for the HasAddIn ReferenceType.
+        /// </summary>
+        public const uint HasAddIn = 17604;
 
         /// <summary>
         /// The identifier for the HasTrueSubState ReferenceType.
@@ -33220,6 +33295,31 @@ namespace Opc.Ua
         public static readonly NodeId WellKnownRole_SecurityAdmin = new NodeId(Opc.Ua.Objects.WellKnownRole_SecurityAdmin);
 
         /// <summary>
+        /// The identifier for the DictionaryEntryType_DictionaryEntryName_Placeholder Object.
+        /// </summary>
+        public static readonly NodeId DictionaryEntryType_DictionaryEntryName_Placeholder = new NodeId(Opc.Ua.Objects.DictionaryEntryType_DictionaryEntryName_Placeholder);
+
+        /// <summary>
+        /// The identifier for the DictionaryFolderType_DictionaryFolderName_Placeholder Object.
+        /// </summary>
+        public static readonly NodeId DictionaryFolderType_DictionaryFolderName_Placeholder = new NodeId(Opc.Ua.Objects.DictionaryFolderType_DictionaryFolderName_Placeholder);
+
+        /// <summary>
+        /// The identifier for the DictionaryFolderType_DictionaryEntryName_Placeholder Object.
+        /// </summary>
+        public static readonly NodeId DictionaryFolderType_DictionaryEntryName_Placeholder = new NodeId(Opc.Ua.Objects.DictionaryFolderType_DictionaryEntryName_Placeholder);
+
+        /// <summary>
+        /// The identifier for the Dictionaries Object.
+        /// </summary>
+        public static readonly NodeId Dictionaries = new NodeId(Opc.Ua.Objects.Dictionaries);
+
+        /// <summary>
+        /// The identifier for the InterfaceTypes Object.
+        /// </summary>
+        public static readonly NodeId InterfaceTypes = new NodeId(Opc.Ua.Objects.InterfaceTypes);
+
+        /// <summary>
         /// The identifier for the AlarmConditionType_ShelvingState Object.
         /// </summary>
         public static readonly NodeId AlarmConditionType_ShelvingState = new NodeId(Opc.Ua.Objects.AlarmConditionType_ShelvingState);
@@ -38820,6 +38920,31 @@ namespace Opc.Ua
         public static readonly NodeId RoleMappingRuleChangedAuditEventType = new NodeId(Opc.Ua.ObjectTypes.RoleMappingRuleChangedAuditEventType);
 
         /// <summary>
+        /// The identifier for the DictionaryEntryType ObjectType.
+        /// </summary>
+        public static readonly NodeId DictionaryEntryType = new NodeId(Opc.Ua.ObjectTypes.DictionaryEntryType);
+
+        /// <summary>
+        /// The identifier for the DictionaryFolderType ObjectType.
+        /// </summary>
+        public static readonly NodeId DictionaryFolderType = new NodeId(Opc.Ua.ObjectTypes.DictionaryFolderType);
+
+        /// <summary>
+        /// The identifier for the IrdiDictionaryEntryType ObjectType.
+        /// </summary>
+        public static readonly NodeId IrdiDictionaryEntryType = new NodeId(Opc.Ua.ObjectTypes.IrdiDictionaryEntryType);
+
+        /// <summary>
+        /// The identifier for the UriDictionaryEntryType ObjectType.
+        /// </summary>
+        public static readonly NodeId UriDictionaryEntryType = new NodeId(Opc.Ua.ObjectTypes.UriDictionaryEntryType);
+
+        /// <summary>
+        /// The identifier for the BaseInterfaceType ObjectType.
+        /// </summary>
+        public static readonly NodeId BaseInterfaceType = new NodeId(Opc.Ua.ObjectTypes.BaseInterfaceType);
+
+        /// <summary>
         /// The identifier for the ConditionType ObjectType.
         /// </summary>
         public static readonly NodeId ConditionType = new NodeId(Opc.Ua.ObjectTypes.ConditionType);
@@ -39605,9 +39730,34 @@ namespace Opc.Ua
         public static readonly NodeId HasHistoricalConfiguration = new NodeId(Opc.Ua.ReferenceTypes.HasHistoricalConfiguration);
 
         /// <summary>
+        /// The identifier for the HasArgumentDescription ReferenceType.
+        /// </summary>
+        public static readonly NodeId HasArgumentDescription = new NodeId(Opc.Ua.ReferenceTypes.HasArgumentDescription);
+
+        /// <summary>
+        /// The identifier for the HasOptionalInputArgumentDescription ReferenceType.
+        /// </summary>
+        public static readonly NodeId HasOptionalInputArgumentDescription = new NodeId(Opc.Ua.ReferenceTypes.HasOptionalInputArgumentDescription);
+
+        /// <summary>
         /// The identifier for the HasGuard ReferenceType.
         /// </summary>
         public static readonly NodeId HasGuard = new NodeId(Opc.Ua.ReferenceTypes.HasGuard);
+
+        /// <summary>
+        /// The identifier for the HasDictionaryEntry ReferenceType.
+        /// </summary>
+        public static readonly NodeId HasDictionaryEntry = new NodeId(Opc.Ua.ReferenceTypes.HasDictionaryEntry);
+
+        /// <summary>
+        /// The identifier for the HasInterface ReferenceType.
+        /// </summary>
+        public static readonly NodeId HasInterface = new NodeId(Opc.Ua.ReferenceTypes.HasInterface);
+
+        /// <summary>
+        /// The identifier for the HasAddIn ReferenceType.
+        /// </summary>
+        public static readonly NodeId HasAddIn = new NodeId(Opc.Ua.ReferenceTypes.HasAddIn);
 
         /// <summary>
         /// The identifier for the HasTrueSubState ReferenceType.
@@ -58819,6 +58969,11 @@ namespace Opc.Ua
         public const string BaseHighLimit = "BaseHighLimit";
 
         /// <summary>
+        /// The BrowseName for the BaseInterfaceType component.
+        /// </summary>
+        public const string BaseInterfaceType = "BaseInterfaceType";
+
+        /// <summary>
         /// The BrowseName for the BaseLowLimit component.
         /// </summary>
         public const string BaseLowLimit = "BaseLowLimit";
@@ -60009,6 +60164,31 @@ namespace Opc.Ua
         public const string DialogState = "DialogState";
 
         /// <summary>
+        /// The BrowseName for the Dictionaries component.
+        /// </summary>
+        public const string Dictionaries = "Dictionaries";
+
+        /// <summary>
+        /// The BrowseName for the DictionaryEntryName_Placeholder component.
+        /// </summary>
+        public const string DictionaryEntryName_Placeholder = "<DictionaryEntryName>";
+
+        /// <summary>
+        /// The BrowseName for the DictionaryEntryType component.
+        /// </summary>
+        public const string DictionaryEntryType = "DictionaryEntryType";
+
+        /// <summary>
+        /// The BrowseName for the DictionaryFolderName_Placeholder component.
+        /// </summary>
+        public const string DictionaryFolderName_Placeholder = "<DictionaryFolderName>";
+
+        /// <summary>
+        /// The BrowseName for the DictionaryFolderType component.
+        /// </summary>
+        public const string DictionaryFolderType = "DictionaryFolderType";
+
+        /// <summary>
         /// The BrowseName for the DictionaryFragment component.
         /// </summary>
         public const string DictionaryFragment = "DictionaryFragment";
@@ -60624,9 +60804,19 @@ namespace Opc.Ua
         public const string HaltedToReady = "HaltedToReady";
 
         /// <summary>
+        /// The BrowseName for the HasAddIn component.
+        /// </summary>
+        public const string HasAddIn = "HasAddIn";
+
+        /// <summary>
         /// The BrowseName for the HasAlarmSuppressionGroup component.
         /// </summary>
         public const string HasAlarmSuppressionGroup = "HasAlarmSuppressionGroup";
+
+        /// <summary>
+        /// The BrowseName for the HasArgumentDescription component.
+        /// </summary>
+        public const string HasArgumentDescription = "HasArgumentDescription";
 
         /// <summary>
         /// The BrowseName for the HasCause component.
@@ -60662,6 +60852,11 @@ namespace Opc.Ua
         /// The BrowseName for the HasDescription component.
         /// </summary>
         public const string HasDescription = "HasDescription";
+
+        /// <summary>
+        /// The BrowseName for the HasDictionaryEntry component.
+        /// </summary>
+        public const string HasDictionaryEntry = "HasDictionaryEntry";
 
         /// <summary>
         /// The BrowseName for the HasEffect component.
@@ -60714,6 +60909,11 @@ namespace Opc.Ua
         public const string HasHistoricalConfiguration = "HasHistoricalConfiguration";
 
         /// <summary>
+        /// The BrowseName for the HasInterface component.
+        /// </summary>
+        public const string HasInterface = "HasInterface";
+
+        /// <summary>
         /// The BrowseName for the HasModellingRule component.
         /// </summary>
         public const string HasModellingRule = "HasModellingRule";
@@ -60722,6 +60922,11 @@ namespace Opc.Ua
         /// The BrowseName for the HasNotifier component.
         /// </summary>
         public const string HasNotifier = "HasNotifier";
+
+        /// <summary>
+        /// The BrowseName for the HasOptionalInputArgumentDescription component.
+        /// </summary>
+        public const string HasOptionalInputArgumentDescription = "HasOptionalInputArgumentDescription";
 
         /// <summary>
         /// The BrowseName for the HasOrderedComponent component.
@@ -61079,6 +61284,11 @@ namespace Opc.Ua
         public const string IntegerId = "IntegerId";
 
         /// <summary>
+        /// The BrowseName for the InterfaceTypes component.
+        /// </summary>
+        public const string InterfaceTypes = "InterfaceTypes";
+
+        /// <summary>
         /// The BrowseName for the IntermediateResult component.
         /// </summary>
         public const string IntermediateResult = "IntermediateResult";
@@ -61097,6 +61307,11 @@ namespace Opc.Ua
         /// The BrowseName for the InvocationCreationTime component.
         /// </summary>
         public const string InvocationCreationTime = "InvocationCreationTime";
+
+        /// <summary>
+        /// The BrowseName for the IrdiDictionaryEntryType component.
+        /// </summary>
+        public const string IrdiDictionaryEntryType = "IrdiDictionaryEntryType";
 
         /// <summary>
         /// The BrowseName for the IsDeleteModified component.
@@ -64492,6 +64707,11 @@ namespace Opc.Ua
         /// The BrowseName for the UpdateStructureDataDetails component.
         /// </summary>
         public const string UpdateStructureDataDetails = "UpdateStructureDataDetails";
+
+        /// <summary>
+        /// The BrowseName for the UriDictionaryEntryType component.
+        /// </summary>
+        public const string UriDictionaryEntryType = "UriDictionaryEntryType";
 
         /// <summary>
         /// The BrowseName for the UrisVersion component.

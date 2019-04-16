@@ -454,6 +454,20 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
+  <UAReferenceType NodeId="i=129" BrowseName="HasArgumentDescription">
+    <DisplayName>HasArgumentDescription</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
+    </References>
+    <InverseName>ArgumentDescriptionOf</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="i=131" BrowseName="HasOptionalInputArgumentDescription">
+    <DisplayName>HasOptionalInputArgumentDescription</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=129</Reference>
+    </References>
+    <InverseName>OptionalInputArgumentDescriptionOf</InverseName>
+  </UAReferenceType>
   <UAVariable NodeId="i=3068" BrowseName="NodeVersion" DataType="String" ValueRank="-2">
     <DisplayName>NodeVersion</DisplayName>
     <References>
