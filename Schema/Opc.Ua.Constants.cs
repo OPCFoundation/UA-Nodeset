@@ -4345,6 +4345,11 @@ namespace Opc.Ua
         public const uint Dictionaries = 17594;
 
         /// <summary>
+        /// The identifier for the InterfaceTypes Object.
+        /// </summary>
+        public const uint InterfaceTypes = 17708;
+
+        /// <summary>
         /// The identifier for the AlarmConditionType_ShelvingState Object.
         /// </summary>
         public const uint AlarmConditionType_ShelvingState = 9178;
@@ -33390,6 +33395,11 @@ namespace Opc.Ua
         public static readonly NodeId Dictionaries = new NodeId(Opc.Ua.Objects.Dictionaries);
 
         /// <summary>
+        /// The identifier for the InterfaceTypes Object.
+        /// </summary>
+        public static readonly NodeId InterfaceTypes = new NodeId(Opc.Ua.Objects.InterfaceTypes);
+
+        /// <summary>
         /// The identifier for the AlarmConditionType_ShelvingState Object.
         /// </summary>
         public static readonly NodeId AlarmConditionType_ShelvingState = new NodeId(Opc.Ua.Objects.AlarmConditionType_ShelvingState);
@@ -61417,6 +61427,11 @@ namespace Opc.Ua
         /// The BrowseName for the IntegerId component.
         /// </summary>
         public const string IntegerId = "IntegerId";
+
+        /// <summary>
+        /// The BrowseName for the InterfaceTypes component.
+        /// </summary>
+        public const string InterfaceTypes = "InterfaceTypes";
 
         /// <summary>
         /// The BrowseName for the IntermediateResult component.

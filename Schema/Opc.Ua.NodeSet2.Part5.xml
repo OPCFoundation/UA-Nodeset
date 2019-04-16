@@ -7924,13 +7924,13 @@
     </References>
     <InverseName>GuardOf</InverseName>
   </UAReferenceType>
-  <UAVariableType NodeId="i=15113" BrowseName="GuardVariableType" DataType="LocalizedText" ValueRank="-2">
+  <UAVariableType NodeId="i=15113" BrowseName="GuardVariableType" DataType="LocalizedText">
     <DisplayName>GuardVariableType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
     </References>
   </UAVariableType>
-  <UAVariableType NodeId="i=15128" BrowseName="ExpressionGuardVariableType" DataType="LocalizedText" ValueRank="-2">
+  <UAVariableType NodeId="i=15128" BrowseName="ExpressionGuardVariableType" DataType="LocalizedText">
     <DisplayName>ExpressionGuardVariableType</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=15129</Reference>
@@ -7945,7 +7945,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=15128</Reference>
     </References>
   </UAVariable>
-  <UAVariableType NodeId="i=15317" BrowseName="ElseGuardVariableType" DataType="LocalizedText" ValueRank="-2">
+  <UAVariableType NodeId="i=15317" BrowseName="ElseGuardVariableType" DataType="LocalizedText">
     <DisplayName>ElseGuardVariableType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15113</Reference>
@@ -12631,6 +12631,14 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
+  <UAObject NodeId="i=17708" BrowseName="InterfaceTypes">
+    <DisplayName>InterfaceTypes</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes">i=17602</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">i=86</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
   <UAReferenceType NodeId="i=17603" BrowseName="HasInterface" ReleaseStatus="Draft">
     <DisplayName>HasInterface</DisplayName>
     <References>

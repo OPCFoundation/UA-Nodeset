@@ -1,34 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<!--
- * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
- *
- * OPC Foundation MIT License 1.00
- * 
- * Permission is hereby granted, free of charge, to any person
- * obtaining a copy of this software and associated documentation
- * files (the "Software"), to deal in the Software without
- * restriction, including without limitation the rights to use,
- * copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the
- * Software is furnished to do so, subject to the following
- * conditions:
- * 
- * The above copyright notice and this permission notice shall be
- * included in all copies or substantial portions of the Software.
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
- * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
- * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
- * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
- * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
- * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
- * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
- * OTHER DEALINGS IN THE SOFTWARE.
- *
- * The complete license agreement can be found here:
- * http://opcfoundation.org/License/MIT/1.00/
--->
-
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2019-04-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2019-04-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
     <Model ModelUri="http://opcfoundation.org/UA/" Version="1.05" PublicationDate="2019-04-15T00:00:00Z" />
   </Models>
@@ -371,6 +342,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=44</Reference>
     </References>
+    <Documentation>[Amendment 3](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment3/#11.7)</Documentation>
     <InverseName>ComponentOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="i=48" BrowseName="HasNotifier">
@@ -812,6 +784,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
+    <Documentation>[Amendment 3](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment3/#11.18)</Documentation>
     <InverseName>ArgumentDescriptionOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="i=131" BrowseName="HasOptionalInputArgumentDescription">
@@ -819,6 +792,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=129</Reference>
     </References>
+    <Documentation>[Amendment 3](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment3/#11.19)</Documentation>
     <InverseName>OptionalInputArgumentDescriptionOf</InverseName>
   </UAReferenceType>
   <UAObject NodeId="i=15957" BrowseName="0:http://opcfoundation.org/UA/" SymbolicName="OPCUANamespaceMetadata">
@@ -8610,26 +8584,30 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2307</Reference>
     </References>
+    <Documentation>[Amendment 2](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment2/#B.6.2)</Documentation>
   </UAObjectType>
   <UAReferenceType NodeId="i=15112" BrowseName="HasGuard">
     <DisplayName>HasGuard</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
+    <Documentation>[Amendment 2](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment2/#B.6.3)</Documentation>
     <InverseName>GuardOf</InverseName>
   </UAReferenceType>
-  <UAVariableType NodeId="i=15113" BrowseName="GuardVariableType" DataType="LocalizedText" ValueRank="-2">
+  <UAVariableType NodeId="i=15113" BrowseName="GuardVariableType" DataType="LocalizedText">
     <DisplayName>GuardVariableType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
     </References>
+    <Documentation>[Amendment 2](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment2/#B.6.4)</Documentation>
   </UAVariableType>
-  <UAVariableType NodeId="i=15128" BrowseName="ExpressionGuardVariableType" DataType="LocalizedText" ValueRank="-2">
+  <UAVariableType NodeId="i=15128" BrowseName="ExpressionGuardVariableType" DataType="LocalizedText">
     <DisplayName>ExpressionGuardVariableType</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=15129</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15113</Reference>
     </References>
+    <Documentation>[Amendment 2](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment2/#B.6.5)</Documentation>
   </UAVariableType>
   <UAVariable NodeId="i=15129" BrowseName="Expression" ParentNodeId="i=15128" DataType="i=586">
     <DisplayName>Expression</DisplayName>
@@ -8639,11 +8617,12 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=15128</Reference>
     </References>
   </UAVariable>
-  <UAVariableType NodeId="i=15317" BrowseName="ElseGuardVariableType" DataType="LocalizedText" ValueRank="-2">
+  <UAVariableType NodeId="i=15317" BrowseName="ElseGuardVariableType" DataType="LocalizedText">
     <DisplayName>ElseGuardVariableType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15113</Reference>
     </References>
+    <Documentation>[Amendment 2](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment2/#B.6.6)</Documentation>
   </UAVariableType>
   <UAObjectType NodeId="i=2311" BrowseName="TransitionEventType" IsAbstract="true">
     <DisplayName>TransitionEventType</DisplayName>
@@ -13260,6 +13239,7 @@
       <Reference ReferenceType="HasComponent">i=17590</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
+    <Documentation>[Amendment 5](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment5/#G.2.3)</Documentation>
   </UAObjectType>
   <UAObject NodeId="i=17590" BrowseName="&lt;DictionaryEntryName&gt;" SymbolicName="DictionaryEntryName_Placeholder" ParentNodeId="i=17589">
     <DisplayName>&lt;DictionaryEntryName&gt;</DisplayName>
@@ -13276,6 +13256,7 @@
       <Reference ReferenceType="HasComponent">i=17593</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
     </References>
+    <Documentation>[Amendment 5](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment5/#G.2.4)</Documentation>
   </UAObjectType>
   <UAObject NodeId="i=17592" BrowseName="&lt;DictionaryFolderName&gt;" SymbolicName="DictionaryFolderName_Placeholder" ParentNodeId="i=17591">
     <DisplayName>&lt;DictionaryFolderName&gt;</DisplayName>
@@ -13299,12 +13280,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2253</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=17591</Reference>
     </References>
+    <Documentation>[Amendment 5](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment5/#G.2.2)</Documentation>
   </UAObject>
   <UAReferenceType NodeId="i=17597" BrowseName="HasDictionaryEntry" ReleaseStatus="Draft">
     <DisplayName>HasDictionaryEntry</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
+    <Documentation>[Amendment 5](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment5/#G.2.5)</Documentation>
     <InverseName>DictionaryEntryOf</InverseName>
   </UAReferenceType>
   <UAObjectType NodeId="i=17598" BrowseName="IrdiDictionaryEntryType" ReleaseStatus="Draft">
@@ -13312,24 +13295,37 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=17589</Reference>
     </References>
+    <Documentation>[Amendment 5](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment5/#G.3)</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="i=17600" BrowseName="UriDictionaryEntryType" ReleaseStatus="Draft">
     <DisplayName>UriDictionaryEntryType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=17589</Reference>
     </References>
+    <Documentation>[Amendment 5](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment5/#G.4)</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="i=17602" BrowseName="BaseInterfaceType" ReleaseStatus="Draft" IsAbstract="true">
     <DisplayName>BaseInterfaceType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
+    <Documentation>[Amendment 7](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment7/#6.9)</Documentation>
   </UAObjectType>
+  <UAObject NodeId="i=17708" BrowseName="InterfaceTypes">
+    <DisplayName>InterfaceTypes</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes">i=17602</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">i=86</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+    <Documentation>[Amendment 7](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment7/#8.2.11)</Documentation>
+  </UAObject>
   <UAReferenceType NodeId="i=17603" BrowseName="HasInterface" ReleaseStatus="Draft">
     <DisplayName>HasInterface</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
+    <Documentation>[Amendment 7](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment7/#11.20)</Documentation>
     <InverseName>InterfaceOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="i=17604" BrowseName="HasAddIn" ReleaseStatus="Draft">
@@ -13337,6 +13333,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
+    <Documentation>[Amendment 7](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment7/#11.21)</Documentation>
     <InverseName>AddInOf</InverseName>
   </UAReferenceType>
   <UAVariableType NodeId="i=2365" BrowseName="DataItemType" ValueRank="-2">
@@ -13371,6 +13368,7 @@
       <Reference ReferenceType="HasProperty">i=17569</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2365</Reference>
     </References>
+    <Documentation>[Amendment 1](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment1/#5.3.2.3)</Documentation>
   </UAVariableType>
   <UAVariable NodeId="i=17567" BrowseName="InstrumentRange" ParentNodeId="i=15318" DataType="i=884">
     <DisplayName>InstrumentRange</DisplayName>
@@ -13402,6 +13400,7 @@
       <Reference ReferenceType="HasProperty">i=2369</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15318</Reference>
     </References>
+    <Documentation>[Amendment 1](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment1/#5.3.2.2)</Documentation>
   </UAVariableType>
   <UAVariable NodeId="i=2369" BrowseName="EURange" ParentNodeId="i=2368" DataType="i=884">
     <DisplayName>EURange</DisplayName>
@@ -13417,6 +13416,7 @@
       <Reference ReferenceType="HasProperty">i=17502</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15318</Reference>
     </References>
+    <Documentation>[Amendment 1](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment1/#5.3.2.4)</Documentation>
   </UAVariableType>
   <UAVariable NodeId="i=17502" BrowseName="EngineeringUnits" ParentNodeId="i=17497" DataType="i=887">
     <DisplayName>EngineeringUnits</DisplayName>
@@ -13432,6 +13432,7 @@
       <Reference ReferenceType="HasProperty">i=17575</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2368</Reference>
     </References>
+    <Documentation>[Amendment 1](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment1/#5.3.2.5)</Documentation>
   </UAVariableType>
   <UAVariable NodeId="i=17575" BrowseName="EngineeringUnits" ParentNodeId="i=17570" DataType="i=887">
     <DisplayName>EngineeringUnits</DisplayName>
@@ -39986,6 +39987,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Documentation>[Amendment 2](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment2/#B.6.7)</Documentation>
     <Definition Name="ContentFilter">
       <Field Name="Elements" DataType="i=583" ValueRank="1" />
     </Definition>
@@ -40655,6 +40657,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Documentation>[Amendment 3](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment3/#5.11.2.2)</Documentation>
     <Definition Name="CallMethodRequest">
       <Field Name="ObjectId" DataType="i=17" />
       <Field Name="MethodId" DataType="i=17" />
@@ -40666,6 +40669,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Documentation>[Amendment 3](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment3/#5.11.2.2)</Documentation>
     <Definition Name="CallMethodResult">
       <Field Name="StatusCode" DataType="i=19" />
       <Field Name="InputArgumentResults" DataType="i=19" ValueRank="1" />
@@ -40678,6 +40682,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Documentation>[Amendment 3](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment3/#5.11.2.2)</Documentation>
     <Definition Name="CallRequest">
       <Field Name="RequestHeader" DataType="i=389" />
       <Field Name="MethodsToCall" DataType="i=704" ValueRank="1" />
@@ -40688,6 +40693,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Documentation>[Amendment 3](https://opcfoundation.github.io/UA-TypeRepository/Core/docs/Amendment3/#5.11.2.2)</Documentation>
     <Definition Name="CallResponse">
       <Field Name="ResponseHeader" DataType="i=392" />
       <Field Name="Results" DataType="i=707" ValueRank="1" />

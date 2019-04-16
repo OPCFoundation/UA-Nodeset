@@ -687,6 +687,7 @@
 #define OpcUa_BrowseName_Int64 "Int64"
 #define OpcUa_BrowseName_Integer "Integer"
 #define OpcUa_BrowseName_IntegerId "IntegerId"
+#define OpcUa_BrowseName_InterfaceTypes "InterfaceTypes"
 #define OpcUa_BrowseName_IntermediateResult "IntermediateResult"
 #define OpcUa_BrowseName_InvalidHostname "InvalidHostname"
 #define OpcUa_BrowseName_InvalidUri "InvalidUri"

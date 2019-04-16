@@ -898,6 +898,7 @@
 #define OpcUaId_DictionaryFolderType_DictionaryFolderName_Placeholder 17592
 #define OpcUaId_DictionaryFolderType_DictionaryEntryName_Placeholder 17593
 #define OpcUaId_Dictionaries 17594
+#define OpcUaId_InterfaceTypes 17708
 #define OpcUaId_AlarmConditionType_ShelvingState 9178
 #define OpcUaId_AlarmConditionType_FirstInGroup 16398
 #define OpcUaId_AlarmConditionType_AlarmGroup_Placeholder 16399

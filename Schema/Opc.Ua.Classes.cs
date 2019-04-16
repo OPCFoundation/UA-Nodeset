@@ -27878,8 +27878,8 @@ namespace Opc.Ua
 
         #region Initialization String
         private const string InitializationString =
-           "//////////8VYIEAAgAAAAAAGQAAAEd1YXJkVmFyaWFibGVUeXBlSW5zdGFuY2UBAAk7AQAJOwAVAQH/" +
-           "////AAAAAA==";
+           "//////////8VYIkAAgAAAAAAGQAAAEd1YXJkVmFyaWFibGVUeXBlSW5zdGFuY2UBAAk7AQAJOwAV////" +
+           "/wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -27966,9 +27966,9 @@ namespace Opc.Ua
 
         #region Initialization String
         private const string InitializationString =
-           "//////////8VYIEAAgAAAAAAIwAAAEV4cHJlc3Npb25HdWFyZFZhcmlhYmxlVHlwZUluc3RhbmNlAQAY" +
-           "OwEAGDsAFQEB/////wEAAAAVYIkKAgAAAAAACgAAAEV4cHJlc3Npb24BABk7AC4ARBk7AAABAEoC////" +
-           "/wEB/////wAAAAA=";
+           "//////////8VYIkAAgAAAAAAIwAAAEV4cHJlc3Npb25HdWFyZFZhcmlhYmxlVHlwZUluc3RhbmNlAQAY" +
+           "OwEAGDsAFf////8BAf////8BAAAAFWCJCgIAAAAAAAoAAABFeHByZXNzaW9uAQAZOwAuAEQZOwAAAQBK" +
+           "Av////8BAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -28138,8 +28138,8 @@ namespace Opc.Ua
 
         #region Initialization String
         private const string InitializationString =
-           "//////////8VYIEAAgAAAAAAHQAAAEVsc2VHdWFyZFZhcmlhYmxlVHlwZUluc3RhbmNlAQDVOwEA1TsA" +
-           "FQEB/////wAAAAA=";
+           "//////////8VYIkAAgAAAAAAHQAAAEVsc2VHdWFyZFZhcmlhYmxlVHlwZUluc3RhbmNlAQDVOwEA1TsA" +
+           "Ff////8BAf////8AAAAA";
         #endregion
         #endif
         #endregion
