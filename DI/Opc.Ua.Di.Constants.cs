@@ -58,12 +58,12 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the TransferResultErrorDataType DataType.
         /// </summary>
-        public const uint TransferResultErrorDataType = 15893;
+        public const uint TransferResultErrorDataType = 15891;
 
         /// <summary>
         /// The identifier for the TransferResultDataDataType DataType.
         /// </summary>
-        public const uint TransferResultDataDataType = 15894;
+        public const uint TransferResultDataDataType = 15892;
 
         /// <summary>
         /// The identifier for the ParameterResultDataType DataType.
@@ -138,22 +138,22 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the ComponentType_Lock_InitLock Method.
         /// </summary>
-        public const uint ComponentType_Lock_InitLock = 15074;
+        public const uint ComponentType_Lock_InitLock = 15076;
 
         /// <summary>
         /// The identifier for the ComponentType_Lock_RenewLock Method.
         /// </summary>
-        public const uint ComponentType_Lock_RenewLock = 15077;
+        public const uint ComponentType_Lock_RenewLock = 15079;
 
         /// <summary>
         /// The identifier for the ComponentType_Lock_ExitLock Method.
         /// </summary>
-        public const uint ComponentType_Lock_ExitLock = 15079;
+        public const uint ComponentType_Lock_ExitLock = 15081;
 
         /// <summary>
         /// The identifier for the ComponentType_Lock_BreakLock Method.
         /// </summary>
-        public const uint ComponentType_Lock_BreakLock = 15081;
+        public const uint ComponentType_Lock_BreakLock = 15083;
 
         /// <summary>
         /// The identifier for the DeviceType_Lock_InitLock Method.
@@ -198,22 +198,22 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the SoftwareType_Lock_InitLock Method.
         /// </summary>
-        public const uint SoftwareType_Lock_InitLock = 15114;
+        public const uint SoftwareType_Lock_InitLock = 15118;
 
         /// <summary>
         /// The identifier for the SoftwareType_Lock_RenewLock Method.
         /// </summary>
-        public const uint SoftwareType_Lock_RenewLock = 15117;
+        public const uint SoftwareType_Lock_RenewLock = 15121;
 
         /// <summary>
         /// The identifier for the SoftwareType_Lock_ExitLock Method.
         /// </summary>
-        public const uint SoftwareType_Lock_ExitLock = 15119;
+        public const uint SoftwareType_Lock_ExitLock = 15123;
 
         /// <summary>
         /// The identifier for the SoftwareType_Lock_BreakLock Method.
         /// </summary>
-        public const uint SoftwareType_Lock_BreakLock = 15121;
+        public const uint SoftwareType_Lock_BreakLock = 15125;
 
         /// <summary>
         /// The identifier for the BlockType_Lock_InitLock Method.
@@ -238,77 +238,77 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_ShelvingState_TimedShelve = 15249;
+        public const uint DeviceHealthDiagnosticAlarmType_ShelvingState_TimedShelve = 15247;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_ShelvingState_Unshelve Method.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_ShelvingState_Unshelve = 15251;
+        public const uint DeviceHealthDiagnosticAlarmType_ShelvingState_Unshelve = 15249;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_ShelvingState_OneShotShelve Method.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_ShelvingState_OneShotShelve = 15252;
+        public const uint DeviceHealthDiagnosticAlarmType_ShelvingState_OneShotShelve = 15250;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public const uint FailureAlarmType_ShelvingState_TimedShelve = 15398;
+        public const uint FailureAlarmType_ShelvingState_TimedShelve = 15396;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_ShelvingState_Unshelve Method.
         /// </summary>
-        public const uint FailureAlarmType_ShelvingState_Unshelve = 15400;
+        public const uint FailureAlarmType_ShelvingState_Unshelve = 15398;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_ShelvingState_OneShotShelve Method.
         /// </summary>
-        public const uint FailureAlarmType_ShelvingState_OneShotShelve = 15401;
+        public const uint FailureAlarmType_ShelvingState_OneShotShelve = 15399;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public const uint CheckFunctionAlarmType_ShelvingState_TimedShelve = 15547;
+        public const uint CheckFunctionAlarmType_ShelvingState_TimedShelve = 15545;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_ShelvingState_Unshelve Method.
         /// </summary>
-        public const uint CheckFunctionAlarmType_ShelvingState_Unshelve = 15549;
+        public const uint CheckFunctionAlarmType_ShelvingState_Unshelve = 15547;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_ShelvingState_OneShotShelve Method.
         /// </summary>
-        public const uint CheckFunctionAlarmType_ShelvingState_OneShotShelve = 15550;
+        public const uint CheckFunctionAlarmType_ShelvingState_OneShotShelve = 15548;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public const uint OffSpecAlarmType_ShelvingState_TimedShelve = 15696;
+        public const uint OffSpecAlarmType_ShelvingState_TimedShelve = 15694;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_ShelvingState_Unshelve Method.
         /// </summary>
-        public const uint OffSpecAlarmType_ShelvingState_Unshelve = 15698;
+        public const uint OffSpecAlarmType_ShelvingState_Unshelve = 15696;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_ShelvingState_OneShotShelve Method.
         /// </summary>
-        public const uint OffSpecAlarmType_ShelvingState_OneShotShelve = 15699;
+        public const uint OffSpecAlarmType_ShelvingState_OneShotShelve = 15697;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_ShelvingState_TimedShelve Method.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_ShelvingState_TimedShelve = 15845;
+        public const uint MaintenanceRequiredAlarmType_ShelvingState_TimedShelve = 15843;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_ShelvingState_Unshelve Method.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_ShelvingState_Unshelve = 15847;
+        public const uint MaintenanceRequiredAlarmType_ShelvingState_Unshelve = 15845;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_ShelvingState_OneShotShelve Method.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_ShelvingState_OneShotShelve = 15848;
+        public const uint MaintenanceRequiredAlarmType_ShelvingState_OneShotShelve = 15846;
 
         /// <summary>
         /// The identifier for the NetworkType_CPIdentifier_Lock_InitLock Method.
@@ -448,7 +448,7 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the DeviceFeatures Object.
         /// </summary>
-        public const uint DeviceFeatures = 15136;
+        public const uint DeviceFeatures = 15034;
 
         /// <summary>
         /// The identifier for the NetworkSet Object.
@@ -488,22 +488,22 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the ISupportInfoType_DeviceTypeImage Object.
         /// </summary>
-        public const uint ISupportInfoType_DeviceTypeImage = 15052;
+        public const uint ISupportInfoType_DeviceTypeImage = 15054;
 
         /// <summary>
         /// The identifier for the ISupportInfoType_Documentation Object.
         /// </summary>
-        public const uint ISupportInfoType_Documentation = 15054;
+        public const uint ISupportInfoType_Documentation = 15056;
 
         /// <summary>
         /// The identifier for the ISupportInfoType_ProtocolSupport Object.
         /// </summary>
-        public const uint ISupportInfoType_ProtocolSupport = 15056;
+        public const uint ISupportInfoType_ProtocolSupport = 15058;
 
         /// <summary>
         /// The identifier for the ISupportInfoType_ImageSet Object.
         /// </summary>
-        public const uint ISupportInfoType_ImageSet = 15058;
+        public const uint ISupportInfoType_ImageSet = 15060;
 
         /// <summary>
         /// The identifier for the DeviceType_CPIdentifier Object.
@@ -578,7 +578,7 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the ConnectionPointType_ProfileIdentifier Object.
         /// </summary>
-        public const uint ConnectionPointType_ProfileIdentifier = 15891;
+        public const uint ConnectionPointType_ProfileIdentifier = 15889;
 
         /// <summary>
         /// The identifier for the ConnectionPointType_NetworkIdentifier Object.
@@ -593,12 +593,12 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the TransferResultErrorDataType_Encoding_DefaultBinary Object.
         /// </summary>
-        public const uint TransferResultErrorDataType_Encoding_DefaultBinary = 15896;
+        public const uint TransferResultErrorDataType_Encoding_DefaultBinary = 15894;
 
         /// <summary>
         /// The identifier for the TransferResultDataDataType_Encoding_DefaultBinary Object.
         /// </summary>
-        public const uint TransferResultDataDataType_Encoding_DefaultBinary = 15897;
+        public const uint TransferResultDataDataType_Encoding_DefaultBinary = 15895;
 
         /// <summary>
         /// The identifier for the ParameterResultDataType_Encoding_DefaultBinary Object.
@@ -613,12 +613,12 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the TransferResultErrorDataType_Encoding_DefaultXml Object.
         /// </summary>
-        public const uint TransferResultErrorDataType_Encoding_DefaultXml = 15904;
+        public const uint TransferResultErrorDataType_Encoding_DefaultXml = 15902;
 
         /// <summary>
         /// The identifier for the TransferResultDataDataType_Encoding_DefaultXml Object.
         /// </summary>
-        public const uint TransferResultDataDataType_Encoding_DefaultXml = 15905;
+        public const uint TransferResultDataDataType_Encoding_DefaultXml = 15903;
 
         /// <summary>
         /// The identifier for the ParameterResultDataType_Encoding_DefaultXml Object.
@@ -633,12 +633,12 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the TransferResultErrorDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint TransferResultErrorDataType_Encoding_DefaultJson = 15912;
+        public const uint TransferResultErrorDataType_Encoding_DefaultJson = 15910;
 
         /// <summary>
         /// The identifier for the TransferResultDataDataType_Encoding_DefaultJson Object.
         /// </summary>
-        public const uint TransferResultDataDataType_Encoding_DefaultJson = 15913;
+        public const uint TransferResultDataDataType_Encoding_DefaultJson = 15911;
 
         /// <summary>
         /// The identifier for the ParameterResultDataType_Encoding_DefaultJson Object.
@@ -663,27 +663,27 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the IVendorNameplateType ObjectType.
         /// </summary>
-        public const uint IVendorNameplateType = 15034;
+        public const uint IVendorNameplateType = 15036;
 
         /// <summary>
         /// The identifier for the ITagNameplateType ObjectType.
         /// </summary>
-        public const uint ITagNameplateType = 15046;
+        public const uint ITagNameplateType = 15048;
 
         /// <summary>
         /// The identifier for the IDeviceHealthType ObjectType.
         /// </summary>
-        public const uint IDeviceHealthType = 15049;
+        public const uint IDeviceHealthType = 15051;
 
         /// <summary>
         /// The identifier for the ISupportInfoType ObjectType.
         /// </summary>
-        public const uint ISupportInfoType = 15051;
+        public const uint ISupportInfoType = 15053;
 
         /// <summary>
         /// The identifier for the ComponentType ObjectType.
         /// </summary>
-        public const uint ComponentType = 15060;
+        public const uint ComponentType = 15062;
 
         /// <summary>
         /// The identifier for the DeviceType ObjectType.
@@ -693,7 +693,7 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the SoftwareType ObjectType.
         /// </summary>
-        public const uint SoftwareType = 15100;
+        public const uint SoftwareType = 15104;
 
         /// <summary>
         /// The identifier for the BlockType ObjectType.
@@ -703,27 +703,27 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType ObjectType.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType = 15143;
+        public const uint DeviceHealthDiagnosticAlarmType = 15141;
 
         /// <summary>
         /// The identifier for the FailureAlarmType ObjectType.
         /// </summary>
-        public const uint FailureAlarmType = 15292;
+        public const uint FailureAlarmType = 15290;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType ObjectType.
         /// </summary>
-        public const uint CheckFunctionAlarmType = 15441;
+        public const uint CheckFunctionAlarmType = 15439;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType ObjectType.
         /// </summary>
-        public const uint OffSpecAlarmType = 15590;
+        public const uint OffSpecAlarmType = 15588;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType ObjectType.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType = 15739;
+        public const uint MaintenanceRequiredAlarmType = 15737;
 
         /// <summary>
         /// The identifier for the ConfigurableObjectType ObjectType.
@@ -923,7 +923,7 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the TopologyElementType_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
-        public const uint TopologyElementType_Lock_DefaultInstanceBrowseName = 15137;
+        public const uint TopologyElementType_Lock_DefaultInstanceBrowseName = 15035;
 
         /// <summary>
         /// The identifier for the TopologyElementType_Lock_LockingClient Variable.
@@ -968,207 +968,207 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the IVendorNameplateType_Manufacturer Variable.
         /// </summary>
-        public const uint IVendorNameplateType_Manufacturer = 15035;
+        public const uint IVendorNameplateType_Manufacturer = 15037;
 
         /// <summary>
         /// The identifier for the IVendorNameplateType_ManufacturerUri Variable.
         /// </summary>
-        public const uint IVendorNameplateType_ManufacturerUri = 15036;
+        public const uint IVendorNameplateType_ManufacturerUri = 15038;
 
         /// <summary>
         /// The identifier for the IVendorNameplateType_Model Variable.
         /// </summary>
-        public const uint IVendorNameplateType_Model = 15037;
+        public const uint IVendorNameplateType_Model = 15039;
 
         /// <summary>
         /// The identifier for the IVendorNameplateType_SerialNumber Variable.
         /// </summary>
-        public const uint IVendorNameplateType_SerialNumber = 15038;
+        public const uint IVendorNameplateType_SerialNumber = 15040;
 
         /// <summary>
         /// The identifier for the IVendorNameplateType_HardwareRevision Variable.
         /// </summary>
-        public const uint IVendorNameplateType_HardwareRevision = 15039;
+        public const uint IVendorNameplateType_HardwareRevision = 15041;
 
         /// <summary>
         /// The identifier for the IVendorNameplateType_SoftwareRevision Variable.
         /// </summary>
-        public const uint IVendorNameplateType_SoftwareRevision = 15040;
+        public const uint IVendorNameplateType_SoftwareRevision = 15042;
 
         /// <summary>
         /// The identifier for the IVendorNameplateType_DeviceRevision Variable.
         /// </summary>
-        public const uint IVendorNameplateType_DeviceRevision = 15041;
+        public const uint IVendorNameplateType_DeviceRevision = 15043;
 
         /// <summary>
         /// The identifier for the IVendorNameplateType_RevisionCounter Variable.
         /// </summary>
-        public const uint IVendorNameplateType_RevisionCounter = 15042;
+        public const uint IVendorNameplateType_RevisionCounter = 15044;
 
         /// <summary>
         /// The identifier for the IVendorNameplateType_ProductCode Variable.
         /// </summary>
-        public const uint IVendorNameplateType_ProductCode = 15043;
+        public const uint IVendorNameplateType_ProductCode = 15045;
 
         /// <summary>
         /// The identifier for the IVendorNameplateType_DeviceManual Variable.
         /// </summary>
-        public const uint IVendorNameplateType_DeviceManual = 15044;
+        public const uint IVendorNameplateType_DeviceManual = 15046;
 
         /// <summary>
         /// The identifier for the IVendorNameplateType_DeviceClass Variable.
         /// </summary>
-        public const uint IVendorNameplateType_DeviceClass = 15045;
+        public const uint IVendorNameplateType_DeviceClass = 15047;
 
         /// <summary>
         /// The identifier for the ITagNameplateType_AssetId Variable.
         /// </summary>
-        public const uint ITagNameplateType_AssetId = 15047;
+        public const uint ITagNameplateType_AssetId = 15049;
 
         /// <summary>
         /// The identifier for the ITagNameplateType_ComponentName Variable.
         /// </summary>
-        public const uint ITagNameplateType_ComponentName = 15048;
+        public const uint ITagNameplateType_ComponentName = 15050;
 
         /// <summary>
         /// The identifier for the IDeviceHealthType_DeviceHealth Variable.
         /// </summary>
-        public const uint IDeviceHealthType_DeviceHealth = 15096;
+        public const uint IDeviceHealthType_DeviceHealth = 15052;
 
         /// <summary>
         /// The identifier for the ISupportInfoType_DeviceTypeImage_ImageIdentifier Variable.
         /// </summary>
-        public const uint ISupportInfoType_DeviceTypeImage_ImageIdentifier = 15053;
+        public const uint ISupportInfoType_DeviceTypeImage_ImageIdentifier = 15055;
 
         /// <summary>
         /// The identifier for the ISupportInfoType_Documentation_DocumentIdentifier Variable.
         /// </summary>
-        public const uint ISupportInfoType_Documentation_DocumentIdentifier = 15055;
+        public const uint ISupportInfoType_Documentation_DocumentIdentifier = 15057;
 
         /// <summary>
         /// The identifier for the ISupportInfoType_ProtocolSupport_ProtocolSupportIdentifier Variable.
         /// </summary>
-        public const uint ISupportInfoType_ProtocolSupport_ProtocolSupportIdentifier = 15057;
+        public const uint ISupportInfoType_ProtocolSupport_ProtocolSupportIdentifier = 15059;
 
         /// <summary>
         /// The identifier for the ISupportInfoType_ImageSet_ImageIdentifier Variable.
         /// </summary>
-        public const uint ISupportInfoType_ImageSet_ImageIdentifier = 15059;
+        public const uint ISupportInfoType_ImageSet_ImageIdentifier = 15061;
 
         /// <summary>
         /// The identifier for the ComponentType_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
-        public const uint ComponentType_Lock_DefaultInstanceBrowseName = 15138;
+        public const uint ComponentType_Lock_DefaultInstanceBrowseName = 15072;
 
         /// <summary>
         /// The identifier for the ComponentType_Lock_LockingClient Variable.
         /// </summary>
-        public const uint ComponentType_Lock_LockingClient = 15071;
+        public const uint ComponentType_Lock_LockingClient = 15073;
 
         /// <summary>
         /// The identifier for the ComponentType_Lock_LockingUser Variable.
         /// </summary>
-        public const uint ComponentType_Lock_LockingUser = 15072;
+        public const uint ComponentType_Lock_LockingUser = 15074;
 
         /// <summary>
         /// The identifier for the ComponentType_Lock_RemainingLockTime Variable.
         /// </summary>
-        public const uint ComponentType_Lock_RemainingLockTime = 15073;
+        public const uint ComponentType_Lock_RemainingLockTime = 15075;
 
         /// <summary>
         /// The identifier for the ComponentType_Lock_InitLock_InputArguments Variable.
         /// </summary>
-        public const uint ComponentType_Lock_InitLock_InputArguments = 15075;
+        public const uint ComponentType_Lock_InitLock_InputArguments = 15077;
 
         /// <summary>
         /// The identifier for the ComponentType_Lock_InitLock_OutputArguments Variable.
         /// </summary>
-        public const uint ComponentType_Lock_InitLock_OutputArguments = 15076;
+        public const uint ComponentType_Lock_InitLock_OutputArguments = 15078;
 
         /// <summary>
         /// The identifier for the ComponentType_Lock_RenewLock_OutputArguments Variable.
         /// </summary>
-        public const uint ComponentType_Lock_RenewLock_OutputArguments = 15078;
+        public const uint ComponentType_Lock_RenewLock_OutputArguments = 15080;
 
         /// <summary>
         /// The identifier for the ComponentType_Lock_ExitLock_OutputArguments Variable.
         /// </summary>
-        public const uint ComponentType_Lock_ExitLock_OutputArguments = 15080;
+        public const uint ComponentType_Lock_ExitLock_OutputArguments = 15082;
 
         /// <summary>
         /// The identifier for the ComponentType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
-        public const uint ComponentType_Lock_BreakLock_OutputArguments = 15082;
+        public const uint ComponentType_Lock_BreakLock_OutputArguments = 15084;
 
         /// <summary>
         /// The identifier for the ComponentType_Manufacturer Variable.
         /// </summary>
-        public const uint ComponentType_Manufacturer = 15083;
+        public const uint ComponentType_Manufacturer = 15085;
 
         /// <summary>
         /// The identifier for the ComponentType_ManufacturerUri Variable.
         /// </summary>
-        public const uint ComponentType_ManufacturerUri = 15084;
+        public const uint ComponentType_ManufacturerUri = 15086;
 
         /// <summary>
         /// The identifier for the ComponentType_Model Variable.
         /// </summary>
-        public const uint ComponentType_Model = 15085;
+        public const uint ComponentType_Model = 15087;
 
         /// <summary>
         /// The identifier for the ComponentType_SerialNumber Variable.
         /// </summary>
-        public const uint ComponentType_SerialNumber = 15086;
+        public const uint ComponentType_SerialNumber = 15088;
 
         /// <summary>
         /// The identifier for the ComponentType_HardwareRevision Variable.
         /// </summary>
-        public const uint ComponentType_HardwareRevision = 15087;
+        public const uint ComponentType_HardwareRevision = 15089;
 
         /// <summary>
         /// The identifier for the ComponentType_SoftwareRevision Variable.
         /// </summary>
-        public const uint ComponentType_SoftwareRevision = 15088;
+        public const uint ComponentType_SoftwareRevision = 15090;
 
         /// <summary>
         /// The identifier for the ComponentType_DeviceRevision Variable.
         /// </summary>
-        public const uint ComponentType_DeviceRevision = 15089;
+        public const uint ComponentType_DeviceRevision = 15091;
 
         /// <summary>
         /// The identifier for the ComponentType_RevisionCounter Variable.
         /// </summary>
-        public const uint ComponentType_RevisionCounter = 15090;
+        public const uint ComponentType_RevisionCounter = 15092;
 
         /// <summary>
         /// The identifier for the ComponentType_ProductCode Variable.
         /// </summary>
-        public const uint ComponentType_ProductCode = 15091;
+        public const uint ComponentType_ProductCode = 15093;
 
         /// <summary>
         /// The identifier for the ComponentType_DeviceManual Variable.
         /// </summary>
-        public const uint ComponentType_DeviceManual = 15092;
+        public const uint ComponentType_DeviceManual = 15094;
 
         /// <summary>
         /// The identifier for the ComponentType_DeviceClass Variable.
         /// </summary>
-        public const uint ComponentType_DeviceClass = 15093;
+        public const uint ComponentType_DeviceClass = 15095;
 
         /// <summary>
         /// The identifier for the ComponentType_AssetId Variable.
         /// </summary>
-        public const uint ComponentType_AssetId = 15094;
+        public const uint ComponentType_AssetId = 15096;
 
         /// <summary>
         /// The identifier for the ComponentType_ComponentName Variable.
         /// </summary>
-        public const uint ComponentType_ComponentName = 15095;
+        public const uint ComponentType_ComponentName = 15097;
 
         /// <summary>
         /// The identifier for the DeviceType_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
-        public const uint DeviceType_Lock_DefaultInstanceBrowseName = 15139;
+        public const uint DeviceType_Lock_DefaultInstanceBrowseName = 15098;
 
         /// <summary>
         /// The identifier for the DeviceType_Lock_LockingClient Variable.
@@ -1253,7 +1253,7 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the DeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
-        public const uint DeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15140;
+        public const uint DeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15103;
 
         /// <summary>
         /// The identifier for the DeviceType_CPIdentifier_Lock_LockingClient Variable.
@@ -1323,67 +1323,67 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the SoftwareType_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
-        public const uint SoftwareType_Lock_DefaultInstanceBrowseName = 15141;
+        public const uint SoftwareType_Lock_DefaultInstanceBrowseName = 15114;
 
         /// <summary>
         /// The identifier for the SoftwareType_Lock_LockingClient Variable.
         /// </summary>
-        public const uint SoftwareType_Lock_LockingClient = 15111;
+        public const uint SoftwareType_Lock_LockingClient = 15115;
 
         /// <summary>
         /// The identifier for the SoftwareType_Lock_LockingUser Variable.
         /// </summary>
-        public const uint SoftwareType_Lock_LockingUser = 15112;
+        public const uint SoftwareType_Lock_LockingUser = 15116;
 
         /// <summary>
         /// The identifier for the SoftwareType_Lock_RemainingLockTime Variable.
         /// </summary>
-        public const uint SoftwareType_Lock_RemainingLockTime = 15113;
+        public const uint SoftwareType_Lock_RemainingLockTime = 15117;
 
         /// <summary>
         /// The identifier for the SoftwareType_Lock_InitLock_InputArguments Variable.
         /// </summary>
-        public const uint SoftwareType_Lock_InitLock_InputArguments = 15115;
+        public const uint SoftwareType_Lock_InitLock_InputArguments = 15119;
 
         /// <summary>
         /// The identifier for the SoftwareType_Lock_InitLock_OutputArguments Variable.
         /// </summary>
-        public const uint SoftwareType_Lock_InitLock_OutputArguments = 15116;
+        public const uint SoftwareType_Lock_InitLock_OutputArguments = 15120;
 
         /// <summary>
         /// The identifier for the SoftwareType_Lock_RenewLock_OutputArguments Variable.
         /// </summary>
-        public const uint SoftwareType_Lock_RenewLock_OutputArguments = 15118;
+        public const uint SoftwareType_Lock_RenewLock_OutputArguments = 15122;
 
         /// <summary>
         /// The identifier for the SoftwareType_Lock_ExitLock_OutputArguments Variable.
         /// </summary>
-        public const uint SoftwareType_Lock_ExitLock_OutputArguments = 15120;
+        public const uint SoftwareType_Lock_ExitLock_OutputArguments = 15124;
 
         /// <summary>
         /// The identifier for the SoftwareType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
-        public const uint SoftwareType_Lock_BreakLock_OutputArguments = 15122;
+        public const uint SoftwareType_Lock_BreakLock_OutputArguments = 15126;
 
         /// <summary>
         /// The identifier for the SoftwareType_Manufacturer Variable.
         /// </summary>
-        public const uint SoftwareType_Manufacturer = 15123;
+        public const uint SoftwareType_Manufacturer = 15127;
 
         /// <summary>
         /// The identifier for the SoftwareType_Model Variable.
         /// </summary>
-        public const uint SoftwareType_Model = 15125;
+        public const uint SoftwareType_Model = 15129;
 
         /// <summary>
         /// The identifier for the SoftwareType_SoftwareRevision Variable.
         /// </summary>
-        public const uint SoftwareType_SoftwareRevision = 15128;
+        public const uint SoftwareType_SoftwareRevision = 15132;
 
         /// <summary>
         /// The identifier for the BlockType_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
-        public const uint BlockType_Lock_DefaultInstanceBrowseName = 15142;
+        public const uint BlockType_Lock_DefaultInstanceBrowseName = 15140;
 
         /// <summary>
         /// The identifier for the BlockType_Lock_LockingClient Variable.
@@ -1453,527 +1453,527 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_EnabledState_Id Variable.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_EnabledState_Id = 15161;
+        public const uint DeviceHealthDiagnosticAlarmType_EnabledState_Id = 15159;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_Quality_SourceTimestamp Variable.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_Quality_SourceTimestamp = 15170;
+        public const uint DeviceHealthDiagnosticAlarmType_Quality_SourceTimestamp = 15168;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_LastSeverity_SourceTimestamp Variable.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_LastSeverity_SourceTimestamp = 15172;
+        public const uint DeviceHealthDiagnosticAlarmType_LastSeverity_SourceTimestamp = 15170;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_Comment_SourceTimestamp Variable.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_Comment_SourceTimestamp = 15174;
+        public const uint DeviceHealthDiagnosticAlarmType_Comment_SourceTimestamp = 15172;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_AddComment_InputArguments Variable.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_AddComment_InputArguments = 15179;
+        public const uint DeviceHealthDiagnosticAlarmType_AddComment_InputArguments = 15177;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_ConditionRefresh_InputArguments Variable.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_ConditionRefresh_InputArguments = 15181;
+        public const uint DeviceHealthDiagnosticAlarmType_ConditionRefresh_InputArguments = 15179;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_ConditionRefresh2_InputArguments Variable.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_ConditionRefresh2_InputArguments = 15183;
+        public const uint DeviceHealthDiagnosticAlarmType_ConditionRefresh2_InputArguments = 15181;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_AckedState_Id Variable.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_AckedState_Id = 15185;
+        public const uint DeviceHealthDiagnosticAlarmType_AckedState_Id = 15183;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_ConfirmedState_Id Variable.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_ConfirmedState_Id = 15194;
+        public const uint DeviceHealthDiagnosticAlarmType_ConfirmedState_Id = 15192;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_Acknowledge_InputArguments Variable.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_Acknowledge_InputArguments = 15203;
+        public const uint DeviceHealthDiagnosticAlarmType_Acknowledge_InputArguments = 15201;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_Confirm_InputArguments Variable.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_Confirm_InputArguments = 15205;
+        public const uint DeviceHealthDiagnosticAlarmType_Confirm_InputArguments = 15203;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_ActiveState_Id Variable.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_ActiveState_Id = 15207;
+        public const uint DeviceHealthDiagnosticAlarmType_ActiveState_Id = 15205;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_SuppressedState_Id Variable.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_SuppressedState_Id = 15217;
+        public const uint DeviceHealthDiagnosticAlarmType_SuppressedState_Id = 15215;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_OutOfServiceState_Id Variable.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_OutOfServiceState_Id = 15226;
+        public const uint DeviceHealthDiagnosticAlarmType_OutOfServiceState_Id = 15224;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_ShelvingState_CurrentState = 15235;
+        public const uint DeviceHealthDiagnosticAlarmType_ShelvingState_CurrentState = 15233;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_ShelvingState_CurrentState_Id Variable.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_ShelvingState_CurrentState_Id = 15236;
+        public const uint DeviceHealthDiagnosticAlarmType_ShelvingState_CurrentState_Id = 15234;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_ShelvingState_LastTransition_Id Variable.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_ShelvingState_LastTransition_Id = 15241;
+        public const uint DeviceHealthDiagnosticAlarmType_ShelvingState_LastTransition_Id = 15239;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_ShelvingState_UnshelveTime Variable.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_ShelvingState_UnshelveTime = 15248;
+        public const uint DeviceHealthDiagnosticAlarmType_ShelvingState_UnshelveTime = 15246;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_ShelvingState_TimedShelve_InputArguments = 15250;
+        public const uint DeviceHealthDiagnosticAlarmType_ShelvingState_TimedShelve_InputArguments = 15248;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_SilenceState_Id Variable.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_SilenceState_Id = 15261;
+        public const uint DeviceHealthDiagnosticAlarmType_SilenceState_Id = 15259;
 
         /// <summary>
         /// The identifier for the DeviceHealthDiagnosticAlarmType_LatchedState_Id Variable.
         /// </summary>
-        public const uint DeviceHealthDiagnosticAlarmType_LatchedState_Id = 15274;
+        public const uint DeviceHealthDiagnosticAlarmType_LatchedState_Id = 15272;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_EnabledState_Id Variable.
         /// </summary>
-        public const uint FailureAlarmType_EnabledState_Id = 15310;
+        public const uint FailureAlarmType_EnabledState_Id = 15308;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_Quality_SourceTimestamp Variable.
         /// </summary>
-        public const uint FailureAlarmType_Quality_SourceTimestamp = 15319;
+        public const uint FailureAlarmType_Quality_SourceTimestamp = 15317;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_LastSeverity_SourceTimestamp Variable.
         /// </summary>
-        public const uint FailureAlarmType_LastSeverity_SourceTimestamp = 15321;
+        public const uint FailureAlarmType_LastSeverity_SourceTimestamp = 15319;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_Comment_SourceTimestamp Variable.
         /// </summary>
-        public const uint FailureAlarmType_Comment_SourceTimestamp = 15323;
+        public const uint FailureAlarmType_Comment_SourceTimestamp = 15321;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_AddComment_InputArguments Variable.
         /// </summary>
-        public const uint FailureAlarmType_AddComment_InputArguments = 15328;
+        public const uint FailureAlarmType_AddComment_InputArguments = 15326;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_ConditionRefresh_InputArguments Variable.
         /// </summary>
-        public const uint FailureAlarmType_ConditionRefresh_InputArguments = 15330;
+        public const uint FailureAlarmType_ConditionRefresh_InputArguments = 15328;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_ConditionRefresh2_InputArguments Variable.
         /// </summary>
-        public const uint FailureAlarmType_ConditionRefresh2_InputArguments = 15332;
+        public const uint FailureAlarmType_ConditionRefresh2_InputArguments = 15330;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_AckedState_Id Variable.
         /// </summary>
-        public const uint FailureAlarmType_AckedState_Id = 15334;
+        public const uint FailureAlarmType_AckedState_Id = 15332;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_ConfirmedState_Id Variable.
         /// </summary>
-        public const uint FailureAlarmType_ConfirmedState_Id = 15343;
+        public const uint FailureAlarmType_ConfirmedState_Id = 15341;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_Acknowledge_InputArguments Variable.
         /// </summary>
-        public const uint FailureAlarmType_Acknowledge_InputArguments = 15352;
+        public const uint FailureAlarmType_Acknowledge_InputArguments = 15350;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_Confirm_InputArguments Variable.
         /// </summary>
-        public const uint FailureAlarmType_Confirm_InputArguments = 15354;
+        public const uint FailureAlarmType_Confirm_InputArguments = 15352;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_ActiveState_Id Variable.
         /// </summary>
-        public const uint FailureAlarmType_ActiveState_Id = 15356;
+        public const uint FailureAlarmType_ActiveState_Id = 15354;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_SuppressedState_Id Variable.
         /// </summary>
-        public const uint FailureAlarmType_SuppressedState_Id = 15366;
+        public const uint FailureAlarmType_SuppressedState_Id = 15364;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_OutOfServiceState_Id Variable.
         /// </summary>
-        public const uint FailureAlarmType_OutOfServiceState_Id = 15375;
+        public const uint FailureAlarmType_OutOfServiceState_Id = 15373;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
-        public const uint FailureAlarmType_ShelvingState_CurrentState = 15384;
+        public const uint FailureAlarmType_ShelvingState_CurrentState = 15382;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_ShelvingState_CurrentState_Id Variable.
         /// </summary>
-        public const uint FailureAlarmType_ShelvingState_CurrentState_Id = 15385;
+        public const uint FailureAlarmType_ShelvingState_CurrentState_Id = 15383;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_ShelvingState_LastTransition_Id Variable.
         /// </summary>
-        public const uint FailureAlarmType_ShelvingState_LastTransition_Id = 15390;
+        public const uint FailureAlarmType_ShelvingState_LastTransition_Id = 15388;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_ShelvingState_UnshelveTime Variable.
         /// </summary>
-        public const uint FailureAlarmType_ShelvingState_UnshelveTime = 15397;
+        public const uint FailureAlarmType_ShelvingState_UnshelveTime = 15395;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
-        public const uint FailureAlarmType_ShelvingState_TimedShelve_InputArguments = 15399;
+        public const uint FailureAlarmType_ShelvingState_TimedShelve_InputArguments = 15397;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_SilenceState_Id Variable.
         /// </summary>
-        public const uint FailureAlarmType_SilenceState_Id = 15410;
+        public const uint FailureAlarmType_SilenceState_Id = 15408;
 
         /// <summary>
         /// The identifier for the FailureAlarmType_LatchedState_Id Variable.
         /// </summary>
-        public const uint FailureAlarmType_LatchedState_Id = 15423;
+        public const uint FailureAlarmType_LatchedState_Id = 15421;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_EnabledState_Id Variable.
         /// </summary>
-        public const uint CheckFunctionAlarmType_EnabledState_Id = 15459;
+        public const uint CheckFunctionAlarmType_EnabledState_Id = 15457;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_Quality_SourceTimestamp Variable.
         /// </summary>
-        public const uint CheckFunctionAlarmType_Quality_SourceTimestamp = 15468;
+        public const uint CheckFunctionAlarmType_Quality_SourceTimestamp = 15466;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_LastSeverity_SourceTimestamp Variable.
         /// </summary>
-        public const uint CheckFunctionAlarmType_LastSeverity_SourceTimestamp = 15470;
+        public const uint CheckFunctionAlarmType_LastSeverity_SourceTimestamp = 15468;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_Comment_SourceTimestamp Variable.
         /// </summary>
-        public const uint CheckFunctionAlarmType_Comment_SourceTimestamp = 15472;
+        public const uint CheckFunctionAlarmType_Comment_SourceTimestamp = 15470;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_AddComment_InputArguments Variable.
         /// </summary>
-        public const uint CheckFunctionAlarmType_AddComment_InputArguments = 15477;
+        public const uint CheckFunctionAlarmType_AddComment_InputArguments = 15475;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_ConditionRefresh_InputArguments Variable.
         /// </summary>
-        public const uint CheckFunctionAlarmType_ConditionRefresh_InputArguments = 15479;
+        public const uint CheckFunctionAlarmType_ConditionRefresh_InputArguments = 15477;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_ConditionRefresh2_InputArguments Variable.
         /// </summary>
-        public const uint CheckFunctionAlarmType_ConditionRefresh2_InputArguments = 15481;
+        public const uint CheckFunctionAlarmType_ConditionRefresh2_InputArguments = 15479;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_AckedState_Id Variable.
         /// </summary>
-        public const uint CheckFunctionAlarmType_AckedState_Id = 15483;
+        public const uint CheckFunctionAlarmType_AckedState_Id = 15481;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_ConfirmedState_Id Variable.
         /// </summary>
-        public const uint CheckFunctionAlarmType_ConfirmedState_Id = 15492;
+        public const uint CheckFunctionAlarmType_ConfirmedState_Id = 15490;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_Acknowledge_InputArguments Variable.
         /// </summary>
-        public const uint CheckFunctionAlarmType_Acknowledge_InputArguments = 15501;
+        public const uint CheckFunctionAlarmType_Acknowledge_InputArguments = 15499;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_Confirm_InputArguments Variable.
         /// </summary>
-        public const uint CheckFunctionAlarmType_Confirm_InputArguments = 15503;
+        public const uint CheckFunctionAlarmType_Confirm_InputArguments = 15501;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_ActiveState_Id Variable.
         /// </summary>
-        public const uint CheckFunctionAlarmType_ActiveState_Id = 15505;
+        public const uint CheckFunctionAlarmType_ActiveState_Id = 15503;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_SuppressedState_Id Variable.
         /// </summary>
-        public const uint CheckFunctionAlarmType_SuppressedState_Id = 15515;
+        public const uint CheckFunctionAlarmType_SuppressedState_Id = 15513;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_OutOfServiceState_Id Variable.
         /// </summary>
-        public const uint CheckFunctionAlarmType_OutOfServiceState_Id = 15524;
+        public const uint CheckFunctionAlarmType_OutOfServiceState_Id = 15522;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
-        public const uint CheckFunctionAlarmType_ShelvingState_CurrentState = 15533;
+        public const uint CheckFunctionAlarmType_ShelvingState_CurrentState = 15531;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_ShelvingState_CurrentState_Id Variable.
         /// </summary>
-        public const uint CheckFunctionAlarmType_ShelvingState_CurrentState_Id = 15534;
+        public const uint CheckFunctionAlarmType_ShelvingState_CurrentState_Id = 15532;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_ShelvingState_LastTransition_Id Variable.
         /// </summary>
-        public const uint CheckFunctionAlarmType_ShelvingState_LastTransition_Id = 15539;
+        public const uint CheckFunctionAlarmType_ShelvingState_LastTransition_Id = 15537;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_ShelvingState_UnshelveTime Variable.
         /// </summary>
-        public const uint CheckFunctionAlarmType_ShelvingState_UnshelveTime = 15546;
+        public const uint CheckFunctionAlarmType_ShelvingState_UnshelveTime = 15544;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
-        public const uint CheckFunctionAlarmType_ShelvingState_TimedShelve_InputArguments = 15548;
+        public const uint CheckFunctionAlarmType_ShelvingState_TimedShelve_InputArguments = 15546;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_SilenceState_Id Variable.
         /// </summary>
-        public const uint CheckFunctionAlarmType_SilenceState_Id = 15559;
+        public const uint CheckFunctionAlarmType_SilenceState_Id = 15557;
 
         /// <summary>
         /// The identifier for the CheckFunctionAlarmType_LatchedState_Id Variable.
         /// </summary>
-        public const uint CheckFunctionAlarmType_LatchedState_Id = 15572;
+        public const uint CheckFunctionAlarmType_LatchedState_Id = 15570;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_EnabledState_Id Variable.
         /// </summary>
-        public const uint OffSpecAlarmType_EnabledState_Id = 15608;
+        public const uint OffSpecAlarmType_EnabledState_Id = 15606;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_Quality_SourceTimestamp Variable.
         /// </summary>
-        public const uint OffSpecAlarmType_Quality_SourceTimestamp = 15617;
+        public const uint OffSpecAlarmType_Quality_SourceTimestamp = 15615;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_LastSeverity_SourceTimestamp Variable.
         /// </summary>
-        public const uint OffSpecAlarmType_LastSeverity_SourceTimestamp = 15619;
+        public const uint OffSpecAlarmType_LastSeverity_SourceTimestamp = 15617;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_Comment_SourceTimestamp Variable.
         /// </summary>
-        public const uint OffSpecAlarmType_Comment_SourceTimestamp = 15621;
+        public const uint OffSpecAlarmType_Comment_SourceTimestamp = 15619;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_AddComment_InputArguments Variable.
         /// </summary>
-        public const uint OffSpecAlarmType_AddComment_InputArguments = 15626;
+        public const uint OffSpecAlarmType_AddComment_InputArguments = 15624;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_ConditionRefresh_InputArguments Variable.
         /// </summary>
-        public const uint OffSpecAlarmType_ConditionRefresh_InputArguments = 15628;
+        public const uint OffSpecAlarmType_ConditionRefresh_InputArguments = 15626;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_ConditionRefresh2_InputArguments Variable.
         /// </summary>
-        public const uint OffSpecAlarmType_ConditionRefresh2_InputArguments = 15630;
+        public const uint OffSpecAlarmType_ConditionRefresh2_InputArguments = 15628;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_AckedState_Id Variable.
         /// </summary>
-        public const uint OffSpecAlarmType_AckedState_Id = 15632;
+        public const uint OffSpecAlarmType_AckedState_Id = 15630;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_ConfirmedState_Id Variable.
         /// </summary>
-        public const uint OffSpecAlarmType_ConfirmedState_Id = 15641;
+        public const uint OffSpecAlarmType_ConfirmedState_Id = 15639;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_Acknowledge_InputArguments Variable.
         /// </summary>
-        public const uint OffSpecAlarmType_Acknowledge_InputArguments = 15650;
+        public const uint OffSpecAlarmType_Acknowledge_InputArguments = 15648;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_Confirm_InputArguments Variable.
         /// </summary>
-        public const uint OffSpecAlarmType_Confirm_InputArguments = 15652;
+        public const uint OffSpecAlarmType_Confirm_InputArguments = 15650;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_ActiveState_Id Variable.
         /// </summary>
-        public const uint OffSpecAlarmType_ActiveState_Id = 15654;
+        public const uint OffSpecAlarmType_ActiveState_Id = 15652;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_SuppressedState_Id Variable.
         /// </summary>
-        public const uint OffSpecAlarmType_SuppressedState_Id = 15664;
+        public const uint OffSpecAlarmType_SuppressedState_Id = 15662;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_OutOfServiceState_Id Variable.
         /// </summary>
-        public const uint OffSpecAlarmType_OutOfServiceState_Id = 15673;
+        public const uint OffSpecAlarmType_OutOfServiceState_Id = 15671;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
-        public const uint OffSpecAlarmType_ShelvingState_CurrentState = 15682;
+        public const uint OffSpecAlarmType_ShelvingState_CurrentState = 15680;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_ShelvingState_CurrentState_Id Variable.
         /// </summary>
-        public const uint OffSpecAlarmType_ShelvingState_CurrentState_Id = 15683;
+        public const uint OffSpecAlarmType_ShelvingState_CurrentState_Id = 15681;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_ShelvingState_LastTransition_Id Variable.
         /// </summary>
-        public const uint OffSpecAlarmType_ShelvingState_LastTransition_Id = 15688;
+        public const uint OffSpecAlarmType_ShelvingState_LastTransition_Id = 15686;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_ShelvingState_UnshelveTime Variable.
         /// </summary>
-        public const uint OffSpecAlarmType_ShelvingState_UnshelveTime = 15695;
+        public const uint OffSpecAlarmType_ShelvingState_UnshelveTime = 15693;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
-        public const uint OffSpecAlarmType_ShelvingState_TimedShelve_InputArguments = 15697;
+        public const uint OffSpecAlarmType_ShelvingState_TimedShelve_InputArguments = 15695;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_SilenceState_Id Variable.
         /// </summary>
-        public const uint OffSpecAlarmType_SilenceState_Id = 15708;
+        public const uint OffSpecAlarmType_SilenceState_Id = 15706;
 
         /// <summary>
         /// The identifier for the OffSpecAlarmType_LatchedState_Id Variable.
         /// </summary>
-        public const uint OffSpecAlarmType_LatchedState_Id = 15721;
+        public const uint OffSpecAlarmType_LatchedState_Id = 15719;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_EnabledState_Id Variable.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_EnabledState_Id = 15757;
+        public const uint MaintenanceRequiredAlarmType_EnabledState_Id = 15755;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_Quality_SourceTimestamp Variable.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_Quality_SourceTimestamp = 15766;
+        public const uint MaintenanceRequiredAlarmType_Quality_SourceTimestamp = 15764;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_LastSeverity_SourceTimestamp Variable.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_LastSeverity_SourceTimestamp = 15768;
+        public const uint MaintenanceRequiredAlarmType_LastSeverity_SourceTimestamp = 15766;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_Comment_SourceTimestamp Variable.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_Comment_SourceTimestamp = 15770;
+        public const uint MaintenanceRequiredAlarmType_Comment_SourceTimestamp = 15768;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_AddComment_InputArguments Variable.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_AddComment_InputArguments = 15775;
+        public const uint MaintenanceRequiredAlarmType_AddComment_InputArguments = 15773;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_ConditionRefresh_InputArguments Variable.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_ConditionRefresh_InputArguments = 15777;
+        public const uint MaintenanceRequiredAlarmType_ConditionRefresh_InputArguments = 15775;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_ConditionRefresh2_InputArguments Variable.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_ConditionRefresh2_InputArguments = 15779;
+        public const uint MaintenanceRequiredAlarmType_ConditionRefresh2_InputArguments = 15777;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_AckedState_Id Variable.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_AckedState_Id = 15781;
+        public const uint MaintenanceRequiredAlarmType_AckedState_Id = 15779;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_ConfirmedState_Id Variable.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_ConfirmedState_Id = 15790;
+        public const uint MaintenanceRequiredAlarmType_ConfirmedState_Id = 15788;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_Acknowledge_InputArguments Variable.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_Acknowledge_InputArguments = 15799;
+        public const uint MaintenanceRequiredAlarmType_Acknowledge_InputArguments = 15797;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_Confirm_InputArguments Variable.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_Confirm_InputArguments = 15801;
+        public const uint MaintenanceRequiredAlarmType_Confirm_InputArguments = 15799;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_ActiveState_Id Variable.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_ActiveState_Id = 15803;
+        public const uint MaintenanceRequiredAlarmType_ActiveState_Id = 15801;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_SuppressedState_Id Variable.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_SuppressedState_Id = 15813;
+        public const uint MaintenanceRequiredAlarmType_SuppressedState_Id = 15811;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_OutOfServiceState_Id Variable.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_OutOfServiceState_Id = 15822;
+        public const uint MaintenanceRequiredAlarmType_OutOfServiceState_Id = 15820;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_ShelvingState_CurrentState Variable.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_ShelvingState_CurrentState = 15831;
+        public const uint MaintenanceRequiredAlarmType_ShelvingState_CurrentState = 15829;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_ShelvingState_CurrentState_Id Variable.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_ShelvingState_CurrentState_Id = 15832;
+        public const uint MaintenanceRequiredAlarmType_ShelvingState_CurrentState_Id = 15830;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_ShelvingState_LastTransition_Id Variable.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_ShelvingState_LastTransition_Id = 15837;
+        public const uint MaintenanceRequiredAlarmType_ShelvingState_LastTransition_Id = 15835;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_ShelvingState_UnshelveTime Variable.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_ShelvingState_UnshelveTime = 15844;
+        public const uint MaintenanceRequiredAlarmType_ShelvingState_UnshelveTime = 15842;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_ShelvingState_TimedShelve_InputArguments Variable.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_ShelvingState_TimedShelve_InputArguments = 15846;
+        public const uint MaintenanceRequiredAlarmType_ShelvingState_TimedShelve_InputArguments = 15844;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_SilenceState_Id Variable.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_SilenceState_Id = 15857;
+        public const uint MaintenanceRequiredAlarmType_SilenceState_Id = 15855;
 
         /// <summary>
         /// The identifier for the MaintenanceRequiredAlarmType_LatchedState_Id Variable.
         /// </summary>
-        public const uint MaintenanceRequiredAlarmType_LatchedState_Id = 15870;
+        public const uint MaintenanceRequiredAlarmType_LatchedState_Id = 15868;
 
         /// <summary>
         /// The identifier for the FunctionalGroupType_GroupIdentifier_UIElement Variable.
@@ -1993,7 +1993,7 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the NetworkType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
-        public const uint NetworkType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15888;
+        public const uint NetworkType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15886;
 
         /// <summary>
         /// The identifier for the NetworkType_CPIdentifier_Lock_LockingClient Variable.
@@ -2038,7 +2038,7 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the NetworkType_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
-        public const uint NetworkType_Lock_DefaultInstanceBrowseName = 15889;
+        public const uint NetworkType_Lock_DefaultInstanceBrowseName = 15887;
 
         /// <summary>
         /// The identifier for the NetworkType_Lock_LockingClient Variable.
@@ -2083,7 +2083,7 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the ConnectionPointType_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
-        public const uint ConnectionPointType_Lock_DefaultInstanceBrowseName = 15890;
+        public const uint ConnectionPointType_Lock_DefaultInstanceBrowseName = 15888;
 
         /// <summary>
         /// The identifier for the ConnectionPointType_Lock_LockingClient Variable.
@@ -2128,7 +2128,7 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the ConnectionPointType_NetworkIdentifier_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
-        public const uint ConnectionPointType_NetworkIdentifier_Lock_DefaultInstanceBrowseName = 15892;
+        public const uint ConnectionPointType_NetworkIdentifier_Lock_DefaultInstanceBrowseName = 15890;
 
         /// <summary>
         /// The identifier for the ConnectionPointType_NetworkIdentifier_Lock_LockingClient Variable.
@@ -2198,7 +2198,7 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the LockingServicesType_DefaultInstanceBrowseName Variable.
         /// </summary>
-        public const uint LockingServicesType_DefaultInstanceBrowseName = 15895;
+        public const uint LockingServicesType_DefaultInstanceBrowseName = 15893;
 
         /// <summary>
         /// The identifier for the LockingServicesType_LockingClient Variable.
@@ -2263,12 +2263,12 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the OpcUaDi_BinarySchema_TransferResultErrorDataType Variable.
         /// </summary>
-        public const uint OpcUaDi_BinarySchema_TransferResultErrorDataType = 15898;
+        public const uint OpcUaDi_BinarySchema_TransferResultErrorDataType = 15896;
 
         /// <summary>
         /// The identifier for the OpcUaDi_BinarySchema_TransferResultDataDataType Variable.
         /// </summary>
-        public const uint OpcUaDi_BinarySchema_TransferResultDataDataType = 15901;
+        public const uint OpcUaDi_BinarySchema_TransferResultDataDataType = 15899;
 
         /// <summary>
         /// The identifier for the OpcUaDi_BinarySchema_ParameterResultDataType Variable.
@@ -2298,12 +2298,12 @@ namespace Opc.Ua.Di
         /// <summary>
         /// The identifier for the OpcUaDi_XmlSchema_TransferResultErrorDataType Variable.
         /// </summary>
-        public const uint OpcUaDi_XmlSchema_TransferResultErrorDataType = 15906;
+        public const uint OpcUaDi_XmlSchema_TransferResultErrorDataType = 15904;
 
         /// <summary>
         /// The identifier for the OpcUaDi_XmlSchema_TransferResultDataDataType Variable.
         /// </summary>
-        public const uint OpcUaDi_XmlSchema_TransferResultDataDataType = 15909;
+        public const uint OpcUaDi_XmlSchema_TransferResultDataDataType = 15907;
 
         /// <summary>
         /// The identifier for the OpcUaDi_XmlSchema_ParameterResultDataType Variable.
