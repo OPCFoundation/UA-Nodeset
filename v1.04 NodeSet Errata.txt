@@ -49,6 +49,14 @@
 0004480: Various Part 5 Inconsistencies
 0004479: BrowseNames of well known roles to not match specification
 0004470: UadpDataSetReaderMessageType does not have a DataSetOrdering variable
+0004605: StateType::StateNumber has wrong ModelingRule in Nodeset
+0004625: NamespacePublicationDate in 1.1 DI NodeSet-File has wrong data type
+0004652: Wrong order of DataValue fields in Opc.Ua.Types.bsd
+0004654: Duplicated PubSub Diagnostics nodes
+0004713: Default descriptions need to be removed from UA nodeset.
+0004714: Code generator should not place restrictions on method arguments
+0004724: UADataType.Definition.Name wrong value; Companion spec NodeSets need Update.
+0004725: Wrong order of DiagnosticsInfo fields in Opc.Ua.Types.bsd
+0004731: Add Models for Released Amendments 1,2,3,5 and 7.
 
-	
 	
