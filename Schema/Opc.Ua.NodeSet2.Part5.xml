@@ -404,7 +404,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=2005" BrowseName="ServerArray" ParentNodeId="i=2004" DataType="String" ValueRank="1" MinimumSamplingInterval="1000">
+  <UAVariable NodeId="i=2005" BrowseName="ServerArray" ParentNodeId="i=2004" DataType="String" ValueRank="1" ArrayDimensions="0" MinimumSamplingInterval="1000">
     <DisplayName>ServerArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -412,7 +412,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2004</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2006" BrowseName="NamespaceArray" ParentNodeId="i=2004" DataType="String" ValueRank="1" MinimumSamplingInterval="1000">
+  <UAVariable NodeId="i=2006" BrowseName="NamespaceArray" ParentNodeId="i=2004" DataType="String" ValueRank="1" ArrayDimensions="0" MinimumSamplingInterval="1000">
     <DisplayName>NamespaceArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -577,7 +577,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2004</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="i=3086" BrowseName="ServerProfileArray" ParentNodeId="i=2009" DataType="String" ValueRank="1">
+  <UAVariable NodeId="i=3086" BrowseName="ServerProfileArray" ParentNodeId="i=2009" DataType="String" ValueRank="1" ArrayDimensions="0">
     <DisplayName>ServerProfileArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -585,7 +585,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2009</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3087" BrowseName="LocaleIdArray" ParentNodeId="i=2009" DataType="i=295" ValueRank="1">
+  <UAVariable NodeId="i=3087" BrowseName="LocaleIdArray" ParentNodeId="i=2009" DataType="i=295" ValueRank="1" ArrayDimensions="0">
     <DisplayName>LocaleIdArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -625,7 +625,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2009</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3092" BrowseName="SoftwareCertificates" ParentNodeId="i=2009" DataType="i=344" ValueRank="1">
+  <UAVariable NodeId="i=3092" BrowseName="SoftwareCertificates" ParentNodeId="i=2009" DataType="i=344" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SoftwareCertificates</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -777,7 +777,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=3095</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3110" BrowseName="SubscriptionDiagnosticsArray" ParentNodeId="i=2010" DataType="i=874" ValueRank="1">
+  <UAVariable NodeId="i=3110" BrowseName="SubscriptionDiagnosticsArray" ParentNodeId="i=2010" DataType="i=874" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SubscriptionDiagnosticsArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=2171</Reference>
@@ -795,7 +795,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2010</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="i=3112" BrowseName="SessionDiagnosticsArray" ParentNodeId="i=3111" DataType="i=865" ValueRank="1">
+  <UAVariable NodeId="i=3112" BrowseName="SessionDiagnosticsArray" ParentNodeId="i=3111" DataType="i=865" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SessionDiagnosticsArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=2196</Reference>
@@ -803,7 +803,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=3111</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3113" BrowseName="SessionSecurityDiagnosticsArray" ParentNodeId="i=3111" DataType="i=868" ValueRank="1">
+  <UAVariable NodeId="i=3113" BrowseName="SessionSecurityDiagnosticsArray" ParentNodeId="i=3111" DataType="i=868" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SessionSecurityDiagnosticsArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=2243</Reference>
@@ -861,7 +861,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2004</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=11490" BrowseName="InputArguments" ParentNodeId="i=11489" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11490" BrowseName="InputArguments" ParentNodeId="i=11489" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -888,7 +888,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=11491" BrowseName="OutputArguments" ParentNodeId="i=11489" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11491" BrowseName="OutputArguments" ParentNodeId="i=11489" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -908,7 +908,9 @@
                 <Identifier>i=7</Identifier>
               </DataType>
               <ValueRank>1</ValueRank>
-              <ArrayDimensions />
+              <ArrayDimensions>
+                <UInt32>0</UInt32>
+              </ArrayDimensions>
             </Argument>
           </Body>
         </ExtensionObject>
@@ -923,7 +925,9 @@
                 <Identifier>i=7</Identifier>
               </DataType>
               <ValueRank>1</ValueRank>
-              <ArrayDimensions />
+              <ArrayDimensions>
+                <UInt32>0</UInt32>
+              </ArrayDimensions>
             </Argument>
           </Body>
         </ExtensionObject>
@@ -938,7 +942,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2004</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=12872" BrowseName="InputArguments" ParentNodeId="i=12871" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=12872" BrowseName="InputArguments" ParentNodeId="i=12871" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -974,7 +978,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2004</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=12747" BrowseName="InputArguments" ParentNodeId="i=12746" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=12747" BrowseName="InputArguments" ParentNodeId="i=12746" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1016,7 +1020,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=12748" BrowseName="OutputArguments" ParentNodeId="i=12746" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=12748" BrowseName="OutputArguments" ParentNodeId="i=12746" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1051,7 +1055,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2004</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=12884" BrowseName="InputArguments" ParentNodeId="i=12883" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=12884" BrowseName="InputArguments" ParentNodeId="i=12883" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1158,7 +1162,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=2014" BrowseName="ServerProfileArray" ParentNodeId="i=2013" DataType="String" ValueRank="1">
+  <UAVariable NodeId="i=2014" BrowseName="ServerProfileArray" ParentNodeId="i=2013" DataType="String" ValueRank="1" ArrayDimensions="0">
     <DisplayName>ServerProfileArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1166,7 +1170,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2013</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2016" BrowseName="LocaleIdArray" ParentNodeId="i=2013" DataType="i=295" ValueRank="1">
+  <UAVariable NodeId="i=2016" BrowseName="LocaleIdArray" ParentNodeId="i=2013" DataType="i=295" ValueRank="1" ArrayDimensions="0">
     <DisplayName>LocaleIdArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1206,7 +1210,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2013</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3049" BrowseName="SoftwareCertificates" ParentNodeId="i=2013" DataType="i=344" ValueRank="1">
+  <UAVariable NodeId="i=3049" BrowseName="SoftwareCertificates" ParentNodeId="i=2013" DataType="i=344" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SoftwareCertificates</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1397,7 +1401,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2021</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2022" BrowseName="SamplingIntervalDiagnosticsArray" ParentNodeId="i=2020" DataType="i=856" ValueRank="1">
+  <UAVariable NodeId="i=2022" BrowseName="SamplingIntervalDiagnosticsArray" ParentNodeId="i=2020" DataType="i=856" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SamplingIntervalDiagnosticsArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=2164</Reference>
@@ -1405,7 +1409,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2020</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2023" BrowseName="SubscriptionDiagnosticsArray" ParentNodeId="i=2020" DataType="i=874" ValueRank="1">
+  <UAVariable NodeId="i=2023" BrowseName="SubscriptionDiagnosticsArray" ParentNodeId="i=2020" DataType="i=874" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SubscriptionDiagnosticsArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=2171</Reference>
@@ -1423,7 +1427,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2020</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="i=3129" BrowseName="SessionDiagnosticsArray" ParentNodeId="i=2744" DataType="i=865" ValueRank="1">
+  <UAVariable NodeId="i=3129" BrowseName="SessionDiagnosticsArray" ParentNodeId="i=2744" DataType="i=865" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SessionDiagnosticsArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=2196</Reference>
@@ -1431,7 +1435,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2744</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3130" BrowseName="SessionSecurityDiagnosticsArray" ParentNodeId="i=2744" DataType="i=868" ValueRank="1">
+  <UAVariable NodeId="i=3130" BrowseName="SessionSecurityDiagnosticsArray" ParentNodeId="i=2744" DataType="i=868" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SessionSecurityDiagnosticsArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=2243</Reference>
@@ -1456,7 +1460,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=2027" BrowseName="SessionDiagnosticsArray" ParentNodeId="i=2026" DataType="i=865" ValueRank="1">
+  <UAVariable NodeId="i=2027" BrowseName="SessionDiagnosticsArray" ParentNodeId="i=2026" DataType="i=865" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SessionDiagnosticsArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=2196</Reference>
@@ -1464,7 +1468,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2026</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2028" BrowseName="SessionSecurityDiagnosticsArray" ParentNodeId="i=2026" DataType="i=868" ValueRank="1">
+  <UAVariable NodeId="i=2028" BrowseName="SessionSecurityDiagnosticsArray" ParentNodeId="i=2026" DataType="i=868" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SessionSecurityDiagnosticsArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=2243</Reference>
@@ -1574,7 +1578,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=12098</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=12104" BrowseName="LocaleIds" ParentNodeId="i=12098" DataType="i=295" ValueRank="1">
+  <UAVariable NodeId="i=12104" BrowseName="LocaleIds" ParentNodeId="i=12098" DataType="i=295" ValueRank="1" ArrayDimensions="0">
     <DisplayName>LocaleIds</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -1911,7 +1915,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=12142</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=12145" BrowseName="ClientUserIdHistory" ParentNodeId="i=12142" DataType="String" ValueRank="1">
+  <UAVariable NodeId="i=12145" BrowseName="ClientUserIdHistory" ParentNodeId="i=12142" DataType="String" ValueRank="1" ArrayDimensions="0">
     <DisplayName>ClientUserIdHistory</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -1967,7 +1971,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=12142</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=12152" BrowseName="SubscriptionDiagnosticsArray" ParentNodeId="i=12097" DataType="i=874" ValueRank="1">
+  <UAVariable NodeId="i=12152" BrowseName="SubscriptionDiagnosticsArray" ParentNodeId="i=12097" DataType="i=874" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SubscriptionDiagnosticsArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=2171</Reference>
@@ -2075,7 +2079,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2030</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3136" BrowseName="LocaleIds" ParentNodeId="i=2030" DataType="i=295" ValueRank="1">
+  <UAVariable NodeId="i=3136" BrowseName="LocaleIds" ParentNodeId="i=2030" DataType="i=295" ValueRank="1" ArrayDimensions="0">
     <DisplayName>LocaleIds</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -2412,7 +2416,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2031</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3181" BrowseName="ClientUserIdHistory" ParentNodeId="i=2031" DataType="String" ValueRank="1">
+  <UAVariable NodeId="i=3181" BrowseName="ClientUserIdHistory" ParentNodeId="i=2031" DataType="String" ValueRank="1" ArrayDimensions="0">
     <DisplayName>ClientUserIdHistory</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -2468,7 +2472,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2031</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2032" BrowseName="SubscriptionDiagnosticsArray" ParentNodeId="i=2029" DataType="i=874" ValueRank="1">
+  <UAVariable NodeId="i=2032" BrowseName="SubscriptionDiagnosticsArray" ParentNodeId="i=2029" DataType="i=874" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SubscriptionDiagnosticsArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=2171</Reference>
@@ -2513,7 +2517,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2036</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2038" BrowseName="RedundantServerArray" ParentNodeId="i=2036" DataType="i=853" ValueRank="1">
+  <UAVariable NodeId="i=2038" BrowseName="RedundantServerArray" ParentNodeId="i=2036" DataType="i=853" ValueRank="1" ArrayDimensions="0">
     <DisplayName>RedundantServerArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2528,7 +2532,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2034</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=2040" BrowseName="ServerUriArray" ParentNodeId="i=2039" DataType="String" ValueRank="1">
+  <UAVariable NodeId="i=2040" BrowseName="ServerUriArray" ParentNodeId="i=2039" DataType="String" ValueRank="1" ArrayDimensions="0">
     <DisplayName>ServerUriArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2543,7 +2547,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2039</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=11948" BrowseName="ServerNetworkGroups" ParentNodeId="i=11945" DataType="i=11944" ValueRank="1">
+  <UAVariable NodeId="i=11948" BrowseName="ServerNetworkGroups" ParentNodeId="i=11945" DataType="i=11944" ValueRank="1" ArrayDimensions="0">
     <DisplayName>ServerNetworkGroups</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2731,7 +2735,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11575</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=11581" BrowseName="InputArguments" ParentNodeId="i=11580" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11581" BrowseName="InputArguments" ParentNodeId="i=11580" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2758,7 +2762,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=11582" BrowseName="OutputArguments" ParentNodeId="i=11580" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11582" BrowseName="OutputArguments" ParentNodeId="i=11580" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2793,7 +2797,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11575</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=11584" BrowseName="InputArguments" ParentNodeId="i=11583" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11584" BrowseName="InputArguments" ParentNodeId="i=11583" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2829,7 +2833,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11575</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=11586" BrowseName="InputArguments" ParentNodeId="i=11585" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11586" BrowseName="InputArguments" ParentNodeId="i=11585" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2871,7 +2875,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=11587" BrowseName="OutputArguments" ParentNodeId="i=11585" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11587" BrowseName="OutputArguments" ParentNodeId="i=11585" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2906,7 +2910,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11575</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=11589" BrowseName="InputArguments" ParentNodeId="i=11588" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11589" BrowseName="InputArguments" ParentNodeId="i=11588" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2957,7 +2961,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11575</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=11591" BrowseName="InputArguments" ParentNodeId="i=11590" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11591" BrowseName="InputArguments" ParentNodeId="i=11590" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2984,7 +2988,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=11592" BrowseName="OutputArguments" ParentNodeId="i=11590" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11592" BrowseName="OutputArguments" ParentNodeId="i=11590" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3019,7 +3023,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11575</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=11594" BrowseName="InputArguments" ParentNodeId="i=11593" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11594" BrowseName="InputArguments" ParentNodeId="i=11593" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3094,7 +3098,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=13354</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=13356" BrowseName="InputArguments" ParentNodeId="i=13355" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13356" BrowseName="InputArguments" ParentNodeId="i=13355" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3121,7 +3125,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=13357" BrowseName="OutputArguments" ParentNodeId="i=13355" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13357" BrowseName="OutputArguments" ParentNodeId="i=13355" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3157,7 +3161,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=13354</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=13359" BrowseName="InputArguments" ParentNodeId="i=13358" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13359" BrowseName="InputArguments" ParentNodeId="i=13358" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3199,7 +3203,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=13360" BrowseName="OutputArguments" ParentNodeId="i=13358" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13360" BrowseName="OutputArguments" ParentNodeId="i=13358" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3249,7 +3253,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=13354</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=13362" BrowseName="InputArguments" ParentNodeId="i=13361" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13362" BrowseName="InputArguments" ParentNodeId="i=13361" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3285,7 +3289,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=13354</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=13364" BrowseName="InputArguments" ParentNodeId="i=13363" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13364" BrowseName="InputArguments" ParentNodeId="i=13363" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3357,7 +3361,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=13365" BrowseName="OutputArguments" ParentNodeId="i=13363" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13365" BrowseName="OutputArguments" ParentNodeId="i=13363" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3443,7 +3447,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=13366</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=13373" BrowseName="InputArguments" ParentNodeId="i=13372" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13373" BrowseName="InputArguments" ParentNodeId="i=13372" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3470,7 +3474,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=13374" BrowseName="OutputArguments" ParentNodeId="i=13372" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13374" BrowseName="OutputArguments" ParentNodeId="i=13372" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3505,7 +3509,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=13366</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=13376" BrowseName="InputArguments" ParentNodeId="i=13375" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13376" BrowseName="InputArguments" ParentNodeId="i=13375" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3541,7 +3545,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=13366</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=13378" BrowseName="InputArguments" ParentNodeId="i=13377" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13378" BrowseName="InputArguments" ParentNodeId="i=13377" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3583,7 +3587,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=13379" BrowseName="OutputArguments" ParentNodeId="i=13377" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13379" BrowseName="OutputArguments" ParentNodeId="i=13377" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3618,7 +3622,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=13366</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=13381" BrowseName="InputArguments" ParentNodeId="i=13380" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13381" BrowseName="InputArguments" ParentNodeId="i=13380" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3669,7 +3673,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=13366</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=13383" BrowseName="InputArguments" ParentNodeId="i=13382" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13383" BrowseName="InputArguments" ParentNodeId="i=13382" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3696,7 +3700,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=13384" BrowseName="OutputArguments" ParentNodeId="i=13382" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13384" BrowseName="OutputArguments" ParentNodeId="i=13382" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3731,7 +3735,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=13366</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=13386" BrowseName="InputArguments" ParentNodeId="i=13385" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13386" BrowseName="InputArguments" ParentNodeId="i=13385" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3782,7 +3786,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=13353</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=13388" BrowseName="InputArguments" ParentNodeId="i=13387" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13388" BrowseName="InputArguments" ParentNodeId="i=13387" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3809,7 +3813,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=13389" BrowseName="OutputArguments" ParentNodeId="i=13387" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13389" BrowseName="OutputArguments" ParentNodeId="i=13387" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3845,7 +3849,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=13353</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=13391" BrowseName="InputArguments" ParentNodeId="i=13390" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13391" BrowseName="InputArguments" ParentNodeId="i=13390" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3887,7 +3891,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=13392" BrowseName="OutputArguments" ParentNodeId="i=13390" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13392" BrowseName="OutputArguments" ParentNodeId="i=13390" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3937,7 +3941,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=13353</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=13394" BrowseName="InputArguments" ParentNodeId="i=13393" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13394" BrowseName="InputArguments" ParentNodeId="i=13393" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3973,7 +3977,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=13353</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=13396" BrowseName="InputArguments" ParentNodeId="i=13395" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13396" BrowseName="InputArguments" ParentNodeId="i=13395" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4045,7 +4049,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=13397" BrowseName="OutputArguments" ParentNodeId="i=13395" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=13397" BrowseName="OutputArguments" ParentNodeId="i=13395" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4132,7 +4136,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=11616</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11621" BrowseName="StaticNodeIdTypes" ParentNodeId="i=11616" DataType="i=256" ValueRank="1">
+  <UAVariable NodeId="i=11621" BrowseName="StaticNodeIdTypes" ParentNodeId="i=11616" DataType="i=256" ValueRank="1" ArrayDimensions="0">
     <DisplayName>StaticNodeIdTypes</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4140,7 +4144,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=11616</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11622" BrowseName="StaticNumericNodeIdRange" ParentNodeId="i=11616" DataType="i=291" ValueRank="1">
+  <UAVariable NodeId="i=11622" BrowseName="StaticNumericNodeIdRange" ParentNodeId="i=11616" DataType="i=291" ValueRank="1" ArrayDimensions="0">
     <DisplayName>StaticNumericNodeIdRange</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4215,7 +4219,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11624</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=11630" BrowseName="InputArguments" ParentNodeId="i=11629" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11630" BrowseName="InputArguments" ParentNodeId="i=11629" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4242,7 +4246,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=11631" BrowseName="OutputArguments" ParentNodeId="i=11629" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11631" BrowseName="OutputArguments" ParentNodeId="i=11629" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4277,7 +4281,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11624</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=11633" BrowseName="InputArguments" ParentNodeId="i=11632" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11633" BrowseName="InputArguments" ParentNodeId="i=11632" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4313,7 +4317,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11624</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=11635" BrowseName="InputArguments" ParentNodeId="i=11634" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11635" BrowseName="InputArguments" ParentNodeId="i=11634" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4355,7 +4359,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=11636" BrowseName="OutputArguments" ParentNodeId="i=11634" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11636" BrowseName="OutputArguments" ParentNodeId="i=11634" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4390,7 +4394,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11624</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=11638" BrowseName="InputArguments" ParentNodeId="i=11637" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11638" BrowseName="InputArguments" ParentNodeId="i=11637" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4441,7 +4445,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11624</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=11640" BrowseName="InputArguments" ParentNodeId="i=11639" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11640" BrowseName="InputArguments" ParentNodeId="i=11639" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4468,7 +4472,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=11641" BrowseName="OutputArguments" ParentNodeId="i=11639" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11641" BrowseName="OutputArguments" ParentNodeId="i=11639" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4503,7 +4507,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11624</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=11643" BrowseName="InputArguments" ParentNodeId="i=11642" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11643" BrowseName="InputArguments" ParentNodeId="i=11642" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4600,7 +4604,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=11646</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11651" BrowseName="StaticNodeIdTypes" ParentNodeId="i=11646" DataType="i=256" ValueRank="1">
+  <UAVariable NodeId="i=11651" BrowseName="StaticNodeIdTypes" ParentNodeId="i=11646" DataType="i=256" ValueRank="1" ArrayDimensions="0">
     <DisplayName>StaticNodeIdTypes</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4608,7 +4612,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=11646</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11652" BrowseName="StaticNumericNodeIdRange" ParentNodeId="i=11646" DataType="i=291" ValueRank="1">
+  <UAVariable NodeId="i=11652" BrowseName="StaticNumericNodeIdRange" ParentNodeId="i=11646" DataType="i=291" ValueRank="1" ArrayDimensions="0">
     <DisplayName>StaticNumericNodeIdRange</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4683,7 +4687,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11675</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=11681" BrowseName="InputArguments" ParentNodeId="i=11680" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11681" BrowseName="InputArguments" ParentNodeId="i=11680" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4710,7 +4714,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=11682" BrowseName="OutputArguments" ParentNodeId="i=11680" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11682" BrowseName="OutputArguments" ParentNodeId="i=11680" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4745,7 +4749,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11675</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=11684" BrowseName="InputArguments" ParentNodeId="i=11683" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11684" BrowseName="InputArguments" ParentNodeId="i=11683" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4781,7 +4785,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11675</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=11686" BrowseName="InputArguments" ParentNodeId="i=11685" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11686" BrowseName="InputArguments" ParentNodeId="i=11685" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4823,7 +4827,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=11687" BrowseName="OutputArguments" ParentNodeId="i=11685" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11687" BrowseName="OutputArguments" ParentNodeId="i=11685" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4858,7 +4862,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11675</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=11689" BrowseName="InputArguments" ParentNodeId="i=11688" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11689" BrowseName="InputArguments" ParentNodeId="i=11688" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4909,7 +4913,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11675</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=11691" BrowseName="InputArguments" ParentNodeId="i=11690" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11691" BrowseName="InputArguments" ParentNodeId="i=11690" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4936,7 +4940,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=11692" BrowseName="OutputArguments" ParentNodeId="i=11690" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11692" BrowseName="OutputArguments" ParentNodeId="i=11690" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4971,7 +4975,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11675</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=11694" BrowseName="InputArguments" ParentNodeId="i=11693" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11694" BrowseName="InputArguments" ParentNodeId="i=11693" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -5313,7 +5317,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2069</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=2076" BrowseName="ClientSoftwareCertificates" ParentNodeId="i=2075" DataType="i=344" ValueRank="1">
+  <UAVariable NodeId="i=2076" BrowseName="ClientSoftwareCertificates" ParentNodeId="i=2075" DataType="i=344" ValueRank="1" ArrayDimensions="0">
     <DisplayName>ClientSoftwareCertificates</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -5434,7 +5438,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2090</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=2092" BrowseName="NodesToAdd" ParentNodeId="i=2091" DataType="i=376" ValueRank="1">
+  <UAVariable NodeId="i=2092" BrowseName="NodesToAdd" ParentNodeId="i=2091" DataType="i=376" ValueRank="1" ArrayDimensions="0">
     <DisplayName>NodesToAdd</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -5449,7 +5453,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2090</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=2094" BrowseName="NodesToDelete" ParentNodeId="i=2093" DataType="i=382" ValueRank="1">
+  <UAVariable NodeId="i=2094" BrowseName="NodesToDelete" ParentNodeId="i=2093" DataType="i=382" ValueRank="1" ArrayDimensions="0">
     <DisplayName>NodesToDelete</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -5464,7 +5468,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2090</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=2096" BrowseName="ReferencesToAdd" ParentNodeId="i=2095" DataType="i=379" ValueRank="1">
+  <UAVariable NodeId="i=2096" BrowseName="ReferencesToAdd" ParentNodeId="i=2095" DataType="i=379" ValueRank="1" ArrayDimensions="0">
     <DisplayName>ReferencesToAdd</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -5479,7 +5483,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2090</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=2098" BrowseName="ReferencesToDelete" ParentNodeId="i=2097" DataType="i=385" ValueRank="1">
+  <UAVariable NodeId="i=2098" BrowseName="ReferencesToDelete" ParentNodeId="i=2097" DataType="i=385" ValueRank="1" ArrayDimensions="0">
     <DisplayName>ReferencesToDelete</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -5566,7 +5570,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2127</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2129" BrowseName="InputArguments" ParentNodeId="i=2127" ValueRank="1">
+  <UAVariable NodeId="i=2129" BrowseName="InputArguments" ParentNodeId="i=2127" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -5614,7 +5618,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2132</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=2134" BrowseName="Changes" ParentNodeId="i=2133" DataType="i=877" ValueRank="1">
+  <UAVariable NodeId="i=2134" BrowseName="Changes" ParentNodeId="i=2133" DataType="i=877" ValueRank="1" ArrayDimensions="0">
     <DisplayName>Changes</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -5629,7 +5633,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2132</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=2739" BrowseName="Changes" ParentNodeId="i=2738" DataType="i=897" ValueRank="1">
+  <UAVariable NodeId="i=2739" BrowseName="Changes" ParentNodeId="i=2738" DataType="i=897" ValueRank="1" ArrayDimensions="0">
     <DisplayName>Changes</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -5967,7 +5971,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2150</Reference>
     </References>
   </UAVariable>
-  <UAVariableType NodeId="i=2164" BrowseName="SamplingIntervalDiagnosticsArrayType" DataType="i=856" ValueRank="1">
+  <UAVariableType NodeId="i=2164" BrowseName="SamplingIntervalDiagnosticsArrayType" DataType="i=856" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SamplingIntervalDiagnosticsArrayType</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=12779</Reference>
@@ -6060,7 +6064,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2165</Reference>
     </References>
   </UAVariable>
-  <UAVariableType NodeId="i=2171" BrowseName="SubscriptionDiagnosticsArrayType" DataType="i=874" ValueRank="1">
+  <UAVariableType NodeId="i=2171" BrowseName="SubscriptionDiagnosticsArrayType" DataType="i=874" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SubscriptionDiagnosticsArrayType</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=12784</Reference>
@@ -6639,7 +6643,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2172</Reference>
     </References>
   </UAVariable>
-  <UAVariableType NodeId="i=2196" BrowseName="SessionDiagnosticsArrayType" DataType="i=865" ValueRank="1">
+  <UAVariableType NodeId="i=2196" BrowseName="SessionDiagnosticsArrayType" DataType="i=865" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SessionDiagnosticsArrayType</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=12816</Reference>
@@ -6737,7 +6741,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=12816</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=12822" BrowseName="LocaleIds" ParentNodeId="i=12816" DataType="i=295" ValueRank="1">
+  <UAVariable NodeId="i=12822" BrowseName="LocaleIds" ParentNodeId="i=12816" DataType="i=295" ValueRank="1" ArrayDimensions="0">
     <DisplayName>LocaleIds</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -7130,7 +7134,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2197</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2203" BrowseName="LocaleIds" ParentNodeId="i=2197" DataType="i=295" ValueRank="1">
+  <UAVariable NodeId="i=2203" BrowseName="LocaleIds" ParentNodeId="i=2197" DataType="i=295" ValueRank="1" ArrayDimensions="0">
     <DisplayName>LocaleIds</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -7434,7 +7438,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2197</Reference>
     </References>
   </UAVariable>
-  <UAVariableType NodeId="i=2243" BrowseName="SessionSecurityDiagnosticsArrayType" DataType="i=868" ValueRank="1">
+  <UAVariableType NodeId="i=2243" BrowseName="SessionSecurityDiagnosticsArrayType" DataType="i=868" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SessionSecurityDiagnosticsArrayType</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=12860</Reference>
@@ -7474,7 +7478,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=12860</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=12863" BrowseName="ClientUserIdHistory" ParentNodeId="i=12860" DataType="String" ValueRank="1">
+  <UAVariable NodeId="i=12863" BrowseName="ClientUserIdHistory" ParentNodeId="i=12860" DataType="String" ValueRank="1" ArrayDimensions="0">
     <DisplayName>ClientUserIdHistory</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -7561,7 +7565,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2244</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2247" BrowseName="ClientUserIdHistory" ParentNodeId="i=2244" DataType="String" ValueRank="1">
+  <UAVariable NodeId="i=2247" BrowseName="ClientUserIdHistory" ParentNodeId="i=2244" DataType="String" ValueRank="1" ArrayDimensions="0">
     <DisplayName>ClientUserIdHistory</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -7625,7 +7629,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
     </References>
   </UAVariableType>
-  <UAVariable NodeId="i=11488" BrowseName="OptionSetValues" ParentNodeId="i=11487" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=11488" BrowseName="OptionSetValues" ParentNodeId="i=11487" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OptionSetValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -7633,7 +7637,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=11487</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11701" BrowseName="BitMask" ParentNodeId="i=11487" DataType="Boolean" ValueRank="1">
+  <UAVariable NodeId="i=11701" BrowseName="BitMask" ParentNodeId="i=11487" DataType="Boolean" ValueRank="1" ArrayDimensions="0">
     <DisplayName>BitMask</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -7671,14 +7675,14 @@
       <Reference ReferenceType="HasTypeDefinition">i=2004</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="i=2254" BrowseName="ServerArray" ParentNodeId="i=2253" DataType="String" ValueRank="1" MinimumSamplingInterval="1000">
+  <UAVariable NodeId="i=2254" BrowseName="ServerArray" ParentNodeId="i=2253" DataType="String" ValueRank="1" ArrayDimensions="0" MinimumSamplingInterval="1000">
     <DisplayName>ServerArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=2253</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2255" BrowseName="NamespaceArray" ParentNodeId="i=2253" DataType="String" ValueRank="1" MinimumSamplingInterval="1000">
+  <UAVariable NodeId="i=2255" BrowseName="NamespaceArray" ParentNodeId="i=2253" DataType="String" ValueRank="1" ArrayDimensions="0" MinimumSamplingInterval="1000">
     <DisplayName>NamespaceArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -7829,14 +7833,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2253</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="i=2269" BrowseName="ServerProfileArray" ParentNodeId="i=2268" DataType="String" ValueRank="1">
+  <UAVariable NodeId="i=2269" BrowseName="ServerProfileArray" ParentNodeId="i=2268" DataType="String" ValueRank="1" ArrayDimensions="0">
     <DisplayName>ServerProfileArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=2268</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2271" BrowseName="LocaleIdArray" ParentNodeId="i=2268" DataType="i=295" ValueRank="1">
+  <UAVariable NodeId="i=2271" BrowseName="LocaleIdArray" ParentNodeId="i=2268" DataType="i=295" ValueRank="1" ArrayDimensions="0">
     <DisplayName>LocaleIdArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -7871,7 +7875,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2268</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3704" BrowseName="SoftwareCertificates" ParentNodeId="i=2268" DataType="i=344" ValueRank="1">
+  <UAVariable NodeId="i=3704" BrowseName="SoftwareCertificates" ParentNodeId="i=2268" DataType="i=344" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SoftwareCertificates</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -8131,14 +8135,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2275</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2289" BrowseName="SamplingIntervalDiagnosticsArray" ParentNodeId="i=2274" DataType="i=856" ValueRank="1">
+  <UAVariable NodeId="i=2289" BrowseName="SamplingIntervalDiagnosticsArray" ParentNodeId="i=2274" DataType="i=856" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SamplingIntervalDiagnosticsArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=2164</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2274</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2290" BrowseName="SubscriptionDiagnosticsArray" ParentNodeId="i=2274" DataType="i=874" ValueRank="1">
+  <UAVariable NodeId="i=2290" BrowseName="SubscriptionDiagnosticsArray" ParentNodeId="i=2274" DataType="i=874" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SubscriptionDiagnosticsArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=2171</Reference>
@@ -8154,14 +8158,14 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2274</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="i=3707" BrowseName="SessionDiagnosticsArray" ParentNodeId="i=3706" DataType="i=865" ValueRank="1">
+  <UAVariable NodeId="i=3707" BrowseName="SessionDiagnosticsArray" ParentNodeId="i=3706" DataType="i=865" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SessionDiagnosticsArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=2196</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=3706</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3708" BrowseName="SessionSecurityDiagnosticsArray" ParentNodeId="i=3706" DataType="i=868" ValueRank="1">
+  <UAVariable NodeId="i=3708" BrowseName="SessionSecurityDiagnosticsArray" ParentNodeId="i=3706" DataType="i=868" ValueRank="1" ArrayDimensions="0">
     <DisplayName>SessionSecurityDiagnosticsArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=2243</Reference>
@@ -8208,21 +8212,21 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2296</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11313" BrowseName="RedundantServerArray" ParentNodeId="i=2296" DataType="i=853" ValueRank="1">
+  <UAVariable NodeId="i=11313" BrowseName="RedundantServerArray" ParentNodeId="i=2296" DataType="i=853" ValueRank="1" ArrayDimensions="0">
     <DisplayName>RedundantServerArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=2296</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11314" BrowseName="ServerUriArray" ParentNodeId="i=2296" DataType="String" ValueRank="1">
+  <UAVariable NodeId="i=11314" BrowseName="ServerUriArray" ParentNodeId="i=2296" DataType="String" ValueRank="1" ArrayDimensions="0">
     <DisplayName>ServerUriArray</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=2296</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=14415" BrowseName="ServerNetworkGroups" ParentNodeId="i=2296" DataType="i=11944" ValueRank="1">
+  <UAVariable NodeId="i=14415" BrowseName="ServerNetworkGroups" ParentNodeId="i=2296" DataType="i=11944" ValueRank="1" ArrayDimensions="0">
     <DisplayName>ServerNetworkGroups</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -8291,14 +8295,14 @@
       <Boolean xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">false</Boolean>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=15187" BrowseName="StaticNodeIdTypes" ParentNodeId="i=15182" DataType="i=256" ValueRank="1">
+  <UAVariable NodeId="i=15187" BrowseName="StaticNodeIdTypes" ParentNodeId="i=15182" DataType="i=256" ValueRank="1" ArrayDimensions="0">
     <DisplayName>StaticNodeIdTypes</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=15182</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=15188" BrowseName="StaticNumericNodeIdRange" ParentNodeId="i=15182" DataType="i=291" ValueRank="1">
+  <UAVariable NodeId="i=15188" BrowseName="StaticNumericNodeIdRange" ParentNodeId="i=15182" DataType="i=291" ValueRank="1" ArrayDimensions="0">
     <DisplayName>StaticNumericNodeIdRange</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -8320,7 +8324,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2253</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=11493" BrowseName="InputArguments" ParentNodeId="i=11492" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11493" BrowseName="InputArguments" ParentNodeId="i=11492" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -8346,7 +8350,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=11494" BrowseName="OutputArguments" ParentNodeId="i=11492" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=11494" BrowseName="OutputArguments" ParentNodeId="i=11492" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -8365,7 +8369,9 @@
                 <Identifier>i=7</Identifier>
               </DataType>
               <ValueRank>1</ValueRank>
-              <ArrayDimensions />
+              <ArrayDimensions>
+                <UInt32>0</UInt32>
+              </ArrayDimensions>
             </Argument>
           </Body>
         </ExtensionObject>
@@ -8380,7 +8386,9 @@
                 <Identifier>i=7</Identifier>
               </DataType>
               <ValueRank>1</ValueRank>
-              <ArrayDimensions />
+              <ArrayDimensions>
+                <UInt32>0</UInt32>
+              </ArrayDimensions>
             </Argument>
           </Body>
         </ExtensionObject>
@@ -8394,7 +8402,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2253</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=12874" BrowseName="InputArguments" ParentNodeId="i=12873" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=12874" BrowseName="InputArguments" ParentNodeId="i=12873" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -8428,7 +8436,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2253</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=12750" BrowseName="InputArguments" ParentNodeId="i=12749" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=12750" BrowseName="InputArguments" ParentNodeId="i=12749" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -8469,7 +8477,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=12751" BrowseName="OutputArguments" ParentNodeId="i=12749" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=12751" BrowseName="OutputArguments" ParentNodeId="i=12749" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -8502,7 +8510,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2253</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=12887" BrowseName="InputArguments" ParentNodeId="i=12886" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=12887" BrowseName="InputArguments" ParentNodeId="i=12886" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -8950,7 +8958,7 @@
       <Field Name="HotAndMirrored" Value="5" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=7611" BrowseName="EnumStrings" ParentNodeId="i=851" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=7611" BrowseName="EnumStrings" ParentNodeId="i=851" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -9009,7 +9017,7 @@
       <Field Name="Unknown" Value="7" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=7612" BrowseName="EnumStrings" ParentNodeId="i=852" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=7612" BrowseName="EnumStrings" ParentNodeId="i=852" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -9278,7 +9286,7 @@
       <Field Name="DataTypeChanged" Value="16" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=11942" BrowseName="EnumValues" ParentNodeId="i=11941" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="i=11942" BrowseName="EnumValues" ParentNodeId="i=11941" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>

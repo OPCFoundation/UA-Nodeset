@@ -1749,7 +1749,7 @@
       <Field Name="INACTIVE_2" Value="2" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=9964" BrowseName="EnumValues" ParentNodeId="ns=1;i=9963" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=9964" BrowseName="EnumValues" ParentNodeId="ns=1;i=9963" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1802,7 +1802,7 @@
       <Field Name="CLEARED_2" Value="2" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=9966" BrowseName="EnumValues" ParentNodeId="ns=1;i=9965" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=9966" BrowseName="EnumValues" ParentNodeId="ns=1;i=9965" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1879,7 +1879,7 @@
       <Field Name="UNAVAILABLE_2" Value="2" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=9972" BrowseName="EnumValues" ParentNodeId="ns=1;i=9971" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=9972" BrowseName="EnumValues" ParentNodeId="ns=1;i=9971" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1935,7 +1935,7 @@
       <Field Name="UNAVAILABLE_5" Value="5" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=9974" BrowseName="EnumValues" ParentNodeId="ns=1;i=9973" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=9974" BrowseName="EnumValues" ParentNodeId="ns=1;i=9973" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2058,7 +2058,7 @@
       <Field Name="SAMPLE_3" Value="3" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=9980" BrowseName="EnumValues" ParentNodeId="ns=1;i=9979" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=9980" BrowseName="EnumValues" ParentNodeId="ns=1;i=9979" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2134,7 +2134,7 @@
       <Field Name="UNAVAILABLE_4" Value="4" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=9983" BrowseName="EnumValues" ParentNodeId="ns=1;i=9982" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=9983" BrowseName="EnumValues" ParentNodeId="ns=1;i=9982" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2226,7 +2226,7 @@
       <Field Name="UNAVAILABLE_5" Value="5" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=9986" BrowseName="EnumValues" ParentNodeId="ns=1;i=9985" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=9986" BrowseName="EnumValues" ParentNodeId="ns=1;i=9985" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2324,7 +2324,7 @@
       <Field Name="WORK_2" Value="2" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=9988" BrowseName="EnumValues" ParentNodeId="ns=1;i=9987" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=9988" BrowseName="EnumValues" ParentNodeId="ns=1;i=9987" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2424,7 +2424,7 @@
       <Field Name="USED_13" Value="13" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=9996" BrowseName="EnumValues" ParentNodeId="ns=1;i=9995" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=9996" BrowseName="EnumValues" ParentNodeId="ns=1;i=9995" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2691,7 +2691,7 @@
       <Field Name="PART_ID_41" Value="41" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=9999" BrowseName="EnumValues" ParentNodeId="ns=1;i=9998" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=9999" BrowseName="EnumValues" ParentNodeId="ns=1;i=9998" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3352,7 +3352,7 @@
       <Field Name="STANDARD_DEVIATION_9" Value="9" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=10003" BrowseName="EnumValues" ParentNodeId="ns=1;i=10002" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=10003" BrowseName="EnumValues" ParentNodeId="ns=1;i=10002" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3533,7 +3533,7 @@
       <Field Name="WEIGHT_25" Value="25" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=10005" BrowseName="EnumValues" ParentNodeId="ns=1;i=10004" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=10005" BrowseName="EnumValues" ParentNodeId="ns=1;i=10004" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3933,7 +3933,7 @@
       <Field Name="XML_4" Value="4" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=10007" BrowseName="EnumValues" ParentNodeId="ns=1;i=10006" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=10007" BrowseName="EnumValues" ParentNodeId="ns=1;i=10006" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4031,7 +4031,7 @@
       <Field Name="UNAVAILABLE_5" Value="5" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=10011" BrowseName="EnumValues" ParentNodeId="ns=1;i=10010" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=10011" BrowseName="EnumValues" ParentNodeId="ns=1;i=10010" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4131,7 +4131,7 @@
       <Field Name="UNAVAILABLE_4" Value="4" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=10013" BrowseName="EnumValues" ParentNodeId="ns=1;i=10012" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=10013" BrowseName="EnumValues" ParentNodeId="ns=1;i=10012" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4233,7 +4233,7 @@
       <Field Name="UNAVAILABLE_3" Value="3" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=10018" BrowseName="EnumValues" ParentNodeId="ns=1;i=10017" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=10018" BrowseName="EnumValues" ParentNodeId="ns=1;i=10017" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4310,7 +4310,7 @@
       <Field Name="UNAVAILABLE_5" Value="5" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=10021" BrowseName="EnumValues" ParentNodeId="ns=1;i=10020" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=10021" BrowseName="EnumValues" ParentNodeId="ns=1;i=10020" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4452,7 +4452,7 @@
       <Field Name="READY_4" Value="4" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=10030" BrowseName="EnumValues" ParentNodeId="ns=1;i=10029" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=10030" BrowseName="EnumValues" ParentNodeId="ns=1;i=10029" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4555,7 +4555,7 @@
       <Field Name="READY_4" Value="4" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=10035" BrowseName="EnumValues" ParentNodeId="ns=1;i=10034" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=10035" BrowseName="EnumValues" ParentNodeId="ns=1;i=10034" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4735,7 +4735,7 @@
       <Field Name="OVERLOAD_9" Value="9" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=10052" BrowseName="EnumValues" ParentNodeId="ns=1;i=10051" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=10052" BrowseName="EnumValues" ParentNodeId="ns=1;i=10051" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4912,7 +4912,7 @@
       <Field Name="SYNCHRONOUS_3" Value="3" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=10057" BrowseName="EnumValues" ParentNodeId="ns=1;i=10056" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=10057" BrowseName="EnumValues" ParentNodeId="ns=1;i=10056" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -4981,7 +4981,7 @@
       <Field Name="UNAVAILABLE_3" Value="3" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=10059" BrowseName="EnumValues" ParentNodeId="ns=1;i=10058" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=10059" BrowseName="EnumValues" ParentNodeId="ns=1;i=10058" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -5055,7 +5055,7 @@
       <Field Name="LOW_2" Value="2" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=10062" BrowseName="EnumValues" ParentNodeId="ns=1;i=10061" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=10062" BrowseName="EnumValues" ParentNodeId="ns=1;i=10061" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -5122,7 +5122,7 @@
       <Field Name="UNAVAILABLE_4" Value="4" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=10066" BrowseName="EnumValues" ParentNodeId="ns=1;i=10065" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=10066" BrowseName="EnumValues" ParentNodeId="ns=1;i=10065" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -5213,7 +5213,7 @@
       <Field Name="WARNING_4" Value="4" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=10069" BrowseName="EnumValues" ParentNodeId="ns=1;i=10068" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=10069" BrowseName="EnumValues" ParentNodeId="ns=1;i=10068" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -5356,7 +5356,7 @@
       <Field Name="UP_2" Value="2" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=10081" BrowseName="EnumValues" ParentNodeId="ns=1;i=10080" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=10081" BrowseName="EnumValues" ParentNodeId="ns=1;i=10080" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -5410,7 +5410,7 @@
       <Field Name="WEAR_3" Value="3" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="ns=1;i=10083" BrowseName="EnumValues" ParentNodeId="ns=1;i=10082" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=10083" BrowseName="EnumValues" ParentNodeId="ns=1;i=10082" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
