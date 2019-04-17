@@ -118,7 +118,7 @@
       <Field Name="DiscoveryServer" Value="3" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=7597" BrowseName="EnumStrings" ParentNodeId="i=307" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=7597" BrowseName="EnumStrings" ParentNodeId="i=307" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -309,7 +309,7 @@
       <Field Name="SignAndEncrypt" Value="3" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=7595" BrowseName="EnumStrings" ParentNodeId="i=302" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=7595" BrowseName="EnumStrings" ParentNodeId="i=302" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -354,7 +354,7 @@
       <Field Name="IssuedToken" Value="3" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=7596" BrowseName="EnumStrings" ParentNodeId="i=303" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=7596" BrowseName="EnumStrings" ParentNodeId="i=303" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -521,7 +521,7 @@
       <Field Name="Renew" Value="1" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=7598" BrowseName="EnumStrings" ParentNodeId="i=315" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=7598" BrowseName="EnumStrings" ParentNodeId="i=315" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -820,7 +820,7 @@
       <Field Name="View" Value="26501356" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=11881" BrowseName="EnumValues" ParentNodeId="i=348" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="i=11881" BrowseName="EnumValues" ParentNodeId="i=348" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1657,7 +1657,7 @@
       <Field Name="AccessLevelEx" Value="25" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=15036" BrowseName="OptionSetValues" ParentNodeId="i=347" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=15036" BrowseName="OptionSetValues" ParentNodeId="i=347" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OptionSetValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1812,7 +1812,7 @@
       <Field Name="Invalid" Value="3" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=7603" BrowseName="EnumStrings" ParentNodeId="i=510" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=7603" BrowseName="EnumStrings" ParentNodeId="i=510" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1888,7 +1888,7 @@
       <Field Name="TargetInfo" Value="60" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=11883" BrowseName="EnumValues" ParentNodeId="i=517" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="i=11883" BrowseName="EnumValues" ParentNodeId="i=517" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2328,7 +2328,7 @@
       <Field Name="BitwiseOr" Value="17" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=7605" BrowseName="EnumStrings" ParentNodeId="i=576" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=7605" BrowseName="EnumStrings" ParentNodeId="i=576" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2617,7 +2617,7 @@
       <Field Name="Invalid" Value="4" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=7606" BrowseName="EnumStrings" ParentNodeId="i=625" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=7606" BrowseName="EnumStrings" ParentNodeId="i=625" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2883,7 +2883,7 @@
       <Field Name="Delete" Value="4" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=11884" BrowseName="EnumValues" ParentNodeId="i=11234" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="i=11884" BrowseName="EnumValues" ParentNodeId="i=11234" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2968,7 +2968,7 @@
       <Field Name="Remove" Value="4" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=11885" BrowseName="EnumValues" ParentNodeId="i=11293" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="i=11885" BrowseName="EnumValues" ParentNodeId="i=11293" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3188,7 +3188,7 @@
       <Field Name="Reporting" Value="2" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=7608" BrowseName="EnumStrings" ParentNodeId="i=716" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=7608" BrowseName="EnumStrings" ParentNodeId="i=716" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3227,7 +3227,7 @@
       <Field Name="StatusValueTimestamp" Value="2" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=7609" BrowseName="EnumStrings" ParentNodeId="i=717" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=7609" BrowseName="EnumStrings" ParentNodeId="i=717" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -3266,7 +3266,7 @@
       <Field Name="Percent" Value="2" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=7610" BrowseName="EnumStrings" ParentNodeId="i=718" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=7610" BrowseName="EnumStrings" ParentNodeId="i=718" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>

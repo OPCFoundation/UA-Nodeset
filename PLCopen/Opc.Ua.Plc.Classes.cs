@@ -125,9 +125,7 @@ namespace Opc.Ua.Plc
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Resources Object.
-        /// </summary>
+        /// <remarks />
         public ConfigurableObjectState Resources
         {
             get
@@ -146,9 +144,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the GlobalVars Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState GlobalVars
         {
             get
@@ -167,9 +163,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the AccessVars Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState AccessVars
         {
             get
@@ -188,9 +182,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the ConfigVars Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState ConfigVars
         {
             get
@@ -209,9 +201,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the Configuration Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState Configuration
         {
             get
@@ -230,9 +220,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the Diagnostic Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState Diagnostic
         {
             get
@@ -592,9 +580,7 @@ namespace Opc.Ua.Plc
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Tasks Object.
-        /// </summary>
+        /// <remarks />
         public ConfigurableObjectState Tasks
         {
             get
@@ -613,9 +599,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the Programs Object.
-        /// </summary>
+        /// <remarks />
         public ConfigurableObjectState Programs
         {
             get
@@ -634,9 +618,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the GlobalVars Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState GlobalVars
         {
             get
@@ -655,9 +637,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the Configuration Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState Configuration
         {
             get
@@ -676,9 +656,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the Diagnostic Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState Diagnostic
         {
             get
@@ -953,9 +931,7 @@ namespace Opc.Ua.Plc
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Body Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<XmlElement> Body
         {
             get
@@ -1122,9 +1098,7 @@ namespace Opc.Ua.Plc
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Program Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<ExtensionObject> Program
         {
             get
@@ -1291,9 +1265,7 @@ namespace Opc.Ua.Plc
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the FunctionBlock Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState FunctionBlock
         {
             get
@@ -1471,9 +1443,7 @@ namespace Opc.Ua.Plc
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Priority Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<uint> Priority
         {
             get
@@ -1492,9 +1462,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the Interval Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> Interval
         {
             get
@@ -1513,9 +1481,7 @@ namespace Opc.Ua.Plc
             }
         }
 
-        /// <summary>
-        /// A description for the Single Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> Single
         {
             get

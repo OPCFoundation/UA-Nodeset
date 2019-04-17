@@ -411,18 +411,14 @@ namespace Sercos
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// Flat list of Parameters
-        /// </summary>
+        /// <remarks />
         public new FunctionalGroupState ParameterSet
         {
             get { return (FunctionalGroupState)base.ParameterSet; }
             set { base.ParameterSet = value; }
         }
 
-        /// <summary>
-        /// A description for the ProfileSet Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState ProfileSet
         {
             get
@@ -441,9 +437,7 @@ namespace Sercos
             }
         }
 
-        /// <summary>
-        /// A description for the ClassSet Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState ClassSet
         {
             get
@@ -462,9 +456,7 @@ namespace Sercos
             }
         }
 
-        /// <summary>
-        /// A description for the FunctionGroupSet Object.
-        /// </summary>
+        /// <remarks />
         public FunctionalGroupState FunctionGroupSet
         {
             get
@@ -992,9 +984,7 @@ namespace Sercos
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Attribute Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<uint> Attribute
         {
             get
@@ -1013,9 +1003,7 @@ namespace Sercos
             }
         }
 
-        /// <summary>
-        /// A description for the DisplayValue Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> DisplayValue
         {
             get
@@ -1034,9 +1022,7 @@ namespace Sercos
             }
         }
 
-        /// <summary>
-        /// A description for the DisplayMaxValue Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> DisplayMaxValue
         {
             get
@@ -1055,9 +1041,7 @@ namespace Sercos
             }
         }
 
-        /// <summary>
-        /// A description for the DisplayMinValue Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> DisplayMinValue
         {
             get
@@ -1076,9 +1060,7 @@ namespace Sercos
             }
         }
 
-        /// <summary>
-        /// A description for the Exponent Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<sbyte> Exponent
         {
             get
@@ -1097,9 +1079,7 @@ namespace Sercos
             }
         }
 
-        /// <summary>
-        /// A description for the MaxValue Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState MaxValue
         {
             get
@@ -1118,9 +1098,7 @@ namespace Sercos
             }
         }
 
-        /// <summary>
-        /// A description for the MinValue Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState MinValue
         {
             get
@@ -1139,9 +1117,7 @@ namespace Sercos
             }
         }
 
-        /// <summary>
-        /// A description for the ProcedureCommand Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<bool> ProcedureCommand
         {
             get

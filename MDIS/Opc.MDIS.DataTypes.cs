@@ -39,28 +39,22 @@ namespace Opc.MDIS
     #region SignatureStatusEnum Enumeration
     #if (!OPCUA_EXCLUDE_SignatureStatusEnum)
     /// <summary>
-    /// A description for the SignatureStatusEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.MDIS.Namespaces.MDIS)]
     public enum SignatureStatusEnum
     {
-        /// <summary>
-        /// A description for the NotAvailable field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "NotAvailable_1")]
         NotAvailable = 1,
 
-        /// <summary>
-        /// A description for the Completed field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Completed_2")]
         Completed = 2,
 
-        /// <summary>
-        /// A description for the Failed field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Failed_4")]
         Failed = 4,
     }
@@ -155,34 +149,26 @@ namespace Opc.MDIS
     #region SetCalculatedPositionEnum Enumeration
     #if (!OPCUA_EXCLUDE_SetCalculatedPositionEnum)
     /// <summary>
-    /// A description for the SetCalculatedPositionEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.MDIS.Namespaces.MDIS)]
     public enum SetCalculatedPositionEnum
     {
-        /// <summary>
-        /// A description for the Initial field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Initial_0")]
         Initial = 0,
 
-        /// <summary>
-        /// A description for the Inprogress field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Inprogress_1")]
         Inprogress = 1,
 
-        /// <summary>
-        /// A description for the Complete field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Complete_2")]
         Complete = 2,
 
-        /// <summary>
-        /// A description for the Fault field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Fault_4")]
         Fault = 4,
     }
@@ -277,28 +263,22 @@ namespace Opc.MDIS
     #region CommandEnum Enumeration
     #if (!OPCUA_EXCLUDE_CommandEnum)
     /// <summary>
-    /// A description for the CommandEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.MDIS.Namespaces.MDIS)]
     public enum CommandEnum
     {
-        /// <summary>
-        /// A description for the Close field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Close_1")]
         Close = 1,
 
-        /// <summary>
-        /// A description for the Open field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Open_2")]
         Open = 2,
 
-        /// <summary>
-        /// A description for the None field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "None_4")]
         None = 4,
     }
@@ -393,22 +373,18 @@ namespace Opc.MDIS
     #region ChokeCommandEnum Enumeration
     #if (!OPCUA_EXCLUDE_ChokeCommandEnum)
     /// <summary>
-    /// A description for the ChokeCommandEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.MDIS.Namespaces.MDIS)]
     public enum ChokeCommandEnum
     {
-        /// <summary>
-        /// A description for the Close field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Close_1")]
         Close = 1,
 
-        /// <summary>
-        /// A description for the Open field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Open_2")]
         Open = 2,
     }
@@ -503,28 +479,22 @@ namespace Opc.MDIS
     #region SEMEnum Enumeration
     #if (!OPCUA_EXCLUDE_SEMEnum)
     /// <summary>
-    /// A description for the SEMEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.MDIS.Namespaces.MDIS)]
     public enum SEMEnum
     {
-        /// <summary>
-        /// A description for the SEM_A field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "SEM_A_1")]
         SEM_A = 1,
 
-        /// <summary>
-        /// A description for the SEM_B field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "SEM_B_2")]
         SEM_B = 2,
 
-        /// <summary>
-        /// A description for the Auto field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Auto_4")]
         Auto = 4,
     }
@@ -619,34 +589,26 @@ namespace Opc.MDIS
     #region ValvePositionEnum Enumeration
     #if (!OPCUA_EXCLUDE_ValvePositionEnum)
     /// <summary>
-    /// A description for the ValvePositionEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.MDIS.Namespaces.MDIS)]
     public enum ValvePositionEnum
     {
-        /// <summary>
-        /// A description for the Closed field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Closed_1")]
         Closed = 1,
 
-        /// <summary>
-        /// A description for the Open field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Open_2")]
         Open = 2,
 
-        /// <summary>
-        /// A description for the Moving field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Moving_4")]
         Moving = 4,
 
-        /// <summary>
-        /// A description for the Unknown field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Unknown_8")]
         Unknown = 8,
     }
@@ -741,22 +703,18 @@ namespace Opc.MDIS
     #region ChokeMoveEnum Enumeration
     #if (!OPCUA_EXCLUDE_ChokeMoveEnum)
     /// <summary>
-    /// A description for the ChokeMoveEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.MDIS.Namespaces.MDIS)]
     public enum ChokeMoveEnum
     {
-        /// <summary>
-        /// A description for the Moving field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Moving_1")]
         Moving = 1,
 
-        /// <summary>
-        /// A description for the Stopped field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Stopped_2")]
         Stopped = 2,
     }
@@ -851,7 +809,7 @@ namespace Opc.MDIS
     #region MDISVersionDataType Class
     #if (!OPCUA_EXCLUDE_MDISVersionDataType)
     /// <summary>
-    /// A description for the MDISVersionDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -888,9 +846,7 @@ namespace Opc.MDIS
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the MajorVersion field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MajorVersion", IsRequired = false, Order = 1)]
         public byte MajorVersion
         {
@@ -898,9 +854,7 @@ namespace Opc.MDIS
             set { m_majorVersion = value; }
         }
 
-        /// <summary>
-        /// A description for the MinorVersion field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "MinorVersion", IsRequired = false, Order = 2)]
         public byte MinorVersion
         {
@@ -908,9 +862,7 @@ namespace Opc.MDIS
             set { m_minorVersion = value; }
         }
 
-        /// <summary>
-        /// A description for the Build field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Build", IsRequired = false, Order = 3)]
         public byte Build
         {

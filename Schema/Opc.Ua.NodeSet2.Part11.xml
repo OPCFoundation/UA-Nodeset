@@ -577,7 +577,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2999</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3029" BrowseName="NewValues" ParentNodeId="i=2999" DataType="i=920" ValueRank="1">
+  <UAVariable NodeId="i=3029" BrowseName="NewValues" ParentNodeId="i=2999" DataType="i=920" ValueRank="1" ArrayDimensions="0">
     <DisplayName>NewValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -585,7 +585,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2999</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3030" BrowseName="OldValues" ParentNodeId="i=2999" DataType="i=920" ValueRank="1">
+  <UAVariable NodeId="i=3030" BrowseName="OldValues" ParentNodeId="i=2999" DataType="i=920" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OldValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -619,7 +619,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=3006</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3032" BrowseName="NewValues" ParentNodeId="i=3006" DataType="i=23" ValueRank="1">
+  <UAVariable NodeId="i=3032" BrowseName="NewValues" ParentNodeId="i=3006" DataType="i=23" ValueRank="1" ArrayDimensions="0">
     <DisplayName>NewValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -627,7 +627,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=3006</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3033" BrowseName="OldValues" ParentNodeId="i=3006" DataType="i=23" ValueRank="1">
+  <UAVariable NodeId="i=3033" BrowseName="OldValues" ParentNodeId="i=3006" DataType="i=23" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OldValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -684,7 +684,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=3014</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3034" BrowseName="OldValues" ParentNodeId="i=3014" DataType="i=23" ValueRank="1">
+  <UAVariable NodeId="i=3034" BrowseName="OldValues" ParentNodeId="i=3014" DataType="i=23" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OldValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -700,7 +700,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=3012</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=3020" BrowseName="ReqTimes" ParentNodeId="i=3019" DataType="i=294" ValueRank="1">
+  <UAVariable NodeId="i=3020" BrowseName="ReqTimes" ParentNodeId="i=3019" DataType="i=294" ValueRank="1" ArrayDimensions="0">
     <DisplayName>ReqTimes</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -708,7 +708,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=3019</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3021" BrowseName="OldValues" ParentNodeId="i=3019" DataType="i=23" ValueRank="1">
+  <UAVariable NodeId="i=3021" BrowseName="OldValues" ParentNodeId="i=3019" DataType="i=23" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OldValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -724,7 +724,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=3012</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=3023" BrowseName="EventIds" ParentNodeId="i=3022" DataType="ByteString" ValueRank="1">
+  <UAVariable NodeId="i=3023" BrowseName="EventIds" ParentNodeId="i=3022" DataType="ByteString" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EventIds</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -765,7 +765,7 @@
       <Field Name="Unknown" Value="4" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=7614" BrowseName="EnumStrings" ParentNodeId="i=890" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=7614" BrowseName="EnumStrings" ParentNodeId="i=890" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>

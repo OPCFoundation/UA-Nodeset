@@ -382,7 +382,7 @@
       </Field>
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=12169" BrowseName="EnumValues" ParentNodeId="i=120" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="i=12169" BrowseName="EnumValues" ParentNodeId="i=120" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -534,37 +534,37 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=11432" BrowseName="EnumStrings" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=11432" BrowseName="EnumStrings" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3071" BrowseName="EnumValues" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="i=3071" BrowseName="EnumValues" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=12745" BrowseName="OptionSetValues" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=12745" BrowseName="OptionSetValues" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OptionSetValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3072" BrowseName="InputArguments" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=3072" BrowseName="InputArguments" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=3073" BrowseName="OutputArguments" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=3073" BrowseName="OutputArguments" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=16306" BrowseName="DefaultInputValues" ValueRank="1">
+  <UAVariable NodeId="i=16306" BrowseName="DefaultInputValues" ValueRank="1" ArrayDimensions="0">
     <DisplayName>DefaultInputValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -629,7 +629,7 @@
       <Field Name="Opaque" Value="3" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=7591" BrowseName="EnumStrings" ParentNodeId="i=256" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=7591" BrowseName="EnumStrings" ParentNodeId="i=256" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -679,7 +679,7 @@
       <Field Name="View" Value="128" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=11878" BrowseName="EnumValues" ParentNodeId="i=257" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="i=11878" BrowseName="EnumValues" ParentNodeId="i=257" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -852,7 +852,7 @@
       <Field Name="AddNode" Value="16" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=15030" BrowseName="OptionSetValues" ParentNodeId="i=94" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=15030" BrowseName="OptionSetValues" ParentNodeId="i=94" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OptionSetValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -965,7 +965,7 @@
       <Field Name="TimestampWrite" Value="6" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=15032" BrowseName="OptionSetValues" ParentNodeId="i=15031" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=15032" BrowseName="OptionSetValues" ParentNodeId="i=15031" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OptionSetValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1031,7 +1031,7 @@
       <Field Name="WriteFullArrayOnly" Value="10" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=15407" BrowseName="OptionSetValues" ParentNodeId="i=15406" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=15407" BrowseName="OptionSetValues" ParentNodeId="i=15406" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OptionSetValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1110,7 +1110,7 @@
       <Field Name="HistoryWrite" Value="3" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=15034" BrowseName="OptionSetValues" ParentNodeId="i=15033" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=15034" BrowseName="OptionSetValues" ParentNodeId="i=15033" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OptionSetValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1154,7 +1154,7 @@
       <Field Name="SessionRequired" Value="2" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=15035" BrowseName="OptionSetValues" ParentNodeId="i=95" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=15035" BrowseName="OptionSetValues" ParentNodeId="i=95" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OptionSetValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1209,7 +1209,7 @@
       <Field Name="Union" Value="2" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=14528" BrowseName="EnumStrings" ParentNodeId="i=98" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=14528" BrowseName="EnumStrings" ParentNodeId="i=98" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>

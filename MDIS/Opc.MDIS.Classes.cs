@@ -84,10 +84,10 @@ namespace Opc.MDIS
         #region Initialization String
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEAEQAAAEVu" +
-           "YWJsZURpc2FibGVUeXBlAQHAAAAvAQHAAMAAAAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFy" +
+           "YWJsZURpc2FibGVUeXBlAQHAAAAvAQHAAMAAAAABAf////8BAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFy" +
            "Z3VtZW50cwEBwQAALgBEwQAAAJYBAAAAAQAqAQFUAAAABgAAAEVuYWJsZQAB/////wAAAAADAAAAADcA" +
            "AABEaXNhYmxlIHRoZSBkZXZpY2UgKGZhbHNlKSwgb3IgZW5hYmxlIHRoZSBkZXZpY2UgKHRydWUpAQAo" +
-           "AQEAAAABAf////8AAAAA";
+           "AQEAAAABAAAAAAAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -106,32 +106,27 @@ namespace Opc.MDIS
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            bool enable = (bool)inputArguments[0];
+            bool enable = (bool)_inputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     enable);
             }
 
@@ -256,10 +251,10 @@ namespace Opc.MDIS
 
         private const string EnableDisable_InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEADQAAAEVu" +
-           "YWJsZURpc2FibGUBAcMAAC8BAcMAwwAAAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1l" +
+           "YWJsZURpc2FibGUBAcMAAC8BAcMAwwAAAAEB/////wEAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1l" +
            "bnRzAQHEAAAuAETEAAAAlgEAAAABACoBAVQAAAAGAAAARW5hYmxlAAH/////AAAAAAMAAAAANwAAAERp" +
            "c2FibGUgdGhlIGRldmljZSAoZmFsc2UpLCBvciBlbmFibGUgdGhlIGRldmljZSAodHJ1ZSkBACgBAQAA" +
-           "AAEB/////wAAAAA=";
+           "AAEAAAAAAAAAAQH/////AAAAAA==";
 
         private const string TagId_InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////91YIkKAgAAAAEABQAAAFRh" +
@@ -273,20 +268,18 @@ namespace Opc.MDIS
            "BAAAAAf/////AQH/////AAAAABVgiQoCAAAAAQAHAAAAV2FybmluZwEB8QEALwA/8QEAAAAB/////wEB" +
            "/////wAAAAAVYIkKAgAAAAEACwAAAFdhcm5pbmdDb2RlAQGOBAAvAD+OBAAAAAf/////AQH/////AAAA" +
            "ABVgiQoCAAAAAQAHAAAARW5hYmxlZAEB3AEALwA/3AEAAAAB/////wEB/////wAAAAAEYYIKBAAAAAEA" +
-           "DQAAAEVuYWJsZURpc2FibGUBAcMAAC8BAcMAwwAAAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0" +
+           "DQAAAEVuYWJsZURpc2FibGUBAcMAAC8BAcMAwwAAAAEB/////wEAAAAXYKkKAgAAAAAADgAAAElucHV0" +
            "QXJndW1lbnRzAQHEAAAuAETEAAAAlgEAAAABACoBAVQAAAAGAAAARW5hYmxlAAH/////AAAAAAMAAAAA" +
            "NwAAAERpc2FibGUgdGhlIGRldmljZSAoZmFsc2UpLCBvciBlbmFibGUgdGhlIGRldmljZSAodHJ1ZSkB" +
-           "ACgBAQAAAAEB/////wAAAAB1YIkKAgAAAAEABQAAAFRhZ0lkAQHFAAMAAAAABgAAAFRhZyBJRAMAAAAA" +
-           "KAAAAFRoZSBpZCB1c2VkIGluIG90aGVyIHBhcnRzIG9mIHRoZSBzeXN0ZW0ALgBExQAAAAAM/////wEB" +
-           "/////wAAAAA=";
+           "ACgBAQAAAAEAAAAAAAAAAQH/////AAAAAHVgiQoCAAAAAQAFAAAAVGFnSWQBAcUAAwAAAAAGAAAAVGFn" +
+           "IElEAwAAAAAoAAAAVGhlIGlkIHVzZWQgaW4gb3RoZXIgcGFydHMgb2YgdGhlIHN5c3RlbQAuAETFAAAA" +
+           "AAz/////AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Fault Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<bool> Fault
         {
             get
@@ -305,9 +298,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the FaultCode Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<uint> FaultCode
         {
             get
@@ -326,9 +317,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the Warning Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<bool> Warning
         {
             get
@@ -347,9 +336,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the WarningCode Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<uint> WarningCode
         {
             get
@@ -368,9 +355,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the Enabled Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<bool> Enabled
         {
             get
@@ -389,9 +374,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the EnableDisableType Method.
-        /// </summary>
+        /// <remarks />
         public EnableDisableMethodState EnableDisable
         {
             get
@@ -410,9 +393,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// The id used in other parts of the system
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> TagId
         {
             get
@@ -836,9 +817,7 @@ namespace Opc.MDIS
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the MajorVersion Property.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<byte> MajorVersion
         {
             get
@@ -857,9 +836,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the MinorVersion Property.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<byte> MinorVersion
         {
             get
@@ -878,9 +855,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the Build Property.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<byte> Build
         {
             get
@@ -1322,7 +1297,7 @@ namespace Opc.MDIS
         #region Initialization String
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEACAAAAE1v" +
-           "dmVUeXBlAQG+AAAvAQG+AL4AAAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEB" +
+           "dmVUeXBlAQG+AAAvAQG+AL4AAAABAf////8BAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEB" +
            "vwAALgBEvwAAAJYFAAAAAQAqAQF6AAAACQAAAERpcmVjdGlvbgEBAwD/////AAAAAAMAAAAAWAAAAFRo" +
            "ZSBlbnVtZXJhdGlvbiBpbmRpY2F0ZXMgd2hldGhlciB0aGUgY29tbWFuZCBpcyB0byBvcGVuIHRoZSB2" +
            "YWx2ZSBvciB0byBjbG9zZSB0aGUgdmFsdmUBACoBAYIAAAARAAAAT3ZlcnJpZGVJbnRlcmxvY2sAAf//" +
@@ -1333,7 +1308,7 @@ namespace Opc.MDIS
            "biBpbmRpY2F0aW5nIGlmIGEgcHJvZmlsZSBzaG91bGQgYmUgZ2VuZXJhdGVkIGJ5IHRoaXMgbW92ZSBj" +
            "b21tYW5kIHJlcXVlc3QuAQAqAQFlAAAADwAAAFNodXRkb3duUmVxdWVzdAAB/////wAAAAADAAAAAD8A" +
            "AABCb29sZWFuIGluZGljYXRlcyB0aGF0IHRoaXMgY29tbWFuZCBpcyBhIHNodXRkb3duIG1vdmUgY29t" +
-           "bWFuZC4BACgBAQAAAAEB/////wAAAAA=";
+           "bWFuZC4BACgBAQAAAAEAAAAAAAAAAQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -1352,36 +1327,31 @@ namespace Opc.MDIS
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            CommandEnum direction = (CommandEnum)inputArguments[0];
-            bool overrideInterlock = (bool)inputArguments[1];
-            SEMEnum sEM = (SEMEnum)inputArguments[2];
-            bool signature = (bool)inputArguments[3];
-            bool shutdownRequest = (bool)inputArguments[4];
+            CommandEnum direction = (CommandEnum)_inputArguments[0];
+            bool overrideInterlock = (bool)_inputArguments[1];
+            SEMEnum sEM = (SEMEnum)_inputArguments[2];
+            bool signature = (bool)_inputArguments[3];
+            bool shutdownRequest = (bool)_inputArguments[4];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     direction,
                     overrideInterlock,
                     sEM,
@@ -1461,13 +1431,14 @@ namespace Opc.MDIS
         #region Initialization String
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEADQAAAENo" +
-           "b2tlTW92ZVR5cGUBAfIBAC8BAfIB8gEAAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1l" +
+           "b2tlTW92ZVR5cGUBAfIBAC8BAfIB8gEAAAEB/////wEAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1l" +
            "bnRzAQHzAQAuAETzAQAAlgMAAAABACoBAVEAAAAIAAAAUG9zaXRpb24ACv////8AAAAAAwAAAAAyAAAA" +
            "QSBudW1iZXIgKGluIHByZXJjZW50KSBpbmRpY2F0aW5nIHRoZSBwZXJjZW50IG9wZW4BACoBAYIAAAAR" +
            "AAAAT3ZlcnJpZGVJbnRlcmxvY2sAAf////8AAAAAAwAAAABaAAAAQm9vbGVhbiBpbmRpY2F0aW5nIGlm" +
            "IHRoZSBvcGVuIG9yIGNsb3NlIGNvbW1hbmQgc2hvdWxkIG92ZXJyaWRlIGFueSBkZWZlYXQgYWJsZSBp" +
            "bnRlcmxvY2tzAQAqAQFPAAAAAwAAAFNFTQEBBQD/////AAAAAAMAAAAAMwAAAFRoZSBzZWxlY3Rpb24g" +
-           "b2Ygd2hpY2ggU0VNIHRvIHNlbmQgdGhlIGNvbW1hbmQgdG8uIAEAKAEBAAAAAQH/////AAAAAA==";
+           "b2Ygd2hpY2ggU0VNIHRvIHNlbmQgdGhlIGNvbW1hbmQgdG8uIAEAKAEBAAAAAQAAAAAAAAABAf////8A" +
+           "AAAA";
         #endregion
         #endif
         #endregion
@@ -1486,34 +1457,29 @@ namespace Opc.MDIS
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            float position = (float)inputArguments[0];
-            bool overrideInterlock = (bool)inputArguments[1];
-            SEMEnum sEM = (SEMEnum)inputArguments[2];
+            float position = (float)_inputArguments[0];
+            bool overrideInterlock = (bool)_inputArguments[1];
+            SEMEnum sEM = (SEMEnum)_inputArguments[2];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     position,
                     overrideInterlock,
                     sEM);
@@ -1589,7 +1555,7 @@ namespace Opc.MDIS
         #region Initialization String
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEADQAAAENo" +
-           "b2tlU3RlcFR5cGUBAfQBAC8BAfQB9AEAAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1l" +
+           "b2tlU3RlcFR5cGUBAfQBAC8BAfQB9AEAAAEB/////wEAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1l" +
            "bnRzAQH1AQAuAET1AQAAlgQAAAABACoBAVUAAAAJAAAARGlyZWN0aW9uAQG9Av////8AAAAAAwAAAAAz" +
            "AAAAdHJ1ZSBpcyBvcGVuaW5nIGEgdmFsdmUsIGZhbHNlIGlmIGNsb3NpbmcgdGhlIHZhbHZlAQAqAQFD" +
            "AAAABQAAAFN0ZXBzAAX/////AAAAAAMAAAAAJwAAAG51bWJlciBvZiBzdGVwcyB0byBvcGVuL2Nsb3Nl" +
@@ -1597,7 +1563,7 @@ namespace Opc.MDIS
            "b29sZWFuIGluZGljYXRpbmcgaWYgdGhlIG9wZW4gb3IgY2xvc2UgY29tbWFuZCBzaG91bGQgb3ZlcnJp" +
            "ZGUgYW55IGRlZmVhdCBhYmxlIGludGVybG9ja3MBACoBAU8AAAADAAAAU0VNAQEFAP////8AAAAAAwAA" +
            "AAAzAAAAVGhlIHNlbGVjdGlvbiBvZiB3aGljaCBTRU0gdG8gc2VuZCB0aGUgY29tbWFuZCB0by4gAQAo" +
-           "AQEAAAABAf////8AAAAA";
+           "AQEAAAABAAAAAAAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -1616,35 +1582,30 @@ namespace Opc.MDIS
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            ChokeCommandEnum direction = (ChokeCommandEnum)inputArguments[0];
-            ushort steps = (ushort)inputArguments[1];
-            bool overrideInterlock = (bool)inputArguments[2];
-            SEMEnum sEM = (SEMEnum)inputArguments[3];
+            ChokeCommandEnum direction = (ChokeCommandEnum)_inputArguments[0];
+            ushort steps = (ushort)_inputArguments[1];
+            bool overrideInterlock = (bool)_inputArguments[2];
+            SEMEnum sEM = (SEMEnum)_inputArguments[3];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     direction,
                     steps,
                     overrideInterlock,
@@ -1722,10 +1683,10 @@ namespace Opc.MDIS
         #region Initialization String
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEAHgAAAENo" +
-           "b2tlU2V0Q2FsY3VsYXRlZFBvc2l0aW9uVHlwZQEBAgUALwEBAgUCBQAAAQH/////AQAAABVgqQoCAAAA" +
+           "b2tlU2V0Q2FsY3VsYXRlZFBvc2l0aW9uVHlwZQEBAgUALwEBAgUCBQAAAQH/////AQAAABdgqQoCAAAA" +
            "AAAOAAAASW5wdXRBcmd1bWVudHMBAQMFAC4ARAMFAACWAQAAAAEAKgEBUAAAAAgAAABQb3NpdGlvbgAK" +
            "/////wAAAAADAAAAADEAAABBIG51bWJlciAoaW4gcGVyY2VudCkgaW5kaWNhdGluZyB0aGUgcGVyY2Vu" +
-           "dCBvcGVuAQAoAQEAAAABAf////8AAAAA";
+           "dCBvcGVuAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -1744,32 +1705,27 @@ namespace Opc.MDIS
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            float position = (float)inputArguments[0];
+            float position = (float)_inputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     position);
             }
 
@@ -1841,10 +1797,10 @@ namespace Opc.MDIS
         #region Initialization String
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEADgAAAFdy" +
-           "aXRlU3RhdGVUeXBlAQHIBAAvAQHIBMgEAAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3Vt" +
+           "aXRlU3RhdGVUeXBlAQHIBAAvAQHIBMgEAAABAf////8BAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFyZ3Vt" +
            "ZW50cwEByQQALgBEyQQAAJYBAAAAAQAqAQFNAAAABQAAAFN0YXRlAAH/////AAAAAAMAAAAAMQAAAEJv" +
-           "b2xlYW4gc3RhdGUgdGhhdCBpcyBiZWluZyB3cml0dGVuIHRvIHRoZSBvYmplY3QBACgBAQAAAAEB////" +
-           "/wAAAAA=";
+           "b2xlYW4gc3RhdGUgdGhhdCBpcyBiZWluZyB3cml0dGVuIHRvIHRoZSBvYmplY3QBACgBAQAAAAEAAAAA" +
+           "AAAAAQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -1863,32 +1819,27 @@ namespace Opc.MDIS
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            bool state = (bool)inputArguments[0];
+            bool state = (bool)_inputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     state);
             }
 
@@ -1960,10 +1911,10 @@ namespace Opc.MDIS
         #region Initialization String
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEADgAAAFdy" +
-           "aXRlVmFsdWVUeXBlAQHKBAAvAQHKBMoEAAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3Vt" +
+           "aXRlVmFsdWVUeXBlAQHKBAAvAQHKBMoEAAABAf////8BAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFyZ3Vt" +
            "ZW50cwEBywQALgBEywQAAJYBAAAAAQAqAQFMAAAABQAAAFN0YXRlAAf/////AAAAAAMAAAAAMAAAAFVu" +
-           "aXQzMiBzdGF0ZSB0aGF0IGlzIGJlaW5nIHdyaXR0ZW4gdG8gdGhlIG9iamVjdAEAKAEBAAAAAQH/////" +
-           "AAAAAA==";
+           "aXQzMiBzdGF0ZSB0aGF0IGlzIGJlaW5nIHdyaXR0ZW4gdG8gdGhlIG9iamVjdAEAKAEBAAAAAQAAAAAA" +
+           "AAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -1982,32 +1933,27 @@ namespace Opc.MDIS
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            uint state = (uint)inputArguments[0];
+            uint state = (uint)_inputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     state);
             }
 
@@ -2079,10 +2025,10 @@ namespace Opc.MDIS
         #region Initialization String
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEAGAAAAFdy" +
-           "aXRlSW5zdHJ1bWVudFZhbHVlVHlwZQEBzAQALwEBzATMBAAAAQH/////AQAAABVgqQoCAAAAAAAOAAAA" +
+           "aXRlSW5zdHJ1bWVudFZhbHVlVHlwZQEBzAQALwEBzATMBAAAAQH/////AQAAABdgqQoCAAAAAAAOAAAA" +
            "SW5wdXRBcmd1bWVudHMBAc0EAC4ARM0EAACWAQAAAAEAKgEBSwAAAAUAAABWYWx1ZQAK/////wAAAAAD" +
            "AAAAAC8AAABGbG9hdCB2YWx1ZSB0aGF0IGlzIGJlaW5nIHdyaXR0ZW4gdG8gdGhlIG9iamVjdAEAKAEB" +
-           "AAAAAQH/////AAAAAA==";
+           "AAAAAQAAAAAAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -2101,32 +2047,27 @@ namespace Opc.MDIS
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            float value = (float)inputArguments[0];
+            float value = (float)_inputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     value);
             }
 
@@ -2296,7 +2237,7 @@ namespace Opc.MDIS
            "bG9jawEBcAMALwA/cAMAAAAB/////wEB/////wAAAAAVYIkKAgAAAAEAGwAAAE5vbkRlZmVhdGFibGVD" +
            "bG9zZUludGVybG9jawEBcQMALwA/cQMAAAAB/////wEB/////wAAAAAVYIkKAgAAAAEAGAAAAERlZmVh" +
            "dGFibGVDbG9zZUludGVybG9jawEBcgMALwA/cgMAAAAB/////wEB/////wAAAAAEYYIKBAAAAAEABAAA" +
-           "AE1vdmUBAXMDAC8BAXMDcwMAAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQF0" +
+           "AE1vdmUBAXMDAC8BAXMDcwMAAAEB/////wEAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQF0" +
            "AwAuAER0AwAAlgUAAAABACoBAXoAAAAJAAAARGlyZWN0aW9uAQEDAP////8AAAAAAwAAAABYAAAAVGhl" +
            "IGVudW1lcmF0aW9uIGluZGljYXRlcyB3aGV0aGVyIHRoZSBjb21tYW5kIGlzIHRvIG9wZW4gdGhlIHZh" +
            "bHZlIG9yIHRvIGNsb3NlIHRoZSB2YWx2ZQEAKgEBggAAABEAAABPdmVycmlkZUludGVybG9jawAB////" +
@@ -2307,17 +2248,15 @@ namespace Opc.MDIS
            "IGluZGljYXRpbmcgaWYgYSBwcm9maWxlIHNob3VsZCBiZSBnZW5lcmF0ZWQgYnkgdGhpcyBtb3ZlIGNv" +
            "bW1hbmQgcmVxdWVzdC4BACoBAWUAAAAPAAAAU2h1dGRvd25SZXF1ZXN0AAH/////AAAAAAMAAAAAPwAA" +
            "AEJvb2xlYW4gaW5kaWNhdGVzIHRoYXQgdGhpcyBjb21tYW5kIGlzIGEgc2h1dGRvd24gbW92ZSBjb21t" +
-           "YW5kLgEAKAEBAAAAAQH/////AAAAABVgiQoCAAAAAQAQAAAAT3BlblRpbWVEdXJhdGlvbgEBdwMALgBE" +
-           "dwMAAAEAIgH/////AQH/////AAAAABVgiQoCAAAAAQARAAAAQ2xvc2VUaW1lRHVyYXRpb24BAXgDAC4A" +
-           "RHgDAAABACIB/////wEB/////wAAAAA=";
+           "YW5kLgEAKAEBAAAAAQAAAAAAAAABAf////8AAAAAFWCJCgIAAAABABAAAABPcGVuVGltZUR1cmF0aW9u" +
+           "AQF3AwAuAER3AwAAAQAiAf////8BAf////8AAAAAFWCJCgIAAAABABEAAABDbG9zZVRpbWVEdXJhdGlv" +
+           "bgEBeAMALgBEeAMAAAEAIgH/////AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Position Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<ValvePositionEnum> Position
         {
             get
@@ -2336,9 +2275,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the CommandRejected Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<bool> CommandRejected
         {
             get
@@ -2357,9 +2294,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the SignatureRequestStatus Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<SignatureStatusEnum> SignatureRequestStatus
         {
             get
@@ -2378,9 +2313,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the LastCommand Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<CommandEnum> LastCommand
         {
             get
@@ -2399,9 +2332,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the NonDefeatableOpenInterlock Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<bool> NonDefeatableOpenInterlock
         {
             get
@@ -2420,9 +2351,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the DefeatableOpenInterlock Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<bool> DefeatableOpenInterlock
         {
             get
@@ -2441,9 +2370,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the NonDefeatableCloseInterlock Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<bool> NonDefeatableCloseInterlock
         {
             get
@@ -2462,9 +2389,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the DefeatableCloseInterlock Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<bool> DefeatableCloseInterlock
         {
             get
@@ -2483,9 +2408,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the MoveType Method.
-        /// </summary>
+        /// <remarks />
         public MoveMethodState Move
         {
             get
@@ -2504,9 +2427,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the OpenTimeDuration Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<double> OpenTimeDuration
         {
             get
@@ -2525,9 +2446,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the CloseTimeDuration Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<double> CloseTimeDuration
         {
             get
@@ -2954,9 +2873,7 @@ namespace Opc.MDIS
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the State Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<bool> State
         {
             get
@@ -3108,17 +3025,15 @@ namespace Opc.MDIS
            "SVNEaWdpdGFsT3V0T2JqZWN0VHlwZUluc3RhbmNlAQHOBAEBzgQB/////wMAAAAVYIkKAgAAAAEABQAA" +
            "AEZhdWx0AQHPBAAvAD/PBAAAAAH/////AQH/////AAAAABVgiQoCAAAAAQAFAAAAU3RhdGUBAdcEAC8A" +
            "P9cEAAAAAf////8BAf////8AAAAABGGCCgQAAAABAAoAAABXcml0ZVN0YXRlAQHYBAAvAQHYBNgEAAAB" +
-           "Af////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEB2QQALgBE2QQAAJYBAAAAAQAqAQFN" +
+           "Af////8BAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEB2QQALgBE2QQAAJYBAAAAAQAqAQFN" +
            "AAAABQAAAFN0YXRlAAH/////AAAAAAMAAAAAMQAAAEJvb2xlYW4gc3RhdGUgdGhhdCBpcyBiZWluZyB3" +
-           "cml0dGVuIHRvIHRoZSBvYmplY3QBACgBAQAAAAEB/////wAAAAA=";
+           "cml0dGVuIHRvIHRoZSBvYmplY3QBACgBAQAAAAEAAAAAAAAAAQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the WriteStateType Method.
-        /// </summary>
+        /// <remarks />
         public WriteStateMethodState WriteState
         {
             get
@@ -3275,9 +3190,7 @@ namespace Opc.MDIS
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the State Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<uint> State
         {
             get
@@ -3429,17 +3342,15 @@ namespace Opc.MDIS
            "SVNEaXNjcmV0ZU91dE9iamVjdFR5cGVJbnN0YW5jZQEB2gQBAdoEAf////8DAAAAFWCJCgIAAAABAAUA" +
            "AABGYXVsdAEB2wQALwA/2wQAAAAB/////wEB/////wAAAAAVYIkKAgAAAAEABQAAAFN0YXRlAQHjBAAv" +
            "AD/jBAAAAAf/////AQH/////AAAAAARhggoEAAAAAQAKAAAAV3JpdGVWYWx1ZQEB5AQALwEB5ATkBAAA" +
-           "AQH/////AQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAeUEAC4AROUEAACWAQAAAAEAKgEB" +
+           "AQH/////AQAAABdgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAeUEAC4AROUEAACWAQAAAAEAKgEB" +
            "TAAAAAUAAABTdGF0ZQAH/////wAAAAADAAAAADAAAABVbml0MzIgc3RhdGUgdGhhdCBpcyBiZWluZyB3" +
-           "cml0dGVuIHRvIHRoZSBvYmplY3QBACgBAQAAAAEB/////wAAAAA=";
+           "cml0dGVuIHRvIHRoZSBvYmplY3QBACgBAQAAAAEAAAAAAAAAAQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the WriteValueType Method.
-        /// </summary>
+        /// <remarks />
         public WriteValueMethodState WriteValue
         {
             get
@@ -3677,9 +3588,7 @@ namespace Opc.MDIS
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ProcessVariable Variable.
-        /// </summary>
+        /// <remarks />
         public AnalogItemState<float> ProcessVariable
         {
             get
@@ -3698,9 +3607,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the HHlimit Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<bool> HHlimit
         {
             get
@@ -3719,9 +3626,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the Hlimit Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<bool> Hlimit
         {
             get
@@ -3740,9 +3645,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the Llimit Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<bool> Llimit
         {
             get
@@ -3761,9 +3664,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the LLlimit Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<bool> LLlimit
         {
             get
@@ -3782,9 +3683,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the HHSetPoint Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<float> HHSetPoint
         {
             get
@@ -3803,9 +3702,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the HSetPoint Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<float> HSetPoint
         {
             get
@@ -3824,9 +3721,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the LSetPoint Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<float> LSetPoint
         {
             get
@@ -3845,9 +3740,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the LLSetPoint Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<float> LLSetPoint
         {
             get
@@ -4217,17 +4110,15 @@ namespace Opc.MDIS
            "cmlhYmxlAQHvBAAvAQBACe8EAAAACv////8BAf////8CAAAAFWCJCgIAAAAAAAcAAABFVVJhbmdlAQHz" +
            "BAAuAETzBAAAAQB0A/////8BAf////8AAAAAFWCJCgIAAAAAABAAAABFbmdpbmVlcmluZ1VuaXRzAQH0" +
            "BAAuAET0BAAAAQB3A/////8BAf////8AAAAABGGCCgQAAAABAAoAAABXcml0ZVZhbHVlAQH9BAAvAQH9" +
-           "BP0EAAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEB/gQALgBE/gQAAJYBAAAA" +
+           "BP0EAAABAf////8BAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEB/gQALgBE/gQAAJYBAAAA" +
            "AQAqAQFLAAAABQAAAFZhbHVlAAr/////AAAAAAMAAAAALwAAAEZsb2F0IHZhbHVlIHRoYXQgaXMgYmVp" +
-           "bmcgd3JpdHRlbiB0byB0aGUgb2JqZWN0AQAoAQEAAAABAf////8AAAAA";
+           "bmcgd3JpdHRlbiB0byB0aGUgb2JqZWN0AQAoAQEAAAABAAAAAAAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the WriteInstrumentValueType Method.
-        /// </summary>
+        /// <remarks />
         public WriteInstrumentValueMethodState WriteValue
         {
             get
@@ -4459,15 +4350,15 @@ namespace Opc.MDIS
 
         private const string Step_InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEABAAAAFN0" +
-           "ZXABAYUEAC8BAYUEhQQAAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQGGBAAu" +
+           "ZXABAYUEAC8BAYUEhQQAAAEB/////wEAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQGGBAAu" +
            "AESGBAAAlgQAAAABACoBAVUAAAAJAAAARGlyZWN0aW9uAQG9Av////8AAAAAAwAAAAAzAAAAdHJ1ZSBp" +
            "cyBvcGVuaW5nIGEgdmFsdmUsIGZhbHNlIGlmIGNsb3NpbmcgdGhlIHZhbHZlAQAqAQFDAAAABQAAAFN0" +
            "ZXBzAAX/////AAAAAAMAAAAAJwAAAG51bWJlciBvZiBzdGVwcyB0byBvcGVuL2Nsb3NlIHRoZSB2YWx2" +
            "ZQEAKgEBggAAABEAAABPdmVycmlkZUludGVybG9jawAB/////wAAAAADAAAAAFoAAABCb29sZWFuIGlu" +
            "ZGljYXRpbmcgaWYgdGhlIG9wZW4gb3IgY2xvc2UgY29tbWFuZCBzaG91bGQgb3ZlcnJpZGUgYW55IGRl" +
            "ZmVhdCBhYmxlIGludGVybG9ja3MBACoBAU8AAAADAAAAU0VNAQEFAP////8AAAAAAwAAAAAzAAAAVGhl" +
-           "IHNlbGVjdGlvbiBvZiB3aGljaCBTRU0gdG8gc2VuZCB0aGUgY29tbWFuZCB0by4gAQAoAQEAAAABAf//" +
-           "//8AAAAA";
+           "IHNlbGVjdGlvbiBvZiB3aGljaCBTRU0gdG8gc2VuZCB0aGUgY29tbWFuZCB0by4gAQAoAQEAAAABAAAA" +
+           "AAAAAAEB/////wAAAAA=";
 
         private const string StepDurationOpen_InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8VYIkKAgAAAAEAEAAAAFN0" +
@@ -4494,37 +4385,35 @@ namespace Opc.MDIS
            "SW50ZXJsb2NrAQGABAAvAD+ABAAAAAH/////AQH/////AAAAABVgiQoCAAAAAQAbAAAATm9uRGVmZWF0" +
            "YWJsZUNsb3NlSW50ZXJsb2NrAQGBBAAvAD+BBAAAAAH/////AQH/////AAAAABVgiQoCAAAAAQAYAAAA" +
            "RGVmZWF0YWJsZUNsb3NlSW50ZXJsb2NrAQGCBAAvAD+CBAAAAAH/////AQH/////AAAAAARhggoEAAAA" +
-           "AQAEAAAATW92ZQEBgwQALwEBgwSDBAAAAQH/////AQAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVu" +
+           "AQAEAAAATW92ZQEBgwQALwEBgwSDBAAAAQH/////AQAAABdgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVu" +
            "dHMBAYQEAC4ARIQEAACWAwAAAAEAKgEBUQAAAAgAAABQb3NpdGlvbgAK/////wAAAAADAAAAADIAAABB" +
            "IG51bWJlciAoaW4gcHJlcmNlbnQpIGluZGljYXRpbmcgdGhlIHBlcmNlbnQgb3BlbgEAKgEBggAAABEA" +
            "AABPdmVycmlkZUludGVybG9jawAB/////wAAAAADAAAAAFoAAABCb29sZWFuIGluZGljYXRpbmcgaWYg" +
            "dGhlIG9wZW4gb3IgY2xvc2UgY29tbWFuZCBzaG91bGQgb3ZlcnJpZGUgYW55IGRlZmVhdCBhYmxlIGlu" +
            "dGVybG9ja3MBACoBAU8AAAADAAAAU0VNAQEFAP////8AAAAAAwAAAAAzAAAAVGhlIHNlbGVjdGlvbiBv" +
-           "ZiB3aGljaCBTRU0gdG8gc2VuZCB0aGUgY29tbWFuZCB0by4gAQAoAQEAAAABAf////8AAAAABGGCCgQA" +
-           "AAABAAQAAABTdGVwAQGFBAAvAQGFBIUEAAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3Vt" +
-           "ZW50cwEBhgQALgBEhgQAAJYEAAAAAQAqAQFVAAAACQAAAERpcmVjdGlvbgEBvQL/////AAAAAAMAAAAA" +
-           "MwAAAHRydWUgaXMgb3BlbmluZyBhIHZhbHZlLCBmYWxzZSBpZiBjbG9zaW5nIHRoZSB2YWx2ZQEAKgEB" +
-           "QwAAAAUAAABTdGVwcwAF/////wAAAAADAAAAACcAAABudW1iZXIgb2Ygc3RlcHMgdG8gb3Blbi9jbG9z" +
-           "ZSB0aGUgdmFsdmUBACoBAYIAAAARAAAAT3ZlcnJpZGVJbnRlcmxvY2sAAf////8AAAAAAwAAAABaAAAA" +
-           "Qm9vbGVhbiBpbmRpY2F0aW5nIGlmIHRoZSBvcGVuIG9yIGNsb3NlIGNvbW1hbmQgc2hvdWxkIG92ZXJy" +
-           "aWRlIGFueSBkZWZlYXQgYWJsZSBpbnRlcmxvY2tzAQAqAQFPAAAAAwAAAFNFTQEBBQD/////AAAAAAMA" +
-           "AAAAMwAAAFRoZSBzZWxlY3Rpb24gb2Ygd2hpY2ggU0VNIHRvIHNlbmQgdGhlIGNvbW1hbmQgdG8uIAEA" +
-           "KAEBAAAAAQH/////AAAAAARhggoEAAAAAQAFAAAAQWJvcnQBAYcEAC8BAYcEhwQAAAEB/////wAAAAAE" +
-           "YYIKBAAAAAEAFQAAAFNldENhbGN1bGF0ZWRQb3NpdGlvbgEBBAUALwEBBAUEBQAAAQH/////AQAAABVg" +
-           "qQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAQUFAC4ARAUFAACWAQAAAAEAKgEBUAAAAAgAAABQb3Np" +
-           "dGlvbgAK/////wAAAAADAAAAADEAAABBIG51bWJlciAoaW4gcGVyY2VudCkgaW5kaWNhdGluZyB0aGUg" +
-           "cGVyY2VudCBvcGVuAQAoAQEAAAABAf////8AAAAAFWCJCgIAAAABABAAAABTdGVwRHVyYXRpb25PcGVu" +
-           "AQGKBAAuAESKBAAAAQAiAf////8BAf////8AAAAAFWCJCgIAAAABABEAAABTdGVwRHVyYXRpb25DbG9z" +
-           "ZQEBiwQALgBEiwQAAAEAIgH/////AQH/////AAAAABVgiQoCAAAAAQAKAAAAVG90YWxTdGVwcwEBjAQA" +
-           "LgBEjAQAAAAF/////wEB/////wAAAAA=";
+           "ZiB3aGljaCBTRU0gdG8gc2VuZCB0aGUgY29tbWFuZCB0by4gAQAoAQEAAAABAAAAAAAAAAEB/////wAA" +
+           "AAAEYYIKBAAAAAEABAAAAFN0ZXABAYUEAC8BAYUEhQQAAAEB/////wEAAAAXYKkKAgAAAAAADgAAAElu" +
+           "cHV0QXJndW1lbnRzAQGGBAAuAESGBAAAlgQAAAABACoBAVUAAAAJAAAARGlyZWN0aW9uAQG9Av////8A" +
+           "AAAAAwAAAAAzAAAAdHJ1ZSBpcyBvcGVuaW5nIGEgdmFsdmUsIGZhbHNlIGlmIGNsb3NpbmcgdGhlIHZh" +
+           "bHZlAQAqAQFDAAAABQAAAFN0ZXBzAAX/////AAAAAAMAAAAAJwAAAG51bWJlciBvZiBzdGVwcyB0byBv" +
+           "cGVuL2Nsb3NlIHRoZSB2YWx2ZQEAKgEBggAAABEAAABPdmVycmlkZUludGVybG9jawAB/////wAAAAAD" +
+           "AAAAAFoAAABCb29sZWFuIGluZGljYXRpbmcgaWYgdGhlIG9wZW4gb3IgY2xvc2UgY29tbWFuZCBzaG91" +
+           "bGQgb3ZlcnJpZGUgYW55IGRlZmVhdCBhYmxlIGludGVybG9ja3MBACoBAU8AAAADAAAAU0VNAQEFAP//" +
+           "//8AAAAAAwAAAAAzAAAAVGhlIHNlbGVjdGlvbiBvZiB3aGljaCBTRU0gdG8gc2VuZCB0aGUgY29tbWFu" +
+           "ZCB0by4gAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAAEYYIKBAAAAAEABQAAAEFib3J0AQGHBAAvAQGH" +
+           "BIcEAAABAf////8AAAAABGGCCgQAAAABABUAAABTZXRDYWxjdWxhdGVkUG9zaXRpb24BAQQFAC8BAQQF" +
+           "BAUAAAEB/////wEAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQEFBQAuAEQFBQAAlgEAAAAB" +
+           "ACoBAVAAAAAIAAAAUG9zaXRpb24ACv////8AAAAAAwAAAAAxAAAAQSBudW1iZXIgKGluIHBlcmNlbnQp" +
+           "IGluZGljYXRpbmcgdGhlIHBlcmNlbnQgb3BlbgEAKAEBAAAAAQAAAAAAAAABAf////8AAAAAFWCJCgIA" +
+           "AAABABAAAABTdGVwRHVyYXRpb25PcGVuAQGKBAAuAESKBAAAAQAiAf////8BAf////8AAAAAFWCJCgIA" +
+           "AAABABEAAABTdGVwRHVyYXRpb25DbG9zZQEBiwQALgBEiwQAAAEAIgH/////AQH/////AAAAABVgiQoC" +
+           "AAAAAQAKAAAAVG90YWxTdGVwcwEBjAQALgBEjAQAAAAF/////wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the CalculatedPosition Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<float> CalculatedPosition
         {
             get
@@ -4543,9 +4432,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the SetCalculatedPositionStatus Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<SetCalculatedPositionEnum> SetCalculatedPositionStatus
         {
             get
@@ -4564,9 +4451,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the PositionInSteps Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<short> PositionInSteps
         {
             get
@@ -4585,9 +4470,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the Moving Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<ChokeMoveEnum> Moving
         {
             get
@@ -4606,9 +4489,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the CommandRejected Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<bool> CommandRejected
         {
             get
@@ -4627,9 +4508,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the NonDefeatableOpenInterlock Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<bool> NonDefeatableOpenInterlock
         {
             get
@@ -4648,9 +4527,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the DefeatableOpenInterlock Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<bool> DefeatableOpenInterlock
         {
             get
@@ -4669,9 +4546,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the NonDefeatableCloseInterlock Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<bool> NonDefeatableCloseInterlock
         {
             get
@@ -4690,9 +4565,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the DefeatableCloseInterlock Variable.
-        /// </summary>
+        /// <remarks />
         public BaseDataVariableState<bool> DefeatableCloseInterlock
         {
             get
@@ -4711,9 +4584,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the ChokeMoveType Method.
-        /// </summary>
+        /// <remarks />
         public ChokeMoveMethodState Move
         {
             get
@@ -4732,9 +4603,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the ChokeStepType Method.
-        /// </summary>
+        /// <remarks />
         public ChokeStepMethodState Step
         {
             get
@@ -4753,9 +4622,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the ChokeAbortType Method.
-        /// </summary>
+        /// <remarks />
         public MethodState Abort
         {
             get
@@ -4774,9 +4641,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the ChokeSetCalculatedPositionType Method.
-        /// </summary>
+        /// <remarks />
         public ChokeSetCalculatedPositionMethodState SetCalculatedPosition
         {
             get
@@ -4795,9 +4660,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the StepDurationOpen Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<double> StepDurationOpen
         {
             get
@@ -4816,9 +4679,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the StepDurationClose Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<double> StepDurationClose
         {
             get
@@ -4837,9 +4698,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the TotalSteps Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<ushort> TotalSteps
         {
             get
@@ -5459,10 +5318,10 @@ namespace Opc.MDIS
         #region Initialization String
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEACwAAAFNl" +
-           "dFRpbWVUeXBlAQG6BQAvAQG6BboFAAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50" +
+           "dFRpbWVUeXBlAQG6BQAvAQG6BboFAAABAf////8BAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50" +
            "cwEBuwUALgBEuwUAAJYBAAAAAQAqAQFnAAAACgAAAFRhcmdldFRpbWUBACYB/////wAAAAADAAAAAEQA" +
            "AABUaGUgVVRDIFRpbWUgdGhhdCB0aGUgU2VydmVyIHNoYWxsIHVzZSB0byB1cGRhdGUgaXRzIGludGVy" +
-           "bmFsIGNsb2NrLgEAKAEBAAAAAQH/////AAAAAA==";
+           "bmFsIGNsb2NrLgEAKAEBAAAAAQAAAAAAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -5481,32 +5340,27 @@ namespace Opc.MDIS
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            DateTime targetTime = (DateTime)inputArguments[0];
+            DateTime targetTime = (DateTime)_inputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     targetTime);
             }
 
@@ -5586,18 +5440,16 @@ namespace Opc.MDIS
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYIAAAQAAAAEAHgAAAE1E" +
            "SVNUaW1lU3luY09iamVjdFR5cGVJbnN0YW5jZQEBvAUBAbwF/////wEAAAAEYYIKBAAAAAEABwAAAFNl" +
-           "dFRpbWUBAb0FAC8BAb0FvQUAAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQG+" +
+           "dFRpbWUBAb0FAC8BAb0FvQUAAAEB/////wEAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQG+" +
            "BQAuAES+BQAAlgEAAAABACoBAWcAAAAKAAAAVGFyZ2V0VGltZQEAJgH/////AAAAAAMAAAAARAAAAFRo" +
            "ZSBVVEMgVGltZSB0aGF0IHRoZSBTZXJ2ZXIgc2hhbGwgdXNlIHRvIHVwZGF0ZSBpdHMgaW50ZXJuYWwg" +
-           "Y2xvY2suAQAoAQEAAAABAf////8AAAAA";
+           "Y2xvY2suAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the SetTimeType Method.
-        /// </summary>
+        /// <remarks />
         public SetTimeMethodState SetTime
         {
             get
@@ -5757,10 +5609,10 @@ namespace Opc.MDIS
         private const string TimeSynchronization_InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYIAKAQAAAAEAEwAAAFRp" +
            "bWVTeW5jaHJvbml6YXRpb24BAcAFAC8BAbwFwAUAAP////8BAAAABGGCCgQAAAABAAcAAABTZXRUaW1l" +
-           "AQHBBQAvAQG9BcEFAAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBwgUALgBE" +
+           "AQHBBQAvAQG9BcEFAAABAf////8BAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBwgUALgBE" +
            "wgUAAJYBAAAAAQAqAQFnAAAACgAAAFRhcmdldFRpbWUBACYB/////wAAAAADAAAAAEQAAABUaGUgVVRD" +
            "IFRpbWUgdGhhdCB0aGUgU2VydmVyIHNoYWxsIHVzZSB0byB1cGRhdGUgaXRzIGludGVybmFsIGNsb2Nr" +
-           "LgEAKAEBAAAAAQH/////AAAAAA==";
+           "LgEAKAEBAAAAAQAAAAAAAAABAf////8AAAAA";
 
         private const string Signatures_InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYIAKAQAAAAEACgAAAFNp" +
@@ -5770,22 +5622,20 @@ namespace Opc.MDIS
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYIAAAQAAAAEAIQAAAE1E" +
            "SVNJbmZvcm1hdGlvbk9iamVjdFR5cGVJbnN0YW5jZQEBvwUBAb8F/////wMAAAAEYIAKAQAAAAEAEwAA" +
            "AFRpbWVTeW5jaHJvbml6YXRpb24BAcAFAC8BAbwFwAUAAP////8BAAAABGGCCgQAAAABAAcAAABTZXRU" +
-           "aW1lAQHBBQAvAQG9BcEFAAABAf////8BAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBwgUA" +
+           "aW1lAQHBBQAvAQG9BcEFAAABAf////8BAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBwgUA" +
            "LgBEwgUAAJYBAAAAAQAqAQFnAAAACgAAAFRhcmdldFRpbWUBACYB/////wAAAAADAAAAAEQAAABUaGUg" +
            "VVRDIFRpbWUgdGhhdCB0aGUgU2VydmVyIHNoYWxsIHVzZSB0byB1cGRhdGUgaXRzIGludGVybmFsIGNs" +
-           "b2NrLgEAKAEBAAAAAQH/////AAAAAARggAoBAAAAAQAKAAAAU2lnbmF0dXJlcwEBwwUALwA9wwUAAP//" +
-           "//8AAAAAFWCJCgIAAAABAAsAAABNRElTVmVyc2lvbgEBxAUALwEBCgXEBQAAAQEJBf////8BAf////8D" +
-           "AAAAFWCJCgIAAAABAAwAAABNYWpvclZlcnNpb24BAcUFAC4AP8UFAAAAA/////8BAf////8AAAAAFWCJ" +
-           "CgIAAAABAAwAAABNaW5vclZlcnNpb24BAcYFAC4AP8YFAAAAA/////8BAf////8AAAAAFWCJCgIAAAAB" +
-           "AAUAAABCdWlsZAEBxwUALgA/xwUAAAAD/////wEB/////wAAAAA=";
+           "b2NrLgEAKAEBAAAAAQAAAAAAAAABAf////8AAAAABGCACgEAAAABAAoAAABTaWduYXR1cmVzAQHDBQAv" +
+           "AD3DBQAA/////wAAAAAVYIkKAgAAAAEACwAAAE1ESVNWZXJzaW9uAQHEBQAvAQEKBcQFAAABAQkF////" +
+           "/wEB/////wMAAAAVYIkKAgAAAAEADAAAAE1ham9yVmVyc2lvbgEBxQUALgA/xQUAAAAD/////wEB////" +
+           "/wAAAAAVYIkKAgAAAAEADAAAAE1pbm9yVmVyc2lvbgEBxgUALgA/xgUAAAAD/////wEB/////wAAAAAV" +
+           "YIkKAgAAAAEABQAAAEJ1aWxkAQHHBQAuAD/HBQAAAAP/////AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the TimeSynchronization Object.
-        /// </summary>
+        /// <remarks />
         public MDISTimeSyncObjectState TimeSynchronization
         {
             get
@@ -5804,9 +5654,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the Signatures Object.
-        /// </summary>
+        /// <remarks />
         public FolderState Signatures
         {
             get
@@ -5825,9 +5673,7 @@ namespace Opc.MDIS
             }
         }
 
-        /// <summary>
-        /// A description for the MDISVersion Variable.
-        /// </summary>
+        /// <remarks />
         public MDISVersionVariableState MDISVersion
         {
             get

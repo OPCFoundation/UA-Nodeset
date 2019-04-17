@@ -36,7 +36,7 @@
   <Models>
     <Model ModelUri="http://PLCopen.org/OpcUa/IEC61131-3/" Version="1.00" PublicationDate="2010-03-24T00:00:00Z">
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.03" PublicationDate="2013-12-02T00:00:00Z" />
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.01" PublicationDate="2018-06-06T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.01" PublicationDate="2012-12-31T00:00:00Z" />
     </Model>
   </Models>
   <Aliases>
@@ -95,7 +95,6 @@
   </UAObject>
   <UAVariable NodeId="ns=1;i=15002" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=15001" DataType="String">
     <DisplayName>NamespaceUri</DisplayName>
-    <Description>The URI of the namespace.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15001</Reference>
@@ -106,7 +105,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=15003" BrowseName="NamespaceVersion" ParentNodeId="ns=1;i=15001" DataType="String">
     <DisplayName>NamespaceVersion</DisplayName>
-    <Description>The human readable string representing version of the namespace.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15001</Reference>
@@ -117,7 +115,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=15004" BrowseName="NamespacePublicationDate" ParentNodeId="ns=1;i=15001" DataType="DateTime">
     <DisplayName>NamespacePublicationDate</DisplayName>
-    <Description>The publication date for the namespace.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15001</Reference>
@@ -128,7 +125,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=15005" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=15001" DataType="Boolean">
     <DisplayName>IsNamespaceSubset</DisplayName>
-    <Description>If TRUE then the server only supports a subset of the namespace.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15001</Reference>
@@ -137,9 +133,8 @@
       <Boolean xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">false</Boolean>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=15006" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=15001" DataType="i=256" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=15006" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=15001" DataType="i=256" ValueRank="1" ArrayDimensions="0">
     <DisplayName>StaticNodeIdTypes</DisplayName>
-    <Description>A list of IdTypes for nodes which are the same in every server that exposes them.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15001</Reference>
@@ -150,9 +145,8 @@
       </ListOfInt32>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=15007" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=1;i=15001" DataType="i=291" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=15007" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=1;i=15001" DataType="i=291" ValueRank="1" ArrayDimensions="0">
     <DisplayName>StaticNumericNodeIdRange</DisplayName>
-    <Description>A list of ranges for numeric node ids which are the same in every server that exposes them.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15001</Reference>
@@ -165,7 +159,6 @@
   </UAVariable>
   <UAVariable NodeId="ns=1;i=15008" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=1;i=15001" DataType="String">
     <DisplayName>StaticStringNodeIdPattern</DisplayName>
-    <Description>A regular expression which matches string node ids are the same in every server that exposes them.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15001</Reference>
@@ -175,14 +168,14 @@
       </String>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=15031" BrowseName="DefaultRolePermissions" ParentNodeId="ns=1;i=15001" DataType="i=96" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=15031" BrowseName="DefaultRolePermissions" ParentNodeId="ns=1;i=15001" DataType="i=96" ValueRank="1" ArrayDimensions="0">
     <DisplayName>DefaultRolePermissions</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15001</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=15032" BrowseName="DefaultUserRolePermissions" ParentNodeId="ns=1;i=15001" DataType="i=96" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=15032" BrowseName="DefaultUserRolePermissions" ParentNodeId="ns=1;i=15001" DataType="i=96" ValueRank="1" ArrayDimensions="0">
     <DisplayName>DefaultUserRolePermissions</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
