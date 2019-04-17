@@ -208,7 +208,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2372</Reference>
     </References>
   </UAVariableType>
-  <UAVariable NodeId="i=2377" BrowseName="EnumStrings" ParentNodeId="i=2376" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=2377" BrowseName="EnumStrings" ParentNodeId="i=2376" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -224,7 +224,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2372</Reference>
     </References>
   </UAVariableType>
-  <UAVariable NodeId="i=11241" BrowseName="EnumValues" ParentNodeId="i=11238" DataType="i=7594" ValueRank="1">
+  <UAVariable NodeId="i=11241" BrowseName="EnumValues" ParentNodeId="i=11238" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -385,7 +385,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12021</Reference>
     </References>
   </UAVariableType>
-  <UAVariable NodeId="i=12076" BrowseName="AxisDefinition" ParentNodeId="i=12068" DataType="i=12079" ValueRank="1">
+  <UAVariable NodeId="i=12076" BrowseName="AxisDefinition" ParentNodeId="i=12068" DataType="i=12079" ValueRank="1" ArrayDimensions="0">
     <DisplayName>AxisDefinition</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -427,7 +427,7 @@
       <Field Name="Ln" Value="2" />
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=12078" BrowseName="EnumStrings" ParentNodeId="i=12077" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=12078" BrowseName="EnumStrings" ParentNodeId="i=12077" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>

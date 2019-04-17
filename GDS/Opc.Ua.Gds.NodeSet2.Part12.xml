@@ -129,7 +129,7 @@
       <Boolean xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">false</Boolean>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=726" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=721" DataType="i=256" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=726" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=721" DataType="i=256" ValueRank="1" ArrayDimensions="0">
     <DisplayName>StaticNodeIdTypes</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -141,7 +141,7 @@
       </ListOfInt32>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=727" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=1;i=721" DataType="i=291" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=727" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=1;i=721" DataType="i=291" ValueRank="1" ArrayDimensions="0">
     <DisplayName>StaticNumericNodeIdRange</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -164,14 +164,14 @@
       </String>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=862" BrowseName="DefaultRolePermissions" ParentNodeId="ns=1;i=721" DataType="i=96" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=862" BrowseName="DefaultRolePermissions" ParentNodeId="ns=1;i=721" DataType="i=96" ValueRank="1" ArrayDimensions="0">
     <DisplayName>DefaultRolePermissions</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=721</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=863" BrowseName="DefaultUserRolePermissions" ParentNodeId="ns=1;i=721" DataType="i=96" ValueRank="1">
+  <UAVariable NodeId="ns=1;i=863" BrowseName="DefaultUserRolePermissions" ParentNodeId="ns=1;i=721" DataType="i=96" ValueRank="1" ArrayDimensions="0">
     <DisplayName>DefaultUserRolePermissions</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>

@@ -202,7 +202,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2782</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=16363" BrowseName="ConditionSubClassId" ParentNodeId="i=2782" DataType="NodeId" ValueRank="1">
+  <UAVariable NodeId="i=16363" BrowseName="ConditionSubClassId" ParentNodeId="i=2782" DataType="NodeId" ValueRank="1" ArrayDimensions="0">
     <DisplayName>ConditionSubClassId</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -210,7 +210,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2782</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=16364" BrowseName="ConditionSubClassName" ParentNodeId="i=2782" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=16364" BrowseName="ConditionSubClassName" ParentNodeId="i=2782" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>ConditionSubClassName</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -400,7 +400,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2782</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=9030" BrowseName="InputArguments" ParentNodeId="i=9029" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=9030" BrowseName="InputArguments" ParentNodeId="i=9029" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -461,7 +461,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2782</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=3876" BrowseName="InputArguments" ParentNodeId="i=3875" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=3876" BrowseName="InputArguments" ParentNodeId="i=3875" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -502,7 +502,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2782</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=12913" BrowseName="InputArguments" ParentNodeId="i=12912" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=12913" BrowseName="InputArguments" ParentNodeId="i=12912" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -652,7 +652,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2830</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=9064" BrowseName="ResponseOptionSet" ParentNodeId="i=2830" DataType="LocalizedText" ValueRank="1">
+  <UAVariable NodeId="i=9064" BrowseName="ResponseOptionSet" ParentNodeId="i=2830" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>ResponseOptionSet</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -701,7 +701,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2830</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=9070" BrowseName="InputArguments" ParentNodeId="i=9069" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=9070" BrowseName="InputArguments" ParentNodeId="i=9069" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -886,7 +886,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2881</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=9112" BrowseName="InputArguments" ParentNodeId="i=9111" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=9112" BrowseName="InputArguments" ParentNodeId="i=9111" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -947,7 +947,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2881</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=9114" BrowseName="InputArguments" ParentNodeId="i=9113" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=9114" BrowseName="InputArguments" ParentNodeId="i=9113" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1321,7 +1321,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=9178</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=9214" BrowseName="InputArguments" ParentNodeId="i=9213" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=9214" BrowseName="InputArguments" ParentNodeId="i=9213" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1863,7 +1863,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=16406</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=16442" BrowseName="InputArguments" ParentNodeId="i=16441" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=16442" BrowseName="InputArguments" ParentNodeId="i=16441" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1941,7 +1941,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=16406</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=16462" BrowseName="InputArguments" ParentNodeId="i=16461" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=16462" BrowseName="InputArguments" ParentNodeId="i=16461" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2244,7 +2244,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=2929</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=2991" BrowseName="InputArguments" ParentNodeId="i=2949" DataType="i=296" ValueRank="1">
+  <UAVariable NodeId="i=2991" BrowseName="InputArguments" ParentNodeId="i=2949" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
