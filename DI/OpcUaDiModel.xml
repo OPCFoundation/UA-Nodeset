@@ -195,14 +195,15 @@
       <Property SymbolicName="DI:Manufacturer" DataType="OpcUa:LocalizedText" ValueRank="Scalar" ModellingRule="Optional" />
       <Property SymbolicName="DI:ManufacturerUri" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
       <Property SymbolicName="DI:Model" DataType="OpcUa:LocalizedText" ValueRank="Scalar" ModellingRule="Optional" />
-      <Property SymbolicName="DI:SerialNumber" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
       <Property SymbolicName="DI:HardwareRevision" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
       <Property SymbolicName="DI:SoftwareRevision" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
       <Property SymbolicName="DI:DeviceRevision" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
-      <Property SymbolicName="DI:RevisionCounter" DataType="OpcUa:Int32" ValueRank="Scalar" ModellingRule="Optional" />
       <Property SymbolicName="DI:ProductCode" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
       <Property SymbolicName="DI:DeviceManual" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
       <Property SymbolicName="DI:DeviceClass" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:SerialNumber" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:ProductInstanceUri" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:RevisionCounter" DataType="OpcUa:Int32" ValueRank="Scalar" ModellingRule="Optional" />
     </Children>
   </ObjectType>
 
@@ -215,7 +216,8 @@
 
   <ObjectType SymbolicName="DI:IDeviceHealthType" BaseType="OpcUa:BaseInterfaceType" IsAbstract="true">
     <Children>
-      <Variable SymbolicName="DI:DeviceHealth" DataType="DI:DeviceHealthEnumeration" ValueRank="Scalar" ModellingRule="Mandatory" />
+      <Variable SymbolicName="DI:DeviceHealth" DataType="DI:DeviceHealthEnumeration" ValueRank="Scalar" ModellingRule="Optional" />
+      <Object SymbolicName="DI:DeviceHealthAlarms" TypeDefinition="OpcUa:FolderType" ModellingRule="Optional" />
     </Children>
   </ObjectType>
 
@@ -257,14 +259,15 @@
       <Property SymbolicName="DI:Manufacturer" DataType="OpcUa:LocalizedText" ValueRank="Scalar" ModellingRule="Optional" />
       <Property SymbolicName="DI:ManufacturerUri" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
       <Property SymbolicName="DI:Model" DataType="OpcUa:LocalizedText" ValueRank="Scalar" ModellingRule="Optional" />
-      <Property SymbolicName="DI:SerialNumber" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
       <Property SymbolicName="DI:HardwareRevision" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
       <Property SymbolicName="DI:SoftwareRevision" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
       <Property SymbolicName="DI:DeviceRevision" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
-      <Property SymbolicName="DI:RevisionCounter" DataType="OpcUa:Int32" ValueRank="Scalar" ModellingRule="Optional" />
       <Property SymbolicName="DI:ProductCode" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
       <Property SymbolicName="DI:DeviceManual" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
       <Property SymbolicName="DI:DeviceClass" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:SerialNumber" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:ProductInstanceUri" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:RevisionCounter" DataType="OpcUa:Int32" ValueRank="Scalar" ModellingRule="Optional" />
       <Property SymbolicName="DI:AssetId" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
       <Property SymbolicName="DI:ComponentName" DataType="OpcUa:LocalizedText" ValueRank="Scalar" ModellingRule="Optional" />
     </Children>
@@ -310,7 +313,13 @@
       <Property SymbolicName="DI:HardwareRevision" DataType="OpcUa:String" ModellingRule="Mandatory">
         <Description>Revision level of the hardware of the device</Description>
       </Property>
+      <Property SymbolicName="DI:DeviceClass" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:ManufacturerUri" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:ProductCode" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      <Property SymbolicName="DI:ProductInstanceUri" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Optional" />
+      
       <Variable SymbolicName="DI:DeviceHealth" DataType="DI:DeviceHealthEnumeration" ValueRank="Scalar" ModellingRule="Optional" />
+      <Object SymbolicName="DI:DeviceHealthAlarms" TypeDefinition="OpcUa:FolderType" ModellingRule="Optional" />
       <Object SymbolicName="DI:DeviceTypeImage" TypeDefinition="OpcUa:FolderType" ModellingRule="Optional">
         <Description>Organizes pictures of the device.</Description>
         <Children>
@@ -503,7 +512,7 @@
       <Argument Name="OmitGoodResults" DataType="OpcUa:Boolean" />
     </InputArguments>
     <OutputArguments>
-      <Argument Name="FetchResultData" DataType="DI:FetchResultDataType" />
+      <Argument Name="FetchResultData" DataType="OpcUa:Structure" />
     </OutputArguments>
   </Method>
 
@@ -586,6 +595,7 @@
           <uax:String>Lock</uax:String>
         </DefaultValue>
       </Property>
+      <Property SymbolicName="DI:Locked" DataType="OpcUa:Boolean" />
       <Property SymbolicName="DI:LockingClient" DataType="OpcUa:String" />
       <Property SymbolicName="DI:LockingUser" DataType="OpcUa:String" />
       <Property SymbolicName="DI:RemainingLockTime" DataType="OpcUa:Duration" />

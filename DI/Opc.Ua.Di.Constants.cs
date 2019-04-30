@@ -486,6 +486,11 @@ namespace Opc.Ua.Di
         public const uint TopologyElementType_Lock = 6161;
 
         /// <summary>
+        /// The identifier for the IDeviceHealthType_DeviceHealthAlarms Object.
+        /// </summary>
+        public const uint IDeviceHealthType_DeviceHealthAlarms = 15914;
+
+        /// <summary>
         /// The identifier for the ISupportInfoType_DeviceTypeImage Object.
         /// </summary>
         public const uint ISupportInfoType_DeviceTypeImage = 15054;
@@ -514,6 +519,11 @@ namespace Opc.Ua.Di
         /// The identifier for the DeviceType_CPIdentifier_NetworkAddress Object.
         /// </summary>
         public const uint DeviceType_CPIdentifier_NetworkAddress = 6592;
+
+        /// <summary>
+        /// The identifier for the DeviceType_DeviceHealthAlarms Object.
+        /// </summary>
+        public const uint DeviceType_DeviceHealthAlarms = 15928;
 
         /// <summary>
         /// The identifier for the DeviceType_DeviceTypeImage Object.
@@ -926,6 +936,11 @@ namespace Opc.Ua.Di
         public const uint TopologyElementType_Lock_DefaultInstanceBrowseName = 15035;
 
         /// <summary>
+        /// The identifier for the TopologyElementType_Lock_Locked Variable.
+        /// </summary>
+        public const uint TopologyElementType_Lock_Locked = 15912;
+
+        /// <summary>
         /// The identifier for the TopologyElementType_Lock_LockingClient Variable.
         /// </summary>
         public const uint TopologyElementType_Lock_LockingClient = 6163;
@@ -981,11 +996,6 @@ namespace Opc.Ua.Di
         public const uint IVendorNameplateType_Model = 15039;
 
         /// <summary>
-        /// The identifier for the IVendorNameplateType_SerialNumber Variable.
-        /// </summary>
-        public const uint IVendorNameplateType_SerialNumber = 15040;
-
-        /// <summary>
         /// The identifier for the IVendorNameplateType_HardwareRevision Variable.
         /// </summary>
         public const uint IVendorNameplateType_HardwareRevision = 15041;
@@ -1001,11 +1011,6 @@ namespace Opc.Ua.Di
         public const uint IVendorNameplateType_DeviceRevision = 15043;
 
         /// <summary>
-        /// The identifier for the IVendorNameplateType_RevisionCounter Variable.
-        /// </summary>
-        public const uint IVendorNameplateType_RevisionCounter = 15044;
-
-        /// <summary>
         /// The identifier for the IVendorNameplateType_ProductCode Variable.
         /// </summary>
         public const uint IVendorNameplateType_ProductCode = 15045;
@@ -1019,6 +1024,21 @@ namespace Opc.Ua.Di
         /// The identifier for the IVendorNameplateType_DeviceClass Variable.
         /// </summary>
         public const uint IVendorNameplateType_DeviceClass = 15047;
+
+        /// <summary>
+        /// The identifier for the IVendorNameplateType_SerialNumber Variable.
+        /// </summary>
+        public const uint IVendorNameplateType_SerialNumber = 15040;
+
+        /// <summary>
+        /// The identifier for the IVendorNameplateType_ProductInstanceUri Variable.
+        /// </summary>
+        public const uint IVendorNameplateType_ProductInstanceUri = 15913;
+
+        /// <summary>
+        /// The identifier for the IVendorNameplateType_RevisionCounter Variable.
+        /// </summary>
+        public const uint IVendorNameplateType_RevisionCounter = 15044;
 
         /// <summary>
         /// The identifier for the ITagNameplateType_AssetId Variable.
@@ -1059,6 +1079,11 @@ namespace Opc.Ua.Di
         /// The identifier for the ComponentType_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
         public const uint ComponentType_Lock_DefaultInstanceBrowseName = 15072;
+
+        /// <summary>
+        /// The identifier for the ComponentType_Lock_Locked Variable.
+        /// </summary>
+        public const uint ComponentType_Lock_Locked = 15915;
 
         /// <summary>
         /// The identifier for the ComponentType_Lock_LockingClient Variable.
@@ -1116,11 +1141,6 @@ namespace Opc.Ua.Di
         public const uint ComponentType_Model = 15087;
 
         /// <summary>
-        /// The identifier for the ComponentType_SerialNumber Variable.
-        /// </summary>
-        public const uint ComponentType_SerialNumber = 15088;
-
-        /// <summary>
         /// The identifier for the ComponentType_HardwareRevision Variable.
         /// </summary>
         public const uint ComponentType_HardwareRevision = 15089;
@@ -1134,11 +1154,6 @@ namespace Opc.Ua.Di
         /// The identifier for the ComponentType_DeviceRevision Variable.
         /// </summary>
         public const uint ComponentType_DeviceRevision = 15091;
-
-        /// <summary>
-        /// The identifier for the ComponentType_RevisionCounter Variable.
-        /// </summary>
-        public const uint ComponentType_RevisionCounter = 15092;
 
         /// <summary>
         /// The identifier for the ComponentType_ProductCode Variable.
@@ -1156,6 +1171,21 @@ namespace Opc.Ua.Di
         public const uint ComponentType_DeviceClass = 15095;
 
         /// <summary>
+        /// The identifier for the ComponentType_SerialNumber Variable.
+        /// </summary>
+        public const uint ComponentType_SerialNumber = 15088;
+
+        /// <summary>
+        /// The identifier for the ComponentType_ProductInstanceUri Variable.
+        /// </summary>
+        public const uint ComponentType_ProductInstanceUri = 15916;
+
+        /// <summary>
+        /// The identifier for the ComponentType_RevisionCounter Variable.
+        /// </summary>
+        public const uint ComponentType_RevisionCounter = 15092;
+
+        /// <summary>
         /// The identifier for the ComponentType_AssetId Variable.
         /// </summary>
         public const uint ComponentType_AssetId = 15096;
@@ -1169,6 +1199,11 @@ namespace Opc.Ua.Di
         /// The identifier for the DeviceType_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
         public const uint DeviceType_Lock_DefaultInstanceBrowseName = 15098;
+
+        /// <summary>
+        /// The identifier for the DeviceType_Lock_Locked Variable.
+        /// </summary>
+        public const uint DeviceType_Lock_Locked = 15917;
 
         /// <summary>
         /// The identifier for the DeviceType_Lock_LockingClient Variable.
@@ -1216,14 +1251,14 @@ namespace Opc.Ua.Di
         public const uint DeviceType_Manufacturer = 6003;
 
         /// <summary>
+        /// The identifier for the DeviceType_ManufacturerUri Variable.
+        /// </summary>
+        public const uint DeviceType_ManufacturerUri = 15099;
+
+        /// <summary>
         /// The identifier for the DeviceType_Model Variable.
         /// </summary>
         public const uint DeviceType_Model = 6004;
-
-        /// <summary>
-        /// The identifier for the DeviceType_SerialNumber Variable.
-        /// </summary>
-        public const uint DeviceType_SerialNumber = 6001;
 
         /// <summary>
         /// The identifier for the DeviceType_HardwareRevision Variable.
@@ -1241,9 +1276,9 @@ namespace Opc.Ua.Di
         public const uint DeviceType_DeviceRevision = 6006;
 
         /// <summary>
-        /// The identifier for the DeviceType_RevisionCounter Variable.
+        /// The identifier for the DeviceType_ProductCode Variable.
         /// </summary>
-        public const uint DeviceType_RevisionCounter = 6002;
+        public const uint DeviceType_ProductCode = 15100;
 
         /// <summary>
         /// The identifier for the DeviceType_DeviceManual Variable.
@@ -1251,9 +1286,34 @@ namespace Opc.Ua.Di
         public const uint DeviceType_DeviceManual = 6005;
 
         /// <summary>
+        /// The identifier for the DeviceType_DeviceClass Variable.
+        /// </summary>
+        public const uint DeviceType_DeviceClass = 6470;
+
+        /// <summary>
+        /// The identifier for the DeviceType_SerialNumber Variable.
+        /// </summary>
+        public const uint DeviceType_SerialNumber = 6001;
+
+        /// <summary>
+        /// The identifier for the DeviceType_ProductInstanceUri Variable.
+        /// </summary>
+        public const uint DeviceType_ProductInstanceUri = 15918;
+
+        /// <summary>
+        /// The identifier for the DeviceType_RevisionCounter Variable.
+        /// </summary>
+        public const uint DeviceType_RevisionCounter = 6002;
+
+        /// <summary>
         /// The identifier for the DeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
         public const uint DeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15103;
+
+        /// <summary>
+        /// The identifier for the DeviceType_CPIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public const uint DeviceType_CPIdentifier_Lock_Locked = 15919;
 
         /// <summary>
         /// The identifier for the DeviceType_CPIdentifier_Lock_LockingClient Variable.
@@ -1326,6 +1386,11 @@ namespace Opc.Ua.Di
         public const uint SoftwareType_Lock_DefaultInstanceBrowseName = 15114;
 
         /// <summary>
+        /// The identifier for the SoftwareType_Lock_Locked Variable.
+        /// </summary>
+        public const uint SoftwareType_Lock_Locked = 15920;
+
+        /// <summary>
         /// The identifier for the SoftwareType_Lock_LockingClient Variable.
         /// </summary>
         public const uint SoftwareType_Lock_LockingClient = 15115;
@@ -1384,6 +1449,11 @@ namespace Opc.Ua.Di
         /// The identifier for the BlockType_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
         public const uint BlockType_Lock_DefaultInstanceBrowseName = 15140;
+
+        /// <summary>
+        /// The identifier for the BlockType_Lock_Locked Variable.
+        /// </summary>
+        public const uint BlockType_Lock_Locked = 15922;
 
         /// <summary>
         /// The identifier for the BlockType_Lock_LockingClient Variable.
@@ -1996,6 +2066,11 @@ namespace Opc.Ua.Di
         public const uint NetworkType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15886;
 
         /// <summary>
+        /// The identifier for the NetworkType_CPIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public const uint NetworkType_CPIdentifier_Lock_Locked = 15923;
+
+        /// <summary>
         /// The identifier for the NetworkType_CPIdentifier_Lock_LockingClient Variable.
         /// </summary>
         public const uint NetworkType_CPIdentifier_Lock_LockingClient = 6257;
@@ -2039,6 +2114,11 @@ namespace Opc.Ua.Di
         /// The identifier for the NetworkType_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
         public const uint NetworkType_Lock_DefaultInstanceBrowseName = 15887;
+
+        /// <summary>
+        /// The identifier for the NetworkType_Lock_Locked Variable.
+        /// </summary>
+        public const uint NetworkType_Lock_Locked = 15924;
 
         /// <summary>
         /// The identifier for the NetworkType_Lock_LockingClient Variable.
@@ -2086,6 +2166,11 @@ namespace Opc.Ua.Di
         public const uint ConnectionPointType_Lock_DefaultInstanceBrowseName = 15888;
 
         /// <summary>
+        /// The identifier for the ConnectionPointType_Lock_Locked Variable.
+        /// </summary>
+        public const uint ConnectionPointType_Lock_Locked = 15925;
+
+        /// <summary>
         /// The identifier for the ConnectionPointType_Lock_LockingClient Variable.
         /// </summary>
         public const uint ConnectionPointType_Lock_LockingClient = 6319;
@@ -2129,6 +2214,11 @@ namespace Opc.Ua.Di
         /// The identifier for the ConnectionPointType_NetworkIdentifier_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
         public const uint ConnectionPointType_NetworkIdentifier_Lock_DefaultInstanceBrowseName = 15890;
+
+        /// <summary>
+        /// The identifier for the ConnectionPointType_NetworkIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public const uint ConnectionPointType_NetworkIdentifier_Lock_Locked = 15926;
 
         /// <summary>
         /// The identifier for the ConnectionPointType_NetworkIdentifier_Lock_LockingClient Variable.
@@ -2199,6 +2289,11 @@ namespace Opc.Ua.Di
         /// The identifier for the LockingServicesType_DefaultInstanceBrowseName Variable.
         /// </summary>
         public const uint LockingServicesType_DefaultInstanceBrowseName = 15893;
+
+        /// <summary>
+        /// The identifier for the LockingServicesType_Locked Variable.
+        /// </summary>
+        public const uint LockingServicesType_Locked = 15927;
 
         /// <summary>
         /// The identifier for the LockingServicesType_LockingClient Variable.
@@ -2776,6 +2871,11 @@ namespace Opc.Ua.Di
         public static readonly ExpandedNodeId TopologyElementType_Lock = new ExpandedNodeId(Opc.Ua.Di.Objects.TopologyElementType_Lock, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
+        /// The identifier for the IDeviceHealthType_DeviceHealthAlarms Object.
+        /// </summary>
+        public static readonly ExpandedNodeId IDeviceHealthType_DeviceHealthAlarms = new ExpandedNodeId(Opc.Ua.Di.Objects.IDeviceHealthType_DeviceHealthAlarms, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
         /// The identifier for the ISupportInfoType_DeviceTypeImage Object.
         /// </summary>
         public static readonly ExpandedNodeId ISupportInfoType_DeviceTypeImage = new ExpandedNodeId(Opc.Ua.Di.Objects.ISupportInfoType_DeviceTypeImage, Opc.Ua.Di.Namespaces.OpcUaDi);
@@ -2804,6 +2904,11 @@ namespace Opc.Ua.Di
         /// The identifier for the DeviceType_CPIdentifier_NetworkAddress Object.
         /// </summary>
         public static readonly ExpandedNodeId DeviceType_CPIdentifier_NetworkAddress = new ExpandedNodeId(Opc.Ua.Di.Objects.DeviceType_CPIdentifier_NetworkAddress, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DeviceType_DeviceHealthAlarms Object.
+        /// </summary>
+        public static readonly ExpandedNodeId DeviceType_DeviceHealthAlarms = new ExpandedNodeId(Opc.Ua.Di.Objects.DeviceType_DeviceHealthAlarms, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
         /// The identifier for the DeviceType_DeviceTypeImage Object.
@@ -3216,6 +3321,11 @@ namespace Opc.Ua.Di
         public static readonly ExpandedNodeId TopologyElementType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Di.Variables.TopologyElementType_Lock_DefaultInstanceBrowseName, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
+        /// The identifier for the TopologyElementType_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId TopologyElementType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Di.Variables.TopologyElementType_Lock_Locked, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
         /// The identifier for the TopologyElementType_Lock_LockingClient Variable.
         /// </summary>
         public static readonly ExpandedNodeId TopologyElementType_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Di.Variables.TopologyElementType_Lock_LockingClient, Opc.Ua.Di.Namespaces.OpcUaDi);
@@ -3271,11 +3381,6 @@ namespace Opc.Ua.Di
         public static readonly ExpandedNodeId IVendorNameplateType_Model = new ExpandedNodeId(Opc.Ua.Di.Variables.IVendorNameplateType_Model, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
-        /// The identifier for the IVendorNameplateType_SerialNumber Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId IVendorNameplateType_SerialNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.IVendorNameplateType_SerialNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
-
-        /// <summary>
         /// The identifier for the IVendorNameplateType_HardwareRevision Variable.
         /// </summary>
         public static readonly ExpandedNodeId IVendorNameplateType_HardwareRevision = new ExpandedNodeId(Opc.Ua.Di.Variables.IVendorNameplateType_HardwareRevision, Opc.Ua.Di.Namespaces.OpcUaDi);
@@ -3291,11 +3396,6 @@ namespace Opc.Ua.Di
         public static readonly ExpandedNodeId IVendorNameplateType_DeviceRevision = new ExpandedNodeId(Opc.Ua.Di.Variables.IVendorNameplateType_DeviceRevision, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
-        /// The identifier for the IVendorNameplateType_RevisionCounter Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId IVendorNameplateType_RevisionCounter = new ExpandedNodeId(Opc.Ua.Di.Variables.IVendorNameplateType_RevisionCounter, Opc.Ua.Di.Namespaces.OpcUaDi);
-
-        /// <summary>
         /// The identifier for the IVendorNameplateType_ProductCode Variable.
         /// </summary>
         public static readonly ExpandedNodeId IVendorNameplateType_ProductCode = new ExpandedNodeId(Opc.Ua.Di.Variables.IVendorNameplateType_ProductCode, Opc.Ua.Di.Namespaces.OpcUaDi);
@@ -3309,6 +3409,21 @@ namespace Opc.Ua.Di
         /// The identifier for the IVendorNameplateType_DeviceClass Variable.
         /// </summary>
         public static readonly ExpandedNodeId IVendorNameplateType_DeviceClass = new ExpandedNodeId(Opc.Ua.Di.Variables.IVendorNameplateType_DeviceClass, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the IVendorNameplateType_SerialNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId IVendorNameplateType_SerialNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.IVendorNameplateType_SerialNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the IVendorNameplateType_ProductInstanceUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId IVendorNameplateType_ProductInstanceUri = new ExpandedNodeId(Opc.Ua.Di.Variables.IVendorNameplateType_ProductInstanceUri, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the IVendorNameplateType_RevisionCounter Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId IVendorNameplateType_RevisionCounter = new ExpandedNodeId(Opc.Ua.Di.Variables.IVendorNameplateType_RevisionCounter, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
         /// The identifier for the ITagNameplateType_AssetId Variable.
@@ -3349,6 +3464,11 @@ namespace Opc.Ua.Di
         /// The identifier for the ComponentType_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
         public static readonly ExpandedNodeId ComponentType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Di.Variables.ComponentType_Lock_DefaultInstanceBrowseName, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the ComponentType_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ComponentType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Di.Variables.ComponentType_Lock_Locked, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
         /// The identifier for the ComponentType_Lock_LockingClient Variable.
@@ -3406,11 +3526,6 @@ namespace Opc.Ua.Di
         public static readonly ExpandedNodeId ComponentType_Model = new ExpandedNodeId(Opc.Ua.Di.Variables.ComponentType_Model, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
-        /// The identifier for the ComponentType_SerialNumber Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ComponentType_SerialNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.ComponentType_SerialNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
-
-        /// <summary>
         /// The identifier for the ComponentType_HardwareRevision Variable.
         /// </summary>
         public static readonly ExpandedNodeId ComponentType_HardwareRevision = new ExpandedNodeId(Opc.Ua.Di.Variables.ComponentType_HardwareRevision, Opc.Ua.Di.Namespaces.OpcUaDi);
@@ -3424,11 +3539,6 @@ namespace Opc.Ua.Di
         /// The identifier for the ComponentType_DeviceRevision Variable.
         /// </summary>
         public static readonly ExpandedNodeId ComponentType_DeviceRevision = new ExpandedNodeId(Opc.Ua.Di.Variables.ComponentType_DeviceRevision, Opc.Ua.Di.Namespaces.OpcUaDi);
-
-        /// <summary>
-        /// The identifier for the ComponentType_RevisionCounter Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ComponentType_RevisionCounter = new ExpandedNodeId(Opc.Ua.Di.Variables.ComponentType_RevisionCounter, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
         /// The identifier for the ComponentType_ProductCode Variable.
@@ -3446,6 +3556,21 @@ namespace Opc.Ua.Di
         public static readonly ExpandedNodeId ComponentType_DeviceClass = new ExpandedNodeId(Opc.Ua.Di.Variables.ComponentType_DeviceClass, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
+        /// The identifier for the ComponentType_SerialNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ComponentType_SerialNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.ComponentType_SerialNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the ComponentType_ProductInstanceUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ComponentType_ProductInstanceUri = new ExpandedNodeId(Opc.Ua.Di.Variables.ComponentType_ProductInstanceUri, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the ComponentType_RevisionCounter Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ComponentType_RevisionCounter = new ExpandedNodeId(Opc.Ua.Di.Variables.ComponentType_RevisionCounter, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
         /// The identifier for the ComponentType_AssetId Variable.
         /// </summary>
         public static readonly ExpandedNodeId ComponentType_AssetId = new ExpandedNodeId(Opc.Ua.Di.Variables.ComponentType_AssetId, Opc.Ua.Di.Namespaces.OpcUaDi);
@@ -3459,6 +3584,11 @@ namespace Opc.Ua.Di
         /// The identifier for the DeviceType_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
         public static readonly ExpandedNodeId DeviceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Di.Variables.DeviceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DeviceType_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId DeviceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Di.Variables.DeviceType_Lock_Locked, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
         /// The identifier for the DeviceType_Lock_LockingClient Variable.
@@ -3506,14 +3636,14 @@ namespace Opc.Ua.Di
         public static readonly ExpandedNodeId DeviceType_Manufacturer = new ExpandedNodeId(Opc.Ua.Di.Variables.DeviceType_Manufacturer, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
+        /// The identifier for the DeviceType_ManufacturerUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId DeviceType_ManufacturerUri = new ExpandedNodeId(Opc.Ua.Di.Variables.DeviceType_ManufacturerUri, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
         /// The identifier for the DeviceType_Model Variable.
         /// </summary>
         public static readonly ExpandedNodeId DeviceType_Model = new ExpandedNodeId(Opc.Ua.Di.Variables.DeviceType_Model, Opc.Ua.Di.Namespaces.OpcUaDi);
-
-        /// <summary>
-        /// The identifier for the DeviceType_SerialNumber Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId DeviceType_SerialNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.DeviceType_SerialNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
         /// The identifier for the DeviceType_HardwareRevision Variable.
@@ -3531,9 +3661,9 @@ namespace Opc.Ua.Di
         public static readonly ExpandedNodeId DeviceType_DeviceRevision = new ExpandedNodeId(Opc.Ua.Di.Variables.DeviceType_DeviceRevision, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
-        /// The identifier for the DeviceType_RevisionCounter Variable.
+        /// The identifier for the DeviceType_ProductCode Variable.
         /// </summary>
-        public static readonly ExpandedNodeId DeviceType_RevisionCounter = new ExpandedNodeId(Opc.Ua.Di.Variables.DeviceType_RevisionCounter, Opc.Ua.Di.Namespaces.OpcUaDi);
+        public static readonly ExpandedNodeId DeviceType_ProductCode = new ExpandedNodeId(Opc.Ua.Di.Variables.DeviceType_ProductCode, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
         /// The identifier for the DeviceType_DeviceManual Variable.
@@ -3541,9 +3671,34 @@ namespace Opc.Ua.Di
         public static readonly ExpandedNodeId DeviceType_DeviceManual = new ExpandedNodeId(Opc.Ua.Di.Variables.DeviceType_DeviceManual, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
+        /// The identifier for the DeviceType_DeviceClass Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId DeviceType_DeviceClass = new ExpandedNodeId(Opc.Ua.Di.Variables.DeviceType_DeviceClass, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DeviceType_SerialNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId DeviceType_SerialNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.DeviceType_SerialNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DeviceType_ProductInstanceUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId DeviceType_ProductInstanceUri = new ExpandedNodeId(Opc.Ua.Di.Variables.DeviceType_ProductInstanceUri, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DeviceType_RevisionCounter Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId DeviceType_RevisionCounter = new ExpandedNodeId(Opc.Ua.Di.Variables.DeviceType_RevisionCounter, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
         /// The identifier for the DeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
         public static readonly ExpandedNodeId DeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Di.Variables.DeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DeviceType_CPIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId DeviceType_CPIdentifier_Lock_Locked = new ExpandedNodeId(Opc.Ua.Di.Variables.DeviceType_CPIdentifier_Lock_Locked, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
         /// The identifier for the DeviceType_CPIdentifier_Lock_LockingClient Variable.
@@ -3616,6 +3771,11 @@ namespace Opc.Ua.Di
         public static readonly ExpandedNodeId SoftwareType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareType_Lock_DefaultInstanceBrowseName, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
+        /// The identifier for the SoftwareType_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareType_Lock_Locked, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
         /// The identifier for the SoftwareType_Lock_LockingClient Variable.
         /// </summary>
         public static readonly ExpandedNodeId SoftwareType_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareType_Lock_LockingClient, Opc.Ua.Di.Namespaces.OpcUaDi);
@@ -3674,6 +3834,11 @@ namespace Opc.Ua.Di
         /// The identifier for the BlockType_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
         public static readonly ExpandedNodeId BlockType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Di.Variables.BlockType_Lock_DefaultInstanceBrowseName, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the BlockType_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId BlockType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Di.Variables.BlockType_Lock_Locked, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
         /// The identifier for the BlockType_Lock_LockingClient Variable.
@@ -4286,6 +4451,11 @@ namespace Opc.Ua.Di
         public static readonly ExpandedNodeId NetworkType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Di.Variables.NetworkType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
+        /// The identifier for the NetworkType_CPIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId NetworkType_CPIdentifier_Lock_Locked = new ExpandedNodeId(Opc.Ua.Di.Variables.NetworkType_CPIdentifier_Lock_Locked, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
         /// The identifier for the NetworkType_CPIdentifier_Lock_LockingClient Variable.
         /// </summary>
         public static readonly ExpandedNodeId NetworkType_CPIdentifier_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Di.Variables.NetworkType_CPIdentifier_Lock_LockingClient, Opc.Ua.Di.Namespaces.OpcUaDi);
@@ -4329,6 +4499,11 @@ namespace Opc.Ua.Di
         /// The identifier for the NetworkType_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
         public static readonly ExpandedNodeId NetworkType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Di.Variables.NetworkType_Lock_DefaultInstanceBrowseName, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the NetworkType_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId NetworkType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Di.Variables.NetworkType_Lock_Locked, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
         /// The identifier for the NetworkType_Lock_LockingClient Variable.
@@ -4376,6 +4551,11 @@ namespace Opc.Ua.Di
         public static readonly ExpandedNodeId ConnectionPointType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Di.Variables.ConnectionPointType_Lock_DefaultInstanceBrowseName, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
+        /// The identifier for the ConnectionPointType_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPointType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Di.Variables.ConnectionPointType_Lock_Locked, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
         /// The identifier for the ConnectionPointType_Lock_LockingClient Variable.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPointType_Lock_LockingClient = new ExpandedNodeId(Opc.Ua.Di.Variables.ConnectionPointType_Lock_LockingClient, Opc.Ua.Di.Namespaces.OpcUaDi);
@@ -4419,6 +4599,11 @@ namespace Opc.Ua.Di
         /// The identifier for the ConnectionPointType_NetworkIdentifier_Lock_DefaultInstanceBrowseName Variable.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPointType_NetworkIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Di.Variables.ConnectionPointType_NetworkIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the ConnectionPointType_NetworkIdentifier_Lock_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPointType_NetworkIdentifier_Lock_Locked = new ExpandedNodeId(Opc.Ua.Di.Variables.ConnectionPointType_NetworkIdentifier_Lock_Locked, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
         /// The identifier for the ConnectionPointType_NetworkIdentifier_Lock_LockingClient Variable.
@@ -4489,6 +4674,11 @@ namespace Opc.Ua.Di
         /// The identifier for the LockingServicesType_DefaultInstanceBrowseName Variable.
         /// </summary>
         public static readonly ExpandedNodeId LockingServicesType_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Di.Variables.LockingServicesType_DefaultInstanceBrowseName, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the LockingServicesType_Locked Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId LockingServicesType_Locked = new ExpandedNodeId(Opc.Ua.Di.Variables.LockingServicesType_Locked, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
         /// The identifier for the LockingServicesType_LockingClient Variable.
@@ -4700,6 +4890,11 @@ namespace Opc.Ua.Di
         public const string DeviceHealth = "DeviceHealth";
 
         /// <summary>
+        /// The BrowseName for the DeviceHealthAlarms component.
+        /// </summary>
+        public const string DeviceHealthAlarms = "DeviceHealthAlarms";
+
+        /// <summary>
         /// The BrowseName for the DeviceHealthDiagnosticAlarmType component.
         /// </summary>
         public const string DeviceHealthDiagnosticAlarmType = "DeviceHealthDiagnosticAlarmType";
@@ -4825,6 +5020,11 @@ namespace Opc.Ua.Di
         public const string Lock = "Lock";
 
         /// <summary>
+        /// The BrowseName for the Locked component.
+        /// </summary>
+        public const string Locked = "Locked";
+
+        /// <summary>
         /// The BrowseName for the LockingClient component.
         /// </summary>
         public const string LockingClient = "LockingClient";
@@ -4943,6 +5143,11 @@ namespace Opc.Ua.Di
         /// The BrowseName for the ProductCode component.
         /// </summary>
         public const string ProductCode = "ProductCode";
+
+        /// <summary>
+        /// The BrowseName for the ProductInstanceUri component.
+        /// </summary>
+        public const string ProductInstanceUri = "ProductInstanceUri";
 
         /// <summary>
         /// The BrowseName for the ProfileIdentifier component.

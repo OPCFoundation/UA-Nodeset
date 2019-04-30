@@ -126,23 +126,24 @@ namespace Opc.Ua.Di
         private const string Lock_InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////yRggAoBAAAAAQAEAAAATG9j" +
            "awEBERgDAAAAACIAAABVc2VkIHRvIGxvY2sgdGhlIHRvcG9sb2d5IGVsZW1lbnQuAC8BAfQYERgAAP//" +
-           "//8IAAAAFWCpCgIAAAAAABkAAABEZWZhdWx0SW5zdGFuY2VCcm93c2VOYW1lAQG7OgAuAES7OgAADAQA" +
-           "AABMb2NrAAz/////AQH/////AAAAABVgiQoCAAAAAQANAAAATG9ja2luZ0NsaWVudAEBExgALgBEExgA" +
-           "AAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAExvY2tpbmdVc2VyAQEUGAAuAEQUGAAAAAz/////" +
-           "AQH/////AAAAABVgiQoCAAAAAQARAAAAUmVtYWluaW5nTG9ja1RpbWUBARUYAC4ARBUYAAABACIB////" +
-           "/wEB/////wAAAAAEYYIKBAAAAAEACAAAAEluaXRMb2NrAQEWGAAvAQH5GBYYAAABAf////8CAAAAF2Cp" +
-           "CgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBFxgALgBEFxgAAJYBAAAAAQAqAQEWAAAABwAAAENvbnRl" +
-           "eHQADP////8AAAAAAAEAKAEBAAAAAQAAAAAAAAABAf////8AAAAAF2CpCgIAAAAAAA8AAABPdXRwdXRB" +
-           "cmd1bWVudHMBARgYAC4ARBgYAACWAQAAAAEAKgEBHQAAAA4AAABJbml0TG9ja1N0YXR1cwAG/////wAA" +
-           "AAAAAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAAEYYIKBAAAAAEACQAAAFJlbmV3TG9jawEBGRgALwEB" +
-           "/BgZGAAAAQH/////AQAAABdgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQEaGAAuAEQaGAAAlgEA" +
-           "AAABACoBAR4AAAAPAAAAUmVuZXdMb2NrU3RhdHVzAAb/////AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/" +
-           "////AAAAAARhggoEAAAAAQAIAAAARXhpdExvY2sBARsYAC8BAf4YGxgAAAEB/////wEAAAAXYKkKAgAA" +
-           "AAAADwAAAE91dHB1dEFyZ3VtZW50cwEBHBgALgBEHBgAAJYBAAAAAQAqAQEdAAAADgAAAEV4aXRMb2Nr" +
-           "U3RhdHVzAAb/////AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/////AAAAAARhggoEAAAAAQAJAAAAQnJl" +
-           "YWtMb2NrAQEdGAAvAQEAGR0YAAABAf////8BAAAAF2CpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMB" +
-           "AR4YAC4ARB4YAACWAQAAAAEAKgEBHgAAAA8AAABCcmVha0xvY2tTdGF0dXMABv////8AAAAAAAEAKAEB" +
-           "AAAAAQAAAAAAAAABAf////8AAAAA";
+           "//8JAAAAFWCpCgIAAAAAABkAAABEZWZhdWx0SW5zdGFuY2VCcm93c2VOYW1lAQG7OgAuAES7OgAADAQA" +
+           "AABMb2NrAAz/////AQH/////AAAAABVgiQoCAAAAAQAGAAAATG9ja2VkAQEoPgAuAEQoPgAAAAH/////" +
+           "AQH/////AAAAABVgiQoCAAAAAQANAAAATG9ja2luZ0NsaWVudAEBExgALgBEExgAAAAM/////wEB////" +
+           "/wAAAAAVYIkKAgAAAAEACwAAAExvY2tpbmdVc2VyAQEUGAAuAEQUGAAAAAz/////AQH/////AAAAABVg" +
+           "iQoCAAAAAQARAAAAUmVtYWluaW5nTG9ja1RpbWUBARUYAC4ARBUYAAABACIB/////wEB/////wAAAAAE" +
+           "YYIKBAAAAAEACAAAAEluaXRMb2NrAQEWGAAvAQH5GBYYAAABAf////8CAAAAF2CpCgIAAAAAAA4AAABJ" +
+           "bnB1dEFyZ3VtZW50cwEBFxgALgBEFxgAAJYBAAAAAQAqAQEWAAAABwAAAENvbnRleHQADP////8AAAAA" +
+           "AAEAKAEBAAAAAQAAAAAAAAABAf////8AAAAAF2CpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBARgY" +
+           "AC4ARBgYAACWAQAAAAEAKgEBHQAAAA4AAABJbml0TG9ja1N0YXR1cwAG/////wAAAAAAAQAoAQEAAAAB" +
+           "AAAAAAAAAAEB/////wAAAAAEYYIKBAAAAAEACQAAAFJlbmV3TG9jawEBGRgALwEB/BgZGAAAAQH/////" +
+           "AQAAABdgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQEaGAAuAEQaGAAAlgEAAAABACoBAR4AAAAP" +
+           "AAAAUmVuZXdMb2NrU3RhdHVzAAb/////AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/////AAAAAARhggoE" +
+           "AAAAAQAIAAAARXhpdExvY2sBARsYAC8BAf4YGxgAAAEB/////wEAAAAXYKkKAgAAAAAADwAAAE91dHB1" +
+           "dEFyZ3VtZW50cwEBHBgALgBEHBgAAJYBAAAAAQAqAQEdAAAADgAAAEV4aXRMb2NrU3RhdHVzAAb/////" +
+           "AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/////AAAAAARhggoEAAAAAQAJAAAAQnJlYWtMb2NrAQEdGAAv" +
+           "AQEAGR0YAAABAf////8BAAAAF2CpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAR4YAC4ARB4YAACW" +
+           "AQAAAAEAKgEBHgAAAA8AAABCcmVha0xvY2tTdGF0dXMABv////8AAAAAAAEAKAEBAAAAAQAAAAAAAAAB" +
+           "Af////8AAAAA";
 
         private const string InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAIBAAAAAQAbAAAAVG9w" +
@@ -152,24 +153,24 @@ namespace Opc.Ua.Di
            "ADqLEwAA/////wAAAAAkYIAKAQAAAAEADgAAAElkZW50aWZpY2F0aW9uAQF+FwMAAAAARgAAAFVzZWQg" +
            "dG8gb3JnYW5pemUgcGFyYW1ldGVycyBmb3IgaWRlbnRpZmljYXRpb24gb2YgdGhpcyBUb3BvbG9neUVs" +
            "ZW1lbnQALwEB7QN+FwAA/////wAAAAAkYIAKAQAAAAEABAAAAExvY2sBAREYAwAAAAAiAAAAVXNlZCB0" +
-           "byBsb2NrIHRoZSB0b3BvbG9neSBlbGVtZW50LgAvAQH0GBEYAAD/////CAAAABVgqQoCAAAAAAAZAAAA" +
+           "byBsb2NrIHRoZSB0b3BvbG9neSBlbGVtZW50LgAvAQH0GBEYAAD/////CQAAABVgqQoCAAAAAAAZAAAA" +
            "RGVmYXVsdEluc3RhbmNlQnJvd3NlTmFtZQEBuzoALgBEuzoAAAwEAAAATG9jawAM/////wEB/////wAA" +
-           "AAAVYIkKAgAAAAEADQAAAExvY2tpbmdDbGllbnQBARMYAC4ARBMYAAAADP////8BAf////8AAAAAFWCJ" +
-           "CgIAAAABAAsAAABMb2NraW5nVXNlcgEBFBgALgBEFBgAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEA" +
-           "EQAAAFJlbWFpbmluZ0xvY2tUaW1lAQEVGAAuAEQVGAAAAQAiAf////8BAf////8AAAAABGGCCgQAAAAB" +
-           "AAgAAABJbml0TG9jawEBFhgALwEB+RgWGAAAAQH/////AgAAABdgqQoCAAAAAAAOAAAASW5wdXRBcmd1" +
-           "bWVudHMBARcYAC4ARBcYAACWAQAAAAEAKgEBFgAAAAcAAABDb250ZXh0AAz/////AAAAAAABACgBAQAA" +
-           "AAEAAAAAAAAAAQH/////AAAAABdgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQEYGAAuAEQYGAAA" +
-           "lgEAAAABACoBAR0AAAAOAAAASW5pdExvY2tTdGF0dXMABv////8AAAAAAAEAKAEBAAAAAQAAAAAAAAAB" +
-           "Af////8AAAAABGGCCgQAAAABAAkAAABSZW5ld0xvY2sBARkYAC8BAfwYGRgAAAEB/////wEAAAAXYKkK" +
-           "AgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBGhgALgBEGhgAAJYBAAAAAQAqAQEeAAAADwAAAFJlbmV3" +
-           "TG9ja1N0YXR1cwAG/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAAEYYIKBAAAAAEACAAA" +
-           "AEV4aXRMb2NrAQEbGAAvAQH+GBsYAAABAf////8BAAAAF2CpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVu" +
-           "dHMBARwYAC4ARBwYAACWAQAAAAEAKgEBHQAAAA4AAABFeGl0TG9ja1N0YXR1cwAG/////wAAAAAAAQAo" +
-           "AQEAAAABAAAAAAAAAAEB/////wAAAAAEYYIKBAAAAAEACQAAAEJyZWFrTG9jawEBHRgALwEBABkdGAAA" +
-           "AQH/////AQAAABdgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQEeGAAuAEQeGAAAlgEAAAABACoB" +
-           "AR4AAAAPAAAAQnJlYWtMb2NrU3RhdHVzAAb/////AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/////AAAA" +
-           "AA==";
+           "AAAVYIkKAgAAAAEABgAAAExvY2tlZAEBKD4ALgBEKD4AAAAB/////wEB/////wAAAAAVYIkKAgAAAAEA" +
+           "DQAAAExvY2tpbmdDbGllbnQBARMYAC4ARBMYAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABM" +
+           "b2NraW5nVXNlcgEBFBgALgBEFBgAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEAEQAAAFJlbWFpbmlu" +
+           "Z0xvY2tUaW1lAQEVGAAuAEQVGAAAAQAiAf////8BAf////8AAAAABGGCCgQAAAABAAgAAABJbml0TG9j" +
+           "awEBFhgALwEB+RgWGAAAAQH/////AgAAABdgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBARcYAC4A" +
+           "RBcYAACWAQAAAAEAKgEBFgAAAAcAAABDb250ZXh0AAz/////AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/" +
+           "////AAAAABdgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQEYGAAuAEQYGAAAlgEAAAABACoBAR0A" +
+           "AAAOAAAASW5pdExvY2tTdGF0dXMABv////8AAAAAAAEAKAEBAAAAAQAAAAAAAAABAf////8AAAAABGGC" +
+           "CgQAAAABAAkAAABSZW5ld0xvY2sBARkYAC8BAfwYGRgAAAEB/////wEAAAAXYKkKAgAAAAAADwAAAE91" +
+           "dHB1dEFyZ3VtZW50cwEBGhgALgBEGhgAAJYBAAAAAQAqAQEeAAAADwAAAFJlbmV3TG9ja1N0YXR1cwAG" +
+           "/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAAEYYIKBAAAAAEACAAAAEV4aXRMb2NrAQEb" +
+           "GAAvAQH+GBsYAAABAf////8BAAAAF2CpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBARwYAC4ARBwY" +
+           "AACWAQAAAAEAKgEBHQAAAA4AAABFeGl0TG9ja1N0YXR1cwAG/////wAAAAAAAQAoAQEAAAABAAAAAAAA" +
+           "AAEB/////wAAAAAEYYIKBAAAAAEACQAAAEJyZWFrTG9jawEBHRgALwEBABkdGAAAAQH/////AQAAABdg" +
+           "qQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQEeGAAuAEQeGAAAlgEAAAABACoBAR4AAAAPAAAAQnJl" +
+           "YWtMb2NrU3RhdHVzAAb/////AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -473,11 +474,6 @@ namespace Opc.Ua.Di
                 Model.Initialize(context, Model_InitializationString);
             }
 
-            if (SerialNumber != null)
-            {
-                SerialNumber.Initialize(context, SerialNumber_InitializationString);
-            }
-
             if (HardwareRevision != null)
             {
                 HardwareRevision.Initialize(context, HardwareRevision_InitializationString);
@@ -491,11 +487,6 @@ namespace Opc.Ua.Di
             if (DeviceRevision != null)
             {
                 DeviceRevision.Initialize(context, DeviceRevision_InitializationString);
-            }
-
-            if (RevisionCounter != null)
-            {
-                RevisionCounter.Initialize(context, RevisionCounter_InitializationString);
             }
 
             if (ProductCode != null)
@@ -512,6 +503,21 @@ namespace Opc.Ua.Di
             {
                 DeviceClass.Initialize(context, DeviceClass_InitializationString);
             }
+
+            if (SerialNumber != null)
+            {
+                SerialNumber.Initialize(context, SerialNumber_InitializationString);
+            }
+
+            if (ProductInstanceUri != null)
+            {
+                ProductInstanceUri.Initialize(context, ProductInstanceUri_InitializationString);
+            }
+
+            if (RevisionCounter != null)
+            {
+                RevisionCounter.Initialize(context, RevisionCounter_InitializationString);
+            }
         }
 
         #region Initialization String
@@ -527,10 +533,6 @@ namespace Opc.Ua.Di
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAFAAAATW9k" +
            "ZWwBAb86AC4ARL86AAAAFf////8BAf////8AAAAA";
 
-        private const string SerialNumber_InitializationString =
-           "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAMAAAAU2Vy" +
-           "aWFsTnVtYmVyAQHAOgAuAETAOgAAAAz/////AQH/////AAAAAA==";
-
         private const string HardwareRevision_InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAQAAAASGFy" +
            "ZHdhcmVSZXZpc2lvbgEBwToALgBEwToAAAAM/////wEB/////wAAAAA=";
@@ -542,10 +544,6 @@ namespace Opc.Ua.Di
         private const string DeviceRevision_InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAOAAAARGV2" +
            "aWNlUmV2aXNpb24BAcM6AC4ARMM6AAAADP////8BAf////8AAAAA";
-
-        private const string RevisionCounter_InitializationString =
-           "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAPAAAAUmV2" +
-           "aXNpb25Db3VudGVyAQHEOgAuAETEOgAAAAb/////AQH/////AAAAAA==";
 
         private const string ProductCode_InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQALAAAAUHJv" +
@@ -559,19 +557,32 @@ namespace Opc.Ua.Di
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQALAAAARGV2" +
            "aWNlQ2xhc3MBAcc6AC4ARMc6AAAADP////8BAf////8AAAAA";
 
+        private const string SerialNumber_InitializationString =
+           "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAMAAAAU2Vy" +
+           "aWFsTnVtYmVyAQHAOgAuAETAOgAAAAz/////AQH/////AAAAAA==";
+
+        private const string ProductInstanceUri_InitializationString =
+           "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQASAAAAUHJv" +
+           "ZHVjdEluc3RhbmNlVXJpAQEpPgAuAEQpPgAAAAz/////AQH/////AAAAAA==";
+
+        private const string RevisionCounter_InitializationString =
+           "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAPAAAAUmV2" +
+           "aXNpb25Db3VudGVyAQHEOgAuAETEOgAAAAb/////AQH/////AAAAAA==";
+
         private const string InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAIBAAAAAQAcAAAASVZl" +
-           "bmRvck5hbWVwbGF0ZVR5cGVJbnN0YW5jZQEBvDoBAbw6vDoAAP////8LAAAAFWCJCgIAAAABAAwAAABN" +
+           "bmRvck5hbWVwbGF0ZVR5cGVJbnN0YW5jZQEBvDoBAbw6vDoAAP////8MAAAAFWCJCgIAAAABAAwAAABN" +
            "YW51ZmFjdHVyZXIBAb06AC4ARL06AAAAFf////8BAf////8AAAAAFWCJCgIAAAABAA8AAABNYW51ZmFj" +
            "dHVyZXJVcmkBAb46AC4ARL46AAAADP////8BAf////8AAAAAFWCJCgIAAAABAAUAAABNb2RlbAEBvzoA" +
-           "LgBEvzoAAAAV/////wEB/////wAAAAAVYIkKAgAAAAEADAAAAFNlcmlhbE51bWJlcgEBwDoALgBEwDoA" +
-           "AAAM/////wEB/////wAAAAAVYIkKAgAAAAEAEAAAAEhhcmR3YXJlUmV2aXNpb24BAcE6AC4ARME6AAAA" +
-           "DP////8BAf////8AAAAAFWCJCgIAAAABABAAAABTb2Z0d2FyZVJldmlzaW9uAQHCOgAuAETCOgAAAAz/" +
-           "////AQH/////AAAAABVgiQoCAAAAAQAOAAAARGV2aWNlUmV2aXNpb24BAcM6AC4ARMM6AAAADP////8B" +
-           "Af////8AAAAAFWCJCgIAAAABAA8AAABSZXZpc2lvbkNvdW50ZXIBAcQ6AC4ARMQ6AAAABv////8BAf//" +
-           "//8AAAAAFWCJCgIAAAABAAsAAABQcm9kdWN0Q29kZQEBxToALgBExToAAAAM/////wEB/////wAAAAAV" +
-           "YIkKAgAAAAEADAAAAERldmljZU1hbnVhbAEBxjoALgBExjoAAAAM/////wEB/////wAAAAAVYIkKAgAA" +
-           "AAEACwAAAERldmljZUNsYXNzAQHHOgAuAETHOgAAAAz/////AQH/////AAAAAA==";
+           "LgBEvzoAAAAV/////wEB/////wAAAAAVYIkKAgAAAAEAEAAAAEhhcmR3YXJlUmV2aXNpb24BAcE6AC4A" +
+           "RME6AAAADP////8BAf////8AAAAAFWCJCgIAAAABABAAAABTb2Z0d2FyZVJldmlzaW9uAQHCOgAuAETC" +
+           "OgAAAAz/////AQH/////AAAAABVgiQoCAAAAAQAOAAAARGV2aWNlUmV2aXNpb24BAcM6AC4ARMM6AAAA" +
+           "DP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABQcm9kdWN0Q29kZQEBxToALgBExToAAAAM/////wEB" +
+           "/////wAAAAAVYIkKAgAAAAEADAAAAERldmljZU1hbnVhbAEBxjoALgBExjoAAAAM/////wEB/////wAA" +
+           "AAAVYIkKAgAAAAEACwAAAERldmljZUNsYXNzAQHHOgAuAETHOgAAAAz/////AQH/////AAAAABVgiQoC" +
+           "AAAAAQAMAAAAU2VyaWFsTnVtYmVyAQHAOgAuAETAOgAAAAz/////AQH/////AAAAABVgiQoCAAAAAQAS" +
+           "AAAAUHJvZHVjdEluc3RhbmNlVXJpAQEpPgAuAEQpPgAAAAz/////AQH/////AAAAABVgiQoCAAAAAQAP" +
+           "AAAAUmV2aXNpb25Db3VudGVyAQHEOgAuAETEOgAAAAb/////AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -635,25 +646,6 @@ namespace Opc.Ua.Di
         }
 
         /// <remarks />
-        public PropertyState<string> SerialNumber
-        {
-            get
-            {
-                return m_serialNumber;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_serialNumber, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_serialNumber = value;
-            }
-        }
-
-        /// <remarks />
         public PropertyState<string> HardwareRevision
         {
             get
@@ -707,25 +699,6 @@ namespace Opc.Ua.Di
                 }
 
                 m_deviceRevision = value;
-            }
-        }
-
-        /// <remarks />
-        public PropertyState<int> RevisionCounter
-        {
-            get
-            {
-                return m_revisionCounter;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_revisionCounter, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_revisionCounter = value;
             }
         }
 
@@ -785,6 +758,63 @@ namespace Opc.Ua.Di
                 m_deviceClass = value;
             }
         }
+
+        /// <remarks />
+        public PropertyState<string> SerialNumber
+        {
+            get
+            {
+                return m_serialNumber;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_serialNumber, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_serialNumber = value;
+            }
+        }
+
+        /// <remarks />
+        public PropertyState<string> ProductInstanceUri
+        {
+            get
+            {
+                return m_productInstanceUri;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_productInstanceUri, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_productInstanceUri = value;
+            }
+        }
+
+        /// <remarks />
+        public PropertyState<int> RevisionCounter
+        {
+            get
+            {
+                return m_revisionCounter;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_revisionCounter, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_revisionCounter = value;
+            }
+        }
         #endregion
 
         #region Overridden Methods
@@ -812,11 +842,6 @@ namespace Opc.Ua.Di
                 children.Add(m_model);
             }
 
-            if (m_serialNumber != null)
-            {
-                children.Add(m_serialNumber);
-            }
-
             if (m_hardwareRevision != null)
             {
                 children.Add(m_hardwareRevision);
@@ -832,11 +857,6 @@ namespace Opc.Ua.Di
                 children.Add(m_deviceRevision);
             }
 
-            if (m_revisionCounter != null)
-            {
-                children.Add(m_revisionCounter);
-            }
-
             if (m_productCode != null)
             {
                 children.Add(m_productCode);
@@ -850,6 +870,21 @@ namespace Opc.Ua.Di
             if (m_deviceClass != null)
             {
                 children.Add(m_deviceClass);
+            }
+
+            if (m_serialNumber != null)
+            {
+                children.Add(m_serialNumber);
+            }
+
+            if (m_productInstanceUri != null)
+            {
+                children.Add(m_productInstanceUri);
+            }
+
+            if (m_revisionCounter != null)
+            {
+                children.Add(m_revisionCounter);
             }
 
             base.GetChildren(context, children);
@@ -936,27 +971,6 @@ namespace Opc.Ua.Di
                     break;
                 }
 
-                case Opc.Ua.Di.BrowseNames.SerialNumber:
-                {
-                    if (createOrReplace)
-                    {
-                        if (SerialNumber == null)
-                        {
-                            if (replacement == null)
-                            {
-                                SerialNumber = new PropertyState<string>(this);
-                            }
-                            else
-                            {
-                                SerialNumber = (PropertyState<string>)replacement;
-                            }
-                        }
-                    }
-
-                    instance = SerialNumber;
-                    break;
-                }
-
                 case Opc.Ua.Di.BrowseNames.HardwareRevision:
                 {
                     if (createOrReplace)
@@ -1017,27 +1031,6 @@ namespace Opc.Ua.Di
                     }
 
                     instance = DeviceRevision;
-                    break;
-                }
-
-                case Opc.Ua.Di.BrowseNames.RevisionCounter:
-                {
-                    if (createOrReplace)
-                    {
-                        if (RevisionCounter == null)
-                        {
-                            if (replacement == null)
-                            {
-                                RevisionCounter = new PropertyState<int>(this);
-                            }
-                            else
-                            {
-                                RevisionCounter = (PropertyState<int>)replacement;
-                            }
-                        }
-                    }
-
-                    instance = RevisionCounter;
                     break;
                 }
 
@@ -1103,6 +1096,69 @@ namespace Opc.Ua.Di
                     instance = DeviceClass;
                     break;
                 }
+
+                case Opc.Ua.Di.BrowseNames.SerialNumber:
+                {
+                    if (createOrReplace)
+                    {
+                        if (SerialNumber == null)
+                        {
+                            if (replacement == null)
+                            {
+                                SerialNumber = new PropertyState<string>(this);
+                            }
+                            else
+                            {
+                                SerialNumber = (PropertyState<string>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = SerialNumber;
+                    break;
+                }
+
+                case Opc.Ua.Di.BrowseNames.ProductInstanceUri:
+                {
+                    if (createOrReplace)
+                    {
+                        if (ProductInstanceUri == null)
+                        {
+                            if (replacement == null)
+                            {
+                                ProductInstanceUri = new PropertyState<string>(this);
+                            }
+                            else
+                            {
+                                ProductInstanceUri = (PropertyState<string>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = ProductInstanceUri;
+                    break;
+                }
+
+                case Opc.Ua.Di.BrowseNames.RevisionCounter:
+                {
+                    if (createOrReplace)
+                    {
+                        if (RevisionCounter == null)
+                        {
+                            if (replacement == null)
+                            {
+                                RevisionCounter = new PropertyState<int>(this);
+                            }
+                            else
+                            {
+                                RevisionCounter = (PropertyState<int>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = RevisionCounter;
+                    break;
+                }
             }
 
             if (instance != null)
@@ -1118,14 +1174,15 @@ namespace Opc.Ua.Di
         private PropertyState<LocalizedText> m_manufacturer;
         private PropertyState<string> m_manufacturerUri;
         private PropertyState<LocalizedText> m_model;
-        private PropertyState<string> m_serialNumber;
         private PropertyState<string> m_hardwareRevision;
         private PropertyState<string> m_softwareRevision;
         private PropertyState<string> m_deviceRevision;
-        private PropertyState<int> m_revisionCounter;
         private PropertyState<string> m_productCode;
         private PropertyState<string> m_deviceManual;
         private PropertyState<string> m_deviceClass;
+        private PropertyState<string> m_serialNumber;
+        private PropertyState<string> m_productInstanceUri;
+        private PropertyState<int> m_revisionCounter;
         #endregion
     }
     #endif
@@ -1402,13 +1459,32 @@ namespace Opc.Ua.Di
         protected override void InitializeOptionalChildren(ISystemContext context)
         {
             base.InitializeOptionalChildren(context);
+
+            if (DeviceHealth != null)
+            {
+                DeviceHealth.Initialize(context, DeviceHealth_InitializationString);
+            }
+
+            if (DeviceHealthAlarms != null)
+            {
+                DeviceHealthAlarms.Initialize(context, DeviceHealthAlarms_InitializationString);
+            }
         }
 
         #region Initialization String
+        private const string DeviceHealth_InitializationString =
+           "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAMAAAARGV2" +
+           "aWNlSGVhbHRoAQHMOgAvAD/MOgAAAQFkGP////8BAf////8AAAAA";
+
+        private const string DeviceHealthAlarms_InitializationString =
+           "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAoBAAAAAQASAAAARGV2" +
+           "aWNlSGVhbHRoQWxhcm1zAQEqPgAvAD0qPgAA/////wAAAAA=";
+
         private const string InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAIBAAAAAQAZAAAASURl" +
-           "dmljZUhlYWx0aFR5cGVJbnN0YW5jZQEByzoBAcs6yzoAAP////8BAAAAFWCJCgIAAAABAAwAAABEZXZp" +
-           "Y2VIZWFsdGgBAcw6AC8AP8w6AAABAWQY/////wEB/////wAAAAA=";
+           "dmljZUhlYWx0aFR5cGVJbnN0YW5jZQEByzoBAcs6yzoAAP////8CAAAAFWCJCgIAAAABAAwAAABEZXZp" +
+           "Y2VIZWFsdGgBAcw6AC8AP8w6AAABAWQY/////wEB/////wAAAAAEYIAKAQAAAAEAEgAAAERldmljZUhl" +
+           "YWx0aEFsYXJtcwEBKj4ALwA9Kj4AAP////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -1432,6 +1508,25 @@ namespace Opc.Ua.Di
                 m_deviceHealth = value;
             }
         }
+
+        /// <remarks />
+        public FolderState DeviceHealthAlarms
+        {
+            get
+            {
+                return m_deviceHealthAlarms;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_deviceHealthAlarms, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_deviceHealthAlarms = value;
+            }
+        }
         #endregion
 
         #region Overridden Methods
@@ -1447,6 +1542,11 @@ namespace Opc.Ua.Di
             if (m_deviceHealth != null)
             {
                 children.Add(m_deviceHealth);
+            }
+
+            if (m_deviceHealthAlarms != null)
+            {
+                children.Add(m_deviceHealthAlarms);
             }
 
             base.GetChildren(context, children);
@@ -1490,6 +1590,27 @@ namespace Opc.Ua.Di
                     instance = DeviceHealth;
                     break;
                 }
+
+                case Opc.Ua.Di.BrowseNames.DeviceHealthAlarms:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DeviceHealthAlarms == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DeviceHealthAlarms = new FolderState(this);
+                            }
+                            else
+                            {
+                                DeviceHealthAlarms = (FolderState)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DeviceHealthAlarms;
+                    break;
+                }
             }
 
             if (instance != null)
@@ -1503,6 +1624,7 @@ namespace Opc.Ua.Di
 
         #region Private Fields
         private BaseDataVariableState<DeviceHealthEnumeration> m_deviceHealth;
+        private FolderState m_deviceHealthAlarms;
         #endregion
     }
     #endif
@@ -1906,11 +2028,6 @@ namespace Opc.Ua.Di
                 Model.Initialize(context, Model_InitializationString);
             }
 
-            if (SerialNumber != null)
-            {
-                SerialNumber.Initialize(context, SerialNumber_InitializationString);
-            }
-
             if (HardwareRevision != null)
             {
                 HardwareRevision.Initialize(context, HardwareRevision_InitializationString);
@@ -1926,11 +2043,6 @@ namespace Opc.Ua.Di
                 DeviceRevision.Initialize(context, DeviceRevision_InitializationString);
             }
 
-            if (RevisionCounter != null)
-            {
-                RevisionCounter.Initialize(context, RevisionCounter_InitializationString);
-            }
-
             if (ProductCode != null)
             {
                 ProductCode.Initialize(context, ProductCode_InitializationString);
@@ -1944,6 +2056,21 @@ namespace Opc.Ua.Di
             if (DeviceClass != null)
             {
                 DeviceClass.Initialize(context, DeviceClass_InitializationString);
+            }
+
+            if (SerialNumber != null)
+            {
+                SerialNumber.Initialize(context, SerialNumber_InitializationString);
+            }
+
+            if (ProductInstanceUri != null)
+            {
+                ProductInstanceUri.Initialize(context, ProductInstanceUri_InitializationString);
+            }
+
+            if (RevisionCounter != null)
+            {
+                RevisionCounter.Initialize(context, RevisionCounter_InitializationString);
             }
 
             if (AssetId != null)
@@ -1970,10 +2097,6 @@ namespace Opc.Ua.Di
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAFAAAATW9k" +
            "ZWwBAe86AC4ARO86AAAAFf////8BAf////8AAAAA";
 
-        private const string SerialNumber_InitializationString =
-           "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAMAAAAU2Vy" +
-           "aWFsTnVtYmVyAQHwOgAuAETwOgAAAAz/////AQH/////AAAAAA==";
-
         private const string HardwareRevision_InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAQAAAASGFy" +
            "ZHdhcmVSZXZpc2lvbgEB8ToALgBE8ToAAAAM/////wEB/////wAAAAA=";
@@ -1985,10 +2108,6 @@ namespace Opc.Ua.Di
         private const string DeviceRevision_InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAOAAAARGV2" +
            "aWNlUmV2aXNpb24BAfM6AC4ARPM6AAAADP////8BAf////8AAAAA";
-
-        private const string RevisionCounter_InitializationString =
-           "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAPAAAAUmV2" +
-           "aXNpb25Db3VudGVyAQH0OgAuAET0OgAAAAb/////AQH/////AAAAAA==";
 
         private const string ProductCode_InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQALAAAAUHJv" +
@@ -2002,6 +2121,18 @@ namespace Opc.Ua.Di
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQALAAAARGV2" +
            "aWNlQ2xhc3MBAfc6AC4ARPc6AAAADP////8BAf////8AAAAA";
 
+        private const string SerialNumber_InitializationString =
+           "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAMAAAAU2Vy" +
+           "aWFsTnVtYmVyAQHwOgAuAETwOgAAAAz/////AQH/////AAAAAA==";
+
+        private const string ProductInstanceUri_InitializationString =
+           "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQASAAAAUHJv" +
+           "ZHVjdEluc3RhbmNlVXJpAQEsPgAuAEQsPgAAAAz/////AQH/////AAAAAA==";
+
+        private const string RevisionCounter_InitializationString =
+           "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAPAAAAUmV2" +
+           "aXNpb25Db3VudGVyAQH0OgAuAET0OgAAAAb/////AQH/////AAAAAA==";
+
         private const string AssetId_InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAHAAAAQXNz" +
            "ZXRJZAEB+DoALgBE+DoAAAAM/////wEB/////wAAAAA=";
@@ -2012,17 +2143,18 @@ namespace Opc.Ua.Di
 
         private const string InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAIBAAAAAQAVAAAAQ29t" +
-           "cG9uZW50VHlwZUluc3RhbmNlAQHWOgEB1jrWOgAAAgAAAAEAw0QAAQG8OgEAw0QAAQHIOg0AAAAVYIkK" +
+           "cG9uZW50VHlwZUluc3RhbmNlAQHWOgEB1jrWOgAAAgAAAAEAw0QAAQG8OgEAw0QAAQHIOg4AAAAVYIkK" +
            "AgAAAAEADAAAAE1hbnVmYWN0dXJlcgEB7ToALgBE7ToAAAAV/////wEB/////wAAAAAVYIkKAgAAAAEA" +
            "DwAAAE1hbnVmYWN0dXJlclVyaQEB7joALgBE7joAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEABQAA" +
-           "AE1vZGVsAQHvOgAuAETvOgAAABX/////AQH/////AAAAABVgiQoCAAAAAQAMAAAAU2VyaWFsTnVtYmVy" +
-           "AQHwOgAuAETwOgAAAAz/////AQH/////AAAAABVgiQoCAAAAAQAQAAAASGFyZHdhcmVSZXZpc2lvbgEB" +
-           "8ToALgBE8ToAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEAEAAAAFNvZnR3YXJlUmV2aXNpb24BAfI6" +
-           "AC4ARPI6AAAADP////8BAf////8AAAAAFWCJCgIAAAABAA4AAABEZXZpY2VSZXZpc2lvbgEB8zoALgBE" +
-           "8zoAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEADwAAAFJldmlzaW9uQ291bnRlcgEB9DoALgBE9DoA" +
-           "AAAG/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAFByb2R1Y3RDb2RlAQH1OgAuAET1OgAAAAz/////" +
-           "AQH/////AAAAABVgiQoCAAAAAQAMAAAARGV2aWNlTWFudWFsAQH2OgAuAET2OgAAAAz/////AQH/////" +
-           "AAAAABVgiQoCAAAAAQALAAAARGV2aWNlQ2xhc3MBAfc6AC4ARPc6AAAADP////8BAf////8AAAAAFWCJ" +
+           "AE1vZGVsAQHvOgAuAETvOgAAABX/////AQH/////AAAAABVgiQoCAAAAAQAQAAAASGFyZHdhcmVSZXZp" +
+           "c2lvbgEB8ToALgBE8ToAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEAEAAAAFNvZnR3YXJlUmV2aXNp" +
+           "b24BAfI6AC4ARPI6AAAADP////8BAf////8AAAAAFWCJCgIAAAABAA4AAABEZXZpY2VSZXZpc2lvbgEB" +
+           "8zoALgBE8zoAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACwAAAFByb2R1Y3RDb2RlAQH1OgAuAET1" +
+           "OgAAAAz/////AQH/////AAAAABVgiQoCAAAAAQAMAAAARGV2aWNlTWFudWFsAQH2OgAuAET2OgAAAAz/" +
+           "////AQH/////AAAAABVgiQoCAAAAAQALAAAARGV2aWNlQ2xhc3MBAfc6AC4ARPc6AAAADP////8BAf//" +
+           "//8AAAAAFWCJCgIAAAABAAwAAABTZXJpYWxOdW1iZXIBAfA6AC4ARPA6AAAADP////8BAf////8AAAAA" +
+           "FWCJCgIAAAABABIAAABQcm9kdWN0SW5zdGFuY2VVcmkBASw+AC4ARCw+AAAADP////8BAf////8AAAAA" +
+           "FWCJCgIAAAABAA8AAABSZXZpc2lvbkNvdW50ZXIBAfQ6AC4ARPQ6AAAABv////8BAf////8AAAAAFWCJ" +
            "CgIAAAABAAcAAABBc3NldElkAQH4OgAuAET4OgAAAAz/////AQH/////AAAAABVgiQoCAAAAAQANAAAA" +
            "Q29tcG9uZW50TmFtZQEB+ToALgBE+ToAAAAV/////wEB/////wAAAAA=";
         #endregion
@@ -2088,25 +2220,6 @@ namespace Opc.Ua.Di
         }
 
         /// <remarks />
-        public PropertyState<string> SerialNumber
-        {
-            get
-            {
-                return m_serialNumber;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_serialNumber, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_serialNumber = value;
-            }
-        }
-
-        /// <remarks />
         public PropertyState<string> HardwareRevision
         {
             get
@@ -2164,25 +2277,6 @@ namespace Opc.Ua.Di
         }
 
         /// <remarks />
-        public PropertyState<int> RevisionCounter
-        {
-            get
-            {
-                return m_revisionCounter;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_revisionCounter, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_revisionCounter = value;
-            }
-        }
-
-        /// <remarks />
         public PropertyState<string> ProductCode
         {
             get
@@ -2236,6 +2330,63 @@ namespace Opc.Ua.Di
                 }
 
                 m_deviceClass = value;
+            }
+        }
+
+        /// <remarks />
+        public PropertyState<string> SerialNumber
+        {
+            get
+            {
+                return m_serialNumber;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_serialNumber, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_serialNumber = value;
+            }
+        }
+
+        /// <remarks />
+        public PropertyState<string> ProductInstanceUri
+        {
+            get
+            {
+                return m_productInstanceUri;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_productInstanceUri, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_productInstanceUri = value;
+            }
+        }
+
+        /// <remarks />
+        public PropertyState<int> RevisionCounter
+        {
+            get
+            {
+                return m_revisionCounter;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_revisionCounter, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_revisionCounter = value;
             }
         }
 
@@ -2303,11 +2454,6 @@ namespace Opc.Ua.Di
                 children.Add(m_model);
             }
 
-            if (m_serialNumber != null)
-            {
-                children.Add(m_serialNumber);
-            }
-
             if (m_hardwareRevision != null)
             {
                 children.Add(m_hardwareRevision);
@@ -2323,11 +2469,6 @@ namespace Opc.Ua.Di
                 children.Add(m_deviceRevision);
             }
 
-            if (m_revisionCounter != null)
-            {
-                children.Add(m_revisionCounter);
-            }
-
             if (m_productCode != null)
             {
                 children.Add(m_productCode);
@@ -2341,6 +2482,21 @@ namespace Opc.Ua.Di
             if (m_deviceClass != null)
             {
                 children.Add(m_deviceClass);
+            }
+
+            if (m_serialNumber != null)
+            {
+                children.Add(m_serialNumber);
+            }
+
+            if (m_productInstanceUri != null)
+            {
+                children.Add(m_productInstanceUri);
+            }
+
+            if (m_revisionCounter != null)
+            {
+                children.Add(m_revisionCounter);
             }
 
             if (m_assetId != null)
@@ -2437,27 +2593,6 @@ namespace Opc.Ua.Di
                     break;
                 }
 
-                case Opc.Ua.Di.BrowseNames.SerialNumber:
-                {
-                    if (createOrReplace)
-                    {
-                        if (SerialNumber == null)
-                        {
-                            if (replacement == null)
-                            {
-                                SerialNumber = new PropertyState<string>(this);
-                            }
-                            else
-                            {
-                                SerialNumber = (PropertyState<string>)replacement;
-                            }
-                        }
-                    }
-
-                    instance = SerialNumber;
-                    break;
-                }
-
                 case Opc.Ua.Di.BrowseNames.HardwareRevision:
                 {
                     if (createOrReplace)
@@ -2518,27 +2653,6 @@ namespace Opc.Ua.Di
                     }
 
                     instance = DeviceRevision;
-                    break;
-                }
-
-                case Opc.Ua.Di.BrowseNames.RevisionCounter:
-                {
-                    if (createOrReplace)
-                    {
-                        if (RevisionCounter == null)
-                        {
-                            if (replacement == null)
-                            {
-                                RevisionCounter = new PropertyState<int>(this);
-                            }
-                            else
-                            {
-                                RevisionCounter = (PropertyState<int>)replacement;
-                            }
-                        }
-                    }
-
-                    instance = RevisionCounter;
                     break;
                 }
 
@@ -2605,6 +2719,69 @@ namespace Opc.Ua.Di
                     break;
                 }
 
+                case Opc.Ua.Di.BrowseNames.SerialNumber:
+                {
+                    if (createOrReplace)
+                    {
+                        if (SerialNumber == null)
+                        {
+                            if (replacement == null)
+                            {
+                                SerialNumber = new PropertyState<string>(this);
+                            }
+                            else
+                            {
+                                SerialNumber = (PropertyState<string>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = SerialNumber;
+                    break;
+                }
+
+                case Opc.Ua.Di.BrowseNames.ProductInstanceUri:
+                {
+                    if (createOrReplace)
+                    {
+                        if (ProductInstanceUri == null)
+                        {
+                            if (replacement == null)
+                            {
+                                ProductInstanceUri = new PropertyState<string>(this);
+                            }
+                            else
+                            {
+                                ProductInstanceUri = (PropertyState<string>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = ProductInstanceUri;
+                    break;
+                }
+
+                case Opc.Ua.Di.BrowseNames.RevisionCounter:
+                {
+                    if (createOrReplace)
+                    {
+                        if (RevisionCounter == null)
+                        {
+                            if (replacement == null)
+                            {
+                                RevisionCounter = new PropertyState<int>(this);
+                            }
+                            else
+                            {
+                                RevisionCounter = (PropertyState<int>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = RevisionCounter;
+                    break;
+                }
+
                 case Opc.Ua.Di.BrowseNames.AssetId:
                 {
                     if (createOrReplace)
@@ -2661,14 +2838,15 @@ namespace Opc.Ua.Di
         private PropertyState<LocalizedText> m_manufacturer;
         private PropertyState<string> m_manufacturerUri;
         private PropertyState<LocalizedText> m_model;
-        private PropertyState<string> m_serialNumber;
         private PropertyState<string> m_hardwareRevision;
         private PropertyState<string> m_softwareRevision;
         private PropertyState<string> m_deviceRevision;
-        private PropertyState<int> m_revisionCounter;
         private PropertyState<string> m_productCode;
         private PropertyState<string> m_deviceManual;
         private PropertyState<string> m_deviceClass;
+        private PropertyState<string> m_serialNumber;
+        private PropertyState<string> m_productInstanceUri;
+        private PropertyState<int> m_revisionCounter;
         private PropertyState<string> m_assetId;
         private PropertyState<LocalizedText> m_componentName;
         #endregion
@@ -2727,9 +2905,34 @@ namespace Opc.Ua.Di
         {
             base.InitializeOptionalChildren(context);
 
+            if (DeviceClass != null)
+            {
+                DeviceClass.Initialize(context, DeviceClass_InitializationString);
+            }
+
+            if (ManufacturerUri != null)
+            {
+                ManufacturerUri.Initialize(context, ManufacturerUri_InitializationString);
+            }
+
+            if (ProductCode != null)
+            {
+                ProductCode.Initialize(context, ProductCode_InitializationString);
+            }
+
+            if (ProductInstanceUri != null)
+            {
+                ProductInstanceUri.Initialize(context, ProductInstanceUri_InitializationString);
+            }
+
             if (DeviceHealth != null)
             {
                 DeviceHealth.Initialize(context, DeviceHealth_InitializationString);
+            }
+
+            if (DeviceHealthAlarms != null)
+            {
+                DeviceHealthAlarms.Initialize(context, DeviceHealthAlarms_InitializationString);
             }
 
             if (DeviceTypeImage != null)
@@ -2754,9 +2957,29 @@ namespace Opc.Ua.Di
         }
 
         #region Initialization String
+        private const string DeviceClass_InitializationString =
+           "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQALAAAARGV2" +
+           "aWNlQ2xhc3MBAUYZAC4AREYZAAAADP////8BAf////8AAAAA";
+
+        private const string ManufacturerUri_InitializationString =
+           "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAPAAAATWFu" +
+           "dWZhY3R1cmVyVXJpAQH7OgAuAET7OgAAAAz/////AQH/////AAAAAA==";
+
+        private const string ProductCode_InitializationString =
+           "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQALAAAAUHJv" +
+           "ZHVjdENvZGUBAfw6AC4ARPw6AAAADP////8BAf////8AAAAA";
+
+        private const string ProductInstanceUri_InitializationString =
+           "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQASAAAAUHJv" +
+           "ZHVjdEluc3RhbmNlVXJpAQEuPgAuAEQuPgAAAAz/////AQH/////AAAAAA==";
+
         private const string DeviceHealth_InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQoCAAAAAQAMAAAARGV2" +
            "aWNlSGVhbHRoAQFAGAAvAD9AGAAAAQFkGP////8BAf////8AAAAA";
+
+        private const string DeviceHealthAlarms_InitializationString =
+           "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAoBAAAAAQASAAAARGV2" +
+           "aWNlSGVhbHRoQWxhcm1zAQE4PgAvAD04PgAA/////wAAAAA=";
 
         private const string DeviceTypeImage_InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////yRggAoBAAAAAQAPAAAARGV2" +
@@ -2780,31 +3003,36 @@ namespace Opc.Ua.Di
 
         private const string InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAIBAAAAAQASAAAARGV2" +
-           "aWNlVHlwZUluc3RhbmNlAQHqAwEB6gPqAwAAAgAAAAEAw0QAAQHNOgEAw0QAAQHLOg0AAAA1YIkKAgAA" +
+           "aWNlVHlwZUluc3RhbmNlAQHqAwEB6gPqAwAAAgAAAAEAw0QAAQHNOgEAw0QAAQHLOhIAAAA1YIkKAgAA" +
            "AAEADAAAAE1hbnVmYWN0dXJlcgEBcxcDAAAAADAAAABOYW1lIG9mIHRoZSBjb21wYW55IHRoYXQgbWFu" +
-           "dWZhY3R1cmVkIHRoZSBkZXZpY2UALgBEcxcAAAAV/////wEB/////wAAAAA1YIkKAgAAAAEABQAAAE1v" +
-           "ZGVsAQF0FwMAAAAAGAAAAE1vZGVsIG5hbWUgb2YgdGhlIGRldmljZQAuAER0FwAAABX/////AQH/////" +
-           "AAAAADVgiQoCAAAAAQAMAAAAU2VyaWFsTnVtYmVyAQFxFwMAAAAATQAAAElkZW50aWZpZXIgdGhhdCB1" +
-           "bmlxdWVseSBpZGVudGlmaWVzLCB3aXRoaW4gYSBtYW51ZmFjdHVyZXIsIGEgZGV2aWNlIGluc3RhbmNl" +
-           "AC4ARHEXAAAADP////8BAf////8AAAAANWCJCgIAAAABABAAAABIYXJkd2FyZVJldmlzaW9uAQF4FwMA" +
-           "AAAALAAAAFJldmlzaW9uIGxldmVsIG9mIHRoZSBoYXJkd2FyZSBvZiB0aGUgZGV2aWNlAC4ARHgXAAAA" +
-           "DP////8BAf////8AAAAANWCJCgIAAAABABAAAABTb2Z0d2FyZVJldmlzaW9uAQF3FwMAAAAANQAAAFJl" +
-           "dmlzaW9uIGxldmVsIG9mIHRoZSBzb2Z0d2FyZS9maXJtd2FyZSBvZiB0aGUgZGV2aWNlAC4ARHcXAAAA" +
-           "DP////8BAf////8AAAAANWCJCgIAAAABAA4AAABEZXZpY2VSZXZpc2lvbgEBdhcDAAAAACQAAABPdmVy" +
-           "YWxsIHJldmlzaW9uIGxldmVsIG9mIHRoZSBkZXZpY2UALgBEdhcAAAAM/////wEB/////wAAAAA1YIkK" +
-           "AgAAAAEADwAAAFJldmlzaW9uQ291bnRlcgEBchcDAAAAAGkAAABBbiBpbmNyZW1lbnRhbCBjb3VudGVy" +
-           "IGluZGljYXRpbmcgdGhlIG51bWJlciBvZiB0aW1lcyB0aGUgc3RhdGljIGRhdGEgd2l0aGluIHRoZSBE" +
-           "ZXZpY2UgaGFzIGJlZW4gbW9kaWZpZWQALgBEchcAAAAG/////wEB/////wAAAAA1YIkKAgAAAAEADAAA" +
-           "AERldmljZU1hbnVhbAEBdRcDAAAAAFoAAABBZGRyZXNzIChwYXRobmFtZSBpbiB0aGUgZmlsZSBzeXN0" +
-           "ZW0gb3IgYSBVUkwgfCBXZWIgYWRkcmVzcykgb2YgdXNlciBtYW51YWwgZm9yIHRoZSBkZXZpY2UALgBE" +
-           "dRcAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEADAAAAERldmljZUhlYWx0aAEBQBgALwA/QBgAAAEB" +
-           "ZBj/////AQH/////AAAAACRggAoBAAAAAQAPAAAARGV2aWNlVHlwZUltYWdlAQFBGAMAAAAAIQAAAE9y" +
-           "Z2FuaXplcyBwaWN0dXJlcyBvZiB0aGUgZGV2aWNlLgAvAD1BGAAA/////wAAAAAkYIAKAQAAAAEADQAA" +
-           "AERvY3VtZW50YXRpb24BAUMYAwAAAAAjAAAAT3JnYW5pemVzIGRvY3VtZW50cyBmb3IgdGhlIGRldmlj" +
-           "ZS4ALwA9QxgAAP////8AAAAAJGCACgEAAAABAA8AAABQcm90b2NvbFN1cHBvcnQBAUUYAwAAAAAnAAAA" +
-           "UHJvdG9jb2wtc3BlY2lmaWMgZmlsZXMgZm9yIHRoZSBkZXZpY2UuAC8APUUYAAD/////AAAAACRggAoB" +
-           "AAAAAQAIAAAASW1hZ2VTZXQBAUcYAwAAAAAxAAAAT3JnYW5pemVzIGltYWdlcyB0aGF0IGFyZSB1c2Vk" +
-           "IHdpdGhpbiBVSUVsZW1lbnRzLgAvAD1HGAAA/////wAAAAA=";
+           "dWZhY3R1cmVkIHRoZSBkZXZpY2UALgBEcxcAAAAV/////wEB/////wAAAAAVYIkKAgAAAAEADwAAAE1h" +
+           "bnVmYWN0dXJlclVyaQEB+zoALgBE+zoAAAAM/////wEB/////wAAAAA1YIkKAgAAAAEABQAAAE1vZGVs" +
+           "AQF0FwMAAAAAGAAAAE1vZGVsIG5hbWUgb2YgdGhlIGRldmljZQAuAER0FwAAABX/////AQH/////AAAA" +
+           "ADVgiQoCAAAAAQAQAAAASGFyZHdhcmVSZXZpc2lvbgEBeBcDAAAAACwAAABSZXZpc2lvbiBsZXZlbCBv" +
+           "ZiB0aGUgaGFyZHdhcmUgb2YgdGhlIGRldmljZQAuAER4FwAAAAz/////AQH/////AAAAADVgiQoCAAAA" +
+           "AQAQAAAAU29mdHdhcmVSZXZpc2lvbgEBdxcDAAAAADUAAABSZXZpc2lvbiBsZXZlbCBvZiB0aGUgc29m" +
+           "dHdhcmUvZmlybXdhcmUgb2YgdGhlIGRldmljZQAuAER3FwAAAAz/////AQH/////AAAAADVgiQoCAAAA" +
+           "AQAOAAAARGV2aWNlUmV2aXNpb24BAXYXAwAAAAAkAAAAT3ZlcmFsbCByZXZpc2lvbiBsZXZlbCBvZiB0" +
+           "aGUgZGV2aWNlAC4ARHYXAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAsAAABQcm9kdWN0Q29kZQEB" +
+           "/DoALgBE/DoAAAAM/////wEB/////wAAAAA1YIkKAgAAAAEADAAAAERldmljZU1hbnVhbAEBdRcDAAAA" +
+           "AFoAAABBZGRyZXNzIChwYXRobmFtZSBpbiB0aGUgZmlsZSBzeXN0ZW0gb3IgYSBVUkwgfCBXZWIgYWRk" +
+           "cmVzcykgb2YgdXNlciBtYW51YWwgZm9yIHRoZSBkZXZpY2UALgBEdRcAAAAM/////wEB/////wAAAAAV" +
+           "YIkKAgAAAAEACwAAAERldmljZUNsYXNzAQFGGQAuAERGGQAAAAz/////AQH/////AAAAADVgiQoCAAAA" +
+           "AQAMAAAAU2VyaWFsTnVtYmVyAQFxFwMAAAAATQAAAElkZW50aWZpZXIgdGhhdCB1bmlxdWVseSBpZGVu" +
+           "dGlmaWVzLCB3aXRoaW4gYSBtYW51ZmFjdHVyZXIsIGEgZGV2aWNlIGluc3RhbmNlAC4ARHEXAAAADP//" +
+           "//8BAf////8AAAAAFWCJCgIAAAABABIAAABQcm9kdWN0SW5zdGFuY2VVcmkBAS4+AC4ARC4+AAAADP//" +
+           "//8BAf////8AAAAANWCJCgIAAAABAA8AAABSZXZpc2lvbkNvdW50ZXIBAXIXAwAAAABpAAAAQW4gaW5j" +
+           "cmVtZW50YWwgY291bnRlciBpbmRpY2F0aW5nIHRoZSBudW1iZXIgb2YgdGltZXMgdGhlIHN0YXRpYyBk" +
+           "YXRhIHdpdGhpbiB0aGUgRGV2aWNlIGhhcyBiZWVuIG1vZGlmaWVkAC4ARHIXAAAABv////8BAf////8A" +
+           "AAAAFWCJCgIAAAABAAwAAABEZXZpY2VIZWFsdGgBAUAYAC8AP0AYAAABAWQY/////wEB/////wAAAAAE" +
+           "YIAKAQAAAAEAEgAAAERldmljZUhlYWx0aEFsYXJtcwEBOD4ALwA9OD4AAP////8AAAAAJGCACgEAAAAB" +
+           "AA8AAABEZXZpY2VUeXBlSW1hZ2UBAUEYAwAAAAAhAAAAT3JnYW5pemVzIHBpY3R1cmVzIG9mIHRoZSBk" +
+           "ZXZpY2UuAC8APUEYAAD/////AAAAACRggAoBAAAAAQANAAAARG9jdW1lbnRhdGlvbgEBQxgDAAAAACMA" +
+           "AABPcmdhbml6ZXMgZG9jdW1lbnRzIGZvciB0aGUgZGV2aWNlLgAvAD1DGAAA/////wAAAAAkYIAKAQAA" +
+           "AAEADwAAAFByb3RvY29sU3VwcG9ydAEBRRgDAAAAACcAAABQcm90b2NvbC1zcGVjaWZpYyBmaWxlcyBm" +
+           "b3IgdGhlIGRldmljZS4ALwA9RRgAAP////8AAAAAJGCACgEAAAABAAgAAABJbWFnZVNldAEBRxgDAAAA" +
+           "ADEAAABPcmdhbml6ZXMgaW1hZ2VzIHRoYXQgYXJlIHVzZWQgd2l0aGluIFVJRWxlbWVudHMuAC8APUcY" +
+           "AAD/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -2826,6 +3054,25 @@ namespace Opc.Ua.Di
                 }
 
                 m_deviceHealth = value;
+            }
+        }
+
+        /// <remarks />
+        public FolderState DeviceHealthAlarms
+        {
+            get
+            {
+                return m_deviceHealthAlarms;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_deviceHealthAlarms, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_deviceHealthAlarms = value;
             }
         }
 
@@ -2921,6 +3168,11 @@ namespace Opc.Ua.Di
                 children.Add(m_deviceHealth);
             }
 
+            if (m_deviceHealthAlarms != null)
+            {
+                children.Add(m_deviceHealthAlarms);
+            }
+
             if (m_deviceTypeImage != null)
             {
                 children.Add(m_deviceTypeImage);
@@ -2980,6 +3232,27 @@ namespace Opc.Ua.Di
                     }
 
                     instance = DeviceHealth;
+                    break;
+                }
+
+                case Opc.Ua.Di.BrowseNames.DeviceHealthAlarms:
+                {
+                    if (createOrReplace)
+                    {
+                        if (DeviceHealthAlarms == null)
+                        {
+                            if (replacement == null)
+                            {
+                                DeviceHealthAlarms = new FolderState(this);
+                            }
+                            else
+                            {
+                                DeviceHealthAlarms = (FolderState)replacement;
+                            }
+                        }
+                    }
+
+                    instance = DeviceHealthAlarms;
                     break;
                 }
 
@@ -3079,6 +3352,7 @@ namespace Opc.Ua.Di
 
         #region Private Fields
         private BaseDataVariableState<DeviceHealthEnumeration> m_deviceHealth;
+        private FolderState m_deviceHealthAlarms;
         private FolderState m_deviceTypeImage;
         private FolderState m_documentation;
         private FolderState m_protocolSupport;
@@ -4720,46 +4994,46 @@ namespace Opc.Ua.Di
         #region Initialization String
         private const string Lock_InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////yRggAoBAAAAAQAEAAAATG9j" +
-           "awEBlhgDAAAAABkAAABVc2VkIHRvIGxvY2sgdGhlIE5ldHdvcmsuAC8BAfQYlhgAAP////8IAAAAFWCp" +
+           "awEBlhgDAAAAABkAAABVc2VkIHRvIGxvY2sgdGhlIE5ldHdvcmsuAC8BAfQYlhgAAP////8JAAAAFWCp" +
            "CgIAAAAAABkAAABEZWZhdWx0SW5zdGFuY2VCcm93c2VOYW1lAQEPPgAuAEQPPgAADAQAAABMb2NrAAz/" +
-           "////AQH/////AAAAABVgiQoCAAAAAQANAAAATG9ja2luZ0NsaWVudAEBmBgALgBEmBgAAAAM/////wEB" +
-           "/////wAAAAAVYIkKAgAAAAEACwAAAExvY2tpbmdVc2VyAQGZGAAuAESZGAAAAAz/////AQH/////AAAA" +
-           "ABVgiQoCAAAAAQARAAAAUmVtYWluaW5nTG9ja1RpbWUBAZoYAC4ARJoYAAABACIB/////wEB/////wAA" +
-           "AAAEYYIKBAAAAAEACAAAAEluaXRMb2NrAQGbGAAvAQH5GJsYAAABAf////8CAAAAF2CpCgIAAAAAAA4A" +
-           "AABJbnB1dEFyZ3VtZW50cwEBnBgALgBEnBgAAJYBAAAAAQAqAQEWAAAABwAAAENvbnRleHQADP////8A" +
-           "AAAAAAEAKAEBAAAAAQAAAAAAAAABAf////8AAAAAF2CpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMB" +
-           "AZ0YAC4ARJ0YAACWAQAAAAEAKgEBHQAAAA4AAABJbml0TG9ja1N0YXR1cwAG/////wAAAAAAAQAoAQEA" +
-           "AAABAAAAAAAAAAEB/////wAAAAAEYYIKBAAAAAEACQAAAFJlbmV3TG9jawEBnhgALwEB/BieGAAAAQH/" +
-           "////AQAAABdgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQGfGAAuAESfGAAAlgEAAAABACoBAR4A" +
-           "AAAPAAAAUmVuZXdMb2NrU3RhdHVzAAb/////AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/////AAAAAARh" +
-           "ggoEAAAAAQAIAAAARXhpdExvY2sBAaAYAC8BAf4YoBgAAAEB/////wEAAAAXYKkKAgAAAAAADwAAAE91" +
-           "dHB1dEFyZ3VtZW50cwEBoRgALgBEoRgAAJYBAAAAAQAqAQEdAAAADgAAAEV4aXRMb2NrU3RhdHVzAAb/" +
-           "////AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/////AAAAAARhggoEAAAAAQAJAAAAQnJlYWtMb2NrAQGi" +
-           "GAAvAQEAGaIYAAABAf////8BAAAAF2CpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAaMYAC4ARKMY" +
-           "AACWAQAAAAEAKgEBHgAAAA8AAABCcmVha0xvY2tTdGF0dXMABv////8AAAAAAAEAKAEBAAAAAQAAAAAA" +
-           "AAABAf////8AAAAA";
+           "////AQH/////AAAAABVgiQoCAAAAAQAGAAAATG9ja2VkAQE0PgAuAEQ0PgAAAAH/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAQANAAAATG9ja2luZ0NsaWVudAEBmBgALgBEmBgAAAAM/////wEB/////wAAAAAVYIkK" +
+           "AgAAAAEACwAAAExvY2tpbmdVc2VyAQGZGAAuAESZGAAAAAz/////AQH/////AAAAABVgiQoCAAAAAQAR" +
+           "AAAAUmVtYWluaW5nTG9ja1RpbWUBAZoYAC4ARJoYAAABACIB/////wEB/////wAAAAAEYYIKBAAAAAEA" +
+           "CAAAAEluaXRMb2NrAQGbGAAvAQH5GJsYAAABAf////8CAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFyZ3Vt" +
+           "ZW50cwEBnBgALgBEnBgAAJYBAAAAAQAqAQEWAAAABwAAAENvbnRleHQADP////8AAAAAAAEAKAEBAAAA" +
+           "AQAAAAAAAAABAf////8AAAAAF2CpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAZ0YAC4ARJ0YAACW" +
+           "AQAAAAEAKgEBHQAAAA4AAABJbml0TG9ja1N0YXR1cwAG/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB" +
+           "/////wAAAAAEYYIKBAAAAAEACQAAAFJlbmV3TG9jawEBnhgALwEB/BieGAAAAQH/////AQAAABdgqQoC" +
+           "AAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQGfGAAuAESfGAAAlgEAAAABACoBAR4AAAAPAAAAUmVuZXdM" +
+           "b2NrU3RhdHVzAAb/////AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/////AAAAAARhggoEAAAAAQAIAAAA" +
+           "RXhpdExvY2sBAaAYAC8BAf4YoBgAAAEB/////wEAAAAXYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50" +
+           "cwEBoRgALgBEoRgAAJYBAAAAAQAqAQEdAAAADgAAAEV4aXRMb2NrU3RhdHVzAAb/////AAAAAAABACgB" +
+           "AQAAAAEAAAAAAAAAAQH/////AAAAAARhggoEAAAAAQAJAAAAQnJlYWtMb2NrAQGiGAAvAQEAGaIYAAAB" +
+           "Af////8BAAAAF2CpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAaMYAC4ARKMYAACWAQAAAAEAKgEB" +
+           "HgAAAA8AAABCcmVha0xvY2tTdGF0dXMABv////8AAAAAAAEAKAEBAAAAAQAAAAAAAAABAf////8AAAAA";
 
         private const string InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAIBAAAAAQATAAAATmV0" +
            "d29ya1R5cGVJbnN0YW5jZQEBZxgBAWcYZxgAAP////8BAAAAJGCACgEAAAABAAQAAABMb2NrAQGWGAMA" +
-           "AAAAGQAAAFVzZWQgdG8gbG9jayB0aGUgTmV0d29yay4ALwEB9BiWGAAA/////wgAAAAVYKkKAgAAAAAA" +
+           "AAAAGQAAAFVzZWQgdG8gbG9jayB0aGUgTmV0d29yay4ALwEB9BiWGAAA/////wkAAAAVYKkKAgAAAAAA" +
            "GQAAAERlZmF1bHRJbnN0YW5jZUJyb3dzZU5hbWUBAQ8+AC4ARA8+AAAMBAAAAExvY2sADP////8BAf//" +
-           "//8AAAAAFWCJCgIAAAABAA0AAABMb2NraW5nQ2xpZW50AQGYGAAuAESYGAAAAAz/////AQH/////AAAA" +
-           "ABVgiQoCAAAAAQALAAAATG9ja2luZ1VzZXIBAZkYAC4ARJkYAAAADP////8BAf////8AAAAAFWCJCgIA" +
-           "AAABABEAAABSZW1haW5pbmdMb2NrVGltZQEBmhgALgBEmhgAAAEAIgH/////AQH/////AAAAAARhggoE" +
-           "AAAAAQAIAAAASW5pdExvY2sBAZsYAC8BAfkYmxgAAAEB/////wIAAAAXYKkKAgAAAAAADgAAAElucHV0" +
-           "QXJndW1lbnRzAQGcGAAuAEScGAAAlgEAAAABACoBARYAAAAHAAAAQ29udGV4dAAM/////wAAAAAAAQAo" +
-           "AQEAAAABAAAAAAAAAAEB/////wAAAAAXYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBnRgALgBE" +
-           "nRgAAJYBAAAAAQAqAQEdAAAADgAAAEluaXRMb2NrU3RhdHVzAAb/////AAAAAAABACgBAQAAAAEAAAAA" +
-           "AAAAAQH/////AAAAAARhggoEAAAAAQAJAAAAUmVuZXdMb2NrAQGeGAAvAQH8GJ4YAAABAf////8BAAAA" +
-           "F2CpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAZ8YAC4ARJ8YAACWAQAAAAEAKgEBHgAAAA8AAABS" +
-           "ZW5ld0xvY2tTdGF0dXMABv////8AAAAAAAEAKAEBAAAAAQAAAAAAAAABAf////8AAAAABGGCCgQAAAAB" +
-           "AAgAAABFeGl0TG9jawEBoBgALwEB/higGAAAAQH/////AQAAABdgqQoCAAAAAAAPAAAAT3V0cHV0QXJn" +
-           "dW1lbnRzAQGhGAAuAEShGAAAlgEAAAABACoBAR0AAAAOAAAARXhpdExvY2tTdGF0dXMABv////8AAAAA" +
-           "AAEAKAEBAAAAAQAAAAAAAAABAf////8AAAAABGGCCgQAAAABAAkAAABCcmVha0xvY2sBAaIYAC8BAQAZ" +
-           "ohgAAAEB/////wEAAAAXYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBoxgALgBEoxgAAJYBAAAA" +
-           "AQAqAQEeAAAADwAAAEJyZWFrTG9ja1N0YXR1cwAG/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB////" +
-           "/wAAAAA=";
+           "//8AAAAAFWCJCgIAAAABAAYAAABMb2NrZWQBATQ+AC4ARDQ+AAAAAf////8BAf////8AAAAAFWCJCgIA" +
+           "AAABAA0AAABMb2NraW5nQ2xpZW50AQGYGAAuAESYGAAAAAz/////AQH/////AAAAABVgiQoCAAAAAQAL" +
+           "AAAATG9ja2luZ1VzZXIBAZkYAC4ARJkYAAAADP////8BAf////8AAAAAFWCJCgIAAAABABEAAABSZW1h" +
+           "aW5pbmdMb2NrVGltZQEBmhgALgBEmhgAAAEAIgH/////AQH/////AAAAAARhggoEAAAAAQAIAAAASW5p" +
+           "dExvY2sBAZsYAC8BAfkYmxgAAAEB/////wIAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQGc" +
+           "GAAuAEScGAAAlgEAAAABACoBARYAAAAHAAAAQ29udGV4dAAM/////wAAAAAAAQAoAQEAAAABAAAAAAAA" +
+           "AAEB/////wAAAAAXYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBnRgALgBEnRgAAJYBAAAAAQAq" +
+           "AQEdAAAADgAAAEluaXRMb2NrU3RhdHVzAAb/////AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/////AAAA" +
+           "AARhggoEAAAAAQAJAAAAUmVuZXdMb2NrAQGeGAAvAQH8GJ4YAAABAf////8BAAAAF2CpCgIAAAAAAA8A" +
+           "AABPdXRwdXRBcmd1bWVudHMBAZ8YAC4ARJ8YAACWAQAAAAEAKgEBHgAAAA8AAABSZW5ld0xvY2tTdGF0" +
+           "dXMABv////8AAAAAAAEAKAEBAAAAAQAAAAAAAAABAf////8AAAAABGGCCgQAAAABAAgAAABFeGl0TG9j" +
+           "awEBoBgALwEB/higGAAAAQH/////AQAAABdgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQGhGAAu" +
+           "AEShGAAAlgEAAAABACoBAR0AAAAOAAAARXhpdExvY2tTdGF0dXMABv////8AAAAAAAEAKAEBAAAAAQAA" +
+           "AAAAAAABAf////8AAAAABGGCCgQAAAABAAkAAABCcmVha0xvY2sBAaIYAC8BAQAZohgAAAEB/////wEA" +
+           "AAAXYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBoxgALgBEoxgAAJYBAAAAAQAqAQEeAAAADwAA" +
+           "AEJyZWFrTG9ja1N0YXR1cwAG/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -5309,8 +5583,8 @@ namespace Opc.Ua.Di
            "SUQABv////8AAAAAAAEAKgEBHQAAAA4AAABTZXF1ZW5jZU51bWJlcgAG/////wAAAAAAAQAqAQEqAAAA" +
            "GwAAAE1heFBhcmFtZXRlclJlc3VsdHNUb1JldHVybgAG/////wAAAAAAAQAqAQEeAAAADwAAAE9taXRH" +
            "b29kUmVzdWx0cwAB/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAAXYKkKAgAAAAAADwAA" +
-           "AE91dHB1dEFyZ3VtZW50cwEBeRkALgBEeRkAAJYBAAAAAQAqAQEgAAAADwAAAEZldGNoUmVzdWx0RGF0" +
-           "YQEBehn/////AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/////AAAAAA==";
+           "AE91dHB1dEFyZ3VtZW50cwEBeRkALgBEeRkAAJYBAAAAAQAqAQEeAAAADwAAAEZldGNoUmVzdWx0RGF0" +
+           "YQAW/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -5347,7 +5621,7 @@ namespace Opc.Ua.Di
             int maxParameterResultsToReturn = (int)_inputArguments[2];
             bool omitGoodResults = (bool)_inputArguments[3];
 
-            FetchResultDataType fetchResultData = (FetchResultDataType)_outputArguments[0];
+            ExtensionObject fetchResultData = (ExtensionObject)_outputArguments[0];
 
             if (OnCall != null)
             {
@@ -5384,7 +5658,7 @@ namespace Opc.Ua.Di
         int sequenceNumber,
         int maxParameterResultsToReturn,
         bool omitGoodResults,
-        ref FetchResultDataType fetchResultData);
+        ref ExtensionObject fetchResultData);
     #endif
     #endregion
 
@@ -5456,8 +5730,8 @@ namespace Opc.Ua.Di
            "DgAAAFNlcXVlbmNlTnVtYmVyAAb/////AAAAAAABACoBASoAAAAbAAAATWF4UGFyYW1ldGVyUmVzdWx0" +
            "c1RvUmV0dXJuAAb/////AAAAAAABACoBAR4AAAAPAAAAT21pdEdvb2RSZXN1bHRzAAH/////AAAAAAAB" +
            "ACgBAQAAAAEAAAAAAAAAAQH/////AAAAABdgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQGFGQAu" +
-           "AESFGQAAlgEAAAABACoBASAAAAAPAAAARmV0Y2hSZXN1bHREYXRhAQF6Gf////8AAAAAAAEAKAEBAAAA" +
-           "AQAAAAAAAAABAf////8AAAAA";
+           "AESFGQAAlgEAAAABACoBAR4AAAAPAAAARmV0Y2hSZXN1bHREYXRhABb/////AAAAAAABACgBAQAAAAEA" +
+           "AAAAAAAAAQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -6170,23 +6444,24 @@ namespace Opc.Ua.Di
         #region Initialization String
         private const string InitializationString =
            "AQAAAB8AAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAIBAAAAAQAbAAAATG9j" +
-           "a2luZ1NlcnZpY2VzVHlwZUluc3RhbmNlAQH0GAEB9Bj0GAAA/////wgAAAAVYKkKAgAAAAAAGQAAAERl" +
+           "a2luZ1NlcnZpY2VzVHlwZUluc3RhbmNlAQH0GAEB9Bj0GAAA/////wkAAAAVYKkKAgAAAAAAGQAAAERl" +
            "ZmF1bHRJbnN0YW5jZUJyb3dzZU5hbWUBARU+AC4ARBU+AAAMBAAAAExvY2sADP////8BAf////8AAAAA" +
-           "FWCJCgIAAAABAA0AAABMb2NraW5nQ2xpZW50AQH2GAAuAET2GAAAAAz/////AQH/////AAAAABVgiQoC" +
-           "AAAAAQALAAAATG9ja2luZ1VzZXIBAfcYAC4ARPcYAAAADP////8BAf////8AAAAAFWCJCgIAAAABABEA" +
-           "AABSZW1haW5pbmdMb2NrVGltZQEB+BgALgBE+BgAAAEAIgH/////AQH/////AAAAAARhggoEAAAAAQAI" +
-           "AAAASW5pdExvY2sBAfkYAC8BAfkY+RgAAAEB/////wIAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1l" +
-           "bnRzAQH6GAAuAET6GAAAlgEAAAABACoBARYAAAAHAAAAQ29udGV4dAAM/////wAAAAAAAQAoAQEAAAAB" +
-           "AAAAAAAAAAEB/////wAAAAAXYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEB+xgALgBE+xgAAJYB" +
-           "AAAAAQAqAQEdAAAADgAAAEluaXRMb2NrU3RhdHVzAAb/////AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/" +
-           "////AAAAAARhggoEAAAAAQAJAAAAUmVuZXdMb2NrAQH8GAAvAQH8GPwYAAABAf////8BAAAAF2CpCgIA" +
-           "AAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAf0YAC4ARP0YAACWAQAAAAEAKgEBHgAAAA8AAABSZW5ld0xv" +
-           "Y2tTdGF0dXMABv////8AAAAAAAEAKAEBAAAAAQAAAAAAAAABAf////8AAAAABGGCCgQAAAABAAgAAABF" +
-           "eGl0TG9jawEB/hgALwEB/hj+GAAAAQH/////AQAAABdgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRz" +
-           "AQH/GAAuAET/GAAAlgEAAAABACoBAR0AAAAOAAAARXhpdExvY2tTdGF0dXMABv////8AAAAAAAEAKAEB" +
-           "AAAAAQAAAAAAAAABAf////8AAAAABGGCCgQAAAABAAkAAABCcmVha0xvY2sBAQAZAC8BAQAZABkAAAEB" +
-           "/////wEAAAAXYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBARkALgBEARkAAJYBAAAAAQAqAQEe" +
-           "AAAADwAAAEJyZWFrTG9ja1N0YXR1cwAG/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAA=";
+           "FWCJCgIAAAABAAYAAABMb2NrZWQBATc+AC4ARDc+AAAAAf////8BAf////8AAAAAFWCJCgIAAAABAA0A" +
+           "AABMb2NraW5nQ2xpZW50AQH2GAAuAET2GAAAAAz/////AQH/////AAAAABVgiQoCAAAAAQALAAAATG9j" +
+           "a2luZ1VzZXIBAfcYAC4ARPcYAAAADP////8BAf////8AAAAAFWCJCgIAAAABABEAAABSZW1haW5pbmdM" +
+           "b2NrVGltZQEB+BgALgBE+BgAAAEAIgH/////AQH/////AAAAAARhggoEAAAAAQAIAAAASW5pdExvY2sB" +
+           "AfkYAC8BAfkY+RgAAAEB/////wIAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQH6GAAuAET6" +
+           "GAAAlgEAAAABACoBARYAAAAHAAAAQ29udGV4dAAM/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB////" +
+           "/wAAAAAXYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEB+xgALgBE+xgAAJYBAAAAAQAqAQEdAAAA" +
+           "DgAAAEluaXRMb2NrU3RhdHVzAAb/////AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/////AAAAAARhggoE" +
+           "AAAAAQAJAAAAUmVuZXdMb2NrAQH8GAAvAQH8GPwYAAABAf////8BAAAAF2CpCgIAAAAAAA8AAABPdXRw" +
+           "dXRBcmd1bWVudHMBAf0YAC4ARP0YAACWAQAAAAEAKgEBHgAAAA8AAABSZW5ld0xvY2tTdGF0dXMABv//" +
+           "//8AAAAAAAEAKAEBAAAAAQAAAAAAAAABAf////8AAAAABGGCCgQAAAABAAgAAABFeGl0TG9jawEB/hgA" +
+           "LwEB/hj+GAAAAQH/////AQAAABdgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQH/GAAuAET/GAAA" +
+           "lgEAAAABACoBAR0AAAAOAAAARXhpdExvY2tTdGF0dXMABv////8AAAAAAAEAKAEBAAAAAQAAAAAAAAAB" +
+           "Af////8AAAAABGGCCgQAAAABAAkAAABCcmVha0xvY2sBAQAZAC8BAQAZABkAAAEB/////wEAAAAXYKkK" +
+           "AgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBARkALgBEARkAAJYBAAAAAQAqAQEeAAAADwAAAEJyZWFr" +
+           "TG9ja1N0YXR1cwAG/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -6208,6 +6483,25 @@ namespace Opc.Ua.Di
                 }
 
                 m_defaultInstanceBrowseName = value;
+            }
+        }
+
+        /// <remarks />
+        public PropertyState<bool> Locked
+        {
+            get
+            {
+                return m_locked;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_locked, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_locked = value;
             }
         }
 
@@ -6360,6 +6654,11 @@ namespace Opc.Ua.Di
                 children.Add(m_defaultInstanceBrowseName);
             }
 
+            if (m_locked != null)
+            {
+                children.Add(m_locked);
+            }
+
             if (m_lockingClient != null)
             {
                 children.Add(m_lockingClient);
@@ -6434,6 +6733,27 @@ namespace Opc.Ua.Di
                     }
 
                     instance = DefaultInstanceBrowseName;
+                    break;
+                }
+
+                case Opc.Ua.Di.BrowseNames.Locked:
+                {
+                    if (createOrReplace)
+                    {
+                        if (Locked == null)
+                        {
+                            if (replacement == null)
+                            {
+                                Locked = new PropertyState<bool>(this);
+                            }
+                            else
+                            {
+                                Locked = (PropertyState<bool>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = Locked;
                     break;
                 }
 
@@ -6596,6 +6916,7 @@ namespace Opc.Ua.Di
 
         #region Private Fields
         private PropertyState<string> m_defaultInstanceBrowseName;
+        private PropertyState<bool> m_locked;
         private PropertyState<string> m_lockingClient;
         private PropertyState<string> m_lockingUser;
         private PropertyState<double> m_remainingLockTime;
