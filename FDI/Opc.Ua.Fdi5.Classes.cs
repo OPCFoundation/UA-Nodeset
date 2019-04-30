@@ -108,8 +108,8 @@ namespace Opc.Ua.Fdi5
         #region Initialization String
         private const string InitializationString =
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk1Lx8AAABodHRwOi8vb3Bj" +
-           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQACAAAAAQAZAAAAVUlEZXNjcmlwdGlvblR5cGVJbnN0" +
-           "YW5jZQEBAQABAQEAAAz/////AQH/////AAAAAA==";
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQICAAAAAQAZAAAAVUlEZXNjcmlwdGlvblR5cGVJbnN0" +
+           "YW5jZQEBAQABAQEAAQAAAAAM/////wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -207,23 +207,21 @@ namespace Opc.Ua.Fdi5
 
         private const string InitializationString =
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk1Lx8AAABodHRwOi8vb3Bj" +
-           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xVgiQACAAAAAQAUAAAAVUlQbHVnSW5UeXBlSW5zdGFuY2UB" +
-           "AQIAAQECAAADAQAAAAEB/////wgAAAAVYIkKAgAAAAEAEQAAAFVJUFZhcmlhbnRWZXJzaW9uAQEDAAAu" +
-           "AEQDAAAAAAz/////AQH/////AAAAABVgiQoCAAAAAQAUAAAARkRJVGVjaG5vbG9neVZlcnNpb24BAQQA" +
-           "AC4ARAQAAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAkAAABSdW50aW1lSWQBAQUAAC4ARAUAAAAA" +
-           "DP////8BAf////8AAAAAFWCJCgIAAAABAA4AAABDcHVJbmZvcm1hdGlvbgEBBgAALgBEBgAAAAAM////" +
-           "/wEB/////wAAAAAVYIkKAgAAAAEACgAAAFBsYXRmb3JtSWQBAQcAAC4ARAcAAAAADP////8BAf////8A" +
-           "AAAAFWCJCgIAAAABAAUAAABTdHlsZQEBCAAALgBECAAAAAEBxAD/////AQH/////AAAAABVgiQoCAAAA" +
-           "AQAQAAAAU3RhcnRFbGVtZW50TmFtZQEBCQAALgBECQAAAAAM/////wEB/////wAAAAAEYIAKAQAAAAEA" +
-           "DQAAAERvY3VtZW50YXRpb24BAQoAAC8APQoAAAD/////AAAAAA==";
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////xdgiQICAAAAAQAUAAAAVUlQbHVnSW5UeXBlSW5zdGFuY2UB" +
+           "AQIAAQECAAIAAAAAAwEAAAABAAAAAAAAAAEB/////wgAAAAVYIkKAgAAAAEAEQAAAFVJUFZhcmlhbnRW" +
+           "ZXJzaW9uAQEDAAAuAEQDAAAAAAz/////AQH/////AAAAABVgiQoCAAAAAQAUAAAARkRJVGVjaG5vbG9n" +
+           "eVZlcnNpb24BAQQAAC4ARAQAAAAADP////8BAf////8AAAAAFWCJCgIAAAABAAkAAABSdW50aW1lSWQB" +
+           "AQUAAC4ARAUAAAAADP////8BAf////8AAAAAFWCJCgIAAAABAA4AAABDcHVJbmZvcm1hdGlvbgEBBgAA" +
+           "LgBEBgAAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACgAAAFBsYXRmb3JtSWQBAQcAAC4ARAcAAAAA" +
+           "DP////8BAf////8AAAAAFWCJCgIAAAABAAUAAABTdHlsZQEBCAAALgBECAAAAAEBxAD/////AQH/////" +
+           "AAAAABVgiQoCAAAAAQAQAAAAU3RhcnRFbGVtZW50TmFtZQEBCQAALgBECQAAAAAM/////wEB/////wAA" +
+           "AAAEYIAKAQAAAAEADQAAAERvY3VtZW50YXRpb24BAQoAAC8APQoAAAD/////AAAAAA==";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the UIPVariantVersion Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> UIPVariantVersion
         {
             get
@@ -242,9 +240,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the FDITechnologyVersion Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> FDITechnologyVersion
         {
             get
@@ -263,9 +259,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the RuntimeId Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> RuntimeId
         {
             get
@@ -284,9 +278,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the CpuInformation Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> CpuInformation
         {
             get
@@ -305,9 +297,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the PlatformId Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> PlatformId
         {
             get
@@ -326,9 +316,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the Style Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<StyleType> Style
         {
             get
@@ -347,9 +335,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the StartElementName Property.
-        /// </summary>
+        /// <remarks />
         public PropertyState<string> StartElementName
         {
             get
@@ -368,9 +354,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the Documentation Object.
-        /// </summary>
+        /// <remarks />
         public FolderState Documentation
         {
             get
@@ -708,8 +692,8 @@ namespace Opc.Ua.Fdi5
         #region Initialization String
         private const string InitializationString =
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk1Lx8AAABodHRwOi8vb3Bj" +
-           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQASAAAAQWN0aW9uVHlwZUluc3RhbmNlAQEL" +
-           "AAEBCwD/////AAAAAA==";
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAIBAAAAAQASAAAAQWN0aW9uVHlwZUluc3RhbmNlAQEL" +
+           "AAEBCwALAAAA/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -775,12 +759,12 @@ namespace Opc.Ua.Fdi5
         private const string InitializationString =
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk1Lx8AAABodHRwOi8vb3Bj" +
            "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRhggoEAAAAAQAWAAAASW52b2tlQWN0aW9uTWV0aG9kVHlw" +
-           "ZQEBDAAALwEBDAAMAAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAQ0AAC4A" +
+           "ZQEBDAAALwEBDAAMAAAAAQH/////AgAAABdgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAQ0AAC4A" +
            "RA0AAACWAgAAAAEAKgEBGQAAAAoAAABBY3Rpb25OYW1lAAz/////AAAAAAABACoBAR4AAAAPAAAATWV0" +
-           "aG9kQXJndW1lbnRzAAz/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1" +
-           "dEFyZ3VtZW50cwEBDgAALgBEDgAAAJYCAAAAAQAqAQEbAAAADAAAAEFjdGlvbk5vZGVJZAAR/////wAA" +
-           "AAAAAQAqAQEgAAAAEQAAAEludm9rZUFjdGlvbkVycm9yAAb/////AAAAAAABACgBAQAAAAEB/////wAA" +
-           "AAA=";
+           "aG9kQXJndW1lbnRzAAz/////AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/////AAAAABdgqQoCAAAAAAAP" +
+           "AAAAT3V0cHV0QXJndW1lbnRzAQEOAAAuAEQOAAAAlgIAAAABACoBARsAAAAMAAAAQWN0aW9uTm9kZUlk" +
+           "ABH/////AAAAAAABACoBASAAAAARAAAASW52b2tlQWN0aW9uRXJyb3IABv////8AAAAAAAEAKAEBAAAA" +
+           "AQAAAAAAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -799,44 +783,39 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string actionName = (string)inputArguments[0];
-            string methodArguments = (string)inputArguments[1];
+            string actionName = (string)_inputArguments[0];
+            string methodArguments = (string)_inputArguments[1];
 
-            NodeId actionNodeId = (NodeId)outputArguments[0];
-            int invokeActionError = (int)outputArguments[1];
+            NodeId actionNodeId = (NodeId)_outputArguments[0];
+            int invokeActionError = (int)_outputArguments[1];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     actionName,
                     methodArguments,
                     ref actionNodeId,
                     ref invokeActionError);
             }
 
-            outputArguments[0] = actionNodeId;
-            outputArguments[1] = invokeActionError;
+            _outputArguments[0] = actionNodeId;
+            _outputArguments[1] = invokeActionError;
 
             return result;
         }
@@ -910,11 +889,11 @@ namespace Opc.Ua.Fdi5
         private const string InitializationString =
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk1Lx8AAABodHRwOi8vb3Bj" +
            "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRhggoEAAAAAQAXAAAAUmVzcG9uZEFjdGlvbk1ldGhvZFR5" +
-           "cGUBAQ8AAC8BAQ8ADwAAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQEQAAAu" +
+           "cGUBAQ8AAC8BAQ8ADwAAAAEB/////wIAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQEQAAAu" +
            "AEQQAAAAlgIAAAABACoBARsAAAAMAAAAQWN0aW9uTm9kZUlkABH/////AAAAAAABACoBARcAAAAIAAAA" +
-           "UmVzcG9uc2UADP////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJn" +
-           "dW1lbnRzAQERAAAuAEQRAAAAlgEAAAABACoBASEAAAASAAAAUmVzcG9uZEFjdGlvbkVycm9yAAb/////" +
-           "AAAAAAABACgBAQAAAAEB/////wAAAAA=";
+           "UmVzcG9uc2UADP////8AAAAAAAEAKAEBAAAAAQAAAAAAAAABAf////8AAAAAF2CpCgIAAAAAAA8AAABP" +
+           "dXRwdXRBcmd1bWVudHMBAREAAC4ARBEAAACWAQAAAAEAKgEBIQAAABIAAABSZXNwb25kQWN0aW9uRXJy" +
+           "b3IABv////8AAAAAAAEAKAEBAAAAAQAAAAAAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -933,41 +912,36 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            NodeId actionNodeId = (NodeId)inputArguments[0];
-            string response = (string)inputArguments[1];
+            NodeId actionNodeId = (NodeId)_inputArguments[0];
+            string response = (string)_inputArguments[1];
 
-            int respondActionError = (int)outputArguments[0];
+            int respondActionError = (int)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     actionNodeId,
                     response,
                     ref respondActionError);
             }
 
-            outputArguments[0] = respondActionError;
+            _outputArguments[0] = respondActionError;
 
             return result;
         }
@@ -1040,10 +1014,11 @@ namespace Opc.Ua.Fdi5
         private const string InitializationString =
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk1Lx8AAABodHRwOi8vb3Bj" +
            "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRhggoEAAAAAQAVAAAAQWJvcnRBY3Rpb25NZXRob2RUeXBl" +
-           "AQESAAAvAQESABIAAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBEwAALgBE" +
-           "EwAAAJYBAAAAAQAqAQEbAAAADAAAAEFjdGlvbk5vZGVJZAAR/////wAAAAAAAQAoAQEAAAABAf////8A" +
-           "AAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBARQAAC4ARBQAAACWAQAAAAEAKgEBHwAAABAA" +
-           "AABBYm9ydEFjdGlvbkVycm9yAAb/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
+           "AQESAAAvAQESABIAAAABAf////8CAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBEwAALgBE" +
+           "EwAAAJYBAAAAAQAqAQEbAAAADAAAAEFjdGlvbk5vZGVJZAAR/////wAAAAAAAQAoAQEAAAABAAAAAAAA" +
+           "AAEB/////wAAAAAXYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBFAAALgBEFAAAAJYBAAAAAQAq" +
+           "AQEfAAAAEAAAAEFib3J0QWN0aW9uRXJyb3IABv////8AAAAAAAEAKAEBAAAAAQAAAAAAAAABAf////8A" +
+           "AAAA";
         #endregion
         #endif
         #endregion
@@ -1062,39 +1037,34 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            NodeId actionNodeId = (NodeId)inputArguments[0];
+            NodeId actionNodeId = (NodeId)_inputArguments[0];
 
-            int abortActionError = (int)outputArguments[0];
+            int abortActionError = (int)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     actionNodeId,
                     ref abortActionError);
             }
 
-            outputArguments[0] = abortActionError;
+            _outputArguments[0] = abortActionError;
 
             return result;
         }
@@ -1172,30 +1142,29 @@ namespace Opc.Ua.Fdi5
         #region Initialization String
         private const string InitializationString =
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk1Lx8AAABodHRwOi8vb3Bj" +
-           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAZAAAAQWN0aW9uU2VydmljZVR5cGVJbnN0" +
-           "YW5jZQEBFQABARUA/////wMAAAAEYYIKBAAAAAEADAAAAEludm9rZUFjdGlvbgEBFgAALwEBFgAWAAAA" +
-           "AQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBARcAAC4ARBcAAACWAgAAAAEAKgEB" +
-           "GQAAAAoAAABBY3Rpb25OYW1lAAz/////AAAAAAABACoBAR4AAAAPAAAATWV0aG9kQXJndW1lbnRzAAz/" +
-           "////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBGAAA" +
-           "LgBEGAAAAJYCAAAAAQAqAQEbAAAADAAAAEFjdGlvbk5vZGVJZAAR/////wAAAAAAAQAqAQEgAAAAEQAA" +
-           "AEludm9rZUFjdGlvbkVycm9yAAb/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEADQAA" +
-           "AFJlc3BvbmRBY3Rpb24BARkAAC8BARkAGQAAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJn" +
-           "dW1lbnRzAQEaAAAuAEQaAAAAlgIAAAABACoBARsAAAAMAAAAQWN0aW9uTm9kZUlkABH/////AAAAAAAB" +
-           "ACoBARcAAAAIAAAAUmVzcG9uc2UADP////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAP" +
-           "AAAAT3V0cHV0QXJndW1lbnRzAQEbAAAuAEQbAAAAlgEAAAABACoBASEAAAASAAAAUmVzcG9uZEFjdGlv" +
-           "bkVycm9yAAb/////AAAAAAABACgBAQAAAAEB/////wAAAAAEYYIKBAAAAAEACwAAAEFib3J0QWN0aW9u" +
-           "AQEcAAAvAQEcABwAAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBHQAALgBE" +
-           "HQAAAJYBAAAAAQAqAQEbAAAADAAAAEFjdGlvbk5vZGVJZAAR/////wAAAAAAAQAoAQEAAAABAf////8A" +
-           "AAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAR4AAC4ARB4AAACWAQAAAAEAKgEBHwAAABAA" +
-           "AABBYm9ydEFjdGlvbkVycm9yAAb/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAIBAAAAAQAZAAAAQWN0aW9uU2VydmljZVR5cGVJbnN0" +
+           "YW5jZQEBFQABARUAFQAAAP////8DAAAABGGCCgQAAAABAAwAAABJbnZva2VBY3Rpb24BARYAAC8BARYA" +
+           "FgAAAAEB/////wIAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQEXAAAuAEQXAAAAlgIAAAAB" +
+           "ACoBARkAAAAKAAAAQWN0aW9uTmFtZQAM/////wAAAAAAAQAqAQEeAAAADwAAAE1ldGhvZEFyZ3VtZW50" +
+           "cwAM/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAAXYKkKAgAAAAAADwAAAE91dHB1dEFy" +
+           "Z3VtZW50cwEBGAAALgBEGAAAAJYCAAAAAQAqAQEbAAAADAAAAEFjdGlvbk5vZGVJZAAR/////wAAAAAA" +
+           "AQAqAQEgAAAAEQAAAEludm9rZUFjdGlvbkVycm9yAAb/////AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/" +
+           "////AAAAAARhggoEAAAAAQANAAAAUmVzcG9uZEFjdGlvbgEBGQAALwEBGQAZAAAAAQH/////AgAAABdg" +
+           "qQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBARoAAC4ARBoAAACWAgAAAAEAKgEBGwAAAAwAAABBY3Rp" +
+           "b25Ob2RlSWQAEf////8AAAAAAAEAKgEBFwAAAAgAAABSZXNwb25zZQAM/////wAAAAAAAQAoAQEAAAAB" +
+           "AAAAAAAAAAEB/////wAAAAAXYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBGwAALgBEGwAAAJYB" +
+           "AAAAAQAqAQEhAAAAEgAAAFJlc3BvbmRBY3Rpb25FcnJvcgAG/////wAAAAAAAQAoAQEAAAABAAAAAAAA" +
+           "AAEB/////wAAAAAEYYIKBAAAAAEACwAAAEFib3J0QWN0aW9uAQEcAAAvAQEcABwAAAABAf////8CAAAA" +
+           "F2CpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBHQAALgBEHQAAAJYBAAAAAQAqAQEbAAAADAAAAEFj" +
+           "dGlvbk5vZGVJZAAR/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAAXYKkKAgAAAAAADwAA" +
+           "AE91dHB1dEFyZ3VtZW50cwEBHgAALgBEHgAAAJYBAAAAAQAqAQEfAAAAEAAAAEFib3J0QWN0aW9uRXJy" +
+           "b3IABv////8AAAAAAAEAKAEBAAAAAQAAAAAAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the InvokeActionMethodType Method.
-        /// </summary>
+        /// <remarks />
         public InvokeActionMethodState InvokeAction
         {
             get
@@ -1214,9 +1183,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the RespondActionMethodType Method.
-        /// </summary>
+        /// <remarks />
         public RespondActionMethodState RespondAction
         {
             get
@@ -1235,9 +1202,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the AbortActionMethodType Method.
-        /// </summary>
+        /// <remarks />
         public AbortActionMethodState AbortAction
         {
             get
@@ -1434,12 +1399,12 @@ namespace Opc.Ua.Fdi5
         private const string InitializationString =
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk1Lx8AAABodHRwOi8vb3Bj" +
            "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRhggoEAAAAAQAYAAAAR2V0RWRpdENvbnRleHRNZXRob2RU" +
-           "eXBlAQEiAAAvAQEiACIAAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBIwAA" +
+           "eXBlAQEiAAAvAQEiACIAAAABAf////8CAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBIwAA" +
            "LgBEIwAAAJYCAAAAAQAqAQEXAAAACAAAAFBhcmVudElkAAz/////AAAAAAABACoBASEAAAAQAAAAVGFy" +
-           "Z2V0V2luZG93TW9kZQEBwgD/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91" +
-           "dHB1dEFyZ3VtZW50cwEBJAAALgBEJAAAAJYCAAAAAQAqAQEcAAAADQAAAEVkaXRDb250ZXh0SWQADP//" +
-           "//8AAAAAAAEAKgEBIwAAABQAAABHZXRFZGl0Q29udGV4dFN0YXR1cwAG/////wAAAAAAAQAoAQEAAAAB" +
-           "Af////8AAAAA";
+           "Z2V0V2luZG93TW9kZQEBwgD/////AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/////AAAAABdgqQoCAAAA" +
+           "AAAPAAAAT3V0cHV0QXJndW1lbnRzAQEkAAAuAEQkAAAAlgIAAAABACoBARwAAAANAAAARWRpdENvbnRl" +
+           "eHRJZAAM/////wAAAAAAAQAqAQEjAAAAFAAAAEdldEVkaXRDb250ZXh0U3RhdHVzAAb/////AAAAAAAB" +
+           "ACgBAQAAAAEAAAAAAAAAAQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -1458,44 +1423,39 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string parentId = (string)inputArguments[0];
-            WindowModeType targetWindowMode = (WindowModeType)inputArguments[1];
+            string parentId = (string)_inputArguments[0];
+            WindowModeType targetWindowMode = (WindowModeType)_inputArguments[1];
 
-            string editContextId = (string)outputArguments[0];
-            int getEditContextStatus = (int)outputArguments[1];
+            string editContextId = (string)_outputArguments[0];
+            int getEditContextStatus = (int)_outputArguments[1];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     parentId,
                     targetWindowMode,
                     ref editContextId,
                     ref getEditContextStatus);
             }
 
-            outputArguments[0] = editContextId;
-            outputArguments[1] = getEditContextStatus;
+            _outputArguments[0] = editContextId;
+            _outputArguments[1] = getEditContextStatus;
 
             return result;
         }
@@ -1569,11 +1529,11 @@ namespace Opc.Ua.Fdi5
         private const string InitializationString =
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk1Lx8AAABodHRwOi8vb3Bj" +
            "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRhggoEAAAAAQAXAAAAUmVnaXN0ZXJOb2Rlc01ldGhvZFR5" +
-           "cGUBASgAAC8BASgAKAAAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQEpAAAu" +
-           "AEQpAAAAlgIAAAABACoBARwAAAANAAAARWRpdENvbnRleHRJZAAM/////wAAAAAAAQAqAQEgAAAADwAA" +
-           "AE5vZGVzVG9SZWdpc3RlcgEBJQABAAAAAAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAA" +
-           "AE91dHB1dEFyZ3VtZW50cwEBKgAALgBEKgAAAJYBAAAAAQAqAQEkAAAAEwAAAFJlZ2lzdGVyTm9kZXNT" +
-           "dGF0dXMBAScA/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
+           "cGUBASgAAC8BASgAKAAAAAEB/////wIAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQEpAAAu" +
+           "AEQpAAAAlgIAAAABACoBARwAAAANAAAARWRpdENvbnRleHRJZAAM/////wAAAAAAAQAqAQEkAAAADwAA" +
+           "AE5vZGVzVG9SZWdpc3RlcgEBJQABAAAAAQAAAAAAAAAAAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAAX" +
+           "YKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBKgAALgBEKgAAAJYBAAAAAQAqAQEkAAAAEwAAAFJl" +
+           "Z2lzdGVyTm9kZXNTdGF0dXMBAScA/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -1592,41 +1552,36 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string editContextId = (string)inputArguments[0];
-            RegistrationParameters[] nodesToRegister = (RegistrationParameters[])ExtensionObject.ToArray(inputArguments[1], typeof(RegistrationParameters));
+            string editContextId = (string)_inputArguments[0];
+            RegistrationParameters[] nodesToRegister = (RegistrationParameters[])ExtensionObject.ToArray(_inputArguments[1], typeof(RegistrationParameters));
 
-            RegisterNodesResult registerNodesStatus = (RegisterNodesResult)outputArguments[0];
+            RegisterNodesResult registerNodesStatus = (RegisterNodesResult)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     editContextId,
                     nodesToRegister,
                     ref registerNodesStatus);
             }
 
-            outputArguments[0] = registerNodesStatus;
+            _outputArguments[0] = registerNodesStatus;
 
             return result;
         }
@@ -1699,10 +1654,10 @@ namespace Opc.Ua.Fdi5
         private const string InitializationString =
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk1Lx8AAABodHRwOi8vb3Bj" +
            "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRhggoEAAAAAQAPAAAAQXBwbHlNZXRob2RUeXBlAQEtAAAv" +
-           "AQEtAC0AAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBLgAALgBELgAAAJYB" +
-           "AAAAAQAqAQEcAAAADQAAAEVkaXRDb250ZXh0SWQADP////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVg" +
-           "qQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQEvAAAuAEQvAAAAlgEAAAABACoBARwAAAALAAAAQXBw" +
-           "bHlTdGF0dXMBASwA/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
+           "AQEtAC0AAAABAf////8CAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBLgAALgBELgAAAJYB" +
+           "AAAAAQAqAQEcAAAADQAAAEVkaXRDb250ZXh0SWQADP////8AAAAAAAEAKAEBAAAAAQAAAAAAAAABAf//" +
+           "//8AAAAAF2CpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAS8AAC4ARC8AAACWAQAAAAEAKgEBHAAA" +
+           "AAsAAABBcHBseVN0YXR1cwEBLAD/////AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -1721,39 +1676,34 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string editContextId = (string)inputArguments[0];
+            string editContextId = (string)_inputArguments[0];
 
-            ApplyResult applyStatus = (ApplyResult)outputArguments[0];
+            ApplyResult applyStatus = (ApplyResult)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     editContextId,
                     ref applyStatus);
             }
 
-            outputArguments[0] = applyStatus;
+            _outputArguments[0] = applyStatus;
 
             return result;
         }
@@ -1825,10 +1775,10 @@ namespace Opc.Ua.Fdi5
         private const string InitializationString =
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk1Lx8AAABodHRwOi8vb3Bj" +
            "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRhggoEAAAAAQAPAAAAUmVzZXRNZXRob2RUeXBlAQEwAAAv" +
-           "AQEwADAAAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBMQAALgBEMQAAAJYB" +
-           "AAAAAQAqAQEcAAAADQAAAEVkaXRDb250ZXh0SWQADP////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVg" +
-           "qQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQEyAAAuAEQyAAAAlgEAAAABACoBARoAAAALAAAAUmVz" +
-           "ZXRTdGF0dXMABv////8AAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
+           "AQEwADAAAAABAf////8CAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBMQAALgBEMQAAAJYB" +
+           "AAAAAQAqAQEcAAAADQAAAEVkaXRDb250ZXh0SWQADP////8AAAAAAAEAKAEBAAAAAQAAAAAAAAABAf//" +
+           "//8AAAAAF2CpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBATIAAC4ARDIAAACWAQAAAAEAKgEBGgAA" +
+           "AAsAAABSZXNldFN0YXR1cwAG/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -1847,39 +1797,34 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string editContextId = (string)inputArguments[0];
+            string editContextId = (string)_inputArguments[0];
 
-            int resetStatus = (int)outputArguments[0];
+            int resetStatus = (int)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     editContextId,
                     ref resetStatus);
             }
 
-            outputArguments[0] = resetStatus;
+            _outputArguments[0] = resetStatus;
 
             return result;
         }
@@ -1951,10 +1896,10 @@ namespace Opc.Ua.Fdi5
         private const string InitializationString =
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk1Lx8AAABodHRwOi8vb3Bj" +
            "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRhggoEAAAAAQARAAAARGlzY2FyZE1ldGhvZFR5cGUBATMA" +
-           "AC8BATMAMwAAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQE0AAAuAEQ0AAAA" +
-           "lgEAAAABACoBARwAAAANAAAARWRpdENvbnRleHRJZAAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAA" +
-           "FWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBATUAAC4ARDUAAACWAQAAAAEAKgEBHAAAAA0AAABE" +
-           "aXNjYXJkU3RhdHVzAAb/////AAAAAAABACgBAQAAAAEB/////wAAAAA=";
+           "AC8BATMAMwAAAAEB/////wIAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQE0AAAuAEQ0AAAA" +
+           "lgEAAAABACoBARwAAAANAAAARWRpdENvbnRleHRJZAAM/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB" +
+           "/////wAAAAAXYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBNQAALgBENQAAAJYBAAAAAQAqAQEc" +
+           "AAAADQAAAERpc2NhcmRTdGF0dXMABv////8AAAAAAAEAKAEBAAAAAQAAAAAAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -1973,39 +1918,34 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string editContextId = (string)inputArguments[0];
+            string editContextId = (string)_inputArguments[0];
 
-            int discardStatus = (int)outputArguments[0];
+            int discardStatus = (int)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     editContextId,
                     ref discardStatus);
             }
 
-            outputArguments[0] = discardStatus;
+            _outputArguments[0] = discardStatus;
 
             return result;
         }
@@ -2083,44 +2023,44 @@ namespace Opc.Ua.Fdi5
         #region Initialization String
         private const string InitializationString =
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk1Lx8AAABodHRwOi8vb3Bj" +
-           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAXAAAARWRpdENvbnRleHRUeXBlSW5zdGFu" +
-           "Y2UBATYAAQE2AP////8GAAAABGGCCgQAAAABAA4AAABHZXRFZGl0Q29udGV4dAEBNwAALwEBNwA3AAAA" +
-           "AQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBATgAAC4ARDgAAACWAgAAAAEAKgEB" +
-           "FwAAAAgAAABQYXJlbnRJZAAM/////wAAAAAAAQAqAQEhAAAAEAAAAFRhcmdldFdpbmRvd01vZGUBAcIA" +
-           "/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBATkA" +
-           "AC4ARDkAAACWAgAAAAEAKgEBHAAAAA0AAABFZGl0Q29udGV4dElkAAz/////AAAAAAABACoBASMAAAAU" +
-           "AAAAR2V0RWRpdENvbnRleHRTdGF0dXMABv////8AAAAAAAEAKAEBAAAAAQH/////AAAAAARhggoEAAAA" +
-           "AQARAAAAUmVnaXN0ZXJOb2Rlc0J5SWQBAToAAC8BAToAOgAAAAEB/////wIAAAAVYKkKAgAAAAAADgAA" +
-           "AElucHV0QXJndW1lbnRzAQE7AAAuAEQ7AAAAlgIAAAABACoBARwAAAANAAAARWRpdENvbnRleHRJZAAM" +
-           "/////wAAAAAAAQAqAQEgAAAADwAAAE5vZGVzVG9SZWdpc3RlcgEBJQABAAAAAAAAAAABACgBAQAAAAEB" +
-           "/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBPAAALgBEPAAAAJYBAAAAAQAqAQEk" +
-           "AAAAEwAAAFJlZ2lzdGVyTm9kZXNTdGF0dXMBAScA/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGC" +
-           "CgQAAAABABsAAABSZWdpc3Rlck5vZGVzQnlSZWxhdGl2ZVBhdGgBAT0AAC8BAT0APQAAAAEB/////wIA" +
-           "AAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQE+AAAuAEQ+AAAAlgIAAAABACoBARwAAAANAAAA" +
-           "RWRpdENvbnRleHRJZAAM/////wAAAAAAAQAqAQEgAAAADwAAAE5vZGVzVG9SZWdpc3RlcgEBJQABAAAA" +
-           "AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBPwAALgBE" +
-           "PwAAAJYBAAAAAQAqAQEkAAAAEwAAAFJlZ2lzdGVyTm9kZXNTdGF0dXMBAScA/////wAAAAAAAQAoAQEA" +
-           "AAABAf////8AAAAABGGCCgQAAAABAAUAAABBcHBseQEBQAAALwEBQABAAAAAAQH/////AgAAABVgqQoC" +
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAIBAAAAAQAXAAAARWRpdENvbnRleHRUeXBlSW5zdGFu" +
+           "Y2UBATYAAQE2ADYAAAD/////BgAAAARhggoEAAAAAQAOAAAAR2V0RWRpdENvbnRleHQBATcAAC8BATcA" +
+           "NwAAAAEB/////wIAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQE4AAAuAEQ4AAAAlgIAAAAB" +
+           "ACoBARcAAAAIAAAAUGFyZW50SWQADP////8AAAAAAAEAKgEBIQAAABAAAABUYXJnZXRXaW5kb3dNb2Rl" +
+           "AQHCAP////8AAAAAAAEAKAEBAAAAAQAAAAAAAAABAf////8AAAAAF2CpCgIAAAAAAA8AAABPdXRwdXRB" +
+           "cmd1bWVudHMBATkAAC4ARDkAAACWAgAAAAEAKgEBHAAAAA0AAABFZGl0Q29udGV4dElkAAz/////AAAA" +
+           "AAABACoBASMAAAAUAAAAR2V0RWRpdENvbnRleHRTdGF0dXMABv////8AAAAAAAEAKAEBAAAAAQAAAAAA" +
+           "AAABAf////8AAAAABGGCCgQAAAABABEAAABSZWdpc3Rlck5vZGVzQnlJZAEBOgAALwEBOgA6AAAAAQH/" +
+           "////AgAAABdgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBATsAAC4ARDsAAACWAgAAAAEAKgEBHAAA" +
+           "AA0AAABFZGl0Q29udGV4dElkAAz/////AAAAAAABACoBASQAAAAPAAAATm9kZXNUb1JlZ2lzdGVyAQEl" +
+           "AAEAAAABAAAAAAAAAAABACgBAQAAAAEAAAAAAAAAAQH/////AAAAABdgqQoCAAAAAAAPAAAAT3V0cHV0" +
+           "QXJndW1lbnRzAQE8AAAuAEQ8AAAAlgEAAAABACoBASQAAAATAAAAUmVnaXN0ZXJOb2Rlc1N0YXR1cwEB" +
+           "JwD/////AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/////AAAAAARhggoEAAAAAQAbAAAAUmVnaXN0ZXJO" +
+           "b2Rlc0J5UmVsYXRpdmVQYXRoAQE9AAAvAQE9AD0AAAABAf////8CAAAAF2CpCgIAAAAAAA4AAABJbnB1" +
+           "dEFyZ3VtZW50cwEBPgAALgBEPgAAAJYCAAAAAQAqAQEcAAAADQAAAEVkaXRDb250ZXh0SWQADP////8A" +
+           "AAAAAAEAKgEBJAAAAA8AAABOb2Rlc1RvUmVnaXN0ZXIBASUAAQAAAAEAAAAAAAAAAAEAKAEBAAAAAQAA" +
+           "AAAAAAABAf////8AAAAAF2CpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAT8AAC4ARD8AAACWAQAA" +
+           "AAEAKgEBJAAAABMAAABSZWdpc3Rlck5vZGVzU3RhdHVzAQEnAP////8AAAAAAAEAKAEBAAAAAQAAAAAA" +
+           "AAABAf////8AAAAABGGCCgQAAAABAAUAAABBcHBseQEBQAAALwEBQABAAAAAAQH/////AgAAABdgqQoC" +
            "AAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAUEAAC4AREEAAACWAQAAAAEAKgEBHAAAAA0AAABFZGl0Q29u" +
-           "dGV4dElkAAz/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFyZ3Vt" +
-           "ZW50cwEBQgAALgBEQgAAAJYBAAAAAQAqAQEcAAAACwAAAEFwcGx5U3RhdHVzAQEsAP////8AAAAAAAEA" +
-           "KAEBAAAAAQH/////AAAAAARhggoEAAAAAQAFAAAAUmVzZXQBAUMAAC8BAUMAQwAAAAEB/////wIAAAAV" +
-           "YKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFEAAAuAEREAAAAlgEAAAABACoBARwAAAANAAAARWRp" +
-           "dENvbnRleHRJZAAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIAAAAAAA8AAABPdXRwdXRB" +
-           "cmd1bWVudHMBAUUAAC4AREUAAACWAQAAAAEAKgEBGgAAAAsAAABSZXNldFN0YXR1cwAG/////wAAAAAA" +
-           "AQAoAQEAAAABAf////8AAAAABGGCCgQAAAABAAcAAABEaXNjYXJkAQFGAAAvAQFGAEYAAAABAf////8C" +
-           "AAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBRwAALgBERwAAAJYBAAAAAQAqAQEcAAAADQAA" +
-           "AEVkaXRDb250ZXh0SWQADP////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0" +
-           "cHV0QXJndW1lbnRzAQFIAAAuAERIAAAAlgEAAAABACoBARwAAAANAAAARGlzY2FyZFN0YXR1cwAG////" +
-           "/wAAAAAAAQAoAQEAAAABAf////8AAAAA";
+           "dGV4dElkAAz/////AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/////AAAAABdgqQoCAAAAAAAPAAAAT3V0" +
+           "cHV0QXJndW1lbnRzAQFCAAAuAERCAAAAlgEAAAABACoBARwAAAALAAAAQXBwbHlTdGF0dXMBASwA////" +
+           "/wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAAEYYIKBAAAAAEABQAAAFJlc2V0AQFDAAAvAQFD" +
+           "AEMAAAABAf////8CAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBRAAALgBERAAAAJYBAAAA" +
+           "AQAqAQEcAAAADQAAAEVkaXRDb250ZXh0SWQADP////8AAAAAAAEAKAEBAAAAAQAAAAAAAAABAf////8A" +
+           "AAAAF2CpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAUUAAC4AREUAAACWAQAAAAEAKgEBGgAAAAsA" +
+           "AABSZXNldFN0YXR1cwAG/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAAEYYIKBAAAAAEA" +
+           "BwAAAERpc2NhcmQBAUYAAC8BAUYARgAAAAEB/////wIAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1l" +
+           "bnRzAQFHAAAuAERHAAAAlgEAAAABACoBARwAAAANAAAARWRpdENvbnRleHRJZAAM/////wAAAAAAAQAo" +
+           "AQEAAAABAAAAAAAAAAEB/////wAAAAAXYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBSAAALgBE" +
+           "SAAAAJYBAAAAAQAqAQEcAAAADQAAAERpc2NhcmRTdGF0dXMABv////8AAAAAAAEAKAEBAAAAAQAAAAAA" +
+           "AAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the GetEditContextMethodType Method.
-        /// </summary>
+        /// <remarks />
         public GetEditContextMethodState GetEditContext
         {
             get
@@ -2139,9 +2079,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the RegisterNodesMethodType Method.
-        /// </summary>
+        /// <remarks />
         public RegisterNodesMethodState RegisterNodesById
         {
             get
@@ -2160,9 +2098,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the RegisterNodesMethodType Method.
-        /// </summary>
+        /// <remarks />
         public RegisterNodesMethodState RegisterNodesByRelativePath
         {
             get
@@ -2181,9 +2117,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the ApplyMethodType Method.
-        /// </summary>
+        /// <remarks />
         public ApplyMethodState Apply
         {
             get
@@ -2202,9 +2136,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the ResetMethodType Method.
-        /// </summary>
+        /// <remarks />
         public ResetMethodState Reset
         {
             get
@@ -2223,9 +2155,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the DiscardMethodType Method.
-        /// </summary>
+        /// <remarks />
         public DiscardMethodState Discard
         {
             get
@@ -2503,10 +2433,11 @@ namespace Opc.Ua.Fdi5
         private const string InitializationString =
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk1Lx8AAABodHRwOi8vb3Bj" +
            "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRhggoEAAAAAQAaAAAASW5pdERpcmVjdEFjY2Vzc01ldGhv" +
-           "ZFR5cGUBAUkAAC8BAUkASQAAAAEB/////wIAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFK" +
-           "AAAuAERKAAAAlgEAAAABACoBARYAAAAHAAAAQ29udGV4dAAM/////wAAAAAAAQAoAQEAAAABAf////8A" +
-           "AAAAFWCpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAUsAAC4AREsAAACWAQAAAAEAKgEBJAAAABUA" +
-           "AABJbml0RGlyZWN0QWNjZXNzRXJyb3IABv////8AAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
+           "ZFR5cGUBAUkAAC8BAUkASQAAAAEB/////wIAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFK" +
+           "AAAuAERKAAAAlgEAAAABACoBARYAAAAHAAAAQ29udGV4dAAM/////wAAAAAAAQAoAQEAAAABAAAAAAAA" +
+           "AAEB/////wAAAAAXYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBSwAALgBESwAAAJYBAAAAAQAq" +
+           "AQEkAAAAFQAAAEluaXREaXJlY3RBY2Nlc3NFcnJvcgAG/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB" +
+           "/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -2525,39 +2456,34 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string context = (string)inputArguments[0];
+            string context = (string)_inputArguments[0];
 
-            int initDirectAccessError = (int)outputArguments[0];
+            int initDirectAccessError = (int)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     context,
                     ref initDirectAccessError);
             }
 
-            outputArguments[0] = initDirectAccessError;
+            _outputArguments[0] = initDirectAccessError;
 
             return result;
         }
@@ -2629,11 +2555,11 @@ namespace Opc.Ua.Fdi5
         private const string InitializationString =
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk1Lx8AAABodHRwOi8vb3Bj" +
            "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRhggoEAAAAAQASAAAAVHJhbnNmZXJNZXRob2RUeXBlAQFM" +
-           "AAAvAQFMAEwAAAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBTQAALgBETQAA" +
+           "AAAvAQFMAEwAAAABAf////8CAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBTQAALgBETQAA" +
            "AJYCAAAAAQAqAQEXAAAACAAAAFNlbmREYXRhAAz/////AAAAAAABACoBARoAAAALAAAAUmVjZWl2ZURh" +
-           "dGEADP////8AAAAAAAEAKAEBAAAAAQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRz" +
-           "AQFOAAAuAEROAAAAlgEAAAABACoBARwAAAANAAAAVHJhbnNmZXJFcnJvcgAG/////wAAAAAAAQAoAQEA" +
-           "AAABAf////8AAAAA";
+           "dGEADP////8AAAAAAAEAKAEBAAAAAQAAAAAAAAABAf////8AAAAAF2CpCgIAAAAAAA8AAABPdXRwdXRB" +
+           "cmd1bWVudHMBAU4AAC4ARE4AAACWAQAAAAEAKgEBHAAAAA0AAABUcmFuc2ZlckVycm9yAAb/////AAAA" +
+           "AAABACgBAQAAAAEAAAAAAAAAAQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -2652,41 +2578,36 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string sendData = (string)inputArguments[0];
-            string receiveData = (string)inputArguments[1];
+            string sendData = (string)_inputArguments[0];
+            string receiveData = (string)_inputArguments[1];
 
-            int transferError = (int)outputArguments[0];
+            int transferError = (int)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     sendData,
                     receiveData,
                     ref transferError);
             }
 
-            outputArguments[0] = transferError;
+            _outputArguments[0] = transferError;
 
             return result;
         }
@@ -2759,10 +2680,11 @@ namespace Opc.Ua.Fdi5
         private const string InitializationString =
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk1Lx8AAABodHRwOi8vb3Bj" +
            "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRhggoEAAAAAQAZAAAARW5kRGlyZWN0QWNjZXNzTWV0aG9k" +
-           "VHlwZQEBTwAALwEBTwBPAAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAVAA" +
+           "VHlwZQEBTwAALwEBTwBPAAAAAQH/////AgAAABdgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAVAA" +
            "AC4ARFAAAACWAQAAAAEAKgEBHgAAAA8AAABJbnZhbGlkYXRlQ2FjaGUAAf////8AAAAAAAEAKAEBAAAA" +
-           "AQH/////AAAAABVgqQoCAAAAAAAPAAAAT3V0cHV0QXJndW1lbnRzAQFRAAAuAERRAAAAlgEAAAABACoB" +
-           "ASMAAAAUAAAARW5kRGlyZWN0QWNjZXNzRXJyb3IABv////8AAAAAAAEAKAEBAAAAAQH/////AAAAAA==";
+           "AQAAAAAAAAABAf////8AAAAAF2CpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAVEAAC4ARFEAAACW" +
+           "AQAAAAEAKgEBIwAAABQAAABFbmREaXJlY3RBY2Nlc3NFcnJvcgAG/////wAAAAAAAQAoAQEAAAABAAAA" +
+           "AAAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -2781,39 +2703,34 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            bool invalidateCache = (bool)inputArguments[0];
+            bool invalidateCache = (bool)_inputArguments[0];
 
-            int endDirectAccessError = (int)outputArguments[0];
+            int endDirectAccessError = (int)_outputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     invalidateCache,
                     ref endDirectAccessError);
             }
 
-            outputArguments[0] = endDirectAccessError;
+            _outputArguments[0] = endDirectAccessError;
 
             return result;
         }
@@ -2891,29 +2808,28 @@ namespace Opc.Ua.Fdi5
         #region Initialization String
         private const string InitializationString =
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk1Lx8AAABodHRwOi8vb3Bj" +
-           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAABAAAAAQAeAAAARGlyZWN0RGV2aWNlQWNjZXNzVHlw" +
-           "ZUluc3RhbmNlAQFSAAEBUgD/////AwAAAARhggoEAAAAAQAQAAAASW5pdERpcmVjdEFjY2VzcwEBUwAA" +
-           "LwEBUwBTAAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAVQAAC4ARFQAAACW" +
-           "AQAAAAEAKgEBFgAAAAcAAABDb250ZXh0AAz/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAA" +
-           "AAAADwAAAE91dHB1dEFyZ3VtZW50cwEBVQAALgBEVQAAAJYBAAAAAQAqAQEkAAAAFQAAAEluaXREaXJl" +
-           "Y3RBY2Nlc3NFcnJvcgAG/////wAAAAAAAQAoAQEAAAABAf////8AAAAABGGCCgQAAAABAAgAAABUcmFu" +
-           "c2ZlcgEBVgAALwEBVgBWAAAAAQH/////AgAAABVgqQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAVcA" +
-           "AC4ARFcAAACWAgAAAAEAKgEBFwAAAAgAAABTZW5kRGF0YQAM/////wAAAAAAAQAqAQEaAAAACwAAAFJl" +
-           "Y2VpdmVEYXRhAAz/////AAAAAAABACgBAQAAAAEB/////wAAAAAVYKkKAgAAAAAADwAAAE91dHB1dEFy" +
-           "Z3VtZW50cwEBWAAALgBEWAAAAJYBAAAAAQAqAQEcAAAADQAAAFRyYW5zZmVyRXJyb3IABv////8AAAAA" +
-           "AAEAKAEBAAAAAQH/////AAAAAARhggoEAAAAAQAPAAAARW5kRGlyZWN0QWNjZXNzAQFZAAAvAQFZAFkA" +
-           "AAABAf////8CAAAAFWCpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEBWgAALgBEWgAAAJYBAAAAAQAq" +
-           "AQEeAAAADwAAAEludmFsaWRhdGVDYWNoZQAB/////wAAAAAAAQAoAQEAAAABAf////8AAAAAFWCpCgIA" +
-           "AAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAVsAAC4ARFsAAACWAQAAAAEAKgEBIwAAABQAAABFbmREaXJl" +
-           "Y3RBY2Nlc3NFcnJvcgAG/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
+           "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRggAIBAAAAAQAeAAAARGlyZWN0RGV2aWNlQWNjZXNzVHlw" +
+           "ZUluc3RhbmNlAQFSAAEBUgBSAAAA/////wMAAAAEYYIKBAAAAAEAEAAAAEluaXREaXJlY3RBY2Nlc3MB" +
+           "AVMAAC8BAVMAUwAAAAEB/////wIAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFUAAAuAERU" +
+           "AAAAlgEAAAABACoBARYAAAAHAAAAQ29udGV4dAAM/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB////" +
+           "/wAAAAAXYKkKAgAAAAAADwAAAE91dHB1dEFyZ3VtZW50cwEBVQAALgBEVQAAAJYBAAAAAQAqAQEkAAAA" +
+           "FQAAAEluaXREaXJlY3RBY2Nlc3NFcnJvcgAG/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB/////wAA" +
+           "AAAEYYIKBAAAAAEACAAAAFRyYW5zZmVyAQFWAAAvAQFWAFYAAAABAf////8CAAAAF2CpCgIAAAAAAA4A" +
+           "AABJbnB1dEFyZ3VtZW50cwEBVwAALgBEVwAAAJYCAAAAAQAqAQEXAAAACAAAAFNlbmREYXRhAAz/////" +
+           "AAAAAAABACoBARoAAAALAAAAUmVjZWl2ZURhdGEADP////8AAAAAAAEAKAEBAAAAAQAAAAAAAAABAf//" +
+           "//8AAAAAF2CpCgIAAAAAAA8AAABPdXRwdXRBcmd1bWVudHMBAVgAAC4ARFgAAACWAQAAAAEAKgEBHAAA" +
+           "AA0AAABUcmFuc2ZlckVycm9yAAb/////AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/////AAAAAARhggoE" +
+           "AAAAAQAPAAAARW5kRGlyZWN0QWNjZXNzAQFZAAAvAQFZAFkAAAABAf////8CAAAAF2CpCgIAAAAAAA4A" +
+           "AABJbnB1dEFyZ3VtZW50cwEBWgAALgBEWgAAAJYBAAAAAQAqAQEeAAAADwAAAEludmFsaWRhdGVDYWNo" +
+           "ZQAB/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAAXYKkKAgAAAAAADwAAAE91dHB1dEFy" +
+           "Z3VtZW50cwEBWwAALgBEWwAAAJYBAAAAAQAqAQEjAAAAFAAAAEVuZERpcmVjdEFjY2Vzc0Vycm9yAAb/" +
+           "////AAAAAAABACgBAQAAAAEAAAAAAAAAAQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the InitDirectAccessMethodType Method.
-        /// </summary>
+        /// <remarks />
         public InitDirectAccessMethodState InitDirectAccess
         {
             get
@@ -2932,9 +2848,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the TransferMethodType Method.
-        /// </summary>
+        /// <remarks />
         public TransferMethodState Transfer
         {
             get
@@ -2953,9 +2867,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the EndDirectAccessMethodType Method.
-        /// </summary>
+        /// <remarks />
         public EndDirectAccessMethodState EndDirectAccess
         {
             get
@@ -3152,8 +3064,9 @@ namespace Opc.Ua.Fdi5
         private const string InitializationString =
            "AgAAACYAAABodHRwOi8vZmRpLWNvb3BlcmF0aW9uLmNvbS9PUENVQS9GREk1Lx8AAABodHRwOi8vb3Bj" +
            "Zm91bmRhdGlvbi5vcmcvVUEvREkv/////wRhggoEAAAAAQAUAAAATG9nQXVkaXRUcmFpbE1lc3NhZ2UB" +
-           "AVwAAC8BAVwAXAAAAAEB/////wEAAAAVYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFdAAAuAERd" +
-           "AAAAlgEAAAABACoBARYAAAAHAAAATWVzc2FnZQAM/////wAAAAAAAQAoAQEAAAABAf////8AAAAA";
+           "AVwAAC8BAVwAXAAAAAEB/////wEAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQFdAAAuAERd" +
+           "AAAAlgEAAAABACoBARYAAAAHAAAATWVzc2FnZQAM/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB////" +
+           "/wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -3172,32 +3085,27 @@ namespace Opc.Ua.Fdi5
         /// <summary>
         /// Invokes the method, returns the result and output argument.
         /// </summary>
-        /// <param name="context">The current context.</param>
-        /// <param name="objectId">The id of the object.</param>
-        /// <param name="inputArguments">The input arguments which have been already validated.</param>
-        /// <param name="outputArguments">The output arguments which have initialized with thier default values.</param>
-        /// <returns></returns>
         protected override ServiceResult Call(
-            ISystemContext context,
-            NodeId objectId,
-            IList<object> inputArguments,
-            IList<object> outputArguments)
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
         {
             if (OnCall == null)
             {
-                return base.Call(context, objectId, inputArguments, outputArguments);
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
             ServiceResult result = null;
 
-            string message = (string)inputArguments[0];
+            string message = (string)_inputArguments[0];
 
             if (OnCall != null)
             {
                 result = OnCall(
-                    context,
+                    _context,
                     this,
-                    objectId,
+                    _objectId,
                     message);
             }
 

@@ -39,22 +39,18 @@ namespace Opc.Ua.MTConnect
     #region ActuatorStateTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_ActuatorStateTypeEnum)
     /// <summary>
-    /// A description for the ActuatorStateTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum ActuatorStateTypeEnum
     {
-        /// <summary>
-        /// A description for the ACTIVE_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ACTIVE_1")]
         ACTIVE_1 = 1,
 
-        /// <summary>
-        /// A description for the INACTIVE_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "INACTIVE_2")]
         INACTIVE_2 = 2,
     }
@@ -149,22 +145,18 @@ namespace Opc.Ua.MTConnect
     #region AlarmStateTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_AlarmStateTypeEnum)
     /// <summary>
-    /// A description for the AlarmStateTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum AlarmStateTypeEnum
     {
-        /// <summary>
-        /// A description for the ACTIVE_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ACTIVE_1")]
         ACTIVE_1 = 1,
 
-        /// <summary>
-        /// A description for the CLEARED_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "CLEARED_2")]
         CLEARED_2 = 2,
     }
@@ -259,22 +251,18 @@ namespace Opc.Ua.MTConnect
     #region AvailabilityTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_AvailabilityTypeEnum)
     /// <summary>
-    /// A description for the AvailabilityTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum AvailabilityTypeEnum
     {
-        /// <summary>
-        /// A description for the AVAILABLE_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "AVAILABLE_1")]
         AVAILABLE_1 = 1,
 
-        /// <summary>
-        /// A description for the UNAVAILABLE_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UNAVAILABLE_2")]
         UNAVAILABLE_2 = 2,
     }
@@ -369,40 +357,30 @@ namespace Opc.Ua.MTConnect
     #region AxesCouplingTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_AxesCouplingTypeEnum)
     /// <summary>
-    /// A description for the AxesCouplingTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum AxesCouplingTypeEnum
     {
-        /// <summary>
-        /// A description for the MASTER_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MASTER_1")]
         MASTER_1 = 1,
 
-        /// <summary>
-        /// A description for the SLAVE_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "SLAVE_2")]
         SLAVE_2 = 2,
 
-        /// <summary>
-        /// A description for the SYCHRONOUS_3 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "SYCHRONOUS_3")]
         SYCHRONOUS_3 = 3,
 
-        /// <summary>
-        /// A description for the TANDEM_4 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "TANDEM_4")]
         TANDEM_4 = 4,
 
-        /// <summary>
-        /// A description for the UNAVAILABLE_5 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UNAVAILABLE_5")]
         UNAVAILABLE_5 = 5,
     }
@@ -497,28 +475,22 @@ namespace Opc.Ua.MTConnect
     #region CategoryTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_CategoryTypeEnum)
     /// <summary>
-    /// A description for the CategoryTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum CategoryTypeEnum
     {
-        /// <summary>
-        /// A description for the CONDITION_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "CONDITION_1")]
         CONDITION_1 = 1,
 
-        /// <summary>
-        /// A description for the EVENT_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "EVENT_2")]
         EVENT_2 = 2,
 
-        /// <summary>
-        /// A description for the SAMPLE_3 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "SAMPLE_3")]
         SAMPLE_3 = 3,
     }
@@ -613,34 +585,26 @@ namespace Opc.Ua.MTConnect
     #region ClampStateTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_ClampStateTypeEnum)
     /// <summary>
-    /// A description for the ClampStateTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum ClampStateTypeEnum
     {
-        /// <summary>
-        /// A description for the CLOSED_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "CLOSED_1")]
         CLOSED_1 = 1,
 
-        /// <summary>
-        /// A description for the INDETERMINATE_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "INDETERMINATE_2")]
         INDETERMINATE_2 = 2,
 
-        /// <summary>
-        /// A description for the OPEN_3 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "OPEN_3")]
         OPEN_3 = 3,
 
-        /// <summary>
-        /// A description for the UNAVAILABLE_4 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UNAVAILABLE_4")]
         UNAVAILABLE_4 = 4,
     }
@@ -735,40 +699,30 @@ namespace Opc.Ua.MTConnect
     #region ControllerModeTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_ControllerModeTypeEnum)
     /// <summary>
-    /// A description for the ControllerModeTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum ControllerModeTypeEnum
     {
-        /// <summary>
-        /// A description for the AUTOMATIC_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "AUTOMATIC_1")]
         AUTOMATIC_1 = 1,
 
-        /// <summary>
-        /// A description for the MANUAL_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MANUAL_2")]
         MANUAL_2 = 2,
 
-        /// <summary>
-        /// A description for the MANUAL_DATA_INPUT_3 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MANUAL_DATA_INPUT_3")]
         MANUAL_DATA_INPUT_3 = 3,
 
-        /// <summary>
-        /// A description for the SEMI_AUTOMATIC_4 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "SEMI_AUTOMATIC_4")]
         SEMI_AUTOMATIC_4 = 4,
 
-        /// <summary>
-        /// A description for the UNAVAILABLE_5 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UNAVAILABLE_5")]
         UNAVAILABLE_5 = 5,
     }
@@ -863,22 +817,18 @@ namespace Opc.Ua.MTConnect
     #region CoordinateSystemTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_CoordinateSystemTypeEnum)
     /// <summary>
-    /// A description for the CoordinateSystemTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum CoordinateSystemTypeEnum
     {
-        /// <summary>
-        /// A description for the MACHINE_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MACHINE_1")]
         MACHINE_1 = 1,
 
-        /// <summary>
-        /// A description for the WORK_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "WORK_2")]
         WORK_2 = 2,
     }
@@ -973,88 +923,62 @@ namespace Opc.Ua.MTConnect
     #region CutterStatusValueTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_CutterStatusValueTypeEnum)
     /// <summary>
-    /// A description for the CutterStatusValueTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum CutterStatusValueTypeEnum
     {
-        /// <summary>
-        /// A description for the ALLOCATED_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ALLOCATED_1")]
         ALLOCATED_1 = 1,
 
-        /// <summary>
-        /// A description for the AVAILABLE_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "AVAILABLE_2")]
         AVAILABLE_2 = 2,
 
-        /// <summary>
-        /// A description for the BROKEN_3 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "BROKEN_3")]
         BROKEN_3 = 3,
 
-        /// <summary>
-        /// A description for the EXPIRED_4 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "EXPIRED_4")]
         EXPIRED_4 = 4,
 
-        /// <summary>
-        /// A description for the MEASURED_5 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MEASURED_5")]
         MEASURED_5 = 5,
 
-        /// <summary>
-        /// A description for the NEW_6 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "NEW_6")]
         NEW_6 = 6,
 
-        /// <summary>
-        /// A description for the NOT_REGISTERED_7 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "NOT_REGISTERED_7")]
         NOT_REGISTERED_7 = 7,
 
-        /// <summary>
-        /// A description for the RECONDITIONED_8 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "RECONDITIONED_8")]
         RECONDITIONED_8 = 8,
 
-        /// <summary>
-        /// A description for the TAGGED_OUT_9 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "TAGGED_OUT_9")]
         TAGGED_OUT_9 = 9,
 
-        /// <summary>
-        /// A description for the UNALLOCATED_10 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UNALLOCATED_10")]
         UNALLOCATED_10 = 10,
 
-        /// <summary>
-        /// A description for the UNAVAILABLE_11 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UNAVAILABLE_11")]
         UNAVAILABLE_11 = 11,
 
-        /// <summary>
-        /// A description for the UNKNOWN_12 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UNKNOWN_12")]
         UNKNOWN_12 = 12,
 
-        /// <summary>
-        /// A description for the USED_13 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "USED_13")]
         USED_13 = 13,
     }
@@ -1149,7 +1073,7 @@ namespace Opc.Ua.MTConnect
     #region DataItemEnumDataType Class
     #if (!OPCUA_EXCLUDE_DataItemEnumDataType)
     /// <summary>
-    /// A description for the DataItemEnumDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -1185,9 +1109,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the DataItemEnum field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DataItemEnum", IsRequired = false, Order = 1)]
         public DataItemEnumTypeEnum DataItemEnum
         {
@@ -1195,9 +1117,7 @@ namespace Opc.Ua.MTConnect
             set { m_dataItemEnum = value; }
         }
 
-        /// <summary>
-        /// A description for the DataItemEnumString field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DataItemEnumString", IsRequired = false, Order = 2)]
         public string DataItemEnumString
         {
@@ -1384,256 +1304,174 @@ namespace Opc.Ua.MTConnect
     #region DataItemEnumTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_DataItemEnumTypeEnum)
     /// <summary>
-    /// A description for the DataItemEnumTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum DataItemEnumTypeEnum
     {
-        /// <summary>
-        /// A description for the ACCELERATION_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ACCELERATION_1")]
         ACCELERATION_1 = 1,
 
-        /// <summary>
-        /// A description for the ACCUMULATED_TIME_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ACCUMULATED_TIME_2")]
         ACCUMULATED_TIME_2 = 2,
 
-        /// <summary>
-        /// A description for the ACTIVE_AXES_3 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ACTIVE_AXES_3")]
         ACTIVE_AXES_3 = 3,
 
-        /// <summary>
-        /// A description for the ACTUATOR_4 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ACTUATOR_4")]
         ACTUATOR_4 = 4,
 
-        /// <summary>
-        /// A description for the ACTUATOR_STATE_5 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ACTUATOR_STATE_5")]
         ACTUATOR_STATE_5 = 5,
 
-        /// <summary>
-        /// A description for the ALARM_6 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ALARM_6")]
         ALARM_6 = 6,
 
-        /// <summary>
-        /// A description for the AMPERAGE_7 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "AMPERAGE_7")]
         AMPERAGE_7 = 7,
 
-        /// <summary>
-        /// A description for the ANGLE_8 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ANGLE_8")]
         ANGLE_8 = 8,
 
-        /// <summary>
-        /// A description for the ANGULAR_ACCELERATION_9 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ANGULAR_ACCELERATION_9")]
         ANGULAR_ACCELERATION_9 = 9,
 
-        /// <summary>
-        /// A description for the ANGULAR_VELOCITY_10 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ANGULAR_VELOCITY_10")]
         ANGULAR_VELOCITY_10 = 10,
 
-        /// <summary>
-        /// A description for the ASSET_CHANGED_11 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ASSET_CHANGED_11")]
         ASSET_CHANGED_11 = 11,
 
-        /// <summary>
-        /// A description for the AVAILABILITY_12 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "AVAILABILITY_12")]
         AVAILABILITY_12 = 12,
 
-        /// <summary>
-        /// A description for the AXIS_COUPLING_13 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "AXIS_COUPLING_13")]
         AXIS_COUPLING_13 = 13,
 
-        /// <summary>
-        /// A description for the AXIS_FEEDRATE_14 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "AXIS_FEEDRATE_14")]
         AXIS_FEEDRATE_14 = 14,
 
-        /// <summary>
-        /// A description for the BLOCK_15 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "BLOCK_15")]
         BLOCK_15 = 15,
 
-        /// <summary>
-        /// A description for the CODE_16 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "CODE_16")]
         CODE_16 = 16,
 
-        /// <summary>
-        /// A description for the COMMUNICATIONS_17 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "COMMUNICATIONS_17")]
         COMMUNICATIONS_17 = 17,
 
-        /// <summary>
-        /// A description for the CONCENTRATION_18 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "CONCENTRATION_18")]
         CONCENTRATION_18 = 18,
 
-        /// <summary>
-        /// A description for the CONDUCTIVITY_19 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "CONDUCTIVITY_19")]
         CONDUCTIVITY_19 = 19,
 
-        /// <summary>
-        /// A description for the CONTROLLER_MODE_20 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "CONTROLLER_MODE_20")]
         CONTROLLER_MODE_20 = 20,
 
-        /// <summary>
-        /// A description for the COUPLED_AXES_21 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "COUPLED_AXES_21")]
         COUPLED_AXES_21 = 21,
 
-        /// <summary>
-        /// A description for the DIRECTION_22 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DIRECTION_22")]
         DIRECTION_22 = 22,
 
-        /// <summary>
-        /// A description for the DISPLACEMENT_23 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DISPLACEMENT_23")]
         DISPLACEMENT_23 = 23,
 
-        /// <summary>
-        /// A description for the DOOR_STATE_24 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DOOR_STATE_24")]
         DOOR_STATE_24 = 24,
 
-        /// <summary>
-        /// A description for the ELECTRICAL_POWER_25 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ELECTRICAL_POWER_25")]
         ELECTRICAL_POWER_25 = 25,
 
-        /// <summary>
-        /// A description for the EMERGENCY_STOP_26 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "EMERGENCY_STOP_26")]
         EMERGENCY_STOP_26 = 26,
 
-        /// <summary>
-        /// A description for the EXECUTION_27 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "EXECUTION_27")]
         EXECUTION_27 = 27,
 
-        /// <summary>
-        /// A description for the FILL_LEVEL_28 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "FILL_LEVEL_28")]
         FILL_LEVEL_28 = 28,
 
-        /// <summary>
-        /// A description for the FLOW_29 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "FLOW_29")]
         FLOW_29 = 29,
 
-        /// <summary>
-        /// A description for the FREQUENCY_30 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "FREQUENCY_30")]
         FREQUENCY_30 = 30,
 
-        /// <summary>
-        /// A description for the HARDWARE_31 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "HARDWARE_31")]
         HARDWARE_31 = 31,
 
-        /// <summary>
-        /// A description for the LEVEL_32 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "LEVEL_32")]
         LEVEL_32 = 32,
 
-        /// <summary>
-        /// A description for the LINE_33 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "LINE_33")]
         LINE_33 = 33,
 
-        /// <summary>
-        /// A description for the LINEAR_FORCE_34 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "LINEAR_FORCE_34")]
         LINEAR_FORCE_34 = 34,
 
-        /// <summary>
-        /// A description for the LOAD_35 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "LOAD_35")]
         LOAD_35 = 35,
 
-        /// <summary>
-        /// A description for the LOGIC_PROGRAM_36 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "LOGIC_PROGRAM_36")]
         LOGIC_PROGRAM_36 = 36,
 
-        /// <summary>
-        /// A description for the MASS_37 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MASS_37")]
         MASS_37 = 37,
 
-        /// <summary>
-        /// A description for the MESSAGE_38 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MESSAGE_38")]
         MESSAGE_38 = 38,
 
-        /// <summary>
-        /// A description for the MOTION_PROGRAM_39 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MOTION_PROGRAM_39")]
         MOTION_PROGRAM_39 = 39,
 
-        /// <summary>
-        /// A description for the PART_COUNT_40 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "PART_COUNT_40")]
         PART_COUNT_40 = 40,
 
-        /// <summary>
-        /// A description for the PART_ID_41 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "PART_ID_41")]
         PART_ID_41 = 41,
     }
@@ -1728,7 +1566,7 @@ namespace Opc.Ua.MTConnect
     #region DataItemStatisticsDataType Class
     #if (!OPCUA_EXCLUDE_DataItemStatisticsDataType)
     /// <summary>
-    /// A description for the DataItemStatisticsDataType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -1764,9 +1602,7 @@ namespace Opc.Ua.MTConnect
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the DataItemStatisticsEnum field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DataItemStatisticsEnum", IsRequired = false, Order = 1)]
         public DataItemStatisticsTypeEnum DataItemStatisticsEnum
         {
@@ -1774,9 +1610,7 @@ namespace Opc.Ua.MTConnect
             set { m_dataItemStatisticsEnum = value; }
         }
 
-        /// <summary>
-        /// A description for the DataItemStatisticsString field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "DataItemStatisticsString", IsRequired = false, Order = 2)]
         public string DataItemStatisticsString
         {
@@ -1963,64 +1797,46 @@ namespace Opc.Ua.MTConnect
     #region DataItemStatisticsTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_DataItemStatisticsTypeEnum)
     /// <summary>
-    /// A description for the DataItemStatisticsTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum DataItemStatisticsTypeEnum
     {
-        /// <summary>
-        /// A description for the AVERAGE_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "AVERAGE_1")]
         AVERAGE_1 = 1,
 
-        /// <summary>
-        /// A description for the KURTOSIS_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "KURTOSIS_2")]
         KURTOSIS_2 = 2,
 
-        /// <summary>
-        /// A description for the MAXIMUM_3 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MAXIMUM_3")]
         MAXIMUM_3 = 3,
 
-        /// <summary>
-        /// A description for the MEAN_4 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MEAN_4")]
         MEAN_4 = 4,
 
-        /// <summary>
-        /// A description for the MINIMUM_5 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MINIMUM_5")]
         MINIMUM_5 = 5,
 
-        /// <summary>
-        /// A description for the MODE_6 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MODE_6")]
         MODE_6 = 6,
 
-        /// <summary>
-        /// A description for the RANGE_7 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "RANGE_7")]
         RANGE_7 = 7,
 
-        /// <summary>
-        /// A description for the ROOT_MEAN_SQUARE_8 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ROOT_MEAN_SQUARE_8")]
         ROOT_MEAN_SQUARE_8 = 8,
 
-        /// <summary>
-        /// A description for the STANDARD_DEVIATION_9 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "STANDARD_DEVIATION_9")]
         STANDARD_DEVIATION_9 = 9,
     }
@@ -2115,160 +1931,110 @@ namespace Opc.Ua.MTConnect
     #region DataItemSubEnumTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_DataItemSubEnumTypeEnum)
     /// <summary>
-    /// A description for the DataItemSubEnumTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum DataItemSubEnumTypeEnum
     {
-        /// <summary>
-        /// A description for the ACTUAL_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ACTUAL_1")]
         ACTUAL_1 = 1,
 
-        /// <summary>
-        /// A description for the ALL_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ALL_2")]
         ALL_2 = 2,
 
-        /// <summary>
-        /// A description for the ALTERNATING_3 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ALTERNATING_3")]
         ALTERNATING_3 = 3,
 
-        /// <summary>
-        /// A description for the A_SCALE_4 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "A_SCALE_4")]
         A_SCALE_4 = 4,
 
-        /// <summary>
-        /// A description for the BAD_5 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "BAD_5")]
         BAD_5 = 5,
 
-        /// <summary>
-        /// A description for the B_SCALE_6 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "B_SCALE_6")]
         B_SCALE_6 = 6,
 
-        /// <summary>
-        /// A description for the COMMANDED_7 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "COMMANDED_7")]
         COMMANDED_7 = 7,
 
-        /// <summary>
-        /// A description for the CONTROL_8 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "CONTROL_8")]
         CONTROL_8 = 8,
 
-        /// <summary>
-        /// A description for the C_SCALE_9 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "C_SCALE_9")]
         C_SCALE_9 = 9,
 
-        /// <summary>
-        /// A description for the DIRECT_10 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DIRECT_10")]
         DIRECT_10 = 10,
 
-        /// <summary>
-        /// A description for the DYNAMIC_11 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DYNAMIC_11")]
         DYNAMIC_11 = 11,
 
-        /// <summary>
-        /// A description for the D_SCALE_12 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "D_SCALE_12")]
         D_SCALE_12 = 12,
 
-        /// <summary>
-        /// A description for the GOOD_13 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "GOOD_13")]
         GOOD_13 = 13,
 
-        /// <summary>
-        /// A description for the KINETIC_14 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "KINETIC_14")]
         KINETIC_14 = 14,
 
-        /// <summary>
-        /// A description for the LINE_15 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "LINE_15")]
         LINE_15 = 15,
 
-        /// <summary>
-        /// A description for the MAXIMUM_16 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MAXIMUM_16")]
         MAXIMUM_16 = 16,
 
-        /// <summary>
-        /// A description for the MINIMUM_17 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MINIMUM_17")]
         MINIMUM_17 = 17,
 
-        /// <summary>
-        /// A description for the MOLE_18 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MOLE_18")]
         MOLE_18 = 18,
 
-        /// <summary>
-        /// A description for the NO_SCALE_19 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "NO_SCALE_19")]
         NO_SCALE_19 = 19,
 
-        /// <summary>
-        /// A description for the OTHER_20 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "OTHER_20")]
         OTHER_20 = 20,
 
-        /// <summary>
-        /// A description for the OVERRIDE_21 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "OVERRIDE_21")]
         OVERRIDE_21 = 21,
 
-        /// <summary>
-        /// A description for the PROBE_22 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "PROBE_22")]
         PROBE_22 = 22,
 
-        /// <summary>
-        /// A description for the TARGET_23 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "TARGET_23")]
         TARGET_23 = 23,
 
-        /// <summary>
-        /// A description for the VOLUME_24 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "VOLUME_24")]
         VOLUME_24 = 24,
 
-        /// <summary>
-        /// A description for the WEIGHT_25 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "WEIGHT_25")]
         WEIGHT_25 = 25,
     }
@@ -2363,34 +2129,26 @@ namespace Opc.Ua.MTConnect
     #region DefinitionFormatTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_DefinitionFormatTypeEnum)
     /// <summary>
-    /// A description for the DefinitionFormatTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum DefinitionFormatTypeEnum
     {
-        /// <summary>
-        /// A description for the EXPRESS_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "EXPRESS_1")]
         EXPRESS_1 = 1,
 
-        /// <summary>
-        /// A description for the TEXT_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "TEXT_2")]
         TEXT_2 = 2,
 
-        /// <summary>
-        /// A description for the UNDEFINED_3 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UNDEFINED_3")]
         UNDEFINED_3 = 3,
 
-        /// <summary>
-        /// A description for the XML_4 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "XML_4")]
         XML_4 = 4,
     }
@@ -2485,40 +2243,30 @@ namespace Opc.Ua.MTConnect
     #region DirectionTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_DirectionTypeEnum)
     /// <summary>
-    /// A description for the DirectionTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum DirectionTypeEnum
     {
-        /// <summary>
-        /// A description for the CLOCKWISE_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "CLOCKWISE_1")]
         CLOCKWISE_1 = 1,
 
-        /// <summary>
-        /// A description for the COUNTER_CLOCKWISE_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "COUNTER_CLOCKWISE_2")]
         COUNTER_CLOCKWISE_2 = 2,
 
-        /// <summary>
-        /// A description for the NEGATIVE_3 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "NEGATIVE_3")]
         NEGATIVE_3 = 3,
 
-        /// <summary>
-        /// A description for the POSITIVE_4 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "POSITIVE_4")]
         POSITIVE_4 = 4,
 
-        /// <summary>
-        /// A description for the UNAVAILABLE_5 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UNAVAILABLE_5")]
         UNAVAILABLE_5 = 5,
     }
@@ -2613,34 +2361,26 @@ namespace Opc.Ua.MTConnect
     #region DoorStateTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_DoorStateTypeEnum)
     /// <summary>
-    /// A description for the DoorStateTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum DoorStateTypeEnum
     {
-        /// <summary>
-        /// A description for the CLOSED_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "CLOSED_1")]
         CLOSED_1 = 1,
 
-        /// <summary>
-        /// A description for the INDETERMINATE_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "INDETERMINATE_2")]
         INDETERMINATE_2 = 2,
 
-        /// <summary>
-        /// A description for the OPEN_3 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "OPEN_3")]
         OPEN_3 = 3,
 
-        /// <summary>
-        /// A description for the UNAVAILABLE_4 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UNAVAILABLE_4")]
         UNAVAILABLE_4 = 4,
     }
@@ -2735,28 +2475,22 @@ namespace Opc.Ua.MTConnect
     #region EmergencyStopTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_EmergencyStopTypeEnum)
     /// <summary>
-    /// A description for the EmergencyStopTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum EmergencyStopTypeEnum
     {
-        /// <summary>
-        /// A description for the ARMED_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ARMED_1")]
         ARMED_1 = 1,
 
-        /// <summary>
-        /// A description for the TRIGGERED_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "TRIGGERED_2")]
         TRIGGERED_2 = 2,
 
-        /// <summary>
-        /// A description for the UNAVAILABLE_3 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UNAVAILABLE_3")]
         UNAVAILABLE_3 = 3,
     }
@@ -2851,40 +2585,30 @@ namespace Opc.Ua.MTConnect
     #region ExecutionTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_ExecutionTypeEnum)
     /// <summary>
-    /// A description for the ExecutionTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum ExecutionTypeEnum
     {
-        /// <summary>
-        /// A description for the ACTIVE_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ACTIVE_1")]
         ACTIVE_1 = 1,
 
-        /// <summary>
-        /// A description for the INTERRUPTED_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "INTERRUPTED_2")]
         INTERRUPTED_2 = 2,
 
-        /// <summary>
-        /// A description for the READY_3 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "READY_3")]
         READY_3 = 3,
 
-        /// <summary>
-        /// A description for the STOPPED_4 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "STOPPED_4")]
         STOPPED_4 = 4,
 
-        /// <summary>
-        /// A description for the UNAVAILABLE_5 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UNAVAILABLE_5")]
         UNAVAILABLE_5 = 5,
     }
@@ -2979,34 +2703,26 @@ namespace Opc.Ua.MTConnect
     #region InterfaceStateTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_InterfaceStateTypeEnum)
     /// <summary>
-    /// A description for the InterfaceStateTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum InterfaceStateTypeEnum
     {
-        /// <summary>
-        /// A description for the ACTIVE_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ACTIVE_1")]
         ACTIVE_1 = 1,
 
-        /// <summary>
-        /// A description for the COMPLETE_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "COMPLETE_2")]
         COMPLETE_2 = 2,
 
-        /// <summary>
-        /// A description for the FAIL_3 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "FAIL_3")]
         FAIL_3 = 3,
 
-        /// <summary>
-        /// A description for the READY_4 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "READY_4")]
         READY_4 = 4,
     }
@@ -3101,34 +2817,26 @@ namespace Opc.Ua.MTConnect
     #region LocationsTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_LocationsTypeEnum)
     /// <summary>
-    /// A description for the LocationsTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum LocationsTypeEnum
     {
-        /// <summary>
-        /// A description for the CRIB_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "CRIB_1")]
         CRIB_1 = 1,
 
-        /// <summary>
-        /// A description for the POT_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "POT_2")]
         POT_2 = 2,
 
-        /// <summary>
-        /// A description for the STATION_3 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "STATION_3")]
         STATION_3 = 3,
 
-        /// <summary>
-        /// A description for the READY_4 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "READY_4")]
         READY_4 = 4,
     }
@@ -3223,64 +2931,46 @@ namespace Opc.Ua.MTConnect
     #region NotificationCodeTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_NotificationCodeTypeEnum)
     /// <summary>
-    /// A description for the NotificationCodeTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum NotificationCodeTypeEnum
     {
-        /// <summary>
-        /// A description for the CRASH_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "CRASH_1")]
         CRASH_1 = 1,
 
-        /// <summary>
-        /// A description for the ESTOP_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ESTOP_2")]
         ESTOP_2 = 2,
 
-        /// <summary>
-        /// A description for the FAILURE_3 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "FAILURE_3")]
         FAILURE_3 = 3,
 
-        /// <summary>
-        /// A description for the FAULT_4 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "FAULT_4")]
         FAULT_4 = 4,
 
-        /// <summary>
-        /// A description for the JAM_5 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "JAM_5")]
         JAM_5 = 5,
 
-        /// <summary>
-        /// A description for the MATERIAL_6 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MATERIAL_6")]
         MATERIAL_6 = 6,
 
-        /// <summary>
-        /// A description for the MESSAGE_7 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MESSAGE_7")]
         MESSAGE_7 = 7,
 
-        /// <summary>
-        /// A description for the OTHER_8 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "OTHER_8")]
         OTHER_8 = 8,
 
-        /// <summary>
-        /// A description for the OVERLOAD_9 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "OVERLOAD_9")]
         OVERLOAD_9 = 9,
     }
@@ -3375,28 +3065,22 @@ namespace Opc.Ua.MTConnect
     #region PathModeTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_PathModeTypeEnum)
     /// <summary>
-    /// A description for the PathModeTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum PathModeTypeEnum
     {
-        /// <summary>
-        /// A description for the INDEPENDENT_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "INDEPENDENT_1")]
         INDEPENDENT_1 = 1,
 
-        /// <summary>
-        /// A description for the MIRROR_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MIRROR_2")]
         MIRROR_2 = 2,
 
-        /// <summary>
-        /// A description for the SYNCHRONOUS_3 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "SYNCHRONOUS_3")]
         SYNCHRONOUS_3 = 3,
     }
@@ -3491,28 +3175,22 @@ namespace Opc.Ua.MTConnect
     #region PowerStateTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_PowerStateTypeEnum)
     /// <summary>
-    /// A description for the PowerStateTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum PowerStateTypeEnum
     {
-        /// <summary>
-        /// A description for the OFF_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "OFF_1")]
         OFF_1 = 1,
 
-        /// <summary>
-        /// A description for the ON_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ON_2")]
         ON_2 = 2,
 
-        /// <summary>
-        /// A description for the UNAVAILABLE_3 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UNAVAILABLE_3")]
         UNAVAILABLE_3 = 3,
     }
@@ -3607,22 +3285,18 @@ namespace Opc.Ua.MTConnect
     #region QualifierTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_QualifierTypeEnum)
     /// <summary>
-    /// A description for the QualifierTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum QualifierTypeEnum
     {
-        /// <summary>
-        /// A description for the HIGH_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "HIGH_1")]
         HIGH_1 = 1,
 
-        /// <summary>
-        /// A description for the LOW_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "LOW_2")]
         LOW_2 = 2,
     }
@@ -3717,34 +3391,26 @@ namespace Opc.Ua.MTConnect
     #region RotaryModeTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_RotaryModeTypeEnum)
     /// <summary>
-    /// A description for the RotaryModeTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum RotaryModeTypeEnum
     {
-        /// <summary>
-        /// A description for the CONTOUR_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "CONTOUR_1")]
         CONTOUR_1 = 1,
 
-        /// <summary>
-        /// A description for the INDEX_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "INDEX_2")]
         INDEX_2 = 2,
 
-        /// <summary>
-        /// A description for the SPINDLE_3 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "SPINDLE_3")]
         SPINDLE_3 = 3,
 
-        /// <summary>
-        /// A description for the UNAVAILABLE_4 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UNAVAILABLE_4")]
         UNAVAILABLE_4 = 4,
     }
@@ -3839,34 +3505,26 @@ namespace Opc.Ua.MTConnect
     #region SeverityTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_SeverityTypeEnum)
     /// <summary>
-    /// A description for the SeverityTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum SeverityTypeEnum
     {
-        /// <summary>
-        /// A description for the CRITICAL_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "CRITICAL_1")]
         CRITICAL_1 = 1,
 
-        /// <summary>
-        /// A description for the ERROR_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ERROR_2")]
         ERROR_2 = 2,
 
-        /// <summary>
-        /// A description for the INFORMATION_3 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "INFORMATION_3")]
         INFORMATION_3 = 3,
 
-        /// <summary>
-        /// A description for the WARNING_4 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "WARNING_4")]
         WARNING_4 = 4,
     }
@@ -3961,22 +3619,18 @@ namespace Opc.Ua.MTConnect
     #region ToolLifeDirectionTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_ToolLifeDirectionTypeEnum)
     /// <summary>
-    /// A description for the ToolLifeDirectionTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum ToolLifeDirectionTypeEnum
     {
-        /// <summary>
-        /// A description for the DOWN_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DOWN_1")]
         DOWN_1 = 1,
 
-        /// <summary>
-        /// A description for the UP_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UP_2")]
         UP_2 = 2,
     }
@@ -4071,28 +3725,22 @@ namespace Opc.Ua.MTConnect
     #region ToolLifeTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_ToolLifeTypeEnum)
     /// <summary>
-    /// A description for the ToolLifeTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.MTConnect.Namespaces.OpcUaMTConnectXsd)]
     public enum ToolLifeTypeEnum
     {
-        /// <summary>
-        /// A description for the MINUTES_1 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "MINUTES_1")]
         MINUTES_1 = 1,
 
-        /// <summary>
-        /// A description for the PART_COUNT_2 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "PART_COUNT_2")]
         PART_COUNT_2 = 2,
 
-        /// <summary>
-        /// A description for the WEAR_3 field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "WEAR_3")]
         WEAR_3 = 3,
     }

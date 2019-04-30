@@ -552,9 +552,14 @@ namespace Opc.Ua.Plc
         public const uint OpcUaPlcNamespaceMetadata_DefaultAccessRestrictions = 15033;
 
         /// <summary>
+        /// The identifier for the CtrlConfigurationType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint CtrlConfigurationType_Lock_DefaultInstanceBrowseName = 15034;
+
+        /// <summary>
         /// The identifier for the CtrlConfigurationType_Lock_Locked Variable.
         /// </summary>
-        public const uint CtrlConfigurationType_Lock_Locked = 7171;
+        public const uint CtrlConfigurationType_Lock_Locked = 15049;
 
         /// <summary>
         /// The identifier for the CtrlConfigurationType_Lock_LockingClient Variable.
@@ -597,9 +602,14 @@ namespace Opc.Ua.Plc
         public const uint CtrlConfigurationType_Lock_BreakLock_OutputArguments = 7036;
 
         /// <summary>
+        /// The identifier for the CtrlConfigurationType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint CtrlConfigurationType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15039;
+
+        /// <summary>
         /// The identifier for the CtrlConfigurationType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint CtrlConfigurationType_CPIdentifier_Lock_Locked = 7234;
+        public const uint CtrlConfigurationType_CPIdentifier_Lock_Locked = 15051;
 
         /// <summary>
         /// The identifier for the CtrlConfigurationType_CPIdentifier_Lock_LockingClient Variable.
@@ -642,9 +652,14 @@ namespace Opc.Ua.Plc
         public const uint CtrlConfigurationType_CPIdentifier_Lock_BreakLock_OutputArguments = 7246;
 
         /// <summary>
+        /// The identifier for the CtrlResourceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint CtrlResourceType_Lock_DefaultInstanceBrowseName = 15040;
+
+        /// <summary>
         /// The identifier for the CtrlResourceType_Lock_Locked Variable.
         /// </summary>
-        public const uint CtrlResourceType_Lock_Locked = 7196;
+        public const uint CtrlResourceType_Lock_Locked = 15052;
 
         /// <summary>
         /// The identifier for the CtrlResourceType_Lock_LockingClient Variable.
@@ -687,9 +702,14 @@ namespace Opc.Ua.Plc
         public const uint CtrlResourceType_Lock_BreakLock_OutputArguments = 7075;
 
         /// <summary>
+        /// The identifier for the CtrlResourceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint CtrlResourceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15045;
+
+        /// <summary>
         /// The identifier for the CtrlResourceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint CtrlResourceType_CPIdentifier_Lock_Locked = 7259;
+        public const uint CtrlResourceType_CPIdentifier_Lock_Locked = 15054;
 
         /// <summary>
         /// The identifier for the CtrlResourceType_CPIdentifier_Lock_LockingClient Variable.
@@ -732,9 +752,14 @@ namespace Opc.Ua.Plc
         public const uint CtrlResourceType_CPIdentifier_Lock_BreakLock_OutputArguments = 7271;
 
         /// <summary>
+        /// The identifier for the CtrlProgramOrganizationUnitType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint CtrlProgramOrganizationUnitType_Lock_DefaultInstanceBrowseName = 15046;
+
+        /// <summary>
         /// The identifier for the CtrlProgramOrganizationUnitType_Lock_Locked Variable.
         /// </summary>
-        public const uint CtrlProgramOrganizationUnitType_Lock_Locked = 7221;
+        public const uint CtrlProgramOrganizationUnitType_Lock_Locked = 15055;
 
         /// <summary>
         /// The identifier for the CtrlProgramOrganizationUnitType_Lock_LockingClient Variable.
@@ -782,9 +807,14 @@ namespace Opc.Ua.Plc
         public const uint CtrlProgramOrganizationUnitType_Body = 6001;
 
         /// <summary>
+        /// The identifier for the CtrlProgramType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint CtrlProgramType_Lock_DefaultInstanceBrowseName = 15047;
+
+        /// <summary>
         /// The identifier for the CtrlProgramType_Lock_Locked Variable.
         /// </summary>
-        public const uint CtrlProgramType_Lock_Locked = 7222;
+        public const uint CtrlProgramType_Lock_Locked = 15056;
 
         /// <summary>
         /// The identifier for the CtrlProgramType_Lock_LockingClient Variable.
@@ -832,9 +862,14 @@ namespace Opc.Ua.Plc
         public const uint CtrlProgramType_Program = 6002;
 
         /// <summary>
+        /// The identifier for the CtrlFunctionBlockType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint CtrlFunctionBlockType_Lock_DefaultInstanceBrowseName = 15048;
+
+        /// <summary>
         /// The identifier for the CtrlFunctionBlockType_Lock_Locked Variable.
         /// </summary>
-        public const uint CtrlFunctionBlockType_Lock_Locked = 7223;
+        public const uint CtrlFunctionBlockType_Lock_Locked = 15057;
 
         /// <summary>
         /// The identifier for the CtrlFunctionBlockType_Lock_LockingClient Variable.
@@ -1412,6 +1447,11 @@ namespace Opc.Ua.Plc
         public static readonly ExpandedNodeId OpcUaPlcNamespaceMetadata_DefaultAccessRestrictions = new ExpandedNodeId(Opc.Ua.Plc.Variables.OpcUaPlcNamespaceMetadata_DefaultAccessRestrictions, Opc.Ua.Plc.Namespaces.OpcUaPlc);
 
         /// <summary>
+        /// The identifier for the CtrlConfigurationType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlConfigurationType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Plc.Variables.CtrlConfigurationType_Lock_DefaultInstanceBrowseName, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
         /// The identifier for the CtrlConfigurationType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId CtrlConfigurationType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Plc.Variables.CtrlConfigurationType_Lock_Locked, Opc.Ua.Plc.Namespaces.OpcUaPlc);
@@ -1455,6 +1495,11 @@ namespace Opc.Ua.Plc
         /// The identifier for the CtrlConfigurationType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId CtrlConfigurationType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Plc.Variables.CtrlConfigurationType_Lock_BreakLock_OutputArguments, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlConfigurationType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlConfigurationType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Plc.Variables.CtrlConfigurationType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Plc.Namespaces.OpcUaPlc);
 
         /// <summary>
         /// The identifier for the CtrlConfigurationType_CPIdentifier_Lock_Locked Variable.
@@ -1502,6 +1547,11 @@ namespace Opc.Ua.Plc
         public static readonly ExpandedNodeId CtrlConfigurationType_CPIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Plc.Variables.CtrlConfigurationType_CPIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Plc.Namespaces.OpcUaPlc);
 
         /// <summary>
+        /// The identifier for the CtrlResourceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlResourceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Plc.Variables.CtrlResourceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
         /// The identifier for the CtrlResourceType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId CtrlResourceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Plc.Variables.CtrlResourceType_Lock_Locked, Opc.Ua.Plc.Namespaces.OpcUaPlc);
@@ -1547,6 +1597,11 @@ namespace Opc.Ua.Plc
         public static readonly ExpandedNodeId CtrlResourceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Plc.Variables.CtrlResourceType_Lock_BreakLock_OutputArguments, Opc.Ua.Plc.Namespaces.OpcUaPlc);
 
         /// <summary>
+        /// The identifier for the CtrlResourceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlResourceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Plc.Variables.CtrlResourceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
         /// The identifier for the CtrlResourceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId CtrlResourceType_CPIdentifier_Lock_Locked = new ExpandedNodeId(Opc.Ua.Plc.Variables.CtrlResourceType_CPIdentifier_Lock_Locked, Opc.Ua.Plc.Namespaces.OpcUaPlc);
@@ -1590,6 +1645,11 @@ namespace Opc.Ua.Plc
         /// The identifier for the CtrlResourceType_CPIdentifier_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId CtrlResourceType_CPIdentifier_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Plc.Variables.CtrlResourceType_CPIdentifier_Lock_BreakLock_OutputArguments, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlProgramOrganizationUnitType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlProgramOrganizationUnitType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Plc.Variables.CtrlProgramOrganizationUnitType_Lock_DefaultInstanceBrowseName, Opc.Ua.Plc.Namespaces.OpcUaPlc);
 
         /// <summary>
         /// The identifier for the CtrlProgramOrganizationUnitType_Lock_Locked Variable.
@@ -1642,6 +1702,11 @@ namespace Opc.Ua.Plc
         public static readonly ExpandedNodeId CtrlProgramOrganizationUnitType_Body = new ExpandedNodeId(Opc.Ua.Plc.Variables.CtrlProgramOrganizationUnitType_Body, Opc.Ua.Plc.Namespaces.OpcUaPlc);
 
         /// <summary>
+        /// The identifier for the CtrlProgramType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlProgramType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Plc.Variables.CtrlProgramType_Lock_DefaultInstanceBrowseName, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
         /// The identifier for the CtrlProgramType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId CtrlProgramType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Plc.Variables.CtrlProgramType_Lock_Locked, Opc.Ua.Plc.Namespaces.OpcUaPlc);
@@ -1690,6 +1755,11 @@ namespace Opc.Ua.Plc
         /// The identifier for the CtrlProgramType_Program Variable.
         /// </summary>
         public static readonly ExpandedNodeId CtrlProgramType_Program = new ExpandedNodeId(Opc.Ua.Plc.Variables.CtrlProgramType_Program, Opc.Ua.Plc.Namespaces.OpcUaPlc);
+
+        /// <summary>
+        /// The identifier for the CtrlFunctionBlockType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CtrlFunctionBlockType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Plc.Variables.CtrlFunctionBlockType_Lock_DefaultInstanceBrowseName, Opc.Ua.Plc.Namespaces.OpcUaPlc);
 
         /// <summary>
         /// The identifier for the CtrlFunctionBlockType_Lock_Locked Variable.

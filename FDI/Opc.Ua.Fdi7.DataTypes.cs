@@ -40,124 +40,86 @@ namespace Opc.Ua.Fdi7
     #region EddDataTypeEnum Enumeration
     #if (!OPCUA_EXCLUDE_EddDataTypeEnum)
     /// <summary>
-    /// A description for the EddDataTypeEnum DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Fdi7.Namespaces.OpcUaFdi7Xsd)]
     public enum EddDataTypeEnum
     {
-        /// <summary>
-        /// A description for the BOOLEAN field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "BOOLEAN_1")]
         BOOLEAN = 1,
 
-        /// <summary>
-        /// A description for the DOUBLE field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DOUBLE_2")]
         DOUBLE = 2,
 
-        /// <summary>
-        /// A description for the FLOAT field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "FLOAT_3")]
         FLOAT = 3,
 
-        /// <summary>
-        /// A description for the INTEGER field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "INTEGER_4")]
         INTEGER = 4,
 
-        /// <summary>
-        /// A description for the UNSIGNED_INTEGER field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UNSIGNED_INTEGER_5")]
         UNSIGNED_INTEGER = 5,
 
-        /// <summary>
-        /// A description for the DATE field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DATE_6")]
         DATE = 6,
 
-        /// <summary>
-        /// A description for the DATE_AND_TIME field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DATE_AND_TIME_7")]
         DATE_AND_TIME = 7,
 
-        /// <summary>
-        /// A description for the DURATION field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DURATION_8")]
         DURATION = 8,
 
-        /// <summary>
-        /// A description for the TIME field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "TIME_9")]
         TIME = 9,
 
-        /// <summary>
-        /// A description for the TIME_VALUE field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "TIME_VALUE_10")]
         TIME_VALUE = 10,
 
-        /// <summary>
-        /// A description for the BIT_ENUMERATED field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "BIT_ENUMERATED_11")]
         BIT_ENUMERATED = 11,
 
-        /// <summary>
-        /// A description for the ENUMERATED field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ENUMERATED_12")]
         ENUMERATED = 12,
 
-        /// <summary>
-        /// A description for the ASCII field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ASCII_13")]
         ASCII = 13,
 
-        /// <summary>
-        /// A description for the BITSTRING field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "BITSTRING_14")]
         BITSTRING = 14,
 
-        /// <summary>
-        /// A description for the EUC field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "EUC_15")]
         EUC = 15,
 
-        /// <summary>
-        /// A description for the OCTET field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "OCTET_16")]
         OCTET = 16,
 
-        /// <summary>
-        /// A description for the PACKED_ASCII field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "PACKED_ASCII_17")]
         PACKED_ASCII = 17,
 
-        /// <summary>
-        /// A description for the PASSWORD field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "PASSWORD_18")]
         PASSWORD = 18,
 
-        /// <summary>
-        /// A description for the VISIBLE field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "VISIBLE_19")]
         VISIBLE = 19,
     }
@@ -252,7 +214,7 @@ namespace Opc.Ua.Fdi7
     #region EddDataTypeInfo Class
     #if (!OPCUA_EXCLUDE_EddDataTypeInfo)
     /// <summary>
-    /// A description for the EddDataTypeInfo DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -288,9 +250,7 @@ namespace Opc.Ua.Fdi7
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the EddDataType field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "EddDataType", IsRequired = false, Order = 1)]
         public EddDataTypeEnum EddDataType
         {
@@ -298,9 +258,7 @@ namespace Opc.Ua.Fdi7
             set { m_eddDataType = value; }
         }
 
-        /// <summary>
-        /// A description for the Size field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Size", IsRequired = false, Order = 2)]
         public uint Size
         {

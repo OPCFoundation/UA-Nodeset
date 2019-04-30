@@ -2287,9 +2287,14 @@ namespace Opc.Ua.Fdi7
         public const uint GenericProtocol_ProtocolIdentifier = 1379;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_Lock_DefaultInstanceBrowseName = 15042;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_H1_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_Foundation_H1_Lock_Locked = 1390;
+        public const uint ConnectionPoint_Foundation_H1_Lock_Locked = 15206;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_H1_Lock_LockingClient Variable.
@@ -2332,9 +2337,14 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_Foundation_H1_Lock_BreakLock_OutputArguments = 1402;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_DefaultInstanceBrowseName = 15044;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_Locked = 1408;
+        public const uint ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_Locked = 15207;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_LockingClient Variable.
@@ -2392,9 +2402,14 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_Foundation_H1_SIFConnection = 1423;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_Lock_DefaultInstanceBrowseName = 15045;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_Foundation_HSE_Lock_Locked = 1434;
+        public const uint ConnectionPoint_Foundation_HSE_Lock_Locked = 15208;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_LockingClient Variable.
@@ -2437,9 +2452,14 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_Foundation_HSE_Lock_BreakLock_OutputArguments = 1446;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_DefaultInstanceBrowseName = 15047;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_Locked = 1452;
+        public const uint ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_Locked = 15209;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_LockingClient Variable.
@@ -2492,9 +2512,14 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_Foundation_HSE_OrdinalNumber = 1466;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_Lock_DefaultInstanceBrowseName = 15048;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_Profibus_DP_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_Profibus_DP_Lock_Locked = 1477;
+        public const uint ConnectionPoint_Profibus_DP_Lock_Locked = 15210;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Profibus_DP_Lock_LockingClient Variable.
@@ -2537,9 +2562,14 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_Profibus_DP_Lock_BreakLock_OutputArguments = 1489;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_DefaultInstanceBrowseName = 15050;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_Locked = 1495;
+        public const uint ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_Locked = 15211;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_LockingClient Variable.
@@ -2587,9 +2617,14 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_Profibus_DP_Address = 1508;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_Lock_DefaultInstanceBrowseName = 15051;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_Profinet_IO_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_Profinet_IO_Lock_Locked = 1519;
+        public const uint ConnectionPoint_Profinet_IO_Lock_Locked = 15212;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Profinet_IO_Lock_LockingClient Variable.
@@ -2632,9 +2667,14 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_Profinet_IO_Lock_BreakLock_OutputArguments = 1531;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_DefaultInstanceBrowseName = 15053;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_Locked = 1537;
+        public const uint ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_Locked = 15213;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_LockingClient Variable.
@@ -2697,9 +2737,14 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_Profinet_IO_VALID = 1553;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_Lock_DefaultInstanceBrowseName = 15054;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP5_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_HART_TP5_Lock_Locked = 1564;
+        public const uint ConnectionPoint_HART_TP5_Lock_Locked = 15214;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP5_Lock_LockingClient Variable.
@@ -2742,9 +2787,14 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_HART_TP5_Lock_BreakLock_OutputArguments = 1576;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_DefaultInstanceBrowseName = 15056;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_Locked = 1582;
+        public const uint ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_Locked = 15215;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_LockingClient Variable.
@@ -2817,9 +2867,14 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_HART_TP5_DevPollAddr = 1600;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_Lock_DefaultInstanceBrowseName = 15057;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP6_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_HART_TP6_Lock_Locked = 1611;
+        public const uint ConnectionPoint_HART_TP6_Lock_Locked = 15216;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP6_Lock_LockingClient Variable.
@@ -2862,9 +2917,14 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_HART_TP6_Lock_BreakLock_OutputArguments = 1623;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_DefaultInstanceBrowseName = 15059;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_Locked = 1629;
+        public const uint ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_Locked = 15217;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_LockingClient Variable.
@@ -2937,9 +2997,14 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_HART_TP6_DevPollAddr = 1647;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_Lock_DefaultInstanceBrowseName = 15060;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP7_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_HART_TP7_Lock_Locked = 1658;
+        public const uint ConnectionPoint_HART_TP7_Lock_Locked = 15218;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP7_Lock_LockingClient Variable.
@@ -2982,9 +3047,14 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_HART_TP7_Lock_BreakLock_OutputArguments = 1670;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_DefaultInstanceBrowseName = 15062;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_Locked = 1676;
+        public const uint ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_Locked = 15219;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_LockingClient Variable.
@@ -3057,9 +3127,14 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_HART_TP7_DevPollAddr = 1694;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_Lock_DefaultInstanceBrowseName = 15063;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_ISA100_Wireless_Lock_Locked = 1705;
+        public const uint ConnectionPoint_ISA100_Wireless_Lock_Locked = 15220;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_LockingClient Variable.
@@ -3102,9 +3177,14 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_ISA100_Wireless_Lock_BreakLock_OutputArguments = 1717;
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_DefaultInstanceBrowseName = 15065;
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_Locked = 1723;
+        public const uint ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_Locked = 15221;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_LockingClient Variable.
@@ -3177,9 +3257,14 @@ namespace Opc.Ua.Fdi7
         public const uint ConnectionPoint_ISA100_Wireless_DevPollAddr = 1741;
 
         /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_Lock_DefaultInstanceBrowseName = 15066;
+
+        /// <summary>
         /// The identifier for the GenericConnectionPoint_Lock_Locked Variable.
         /// </summary>
-        public const uint GenericConnectionPoint_Lock_Locked = 1752;
+        public const uint GenericConnectionPoint_Lock_Locked = 15222;
 
         /// <summary>
         /// The identifier for the GenericConnectionPoint_Lock_LockingClient Variable.
@@ -3222,9 +3307,14 @@ namespace Opc.Ua.Fdi7
         public const uint GenericConnectionPoint_Lock_BreakLock_OutputArguments = 1764;
 
         /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint GenericConnectionPoint_NetworkIdentifier_Lock_DefaultInstanceBrowseName = 15068;
+
+        /// <summary>
         /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint GenericConnectionPoint_NetworkIdentifier_Lock_Locked = 1770;
+        public const uint GenericConnectionPoint_NetworkIdentifier_Lock_Locked = 15223;
 
         /// <summary>
         /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_LockingClient Variable.
@@ -3277,9 +3367,14 @@ namespace Opc.Ua.Fdi7
         public const uint GenericConnectionPoint_ProtocolIdentifier = 1784;
 
         /// <summary>
+        /// The identifier for the CommunicationServerType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint CommunicationServerType_Lock_DefaultInstanceBrowseName = 15069;
+
+        /// <summary>
         /// The identifier for the CommunicationServerType_Lock_Locked Variable.
         /// </summary>
-        public const uint CommunicationServerType_Lock_Locked = 21;
+        public const uint CommunicationServerType_Lock_Locked = 15224;
 
         /// <summary>
         /// The identifier for the CommunicationServerType_Lock_LockingClient Variable.
@@ -3322,9 +3417,14 @@ namespace Opc.Ua.Fdi7
         public const uint CommunicationServerType_Lock_BreakLock_OutputArguments = 33;
 
         /// <summary>
+        /// The identifier for the CommunicationServerType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint CommunicationServerType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15074;
+
+        /// <summary>
         /// The identifier for the CommunicationServerType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint CommunicationServerType_CPIdentifier_Lock_Locked = 60;
+        public const uint CommunicationServerType_CPIdentifier_Lock_Locked = 15226;
 
         /// <summary>
         /// The identifier for the CommunicationServerType_CPIdentifier_Lock_LockingClient Variable.
@@ -3457,9 +3557,14 @@ namespace Opc.Ua.Fdi7
         public const uint SetAddressMethodGENERICType_OutputArguments = 1787;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationDeviceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationDeviceType_Lock_DefaultInstanceBrowseName = 15075;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationDeviceType_Lock_Locked = 103;
+        public const uint ServerCommunicationDeviceType_Lock_Locked = 15227;
 
         /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_Lock_LockingClient Variable.
@@ -3502,9 +3607,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationDeviceType_Lock_BreakLock_OutputArguments = 115;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15080;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationDeviceType_CPIdentifier_Lock_Locked = 142;
+        public const uint ServerCommunicationDeviceType_CPIdentifier_Lock_Locked = 15229;
 
         /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_CPIdentifier_Lock_LockingClient Variable.
@@ -3582,9 +3692,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationDeviceType_MethodSet_RemoveComponent_OutputArguments = 169;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFH1DeviceType_Lock_DefaultInstanceBrowseName = 15081;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationFFH1DeviceType_Lock_Locked = 334;
+        public const uint ServerCommunicationFFH1DeviceType_Lock_Locked = 15230;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_Lock_LockingClient Variable.
@@ -3627,9 +3742,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFH1DeviceType_Lock_BreakLock_OutputArguments = 346;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15086;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_Locked = 373;
+        public const uint ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_Locked = 15232;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_LockingClient Variable.
@@ -3712,9 +3832,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFH1DeviceType_MethodSet_SetAddress_OutputArguments = 400;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName = 15087;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_Locked = 409;
+        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_Locked = 15233;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_LockingClient Variable.
@@ -3757,16 +3882,6 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = 421;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_SerialNumber = 422;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_RevisionCounter = 423;
-
-        /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_Manufacturer = 424;
@@ -3777,14 +3892,9 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_Model = 425;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceManual = 426;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceRevision = 427;
+        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_HardwareRevision = 429;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -3792,9 +3902,24 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_SoftwareRevision = 428;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_HardwareRevision = 429;
+        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceRevision = 427;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceManual = 426;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_SerialNumber = 422;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_RevisionCounter = 423;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -3837,9 +3962,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments = 451;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEDeviceType_Lock_DefaultInstanceBrowseName = 15092;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationFFHSEDeviceType_Lock_Locked = 462;
+        public const uint ServerCommunicationFFHSEDeviceType_Lock_Locked = 15235;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_Lock_LockingClient Variable.
@@ -3882,9 +4012,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFHSEDeviceType_Lock_BreakLock_OutputArguments = 474;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15097;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_Locked = 501;
+        public const uint ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_Locked = 15237;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_LockingClient Variable.
@@ -3967,9 +4102,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFHSEDeviceType_MethodSet_SetAddress_OutputArguments = 528;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName = 15098;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_Locked = 537;
+        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_Locked = 15238;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_LockingClient Variable.
@@ -4012,16 +4152,6 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = 549;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_SerialNumber = 550;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_RevisionCounter = 551;
-
-        /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_Manufacturer = 552;
@@ -4032,14 +4162,9 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_Model = 553;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceManual = 554;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceRevision = 555;
+        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_HardwareRevision = 557;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -4047,9 +4172,24 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_SoftwareRevision = 556;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_HardwareRevision = 557;
+        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceRevision = 555;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceManual = 554;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_SerialNumber = 550;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_RevisionCounter = 551;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -4092,9 +4232,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments = 579;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSDeviceType_Lock_DefaultInstanceBrowseName = 15103;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFIBUSDeviceType_Lock_Locked = 590;
+        public const uint ServerCommunicationPROFIBUSDeviceType_Lock_Locked = 15240;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_Lock_LockingClient Variable.
@@ -4137,9 +4282,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFIBUSDeviceType_Lock_BreakLock_OutputArguments = 602;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15108;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_Locked = 629;
+        public const uint ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_Locked = 15242;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_LockingClient Variable.
@@ -4222,9 +4372,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFIBUSDeviceType_MethodSet_SetAddress_OutputArguments = 656;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName = 15109;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_Locked = 665;
+        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_Locked = 15243;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_LockingClient Variable.
@@ -4267,16 +4422,6 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = 677;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SerialNumber = 678;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_RevisionCounter = 679;
-
-        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Manufacturer = 680;
@@ -4287,14 +4432,9 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Model = 681;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceManual = 682;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceRevision = 683;
+        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_HardwareRevision = 685;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -4302,9 +4442,24 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SoftwareRevision = 684;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_HardwareRevision = 685;
+        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceRevision = 683;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceManual = 682;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SerialNumber = 678;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_RevisionCounter = 679;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -4337,9 +4492,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Transfer_OutputArguments = 704;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETDeviceType_Lock_DefaultInstanceBrowseName = 15114;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFINETDeviceType_Lock_Locked = 715;
+        public const uint ServerCommunicationPROFINETDeviceType_Lock_Locked = 15245;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_Lock_LockingClient Variable.
@@ -4382,9 +4542,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFINETDeviceType_Lock_BreakLock_OutputArguments = 727;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15119;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_Locked = 754;
+        public const uint ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_Locked = 15247;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_LockingClient Variable.
@@ -4467,9 +4632,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFINETDeviceType_MethodSet_SetAddress_OutputArguments = 781;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName = 15120;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_Locked = 790;
+        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_Locked = 15248;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_LockingClient Variable.
@@ -4512,16 +4682,6 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = 802;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_SerialNumber = 803;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_RevisionCounter = 804;
-
-        /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_Manufacturer = 805;
@@ -4532,14 +4692,9 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_Model = 806;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceManual = 807;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceRevision = 808;
+        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_HardwareRevision = 810;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -4547,9 +4702,24 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_SoftwareRevision = 809;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_HardwareRevision = 810;
+        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceRevision = 808;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceManual = 807;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_SerialNumber = 803;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_RevisionCounter = 804;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -4582,9 +4752,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Transfer_OutputArguments = 829;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationHARType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationHARType_Lock_DefaultInstanceBrowseName = 15125;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationHARType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationHARType_Lock_Locked = 840;
+        public const uint ServerCommunicationHARType_Lock_Locked = 15250;
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_Lock_LockingClient Variable.
@@ -4627,9 +4802,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationHARType_Lock_BreakLock_OutputArguments = 852;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationHARType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationHARType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15130;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationHARType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationHARType_CPIdentifier_Lock_Locked = 879;
+        public const uint ServerCommunicationHARType_CPIdentifier_Lock_Locked = 15252;
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_CPIdentifier_Lock_LockingClient Variable.
@@ -4712,9 +4892,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationHARType_MethodSet_SetAddress_OutputArguments = 906;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationHARType_ServiceProvider_Lock_DefaultInstanceBrowseName = 15131;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationHARType_ServiceProvider_Lock_Locked = 915;
+        public const uint ServerCommunicationHARType_ServiceProvider_Lock_Locked = 15253;
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_Lock_LockingClient Variable.
@@ -4757,16 +4942,6 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationHARType_ServiceProvider_Lock_BreakLock_OutputArguments = 927;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationHARType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public const uint ServerCommunicationHARType_ServiceProvider_SerialNumber = 928;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationHARType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public const uint ServerCommunicationHARType_ServiceProvider_RevisionCounter = 929;
-
-        /// <summary>
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public const uint ServerCommunicationHARType_ServiceProvider_Manufacturer = 930;
@@ -4777,14 +4952,9 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationHARType_ServiceProvider_Model = 931;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationHARType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationHARType_ServiceProvider_DeviceManual = 932;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationHARType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public const uint ServerCommunicationHARType_ServiceProvider_DeviceRevision = 933;
+        public const uint ServerCommunicationHARType_ServiceProvider_HardwareRevision = 935;
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_SoftwareRevision Variable.
@@ -4792,9 +4962,24 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationHARType_ServiceProvider_SoftwareRevision = 934;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationHARType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationHARType_ServiceProvider_HardwareRevision = 935;
+        public const uint ServerCommunicationHARType_ServiceProvider_DeviceRevision = 933;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public const uint ServerCommunicationHARType_ServiceProvider_DeviceManual = 932;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public const uint ServerCommunicationHARType_ServiceProvider_SerialNumber = 928;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public const uint ServerCommunicationHARType_ServiceProvider_RevisionCounter = 929;
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -4837,9 +5022,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationHARType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments = 957;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_Lock_DefaultInstanceBrowseName = 15136;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationISA100_WirelessDeviceType_Lock_Locked = 1798;
+        public const uint ServerCommunicationISA100_WirelessDeviceType_Lock_Locked = 15255;
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_LockingClient Variable.
@@ -4882,9 +5072,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationISA100_WirelessDeviceType_Lock_BreakLock_OutputArguments = 1810;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15141;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_Locked = 1837;
+        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_Locked = 15257;
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_LockingClient Variable.
@@ -4957,9 +5152,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationISA100_WirelessDeviceType_MethodSet_RemoveComponent_OutputArguments = 1861;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName = 15142;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_Locked = 1870;
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_Locked = 15258;
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_LockingClient Variable.
@@ -5002,16 +5202,6 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = 1882;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber = 1883;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter = 1884;
-
-        /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Manufacturer = 1885;
@@ -5022,14 +5212,9 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Model = 1886;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual = 1887;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision = 1888;
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision = 1890;
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -5037,9 +5222,24 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SoftwareRevision = 1889;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision = 1890;
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision = 1888;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual = 1887;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber = 1883;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter = 1884;
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -5082,9 +5282,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments = 1912;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_Lock_DefaultInstanceBrowseName = 15147;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationGENERICDeviceType_Lock_Locked = 1923;
+        public const uint ServerCommunicationGENERICDeviceType_Lock_Locked = 15260;
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_LockingClient Variable.
@@ -5127,9 +5332,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationGENERICDeviceType_Lock_BreakLock_OutputArguments = 1935;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15152;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_Locked = 1962;
+        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_Locked = 15262;
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_LockingClient Variable.
@@ -5217,9 +5427,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationGENERICDeviceType_MethodSet_SetAddress_OutputArguments = 1990;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName = 15153;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_Locked = 1999;
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_Locked = 15263;
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_LockingClient Variable.
@@ -5262,16 +5477,6 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = 2011;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber = 2012;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter = 2013;
-
-        /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Manufacturer = 2014;
@@ -5282,14 +5487,9 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Model = 2015;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual = 2016;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision = 2017;
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision = 2019;
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -5297,9 +5497,24 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_SoftwareRevision = 2018;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision = 2019;
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision = 2017;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual = 2016;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber = 2012;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter = 2013;
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -5517,9 +5732,14 @@ namespace Opc.Ua.Fdi7
         public const uint GetPublishedDataMethodISA100_WirelessType_OutputArguments = 2056;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationServiceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationServiceType_Lock_DefaultInstanceBrowseName = 15158;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationServiceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationServiceType_Lock_Locked = 243;
+        public const uint ServerCommunicationServiceType_Lock_Locked = 15265;
 
         /// <summary>
         /// The identifier for the ServerCommunicationServiceType_Lock_LockingClient Variable.
@@ -5562,9 +5782,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationServiceType_Lock_BreakLock_OutputArguments = 255;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15163;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationServiceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationServiceType_CPIdentifier_Lock_Locked = 282;
+        public const uint ServerCommunicationServiceType_CPIdentifier_Lock_Locked = 15267;
 
         /// <summary>
         /// The identifier for the ServerCommunicationServiceType_CPIdentifier_Lock_LockingClient Variable.
@@ -5617,9 +5842,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationServiceType_MethodSet_Disconnect_OutputArguments = 302;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFH1ServiceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFH1ServiceType_Lock_DefaultInstanceBrowseName = 15164;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFH1ServiceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationFFH1ServiceType_Lock_Locked = 1007;
+        public const uint ServerCommunicationFFH1ServiceType_Lock_Locked = 15268;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1ServiceType_Lock_LockingClient Variable.
@@ -5662,9 +5892,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFH1ServiceType_Lock_BreakLock_OutputArguments = 1019;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15169;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_Locked = 1046;
+        public const uint ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_Locked = 15270;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_LockingClient Variable.
@@ -5747,9 +5982,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFH1ServiceType_MethodSet_GetPublishedData_OutputArguments = 1072;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEServiceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEServiceType_Lock_DefaultInstanceBrowseName = 15170;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFHSEServiceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationFFHSEServiceType_Lock_Locked = 1083;
+        public const uint ServerCommunicationFFHSEServiceType_Lock_Locked = 15271;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEServiceType_Lock_LockingClient Variable.
@@ -5792,9 +6032,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFHSEServiceType_Lock_BreakLock_OutputArguments = 1095;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15175;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_Locked = 1122;
+        public const uint ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_Locked = 15273;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_LockingClient Variable.
@@ -5877,9 +6122,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFHSEServiceType_MethodSet_GetPublishedData_OutputArguments = 1148;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSServiceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSServiceType_Lock_DefaultInstanceBrowseName = 15176;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSServiceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFIBUSServiceType_Lock_Locked = 1159;
+        public const uint ServerCommunicationPROFIBUSServiceType_Lock_Locked = 15274;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSServiceType_Lock_LockingClient Variable.
@@ -5922,9 +6172,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFIBUSServiceType_Lock_BreakLock_OutputArguments = 1171;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15181;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_Locked = 1198;
+        public const uint ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_Locked = 15276;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_LockingClient Variable.
@@ -5997,9 +6252,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFIBUSServiceType_MethodSet_Transfer_OutputArguments = 1221;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETServiceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETServiceType_Lock_DefaultInstanceBrowseName = 15182;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFINETServiceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFINETServiceType_Lock_Locked = 1232;
+        public const uint ServerCommunicationPROFINETServiceType_Lock_Locked = 15277;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETServiceType_Lock_LockingClient Variable.
@@ -6042,9 +6302,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFINETServiceType_Lock_BreakLock_OutputArguments = 1244;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15187;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_Locked = 1271;
+        public const uint ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_Locked = 15279;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_LockingClient Variable.
@@ -6117,9 +6382,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFINETServiceType_MethodSet_Transfer_OutputArguments = 1294;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationHARTServiceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationHARTServiceType_Lock_DefaultInstanceBrowseName = 15188;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationHARTServiceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationHARTServiceType_Lock_Locked = 1305;
+        public const uint ServerCommunicationHARTServiceType_Lock_Locked = 15280;
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARTServiceType_Lock_LockingClient Variable.
@@ -6162,9 +6432,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationHARTServiceType_Lock_BreakLock_OutputArguments = 1317;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationHARTServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationHARTServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15193;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationHARTServiceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationHARTServiceType_CPIdentifier_Lock_Locked = 1344;
+        public const uint ServerCommunicationHARTServiceType_CPIdentifier_Lock_Locked = 15282;
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARTServiceType_CPIdentifier_Lock_LockingClient Variable.
@@ -6247,9 +6522,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationHARTServiceType_MethodSet_GetPublishedData_OutputArguments = 1370;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_Lock_DefaultInstanceBrowseName = 15194;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationISA100_WirelessServiceType_Lock_Locked = 2067;
+        public const uint ServerCommunicationISA100_WirelessServiceType_Lock_Locked = 15283;
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_LockingClient Variable.
@@ -6292,9 +6572,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationISA100_WirelessServiceType_Lock_BreakLock_OutputArguments = 2079;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15199;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_Locked = 2106;
+        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_Locked = 15285;
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_LockingClient Variable.
@@ -6377,9 +6662,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData_OutputArguments = 2132;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_Lock_DefaultInstanceBrowseName = 15200;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationGENERICServiceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationGENERICServiceType_Lock_Locked = 2143;
+        public const uint ServerCommunicationGENERICServiceType_Lock_Locked = 15286;
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICServiceType_Lock_LockingClient Variable.
@@ -6422,9 +6712,14 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationGENERICServiceType_Lock_BreakLock_OutputArguments = 2155;
 
         /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15205;
+
+        /// <summary>
         /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_Lock_Locked = 2182;
+        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_Lock_Locked = 15288;
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_LockingClient Variable.
@@ -8787,6 +9082,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId GenericProtocol_ProtocolIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericProtocol_ProtocolIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_H1_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -8830,6 +9130,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_Foundation_H1_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_Locked Variable.
@@ -8892,6 +9197,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ConnectionPoint_Foundation_H1_SIFConnection = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_H1_SIFConnection, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -8935,6 +9245,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_Locked Variable.
@@ -8992,6 +9307,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ConnectionPoint_Foundation_HSE_OrdinalNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Foundation_HSE_OrdinalNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_Profibus_DP_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -9035,6 +9355,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_Profibus_DP_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_Locked Variable.
@@ -9087,6 +9412,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ConnectionPoint_Profibus_DP_Address = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profibus_DP_Address, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_Profinet_IO_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -9130,6 +9460,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_Profinet_IO_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_Locked Variable.
@@ -9197,6 +9532,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ConnectionPoint_Profinet_IO_VALID = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_Profinet_IO_VALID, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP5_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -9240,6 +9580,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_HART_TP5_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_Locked Variable.
@@ -9317,6 +9662,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ConnectionPoint_HART_TP5_DevPollAddr = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP5_DevPollAddr, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP6_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -9360,6 +9710,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_HART_TP6_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_Locked Variable.
@@ -9437,6 +9792,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ConnectionPoint_HART_TP6_DevPollAddr = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP6_DevPollAddr, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP7_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -9480,6 +9840,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_HART_TP7_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_Locked Variable.
@@ -9557,6 +9922,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ConnectionPoint_HART_TP7_DevPollAddr = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_HART_TP7_DevPollAddr, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -9600,6 +9970,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_Locked Variable.
@@ -9677,6 +10052,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ConnectionPoint_ISA100_Wireless_DevPollAddr = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ConnectionPoint_ISA100_Wireless_DevPollAddr, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the GenericConnectionPoint_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the GenericConnectionPoint_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId GenericConnectionPoint_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -9720,6 +10100,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the GenericConnectionPoint_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId GenericConnectionPoint_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId GenericConnectionPoint_NetworkIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_NetworkIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_Locked Variable.
@@ -9777,6 +10162,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId GenericConnectionPoint_ProtocolIdentifier = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GenericConnectionPoint_ProtocolIdentifier, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the CommunicationServerType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CommunicationServerType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.CommunicationServerType_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the CommunicationServerType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId CommunicationServerType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.CommunicationServerType_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -9820,6 +10210,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the CommunicationServerType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId CommunicationServerType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.CommunicationServerType_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the CommunicationServerType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CommunicationServerType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.CommunicationServerType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the CommunicationServerType_CPIdentifier_Lock_Locked Variable.
@@ -9957,6 +10352,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId SetAddressMethodGENERICType_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.SetAddressMethodGENERICType_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationDeviceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationDeviceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationDeviceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationDeviceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationDeviceType_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -10000,6 +10400,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationDeviceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationDeviceType_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_CPIdentifier_Lock_Locked Variable.
@@ -10082,6 +10487,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationDeviceType_MethodSet_RemoveComponent_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationDeviceType_MethodSet_RemoveComponent_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -10125,6 +10535,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationFFH1DeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_Locked Variable.
@@ -10212,6 +10627,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_MethodSet_SetAddress_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_MethodSet_SetAddress_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -10257,16 +10677,6 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_Manufacturer = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_Manufacturer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -10277,14 +10687,9 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_Model = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_Model, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -10292,9 +10697,24 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_SoftwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -10335,6 +10755,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_Lock_Locked Variable.
@@ -10380,6 +10805,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationFFHSEDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_Locked Variable.
@@ -10467,6 +10897,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_MethodSet_SetAddress_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_MethodSet_SetAddress_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -10512,16 +10947,6 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_Manufacturer = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_Manufacturer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -10532,14 +10957,9 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_Model = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_Model, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -10547,9 +10967,24 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_SoftwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -10590,6 +11025,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_Lock_Locked Variable.
@@ -10635,6 +11075,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_Locked Variable.
@@ -10722,6 +11167,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_MethodSet_SetAddress_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_MethodSet_SetAddress_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -10767,16 +11217,6 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Manufacturer = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Manufacturer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -10787,14 +11227,9 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Model = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Model, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -10802,9 +11237,24 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SoftwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -10835,6 +11285,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Transfer_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Transfer_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Transfer_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_Lock_Locked Variable.
@@ -10880,6 +11335,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationPROFINETDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_Locked Variable.
@@ -10967,6 +11427,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_MethodSet_SetAddress_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_MethodSet_SetAddress_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -11012,16 +11477,6 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_Manufacturer = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_Manufacturer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -11032,14 +11487,9 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_Model = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_Model, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -11047,9 +11497,24 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_SoftwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -11080,6 +11545,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Transfer_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Transfer_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Transfer_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_Lock_Locked Variable.
@@ -11125,6 +11595,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationHARType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationHARType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_CPIdentifier_Lock_Locked Variable.
@@ -11212,6 +11687,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationHARType_MethodSet_SetAddress_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_MethodSet_SetAddress_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -11257,16 +11737,6 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationHARType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationHARType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_Manufacturer = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_Manufacturer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -11277,14 +11747,9 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_Model = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_Model, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationHARType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationHARType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_SoftwareRevision Variable.
@@ -11292,9 +11757,24 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_SoftwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationHARType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -11335,6 +11815,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_Locked Variable.
@@ -11380,6 +11865,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_Locked Variable.
@@ -11457,6 +11947,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_MethodSet_RemoveComponent_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_MethodSet_RemoveComponent_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -11502,16 +11997,6 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Manufacturer = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Manufacturer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -11522,14 +12007,9 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Model = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Model, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -11537,9 +12017,24 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SoftwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -11580,6 +12075,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_GetPublishedData_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_Locked Variable.
@@ -11625,6 +12125,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_Locked Variable.
@@ -11717,6 +12222,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_MethodSet_SetAddress_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_MethodSet_SetAddress_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -11762,16 +12272,6 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Manufacturer = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_Manufacturer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -11782,14 +12282,9 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Model = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_Model, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -11797,9 +12292,24 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_SoftwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -12017,6 +12527,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId GetPublishedDataMethodISA100_WirelessType_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.GetPublishedDataMethodISA100_WirelessType_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationServiceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationServiceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationServiceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationServiceType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationServiceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationServiceType_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -12060,6 +12575,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationServiceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationServiceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationServiceType_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationServiceType_CPIdentifier_Lock_Locked Variable.
@@ -12117,6 +12637,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationServiceType_MethodSet_Disconnect_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationServiceType_MethodSet_Disconnect_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFH1ServiceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1ServiceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1ServiceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFH1ServiceType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFH1ServiceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1ServiceType_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -12160,6 +12685,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationFFH1ServiceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFH1ServiceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1ServiceType_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_Locked Variable.
@@ -12247,6 +12777,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFH1ServiceType_MethodSet_GetPublishedData_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1ServiceType_MethodSet_GetPublishedData_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEServiceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEServiceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEServiceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationFFHSEServiceType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFHSEServiceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEServiceType_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -12290,6 +12825,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationFFHSEServiceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFHSEServiceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEServiceType_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_Locked Variable.
@@ -12377,6 +12917,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFHSEServiceType_MethodSet_GetPublishedData_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEServiceType_MethodSet_GetPublishedData_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSServiceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSServiceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSServiceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSServiceType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSServiceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSServiceType_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -12420,6 +12965,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationPROFIBUSServiceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSServiceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSServiceType_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_Locked Variable.
@@ -12497,6 +13047,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSServiceType_MethodSet_Transfer_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSServiceType_MethodSet_Transfer_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETServiceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETServiceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETServiceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationPROFINETServiceType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFINETServiceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETServiceType_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -12540,6 +13095,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationPROFINETServiceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFINETServiceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETServiceType_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_Locked Variable.
@@ -12617,6 +13177,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFINETServiceType_MethodSet_Transfer_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETServiceType_MethodSet_Transfer_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationHARTServiceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARTServiceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARTServiceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationHARTServiceType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationHARTServiceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARTServiceType_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -12660,6 +13225,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationHARTServiceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationHARTServiceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARTServiceType_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARTServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARTServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARTServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARTServiceType_CPIdentifier_Lock_Locked Variable.
@@ -12747,6 +13317,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationHARTServiceType_MethodSet_GetPublishedData_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARTServiceType_MethodSet_GetPublishedData_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -12790,6 +13365,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_Locked Variable.
@@ -12877,6 +13457,11 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessServiceType_MethodSet_GetPublishedData_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
         /// The identifier for the ServerCommunicationGENERICServiceType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_Lock_Locked, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -12920,6 +13505,11 @@ namespace Opc.Ua.Fdi7
         /// The identifier for the ServerCommunicationGENERICServiceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICServiceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_Locked Variable.

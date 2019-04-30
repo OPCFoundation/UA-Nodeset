@@ -40,28 +40,22 @@ namespace Opc.Ua.Fdi5
     #region WindowModeType Enumeration
     #if (!OPCUA_EXCLUDE_WindowModeType)
     /// <summary>
-    /// A description for the WindowModeType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Fdi5.Namespaces.OpcUaFdi5Xsd)]
     public enum WindowModeType
     {
-        /// <summary>
-        /// A description for the ModalWindow field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ModalWindow_1")]
         ModalWindow = 1,
 
-        /// <summary>
-        /// A description for the NonModalWindow field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "NonModalWindow_2")]
         NonModalWindow = 2,
 
-        /// <summary>
-        /// A description for the UIP field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UIP_3")]
         UIP = 3,
     }
@@ -156,22 +150,18 @@ namespace Opc.Ua.Fdi5
     #region StyleType Enumeration
     #if (!OPCUA_EXCLUDE_StyleType)
     /// <summary>
-    /// A description for the StyleType DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Fdi5.Namespaces.OpcUaFdi5Xsd)]
     public enum StyleType
     {
-        /// <summary>
-        /// A description for the Window field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Window_1")]
         Window = 1,
 
-        /// <summary>
-        /// A description for the Dialog field.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "Dialog_2")]
         Dialog = 2,
     }
@@ -266,7 +256,7 @@ namespace Opc.Ua.Fdi5
     #region RegistrationParameters Class
     #if (!OPCUA_EXCLUDE_RegistrationParameters)
     /// <summary>
-    /// A description for the RegistrationParameters DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -303,7 +293,7 @@ namespace Opc.Ua.Fdi5
 
         #region Public Properties
         /// <summary>
-        /// A description for the Path field.
+        /// 
         /// </summary>
         [DataMember(Name = "Path", IsRequired = false, Order = 1)]
         public RelativePath Path
@@ -324,9 +314,7 @@ namespace Opc.Ua.Fdi5
             }
         }
 
-        /// <summary>
-        /// A description for the SelectionFlags field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "SelectionFlags", IsRequired = false, Order = 2)]
         public uint SelectionFlags
         {
@@ -513,7 +501,7 @@ namespace Opc.Ua.Fdi5
     #region RegisteredNode Class
     #if (!OPCUA_EXCLUDE_RegisteredNode)
     /// <summary>
-    /// A description for the RegisteredNode DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -552,9 +540,7 @@ namespace Opc.Ua.Fdi5
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the NodeStatus field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "NodeStatus", IsRequired = false, Order = 1)]
         public int NodeStatus
         {
@@ -562,9 +548,7 @@ namespace Opc.Ua.Fdi5
             set { m_nodeStatus = value; }
         }
 
-        /// <summary>
-        /// A description for the OnlineContextNodeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "OnlineContextNodeId", IsRequired = false, Order = 2)]
         public NodeId OnlineContextNodeId
         {
@@ -572,9 +556,7 @@ namespace Opc.Ua.Fdi5
             set { m_onlineContextNodeId = value; }
         }
 
-        /// <summary>
-        /// A description for the OnlineDeviceNodeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "OnlineDeviceNodeId", IsRequired = false, Order = 3)]
         public NodeId OnlineDeviceNodeId
         {
@@ -582,9 +564,7 @@ namespace Opc.Ua.Fdi5
             set { m_onlineDeviceNodeId = value; }
         }
 
-        /// <summary>
-        /// A description for the OfflineContextNodeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "OfflineContextNodeId", IsRequired = false, Order = 4)]
         public NodeId OfflineContextNodeId
         {
@@ -592,9 +572,7 @@ namespace Opc.Ua.Fdi5
             set { m_offlineContextNodeId = value; }
         }
 
-        /// <summary>
-        /// A description for the OfflineDeviceNodeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "OfflineDeviceNodeId", IsRequired = false, Order = 5)]
         public NodeId OfflineDeviceNodeId
         {
@@ -796,7 +774,7 @@ namespace Opc.Ua.Fdi5
     #region RegisterNodesResult Class
     #if (!OPCUA_EXCLUDE_RegisterNodesResult)
     /// <summary>
-    /// A description for the RegisterNodesResult DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -832,9 +810,7 @@ namespace Opc.Ua.Fdi5
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Status field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Status", IsRequired = false, Order = 1)]
         public int Status
         {
@@ -843,7 +819,7 @@ namespace Opc.Ua.Fdi5
         }
 
         /// <summary>
-        /// A description for the RegisteredNodes field.
+        /// 
         /// </summary>
         [DataMember(Name = "RegisteredNodes", IsRequired = false, Order = 2)]
         public RegisteredNodeCollection RegisteredNodes
@@ -1043,7 +1019,7 @@ namespace Opc.Ua.Fdi5
     #region TransferIncident Class
     #if (!OPCUA_EXCLUDE_TransferIncident)
     /// <summary>
-    /// A description for the TransferIncident DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -1080,9 +1056,7 @@ namespace Opc.Ua.Fdi5
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the ContextNodeId field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ContextNodeId", IsRequired = false, Order = 1)]
         public NodeId ContextNodeId
         {
@@ -1090,9 +1064,7 @@ namespace Opc.Ua.Fdi5
             set { m_contextNodeId = value; }
         }
 
-        /// <summary>
-        /// A description for the StatusCode field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "StatusCode", IsRequired = false, Order = 2)]
         public StatusCode StatusCode
         {
@@ -1100,9 +1072,7 @@ namespace Opc.Ua.Fdi5
             set { m_statusCode = value; }
         }
 
-        /// <summary>
-        /// A description for the Diagnostics field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Diagnostics", IsRequired = false, Order = 3)]
         public DiagnosticInfo Diagnostics
         {
@@ -1294,7 +1264,7 @@ namespace Opc.Ua.Fdi5
     #region ApplyResult Class
     #if (!OPCUA_EXCLUDE_ApplyResult)
     /// <summary>
-    /// A description for the ApplyResult DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -1330,9 +1300,7 @@ namespace Opc.Ua.Fdi5
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// A description for the Status field.
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "Status", IsRequired = false, Order = 1)]
         public int Status
         {
@@ -1341,7 +1309,7 @@ namespace Opc.Ua.Fdi5
         }
 
         /// <summary>
-        /// A description for the TransferIncidents field.
+        /// 
         /// </summary>
         [DataMember(Name = "TransferIncidents", IsRequired = false, Order = 2)]
         public TransferIncidentCollection TransferIncidents

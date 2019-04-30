@@ -40,76 +40,54 @@ namespace Opc.Ua.Adi
     #region ExecutionCycleEnumeration Enumeration
     #if (!OPCUA_EXCLUDE_ExecutionCycleEnumeration)
     /// <summary>
-    /// A description for the ExecutionCycleEnumeration DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Adi.Namespaces.OpcUaAdiXsd)]
     public enum ExecutionCycleEnumeration
     {
-        /// <summary>
-        /// Idle, no cleaning or acquisition cycle in progress
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "IDLE_0")]
         IDLE = 0,
 
-        /// <summary>
-        /// Scquisition cycle collecting data for diagnostic purpose
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DIAGNOSTIC_1")]
         DIAGNOSTIC = 1,
 
-        /// <summary>
-        /// Cleaning cycle
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "CLEANING_2")]
         CLEANING = 2,
 
-        /// <summary>
-        /// Calibration acquisition cycle
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "CALIBRATION_4")]
         CALIBRATION = 4,
 
-        /// <summary>
-        /// Validation acquisition cycle
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "VALIDATION_8")]
         VALIDATION = 8,
 
-        /// <summary>
-        /// Sample acquisition cycle
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "SAMPLING_16")]
         SAMPLING = 16,
 
-        /// <summary>
-        /// Scquisition cycle collecting data for diagnostic purpose and sample is extracted from the process to be sent in control lab
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "DIAGNOSTIC_WITH_GRAB_SAMPLE_32769")]
         DIAGNOSTIC_WITH_GRAB_SAMPLE = 32769,
 
-        /// <summary>
-        /// Cleaning cycle with or without acquisition and sample is extracted from the process to be sent in control lab
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "CLEANING_WITH_GRAB_SAMPLE_32770")]
         CLEANING_WITH_GRAB_SAMPLE = 32770,
 
-        /// <summary>
-        /// Calibration acquisition cycle and sample is extracted from the process to be sent in control lab
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "CALIBRATION_WITH_GRAB_SAMPLE_32772")]
         CALIBRATION_WITH_GRAB_SAMPLE = 32772,
 
-        /// <summary>
-        /// Validation acquisition cycle and sample is extracted from the process to be sent in control lab
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "VALIDATION_WITH_GRAB_SAMPLE_32776")]
         VALIDATION_WITH_GRAB_SAMPLE = 32776,
 
-        /// <summary>
-        /// Sample acquisition cycle and sample is extracted from the process to be sent in control lab
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "SAMPLING_WITH_GRAB_SAMPLE_32784")]
         SAMPLING_WITH_GRAB_SAMPLE = 32784,
     }
@@ -204,40 +182,30 @@ namespace Opc.Ua.Adi
     #region AcquisitionResultStatusEnumeration Enumeration
     #if (!OPCUA_EXCLUDE_AcquisitionResultStatusEnumeration)
     /// <summary>
-    /// A description for the AcquisitionResultStatusEnumeration DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Adi.Namespaces.OpcUaAdiXsd)]
     public enum AcquisitionResultStatusEnumeration
     {
-        /// <summary>
-        /// No longer used.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "NOT_USED_0")]
         NOT_USED = 0,
 
-        /// <summary>
-        /// The acquisition has been completed as requested without any error.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "GOOD_1")]
         GOOD = 1,
 
-        /// <summary>
-        /// The acquisition has been completed as requested with error.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "BAD_2")]
         BAD = 2,
 
-        /// <summary>
-        /// The acquisition has been completed but nothing can be said about the quality of the result.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "UNKNOWN_3")]
         UNKNOWN = 3,
 
-        /// <summary>
-        /// The acquisition has been partially completed as requested without any error.
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "PARTIAL_4")]
         PARTIAL = 4,
     }
@@ -332,52 +300,38 @@ namespace Opc.Ua.Adi
     #region AlarmStateEnumeration Enumeration
     #if (!OPCUA_EXCLUDE_AlarmStateEnumeration)
     /// <summary>
-    /// A description for the AlarmStateEnumeration DataType.
+    /// 
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Adi.Namespaces.OpcUaAdiXsd)]
     public enum AlarmStateEnumeration
     {
-        /// <summary>
-        /// Normal
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "NORMAL_0")]
         NORMAL_0 = 0,
 
-        /// <summary>
-        /// In low warning range
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "WARNING_LOW_1")]
         WARNING_LOW_1 = 1,
 
-        /// <summary>
-        /// In high warning range
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "WARNING_HIGH_2")]
         WARNING_HIGH_2 = 2,
 
-        /// <summary>
-        /// In warning range (low or high) or some other warning cause
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "WARNING_4")]
         WARNING_4 = 4,
 
-        /// <summary>
-        /// In low alarm range
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ALARM_LOW_8")]
         ALARM_LOW_8 = 8,
 
-        /// <summary>
-        /// In high alarm range
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ALARM_HIGH_16")]
         ALARM_HIGH_16 = 16,
 
-        /// <summary>
-        /// In alarm range (low or high) or some other alarm cause
-        /// </summary>
+        /// <remarks />
         [EnumMember(Value = "ALARM_32")]
         ALARM_32 = 32,
     }
