@@ -39,7 +39,7 @@ namespace Opc.MDIS
     #region EnableDisableMethodState Class
     #if (!OPCUA_EXCLUDE_EnableDisableMethodState)
     /// <summary>
-    /// Stores an instance of the EnableDisableType Method.
+    /// Stores an instance of the EnableDisableMethodType Method.
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -83,11 +83,11 @@ namespace Opc.MDIS
 
         #region Initialization String
         private const string InitializationString =
-           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEAEQAAAEVu" +
-           "YWJsZURpc2FibGVUeXBlAQHAAAAvAQHAAMAAAAABAf////8BAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFy" +
-           "Z3VtZW50cwEBwQAALgBEwQAAAJYBAAAAAQAqAQFUAAAABgAAAEVuYWJsZQAB/////wAAAAADAAAAADcA" +
-           "AABEaXNhYmxlIHRoZSBkZXZpY2UgKGZhbHNlKSwgb3IgZW5hYmxlIHRoZSBkZXZpY2UgKHRydWUpAQAo" +
-           "AQEAAAABAAAAAAAAAAEB/////wAAAAA=";
+           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEAFwAAAEVu" +
+           "YWJsZURpc2FibGVNZXRob2RUeXBlAQGmOgAvAQGmOqY6AAABAf////8BAAAAF2CpCgIAAAAAAA4AAABJ" +
+           "bnB1dEFyZ3VtZW50cwEBpzoALgBEpzoAAJYBAAAAAQAqAQFUAAAABgAAAEVuYWJsZQAB/////wAAAAAD" +
+           "AAAAADcAAABEaXNhYmxlIHRoZSBkZXZpY2UgKGZhbHNlKSwgb3IgZW5hYmxlIHRoZSBkZXZpY2UgKHRy" +
+           "dWUpAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -720,7 +720,7 @@ namespace Opc.MDIS
         #region Initialization String
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8VYIkCAgAAAAEAHQAAAElu" +
-           "dGVybG9ja1ZhcmlhYmxlVHlwZUluc3RhbmNlAQH/BAEB/wT/BAAAAAH+////AQH/////AAAAAA==";
+           "dGVybG9ja1ZhcmlhYmxlVHlwZUluc3RhbmNlAQH/BAEB/wT/BAAAAAH/////AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -808,7 +808,7 @@ namespace Opc.MDIS
         #region Initialization String
         private const string InitializationString =
            "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8VYIkCAgAAAAEAHwAAAE1E" +
-           "SVNWZXJzaW9uVmFyaWFibGVUeXBlSW5zdGFuY2UBAQoFAQEKBQoFAAABAQkF/v///wEB/////wMAAAAV" +
+           "SVNWZXJzaW9uVmFyaWFibGVUeXBlSW5zdGFuY2UBAQoFAQEKBQoFAAABAQkF/////wEB/////wMAAAAV" +
            "YIkKAgAAAAEADAAAAE1ham9yVmVyc2lvbgEBCwUALgA/CwUAAAAD/////wEB/////wAAAAAVYIkKAgAA" +
            "AAEADAAAAE1pbm9yVmVyc2lvbgEBDAUALgA/DAUAAAAD/////wEB/////wAAAAAVYIkKAgAAAAEABQAA" +
            "AEJ1aWxkAQENBQAuAD8NBQAAAAP/////AQH/////AAAAAA==";
@@ -1252,7 +1252,7 @@ namespace Opc.MDIS
     #region MoveMethodState Class
     #if (!OPCUA_EXCLUDE_MoveMethodState)
     /// <summary>
-    /// Stores an instance of the MoveType Method.
+    /// Stores an instance of the MoveMethodType Method.
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -1296,19 +1296,19 @@ namespace Opc.MDIS
 
         #region Initialization String
         private const string InitializationString =
-           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEACAAAAE1v" +
-           "dmVUeXBlAQG+AAAvAQG+AL4AAAABAf////8BAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50cwEB" +
-           "vwAALgBEvwAAAJYFAAAAAQAqAQF6AAAACQAAAERpcmVjdGlvbgEBAwD/////AAAAAAMAAAAAWAAAAFRo" +
-           "ZSBlbnVtZXJhdGlvbiBpbmRpY2F0ZXMgd2hldGhlciB0aGUgY29tbWFuZCBpcyB0byBvcGVuIHRoZSB2" +
-           "YWx2ZSBvciB0byBjbG9zZSB0aGUgdmFsdmUBACoBAYIAAAARAAAAT3ZlcnJpZGVJbnRlcmxvY2sAAf//" +
-           "//8AAAAAAwAAAABaAAAAQm9vbGVhbiBpbmRpY2F0aW5nIGlmIHRoZSBvcGVuIG9yIGNsb3NlIGNvbW1h" +
-           "bmQgc2hvdWxkIG92ZXJyaWRlIGFueSBkZWZlYXQgYWJsZSBpbnRlcmxvY2tzAQAqAQFPAAAAAwAAAFNF" +
-           "TQEBBQD/////AAAAAAMAAAAAMwAAAFRoZSBzZWxlY3Rpb24gb2Ygd2hpY2ggU0VNIHRvIHNlbmQgdGhl" +
-           "IGNvbW1hbmQgdG8uIAEAKgEBcQAAAAkAAABTaWduYXR1cmUAAf////8AAAAAAwAAAABRAAAAQm9vbGVh" +
-           "biBpbmRpY2F0aW5nIGlmIGEgcHJvZmlsZSBzaG91bGQgYmUgZ2VuZXJhdGVkIGJ5IHRoaXMgbW92ZSBj" +
-           "b21tYW5kIHJlcXVlc3QuAQAqAQFlAAAADwAAAFNodXRkb3duUmVxdWVzdAAB/////wAAAAADAAAAAD8A" +
-           "AABCb29sZWFuIGluZGljYXRlcyB0aGF0IHRoaXMgY29tbWFuZCBpcyBhIHNodXRkb3duIG1vdmUgY29t" +
-           "bWFuZC4BACgBAQAAAAEAAAAAAAAAAQH/////AAAAAA==";
+           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEADgAAAE1v" +
+           "dmVNZXRob2RUeXBlAQGoOgAvAQGoOqg6AAABAf////8BAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFyZ3Vt" +
+           "ZW50cwEBqToALgBEqToAAJYFAAAAAQAqAQF6AAAACQAAAERpcmVjdGlvbgEBAwD/////AAAAAAMAAAAA" +
+           "WAAAAFRoZSBlbnVtZXJhdGlvbiBpbmRpY2F0ZXMgd2hldGhlciB0aGUgY29tbWFuZCBpcyB0byBvcGVu" +
+           "IHRoZSB2YWx2ZSBvciB0byBjbG9zZSB0aGUgdmFsdmUBACoBAYIAAAARAAAAT3ZlcnJpZGVJbnRlcmxv" +
+           "Y2sAAf////8AAAAAAwAAAABaAAAAQm9vbGVhbiBpbmRpY2F0aW5nIGlmIHRoZSBvcGVuIG9yIGNsb3Nl" +
+           "IGNvbW1hbmQgc2hvdWxkIG92ZXJyaWRlIGFueSBkZWZlYXQgYWJsZSBpbnRlcmxvY2tzAQAqAQFPAAAA" +
+           "AwAAAFNFTQEBBQD/////AAAAAAMAAAAAMwAAAFRoZSBzZWxlY3Rpb24gb2Ygd2hpY2ggU0VNIHRvIHNl" +
+           "bmQgdGhlIGNvbW1hbmQgdG8uIAEAKgEBcQAAAAkAAABTaWduYXR1cmUAAf////8AAAAAAwAAAABRAAAA" +
+           "Qm9vbGVhbiBpbmRpY2F0aW5nIGlmIGEgcHJvZmlsZSBzaG91bGQgYmUgZ2VuZXJhdGVkIGJ5IHRoaXMg" +
+           "bW92ZSBjb21tYW5kIHJlcXVlc3QuAQAqAQFlAAAADwAAAFNodXRkb3duUmVxdWVzdAAB/////wAAAAAD" +
+           "AAAAAD8AAABCb29sZWFuIGluZGljYXRlcyB0aGF0IHRoaXMgY29tbWFuZCBpcyBhIHNodXRkb3duIG1v" +
+           "dmUgY29tbWFuZC4BACgBAQAAAAEAAAAAAAAAAQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -1386,7 +1386,7 @@ namespace Opc.MDIS
     #region ChokeMoveMethodState Class
     #if (!OPCUA_EXCLUDE_ChokeMoveMethodState)
     /// <summary>
-    /// Stores an instance of the ChokeMoveType Method.
+    /// Stores an instance of the ChokeMoveMethodType Method.
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -1430,15 +1430,15 @@ namespace Opc.MDIS
 
         #region Initialization String
         private const string InitializationString =
-           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEADQAAAENo" +
-           "b2tlTW92ZVR5cGUBAfIBAC8BAfIB8gEAAAEB/////wEAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1l" +
-           "bnRzAQHzAQAuAETzAQAAlgMAAAABACoBAVEAAAAIAAAAUG9zaXRpb24ACv////8AAAAAAwAAAAAyAAAA" +
-           "QSBudW1iZXIgKGluIHByZXJjZW50KSBpbmRpY2F0aW5nIHRoZSBwZXJjZW50IG9wZW4BACoBAYIAAAAR" +
-           "AAAAT3ZlcnJpZGVJbnRlcmxvY2sAAf////8AAAAAAwAAAABaAAAAQm9vbGVhbiBpbmRpY2F0aW5nIGlm" +
-           "IHRoZSBvcGVuIG9yIGNsb3NlIGNvbW1hbmQgc2hvdWxkIG92ZXJyaWRlIGFueSBkZWZlYXQgYWJsZSBp" +
-           "bnRlcmxvY2tzAQAqAQFPAAAAAwAAAFNFTQEBBQD/////AAAAAAMAAAAAMwAAAFRoZSBzZWxlY3Rpb24g" +
-           "b2Ygd2hpY2ggU0VNIHRvIHNlbmQgdGhlIGNvbW1hbmQgdG8uIAEAKAEBAAAAAQAAAAAAAAABAf////8A" +
-           "AAAA";
+           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEAEwAAAENo" +
+           "b2tlTW92ZU1ldGhvZFR5cGUBAao6AC8BAao6qjoAAAEB/////wEAAAAXYKkKAgAAAAAADgAAAElucHV0" +
+           "QXJndW1lbnRzAQGrOgAuAESrOgAAlgMAAAABACoBAVEAAAAIAAAAUG9zaXRpb24ACv////8AAAAAAwAA" +
+           "AAAyAAAAQSBudW1iZXIgKGluIHByZXJjZW50KSBpbmRpY2F0aW5nIHRoZSBwZXJjZW50IG9wZW4BACoB" +
+           "AYIAAAARAAAAT3ZlcnJpZGVJbnRlcmxvY2sAAf////8AAAAAAwAAAABaAAAAQm9vbGVhbiBpbmRpY2F0" +
+           "aW5nIGlmIHRoZSBvcGVuIG9yIGNsb3NlIGNvbW1hbmQgc2hvdWxkIG92ZXJyaWRlIGFueSBkZWZlYXQg" +
+           "YWJsZSBpbnRlcmxvY2tzAQAqAQFPAAAAAwAAAFNFTQEBBQD/////AAAAAAMAAAAAMwAAAFRoZSBzZWxl" +
+           "Y3Rpb24gb2Ygd2hpY2ggU0VNIHRvIHNlbmQgdGhlIGNvbW1hbmQgdG8uIAEAKAEBAAAAAQAAAAAAAAAB" +
+           "Af////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -1510,7 +1510,7 @@ namespace Opc.MDIS
     #region ChokeStepMethodState Class
     #if (!OPCUA_EXCLUDE_ChokeStepMethodState)
     /// <summary>
-    /// Stores an instance of the ChokeStepType Method.
+    /// Stores an instance of the ChokeStepMethodType Method.
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -1554,16 +1554,16 @@ namespace Opc.MDIS
 
         #region Initialization String
         private const string InitializationString =
-           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEADQAAAENo" +
-           "b2tlU3RlcFR5cGUBAfQBAC8BAfQB9AEAAAEB/////wEAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1l" +
-           "bnRzAQH1AQAuAET1AQAAlgQAAAABACoBAVUAAAAJAAAARGlyZWN0aW9uAQG9Av////8AAAAAAwAAAAAz" +
-           "AAAAdHJ1ZSBpcyBvcGVuaW5nIGEgdmFsdmUsIGZhbHNlIGlmIGNsb3NpbmcgdGhlIHZhbHZlAQAqAQFD" +
-           "AAAABQAAAFN0ZXBzAAX/////AAAAAAMAAAAAJwAAAG51bWJlciBvZiBzdGVwcyB0byBvcGVuL2Nsb3Nl" +
-           "IHRoZSB2YWx2ZQEAKgEBggAAABEAAABPdmVycmlkZUludGVybG9jawAB/////wAAAAADAAAAAFoAAABC" +
-           "b29sZWFuIGluZGljYXRpbmcgaWYgdGhlIG9wZW4gb3IgY2xvc2UgY29tbWFuZCBzaG91bGQgb3ZlcnJp" +
-           "ZGUgYW55IGRlZmVhdCBhYmxlIGludGVybG9ja3MBACoBAU8AAAADAAAAU0VNAQEFAP////8AAAAAAwAA" +
-           "AAAzAAAAVGhlIHNlbGVjdGlvbiBvZiB3aGljaCBTRU0gdG8gc2VuZCB0aGUgY29tbWFuZCB0by4gAQAo" +
-           "AQEAAAABAAAAAAAAAAEB/////wAAAAA=";
+           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEAEwAAAENo" +
+           "b2tlU3RlcE1ldGhvZFR5cGUBAaw6AC8BAaw6rDoAAAEB/////wEAAAAXYKkKAgAAAAAADgAAAElucHV0" +
+           "QXJndW1lbnRzAQGtOgAuAEStOgAAlgQAAAABACoBAVUAAAAJAAAARGlyZWN0aW9uAQG9Av////8AAAAA" +
+           "AwAAAAAzAAAAdHJ1ZSBpcyBvcGVuaW5nIGEgdmFsdmUsIGZhbHNlIGlmIGNsb3NpbmcgdGhlIHZhbHZl" +
+           "AQAqAQFDAAAABQAAAFN0ZXBzAAX/////AAAAAAMAAAAAJwAAAG51bWJlciBvZiBzdGVwcyB0byBvcGVu" +
+           "L2Nsb3NlIHRoZSB2YWx2ZQEAKgEBggAAABEAAABPdmVycmlkZUludGVybG9jawAB/////wAAAAADAAAA" +
+           "AFoAAABCb29sZWFuIGluZGljYXRpbmcgaWYgdGhlIG9wZW4gb3IgY2xvc2UgY29tbWFuZCBzaG91bGQg" +
+           "b3ZlcnJpZGUgYW55IGRlZmVhdCBhYmxlIGludGVybG9ja3MBACoBAU8AAAADAAAAU0VNAQEFAP////8A" +
+           "AAAAAwAAAAAzAAAAVGhlIHNlbGVjdGlvbiBvZiB3aGljaCBTRU0gdG8gc2VuZCB0aGUgY29tbWFuZCB0" +
+           "by4gAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -1638,7 +1638,7 @@ namespace Opc.MDIS
     #region ChokeSetCalculatedPositionMethodState Class
     #if (!OPCUA_EXCLUDE_ChokeSetCalculatedPositionMethodState)
     /// <summary>
-    /// Stores an instance of the ChokeSetCalculatedPositionType Method.
+    /// Stores an instance of the ChokeSetCalculatedPositionMethodType Method.
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -1682,11 +1682,11 @@ namespace Opc.MDIS
 
         #region Initialization String
         private const string InitializationString =
-           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEAHgAAAENo" +
-           "b2tlU2V0Q2FsY3VsYXRlZFBvc2l0aW9uVHlwZQEBAgUALwEBAgUCBQAAAQH/////AQAAABdgqQoCAAAA" +
-           "AAAOAAAASW5wdXRBcmd1bWVudHMBAQMFAC4ARAMFAACWAQAAAAEAKgEBUAAAAAgAAABQb3NpdGlvbgAK" +
-           "/////wAAAAADAAAAADEAAABBIG51bWJlciAoaW4gcGVyY2VudCkgaW5kaWNhdGluZyB0aGUgcGVyY2Vu" +
-           "dCBvcGVuAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAA=";
+           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEAJAAAAENo" +
+           "b2tlU2V0Q2FsY3VsYXRlZFBvc2l0aW9uTWV0aG9kVHlwZQEBrzoALwEBrzqvOgAAAQH/////AQAAABdg" +
+           "qQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAbA6AC4ARLA6AACWAQAAAAEAKgEBUAAAAAgAAABQb3Np" +
+           "dGlvbgAK/////wAAAAADAAAAADEAAABBIG51bWJlciAoaW4gcGVyY2VudCkgaW5kaWNhdGluZyB0aGUg" +
+           "cGVyY2VudCBvcGVuAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -1752,7 +1752,7 @@ namespace Opc.MDIS
     #region WriteStateMethodState Class
     #if (!OPCUA_EXCLUDE_WriteStateMethodState)
     /// <summary>
-    /// Stores an instance of the WriteStateType Method.
+    /// Stores an instance of the WriteStateMethodType Method.
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -1796,11 +1796,11 @@ namespace Opc.MDIS
 
         #region Initialization String
         private const string InitializationString =
-           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEADgAAAFdy" +
-           "aXRlU3RhdGVUeXBlAQHIBAAvAQHIBMgEAAABAf////8BAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFyZ3Vt" +
-           "ZW50cwEByQQALgBEyQQAAJYBAAAAAQAqAQFNAAAABQAAAFN0YXRlAAH/////AAAAAAMAAAAAMQAAAEJv" +
-           "b2xlYW4gc3RhdGUgdGhhdCBpcyBiZWluZyB3cml0dGVuIHRvIHRoZSBvYmplY3QBACgBAQAAAAEAAAAA" +
-           "AAAAAQH/////AAAAAA==";
+           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEAFAAAAFdy" +
+           "aXRlU3RhdGVNZXRob2RUeXBlAQGxOgAvAQGxOrE6AAABAf////8BAAAAF2CpCgIAAAAAAA4AAABJbnB1" +
+           "dEFyZ3VtZW50cwEBsjoALgBEsjoAAJYBAAAAAQAqAQFNAAAABQAAAFN0YXRlAAH/////AAAAAAMAAAAA" +
+           "MQAAAEJvb2xlYW4gc3RhdGUgdGhhdCBpcyBiZWluZyB3cml0dGVuIHRvIHRoZSBvYmplY3QBACgBAQAA" +
+           "AAEAAAAAAAAAAQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -1866,7 +1866,7 @@ namespace Opc.MDIS
     #region WriteValueMethodState Class
     #if (!OPCUA_EXCLUDE_WriteValueMethodState)
     /// <summary>
-    /// Stores an instance of the WriteValueType Method.
+    /// Stores an instance of the WriteValueMethodType Method.
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -1910,11 +1910,11 @@ namespace Opc.MDIS
 
         #region Initialization String
         private const string InitializationString =
-           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEADgAAAFdy" +
-           "aXRlVmFsdWVUeXBlAQHKBAAvAQHKBMoEAAABAf////8BAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFyZ3Vt" +
-           "ZW50cwEBywQALgBEywQAAJYBAAAAAQAqAQFMAAAABQAAAFN0YXRlAAf/////AAAAAAMAAAAAMAAAAFVu" +
-           "aXQzMiBzdGF0ZSB0aGF0IGlzIGJlaW5nIHdyaXR0ZW4gdG8gdGhlIG9iamVjdAEAKAEBAAAAAQAAAAAA" +
-           "AAABAf////8AAAAA";
+           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEAFAAAAFdy" +
+           "aXRlVmFsdWVNZXRob2RUeXBlAQGzOgAvAQGzOrM6AAABAf////8BAAAAF2CpCgIAAAAAAA4AAABJbnB1" +
+           "dEFyZ3VtZW50cwEBtDoALgBEtDoAAJYBAAAAAQAqAQFMAAAABQAAAFN0YXRlAAf/////AAAAAAMAAAAA" +
+           "MAAAAFVuaXQzMiBzdGF0ZSB0aGF0IGlzIGJlaW5nIHdyaXR0ZW4gdG8gdGhlIG9iamVjdAEAKAEBAAAA" +
+           "AQAAAAAAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -1980,7 +1980,7 @@ namespace Opc.MDIS
     #region WriteInstrumentValueMethodState Class
     #if (!OPCUA_EXCLUDE_WriteInstrumentValueMethodState)
     /// <summary>
-    /// Stores an instance of the WriteInstrumentValueType Method.
+    /// Stores an instance of the WriteInstrumentValueMethodType Method.
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -2024,11 +2024,11 @@ namespace Opc.MDIS
 
         #region Initialization String
         private const string InitializationString =
-           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEAGAAAAFdy" +
-           "aXRlSW5zdHJ1bWVudFZhbHVlVHlwZQEBzAQALwEBzATMBAAAAQH/////AQAAABdgqQoCAAAAAAAOAAAA" +
-           "SW5wdXRBcmd1bWVudHMBAc0EAC4ARM0EAACWAQAAAAEAKgEBSwAAAAUAAABWYWx1ZQAK/////wAAAAAD" +
-           "AAAAAC8AAABGbG9hdCB2YWx1ZSB0aGF0IGlzIGJlaW5nIHdyaXR0ZW4gdG8gdGhlIG9iamVjdAEAKAEB" +
-           "AAAAAQAAAAAAAAABAf////8AAAAA";
+           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEAHgAAAFdy" +
+           "aXRlSW5zdHJ1bWVudFZhbHVlTWV0aG9kVHlwZQEBtToALwEBtTq1OgAAAQH/////AQAAABdgqQoCAAAA" +
+           "AAAOAAAASW5wdXRBcmd1bWVudHMBAbY6AC4ARLY6AACWAQAAAAEAKgEBSwAAAAUAAABWYWx1ZQAK////" +
+           "/wAAAAADAAAAAC8AAABGbG9hdCB2YWx1ZSB0aGF0IGlzIGJlaW5nIHdyaXR0ZW4gdG8gdGhlIG9iamVj" +
+           "dAEAKAEBAAAAAQAAAAAAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -5273,7 +5273,7 @@ namespace Opc.MDIS
     #region SetTimeMethodState Class
     #if (!OPCUA_EXCLUDE_SetTimeMethodState)
     /// <summary>
-    /// Stores an instance of the SetTimeType Method.
+    /// Stores an instance of the SetTimeMethodType Method.
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
@@ -5317,11 +5317,11 @@ namespace Opc.MDIS
 
         #region Initialization String
         private const string InitializationString =
-           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEACwAAAFNl" +
-           "dFRpbWVUeXBlAQG6BQAvAQG6BboFAAABAf////8BAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFyZ3VtZW50" +
-           "cwEBuwUALgBEuwUAAJYBAAAAAQAqAQFnAAAACgAAAFRhcmdldFRpbWUBACYB/////wAAAAADAAAAAEQA" +
-           "AABUaGUgVVRDIFRpbWUgdGhhdCB0aGUgU2VydmVyIHNoYWxsIHVzZSB0byB1cGRhdGUgaXRzIGludGVy" +
-           "bmFsIGNsb2NrLgEAKAEBAAAAAQAAAAAAAAABAf////8AAAAA";
+           "AQAAACAAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvTURJU/////8EYYIKBAAAAAEAEQAAAFNl" +
+           "dFRpbWVNZXRob2RUeXBlAQG3OgAvAQG3Orc6AAABAf////8BAAAAF2CpCgIAAAAAAA4AAABJbnB1dEFy" +
+           "Z3VtZW50cwEBuDoALgBEuDoAAJYBAAAAAQAqAQFnAAAACgAAAFRhcmdldFRpbWUBACYB/////wAAAAAD" +
+           "AAAAAEQAAABUaGUgVVRDIFRpbWUgdGhhdCB0aGUgU2VydmVyIHNoYWxsIHVzZSB0byB1cGRhdGUgaXRz" +
+           "IGludGVybmFsIGNsb2NrLgEAKAEBAAAAAQAAAAAAAAABAf////8AAAAA";
         #endregion
         #endif
         #endregion

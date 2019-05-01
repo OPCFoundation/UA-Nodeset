@@ -96,54 +96,9 @@ namespace Opc.MDIS
     public static partial class Methods
     {
         /// <summary>
-        /// The identifier for the EnableDisableType Method.
-        /// </summary>
-        public const uint EnableDisableType = 192;
-
-        /// <summary>
         /// The identifier for the MDISBaseObjectType_EnableDisable Method.
         /// </summary>
         public const uint MDISBaseObjectType_EnableDisable = 195;
-
-        /// <summary>
-        /// The identifier for the MoveType Method.
-        /// </summary>
-        public const uint MoveType = 190;
-
-        /// <summary>
-        /// The identifier for the ChokeMoveType Method.
-        /// </summary>
-        public const uint ChokeMoveType = 498;
-
-        /// <summary>
-        /// The identifier for the ChokeStepType Method.
-        /// </summary>
-        public const uint ChokeStepType = 500;
-
-        /// <summary>
-        /// The identifier for the ChokeAbortType Method.
-        /// </summary>
-        public const uint ChokeAbortType = 502;
-
-        /// <summary>
-        /// The identifier for the ChokeSetCalculatedPositionType Method.
-        /// </summary>
-        public const uint ChokeSetCalculatedPositionType = 1282;
-
-        /// <summary>
-        /// The identifier for the WriteStateType Method.
-        /// </summary>
-        public const uint WriteStateType = 1224;
-
-        /// <summary>
-        /// The identifier for the WriteValueType Method.
-        /// </summary>
-        public const uint WriteValueType = 1226;
-
-        /// <summary>
-        /// The identifier for the WriteInstrumentValueType Method.
-        /// </summary>
-        public const uint WriteInstrumentValueType = 1228;
 
         /// <summary>
         /// The identifier for the MDISValveObjectType_Move Method.
@@ -251,11 +206,6 @@ namespace Opc.MDIS
         public const uint MDISAggregateObjectType_ChokePlaceholder_SetCalculatedPosition = 1460;
 
         /// <summary>
-        /// The identifier for the SetTimeType Method.
-        /// </summary>
-        public const uint SetTimeType = 1466;
-
-        /// <summary>
         /// The identifier for the MDISTimeSyncObjectType_SetTime Method.
         /// </summary>
         public const uint MDISTimeSyncObjectType_SetTime = 1469;
@@ -264,6 +214,11 @@ namespace Opc.MDIS
         /// The identifier for the MDISInformationObjectType_TimeSynchronization_SetTime Method.
         /// </summary>
         public const uint MDISInformationObjectType_TimeSynchronization_SetTime = 1473;
+
+        /// <summary>
+        /// The identifier for the MDISInformation_TimeSynchronization_SetTime Method.
+        /// </summary>
+        public const uint MDISInformation_TimeSynchronization_SetTime = 15007;
     }
     #endregion
 
@@ -286,19 +241,19 @@ namespace Opc.MDIS
         public const uint MDISAggregateObjectType_InstrumentPlaceholder = 1324;
 
         /// <summary>
-        /// The identifier for the MDISAggregateObjectType_DigitalPlaceholder Object.
-        /// </summary>
-        public const uint MDISAggregateObjectType_DigitalPlaceholder = 1347;
-
-        /// <summary>
-        /// The identifier for the MDISAggregateObjectType_DiscretePlaceholder Object.
-        /// </summary>
-        public const uint MDISAggregateObjectType_DiscretePlaceholder = 1357;
-
-        /// <summary>
         /// The identifier for the MDISAggregateObjectType_InstrumentOutPlaceholder Object.
         /// </summary>
         public const uint MDISAggregateObjectType_InstrumentOutPlaceholder = 1367;
+
+        /// <summary>
+        /// The identifier for the MDISAggregateObjectType_DigitalInstrumentPlaceholder Object.
+        /// </summary>
+        public const uint MDISAggregateObjectType_DigitalInstrumentPlaceholder = 1347;
+
+        /// <summary>
+        /// The identifier for the MDISAggregateObjectType_DiscreteInstrumentPlaceholder Object.
+        /// </summary>
+        public const uint MDISAggregateObjectType_DiscreteInstrumentPlaceholder = 1357;
 
         /// <summary>
         /// The identifier for the MDISAggregateObjectType_DigitalOutPlaceholder Object.
@@ -329,6 +284,21 @@ namespace Opc.MDIS
         /// The identifier for the MDISInformationObjectType_Signatures Object.
         /// </summary>
         public const uint MDISInformationObjectType_Signatures = 1475;
+
+        /// <summary>
+        /// The identifier for the MDISInformation Object.
+        /// </summary>
+        public const uint MDISInformation = 15005;
+
+        /// <summary>
+        /// The identifier for the MDISInformation_TimeSynchronization Object.
+        /// </summary>
+        public const uint MDISInformation_TimeSynchronization = 15006;
+
+        /// <summary>
+        /// The identifier for the MDISInformation_Signatures Object.
+        /// </summary>
+        public const uint MDISInformation_Signatures = 15009;
 
         /// <summary>
         /// The identifier for the MDISVersionDataType_Encoding_DefaultBinary Object.
@@ -451,11 +421,6 @@ namespace Opc.MDIS
     public static partial class Variables
     {
         /// <summary>
-        /// The identifier for the EnableDisableType_InputArguments Variable.
-        /// </summary>
-        public const uint EnableDisableType_InputArguments = 193;
-
-        /// <summary>
         /// The identifier for the MDISBaseObjectType_Fault Variable.
         /// </summary>
         public const uint MDISBaseObjectType_Fault = 489;
@@ -539,41 +504,6 @@ namespace Opc.MDIS
         /// The identifier for the MDISVersionVariableType_Build Variable.
         /// </summary>
         public const uint MDISVersionVariableType_Build = 1293;
-
-        /// <summary>
-        /// The identifier for the MoveType_InputArguments Variable.
-        /// </summary>
-        public const uint MoveType_InputArguments = 191;
-
-        /// <summary>
-        /// The identifier for the ChokeMoveType_InputArguments Variable.
-        /// </summary>
-        public const uint ChokeMoveType_InputArguments = 499;
-
-        /// <summary>
-        /// The identifier for the ChokeStepType_InputArguments Variable.
-        /// </summary>
-        public const uint ChokeStepType_InputArguments = 501;
-
-        /// <summary>
-        /// The identifier for the ChokeSetCalculatedPositionType_InputArguments Variable.
-        /// </summary>
-        public const uint ChokeSetCalculatedPositionType_InputArguments = 1283;
-
-        /// <summary>
-        /// The identifier for the WriteStateType_InputArguments Variable.
-        /// </summary>
-        public const uint WriteStateType_InputArguments = 1225;
-
-        /// <summary>
-        /// The identifier for the WriteValueType_InputArguments Variable.
-        /// </summary>
-        public const uint WriteValueType_InputArguments = 1227;
-
-        /// <summary>
-        /// The identifier for the WriteInstrumentValueType_InputArguments Variable.
-        /// </summary>
-        public const uint WriteInstrumentValueType_InputArguments = 1229;
 
         /// <summary>
         /// The identifier for the MDISValveObjectType_EnableDisable_InputArguments Variable.
@@ -941,36 +871,6 @@ namespace Opc.MDIS
         public const uint MDISAggregateObjectType_InstrumentPlaceholder_ProcessVariable_EngineeringUnits = 1338;
 
         /// <summary>
-        /// The identifier for the MDISAggregateObjectType_DigitalPlaceholder_Fault Variable.
-        /// </summary>
-        public const uint MDISAggregateObjectType_DigitalPlaceholder_Fault = 1348;
-
-        /// <summary>
-        /// The identifier for the MDISAggregateObjectType_DigitalPlaceholder_EnableDisable_InputArguments Variable.
-        /// </summary>
-        public const uint MDISAggregateObjectType_DigitalPlaceholder_EnableDisable_InputArguments = 1354;
-
-        /// <summary>
-        /// The identifier for the MDISAggregateObjectType_DigitalPlaceholder_State Variable.
-        /// </summary>
-        public const uint MDISAggregateObjectType_DigitalPlaceholder_State = 1356;
-
-        /// <summary>
-        /// The identifier for the MDISAggregateObjectType_DiscretePlaceholder_Fault Variable.
-        /// </summary>
-        public const uint MDISAggregateObjectType_DiscretePlaceholder_Fault = 1358;
-
-        /// <summary>
-        /// The identifier for the MDISAggregateObjectType_DiscretePlaceholder_EnableDisable_InputArguments Variable.
-        /// </summary>
-        public const uint MDISAggregateObjectType_DiscretePlaceholder_EnableDisable_InputArguments = 1364;
-
-        /// <summary>
-        /// The identifier for the MDISAggregateObjectType_DiscretePlaceholder_State Variable.
-        /// </summary>
-        public const uint MDISAggregateObjectType_DiscretePlaceholder_State = 1366;
-
-        /// <summary>
         /// The identifier for the MDISAggregateObjectType_InstrumentOutPlaceholder_Fault Variable.
         /// </summary>
         public const uint MDISAggregateObjectType_InstrumentOutPlaceholder_Fault = 1368;
@@ -999,6 +899,36 @@ namespace Opc.MDIS
         /// The identifier for the MDISAggregateObjectType_InstrumentOutPlaceholder_WriteValue_InputArguments Variable.
         /// </summary>
         public const uint MDISAggregateObjectType_InstrumentOutPlaceholder_WriteValue_InputArguments = 1391;
+
+        /// <summary>
+        /// The identifier for the MDISAggregateObjectType_DigitalInstrumentPlaceholder_Fault Variable.
+        /// </summary>
+        public const uint MDISAggregateObjectType_DigitalInstrumentPlaceholder_Fault = 1348;
+
+        /// <summary>
+        /// The identifier for the MDISAggregateObjectType_DigitalInstrumentPlaceholder_EnableDisable_InputArguments Variable.
+        /// </summary>
+        public const uint MDISAggregateObjectType_DigitalInstrumentPlaceholder_EnableDisable_InputArguments = 1354;
+
+        /// <summary>
+        /// The identifier for the MDISAggregateObjectType_DigitalInstrumentPlaceholder_State Variable.
+        /// </summary>
+        public const uint MDISAggregateObjectType_DigitalInstrumentPlaceholder_State = 1356;
+
+        /// <summary>
+        /// The identifier for the MDISAggregateObjectType_DiscreteInstrumentPlaceholder_Fault Variable.
+        /// </summary>
+        public const uint MDISAggregateObjectType_DiscreteInstrumentPlaceholder_Fault = 1358;
+
+        /// <summary>
+        /// The identifier for the MDISAggregateObjectType_DiscreteInstrumentPlaceholder_EnableDisable_InputArguments Variable.
+        /// </summary>
+        public const uint MDISAggregateObjectType_DiscreteInstrumentPlaceholder_EnableDisable_InputArguments = 1364;
+
+        /// <summary>
+        /// The identifier for the MDISAggregateObjectType_DiscreteInstrumentPlaceholder_State Variable.
+        /// </summary>
+        public const uint MDISAggregateObjectType_DiscreteInstrumentPlaceholder_State = 1366;
 
         /// <summary>
         /// The identifier for the MDISAggregateObjectType_DigitalOutPlaceholder_Fault Variable.
@@ -1101,11 +1031,6 @@ namespace Opc.MDIS
         public const uint MDISAggregateObjectType_InterlockPlaceholder = 1465;
 
         /// <summary>
-        /// The identifier for the SetTimeType_InputArguments Variable.
-        /// </summary>
-        public const uint SetTimeType_InputArguments = 1467;
-
-        /// <summary>
         /// The identifier for the MDISTimeSyncObjectType_SetTime_InputArguments Variable.
         /// </summary>
         public const uint MDISTimeSyncObjectType_SetTime_InputArguments = 1470;
@@ -1134,6 +1059,31 @@ namespace Opc.MDIS
         /// The identifier for the MDISInformationObjectType_MDISVersion_Build Variable.
         /// </summary>
         public const uint MDISInformationObjectType_MDISVersion_Build = 1479;
+
+        /// <summary>
+        /// The identifier for the MDISInformation_TimeSynchronization_SetTime_InputArguments Variable.
+        /// </summary>
+        public const uint MDISInformation_TimeSynchronization_SetTime_InputArguments = 15008;
+
+        /// <summary>
+        /// The identifier for the MDISInformation_MDISVersion Variable.
+        /// </summary>
+        public const uint MDISInformation_MDISVersion = 15010;
+
+        /// <summary>
+        /// The identifier for the MDISInformation_MDISVersion_MajorVersion Variable.
+        /// </summary>
+        public const uint MDISInformation_MDISVersion_MajorVersion = 15011;
+
+        /// <summary>
+        /// The identifier for the MDISInformation_MDISVersion_MinorVersion Variable.
+        /// </summary>
+        public const uint MDISInformation_MDISVersion_MinorVersion = 15012;
+
+        /// <summary>
+        /// The identifier for the MDISInformation_MDISVersion_Build Variable.
+        /// </summary>
+        public const uint MDISInformation_MDISVersion_Build = 15013;
 
         /// <summary>
         /// The identifier for the MDIS_BinarySchema Variable.
@@ -1256,54 +1206,9 @@ namespace Opc.MDIS
     public static partial class MethodIds
     {
         /// <summary>
-        /// The identifier for the EnableDisableType Method.
-        /// </summary>
-        public static readonly ExpandedNodeId EnableDisableType = new ExpandedNodeId(Opc.MDIS.Methods.EnableDisableType, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
         /// The identifier for the MDISBaseObjectType_EnableDisable Method.
         /// </summary>
         public static readonly ExpandedNodeId MDISBaseObjectType_EnableDisable = new ExpandedNodeId(Opc.MDIS.Methods.MDISBaseObjectType_EnableDisable, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
-        /// The identifier for the MoveType Method.
-        /// </summary>
-        public static readonly ExpandedNodeId MoveType = new ExpandedNodeId(Opc.MDIS.Methods.MoveType, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
-        /// The identifier for the ChokeMoveType Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChokeMoveType = new ExpandedNodeId(Opc.MDIS.Methods.ChokeMoveType, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
-        /// The identifier for the ChokeStepType Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChokeStepType = new ExpandedNodeId(Opc.MDIS.Methods.ChokeStepType, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
-        /// The identifier for the ChokeAbortType Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChokeAbortType = new ExpandedNodeId(Opc.MDIS.Methods.ChokeAbortType, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
-        /// The identifier for the ChokeSetCalculatedPositionType Method.
-        /// </summary>
-        public static readonly ExpandedNodeId ChokeSetCalculatedPositionType = new ExpandedNodeId(Opc.MDIS.Methods.ChokeSetCalculatedPositionType, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
-        /// The identifier for the WriteStateType Method.
-        /// </summary>
-        public static readonly ExpandedNodeId WriteStateType = new ExpandedNodeId(Opc.MDIS.Methods.WriteStateType, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
-        /// The identifier for the WriteValueType Method.
-        /// </summary>
-        public static readonly ExpandedNodeId WriteValueType = new ExpandedNodeId(Opc.MDIS.Methods.WriteValueType, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
-        /// The identifier for the WriteInstrumentValueType Method.
-        /// </summary>
-        public static readonly ExpandedNodeId WriteInstrumentValueType = new ExpandedNodeId(Opc.MDIS.Methods.WriteInstrumentValueType, Opc.MDIS.Namespaces.MDIS);
 
         /// <summary>
         /// The identifier for the MDISValveObjectType_Move Method.
@@ -1411,11 +1316,6 @@ namespace Opc.MDIS
         public static readonly ExpandedNodeId MDISAggregateObjectType_ChokePlaceholder_SetCalculatedPosition = new ExpandedNodeId(Opc.MDIS.Methods.MDISAggregateObjectType_ChokePlaceholder_SetCalculatedPosition, Opc.MDIS.Namespaces.MDIS);
 
         /// <summary>
-        /// The identifier for the SetTimeType Method.
-        /// </summary>
-        public static readonly ExpandedNodeId SetTimeType = new ExpandedNodeId(Opc.MDIS.Methods.SetTimeType, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
         /// The identifier for the MDISTimeSyncObjectType_SetTime Method.
         /// </summary>
         public static readonly ExpandedNodeId MDISTimeSyncObjectType_SetTime = new ExpandedNodeId(Opc.MDIS.Methods.MDISTimeSyncObjectType_SetTime, Opc.MDIS.Namespaces.MDIS);
@@ -1424,6 +1324,11 @@ namespace Opc.MDIS
         /// The identifier for the MDISInformationObjectType_TimeSynchronization_SetTime Method.
         /// </summary>
         public static readonly ExpandedNodeId MDISInformationObjectType_TimeSynchronization_SetTime = new ExpandedNodeId(Opc.MDIS.Methods.MDISInformationObjectType_TimeSynchronization_SetTime, Opc.MDIS.Namespaces.MDIS);
+
+        /// <summary>
+        /// The identifier for the MDISInformation_TimeSynchronization_SetTime Method.
+        /// </summary>
+        public static readonly ExpandedNodeId MDISInformation_TimeSynchronization_SetTime = new ExpandedNodeId(Opc.MDIS.Methods.MDISInformation_TimeSynchronization_SetTime, Opc.MDIS.Namespaces.MDIS);
     }
     #endregion
 
@@ -1446,19 +1351,19 @@ namespace Opc.MDIS
         public static readonly ExpandedNodeId MDISAggregateObjectType_InstrumentPlaceholder = new ExpandedNodeId(Opc.MDIS.Objects.MDISAggregateObjectType_InstrumentPlaceholder, Opc.MDIS.Namespaces.MDIS);
 
         /// <summary>
-        /// The identifier for the MDISAggregateObjectType_DigitalPlaceholder Object.
-        /// </summary>
-        public static readonly ExpandedNodeId MDISAggregateObjectType_DigitalPlaceholder = new ExpandedNodeId(Opc.MDIS.Objects.MDISAggregateObjectType_DigitalPlaceholder, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
-        /// The identifier for the MDISAggregateObjectType_DiscretePlaceholder Object.
-        /// </summary>
-        public static readonly ExpandedNodeId MDISAggregateObjectType_DiscretePlaceholder = new ExpandedNodeId(Opc.MDIS.Objects.MDISAggregateObjectType_DiscretePlaceholder, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
         /// The identifier for the MDISAggregateObjectType_InstrumentOutPlaceholder Object.
         /// </summary>
         public static readonly ExpandedNodeId MDISAggregateObjectType_InstrumentOutPlaceholder = new ExpandedNodeId(Opc.MDIS.Objects.MDISAggregateObjectType_InstrumentOutPlaceholder, Opc.MDIS.Namespaces.MDIS);
+
+        /// <summary>
+        /// The identifier for the MDISAggregateObjectType_DigitalInstrumentPlaceholder Object.
+        /// </summary>
+        public static readonly ExpandedNodeId MDISAggregateObjectType_DigitalInstrumentPlaceholder = new ExpandedNodeId(Opc.MDIS.Objects.MDISAggregateObjectType_DigitalInstrumentPlaceholder, Opc.MDIS.Namespaces.MDIS);
+
+        /// <summary>
+        /// The identifier for the MDISAggregateObjectType_DiscreteInstrumentPlaceholder Object.
+        /// </summary>
+        public static readonly ExpandedNodeId MDISAggregateObjectType_DiscreteInstrumentPlaceholder = new ExpandedNodeId(Opc.MDIS.Objects.MDISAggregateObjectType_DiscreteInstrumentPlaceholder, Opc.MDIS.Namespaces.MDIS);
 
         /// <summary>
         /// The identifier for the MDISAggregateObjectType_DigitalOutPlaceholder Object.
@@ -1489,6 +1394,21 @@ namespace Opc.MDIS
         /// The identifier for the MDISInformationObjectType_Signatures Object.
         /// </summary>
         public static readonly ExpandedNodeId MDISInformationObjectType_Signatures = new ExpandedNodeId(Opc.MDIS.Objects.MDISInformationObjectType_Signatures, Opc.MDIS.Namespaces.MDIS);
+
+        /// <summary>
+        /// The identifier for the MDISInformation Object.
+        /// </summary>
+        public static readonly ExpandedNodeId MDISInformation = new ExpandedNodeId(Opc.MDIS.Objects.MDISInformation, Opc.MDIS.Namespaces.MDIS);
+
+        /// <summary>
+        /// The identifier for the MDISInformation_TimeSynchronization Object.
+        /// </summary>
+        public static readonly ExpandedNodeId MDISInformation_TimeSynchronization = new ExpandedNodeId(Opc.MDIS.Objects.MDISInformation_TimeSynchronization, Opc.MDIS.Namespaces.MDIS);
+
+        /// <summary>
+        /// The identifier for the MDISInformation_Signatures Object.
+        /// </summary>
+        public static readonly ExpandedNodeId MDISInformation_Signatures = new ExpandedNodeId(Opc.MDIS.Objects.MDISInformation_Signatures, Opc.MDIS.Namespaces.MDIS);
 
         /// <summary>
         /// The identifier for the MDISVersionDataType_Encoding_DefaultBinary Object.
@@ -1611,11 +1531,6 @@ namespace Opc.MDIS
     public static partial class VariableIds
     {
         /// <summary>
-        /// The identifier for the EnableDisableType_InputArguments Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId EnableDisableType_InputArguments = new ExpandedNodeId(Opc.MDIS.Variables.EnableDisableType_InputArguments, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
         /// The identifier for the MDISBaseObjectType_Fault Variable.
         /// </summary>
         public static readonly ExpandedNodeId MDISBaseObjectType_Fault = new ExpandedNodeId(Opc.MDIS.Variables.MDISBaseObjectType_Fault, Opc.MDIS.Namespaces.MDIS);
@@ -1699,41 +1614,6 @@ namespace Opc.MDIS
         /// The identifier for the MDISVersionVariableType_Build Variable.
         /// </summary>
         public static readonly ExpandedNodeId MDISVersionVariableType_Build = new ExpandedNodeId(Opc.MDIS.Variables.MDISVersionVariableType_Build, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
-        /// The identifier for the MoveType_InputArguments Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId MoveType_InputArguments = new ExpandedNodeId(Opc.MDIS.Variables.MoveType_InputArguments, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
-        /// The identifier for the ChokeMoveType_InputArguments Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ChokeMoveType_InputArguments = new ExpandedNodeId(Opc.MDIS.Variables.ChokeMoveType_InputArguments, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
-        /// The identifier for the ChokeStepType_InputArguments Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ChokeStepType_InputArguments = new ExpandedNodeId(Opc.MDIS.Variables.ChokeStepType_InputArguments, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
-        /// The identifier for the ChokeSetCalculatedPositionType_InputArguments Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ChokeSetCalculatedPositionType_InputArguments = new ExpandedNodeId(Opc.MDIS.Variables.ChokeSetCalculatedPositionType_InputArguments, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
-        /// The identifier for the WriteStateType_InputArguments Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId WriteStateType_InputArguments = new ExpandedNodeId(Opc.MDIS.Variables.WriteStateType_InputArguments, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
-        /// The identifier for the WriteValueType_InputArguments Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId WriteValueType_InputArguments = new ExpandedNodeId(Opc.MDIS.Variables.WriteValueType_InputArguments, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
-        /// The identifier for the WriteInstrumentValueType_InputArguments Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId WriteInstrumentValueType_InputArguments = new ExpandedNodeId(Opc.MDIS.Variables.WriteInstrumentValueType_InputArguments, Opc.MDIS.Namespaces.MDIS);
 
         /// <summary>
         /// The identifier for the MDISValveObjectType_EnableDisable_InputArguments Variable.
@@ -2101,36 +1981,6 @@ namespace Opc.MDIS
         public static readonly ExpandedNodeId MDISAggregateObjectType_InstrumentPlaceholder_ProcessVariable_EngineeringUnits = new ExpandedNodeId(Opc.MDIS.Variables.MDISAggregateObjectType_InstrumentPlaceholder_ProcessVariable_EngineeringUnits, Opc.MDIS.Namespaces.MDIS);
 
         /// <summary>
-        /// The identifier for the MDISAggregateObjectType_DigitalPlaceholder_Fault Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId MDISAggregateObjectType_DigitalPlaceholder_Fault = new ExpandedNodeId(Opc.MDIS.Variables.MDISAggregateObjectType_DigitalPlaceholder_Fault, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
-        /// The identifier for the MDISAggregateObjectType_DigitalPlaceholder_EnableDisable_InputArguments Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId MDISAggregateObjectType_DigitalPlaceholder_EnableDisable_InputArguments = new ExpandedNodeId(Opc.MDIS.Variables.MDISAggregateObjectType_DigitalPlaceholder_EnableDisable_InputArguments, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
-        /// The identifier for the MDISAggregateObjectType_DigitalPlaceholder_State Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId MDISAggregateObjectType_DigitalPlaceholder_State = new ExpandedNodeId(Opc.MDIS.Variables.MDISAggregateObjectType_DigitalPlaceholder_State, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
-        /// The identifier for the MDISAggregateObjectType_DiscretePlaceholder_Fault Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId MDISAggregateObjectType_DiscretePlaceholder_Fault = new ExpandedNodeId(Opc.MDIS.Variables.MDISAggregateObjectType_DiscretePlaceholder_Fault, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
-        /// The identifier for the MDISAggregateObjectType_DiscretePlaceholder_EnableDisable_InputArguments Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId MDISAggregateObjectType_DiscretePlaceholder_EnableDisable_InputArguments = new ExpandedNodeId(Opc.MDIS.Variables.MDISAggregateObjectType_DiscretePlaceholder_EnableDisable_InputArguments, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
-        /// The identifier for the MDISAggregateObjectType_DiscretePlaceholder_State Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId MDISAggregateObjectType_DiscretePlaceholder_State = new ExpandedNodeId(Opc.MDIS.Variables.MDISAggregateObjectType_DiscretePlaceholder_State, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
         /// The identifier for the MDISAggregateObjectType_InstrumentOutPlaceholder_Fault Variable.
         /// </summary>
         public static readonly ExpandedNodeId MDISAggregateObjectType_InstrumentOutPlaceholder_Fault = new ExpandedNodeId(Opc.MDIS.Variables.MDISAggregateObjectType_InstrumentOutPlaceholder_Fault, Opc.MDIS.Namespaces.MDIS);
@@ -2159,6 +2009,36 @@ namespace Opc.MDIS
         /// The identifier for the MDISAggregateObjectType_InstrumentOutPlaceholder_WriteValue_InputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId MDISAggregateObjectType_InstrumentOutPlaceholder_WriteValue_InputArguments = new ExpandedNodeId(Opc.MDIS.Variables.MDISAggregateObjectType_InstrumentOutPlaceholder_WriteValue_InputArguments, Opc.MDIS.Namespaces.MDIS);
+
+        /// <summary>
+        /// The identifier for the MDISAggregateObjectType_DigitalInstrumentPlaceholder_Fault Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId MDISAggregateObjectType_DigitalInstrumentPlaceholder_Fault = new ExpandedNodeId(Opc.MDIS.Variables.MDISAggregateObjectType_DigitalInstrumentPlaceholder_Fault, Opc.MDIS.Namespaces.MDIS);
+
+        /// <summary>
+        /// The identifier for the MDISAggregateObjectType_DigitalInstrumentPlaceholder_EnableDisable_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId MDISAggregateObjectType_DigitalInstrumentPlaceholder_EnableDisable_InputArguments = new ExpandedNodeId(Opc.MDIS.Variables.MDISAggregateObjectType_DigitalInstrumentPlaceholder_EnableDisable_InputArguments, Opc.MDIS.Namespaces.MDIS);
+
+        /// <summary>
+        /// The identifier for the MDISAggregateObjectType_DigitalInstrumentPlaceholder_State Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId MDISAggregateObjectType_DigitalInstrumentPlaceholder_State = new ExpandedNodeId(Opc.MDIS.Variables.MDISAggregateObjectType_DigitalInstrumentPlaceholder_State, Opc.MDIS.Namespaces.MDIS);
+
+        /// <summary>
+        /// The identifier for the MDISAggregateObjectType_DiscreteInstrumentPlaceholder_Fault Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId MDISAggregateObjectType_DiscreteInstrumentPlaceholder_Fault = new ExpandedNodeId(Opc.MDIS.Variables.MDISAggregateObjectType_DiscreteInstrumentPlaceholder_Fault, Opc.MDIS.Namespaces.MDIS);
+
+        /// <summary>
+        /// The identifier for the MDISAggregateObjectType_DiscreteInstrumentPlaceholder_EnableDisable_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId MDISAggregateObjectType_DiscreteInstrumentPlaceholder_EnableDisable_InputArguments = new ExpandedNodeId(Opc.MDIS.Variables.MDISAggregateObjectType_DiscreteInstrumentPlaceholder_EnableDisable_InputArguments, Opc.MDIS.Namespaces.MDIS);
+
+        /// <summary>
+        /// The identifier for the MDISAggregateObjectType_DiscreteInstrumentPlaceholder_State Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId MDISAggregateObjectType_DiscreteInstrumentPlaceholder_State = new ExpandedNodeId(Opc.MDIS.Variables.MDISAggregateObjectType_DiscreteInstrumentPlaceholder_State, Opc.MDIS.Namespaces.MDIS);
 
         /// <summary>
         /// The identifier for the MDISAggregateObjectType_DigitalOutPlaceholder_Fault Variable.
@@ -2261,11 +2141,6 @@ namespace Opc.MDIS
         public static readonly ExpandedNodeId MDISAggregateObjectType_InterlockPlaceholder = new ExpandedNodeId(Opc.MDIS.Variables.MDISAggregateObjectType_InterlockPlaceholder, Opc.MDIS.Namespaces.MDIS);
 
         /// <summary>
-        /// The identifier for the SetTimeType_InputArguments Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId SetTimeType_InputArguments = new ExpandedNodeId(Opc.MDIS.Variables.SetTimeType_InputArguments, Opc.MDIS.Namespaces.MDIS);
-
-        /// <summary>
         /// The identifier for the MDISTimeSyncObjectType_SetTime_InputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId MDISTimeSyncObjectType_SetTime_InputArguments = new ExpandedNodeId(Opc.MDIS.Variables.MDISTimeSyncObjectType_SetTime_InputArguments, Opc.MDIS.Namespaces.MDIS);
@@ -2294,6 +2169,31 @@ namespace Opc.MDIS
         /// The identifier for the MDISInformationObjectType_MDISVersion_Build Variable.
         /// </summary>
         public static readonly ExpandedNodeId MDISInformationObjectType_MDISVersion_Build = new ExpandedNodeId(Opc.MDIS.Variables.MDISInformationObjectType_MDISVersion_Build, Opc.MDIS.Namespaces.MDIS);
+
+        /// <summary>
+        /// The identifier for the MDISInformation_TimeSynchronization_SetTime_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId MDISInformation_TimeSynchronization_SetTime_InputArguments = new ExpandedNodeId(Opc.MDIS.Variables.MDISInformation_TimeSynchronization_SetTime_InputArguments, Opc.MDIS.Namespaces.MDIS);
+
+        /// <summary>
+        /// The identifier for the MDISInformation_MDISVersion Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId MDISInformation_MDISVersion = new ExpandedNodeId(Opc.MDIS.Variables.MDISInformation_MDISVersion, Opc.MDIS.Namespaces.MDIS);
+
+        /// <summary>
+        /// The identifier for the MDISInformation_MDISVersion_MajorVersion Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId MDISInformation_MDISVersion_MajorVersion = new ExpandedNodeId(Opc.MDIS.Variables.MDISInformation_MDISVersion_MajorVersion, Opc.MDIS.Namespaces.MDIS);
+
+        /// <summary>
+        /// The identifier for the MDISInformation_MDISVersion_MinorVersion Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId MDISInformation_MDISVersion_MinorVersion = new ExpandedNodeId(Opc.MDIS.Variables.MDISInformation_MDISVersion_MinorVersion, Opc.MDIS.Namespaces.MDIS);
+
+        /// <summary>
+        /// The identifier for the MDISInformation_MDISVersion_Build Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId MDISInformation_MDISVersion_Build = new ExpandedNodeId(Opc.MDIS.Variables.MDISInformation_MDISVersion_Build, Opc.MDIS.Namespaces.MDIS);
 
         /// <summary>
         /// The identifier for the MDIS_BinarySchema Variable.
@@ -2380,11 +2280,6 @@ namespace Opc.MDIS
         public const string CalculatedPosition = "CalculatedPosition";
 
         /// <summary>
-        /// The BrowseName for the ChokeAbortType component.
-        /// </summary>
-        public const string ChokeAbortType = "ChokeAbortType";
-
-        /// <summary>
         /// The BrowseName for the ChokeCommandEnum component.
         /// </summary>
         public const string ChokeCommandEnum = "ChokeCommandEnum";
@@ -2395,24 +2290,9 @@ namespace Opc.MDIS
         public const string ChokeMoveEnum = "ChokeMoveEnum";
 
         /// <summary>
-        /// The BrowseName for the ChokeMoveType component.
-        /// </summary>
-        public const string ChokeMoveType = "ChokeMoveType";
-
-        /// <summary>
         /// The BrowseName for the ChokePlaceholder component.
         /// </summary>
         public const string ChokePlaceholder = "<ChokePlaceholder>";
-
-        /// <summary>
-        /// The BrowseName for the ChokeSetCalculatedPositionType component.
-        /// </summary>
-        public const string ChokeSetCalculatedPositionType = "ChokeSetCalculatedPositionType";
-
-        /// <summary>
-        /// The BrowseName for the ChokeStepType component.
-        /// </summary>
-        public const string ChokeStepType = "ChokeStepType";
 
         /// <summary>
         /// The BrowseName for the CloseTimeDuration component.
@@ -2440,24 +2320,24 @@ namespace Opc.MDIS
         public const string DefeatableOpenInterlock = "DefeatableOpenInterlock";
 
         /// <summary>
+        /// The BrowseName for the DigitalInstrumentPlaceholder component.
+        /// </summary>
+        public const string DigitalInstrumentPlaceholder = "<DigitalInstrumentPlaceholder>";
+
+        /// <summary>
         /// The BrowseName for the DigitalOutPlaceholder component.
         /// </summary>
         public const string DigitalOutPlaceholder = "<DigitalOutPlaceholder>";
 
         /// <summary>
-        /// The BrowseName for the DigitalPlaceholder component.
+        /// The BrowseName for the DiscreteInstrumentPlaceholder component.
         /// </summary>
-        public const string DigitalPlaceholder = "<DigitalPlaceholder>";
+        public const string DiscreteInstrumentPlaceholder = "<DiscreteInstrumentPlaceholder>";
 
         /// <summary>
         /// The BrowseName for the DiscreteOutPlaceholder component.
         /// </summary>
         public const string DiscreteOutPlaceholder = "<DiscreteOutPlaceholder>";
-
-        /// <summary>
-        /// The BrowseName for the DiscretePlaceholder component.
-        /// </summary>
-        public const string DiscretePlaceholder = "<DiscretePlaceholder>";
 
         /// <summary>
         /// The BrowseName for the Enabled component.
@@ -2468,11 +2348,6 @@ namespace Opc.MDIS
         /// The BrowseName for the EnableDisable component.
         /// </summary>
         public const string EnableDisable = "EnableDisable";
-
-        /// <summary>
-        /// The BrowseName for the EnableDisableType component.
-        /// </summary>
-        public const string EnableDisableType = "EnableDisableType";
 
         /// <summary>
         /// The BrowseName for the Fault component.
@@ -2615,6 +2490,11 @@ namespace Opc.MDIS
         public const string MDISDiscreteOutObjectType = "MDISDiscreteOutObjectType";
 
         /// <summary>
+        /// The BrowseName for the MDISInformation component.
+        /// </summary>
+        public const string MDISInformation = "MDISInformation";
+
+        /// <summary>
         /// The BrowseName for the MDISInformationObjectType component.
         /// </summary>
         public const string MDISInformationObjectType = "MDISInformationObjectType";
@@ -2663,11 +2543,6 @@ namespace Opc.MDIS
         /// The BrowseName for the Move component.
         /// </summary>
         public const string Move = "Move";
-
-        /// <summary>
-        /// The BrowseName for the MoveType component.
-        /// </summary>
-        public const string MoveType = "MoveType";
 
         /// <summary>
         /// The BrowseName for the Moving component.
@@ -2728,11 +2603,6 @@ namespace Opc.MDIS
         /// The BrowseName for the SetTime component.
         /// </summary>
         public const string SetTime = "SetTime";
-
-        /// <summary>
-        /// The BrowseName for the SetTimeType component.
-        /// </summary>
-        public const string SetTimeType = "SetTimeType";
 
         /// <summary>
         /// The BrowseName for the SignatureRequestStatus component.
@@ -2810,29 +2680,14 @@ namespace Opc.MDIS
         public const string WarningCode = "WarningCode";
 
         /// <summary>
-        /// The BrowseName for the WriteInstrumentValueType component.
-        /// </summary>
-        public const string WriteInstrumentValueType = "WriteInstrumentValueType";
-
-        /// <summary>
         /// The BrowseName for the WriteState component.
         /// </summary>
         public const string WriteState = "WriteState";
 
         /// <summary>
-        /// The BrowseName for the WriteStateType component.
-        /// </summary>
-        public const string WriteStateType = "WriteStateType";
-
-        /// <summary>
         /// The BrowseName for the WriteValue component.
         /// </summary>
         public const string WriteValue = "WriteValue";
-
-        /// <summary>
-        /// The BrowseName for the WriteValueType component.
-        /// </summary>
-        public const string WriteValueType = "WriteValueType";
     }
     #endregion
 
