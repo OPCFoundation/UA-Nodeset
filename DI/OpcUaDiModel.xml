@@ -590,7 +590,7 @@
   <ObjectType SymbolicName="DI:LockingServicesType" BaseType="OpcUa:BaseObjectType" IsAbstract="false">
     <Description>An interface for Locking.</Description>
     <Children>
-      <Property SymbolicName="OpcUa:DefaultInstanceBrowseName" DataType="OpcUa:String">
+      <Property SymbolicName="OpcUa:DefaultInstanceBrowseName" DataType="OpcUa:String" ModellingRule="None">
         <DefaultValue>
           <uax:String>Lock</uax:String>
         </DefaultValue>

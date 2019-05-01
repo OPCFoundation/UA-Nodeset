@@ -733,41 +733,10 @@
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>6161</uax:NumericId>
-      <DefaultInstanceBrowseName xmlns="http://opcfoundation.org/UA/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15035</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>0</uax:NamespaceIndex>
-          <uax:Name>DefaultInstanceBrowseName</uax:Name>
-        </uax:BrowseName>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15035</uax:NumericId>
-        <uax:Value>
-          <uax:Value>
-            <uax:String>Lock</uax:String>
-          </uax:Value>
-        </uax:Value>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </DefaultInstanceBrowseName>
       <Locked>
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
-          <uax:Identifier>ns=1;i=15912</uax:Identifier>
+          <uax:Identifier>ns=1;i=6468</uax:Identifier>
         </uax:NodeId>
         <uax:BrowseName>
           <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -782,7 +751,7 @@
         <uax:ModellingRuleId>
           <uax:Identifier>i=78</uax:Identifier>
         </uax:ModellingRuleId>
-        <uax:NumericId>15912</uax:NumericId>
+        <uax:NumericId>6468</uax:NumericId>
         <uax:DataType>
           <uax:Identifier>i=1</uax:Identifier>
         </uax:DataType>
@@ -1201,7 +1170,7 @@
   <IVendorNameplateType xmlns="http://opcfoundation.org/UA/DI/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=15036</uax:Identifier>
+      <uax:Identifier>ns=1;i=15035</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -1214,7 +1183,7 @@
     <Manufacturer>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15037</uax:Identifier>
+        <uax:Identifier>ns=1;i=15036</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -1229,7 +1198,7 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15037</uax:NumericId>
+      <uax:NumericId>15036</uax:NumericId>
       <uax:DataType>
         <uax:Identifier>i=21</uax:Identifier>
       </uax:DataType>
@@ -1240,7 +1209,7 @@
     <ManufacturerUri>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15038</uax:Identifier>
+        <uax:Identifier>ns=1;i=15037</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -1255,7 +1224,7 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15038</uax:NumericId>
+      <uax:NumericId>15037</uax:NumericId>
       <uax:DataType>
         <uax:Identifier>i=12</uax:Identifier>
       </uax:DataType>
@@ -1266,7 +1235,7 @@
     <Model>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15039</uax:Identifier>
+        <uax:Identifier>ns=1;i=15038</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -1281,7 +1250,7 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15039</uax:NumericId>
+      <uax:NumericId>15038</uax:NumericId>
       <uax:DataType>
         <uax:Identifier>i=21</uax:Identifier>
       </uax:DataType>
@@ -1292,7 +1261,7 @@
     <HardwareRevision>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15041</uax:Identifier>
+        <uax:Identifier>ns=1;i=15039</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -1307,7 +1276,7 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15041</uax:NumericId>
+      <uax:NumericId>15039</uax:NumericId>
       <uax:DataType>
         <uax:Identifier>i=12</uax:Identifier>
       </uax:DataType>
@@ -1318,141 +1287,11 @@
     <SoftwareRevision>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15042</uax:Identifier>
-      </uax:NodeId>
-      <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
-        <uax:Name>SoftwareRevision</uax:Name>
-      </uax:BrowseName>
-      <uax:ReferenceTypeId>
-        <uax:Identifier>i=46</uax:Identifier>
-      </uax:ReferenceTypeId>
-      <uax:TypeDefinitionId>
-        <uax:Identifier>i=68</uax:Identifier>
-      </uax:TypeDefinitionId>
-      <uax:ModellingRuleId>
-        <uax:Identifier>i=80</uax:Identifier>
-      </uax:ModellingRuleId>
-      <uax:NumericId>15042</uax:NumericId>
-      <uax:DataType>
-        <uax:Identifier>i=12</uax:Identifier>
-      </uax:DataType>
-      <uax:ValueRank>-1</uax:ValueRank>
-      <uax:AccessLevel>1</uax:AccessLevel>
-      <uax:UserAccessLevel>1</uax:UserAccessLevel>
-    </SoftwareRevision>
-    <DeviceRevision>
-      <uax:NodeClass>Variable_2</uax:NodeClass>
-      <uax:NodeId>
-        <uax:Identifier>ns=1;i=15043</uax:Identifier>
-      </uax:NodeId>
-      <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
-        <uax:Name>DeviceRevision</uax:Name>
-      </uax:BrowseName>
-      <uax:ReferenceTypeId>
-        <uax:Identifier>i=46</uax:Identifier>
-      </uax:ReferenceTypeId>
-      <uax:TypeDefinitionId>
-        <uax:Identifier>i=68</uax:Identifier>
-      </uax:TypeDefinitionId>
-      <uax:ModellingRuleId>
-        <uax:Identifier>i=80</uax:Identifier>
-      </uax:ModellingRuleId>
-      <uax:NumericId>15043</uax:NumericId>
-      <uax:DataType>
-        <uax:Identifier>i=12</uax:Identifier>
-      </uax:DataType>
-      <uax:ValueRank>-1</uax:ValueRank>
-      <uax:AccessLevel>1</uax:AccessLevel>
-      <uax:UserAccessLevel>1</uax:UserAccessLevel>
-    </DeviceRevision>
-    <ProductCode>
-      <uax:NodeClass>Variable_2</uax:NodeClass>
-      <uax:NodeId>
-        <uax:Identifier>ns=1;i=15045</uax:Identifier>
-      </uax:NodeId>
-      <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
-        <uax:Name>ProductCode</uax:Name>
-      </uax:BrowseName>
-      <uax:ReferenceTypeId>
-        <uax:Identifier>i=46</uax:Identifier>
-      </uax:ReferenceTypeId>
-      <uax:TypeDefinitionId>
-        <uax:Identifier>i=68</uax:Identifier>
-      </uax:TypeDefinitionId>
-      <uax:ModellingRuleId>
-        <uax:Identifier>i=80</uax:Identifier>
-      </uax:ModellingRuleId>
-      <uax:NumericId>15045</uax:NumericId>
-      <uax:DataType>
-        <uax:Identifier>i=12</uax:Identifier>
-      </uax:DataType>
-      <uax:ValueRank>-1</uax:ValueRank>
-      <uax:AccessLevel>1</uax:AccessLevel>
-      <uax:UserAccessLevel>1</uax:UserAccessLevel>
-    </ProductCode>
-    <DeviceManual>
-      <uax:NodeClass>Variable_2</uax:NodeClass>
-      <uax:NodeId>
-        <uax:Identifier>ns=1;i=15046</uax:Identifier>
-      </uax:NodeId>
-      <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
-        <uax:Name>DeviceManual</uax:Name>
-      </uax:BrowseName>
-      <uax:ReferenceTypeId>
-        <uax:Identifier>i=46</uax:Identifier>
-      </uax:ReferenceTypeId>
-      <uax:TypeDefinitionId>
-        <uax:Identifier>i=68</uax:Identifier>
-      </uax:TypeDefinitionId>
-      <uax:ModellingRuleId>
-        <uax:Identifier>i=80</uax:Identifier>
-      </uax:ModellingRuleId>
-      <uax:NumericId>15046</uax:NumericId>
-      <uax:DataType>
-        <uax:Identifier>i=12</uax:Identifier>
-      </uax:DataType>
-      <uax:ValueRank>-1</uax:ValueRank>
-      <uax:AccessLevel>1</uax:AccessLevel>
-      <uax:UserAccessLevel>1</uax:UserAccessLevel>
-    </DeviceManual>
-    <DeviceClass>
-      <uax:NodeClass>Variable_2</uax:NodeClass>
-      <uax:NodeId>
-        <uax:Identifier>ns=1;i=15047</uax:Identifier>
-      </uax:NodeId>
-      <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
-        <uax:Name>DeviceClass</uax:Name>
-      </uax:BrowseName>
-      <uax:ReferenceTypeId>
-        <uax:Identifier>i=46</uax:Identifier>
-      </uax:ReferenceTypeId>
-      <uax:TypeDefinitionId>
-        <uax:Identifier>i=68</uax:Identifier>
-      </uax:TypeDefinitionId>
-      <uax:ModellingRuleId>
-        <uax:Identifier>i=80</uax:Identifier>
-      </uax:ModellingRuleId>
-      <uax:NumericId>15047</uax:NumericId>
-      <uax:DataType>
-        <uax:Identifier>i=12</uax:Identifier>
-      </uax:DataType>
-      <uax:ValueRank>-1</uax:ValueRank>
-      <uax:AccessLevel>1</uax:AccessLevel>
-      <uax:UserAccessLevel>1</uax:UserAccessLevel>
-    </DeviceClass>
-    <SerialNumber>
-      <uax:NodeClass>Variable_2</uax:NodeClass>
-      <uax:NodeId>
         <uax:Identifier>ns=1;i=15040</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
-        <uax:Name>SerialNumber</uax:Name>
+        <uax:Name>SoftwareRevision</uax:Name>
       </uax:BrowseName>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
@@ -1470,11 +1309,141 @@
       <uax:ValueRank>-1</uax:ValueRank>
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </SoftwareRevision>
+    <DeviceRevision>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=15041</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>DeviceRevision</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=80</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15041</uax:NumericId>
+      <uax:DataType>
+        <uax:Identifier>i=12</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </DeviceRevision>
+    <ProductCode>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=15042</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>ProductCode</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=80</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15042</uax:NumericId>
+      <uax:DataType>
+        <uax:Identifier>i=12</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </ProductCode>
+    <DeviceManual>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=15043</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>DeviceManual</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=80</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15043</uax:NumericId>
+      <uax:DataType>
+        <uax:Identifier>i=12</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </DeviceManual>
+    <DeviceClass>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=15044</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>DeviceClass</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=80</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15044</uax:NumericId>
+      <uax:DataType>
+        <uax:Identifier>i=12</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </DeviceClass>
+    <SerialNumber>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=15045</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>SerialNumber</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=80</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15045</uax:NumericId>
+      <uax:DataType>
+        <uax:Identifier>i=12</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </SerialNumber>
     <ProductInstanceUri>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15913</uax:Identifier>
+        <uax:Identifier>ns=1;i=15046</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -1489,7 +1458,7 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15913</uax:NumericId>
+      <uax:NumericId>15046</uax:NumericId>
       <uax:DataType>
         <uax:Identifier>i=12</uax:Identifier>
       </uax:DataType>
@@ -1500,7 +1469,7 @@
     <RevisionCounter>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15044</uax:Identifier>
+        <uax:Identifier>ns=1;i=15047</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -1515,7 +1484,7 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15044</uax:NumericId>
+      <uax:NumericId>15047</uax:NumericId>
       <uax:DataType>
         <uax:Identifier>i=6</uax:Identifier>
       </uax:DataType>
@@ -1632,7 +1601,7 @@
     <DeviceHealthAlarms>
       <uax:NodeClass>Object_1</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15914</uax:Identifier>
+        <uax:Identifier>ns=1;i=15053</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -1647,13 +1616,13 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15914</uax:NumericId>
+      <uax:NumericId>15053</uax:NumericId>
     </DeviceHealthAlarms>
   </IDeviceHealthType>
   <ISupportInfoType xmlns="http://opcfoundation.org/UA/DI/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=15053</uax:Identifier>
+      <uax:Identifier>ns=1;i=15054</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -1666,7 +1635,7 @@
     <DeviceTypeImage>
       <uax:NodeClass>Object_1</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15054</uax:Identifier>
+        <uax:Identifier>ns=1;i=15055</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -1681,11 +1650,11 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15054</uax:NumericId>
+      <uax:NumericId>15055</uax:NumericId>
       <ImageIdentifier>
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
-          <uax:Identifier>ns=1;i=15055</uax:Identifier>
+          <uax:Identifier>ns=1;i=15056</uax:Identifier>
         </uax:NodeId>
         <uax:BrowseName>
           <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -1700,7 +1669,7 @@
         <uax:ModellingRuleId>
           <uax:Identifier>i=11510</uax:Identifier>
         </uax:ModellingRuleId>
-        <uax:NumericId>15055</uax:NumericId>
+        <uax:NumericId>15056</uax:NumericId>
         <uax:DataType>
           <uax:Identifier>i=30</uax:Identifier>
         </uax:DataType>
@@ -1712,7 +1681,7 @@
     <Documentation>
       <uax:NodeClass>Object_1</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15056</uax:Identifier>
+        <uax:Identifier>ns=1;i=15057</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -1727,11 +1696,11 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15056</uax:NumericId>
+      <uax:NumericId>15057</uax:NumericId>
       <DocumentIdentifier>
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
-          <uax:Identifier>ns=1;i=15057</uax:Identifier>
+          <uax:Identifier>ns=1;i=15058</uax:Identifier>
         </uax:NodeId>
         <uax:BrowseName>
           <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -1746,7 +1715,7 @@
         <uax:ModellingRuleId>
           <uax:Identifier>i=11510</uax:Identifier>
         </uax:ModellingRuleId>
-        <uax:NumericId>15057</uax:NumericId>
+        <uax:NumericId>15058</uax:NumericId>
         <uax:DataType>
           <uax:Identifier>i=15</uax:Identifier>
         </uax:DataType>
@@ -1758,7 +1727,7 @@
     <ProtocolSupport>
       <uax:NodeClass>Object_1</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15058</uax:Identifier>
+        <uax:Identifier>ns=1;i=15059</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -1773,11 +1742,11 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15058</uax:NumericId>
+      <uax:NumericId>15059</uax:NumericId>
       <ProtocolSupportIdentifier>
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
-          <uax:Identifier>ns=1;i=15059</uax:Identifier>
+          <uax:Identifier>ns=1;i=15060</uax:Identifier>
         </uax:NodeId>
         <uax:BrowseName>
           <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -1792,7 +1761,7 @@
         <uax:ModellingRuleId>
           <uax:Identifier>i=11510</uax:Identifier>
         </uax:ModellingRuleId>
-        <uax:NumericId>15059</uax:NumericId>
+        <uax:NumericId>15060</uax:NumericId>
         <uax:DataType>
           <uax:Identifier>i=15</uax:Identifier>
         </uax:DataType>
@@ -1804,7 +1773,7 @@
     <ImageSet>
       <uax:NodeClass>Object_1</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15060</uax:Identifier>
+        <uax:Identifier>ns=1;i=15061</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -1819,11 +1788,11 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15060</uax:NumericId>
+      <uax:NumericId>15061</uax:NumericId>
       <ImageIdentifier>
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
-          <uax:Identifier>ns=1;i=15061</uax:Identifier>
+          <uax:Identifier>ns=1;i=15062</uax:Identifier>
         </uax:NodeId>
         <uax:BrowseName>
           <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -1838,7 +1807,7 @@
         <uax:ModellingRuleId>
           <uax:Identifier>i=11510</uax:Identifier>
         </uax:ModellingRuleId>
-        <uax:NumericId>15061</uax:NumericId>
+        <uax:NumericId>15062</uax:NumericId>
         <uax:DataType>
           <uax:Identifier>i=30</uax:Identifier>
         </uax:DataType>
@@ -1851,7 +1820,7 @@
   <ComponentType xmlns="http://opcfoundation.org/UA/DI/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=15062</uax:Identifier>
+      <uax:Identifier>ns=1;i=15063</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -1867,7 +1836,7 @@
           <uax:Identifier>i=17603</uax:Identifier>
         </uax:ReferenceTypeId>
         <uax:TargetId>
-          <uax:Identifier>ns=1;i=15036</uax:Identifier>
+          <uax:Identifier>ns=1;i=15035</uax:Identifier>
         </uax:TargetId>
       </uax:Reference>
       <uax:Reference>
@@ -1882,7 +1851,7 @@
     <Manufacturer>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15085</uax:Identifier>
+        <uax:Identifier>ns=1;i=15086</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -1897,7 +1866,7 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15085</uax:NumericId>
+      <uax:NumericId>15086</uax:NumericId>
       <uax:DataType>
         <uax:Identifier>i=21</uax:Identifier>
       </uax:DataType>
@@ -1908,7 +1877,7 @@
     <ManufacturerUri>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15086</uax:Identifier>
+        <uax:Identifier>ns=1;i=15087</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -1923,7 +1892,7 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15086</uax:NumericId>
+      <uax:NumericId>15087</uax:NumericId>
       <uax:DataType>
         <uax:Identifier>i=12</uax:Identifier>
       </uax:DataType>
@@ -1934,7 +1903,7 @@
     <Model>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15087</uax:Identifier>
+        <uax:Identifier>ns=1;i=15088</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -1949,7 +1918,7 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15087</uax:NumericId>
+      <uax:NumericId>15088</uax:NumericId>
       <uax:DataType>
         <uax:Identifier>i=21</uax:Identifier>
       </uax:DataType>
@@ -2038,11 +2007,37 @@
     <ProductCode>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15093</uax:Identifier>
+        <uax:Identifier>ns=1;i=15092</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
         <uax:Name>ProductCode</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=80</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15092</uax:NumericId>
+      <uax:DataType>
+        <uax:Identifier>i=12</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </ProductCode>
+    <DeviceManual>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=15093</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>DeviceManual</uax:Name>
       </uax:BrowseName>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
@@ -2060,15 +2055,15 @@
       <uax:ValueRank>-1</uax:ValueRank>
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
-    </ProductCode>
-    <DeviceManual>
+    </DeviceManual>
+    <DeviceClass>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
         <uax:Identifier>ns=1;i=15094</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
-        <uax:Name>DeviceManual</uax:Name>
+        <uax:Name>DeviceClass</uax:Name>
       </uax:BrowseName>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
@@ -2086,15 +2081,15 @@
       <uax:ValueRank>-1</uax:ValueRank>
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
-    </DeviceManual>
-    <DeviceClass>
+    </DeviceClass>
+    <SerialNumber>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
         <uax:Identifier>ns=1;i=15095</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
-        <uax:Name>DeviceClass</uax:Name>
+        <uax:Name>SerialNumber</uax:Name>
       </uax:BrowseName>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
@@ -2112,93 +2107,15 @@
       <uax:ValueRank>-1</uax:ValueRank>
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
-    </DeviceClass>
-    <SerialNumber>
-      <uax:NodeClass>Variable_2</uax:NodeClass>
-      <uax:NodeId>
-        <uax:Identifier>ns=1;i=15088</uax:Identifier>
-      </uax:NodeId>
-      <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
-        <uax:Name>SerialNumber</uax:Name>
-      </uax:BrowseName>
-      <uax:ReferenceTypeId>
-        <uax:Identifier>i=46</uax:Identifier>
-      </uax:ReferenceTypeId>
-      <uax:TypeDefinitionId>
-        <uax:Identifier>i=68</uax:Identifier>
-      </uax:TypeDefinitionId>
-      <uax:ModellingRuleId>
-        <uax:Identifier>i=80</uax:Identifier>
-      </uax:ModellingRuleId>
-      <uax:NumericId>15088</uax:NumericId>
-      <uax:DataType>
-        <uax:Identifier>i=12</uax:Identifier>
-      </uax:DataType>
-      <uax:ValueRank>-1</uax:ValueRank>
-      <uax:AccessLevel>1</uax:AccessLevel>
-      <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </SerialNumber>
     <ProductInstanceUri>
-      <uax:NodeClass>Variable_2</uax:NodeClass>
-      <uax:NodeId>
-        <uax:Identifier>ns=1;i=15916</uax:Identifier>
-      </uax:NodeId>
-      <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
-        <uax:Name>ProductInstanceUri</uax:Name>
-      </uax:BrowseName>
-      <uax:ReferenceTypeId>
-        <uax:Identifier>i=46</uax:Identifier>
-      </uax:ReferenceTypeId>
-      <uax:TypeDefinitionId>
-        <uax:Identifier>i=68</uax:Identifier>
-      </uax:TypeDefinitionId>
-      <uax:ModellingRuleId>
-        <uax:Identifier>i=80</uax:Identifier>
-      </uax:ModellingRuleId>
-      <uax:NumericId>15916</uax:NumericId>
-      <uax:DataType>
-        <uax:Identifier>i=12</uax:Identifier>
-      </uax:DataType>
-      <uax:ValueRank>-1</uax:ValueRank>
-      <uax:AccessLevel>1</uax:AccessLevel>
-      <uax:UserAccessLevel>1</uax:UserAccessLevel>
-    </ProductInstanceUri>
-    <RevisionCounter>
-      <uax:NodeClass>Variable_2</uax:NodeClass>
-      <uax:NodeId>
-        <uax:Identifier>ns=1;i=15092</uax:Identifier>
-      </uax:NodeId>
-      <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
-        <uax:Name>RevisionCounter</uax:Name>
-      </uax:BrowseName>
-      <uax:ReferenceTypeId>
-        <uax:Identifier>i=46</uax:Identifier>
-      </uax:ReferenceTypeId>
-      <uax:TypeDefinitionId>
-        <uax:Identifier>i=68</uax:Identifier>
-      </uax:TypeDefinitionId>
-      <uax:ModellingRuleId>
-        <uax:Identifier>i=80</uax:Identifier>
-      </uax:ModellingRuleId>
-      <uax:NumericId>15092</uax:NumericId>
-      <uax:DataType>
-        <uax:Identifier>i=6</uax:Identifier>
-      </uax:DataType>
-      <uax:ValueRank>-1</uax:ValueRank>
-      <uax:AccessLevel>1</uax:AccessLevel>
-      <uax:UserAccessLevel>1</uax:UserAccessLevel>
-    </RevisionCounter>
-    <AssetId>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
         <uax:Identifier>ns=1;i=15096</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
-        <uax:Name>AssetId</uax:Name>
+        <uax:Name>ProductInstanceUri</uax:Name>
       </uax:BrowseName>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
@@ -2216,11 +2133,63 @@
       <uax:ValueRank>-1</uax:ValueRank>
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </ProductInstanceUri>
+    <RevisionCounter>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=15097</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>RevisionCounter</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=80</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15097</uax:NumericId>
+      <uax:DataType>
+        <uax:Identifier>i=6</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </RevisionCounter>
+    <AssetId>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=15098</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>AssetId</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=80</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15098</uax:NumericId>
+      <uax:DataType>
+        <uax:Identifier>i=12</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </AssetId>
     <ComponentName>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15097</uax:Identifier>
+        <uax:Identifier>ns=1;i=15099</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -2235,7 +2204,7 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15097</uax:NumericId>
+      <uax:NumericId>15099</uax:NumericId>
       <uax:DataType>
         <uax:Identifier>i=21</uax:Identifier>
       </uax:DataType>
@@ -2258,7 +2227,7 @@
       <uax:Text>Defines the basic information components for all configurable elements in a device topology</uax:Text>
     </uax:Description>
     <uax:SuperTypeId>
-      <uax:Identifier>ns=1;i=15062</uax:Identifier>
+      <uax:Identifier>ns=1;i=15063</uax:Identifier>
     </uax:SuperTypeId>
     <uax:IsAbstract>true</uax:IsAbstract>
     <uax:References>
@@ -2267,7 +2236,7 @@
           <uax:Identifier>i=17603</uax:Identifier>
         </uax:ReferenceTypeId>
         <uax:TargetId>
-          <uax:Identifier>ns=1;i=15053</uax:Identifier>
+          <uax:Identifier>ns=1;i=15054</uax:Identifier>
         </uax:TargetId>
       </uax:Reference>
       <uax:Reference>
@@ -2312,7 +2281,7 @@
     <ManufacturerUri>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15099</uax:Identifier>
+        <uax:Identifier>ns=1;i=15100</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -2327,7 +2296,7 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15099</uax:NumericId>
+      <uax:NumericId>15100</uax:NumericId>
       <uax:DataType>
         <uax:Identifier>i=12</uax:Identifier>
       </uax:DataType>
@@ -2458,7 +2427,7 @@
     <ProductCode>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15100</uax:Identifier>
+        <uax:Identifier>ns=1;i=15101</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -2473,7 +2442,7 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15100</uax:NumericId>
+      <uax:NumericId>15101</uax:NumericId>
       <uax:DataType>
         <uax:Identifier>i=12</uax:Identifier>
       </uax:DataType>
@@ -2570,7 +2539,7 @@
     <ProductInstanceUri>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15918</uax:Identifier>
+        <uax:Identifier>ns=1;i=15102</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -2585,7 +2554,7 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15918</uax:NumericId>
+      <uax:NumericId>15102</uax:NumericId>
       <uax:DataType>
         <uax:Identifier>i=12</uax:Identifier>
       </uax:DataType>
@@ -2696,7 +2665,7 @@
     <DeviceHealthAlarms>
       <uax:NodeClass>Object_1</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15928</uax:Identifier>
+        <uax:Identifier>ns=1;i=15105</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -2711,7 +2680,7 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15928</uax:NumericId>
+      <uax:NumericId>15105</uax:NumericId>
     </DeviceHealthAlarms>
     <DeviceTypeImage>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -2933,49 +2902,23 @@
   <SoftwareType xmlns="http://opcfoundation.org/UA/DI/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=15104</uax:Identifier>
+      <uax:Identifier>ns=1;i=15106</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>1</uax:NamespaceIndex>
       <uax:Name>SoftwareType</uax:Name>
     </uax:BrowseName>
     <uax:SuperTypeId>
-      <uax:Identifier>ns=1;i=15062</uax:Identifier>
+      <uax:Identifier>ns=1;i=15063</uax:Identifier>
     </uax:SuperTypeId>
     <Manufacturer>
-      <uax:NodeClass>Variable_2</uax:NodeClass>
-      <uax:NodeId>
-        <uax:Identifier>ns=1;i=15127</uax:Identifier>
-      </uax:NodeId>
-      <uax:BrowseName>
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
-        <uax:Name>Manufacturer</uax:Name>
-      </uax:BrowseName>
-      <uax:ReferenceTypeId>
-        <uax:Identifier>i=46</uax:Identifier>
-      </uax:ReferenceTypeId>
-      <uax:TypeDefinitionId>
-        <uax:Identifier>i=68</uax:Identifier>
-      </uax:TypeDefinitionId>
-      <uax:ModellingRuleId>
-        <uax:Identifier>i=78</uax:Identifier>
-      </uax:ModellingRuleId>
-      <uax:NumericId>15127</uax:NumericId>
-      <uax:DataType>
-        <uax:Identifier>i=21</uax:Identifier>
-      </uax:DataType>
-      <uax:ValueRank>-1</uax:ValueRank>
-      <uax:AccessLevel>1</uax:AccessLevel>
-      <uax:UserAccessLevel>1</uax:UserAccessLevel>
-    </Manufacturer>
-    <Model>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
         <uax:Identifier>ns=1;i=15129</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
-        <uax:Name>Model</uax:Name>
+        <uax:Name>Manufacturer</uax:Name>
       </uax:BrowseName>
       <uax:ReferenceTypeId>
         <uax:Identifier>i=46</uax:Identifier>
@@ -2993,11 +2936,37 @@
       <uax:ValueRank>-1</uax:ValueRank>
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
+    </Manufacturer>
+    <Model>
+      <uax:NodeClass>Variable_2</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=15131</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>Model</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=46</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>i=68</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=78</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15131</uax:NumericId>
+      <uax:DataType>
+        <uax:Identifier>i=21</uax:Identifier>
+      </uax:DataType>
+      <uax:ValueRank>-1</uax:ValueRank>
+      <uax:AccessLevel>1</uax:AccessLevel>
+      <uax:UserAccessLevel>1</uax:UserAccessLevel>
     </Model>
     <SoftwareRevision>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15132</uax:Identifier>
+        <uax:Identifier>ns=1;i=15133</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -3012,7 +2981,7 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=78</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15132</uax:NumericId>
+      <uax:NumericId>15133</uax:NumericId>
       <uax:DataType>
         <uax:Identifier>i=12</uax:Identifier>
       </uax:DataType>
@@ -3195,7 +3164,7 @@
   <DeviceHealthDiagnosticAlarmType xmlns="http://opcfoundation.org/UA/DI/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=15141</uax:Identifier>
+      <uax:Identifier>ns=1;i=15143</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -3208,56 +3177,56 @@
   <FailureAlarmType xmlns="http://opcfoundation.org/UA/DI/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=15290</uax:Identifier>
+      <uax:Identifier>ns=1;i=15292</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>1</uax:NamespaceIndex>
       <uax:Name>FailureAlarmType</uax:Name>
     </uax:BrowseName>
     <uax:SuperTypeId>
-      <uax:Identifier>ns=1;i=15141</uax:Identifier>
+      <uax:Identifier>ns=1;i=15143</uax:Identifier>
     </uax:SuperTypeId>
     <uax:IsAbstract>true</uax:IsAbstract>
   </FailureAlarmType>
   <CheckFunctionAlarmType xmlns="http://opcfoundation.org/UA/DI/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=15439</uax:Identifier>
+      <uax:Identifier>ns=1;i=15441</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>1</uax:NamespaceIndex>
       <uax:Name>CheckFunctionAlarmType</uax:Name>
     </uax:BrowseName>
     <uax:SuperTypeId>
-      <uax:Identifier>ns=1;i=15141</uax:Identifier>
+      <uax:Identifier>ns=1;i=15143</uax:Identifier>
     </uax:SuperTypeId>
     <uax:IsAbstract>true</uax:IsAbstract>
   </CheckFunctionAlarmType>
   <OffSpecAlarmType xmlns="http://opcfoundation.org/UA/DI/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=15588</uax:Identifier>
+      <uax:Identifier>ns=1;i=15590</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>1</uax:NamespaceIndex>
       <uax:Name>OffSpecAlarmType</uax:Name>
     </uax:BrowseName>
     <uax:SuperTypeId>
-      <uax:Identifier>ns=1;i=15141</uax:Identifier>
+      <uax:Identifier>ns=1;i=15143</uax:Identifier>
     </uax:SuperTypeId>
     <uax:IsAbstract>true</uax:IsAbstract>
   </OffSpecAlarmType>
   <MaintenanceRequiredAlarmType xmlns="http://opcfoundation.org/UA/DI/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=15737</uax:Identifier>
+      <uax:Identifier>ns=1;i=15739</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>1</uax:NamespaceIndex>
       <uax:Name>MaintenanceRequiredAlarmType</uax:Name>
     </uax:BrowseName>
     <uax:SuperTypeId>
-      <uax:Identifier>ns=1;i=15141</uax:Identifier>
+      <uax:Identifier>ns=1;i=15143</uax:Identifier>
     </uax:SuperTypeId>
     <uax:IsAbstract>true</uax:IsAbstract>
   </MaintenanceRequiredAlarmType>
@@ -3635,41 +3604,10 @@
         <uax:Identifier>i=80</uax:Identifier>
       </uax:ModellingRuleId>
       <uax:NumericId>6294</uax:NumericId>
-      <DefaultInstanceBrowseName xmlns="http://opcfoundation.org/UA/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=15887</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>0</uax:NamespaceIndex>
-          <uax:Name>DefaultInstanceBrowseName</uax:Name>
-        </uax:BrowseName>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>15887</uax:NumericId>
-        <uax:Value>
-          <uax:Value>
-            <uax:String>Lock</uax:String>
-          </uax:Value>
-        </uax:Value>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </DefaultInstanceBrowseName>
       <Locked>
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
-          <uax:Identifier>ns=1;i=15924</uax:Identifier>
+          <uax:Identifier>ns=1;i=6497</uax:Identifier>
         </uax:NodeId>
         <uax:BrowseName>
           <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -3684,7 +3622,7 @@
         <uax:ModellingRuleId>
           <uax:Identifier>i=78</uax:Identifier>
         </uax:ModellingRuleId>
-        <uax:NumericId>15924</uax:NumericId>
+        <uax:NumericId>6497</uax:NumericId>
         <uax:DataType>
           <uax:Identifier>i=1</uax:Identifier>
         </uax:DataType>
@@ -4144,7 +4082,7 @@
     <ProfileIdentifier>
       <uax:NodeClass>Object_1</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15889</uax:Identifier>
+        <uax:Identifier>ns=1;i=6499</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -4159,7 +4097,7 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=11510</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15889</uax:NumericId>
+      <uax:NumericId>6499</uax:NumericId>
     </ProfileIdentifier>
     <NetworkIdentifier>
       <uax:NodeClass>Object_1</uax:NodeClass>
@@ -4199,7 +4137,7 @@
   <TransferResultErrorDataType xmlns="http://opcfoundation.org/UA/DI/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=15891</uax:Identifier>
+      <uax:Identifier>ns=1;i=15888</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -4212,7 +4150,7 @@
   <TransferResultDataDataType xmlns="http://opcfoundation.org/UA/DI/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=15892</uax:Identifier>
+      <uax:Identifier>ns=1;i=15889</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -4637,7 +4575,7 @@
     <DefaultInstanceBrowseName xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15893</uax:Identifier>
+        <uax:Identifier>ns=1;i=15890</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
@@ -4649,10 +4587,7 @@
       <uax:TypeDefinitionId>
         <uax:Identifier>i=68</uax:Identifier>
       </uax:TypeDefinitionId>
-      <uax:ModellingRuleId>
-        <uax:Identifier>i=78</uax:Identifier>
-      </uax:ModellingRuleId>
-      <uax:NumericId>15893</uax:NumericId>
+      <uax:NumericId>15890</uax:NumericId>
       <uax:Value>
         <uax:Value>
           <uax:String>Lock</uax:String>
@@ -4668,7 +4603,7 @@
     <Locked>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15927</uax:Identifier>
+        <uax:Identifier>ns=1;i=6534</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -4683,7 +4618,7 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=78</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>15927</uax:NumericId>
+      <uax:NumericId>6534</uax:NumericId>
       <uax:DataType>
         <uax:Identifier>i=1</uax:Identifier>
       </uax:DataType>
@@ -5134,7 +5069,7 @@
   <DefaultBinary xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=15894</uax:Identifier>
+      <uax:Identifier>ns=1;i=15891</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>0</uax:NamespaceIndex>
@@ -5143,7 +5078,7 @@
     <uax:TypeDefinitionId>
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
-    <uax:NumericId>15894</uax:NumericId>
+    <uax:NumericId>15891</uax:NumericId>
     <uax:References>
       <uax:Reference>
         <uax:ReferenceTypeId>
@@ -5151,7 +5086,7 @@
         </uax:ReferenceTypeId>
         <uax:IsInverse>true</uax:IsInverse>
         <uax:TargetId>
-          <uax:Identifier>ns=1;i=15891</uax:Identifier>
+          <uax:Identifier>ns=1;i=15888</uax:Identifier>
         </uax:TargetId>
       </uax:Reference>
       <uax:Reference>
@@ -5159,7 +5094,7 @@
           <uax:Identifier>i=39</uax:Identifier>
         </uax:ReferenceTypeId>
         <uax:TargetId>
-          <uax:Identifier>ns=1;i=15896</uax:Identifier>
+          <uax:Identifier>ns=1;i=15894</uax:Identifier>
         </uax:TargetId>
       </uax:Reference>
     </uax:References>
@@ -5167,7 +5102,7 @@
   <DefaultBinary xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=15895</uax:Identifier>
+      <uax:Identifier>ns=1;i=15892</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>0</uax:NamespaceIndex>
@@ -5176,7 +5111,7 @@
     <uax:TypeDefinitionId>
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
-    <uax:NumericId>15895</uax:NumericId>
+    <uax:NumericId>15892</uax:NumericId>
     <uax:References>
       <uax:Reference>
         <uax:ReferenceTypeId>
@@ -5184,7 +5119,7 @@
         </uax:ReferenceTypeId>
         <uax:IsInverse>true</uax:IsInverse>
         <uax:TargetId>
-          <uax:Identifier>ns=1;i=15892</uax:Identifier>
+          <uax:Identifier>ns=1;i=15889</uax:Identifier>
         </uax:TargetId>
       </uax:Reference>
       <uax:Reference>
@@ -5192,7 +5127,7 @@
           <uax:Identifier>i=39</uax:Identifier>
         </uax:ReferenceTypeId>
         <uax:TargetId>
-          <uax:Identifier>ns=1;i=15899</uax:Identifier>
+          <uax:Identifier>ns=1;i=15897</uax:Identifier>
         </uax:TargetId>
       </uax:Reference>
     </uax:References>
@@ -5330,7 +5265,7 @@ YzpTdHJ1Y3R1cmVkVHlwZT4NCg0KPC9vcGM6VHlwZURpY3Rpb25hcnk+</uax:ByteString>
     <Deprecated xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=8005</uax:Identifier>
+        <uax:Identifier>ns=1;i=15893</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
@@ -5342,7 +5277,7 @@ YzpTdHJ1Y3R1cmVkVHlwZT4NCg0KPC9vcGM6VHlwZURpY3Rpb25hcnk+</uax:ByteString>
       <uax:TypeDefinitionId>
         <uax:Identifier>i=68</uax:Identifier>
       </uax:TypeDefinitionId>
-      <uax:NumericId>8005</uax:NumericId>
+      <uax:NumericId>15893</uax:NumericId>
       <uax:Value>
         <uax:Value>
           <uax:Boolean>true</uax:Boolean>
@@ -5386,7 +5321,7 @@ YzpTdHJ1Y3R1cmVkVHlwZT4NCg0KPC9vcGM6VHlwZURpY3Rpb25hcnk+</uax:ByteString>
     <TransferResultErrorDataType>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15896</uax:Identifier>
+        <uax:Identifier>ns=1;i=15894</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -5398,7 +5333,7 @@ YzpTdHJ1Y3R1cmVkVHlwZT4NCg0KPC9vcGM6VHlwZURpY3Rpb25hcnk+</uax:ByteString>
       <uax:TypeDefinitionId>
         <uax:Identifier>i=69</uax:Identifier>
       </uax:TypeDefinitionId>
-      <uax:NumericId>15896</uax:NumericId>
+      <uax:NumericId>15894</uax:NumericId>
       <uax:Value>
         <uax:Value>
           <uax:String>TransferResultErrorDataType</uax:String>
@@ -5414,7 +5349,7 @@ YzpTdHJ1Y3R1cmVkVHlwZT4NCg0KPC9vcGM6VHlwZURpY3Rpb25hcnk+</uax:ByteString>
     <TransferResultDataDataType>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15899</uax:Identifier>
+        <uax:Identifier>ns=1;i=15897</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -5426,7 +5361,7 @@ YzpTdHJ1Y3R1cmVkVHlwZT4NCg0KPC9vcGM6VHlwZURpY3Rpb25hcnk+</uax:ByteString>
       <uax:TypeDefinitionId>
         <uax:Identifier>i=69</uax:Identifier>
       </uax:TypeDefinitionId>
-      <uax:NumericId>15899</uax:NumericId>
+      <uax:NumericId>15897</uax:NumericId>
       <uax:Value>
         <uax:Value>
           <uax:String>TransferResultDataDataType</uax:String>
@@ -5504,7 +5439,7 @@ YzpTdHJ1Y3R1cmVkVHlwZT4NCg0KPC9vcGM6VHlwZURpY3Rpb25hcnk+</uax:ByteString>
   <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=15902</uax:Identifier>
+      <uax:Identifier>ns=1;i=15900</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>0</uax:NamespaceIndex>
@@ -5513,7 +5448,7 @@ YzpTdHJ1Y3R1cmVkVHlwZT4NCg0KPC9vcGM6VHlwZURpY3Rpb25hcnk+</uax:ByteString>
     <uax:TypeDefinitionId>
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
-    <uax:NumericId>15902</uax:NumericId>
+    <uax:NumericId>15900</uax:NumericId>
     <uax:References>
       <uax:Reference>
         <uax:ReferenceTypeId>
@@ -5521,7 +5456,7 @@ YzpTdHJ1Y3R1cmVkVHlwZT4NCg0KPC9vcGM6VHlwZURpY3Rpb25hcnk+</uax:ByteString>
         </uax:ReferenceTypeId>
         <uax:IsInverse>true</uax:IsInverse>
         <uax:TargetId>
-          <uax:Identifier>ns=1;i=15891</uax:Identifier>
+          <uax:Identifier>ns=1;i=15888</uax:Identifier>
         </uax:TargetId>
       </uax:Reference>
       <uax:Reference>
@@ -5529,7 +5464,7 @@ YzpTdHJ1Y3R1cmVkVHlwZT4NCg0KPC9vcGM6VHlwZURpY3Rpb25hcnk+</uax:ByteString>
           <uax:Identifier>i=39</uax:Identifier>
         </uax:ReferenceTypeId>
         <uax:TargetId>
-          <uax:Identifier>ns=1;i=15904</uax:Identifier>
+          <uax:Identifier>ns=1;i=15903</uax:Identifier>
         </uax:TargetId>
       </uax:Reference>
     </uax:References>
@@ -5537,7 +5472,7 @@ YzpTdHJ1Y3R1cmVkVHlwZT4NCg0KPC9vcGM6VHlwZURpY3Rpb25hcnk+</uax:ByteString>
   <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=15903</uax:Identifier>
+      <uax:Identifier>ns=1;i=15901</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>0</uax:NamespaceIndex>
@@ -5546,7 +5481,7 @@ YzpTdHJ1Y3R1cmVkVHlwZT4NCg0KPC9vcGM6VHlwZURpY3Rpb25hcnk+</uax:ByteString>
     <uax:TypeDefinitionId>
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
-    <uax:NumericId>15903</uax:NumericId>
+    <uax:NumericId>15901</uax:NumericId>
     <uax:References>
       <uax:Reference>
         <uax:ReferenceTypeId>
@@ -5554,7 +5489,7 @@ YzpTdHJ1Y3R1cmVkVHlwZT4NCg0KPC9vcGM6VHlwZURpY3Rpb25hcnk+</uax:ByteString>
         </uax:ReferenceTypeId>
         <uax:IsInverse>true</uax:IsInverse>
         <uax:TargetId>
-          <uax:Identifier>ns=1;i=15892</uax:Identifier>
+          <uax:Identifier>ns=1;i=15889</uax:Identifier>
         </uax:TargetId>
       </uax:Reference>
       <uax:Reference>
@@ -5562,7 +5497,7 @@ YzpTdHJ1Y3R1cmVkVHlwZT4NCg0KPC9vcGM6VHlwZURpY3Rpb25hcnk+</uax:ByteString>
           <uax:Identifier>i=39</uax:Identifier>
         </uax:ReferenceTypeId>
         <uax:TargetId>
-          <uax:Identifier>ns=1;i=15907</uax:Identifier>
+          <uax:Identifier>ns=1;i=15906</uax:Identifier>
         </uax:TargetId>
       </uax:Reference>
     </uax:References>
@@ -5745,7 +5680,7 @@ ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
     <Deprecated xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=8007</uax:Identifier>
+        <uax:Identifier>ns=1;i=15902</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>0</uax:NamespaceIndex>
@@ -5757,7 +5692,7 @@ ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
       <uax:TypeDefinitionId>
         <uax:Identifier>i=68</uax:Identifier>
       </uax:TypeDefinitionId>
-      <uax:NumericId>8007</uax:NumericId>
+      <uax:NumericId>15902</uax:NumericId>
       <uax:Value>
         <uax:Value>
           <uax:Boolean>true</uax:Boolean>
@@ -5801,7 +5736,7 @@ ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
     <TransferResultErrorDataType>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15904</uax:Identifier>
+        <uax:Identifier>ns=1;i=15903</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -5813,7 +5748,7 @@ ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
       <uax:TypeDefinitionId>
         <uax:Identifier>i=69</uax:Identifier>
       </uax:TypeDefinitionId>
-      <uax:NumericId>15904</uax:NumericId>
+      <uax:NumericId>15903</uax:NumericId>
       <uax:Value>
         <uax:Value>
           <uax:String>//xs:element[@name='TransferResultErrorDataType']</uax:String>
@@ -5829,7 +5764,7 @@ ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
     <TransferResultDataDataType>
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=15907</uax:Identifier>
+        <uax:Identifier>ns=1;i=15906</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -5841,7 +5776,7 @@ ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
       <uax:TypeDefinitionId>
         <uax:Identifier>i=69</uax:Identifier>
       </uax:TypeDefinitionId>
-      <uax:NumericId>15907</uax:NumericId>
+      <uax:NumericId>15906</uax:NumericId>
       <uax:Value>
         <uax:Value>
           <uax:String>//xs:element[@name='TransferResultDataDataType']</uax:String>
@@ -5886,7 +5821,7 @@ ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
   <DefaultJson xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=8001</uax:Identifier>
+      <uax:Identifier>ns=1;i=15909</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>0</uax:NamespaceIndex>
@@ -5895,7 +5830,7 @@ ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
     <uax:TypeDefinitionId>
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
-    <uax:NumericId>8001</uax:NumericId>
+    <uax:NumericId>15909</uax:NumericId>
     <uax:References>
       <uax:Reference>
         <uax:ReferenceTypeId>
@@ -5928,7 +5863,7 @@ ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
         </uax:ReferenceTypeId>
         <uax:IsInverse>true</uax:IsInverse>
         <uax:TargetId>
-          <uax:Identifier>ns=1;i=15891</uax:Identifier>
+          <uax:Identifier>ns=1;i=15888</uax:Identifier>
         </uax:TargetId>
       </uax:Reference>
     </uax:References>
@@ -5953,7 +5888,7 @@ ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
         </uax:ReferenceTypeId>
         <uax:IsInverse>true</uax:IsInverse>
         <uax:TargetId>
-          <uax:Identifier>ns=1;i=15892</uax:Identifier>
+          <uax:Identifier>ns=1;i=15889</uax:Identifier>
         </uax:TargetId>
       </uax:Reference>
     </uax:References>
@@ -5961,7 +5896,7 @@ ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
   <DefaultJson xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=8004</uax:Identifier>
+      <uax:Identifier>ns=1;i=15912</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>0</uax:NamespaceIndex>
@@ -5970,7 +5905,7 @@ ZSI+PC94czplbGVtZW50Pg0KDQo8L3hzOnNjaGVtYT4=</uax:ByteString>
     <uax:TypeDefinitionId>
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
-    <uax:NumericId>8004</uax:NumericId>
+    <uax:NumericId>15912</uax:NumericId>
     <uax:References>
       <uax:Reference>
         <uax:ReferenceTypeId>
