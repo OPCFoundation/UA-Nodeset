@@ -38,13 +38,13 @@
   TargetNamespace="http://fdi-cooperation.com/OPCUA/FDI7/"
   TargetXmlNamespace="http://fdi-cooperation.com/OPCUA/FDI7/"
   TargetNamespaceVersion="1.3"
-  TargetPublicationDate="2017-07-15T00:00:00Z"
+  TargetPublicationDate="2017-07-14T00:00:00Z"
   xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
 
   <Namespaces>
     <Namespace Name="OpcUaFdi7" Prefix="Opc.Ua.Fdi7" XmlNamespace="http://fdi-cooperation.com/OPCUA/FDI7/Types.xsd" XmlPrefix="FDI7">http://fdi-cooperation.com/OPCUA/FDI7/</Namespace>
-    <Namespace Name="OpcUaDi" Prefix="Opc.Ua.Di" Version="1.01" PublicationDate="2012-12-31T00:00:00Z" XmlNamespace="http://opcfoundation.org/UA/DI/Types.xsd" XmlPrefix="DI" FilePath="OpcUaDiModel">http://opcfoundation.org/UA/DI/</Namespace>
-    <Namespace Name="OpcUa" Version="1.03" PublicationDate="2013-12-02T00:00:00Z" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="OpcUaDi" Prefix="Opc.Ua.Di" XmlNamespace="http://opcfoundation.org/UA/DI/Types.xsd" XmlPrefix="DI" FilePath="OpcUaDiModel">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="OpcUa" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</Namespace>
   </Namespaces>
   
   <Object SymbolicName="FDI:OpcUaFdi7NamespaceMetadata" TypeDefinition="ua:NamespaceMetadataType">
@@ -62,7 +62,7 @@
       </Property>
       <Property SymbolicName="ua:NamespacePublicationDate" DataType="ua:DateTime">
         <DefaultValue>
-          <uax:DateTime>2017-07-15T00:00:00Z</uax:DateTime>
+          <uax:DateTime>2017-07-14</uax:DateTime>
         </DefaultValue>
       </Property>
       <Property SymbolicName="ua:IsNamespaceSubset" DataType="ua:Boolean">

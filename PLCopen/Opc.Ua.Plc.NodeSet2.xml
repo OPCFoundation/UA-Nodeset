@@ -36,7 +36,7 @@
   <Models>
     <Model ModelUri="http://PLCopen.org/OpcUa/IEC61131-3/" Version="1.00" PublicationDate="2010-03-24T00:00:00Z">
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.03" PublicationDate="2013-12-02T00:00:00Z" />
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.01" PublicationDate="2012-12-31T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.02" PublicationDate="2019-05-01T00:00:00Z" />
     </Model>
   </Models>
   <Aliases>

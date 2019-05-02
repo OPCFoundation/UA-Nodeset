@@ -3757,16 +3757,6 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = 421;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_SerialNumber = 422;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_RevisionCounter = 423;
-
-        /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_Manufacturer = 424;
@@ -3777,14 +3767,9 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_Model = 425;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceManual = 426;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceRevision = 427;
+        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_HardwareRevision = 429;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -3792,9 +3777,24 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_SoftwareRevision = 428;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_HardwareRevision = 429;
+        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceRevision = 427;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceManual = 426;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_SerialNumber = 422;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_RevisionCounter = 423;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -4012,16 +4012,6 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = 549;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_SerialNumber = 550;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_RevisionCounter = 551;
-
-        /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_Manufacturer = 552;
@@ -4032,14 +4022,9 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_Model = 553;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceManual = 554;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceRevision = 555;
+        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_HardwareRevision = 557;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -4047,9 +4032,24 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_SoftwareRevision = 556;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_HardwareRevision = 557;
+        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceRevision = 555;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceManual = 554;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_SerialNumber = 550;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_RevisionCounter = 551;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -4267,16 +4267,6 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = 677;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SerialNumber = 678;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_RevisionCounter = 679;
-
-        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Manufacturer = 680;
@@ -4287,14 +4277,9 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Model = 681;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceManual = 682;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceRevision = 683;
+        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_HardwareRevision = 685;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -4302,9 +4287,24 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SoftwareRevision = 684;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_HardwareRevision = 685;
+        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceRevision = 683;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceManual = 682;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SerialNumber = 678;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_RevisionCounter = 679;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -4512,16 +4512,6 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = 802;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_SerialNumber = 803;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_RevisionCounter = 804;
-
-        /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_Manufacturer = 805;
@@ -4532,14 +4522,9 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_Model = 806;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceManual = 807;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceRevision = 808;
+        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_HardwareRevision = 810;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -4547,9 +4532,24 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_SoftwareRevision = 809;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_HardwareRevision = 810;
+        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceRevision = 808;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceManual = 807;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_SerialNumber = 803;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_RevisionCounter = 804;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -4757,16 +4757,6 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationHARType_ServiceProvider_Lock_BreakLock_OutputArguments = 927;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationHARType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public const uint ServerCommunicationHARType_ServiceProvider_SerialNumber = 928;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationHARType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public const uint ServerCommunicationHARType_ServiceProvider_RevisionCounter = 929;
-
-        /// <summary>
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public const uint ServerCommunicationHARType_ServiceProvider_Manufacturer = 930;
@@ -4777,14 +4767,9 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationHARType_ServiceProvider_Model = 931;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationHARType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationHARType_ServiceProvider_DeviceManual = 932;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationHARType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public const uint ServerCommunicationHARType_ServiceProvider_DeviceRevision = 933;
+        public const uint ServerCommunicationHARType_ServiceProvider_HardwareRevision = 935;
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_SoftwareRevision Variable.
@@ -4792,9 +4777,24 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationHARType_ServiceProvider_SoftwareRevision = 934;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationHARType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationHARType_ServiceProvider_HardwareRevision = 935;
+        public const uint ServerCommunicationHARType_ServiceProvider_DeviceRevision = 933;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public const uint ServerCommunicationHARType_ServiceProvider_DeviceManual = 932;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public const uint ServerCommunicationHARType_ServiceProvider_SerialNumber = 928;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public const uint ServerCommunicationHARType_ServiceProvider_RevisionCounter = 929;
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -5002,16 +5002,6 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = 1882;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber = 1883;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter = 1884;
-
-        /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Manufacturer = 1885;
@@ -5022,14 +5012,9 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Model = 1886;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual = 1887;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision = 1888;
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision = 1890;
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -5037,9 +5022,24 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SoftwareRevision = 1889;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision = 1890;
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision = 1888;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual = 1887;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber = 1883;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter = 1884;
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -5262,16 +5262,6 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = 2011;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber = 2012;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter = 2013;
-
-        /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Manufacturer = 2014;
@@ -5282,14 +5272,9 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Model = 2015;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual = 2016;
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision = 2017;
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision = 2019;
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -5297,9 +5282,24 @@ namespace Opc.Ua.Fdi7
         public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_SoftwareRevision = 2018;
 
         /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision = 2019;
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision = 2017;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual = 2016;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber = 2012;
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter = 2013;
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -10257,16 +10257,6 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_Manufacturer = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_Manufacturer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -10277,14 +10267,9 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_Model = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_Model, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -10292,9 +10277,24 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_SoftwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFH1DeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFH1DeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -10512,16 +10512,6 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_Manufacturer = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_Manufacturer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -10532,14 +10522,9 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_Model = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_Model, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -10547,9 +10532,24 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_SoftwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationFFHSEDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationFFHSEDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -10767,16 +10767,6 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Manufacturer = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Manufacturer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -10787,14 +10777,9 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Model = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Model, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -10802,9 +10787,24 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SoftwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFIBUSDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFIBUSDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -11012,16 +11012,6 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_Manufacturer = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_Manufacturer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -11032,14 +11022,9 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_Model = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_Model, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -11047,9 +11032,24 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_SoftwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationPROFINETDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationPROFINETDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -11257,16 +11257,6 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationHARType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationHARType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_Manufacturer = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_Manufacturer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -11277,14 +11267,9 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_Model = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_Model, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationHARType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationHARType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_SoftwareRevision Variable.
@@ -11292,9 +11277,24 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_SoftwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationHARType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationHARType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationHARType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationHARType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -11502,16 +11502,6 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Manufacturer = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Manufacturer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -11522,14 +11512,9 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Model = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Model, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -11537,9 +11522,24 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SoftwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.
@@ -11762,16 +11762,6 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_BreakLock_OutputArguments, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Manufacturer Variable.
         /// </summary>
         public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Manufacturer = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_Manufacturer, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
@@ -11782,14 +11772,9 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_Model = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_Model, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual Variable.
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
-
-        /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_SoftwareRevision Variable.
@@ -11797,9 +11782,24 @@ namespace Opc.Ua.Fdi7
         public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_SoftwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
-        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision Variable.
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision Variable.
         /// </summary>
-        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_HardwareRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceRevision, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_DeviceManual, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_SerialNumber, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
+
+        /// <summary>
+        /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter = new ExpandedNodeId(Opc.Ua.Fdi7.Variables.ServerCommunicationGENERICDeviceType_ServiceProvider_RevisionCounter, Opc.Ua.Fdi7.Namespaces.OpcUaFdi7);
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_MethodSet_Disconnect_InputArguments Variable.

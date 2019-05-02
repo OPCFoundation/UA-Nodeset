@@ -49,12 +49,12 @@
   <opc:StructuredType Name="FetchResultDataType" BaseType="ua:ExtensionObject">
   </opc:StructuredType>
 
-  <opc:StructuredType Name="FetchResultErrorDataType" BaseType="tns:FetchResultDataType">
+  <opc:StructuredType Name="TransferResultErrorDataType" BaseType="tns:FetchResultDataType">
     <opc:Field Name="Status" TypeName="opc:Int32" />
     <opc:Field Name="Diagnostics" TypeName="ua:DiagnosticInfo" />
   </opc:StructuredType>
 
-  <opc:StructuredType Name="FetchResultDataDataType" BaseType="tns:FetchResultDataType">
+  <opc:StructuredType Name="TransferResultDataDataType" BaseType="tns:FetchResultDataType">
     <opc:Field Name="SequenceNumber" TypeName="opc:Int32" />
     <opc:Field Name="EndOfResults" TypeName="opc:Boolean" />
     <opc:Field Name="NoOfParameterDefs" TypeName="opc:Int32" />

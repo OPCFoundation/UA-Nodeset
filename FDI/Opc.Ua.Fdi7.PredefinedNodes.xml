@@ -134,7 +134,7 @@
       <uax:NumericId>15012</uax:NumericId>
       <uax:Value>
         <uax:Value>
-          <uax:DateTime>2017-07-15T00:00:00Z</uax:DateTime>
+          <uax:DateTime>2017-07-14T00:00:00Z</uax:DateTime>
         </uax:Value>
       </uax:Value>
       <uax:DataType>
@@ -4283,66 +4283,6 @@
           </OutputArguments>
         </Transfer>
       </MethodSet>
-      <SerialNumber xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=422</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>SerialNumber</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Identifier that uniquely identifies, within a manufacturer, a device instance</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>422</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </SerialNumber>
-      <RevisionCounter xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=423</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>RevisionCounter</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>An incremental counter indicating the number of times the static data within the Device has been modified</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>423</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=6</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </RevisionCounter>
       <Manufacturer xmlns="http://opcfoundation.org/UA/DI/">
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
@@ -4403,96 +4343,6 @@
         <uax:AccessLevel>1</uax:AccessLevel>
         <uax:UserAccessLevel>1</uax:UserAccessLevel>
       </Model>
-      <DeviceManual xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=426</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>DeviceManual</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Address (pathname in the file system or a URL | Web address) of user manual for the device</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>426</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </DeviceManual>
-      <DeviceRevision xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=427</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>DeviceRevision</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Overall revision level of the device</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>427</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </DeviceRevision>
-      <SoftwareRevision xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=428</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>SoftwareRevision</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Revision level of the software/firmware of the device</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>428</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </SoftwareRevision>
       <HardwareRevision xmlns="http://opcfoundation.org/UA/DI/">
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
@@ -4523,6 +4373,156 @@
         <uax:AccessLevel>1</uax:AccessLevel>
         <uax:UserAccessLevel>1</uax:UserAccessLevel>
       </HardwareRevision>
+      <SoftwareRevision xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=428</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>SoftwareRevision</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Revision level of the software/firmware of the device</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>428</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </SoftwareRevision>
+      <DeviceRevision xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=427</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>DeviceRevision</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Overall revision level of the device</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>427</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </DeviceRevision>
+      <DeviceManual xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=426</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>DeviceManual</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Address (pathname in the file system or a URL | Web address) of user manual for the device</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>426</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </DeviceManual>
+      <SerialNumber xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=422</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>SerialNumber</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Identifier that uniquely identifies, within a manufacturer, a device instance</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>422</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </SerialNumber>
+      <RevisionCounter xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=423</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>RevisionCounter</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>An incremental counter indicating the number of times the static data within the Device has been modified</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>423</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=6</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </RevisionCounter>
     </ServiceProvider>
   </ServerCommunicationFFH1DeviceType>
   <ServerCommunicationFFHSEDeviceType xmlns="http://fdi-cooperation.com/OPCUA/FDI7/">
@@ -5305,66 +5305,6 @@
           </OutputArguments>
         </Transfer>
       </MethodSet>
-      <SerialNumber xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=550</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>SerialNumber</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Identifier that uniquely identifies, within a manufacturer, a device instance</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>550</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </SerialNumber>
-      <RevisionCounter xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=551</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>RevisionCounter</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>An incremental counter indicating the number of times the static data within the Device has been modified</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>551</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=6</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </RevisionCounter>
       <Manufacturer xmlns="http://opcfoundation.org/UA/DI/">
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
@@ -5425,96 +5365,6 @@
         <uax:AccessLevel>1</uax:AccessLevel>
         <uax:UserAccessLevel>1</uax:UserAccessLevel>
       </Model>
-      <DeviceManual xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=554</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>DeviceManual</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Address (pathname in the file system or a URL | Web address) of user manual for the device</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>554</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </DeviceManual>
-      <DeviceRevision xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=555</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>DeviceRevision</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Overall revision level of the device</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>555</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </DeviceRevision>
-      <SoftwareRevision xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=556</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>SoftwareRevision</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Revision level of the software/firmware of the device</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>556</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </SoftwareRevision>
       <HardwareRevision xmlns="http://opcfoundation.org/UA/DI/">
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
@@ -5545,6 +5395,156 @@
         <uax:AccessLevel>1</uax:AccessLevel>
         <uax:UserAccessLevel>1</uax:UserAccessLevel>
       </HardwareRevision>
+      <SoftwareRevision xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=556</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>SoftwareRevision</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Revision level of the software/firmware of the device</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>556</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </SoftwareRevision>
+      <DeviceRevision xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=555</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>DeviceRevision</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Overall revision level of the device</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>555</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </DeviceRevision>
+      <DeviceManual xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=554</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>DeviceManual</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Address (pathname in the file system or a URL | Web address) of user manual for the device</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>554</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </DeviceManual>
+      <SerialNumber xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=550</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>SerialNumber</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Identifier that uniquely identifies, within a manufacturer, a device instance</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>550</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </SerialNumber>
+      <RevisionCounter xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=551</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>RevisionCounter</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>An incremental counter indicating the number of times the static data within the Device has been modified</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>551</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=6</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </RevisionCounter>
     </ServiceProvider>
   </ServerCommunicationFFHSEDeviceType>
   <ServerCommunicationPROFIBUSDeviceType xmlns="http://fdi-cooperation.com/OPCUA/FDI7/">
@@ -6233,66 +6233,6 @@
           </OutputArguments>
         </Transfer>
       </MethodSet>
-      <SerialNumber xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=678</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>SerialNumber</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Identifier that uniquely identifies, within a manufacturer, a device instance</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>678</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </SerialNumber>
-      <RevisionCounter xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=679</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>RevisionCounter</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>An incremental counter indicating the number of times the static data within the Device has been modified</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>679</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=6</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </RevisionCounter>
       <Manufacturer xmlns="http://opcfoundation.org/UA/DI/">
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
@@ -6353,96 +6293,6 @@
         <uax:AccessLevel>1</uax:AccessLevel>
         <uax:UserAccessLevel>1</uax:UserAccessLevel>
       </Model>
-      <DeviceManual xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=682</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>DeviceManual</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Address (pathname in the file system or a URL | Web address) of user manual for the device</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>682</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </DeviceManual>
-      <DeviceRevision xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=683</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>DeviceRevision</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Overall revision level of the device</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>683</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </DeviceRevision>
-      <SoftwareRevision xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=684</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>SoftwareRevision</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Revision level of the software/firmware of the device</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>684</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </SoftwareRevision>
       <HardwareRevision xmlns="http://opcfoundation.org/UA/DI/">
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
@@ -6473,6 +6323,156 @@
         <uax:AccessLevel>1</uax:AccessLevel>
         <uax:UserAccessLevel>1</uax:UserAccessLevel>
       </HardwareRevision>
+      <SoftwareRevision xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=684</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>SoftwareRevision</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Revision level of the software/firmware of the device</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>684</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </SoftwareRevision>
+      <DeviceRevision xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=683</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>DeviceRevision</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Overall revision level of the device</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>683</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </DeviceRevision>
+      <DeviceManual xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=682</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>DeviceManual</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Address (pathname in the file system or a URL | Web address) of user manual for the device</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>682</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </DeviceManual>
+      <SerialNumber xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=678</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>SerialNumber</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Identifier that uniquely identifies, within a manufacturer, a device instance</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>678</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </SerialNumber>
+      <RevisionCounter xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=679</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>RevisionCounter</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>An incremental counter indicating the number of times the static data within the Device has been modified</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>679</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=6</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </RevisionCounter>
     </ServiceProvider>
   </ServerCommunicationPROFIBUSDeviceType>
   <ServerCommunicationPROFINETDeviceType xmlns="http://fdi-cooperation.com/OPCUA/FDI7/">
@@ -7259,66 +7259,6 @@
           </OutputArguments>
         </Transfer>
       </MethodSet>
-      <SerialNumber xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=803</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>SerialNumber</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Identifier that uniquely identifies, within a manufacturer, a device instance</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>803</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </SerialNumber>
-      <RevisionCounter xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=804</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>RevisionCounter</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>An incremental counter indicating the number of times the static data within the Device has been modified</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>804</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=6</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </RevisionCounter>
       <Manufacturer xmlns="http://opcfoundation.org/UA/DI/">
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
@@ -7379,96 +7319,6 @@
         <uax:AccessLevel>1</uax:AccessLevel>
         <uax:UserAccessLevel>1</uax:UserAccessLevel>
       </Model>
-      <DeviceManual xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=807</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>DeviceManual</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Address (pathname in the file system or a URL | Web address) of user manual for the device</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>807</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </DeviceManual>
-      <DeviceRevision xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=808</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>DeviceRevision</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Overall revision level of the device</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>808</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </DeviceRevision>
-      <SoftwareRevision xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=809</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>SoftwareRevision</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Revision level of the software/firmware of the device</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>809</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </SoftwareRevision>
       <HardwareRevision xmlns="http://opcfoundation.org/UA/DI/">
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
@@ -7499,6 +7349,156 @@
         <uax:AccessLevel>1</uax:AccessLevel>
         <uax:UserAccessLevel>1</uax:UserAccessLevel>
       </HardwareRevision>
+      <SoftwareRevision xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=809</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>SoftwareRevision</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Revision level of the software/firmware of the device</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>809</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </SoftwareRevision>
+      <DeviceRevision xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=808</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>DeviceRevision</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Overall revision level of the device</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>808</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </DeviceRevision>
+      <DeviceManual xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=807</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>DeviceManual</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Address (pathname in the file system or a URL | Web address) of user manual for the device</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>807</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </DeviceManual>
+      <SerialNumber xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=803</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>SerialNumber</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Identifier that uniquely identifies, within a manufacturer, a device instance</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>803</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </SerialNumber>
+      <RevisionCounter xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=804</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>RevisionCounter</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>An incremental counter indicating the number of times the static data within the Device has been modified</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>804</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=6</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </RevisionCounter>
     </ServiceProvider>
   </ServerCommunicationPROFINETDeviceType>
   <ServerCommunicationHARType xmlns="http://fdi-cooperation.com/OPCUA/FDI7/">
@@ -8127,66 +8127,6 @@
           </OutputArguments>
         </Transfer>
       </MethodSet>
-      <SerialNumber xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=928</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>SerialNumber</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Identifier that uniquely identifies, within a manufacturer, a device instance</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>928</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </SerialNumber>
-      <RevisionCounter xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=929</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>RevisionCounter</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>An incremental counter indicating the number of times the static data within the Device has been modified</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>929</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=6</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </RevisionCounter>
       <Manufacturer xmlns="http://opcfoundation.org/UA/DI/">
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
@@ -8247,96 +8187,6 @@
         <uax:AccessLevel>1</uax:AccessLevel>
         <uax:UserAccessLevel>1</uax:UserAccessLevel>
       </Model>
-      <DeviceManual xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=932</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>DeviceManual</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Address (pathname in the file system or a URL | Web address) of user manual for the device</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>932</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </DeviceManual>
-      <DeviceRevision xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=933</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>DeviceRevision</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Overall revision level of the device</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>933</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </DeviceRevision>
-      <SoftwareRevision xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=934</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>SoftwareRevision</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Revision level of the software/firmware of the device</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>934</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </SoftwareRevision>
       <HardwareRevision xmlns="http://opcfoundation.org/UA/DI/">
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
@@ -8367,6 +8217,156 @@
         <uax:AccessLevel>1</uax:AccessLevel>
         <uax:UserAccessLevel>1</uax:UserAccessLevel>
       </HardwareRevision>
+      <SoftwareRevision xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=934</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>SoftwareRevision</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Revision level of the software/firmware of the device</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>934</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </SoftwareRevision>
+      <DeviceRevision xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=933</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>DeviceRevision</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Overall revision level of the device</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>933</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </DeviceRevision>
+      <DeviceManual xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=932</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>DeviceManual</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Address (pathname in the file system or a URL | Web address) of user manual for the device</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>932</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </DeviceManual>
+      <SerialNumber xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=928</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>SerialNumber</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Identifier that uniquely identifies, within a manufacturer, a device instance</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>928</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </SerialNumber>
+      <RevisionCounter xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=929</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>RevisionCounter</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>An incremental counter indicating the number of times the static data within the Device has been modified</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>929</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=6</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </RevisionCounter>
     </ServiceProvider>
   </ServerCommunicationHARType>
   <ServerCommunicationISA100_WirelessDeviceType xmlns="http://fdi-cooperation.com/OPCUA/FDI7/">
@@ -8932,66 +8932,6 @@
           </OutputArguments>
         </Transfer>
       </MethodSet>
-      <SerialNumber xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=1883</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>SerialNumber</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Identifier that uniquely identifies, within a manufacturer, a device instance</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>1883</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </SerialNumber>
-      <RevisionCounter xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=1884</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>RevisionCounter</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>An incremental counter indicating the number of times the static data within the Device has been modified</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>1884</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=6</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </RevisionCounter>
       <Manufacturer xmlns="http://opcfoundation.org/UA/DI/">
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
@@ -9052,96 +8992,6 @@
         <uax:AccessLevel>1</uax:AccessLevel>
         <uax:UserAccessLevel>1</uax:UserAccessLevel>
       </Model>
-      <DeviceManual xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=1887</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>DeviceManual</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Address (pathname in the file system or a URL | Web address) of user manual for the device</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>1887</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </DeviceManual>
-      <DeviceRevision xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=1888</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>DeviceRevision</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Overall revision level of the device</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>1888</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </DeviceRevision>
-      <SoftwareRevision xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=1889</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>SoftwareRevision</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Revision level of the software/firmware of the device</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>1889</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </SoftwareRevision>
       <HardwareRevision xmlns="http://opcfoundation.org/UA/DI/">
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
@@ -9172,6 +9022,156 @@
         <uax:AccessLevel>1</uax:AccessLevel>
         <uax:UserAccessLevel>1</uax:UserAccessLevel>
       </HardwareRevision>
+      <SoftwareRevision xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=1889</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>SoftwareRevision</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Revision level of the software/firmware of the device</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>1889</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </SoftwareRevision>
+      <DeviceRevision xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=1888</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>DeviceRevision</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Overall revision level of the device</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>1888</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </DeviceRevision>
+      <DeviceManual xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=1887</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>DeviceManual</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Address (pathname in the file system or a URL | Web address) of user manual for the device</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>1887</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </DeviceManual>
+      <SerialNumber xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=1883</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>SerialNumber</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Identifier that uniquely identifies, within a manufacturer, a device instance</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>1883</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </SerialNumber>
+      <RevisionCounter xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=1884</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>RevisionCounter</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>An incremental counter indicating the number of times the static data within the Device has been modified</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>1884</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=6</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </RevisionCounter>
     </ServiceProvider>
   </ServerCommunicationISA100_WirelessDeviceType>
   <ServerCommunicationGENERICDeviceType xmlns="http://fdi-cooperation.com/OPCUA/FDI7/">
@@ -9875,66 +9875,6 @@
           </OutputArguments>
         </Transfer>
       </MethodSet>
-      <SerialNumber xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=2012</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>SerialNumber</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Identifier that uniquely identifies, within a manufacturer, a device instance</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>2012</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </SerialNumber>
-      <RevisionCounter xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=2013</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>RevisionCounter</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>An incremental counter indicating the number of times the static data within the Device has been modified</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>2013</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=6</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </RevisionCounter>
       <Manufacturer xmlns="http://opcfoundation.org/UA/DI/">
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
@@ -9995,96 +9935,6 @@
         <uax:AccessLevel>1</uax:AccessLevel>
         <uax:UserAccessLevel>1</uax:UserAccessLevel>
       </Model>
-      <DeviceManual xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=2016</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>DeviceManual</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Address (pathname in the file system or a URL | Web address) of user manual for the device</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>2016</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </DeviceManual>
-      <DeviceRevision xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=2017</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>DeviceRevision</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Overall revision level of the device</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>2017</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </DeviceRevision>
-      <SoftwareRevision xmlns="http://opcfoundation.org/UA/DI/">
-        <uax:NodeClass>Variable_2</uax:NodeClass>
-        <uax:NodeId>
-          <uax:Identifier>ns=1;i=2018</uax:Identifier>
-        </uax:NodeId>
-        <uax:BrowseName>
-          <uax:NamespaceIndex>2</uax:NamespaceIndex>
-          <uax:Name>SoftwareRevision</uax:Name>
-        </uax:BrowseName>
-        <uax:Description>
-          <uax:Locale></uax:Locale>
-          <uax:Text>Revision level of the software/firmware of the device</uax:Text>
-        </uax:Description>
-        <uax:ReferenceTypeId>
-          <uax:Identifier>i=46</uax:Identifier>
-        </uax:ReferenceTypeId>
-        <uax:TypeDefinitionId>
-          <uax:Identifier>i=68</uax:Identifier>
-        </uax:TypeDefinitionId>
-        <uax:ModellingRuleId>
-          <uax:Identifier>i=78</uax:Identifier>
-        </uax:ModellingRuleId>
-        <uax:NumericId>2018</uax:NumericId>
-        <uax:DataType>
-          <uax:Identifier>i=12</uax:Identifier>
-        </uax:DataType>
-        <uax:ValueRank>-1</uax:ValueRank>
-        <uax:AccessLevel>1</uax:AccessLevel>
-        <uax:UserAccessLevel>1</uax:UserAccessLevel>
-      </SoftwareRevision>
       <HardwareRevision xmlns="http://opcfoundation.org/UA/DI/">
         <uax:NodeClass>Variable_2</uax:NodeClass>
         <uax:NodeId>
@@ -10115,6 +9965,156 @@
         <uax:AccessLevel>1</uax:AccessLevel>
         <uax:UserAccessLevel>1</uax:UserAccessLevel>
       </HardwareRevision>
+      <SoftwareRevision xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=2018</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>SoftwareRevision</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Revision level of the software/firmware of the device</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>2018</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </SoftwareRevision>
+      <DeviceRevision xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=2017</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>DeviceRevision</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Overall revision level of the device</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>2017</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </DeviceRevision>
+      <DeviceManual xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=2016</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>DeviceManual</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Address (pathname in the file system or a URL | Web address) of user manual for the device</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>2016</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </DeviceManual>
+      <SerialNumber xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=2012</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>SerialNumber</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>Identifier that uniquely identifies, within a manufacturer, a device instance</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>2012</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=12</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </SerialNumber>
+      <RevisionCounter xmlns="http://opcfoundation.org/UA/DI/">
+        <uax:NodeClass>Variable_2</uax:NodeClass>
+        <uax:NodeId>
+          <uax:Identifier>ns=1;i=2013</uax:Identifier>
+        </uax:NodeId>
+        <uax:BrowseName>
+          <uax:NamespaceIndex>2</uax:NamespaceIndex>
+          <uax:Name>RevisionCounter</uax:Name>
+        </uax:BrowseName>
+        <uax:Description>
+          <uax:Locale></uax:Locale>
+          <uax:Text>An incremental counter indicating the number of times the static data within the Device has been modified</uax:Text>
+        </uax:Description>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=46</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TypeDefinitionId>
+          <uax:Identifier>i=68</uax:Identifier>
+        </uax:TypeDefinitionId>
+        <uax:ModellingRuleId>
+          <uax:Identifier>i=78</uax:Identifier>
+        </uax:ModellingRuleId>
+        <uax:NumericId>2013</uax:NumericId>
+        <uax:DataType>
+          <uax:Identifier>i=6</uax:Identifier>
+        </uax:DataType>
+        <uax:ValueRank>-1</uax:ValueRank>
+        <uax:AccessLevel>1</uax:AccessLevel>
+        <uax:UserAccessLevel>1</uax:UserAccessLevel>
+      </RevisionCounter>
     </ServiceProvider>
   </ServerCommunicationGENERICDeviceType>
   <ConnectMethodFFH1Type xmlns="http://fdi-cooperation.com/OPCUA/FDI7/">

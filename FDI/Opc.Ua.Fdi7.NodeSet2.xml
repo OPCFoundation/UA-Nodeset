@@ -28,15 +28,15 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2017-07-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2017-07-14T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
     <Uri>http://fdi-cooperation.com/OPCUA/FDI7/</Uri>
     <Uri>http://opcfoundation.org/UA/DI/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://fdi-cooperation.com/OPCUA/FDI7/" PublicationDate="2017-07-15T00:00:00Z">
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.03" PublicationDate="2013-12-02T00:00:00Z" />
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.01" PublicationDate="2012-12-31T00:00:00Z" />
+    <Model ModelUri="http://fdi-cooperation.com/OPCUA/FDI7/" PublicationDate="2017-07-14T00:00:00Z">
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2019-05-01T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.02" PublicationDate="2019-05-01T00:00:00Z" />
     </Model>
   </Models>
   <Aliases>
@@ -120,7 +120,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15009</Reference>
     </References>
     <Value>
-      <DateTime xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2017-07-15T00:00:00Z</DateTime>
+      <DateTime xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2017-07-14T00:00:00Z</DateTime>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=15013" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=15009" DataType="Boolean">
@@ -1966,14 +1966,14 @@
     <DisplayName>ServiceProvider</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=404</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=422</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=423</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=424</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=425</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=426</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=427</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=428</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=429</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=428</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=427</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=426</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=422</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=423</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=997</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=324</Reference>
@@ -2394,24 +2394,6 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=422" BrowseName="2:SerialNumber" ParentNodeId="ns=1;i=401" DataType="String">
-    <DisplayName>SerialNumber</DisplayName>
-    <Description>Identifier that uniquely identifies, within a manufacturer, a device instance</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=401</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=423" BrowseName="2:RevisionCounter" ParentNodeId="ns=1;i=401" DataType="Int32">
-    <DisplayName>RevisionCounter</DisplayName>
-    <Description>An incremental counter indicating the number of times the static data within the Device has been modified</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=401</Reference>
-    </References>
-  </UAVariable>
   <UAVariable NodeId="ns=1;i=424" BrowseName="2:Manufacturer" ParentNodeId="ns=1;i=401" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description>Name of the company that manufactured the device</Description>
@@ -2430,18 +2412,9 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=401</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=426" BrowseName="2:DeviceManual" ParentNodeId="ns=1;i=401" DataType="String">
-    <DisplayName>DeviceManual</DisplayName>
-    <Description>Address (pathname in the file system or a URL | Web address) of user manual for the device</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=401</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=427" BrowseName="2:DeviceRevision" ParentNodeId="ns=1;i=401" DataType="String">
-    <DisplayName>DeviceRevision</DisplayName>
-    <Description>Overall revision level of the device</Description>
+  <UAVariable NodeId="ns=1;i=429" BrowseName="2:HardwareRevision" ParentNodeId="ns=1;i=401" DataType="String">
+    <DisplayName>HardwareRevision</DisplayName>
+    <Description>Revision level of the hardware of the device</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2457,9 +2430,36 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=401</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=429" BrowseName="2:HardwareRevision" ParentNodeId="ns=1;i=401" DataType="String">
-    <DisplayName>HardwareRevision</DisplayName>
-    <Description>Revision level of the hardware of the device</Description>
+  <UAVariable NodeId="ns=1;i=427" BrowseName="2:DeviceRevision" ParentNodeId="ns=1;i=401" DataType="String">
+    <DisplayName>DeviceRevision</DisplayName>
+    <Description>Overall revision level of the device</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=401</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=426" BrowseName="2:DeviceManual" ParentNodeId="ns=1;i=401" DataType="String">
+    <DisplayName>DeviceManual</DisplayName>
+    <Description>Address (pathname in the file system or a URL | Web address) of user manual for the device</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=401</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=422" BrowseName="2:SerialNumber" ParentNodeId="ns=1;i=401" DataType="String">
+    <DisplayName>SerialNumber</DisplayName>
+    <Description>Identifier that uniquely identifies, within a manufacturer, a device instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=401</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=423" BrowseName="2:RevisionCounter" ParentNodeId="ns=1;i=401" DataType="Int32">
+    <DisplayName>RevisionCounter</DisplayName>
+    <Description>An incremental counter indicating the number of times the static data within the Device has been modified</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2596,14 +2596,14 @@
     <DisplayName>ServiceProvider</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=532</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=550</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=551</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=552</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=553</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=554</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=555</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=556</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=557</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=556</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=555</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=554</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=550</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=551</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1073</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=452</Reference>
@@ -2994,24 +2994,6 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=550" BrowseName="2:SerialNumber" ParentNodeId="ns=1;i=529" DataType="String">
-    <DisplayName>SerialNumber</DisplayName>
-    <Description>Identifier that uniquely identifies, within a manufacturer, a device instance</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=529</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=551" BrowseName="2:RevisionCounter" ParentNodeId="ns=1;i=529" DataType="Int32">
-    <DisplayName>RevisionCounter</DisplayName>
-    <Description>An incremental counter indicating the number of times the static data within the Device has been modified</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=529</Reference>
-    </References>
-  </UAVariable>
   <UAVariable NodeId="ns=1;i=552" BrowseName="2:Manufacturer" ParentNodeId="ns=1;i=529" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description>Name of the company that manufactured the device</Description>
@@ -3030,18 +3012,9 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=529</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=554" BrowseName="2:DeviceManual" ParentNodeId="ns=1;i=529" DataType="String">
-    <DisplayName>DeviceManual</DisplayName>
-    <Description>Address (pathname in the file system or a URL | Web address) of user manual for the device</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=529</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=555" BrowseName="2:DeviceRevision" ParentNodeId="ns=1;i=529" DataType="String">
-    <DisplayName>DeviceRevision</DisplayName>
-    <Description>Overall revision level of the device</Description>
+  <UAVariable NodeId="ns=1;i=557" BrowseName="2:HardwareRevision" ParentNodeId="ns=1;i=529" DataType="String">
+    <DisplayName>HardwareRevision</DisplayName>
+    <Description>Revision level of the hardware of the device</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3057,9 +3030,36 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=529</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=557" BrowseName="2:HardwareRevision" ParentNodeId="ns=1;i=529" DataType="String">
-    <DisplayName>HardwareRevision</DisplayName>
-    <Description>Revision level of the hardware of the device</Description>
+  <UAVariable NodeId="ns=1;i=555" BrowseName="2:DeviceRevision" ParentNodeId="ns=1;i=529" DataType="String">
+    <DisplayName>DeviceRevision</DisplayName>
+    <Description>Overall revision level of the device</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=529</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=554" BrowseName="2:DeviceManual" ParentNodeId="ns=1;i=529" DataType="String">
+    <DisplayName>DeviceManual</DisplayName>
+    <Description>Address (pathname in the file system or a URL | Web address) of user manual for the device</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=529</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=550" BrowseName="2:SerialNumber" ParentNodeId="ns=1;i=529" DataType="String">
+    <DisplayName>SerialNumber</DisplayName>
+    <Description>Identifier that uniquely identifies, within a manufacturer, a device instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=529</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=551" BrowseName="2:RevisionCounter" ParentNodeId="ns=1;i=529" DataType="Int32">
+    <DisplayName>RevisionCounter</DisplayName>
+    <Description>An incremental counter indicating the number of times the static data within the Device has been modified</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3166,14 +3166,14 @@
     <DisplayName>ServiceProvider</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=660</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=678</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=679</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=680</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=681</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=682</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=683</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=684</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=685</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=684</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=683</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=682</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=678</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=679</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1149</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=580</Reference>
@@ -3500,24 +3500,6 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=678" BrowseName="2:SerialNumber" ParentNodeId="ns=1;i=657" DataType="String">
-    <DisplayName>SerialNumber</DisplayName>
-    <Description>Identifier that uniquely identifies, within a manufacturer, a device instance</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=657</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=679" BrowseName="2:RevisionCounter" ParentNodeId="ns=1;i=657" DataType="Int32">
-    <DisplayName>RevisionCounter</DisplayName>
-    <Description>An incremental counter indicating the number of times the static data within the Device has been modified</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=657</Reference>
-    </References>
-  </UAVariable>
   <UAVariable NodeId="ns=1;i=680" BrowseName="2:Manufacturer" ParentNodeId="ns=1;i=657" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description>Name of the company that manufactured the device</Description>
@@ -3536,18 +3518,9 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=657</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=682" BrowseName="2:DeviceManual" ParentNodeId="ns=1;i=657" DataType="String">
-    <DisplayName>DeviceManual</DisplayName>
-    <Description>Address (pathname in the file system or a URL | Web address) of user manual for the device</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=657</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=683" BrowseName="2:DeviceRevision" ParentNodeId="ns=1;i=657" DataType="String">
-    <DisplayName>DeviceRevision</DisplayName>
-    <Description>Overall revision level of the device</Description>
+  <UAVariable NodeId="ns=1;i=685" BrowseName="2:HardwareRevision" ParentNodeId="ns=1;i=657" DataType="String">
+    <DisplayName>HardwareRevision</DisplayName>
+    <Description>Revision level of the hardware of the device</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3563,9 +3536,36 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=657</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=685" BrowseName="2:HardwareRevision" ParentNodeId="ns=1;i=657" DataType="String">
-    <DisplayName>HardwareRevision</DisplayName>
-    <Description>Revision level of the hardware of the device</Description>
+  <UAVariable NodeId="ns=1;i=683" BrowseName="2:DeviceRevision" ParentNodeId="ns=1;i=657" DataType="String">
+    <DisplayName>DeviceRevision</DisplayName>
+    <Description>Overall revision level of the device</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=657</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=682" BrowseName="2:DeviceManual" ParentNodeId="ns=1;i=657" DataType="String">
+    <DisplayName>DeviceManual</DisplayName>
+    <Description>Address (pathname in the file system or a URL | Web address) of user manual for the device</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=657</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=678" BrowseName="2:SerialNumber" ParentNodeId="ns=1;i=657" DataType="String">
+    <DisplayName>SerialNumber</DisplayName>
+    <Description>Identifier that uniquely identifies, within a manufacturer, a device instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=657</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=679" BrowseName="2:RevisionCounter" ParentNodeId="ns=1;i=657" DataType="Int32">
+    <DisplayName>RevisionCounter</DisplayName>
+    <Description>An incremental counter indicating the number of times the static data within the Device has been modified</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3725,14 +3725,14 @@
     <DisplayName>ServiceProvider</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=785</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=803</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=804</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=805</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=806</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=807</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=808</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=809</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=810</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=809</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=808</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=807</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=803</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=804</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1222</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=705</Reference>
@@ -4104,24 +4104,6 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=803" BrowseName="2:SerialNumber" ParentNodeId="ns=1;i=782" DataType="String">
-    <DisplayName>SerialNumber</DisplayName>
-    <Description>Identifier that uniquely identifies, within a manufacturer, a device instance</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=782</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=804" BrowseName="2:RevisionCounter" ParentNodeId="ns=1;i=782" DataType="Int32">
-    <DisplayName>RevisionCounter</DisplayName>
-    <Description>An incremental counter indicating the number of times the static data within the Device has been modified</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=782</Reference>
-    </References>
-  </UAVariable>
   <UAVariable NodeId="ns=1;i=805" BrowseName="2:Manufacturer" ParentNodeId="ns=1;i=782" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description>Name of the company that manufactured the device</Description>
@@ -4140,18 +4122,9 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=782</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=807" BrowseName="2:DeviceManual" ParentNodeId="ns=1;i=782" DataType="String">
-    <DisplayName>DeviceManual</DisplayName>
-    <Description>Address (pathname in the file system or a URL | Web address) of user manual for the device</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=782</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=808" BrowseName="2:DeviceRevision" ParentNodeId="ns=1;i=782" DataType="String">
-    <DisplayName>DeviceRevision</DisplayName>
-    <Description>Overall revision level of the device</Description>
+  <UAVariable NodeId="ns=1;i=810" BrowseName="2:HardwareRevision" ParentNodeId="ns=1;i=782" DataType="String">
+    <DisplayName>HardwareRevision</DisplayName>
+    <Description>Revision level of the hardware of the device</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -4167,9 +4140,36 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=782</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=810" BrowseName="2:HardwareRevision" ParentNodeId="ns=1;i=782" DataType="String">
-    <DisplayName>HardwareRevision</DisplayName>
-    <Description>Revision level of the hardware of the device</Description>
+  <UAVariable NodeId="ns=1;i=808" BrowseName="2:DeviceRevision" ParentNodeId="ns=1;i=782" DataType="String">
+    <DisplayName>DeviceRevision</DisplayName>
+    <Description>Overall revision level of the device</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=782</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=807" BrowseName="2:DeviceManual" ParentNodeId="ns=1;i=782" DataType="String">
+    <DisplayName>DeviceManual</DisplayName>
+    <Description>Address (pathname in the file system or a URL | Web address) of user manual for the device</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=782</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=803" BrowseName="2:SerialNumber" ParentNodeId="ns=1;i=782" DataType="String">
+    <DisplayName>SerialNumber</DisplayName>
+    <Description>Identifier that uniquely identifies, within a manufacturer, a device instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=782</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=804" BrowseName="2:RevisionCounter" ParentNodeId="ns=1;i=782" DataType="Int32">
+    <DisplayName>RevisionCounter</DisplayName>
+    <Description>An incremental counter indicating the number of times the static data within the Device has been modified</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -4276,14 +4276,14 @@
     <DisplayName>ServiceProvider</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=910</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=928</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=929</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=930</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=931</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=932</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=933</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=934</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=935</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=934</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=933</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=932</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=928</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=929</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1295</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=830</Reference>
@@ -4550,24 +4550,6 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=928" BrowseName="2:SerialNumber" ParentNodeId="ns=1;i=907" DataType="String">
-    <DisplayName>SerialNumber</DisplayName>
-    <Description>Identifier that uniquely identifies, within a manufacturer, a device instance</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=907</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=929" BrowseName="2:RevisionCounter" ParentNodeId="ns=1;i=907" DataType="Int32">
-    <DisplayName>RevisionCounter</DisplayName>
-    <Description>An incremental counter indicating the number of times the static data within the Device has been modified</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=907</Reference>
-    </References>
-  </UAVariable>
   <UAVariable NodeId="ns=1;i=930" BrowseName="2:Manufacturer" ParentNodeId="ns=1;i=907" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description>Name of the company that manufactured the device</Description>
@@ -4586,18 +4568,9 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=907</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=932" BrowseName="2:DeviceManual" ParentNodeId="ns=1;i=907" DataType="String">
-    <DisplayName>DeviceManual</DisplayName>
-    <Description>Address (pathname in the file system or a URL | Web address) of user manual for the device</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=907</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=933" BrowseName="2:DeviceRevision" ParentNodeId="ns=1;i=907" DataType="String">
-    <DisplayName>DeviceRevision</DisplayName>
-    <Description>Overall revision level of the device</Description>
+  <UAVariable NodeId="ns=1;i=935" BrowseName="2:HardwareRevision" ParentNodeId="ns=1;i=907" DataType="String">
+    <DisplayName>HardwareRevision</DisplayName>
+    <Description>Revision level of the hardware of the device</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -4613,9 +4586,36 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=907</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=935" BrowseName="2:HardwareRevision" ParentNodeId="ns=1;i=907" DataType="String">
-    <DisplayName>HardwareRevision</DisplayName>
-    <Description>Revision level of the hardware of the device</Description>
+  <UAVariable NodeId="ns=1;i=933" BrowseName="2:DeviceRevision" ParentNodeId="ns=1;i=907" DataType="String">
+    <DisplayName>DeviceRevision</DisplayName>
+    <Description>Overall revision level of the device</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=907</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=932" BrowseName="2:DeviceManual" ParentNodeId="ns=1;i=907" DataType="String">
+    <DisplayName>DeviceManual</DisplayName>
+    <Description>Address (pathname in the file system or a URL | Web address) of user manual for the device</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=907</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=928" BrowseName="2:SerialNumber" ParentNodeId="ns=1;i=907" DataType="String">
+    <DisplayName>SerialNumber</DisplayName>
+    <Description>Identifier that uniquely identifies, within a manufacturer, a device instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=907</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=929" BrowseName="2:RevisionCounter" ParentNodeId="ns=1;i=907" DataType="Int32">
+    <DisplayName>RevisionCounter</DisplayName>
+    <Description>An incremental counter indicating the number of times the static data within the Device has been modified</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -4633,14 +4633,14 @@
     <DisplayName>ServiceProvider</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=1865</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=1883</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=1884</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=1885</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=1886</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=1887</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=1888</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=1889</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=1890</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1889</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1888</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1887</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1883</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1884</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=2057</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1788</Reference>
@@ -5001,24 +5001,6 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=1883" BrowseName="2:SerialNumber" ParentNodeId="ns=1;i=1862" DataType="String">
-    <DisplayName>SerialNumber</DisplayName>
-    <Description>Identifier that uniquely identifies, within a manufacturer, a device instance</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1862</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=1884" BrowseName="2:RevisionCounter" ParentNodeId="ns=1;i=1862" DataType="Int32">
-    <DisplayName>RevisionCounter</DisplayName>
-    <Description>An incremental counter indicating the number of times the static data within the Device has been modified</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1862</Reference>
-    </References>
-  </UAVariable>
   <UAVariable NodeId="ns=1;i=1885" BrowseName="2:Manufacturer" ParentNodeId="ns=1;i=1862" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description>Name of the company that manufactured the device</Description>
@@ -5037,18 +5019,9 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1862</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=1887" BrowseName="2:DeviceManual" ParentNodeId="ns=1;i=1862" DataType="String">
-    <DisplayName>DeviceManual</DisplayName>
-    <Description>Address (pathname in the file system or a URL | Web address) of user manual for the device</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1862</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=1888" BrowseName="2:DeviceRevision" ParentNodeId="ns=1;i=1862" DataType="String">
-    <DisplayName>DeviceRevision</DisplayName>
-    <Description>Overall revision level of the device</Description>
+  <UAVariable NodeId="ns=1;i=1890" BrowseName="2:HardwareRevision" ParentNodeId="ns=1;i=1862" DataType="String">
+    <DisplayName>HardwareRevision</DisplayName>
+    <Description>Revision level of the hardware of the device</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -5064,9 +5037,36 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1862</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=1890" BrowseName="2:HardwareRevision" ParentNodeId="ns=1;i=1862" DataType="String">
-    <DisplayName>HardwareRevision</DisplayName>
-    <Description>Revision level of the hardware of the device</Description>
+  <UAVariable NodeId="ns=1;i=1888" BrowseName="2:DeviceRevision" ParentNodeId="ns=1;i=1862" DataType="String">
+    <DisplayName>DeviceRevision</DisplayName>
+    <Description>Overall revision level of the device</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1862</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=1887" BrowseName="2:DeviceManual" ParentNodeId="ns=1;i=1862" DataType="String">
+    <DisplayName>DeviceManual</DisplayName>
+    <Description>Address (pathname in the file system or a URL | Web address) of user manual for the device</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1862</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=1883" BrowseName="2:SerialNumber" ParentNodeId="ns=1;i=1862" DataType="String">
+    <DisplayName>SerialNumber</DisplayName>
+    <Description>Identifier that uniquely identifies, within a manufacturer, a device instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1862</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=1884" BrowseName="2:RevisionCounter" ParentNodeId="ns=1;i=1862" DataType="Int32">
+    <DisplayName>RevisionCounter</DisplayName>
+    <Description>An incremental counter indicating the number of times the static data within the Device has been modified</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -5182,14 +5182,14 @@
     <DisplayName>ServiceProvider</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=1994</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=2012</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=2013</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=2014</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=2015</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=2016</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=2017</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=2018</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=2019</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=2018</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=2017</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=2016</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=2012</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=2013</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=2133</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1913</Reference>
@@ -5505,24 +5505,6 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=2012" BrowseName="2:SerialNumber" ParentNodeId="ns=1;i=1991" DataType="String">
-    <DisplayName>SerialNumber</DisplayName>
-    <Description>Identifier that uniquely identifies, within a manufacturer, a device instance</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1991</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=2013" BrowseName="2:RevisionCounter" ParentNodeId="ns=1;i=1991" DataType="Int32">
-    <DisplayName>RevisionCounter</DisplayName>
-    <Description>An incremental counter indicating the number of times the static data within the Device has been modified</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1991</Reference>
-    </References>
-  </UAVariable>
   <UAVariable NodeId="ns=1;i=2014" BrowseName="2:Manufacturer" ParentNodeId="ns=1;i=1991" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description>Name of the company that manufactured the device</Description>
@@ -5541,18 +5523,9 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1991</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=2016" BrowseName="2:DeviceManual" ParentNodeId="ns=1;i=1991" DataType="String">
-    <DisplayName>DeviceManual</DisplayName>
-    <Description>Address (pathname in the file system or a URL | Web address) of user manual for the device</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1991</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=2017" BrowseName="2:DeviceRevision" ParentNodeId="ns=1;i=1991" DataType="String">
-    <DisplayName>DeviceRevision</DisplayName>
-    <Description>Overall revision level of the device</Description>
+  <UAVariable NodeId="ns=1;i=2019" BrowseName="2:HardwareRevision" ParentNodeId="ns=1;i=1991" DataType="String">
+    <DisplayName>HardwareRevision</DisplayName>
+    <Description>Revision level of the hardware of the device</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -5568,9 +5541,36 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1991</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=2019" BrowseName="2:HardwareRevision" ParentNodeId="ns=1;i=1991" DataType="String">
-    <DisplayName>HardwareRevision</DisplayName>
-    <Description>Revision level of the hardware of the device</Description>
+  <UAVariable NodeId="ns=1;i=2017" BrowseName="2:DeviceRevision" ParentNodeId="ns=1;i=1991" DataType="String">
+    <DisplayName>DeviceRevision</DisplayName>
+    <Description>Overall revision level of the device</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1991</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=2016" BrowseName="2:DeviceManual" ParentNodeId="ns=1;i=1991" DataType="String">
+    <DisplayName>DeviceManual</DisplayName>
+    <Description>Address (pathname in the file system or a URL | Web address) of user manual for the device</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1991</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=2012" BrowseName="2:SerialNumber" ParentNodeId="ns=1;i=1991" DataType="String">
+    <DisplayName>SerialNumber</DisplayName>
+    <Description>Identifier that uniquely identifies, within a manufacturer, a device instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1991</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=2013" BrowseName="2:RevisionCounter" ParentNodeId="ns=1;i=1991" DataType="Int32">
+    <DisplayName>RevisionCounter</DisplayName>
+    <Description>An incremental counter indicating the number of times the static data within the Device has been modified</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
