@@ -105,7 +105,7 @@
       <uax:NumericId>15003</uax:NumericId>
       <uax:Value>
         <uax:Value>
-          <uax:String>1.01</uax:String>
+          <uax:String>1.02</uax:String>
         </uax:Value>
       </uax:Value>
       <uax:DataType>
@@ -133,7 +133,7 @@
       <uax:NumericId>15004</uax:NumericId>
       <uax:Value>
         <uax:Value>
-          <uax:DateTime>2019-01-21T00:00:00Z</uax:DateTime>
+          <uax:DateTime>2019-05-01T00:00:00Z</uax:DateTime>
         </uax:Value>
       </uax:Value>
       <uax:DataType>
