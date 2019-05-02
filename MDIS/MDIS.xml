@@ -253,7 +253,6 @@
     </opc:InputArguments>
   </opc:Method>
 
-
   <!--  Write state -->
   <opc:Method SymbolicName="WriteStateMethodType" >
     <opc:InputArguments>

@@ -3687,11 +3687,6 @@ namespace Opc.Ua.Adi
         public const uint OpcUaAdiNamespaceMetadata_DefaultAccessRestrictions = 15033;
 
         /// <summary>
-        /// The identifier for the AnalyserDeviceType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint AnalyserDeviceType_Lock_DefaultInstanceBrowseName = 15034;
-
-        /// <summary>
         /// The identifier for the AnalyserDeviceType_Lock_Locked Variable.
         /// </summary>
         public const uint AnalyserDeviceType_Lock_Locked = 9389;
@@ -3735,11 +3730,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AnalyserDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public const uint AnalyserDeviceType_Lock_BreakLock_OutputArguments = 9401;
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint AnalyserDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15040;
 
         /// <summary>
         /// The identifier for the AnalyserDeviceType_CPIdentifier_Lock_Locked Variable.
@@ -3900,11 +3890,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AnalyserDeviceType_AnalyserStateMachine_LastTransition_Id Variable.
         /// </summary>
         public const uint AnalyserDeviceType_AnalyserStateMachine_LastTransition_Id = 9495;
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint AnalyserDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName = 15041;
 
         /// <summary>
         /// The identifier for the AnalyserDeviceType_ChannelIdentifier_Lock_Locked Variable.
@@ -4157,11 +4142,6 @@ namespace Opc.Ua.Adi
         public const uint AnalyserDeviceStateMachineType_MaintenanceToShutdownTransition_TransitionNumber = 9676;
 
         /// <summary>
-        /// The identifier for the AnalyserChannelType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint AnalyserChannelType_Lock_DefaultInstanceBrowseName = 15042;
-
-        /// <summary>
         /// The identifier for the AnalyserChannelType_Lock_Locked Variable.
         /// </summary>
         public const uint AnalyserChannelType_Lock_Locked = 9686;
@@ -4305,11 +4285,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AnalyserChannelType_ChannelStateMachine_MaintenanceSubStateMachine_LastTransition_Id Variable.
         /// </summary>
         public const uint AnalyserChannelType_ChannelStateMachine_MaintenanceSubStateMachine_LastTransition_Id = 9783;
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_StreamIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint AnalyserChannelType_StreamIdentifier_Lock_DefaultInstanceBrowseName = 15043;
 
         /// <summary>
         /// The identifier for the AnalyserChannelType_StreamIdentifier_Lock_Locked Variable.
@@ -5272,11 +5247,6 @@ namespace Opc.Ua.Adi
         public const uint AnalyserChannel_OperatingModeExecuteSubStateMachineType_CleanupSamplingSystemToSelectExecutionCycleTransition_TransitionNumber = 10316;
 
         /// <summary>
-        /// The identifier for the StreamType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint StreamType_Lock_DefaultInstanceBrowseName = 15044;
-
-        /// <summary>
         /// The identifier for the StreamType_Lock_Locked Variable.
         /// </summary>
         public const uint StreamType_Lock_Locked = 10326;
@@ -5475,11 +5445,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the StreamType_ParameterSet_SampleId Variable.
         /// </summary>
         public const uint StreamType_ParameterSet_SampleId = 10427;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint SpectrometerDeviceStreamType_Lock_DefaultInstanceBrowseName = 15045;
 
         /// <summary>
         /// The identifier for the SpectrometerDeviceStreamType_Lock_Locked Variable.
@@ -5762,11 +5727,6 @@ namespace Opc.Ua.Adi
         public const uint SpectrometerDeviceStreamType_ParameterSet_PendingBackground1_XAxisDefinition = 10637;
 
         /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint MassSpectrometerDeviceStreamType_Lock_DefaultInstanceBrowseName = 15046;
-
-        /// <summary>
         /// The identifier for the MassSpectrometerDeviceStreamType_Lock_Locked Variable.
         /// </summary>
         public const uint MassSpectrometerDeviceStreamType_Lock_Locked = 10648;
@@ -5880,11 +5840,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the MassSpectrometerDeviceStreamType_ParameterSet_AcquisitionEndTime Variable.
         /// </summary>
         public const uint MassSpectrometerDeviceStreamType_ParameterSet_AcquisitionEndTime = 10716;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceStreamType_Lock_DefaultInstanceBrowseName = 15047;
 
         /// <summary>
         /// The identifier for the ParticleSizeMonitorDeviceStreamType_Lock_Locked Variable.
@@ -6067,11 +6022,6 @@ namespace Opc.Ua.Adi
         public const uint ParticleSizeMonitorDeviceStreamType_ParameterSet_BackgroundAcquisitionTime = 10915;
 
         /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceStreamType_Lock_DefaultInstanceBrowseName = 15048;
-
-        /// <summary>
         /// The identifier for the AcousticSpectrometerDeviceStreamType_Lock_Locked Variable.
         /// </summary>
         public const uint AcousticSpectrometerDeviceStreamType_Lock_Locked = 10927;
@@ -6185,11 +6135,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AcousticSpectrometerDeviceStreamType_ParameterSet_AcquisitionEndTime Variable.
         /// </summary>
         public const uint AcousticSpectrometerDeviceStreamType_ParameterSet_AcquisitionEndTime = 10995;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint ChromatographDeviceStreamType_Lock_DefaultInstanceBrowseName = 15049;
 
         /// <summary>
         /// The identifier for the ChromatographDeviceStreamType_Lock_Locked Variable.
@@ -6307,11 +6252,6 @@ namespace Opc.Ua.Adi
         public const uint ChromatographDeviceStreamType_ParameterSet_AcquisitionEndTime = 11124;
 
         /// <summary>
-        /// The identifier for the MNRDeviceStreamType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint MNRDeviceStreamType_Lock_DefaultInstanceBrowseName = 15050;
-
-        /// <summary>
         /// The identifier for the MNRDeviceStreamType_Lock_Locked Variable.
         /// </summary>
         public const uint MNRDeviceStreamType_Lock_Locked = 11185;
@@ -6427,11 +6367,6 @@ namespace Opc.Ua.Adi
         public const uint MNRDeviceStreamType_ParameterSet_AcquisitionEndTime = 11253;
 
         /// <summary>
-        /// The identifier for the SpectrometerDeviceType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint SpectrometerDeviceType_Lock_DefaultInstanceBrowseName = 15051;
-
-        /// <summary>
         /// The identifier for the SpectrometerDeviceType_Lock_Locked Variable.
         /// </summary>
         public const uint SpectrometerDeviceType_Lock_Locked = 11314;
@@ -6475,11 +6410,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the SpectrometerDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public const uint SpectrometerDeviceType_Lock_BreakLock_OutputArguments = 11326;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint SpectrometerDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15057;
 
         /// <summary>
         /// The identifier for the SpectrometerDeviceType_CPIdentifier_Lock_Locked Variable.
@@ -6640,11 +6570,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the SpectrometerDeviceType_AnalyserStateMachine_LastTransition_Id Variable.
         /// </summary>
         public const uint SpectrometerDeviceType_AnalyserStateMachine_LastTransition_Id = 11420;
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint SpectrometerDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName = 15058;
 
         /// <summary>
         /// The identifier for the SpectrometerDeviceType_ChannelIdentifier_Lock_Locked Variable.
@@ -6817,11 +6742,6 @@ namespace Opc.Ua.Adi
         public const uint SpectrometerDeviceType_ParameterSet_SpectralRange = 11551;
 
         /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceType_Lock_DefaultInstanceBrowseName = 15059;
-
-        /// <summary>
         /// The identifier for the ParticleSizeMonitorDeviceType_Lock_Locked Variable.
         /// </summary>
         public const uint ParticleSizeMonitorDeviceType_Lock_Locked = 11563;
@@ -6865,11 +6785,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the ParticleSizeMonitorDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public const uint ParticleSizeMonitorDeviceType_Lock_BreakLock_OutputArguments = 11575;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15065;
 
         /// <summary>
         /// The identifier for the ParticleSizeMonitorDeviceType_CPIdentifier_Lock_Locked Variable.
@@ -7030,11 +6945,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the ParticleSizeMonitorDeviceType_AnalyserStateMachine_LastTransition_Id Variable.
         /// </summary>
         public const uint ParticleSizeMonitorDeviceType_AnalyserStateMachine_LastTransition_Id = 11669;
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint ParticleSizeMonitorDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName = 15066;
 
         /// <summary>
         /// The identifier for the ParticleSizeMonitorDeviceType_ChannelIdentifier_Lock_Locked Variable.
@@ -7202,11 +7112,6 @@ namespace Opc.Ua.Adi
         public const uint ParticleSizeMonitorDeviceType_AccessorySlotIdentifier_AccessorySlotStateMachine_LastTransition_Id = 11795;
 
         /// <summary>
-        /// The identifier for the ChromatographDeviceType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint ChromatographDeviceType_Lock_DefaultInstanceBrowseName = 15067;
-
-        /// <summary>
         /// The identifier for the ChromatographDeviceType_Lock_Locked Variable.
         /// </summary>
         public const uint ChromatographDeviceType_Lock_Locked = 11809;
@@ -7250,11 +7155,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the ChromatographDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public const uint ChromatographDeviceType_Lock_BreakLock_OutputArguments = 11821;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint ChromatographDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15073;
 
         /// <summary>
         /// The identifier for the ChromatographDeviceType_CPIdentifier_Lock_Locked Variable.
@@ -7415,11 +7315,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the ChromatographDeviceType_AnalyserStateMachine_LastTransition_Id Variable.
         /// </summary>
         public const uint ChromatographDeviceType_AnalyserStateMachine_LastTransition_Id = 11915;
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint ChromatographDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName = 15074;
 
         /// <summary>
         /// The identifier for the ChromatographDeviceType_ChannelIdentifier_Lock_Locked Variable.
@@ -7587,11 +7482,6 @@ namespace Opc.Ua.Adi
         public const uint ChromatographDeviceType_AccessorySlotIdentifier_AccessorySlotStateMachine_LastTransition_Id = 12041;
 
         /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint MassSpectrometerDeviceType_Lock_DefaultInstanceBrowseName = 15075;
-
-        /// <summary>
         /// The identifier for the MassSpectrometerDeviceType_Lock_Locked Variable.
         /// </summary>
         public const uint MassSpectrometerDeviceType_Lock_Locked = 12055;
@@ -7635,11 +7525,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the MassSpectrometerDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public const uint MassSpectrometerDeviceType_Lock_BreakLock_OutputArguments = 12067;
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint MassSpectrometerDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15081;
 
         /// <summary>
         /// The identifier for the MassSpectrometerDeviceType_CPIdentifier_Lock_Locked Variable.
@@ -7800,11 +7685,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the MassSpectrometerDeviceType_AnalyserStateMachine_LastTransition_Id Variable.
         /// </summary>
         public const uint MassSpectrometerDeviceType_AnalyserStateMachine_LastTransition_Id = 12161;
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint MassSpectrometerDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName = 15082;
 
         /// <summary>
         /// The identifier for the MassSpectrometerDeviceType_ChannelIdentifier_Lock_Locked Variable.
@@ -7972,11 +7852,6 @@ namespace Opc.Ua.Adi
         public const uint MassSpectrometerDeviceType_AccessorySlotIdentifier_AccessorySlotStateMachine_LastTransition_Id = 12287;
 
         /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceType_Lock_DefaultInstanceBrowseName = 15083;
-
-        /// <summary>
         /// The identifier for the AcousticSpectrometerDeviceType_Lock_Locked Variable.
         /// </summary>
         public const uint AcousticSpectrometerDeviceType_Lock_Locked = 12301;
@@ -8020,11 +7895,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AcousticSpectrometerDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public const uint AcousticSpectrometerDeviceType_Lock_BreakLock_OutputArguments = 12313;
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15089;
 
         /// <summary>
         /// The identifier for the AcousticSpectrometerDeviceType_CPIdentifier_Lock_Locked Variable.
@@ -8185,11 +8055,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AcousticSpectrometerDeviceType_AnalyserStateMachine_LastTransition_Id Variable.
         /// </summary>
         public const uint AcousticSpectrometerDeviceType_AnalyserStateMachine_LastTransition_Id = 12407;
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint AcousticSpectrometerDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName = 15090;
 
         /// <summary>
         /// The identifier for the AcousticSpectrometerDeviceType_ChannelIdentifier_Lock_Locked Variable.
@@ -8357,11 +8222,6 @@ namespace Opc.Ua.Adi
         public const uint AcousticSpectrometerDeviceType_AccessorySlotIdentifier_AccessorySlotStateMachine_LastTransition_Id = 12533;
 
         /// <summary>
-        /// The identifier for the NMRDeviceType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint NMRDeviceType_Lock_DefaultInstanceBrowseName = 15091;
-
-        /// <summary>
         /// The identifier for the NMRDeviceType_Lock_Locked Variable.
         /// </summary>
         public const uint NMRDeviceType_Lock_Locked = 12547;
@@ -8405,11 +8265,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the NMRDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public const uint NMRDeviceType_Lock_BreakLock_OutputArguments = 12559;
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint NMRDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15097;
 
         /// <summary>
         /// The identifier for the NMRDeviceType_CPIdentifier_Lock_Locked Variable.
@@ -8570,11 +8425,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the NMRDeviceType_AnalyserStateMachine_LastTransition_Id Variable.
         /// </summary>
         public const uint NMRDeviceType_AnalyserStateMachine_LastTransition_Id = 12653;
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint NMRDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName = 15098;
 
         /// <summary>
         /// The identifier for the NMRDeviceType_ChannelIdentifier_Lock_Locked Variable.
@@ -8767,11 +8617,6 @@ namespace Opc.Ua.Adi
         public const uint AccessorySlotType_AccessorySlotStateMachine_LastTransition_Id = 12795;
 
         /// <summary>
-        /// The identifier for the AccessorySlotType_AccessoryIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint AccessorySlotType_AccessoryIdentifier_Lock_DefaultInstanceBrowseName = 15099;
-
-        /// <summary>
         /// The identifier for the AccessorySlotType_AccessoryIdentifier_Lock_Locked Variable.
         /// </summary>
         public const uint AccessorySlotType_AccessoryIdentifier_Lock_Locked = 12808;
@@ -8927,11 +8772,6 @@ namespace Opc.Ua.Adi
         public const uint AccessorySlotStateMachineType_RemovingToShutdownTransition_TransitionNumber = 12875;
 
         /// <summary>
-        /// The identifier for the AccessoryType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint AccessoryType_Lock_DefaultInstanceBrowseName = 15100;
-
-        /// <summary>
         /// The identifier for the AccessoryType_Lock_Locked Variable.
         /// </summary>
         public const uint AccessoryType_Lock_Locked = 12885;
@@ -8987,11 +8827,6 @@ namespace Opc.Ua.Adi
         public const uint AccessoryType_IsReady = 12905;
 
         /// <summary>
-        /// The identifier for the DetectorType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint DetectorType_Lock_DefaultInstanceBrowseName = 15101;
-
-        /// <summary>
         /// The identifier for the DetectorType_Lock_Locked Variable.
         /// </summary>
         public const uint DetectorType_Lock_Locked = 12915;
@@ -9035,11 +8870,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the DetectorType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public const uint DetectorType_Lock_BreakLock_OutputArguments = 12927;
-
-        /// <summary>
-        /// The identifier for the SmartSamplingSystemType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint SmartSamplingSystemType_Lock_DefaultInstanceBrowseName = 15102;
 
         /// <summary>
         /// The identifier for the SmartSamplingSystemType_Lock_Locked Variable.
@@ -9087,11 +8917,6 @@ namespace Opc.Ua.Adi
         public const uint SmartSamplingSystemType_Lock_BreakLock_OutputArguments = 12957;
 
         /// <summary>
-        /// The identifier for the SourceType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint SourceType_Lock_DefaultInstanceBrowseName = 15103;
-
-        /// <summary>
         /// The identifier for the SourceType_Lock_Locked Variable.
         /// </summary>
         public const uint SourceType_Lock_Locked = 12975;
@@ -9135,11 +8960,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the SourceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public const uint SourceType_Lock_BreakLock_OutputArguments = 12987;
-
-        /// <summary>
-        /// The identifier for the GcOvenType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint GcOvenType_Lock_DefaultInstanceBrowseName = 15104;
 
         /// <summary>
         /// The identifier for the GcOvenType_Lock_Locked Variable.
@@ -13012,11 +12832,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId OpcUaAdiNamespaceMetadata_DefaultAccessRestrictions = new ExpandedNodeId(Opc.Ua.Adi.Variables.OpcUaAdiNamespaceMetadata_DefaultAccessRestrictions, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the AnalyserDeviceType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserDeviceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.AnalyserDeviceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the AnalyserDeviceType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId AnalyserDeviceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Adi.Variables.AnalyserDeviceType_Lock_Locked, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -13060,11 +12875,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AnalyserDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId AnalyserDeviceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Adi.Variables.AnalyserDeviceType_Lock_BreakLock_OutputArguments, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.AnalyserDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the AnalyserDeviceType_CPIdentifier_Lock_Locked Variable.
@@ -13225,11 +13035,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AnalyserDeviceType_AnalyserStateMachine_LastTransition_Id Variable.
         /// </summary>
         public static readonly ExpandedNodeId AnalyserDeviceType_AnalyserStateMachine_LastTransition_Id = new ExpandedNodeId(Opc.Ua.Adi.Variables.AnalyserDeviceType_AnalyserStateMachine_LastTransition_Id, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.AnalyserDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the AnalyserDeviceType_ChannelIdentifier_Lock_Locked Variable.
@@ -13482,11 +13287,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId AnalyserDeviceStateMachineType_MaintenanceToShutdownTransition_TransitionNumber = new ExpandedNodeId(Opc.Ua.Adi.Variables.AnalyserDeviceStateMachineType_MaintenanceToShutdownTransition_TransitionNumber, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the AnalyserChannelType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserChannelType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.AnalyserChannelType_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the AnalyserChannelType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId AnalyserChannelType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Adi.Variables.AnalyserChannelType_Lock_Locked, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -13630,11 +13430,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AnalyserChannelType_ChannelStateMachine_MaintenanceSubStateMachine_LastTransition_Id Variable.
         /// </summary>
         public static readonly ExpandedNodeId AnalyserChannelType_ChannelStateMachine_MaintenanceSubStateMachine_LastTransition_Id = new ExpandedNodeId(Opc.Ua.Adi.Variables.AnalyserChannelType_ChannelStateMachine_MaintenanceSubStateMachine_LastTransition_Id, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AnalyserChannelType_StreamIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId AnalyserChannelType_StreamIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.AnalyserChannelType_StreamIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the AnalyserChannelType_StreamIdentifier_Lock_Locked Variable.
@@ -14597,11 +14392,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId AnalyserChannel_OperatingModeExecuteSubStateMachineType_CleanupSamplingSystemToSelectExecutionCycleTransition_TransitionNumber = new ExpandedNodeId(Opc.Ua.Adi.Variables.AnalyserChannel_OperatingModeExecuteSubStateMachineType_CleanupSamplingSystemToSelectExecutionCycleTransition_TransitionNumber, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the StreamType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId StreamType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.StreamType_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the StreamType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId StreamType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Adi.Variables.StreamType_Lock_Locked, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -14800,11 +14590,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the StreamType_ParameterSet_SampleId Variable.
         /// </summary>
         public static readonly ExpandedNodeId StreamType_ParameterSet_SampleId = new ExpandedNodeId(Opc.Ua.Adi.Variables.StreamType_ParameterSet_SampleId, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceStreamType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceStreamType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.SpectrometerDeviceStreamType_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the SpectrometerDeviceStreamType_Lock_Locked Variable.
@@ -15087,11 +14872,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId SpectrometerDeviceStreamType_ParameterSet_PendingBackground1_XAxisDefinition = new ExpandedNodeId(Opc.Ua.Adi.Variables.SpectrometerDeviceStreamType_ParameterSet_PendingBackground1_XAxisDefinition, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the MassSpectrometerDeviceStreamType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceStreamType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.MassSpectrometerDeviceStreamType_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the MassSpectrometerDeviceStreamType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId MassSpectrometerDeviceStreamType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Adi.Variables.MassSpectrometerDeviceStreamType_Lock_Locked, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -15205,11 +14985,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the MassSpectrometerDeviceStreamType_ParameterSet_AcquisitionEndTime Variable.
         /// </summary>
         public static readonly ExpandedNodeId MassSpectrometerDeviceStreamType_ParameterSet_AcquisitionEndTime = new ExpandedNodeId(Opc.Ua.Adi.Variables.MassSpectrometerDeviceStreamType_ParameterSet_AcquisitionEndTime, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceStreamType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceStreamType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.ParticleSizeMonitorDeviceStreamType_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the ParticleSizeMonitorDeviceStreamType_Lock_Locked Variable.
@@ -15392,11 +15167,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId ParticleSizeMonitorDeviceStreamType_ParameterSet_BackgroundAcquisitionTime = new ExpandedNodeId(Opc.Ua.Adi.Variables.ParticleSizeMonitorDeviceStreamType_ParameterSet_BackgroundAcquisitionTime, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceStreamType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceStreamType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.AcousticSpectrometerDeviceStreamType_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the AcousticSpectrometerDeviceStreamType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId AcousticSpectrometerDeviceStreamType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Adi.Variables.AcousticSpectrometerDeviceStreamType_Lock_Locked, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -15510,11 +15280,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AcousticSpectrometerDeviceStreamType_ParameterSet_AcquisitionEndTime Variable.
         /// </summary>
         public static readonly ExpandedNodeId AcousticSpectrometerDeviceStreamType_ParameterSet_AcquisitionEndTime = new ExpandedNodeId(Opc.Ua.Adi.Variables.AcousticSpectrometerDeviceStreamType_ParameterSet_AcquisitionEndTime, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceStreamType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceStreamType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.ChromatographDeviceStreamType_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the ChromatographDeviceStreamType_Lock_Locked Variable.
@@ -15632,11 +15397,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId ChromatographDeviceStreamType_ParameterSet_AcquisitionEndTime = new ExpandedNodeId(Opc.Ua.Adi.Variables.ChromatographDeviceStreamType_ParameterSet_AcquisitionEndTime, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the MNRDeviceStreamType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId MNRDeviceStreamType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.MNRDeviceStreamType_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the MNRDeviceStreamType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId MNRDeviceStreamType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Adi.Variables.MNRDeviceStreamType_Lock_Locked, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -15752,11 +15512,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId MNRDeviceStreamType_ParameterSet_AcquisitionEndTime = new ExpandedNodeId(Opc.Ua.Adi.Variables.MNRDeviceStreamType_ParameterSet_AcquisitionEndTime, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the SpectrometerDeviceType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.SpectrometerDeviceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the SpectrometerDeviceType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId SpectrometerDeviceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Adi.Variables.SpectrometerDeviceType_Lock_Locked, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -15800,11 +15555,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the SpectrometerDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId SpectrometerDeviceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Adi.Variables.SpectrometerDeviceType_Lock_BreakLock_OutputArguments, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.SpectrometerDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the SpectrometerDeviceType_CPIdentifier_Lock_Locked Variable.
@@ -15965,11 +15715,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the SpectrometerDeviceType_AnalyserStateMachine_LastTransition_Id Variable.
         /// </summary>
         public static readonly ExpandedNodeId SpectrometerDeviceType_AnalyserStateMachine_LastTransition_Id = new ExpandedNodeId(Opc.Ua.Adi.Variables.SpectrometerDeviceType_AnalyserStateMachine_LastTransition_Id, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SpectrometerDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId SpectrometerDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.SpectrometerDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the SpectrometerDeviceType_ChannelIdentifier_Lock_Locked Variable.
@@ -16142,11 +15887,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId SpectrometerDeviceType_ParameterSet_SpectralRange = new ExpandedNodeId(Opc.Ua.Adi.Variables.SpectrometerDeviceType_ParameterSet_SpectralRange, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.ParticleSizeMonitorDeviceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the ParticleSizeMonitorDeviceType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Adi.Variables.ParticleSizeMonitorDeviceType_Lock_Locked, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -16190,11 +15930,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the ParticleSizeMonitorDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Adi.Variables.ParticleSizeMonitorDeviceType_Lock_BreakLock_OutputArguments, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.ParticleSizeMonitorDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the ParticleSizeMonitorDeviceType_CPIdentifier_Lock_Locked Variable.
@@ -16355,11 +16090,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the ParticleSizeMonitorDeviceType_AnalyserStateMachine_LastTransition_Id Variable.
         /// </summary>
         public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_AnalyserStateMachine_LastTransition_Id = new ExpandedNodeId(Opc.Ua.Adi.Variables.ParticleSizeMonitorDeviceType_AnalyserStateMachine_LastTransition_Id, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ParticleSizeMonitorDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.ParticleSizeMonitorDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the ParticleSizeMonitorDeviceType_ChannelIdentifier_Lock_Locked Variable.
@@ -16527,11 +16257,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId ParticleSizeMonitorDeviceType_AccessorySlotIdentifier_AccessorySlotStateMachine_LastTransition_Id = new ExpandedNodeId(Opc.Ua.Adi.Variables.ParticleSizeMonitorDeviceType_AccessorySlotIdentifier_AccessorySlotStateMachine_LastTransition_Id, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the ChromatographDeviceType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.ChromatographDeviceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the ChromatographDeviceType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId ChromatographDeviceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Adi.Variables.ChromatographDeviceType_Lock_Locked, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -16575,11 +16300,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the ChromatographDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId ChromatographDeviceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Adi.Variables.ChromatographDeviceType_Lock_BreakLock_OutputArguments, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.ChromatographDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the ChromatographDeviceType_CPIdentifier_Lock_Locked Variable.
@@ -16740,11 +16460,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the ChromatographDeviceType_AnalyserStateMachine_LastTransition_Id Variable.
         /// </summary>
         public static readonly ExpandedNodeId ChromatographDeviceType_AnalyserStateMachine_LastTransition_Id = new ExpandedNodeId(Opc.Ua.Adi.Variables.ChromatographDeviceType_AnalyserStateMachine_LastTransition_Id, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the ChromatographDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId ChromatographDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.ChromatographDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the ChromatographDeviceType_ChannelIdentifier_Lock_Locked Variable.
@@ -16912,11 +16627,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId ChromatographDeviceType_AccessorySlotIdentifier_AccessorySlotStateMachine_LastTransition_Id = new ExpandedNodeId(Opc.Ua.Adi.Variables.ChromatographDeviceType_AccessorySlotIdentifier_AccessorySlotStateMachine_LastTransition_Id, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.MassSpectrometerDeviceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the MassSpectrometerDeviceType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId MassSpectrometerDeviceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Adi.Variables.MassSpectrometerDeviceType_Lock_Locked, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -16960,11 +16670,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the MassSpectrometerDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId MassSpectrometerDeviceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Adi.Variables.MassSpectrometerDeviceType_Lock_BreakLock_OutputArguments, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.MassSpectrometerDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the MassSpectrometerDeviceType_CPIdentifier_Lock_Locked Variable.
@@ -17125,11 +16830,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the MassSpectrometerDeviceType_AnalyserStateMachine_LastTransition_Id Variable.
         /// </summary>
         public static readonly ExpandedNodeId MassSpectrometerDeviceType_AnalyserStateMachine_LastTransition_Id = new ExpandedNodeId(Opc.Ua.Adi.Variables.MassSpectrometerDeviceType_AnalyserStateMachine_LastTransition_Id, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the MassSpectrometerDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId MassSpectrometerDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.MassSpectrometerDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the MassSpectrometerDeviceType_ChannelIdentifier_Lock_Locked Variable.
@@ -17297,11 +16997,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId MassSpectrometerDeviceType_AccessorySlotIdentifier_AccessorySlotStateMachine_LastTransition_Id = new ExpandedNodeId(Opc.Ua.Adi.Variables.MassSpectrometerDeviceType_AccessorySlotIdentifier_AccessorySlotStateMachine_LastTransition_Id, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.AcousticSpectrometerDeviceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the AcousticSpectrometerDeviceType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Adi.Variables.AcousticSpectrometerDeviceType_Lock_Locked, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -17345,11 +17040,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AcousticSpectrometerDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Adi.Variables.AcousticSpectrometerDeviceType_Lock_BreakLock_OutputArguments, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.AcousticSpectrometerDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the AcousticSpectrometerDeviceType_CPIdentifier_Lock_Locked Variable.
@@ -17510,11 +17200,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the AcousticSpectrometerDeviceType_AnalyserStateMachine_LastTransition_Id Variable.
         /// </summary>
         public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_AnalyserStateMachine_LastTransition_Id = new ExpandedNodeId(Opc.Ua.Adi.Variables.AcousticSpectrometerDeviceType_AnalyserStateMachine_LastTransition_Id, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the AcousticSpectrometerDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.AcousticSpectrometerDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the AcousticSpectrometerDeviceType_ChannelIdentifier_Lock_Locked Variable.
@@ -17682,11 +17367,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId AcousticSpectrometerDeviceType_AccessorySlotIdentifier_AccessorySlotStateMachine_LastTransition_Id = new ExpandedNodeId(Opc.Ua.Adi.Variables.AcousticSpectrometerDeviceType_AccessorySlotIdentifier_AccessorySlotStateMachine_LastTransition_Id, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the NMRDeviceType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId NMRDeviceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.NMRDeviceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the NMRDeviceType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId NMRDeviceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Adi.Variables.NMRDeviceType_Lock_Locked, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -17730,11 +17410,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the NMRDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId NMRDeviceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Adi.Variables.NMRDeviceType_Lock_BreakLock_OutputArguments, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId NMRDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.NMRDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the NMRDeviceType_CPIdentifier_Lock_Locked Variable.
@@ -17895,11 +17570,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the NMRDeviceType_AnalyserStateMachine_LastTransition_Id Variable.
         /// </summary>
         public static readonly ExpandedNodeId NMRDeviceType_AnalyserStateMachine_LastTransition_Id = new ExpandedNodeId(Opc.Ua.Adi.Variables.NMRDeviceType_AnalyserStateMachine_LastTransition_Id, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the NMRDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId NMRDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.NMRDeviceType_ChannelIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the NMRDeviceType_ChannelIdentifier_Lock_Locked Variable.
@@ -18092,11 +17762,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId AccessorySlotType_AccessorySlotStateMachine_LastTransition_Id = new ExpandedNodeId(Opc.Ua.Adi.Variables.AccessorySlotType_AccessorySlotStateMachine_LastTransition_Id, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the AccessorySlotType_AccessoryIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId AccessorySlotType_AccessoryIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.AccessorySlotType_AccessoryIdentifier_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the AccessorySlotType_AccessoryIdentifier_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId AccessorySlotType_AccessoryIdentifier_Lock_Locked = new ExpandedNodeId(Opc.Ua.Adi.Variables.AccessorySlotType_AccessoryIdentifier_Lock_Locked, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -18252,11 +17917,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId AccessorySlotStateMachineType_RemovingToShutdownTransition_TransitionNumber = new ExpandedNodeId(Opc.Ua.Adi.Variables.AccessorySlotStateMachineType_RemovingToShutdownTransition_TransitionNumber, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the AccessoryType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId AccessoryType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.AccessoryType_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the AccessoryType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId AccessoryType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Adi.Variables.AccessoryType_Lock_Locked, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -18312,11 +17972,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId AccessoryType_IsReady = new ExpandedNodeId(Opc.Ua.Adi.Variables.AccessoryType_IsReady, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the DetectorType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId DetectorType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.DetectorType_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the DetectorType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId DetectorType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Adi.Variables.DetectorType_Lock_Locked, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -18360,11 +18015,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the DetectorType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId DetectorType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Adi.Variables.DetectorType_Lock_BreakLock_OutputArguments, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the SmartSamplingSystemType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId SmartSamplingSystemType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.SmartSamplingSystemType_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the SmartSamplingSystemType_Lock_Locked Variable.
@@ -18412,11 +18062,6 @@ namespace Opc.Ua.Adi
         public static readonly ExpandedNodeId SmartSamplingSystemType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Adi.Variables.SmartSamplingSystemType_Lock_BreakLock_OutputArguments, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
-        /// The identifier for the SourceType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId SourceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.SourceType_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
         /// The identifier for the SourceType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId SourceType_Lock_Locked = new ExpandedNodeId(Opc.Ua.Adi.Variables.SourceType_Lock_Locked, Opc.Ua.Adi.Namespaces.OpcUaAdi);
@@ -18460,11 +18105,6 @@ namespace Opc.Ua.Adi
         /// The identifier for the SourceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId SourceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Adi.Variables.SourceType_Lock_BreakLock_OutputArguments, Opc.Ua.Adi.Namespaces.OpcUaAdi);
-
-        /// <summary>
-        /// The identifier for the GcOvenType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId GcOvenType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Adi.Variables.GcOvenType_Lock_DefaultInstanceBrowseName, Opc.Ua.Adi.Namespaces.OpcUaAdi);
 
         /// <summary>
         /// The identifier for the GcOvenType_Lock_Locked Variable.

@@ -80,7 +80,6 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#8.1)</Documentation>
     <InverseName>InterlockOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=1286" BrowseName="1:HasSignature">
@@ -89,7 +88,6 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#8.3)</Documentation>
     <InverseName>SignatureOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=1184" BrowseName="1:InterlockFor">
@@ -98,7 +96,6 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#8.2)</Documentation>
     <InverseName>HasInterlockInformation</InverseName>
   </UAReferenceType>
   <UAObjectType NodeId="ns=1;i=194" BrowseName="1:MDISBaseObjectType" IsAbstract="true">
@@ -114,7 +111,6 @@
       <Reference ReferenceType="HasProperty">ns=1;i=197</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#5.2.2)</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=489" BrowseName="1:Fault" ParentNodeId="ns=1;i=194" DataType="Boolean">
     <DisplayName>Fault</DisplayName>
@@ -163,7 +159,6 @@
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=194</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#5.2.3)</Documentation>
   </UAMethod>
   <UAVariable NodeId="ns=1;i=196" BrowseName="InputArguments" ParentNodeId="ns=1;i=195" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
@@ -212,7 +207,6 @@
       <Reference ReferenceType="HasProperty">ns=1;i=700</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#7.1.4)</Documentation>
     <Definition Name="1:SignatureStatusEnum">
       <Field Name="NotAvailable" Value="1" />
       <Field Name="Completed" Value="2" />
@@ -282,7 +276,6 @@
       <Reference ReferenceType="HasProperty">ns=1;i=1288</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#7.1.3)</Documentation>
     <Definition Name="1:SetCalculatedPositionEnum">
       <Field Name="Initial" Value="0" />
       <Field Name="Inprogress" Value="1" />
@@ -368,7 +361,6 @@
       <Reference ReferenceType="HasProperty">ns=1;i=616</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#7.1.5)</Documentation>
     <Definition Name="1:CommandEnum">
       <Field Name="Close" Value="1" />
       <Field Name="Open" Value="2" />
@@ -438,7 +430,6 @@
       <Reference ReferenceType="HasProperty">ns=1;i=702</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#7.1.2)</Documentation>
     <Definition Name="1:ChokeCommandEnum">
       <Field Name="Close" Value="1" />
       <Field Name="Open" Value="2" />
@@ -492,7 +483,6 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#7.1.6)</Documentation>
     <Definition Name="1:SEMEnum">
       <Field Name="SEM_A" Value="1" />
       <Field Name="SEM_B" Value="2" />
@@ -562,7 +552,6 @@
       <Reference ReferenceType="HasProperty">ns=1;i=704</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#7.1.7)</Documentation>
     <Definition Name="1:ValvePositionEnum">
       <Field Name="Closed" Value="1" />
       <Field Name="Open" Value="2" />
@@ -648,7 +637,6 @@
       <Reference ReferenceType="HasProperty">ns=1;i=603</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#7.1.1)</Documentation>
     <Definition Name="1:ChokeMoveEnum">
       <Field Name="Moving" Value="1" />
       <Field Name="Stopped" Value="2" />
@@ -701,7 +689,6 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#7.2.1)</Documentation>
     <Definition Name="1:MDISVersionDataType">
       <Field Name="MajorVersion" DataType="i=3" />
       <Field Name="MinorVersion" DataType="i=3" />
@@ -714,7 +701,6 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#6.1)</Documentation>
   </UAVariableType>
   <UAVariableType NodeId="ns=1;i=1290" BrowseName="1:MDISVersionVariableType" DataType="ns=1;i=1289">
     <DisplayName>MDISVersionVariableType</DisplayName>
@@ -725,7 +711,6 @@
       <Reference ReferenceType="HasProperty">ns=1;i=1293</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#6.2)</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=1291" BrowseName="1:MajorVersion" ParentNodeId="ns=1;i=1290" DataType="Byte">
     <DisplayName>MajorVersion</DisplayName>
@@ -770,7 +755,6 @@
       <Reference ReferenceType="ns=1;i=1286">ns=1;i=1294</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=194</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#5.7.3)</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=875" BrowseName="1:Position" ParentNodeId="ns=1;i=794" DataType="ns=1;i=703">
     <DisplayName>Position</DisplayName>
@@ -843,7 +827,6 @@
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=794</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#5.7.4)</Documentation>
   </UAMethod>
   <UAVariable NodeId="ns=1;i=884" BrowseName="InputArguments" ParentNodeId="ns=1;i=883" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
@@ -1377,7 +1360,6 @@
       <Reference ReferenceType="HasComponent">ns=1;i=970</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=194</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#5.4.3)</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=970" BrowseName="1:State" ParentNodeId="ns=1;i=889" DataType="Boolean">
     <DisplayName>State</DisplayName>
@@ -1394,7 +1376,6 @@
       <Reference ReferenceType="HasComponent">ns=1;i=1240</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=889</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#5.4.4)</Documentation>
   </UAObjectType>
   <UAMethod NodeId="ns=1;i=1240" BrowseName="1:WriteState" ParentNodeId="ns=1;i=1230">
     <DisplayName>WriteState</DisplayName>
@@ -1403,7 +1384,6 @@
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1230</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#5.4.5)</Documentation>
   </UAMethod>
   <UAVariable NodeId="ns=1;i=1241" BrowseName="InputArguments" ParentNodeId="ns=1;i=1240" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
@@ -1444,7 +1424,6 @@
       <Reference ReferenceType="HasComponent">ns=1;i=1223</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=194</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#5.3.3)</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=1223" BrowseName="1:State" ParentNodeId="ns=1;i=1214" DataType="UInt32">
     <DisplayName>State</DisplayName>
@@ -1461,7 +1440,6 @@
       <Reference ReferenceType="HasComponent">ns=1;i=1252</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1214</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#5.3.4)</Documentation>
   </UAObjectType>
   <UAMethod NodeId="ns=1;i=1252" BrowseName="1:WriteValue" ParentNodeId="ns=1;i=1242">
     <DisplayName>WriteValue</DisplayName>
@@ -1470,7 +1448,6 @@
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1242</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#5.5.5)</Documentation>
   </UAMethod>
   <UAVariable NodeId="ns=1;i=1253" BrowseName="InputArguments" ParentNodeId="ns=1;i=1252" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
@@ -1519,7 +1496,6 @@
       <Reference ReferenceType="HasProperty">ns=1;i=1065</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=194</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#5.5.3)</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=1052" BrowseName="1:ProcessVariable" ParentNodeId="ns=1;i=971" DataType="Float">
     <DisplayName>ProcessVariable</DisplayName>
@@ -1618,7 +1594,6 @@
       <Reference ReferenceType="HasComponent">ns=1;i=1277</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=971</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#5.5.4)</Documentation>
   </UAObjectType>
   <UAMethod NodeId="ns=1;i=1277" BrowseName="1:WriteValue" ParentNodeId="ns=1;i=1254">
     <DisplayName>WriteValue</DisplayName>
@@ -1683,7 +1658,6 @@
       <Reference ReferenceType="HasProperty">ns=1;i=1164</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=194</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#5.6.3)</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=1147" BrowseName="1:CalculatedPosition" ParentNodeId="ns=1;i=1066" DataType="Float">
     <DisplayName>CalculatedPosition</DisplayName>
@@ -1844,7 +1818,6 @@
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1066</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#5.6.5)</Documentation>
   </UAMethod>
   <UAVariable NodeId="ns=1;i=1158" BrowseName="InputArguments" ParentNodeId="ns=1;i=1157" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
@@ -1944,7 +1917,6 @@
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1066</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#5.6.6)</Documentation>
   </UAMethod>
   <UAMethod NodeId="ns=1;i=1284" BrowseName="1:SetCalculatedPosition" ParentNodeId="ns=1;i=1066">
     <DisplayName>SetCalculatedPosition</DisplayName>
@@ -1953,7 +1925,6 @@
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1066</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#5.6.7)</Documentation>
   </UAMethod>
   <UAVariable NodeId="ns=1;i=1285" BrowseName="InputArguments" ParentNodeId="ns=1;i=1284" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
@@ -2034,7 +2005,6 @@
       <Reference ReferenceType="ns=1;i=1183">ns=1;i=1465</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=194</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#5.8.2)</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=1324" BrowseName="1:&lt;InstrumentPlaceholder&gt;" SymbolicName="InstrumentPlaceholder" ParentNodeId="ns=1;i=1315">
     <DisplayName>&lt;InstrumentPlaceholder&gt;</DisplayName>
@@ -2678,7 +2648,6 @@
       <Reference ReferenceType="HasComponent">ns=1;i=1469</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#5.9.3)</Documentation>
   </UAObjectType>
   <UAMethod NodeId="ns=1;i=1469" BrowseName="1:SetTime" ParentNodeId="ns=1;i=1468">
     <DisplayName>SetTime</DisplayName>
@@ -2687,7 +2656,6 @@
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1468</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#5.9.4)</Documentation>
   </UAMethod>
   <UAVariable NodeId="ns=1;i=1470" BrowseName="InputArguments" ParentNodeId="ns=1;i=1469" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
@@ -2730,7 +2698,6 @@
       <Reference ReferenceType="HasComponent">ns=1;i=1476</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#5.10.3)</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=1472" BrowseName="1:TimeSynchronization" ParentNodeId="ns=1;i=1471">
     <DisplayName>TimeSynchronization</DisplayName>
@@ -2833,7 +2800,6 @@
       <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1471</Reference>
     </References>
-    <Documentation>[/docs](https://opcfoundation.github.io/UA-TypeRepository/MDIS/docs/#9.2)</Documentation>
   </UAObject>
   <UAObject NodeId="ns=1;i=15006" BrowseName="1:TimeSynchronization" ParentNodeId="ns=1;i=15005">
     <DisplayName>TimeSynchronization</DisplayName>

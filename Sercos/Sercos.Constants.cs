@@ -347,11 +347,6 @@ namespace Sercos
         public const uint SercosNamespaceMetadata_DefaultAccessRestrictions = 6113;
 
         /// <summary>
-        /// The identifier for the SercosDeviceType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint SercosDeviceType_Lock_DefaultInstanceBrowseName = 15001;
-
-        /// <summary>
         /// The identifier for the SercosDeviceType_Lock_Locked Variable.
         /// </summary>
         public const uint SercosDeviceType_Lock_Locked = 15007;
@@ -395,11 +390,6 @@ namespace Sercos
         /// The identifier for the SercosDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public const uint SercosDeviceType_Lock_BreakLock_OutputArguments = 6033;
-
-        /// <summary>
-        /// The identifier for the SercosDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public const uint SercosDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = 15006;
 
         /// <summary>
         /// The identifier for the SercosDeviceType_CPIdentifier_Lock_Locked Variable.
@@ -812,11 +802,6 @@ namespace Sercos
         public static readonly ExpandedNodeId SercosNamespaceMetadata_DefaultAccessRestrictions = new ExpandedNodeId(Sercos.Variables.SercosNamespaceMetadata_DefaultAccessRestrictions, Sercos.Namespaces.Sercos);
 
         /// <summary>
-        /// The identifier for the SercosDeviceType_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId SercosDeviceType_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Sercos.Variables.SercosDeviceType_Lock_DefaultInstanceBrowseName, Sercos.Namespaces.Sercos);
-
-        /// <summary>
         /// The identifier for the SercosDeviceType_Lock_Locked Variable.
         /// </summary>
         public static readonly ExpandedNodeId SercosDeviceType_Lock_Locked = new ExpandedNodeId(Sercos.Variables.SercosDeviceType_Lock_Locked, Sercos.Namespaces.Sercos);
@@ -860,11 +845,6 @@ namespace Sercos
         /// The identifier for the SercosDeviceType_Lock_BreakLock_OutputArguments Variable.
         /// </summary>
         public static readonly ExpandedNodeId SercosDeviceType_Lock_BreakLock_OutputArguments = new ExpandedNodeId(Sercos.Variables.SercosDeviceType_Lock_BreakLock_OutputArguments, Sercos.Namespaces.Sercos);
-
-        /// <summary>
-        /// The identifier for the SercosDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName Variable.
-        /// </summary>
-        public static readonly ExpandedNodeId SercosDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName = new ExpandedNodeId(Sercos.Variables.SercosDeviceType_CPIdentifier_Lock_DefaultInstanceBrowseName, Sercos.Namespaces.Sercos);
 
         /// <summary>
         /// The identifier for the SercosDeviceType_CPIdentifier_Lock_Locked Variable.
