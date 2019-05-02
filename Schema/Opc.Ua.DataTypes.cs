@@ -734,6 +734,2067 @@ namespace Opc.Ua
     #endif
     #endregion
 
+    #region RationalNumber Class
+    #if (!OPCUA_EXCLUDE_RationalNumber)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class RationalNumber : IEncodeable
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public RationalNumber()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+            m_numerator = (int)0;
+            m_denominator = (uint)0;
+        }
+        #endregion
+
+        #region Public Properties
+        /// <remarks />
+        [DataMember(Name = "Numerator", IsRequired = false, Order = 1)]
+        public int Numerator
+        {
+            get { return m_numerator;  }
+            set { m_numerator = value; }
+        }
+
+        /// <remarks />
+        [DataMember(Name = "Denominator", IsRequired = false, Order = 2)]
+        public uint Denominator
+        {
+            get { return m_denominator;  }
+            set { m_denominator = value; }
+        }
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public virtual ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.RationalNumber; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public virtual ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.RationalNumber_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public virtual ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.RationalNumber_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public virtual void Encode(IEncoder encoder)
+        {
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            encoder.WriteInt32("Numerator", Numerator);
+            encoder.WriteUInt32("Denominator", Denominator);
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public virtual void Decode(IDecoder decoder)
+        {
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            Numerator = decoder.ReadInt32("Numerator");
+            Denominator = decoder.ReadUInt32("Denominator");
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public virtual bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            RationalNumber value = encodeable as RationalNumber;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+            if (!Utils.IsEqual(m_numerator, value.m_numerator)) return false;
+            if (!Utils.IsEqual(m_denominator, value.m_denominator)) return false;
+
+            return true;
+        }
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public virtual object Clone()
+        {
+            return (RationalNumber)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            RationalNumber clone = (RationalNumber)base.MemberwiseClone();
+
+            clone.m_numerator = (int)Utils.Clone(this.m_numerator);
+            clone.m_denominator = (uint)Utils.Clone(this.m_denominator);
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        private int m_numerator;
+        private uint m_denominator;
+        #endregion
+    }
+
+    #region RationalNumberCollection Class
+    /// <summary>
+    /// A collection of RationalNumber objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfRationalNumber", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "RationalNumber")]
+    #if !NET_STANDARD
+    public partial class RationalNumberCollection : List<RationalNumber>, ICloneable
+    #else
+    public partial class RationalNumberCollection : List<RationalNumber>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public RationalNumberCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public RationalNumberCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public RationalNumberCollection(IEnumerable<RationalNumber> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator RationalNumberCollection(RationalNumber[] values)
+        {
+            if (values != null)
+            {
+                return new RationalNumberCollection(values);
+            }
+
+            return new RationalNumberCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator RationalNumber[](RationalNumberCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (RationalNumberCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            RationalNumberCollection clone = new RationalNumberCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((RationalNumber)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
+    #endif
+    #endregion
+
+    #region Vector Class
+    #if (!OPCUA_EXCLUDE_Vector)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class Vector : IEncodeable
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public Vector()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+        }
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public virtual ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.Vector; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public virtual ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.Vector_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public virtual ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.Vector_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public virtual void Encode(IEncoder encoder)
+        {
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public virtual void Decode(IDecoder decoder)
+        {
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public virtual bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            Vector value = encodeable as Vector;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+
+            return true;
+        }
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public virtual object Clone()
+        {
+            return (Vector)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            Vector clone = (Vector)base.MemberwiseClone();
+
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+
+    #region VectorCollection Class
+    /// <summary>
+    /// A collection of Vector objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfVector", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "Vector")]
+    #if !NET_STANDARD
+    public partial class VectorCollection : List<Vector>, ICloneable
+    #else
+    public partial class VectorCollection : List<Vector>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public VectorCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public VectorCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public VectorCollection(IEnumerable<Vector> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator VectorCollection(Vector[] values)
+        {
+            if (values != null)
+            {
+                return new VectorCollection(values);
+            }
+
+            return new VectorCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator Vector[](VectorCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (VectorCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            VectorCollection clone = new VectorCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((Vector)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
+    #endif
+    #endregion
+
+    #region ThreeDVector Class
+    #if (!OPCUA_EXCLUDE_ThreeDVector)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class ThreeDVector : Vector
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public ThreeDVector()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+            m_x = (double)0;
+            m_y = (double)0;
+            m_z = (double)0;
+        }
+        #endregion
+
+        #region Public Properties
+        /// <remarks />
+        [DataMember(Name = "X", IsRequired = false, Order = 1)]
+        public double X
+        {
+            get { return m_x;  }
+            set { m_x = value; }
+        }
+
+        /// <remarks />
+        [DataMember(Name = "Y", IsRequired = false, Order = 2)]
+        public double Y
+        {
+            get { return m_y;  }
+            set { m_y = value; }
+        }
+
+        /// <remarks />
+        [DataMember(Name = "Z", IsRequired = false, Order = 3)]
+        public double Z
+        {
+            get { return m_z;  }
+            set { m_z = value; }
+        }
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public override ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.ThreeDVector; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public override ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.ThreeDVector_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public override ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.ThreeDVector_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public override void Encode(IEncoder encoder)
+        {
+            base.Encode(encoder);
+
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            encoder.WriteDouble("X", X);
+            encoder.WriteDouble("Y", Y);
+            encoder.WriteDouble("Z", Z);
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public override void Decode(IDecoder decoder)
+        {
+            base.Decode(decoder);
+
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            X = decoder.ReadDouble("X");
+            Y = decoder.ReadDouble("Y");
+            Z = decoder.ReadDouble("Z");
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public override bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            ThreeDVector value = encodeable as ThreeDVector;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+            if (!base.IsEqual(encodeable)) return false;
+            if (!Utils.IsEqual(m_x, value.m_x)) return false;
+            if (!Utils.IsEqual(m_y, value.m_y)) return false;
+            if (!Utils.IsEqual(m_z, value.m_z)) return false;
+
+            return true;
+        }    
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public override object Clone()
+        {
+            return (ThreeDVector)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ThreeDVector clone = (ThreeDVector)base.MemberwiseClone();
+
+            clone.m_x = (double)Utils.Clone(this.m_x);
+            clone.m_y = (double)Utils.Clone(this.m_y);
+            clone.m_z = (double)Utils.Clone(this.m_z);
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        private double m_x;
+        private double m_y;
+        private double m_z;
+        #endregion
+    }
+
+    #region ThreeDVectorCollection Class
+    /// <summary>
+    /// A collection of ThreeDVector objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfThreeDVector", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "ThreeDVector")]
+    #if !NET_STANDARD
+    public partial class ThreeDVectorCollection : List<ThreeDVector>, ICloneable
+    #else
+    public partial class ThreeDVectorCollection : List<ThreeDVector>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public ThreeDVectorCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public ThreeDVectorCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public ThreeDVectorCollection(IEnumerable<ThreeDVector> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator ThreeDVectorCollection(ThreeDVector[] values)
+        {
+            if (values != null)
+            {
+                return new ThreeDVectorCollection(values);
+            }
+
+            return new ThreeDVectorCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator ThreeDVector[](ThreeDVectorCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (ThreeDVectorCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ThreeDVectorCollection clone = new ThreeDVectorCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((ThreeDVector)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
+    #endif
+    #endregion
+
+    #region CartesianCoordinates Class
+    #if (!OPCUA_EXCLUDE_CartesianCoordinates)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class CartesianCoordinates : IEncodeable
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public CartesianCoordinates()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+        }
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public virtual ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.CartesianCoordinates; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public virtual ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.CartesianCoordinates_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public virtual ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.CartesianCoordinates_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public virtual void Encode(IEncoder encoder)
+        {
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public virtual void Decode(IDecoder decoder)
+        {
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public virtual bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            CartesianCoordinates value = encodeable as CartesianCoordinates;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+
+            return true;
+        }
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public virtual object Clone()
+        {
+            return (CartesianCoordinates)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CartesianCoordinates clone = (CartesianCoordinates)base.MemberwiseClone();
+
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+
+    #region CartesianCoordinatesCollection Class
+    /// <summary>
+    /// A collection of CartesianCoordinates objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfCartesianCoordinates", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "CartesianCoordinates")]
+    #if !NET_STANDARD
+    public partial class CartesianCoordinatesCollection : List<CartesianCoordinates>, ICloneable
+    #else
+    public partial class CartesianCoordinatesCollection : List<CartesianCoordinates>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public CartesianCoordinatesCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public CartesianCoordinatesCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public CartesianCoordinatesCollection(IEnumerable<CartesianCoordinates> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator CartesianCoordinatesCollection(CartesianCoordinates[] values)
+        {
+            if (values != null)
+            {
+                return new CartesianCoordinatesCollection(values);
+            }
+
+            return new CartesianCoordinatesCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator CartesianCoordinates[](CartesianCoordinatesCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (CartesianCoordinatesCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CartesianCoordinatesCollection clone = new CartesianCoordinatesCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((CartesianCoordinates)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
+    #endif
+    #endregion
+
+    #region ThreeDCartesianCoordinates Class
+    #if (!OPCUA_EXCLUDE_ThreeDCartesianCoordinates)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class ThreeDCartesianCoordinates : CartesianCoordinates
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public ThreeDCartesianCoordinates()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+            m_x = (double)0;
+            m_y = (double)0;
+            m_z = (double)0;
+        }
+        #endregion
+
+        #region Public Properties
+        /// <remarks />
+        [DataMember(Name = "X", IsRequired = false, Order = 1)]
+        public double X
+        {
+            get { return m_x;  }
+            set { m_x = value; }
+        }
+
+        /// <remarks />
+        [DataMember(Name = "Y", IsRequired = false, Order = 2)]
+        public double Y
+        {
+            get { return m_y;  }
+            set { m_y = value; }
+        }
+
+        /// <remarks />
+        [DataMember(Name = "Z", IsRequired = false, Order = 3)]
+        public double Z
+        {
+            get { return m_z;  }
+            set { m_z = value; }
+        }
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public override ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.ThreeDCartesianCoordinates; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public override ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.ThreeDCartesianCoordinates_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public override ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.ThreeDCartesianCoordinates_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public override void Encode(IEncoder encoder)
+        {
+            base.Encode(encoder);
+
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            encoder.WriteDouble("X", X);
+            encoder.WriteDouble("Y", Y);
+            encoder.WriteDouble("Z", Z);
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public override void Decode(IDecoder decoder)
+        {
+            base.Decode(decoder);
+
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            X = decoder.ReadDouble("X");
+            Y = decoder.ReadDouble("Y");
+            Z = decoder.ReadDouble("Z");
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public override bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            ThreeDCartesianCoordinates value = encodeable as ThreeDCartesianCoordinates;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+            if (!base.IsEqual(encodeable)) return false;
+            if (!Utils.IsEqual(m_x, value.m_x)) return false;
+            if (!Utils.IsEqual(m_y, value.m_y)) return false;
+            if (!Utils.IsEqual(m_z, value.m_z)) return false;
+
+            return true;
+        }    
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public override object Clone()
+        {
+            return (ThreeDCartesianCoordinates)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ThreeDCartesianCoordinates clone = (ThreeDCartesianCoordinates)base.MemberwiseClone();
+
+            clone.m_x = (double)Utils.Clone(this.m_x);
+            clone.m_y = (double)Utils.Clone(this.m_y);
+            clone.m_z = (double)Utils.Clone(this.m_z);
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        private double m_x;
+        private double m_y;
+        private double m_z;
+        #endregion
+    }
+
+    #region ThreeDCartesianCoordinatesCollection Class
+    /// <summary>
+    /// A collection of ThreeDCartesianCoordinates objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfThreeDCartesianCoordinates", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "ThreeDCartesianCoordinates")]
+    #if !NET_STANDARD
+    public partial class ThreeDCartesianCoordinatesCollection : List<ThreeDCartesianCoordinates>, ICloneable
+    #else
+    public partial class ThreeDCartesianCoordinatesCollection : List<ThreeDCartesianCoordinates>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public ThreeDCartesianCoordinatesCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public ThreeDCartesianCoordinatesCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public ThreeDCartesianCoordinatesCollection(IEnumerable<ThreeDCartesianCoordinates> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator ThreeDCartesianCoordinatesCollection(ThreeDCartesianCoordinates[] values)
+        {
+            if (values != null)
+            {
+                return new ThreeDCartesianCoordinatesCollection(values);
+            }
+
+            return new ThreeDCartesianCoordinatesCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator ThreeDCartesianCoordinates[](ThreeDCartesianCoordinatesCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (ThreeDCartesianCoordinatesCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ThreeDCartesianCoordinatesCollection clone = new ThreeDCartesianCoordinatesCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((ThreeDCartesianCoordinates)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
+    #endif
+    #endregion
+
+    #region Orientation Class
+    #if (!OPCUA_EXCLUDE_Orientation)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class Orientation : IEncodeable
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public Orientation()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+        }
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public virtual ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.Orientation; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public virtual ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.Orientation_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public virtual ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.Orientation_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public virtual void Encode(IEncoder encoder)
+        {
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public virtual void Decode(IDecoder decoder)
+        {
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public virtual bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            Orientation value = encodeable as Orientation;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+
+            return true;
+        }
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public virtual object Clone()
+        {
+            return (Orientation)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            Orientation clone = (Orientation)base.MemberwiseClone();
+
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+
+    #region OrientationCollection Class
+    /// <summary>
+    /// A collection of Orientation objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfOrientation", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "Orientation")]
+    #if !NET_STANDARD
+    public partial class OrientationCollection : List<Orientation>, ICloneable
+    #else
+    public partial class OrientationCollection : List<Orientation>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public OrientationCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public OrientationCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public OrientationCollection(IEnumerable<Orientation> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator OrientationCollection(Orientation[] values)
+        {
+            if (values != null)
+            {
+                return new OrientationCollection(values);
+            }
+
+            return new OrientationCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator Orientation[](OrientationCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (OrientationCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            OrientationCollection clone = new OrientationCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((Orientation)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
+    #endif
+    #endregion
+
+    #region ThreeDOrientation Class
+    #if (!OPCUA_EXCLUDE_ThreeDOrientation)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class ThreeDOrientation : Orientation
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public ThreeDOrientation()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+            m_a = (double)0;
+            m_b = (double)0;
+            m_c = (double)0;
+        }
+        #endregion
+
+        #region Public Properties
+        /// <remarks />
+        [DataMember(Name = "A", IsRequired = false, Order = 1)]
+        public double A
+        {
+            get { return m_a;  }
+            set { m_a = value; }
+        }
+
+        /// <remarks />
+        [DataMember(Name = "B", IsRequired = false, Order = 2)]
+        public double B
+        {
+            get { return m_b;  }
+            set { m_b = value; }
+        }
+
+        /// <remarks />
+        [DataMember(Name = "C", IsRequired = false, Order = 3)]
+        public double C
+        {
+            get { return m_c;  }
+            set { m_c = value; }
+        }
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public override ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.ThreeDOrientation; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public override ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.ThreeDOrientation_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public override ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.ThreeDOrientation_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public override void Encode(IEncoder encoder)
+        {
+            base.Encode(encoder);
+
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            encoder.WriteDouble("A", A);
+            encoder.WriteDouble("B", B);
+            encoder.WriteDouble("C", C);
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public override void Decode(IDecoder decoder)
+        {
+            base.Decode(decoder);
+
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            A = decoder.ReadDouble("A");
+            B = decoder.ReadDouble("B");
+            C = decoder.ReadDouble("C");
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public override bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            ThreeDOrientation value = encodeable as ThreeDOrientation;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+            if (!base.IsEqual(encodeable)) return false;
+            if (!Utils.IsEqual(m_a, value.m_a)) return false;
+            if (!Utils.IsEqual(m_b, value.m_b)) return false;
+            if (!Utils.IsEqual(m_c, value.m_c)) return false;
+
+            return true;
+        }    
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public override object Clone()
+        {
+            return (ThreeDOrientation)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ThreeDOrientation clone = (ThreeDOrientation)base.MemberwiseClone();
+
+            clone.m_a = (double)Utils.Clone(this.m_a);
+            clone.m_b = (double)Utils.Clone(this.m_b);
+            clone.m_c = (double)Utils.Clone(this.m_c);
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        private double m_a;
+        private double m_b;
+        private double m_c;
+        #endregion
+    }
+
+    #region ThreeDOrientationCollection Class
+    /// <summary>
+    /// A collection of ThreeDOrientation objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfThreeDOrientation", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "ThreeDOrientation")]
+    #if !NET_STANDARD
+    public partial class ThreeDOrientationCollection : List<ThreeDOrientation>, ICloneable
+    #else
+    public partial class ThreeDOrientationCollection : List<ThreeDOrientation>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public ThreeDOrientationCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public ThreeDOrientationCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public ThreeDOrientationCollection(IEnumerable<ThreeDOrientation> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator ThreeDOrientationCollection(ThreeDOrientation[] values)
+        {
+            if (values != null)
+            {
+                return new ThreeDOrientationCollection(values);
+            }
+
+            return new ThreeDOrientationCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator ThreeDOrientation[](ThreeDOrientationCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (ThreeDOrientationCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ThreeDOrientationCollection clone = new ThreeDOrientationCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((ThreeDOrientation)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
+    #endif
+    #endregion
+
+    #region Frame Class
+    #if (!OPCUA_EXCLUDE_Frame)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class Frame : IEncodeable
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public Frame()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+        }
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public virtual ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.Frame; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public virtual ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.Frame_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public virtual ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.Frame_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public virtual void Encode(IEncoder encoder)
+        {
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public virtual void Decode(IDecoder decoder)
+        {
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public virtual bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            Frame value = encodeable as Frame;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+
+            return true;
+        }
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public virtual object Clone()
+        {
+            return (Frame)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            Frame clone = (Frame)base.MemberwiseClone();
+
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+
+    #region FrameCollection Class
+    /// <summary>
+    /// A collection of Frame objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfFrame", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "Frame")]
+    #if !NET_STANDARD
+    public partial class FrameCollection : List<Frame>, ICloneable
+    #else
+    public partial class FrameCollection : List<Frame>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public FrameCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public FrameCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public FrameCollection(IEnumerable<Frame> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator FrameCollection(Frame[] values)
+        {
+            if (values != null)
+            {
+                return new FrameCollection(values);
+            }
+
+            return new FrameCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator Frame[](FrameCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (FrameCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            FrameCollection clone = new FrameCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((Frame)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
+    #endif
+    #endregion
+
+    #region ThreeDFrame Class
+    #if (!OPCUA_EXCLUDE_ThreeDFrame)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class ThreeDFrame : Frame
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public ThreeDFrame()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+            m_cartesianCoordinates = new ThreeDCartesianCoordinates();
+            m_orientation = new ThreeDOrientation();
+        }
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// 
+        /// </summary>
+        [DataMember(Name = "CartesianCoordinates", IsRequired = false, Order = 1)]
+        public ThreeDCartesianCoordinates CartesianCoordinates
+        {
+            get
+            {
+                return m_cartesianCoordinates;
+            }
+
+            set
+            {
+                m_cartesianCoordinates = value;
+
+                if (value == null)
+                {
+                    m_cartesianCoordinates = new ThreeDCartesianCoordinates();
+                }
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [DataMember(Name = "Orientation", IsRequired = false, Order = 2)]
+        public ThreeDOrientation Orientation
+        {
+            get
+            {
+                return m_orientation;
+            }
+
+            set
+            {
+                m_orientation = value;
+
+                if (value == null)
+                {
+                    m_orientation = new ThreeDOrientation();
+                }
+            }
+        }
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public override ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.ThreeDFrame; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public override ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.ThreeDFrame_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public override ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.ThreeDFrame_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public override void Encode(IEncoder encoder)
+        {
+            base.Encode(encoder);
+
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            encoder.WriteEncodeable("CartesianCoordinates", CartesianCoordinates, typeof(ThreeDCartesianCoordinates));
+            encoder.WriteEncodeable("Orientation", Orientation, typeof(ThreeDOrientation));
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public override void Decode(IDecoder decoder)
+        {
+            base.Decode(decoder);
+
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            CartesianCoordinates = (ThreeDCartesianCoordinates)decoder.ReadEncodeable("CartesianCoordinates", typeof(ThreeDCartesianCoordinates));
+            Orientation = (ThreeDOrientation)decoder.ReadEncodeable("Orientation", typeof(ThreeDOrientation));
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public override bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            ThreeDFrame value = encodeable as ThreeDFrame;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+            if (!base.IsEqual(encodeable)) return false;
+            if (!Utils.IsEqual(m_cartesianCoordinates, value.m_cartesianCoordinates)) return false;
+            if (!Utils.IsEqual(m_orientation, value.m_orientation)) return false;
+
+            return true;
+        }    
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public override object Clone()
+        {
+            return (ThreeDFrame)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ThreeDFrame clone = (ThreeDFrame)base.MemberwiseClone();
+
+            clone.m_cartesianCoordinates = (ThreeDCartesianCoordinates)Utils.Clone(this.m_cartesianCoordinates);
+            clone.m_orientation = (ThreeDOrientation)Utils.Clone(this.m_orientation);
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        private ThreeDCartesianCoordinates m_cartesianCoordinates;
+        private ThreeDOrientation m_orientation;
+        #endregion
+    }
+
+    #region ThreeDFrameCollection Class
+    /// <summary>
+    /// A collection of ThreeDFrame objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfThreeDFrame", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "ThreeDFrame")]
+    #if !NET_STANDARD
+    public partial class ThreeDFrameCollection : List<ThreeDFrame>, ICloneable
+    #else
+    public partial class ThreeDFrameCollection : List<ThreeDFrame>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public ThreeDFrameCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public ThreeDFrameCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public ThreeDFrameCollection(IEnumerable<ThreeDFrame> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator ThreeDFrameCollection(ThreeDFrame[] values)
+        {
+            if (values != null)
+            {
+                return new ThreeDFrameCollection(values);
+            }
+
+            return new ThreeDFrameCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator ThreeDFrame[](ThreeDFrameCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (ThreeDFrameCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            ThreeDFrameCollection clone = new ThreeDFrameCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((ThreeDFrame)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
+    #endif
+    #endregion
+
     #region OpenFileMode Enumeration
     #if (!OPCUA_EXCLUDE_OpenFileMode)
     /// <summary>

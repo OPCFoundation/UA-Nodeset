@@ -553,6 +553,152 @@
   </xs:complexType>
   <xs:element name="ListOfEndpointType" type="tns:ListOfEndpointType" nillable="true"></xs:element>
 
+  <xs:complexType name="RationalNumber">
+    <xs:sequence>
+      <xs:element name="Numerator" type="xs:int" minOccurs="0" />
+      <xs:element name="Denominator" type="xs:unsignedInt" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RationalNumber" type="tns:RationalNumber" />
+
+  <xs:complexType name="ListOfRationalNumber">
+    <xs:sequence>
+      <xs:element name="RationalNumber" type="tns:RationalNumber" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfRationalNumber" type="tns:ListOfRationalNumber" nillable="true"></xs:element>
+
+  <xs:complexType name="Vector">
+    <xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Vector" type="tns:Vector" />
+
+  <xs:complexType name="ListOfVector">
+    <xs:sequence>
+      <xs:element name="Vector" type="tns:Vector" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfVector" type="tns:ListOfVector" nillable="true"></xs:element>
+
+  <xs:complexType name="ThreeDVector">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Vector">
+        <xs:sequence>
+          <xs:element name="X" type="xs:double" minOccurs="0" />
+          <xs:element name="Y" type="xs:double" minOccurs="0" />
+          <xs:element name="Z" type="xs:double" minOccurs="0" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ThreeDVector" type="tns:ThreeDVector" />
+
+  <xs:complexType name="ListOfThreeDVector">
+    <xs:sequence>
+      <xs:element name="ThreeDVector" type="tns:ThreeDVector" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfThreeDVector" type="tns:ListOfThreeDVector" nillable="true"></xs:element>
+
+  <xs:complexType name="CartesianCoordinates">
+    <xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CartesianCoordinates" type="tns:CartesianCoordinates" />
+
+  <xs:complexType name="ListOfCartesianCoordinates">
+    <xs:sequence>
+      <xs:element name="CartesianCoordinates" type="tns:CartesianCoordinates" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfCartesianCoordinates" type="tns:ListOfCartesianCoordinates" nillable="true"></xs:element>
+
+  <xs:complexType name="ThreeDCartesianCoordinates">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CartesianCoordinates">
+        <xs:sequence>
+          <xs:element name="X" type="xs:double" minOccurs="0" />
+          <xs:element name="Y" type="xs:double" minOccurs="0" />
+          <xs:element name="Z" type="xs:double" minOccurs="0" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ThreeDCartesianCoordinates" type="tns:ThreeDCartesianCoordinates" />
+
+  <xs:complexType name="ListOfThreeDCartesianCoordinates">
+    <xs:sequence>
+      <xs:element name="ThreeDCartesianCoordinates" type="tns:ThreeDCartesianCoordinates" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfThreeDCartesianCoordinates" type="tns:ListOfThreeDCartesianCoordinates" nillable="true"></xs:element>
+
+  <xs:complexType name="Orientation">
+    <xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Orientation" type="tns:Orientation" />
+
+  <xs:complexType name="ListOfOrientation">
+    <xs:sequence>
+      <xs:element name="Orientation" type="tns:Orientation" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfOrientation" type="tns:ListOfOrientation" nillable="true"></xs:element>
+
+  <xs:complexType name="ThreeDOrientation">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Orientation">
+        <xs:sequence>
+          <xs:element name="A" type="xs:double" minOccurs="0" />
+          <xs:element name="B" type="xs:double" minOccurs="0" />
+          <xs:element name="C" type="xs:double" minOccurs="0" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ThreeDOrientation" type="tns:ThreeDOrientation" />
+
+  <xs:complexType name="ListOfThreeDOrientation">
+    <xs:sequence>
+      <xs:element name="ThreeDOrientation" type="tns:ThreeDOrientation" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfThreeDOrientation" type="tns:ListOfThreeDOrientation" nillable="true"></xs:element>
+
+  <xs:complexType name="Frame">
+    <xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Frame" type="tns:Frame" />
+
+  <xs:complexType name="ListOfFrame">
+    <xs:sequence>
+      <xs:element name="Frame" type="tns:Frame" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfFrame" type="tns:ListOfFrame" nillable="true"></xs:element>
+
+  <xs:complexType name="ThreeDFrame">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Frame">
+        <xs:sequence>
+          <xs:element name="CartesianCoordinates" type="tns:ThreeDCartesianCoordinates" minOccurs="0" nillable="true" />
+          <xs:element name="Orientation" type="tns:ThreeDOrientation" minOccurs="0" nillable="true" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ThreeDFrame" type="tns:ThreeDFrame" />
+
+  <xs:complexType name="ListOfThreeDFrame">
+    <xs:sequence>
+      <xs:element name="ThreeDFrame" type="tns:ThreeDFrame" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfThreeDFrame" type="tns:ListOfThreeDFrame" nillable="true"></xs:element>
+
   <xs:simpleType  name="OpenFileMode">
     <xs:restriction base="xs:string">
       <xs:enumeration value="Read_1" />

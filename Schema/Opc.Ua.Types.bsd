@@ -249,6 +249,46 @@
     <opc:Field Name="TransportProfileUri" TypeName="opc:String" />
   </opc:StructuredType>
 
+  <opc:StructuredType Name="RationalNumber" BaseType="ua:ExtensionObject">
+    <opc:Field Name="Numerator" TypeName="opc:Int32" />
+    <opc:Field Name="Denominator" TypeName="opc:UInt32" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="Vector" BaseType="ua:ExtensionObject">
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="ThreeDVector" BaseType="tns:Vector">
+    <opc:Field Name="X" TypeName="opc:Double" />
+    <opc:Field Name="Y" TypeName="opc:Double" />
+    <opc:Field Name="Z" TypeName="opc:Double" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="CartesianCoordinates" BaseType="ua:ExtensionObject">
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="ThreeDCartesianCoordinates" BaseType="tns:CartesianCoordinates">
+    <opc:Field Name="X" TypeName="opc:Double" />
+    <opc:Field Name="Y" TypeName="opc:Double" />
+    <opc:Field Name="Z" TypeName="opc:Double" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="Orientation" BaseType="ua:ExtensionObject">
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="ThreeDOrientation" BaseType="tns:Orientation">
+    <opc:Field Name="A" TypeName="opc:Double" />
+    <opc:Field Name="B" TypeName="opc:Double" />
+    <opc:Field Name="C" TypeName="opc:Double" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="Frame" BaseType="ua:ExtensionObject">
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="ThreeDFrame" BaseType="tns:Frame">
+    <opc:Field Name="CartesianCoordinates" TypeName="tns:ThreeDCartesianCoordinates" />
+    <opc:Field Name="Orientation" TypeName="tns:ThreeDOrientation" />
+  </opc:StructuredType>
+
   <opc:EnumeratedType Name="OpenFileMode" LengthInBits="32">
     <opc:EnumeratedValue Name="Read" Value="1" />
     <opc:EnumeratedValue Name="Write" Value="2" />

@@ -79,6 +79,15 @@
  *===========================================================================*/
 /* #define OPCUA_EXCLUDE_KeyValuePair */
 /* #define OPCUA_EXCLUDE_EndpointType */
+/* #define OPCUA_EXCLUDE_RationalNumber */
+/* #define OPCUA_EXCLUDE_Vector */
+/* #define OPCUA_EXCLUDE_ThreeDVector */
+/* #define OPCUA_EXCLUDE_CartesianCoordinates */
+/* #define OPCUA_EXCLUDE_ThreeDCartesianCoordinates */
+/* #define OPCUA_EXCLUDE_Orientation */
+/* #define OPCUA_EXCLUDE_ThreeDOrientation */
+/* #define OPCUA_EXCLUDE_Frame */
+/* #define OPCUA_EXCLUDE_ThreeDFrame */
 /* #define OPCUA_EXCLUDE_IdentityMappingRuleType */
 /* #define OPCUA_EXCLUDE_TrustListDataType */
 /* #define OPCUA_EXCLUDE_DecimalDataType */
