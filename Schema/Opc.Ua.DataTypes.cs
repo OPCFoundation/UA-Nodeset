@@ -2652,55 +2652,10 @@ namespace Opc.Ua
         /// </summary>
         private void Initialize()
         {
-            m_cartesianCoordinates = new CartesianCoordinates();
-            m_orientation = new Orientation();
         }
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// 
-        /// </summary>
-        [DataMember(Name = "CartesianCoordinates", IsRequired = false, Order = 1)]
-        public CartesianCoordinates CartesianCoordinates
-        {
-            get
-            {
-                return m_cartesianCoordinates;
-            }
-
-            set
-            {
-                m_cartesianCoordinates = value;
-
-                if (value == null)
-                {
-                    m_cartesianCoordinates = new CartesianCoordinates();
-                }
-            }
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [DataMember(Name = "Orientation", IsRequired = false, Order = 2)]
-        public Orientation Orientation
-        {
-            get
-            {
-                return m_orientation;
-            }
-
-            set
-            {
-                m_orientation = value;
-
-                if (value == null)
-                {
-                    m_orientation = new Orientation();
-                }
-            }
-        }
         #endregion
 
         #region IEncodeable Members
@@ -2727,8 +2682,6 @@ namespace Opc.Ua
         {
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
-            encoder.WriteEncodeable("CartesianCoordinates", CartesianCoordinates, typeof(CartesianCoordinates));
-            encoder.WriteEncodeable("Orientation", Orientation, typeof(Orientation));
 
             encoder.PopNamespace();
         }
@@ -2738,8 +2691,6 @@ namespace Opc.Ua
         {
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
-            CartesianCoordinates = (CartesianCoordinates)decoder.ReadEncodeable("CartesianCoordinates", typeof(CartesianCoordinates));
-            Orientation = (Orientation)decoder.ReadEncodeable("Orientation", typeof(Orientation));
 
             decoder.PopNamespace();
         }
@@ -2759,8 +2710,6 @@ namespace Opc.Ua
                 return false;
             }
 
-            if (!Utils.IsEqual(m_cartesianCoordinates, value.m_cartesianCoordinates)) return false;
-            if (!Utils.IsEqual(m_orientation, value.m_orientation)) return false;
 
             return true;
         }
@@ -2778,16 +2727,12 @@ namespace Opc.Ua
         {
             Frame clone = (Frame)base.MemberwiseClone();
 
-            clone.m_cartesianCoordinates = (CartesianCoordinates)Utils.Clone(this.m_cartesianCoordinates);
-            clone.m_orientation = (Orientation)Utils.Clone(this.m_orientation);
 
             return clone;
         }
         #endregion
 
         #region Private Fields
-        private CartesianCoordinates m_cartesianCoordinates;
-        private Orientation m_orientation;
         #endregion
     }
 
@@ -2886,7 +2831,7 @@ namespace Opc.Ua
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
-    public partial class ThreeDFrame : IEncodeable
+    public partial class ThreeDFrame : Frame
     {
         #region Constructors
         /// <summary>
@@ -2964,26 +2909,28 @@ namespace Opc.Ua
 
         #region IEncodeable Members
         /// <summary cref="IEncodeable.TypeId" />
-        public virtual ExpandedNodeId TypeId
+        public override ExpandedNodeId TypeId
         {
             get { return DataTypeIds.ThreeDFrame; }
         }
 
         /// <summary cref="IEncodeable.BinaryEncodingId" />
-        public virtual ExpandedNodeId BinaryEncodingId
+        public override ExpandedNodeId BinaryEncodingId
         {
             get { return ObjectIds.ThreeDFrame_Encoding_DefaultBinary; }
         }
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId
+        public override ExpandedNodeId XmlEncodingId
         {
             get { return ObjectIds.ThreeDFrame_Encoding_DefaultXml; }
         }
 
         /// <summary cref="IEncodeable.Encode(IEncoder)" />
-        public virtual void Encode(IEncoder encoder)
+        public override void Encode(IEncoder encoder)
         {
+            base.Encode(encoder);
+
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             encoder.WriteEncodeable("CartesianCoordinates", CartesianCoordinates, typeof(ThreeDCartesianCoordinates));
@@ -2993,8 +2940,10 @@ namespace Opc.Ua
         }
 
         /// <summary cref="IEncodeable.Decode(IDecoder)" />
-        public virtual void Decode(IDecoder decoder)
+        public override void Decode(IDecoder decoder)
         {
+            base.Decode(decoder);
+
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
             CartesianCoordinates = (ThreeDCartesianCoordinates)decoder.ReadEncodeable("CartesianCoordinates", typeof(ThreeDCartesianCoordinates));
@@ -3004,7 +2953,7 @@ namespace Opc.Ua
         }
 
         /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
-        public virtual bool IsEqual(IEncodeable encodeable)
+        public override bool IsEqual(IEncodeable encodeable)
         {
             if (Object.ReferenceEquals(this, encodeable))
             {
@@ -3018,15 +2967,16 @@ namespace Opc.Ua
                 return false;
             }
 
+            if (!base.IsEqual(encodeable)) return false;
             if (!Utils.IsEqual(m_cartesianCoordinates, value.m_cartesianCoordinates)) return false;
             if (!Utils.IsEqual(m_orientation, value.m_orientation)) return false;
 
             return true;
-        }
+        }    
 
         #if !NET_STANDARD
         /// <summary cref="ICloneable.Clone" />
-        public virtual object Clone()
+        public override object Clone()
         {
             return (ThreeDFrame)this.MemberwiseClone();
         }

@@ -292,11 +292,9 @@
   </opc:StructuredType>
 
   <opc:StructuredType Name="Frame" BaseType="ua:ExtensionObject">
-    <opc:Field Name="CartesianCoordinates" TypeName="tns:CartesianCoordinates" />
-    <opc:Field Name="Orientation" TypeName="tns:Orientation" />
   </opc:StructuredType>
 
-  <opc:StructuredType Name="ThreeDFrame" BaseType="ua:ExtensionObject">
+  <opc:StructuredType Name="ThreeDFrame" BaseType="tns:Frame">
     <opc:Field Name="CartesianCoordinates" TypeName="tns:ThreeDCartesianCoordinates" />
     <opc:Field Name="Orientation" TypeName="tns:ThreeDOrientation" />
   </opc:StructuredType>

@@ -28806,7 +28806,7 @@ namespace Opc.Ua
         /// </summary>
         protected override NodeId GetDefaultDataTypeId(NamespaceTable namespaceUris)
         {
-            return Opc.Ua.NodeId.Create(Opc.Ua.DataTypes.Vector, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+            return Opc.Ua.NodeId.Create(Opc.Ua.DataTypes.ThreeDVector, Opc.Ua.Namespaces.OpcUa, namespaceUris);
         }
 
         /// <summary>
@@ -28847,7 +28847,7 @@ namespace Opc.Ua
         #region Initialization String
         private const string InitializationString =
            "//////////8VYIkCAgAAAAAAGAAAAFRocmVlRFZlY3RvclR5cGVJbnN0YW5jZQEANEUBADRFNEUAAAEA" +
-           "d0n/////AQH/////AwAAABVgiQoCAAAAAAABAAAAWAEAUUkALwA/UUkAAAAL/////wEB/////wAAAAAV" +
+           "eEn/////AQH/////AwAAABVgiQoCAAAAAAABAAAAWAEAUUkALwA/UUkAAAAL/////wEB/////wAAAAAV" +
            "YIkKAgAAAAAAAQAAAFkBAFJJAC8AP1JJAAAAC/////8BAf////8AAAAAFWCJCgIAAAAAAAEAAABaAQBT" +
            "SQAvAD9TSQAAAAv/////AQH/////AAAAAA==";
         #endregion
@@ -29038,6 +29038,252 @@ namespace Opc.Ua
         private BaseDataVariableState<double> m_z;
         #endregion
     }
+
+    #region ThreeDVectorValue Class
+    /// <summary>
+    /// A typed version of the _BrowseName_ variable.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public class ThreeDVectorValue : BaseVariableValue
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the instance with its defalt attribute values.
+        /// </summary>
+        public ThreeDVectorValue(ThreeDVectorState variable, ThreeDVector value, object dataLock) : base(dataLock)
+        {
+            m_value = value;
+
+            if (m_value == null)
+            {
+                m_value = new ThreeDVector();
+            }
+
+            Initialize(variable);
+        }
+        #endregion
+
+        #region Public Members
+        /// <summary>
+        /// The variable that the value belongs to.
+        /// </summary>
+        public ThreeDVectorState Variable
+        {
+            get { return m_variable; }
+        }
+
+        /// <summary>
+        /// The value of the variable.
+        /// </summary>
+        public ThreeDVector Value
+        {
+            get { return m_value;  }
+            set { m_value = value; }
+        }
+        #endregion
+
+        #region Private Methods
+        /// <summary>
+        /// Initializes the object.
+        /// </summary>
+        private void Initialize(ThreeDVectorState variable)
+        {
+            lock (Lock)
+            {
+                m_variable = variable;
+
+                variable.Value = m_value;
+
+                variable.OnReadValue = OnReadValue;
+                variable.OnSimpleWriteValue = OnWriteValue;
+
+                BaseVariableState instance = null;
+                List<BaseInstanceState> updateList = new List<BaseInstanceState>();
+                updateList.Add(variable);
+
+                instance = m_variable.X;
+                instance.OnReadValue = OnRead_X;
+                instance.OnSimpleWriteValue = OnWrite_X;
+                updateList.Add(instance);
+                instance = m_variable.Y;
+                instance.OnReadValue = OnRead_Y;
+                instance.OnSimpleWriteValue = OnWrite_Y;
+                updateList.Add(instance);
+                instance = m_variable.Z;
+                instance.OnReadValue = OnRead_Z;
+                instance.OnSimpleWriteValue = OnWrite_Z;
+                updateList.Add(instance);
+
+                SetUpdateList(updateList);
+            }
+        }
+
+        /// <summary>
+        /// Reads the value of the variable.
+        /// </summary>
+        protected ServiceResult OnReadValue(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable.
+        /// </summary>
+        private ServiceResult OnWriteValue(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value = (ThreeDVector)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+
+        #region X Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_X(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.X;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_X(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.X = (double)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region Y Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_Y(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.Y;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_Y(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.Y = (double)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region Z Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_Z(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.Z;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_Z(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.Z = (double)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+        #endregion
+
+        #region Private Fields
+        private ThreeDVector m_value;
+        private ThreeDVectorState m_variable;
+        #endregion
+    }
+    #endregion
     #endif
     #endregion
 
@@ -29252,7 +29498,7 @@ namespace Opc.Ua
         /// </summary>
         protected override NodeId GetDefaultDataTypeId(NamespaceTable namespaceUris)
         {
-            return Opc.Ua.NodeId.Create(Opc.Ua.DataTypes.CartesianCoordinates, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+            return Opc.Ua.NodeId.Create(Opc.Ua.DataTypes.ThreeDCartesianCoordinates, Opc.Ua.Namespaces.OpcUa, namespaceUris);
         }
 
         /// <summary>
@@ -29293,7 +29539,7 @@ namespace Opc.Ua
         #region Initialization String
         private const string InitializationString =
            "//////////8VYIkCAgAAAAAAJgAAAFRocmVlRENhcnRlc2lhbkNvb3JkaW5hdGVzVHlwZUluc3RhbmNl" +
-           "AQBWSQEAVklWSQAAAQB5Sf////8BAf////8DAAAAFWCJCgIAAAAAAAEAAABYAQBYSQAvAD9YSQAAAAv/" +
+           "AQBWSQEAVklWSQAAAQB6Sf////8BAf////8DAAAAFWCJCgIAAAAAAAEAAABYAQBYSQAvAD9YSQAAAAv/" +
            "////AQH/////AAAAABVgiQoCAAAAAAABAAAAWQEAWUkALwA/WUkAAAAL/////wEB/////wAAAAAVYIkK" +
            "AgAAAAAAAQAAAFoBAFpJAC8AP1pJAAAAC/////8BAf////8AAAAA";
         #endregion
@@ -29484,6 +29730,252 @@ namespace Opc.Ua
         private BaseDataVariableState<double> m_z;
         #endregion
     }
+
+    #region ThreeDCartesianCoordinatesValue Class
+    /// <summary>
+    /// A typed version of the _BrowseName_ variable.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public class ThreeDCartesianCoordinatesValue : BaseVariableValue
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the instance with its defalt attribute values.
+        /// </summary>
+        public ThreeDCartesianCoordinatesValue(ThreeDCartesianCoordinatesState variable, ThreeDCartesianCoordinates value, object dataLock) : base(dataLock)
+        {
+            m_value = value;
+
+            if (m_value == null)
+            {
+                m_value = new ThreeDCartesianCoordinates();
+            }
+
+            Initialize(variable);
+        }
+        #endregion
+
+        #region Public Members
+        /// <summary>
+        /// The variable that the value belongs to.
+        /// </summary>
+        public ThreeDCartesianCoordinatesState Variable
+        {
+            get { return m_variable; }
+        }
+
+        /// <summary>
+        /// The value of the variable.
+        /// </summary>
+        public ThreeDCartesianCoordinates Value
+        {
+            get { return m_value;  }
+            set { m_value = value; }
+        }
+        #endregion
+
+        #region Private Methods
+        /// <summary>
+        /// Initializes the object.
+        /// </summary>
+        private void Initialize(ThreeDCartesianCoordinatesState variable)
+        {
+            lock (Lock)
+            {
+                m_variable = variable;
+
+                variable.Value = m_value;
+
+                variable.OnReadValue = OnReadValue;
+                variable.OnSimpleWriteValue = OnWriteValue;
+
+                BaseVariableState instance = null;
+                List<BaseInstanceState> updateList = new List<BaseInstanceState>();
+                updateList.Add(variable);
+
+                instance = m_variable.X;
+                instance.OnReadValue = OnRead_X;
+                instance.OnSimpleWriteValue = OnWrite_X;
+                updateList.Add(instance);
+                instance = m_variable.Y;
+                instance.OnReadValue = OnRead_Y;
+                instance.OnSimpleWriteValue = OnWrite_Y;
+                updateList.Add(instance);
+                instance = m_variable.Z;
+                instance.OnReadValue = OnRead_Z;
+                instance.OnSimpleWriteValue = OnWrite_Z;
+                updateList.Add(instance);
+
+                SetUpdateList(updateList);
+            }
+        }
+
+        /// <summary>
+        /// Reads the value of the variable.
+        /// </summary>
+        protected ServiceResult OnReadValue(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable.
+        /// </summary>
+        private ServiceResult OnWriteValue(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value = (ThreeDCartesianCoordinates)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+
+        #region X Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_X(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.X;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_X(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.X = (double)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region Y Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_Y(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.Y;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_Y(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.Y = (double)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region Z Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_Z(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.Z;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_Z(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.Z = (double)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+        #endregion
+
+        #region Private Fields
+        private ThreeDCartesianCoordinates m_value;
+        private ThreeDCartesianCoordinatesState m_variable;
+        #endregion
+    }
+    #endregion
     #endif
     #endregion
 
@@ -29698,7 +30190,7 @@ namespace Opc.Ua
         /// </summary>
         protected override NodeId GetDefaultDataTypeId(NamespaceTable namespaceUris)
         {
-            return Opc.Ua.NodeId.Create(Opc.Ua.DataTypes.Orientation, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+            return Opc.Ua.NodeId.Create(Opc.Ua.DataTypes.ThreeDOrientation, Opc.Ua.Namespaces.OpcUa, namespaceUris);
         }
 
         /// <summary>
@@ -29739,7 +30231,7 @@ namespace Opc.Ua
         #region Initialization String
         private const string InitializationString =
            "//////////8VYIkCAgAAAAAAHQAAAFRocmVlRE9yaWVudGF0aW9uVHlwZUluc3RhbmNlAQBdSQEAXUld" +
-           "SQAAAQB7Sf////8BAf////8DAAAAFWCJCgIAAAAAAAEAAABBAQBfSQAvAD9fSQAAAAv/////AQH/////" +
+           "SQAAAQB8Sf////8BAf////8DAAAAFWCJCgIAAAAAAAEAAABBAQBfSQAvAD9fSQAAAAv/////AQH/////" +
            "AAAAABVgiQoCAAAAAAABAAAAQgEAYEkALwA/YEkAAAAL/////wEB/////wAAAAAVYIkKAgAAAAAAAQAA" +
            "AEMBAGFJAC8AP2FJAAAAC/////8BAf////8AAAAA";
         #endregion
@@ -29930,6 +30422,252 @@ namespace Opc.Ua
         private BaseDataVariableState<double> m_c;
         #endregion
     }
+
+    #region ThreeDOrientationValue Class
+    /// <summary>
+    /// A typed version of the _BrowseName_ variable.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public class ThreeDOrientationValue : BaseVariableValue
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the instance with its defalt attribute values.
+        /// </summary>
+        public ThreeDOrientationValue(ThreeDOrientationState variable, ThreeDOrientation value, object dataLock) : base(dataLock)
+        {
+            m_value = value;
+
+            if (m_value == null)
+            {
+                m_value = new ThreeDOrientation();
+            }
+
+            Initialize(variable);
+        }
+        #endregion
+
+        #region Public Members
+        /// <summary>
+        /// The variable that the value belongs to.
+        /// </summary>
+        public ThreeDOrientationState Variable
+        {
+            get { return m_variable; }
+        }
+
+        /// <summary>
+        /// The value of the variable.
+        /// </summary>
+        public ThreeDOrientation Value
+        {
+            get { return m_value;  }
+            set { m_value = value; }
+        }
+        #endregion
+
+        #region Private Methods
+        /// <summary>
+        /// Initializes the object.
+        /// </summary>
+        private void Initialize(ThreeDOrientationState variable)
+        {
+            lock (Lock)
+            {
+                m_variable = variable;
+
+                variable.Value = m_value;
+
+                variable.OnReadValue = OnReadValue;
+                variable.OnSimpleWriteValue = OnWriteValue;
+
+                BaseVariableState instance = null;
+                List<BaseInstanceState> updateList = new List<BaseInstanceState>();
+                updateList.Add(variable);
+
+                instance = m_variable.A;
+                instance.OnReadValue = OnRead_A;
+                instance.OnSimpleWriteValue = OnWrite_A;
+                updateList.Add(instance);
+                instance = m_variable.B;
+                instance.OnReadValue = OnRead_B;
+                instance.OnSimpleWriteValue = OnWrite_B;
+                updateList.Add(instance);
+                instance = m_variable.C;
+                instance.OnReadValue = OnRead_C;
+                instance.OnSimpleWriteValue = OnWrite_C;
+                updateList.Add(instance);
+
+                SetUpdateList(updateList);
+            }
+        }
+
+        /// <summary>
+        /// Reads the value of the variable.
+        /// </summary>
+        protected ServiceResult OnReadValue(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable.
+        /// </summary>
+        private ServiceResult OnWriteValue(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value = (ThreeDOrientation)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+
+        #region A Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_A(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.A;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_A(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.A = (double)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region B Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_B(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.B;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_B(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.B = (double)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region C Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_C(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.C;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_C(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.C = (double)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+        #endregion
+
+        #region Private Fields
+        private ThreeDOrientation m_value;
+        private ThreeDOrientationState m_variable;
+        #endregion
+    }
+    #endregion
     #endif
     #endregion
 
@@ -30028,17 +30766,37 @@ namespace Opc.Ua
 
         private const string InitializationString =
            "//////////8VYIkCAgAAAAAAEQAAAEZyYW1lVHlwZUluc3RhbmNlAQBiSQEAYkliSQAAAQB9Sf////8B" +
-           "Af////8EAAAAFWCJCgIAAAAAAAsAAABPcmllbnRhdGlvbgEAY0kALwA/Y0kAAAEAe0n/////AQH/////" +
-           "AAAAABVgiQoCAAAAAAAIAAAAQ29uc3RhbnQBAGRJAC4ARGRJAAAAAf////8BAf////8AAAAAFWCJCgIA" +
-           "AAAAAAkAAABCYXNlRnJhbWUBAGVJAC8AP2VJAAAAEf////8BAf////8AAAAAFWCJCgIAAAAAAAkAAABG" +
-           "aXhlZEJhc2UBAGZJAC4ARGZJAAAAAf////8BAf////8AAAAA";
+           "Af////8FAAAAFWCJCgIAAAAAABQAAABDYXJ0ZXNpYW5Db29yZGluYXRlcwEAcUkALwEAVElxSQAAAQB5" +
+           "Sf////8BAf////8AAAAAFWCJCgIAAAAAAAsAAABPcmllbnRhdGlvbgEAY0kALwEAW0ljSQAAAQB7Sf//" +
+           "//8BAf////8AAAAAFWCJCgIAAAAAAAgAAABDb25zdGFudAEAZEkALgBEZEkAAAAB/////wEB/////wAA" +
+           "AAAVYIkKAgAAAAAACQAAAEJhc2VGcmFtZQEAZUkALwA/ZUkAAAAR/////wEB/////wAAAAAVYIkKAgAA" +
+           "AAAACQAAAEZpeGVkQmFzZQEAZkkALgBEZkkAAAAB/////wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
         /// <remarks />
-        public BaseDataVariableState<Orientation> Orientation
+        public CartesianCoordinatesState CartesianCoordinates
+        {
+            get
+            {
+                return m_cartesianCoordinates;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_cartesianCoordinates, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_cartesianCoordinates = value;
+            }
+        }
+
+        /// <remarks />
+        public OrientationState Orientation
         {
             get
             {
@@ -30124,6 +30882,11 @@ namespace Opc.Ua
             ISystemContext context,
             IList<BaseInstanceState> children)
         {
+            if (m_cartesianCoordinates != null)
+            {
+                children.Add(m_cartesianCoordinates);
+            }
+
             if (m_orientation != null)
             {
                 children.Add(m_orientation);
@@ -30165,6 +30928,27 @@ namespace Opc.Ua
 
             switch (browseName.Name)
             {
+                case Opc.Ua.BrowseNames.CartesianCoordinates:
+                {
+                    if (createOrReplace)
+                    {
+                        if (CartesianCoordinates == null)
+                        {
+                            if (replacement == null)
+                            {
+                                CartesianCoordinates = new CartesianCoordinatesState(this);
+                            }
+                            else
+                            {
+                                CartesianCoordinates = (CartesianCoordinatesState)replacement;
+                            }
+                        }
+                    }
+
+                    instance = CartesianCoordinates;
+                    break;
+                }
+
                 case Opc.Ua.BrowseNames.Orientation:
                 {
                     if (createOrReplace)
@@ -30173,11 +30957,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                Orientation = new BaseDataVariableState<Orientation>(this);
+                                Orientation = new OrientationState(this);
                             }
                             else
                             {
-                                Orientation = (BaseDataVariableState<Orientation>)replacement;
+                                Orientation = (OrientationState)replacement;
                             }
                         }
                     }
@@ -30260,170 +31044,13 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
-        private BaseDataVariableState<Orientation> m_orientation;
+        private CartesianCoordinatesState m_cartesianCoordinates;
+        private OrientationState m_orientation;
         private PropertyState<bool> m_constant;
         private BaseDataVariableState<NodeId> m_baseFrame;
         private PropertyState<bool> m_fixedBase;
         #endregion
     }
-
-    #region FrameValue Class
-    /// <summary>
-    /// A typed version of the _BrowseName_ variable.
-    /// </summary>
-    /// <exclude />
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public class FrameValue : BaseVariableValue
-    {
-        #region Constructors
-        /// <summary>
-        /// Initializes the instance with its defalt attribute values.
-        /// </summary>
-        public FrameValue(FrameState variable, Frame value, object dataLock) : base(dataLock)
-        {
-            m_value = value;
-
-            if (m_value == null)
-            {
-                m_value = new Frame();
-            }
-
-            Initialize(variable);
-        }
-        #endregion
-
-        #region Public Members
-        /// <summary>
-        /// The variable that the value belongs to.
-        /// </summary>
-        public FrameState Variable
-        {
-            get { return m_variable; }
-        }
-
-        /// <summary>
-        /// The value of the variable.
-        /// </summary>
-        public Frame Value
-        {
-            get { return m_value;  }
-            set { m_value = value; }
-        }
-        #endregion
-
-        #region Private Methods
-        /// <summary>
-        /// Initializes the object.
-        /// </summary>
-        private void Initialize(FrameState variable)
-        {
-            lock (Lock)
-            {
-                m_variable = variable;
-
-                variable.Value = m_value;
-
-                variable.OnReadValue = OnReadValue;
-                variable.OnSimpleWriteValue = OnWriteValue;
-
-                BaseVariableState instance = null;
-                List<BaseInstanceState> updateList = new List<BaseInstanceState>();
-                updateList.Add(variable);
-
-                instance = m_variable.Orientation;
-                instance.OnReadValue = OnRead_Orientation;
-                instance.OnSimpleWriteValue = OnWrite_Orientation;
-                updateList.Add(instance);
-
-                SetUpdateList(updateList);
-            }
-        }
-
-        /// <summary>
-        /// Reads the value of the variable.
-        /// </summary>
-        protected ServiceResult OnReadValue(
-            ISystemContext context,
-            NodeState node,
-            NumericRange indexRange,
-            QualifiedName dataEncoding,
-            ref object value,
-            ref StatusCode statusCode,
-            ref DateTime timestamp)
-        {
-            lock (Lock)
-            {
-                DoBeforeReadProcessing(context, node);
-
-                if (m_value != null)
-                {
-                    value = m_value;
-                }
-
-                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
-            }
-        }
-
-        /// <summary>
-        /// Writes the value of the variable.
-        /// </summary>
-        private ServiceResult OnWriteValue(ISystemContext context, NodeState node, ref object value)
-        {
-            lock (Lock)
-            {
-                m_value = (Frame)Write(value);
-            }
-
-            return ServiceResult.Good;
-        }
-
-        #region Orientation Access Methods
-        /// <summary>
-        /// Reads the value of the variable child.
-        /// </summary>
-        private ServiceResult OnRead_Orientation(
-            ISystemContext context,
-            NodeState node,
-            NumericRange indexRange,
-            QualifiedName dataEncoding,
-            ref object value,
-            ref StatusCode statusCode,
-            ref DateTime timestamp)
-        {
-            lock (Lock)
-            {
-                DoBeforeReadProcessing(context, node);
-
-                if (m_value != null)
-                {
-                    value = m_value.Orientation;
-                }
-
-                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
-            }
-        }
-
-        /// <summary>
-        /// Writes the value of the variable child.
-        /// </summary>
-        private ServiceResult OnWrite_Orientation(ISystemContext context, NodeState node, ref object value)
-        {
-            lock (Lock)
-            {
-                m_value.Orientation = (Orientation)Write(value);
-            }
-
-            return ServiceResult.Good;
-        }
-        #endregion
-        #endregion
-
-        #region Private Fields
-        private Frame m_value;
-        private FrameState m_variable;
-        #endregion
-    }
-    #endregion
     #endif
     #endregion
 
@@ -30457,7 +31084,7 @@ namespace Opc.Ua
         /// </summary>
         protected override NodeId GetDefaultDataTypeId(NamespaceTable namespaceUris)
         {
-            return Opc.Ua.NodeId.Create(Opc.Ua.DataTypes.Frame, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+            return Opc.Ua.NodeId.Create(Opc.Ua.DataTypes.ThreeDFrame, Opc.Ua.Namespaces.OpcUa, namespaceUris);
         }
 
         /// <summary>
@@ -30497,56 +31124,31 @@ namespace Opc.Ua
 
         #region Initialization String
         private const string InitializationString =
-           "//////////8VYIkCAgAAAAAAFwAAAFRocmVlREZyYW1lVHlwZUluc3RhbmNlAQBnSQEAZ0lnSQAAAQB9" +
-           "Sf////8BAf////8DAAAAFWCJCgIAAAAAAAsAAABPcmllbnRhdGlvbgEAaEkALwA/aEkAAAEAe0n/////" +
-           "AQH/////AAAAABVgiQoCAAAAAAAUAAAAQ2FydGVzaWFuQ29vcmRpbmF0ZXMBAGxJAC8BAFZJbEkAAAEA" +
-           "ekn/////AQH/////AwAAABVgiQoCAAAAAAABAAAAWAEAbkkALwA/bkkAAAAL/////wEB/////wAAAAAV" +
-           "YIkKAgAAAAAAAQAAAFkBAG9JAC8AP29JAAAAC/////8BAf////8AAAAAFWCJCgIAAAAAAAEAAABaAQBw" +
-           "SQAvAD9wSQAAAAv/////AQH/////AAAAABVgiQoCAAAAAAAKAAAAT3JpZW5hdGlvbgEAcUkALwEAXUlx" +
-           "SQAAAQB8Sf////8BAf////8DAAAAFWCJCgIAAAAAAAEAAABBAQBzSQAvAD9zSQAAAAv/////AQH/////" +
-           "AAAAABVgiQoCAAAAAAABAAAAQgEAdEkALwA/dEkAAAAL/////wEB/////wAAAAAVYIkKAgAAAAAAAQAA" +
-           "AEMBAHVJAC8AP3VJAAAAC/////8BAf////8AAAAA";
+           "//////////8VYIkCAgAAAAAAFwAAAFRocmVlREZyYW1lVHlwZUluc3RhbmNlAQBnSQEAZ0lnSQAAAQB+" +
+           "Sf////8BAf////8CAAAAFWCJCgIAAAAAABQAAABDYXJ0ZXNpYW5Db29yZGluYXRlcwEAbEkALwEAVkls" +
+           "SQAAAQB6Sf////8BAf////8DAAAAFWCJCgIAAAAAAAEAAABYAQBuSQAvAD9uSQAAAAv/////AQH/////" +
+           "AAAAABVgiQoCAAAAAAABAAAAWQEAb0kALwA/b0kAAAAL/////wEB/////wAAAAAVYIkKAgAAAAAAAQAA" +
+           "AFoBAHBJAC8AP3BJAAAAC/////8BAf////8AAAAAFWCJCgIAAAAAAAsAAABPcmllbnRhdGlvbgEAaEkA" +
+           "LwEAXUloSQAAAQB8Sf////8BAf////8DAAAAFWCJCgIAAAAAAAEAAABBAQCCSgAvAD+CSgAAAAv/////" +
+           "AQH/////AAAAABVgiQoCAAAAAAABAAAAQgEAg0oALwA/g0oAAAAL/////wEB/////wAAAAAVYIkKAgAA" +
+           "AAAAAQAAAEMBAIRKAC8AP4RKAAAAC/////8BAf////8AAAAA";
         #endregion
         #endif
         #endregion
 
         #region Public Properties
         /// <remarks />
-        public ThreeDCartesianCoordinatesState CartesianCoordinates
+        public new ThreeDCartesianCoordinatesState CartesianCoordinates
         {
-            get
-            {
-                return m_cartesianCoordinates;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_cartesianCoordinates, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_cartesianCoordinates = value;
-            }
+            get { return (ThreeDCartesianCoordinatesState)base.CartesianCoordinates; }
+            set { base.CartesianCoordinates = value; }
         }
 
         /// <remarks />
-        public ThreeDOrientationState Orienation
+        public new ThreeDOrientationState Orientation
         {
-            get
-            {
-                return m_orienation;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_orienation, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_orienation = value;
-            }
+            get { return (ThreeDOrientationState)base.Orientation; }
+            set { base.Orientation = value; }
         }
         #endregion
 
@@ -30560,15 +31162,6 @@ namespace Opc.Ua
             ISystemContext context,
             IList<BaseInstanceState> children)
         {
-            if (m_cartesianCoordinates != null)
-            {
-                children.Add(m_cartesianCoordinates);
-            }
-
-            if (m_orienation != null)
-            {
-                children.Add(m_orienation);
-            }
 
             base.GetChildren(context, children);
         }
@@ -30612,24 +31205,24 @@ namespace Opc.Ua
                     break;
                 }
 
-                case Opc.Ua.BrowseNames.Orienation:
+                case Opc.Ua.BrowseNames.Orientation:
                 {
                     if (createOrReplace)
                     {
-                        if (Orienation == null)
+                        if (Orientation == null)
                         {
                             if (replacement == null)
                             {
-                                Orienation = new ThreeDOrientationState(this);
+                                Orientation = new ThreeDOrientationState(this);
                             }
                             else
                             {
-                                Orienation = (ThreeDOrientationState)replacement;
+                                Orientation = (ThreeDOrientationState)replacement;
                             }
                         }
                     }
 
-                    instance = Orienation;
+                    instance = Orientation;
                     break;
                 }
             }
@@ -30644,8 +31237,6 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
-        private ThreeDCartesianCoordinatesState m_cartesianCoordinates;
-        private ThreeDOrientationState m_orienation;
         #endregion
     }
 
@@ -30661,13 +31252,13 @@ namespace Opc.Ua
         /// <summary>
         /// Initializes the instance with its defalt attribute values.
         /// </summary>
-        public ThreeDFrameValue(ThreeDFrameState variable, Frame value, object dataLock) : base(dataLock)
+        public ThreeDFrameValue(ThreeDFrameState variable, ThreeDFrame value, object dataLock) : base(dataLock)
         {
             m_value = value;
 
             if (m_value == null)
             {
-                m_value = new Frame();
+                m_value = new ThreeDFrame();
             }
 
             Initialize(variable);
@@ -30686,7 +31277,7 @@ namespace Opc.Ua
         /// <summary>
         /// The value of the variable.
         /// </summary>
-        public Frame Value
+        public ThreeDFrame Value
         {
             get { return m_value;  }
             set { m_value = value; }
@@ -30716,9 +31307,33 @@ namespace Opc.Ua
                 instance.OnReadValue = OnRead_CartesianCoordinates;
                 instance.OnSimpleWriteValue = OnWrite_CartesianCoordinates;
                 updateList.Add(instance);
+                instance = m_variable.CartesianCoordinates.X;
+                instance.OnReadValue = OnRead_CartesianCoordinates_X;
+                instance.OnSimpleWriteValue = OnWrite_CartesianCoordinates_X;
+                updateList.Add(instance);
+                instance = m_variable.CartesianCoordinates.Y;
+                instance.OnReadValue = OnRead_CartesianCoordinates_Y;
+                instance.OnSimpleWriteValue = OnWrite_CartesianCoordinates_Y;
+                updateList.Add(instance);
+                instance = m_variable.CartesianCoordinates.Z;
+                instance.OnReadValue = OnRead_CartesianCoordinates_Z;
+                instance.OnSimpleWriteValue = OnWrite_CartesianCoordinates_Z;
+                updateList.Add(instance);
                 instance = m_variable.Orientation;
                 instance.OnReadValue = OnRead_Orientation;
                 instance.OnSimpleWriteValue = OnWrite_Orientation;
+                updateList.Add(instance);
+                instance = m_variable.Orientation.A;
+                instance.OnReadValue = OnRead_Orientation_A;
+                instance.OnSimpleWriteValue = OnWrite_Orientation_A;
+                updateList.Add(instance);
+                instance = m_variable.Orientation.B;
+                instance.OnReadValue = OnRead_Orientation_B;
+                instance.OnSimpleWriteValue = OnWrite_Orientation_B;
+                updateList.Add(instance);
+                instance = m_variable.Orientation.C;
+                instance.OnReadValue = OnRead_Orientation_C;
+                instance.OnSimpleWriteValue = OnWrite_Orientation_C;
                 updateList.Add(instance);
 
                 SetUpdateList(updateList);
@@ -30757,7 +31372,7 @@ namespace Opc.Ua
         {
             lock (Lock)
             {
-                m_value = (Frame)Write(value);
+                m_value = (ThreeDFrame)Write(value);
             }
 
             return ServiceResult.Good;
@@ -30796,7 +31411,127 @@ namespace Opc.Ua
         {
             lock (Lock)
             {
-                m_value.CartesianCoordinates = (CartesianCoordinates)Write(value);
+                m_value.CartesianCoordinates = (ThreeDCartesianCoordinates)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region CartesianCoordinates_X Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_CartesianCoordinates_X(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.CartesianCoordinates.X;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_CartesianCoordinates_X(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.CartesianCoordinates.X = (double)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region CartesianCoordinates_Y Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_CartesianCoordinates_Y(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.CartesianCoordinates.Y;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_CartesianCoordinates_Y(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.CartesianCoordinates.Y = (double)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region CartesianCoordinates_Z Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_CartesianCoordinates_Z(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.CartesianCoordinates.Z;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_CartesianCoordinates_Z(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.CartesianCoordinates.Z = (double)Write(value);
             }
 
             return ServiceResult.Good;
@@ -30836,7 +31571,127 @@ namespace Opc.Ua
         {
             lock (Lock)
             {
-                m_value.Orientation = (Orientation)Write(value);
+                m_value.Orientation = (ThreeDOrientation)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region Orientation_A Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_Orientation_A(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.Orientation.A;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_Orientation_A(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.Orientation.A = (double)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region Orientation_B Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_Orientation_B(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.Orientation.B;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_Orientation_B(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.Orientation.B = (double)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region Orientation_C Access Methods
+        /// <summary>
+        /// Reads the value of the variable child.
+        /// </summary>
+        private ServiceResult OnRead_Orientation_C(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.Orientation.C;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <summary>
+        /// Writes the value of the variable child.
+        /// </summary>
+        private ServiceResult OnWrite_Orientation_C(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.Orientation.C = (double)Write(value);
             }
 
             return ServiceResult.Good;
@@ -30845,7 +31700,7 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
-        private Frame m_value;
+        private ThreeDFrame m_value;
         private ThreeDFrameState m_variable;
         #endregion
     }

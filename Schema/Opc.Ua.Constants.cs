@@ -14710,6 +14710,11 @@ namespace Opc.Ua
         public const uint ThreeDOrientationType_C = 18785;
 
         /// <summary>
+        /// The identifier for the FrameType_CartesianCoordinates Variable.
+        /// </summary>
+        public const uint FrameType_CartesianCoordinates = 18801;
+
+        /// <summary>
         /// The identifier for the FrameType_Orientation Variable.
         /// </summary>
         public const uint FrameType_Orientation = 18787;
@@ -14735,6 +14740,11 @@ namespace Opc.Ua
         public const uint ThreeDFrameType_CartesianCoordinates = 18796;
 
         /// <summary>
+        /// The identifier for the ThreeDFrameType_Orientation Variable.
+        /// </summary>
+        public const uint ThreeDFrameType_Orientation = 18792;
+
+        /// <summary>
         /// The identifier for the ThreeDFrameType_CartesianCoordinates_X Variable.
         /// </summary>
         public const uint ThreeDFrameType_CartesianCoordinates_X = 18798;
@@ -14750,24 +14760,19 @@ namespace Opc.Ua
         public const uint ThreeDFrameType_CartesianCoordinates_Z = 18800;
 
         /// <summary>
-        /// The identifier for the ThreeDFrameType_Orienation Variable.
+        /// The identifier for the ThreeDFrameType_Orientation_A Variable.
         /// </summary>
-        public const uint ThreeDFrameType_Orienation = 18801;
+        public const uint ThreeDFrameType_Orientation_A = 19074;
 
         /// <summary>
-        /// The identifier for the ThreeDFrameType_Orienation_A Variable.
+        /// The identifier for the ThreeDFrameType_Orientation_B Variable.
         /// </summary>
-        public const uint ThreeDFrameType_Orienation_A = 18803;
+        public const uint ThreeDFrameType_Orientation_B = 19075;
 
         /// <summary>
-        /// The identifier for the ThreeDFrameType_Orienation_B Variable.
+        /// The identifier for the ThreeDFrameType_Orientation_C Variable.
         /// </summary>
-        public const uint ThreeDFrameType_Orienation_B = 18804;
-
-        /// <summary>
-        /// The identifier for the ThreeDFrameType_Orienation_C Variable.
-        /// </summary>
-        public const uint ThreeDFrameType_Orienation_C = 18805;
+        public const uint ThreeDFrameType_Orientation_C = 19076;
 
         /// <summary>
         /// The identifier for the TransitionEventType_Transition Variable.
@@ -44205,6 +44210,11 @@ namespace Opc.Ua
         public static readonly NodeId ThreeDOrientationType_C = new NodeId(Opc.Ua.Variables.ThreeDOrientationType_C);
 
         /// <summary>
+        /// The identifier for the FrameType_CartesianCoordinates Variable.
+        /// </summary>
+        public static readonly NodeId FrameType_CartesianCoordinates = new NodeId(Opc.Ua.Variables.FrameType_CartesianCoordinates);
+
+        /// <summary>
         /// The identifier for the FrameType_Orientation Variable.
         /// </summary>
         public static readonly NodeId FrameType_Orientation = new NodeId(Opc.Ua.Variables.FrameType_Orientation);
@@ -44230,6 +44240,11 @@ namespace Opc.Ua
         public static readonly NodeId ThreeDFrameType_CartesianCoordinates = new NodeId(Opc.Ua.Variables.ThreeDFrameType_CartesianCoordinates);
 
         /// <summary>
+        /// The identifier for the ThreeDFrameType_Orientation Variable.
+        /// </summary>
+        public static readonly NodeId ThreeDFrameType_Orientation = new NodeId(Opc.Ua.Variables.ThreeDFrameType_Orientation);
+
+        /// <summary>
         /// The identifier for the ThreeDFrameType_CartesianCoordinates_X Variable.
         /// </summary>
         public static readonly NodeId ThreeDFrameType_CartesianCoordinates_X = new NodeId(Opc.Ua.Variables.ThreeDFrameType_CartesianCoordinates_X);
@@ -44245,24 +44260,19 @@ namespace Opc.Ua
         public static readonly NodeId ThreeDFrameType_CartesianCoordinates_Z = new NodeId(Opc.Ua.Variables.ThreeDFrameType_CartesianCoordinates_Z);
 
         /// <summary>
-        /// The identifier for the ThreeDFrameType_Orienation Variable.
+        /// The identifier for the ThreeDFrameType_Orientation_A Variable.
         /// </summary>
-        public static readonly NodeId ThreeDFrameType_Orienation = new NodeId(Opc.Ua.Variables.ThreeDFrameType_Orienation);
+        public static readonly NodeId ThreeDFrameType_Orientation_A = new NodeId(Opc.Ua.Variables.ThreeDFrameType_Orientation_A);
 
         /// <summary>
-        /// The identifier for the ThreeDFrameType_Orienation_A Variable.
+        /// The identifier for the ThreeDFrameType_Orientation_B Variable.
         /// </summary>
-        public static readonly NodeId ThreeDFrameType_Orienation_A = new NodeId(Opc.Ua.Variables.ThreeDFrameType_Orienation_A);
+        public static readonly NodeId ThreeDFrameType_Orientation_B = new NodeId(Opc.Ua.Variables.ThreeDFrameType_Orientation_B);
 
         /// <summary>
-        /// The identifier for the ThreeDFrameType_Orienation_B Variable.
+        /// The identifier for the ThreeDFrameType_Orientation_C Variable.
         /// </summary>
-        public static readonly NodeId ThreeDFrameType_Orienation_B = new NodeId(Opc.Ua.Variables.ThreeDFrameType_Orienation_B);
-
-        /// <summary>
-        /// The identifier for the ThreeDFrameType_Orienation_C Variable.
-        /// </summary>
-        public static readonly NodeId ThreeDFrameType_Orienation_C = new NodeId(Opc.Ua.Variables.ThreeDFrameType_Orienation_C);
+        public static readonly NodeId ThreeDFrameType_Orientation_C = new NodeId(Opc.Ua.Variables.ThreeDFrameType_Orientation_C);
 
         /// <summary>
         /// The identifier for the TransitionEventType_Transition Variable.
@@ -63554,11 +63564,6 @@ namespace Opc.Ua
         public const string Organizes = "Organizes";
 
         /// <summary>
-        /// The BrowseName for the Orienation component.
-        /// </summary>
-        public const string Orienation = "Orienation";
-
-        /// <summary>
         /// The BrowseName for the Orientation component.
         /// </summary>
         public const string Orientation = "Orientation";
@@ -65441,7 +65446,7 @@ namespace Opc.Ua
         /// <summary>
         /// The BrowseName for the ThreeDFrame component.
         /// </summary>
-        public const string ThreeDFrame = "ThreeDFrame";
+        public const string ThreeDFrame = "3DFrame";
 
         /// <summary>
         /// The BrowseName for the ThreeDFrameType component.
