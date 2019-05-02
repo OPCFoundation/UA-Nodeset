@@ -1,6 +1,11 @@
 <!-- index -->
 ## OPC UA NodeSets and Other Supporting Files
-### Overview
+### Contents
+* [Files Found Here](#files)
+* [Release Process](#release)
+* [Amendments](#amendments)
+
+### <a name="files">Files Found Here
 This repository contains UANodeSets and other normative files which are released with a specification.
 Any change to a specification (release of a new version or errata) may require a change to the files in this repository.  
 
@@ -10,7 +15,7 @@ For each specification the following normative files need to be published:
 * *.Types.bsd - The OPC Binary schema for the DataTypes defined by the specification (obsolete);
 * *.NodeIds.csv - A CSV file containing the NodeIds assigned to Nodes defined by the specification;
 
-In addition the following non-normative support files may be published:
+In addition, the following non-normative support files may be published:
 * *.Classes.cs - C# classes for Nodes used with the [.NETStandard](https://github.com/OPCFoundation/UA-.NETStandard) stack;
 * *.DataTypes.cs - C# classes for DataTypes used with the [.NETStandard](https://github.com/OPCFoundation/UA-.NETStandard) stack;
 * *.Constants.cs - C# constant declarations used with the [.NETStandard](https://github.com/OPCFoundation/UA-.NETStandard) stack;
@@ -34,7 +39,7 @@ For the core OPC UA specifications the following additional files are published:
 The files for each companion specification are in a subdirectory with the short name of the specification.
 The files for the core specification are in the Schema subdirectory.
 
-### Release Process
+### <a name="release">Release Process
 This repository is used as part of the review process. 
 This means files are checked into this repository before they are reviewed by the working groups and may contain errors are other problems.
 If an error or problem is found it should be [reported](https://apps.opcfoundation.org/mantis/main_page.php) as a mantis issue against the appropriate specification. 
@@ -44,17 +49,27 @@ This is usually on the OPC Foundation [website](https://opcfoundation.org/UA/sch
 **If someone is looking for the officially released version of the UANodeSets they must follow the links in the specification.**
 
 When the files are reviewed and published a tag will be created in this repo with the publication date specified in the UANodeSet. 
-Note that adding tags is a step that was added late in the process so tags prior to 2019-05-01 do not exist.
+Note that adding tags is a step that was added late in the process so tags prior to 2019-05-01 do not exist and users must use the dates on the commits.
 
-There are current 3 branches in the repository:
-* master
+There are currently3 branches in the repository:
+* master (currently v1.05)
 * v1.04
 * v1.03
 
 These branches correspond to a release of the OPC UA specification.
-When a companion specification is released it will be added to the branch that matches the current release of the specification.
+When a companion specification is released it will be added to the branch that matches the release of the OPC UA specification used.
 If errata are later published for a companion specification the version in the appropriate branch will be updated. 
 
 For testing purposes, files for companion specifications are updated to use the current version of the OPC UA specification,
 however, these versions are not normative until the companion specification working group approves the move to the new OPC UA version.
+
+### <a name="amendments">Amendments
+The OPC UA working group publishes extensions to the 1.04 specification in the form of amendments. 
+When these amendments are being developed and reviewed the Nodes are added to the UANodeSet in the master branch with 'Draft' as the ReleaseStatus.
+When an amendment is released the Nodes have their ReleaseStatus set to 'Released' and are added to the UANodeSet in the v1.04 branch. 
+The UANodeSet is also published on the OPC Foundation website and a tag is added to the v1.04 branch.
+
+Companion specification working groups that depend on specific amendments must ensure that they reference a UANodeSet which includes the Nodes definedin the Amendment.
+This is done by specifying a minimum publication date for the core UANodeSet.
+
 
