@@ -51,7 +51,7 @@ This is usually on the OPC Foundation [website](https://opcfoundation.org/UA/sch
 When the files are reviewed and published a tag will be created in this repo with the publication date specified in the UANodeSet. 
 Note that adding tags is a step that was added late in the process so tags prior to 2019-05-01 do not exist and users must use the dates on the commits.
 
-There are currently3 branches in the repository:
+There are currently 3 branches in the repository:
 * master (currently v1.05)
 * v1.04
 * v1.03
@@ -66,8 +66,8 @@ however, these versions are not normative until the companion specification work
 ### <a name="amendments">Amendments
 The OPC UA working group publishes extensions to the 1.04 specification in the form of amendments. 
 When these amendments are being developed and reviewed the Nodes are added to the UANodeSet in the master branch with 'Draft' as the ReleaseStatus.
-When an amendment is released the Nodes have their ReleaseStatus set to 'Released' and are added to the UANodeSet in the v1.04 branch. 
-The UANodeSet is also published on the OPC Foundation website and a tag is added to the v1.04 branch.
+When an amendment is ready for release the Nodes have their ReleaseStatus set to 'Released' and are added to the UANodeSet in the v1.04 branch. 
+Once the WG approves, the UANodeSet is published on the OPC Foundation website and a tag is added to the v1.04 branch.
 
 Companion specification working groups that depend on specific amendments must ensure that they reference a UANodeSet which includes the Nodes definedin the Amendment.
 This is done by specifying a minimum publication date for the core UANodeSet.
