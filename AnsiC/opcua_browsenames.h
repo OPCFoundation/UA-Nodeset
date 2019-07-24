@@ -231,6 +231,7 @@
 #define OpcUa_BrowseName_ComplexNumberType "ComplexNumberType"
 #define OpcUa_BrowseName_ConditionClassId "ConditionClassId"
 #define OpcUa_BrowseName_ConditionClassName "ConditionClassName"
+#define OpcUa_BrowseName_ConditionEventId "ConditionEventId"
 #define OpcUa_BrowseName_ConditionName "ConditionName"
 #define OpcUa_BrowseName_ConditionRefresh "ConditionRefresh"
 #define OpcUa_BrowseName_ConditionRefresh2 "ConditionRefresh2"

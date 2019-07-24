@@ -1957,13 +1957,13 @@
   <UAObjectType NodeId="i=2829" BrowseName="AuditConditionCommentEventType">
     <DisplayName>AuditConditionCommentEventType</DisplayName>
     <References>
-      <Reference ReferenceType="HasProperty">i=4170</Reference>
+      <Reference ReferenceType="HasProperty">i=15001</Reference>
       <Reference ReferenceType="HasProperty">i=11851</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2790</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=4170" BrowseName="EventId" ParentNodeId="i=2829" DataType="ByteString">
-    <DisplayName>EventId</DisplayName>
+  <UAVariable NodeId="i=15001" BrowseName="ConditionEventId" ParentNodeId="i=2829" DataType="ByteString">
+    <DisplayName>ConditionEventId</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1996,13 +1996,13 @@
   <UAObjectType NodeId="i=8944" BrowseName="AuditConditionAcknowledgeEventType">
     <DisplayName>AuditConditionAcknowledgeEventType</DisplayName>
     <References>
-      <Reference ReferenceType="HasProperty">i=8945</Reference>
+      <Reference ReferenceType="HasProperty">i=15002</Reference>
       <Reference ReferenceType="HasProperty">i=11853</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2790</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=8945" BrowseName="EventId" ParentNodeId="i=8944" DataType="ByteString">
-    <DisplayName>EventId</DisplayName>
+  <UAVariable NodeId="i=15002" BrowseName="ConditionEventId" ParentNodeId="i=8944" DataType="ByteString">
+    <DisplayName>ConditionEventId</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2020,13 +2020,13 @@
   <UAObjectType NodeId="i=8961" BrowseName="AuditConditionConfirmEventType">
     <DisplayName>AuditConditionConfirmEventType</DisplayName>
     <References>
-      <Reference ReferenceType="HasProperty">i=8962</Reference>
+      <Reference ReferenceType="HasProperty">i=15003</Reference>
       <Reference ReferenceType="HasProperty">i=11854</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2790</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=8962" BrowseName="EventId" ParentNodeId="i=8961" DataType="ByteString">
-    <DisplayName>EventId</DisplayName>
+  <UAVariable NodeId="i=15003" BrowseName="ConditionEventId" ParentNodeId="i=8961" DataType="ByteString">
+    <DisplayName>ConditionEventId</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>

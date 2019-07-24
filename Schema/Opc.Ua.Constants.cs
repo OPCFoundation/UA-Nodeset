@@ -12450,9 +12450,9 @@ namespace Opc.Ua
         public const uint TripAlarmType_ShelvingState_TimedShelve_InputArguments = 10862;
 
         /// <summary>
-        /// The identifier for the AuditConditionCommentEventType_EventId Variable.
+        /// The identifier for the AuditConditionCommentEventType_ConditionEventId Variable.
         /// </summary>
-        public const uint AuditConditionCommentEventType_EventId = 4170;
+        public const uint AuditConditionCommentEventType_ConditionEventId = 15001;
 
         /// <summary>
         /// The identifier for the AuditConditionCommentEventType_Comment Variable.
@@ -12465,9 +12465,9 @@ namespace Opc.Ua
         public const uint AuditConditionRespondEventType_SelectedResponse = 11852;
 
         /// <summary>
-        /// The identifier for the AuditConditionAcknowledgeEventType_EventId Variable.
+        /// The identifier for the AuditConditionAcknowledgeEventType_ConditionEventId Variable.
         /// </summary>
-        public const uint AuditConditionAcknowledgeEventType_EventId = 8945;
+        public const uint AuditConditionAcknowledgeEventType_ConditionEventId = 15002;
 
         /// <summary>
         /// The identifier for the AuditConditionAcknowledgeEventType_Comment Variable.
@@ -12475,9 +12475,9 @@ namespace Opc.Ua
         public const uint AuditConditionAcknowledgeEventType_Comment = 11853;
 
         /// <summary>
-        /// The identifier for the AuditConditionConfirmEventType_EventId Variable.
+        /// The identifier for the AuditConditionConfirmEventType_ConditionEventId Variable.
         /// </summary>
-        public const uint AuditConditionConfirmEventType_EventId = 8962;
+        public const uint AuditConditionConfirmEventType_ConditionEventId = 15003;
 
         /// <summary>
         /// The identifier for the AuditConditionConfirmEventType_Comment Variable.
@@ -27720,9 +27720,9 @@ namespace Opc.Ua
         public static readonly NodeId TripAlarmType_ShelvingState_TimedShelve_InputArguments = new NodeId(Opc.Ua.Variables.TripAlarmType_ShelvingState_TimedShelve_InputArguments);
 
         /// <summary>
-        /// The identifier for the AuditConditionCommentEventType_EventId Variable.
+        /// The identifier for the AuditConditionCommentEventType_ConditionEventId Variable.
         /// </summary>
-        public static readonly NodeId AuditConditionCommentEventType_EventId = new NodeId(Opc.Ua.Variables.AuditConditionCommentEventType_EventId);
+        public static readonly NodeId AuditConditionCommentEventType_ConditionEventId = new NodeId(Opc.Ua.Variables.AuditConditionCommentEventType_ConditionEventId);
 
         /// <summary>
         /// The identifier for the AuditConditionCommentEventType_Comment Variable.
@@ -27735,9 +27735,9 @@ namespace Opc.Ua
         public static readonly NodeId AuditConditionRespondEventType_SelectedResponse = new NodeId(Opc.Ua.Variables.AuditConditionRespondEventType_SelectedResponse);
 
         /// <summary>
-        /// The identifier for the AuditConditionAcknowledgeEventType_EventId Variable.
+        /// The identifier for the AuditConditionAcknowledgeEventType_ConditionEventId Variable.
         /// </summary>
-        public static readonly NodeId AuditConditionAcknowledgeEventType_EventId = new NodeId(Opc.Ua.Variables.AuditConditionAcknowledgeEventType_EventId);
+        public static readonly NodeId AuditConditionAcknowledgeEventType_ConditionEventId = new NodeId(Opc.Ua.Variables.AuditConditionAcknowledgeEventType_ConditionEventId);
 
         /// <summary>
         /// The identifier for the AuditConditionAcknowledgeEventType_Comment Variable.
@@ -27745,9 +27745,9 @@ namespace Opc.Ua
         public static readonly NodeId AuditConditionAcknowledgeEventType_Comment = new NodeId(Opc.Ua.Variables.AuditConditionAcknowledgeEventType_Comment);
 
         /// <summary>
-        /// The identifier for the AuditConditionConfirmEventType_EventId Variable.
+        /// The identifier for the AuditConditionConfirmEventType_ConditionEventId Variable.
         /// </summary>
-        public static readonly NodeId AuditConditionConfirmEventType_EventId = new NodeId(Opc.Ua.Variables.AuditConditionConfirmEventType_EventId);
+        public static readonly NodeId AuditConditionConfirmEventType_ConditionEventId = new NodeId(Opc.Ua.Variables.AuditConditionConfirmEventType_ConditionEventId);
 
         /// <summary>
         /// The identifier for the AuditConditionConfirmEventType_Comment Variable.
@@ -31587,6 +31587,11 @@ namespace Opc.Ua
         /// The BrowseName for the ConditionClassName component.
         /// </summary>
         public const string ConditionClassName = "ConditionClassName";
+
+        /// <summary>
+        /// The BrowseName for the ConditionEventId component.
+        /// </summary>
+        public const string ConditionEventId = "ConditionEventId";
 
         /// <summary>
         /// The BrowseName for the ConditionName component.
