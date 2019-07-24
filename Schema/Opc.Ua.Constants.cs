@@ -4015,11 +4015,6 @@ namespace Opc.Ua
         public const uint ModellingRule_ExposesItsArray = 83;
 
         /// <summary>
-        /// The identifier for the ModellingRule_MandatoryShared Object.
-        /// </summary>
-        public const uint ModellingRule_MandatoryShared = 79;
-
-        /// <summary>
         /// The identifier for the ModellingRule_OptionalPlaceholder Object.
         /// </summary>
         public const uint ModellingRule_OptionalPlaceholder = 11508;
@@ -11123,11 +11118,6 @@ namespace Opc.Ua
         /// The identifier for the ModellingRule_ExposesItsArray_NamingRule Variable.
         /// </summary>
         public const uint ModellingRule_ExposesItsArray_NamingRule = 114;
-
-        /// <summary>
-        /// The identifier for the ModellingRule_MandatoryShared_NamingRule Variable.
-        /// </summary>
-        public const uint ModellingRule_MandatoryShared_NamingRule = 116;
 
         /// <summary>
         /// The identifier for the ModellingRule_OptionalPlaceholder_NamingRule Variable.
@@ -33515,11 +33505,6 @@ namespace Opc.Ua
         public static readonly NodeId ModellingRule_ExposesItsArray = new NodeId(Opc.Ua.Objects.ModellingRule_ExposesItsArray);
 
         /// <summary>
-        /// The identifier for the ModellingRule_MandatoryShared Object.
-        /// </summary>
-        public static readonly NodeId ModellingRule_MandatoryShared = new NodeId(Opc.Ua.Objects.ModellingRule_MandatoryShared);
-
-        /// <summary>
         /// The identifier for the ModellingRule_OptionalPlaceholder Object.
         /// </summary>
         public static readonly NodeId ModellingRule_OptionalPlaceholder = new NodeId(Opc.Ua.Objects.ModellingRule_OptionalPlaceholder);
@@ -40623,11 +40608,6 @@ namespace Opc.Ua
         /// The identifier for the ModellingRule_ExposesItsArray_NamingRule Variable.
         /// </summary>
         public static readonly NodeId ModellingRule_ExposesItsArray_NamingRule = new NodeId(Opc.Ua.Variables.ModellingRule_ExposesItsArray_NamingRule);
-
-        /// <summary>
-        /// The identifier for the ModellingRule_MandatoryShared_NamingRule Variable.
-        /// </summary>
-        public static readonly NodeId ModellingRule_MandatoryShared_NamingRule = new NodeId(Opc.Ua.Variables.ModellingRule_MandatoryShared_NamingRule);
 
         /// <summary>
         /// The identifier for the ModellingRule_OptionalPlaceholder_NamingRule Variable.
@@ -63002,11 +62982,6 @@ namespace Opc.Ua
         /// The BrowseName for the ModellingRule_MandatoryPlaceholder component.
         /// </summary>
         public const string ModellingRule_MandatoryPlaceholder = "MandatoryPlaceholder";
-
-        /// <summary>
-        /// The BrowseName for the ModellingRule_MandatoryShared component.
-        /// </summary>
-        public const string ModellingRule_MandatoryShared = "MandatoryShared";
 
         /// <summary>
         /// The BrowseName for the ModellingRule_Optional component.

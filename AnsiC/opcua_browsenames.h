@@ -822,7 +822,6 @@
 #define OpcUa_BrowseName_ModellingRule_ExposesItsArray "ExposesItsArray"
 #define OpcUa_BrowseName_ModellingRule_Mandatory "Mandatory"
 #define OpcUa_BrowseName_ModellingRule_MandatoryPlaceholder "MandatoryPlaceholder"
-#define OpcUa_BrowseName_ModellingRule_MandatoryShared "MandatoryShared"
 #define OpcUa_BrowseName_ModellingRule_Optional "Optional"
 #define OpcUa_BrowseName_ModellingRule_OptionalPlaceholder "OptionalPlaceholder"
 #define OpcUa_BrowseName_ModellingRules "ModellingRules"

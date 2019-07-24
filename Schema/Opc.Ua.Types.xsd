@@ -1585,7 +1585,7 @@
           <xs:element name="DataSetMessageContentMask" type="tns:UadpDataSetMessageContentMask" minOccurs="0" />
           <xs:element name="PublishingInterval" type="xs:double" minOccurs="0" />
           <xs:element name="ReceiveOffset" type="xs:double" minOccurs="0" />
-          <xs:element name="ProcessingOffset" type="xs:double" minOccurs="0" />
+          <xs:element name="ProcessingOffset" type="ua:ListOfDouble" minOccurs="0" nillable="true" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>

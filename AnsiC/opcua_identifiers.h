@@ -832,7 +832,6 @@
 #define OpcUaId_ModellingRule_Mandatory 78
 #define OpcUaId_ModellingRule_Optional 80
 #define OpcUaId_ModellingRule_ExposesItsArray 83
-#define OpcUaId_ModellingRule_MandatoryShared 79
 #define OpcUaId_ModellingRule_OptionalPlaceholder 11508
 #define OpcUaId_ModellingRule_MandatoryPlaceholder 11510
 #define OpcUaId_RootFolder 84
@@ -2260,7 +2259,6 @@
 #define OpcUaId_ModellingRule_Mandatory_NamingRule 112
 #define OpcUaId_ModellingRule_Optional_NamingRule 113
 #define OpcUaId_ModellingRule_ExposesItsArray_NamingRule 114
-#define OpcUaId_ModellingRule_MandatoryShared_NamingRule 116
 #define OpcUaId_ModellingRule_OptionalPlaceholder_NamingRule 11509
 #define OpcUaId_ModellingRule_MandatoryPlaceholder_NamingRule 11511
 #define OpcUaId_OPCUANamespaceMetadata_NamespaceUri 15958
