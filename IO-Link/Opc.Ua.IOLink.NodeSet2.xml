@@ -1375,8 +1375,8 @@
             <UInt16>0</UInt16>
         </Value>
     </UAVariable>
-    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6129" BrowseName="1:Manufacture" AccessLevel="3">
-        <DisplayName>Manufacture</DisplayName>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6129" BrowseName="1:Manufacturer" AccessLevel="3">
+        <DisplayName>Manufacturer</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
@@ -4850,8 +4850,8 @@
             <UInt16>0</UInt16>
         </Value>
     </UAVariable>
-    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5033" NodeId="ns=1;i=6143" BrowseName="1:Manufacture" AccessLevel="3">
-        <DisplayName>Manufacture</DisplayName>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5033" NodeId="ns=1;i=6143" BrowseName="1:Manufacturer" AccessLevel="3">
+        <DisplayName>Manufacturer</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5033</Reference>
