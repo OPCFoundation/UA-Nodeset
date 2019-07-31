@@ -62,6 +62,7 @@ DataTypeSystemType,75,ObjectType
 DataTypeEncodingType,76,ObjectType
 ModellingRuleType,77,ObjectType
 ModellingRule_Mandatory,78,Object
+ModellingRule_MandatoryShared,79,Object
 ModellingRule_Optional,80,Object
 ModellingRule_ExposesItsArray,83,Object
 RootFolder,84,Object
@@ -91,6 +92,7 @@ ModellingRuleType_NamingRule,111,Variable
 ModellingRule_Mandatory_NamingRule,112,Variable
 ModellingRule_Optional_NamingRule,113,Variable
 ModellingRule_ExposesItsArray_NamingRule,114,Variable
+ModellingRule_MandatoryShared_NamingRule,116,Variable
 HasSubStateMachine,117,ReferenceType
 NamingRuleType,120,DataType
 DataTypeDefinition_Encoding_DefaultBinary,121,Object

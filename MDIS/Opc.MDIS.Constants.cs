@@ -218,7 +218,7 @@ namespace Opc.MDIS
         /// <summary>
         /// The identifier for the MDISInformation_TimeSynchronization_SetTime Method.
         /// </summary>
-        public const uint MDISInformation_TimeSynchronization_SetTime = 15007;
+        public const uint MDISInformation_TimeSynchronization_SetTime = 15046;
     }
     #endregion
 
@@ -248,12 +248,12 @@ namespace Opc.MDIS
         /// <summary>
         /// The identifier for the MDISAggregateObjectType_DigitalInstrumentPlaceholder Object.
         /// </summary>
-        public const uint MDISAggregateObjectType_DigitalInstrumentPlaceholder = 1347;
+        public const uint MDISAggregateObjectType_DigitalInstrumentPlaceholder = 15022;
 
         /// <summary>
         /// The identifier for the MDISAggregateObjectType_DiscreteInstrumentPlaceholder Object.
         /// </summary>
-        public const uint MDISAggregateObjectType_DiscreteInstrumentPlaceholder = 1357;
+        public const uint MDISAggregateObjectType_DiscreteInstrumentPlaceholder = 15032;
 
         /// <summary>
         /// The identifier for the MDISAggregateObjectType_DigitalOutPlaceholder Object.
@@ -288,17 +288,17 @@ namespace Opc.MDIS
         /// <summary>
         /// The identifier for the MDISInformation Object.
         /// </summary>
-        public const uint MDISInformation = 15005;
+        public const uint MDISInformation = 15044;
 
         /// <summary>
         /// The identifier for the MDISInformation_TimeSynchronization Object.
         /// </summary>
-        public const uint MDISInformation_TimeSynchronization = 15006;
+        public const uint MDISInformation_TimeSynchronization = 15045;
 
         /// <summary>
         /// The identifier for the MDISInformation_Signatures Object.
         /// </summary>
-        public const uint MDISInformation_Signatures = 15009;
+        public const uint MDISInformation_Signatures = 15048;
 
         /// <summary>
         /// The identifier for the MDISVersionDataType_Encoding_DefaultBinary Object.
@@ -903,32 +903,32 @@ namespace Opc.MDIS
         /// <summary>
         /// The identifier for the MDISAggregateObjectType_DigitalInstrumentPlaceholder_Fault Variable.
         /// </summary>
-        public const uint MDISAggregateObjectType_DigitalInstrumentPlaceholder_Fault = 1348;
+        public const uint MDISAggregateObjectType_DigitalInstrumentPlaceholder_Fault = 15023;
 
         /// <summary>
         /// The identifier for the MDISAggregateObjectType_DigitalInstrumentPlaceholder_EnableDisable_InputArguments Variable.
         /// </summary>
-        public const uint MDISAggregateObjectType_DigitalInstrumentPlaceholder_EnableDisable_InputArguments = 1354;
+        public const uint MDISAggregateObjectType_DigitalInstrumentPlaceholder_EnableDisable_InputArguments = 15029;
 
         /// <summary>
         /// The identifier for the MDISAggregateObjectType_DigitalInstrumentPlaceholder_State Variable.
         /// </summary>
-        public const uint MDISAggregateObjectType_DigitalInstrumentPlaceholder_State = 1356;
+        public const uint MDISAggregateObjectType_DigitalInstrumentPlaceholder_State = 15031;
 
         /// <summary>
         /// The identifier for the MDISAggregateObjectType_DiscreteInstrumentPlaceholder_Fault Variable.
         /// </summary>
-        public const uint MDISAggregateObjectType_DiscreteInstrumentPlaceholder_Fault = 1358;
+        public const uint MDISAggregateObjectType_DiscreteInstrumentPlaceholder_Fault = 15033;
 
         /// <summary>
         /// The identifier for the MDISAggregateObjectType_DiscreteInstrumentPlaceholder_EnableDisable_InputArguments Variable.
         /// </summary>
-        public const uint MDISAggregateObjectType_DiscreteInstrumentPlaceholder_EnableDisable_InputArguments = 1364;
+        public const uint MDISAggregateObjectType_DiscreteInstrumentPlaceholder_EnableDisable_InputArguments = 15039;
 
         /// <summary>
         /// The identifier for the MDISAggregateObjectType_DiscreteInstrumentPlaceholder_State Variable.
         /// </summary>
-        public const uint MDISAggregateObjectType_DiscreteInstrumentPlaceholder_State = 1366;
+        public const uint MDISAggregateObjectType_DiscreteInstrumentPlaceholder_State = 15041;
 
         /// <summary>
         /// The identifier for the MDISAggregateObjectType_DigitalOutPlaceholder_Fault Variable.
@@ -1063,27 +1063,27 @@ namespace Opc.MDIS
         /// <summary>
         /// The identifier for the MDISInformation_TimeSynchronization_SetTime_InputArguments Variable.
         /// </summary>
-        public const uint MDISInformation_TimeSynchronization_SetTime_InputArguments = 15008;
+        public const uint MDISInformation_TimeSynchronization_SetTime_InputArguments = 15047;
 
         /// <summary>
         /// The identifier for the MDISInformation_MDISVersion Variable.
         /// </summary>
-        public const uint MDISInformation_MDISVersion = 15010;
+        public const uint MDISInformation_MDISVersion = 15049;
 
         /// <summary>
         /// The identifier for the MDISInformation_MDISVersion_MajorVersion Variable.
         /// </summary>
-        public const uint MDISInformation_MDISVersion_MajorVersion = 15011;
+        public const uint MDISInformation_MDISVersion_MajorVersion = 15050;
 
         /// <summary>
         /// The identifier for the MDISInformation_MDISVersion_MinorVersion Variable.
         /// </summary>
-        public const uint MDISInformation_MDISVersion_MinorVersion = 15012;
+        public const uint MDISInformation_MDISVersion_MinorVersion = 15051;
 
         /// <summary>
         /// The identifier for the MDISInformation_MDISVersion_Build Variable.
         /// </summary>
-        public const uint MDISInformation_MDISVersion_Build = 15013;
+        public const uint MDISInformation_MDISVersion_Build = 15052;
 
         /// <summary>
         /// The identifier for the MDIS_BinarySchema Variable.

@@ -242,16 +242,6 @@
     <opc:Field Name="Value" TypeName="ua:Variant" />
   </opc:StructuredType>
 
-  <opc:StructuredType Name="AdditionalParametersType" BaseType="ua:ExtensionObject">
-    <opc:Field Name="NoOfParameters" TypeName="opc:Int32" />
-    <opc:Field Name="Parameters" TypeName="tns:KeyValuePair" LengthField="NoOfParameters" />
-  </opc:StructuredType>
-
-  <opc:StructuredType Name="EphemeralKeyType" BaseType="ua:ExtensionObject">
-    <opc:Field Name="PublicKey" TypeName="opc:ByteString" />
-    <opc:Field Name="Signature" TypeName="opc:ByteString" />
-  </opc:StructuredType>
-
   <opc:StructuredType Name="EndpointType" BaseType="ua:ExtensionObject">
     <opc:Field Name="EndpointUrl" TypeName="opc:String" />
     <opc:Field Name="SecurityMode" TypeName="tns:MessageSecurityMode" />
@@ -724,8 +714,7 @@
     <opc:Field Name="DataSetMessageContentMask" TypeName="tns:UadpDataSetMessageContentMask" />
     <opc:Field Name="PublishingInterval" TypeName="opc:Double" />
     <opc:Field Name="ReceiveOffset" TypeName="opc:Double" />
-    <opc:Field Name="NoOfProcessingOffset" TypeName="opc:Int32" />
-    <opc:Field Name="ProcessingOffset" TypeName="opc:Double" LengthField="NoOfProcessingOffset" />
+    <opc:Field Name="ProcessingOffset" TypeName="opc:Double" />
   </opc:StructuredType>
 
   <opc:EnumeratedType Name="JsonNetworkMessageContentMask" LengthInBits="32" IsOptionSet="true">
@@ -1522,9 +1511,6 @@
   </opc:StructuredType>
 
   <opc:OpaqueType Name="RsaEncryptedSecret">
-  </opc:OpaqueType>
-
-  <opc:OpaqueType Name="EccEncryptedSecret">
   </opc:OpaqueType>
 
   <opc:StructuredType Name="ActivateSessionRequest" BaseType="ua:ExtensionObject">

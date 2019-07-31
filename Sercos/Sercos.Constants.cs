@@ -349,7 +349,7 @@ namespace Sercos
         /// <summary>
         /// The identifier for the SercosDeviceType_Lock_Locked Variable.
         /// </summary>
-        public const uint SercosDeviceType_Lock_Locked = 15007;
+        public const uint SercosDeviceType_Lock_Locked = 6021;
 
         /// <summary>
         /// The identifier for the SercosDeviceType_Lock_LockingClient Variable.
@@ -394,7 +394,7 @@ namespace Sercos
         /// <summary>
         /// The identifier for the SercosDeviceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint SercosDeviceType_CPIdentifier_Lock_Locked = 15009;
+        public const uint SercosDeviceType_CPIdentifier_Lock_Locked = 6060;
 
         /// <summary>
         /// The identifier for the SercosDeviceType_CPIdentifier_Lock_LockingClient Variable.

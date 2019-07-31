@@ -32,6 +32,11 @@
   <NamespaceUris>
     <Uri>http://www.OPCFoundation.org/UA/2013/01/ISA95</Uri>
   </NamespaceUris>
+  <Models>
+    <Model ModelUri="http://www.OPCFoundation.org/UA/2013/01/ISA95">
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" />
+    </Model>
+  </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
     <Alias Alias="SByte">i=2</Alias>
@@ -75,6 +80,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=44</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.2.1</Documentation>
     <InverseName>ContainedBy</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4910" BrowseName="1:HasISA95ClassProperty">
@@ -83,6 +89,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.2.2</Documentation>
     <InverseName>ISA95ClassPropertyOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=2009" BrowseName="1:HasISA95Property">
@@ -91,6 +98,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.2.3</Documentation>
     <InverseName>ISA95PropertyOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4713" BrowseName="1:HasISA95Attribute">
@@ -99,6 +107,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.2.4</Documentation>
     <InverseName>ISA95AttributeOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4911" BrowseName="1:HasCDTSupplemental">
@@ -107,6 +116,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=46</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.2.5</Documentation>
     <InverseName>CDTSupplementalOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4912" BrowseName="1:DefinedBy" IsAbstract="true">
@@ -115,6 +125,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.2.7</Documentation>
     <InverseName>DefinitionOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4913" BrowseName="1:TestedBy" IsAbstract="true">
@@ -123,6 +134,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.2.8</Documentation>
     <InverseName>TestSpecificationOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4914" BrowseName="1:ImplementedBy">
@@ -131,6 +143,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.2.9</Documentation>
     <InverseName>ImplementationOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4915" BrowseName="1:HasTestResult">
@@ -139,6 +152,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=46</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.2.10</Documentation>
     <InverseName>TestResultOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=5114" BrowseName="1:LocatedIn">
@@ -147,6 +161,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=46</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.2.6</Documentation>
     <InverseName>LocationOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4916" BrowseName="1:ResultsForSpecification">
@@ -155,6 +170,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.2.11</Documentation>
     <InverseName>TestResultOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4917" BrowseName="1:DefinedByPersonnelClass">
@@ -163,6 +179,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4912</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.3.1</Documentation>
     <InverseName>PersonnelClassOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4918" BrowseName="1:TestedByQualificationTest">
@@ -171,6 +188,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4913</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.3.2</Documentation>
     <InverseName>QualificationTestOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4919" BrowseName="1:DefinedByEquipmentClass">
@@ -179,6 +197,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4912</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.4.2</Documentation>
     <InverseName>EquipmentClassOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4920" BrowseName="1:TestedByEquipmentTest">
@@ -187,6 +206,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4913</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.4.3</Documentation>
     <InverseName>EquipmentTestOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=5115" BrowseName="1:MadeUpOfEquipment">
@@ -195,6 +215,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4714</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.4.1</Documentation>
     <InverseName>ContainedByEquipment</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4921" BrowseName="1:DefinedByPhysicalAssetClass">
@@ -203,6 +224,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4912</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.5.2</Documentation>
     <InverseName>PhysicalAssetClassOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4922" BrowseName="1:TestedByPhysicalAssetTest">
@@ -211,6 +233,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4913</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.5.3</Documentation>
     <InverseName>PhysicalAssetTestOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=5116" BrowseName="1:MadeUpOfPhysicalAsset">
@@ -219,6 +242,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4714</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.5.1</Documentation>
     <InverseName>ContainedByPhysicalAsset</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=5301" BrowseName="1:DefinedByMaterialDefinition">
@@ -235,6 +259,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4913</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.6.3</Documentation>
     <InverseName>MaterialTestOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4925" BrowseName="1:AssembledFrom" IsAbstract="true">
@@ -243,6 +268,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=44</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.6.4</Documentation>
     <InverseName>AssemblyTo</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4926" BrowseName="1:AssembledFromDefinition">
@@ -251,6 +277,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4925</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.6.5</Documentation>
     <InverseName>AssemblyToDefinition</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4927" BrowseName="1:AssembledFromClass">
@@ -259,6 +286,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4925</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.6.6</Documentation>
     <InverseName>AssemblyToClass</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4928" BrowseName="1:AssembledFromLot">
@@ -267,6 +295,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4925</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.6.7</Documentation>
     <InverseName>AssemblyToLot</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=5117" BrowseName="1:MadeUpOfMaterialSublot">
@@ -275,6 +304,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4714</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#9.6.1</Documentation>
     <InverseName>ContainedByMaterialSublot</InverseName>
   </UAReferenceType>
   <UADataType NodeId="ns=1;i=4772" BrowseName="1:DecimalString">
@@ -282,42 +312,49 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#6.2.5</Documentation>
   </UADataType>
   <UADataType NodeId="ns=1;i=4773" BrowseName="1:DateString">
     <DisplayName>DateString</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#6.2.3</Documentation>
   </UADataType>
   <UADataType NodeId="ns=1;i=4774" BrowseName="1:TimeString">
     <DisplayName>TimeString</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#6.2.8</Documentation>
   </UADataType>
   <UADataType NodeId="ns=1;i=4775" BrowseName="1:DurationString">
     <DisplayName>DurationString</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#6.2.6</Documentation>
   </UADataType>
   <UADataType NodeId="ns=1;i=4929" BrowseName="1:NormalizedString">
     <DisplayName>NormalizedString</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#6.2.7</Documentation>
   </UADataType>
   <UADataType NodeId="ns=1;i=927" BrowseName="1:Decimal">
     <DisplayName>Decimal</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#6.2.4</Documentation>
   </UADataType>
   <UADataType NodeId="ns=1;i=4776" BrowseName="1:CurrencyCode">
     <DisplayName>CurrencyCode</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#6.2.2</Documentation>
     <Definition Name="CurrencyCode">
       <Field Name="namespaceUri" DataType="i=12" />
       <Field Name="unitId" DataType="i=6" />
@@ -332,6 +369,7 @@
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4797</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=927</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#6.3.2</Documentation>
   </UADataType>
   <UAVariable NodeId="ns=1;i=4797" BrowseName="1:Currency" ParentNodeId="ns=1;i=4796" DataType="ns=1;i=4776" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>Currency</DisplayName>
@@ -359,6 +397,7 @@
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4802</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#6.3.3</Documentation>
   </UADataType>
   <UAVariable NodeId="ns=1;i=4930" BrowseName="1:MimeContentType" ParentNodeId="ns=1;i=4798" DataType="String" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>MimeContentType</DisplayName>
@@ -472,6 +511,7 @@
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4795</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#6.3.4</Documentation>
   </UADataType>
   <UAVariable NodeId="ns=1;i=4793" BrowseName="1:ListId" ParentNodeId="ns=1;i=4792" DataType="String" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>ListId</DisplayName>
@@ -504,6 +544,7 @@
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4805</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=294</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#6.3.5</Documentation>
   </UADataType>
   <UAVariable NodeId="ns=1;i=4804" BrowseName="1:Timezone" ParentNodeId="ns=1;i=4803" DataType="String" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>Timezone</DisplayName>
@@ -531,6 +572,7 @@
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4808</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#6.3.6</Documentation>
   </UADataType>
   <UAVariable NodeId="ns=1;i=4940" BrowseName="1:MimeContentType" ParentNodeId="ns=1;i=4806" DataType="String" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>MimeContentType</DisplayName>
@@ -580,6 +622,7 @@
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4780</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#6.3.7</Documentation>
   </UADataType>
   <UAVariable NodeId="ns=1;i=4778" BrowseName="1:SchemeId" ParentNodeId="ns=1;i=4777" DataType="String" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>SchemeId</DisplayName>
@@ -700,6 +743,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=6</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#6.3.9</Documentation>
   </UADataType>
   <UADataType NodeId="ns=1;i=4822" BrowseName="1:CDTPicture">
     <DisplayName>CDTPicture</DisplayName>
@@ -711,6 +755,7 @@
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4824</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=30</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#6.3.10</Documentation>
   </UADataType>
   <UAVariable NodeId="ns=1;i=4944" BrowseName="1:MimeContentType" ParentNodeId="ns=1;i=4822" DataType="String" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>MimeContentType</DisplayName>
@@ -1002,6 +1047,7 @@
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4855</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#6.3.12</Documentation>
   </UADataType>
   <UAVariable NodeId="ns=1;i=4948" BrowseName="1:MimeContentType" ParentNodeId="ns=1;i=4853" DataType="String" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>MimeContentType</DisplayName>
@@ -1053,6 +1099,7 @@
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4858</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#6.3.13</Documentation>
   </UADataType>
   <UAVariable NodeId="ns=1;i=4952" BrowseName="1:MimeContentType" ParentNodeId="ns=1;i=4856" DataType="String" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>MimeContentType</DisplayName>
@@ -1100,6 +1147,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=4872</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#7.4.1</Documentation>
     <Definition Name="ISA95EquipmentElementLevelEnum">
       <Field Name="Enterprise" Value="0" />
       <Field Name="Site" Value="1" />
@@ -1210,6 +1258,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#7.4.2</Documentation>
     <Definition Name="ISA95TestResultMeasurementDataType">
       <Field Name="Id" DataType="i=17" />
       <Field Name="TestResultDescription" DataType="i=21" />
@@ -1224,6 +1273,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#7.4.3</Documentation>
     <Definition Name="ISA95TestResultDataType">
       <Field Name="Id" DataType="i=17" />
       <Field Name="TestResultDescription" DataType="i=21" />
@@ -1238,6 +1288,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.2.2.1</Documentation>
     <Definition Name="ISA95AssetAssignmentDataType">
       <Field Name="Id" DataType="i=17" />
       <Field Name="AssinmentDescription" DataType="i=21" />
@@ -1252,6 +1303,7 @@
       <Reference ReferenceType="ns=1;i=4713">ns=1;i=4886</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#7.5.2</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=4886" BrowseName="1:Key" ParentNodeId="ns=1;i=4885" DataType="ns=1;i=4777" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>Key</DisplayName>
@@ -1268,6 +1320,7 @@
       <Reference ReferenceType="ns=1;i=4713">ns=1;i=4887</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#7.5.3</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=4887" BrowseName="1:Key" ParentNodeId="ns=1;i=4263" DataType="ns=1;i=4777" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>Key</DisplayName>
@@ -1289,6 +1342,7 @@
       <Reference ReferenceType="ns=1;i=4713">ns=1;i=4884</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#7.5.4</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=4879" BrowseName="1:Id" ParentNodeId="ns=1;i=4878" DataType="NodeId" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>Id</DisplayName>
@@ -1376,6 +1430,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#7.6.2</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=4958" BrowseName="1:ISA95ObjectType" IsAbstract="true">
     <DisplayName>ISA95ObjectType</DisplayName>
@@ -1383,6 +1438,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#7.6.3</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=4959" BrowseName="1:ISA95TestSpecificationType" IsAbstract="true">
     <DisplayName>ISA95TestSpecificationType</DisplayName>
@@ -1391,6 +1447,7 @@
       <Reference ReferenceType="ns=1;i=4713">ns=1;i=4960</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.1.3.1</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=4960" BrowseName="1:Version" ParentNodeId="ns=1;i=4959" DataType="String" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>Version</DisplayName>
@@ -1410,6 +1467,7 @@
       <Reference ReferenceType="ns=1;i=4713">ns=1;i=5112</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.2.3.1</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=5109" BrowseName="1:Id" ParentNodeId="ns=1;i=5108" DataType="NodeId" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>Id</DisplayName>
@@ -1449,6 +1507,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4878</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.1.2.1</Documentation>
   </UAVariableType>
   <UAObjectType NodeId="ns=1;i=4977" BrowseName="1:QualificationTestSpecificationType">
     <DisplayName>QualificationTestSpecificationType</DisplayName>
@@ -1465,6 +1524,7 @@
       <Reference ReferenceType="ns=1;i=4918">ns=1;i=4981</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4885</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.1.2.2</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=4979" BrowseName="1:&lt;PropertyName&gt;" ParentNodeId="ns=1;i=1123">
     <DisplayName>&lt;PropertyName&gt;</DisplayName>
@@ -1500,6 +1560,7 @@
       <Reference ReferenceType="ns=1;i=4915">ns=1;i=5124</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4263</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.1.2.3</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=5120" BrowseName="1:&lt;PropertyName&gt;" ParentNodeId="ns=1;i=5118">
     <DisplayName>&lt;PropertyName&gt;</DisplayName>
@@ -1596,6 +1657,7 @@
       <Reference ReferenceType="ns=1;i=4918">ns=1;i=4999</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4957</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.1.3.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=4997" BrowseName="1:&lt;PropertyName&gt;" ParentNodeId="ns=1;i=4996">
     <DisplayName>&lt;PropertyName&gt;</DisplayName>
@@ -1631,6 +1693,7 @@
       <Reference ReferenceType="ns=1;i=4918">ns=1;i=5134</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4958</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.1.3.3</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=5132" BrowseName="1:&lt;PropertyName&gt;" ParentNodeId="ns=1;i=5131">
     <DisplayName>&lt;PropertyName&gt;</DisplayName>
@@ -1671,6 +1734,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=68</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.3.2.2</Documentation>
   </UAVariableType>
   <UAVariableType NodeId="ns=1;i=5049" BrowseName="1:CompanyType" ValueRank="-2">
     <DisplayName>CompanyType</DisplayName>
@@ -1678,6 +1742,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.3.2.1</Documentation>
   </UAVariableType>
   <UAVariableType NodeId="ns=1;i=5050" BrowseName="1:PhysicalAssetCapabilityTestResultType" DataType="Structure" ValueRank="-2">
     <DisplayName>PhysicalAssetCapabilityTestResultType</DisplayName>
@@ -1685,6 +1750,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4878</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.3.2.3</Documentation>
   </UAVariableType>
   <UAObjectType NodeId="ns=1;i=5057" BrowseName="1:PhysicalAssetCapabilityTestSpecificationType">
     <DisplayName>PhysicalAssetCapabilityTestSpecificationType</DisplayName>
@@ -1701,6 +1767,7 @@
       <Reference ReferenceType="ns=1;i=4922">ns=1;i=5063</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4885</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.3.2.4</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=5061" BrowseName="1:&lt;PropertyName&gt;" ParentNodeId="ns=1;i=5059">
     <DisplayName>&lt;PropertyName&gt;</DisplayName>
@@ -1736,6 +1803,7 @@
       <Reference ReferenceType="ns=1;i=4915">ns=1;i=5071</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4885</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.3.2.5</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=5067" BrowseName="1:&lt;PropertyName&gt;" ParentNodeId="ns=1;i=5065">
     <DisplayName>&lt;PropertyName&gt;</DisplayName>
@@ -1834,6 +1902,7 @@
       <Reference ReferenceType="ns=1;i=4713">ns=1;i=5084</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4957</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.3.3.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=5079" BrowseName="1:&lt;PropertyName&gt;" ParentNodeId="ns=1;i=5078">
     <DisplayName>&lt;PropertyName&gt;</DisplayName>
@@ -1890,6 +1959,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=5308</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4958</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.3.3.3</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=5086" BrowseName="1:&lt;PropertyName&gt;" ParentNodeId="ns=1;i=5085">
     <DisplayName>&lt;PropertyName&gt;</DisplayName>
@@ -2087,6 +2157,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4878</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.2.3.2</Documentation>
   </UAVariableType>
   <UAObjectType NodeId="ns=1;i=5015" BrowseName="1:EquipmentCapabilityTestSpecificationType">
     <DisplayName>EquipmentCapabilityTestSpecificationType</DisplayName>
@@ -2094,6 +2165,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4959</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.2.4.1</Documentation>
   </UAObjectType>
   <UAVariableType NodeId="ns=1;i=5017" BrowseName="1:EquipmentClassPropertyType">
     <DisplayName>EquipmentClassPropertyType</DisplayName>
@@ -2103,6 +2175,7 @@
       <Reference ReferenceType="ns=1;i=4920">ns=1;i=5021</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4885</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.2.3.3</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=5019" BrowseName="1:&lt;PropertyName&gt;" ParentNodeId="ns=1;i=5017">
     <DisplayName>&lt;PropertyName&gt;</DisplayName>
@@ -2138,6 +2211,7 @@
       <Reference ReferenceType="ns=1;i=4915">ns=1;i=5027</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4263</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.2.3.4</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=5023" BrowseName="1:&lt;PropertyName&gt;" ParentNodeId="ns=1;i=954">
     <DisplayName>&lt;PropertyName&gt;</DisplayName>
@@ -2235,6 +2309,7 @@
       <Reference ReferenceType="ns=1;i=4713">ns=1;i=5039</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4957</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.2.4.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=5035" BrowseName="1:&lt;PropertyName&gt;" ParentNodeId="ns=1;i=5034">
     <DisplayName>&lt;PropertyName&gt;</DisplayName>
@@ -2282,6 +2357,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=5328</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4958</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.2.4.3</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=5041" BrowseName="1:&lt;PropertyName&gt;" ParentNodeId="ns=1;i=5040">
     <DisplayName>&lt;PropertyName&gt;</DisplayName>
@@ -2453,6 +2529,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4878</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.4.2.1</Documentation>
   </UAVariableType>
   <UAObjectType NodeId="ns=1;i=5172" BrowseName="1:MaterialTestSpecificationType">
     <DisplayName>MaterialTestSpecificationType</DisplayName>
@@ -2460,6 +2537,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4959</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.4.3.1</Documentation>
   </UAObjectType>
   <UAVariableType NodeId="ns=1;i=5174" BrowseName="1:MaterialDefinitionPropertyType">
     <DisplayName>MaterialDefinitionPropertyType</DisplayName>
@@ -2469,6 +2547,7 @@
       <Reference ReferenceType="ns=1;i=4924">ns=1;i=5178</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4885</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.4.2.2</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=5176" BrowseName="1:&lt;PropertyName&gt;" ParentNodeId="ns=1;i=5174">
     <DisplayName>&lt;PropertyName&gt;</DisplayName>
@@ -2503,6 +2582,7 @@
       <Reference ReferenceType="ns=1;i=4924">ns=1;i=5184</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4885</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.4.2.3</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=5182" BrowseName="1:&lt;PropertyName&gt;" ParentNodeId="ns=1;i=5180">
     <DisplayName>&lt;PropertyName&gt;</DisplayName>
@@ -2538,6 +2618,7 @@
       <Reference ReferenceType="ns=1;i=4924">ns=1;i=5207</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=5165</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.4.2.4</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=5193" BrowseName="1:&lt;TestResult&gt;" ParentNodeId="ns=1;i=5186" DataType="Structure">
     <DisplayName>&lt;TestResult&gt;</DisplayName>
@@ -2691,6 +2772,7 @@
       <Reference ReferenceType="ns=1;i=4713">ns=1;i=5218</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4957</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.4.3.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=5210" BrowseName="1:&lt;PropertyName&gt;" ParentNodeId="ns=1;i=5209">
     <DisplayName>&lt;PropertyName&gt;</DisplayName>
@@ -2770,6 +2852,7 @@
       <Reference ReferenceType="ns=1;i=4713">ns=1;i=5231</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4957</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.4.3.3</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=5220" BrowseName="1:&lt;PropertyName&gt;" ParentNodeId="ns=1;i=5219">
     <DisplayName>&lt;PropertyName&gt;</DisplayName>
@@ -2860,6 +2943,7 @@
       <Reference ReferenceType="ns=1;i=4713">ns=1;i=5258</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4958</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.4.3.4</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=5233" BrowseName="1:&lt;PropertyName&gt;" ParentNodeId="ns=1;i=5232" DataType="Structure">
     <DisplayName>&lt;PropertyName&gt;</DisplayName>
@@ -3072,6 +3156,7 @@
       <Reference ReferenceType="ns=1;i=4713">ns=1;i=5294</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4958</Reference>
     </References>
+    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ISA-95/docs/#8.4.3.5</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=5260" BrowseName="1:&lt;PropertyName&gt;" ParentNodeId="ns=1;i=5259" DataType="Structure">
     <DisplayName>&lt;PropertyName&gt;</DisplayName>
