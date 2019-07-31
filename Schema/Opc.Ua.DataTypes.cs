@@ -475,6 +475,298 @@ namespace Opc.Ua
     #endif
     #endregion
 
+    #region AdditionalParametersType Class
+    #if (!OPCUA_EXCLUDE_AdditionalParametersType)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class AdditionalParametersType : IEncodeable
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public AdditionalParametersType()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+            m_parameters = new KeyValuePairCollection();
+        }
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// 
+        /// </summary>
+        [DataMember(Name = "Parameters", IsRequired = false, Order = 1)]
+        public KeyValuePairCollection Parameters
+        {
+            get
+            {
+                return m_parameters;
+            }
+
+            set
+            {
+                m_parameters = value;
+
+                if (value == null)
+                {
+                    m_parameters = new KeyValuePairCollection();
+                }
+            }
+        }
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public virtual ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.AdditionalParametersType; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public virtual ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.AdditionalParametersType_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public virtual ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.AdditionalParametersType_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public virtual void Encode(IEncoder encoder)
+        {
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            encoder.WriteEncodeableArray("Parameters", Parameters.ToArray(), typeof(KeyValuePair));
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public virtual void Decode(IDecoder decoder)
+        {
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            Parameters = (KeyValuePairCollection)decoder.ReadEncodeableArray("Parameters", typeof(KeyValuePair));
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public virtual bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            AdditionalParametersType value = encodeable as AdditionalParametersType;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+            if (!Utils.IsEqual(m_parameters, value.m_parameters)) return false;
+
+            return true;
+        }
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public virtual object Clone()
+        {
+            return (AdditionalParametersType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            AdditionalParametersType clone = (AdditionalParametersType)base.MemberwiseClone();
+
+            clone.m_parameters = (KeyValuePairCollection)Utils.Clone(this.m_parameters);
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        private KeyValuePairCollection m_parameters;
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region EphemeralKeyType Class
+    #if (!OPCUA_EXCLUDE_EphemeralKeyType)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class EphemeralKeyType : IEncodeable
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public EphemeralKeyType()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+            m_publicKey = null;
+            m_signature = null;
+        }
+        #endregion
+
+        #region Public Properties
+        /// <remarks />
+        [DataMember(Name = "PublicKey", IsRequired = false, Order = 1)]
+        public byte[] PublicKey
+        {
+            get { return m_publicKey;  }
+            set { m_publicKey = value; }
+        }
+
+        /// <remarks />
+        [DataMember(Name = "Signature", IsRequired = false, Order = 2)]
+        public byte[] Signature
+        {
+            get { return m_signature;  }
+            set { m_signature = value; }
+        }
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public virtual ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.EphemeralKeyType; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public virtual ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.EphemeralKeyType_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public virtual ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.EphemeralKeyType_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public virtual void Encode(IEncoder encoder)
+        {
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            encoder.WriteByteString("PublicKey", PublicKey);
+            encoder.WriteByteString("Signature", Signature);
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public virtual void Decode(IDecoder decoder)
+        {
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            PublicKey = decoder.ReadByteString("PublicKey");
+            Signature = decoder.ReadByteString("Signature");
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public virtual bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            EphemeralKeyType value = encodeable as EphemeralKeyType;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+            if (!Utils.IsEqual(m_publicKey, value.m_publicKey)) return false;
+            if (!Utils.IsEqual(m_signature, value.m_signature)) return false;
+
+            return true;
+        }
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public virtual object Clone()
+        {
+            return (EphemeralKeyType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            EphemeralKeyType clone = (EphemeralKeyType)base.MemberwiseClone();
+
+            clone.m_publicKey = (byte[])Utils.Clone(this.m_publicKey);
+            clone.m_signature = (byte[])Utils.Clone(this.m_signature);
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        private byte[] m_publicKey;
+        private byte[] m_signature;
+        #endregion
+    }
+    #endif
+    #endregion
+
     #region EndpointType Class
     #if (!OPCUA_EXCLUDE_EndpointType)
     /// <summary>
@@ -14617,7 +14909,7 @@ namespace Opc.Ua
             m_dataSetMessageContentMask = 0;
             m_publishingInterval = (double)0;
             m_receiveOffset = (double)0;
-            m_processingOffset = (double)0;
+            m_processingOffset = new DoubleCollection();
         }
         #endregion
 
@@ -14686,12 +14978,26 @@ namespace Opc.Ua
             set { m_receiveOffset = value; }
         }
 
-        /// <remarks />
+        /// <summary>
+        /// 
+        /// </summary>
         [DataMember(Name = "ProcessingOffset", IsRequired = false, Order = 9)]
-        public double ProcessingOffset
+        public DoubleCollection ProcessingOffset
         {
-            get { return m_processingOffset;  }
-            set { m_processingOffset = value; }
+            get
+            {
+                return m_processingOffset;
+            }
+
+            set
+            {
+                m_processingOffset = value;
+
+                if (value == null)
+                {
+                    m_processingOffset = new DoubleCollection();
+                }
+            }
         }
         #endregion
 
@@ -14729,7 +15035,7 @@ namespace Opc.Ua
             encoder.WriteUInt32("DataSetMessageContentMask", DataSetMessageContentMask);
             encoder.WriteDouble("PublishingInterval", PublishingInterval);
             encoder.WriteDouble("ReceiveOffset", ReceiveOffset);
-            encoder.WriteDouble("ProcessingOffset", ProcessingOffset);
+            encoder.WriteDoubleArray("ProcessingOffset", ProcessingOffset);
 
             encoder.PopNamespace();
         }
@@ -14749,7 +15055,7 @@ namespace Opc.Ua
             DataSetMessageContentMask = decoder.ReadUInt32("DataSetMessageContentMask");
             PublishingInterval = decoder.ReadDouble("PublishingInterval");
             ReceiveOffset = decoder.ReadDouble("ReceiveOffset");
-            ProcessingOffset = decoder.ReadDouble("ProcessingOffset");
+            ProcessingOffset = decoder.ReadDoubleArray("ProcessingOffset");
 
             decoder.PopNamespace();
         }
@@ -14804,7 +15110,7 @@ namespace Opc.Ua
             clone.m_dataSetMessageContentMask = (uint)Utils.Clone(this.m_dataSetMessageContentMask);
             clone.m_publishingInterval = (double)Utils.Clone(this.m_publishingInterval);
             clone.m_receiveOffset = (double)Utils.Clone(this.m_receiveOffset);
-            clone.m_processingOffset = (double)Utils.Clone(this.m_processingOffset);
+            clone.m_processingOffset = (DoubleCollection)Utils.Clone(this.m_processingOffset);
 
             return clone;
         }
@@ -14819,7 +15125,7 @@ namespace Opc.Ua
         private uint m_dataSetMessageContentMask;
         private double m_publishingInterval;
         private double m_receiveOffset;
-        private double m_processingOffset;
+        private DoubleCollection m_processingOffset;
         #endregion
     }
 

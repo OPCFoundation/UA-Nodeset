@@ -78229,8 +78229,8 @@ namespace Opc.Ua
            "//8BAf////8AAAAAFWCJCgIAAAAAAA8AAABEYXRhU2V0T3JkZXJpbmcBAHNSAC4ARHNSAAABALhP////" +
            "/wEB/////wAAAAAVYIkKAgAAAAAAGQAAAE5ldHdvcmtNZXNzYWdlQ29udGVudE1hc2sBAHRSAC4ARHRS" +
            "AAABABo9/////wEB/////wAAAAAVYIkKAgAAAAAADgAAAFNhbXBsaW5nT2Zmc2V0AQB1UgAuAER1UgAA" +
-           "AQAiAf////8BAf////8AAAAAFWCJCgIAAAAAABAAAABQdWJsaXNoaW5nT2Zmc2V0AQB2UgAuAER2UgAA" +
-           "AQAiAf////8BAf////8AAAAA";
+           "AQAiAf////8BAf////8AAAAAF2CJCgIAAAAAABAAAABQdWJsaXNoaW5nT2Zmc2V0AQB2UgAuAER2UgAA" +
+           "AQAiAQEAAAABAAAAAAAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -78313,7 +78313,7 @@ namespace Opc.Ua
         }
 
         /// <remarks />
-        public PropertyState<double> PublishingOffset
+        public PropertyState<double[]> PublishingOffset
         {
             get
             {
@@ -78480,11 +78480,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                PublishingOffset = new PropertyState<double>(this);
+                                PublishingOffset = new PropertyState<double[]>(this);
                             }
                             else
                             {
-                                PublishingOffset = (PropertyState<double>)replacement;
+                                PublishingOffset = (PropertyState<double[]>)replacement;
                             }
                         }
                     }
@@ -78508,7 +78508,7 @@ namespace Opc.Ua
         private PropertyState<DataSetOrderingType> m_dataSetOrdering;
         private PropertyState<uint> m_networkMessageContentMask;
         private PropertyState<double> m_samplingOffset;
-        private PropertyState<double> m_publishingOffset;
+        private PropertyState<double[]> m_publishingOffset;
         #endregion
     }
     #endif

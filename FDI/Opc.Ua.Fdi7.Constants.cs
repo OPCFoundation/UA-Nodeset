@@ -2289,7 +2289,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_H1_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_Foundation_H1_Lock_Locked = 1390;
+        public const uint ConnectionPoint_Foundation_H1_Lock_Locked = 15206;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_H1_Lock_LockingClient Variable.
@@ -2334,7 +2334,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_Locked = 1408;
+        public const uint ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_Locked = 15207;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_H1_NetworkIdentifier_Lock_LockingClient Variable.
@@ -2394,7 +2394,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_Foundation_HSE_Lock_Locked = 1434;
+        public const uint ConnectionPoint_Foundation_HSE_Lock_Locked = 15208;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_HSE_Lock_LockingClient Variable.
@@ -2439,7 +2439,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_Locked = 1452;
+        public const uint ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_Locked = 15209;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Foundation_HSE_NetworkIdentifier_Lock_LockingClient Variable.
@@ -2494,7 +2494,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ConnectionPoint_Profibus_DP_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_Profibus_DP_Lock_Locked = 1477;
+        public const uint ConnectionPoint_Profibus_DP_Lock_Locked = 15210;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Profibus_DP_Lock_LockingClient Variable.
@@ -2539,7 +2539,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_Locked = 1495;
+        public const uint ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_Locked = 15211;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Profibus_DP_NetworkIdentifier_Lock_LockingClient Variable.
@@ -2589,7 +2589,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ConnectionPoint_Profinet_IO_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_Profinet_IO_Lock_Locked = 1519;
+        public const uint ConnectionPoint_Profinet_IO_Lock_Locked = 15212;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Profinet_IO_Lock_LockingClient Variable.
@@ -2634,7 +2634,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_Locked = 1537;
+        public const uint ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_Locked = 15213;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_Profinet_IO_NetworkIdentifier_Lock_LockingClient Variable.
@@ -2699,7 +2699,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP5_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_HART_TP5_Lock_Locked = 1564;
+        public const uint ConnectionPoint_HART_TP5_Lock_Locked = 15214;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP5_Lock_LockingClient Variable.
@@ -2744,7 +2744,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_Locked = 1582;
+        public const uint ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_Locked = 15215;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP5_NetworkIdentifier_Lock_LockingClient Variable.
@@ -2819,7 +2819,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP6_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_HART_TP6_Lock_Locked = 1611;
+        public const uint ConnectionPoint_HART_TP6_Lock_Locked = 15216;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP6_Lock_LockingClient Variable.
@@ -2864,7 +2864,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_Locked = 1629;
+        public const uint ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_Locked = 15217;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP6_NetworkIdentifier_Lock_LockingClient Variable.
@@ -2939,7 +2939,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP7_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_HART_TP7_Lock_Locked = 1658;
+        public const uint ConnectionPoint_HART_TP7_Lock_Locked = 15218;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP7_Lock_LockingClient Variable.
@@ -2984,7 +2984,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_Locked = 1676;
+        public const uint ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_Locked = 15219;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_HART_TP7_NetworkIdentifier_Lock_LockingClient Variable.
@@ -3059,7 +3059,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_ISA100_Wireless_Lock_Locked = 1705;
+        public const uint ConnectionPoint_ISA100_Wireless_Lock_Locked = 15220;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_ISA100_Wireless_Lock_LockingClient Variable.
@@ -3104,7 +3104,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_Locked = 1723;
+        public const uint ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_Locked = 15221;
 
         /// <summary>
         /// The identifier for the ConnectionPoint_ISA100_Wireless_NetworkIdentifier_Lock_LockingClient Variable.
@@ -3179,7 +3179,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the GenericConnectionPoint_Lock_Locked Variable.
         /// </summary>
-        public const uint GenericConnectionPoint_Lock_Locked = 1752;
+        public const uint GenericConnectionPoint_Lock_Locked = 15222;
 
         /// <summary>
         /// The identifier for the GenericConnectionPoint_Lock_LockingClient Variable.
@@ -3224,7 +3224,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint GenericConnectionPoint_NetworkIdentifier_Lock_Locked = 1770;
+        public const uint GenericConnectionPoint_NetworkIdentifier_Lock_Locked = 15223;
 
         /// <summary>
         /// The identifier for the GenericConnectionPoint_NetworkIdentifier_Lock_LockingClient Variable.
@@ -3279,7 +3279,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the CommunicationServerType_Lock_Locked Variable.
         /// </summary>
-        public const uint CommunicationServerType_Lock_Locked = 21;
+        public const uint CommunicationServerType_Lock_Locked = 15224;
 
         /// <summary>
         /// The identifier for the CommunicationServerType_Lock_LockingClient Variable.
@@ -3324,7 +3324,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the CommunicationServerType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint CommunicationServerType_CPIdentifier_Lock_Locked = 60;
+        public const uint CommunicationServerType_CPIdentifier_Lock_Locked = 15226;
 
         /// <summary>
         /// The identifier for the CommunicationServerType_CPIdentifier_Lock_LockingClient Variable.
@@ -3459,7 +3459,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationDeviceType_Lock_Locked = 103;
+        public const uint ServerCommunicationDeviceType_Lock_Locked = 15227;
 
         /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_Lock_LockingClient Variable.
@@ -3504,7 +3504,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationDeviceType_CPIdentifier_Lock_Locked = 142;
+        public const uint ServerCommunicationDeviceType_CPIdentifier_Lock_Locked = 15229;
 
         /// <summary>
         /// The identifier for the ServerCommunicationDeviceType_CPIdentifier_Lock_LockingClient Variable.
@@ -3584,7 +3584,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationFFH1DeviceType_Lock_Locked = 334;
+        public const uint ServerCommunicationFFH1DeviceType_Lock_Locked = 15230;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_Lock_LockingClient Variable.
@@ -3629,7 +3629,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_Locked = 373;
+        public const uint ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_Locked = 15232;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_CPIdentifier_Lock_LockingClient Variable.
@@ -3714,7 +3714,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_Locked = 409;
+        public const uint ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_Locked = 15233;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1DeviceType_ServiceProvider_Lock_LockingClient Variable.
@@ -3839,7 +3839,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationFFHSEDeviceType_Lock_Locked = 462;
+        public const uint ServerCommunicationFFHSEDeviceType_Lock_Locked = 15235;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_Lock_LockingClient Variable.
@@ -3884,7 +3884,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_Locked = 501;
+        public const uint ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_Locked = 15237;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_CPIdentifier_Lock_LockingClient Variable.
@@ -3969,7 +3969,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_Locked = 537;
+        public const uint ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_Locked = 15238;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEDeviceType_ServiceProvider_Lock_LockingClient Variable.
@@ -4094,7 +4094,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFIBUSDeviceType_Lock_Locked = 590;
+        public const uint ServerCommunicationPROFIBUSDeviceType_Lock_Locked = 15240;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_Lock_LockingClient Variable.
@@ -4139,7 +4139,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_Locked = 629;
+        public const uint ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_Locked = 15242;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_CPIdentifier_Lock_LockingClient Variable.
@@ -4224,7 +4224,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_Locked = 665;
+        public const uint ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_Locked = 15243;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSDeviceType_ServiceProvider_Lock_LockingClient Variable.
@@ -4339,7 +4339,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFINETDeviceType_Lock_Locked = 715;
+        public const uint ServerCommunicationPROFINETDeviceType_Lock_Locked = 15245;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_Lock_LockingClient Variable.
@@ -4384,7 +4384,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_Locked = 754;
+        public const uint ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_Locked = 15247;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_CPIdentifier_Lock_LockingClient Variable.
@@ -4469,7 +4469,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_Locked = 790;
+        public const uint ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_Locked = 15248;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETDeviceType_ServiceProvider_Lock_LockingClient Variable.
@@ -4584,7 +4584,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationHARType_Lock_Locked = 840;
+        public const uint ServerCommunicationHARType_Lock_Locked = 15250;
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_Lock_LockingClient Variable.
@@ -4629,7 +4629,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationHARType_CPIdentifier_Lock_Locked = 879;
+        public const uint ServerCommunicationHARType_CPIdentifier_Lock_Locked = 15252;
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_CPIdentifier_Lock_LockingClient Variable.
@@ -4714,7 +4714,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationHARType_ServiceProvider_Lock_Locked = 915;
+        public const uint ServerCommunicationHARType_ServiceProvider_Lock_Locked = 15253;
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARType_ServiceProvider_Lock_LockingClient Variable.
@@ -4839,7 +4839,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationISA100_WirelessDeviceType_Lock_Locked = 1798;
+        public const uint ServerCommunicationISA100_WirelessDeviceType_Lock_Locked = 15255;
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_Lock_LockingClient Variable.
@@ -4884,7 +4884,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_Locked = 1837;
+        public const uint ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_Locked = 15257;
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_CPIdentifier_Lock_LockingClient Variable.
@@ -4959,7 +4959,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_Locked = 1870;
+        public const uint ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_Locked = 15258;
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessDeviceType_ServiceProvider_Lock_LockingClient Variable.
@@ -5084,7 +5084,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationGENERICDeviceType_Lock_Locked = 1923;
+        public const uint ServerCommunicationGENERICDeviceType_Lock_Locked = 15260;
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_Lock_LockingClient Variable.
@@ -5129,7 +5129,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_Locked = 1962;
+        public const uint ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_Locked = 15262;
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_CPIdentifier_Lock_LockingClient Variable.
@@ -5219,7 +5219,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_Locked = 1999;
+        public const uint ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_Locked = 15263;
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICDeviceType_ServiceProvider_Lock_LockingClient Variable.
@@ -5519,7 +5519,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationServiceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationServiceType_Lock_Locked = 243;
+        public const uint ServerCommunicationServiceType_Lock_Locked = 15265;
 
         /// <summary>
         /// The identifier for the ServerCommunicationServiceType_Lock_LockingClient Variable.
@@ -5564,7 +5564,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationServiceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationServiceType_CPIdentifier_Lock_Locked = 282;
+        public const uint ServerCommunicationServiceType_CPIdentifier_Lock_Locked = 15267;
 
         /// <summary>
         /// The identifier for the ServerCommunicationServiceType_CPIdentifier_Lock_LockingClient Variable.
@@ -5619,7 +5619,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1ServiceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationFFH1ServiceType_Lock_Locked = 1007;
+        public const uint ServerCommunicationFFH1ServiceType_Lock_Locked = 15268;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1ServiceType_Lock_LockingClient Variable.
@@ -5664,7 +5664,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_Locked = 1046;
+        public const uint ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_Locked = 15270;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFH1ServiceType_CPIdentifier_Lock_LockingClient Variable.
@@ -5749,7 +5749,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEServiceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationFFHSEServiceType_Lock_Locked = 1083;
+        public const uint ServerCommunicationFFHSEServiceType_Lock_Locked = 15271;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEServiceType_Lock_LockingClient Variable.
@@ -5794,7 +5794,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_Locked = 1122;
+        public const uint ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_Locked = 15273;
 
         /// <summary>
         /// The identifier for the ServerCommunicationFFHSEServiceType_CPIdentifier_Lock_LockingClient Variable.
@@ -5879,7 +5879,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSServiceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFIBUSServiceType_Lock_Locked = 1159;
+        public const uint ServerCommunicationPROFIBUSServiceType_Lock_Locked = 15274;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSServiceType_Lock_LockingClient Variable.
@@ -5924,7 +5924,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_Locked = 1198;
+        public const uint ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_Locked = 15276;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFIBUSServiceType_CPIdentifier_Lock_LockingClient Variable.
@@ -5999,7 +5999,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETServiceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFINETServiceType_Lock_Locked = 1232;
+        public const uint ServerCommunicationPROFINETServiceType_Lock_Locked = 15277;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETServiceType_Lock_LockingClient Variable.
@@ -6044,7 +6044,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_Locked = 1271;
+        public const uint ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_Locked = 15279;
 
         /// <summary>
         /// The identifier for the ServerCommunicationPROFINETServiceType_CPIdentifier_Lock_LockingClient Variable.
@@ -6119,7 +6119,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationHARTServiceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationHARTServiceType_Lock_Locked = 1305;
+        public const uint ServerCommunicationHARTServiceType_Lock_Locked = 15280;
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARTServiceType_Lock_LockingClient Variable.
@@ -6164,7 +6164,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationHARTServiceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationHARTServiceType_CPIdentifier_Lock_Locked = 1344;
+        public const uint ServerCommunicationHARTServiceType_CPIdentifier_Lock_Locked = 15282;
 
         /// <summary>
         /// The identifier for the ServerCommunicationHARTServiceType_CPIdentifier_Lock_LockingClient Variable.
@@ -6249,7 +6249,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationISA100_WirelessServiceType_Lock_Locked = 2067;
+        public const uint ServerCommunicationISA100_WirelessServiceType_Lock_Locked = 15283;
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessServiceType_Lock_LockingClient Variable.
@@ -6294,7 +6294,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_Locked = 2106;
+        public const uint ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_Locked = 15285;
 
         /// <summary>
         /// The identifier for the ServerCommunicationISA100_WirelessServiceType_CPIdentifier_Lock_LockingClient Variable.
@@ -6379,7 +6379,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICServiceType_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationGENERICServiceType_Lock_Locked = 2143;
+        public const uint ServerCommunicationGENERICServiceType_Lock_Locked = 15286;
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICServiceType_Lock_LockingClient Variable.
@@ -6424,7 +6424,7 @@ namespace Opc.Ua.Fdi7
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_Lock_Locked = 2182;
+        public const uint ServerCommunicationGENERICServiceType_CPIdentifier_Lock_Locked = 15288;
 
         /// <summary>
         /// The identifier for the ServerCommunicationGENERICServiceType_CPIdentifier_Lock_LockingClient Variable.

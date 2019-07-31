@@ -28,14 +28,14 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2017-03-13T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2017-03-13T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
     <Uri>http://sercos.org/UA/</Uri>
     <Uri>http://opcfoundation.org/UA/DI/</Uri>
   </NamespaceUris>
   <Models>
     <Model ModelUri="http://sercos.org/UA/" Version="1.00" PublicationDate="2017-03-13T00:00:00Z">
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2019-05-01T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05" PublicationDate="2019-07-23T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.02" PublicationDate="2019-05-01T00:00:00Z" />
     </Model>
   </Models>
@@ -194,7 +194,6 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/Sercos/docs/#5.2</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:SercosProfileType">
     <DisplayName>SercosProfileType</DisplayName>
@@ -223,7 +222,6 @@
       <Reference ReferenceType="HasComponent">ns=1;i=5003</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1002</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/Sercos/docs/#5.3</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5007" BrowseName="1:ParameterSet" ParentNodeId="ns=1;i=1001">
     <DisplayName>ParameterSet</DisplayName>
@@ -264,7 +262,6 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6076</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=6012</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/Sercos/docs/#5.3</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=6076" BrowseName="1:&lt;SercosProfileIdentifier&gt;" SymbolicName="SercosProfileIdentifier_Placeholder" ParentNodeId="ns=1;i=6075">
     <DisplayName>&lt;SercosProfileIdentifier&gt;</DisplayName>
@@ -280,7 +277,6 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6078</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=6012</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/Sercos/docs/#5.3</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=6078" BrowseName="1:&lt;SercosClassIdentifier&gt;" SymbolicName="SercosClassIdentifier_Placeholder" ParentNodeId="ns=1;i=6077">
     <DisplayName>&lt;SercosClassIdentifier&gt;</DisplayName>
@@ -296,7 +292,6 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6080</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=6012</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/Sercos/docs/#5.3</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=6080" BrowseName="1:&lt;FunctionGroupIdentifier&gt;" SymbolicName="FunctionGroupIdentifier_Placeholder" ParentNodeId="ns=1;i=6079">
     <DisplayName>&lt;FunctionGroupIdentifier&gt;</DisplayName>
@@ -319,7 +314,6 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6005</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/Sercos/docs/#5.5</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=6004" BrowseName="1:Attribute" ParentNodeId="ns=1;i=2001" DataType="UInt32">
     <DisplayName>Attribute</DisplayName>

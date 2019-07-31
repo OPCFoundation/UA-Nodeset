@@ -554,7 +554,7 @@ namespace Opc.Ua.Plc
         /// <summary>
         /// The identifier for the CtrlConfigurationType_Lock_Locked Variable.
         /// </summary>
-        public const uint CtrlConfigurationType_Lock_Locked = 7171;
+        public const uint CtrlConfigurationType_Lock_Locked = 15049;
 
         /// <summary>
         /// The identifier for the CtrlConfigurationType_Lock_LockingClient Variable.
@@ -599,7 +599,7 @@ namespace Opc.Ua.Plc
         /// <summary>
         /// The identifier for the CtrlConfigurationType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint CtrlConfigurationType_CPIdentifier_Lock_Locked = 7234;
+        public const uint CtrlConfigurationType_CPIdentifier_Lock_Locked = 15051;
 
         /// <summary>
         /// The identifier for the CtrlConfigurationType_CPIdentifier_Lock_LockingClient Variable.
@@ -644,7 +644,7 @@ namespace Opc.Ua.Plc
         /// <summary>
         /// The identifier for the CtrlResourceType_Lock_Locked Variable.
         /// </summary>
-        public const uint CtrlResourceType_Lock_Locked = 7196;
+        public const uint CtrlResourceType_Lock_Locked = 15052;
 
         /// <summary>
         /// The identifier for the CtrlResourceType_Lock_LockingClient Variable.
@@ -689,7 +689,7 @@ namespace Opc.Ua.Plc
         /// <summary>
         /// The identifier for the CtrlResourceType_CPIdentifier_Lock_Locked Variable.
         /// </summary>
-        public const uint CtrlResourceType_CPIdentifier_Lock_Locked = 7259;
+        public const uint CtrlResourceType_CPIdentifier_Lock_Locked = 15054;
 
         /// <summary>
         /// The identifier for the CtrlResourceType_CPIdentifier_Lock_LockingClient Variable.
@@ -734,7 +734,7 @@ namespace Opc.Ua.Plc
         /// <summary>
         /// The identifier for the CtrlProgramOrganizationUnitType_Lock_Locked Variable.
         /// </summary>
-        public const uint CtrlProgramOrganizationUnitType_Lock_Locked = 7221;
+        public const uint CtrlProgramOrganizationUnitType_Lock_Locked = 15055;
 
         /// <summary>
         /// The identifier for the CtrlProgramOrganizationUnitType_Lock_LockingClient Variable.
@@ -784,7 +784,7 @@ namespace Opc.Ua.Plc
         /// <summary>
         /// The identifier for the CtrlProgramType_Lock_Locked Variable.
         /// </summary>
-        public const uint CtrlProgramType_Lock_Locked = 7222;
+        public const uint CtrlProgramType_Lock_Locked = 15056;
 
         /// <summary>
         /// The identifier for the CtrlProgramType_Lock_LockingClient Variable.
@@ -834,7 +834,7 @@ namespace Opc.Ua.Plc
         /// <summary>
         /// The identifier for the CtrlFunctionBlockType_Lock_Locked Variable.
         /// </summary>
-        public const uint CtrlFunctionBlockType_Lock_Locked = 7223;
+        public const uint CtrlFunctionBlockType_Lock_Locked = 15057;
 
         /// <summary>
         /// The identifier for the CtrlFunctionBlockType_Lock_LockingClient Variable.
