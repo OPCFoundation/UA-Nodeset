@@ -4713,7 +4713,7 @@
         </References>
     </UAObject>
     <UAVariable ParentNodeId="ns=1;i=5027" NodeId="ns=1;i=6112" BrowseName="2:ParameterIdentifier">
-        <DisplayName>ParameterIdentifier</DisplayName>
+        <DisplayName>&lt;ParameterIdentifier></DisplayName>
         <Description>A parameter which belongs to the topology element.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
