@@ -333,7 +333,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="DeviceHealthEnumeration" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6142" BrowseName="1:DeviceHealth">
+    <UAVariable DataType="DeviceHealthEnumeration" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6142" BrowseName="2:DeviceHealth">
         <DisplayName>DeviceHealth</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -1294,7 +1294,7 @@
             </ListOfExtensionObject>
         </Value>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6140" BrowseName="1:HardwareRevision" AccessLevel="3">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6140" BrowseName="2:HardwareRevision" AccessLevel="3">
         <DisplayName>HardwareRevision</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
@@ -1336,7 +1336,7 @@
             <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5001</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6129" BrowseName="1:Manufacturer" AccessLevel="3">
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6129" BrowseName="2:Manufacturer" AccessLevel="3">
         <DisplayName>Manufacturer</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1383,7 +1383,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6139" BrowseName="1:Model" AccessLevel="3">
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6139" BrowseName="2:Model" AccessLevel="3">
         <DisplayName>Model</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1440,7 +1440,7 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6141" BrowseName="1:SoftwareRevision" AccessLevel="3">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6141" BrowseName="2:SoftwareRevision" AccessLevel="3">
         <DisplayName>SoftwareRevision</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -4619,7 +4619,7 @@
             <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5035</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5033" NodeId="ns=1;i=6143" BrowseName="1:Manufacturer" AccessLevel="3">
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5033" NodeId="ns=1;i=6143" BrowseName="2:Manufacturer" AccessLevel="3">
         <DisplayName>Manufacturer</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
