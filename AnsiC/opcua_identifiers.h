@@ -73,8 +73,6 @@
 #define OpcUaId_AudioDataType 16307
 #define OpcUaId_BitFieldMaskDataType 11737
 #define OpcUaId_KeyValuePair 14533
-#define OpcUaId_AdditionalParametersType 16313
-#define OpcUaId_EphemeralKeyType 17548
 #define OpcUaId_EndpointType 15528
 #define OpcUaId_RationalNumber 18806
 #define OpcUaId_Vector 18807
@@ -236,7 +234,6 @@
 #define OpcUaId_X509IdentityToken 325
 #define OpcUaId_IssuedIdentityToken 938
 #define OpcUaId_RsaEncryptedSecret 17545
-#define OpcUaId_EccEncryptedSecret 17546
 #define OpcUaId_ActivateSessionRequest 465
 #define OpcUaId_ActivateSessionResponse 468
 #define OpcUaId_CloseSessionRequest 471
@@ -832,6 +829,7 @@
 #define OpcUaId_ModellingRule_Mandatory 78
 #define OpcUaId_ModellingRule_Optional 80
 #define OpcUaId_ModellingRule_ExposesItsArray 83
+#define OpcUaId_ModellingRule_MandatoryShared 79
 #define OpcUaId_ModellingRule_OptionalPlaceholder 11508
 #define OpcUaId_ModellingRule_MandatoryPlaceholder 11510
 #define OpcUaId_RootFolder 84
@@ -1108,8 +1106,6 @@
 #define OpcUaId_PubSubDiagnosticsDataSetReaderType_LiveValues 20072
 #define OpcUaId_DatagramConnectionTransportType_DiscoveryAddress 15072
 #define OpcUaId_KeyValuePair_Encoding_DefaultBinary 14846
-#define OpcUaId_AdditionalParametersType_Encoding_DefaultBinary 17537
-#define OpcUaId_EphemeralKeyType_Encoding_DefaultBinary 17549
 #define OpcUaId_EndpointType_Encoding_DefaultBinary 15671
 #define OpcUaId_RationalNumber_Encoding_DefaultBinary 18815
 #define OpcUaId_Vector_Encoding_DefaultBinary 18816
@@ -1402,8 +1398,6 @@
 #define OpcUaId_ProgramDiagnostic2DataType_Encoding_DefaultBinary 15397
 #define OpcUaId_Annotation_Encoding_DefaultBinary 893
 #define OpcUaId_KeyValuePair_Encoding_DefaultXml 14802
-#define OpcUaId_AdditionalParametersType_Encoding_DefaultXml 17541
-#define OpcUaId_EphemeralKeyType_Encoding_DefaultXml 17553
 #define OpcUaId_EndpointType_Encoding_DefaultXml 15949
 #define OpcUaId_RationalNumber_Encoding_DefaultXml 18851
 #define OpcUaId_Vector_Encoding_DefaultXml 18852
@@ -1696,8 +1690,6 @@
 #define OpcUaId_ProgramDiagnostic2DataType_Encoding_DefaultXml 15401
 #define OpcUaId_Annotation_Encoding_DefaultXml 892
 #define OpcUaId_KeyValuePair_Encoding_DefaultJson 15041
-#define OpcUaId_AdditionalParametersType_Encoding_DefaultJson 17547
-#define OpcUaId_EphemeralKeyType_Encoding_DefaultJson 17557
 #define OpcUaId_EndpointType_Encoding_DefaultJson 16150
 #define OpcUaId_RationalNumber_Encoding_DefaultJson 19064
 #define OpcUaId_Vector_Encoding_DefaultJson 19065
@@ -2259,6 +2251,7 @@
 #define OpcUaId_ModellingRule_Mandatory_NamingRule 112
 #define OpcUaId_ModellingRule_Optional_NamingRule 113
 #define OpcUaId_ModellingRule_ExposesItsArray_NamingRule 114
+#define OpcUaId_ModellingRule_MandatoryShared_NamingRule 116
 #define OpcUaId_ModellingRule_OptionalPlaceholder_NamingRule 11509
 #define OpcUaId_ModellingRule_MandatoryPlaceholder_NamingRule 11511
 #define OpcUaId_OPCUANamespaceMetadata_NamespaceUri 15958
@@ -5621,8 +5614,6 @@
 #define OpcUaId_OpcUa_BinarySchema_NamespaceUri 7619
 #define OpcUaId_OpcUa_BinarySchema_Deprecated 15037
 #define OpcUaId_OpcUa_BinarySchema_KeyValuePair 14873
-#define OpcUaId_OpcUa_BinarySchema_AdditionalParametersType 17538
-#define OpcUaId_OpcUa_BinarySchema_EphemeralKeyType 17550
 #define OpcUaId_OpcUa_BinarySchema_EndpointType 15734
 #define OpcUaId_OpcUa_BinarySchema_RationalNumber 18824
 #define OpcUaId_OpcUa_BinarySchema_Vector 18827
@@ -5753,8 +5744,6 @@
 #define OpcUaId_OpcUa_XmlSchema_NamespaceUri 8254
 #define OpcUaId_OpcUa_XmlSchema_Deprecated 15039
 #define OpcUaId_OpcUa_XmlSchema_KeyValuePair 14829
-#define OpcUaId_OpcUa_XmlSchema_AdditionalParametersType 17542
-#define OpcUaId_OpcUa_XmlSchema_EphemeralKeyType 17554
 #define OpcUaId_OpcUa_XmlSchema_EndpointType 16024
 #define OpcUaId_OpcUa_XmlSchema_RationalNumber 18860
 #define OpcUaId_OpcUa_XmlSchema_Vector 18863

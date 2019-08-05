@@ -78,8 +78,6 @@
 * DataType Exclusions
  *===========================================================================*/
 /* #define OPCUA_EXCLUDE_KeyValuePair */
-/* #define OPCUA_EXCLUDE_AdditionalParametersType */
-/* #define OPCUA_EXCLUDE_EphemeralKeyType */
 /* #define OPCUA_EXCLUDE_EndpointType */
 /* #define OPCUA_EXCLUDE_RationalNumber */
 /* #define OPCUA_EXCLUDE_Vector */
