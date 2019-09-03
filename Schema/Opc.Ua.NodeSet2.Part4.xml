@@ -711,12 +711,6 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
   </UADataType>
-  <UADataType NodeId="i=17546" BrowseName="EccEncryptedSecret" ReleaseStatus="Draft">
-    <DisplayName>EccEncryptedSecret</DisplayName>
-    <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
-    </References>
-  </UADataType>
   <UADataType NodeId="i=465" BrowseName="ActivateSessionRequest" Purpose="ServicesOnly">
     <DisplayName>ActivateSessionRequest</DisplayName>
     <References>

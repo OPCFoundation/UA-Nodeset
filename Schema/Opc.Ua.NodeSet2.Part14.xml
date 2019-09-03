@@ -5904,8 +5904,8 @@
       <Reference ReferenceType="HasProperty">i=17485</Reference>
       <Reference ReferenceType="HasComponent">i=14221</Reference>
       <Reference ReferenceType="HasComponent">i=17203</Reference>
-      <Reference ReferenceType="HasComponent">i=17310</Reference>
-      <Reference ReferenceType="HasComponent">i=17325</Reference>
+      <Reference ReferenceType="i=18804">i=17310</Reference>
+      <Reference ReferenceType="i=18805">i=17325</Reference>
       <Reference ReferenceType="HasComponent">i=14600</Reference>
       <Reference ReferenceType="HasComponent">i=19241</Reference>
       <Reference ReferenceType="HasComponent">i=17427</Reference>
@@ -5996,7 +5996,7 @@
       <Reference ReferenceType="HasProperty">i=17558</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=17725</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">i=14209</Reference>
+      <Reference ReferenceType="i=18804" IsForward="false">i=14209</Reference>
     </References>
   </UAObject>
   <UAVariable NodeId="i=17311" BrowseName="SecurityMode" ParentNodeId="i=17310" DataType="i=302">
@@ -6097,7 +6097,7 @@
       <Reference ReferenceType="HasComponent">i=17329</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=17999</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">i=14209</Reference>
+      <Reference ReferenceType="i=18805" IsForward="false">i=14209</Reference>
     </References>
   </UAObject>
   <UAVariable NodeId="i=17326" BrowseName="SecurityMode" ParentNodeId="i=17325" DataType="i=302">
@@ -7575,6 +7575,13 @@
     </References>
     <InverseName>IsWriterInGroup</InverseName>
   </UAReferenceType>
+  <UAReferenceType NodeId="i=18804" BrowseName="HasWriterGroup">
+    <DisplayName>HasWriterGroup</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
+    </References>
+    <InverseName>IsWriterGroupOf</InverseName>
+  </UAReferenceType>
   <UAObjectType NodeId="i=17997" BrowseName="WriterGroupTransportType" IsAbstract="true">
     <DisplayName>WriterGroupTransportType</DisplayName>
     <References>
@@ -8295,6 +8302,13 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
     <InverseName>IsReaderInGroup</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="i=18805" BrowseName="HasReaderGroup">
+    <DisplayName>HasReaderGroup</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
+    </References>
+    <InverseName>IsReaderGroupOf</InverseName>
   </UAReferenceType>
   <UAObjectType NodeId="i=21090" BrowseName="ReaderGroupTransportType" IsAbstract="true">
     <DisplayName>ReaderGroupTransportType</DisplayName>
