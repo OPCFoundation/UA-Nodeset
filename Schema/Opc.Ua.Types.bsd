@@ -724,8 +724,7 @@
     <opc:Field Name="DataSetMessageContentMask" TypeName="tns:UadpDataSetMessageContentMask" />
     <opc:Field Name="PublishingInterval" TypeName="opc:Double" />
     <opc:Field Name="ReceiveOffset" TypeName="opc:Double" />
-    <opc:Field Name="NoOfProcessingOffset" TypeName="opc:Int32" />
-    <opc:Field Name="ProcessingOffset" TypeName="opc:Double" LengthField="NoOfProcessingOffset" />
+    <opc:Field Name="ProcessingOffset" TypeName="opc:Double" />
   </opc:StructuredType>
 
   <opc:EnumeratedType Name="JsonNetworkMessageContentMask" LengthInBits="32" IsOptionSet="true">

@@ -2244,7 +2244,9 @@
 #define OpcUaId_HasPubSubConnection 14476
 #define OpcUaId_DataSetToWriter 14936
 #define OpcUaId_HasDataSetWriter 15296
+#define OpcUaId_HasWriterGroup 18804
 #define OpcUaId_HasDataSetReader 15297
+#define OpcUaId_HasReaderGroup 18805
 
 /*============================================================================
 * Variable Identifiers

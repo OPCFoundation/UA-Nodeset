@@ -14909,7 +14909,7 @@ namespace Opc.Ua
             m_dataSetMessageContentMask = 0;
             m_publishingInterval = (double)0;
             m_receiveOffset = (double)0;
-            m_processingOffset = new DoubleCollection();
+            m_processingOffset = (double)0;
         }
         #endregion
 
@@ -14978,26 +14978,12 @@ namespace Opc.Ua
             set { m_receiveOffset = value; }
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "ProcessingOffset", IsRequired = false, Order = 9)]
-        public DoubleCollection ProcessingOffset
+        public double ProcessingOffset
         {
-            get
-            {
-                return m_processingOffset;
-            }
-
-            set
-            {
-                m_processingOffset = value;
-
-                if (value == null)
-                {
-                    m_processingOffset = new DoubleCollection();
-                }
-            }
+            get { return m_processingOffset;  }
+            set { m_processingOffset = value; }
         }
         #endregion
 
@@ -15035,7 +15021,7 @@ namespace Opc.Ua
             encoder.WriteUInt32("DataSetMessageContentMask", DataSetMessageContentMask);
             encoder.WriteDouble("PublishingInterval", PublishingInterval);
             encoder.WriteDouble("ReceiveOffset", ReceiveOffset);
-            encoder.WriteDoubleArray("ProcessingOffset", ProcessingOffset);
+            encoder.WriteDouble("ProcessingOffset", ProcessingOffset);
 
             encoder.PopNamespace();
         }
@@ -15055,7 +15041,7 @@ namespace Opc.Ua
             DataSetMessageContentMask = decoder.ReadUInt32("DataSetMessageContentMask");
             PublishingInterval = decoder.ReadDouble("PublishingInterval");
             ReceiveOffset = decoder.ReadDouble("ReceiveOffset");
-            ProcessingOffset = decoder.ReadDoubleArray("ProcessingOffset");
+            ProcessingOffset = decoder.ReadDouble("ProcessingOffset");
 
             decoder.PopNamespace();
         }
@@ -15110,7 +15096,7 @@ namespace Opc.Ua
             clone.m_dataSetMessageContentMask = (uint)Utils.Clone(this.m_dataSetMessageContentMask);
             clone.m_publishingInterval = (double)Utils.Clone(this.m_publishingInterval);
             clone.m_receiveOffset = (double)Utils.Clone(this.m_receiveOffset);
-            clone.m_processingOffset = (DoubleCollection)Utils.Clone(this.m_processingOffset);
+            clone.m_processingOffset = (double)Utils.Clone(this.m_processingOffset);
 
             return clone;
         }
@@ -15125,7 +15111,7 @@ namespace Opc.Ua
         private uint m_dataSetMessageContentMask;
         private double m_publishingInterval;
         private double m_receiveOffset;
-        private DoubleCollection m_processingOffset;
+        private double m_processingOffset;
         #endregion
     }
 

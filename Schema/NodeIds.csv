@@ -9637,6 +9637,8 @@ ThreeDFrameType_CartesianCoordinates_Z,18800,Variable
 FrameType_CartesianCoordinates,18801,Variable
 FrameType_CartesianCoordinates_LengthUnit,18802,Variable
 FrameType_Orientation_AngleUnit,18803,Variable
+HasWriterGroup,18804,ReferenceType
+HasReaderGroup,18805,ReferenceType
 RationalNumber,18806,DataType
 Vector,18807,DataType
 ThreeDVector,18808,DataType
