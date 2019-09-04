@@ -28,13 +28,13 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2019-05-01T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2019-05-01T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
     <Uri>http://opcfoundation.org/UA/DI/</Uri>
   </NamespaceUris>
   <Models>
     <Model ModelUri="http://opcfoundation.org/UA/DI/" Version="1.02" PublicationDate="2019-05-01T00:00:00Z">
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2019-05-01T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04.3" PublicationDate="2019-07-23T00:00:00Z" />
     </Model>
   </Models>
   <Aliases>
@@ -90,6 +90,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/11.1</Documentation>
   </UAObject>
   <UAVariable NodeId="ns=1;i=15002" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=15001" DataType="String">
     <DisplayName>NamespaceUri</DisplayName>
@@ -193,6 +194,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=33</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/6.5</Documentation>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=6467" BrowseName="1:ConnectsToParent" Symmetric="true">
     <DisplayName>ConnectsToParent</DisplayName>
@@ -200,6 +202,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=6030</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/6.5</Documentation>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=6031" BrowseName="1:IsOnline">
     <DisplayName>IsOnline</DisplayName>
@@ -207,6 +210,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=44</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/7.3.2</Documentation>
     <InverseName>OnlineOf</InverseName>
   </UAReferenceType>
   <UAObject NodeId="ns=1;i=5001" BrowseName="1:DeviceSet">
@@ -216,6 +220,7 @@
       <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/5.9</Documentation>
   </UAObject>
   <UAObject NodeId="ns=1;i=15034" BrowseName="1:DeviceFeatures">
     <DisplayName>DeviceFeatures</DisplayName>
@@ -223,6 +228,7 @@
       <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5001</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/5.10</Documentation>
   </UAObject>
   <UAObject NodeId="ns=1;i=6078" BrowseName="1:NetworkSet">
     <DisplayName>NetworkSet</DisplayName>
@@ -231,6 +237,7 @@
       <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/6.6</Documentation>
   </UAObject>
   <UAObject NodeId="ns=1;i=6094" BrowseName="1:DeviceTopology">
     <DisplayName>DeviceTopology</DisplayName>
@@ -240,6 +247,7 @@
       <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/7.2</Documentation>
   </UAObject>
   <UAVariable NodeId="ns=1;i=6095" BrowseName="1:OnlineAccess" ParentNodeId="ns=1;i=6094" DataType="Boolean">
     <DisplayName>OnlineAccess</DisplayName>
@@ -260,6 +268,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6161</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/5.3</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5002" BrowseName="1:ParameterSet" ParentNodeId="ns=1;i=1001">
     <DisplayName>ParameterSet</DisplayName>
@@ -550,6 +559,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=15047</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=17602</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/5.5.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=15036" BrowseName="1:Manufacturer" ParentNodeId="ns=1;i=15035" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
@@ -654,6 +664,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=15050</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=17602</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/5.5.3</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=15049" BrowseName="1:AssetId" ParentNodeId="ns=1;i=15048" DataType="String">
     <DisplayName>AssetId</DisplayName>
@@ -678,6 +689,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=15053</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=17602</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/5.5.4</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=15052" BrowseName="1:DeviceHealth" ParentNodeId="ns=1;i=15051" DataType="ns=1;i=6244">
     <DisplayName>DeviceHealth</DisplayName>
@@ -704,6 +716,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=15061</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=17602</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/5.5.5/#5.5.5.1</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=15055" BrowseName="1:DeviceTypeImage" ParentNodeId="ns=1;i=15054">
     <DisplayName>DeviceTypeImage</DisplayName>
@@ -794,6 +807,7 @@
       <Reference ReferenceType="i=17603">ns=1;i=15048</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1001</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/5.6</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=15086" BrowseName="1:Manufacturer" ParentNodeId="ns=1;i=15063" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
@@ -934,6 +948,7 @@
       <Reference ReferenceType="i=17603">ns=1;i=15051</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=15063</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/5.7</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6003" BrowseName="1:Manufacturer" ParentNodeId="ns=1;i=1002" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
@@ -1157,6 +1172,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=15133</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=15063</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/5.8</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=15129" BrowseName="1:Manufacturer" ParentNodeId="ns=1;i=15106" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
@@ -1193,6 +1209,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6013</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1001</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/5.11</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6009" BrowseName="1:RevisionCounter" ParentNodeId="ns=1;i=1003" DataType="Int32">
     <DisplayName>RevisionCounter</DisplayName>
@@ -1244,30 +1261,35 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=18347</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/5.12.2</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=15292" BrowseName="1:FailureAlarmType" IsAbstract="true">
     <DisplayName>FailureAlarmType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=15143</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/5.12.3</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=15441" BrowseName="1:CheckFunctionAlarmType" IsAbstract="true">
     <DisplayName>CheckFunctionAlarmType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=15143</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/5.12.4</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=15590" BrowseName="1:OffSpecAlarmType" IsAbstract="true">
     <DisplayName>OffSpecAlarmType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=15143</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/5.12.5</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=15739" BrowseName="1:MaintenanceRequiredAlarmType" IsAbstract="true">
     <DisplayName>MaintenanceRequiredAlarmType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=15143</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/5.12.6</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1004" BrowseName="1:ConfigurableObjectType">
     <DisplayName>ConfigurableObjectType</DisplayName>
@@ -1277,6 +1299,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6026</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/9.2.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5004" BrowseName="1:SupportedTypes" ParentNodeId="ns=1;i=1004">
     <DisplayName>SupportedTypes</DisplayName>
@@ -1303,6 +1326,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6243</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/5.4.1</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=6027" BrowseName="1:&lt;GroupIdentifier&gt;" SymbolicName="GroupIdentifier" ParentNodeId="ns=1;i=1005">
     <DisplayName>&lt;GroupIdentifier&gt;</DisplayName>
@@ -1338,6 +1362,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/6.2</Documentation>
   </UAObjectType>
   <UADataType NodeId="ns=1;i=6244" BrowseName="1:DeviceHealthEnumeration">
     <DisplayName>DeviceHealthEnumeration</DisplayName>
@@ -1345,6 +1370,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6450</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/5.5.4</Documentation>
     <Definition Name="1:DeviceHealthEnumeration">
       <Field Name="NORMAL" Value="0">
         <Description>This device functions normally.</Description>
@@ -1406,6 +1432,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/5.4.3</Documentation>
   </UAVariableType>
   <UAObjectType NodeId="ns=1;i=6247" BrowseName="1:NetworkType">
     <DisplayName>NetworkType</DisplayName>
@@ -1416,6 +1443,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6294</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/6.3</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=6596" BrowseName="1:&lt;ProfileIdentifier&gt;" SymbolicName="ProfileIdentifier" ParentNodeId="ns=1;i=6247">
     <DisplayName>&lt;ProfileIdentifier&gt;</DisplayName>
@@ -1670,6 +1698,7 @@
       <Reference ReferenceType="ns=1;i=6030">ns=1;i=6599</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1001</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/6.4</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=6354" BrowseName="1:NetworkAddress" ParentNodeId="ns=1;i=6308">
     <DisplayName>NetworkAddress</DisplayName>
@@ -1701,12 +1730,14 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/8.2.6</Documentation>
   </UADataType>
   <UADataType NodeId="ns=1;i=15888" BrowseName="1:TransferResultErrorDataType">
     <DisplayName>TransferResultErrorDataType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=6522</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/8.2.6</Documentation>
     <Definition Name="1:TransferResultErrorDataType">
       <Field Name="Status" DataType="i=6" />
       <Field Name="Diagnostics" DataType="i=25" />
@@ -1717,6 +1748,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=6522</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/8.2.6</Documentation>
     <Definition Name="1:TransferResultDataDataType">
       <Field Name="SequenceNumber" DataType="i=6" />
       <Field Name="EndOfResults" DataType="i=1" />
@@ -1728,6 +1760,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/8.2.6</Documentation>
     <Definition Name="1:ParameterResultDataType">
       <Field Name="NodePath" DataType="i=20" ValueRank="1" />
       <Field Name="StatusCode" DataType="i=19" />
@@ -1742,6 +1775,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6531</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/8.2.2</Documentation>
   </UAObjectType>
   <UAMethod NodeId="ns=1;i=6527" BrowseName="1:TransferToDevice" ParentNodeId="ns=1;i=6526">
     <DisplayName>TransferToDevice</DisplayName>
@@ -1974,6 +2008,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6400</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/DI/docs/8.3.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=15890" BrowseName="DefaultInstanceBrowseName" ParentNodeId="ns=1;i=6388" DataType="String">
     <DisplayName>DefaultInstanceBrowseName</DisplayName>

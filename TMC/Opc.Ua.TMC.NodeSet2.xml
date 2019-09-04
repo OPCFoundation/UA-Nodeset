@@ -778,7 +778,7 @@
       <Reference ReferenceType="HasEncoding">ns=1;i=5002</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.3.3.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.3.3/#6.3.3.3</Documentation>
     <Definition Name="1:DataDescriptionType">
       <Field Name="ID" DataType="String">
         <Description>Id of the data point.</Description>
@@ -838,7 +838,7 @@
       <Reference ReferenceType="HasEncoding">ns=1;i=5004</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.7.3.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.7.3/#6.7.3.1</Documentation>
     <Definition Name="1:DataSetEntryType">
       <Field Name="ID" DataType="String" />
       <Field Name="Value" />
@@ -874,7 +874,7 @@
       <Reference ReferenceType="HasEncoding">ns=1;i=5065</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.3.3.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.3.3/#6.3.3.3</Documentation>
     <Definition Name="1:DataSetListType">
       <Field Name="DataSetListId" DataType="String">
         <Description>The Id for the data set list.</Description>
@@ -917,7 +917,7 @@
       <Reference ReferenceType="HasEncoding">ns=1;i=5046</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.7.3.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.7.3/#6.7.3.1</Documentation>
     <Definition Name="1:DataSetType">
       <Field Name="DataSetId" DataType="String">
         <Description>Unique identifier for the data set.</Description>
@@ -962,7 +962,7 @@
       <Reference ReferenceType="HasEncoding">ns=1;i=5169</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.13.4.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.13.4/#6.13.4.6</Documentation>
     <Definition Name="1:IOMetaType">
       <Field Name="Description" DataType="String" />
       <Field Name="Address" DataType="String" />
@@ -998,7 +998,7 @@
       <Reference ReferenceType="HasEncoding">ns=1;i=5252</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.13.4.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.13.4/#6.13.4.6</Documentation>
     <Definition Name="1:IOPointType">
       <Field Name="IOPointMeta" DataType="IOMetaType" IsOptional="true" />
       <Field Name="IOPointValue" DataType="IOValueType" IsOptional="true" />
@@ -1033,7 +1033,7 @@
       <Reference ReferenceType="HasEncoding">ns=1;i=5226</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.13.4.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.13.4/#6.13.4.6</Documentation>
     <Definition Name="1:IOValueType">
       <Field Name="TimeStamp" DataType="UtcTime" />
       <Field Name="RawValue" />
@@ -1070,7 +1070,7 @@
       <Reference ReferenceType="HasEncoding">ns=1;i=5040</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.4.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.4.3/#6.4.3.2</Documentation>
     <Definition Name="1:LoadUnloadPointType">
       <Field Name="ID" DataType="String">
         <Description>A unique ID that identifies the loading point. A barcode carrying the Id shall be generated and properly stuck at the loading point to facilitate automatic identification via bar code scanning.</Description>
@@ -1114,7 +1114,7 @@
       <Reference ReferenceType="HasEncoding">ns=1;i=5042</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.4.3.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.4.3/#6.4.3.3</Documentation>
     <Definition Name="1:MaterialStorageBufferDataType">
       <Field Name="ID" DataType="String" />
       <Field Name="MES_ID" DataType="String" />
@@ -1154,7 +1154,7 @@
       <Reference ReferenceType="HasEncoding">ns=1;i=5008</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.4.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.4.3/#6.4.3.2</Documentation>
     <Definition Name="1:MaterialType">
       <Field Name="Group" DataType="String">
         <Description>Material group of the material.</Description>
@@ -1203,7 +1203,7 @@
       <Reference ReferenceType="HasEncoding">ns=1;i=5037</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.2.3.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.2.3/#6.2.3.4</Documentation>
     <Definition Name="1:MessageType">
       <Field Name="ID" DataType="String" />
       <Field Name="LocalText" DataType="LocalizedText" />
@@ -1238,7 +1238,7 @@
       <Reference ReferenceType="HasEncoding">ns=1;i=5145</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3002</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.3.3.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.3.3/#6.3.3.5</Documentation>
     <Definition Name="1:RootCauseMessageType">
       <Field Name="GroupId" DataType="String" />
     </Definition>
@@ -1272,7 +1272,7 @@
       <Reference ReferenceType="HasEncoding">ns=1;i=5055</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.2.3.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.2.3/#6.2.3.4</Documentation>
     <Definition Name="1:MethodExecutionFeedbackType">
       <Field Name="Success" DataType="Boolean" />
       <Field Name="Message" DataType="MessageType" ValueRank="1" />
@@ -1307,7 +1307,7 @@
       <Reference ReferenceType="HasEncoding">ns=1;i=5044</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.6.3.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.6.3/#6.6.3.1</Documentation>
     <Definition Name="1:POType">
       <Field Name="Number" DataType="String" />
       <Field Name="ProducedMaterial" DataType="MaterialType" />
@@ -1348,7 +1348,7 @@
       <Reference ReferenceType="HasEncoding">ns=1;i=5147</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.3.3.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.3.3/#6.3.3.6</Documentation>
     <Definition Name="1:RootCauseGroupType">
       <Field Name="Id" DataType="String" />
       <Field Name="ParentId" DataType="String" />
@@ -2117,7 +2117,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#7.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/7.7</Documentation>
     <InverseName>ConnectsToParent</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4006" BrowseName="1:FlowsTo">
@@ -2126,7 +2126,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#7.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/7.2</Documentation>
     <InverseName>FlowsFrom</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4009" BrowseName="1:HasUIShapeSelector">
@@ -2134,7 +2134,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#7.8</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/7.8</Documentation>
     <InverseName>SelectsUIShape</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4005" BrowseName="1:IsControlledBy">
@@ -2143,7 +2143,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#7.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/7.3</Documentation>
     <InverseName>Controls</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4010" BrowseName="1:IsDisplayedBy">
@@ -2151,7 +2151,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#7.9</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/7.9</Documentation>
     <InverseName>Displays</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4004" BrowseName="1:IsInstalledOn">
@@ -2160,7 +2160,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#7.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/7.4</Documentation>
     <InverseName>Hosts</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4007" BrowseName="1:Precedes">
@@ -2169,7 +2169,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#7.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/7.5</Documentation>
     <InverseName>IsPrecededBy</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4003" BrowseName="1:TriggersRejection">
@@ -2178,7 +2178,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#7.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/7.6</Documentation>
     <InverseName>TriggeredByDetection</InverseName>
   </UAReferenceType>
   <UAVariableType NodeId="ns=1;i=2003" BrowseName="1:MaterialQuantityType" DataType="Double">
@@ -2192,7 +2192,7 @@ The OPC UA Variable Type MaterialQuantityType describes the quantity of a given 
       <Reference ReferenceType="HasProperty">ns=1;i=6822</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2365</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#8.1.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/8.1.2</Documentation>
     <Value>
       <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
     </Value>
@@ -2246,7 +2246,7 @@ The Property UoM specifies the unit of measure used to quantify the material qua
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=2003</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7374</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#8.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/8.2.2</Documentation>
     <Value>
       <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
     </Value>
@@ -2317,7 +2317,7 @@ The OPC UA Variable Type MaterialLotType describes a lot of materials, i.e. the 
       <Reference ReferenceType="HasProperty">ns=1;i=6668</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=2005</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#8.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/8.3.2</Documentation>
     <Value>
       <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
     </Value>
@@ -2365,7 +2365,7 @@ The OPC UA Variable Type MaterialLotType describes a lot of materials, i.e. the 
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=2005</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#8.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/8.4.2</Documentation>
     <Value>
       <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
     </Value>
@@ -2387,7 +2387,7 @@ The OPC UA Variable Type MaterialLotType describes a lot of materials, i.e. the 
       <Reference ReferenceType="HasComponent">ns=1;i=6103</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=5126</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.19.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.19.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6104" BrowseName="1:NewControlMode" ParentNodeId="ns=1;i=1010" DataType="ControlModeEnumeration" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>NewControlMode</DisplayName>
@@ -2416,7 +2416,7 @@ The OPC UA Variable Type MaterialLotType describes a lot of materials, i.e. the 
       <Reference ReferenceType="HasComponent">ns=1;i=6178</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=5056</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.19.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.19.3</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6179" BrowseName="1:NewDataSet" ParentNodeId="ns=1;i=1017" DataType="DataSetType" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>NewDataSet</DisplayName>
@@ -2470,7 +2470,7 @@ The OPC UA Variable Type MaterialLotType describes a lot of materials, i.e. the 
       <Reference ReferenceType="HasProperty">ns=1;i=6276</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=5131</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.19.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.19.4</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6277" BrowseName="1:DefectEU" ParentNodeId="ns=1;i=1026" DataType="EUInformation" ValueRank="1" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>DefectEU</DisplayName>
@@ -2518,7 +2518,7 @@ The OPC UA Variable Type MaterialLotType describes a lot of materials, i.e. the 
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=5131</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=6901</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.19.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.19.5</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1024" BrowseName="1:DowntimeLogType">
     <DisplayName>DowntimeLogType</DisplayName>
@@ -2533,7 +2533,7 @@ The OPC UA Variable Type MaterialLotType describes a lot of materials, i.e. the 
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=5126</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=6728</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.19.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.19.6</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6252" BrowseName="1:Duration" ParentNodeId="ns=1;i=1024" DataType="Duration" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>Duration</DisplayName>
@@ -2593,7 +2593,7 @@ The OPC UA Variable Type MaterialLotType describes a lot of materials, i.e. the 
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=1037</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=5253</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.19.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.19.7</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6284" BrowseName="1:QuantityProduced" ParentNodeId="ns=1;i=1030" DataType="Double" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>QuantityProduced</DisplayName>
@@ -2899,7 +2899,7 @@ The Property UoM specifies the unit of measure used to quantify the material qua
       <Reference ReferenceType="HasComponent">ns=1;i=7580</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=5124</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.19.20</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.19.20</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=7580" BrowseName="1:RejectedLot" ParentNodeId="ns=1;i=1039" DataType="Double" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>RejectedLot</DisplayName>
@@ -3058,7 +3058,7 @@ The Property UoM specifies the unit of measure used to quantify the material qua
       <Reference ReferenceType="HasComponent">ns=1;i=6130</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=5124</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.19.8</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.19.8</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6130" BrowseName="1:MaterialQuantity" ParentNodeId="ns=1;i=1032" DataType="Double" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>MaterialQuantity</DisplayName>
@@ -3219,7 +3219,7 @@ The Property UoM specifies the unit of measure used to quantify the material qua
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=5079</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=5122</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.19.9</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.19.9</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5079" BrowseName="1:OldSpecification" ParentNodeId="ns=1;i=1022">
     <DisplayName>OldSpecification</DisplayName>
@@ -3536,7 +3536,7 @@ The Property ValidSince is the date since the configuration was last modified.
       <Reference ReferenceType="HasComponent">ns=1;i=6143</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=5124</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.19.10</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.19.10</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6143" BrowseName="1:MaterialQuantity" ParentNodeId="ns=1;i=1033" DataType="Double" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>MaterialQuantity</DisplayName>
@@ -3696,7 +3696,7 @@ The Property UoM specifies the unit of measure used to quantify the material qua
       <Reference ReferenceType="HasComponent">ns=1;i=6279</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=5130</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.19.11</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.19.11</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6280" BrowseName="1:MaterialQuantityRejected" ParentNodeId="ns=1;i=1027" DataType="Double" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>MaterialQuantityRejected</DisplayName>
@@ -4006,7 +4006,7 @@ The Property UoM specifies the unit of measure used to quantify the material qua
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=6275</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=6887</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.19.12</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.19.12</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1034" BrowseName="1:MaterialUnloadingIsRequiredLogType">
     <DisplayName>MaterialUnloadingIsRequiredLogType</DisplayName>
@@ -4018,7 +4018,7 @@ The Property UoM specifies the unit of measure used to quantify the material qua
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1006</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=5124</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.19.13</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.19.13</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6356" BrowseName="1:MaterialQuantity" ParentNodeId="ns=1;i=1034" DataType="Double" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>MaterialQuantity</DisplayName>
@@ -4177,7 +4177,7 @@ The Property UoM specifies the unit of measure used to quantify the material qua
       <Reference ReferenceType="HasComponent">ns=1;i=7573</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=5124</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.19.21</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.19.21</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=7573" BrowseName="1:PresentedMaterialLot" ParentNodeId="ns=1;i=1038" DataType="Double" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>PresentedMaterialLot</DisplayName>
@@ -4335,7 +4335,7 @@ The Property UoM specifies the unit of measure used to quantify the material qua
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=1007</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6291</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.19.14</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.19.14</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6291" BrowseName="1:SystemDump" ParentNodeId="ns=1;i=1018" DataType="String" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>SystemDump</DisplayName>
@@ -4356,7 +4356,7 @@ The Property UoM specifies the unit of measure used to quantify the material qua
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=5125</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=6711</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.19.15</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.19.15</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6129" BrowseName="1:NewPO" ParentNodeId="ns=1;i=1031" DataType="POType" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>NewPO</DisplayName>
@@ -4374,7 +4374,7 @@ The Property UoM specifies the unit of measure used to quantify the material qua
       <Reference ReferenceType="HasProperty">ns=1;i=6140</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1006</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.19.22</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.19.22</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6140" BrowseName="1:PO" ParentNodeId="ns=1;i=1011" DataType="POType" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>PO</DisplayName>
@@ -4424,7 +4424,7 @@ The Property UoM specifies the unit of measure used to quantify the material qua
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=5121</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=6690</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.19.17</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.19.17</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6170" BrowseName="1:NewRootCauseList" ParentNodeId="ns=1;i=1014" DataType="RootCauseMessageType" ValueRank="1" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>NewRootCauseList</DisplayName>
@@ -4453,7 +4453,7 @@ The Property UoM specifies the unit of measure used to quantify the material qua
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1006</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=5126</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.19.18</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.19.18</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6221" BrowseName="1:NewState" ParentNodeId="ns=1;i=1021" DataType="StateEnumeration" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>NewState</DisplayName>
@@ -4482,7 +4482,7 @@ The Property UoM specifies the unit of measure used to quantify the material qua
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=1013</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=5121</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.19.19</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.19.19</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6172" BrowseName="1:NewStopReasonList" ParentNodeId="ns=1;i=1015" DataType="MessageType" ValueRank="1" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>NewStopReasonList</DisplayName>
@@ -4552,7 +4552,7 @@ The Property UoM specifies the unit of measure used to quantify the material qua
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=7285</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.3.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6175" BrowseName="1:DataSetList" ParentNodeId="ns=1;i=1013" DataType="DataSetListType">
     <DisplayName>DataSetList</DisplayName>
@@ -5436,7 +5436,7 @@ This OPC UA MachineModuleLiveStatusType ObjectType contains information about th
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
       <Reference ReferenceType="GeneratesEvent">ns=1;i=1021</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.2.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6108" BrowseName="1:ControlMode" ParentNodeId="ns=1;i=1005" DataType="ControlModeEnumeration">
     <DisplayName>ControlMode</DisplayName>
@@ -5699,7 +5699,7 @@ The Property State describes the status of the state machine controlling the mac
       <Reference ReferenceType="HasComponent">ns=1;i=7005</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.6.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.6.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6091" BrowseName="1:ProductionOrder" ParentNodeId="ns=1;i=1009" DataType="POType" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>ProductionOrder</DisplayName>
@@ -5886,7 +5886,7 @@ This OPC UA MachineModuleSetupType ObjectType contains the value of all the sett
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7034</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.7.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.7.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6177" BrowseName="1:DataSet" ParentNodeId="ns=1;i=1016" DataType="DataSetType">
     <DisplayName>DataSet</DisplayName>
@@ -6196,7 +6196,7 @@ The Method ValidateDataSet passes a dataset to the underlying system and returns
       <Reference ReferenceType="HasProperty">ns=1;i=6198</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6145</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.4.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5067" BrowseName="1:DocumentationRep" ParentNodeId="ns=1;i=1002">
     <DisplayName>DocumentationRep</DisplayName>
@@ -6740,7 +6740,7 @@ The OPC UA Object Type TMCServerType is used to describe the features supported 
       <Reference ReferenceType="HasComponent">ns=1;i=7039</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.15.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.15.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6945" BrowseName="1:AggregatedServers" ParentNodeId="ns=1;i=1019" DataType="String" ValueRank="1" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>AggregatedServers</DisplayName>
@@ -6928,7 +6928,7 @@ The Method SetServerTime sets the time of the server. It is used for time synchr
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1002</Reference>
       <Reference ReferenceType="IsInstalledOn" IsForward="false">ns=1;i=1008</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.13.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.13.2</Documentation>
   </UAObjectType>
   <UAMethod NodeId="ns=1;i=7008" BrowseName="1:GetIOImage" ParentNodeId="ns=1;i=1007">
     <DisplayName>GetIOImage</DisplayName>
@@ -7367,7 +7367,7 @@ The OPC UA ControlsSWType ObjectType describes the controls’ software componen
       <Reference ReferenceType="HasComponent">ns=1;i=7101</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7068</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.14.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.14.2</Documentation>
   </UAObjectType>
   <UAMethod NodeId="ns=1;i=7069" BrowseName="1:GetSupportedFeatures" ParentNodeId="ns=1;i=1008">
     <DisplayName>GetSupportedFeatures</DisplayName>
@@ -7688,7 +7688,7 @@ This OPC UA DefectDetectionSensorType ObjectType describes a sensor fitted to th
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1002</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5187</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.11.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.11.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6258" BrowseName="1:Description" ParentNodeId="ns=1;i=1025" DataType="LocalizedText">
     <DisplayName>Description</DisplayName>
@@ -8116,7 +8116,7 @@ This OPC UA MachineModuleType ObjectType represents a machine module or workcent
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1002</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5149</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.1.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.1.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5131" BrowseName="1:&lt;DefectDetectionSensors&gt;" SymbolicName="DefectDetectionSensors" ParentNodeId="ns=1;i=1004">
     <DisplayName>&lt;DefectDetectionSensors&gt;</DisplayName>
@@ -12602,7 +12602,7 @@ The Property Width defines the width of the Image as shown at base zoom level in
       <Reference ReferenceType="HasComponent">ns=1;i=7003</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6002</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.8.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.8.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=7531" BrowseName="1:ActualConsumptionRate" ParentNodeId="ns=1;i=1003" DataType="Double" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>ActualConsumptionRate</DisplayName>
@@ -13321,7 +13321,7 @@ The Property Width defines the width of the Image as shown at base zoom level in
       <Reference ReferenceType="HasComponent">ns=1;i=5098</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=7530</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.12.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.12.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6354" BrowseName="1:DownstreamHeld" ParentNodeId="ns=1;i=1037" DataType="Boolean" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>DownstreamHeld</DisplayName>
@@ -13949,7 +13949,7 @@ The Property Width defines the width of the Image as shown at base zoom level in
       <Reference ReferenceType="TriggersRejection" IsForward="false">ns=1;i=1025</Reference>
       <Reference ReferenceType="TriggersRejection" IsForward="false">ns=1;i=5131</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.10.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.10.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6254" BrowseName="1:Description" ParentNodeId="ns=1;i=1023" DataType="LocalizedText">
     <DisplayName>Description</DisplayName>
@@ -14630,7 +14630,7 @@ This OPC UA MaterialStorageBufferType ObjectType describes locations where the p
       <Reference ReferenceType="HasComponent">ns=1;i=5165</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7227</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.9.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.9.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6947" BrowseName="1:ID" ParentNodeId="ns=1;i=1035" DataType="String" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>ID</DisplayName>
@@ -15198,7 +15198,7 @@ The OPC UA ObjectType UIInformationType contains information required for creati
       <Reference ReferenceType="HasComponent">ns=1;i=5148</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6218</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.16.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.16.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6183" BrowseName="1:PositionX" ParentNodeId="ns=1;i=1020" DataType="Double" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>PositionX</DisplayName>
@@ -15297,7 +15297,7 @@ The Property Width defines the width of the Image as shown at base zoom level in
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7779</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#6.17.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/6.17.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6265" BrowseName="1:ControlPanelVURO" ParentNodeId="ns=1;i=1043" DataType="Double" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>ControlPanelVURO</DisplayName>
@@ -15360,7 +15360,7 @@ The Property Width defines the width of the Image as shown at base zoom level in
       <Reference ReferenceType="HasProperty">ns=1;i=6013</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6014</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/TMC/docs/#9.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/TMC/docs/9.1</Documentation>
   </UAObject>
   <UAVariable NodeId="ns=1;i=6004" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=5006" DataType="Boolean">
     <DisplayName>IsNamespaceSubset</DisplayName>

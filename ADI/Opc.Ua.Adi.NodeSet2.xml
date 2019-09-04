@@ -35,7 +35,7 @@
   </NamespaceUris>
   <Models>
     <Model ModelUri="http://opcfoundation.org/UA/ADI/" Version="1.01" PublicationDate="2013-07-31T00:00:00Z">
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2019-05-01T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04.3" PublicationDate="2019-07-23T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.02" PublicationDate="2019-05-01T00:00:00Z" />
     </Model>
   </Models>
@@ -203,7 +203,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=9610</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1002</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.2.1.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.2.1/#5.2.1.1</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5001" BrowseName="2:ParameterSet" ParentNodeId="ns=1;i=1001">
     <DisplayName>ParameterSet</DisplayName>
@@ -1313,7 +1313,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=9675</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2771</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.3.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.3.2/#5.3.2.1</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=9647" BrowseName="1:Powerup" ParentNodeId="ns=1;i=1002">
     <DisplayName>Powerup</DisplayName>
@@ -1660,7 +1660,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=9916</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1001</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.2.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.2.2/#5.2.2.1</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=9677" BrowseName="2:ParameterSet" ParentNodeId="ns=1;i=1003">
     <DisplayName>ParameterSet</DisplayName>
@@ -2140,21 +2140,21 @@
       <Reference ReferenceType="i=117">ns=1;i=9948</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2307</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.3.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.3.3/#5.3.3.2</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1005" BrowseName="1:AnalyserChannelLocalStateType">
     <DisplayName>AnalyserChannelLocalStateType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2307</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.3.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.3.3/#5.3.3.2</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1006" BrowseName="1:AnalyserChannelMaintenanceStateType">
     <DisplayName>AnalyserChannelMaintenanceStateType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2307</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.3.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.3.3/#5.3.3.2</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1007" BrowseName="1:AnalyserChannelStateMachineType">
     <DisplayName>AnalyserChannelStateMachineType</DisplayName>
@@ -2179,7 +2179,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=10022</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2771</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.3.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.3.3/#5.3.3.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=9948" BrowseName="1:OperatingSubStateMachine" ParentNodeId="ns=1;i=1007">
     <DisplayName>OperatingSubStateMachine</DisplayName>
@@ -2689,7 +2689,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=10188</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2771</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.3.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.3.4/#5.3.4.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=10036" BrowseName="1:OperatingExecuteSubStateMachine" ParentNodeId="ns=1;i=1008">
     <DisplayName>OperatingExecuteSubStateMachine</DisplayName>
@@ -4401,7 +4401,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=10315</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2771</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.3.4.5.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.3.4/#5.3.4.5.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=10201" BrowseName="1:SelectExecutionCycle" ParentNodeId="ns=1;i=1009">
     <DisplayName>SelectExecutionCycle</DisplayName>
@@ -5691,7 +5691,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=10442</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1001</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.2.3.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.2.3/#5.2.3.1</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=10317" BrowseName="2:ParameterSet" ParentNodeId="ns=1;i=1010">
     <DisplayName>ParameterSet</DisplayName>
@@ -6693,7 +6693,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=11411</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1001</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.2.6.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.2.6/#5.2.6.1</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=11305" BrowseName="2:ParameterSet" ParentNodeId="ns=1;i=1011">
     <DisplayName>ParameterSet</DisplayName>
@@ -6726,35 +6726,35 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1001</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.2.8.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.2.8/#5.2.8.1</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1013" BrowseName="1:ChromatographDeviceType">
     <DisplayName>ChromatographDeviceType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1001</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.2.10.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.2.10/#5.2.10.1</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1014" BrowseName="1:MassSpectrometerDeviceType">
     <DisplayName>MassSpectrometerDeviceType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1001</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.2.7.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.2.7/#5.2.7.1</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1015" BrowseName="1:AcousticSpectrometerDeviceType">
     <DisplayName>AcousticSpectrometerDeviceType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1001</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.2.9.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.2.9/#5.2.9.1</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1016" BrowseName="1:NMRDeviceType">
     <DisplayName>NMRDeviceType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1001</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.2.11.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.2.11/#5.2.11.1</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1017" BrowseName="1:AccessorySlotType">
     <DisplayName>AccessorySlotType</DisplayName>
@@ -6766,7 +6766,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=12800</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1004</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.2.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.2.4/#5.2.4.1</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=12786" BrowseName="1:IsHotSwappable" ParentNodeId="ns=1;i=1017" DataType="Boolean">
     <DisplayName>IsHotSwappable</DisplayName>
@@ -6892,7 +6892,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=12874</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2771</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.3.5.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.3.5/#5.3.5.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=12840" BrowseName="1:Powerup" ParentNodeId="ns=1;i=1018">
     <DisplayName>Powerup</DisplayName>
@@ -7300,7 +7300,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=12905</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1001</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.2.5.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.2.5/#5.2.5.1</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=12898" BrowseName="1:Configuration" ParentNodeId="ns=1;i=1019">
     <DisplayName>Configuration</DisplayName>
@@ -7349,21 +7349,21 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1019</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.2.5.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.2.5/#5.2.5.3</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=9359" BrowseName="1:SmartSamplingSystemType">
     <DisplayName>SmartSamplingSystemType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1019</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.2.5.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.2.5/#5.2.5.3</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=9368" BrowseName="1:SourceType">
     <DisplayName>SourceType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1019</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.2.5.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.2.5/#5.2.5.3</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1020" BrowseName="1:GcOvenType">
     <DisplayName>GcOvenType</DisplayName>
@@ -7377,7 +7377,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=13026</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.8.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.8.2/#5.8.2.2</Documentation>
     <Definition Name="1:ExecutionCycleEnumeration">
       <Field Name="IDLE" Value="0">
         <Description>Idle, no cleaning or acquisition cycle in progress</Description>
@@ -7652,7 +7652,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=13027</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.8.2.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.8.2/#5.8.2.3</Documentation>
     <Definition Name="1:AcquisitionResultStatusEnumeration">
       <Field Name="NOT_USED" Value="0">
         <Description>No longer used.</Description>
@@ -7715,7 +7715,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=13030</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2365</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.5</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=13030" BrowseName="1:&lt;Identifier&gt;" SymbolicName="Identifier" ParentNodeId="ns=1;i=9380">
     <DisplayName>&lt;Identifier&gt;</DisplayName>
@@ -7737,7 +7737,7 @@
       <Reference ReferenceType="ns=1;i=4003">ns=1;i=13037</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.6</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=13033" BrowseName="1:Name" ParentNodeId="ns=1;i=2007" DataType="LocalizedText">
     <DisplayName>Name</DisplayName>
@@ -7788,7 +7788,7 @@
       <Reference ReferenceType="ns=1;i=4001">ns=1;i=13040</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2365</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.7</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=13040" BrowseName="1:&lt;Source&gt;" SymbolicName="SourceName" ParentNodeId="ns=1;i=2008">
     <DisplayName>&lt;Source&gt;</DisplayName>
@@ -7805,7 +7805,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=49</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.9.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.9.1</Documentation>
     <InverseName>DataSourceOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4002" BrowseName="1:HasInput">
@@ -7814,7 +7814,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=49</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.9.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.9.2</Documentation>
     <InverseName>InputOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4003" BrowseName="1:HasOutput">
@@ -7823,7 +7823,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=49</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#5.9.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/5.9.3</Documentation>
     <InverseName>OutputOf</InverseName>
   </UAReferenceType>
   <UAVariableType NodeId="ns=1;i=2009" BrowseName="1:MVAModelType" DataType="ByteString" ValueRank="-2">
@@ -7834,7 +7834,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=13046</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=2007</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#G.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/G.3.1</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=13045" BrowseName="1:&lt;User defined Output#&gt;" SymbolicName="User_defined_Output" ParentNodeId="ns=1;i=2009">
     <DisplayName>&lt;User defined Output#&gt;</DisplayName>
@@ -7873,7 +7873,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=13058</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#G.3.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/G.3.1</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=13054" BrowseName="1:WarningLimits" ParentNodeId="ns=1;i=2010" DataType="i=884">
     <DisplayName>WarningLimits</DisplayName>
@@ -7957,7 +7957,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=13063</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/ADI/docs/#G.3.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/ADI/docs/G.3.1</Documentation>
     <Definition Name="1:AlarmStateEnumeration">
       <Field Name="NORMAL_0" Value="0">
         <Description>Normal</Description>

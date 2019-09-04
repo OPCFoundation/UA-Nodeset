@@ -99,7 +99,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6366</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#14.5.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/14.5.1</Documentation>
     <Definition Name="1:BeverageSMLEnumeration">
       <Field Name="Inactive" Value="0" />
       <Field Name="Small" Value="1" />
@@ -137,7 +137,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6020</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#9.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/9.4.1</Documentation>
     <Definition Name="1:ChamberModeEnumeration">
       <Field Name="NoSpecialMode" Value="0" />
       <Field Name="Off" Value="1" />
@@ -235,7 +235,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6367</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#14.5.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/14.5.2</Documentation>
     <Definition Name="1:CoffeeMachineModeEnumeration">
       <Field Name="Off" Value="0" />
       <Field Name="Standby" Value="1" />
@@ -273,7 +273,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6168</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#8.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/8.4.1</Documentation>
     <Definition Name="1:CombiSteamerModeEnumeration">
       <Field Name="Off" Value="0" />
       <Field Name="On" Value="1" />
@@ -339,7 +339,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6102</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#11.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/11.4.1</Documentation>
     <Definition Name="1:CookingKettleModeEnumeration">
       <Field Name="Off" Value="0" />
       <Field Name="Preheat" Value="1" />
@@ -397,7 +397,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6529</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#17.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/17.4.1</Documentation>
     <Definition Name="1:CurrentStateEnumeration">
       <Field Name="Off" Value="0" />
       <Field Name="Standby" Value="1" />
@@ -435,7 +435,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6254</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#21.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/21.1</Documentation>
     <Definition Name="1:EnergySourceEnumeration">
       <Field Name="Electric" Value="0" />
       <Field Name="Gas" Value="1" />
@@ -469,7 +469,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6022</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#6.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/6.4.1</Documentation>
     <Definition Name="1:FryerModeEnumeration">
       <Field Name="Off" Value="0" />
       <Field Name="Preheat" Value="1" />
@@ -519,7 +519,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6253</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#7.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/7.4.1</Documentation>
     <Definition Name="1:FryingPanModeEnumeration">
       <Field Name="Off" Value="0" />
       <Field Name="Preheat" Value="1" />
@@ -581,7 +581,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6717</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#18.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/18.4.1</Documentation>
     <Definition Name="1:GrillingZoneStateEnumeration">
       <Field Name="Off" Value="0" />
       <Field Name="Standby" Value="1" />
@@ -619,7 +619,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6444</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#15.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/15.4.2</Documentation>
     <Definition Name="1:HygieneModeEnumeration">
       <Field Name="HygieneOperationOFF" Value="0" />
       <Field Name="HygieneA0" Value="1" />
@@ -665,7 +665,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6286</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#12.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/12.4.1</Documentation>
     <Definition Name="1:MultiFunctionPanModeEnumeration">
       <Field Name="Off" Value="0" />
       <Field Name="On" Value="1" />
@@ -751,7 +751,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6581</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#19.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/19.4.1</Documentation>
     <Definition Name="1:OperatingModeEnumeration">
       <Field Name="Preheat" Value="0" />
       <Field Name="CoolDown" Value="1" />
@@ -809,7 +809,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6445</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#15.4.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/15.4.3</Documentation>
     <Definition Name="1:OperationModeEnumeration">
       <Field Name="Init" Value="0" />
       <Field Name="MachineOff" Value="1" />
@@ -895,7 +895,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6337</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#13.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/13.4.1</Documentation>
     <Definition Name="1:PastaCookerModeEnumeration">
       <Field Name="Off" Value="0" />
       <Field Name="Preheat" Value="1" />
@@ -949,7 +949,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6557</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#18.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/18.4.2</Documentation>
     <Definition Name="1:PlatenPositionStateEnumeration">
       <Field Name="Home" Value="0" />
       <Field Name="Cooking" Value="1" />
@@ -987,7 +987,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6053</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#10.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/10.4.1</Documentation>
     <Definition Name="1:PressureCookingKettleModeEnumeration">
       <Field Name="Off" Value="0" />
       <Field Name="Preheat" Value="1" />
@@ -1045,7 +1045,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6443</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#15.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/15.4.1</Documentation>
     <Definition Name="1:ProgramModeEnumeration">
       <Field Name="OperationOFF" Value="0" />
       <Field Name="PreWash" Value="1" />
@@ -1107,7 +1107,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6206</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#6.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/6.4.2</Documentation>
     <Definition Name="1:SignalModeEnumeration">
       <Field Name="SignalOff" Value="0" />
       <Field Name="SignalOn" Value="1" />
@@ -1141,7 +1141,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6021</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#8.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/8.4.2</Documentation>
     <Definition Name="1:SpecialCookingModeEnumeration">
       <Field Name="NoSpecialMode" Value="0" />
       <Field Name="Baking" Value="1" />
@@ -1203,7 +1203,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6287</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#12.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/12.4.2</Documentation>
     <Definition Name="1:SpecialFunctionModeEnumeration">
       <Field Name="LidUpDown" Value="0" />
       <Field Name="PanTilt" Value="1" />
@@ -1241,7 +1241,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6620</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#20.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/20.4.1</Documentation>
     <Definition Name="1:StatusEnumeration">
       <Field Name="INIT" Value="0" />
       <Field Name="WATER_PURGE" Value="1" />
@@ -1339,7 +1339,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6497</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#16.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/16.4.1</Documentation>
     <Definition Name="1:TrayModeEnumeration">
       <Field Name="Off" Value="0" />
       <Field Name="PreHeat" Value="1" />
@@ -1385,7 +1385,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6498</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#16.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/16.4.2</Documentation>
     <Definition Name="1:TrayTypeEnumeration">
       <Field Name="Generic" Value="0" />
       <Field Name="HeaterPlate" Value="1" />
@@ -2154,7 +2154,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6001</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6003</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#5.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/5.3.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6002" BrowseName="1:BatchId" ParentNodeId="ns=1;i=1002" DataType="String" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>BatchId</DisplayName>
@@ -2195,7 +2195,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2318</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6006</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#5.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/5.4.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6005" BrowseName="1:HistoryDuration" ParentNodeId="ns=1;i=1003" DataType="Duration" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>HistoryDuration</DisplayName>
@@ -2221,7 +2221,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6008</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6009</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#5.5.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/5.5.1</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6007" BrowseName="1:ProgramId" ParentNodeId="ns=1;i=1004" DataType="Int32" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>ProgramId</DisplayName>
@@ -2272,7 +2272,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6174</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6170</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#9.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/9.2.1</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6192" BrowseName="1:ActualBoilerTemperature_&lt;No.&gt;" SymbolicName="ActualBoilerTemperature__No__" ParentNodeId="ns=1;i=1012" DataType="Float">
     <DisplayName>ActualBoilerTemperature_&lt;No.&gt;</DisplayName>
@@ -3040,7 +3040,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6376</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6377</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#14.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/14.2.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6659" BrowseName="1:BoilerPressureSteam" ParentNodeId="ns=1;i=1022" DataType="Float">
     <DisplayName>BoilerPressureSteam</DisplayName>
@@ -3267,7 +3267,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6401</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6395</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#14.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/14.3.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6384" BrowseName="1:BeverageSize" ParentNodeId="ns=1;i=1023" DataType="Float" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>BeverageSize</DisplayName>
@@ -3634,7 +3634,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6111</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6124</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#8.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/8.2.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6119" BrowseName="1:ActualExternalCoreTemperature_&lt;No.&gt;" SymbolicName="ActualExternalCoreTemperature__No__" ParentNodeId="ns=1;i=1010" DataType="Float">
     <DisplayName>ActualExternalCoreTemperature_&lt;No.&gt;</DisplayName>
@@ -4238,7 +4238,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6267</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6261</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#11.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/11.2.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6265" BrowseName="1:ActualCoreTemperature" ParentNodeId="ns=1;i=1016" DataType="Float">
     <DisplayName>ActualCoreTemperature</DisplayName>
@@ -4548,7 +4548,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6538</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6534</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#17.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/17.2.1</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6540" BrowseName="1:ActualPower" ParentNodeId="ns=1;i=1029" DataType="Float">
     <DisplayName>ActualPower</DisplayName>
@@ -4866,7 +4866,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6455</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6454</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#15.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/15.2.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6470" BrowseName="1:ActualFinalRinseTemperature_&lt;No.&gt;" SymbolicName="ActualFinalRinseTemperature__No__" ParentNodeId="ns=1;i=1025" DataType="UInt16">
     <DisplayName>ActualFinalRinseTemperature_&lt;No.&gt;</DisplayName>
@@ -5360,7 +5360,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6031</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6029</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#6.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/6.2.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6025" BrowseName="1:ActualTemperature" ParentNodeId="ns=1;i=1006" DataType="Float">
     <DisplayName>ActualTemperature</DisplayName>
@@ -5581,7 +5581,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6566</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6568</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#18.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/18.2.1</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6560" BrowseName="1:ActualGrillTemperature_&lt;No.&gt;" SymbolicName="ActualGrillTemperature__No__" ParentNodeId="ns=1;i=1031" DataType="Float">
     <DisplayName>ActualGrillTemperature_&lt;No.&gt;</DisplayName>
@@ -5901,7 +5901,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6069</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6062</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#7.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/7.2.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6067" BrowseName="1:ActualCoreTemperature" ParentNodeId="ns=1;i=1008" DataType="Float">
     <DisplayName>ActualCoreTemperature</DisplayName>
@@ -6260,7 +6260,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6628</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6626</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#20.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/20.2.1</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6622" BrowseName="1:LastFreezeTime" ParentNodeId="ns=1;i=1035" DataType="Int32">
     <DisplayName>LastFreezeTime</DisplayName>
@@ -6465,7 +6465,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6586</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6584</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#19.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/19.2.1</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6582" BrowseName="1:ActualTemperatureChamber" ParentNodeId="ns=1;i=1033" DataType="Float">
     <DisplayName>ActualTemperatureChamber</DisplayName>
@@ -6858,7 +6858,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6299</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6309</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#12.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/12.2.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6303" BrowseName="1:ActualCoreTemperature" ParentNodeId="ns=1;i=1018" DataType="Float">
     <DisplayName>ActualCoreTemperature</DisplayName>
@@ -7465,7 +7465,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6348</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6346</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#13.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/13.2.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6342" BrowseName="1:ActualTemperature" ParentNodeId="ns=1;i=1020" DataType="Float">
     <DisplayName>ActualTemperature</DisplayName>
@@ -7690,7 +7690,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6225</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6215</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#10.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/10.2.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6219" BrowseName="1:ActualCoreTemperature" ParentNodeId="ns=1;i=1014" DataType="Float">
     <DisplayName>ActualCoreTemperature</DisplayName>
@@ -8112,7 +8112,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1004</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6505</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#16.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/16.2.1</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6506" BrowseName="1:ActiveSince" ParentNodeId="ns=1;i=1027" DataType="Int32">
     <DisplayName>ActiveSince</DisplayName>
@@ -8329,7 +8329,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=5004</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5003</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#5.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/5.2.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5001" BrowseName="1:BatchInformation" ParentNodeId="ns=1;i=1005">
     <DisplayName>BatchInformation</DisplayName>
@@ -8423,7 +8423,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5013</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#14.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/14.4.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5014" BrowseName="1:&lt;RecipeName&gt;" SymbolicName="RecipeName" ParentNodeId="ns=1;i=1024">
     <DisplayName>&lt;RecipeName&gt;</DisplayName>
@@ -8941,7 +8941,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6148</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6150</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#8.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/8.3.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5007" BrowseName="1:CombiSteamer" ParentNodeId="ns=1;i=1011">
     <DisplayName>CombiSteamer</DisplayName>
@@ -9248,7 +9248,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6268</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6269</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#11.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/11.3.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5010" BrowseName="1:CookingKettle" ParentNodeId="ns=1;i=1017">
     <DisplayName>CookingKettle</DisplayName>
@@ -9595,7 +9595,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6553</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6555</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#17.3.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/17.3.1</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5017" BrowseName="1:CookingZone_&lt;No.&gt;" SymbolicName="CookingZone__No__" ParentNodeId="ns=1;i=1030">
     <DisplayName>CookingZone_&lt;No.&gt;</DisplayName>
@@ -9726,7 +9726,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5015</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#15.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/15.3.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5015" BrowseName="1:Parameters" ParentNodeId="ns=1;i=1026">
     <DisplayName>Parameters</DisplayName>
@@ -9871,7 +9871,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6037</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#6.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/6.3.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6038" BrowseName="1:EnergySource" ParentNodeId="ns=1;i=1007" DataType="EnergySourceEnumeration">
     <DisplayName>EnergySource</DisplayName>
@@ -10106,7 +10106,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5018</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#18.3.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/18.3.1</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6580" BrowseName="1:EnergySource" ParentNodeId="ns=1;i=1032" DataType="EnergySourceEnumeration">
     <DisplayName>EnergySource</DisplayName>
@@ -10141,7 +10141,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6079</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#7.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/7.3.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6080" BrowseName="1:EnergySource" ParentNodeId="ns=1;i=1009" DataType="EnergySourceEnumeration">
     <DisplayName>EnergySource</DisplayName>
@@ -10476,7 +10476,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=5020</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#20.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/20.3.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5020" BrowseName="1:IceMachine" ParentNodeId="ns=1;i=1036">
     <DisplayName>IceMachine</DisplayName>
@@ -10492,7 +10492,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=5019</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#19.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/19.3.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5019" BrowseName="1:MicrowaveCombiOven" ParentNodeId="ns=1;i=1034">
     <DisplayName>MicrowaveCombiOven</DisplayName>
@@ -10711,7 +10711,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=5011</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#12.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/12.3.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6321" BrowseName="1:EnergySource" ParentNodeId="ns=1;i=1019" DataType="EnergySourceEnumeration">
     <DisplayName>EnergySource</DisplayName>
@@ -11066,7 +11066,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=5008</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#9.3.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/9.3.1</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5008" BrowseName="1:Chamber_&lt;No.&gt;" SymbolicName="Chamber__No__" ParentNodeId="ns=1;i=1013">
     <DisplayName>Chamber_&lt;No.&gt;</DisplayName>
@@ -11093,7 +11093,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=5012</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#13.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/13.3.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6350" BrowseName="1:EnergySource" ParentNodeId="ns=1;i=1021" DataType="EnergySourceEnumeration">
     <DisplayName>EnergySource</DisplayName>
@@ -11337,7 +11337,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=5009</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#10.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/10.3.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6229" BrowseName="1:EnergySource" ParentNodeId="ns=1;i=1015" DataType="EnergySourceEnumeration">
     <DisplayName>EnergySource</DisplayName>
@@ -11783,7 +11783,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5016</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#16.3.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/16.3.1</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5016" BrowseName="1:Tray_&lt;No.&gt;" SymbolicName="Tray__No__" ParentNodeId="ns=1;i=1028">
     <DisplayName>Tray_&lt;No.&gt;</DisplayName>
@@ -12018,7 +12018,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6712</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6713</Reference>
     </References>
-    <Documentation>https://opcfoundation.github.io/UA-TypeRepository/CommercialKitchenEquipment/docs/#22.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/CommercialKitchenEquipment/docs/22.1</Documentation>
   </UAObject>
   <UAVariable NodeId="ns=1;i=6707" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=5021" DataType="Boolean">
     <DisplayName>IsNamespaceSubset</DisplayName>
