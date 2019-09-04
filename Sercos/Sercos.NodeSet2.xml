@@ -35,7 +35,7 @@
   </NamespaceUris>
   <Models>
     <Model ModelUri="http://sercos.org/UA/" Version="1.00" PublicationDate="2017-03-13T00:00:00Z">
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04.3" PublicationDate="2019-07-23T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04.3" PublicationDate="2019-09-09T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.02" PublicationDate="2019-05-01T00:00:00Z" />
     </Model>
   </Models>
