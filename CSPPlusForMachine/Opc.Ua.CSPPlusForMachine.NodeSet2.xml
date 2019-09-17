@@ -83,7 +83,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=5002</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1002</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/CSPPlusForMachine/docs/6.2.1/#6.2.1.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CSPPlusForMachine/docs/6.2.1/#6.2.1.1</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5001" BrowseName="2:ParameterSet" ParentNodeId="ns=1;i=1001">
     <DisplayName>ParameterSet</DisplayName>
@@ -170,7 +170,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6006</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2368</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/CSPPlusForMachine/docs/6.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CSPPlusForMachine/docs/6.2.2</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=6006" BrowseName="1:Duration" ParentNodeId="ns=1;i=2001" DataType="Number">
     <DisplayName>Duration</DisplayName>

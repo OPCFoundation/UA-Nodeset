@@ -194,7 +194,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/Sercos/docs/5.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Sercos/docs/5.2</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:SercosProfileType">
     <DisplayName>SercosProfileType</DisplayName>
@@ -223,7 +223,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=5003</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1002</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/Sercos/docs/5.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Sercos/docs/5.3</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5007" BrowseName="1:ParameterSet" ParentNodeId="ns=1;i=1001">
     <DisplayName>ParameterSet</DisplayName>
@@ -264,7 +264,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6076</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=6012</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/Sercos/docs/5.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Sercos/docs/5.3</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=6076" BrowseName="1:&lt;SercosProfileIdentifier&gt;" SymbolicName="SercosProfileIdentifier_Placeholder" ParentNodeId="ns=1;i=6075">
     <DisplayName>&lt;SercosProfileIdentifier&gt;</DisplayName>
@@ -280,7 +280,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6078</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=6012</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/Sercos/docs/5.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Sercos/docs/5.3</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=6078" BrowseName="1:&lt;SercosClassIdentifier&gt;" SymbolicName="SercosClassIdentifier_Placeholder" ParentNodeId="ns=1;i=6077">
     <DisplayName>&lt;SercosClassIdentifier&gt;</DisplayName>
@@ -296,7 +296,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6080</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=6012</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/Sercos/docs/5.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Sercos/docs/5.3</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=6080" BrowseName="1:&lt;FunctionGroupIdentifier&gt;" SymbolicName="FunctionGroupIdentifier_Placeholder" ParentNodeId="ns=1;i=6079">
     <DisplayName>&lt;FunctionGroupIdentifier&gt;</DisplayName>
@@ -319,7 +319,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6005</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/Sercos/docs/5.5.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Sercos/docs/5.5.1</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=6004" BrowseName="1:Attribute" ParentNodeId="ns=1;i=2001" DataType="UInt32">
     <DisplayName>Attribute</DisplayName>
