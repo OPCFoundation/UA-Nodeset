@@ -90,7 +90,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/3.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/3.3</Documentation>
   </UAObject>
   <UAVariable NodeId="ns=1;i=722" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=721" DataType="String">
     <DisplayName>NamespaceUri</DisplayName>
@@ -193,7 +193,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/6.3.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/6.3.5</Documentation>
     <Definition Name="1:ApplicationRecordDataType">
       <Field Name="ApplicationId" DataType="i=17" />
       <Field Name="ApplicationUri" DataType="i=12" />
@@ -217,7 +217,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=23</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/6.3.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/6.3.3</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=14" BrowseName="1:Applications" ParentNodeId="ns=1;i=13">
     <DisplayName>Applications</DisplayName>
@@ -837,7 +837,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2127</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/6.3.12</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/6.3.12</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=63" BrowseName="1:CertificateDirectoryType">
     <DisplayName>CertificateDirectoryType</DisplayName>
@@ -852,7 +852,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=222</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=13</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/7.6.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/7.6.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=511" BrowseName="1:CertificateGroups" ParentNodeId="ns=1;i=63">
     <DisplayName>CertificateGroups</DisplayName>
@@ -2009,7 +2009,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=718</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2127</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/7.6.9</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/7.6.9</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=717" BrowseName="1:CertificateGroup" ParentNodeId="ns=1;i=91" DataType="NodeId">
     <DisplayName>CertificateGroup</DisplayName>
@@ -2034,7 +2034,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=720</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2127</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/7.6.10</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/7.6.10</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=719" BrowseName="1:CertificateGroup" ParentNodeId="ns=1;i=109" DataType="NodeId">
     <DisplayName>CertificateGroup</DisplayName>
@@ -2058,7 +2058,7 @@
       <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/8.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/8.4.2</Documentation>
   </UAObject>
   <UAObjectType NodeId="ns=1;i=1020" BrowseName="1:KeyCredentialServiceType">
     <DisplayName>KeyCredentialServiceType</DisplayName>
@@ -2070,7 +2070,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=1029</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/8.4.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/8.4.3</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=1021" BrowseName="1:ResourceUri" ParentNodeId="ns=1;i=1020" DataType="String">
     <DisplayName>ResourceUri</DisplayName>
@@ -2378,21 +2378,21 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=18011</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/8.4.8</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/8.4.8</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1057" BrowseName="1:KeyCredentialDeliveredAuditEventType">
     <DisplayName>KeyCredentialDeliveredAuditEventType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=18011</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/8.4.9</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/8.4.9</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1075" BrowseName="1:KeyCredentialRevokedAuditEventType">
     <DisplayName>KeyCredentialRevokedAuditEventType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=18011</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/8.4.10</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/8.4.10</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=959" BrowseName="1:AuthorizationServices">
     <DisplayName>AuthorizationServices</DisplayName>
@@ -2400,7 +2400,7 @@
       <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/9.6.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/9.6.2</Documentation>
   </UAObject>
   <UAObjectType NodeId="ns=1;i=966" BrowseName="1:AuthorizationServiceType">
     <DisplayName>AuthorizationServiceType</DisplayName>
@@ -2412,7 +2412,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=969</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/9.5.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/9.5.3</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=1003" BrowseName="1:ServiceUri" ParentNodeId="ns=1;i=966" DataType="String">
     <DisplayName>ServiceUri</DisplayName>
@@ -2610,7 +2610,7 @@
       <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=63</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/6.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/6.3.2</Documentation>
   </UAObject>
   <UAObject NodeId="ns=1;i=142" BrowseName="1:Applications" ParentNodeId="ns=1;i=141">
     <DisplayName>Applications</DisplayName>
@@ -2626,7 +2626,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=145</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=141</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/6.3.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/6.3.4</Documentation>
   </UAMethod>
   <UAVariable NodeId="ns=1;i=144" BrowseName="InputArguments" ParentNodeId="ns=1;i=143" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
@@ -2689,7 +2689,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=148</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=141</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/6.3.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/6.3.6</Documentation>
   </UAMethod>
   <UAVariable NodeId="ns=1;i=147" BrowseName="InputArguments" ParentNodeId="ns=1;i=146" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
@@ -2749,7 +2749,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=201</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=141</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/6.3.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/6.3.7</Documentation>
   </UAMethod>
   <UAVariable NodeId="ns=1;i=201" BrowseName="InputArguments" ParentNodeId="ns=1;i=200" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
@@ -2783,7 +2783,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=150</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=141</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/6.3.8</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/6.3.8</Documentation>
   </UAMethod>
   <UAVariable NodeId="ns=1;i=150" BrowseName="InputArguments" ParentNodeId="ns=1;i=149" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
@@ -2818,7 +2818,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=218</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=141</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/6.3.9</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/6.3.9</Documentation>
   </UAMethod>
   <UAVariable NodeId="ns=1;i=217" BrowseName="InputArguments" ParentNodeId="ns=1;i=216" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
@@ -2879,7 +2879,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=994</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=141</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/6.3.10</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/6.3.10</Documentation>
   </UAMethod>
   <UAVariable NodeId="ns=1;i=993" BrowseName="InputArguments" ParentNodeId="ns=1;i=992" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
@@ -3064,7 +3064,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=153</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=141</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/6.3.11</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/6.3.11</Documentation>
   </UAMethod>
   <UAVariable NodeId="ns=1;i=152" BrowseName="InputArguments" ParentNodeId="ns=1;i=151" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
@@ -5068,7 +5068,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=159</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=141</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/7.6.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/7.6.3</Documentation>
   </UAMethod>
   <UAVariable NodeId="ns=1;i=158" BrowseName="InputArguments" ParentNodeId="ns=1;i=157" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
@@ -5174,7 +5174,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=156</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=141</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/7.6.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/7.6.4</Documentation>
   </UAMethod>
   <UAVariable NodeId="ns=1;i=155" BrowseName="InputArguments" ParentNodeId="ns=1;i=154" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
@@ -5327,7 +5327,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=165</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=141</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/8.4.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/8.4.5</Documentation>
   </UAMethod>
   <UAVariable NodeId="ns=1;i=164" BrowseName="InputArguments" ParentNodeId="ns=1;i=163" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
@@ -5435,7 +5435,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=510</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=141</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/7.6.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/7.6.6</Documentation>
   </UAMethod>
   <UAVariable NodeId="ns=1;i=509" BrowseName="InputArguments" ParentNodeId="ns=1;i=508" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
@@ -5498,7 +5498,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=206</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=141</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/7.6.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/7.6.7</Documentation>
   </UAMethod>
   <UAVariable NodeId="ns=1;i=205" BrowseName="InputArguments" ParentNodeId="ns=1;i=204" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
@@ -5574,7 +5574,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=227</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=141</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/GDS/docs/7.6.8</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/7.6.8</Documentation>
   </UAMethod>
   <UAVariable NodeId="ns=1;i=226" BrowseName="InputArguments" ParentNodeId="ns=1;i=225" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
