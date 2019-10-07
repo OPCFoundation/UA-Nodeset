@@ -11055,9 +11055,19 @@ namespace Opc.Ua
         public const uint HasDataSetWriter = 15296;
 
         /// <summary>
+        /// The identifier for the HasWriterGroup ReferenceType.
+        /// </summary>
+        public const uint HasWriterGroup = 18804;
+
+        /// <summary>
         /// The identifier for the HasDataSetReader ReferenceType.
         /// </summary>
         public const uint HasDataSetReader = 15297;
+
+        /// <summary>
+        /// The identifier for the HasReaderGroup ReferenceType.
+        /// </summary>
+        public const uint HasReaderGroup = 18805;
     }
     #endregion
 
@@ -40545,9 +40555,19 @@ namespace Opc.Ua
         public static readonly NodeId HasDataSetWriter = new NodeId(Opc.Ua.ReferenceTypes.HasDataSetWriter);
 
         /// <summary>
+        /// The identifier for the HasWriterGroup ReferenceType.
+        /// </summary>
+        public static readonly NodeId HasWriterGroup = new NodeId(Opc.Ua.ReferenceTypes.HasWriterGroup);
+
+        /// <summary>
         /// The identifier for the HasDataSetReader ReferenceType.
         /// </summary>
         public static readonly NodeId HasDataSetReader = new NodeId(Opc.Ua.ReferenceTypes.HasDataSetReader);
+
+        /// <summary>
+        /// The identifier for the HasReaderGroup ReferenceType.
+        /// </summary>
+        public static readonly NodeId HasReaderGroup = new NodeId(Opc.Ua.ReferenceTypes.HasReaderGroup);
     }
     #endregion
 
@@ -62029,6 +62049,11 @@ namespace Opc.Ua
         public const string HasPubSubConnection = "HasPubSubConnection";
 
         /// <summary>
+        /// The BrowseName for the HasReaderGroup component.
+        /// </summary>
+        public const string HasReaderGroup = "HasReaderGroup";
+
+        /// <summary>
         /// The BrowseName for the HasSubStateMachine component.
         /// </summary>
         public const string HasSubStateMachine = "HasSubStateMachine";
@@ -62047,6 +62072,11 @@ namespace Opc.Ua
         /// The BrowseName for the HasTypeDefinition component.
         /// </summary>
         public const string HasTypeDefinition = "HasTypeDefinition";
+
+        /// <summary>
+        /// The BrowseName for the HasWriterGroup component.
+        /// </summary>
+        public const string HasWriterGroup = "HasWriterGroup";
 
         /// <summary>
         /// The BrowseName for the HeaderLayoutUri component.
