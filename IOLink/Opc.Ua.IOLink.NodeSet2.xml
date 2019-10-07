@@ -1371,7 +1371,6 @@
         <Description>A method which belongs to the topology element.</Description>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5002</Reference>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasModellingRule">i=11510</Reference>
         </References>
     </UAMethod>
@@ -1997,7 +1996,6 @@
         <Description>A method which belongs to the topology element.</Description>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5016</Reference>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasModellingRule">i=11510</Reference>
         </References>
     </UAMethod>
@@ -2930,7 +2928,6 @@
         <DisplayName>MethodIdentifier</DisplayName>
         <Description>A method which belongs to the topology element.</Description>
         <References>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasModellingRule">i=11510</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5051</Reference>
         </References>
@@ -4655,7 +4652,6 @@
         <Description>A method which belongs to the topology element.</Description>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5036</Reference>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasModellingRule">i=11510</Reference>
         </References>
     </UAMethod>
@@ -4663,7 +4659,6 @@
         <DisplayName>MethodIdentifier</DisplayName>
         <Description>A method which belongs to the topology element.</Description>
         <References>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasModellingRule">i=11510</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5026</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5036</Reference>
