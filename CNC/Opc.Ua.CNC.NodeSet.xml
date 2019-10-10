@@ -73,11 +73,11 @@
   <UADataType NodeId="ns=1;i=3004" BrowseName="1:CncAxisStatus">
     <DisplayName Locale="en">CncAxisStatus</DisplayName>
     <Description Locale="en">Status of a CNC axis.</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/7.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6976</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/7.2.1</Documentation>
     <Definition Name="1:CncAxisStatus">
       <Field Name="InPosition" Value="0">
         <Description Locale="en">Axis reached commanded position</Description>
@@ -156,11 +156,11 @@
   <UADataType NodeId="ns=1;i=3002" BrowseName="1:CncChannelProgramStatus" SymbolicName="CncChannelProgStatus">
     <DisplayName Locale="en">CncChannelProgramStatus</DisplayName>
     <Description Locale="en">Status of program execution within a channel.</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/7.2.5</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6225</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/7.2.5</Documentation>
     <Definition Name="1:CncChannelProgramStatus">
       <Field Name="Stopped" Value="0">
         <Description Locale="en">Channel program stopped</Description>
@@ -279,11 +279,11 @@
   <UADataType NodeId="ns=1;i=3003" BrowseName="1:CncChannelStatus">
     <DisplayName Locale="en">CncChannelStatus</DisplayName>
     <Description Locale="en">Status of a CNC channel.</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/7.2.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6223</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/7.2.4</Documentation>
     <Definition Name="1:CncChannelStatus">
       <Field Name="Active" Value="0">
         <Description Locale="en">Channel active</Description>
@@ -362,11 +362,11 @@
   <UADataType NodeId="ns=1;i=3006" BrowseName="1:CncOperationMode">
     <DisplayName Locale="en">CncOperationMode</DisplayName>
     <Description Locale="en">Modes of operation.</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/7.2.6</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=7106</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/7.2.6</Documentation>
     <Definition Name="1:CncOperationMode">
       <Field Name="Manual" Value="0" />
       <Field Name="MDA" Value="1" />
@@ -397,11 +397,11 @@
   <UADataType NodeId="ns=1;i=3005" BrowseName="1:CncSpindleStatus">
     <DisplayName Locale="en">CncSpindleStatus</DisplayName>
     <Description Locale="en">Status of a CNC spindle.</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/7.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6224</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/7.2.2</Documentation>
     <Definition Name="1:CncSpindleStatus">
       <Field Name="Stopped" Value="0">
         <Description Locale="en">Spindle stopped</Description>
@@ -520,11 +520,11 @@
   <UADataType NodeId="ns=1;i=3001" BrowseName="1:CncSpindleTurnDirection">
     <DisplayName Locale="en">CncSpindleTurnDirection</DisplayName>
     <Description Locale="en">Turn direction of a CNC spindle.</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/7.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6146</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/7.2.3</Documentation>
     <Definition Name="1:CncSpindleTurnDirection">
       <Field Name="None" Value="0">
         <Description Locale="en">No rotation</Description>
@@ -603,12 +603,12 @@
   <UADataType NodeId="ns=1;i=3007" BrowseName="1:CncPositionDataType">
     <DisplayName Locale="en">CncPositionDataType</DisplayName>
     <Description Locale="en">Structure of position elements.</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/7.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5001</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5007</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/7.3.2</Documentation>
     <Definition Name="1:CncPositionDataType">
       <Field Name="ActPos" DataType="Double">
         <Description>Position current value.</Description>
@@ -848,6 +848,7 @@
   <UAVariableType NodeId="ns=1;i=2001" BrowseName="1:CncPositionVariableType" DataType="CncPositionDataType">
     <DisplayName Locale="en">CncPositionVariableType</DisplayName>
     <Description Locale="en">Group of position values.</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/7.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6046</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6044</Reference>
@@ -856,7 +857,6 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6881</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6050</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/7.3.2</Documentation>
     <Value>
       <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:TypeId>
@@ -927,6 +927,7 @@
   <UAObjectType NodeId="ns=1;i=1011" BrowseName="1:CncMessageType">
     <DisplayName Locale="en">CncMessageType</DisplayName>
     <Description Locale="en">Event transmitting simple information messages.</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.11.2</Documentation>
     <References>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=1002</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=1007</Reference>
@@ -936,11 +937,11 @@
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=5023</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=5024</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.11.2</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1006" BrowseName="1:CncAlarmType">
     <DisplayName Locale="en">CncAlarmType</DisplayName>
     <Description Locale="en">Event transmitting Alarms within a CNC system.</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.10.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6865</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6862</Reference>
@@ -949,7 +950,6 @@
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=1007</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=5008</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.10.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6865" BrowseName="1:AlarmIdentifier" ParentNodeId="ns=1;i=1006" DataType="String" AccessLevel="3" UserAccessLevel="3">
     <DisplayName Locale="en">AlarmIdentifier</DisplayName>
@@ -992,12 +992,12 @@
   <UAObjectType NodeId="ns=1;i=1008" BrowseName="1:CncAxisListType">
     <DisplayName Locale="en">CncAxisListType</DisplayName>
     <Description Locale="en">List of CNC axis objects.</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5019</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
       <Reference ReferenceType="GeneratesEvent">i=2133</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.2.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5019" BrowseName="1:&lt;CncAxis&gt;" SymbolicName="S_CncAxis_" ParentNodeId="ns=1;i=1008">
     <DisplayName Locale="en">&lt;CncAxis&gt;</DisplayName>
@@ -1516,12 +1516,12 @@
   <UAObjectType NodeId="ns=1;i=1010" BrowseName="1:CncChannelListType">
     <DisplayName Locale="en">CncChannelListType</DisplayName>
     <Description Locale="en">List of CNC channel objects.</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.4.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5003</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
       <Reference ReferenceType="GeneratesEvent">i=2133</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.4.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5003" BrowseName="1:&lt;CncChannel&gt;" SymbolicName="S_CncChannel_" ParentNodeId="ns=1;i=1010">
     <DisplayName Locale="en">&lt;CncChannel&gt;</DisplayName>
@@ -3075,14 +3075,15 @@
   <UAObjectType NodeId="ns=1;i=1001" BrowseName="1:CncComponentType" IsAbstract="true">
     <DisplayName Locale="en">CncComponentType</DisplayName>
     <Description Locale="en">Base component for soft- or hardware elements of a CNC system.</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.5.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.5.2</Documentation>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:CncChannelType">
     <DisplayName Locale="en">CncChannelType</DisplayName>
     <Description Locale="en">CNC channel component.</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.6.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5029</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5030</Reference>
@@ -3128,7 +3129,6 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6174</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6056</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.6.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5029" BrowseName="1:&lt;CncAxis&gt;" SymbolicName="S_CncAxis_" ParentNodeId="ns=1;i=1002">
     <DisplayName Locale="en">&lt;CncAxis&gt;</DisplayName>
@@ -5696,6 +5696,7 @@
   <UAObjectType NodeId="ns=1;i=1003" BrowseName="1:CncDriveType" IsAbstract="true">
     <DisplayName Locale="en">CncDriveType</DisplayName>
     <Description Locale="en">Base component for CNC specific drive componentes (e.g. axis or spindle).</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.7.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6059</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6060</Reference>
@@ -5706,7 +5707,6 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6200</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6189</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.7.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6059" BrowseName="1:ActChannel" ParentNodeId="ns=1;i=1003" DataType="NodeId" AccessLevel="3" UserAccessLevel="3">
     <DisplayName Locale="en">ActChannel</DisplayName>
@@ -5958,6 +5958,7 @@
   <UAObjectType NodeId="ns=1;i=1004" BrowseName="1:CncAxisType">
     <DisplayName Locale="en">CncAxisType</DisplayName>
     <Description Locale="en">CNC axis component.</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.8.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6102</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1003</Reference>
@@ -5967,7 +5968,6 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6039</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6100</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.8.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6102" BrowseName="1:ActStatus" ParentNodeId="ns=1;i=1004" DataType="CncAxisStatus" AccessLevel="3" UserAccessLevel="3">
     <DisplayName Locale="en">ActStatus</DisplayName>
@@ -6217,6 +6217,7 @@
   <UAObjectType NodeId="ns=1;i=1005" BrowseName="1:CncSpindleType">
     <DisplayName Locale="en">CncSpindleType</DisplayName>
     <Description Locale="en">CNC spindle component.</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.9.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6128</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6700</Reference>
@@ -6229,7 +6230,6 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6122</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1003</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.9.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6128" BrowseName="1:ActGear" ParentNodeId="ns=1;i=1005" DataType="UInt32" AccessLevel="3" UserAccessLevel="3">
     <DisplayName Locale="en">ActGear</DisplayName>
@@ -6511,6 +6511,7 @@
   <UAObjectType NodeId="ns=1;i=1007" BrowseName="1:CncInterfaceType">
     <DisplayName Locale="en">CncInterfaceType</DisplayName>
     <Description Locale="en">Entry point to CNC data interface.</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.1.2</Documentation>
     <References>
       <Reference ReferenceType="GeneratesEvent">ns=1;i=1006</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5026</Reference>
@@ -6524,7 +6525,6 @@
       <Reference ReferenceType="HasProperty">ns=1;i=6621</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6616</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.1.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5026" BrowseName="1:CncAxisList" ParentNodeId="ns=1;i=1007">
     <DisplayName Locale="en">CncAxisList</DisplayName>
@@ -6616,12 +6616,12 @@
   <UAObjectType NodeId="ns=1;i=1009" BrowseName="1:CncSpindleListType">
     <DisplayName Locale="en">CncSpindleListType</DisplayName>
     <Description Locale="en">List of CNC spindle objects.</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5002</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
       <Reference ReferenceType="GeneratesEvent">i=2133</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/CNC/docs/6.3.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5002" BrowseName="1:&lt;CncSpindle&gt;" SymbolicName="S_CncSpindle_" ParentNodeId="ns=1;i=1009">
     <DisplayName Locale="en">&lt;CncSpindle&gt;</DisplayName>

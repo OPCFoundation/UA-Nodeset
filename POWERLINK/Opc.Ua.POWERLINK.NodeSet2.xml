@@ -78,11 +78,11 @@
   <UADataType NodeId="ns=1;i=28" BrowseName="1:PowerlinkNMTResetCmdEnumeration">
     <DisplayName>PowerlinkNMTResetCmdEnumeration</DisplayName>
     <Description>This DataType is an Enumeration that represents the NMT reset commands for POWERLINK</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=132</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.2.2</Documentation>
     <Definition Name="1:PowerlinkNMTResetCmdEnumeration">
       <Field Name="NMTResetNode" Value="40">
         <Description>start application initialisation</Description>
@@ -196,11 +196,11 @@
   <UADataType NodeId="ns=1;i=24" BrowseName="1:PowerlinkNMTStateEnumeration">
     <DisplayName>PowerlinkNMTStateEnumeration</DisplayName>
     <Description>This DataType is an enumeration that represents the NMT State</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=139</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.2.1</Documentation>
     <Definition Name="1:PowerlinkNMTStateEnumeration">
       <Field Name="NMT_GS_OFF " SymbolicName="NMT_GS_OFF" Value="0" />
       <Field Name="NMT_GS_INITIALISING" Value="25">
@@ -443,13 +443,13 @@
   <UADataType NodeId="ns=1;i=26" BrowseName="1:ErrorRegisterBits">
     <DisplayName>ErrorRegisterBits</DisplayName>
     <Description>Represents the values of the POWERLINK ErrorRegister </Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=36</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=37</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12755</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=96</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.3.2</Documentation>
     <Definition Name="1:ErrorRegisterBits">
       <Field Name="Generic_error" Value="0">
         <Description>This bit shall be set if any error is present.
@@ -590,12 +590,12 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UADataType NodeId="ns=1;i=27" BrowseName="1:PowerlinkErrorEntryDataType">
     <DisplayName>PowerlinkErrorEntryDataType</DisplayName>
     <Description>Represents the entries of the POWERLINK Object ERR_History_ADOM (Object 1003h, SubIndex 1..254)</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.5.1</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=53</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=54</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.5.1</Documentation>
     <Definition Name="1:PowerlinkErrorEntryDataType">
       <Field Name="entryType" DataType="UInt16">
         <Description>Entry type as defined in the Powerlink specification EPSG DS 301</Description>
@@ -636,12 +636,12 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UADataType NodeId="ns=1;i=29" BrowseName="1:PowerlinkIpAddressDataType">
     <DisplayName>PowerlinkIpAddressDataType</DisplayName>
     <Description>Structure DataType PowerlinkIpAddressDataType to represent POWERLINK Objects of the POWERLINK data type IP_ADDRESS</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.5.2</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=32</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=34</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.5.2</Documentation>
     <Definition Name="1:PowerlinkIpAddressDataType">
       <Field Name="b1" DataType="Byte">
         <Description>1st byte of the IP-Address, e.g. 192 for the Address 192.168.100.1</Description>
@@ -682,12 +682,12 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UADataType NodeId="ns=1;i=30" BrowseName="1:PowerlinkPDOMappingEntryDataType">
     <DisplayName>PowerlinkPDOMappingEntryDataType</DisplayName>
     <Description>Structure DataType PowerlinkPDOMappingEntryDataType to represent the entries of POWERLINK Objects like PDO_RxCommParam_00h_REC</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.5.3</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=40</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=45</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.5.3</Documentation>
     <Definition Name="1:PowerlinkPDOMappingEntryDataType">
       <Field Name="length" DataType="UInt16">
         <Description>Index of the object to be mapped</Description>
@@ -1042,6 +1042,7 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UAVariableType NodeId="ns=1;i=11" BrowseName="1:PowerlinkArrayType" ValueRank="1">
     <DisplayName>PowerlinkArrayType</DisplayName>
     <Description>represents POWERLINK Objects of the type ARRAY</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/5.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=2725</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=99</Reference>
@@ -1050,7 +1051,6 @@ Additionally to this bit, the following bits may be used to signal more detailed
       <Reference ReferenceType="HasProperty">ns=1;i=101</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=2726</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/5.2.2</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=2725" BrowseName="1:DefaultValue" ParentNodeId="ns=1;i=11">
     <DisplayName>DefaultValue</DisplayName>
@@ -1088,12 +1088,12 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UAVariable NodeId="ns=1;i=101" BrowseName="1:PowerlinkAttributes" ParentNodeId="ns=1;i=11" DataType="PowerlinkAttribute">
     <DisplayName>PowerlinkAttributes</DisplayName>
     <Description>provides the information of the XML-Attribute ‘accessType’ from the POWERLINK XML Device Description</Description>
+    <Documentation>https://reference.opcfoundation.org/POWERLINK/docs/7.3.1</Documentation>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=11</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/POWERLINK/docs/7.3.1</Documentation>
     <Value>
       <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:TypeId>
@@ -1133,12 +1133,12 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UAVariableType NodeId="ns=1;i=7" BrowseName="1:PowerlinkRecordType" IsAbstract="true" DataType="Byte">
     <DisplayName>PowerlinkRecordType</DisplayName>
     <Description>represents POWERLINK Objects of the type RECORD</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/5.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=85</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=86</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/5.2.3</Documentation>
     <Value>
       <uax:Byte xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Byte>
     </Value>
@@ -1170,6 +1170,7 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UAVariableType NodeId="ns=1;i=22" BrowseName="1:DIA_ERRStatistics_Type" DataType="Byte">
     <DisplayName>DIA_ERRStatistics_Type</DisplayName>
     <Description>Variable Type to represent the POWERLINK Record DIA_ERRStatistics_TYPE</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=7</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=423</Reference>
@@ -1182,7 +1183,6 @@ Additionally to this bit, the following bits may be used to signal more detailed
       <Reference ReferenceType="HasComponent">ns=1;i=431</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=427</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.1</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=423" BrowseName="1:EmergencyQueueOverflow_U32" ParentNodeId="ns=1;i=22" DataType="UInt32">
     <DisplayName>EmergencyQueueOverflow_U32</DisplayName>
@@ -1722,6 +1722,7 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UAVariableType NodeId="ns=1;i=21" BrowseName="1:DIA_NMTTelegrCount_Type" DataType="Byte">
     <DisplayName>DIA_NMTTelegrCount_Type</DisplayName>
     <Description>Variable Type to represent the POWERLINK Record DIA_NMTTelegrCount_TYPE</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=395</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=399</Reference>
@@ -1735,7 +1736,6 @@ Additionally to this bit, the following bits may be used to signal more detailed
       <Reference ReferenceType="HasComponent">ns=1;i=407</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=411</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.2</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=395" BrowseName="1:AsyncRx_U32" ParentNodeId="ns=1;i=21" DataType="UInt32">
     <DisplayName>AsyncRx_U32</DisplayName>
@@ -2348,6 +2348,7 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UAVariableType NodeId="ns=1;i=20" BrowseName="1:DLL_ErrorCntRec_Type" DataType="Byte">
     <DisplayName>DLL_ErrorCntRec_Type</DisplayName>
     <Description>Variable Type to represent the POWERLINK Record DLL_ErrorCntRec_TYPE</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=371</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=7</Reference>
@@ -2355,7 +2356,6 @@ Additionally to this bit, the following bits may be used to signal more detailed
       <Reference ReferenceType="HasComponent">ns=1;i=375</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=379</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.3</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=371" BrowseName="1:CumulativeCnt_U32" ParentNodeId="ns=1;i=20" DataType="UInt32" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>CumulativeCnt_U32</DisplayName>
@@ -2591,6 +2591,7 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UAVariableType NodeId="ns=1;i=19" BrowseName="1:IDENTITY_Type" DataType="Byte">
     <DisplayName>IDENTITY_Type</DisplayName>
     <Description>Variable Type to represent the POWERLINK Record IDENTITY</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=7</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=2586</Reference>
@@ -2600,7 +2601,6 @@ Additionally to this bit, the following bits may be used to signal more detailed
       <Reference ReferenceType="HasComponent">ns=1;i=367</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=355</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.4</Documentation>
     <Value>
       <uax:Byte xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Byte>
     </Value>
@@ -2872,6 +2872,7 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UAVariableType NodeId="ns=1;i=18" BrowseName="1:INP_ProcessImage_Type" DataType="Byte">
     <DisplayName>INP_ProcessImage_Type</DisplayName>
     <Description>Variable Type to represent the POWERLINK Record INP_ProcessImage_TYPE</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.5</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=2624</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=7</Reference>
@@ -2879,7 +2880,6 @@ Additionally to this bit, the following bits may be used to signal more detailed
       <Reference ReferenceType="HasComponent">ns=1;i=351</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=347</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.5</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=2624" BrowseName="1:Index" ParentNodeId="ns=1;i=18" DataType="UInt16">
     <DisplayName>Index</DisplayName>
@@ -3038,6 +3038,7 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UAVariableType NodeId="ns=1;i=16" BrowseName="1:NMT_BootTime_Type" DataType="Byte">
     <DisplayName>NMT_BootTime_Type</DisplayName>
     <Description>Variable Type to represent the POWERLINK Record NMT_BootTime_TYPE</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.6</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=2630</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=263</Reference>
@@ -3055,7 +3056,6 @@ Additionally to this bit, the following bits may be used to signal more detailed
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=7</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=2631</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.6</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=2630" BrowseName="1:Index" ParentNodeId="ns=1;i=16" DataType="UInt16">
     <DisplayName>Index</DisplayName>
@@ -4036,6 +4036,7 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UAVariableType NodeId="ns=1;i=17" BrowseName="1:NMT_CycleTiming_Type" DataType="Byte">
     <DisplayName>NMT_CycleTiming_Type</DisplayName>
     <Description>Variable Type to represent the POWERLINK Record NMT_CycleTiming_TYPE</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.7</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=307</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=295</Reference>
@@ -4056,7 +4057,6 @@ Additionally to this bit, the following bits may be used to signal more detailed
       <Reference ReferenceType="HasComponent">ns=1;i=319</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=323</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.7</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=307" BrowseName="1:ASndMaxLatency_U32" ParentNodeId="ns=1;i=17" DataType="UInt32">
     <DisplayName>ASndMaxLatency_U32</DisplayName>
@@ -5130,6 +5130,7 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UAVariableType NodeId="ns=1;i=9" BrowseName="1:NMT_EPLNodeID_Type" DataType="Byte">
     <DisplayName>NMT_EPLNodeID_Type</DisplayName>
     <Description>Variable Type to represent the POWERLINK Record NMT_EPLNodeID_TYPE</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.8</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=2898</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=7</Reference>
@@ -5138,7 +5139,6 @@ Additionally to this bit, the following bits may be used to signal more detailed
       <Reference ReferenceType="HasProperty">ns=1;i=2899</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=105</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.8</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=2898" BrowseName="1:Index" ParentNodeId="ns=1;i=9" DataType="UInt16">
     <DisplayName>Index</DisplayName>
@@ -5360,6 +5360,7 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UAVariableType NodeId="ns=1;i=15" BrowseName="1:NMT_InterfaceGroup_Type" DataType="Byte">
     <DisplayName>NMT_InterfaceGroup_Type</DisplayName>
     <Description>Variable Type to represent the POWERLINK Record NMT_InterfaceGroup_Xh_TYPE</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.9</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=3180</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=219</Reference>
@@ -5375,7 +5376,6 @@ Additionally to this bit, the following bits may be used to signal more detailed
       <Reference ReferenceType="HasComponent">ns=1;i=227</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=231</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.9</Documentation>
     <Value>
       <uax:Byte xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Byte>
     </Value>
@@ -6089,6 +6089,7 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UAVariableType NodeId="ns=1;i=23" BrowseName="1:NMT_MNCycleTiming_Type" DataType="Byte">
     <DisplayName>NMT_MNCycleTiming_Type</DisplayName>
     <Description>Variable Type to represent the POWERLINK Record NMT_MNCycleTiming_TYPE</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.10</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=2199</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=2195</Reference>
@@ -6098,7 +6099,6 @@ Additionally to this bit, the following bits may be used to signal more detailed
       <Reference ReferenceType="HasProperty">ns=1;i=3210</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=2191</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.10</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=2199" BrowseName="1:ASndMaxNumber" ParentNodeId="ns=1;i=23" DataType="Byte" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>ASndMaxNumber</DisplayName>
@@ -6449,6 +6449,7 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UAVariableType NodeId="ns=1;i=14" BrowseName="1:NMT_ParameterStorage_Type">
     <DisplayName>NMT_ParameterStorage_Type</DisplayName>
     <Description>Variable Type to represent the POWERLINK Record NMT_ParameterStorage_TYPE</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.11</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=189</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=177</Reference>
@@ -6456,7 +6457,6 @@ Additionally to this bit, the following bits may be used to signal more detailed
       <Reference ReferenceType="HasComponent">ns=1;i=181</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=7</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.11</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=189" BrowseName="1:&lt;ManufacturerParam_XXh_U32&gt;" SymbolicName="ManufacturerParam_XXh_U32" ParentNodeId="ns=1;i=14" DataType="UInt32" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>&lt;ManufacturerParam_XXh_U32&gt;</DisplayName>
@@ -6689,6 +6689,7 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UAVariableType NodeId="ns=1;i=13" BrowseName="1:NMT_RequestCmd_Type" DataType="Byte">
     <DisplayName>NMT_RequestCmd_Type</DisplayName>
     <Description>Variable Type to represent the POWERLINK Record NMT_RequestCmd_TYPE</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.12</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=173</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=165</Reference>
@@ -6698,7 +6699,6 @@ Additionally to this bit, the following bits may be used to signal more detailed
       <Reference ReferenceType="HasProperty">ns=1;i=3070</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=134</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.12</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=173" BrowseName="1:CmdData_DOM" ParentNodeId="ns=1;i=13" DataType="ByteString" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>CmdData_DOM</DisplayName>
@@ -7003,6 +7003,7 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UAVariableType NodeId="ns=1;i=12" BrowseName="1:NWL_IpAddrTable_Type" DataType="Byte">
     <DisplayName>NWL_IpAddrTable_Type</DisplayName>
     <Description>Variable Type to represent the POWERLINK Record NWL_IpAddrTable_TYPE</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.13</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=117</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=125</Reference>
@@ -7012,7 +7013,6 @@ Additionally to this bit, the following bits may be used to signal more detailed
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=7</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=129</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.13</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=117" BrowseName="1:Addr_IPAD" ParentNodeId="ns=1;i=12" DataType="PowerlinkIpAddressDataType" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>Addr_IPAD</DisplayName>
@@ -7343,13 +7343,13 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UAVariableType NodeId="ns=1;i=10" BrowseName="1:PDO_CommParamRecord_Type" DataType="Byte">
     <DisplayName>PDO_CommParamRecord_Type</DisplayName>
     <Description>Variable Type to represent the POWERLINK Record PDO_CommParamRecord_TYPE</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.14</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=160</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=156</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=2970</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=7</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/7.4.14</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=160" BrowseName="1:MappingVersion_U8" ParentNodeId="ns=1;i=10" DataType="Byte" AccessLevel="3" UserAccessLevel="3">
     <DisplayName>MappingVersion_U8</DisplayName>
@@ -7480,6 +7480,7 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UAVariableType NodeId="ns=1;i=8" BrowseName="1:PowerlinkVariableType">
     <DisplayName>PowerlinkVariableType</DisplayName>
     <Description>represents POWERLINK Objects of the type VAR</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/5.2.4</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=280</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=277</Reference>
@@ -7488,7 +7489,6 @@ Additionally to this bit, the following bits may be used to signal more detailed
       <Reference ReferenceType="HasProperty">ns=1;i=279</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=278</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/5.2.4</Documentation>
   </UAVariableType>
   <UAVariable NodeId="ns=1;i=280" BrowseName="1:DefaultValue" ParentNodeId="ns=1;i=8">
     <DisplayName>DefaultValue</DisplayName>
@@ -7576,6 +7576,7 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UAObjectType NodeId="ns=1;i=3" BrowseName="1:PowerlinkConnectionPointType" IsAbstract="true">
     <DisplayName>PowerlinkConnectionPointType</DisplayName>
     <Description>defines the POWERLINK Objects, which are common for both POWERLINK Managing Node and POWERLINK Controlled Node</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/6.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=59</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=63</Reference>
@@ -7589,7 +7590,6 @@ Additionally to this bit, the following bits may be used to signal more detailed
       <Reference ReferenceType="HasComponent">ns=1;i=66</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=64</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/6.2.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=59" BrowseName="2:&lt;ProfileId&gt;" SymbolicName="ProfileId" ParentNodeId="ns=1;i=3">
     <DisplayName>&lt;ProfileId&gt;</DisplayName>
@@ -15406,6 +15406,7 @@ Additionally to this bit, the following bits may be used to signal more detailed
   </UAObject>
   <UAObjectType NodeId="ns=1;i=4" BrowseName="1:PowerlinkCnConnectionPointType">
     <DisplayName>PowerlinkCnConnectionPointType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/6.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=52</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=41</Reference>
@@ -15413,7 +15414,6 @@ Additionally to this bit, the following bits may be used to signal more detailed
       <Reference ReferenceType="HasComponent">ns=1;i=55</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/6.3.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=52" BrowseName="1:&lt;DeviceProfileIdentifier&gt;" SymbolicName="DeviceProfileIdentifier" ParentNodeId="ns=1;i=4">
     <DisplayName>&lt;DeviceProfileIdentifier&gt;</DisplayName>
@@ -20081,13 +20081,13 @@ Additionally to this bit, the following bits may be used to signal more detailed
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=5" BrowseName="1:PowerlinkMnConnectionPointType">
     <DisplayName>PowerlinkMnConnectionPointType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/6.4.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=42</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=39</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=56</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/6.4.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=42" BrowseName="1:Configuration" ParentNodeId="ns=1;i=5">
     <DisplayName>Configuration</DisplayName>
@@ -27971,12 +27971,12 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UAObjectType NodeId="ns=1;i=2" BrowseName="1:PowerlinkDeviceType">
     <DisplayName>PowerlinkDeviceType</DisplayName>
     <Description>example for a DeviceType that only implements POWERLINK Managing Node (MN) and/or POWERLINK Controlled Node (CN) interfaces</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/6.1.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=43</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=70</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1002</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/6.1.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=43" BrowseName="1:&lt;CNIdentifier&gt;" SymbolicName="CNIdentifier" ParentNodeId="ns=1;i=2">
     <DisplayName>&lt;CNIdentifier&gt;</DisplayName>
@@ -50234,12 +50234,12 @@ Additionally to this bit, the following bits may be used to signal more detailed
   </UAObject>
   <UAObjectType NodeId="ns=1;i=1" BrowseName="1:PowerlinkDeviceProfileType">
     <DisplayName>PowerlinkDeviceProfileType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/6.3.3</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=444</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=443</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1001</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/6.3.3</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=444" BrowseName="1:IndexRangeSize" ParentNodeId="ns=1;i=1" DataType="UInt16">
     <DisplayName>IndexRangeSize</DisplayName>
@@ -50266,6 +50266,7 @@ Additionally to this bit, the following bits may be used to signal more detailed
   <UAObject NodeId="ns=1;i=31" BrowseName="1:http://opcfoundation.org/UA/POWERLINK/" SymbolicName="http___opcfoundation_org_UA_POWERLINK_">
     <DisplayName>http://opcfoundation.org/UA/POWERLINK/</DisplayName>
     <Description>Provides the metadata for a namespace used by the server.</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/9.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=135</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
@@ -50277,7 +50278,6 @@ Additionally to this bit, the following bits may be used to signal more detailed
       <Reference ReferenceType="HasProperty">ns=1;i=150</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=151</Reference>
     </References>
-    <Documentation>https://reference.opcfoundation.org/v104/POWERLINK/docs/9.1</Documentation>
   </UAObject>
   <UAVariable NodeId="ns=1;i=135" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=31" DataType="Boolean">
     <DisplayName>IsNamespaceSubset</DisplayName>
