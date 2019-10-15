@@ -27780,6 +27780,21 @@ namespace Opc.Ua
         public const uint NetworkAddressUrlType_Url = 21149;
 
         /// <summary>
+        /// The identifier for the MultiStateDictionaryEntryDiscreteBaseType_EnumDictionaryEntries Variable.
+        /// </summary>
+        public const uint MultiStateDictionaryEntryDiscreteBaseType_EnumDictionaryEntries = 19082;
+
+        /// <summary>
+        /// The identifier for the MultiStateDictionaryEntryDiscreteBaseType_ValueAsDictionaryEntries Variable.
+        /// </summary>
+        public const uint MultiStateDictionaryEntryDiscreteBaseType_ValueAsDictionaryEntries = 19083;
+
+        /// <summary>
+        /// The identifier for the MultiStateDictionaryEntryDiscreteType_ValueAsDictionaryEntries Variable.
+        /// </summary>
+        public const uint MultiStateDictionaryEntryDiscreteType_ValueAsDictionaryEntries = 19090;
+
+        /// <summary>
         /// The identifier for the IdType_EnumStrings Variable.
         /// </summary>
         public const uint IdType_EnumStrings = 7591;
@@ -29533,6 +29548,16 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsCounterType VariableType.
         /// </summary>
         public const uint PubSubDiagnosticsCounterType = 19725;
+
+        /// <summary>
+        /// The identifier for the MultiStateDictionaryEntryDiscreteBaseType VariableType.
+        /// </summary>
+        public const uint MultiStateDictionaryEntryDiscreteBaseType = 19077;
+
+        /// <summary>
+        /// The identifier for the MultiStateDictionaryEntryDiscreteType VariableType.
+        /// </summary>
+        public const uint MultiStateDictionaryEntryDiscreteType = 19084;
     }
     #endregion
 
@@ -57280,6 +57305,21 @@ namespace Opc.Ua
         public static readonly NodeId NetworkAddressUrlType_Url = new NodeId(Opc.Ua.Variables.NetworkAddressUrlType_Url);
 
         /// <summary>
+        /// The identifier for the MultiStateDictionaryEntryDiscreteBaseType_EnumDictionaryEntries Variable.
+        /// </summary>
+        public static readonly NodeId MultiStateDictionaryEntryDiscreteBaseType_EnumDictionaryEntries = new NodeId(Opc.Ua.Variables.MultiStateDictionaryEntryDiscreteBaseType_EnumDictionaryEntries);
+
+        /// <summary>
+        /// The identifier for the MultiStateDictionaryEntryDiscreteBaseType_ValueAsDictionaryEntries Variable.
+        /// </summary>
+        public static readonly NodeId MultiStateDictionaryEntryDiscreteBaseType_ValueAsDictionaryEntries = new NodeId(Opc.Ua.Variables.MultiStateDictionaryEntryDiscreteBaseType_ValueAsDictionaryEntries);
+
+        /// <summary>
+        /// The identifier for the MultiStateDictionaryEntryDiscreteType_ValueAsDictionaryEntries Variable.
+        /// </summary>
+        public static readonly NodeId MultiStateDictionaryEntryDiscreteType_ValueAsDictionaryEntries = new NodeId(Opc.Ua.Variables.MultiStateDictionaryEntryDiscreteType_ValueAsDictionaryEntries);
+
+        /// <summary>
         /// The identifier for the IdType_EnumStrings Variable.
         /// </summary>
         public static readonly NodeId IdType_EnumStrings = new NodeId(Opc.Ua.Variables.IdType_EnumStrings);
@@ -59033,6 +59073,16 @@ namespace Opc.Ua
         /// The identifier for the PubSubDiagnosticsCounterType VariableType.
         /// </summary>
         public static readonly NodeId PubSubDiagnosticsCounterType = new NodeId(Opc.Ua.VariableTypes.PubSubDiagnosticsCounterType);
+
+        /// <summary>
+        /// The identifier for the MultiStateDictionaryEntryDiscreteBaseType VariableType.
+        /// </summary>
+        public static readonly NodeId MultiStateDictionaryEntryDiscreteBaseType = new NodeId(Opc.Ua.VariableTypes.MultiStateDictionaryEntryDiscreteBaseType);
+
+        /// <summary>
+        /// The identifier for the MultiStateDictionaryEntryDiscreteType VariableType.
+        /// </summary>
+        public static readonly NodeId MultiStateDictionaryEntryDiscreteType = new NodeId(Opc.Ua.VariableTypes.MultiStateDictionaryEntryDiscreteType);
     }
     #endregion
 
@@ -61454,6 +61504,11 @@ namespace Opc.Ua
         public const string EnumDescription = "EnumDescription";
 
         /// <summary>
+        /// The BrowseName for the EnumDictionaryEntries component.
+        /// </summary>
+        public const string EnumDictionaryEntries = "EnumDictionaryEntries";
+
+        /// <summary>
         /// The BrowseName for the Enumeration component.
         /// </summary>
         public const string Enumeration = "Enumeration";
@@ -63142,6 +63197,16 @@ namespace Opc.Ua
         /// The BrowseName for the MulticastDnsEnabled component.
         /// </summary>
         public const string MulticastDnsEnabled = "MulticastDnsEnabled";
+
+        /// <summary>
+        /// The BrowseName for the MultiStateDictionaryEntryDiscreteBaseType component.
+        /// </summary>
+        public const string MultiStateDictionaryEntryDiscreteBaseType = "MultiStateDictionaryEntryDiscreteBaseType";
+
+        /// <summary>
+        /// The BrowseName for the MultiStateDictionaryEntryDiscreteType component.
+        /// </summary>
+        public const string MultiStateDictionaryEntryDiscreteType = "MultiStateDictionaryEntryDiscreteType";
 
         /// <summary>
         /// The BrowseName for the MultiStateDiscreteType component.
@@ -65942,6 +66007,11 @@ namespace Opc.Ua
         /// The BrowseName for the UtcTime component.
         /// </summary>
         public const string UtcTime = "UtcTime";
+
+        /// <summary>
+        /// The BrowseName for the ValueAsDictionaryEntries component.
+        /// </summary>
+        public const string ValueAsDictionaryEntries = "ValueAsDictionaryEntries";
 
         /// <summary>
         /// The BrowseName for the ValueAsText component.
