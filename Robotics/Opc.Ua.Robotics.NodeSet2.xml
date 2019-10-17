@@ -1,5 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2019-09-06T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<!--
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ *
+ * OPC Foundation MIT License 1.00
+ * 
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ * 
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * The complete license agreement can be found here:
+ * http://opcfoundation.org/License/MIT/1.00/
+-->
+
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2019-09-06T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
     <Uri>http://opcfoundation.org/UA/Robotics/</Uri>
     <Uri>http://opcfoundation.org/UA/DI/</Uri>
@@ -63,6 +92,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/9.1</Documentation>
   </UAObject>
   <UAVariable NodeId="ns=1;i=15034" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=15011" DataType="String">
     <DisplayName>NamespaceUri</DisplayName>
@@ -169,6 +199,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=5010</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=15063</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.1.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5002" BrowseName="1:MotionDevices" ParentNodeId="ns=1;i=1002">
     <DisplayName>MotionDevices</DisplayName>
@@ -179,6 +210,7 @@
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1002</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.1.2</Documentation>
   </UAObject>
   <UAObject NodeId="ns=1;i=15008" BrowseName="1:&lt;MotionDeviceIdentifier&gt;" SymbolicName="MotionDeviceIdentifier" ParentNodeId="ns=1;i=5002">
     <DisplayName>&lt;MotionDeviceIdentifier&gt;</DisplayName>
@@ -264,6 +296,7 @@
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=15008</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.2.3/#7.2.3.10</Documentation>
   </UAObject>
   <UAObject NodeId="ns=1;i=15208" BrowseName="1:PowerTrains" ParentNodeId="ns=1;i=15008">
     <DisplayName>PowerTrains</DisplayName>
@@ -273,6 +306,7 @@
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=15008</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.2.3/#7.2.3.11</Documentation>
   </UAObject>
   <UAObject NodeId="ns=1;i=5001" BrowseName="1:Controllers" ParentNodeId="ns=1;i=1002">
     <DisplayName>Controllers</DisplayName>
@@ -283,6 +317,7 @@
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1002</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.1.2</Documentation>
   </UAObject>
   <UAObject NodeId="ns=1;i=15405" BrowseName="1:&lt;ControllerIdentifier&gt;" SymbolicName="ControllerIdentifier" ParentNodeId="ns=1;i=5001">
     <DisplayName>&lt;ControllerIdentifier&gt;</DisplayName>
@@ -358,6 +393,7 @@
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=15405</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.8.3/#7.8.3.10</Documentation>
   </UAObject>
   <UAObject NodeId="ns=1;i=15518" BrowseName="1:TaskControls" ParentNodeId="ns=1;i=15405">
     <DisplayName>TaskControls</DisplayName>
@@ -367,6 +403,7 @@
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=15405</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.8.3/#7.8.3.11</Documentation>
   </UAObject>
   <UAObject NodeId="ns=1;i=5010" BrowseName="1:SafetyStates" ParentNodeId="ns=1;i=1002">
     <DisplayName>SafetyStates</DisplayName>
@@ -377,6 +414,7 @@
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1002</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.1.2</Documentation>
   </UAObject>
   <UAObject NodeId="ns=1;i=15697" BrowseName="1:&lt;SafetyStateIdentifier&gt;" SymbolicName="SafetyStateIdentifier" ParentNodeId="ns=1;i=5010">
     <DisplayName>&lt;SafetyStateIdentifier&gt;</DisplayName>
@@ -442,6 +480,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=16566</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=15063</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.2.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5029" BrowseName="2:ParameterSet" ParentNodeId="ns=1;i=1004">
     <DisplayName>ParameterSet</DisplayName>
@@ -635,6 +674,7 @@
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1004</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.2.3/#7.2.3.13</Documentation>
   </UAObject>
   <UAObject NodeId="ns=1;i=18310" BrowseName="1:&lt;AdditionalComponentIdentifier&gt;" SymbolicName="AdditionalComponentIdentifier" ParentNodeId="ns=1;i=16566">
     <DisplayName>&lt;AdditionalComponentIdentifier&gt;</DisplayName>
@@ -656,6 +696,7 @@
       <Reference ReferenceType="ns=1;i=18179">ns=1;i=18344</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=15063</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.3.3/#7.3.3.4</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=16602" BrowseName="2:ParameterSet" ParentNodeId="ns=1;i=16601">
     <DisplayName>ParameterSet</DisplayName>
@@ -779,6 +820,7 @@
       <Reference ReferenceType="ns=1;i=18183">ns=1;i=18613</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=15063</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.4.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=15998" BrowseName="1:&lt;MotorIdentifier&gt;" SymbolicName="MotorIdentifier" ParentNodeId="ns=1;i=16794">
     <DisplayName>&lt;MotorIdentifier&gt;</DisplayName>
@@ -995,6 +1037,7 @@
       <Reference ReferenceType="ns=1;i=18180">ns=1;i=18763</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=15063</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.5.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5105" BrowseName="2:ParameterSet" ParentNodeId="ns=1;i=1019">
     <DisplayName>ParameterSet</DisplayName>
@@ -1171,6 +1214,7 @@
       <Reference ReferenceType="ns=1;i=18181">ns=1;i=18764</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=15063</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.6.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=17152" BrowseName="2:Manufacturer" ParentNodeId="ns=1;i=1022" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
@@ -1323,6 +1367,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=17225</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=15063</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.7.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5016" BrowseName="2:ParameterSet" ParentNodeId="ns=1;i=1013">
     <DisplayName>ParameterSet</DisplayName>
@@ -1372,6 +1417,7 @@
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1013</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.7.3/#7.7.3.2</Documentation>
   </UAObject>
   <UAObject NodeId="ns=1;i=18806" BrowseName="1:&lt;EmergencyStopFunctionIdentifier&gt;" SymbolicName="EmergencyStopFunctionIdentifier" ParentNodeId="ns=1;i=17221">
     <DisplayName>&lt;EmergencyStopFunctionIdentifier&gt;</DisplayName>
@@ -1410,6 +1456,7 @@
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1013</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.7.3/#7.7.3.3</Documentation>
   </UAObject>
   <UAObject NodeId="ns=1;i=18809" BrowseName="1:&lt;ProtectiveStopFunctionIdentifier&gt;" SymbolicName="ProtectiveStopFunctionIdentifier" ParentNodeId="ns=1;i=17225">
     <DisplayName>&lt;ProtectiveStopFunctionIdentifier&gt;</DisplayName>
@@ -1457,6 +1504,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=17232</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.7.3/#7.7.3.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=17231" BrowseName="1:Name" ParentNodeId="ns=1;i=17230" DataType="String">
     <DisplayName>Name</DisplayName>
@@ -1485,6 +1533,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=17236</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.7.3/#7.7.3.3</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=17234" BrowseName="1:Name" ParentNodeId="ns=1;i=17233" DataType="String">
     <DisplayName>Name</DisplayName>
@@ -1530,6 +1579,7 @@
       <Reference ReferenceType="ns=1;i=4002">ns=1;i=18964</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=15063</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.8.3/#7.8.3.12</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5004" BrowseName="2:ParameterSet" ParentNodeId="ns=1;i=1003">
     <DisplayName>ParameterSet</DisplayName>
@@ -1725,6 +1775,7 @@
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1003</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.8.3/#7.8.3.9</Documentation>
   </UAObject>
   <UAObject NodeId="ns=1;i=18813" BrowseName="1:&lt;ComponentIdentifier&gt;" SymbolicName="ComponentIdentifier" ParentNodeId="ns=1;i=17252">
     <DisplayName>&lt;ComponentIdentifier&gt;</DisplayName>
@@ -1991,6 +2042,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=17756</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1002</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.9.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=17756" BrowseName="2:ProductCode" ParentNodeId="ns=1;i=17725" DataType="String">
     <DisplayName>ProductCode</DisplayName>
@@ -2008,6 +2060,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=17824</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1002</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.10.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=17824" BrowseName="2:ProductCode" ParentNodeId="ns=1;i=17793" DataType="String">
     <DisplayName>ProductCode</DisplayName>
@@ -2027,6 +2080,7 @@
       <Reference ReferenceType="ns=1;i=4002">ns=1;i=19254</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=15063</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.11.2</Documentation>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=15883" BrowseName="2:ParameterSet" ParentNodeId="ns=1;i=1011">
     <DisplayName>ParameterSet</DisplayName>
@@ -2180,6 +2234,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=18170</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.12.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6723" BrowseName="1:Mass" ParentNodeId="ns=1;i=1018" DataType="Double">
     <DisplayName>Mass</DisplayName>
@@ -2324,6 +2379,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=18177</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/7.13.2</Documentation>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=18176" BrowseName="1:Level" ParentNodeId="ns=1;i=18175" DataType="String">
     <DisplayName>Level</DisplayName>
@@ -2349,6 +2405,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=33</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/8.2</Documentation>
     <InverseName>IsControlledBy</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=18178" BrowseName="1:Moves">
@@ -2357,6 +2414,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=33</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/8.3</Documentation>
     <InverseName>IsMovedBy</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=18179" BrowseName="1:Requires">
@@ -2365,6 +2423,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=33</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/8.4</Documentation>
     <InverseName>IsRequiredBy</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=18180" BrowseName="1:IsDrivenBy">
@@ -2373,6 +2432,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=33</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/8.5</Documentation>
     <InverseName>Drives</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=18181" BrowseName="1:IsConnectedTo" Symmetric="true">
@@ -2381,6 +2441,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/8.6</Documentation>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=18182" BrowseName="1:HasSafetyStates">
     <DisplayName>HasSafetyStates</DisplayName>
@@ -2388,6 +2449,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=33</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/8.7</Documentation>
     <InverseName>SafetyStatesOf</InverseName>
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=18183" BrowseName="1:HasSlave">
@@ -2396,6 +2458,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=33</Reference>
     </References>
+    <Documentation>https://reference.opcfoundation.org/Robotics/docs/8.8</Documentation>
     <InverseName>IsSlaveOf</InverseName>
   </UAReferenceType>
   <UADataType NodeId="ns=1;i=18191" BrowseName="1:ExecutionModeEnumeration">
