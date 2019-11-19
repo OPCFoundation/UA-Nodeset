@@ -1123,6 +1123,51 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadDependentValueChanged 0x80E30000
 
 /*============================================================================
+ * It is delivered with a dominant Variable value when a dependent Variable has changed but the change has not been applied.
+ *===========================================================================*/
+#define OpcUa_GoodEdited_DependentValueChanged 0x01160000
+
+/*============================================================================
+ * It is delivered with a dependent Variable value when a dominant Variable has changed but the change has not been applied.
+ *===========================================================================*/
+#define OpcUa_GoodEdited_DominantValueChanged 0x01170000
+
+/*============================================================================
+ * It is delivered with a dependent Variable value when a dominant or dependent Variable has changed but change has not been applied.
+ *===========================================================================*/
+#define OpcUa_GoodEdited_DominantValueChanged_DependentValueChanged 0x01180000
+
+/*============================================================================
+ * It is delivered with a Variable value when Variable has changed but the value is not legal.
+ *===========================================================================*/
+#define OpcUa_BadEdited_OutOfRange 0x81190000
+
+/*============================================================================
+ * It is delivered with a Variable value when a source Variable has changed but the value is not legal.
+ *===========================================================================*/
+#define OpcUa_BadInitialValue_OutOfRange 0x811A0000
+
+/*============================================================================
+ * It is delivered with a dependent Variable value when a dominant Variable has changed and the value is not legal.
+ *===========================================================================*/
+#define OpcUa_BadOutOfRange_DominantValueChanged 0x811B0000
+
+/*============================================================================
+ * It is delivered with a dependent Variable value when a dominant Variable has changed, the value is not legal and the change has not been applied.
+ *===========================================================================*/
+#define OpcUa_BadEdited_OutOfRange_DominantValueChanged 0x811C0000
+
+/*============================================================================
+ * It is delivered with a dependent Variable value when a dominant or dependent Variable has changed and the value is not legal.
+ *===========================================================================*/
+#define OpcUa_BadOutOfRange_DominantValueChanged_DependentValueChanged 0x811D0000
+
+/*============================================================================
+ * It is delivered with a dependent Variable value when a dominant or dependent Variable has changed, the value is not legal and the change has not been applied.
+ *===========================================================================*/
+#define OpcUa_BadEdited_OutOfRange_DominantValueChanged_DependentValueChanged 0x811E0000
+
+/*============================================================================
  * The communication layer has raised an event.
  *===========================================================================*/
 #define OpcUa_GoodCommunicationEvent 0x00A70000

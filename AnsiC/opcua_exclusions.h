@@ -230,6 +230,7 @@
 /* #define OPCUA_EXCLUDE_ReadRawModifiedDetails */
 /* #define OPCUA_EXCLUDE_ReadProcessedDetails */
 /* #define OPCUA_EXCLUDE_ReadAtTimeDetails */
+/* #define OPCUA_EXCLUDE_ReadAnnotationDataDetails */
 /* #define OPCUA_EXCLUDE_HistoryData */
 /* #define OPCUA_EXCLUDE_ModificationInfo */
 /* #define OPCUA_EXCLUDE_HistoryModifiedData */

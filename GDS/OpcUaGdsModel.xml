@@ -37,8 +37,8 @@
   xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"
   xmlns:uasc="http://opcfoundation.org/UA/PushConfiguration/"
   TargetNamespace="http://opcfoundation.org/UA/GDS/"
-  TargetVersion="1.04"
-  TargetPublicationDate="2019-05-01T00:00:00Z"
+  TargetVersion="1.04.4"
+  TargetPublicationDate="2019-11-20T00:00:00Z"
 >
   <opc:Namespaces>
     <opc:Namespace Name="OpcUaGds" Prefix="Opc.Ua.Gds" XmlNamespace="http://opcfoundation.org/UA/GDS/Types.xsd" XmlPrefix="GDS">http://opcfoundation.org/UA/GDS/</opc:Namespace>
@@ -55,12 +55,12 @@
       </opc:Property>
       <opc:Property SymbolicName="ua:NamespaceVersion" DataType="ua:String">
         <opc:DefaultValue>
-          <uax:String>1.04</uax:String>
+          <uax:String>1.04.4</uax:String>
         </opc:DefaultValue>
       </opc:Property>
       <opc:Property SymbolicName="ua:NamespacePublicationDate" DataType="ua:DateTime">
         <opc:DefaultValue>
-          <uax:DateTime>2019-05-01T00:00:00Z</uax:DateTime>
+          <uax:DateTime>2019-11-20T00:00:00Z</uax:DateTime>
         </opc:DefaultValue>
       </opc:Property>
       <opc:Property SymbolicName="ua:IsNamespaceSubset" DataType="ua:Boolean">
@@ -184,7 +184,9 @@
 
   <opc:ObjectType SymbolicName="DirectoryType" BaseType="ua:FolderType">
     <opc:Children>
-      <opc:Object SymbolicName="Applications" TypeDefinition="ua:FolderType" ModellingRule="Mandatory" />
+      <opc:Object SymbolicName="Applications" TypeDefinition="ua:FolderType" ModellingRule="Mandatory">
+        <opc:ReferenceType>ua:HasComponent</opc:ReferenceType>
+      </opc:Object>
       <opc:Method SymbolicName="FindApplications" TypeDefinition="FindApplicationsMethodType" ModellingRule="Mandatory" />
       <opc:Method SymbolicName="RegisterApplication" TypeDefinition="RegisterApplicationMethodType" ModellingRule="Mandatory" />
       <opc:Method SymbolicName="UpdateApplication" TypeDefinition="UpdateApplicationMethodType" ModellingRule="Mandatory" />
@@ -305,7 +307,7 @@
   
   <opc:Object SymbolicName="KeyCredentialManagement" TypeDefinition="ua:FolderType">
     <opc:Children>
-      <opc:Object SymbolicName="ServiceName_Placeholder" TypeDefinition="KeyCredentialServiceType"  ModellingRule="OptionalPlaceholder">
+      <opc:Object SymbolicName="ServiceName_Placeholder" TypeDefinition="KeyCredentialServiceType" ModellingRule="OptionalPlaceholder">
         <opc:BrowseName>&lt;ServiceName&gt;</opc:BrowseName>
         <opc:ReferenceType>ua:Organizes</opc:ReferenceType>
       </opc:Object>
@@ -407,7 +409,7 @@
     </opc:OutputArguments>
   </opc:Method>
 
-  <opc:ObjectType SymbolicName="AccessTokenAuditIssuedAuditEventType" BaseType="ua:AuditUpdateMethodEventType" IsAbstract="false" />
+  <opc:ObjectType SymbolicName="AccessTokenIssuedAuditEventType" BaseType="ua:AuditUpdateMethodEventType" IsAbstract="true" PartNo="12" />
 
   <opc:Object SymbolicName="Directory" TypeDefinition="CertificateDirectoryType">
     
