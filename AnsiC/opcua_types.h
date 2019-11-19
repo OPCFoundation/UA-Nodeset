@@ -4277,6 +4277,30 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ReadAtTimeDetails_Decode(OpcUa_ReadAtTimeDet
 OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_ReadAtTimeDetails_EncodeableType;
 #endif
 
+#ifndef OPCUA_EXCLUDE_ReadAnnotationDataDetails
+/*============================================================================
+ * The ReadAnnotationDataDetails structure.
+ *===========================================================================*/
+typedef struct _OpcUa_ReadAnnotationDataDetails
+{
+    OpcUa_Int32     NoOfReqTimes;
+    OpcUa_DateTime* ReqTimes;
+}
+OpcUa_ReadAnnotationDataDetails;
+
+OPCUA_EXPORT OpcUa_Void OpcUa_ReadAnnotationDataDetails_Initialize(OpcUa_ReadAnnotationDataDetails* pValue);
+
+OPCUA_EXPORT OpcUa_Void OpcUa_ReadAnnotationDataDetails_Clear(OpcUa_ReadAnnotationDataDetails* pValue);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_ReadAnnotationDataDetails_GetSize(OpcUa_ReadAnnotationDataDetails* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_ReadAnnotationDataDetails_Encode(OpcUa_ReadAnnotationDataDetails* pValue, struct _OpcUa_Encoder* pEncoder);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_ReadAnnotationDataDetails_Decode(OpcUa_ReadAnnotationDataDetails* pValue, struct _OpcUa_Decoder* pDecoder);
+
+OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_ReadAnnotationDataDetails_EncodeableType;
+#endif
+
 #ifndef OPCUA_EXCLUDE_HistoryData
 /*============================================================================
  * The HistoryData structure.

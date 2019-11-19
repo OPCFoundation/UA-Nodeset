@@ -1853,6 +1853,21 @@
   </xs:complexType>
   <xs:element name="ListOfPubSubDiagnosticsCounterClassification" type="tns:ListOfPubSubDiagnosticsCounterClassification" nillable="true"></xs:element>
 
+  <xs:complexType name="AliasNameDataType">
+    <xs:sequence>
+      <xs:element name="AliasName" type="ua:QualifiedName" minOccurs="0" nillable="true" />
+      <xs:element name="ReferencedNodes" type="ua:ListOfExpandedNodeId" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AliasNameDataType" type="tns:AliasNameDataType" />
+
+  <xs:complexType name="ListOfAliasNameDataType">
+    <xs:sequence>
+      <xs:element name="AliasNameDataType" type="tns:AliasNameDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfAliasNameDataType" type="tns:ListOfAliasNameDataType" nillable="true"></xs:element>
+
   <xs:simpleType  name="IdType">
     <xs:restriction base="xs:string">
       <xs:enumeration value="Numeric_0" />
@@ -3817,6 +3832,17 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="ReadAtTimeDetails" type="tns:ReadAtTimeDetails" />
+
+  <xs:complexType name="ReadAnnotationDataDetails">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:HistoryReadDetails">
+        <xs:sequence>
+          <xs:element name="ReqTimes" type="ua:ListOfDateTime" minOccurs="0" nillable="true" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ReadAnnotationDataDetails" type="tns:ReadAnnotationDataDetails" />
 
   <xs:complexType name="HistoryData">
     <xs:sequence>

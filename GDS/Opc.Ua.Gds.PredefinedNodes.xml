@@ -105,7 +105,7 @@
       <uax:NumericId>723</uax:NumericId>
       <uax:Value>
         <uax:Value>
-          <uax:String>1.04</uax:String>
+          <uax:String>1.04.4</uax:String>
         </uax:Value>
       </uax:Value>
       <uax:DataType>
@@ -133,7 +133,7 @@
       <uax:NumericId>724</uax:NumericId>
       <uax:Value>
         <uax:Value>
-          <uax:DateTime>2019-05-01T00:00:00Z</uax:DateTime>
+          <uax:DateTime>2019-11-20T00:00:00Z</uax:DateTime>
         </uax:Value>
       </uax:Value>
       <uax:DataType>
@@ -4374,19 +4374,20 @@
       </OutputArguments>
     </RequestAccessToken>
   </AuthorizationServiceType>
-  <AccessTokenAuditIssuedAuditEventType xmlns="http://opcfoundation.org/UA/GDS/">
+  <AccessTokenIssuedAuditEventType xmlns="http://opcfoundation.org/UA/GDS/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=975</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>1</uax:NamespaceIndex>
-      <uax:Name>AccessTokenAuditIssuedAuditEventType</uax:Name>
+      <uax:Name>AccessTokenIssuedAuditEventType</uax:Name>
     </uax:BrowseName>
     <uax:SuperTypeId>
       <uax:Identifier>i=2127</uax:Identifier>
     </uax:SuperTypeId>
-  </AccessTokenAuditIssuedAuditEventType>
+    <uax:IsAbstract>true</uax:IsAbstract>
+  </AccessTokenIssuedAuditEventType>
   <Directory xmlns="http://opcfoundation.org/UA/GDS/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
