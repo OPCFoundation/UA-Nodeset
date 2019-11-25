@@ -873,6 +873,7 @@
   </UAObject>
   <UAReferenceType NodeId="i=129" BrowseName="HasArgumentDescription">
     <DisplayName>HasArgumentDescription</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment3/11.18</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -880,6 +881,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=131" BrowseName="HasOptionalInputArgumentDescription">
     <DisplayName>HasOptionalInputArgumentDescription</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment3/11.19</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=129</Reference>
     </References>
@@ -8756,12 +8758,14 @@
   </UAVariable>
   <UAObjectType NodeId="i=15109" BrowseName="ChoiceStateType">
     <DisplayName>ChoiceStateType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment2/B.6.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2307</Reference>
     </References>
   </UAObjectType>
   <UAReferenceType NodeId="i=15112" BrowseName="HasGuard">
     <DisplayName>HasGuard</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment2/B.6.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -8769,12 +8773,14 @@
   </UAReferenceType>
   <UAVariableType NodeId="i=15113" BrowseName="GuardVariableType" DataType="LocalizedText">
     <DisplayName>GuardVariableType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment2/B.6.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
     </References>
   </UAVariableType>
   <UAVariableType NodeId="i=15128" BrowseName="ExpressionGuardVariableType" DataType="LocalizedText">
     <DisplayName>ExpressionGuardVariableType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment2/B.6.5</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=15129</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15113</Reference>
@@ -8790,12 +8796,14 @@
   </UAVariable>
   <UAVariableType NodeId="i=15317" BrowseName="ElseGuardVariableType" DataType="LocalizedText">
     <DisplayName>ElseGuardVariableType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment2/B.6.6</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15113</Reference>
     </References>
   </UAVariableType>
   <UAVariableType NodeId="i=17709" BrowseName="RationalNumberType" DataType="i=18806">
     <DisplayName>RationalNumberType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment11/7.20</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=17712</Reference>
       <Reference ReferenceType="HasComponent">i=17713</Reference>
@@ -8820,6 +8828,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=17714" BrowseName="VectorType" IsAbstract="true" DataType="i=18807">
     <DisplayName>VectorType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment11/7.21</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=17715</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
@@ -8835,6 +8844,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=17716" BrowseName="3DVectorType" SymbolicName="ThreeDVectorType" DataType="i=18808">
     <DisplayName>3DVectorType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment11/7.22</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=18769</Reference>
       <Reference ReferenceType="HasComponent">i=18770</Reference>
@@ -8868,6 +8878,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=18772" BrowseName="CartesianCoordinatesType" IsAbstract="true" DataType="i=18809">
     <DisplayName>CartesianCoordinatesType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment11/7.23</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=18773</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
@@ -8883,6 +8894,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=18774" BrowseName="3DCartesianCoordinatesType" SymbolicName="ThreeDCartesianCoordinatesType" DataType="i=18810">
     <DisplayName>3DCartesianCoordinatesType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment11/7.24</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=18776</Reference>
       <Reference ReferenceType="HasComponent">i=18777</Reference>
@@ -8916,6 +8928,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=18779" BrowseName="OrientationType" IsAbstract="true" DataType="i=18811">
     <DisplayName>OrientationType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment11/7.25</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=18780</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
@@ -8931,6 +8944,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=18781" BrowseName="3DOrientationType" SymbolicName="ThreeDOrientationType" DataType="i=18812">
     <DisplayName>3DOrientationType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment11/7.26</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=18783</Reference>
       <Reference ReferenceType="HasComponent">i=18784</Reference>
@@ -8964,6 +8978,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=18786" BrowseName="FrameType" IsAbstract="true" DataType="i=18813">
     <DisplayName>FrameType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment11/7.27</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=18801</Reference>
       <Reference ReferenceType="HasComponent">i=18787</Reference>
@@ -9015,6 +9030,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=18791" BrowseName="3DFrameType" SymbolicName="ThreeDFrameType" DataType="i=18814">
     <DisplayName>3DFrameType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment11/7.28</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=18796</Reference>
       <Reference ReferenceType="HasComponent">i=18792</Reference>
@@ -9093,6 +9109,7 @@
   </UAVariable>
   <UADataType NodeId="i=18806" BrowseName="RationalNumber">
     <DisplayName>RationalNumber</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment11/12.23</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -9103,12 +9120,14 @@
   </UADataType>
   <UADataType NodeId="i=18807" BrowseName="Vector" IsAbstract="true">
     <DisplayName>Vector</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment11/12.24</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=18808" BrowseName="3DVector" SymbolicName="ThreeDVector">
     <DisplayName>3DVector</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment11/12.25</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=18807</Reference>
     </References>
@@ -9120,12 +9139,14 @@
   </UADataType>
   <UADataType NodeId="i=18809" BrowseName="CartesianCoordinates" IsAbstract="true">
     <DisplayName>CartesianCoordinates</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment11/12.26</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=18810" BrowseName="3DCartesianCoordinates" SymbolicName="ThreeDCartesianCoordinates">
     <DisplayName>3DCartesianCoordinates</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment11/12.27</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=18809</Reference>
     </References>
@@ -9137,12 +9158,14 @@
   </UADataType>
   <UADataType NodeId="i=18811" BrowseName="Orientation" IsAbstract="true">
     <DisplayName>Orientation</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment11/12.28</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=18812" BrowseName="3DOrientation" SymbolicName="ThreeDOrientation">
     <DisplayName>3DOrientation</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment11/12.29</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=18811</Reference>
     </References>
@@ -9154,12 +9177,14 @@
   </UADataType>
   <UADataType NodeId="i=18813" BrowseName="Frame" IsAbstract="true">
     <DisplayName>Frame</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment11/12.30</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=18814" BrowseName="3DFrame" SymbolicName="ThreeDFrame">
     <DisplayName>3DFrame</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment11/12.31</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=18813</Reference>
     </References>
@@ -13795,6 +13820,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=17589" BrowseName="DictionaryEntryType" IsAbstract="true">
     <DisplayName>DictionaryEntryType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment5/G.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=17590</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
@@ -13810,6 +13836,7 @@
   </UAObject>
   <UAObjectType NodeId="i=17591" BrowseName="DictionaryFolderType">
     <DisplayName>DictionaryFolderType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment5/G.2.4</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=17592</Reference>
       <Reference ReferenceType="HasComponent">i=17593</Reference>
@@ -13834,6 +13861,7 @@
   </UAObject>
   <UAObject NodeId="i=17594" BrowseName="Dictionaries">
     <DisplayName>Dictionaries</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment5/G.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2253</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=17591</Reference>
@@ -13841,6 +13869,7 @@
   </UAObject>
   <UAReferenceType NodeId="i=17597" BrowseName="HasDictionaryEntry">
     <DisplayName>HasDictionaryEntry</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment5/G.2.5</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -13848,24 +13877,28 @@
   </UAReferenceType>
   <UAObjectType NodeId="i=17598" BrowseName="IrdiDictionaryEntryType">
     <DisplayName>IrdiDictionaryEntryType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment5/G.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=17589</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=17600" BrowseName="UriDictionaryEntryType">
     <DisplayName>UriDictionaryEntryType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment5/G.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=17589</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=17602" BrowseName="BaseInterfaceType" IsAbstract="true">
     <DisplayName>BaseInterfaceType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment7/6.9</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
   <UAObject NodeId="i=17708" BrowseName="InterfaceTypes">
     <DisplayName>InterfaceTypes</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment7/8.2.11</Documentation>
     <References>
       <Reference ReferenceType="Organizes">i=17602</Reference>
       <Reference ReferenceType="Organizes" IsForward="false">i=86</Reference>
@@ -13874,6 +13907,7 @@
   </UAObject>
   <UAReferenceType NodeId="i=17603" BrowseName="HasInterface">
     <DisplayName>HasInterface</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment7/11.20</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -13881,6 +13915,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=17604" BrowseName="HasAddIn">
     <DisplayName>HasAddIn</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment7/11.21</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -13913,7 +13948,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=15318" BrowseName="BaseAnalogType" DataType="Number" ValueRank="-2">
     <DisplayName>BaseAnalogType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part8/5.3.2/#5.3.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment1/5.3.2/#5.3.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=17567</Reference>
       <Reference ReferenceType="HasProperty">i=17568</Reference>
@@ -13947,7 +13982,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=2368" BrowseName="AnalogItemType" DataType="Number" ValueRank="-2">
     <DisplayName>AnalogItemType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part8/5.3.2/#5.3.2.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment1/5.3.2/#5.3.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=2369</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15318</Reference>
@@ -13963,7 +13998,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=17497" BrowseName="AnalogUnitType" DataType="Number" ValueRank="-2">
     <DisplayName>AnalogUnitType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part8/5.3.2/#5.3.2.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment1/5.3.2/#5.3.2.4</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=17502</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15318</Reference>
@@ -41834,7 +41869,7 @@
   </UADataType>
   <UADataType NodeId="i=586" BrowseName="ContentFilter">
     <DisplayName>ContentFilter</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part4/7.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment2/B.6.7</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -42558,7 +42593,7 @@
   </UADataType>
   <UADataType NodeId="i=704" BrowseName="CallMethodRequest" Purpose="ServicesOnly">
     <DisplayName>CallMethodRequest</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part4/5.11.2/#5.11.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment3/5.7.3/#5.11.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -42570,7 +42605,7 @@
   </UADataType>
   <UADataType NodeId="i=707" BrowseName="CallMethodResult" Purpose="ServicesOnly">
     <DisplayName>CallMethodResult</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part4/5.11.2/#5.11.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment3/5.7.3/#5.11.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -42583,7 +42618,7 @@
   </UADataType>
   <UADataType NodeId="i=710" BrowseName="CallRequest" Purpose="ServicesOnly">
     <DisplayName>CallRequest</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part4/5.11.2/#5.11.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment3/5.7.3/#5.11.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -42594,7 +42629,7 @@
   </UADataType>
   <UADataType NodeId="i=713" BrowseName="CallResponse" Purpose="ServicesOnly">
     <DisplayName>CallResponse</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part4/5.11.2/#5.11.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment3/5.7.3/#5.11.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
