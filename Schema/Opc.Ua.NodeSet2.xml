@@ -25823,7 +25823,6 @@
       <Reference ReferenceType="HasProperty">i=18165</Reference>
       <Reference ReferenceType="HasProperty">i=18004</Reference>
       <Reference ReferenceType="HasProperty">i=18005</Reference>
-      <Reference ReferenceType="HasComponent">i=17534</Reference>
       <Reference ReferenceType="HasComponent">i=18006</Reference>
       <Reference ReferenceType="HasComponent">i=18008</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
@@ -25860,99 +25859,6 @@
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=18001</Reference>
     </References>
-  </UAVariable>
-  <UAMethod NodeId="i=17534" BrowseName="GetEncryptingKey" ParentNodeId="i=18001">
-    <DisplayName>GetEncryptingKey</DisplayName>
-    <References>
-      <Reference ReferenceType="HasProperty">i=17535</Reference>
-      <Reference ReferenceType="HasProperty">i=17536</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">i=18001</Reference>
-    </References>
-  </UAMethod>
-  <UAVariable NodeId="i=17535" BrowseName="InputArguments" ParentNodeId="i=17534" DataType="i=296" ValueRank="1" ArrayDimensions="0">
-    <DisplayName>InputArguments</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=17534</Reference>
-    </References>
-    <Value>
-      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CredentialId</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>RequestedSecurityPolicyUri</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-      </ListOfExtensionObject>
-    </Value>
-  </UAVariable>
-  <UAVariable NodeId="i=17536" BrowseName="OutputArguments" ParentNodeId="i=17534" DataType="i=296" ValueRank="1" ArrayDimensions="0">
-    <DisplayName>OutputArguments</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=17534</Reference>
-    </References>
-    <Value>
-      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>PublicKey</Name>
-              <DataType>
-                <Identifier>i=15</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>RevisedSecurityPolicyUri</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-      </ListOfExtensionObject>
-    </Value>
   </UAVariable>
   <UAMethod NodeId="i=18006" BrowseName="UpdateCredential" ParentNodeId="i=18001">
     <DisplayName>UpdateCredential</DisplayName>

@@ -414,7 +414,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="i=47" BrowseName="HasComponent">
     <DisplayName>HasComponent</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part5/11.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment3/11.7</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=44</Reference>
     </References>
@@ -26156,7 +26156,6 @@
       <Reference ReferenceType="HasProperty">i=18165</Reference>
       <Reference ReferenceType="HasProperty">i=18004</Reference>
       <Reference ReferenceType="HasProperty">i=18005</Reference>
-      <Reference ReferenceType="HasComponent">i=17534</Reference>
       <Reference ReferenceType="HasComponent">i=18006</Reference>
       <Reference ReferenceType="HasComponent">i=18008</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
@@ -26193,99 +26192,6 @@
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=18001</Reference>
     </References>
-  </UAVariable>
-  <UAMethod NodeId="i=17534" BrowseName="GetEncryptingKey" ParentNodeId="i=18001">
-    <DisplayName>GetEncryptingKey</DisplayName>
-    <References>
-      <Reference ReferenceType="HasProperty">i=17535</Reference>
-      <Reference ReferenceType="HasProperty">i=17536</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">i=18001</Reference>
-    </References>
-  </UAMethod>
-  <UAVariable NodeId="i=17535" BrowseName="InputArguments" ParentNodeId="i=17534" DataType="i=296" ValueRank="1" ArrayDimensions="0">
-    <DisplayName>InputArguments</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=17534</Reference>
-    </References>
-    <Value>
-      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CredentialId</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>RequestedSecurityPolicyUri</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-      </ListOfExtensionObject>
-    </Value>
-  </UAVariable>
-  <UAVariable NodeId="i=17536" BrowseName="OutputArguments" ParentNodeId="i=17534" DataType="i=296" ValueRank="1" ArrayDimensions="0">
-    <DisplayName>OutputArguments</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=17534</Reference>
-    </References>
-    <Value>
-      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>PublicKey</Name>
-              <DataType>
-                <Identifier>i=15</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>RevisedSecurityPolicyUri</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-      </ListOfExtensionObject>
-    </Value>
   </UAVariable>
   <UAMethod NodeId="i=18006" BrowseName="UpdateCredential" ParentNodeId="i=18001">
     <DisplayName>UpdateCredential</DisplayName>
@@ -26717,6 +26623,7 @@
   </UADataType>
   <UADataType NodeId="i=15534" BrowseName="DataTypeSchemaHeader" IsAbstract="true">
     <DisplayName>DataTypeSchemaHeader</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/A.1.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -26729,6 +26636,7 @@
   </UADataType>
   <UADataType NodeId="i=14525" BrowseName="DataTypeDescription" IsAbstract="true">
     <DisplayName>DataTypeDescription</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/A.1.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -26739,6 +26647,7 @@
   </UADataType>
   <UADataType NodeId="i=15487" BrowseName="StructureDescription">
     <DisplayName>StructureDescription</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/A.1.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=14525</Reference>
     </References>
@@ -26748,6 +26657,7 @@
   </UADataType>
   <UADataType NodeId="i=15488" BrowseName="EnumDescription">
     <DisplayName>EnumDescription</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/A.1.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=14525</Reference>
     </References>
@@ -26758,6 +26668,7 @@
   </UADataType>
   <UADataType NodeId="i=15005" BrowseName="SimpleTypeDescription">
     <DisplayName>SimpleTypeDescription</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/A.1.5</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=14525</Reference>
     </References>
@@ -26768,6 +26679,7 @@
   </UADataType>
   <UADataType NodeId="i=15006" BrowseName="UABinaryFileDataType">
     <DisplayName>UABinaryFileDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/A.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15534</Reference>
     </References>
@@ -26779,6 +26691,7 @@
   </UADataType>
   <UADataType NodeId="i=14647" BrowseName="PubSubState">
     <DisplayName>PubSubState</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=14648</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -26824,6 +26737,7 @@
   </UAVariable>
   <UADataType NodeId="i=14523" BrowseName="DataSetMetaDataType">
     <DisplayName>DataSetMetaDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.2/#6.2.2.1.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15534</Reference>
     </References>
@@ -26837,6 +26751,7 @@
   </UADataType>
   <UADataType NodeId="i=14524" BrowseName="FieldMetaData">
     <DisplayName>FieldMetaData</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.2/#6.2.2.1.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -26855,6 +26770,7 @@
   </UADataType>
   <UADataType NodeId="i=15904" BrowseName="DataSetFieldFlags">
     <DisplayName>DataSetFieldFlags</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.2/#6.2.2.1.4</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=15577</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
@@ -26882,6 +26798,7 @@
   </UAVariable>
   <UADataType NodeId="i=14593" BrowseName="ConfigurationVersionDataType">
     <DisplayName>ConfigurationVersionDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.2/#6.2.2.1.5</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -26892,6 +26809,7 @@
   </UADataType>
   <UADataType NodeId="i=15578" BrowseName="PublishedDataSetDataType">
     <DisplayName>PublishedDataSetDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.2/#6.2.2.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -26905,12 +26823,14 @@
   </UADataType>
   <UADataType NodeId="i=15580" BrowseName="PublishedDataSetSourceDataType" IsAbstract="true">
     <DisplayName>PublishedDataSetSourceDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.2/#6.2.2.5</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=14273" BrowseName="PublishedVariableDataType">
     <DisplayName>PublishedVariableDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.2/#6.2.2.6.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -26927,6 +26847,7 @@
   </UADataType>
   <UADataType NodeId="i=15581" BrowseName="PublishedDataItemsDataType">
     <DisplayName>PublishedDataItemsDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.2/#6.2.2.6.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15580</Reference>
     </References>
@@ -26936,6 +26857,7 @@
   </UADataType>
   <UADataType NodeId="i=15582" BrowseName="PublishedEventsDataType">
     <DisplayName>PublishedEventsDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.2/#6.2.2.7.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15580</Reference>
     </References>
@@ -26947,6 +26869,7 @@
   </UADataType>
   <UADataType NodeId="i=15583" BrowseName="DataSetFieldContentMask">
     <DisplayName>DataSetFieldContentMask</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.3/#6.2.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=15584</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
@@ -27004,6 +26927,7 @@
   </UAVariable>
   <UADataType NodeId="i=15597" BrowseName="DataSetWriterDataType">
     <DisplayName>DataSetWriterDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.3/#6.2.3.5.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -27021,18 +26945,21 @@
   </UADataType>
   <UADataType NodeId="i=15598" BrowseName="DataSetWriterTransportDataType" IsAbstract="true">
     <DisplayName>DataSetWriterTransportDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.3/#6.2.3.5.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=15605" BrowseName="DataSetWriterMessageDataType" IsAbstract="true">
     <DisplayName>DataSetWriterMessageDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.3/#6.2.3.5.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=15609" BrowseName="PubSubGroupDataType" IsAbstract="true">
     <DisplayName>PubSubGroupDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.4/#6.2.4.7</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -27048,6 +26975,7 @@
   </UADataType>
   <UADataType NodeId="i=15480" BrowseName="WriterGroupDataType">
     <DisplayName>WriterGroupDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.5/#6.2.5.6.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15609</Reference>
     </References>
@@ -27065,18 +26993,21 @@
   </UADataType>
   <UADataType NodeId="i=15611" BrowseName="WriterGroupTransportDataType" IsAbstract="true">
     <DisplayName>WriterGroupTransportDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.5/#6.2.5.6.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=15616" BrowseName="WriterGroupMessageDataType" IsAbstract="true">
     <DisplayName>WriterGroupMessageDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.5/#6.2.5.6.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=15617" BrowseName="PubSubConnectionDataType">
     <DisplayName>PubSubConnectionDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.6/#6.2.6.5.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -27094,12 +27025,14 @@
   </UADataType>
   <UADataType NodeId="i=15618" BrowseName="ConnectionTransportDataType" IsAbstract="true">
     <DisplayName>ConnectionTransportDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.6/#6.2.6.5.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=15502" BrowseName="NetworkAddressDataType" IsAbstract="true">
     <DisplayName>NetworkAddressDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.6/#6.2.6.5.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -27109,6 +27042,7 @@
   </UADataType>
   <UADataType NodeId="i=15510" BrowseName="NetworkAddressUrlDataType">
     <DisplayName>NetworkAddressUrlDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.6/#6.2.6.5.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15502</Reference>
     </References>
@@ -27118,6 +27052,7 @@
   </UADataType>
   <UADataType NodeId="i=15520" BrowseName="ReaderGroupDataType">
     <DisplayName>ReaderGroupDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.7/#6.2.7.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15609</Reference>
     </References>
@@ -27129,18 +27064,21 @@
   </UADataType>
   <UADataType NodeId="i=15621" BrowseName="ReaderGroupTransportDataType" IsAbstract="true">
     <DisplayName>ReaderGroupTransportDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.7/#6.2.7.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=15622" BrowseName="ReaderGroupMessageDataType" IsAbstract="true">
     <DisplayName>ReaderGroupMessageDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.7/#6.2.7.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=15623" BrowseName="DataSetReaderDataType">
     <DisplayName>DataSetReaderDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.8/#6.2.8.11.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -27166,24 +27104,28 @@
   </UADataType>
   <UADataType NodeId="i=15628" BrowseName="DataSetReaderTransportDataType" IsAbstract="true">
     <DisplayName>DataSetReaderTransportDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.8/#6.2.8.11.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=15629" BrowseName="DataSetReaderMessageDataType" IsAbstract="true">
     <DisplayName>DataSetReaderMessageDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.8/#6.2.8.11.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=15630" BrowseName="SubscribedDataSetDataType" IsAbstract="true">
     <DisplayName>SubscribedDataSetDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.9/#6.2.9.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="i=15631" BrowseName="TargetVariablesDataType">
     <DisplayName>TargetVariablesDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.9/#6.2.9.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15630</Reference>
     </References>
@@ -27193,6 +27135,7 @@
   </UADataType>
   <UADataType NodeId="i=14744" BrowseName="FieldTargetDataType">
     <DisplayName>FieldTargetDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.9/#6.2.9.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -27208,6 +27151,7 @@
   </UADataType>
   <UADataType NodeId="i=15874" BrowseName="OverrideValueHandling">
     <DisplayName>OverrideValueHandling</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.9/#6.2.9.2.4</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=15875</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -27247,6 +27191,7 @@
   </UAVariable>
   <UADataType NodeId="i=15635" BrowseName="SubscribedDataSetMirrorDataType">
     <DisplayName>SubscribedDataSetMirrorDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.9/#6.2.9.3.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15630</Reference>
     </References>
@@ -27257,6 +27202,7 @@
   </UADataType>
   <UADataType NodeId="i=15530" BrowseName="PubSubConfigurationDataType">
     <DisplayName>PubSubConfigurationDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.2.11</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -27268,6 +27214,7 @@
   </UADataType>
   <UADataType NodeId="i=20408" BrowseName="DataSetOrderingType">
     <DisplayName>DataSetOrderingType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.3.1/#6.3.1.1.3</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=15641</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -27307,6 +27254,7 @@
   </UAVariable>
   <UADataType NodeId="i=15642" BrowseName="UadpNetworkMessageContentMask">
     <DisplayName>UadpNetworkMessageContentMask</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.3.1/#6.3.1.1.4</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=15643</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
@@ -27394,6 +27342,7 @@
   </UAVariable>
   <UADataType NodeId="i=15645" BrowseName="UadpWriterGroupMessageDataType">
     <DisplayName>UadpWriterGroupMessageDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.3.1/#6.3.1.1.7</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15616</Reference>
     </References>
@@ -27407,6 +27356,7 @@
   </UADataType>
   <UADataType NodeId="i=15646" BrowseName="UadpDataSetMessageContentMask">
     <DisplayName>UadpDataSetMessageContentMask</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.3.1/#6.3.1.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=15647</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
@@ -27464,6 +27414,7 @@
   </UAVariable>
   <UADataType NodeId="i=15652" BrowseName="UadpDataSetWriterMessageDataType">
     <DisplayName>UadpDataSetWriterMessageDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.3.1/#6.3.1.2.6</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15605</Reference>
     </References>
@@ -27476,6 +27427,7 @@
   </UADataType>
   <UADataType NodeId="i=15653" BrowseName="UadpDataSetReaderMessageDataType">
     <DisplayName>UadpDataSetReaderMessageDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.3.1/#6.3.1.3.10</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15629</Reference>
     </References>
@@ -27493,6 +27445,7 @@
   </UADataType>
   <UADataType NodeId="i=15654" BrowseName="JsonNetworkMessageContentMask">
     <DisplayName>JsonNetworkMessageContentMask</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.3.2/#6.3.2.1.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=15655</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
@@ -27550,6 +27503,7 @@
   </UAVariable>
   <UADataType NodeId="i=15657" BrowseName="JsonWriterGroupMessageDataType">
     <DisplayName>JsonWriterGroupMessageDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.3.2/#6.3.2.1.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15616</Reference>
     </References>
@@ -27559,6 +27513,7 @@
   </UADataType>
   <UADataType NodeId="i=15658" BrowseName="JsonDataSetMessageContentMask">
     <DisplayName>JsonDataSetMessageContentMask</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.3.2/#6.3.2.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=15659</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
@@ -27610,6 +27565,7 @@
   </UAVariable>
   <UADataType NodeId="i=15664" BrowseName="JsonDataSetWriterMessageDataType">
     <DisplayName>JsonDataSetWriterMessageDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.3.2/#6.3.2.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15605</Reference>
     </References>
@@ -27619,6 +27575,7 @@
   </UADataType>
   <UADataType NodeId="i=15665" BrowseName="JsonDataSetReaderMessageDataType">
     <DisplayName>JsonDataSetReaderMessageDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.3.2/#6.3.2.3.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15629</Reference>
     </References>
@@ -27629,6 +27586,7 @@
   </UADataType>
   <UADataType NodeId="i=17467" BrowseName="DatagramConnectionTransportDataType">
     <DisplayName>DatagramConnectionTransportDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.4.1/#6.4.1.1.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15618</Reference>
     </References>
@@ -27638,6 +27596,7 @@
   </UADataType>
   <UADataType NodeId="i=15532" BrowseName="DatagramWriterGroupTransportDataType">
     <DisplayName>DatagramWriterGroupTransportDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.4.1/#6.4.1.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15611</Reference>
     </References>
@@ -27648,6 +27607,7 @@
   </UADataType>
   <UADataType NodeId="i=15007" BrowseName="BrokerConnectionTransportDataType">
     <DisplayName>BrokerConnectionTransportDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.4.2/#6.4.2.1.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15618</Reference>
     </References>
@@ -27658,6 +27618,7 @@
   </UADataType>
   <UADataType NodeId="i=15008" BrowseName="BrokerTransportQualityOfService">
     <DisplayName>BrokerTransportQualityOfService</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.4.2/#6.4.2.2.5</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=15009</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -27709,6 +27670,7 @@
   </UAVariable>
   <UADataType NodeId="i=15667" BrowseName="BrokerWriterGroupTransportDataType">
     <DisplayName>BrokerWriterGroupTransportDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.4.2/#6.4.2.2.6</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15611</Reference>
     </References>
@@ -27721,6 +27683,7 @@
   </UADataType>
   <UADataType NodeId="i=15669" BrowseName="BrokerDataSetWriterTransportDataType">
     <DisplayName>BrokerDataSetWriterTransportDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.4.2/#6.4.2.3.7</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15598</Reference>
     </References>
@@ -27735,6 +27698,7 @@
   </UADataType>
   <UADataType NodeId="i=15670" BrowseName="BrokerDataSetReaderTransportDataType">
     <DisplayName>BrokerDataSetReaderTransportDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/6.4.2/#6.4.2.4.6</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15628</Reference>
     </References>
@@ -27748,6 +27712,7 @@
   </UADataType>
   <UAObjectType NodeId="i=15906" BrowseName="PubSubKeyServiceType">
     <DisplayName>PubSubKeyServiceType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/8.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=15907</Reference>
       <Reference ReferenceType="HasComponent">i=15910</Reference>
@@ -28158,6 +28123,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=15452" BrowseName="SecurityGroupFolderType">
     <DisplayName>SecurityGroupFolderType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/8.7</Documentation>
     <References>
       <Reference ReferenceType="Organizes">i=15453</Reference>
       <Reference ReferenceType="HasComponent">i=15459</Reference>
@@ -28577,6 +28543,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=15471" BrowseName="SecurityGroupType">
     <DisplayName>SecurityGroupType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/8.6</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=15472</Reference>
       <Reference ReferenceType="HasProperty">i=15046</Reference>
@@ -28628,6 +28595,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=14416" BrowseName="PublishSubscribeType">
     <DisplayName>PublishSubscribeType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.3/#9.1.3.2</Documentation>
     <References>
       <Reference ReferenceType="i=14476">i=14417</Reference>
       <Reference ReferenceType="HasComponent">i=17296</Reference>
@@ -29449,6 +29417,7 @@
   </UAVariable>
   <UAObject NodeId="i=14443" BrowseName="PublishSubscribe">
     <DisplayName>PublishSubscribe</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/8.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=15215</Reference>
       <Reference ReferenceType="HasComponent">i=15440</Reference>
@@ -29954,6 +29923,7 @@
   </UAObject>
   <UAObject NodeId="i=17405" BrowseName="Status" ParentNodeId="i=14443">
     <DisplayName>Status</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.10/#9.1.10.4</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=17406</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=14643</Reference>
@@ -30390,6 +30360,7 @@
   </UAVariable>
   <UAReferenceType NodeId="i=14476" BrowseName="HasPubSubConnection">
     <DisplayName>HasPubSubConnection</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.3/#9.1.3.6</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -30397,6 +30368,7 @@
   </UAReferenceType>
   <UAObjectType NodeId="i=14509" BrowseName="PublishedDataSetType">
     <DisplayName>PublishedDataSetType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.4/#9.1.4.2.1</Documentation>
     <References>
       <Reference ReferenceType="i=14936">i=15222</Reference>
       <Reference ReferenceType="HasProperty">i=14519</Reference>
@@ -30608,6 +30580,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=15489" BrowseName="ExtensionFieldsType">
     <DisplayName>ExtensionFieldsType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.4/#9.1.4.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=15490</Reference>
       <Reference ReferenceType="HasComponent">i=15491</Reference>
@@ -30738,6 +30711,7 @@
   </UAVariable>
   <UAReferenceType NodeId="i=14936" BrowseName="DataSetToWriter">
     <DisplayName>DataSetToWriter</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.4/#9.1.4.2.5</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=33</Reference>
     </References>
@@ -30745,6 +30719,7 @@
   </UAReferenceType>
   <UAObjectType NodeId="i=14534" BrowseName="PublishedDataItemsType">
     <DisplayName>PublishedDataItemsType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.4/#9.1.4.3.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=14548</Reference>
       <Reference ReferenceType="HasComponent">i=14555</Reference>
@@ -30990,6 +30965,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=14572" BrowseName="PublishedEventsType">
     <DisplayName>PublishedEventsType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.4/#9.1.4.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=14586</Reference>
       <Reference ReferenceType="HasProperty">i=14587</Reference>
@@ -31138,6 +31114,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=14477" BrowseName="DataSetFolderType">
     <DisplayName>DataSetFolderType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.4/#9.1.4.5.1</Documentation>
     <References>
       <Reference ReferenceType="Organizes">i=14478</Reference>
       <Reference ReferenceType="HasComponent">i=14487</Reference>
@@ -32544,6 +32521,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=14209" BrowseName="PubSubConnectionType">
     <DisplayName>PubSubConnectionType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.5/#9.1.5.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=14595</Reference>
       <Reference ReferenceType="HasComponent">i=17306</Reference>
@@ -33364,12 +33342,14 @@
   </UAVariable>
   <UAObjectType NodeId="i=17721" BrowseName="ConnectionTransportType" IsAbstract="true">
     <DisplayName>ConnectionTransportType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.5/#9.1.5.6</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=14232" BrowseName="PubSubGroupType" IsAbstract="true">
     <DisplayName>PubSubGroupType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.6/#9.1.6.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=15926</Reference>
       <Reference ReferenceType="HasProperty">i=15927</Reference>
@@ -33439,6 +33419,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=17725" BrowseName="WriterGroupType">
     <DisplayName>WriterGroupType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.6/#9.1.6.3</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=17736</Reference>
       <Reference ReferenceType="HasProperty">i=17737</Reference>
@@ -34216,6 +34197,7 @@
   </UAVariable>
   <UAReferenceType NodeId="i=15296" BrowseName="HasDataSetWriter">
     <DisplayName>HasDataSetWriter</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.6/#9.1.6.6</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -34230,18 +34212,21 @@
   </UAReferenceType>
   <UAObjectType NodeId="i=17997" BrowseName="WriterGroupTransportType" IsAbstract="true">
     <DisplayName>WriterGroupTransportType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.6/#9.1.6.7</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=17998" BrowseName="WriterGroupMessageType" IsAbstract="true">
     <DisplayName>WriterGroupMessageType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.6/#9.1.6.8</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=17999" BrowseName="ReaderGroupType">
     <DisplayName>ReaderGroupType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.6/#9.1.6.9</Documentation>
     <References>
       <Reference ReferenceType="i=15297">i=18076</Reference>
       <Reference ReferenceType="HasComponent">i=21015</Reference>
@@ -34944,6 +34929,7 @@
   </UAVariable>
   <UAReferenceType NodeId="i=15297" BrowseName="HasDataSetReader">
     <DisplayName>HasDataSetReader</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.6/#9.1.6.12</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -34958,18 +34944,21 @@
   </UAReferenceType>
   <UAObjectType NodeId="i=21090" BrowseName="ReaderGroupTransportType" IsAbstract="true">
     <DisplayName>ReaderGroupTransportType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.6/#9.1.6.13</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=21091" BrowseName="ReaderGroupMessageType" IsAbstract="true">
     <DisplayName>ReaderGroupMessageType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.6/#9.1.6.14</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=15298" BrowseName="DataSetWriterType">
     <DisplayName>DataSetWriterType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.7/#9.1.7.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=21092</Reference>
       <Reference ReferenceType="HasProperty">i=21093</Reference>
@@ -35467,18 +35456,21 @@
   </UAObject>
   <UAObjectType NodeId="i=15305" BrowseName="DataSetWriterTransportType" IsAbstract="true">
     <DisplayName>DataSetWriterTransportType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.7/#9.1.7.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=21096" BrowseName="DataSetWriterMessageType" IsAbstract="true">
     <DisplayName>DataSetWriterMessageType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.7/#9.1.7.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=15306" BrowseName="DataSetReaderType">
     <DisplayName>DataSetReaderType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.8/#9.1.8.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=21097</Reference>
       <Reference ReferenceType="HasProperty">i=21098</Reference>
@@ -36221,24 +36213,28 @@
   </UAVariable>
   <UAObjectType NodeId="i=15319" BrowseName="DataSetReaderTransportType" IsAbstract="true">
     <DisplayName>DataSetReaderTransportType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.8/#9.1.8.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=21104" BrowseName="DataSetReaderMessageType" IsAbstract="true">
     <DisplayName>DataSetReaderMessageType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.8/#9.1.8.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=15108" BrowseName="SubscribedDataSetType">
     <DisplayName>SubscribedDataSetType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.9/#9.1.9.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=15111" BrowseName="TargetVariablesType">
     <DisplayName>TargetVariablesType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.9/#9.1.9.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=15114</Reference>
       <Reference ReferenceType="HasComponent">i=15115</Reference>
@@ -36420,12 +36416,14 @@
   </UAVariable>
   <UAObjectType NodeId="i=15127" BrowseName="SubscribedDataSetMirrorType">
     <DisplayName>SubscribedDataSetMirrorType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.9/#9.1.9.5</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15108</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=14643" BrowseName="PubSubStatusType">
     <DisplayName>PubSubStatusType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.10/#9.1.10.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=14644</Reference>
       <Reference ReferenceType="HasComponent">i=14645</Reference>
@@ -36457,6 +36455,7 @@
   </UAMethod>
   <UAObjectType NodeId="i=19677" BrowseName="PubSubDiagnosticsType" IsAbstract="true">
     <DisplayName>PubSubDiagnosticsType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.11/#9.1.11.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=19678</Reference>
       <Reference ReferenceType="HasComponent">i=19679</Reference>
@@ -36831,6 +36830,7 @@
   </UAObject>
   <UADataType NodeId="i=19723" BrowseName="DiagnosticsLevel">
     <DisplayName>DiagnosticsLevel</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.11/#9.1.11.4</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=19724</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -36882,6 +36882,7 @@
   </UAVariable>
   <UAVariableType NodeId="i=19725" BrowseName="PubSubDiagnosticsCounterType" DataType="UInt32">
     <DisplayName>PubSubDiagnosticsCounterType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.11/#9.1.11.5</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=19726</Reference>
       <Reference ReferenceType="HasProperty">i=19727</Reference>
@@ -36924,6 +36925,7 @@
   </UAVariable>
   <UADataType NodeId="i=19730" BrowseName="PubSubDiagnosticsCounterClassification">
     <DisplayName>PubSubDiagnosticsCounterClassification</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.11/#9.1.11.6</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=19731</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -36957,6 +36959,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=19732" BrowseName="PubSubDiagnosticsRootType">
     <DisplayName>PubSubDiagnosticsRootType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.11/#9.1.11.7</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=19777</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=19677</Reference>
@@ -37056,6 +37059,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=19786" BrowseName="PubSubDiagnosticsConnectionType">
     <DisplayName>PubSubDiagnosticsConnectionType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.11/#9.1.11.8</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=19831</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=19677</Reference>
@@ -37092,6 +37096,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=19834" BrowseName="PubSubDiagnosticsWriterGroupType">
     <DisplayName>PubSubDiagnosticsWriterGroupType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.11/#9.1.11.9</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=19848</Reference>
       <Reference ReferenceType="HasComponent">i=19879</Reference>
@@ -37326,6 +37331,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=19903" BrowseName="PubSubDiagnosticsReaderGroupType">
     <DisplayName>PubSubDiagnosticsReaderGroupType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.11/#9.1.11.10</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=19917</Reference>
       <Reference ReferenceType="HasComponent">i=19948</Reference>
@@ -37518,6 +37524,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=19968" BrowseName="PubSubDiagnosticsDataSetWriterType">
     <DisplayName>PubSubDiagnosticsDataSetWriterType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.11/#9.1.11.11</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=19982</Reference>
       <Reference ReferenceType="HasComponent">i=20013</Reference>
@@ -37668,6 +37675,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=20027" BrowseName="PubSubDiagnosticsDataSetReaderType">
     <DisplayName>PubSubDiagnosticsDataSetReaderType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.11/#9.1.11.12</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=20041</Reference>
       <Reference ReferenceType="HasComponent">i=20072</Reference>
@@ -37902,6 +37910,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=15535" BrowseName="PubSubStatusEventType" IsAbstract="true">
     <DisplayName>PubSubStatusEventType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.12/#9.1.12.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=15545</Reference>
       <Reference ReferenceType="HasProperty">i=15546</Reference>
@@ -37935,6 +37944,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=15548" BrowseName="PubSubTransportLimitsExceedEventType" IsAbstract="true">
     <DisplayName>PubSubTransportLimitsExceedEventType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.12/#9.1.12.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=15561</Reference>
       <Reference ReferenceType="HasProperty">i=15562</Reference>
@@ -37959,6 +37969,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=15563" BrowseName="PubSubCommunicationFailureEventType" IsAbstract="true">
     <DisplayName>PubSubCommunicationFailureEventType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.1.12/#9.1.12.3</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=15576</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15535</Reference>
@@ -37974,6 +37985,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=21105" BrowseName="UadpWriterGroupMessageType">
     <DisplayName>UadpWriterGroupMessageType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.2.1/#9.2.1.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=21106</Reference>
       <Reference ReferenceType="HasProperty">i=21107</Reference>
@@ -38025,6 +38037,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=21111" BrowseName="UadpDataSetWriterMessageType">
     <DisplayName>UadpDataSetWriterMessageType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.2.1/#9.2.1.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=21112</Reference>
       <Reference ReferenceType="HasProperty">i=21113</Reference>
@@ -38067,6 +38080,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=21116" BrowseName="UadpDataSetReaderMessageType">
     <DisplayName>UadpDataSetReaderMessageType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.2.1/#9.2.1.3</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=21117</Reference>
       <Reference ReferenceType="HasProperty">i=21119</Reference>
@@ -38154,6 +38168,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=21126" BrowseName="JsonWriterGroupMessageType">
     <DisplayName>JsonWriterGroupMessageType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.2.2/#9.2.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=21127</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=17998</Reference>
@@ -38169,6 +38184,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=21128" BrowseName="JsonDataSetWriterMessageType">
     <DisplayName>JsonDataSetWriterMessageType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.2.2/#9.2.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=21129</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=21096</Reference>
@@ -38184,6 +38200,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=21130" BrowseName="JsonDataSetReaderMessageType">
     <DisplayName>JsonDataSetReaderMessageType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.2.2/#9.2.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=21131</Reference>
       <Reference ReferenceType="HasProperty">i=21132</Reference>
@@ -38208,6 +38225,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=15064" BrowseName="DatagramConnectionTransportType">
     <DisplayName>DatagramConnectionTransportType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.3.1/#9.3.1.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=15072</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=17721</Reference>
@@ -38241,6 +38259,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=21133" BrowseName="DatagramWriterGroupTransportType">
     <DisplayName>DatagramWriterGroupTransportType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.3.1/#9.3.1.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=21134</Reference>
       <Reference ReferenceType="HasProperty">i=21135</Reference>
@@ -38265,6 +38284,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=15155" BrowseName="BrokerConnectionTransportType">
     <DisplayName>BrokerConnectionTransportType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.3.2/#9.3.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=15156</Reference>
       <Reference ReferenceType="HasProperty">i=15178</Reference>
@@ -38289,6 +38309,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=21136" BrowseName="BrokerWriterGroupTransportType">
     <DisplayName>BrokerWriterGroupTransportType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.3.2/#9.3.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=21137</Reference>
       <Reference ReferenceType="HasProperty">i=15246</Reference>
@@ -38331,6 +38352,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=21138" BrowseName="BrokerDataSetWriterTransportType">
     <DisplayName>BrokerDataSetWriterTransportType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.3.2/#9.3.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=21139</Reference>
       <Reference ReferenceType="HasProperty">i=21140</Reference>
@@ -38391,6 +38413,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=21142" BrowseName="BrokerDataSetReaderTransportType">
     <DisplayName>BrokerDataSetReaderTransportType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/9.3.2/#9.3.2.4</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=21143</Reference>
       <Reference ReferenceType="HasProperty">i=15334</Reference>
@@ -38442,6 +38465,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=21145" BrowseName="NetworkAddressType" IsAbstract="true">
     <DisplayName>NetworkAddressType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/A.3.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=21146</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
@@ -38466,6 +38490,7 @@
   </UAVariable>
   <UAObjectType NodeId="i=21147" BrowseName="NetworkAddressUrlType">
     <DisplayName>NetworkAddressUrlType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part14/A.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=21149</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=21145</Reference>
