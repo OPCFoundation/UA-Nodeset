@@ -3421,6 +3421,52 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>0</uax:Value>
+              <uax:Description>
+                <uax:Text>This device functions normally.</uax:Text>
+              </uax:Description>
+              <uax:Name>NORMAL</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:Description>
+                <uax:Text>Malfunction of the device or any of its peripherals.</uax:Text>
+              </uax:Description>
+              <uax:Name>FAILURE</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:Description>
+                <uax:Text>Functional checks are currently performed.</uax:Text>
+              </uax:Description>
+              <uax:Name>CHECK_FUNCTION</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:Description>
+                <uax:Text>The device is currently working outside of its specified range or that internal diagnoses indicate deviations from measured or set values.</uax:Text>
+              </uax:Description>
+              <uax:Name>OFF_SPEC</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>4</uax:Value>
+              <uax:Description>
+                <uax:Text>This element is working, but a maintenance operation is required.</uax:Text>
+              </uax:Description>
+              <uax:Name>MAINTENANCE_REQUIRED</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumStrings xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -4146,6 +4192,41 @@
     <uax:SuperTypeId>
       <uax:Identifier>ns=1;i=6522</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14798</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:StructureDefinition>
+          <uax:BaseDataType>
+            <uax:Identifier>ns=1;i=6522</uax:Identifier>
+          </uax:BaseDataType>
+          <uax:StructureType>Structure_0</uax:StructureType>
+          <uax:Fields>
+            <uax:StructureField>
+              <uax:Name>Status</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=6</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:MaxStringLength>0</uax:MaxStringLength>
+              <uax:IsOptional>false</uax:IsOptional>
+            </uax:StructureField>
+            <uax:StructureField>
+              <uax:Name>Diagnostics</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=25</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:MaxStringLength>0</uax:MaxStringLength>
+              <uax:IsOptional>false</uax:IsOptional>
+            </uax:StructureField>
+          </uax:Fields>
+        </uax:StructureDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
   </TransferResultErrorDataType>
   <TransferResultDataDataType xmlns="http://opcfoundation.org/UA/DI/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -4159,6 +4240,51 @@
     <uax:SuperTypeId>
       <uax:Identifier>ns=1;i=6522</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14798</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:StructureDefinition>
+          <uax:BaseDataType>
+            <uax:Identifier>ns=1;i=6522</uax:Identifier>
+          </uax:BaseDataType>
+          <uax:StructureType>Structure_0</uax:StructureType>
+          <uax:Fields>
+            <uax:StructureField>
+              <uax:Name>SequenceNumber</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=6</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:MaxStringLength>0</uax:MaxStringLength>
+              <uax:IsOptional>false</uax:IsOptional>
+            </uax:StructureField>
+            <uax:StructureField>
+              <uax:Name>EndOfResults</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=1</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:MaxStringLength>0</uax:MaxStringLength>
+              <uax:IsOptional>false</uax:IsOptional>
+            </uax:StructureField>
+            <uax:StructureField>
+              <uax:Name>ParameterDefs</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=6525</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:MaxStringLength>0</uax:MaxStringLength>
+              <uax:IsOptional>false</uax:IsOptional>
+            </uax:StructureField>
+          </uax:Fields>
+        </uax:StructureDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
   </TransferResultDataDataType>
   <ParameterResultDataType xmlns="http://opcfoundation.org/UA/DI/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -4172,6 +4298,51 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=22</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14798</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:StructureDefinition>
+          <uax:BaseDataType>
+            <uax:Identifier>i=22</uax:Identifier>
+          </uax:BaseDataType>
+          <uax:StructureType>Structure_0</uax:StructureType>
+          <uax:Fields>
+            <uax:StructureField>
+              <uax:Name>NodePath</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=20</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:MaxStringLength>0</uax:MaxStringLength>
+              <uax:IsOptional>false</uax:IsOptional>
+            </uax:StructureField>
+            <uax:StructureField>
+              <uax:Name>StatusCode</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=19</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:MaxStringLength>0</uax:MaxStringLength>
+              <uax:IsOptional>false</uax:IsOptional>
+            </uax:StructureField>
+            <uax:StructureField>
+              <uax:Name>Diagnostics</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=25</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:MaxStringLength>0</uax:MaxStringLength>
+              <uax:IsOptional>false</uax:IsOptional>
+            </uax:StructureField>
+          </uax:Fields>
+        </uax:StructureDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
   </ParameterResultDataType>
   <TransferServicesType xmlns="http://opcfoundation.org/UA/DI/">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
