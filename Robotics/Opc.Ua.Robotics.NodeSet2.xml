@@ -34,7 +34,7 @@
     <Uri>http://opcfoundation.org/UA/DI/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/Robotics/" Version="1.01.0" PublicationDate="2019-09-06T00:00:00Z">
+    <Model ModelUri="http://opcfoundation.org/UA/Robotics/" Version="1.01.1" PublicationDate="2020-01-09T00:00:00Z">
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2019-05-01T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.02" PublicationDate="2019-05-01T00:00:00Z" />
     </Model>
@@ -111,7 +111,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15011</Reference>
     </References>
     <Value>
-      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0.93</String>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1.01</String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=15091" BrowseName="NamespacePublicationDate" ParentNodeId="ns=1;i=15011" DataType="DateTime">
@@ -121,7 +121,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15011</Reference>
     </References>
     <Value>
-      <DateTime xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2019-01-23T00:00:00Z</DateTime>
+      <DateTime xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2020-01-09T00:00:00Z</DateTime>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=15114" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=15011" DataType="Boolean">

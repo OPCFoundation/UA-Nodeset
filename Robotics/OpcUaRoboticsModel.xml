@@ -9,7 +9,7 @@
 		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 		TargetNamespace="http://opcfoundation.org/UA/Robotics/"
 		TargetXmlNamespace="http://opcfoundation.org/UA/Robotics/"
-		TargetVersion="1.01.0"
+		TargetVersion="1.01.1"
 		TargetPublicationDate="2020-01-09T00:00:00Z"
 		xmlns="http://opcfoundation.org/UA/ModelDesign.xsd"
 		xsi:noNamespaceSchemaLocation=".\UA Model Design.xsd"> 
