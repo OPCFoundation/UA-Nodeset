@@ -71,6 +71,8 @@
 #define OpcUaId_ImageJPG 2002
 #define OpcUaId_ImagePNG 2003
 #define OpcUaId_AudioDataType 16307
+#define OpcUaId_CurrencyUnitType 23498
+#define OpcUaId_CurrencyUnit 23501
 #define OpcUaId_BitFieldMaskDataType 11737
 #define OpcUaId_KeyValuePair 14533
 #define OpcUaId_AdditionalParametersType 16313
@@ -1281,6 +1283,8 @@
 #define OpcUaId_Aliases 23470
 #define OpcUaId_Tags 23479
 #define OpcUaId_Topics 23488
+#define OpcUaId_CurrencyUnitType_Encoding_DefaultBinary 23507
+#define OpcUaId_CurrencyUnit_Encoding_DefaultBinary 23513
 #define OpcUaId_KeyValuePair_Encoding_DefaultBinary 14846
 #define OpcUaId_AdditionalParametersType_Encoding_DefaultBinary 17537
 #define OpcUaId_EphemeralKeyType_Encoding_DefaultBinary 17549
@@ -1577,6 +1581,8 @@
 #define OpcUaId_ProgramDiagnosticDataType_Encoding_DefaultBinary 896
 #define OpcUaId_ProgramDiagnostic2DataType_Encoding_DefaultBinary 15397
 #define OpcUaId_Annotation_Encoding_DefaultBinary 893
+#define OpcUaId_CurrencyUnitType_Encoding_DefaultXml 23520
+#define OpcUaId_CurrencyUnit_Encoding_DefaultXml 23521
 #define OpcUaId_KeyValuePair_Encoding_DefaultXml 14802
 #define OpcUaId_AdditionalParametersType_Encoding_DefaultXml 17541
 #define OpcUaId_EphemeralKeyType_Encoding_DefaultXml 17553
@@ -1873,6 +1879,8 @@
 #define OpcUaId_ProgramDiagnosticDataType_Encoding_DefaultXml 895
 #define OpcUaId_ProgramDiagnostic2DataType_Encoding_DefaultXml 15401
 #define OpcUaId_Annotation_Encoding_DefaultXml 892
+#define OpcUaId_CurrencyUnitType_Encoding_DefaultJson 23528
+#define OpcUaId_CurrencyUnit_Encoding_DefaultJson 23529
 #define OpcUaId_KeyValuePair_Encoding_DefaultJson 15041
 #define OpcUaId_AdditionalParametersType_Encoding_DefaultJson 17547
 #define OpcUaId_EphemeralKeyType_Encoding_DefaultJson 17557
@@ -6847,6 +6855,8 @@
 #define OpcUaId_OpcUa_BinarySchema 7617
 #define OpcUaId_OpcUa_BinarySchema_NamespaceUri 7619
 #define OpcUaId_OpcUa_BinarySchema_Deprecated 15037
+#define OpcUaId_OpcUa_BinarySchema_CurrencyUnitType 23514
+#define OpcUaId_OpcUa_BinarySchema_CurrencyUnit 23517
 #define OpcUaId_OpcUa_BinarySchema_KeyValuePair 14873
 #define OpcUaId_OpcUa_BinarySchema_AdditionalParametersType 17538
 #define OpcUaId_OpcUa_BinarySchema_EphemeralKeyType 17550
@@ -6980,6 +6990,8 @@
 #define OpcUaId_OpcUa_XmlSchema 8252
 #define OpcUaId_OpcUa_XmlSchema_NamespaceUri 8254
 #define OpcUaId_OpcUa_XmlSchema_Deprecated 15039
+#define OpcUaId_OpcUa_XmlSchema_CurrencyUnitType 23522
+#define OpcUaId_OpcUa_XmlSchema_CurrencyUnit 23525
 #define OpcUaId_OpcUa_XmlSchema_KeyValuePair 14829
 #define OpcUaId_OpcUa_XmlSchema_AdditionalParametersType 17542
 #define OpcUaId_OpcUa_XmlSchema_EphemeralKeyType 17554

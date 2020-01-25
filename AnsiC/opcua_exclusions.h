@@ -77,6 +77,8 @@
 /*============================================================================
 * DataType Exclusions
  *===========================================================================*/
+/* #define OPCUA_EXCLUDE_CurrencyUnitType */
+/* #define OPCUA_EXCLUDE_CurrencyUnit */
 /* #define OPCUA_EXCLUDE_KeyValuePair */
 /* #define OPCUA_EXCLUDE_AdditionalParametersType */
 /* #define OPCUA_EXCLUDE_EphemeralKeyType */

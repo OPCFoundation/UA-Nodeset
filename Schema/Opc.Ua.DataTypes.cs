@@ -244,6 +244,473 @@ namespace Opc.Ua
     #endif
     #endregion
 
+    #region CurrencyUnitType Class
+    #if (!OPCUA_EXCLUDE_CurrencyUnitType)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class CurrencyUnitType : IEncodeable
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public CurrencyUnitType()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+            m_numericCode = (short)0;
+            m_exponent = (sbyte)0;
+            m_alphabeticCode = null;
+            m_currency = null;
+        }
+        #endregion
+
+        #region Public Properties
+        /// <remarks />
+        [DataMember(Name = "NumericCode", IsRequired = false, Order = 1)]
+        public short NumericCode
+        {
+            get { return m_numericCode;  }
+            set { m_numericCode = value; }
+        }
+
+        /// <remarks />
+        [DataMember(Name = "Exponent", IsRequired = false, Order = 2)]
+        public sbyte Exponent
+        {
+            get { return m_exponent;  }
+            set { m_exponent = value; }
+        }
+
+        /// <remarks />
+        [DataMember(Name = "AlphabeticCode", IsRequired = false, Order = 3)]
+        public string AlphabeticCode
+        {
+            get { return m_alphabeticCode;  }
+            set { m_alphabeticCode = value; }
+        }
+
+        /// <remarks />
+        [DataMember(Name = "Currency", IsRequired = false, Order = 4)]
+        public LocalizedText Currency
+        {
+            get { return m_currency;  }
+            set { m_currency = value; }
+        }
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public virtual ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.CurrencyUnitType; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public virtual ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.CurrencyUnitType_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public virtual ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.CurrencyUnitType_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public virtual void Encode(IEncoder encoder)
+        {
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            encoder.WriteInt16("NumericCode", NumericCode);
+            encoder.WriteSByte("Exponent", Exponent);
+            encoder.WriteString("AlphabeticCode", AlphabeticCode);
+            encoder.WriteLocalizedText("Currency", Currency);
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public virtual void Decode(IDecoder decoder)
+        {
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+            NumericCode = decoder.ReadInt16("NumericCode");
+            Exponent = decoder.ReadSByte("Exponent");
+            AlphabeticCode = decoder.ReadString("AlphabeticCode");
+            Currency = decoder.ReadLocalizedText("Currency");
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public virtual bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            CurrencyUnitType value = encodeable as CurrencyUnitType;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+            if (!Utils.IsEqual(m_numericCode, value.m_numericCode)) return false;
+            if (!Utils.IsEqual(m_exponent, value.m_exponent)) return false;
+            if (!Utils.IsEqual(m_alphabeticCode, value.m_alphabeticCode)) return false;
+            if (!Utils.IsEqual(m_currency, value.m_currency)) return false;
+
+            return true;
+        }
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public virtual object Clone()
+        {
+            return (CurrencyUnitType)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CurrencyUnitType clone = (CurrencyUnitType)base.MemberwiseClone();
+
+            clone.m_numericCode = (short)Utils.Clone(this.m_numericCode);
+            clone.m_exponent = (sbyte)Utils.Clone(this.m_exponent);
+            clone.m_alphabeticCode = (string)Utils.Clone(this.m_alphabeticCode);
+            clone.m_currency = (LocalizedText)Utils.Clone(this.m_currency);
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        private short m_numericCode;
+        private sbyte m_exponent;
+        private string m_alphabeticCode;
+        private LocalizedText m_currency;
+        #endregion
+    }
+
+    #region CurrencyUnitTypeCollection Class
+    /// <summary>
+    /// A collection of CurrencyUnitType objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfCurrencyUnitType", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "CurrencyUnitType")]
+    #if !NET_STANDARD
+    public partial class CurrencyUnitTypeCollection : List<CurrencyUnitType>, ICloneable
+    #else
+    public partial class CurrencyUnitTypeCollection : List<CurrencyUnitType>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public CurrencyUnitTypeCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public CurrencyUnitTypeCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public CurrencyUnitTypeCollection(IEnumerable<CurrencyUnitType> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator CurrencyUnitTypeCollection(CurrencyUnitType[] values)
+        {
+            if (values != null)
+            {
+                return new CurrencyUnitTypeCollection(values);
+            }
+
+            return new CurrencyUnitTypeCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator CurrencyUnitType[](CurrencyUnitTypeCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (CurrencyUnitTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CurrencyUnitTypeCollection clone = new CurrencyUnitTypeCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((CurrencyUnitType)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
+    #endif
+    #endregion
+
+    #region CurrencyUnit Class
+    #if (!OPCUA_EXCLUDE_CurrencyUnit)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Namespaces.OpcUaXsd)]
+    public partial class CurrencyUnit : CurrencyUnitType
+    {
+        #region Constructors
+        /// <summary>
+        /// The default constructor.
+        /// </summary>
+        public CurrencyUnit()
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Called by the .NET framework during deserialization.
+        /// </summary>
+        [OnDeserializing]
+        private void Initialize(StreamingContext context)
+        {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize()
+        {
+        }
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region IEncodeable Members
+        /// <summary cref="IEncodeable.TypeId" />
+        public override ExpandedNodeId TypeId
+        {
+            get { return DataTypeIds.CurrencyUnit; }
+        }
+
+        /// <summary cref="IEncodeable.BinaryEncodingId" />
+        public override ExpandedNodeId BinaryEncodingId
+        {
+            get { return ObjectIds.CurrencyUnit_Encoding_DefaultBinary; }
+        }
+
+        /// <summary cref="IEncodeable.XmlEncodingId" />
+        public override ExpandedNodeId XmlEncodingId
+        {
+            get { return ObjectIds.CurrencyUnit_Encoding_DefaultXml; }
+        }
+
+        /// <summary cref="IEncodeable.Encode(IEncoder)" />
+        public override void Encode(IEncoder encoder)
+        {
+            base.Encode(encoder);
+
+            encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+
+            encoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.Decode(IDecoder)" />
+        public override void Decode(IDecoder decoder)
+        {
+            base.Decode(decoder);
+
+            decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
+
+
+            decoder.PopNamespace();
+        }
+
+        /// <summary cref="IEncodeable.IsEqual(IEncodeable)" />
+        public override bool IsEqual(IEncodeable encodeable)
+        {
+            if (Object.ReferenceEquals(this, encodeable))
+            {
+                return true;
+            }
+
+            CurrencyUnit value = encodeable as CurrencyUnit;
+
+            if (value == null)
+            {
+                return false;
+            }
+
+
+            return true;
+        }    
+
+        #if !NET_STANDARD
+        /// <summary cref="ICloneable.Clone" />
+        public override object Clone()
+        {
+            return (CurrencyUnit)this.MemberwiseClone();
+        }
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CurrencyUnit clone = (CurrencyUnit)base.MemberwiseClone();
+
+
+            return clone;
+        }
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+
+    #region CurrencyUnitCollection Class
+    /// <summary>
+    /// A collection of CurrencyUnit objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfCurrencyUnit", Namespace = Opc.Ua.Namespaces.OpcUaXsd, ItemName = "CurrencyUnit")]
+    #if !NET_STANDARD
+    public partial class CurrencyUnitCollection : List<CurrencyUnit>, ICloneable
+    #else
+    public partial class CurrencyUnitCollection : List<CurrencyUnit>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public CurrencyUnitCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public CurrencyUnitCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public CurrencyUnitCollection(IEnumerable<CurrencyUnit> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator CurrencyUnitCollection(CurrencyUnit[] values)
+        {
+            if (values != null)
+            {
+                return new CurrencyUnitCollection(values);
+            }
+
+            return new CurrencyUnitCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator CurrencyUnit[](CurrencyUnitCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (CurrencyUnitCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            CurrencyUnitCollection clone = new CurrencyUnitCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((CurrencyUnit)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
+    #endif
+    #endregion
+
     #region KeyValuePair Class
     #if (!OPCUA_EXCLUDE_KeyValuePair)
     /// <summary>

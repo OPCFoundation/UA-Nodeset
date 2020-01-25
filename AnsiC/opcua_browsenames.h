@@ -366,6 +366,8 @@
 #define OpcUa_BrowseName_CubeItemType "CubeItemType"
 #define OpcUa_BrowseName_CumulatedSessionCount "CumulatedSessionCount"
 #define OpcUa_BrowseName_CumulatedSubscriptionCount "CumulatedSubscriptionCount"
+#define OpcUa_BrowseName_CurrencyUnit "CurrencyUnit"
+#define OpcUa_BrowseName_CurrencyUnitType "CurrencyUnitType"
 #define OpcUa_BrowseName_CurrentAlarmRate "CurrentAlarmRate"
 #define OpcUa_BrowseName_CurrentKeepAliveCount "CurrentKeepAliveCount"
 #define OpcUa_BrowseName_CurrentLifetimeCount "CurrentLifetimeCount"
