@@ -90,7 +90,6 @@
 #define OpcUaId_OpenFileMode 11939
 #define OpcUaId_IdentityCriteriaType 15632
 #define OpcUaId_IdentityMappingRuleType 15634
-#define OpcUaId_CurrencyUnitType 23498
 #define OpcUaId_TrustListMasks 12552
 #define OpcUaId_TrustListDataType 12554
 #define OpcUaId_DecimalDataType 17861
@@ -1300,7 +1299,6 @@
 #define OpcUaId_Frame_Encoding_DefaultBinary 18822
 #define OpcUaId_ThreeDFrame_Encoding_DefaultBinary 18823
 #define OpcUaId_IdentityMappingRuleType_Encoding_DefaultBinary 15736
-#define OpcUaId_CurrencyUnitType_Encoding_DefaultBinary 23507
 #define OpcUaId_TrustListDataType_Encoding_DefaultBinary 12680
 #define OpcUaId_DecimalDataType_Encoding_DefaultBinary 17863
 #define OpcUaId_DataTypeSchemaHeader_Encoding_DefaultBinary 15676
@@ -1599,7 +1597,6 @@
 #define OpcUaId_Frame_Encoding_DefaultXml 18858
 #define OpcUaId_ThreeDFrame_Encoding_DefaultXml 18859
 #define OpcUaId_IdentityMappingRuleType_Encoding_DefaultXml 15728
-#define OpcUaId_CurrencyUnitType_Encoding_DefaultXml 23516
 #define OpcUaId_TrustListDataType_Encoding_DefaultXml 12676
 #define OpcUaId_DecimalDataType_Encoding_DefaultXml 17862
 #define OpcUaId_DataTypeSchemaHeader_Encoding_DefaultXml 15950
@@ -1898,7 +1895,6 @@
 #define OpcUaId_Frame_Encoding_DefaultJson 19071
 #define OpcUaId_ThreeDFrame_Encoding_DefaultJson 19072
 #define OpcUaId_IdentityMappingRuleType_Encoding_DefaultJson 15042
-#define OpcUaId_CurrencyUnitType_Encoding_DefaultJson 23520
 #define OpcUaId_TrustListDataType_Encoding_DefaultJson 15044
 #define OpcUaId_DecimalDataType_Encoding_DefaultJson 15045
 #define OpcUaId_DataTypeSchemaHeader_Encoding_DefaultJson 16151
@@ -3387,7 +3383,6 @@
 #define OpcUaId_WellKnownRole_SecurityAdmin_RemoveApplication_InputArguments 16264
 #define OpcUaId_WellKnownRole_SecurityAdmin_AddEndpoint_InputArguments 16266
 #define OpcUaId_WellKnownRole_SecurityAdmin_RemoveEndpoint_InputArguments 16268
-#define OpcUaId_CurrencyUnit 23501
 #define OpcUaId_DataItemType_Definition 2366
 #define OpcUaId_DataItemType_ValuePrecision 2367
 #define OpcUaId_BaseAnalogType_InstrumentRange 17567
@@ -6876,7 +6871,6 @@
 #define OpcUaId_OpcUa_BinarySchema_Frame 18845
 #define OpcUaId_OpcUa_BinarySchema_ThreeDFrame 18848
 #define OpcUaId_OpcUa_BinarySchema_IdentityMappingRuleType 15738
-#define OpcUaId_OpcUa_BinarySchema_CurrencyUnitType 23513
 #define OpcUaId_OpcUa_BinarySchema_TrustListDataType 12681
 #define OpcUaId_OpcUa_BinarySchema_DataTypeSchemaHeader 15741
 #define OpcUaId_OpcUa_BinarySchema_DataTypeDescription 14855
@@ -7012,7 +7006,6 @@
 #define OpcUaId_OpcUa_XmlSchema_Frame 19058
 #define OpcUaId_OpcUa_XmlSchema_ThreeDFrame 19061
 #define OpcUaId_OpcUa_XmlSchema_IdentityMappingRuleType 15730
-#define OpcUaId_OpcUa_XmlSchema_CurrencyUnitType 23517
 #define OpcUaId_OpcUa_XmlSchema_TrustListDataType 12677
 #define OpcUaId_OpcUa_XmlSchema_DataTypeSchemaHeader 16027
 #define OpcUaId_OpcUa_XmlSchema_DataTypeDescription 14811
