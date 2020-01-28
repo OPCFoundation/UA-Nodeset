@@ -234,6 +234,20 @@
   <opc:OpaqueType Name="AudioDataType">
   </opc:OpaqueType>
 
+  <opc:StructuredType Name="CurrencyUnitType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="NumericCode" TypeName="opc:Int16" />
+    <opc:Field Name="Exponent" TypeName="opc:SByte" />
+    <opc:Field Name="AlphabeticCode" TypeName="opc:String" />
+    <opc:Field Name="Currency" TypeName="ua:LocalizedText" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="CurrencyUnit" BaseType="tns:CurrencyUnitType">
+    <opc:Field Name="NumericCode" TypeName="opc:Int16" SourceType="tns:CurrencyUnitType" />
+    <opc:Field Name="Exponent" TypeName="opc:SByte" SourceType="tns:CurrencyUnitType" />
+    <opc:Field Name="AlphabeticCode" TypeName="opc:String" SourceType="tns:CurrencyUnitType" />
+    <opc:Field Name="Currency" TypeName="ua:LocalizedText" SourceType="tns:CurrencyUnitType" />
+  </opc:StructuredType>
+
   <opc:OpaqueType Name="BitFieldMaskDataType">
   </opc:OpaqueType>
 
@@ -817,6 +831,12 @@
     <opc:EnumeratedValue Name="Information" Value="0" />
     <opc:EnumeratedValue Name="Error" Value="1" />
   </opc:EnumeratedType>
+
+  <opc:StructuredType Name="AliasNameDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="AliasName" TypeName="ua:QualifiedName" />
+    <opc:Field Name="NoOfReferencedNodes" TypeName="opc:Int32" />
+    <opc:Field Name="ReferencedNodes" TypeName="ua:ExpandedNodeId" LengthField="NoOfReferencedNodes" />
+  </opc:StructuredType>
 
   <opc:EnumeratedType Name="IdType" LengthInBits="32">
     <opc:EnumeratedValue Name="Numeric" Value="0" />
@@ -2232,6 +2252,11 @@
     <opc:Field Name="NoOfReqTimes" TypeName="opc:Int32" />
     <opc:Field Name="ReqTimes" TypeName="opc:DateTime" LengthField="NoOfReqTimes" />
     <opc:Field Name="UseSimpleBounds" TypeName="opc:Boolean" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="ReadAnnotationDataDetails" BaseType="tns:HistoryReadDetails">
+    <opc:Field Name="NoOfReqTimes" TypeName="opc:Int32" />
+    <opc:Field Name="ReqTimes" TypeName="opc:DateTime" LengthField="NoOfReqTimes" />
   </opc:StructuredType>
 
   <opc:StructuredType Name="HistoryData" BaseType="ua:ExtensionObject">

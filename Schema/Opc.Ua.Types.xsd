@@ -519,6 +519,40 @@
 
   <xs:element name="AudioDataType" type="xs:base64Binary" />
 
+  <xs:complexType name="CurrencyUnitType">
+    <xs:sequence>
+      <xs:element name="NumericCode" type="xs:short" minOccurs="0" />
+      <xs:element name="Exponent" type="xs:byte" minOccurs="0" />
+      <xs:element name="AlphabeticCode" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="Currency" type="ua:LocalizedText" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CurrencyUnitType" type="tns:CurrencyUnitType" />
+
+  <xs:complexType name="ListOfCurrencyUnitType">
+    <xs:sequence>
+      <xs:element name="CurrencyUnitType" type="tns:CurrencyUnitType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfCurrencyUnitType" type="tns:ListOfCurrencyUnitType" nillable="true"></xs:element>
+
+  <xs:complexType name="CurrencyUnit">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CurrencyUnitType">
+        <xs:sequence>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CurrencyUnit" type="tns:CurrencyUnit" />
+
+  <xs:complexType name="ListOfCurrencyUnit">
+    <xs:sequence>
+      <xs:element name="CurrencyUnit" type="tns:CurrencyUnit" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfCurrencyUnit" type="tns:ListOfCurrencyUnit" nillable="true"></xs:element>
+
   <xs:element name="BitFieldMaskDataType" type="xs:unsignedLong" />
 
   <xs:complexType name="KeyValuePair">
@@ -1852,6 +1886,21 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ListOfPubSubDiagnosticsCounterClassification" type="tns:ListOfPubSubDiagnosticsCounterClassification" nillable="true"></xs:element>
+
+  <xs:complexType name="AliasNameDataType">
+    <xs:sequence>
+      <xs:element name="AliasName" type="ua:QualifiedName" minOccurs="0" nillable="true" />
+      <xs:element name="ReferencedNodes" type="ua:ListOfExpandedNodeId" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AliasNameDataType" type="tns:AliasNameDataType" />
+
+  <xs:complexType name="ListOfAliasNameDataType">
+    <xs:sequence>
+      <xs:element name="AliasNameDataType" type="tns:AliasNameDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfAliasNameDataType" type="tns:ListOfAliasNameDataType" nillable="true"></xs:element>
 
   <xs:simpleType  name="IdType">
     <xs:restriction base="xs:string">
@@ -3817,6 +3866,17 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="ReadAtTimeDetails" type="tns:ReadAtTimeDetails" />
+
+  <xs:complexType name="ReadAnnotationDataDetails">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:HistoryReadDetails">
+        <xs:sequence>
+          <xs:element name="ReqTimes" type="ua:ListOfDateTime" minOccurs="0" nillable="true" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ReadAnnotationDataDetails" type="tns:ReadAnnotationDataDetails" />
 
   <xs:complexType name="HistoryData">
     <xs:sequence>

@@ -77,6 +77,8 @@
 /*============================================================================
 * DataType Exclusions
  *===========================================================================*/
+/* #define OPCUA_EXCLUDE_CurrencyUnitType */
+/* #define OPCUA_EXCLUDE_CurrencyUnit */
 /* #define OPCUA_EXCLUDE_KeyValuePair */
 /* #define OPCUA_EXCLUDE_AdditionalParametersType */
 /* #define OPCUA_EXCLUDE_EphemeralKeyType */
@@ -141,6 +143,7 @@
 /* #define OPCUA_EXCLUDE_BrokerWriterGroupTransportDataType */
 /* #define OPCUA_EXCLUDE_BrokerDataSetWriterTransportDataType */
 /* #define OPCUA_EXCLUDE_BrokerDataSetReaderTransportDataType */
+/* #define OPCUA_EXCLUDE_AliasNameDataType */
 /* #define OPCUA_EXCLUDE_RolePermissionType */
 /* #define OPCUA_EXCLUDE_DataTypeDefinition */
 /* #define OPCUA_EXCLUDE_StructureField */
@@ -232,6 +235,7 @@
 /* #define OPCUA_EXCLUDE_ReadRawModifiedDetails */
 /* #define OPCUA_EXCLUDE_ReadProcessedDetails */
 /* #define OPCUA_EXCLUDE_ReadAtTimeDetails */
+/* #define OPCUA_EXCLUDE_ReadAnnotationDataDetails */
 /* #define OPCUA_EXCLUDE_HistoryData */
 /* #define OPCUA_EXCLUDE_ModificationInfo */
 /* #define OPCUA_EXCLUDE_HistoryModifiedData */

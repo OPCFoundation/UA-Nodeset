@@ -128,7 +128,7 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6019</Reference>
         </References>
     </UAObjectType>
-    <UAVariable DataType="UInt16" ParentNodeId="ns=1;i=1007" NodeId="ns=1;i=6019" BrowseName="1:IOLinkEventCode" AccessLevel="3">
+    <UAVariable DataType="UInt16" ParentNodeId="ns=1;i=1007" NodeId="ns=1;i=6019" BrowseName="1:IOLinkEventCode">
         <DisplayName>IOLinkEventCode</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1007</Reference>
@@ -150,7 +150,7 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6020</Reference>
         </References>
     </UAObjectType>
-    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=1009" NodeId="ns=1;i=6020" BrowseName="1:Name" AccessLevel="3">
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=1009" NodeId="ns=1;i=6020" BrowseName="1:Name">
         <DisplayName>Name</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -179,7 +179,7 @@
             <Reference ReferenceType="HasSubtype" IsForward="false">i=2041</Reference>
         </References>
     </UAObjectType>
-    <UAVariable DataType="UInt16" ParentNodeId="ns=1;i=1003" NodeId="ns=1;i=6018" BrowseName="1:IOLinkEventCode" AccessLevel="3">
+    <UAVariable DataType="UInt16" ParentNodeId="ns=1;i=1003" NodeId="ns=1;i=6018" BrowseName="1:IOLinkEventCode">
         <DisplayName>IOLinkEventCode</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1003</Reference>
@@ -201,7 +201,7 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6205</Reference>
         </References>
     </UAObjectType>
-    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=1021" NodeId="ns=1;i=6205" BrowseName="1:Name" AccessLevel="3">
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=1021" NodeId="ns=1;i=6205" BrowseName="1:Name">
         <DisplayName>Name</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -224,7 +224,7 @@
             <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=1015</Reference>
         </References>
     </UAObjectType>
-    <UAVariable DataType="UInt16" ParentNodeId="ns=1;i=1005" NodeId="ns=1;i=6338" BrowseName="1:IOLinkEventCode" AccessLevel="3">
+    <UAVariable DataType="UInt16" ParentNodeId="ns=1;i=1005" NodeId="ns=1;i=6338" BrowseName="1:IOLinkEventCode">
         <DisplayName>IOLinkEventCode</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1005</Reference>
@@ -333,7 +333,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="DeviceHealthEnumeration" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6142" BrowseName="1:DeviceHealth">
+    <UAVariable DataType="DeviceHealthEnumeration" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6142" BrowseName="2:DeviceHealth">
         <DisplayName>DeviceHealth</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -1294,7 +1294,7 @@
             </ListOfExtensionObject>
         </Value>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6140" BrowseName="1:HardwareRevision" AccessLevel="3">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6140" BrowseName="2:HardwareRevision" AccessLevel="3">
         <DisplayName>HardwareRevision</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
@@ -1317,7 +1317,7 @@
             <Reference ReferenceType="Organizes">ns=1;i=6004</Reference>
         </References>
     </UAObject>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6029" BrowseName="2:SerialNumber" AccessLevel="3">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6029" BrowseName="2:SerialNumber">
         <DisplayName>SerialNumber</DisplayName>
         <Description>Identifier that uniquely identifies, within a manufacturer, a device instance</Description>
         <References>
@@ -1336,7 +1336,7 @@
             <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5001</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6129" BrowseName="1:Manufacturer" AccessLevel="3">
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6129" BrowseName="2:Manufacturer" AccessLevel="3">
         <DisplayName>Manufacturer</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1371,7 +1371,6 @@
         <Description>A method which belongs to the topology element.</Description>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5002</Reference>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasModellingRule">i=11510</Reference>
         </References>
     </UAMethod>
@@ -1383,7 +1382,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6139" BrowseName="1:Model" AccessLevel="3">
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6139" BrowseName="2:Model" AccessLevel="3">
         <DisplayName>Model</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1408,6 +1407,15 @@
             <Reference ReferenceType="HasComponent">ns=1;i=6026</Reference>
         </References>
     </UAObject>
+        <UAVariable SymbolicName="ParameterIdentifier" ParentNodeId="ns=1;i=5003" NodeId="ns=1;i=6017" BrowseName="2:&lt;ParameterIdentifier>">
+        <DisplayName>&lt;ParameterIdentifier></DisplayName>
+        <Description>A parameter which belongs to the topology element.</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=11510</Reference>
+        </References>
+    </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6009" BrowseName="1:ProductID">
         <DisplayName>ProductID</DisplayName>
         <References>
@@ -1440,7 +1448,7 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6141" BrowseName="1:SoftwareRevision" AccessLevel="3">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6141" BrowseName="2:SoftwareRevision" AccessLevel="3">
         <DisplayName>SoftwareRevision</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -1997,7 +2005,6 @@
         <Description>A method which belongs to the topology element.</Description>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5016</Reference>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasModellingRule">i=11510</Reference>
         </References>
     </UAMethod>
@@ -2930,7 +2937,6 @@
         <DisplayName>MethodIdentifier</DisplayName>
         <Description>A method which belongs to the topology element.</Description>
         <References>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasModellingRule">i=11510</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5051</Reference>
         </References>
@@ -3048,8 +3054,8 @@
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
         </References>
     </UAVariable>
-    <UAVariable ParentNodeId="ns=1;i=5052" NodeId="ns=1;i=6255" BrowseName="2:ParameterIdentifier">
-        <DisplayName>ParameterIdentifier</DisplayName>
+    <UAVariable ParentNodeId="ns=1;i=5052" NodeId="ns=1;i=6255" BrowseName="2:&lt;ParameterIdentifier>">
+        <DisplayName>&lt;ParameterIdentifier></DisplayName>
         <Description>A parameter which belongs to the topology element.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -3134,7 +3140,7 @@
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1014</Reference>
         </References>
     </UAObject>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=1014" NodeId="ns=1;i=6083" BrowseName="1:VendorURL" AccessLevel="3">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1014" NodeId="ns=1;i=6083" BrowseName="1:VendorURL">
         <DisplayName>VendorURL</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -3353,7 +3359,7 @@
                 </LocalizedText>
                 <LocalizedText>
                     <Locale>en</Locale>
-                    <Text>Power 2 (Port Class B)</Text>
+                    <Text>Power 2 (Port class B)</Text>
                 </LocalizedText>
             </ListOfLocalizedText>
         </Value>
@@ -4600,7 +4606,7 @@
             <Reference ReferenceType="Organizes">ns=1;i=6138</Reference>
         </References>
     </UAObject>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5033" NodeId="ns=1;i=6137" BrowseName="2:SerialNumber" AccessLevel="3">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5033" NodeId="ns=1;i=6137" BrowseName="2:SerialNumber">
         <DisplayName>SerialNumber</DisplayName>
         <Description>Identifier that uniquely identifies, within a manufacturer, a device instance</Description>
         <References>
@@ -4619,7 +4625,7 @@
             <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5035</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5033" NodeId="ns=1;i=6143" BrowseName="1:Manufacturer" AccessLevel="3">
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5033" NodeId="ns=1;i=6143" BrowseName="2:Manufacturer" AccessLevel="3">
         <DisplayName>Manufacturer</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -4655,7 +4661,6 @@
         <Description>A method which belongs to the topology element.</Description>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5036</Reference>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasModellingRule">i=11510</Reference>
         </References>
     </UAMethod>
@@ -4663,7 +4668,6 @@
         <DisplayName>MethodIdentifier</DisplayName>
         <Description>A method which belongs to the topology element.</Description>
         <References>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasModellingRule">i=11510</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5026</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5036</Reference>
@@ -4677,7 +4681,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5033" NodeId="ns=1;i=6144" BrowseName="1:Model" AccessLevel="3">
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5033" NodeId="ns=1;i=6144" BrowseName="1:Model">
         <DisplayName>Model</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -4704,7 +4708,7 @@
         </References>
     </UAObject>
     <UAVariable ParentNodeId="ns=1;i=5027" NodeId="ns=1;i=6112" BrowseName="2:ParameterIdentifier">
-        <DisplayName>ParameterIdentifier</DisplayName>
+        <DisplayName>&lt;ParameterIdentifier></DisplayName>
         <Description>A parameter which belongs to the topology element.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>

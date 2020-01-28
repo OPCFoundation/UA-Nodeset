@@ -17543,6 +17543,117 @@ struct _OpcUa_EncodeableType OpcUa_ReadAtTimeDetails_EncodeableType =
 };
 #endif
 
+#ifndef OPCUA_EXCLUDE_ReadAnnotationDataDetails
+/*============================================================================
+ * OpcUa_ReadAnnotationDataDetails_Initialize
+ *===========================================================================*/
+OpcUa_Void OpcUa_ReadAnnotationDataDetails_Initialize(OpcUa_ReadAnnotationDataDetails* a_pValue)
+{
+    if (a_pValue != OpcUa_Null)
+    {
+        OpcUa_Field_InitializeArray(DateTime, ReqTimes);
+    }
+}
+
+/*============================================================================
+ * OpcUa_ReadAnnotationDataDetails_Clear
+ *===========================================================================*/
+OpcUa_Void OpcUa_ReadAnnotationDataDetails_Clear(OpcUa_ReadAnnotationDataDetails* a_pValue)
+{
+    if (a_pValue != OpcUa_Null)
+    {
+        OpcUa_Field_ClearArray(DateTime, ReqTimes);
+    }
+}
+
+/*============================================================================
+ * OpcUa_ReadAnnotationDataDetails_GetSize
+ *===========================================================================*/
+OpcUa_StatusCode OpcUa_ReadAnnotationDataDetails_GetSize(OpcUa_ReadAnnotationDataDetails* a_pValue, OpcUa_Encoder* a_pEncoder, OpcUa_Int32* a_pSize)
+{
+    OpcUa_Int32 iSize = 0;
+
+    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "ReadAnnotationDataDetails_GetSize");
+
+    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
+    OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
+    OpcUa_ReturnErrorIfArgumentNull(a_pSize);
+
+    *a_pSize = -1;
+
+    OpcUa_Field_GetSizeArray(DateTime, ReqTimes);
+
+    *a_pSize = iSize;
+
+    OpcUa_ReturnStatusCode;
+    OpcUa_BeginErrorHandling;
+
+    *a_pSize = -1;
+
+    OpcUa_FinishErrorHandling;
+}
+
+/*============================================================================
+ * OpcUa_ReadAnnotationDataDetails_Encode
+ *===========================================================================*/
+OpcUa_StatusCode OpcUa_ReadAnnotationDataDetails_Encode(OpcUa_ReadAnnotationDataDetails* a_pValue, OpcUa_Encoder* a_pEncoder)
+{
+    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "ReadAnnotationDataDetails_Encode");
+
+    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
+    OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
+
+    OpcUa_Field_WriteArray(DateTime, ReqTimes);
+
+    OpcUa_ReturnStatusCode;
+    OpcUa_BeginErrorHandling;
+
+    /* nothing to do */
+
+    OpcUa_FinishErrorHandling;
+}
+
+/*============================================================================
+ * OpcUa_ReadAnnotationDataDetails_Decode
+ *===========================================================================*/
+OpcUa_StatusCode OpcUa_ReadAnnotationDataDetails_Decode(OpcUa_ReadAnnotationDataDetails* a_pValue, OpcUa_Decoder* a_pDecoder)
+{
+    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "ReadAnnotationDataDetails_Decode");
+
+    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
+    OpcUa_ReturnErrorIfArgumentNull(a_pDecoder);
+
+    OpcUa_ReadAnnotationDataDetails_Initialize(a_pValue);
+
+    OpcUa_Field_ReadArray(DateTime, ReqTimes);
+
+    OpcUa_ReturnStatusCode;
+    OpcUa_BeginErrorHandling;
+
+    OpcUa_ReadAnnotationDataDetails_Clear(a_pValue);
+
+    OpcUa_FinishErrorHandling;
+}
+
+/*============================================================================
+ * OpcUa_ReadAnnotationDataDetails_EncodeableType
+ *===========================================================================*/
+struct _OpcUa_EncodeableType OpcUa_ReadAnnotationDataDetails_EncodeableType =
+{
+    "ReadAnnotationDataDetails",
+    OpcUaId_ReadAnnotationDataDetails,
+    OpcUaId_ReadAnnotationDataDetails_Encoding_DefaultBinary,
+    OpcUaId_ReadAnnotationDataDetails_Encoding_DefaultXml,
+    OpcUa_Null,
+    sizeof(OpcUa_ReadAnnotationDataDetails),
+    (OpcUa_EncodeableObject_PfnInitialize*)OpcUa_ReadAnnotationDataDetails_Initialize,
+    (OpcUa_EncodeableObject_PfnClear*)OpcUa_ReadAnnotationDataDetails_Clear,
+    (OpcUa_EncodeableObject_PfnGetSize*)OpcUa_ReadAnnotationDataDetails_GetSize,
+    (OpcUa_EncodeableObject_PfnEncode*)OpcUa_ReadAnnotationDataDetails_Encode,
+    (OpcUa_EncodeableObject_PfnDecode*)OpcUa_ReadAnnotationDataDetails_Decode
+};
+#endif
+
 #ifndef OPCUA_EXCLUDE_HistoryData
 /*============================================================================
  * OpcUa_HistoryData_Initialize
@@ -29563,6 +29674,9 @@ static OpcUa_EncodeableType* g_OpcUa_KnownEncodeableTypes[] =
     #endif
     #ifndef OPCUA_EXCLUDE_ReadAtTimeDetails
     &OpcUa_ReadAtTimeDetails_EncodeableType,
+    #endif
+    #ifndef OPCUA_EXCLUDE_ReadAnnotationDataDetails
+    &OpcUa_ReadAnnotationDataDetails_EncodeableType,
     #endif
     #ifndef OPCUA_EXCLUDE_HistoryData
     &OpcUa_HistoryData_EncodeableType,
