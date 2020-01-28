@@ -37,8 +37,8 @@
 		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 		TargetNamespace="http://opcfoundation.org/UA/Robotics/"
 		TargetXmlNamespace="http://opcfoundation.org/UA/Robotics/"
-		TargetVersion="1.01.0"
-		TargetPublicationDate="2019-09-06T00:00:00Z"
+		TargetVersion="1.01.1"
+		TargetPublicationDate="2020-01-09T00:00:00Z"
 		xmlns="http://opcfoundation.org/UA/ModelDesign.xsd"
 		xsi:noNamespaceSchemaLocation=".\UA Model Design.xsd"> 
 
@@ -58,12 +58,12 @@
 			</Property>
 			<Property SymbolicName="OpcUa:NamespaceVersion" DataType="OpcUa:String">
 				<DefaultValue>
-					<uax:String>0.93</uax:String>
+					<uax:String>1.01</uax:String>
 				</DefaultValue>
 			</Property>
 			<Property SymbolicName="OpcUa:NamespacePublicationDate" DataType="OpcUa:DateTime">
 				<DefaultValue>
-					<uax:DateTime>2019-01-23T00:00:00Z</uax:DateTime>
+					<uax:DateTime>2020-01-09T00:00:00Z</uax:DateTime>
 				</DefaultValue>
 			</Property>
 			<Property SymbolicName="OpcUa:IsNamespaceSubset" DataType="OpcUa:Boolean">
