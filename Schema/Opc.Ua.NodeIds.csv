@@ -233,10 +233,7 @@ ContentFilterElement_Encoding_DefaultXml,584,Object
 ContinuationPoint,521,DataType
 Counter,289,DataType
 CubeItemType,12057,VariableType
-CurrencyUnit,23501,DataType
-CurrencyUnit_Encoding_DefaultBinary,23513,Object
-CurrencyUnit_Encoding_DefaultJson,23529,Object
-CurrencyUnit_Encoding_DefaultXml,23521,Object
+CurrencyUnit,23501,Variable
 CurrencyUnitType,23498,DataType
 CurrencyUnitType_Encoding_DefaultBinary,23507,Object
 CurrencyUnitType_Encoding_DefaultJson,23528,Object

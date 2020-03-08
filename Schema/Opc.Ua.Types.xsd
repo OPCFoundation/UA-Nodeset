@@ -519,40 +519,6 @@
 
   <xs:element name="AudioDataType" type="xs:base64Binary" />
 
-  <xs:complexType name="CurrencyUnitType">
-    <xs:sequence>
-      <xs:element name="NumericCode" type="xs:short" minOccurs="0" />
-      <xs:element name="Exponent" type="xs:byte" minOccurs="0" />
-      <xs:element name="AlphabeticCode" type="xs:string" minOccurs="0" nillable="true" />
-      <xs:element name="Currency" type="ua:LocalizedText" minOccurs="0" nillable="true" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="CurrencyUnitType" type="tns:CurrencyUnitType" />
-
-  <xs:complexType name="ListOfCurrencyUnitType">
-    <xs:sequence>
-      <xs:element name="CurrencyUnitType" type="tns:CurrencyUnitType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ListOfCurrencyUnitType" type="tns:ListOfCurrencyUnitType" nillable="true"></xs:element>
-
-  <xs:complexType name="CurrencyUnit">
-    <xs:complexContent mixed="false">
-      <xs:extension base="tns:CurrencyUnitType">
-        <xs:sequence>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="CurrencyUnit" type="tns:CurrencyUnit" />
-
-  <xs:complexType name="ListOfCurrencyUnit">
-    <xs:sequence>
-      <xs:element name="CurrencyUnit" type="tns:CurrencyUnit" minOccurs="0" maxOccurs="unbounded" nillable="true" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ListOfCurrencyUnit" type="tns:ListOfCurrencyUnit" nillable="true"></xs:element>
-
   <xs:element name="BitFieldMaskDataType" type="xs:unsignedLong" />
 
   <xs:complexType name="KeyValuePair">
@@ -798,6 +764,23 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ListOfIdentityMappingRuleType" type="tns:ListOfIdentityMappingRuleType" nillable="true"></xs:element>
+
+  <xs:complexType name="CurrencyUnitType">
+    <xs:sequence>
+      <xs:element name="NumericCode" type="xs:short" minOccurs="0" />
+      <xs:element name="Exponent" type="xs:byte" minOccurs="0" />
+      <xs:element name="AlphabeticCode" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="Currency" type="ua:LocalizedText" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CurrencyUnitType" type="tns:CurrencyUnitType" />
+
+  <xs:complexType name="ListOfCurrencyUnitType">
+    <xs:sequence>
+      <xs:element name="CurrencyUnitType" type="tns:CurrencyUnitType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfCurrencyUnitType" type="tns:ListOfCurrencyUnitType" nillable="true"></xs:element>
 
   <xs:simpleType  name="TrustListMasks">
     <xs:restriction base="xs:string">

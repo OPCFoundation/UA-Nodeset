@@ -124,7 +124,7 @@
     <opc:Field Name="AdditionalInfoSpecified" TypeName="opc:Bit" />
     <opc:Field Name="InnerStatusCodeSpecified" TypeName="opc:Bit" />
     <opc:Field Name="InnerDiagnosticInfoSpecified" TypeName="opc:Bit" />
-    <opc:Field Name="Reserved1" TypeName="opc:Bit" Length="2" />
+    <opc:Field Name="Reserved1" TypeName="opc:Bit" Length="1" />
     <opc:Field Name="SymbolicId" TypeName="opc:Int32" SwitchField="SymbolicIdSpecified" />
     <opc:Field Name="NamespaceURI" TypeName="opc:Int32" SwitchField="NamespaceURISpecified" />
     <opc:Field Name="Locale" TypeName="opc:Int32" SwitchField="LocaleSpecified" />
@@ -234,20 +234,6 @@
   <opc:OpaqueType Name="AudioDataType">
   </opc:OpaqueType>
 
-  <opc:StructuredType Name="CurrencyUnitType" BaseType="ua:ExtensionObject">
-    <opc:Field Name="NumericCode" TypeName="opc:Int16" />
-    <opc:Field Name="Exponent" TypeName="opc:SByte" />
-    <opc:Field Name="AlphabeticCode" TypeName="opc:String" />
-    <opc:Field Name="Currency" TypeName="ua:LocalizedText" />
-  </opc:StructuredType>
-
-  <opc:StructuredType Name="CurrencyUnit" BaseType="tns:CurrencyUnitType">
-    <opc:Field Name="NumericCode" TypeName="opc:Int16" SourceType="tns:CurrencyUnitType" />
-    <opc:Field Name="Exponent" TypeName="opc:SByte" SourceType="tns:CurrencyUnitType" />
-    <opc:Field Name="AlphabeticCode" TypeName="opc:String" SourceType="tns:CurrencyUnitType" />
-    <opc:Field Name="Currency" TypeName="ua:LocalizedText" SourceType="tns:CurrencyUnitType" />
-  </opc:StructuredType>
-
   <opc:OpaqueType Name="BitFieldMaskDataType">
   </opc:OpaqueType>
 
@@ -332,6 +318,13 @@
   <opc:StructuredType Name="IdentityMappingRuleType" BaseType="ua:ExtensionObject">
     <opc:Field Name="CriteriaType" TypeName="tns:IdentityCriteriaType" />
     <opc:Field Name="Criteria" TypeName="opc:String" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="CurrencyUnitType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="NumericCode" TypeName="opc:Int16" />
+    <opc:Field Name="Exponent" TypeName="opc:SByte" />
+    <opc:Field Name="AlphabeticCode" TypeName="opc:String" />
+    <opc:Field Name="Currency" TypeName="ua:LocalizedText" />
   </opc:StructuredType>
 
   <opc:EnumeratedType Name="TrustListMasks" LengthInBits="32">

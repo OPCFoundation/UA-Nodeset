@@ -3430,6 +3430,9 @@
           <uax:Fields>
             <uax:EnumField>
               <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NORMAL</uax:Text>
+              </uax:DisplayName>
               <uax:Description>
                 <uax:Text>This device functions normally.</uax:Text>
               </uax:Description>
@@ -3437,6 +3440,9 @@
             </uax:EnumField>
             <uax:EnumField>
               <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FAILURE</uax:Text>
+              </uax:DisplayName>
               <uax:Description>
                 <uax:Text>Malfunction of the device or any of its peripherals.</uax:Text>
               </uax:Description>
@@ -3444,6 +3450,9 @@
             </uax:EnumField>
             <uax:EnumField>
               <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CHECK_FUNCTION</uax:Text>
+              </uax:DisplayName>
               <uax:Description>
                 <uax:Text>Functional checks are currently performed.</uax:Text>
               </uax:Description>
@@ -3451,6 +3460,9 @@
             </uax:EnumField>
             <uax:EnumField>
               <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OFF_SPEC</uax:Text>
+              </uax:DisplayName>
               <uax:Description>
                 <uax:Text>The device is currently working outside of its specified range or that internal diagnoses indicate deviations from measured or set values.</uax:Text>
               </uax:Description>
@@ -3458,6 +3470,9 @@
             </uax:EnumField>
             <uax:EnumField>
               <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MAINTENANCE_REQUIRED</uax:Text>
+              </uax:DisplayName>
               <uax:Description>
                 <uax:Text>This element is working, but a maintenance operation is required.</uax:Text>
               </uax:Description>
