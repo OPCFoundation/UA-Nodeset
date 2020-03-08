@@ -221,6 +221,11 @@ ContentFilterElement_Encoding_DefaultXml,584,Object
 ContinuationPoint,521,DataType
 Counter,289,DataType
 CubeItemType,12057,VariableType
+CurrencyUnit,23501,Variable
+CurrencyUnitType,23498,DataType
+CurrencyUnitType_Encoding_DefaultBinary,23507,Object
+CurrencyUnitType_Encoding_DefaultJson,23528,Object
+CurrencyUnitType_Encoding_DefaultXml,23520,Object
 DatagramConnectionTransportDataType,17467,DataType
 DatagramConnectionTransportDataType_Encoding_DefaultBinary,17468,Object
 DatagramConnectionTransportDataType_Encoding_DefaultJson,17476,Object
@@ -558,6 +563,8 @@ MonitoringFilter,719,DataType
 MonitoringFilter_Encoding_DefaultBinary,721,Object
 MonitoringFilter_Encoding_DefaultJson,15293,Object
 MonitoringFilter_Encoding_DefaultXml,720,Object
+MultiStateDictionaryEntryDiscreteBaseType,19077,VariableType
+MultiStateDictionaryEntryDiscreteType,19084,VariableType
 MultiStateDiscreteType,2376,VariableType
 MultiStateValueDiscreteType,11238,VariableType
 NamespaceMetadataType,11616,ObjectType
