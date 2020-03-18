@@ -4664,8 +4664,8 @@
             <Reference ReferenceType="HasModellingRule">i=11510</Reference>
         </References>
     </UAMethod>
-    <UAMethod ParentNodeId="ns=1;i=5026" NodeId="ns=1;i=7026" BrowseName="2:MethodIdentifier">
-        <DisplayName>MethodIdentifier</DisplayName>
+    <UAMethod ParentNodeId="ns=1;i=5026" NodeId="ns=1;i=7026" BrowseName="2:&lt;MethodIdentifier>">
+        <DisplayName>&lt;MethodIdentifier></DisplayName>
         <Description>A method which belongs to the topology element.</Description>
         <References>
             <Reference ReferenceType="HasModellingRule">i=11510</Reference>
@@ -4707,7 +4707,7 @@
             <Reference ReferenceType="HasComponent">ns=1;i=6132</Reference>
         </References>
     </UAObject>
-    <UAVariable ParentNodeId="ns=1;i=5027" NodeId="ns=1;i=6112" BrowseName="2:ParameterIdentifier">
+    <UAVariable ParentNodeId="ns=1;i=5027" NodeId="ns=1;i=6112" BrowseName="2:&lt;ParameterIdentifier>">
         <DisplayName>&lt;ParameterIdentifier></DisplayName>
         <Description>A parameter which belongs to the topology element.</Description>
         <References>
