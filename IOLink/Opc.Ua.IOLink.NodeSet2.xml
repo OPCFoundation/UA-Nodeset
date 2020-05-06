@@ -4317,7 +4317,7 @@
                             <DataType>
                                 <Identifier>i=5</Identifier>
                             </DataType>
-                            <ValueRank>1</ValueRank>
+                            <ValueRank>-1</ValueRank>
                             <ArrayDimensions/>
                             <Description/>
                         </Argument>
@@ -4333,7 +4333,7 @@
                             <DataType>
                                 <Identifier>i=6</Identifier>
                             </DataType>
-                            <ValueRank>1</ValueRank>
+                            <ValueRank>-1</ValueRank>
                             <ArrayDimensions/>
                             <Description/>
                         </Argument>
@@ -4566,7 +4566,7 @@
                             <DataType>
                                 <Identifier>i=5</Identifier>
                             </DataType>
-                            <ValueRank>1</ValueRank>
+                            <ValueRank>-1</ValueRank>
                             <ArrayDimensions/>
                             <Description/>
                         </Argument>
@@ -4582,7 +4582,7 @@
                             <DataType>
                                 <Identifier>i=6</Identifier>
                             </DataType>
-                            <ValueRank>1</ValueRank>
+                            <ValueRank>-1</ValueRank>
                             <ArrayDimensions/>
                             <Description/>
                         </Argument>
